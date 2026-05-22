@@ -1,11 +1,11 @@
 {
   "language": "vi-VN",
-  "title": "Phân tích âm thanh, dịch và hiểu biết bằng AI",
-  "banner_alt": "Sóng âm và văn bản số",
   "locale": "vi_VN",
   "subtitle": "Mở khoá thông tin từ dữ liệu âm thanh với các mô hình nhận dạng giọng nói",
-  "date": "January 29, 2024",
-  "banner": "https://cloudcdn.pro/stocks/images/audio-ai-banner.webp",
   "description": "Cách các mô hình AI mới — Whisper, mô hình ngôn ngữ-âm thanh — biến âm thanh thành văn bản, dịch ngôn ngữ và trích xuất hiểu biết theo thời gian thực.",
-  "keywords": "AI, âm thanh, nhận dạng giọng nói, Whisper, dịch, hiểu biết, phân tích, ngân hàng, dịch vụ khách hàng"
+  "date": "January 29, 2024",
+  "keywords": "AI, âm thanh, nhận dạng giọng nói, Whisper, dịch, hiểu biết, phân tích, ngân hàng, dịch vụ khách hàng",
+  "title": "Phân tích âm thanh, dịch và hiểu biết bằng AI",
+  "banner_alt": "Sóng âm và văn bản số",
+  "banner": "https://cloudcdn.pro/stocks/images/audio-ai-banner.webp"
 }

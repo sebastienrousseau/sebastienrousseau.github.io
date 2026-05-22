@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Ethereum ve token sembollerinin görselleştirmesi",
-  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
-  "date": "January 24, 2018",
   "locale": "tr_TR",
-  "keywords": "ERC-20, Ethereum, token, akıllı sözleşmeler, ICO, DeFi, Solidity",
   "subtitle": "Ethereum ekosisteminin ortak token arayüzü",
-  "language": "tr-TR",
+  "keywords": "ERC-20, Ethereum, token, akıllı sözleşmeler, ICO, DeFi, Solidity",
+  "banner_alt": "Ethereum ve token sembollerinin görselleştirmesi",
+  "date": "January 24, 2018",
+  "description": "ERC-20, Ethereum ağındaki değiştirilebilir token'lar için referans standarttır. ICO'ları ve DeFi'yi mümkün kılan teknik temelleri inceliyoruz.",
   "title": "ERC-20 token standardı",
-  "description": "ERC-20, Ethereum ağındaki değiştirilebilir token'lar için referans standarttır. ICO'ları ve DeFi'yi mümkün kılan teknik temelleri inceliyoruz."
+  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
+  "language": "tr-TR"
 }

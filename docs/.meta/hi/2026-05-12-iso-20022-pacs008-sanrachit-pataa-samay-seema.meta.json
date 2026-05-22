@@ -1,11 +1,11 @@
 {
-  "title": "ISO 20022 pacs.008: संरचित-पता समय-सीमा",
+  "subtitle": "नवंबर 2026 की समय-सीमा से पहले बैंकों को क्या करना चाहिए",
   "banner_alt": "ISO 20022 संदेश-प्रवाह की प्रतीकात्मक छवि",
-  "date": "May 12, 2026",
+  "title": "ISO 20022 pacs.008: संरचित-पता समय-सीमा",
   "description": "ISO 20022 pacs.008 संरचित-पते की समय-सीमा से पहले बैंकों के लिए एक व्यावहारिक रोडमैप।",
-  "keywords": "ISO 20022, pacs.008, संरचित पता, SWIFT, CBPR+, समय सीमा, बैंकिंग, भुगतान, माइग्रेशन, अनुपालन",
+  "language": "hi-IN",
   "locale": "hi_IN",
   "banner": "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp",
-  "language": "hi-IN",
-  "subtitle": "नवंबर 2026 की समय-सीमा से पहले बैंकों को क्या करना चाहिए"
+  "date": "May 12, 2026",
+  "keywords": "ISO 20022, pacs.008, संरचित पता, SWIFT, CBPR+, समय सीमा, बैंकिंग, भुगतान, माइग्रेशन, अनुपालन"
 }

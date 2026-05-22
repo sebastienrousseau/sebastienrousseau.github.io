@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Sự kết hợp trừu tượng của các thuật toán AI và lượng tử",
-  "subtitle": "Sức mạnh kết hợp của AI và tính toán lượng tử trong tài chính",
   "date": "December 25, 2023",
-  "banner": "https://cloudcdn.pro/stocks/images/quantum-ai-banner.webp",
-  "language": "vi-VN",
-  "locale": "vi_VN",
-  "title": "Cách mạng hoá tài chính với các thuật toán lượng tử tăng cường AI",
   "keywords": "AI, lượng tử, thuật toán, tài chính, ngân hàng, định giá, tối ưu hoá, Monte Carlo, QAOA",
-  "description": "Vai trò biến đổi của AI bên trong các thuật toán lượng tử cho tài chính: cấu trúc toán học, ứng dụng ngân hàng và triển vọng."
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-ai-banner.webp",
+  "subtitle": "Sức mạnh kết hợp của AI và tính toán lượng tử trong tài chính",
+  "locale": "vi_VN",
+  "description": "Vai trò biến đổi của AI bên trong các thuật toán lượng tử cho tài chính: cấu trúc toán học, ứng dụng ngân hàng và triển vọng.",
+  "title": "Cách mạng hoá tài chính với các thuật toán lượng tử tăng cường AI",
+  "banner_alt": "Sự kết hợp trừu tượng của các thuật toán AI và lượng tử",
+  "language": "vi-VN"
 }
