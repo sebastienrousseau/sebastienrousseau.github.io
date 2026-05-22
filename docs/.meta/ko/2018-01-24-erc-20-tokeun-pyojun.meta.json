@@ -1,12 +1,12 @@
 {
   "title": "ERC-20: 세상을 바꾼 이더리움 토큰 인터페이스",
-  "subtitle": "대체 가능 토큰의 상호 운용 가능한 미래를 연 표준",
-  "date": "January 24, 2018",
-  "locale": "ko_KR",
-  "keywords": "ERC-20, 이더리움, 스마트 컨트랙트, 토큰, ICO, DeFi, 스테이블코인, 토큰화, 이더리움 개선 제안",
-  "description": "ERC-20 표준이 이더리움상의 모든 대체 가능 토큰, ICO, DeFi의 기반으로 어떻게 기능하는지에 관하여.",
-  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
-  "banner_alt": "갈색 나무 테이블 위 전원이 꺼진 노트북",
+  "last_reviewed": "2026-05-16",
   "language": "ko-KR",
-  "last_reviewed": "2026-05-16"
+  "keywords": "ERC-20, 이더리움, 스마트 컨트랙트, 토큰, ICO, DeFi, 스테이블코인, 토큰화, 이더리움 개선 제안",
+  "subtitle": "대체 가능 토큰의 상호 운용 가능한 미래를 연 표준",
+  "locale": "ko_KR",
+  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
+  "description": "ERC-20 표준이 이더리움상의 모든 대체 가능 토큰, ICO, DeFi의 기반으로 어떻게 기능하는지에 관하여.",
+  "banner_alt": "갈색 나무 테이블 위 전원이 꺼진 노트북",
+  "date": "January 24, 2018"
 }

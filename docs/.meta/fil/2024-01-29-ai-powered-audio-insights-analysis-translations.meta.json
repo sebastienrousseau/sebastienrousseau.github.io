@@ -1,11 +1,11 @@
 {
-  "keywords": "audio analyser, azure ai, speech-to-text, تحليل البيانات الصوتية, تحليل النصوص, ترجمات الذكاء الاصطناعي, رؤى صوتية, التفريغ الآلي, معالجة البيانات الصوتية, تعلم الآلة",
-  "date": "Jan 29, 2024",
-  "description": "كيف يُحوِّل Audio Analyser، المدعوم بـ Azure AI، تحويل speech-to-text وتحليل النصوص والترجمات إلى رؤى قابلة للتنفيذ.",
   "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp",
+  "banner_alt": "مكتب شركة عصري وبسيط",
   "language": "fil-PH",
+  "date": "Jan 29, 2024",
   "subtitle": "إحداث ثورة في معالجة البيانات الصوتية بمنصة Azure AI",
-  "locale": "fil_PH",
+  "description": "كيف يُحوِّل Audio Analyser، المدعوم بـ Azure AI، تحويل speech-to-text وتحليل النصوص والترجمات إلى رؤى قابلة للتنفيذ.",
   "title": "تحليل الكلام والترجمة والرؤى المدعومة بالذكاء الاصطناعي",
-  "banner_alt": "مكتب شركة عصري وبسيط"
+  "keywords": "audio analyser, azure ai, speech-to-text, تحليل البيانات الصوتية, تحليل النصوص, ترجمات الذكاء الاصطناعي, رؤى صوتية, التفريغ الآلي, معالجة البيانات الصوتية, تعلم الآلة",
+  "locale": "fil_PH"
 }

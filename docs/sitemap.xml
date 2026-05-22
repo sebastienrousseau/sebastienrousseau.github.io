@@ -18,6 +18,41 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/topics/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/topics/iso-20022-payments/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/topics/post-quantum-cryptography/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/topics/blockchain-digital-assets/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/topics/applied-ai-banking/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/topics/rust-open-source/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/topics/cloud-native-banking/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/offline/index.html</loc>
 </url>
 <url>
@@ -69,6 +104,11 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/tr/2023-11-12-uretken-yapay-zekayi-kesfetmek/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/tr/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
 </url>
 <url>
   <changefreq>weekly</changefreq>
@@ -438,6 +478,11 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/th/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/th/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
 </url>
 <url>
@@ -764,6 +809,11 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/th/2026-05-12-iso-20022-pacs008-thi-yu-baep-mi-khrongsang-ked-wela/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
 </url>
 <url>
   <changefreq>weekly</changefreq>
@@ -1148,6 +1198,11 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/es/2026-05-24-uk-pagos-forward-plan-stablecoins-open-banking-tokenised-pagos-2026/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/es/sin-conexion/index.html</loc>
 </url>
 <url>
@@ -1403,6 +1458,11 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/fr/2026-05-24-uk-paiements-forward-plan-stablecoins-open-banking-tokenise-paiements-2026/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/fr/2023-11-05-constantes-mathematiques-et-cryptographiques-pour-rust/index.html</loc>
 </url>
 <url>
@@ -1574,6 +1634,11 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/id/2024-02-19-membuka-gemini-revolusi-ai-google-dijelaskan/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/id/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
 </url>
 <url>
   <changefreq>weekly</changefreq>
@@ -1934,6 +1999,11 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/ko/2024-03-25-eunhaeng-yangja-sidae-wansjeon-donghyeong-amho/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/ko/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
 </url>
 <url>
   <changefreq>weekly</changefreq>
@@ -2548,6 +2618,11 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/de/2026-05-24-uk-zahlungsverkehr-forward-plan-stablecoins-open-banking-tokenised-zahlungsverkehr-2026/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/de/danke/index.html</loc>
 </url>
 <url>
@@ -2669,6 +2744,11 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/hi/2023-10-09-shokunin-sabse-tez-rust-static-site-generator/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/hi/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
 </url>
 <url>
   <changefreq>weekly</changefreq>
@@ -3048,6 +3128,11 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/fil/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/fil/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
 </url>
 <url>
@@ -3423,6 +3508,11 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/bn/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/bn/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
 </url>
 <url>
@@ -3789,6 +3879,11 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/nl/2026-05-17-agentic-engineering-banken-blauwdruk-2026/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/nl/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
 </url>
 <url>
   <changefreq>weekly</changefreq>
@@ -4198,6 +4293,11 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/pt-br/2026-05-24-uk-pagamentos-forward-plan-stablecoins-open-banking-tokenised-pagamentos-2026/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/pt-br/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html</loc>
 </url>
 <url>
@@ -4524,6 +4624,11 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/ar/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/ar/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
 </url>
 <url>
   <changefreq>weekly</changefreq>
@@ -4899,6 +5004,11 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/ha/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/ha/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
 </url>
 <url>
   <changefreq>weekly</changefreq>
@@ -5318,6 +5428,11 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/uk/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/uk/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
 </url>
 <url>
@@ -5669,6 +5784,11 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/yo/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/yo/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
 </url>
 <url>
   <changefreq>weekly</changefreq>
@@ -6049,6 +6169,11 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/ro/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/ro/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
 </url>
 <url>
   <changefreq>weekly</changefreq>
@@ -6434,6 +6559,11 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/ru/stati/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/ru/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
 </url>
 <url>
   <changefreq>weekly</changefreq>
@@ -6824,6 +6954,11 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/cs/2023-09-29-automatizace-platebnich-souboru-iso-20022-s-pain001/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/cs/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
 </url>
 <url>
   <changefreq>weekly</changefreq>
@@ -7353,6 +7488,11 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/it/2026-05-24-uk-pagamenti-forward-plan-stablecoins-open-banking-tokenised-pagamenti-2026/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/it/2024-02-08-rivoluzionare-la-pubblicita-come-lia-plasma-il-futuro/index.html</loc>
 </url>
 <url>
@@ -7564,6 +7704,11 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/ja/ronbun/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/ja/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
 </url>
 <url>
   <changefreq>weekly</changefreq>
@@ -8048,6 +8193,11 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/he/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/he/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
 </url>
 <url>
@@ -8364,6 +8514,11 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/sv/2024-02-08-revolutionera-reklam-hur-ai-formar-framtiden/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/sv/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
 </url>
 <url>
   <changefreq>weekly</changefreq>
@@ -8724,6 +8879,11 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/vi/cam-on/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/vi/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
 </url>
 <url>
   <changefreq>weekly</changefreq>
@@ -9109,6 +9269,11 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/pl/2023-12-11-kwantowa-dystrybucja-kluczy-rewolucja-bezpieczenstwa-w-bankowosci/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/pl/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
 </url>
 <url>
   <changefreq>weekly</changefreq>
@@ -9553,6 +9718,11 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/zh-hant/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
 </url>
 <url>
@@ -9854,6 +10024,11 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/zh-hans/2023-12-11-liangzi-miyao-fenfa-yinhang-anquan-de-biange/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
 </url>
 <url>
   <changefreq>weekly</changefreq>

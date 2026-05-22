@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp",
   "date": "Feb 12, 2024",
-  "description": "كيف يستفيد Àkàndé من فهم اللغة الطبيعية في OpenAI GPT، وتلخيصات PDF، والتخزين المؤقت الفعّال لإعادة تعريف المساعدة الشخصية والتنفيذية.",
-  "language": "he-IL",
   "keywords": "Àkàndé, مساعد صوتي, فهم اللغة الطبيعية, تلخيصات PDF, تخزين مؤقت فعّال, OpenAI GPT, مساعدة تنفيذية, مساعدة شخصية, مساعدون رقميون, ابتكار تكنولوجي",
-  "title": "Àkàndé: مساعد صوتي مدعوم بـ GPT للتنفيذيين",
-  "subtitle": "تمكين تفاعلات سلسة بتقنية ذكاء اصطناعي رائدة",
+  "language": "he-IL",
   "locale": "he_IL",
-  "banner_alt": "جهاز كروي أبيض حديث"
+  "banner_alt": "جهاز كروي أبيض حديث",
+  "description": "كيف يستفيد Àkàndé من فهم اللغة الطبيعية في OpenAI GPT، وتلخيصات PDF، والتخزين المؤقت الفعّال لإعادة تعريف المساعدة الشخصية والتنفيذية.",
+  "banner": "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp",
+  "title": "Àkàndé: مساعد صوتي مدعوم بـ GPT للتنفيذيين",
+  "subtitle": "تمكين تفاعلات سلسة بتقنية ذكاء اصطناعي رائدة"
 }

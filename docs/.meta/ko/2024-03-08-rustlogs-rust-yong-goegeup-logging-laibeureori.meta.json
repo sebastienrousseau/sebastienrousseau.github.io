@@ -1,12 +1,12 @@
 {
-  "keywords": "RustLogs, Rust, 로깅, 구조화 로그, JSON, 트레이싱, 관측 가능성, 운영",
-  "title": "RustLogs: Rust용 고급 로깅 라이브러리",
-  "banner": "https://cloudcdn.pro/stocks/images/luca-bravo-XJXWbfSo2f0-unsplash.webp",
-  "subtitle": "운영 등급 응용을 위한 포괄적 로깅 솔루션",
-  "description": "RustLogs는 운영 등급 Rust 응용을 위한 포괄적 구조화 로깅 라이브러리입니다.",
-  "language": "ko-KR",
+  "banner_alt": "코드를 보여주는 노트북",
   "date": "March 8, 2024",
-  "locale": "ko_KR",
+  "title": "RustLogs: Rust용 고급 로깅 라이브러리",
+  "keywords": "RustLogs, Rust, 로깅, 구조화 로그, JSON, 트레이싱, 관측 가능성, 운영",
+  "language": "ko-KR",
   "last_reviewed": "2026-05-16",
-  "banner_alt": "코드를 보여주는 노트북"
+  "locale": "ko_KR",
+  "subtitle": "운영 등급 응용을 위한 포괄적 로깅 솔루션",
+  "banner": "https://cloudcdn.pro/stocks/images/luca-bravo-XJXWbfSo2f0-unsplash.webp",
+  "description": "RustLogs는 운영 등급 Rust 응용을 위한 포괄적 구조화 로깅 라이브러리입니다."
 }

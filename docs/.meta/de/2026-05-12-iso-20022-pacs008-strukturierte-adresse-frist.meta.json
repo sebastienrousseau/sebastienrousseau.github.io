@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp",
   "title": "Die pacs.008-Frist für strukturierte Adressen im November 2026: ein Blick aus sechs Monaten Distanz",
-  "date": "May 12, 2026",
-  "description": "Ab Mitte November 2026 wird SWIFT CBPR+ unstrukturierte Postanschriften in pacs.008 und zugehörigen Nachrichten zurückweisen. Mit rund 65 % der Nachrichten noch nicht konform und 44 % der Banken im Rückstand schließt sich das Sanierungsfenster schneller, als die meisten Vorbereitungsprogramme darauf ausgelegt sind.",
-  "keywords": "ISO 20022, pacs.008, pacs.009, pacs.004, pacs.003, pain.001, CBPR+, SWIFT, SR2026, strukturierte Adresse, SEPA, EPC, grenzüberschreitende Zahlungen, Sanktionsscreening, pacs008",
   "subtitle": "Ab Mitte November 2026 wird SWIFT CBPR+ unstrukturierte Postanschriften in pacs.008 und zugehörigen grenzüberschreitenden Zahlungsnachrichten zurückweisen.",
   "banner_alt": "Schema einer grenzüberschreitenden Zahlungsnachricht mit strukturierter Adresse, TwnNm und Ctry hervorgehoben",
+  "description": "Ab Mitte November 2026 wird SWIFT CBPR+ unstrukturierte Postanschriften in pacs.008 und zugehörigen Nachrichten zurückweisen. Mit rund 65 % der Nachrichten noch nicht konform und 44 % der Banken im Rückstand schließt sich das Sanierungsfenster schneller, als die meisten Vorbereitungsprogramme darauf ausgelegt sind.",
+  "date": "May 12, 2026",
+  "language": "de",
+  "keywords": "ISO 20022, pacs.008, pacs.009, pacs.004, pacs.003, pain.001, CBPR+, SWIFT, SR2026, strukturierte Adresse, SEPA, EPC, grenzüberschreitende Zahlungen, Sanktionsscreening, pacs008",
   "locale": "de_DE",
-  "language": "de"
+  "banner": "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 }
