@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Banner of Vibrant gradient overlay on repeated profiles",
-  "keywords": "OpenVoice, Voice Cloning Technology, AI Synthetic Speech, Open-Source Voice Cloning, Cross-Lingual Voice Synthesis, Instant Voice Cloning, Voice Style Control, Accessibility Voice Tech, Entertainment Industry Voices, Customer Service Voice AI",
-  "subtitle": "The Next-Gen Open-Source Voice Cloning Tool",
-  "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.",
-  "locale": "bn_BD",
   "title": "OpenVoice: Leading Innovation in Voice Cloning Technology",
   "language": "bn-BD",
+  "subtitle": "The Next-Gen Open-Source Voice Cloning Tool",
+  "banner_alt": "Banner of Vibrant gradient overlay on repeated profiles",
+  "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.",
+  "keywords": "OpenVoice, Voice Cloning Technology, AI Synthetic Speech, Open-Source Voice Cloning, Cross-Lingual Voice Synthesis, Instant Voice Cloning, Voice Style Control, Accessibility Voice Tech, Entertainment Industry Voices, Customer Service Voice AI",
+  "date": "Apr 01, 2024",
   "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
-  "date": "Apr 01, 2024"
+  "locale": "bn_BD"
 }

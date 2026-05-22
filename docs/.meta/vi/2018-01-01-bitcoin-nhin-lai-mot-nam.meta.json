@@ -1,11 +1,11 @@
 {
-  "date": "January 1, 2018",
-  "title": "Bitcoin: nhìn lại một năm của đồng tiền mã hoá đầu tiên",
-  "locale": "vi_VN",
   "subtitle": "Một hệ thống thanh toán điện tử ngang hàng đã định nghĩa lại tiền tệ",
-  "keywords": "Bitcoin, tiền mã hoá, blockchain, P2P, chi tiêu hai lần, đào, proof-of-work, ETF, Satoshi Nakamoto, tài chính phi tập trung",
-  "language": "vi-VN",
-  "description": "Bitcoin: một hệ thống tiền mặt điện tử ngang hàng (P2P ECS) có khả năng cách mạng hoá cách mọi người giao dịch trực tuyến.",
   "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
+  "locale": "vi_VN",
+  "language": "vi-VN",
+  "keywords": "Bitcoin, tiền mã hoá, blockchain, P2P, chi tiêu hai lần, đào, proof-of-work, ETF, Satoshi Nakamoto, tài chính phi tập trung",
+  "date": "January 1, 2018",
+  "description": "Bitcoin: một hệ thống tiền mặt điện tử ngang hàng (P2P ECS) có khả năng cách mạng hoá cách mọi người giao dịch trực tuyến.",
+  "title": "Bitcoin: nhìn lại một năm của đồng tiền mã hoá đầu tiên",
   "banner_alt": "Một đống tiền vàng và bạc đặt trên một chiếc bàn"
 }

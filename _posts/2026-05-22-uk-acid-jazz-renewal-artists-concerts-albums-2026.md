@@ -6,7 +6,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "UK acid jazz renewal collage for 2026 with Hammond organ, vinyl, Ronnie Scott’s, Acid Jazz Records, jazz-funk festival stages, and London groove culture"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stock/images/uk-acid-jazz-2026-banner.webp"
+banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/aperture-vintage-SshYpuf607g.webp&w=1200&format=webp&q=80"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -23,6 +23,7 @@ image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 keywords: "UK acid jazz 2026, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott’s, Bangs and Talbot, Chris Bangs, Mick Talbot, Smokin Aces, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, UK jazz revival, jazz funk, soul jazz, London jazz concerts"
 language: "en-GB"
+excerpt: "The UK acid jazz renewal in 2026 spans label releases, live dates by first-wave acts, and festival programming — Acid Jazz Records, Bangs &amp; Talbot, The Brand New Heavies, Galliano, James Taylor Quartet, and Mostly Jazz Funk &amp; Soul Festival are all active at once."
 last_reviewed: "2026-05-22"
 layout: "report"
 locale: "en_GB"
@@ -101,6 +102,20 @@ site_software: "Static Site Generator, Rust"
 ---
 
 # The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture
+
+
+<!-- lead-start -->
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> The UK acid jazz renewal in 2026 is visible in Acid Jazz Records releases, Bangs & Talbot, Brand New Heavies with Galliano, James Taylor Quartet at Ronnie Scott’s, Mostly Jazz Funk & Soul Festival, and the broader UK jazz scene’s renewed appetite for groove, soul, funk and dance-floor musicianship.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Why Acid Jazz Feels Current Again.</strong> Acid jazz was always a hybrid form.</li>
+  <li><strong>The 2026 Acid Jazz Baseline.</strong> Acid Jazz Records’ 2026 Bandcamp compilation, Totally Wired...</li>
+  <li><strong>Artists and Signals to Watch.</strong> The Brand New Heavies remain a core reference point because they translated acid jazz into songs, vocals, and mainstream stagecraft.</li>
+  <li><strong>2026 Listening and Live Guide.</strong> The moment is rewarding because it is not just anniversary nostalgia.</li>
+</ul>
+</aside>
+<!-- lead-end -->
 
 The UK acid jazz renewal in 2026 is not a nostalgic museum piece. It is a live ecosystem where legacy acts, independent labels, jazz-funk festivals, Hammond organ culture, soul-jazz singers, vinyl collectors, and younger UK jazz musicians are converging around groove again. Acid Jazz Records’ 2026 Bandcamp compilation lists Matt Berry, Kevin Fingier, The Brand New Heavies, Billy Valentine, and Mama Terra, signalling that the label is still curating the bridge between catalogue memory and contemporary taste ([Acid Jazz Records / Bandcamp](https://acidjazz.bandcamp.com/album/totally-wired-a-new-collection-from-acid-jazz "Totally Wired... A New Collection From Acid Jazz")).
 
@@ -231,6 +246,11 @@ The connection is groove, not strict genre labelling. Festivals such as Mostly J
 - Songkick, (2026). [The James Taylor Quartet at Ronnie Scott's Jazz Club ⧉](https://www.songkick.com/concerts/43032586-james-taylor-quartet-at-ronnie-scotts-jazz-club "JTQ at Ronnie Scott's").
 - Mostly Jazz Funk & Soul Festival, (2026). [Mostly Jazz Funk & Soul Festival 2026 ⧉](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival").
 - Marlbank, (2026). [Top UK jazz albums in 2026 so far ⧉](https://marlbank.net/top-jazz-in-2026/top-uk-jazz-albums-in-2026-so-far/ "Top UK jazz albums in 2026 so far").
+<!-- enrich-start -->
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-22">2026-05-22</time>.</p>
+<!-- enrich-end -->
+
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-05-22">2026-05-22</time>.</p>

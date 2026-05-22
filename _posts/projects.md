@@ -254,7 +254,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="https://github.com/sebastienrousseau/crypto-service" title="Crypto Service Suite">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/crypto-service" title="Crypto Service Suite">
 <img alt="Banner for the Crypto Service Suite" src="https://cloudcdn.pro/clients/audioanalyser/v1/logos/audioanalyser.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
@@ -431,7 +431,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="https://dotfiles.io/" title="Dotfiles">
+<a class="newsroom-card-media logo" href="https://dotfiles.io/" title="Dotfiles">
 <img alt="Banner for the Dotfiles project" src="https://cloudcdn.pro/clients/dotfiles/v1/images/logos/dotfiles.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">

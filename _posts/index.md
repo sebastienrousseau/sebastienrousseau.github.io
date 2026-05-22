@@ -235,6 +235,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html" title="The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture">
+<img alt="UK acid jazz renewal collage for 2026 with Hammond organ, vinyl, Ronnie Scott's, Acid Jazz Records, jazz-funk festival stages, and London groove culture" src="https://cloudcdn.pro/api/transform?url=/stocks/images/aperture-vintage-SshYpuf607g.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Acid Jazz · UK Music · Groove Culture</span>
+<h3><a href="/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html">The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-22">May 22, 2026</time></p>
+<p class="newsroom-excerpt">The UK acid jazz renewal in 2026 spans label releases, live dates by first-wave acts, and festival programming — Acid Jazz Records, Bangs &amp; Talbot, The Brand New Heavies, Galliano, James Taylor Quartet, and Mostly Jazz Funk &amp; Soul Festival are all active at once.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html" title="Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money">
 <img alt="Tokenised deposit banking architecture for 2026 showing commercial bank money, digital wallets, stablecoins, CBDCs, tokenised gilts, and Project Agorá settlement paths" src="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -294,17 +306,6 @@ site_software: "Static Site Generator, Rust"
 </div>
 </article>
 
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html" title="The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services">
-<img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/stocks/images/precious-madubuike-t65T28d7x_8-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Cloud · AI-Native · Post-Quantum</span>
-<h3><a href="/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-16">May 16, 2026</time></p>
-<p class="newsroom-excerpt">Cloud architecture has crystallised around six pillars and one strategic question for banks: whether to consume cloud or design it — under converging pressure from agentic commerce, agentic unit economics, harvest-now-decrypt-later quantum risk, MCP security, cryptographic agent identity, and the legacy estate that still consumes 70–75% of financial-services IT spend.</p>
-</div>
-</article>
 
 </div>
 
