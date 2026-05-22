@@ -245,18 +245,24 @@ The PR is not done until every required check on it is green. Poll with `gh` unt
 ```bash
 pr_number=$(gh pr view --json number -q .number)
 
-# Poll until no PENDING / IN_PROGRESS / QUEUED rows remain.
-# Default ceiling is 30 minutes — accessibility cold-cache + lighthouse can take ~15.
-deadline=$(( $(date +%s) + 1800 ))
+# Note the field shape: `gh pr checks --json` uses `bucket` (pass/fail/pending/skipping)
+# and `state` (SUCCESS/FAILURE/CANCELLED/IN_PROGRESS/QUEUED/…). There is no `status` field.
+# Also: `gh pr checks` (without --json) exits non-zero if any check is failing OR pending,
+# so wrap it in `|| true` if you want to log it during the poll.
+
+# Default ceiling is 45 minutes — pa11y accessibility on a cold cache can run ~25.
+deadline=$(( $(date +%s) + 2700 ))
 while [[ $(date +%s) -lt $deadline ]]; do
-  pending=$(gh pr checks "$pr_number" --json status -q '[.[] | select(.status != "COMPLETED")] | length')
-  if [[ "$pending" == "0" ]]; then break; fi
+  pending=$(gh pr checks "$pr_number" --json bucket -q '[.[] | select(.bucket == "pending")] | length')
+  total=$(gh pr checks "$pr_number" --json bucket -q 'length')
+  echo "[$(date -u +%H:%M:%S)] checks: $((total - pending))/$total complete"
+  if [[ "$total" != "0" && "$pending" == "0" ]]; then break; fi
   sleep 30
 done
 
-# Final read: any FAILURE or CANCELLED is a real problem.
-failing=$(gh pr checks "$pr_number" --json name,conclusion -q '[.[] | select(.conclusion == "FAILURE" or .conclusion == "CANCELLED" or .conclusion == "TIMED_OUT")] | length')
-gh pr checks "$pr_number"   # print the human-readable table for the log
+# Final read: any fail / cancelled / timed-out bucket is a real problem.
+failing=$(gh pr checks "$pr_number" --json bucket,name -q '[.[] | select(.bucket == "fail")] | length')
+gh pr checks "$pr_number" || true   # print the human-readable table for the log
 ```
 
 - If `failing == 0` **and** `pending == 0`: every check is green. Update the PR body's last test-plan checkbox (`gh pr edit "$pr_number" --body "$(...)"` re-running the same template with the checkbox flipped) and report SUCCESS to Sebastien.
