@@ -6,8 +6,26 @@
     <description>מאמרים בעברית: AI יישומי, תשלומי ISO 20022, קריפטוגרפיה פוסט-קוונטית, וטרנספורמציה של תשלומי סיטונאות.</description>
     <atom:link href="https://sebastienrousseau.com/he/rss.xml" rel="self" type="application/rss+xml"/>
     <language>he-IL</language>
-    <lastBuildDate>Fri, 22 May 2026 18:38:31 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 20:36:48 +0000</lastBuildDate>
     <copyright>© זכויות יוצרים 2007 - 2026 - Sebastien Rousseau. כל הזכויות שמורות.</copyright>
+    <item>
+      <title>UK Payments Forward Plan 2026: סטייבלקוינים, בנקאות פתוחה ותשלומים אגנטיים</title>
+      <link>https://sebastienrousseau.com/he/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>
+      <description>UK Payments Forward Plan וחבילת המדיניות של אפריל 2026 מצביעים על מסגרת רגולטורית אחת לתשלומים מסורתיים, סטייבלקוינים, פיקדונות מתורמזים, בנקאות פתוחה ותשלומי סוכני AI.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</guid>
+      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>UK Payments Forward Plan 2026</category>
+      <category>סטייבלקוינים בריטניה</category>
+      <category>פיקדונות מתורמזים בריטניה</category>
+      <category>בנקאות פתוחה FCA</category>
+      <category>איחוד PSR FCA</category>
+      <category>תשלומי סוכני AI בריטניה</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>Chris Woolard</category>
+      <category>רגולציית שירותי תשלום</category>
+    </item>
     <item>
       <title>תשלומים אגנטיים בבנקאות: הסכמה, אחריות ו-UX התשלום החדש ב-2026</title>
       <link>https://sebastienrousseau.com/he/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>

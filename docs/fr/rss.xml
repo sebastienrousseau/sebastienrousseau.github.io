@@ -6,8 +6,26 @@
     <description>Articles en français : IA appliquée, paiements ISO 20022, cryptographie post-quantique et transformation des paiements wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/fr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fr-FR</language>
-    <lastBuildDate>Fri, 22 May 2026 18:38:30 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 20:36:48 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Tous droits réservés.</copyright>
+    <item>
+      <title>UK Payments Forward Plan 2026 : stablecoins, open banking, dépôts tokenisés, paiements agentiques</title>
+      <link>https://sebastienrousseau.com/fr/2026-05-24-uk-paiements-forward-plan-stablecoins-open-banking-tokenise-paiements-2026/</link>
+      <description>Le UK Payments Forward Plan et le paquet réglementaire d&apos;avril 2026 dessinent un cadre unique et cohérent pour paiements traditionnels, stablecoins, dépôts tokenisés, open banking et paiements agentiques.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-24-uk-paiements-forward-plan-stablecoins-open-banking-tokenise-paiements-2026/</guid>
+      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>UK Payments Forward Plan 2026</category>
+      <category>stablecoins Royaume-Uni</category>
+      <category>dépôts tokenisés Royaume-Uni</category>
+      <category>open banking FCA</category>
+      <category>consolidation PSR FCA</category>
+      <category>paiements agents IA Royaume-Uni</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>Chris Woolard</category>
+      <category>régulation des services de paiement</category>
+    </item>
     <item>
       <title>Paiements agentiques en banque : consentement, responsabilité et nouvelle UX en 2026</title>
       <link>https://sebastienrousseau.com/fr/2026-05-23-agentique-paiements-banking-consent-liability-new-payment-ux-2026/</link>

@@ -6,8 +6,18 @@
     <description>مقالات بالعربية: الذكاء الاصطناعي التطبيقي، مدفوعات ISO 20022، التشفير ما بعد الكمي، وتحوّل المدفوعات بالجملة.</description>
     <atom:link href="https://sebastienrousseau.com/ar/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ar-SA</language>
-    <lastBuildDate>Fri, 22 May 2026 18:38:30 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 20:36:48 +0000</lastBuildDate>
     <copyright>© حقوق النشر 2007 - 2026 - سيباستيان روسو. جميع الحقوق محفوظة.</copyright>
+    <item>
+      <title>خطة UK Payments Forward Plan 2026: العملات المستقرة والودائع المرمَّزة</title>
+      <link>https://sebastienrousseau.com/ar/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>
+      <description>خطة UK Payments Forward Plan وحزمة سياسات أبريل 2026 ترسم إطاراً تنظيمياً واحداً للمدفوعات التقليدية، والعملات المستقرة، والودائع المرمَّزة، والخدمات المصرفية المفتوحة، والمدفوعات الوكيلة في المملكة المتحدة.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</guid>
+      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>UK Payments Forward Plan 2026، العملات المستقرة، الودائع المرمَّزة، الخدمات المصرفية المفتوحة، FCA، PSR، المدفوعات الوكيلة، Wholesale Digital Markets Champion، Chris Woolard، تنظيم خدمات الدفع</category>
+    </item>
     <item>
       <title>المدفوعات الوكيلة في المصارف: الموافقة والمسؤولية وتجربة الدفع الجديدة 2026</title>
       <link>https://sebastienrousseau.com/ar/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>

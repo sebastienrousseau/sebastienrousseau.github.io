@@ -1,11 +1,11 @@
 {
-  "description": "Automate the creation of ISO 20022 pain.001 payment files from CSV or SQLite. pain001 is the open-source Python library that streamlines compliance.",
-  "locale": "bn_BD",
-  "language": "bn-BD",
-  "subtitle": "ISO 20022 payment automation and wholesale-payments engineering with pain001.",
-  "keywords": "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation",
-  "date": "Sep 29, 2023",
   "banner": "https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp",
-  "title": "Automating ISO 20022 Payment Files Creation with Pain001",
-  "banner_alt": "Turned off laptop computer on top of brown wooden table"
+  "locale": "bn_BD",
+  "subtitle": "ISO 20022 payment automation and wholesale-payments engineering with pain001.",
+  "banner_alt": "Turned off laptop computer on top of brown wooden table",
+  "keywords": "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation",
+  "language": "bn-BD",
+  "date": "Sep 29, 2023",
+  "description": "Automate the creation of ISO 20022 pain.001 payment files from CSV or SQLite. pain001 is the open-source Python library that streamlines compliance.",
+  "title": "Automating ISO 20022 Payment Files Creation with Pain001"
 }

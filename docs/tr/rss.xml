@@ -6,14 +6,32 @@
     <description>Türkçe makaleler: uygulamalı yapay zeka, ISO 20022 ödemeleri, post-kuantum kriptografi ve toptan ödemelerin dönüşümü.</description>
     <atom:link href="https://sebastienrousseau.com/tr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>tr-TR</language>
-    <lastBuildDate>Fri, 22 May 2026 18:38:31 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 20:36:49 +0000</lastBuildDate>
     <copyright>© Telif Hakkı 2007 - 2026 - Sebastien Rousseau. Tüm hakları saklıdır.</copyright>
+    <item>
+      <title>UK Payments Forward Plan 2026: Stablecoinler, Açık Bankacılık, Tokenleştirilmiş Mevduatlar</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>
+      <description>UK Payments Forward Plan ve Nisan 2026 politika paketi; geleneksel ödemeler, stablecoinler, tokenleştirilmiş mevduatlar, açık bankacılık ve yapay zeka ajanı ödemeleri için tek tutarlı bir çerçeveye işaret ediyor.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</guid>
+      <pubDate>Fri, 22 May 2026 20:36:49 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>UK Payments Forward Plan 2026</category>
+      <category>İngiltere stablecoinler</category>
+      <category>İngiltere tokenleştirilmiş mevduatlar</category>
+      <category>açık bankacılık FCA</category>
+      <category>PSR FCA konsolidasyonu</category>
+      <category>İngiltere yapay zeka ajanı ödemeleri</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>Chris Woolard</category>
+      <category>ödeme hizmetleri düzenlemesi</category>
+    </item>
     <item>
       <title>Bankacılıkta Ajansal Ödemeler: Onay, Sorumluluk ve 2026 Ödeme UX&apos;i</title>
       <link>https://sebastienrousseau.com/tr/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>
       <description>2026&apos;da ajansal ödemeler kavramdan canlı işleme geçti. Bankacılık sorusu artık yapay zeka ajanlarının ödeme başlatıp başlatamayacağı değil; onay, sorumluluk, kimlik, denetlenebilirlik, dolandırıcılık kontrolleri ve protokol birlikte çalışabilirliğinin nasıl kurulacağıdır.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</guid>
-      <pubDate>Fri, 22 May 2026 18:38:31 +0000</pubDate>
+      <pubDate>Fri, 22 May 2026 20:36:49 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>ajansal ödemeler 2026</category>

@@ -6,8 +6,26 @@
     <description>Статті українською: прикладний ШІ, платежі ISO 20022, постквантова криптографія та трансформація оптових платежів.</description>
     <atom:link href="https://sebastienrousseau.com/uk/rss.xml" rel="self" type="application/rss+xml"/>
     <language>uk-UA</language>
-    <lastBuildDate>Fri, 22 May 2026 18:38:31 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 20:36:49 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Усі права захищено.</copyright>
+    <item>
+      <title>UK Payments Forward Plan 2026: стейблкоїни, відкритий банкінг, токенізовані депозити, агентські платежі</title>
+      <link>https://sebastienrousseau.com/uk/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>
+      <description>UK Payments Forward Plan і пакет політик квітня 2026 окреслюють єдиний регуляторний периметр для класичних платежів, стейблкоїнів, токенізованих депозитів, відкритого банкінгу та агентських платежів.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</guid>
+      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>UK Payments Forward Plan 2026</category>
+      <category>стейблкоїни Велика Британія</category>
+      <category>токенізовані депозити</category>
+      <category>відкритий банкінг FCA</category>
+      <category>консолідація PSR FCA</category>
+      <category>агентські платежі</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>Chris Woolard</category>
+      <category>регулювання платіжних послуг</category>
+    </item>
     <item>
       <title>Агентські платежі у банкінгу: згода, відповідальність та новий UX 2026</title>
       <link>https://sebastienrousseau.com/uk/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>

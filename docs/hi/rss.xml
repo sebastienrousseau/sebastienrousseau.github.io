@@ -6,8 +6,26 @@
     <description>हिन्दी लेख: व्यावहारिक AI, ISO 20022 भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतान का रूपांतरण।</description>
     <atom:link href="https://sebastienrousseau.com/hi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>hi-IN</language>
-    <lastBuildDate>Fri, 22 May 2026 18:38:31 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 20:36:48 +0000</lastBuildDate>
     <copyright>© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।</copyright>
+    <item>
+      <title>UK Payments Forward Plan 2026: स्टेबलकॉइन, ओपन बैंकिंग, टोकनीकृत जमा व एजेंटिक भुगतान</title>
+      <link>https://sebastienrousseau.com/hi/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>
+      <description>UK Payments Forward Plan और अप्रैल 2026 नीति पैकेज पारंपरिक भुगतान, स्टेबलकॉइन, टोकनीकृत जमा, ओपन बैंकिंग और AI-एजेंट भुगतान के लिए एक सुसंगत नियामक परिधि निर्धारित करते हैं।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</guid>
+      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>UK Payments Forward Plan 2026</category>
+      <category>स्टेबलकॉइन UK</category>
+      <category>टोकनीकृत जमा UK</category>
+      <category>ओपन बैंकिंग FCA</category>
+      <category>PSR FCA समेकन</category>
+      <category>AI एजेंट भुगतान UK</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>Chris Woolard</category>
+      <category>भुगतान सेवा विनियमन</category>
+    </item>
     <item>
       <title>बैंकिंग में एजेंटिक भुगतान: सहमति, दायित्व और 2026 का नया भुगतान UX</title>
       <link>https://sebastienrousseau.com/hi/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>

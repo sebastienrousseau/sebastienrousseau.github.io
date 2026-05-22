@@ -6,8 +6,26 @@
     <description>日本語の記事:応用AI、ISO 20022 決済、ポスト量子暗号、ホールセール決済の構造変革。</description>
     <atom:link href="https://sebastienrousseau.com/ja/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ja-JP</language>
-    <lastBuildDate>Fri, 22 May 2026 18:38:31 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 20:36:48 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>UK Payments Forward Plan 2026:ステーブルコイン・オープンバンキング・トークン化預金・エージェント型決済</title>
+      <link>https://sebastienrousseau.com/ja/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>
+      <description>UK Payments Forward Plan と 2026 年 4 月の政策パッケージは、伝統的決済、ステーブルコイン、トークン化預金、オープンバンキング、AI エージェント決済を統合する単一の規制枠組みを提示しています。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</guid>
+      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>UK Payments Forward Plan 2026</category>
+      <category>ステーブルコイン 英国</category>
+      <category>トークン化預金 英国</category>
+      <category>オープンバンキング FCA</category>
+      <category>PSR FCA 統合</category>
+      <category>AI エージェント決済 英国</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>Chris Woolard</category>
+      <category>決済サービス規制</category>
+    </item>
     <item>
       <title>銀行のエージェント型決済:同意・責任・2026 年の新しい決済 UX</title>
       <link>https://sebastienrousseau.com/ja/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>

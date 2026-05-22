@@ -105,15 +105,15 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html" title="Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026">
-<img alt="Agentic payments architecture diagram showing AI agents, consent mandates, tokenised credentials, card networks, banks, merchants, and audit trails" src="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html" title="The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments">
+<img alt="UK payments modernisation diagram showing stablecoins, tokenised deposits, open banking, AI agents, FCA regulation, PSR consolidation, and wholesale digital markets" src="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Agentic Payments · Ai Payments · Mastercard Agent Pay</span>
-<h3><a href="/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html" title="Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026">Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-23">May 23, 2026</time> · Sebastien Rousseau</p>
-<p>Agentic payments crossed from concept to live transaction in 2026 — Mastercard and Rabobank executed a Netherlands AI-agent payment via Agent Pay, AP2-style cryptographic mandates are emerging, and HM Treasury says payment-services regulation must adapt. The banking architecture question is consent, identity, liability</p>
-<p><a class="pill ghost" href="/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html" title="Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026">Read the full story</a></p>
+<span class="newsroom-eyebrow">Uk Payments · Payments Forward Plan · Stablecoins</span>
+<h3><a href="/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html" title="The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments">The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-24">May 24, 2026</time> · Sebastien Rousseau</p>
+<p>The UK Payments Forward Plan and April 2026 policy package set out a single framework for traditional payments, stablecoins, tokenised deposits, open banking, and agentic payments. The strategic question for banks is design discipline: which data, rails, controls, liabilities, and client workflows belong together — and</p>
+<p><a class="pill ghost" href="/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html" title="The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments">Read the full story</a></p>
 </div>
 </article>
 

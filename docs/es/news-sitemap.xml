@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/es/2026-05-24-uk-pagos-forward-plan-stablecoins-open-banking-tokenised-pagos-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>es-ES</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-24T06:06:06+00:00</news:publication_date>
+    <news:title>UK Payments Forward Plan 2026: stablecoins, open banking y depósitos tokenizados</news:title>
+    <news:keywords>UK Payments Forward Plan 2026, stablecoins Reino Unido, depósitos tokenizados Reino Unido, open banking FCA, consolidación PSR FCA, pagos agénticos Reino Unido, Wholesale Digital Markets Champion, Chris Woolard, regulación de servicios de pago</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/es/2026-05-23-agentic-pagos-banking-consent-liability-new-payment-ux-2026/</loc>
   <news:news>
     <news:publication>

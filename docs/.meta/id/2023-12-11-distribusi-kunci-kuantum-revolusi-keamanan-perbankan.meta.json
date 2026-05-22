@@ -1,11 +1,11 @@
 {
-  "title": "[ID DRAFT] Quantum Key Distribution Revolutionising Security in Banking",
+  "description": "As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security.",
+  "subtitle": "Quantum Key Distribution (QKD) for financial-grade security in banking.",
   "locale": "id_ID",
+  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
   "date": "Dec 11, 2023",
   "banner_alt": "HSBC From the Docks",
-  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
-  "subtitle": "Quantum Key Distribution (QKD) for financial-grade security in banking.",
-  "language": "id-ID",
   "keywords": "Quantum Key Distribution (QKD), Quantum Security, Banking, Financial Industry, Digital Finance, Cybersecurity, Quantum Computing, HSBC, Quantum Protection Trial, Financial Transactions",
-  "description": "As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security."
+  "title": "[ID DRAFT] Quantum Key Distribution Revolutionising Security in Banking",
+  "language": "id-ID"
 }

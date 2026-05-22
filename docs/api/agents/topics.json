@@ -28,8 +28,9 @@
       "title": "ISO 20022 & Payments",
       "description": "Cross-border message migration, structured-address compliance, SEPA Instant, SWIFT gpi, and the wholesale-payments rails carrying it all. Tools, playbooks, and the regulatory clock.",
       "url": "https://sebastienrousseau.com/topics/iso-20022-payments/",
-      "post_count": 8,
+      "post_count": 9,
       "post_slugs": [
+        "2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026",
         "2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026",
         "2026-05-19-global-wholesale-payments-economics-2026",
         "2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf",

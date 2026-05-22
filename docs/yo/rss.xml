@@ -6,8 +6,26 @@
     <description>Awọn akọle Yorùbá: AI tó wúlò, ìsanwó ISO 20022, kírípítógíráfì lẹ́yìn-kuántọ́mù, àti àtúnṣe ètò ìsanwó ńláńlá.</description>
     <atom:link href="https://sebastienrousseau.com/yo/rss.xml" rel="self" type="application/rss+xml"/>
     <language>yo-NG</language>
-    <lastBuildDate>Fri, 22 May 2026 18:38:31 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 20:36:49 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Gbogbo ẹtọ ti wa ni ipamọ.</copyright>
+    <item>
+      <title>UK Payments Forward Plan 2026: Stablecoins, Ẹnu-Ọ̀nà Bankì, Tókènì, Agent</title>
+      <link>https://sebastienrousseau.com/yo/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>
+      <description>UK Payments Forward Plan àti àkójọpọ̀ ìlànà April 2026 fi àwòṣe ìṣọ̀kan kan hàn fún ìsanwó ìbílẹ̀, stablecoins, àwọn ìfowópamọ́ tókènì, ẹnu-ọ̀nà bankì, àti ìsanwó AI agent.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</guid>
+      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>UK Payments Forward Plan 2026</category>
+      <category>stablecoins UK</category>
+      <category>àwọn ìfowópamọ́ tókènì UK</category>
+      <category>ẹnu-ọ̀nà bankì FCA</category>
+      <category>ìṣọ̀kan PSR FCA</category>
+      <category>ìsanwó AI agent UK</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>Chris Woolard</category>
+      <category>ìṣàkóso iṣẹ́-ìsanwó</category>
+    </item>
     <item>
       <title>Ìsanwó Alábòójútó nínú Báńkì: Àṣẹ Ìfọwọ́sí, Ojúṣe, UX Ìsanwó 2026</title>
       <link>https://sebastienrousseau.com/yo/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>

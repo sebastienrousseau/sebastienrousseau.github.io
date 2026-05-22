@@ -1,11 +1,11 @@
 {
-  "language": "id-ID",
-  "date": "Mar 25, 2024",
-  "locale": "id_ID",
-  "banner_alt": "Banner for the Fully Homomorphic Encryption",
+  "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp",
   "keywords": "Fully Homomorphic Encryption, banking security, quantum computing, financial data encryption, FHE case studies, regulatory frameworks FHE, computational overhead FHE, FHE research, FHE hardware, data privacy laws",
   "subtitle": "Strengthen Data Security, Enhance AI Privacy, and Build Customer Trust in the Quantum Computing Era with FHE",
-  "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp",
+  "date": "Mar 25, 2024",
   "title": "[ID DRAFT] Fully Homomorphic Encryption (FHE) in a Banking Quantum Era",
+  "locale": "id_ID",
+  "banner_alt": "Banner for the Fully Homomorphic Encryption",
+  "language": "id-ID",
   "description": "Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats."
 }
