@@ -1,5 +1,7 @@
 # Local daily-publish automation
 
+> **Status (2026-05-22): currently inactive.** Sebastien now invokes `/publish-today` **manually each evening** so he can review the night's output before merging in the morning. The LaunchAgent below is no longer loaded. This folder is kept as a documented fallback — re-run `bash scripts/cron/install.sh` to switch automation back on. See `.claude/commands/publish-today.md` for the manual flow.
+
 Fires `/publish-today` once a day from your Mac via a launchd `LaunchAgent`. No cloud, no Claude Code web — the job runs as your user, with your git credentials, your GPG signing key, and your `gh` token, so commits get signed and PRs get opened automatically.
 
 ## Why local, not cloud
