@@ -1,88 +1,88 @@
 ---
-author: “contact@sebastienrousseau.com (Sebastien Rousseau)”
-banner_alt: “Kolaż odrodzenia UK acid jazz 2026 z organami Hammonda, winylem, Ronnie Scott’s, Acid Jazz Records, scenami festiwali jazz-funk i londyńską kulturą groove”
-banner_height: “571”
-banner_width: “1425”
-banner: “https://cloudcdn.pro/api/transform?url=/stocks/images/aperture-vintage-SshYpuf607g.webp&w=1200&format=webp&q=80”
-cdn: “https://cloudcdn.pro”
-charset: “UTF-8”
-cname: “sebastienrousseau.com”
-copyright: “© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.”
-date: “May 22, 2026”
-description: “Odrodzenie UK acid jazz w 2026: Acid Jazz Records, Brand New Heavies z Galliano, James Taylor Quartet w Ronnie Scott’s i Mostly Jazz Funk & Soul Festival.”
-format-detection: “telephone=no”
-hreflang: “pl”
-icon: “https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg”
-id: “https://sebastienrousseau.com/pl/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026”
-image_alt: “Czarno-biały portret Sebastiena Rousseau”
-image_height: “162”
-image_width: “162”
-image: “https://cloudcdn.pro/stocks/images/sebastien-rousseau.png”
-keywords: “UK acid jazz 2026, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott’s, Bangs and Talbot, Chris Bangs, Mick Talbot, Smokin Aces, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, odrodzenie jazzu w UK, jazz funk, soul jazz, koncerty jazzowe Londyn”
-language: “pl”
-excerpt: “Odrodzenie UK acid jazz w 2026 roku obejmuje wydawnictwa wytwórniane, trasy pierwszej fali artystów i programowanie festiwalowe — Acid Jazz Records, Bangs &amp; Talbot, The Brand New Heavies, Galliano, James Taylor Quartet i Mostly Jazz Funk &amp; Soul Festival są aktywni jednocześnie.”
-last_reviewed: “2026-05-22”
-layout: “report”
-locale: “pl_PL”
-logo_alt: “Logo Sebastiena Rousseau”
-logo_height: “44”
-logo_width: “44”
-logo: “https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg”
-menu: “”
-measurementID: “G-169G4ET5HQ”
-name: “Sebastien Rousseau”
-permalink: “https://sebastienrousseau.com/pl/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026”
-rating: “general”
-referrer: “no-referrer”
-robots: “index, follow”
-schema: “FAQPage, Article”
-seo_title: “UK Acid Jazz 2026: Artyści, Koncerty, Albumy, Odrodzenie”
-short_name: “sebastienrousseau”
-subtitle: “Acid jazz w Wielkiej Brytanii odradza się dzięki połączeniu artystów pierwszej fali, wydawnictw Acid Jazz Records, festiwali jazz-funk, słuchaczy soul jazz, koncertów z organami Hammonda i młodszych muzyków przywracających groove do centrum sceny.”
-tags: “acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott’s, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz”
-theme-color: “0, 83, 191”
-title: “Odrodzenie Acid Jazz w UK: Artyści, Koncerty i Albumy 2026”
-url: “https://sebastienrousseau.com/pl/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026”
-viewport: “width=device-width, initial-scale=1, shrink-to-fit=no”
-atom_link: “https://sebastienrousseau.com/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/rss.xml”
-category: “Music”
-docs: “https://validator.w3.org/feed/docs/rss2.html”
-generator: “Static Site Generator (SSG) (version 0.0.26)”
-item_description: “Odrodzenie UK acid jazz w 2026 roku — Acid Jazz Records, Bangs & Talbot, Brand New Heavies, Galliano, James Taylor Quartet, Mostly Jazz Funk & Soul Festival i groove-led jazz.”
-item_guid: “https://sebastienrousseau.com/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/rss.xml”
-item_link: “https://sebastienrousseau.com/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/rss.xml”
-item_pub_date: “Fri, 22 May 2026 06:06:06 +0000”
-item_title: “Odrodzenie Acid Jazz w UK: Artyści, Koncerty i Albumy 2026”
-last_build_date: “Fri, 22 May 2026 06:06:06 +0000”
-managing_editor: “contact@sebastienrousseau.com (Sebastien Rousseau)”
-pub_date: “Fri, 22 May 2026 06:06:06 +0000”
-ttl: “60”
-type: “article”
-webmaster: “contact@sebastienrousseau.com”
-apple_mobile_web_app_orientations: “portrait”
-apple_touch_icon_sizes: “192x192”
-apple-mobile-web-app-capable: “yes”
-apple-mobile-web-app-status-bar-inset: “black”
-apple-mobile-web-app-status-bar-style: “black-translucent”
-apple-mobile-web-app-title: “UK Acid Jazz 2026”
-apple-touch-fullscreen: “yes”
-msapplication-navbutton-color: “0, 83, 191”
-twitter_card: “summary_large_image”
-twitter_creator: “@wwdseb”
-twitter_description: “Odrodzenie UK acid jazz w 2026 roku — Acid Jazz Records, Bangs & Talbot, Brand New Heavies, Galliano, James Taylor Quartet, Mostly Jazz Funk & Soul Festival i groove-led jazz.”
-twitter_image: “https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg”
-twitter_image_alt: “Logo Sebastiena Rousseau”
-twitter_site: “@wwdseb”
-twitter_title: “UK Acid Jazz 2026: Artyści, Koncerty, Albumy, Odrodzenie”
-twitter_url: “https://sebastienrousseau.com/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026”
-author_website: “https://sebastienrousseau.com”
-author_twitter: “@wwdseb”
-author_location: “London, UK”
-thanks: “Thanks for reading!”
-site_last_updated: “2026-05-22”
-site_standards: “HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML”
-site_components: “Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes”
-site_software: “Static Site Generator, Rust”
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+banner_alt: "Kolaż odrodzenia UK acid jazz 2026 z organami Hammonda, winylem, Ronnie Scott’s, Acid Jazz Records, scenami festiwali jazz-funk i londyńską kulturą groove"
+banner_height: "571"
+banner_width: "1425"
+banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/aperture-vintage-SshYpuf607g.webp&w=1200&format=webp&q=80"
+cdn: "https://cloudcdn.pro"
+charset: "UTF-8"
+cname: "sebastienrousseau.com"
+copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
+date: "May 22, 2026"
+description: "Odrodzenie UK acid jazz w 2026: Acid Jazz Records, Brand New Heavies z Galliano, James Taylor Quartet w Ronnie Scott’s i Mostly Jazz Funk & Soul Festival."
+format-detection: "telephone=no"
+hreflang: "pl"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/pl/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026"
+image_alt: "Czarno-biały portret Sebastiena Rousseau"
+image_height: "162"
+image_width: "162"
+image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+keywords: "UK acid jazz 2026, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott’s, Bangs and Talbot, Chris Bangs, Mick Talbot, Smokin Aces, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, odrodzenie jazzu w UK, jazz funk, soul jazz, koncerty jazzowe Londyn"
+language: "pl"
+excerpt: "Odrodzenie UK acid jazz w 2026 roku obejmuje wydawnictwa wytwórniane, trasy pierwszej fali artystów i programowanie festiwalowe — Acid Jazz Records, Bangs &amp; Talbot, The Brand New Heavies, Galliano, James Taylor Quartet i Mostly Jazz Funk &amp; Soul Festival są aktywni jednocześnie."
+last_reviewed: "2026-05-22"
+layout: "report"
+locale: "pl_PL"
+logo_alt: "Logo Sebastiena Rousseau"
+logo_height: "44"
+logo_width: "44"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+menu: ""
+measurementID: "G-169G4ET5HQ"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/pl/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026"
+rating: "general"
+referrer: "no-referrer"
+robots: "index, follow"
+schema: "FAQPage, Article"
+seo_title: "UK Acid Jazz 2026: Artyści, Koncerty, Albumy, Odrodzenie"
+short_name: "sebastienrousseau"
+subtitle: "Acid jazz w Wielkiej Brytanii odradza się dzięki połączeniu artystów pierwszej fali, wydawnictw Acid Jazz Records, festiwali jazz-funk, słuchaczy soul jazz, koncertów z organami Hammonda i młodszych muzyków przywracających groove do centrum sceny."
+tags: "acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott’s, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz"
+theme-color: "0, 83, 191"
+title: "Odrodzenie Acid Jazz w UK: Artyści, Koncerty i Albumy 2026"
+url: "https://sebastienrousseau.com/pl/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+atom_link: "https://sebastienrousseau.com/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/rss.xml"
+category: "Music"
+docs: "https://validator.w3.org/feed/docs/rss2.html"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
+item_description: "Odrodzenie UK acid jazz w 2026 roku — Acid Jazz Records, Bangs & Talbot, Brand New Heavies, Galliano, James Taylor Quartet, Mostly Jazz Funk & Soul Festival i groove-led jazz."
+item_guid: "https://sebastienrousseau.com/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/rss.xml"
+item_link: "https://sebastienrousseau.com/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/rss.xml"
+item_pub_date: "Fri, 22 May 2026 06:06:06 +0000"
+item_title: "Odrodzenie Acid Jazz w UK: Artyści, Koncerty i Albumy 2026"
+last_build_date: "Fri, 22 May 2026 06:06:06 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+pub_date: "Fri, 22 May 2026 06:06:06 +0000"
+ttl: "60"
+type: "article"
+webmaster: "contact@sebastienrousseau.com"
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "UK Acid Jazz 2026"
+apple-touch-fullscreen: "yes"
+msapplication-navbutton-color: "0, 83, 191"
+twitter_card: "summary_large_image"
+twitter_creator: "@wwdseb"
+twitter_description: "Odrodzenie UK acid jazz w 2026 roku — Acid Jazz Records, Bangs & Talbot, Brand New Heavies, Galliano, James Taylor Quartet, Mostly Jazz Funk & Soul Festival i groove-led jazz."
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image_alt: "Logo Sebastiena Rousseau"
+twitter_site: "@wwdseb"
+twitter_title: "UK Acid Jazz 2026: Artyści, Koncerty, Albumy, Odrodzenie"
+twitter_url: "https://sebastienrousseau.com/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026"
+author_website: "https://sebastienrousseau.com"
+author_twitter: "@wwdseb"
+author_location: "London, UK"
+thanks: "Thanks for reading!"
+site_last_updated: "2026-05-22"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_software: "Static Site Generator, Rust"
 ---
 
 # Odrodzenie Acid Jazz w UK: Artyści, Koncerty i Albumy 2026
