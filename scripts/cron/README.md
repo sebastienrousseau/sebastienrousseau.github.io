@@ -92,7 +92,9 @@ Logs are retained — delete `~/Library/Logs/sebastienrousseau-publish/` by hand
 | Logfile shows `git pull failed` | Local `main` has uncommitted changes or unpushed commits | Resolve the local state; the daily job won't publish on top of a dirty tree |
 | Notification fires but no PR opened | claude inside the routine hit an error mid-pipeline (translation gate, build failure, etc.) | Read `~/Library/Logs/sebastienrousseau-publish/<today>.log` — every step writes a line |
 | `launchctl list | grep publish-daily` returns nothing | LaunchAgent loaded under the wrong user session, or `bootstrap` was rejected because the plist was already loaded | Run `bash scripts/cron/install.sh` again; it unloads first |
-| `claude` consumed lots of credits | Translation step ran (~$2–4 per article is normal) | Tune `--max-budget-usd 5` in `publish-daily.sh` if you want a tighter ceiling |
+| `claude` consumed lots of credits | Translation step ran (~$5–10 per full 28-locale article is normal) | Default ceiling is `$15` (set via `MAX_BUDGET_USD` env var in `publish-daily.sh`). Tighten or loosen by exporting `MAX_BUDGET_USD=N` in the LaunchAgent's `EnvironmentVariables` block. |
+| Notification says "FAILED — budget cap hit" | claude printed "Exceeded USD budget" mid-run and stopped translating | Bump `MAX_BUDGET_USD` and re-fire with `launchctl kickstart -k gui/$(id -u)/com.sebastienrousseau.publish-daily` |
+| Notification says "FAILED — claude exited 0 but no PR URL" | Routine got far enough to exit cleanly but never opened the PR (translation gate, build failure, gh push issue, …) | Read the log file for the specific step that failed |
 
 ## Files in this folder
 
