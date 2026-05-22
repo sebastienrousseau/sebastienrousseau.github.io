@@ -1,10 +1,10 @@
 ---
-description: Promote today's _drafts/ article, validate voice/style, pick a banner if needed, translate 27 locale stubs with native SEO + tone, open a PR. Works in both local Claude Code (Mac) and Anthropic cloud /schedule routines.
+description: Promote today's _drafts/ article, validate voice/style, pick a banner if needed, translate 27 locale stubs with native SEO + tone, open a feat/<slug> PR, and wait for CI to land green. Invoked manually by Sebastien each evening.
 ---
 
-You are publishing today's article on `sebastienrousseau.com`. Your job is to ship today's source content end-to-end as a reviewable PR — Sebastien merges it from GitHub mobile.
+You are publishing today's article on `sebastienrousseau.com`. Your job is to ship today's source content end-to-end as a reviewable PR — Sebastien merges it from GitHub the next morning.
 
-**Schedule reminder**: this command fires at **04:00 UTC daily** via Sebastien's cloud `/schedule` routine. Translations + PR should be ready in his inbox by ~04:10 UTC so he can review + merge before the European workday starts.
+**Invocation model**: Sebastien runs this slash command manually each evening so he can review the night's output before merging. There is no LaunchAgent or cloud `/schedule` cron anymore — quality bar is "all CI green on the PR", not "wall-clock latency". Don't return until step 12's CI poll confirms every required check is green (or you've surfaced a specific failure that needs Sebastien's eyes).
 
 ## Where you're running — read this first
 
@@ -152,11 +152,19 @@ python3 -m pytest tests/test_build_translations_smoke.py::test_parse_frontmatter
 
 **Local mode:**
 
+Branch convention: **`feat/<slug>`** where `<slug>` is the full filename stem (already prefixed with the ISO date, e.g. `feat/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026`). One branch per article — never reuse.
+
+The PR title is `feat(content): <YYYY-MM-DD> — <title>`. The PR body is an activity log of every step this routine ran tonight (banner picked, voice gate result, locales translated, listings refreshed, build outcome, commit SHA). Sebastien reads this in the morning before merging from GitHub, so it has to be specific — not boilerplate. Fill in the placeholders below with the actual values you observed, don't leave them as `<…>`.
+
 ```bash
 today=$(date -u +%F)
 slug=$(basename _posts/${today}-*.md .md)
 title=$(grep -oE '^title: *"[^"]+"' "_posts/${slug}.md" | head -1 | sed 's/title: *"//;s/"$//' | head -c 80)
-branch="content/${today}-$(echo "$slug" | cut -d'-' -f4-7 | head -c 30)"
+banner_url=$(grep -oE '^banner: *"?[^" ]+' "_posts/${slug}.md" | head -1 | sed 's/banner: *"\?//;s/"\?$//')
+commit_sha=  # set after `git commit` below
+docs_count=$(git status --porcelain docs/ | wc -l | tr -d ' ')
+
+branch="feat/${slug}"
 
 git checkout -b "$branch"
 git add _posts/ _data/ scripts/generators/gen_articles.py scripts/generators/build_topics.py _layouts/ .claude/ 2>/dev/null || true
@@ -164,43 +172,116 @@ git add _posts/ _data/ scripts/generators/gen_articles.py scripts/generators/bui
 # rebuilds public/ on every main push but never touches docs/, so we
 # commit it here. Diff will be ~3000 files for a typical daily article.
 git add docs/ 2>/dev/null || true
-git commit -S -m "content(${today}): ${title} + 27 translations"
+git commit -S -m "feat(content): ${today} — ${title} + 27 translations"
+commit_sha=$(git rev-parse --short HEAD)
 git push -u origin "$branch"
-gh pr create --title "content(${today}): ${title}" --body "$(cat <<EOF
+
+gh pr create --title "feat(content): ${today} — ${title}" --body "$(cat <<EOF
 ## Summary
-- EN article: **${title}**
-- 27 non-EN locales translated with native SEO + tone (fr/es/de/it/pt-br/nl/ja/zh-hans/zh-hant/ko/ar/ru/pl/cs/uk/ro/tr/he/hi/bn/id/vi/th/fil/ha/yo/sv)
-- Homepage card rotated to keep 6 visible
-- gen_articles.py auto-discovered the new post; /articles/ featured story refreshed
-- check_voice gate passed: frontmatter complete, banner reachable, no hype filler, structural shape OK
+
+**${title}** — published ${today}. EN source + 27 native-locale translations, listings + feeds refreshed, docs/ snapshot rebuilt.
+
+## What ran tonight
+
+### 1. Editorial gate
+- \`check_voice.py --today\`: **passed**
+- Frontmatter: title, subtitle, description, banner, banner_alt, tags, twitter_*, excerpt, date, keywords — all present
+- Anti-filler scan: clean (no "delve into", "embark on", "in conclusion", "transformative journey", …)
+- Structural shape: 1 H1, ≥3 H2s, lead aside present, Executive Summary blockquote present, FAQ + References present
+- Date filename ↔ frontmatter \`date:\` match
+<!-- If you had to fix anything before the gate passed, list it here. Delete this comment block if there was nothing. -->
+
+### 2. Banner
+- URL: \`${banner_url}\`
+<!-- If pick_banner.py ran, add: "Picked via \`pick_banner.py --hint <kw>\` because the original banner was unreachable." -->
+
+### 3. Translations (27 locales)
+- Dispatched in parallel batches of 7 sub-agents
+- Native SEO frontmatter (title / subtitle / description / keywords / twitter_* / excerpt) translated per locale
+- Native register (executive / board-level tone) enforced — no hype filler in any locale
+- Locales: \`fr\` \`es\` \`de\` \`it\` \`pt-br\` \`nl\` \`ja\` \`zh-hans\` \`zh-hant\` \`ko\` \`ar\` \`ru\` \`pl\` \`cs\` \`uk\` \`ro\` \`tr\` \`he\` \`hi\` \`bn\` \`id\` \`vi\` \`th\` \`fil\` \`ha\` \`yo\` \`sv\`
+- \`translate_post.py --list-stubs\` confirms: **all 27 locales translated** (0 stubs remaining)
+
+### 4. Homepage + listings
+- \`_posts/index.md\` 6-card grid rotated (new card prepended, bottom card dropped)
+- \`gen_articles.py\` auto-discovered the new post → \`/articles/\` featured story refreshed
+- \`build_topics.py\` regenerated topic clusters (EN + 27 locale forks)
+- \`build_lang_feeds.py\` regenerated 28 RSS / Atom / JSON feeds + news-sitemap
+- \`build_agent_api.py\` refreshed \`/api/agents/posts.json\`
+- \`postbuild.py\` refreshed \`/llms-full.txt\` + sitemap.xml + all 28 \`search-index.json\`
+<!-- If a new topic cluster was added or an existing one extended, name it here. -->
+
+### 5. Build + commit
+- \`./build.sh\`: **exit 0** (i18n / hreflang / CSP / RTL / sitemap / JSON-LD all clean)
+- Commit \`${commit_sha}\` signed (GPG) on branch \`${branch}\`
+- \`docs/\` snapshot committed (${docs_count} files) — pages-deploy.yml rebuilds public/ from source on merge, docs/ is the archival record
+
+## Reviewer notes
+- Merge target: \`main\` — Sebastien merges from GitHub after morning review
+- Required checks must all be green before merge (see Checks tab)
+- If something looks off, this routine is in \`.claude/commands/publish-today.md\` — re-run after a fix lands on \`main\`
 
 ## Test plan
 - [x] check_voice green
-- [x] all 27 locales translated (no stubs remaining)
-- [x] \\\`./build.sh\\\` green (local) OR pending CI (cloud)
-- [ ] CI build + diff + accessibility + lighthouse pass
+- [x] All 27 locales translated (no stubs remaining)
+- [x] \`./build.sh\` exit 0
+- [ ] CI: build + diff + accessibility + lighthouse all green
 EOF
 )"
 ```
 
 **Cloud mode** (`git push` returns 403, no SSH key for signing): use the GitHub MCP server.
 
-1. `mcp__github__create_branch` — base `main`, head `content/<today>-<slug-frag>`
+1. `mcp__github__create_branch` — base `main`, head `feat/<slug>`
 2. For each changed file (collect via `git status --porcelain | grep -v '^?? public/'`), call `mcp__github__create_or_update_file` with the path + base64 content + branch. **Note:** cloud has no `ssg` binary, so it can't produce `docs/`. Open the PR with source files only; a follow-up local rebuild + snapshot-refresh PR brings `docs/` back in sync after merge. Flag this in the cloud-mode PR description so reviewers know a snapshot-refresh PR is owed.
 3. `mcp__github__create_pull_request` — same title/body as above.
 
 Do **not** attempt `git push` in cloud mode — it will 403.
 
-### 11. Report back
+### 11. Wait for CI to land green
+
+The PR is not done until every required check on it is green. Poll with `gh` until all checks complete, then act on the outcome.
+
+```bash
+pr_number=$(gh pr view --json number -q .number)
+
+# Note the field shape: `gh pr checks --json` uses `bucket` (pass/fail/pending/skipping)
+# and `state` (SUCCESS/FAILURE/CANCELLED/IN_PROGRESS/QUEUED/…). There is no `status` field.
+# Also: `gh pr checks` (without --json) exits non-zero if any check is failing OR pending,
+# so wrap it in `|| true` if you want to log it during the poll.
+
+# Default ceiling is 45 minutes — pa11y accessibility on a cold cache can run ~25.
+deadline=$(( $(date +%s) + 2700 ))
+while [[ $(date +%s) -lt $deadline ]]; do
+  pending=$(gh pr checks "$pr_number" --json bucket -q '[.[] | select(.bucket == "pending")] | length')
+  total=$(gh pr checks "$pr_number" --json bucket -q 'length')
+  echo "[$(date -u +%H:%M:%S)] checks: $((total - pending))/$total complete"
+  if [[ "$total" != "0" && "$pending" == "0" ]]; then break; fi
+  sleep 30
+done
+
+# Final read: any fail / cancelled / timed-out bucket is a real problem.
+failing=$(gh pr checks "$pr_number" --json bucket,name -q '[.[] | select(.bucket == "fail")] | length')
+gh pr checks "$pr_number" || true   # print the human-readable table for the log
+```
+
+- If `failing == 0` **and** `pending == 0`: every check is green. Update the PR body's last test-plan checkbox (`gh pr edit "$pr_number" --body "$(...)"` re-running the same template with the checkbox flipped) and report SUCCESS to Sebastien.
+- If `pending != 0` at deadline: the run took longer than 30 min. Don't fail silently — surface the still-running jobs by name and recommend Sebastien re-poll with `gh pr checks <N>` himself.
+- If `failing != 0`: identify each failing job from the table, fetch its log with `gh run view --job=<job-id> --log-failed | tail -80`, and either (a) fix the root cause + push a follow-up commit to the same branch (re-triggers CI; loop back to the poll above), or (b) if the root cause needs Sebastien's judgement, leave the PR open and report the specific failure to him in the SUCCESS/FAILURE message.
+
+The slash command does not exit cleanly until either the CI is fully green or you've reported a specific failure that needs human judgement.
+
+### 12. Report back
 
 Tell Sebastien:
 - The PR URL
-- Slug + title
+- Slug + title + commit SHA
 - 28/28 locale count
 - Any voice-gate defects you fixed before scaffolding
 - The banner image used (URL or filename + hint that drove the pick)
+- Final CI status: which checks are green, which (if any) you had to push fixes for, which (if any) still need his eyes
 - Anything that needed a fix not in this checklist
-- Reminder: merge from GitHub mobile when CI is green
+- Reminder: merge from GitHub when ready — all required checks should be green
 
 ## Surfaces this routine automatically updates
 
