@@ -6,8 +6,35 @@
     <description>Awọn akọle Yorùbá: AI tó wúlò, ìsanwó ISO 20022, kírípítógíráfì lẹ́yìn-kuántọ́mù, àti àtúnṣe ètò ìsanwó ńláńlá.</description>
     <atom:link href="https://sebastienrousseau.com/yo/rss.xml" rel="self" type="application/rss+xml"/>
     <language>yo-NG</language>
-    <lastBuildDate>Fri, 22 May 2026 11:30:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 18:38:31 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Gbogbo ẹtọ ti wa ni ipamọ.</copyright>
+    <item>
+      <title>Ìsanwó Alábòójútó nínú Báńkì: Àṣẹ Ìfọwọ́sí, Ojúṣe, UX Ìsanwó 2026</title>
+      <link>https://sebastienrousseau.com/yo/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>
+      <description>Ìsanwó alábòójútó ní 2026 ti kọjá lóókan sí ìṣòwò alààyè. Ìpèníjà báńkì kì í ṣe bóyá AI agent lè bẹ̀rẹ̀ ìsanwó, bí kò ṣe bí àṣẹ ìfọwọ́sí, ojúṣe, ìdánimọ̀, àti àkọsílẹ̀ yẹ ṣe ṣiṣẹ́.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</guid>
+      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ìsanwó alábòójútó 2026</category>
+      <category>ìsanwó AI agent</category>
+      <category>Mastercard Agent Pay</category>
+      <category>ìsanwó AI Rabobank</category>
+      <category>AP2</category>
+      <category>A2A</category>
+      <category>x402</category>
+      <category>MCP</category>
+      <category>machine payments protocol</category>
+      <category>àṣẹ ìfọwọ́sí ìsanwó</category>
+      <category>Regulation E</category>
+      <category>EFTA</category>
+      <category>ojúṣe ìsanwó</category>
+      <category>ète tí a lè jẹ́rìí sí</category>
+      <category>ìṣe àmì-tókènì</category>
+      <category>kọ́kọ́rọ́ ìwọlé</category>
+      <category>UX báńkì</category>
+      <category>ìṣòwò AI</category>
+    </item>
     <item>
       <title>Ìsọjí Acid Jazz ní UK: Àwọn Olórin, Ere Orin, Àbúm 2026</title>
       <link>https://sebastienrousseau.com/yo/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/</link>

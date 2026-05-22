@@ -6,8 +6,35 @@
     <description>한국어 기사: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 그리고 도매 결제 인프라의 구조적 변혁.</description>
     <atom:link href="https://sebastienrousseau.com/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 22 May 2026 11:30:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 18:38:31 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>뱅킹 에이전트 결제: 2026년 동의·책임·새로운 결제 UX</title>
+      <link>https://sebastienrousseau.com/ko/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>
+      <description>2026년 에이전트 결제(agentic payments)는 개념에서 실거래로 이동하였습니다. 뱅킹의 과제는 AI 에이전트가 결제를 개시할 수 있느냐가 아니라, 동의·책임·신원·감사 가능성·사기 통제·프로토콜 상호운용성을 어떻게 설계해야 하느냐의 문제입니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</guid>
+      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>에이전트 결제 2026</category>
+      <category>AI 에이전트 결제</category>
+      <category>Mastercard Agent Pay</category>
+      <category>Rabobank AI 결제</category>
+      <category>AP2</category>
+      <category>A2A</category>
+      <category>x402</category>
+      <category>MCP</category>
+      <category>머신 결제 프로토콜</category>
+      <category>결제 동의</category>
+      <category>Regulation E</category>
+      <category>EFTA</category>
+      <category>결제 책임</category>
+      <category>검증 가능한 의도</category>
+      <category>토큰화</category>
+      <category>패스키</category>
+      <category>뱅킹 UX</category>
+      <category>AI 커머스</category>
+    </item>
     <item>
       <title>영국 애시드 재즈의 부흥: 2026년 아티스트·공연·앨범과 그루브 중심 라이브 문화의 귀환</title>
       <link>https://sebastienrousseau.com/ko/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/</link>

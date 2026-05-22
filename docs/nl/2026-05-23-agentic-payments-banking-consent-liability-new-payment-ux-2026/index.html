@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Sat, 23 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Sat, 23 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>Agentische betalingen in banking: toestemming en aansprakelijkheid 2026 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Agentische betalingen zijn in 2026 van concept naar live-transactie verschoven. De bankvraag is niet meer of AI-agents kunnen betalen, maar hoe toestemming, aansprakelijkheid, identiteit, auditeerbaarheid en protocollen werken.">
+<meta name="keywords" content="agentische betalingen 2026, AI-agent betalingen, Mastercard Agent Pay, Rabobank AI-betaling, AP2, A2A, x402, MCP, machine payments protocol, betalingsconsent, Regulation E, EFTA, betalingsaansprakelijkheid, verifieerbare intentie, tokenisatie, passkeys, bank-UX, AI-commerce">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Agentic Payments 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-T/laegxpMGJM0aFac1W0BOeASU/gPS9iBBdJ1BCku/Q=' 'sha256-naWYAlZHTG7N/EJthh1LoM6rVa+zHstHsjr0r9l4zkY=' 'sha256-xG4+9nVawuGJhchXcJdytqTO/TSfie1Ot7N8BzwbByE=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/nl/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom-feed" href="/nl/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Agentische betalingen in banking: toestemming en aansprakelijkheid 2026 — Sebastien Rousseau">
+<meta property="og:description" content="Agentische betalingen zijn in 2026 van concept naar live-transactie verschoven. De bankvraag is niet meer of AI-agents kunnen betalen, maar hoe toestemming, aansprakelijkheid, identiteit, auditeerbaarheid en protocollen werken.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/nl/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="nl_NL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Agentische betalingen in banking: toestemming en aansprakelijkheid 2026 — Sebastien Rousseau">
+<meta name="twitter:description" content="Agentische betalingen zijn in 2026 van concept naar live-transactie verschoven. De bankvraag is niet meer of AI-agents kunnen betalen, maar hoe toestemming, aansprakelijkheid, identiteit, auditeerbaarheid en protocollen werken.">
+<meta name="twitter:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80">
+<link rel="canonical" href="https://sebastienrousseau.com/nl/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-23-agentique-paiements-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-23-agentic-zahlungsverkehr-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-23-agentic-pagos-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-23-agentic-pagamenti-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-23-agentic-pagamentos-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Naar hoofdinhoud gaan</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Navigatie omschakelen" />
+      <div class="wrap">
+        <a class="ap-brand" href="/nl/index.html" aria-label="Startpagina van Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Hoofdnavigatie">
+          <ul class="ap-menu">
+            <li><a href="/nl/over/index.html">Over mij</a></li>
+            <li><a href="/nl/artikelen/index.html" aria-current="page" class="active">Artikelen</a></li>
+            <li><a href="/nl/publicaties/index.html">Publicaties</a></li>
+            <li><a href="/nl/onderwerpen/index.html">Onderwerpen</a></li>
+            <li><a href="/nl/projecten/index.html">Projecten</a></li>
+            <li><a href="/nl/afspeellijsten/index.html">Afspeellijsten</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Donker thema inschakelen" aria-pressed="false" title="Thema wisselen">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Zoeken (Cmd of Ctrl + K)" title="Zoeken (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Taal">
+            <button type="button" class="ap-lang-toggle" aria-label="NL, Taal wijzigen" aria-expanded="false" aria-haspopup="menu" title="Taal wijzigen">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">NL</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/nl/contact/index.html" aria-label="Neem contact op">Neem contact op ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Navigatie omschakelen">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Agentische betalingen in banking: toestemming en aansprakelijkheid 2026</h1>
+      <p class="sub">Agentische betalingen verschuiven de betalings-UX van menselijke kliks naar gedelegeerde, begrensde en auditeerbare AI-uitvoering — banken moeten toestemming, authenticatie, geschilafhandeling en aansprakelijkheid herontwerpen.</p>
+    <nav class="article-tags" aria-label="Onderwerpen"><a href="/tags/index.html#h3-agentische-betalingen-2026" class="article-tag" rel="tag">agentische betalingen 2026</a><a href="/tags/index.html#h3-ai-agent-betalingen" class="article-tag" rel="tag">AI-agent betalingen</a><a href="/tags/index.html#h3-mastercard-agent-pay" class="article-tag" rel="tag">Mastercard Agent Pay</a><a href="/tags/index.html#h3-rabobank-ai-betaling" class="article-tag" rel="tag">Rabobank AI-betaling</a><a href="/tags/index.html#h3-ap2" class="article-tag" rel="tag">AP2</a><a href="/tags/index.html#h3-a2a" class="article-tag" rel="tag">A2A</a><a href="/tags/index.html#h3-x402" class="article-tag" rel="tag">x402</a><a href="/tags/index.html#h3-mcp" class="article-tag" rel="tag">MCP</a><a href="/tags/index.html#h3-machine-payments-protocol" class="article-tag" rel="tag">machine payments protocol</a><a href="/tags/index.html#h3-betalingsconsent" class="article-tag" rel="tag">betalingsconsent</a><a href="/tags/index.html#h3-regulation-e" class="article-tag" rel="tag">Regulation E</a><a href="/tags/index.html#h3-efta" class="article-tag" rel="tag">EFTA</a><a href="/tags/index.html#h3-betalingsaansprakelijkheid" class="article-tag" rel="tag">betalingsaansprakelijkheid</a><a href="/tags/index.html#h3-verifieerbare-intentie" class="article-tag" rel="tag">verifieerbare intentie</a><a href="/tags/index.html#h3-tokenisatie" class="article-tag" rel="tag">tokenisatie</a><a href="/tags/index.html#h3-passkeys" class="article-tag" rel="tag">passkeys</a><a href="/tags/index.html#h3-bank-ux" class="article-tag" rel="tag">bank-UX</a><a href="/tags/index.html#h3-ai-commerce" class="article-tag" rel="tag">AI-commerce</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-23T06:06:06+00:00" class="meta-pub">Gepubliceerd op 23 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Geschatte leestijd">5 min. leestijd</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Inhoud</h2><ol><li><a href="#waarom-2026-het-strategische-omslagjaar-is">Waarom 2026 het strategische omslagjaar is</a></li><li><a href="#de-architectuurbasis-voor-2026">De architectuurbasis voor 2026</a></li><li><a href="#tabel-strategische-architectuur">Tabel strategische architectuur</a></li><li><a href="#wat-dit-per-banktype-betekent">Wat dit per banktype betekent</a></li><li><a href="#conclusie">Conclusie</a></li><li><a href="#veelgestelde-vragen">Veelgestelde vragen</a></li><li><a href="#referenties">Referenties</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Agentische betalingen zijn in 2026 van concept naar live-transactie verschoven. De bankvraag is niet meer of AI-agents kunnen betalen, maar hoe toestemming, aansprakelijkheid, identiteit, auditeerbaarheid en protocollen werken.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Waarom 2026 het strategische omslagjaar is.</strong> De bankensector automatiseert betalingen al decennia, maar agentische betalingen zijn kwalitatief anders.</li>  <li><strong>De architectuurbasis voor 2026.</strong> De beslissende verschuiving gaat van bezit van inloggegevens naar bewijs van intentie.</li>  <li><strong>Tabel strategische architectuur.</strong> Retailbanken horen te beginnen met laagrisico-trajecten voor agentische betalingen, strakke bestedingslimieten, passkeys, getokeniseerde inloggegevens en heldere geschilregels.</li>  <li><strong>Wat dit per banktype betekent.</strong> Retailbanken horen te beginnen met laagrisico-trajecten voor agentische betalingen, strakke bestedingslimieten, passkeys, getokeniseerde inloggegevens en heldere geschilregels.</li></ul></aside><h1>Agentische betalingen in banking: toestemming, aansprakelijkheid en de nieuwe betalings-UX in 2026</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>Agentische betalingen (agentic payments) zijn van presentatieslide naar live-marktbewijs verschoven. Mastercard en Rabobank rondden in Nederland een door een AI-agent geïnitieerde betaling af, waarbij een agent een koffieproeverij boekte op Priceless.com zonder directe toegang tot kaartgegevens en met expliciet vastgelegde consumententoestemming vóór uitvoering (<a href="https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026" title="Update on the Payments landscape – May 2026">Association of Corporate Treasurers</a>). Het strategische vraagstuk voor banken is nu toestemmingsarchitectuur: hoe een financiële instelling aantoont dat een machinebetaling daadwerkelijk werd geautoriseerd door de menselijke of zakelijke principaal erachter.</p>
+<hr />
+<blockquote>
+<p><strong>Executive summary / belangrijkste conclusies</strong></p>
+<ul>
+<li><strong>De eerste marktsignalen zijn live.</strong> Mastercard en Rabobank rondden in Nederland een AI-agenttransactie af via Mastercard Agent Pay, waarbij de agent geen directe toegang tot kaartdata kreeg (<a href="https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026" title="Update on the Payments landscape – May 2026">Association of Corporate Treasurers</a>).</li>
+<li><strong>Protocollen voor agentische betalingen ontstaan vóór de wet uitgekristalliseerd is.</strong> Fenwick identificeert AP2, A2A, x402, MCP en MPP als protocolinspanningen voor agentinteroperabiliteit en autorisatie (<a href="https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments" title="Is 2026 the Year of Agentic Payments?">Fenwick</a>).</li>
+<li><strong>Toestemming is het kernprobleem voor banken.</strong> Cryptografische mandaten in AP2-stijl proberen gebruikersinstructies en eindgoedkeuring vast te leggen als auditeerbaar bewijs van intentie (<a href="https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments" title="Is 2026 the Year of Agentic Payments?">Fenwick</a>).</li>
+<li><strong>Aansprakelijkheid blijft onbeslist.</strong> Het bestaande betalingsrecht is ontworpen rond mensbeslissingen, niet rond autonome AI-systemen die handelen onder gedelegeerde bevoegdheid (<a href="https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments" title="Is 2026 the Year of Agentic Payments?">Fenwick</a>).</li>
+<li><strong>Het VK past het beleid al aan.</strong> HM Treasury laat weten dat het zal onderzoeken hoe de betalingsregulering moet worden aangepast op AI-agentbetalingen (<a href="https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology" title="UK fintech backed to embrace future payments technology">GOV.UK</a>).</li>
+<li><strong>De nieuwe UX is geen checkout.</strong> Het is agent-handelaar-onderhandeling, begrensde bevoegdheid, getokeniseerde inloggegevens, passkeys, bestedingslimieten en geschilbewijs dat ontstaat vóór het geld beweegt.</li>
+<li><strong>Banken hebben een agent-control-plane nodig.</strong> De bank die agentidentiteit, mandaatomvang, gedragsanomalieën en transactieherkomst niet kan verifiëren, mag de betaling niet laten afwikkelen.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="waarom-2026-het-strategische-omslagjaar-is">Waarom 2026 het strategische omslagjaar is <a class="heading-anchor" href="#waarom-2026-het-strategische-omslagjaar-is" aria-label="Link naar Waarom 2026 het strategische omslagjaar is">#</a></h2>
+<p>De bankensector automatiseert betalingen al decennia, maar agentische betalingen zijn kwalitatief anders. Automatische incasso voert een staande instructie uit; een agentisch betalingssysteem kan handelaar, timing, prijs, betalingsrail en financieringsbron kiezen binnen een doel dat de gebruiker stelt. Fenwick definieert de categorie als betalingstransacties die worden geïnitieerd, beheerd en uitgevoerd door adaptieve AI-systemen die autonoom handelen onder gedelegeerde bevoegdheid (<a href="https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments" title="Is 2026 the Year of Agentic Payments?">Fenwick</a>).</p>
+<p>Het beleidssignaal uit het VK telt omdat het agentische betalingen binnen de mainstream betalingsregulering plaatst in plaats van ze als AI-curiositeit te behandelen. GOV.UK meldt dat de regering zal consulteren over veilige adoptie van AI-agents die betalingen uitvoeren namens consumenten en ondernemingen (<a href="https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology" title="UK fintech backed to embrace future payments technology">GOV.UK</a>).</p>
+<h2 id="de-architectuurbasis-voor-2026">De architectuurbasis voor 2026 <a class="heading-anchor" href="#de-architectuurbasis-voor-2026" aria-label="Link naar De architectuurbasis voor 2026">#</a></h2>
+<h3 id="1-verifieerbare-intentie-wordt-het-betalingsprimitief">1. Verifieerbare intentie wordt het betalingsprimitief <a class="heading-anchor" href="#1-verifieerbare-intentie-wordt-het-betalingsprimitief" aria-label="Link naar 1. Verifieerbare intentie wordt het betalingsprimitief">#</a></h3>
+<p>De beslissende verschuiving gaat van bezit van inloggegevens naar bewijs van intentie. Een kaartnummer, token, API-credential of account-toegangsrecht bewijst niet dat de klant juist deze specifieke betaling beoogde. Fenwick merkt op dat AP2 cryptografisch ondertekende mandaten gebruikt om vooraf afgebakende instructies en de eindgoedkeuring vast te leggen, en zo een audittrail van gebruikersintentie opbouwt (<a href="https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments" title="Is 2026 the Year of Agentic Payments?">Fenwick</a>).</p>
+<h3 id="2-agentidentiteit-moet-bankwaardig-zijn">2. Agentidentiteit moet bankwaardig zijn <a class="heading-anchor" href="#2-agentidentiteit-moet-bankwaardig-zijn" aria-label="Link naar 2. Agentidentiteit moet bankwaardig zijn">#</a></h3>
+<p>Een door een AI-agent geïnitieerde betaling vraagt om een identiteitsmodel dat steviger is dan een browsersessie. De bank moet weten of het verzoek afkomstig is van de geautoriseerde agentinstantie, of de agent binnen de goedgekeurde scope opereerde en of de actieketen niet is gemanipuleerd.</p>
+<h3 id="3-aansprakelijkheid-vereist-bewijs-voor-de-transactie">3. Aansprakelijkheid vereist bewijs vóór de transactie <a class="heading-anchor" href="#3-aansprakelijkheid-vereist-bewijs-voor-de-transactie" aria-label="Link naar 3. Aansprakelijkheid vereist bewijs vóór de transactie">#</a></h3>
+<p>Fenwick wijst op onzekerheid rond EFTA en Regulation E, onder andere of het verlenen van accounttoegang aan een AI-agent een werkelijke bevoegdheid vormt en wat er gebeurt als de agent de gebruikersinstructies schendt (<a href="https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments" title="Is 2026 the Year of Agentic Payments?">Fenwick</a>). Het antwoord voor banken is niet om op rechters te wachten. Het is om bewijs te verzamelen vóór de afwikkeling.</p>
+<h3 id="4-fraudecontroles-verschuiven-van-gebruikersauthenticatie-naar-agentgedrag">4. Fraudecontroles verschuiven van gebruikersauthenticatie naar agentgedrag <a class="heading-anchor" href="#4-fraudecontroles-verschuiven-van-gebruikersauthenticatie-naar-agentgedrag" aria-label="Link naar 4. Fraudecontroles verschuiven van gebruikersauthenticatie naar agentgedrag">#</a></h3>
+<p>Een fraudeur hoeft de kaart van de klant niet te stelen als hij de agent van de klant kan manipuleren. Banken hebben dus controles nodig rond prompt injection, spoofing van handelaren, escalatie van tooltoestemmingen, samenspanning tussen agents, afwijkende bestedingspatronen en kwaadaardige aanbevelingen.</p>
+<h3 id="5-de-betalings-ux-wordt-onderhandeld-en-gedelegeerd">5. De betalings-UX wordt onderhandeld en gedelegeerd <a class="heading-anchor" href="#5-de-betalings-ux-wordt-onderhandeld-en-gedelegeerd" aria-label="Link naar 5. De betalings-UX wordt onderhandeld en gedelegeerd">#</a></h3>
+<p>J.P. Morgan verwacht dat agentische commerce begint met herhaalde, laagrisico-categorieën voordat ze opschuift naar duurdere aankopen zoals tickets en auto's (<a href="https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026" title="Payments Outlook: Five Trends Powering Payments in 2026">J.P. Morgan</a>). Die volgorde telt: banken horen te beginnen met begrensde, omkeerbare en laagwaardige ervaringen en de bevoegdheid pas te verbreden zodra het bewijsmodel werkt.</p>
+<h2 id="tabel-strategische-architectuur">Tabel strategische architectuur <a class="heading-anchor" href="#tabel-strategische-architectuur" aria-label="Link naar Tabel strategische architectuur">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Laag</th>
+<th>Richting 2026</th>
+<th>Bankkans</th>
+<th>Risico bij verkeerde aanpak</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Toestemmingsmandaat</strong></td>
+<td>Cryptografisch ondertekende instructie en eindgoedkeuring</td>
+<td>Minder ambiguïteit in geschillen</td>
+<td>Mandaten zijn niet getoetst door toezichthouders of rechters</td>
+</tr>
+<tr>
+<td><strong>Agentidentiteit</strong></td>
+<td>Ondertekende agentinstantie en begrensde tools</td>
+<td>Voorkomt misbruik van inloggegevens</td>
+<td>Vervalste of gekaapte agents initiëren plausibel ogende betalingen</td>
+</tr>
+<tr>
+<td><strong>Tokenisatie</strong></td>
+<td>De agent ziet nooit ruwe kaart- of accountgegevens</td>
+<td>Beperkt blootstelling van inloggegevens</td>
+<td>Schijnveiligheid als de mandaatomvang zwak is</td>
+</tr>
+<tr>
+<td><strong>Aansprakelijkheidsbewijs</strong></td>
+<td>Audittrail vóór afwikkeling</td>
+<td>Verbetert geschilafhandeling</td>
+<td>Geen bewijs wanneer de klant de betaling betwist</td>
+</tr>
+<tr>
+<td><strong>Handelaarintegratie</strong></td>
+<td>Voor agents leesbare catalogus-, prijs- en beleids-API's</td>
+<td>Wrijvingsloze commerce</td>
+<td>Manipulatieve handelaarprompts of dark patterns</td>
+</tr>
+</tbody>
+</table>
+<h2 id="wat-dit-per-banktype-betekent">Wat dit per banktype betekent <a class="heading-anchor" href="#wat-dit-per-banktype-betekent" aria-label="Link naar Wat dit per banktype betekent">#</a></h2>
+<h3 id="retailbanken">Retailbanken <a class="heading-anchor" href="#retailbanken" aria-label="Link naar Retailbanken">#</a></h3>
+<p>Retailbanken horen te beginnen met laagrisico-trajecten voor agentische betalingen, strakke bestedingslimieten, passkeys, getokeniseerde inloggegevens en heldere geschilregels. Het doel is geen maximale autonomie; het is begrensde autonomie die klanten kunnen vertrouwen.</p>
+<h3 id="zakelijke-banken">Zakelijke banken <a class="heading-anchor" href="#zakelijke-banken" aria-label="Link naar Zakelijke banken">#</a></h3>
+<p>Corporate banking heeft een steviger model nodig omdat gedelegeerde agents leverancierbetalingen, FX-conversies, reisboekingen of inkooporders kunnen initiëren. Goedkeuringsketens, treasury-beleid en mandaatverloop horen ingebed in de transactie zelf.</p>
+<h3 id="betaalnetwerken">Betaalnetwerken <a class="heading-anchor" href="#betaalnetwerken" aria-label="Link naar Betaalnetwerken">#</a></h3>
+<p>Netwerken kunnen de vertrouwenslaag voor agentische commerce worden als zij tokenisatie, mandaatverificatie, handelaarsattestaties en aansprakelijkheidsregels leveren die banken consistent kunnen overnemen.</p>
+<h3 id="toezichthouders">Toezichthouders <a class="heading-anchor" href="#toezichthouders" aria-label="Link naar Toezichthouders">#</a></h3>
+<p>Toezichthouders horen te verduidelijken hoe bestaande regels over toestemming, authenticatie, ongeautoriseerde betalingen en money transmission gelden zodra een machine de betalingsdetails kiest.</p>
+<h2 id="conclusie">Conclusie <a class="heading-anchor" href="#conclusie" aria-label="Link naar Conclusie">#</a></h2>
+<p>Agentische betalingen zijn de natuurlijke vervolgstap op embedded payments, maar ze vragen om een nieuw controlemodel. De bank moet niet alleen verifiëren wie de klant is, maar ook welke bevoegdheid de klant heeft gedelegeerd, of de agent binnen die bevoegdheid bleef en of het transactiebewijs een geschil overleeft. De winnende architectuur is geen AI-chatbot met een betaalknop. Het is een systeem voor toestemming, identiteit, tokenisatie en aansprakelijkheid dat zich om autonome uitvoering vouwt.</p>
+<h2 id="veelgestelde-vragen">Veelgestelde vragen <a class="heading-anchor" href="#veelgestelde-vragen" aria-label="Link naar Veelgestelde vragen">#</a></h2>
+<p><strong>Wat is een agentische betaling?</strong></p>
+<p>Een agentische betaling is een betaling die wordt geïnitieerd, beheerd of uitgevoerd door een AI-systeem dat handelt onder bevoegdheid die door de gebruiker is gedelegeerd, in plaats van door de gebruiker die zich door elke transactiestap klikt.</p>
+<p><strong>Waarom is toestemming lastig?</strong></p>
+<p>Toestemming is lastig omdat veel betalingswetten uitgaan van een specifieke transactie die door een mens is geautoriseerd. Een AI-agent kan transactiedetails later beslissen binnen een bredere instructie, en dat schept ambiguïteit.</p>
+<p><strong>Kan tokenisatie het risico van agentische betalingen oplossen?</strong></p>
+<p>Tokenisatie helpt omdat de agent geen ruwe inloggegevens nodig heeft, maar het bewijst niet dat de agent bevoegd was tot juist deze specifieke transactie.</p>
+<p><strong>Waar horen banken te beginnen?</strong></p>
+<p>Banken horen te beginnen bij laagrisico- en laagwaardige, begrensde use cases waarin mandaten, bestedingslimieten, geschilbewijs en klantcontroles veilig kunnen worden getest.</p>
+<h2 id="referenties">Referenties <a class="heading-anchor" href="#referenties" aria-label="Link naar Referenties">#</a></h2>
+<ul>
+<li>Fenwick, (2026). <a href="https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments" title="Is 2026 the Year of Agentic Payments?">Is 2026 the Year of Agentic Payments? ⧉</a>.</li>
+<li>Association of Corporate Treasurers, (2026). <a href="https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026" title="Payments landscape update">Update on the Payments landscape – May 2026 ⧉</a>.</li>
+<li>GOV.UK, (2026). <a href="https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology" title="UK fintech backed">UK fintech backed to embrace future payments technology ⧉</a>.</li>
+<li>J.P. Morgan, (2026). <a href="https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026" title="Payments Outlook">Payments Outlook: Five Trends Powering Payments in 2026 ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Laatst beoordeeld <time datetime="2026-05-23">2026-05-23</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Over de auteur"><img alt="Portret van Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/nl/over/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior technoloog in banking; schrijft over toegepaste AI, ISO 20022-migratie, post-kwantumcryptografie voor financiële dienstverlening en de structurele transformatie van het wholesale-betalingsverkeer.</span><span class="author-credentials">20+ jaar ervaring bij HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/nl/over/index.html">Volledig profiel</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Laatst herzien <time datetime="2026-05-22">2026-05-22</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Verwante artikelen</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/nl/2023-12-18-stand-van-ai-en-kwantumcomputing-in-banking-terugblik-2023/index.html" class="related-media" aria-label="Stand van AI en kwantumcomputing in banking: terugblik 2023" tabindex="-1"><img alt="Stand van AI en kwantumcomputing in banking: terugblik 2023" src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-aTWKwJllPOA.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="stand-van-ai-en-kwantumcomputing-in-banking-terugblik-2023"><a href="https://sebastienrousseau.com/nl/2023-12-18-stand-van-ai-en-kwantumcomputing-in-banking-terugblik-2023/index.html">Stand van AI en kwantumcomputing in banking: terugblik 2023</a> <a class="heading-anchor" href="#stand-van-ai-en-kwantumcomputing-in-banking-terugblik-2023" aria-label="Link naar Stand van AI en kwantumcomputing in banking: terugblik 2023">#</a></h3><p><time datetime="2023-12-18">2023-12-18</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Bronnen en referenties</h2><ol class="article-sources-list"><li><a href="https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026" rel="external noopener nofollow"><span class="source-host">www.jpmorgan.com</span><span class="source-path">/insights/payments/trends-innovation/payments-outlook-trends-2026</span></a></li></ol></aside><nav class="post-pagination" aria-label="Artikelnavigatie"><a class="post-pagination-prev" href="/nl/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/"><span class="post-pagination-label">Vorige</span><span class="post-pagination-title">The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/nl/over/index.html">Over mij</a></li>
+              <li><a href="/nl/contact/index.html">Contact</a></li>
+              <li><a href="/nl/gemaakt-met-statische-sitegenerator/index.html">Gemaakt met Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Publicaties</h2>
+            <ul>
+              <li><a href="/nl/artikelen/index.html">Artikelen</a></li>
+              <li><a href="/nl/publicaties/index.html">Publicaties</a></li>
+              <li><a href="/nl/labels/index.html">Labels</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Werk</h2>
+            <ul>
+              <li><a href="/nl/projecten/index.html">Projecten</a></li>
+              <li><a href="/nl/afspeellijsten/index.html">Afspeellijsten</a></li>
+              <li><a href="/nl/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Netwerk</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Aanmelding nieuwsbrief">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — onderzoeksnotities over betalingen, AI en post-kwantumcryptografie. Geen spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="jij@bank.nl" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Abonneren</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Sociale netwerken">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau op Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau op LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau op Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau op YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/nl/toegankelijkheid/index.html">Toegankelijkheid</a> ·
+            <a href="/nl/privacy/index.html">Privacy</a> ·
+            <a href="/nl/voorwaarden/index.html">Voorwaarden</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"nl"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"nl"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1141,"headline":"Agentische betalingen in banking: toestemming en aansprakelijkheid 2026","description":"Agentische betalingen zijn in 2026 van concept naar live-transactie verschoven. De bankvraag is niet meer of AI-agents kunnen betalen, maar hoe toestemming, aansprakelijkheid, identiteit, auditeerbaarheid en protocollen werken.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80","width":"100vw","height":"100vh","caption":"Architectuurschema van agentische betalingen met AI-agents, toestemmingsmandaten, getokeniseerde inloggegevens, kaartnetwerken, banken, handelaren en audittrails"},"url":"https://sebastienrousseau.com/nl/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/","datePublished":"2026-05-23T06:06:06+00:00","dateModified":"2026-05-23","inLanguage":"nl","keywords":"agentische betalingen 2026, AI-agent betalingen, Mastercard Agent Pay, Rabobank AI-betaling, AP2, A2A, x402, MCP, machine payments protocol, betalingsconsent, Regulation E, EFTA, betalingsaansprakelijkheid, verifieerbare intentie, tokenisatie, passkeys, bank-UX, AI-commerce","articleSection":"Finance","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/nl/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"nl"},"citation":[{"@type":"CreativeWork","url":"https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/nl/"},{"@type":"ListItem","position":3,"name":"Agentische betalingen in banking: toestemming en aansprakelijkheid 2026","item":"https://sebastienrousseau.com/nl/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Zoeken">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Zoeken</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Zoeken">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Documentatie doorzoeken..." autocomplete="off" aria-label="Zoeken"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> sluiten</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigeren</span><span><kbd>Enter</kbd> openen</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

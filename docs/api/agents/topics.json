@@ -28,8 +28,9 @@
       "title": "ISO 20022 & Payments",
       "description": "Cross-border message migration, structured-address compliance, SEPA Instant, SWIFT gpi, and the wholesale-payments rails carrying it all. Tools, playbooks, and the regulatory clock.",
       "url": "https://sebastienrousseau.com/topics/iso-20022-payments/",
-      "post_count": 7,
+      "post_count": 8,
       "post_slugs": [
+        "2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026",
         "2026-05-19-global-wholesale-payments-economics-2026",
         "2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf",
         "2026-05-12-iso-20022-pacs008-structured-address-deadline",
@@ -55,8 +56,9 @@
       "title": "Applied AI in Banking",
       "description": "Generative AI, multimodal LLMs, voice, and speech models — and how they reshape banking operations, customer service, and product engineering at Tier-1 institutions.",
       "url": "https://sebastienrousseau.com/topics/applied-ai-banking/",
-      "post_count": 16,
+      "post_count": 17,
       "post_slugs": [
+        "2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026",
         "2026-05-17-agentic-engineering-banks-blueprint-2026",
         "2026-05-11-lucy-besson-knowledge-transfer-ai-quantum",
         "2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology",

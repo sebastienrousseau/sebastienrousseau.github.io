@@ -73,6 +73,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "it all. Tools, playbooks, and the regulatory clock."
         ),
         "slugs": [
+            "2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026",
             "2026-05-19-global-wholesale-payments-economics-2026",
             "2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf",
             "2026-05-12-iso-20022-pacs008-structured-address-deadline",
@@ -105,6 +106,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "at Tier-1 institutions."
         ),
         "slugs": [
+            "2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026",
             "2026-05-17-agentic-engineering-banks-blueprint-2026",
             "2026-05-11-lucy-besson-knowledge-transfer-ai-quantum",
             "2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology",

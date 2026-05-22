@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/vi/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-23T06:06:06+00:00</news:publication_date>
+    <news:title>Thanh toán tác tử trong ngân hàng: Đồng ý, trách nhiệm và UX thanh toán mới 2026</news:title>
+    <news:keywords>thanh toán tác tử 2026, thanh toán AI agent, Mastercard Agent Pay, thanh toán AI Rabobank, AP2, A2A, x402, MCP, giao thức thanh toán máy, đồng ý thanh toán, Regulation E, EFTA, trách nhiệm pháp lý thanh toán, ý định có thể xác minh, mã hóa token, khóa truy cập, UX ngân hàng, thương mại AI</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/vi/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/</loc>
   <news:news>
     <news:publication>

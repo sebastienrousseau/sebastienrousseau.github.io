@@ -1,6 +1,39 @@
 {
-  "count": 49,
+  "count": 50,
   "posts": [
+    {
+      "slug": "2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026",
+      "url": "https://sebastienrousseau.com/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html",
+      "date": "2026-05-23",
+      "title": "Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026",
+      "description": "Agentic payments in 2026 have moved from concept to live transaction. The banking challenge is no longer whether AI agents can initiate payments, but how consent, liability, identity, auditability, fraud controls, and protocol interoperability should work.",
+      "keywords": [
+        "agentic payments 2026",
+        "AI agent payments",
+        "Mastercard Agent Pay",
+        "Rabobank AI payment",
+        "AP2",
+        "A2A",
+        "x402",
+        "MCP",
+        "machine payments protocol",
+        "payment consent",
+        "Regulation E",
+        "EFTA",
+        "payment liability",
+        "verifiable intent",
+        "tokenisation",
+        "passkeys",
+        "banking UX",
+        "AI commerce"
+      ],
+      "banner": "https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80",
+      "topics": [
+        "iso-20022-payments",
+        "applied-ai-banking"
+      ],
+      "language": "en-GB"
+    },
     {
       "slug": "2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026",
       "url": "https://sebastienrousseau.com/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html",

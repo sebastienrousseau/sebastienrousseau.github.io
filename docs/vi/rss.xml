@@ -6,8 +6,35 @@
     <description>Bài viết tiếng Việt: AI ứng dụng, thanh toán ISO 20022, mật mã hậu lượng tử và chuyển đổi thanh toán bán buôn.</description>
     <atom:link href="https://sebastienrousseau.com/vi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>vi-VN</language>
-    <lastBuildDate>Fri, 22 May 2026 11:30:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 18:38:31 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Đã đăng ký bản quyền.</copyright>
+    <item>
+      <title>Thanh toán tác tử trong ngân hàng: Đồng ý, trách nhiệm và UX thanh toán mới 2026</title>
+      <link>https://sebastienrousseau.com/vi/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>
+      <description>Thanh toán tác tử năm 2026 đã chuyển từ khái niệm sang giao dịch trực tiếp. Câu hỏi đặt ra cho ngân hàng không còn là liệu AI agent có thể khởi tạo thanh toán hay không, mà là kiến trúc đồng ý, trách nhiệm pháp lý, danh tính, kiểm toán và khả năng tương tác giao thức phải vận hành ra sao.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</guid>
+      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>thanh toán tác tử 2026</category>
+      <category>thanh toán AI agent</category>
+      <category>Mastercard Agent Pay</category>
+      <category>thanh toán AI Rabobank</category>
+      <category>AP2</category>
+      <category>A2A</category>
+      <category>x402</category>
+      <category>MCP</category>
+      <category>giao thức thanh toán máy</category>
+      <category>đồng ý thanh toán</category>
+      <category>Regulation E</category>
+      <category>EFTA</category>
+      <category>trách nhiệm pháp lý thanh toán</category>
+      <category>ý định có thể xác minh</category>
+      <category>mã hóa token</category>
+      <category>khóa truy cập</category>
+      <category>UX ngân hàng</category>
+      <category>thương mại AI</category>
+    </item>
     <item>
       <title>Sự Đổi Mới Acid Jazz tại Anh: Nghệ Sĩ, Concert và Album 2026</title>
       <link>https://sebastienrousseau.com/vi/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/</link>

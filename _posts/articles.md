@@ -105,15 +105,15 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html" title="The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture">
-<img alt="UK acid jazz renewal collage for 2026 with Hammond organ, vinyl, Ronnie Scott’s, Acid Jazz Records, jazz-funk festival stages, and London groove culture" src="https://cloudcdn.pro/api/transform?url=/stocks/images/aperture-vintage-SshYpuf607g.webp&w=1200&format=webp&q=80" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html" title="Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026">
+<img alt="Agentic payments architecture diagram showing AI agents, consent mandates, tokenised credentials, card networks, banks, merchants, and audit trails" src="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Acid Jazz · Uk Jazz · Acid Jazz Records</span>
-<h3><a href="/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html" title="The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture">The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-22">May 22, 2026</time> · Sebastien Rousseau</p>
-<p>The UK acid jazz renewal in 2026 spans label releases, live dates by first-wave acts, and festival programming — Acid Jazz Records, Bangs &amp; Talbot, The Brand New Heavies, Galliano, James Taylor Quartet, and Mostly Jazz Funk &amp; Soul Festival are all active at once.</p>
-<p><a class="pill ghost" href="/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html" title="The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture">Read the full story</a></p>
+<span class="newsroom-eyebrow">Agentic Payments · Ai Payments · Mastercard Agent Pay</span>
+<h3><a href="/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html" title="Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026">Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-23">May 23, 2026</time> · Sebastien Rousseau</p>
+<p>Agentic payments crossed from concept to live transaction in 2026 — Mastercard and Rabobank executed a Netherlands AI-agent payment via Agent Pay, AP2-style cryptographic mandates are emerging, and HM Treasury says payment-services regulation must adapt. The banking architecture question is consent, identity, liability</p>
+<p><a class="pill ghost" href="/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html" title="Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026">Read the full story</a></p>
 </div>
 </article>
 

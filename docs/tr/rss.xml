@@ -6,8 +6,35 @@
     <description>Türkçe makaleler: uygulamalı yapay zeka, ISO 20022 ödemeleri, post-kuantum kriptografi ve toptan ödemelerin dönüşümü.</description>
     <atom:link href="https://sebastienrousseau.com/tr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>tr-TR</language>
-    <lastBuildDate>Fri, 22 May 2026 11:30:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 18:38:31 +0000</lastBuildDate>
     <copyright>© Telif Hakkı 2007 - 2026 - Sebastien Rousseau. Tüm hakları saklıdır.</copyright>
+    <item>
+      <title>Bankacılıkta Ajansal Ödemeler: Onay, Sorumluluk ve 2026 Ödeme UX&apos;i</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>
+      <description>2026&apos;da ajansal ödemeler kavramdan canlı işleme geçti. Bankacılık sorusu artık yapay zeka ajanlarının ödeme başlatıp başlatamayacağı değil; onay, sorumluluk, kimlik, denetlenebilirlik, dolandırıcılık kontrolleri ve protokol birlikte çalışabilirliğinin nasıl kurulacağıdır.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</guid>
+      <pubDate>Fri, 22 May 2026 18:38:31 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ajansal ödemeler 2026</category>
+      <category>yapay zeka ajan ödemeleri</category>
+      <category>Mastercard Agent Pay</category>
+      <category>Rabobank yapay zeka ödemesi</category>
+      <category>AP2</category>
+      <category>A2A</category>
+      <category>x402</category>
+      <category>MCP</category>
+      <category>makine ödeme protokolü</category>
+      <category>ödeme onayı</category>
+      <category>Regulation E</category>
+      <category>EFTA</category>
+      <category>ödeme sorumluluğu</category>
+      <category>doğrulanabilir niyet</category>
+      <category>tokenleştirme</category>
+      <category>geçiş anahtarları</category>
+      <category>bankacılık UX</category>
+      <category>yapay zeka ticareti</category>
+    </item>
     <item>
       <title>İngiltere Acid Jazz 2026: Yenilenme, Sanatçılar, Konserler</title>
       <link>https://sebastienrousseau.com/tr/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/</link>

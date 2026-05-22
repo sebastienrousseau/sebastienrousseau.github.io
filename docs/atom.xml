@@ -4,7 +4,259 @@
   <link href="https://sebastienrousseau.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com"/>
   <id>https://sebastienrousseau.com</id>
-  <updated>2026-05-22T06:06:06+00:00</updated>
+  <updated>2026-05-23T06:06:06+00:00</updated>
+  <entry>
+    <title>Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026</title>
+    <link href="https://sebastienrousseau.com/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026"/>
+    <id>https://sebastienrousseau.com/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>Agentic payments in 2026 have moved from concept to live transaction. The banking challenge is no longer whether AI agents can initiate payments, but how consent, liability, identity, auditability, fraud controls, and protocol interoperability should work.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Bankacılıkta Ajansal Ödemeler: Onay, Sorumluluk ve 2026 Ödeme UX&apos;i</title>
+    <link href="https://sebastienrousseau.com/tr/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/tr/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>2026&apos;da ajansal ödemeler kavramdan canlı işleme geçti. Bankacılık sorusu artık yapay zeka ajanlarının ödeme başlatıp başlatamayacağı değil; onay, sorumluluk, kimlik, denetlenebilirlik, dolandırıcılık kontrolleri ve protokol birlikte çalışabilirliğinin nasıl kurulacağıdır.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>การชำระเงินแบบเอเจนต์ในธนาคาร: ความยินยอม ความรับผิด และ UX การชำระเงินใหม่ปี 2026</title>
+    <link href="https://sebastienrousseau.com/th/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/th/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>การชำระเงินแบบเอเจนต์ในปี 2026 ก้าวจากแนวคิดสู่ธุรกรรมจริง โจทย์ของธนาคารไม่ใช่ AI agent ชำระเงินได้หรือไม่ แต่อยู่ที่ความยินยอม ความรับผิด อัตลักษณ์ การตรวจสอบ การควบคุมทุจริต และโพรโทคอลที่ทำงานร่วมกันได้</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Pagos agénticos en banca: consentimiento, responsabilidad y nueva UX en 2026</title>
+    <link href="https://sebastienrousseau.com/es/2026-05-23-agentic-pagos-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/es/2026-05-23-agentic-pagos-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>Los pagos agénticos en 2026 pasaron del concepto a la transacción real. El reto bancario ya no es si los agentes de IA pueden iniciar pagos, sino cómo articular consentimiento, responsabilidad, identidad, auditabilidad y controles de fraude.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Paiements agentiques en banque : consentement, responsabilité et nouvelle UX en 2026</title>
+    <link href="https://sebastienrousseau.com/fr/2026-05-23-agentique-paiements-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/fr/2026-05-23-agentique-paiements-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>Les paiements agentiques sont passés du concept à la transaction réelle en 2026. L&apos;enjeu bancaire n&apos;est plus la capacité technique mais l&apos;architecture de consentement, de responsabilité, d&apos;identité et de preuve pré-règlement.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Pembayaran Agentik di Perbankan: Persetujuan, Tanggung Jawab, UX 2026</title>
+    <link href="https://sebastienrousseau.com/id/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/id/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>Pembayaran agentik pada 2026 telah berpindah dari konsep ke transaksi langsung. Tantangan perbankan bukan lagi apakah AI agent dapat memulai pembayaran, melainkan bagaimana persetujuan, tanggung jawab, identitas, auditabilitas, kendali fraud, dan interoperabilitas protokol harus dirancang.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>뱅킹 에이전트 결제: 2026년 동의·책임·새로운 결제 UX</title>
+    <link href="https://sebastienrousseau.com/ko/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/ko/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>2026년 에이전트 결제(agentic payments)는 개념에서 실거래로 이동하였습니다. 뱅킹의 과제는 AI 에이전트가 결제를 개시할 수 있느냐가 아니라, 동의·책임·신원·감사 가능성·사기 통제·프로토콜 상호운용성을 어떻게 설계해야 하느냐의 문제입니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Agentenbasierte Zahlungen im Banking: Einwilligung, Haftung, neue Zahlungs-UX 2026</title>
+    <link href="https://sebastienrousseau.com/de/2026-05-23-agentic-zahlungsverkehr-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/de/2026-05-23-agentic-zahlungsverkehr-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>Agentenbasierte Zahlungen 2026 sind von Konzept zur Live-Transaktion gereift. Die Bankenfrage ist nicht mehr, ob AI-Agenten zahlen, sondern wie Einwilligung, Haftung, Identität, Auditierbarkeit und Protokoll funktionieren.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>बैंकिंग में एजेंटिक भुगतान: सहमति, दायित्व और 2026 का नया भुगतान UX</title>
+    <link href="https://sebastienrousseau.com/hi/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/hi/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>2026 में एजेंटिक भुगतान संकल्पना से सजीव लेनदेन तक पहुँचे। बैंकिंग चुनौती यह नहीं कि AI एजेंट भुगतान आरंभ कर सकते हैं, बल्कि सहमति, दायित्व, पहचान, ऑडिट-योग्यता, धोखाधड़ी नियंत्रण और प्रोटोकॉल अंतर-संचालन कैसे कार्य करे।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Agentikong Pagbabayad sa Pagbabangko 2026: Pahintulot at Pananagutan</title>
+    <link href="https://sebastienrousseau.com/fil/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/fil/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>Noong 2026, lumipat ang agentikong pagbabayad mula konsepto patungo sa live na transaksyon. Hamon na ngayon sa bangko ang konstruksyon ng pahintulot, pananagutan, identity, auditability, kontrol sa fraud, at interoperabilidad ng protocol.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ব্যাংকিংয়ে এজেন্টিক পেমেন্ট: সম্মতি, দায় ও ২০২৬-এর নতুন পেমেন্ট UX</title>
+    <link href="https://sebastienrousseau.com/bn/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/bn/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>২০২৬ সালে এজেন্টিক পেমেন্ট ধারণা থেকে লাইভ লেনদেনে পৌঁছেছে। ব্যাংকিং প্রশ্ন আর AI agent পেমেন্ট শুরু করতে পারে কিনা তা নয় — সম্মতি, দায়, পরিচয়, অডিটযোগ্যতা, জালিয়াতি নিয়ন্ত্রণ ও প্রোটোকল কীভাবে কাজ করবে।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Agentische betalingen in banking: toestemming en aansprakelijkheid 2026</title>
+    <link href="https://sebastienrousseau.com/nl/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/nl/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>Agentische betalingen zijn in 2026 van concept naar live-transactie verschoven. De bankvraag is niet meer of AI-agents kunnen betalen, maar hoe toestemming, aansprakelijkheid, identiteit, auditeerbaarheid en protocollen werken.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Pagamentos agênticos no banking: consentimento, responsabilidade e UX em 2026</title>
+    <link href="https://sebastienrousseau.com/pt-br/2026-05-23-agentic-pagamentos-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/pt-br/2026-05-23-agentic-pagamentos-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>Os pagamentos agênticos em 2026 saíram do conceito para a transação ao vivo. O desafio bancário deixou de ser se agentes de IA podem iniciar pagamentos, e passou a ser como consentimento, responsabilidade, identidade, auditabilidade e fraude devem funcionar.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>المدفوعات الوكيلة في المصارف: الموافقة والمسؤولية وتجربة الدفع الجديدة 2026</title>
+    <link href="https://sebastienrousseau.com/ar/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/ar/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>انتقلت المدفوعات الوكيلة في 2026 من المفهوم إلى المعاملة الحية. التحدي المصرفي لم يعد قدرة وكلاء الذكاء الاصطناعي على بدء المدفوعات، بل كيفية ضبط الموافقة والمسؤولية والهوية والتدقيق والاحتيال وتشغيل البروتوكولات.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Biyan Kuɗi ta Wakili a Banki: Yarda, Alhaki, da Sabon UX na Biyan Kuɗi 2026</title>
+    <link href="https://sebastienrousseau.com/ha/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/ha/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>A 2026, biyan kuɗi ta wakili ya wuce daga ra&apos;ayi zuwa hada-hada kai tsaye. Tambayar bankuna ba ko AI agent na iya fara biyan kuɗi ba ce, sai dai yadda yarda, alhaki, sa hannu, da tabbacin bin doka za su yi aiki.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Агентські платежі у банкінгу: згода, відповідальність та новий UX 2026</title>
+    <link href="https://sebastienrousseau.com/uk/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/uk/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>Агентські платежі 2026 року перейшли від концепції до живої транзакції. Питання для банків — не чи можуть AI-агенти ініціювати платежі, а як побудувати згоду, відповідальність, ідентичність, аудит та контроль шахрайства.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Ìsanwó Alábòójútó nínú Báńkì: Àṣẹ Ìfọwọ́sí, Ojúṣe, UX Ìsanwó 2026</title>
+    <link href="https://sebastienrousseau.com/yo/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/yo/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>Ìsanwó alábòójútó ní 2026 ti kọjá lóókan sí ìṣòwò alààyè. Ìpèníjà báńkì kì í ṣe bóyá AI agent lè bẹ̀rẹ̀ ìsanwó, bí kò ṣe bí àṣẹ ìfọwọ́sí, ojúṣe, ìdánimọ̀, àti àkọsílẹ̀ yẹ ṣe ṣiṣẹ́.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Plăți agentice în bănci: consimțământ, răspundere și noul UX de plată în 2026</title>
+    <link href="https://sebastienrousseau.com/ro/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/ro/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>Plățile agentice au trecut în 2026 de la concept la tranzacție reală. Întrebarea bancară nu mai este dacă agenții AI pot iniția plăți, ci cum trebuie regândite consimțământul, răspunderea, identitatea, auditabilitatea și interoperabilitatea protocoalelor.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Агентские платежи в банкинге: согласие, ответственность, новый UX 2026</title>
+    <link href="https://sebastienrousseau.com/ru/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/ru/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>Агентские платежи в 2026 году перешли от концепции к реальной транзакции. Вопрос для банков — не способны ли AI-агенты инициировать платежи, а как выстроить согласие, ответственность, идентификацию, аудит и совместимость протоколов.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Agentní platby v bankovnictví: souhlas, odpovědnost a nové UX 2026</title>
+    <link href="https://sebastienrousseau.com/cs/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/cs/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>Agentní platby v roce 2026 přešly z konceptu do živé transakce. Otázkou pro banky již není, zda AI agenti dokážou iniciovat platby, ale jak nastavit souhlas, odpovědnost, identitu, auditovatelnost, kontroly podvodů a interoperabilitu protokolů.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Pagamenti agentici nel banking: consenso, responsabilità e nuova UX 2026</title>
+    <link href="https://sebastienrousseau.com/it/2026-05-23-agentic-pagamenti-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/it/2026-05-23-agentic-pagamenti-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>Nel 2026 i pagamenti agentici sono passati dal concetto alla transazione reale. Per le banche la sfida non è più se gli agenti IA possano disporre pagamenti, ma come strutturare consenso, responsabilità, identità, auditabilità, controlli antifrode e interoperabilità dei protocolli.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>銀行のエージェント型決済:同意・責任・2026 年の新しい決済 UX</title>
+    <link href="https://sebastienrousseau.com/ja/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/ja/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>2026 年、エージェント型決済は構想から実取引へと移行しました。銀行の課題は AI エージェントが決済を起動できるかではなく、同意・責任・本人確認・監査性・不正対策・プロトコル相互運用性をどう設計するかです。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>תשלומים אגנטיים בבנקאות: הסכמה, אחריות ו-UX התשלום החדש ב-2026</title>
+    <link href="https://sebastienrousseau.com/he/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/he/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>תשלומים אגנטיים ב-2026 חצו את הסף מקונספט לעסקה חיה. האתגר הבנקאי אינו האם סוכני AI יכולים ליזום תשלומים, אלא כיצד הסכמה, אחריות, זהות, יכולת ביקורת ובקרות הונאה אמורים לפעול.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Agentbaserade betalningar i banksektorn: samtycke, ansvar och ny betalnings-UX 2026</title>
+    <link href="https://sebastienrousseau.com/sv/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/sv/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>Agentbaserade betalningar har 2026 gått från koncept till skarp transaktion. Frågan för bankerna är inte längre om AI-agenter kan initiera betalningar, utan hur samtycke, ansvar, identitet, spårbarhet och protokoll ska fungera.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Thanh toán tác tử trong ngân hàng: Đồng ý, trách nhiệm và UX thanh toán mới 2026</title>
+    <link href="https://sebastienrousseau.com/vi/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/vi/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>Thanh toán tác tử năm 2026 đã chuyển từ khái niệm sang giao dịch trực tiếp. Câu hỏi đặt ra cho ngân hàng không còn là liệu AI agent có thể khởi tạo thanh toán hay không, mà là kiến trúc đồng ý, trách nhiệm pháp lý, danh tính, kiểm toán và khả năng tương tác giao thức phải vận hành ra sao.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Płatności agentowe w bankowości: zgoda, odpowiedzialność i nowy UX 2026</title>
+    <link href="https://sebastienrousseau.com/pl/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/pl/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>Płatności agentowe w 2026 r. przeszły od koncepcji do realnej transakcji. Pytanie bankowe nie brzmi już, czy agenci AI mogą inicjować płatności, lecz jak zaprojektować zgodę, odpowiedzialność, tożsamość, audytowalność, kontrole nadużyć i interoperacyjność protokołów.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 銀行業智慧代理支付:授權、責任與全新支付 UX</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>2026 年智慧代理支付已從概念邁入實際交易。銀行課題不再是 AI agent 能否發起付款,而是授權、責任、身分、可稽核性、詐欺控管與協定互通該如何運作。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 银行业智能体支付：授权、责任与全新支付体验</title>
+    <link href="https://sebastienrousseau.com/zh-hans/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html"/>
+    <id>https://sebastienrousseau.com/zh-hans/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>2026 年智能体支付已从概念跨入真实交易：Mastercard 与 Rabobank 借助 Agent Pay 在荷兰完成 AI agent 支付，AP2 风格密码学授权指令开始落地，英国财政部表态支付服务监管必须随之调整。银行的命题不是能不能，而是授权、责任、身份、可审计性、欺诈管控与协议互操作如何落地。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture</title>
     <link href="https://sebastienrousseau.com/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026"/>
@@ -203,88 +455,4 @@
     <summary>2026年の英国アシッド・ジャズ復興は、Acid Jazz Records、Brand New Heavies、Galliano、James Taylor Quartet、Mostly Jazz Funk &amp; Soul Festivalがグルーヴとソウルへの回帰を同時に牽引している。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
-  <entry>
-    <title>התחדשות האסיד ג&apos;אז בבריטניה: אמנים, קונצרטים ואלבומים של 2026</title>
-    <link href="https://sebastienrousseau.com/he/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html"/>
-    <id>https://sebastienrousseau.com/he/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html</id>
-    <updated>2026-05-22T06:06:06+00:00</updated>
-    <published>2026-05-22T06:06:06+00:00</published>
-    <summary>האסיד ג&apos;אז הבריטי מתחדש ב-2026 — Acid Jazz Records, Bangs &amp; Talbot, Brand New Heavies, Galliano, James Taylor Quartet ופסטיבל Mostly Jazz Funk &amp; Soul פעילים בו-זמנית.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Acid jazz-förnyelsen i UK: 2026 artister, konserter och album</title>
-    <link href="https://sebastienrousseau.com/sv/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html"/>
-    <id>https://sebastienrousseau.com/sv/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html</id>
-    <updated>2026-05-22T06:06:06+00:00</updated>
-    <published>2026-05-22T06:06:06+00:00</published>
-    <summary>UK acid jazz-förnyelsen 2026: Acid Jazz Records, Brand New Heavies med Galliano, James Taylor Quartet på Ronnie Scotts och Mostly Jazz Funk &amp; Soul Festival.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Sự Đổi Mới Acid Jazz tại Anh: Nghệ Sĩ, Concert và Album 2026</title>
-    <link href="https://sebastienrousseau.com/vi/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html"/>
-    <id>https://sebastienrousseau.com/vi/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html</id>
-    <updated>2026-05-22T06:06:06+00:00</updated>
-    <published>2026-05-22T06:06:06+00:00</published>
-    <summary>Sự đổi mới acid jazz Anh 2026 qua Acid Jazz Records, Bangs &amp; Talbot, Brand New Heavies, Galliano, James Taylor Quartet và Mostly Jazz Funk &amp; Soul Festival.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Odrodzenie Acid Jazz w UK: Artyści, Koncerty i Albumy 2026</title>
-    <link href="https://sebastienrousseau.com/pl/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html"/>
-    <id>https://sebastienrousseau.com/pl/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html</id>
-    <updated>2026-05-22T06:06:06+00:00</updated>
-    <published>2026-05-22T06:06:06+00:00</published>
-    <summary>Odrodzenie UK acid jazz w 2026: Acid Jazz Records, Brand New Heavies z Galliano, James Taylor Quartet w Ronnie Scott’s i Mostly Jazz Funk &amp; Soul Festival.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>英國酸性爵士的復興：2026年藝人、演出、專輯與律動現場文化的回歸</title>
-    <link href="https://sebastienrousseau.com/zh-hant/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html"/>
-    <id>https://sebastienrousseau.com/zh-hant/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html</id>
-    <updated>2026-05-22T06:06:06+00:00</updated>
-    <published>2026-05-22T06:06:06+00:00</published>
-    <summary>2026年英國 Acid Jazz 復興：Acid Jazz Records 發行、Bangs &amp; Talbot、Brand New Heavies 與 Galliano、James Taylor Quartet 在 Ronnie Scott’s，以及爵士放克靈魂節，顯示律動文化的全面回歸。</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>英国酸爵士复兴：2026年艺人、现场、专辑与律动文化的回归</title>
-    <link href="https://sebastienrousseau.com/zh-hans/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html"/>
-    <id>https://sebastienrousseau.com/zh-hans/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html</id>
-    <updated>2026-05-22T06:06:06+00:00</updated>
-    <published>2026-05-22T06:06:06+00:00</published>
-    <summary>2026年英国酸爵士复兴体现在 Acid Jazz Records 新发行物、Bangs &amp; Talbot、Brand New Heavies 携 Galliano 同台、James Taylor Quartet 现身 Ronnie Scott’s，以及 Mostly Jazz Funk &amp; Soul Festival 令律动、灵魂乐与爵士放克重回舞台中心。</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
-    <link href="https://sebastienrousseau.com/tr/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html"/>
-    <id>https://sebastienrousseau.com/tr/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</id>
-    <updated>2026-05-21T06:06:06+00:00</updated>
-    <published>2026-05-21T06:06:06+00:00</published>
-    <summary>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 </feed>

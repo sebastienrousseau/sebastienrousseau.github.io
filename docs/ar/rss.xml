@@ -6,8 +6,18 @@
     <description>مقالات بالعربية: الذكاء الاصطناعي التطبيقي، مدفوعات ISO 20022، التشفير ما بعد الكمي، وتحوّل المدفوعات بالجملة.</description>
     <atom:link href="https://sebastienrousseau.com/ar/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ar-SA</language>
-    <lastBuildDate>Fri, 22 May 2026 11:30:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 18:38:30 +0000</lastBuildDate>
     <copyright>© حقوق النشر 2007 - 2026 - سيباستيان روسو. جميع الحقوق محفوظة.</copyright>
+    <item>
+      <title>المدفوعات الوكيلة في المصارف: الموافقة والمسؤولية وتجربة الدفع الجديدة 2026</title>
+      <link>https://sebastienrousseau.com/ar/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>
+      <description>انتقلت المدفوعات الوكيلة في 2026 من المفهوم إلى المعاملة الحية. التحدي المصرفي لم يعد قدرة وكلاء الذكاء الاصطناعي على بدء المدفوعات، بل كيفية ضبط الموافقة والمسؤولية والهوية والتدقيق والاحتيال وتشغيل البروتوكولات.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</guid>
+      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>المدفوعات الوكيلة 2026، مدفوعات وكلاء الذكاء الاصطناعي، Mastercard Agent Pay، مدفوعات Rabobank بالذكاء الاصطناعي، AP2، A2A، x402، MCP، بروتوكول مدفوعات الآلات، موافقة الدفع، Regulation E، EFTA، مسؤولية الدفع، النية القابلة للتحقق، الترميز، مفاتيح المرور، تجربة الدفع المصرفية، تجارة الذكاء الاصطناعي</category>
+    </item>
     <item>
       <title>تجدُّد الأسيد جاز في المملكة المتحدة: فنانون وحفلات وألبومات 2026</title>
       <link>https://sebastienrousseau.com/ar/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/</link>

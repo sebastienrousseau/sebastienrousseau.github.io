@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/ja/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ja/"/>
   <id>https://sebastienrousseau.com/ja/</id>
-  <updated>2026-05-22T11:30:05+00:00</updated>
+  <updated>2026-05-22T18:38:31+00:00</updated>
+  <entry>
+    <title>銀行のエージェント型決済:同意・責任・2026 年の新しい決済 UX</title>
+    <link href="https://sebastienrousseau.com/ja/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/"/>
+    <id>https://sebastienrousseau.com/ja/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</id>
+    <updated>2026-05-23T06:06:06+00:00</updated>
+    <published>2026-05-23T06:06:06+00:00</published>
+    <summary>2026 年、エージェント型決済は構想から実取引へと移行しました。銀行の課題は AI エージェントが決済を起動できるかではなく、同意・責任・本人確認・監査性・不正対策・プロトコル相互運用性をどう設計するかです。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>英国アシッド・ジャズの刷新：2026年のアーティスト、コンサート、アルバムとグルーヴ主導のライヴ・カルチャーの帰還</title>
     <link href="https://sebastienrousseau.com/ja/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/"/>

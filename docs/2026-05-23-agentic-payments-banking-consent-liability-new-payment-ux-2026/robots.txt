@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sebastienrousseau.com/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/sitemap.xml

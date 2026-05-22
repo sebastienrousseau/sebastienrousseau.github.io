@@ -6,7 +6,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Agentic payments architecture diagram showing AI agents, consent mandates, tokenised credentials, card networks, banks, merchants, and audit trails"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stock/images/agentic-payments-2026-banner.webp"
+banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -23,6 +23,7 @@ image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 keywords: "agentic payments 2026, AI agent payments, Mastercard Agent Pay, Rabobank AI payment, AP2, A2A, x402, MCP, machine payments protocol, payment consent, Regulation E, EFTA, payment liability, verifiable intent, tokenisation, passkeys, banking UX, AI commerce"
 language: "en-GB"
+excerpt: "Agentic payments crossed from concept to live transaction in 2026 — Mastercard and Rabobank executed a Netherlands AI-agent payment via Agent Pay, AP2-style cryptographic mandates are emerging, and HM Treasury says payment-services regulation must adapt. The banking architecture question is consent, identity, liability, and pre-settlement evidence."
 last_reviewed: "2026-05-23"
 layout: "report"
 locale: "en_GB"
@@ -101,6 +102,21 @@ site_software: "Static Site Generator, Rust"
 ---
 
 # Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026
+
+
+<!-- lead-start -->
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Agentic payments in 2026 have moved from concept to live transaction. The banking challenge is no longer whether AI agents can initiate payments, but how consent, liability, identity, auditability, fraud controls, and protocol interoperability should work.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Why 2026 Is the Year This Became Strategic.</strong> The banking industry has automated payments for decades, but agentic payments are qualitatively different.</li>
+  <li><strong>The 2026 Architecture Baseline.</strong> The decisive shift is from credential possession to intent proof.</li>
+  <li><strong>Strategic Architecture Table.</strong> Retail banks should begin with low-risk agentic payment journeys, strong spend limits, passkeys, tokenised credentials, and clear dispute rules.</li>
+  <li><strong>What This Means by Bank Type.</strong> Retail banks should begin with low-risk agentic payment journeys, strong spend limits, passkeys, tokenised credentials, and clear dispute rules.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a>.</p>
+</aside>
+<!-- lead-end -->
 
 Agentic payments have crossed from presentation deck into live-market evidence. Mastercard and Rabobank completed an AI agent-initiated payment in the Netherlands, where an agent booked a coffee tasting on Priceless.com without accessing card details directly and with explicit consumer consent recorded before execution ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). The strategic issue for banks is now consent architecture: how a financial institution proves that a machine payment was genuinely authorised by the human or corporate principal behind it.
 
@@ -204,6 +220,12 @@ Banks should start with low-risk, low-value, bounded use cases where mandates, s
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, payments infrastructure, tokenised money, ISO 20022, post-quantum security, cloud-native financial services, and regulated digital markets.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-05-23">2026-05-23</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html" class="related-media" aria-label="State of AI and Quantum Computing in Banking: A 2023 Review" tabindex="-1"><img alt="State of AI and Quantum Computing in Banking: A 2023 Review" src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a></h3><p><time datetime="2023-12-18">2023-12-18</time></p></footer></article>
+</div>
+</aside>
 <!-- enrich-end -->

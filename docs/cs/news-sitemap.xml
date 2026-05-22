@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/cs/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs-CZ</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-23T06:06:06+00:00</news:publication_date>
+    <news:title>Agentní platby v bankovnictví: souhlas, odpovědnost a nové UX 2026</news:title>
+    <news:keywords>agentní platby 2026, platby AI agentů, Mastercard Agent Pay, AI platba Rabobank, AP2, A2A, x402, MCP, protokol strojových plateb, souhlas s platbou, Regulation E, EFTA, odpovědnost za platby, ověřitelný úmysl, tokenizace, přístupové klíče, bankovní UX, AI commerce</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/cs/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/</loc>
   <news:news>
     <news:publication>
