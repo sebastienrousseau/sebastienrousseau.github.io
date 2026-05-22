@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Reverse-DNS label; must match the plist filename. -->
+    <key>Label</key>
+    <string>com.sebastienrousseau.publish-daily</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/seb/Code/Public/HTML/sebastienrousseau.github.io/scripts/cron/publish-daily.sh</string>
+    </array>
+
+    <!--
+        Fires at 03:00 AND 04:00 LOCAL TIME daily. launchd uses local
+        time, not UTC, so to land at ~03:00 UTC year-round we fire at
+        both 03:00 and 04:00 local. One firing publishes; the other
+        sees the article already on _posts/ and exits cleanly (the
+        wrapper is idempotent).
+
+        BST (summer):  03:00 BST = 02:00 UTC  → first  fire, no-op (no draft yet at 02:00 UTC)
+                       04:00 BST = 03:00 UTC  → second fire publishes
+
+        GMT (winter):  03:00 GMT = 03:00 UTC  → first  fire publishes
+                       04:00 GMT = 04:00 UTC  → second fire, no-op (article already published)
+
+        If you want a strict single firing at 03:00 UTC, swap to the
+        crontab variant — see scripts/cron/README.md.
+    -->
+    <key>StartCalendarInterval</key>
+    <array>
+        <dict>
+            <key>Hour</key>
+            <integer>3</integer>
+            <key>Minute</key>
+            <integer>0</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>4</integer>
+            <key>Minute</key>
+            <integer>0</integer>
+        </dict>
+    </array>
+
+    <!-- Don't fire immediately on plist load; only at the scheduled times. -->
+    <key>RunAtLoad</key>
+    <false/>
+
+    <!-- launchd-level stdout/stderr (the wrapper redirects to a per-day
+         file, but anything that escapes the redirect lands here). -->
+    <key>StandardOutPath</key>
+    <string>/Users/seb/Library/Logs/sebastienrousseau-publish/launchd.stdout.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/seb/Library/Logs/sebastienrousseau-publish/launchd.stderr.log</string>
+
+    <!-- launchd jobs inherit an extremely minimal environment. Reseed
+         the essentials so subprocesses (git, ssh, gpg, claude) work. -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>HOME</key>
+        <string>/Users/seb</string>
+        <key>USER</key>
+        <string>seb</string>
+        <key>LANG</key>
+        <string>en_GB.UTF-8</string>
+        <key>LC_ALL</key>
+        <string>en_GB.UTF-8</string>
+        <key>SHELL</key>
+        <string>/bin/zsh</string>
+    </dict>
+
+    <!-- Don't auto-restart on exit. The job is meant to run once and stop. -->
+    <key>KeepAlive</key>
+    <false/>
+
+    <!-- nice the job so it doesn't fight the foreground if the Mac
+         happens to be in active use at 03:00 local. -->
+    <key>Nice</key>
+    <integer>5</integer>
+
+    <!-- Throttle: if launchd retries (e.g. on missed-fire wake), don't
+         hammer. 600s = 10 min between attempts. -->
+    <key>ThrottleInterval</key>
+    <integer>600</integer>
+
+    <!-- If the Mac was off/asleep at the scheduled time, run as soon
+         as it wakes. This is the default for StartCalendarInterval
+         but we set it explicitly for clarity. -->
+    <key>WakeFromSleep</key>
+    <true/>
+
+    <key>ProcessType</key>
+    <string>Background</string>
+</dict>
+</plist>
