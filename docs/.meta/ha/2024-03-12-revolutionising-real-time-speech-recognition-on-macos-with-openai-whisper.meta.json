@@ -1,11 +1,11 @@
 {
-  "date": "Mar 12, 2024",
   "subtitle": "Unleash the Power of AI-Driven, GPU-Accelerated Speech-to-Text on Your Mac",
-  "locale": "ha_NG",
-  "title": "Fast Real-Time Speech Recognition on macOS: OpenAI Whisper",
-  "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
-  "description": "Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy.",
+  "date": "Mar 12, 2024",
   "language": "ha-NG",
   "banner_alt": "Banner for Real-time automatic speech recognition (ASR)",
-  "keywords": "OpenAI Whisper, Metal Performance Shaders, macOS speech recognition, real-time transcription, voice activity detection, GPU acceleration, Python integration, speech-to-text macOS, energy-efficient speech detection, Apple silicon"
+  "title": "Fast Real-Time Speech Recognition on macOS: OpenAI Whisper",
+  "locale": "ha_NG",
+  "keywords": "OpenAI Whisper, Metal Performance Shaders, macOS speech recognition, real-time transcription, voice activity detection, GPU acceleration, Python integration, speech-to-text macOS, energy-efficient speech detection, Apple silicon",
+  "description": "Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy.",
+  "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp"
 }

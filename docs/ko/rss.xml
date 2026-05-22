@@ -6,8 +6,26 @@
     <description>한국어 기사: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 그리고 도매 결제 인프라의 구조적 변혁.</description>
     <atom:link href="https://sebastienrousseau.com/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 22 May 2026 18:38:31 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 19:01:45 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>2026 UK Payments Forward Plan: 스테이블코인·오픈뱅킹·토큰화 예금·에이전트 결제</title>
+      <link>https://sebastienrousseau.com/ko/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>
+      <description>UK Payments Forward Plan과 2026년 4월 정책 패키지는 전통 결제, 스테이블코인, 토큰화 예금, 오픈뱅킹, AI 에이전트 결제를 아우르는 단일의 일관된 규제 프레임워크를 제시합니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</guid>
+      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>UK Payments Forward Plan 2026</category>
+      <category>영국 스테이블코인</category>
+      <category>영국 토큰화 예금</category>
+      <category>오픈뱅킹 FCA</category>
+      <category>PSR FCA 통합</category>
+      <category>영국 AI 에이전트 결제</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>Chris Woolard</category>
+      <category>결제서비스 규제</category>
+    </item>
     <item>
       <title>뱅킹 에이전트 결제: 2026년 동의·책임·새로운 결제 UX</title>
       <link>https://sebastienrousseau.com/ko/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>

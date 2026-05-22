@@ -235,6 +235,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html" title="The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments">
+<img alt="UK payments modernisation diagram showing stablecoins, tokenised deposits, open banking, AI agents, FCA regulation, PSR consolidation, and wholesale digital markets" src="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">UK Policy · Payments · Open Banking</span>
+<h3><a href="/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html">The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-24">May 24, 2026</time></p>
+<p class="newsroom-excerpt">The UK Payments Forward Plan and April 2026 policy package set out a single framework for traditional payments, stablecoins, tokenised deposits, open banking, and agentic payments. The strategic question for banks is design discipline: which data, rails, controls, liabilities, and client workflows belong together — and how to evidence the orchestration to regulators.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html" title="Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026">
 <img alt="Agentic payments architecture diagram showing AI agents, consent mandates, tokenised credentials, card networks, banks, merchants, and audit trails" src="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -291,18 +303,6 @@ site_software: "Static Site Generator, Rust"
 <h3><a href="/2026-05-19-global-wholesale-payments-economics-2026/index.html">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-19">May 19, 2026</time></p>
 <p class="newsroom-excerpt">Wholesale payments in 2026 are part of macroeconomic resilience: ISO 20022 harmonisation, RTGS renewal and extended operating hours, non-bank access, interlinking, and DLT settlement pilots are converging around the cost of moving global liquidity — and the G20 cross-border targets are still off-track for 2027.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-18-quantum-cryptography-standards-developments-2026/index.html" title="The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer">
-<img alt="Quantum-safe cryptography migration map for 2026 showing NIST PQC standards, hybrid protocol work, QKD assurance, crypto-agility, and bank data-risk tiers" src="https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Post-Quantum · Standards · Banking</span>
-<h3><a href="/2026-05-18-quantum-cryptography-standards-developments-2026/index.html">The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-18">May 18, 2026</time></p>
-<p class="newsroom-excerpt">Quantum cryptography has moved from horizon-scanning to implementation discipline: NIST PQC standards are ready, UK NCSC guidance has narrowed the algorithm choices, IETF protocol work is still maturing, and QKD assurance is moving from laboratory confidence to certification language.</p>
 </div>
 </article>
 

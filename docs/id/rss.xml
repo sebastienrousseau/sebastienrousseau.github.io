@@ -6,14 +6,32 @@
     <description>Artikel berbahasa Indonesia: AI terapan, pembayaran ISO 20022, kriptografi pasca-kuantum, dan transformasi pembayaran grosir.</description>
     <atom:link href="https://sebastienrousseau.com/id/rss.xml" rel="self" type="application/rss+xml"/>
     <language>id-ID</language>
-    <lastBuildDate>Fri, 22 May 2026 18:38:31 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 19:01:45 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Hak cipta dilindungi.</copyright>
+    <item>
+      <title>UK Payments Forward Plan 2026: Stablecoin dan Deposito Tertokenisasi</title>
+      <link>https://sebastienrousseau.com/id/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>
+      <description>UK Payments Forward Plan dan paket April 2026 menyatukan pembayaran tradisional, stablecoin, deposito tertokenisasi, open banking, dan pembayaran agen AI.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</guid>
+      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>UK Payments Forward Plan 2026</category>
+      <category>stablecoin Inggris</category>
+      <category>deposito tertokenisasi Inggris</category>
+      <category>open banking FCA</category>
+      <category>konsolidasi PSR FCA</category>
+      <category>pembayaran agen AI Inggris</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>Chris Woolard</category>
+      <category>regulasi layanan pembayaran</category>
+    </item>
     <item>
       <title>Pembayaran Agentik di Perbankan: Persetujuan, Tanggung Jawab, UX 2026</title>
       <link>https://sebastienrousseau.com/id/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>
       <description>Pembayaran agentik pada 2026 telah berpindah dari konsep ke transaksi langsung. Tantangan perbankan bukan lagi apakah AI agent dapat memulai pembayaran, melainkan bagaimana persetujuan, tanggung jawab, identitas, auditabilitas, kendali fraud, dan interoperabilitas protokol harus dirancang.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</guid>
-      <pubDate>Fri, 22 May 2026 18:38:31 +0000</pubDate>
+      <pubDate>Fri, 22 May 2026 19:01:45 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>pembayaran agentik 2026</category>

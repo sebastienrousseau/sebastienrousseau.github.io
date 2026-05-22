@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ko/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-24T06:06:06+00:00</news:publication_date>
+    <news:title>2026 UK Payments Forward Plan: 스테이블코인·오픈뱅킹·토큰화 예금·에이전트 결제</news:title>
+    <news:keywords>UK Payments Forward Plan 2026, 영국 스테이블코인, 영국 토큰화 예금, 오픈뱅킹 FCA, PSR FCA 통합, 영국 AI 에이전트 결제, Wholesale Digital Markets Champion, Chris Woolard, 결제서비스 규제</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ko/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</loc>
   <news:news>
     <news:publication>

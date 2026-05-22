@@ -1,11 +1,11 @@
 {
   "date": "April 11, 2026",
-  "keywords": "Shor, qubit, RSA, ECC, PQC, soglia quantistica, harvest now decrypt later",
-  "locale": "it_IT",
-  "title": "Le soglie quantistiche si muovono di nuovo",
-  "language": "it-IT",
-  "subtitle": "L'algoritmo di Shor potrebbe richiedere appena 10.000 qubit",
-  "banner_alt": "Soglie quantistiche",
   "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
+  "locale": "it_IT",
+  "keywords": "Shor, qubit, RSA, ECC, PQC, soglia quantistica, harvest now decrypt later",
+  "language": "it-IT",
+  "banner_alt": "Soglie quantistiche",
+  "title": "Le soglie quantistiche si muovono di nuovo",
+  "subtitle": "L'algoritmo di Shor potrebbe richiedere appena 10.000 qubit",
   "description": "Un nuovo articolo suggerisce che l'algoritmo di Shor possa essere eseguito con appena 10.000 qubit. La soglia del calcolo quantistico crittograficamente rilevante sta scendendo rapidamente."
 }

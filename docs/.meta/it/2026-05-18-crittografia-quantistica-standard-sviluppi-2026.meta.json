@@ -1,16 +1,16 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
-  "language": "it-IT",
-  "subtitle": "La crittografia quantistica è passata dalla prospettiva alla disciplina di implementazione: gli standard NIST PQC sono pronti, la guida del NCSC britannico ha ristretto le scelte di algoritmo, il lavoro protocollare dell'IETF è ancora in maturazione, e la garanzia QKD passa dalla fiducia di laboratorio al linguaggio della certificazione.",
-  "item_description": "Il reset della crittografia quantistica 2026 — standard NIST PQC, raccomandazioni di migrazione del NCSC, maturità protocollare dell'IETF, garanzia QKD, crypto-agility e cosa dovrebbero prioritizzare le banche questa settimana.",
-  "tags": "crittografia quantistica, crittografia post-quantum, PQC, NIST, FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC, IETF, TLS, IPsec, QKD, ETSI, crypto-agility, HNDL, sicurezza bancaria",
-  "locale": "it_IT",
-  "date": "May 18, 2026",
-  "banner_alt": "Mappa di migrazione verso una crittografia resistente al quantum per il 2026 — standard NIST PQC, lavoro sui protocolli ibridi, garanzia QKD, crypto-agility e livelli di rischio dei dati bancari",
   "item_title": "Il reset della crittografia quantistica nel 2026: standard PQC, garanzia QKD e il lavoro di migrazione che le banche non possono più rimandare",
-  "description": "La crittografia quantistica nel 2026 non è più un dibattito su quando arriveranno i computer quantistici. È un programma di migrazione che attraversa la crittografia post-quantum, la crypto-agility, la garanzia della distribuzione quantistica di chiavi, gli standard di protocollo, la maturità dei fornitori e i dati finanziari di lunga durata già esposti al rischio «harvest-now-decrypt-later».",
-  "keywords": "crittografia quantistica 2026, crittografia post-quantum, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, scambio di chiavi ibrido, QKD, ETSI QKD, ISO IEC 23837, crypto-agility, harvest now decrypt later, HNDL, crittografia per i servizi finanziari, sicurezza bancaria",
   "title": "Il reset della crittografia quantistica nel 2026: standard PQC, garanzia QKD e il lavoro di migrazione che le banche non possono più rimandare",
+  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
+  "twitter_description": "Il reset della crittografia quantistica 2026 — standard NIST PQC, raccomandazioni di migrazione del NCSC, maturità protocollare dell'IETF, garanzia QKD, crypto-agility e cosa dovrebbero prioritizzare le banche questa settimana.",
   "twitter_title": "Crittografia quantistica 2026: standard PQC e migrazione bancaria",
-  "twitter_description": "Il reset della crittografia quantistica 2026 — standard NIST PQC, raccomandazioni di migrazione del NCSC, maturità protocollare dell'IETF, garanzia QKD, crypto-agility e cosa dovrebbero prioritizzare le banche questa settimana."
+  "tags": "crittografia quantistica, crittografia post-quantum, PQC, NIST, FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC, IETF, TLS, IPsec, QKD, ETSI, crypto-agility, HNDL, sicurezza bancaria",
+  "keywords": "crittografia quantistica 2026, crittografia post-quantum, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, scambio di chiavi ibrido, QKD, ETSI QKD, ISO IEC 23837, crypto-agility, harvest now decrypt later, HNDL, crittografia per i servizi finanziari, sicurezza bancaria",
+  "item_description": "Il reset della crittografia quantistica 2026 — standard NIST PQC, raccomandazioni di migrazione del NCSC, maturità protocollare dell'IETF, garanzia QKD, crypto-agility e cosa dovrebbero prioritizzare le banche questa settimana.",
+  "language": "it-IT",
+  "description": "La crittografia quantistica nel 2026 non è più un dibattito su quando arriveranno i computer quantistici. È un programma di migrazione che attraversa la crittografia post-quantum, la crypto-agility, la garanzia della distribuzione quantistica di chiavi, gli standard di protocollo, la maturità dei fornitori e i dati finanziari di lunga durata già esposti al rischio «harvest-now-decrypt-later».",
+  "date": "May 18, 2026",
+  "locale": "it_IT",
+  "subtitle": "La crittografia quantistica è passata dalla prospettiva alla disciplina di implementazione: gli standard NIST PQC sono pronti, la guida del NCSC britannico ha ristretto le scelte di algoritmo, il lavoro protocollare dell'IETF è ancora in maturazione, e la garanzia QKD passa dalla fiducia di laboratorio al linguaggio della certificazione.",
+  "banner_alt": "Mappa di migrazione verso una crittografia resistente al quantum per il 2026 — standard NIST PQC, lavoro sui protocolli ibridi, garanzia QKD, crypto-agility e livelli di rischio dei dati bancari"
 }

@@ -1,6 +1,29 @@
 {
-  "count": 50,
+  "count": 51,
   "posts": [
+    {
+      "slug": "2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026",
+      "url": "https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html",
+      "date": "2026-05-24",
+      "title": "The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments",
+      "description": "The UK Payments Forward Plan and April 2026 policy package point to a single coherent framework for traditional payments, stablecoins, tokenised deposits, open banking, and AI-agent payments.",
+      "keywords": [
+        "UK Payments Forward Plan 2026",
+        "stablecoins UK",
+        "tokenised deposits UK",
+        "open banking FCA",
+        "PSR FCA consolidation",
+        "AI agent payments UK",
+        "Wholesale Digital Markets Champion",
+        "Chris Woolard",
+        "payment services regulation"
+      ],
+      "banner": "https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80",
+      "topics": [
+        "iso-20022-payments"
+      ],
+      "language": "en-GB"
+    },
     {
       "slug": "2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026",
       "url": "https://sebastienrousseau.com/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html",

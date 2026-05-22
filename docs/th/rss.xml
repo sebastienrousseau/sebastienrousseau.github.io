@@ -6,8 +6,26 @@
     <description>บทความภาษาไทย: AI ประยุกต์, การชำระเงิน ISO 20022, การเข้ารหัสหลังควอนตัม และการปฏิรูปการชำระเงินขายส่ง</description>
     <atom:link href="https://sebastienrousseau.com/th/rss.xml" rel="self" type="application/rss+xml"/>
     <language>th-TH</language>
-    <lastBuildDate>Fri, 22 May 2026 18:38:31 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 19:01:46 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์</copyright>
+    <item>
+      <title>UK Payments Forward Plan 2026: สเตเบิลคอยน์ โอเพนแบงกิ้ง โทเคน เอเจนต์</title>
+      <link>https://sebastienrousseau.com/th/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>
+      <description>UK Payments Forward Plan และชุดนโยบายเดือนเมษายน 2026 ชี้ไปยังกรอบกำกับดูแลเดียวสำหรับการชำระเงินทั่วไป สเตเบิลคอยน์ เงินฝากแบบโทเคน โอเพนแบงกิ้ง และการชำระเงินแบบเอเจนต์ของธนาคารในสหราชอาณาจักร</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</guid>
+      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>UK Payments Forward Plan 2026</category>
+      <category>สเตเบิลคอยน์ UK</category>
+      <category>เงินฝากแบบโทเคน</category>
+      <category>โอเพนแบงกิ้ง FCA</category>
+      <category>การควบรวม PSR FCA</category>
+      <category>การชำระเงินแบบเอเจนต์ UK</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>Chris Woolard</category>
+      <category>การกำกับดูแลบริการชำระเงิน</category>
+    </item>
     <item>
       <title>การชำระเงินแบบเอเจนต์ในธนาคาร: ความยินยอม ความรับผิด และ UX การชำระเงินใหม่ปี 2026</title>
       <link>https://sebastienrousseau.com/th/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>

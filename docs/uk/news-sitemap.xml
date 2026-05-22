@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/uk/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>uk-UA</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-24T06:06:06+00:00</news:publication_date>
+    <news:title>UK Payments Forward Plan 2026: стейблкоїни, відкритий банкінг, токенізовані депозити, агентські платежі</news:title>
+    <news:keywords>UK Payments Forward Plan 2026, стейблкоїни Велика Британія, токенізовані депозити, відкритий банкінг FCA, консолідація PSR FCA, агентські платежі, Wholesale Digital Markets Champion, Chris Woolard, регулювання платіжних послуг</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/uk/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</loc>
   <news:news>
     <news:publication>

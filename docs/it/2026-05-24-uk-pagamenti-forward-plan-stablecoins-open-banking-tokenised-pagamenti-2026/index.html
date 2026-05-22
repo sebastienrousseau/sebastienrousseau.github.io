@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Sun, 24 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Sun, 24 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>UK Payments Forward Plan 2026: stablecoin, open banking, depositi tokenizzati e pagamenti agentici — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Il UK Payments Forward Plan e il pacchetto di policy di aprile 2026 delineano un quadro coerente per pagamenti tradizionali, stablecoin, depositi tokenizzati, open banking e pagamenti agentici.">
+<meta name="keywords" content="UK Payments Forward Plan 2026, stablecoin Regno Unito, depositi tokenizzati Regno Unito, open banking FCA, consolidamento PSR FCA, pagamenti agentici Regno Unito, Wholesale Digital Markets Champion, Chris Woolard, regolamentazione servizi di pagamento">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="UK Payments Plan">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-G9UV5tpcxx53kDuKznicIJs42MvfAPpVS88B0ejtPg4=' 'sha256-GoYhdRPt6Y7w3REKmnqlJcoj9dW4RUmRJ5iY9oDgu4I=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-O/dhQISsI3xI+9sqZodPK3MEASsTidLmRTCYuPjkv2s=' 'sha256-rfk8TQI44yrPTZ1tnSxvv8C/IDkC7+A13YPyrKAULIc=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/it/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Feed Atom" href="/it/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="UK Payments Forward Plan 2026: stablecoin, open banking, depositi tokenizzati e pagamenti agentici — Sebastien Rousseau">
+<meta property="og:description" content="Il UK Payments Forward Plan e il pacchetto di policy di aprile 2026 delineano un quadro coerente per pagamenti tradizionali, stablecoin, depositi tokenizzati, open banking e pagamenti agentici.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/it/2026-05-24-uk-pagamenti-forward-plan-stablecoins-open-banking-tokenised-pagamenti-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="UK Payments Forward Plan 2026: stablecoin, open banking, depositi tokenizzati e pagamenti agentici — Sebastien Rousseau">
+<meta name="twitter:description" content="Il UK Payments Forward Plan e il pacchetto di policy di aprile 2026 delineano un quadro coerente per pagamenti tradizionali, stablecoin, depositi tokenizzati, open banking e pagamenti agentici.">
+<meta name="twitter:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80">
+<link rel="canonical" href="https://sebastienrousseau.com/it/2026-05-24-uk-pagamenti-forward-plan-stablecoins-open-banking-tokenised-pagamenti-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-24-uk-paiements-forward-plan-stablecoins-open-banking-tokenise-paiements-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-24-uk-zahlungsverkehr-forward-plan-stablecoins-open-banking-tokenised-zahlungsverkehr-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-24-uk-pagos-forward-plan-stablecoins-open-banking-tokenised-pagos-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-24-uk-pagamenti-forward-plan-stablecoins-open-banking-tokenised-pagamenti-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-24-uk-pagamentos-forward-plan-stablecoins-open-banking-tokenised-pagamentos-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Vai al contenuto principale</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Attiva/disattiva la navigazione" />
+      <div class="wrap">
+        <a class="ap-brand" href="/it/index.html" aria-label="Home di Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Navigazione principale">
+          <ul class="ap-menu">
+            <li><a href="/it/chi-sono/index.html">Chi sono</a></li>
+            <li><a href="/it/articoli/index.html" aria-current="page" class="active">Articoli</a></li>
+            <li><a href="/it/pubblicazioni/index.html">Pubblicazioni</a></li>
+            <li><a href="/it/argomenti/index.html">Argomenti</a></li>
+            <li><a href="/it/progetti/index.html">Progetti</a></li>
+            <li><a href="/it/playlist/index.html">Playlist</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Attiva il tema scuro" aria-pressed="false" title="Cambia tema">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Cerca (Cmd o Ctrl + K)" title="Cerca (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Lingua">
+            <button type="button" class="ap-lang-toggle" aria-label="IT, Cambia lingua" aria-expanded="false" aria-haspopup="menu" title="Cambia lingua">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">IT</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/it/contatti/index.html" aria-label="Contattami">Contattami ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Attiva/disattiva la navigazione">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>UK Payments Forward Plan 2026: stablecoin, open banking, depositi tokenizzati e pagamenti agentici</h1>
+      <p class="sub">Il Regno Unito orienta la regolamentazione dei pagamenti verso un quadro coerente tra pagamenti bancari, moneta elettronica, stablecoin, depositi tokenizzati, open banking e agenti IA.</p>
+    <nav class="article-tags" aria-label="Argomenti"><a href="/tags/index.html#h3-uk-payments-forward-plan-2026" class="article-tag" rel="tag">UK Payments Forward Plan 2026</a><a href="/tags/index.html#h3-stablecoin-regno-unito" class="article-tag" rel="tag">stablecoin Regno Unito</a><a href="/tags/index.html#h3-depositi-tokenizzati-regno-unito" class="article-tag" rel="tag">depositi tokenizzati Regno Unito</a><a href="/tags/index.html#h3-open-banking-fca" class="article-tag" rel="tag">open banking FCA</a><a href="/tags/index.html#h3-consolidamento-psr-fca" class="article-tag" rel="tag">consolidamento PSR FCA</a><a href="/tags/index.html#h3-pagamenti-agentici-regno-unito" class="article-tag" rel="tag">pagamenti agentici Regno Unito</a><a href="/tags/index.html#h3-wholesale-digital-markets-champion" class="article-tag" rel="tag">Wholesale Digital Markets Champion</a><a href="/tags/index.html#h3-chris-woolard" class="article-tag" rel="tag">Chris Woolard</a><a href="/tags/index.html#h3-regolamentazione-servizi-di-pagamento" class="article-tag" rel="tag">regolamentazione servizi di pagamento</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-24T06:06:06+00:00" class="meta-pub">Pubblicato il 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Tempo di lettura stimato">5 min di lettura</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Indice</h2><ol><li><a href="#perche-il-2026-e-l-anno-in-cui-il-tema-e-diventato-strategico">Perché il 2026 è l'anno in cui il tema è diventato strategico</a></li><li><a href="#la-baseline-architetturale-2026">La baseline architetturale 2026</a></li><li><a href="#tabella-architetturale-strategica">Tabella architetturale strategica</a></li><li><a href="#cosa-significa-per-tipologia-di-banca">Cosa significa per tipologia di banca</a></li><li><a href="#conclusione">Conclusione</a></li><li><a href="#domande-frequenti">Domande frequenti</a></li><li><a href="#riferimenti">Riferimenti</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Il UK Payments Forward Plan e il pacchetto di policy di aprile 2026 delineano un quadro coerente per pagamenti tradizionali, stablecoin, depositi tokenizzati, open banking e pagamenti agentici.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Perché il 2026 è l&#x27;anno in cui il tema è diventato strategico.</strong> Il settore ha superato la fase di adozione.</li>  <li><strong>La baseline architetturale 2026.</strong> La banca deve partire dall&#x27;attrito: liquidità intrappolata, ritardo nel regolamento, costo di riconciliazione, pagamenti falliti, esposizione alla frode, scarsa auditabilità o esperienza cliente carente.</li>  <li><strong>Tabella architetturale strategica.</strong> Le banche globali devono creare orchestrazione a livello piattaforma in modo che ogni mercato, binario, token e capacità di IA non diventi un modello operativo separato.</li>  <li><strong>Cosa significa per tipologia di banca.</strong> Le banche globali devono creare orchestrazione a livello piattaforma in modo che ogni mercato, binario, token e capacità di IA non diventi un modello operativo separato.</li></ul></aside><h1>UK Payments Forward Plan 2026: stablecoin, open banking, depositi tokenizzati e pagamenti agentici</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>Il UK Payments Forward Plan e il pacchetto di policy di aprile 2026 indicano un quadro coerente per pagamenti tradizionali, stablecoin, depositi tokenizzati, open banking e pagamenti via agente IA. Il segnale del 2026 è che la policy dei pagamenti è uscita dal teatro dell'innovazione ed è entrata nel modello operativo bancario, dove la domanda decisiva è la disciplina di design: quali dati, binari, controlli, responsabilità e workflow cliente vanno insieme (<a href="https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology" title="UK fintech backed to embrace future payments technology">GOV.UK</a>).</p>
+<hr />
+<blockquote>
+<p><strong>Sintesi esecutiva / Punti chiave</strong></p>
+<ul>
+<li><strong>La policy dei pagamenti è ora strategica.</strong> Il tema è legato a modello operativo, resilienza, valore per il cliente e prove regolamentari, non a un singolo lancio di prodotto (<a href="https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology" title="UK fintech backed to embrace future payments technology">GOV.UK</a>).</li>
+<li><strong>Il principio di design è un unico perimetro regolamentare.</strong> Le banche hanno bisogno di un'architettura che colleghi policy, prodotto, dati, scelta dei binari, controlli di rischio ed economia misurabile (<a href="https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026" title="Update on the Payments landscape – May 2026">Association of Corporate Treasurers</a>).</li>
+<li><strong>Il modello di controllo deve essere in tempo reale.</strong> Frode, liquidità, compliance, regolamento e rischio operativo devono operare alla velocità del workflow, non dopo l'evento.</li>
+<li><strong>La qualità dei dati diventa vantaggio commerciale.</strong> Dati strutturati, contesto della transazione, log di audit e segnali di identità diventano il substrato dell'automazione e dei prodotti rivolti al cliente.</li>
+<li><strong>La frammentazione è il nemico.</strong> Una banca che costruisce pilot isolati intorno a ogni binario, token, modello o requisito di compliance crea rischio operativo futuro.</li>
+<li><strong>Il modello vincente è l'orchestrazione.</strong> L'istituzione capace di instradare, governare, prezzare, dare prova e spiegare ogni workflow supererà quella che adotta semplicemente l'ennesimo strumento (<a href="https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/" title="UK wholesale digital markets champion">Global Government Finance</a>).</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="perche-il-2026-e-l-anno-in-cui-il-tema-e-diventato-strategico">Perché il 2026 è l'anno in cui il tema è diventato strategico <a class="heading-anchor" href="#perche-il-2026-e-l-anno-in-cui-il-tema-e-diventato-strategico" aria-label="Collegamento a Perché il 2026 è l'anno in cui il tema è diventato strategico">#</a></h2>
+<p>Il settore ha superato la fase di adozione. Non basta più aderire a un binario, migrare un messaggio, eseguire una proof of concept di IA o annunciare un pilot di tokenizzazione. Nel 2026 il vantaggio strategico nasce dall'orchestrare quelle capacità su un workflow reale e dal dimostrare che il workflow è più sicuro, più rapido, più economico, più resiliente o più utile per il cliente.</p>
+<p>Per questo la policy dei pagamenti è ora un tema da board. Le stesse pressioni si ripetono: dati di pagamento più ricchi, regolamento in tempo reale, denaro tokenizzato, decisioning con IA, Open Banking, resilienza operativa, concentrazione cloud e prove regolamentari più solide. Trattate separatamente, generano programme sprawl. Trattate come un'unica architettura, generano leva operativa (<a href="https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology" title="UK fintech backed to embrace future payments technology">GOV.UK</a>, <a href="https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026" title="Update on the Payments landscape – May 2026">Association of Corporate Treasurers</a>).</p>
+<h2 id="la-baseline-architetturale-2026">La baseline architetturale 2026 <a class="heading-anchor" href="#la-baseline-architetturale-2026" aria-label="Collegamento a La baseline architetturale 2026">#</a></h2>
+<h3 id="1-prima-il-workflow-poi-la-tecnologia">1. Prima il workflow, poi la tecnologia <a class="heading-anchor" href="#1-prima-il-workflow-poi-la-tecnologia" aria-label="Collegamento a 1. Prima il workflow, poi la tecnologia">#</a></h3>
+<p>La banca deve partire dall'attrito: liquidità intrappolata, ritardo nel regolamento, costo di riconciliazione, pagamenti falliti, esposizione alla frode, scarsa auditabilità o esperienza cliente carente. La tecnologia è giustificata solo dove rimuove quell'attrito (<a href="https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology" title="UK fintech backed to embrace future payments technology">GOV.UK</a>).</p>
+<h3 id="2-il-dato-come-piano-di-controllo">2. Il dato come piano di controllo <a class="heading-anchor" href="#2-il-dato-come-piano-di-controllo" aria-label="Collegamento a 2. Il dato come piano di controllo">#</a></h3>
+<p>Dati strutturati, governati e tracciabili sono le fondamenta. Senza dati utilizzabili l'automazione diventa fragile e la compliance manuale. Con dati utilizzabili le banche possono creare intelligenza di routing, controlli in tempo reale e analytics rivolte al cliente (<a href="https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026" title="Update on the Payments landscape – May 2026">Association of Corporate Treasurers</a>).</p>
+<h3 id="3-orchestrazione-tra-binari-e-piattaforme">3. Orchestrazione tra binari e piattaforme <a class="heading-anchor" href="#3-orchestrazione-tra-binari-e-piattaforme" aria-label="Collegamento a 3. Orchestrazione tra binari e piattaforme">#</a></h3>
+<p>L'architettura deve supportare più binari, fornitori, schemi di identità, segnali di rischio e asset di regolamento. La decisione di routing va presa in base a costo, velocità, finalità, giurisdizione, preferenza del cliente, resilienza e ricchezza dei dati.</p>
+<h3 id="4-compliance-e-prove-embedded">4. Compliance e prove embedded <a class="heading-anchor" href="#4-compliance-e-prove-embedded" aria-label="Collegamento a 4. Compliance e prove embedded">#</a></h3>
+<p>Il modello di compliance deve essere nativo nel workflow. Policy-as-code, log di audit automatizzati, prove di resilienza operativa, record di consenso e governance dei modelli devono essere prodotti come parte dell'esecuzione, non ricostruiti più tardi per gli auditor.</p>
+<h3 id="5-unit-economics-e-valore-per-il-cliente">5. Unit economics e valore per il cliente <a class="heading-anchor" href="#5-unit-economics-e-valore-per-il-cliente" aria-label="Collegamento a 5. Unit economics e valore per il cliente">#</a></h3>
+<p>Ogni iniziativa richiede prove di valore commerciale. Costo per pagamento, costo per decisione, costo per indagine, liquidità risparmiata, riparazioni manuali evitate, perdite da frode ridotte e adozione del cliente devono guidare le decisioni di scaling.</p>
+<h2 id="tabella-architetturale-strategica">Tabella architetturale strategica <a class="heading-anchor" href="#tabella-architetturale-strategica" aria-label="Collegamento a Tabella architetturale strategica">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Livello</th>
+<th>Direzione 2026</th>
+<th>Opportunità bancaria</th>
+<th>Rischio se gestito male</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Livello workflow</strong></td>
+<td>Il pain point del cliente definisce il prodotto</td>
+<td>Business case chiaro e adozione</td>
+<td>Pilot guidati dalla tecnologia senza utenti</td>
+</tr>
+<tr>
+<td><strong>Livello dati</strong></td>
+<td>Dati di transazione e di controllo strutturati e governati</td>
+<td>Automazione, analytics e auditabilità</td>
+<td>Dati cattivi spostati più velocemente</td>
+</tr>
+<tr>
+<td><strong>Livello binari</strong></td>
+<td>Routing tra carte, A2A, RTGS, stablecoin, depositi, API, DLT</td>
+<td>Costo, velocità e finalità ottimizzati</td>
+<td>Sprawl di canali e controlli duplicati</td>
+</tr>
+<tr>
+<td><strong>Livello controlli</strong></td>
+<td>Policy, frode, sanzioni, resilienza, identità e consenso in tempo reale</td>
+<td>Rischio gestito alla velocità di esecuzione</td>
+<td>Compliance manuale a posteriori</td>
+</tr>
+<tr>
+<td><strong>Livello economia</strong></td>
+<td>Costo unitario e valore cliente misurati</td>
+<td>Scaling guidato dalle prove</td>
+<td>Spesa in innovazione senza ritorno duraturo</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cosa-significa-per-tipologia-di-banca">Cosa significa per tipologia di banca <a class="heading-anchor" href="#cosa-significa-per-tipologia-di-banca" aria-label="Collegamento a Cosa significa per tipologia di banca">#</a></h2>
+<h3 id="banche-globali">Banche globali <a class="heading-anchor" href="#banche-globali" aria-label="Collegamento a Banche globali">#</a></h3>
+<p>Le banche globali devono creare orchestrazione a livello piattaforma in modo che ogni mercato, binario, token e capacità di IA non diventi un modello operativo separato.</p>
+<h3 id="banche-regionali">Banche regionali <a class="heading-anchor" href="#banche-regionali" aria-label="Collegamento a Banche regionali">#</a></h3>
+<p>Le banche regionali devono puntare su casi d'uso dove fiducia, conoscenza del mercato locale e integrazione più semplice battono la scala: visibilità di tesoreria, prevenzione frodi, pagamenti Open Banking e servizi di denaro digitale regolamentato.</p>
+<h3 id="fintech-e-psp-payment-service-provider">Fintech e PSP (Payment Service Provider) <a class="heading-anchor" href="#fintech-e-psp-payment-service-provider" aria-label="Collegamento a Fintech e PSP (Payment Service Provider)">#</a></h3>
+<p>Le fintech devono ridurre la complessità per le banche, non aggiungere l'ennesimo binario isolato. Le proposte migliori porteranno orchestrazione, prove di compliance o intelligenza sui dati.</p>
+<h3 id="tesorieri-corporate">Tesorieri corporate <a class="heading-anchor" href="#tesorieri-corporate" aria-label="Collegamento a Tesorieri corporate">#</a></h3>
+<p>I tesorieri devono pretendere miglioramenti misurabili: meno riparazioni di pagamento, migliore visibilità della liquidità, dati di riconciliazione più ricchi, regolamento più rapido e controllo più forte sulle decisioni automatizzate.</p>
+<h2 id="conclusione">Conclusione <a class="heading-anchor" href="#conclusione" aria-label="Collegamento a Conclusione">#</a></h2>
+<p>Il UK Payments Forward Plan nel 2026 è in ultima analisi una questione di architettura. Le istituzioni che vinceranno non saranno quelle con più pilot o con il linguaggio di innovazione più rumoroso. Saranno le istituzioni che collegano workflow cliente, qualità dei dati, orchestrazione dei binari, compliance embedded e unit economics in un modello operativo coerente.</p>
+<h2 id="domande-frequenti">Domande frequenti <a class="heading-anchor" href="#domande-frequenti" aria-label="Collegamento a Domande frequenti">#</a></h2>
+<p><strong>Perché il tema è urgente nel 2026?</strong></p>
+<p>Perché i segnali rilevanti su infrastruttura, regolamentazione e domanda dei clienti sono convergenti. Quella che era sperimentazione opzionale sta diventando parte del modello operativo bancario.</p>
+<p><strong>Qual è il maggiore rischio di implementazione?</strong></p>
+<p>Il rischio maggiore è la frammentazione: team separati costruiscono pilot separati, ciascuno con dati, controlli, governance ed economia diversi.</p>
+<p><strong>Cosa dovrebbe costruire per primo una banca?</strong></p>
+<p>Una banca dovrebbe iniziare dal workflow dove esiste un valore misurabile, ad esempio regolamento più rapido, minore costo di riconciliazione, meno indagini, prevenzione frodi migliorata o migliore visibilità della liquidità.</p>
+<p><strong>Come va misurato il successo?</strong></p>
+<p>Il successo va misurato per unit economics, prove di resilienza, qualità dei dati, adozione del cliente, riduzione del rischio operativo e miglioramento di liquidità o capitale circolante.</p>
+<h2 id="riferimenti">Riferimenti <a class="heading-anchor" href="#riferimenti" aria-label="Collegamento a Riferimenti">#</a></h2>
+<ul>
+<li>GOV.UK, (2026). <a href="https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology" title="UK fintech backed">UK fintech backed to embrace future payments technology ⧉</a>.</li>
+<li>Association of Corporate Treasurers, (2026). <a href="https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026" title="Payments landscape update">Update on the Payments landscape – May 2026 ⧉</a>.</li>
+<li>Global Government Finance, (2026). <a href="https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/" title="UK wholesale digital markets champion">UK wholesale digital markets champion ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Ultima revisione <time datetime="2026-05-24">2026-05-24</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Informazioni sull'autore"><img alt="Ritratto di Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/it/chi-sono/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist, scrivo di IA applicata, migrazione a ISO 20022, crittografia post-quantistica per i servizi finanziari e trasformazione strutturale dei pagamenti wholesale.</span><span class="author-credentials">Oltre 20 anni di esperienza presso HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/it/chi-sono/index.html">Profilo completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Ultima revisione <time datetime="2026-05-22">2026-05-22</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Letture correlate</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/it/2026-05-21-tokenised-deposits-banking-services-status-2026" class="related-media" aria-label="Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money" tabindex="-1"><img alt="Tokenised deposit banking architecture for 2026 showing commercial bank money, digital wallets, stablecoins, CBDCs, tokenised gilts, and Project Agorá settlement paths" src="https://cloudcdn.pro/api/transform?url=/stocks/images/bit-cloud-GlqbGLCPnQ4.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="tokenised-deposits-in-2026-banking-services-stablecoin-competition-and-the-statu"><a href="https://sebastienrousseau.com/it/2026-05-21-tokenised-deposits-banking-services-status-2026">Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</a> <a class="heading-anchor" href="#tokenised-deposits-in-2026-banking-services-stablecoin-competition-and-the-statu" aria-label="Collegamento a Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money">#</a></h3><p><time datetime="2026-05-21">2026-05-21</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="Paginazione degli articoli"><a class="post-pagination-prev" href="/it/2026-05-23-agentic-pagamenti-banking-consent-liability-new-payment-ux-2026/"><span class="post-pagination-label">Precedente</span><span class="post-pagination-title">Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/it/chi-sono/index.html">Chi sono</a></li>
+              <li><a href="/it/contatti/index.html">Contatti</a></li>
+              <li><a href="/it/fatto-con-generatore-di-siti-statici/index.html">Fatto con Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Pubblicazioni</h2>
+            <ul>
+              <li><a href="/it/articoli/index.html">Articoli</a></li>
+              <li><a href="/it/pubblicazioni/index.html">Pubblicazioni</a></li>
+              <li><a href="/it/etichette/index.html">Etichette</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Attività</h2>
+            <ul>
+              <li><a href="/it/progetti/index.html">Progetti</a></li>
+              <li><a href="/it/playlist/index.html">Playlist</a></li>
+              <li><a href="/it/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Contatti</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Iscrizione alla newsletter">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — note di ricerca su pagamenti, IA e crittografia post-quantistica. Niente spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="tu@banca.it" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Iscriviti</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Link social">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau su Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau su Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau su LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau su LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau su Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau su Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau su YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau su YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/it/accessibilita/index.html">Accessibilità</a> ·
+            <a href="/it/privacy/index.html">Privacy</a> ·
+            <a href="/it/termini/index.html">Termini</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"it"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"it"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1113,"headline":"UK Payments Forward Plan 2026: stablecoin, open banking, depositi tokenizzati e pagamenti agentici","description":"Il UK Payments Forward Plan e il pacchetto di policy di aprile 2026 delineano un quadro coerente per pagamenti tradizionali, stablecoin, depositi tokenizzati, open banking e pagamenti agentici.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80","width":"100vw","height":"100vh","caption":"Diagramma di modernizzazione dei pagamenti nel Regno Unito che mostra stablecoin, depositi tokenizzati, open banking, agenti IA, regolamentazione FCA, consolidamento PSR e mercati digitali wholesale"},"url":"https://sebastienrousseau.com/it/2026-05-24-uk-pagamenti-forward-plan-stablecoins-open-banking-tokenised-pagamenti-2026/","datePublished":"2026-05-24T06:06:06+00:00","dateModified":"2026-05-24","inLanguage":"it","keywords":"UK Payments Forward Plan 2026, stablecoin Regno Unito, depositi tokenizzati Regno Unito, open banking FCA, consolidamento PSR FCA, pagamenti agentici Regno Unito, Wholesale Digital Markets Champion, Chris Woolard, regolamentazione servizi di pagamento","articleSection":"Finance","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/it/2026-05-24-uk-pagamenti-forward-plan-stablecoins-open-banking-tokenised-pagamenti-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"it"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/it/"},{"@type":"ListItem","position":3,"name":"UK Payments Forward Plan 2026: stablecoin, open banking, depositi tokenizzati e pagamenti agentici","item":"https://sebastienrousseau.com/it/2026-05-24-uk-pagamenti-forward-plan-stablecoins-open-banking-tokenised-pagamenti-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Cerca">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Cerca</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Cerca">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Cerca nella documentazione..." autocomplete="off" aria-label="Cerca"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> chiudi</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> naviga</span><span><kbd>Invio</kbd> apri</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"UK Payments Forward Plan 2026: stablecoin, open banking, depositi tokenizzati e pagamenti agentici","url":"https://sebastienrousseau.com/it/2026-05-24-uk-pagamenti-forward-plan-stablecoins-open-banking-tokenised-pagamenti-2026/","inLanguage":"it-IT","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"UK Payments Forward Plan 2026, stablecoin Regno Unito, depositi tokenizzati Regno Unito, open banking FCA, consolidamento PSR FCA, pagamenti agentici Regno Unito, Wholesale Digital Markets Champion, Chris Woolard, regolamentazione servizi di pagamento","dependencies":["Stablecoin"]}</script></body>
+</html>

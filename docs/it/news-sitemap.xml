@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/it/2026-05-24-uk-pagamenti-forward-plan-stablecoins-open-banking-tokenised-pagamenti-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it-IT</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-24T06:06:06+00:00</news:publication_date>
+    <news:title>UK Payments Forward Plan 2026: stablecoin, open banking, depositi tokenizzati e pagamenti agentici</news:title>
+    <news:keywords>UK Payments Forward Plan 2026, stablecoin Regno Unito, depositi tokenizzati Regno Unito, open banking FCA, consolidamento PSR FCA, pagamenti agentici Regno Unito, Wholesale Digital Markets Champion, Chris Woolard, regolamentazione servizi di pagamento</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/it/2026-05-23-agentic-pagamenti-banking-consent-liability-new-payment-ux-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>it-IT</news:language>
     </news:publication>
-    <news:publication_date>2026-05-22T18:38:31+00:00</news:publication_date>
+    <news:publication_date>2026-05-22T19:01:45+00:00</news:publication_date>
     <news:title>Pagamenti agentici nel banking: consenso, responsabilità e nuova UX 2026</news:title>
     <news:keywords>pagamenti agentici 2026, pagamenti agenti IA, Mastercard Agent Pay, pagamento IA Rabobank, AP2, A2A, x402, MCP, machine payments protocol, consenso ai pagamenti, Regulation E, EFTA, responsabilità nei pagamenti, intento verificabile, tokenizzazione, passkey, UX bancaria, commercio IA</news:keywords>
   </news:news>

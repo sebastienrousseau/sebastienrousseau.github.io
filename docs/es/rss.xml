@@ -6,8 +6,26 @@
     <description>Artículos en español: IA aplicada, pagos ISO 20022, criptografía postcuántica y transformación de los pagos mayoristas.</description>
     <atom:link href="https://sebastienrousseau.com/es/rss.xml" rel="self" type="application/rss+xml"/>
     <language>es-ES</language>
-    <lastBuildDate>Fri, 22 May 2026 18:38:31 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 19:01:45 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Todos los derechos reservados.</copyright>
+    <item>
+      <title>UK Payments Forward Plan 2026: stablecoins, open banking y depósitos tokenizados</title>
+      <link>https://sebastienrousseau.com/es/2026-05-24-uk-pagos-forward-plan-stablecoins-open-banking-tokenised-pagos-2026/</link>
+      <description>El UK Payments Forward Plan y el paquete de abril de 2026 perfilan un marco coherente único para pagos tradicionales, stablecoins, depósitos tokenizados, open banking y pagos agénticos.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-05-24-uk-pagos-forward-plan-stablecoins-open-banking-tokenised-pagos-2026/</guid>
+      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>UK Payments Forward Plan 2026</category>
+      <category>stablecoins Reino Unido</category>
+      <category>depósitos tokenizados Reino Unido</category>
+      <category>open banking FCA</category>
+      <category>consolidación PSR FCA</category>
+      <category>pagos agénticos Reino Unido</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>Chris Woolard</category>
+      <category>regulación de servicios de pago</category>
+    </item>
     <item>
       <title>Pagos agénticos en banca: consentimiento, responsabilidad y nueva UX en 2026</title>
       <link>https://sebastienrousseau.com/es/2026-05-23-agentic-pagos-banking-consent-liability-new-payment-ux-2026/</link>

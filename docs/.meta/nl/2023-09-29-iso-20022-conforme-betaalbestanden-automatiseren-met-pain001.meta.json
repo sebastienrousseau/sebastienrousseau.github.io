@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Diagram van een ISO 20022-pain.001-betaalbericht",
-  "keywords": "ISO 20022, pain.001, betalingen, SWIFT, SEPA, Python, open source, automatisering",
+  "locale": "nl_NL",
   "description": "pain001 is een Python-bibliotheek die het aanmaken van ISO 20022-conforme betaalbestanden automatiseert vanuit CSV of SQLite, klaar voor SWIFT en SEPA.",
+  "subtitle": "Open source Python om gestructureerde pain.001-bestanden te genereren vanuit CSV en SQLite",
+  "banner_alt": "Diagram van een ISO 20022-pain.001-betaalbericht",
   "title": "ISO 20022-conforme betaalbestanden automatiseren met pain001",
   "language": "nl-NL",
+  "date": "September 29, 2023",
   "banner": "https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp",
-  "subtitle": "Open source Python om gestructureerde pain.001-bestanden te genereren vanuit CSV en SQLite",
-  "locale": "nl_NL",
-  "date": "September 29, 2023"
+  "keywords": "ISO 20022, pain.001, betalingen, SWIFT, SEPA, Python, open source, automatisering"
 }
