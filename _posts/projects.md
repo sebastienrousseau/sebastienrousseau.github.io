@@ -432,7 +432,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://dotfiles.io/" title="Dotfiles">
-<img alt="Banner for the Dotfiles project" src="https://cloudcdn.pro/clients/dotfiles/v1/images/logos/dotfiles.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for the Dotfiles project" src="https://cloudcdn.pro/clients/dotfiles/v2/images/logos/dotfiles.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Config · Cross-platform</span>

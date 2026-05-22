@@ -1,12 +1,12 @@
 {
   "description": "Google Gemma、オープンソース AI 開発を変革する Gemini に基づく軽量言語モデル。",
+  "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp",
+  "keywords": "Gemma, Google, オープンソース AI, LLM, Llama, ファインチューニング, デバイス内 AI",
   "locale": "ja_JP",
-  "title": "Google Gemma:オープンソース AI 開発の変革",
-  "last_reviewed": "2026-05-11",
+  "subtitle": "Google の Gemini ベースのオープンソース言語モデル",
   "banner_alt": "オープンソースコード",
   "date": "February 26, 2024",
-  "subtitle": "Google の Gemini ベースのオープンソース言語モデル",
-  "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp",
   "language": "ja-JP",
-  "keywords": "Gemma, Google, オープンソース AI, LLM, Llama, ファインチューニング, デバイス内 AI"
+  "last_reviewed": "2026-05-11",
+  "title": "Google Gemma:オープンソース AI 開発の変革"
 }
