@@ -122,6 +122,42 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html" title="Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026">
+<img alt="Agentic payments architecture diagram showing AI agents, consent mandates, tokenised credentials, card networks, banks, merchants, and audit trails" src="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Agentic Payments · Ai Payments · Mastercard Agent Pay</span>
+<h3><a href="/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html" title="Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026">Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-23">May 23, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Agentic payments crossed from concept to live transaction in 2026 — Mastercard and Rabobank executed a Netherlands AI-agent payment via Agent Pay, AP2-style cryptographic mandates are emerging, and HM Treasury says payment-services regulation must adapt. The banking architecture question is consent, identity, liability</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html" title="The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture">
+<img alt="UK acid jazz renewal collage for 2026 with Hammond organ, vinyl, Ronnie Scott’s, Acid Jazz Records, jazz-funk festival stages, and London groove culture" src="https://cloudcdn.pro/api/transform?url=/stocks/images/aperture-vintage-SshYpuf607g.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Acid Jazz · Uk Jazz · Acid Jazz Records</span>
+<h3><a href="/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html" title="The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture">The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-22">May 22, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">The UK acid jazz renewal in 2026 spans label releases, live dates by first-wave acts, and festival programming — Acid Jazz Records, Bangs &amp; Talbot, The Brand New Heavies, Galliano, James Taylor Quartet, and Mostly Jazz Funk &amp; Soul Festival are all active at once.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html" title="Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money">
+<img alt="Tokenised deposit banking architecture for 2026 showing commercial bank money, digital wallets, stablecoins, CBDCs, tokenised gilts, and Project Agorá settlement paths" src="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Tokenised Deposits · Tokenized Deposits · Deposit Tokens</span>
+<h3><a href="/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html" title="Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money">Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-21">May 21, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets…</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html" title="Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide">
 <img alt="Cloud-native banking architecture for 2026 showing Kubernetes, VM coexistence, DORA resilience, sovereign cloud, observability, and bank platform engineering" src="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>

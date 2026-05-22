@@ -1,11 +1,11 @@
 {
-  "language": "tr-TR",
   "subtitle": "2024'te yapay zekanın evrimi üzerine analiz",
-  "banner_alt": "Bir yapay zeka pusulasının soyut görselleştirmesi",
-  "description": "2024'te yapay zeka trendleri: çok modlu LLM'ler, etmen sistemleri, düzenleme ve sektörel etki.",
   "title": "Yapay zeka trendleri 2024: gelecek için içgörüler ve tahminler",
-  "keywords": "yapay zeka, trendler 2024, LLM, çok modlu, AI etmenleri, düzenleme",
+  "locale": "tr_TR",
   "banner": "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp",
-  "date": "January 01, 2024",
-  "locale": "tr_TR"
+  "description": "2024'te yapay zeka trendleri: çok modlu LLM'ler, etmen sistemleri, düzenleme ve sektörel etki.",
+  "keywords": "yapay zeka, trendler 2024, LLM, çok modlu, AI etmenleri, düzenleme",
+  "banner_alt": "Bir yapay zeka pusulasının soyut görselleştirmesi",
+  "language": "tr-TR",
+  "date": "January 01, 2024"
 }
