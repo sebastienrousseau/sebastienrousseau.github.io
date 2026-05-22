@@ -1,11 +1,11 @@
 {
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
+  "language": "ro-RO",
+  "title": "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age",
+  "locale": "ro_RO",
   "description": "Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.",
   "keywords": "quantum computing, quantum-resistant cryptography, CRYSTALS-Kyber, cryptography, security, banking, financial, encryption, data protection, future-proof",
   "date": "Nov 19, 2023",
   "banner_alt": "A modern, sleek quantum computer",
-  "locale": "ro_RO",
-  "subtitle": "CRYSTALS-Kyber, the NIST FIPS 203 standard for post-quantum key encapsulation.",
-  "language": "ro-RO",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
-  "title": "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
+  "subtitle": "CRYSTALS-Kyber, the NIST FIPS 203 standard for post-quantum key encapsulation."
 }

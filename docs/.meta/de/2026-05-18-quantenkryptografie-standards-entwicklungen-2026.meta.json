@@ -1,16 +1,16 @@
 {
-  "tags": "Quantenkryptografie, Post-Quanten-Kryptografie, PQC, NIST, FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC, IETF, TLS, IPsec, QKD, ETSI, Krypto-Agilität, HNDL, Banksicherheit",
-  "date": "May 18, 2026",
+  "title": "Der Quantenkryptografie-Reset 2026: PQC-Standards, QKD-Assurance und die Migrationsarbeit, die Banken nicht länger aufschieben können",
+  "language": "de",
+  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
   "description": "Quantenkryptografie ist 2026 keine Debatte mehr darüber, ob Quantencomputer kurz bevorstehen. Sie ist ein Migrationsprogramm über Post-Quanten-Kryptografie, Krypto-Agilität, QKD-Assurance, Protokollstandards, Lieferantenreife und langlebige Finanzdaten, die bereits dem Harvest-now-decrypt-later-Risiko ausgesetzt sind.",
   "item_title": "Der Quantenkryptografie-Reset 2026: PQC-Standards, QKD-Assurance und die Migrationsarbeit, die Banken nicht länger aufschieben können",
-  "banner_alt": "Migrationskarte für quantensichere Kryptografie 2026 — NIST-PQC-Standards, Hybridprotokollarbeit, QKD-Assurance, Krypto-Agilität und Bank-Datenrisikostufen",
-  "twitter_title": "Quantenkryptografie 2026: PQC-Standards und Bankmigration",
-  "keywords": "Quantenkryptografie 2026, Post-Quanten-Kryptografie, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hybrider Schlüsselaustausch, QKD, ETSI QKD, ISO IEC 23837, Krypto-Agilität, harvest now decrypt later, HNDL, Kryptografie für Finanzdienstleistungen, Banksicherheit",
-  "title": "Der Quantenkryptografie-Reset 2026: PQC-Standards, QKD-Assurance und die Migrationsarbeit, die Banken nicht länger aufschieben können",
-  "item_description": "Der Quantenkryptografie-Reset 2026 — NIST-PQC-Standards, NCSC-Migrationsempfehlungen, IETF-Protokollreife, QKD-Assurance, Krypto-Agilität und worauf Banken diese Woche priorisieren sollten.",
-  "twitter_description": "Der Quantenkryptografie-Reset 2026 — NIST-PQC-Standards, NCSC-Migrationsempfehlungen, IETF-Protokollreife, QKD-Assurance, Krypto-Agilität und worauf Banken diese Woche priorisieren sollten.",
   "locale": "de_DE",
-  "language": "de",
+  "item_description": "Der Quantenkryptografie-Reset 2026 — NIST-PQC-Standards, NCSC-Migrationsempfehlungen, IETF-Protokollreife, QKD-Assurance, Krypto-Agilität und worauf Banken diese Woche priorisieren sollten.",
+  "twitter_title": "Quantenkryptografie 2026: PQC-Standards und Bankmigration",
+  "banner_alt": "Migrationskarte für quantensichere Kryptografie 2026 — NIST-PQC-Standards, Hybridprotokollarbeit, QKD-Assurance, Krypto-Agilität und Bank-Datenrisikostufen",
   "subtitle": "Quantenkryptografie ist vom Horizont-Scanning zur Umsetzungsdisziplin geworden: NIST-PQC-Standards sind einsatzbereit, der Leitfaden des britischen NCSC hat die Algorithmenauswahl verengt, die IETF-Protokollarbeit reift noch, und die QKD-Assurance bewegt sich vom Laborvertrauen zur Zertifizierungssprache.",
-  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
+  "keywords": "Quantenkryptografie 2026, Post-Quanten-Kryptografie, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hybrider Schlüsselaustausch, QKD, ETSI QKD, ISO IEC 23837, Krypto-Agilität, harvest now decrypt later, HNDL, Kryptografie für Finanzdienstleistungen, Banksicherheit",
+  "twitter_description": "Der Quantenkryptografie-Reset 2026 — NIST-PQC-Standards, NCSC-Migrationsempfehlungen, IETF-Protokollreife, QKD-Assurance, Krypto-Agilität und worauf Banken diese Woche priorisieren sollten.",
+  "tags": "Quantenkryptografie, Post-Quanten-Kryptografie, PQC, NIST, FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC, IETF, TLS, IPsec, QKD, ETSI, Krypto-Agilität, HNDL, Banksicherheit",
+  "date": "May 18, 2026"
 }

@@ -1,11 +1,11 @@
 {
-  "description": "Schützen Sie die Integrität Ihres Codes mit sorgfältig validierten mathematischen und kryptografischen Konstanten, die Speicher- und Nebenläufigkeitssicherheit stärken.",
   "language": "de",
+  "description": "Schützen Sie die Integrität Ihres Codes mit sorgfältig validierten mathematischen und kryptografischen Konstanten, die Speicher- und Nebenläufigkeitssicherheit stärken.",
+  "subtitle": "Geprüfte mathematische und kryptografische Konstanten für speichersichere Rust-Anwendungen",
+  "keywords": "mathematische Konstanten, kryptografische Konstanten, Rust-Sicherheit, sichere Kommunikation, Verschlüsselung, RSA, Elliptische-Kurven-Kryptografie, Common (CMN) Bibliothek, Rust-Anwendungen, mathematische Berechnungen",
   "banner_alt": "Mathematische Berechnung",
-  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
+  "date": "November 05, 2023",
   "title": "Mathematische und kryptografische Konstanten für die Rust-Sicherheit",
   "locale": "de_DE",
-  "subtitle": "Geprüfte mathematische und kryptografische Konstanten für speichersichere Rust-Anwendungen",
-  "date": "November 05, 2023",
-  "keywords": "mathematische Konstanten, kryptografische Konstanten, Rust-Sicherheit, sichere Kommunikation, Verschlüsselung, RSA, Elliptische-Kurven-Kryptografie, Common (CMN) Bibliothek, Rust-Anwendungen, mathematische Berechnungen"
+  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp"
 }
