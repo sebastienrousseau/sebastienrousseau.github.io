@@ -1,4 +1,6 @@
 {
+  "locale": "ro_RO",
+  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
   "keywords": "Rust, library, development, code, generator, boilerplate, best, practices, quality, reliable",
   "date": "Oct 26, 2023",
   "subtitle": "LibMake: a Rust code generator that enforces best practices from day one.",

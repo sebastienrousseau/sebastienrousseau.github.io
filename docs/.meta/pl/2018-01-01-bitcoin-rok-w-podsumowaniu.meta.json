@@ -7,5 +7,7 @@
   "title": "Bitcoin: rok pierwszej kryptowaluty w podsumowaniu",
   "language": "pl-PL",
   "banner_alt": "Stos złotych i srebrnych monet leżących na stole",
-  "description": "Bitcoin: system gotówki elektronicznej peer-to-peer (P2P ECS), który ma potencjał, by zrewolucjonizować sposób, w jaki ludzie dokonują transakcji online."
+  "locale": "pl_PL",
+  "description": "Bitcoin: system gotówki elektronicznej peer-to-peer (P2P ECS), który ma potencjał, by zrewolucjonizować sposób, w jaki ludzie dokonują transakcji online.",
+  "subtitle": "System płatności elektronicznych peer-to-peer, który zmienił definicję pieniądza"
 }
