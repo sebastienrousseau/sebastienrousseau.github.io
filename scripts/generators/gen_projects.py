@@ -206,7 +206,7 @@ CATEGORIES = [
               "https://l90s.com/"),
             P("Config · Cross-platform",
               "Dotfiles",
-              "https://cloudcdn.pro/clients/dotfiles/v1/images/logos/dotfiles.svg",
+              "https://cloudcdn.pro/clients/dotfiles/v2/images/logos/dotfiles.svg",
               "Banner for the Dotfiles project",
               "A powerful set of configuration files for macOS, Linux, and Windows — scripts and customised settings to streamline a development workflow.",
               "https://dotfiles.io/"),

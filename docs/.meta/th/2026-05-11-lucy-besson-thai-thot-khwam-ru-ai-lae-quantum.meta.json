@@ -1,11 +1,11 @@
 {
-  "language": "th-TH",
-  "description": "Doce años después de su estreno, Lucy de Luc Besson se lee menos como pseudociencia y más como un experimento mental sobre lo que ocurre cuando el conocimiento humano migra hacia sustratos no biológicos. En la era de los grandes modelos de lenguaje, los qubits de átomos neutros y la emulación cerebral completa, la metáfora central del filme envejece notablemente bien.",
-  "locale": "th_TH",
-  "date": "May 11, 2026",
   "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
-  "keywords": "Lucy, Luc Besson, transferencia de conocimiento, IA, LLM, qubits de átomos neutros, emulación cerebral, Neuralink, Eon Systems, Carboncopies, Fromm, independencia del sustrato, filosofía de la IA",
-  "title": "La memoria flash de Lucy, revisitada: lo que Besson vio sobre la migración del conocimiento a las máquinas",
   "banner_alt": "Visualización abstracta de redes neuronales y arreglos atómicos cuánticos. Un ordenador negro se forma a partir de partículas en reorganización.",
-  "subtitle": "Doce años después de su estreno, Lucy de Luc Besson se lee menos como pseudociencia y más como un experimento mental sobre la migración del conocimiento humano a sustratos no biológicos."
+  "keywords": "Lucy, Luc Besson, transferencia de conocimiento, IA, LLM, qubits de átomos neutros, emulación cerebral, Neuralink, Eon Systems, Carboncopies, Fromm, independencia del sustrato, filosofía de la IA",
+  "language": "th-TH",
+  "date": "May 11, 2026",
+  "subtitle": "Doce años después de su estreno, Lucy de Luc Besson se lee menos como pseudociencia y más como un experimento mental sobre la migración del conocimiento humano a sustratos no biológicos.",
+  "title": "La memoria flash de Lucy, revisitada: lo que Besson vio sobre la migración del conocimiento a las máquinas",
+  "description": "Doce años después de su estreno, Lucy de Luc Besson se lee menos como pseudociencia y más como un experimento mental sobre lo que ocurre cuando el conocimiento humano migra hacia sustratos no biológicos. En la era de los grandes modelos de lenguaje, los qubits de átomos neutros y la emulación cerebral completa, la metáfora central del filme envejece notablemente bien.",
+  "locale": "th_TH"
 }

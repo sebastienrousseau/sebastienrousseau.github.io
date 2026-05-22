@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Sơ đồ trừu tượng của mã hoá hoàn toàn đồng cấu",
-  "title": "Mã hoá hoàn toàn đồng cấu trong kỷ nguyên lượng tử ngân hàng",
-  "date": "March 25, 2024",
-  "subtitle": "Tính toán trên dữ liệu được mã hoá mà không cần giải mã",
   "keywords": "FHE, mã hoá đồng cấu, mật mã, ngân hàng, quyền riêng tư, lattice, mạng tinh thể, hậu lượng tử",
-  "locale": "vi_VN",
+  "title": "Mã hoá hoàn toàn đồng cấu trong kỷ nguyên lượng tử ngân hàng",
   "banner": "https://cloudcdn.pro/stocks/images/fhe-banner.webp",
-  "description": "Cách mã hoá hoàn toàn đồng cấu (FHE) cách mạng hoá bảo mật dữ liệu trong ngân hàng và dịch vụ tài chính, bảo vệ quyền riêng tư trước các mối đe doạ thời lượng tử.",
-  "language": "vi-VN"
+  "subtitle": "Tính toán trên dữ liệu được mã hoá mà không cần giải mã",
+  "date": "March 25, 2024",
+  "locale": "vi_VN",
+  "banner_alt": "Sơ đồ trừu tượng của mã hoá hoàn toàn đồng cấu",
+  "language": "vi-VN",
+  "description": "Cách mã hoá hoàn toàn đồng cấu (FHE) cách mạng hoá bảo mật dữ liệu trong ngân hàng và dịch vụ tài chính, bảo vệ quyền riêng tư trước các mối đe doạ thời lượng tử."
 }
