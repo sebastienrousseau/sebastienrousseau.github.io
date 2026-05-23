@@ -87,6 +87,14 @@ python3 scripts/generators/build_lang_feeds.py
 python3 scripts/generators/build_agent_api.py
 python3 scripts/generators/build_lead_magnets.py
 python3 scripts/postbuild/postbuild.py
+# Rewrite the in-page language switcher so each .ap-lang-item link
+# points to the localised URL of THIS page (per the page's own
+# hreflang alternates), not just /<lang>/. Without this, clicking
+# "🇫🇷 Français" while reading an article sends the user to the
+# French homepage instead of the French translation of that article.
+# Must run after build_translations.py + postbuild.py have finalised
+# every page's hreflang head links.
+python3 scripts/postbuild/fix_lang_switcher.py
 # Sigstore signing pass — no-op unless _data/sigstore/config.json exists
 # (the cosign private key is machine-local, never in CI). Always mirror
 # the *previously committed* bundles from docs/sigstore/ into
