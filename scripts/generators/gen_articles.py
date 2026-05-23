@@ -328,7 +328,7 @@ def _eyebrow_from_tags(tags: str) -> str:
     return " · ".join(p.title() for p in parts)
 
 
-def _tuple_from_post(date_str: str, path: Path) -> tuple | None:
+def _tuple_from_post(date_str: str, path: _Path) -> tuple | None:
     """Build an ARTICLES-shaped tuple from a dated _posts/ entry. Returns
     None if the file lacks a usable title."""
     fm, _body = parse_frontmatter(path.read_text(encoding="utf-8"))
@@ -366,7 +366,7 @@ def _discover_missing_articles() -> list[tuple]:
     /articles/. The fix is to surface ALL missing dated posts."""
     if not POSTS.is_dir():
         return []
-    dated: list[tuple[str, Path]] = []
+    dated: list[tuple[str, _Path]] = []
     for md in POSTS.glob("*.md"):
         m = _DATED_RE.match(md.name)
         if m:
