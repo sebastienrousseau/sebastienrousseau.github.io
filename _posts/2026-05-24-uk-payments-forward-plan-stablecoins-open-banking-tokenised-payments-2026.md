@@ -104,6 +104,7 @@ site_software: "Static Site Generator, Rust"
 # The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments
 
 
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> The UK Payments Forward Plan and April 2026 policy package point to a single coherent framework for traditional payments, stablecoins, tokenised deposits, open banking, and AI-agent payments.</p>

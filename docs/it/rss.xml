@@ -6,7 +6,7 @@
     <description>Articoli in italiano: IA applicata, pagamenti ISO 20022, crittografia post-quantistica e trasformazione dei pagamenti wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/it/rss.xml" rel="self" type="application/rss+xml"/>
     <language>it-IT</language>
-    <lastBuildDate>Fri, 22 May 2026 20:36:48 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 21:38:56 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Tutti i diritti riservati.</copyright>
     <item>
       <title>UK Payments Forward Plan 2026: stablecoin, open banking, depositi tokenizzati e pagamenti agentici</title>
@@ -31,7 +31,7 @@
       <link>https://sebastienrousseau.com/it/2026-05-23-agentic-pagamenti-banking-consent-liability-new-payment-ux-2026/</link>
       <description>Nel 2026 i pagamenti agentici sono passati dal concetto alla transazione reale. Per le banche la sfida non è più se gli agenti IA possano disporre pagamenti, ma come strutturare consenso, responsabilità, identità, auditabilità, controlli antifrode e interoperabilità dei protocolli.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-23-agentic-pagamenti-banking-consent-liability-new-payment-ux-2026/</guid>
-      <pubDate>Fri, 22 May 2026 20:36:48 +0000</pubDate>
+      <pubDate>Fri, 22 May 2026 21:38:56 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>pagamenti agentici 2026</category>

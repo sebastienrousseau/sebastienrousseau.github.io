@@ -328,27 +328,13 @@ def _eyebrow_from_tags(tags: str) -> str:
     return " · ".join(p.title() for p in parts)
 
 
-def _discover_latest_article() -> tuple | None:
-    """Scan _posts/YYYY-MM-DD-*.md for any article newer than ARTICLES[0].
-    Return an ARTICLES-shaped tuple, or None if none found."""
-    if not POSTS.is_dir():
-        return None
-    dated = []
-    for md in POSTS.glob("*.md"):
-        m = _DATED_RE.match(md.name)
-        if m:
-            dated.append((m.group(1), md))
-    if not dated:
-        return None
-    dated.sort(reverse=True)
-    latest_date, latest_path = dated[0]
-    head_date = ARTICLES[0][0] if ARTICLES else ""
-    if latest_date <= head_date:
-        return None
-    fm, _body = parse_frontmatter(latest_path.read_text(encoding="utf-8"))
+def _tuple_from_post(date_str: str, path: _Path) -> tuple | None:
+    """Build an ARTICLES-shaped tuple from a dated _posts/ entry. Returns
+    None if the file lacks a usable title."""
+    fm, _body = parse_frontmatter(path.read_text(encoding="utf-8"))
     if not fm.get("title"):
         return None
-    slug = latest_path.stem
+    slug = path.stem
     title = fm["title"]
     banner = fm.get("banner", "")
     banner_alt = fm.get("banner_alt", title)
@@ -357,8 +343,8 @@ def _discover_latest_article() -> tuple | None:
     )[:320]
     eyebrow = _eyebrow_from_tags(fm.get("tags", "")) or "Banking · Technology"
     return (
-        latest_date,
-        display_date(latest_date),
+        date_str,
+        display_date(date_str),
         eyebrow,
         title,
         banner,
@@ -368,10 +354,44 @@ def _discover_latest_article() -> tuple | None:
     )
 
 
+def _discover_missing_articles() -> list[tuple]:
+    """Scan _posts/YYYY-MM-DD-*.md for any article newer than ARTICLES[0]
+    that is not already present in ARTICLES (matched by date + slug).
+    Return a list of ARTICLES-shaped tuples in date-descending order so
+    they can be prepended ahead of the existing curated list.
+
+    Previously this function only surfaced the single latest article,
+    which meant if more than one daily article published between two
+    ARTICLES[] refreshes, the in-between ones silently disappeared from
+    /articles/. The fix is to surface ALL missing dated posts."""
+    if not POSTS.is_dir():
+        return []
+    dated: list[tuple[str, _Path]] = []
+    for md in POSTS.glob("*.md"):
+        m = _DATED_RE.match(md.name)
+        if m:
+            dated.append((m.group(1), md))
+    if not dated:
+        return []
+    head_date = ARTICLES[0][0] if ARTICLES else ""
+    existing_hrefs = {a[7] for a in ARTICLES}
+    discovered: list[tuple] = []
+    for date_str, path in sorted(dated, reverse=True):
+        if date_str <= head_date:
+            break
+        href = f"/{path.stem}/index.html"
+        if href in existing_hrefs:
+            continue
+        tup = _tuple_from_post(date_str, path)
+        if tup is not None:
+            discovered.append(tup)
+    return discovered
+
+
 def main() -> None:
     articles = list(ARTICLES)
-    auto = _discover_latest_article()
-    if auto is not None:
+    discovered = _discover_missing_articles()
+    for auto in reversed(discovered):
         articles.insert(0, auto)
         print(f"gen_articles: auto-prepended {auto[0]} (slug={auto[7]})")
 
