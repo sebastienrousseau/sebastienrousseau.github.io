@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: read
+  issues: write
   pull-requests: write
 
 concurrency:
@@ -89,6 +90,10 @@ jobs:
           cat diff.md
 
       - name: Post diff comment
+        # Read-only signal: a transient 401/comment-permissions failure
+        # must not red-flag the PR. The build at HEAD already passed
+        # by this point; this step is informational only.
+        continue-on-error: true
         uses: actions/github-script@v7
         with:
           script: |
