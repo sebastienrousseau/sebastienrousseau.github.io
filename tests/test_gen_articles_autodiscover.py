@@ -2,9 +2,12 @@
 
 The daily-publishing routine should not need to hand-edit
 ``scripts/gen_articles.py`` to make tomorrow's article appear on
-``/articles/``. ``_discover_latest_article()`` walks ``_posts/`` and
-yields an ARTICLES-shaped tuple if it finds anything newer than the
-current ARTICLES[0].
+``/articles/``. ``_discover_missing_articles()`` walks ``_posts/`` and
+returns a list of ARTICLES-shaped tuples for every dated post newer than
+the current ARTICLES[0] (date-descending). Previously this function only
+returned the single latest post, which silently dropped intermediate
+articles when more than one daily article published between two manual
+ARTICLES[] refreshes.
 """
 from __future__ import annotations
 
@@ -63,14 +66,14 @@ def test_display_date_converts_iso_to_month_day_year():
     assert gen_articles.display_date("2026-01-01") == "January 1, 2026"
 
 
-def test_discover_returns_none_when_no_post_newer_than_articles_head(monkeypatch, tmp_path):
+def test_discover_returns_empty_when_no_post_newer_than_articles_head(monkeypatch, tmp_path):
     """If `_posts/` has nothing newer than ARTICLES[0]'s date, no auto-prepend."""
     posts = tmp_path / "_posts"
     posts.mkdir()
     # Seed an OLDER post than ARTICLES[0] (which is 2026-05-20 today).
     (posts / "2024-01-01-some-old-post.md").write_text(_SAMPLE_FM, encoding="utf-8")
     monkeypatch.setattr(gen_articles, "POSTS", posts)
-    assert gen_articles._discover_latest_article() is None
+    assert gen_articles._discover_missing_articles() == []
 
 
 def test_discover_returns_tuple_when_newer_post_exists(monkeypatch, tmp_path):
@@ -80,8 +83,9 @@ def test_discover_returns_tuple_when_newer_post_exists(monkeypatch, tmp_path):
         _SAMPLE_FM, encoding="utf-8",
     )
     monkeypatch.setattr(gen_articles, "POSTS", posts)
-    tup = gen_articles._discover_latest_article()
-    assert tup is not None
+    discovered = gen_articles._discover_missing_articles()
+    assert len(discovered) == 1
+    tup = discovered[0]
     date_iso, date_display, eyebrow, title, banner, _banner_alt, _excerpt, href = tup
     assert date_iso == "2099-12-31"
     assert date_display == "December 31, 2099"
@@ -91,13 +95,13 @@ def test_discover_returns_tuple_when_newer_post_exists(monkeypatch, tmp_path):
     assert href == "/2099-12-31-tomorrows-article/index.html"
 
 
-def test_discover_returns_none_when_post_lacks_title(monkeypatch, tmp_path):
+def test_discover_returns_empty_when_post_lacks_title(monkeypatch, tmp_path):
     posts = tmp_path / "_posts"
     posts.mkdir()
     bad = "---\nbanner: \"x\"\n---\nno-title\n"
     (posts / "2099-12-31-x.md").write_text(bad, encoding="utf-8")
     monkeypatch.setattr(gen_articles, "POSTS", posts)
-    assert gen_articles._discover_latest_article() is None
+    assert gen_articles._discover_missing_articles() == []
 
 
 def test_discover_falls_back_to_subtitle_then_description_for_excerpt(monkeypatch, tmp_path):
@@ -110,19 +114,44 @@ def test_discover_falls_back_to_subtitle_then_description_for_excerpt(monkeypatc
     )
     (posts / "2099-12-31-x.md").write_text(fm, encoding="utf-8")
     monkeypatch.setattr(gen_articles, "POSTS", posts)
-    tup = gen_articles._discover_latest_article()
-    assert tup is not None
-    assert "Subtitle takes over" in tup[6]
+    discovered = gen_articles._discover_missing_articles()
+    assert len(discovered) == 1
+    assert "Subtitle takes over" in discovered[0][6]
 
 
-def test_discover_returns_none_when_posts_dir_missing(monkeypatch, tmp_path):
+def test_discover_returns_empty_when_posts_dir_missing(monkeypatch, tmp_path):
     monkeypatch.setattr(gen_articles, "POSTS", tmp_path / "missing")
-    assert gen_articles._discover_latest_article() is None
+    assert gen_articles._discover_missing_articles() == []
 
 
-def test_discover_returns_none_when_only_non_dated_posts_present(monkeypatch, tmp_path):
+def test_discover_returns_empty_when_only_non_dated_posts_present(monkeypatch, tmp_path):
     posts = tmp_path / "_posts"
     posts.mkdir()
     (posts / "about.md").write_text(_SAMPLE_FM, encoding="utf-8")
     monkeypatch.setattr(gen_articles, "POSTS", posts)
-    assert gen_articles._discover_latest_article() is None
+    assert gen_articles._discover_missing_articles() == []
+
+
+def test_discover_returns_all_missing_dated_posts_descending(monkeypatch, tmp_path):
+    """The key regression test for the multi-day-gap bug. With three
+    posts dated 2099-12-29, 2099-12-30, and 2099-12-31, all three should
+    surface in date-descending order — not just the latest."""
+    posts = tmp_path / "_posts"
+    posts.mkdir()
+    for date_iso, title in [
+        ("2099-12-29", "Day 1"),
+        ("2099-12-30", "Day 2"),
+        ("2099-12-31", "Day 3"),
+    ]:
+        fm = (
+            f'---\ntitle: "{title}"\nbanner: "b"\nbanner_alt: "ba"\n'
+            f'excerpt: "e"\ntags: "alpha"\ndate: "Dec, 2099"\n---\nbody'
+        )
+        (posts / f"{date_iso}-x.md").write_text(fm, encoding="utf-8")
+    monkeypatch.setattr(gen_articles, "POSTS", posts)
+    discovered = gen_articles._discover_missing_articles()
+    assert len(discovered) == 3
+    # Date-descending order: newest first.
+    assert discovered[0][0] == "2099-12-31"
+    assert discovered[1][0] == "2099-12-30"
+    assert discovered[2][0] == "2099-12-29"
