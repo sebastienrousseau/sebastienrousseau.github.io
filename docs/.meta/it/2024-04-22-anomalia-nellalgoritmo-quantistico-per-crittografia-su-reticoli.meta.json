@@ -1,11 +1,11 @@
 {
+  "language": "it-IT",
   "description": "È stato individuato un bug nell'algoritmo quantistico di Yilei Chen per risolvere LWE, mettendo temporaneamente in sicurezza la crittografia basata su reticoli e sottolineando la necessità di ricerca continua.",
-  "banner_alt": "Algoritmo quantistico e bug",
-  "banner": "https://cloudcdn.pro/stocks/images/digitale-nodes.webp",
-  "keywords": "quantistico, LWE, Yilei Chen, bug, Kyber, PQC, peer review",
-  "date": "April 22, 2024",
   "locale": "it_IT",
+  "date": "April 22, 2024",
+  "banner_alt": "Algoritmo quantistico e bug",
+  "keywords": "quantistico, LWE, Yilei Chen, bug, Kyber, PQC, peer review",
   "subtitle": "Una falla individuata nell'algoritmo di Yilei Chen mette temporaneamente in sicurezza la crittografia reticolare",
-  "title": "Bug nell'algoritmo quantistico per crittografia su reticoli",
-  "language": "it-IT"
+  "banner": "https://cloudcdn.pro/stocks/images/digitale-nodes.webp",
+  "title": "Bug nell'algoritmo quantistico per crittografia su reticoli"
 }

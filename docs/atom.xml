@@ -4,7 +4,259 @@
   <link href="https://sebastienrousseau.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com"/>
   <id>https://sebastienrousseau.com</id>
-  <updated>2026-05-27T06:06:06+00:00</updated>
+  <updated>2026-05-28T06:06:06+00:00</updated>
+  <entry>
+    <title>DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</title>
+    <link href="https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026"/>
+    <id>https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, the EU AI Act, GDPR, cloud concentration risk, and data sovereignty are converging into one 2026 compliance stack for banks.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA, EU AI Yasası ve Veri Egemenliği: Bankalar için 2026 Uyum Yığını</title>
+    <link href="https://sebastienrousseau.com/tr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/tr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, EU AI Yasası, GDPR, bulut yoğunlaşma riski ve veri egemenliği 2026&apos;da bankalar için tek bir uyum yığınında birleşiyor — yığın artık mimari bir disiplindir.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA กฎหมาย AI ของ EU และอธิปไตยข้อมูล: สแต็คการปฏิบัติตามกฎปี 2026 ของธนาคาร</title>
+    <link href="https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA กฎหมาย AI ของ EU GDPR ความเสี่ยงการกระจุกตัวของคลาวด์ และอธิปไตยข้อมูลกำลังหลอมรวมเป็นสแต็คการปฏิบัติตามกฎเดียวสำหรับธนาคารในปี 2026 คำถามเชิงกลยุทธ์คือวินัยในการออกแบบสถาปัตยกรรม</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA, EU AI Act y soberanía de datos: el stack de cumplimiento bancario 2026</title>
+    <link href="https://sebastienrousseau.com/es/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/es/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, EU AI Act, GDPR, riesgo de concentración cloud y soberanía de datos convergen en 2026 en un único stack de cumplimiento para la banca europea.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA, EU AI Act et souveraineté des données : la pile de conformité 2026 pour les banques</title>
+    <link href="https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, l&apos;EU AI Act, le RGPD, le risque de concentration cloud et la souveraineté des données convergent en 2026 vers une pile de conformité unique pour les banques.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA, EU AI Act, dan Kedaulatan Data: Tumpukan Kepatuhan 2026 bagi Bank</title>
+    <link href="https://sebastienrousseau.com/id/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/id/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, EU AI Act, GDPR, risiko konsentrasi cloud, dan kedaulatan data berkonvergensi menjadi satu tumpukan kepatuhan 2026 bagi bank — orkestrasi bukti tunggal.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA, EU AI 법, 데이터 주권: 2026년 은행을 위한 컴플라이언스 스택</title>
+    <link href="https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, EU AI 법, GDPR, 클라우드 집중 위험, 데이터 주권이 2026년 은행을 위한 하나의 컴플라이언스 스택으로 수렴합니다. 다섯 개의 병행 프로그램이 아닌 하나의 아키텍처 규율이 승부를 가릅니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA, EU-KI-Verordnung und Datensouveränität: Der Compliance-Stack 2026 für Banken</title>
+    <link href="https://sebastienrousseau.com/de/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/de/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, die EU-KI-Verordnung, DSGVO, Cloud-Konzentrationsrisiko und Datensouveränität verschmelzen 2026 zu einem Compliance-Stack für Banken.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA, EU AI अधिनियम और डेटा संप्रभुता: बैंकों का 2026 अनुपालन स्टैक</title>
+    <link href="https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, EU AI अधिनियम, GDPR, क्लाउड संकेंद्रण जोखिम और डेटा संप्रभुता बैंकों के लिए 2026 के एकल अनुपालन स्टैक में मिल रहे हैं।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA, EU AI Act, at Soberanya ng Data: Compliance Stack ng Bangko 2026</title>
+    <link href="https://sebastienrousseau.com/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>Ang DORA, EU AI Act, GDPR, panganib ng konsentrasyon sa cloud, at soberanya ng data ay nagtatagpo sa iisang compliance stack para sa mga bangko sa 2026.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA, EU AI আইন ও ডেটা সার্বভৌমত্ব: ব্যাংকের জন্য ২০২৬-এর কমপ্লায়েন্স স্ট্যাক</title>
+    <link href="https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, EU AI আইন, GDPR, ক্লাউড ঘনত্ব ঝুঁকি ও ডেটা সার্বভৌমত্ব ২০২৬-এ ব্যাংকগুলির জন্য একক কমপ্লায়েন্স স্ট্যাকে একীভূত হচ্ছে।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA, EU AI Act en datasoevereiniteit: de compliance-stack 2026 voor banken</title>
+    <link href="https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, EU AI Act, GDPR, concentratierisico cloud en datasoevereiniteit smelten in 2026 samen tot één compliance-stack voor banken in Nederland.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA, EU AI Act e soberania de dados: a stack de conformidade bancária 2026</title>
+    <link href="https://sebastienrousseau.com/pt-br/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/pt-br/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, EU AI Act, GDPR, risco de concentração em nuvem e soberania de dados convergem em uma stack de conformidade única para bancos em 2026.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA وقانون الذكاء الاصطناعي وسيادة البيانات: حزمة امتثال 2026 للمصارف</title>
+    <link href="https://sebastienrousseau.com/ar/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/ar/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>تتقارب DORA وقانون الذكاء الاصطناعي الأوروبي وGDPR ومخاطر التركيز السحابي وسيادة البيانات في حزمة امتثال موحدة للمصارف عام 2026 ضمن هندسة تشغيلية واحدة.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA, EU AI Act, da Ikon Mallakar Bayanai: Tarin Bin Doka na 2026 ga Bankuna</title>
+    <link href="https://sebastienrousseau.com/ha/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/ha/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, EU AI Act, GDPR, haɗarin tarawar cloud, da ikon mallakar bayanai sun haɗu zuwa tarin bin doka guda na bankuna a 2026.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA, EU AI Act і суверенітет даних: стек банківського комплаєнсу 2026</title>
+    <link href="https://sebastienrousseau.com/uk/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/uk/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, EU AI Act, GDPR, концентраційний ризик хмари та суверенітет даних збираються в єдиний стек банківського комплаєнсу 2026 року.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA, EU AI Act, àti Ọba Lori Dátà: Akopọ Ìbámu 2026 fún Báńkì</title>
+    <link href="https://sebastienrousseau.com/yo/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/yo/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, EU AI Act, GDPR, ewu ìṣàkójọ cloud, àti ọba lori dátà ń pa pọ̀ di akopọ ìbámu kan ṣoṣo fún àwọn báńkì ní 2026 — ìbéèrè ìlànà ni.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA, EU AI Act și suveranitatea datelor: stiva de conformitate bancară 2026</title>
+    <link href="https://sebastienrousseau.com/ro/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/ro/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, EU AI Act, GDPR, riscul de concentrare cloud și suveranitatea datelor converg într-o singură stivă de conformitate bancară pentru 2026.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA, Закон ЕС об ИИ и суверенитет данных: стек комплаенса банков 2026 года</title>
+    <link href="https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, EU AI Act, GDPR, риск концентрации в облаке и суверенитет данных сходятся в единый стек комплаенса банков 2026 года — архитектурный выбор.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA, EU AI Act a suverenita dat: Compliance stack pro banky v roce 2026</title>
+    <link href="https://sebastienrousseau.com/cs/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/cs/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, EU AI Act, GDPR, koncentrační riziko v cloudu a suverenita dat se v roce 2026 sbíhají do jediného compliance stacku pro banky.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA, EU AI Act e sovranità dei dati: lo stack di conformità 2026 per le banche</title>
+    <link href="https://sebastienrousseau.com/it/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/it/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, EU AI Act, GDPR, rischio di concentrazione cloud e sovranità dei dati convergono nello stack di conformità 2026 per le banche europee.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA、EU AI Act、データ主権:2026 年銀行向けコンプライアンス・スタック</title>
+    <link href="https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA、EU AI Act、GDPR、クラウド集中リスク、データ主権は、2026 年に銀行向けの単一のコンプライアンス・スタックへと収斂しつつあります。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA, חוק הבינה המלאכותית וריבונות נתונים: ערימת הציות של 2026 לבנקים</title>
+    <link href="https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, חוק הבינה המלאכותית של האיחוד האירופי, GDPR, סיכון ריכוז ענן וריבונות נתונים מתכנסים ב-2026 לערימת ציות אחת לבנקים.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA, EU:s AI-förordning och datasuveränitet: bankernas efterlevnadsstack 2026</title>
+    <link href="https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, EU:s AI-förordning, GDPR, koncentrationsrisk i molnet och datasuveränitet konvergerar 2026 till en gemensam efterlevnadsstack för banker.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA, Đạo luật AI EU và chủ quyền dữ liệu: ngăn xếp tuân thủ 2026 cho ngân hàng</title>
+    <link href="https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, EU AI Act, GDPR, rủi ro tập trung cloud và chủ quyền dữ liệu hội tụ thành một ngăn xếp tuân thủ 2026 cho ngân hàng — kiến trúc, không phải tủ hồ sơ chính sách.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA, EU AI Act i suwerennosc danych: stos zgodnosci bankow w 2026</title>
+    <link href="https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, EU AI Act, RODO, ryzyko koncentracji chmury i suwerennosc danych laczy sie w jeden stos zgodnosci banku na 2026 rok.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA、EU AI 法與資料主權:銀行 2026 年法遵堆疊</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA、EU AI 法、GDPR、雲端集中風險與資料主權,2026 年正匯流為銀行的單一法遵堆疊,設計紀律成為決勝關鍵。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA、EU AI 法案与数据主权：银行 2026 合规栈</title>
+    <link href="https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
+    <id>https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA、EU AI 法案、GDPR、云集中风险与数据主权在 2026 年汇聚为银行的一套合规栈，决定董事会层级的运营模型设计。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026</title>
     <link href="https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026"/>
@@ -201,258 +453,6 @@
     <updated>2026-05-27T06:06:06+00:00</updated>
     <published>2026-05-27T06:06:06+00:00</published>
     <summary>2026 年、AI は決済のオペレーティングシステムへと進化し、分析を越えて不正防止、決済修復、ルーティング、流動性予測、コンプライアンススクリーニング、エージェント型コマース統制を担います。</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>AI כמערכת ההפעלה של התשלומים: הונאה, ניתוב, חוסן וציות ב-2026</title>
-    <link href="https://sebastienrousseau.com/he/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/he/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>בינה מלאכותית הופכת ב-2026 למערכת ההפעלה של התשלומים — מנתחת הונאה, מתקנת תשלומים, מנתבת מסילות, צופה נזילות, מסננת סנקציות ו-AML ומבקרת מסחר אוטונומי במהירות התהליך.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>AI som betalningarnas operativsystem: bedrägeri, routning, resiliens och efterlevnad 2026</title>
-    <link href="https://sebastienrousseau.com/sv/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/sv/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>AI blir betalningarnas operativsystem 2026 och går från analys till bedrägeriskydd, betalningsreparation, routning, likviditetsprognos, efterlevnadsscreening och kontroller för agentisk handel.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>AI là hệ điều hành của thanh toán: Gian lận, định tuyến, phục hồi và tuân thủ năm 2026</title>
-    <link href="https://sebastienrousseau.com/vi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/vi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>AI đang trở thành hệ điều hành của thanh toán năm 2026, dịch chuyển từ phân tích sang phòng chống gian lận, sửa chữa thanh toán, định tuyến, dự báo thanh khoản, sàng lọc tuân thủ và kiểm soát thương mại agentic.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>AI jako system operacyjny platnosci: oszustwo, routing, odpornosc i zgodnosc w 2026</title>
-    <link href="https://sebastienrousseau.com/pl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/pl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>AI staje sie systemem operacyjnym platnosci w 2026 roku — od analityki po prewencje oszustw, naprawe platnosci, routing, prognoze plynnosci, screening zgodnosci oraz kontrole handlu agentowego.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>支付的人工智慧作業系統:2026 年詐騙、路由、韌性與法遵</title>
-    <link href="https://sebastienrousseau.com/zh-hant/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/zh-hant/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>2026 年人工智慧正成為支付的作業系統,從分析跨入詐騙防範、付款修復、路由、流動性預測、法遵篩查與代理商務控制,並以工作流速度運作於銀行決策。</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>2026 支付人工智能操作系统：欺诈、路由、韧性与合规</title>
-    <link href="https://sebastienrousseau.com/zh-hans/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/zh-hans/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>2026 年人工智能正成为支付的操作系统，从分析仪表盘走向欺诈防范、支付修复、路由、流动性预测、合规筛查与代理式商业控制的实时决策层。</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Magnifica Humanitas: An AI-Industry Reading of the First Papal Encyclical on Artificial Intelligence</title>
-    <link href="https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"/>
-    <id>https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope</id>
-    <updated>2026-05-26T06:06:06+00:00</updated>
-    <published>2026-05-26T06:06:06+00:00</published>
-    <summary>On 25 May 2026, Pope Leo XIV released Magnifica Humanitas, the first papal encyclical devoted to artificial intelligence. Read objectively from inside the technology industry — not as doctrine but as one of the most coherent ethical frameworks yet articulated for the AI and quantum era — it echoes the moral anxieties that accompanied the train, the automobile, nuclear power, and the internet. This is what it means for the industry, for humanity, and why, in the end, the honest reading is one of hope.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Stablecoins vs Tokenised Deposits in 2026: What Banks Actually Need to Defend</title>
-    <link href="https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026"/>
-    <id>https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026</id>
-    <updated>2026-05-26T06:06:06+00:00</updated>
-    <published>2026-05-26T06:06:06+00:00</published>
-    <summary>Stablecoins and tokenised deposits are converging around programmable settlement, but their balance-sheet, legal, liquidity, and trust models remain different.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Magnifica Humanitas: Yapay Zekâ Genelgesinin Sektörel Okuması</title>
-    <link href="https://sebastienrousseau.com/tr/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html"/>
-    <id>https://sebastienrousseau.com/tr/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</id>
-    <updated>2026-05-26T06:06:06+00:00</updated>
-    <published>2026-05-26T06:06:06+00:00</published>
-    <summary>Papa XIV. Leon&apos;un yapay zekâ üzerine ilk genelgesi Magnifica Humanitas&apos;ın sektörel okuması: tren, otomobil, nükleer ve internet emsalleri; umuda varan analiz.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Stablecoinler ve Tokenleştirilmiş Mevduatlar 2026: Bankaların Gerçekten Savunması Gereken</title>
-    <link href="https://sebastienrousseau.com/tr/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html"/>
-    <id>https://sebastienrousseau.com/tr/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</id>
-    <updated>2026-05-26T06:06:06+00:00</updated>
-    <published>2026-05-26T06:06:06+00:00</published>
-    <summary>Stablecoinler ve tokenleştirilmiş mevduatlar programlanabilir mutabakat etrafında yakınsıyor; ancak bilanço, hukuki, likidite ve güven modelleri farklı kalıyor.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Magnifica Humanitas: การอ่านสมณสาส์น AI ฉบับแรกในมุมอุตสาหกรรม</title>
-    <link href="https://sebastienrousseau.com/th/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html"/>
-    <id>https://sebastienrousseau.com/th/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</id>
-    <updated>2026-05-26T06:06:06+00:00</updated>
-    <published>2026-05-26T06:06:06+00:00</published>
-    <summary>25 พฤษภาคม 2026 สมเด็จพระสันตะปาปาเลโอที่ 14 ทรงประกาศ Magnifica Humanitas สมณสาส์นฉบับแรกว่าด้วย AI อ่านเชิงวิศวกรรมเป็นกรอบจริยธรรมยุค AI ที่ลงเอยที่ความหวัง</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>สเตเบิลคอยน์ vs เงินฝากแบบโทเคนในปี 2026: สิ่งที่ธนาคารต้องปกป้อง</title>
-    <link href="https://sebastienrousseau.com/th/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html"/>
-    <id>https://sebastienrousseau.com/th/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</id>
-    <updated>2026-05-26T06:06:06+00:00</updated>
-    <published>2026-05-26T06:06:06+00:00</published>
-    <summary>สเตเบิลคอยน์และเงินฝากแบบโทเคนกำลังบรรจบที่การชำระบัญชีที่ตั้งโปรแกรมได้ แต่แบบจำลองงบดุล กฎหมาย สภาพคล่อง และความเชื่อมั่นยังต่างกัน ธนาคารต้องเลือกสถาปัตยกรรม</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Magnifica Humanitas: lectura desde la industria de la IA</title>
-    <link href="https://sebastienrousseau.com/es/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html"/>
-    <id>https://sebastienrousseau.com/es/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</id>
-    <updated>2026-05-26T06:06:06+00:00</updated>
-    <published>2026-05-26T06:06:06+00:00</published>
-    <summary>Lectura desde la ingeniería de Magnifica Humanitas, la primera encíclica papal sobre IA del Papa León XIV: marco ético para la era cuántica y esperanza.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Stablecoins vs depósitos tokenizados 2026: qué debe defender la banca</title>
-    <link href="https://sebastienrousseau.com/es/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html"/>
-    <id>https://sebastienrousseau.com/es/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</id>
-    <updated>2026-05-26T06:06:06+00:00</updated>
-    <published>2026-05-26T06:06:06+00:00</published>
-    <summary>Stablecoins y depósitos tokenizados convergen en liquidación programable, pero sus modelos de balance, legales, de liquidez y de confianza siguen siendo distintos.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Stablecoins vs dépôts tokenisés en 2026 : ce que les banques doivent défendre</title>
-    <link href="https://sebastienrousseau.com/fr/2026-05-26-stablecoins-vs-tokenise-deposits-bank-strategy-2026/index.html"/>
-    <id>https://sebastienrousseau.com/fr/2026-05-26-stablecoins-vs-tokenise-deposits-bank-strategy-2026/index.html</id>
-    <updated>2026-05-26T06:06:06+00:00</updated>
-    <published>2026-05-26T06:06:06+00:00</published>
-    <summary>Stablecoins et dépôts tokenisés convergent vers le règlement programmable, mais leurs modèles de bilan, juridiques, de liquidité et de confiance restent distincts.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Magnifica Humanitas : lecture industrielle de l&apos;encyclique sur l&apos;IA</title>
-    <link href="https://sebastienrousseau.com/fr/2026-05-26-magnifica-humanitas-ai-quantique-message-of-hope/index.html"/>
-    <id>https://sebastienrousseau.com/fr/2026-05-26-magnifica-humanitas-ai-quantique-message-of-hope/index.html</id>
-    <updated>2026-05-26T06:06:06+00:00</updated>
-    <published>2026-05-26T06:06:06+00:00</published>
-    <summary>Le 25 mai 2026, le Pape Léon XIV publie Magnifica Humanitas, première encyclique pontificale consacrée à l&apos;intelligence artificielle. Lue depuis l&apos;industrie technologique — non comme doctrine, mais comme l&apos;un des cadres éthiques les plus cohérents jamais formulés pour l&apos;ère de l&apos;IA et du quantique — elle prolonge les inquiétudes morales qui ont accompagné le train, l&apos;automobile, le nucléaire et l&apos;internet. Ce qu&apos;elle signifie pour l&apos;industrie, pour l&apos;humanité, et pourquoi la lecture honnête est, au bout du compte, une lecture d&apos;espérance.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Magnifica Humanitas: Pembacaan Industri AI atas Ensiklik Kepausan Pertama tentang AI</title>
-    <link href="https://sebastienrousseau.com/id/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html"/>
-    <id>https://sebastienrousseau.com/id/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</id>
-    <updated>2026-05-26T06:06:06+00:00</updated>
-    <published>2026-05-26T06:06:06+00:00</published>
-    <summary>Pada 25 Mei 2026, Paus Leo XIV merilis Magnifica Humanitas, ensiklik kepausan pertama tentang kecerdasan buatan — dibaca dari dalam industri teknologi sebagai kerangka etika untuk era AI dan kuantum.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Stablecoin vs Deposito Tertokenisasi 2026: Yang Harus Dibela Bank</title>
-    <link href="https://sebastienrousseau.com/id/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html"/>
-    <id>https://sebastienrousseau.com/id/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</id>
-    <updated>2026-05-26T06:06:06+00:00</updated>
-    <published>2026-05-26T06:06:06+00:00</published>
-    <summary>Stablecoin dan deposito tertokenisasi menyatu pada penyelesaian yang dapat diprogram, namun model neraca, hukum, likuiditas, dan kepercayaannya tetap berbeda bagi bank.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Magnifica Humanitas: AI 회칙의 산업적 독해</title>
-    <link href="https://sebastienrousseau.com/ko/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html"/>
-    <id>https://sebastienrousseau.com/ko/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</id>
-    <updated>2026-05-26T06:06:06+00:00</updated>
-    <published>2026-05-26T06:06:06+00:00</published>
-    <summary>2026년 5월 25일, 교황 레오 14세는 인공지능을 다룬 최초의 교황 회칙 Magnifica Humanitas를 발표했습니다. 교리가 아닌 AI·양자 시대의 윤리 프레임워크로 읽으면 기차, 자동차, 원자력, 인터넷이 불러온 도덕적 불안을 그대로 반영합니다.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>2026 스테이블코인 vs 토큰화 예금: 은행이 진정으로 방어해야 할 것</title>
-    <link href="https://sebastienrousseau.com/ko/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html"/>
-    <id>https://sebastienrousseau.com/ko/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</id>
-    <updated>2026-05-26T06:06:06+00:00</updated>
-    <published>2026-05-26T06:06:06+00:00</published>
-    <summary>스테이블코인과 토큰화 예금은 프로그래머블 결제를 중심으로 수렴하고 있으나, 대차대조표·법적·유동성·신뢰 모델은 여전히 서로 다른 양상을 유지하고 있습니다.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Magnifica Humanitas: Die erste päpstliche KI-Enzyklika gelesen</title>
-    <link href="https://sebastienrousseau.com/de/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html"/>
-    <id>https://sebastienrousseau.com/de/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</id>
-    <updated>2026-05-26T06:06:06+00:00</updated>
-    <published>2026-05-26T06:06:06+00:00</published>
-    <summary>Papst Leo XIV. Magnifica Humanitas (25. Mai 2026), die erste KI-Enzyklika, aus Sicht der Technologiebranche als Ethikrahmen für KI und Quanten gelesen.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Stablecoins vs. tokenisierte Einlagen 2026: Was Banken wirklich verteidigen müssen</title>
-    <link href="https://sebastienrousseau.com/de/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html"/>
-    <id>https://sebastienrousseau.com/de/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</id>
-    <updated>2026-05-26T06:06:06+00:00</updated>
-    <published>2026-05-26T06:06:06+00:00</published>
-    <summary>Stablecoins und tokenisierte Einlagen konvergieren bei programmierbarer Abwicklung, doch Bilanz, Rechtsanspruch, Liquidität und Vertrauensmodell bleiben unterschiedlich.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Magnifica Humanitas: AI पर पहले पोप विश्वपत्र का उद्योग-पठन</title>
-    <link href="https://sebastienrousseau.com/hi/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html"/>
-    <id>https://sebastienrousseau.com/hi/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</id>
-    <updated>2026-05-26T06:06:06+00:00</updated>
-    <published>2026-05-26T06:06:06+00:00</published>
-    <summary>25 मई 2026 को पोप लियो XIV ने Magnifica Humanitas जारी किया — AI पर पहला पोप विश्वपत्र। प्रौद्योगिकी उद्योग के भीतर से पढ़ने पर यह आशा का संदेश है।</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>स्टेबलकॉइन बनाम टोकनीकृत जमा 2026: बैंकों को वास्तव में किसकी रक्षा करनी है</title>
-    <link href="https://sebastienrousseau.com/hi/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html"/>
-    <id>https://sebastienrousseau.com/hi/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</id>
-    <updated>2026-05-26T06:06:06+00:00</updated>
-    <published>2026-05-26T06:06:06+00:00</published>
-    <summary>स्टेबलकॉइन और टोकनीकृत जमा प्रोग्रामेबल निपटान पर अभिसरित हो रहे हैं, परंतु उनके बैलेंस शीट, विधिक, तरलता और भरोसे के मॉडल भिन्न बने हुए हैं।</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Magnifica Humanitas: Pagbasa ng Industriya sa Enciklika ni Leo XIV</title>
-    <link href="https://sebastienrousseau.com/fil/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html"/>
-    <id>https://sebastienrousseau.com/fil/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</id>
-    <updated>2026-05-26T06:06:06+00:00</updated>
-    <published>2026-05-26T06:06:06+00:00</published>
-    <summary>Pagbasa mula sa industriya ng teknolohiya kay Papa Leo XIV at sa Magnifica Humanitas — ang unang papal na enciklika sa AI, dumadapo sa pag-asa, hindi takot.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Stablecoins vs Tokenized Deposits 2026: Ano ang Dapat Ipagtanggol ng Bangko</title>
-    <link href="https://sebastienrousseau.com/fil/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html"/>
-    <id>https://sebastienrousseau.com/fil/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</id>
-    <updated>2026-05-26T06:06:06+00:00</updated>
-    <published>2026-05-26T06:06:06+00:00</published>
-    <summary>Nag-uugnay ang stablecoins at tokenized deposits sa programmable settlement, ngunit magkaiba pa rin ang balance sheet, legal, likido, at modelo ng tiwala.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Magnifica Humanitas: AI বিশ্বপত্রের প্রযুক্তি-শিল্প পাঠ</title>
-    <link href="https://sebastienrousseau.com/bn/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html"/>
-    <id>https://sebastienrousseau.com/bn/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</id>
-    <updated>2026-05-26T06:06:06+00:00</updated>
-    <published>2026-05-26T06:06:06+00:00</published>
-    <summary>পোপ লিও চতুর্দশের Magnifica Humanitas — AI নিয়ে প্রথম পোপীয় বিশ্বপত্র; প্রযুক্তি শিল্পের ভিতর থেকে নৈতিক কাঠামো হিসেবে পড়লে এটি আশায় গিয়ে দাঁড়ায়।</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>স্টেবলকয়েন বনাম টোকেনাইজড আমানত ২০২৬: ব্যাংককে আসলে কী রক্ষা করতে হবে</title>
-    <link href="https://sebastienrousseau.com/bn/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html"/>
-    <id>https://sebastienrousseau.com/bn/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</id>
-    <updated>2026-05-26T06:06:06+00:00</updated>
-    <published>2026-05-26T06:06:06+00:00</published>
-    <summary>স্টেবলকয়েন ও টোকেনাইজড আমানত প্রোগ্রামেবল নিষ্পত্তিতে মিলছে, তবে ব্যালেন্স শিট, আইনি, তারল্য ও আস্থার মডেল ভিন্ন থাকছে।</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
 </feed>

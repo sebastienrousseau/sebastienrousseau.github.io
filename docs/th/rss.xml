@@ -6,8 +6,24 @@
     <description>บทความภาษาไทย: AI ประยุกต์, การชำระเงิน ISO 20022, การเข้ารหัสหลังควอนตัม และการปฏิรูปการชำระเงินขายส่ง</description>
     <atom:link href="https://sebastienrousseau.com/th/rss.xml" rel="self" type="application/rss+xml"/>
     <language>th-TH</language>
-    <lastBuildDate>Wed, 27 May 2026 22:09:52 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์</copyright>
+    <item>
+      <title>DORA กฎหมาย AI ของ EU และอธิปไตยข้อมูล: สแต็คการปฏิบัติตามกฎปี 2026 ของธนาคาร</title>
+      <link>https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
+      <description>DORA กฎหมาย AI ของ EU GDPR ความเสี่ยงการกระจุกตัวของคลาวด์ และอธิปไตยข้อมูลกำลังหลอมรวมเป็นสแต็คการปฏิบัติตามกฎเดียวสำหรับธนาคารในปี 2026 คำถามเชิงกลยุทธ์คือวินัยในการออกแบบสถาปัตยกรรม</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>DORA 2026</category>
+      <category>กฎหมาย AI ของ EU 2026</category>
+      <category>อธิปไตยข้อมูลของธนาคาร</category>
+      <category>ความยืดหยุ่นการปฏิบัติงาน</category>
+      <category>ความเสี่ยงการกระจุกตัวของคลาวด์</category>
+      <category>การปฏิบัติตามกฎ AI บริการการเงิน</category>
+      <category>AI ความเสี่ยงสูง</category>
+    </item>
     <item>
       <title>AI ในฐานะระบบปฏิบัติการของการชำระเงิน: ฉ้อโกง เส้นทาง ยืดหยุ่น ปฏิบัติตามกฎ 2026</title>
       <link>https://sebastienrousseau.com/th/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</link>

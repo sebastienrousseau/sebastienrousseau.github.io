@@ -1,12 +1,12 @@
 {
-  "banner_alt": "은행 운영에서의 AI 에이전트",
-  "subtitle": "에이전트 AI는 이미 은행 운영을 재편하고 있습니다",
-  "description": "에이전트 AI는 이미 은행 운영을 재편하고 있습니다. 본 설계도는 거버넌스, 보안, 운영 모델을 제시합니다.",
-  "language": "ko-KR",
-  "date": "May 17, 2026",
-  "locale": "ko_KR",
-  "banner": "https://cloudcdn.pro/stocks/images/aron-visuals-bN5XdU-bap4-unsplash.webp",
-  "last_reviewed": "2026-05-16",
   "title": "에이전트 엔지니어링: 은행을 위한 2026년 설계도",
-  "keywords": "에이전트 AI, AI 에이전트, 은행 자동화, MCP, 멀티 에이전트, 에이전트형 상거래, AI 거버넌스, AI 보안"
+  "subtitle": "에이전트 AI는 이미 은행 운영을 재편하고 있습니다",
+  "last_reviewed": "2026-05-16",
+  "description": "에이전트 AI는 이미 은행 운영을 재편하고 있습니다. 본 설계도는 거버넌스, 보안, 운영 모델을 제시합니다.",
+  "date": "May 17, 2026",
+  "keywords": "에이전트 AI, AI 에이전트, 은행 자동화, MCP, 멀티 에이전트, 에이전트형 상거래, AI 거버넌스, AI 보안",
+  "language": "ko-KR",
+  "banner_alt": "은행 운영에서의 AI 에이전트",
+  "banner": "https://cloudcdn.pro/stocks/images/aron-visuals-bN5XdU-bap4-unsplash.webp",
+  "locale": "ko_KR"
 }

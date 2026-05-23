@@ -1,6 +1,25 @@
 {
-  "count": 55,
+  "count": 56,
   "posts": [
+    {
+      "slug": "2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026",
+      "url": "https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html",
+      "date": "2026-05-28",
+      "title": "DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks",
+      "description": "DORA, the EU AI Act, GDPR, cloud concentration risk, and data sovereignty are converging into one 2026 compliance stack for banks.",
+      "keywords": [
+        "DORA 2026",
+        "EU AI Act 2026",
+        "data sovereignty banks",
+        "operational resilience",
+        "cloud concentration risk",
+        "financial services AI compliance",
+        "high risk AI"
+      ],
+      "banner": "https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80",
+      "topics": [],
+      "language": "en-GB"
+    },
     {
       "slug": "2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026",
       "url": "https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html",

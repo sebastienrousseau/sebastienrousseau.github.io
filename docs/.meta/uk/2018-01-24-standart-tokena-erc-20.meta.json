@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Вимкнений ноутбук на коричневому дерев'яному столі",
   "keywords": "ethereum, erc20, eip, токени, контракти, blockchain, криптовалюти, smart-token, solidity",
+  "subtitle": "Токени ERC-20, смарт-контракти Ethereum та стандартизація цифрових активів.",
+  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
+  "banner_alt": "Вимкнений ноутбук на коричневому дерев'яному столі",
+  "locale": "uk_UA",
+  "date": "Jan 24, 2018",
   "title": "[UK DRAFT] ERC-20: The Ethereum Token Interface That Changed the World",
   "description": "ERC-20 — найпоширеніший стандарт токенів у блокчейні Ethereum, відомий як цифровий смарт-контракт, що революціонізував обіг цифрових активів.",
-  "date": "Jan 24, 2018",
-  "locale": "uk_UA",
-  "language": "uk-UA",
-  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
-  "subtitle": "Токени ERC-20, смарт-контракти Ethereum та стандартизація цифрових активів."
+  "language": "uk-UA"
 }

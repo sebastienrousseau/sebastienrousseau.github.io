@@ -6,8 +6,24 @@
     <description>Articole în limba română: IA aplicată, plăți ISO 20022, criptografie post-cuantică și transformarea plăților wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/ro/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ro-RO</language>
-    <lastBuildDate>Wed, 27 May 2026 22:09:52 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Toate drepturile rezervate.</copyright>
+    <item>
+      <title>DORA, EU AI Act și suveranitatea datelor: stiva de conformitate bancară 2026</title>
+      <link>https://sebastienrousseau.com/ro/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
+      <description>DORA, EU AI Act, GDPR, riscul de concentrare cloud și suveranitatea datelor converg într-o singură stivă de conformitate bancară pentru 2026.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>DORA 2026</category>
+      <category>EU AI Act 2026</category>
+      <category>suveranitatea datelor bănci</category>
+      <category>reziliență operațională</category>
+      <category>risc de concentrare cloud</category>
+      <category>conformitate AI servicii financiare</category>
+      <category>AI cu risc ridicat</category>
+    </item>
     <item>
       <title>AI ca sistem de operare al plăților: fraudă, rutare, reziliență și conformitate în 2026</title>
       <link>https://sebastienrousseau.com/ro/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</link>
