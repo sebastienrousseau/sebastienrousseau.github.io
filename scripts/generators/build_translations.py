@@ -736,6 +736,135 @@ def _ensure_fr_description_map() -> dict[str, str]:
     return _FR_DESCRIPTION_MAP
 
 
+# ---------------------------------------------------------------------------
+# Per-locale newsroom-card overrides
+#
+# The EN homepage and /articles/ listing render each article as a
+# ``<article class="newsroom-card">`` block whose excerpt + eyebrow are
+# baked-in EN strings. When we fork those pages for a locale, the
+# default flow is:
+#
+#   * ``rewrite_newsroom_card_titles`` replaces the <h3> title with the
+#     locale title (read from ``_posts/<lang>/<slug>.md`` frontmatter)
+#   * ``rewrite_en_descs_in_text`` replaces any verbatim EN description
+#     with its locale equivalent
+#   * static-pattern token patches translate isolated EN nouns
+#     ("April" → "avril", etc.)
+#
+# That left two leaks on every locale homepage card:
+#
+#   1. ``<p class="newsroom-excerpt">`` — comes from the EN article's
+#      ``excerpt:`` frontmatter, which is a different field from
+#      ``description:`` and so never gets swapped. Token patches half-
+#      translate it (e.g. "The UK Payments Forward Plan and avril 2026
+#      policy package set out a single framework…").
+#   2. ``<span class="newsroom-eyebrow">`` — derived from the EN
+#      ``tags:`` field and rendered as smart-cased English.
+#
+# These two maps + ``_smart_title_for_eyebrow`` close the gap by
+# pulling the locale article's own ``excerpt:`` and ``tags:`` from
+# ``_posts/<lang>/*.md`` and substituting them into the card markup at
+# build time.
+# ---------------------------------------------------------------------------
+
+
+def _build_fr_excerpt_map() -> dict[str, str]:
+    """Walk every ``_posts/<lang>/*.md`` and return ``en_slug -> locale
+    excerpt`` so newsroom-card excerpts on the locale homepage and
+    listing pages can be swapped to the locale's own frontmatter
+    ``excerpt:`` field."""
+    out: dict[str, str] = {}
+    if not SRC.is_dir():
+        return out
+    for md in SRC.glob("*.md"):
+        if not _DATED_RE.match(md.stem):
+            continue
+        en = FR_TO_EN.get(md.stem, md.stem)
+        fm, _ = parse_frontmatter(md.read_text(encoding="utf-8"))
+        excerpt = fm.get("excerpt")
+        if excerpt:
+            out[en] = excerpt
+    return out
+
+
+_FR_EXCERPT_MAP: dict[str, str] = {}
+
+
+def _ensure_fr_excerpt_map() -> dict[str, str]:
+    if not _FR_EXCERPT_MAP:
+        _FR_EXCERPT_MAP.update(_build_fr_excerpt_map())
+    return _FR_EXCERPT_MAP
+
+
+# Acronyms preserved in their canonical casing inside the eyebrow.
+# Mirrors ``scripts/postbuild/regen_homepage.py`` so the EN homepage
+# (rendered there) and locale homepage cards (rendered here) keep the
+# same conventions for acronym handling.
+_EYEBROW_ACRONYMS = {
+    "AI", "AML", "API", "BIS", "BoE", "CBDC", "CBPR", "CSP", "CTO", "DLT",
+    "DORA", "DSS", "ECB", "EU", "EUR", "FCA", "FedNow", "FX", "G20", "G7",
+    "GDPR", "GENIUS", "GMT", "GBP", "HMRC", "HMT", "HM", "HSBC", "HSM",
+    "ICT", "IETF", "ISO", "JP", "JPM", "KYC", "LLM", "ML", "MPP", "MT",
+    "MTS", "MX", "NCSC", "NIS2", "NIST", "PIN", "PISP", "PoC", "PQC",
+    "PSP", "PSR", "PSU", "QKD", "RTGS", "RTP", "SaaS", "SEPA", "SFTP",
+    "SLA", "SWIFT", "SDX", "TIC", "TMS", "TLS", "UK", "UN", "US", "USD",
+    "UX", "VC", "WCAG", "XML", "JSON-LD", "PII", "JSON", "YAML", "TOML",
+    "HTML", "CSS", "PWA", "BST", "UTC", "USDC", "USDT", "BRSRV", "BSTBL",
+    "MMF",
+}
+
+
+def _smart_title_for_eyebrow(token: str) -> str:
+    """Title-case a single word but preserve known acronyms in their
+    canonical casing. ``.title()`` would butcher ``UK`` into ``Uk``."""
+    if token.upper() in _EYEBROW_ACRONYMS:
+        return token.upper()
+    if any(c.isupper() for c in token[1:]):
+        # Mixed-case (e.g. "FedNow") — trust the source.
+        return token
+    return token.title()
+
+
+def _eyebrow_from_locale_tags(tags: str) -> str:
+    """First three comma-separated tags from the locale article's
+    ``tags:`` frontmatter field, smart-cased per ``_EYEBROW_ACRONYMS``,
+    joined with ' · '. Mirrors ``regen_homepage.py``'s eyebrow rule so
+    EN and locale homepages stay visually consistent."""
+    parts = [t.strip() for t in tags.split(",") if t.strip()][:3]
+    return " · ".join(
+        " ".join(_smart_title_for_eyebrow(w) for w in p.split())
+        for p in parts
+    )
+
+
+def _build_fr_eyebrow_map() -> dict[str, str]:
+    """Walk every ``_posts/<lang>/*.md`` and return ``en_slug -> locale
+    eyebrow string`` so newsroom-card eyebrows can be swapped to a
+    locale-derived label instead of the smart-cased EN tags."""
+    out: dict[str, str] = {}
+    if not SRC.is_dir():
+        return out
+    for md in SRC.glob("*.md"):
+        if not _DATED_RE.match(md.stem):
+            continue
+        en = FR_TO_EN.get(md.stem, md.stem)
+        fm, _ = parse_frontmatter(md.read_text(encoding="utf-8"))
+        tags = fm.get("tags") or ""
+        eyebrow = _eyebrow_from_locale_tags(tags)
+        if eyebrow:
+            out[en] = eyebrow
+    return out
+
+
+_FR_EYEBROW_MAP: dict[str, str] = {}
+
+
+def _ensure_fr_eyebrow_map() -> dict[str, str]:
+    if not _FR_EYEBROW_MAP:
+        _FR_EYEBROW_MAP.update(_build_fr_eyebrow_map())
+    return _FR_EYEBROW_MAP
+
+
 _EN_DESC_TO_FR_RE_CACHE: re.Pattern[str] | None = None
 _EN_DESC_TO_FR_MAP_CACHE: dict[str, str] | None = None
 
@@ -908,52 +1037,101 @@ def rewrite_fr_link_titles(html: str) -> str:
 
 
 _NEWSROOM_CARD_RE = re.compile(
-    r'(<article class="newsroom-card[^"]*">)([\s\S]*?)(</article>)',
+    # Tolerate both ``class="newsroom-card"`` and the minified
+    # ``class=newsroom-card`` forms — the HTML minifier strips quotes
+    # off attributes whose values lack whitespace/special chars.
+    r'(<article\s[^>]*class\s*=\s*(?:"newsroom-card[^"]*"|newsroom-card[^\s>]*)[^>]*>)([\s\S]*?)(</article>)',
 )
 
 
 def rewrite_newsroom_card_titles(html: str) -> str:
-    """On FR listing pages (papers, projects, tags, topics, …) the
-    ``newsroom-card`` markup carries EN titles inside ``<h3><a>…</a></h3>``.
-    Look up the FR title from the slug and overwrite."""
+    """On locale listing pages (papers, projects, tags, topics, homepage, …)
+    the ``newsroom-card`` markup is forked from the EN shell. Each card
+    carries EN content for the title, excerpt and eyebrow which would
+    otherwise leak through token-level patches only — see the comment
+    on ``_build_fr_excerpt_map`` for the leak this closes.
+
+    For each card whose href identifies the article, look up:
+      - locale title       (frontmatter ``title:``)        → <h3><a>
+      - locale title       (escaped)                       → aria-label + title=
+      - locale excerpt     (frontmatter ``excerpt:``)      → <p class="newsroom-excerpt">
+      - locale eyebrow     (first 3 ``tags:`` smart-cased) → <span class="newsroom-eyebrow">
+
+    A missing locale field leaves the corresponding EN value in place
+    — partial localisation is still an improvement over none."""
     fr_titles = _ensure_fr_title_map()
+    fr_excerpts = _ensure_fr_excerpt_map()
+    fr_eyebrows = _ensure_fr_eyebrow_map()
 
     def patch(m: re.Match[str]) -> str:
         open_tag, inner, close_tag = m.group(1), m.group(2), m.group(3)
+        # Match the article href in both quoted and unquoted-attribute
+        # forms — the HTML minifier strips quotes off attribute values
+        # that don't need them (no whitespace, no special chars).
         slug_m = re.search(
-            r'href="(?:https?://sebastienrousseau\.com)?/fr/([a-z0-9-]+)/(?:index\.html)?"',
+            r'href\s*=\s*(?:"(?:https?://sebastienrousseau\.com)?/'
+            + re.escape(LANG_CODE)
+            + r'/([a-z0-9-]+)/(?:index\.html)?"'
+            + r'|(?:https?://sebastienrousseau\.com)?/'
+            + re.escape(LANG_CODE)
+            + r'/([a-z0-9-]+)/(?:index\.html)?(?=[\s>]))',
             inner,
         )
         if not slug_m:
             return m.group(0)
-        en = FR_TO_EN.get(slug_m.group(1))
+        slug = slug_m.group(1) or slug_m.group(2)
+        en = FR_TO_EN.get(slug)
         if not en:
             return m.group(0)
+
         fr_title = fr_titles.get(en)
-        if not fr_title:
-            return m.group(0)
-        esc = _html.escape(fr_title, quote=True)
-        # <h3>…<a>TITLE</a>… inner text.
-        inner = re.sub(
-            r'(<h3[^>]*>\s*<a [^>]+>)[^<]+(</a>)',
-            rf'\g<1>{_html.escape(fr_title)}\g<2>',
-            inner,
-            count=1,
-        )
-        # aria-label on media link.
-        inner = re.sub(
-            r'(<a [^>]*class="newsroom-card-media"[^>]*aria-label=")[^"]+(")',
-            rf'\g<1>{esc}\g<2>',
-            inner,
-            count=1,
-        )
-        # title= on the same link.
-        inner = re.sub(
-            r'(<a [^>]*class="newsroom-card-media"[^>]*title=")[^"]+(")',
-            rf'\g<1>{esc}\g<2>',
-            inner,
-            count=1,
-        )
+        fr_excerpt = fr_excerpts.get(en)
+        fr_eyebrow = fr_eyebrows.get(en)
+
+        if fr_title:
+            esc = _html.escape(fr_title, quote=True)
+            # <h3>…<a>TITLE</a>… inner text.
+            inner = re.sub(
+                r'(<h3[^>]*>\s*<a [^>]+>)[^<]+(</a>)',
+                rf'\g<1>{_html.escape(fr_title)}\g<2>',
+                inner,
+                count=1,
+            )
+            # aria-label on media link.
+            inner = re.sub(
+                r'(<a [^>]*class="newsroom-card-media"[^>]*aria-label=")[^"]+(")',
+                rf'\g<1>{esc}\g<2>',
+                inner,
+                count=1,
+            )
+            # title= on the same link.
+            inner = re.sub(
+                r'(<a [^>]*class="newsroom-card-media"[^>]*title=")[^"]+(")',
+                rf'\g<1>{esc}\g<2>',
+                inner,
+                count=1,
+            )
+
+        if fr_excerpt:
+            # <p class="newsroom-excerpt">…</p> — tolerate the minified
+            # output's unquoted class attribute (``class=newsroom-excerpt``).
+            inner = re.sub(
+                r'(<p\s[^>]*class\s*=\s*(?:"newsroom-excerpt"|newsroom-excerpt)[^>]*>)[^<]*(</p>)',
+                rf'\g<1>{_html.escape(fr_excerpt)}\g<2>',
+                inner,
+                count=1,
+            )
+
+        if fr_eyebrow:
+            # <span class="newsroom-eyebrow">…</span> — same minifier
+            # consideration as above.
+            inner = re.sub(
+                r'(<span\s[^>]*class\s*=\s*(?:"newsroom-eyebrow"|newsroom-eyebrow)[^>]*>)[^<]*(</span>)',
+                rf'\g<1>{_html.escape(fr_eyebrow)}\g<2>',
+                inner,
+                count=1,
+            )
+
         return open_tag + inner + close_tag
 
     return _NEWSROOM_CARD_RE.sub(patch, html)
@@ -2005,12 +2183,15 @@ def _bind_lang(code: str) -> None:
     _HOME_FR_COMPILED = [(re.compile(p), r) for p, r in HOME_FR_PATCHES]
     _STATIC_BODY_COMPILED = [(re.compile(p), r) for p, r in STATIC_BODY_PATCHES]
     # Clear every per-language lazy cache so the second pass doesn't
-    # inherit the first language's title / description / regex tables.
-    global _FR_TITLE_MAP, _FR_DESCRIPTION_MAP
+    # inherit the first language's title / description / excerpt /
+    # eyebrow / regex tables.
+    global _FR_TITLE_MAP, _FR_DESCRIPTION_MAP, _FR_EXCERPT_MAP, _FR_EYEBROW_MAP
     global _EN_DESC_TO_FR_RE_CACHE, _EN_DESC_TO_FR_MAP_CACHE
     global _EN_TITLES_TO_FR_RE_CACHE, _EN_TITLE_TO_FR_MAP_CACHE
     _FR_TITLE_MAP.clear()
     _FR_DESCRIPTION_MAP.clear()
+    _FR_EXCERPT_MAP.clear()
+    _FR_EYEBROW_MAP.clear()
     _EN_DESC_TO_FR_RE_CACHE = None
     _EN_DESC_TO_FR_MAP_CACHE = None
     _EN_TITLES_TO_FR_RE_CACHE = None
