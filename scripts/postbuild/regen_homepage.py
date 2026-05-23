@@ -28,7 +28,6 @@ from __future__ import annotations
 import html
 import re
 import sys
-from datetime import date as _date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -40,10 +39,10 @@ _GRID_RE = re.compile(
     r'(<div class="newsroom-grid feat-latest-grid">)(.*?)(</div>\s*\n\s*<div class="feat-cta-row">)',
     re.DOTALL,
 )
-_MONTHS = (
-    "January February March April May June "
-    "July August September October November December"
-).split()
+_MONTHS = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December",
+]
 
 
 def _display_date(y: int, m: int, d: int) -> str:
@@ -188,7 +187,7 @@ def main() -> int:
         count=1,
     )
     if new_text == text:
-        print(f"regen_homepage: 6 cards rendered, no change.")
+        print("regen_homepage: 6 cards rendered, no change.")
         return 0
     INDEX.write_text(new_text, encoding="utf-8")
     top_titles = [c[4].get("title", c[0])[:40] for c in cards]
