@@ -170,6 +170,80 @@ def read_frontmatter(slug: str) -> dict[str, str]:
     return _core_read_frontmatter(POSTS / f"{slug}.md")
 
 
+_DATED_FILE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-.+\.md$")
+
+
+def _discover_frontmatter_topic_assignments() -> dict[str, list[str]]:
+    """Scan ``_posts/<date>-*.md`` for ``topic_clusters:`` frontmatter
+    entries and return ``{cluster_key: [slug, ...]}`` (slugs in
+    date-descending order so they sit at the top of each cluster after
+    merging).
+
+    Why: each article PR used to add itself to the relevant cluster(s)
+    by hand-editing the ``TOPICS`` dict in this file. Multiple stacked
+    PRs collided every time on those edits. Articles now self-assign
+    via frontmatter (``topic_clusters: "iso-20022-payments, applied-ai-banking"``)
+    and the merge happens at build time. PRs that don't set the field
+    just don't appear in any topic page — same as before.
+    """
+    out: dict[str, list[str]] = {}
+    if not POSTS.is_dir():
+        return out
+    dated: list[tuple[str, str, dict[str, str]]] = []
+    for md in POSTS.iterdir():
+        if not _DATED_FILE_RE.match(md.name):
+            continue
+        fm = _core_read_frontmatter(md)
+        if not fm:
+            continue
+        dated.append((md.stem[:10], md.stem, fm))
+    # Latest article first.
+    dated.sort(key=lambda r: r[0], reverse=True)
+    for _date, slug, fm in dated:
+        raw = (fm.get("topic_clusters") or "").strip()
+        if not raw:
+            continue
+        for cluster in (c.strip() for c in raw.split(",")):
+            if cluster:
+                out.setdefault(cluster, []).append(slug)
+    return out
+
+
+def _merge_frontmatter_assignments_into_topics() -> None:
+    """Prepend each cluster's discovered slugs (already date-descending)
+    onto the front of its hand-curated ``TOPICS[cluster]["slugs"]`` list,
+    deduping while preserving order so a slug never appears twice in the
+    same topic page."""
+    assignments = _discover_frontmatter_topic_assignments()
+    unknown_clusters: list[str] = []
+    for cluster, slugs in assignments.items():
+        if cluster not in TOPICS:
+            unknown_clusters.append(cluster)
+            continue
+        existing: list[str] = list(TOPICS[cluster]["slugs"])  # type: ignore[arg-type]
+        merged: list[str] = []
+        seen: set[str] = set()
+        for s in slugs + existing:
+            if s in seen:
+                continue
+            seen.add(s)
+            merged.append(s)
+        TOPICS[cluster]["slugs"] = merged
+    if unknown_clusters:
+        # Don't hard-fail — an article referencing an unknown cluster
+        # is recoverable (drop the bad reference at merge time). But
+        # surface it so the typo gets caught.
+        for c in sorted(set(unknown_clusters)):
+            print(
+                f"build_topics: warning — article frontmatter references "
+                f"unknown topic_cluster '{c}'; skipping.",
+                file=sys.stderr,
+            )
+
+
+_merge_frontmatter_assignments_into_topics()
+
+
 def _format_date(iso_like: str) -> str:
     """Render a post 'date' frontmatter value as YYYY-MM-DD for <time>."""
     from datetime import datetime as _dt
