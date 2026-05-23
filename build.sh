@@ -19,6 +19,21 @@ set -euo pipefail
 SERVE=0
 [[ "${1:-}" == "--serve" ]] && SERVE=1
 
+# Regenerate listings that are derived from `_posts/` on every build so
+# article PRs can ship as additive-only diffs (just the new article
+# source + 27 locale translations, no homepage rotation, no slug-map
+# edits). Without these regens, each PR would have to hand-edit the
+# same shared files and stacked PRs would collide.
+#
+#   - regen_slug_maps.py rewrites `_data/i18n/<lang>/slugs.json` from
+#     the actual `_posts/<lang>/*.md` filenames.
+#   - regen_homepage.py rewrites the 6-card grid in `_posts/index.md`
+#     from the top-6 most recent dated EN posts.
+#
+# Both are idempotent: a no-op rebuild leaves the working tree clean.
+python3 scripts/postbuild/regen_slug_maps.py
+python3 scripts/postbuild/regen_homepage.py
+
 ssg -n=docs -c=_posts -t=_layouts -o=public
 
 # Static Site Generator doesn't pick up theme-init.js as a managed asset; we ship it as-is.
