@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Agentic payments architecture diagram showing AI agents, consent mandates, tokenised credentials, card networks, banks, merchants, and audit trails"
+banner_alt: "代理支付架构图，展示AI代理、授权委托、代币化凭证、卡网络、银行、商户及审计追踪"
 banner_height: "571"
 banner_width: "1425"
 banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80"

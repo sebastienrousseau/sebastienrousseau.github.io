@@ -1,13 +1,13 @@
 ---
 title: "[ID DRAFT] Alien Studio: My Tech-to Art Journey in Photography"
-subtitle: "The Beginnings of a Technological Odyssey"
-description: "Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio."
+subtitle: "Awal dari Sebuah Odisea Teknologi"
+description: "Ikuti perjalanan pribadi saya dari Rust, AI, dan Quantum Computing hingga mendefinisikan ulang seni dan fotografi melalui Alien Studio."
 date: "Jan 15, 2024"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp"
-banner_alt: "Sunset's muse, a serene glance; beauty in stillness"
-keywords: "personal tech journey, Rust discovery, AI exploration, Quantum Computing, art and photography fusion, Alien Studio, digital art creation, technology in art, innovative photography, artistic rediscovery"
+banner_alt: "Inspirasi senja, tatapan tenang; keindahan dalam keheningan"
+keywords: "perjalanan teknologi pribadi, penemuan Rust, eksplorasi AI, Quantum Computing, perpaduan seni dan fotografi, Alien Studio, pembuatan seni digital, teknologi dalam seni, fotografi inovatif, penemuan kembali artistik"
 ---
 
 ![Sunset's muse, a serene glance; beauty in stillness](https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp).class=\"img-fluid clearfix\"

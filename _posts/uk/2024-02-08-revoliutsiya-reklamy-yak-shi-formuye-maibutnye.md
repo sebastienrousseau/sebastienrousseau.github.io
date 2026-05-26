@@ -1,13 +1,13 @@
 ---
 title: "[UK DRAFT] Generative AI in Advertising: Amazon Rufus & Meta"
-subtitle: "How AI Transforms Consumer Interactions and Advertising Dynamics"
-description: "Explore how AI transforms advertising with insights on Amazon's Rufus and Meta's latest developments. Discover the impact on consumer engagement"
+subtitle: "Як AI Трансформує Взаємодію зі Споживачами та Динаміку Реклами"
+description: "Дізнайтесь, як AI трансформує рекламу: аналіз Rufus від Amazon та останніх розробок Meta. Відкрийте вплив на залученість споживачів у цифровому маркетингу"
 date: "Feb 08, 2024"
 language: "uk-UA"
 locale: "uk_UA"
 banner: "https://cloudcdn.pro/stocks/images/advertising-ai.webp"
-banner_alt: "A robotic woman with butterflies and flowers"
-keywords: "AI in advertising, Amazon Rufus, Meta AI tools, consumer targeting, advertising technology, AI chatbots, digital marketing trends, AI analytics, creative AI, ad campaign optimization"
+banner_alt: "Жінка-робот з метеликами та квітами"
+keywords: "AI у рекламі, Amazon Rufus, інструменти Meta AI, таргетування споживачів, рекламні технології, AI чат-боти, тенденції цифрового маркетингу, AI аналітика, творчий AI, оптимізація рекламних кампаній"
 ---
 
 ![A robotic woman with butterflies and flowers](https://cloudcdn.pro/stocks/images/advertising-ai.webp).class=\"img-fluid clearfix\"

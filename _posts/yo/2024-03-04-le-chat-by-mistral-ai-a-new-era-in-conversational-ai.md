@@ -1,13 +1,13 @@
 ---
 title: "Le Chat by Mistral AI: Multilingual Conversational AI"
-subtitle: "Redefining User Interaction Across Languages"
-description: "Meet Mistral AI's new multilingual Assistant. An advanced AI that can understand and respond in multiple languages, all in one conversation and in real-time."
+subtitle: "Atunto Ibaraẹnisọrọ Olumulo Kọja Awọn Ede"
+description: "Pade Oluranlọwọ tuntun ti Mistral AI ti o le sọrọ ede pupọ. AI giga ti o le ye àti dáhùn ní ede pupọ, gbogbo rẹ nínú ìjíròrò kan ní àkókò gidi."
 date: "Mar 04, 2024"
 language: "yo-NG"
 locale: "yo_NG"
 banner: "https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp"
-banner_alt: "Colourful, abstract digital art of a cat"
-keywords: "Le Chat AI, Mistral AI chatbot, Le Chat virtual assistant, Mistral AI language understanding, Le Chat AI customer service, Mistral AI enterprise solutions, Le Chat AI customisation, Mistral AI multilingual support, Le Chat AI-powered communication, Mistral AI AI-driven business solutions"
+banner_alt: "Aworan oni-nọmba awọ àti àáké ti ologbo kan"
+keywords: "Le Chat AI, chatbot Mistral AI, oluranlọwọ foju Le Chat, oye ede Mistral AI, iṣẹ onibara Le Chat AI, awọn ojutu iṣowo Mistral AI, ìfọwọ́sí Le Chat AI, atilẹyin ede pupọ Mistral AI, ibaraẹnisọrọ Le Chat AI, awọn ojutu iṣowo Mistral AI"
 ---
 
 ![Colourful, abstract digital art of a cat](https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp).class="img-fluid clearfix"

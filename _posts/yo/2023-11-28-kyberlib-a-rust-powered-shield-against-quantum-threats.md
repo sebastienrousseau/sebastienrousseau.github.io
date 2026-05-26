@@ -1,13 +1,13 @@
 ---
 title: "KyberLib: Rust CRYSTALS-Kyber for Post-Quantum"
-subtitle: "KyberLib, a robust Rust implementation of CRYSTALS-Kyber for the quantum era."
-description: "A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algorithm, to Protect Your Data from Quantum Threats and Cryptanalytic Attacks."
+subtitle: "KyberLib, imuse Rust ti o lagbara ti CRYSTALS-Kyber fun akoko kuantum."
+description: "Imuse cryptography CRYSTALS-Kyber ti o lagbara ati ailewu-kuantum, lati daabobo data rẹ lọwọ awọn irokeke kuantum ati ikọlu cryptanalytic."
 date: "Nov 28, 2023"
 language: "yo-NG"
 locale: "yo_NG"
 banner: "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
-banner_alt: "Empowering Secure Communications in the Quantum Era with KyberLib"
-keywords: "KyberLib, Rust CRYSTALS-Kyber, post-quantum cryptography, lattice-based cryptography, quantum-resistant key exchange, NIST FIPS 203, Sebastien Rousseau, KEM, payment authentication, PQC library"
+banner_alt: "Agbara Ibasọrọ Ailewu ni Akoko Kuantum pẹlu KyberLib"
+keywords: "KyberLib, Rust CRYSTALS-Kyber, cryptography lẹhin-kuantum, lattice-based cryptography, paṣipaarọ bọtini ti o daabobo lọwọ kuantum, NIST FIPS 203, Sebastien Rousseau, KEM, ìfẹsẹmúlẹ̀ isanwó, PQC library"
 ---
 
 ![Empowering Secure Communications in the Quantum Era with KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class="img-fluid clearfix"

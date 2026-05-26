@@ -1,13 +1,13 @@
 ---
 title: "Mathematical and Cryptographic Constants for Rust Security"
-subtitle: "Vetted mathematical and cryptographic constants for memory-safe Rust security."
-description: "Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code security."
+subtitle: "Constants na lissafi da cryptography da aka tabbatar don amincin memory-safe Rust."
+description: "Kare ingancin code da constants na lissafi da cryptography da aka tabbatar sosai, ƙarfafa amincin memory da concurrency don ƙara tsaro na code."
 date: "Nov 05, 2023"
 language: "ha-NG"
 locale: "ha_NG"
 banner: "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp"
-banner_alt: "Mathematics computation"
-keywords: "mathematical constants, cryptographic constants, Rust security, secure communication, encryption, RSA, elliptic curve cryptography, Common (CMN) library, Rust applications, mathematical computations"
+banner_alt: "Lissafin Mathematics"
+keywords: "constants na lissafi, constants na cryptography, Rust security, sadarwa mai aminci, encryption, RSA, elliptic curve cryptography, Common (CMN) library, Rust applications, lissafin lissafi"
 ---
 
 ![Mathematics computation](https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp).class="img-fluid clearfix"

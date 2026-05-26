@@ -1,13 +1,13 @@
 ---
 title: "EU's AI Act: Pioneering Ethical AI Regulation Worldwide"
-subtitle: "Navigating the Future of AI with the EU's Groundbreaking Legal Framework"
-description: "The EU AI Act sets the first comprehensive framework for ethical, risk-tiered AI regulation worldwide. What changes for banks, vendors and high-risk systems."
+subtitle: "Tafiya Zuwa Makomar AI tare da Tsarin Doka Mai Tarihi na EU"
+description: "EU AI Act ta kafa tsarin farko mai cikakken tsari na kula da AI ta hanyar da ta dace da ɗa'a da ƙayyadaddun haɗari a duniya. Abin da ya canza ga bankunan, masu siyarwa da tsarin haɗarin babba."
 date: "Feb 13, 2024"
 language: "ha-NG"
 locale: "ha_NG"
 banner: "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp"
-banner_alt: "A person sitting on black bench reading newspaper"
-keywords: "EU AI Act, Artificial Intelligence regulation, Ethical AI framework, AI risk management, AI innovation, AI transparency, AI consumer rights, AI governance, AI standards, AI ethics"
+banner_alt: "Mutum zaune a kan benci baƙi yana karanta jaridar"
+keywords: "EU AI Act, regulation na Artificial Intelligence, tsarin AI na ɗa'a, sarrafa haɗarin AI, sabuntawa na AI, gaskiya na AI, haƙƙoƙin masu amfani na AI, gudanarwa na AI, ƙa'idodin AI, ɗa'ar AI"
 ---
 
 ![A person sitting on black bench reading newspaper](https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp).class="img-fluid clearfix"

@@ -1,13 +1,13 @@
 ---
 title: "Alien Studio: My Tech-to Art Journey in Photography"
-subtitle: "The Beginnings of a Technological Odyssey"
-description: "Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio."
+subtitle: "Ibẹrẹ Irin-ajo Imọ-ẹrọ"
+description: "Darapọ mọ mi lori irin-ajo ti ara ẹni lati Rust, AI, ati Quantum Computing si atunṣafihan aworan ati fọtoyiya nipasẹ Alien Studio."
 date: "Jan 15, 2024"
 language: "yo-NG"
 locale: "yo_NG"
 banner: "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp"
-banner_alt: "Sunset's muse, a serene glance; beauty in stillness"
-keywords: "personal tech journey, Rust discovery, AI exploration, Quantum Computing, art and photography fusion, Alien Studio, digital art creation, technology in art, innovative photography, artistic rediscovery"
+banner_alt: "Atilẹyin oorun, oju aifọkanbalẹ; ẹwa ninu idakẹjẹ"
+keywords: "irin-ajo imọ-ẹrọ ti ara ẹni, wiwa Rust, iwadii AI, Quantum Computing, idapọ aworan ati fọtoyiya, Alien Studio, ẹda aworan oni-nọmba, imọ-ẹrọ ninu aworan, fọtoyiya tuntun, atunṣawari iṣẹ-ọnà"
 ---
 
 ![Sunset's muse, a serene glance; beauty in stillness](https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp).class="img-fluid clearfix"

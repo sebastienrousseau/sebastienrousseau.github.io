@@ -1,13 +1,13 @@
 ---
 title: "Google Gemma AI: Transforming Open-Source AI Development"
-subtitle: "An Inside Look at Capabilities, Open Source Contributions, and What's Ahead"
-description: "Explore Google's Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use."
+subtitle: "Duba Ciki kan Iyawa, Gudummawar Buɗaɗɗen Tushe, da Abin da ke Zuwa"
+description: "Bincika Samfurin AI na Google Gemma: Aikin buɗaɗɗen tushe wanda ke bayar da mafita na AI na ɗabi'a don amfanin mutum ɗaya da kamfanoni."
 date: "Feb 26, 2024"
 language: "ha-NG"
 locale: "ha_NG"
 banner: "https://cloudcdn.pro/stocks/images/ai-ship.webp"
-banner_alt: "Futuristic blue spaceship with neon lights"
-keywords: "Google Gemma AI, open-source AI model, Gemma technical architecture, Gemma 2B 7B, ethical AI, AI integration macOS, AI enterprise solutions, conversational AI, data analysis AI, AI for edge devices"
+banner_alt: "Jirgin sama na nan gaba mai launin shuɗi tare da fitilu na neon"
+keywords: "Google Gemma AI, samfurin AI na buɗaɗɗen tushe, ginin fasaha na Gemma, Gemma 2B 7B, AI na ɗabi'a, haɗa AI macOS, mafita na AI na kasuwanci, AI mai tattaunawa, AI nazarin bayanai, AI don na'urori na gefen hanyar sadarwa"
 ---
 
 ![Futuristic blue spaceship with neon lights](https://cloudcdn.pro/stocks/images/ai-ship.webp).class="img-fluid clearfix"

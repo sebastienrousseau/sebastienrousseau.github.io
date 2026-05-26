@@ -1,13 +1,13 @@
 ---
 title: "OpenVoice: Leading Innovation in Voice Cloning Technology"
-subtitle: "The Next-Gen Open-Source Voice Cloning Tool"
+subtitle: "Ohun èlò Open-Source Tuntun fún Ìdàkọ Ohùn"
 description: "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing."
 date: "Apr 01, 2024"
 language: "yo-NG"
 locale: "yo_NG"
 banner: "https://cloudcdn.pro/stocks/images/open-voice.webp"
-banner_alt: "Banner of Vibrant gradient overlay on repeated profiles"
-keywords: "OpenVoice, Voice Cloning Technology, AI Synthetic Speech, Open-Source Voice Cloning, Cross-Lingual Voice Synthesis, Instant Voice Cloning, Voice Style Control, Accessibility Voice Tech, Entertainment Industry Voices, Customer Service Voice AI"
+banner_alt: "Àmì pẹ̀lú gradient dídán tí ó bo àwọn awòrán tí a tún ṣe"
+keywords: "OpenVoice, Ìmọ̀ Ìdàkọ Ohùn, AI Ọ̀rọ̀ Àgbékalẹ̀, Ìdàkọ Ohùn Open-Source, Ìṣọpọ̀ Ohùn Gba Èdè, Ìdàkọ Ohùn Lẹ́sẹ̀kẹsẹ̀, Ìdarí Ìpapọ̀ Ohùn, Ìmọ̀ Ohùn fún Àánú, Ohùn fún Iléeṣẹ́ Eré Idaraya, AI Ohùn fún Iṣẹ́ Onibára"
 ---
 
 ![Banner of Vibrant gradient overlay on repeated profiles](https://cloudcdn.pro/stocks/images/open-voice.webp).class="img-fluid clearfix"

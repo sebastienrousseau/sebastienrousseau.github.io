@@ -1,13 +1,13 @@
 ---
 title: "Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded"
-subtitle: "Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two products that are not, legally, stablecoins — and that can pay yield, in a wallet, on a public blockchain."
-description: "Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two SEC registrations for products that solve this constraint by being regulated as money market funds rather than stablecoins — while behaving, in the wallet, like yield-bearing dollars. A close reading of BRSRV, BSTBL, and the OCC rulemaking they respond to."
+subtitle: "Stablecoin-urile nu pot plăti dobândă conform GENIUS Act. Pe 8 mai 2026, BlackRock a depus două produse care, juridic, nu sunt stablecoins — și care pot plăti randament, într-un portofel, pe un blockchain public."
+description: "Stablecoin-urile nu pot plăti dobândă conform GENIUS Act. Pe 8 mai 2026, BlackRock a depus la SEC BRSRV și BSTBL — fonduri monetare reglementate care oferă randament în portofel pe blockchain, nu stablecoins."
 date: "May 15, 2026"
 language: "ro-RO"
 locale: "ro_RO"
 banner: "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp"
-banner_alt: "BlackRock tokenised money market fund architecture diagram — BRSRV OnChain Shares and BSTBL ERC-20 share class with GENIUS Act reserve flows"
-keywords: "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoin, tokenised money market fund, OnChain Shares, Securitize"
+banner_alt: "Diagramă arhitecturală a fondului monetar tokenizat BlackRock — BRSRV OnChain Shares și clasa de acțiuni BSTBL ERC-20 cu fluxurile de rezerve GENIUS Act"
+keywords: "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoin, fond monetar tokenizat, OnChain Shares, Securitize"
 ---
 
 ![BlackRock tokenised money market fund architecture diagram — BRSRV OnChain Shares and BSTBL ERC-20 share class with GENIUS Act reserve flows](https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp).class="img-fluid clearfix"

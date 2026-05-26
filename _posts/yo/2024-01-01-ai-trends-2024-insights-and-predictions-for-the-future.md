@@ -1,13 +1,13 @@
 ---
 title: "AI Trends 2024: Insights and Predictions for the Future"
-subtitle: "A Pivotal Year for Tech, Society, and Ethical Evolution"
-description: "AI trends for 2024: generative AI in finance, multimodal models, on-device LLMs and the shifts that will reshape banking and product engineering."
+subtitle: "Ọdún Pàtàkì fún Ìmọ̀-ẹ̀rọ, Àwùjọ, àti Ìdàgbàsókè Ìwà-rere"
+description: "Awọn aṣa AI fún 2024: AI ìpilẹ̀ṣẹ̀ nínú ìnáwó, àwọn awoṣe multimodal, LLM lórí ẹ̀rọ àti àwọn ìyípadà tí yóò tún ṣe àpẹ̀rẹ̀ ilé-ìfowópamọ́ àti ìmọ̀-ẹ̀rọ ọjà."
 date: "Jan 08, 2024"
 language: "yo-NG"
 locale: "yo_NG"
 banner: "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp"
-banner_alt: "Drone View of London"
-keywords: "AI trends 2024, generative AI, AI in education, AI cybersecurity, AI finance, AI content creation, AI space exploration, ethical AI, AI in retail, AI analytics"
+banner_alt: "Ìwòye Drone ti Ìlú Lọndọnu"
+keywords: "awọn aṣa AI 2024, AI ìpilẹ̀ṣẹ̀, AI nínú ẹ̀kọ́, ààbò cyber AI, AI nínú ìnáwó, ẹ̀dá àkóónú AI, ìwádìí àyè AI, AI ìwà-rere, AI nínú títa, ìtúpalẹ̀ AI"
 ---
 
 ![Drone View of London](https://cloudcdn.pro/stocks/images/drone-view-of-london.webp).class="img-fluid clearfix"

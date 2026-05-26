@@ -1,13 +1,13 @@
 ---
 title: "[ID DRAFT] AI Trends 2024: Insights and Predictions for the Future"
-subtitle: "A Pivotal Year for Tech, Society, and Ethical Evolution"
-description: "AI trends for 2024: generative AI in finance, multimodal models, on-device LLMs and the shifts that will reshape banking and product engineering."
+subtitle: "Tahun Penting bagi Teknologi, Masyarakat, dan Evolusi Etika"
+description: "Tren AI 2024: generative AI di bidang keuangan, model multimodal, LLM on-device, dan pergeseran yang akan mengubah perbankan serta rekayasa produk secara mendasar."
 date: "Jan 08, 2024"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp"
-banner_alt: "Drone View of London"
-keywords: "AI trends 2024, generative AI, AI in education, AI cybersecurity, AI finance, AI content creation, AI space exploration, ethical AI, AI in retail, AI analytics"
+banner_alt: "Pemandangan Drone Kota London"
+keywords: "tren AI 2024, generative AI, AI dalam pendidikan, keamanan siber AI, AI keuangan, pembuatan konten AI, eksplorasi luar angkasa AI, AI etis, AI dalam ritel, analitik AI"
 ---
 
 ![Drone View of London](https://cloudcdn.pro/stocks/images/drone-view-of-london.webp).class=\"img-fluid clearfix\"

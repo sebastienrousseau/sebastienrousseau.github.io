@@ -1,13 +1,13 @@
 ---
 title: "AI Trends 2024: Insights and Predictions for the Future"
-subtitle: "A Pivotal Year for Tech, Society, and Ethical Evolution"
-description: "AI trends for 2024: generative AI in finance, multimodal models, on-device LLMs and the shifts that will reshape banking and product engineering."
+subtitle: "Un An Decisiv pentru Tehnologie, Societate și Evoluție Etică"
+description: "Tendințe AI 2024: AI generativ în finanțe, modele multimodale, LLM-uri pe dispozitiv și schimbările care vor redefini sectorul bancar și ingineria produselor."
 date: "Jan 08, 2024"
 language: "ro-RO"
 locale: "ro_RO"
 banner: "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp"
-banner_alt: "Drone View of London"
-keywords: "AI trends 2024, generative AI, AI in education, AI cybersecurity, AI finance, AI content creation, AI space exploration, ethical AI, AI in retail, AI analytics"
+banner_alt: "Vedere cu drona asupra Londrei"
+keywords: "tendințe AI 2024, AI generativ, AI în educație, securitate cibernetică AI, AI în finanțe, creare conținut AI, explorare spațială AI, AI etic, AI în retail, analiză AI"
 ---
 
 ![Drone View of London](https://cloudcdn.pro/stocks/images/drone-view-of-london.webp).class="img-fluid clearfix"

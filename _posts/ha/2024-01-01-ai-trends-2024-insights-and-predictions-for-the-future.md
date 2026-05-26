@@ -1,13 +1,13 @@
 ---
 title: "AI Trends 2024: Insights and Predictions for the Future"
-subtitle: "A Pivotal Year for Tech, Society, and Ethical Evolution"
-description: "AI trends for 2024: generative AI in finance, multimodal models, on-device LLMs and the shifts that will reshape banking and product engineering."
+subtitle: "Shekara Mai Muhimmanci ga Fasaha, Al'umma, da Juyin ɗabi'a"
+description: "Abubuwan da suka fi muhimmanci na AI na 2024: generative AI a harkar kuɗi, ƙirar multimodal, LLMs na na'ura, da sauye-sauyen da za su sake fasalin banki da injiniyancin kayayyaki."
 date: "Jan 08, 2024"
 language: "ha-NG"
 locale: "ha_NG"
 banner: "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp"
-banner_alt: "Drone View of London"
-keywords: "AI trends 2024, generative AI, AI in education, AI cybersecurity, AI finance, AI content creation, AI space exploration, ethical AI, AI in retail, AI analytics"
+banner_alt: "Kallon Drone na Birnin London"
+keywords: "AI trends 2024, generative AI, AI a ilimi, AI cybersecurity, AI a harkar kuɗi, AI ƙirƙirar abun ciki, AI binciken sarari, ethical AI, AI a ciniki, AI analytics"
 ---
 
 ![Drone View of London](https://cloudcdn.pro/stocks/images/drone-view-of-london.webp).class="img-fluid clearfix"

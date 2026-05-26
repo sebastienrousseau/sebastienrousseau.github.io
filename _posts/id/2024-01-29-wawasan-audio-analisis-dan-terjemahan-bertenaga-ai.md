@@ -1,13 +1,13 @@
 ---
 title: "[ID DRAFT] AI-Powered Speech Analysis, Translation, & Insight Tool"
-subtitle: "Revolutionising audio data processing with Azure AI Platform"
-description: "Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conversion, text analysis, and translations for actionable insights."
+subtitle: "Merevolusi pemrosesan data audio dengan Azure AI Platform"
+description: "Pelajari bagaimana Audio Analyser yang didukung Azure AI mengubah konversi speech-to-text, analisis teks, dan terjemahan menjadi wawasan yang dapat ditindaklanjuti."
 date: "Jan 29, 2024"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp"
-banner_alt: "A minimalist, modern corporate office"
-keywords: "audio analyser, azure ai, speech-to-text, audio data analysis, text analysis, ai translations, audio insights, automated transcription, audio data processing, machine learning"
+banner_alt: "Kantor perusahaan modern yang minimalis"
+keywords: "audio analyser, azure ai, speech-to-text, analisis data audio, analisis teks, terjemahan ai, wawasan audio, transkripsi otomatis, pemrosesan data audio, machine learning"
 ---
 
 ![A minimalist, modern corporate office](https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp).class=\"img-fluid clearfix\"

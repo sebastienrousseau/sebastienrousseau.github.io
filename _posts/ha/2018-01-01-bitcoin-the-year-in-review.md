@@ -1,13 +1,13 @@
 ---
 title: "Bitcoin: A Year In Review of the First Cryptocurrency"
-subtitle: "Bitcoin, cryptocurrency, and the technology reshaping financial markets."
-description: "Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online."
+subtitle: "Bitcoin, cryptocurrency, da fasaha da ke sake fasalin kasuwannin kuɗi."
+description: "Bitcoin: Tsarin Kuɗin Lantarki na Peer-to-Peer (P2P ECS) wanda ke da yuwuwar sauya yadda mutane ke yin ciniki ta yanar gizo."
 date: "Jan 01, 2018"
 language: "ha-NG"
 locale: "ha_NG"
 banner: "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp"
-banner_alt: "A pile of gold and silver coins sitting on top of a table"
-keywords: "bitcoin, cryptocurrency, blockchain, decentralized finance, digital currency, peer-to-peer payments, digital gold, programmable money, future of money, financial revolution"
+banner_alt: "Tarin tsabar zinari da azurfa da aka ajiye a kan tebur"
+keywords: "bitcoin, cryptocurrency, blockchain, kuɗin da ba a tsakiyance ba, kuɗin dijital, biyan kuɗi na peer-to-peer, zinarin dijital, kuɗin da ake iya shirye-shirye, makomar kuɗi, juyin kuɗi"
 ---
 
 ![A pile of gold and silver coins sitting on top of a table](https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp).class="img-fluid clearfix"

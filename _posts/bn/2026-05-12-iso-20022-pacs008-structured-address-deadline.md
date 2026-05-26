@@ -1,13 +1,13 @@
 ---
 title: "The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View"
-subtitle: "From mid-November 2026, SWIFT CBPR+ will reject unstructured postal addresses in pacs.008 and related cross-border payment messages. With approximately 65% of messages still non-compliant, the remediation window is closing fast."
-description: "From November 2026, SWIFT CBPR+ requires structured postal addresses in cross-border payment messages. Unstructured address lines (AdrLine alone) will no longer be accepted for key party fields in pacs.008. At minimum, TwnNm and Ctry are required, with StrtNm and BldgNb or PstBx recommended. With six months to go, 65% of payment messages still contain unstructured addresses and 44% of banks remain behind schedule."
+subtitle: "মধ্য-নভেম্বর ২০২৬ থেকে SWIFT CBPR+ pacs.008 এবং সংশ্লিষ্ট ক্রস-বর্ডার পেমেন্ট বার্তায় অকাঠামোগত পোস্টাল ঠিকানা প্রত্যাখ্যান করবে। প্রায় ৬৫% বার্তা এখনও অ-সম্মত, সংশোধনের সুযোগ দ্রুত সংকুচিত হচ্ছে।"
+description: "নভেম্বর ২০২৬ থেকে SWIFT CBPR+ ক্রস-বর্ডার পেমেন্ট বার্তায় কাঠামোগত পোস্টাল ঠিকানা বাধ্যতামূলক করছে। pacs.008-এ অকাঠামোগত AdrLine আর গৃহীত হবে না; TwnNm ও Ctry ন্যূনতম প্রয়োজন। এখনও ৬৫% বার্তা অ-সম্মত এবং ৪৪% ব্যাংক নির্ধারিত সময়ের পিছিয়ে আছে।"
 date: "May 12, 2026"
 language: "bn-BD"
 locale: "bn_BD"
 banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
-banner_alt: "ISO 20022 pacs.008 structured address diagram — cross-border payment message fields with TwnNm and Ctry highlighted"
-keywords: "ISO 20022, pacs.008, SWIFT CBPR+, structured address, November 2026, postal address, TwnNm, Ctry, StrtNm, BldgNb"
+banner_alt: "ISO 20022 pacs.008 কাঠামোগত ঠিকানার চিত্রচিহ্ন — TwnNm এবং Ctry হাইলাইট সহ ক্রস-বর্ডার পেমেন্ট বার্তার ক্ষেত্রসমূহ"
+keywords: "ISO 20022, pacs.008, SWIFT CBPR+, কাঠামোগত ঠিকানা, নভেম্বর ২০২৬, পোস্টাল ঠিকানা, TwnNm, Ctry, StrtNm, BldgNb"
 ---
 
 ![ISO 20022 pacs.008 structured address diagram — cross-border payment message fields with TwnNm and Ctry highlighted](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class="img-fluid clearfix"

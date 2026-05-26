@@ -1,13 +1,13 @@
 ---
 title: "Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance"
-subtitle: "Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026 and the BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate — it is whether the migration can be completed before the shelf-life of today's data expires."
-description: "Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026, the EU, UK, and ASD timelines clarified, and the BIS Project Leap proving feasibility at the central-bank level, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today's data expires."
+subtitle: "Haɗarin quantum ya ƙaura daga sha'awar bincike zuwa umarnin ƙa'ida mai aiki. Tare da G7 roadmap na 2026 da BIS Project Leap da ya tabbatar da yiwuwa a cikin tsarin biyan kuɗi, tambayar a matakin hukuma yanzu ita ce ko ƙaurar za a kammala kafin ƙarshen rayuwar bayanan yau."
+description: "Haɗarin quantum ya ƙaura daga bincike zuwa umarnin ƙa'ida. G7 roadmap na Janairu 2026, EU, UK, da ASD, da BIS Project Leap sun tabbatar cewa tambayar hukuma yanzu ita ce ko za a kammala ƙaura kafin ƙarshen rayuwar bayanai."
 date: "May 14, 2026"
 language: "ha-NG"
 locale: "ha_NG"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
-banner_alt: "Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA"
-keywords: "post-quantum cryptography, PQC migration, corporate banking, financial services, G7 CEG roadmap, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204"
+banner_alt: "Diagram na hanyar ƙaura ta post-quantum cryptography — kayan aikin bankin kamfanoni na canza daga RSA zuwa ML-KEM da ML-DSA"
+keywords: "post-quantum cryptography, ƙaura ta PQC, bankin kamfanoni, sabis na kuɗi, G7 CEG roadmap, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204"
 ---
 
 ![Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA](https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp).class="img-fluid clearfix"

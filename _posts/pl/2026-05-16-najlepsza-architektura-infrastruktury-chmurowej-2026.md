@@ -49,7 +49,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2026-05-16-najlepsza-architektura-infrastruktury-chmurowej-2026/rss.xml"
-category: "Technology"
+category: "Finance"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Plan architektury chmurowej na rok 2026 — sześć fundamentalnych filarów, ekonomia jednostkowa agentów, realia HPC wieloagentowego, imperatyw ciągłej skarbowości, kryzys bezpieczeństwa MCP, kryptograficzna tożsamość agenta, zarażenie algorytmiczne oraz CloudCDN jako otwartoźródłowa implementacja referencyjna dla kryzysu edge-agent."

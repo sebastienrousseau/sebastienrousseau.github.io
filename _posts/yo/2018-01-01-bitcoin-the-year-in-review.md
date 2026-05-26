@@ -1,13 +1,13 @@
 ---
 title: "Bitcoin: A Year In Review of the First Cryptocurrency"
-subtitle: "Bitcoin, cryptocurrency, and the technology reshaping financial markets."
-description: "Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online."
+subtitle: "Bitcoin, cryptocurrency, ati imọ-ẹrọ ti n tun ṣe eto awọn ọjà inawo."
+description: "Bitcoin: Eto Owo Itanna Peer-to-Peer (P2P ECS) ti o ni agbara lati yi ọna ti awọn eniyan ṣe iṣowo lori ayelujara pada patapata."
 date: "Jan 01, 2018"
 language: "yo-NG"
 locale: "yo_NG"
 banner: "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp"
-banner_alt: "A pile of gold and silver coins sitting on top of a table"
-keywords: "bitcoin, cryptocurrency, blockchain, decentralized finance, digital currency, peer-to-peer payments, digital gold, programmable money, future of money, financial revolution"
+banner_alt: "Opo owó wura àti fadaka tí wọ́n fi sí orí tábìlì"
+keywords: "bitcoin, cryptocurrency, blockchain, inawo alailakoso, owo oni-nọmba, isanwo peer-to-peer, wura oni-nọmba, owo ti a le ṣeto, ojo iwaju owo, iyipada inawo"
 ---
 
 ![A pile of gold and silver coins sitting on top of a table](https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp).class="img-fluid clearfix"

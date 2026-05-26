@@ -1,13 +1,13 @@
 ---
 title: "Quantum Lattice Crypto: Bug in Chen's LWE Attack"
-subtitle: "Peer Review Reveals Flaw in Chen's Groundbreaking Work"
-description: "A bug in Yilei Chen's quantum LWE algorithm temporarily reprieves lattice-based cryptography. What it means for CRYSTALS-Kyber, Dilithium and the PQC roadmap."
+subtitle: "Àtúnyẹ̀wò Ẹlẹgbẹ́ Ṣé Àṣìṣe ninu Iṣẹ́ Aṣáájú-ọnà Chen"
+description: "Aṣiṣe kan ninu algorithm kuatomu LWE ti Yilei Chen fun akoko isinmi fun cryptography ti o da lori lattice. Ohun ti o tumọ si fun CRYSTALS-Kyber, Dilithium ati eto ìgbékalẹ̀ PQC."
 date: "Apr 22, 2024"
 language: "yo-NG"
 locale: "yo_NG"
 banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
-banner_alt: "Image generated using MidJourney - A Network of digital nodes in red and blue hues."
-keywords: "post-quantum cryptography, NIST, PQC standardisation, Yilei Chen, quantum algorithm, lattice-based cryptography, LWE problem, CRYSTALS-KYBER, CRYSTALS-Dilithium, quantum-resistant cryptography"
+banner_alt: "Àwòrán tí a ṣẹ̀dá pẹ̀lú MidJourney - Nẹtíwọ̀ọ̀kì ti àwọn ìpọ́njú ẹ̀rọ ìmọ̀ẹrọ ní àwọn àwọ̀ pupa àti búlúù."
+keywords: "cryptography post-kuatomu, NIST, ìṣọ̀kan PQC, Yilei Chen, algorithm kuatomu, cryptography lattice, ìṣòro LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, cryptography tó dáàbòbò kuatomu"
 ---
 
 ![Image generated using MidJourney - A Network of digital nodes in red and blue hues.](https://cloudcdn.pro/stocks/images/digital-nodes.webp).class="img-fluid clearfix"

@@ -1,13 +1,13 @@
 ---
 title: "Google Gemma AI: Transforming Open-Source AI Development"
-subtitle: "An Inside Look at Capabilities, Open Source Contributions, and What's Ahead"
-description: "Explore Google's Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use."
+subtitle: "Ìwò Jínjìn sí Agbára, Àwọn Ìdásí Open-Source, àti Ohun tó Ń Bọ̀ L'ọjọ́ Iwájú"
+description: "Ṣàwárí Àwòṣe AI Gemma ti Google: iṣẹ́ open-source tó ń pèsè àwọn ojútùú AI tó tọ̀nà fún lílo ara ẹni àti ti ilé-iṣẹ́."
 date: "Feb 26, 2024"
 language: "yo-NG"
 locale: "yo_NG"
 banner: "https://cloudcdn.pro/stocks/images/ai-ship.webp"
-banner_alt: "Futuristic blue spaceship with neon lights"
-keywords: "Google Gemma AI, open-source AI model, Gemma technical architecture, Gemma 2B 7B, ethical AI, AI integration macOS, AI enterprise solutions, conversational AI, data analysis AI, AI for edge devices"
+banner_alt: "Ọkọ̀ òfuurufú aláwọ̀ búlúù ti ọjọ́ iwájú pẹ̀lú ìmọlẹ̀ neon"
+keywords: "Google Gemma AI, àwòṣe AI open-source, ìmọ̀-ẹ̀rọ Gemma, Gemma 2B 7B, AI tó tọ̀nà, ìṣọpọ̀ AI macOS, àwọn ojútùú AI ilé-iṣẹ́, AI ìbáradọ̀, ìtúpalẹ̀ dátà AI, AI fún àwọn ẹ̀rọ edge"
 ---
 
 ![Futuristic blue spaceship with neon lights](https://cloudcdn.pro/stocks/images/ai-ship.webp).class="img-fluid clearfix"

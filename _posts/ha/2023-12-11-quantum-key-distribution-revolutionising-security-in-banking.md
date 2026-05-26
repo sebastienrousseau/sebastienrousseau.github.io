@@ -1,13 +1,14 @@
 ---
 title: "Quantum Key Distribution Revolutionising Security in Banking"
-subtitle: "Quantum Key Distribution (QKD) for financial-grade security in banking."
-description: "As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security."
+excerpt: "As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security."
+subtitle: "Quantum Key Distribution (QKD) don tsaro na matakin kuɗi a cikin banki."
+description: "Yayin da kwamfutocin quantum ke barazana ga hanyoyin ɓoyewa na gargajiya, Quantum Key Distribution (QKD) ta fito a matsayin canjin wasa, tana ba da tsaro marar misali."
 date: "Dec 11, 2023"
 language: "ha-NG"
 locale: "ha_NG"
 banner: "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp"
-banner_alt: "HSBC From the Docks"
-keywords: "Quantum Key Distribution (QKD), Quantum Security, Banking, Financial Industry, Digital Finance, Cybersecurity, Quantum Computing, HSBC, Quantum Protection Trial, Financial Transactions"
+banner_alt: "HSBC Daga Tashar Jiragen Ruwa"
+keywords: "Quantum Key Distribution (QKD), Tsaron Quantum, Banki, Masana'antar Kuɗi, Kuɗi na Dijital, Tsaron Yanar Gizo, Quantum Computing, HSBC, Quantum Protection Trial, Ma'amalolin Kuɗi"
 ---
 
 ![HSBC From the Docks](https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp).class="img-fluid clearfix"

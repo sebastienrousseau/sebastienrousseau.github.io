@@ -1,13 +1,13 @@
 ---
 title: "Fast Real-Time Speech Recognition on macOS: OpenAI Whisper"
-subtitle: "Unleash the Power of AI-Driven, GPU-Accelerated Speech-to-Text on Your Mac"
-description: "Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy."
+subtitle: "আপনার Mac-এ AI-চালিত, GPU-ত্বরান্বিত স্পিচ-টু-টেক্সটের শক্তি উন্মোচন করুন"
+description: "জানুন কীভাবে OpenAI Whisper এবং Metal Performance Shaders macOS-এ রিয়েল-টাইম স্পিচ রিকগনিশন রূপান্তরিত করছে, অতুলনীয় গতি ও নির্ভুলতা প্রদান করে।"
 date: "Mar 12, 2024"
 language: "bn-BD"
 locale: "bn_BD"
 banner: "https://cloudcdn.pro/stocks/images/research-paper.webp"
-banner_alt: "Banner for Real-time automatic speech recognition (ASR)"
-keywords: "OpenAI Whisper, Metal Performance Shaders, macOS speech recognition, real-time transcription, voice activity detection, GPU acceleration, Python integration, speech-to-text macOS, energy-efficient speech detection, Apple silicon"
+banner_alt: "রিয়েল-টাইম স্বয়ংক্রিয় স্পিচ রিকগনিশন (ASR)-এর জন্য ব্যানার"
+keywords: "OpenAI Whisper, Metal Performance Shaders, macOS স্পিচ রিকগনিশন, রিয়েল-টাইম ট্রান্সক্রিপশন, ভয়েস অ্যাক্টিভিটি ডিটেকশন, GPU অ্যাক্সেলারেশন, Python ইন্টিগ্রেশন, স্পিচ-টু-টেক্সট macOS, শক্তি-সাশ্রয়ী স্পিচ ডিটেকশন, Apple silicon"
 ---
 
 ![Banner for Real-time automatic speech recognition (ASR)](https://cloudcdn.pro/stocks/images/research-paper.webp).class="img-fluid clearfix"

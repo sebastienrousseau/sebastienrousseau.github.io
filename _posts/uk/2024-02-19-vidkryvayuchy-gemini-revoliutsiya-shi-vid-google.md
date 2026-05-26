@@ -1,13 +1,13 @@
 ---
 title: "[UK DRAFT] Unlocking Gemini 1.5: Google's AI Revolution Explained"
-subtitle: "A Deep Dive into Google's Latest AI Breakthrough"
-description: "Gemini 1.5 from Google scales context windows past 1M tokens. What that unlocks for retrieval-augmented finance and the trade-offs worth knowing."
+subtitle: "Поглиблений аналіз останнього прориву Google у галузі штучного інтелекту"
+description: "Gemini 1.5 від Google розширює контекстні вікна понад 1 мільйон токенів. Що це дає для фінансів із доповненим пошуком і які компроміси варто враховувати."
 date: "Feb 19, 2024"
 language: "uk-UA"
 locale: "uk_UA"
 banner: "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp"
-banner_alt: "Abstract visualisation of AI networks, representing Gemini 1.5's capabilities"
-keywords: "Gemini 1.5, Google AI, Mixture-of-Experts architecture, computational efficiency, context window expansion, AI innovation, data analysis transformation, in-context learning, AI use cases, technology revolution"
+banner_alt: "Абстрактна візуалізація мереж штучного інтелекту, що представляє можливості Gemini 1.5"
+keywords: "Gemini 1.5, Google AI, архітектура Mixture-of-Experts, обчислювальна ефективність, розширення контекстного вікна, інновації AI, трансформація аналізу даних, навчання в контексті, варіанти використання AI, технологічна революція"
 ---
 
 ![Abstract visualisation of AI networks, representing Gemini 1.5's capabilities](https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp).class=\"img-fluid clearfix\"

@@ -1,13 +1,13 @@
 ---
 title: "OpenVoice: Leading Innovation in Voice Cloning Technology"
-subtitle: "The Next-Gen Open-Source Voice Cloning Tool"
+subtitle: "Kayan Aikin Open-Source na Zamani don Kwafin Murya"
 description: "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing."
 date: "Apr 01, 2024"
 language: "ha-NG"
 locale: "ha_NG"
 banner: "https://cloudcdn.pro/stocks/images/open-voice.webp"
-banner_alt: "Banner of Vibrant gradient overlay on repeated profiles"
-keywords: "OpenVoice, Voice Cloning Technology, AI Synthetic Speech, Open-Source Voice Cloning, Cross-Lingual Voice Synthesis, Instant Voice Cloning, Voice Style Control, Accessibility Voice Tech, Entertainment Industry Voices, Customer Service Voice AI"
+banner_alt: "Banner mai launi mai ƙarfi a kan hotuna masu maimaitawa"
+keywords: "OpenVoice, Fasahar Kwafin Murya, AI Magana ta Roba, Open-Source Kwafin Murya, Haɗin Murya Tsakanin Harsuna, Gaggawar Kwafin Murya, Sarrafa Salon Murya, Fasahar Murya ta Accessibility, Muryoyin Masana'antar Nishaɗi, AI Murya ta Sabis na Abokan Ciniki"
 ---
 
 ![Banner of Vibrant gradient overlay on repeated profiles](https://cloudcdn.pro/stocks/images/open-voice.webp).class="img-fluid clearfix"

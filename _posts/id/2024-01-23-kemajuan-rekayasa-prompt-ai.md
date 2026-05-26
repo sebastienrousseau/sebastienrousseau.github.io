@@ -1,13 +1,13 @@
 ---
 title: "[ID DRAFT] AI Prompt Engineering 2024: Techniques That Work"
-subtitle: "Reshaping human-computer interaction with significant advancements in custom instructions"
-description: "Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors."
+subtitle: "Membentuk ulang interaksi manusia-komputer dengan kemajuan signifikan dalam instruksi khusus"
+description: "Jelajahi kemajuan AI Prompt Engineering tahun 2024, mengungkap tren dan teknik inovatif yang merevolusi sektor teknologi dan keuangan."
 date: "Jan 23, 2024"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp"
-banner_alt: "A man analysing data on screens"
-keywords: "AI Prompt Engineering, Custom Instructions, Multi-Persona AI, Chain of Thought, Quantum Computing, Ethical AI, Adaptive Prompting, Zero Shot Prompting, Few Shot Prompting, AI Technology Trends"
+banner_alt: "Seorang pria menganalisis data di layar"
+keywords: "AI Prompt Engineering, Instruksi Khusus, Multi-Persona AI, Chain of Thought, Quantum Computing, AI Etis, Adaptive Prompting, Zero Shot Prompting, Few Shot Prompting, Tren Teknologi AI"
 ---
 
 ![A man analysing data on screens](https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp).class=\"img-fluid clearfix\"

@@ -1,13 +1,13 @@
 ---
 title: "Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk"
-subtitle: "A new paper suggests Shor's algorithm could run on as few as 10,000 qubits. The implications for cryptography are hard to ignore."
-description: "Shor's algorithm may now run on as few as 10,000 qubits. RSA, ECC and the timeline for post-quantum migration are all moving up. Here's why."
+subtitle: "Un nou studiu sugerează că algoritmul lui Shor ar putea rula pe doar 10.000 de qubiți. Implicațiile pentru criptografie sunt greu de ignorat."
+description: "Algoritmul lui Shor ar putea rula pe doar 10.000 de qubiți. RSA, ECC și termenele pentru migrarea post-cuantică se accelerează rapid. Iată de ce."
 date: "Apr 11, 2026"
 language: "ro-RO"
 locale: "ro_RO"
 banner: "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp"
-banner_alt: "Shor's algorithm qubit threshold diagram. Quantum computing circuit board with blue light patterns"
-keywords: "quantum computing, Shor's algorithm, 10000 qubits, post-quantum cryptography, RSA-2048, elliptic curve cryptography, neutral atom qubits, quantum error correction, cryptographic agility, quantum threat timeline"
+banner_alt: "Diagrama pragului de qubiți pentru algoritmul lui Shor. Placă de circuit pentru calcul cuantic cu modele de lumină albastră"
+keywords: "calcul cuantic, algoritmul lui Shor, 10000 qubiți, criptografie post-cuantică, RSA-2048, criptografie cu curbe eliptice, qubiți cu atomi neutri, corecție cuantică a erorilor, agilitate criptografică, calendarul amenințărilor cuantice"
 ---
 
 ![Shor's algorithm qubit threshold diagram. Quantum computing circuit board with blue light patterns](https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp).class="img-fluid clearfix"
