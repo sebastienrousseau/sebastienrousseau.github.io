@@ -58,7 +58,7 @@ news_title: "Quantum Algorithm Challenges Lattice-Based Cryptography"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/rss.xml"
-category: "Technology"
+category: "Quantum"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "New quantum algorithm solves key crypto problem, urges research into quantum-safe security."

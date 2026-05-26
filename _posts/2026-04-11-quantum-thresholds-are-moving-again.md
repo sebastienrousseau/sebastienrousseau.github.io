@@ -44,7 +44,7 @@ title: "Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk"
 url: "https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"# RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again/rss.xml"
-category: "Technology"
+category: "Quantum"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "A new paper suggests Shor's algorithm could run on as few as 10,000 qubits. The threshold for cryptographically relevant quantum computing is dropping fast."

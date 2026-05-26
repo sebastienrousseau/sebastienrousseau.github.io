@@ -58,7 +58,7 @@ news_title: "AI Trends 2024: Insights and Predictions for the Future"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/rss.xml"
-category: "Technology"
+category: "AI"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Explore the transformative AI trends of 2024, from generative AI to AI in retail, and how they'll shape our future."

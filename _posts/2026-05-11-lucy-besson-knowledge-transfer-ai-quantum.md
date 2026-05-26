@@ -49,7 +49,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/rss.xml"
-category: "Technology"
+category: "AI"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Twelve years after Lucy, Besson's metaphor of knowledge migrating from flesh to machine is being quietly validated by LLMs, neutral atom qubits, and whole-brain emulation."

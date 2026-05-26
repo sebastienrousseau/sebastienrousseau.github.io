@@ -48,7 +48,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa/rss.xml"
-category: "Technology"
+category: "Payments"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Quantum computing threatens payment system cryptography. The Emerging Payments Association Asia (EPAA) Quantum Safe Cryptography Working Group outlines the structural risk and the urgent case for post-quantum migration across payment infrastructure."

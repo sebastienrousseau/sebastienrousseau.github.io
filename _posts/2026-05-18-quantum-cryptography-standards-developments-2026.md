@@ -49,7 +49,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/rss.xml"
-category: "Technology"
+category: "Quantum"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "The 2026 quantum cryptography reset — NIST PQC standards, NCSC migration advice, IETF protocol readiness, QKD assurance, crypto-agility, and what banks should prioritise this week."

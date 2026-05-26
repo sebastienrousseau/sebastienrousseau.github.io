@@ -58,7 +58,7 @@ news_title: "EU's AI Act: Pioneering Ethical AI Regulation Worldwide"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/rss.xml"
-category: "Technology"
+category: "Finance"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Delve into the EU's Artificial Intelligence Act, a revolutionary framework setting global standards for ethical AI development and usage."
