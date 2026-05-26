@@ -781,7 +781,7 @@ def _build_fr_excerpt_map() -> dict[str, str]:
             continue
         en = FR_TO_EN.get(md.stem, md.stem)
         fm, _ = parse_frontmatter(md.read_text(encoding="utf-8"))
-        excerpt = fm.get("excerpt")
+        excerpt = fm.get("excerpt") or fm.get("subtitle") or fm.get("description")
         if excerpt:
             out[en] = excerpt
     return out
