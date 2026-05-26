@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta itemprop="datePublished" content="Thu, 26 Oct 2023 11:21:00 +0000" id="date" />
     <meta itemprop="dateModified" content="Thu, 26 Oct 2023 11:21:00 +0000" id="last-modified" />
-    <title>Streamlining Rust Library Development with Code Generation — Sebastien Rousseau</title>
+    <title>LibMake: Rust Library Scaffold Generator — Sebastien Rousseau</title>
 
     <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
-<meta name="description" content="Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort.">
-<meta name="keywords" content="Rust, library, development, code, generator, boilerplate, best, practices, quality, reliable">
+<meta name="description" content="LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.">
+<meta name="keywords" content="LibMake, Rust code generator, cargo scaffold, Rust library template, Tera templating, GitHub Actions Rust, cargo-audit, Rust API Guidelines, boilerplate generator, Rust CI workflow">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
     <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Streamlining Rust Library Development with Code Generation">
+<meta name="apple-mobile-web-app-title" content="LibMake">
 
     <!-- Strict security headers. The headers below that can be set via
          <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
@@ -40,7 +40,7 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-Cdp66cDM1m6MAwh+i8fXblFX3QiXB1bL3Jd0rgB8+b8=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-hMRyA9Ci4bopfhW5hr3fmhqe2soTDF66m1iPr1Hn+pY=' 'sha256-ihbksrqSJFGqJVGSmXuF6OziIWNLtzOVt71ffkYBYkI=' 'sha256-yEoxsTfucqLawOGaJng57V+OFT+hQNTzWkKUReem+fU=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-3gcW70Ko++qfvwj6PDTxD/7xqL2pF49U6g+eyYMh0xM=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-LvlzlwbDB+jINT8662cn+QNJh7cqCtueQXehg7QSlNI=' 'sha256-d/S+hJ0mbyMDmsuUorlNqqxygr+dyRZPgh0kF5xmGfw=' 'sha256-hMRyA9Ci4bopfhW5hr3fmhqe2soTDF66m1iPr1Hn+pY=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
@@ -67,7 +67,7 @@
          Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
          observed (real-network) LCP is 165 ms. This hint pulls the
          synthetic LCP in line with the observed value. -->
-    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1600&format=webp&q=85" fetchpriority="high">
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
     <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
     <meta name="color-scheme" content="light dark" />
@@ -77,8 +77,8 @@
     <link rel="alternate" type="application/atom+xml" title="Feed na Atom" href="/ha/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="stylesheet" href="/highlight.a92b9694.css">
-<meta property="og:title" content="Streamlining Rust Library Development with Code Generation — Sebastien Rousseau">
-<meta property="og:description" content="Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort.">
+<meta property="og:title" content="LibMake: Rust Library Scaffold Generator — Sebastien Rousseau">
+<meta property="og:description" content="LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sebastienrousseau.com/ha/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/">
 <meta property="og:image" content="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp">
@@ -86,8 +86,8 @@
 <meta property="og:image:height" content="100vh">
 <meta property="og:locale" content="ha_NG">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Streamlining Rust Library Development with Code Generation — Sebastien Rousseau">
-<meta name="twitter:description" content="Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort.">
+<meta name="twitter:title" content="LibMake: Rust Library Scaffold Generator — Sebastien Rousseau">
+<meta name="twitter:description" content="LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.">
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp">
 <link rel="canonical" href="https://sebastienrousseau.com/ha/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
@@ -129,34 +129,34 @@
             </button>
             <div class="ap-lang-menu" role="menu" hidden>
               <div class="ap-lang-menu-grid">
-                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
-                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
-                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
-                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
-                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
-                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
-                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
-                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
-                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
-                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
-                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
-                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
-                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
-                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
-                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
-                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
-                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
-                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
-                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
-                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
-                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
-                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
-                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
-                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
-                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
-                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
-                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
-                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+                <a class="ap-lang-item" href="/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2023-10-26-libmake-generateur-de-code-pour-bibliotheques-rust/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2023-10-26-libmake-generator-kodu-pro-rust-knihovny/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2023-10-26-libmake-codegenerator-fuer-hochwertige-rust-bibliotheken/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2023-10-26-libmake-generador-de-codigo-para-bibliotecas-rust/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2023-10-26-libmake-rust-libraries-ke-liye-code-generator/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2023-10-26-libmake-generator-kode-untuk-pustaka-rust/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2023-10-26-libmake-generatore-di-codice-per-librerie-rust/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2023-10-26-libmake-rust-raiburari-no-koodo-jenereta/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2023-10-26-libmake-rust-laibeureori-koodeu-saengseonggi/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2023-10-26-libmake-codegenerator-voor-hoogwaardige-rust-bibliotheken/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2023-10-26-libmake-generator-kodu-do-bibliotek-rust/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2023-10-26-libmake-gerador-de-codigo-para-bibliotecas-rust/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2023-10-26-libmake-generator-koda-dlya-bibliotek-rust/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2023-10-26-libmake-kodgenerator-for-rust-bibliotek/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2023-10-26-libmake-tua-sang-khot-samrap-laibrari-rust/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2023-10-26-libmake-rust-kutuphaneleri-icin-kod-uretici/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2023-10-26-libmake-henerator-kodu-dlya-rust-bibliotek/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2023-10-26-libmake-bo-sinh-ma-cho-thu-vien-rust/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2023-10-26-libmake-rust-ku-de-daima-shengchengqi/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2023-10-26-libmake-rust-ku-de-daima-shengchengqi-tw/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
               </div>
             </div>
           </div>
@@ -167,86 +167,167 @@
     </header>
 
         <section class="ap-hero">
-      <h1>Streamlining Rust Library Development with Code Generation</h1>
-      <p class="sub">LibMake: a Rust code generator that enforces best practices from day one.</p>
-    <nav class="article-tags" aria-label="Batutuwa"><a href="/tags/index.html#h3-rust" class="article-tag" rel="tag">Rust</a><a href="/tags/index.html#h3-library" class="article-tag" rel="tag">library</a><a href="/tags/index.html#h3-development" class="article-tag" rel="tag">development</a><a href="/tags/index.html#h3-code" class="article-tag" rel="tag">code</a><a href="/tags/index.html#h3-generator" class="article-tag" rel="tag">generator</a><a href="/tags/index.html#h3-boilerplate" class="article-tag" rel="tag">boilerplate</a><a href="/tags/index.html#h3-best" class="article-tag" rel="tag">best</a><a href="/tags/index.html#h3-practices" class="article-tag" rel="tag">practices</a><a href="/tags/index.html#h3-quality" class="article-tag" rel="tag">quality</a><a href="/tags/index.html#h3-reliable" class="article-tag" rel="tag">reliable</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2023-10-26T11:21:00+00:00" class="meta-pub">An buga 26 Oct 2023</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">An sabunta 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Lokacin karatun da aka kiyasta">3 minti karatu</span></div></section>
+      <h1>LibMake: Rust Library Scaffold Generator</h1>
+      <p class="sub">Scaffold a production-ready Rust library with CI, tests, and docs in under 60 seconds</p>
+    <nav class="article-tags" aria-label="Batutuwa"><a href="/tags/index.html#h3-libmake" class="article-tag" rel="tag">LibMake</a><a href="/tags/index.html#h3-rust-code-generator" class="article-tag" rel="tag">Rust code generator</a><a href="/tags/index.html#h3-cargo-scaffold" class="article-tag" rel="tag">cargo scaffold</a><a href="/tags/index.html#h3-rust-library-template" class="article-tag" rel="tag">Rust library template</a><a href="/tags/index.html#h3-tera-templating" class="article-tag" rel="tag">Tera templating</a><a href="/tags/index.html#h3-github-actions-rust" class="article-tag" rel="tag">GitHub Actions Rust</a><a href="/tags/index.html#h3-cargo-audit" class="article-tag" rel="tag">cargo-audit</a><a href="/tags/index.html#h3-rust-api-guidelines" class="article-tag" rel="tag">Rust API Guidelines</a><a href="/tags/index.html#h3-boilerplate-generator" class="article-tag" rel="tag">boilerplate generator</a><a href="/tags/index.html#h3-rust-ci-workflow" class="article-tag" rel="tag">Rust CI workflow</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2023-10-26T11:21:00+00:00" class="meta-pub">An buga 26 Oct 2023</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">An sabunta 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Lokacin karatun da aka kiyasta">5 minti karatu</span></div></section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap report-wrap"><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Insight.</strong> Developing Rust libraries can be a challenging task, especially for beginners.</li>  <li><strong>Idea.</strong> [LibMake ⧉][00] is a code generator tool designed to quickly help creating high-quality Rust libraries by generating a set of pre-filled and pre-defined templated files.</li>  <li><strong>Impact.</strong> LibMake reduces the time and effort required to develop Rust libraries by automating code generation and other tasks.</li>  <li><strong>Incentives.</strong> LibMake can help developers enforce best practises by providing a set of pre-defined templates that follow these practises.</li></ul></aside><p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1600&format=webp&q=85" alt="Giant white pillars"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
-<hr />
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Abubuwan da ke ciki</h2><ol><li><a href="#installation-and-basic-usage">Installation and Basic Usage</a></li><li><a href="#config-file-mode">Config-File Mode</a></li><li><a href="#generated-project-structure">Generated Project Structure</a></li><li><a href="#github-actions-ci-workflow">GitHub Actions CI Workflow</a></li><li><a href="#templating-with-tera">Templating with Tera</a></li><li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li><li><a href="#references">References</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Installation and Basic Usage.</strong> LibMake is published on crates.io and installed via Cargo:.</li>  <li><strong>Config-File Mode.</strong> For team use, all CLI flags can be expressed in a TOML config file:.</li>  <li><strong>Generated Project Structure.</strong> A LibMake invocation creates the following layout:.</li>  <li><strong>GitHub Actions CI Workflow.</strong> The generated .github/workflows/release.yml runs five jobs on every push and pull request:.</li></ul></aside><!-- translation-stub: replace this body in Claude Code -->
 <blockquote>
-<p><strong>TL;DR.</strong> Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort.</p>
-<p><strong>Mahimman Bayanai</strong></p>
-<ul>
-<li>DRAFT translation: this article is a Hausa stub generated from the English source. Body text is intentionally left in English until a native reviewer signs off.</li>
-<li>Source title: <em>Streamlining Rust Library Development with Code Generation</em>.</li>
-<li>Source subtitle: <em>LibMake: a Rust code generator that enforces best practices from day one.</em>.</li>
-<li>Editorial note: replace this block with hand-translated copy before flipping <code>active=True</code> for ha in <code>scripts/_lang_registry.py</code>.</li>
-</ul>
+<p><em>Translation pending — read the <a href="/ha/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/">English original</a> while we localise.</em></p>
 </blockquote>
-<hr />
 <!-- lead-start -->
 
 <!-- lead-end -->
-<p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1600&format=webp&q=80" alt="Giant white pillars"  width="1200" height="675" decoding="async" loading="lazy">.class=&quot;img-fluid clearfix&quot;</p>
-<h2 id="insight">Insight <a class="heading-anchor" href="#insight" aria-label="Hanyar haɗi zuwa Insight">#</a></h2>
-<h3 id="challenges-of-rust-library-development">Challenges of Rust Library Development <a class="heading-anchor" href="#challenges-of-rust-library-development" aria-label="Hanyar haɗi zuwa Challenges of Rust Library Development">#</a></h3>
-<p>Developing Rust libraries can be a challenging task, especially for beginners. One of the biggest challenges is setting up an efficient project structure and writing all of the necessary boilerplate code. This can be time-consuming and repetitive, and it can take away from the more creative and strategic aspects of library development.</p>
-<h3 id="benefits-of-using-a-code-generator">Benefits of Using a Code Generator <a class="heading-anchor" href="#benefits-of-using-a-code-generator" aria-label="Hanyar haɗi zuwa Benefits of Using a Code Generator">#</a></h3>
-<p>Using a code generator can streamline the process of Rust library development by automating boilerplate code generation and other repetitive tasks. This can save developers a significant amount of time and effort, and it can free them up to focus on the more important aspects of library development, such as design, implementation, and testing.</p>
-<h2 id="idea">Idea <a class="heading-anchor" href="#idea" aria-label="Hanyar haɗi zuwa Idea">#</a></h2>
-<h3 id="libmake-a-code-generator-for-rust-libraries">LibMake: A Code Generator for Rust Libraries <a class="heading-anchor" href="#libmake-a-code-generator-for-rust-libraries" aria-label="Hanyar haɗi zuwa LibMake: A Code Generator for Rust Libraries">#</a></h3>
-<p><a href="https://github.com/sebastienrousseau/libmake" title="LibMake: A code generator to reduce repetitive tasks and build high-quality Rust libraries">LibMake ⧉</a> is a code generator tool designed to quickly help creating high-quality Rust libraries by generating a set of pre-filled and pre-defined templated files. This opinionated boilerplate scaffolding tool aims to greatly reduces development time and minimises repetitive tasks, allowing you to focus on your business logic while enforcing standards, best practices, consistency, and providing style guides for your library.</p>
-<p>LibMake is flexible and extensible, so it can be used to create libraries of any size or complexity. It also supports a variety of configuration options, so developers can customise it to their specific needs.</p>
-<h3 id="example-of-using-libmake">Example of Using LibMake <a class="heading-anchor" href="#example-of-using-libmake" aria-label="Hanyar haɗi zuwa Example of Using LibMake">#</a></h3>
-<p>To use LibMake, developers simply need to run the following command:</p>
-<pre><code class="language-bash">libmake \
-    --author &quot;John Smith&quot; \
-    --build &quot;build.rs&quot; \
-    --categories &quot;['category 1', 'category 2', 'category 3']&quot; \
-    --description &quot;A Rust library for doing cool things&quot; \
-    --documentation &quot;https://docs.rs/my_library&quot; \
-    --edition &quot;2021&quot; \
-    --email &quot;john.smith@example.com&quot; \
-    --homepage &quot;https://my_library.rs&quot; \
-    --keywords &quot;['rust', 'library', 'cool']&quot; \
-    --license &quot;MIT&quot; \
-    --name &quot;my_library&quot; \
-    --output &quot;my_library&quot; \
-    --readme &quot;README.md&quot; \
-    --repository &quot;https://github.com/example/my_library&quot; \
-    --rustversion &quot;1.69.0&quot; \
-    --version &quot;0.1.0&quot; \
-    --website &quot;https://example.com/john-smith&quot;
-</code></pre>
-<p>This will create a new directory for the library, and LibMake will generate the necessary boilerplate code and documentation structure. Developers can then add their own code to the library and start developing.</p>
-<h2 id="impact">Impact <a class="heading-anchor" href="#impact" aria-label="Hanyar haɗi zuwa Impact">#</a></h2>
-<h3 id="reduced-development-time-and-effort">Reduced Development Time and Effort <a class="heading-anchor" href="#reduced-development-time-and-effort" aria-label="Hanyar haɗi zuwa Reduced Development Time and Effort">#</a></h3>
-<p>LibMake reduces the time and effort required to develop Rust libraries by automating code generation and other tasks. This saves developers time and effort. They can focus on the important parts, like design, implementation, and testing.</p>
-<h3 id="improved-library-quality-and-reliability">Improved Library Quality and Reliability <a class="heading-anchor" href="#improved-library-quality-and-reliability" aria-label="Hanyar haɗi zuwa Improved Library Quality and Reliability">#</a></h3>
-<p>LibMake can also help developers improve the quality and reliability of their libraries by providing a set of pre-defined templates that follow best practises. This can help to reduce the number of bugs and errors in libraries, and it can make them more robust and reliable.</p>
-<h2 id="incentives">Incentives <a class="heading-anchor" href="#incentives" aria-label="Hanyar haɗi zuwa Incentives">#</a></h2>
-<h3 id="enforce-best-practises-and-generate-initial-code">Enforce Best practises and Generate Initial Code <a class="heading-anchor" href="#enforce-best-practises-and-generate-initial-code" aria-label="Hanyar haɗi zuwa Enforce Best practises and Generate Initial Code">#</a></h3>
-<p>LibMake can help developers enforce best practises by providing a set of pre-defined templates that follow these practises. It can also generate initial code for common library functionality, which can save developers a significant amount of time.</p>
-<p>LibMake offers the following features and benefits:</p>
+<blockquote>
+<p><strong>Executive Summary / Key Takeaways</strong></p>
 <ul>
-<li>Create your Rust library with ease using the command line interface or by providing a configuration file in CSV, JSON, TOML, or YAML format.</li>
-<li>Rapidly generate new library projects with a pre-defined structure and boilerplate code that you can customize with your own template.</li>
-<li>Generate a library pre-defined GitHub Actions workflow to help you automate your library development and testing.</li>
-<li>Automatically generate basic functions, methods, and macros to get you started with your Rust library.</li>
-<li>Enforce best practices and standards with starter documentation, test suites, and benchmark suites that are designed to help you get up and running quickly.</li>
+<li><strong><a href="https://github.com/sebastienrousseau/libmake" title="LibMake — Rust library scaffold generator">LibMake ⧉</a></strong> is an open-source Rust CLI tool installed via <code>cargo install libmake</code> that generates a complete library scaffold from CLI flags or a config file (TOML, YAML, JSON, or CSV), with output covering Cargo.toml, source, tests, benchmarks, documentation, and CI in one invocation.</li>
+<li><strong>The generated project follows Rust API Guidelines</strong> conventions: module-level and item-level doc comments in src/lib.rs, <code>#![deny(missing_docs)]</code> in the crate root, and a README wired to the crate documentation via <code>#![doc = include_str!(&quot;../README.md&quot;)]</code>.</li>
+<li><strong>Config-file mode</strong> (<code>--config libmake.toml</code>) allows teams to commit a single file that fully specifies their library template — author, licence, categories, Rust edition, MSRV, repository URL — making scaffold generation repeatable and diffable in Git.</li>
+<li><strong>The GitHub Actions workflow</strong> generated by LibMake tests on stable, beta, and nightly Rust toolchains, enforces <code>clippy -D warnings</code>, checks <code>rustfmt</code>, and runs <code>cargo-audit</code> for known CVEs in the dependency tree.</li>
+<li><strong>Tera templates</strong> power the code generation: LibMake ships with a default template set but accepts a custom template directory via <code>--template</code>, so non-standard project layouts and additional generated files are supported without forking the tool.</li>
 </ul>
-<p>With LibMake, you can easily generate a new Rust library code base structure with all the necessary files, layouts, build configurations, code, tests, benchmarks, documentation, and much more in a matter of seconds.</p>
-<h3 id="try-libmake-today">Try LibMake Today <a class="heading-anchor" href="#try-libmake-today" aria-label="Hanyar haɗi zuwa Try LibMake Today">#</a></h3>
-<p>If you are a developer, I encourage you to try <a href="https://github.com/sebastienrousseau/libmake" title="LibMake: A code generator to reduce repetitive tasks and build high-quality Rust libraries">LibMake ⧉</a> to see how it can help you streamline your library development process. LibMake is a free and an open-source tool, and it is available for download from the <a href="https://github.com/sebastienrousseau/libmake" title="LibMake: A code generator to reduce repetitive tasks and build high-quality Rust libraries">GitHub repository ⧉</a>.</p>
-<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/ha/game-da-mu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Manyan masanin fasahar banki; ina rubutu kan AI mai amfani, ƙaura zuwa ISO 20022, kiriftografi bayan kwantum don sabis na kuɗi da sauye-sauyen tsari na biyan kuɗi na manyan.</span><span class="author-credentials">Fiye da shekaru 20 na ƙwarewa a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/ha/game-da-mu/index.html">Cikakken bayanin martaba</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Bita ta ƙarshe <time datetime="2026-05-22">2026-05-22</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+</blockquote>
+<p><a href="https://github.com/sebastienrousseau/libmake" title="LibMake — Rust library scaffold generator"><strong>LibMake ⧉</strong></a> is an open-source Rust CLI and library that generates a complete library project scaffold from a single invocation. It targets the gap between <code>cargo new --lib</code> (which creates only a minimal Cargo.toml and src/lib.rs) and a production-ready library setup (which requires manually adding doc comments, CI, test harnesses, benchmark structure, CONTRIBUTING.md, and licence files).</p>
+<p>This article describes what LibMake generates, how the config-file and CLI modes work, the generated CI structure, and the templating system.</p>
+<h2 id="installation-and-basic-usage">Installation and Basic Usage <a class="heading-anchor" href="#installation-and-basic-usage" aria-label="Hanyar haɗi zuwa Installation and Basic Usage">#</a></h2>
+<p>LibMake is published on <a href="https://crates.io/crates/libmake">crates.io</a> and installed via Cargo:</p>
+<pre><code class="language-bash">cargo install libmake
+</code></pre>
+<p>The minimal CLI invocation generates a named library in the current directory:</p>
+<pre><code class="language-bash">libmake \
+  --author &quot;Jane Smith&quot; \
+  --email &quot;jane@example.com&quot; \
+  --name &quot;my_library&quot; \
+  --description &quot;A Rust library for doing useful things&quot; \
+  --version &quot;0.1.0&quot; \
+  --licence &quot;MIT OR Apache-2.0&quot; \
+  --repository &quot;https://github.com/example/my_library&quot; \
+  --rustversion &quot;1.70.0&quot; \
+  --edition &quot;2021&quot; \
+  --output &quot;my_library&quot;
+</code></pre>
+<p>Additional optional flags include <code>--categories</code>, <code>--keywords</code>, <code>--homepage</code>, <code>--documentation</code>, <code>--readme</code>, and <code>--build</code>.</p>
+<h2 id="config-file-mode">Config-File Mode <a class="heading-anchor" href="#config-file-mode" aria-label="Hanyar haɗi zuwa Config-File Mode">#</a></h2>
+<p>For team use, all CLI flags can be expressed in a TOML config file:</p>
+<pre><code class="language-toml"># libmake.toml
+author      = &quot;Jane Smith&quot;
+email       = &quot;jane@example.com&quot;
+name        = &quot;my_library&quot;
+description = &quot;A Rust library for doing useful things&quot;
+version     = &quot;0.1.0&quot;
+licence     = &quot;MIT OR Apache-2.0&quot;
+repository  = &quot;https://github.com/example/my_library&quot;
+rustversion = &quot;1.70.0&quot;
+edition     = &quot;2021&quot;
+output      = &quot;my_library&quot;
+categories  = [&quot;algorithms&quot;, &quot;data-structures&quot;]
+keywords    = [&quot;rust&quot;, &quot;library&quot;]
+</code></pre>
+<p>Invoked as:</p>
+<pre><code class="language-bash">libmake --config libmake.toml
+</code></pre>
+<p>LibMake also accepts JSON, YAML, and CSV config formats via <code>--config-json</code>, <code>--config-yaml</code>, and <code>--config-csv</code> flags respectively. Committing <code>libmake.toml</code> to the repository root gives every contributor a reproducible scaffold baseline, and changes to the template configuration are visible in Git diffs.</p>
+<h2 id="generated-project-structure">Generated Project Structure <a class="heading-anchor" href="#generated-project-structure" aria-label="Hanyar haɗi zuwa Generated Project Structure">#</a></h2>
+<p>A LibMake invocation creates the following layout:</p>
+<pre><code>my_library/
+├── .github/
+│   └── workflows/
+│       └── release.yml     # full CI matrix
+├── benches/
+│   └── lib_benchmarks.rs   # Criterion benchmark stub
+├── src/
+│   └── lib.rs              # doc-commented, deny(missing_docs)
+├── tests/
+│   └── lib_tests.rs        # integration test stub
+├── CONTRIBUTING.md
+├── Cargo.toml              # complete metadata
+├── LICENSE-APACHE
+├── LICENSE-MIT
+└── README.md
+</code></pre>
+<p>The generated <code>src/lib.rs</code> includes a crate-level doc comment, <code>#![deny(missing_docs)]</code>, <code>#![doc = include_str!(&quot;../README.md&quot;)]</code> to pull the README into rustdoc, and a stub public type with an associated doc comment. These choices follow the Rust API Guidelines requirement that all public items have documentation.</p>
+<p>The generated <code>benches/lib_benchmarks.rs</code> uses <a href="https://github.com/bheisler/criterion.rs">Criterion.rs</a> and requires adding <code>criterion</code> as a dev-dependency, which LibMake inserts into <code>Cargo.toml</code> automatically.</p>
+<h2 id="github-actions-ci-workflow">GitHub Actions CI Workflow <a class="heading-anchor" href="#github-actions-ci-workflow" aria-label="Hanyar haɗi zuwa GitHub Actions CI Workflow">#</a></h2>
+<p>The generated <code>.github/workflows/release.yml</code> runs five jobs on every push and pull request:</p>
+<table>
+<thead>
+<tr>
+<th>Job</th>
+<th>Toolchain</th>
+<th>What it checks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>test</code></td>
+<td>stable, beta, nightly (matrix)</td>
+<td><code>cargo test --all-features</code></td>
+</tr>
+<tr>
+<td><code>clippy</code></td>
+<td>stable</td>
+<td><code>cargo clippy -- -D warnings</code></td>
+</tr>
+<tr>
+<td><code>fmt</code></td>
+<td>stable</td>
+<td><code>cargo fmt --check</code></td>
+</tr>
+<tr>
+<td><code>audit</code></td>
+<td>stable</td>
+<td><code>cargo audit</code> (cargo-audit installed in job)</td>
+</tr>
+<tr>
+<td><code>doc</code></td>
+<td>stable</td>
+<td><code>cargo doc --no-deps</code> (fails on missing docs)</td>
+</tr>
+</tbody>
+</table>
+<p>The nightly job has <code>continue-on-error: true</code> so a nightly regression does not block merges, while still surfacing the failure in the workflow run.</p>
+<h2 id="templating-with-tera">Templating with Tera <a class="heading-anchor" href="#templating-with-tera" aria-label="Hanyar haɗi zuwa Templating with Tera">#</a></h2>
+<p>LibMake uses the <a href="https://keats.github.io/tera/">Tera</a> template engine — a Jinja2-like syntax for Rust — to render all generated files. Each template receives the full config struct as context:</p>
+<pre><code>{{ name }}            → my_library
+{{ author }}          → Jane Smith
+{{ edition }}         → 2021
+{{ description }}     → A Rust library for doing useful things
+</code></pre>
+<p>Custom template directories are supported via the <code>--template</code> flag:</p>
+<pre><code class="language-bash">libmake --config libmake.toml --template ./my_templates/
+</code></pre>
+<p>The custom directory must mirror the default template structure (the same filenames). Any file present in the custom directory overrides the corresponding built-in template; files not present in the custom directory fall back to the built-in version. This allows partial overrides — for example, replacing only the CI workflow template while keeping the default src/lib.rs and Cargo.toml templates.</p>
+<h2 id="frequently-asked-questions">Frequently Asked Questions <a class="heading-anchor" href="#frequently-asked-questions" aria-label="Hanyar haɗi zuwa Frequently Asked Questions">#</a></h2>
+<p><strong>How does LibMake differ from <code>cargo new --lib</code>?</strong>
+<code>cargo new --lib</code> creates a minimal project with only <code>Cargo.toml</code> and <code>src/lib.rs</code> (containing a single <code>#[cfg(test)]</code> block). LibMake generates the full structure — integration tests, benchmarks, CI, CONTRIBUTING.md, dual-licence files, and a properly documented src/lib.rs — configured with the project's actual metadata rather than placeholders.</p>
+<p><strong>Can LibMake be used with an existing Cargo workspace?</strong>
+LibMake generates a standalone crate directory. To add the generated crate to an existing workspace, add the output path to the workspace <code>members</code> array in the root <code>Cargo.toml</code>. LibMake does not modify existing workspace files.</p>
+<p><strong>Can I update the scaffold templates after initial generation?</strong>
+LibMake generates files once; it does not track or update previously generated projects. To adopt updated templates, the recommended approach is to re-run LibMake into a temporary directory and diff the result against the existing crate, applying desired changes selectively.</p>
+<p><strong>What Rust editions and MSRV values does LibMake support?</strong>
+LibMake accepts any string for <code>--edition</code> and <code>--rustversion</code> and writes the values directly to <code>Cargo.toml</code>. It does not validate whether the specified edition or MSRV is a real Rust version, so callers are responsible for supplying correct values.</p>
+<h2 id="references">References <a class="heading-anchor" href="#references" aria-label="Hanyar haɗi zuwa References">#</a></h2>
+<ol>
+<li>Rousseau, S. <em>LibMake — A code generator to reduce repetitive tasks and build high-quality Rust libraries</em>. GitHub, 2023. https://github.com/sebastienrousseau/libmake</li>
+<li>The Rust Programming Language. <em>Rust API Guidelines</em>. GitHub, 2023. https://rust-lang.github.io/api-guidelines/</li>
+<li>The Cargo Book. <em>Package Layout</em>. The Rust Programming Language, 2023. https://doc.rust-lang.org/cargo/guide/project-layout.html</li>
+<li>Keats, V. et al. <em>Tera — A template engine inspired by Jinja2 and Django templates</em>. GitHub, 2023. https://keats.github.io/tera/</li>
+</ol>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Bita ta ƙarshe <time datetime="2026-05-24">2026-05-24</time>.</p>
+
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/ha/game-da-mu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Manyan masanin fasahar banki; ina rubutu kan AI mai amfani, ƙaura zuwa ISO 20022, kiriftografi bayan kwantum don sabis na kuɗi da sauye-sauyen tsari na biyan kuɗi na manyan.</span><span class="author-credentials">Fiye da shekaru 20 na ƙwarewa a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/ha/game-da-mu/index.html">Cikakken bayanin martaba</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Bita ta ƙarshe <time datetime="2026-05-27">2026-05-27</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Karatun da ke da alaƙa</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/ha/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html" class="related-media" aria-label="RustLogs (RLG): Structured Logging Library for Rust" tabindex="-1"><img alt="Banner for RustLogs (RLG)" src="https://cloudcdn.pro/api/transform?url=/stocks/images/rustlogs.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="rustlogs-rlg-structured-logging-library-for-rust"><a href="https://sebastienrousseau.com/ha/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">RustLogs (RLG): Structured Logging Library for Rust</a> <a class="heading-anchor" href="#rustlogs-rlg-structured-logging-library-for-rust" aria-label="Hanyar haɗi zuwa RustLogs (RLG): Structured Logging Library for Rust">#</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/ha/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html" class="related-media" aria-label="The making of the Express Transaction Credits Platform" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="the-making-of-the-express-transaction-credits-platform"><a href="https://sebastienrousseau.com/ha/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html">The making of the Express Transaction Credits Platform</a> <a class="heading-anchor" href="#the-making-of-the-express-transaction-credits-platform" aria-label="Hanyar haɗi zuwa The making of the Express Transaction Credits Platform">#</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/ha/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html" class="related-media" aria-label="Alien Studio: My Tech-to Art Journey in Photography" tabindex="-1"><img alt="Sunset's muse, a serene glance; beauty in stillness" src="https://cloudcdn.pro/api/transform?url=/clients/alienstudio/v1/collections/radiance/radiance-08.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="alien-studio-my-tech-to-art-journey-in-photography"><a href="https://sebastienrousseau.com/ha/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html">Alien Studio: My Tech-to Art Journey in Photography</a> <a class="heading-anchor" href="#alien-studio-my-tech-to-art-journey-in-photography" aria-label="Hanyar haɗi zuwa Alien Studio: My Tech-to Art Journey in Photography">#</a></h3><p><time datetime="2024-01-15">2024-01-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ha/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/" class="related-media" aria-label="RustLogs (RLG): Structured Logging Library for Rust" tabindex="-1"><img alt="Banner for RustLogs (RLG)" src="https://cloudcdn.pro/api/transform?url=/stocks/images/rustlogs.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="rustlogs-rlg-structured-logging-library-for-rust"><a href="https://sebastienrousseau.com/ha/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/">RustLogs (RLG): Structured Logging Library for Rust</a> <a class="heading-anchor" href="#rustlogs-rlg-structured-logging-library-for-rust" aria-label="Hanyar haɗi zuwa RustLogs (RLG): Structured Logging Library for Rust">#</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ha/2018-02-15-the-making-of-the-express-transaction-credits-platform/" class="related-media" aria-label="The Making of the Express Transaction Credits Platform" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="the-making-of-the-express-transaction-credits-platform"><a href="https://sebastienrousseau.com/ha/2018-02-15-the-making-of-the-express-transaction-credits-platform/">The Making of the Express Transaction Credits Platform</a> <a class="heading-anchor" href="#the-making-of-the-express-transaction-credits-platform" aria-label="Hanyar haɗi zuwa The Making of the Express Transaction Credits Platform">#</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ha/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/" class="related-media" aria-label="Alien Studio: My Tech-to-Art Journey in Photography" tabindex="-1"><img alt="Sunset's muse, a serene glance; beauty in stillness" src="https://cloudcdn.pro/api/transform?url=/clients/alienstudio/v1/collections/radiance/radiance-08.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="alien-studio-my-tech-to-art-journey-in-photography"><a href="https://sebastienrousseau.com/ha/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/">Alien Studio: My Tech-to-Art Journey in Photography</a> <a class="heading-anchor" href="#alien-studio-my-tech-to-art-journey-in-photography" aria-label="Hanyar haɗi zuwa Alien Studio: My Tech-to-Art Journey in Photography">#</a></h3><p><time datetime="2024-01-15">2024-01-15</time></p></footer></article>
 </div>
-</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Tushen bayanai & nassoshi</h2><ol class="article-sources-list"><li><a href="https://github.com/sebastienrousseau/libmake" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/sebastienrousseau/libmake</span></a></li></ol></aside><nav class="post-pagination" aria-label="Shafin labarin"><a class="post-pagination-prev" href="/ha/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/"><span class="post-pagination-label">Baya</span><span class="post-pagination-title">Protecting Data in the Quantum Age: The Hash Library (HSH)</span></a><a class="post-pagination-next" href="/ha/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/"><span class="post-pagination-label">Gaba</span><span class="post-pagination-title">Mathematical and Cryptographic Constants for Rust Security</span></a></nav></div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Tushen bayanai & nassoshi</h2><ol class="article-sources-list"><li><a href="https://github.com/sebastienrousseau/libmake" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/sebastienrousseau/libmake</span></a></li><li><a href="https://github.com/bheisler/criterion.rs" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/bheisler/criterion.rs</span></a></li></ol></aside><nav class="post-pagination" aria-label="Shafin labarin"><a class="post-pagination-prev" href="/ha/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/"><span class="post-pagination-label">Baya</span><span class="post-pagination-title">Protecting Data in the Quantum Age: The Hash Library (HSH)</span></a><a class="post-pagination-next" href="/ha/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/"><span class="post-pagination-label">Gaba</span><span class="post-pagination-title">Mathematical and Cryptographic Constants for Rust Security</span></a></nav></div>
     </main>
 
 <!-- gen-layouts:footer-start -->
@@ -318,7 +399,7 @@
     <!-- Schema.org structured data -->
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ha"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ha"}]}</script>
 
-        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":762,"about":{"@type":"Thing","name":"Rust","sameAs":["https://en.wikipedia.org/wiki/Rust_(programming_language)","https://www.wikidata.org/wiki/Q575650"]},"headline":"Streamlining Rust Library Development with Code Generation","description":"Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp","width":"100vw","height":"100vh","caption":"Giant white pillars"},"url":"https://sebastienrousseau.com/ha/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/","datePublished":"2023-10-26T11:21:00+00:00","dateModified":"2026-05-11","inLanguage":"ha","keywords":"Rust, library, development, code, generator, boilerplate, best, practices, quality, reliable","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ha/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ha"},"citation":[{"@type":"CreativeWork","url":"https://github.com/sebastienrousseau/libmake"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ha/"},{"@type":"ListItem","position":3,"name":"Streamlining Rust Library Development with Code Generation","item":"https://sebastienrousseau.com/ha/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/"}]}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1077,"about":{"@type":"Thing","name":"Rust","sameAs":["https://en.wikipedia.org/wiki/Rust_(programming_language)","https://www.wikidata.org/wiki/Q575650"]},"headline":"LibMake: Rust Library Scaffold Generator","description":"LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp","width":"100vw","height":"100vh","caption":"Giant white pillars"},"url":"https://sebastienrousseau.com/ha/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/","datePublished":"2023-10-26T11:21:00+00:00","dateModified":"2026-05-24","inLanguage":"ha","keywords":"LibMake, Rust code generator, cargo scaffold, Rust library template, Tera templating, GitHub Actions Rust, cargo-audit, Rust API Guidelines, boilerplate generator, Rust CI workflow","articleSection":"Open Source","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ha/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ha"},"citation":[{"@type":"CreativeWork","url":"https://github.com/sebastienrousseau/libmake"},{"@type":"CreativeWork","url":"https://github.com/bheisler/criterion.rs"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ha/"},{"@type":"ListItem","position":3,"name":"LibMake: Rust Library Scaffold Generator","item":"https://sebastienrousseau.com/ha/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/"}]}]}</script>
 <script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
   
 <!-- SSG Search Widget -->
@@ -344,5 +425,5 @@
 </div>
 <script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
 </div>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Streamlining Rust Library Development with Code Generation","url":"https://sebastienrousseau.com/ha/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/","inLanguage":"ha-NG","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"Rust, library, development, code, generator, boilerplate, best, practices, quality, reliable","programmingLanguage":"Rust"}</script></body>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"LibMake: Rust Library Scaffold Generator","url":"https://sebastienrousseau.com/ha/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/","inLanguage":"ha-NG","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"LibMake, Rust code generator, cargo scaffold, Rust library template, Tera templating, GitHub Actions Rust, cargo-audit, Rust API Guidelines, boilerplate generator, Rust CI workflow","programmingLanguage":"Rust"}</script></body>
 </html>

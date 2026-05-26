@@ -1,11 +1,11 @@
 {
-  "description": "From November 2026, SWIFT CBPR+ requires structured postal addresses in cross-border payment messages. Unstructured address lines (AdrLine alone) will no longer be accepted for key party fields in pacs.008. At minimum, TwnNm and Ctry are required, with StrtNm and BldgNb or PstBx recommended. With six months to go, 65% of payment messages still contain unstructured addresses and 44% of banks remain behind schedule.",
-  "locale": "yo_NG",
-  "banner_alt": "ISO 20022 pacs.008 structured address diagram — cross-border payment message fields with TwnNm and Ctry highlighted",
+  "subtitle": "Láti àárọ̀ November 2026, SWIFT CBPR+ yóò kọ àwọn àdírẹ́sì tí kò ní ìtọ́sọ́nà nínú pacs.008 àti àwọn ìfiranṣẹ ìsanwó aáárọ̀-òkun. Ó fẹ́rẹ̀ẹ́ jẹ́ 65% ìfiranṣẹ ṣì kò bára mu — àkókò fún àtúnṣe ń parí kánkán.",
   "title": "The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View",
+  "language": "yo-NG",
+  "banner_alt": "Àwòrán àpèjúwe ISO 20022 pacs.008 pẹ̀lú àdírẹ́sì tí a ṣètò — àwọn pàǹtírẹ̀ ìfiranṣẹ ìsanwó aáárọ̀-òkun pẹ̀lú TwnNm àti Ctry tó jẹ́ àmì",
+  "description": "Láti November 2026, SWIFT CBPR+ nílò àwọn àdírẹ́sì tí a ṣètò nínú pacs.008. AdrLine nìkan kò ní tún gbà fún àwọn àyè pàtàkì; TwnNm àti Ctry jẹ́ dandan. 65% ìfiranṣẹ ṣì kò bára mu.",
+  "locale": "yo_NG",
   "banner": "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp",
   "date": "May 12, 2026",
-  "keywords": "ISO 20022, pacs.008, SWIFT CBPR+, structured address, November 2026, postal address, TwnNm, Ctry, StrtNm, BldgNb",
-  "subtitle": "From mid-November 2026, SWIFT CBPR+ will reject unstructured postal addresses in pacs.008 and related cross-border payment messages. With approximately 65% of messages still non-compliant, the remediation window is closing fast.",
-  "language": "yo-NG"
+  "keywords": "ISO 20022, pacs.008, SWIFT CBPR+, àdírẹ́sì tí a ṣètò, November 2026, àdírẹ́sì ìpasẹ̀, TwnNm, Ctry, StrtNm, BldgNb"
 }

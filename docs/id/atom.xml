@@ -4,23 +4,23 @@
   <link href="https://sebastienrousseau.com/id/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/id/"/>
   <id>https://sebastienrousseau.com/id/</id>
-  <updated>2026-05-22T21:38:56+00:00</updated>
+  <updated>2026-05-26T23:13:19+00:00</updated>
   <entry>
-    <title>UK Payments Forward Plan 2026: Stablecoin dan Deposito Tertokenisasi</title>
+    <title>Pembayaran Agentik di Perbankan: Persetujuan, Tanggung Jawab, UX 2026</title>
+    <link href="https://sebastienrousseau.com/id/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/"/>
+    <id>https://sebastienrousseau.com/id/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</id>
+    <updated>2026-05-26T23:13:19+00:00</updated>
+    <published>2026-05-26T23:13:19+00:00</published>
+    <summary>Pembayaran agentik pada 2026 telah berpindah dari konsep ke transaksi langsung. Tantangan perbankan bukan lagi apakah AI agent dapat memulai pembayaran, melainkan bagaimana persetujuan, tanggung jawab, identitas, auditabilitas, kendali fraud, dan interoperabilitas protokol harus dirancang.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>UK Payments Forward Plan 2026: Stablecoin, Open Banking, Deposito Tertokenisasi, dan Pembayaran Agentik</title>
     <link href="https://sebastienrousseau.com/id/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/"/>
     <id>https://sebastienrousseau.com/id/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</id>
     <updated>2026-05-24T06:06:06+00:00</updated>
     <published>2026-05-24T06:06:06+00:00</published>
     <summary>UK Payments Forward Plan dan paket April 2026 menyatukan pembayaran tradisional, stablecoin, deposito tertokenisasi, open banking, dan pembayaran agen AI.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Pembayaran Agentik di Perbankan: Persetujuan, Tanggung Jawab, UX 2026</title>
-    <link href="https://sebastienrousseau.com/id/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/"/>
-    <id>https://sebastienrousseau.com/id/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</id>
-    <updated>2026-05-22T21:38:56+00:00</updated>
-    <published>2026-05-22T21:38:56+00:00</published>
-    <summary>Pembayaran agentik pada 2026 telah berpindah dari konsep ke transaksi langsung. Tantangan perbankan bukan lagi apakah AI agent dapat memulai pembayaran, melainkan bagaimana persetujuan, tanggung jawab, identitas, auditabilitas, kendali fraud, dan interoperabilitas protokol harus dirancang.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -33,21 +33,21 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+    <title>Deposito Tertokenisasi pada 2026: Layanan Perbankan, Persaingan Stablecoin, dan Status Uang Bank Komersial yang Dapat Diprogram</title>
     <link href="https://sebastienrousseau.com/id/2026-05-21-tokenised-deposits-banking-services-status-2026/"/>
     <id>https://sebastienrousseau.com/id/2026-05-21-tokenised-deposits-banking-services-status-2026/</id>
     <updated>2026-05-21T06:06:06+00:00</updated>
     <published>2026-05-21T06:06:06+00:00</published>
-    <summary>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</summary>
+    <summary>Layanan tokenised deposit pada 2026 bergerak dari penelitian ke pilot bank dan proposisi klien awal. Statusnya masih pra-skala, namun arahnya jelas: commercial bank money diadaptasi untuk programmable settlement, digital wallets, interoperabilitas stablecoin, dan pasar modal tokenisasi.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+    <title>Perbankan Cloud Native pada 2026: Kubernetes, DORA, Kedaulatan, dan Akhir dari Pemisahan VM vs Kontainer</title>
     <link href="https://sebastienrousseau.com/id/2026-05-20-cloud-native-banking-financial-institutions-2026/"/>
     <id>https://sebastienrousseau.com/id/2026-05-20-cloud-native-banking-financial-institutions-2026/</id>
     <updated>2026-05-20T06:06:06+00:00</updated>
     <published>2026-05-20T06:06:06+00:00</published>
-    <summary>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</summary>
+    <summary>Perbankan cloud native di 2026 mencakup platform engineering berbasis Kubernetes, ketahanan operasional siap-DORA, konvergensi VM dan kontainer, kedaulatan cloud, penempatan beban kerja AI, portabilitas data, dan bukti bahwa layanan keuangan kritis dapat bertahan dari gangguan penyedia.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -74,7 +74,7 @@
     <id>https://sebastienrousseau.com/id/2026-05-17-rekayasa-agentik-bank-cetak-biru-2026/</id>
     <updated>2026-05-17T06:06:06+00:00</updated>
     <published>2026-05-17T06:06:06+00:00</published>
-    <summary>Agentic AI has crossed from pilot into production across global banking. 70% of institutions are using it to some degree; only one in five has a mature governance model. Meanwhile, autonomous adversaries are operating at machine speed, the legacy COBOL estate the new systems must interoperate with was written for the batch-processing assumptions of the 1960s, and the EU AI Act&apos;s August 2026 high-risk deadline is twelve weeks away. This is the engineering and governance position a bank needs to hold.</summary>
+    <summary>AI agentik telah beralih dari percontohan ke produksi di perbankan global. 70% institusi menggunakannya; hanya satu dari lima yang memiliki model tata kelola matang. Musuh otonom beroperasi sekecepatan mesin, warisan COBOL ditulis untuk asumsi pemrosesan batch 1960-an, dan tenggat risiko tinggi EU AI Act Agustus 2026 tinggal dua belas minggu lagi.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -92,7 +92,7 @@
     <id>https://sebastienrousseau.com/id/2026-05-15-imbal-hasil-tersembunyi-blackrock-brsrv-bstbl-genius-act/</id>
     <updated>2026-05-15T06:06:06+00:00</updated>
     <published>2026-05-15T06:06:06+00:00</published>
-    <summary>Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two SEC registrations for products that solve this constraint by being regulated as money market funds rather than stablecoins — while behaving, in the wallet, like yield-bearing dollars. A close reading of BRSRV, BSTBL, and the OCC rulemaking they respond to.</summary>
+    <summary>Stablecoin tak bisa membayar yield di bawah GENIUS Act. BlackRock mendaftarkan BRSRV dan BSTBL pada 8 Mei 2026 sebagai money market fund, bukan stablecoin. Telaah mendalam OCC dan regulasinya.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -101,7 +101,7 @@
     <id>https://sebastienrousseau.com/id/2026-05-14-mengamankan-buku-besar-migrasi-pasca-kuantum-keuangan-korporat/</id>
     <updated>2026-05-14T06:06:06+00:00</updated>
     <published>2026-05-14T06:06:06+00:00</published>
-    <summary>Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026, the EU, UK, and ASD timelines clarified, and the BIS Project Leap proving feasibility at the central-bank level, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today&apos;s data expires.</summary>
+    <summary>Risiko kuantum telah beralih dari keingintahuan penelitian menjadi mandat regulasi aktif. Peta jalan G7 2026, BIS Project Leap, serta timeline EU, UK, dan ASD mengonfirmasi bahwa pertanyaan bagi dewan bukan lagi apakah bermigrasi, melainkan apakah migrasi PQC dapat selesai tepat waktu.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -110,7 +110,7 @@
     <id>https://sebastienrousseau.com/id/2026-05-12-iso-20022-pacs008-tenggat-alamat-terstruktur/</id>
     <updated>2026-05-12T06:06:06+00:00</updated>
     <published>2026-05-12T06:06:06+00:00</published>
-    <summary>From November 2026, SWIFT CBPR+ requires structured postal addresses in cross-border payment messages. Unstructured address lines (AdrLine alone) will no longer be accepted for key party fields in pacs.008. At minimum, TwnNm and Ctry are required, with StrtNm and BldgNb or PstBx recommended. With six months to go, 65% of payment messages still contain unstructured addresses and 44% of banks remain behind schedule.</summary>
+    <summary>Mulai November 2026, SWIFT CBPR+ mewajibkan alamat pos terstruktur dalam pesan pembayaran lintas batas. Baris alamat tidak terstruktur (hanya AdrLine) tidak lagi diterima di pacs.008; minimal TwnNm dan Ctry diperlukan. Saat ini 65% pesan masih tidak patuh dan 44% bank tertinggal dari jadwal.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -119,7 +119,7 @@
     <id>https://sebastienrousseau.com/id/2026-05-11-lucy-besson-transfer-pengetahuan-ai-dan-kuantum/</id>
     <updated>2026-05-11T06:06:06+00:00</updated>
     <published>2026-05-11T06:06:06+00:00</published>
-    <summary>Twelve years on, Besson&apos;s Lucy reads like a thought experiment about knowledge migrating from flesh to machine — quietly validated by LLMs and qubits.</summary>
+    <summary>Dua belas tahun berlalu, Lucy karya Besson terasa seperti eksperimen pikiran tentang pengetahuan yang berpindah dari daging ke mesin — diam-diam divalidasi oleh LLM dan qubit.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -128,7 +128,7 @@
     <id>https://sebastienrousseau.com/id/2026-04-11-ambang-kuantum-bergeser-lagi/</id>
     <updated>2026-04-11T06:06:06+00:00</updated>
     <published>2026-04-11T06:06:06+00:00</published>
-    <summary>Shor&apos;s algorithm may now run on as few as 10,000 qubits. RSA, ECC and the timeline for post-quantum migration are all moving up. Here&apos;s why.</summary>
+    <summary>Shor&apos;s algorithm kini mungkin berjalan hanya dengan 10.000 qubit. RSA, ECC, dan jadwal migrasi post-quantum semuanya semakin dekat. Inilah alasannya.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -137,7 +137,7 @@
     <id>https://sebastienrousseau.com/id/2025-09-01-pembayaran-tahan-kuantum-epaa/</id>
     <updated>2025-09-01T06:06:06+00:00</updated>
     <published>2025-09-01T06:06:06+00:00</published>
-    <summary>Quantum computing threatens payment system cryptography. The EPAA white paper outlines the structural risk and the urgent case for PQC migration.</summary>
+    <summary>Komputasi kuantum mengancam kriptografi sistem pembayaran. Buku putih EPAA menguraikan risiko struktural dan urgensi migrasi ke PQC.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -146,7 +146,7 @@
     <id>https://sebastienrousseau.com/id/2024-04-22-bug-ditemukan-dalam-algoritma-kuantum-untuk-kripto-lattice/</id>
     <updated>2024-04-22T06:06:06+00:00</updated>
     <published>2024-04-22T06:06:06+00:00</published>
-    <summary>A bug in Yilei Chen&apos;s quantum LWE algorithm temporarily reprieves lattice-based cryptography. What it means for CRYSTALS-Kyber, Dilithium and the PQC roadmap.</summary>
+    <summary>Bug dalam algoritma quantum LWE milik Yilei Chen memberikan jeda sementara bagi kriptografi berbasis kisi. Apa artinya bagi CRYSTALS-Kyber, Dilithium, dan peta jalan PQC.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -164,7 +164,7 @@
     <id>https://sebastienrousseau.com/id/2024-04-15-algoritma-kuantum-menantang-kriptografi-berbasis-lattice/</id>
     <updated>2024-04-01T06:06:06+00:00</updated>
     <published>2024-04-01T06:06:06+00:00</published>
-    <summary>A new polynomial-time quantum algorithm by Yilei Chen targets lattice-based cryptography. Implications for post-quantum standards including CRYSTALS-Kyber.</summary>
+    <summary>Algoritma kuantum polynomial-time baru oleh Yilei Chen menargetkan kriptografi berbasis lattice. Implikasinya bagi standar post-kuantum termasuk CRYSTALS-Kyber.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -173,7 +173,7 @@
     <id>https://sebastienrousseau.com/id/2024-03-25-enkripsi-homomorfik-penuh-di-era-kuantum-perbankan/</id>
     <updated>2024-03-25T06:06:06+00:00</updated>
     <published>2024-03-25T06:06:06+00:00</published>
-    <summary>Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats.</summary>
+    <summary>Jelajahi bagaimana Fully Homomorphic Encryption merevolusi keamanan data di Perbankan dan Industri Keuangan, memastikan privasi terhadap ancaman quantum computing.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -182,7 +182,7 @@
     <id>https://sebastienrousseau.com/id/2024-03-18-memajukan-ai-dengan-llm-multimodal-pelajaran-dari-mm1/</id>
     <updated>2024-03-17T06:06:06+00:00</updated>
     <published>2024-03-17T06:06:06+00:00</published>
-    <summary>Explore Apple&apos;s MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials.</summary>
+    <summary>Jelajahi makalah MM1 Apple tentang Multimodal Large Language Models (MLLMs). Pelajari arsitektur, strategi pre-training, dan potensi AI mereka.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -191,7 +191,7 @@
     <id>https://sebastienrousseau.com/id/2024-03-12-revolusi-pengenalan-ucapan-real-time-di-macos-dengan-whisper/</id>
     <updated>2024-03-12T06:06:06+00:00</updated>
     <published>2024-03-12T06:06:06+00:00</published>
-    <summary>Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy.</summary>
+    <summary>Jelajahi bagaimana OpenAI Whisper dan Metal Performance Shaders mengubah pengenalan ucapan real-time di macOS, menawarkan kecepatan dan akurasi yang tak tertandingi.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -200,7 +200,7 @@
     <id>https://sebastienrousseau.com/id/2024-03-08-rustlogs-pustaka-logging-lanjutan-untuk-rust/</id>
     <updated>2024-03-08T06:06:06+00:00</updated>
     <published>2024-03-08T06:06:06+00:00</published>
-    <summary>Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. </summary>
+    <summary>Temukan RustLogs (RLG), pustaka logging fleksibel untuk Rust dengan format log terstruktur, logging asinkron, dan berbagai opsi kustomisasi yang lengkap.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -209,7 +209,7 @@
     <id>https://sebastienrousseau.com/id/2024-03-04-le-chat-dari-mistral-ai-era-baru-ai-percakapan/</id>
     <updated>2024-03-04T06:06:06+00:00</updated>
     <published>2024-03-04T06:06:06+00:00</published>
-    <summary>Meet Mistral AI&apos;s new multilingual Assistant. An advanced AI that can understand and respond in multiple languages, all in one conversation and in real-time.</summary>
+    <summary>Kenali Asisten multibahasa baru dari Mistral AI. AI canggih yang dapat memahami dan merespons dalam berbagai bahasa, semua dalam satu percakapan dan secara real-time.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -218,7 +218,7 @@
     <id>https://sebastienrousseau.com/id/2024-02-26-google-gemma-mentransformasi-pengembangan-ai-sumber-terbuka/</id>
     <updated>2024-02-26T06:06:06+00:00</updated>
     <published>2024-02-26T06:06:06+00:00</published>
-    <summary>Explore Google&apos;s Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use.</summary>
+    <summary>Jelajahi Model AI Gemma dari Google: Proyek open-source yang menawarkan solusi AI etis untuk penggunaan pribadi maupun enterprise.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -227,7 +227,7 @@
     <id>https://sebastienrousseau.com/id/2024-02-19-membuka-gemini-revolusi-ai-google-dijelaskan/</id>
     <updated>2024-02-19T06:06:06+00:00</updated>
     <published>2024-02-19T06:06:06+00:00</published>
-    <summary>Gemini 1.5 from Google scales context windows past 1M tokens. What that unlocks for retrieval-augmented finance and the trade-offs worth knowing.</summary>
+    <summary>Gemini 1.5 dari Google memperluas jendela konteks hingga lebih dari 1 juta token. Apa yang terbuka untuk keuangan berbasis retrieval-augmented dan trade-off yang perlu diketahui.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -236,7 +236,7 @@
     <id>https://sebastienrousseau.com/id/2024-02-13-undang-undang-ai-uni-eropa-membentuk-masa-depan-regulasi-global/</id>
     <updated>2024-02-13T06:06:06+00:00</updated>
     <published>2024-02-13T06:06:06+00:00</published>
-    <summary>The EU AI Act sets the first comprehensive framework for ethical, risk-tiered AI regulation worldwide. What changes for banks, vendors and high-risk systems.</summary>
+    <summary>EU AI Act menetapkan kerangka komprehensif pertama untuk regulasi AI yang etis dan berlapis risiko di seluruh dunia. Apa yang berubah bagi bank, vendor, dan sistem berisiko tinggi.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -245,7 +245,16 @@
     <id>https://sebastienrousseau.com/id/2024-02-12-akande-asisten-suara-revolusi-asistensi-pribadi-dan-eksekutif/</id>
     <updated>2024-02-12T06:06:06+00:00</updated>
     <published>2024-02-12T06:06:06+00:00</published>
-    <summary>Discover how Àkàndé leverages OpenAI GPT&apos;s natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance.</summary>
+    <summary>Temukan bagaimana Àkàndé memanfaatkan pemahaman bahasa alami OpenAI GPT, ringkasan PDF, dan caching efisien untuk mendefinisikan ulang bantuan personal dan eksekutif.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
+    <link href="https://sebastienrousseau.com/id/2024-02-12-akande-asisten-suara-revolusi-asistensi-pribadi-dan-eksekutif/"/>
+    <id>https://sebastienrousseau.com/id/2024-02-12-akande-asisten-suara-revolusi-asistensi-pribadi-dan-eksekutif/</id>
+    <updated>2024-02-12T06:06:06+00:00</updated>
+    <published>2024-02-12T06:06:06+00:00</published>
+    <summary>Àkàndé adalah asisten suara Python open-source yang menggabungkan pengenalan suara OpenAI Whisper, GPT-4 chat completions, dan cache SQLite lokal untuk menghasilkan ringkasan PDF dari riwayat percakapan.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -254,7 +263,16 @@
     <id>https://sebastienrousseau.com/id/2024-02-08-revolusi-periklanan-bagaimana-ai-membentuk-masa-depan/</id>
     <updated>2024-02-08T06:06:06+00:00</updated>
     <published>2024-02-08T06:06:06+00:00</published>
-    <summary>Explore how AI transforms advertising with insights on Amazon&apos;s Rufus and Meta&apos;s latest developments. Discover the impact on consumer engagement</summary>
+    <summary>Jelajahi bagaimana AI mengubah periklanan melalui wawasan tentang Amazon Rufus dan perkembangan terbaru Meta. Temukan dampaknya terhadap keterlibatan konsumen.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
+    <link href="https://sebastienrousseau.com/id/2024-01-29-wawasan-audio-analisis-dan-terjemahan-bertenaga-ai/"/>
+    <id>https://sebastienrousseau.com/id/2024-01-29-wawasan-audio-analisis-dan-terjemahan-bertenaga-ai/</id>
+    <updated>2024-01-29T06:06:06+00:00</updated>
+    <published>2024-01-29T06:06:06+00:00</published>
+    <summary>Audio Analyser menggunakan model neural speech-to-text Azure Cognitive Services, Text Analytics NLP, dan CherryPy untuk mengubah rekaman audio menjadi transkrip yang dapat dicari dengan skor sentimen, ekstraksi kata kunci, dan terjemahan multibahasa.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -263,7 +281,16 @@
     <id>https://sebastienrousseau.com/id/2024-01-29-wawasan-audio-analisis-dan-terjemahan-bertenaga-ai/</id>
     <updated>2024-01-29T06:06:06+00:00</updated>
     <published>2024-01-29T06:06:06+00:00</published>
-    <summary>Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conversion, text analysis, and translations for actionable insights.</summary>
+    <summary>Pelajari bagaimana Audio Analyser yang didukung Azure AI mengubah konversi speech-to-text, analisis teks, dan terjemahan menjadi wawasan yang dapat ditindaklanjuti.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>AI Prompt Engineering 2024: Techniques That Work</title>
+    <link href="https://sebastienrousseau.com/id/2024-01-23-kemajuan-rekayasa-prompt-ai/"/>
+    <id>https://sebastienrousseau.com/id/2024-01-23-kemajuan-rekayasa-prompt-ai/</id>
+    <updated>2024-01-23T06:06:06+00:00</updated>
+    <published>2024-01-23T06:06:06+00:00</published>
+    <summary>Prompt engineering mengendalikan perilaku LLM saat inferensi. Artikel ini membahas zero-shot dan few-shot prompting, chain-of-thought reasoning, self-consistency sampling, arsitektur ReAct tool-use, risiko indirect prompt injection, dan pola dari layanan keuangan.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -272,7 +299,7 @@
     <id>https://sebastienrousseau.com/id/2024-01-23-kemajuan-rekayasa-prompt-ai/</id>
     <updated>2024-01-23T06:06:06+00:00</updated>
     <published>2024-01-23T06:06:06+00:00</published>
-    <summary>Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors.</summary>
+    <summary>Jelajahi kemajuan AI Prompt Engineering tahun 2024, mengungkap tren dan teknik inovatif yang merevolusi sektor teknologi dan keuangan.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -281,7 +308,7 @@
     <id>https://sebastienrousseau.com/id/2024-01-15-alien-studio-revolusi-seni-dengan-fotografi-ai/</id>
     <updated>2024-01-15T06:06:06+00:00</updated>
     <published>2024-01-15T06:06:06+00:00</published>
-    <summary>Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio.</summary>
+    <summary>Ikuti perjalanan pribadi saya dari Rust, AI, dan Quantum Computing hingga mendefinisikan ulang seni dan fotografi melalui Alien Studio.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -290,7 +317,7 @@
     <id>https://sebastienrousseau.com/id/2024-01-01-tren-ai-2024-wawasan-dan-prediksi/</id>
     <updated>2024-01-08T06:06:06+00:00</updated>
     <published>2024-01-08T06:06:06+00:00</published>
-    <summary>AI trends for 2024: generative AI in finance, multimodal models, on-device LLMs and the shifts that will reshape banking and product engineering.</summary>
+    <summary>Tren AI 2024: generative AI di bidang keuangan, model multimodal, LLM on-device, dan pergeseran yang akan mengubah perbankan serta rekayasa produk secara mendasar.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -299,7 +326,7 @@
     <id>https://sebastienrousseau.com/id/2024-01-08-mengoptimalkan-rasio-kredit-dengan-ibm-qiskit-dan-fourier-kuantum/</id>
     <updated>2024-01-08T06:06:06+00:00</updated>
     <published>2024-01-08T06:06:06+00:00</published>
-    <summary>Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed.</summary>
+    <summary>Jelajahi bagaimana IBM Qiskit dan Quantum Fourier Transform merevolusi analisis rasio kredit dalam keuangan, menawarkan akurasi dan kecepatan yang belum pernah ada sebelumnya.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -308,7 +335,7 @@
     <id>https://sebastienrousseau.com/id/2023-12-25-revolusi-keuangan-dengan-algoritma-kuantum-yang-dipertajam-ai/</id>
     <updated>2023-12-25T06:06:06+00:00</updated>
     <published>2023-12-25T06:06:06+00:00</published>
-    <summary>Explore the transformative role of AI in quantum algorithms for finance, with a focus on their mathematical intricacies and banking applications.</summary>
+    <summary>Jelajahi peran transformatif AI dalam algoritma kuantum untuk keuangan, dengan fokus pada kerumitan matematisnya dan aplikasi perbankan.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -317,7 +344,7 @@
     <id>https://sebastienrousseau.com/id/2023-12-18-keadaan-ai-dan-komputasi-kuantum-di-perbankan-ulasan-2023/</id>
     <updated>2023-12-18T06:06:06+00:00</updated>
     <published>2023-12-18T06:06:06+00:00</published>
-    <summary>Exploring 2023&apos;s Technological Landscape: AI &amp; Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations &amp; Governance</summary>
+    <summary>Menelusuri Lanskap Teknologi 2023: AI &amp; Quantum Computing Merevolusi Perbankan, Bangkitnya Model Open-Source, serta Regulasi &amp; Tata Kelola yang Berkembang</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -326,7 +353,7 @@
     <id>https://sebastienrousseau.com/id/2023-12-11-distribusi-kunci-kuantum-revolusi-keamanan-perbankan/</id>
     <updated>2023-12-11T06:06:06+00:00</updated>
     <published>2023-12-11T06:06:06+00:00</published>
-    <summary>As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security.</summary>
+    <summary>Ketika komputer kuantum mengancam metode enkripsi tradisional, Quantum Key Distribution (QKD) muncul sebagai pengubah paradigma yang menawarkan keamanan tak tertandingi.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -335,7 +362,7 @@
     <id>https://sebastienrousseau.com/id/2023-12-04-menguasai-tanggal-dan-waktu-di-rust-dengan-pustaka-dtt/</id>
     <updated>2023-12-04T06:06:06+00:00</updated>
     <published>2023-12-04T06:06:06+00:00</published>
-    <summary>DateTime (DTT) is a Rust library for parsing, validating, manipulating and formatting dates and times — high precision, broad functionality.</summary>
+    <summary>DateTime (DTT) adalah pustaka Rust untuk mengurai, memvalidasi, memanipulasi, dan memformat tanggal dan waktu — presisi tinggi dengan fungsionalitas yang luas.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -344,7 +371,7 @@
     <id>https://sebastienrousseau.com/id/2023-11-28-kyberlib-perisai-rust-terhadap-ancaman-kuantum/</id>
     <updated>2023-11-28T06:06:06+00:00</updated>
     <published>2023-11-28T06:06:06+00:00</published>
-    <summary>A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algorithm, to Protect Your Data from Quantum Threats and Cryptanalytic Attacks.</summary>
+    <summary>Implementasi kriptografi CRYSTALS-Kyber yang andal dan tahan-kuantum, untuk melindungi data Anda dari ancaman komputasi kuantum dan serangan kriptanalitik.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -353,7 +380,16 @@
     <id>https://sebastienrousseau.com/id/2023-11-19-crystals-kyber-algoritma-pengaman-di-era-kuantum/</id>
     <updated>2023-11-19T06:06:06+00:00</updated>
     <published>2023-11-19T06:06:06+00:00</published>
-    <summary>Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.</summary>
+    <summary>Temukan bagaimana CRYSTALS-Kyber, algoritma kriptografi tahan kuantum, merevolusi dunia kriptografi dan mempersiapkan kita menghadapi era kuantum.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Generative AI in 2023: How It Works, Where It Lands</title>
+    <link href="https://sebastienrousseau.com/id/2023-11-12-menjelajahi-ai-generatif/"/>
+    <id>https://sebastienrousseau.com/id/2023-11-12-menjelajahi-ai-generatif/</id>
+    <updated>2023-11-12T06:06:06+00:00</updated>
+    <published>2023-11-12T06:06:06+00:00</published>
+    <summary>Cara kerja model transformer, model 2023 mana yang menetapkan tolok ukur, di mana generative AI pertama diterapkan dalam layanan keuangan, dan pertanyaan tata kelola apa yang harus dijawab sebelum deployment.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -371,7 +407,16 @@
     <id>https://sebastienrousseau.com/id/2023-11-05-konstanta-matematis-dan-kriptografi-untuk-rust/</id>
     <updated>2023-11-05T06:06:06+00:00</updated>
     <published>2023-11-05T06:06:06+00:00</published>
-    <summary>Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code security.</summary>
+    <summary>Lindungi integritas kode dengan konstanta matematika dan kriptografi yang telah diverifikasi secara cermat, memperkuat keamanan memori dan konkurensi demi keamanan kode yang lebih tinggi.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>LibMake: Rust Library Scaffold Generator</title>
+    <link href="https://sebastienrousseau.com/id/2023-10-26-libmake-generator-kode-untuk-pustaka-rust/"/>
+    <id>https://sebastienrousseau.com/id/2023-10-26-libmake-generator-kode-untuk-pustaka-rust/</id>
+    <updated>2023-10-26T06:06:06+00:00</updated>
+    <published>2023-10-26T06:06:06+00:00</published>
+    <summary>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -380,7 +425,7 @@
     <id>https://sebastienrousseau.com/id/2023-10-26-libmake-generator-kode-untuk-pustaka-rust/</id>
     <updated>2023-10-26T06:06:06+00:00</updated>
     <published>2023-10-26T06:06:06+00:00</published>
-    <summary>Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort.</summary>
+    <summary>Tingkatkan pengembangan pustaka Rust dengan LibMake: alat pembuat kode yang menerapkan praktik terbaik dan menghasilkan kode awal, sehingga menghemat waktu dan tenaga para pengembang.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -389,7 +434,7 @@
     <id>https://sebastienrousseau.com/id/2023-10-16-melindungi-data-di-era-kuantum-pustaka-hash-hsh/</id>
     <updated>2023-10-16T06:06:06+00:00</updated>
     <published>2023-10-16T06:06:06+00:00</published>
-    <summary>HSH uses quantum-resistant cryptographic primitives to protect your data, ensuring its security even in the face of future quantum computing advances.</summary>
+    <summary>HSH menggunakan primitif kriptografi tahan-kuantum untuk melindungi data Anda, memastikan keamanannya bahkan menghadapi kemajuan komputasi kuantum di masa depan.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -398,7 +443,16 @@
     <id>https://sebastienrousseau.com/id/2023-10-09-shokunin-generator-situs-statis-rust-tercepat/</id>
     <updated>2023-10-09T06:06:06+00:00</updated>
     <published>2023-10-09T06:06:06+00:00</published>
-    <summary>Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control.</summary>
+    <summary>Memberdayakan Anda untuk membuat situs web statis berdampak tinggi dengan kemungkinan tak terbatas, skalabilitas tanpa batas, dan kehadiran web unik yang sepenuhnya Anda kendalikan.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Automating ISO 20022 Payment Files Creation with pain001</title>
+    <link href="https://sebastienrousseau.com/id/2023-09-29-otomatisasi-pembuatan-berkas-pembayaran-iso-20022-dengan-pain001/"/>
+    <id>https://sebastienrousseau.com/id/2023-09-29-otomatisasi-pembuatan-berkas-pembayaran-iso-20022-dengan-pain001/</id>
+    <updated>2023-09-29T06:06:06+00:00</updated>
+    <published>2023-09-29T06:06:06+00:00</published>
+    <summary>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -407,7 +461,7 @@
     <id>https://sebastienrousseau.com/id/2023-09-29-otomatisasi-pembuatan-berkas-pembayaran-iso-20022-dengan-pain001/</id>
     <updated>2023-09-29T06:06:06+00:00</updated>
     <published>2023-09-29T06:06:06+00:00</published>
-    <summary>Automate the creation of ISO 20022 pain.001 payment files from CSV or SQLite. pain001 is the open-source Python library that streamlines compliance.</summary>
+    <summary>Otomatiskan pembuatan file pembayaran ISO 20022 pain.001 dari CSV atau SQLite. pain001 adalah pustaka Python sumber terbuka yang menyederhanakan kepatuhan regulasi.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -420,6 +474,15 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>The making of the Express Transaction Credits Platform</title>
+    <link href="https://sebastienrousseau.com/id/2018-02-15-pembuatan-platform-express-transaction-credits/"/>
+    <id>https://sebastienrousseau.com/id/2018-02-15-pembuatan-platform-express-transaction-credits/</id>
+    <updated>2018-02-15T06:06:06+00:00</updated>
+    <published>2018-02-15T06:06:06+00:00</published>
+    <summary>Analisis mendalam tentang bagaimana platform EXTC dibangun di atas Ethereum ERC-223 pada 2018: arsitektur token, pencairan multi-sig, transfer time-locked, dan pinjaman instan berbasis kolateral.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>[ID DRAFT] Unveiling a new Cryptocurrency and Faster Payment Solution</title>
     <link href="https://sebastienrousseau.com/id/2018-02-04-mata-uang-kripto-baru-dan-solusi-pembayaran-lebih-cepat/"/>
     <id>https://sebastienrousseau.com/id/2018-02-04-mata-uang-kripto-baru-dan-solusi-pembayaran-lebih-cepat/</id>
@@ -429,12 +492,21 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
+    <link href="https://sebastienrousseau.com/id/2018-02-04-mata-uang-kripto-baru-dan-solusi-pembayaran-lebih-cepat/"/>
+    <id>https://sebastienrousseau.com/id/2018-02-04-mata-uang-kripto-baru-dan-solusi-pembayaran-lebih-cepat/</id>
+    <updated>2018-02-04T06:06:06+00:00</updated>
+    <published>2018-02-04T06:06:06+00:00</published>
+    <summary>Pada awal 2018, platform EXTC menjajaki pembayaran lintas batas yang lebih cepat melalui smart contract Ethereum ERC-223 — cetak biru awal bagi apa yang kemudian dibangun oleh keuangan terdesentralisasi.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>[ID DRAFT] ERC-20: The Ethereum Token Interface That Changed the World</title>
     <link href="https://sebastienrousseau.com/id/2018-01-24-standar-token-erc-20/"/>
     <id>https://sebastienrousseau.com/id/2018-01-24-standar-token-erc-20/</id>
     <updated>2018-01-24T06:06:06+00:00</updated>
     <published>2018-01-24T06:06:06+00:00</published>
-    <summary>ERC-20: The Ethereum Token ERC-20 is the most common type of token used on the Ethereum blockchain and is often referred to as a smart contract digital contract</summary>
+    <summary>ERC-20 adalah jenis token paling umum di blockchain Ethereum, sering disebut kontrak digital smart contract yang merevolusi cara aset digital diperdagangkan.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -447,12 +519,21 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>Understanding the Technology behind Blockchain</title>
+    <link href="https://sebastienrousseau.com/id/2018-01-09-memahami-teknologi-di-balik-blockchain/"/>
+    <id>https://sebastienrousseau.com/id/2018-01-09-memahami-teknologi-di-balik-blockchain/</id>
+    <updated>2018-01-09T06:06:06+00:00</updated>
+    <published>2018-01-09T06:06:06+00:00</published>
+    <summary>Pengantar teknis cara kerja blockchain: rantai hash kriptografis, Merkle tree, konsensus terdistribusi, dan bagaimana lapisan terprogram Ethereum mengubah buku besar pembayaran menjadi platform smart contract dan aset tokenisasi.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>[ID DRAFT] Blockchain explained, the technology that matters the most</title>
     <link href="https://sebastienrousseau.com/id/2018-01-02-blockchain-teknologi-yang-penting-di-2018/"/>
     <id>https://sebastienrousseau.com/id/2018-01-02-blockchain-teknologi-yang-penting-di-2018/</id>
     <updated>2018-01-02T06:06:06+00:00</updated>
     <published>2018-01-02T06:06:06+00:00</published>
-    <summary>A story of the extraordinary journey of securing digital transactions through Private-key Cryptography and Peer-to-peer (P2P) networks.</summary>
+    <summary>Kisah perjalanan luar biasa dalam mengamankan transaksi digital melalui Private-key Cryptography dan jaringan Peer-to-peer (P2P).</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -461,7 +542,7 @@
     <id>https://sebastienrousseau.com/id/2018-01-01-bitcoin-ulasan-tahunan/</id>
     <updated>2018-01-01T06:06:06+00:00</updated>
     <published>2018-01-01T06:06:06+00:00</published>
-    <summary>Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online.</summary>
+    <summary>Bitcoin: Sistem Uang Elektronik Peer-to-Peer (P2P ECS) yang berpotensi merevolusi cara orang bertransaksi secara online.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
 </feed>

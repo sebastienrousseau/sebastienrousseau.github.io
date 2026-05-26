@@ -6,7 +6,7 @@
     <description>हिन्दी लेख: व्यावहारिक AI, ISO 20022 भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतान का रूपांतरण।</description>
     <atom:link href="https://sebastienrousseau.com/hi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>hi-IN</language>
-    <lastBuildDate>Fri, 22 May 2026 21:38:56 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 23:13:19 +0000</lastBuildDate>
     <copyright>© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।</copyright>
     <item>
       <title>UK Payments Forward Plan 2026: स्टेबलकॉइन, ओपन बैंकिंग, टोकनीकृत जमा व एजेंटिक भुगतान</title>
@@ -81,51 +81,51 @@
       <category>लंदन जैज़ संगीत कार्यक्रम</category>
     </item>
     <item>
-      <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+      <title>2026 में टोकनीकृत जमा: बैंकिंग सेवाएँ, स्टेबलकॉइन्स प्रतिस्पर्धा, और प्रोग्राम योग्य वाणिज्यिक बैंक मुद्रा की स्थिति</title>
       <link>https://sebastienrousseau.com/hi/2026-05-21-tokenised-deposits-banking-services-status-2026/</link>
-      <description>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</description>
+      <description>2026 में टोकनाइज्ड डिपॉजिट सेवाएं अनुसंधान से बैंक पायलट और शुरुआती क्लाइंट प्रस्तावों की ओर बढ़ रही हैं। स्थिति अभी प्री-स्केल है, लेकिन दिशा स्पष्ट है: commercial bank money को programmable settlement और digital wallets के लिए अनुकूलित किया जा रहा है।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-21-tokenised-deposits-banking-services-status-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" type="image/webp" length="0"/>
-      <category>tokenised deposits 2026</category>
-      <category>tokenized deposits banking</category>
-      <category>deposit tokens</category>
+      <category>टोकनाइज्ड डिपॉजिट 2026</category>
+      <category>टोकनाइज्ड डिपॉजिट बैंकिंग</category>
+      <category>डिपॉजिट टोकन</category>
       <category>Great British Tokenised Deposits</category>
       <category>Lloyds digital assets</category>
-      <category>stablecoins</category>
-      <category>commercial bank money</category>
+      <category>स्टेबलकॉइन</category>
+      <category>कमर्शियल बैंक मनी</category>
       <category>BIS stablecoins</category>
       <category>Project Agora</category>
-      <category>unified ledger</category>
+      <category>यूनिफाइड लेजर</category>
       <category>Deutsche Bank digital money</category>
       <category>CBDC</category>
-      <category>tokenised money</category>
-      <category>digital wallets</category>
-      <category>tokenised gilts</category>
+      <category>टोकनाइज्ड मनी</category>
+      <category>डिजिटल वॉलेट</category>
+      <category>टोकनाइज्ड गिल्ट्स</category>
     </item>
     <item>
-      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <title>2026 में क्लाउड-नेटिव बैंकिंग: Kubernetes, DORA, संप्रभुता, और VM बनाम कंटेनर विभाजन का अंत</title>
       <link>https://sebastienrousseau.com/hi/2026-05-20-cloud-native-banking-financial-institutions-2026/</link>
-      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <description>2026 में क्लाउड नेटिव बैंकिंग Kubernetes-आधारित प्लेटफ़ॉर्म इंजीनियरिंग, DORA-तैयार परिचालन लचीलेपन, VM और कंटेनर अभिसरण, क्लाउड संप्रभुता, AI वर्कलोड प्लेसमेंट, डेटा पोर्टेबिलिटी और इस प्रमाण के बारे में है कि महत्वपूर्ण वित्तीय सेवाएं प्रदाता व्यवधान से बच सकती हैं।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-20-cloud-native-banking-financial-institutions-2026/</guid>
       <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
-      <category>cloud native banking 2026</category>
-      <category>Kubernetes banks</category>
-      <category>financial institutions cloud</category>
+      <category>क्लाउड नेटिव बैंकिंग 2026</category>
+      <category>Kubernetes बैंक</category>
+      <category>वित्तीय संस्थान क्लाउड</category>
       <category>DORA 2026</category>
-      <category>cloud resilience</category>
+      <category>क्लाउड लचीलापन</category>
       <category>Red Hat OpenShift</category>
       <category>Portworx</category>
-      <category>VM container coexistence</category>
-      <category>bank cloud sovereignty</category>
-      <category>financial services cloud dependency</category>
-      <category>operational resilience</category>
-      <category>disaster recovery</category>
-      <category>cloud exit strategy</category>
-      <category>AI banking workloads</category>
+      <category>VM कंटेनर सहअस्तित्व</category>
+      <category>बैंक क्लाउड संप्रभुता</category>
+      <category>वित्तीय सेवाएं क्लाउड निर्भरता</category>
+      <category>परिचालन लचीलापन</category>
+      <category>आपदा पुनर्प्राप्ति</category>
+      <category>क्लाउड निकास रणनीति</category>
+      <category>AI बैंकिंग वर्कलोड</category>
     </item>
     <item>
       <title>2026 में वैश्विक थोक भुगतान: ISO 20022, RTGS नवीनीकरण और अंतर-संचालनीयता का अर्थशास्त्र</title>
@@ -545,6 +545,27 @@
       <category>मानक</category>
     </item>
     <item>
+      <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
+      <link>https://sebastienrousseau.com/hi/2024-02-12-akande-voice-assistant-vyaktigat-aur-karyakari-sahaayata/</link>
+      <description>Àkàndé एक ओपन-सोर्स Python वॉयस असिस्टेंट है जो OpenAI Whisper स्पीच रिकग्निशन, GPT-4 चैट कंप्लीशन और SQLite रिस्पॉन्स कैश को जोड़कर PDF सारांश बनाता है।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2024-02-12-akande-voice-assistant-vyaktigat-aur-karyakari-sahaayata/</guid>
+      <pubDate>Mon, 12 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" type="image/webp" length="0"/>
+      <category>Àkàndé</category>
+      <category>OpenAI GPT-4</category>
+      <category>Whisper STT</category>
+      <category>SQLite कैशिंग</category>
+      <category>fpdf2</category>
+      <category>Python वॉयस असिस्टेंट</category>
+      <category>चैट कंप्लीशन API</category>
+      <category>PDF सारांश निर्माण</category>
+      <category>SHA-256 कैश</category>
+      <category>टेक्स्ट-टू-स्पीच</category>
+      <category>एग्जीक्यूटिव असिस्टेंट AI</category>
+      <category>ओपन-सोर्स</category>
+    </item>
+    <item>
       <title>Akande वॉइस-सहायक: व्यक्तिगत और कार्यकारी-सहायता में क्रांति</title>
       <link>https://sebastienrousseau.com/hi/2024-02-12-akande-voice-assistant-vyaktigat-aur-karyakari-sahaayata/</link>
       <description>Akande एक Rust-आधारित वॉइस-सहायक है जो व्यक्तिगत और कार्यकारी-सहायता हेतु डिज़ाइन किया गया है।</description>
@@ -600,6 +621,48 @@
       <category>multilingual</category>
       <category>ASR</category>
       <category>transcription</category>
+    </item>
+    <item>
+      <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
+      <link>https://sebastienrousseau.com/hi/2024-01-29-ai-aadharit-audio-vishleshan-anuvaad-aur-drishtikon/</link>
+      <description>Audio Analyser, Azure Cognitive Services के speech-to-text न्यूरल मॉडल, Text Analytics NLP और CherryPy का उपयोग करके ऑडियो रिकॉर्डिंग को खोज योग्य ट्रांसक्रिप्ट, सेंटीमेंट स्कोर, कीवर्ड निष्कर्षण और बहुभाषी अनुवाद में बदलता है।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2024-01-29-ai-aadharit-audio-vishleshan-anuvaad-aur-drishtikon/</guid>
+      <pubDate>Mon, 29 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" type="image/webp" length="0"/>
+      <category>Azure Cognitive Services</category>
+      <category>speech-to-text</category>
+      <category>न्यूरल अकॉस्टिक मॉडल</category>
+      <category>Azure Text Analytics</category>
+      <category>प्राकृतिक भाषा प्रसंस्करण</category>
+      <category>सेंटीमेंट विश्लेषण</category>
+      <category>CherryPy</category>
+      <category>batch transcription API</category>
+      <category>बहुभाषी ASR</category>
+      <category>Azure Translator</category>
+      <category>ऑडियो ट्रांसक्रिप्शन</category>
+      <category>Python ऑडियो प्रोसेसिंग</category>
+    </item>
+    <item>
+      <title>AI Prompt Engineering 2024: Techniques That Work</title>
+      <link>https://sebastienrousseau.com/hi/2024-01-23-ai-prompt-engineering-mein-pragati/</link>
+      <description>प्रॉम्प्ट इंजीनियरिंग inference समय पर LLM व्यवहार को नियंत्रित करती है। यह लेख zero-shot, few-shot prompting, chain-of-thought reasoning, self-consistency sampling, ReAct tool-use architecture, indirect prompt injection जोखिम और वित्तीय सेवाओं के पैटर्न को कवर करता है।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2024-01-23-ai-prompt-engineering-mein-pragati/</guid>
+      <pubDate>Tue, 23 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" type="image/webp" length="0"/>
+      <category>chain-of-thought prompting</category>
+      <category>few-shot learning</category>
+      <category>zero-shot prompting</category>
+      <category>in-context learning</category>
+      <category>prompt injection</category>
+      <category>ReAct</category>
+      <category>self-consistency</category>
+      <category>retrieval-augmented generation</category>
+      <category>BloombergGPT</category>
+      <category>system prompt</category>
+      <category>prompt security</category>
+      <category>LLM agent</category>
     </item>
     <item>
       <title>AI प्रॉम्प्ट-इंजीनियरिंग में प्रगति</title>
@@ -792,6 +855,25 @@
       <category>FIPS</category>
     </item>
     <item>
+      <title>Generative AI in 2023: How It Works, Where It Lands</title>
+      <link>https://sebastienrousseau.com/hi/2023-11-12-generative-ai-ki-padtaal/</link>
+      <description>ट्रांसफॉर्मर मॉडल कैसे काम करते हैं, 2023 के कौन से मॉडल बेंचमार्क बने, वित्तीय सेवाओं में generative AI पहले कहाँ उतरता है, और तैनाती से पहले किन गवर्नेंस प्रश्नों के उत्तर ज़रूरी हैं।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2023-11-12-generative-ai-ki-padtaal/</guid>
+      <pubDate>Sun, 12 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
+      <category>generative AI</category>
+      <category>large language model</category>
+      <category>transformer architecture</category>
+      <category>GPT-4</category>
+      <category>वित्तीय सेवाएं AI</category>
+      <category>hallucination</category>
+      <category>retrieval-augmented generation</category>
+      <category>AI governance</category>
+      <category>foundation model</category>
+      <category>fine-tuning</category>
+    </item>
+    <item>
       <title>जनरेटिव AI की पड़ताल</title>
       <link>https://sebastienrousseau.com/hi/2023-11-12-generative-ai-ki-padtaal/</link>
       <description>जनरेटिव AI का परिचय: LLM, प्रसार-मॉडल, उद्यम-स्तरीय उपयोग के मामले और नैतिक विचार।</description>
@@ -828,6 +910,25 @@
       <category>NIST</category>
       <category>π</category>
       <category>e</category>
+    </item>
+    <item>
+      <title>LibMake: Rust Library Scaffold Generator</title>
+      <link>https://sebastienrousseau.com/hi/2023-10-26-libmake-rust-libraries-ke-liye-code-generator/</link>
+      <description>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2023-10-26-libmake-rust-libraries-ke-liye-code-generator/</guid>
+      <pubDate>Thu, 26 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
+      <category>LibMake</category>
+      <category>Rust code generator</category>
+      <category>cargo scaffold</category>
+      <category>Rust library template</category>
+      <category>Tera templating</category>
+      <category>GitHub Actions Rust</category>
+      <category>cargo-audit</category>
+      <category>Rust API Guidelines</category>
+      <category>boilerplate generator</category>
+      <category>Rust CI workflow</category>
     </item>
     <item>
       <title>libmake: दोहराव कम करने और उच्च-गुणवत्ता वाली Rust-लाइब्रेरी बनाने वाला कोड-जनरेटर</title>
@@ -887,6 +988,29 @@
       <category>ओपन सोर्स</category>
     </item>
     <item>
+      <title>Automating ISO 20022 Payment Files Creation with pain001</title>
+      <link>https://sebastienrousseau.com/hi/2023-09-29-pain001-ke-saath-iso-20022-bhugtaan-file-svachalan/</link>
+      <description>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2023-09-29-pain001-ke-saath-iso-20022-bhugtaan-file-svachalan/</guid>
+      <pubDate>Fri, 29 Sep 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" type="image/webp" length="0"/>
+      <category>pain001</category>
+      <category>ISO 20022</category>
+      <category>pain.001.001.09</category>
+      <category>CustomerCreditTransferInitiation</category>
+      <category>SEPA Credit Transfer</category>
+      <category>CBPR+</category>
+      <category>payment automation</category>
+      <category>XML generation</category>
+      <category>XSD validation</category>
+      <category>GrpHdr</category>
+      <category>PmtInf</category>
+      <category>CdtTrfTxInf</category>
+      <category>CtrlSum</category>
+      <category>SWIFT</category>
+    </item>
+    <item>
       <title>pain001 के साथ ISO 20022-अनुपालक भुगतान-फ़ाइलों का स्वचालन</title>
       <link>https://sebastienrousseau.com/hi/2023-09-29-pain001-ke-saath-iso-20022-bhugtaan-file-svachalan/</link>
       <description>pain001 Python लाइब्रेरी से ISO 20022-अनुपालक भुगतान-फ़ाइलें कैसे उत्पन्न करें — एक व्यावहारिक गाइड।</description>
@@ -925,6 +1049,25 @@
       <category>भुगतान</category>
     </item>
     <item>
+      <title>The making of the Express Transaction Credits Platform</title>
+      <link>https://sebastienrousseau.com/hi/2018-02-15-express-transaction-credits-platform-ka-nirmaan/</link>
+      <description>2018 में Ethereum ERC-223 पर EXTC प्लेटफॉर्म के निर्माण का तकनीकी विश्लेषण: टोकन आर्किटेक्चर, मल्टी-सिग वितरण, टाइम-लॉक्ड ट्रांसफर और कोलैटरल-बैक्ड इंस्टेंट लोन।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2018-02-15-express-transaction-credits-platform-ka-nirmaan/</guid>
+      <pubDate>Thu, 15 Feb 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
+      <category>EXTC platform</category>
+      <category>ERC-223</category>
+      <category>Ethereum smart contracts</category>
+      <category>टोकन आर्किटेक्चर</category>
+      <category>multi-signature</category>
+      <category>time-locked transfer</category>
+      <category>ब्लॉकचेन पेमेंट</category>
+      <category>collateral-backed loans</category>
+      <category>विकेंद्रीकृत वित्त</category>
+      <category>2018 crypto</category>
+    </item>
+    <item>
       <title>एक नई क्रिप्टोकरेंसी का अनावरण और भविष्य के तीव्र-भुगतान-समाधान की प्रस्तुति</title>
       <link>https://sebastienrousseau.com/hi/2018-02-04-nayi-cryptocurrency-aur-teevra-bhugtaan-samaadhaan/</link>
       <description>एक नई क्रिप्टोकरेंसी का अनावरण जो सीमा-पार भुगतान को तेज़, सस्ता और अधिक सुरक्षित बनाने का लक्ष्य रखती है।</description>
@@ -942,6 +1085,25 @@
       <category>ETC</category>
       <category>P2P</category>
       <category>payment rails</category>
+    </item>
+    <item>
+      <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
+      <link>https://sebastienrousseau.com/hi/2018-02-04-nayi-cryptocurrency-aur-teevra-bhugtaan-samaadhaan/</link>
+      <description>2018 की शुरुआत में, EXTC प्लेटफ़ॉर्म ने Ethereum ERC-223 स्मार्ट कॉन्ट्रैक्ट के माध्यम से तेज़ सीमा-पार भुगतान की खोज की — विकेन्द्रीकृत वित्त की नींव का प्रारंभिक खाका।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2018-02-04-nayi-cryptocurrency-aur-teevra-bhugtaan-samaadhaan/</guid>
+      <pubDate>Sun, 04 Feb 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" type="image/webp" length="0"/>
+      <category>EXTC</category>
+      <category>ERC-223</category>
+      <category>Ethereum स्मार्ट कॉन्ट्रैक्ट</category>
+      <category>तेज़ भुगतान</category>
+      <category>क्रिप्टोकरेंसी</category>
+      <category>ब्लॉकचेन भुगतान</category>
+      <category>पेमेंट टोकन</category>
+      <category>विकेन्द्रीकृत वित्त</category>
+      <category>ERC-20</category>
+      <category>सीमा-पार भुगतान</category>
     </item>
     <item>
       <title>ERC-20 टोकन-मानक</title>
@@ -980,6 +1142,27 @@
       <category>मर्कल वृक्ष</category>
       <category>विकेंद्रीकरण</category>
       <category>P2P</category>
+    </item>
+    <item>
+      <title>Understanding the Technology behind Blockchain</title>
+      <link>https://sebastienrousseau.com/hi/2018-01-09-blockchain-ke-peechhe-ki-takneek-samajhna/</link>
+      <description>ब्लॉकचेन कैसे काम करती है: क्रिप्टोग्राफिक हैश चेन, Merkle ट्री, वितरित सहमति, और Ethereum की प्रोग्रामेबल लेयर ने भुगतान लेजर को स्मार्ट कॉन्ट्रैक्ट और टोकनाइज्ड एसेट्स के प्लेटफॉर्म में कैसे बदला।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2018-01-09-blockchain-ke-peechhe-ki-takneek-samajhna/</guid>
+      <pubDate>Tue, 09 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" type="image/webp" length="0"/>
+      <category>blockchain तकनीक</category>
+      <category>क्रिप्टोग्राफिक हैश</category>
+      <category>Merkle tree</category>
+      <category>वितरित सहमति</category>
+      <category>proof of work</category>
+      <category>Ethereum</category>
+      <category>smart contracts</category>
+      <category>EVM</category>
+      <category>Solidity</category>
+      <category>ERC-20</category>
+      <category>distributed ledger</category>
+      <category>विकेंद्रीकृत वित्त</category>
     </item>
     <item>
       <title>Blockchain: 2018 में मायने रखने वाली प्रौद्योगिकी</title>

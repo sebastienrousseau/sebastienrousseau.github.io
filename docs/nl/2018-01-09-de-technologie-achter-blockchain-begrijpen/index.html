@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta itemprop="datePublished" content="Mon, 09 Jan 2023 09:09:00 +0000" id="date" />
-    <meta itemprop="dateModified" content="Mon, 09 Jan 2023 09:09:00 +0000" id="last-modified" />
-    <title>De technologie achter blockchain begrijpen — Sebastien Rousseau</title>
+    <meta itemprop="datePublished" content="Tue, 09 Jan 2018 09:09:00 +0000" id="date" />
+    <meta itemprop="dateModified" content="Tue, 09 Jan 2018 09:09:00 +0000" id="last-modified" />
+    <title>Understanding the Technology behind Blockchain — Sebastien Rousseau</title>
 
     <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
-<meta name="description" content="Een toegankelijke gids voor de technologie achter blockchain: cryptografische primitieven, consensusmechanismen en gedistribueerde netwerken.">
-<meta name="keywords" content="Blockchain, cryptografie, consensus, hashing, proof-of-work, proof-of-stake, gedistribueerd grootboek">
+<meta name="description" content="Een technische introductie tot hoe blockchain werkt: cryptografische hashketens, Merkle-bomen, gedistribueerde consensus, en hoe Ethereum&#x27;s programmeerbare laag een betalingsledger omzette in een platform voor smart contracts en getokeniseerde activa.">
+<meta name="keywords" content="blockchaintechnologie, cryptografische hash, Merkle-boom, gedistribueerde consensus, proof of work, Ethereum, smart contracts, EVM, Solidity, ERC-20, gedistribueerd ledger, gedecentraliseerde financiën">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
     <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+<meta name="apple-mobile-web-app-title" content="Blockchain Tech">
 
     <!-- Strict security headers. The headers below that can be set via
          <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
@@ -40,7 +40,7 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-FBCfwyVSUFpFxuqqLomMPSfGikGnK7P9aaKVmhOTle4=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-naWYAlZHTG7N/EJthh1LoM6rVa+zHstHsjr0r9l4zkY=' 'sha256-nhTN+1KiLY17czf790c8l/rntj8eYENcZkNPSn0Wlmc=' 'sha256-xbCW6h3uyVEMmS7X4dhY1idq992l6FVkvxEMYCMDqGM=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-6S9p7IOqgCV4MSYF6LBhQq1qhh+8UcYk/LwhcjF7lwU=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-nIBNXR9GwkaRL29SL9LtHxfPQWh29MO0+9IzMyPj7iM=' 'sha256-naWYAlZHTG7N/EJthh1LoM6rVa+zHstHsjr0r9l4zkY=' 'sha256-nhTN+1KiLY17czf790c8l/rntj8eYENcZkNPSn0Wlmc=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
@@ -77,8 +77,8 @@
     <link rel="alternate" type="application/atom+xml" title="Atom-feed" href="/nl/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="stylesheet" href="/highlight.a92b9694.css">
-<meta property="og:title" content="De technologie achter blockchain begrijpen — Sebastien Rousseau">
-<meta property="og:description" content="Een toegankelijke gids voor de technologie achter blockchain: cryptografische primitieven, consensusmechanismen en gedistribueerde netwerken.">
+<meta property="og:title" content="Understanding the Technology behind Blockchain — Sebastien Rousseau">
+<meta property="og:description" content="Een technische introductie tot hoe blockchain werkt: cryptografische hashketens, Merkle-bomen, gedistribueerde consensus, en hoe Ethereum&#x27;s programmeerbare laag een betalingsledger omzette in een platform voor smart contracts en getokeniseerde activa.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sebastienrousseau.com/nl/2018-01-09-de-technologie-achter-blockchain-begrijpen/">
 <meta property="og:image" content="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp">
@@ -86,8 +86,8 @@
 <meta property="og:image:height" content="100vh">
 <meta property="og:locale" content="nl_NL">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="De technologie achter blockchain begrijpen — Sebastien Rousseau">
-<meta name="twitter:description" content="Een toegankelijke gids voor de technologie achter blockchain: cryptografische primitieven, consensusmechanismen en gedistribueerde netwerken.">
+<meta name="twitter:title" content="Understanding the Technology behind Blockchain — Sebastien Rousseau">
+<meta name="twitter:description" content="Een technische introductie tot hoe blockchain werkt: cryptografische hashketens, Merkle-bomen, gedistribueerde consensus, en hoe Ethereum&#x27;s programmeerbare laag een betalingsledger omzette in een platform voor smart contracts en getokeniseerde activa.">
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp">
 <link rel="canonical" href="https://sebastienrousseau.com/nl/2018-01-09-de-technologie-achter-blockchain-begrijpen/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
@@ -129,34 +129,34 @@
             </button>
             <div class="ap-lang-menu" role="menu" hidden>
               <div class="ap-lang-menu-grid">
-                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
-                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
-                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
-                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
-                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
-                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
-                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
-                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
-                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
-                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
-                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
-                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
-                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
-                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
-                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
-                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
-                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
-                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
-                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
-                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
-                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
-                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
-                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
-                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
-                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
-                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
-                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
-                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+                <a class="ap-lang-item" href="/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2018-01-09-comprendre-la-technologie-derriere-la-blockchain/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2018-01-09-pochopeni-technologie-za-blockchainem/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2018-01-09-die-technologie-hinter-blockchain-verstehen/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2018-01-09-comprender-la-tecnologia-detras-de-blockchain/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2018-01-09-blockchain-ke-peechhe-ki-takneek-samajhna/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2018-01-09-memahami-teknologi-di-balik-blockchain/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2018-01-09-comprendere-la-tecnologia-dietro-la-blockchain/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2018-01-09-burokkuchein-no-gijutsu-wo-rikai-suru/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2018-01-09-beulrokchein-baehu-gisul-ihae/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2018-01-09-de-technologie-achter-blockchain-begrijpen/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2018-01-09-zrozumiec-technologie-stojaca-za-blockchainem/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2018-01-09-compreender-a-tecnologia-por-tras-do-blockchain/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2018-01-09-ponimanie-tekhnologii-blockchain/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2018-01-09-forsta-tekniken-bakom-blockchain/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2018-01-09-khao-chai-theknoloyi-beuang-lang-blockchain/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2018-01-09-blockchain-arkasindaki-teknolojiyi-anlamak/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2018-01-09-rozuminnia-tekhnolohiyi-za-blokcheinom/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2018-01-09-hieu-ve-cong-nghe-dang-sau-blockchain/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2018-01-09-lijie-quqiulian-beihou-de-jishu/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2018-01-09-lijie-quqiulian-beihou-de-jishu-tw/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
               </div>
             </div>
           </div>
@@ -167,108 +167,139 @@
     </header>
 
         <section class="ap-hero">
-      <h1>De technologie achter blockchain begrijpen</h1>
-      <p class="sub">Cryptografie, consensus en de architectuur van gedecentraliseerde netwerken</p>
-    <nav class="article-tags" aria-label="Onderwerpen"><a href="/tags/index.html#h3-blockchain" class="article-tag" rel="tag">Blockchain</a><a href="/tags/index.html#h3-cryptografie" class="article-tag" rel="tag">cryptografie</a><a href="/tags/index.html#h3-consensus" class="article-tag" rel="tag">consensus</a><a href="/tags/index.html#h3-hashing" class="article-tag" rel="tag">hashing</a><a href="/tags/index.html#h3-proof-of-work" class="article-tag" rel="tag">proof-of-work</a><a href="/tags/index.html#h3-proof-of-stake" class="article-tag" rel="tag">proof-of-stake</a><a href="/tags/index.html#h3-gedistribueerd-grootboek" class="article-tag" rel="tag">gedistribueerd grootboek</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2023-01-09T09:09:00+00:00" class="meta-pub">Gepubliceerd op 9 Jan 2023</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Bijgewerkt op 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Geschatte leestijd">4 min. leestijd</span></div></section>
+      <h1>Understanding the Technology behind Blockchain</h1>
+      <p class="sub">Van cryptografische hashketens tot programmeerbare smart contracts: de mechanismen die blockchain een platform maakten in plaats van enkel een ledger.</p>
+    <nav class="article-tags" aria-label="Onderwerpen"><a href="/tags/index.html#h3-blockchaintechnologie" class="article-tag" rel="tag">blockchaintechnologie</a><a href="/tags/index.html#h3-cryptografische-hash" class="article-tag" rel="tag">cryptografische hash</a><a href="/tags/index.html#h3-merkle-boom" class="article-tag" rel="tag">Merkle-boom</a><a href="/tags/index.html#h3-gedistribueerde-consensus" class="article-tag" rel="tag">gedistribueerde consensus</a><a href="/tags/index.html#h3-proof-of-work" class="article-tag" rel="tag">proof of work</a><a href="/tags/index.html#h3-ethereum" class="article-tag" rel="tag">Ethereum</a><a href="/tags/index.html#h3-smart-contracts" class="article-tag" rel="tag">smart contracts</a><a href="/tags/index.html#h3-evm" class="article-tag" rel="tag">EVM</a><a href="/tags/index.html#h3-solidity" class="article-tag" rel="tag">Solidity</a><a href="/tags/index.html#h3-erc-20" class="article-tag" rel="tag">ERC-20</a><a href="/tags/index.html#h3-gedistribueerd-ledger" class="article-tag" rel="tag">gedistribueerd ledger</a><a href="/tags/index.html#h3-gedecentraliseerde-financien" class="article-tag" rel="tag">gedecentraliseerde financiën</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-01-09T09:09:00+00:00" class="meta-pub">Gepubliceerd op 9 Jan 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">Bijgewerkt op 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Geschatte leestijd">9 min. leestijd</span></div></section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Inhoud</h2><ol><li><a href="#overzicht">Overzicht</a></li><li><a href="#idee">Idee</a></li><li><a href="#impact">impact</a></li><li><a href="#prikkels">prikkels</a></li><li><a href="#fazit">Fazit</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Een toegankelijke gids voor de technologie achter blockchain: cryptografische primitieven, consensusmechanismen en gedistribueerde netwerken.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Overzicht.</strong> De blockchaintechnologie heeft de Tür tot een nieuwen Ära gedecentraliseerde toepassingen (dApps) geöffnet, de onafhankelijk en zonder centrale controle laufen.</li>  <li><strong>Idee.</strong> Ons Ziel is es, een einfache cryptovaluta op Ethereum aufzubouwen en u daarmee praktische Erfahrung in de Blockchain-ontwikkeling tot vermitteln.</li>  <li><strong>impact.</strong> Indem Sie een op Ethereum basierende cryptovaluta van Gongeveer op aufbouwen, gewinnen Sie:.</li>  <li><strong>prikkels.</strong> De vollvoortdurende Aufbau een Tokens vermittelt unmittelbar praktische Erfahrung met:.</li></ul></aside><p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/adam-smigielski-K5mPtONmpHM.webp&w=1600&format=webp&q=85" alt="Ausgeschoudeter Laptop op een braunen Holztisch"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
-<h2 id="overzicht">Overzicht <a class="heading-anchor" href="#overzicht" aria-label="Link naar Overzicht">#</a></h2>
-<p>De blockchaintechnologie heeft de Tür tot een nieuwen Ära gedecentraliseerde toepassingen (dApps) geöffnet, de onafhankelijk en zonder centrale controle laufen. Ethereum biedt een leistungsstarke platform, um komplexe dApps en Smart Contracts tot pasellen.</p>
-<p>Een de vielversprechendsten inzetmogelijkkeiten van Ethereum is de Einführung individueller cryptovaluta's en digitaaler Tokens. In deze umfassenden Leitfaden gehen we stap voor stap door, zoals Sie uw eigens Krypto-Token op Ethereum pasellen.</p>
-<h2 id="idee">Idee <a class="heading-anchor" href="#idee" aria-label="Link naar Idee">#</a></h2>
-<p>Ons Ziel is es, een einfache cryptovaluta op Ethereum aufzubouwen en u daarmee praktische Erfahrung in de Blockchain-ontwikkeling tot vermitteln. Im gevolgenden de belangrijksten stape, de we behandeln:</p>
-<h3 id="de-cryptovaluta-entwerfen">De cryptovaluta entwerfen <a class="heading-anchor" href="#de-cryptovaluta-entwerfen" aria-label="Link naar De cryptovaluta entwerfen">#</a></h3>
-<p>De pase doorslaggevende Aufgabe bestaat darin, uw cryptovaluta tot entwerfen. Dazu gehört de Definition de belangrijksten Attribute:</p>
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Inhoud</h2><ol><li><a href="#het-probleem-dat-blockchain-oploste">Het probleem dat blockchain oploste</a></li><li><a href="#de-cryptografische-bouwstenen">De cryptografische bouwstenen</a></li><li><a href="#hoe-de-bitcoin-blockchain-werkt">Hoe de Bitcoin-blockchain werkt</a></li><li><a href="#ethereum-s-programmeerbare-laag">Ethereum's programmeerbare laag</a></li><li><a href="#smart-contracts-schrijven-in-solidity">Smart contracts schrijven in Solidity</a></li><li><a href="#van-grootboek-naar-financiele-infrastructuur">Van grootboek naar financiële infrastructuur</a></li><li><a href="#veelgestelde-vragen">Veelgestelde vragen</a></li><li><a href="#referenties">Referenties</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Een technische introductie tot hoe blockchain werkt: cryptografische hashketens, Merkle-bomen, gedistribueerde consensus, en hoe Ethereum&#x27;s programmeerbare laag een betalingsledger omzette in een platform voor smart contracts en getokeniseerde activa.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Het probleem dat blockchain oploste.</strong> Voor Bitcoin vereisten digitale betalingen een vertrouwde tussenpersoon — een bank, betalingsverwerker of clearinghouse — om double-spending te voorkomen.</li>  <li><strong>De cryptografische bouwstenen.</strong> Blockchaintechnologie brengt drie bestaande cryptografische primitieven samen in een nieuwe architectuur:.</li>  <li><strong>Hoe de Bitcoin-blockchain werkt.</strong> Een Bitcoin-blok bevat drie logische componenten:.</li>  <li><strong>Ethereum&#x27;s programmeerbare laag.</strong> Ethereum generaliseerde het transactiemodel van Bitcoin van &quot;waarde overdragen&quot; naar &quot;code uitvoeren&quot;.</li></ul></aside><!-- lead-start -->
+
+<!-- lead-end -->
+<p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/adam-smigielski-K5mPtONmpHM.webp&w=1600&format=webp&q=85" alt="Abstract digital ledger blocks connected by light trails on dark background"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<blockquote>
+<p><strong>Samenvatting / Belangrijkste conclusies</strong></p>
 <ul>
-<li><strong>Name</strong>: Wählen Sie een einzigartigen Namen, de de Identität en de Zweck des Tokens widerspiegelt.</li>
-<li><strong>Symbol</strong>: Wählen Sie een kurzes Symbol zoals BTC voor Bitcoin. Es wordt aan Börsen gebruikt.</li>
-<li><strong>Gesamtangebot</strong>: Legen Sie de maximale Anzahl aan in Umlauf befindlichen Tokens fest.</li>
-<li><strong>Dezimalstellen</strong>: Definooitren Sie de Teilbarkeit Ihres Tokens, ongeveer 2 voor Cent-Einheiten.</li>
-<li><strong>Zusatzfunktionen</strong>: Ergänzen Sie optional Extras zoals Minting, Burning, Freezing usw.</li>
+<li><strong>Het probleem.</strong> Digitaal geld vereist het oplossen van het double-spend-probleem: voorkomen dat dezelfde eenheid twee keer wordt uitgegeven zonder een vertrouwde clearinginstelling. Het whitepaper van Bitcoin uit 2008 loste dit op door vertrouwde tussenpersonen te vervangen door cryptografisch bewijs en gedistribueerde consensus (<a href="https://bitcoin.org/bitcoin.pdf" title="Bitcoin: A Peer-to-Peer Electronic Cash System">Nakamoto, 2008</a>).</li>
+<li><strong>De gegevensstructuur.</strong> Een blockchain is een gekoppelde lijst van blokken waarbij elke blokheader de SHA-256-hash van de vorige header bevat. De hashketen maakt de geschiedenis alleen-toevoegen: het wijzigen van een verleden blok maakt alle volgende hashes ongeldig en dwingt een aanvaller al het volgende proof-of-work opnieuw te doen.</li>
+<li><strong>Merkle trees.</strong> Transacties binnen een blok worden gehasht in een binaire Merkle tree. De wortelhash, opgeslagen in de blokheader, maakt efficiënte verificatie van elke afzonderlijke transactie mogelijk zonder het volledige blok te downloaden — de basis voor lichtgewicht SPV-clients.</li>
+<li><strong>Ethereum's uitbreiding.</strong> Het Yellow Paper van Ethereum (2014) introduceerde de EVM — een deterministische stackmachine die op elk volledig knooppunt draait. Smart contracts zijn bytecode die op de keten is ingezet; ze worden identiek uitgevoerd op alle knooppunten en worden atomisch afgewikkeld, waardoor vertrouwde tussenpersonen worden vervangen door zelf-uitvoerende code (<a href="https://ethereum.github.io/yellowpaper/paper.pdf" title="Ethereum Yellow Paper">Wood, 2014</a>).</li>
+<li><strong>Praktisch belang.</strong> Elk getokeniseerd actief, elke stablecoin en elk DeFi-protocol dat sinds 2017 is ingezet, draait op deze fundamenten. Het begrijpen van de hashketen, de Merkle tree en het uitvoeringsmodel van de EVM is de vereiste voor het werken met elk op Ethereum gebaseerd systeem.</li>
 </ul>
-<h3 id="smart-contracts-schreiben">Smart Contracts schreiben <a class="heading-anchor" href="#smart-contracts-schreiben" aria-label="Link naar Smart Contracts schreiben">#</a></h3>
-<p>Um uw cryptovaluta tot Leben tot erwecken, moeten Sie Smart Contracts programmieren, de de Funktionalität en de Regeln des Tokens definooitren. Smart Contracts zijn programmatische Skripte, de op de Blockchain gespeichert zijn en automatisch ausgeführt worden, sobald bestimmte voorwaarden erfüllt zijn.</p>
-<p>Einige centrale Eigenschaften, de Smart Contracts ideal voor cryptovaluta's machen, zijn:</p>
+</blockquote>
+<hr />
+<h2 id="het-probleem-dat-blockchain-oploste">Het probleem dat blockchain oploste <a class="heading-anchor" href="#het-probleem-dat-blockchain-oploste" aria-label="Link naar Het probleem dat blockchain oploste">#</a></h2>
+<p>Voor Bitcoin vereisten digitale betalingen een vertrouwde tussenpersoon — een bank, betalingsverwerker of clearinghouse — om double-spending te voorkomen. Als Alice een digitaal bestand dat £10 vertegenwoordigde naar Bob stuurde, verhinderde niets in het bestand zelf haar een identieke kopie naar Carol te sturen. De oplossing in elk bestaand systeem was gecentraliseerde registratie: het grootboek van de bank vermeldde dat het geld was uitgegeven, zodat het niet opnieuw kon worden uitgegeven.</p>
+<p>De bijdrage van Bitcoin was dat vertrouwde grootboek te vervangen door een gedistribueerd grootboek waarbij het overzicht van alle transacties over duizenden onafhankelijke knooppunten wordt gerepliceerd. Wederzijds wantrouwen tussen knooppunten werd via twee mechanismen omgezet in veiligheid:</p>
+<ol>
+<li>
+<p><strong>Cryptografische koppeling.</strong> Elk blok van transacties bevat de hash van het vorige blok. Een hashfunctie is een eenrichtings-deterministische mapping: gegeven een invoer produceert de functie een uitvoer van vaste lengte, en het wijzigen van zelfs één bit van de invoer produceert een volledig andere uitvoer. Dit betekent dat elke wijziging aan een historisch blok elk blok daarna ongeldig maakt.</p>
+</li>
+<li>
+<p><strong>Proof-of-work-consensus.</strong> Het toevoegen van een nieuw blok vereist het vinden van een nonce-waarde zodat de hash van het blok onder een doeldrempel valt — computationeel duur om te vinden, triviaal goedkoop om te verifiëren. Dit maakt het herschrijven van de geschiedenis proportioneel duur aan de diepte van het blok dat wordt gewijzigd, omdat een aanvaller al het proof-of-work van dat blok tot het ketenpunt opnieuw moet doen.</p>
+</li>
+</ol>
+<p>De combinatie betekent dat de langste keten met het meeste cumulatieve proof-of-work per constructie degene is die door eerlijke deelnemers met echte middelen wordt onderhouden.</p>
+<h2 id="de-cryptografische-bouwstenen">De cryptografische bouwstenen <a class="heading-anchor" href="#de-cryptografische-bouwstenen" aria-label="Link naar De cryptografische bouwstenen">#</a></h2>
+<p>Blockchaintechnologie brengt drie bestaande cryptografische primitieven samen in een nieuwe architectuur:</p>
+<h3 id="sha-256-hashfuncties">SHA-256-hashfuncties <a class="heading-anchor" href="#sha-256-hashfuncties" aria-label="Link naar SHA-256-hashfuncties">#</a></h3>
+<p>SHA-256 (Secure Hash Algorithm 256-bit) is een lid van de SHA-2-familie die door NIST is gestandaardiseerd. Het neemt een invoer van willekeurige lengte en produceert een uitvoer van 256 bit. Belangrijke eigenschappen voor blockchaingebruik:</p>
 <ul>
-<li><strong>Selbstausführend</strong> — ze laufen zonder Beteiligung Dritter automatisch ab, sobald ze uitgeontketent worden.</li>
-<li><strong>Unveränderlichkeit</strong> — einmal bereitgestelt, kan de Code niet meer geändert worden. Dies sorgt voor beveiliging.</li>
-<li><strong>Autonomie</strong> — es is keine centrale instantie nötig, um Smart Contracts tot verwouden.</li>
-<li><strong>Transparenz</strong> — iedere kan de Logik een Smart Contracts einsehen.</li>
-<li><strong>Automatisierung</strong> — actieen zoals Mittelübertragungen lassen sich over de Vertragscode automatisieren.</li>
-<li><strong>beveiliging</strong> — Mittel in een Contract zijn gesichert, bis de Freigabebedingungen erfüllt zijn.</li>
-<li><strong>efficiëntie</strong> — Smart Contracts schouden Intermediäre uit en machen procese sneler en günstiger.</li>
+<li><strong>Deterministisch.</strong> Dezelfde invoer produceert altijd dezelfde uitvoer.</li>
+<li><strong>Pre-image-resistentie.</strong> Gegeven een hashuitvoer is het computationeel onhaalbaar de invoer te reconstrueren.</li>
+<li><strong>Lawineneffect.</strong> Het wijzigen van één invoerbit wijzigt ruwweg de helft van de uitvoerbits, waardoor brute-force-zoeken inefficiënt is.</li>
+<li><strong>Collisieresistentie.</strong> Het is computationeel onhaalbaar twee verschillende invoeren te vinden die dezelfde hash produceren.</li>
 </ul>
-<p>voorbeeldcode voor een Contract in Solidity.</p>
+<p>Bitcoin past SHA-256 twee keer toe (SHA-256d) voor extra beveiliging tegen length-extension-aanvallen. Ethereum gebruikt Keccak-256, een SHA-3-finalisten-variant.</p>
+<h3 id="merkle-trees">Merkle Trees <a class="heading-anchor" href="#merkle-trees" aria-label="Link naar Merkle Trees">#</a></h3>
+<p>Een Merkle tree is een binaire boom van hashes. Elk bladknooppunt is de hash van een transactie. Elk intern knooppunt is de hash van zijn twee kinderen. De wortel — de Merkle-wortel — vat alle transacties in het blok samen in een enkele waarde van 32 bytes opgeslagen in de blokheader.</p>
+<p>De praktische consequentie: om te verifiëren dat een specifieke transactie is opgenomen in een blok, heeft u alleen <code>log₂(n)</code> hashes nodig, niet alle <code>n</code> transacties. Voor een blok met 2.000 transacties vereist verificatie 11 hashes in plaats van 2.000 — de basis voor Simplified Payment Verification (SPV) in lichtgewicht clients.</p>
+<h3 id="digitale-handtekeningen-ecdsa">Digitale handtekeningen (ECDSA) <a class="heading-anchor" href="#digitale-handtekeningen-ecdsa" aria-label="Link naar Digitale handtekeningen (ECDSA)">#</a></h3>
+<p>Transactieautorisatie in Bitcoin en Ethereum gebruikt het Elliptic Curve Digital Signature Algorithm (ECDSA) over de secp256k1-curve. Een privésleutel ondertekent een transactie; elk knooppunt kan de handtekening verifiëren met de bijbehorende publieke sleutel zonder de privésleutel te kennen. Dit zorgt ervoor dat alleen de houder van de privésleutel een uitgave van een adres kan autoriseren.</p>
+<p>Ethereum-adressen zijn de laatste 20 bytes van de Keccak-256-hash van de publieke sleutel — een afleiding die adressen compact en draagbaar maakt terwijl ze cryptografisch aan het sleutelpaar gebonden blijven.</p>
+<h2 id="hoe-de-bitcoin-blockchain-werkt">Hoe de Bitcoin-blockchain werkt <a class="heading-anchor" href="#hoe-de-bitcoin-blockchain-werkt" aria-label="Link naar Hoe de Bitcoin-blockchain werkt">#</a></h2>
+<p>Een Bitcoin-blok bevat drie logische componenten:</p>
+<p><strong>De blokheader</strong> — 80 bytes bestaande uit: de protocolversie, de hash van de vorige blokheader, de Merkle-wortel van transacties, een Unix-tijdstempel, het huidige moeilijkheidsdoel en de nonce. Miners itereren de nonce (en soms het tijdstempel of extra-nonce in de coinbase-transactie) totdat de double-SHA-256-hash van de header onder het moeilijkheidsdoel valt.</p>
+<p><strong>De transactielijst</strong> — de geordende set transacties die in het blok zijn opgenomen. De coinbase-transactie (de eerste) wijst de blokbeloning en transactiekosten toe aan het adres van de miner.</p>
+<p><strong>De keten</strong> — de koppeling van headers. Het cumulatieve proof-of-work in de keten (de som van al het werk gedaan om elk blok te produceren) bepaalt welke fork de canonieke keten is. Knooppunten volgen altijd de keten met het meeste cumulatieve werk.</p>
+<p>De bloktijd is gericht op 10 minuten voor Bitcoin. De moeilijkheid past zich elke 2.016 blokken (ongeveer twee weken) aan om dat doel te handhaven naarmate de totale netwerkhashsnelheid verandert.</p>
+<h2 id="ethereum-s-programmeerbare-laag">Ethereum's programmeerbare laag <a class="heading-anchor" href="#ethereum-s-programmeerbare-laag" aria-label="Link naar Ethereum's programmeerbare laag">#</a></h2>
+<p>Ethereum generaliseerde het transactiemodel van Bitcoin van &quot;waarde overdragen&quot; naar &quot;code uitvoeren&quot;. De belangrijkste toevoegingen:</p>
+<p><strong>De Ethereum Virtual Machine (EVM).</strong> Een stackgebaseerde virtuele machine met 256-bit woorden die deterministisch op alle volledige knooppunten wordt uitgevoerd. Elke opcode heeft expliciete gaskosten. De berekening is begrensd door de blokgaslimiet, waardoor oneindige lussen worden voorkomen die het netwerk zouden stilleggen. Alle knooppunten die dezelfde bytecode op dezelfde toestand uitvoeren, moeten dezelfde uitvoer produceren — deze consensus over uitvoering is wat smart contracts vertrouwensvrij maakt.</p>
+<p><strong>Accounts.</strong> Ethereum heeft twee accounttypen: Externally Owned Accounts (EOA's) bestuurd door privésleutels, en Contract Accounts waarvan de code on-chain is opgeslagen. Een transactie die naar een contractadres wordt gestuurd, activeert de bytecode-uitvoering van het contract.</p>
+<p><strong>Toestand.</strong> De globale toestand van Ethereum is een mapping van adressen naar accounttoestanden (nonce, saldo, opslag, codehash). De toestandswortel — een Merkle Patricia trie van alle accounttoestanden — is opgenomen in elke blokheader, waardoor efficiënt bewijs van de toestand van elk account op elke blokhoogte mogelijk is.</p>
+<p><strong>Gas.</strong> Gebruikers betalen gas (in ETH) voor elke EVM-operatie. Gas dient twee functies: het compenseert miners/validators voor berekening, en het begrenst de middelen die één transactie kan verbruiken, waardoor denial-of-service-aanvallen via dure operaties worden voorkomen.</p>
+<h2 id="smart-contracts-schrijven-in-solidity">Smart contracts schrijven in Solidity <a class="heading-anchor" href="#smart-contracts-schrijven-in-solidity" aria-label="Link naar Smart contracts schrijven in Solidity">#</a></h2>
+<p>Solidity is een statisch getypeerde, contractgerichte taal die compileert naar EVM-bytecode. Een minimaal tokencontract illustreert de kernconcepten:</p>
 <pre><code class="language-solidity">pragma solidity ^0.8.0;
 
 contract MyToken {
+    string public name;
+    string public symbol;
+    uint8 public decimals;
+    uint256 public totalSupply;
+    mapping(address =&gt; uint256) public balanceOf;
 
-  string public name;
-  string public symbol;
-  uint256 public decimals;
-  uint256 public totalSupply;
+    event Transfer(address indexed from, address indexed to, uint256 value);
 
-  constructor(string memory _name, string memory _symbol, uint8 _decimals, uint256 _totalSupply) {
-    name = _name;
-    symbol = _symbol;
-    decimals = _decimals;
-    totalSupply = _totalSupply;
-  }
+    constructor(
+        string memory _name,
+        string memory _symbol,
+        uint8 _decimals,
+        uint256 _totalSupply
+    ) {
+        name = _name;
+        symbol = _symbol;
+        decimals = _decimals;
+        totalSupply = _totalSupply;
+        balanceOf[msg.sender] = _totalSupply;
+    }
 
+    function transfer(address _to, uint256 _value) external returns (bool) {
+        require(balanceOf[msg.sender] &gt;= _value, &quot;Insufficient balance&quot;);
+        balanceOf[msg.sender] -= _value;
+        balanceOf[_to] += _value;
+        emit Transfer(msg.sender, _to, _value);
+        return true;
+    }
 }
 </code></pre>
-<p>Deze einfache Contract erlaubt es, een Token met Eigenschaften zoals Name, Symbol, Dezimalstellen en Gesamtangebot tot pasellen.</p>
-<p>De <code>constructor</code>-Funktion initialisiert deze Parameter bij Deployment des Contracts.</p>
-<p>Dit voorbeeld richtet lediglich gongeveerleggende Token-Eigenschaften een. U würden de Contract uitbreiden, um weitere Funktionen hinzuzufügen, zoals ongeveer:</p>
+<p>Belangrijke observaties: <code>mapping(address =&gt; uint256)</code> is een EVM-opslagindeling, geen in-memory-gegevensstructuur — lezen en schrijven kost gas. <code>require</code> draait de volledige transactie terug bij mislukking en retourneert ongebruikt gas. <code>event Transfer</code> geeft een logboek af dat off-chain-indexeerders gebruiken om overdrachten bij te houden zonder de volledige toestand opnieuw te lezen. De <code>constructor</code> wordt eenmalig uitgevoerd bij implementatie; volgende aanroepen gaan naar de genoemde functies.</p>
+<p>De ERC-20-standaard formaliseerde een gemeenschappelijke interface voor fungibele tokens — <code>transfer</code>, <code>transferFrom</code>, <code>approve</code>, <code>allowance</code>, <code>balanceOf</code>, <code>totalSupply</code> — waardoor elk ERC-20-conform token kan werken met elke ERC-20-bewuste beurs of portemonnee zonder aangepaste integratie.</p>
+<h2 id="van-grootboek-naar-financiele-infrastructuur">Van grootboek naar financiële infrastructuur <a class="heading-anchor" href="#van-grootboek-naar-financiele-infrastructuur" aria-label="Link naar Van grootboek naar financiële infrastructuur">#</a></h2>
+<p>De hier beschreven blockchain-primitieven — hashketens, Merkle trees, de EVM en ERC-20 — werden tussen 2018 en 2026 de basis voor een bredere set financiële toepassingen:</p>
+<p><strong>Gedecentraliseerde financiën (DeFi).</strong> Leenprotocollen (Compound, Aave), geautomatiseerde market makers (Uniswap) en yield-aggregators draaien allemaal als EVM-smart-contracts. Ze vervangen de clearing-, bewaarnemings- en afwikkelingsfuncties van traditionele financiële tussenpersonen door zelf-uitvoerende code en on-chain-liquiditeitspools.</p>
+<p><strong>Getokeniseerde activa.</strong> Centrale banken en commerciële banken testen getokeniseerde deposito's, getokeniseerde obligaties en getokeniseerde geldmarktfondsen op permissioned varianten van EVM-compatibele ketens. De onderliggende mechanismen — hashbeveiligde toestandsovergangen, atomische afwikkeling, programmeerbare overdrachtsregels — zijn directe afstammelingen van de Ethereum-architectuur van 2014.</p>
+<p><strong>Digitale centrale bankvaluta's.</strong> Het groothandels-CBDC-onderzoek van de Bank of England, het digitale-europrogramma van de ECB en Project Agorá verkennen allemaal DLT-architecturen die zijn afgeleid van of compatibel zijn met de fundamentele ontwerpen in Bitcoin en Ethereum. De consensus- en hashketensstructuren blijven relevant zelfs waar het toestemnings- en governancemodel volledig verschilt van openbare blockchains.</p>
+<p>De reis van het Bitcoin-whitepaper van 2008 naar de getokeniseerde financiën van 2026 omspant twee decennia, maar loopt op een coherente technische lijn. Begrijpen hoe een SHA-256-hashketen onveranderlijkheid afdwingt, hoe een Merkle tree efficiënte verificatie mogelijk maakt en hoe de EVM smart contracts atomisch uitvoert, is de vereiste voor het evalueren van elke bewering over wat blockchain wel en niet kan doen in gereguleerde financiële diensten.</p>
+<h2 id="veelgestelde-vragen">Veelgestelde vragen <a class="heading-anchor" href="#veelgestelde-vragen" aria-label="Link naar Veelgestelde vragen">#</a></h2>
+<p><strong>Wat is het verschil tussen een blockchain en een gedistribueerde database?</strong></p>
+<p>Een traditionele gedistribueerde database repliceert gegevens over knooppunten voor beschikbaarheid en prestaties, maar het vertrouwen is gecentraliseerd — een beheerder kan records wijzigen. Een blockchain maakt manipulatie computationeel duur door hashketening en consensus: het wijzigen van een historisch record vereist het opnieuw doen van al het volgende proof-of-work of proof-of-stake en het overtuigen van het netwerk om de gewijzigde fork te accepteren. De onderscheidende eigenschap is manipulatiebewijs dat wordt afgedwongen door cryptografie en incentiveontwerp in plaats van door toegangscontroles.</p>
+<p><strong>Waarom gebruikt Ethereum Keccak-256 in plaats van SHA-256?</strong></p>
+<p>Ethereum adopteerde Keccak-256 (de SHA-3-finalist vóór de NIST-standaardisatieaanpassingen) deels omdat de ontwerpers onafhankelijkheid wilden van de SHA-2-lijn waarvan Bitcoin al afhankelijk was. Keccak heeft ook verschillende algebraïsche eigenschappen die het aantrekkelijk maakten voor bepaalde EVM-operaties. Het praktische effect voor ontwikkelaars is dat Ethereum-adresafleiding en opslagslot-hashing Keccak-256 gebruiken, niet SHA-256d zoals in Bitcoin.</p>
+<p><strong>Wat voorkomt &quot;gas&quot; in de EVM?</strong></p>
+<p>Gas voorkomt twee categorieën aanvallen. Ten eerste voorkomt het denial-of-service via computationeel dure operaties: elke opcode kost gas, zodat een aanvaller het netwerk niet kan dwingen oneindige lussen kosteloos uit te voeren. Ten tweede begrenst de blokgaslimiet de totale berekening per blok, zodat de blokverwerkingstijd begrensd en voorspelbaar blijft voor volledige knooppunten. Zonder gas zou één contractaanroep het netwerk kunnen stilleggen door onbegrensde berekeningen uit te voeren.</p>
+<p><strong>Hoe verandert proof-of-stake het beveiligingsmodel ten opzichte van proof-of-work?</strong></p>
+<p>Bij proof-of-work wordt beveiliging geboden door energieverbruik: de keten aanvallen vereist het controleren van meer dan 50% van de hashrate van het netwerk, wat betekent het controleren van meer dan 50% van de fysieke hardware en stroom. Bij proof-of-stake (gebruikt door Ethereum sinds de Merge in 2022) wordt beveiliging geboden door economische inzet: validators vergrendelen ETH als onderpand, dat wordt verminderd als ze conflicterende blokken ondertekenen. Een aanval van 51% vereist het verwerven en riskeren van meer dan 50% van alle gestakede ETH — een kapitaalkost in plaats van een hardware- en energiekost. Het beveiligingsmodel verschilt maar is wiskundig vergelijkbaar in economische termen onder de aanname dat rationele validators de voorkeur geven aan vergoedingsinkomsten boven kapitaalvernietiging.</p>
+<h2 id="referenties">Referenties <a class="heading-anchor" href="#referenties" aria-label="Link naar Referenties">#</a></h2>
 <ul>
-<li>Token-Transfers tussen Adressen</li>
-<li>Verwoudung van Guthaben</li>
-<li>Allowances voor het Ausgeben van Tokens</li>
-<li>Minting en Burning van Tokens</li>
-<li>Einfrieren of Sperren van Token-Transfers</li>
-<li>Implementierung van Token-standaards zoals ERC-20</li>
-<li>Bereitstellung en Interaktion met de Contract</li>
+<li>Nakamoto, S., (2008). <a href="https://bitcoin.org/bitcoin.pdf" title="Bitcoin Whitepaper">Bitcoin: A Peer-to-Peer Electronic Cash System ⧉</a>.</li>
+<li>Buterin, V., (2014). <a href="https://ethereum.org/whitepaper" title="Ethereum Whitepaper">Ethereum: A Next-Generation Smart Contract and Decentralised Application Platform ⧉</a>.</li>
+<li>Wood, G., (2014). <a href="https://ethereum.github.io/yellowpaper/paper.pdf" title="Ethereum Yellow Paper">Ethereum: A Secure Decentralised Generalised Transaction Ledger ⧉</a>.</li>
+<li>NIST, (2015). <a href="https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions" title="NIST FIPS 202">SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions ⧉</a>.</li>
 </ul>
-<h3 id="lokale-ontwikkeling-en-tests">Lokale ontwikkeling en Tests <a class="heading-anchor" href="#lokale-ontwikkeling-en-tests" aria-label="Link naar Lokale ontwikkeling en Tests">#</a></h3>
-<p>Bevor Sie uw cryptovaluta op de Ethereum-Blockchain reedstellen, is es ratsam, gründliche lokale Tests durchzuführen. So stellen Sie sicher, dat uw cryptovaluta zoals vorgesehen funktionooitrt, zonder unvorhergesehene Fehler of Schwachstellen.</p>
-<p>gevolgen Sie deze stapen, um loszuleggen:</p>
-<h4>Go-Ethereum (Geth) herunterladen</h4>
-<p>beginen Sie met de Download van <a href="https://geth.ethereum.org/downloads/">Go-Ethereum</a>, ook als Geth bekannt — een in Go geschriebenen Ethereum-Client. Geth is de Command-Line-Interface-(CLI-)Ethereum-Client, de op Windows-, Mac- en Linux-platformen läuft. Es handelt sich um een vielseitiges tool, met de Sie minen, Smart Contracts pasellen en met ihnen in Ethereum-netwerk interagieren kunnen. U kunnen Geth hier herunterladen.</p>
-<h4>Ethereum installieren</h4>
-<p>Sobald Sie Geth heruntergeladen hebben, fahren Sie met de Installation van Ethereum fort. Detaillierte Voraussetzungen en vollvoortdurende Build-Anleitungen finden Sie in de <a href="https://geth.ethereum.org/docs/getting-started/installing-geth">Installation Instructions</a> in offiziellen Wiki.</p>
-<h4>Een ontwikkelomgeving inrichten</h4>
-<p>Um de ontwikkeling uw cryptovaluta tot erleichtern, vereisen Sie een ontwikkelomgeving, een Test-Framework en een Asset-Pipeline voor Ethereum. Detaillierte Anleitungen tot Einrichtung deze unverzichtbaren tools finden Sie in Ethereum-Wiki.</p>
-<h4>Auf een Testnet reedstellen</h4>
-<p>Sobald uw cryptovaluta de lokalen Tests bestaat, kunnen Sie ze in een Testnet reedstellen. Een Testnet is een sichere en gecontroleerde Umgebung, de het Ethereum-meinnet nachvormt, sodass Sie de Leistung uw cryptovaluta onder realen voorwaarden bewerten kunnen, zonder reale financiële risico's einzugehen.</p>
-<h2 id="impact">impact <a class="heading-anchor" href="#impact" aria-label="Link naar impact">#</a></h2>
-<p>Indem Sie een op Ethereum basierende cryptovaluta van Gongeveer op aufbouwen, gewinnen Sie:</p>
-<ul>
-<li>Fundiertes kennis tot gedecentraliseerde toepassingen (dApps) en de Programmierung van Smart Contracts</li>
-<li>Praktische Erfahrung met de Solidity-Programmierung</li>
-<li>Vpasändnis de Konsensprotokolle van Ethereum</li>
-<li>Vertrautheit met Token-standaards zoals ERC-20</li>
-</ul>
-<p>Dit kennis befähigt Sie, de blockchaintechnologie voor innovative oplossingen tot benutten.</p>
-<h2 id="prikkels">prikkels <a class="heading-anchor" href="#prikkels" aria-label="Link naar prikkels">#</a></h2>
-<p>De vollvoortdurende Aufbau een Tokens vermittelt unmittelbar praktische Erfahrung met:</p>
-<ul>
-<li>Blockchain-Architektur</li>
-<li>Mechanik van cryptovaluta's</li>
-<li>Smart-Contract-ontwikkeling</li>
-<li>mogelijkheiden en Grenzen van Ethereum</li>
-</ul>
-<p>U erwerben wertvolle Fähigkeiten, um uw Karriere in de Blockchain-Programmierung voranzudrijven.</p>
-<h2 id="fazit">Fazit <a class="heading-anchor" href="#fazit" aria-label="Link naar Fazit">#</a></h2>
-<p>Im domein de blockchaintechnologie wordt Vpasändnis am besten door praktische Umsetzung erreicht. Een cryptovaluta op de Ethereum-platform tot bouwen, biedt een einzigartige Geleggenheit, uit paser Hand Erfahrung met de mogelijkheiden en Grenzen de Technologie tot sammeln. Deze Leitfaden gibt u het kennis en de Fähigkeiten aan de Hand, um deze spannende Reise tot beginnen — en fördert innovatie en Entdeckergeist in de sich stetig weiterontwikkelenden wereld de Blockchain- en cryptovalutasentwicklung.</p>
-<aside class="author-card" aria-label="Over de auteur"><img alt="Portret van Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/nl/over/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior technoloog in banking; schrijft over toegepaste AI, ISO 20022-migratie, post-kwantumcryptografie voor financiële dienstverlening en de structurele transformatie van het wholesale-betalingsverkeer.</span><span class="author-credentials">20+ jaar ervaring bij HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/nl/over/index.html">Volledig profiel</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Laatst herzien <time datetime="2026-05-22">2026-05-22</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<!-- enrich-start -->
+
+<p class="post-reviewed">Laatst herzien <time datetime="2026-05-24">2026-05-24</time>.</p>
+
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Over de auteur"><img alt="Portret van Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/nl/over/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior technoloog in banking; schrijft over toegepaste AI, ISO 20022-migratie, post-kwantumcryptografie voor financiële dienstverlening en de structurele transformatie van het wholesale-betalingsverkeer.</span><span class="author-credentials">20+ jaar ervaring bij HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/nl/over/index.html">Volledig profiel</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Laatst herzien <time datetime="2026-05-27">2026-05-27</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Verwante artikelen</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/nl/2023-10-09-shokunin-de-snelste-rust-gebaseerde-statische-sitegenerator/index.html" class="related-media" aria-label="Static Site Generator: de snelste statische sitegenerator in Rust" tabindex="-1"><img alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right" src="https://cloudcdn.pro/api/transform?url=/stocks/images/anna-nekrashevich-8534387.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="static-site-generator-de-snelste-statische-sitegenerator-in-rust"><a href="https://sebastienrousseau.com/nl/2023-10-09-shokunin-de-snelste-rust-gebaseerde-statische-sitegenerator/index.html">Static Site Generator: de snelste statische sitegenerator in Rust</a> <a class="heading-anchor" href="#static-site-generator-de-snelste-statische-sitegenerator-in-rust" aria-label="Link naar Static Site Generator: de snelste statische sitegenerator in Rust">#</a></h3><p><time datetime="2023-10-09">2023-10-09</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/nl/2023-09-29-iso-20022-conforme-betaalbestanden-automatiseren-met-pain001/index.html" class="related-media" aria-label="ISO 20022-conforme betaalbestanden automatiseren met pain001" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/api/transform?url=/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="iso-20022-conforme-betaalbestanden-automatiseren-met-pain001"><a href="https://sebastienrousseau.com/nl/2023-09-29-iso-20022-conforme-betaalbestanden-automatiseren-met-pain001/index.html">ISO 20022-conforme betaalbestanden automatiseren met pain001</a> <a class="heading-anchor" href="#iso-20022-conforme-betaalbestanden-automatiseren-met-pain001" aria-label="Link naar ISO 20022-conforme betaalbestanden automatiseren met pain001">#</a></h3><p><time datetime="2023-09-29">2023-09-29</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/nl/2018-02-04-nieuwe-cryptovaluta-en-snellere-betaaloplossing-voor-de-toekomst/index.html" class="related-media" aria-label="Een nieuwe cryptovaluta onthullen: snellere betaaloplossing voor de toekomst" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/api/transform?url=/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="een-nieuwe-cryptovaluta-onthullen-snellere-betaaloplossing-voor-de-toekomst"><a href="https://sebastienrousseau.com/nl/2018-02-04-nieuwe-cryptovaluta-en-snellere-betaaloplossing-voor-de-toekomst/index.html">Een nieuwe cryptovaluta onthullen: snellere betaaloplossing voor de toekomst</a> <a class="heading-anchor" href="#een-nieuwe-cryptovaluta-onthullen-snellere-betaaloplossing-voor-de-toekomst" aria-label="Link naar Een nieuwe cryptovaluta onthullen: snellere betaaloplossing voor de toekomst">#</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/nl/2018-01-24-de-erc-20-tokenstandaard" class="related-media" aria-label="De ERC-20-tokenstandaard" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="de-erc-20-tokenstandaard"><a href="https://sebastienrousseau.com/nl/2018-01-24-de-erc-20-tokenstandaard">De ERC-20-tokenstandaard</a> <a class="heading-anchor" href="#de-erc-20-tokenstandaard" aria-label="Link naar De ERC-20-tokenstandaard">#</a></h3><p><time datetime="2018-01-24">2018-01-24</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/nl/2018-02-04-nieuwe-cryptovaluta-en-snellere-betaaloplossing-voor-de-toekomst" class="related-media" aria-label="Unveiling a New Cryptocurrency and Faster Payment Solution" tabindex="-1"><img alt="A very tall building with a lot of holes in it" src="https://cloudcdn.pro/api/transform?url=/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="unveiling-a-new-cryptocurrency-and-faster-payment-solution"><a href="https://sebastienrousseau.com/nl/2018-02-04-nieuwe-cryptovaluta-en-snellere-betaaloplossing-voor-de-toekomst">Unveiling a New Cryptocurrency and Faster Payment Solution</a> <a class="heading-anchor" href="#unveiling-a-new-cryptocurrency-and-faster-payment-solution" aria-label="Link naar Unveiling a New Cryptocurrency and Faster Payment Solution">#</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/nl/2018-02-15-het-ontstaan-van-het-express-transaction-credits-platform" class="related-media" aria-label="The Making of the Express Transaction Credits Platform" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="the-making-of-the-express-transaction-credits-platform"><a href="https://sebastienrousseau.com/nl/2018-02-15-het-ontstaan-van-het-express-transaction-credits-platform">The Making of the Express Transaction Credits Platform</a> <a class="heading-anchor" href="#the-making-of-the-express-transaction-credits-platform" aria-label="Link naar The Making of the Express Transaction Credits Platform">#</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
 </div>
-</aside><nav class="post-pagination" aria-label="Artikelnavigatie"><a class="post-pagination-prev" href="/nl/2018-01-02-blockchain-de-technologie-die-er-in-2018-toe-doet/"><span class="post-pagination-label">Vorige</span><span class="post-pagination-title">Blockchain explained, the technology that matters the most</span></a><a class="post-pagination-next" href="/nl/2018-01-24-de-erc-20-tokenstandaard/"><span class="post-pagination-label">Volgende</span><span class="post-pagination-title">ERC-20: The Ethereum Token Interface That Changed the World</span></a></nav></div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Bronnen en referenties</h2><ol class="article-sources-list"><li><a href="https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions" rel="external noopener nofollow"><span class="source-host">www.nist.gov</span><span class="source-path">/publications/sha-3-standard-permutation-based-hash-and-extendable-output-fun…</span></a></li></ol></aside><nav class="post-pagination" aria-label="Artikelnavigatie"><a class="post-pagination-prev" href="/nl/2018-01-02-blockchain-de-technologie-die-er-in-2018-toe-doet/"><span class="post-pagination-label">Vorige</span><span class="post-pagination-title">Blockchain explained, the technology that matters the most</span></a><a class="post-pagination-next" href="/nl/2018-01-24-de-erc-20-tokenstandaard/"><span class="post-pagination-label">Volgende</span><span class="post-pagination-title">ERC-20: The Ethereum Token Interface That Changed the World</span></a></nav></div>
     </main>
 
 <!-- gen-layouts:footer-start -->
@@ -340,7 +371,7 @@ contract MyToken {
     <!-- Schema.org structured data -->
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"nl"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"nl"}]}</script>
 
-        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":819,"about":{"@type":"Thing","name":"Blockchain","sameAs":["https://en.wikipedia.org/wiki/Blockchain","https://www.wikidata.org/wiki/Q20514253","https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"]},"headline":"De technologie achter blockchain begrijpen","description":"Een toegankelijke gids voor de technologie achter blockchain: cryptografische primitieven, consensusmechanismen en gedistribueerde netwerken.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp","width":"100vw","height":"100vh","caption":"Abstracte weergave van blockchain-blokken die met elkaar verbonden zijn"},"url":"https://sebastienrousseau.com/nl/2018-01-09-de-technologie-achter-blockchain-begrijpen/","datePublished":"2023-01-09T09:09:00+00:00","dateModified":"2026-05-11","inLanguage":"nl","keywords":"Blockchain, cryptografie, consensus, hashing, proof-of-work, proof-of-stake, gedistribueerd grootboek","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/nl/2018-01-09-de-technologie-achter-blockchain-begrijpen/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"nl"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/nl/"},{"@type":"ListItem","position":3,"name":"De technologie achter blockchain begrijpen","item":"https://sebastienrousseau.com/nl/2018-01-09-de-technologie-achter-blockchain-begrijpen/"}]}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":2010,"about":{"@type":"Thing","name":"Blockchain","sameAs":["https://en.wikipedia.org/wiki/Blockchain","https://www.wikidata.org/wiki/Q20514253","https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"]},"mentions":[{"@type":"Thing","name":"Ethereum","sameAs":["https://en.wikipedia.org/wiki/Ethereum","https://www.wikidata.org/wiki/Q21825854","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]},{"@type":"Thing","name":"ERC-20","sameAs":["https://en.wikipedia.org/wiki/Ethereum#Tokens","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]}],"headline":"Understanding the Technology behind Blockchain","description":"Een technische introductie tot hoe blockchain werkt: cryptografische hashketens, Merkle-bomen, gedistribueerde consensus, en hoe Ethereum's programmeerbare laag een betalingsledger omzette in een platform voor smart contracts en getokeniseerde activa.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp","width":"100vw","height":"100vh","caption":"Abstracte digitale ledgerblokken verbonden door lichtsporen op een donkere achtergrond"},"url":"https://sebastienrousseau.com/nl/2018-01-09-de-technologie-achter-blockchain-begrijpen/","datePublished":"2018-01-09T09:09:00+00:00","dateModified":"2026-05-24","inLanguage":"nl","keywords":"blockchaintechnologie, cryptografische hash, Merkle-boom, gedistribueerde consensus, proof of work, Ethereum, smart contracts, EVM, Solidity, ERC-20, gedistribueerd ledger, gedecentraliseerde financiën","articleSection":"Blockchain","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/nl/2018-01-09-de-technologie-achter-blockchain-begrijpen/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"nl"},"citation":[{"@type":"CreativeWork","url":"https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/nl/"},{"@type":"ListItem","position":3,"name":"Understanding the Technology behind Blockchain","item":"https://sebastienrousseau.com/nl/2018-01-09-de-technologie-achter-blockchain-begrijpen/"}]}]}</script>
 <script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
   
 <!-- SSG Search Widget -->
@@ -366,5 +397,5 @@ contract MyToken {
 </div>
 <script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
 </div>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"De technologie achter blockchain begrijpen","url":"https://sebastienrousseau.com/nl/2018-01-09-de-technologie-achter-blockchain-begrijpen/","inLanguage":"nl-NL","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"Blockchain, cryptografie, consensus, hashing, proof-of-work, proof-of-stake, gedistribueerd grootboek","dependencies":["Blockchain"]}</script></body>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Understanding the Technology behind Blockchain","url":"https://sebastienrousseau.com/nl/2018-01-09-de-technologie-achter-blockchain-begrijpen/","inLanguage":"nl-NL","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"blockchaintechnologie, cryptografische hash, Merkle-boom, gedistribueerde consensus, proof of work, Ethereum, smart contracts, EVM, Solidity, ERC-20, gedistribueerd ledger, gedecentraliseerde financiën","programmingLanguage":"Solidity","dependencies":["Blockchain","Ethereum","ERC-20"]}</script></body>
 </html>

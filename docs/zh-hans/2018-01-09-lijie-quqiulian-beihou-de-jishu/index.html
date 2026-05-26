@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta itemprop="datePublished" content="Mon, 09 Jan 2023 09:09:00 +0000" id="date" />
-    <meta itemprop="dateModified" content="Mon, 09 Jan 2023 09:09:00 +0000" id="last-modified" />
+    <meta itemprop="datePublished" content="Tue, 09 Jan 2018 09:09:00 +0000" id="date" />
+    <meta itemprop="dateModified" content="Tue, 09 Jan 2018 09:09:00 +0000" id="last-modified" />
     <title>理解区块链背后的技术 — Sebastien Rousseau</title>
 
     <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
-<meta name="description" content="区块链技术已经开启了一个去中心化的新时代。本文以以太坊为平台，带你逐步构建自己的加密货币。">
-<meta name="keywords" content="区块链, 以太坊, 智能合约, Solidity, 加密货币, 代币化, ERC-20, dApps, Geth, 测试网">
+<meta name="description" content="区块链技术深度解析：密码哈希链、Merkle树、分布式共识机制，以及Ethereum的可编程层如何将支付账本转变为智能合约与代币化资产平台。">
+<meta name="keywords" content="区块链技术, 密码哈希, Merkle树, 分布式共识, proof of work, Ethereum, 智能合约, EVM, Solidity, ERC-20, 分布式账本, 去中心化金融">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
     <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+<meta name="apple-mobile-web-app-title" content="Blockchain Tech">
 
     <!-- Strict security headers. The headers below that can be set via
          <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
@@ -40,7 +40,7 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-9SxfGuQ4TCoE/sr+R7jXxsZjhCZeg5ymGRsjjlG0+N0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-qnnDEBBWEiO60OOejgPDmUhM0isnbVKFLYkD5w0Ptd4=' 'sha256-uW+f3P/p+FlXhMxHvtIH+YxhV7Igmr2fi1NKNLpY5iw=' 'sha256-xhypew1+BvCcukeiHsp6lHyrSsSVxYeg8qAYmbAd0zQ=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-EgTFPs/F0P4IOQDUJzok5VNhmOI4EFHpAAfaagFjXKw=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-p9r9GF+3V/Ojk+jF6zE6v9OeKHUhKde/b/YRAtc9bWY=' 'sha256-qnnDEBBWEiO60OOejgPDmUhM0isnbVKFLYkD5w0Ptd4=' 'sha256-uW+f3P/p+FlXhMxHvtIH+YxhV7Igmr2fi1NKNLpY5iw=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
@@ -78,7 +78,7 @@
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="stylesheet" href="/highlight.a92b9694.css">
 <meta property="og:title" content="理解区块链背后的技术 — Sebastien Rousseau">
-<meta property="og:description" content="区块链技术已经开启了一个去中心化的新时代。本文以以太坊为平台，带你逐步构建自己的加密货币。">
+<meta property="og:description" content="区块链技术深度解析：密码哈希链、Merkle树、分布式共识机制，以及Ethereum的可编程层如何将支付账本转变为智能合约与代币化资产平台。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sebastienrousseau.com/zh-hans/2018-01-09-lijie-quqiulian-beihou-de-jishu/">
 <meta property="og:image" content="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp">
@@ -87,7 +87,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="理解区块链背后的技术 — Sebastien Rousseau">
-<meta name="twitter:description" content="区块链技术已经开启了一个去中心化的新时代。本文以以太坊为平台，带你逐步构建自己的加密货币。">
+<meta name="twitter:description" content="区块链技术深度解析：密码哈希链、Merkle树、分布式共识机制，以及Ethereum的可编程层如何将支付账本转变为智能合约与代币化资产平台。">
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp">
 <link rel="canonical" href="https://sebastienrousseau.com/zh-hans/2018-01-09-lijie-quqiulian-beihou-de-jishu/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
@@ -129,34 +129,34 @@
             </button>
             <div class="ap-lang-menu" role="menu" hidden>
               <div class="ap-lang-menu-grid">
-                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
-                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
-                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
-                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
-                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
-                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
-                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
-                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
-                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
-                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
-                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
-                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
-                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
-                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
-                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
-                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
-                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
-                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
-                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
-                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
-                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
-                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
-                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
-                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
-                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
-                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
-                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
-                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+                <a class="ap-lang-item" href="/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2018-01-09-comprendre-la-technologie-derriere-la-blockchain/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2018-01-09-pochopeni-technologie-za-blockchainem/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2018-01-09-die-technologie-hinter-blockchain-verstehen/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2018-01-09-comprender-la-tecnologia-detras-de-blockchain/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2018-01-09-blockchain-ke-peechhe-ki-takneek-samajhna/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2018-01-09-memahami-teknologi-di-balik-blockchain/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2018-01-09-comprendere-la-tecnologia-dietro-la-blockchain/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2018-01-09-burokkuchein-no-gijutsu-wo-rikai-suru/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2018-01-09-beulrokchein-baehu-gisul-ihae/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2018-01-09-de-technologie-achter-blockchain-begrijpen/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2018-01-09-zrozumiec-technologie-stojaca-za-blockchainem/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2018-01-09-compreender-a-tecnologia-por-tras-do-blockchain/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2018-01-09-ponimanie-tekhnologii-blockchain/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2018-01-09-forsta-tekniken-bakom-blockchain/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2018-01-09-khao-chai-theknoloyi-beuang-lang-blockchain/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2018-01-09-blockchain-arkasindaki-teknolojiyi-anlamak/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2018-01-09-rozuminnia-tekhnolohiyi-za-blokcheinom/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2018-01-09-hieu-ve-cong-nghe-dang-sau-blockchain/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2018-01-09-lijie-quqiulian-beihou-de-jishu/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2018-01-09-lijie-quqiulian-beihou-de-jishu-tw/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
               </div>
             </div>
           </div>
@@ -168,107 +168,138 @@
 
         <section class="ap-hero">
       <h1>理解区块链背后的技术</h1>
-      <p class="sub">在以太坊上构建加密货币：区块链开发、代币化与加密货币实现的全面指南</p>
-    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-" class="article-tag" rel="tag">区块链</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">以太坊</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">智能合约</a><a href="/tags/index.html#h3-solidity" class="article-tag" rel="tag">Solidity</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">加密货币</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">代币化</a><a href="/tags/index.html#h3-erc-20" class="article-tag" rel="tag">ERC-20</a><a href="/tags/index.html#h3-dapps" class="article-tag" rel="tag">dApps</a><a href="/tags/index.html#h3-geth" class="article-tag" rel="tag">Geth</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">测试网</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2023-01-09T09:09:00+00:00" class="meta-pub">Published 9 Jan 2023</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Updated 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">1 min read</span></div></section>
+      <p class="sub">从密码哈希链到可编程智能合约：使区块链成为平台而非仅是账本的核心机制。</p>
+    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-" class="article-tag" rel="tag">区块链技术</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">密码哈希</a><a href="/tags/index.html#h3-merkle" class="article-tag" rel="tag">Merkle树</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">分布式共识</a><a href="/tags/index.html#h3-proof-of-work" class="article-tag" rel="tag">proof of work</a><a href="/tags/index.html#h3-ethereum" class="article-tag" rel="tag">Ethereum</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">智能合约</a><a href="/tags/index.html#h3-evm" class="article-tag" rel="tag">EVM</a><a href="/tags/index.html#h3-solidity" class="article-tag" rel="tag">Solidity</a><a href="/tags/index.html#h3-erc-20" class="article-tag" rel="tag">ERC-20</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">分布式账本</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">去中心化金融</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-01-09T09:09:00+00:00" class="meta-pub">Published 9 Jan 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">Updated 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">2 min read</span></div></section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Contents</h2><ol><li><a href="#section-1">洞察</a></li><li><a href="#section-2">理念</a></li><li><a href="#section-6">影响</a></li><li><a href="#section-7">激励</a></li><li><a href="#section-8">结论</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 区块链技术已经开启了一个去中心化的新时代。本文以以太坊为平台，带你逐步构建自己的加密货币。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>洞察.</strong> 区块链技术开启了去中心化应用（dApps）的新时代——它们独立运行，无需中心化控制。以太坊为构建复杂的 dApps 和智能合约提供了强大的平台。.</li>  <li><strong>理念.</strong> 我们的目标是在以太坊上构建一个简单的加密货币，让你亲身体验区块链开发。下面是我们将涉及的关键步骤：.</li>  <li><strong>影响.</strong> 通过从零开始构建以太坊加密货币，你将获得：.</li>  <li><strong>激励.</strong> 完成端到端的代币构建可让你亲身掌握：.</li></ul></aside><p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/adam-smigielski-K5mPtONmpHM.webp&w=1600&format=webp&q=85" alt="一座具有许多孔洞的高塔建筑"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
-<h2 id="section-1">洞察 <a class="heading-anchor" href="#section-1" aria-label="Link to 洞察">#</a></h2>
-<p>区块链技术开启了去中心化应用（dApps）的新时代——它们独立运行，无需中心化控制。以太坊为构建复杂的 dApps 和智能合约提供了强大的平台。</p>
-<p>以太坊最具前景的用途之一是发行自定义加密货币与数字代币。本指南将逐步带你在以太坊上创建自己的加密代币。</p>
-<h2 id="section-2">理念 <a class="heading-anchor" href="#section-2" aria-label="Link to 理念">#</a></h2>
-<p>我们的目标是在以太坊上构建一个简单的加密货币，让你亲身体验区块链开发。下面是我们将涉及的关键步骤：</p>
-<h3 id="section-3">设计加密货币 <a class="heading-anchor" href="#section-3" aria-label="Link to 设计加密货币">#</a></h3>
-<p>第一项关键任务是设计你的加密货币，包括定义关键属性：</p>
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Contents</h2><ol><li><a href="#section-1">区块链解决的问题</a></li><li><a href="#section-2">密码学构建块</a></li><li><a href="#bitcoin">Bitcoin 区块链的工作原理</a></li><li><a href="#ethereum">Ethereum 的可编程层</a></li><li><a href="#solidity">用 Solidity 编写智能合约</a></li><li><a href="#section-9">从账本到金融基础设施</a></li><li><a href="#section-10">常见问题</a></li><li><a href="#section-11">参考文献</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 区块链技术深度解析：密码哈希链、Merkle树、分布式共识机制，以及Ethereum的可编程层如何将支付账本转变为智能合约与代币化资产平台。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>区块链解决的问题.</strong> 在 Bitcoin 出现之前，数字支付需要一个可信中介——银行、支付处理商或清算所——来防止双重支付。如果 Alice 向 Bob 发送代表 10 英镑的数字文件，文件本身没有任何东西能阻止她向 Carol 发送一份相同的副本。每个现有系统中的解决方案都是中心化记账：银行的账本显示钱已被花费，因此无法再次花费。.</li>  <li><strong>密码学构建块.</strong> 区块链技术将三种预先存在的密码学原语组合成一种新的架构：.</li>  <li><strong>Bitcoin 区块链的工作原理.</strong> 一个 Bitcoin 区块包含三个逻辑组件：.</li>  <li><strong>Ethereum 的可编程层.</strong> Ethereum 将 Bitcoin 的交易模型从&quot;转移价值&quot;泛化为&quot;执行代码&quot;。主要新增内容：.</li></ul></aside><!-- lead-start -->
+
+<!-- lead-end -->
+<p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/adam-smigielski-K5mPtONmpHM.webp&w=1600&format=webp&q=85" alt="Abstract digital ledger blocks connected by light trails on dark background"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<blockquote>
+<p><strong>执行摘要 / 核心要点</strong></p>
 <ul>
-<li><strong>名称</strong>：选择一个独特的名称，体现代币的身份与目的。</li>
-<li><strong>符号</strong>：选择一个简短符号，如比特币的 BTC，用于交易所标识。</li>
-<li><strong>总供应量</strong>：确定流通代币的最大数量。</li>
-<li><strong>小数位数</strong>：设定代币可拆分的精度，例如 2 位表示&quot;分&quot;。</li>
-<li><strong>附加特性</strong>：可选择添加铸造、销毁、冻结等功能。</li>
+<li><strong>问题所在。</strong> 数字现金需要解决双重支付问题：在没有可信清算机构的情况下，防止同一单位被消费两次。Bitcoin 2008 年的白皮书通过用密码学证明和分布式共识取代可信中介解决了这一问题（<a href="https://bitcoin.org/bitcoin.pdf" title="Bitcoin: A Peer-to-Peer Electronic Cash System">Nakamoto, 2008</a>）。</li>
+<li><strong>数据结构。</strong> 区块链是一个区块的链表，每个区块头都包含前一个区块头的 SHA-256 哈希值。哈希链使历史记录只可追加：修改任何过去的区块都会使此后每个哈希值失效，迫使攻击者重新完成所有后续的 proof-of-work。</li>
+<li><strong>Merkle 树。</strong> 区块内的交易被哈希化为二叉 Merkle 树。存储在区块头中的根哈希值允许高效验证任何单笔交易，无需下载完整区块——这是轻量级 SPV 客户端的基础。</li>
+<li><strong>Ethereum 的扩展。</strong> Ethereum 的黄皮书（2014 年）引入了 EVM——一个在每个全节点上运行的确定性堆栈机器。智能合约是部署到链上的字节码；它们在所有节点上以相同方式执行并以原子方式结算，用自我执行代码取代了可信中介（<a href="https://ethereum.github.io/yellowpaper/paper.pdf" title="Ethereum Yellow Paper">Wood, 2014</a>）。</li>
+<li><strong>实际意义。</strong> 自 2017 年以来部署的每一个代币化资产、稳定币和 DeFi 协议都运行在这些基础之上。理解哈希链、Merkle 树和 EVM 执行模型，是使用任何基于 Ethereum 系统的前提条件。</li>
 </ul>
-<h3 id="section-4">编写智能合约 <a class="heading-anchor" href="#section-4" aria-label="Link to 编写智能合约">#</a></h3>
-<p>要让加密货币运转起来，你需要编写定义代币功能与规则的智能合约。智能合约是存储在区块链上的可编程脚本，在满足特定条件时自动执行。</p>
-<p>智能合约非常适合加密货币的关键能力包括：</p>
+</blockquote>
+<hr />
+<h2 id="section-1">区块链解决的问题 <a class="heading-anchor" href="#section-1" aria-label="Link to 区块链解决的问题">#</a></h2>
+<p>在 Bitcoin 出现之前，数字支付需要一个可信中介——银行、支付处理商或清算所——来防止双重支付。如果 Alice 向 Bob 发送代表 10 英镑的数字文件，文件本身没有任何东西能阻止她向 Carol 发送一份相同的副本。每个现有系统中的解决方案都是中心化记账：银行的账本显示钱已被花费，因此无法再次花费。</p>
+<p>Bitcoin 的贡献在于用分布式账本取代了那个可信账本，其中所有交易的记录在数千个独立节点上被复制。节点间的相互不信任通过两种机制转化为安全性：</p>
+<ol>
+<li>
+<p><strong>密码学链接。</strong> 每个交易区块都包含前一个区块的哈希值。哈希函数是一种单向确定性映射：给定任何输入，函数产生固定长度的输出，即使输入改变一个比特也会产生完全不同的输出。这意味着对历史区块的任何修改都会使其后的每个区块失效。</p>
+</li>
+<li>
+<p><strong>Proof-of-work 共识。</strong> 添加新区块需要找到一个 nonce 值，使区块的哈希值低于目标阈值——找到它在计算上昂贵，验证它则极其廉价。这使得重写历史的代价与被修改区块的深度成正比，因为攻击者必须从该区块到链尖重新完成所有的 proof-of-work。</p>
+</li>
+</ol>
+<p>这种组合意味着，具有最多累积 proof-of-work 的最长链，从其构造上来说，就是由诚实参与者消耗真实资源所维护的那条链。</p>
+<h2 id="section-2">密码学构建块 <a class="heading-anchor" href="#section-2" aria-label="Link to 密码学构建块">#</a></h2>
+<p>区块链技术将三种预先存在的密码学原语组合成一种新的架构：</p>
+<h3 id="sha-256">SHA-256 哈希函数 <a class="heading-anchor" href="#sha-256" aria-label="Link to SHA-256 哈希函数">#</a></h3>
+<p>SHA-256（安全哈希算法 256 位）是由 NIST 标准化的 SHA-2 系列成员。它接受任意长度的输入，并产生 256 位的输出。区块链使用的关键特性：</p>
 <ul>
-<li><strong>自动执行</strong> —— 触发时自动运行，无需第三方介入。</li>
-<li><strong>不可篡改</strong> —— 一旦部署，代码无法更改，从而提供安全性。</li>
-<li><strong>自主性</strong> —— 管理智能合约无需中心化权威。</li>
-<li><strong>透明性</strong> —— 任何人都可以审查合约逻辑。</li>
-<li><strong>自动化</strong> —— 转账等操作可通过合约代码自动完成。</li>
-<li><strong>安全性</strong> —— 合约持有的资金在释放条件满足之前是安全的。</li>
-<li><strong>效率</strong> —— 智能合约去除中介，使流程更快、更便宜。</li>
+<li><strong>确定性。</strong> 相同的输入始终产生相同的输出。</li>
+<li><strong>原像抗性。</strong> 给定哈希输出，在计算上不可行重建输入。</li>
+<li><strong>雪崩效应。</strong> 改变输入的一个比特会改变大约一半的输出比特，使暴力搜索效率低下。</li>
+<li><strong>碰撞抗性。</strong> 在计算上不可行找到产生相同哈希值的两个不同输入。</li>
 </ul>
-<p>Solidity 合约示例代码。</p>
+<p>Bitcoin 将 SHA-256 应用两次（SHA-256d），以增强对长度扩展攻击的安全性。Ethereum 使用 Keccak-256，一种 SHA-3 决赛入围变体。</p>
+<h3 id="merkle">Merkle 树 <a class="heading-anchor" href="#merkle" aria-label="Link to Merkle 树">#</a></h3>
+<p>Merkle 树是哈希值的二叉树。每个叶节点是一笔交易的哈希值。每个内部节点是其两个子节点的哈希值。根节点——Merkle 根——将区块中的所有交易汇总为存储在区块头中的单个 32 字节值。</p>
+<p>实际意义：要验证特定交易是否包含在区块中，只需 <code>log₂(n)</code> 个哈希值，而不是所有 <code>n</code> 笔交易。对于包含 2,000 笔交易的区块，验证只需要 11 个哈希值而非 2,000 个——这是轻量级客户端简化支付验证（SPV）的基础。</p>
+<h3 id="ecdsa">数字签名（ECDSA） <a class="heading-anchor" href="#ecdsa" aria-label="Link to 数字签名（ECDSA）">#</a></h3>
+<p>Bitcoin 和 Ethereum 中的交易授权使用基于 secp256k1 曲线的椭圆曲线数字签名算法（ECDSA）。私钥对交易签名；任何节点都可以使用相应的公钥验证签名，而无需知道私钥。这确保只有私钥持有者才能授权从某个地址进行花费。</p>
+<p>Ethereum 地址是公钥 Keccak-256 哈希值的最后 20 个字节——这种派生方式使地址紧凑且可移植，同时在密码学上与密钥对绑定。</p>
+<h2 id="bitcoin">Bitcoin 区块链的工作原理 <a class="heading-anchor" href="#bitcoin" aria-label="Link to Bitcoin 区块链的工作原理">#</a></h2>
+<p>一个 Bitcoin 区块包含三个逻辑组件：</p>
+<p><strong>区块头</strong>——80 字节，包含：协议版本、前一个区块头的哈希值、交易的 Merkle 根、Unix 时间戳、当前难度目标和 nonce。矿工不断迭代 nonce（有时还有时间戳或 coinbase 交易中的额外 nonce），直到区块头的双重 SHA-256 哈希值低于难度目标。</p>
+<p><strong>交易列表</strong>——区块中包含的有序交易集合。coinbase 交易（第一笔）将区块奖励和交易费分配给矿工的地址。</p>
+<p><strong>链</strong>——区块头的链接。链中累积的 proof-of-work（生产每个区块所做的所有工作总和）决定哪个分叉是规范链。节点始终遵循具有最多累积工作量的链。</p>
+<p>Bitcoin 的目标区块时间为 10 分钟。难度每 2,016 个区块（约两周）调整一次，以在总网络哈希率变化时维持该目标。</p>
+<h2 id="ethereum">Ethereum 的可编程层 <a class="heading-anchor" href="#ethereum" aria-label="Link to Ethereum 的可编程层">#</a></h2>
+<p>Ethereum 将 Bitcoin 的交易模型从&quot;转移价值&quot;泛化为&quot;执行代码&quot;。主要新增内容：</p>
+<p><strong>以太坊虚拟机（EVM）。</strong> 一个 256 位字、基于堆栈的虚拟机，在所有全节点上确定性地执行。每个操作码都有明确的 gas 成本。计算受区块 gas 限制约束，防止无限循环使网络停止。所有节点在相同状态下执行相同字节码必须产生相同输出——这种对执行的共识使智能合约无需信任。</p>
+<p><strong>账户。</strong> Ethereum 有两种账户类型：由私钥控制的外部拥有账户（EOA），以及代码存储在链上的合约账户。发送到合约地址的交易会触发合约字节码的执行。</p>
+<p><strong>状态。</strong> Ethereum 的全局状态是地址到账户状态（nonce、余额、存储、代码哈希）的映射。状态根——所有账户状态的 Merkle Patricia 前缀树——包含在每个区块头中，允许高效证明任何区块高度下任何账户的状态。</p>
+<p><strong>Gas。</strong> 用户为每个 EVM 操作支付 gas（以 ETH 计）。Gas 有两个功能：它补偿矿工/验证者的计算，并限制单笔交易可消耗的资源，防止通过昂贵操作进行拒绝服务攻击。</p>
+<h2 id="solidity">用 Solidity 编写智能合约 <a class="heading-anchor" href="#solidity" aria-label="Link to 用 Solidity 编写智能合约">#</a></h2>
+<p>Solidity 是一种静态类型、面向合约的语言，可编译为 EVM 字节码。一个最小化的代币合约说明了核心概念：</p>
 <pre><code class="language-solidity">pragma solidity ^0.8.0;
 
 contract MyToken {
+    string public name;
+    string public symbol;
+    uint8 public decimals;
+    uint256 public totalSupply;
+    mapping(address =&gt; uint256) public balanceOf;
 
-  string public name;
-  string public symbol;
-  uint256 public decimals;
-  uint256 public totalSupply;
+    event Transfer(address indexed from, address indexed to, uint256 value);
 
-  constructor(string memory _name, string memory _symbol, uint8 _decimals, uint256 _totalSupply) {
-    name = _name;
-    symbol = _symbol;
-    decimals = _decimals;
-    totalSupply = _totalSupply;
-  }
+    constructor(
+        string memory _name,
+        string memory _symbol,
+        uint8 _decimals,
+        uint256 _totalSupply
+    ) {
+        name = _name;
+        symbol = _symbol;
+        decimals = _decimals;
+        totalSupply = _totalSupply;
+        balanceOf[msg.sender] = _totalSupply;
+    }
 
+    function transfer(address _to, uint256 _value) external returns (bool) {
+        require(balanceOf[msg.sender] &gt;= _value, &quot;Insufficient balance&quot;);
+        balanceOf[msg.sender] -= _value;
+        balanceOf[_to] += _value;
+        emit Transfer(msg.sender, _to, _value);
+        return true;
+    }
 }
 </code></pre>
-<p>这个基础合约允许创建一个具有名称、符号、小数位与总供应量等属性的代币。</p>
-<p>构造函数在部署合约时初始化这些参数。</p>
-<p>该示例仅设置了一些基本代币属性。你可以扩展合约以添加更多功能，例如：</p>
+<p>关键观察：<code>mapping(address =&gt; uint256)</code> 是 EVM 存储布局，而不是内存数据结构——读写都需要消耗 gas。<code>require</code> 在失败时回滚整个交易，返还未使用的 gas。<code>event Transfer</code> 发出一个日志，链下索引器使用该日志追踪转账，而无需重新读取完整状态。<code>constructor</code> 在部署时运行一次；后续调用转到具名函数。</p>
+<p>ERC-20 标准规范了同质化代币的通用接口——<code>transfer</code>、<code>transferFrom</code>、<code>approve</code>、<code>allowance</code>、<code>balanceOf</code>、<code>totalSupply</code>——允许任何 ERC-20 兼容代币与任何支持 ERC-20 的交易所或钱包协作，无需自定义集成。</p>
+<h2 id="section-9">从账本到金融基础设施 <a class="heading-anchor" href="#section-9" aria-label="Link to 从账本到金融基础设施">#</a></h2>
+<p>此处描述的区块链原语——哈希链、Merkle 树、EVM 和 ERC-20——在 2018 年至 2026 年间成为更广泛金融应用的基础：</p>
+<p><strong>去中心化金融（DeFi）。</strong> 借贷协议（Compound、Aave）、自动做市商（Uniswap）和收益聚合器都以 EVM 智能合约形式运行。它们用自我执行的代码和链上流动性池取代了传统金融中介的清算、托管和结算功能。</p>
+<p><strong>代币化资产。</strong> 中央银行和商业银行正在 EVM 兼容链的许可变体上试点代币化存款、代币化债券和代币化货币市场基金。其底层机制——哈希安全的状态转换、原子结算、可编程转账规则——是 2014 年 Ethereum 架构的直接后代。</p>
+<p><strong>央行数字货币。</strong> Bank of England 的批发 CBDC 研究、ECB 的数字欧元计划以及 Project Agorá 都在探索源自或兼容 Bitcoin 和 Ethereum 基础设计的 DLT 架构。即使许可和治理模型与公共区块链完全不同，共识和哈希链结构仍然具有重要意义。</p>
+<p>从 2008 年 Bitcoin 白皮书到 2026 年代币化金融的旅程跨越了二十年，但它运行在一个连贯的技术脉络上。理解 SHA-256 哈希链如何强制执行不可变性、Merkle 树如何实现高效验证，以及 EVM 如何以原子方式执行智能合约，是评估区块链在受监管金融服务中能做什么和不能做什么的先决条件。</p>
+<h2 id="section-10">常见问题 <a class="heading-anchor" href="#section-10" aria-label="Link to 常见问题">#</a></h2>
+<p><strong>区块链与分布式数据库有什么区别？</strong></p>
+<p>传统的分布式数据库为了可用性和性能而在节点间复制数据，但信任是中心化的——管理员可以修改记录。区块链通过哈希链和共识使篡改在计算上代价高昂：修改任何历史记录需要重新完成所有后续的 proof-of-work 或 proof-of-stake，并说服网络接受修改后的分叉。其显著特性是通过密码学和激励设计而非访问控制来强制执行的防篡改性。</p>
+<p><strong>Ethereum 为什么使用 Keccak-256 而不是 SHA-256？</strong></p>
+<p>Ethereum 采用 Keccak-256（NIST 标准化调整前的 SHA-3 决赛入围算法），部分原因是其设计者希望独立于 Bitcoin 已经依赖的 SHA-2 系列。Keccak 还具有不同的代数特性，使其对某些 EVM 操作具有吸引力。对开发者的实际影响是，Ethereum 地址派生和存储槽哈希使用 Keccak-256，而不是 Bitcoin 中的 SHA-256d。</p>
+<p><strong>EVM 中的&quot;gas&quot;防止什么？</strong></p>
+<p>Gas 防止两类攻击。首先，它防止通过计算昂贵的操作进行拒绝服务攻击：每个操作码都消耗 gas，因此攻击者无法强迫网络免费执行无限循环。其次，区块 gas 限制限制了每个区块的总计算量，确保区块验证时间对全节点保持有界且可预测。没有 gas，单个合约调用可能通过执行无限计算使网络停止。</p>
+<p><strong>proof-of-stake 与 proof-of-work 相比如何改变安全模型？</strong></p>
+<p>在 proof-of-work 中，安全性由能源消耗提供：攻击链需要控制网络超过 50% 的哈希率，这意味着控制超过 50% 的物理硬件和电力。在 proof-of-stake 中（Ethereum 自 2022 年合并后采用），安全性由经济质押提供：验证者锁定 ETH 作为抵押品，如果他们签署相互冲突的区块，抵押品将被削减。51% 攻击需要获取并冒险使用超过 50% 的所有质押 ETH——这是资本成本而非硬件和能源成本。在理性验证者更倾向于费用收入而非资本损失的假设下，安全模型不同但在经济上具有数学上的可比性。</p>
+<h2 id="section-11">参考文献 <a class="heading-anchor" href="#section-11" aria-label="Link to 参考文献">#</a></h2>
 <ul>
-<li>地址之间的代币转账</li>
-<li>余额管理</li>
-<li>代币使用授权</li>
-<li>代币的铸造与销毁</li>
-<li>冻结或锁定代币转账</li>
-<li>实现 ERC-20 等代币标准</li>
-<li>描述部署合约并与之交互的方式：</li>
+<li>Nakamoto, S., (2008). <a href="https://bitcoin.org/bitcoin.pdf" title="Bitcoin Whitepaper">Bitcoin: A Peer-to-Peer Electronic Cash System ⧉</a>.</li>
+<li>Buterin, V., (2014). <a href="https://ethereum.org/whitepaper" title="Ethereum Whitepaper">Ethereum: A Next-Generation Smart Contract and Decentralised Application Platform ⧉</a>.</li>
+<li>Wood, G., (2014). <a href="https://ethereum.github.io/yellowpaper/paper.pdf" title="Ethereum Yellow Paper">Ethereum: A Secure Decentralised Generalised Transaction Ledger ⧉</a>.</li>
+<li>NIST, (2015). <a href="https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions" title="NIST FIPS 202">SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions ⧉</a>.</li>
 </ul>
-<h3 id="section-5">本地开发与测试 <a class="heading-anchor" href="#section-5" aria-label="Link to 本地开发与测试">#</a></h3>
-<p>在将加密货币部署到以太坊主网之前，进行充分的本地测试是明智之举。这能确保你的加密货币按预期运行，不会出现意外故障或漏洞。</p>
-<p>按以下步骤开始：</p>
-<h4>下载 Go-Ethereum（Geth）</h4>
-<p>首先下载 <a href="https://geth.ethereum.org/downloads/">Go-Ethereum</a>（也称为 Geth），它是用 Go 编写的以太坊客户端。Geth 是一种命令行界面（CLI）以太坊客户端，可在 Windows、Mac 和 Linux 平台上运行。它是一种多功能工具，可让你在以太坊网络上挖矿、创建并与智能合约交互。你可以在此处下载 Geth。</p>
-<h4>安装以太坊</h4>
-<p>下载 Geth 后，继续安装以太坊。详细的前置条件与全面的构建说明请参阅官方 wiki 中的<a href="https://geth.ethereum.org/docs/getting-started/installing-geth">安装说明</a>。</p>
-<h4>搭建开发环境</h4>
-<p>为便于开发加密货币，你需要一个面向以太坊的开发环境、测试框架以及资源管道。详细的搭建说明可在以太坊 wiki 中找到。</p>
-<h4>部署到测试网</h4>
-<p>加密货币通过本地测试后，可部署到测试网。测试网是一个安全且受控的环境，模拟以太坊主网，可让你在不承担真实资金风险的情况下评估加密货币在真实环境中的表现。</p>
-<h2 id="section-6">影响 <a class="heading-anchor" href="#section-6" aria-label="Link to 影响">#</a></h2>
-<p>通过从零开始构建以太坊加密货币，你将获得：</p>
-<ul>
-<li>对去中心化应用（dApps）和智能合约编程的深入知识</li>
-<li>亲身的 Solidity 编程经验</li>
-<li>对以太坊共识协议的理解</li>
-<li>对 ERC-20 等代币标准的熟悉</li>
-</ul>
-<p>这些学习将赋能你利用区块链技术创造创新解决方案。</p>
-<h2 id="section-7">激励 <a class="heading-anchor" href="#section-7" aria-label="Link to 激励">#</a></h2>
-<p>完成端到端的代币构建可让你亲身掌握：</p>
-<ul>
-<li>区块链架构</li>
-<li>加密货币机制</li>
-<li>智能合约开发</li>
-<li>以太坊的能力与局限</li>
-</ul>
-<p>你将获得宝贵技能，助力区块链编程职业发展。</p>
-<h2 id="section-8">结论 <a class="heading-anchor" href="#section-8" aria-label="Link to 结论">#</a></h2>
-<p>在区块链技术领域，理解的最佳途径是动手实践。在以太坊平台上构建加密货币提供了一个独特机会，亲身体验该技术的能力与限制。本指南为你装备了开启这一精彩旅程所需的知识与技能，激发在不断演进的区块链与加密货币开发世界中的创新与发现。</p>
-<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/zh-hans/guanyu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家，撰写关于应用人工智能、ISO 20022 迁移、面向金融服务的后量子密码学，以及批发支付结构性转型的内容。</span><span class="author-credentials">20 多年经验，曾任职于汇丰商业及投资银行、PayPal、巴克莱、Shazam、AKQA、维珍集团。 <a href="/zh-hans/guanyu/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最近审阅 <time datetime="2026-05-22">2026-05-22</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<!-- enrich-start -->
+
+<p class="post-reviewed">最近审阅 <time datetime="2026-05-24">2026-05-24</time>.</p>
+
+<!-- enrich-end -->
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/zh-hans/guanyu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家，撰写关于应用人工智能、ISO 20022 迁移、面向金融服务的后量子密码学，以及批发支付结构性转型的内容。</span><span class="author-credentials">20 多年经验，曾任职于汇丰商业及投资银行、PayPal、巴克莱、Shazam、AKQA、维珍集团。 <a href="/zh-hans/guanyu/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最近审阅 <time datetime="2026-05-27">2026-05-27</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">相关阅读</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2023-10-09-shokunin-zuikuai-de-rust-jingtai-zhandian-shengchengqi/index.html" class="related-media" aria-label="Static Site Generator：最快的基于 Rust 的静态网站生成器" tabindex="-1"><img alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right" src="https://cloudcdn.pro/api/transform?url=/stocks/images/anna-nekrashevich-8534387.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="static-site-generator-rust"><a href="https://sebastienrousseau.com/zh-hans/2023-10-09-shokunin-zuikuai-de-rust-jingtai-zhandian-shengchengqi/index.html">Static Site Generator：最快的基于 Rust 的静态网站生成器</a> <a class="heading-anchor" href="#static-site-generator-rust" aria-label="Link to Static Site Generator：最快的基于 Rust 的静态网站生成器">#</a></h3><p><time datetime="2023-10-09">2023-10-09</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2023-09-29-yong-pain001-zidonghua-iso-20022-zhifu-wenjian/index.html" class="related-media" aria-label="用 pain001 自动化创建符合 ISO 20022 标准的支付文件" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/api/transform?url=/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="pain001-iso-20022"><a href="https://sebastienrousseau.com/zh-hans/2023-09-29-yong-pain001-zidonghua-iso-20022-zhifu-wenjian/index.html">用 pain001 自动化创建符合 ISO 20022 标准的支付文件</a> <a class="heading-anchor" href="#pain001-iso-20022" aria-label="Link to 用 pain001 自动化创建符合 ISO 20022 标准的支付文件">#</a></h3><p><time datetime="2023-09-29">2023-09-29</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2018-02-04-xin-jiamihuobi-yu-gengkuai-zhifu-fangan/index.html" class="related-media" aria-label="推出新的加密货币与面向未来的更快支付方案" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/api/transform?url=/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-11"><a href="https://sebastienrousseau.com/zh-hans/2018-02-04-xin-jiamihuobi-yu-gengkuai-zhifu-fangan/index.html">推出新的加密货币与面向未来的更快支付方案</a> <a class="heading-anchor" href="#section-11" aria-label="Link to 推出新的加密货币与面向未来的更快支付方案">#</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2018-01-24-erc-20-daibi-biaozhun" class="related-media" aria-label="ERC-20 代币标准" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="erc-20"><a href="https://sebastienrousseau.com/zh-hans/2018-01-24-erc-20-daibi-biaozhun">ERC-20 代币标准</a> <a class="heading-anchor" href="#erc-20" aria-label="Link to ERC-20 代币标准">#</a></h3><p><time datetime="2018-01-24">2018-01-24</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2018-02-04-xin-jiamihuobi-yu-gengkuai-zhifu-fangan" class="related-media" aria-label="Unveiling a New Cryptocurrency and Faster Payment Solution" tabindex="-1"><img alt="A very tall building with a lot of holes in it" src="https://cloudcdn.pro/api/transform?url=/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="unveiling-a-new-cryptocurrency-and-faster-payment-solution"><a href="https://sebastienrousseau.com/zh-hans/2018-02-04-xin-jiamihuobi-yu-gengkuai-zhifu-fangan">Unveiling a New Cryptocurrency and Faster Payment Solution</a> <a class="heading-anchor" href="#unveiling-a-new-cryptocurrency-and-faster-payment-solution" aria-label="Link to Unveiling a New Cryptocurrency and Faster Payment Solution">#</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2018-02-15-express-transaction-credits-pingtai-de-jianli" class="related-media" aria-label="The Making of the Express Transaction Credits Platform" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="the-making-of-the-express-transaction-credits-platform"><a href="https://sebastienrousseau.com/zh-hans/2018-02-15-express-transaction-credits-pingtai-de-jianli">The Making of the Express Transaction Credits Platform</a> <a class="heading-anchor" href="#the-making-of-the-express-transaction-credits-platform" aria-label="Link to The Making of the Express Transaction Credits Platform">#</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
 </div>
-</aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/zh-hans/2018-01-02-quqiulian-2018-zui-zhongyao-de-jishu/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">Blockchain explained, the technology that matters the most</span></a><a class="post-pagination-next" href="/zh-hans/2018-01-24-erc-20-daibi-biaozhun/"><span class="post-pagination-label">Next</span><span class="post-pagination-title">ERC-20: The Ethereum Token Interface That Changed the World</span></a></nav></div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Sources & references</h2><ol class="article-sources-list"><li><a href="https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions" rel="external noopener nofollow"><span class="source-host">www.nist.gov</span><span class="source-path">/publications/sha-3-standard-permutation-based-hash-and-extendable-output-fun…</span></a></li></ol></aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/zh-hans/2018-01-02-quqiulian-2018-zui-zhongyao-de-jishu/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">Blockchain explained, the technology that matters the most</span></a><a class="post-pagination-next" href="/zh-hans/2018-01-24-erc-20-daibi-biaozhun/"><span class="post-pagination-label">Next</span><span class="post-pagination-title">ERC-20: The Ethereum Token Interface That Changed the World</span></a></nav></div>
     </main>
 
 <!-- gen-layouts:footer-start -->
@@ -340,7 +371,7 @@ contract MyToken {
     <!-- Schema.org structured data -->
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"zh-hans"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"zh-hans"}]}</script>
 
-        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":159,"about":{"@type":"Thing","name":"ERC-20","sameAs":["https://en.wikipedia.org/wiki/Ethereum#Tokens","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]},"headline":"理解区块链背后的技术","description":"区块链技术已经开启了一个去中心化的新时代。本文以以太坊为平台，带你逐步构建自己的加密货币。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp","width":"100vw","height":"100vh","caption":"一座具有许多孔洞的高塔建筑"},"url":"https://sebastienrousseau.com/zh-hans/2018-01-09-lijie-quqiulian-beihou-de-jishu/","datePublished":"2023-01-09T09:09:00+00:00","dateModified":"2026-05-11","inLanguage":"zh-hans","keywords":"区块链, 以太坊, 智能合约, Solidity, 加密货币, 代币化, ERC-20, dApps, Geth, 测试网","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hans/2018-01-09-lijie-quqiulian-beihou-de-jishu/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"zh-hans"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/zh-hans/"},{"@type":"ListItem","position":3,"name":"理解区块链背后的技术","item":"https://sebastienrousseau.com/zh-hans/2018-01-09-lijie-quqiulian-beihou-de-jishu/"}]}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":484,"about":{"@type":"Thing","name":"Ethereum","sameAs":["https://en.wikipedia.org/wiki/Ethereum","https://www.wikidata.org/wiki/Q21825854","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]},"mentions":[{"@type":"Thing","name":"ERC-20","sameAs":["https://en.wikipedia.org/wiki/Ethereum#Tokens","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]}],"headline":"Understanding the Technology behind Blockchain","description":"区块链技术深度解析：密码哈希链、Merkle树、分布式共识机制，以及Ethereum的可编程层如何将支付账本转变为智能合约与代币化资产平台。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp","width":"100vw","height":"100vh","caption":"深色背景上由光线轨迹连接的抽象数字账本区块"},"url":"https://sebastienrousseau.com/zh-hans/2018-01-09-lijie-quqiulian-beihou-de-jishu/","datePublished":"2018-01-09T09:09:00+00:00","dateModified":"2026-05-24","inLanguage":"zh-hans","keywords":"区块链技术, 密码哈希, Merkle树, 分布式共识, proof of work, Ethereum, 智能合约, EVM, Solidity, ERC-20, 分布式账本, 去中心化金融","articleSection":"Blockchain","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hans/2018-01-09-lijie-quqiulian-beihou-de-jishu/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"zh-hans"},"citation":[{"@type":"CreativeWork","url":"https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/zh-hans/"},{"@type":"ListItem","position":3,"name":"Understanding the Technology behind Blockchain","item":"https://sebastienrousseau.com/zh-hans/2018-01-09-lijie-quqiulian-beihou-de-jishu/"}]}]}</script>
 <script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
   
 <!-- SSG Search Widget -->
@@ -366,5 +397,5 @@ contract MyToken {
 </div>
 <script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
 </div>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"理解区块链背后的技术","url":"https://sebastienrousseau.com/zh-hans/2018-01-09-lijie-quqiulian-beihou-de-jishu/","inLanguage":"zh-Hans","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"区块链, 以太坊, 智能合约, Solidity, 加密货币, 代币化, ERC-20, dApps, Geth, 测试网","programmingLanguage":"Solidity","dependencies":["ERC-20"]}</script></body>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"理解区块链背后的技术","url":"https://sebastienrousseau.com/zh-hans/2018-01-09-lijie-quqiulian-beihou-de-jishu/","inLanguage":"zh-Hans","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"区块链技术, 密码哈希, Merkle树, 分布式共识, proof of work, Ethereum, 智能合约, EVM, Solidity, ERC-20, 分布式账本, 去中心化金融","programmingLanguage":"Solidity","dependencies":["Ethereum","ERC-20"]}</script></body>
 </html>

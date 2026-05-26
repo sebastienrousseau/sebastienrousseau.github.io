@@ -57,22 +57,49 @@ def _index_en_slugs_by_date() -> dict[str, str]:
     return out
 
 
-def _articles_map_for_language(lang_dir: Path, en_by_date: dict[str, str]) -> dict[str, str]:
+def _articles_map_for_language(
+    lang_dir: Path,
+    en_by_date: dict[str, str],
+    previous: dict[str, str] | None = None,
+) -> dict[str, str]:
     """Build ``{en-slug: locale-slug}`` for one locale by scanning its
-    ``_posts/<lang>/*.md`` files and matching each on its date prefix."""
+    ``_posts/<lang>/*.md`` files and matching each on its date prefix.
+
+    Conflict resolution when a date has multiple candidate files:
+      1. The previously-mapped slug wins if its file still exists. This
+         makes the regen sticky — once a translator chose a slug, a
+         later stub file dropped into ``_posts/<lang>/`` for the same
+         date can't silently steal the mapping.
+      2. Otherwise, locale-named files (stem != EN slug) beat EN-named
+         twins (stem == EN slug). EN-named twins are typically leftover
+         stubs from an aborted translation pipeline and would regress
+         the locale's hreflang / canonical / language-switcher URLs.
+      3. Among multiple locale-named candidates, glob order decides
+         (deterministic but arbitrary)."""
     out: dict[str, str] = {}
+    previous = previous or {}
     if not lang_dir.is_dir():
         return out
+    by_date: dict[str, list[str]] = {}
     for md in lang_dir.glob("*.md"):
         m = _DATED_RE.match(md.stem)
         if not m:
             continue
         date = m.group(1)
         if date not in en_by_date:
-            # Locale file with no matching EN post — skip rather than
-            # ship a half-broken slug map.
             continue
-        out[en_by_date[date]] = md.stem
+        by_date.setdefault(date, []).append(md.stem)
+    for date, stems in by_date.items():
+        en_slug = en_by_date[date]
+        prior = previous.get(en_slug)
+        if prior and prior in stems:
+            out[en_slug] = prior
+            continue
+        locale_named = sorted(s for s in stems if s != en_slug)
+        if locale_named:
+            out[en_slug] = locale_named[0]
+        else:
+            out[en_slug] = stems[0]
     return out
 
 
@@ -87,7 +114,7 @@ def regen_one(lang: str, *, en_by_date: dict[str, str]) -> tuple[int, int]:
         return (0, 0)
     existing = json.loads(slugs_path.read_text(encoding="utf-8"))
     previous = existing.get("articles", {}) or {}
-    articles = _articles_map_for_language(lang_dir, en_by_date)
+    articles = _articles_map_for_language(lang_dir, en_by_date, previous=previous)
     # Stable, deterministic ordering: oldest-first by EN slug (which
     # already starts with the date), matching what translate_post.py
     # produces.

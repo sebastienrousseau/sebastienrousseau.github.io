@@ -1,11 +1,11 @@
 {
-  "keywords": "AI trends 2024, generative AI, AI in education, AI cybersecurity, AI finance, AI content creation, AI space exploration, ethical AI, AI in retail, AI analytics",
-  "locale": "id_ID",
-  "description": "AI trends for 2024: generative AI in finance, multimodal models, on-device LLMs and the shifts that will reshape banking and product engineering.",
-  "subtitle": "A Pivotal Year for Tech, Society, and Ethical Evolution",
+  "banner_alt": "Pemandangan Drone Kota London",
   "title": "[ID DRAFT] AI Trends 2024: Insights and Predictions for the Future",
+  "keywords": "tren AI 2024, generative AI, AI dalam pendidikan, keamanan siber AI, AI keuangan, pembuatan konten AI, eksplorasi luar angkasa AI, AI etis, AI dalam ritel, analitik AI",
+  "description": "Tren AI 2024: generative AI di bidang keuangan, model multimodal, LLM on-device, dan pergeseran yang akan mengubah perbankan serta rekayasa produk secara mendasar.",
   "date": "Jan 08, 2024",
+  "subtitle": "Tahun Penting bagi Teknologi, Masyarakat, dan Evolusi Etika",
   "banner": "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp",
   "language": "id-ID",
-  "banner_alt": "Drone View of London"
+  "locale": "id_ID"
 }

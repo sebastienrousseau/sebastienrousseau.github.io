@@ -45,8 +45,8 @@
       <news:language>cs-CZ</news:language>
     </news:publication>
     <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</news:title>
-    <news:keywords>tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, commercial bank money, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenised money, digital wallets, tokenised gilts</news:keywords>
+    <news:title>Tokenizované vklady v roce 2026: bankovní služby, konkurence stablecoinů a stav programovatelných peněz komerčních bank</news:title>
+    <news:keywords>tokenizované vklady 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoiny, komerční bankovní peníze, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenizované peníze, digitální peněženky, tokenizované gilts</news:keywords>
   </news:news>
 </url>
 <url>
@@ -57,8 +57,8 @@
       <news:language>cs-CZ</news:language>
     </news:publication>
     <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
-    <news:title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</news:title>
-    <news:keywords>cloud native banking 2026, Kubernetes banks, financial institutions cloud, DORA 2026, cloud resilience, Red Hat OpenShift, Portworx, VM container coexistence, bank cloud sovereignty, financial services cloud dependency, operational resilience, disaster recovery, cloud exit strategy, AI banking workloads</news:keywords>
+    <news:title>Cloud native bankovnictví v roce 2026: Kubernetes, DORA, suverenita a konec rozdělení mezi VM a kontejnery</news:title>
+    <news:keywords>cloud native bankovnictví 2026, Kubernetes banky, finanční instituce cloud, DORA 2026, cloudová odolnost, Red Hat OpenShift, Portworx, koexistence VM a kontejnerů, cloudová suverenita bank, závislost finančních služeb na cloudu, provozní odolnost, obnova po havárii, strategie odchodu z cloudu, AI bankovní workloady</news:keywords>
   </news:news>
 </url>
 <url>
@@ -326,6 +326,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/cs/2024-02-12-akande-hlasovy-asistent-revoluce-asistence/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs-CZ</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-12T06:06:06+00:00</news:publication_date>
+    <news:title>Àkàndé: GPT-Powered Voice Assistant for Executives</news:title>
+    <news:keywords>Àkàndé, OpenAI GPT-4, Whisper STT, SQLite caching, fpdf2, hlasový asistent Python, chat completions API, generování PDF shrnutí, SHA-256 cache, převod textu na řeč, AI executive asistent, open-source</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/cs/2024-02-08-revoluce-reklamy-jak-ai-tvori-budoucnost/</loc>
   <news:news>
     <news:publication>
@@ -345,8 +357,32 @@
       <news:language>cs-CZ</news:language>
     </news:publication>
     <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
+    <news:title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</news:title>
+    <news:keywords>Azure Cognitive Services, převod řeči na text, neurální akustický model, Azure Text Analytics, zpracování přirozeného jazyka, analýza sentimentu, CherryPy, batch transcription API, vícejazyčné ASR, Azure Translator, přepis zvuku, zpracování zvuku v Pythonu</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/cs/2024-01-29-analyza-audia-preklady-a-poznatky-s-ai/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs-CZ</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
     <news:title>Análisis, traducción e insights de audio impulsados por IA</news:title>
     <news:keywords>audio analyser, azure ai, speech-to-text, análisis de datos de audio, análisis de texto, traducciones IA, insights de audio, transcripción automatizada, tratamiento de datos de audio, aprendizaje automático</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/cs/2024-01-23-pokrok-v-prompt-engineeringu/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs-CZ</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-23T06:06:06+00:00</news:publication_date>
+    <news:title>AI Prompt Engineering 2024: Techniques That Work</news:title>
+    <news:keywords>chain-of-thought prompting, few-shot učení, zero-shot prompting, in-context učení, injekce promptů, ReAct, self-consistency, retrieval-augmented generation, BloombergGPT, systémový prompt, zabezpečení promptů, LLM agent</news:keywords>
   </news:news>
 </url>
 <url>
@@ -477,6 +513,18 @@
       <news:language>cs-CZ</news:language>
     </news:publication>
     <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
+    <news:title>Generative AI in 2023: How It Works, Where It Lands</news:title>
+    <news:keywords>generativní AI, velký jazykový model, transformerová architektura, GPT-4, AI ve finančních službách, halucinace, retrieval-augmented generation, správa AI, foundation model, fine-tuning</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/cs/2023-11-12-zkoumani-generativni-ai/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs-CZ</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
     <news:title>IA generativa en 2023: cómo funciona, dónde aterriza</news:title>
     <news:keywords>IA generativa, tecnología, futuro, impacto, ética, sinergias, innovación, creatividad, transformación, evolución</news:keywords>
   </news:news>
@@ -491,6 +539,18 @@
     <news:publication_date>2023-11-05T06:06:06+00:00</news:publication_date>
     <news:title>Constantes matemáticas y criptográficas para la seguridad en Rust</news:title>
     <news:keywords>constantes matemáticas, constantes criptográficas, seguridad Rust, comunicación segura, cifrado, RSA, criptografía de curva elíptica, biblioteca Common (CMN), aplicaciones Rust, cálculos matemáticos</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/cs/2023-10-26-libmake-generator-kodu-pro-rust-knihovny/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs-CZ</news:language>
+    </news:publication>
+    <news:publication_date>2023-10-26T06:06:06+00:00</news:publication_date>
+    <news:title>LibMake: Rust Library Scaffold Generator</news:title>
+    <news:keywords>LibMake, Rust code generator, cargo scaffold, Rust library template, Tera templating, GitHub Actions Rust, cargo-audit, Rust API Guidelines, boilerplate generator, Rust CI workflow</news:keywords>
   </news:news>
 </url>
 <url>
@@ -537,8 +597,32 @@
       <news:language>cs-CZ</news:language>
     </news:publication>
     <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
+    <news:title>Automating ISO 20022 Payment Files Creation with pain001</news:title>
+    <news:keywords>pain001, ISO 20022, pain.001.001.09, CustomerCreditTransferInitiation, SEPA Credit Transfer, CBPR+, payment automation, XML generation, XSD validation, GrpHdr, PmtInf, CdtTrfTxInf, CtrlSum, SWIFT</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/cs/2023-09-29-automatizace-platebnich-souboru-iso-20022-s-pain001/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs-CZ</news:language>
+    </news:publication>
+    <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
     <news:title>Automatizar la creación de archivos de pago conformes con ISO 20022 con Pain001</news:title>
     <news:keywords>ISO 20022, pain.001, Pain001, Python, pagos, automatización, CBPR+, HVPS+, SEPA, cumplimiento, transferencias</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/cs/2018-02-15-vznik-platformy-express-transaction-credits/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs-CZ</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-15T06:06:06+00:00</news:publication_date>
+    <news:title>The making of the Express Transaction Credits Platform</news:title>
+    <news:keywords>EXTC platform, ERC-223, Ethereum smart contracts, architektura tokenů, multi-signature, časově uzamčený převod, blockchain payments, půjčky kryté kolaterálem, decentralizované finance, 2018 crypto</news:keywords>
   </news:news>
 </url>
 <url>
@@ -566,6 +650,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/cs/2018-02-04-nova-kryptomena-a-reseni-pro-rychlejsi-platby/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs-CZ</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
+    <news:title>Unveiling a new Cryptocurrency and Faster Payment Solution</news:title>
+    <news:keywords>EXTC, ERC-223, Ethereum smart kontrakty, rychlejší platby, kryptoměna, blockchain platby, platební token, decentralizované finance, ERC-20, přeshraniční platby</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/cs/2018-01-24-standard-tokenu-erc-20/</loc>
   <news:news>
     <news:publication>
@@ -587,6 +683,18 @@
     <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
     <news:title>Comprender la tecnología detrás de blockchain</news:title>
     <news:keywords>blockchain, Ethereum, smart contract, criptomoneda, Solidity, Geth, dApps, ERC-20, tokenización, testnet</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/cs/2018-01-09-pochopeni-technologie-za-blockchainem/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs-CZ</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
+    <news:title>Understanding the Technology behind Blockchain</news:title>
+    <news:keywords>technologie blockchain, kryptografický hash, Merkle strom, distribuovaný konsensus, proof of work, Ethereum, smart kontrakty, EVM, Solidity, ERC-20, distribuovaný registr, decentralizované finance</news:keywords>
   </news:news>
 </url>
 <url>

@@ -6,7 +6,7 @@
     <description>한국어 기사: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 그리고 도매 결제 인프라의 구조적 변혁.</description>
     <atom:link href="https://sebastienrousseau.com/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 22 May 2026 21:38:56 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 23:13:19 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
     <item>
       <title>2026 UK Payments Forward Plan: 스테이블코인·오픈뱅킹·토큰화 예금·에이전트 결제</title>
@@ -81,51 +81,51 @@
       <category>런던 재즈 공연</category>
     </item>
     <item>
-      <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+      <title>2026년 토큰화 예금: 은행 서비스, 스테이블코인 경쟁, 그리고 프로그래밍 가능한 상업은행 화폐의 현황</title>
       <link>https://sebastienrousseau.com/ko/2026-05-21-tokenised-deposits-banking-services-status-2026/</link>
-      <description>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</description>
+      <description>2026년 토큰화 예금 서비스는 연구에서 은행 파일럿과 초기 고객 제안으로 이동하고 있습니다. 현재 상태는 사전 규모 단계이지만, 상업은행 자금은 프로그래머블 결제, 디지털 지갑, stablecoin 상호운용성 및 토큰화 자본시장에 맞게 적용되고 있습니다.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-21-tokenised-deposits-banking-services-status-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" type="image/webp" length="0"/>
-      <category>tokenised deposits 2026</category>
+      <category>토큰화 예금 2026</category>
       <category>tokenized deposits banking</category>
       <category>deposit tokens</category>
       <category>Great British Tokenised Deposits</category>
       <category>Lloyds digital assets</category>
       <category>stablecoins</category>
-      <category>commercial bank money</category>
+      <category>상업은행 자금</category>
       <category>BIS stablecoins</category>
       <category>Project Agora</category>
       <category>unified ledger</category>
       <category>Deutsche Bank digital money</category>
       <category>CBDC</category>
-      <category>tokenised money</category>
+      <category>토큰화 화폐</category>
       <category>digital wallets</category>
       <category>tokenised gilts</category>
     </item>
     <item>
-      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <title>2026년 클라우드 네이티브 뱅킹: Kubernetes, DORA, 주권, 그리고 VM 대 컨테이너 분단의 종말</title>
       <link>https://sebastienrousseau.com/ko/2026-05-20-cloud-native-banking-financial-institutions-2026/</link>
-      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <description>2026년 클라우드 네이티브 뱅킹은 Kubernetes 기반 플랫폼 엔지니어링, DORA 대응 운영 복원력, VM·컨테이너 통합, 클라우드 주권, AI 워크로드 배치, 데이터 이식성을 중심으로 발전하고 있습니다.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-20-cloud-native-banking-financial-institutions-2026/</guid>
       <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
-      <category>cloud native banking 2026</category>
-      <category>Kubernetes banks</category>
-      <category>financial institutions cloud</category>
+      <category>클라우드 네이티브 뱅킹 2026</category>
+      <category>Kubernetes 은행</category>
+      <category>금융기관 클라우드</category>
       <category>DORA 2026</category>
-      <category>cloud resilience</category>
+      <category>클라우드 복원력</category>
       <category>Red Hat OpenShift</category>
       <category>Portworx</category>
-      <category>VM container coexistence</category>
-      <category>bank cloud sovereignty</category>
-      <category>financial services cloud dependency</category>
-      <category>operational resilience</category>
+      <category>VM 컨테이너 공존</category>
+      <category>은행 클라우드 주권</category>
+      <category>금융서비스 클라우드 의존성</category>
+      <category>운영 복원력</category>
       <category>disaster recovery</category>
-      <category>cloud exit strategy</category>
-      <category>AI banking workloads</category>
+      <category>클라우드 전환 전략</category>
+      <category>AI 뱅킹 워크로드</category>
     </item>
     <item>
       <title>2026년 글로벌 거액결제: ISO 20022, RTGS 재구축, 그리고 상호운용성의 경제학</title>
@@ -589,6 +589,27 @@
       <category>AI</category>
     </item>
     <item>
+      <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
+      <link>https://sebastienrousseau.com/ko/2024-02-12-akande-eumseong-bijoja-gaein-imwon-bijo-hyeokmyeong/</link>
+      <description>Àkàndé는 OpenAI Whisper 음성 인식, GPT-4 채팅 완성, 로컬 SQLite 캐시를 연결한 오픈소스 Python 음성 어시스턴트로, 대화 기록에서 PDF 요약을 생성하고 모든 데이터를 로컬에 저장합니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2024-02-12-akande-eumseong-bijoja-gaein-imwon-bijo-hyeokmyeong/</guid>
+      <pubDate>Mon, 12 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" type="image/webp" length="0"/>
+      <category>Àkàndé</category>
+      <category>OpenAI GPT-4</category>
+      <category>Whisper STT</category>
+      <category>SQLite 캐싱</category>
+      <category>fpdf2</category>
+      <category>Python 음성 어시스턴트</category>
+      <category>채팅 완성 API</category>
+      <category>PDF 요약 생성</category>
+      <category>SHA-256 캐시</category>
+      <category>텍스트 음성 변환</category>
+      <category>임원 어시스턴트 AI</category>
+      <category>오픈소스</category>
+    </item>
+    <item>
       <title>AI가 미래를 형성하다: 광고의 혁신</title>
       <link>https://sebastienrousseau.com/ko/2024-02-08-ai-ga-mirae-reul-hyeongseong-haneun-gwanggo-hyeokmyeong/</link>
       <description>AI가 광고의 미래를 형성하는 방식과, 업계가 마주한 기회와 윤리적 고려 사항.</description>
@@ -619,6 +640,48 @@
       <category>번역</category>
       <category>다국어</category>
       <category>오디오 통찰</category>
+    </item>
+    <item>
+      <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
+      <link>https://sebastienrousseau.com/ko/2024-01-29-ai-gibon-eumseong-bunseok-beonyeok-tongchal/</link>
+      <description>Audio Analyser는 Azure Cognitive Services 음성-텍스트 변환 신경망 모델, Text Analytics NLP, CherryPy를 사용하여 음성 녹음을 감정 점수, 키워드 추출, 다국어 번역이 포함된 검색 가능한 트랜스크립트로 변환합니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2024-01-29-ai-gibon-eumseong-bunseok-beonyeok-tongchal/</guid>
+      <pubDate>Mon, 29 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" type="image/webp" length="0"/>
+      <category>Azure Cognitive Services</category>
+      <category>음성-텍스트 변환</category>
+      <category>신경 음향 모델</category>
+      <category>Azure Text Analytics</category>
+      <category>자연어 처리</category>
+      <category>감정 분석</category>
+      <category>CherryPy</category>
+      <category>배치 전사 API</category>
+      <category>다국어 ASR</category>
+      <category>Azure Translator</category>
+      <category>오디오 전사</category>
+      <category>Python 오디오 처리</category>
+    </item>
+    <item>
+      <title>AI Prompt Engineering 2024: Techniques That Work</title>
+      <link>https://sebastienrousseau.com/ko/2024-01-23-ai-peurompeuteu-enjineoring-baljeon/</link>
+      <description>프롬프트 엔지니어링은 추론 시점에 LLM 동작을 제어합니다. 제로샷·퓨샷 프롬프팅, chain-of-thought 추론, 자기일관성 샘플링, ReAct 아키텍처, 간접 프롬프트 인젝션 위험, 금융 서비스 적용 패턴을 다룹니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2024-01-23-ai-peurompeuteu-enjineoring-baljeon/</guid>
+      <pubDate>Tue, 23 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" type="image/webp" length="0"/>
+      <category>chain-of-thought 프롬프팅</category>
+      <category>퓨샷 학습</category>
+      <category>제로샷 프롬프팅</category>
+      <category>인컨텍스트 학습</category>
+      <category>프롬프트 인젝션</category>
+      <category>ReAct</category>
+      <category>자기일관성</category>
+      <category>검색 증강 생성</category>
+      <category>BloombergGPT</category>
+      <category>시스템 프롬프트</category>
+      <category>프롬프트 보안</category>
+      <category>LLM 에이전트</category>
     </item>
     <item>
       <title>AI 프롬프트 엔지니어링의 발전</title>
@@ -790,6 +853,25 @@
       <category>FIPS 203</category>
     </item>
     <item>
+      <title>Generative AI in 2023: How It Works, Where It Lands</title>
+      <link>https://sebastienrousseau.com/ko/2023-11-12-saengseonghyung-ai-tamgu/</link>
+      <description>트랜스포머 모델의 작동 원리, 2023년 벤치마크 모델, 금융 서비스에서 생성형 AI가 먼저 도입되는 분야, 배포 전에 실무자들이 반드시 답해야 할 거버넌스 질문을 다룹니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2023-11-12-saengseonghyung-ai-tamgu/</guid>
+      <pubDate>Sun, 12 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
+      <category>생성형 AI</category>
+      <category>대규모 언어 모델</category>
+      <category>transformer architecture</category>
+      <category>GPT-4</category>
+      <category>금융 서비스 AI</category>
+      <category>환각</category>
+      <category>retrieval-augmented generation</category>
+      <category>AI 거버넌스</category>
+      <category>foundation model</category>
+      <category>파인튜닝</category>
+    </item>
+    <item>
       <title>생성 AI 탐구</title>
       <link>https://sebastienrousseau.com/ko/2023-11-12-saengseonghyung-ai-tamgu/</link>
       <description>생성 AI가 이미지, 텍스트, 음성, 코드에서 어떻게 작동하는지, 엔터프라이즈 응용을 위한 실무적 고려 사항.</description>
@@ -823,6 +905,25 @@
       <category>PQC</category>
       <category>보안</category>
       <category>mathconst</category>
+    </item>
+    <item>
+      <title>LibMake: Rust Library Scaffold Generator</title>
+      <link>https://sebastienrousseau.com/ko/2023-10-26-libmake-rust-laibeureori-koodeu-saengseonggi/</link>
+      <description>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2023-10-26-libmake-rust-laibeureori-koodeu-saengseonggi/</guid>
+      <pubDate>Thu, 26 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
+      <category>LibMake</category>
+      <category>Rust code generator</category>
+      <category>cargo scaffold</category>
+      <category>Rust library template</category>
+      <category>Tera templating</category>
+      <category>GitHub Actions Rust</category>
+      <category>cargo-audit</category>
+      <category>Rust API Guidelines</category>
+      <category>boilerplate generator</category>
+      <category>Rust CI workflow</category>
     </item>
     <item>
       <title>libmake: 반복 작업을 줄이고 고품질 Rust 라이브러리를 구축하는 코드 생성기</title>
@@ -876,6 +977,29 @@
       <category>접근성</category>
     </item>
     <item>
+      <title>Automating ISO 20022 Payment Files Creation with pain001</title>
+      <link>https://sebastienrousseau.com/ko/2023-09-29-pain001-ro-iso-20022-junsu-gyeoljepail-jadonghwa/</link>
+      <description>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2023-09-29-pain001-ro-iso-20022-junsu-gyeoljepail-jadonghwa/</guid>
+      <pubDate>Fri, 29 Sep 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" type="image/webp" length="0"/>
+      <category>pain001</category>
+      <category>ISO 20022</category>
+      <category>pain.001.001.09</category>
+      <category>CustomerCreditTransferInitiation</category>
+      <category>SEPA Credit Transfer</category>
+      <category>CBPR+</category>
+      <category>payment automation</category>
+      <category>XML generation</category>
+      <category>XSD validation</category>
+      <category>GrpHdr</category>
+      <category>PmtInf</category>
+      <category>CdtTrfTxInf</category>
+      <category>CtrlSum</category>
+      <category>SWIFT</category>
+    </item>
+    <item>
       <title>pain001로 ISO 20022 준수 결제 파일 생성 자동화</title>
       <link>https://sebastienrousseau.com/ko/2023-09-29-pain001-ro-iso-20022-junsu-gyeoljepail-jadonghwa/</link>
       <description>pain001은 ISO 20022 pain.001 결제 파일 생성을 자동화하는 Python 라이브러리로, MT/MX에서 구조화 메시지로의 글로벌 이행을 위하여 구축되었습니다.</description>
@@ -910,6 +1034,25 @@
       <category>핀테크</category>
     </item>
     <item>
+      <title>The making of the Express Transaction Credits Platform</title>
+      <link>https://sebastienrousseau.com/ko/2018-02-15-express-transaction-credits-peullaetpom-jejak/</link>
+      <description>2018년 Ethereum ERC-223 기반으로 구축된 EXTC 플랫폼에 대한 기술적 심층 분석: 토큰 아키텍처, 멀티시그 지급, 타임락 전송, 담보 기반 즉시 대출을 상세히 다룹니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2018-02-15-express-transaction-credits-peullaetpom-jejak/</guid>
+      <pubDate>Thu, 15 Feb 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
+      <category>EXTC 플랫폼</category>
+      <category>ERC-223</category>
+      <category>Ethereum 스마트 컨트랙트</category>
+      <category>토큰 아키텍처</category>
+      <category>다중 서명</category>
+      <category>타임락 전송</category>
+      <category>블록체인 결제</category>
+      <category>담보 기반 대출</category>
+      <category>탈중앙화 금융</category>
+      <category>2018 크립토</category>
+    </item>
+    <item>
       <title>새로운 암호자산을 공개하며 미래의 보다 빠른 결제 솔루션을 제공한다</title>
       <link>https://sebastienrousseau.com/ko/2018-02-04-saeroun-amhohwapye-wa-misirae-gwasok-gyeoljeyusol/</link>
       <description>새로운 암호자산 프로젝트와, 그것이 보다 빠른 결제 솔루션을 어떻게 가능하게 하는지에 관하여.</description>
@@ -925,6 +1068,25 @@
       <category>블록체인</category>
       <category>핀테크</category>
       <category>국경 간 송금</category>
+    </item>
+    <item>
+      <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
+      <link>https://sebastienrousseau.com/ko/2018-02-04-saeroun-amhohwapye-wa-misirae-gwasok-gyeoljeyusol/</link>
+      <description>2018년 초, EXTC 플랫폼은 Ethereum ERC-223 스마트 계약을 활용해 더 빠른 국경 간 결제를 탐색했습니다. 이는 탈중앙화 금융이 이후에 발전시킬 개념들의 초기 청사진이었습니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2018-02-04-saeroun-amhohwapye-wa-misirae-gwasok-gyeoljeyusol/</guid>
+      <pubDate>Sun, 04 Feb 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" type="image/webp" length="0"/>
+      <category>EXTC</category>
+      <category>ERC-223</category>
+      <category>Ethereum 스마트 계약</category>
+      <category>빠른 결제</category>
+      <category>암호화폐</category>
+      <category>블록체인 결제</category>
+      <category>결제 토큰</category>
+      <category>탈중앙화 금융</category>
+      <category>ERC-20</category>
+      <category>국경 간 결제</category>
     </item>
     <item>
       <title>ERC-20: 세상을 바꾼 이더리움 토큰 인터페이스</title>
@@ -960,6 +1122,27 @@
       <category>합의</category>
       <category>작업 증명</category>
       <category>P2P 네트워크</category>
+    </item>
+    <item>
+      <title>Understanding the Technology behind Blockchain</title>
+      <link>https://sebastienrousseau.com/ko/2018-01-09-beulrokchein-baehu-gisul-ihae/</link>
+      <description>블록체인 작동 원리에 대한 기술적 소개: 암호 해시 체인, Merkle 트리, 분산 합의, Ethereum의 프로그래밍 가능한 레이어가 결제 원장을 스마트 컨트랙트와 토큰화 자산 플랫폼으로 변환한 방법을 설명합니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2018-01-09-beulrokchein-baehu-gisul-ihae/</guid>
+      <pubDate>Tue, 09 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" type="image/webp" length="0"/>
+      <category>블록체인 기술</category>
+      <category>cryptographic hash</category>
+      <category>Merkle tree</category>
+      <category>분산 합의</category>
+      <category>proof of work</category>
+      <category>Ethereum</category>
+      <category>스마트 컨트랙트</category>
+      <category>EVM</category>
+      <category>Solidity</category>
+      <category>ERC-20</category>
+      <category>분산 원장</category>
+      <category>탈중앙화 금융</category>
     </item>
     <item>
       <title>블록체인: 2018년에 중요해질 기술</title>

@@ -1,12 +1,12 @@
 {
-  "subtitle": "Metal Performance Shaders로 1초 미만의 지연 시간",
-  "language": "ko-KR",
-  "description": "OpenAI Whisper와 macOS Metal Performance Shaders GPU 가속으로 실시간 음성-텍스트 변환을 구현합니다.",
   "title": "OpenAI Whisper로 macOS의 실시간 음성 인식을 혁신하다",
-  "banner_alt": "마이크와 음파",
-  "keywords": "OpenAI Whisper, macOS, Metal Performance Shaders, MPS, 실시간, 음성 인식, Apple Silicon",
   "date": "March 12, 2024",
-  "locale": "ko_KR",
+  "keywords": "OpenAI Whisper, macOS, Metal Performance Shaders, MPS, 실시간, 음성 인식, Apple Silicon",
+  "language": "ko-KR",
+  "banner_alt": "마이크와 음파",
+  "description": "OpenAI Whisper와 macOS Metal Performance Shaders GPU 가속으로 실시간 음성-텍스트 변환을 구현합니다.",
   "banner": "https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp",
-  "last_reviewed": "2026-05-16"
+  "locale": "ko_KR",
+  "last_reviewed": "2026-05-16",
+  "subtitle": "Metal Performance Shaders로 1초 미만의 지연 시간"
 }

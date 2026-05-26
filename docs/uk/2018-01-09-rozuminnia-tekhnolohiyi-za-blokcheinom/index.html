@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta itemprop="datePublished" content="Mon, 09 Jan 2023 09:09:00 +0000" id="date" />
-    <meta itemprop="dateModified" content="Mon, 09 Jan 2023 09:09:00 +0000" id="last-modified" />
-    <title>[UK DRAFT] [UK DRAFT] Understanding the Technology behind Blockchain — Sebastien Rousseau</title>
+    <meta itemprop="datePublished" content="Tue, 09 Jan 2018 09:09:00 +0000" id="date" />
+    <meta itemprop="dateModified" content="Tue, 09 Jan 2018 09:09:00 +0000" id="last-modified" />
+    <title>[UK DRAFT] Understanding the Technology behind Blockchain — Sebastien Rousseau</title>
 
     <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
-<meta name="description" content="Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation">
-<meta name="keywords" content="pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation">
+<meta name="description" content="Технічний вступ до роботи blockchain: криптографічні хеш-ланцюги, дерева Меркла, розподілений консенсус і те, як програмований рівень Ethereum перетворив платіжний реєстр на платформу для смарт-контрактів і токенізованих активів.">
+<meta name="keywords" content="технологія blockchain, криптографічний хеш, дерево Меркла, розподілений консенсус, proof of work, Ethereum, смарт-контракти, EVM, Solidity, ERC-20, розподілений реєстр, децентралізовані фінанси">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
     <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+<meta name="apple-mobile-web-app-title" content="Blockchain Tech">
 
     <!-- Strict security headers. The headers below that can be set via
          <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
@@ -40,7 +40,7 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-EzfaVjIffjbGGQ1tkBhyEMgSolFb1VE4rWYd2QV7DO8=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-YvOVeFxAieNzMez82Dr3qeHvpvDm4RxlaVtuDPuvMD4=' 'sha256-mDZ7DbmZYmfyuQtSNw1q9+uuMjRLbAoXWgFjjRRhGXg=' 'sha256-uYaN2oYdWMz77VSjmC3ANeR6XEXzw7Izqb/hYcGwyBQ=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-13E4OpBWsjnpfVe//mtwHJ4JJdMyyMyvlno6fZF7e5E=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-EzfaVjIffjbGGQ1tkBhyEMgSolFb1VE4rWYd2QV7DO8=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-uYaN2oYdWMz77VSjmC3ANeR6XEXzw7Izqb/hYcGwyBQ=' 'sha256-yTKorntOyizfdShfNCe5S4siFHzilEtPVMsRkWDPKBc=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
@@ -77,8 +77,8 @@
     <link rel="alternate" type="application/atom+xml" title="Atom-канал" href="/uk/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="stylesheet" href="/highlight.a92b9694.css">
-<meta property="og:title" content="[UK DRAFT] [UK DRAFT] Understanding the Technology behind Blockchain — Sebastien Rousseau">
-<meta property="og:description" content="Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation">
+<meta property="og:title" content="[UK DRAFT] Understanding the Technology behind Blockchain — Sebastien Rousseau">
+<meta property="og:description" content="Технічний вступ до роботи blockchain: криптографічні хеш-ланцюги, дерева Меркла, розподілений консенсус і те, як програмований рівень Ethereum перетворив платіжний реєстр на платформу для смарт-контрактів і токенізованих активів.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sebastienrousseau.com/uk/2018-01-09-rozuminnia-tekhnolohiyi-za-blokcheinom/">
 <meta property="og:image" content="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp">
@@ -86,8 +86,8 @@
 <meta property="og:image:height" content="100vh">
 <meta property="og:locale" content="uk_UA">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="[UK DRAFT] [UK DRAFT] Understanding the Technology behind Blockchain — Sebastien Rousseau">
-<meta name="twitter:description" content="Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation">
+<meta name="twitter:title" content="[UK DRAFT] Understanding the Technology behind Blockchain — Sebastien Rousseau">
+<meta name="twitter:description" content="Технічний вступ до роботи blockchain: криптографічні хеш-ланцюги, дерева Меркла, розподілений консенсус і те, як програмований рівень Ethereum перетворив платіжний реєстр на платформу для смарт-контрактів і токенізованих активів.">
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp">
 <link rel="canonical" href="https://sebastienrousseau.com/uk/2018-01-09-rozuminnia-tekhnolohiyi-za-blokcheinom/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
@@ -129,34 +129,34 @@
             </button>
             <div class="ap-lang-menu" role="menu" hidden>
               <div class="ap-lang-menu-grid">
-                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
-                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
-                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
-                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
-                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
-                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
-                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
-                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
-                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
-                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
-                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
-                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
-                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
-                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
-                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
-                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
-                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
-                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
-                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
-                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
-                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
-                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
-                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
-                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
-                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
-                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
-                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
-                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+                <a class="ap-lang-item" href="/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2018-01-09-comprendre-la-technologie-derriere-la-blockchain/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2018-01-09-pochopeni-technologie-za-blockchainem/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2018-01-09-die-technologie-hinter-blockchain-verstehen/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2018-01-09-comprender-la-tecnologia-detras-de-blockchain/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2018-01-09-blockchain-ke-peechhe-ki-takneek-samajhna/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2018-01-09-memahami-teknologi-di-balik-blockchain/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2018-01-09-comprendere-la-tecnologia-dietro-la-blockchain/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2018-01-09-burokkuchein-no-gijutsu-wo-rikai-suru/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2018-01-09-beulrokchein-baehu-gisul-ihae/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2018-01-09-de-technologie-achter-blockchain-begrijpen/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2018-01-09-zrozumiec-technologie-stojaca-za-blockchainem/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2018-01-09-compreender-a-tecnologia-por-tras-do-blockchain/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2018-01-09-ponimanie-tekhnologii-blockchain/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2018-01-09-forsta-tekniken-bakom-blockchain/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2018-01-09-khao-chai-theknoloyi-beuang-lang-blockchain/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2018-01-09-blockchain-arkasindaki-teknolojiyi-anlamak/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2018-01-09-rozuminnia-tekhnolohiyi-za-blokcheinom/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2018-01-09-hieu-ve-cong-nghe-dang-sau-blockchain/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2018-01-09-lijie-quqiulian-beihou-de-jishu/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2018-01-09-lijie-quqiulian-beihou-de-jishu-tw/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
               </div>
             </div>
           </div>
@@ -167,43 +167,139 @@
     </header>
 
         <section class="ap-hero">
-      <h1>[UK DRAFT] [UK DRAFT] Understanding the Technology behind Blockchain</h1>
-      <p class="sub">A practical walk-through of the cryptography and consensus behind blockchain.</p>
-    <nav class="article-tags" aria-label="Теми"><a href="/tags/index.html#h3-pain001" class="article-tag" rel="tag">pain001</a><a href="/tags/index.html#h3-iso-20022" class="article-tag" rel="tag">iso 20022</a><a href="/tags/index.html#h3-payment-automation" class="article-tag" rel="tag">payment automation</a><a href="/tags/index.html#h3-cost-reduction" class="article-tag" rel="tag">cost reduction</a><a href="/tags/index.html#h3-payment-processing" class="article-tag" rel="tag">payment processing</a><a href="/tags/index.html#h3-payment-files" class="article-tag" rel="tag">payment files</a><a href="/tags/index.html#h3-payment-initiation" class="article-tag" rel="tag">payment initiation</a><a href="/tags/index.html#h3-pain-message" class="article-tag" rel="tag">pain message</a><a href="/tags/index.html#h3-pain-message-standards" class="article-tag" rel="tag">pain message standards</a><a href="/tags/index.html#h3-pain-message-validation" class="article-tag" rel="tag">pain message validation</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2023-01-09T09:09:00+00:00" class="meta-pub">Опубліковано 9 Jan 2023</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Оновлено 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Орієнтовний час читання">1 хв читання</span></div></section>
+      <h1>[UK DRAFT] Understanding the Technology behind Blockchain</h1>
+      <p class="sub">Від криптографічних хеш-ланцюгів до програмованих смарт-контрактів: механіка, що зробила blockchain платформою, а не просто реєстром.</p>
+    <nav class="article-tags" aria-label="Теми"><a href="/tags/index.html#h3-blockchain" class="article-tag" rel="tag">технологія blockchain</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">криптографічний хеш</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">дерево Меркла</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">розподілений консенсус</a><a href="/tags/index.html#h3-proof-of-work" class="article-tag" rel="tag">proof of work</a><a href="/tags/index.html#h3-ethereum" class="article-tag" rel="tag">Ethereum</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">смарт-контракти</a><a href="/tags/index.html#h3-evm" class="article-tag" rel="tag">EVM</a><a href="/tags/index.html#h3-solidity" class="article-tag" rel="tag">Solidity</a><a href="/tags/index.html#h3-erc-20" class="article-tag" rel="tag">ERC-20</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">розподілений реєстр</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">децентралізовані фінанси</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-01-09T09:09:00+00:00" class="meta-pub">Опубліковано 9 Jan 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">Оновлено 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Орієнтовний час читання">8 хв читання</span></div></section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Зміст</h2><ol><li><a href="#section-1">Спостереження</a></li><li><a href="#section-2">Ідея</a></li><li><a href="#section-3">Вплив</a></li><li><a href="#section-4">Стимули</a></li><li><a href="#section-5">Висновок</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Спостереження.</strong> Цей розділ є чорновим перекладом українською.</li>  <li><strong>Ідея.</strong> Цей розділ є чорновим перекладом українською.</li>  <li><strong>Вплив.</strong> Цей розділ є чорновим перекладом українською.</li>  <li><strong>Стимули.</strong> Цей розділ є чорновим перекладом українською.</li></ul></aside><p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/adam-smigielski-K5mPtONmpHM.webp&w=1600&format=webp&q=85" alt="Turned off laptop computer on top of brown wooden table"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Зміст</h2><ol><li><a href="#blockchain">Проблема, яку вирішив Blockchain</a></li><li><a href="#section-2">Криптографічні будівельні блоки</a></li><li><a href="#blockchain-bitcoin">Як працює Blockchain Bitcoin</a></li><li><a href="#ethereum">Програмований шар Ethereum</a></li><li><a href="#solidity">Написання смарт-контрактів у Solidity</a></li><li><a href="#section-9">Від реєстру до фінансової інфраструктури</a></li><li><a href="#section-10">Часті запитання</a></li><li><a href="#section-11">Посилання</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Технічний вступ до роботи blockchain: криптографічні хеш-ланцюги, дерева Меркла, розподілений консенсус і те, як програмований рівень Ethereum перетворив платіжний реєстр на платформу для смарт-контрактів і токенізованих активів.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Проблема, яку вирішив Blockchain.</strong> До Bitcoin цифрові платежі потребували довіреного посередника — банку, платіжного процесора або клірингової палати — для запобігання подвійним витратам.</li>  <li><strong>Криптографічні будівельні блоки.</strong> Технологія blockchain збирає три вже існуючих криптографічних примітиви в нову архітектуру:.</li>  <li><strong>Як працює Blockchain Bitcoin.</strong> Блок Bitcoin містить три логічні компоненти:.</li>  <li><strong>Програмований шар Ethereum.</strong> Ethereum узагальнив транзакційну модель Bitcoin від «переказу вартості» до «виконання коду».</li></ul></aside><!-- lead-start -->
+
+<!-- lead-end -->
+<p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/adam-smigielski-K5mPtONmpHM.webp&w=1600&format=webp&q=85" alt="Abstract digital ledger blocks connected by light trails on dark background"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
 <blockquote>
-<p><strong>TL;DR.</strong> Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation</p>
-<p><strong>Ключові висновки</strong></p>
+<p><strong>Резюме / Ключові висновки</strong></p>
 <ul>
-<li><strong>Спостереження.</strong> Розгорнутий розділ оригіналу англійською мовою наведено нижче.</li>
-<li><strong>Ідея.</strong> Розгорнутий розділ оригіналу англійською мовою наведено нижче.</li>
-<li><strong>Вплив.</strong> Розгорнутий розділ оригіналу англійською мовою наведено нижче.</li>
-<li><strong>Стимули.</strong> Розгорнутий розділ оригіналу англійською мовою наведено нижче.</li>
-<li><strong>Висновок.</strong> Розгорнутий розділ оригіналу англійською мовою наведено нижче.</li>
+<li><strong>Проблема.</strong> Цифрові гроші потребують вирішення проблеми подвійних витрат: запобігання витраченню однієї одиниці двічі без довіреного клірингового центру. Технічний документ Bitcoin 2008 року вирішив це, замінивши довірених посередників криптографічним доказом і розподіленим консенсусом (<a href="https://bitcoin.org/bitcoin.pdf" title="Bitcoin: A Peer-to-Peer Electronic Cash System">Nakamoto, 2008</a>).</li>
+<li><strong>Структура даних.</strong> Blockchain — це зв'язаний список блоків, де кожен заголовок блоку містить SHA-256-хеш попереднього заголовка. Хеш-ланцюг робить історію лише доповнюваною: зміна будь-якого минулого блоку анулює всі наступні хеші, змушуючи зловмисника повторити весь наступний proof-of-work.</li>
+<li><strong>Merkle trees.</strong> Транзакції у блоці хешуються в бінарне дерево Merkle. Кореневий хеш, збережений у заголовку блоку, дозволяє ефективно верифікувати будь-яку окрему транзакцію без завантаження повного блоку — основа для легких SPV-клієнтів.</li>
+<li><strong>Розширення Ethereum.</strong> Yellow Paper Ethereum (2014) ввів EVM — детерміновану стекову машину, що працює на кожному повному вузлі. Смарт-контракти — це байткод, розгорнутий у ланцюгу; вони виконуються однаково на всіх вузлах і розраховуються атомарно, замінюючи довірених посередників самовиконуваним кодом (<a href="https://ethereum.github.io/yellowpaper/paper.pdf" title="Ethereum Yellow Paper">Wood, 2014</a>).</li>
+<li><strong>Практичне значення.</strong> Кожен токенізований актив, стейблкоїн і DeFi-протокол, розгорнутий після 2017 року, працює на цих засадах. Розуміння хеш-ланцюга, дерева Merkle та моделі виконання EVM є обов'язковою умовою для роботи з будь-якою системою на основі Ethereum.</li>
 </ul>
 </blockquote>
-<h2 id="section-1">Спостереження <a class="heading-anchor" href="#section-1" aria-label="Посилання на Спостереження">#</a></h2>
-<p>Цей розділ є чорновим перекладом українською. Оригінальний англомовний текст розділу «Insight» доступний на канонічній сторінці статті. Повна версія українською буде опублікована після перегляду носієм мови.</p>
-<h2 id="section-2">Ідея <a class="heading-anchor" href="#section-2" aria-label="Посилання на Ідея">#</a></h2>
-<p>Цей розділ є чорновим перекладом українською. Оригінальний англомовний текст розділу «Idea» доступний на канонічній сторінці статті. Повна версія українською буде опублікована після перегляду носієм мови.</p>
-<h2 id="section-3">Вплив <a class="heading-anchor" href="#section-3" aria-label="Посилання на Вплив">#</a></h2>
-<p>Цей розділ є чорновим перекладом українською. Оригінальний англомовний текст розділу «Impact» доступний на канонічній сторінці статті. Повна версія українською буде опублікована після перегляду носієм мови.</p>
-<h2 id="section-4">Стимули <a class="heading-anchor" href="#section-4" aria-label="Посилання на Стимули">#</a></h2>
-<p>Цей розділ є чорновим перекладом українською. Оригінальний англомовний текст розділу «Incentives» доступний на канонічній сторінці статті. Повна версія українською буде опублікована після перегляду носієм мови.</p>
-<h2 id="section-5">Висновок <a class="heading-anchor" href="#section-5" aria-label="Посилання на Висновок">#</a></h2>
-<p>Цей розділ є чорновим перекладом українською. Оригінальний англомовний текст розділу «Conclusion» доступний на канонічній сторінці статті. Повна версія українською буде опублікована після перегляду носієм мови.</p>
 <hr />
-<p><em>Це чорнова версія статті українською мовою. Повний переклад буде опубліковано після перегляду носієм мови. Канонічна англомовна версія доступна на основній сторінці сайту.</em></p>
-<aside class="author-card" aria-label="Про автора"><img alt="Портрет Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/uk/pro-mene/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Старший технологічний експерт у банківській справі. Пишу про прикладний штучний інтелект, міграцію на ISO 20022, постквантову криптографію для фінансових послуг та структурну трансформацію оптових платежів.</span><span class="author-credentials">Понад 20 років досвіду в HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/uk/pro-mene/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Останній перегляд <time datetime="2026-05-22">2026-05-22</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="blockchain">Проблема, яку вирішив Blockchain <a class="heading-anchor" href="#blockchain" aria-label="Посилання на Проблема, яку вирішив Blockchain">#</a></h2>
+<p>До Bitcoin цифрові платежі потребували довіреного посередника — банку, платіжного процесора або клірингової палати — для запобігання подвійним витратам. Якщо Аліса надсилала цифровий файл, що представляв £10, Бобу, ніщо у самому файлі не заважало їй надіслати ідентичну копію Кері. Рішенням у кожній існуючій системі було централізоване ведення записів: реєстр банку вказував, що гроші витрачені, тому їх не можна витратити знову.</p>
+<p>Внесок Bitcoin полягав у заміні цього довіреного реєстру розподіленим, у якому записи про всі транзакції реплікуються на тисячах незалежних вузлів. Взаємна недовіра між вузлами перетворювалася на безпеку завдяки двом механізмам:</p>
+<ol>
+<li>
+<p><strong>Криптографічне зв'язування.</strong> Кожен блок транзакцій містить хеш попереднього блоку. Хеш-функція — це однонаправлене детерміноване відображення: для будь-якого входу функція виробляє вихід фіксованої довжини, і зміна навіть одного біта входу дає зовсім інший вихід. Це означає, що будь-яка зміна в історичному блоці анулює всі наступні блоки.</p>
+</li>
+<li>
+<p><strong>Консенсус proof-of-work.</strong> Додавання нового блоку вимагає знаходження значення nonce такого, що хеш блоку падає нижче цільового порогу — обчислювально дороге завдання для пошуку, тривіально дешеве для перевірки. Це робить перезапис історії пропорційно дорогим залежно від глибини змінюваного блоку, оскільки зловмисник повинен повторити весь proof-of-work від цього блоку до вершини ланцюга.</p>
+</li>
+</ol>
+<p>Поєднання означає, що найдовший ланцюг з найбільшим накопиченим proof-of-work є, за своєю природою, тим, що підтримується чесними учасниками, які витрачають реальні ресурси.</p>
+<h2 id="section-2">Криптографічні будівельні блоки <a class="heading-anchor" href="#section-2" aria-label="Посилання на Криптографічні будівельні блоки">#</a></h2>
+<p>Технологія blockchain збирає три вже існуючих криптографічних примітиви в нову архітектуру:</p>
+<h3 id="sha-256">Хеш-функції SHA-256 <a class="heading-anchor" href="#sha-256" aria-label="Посилання на Хеш-функції SHA-256">#</a></h3>
+<p>SHA-256 (Secure Hash Algorithm 256-bit) є членом сімейства SHA-2, стандартизованого NIST. Він приймає вхід довільної довжини і виробляє 256-бітний вихід. Ключові властивості для використання у blockchain:</p>
+<ul>
+<li><strong>Детермінованість.</strong> Однаковий вхід завжди дає однаковий вихід.</li>
+<li><strong>Стійкість до прообразу.</strong> Маючи хеш-вихід, обчислювально неможливо відновити вхід.</li>
+<li><strong>Лавинний ефект.</strong> Зміна одного біта входу змінює приблизно половину вихідних бітів, що робить пошук грубою силою неефективним.</li>
+<li><strong>Стійкість до колізій.</strong> Обчислювально неможливо знайти два різних входи, що дають однаковий хеш.</li>
+</ul>
+<p>Bitcoin застосовує SHA-256 двічі (SHA-256d) для додаткового захисту від атак із розширенням довжини. Ethereum використовує Keccak-256, варіант фіналіста SHA-3.</p>
+<h3 id="merkle-trees">Merkle Trees <a class="heading-anchor" href="#merkle-trees" aria-label="Посилання на Merkle Trees">#</a></h3>
+<p>Дерево Merkle — це бінарне дерево хешів. Кожен листовий вузол є хешем транзакції. Кожен внутрішній вузол є хешем двох своїх дочірніх вузлів. Корінь — корінь Merkle — підсумовує всі транзакції у блоці в єдиному 32-байтному значенні, збереженому в заголовку блоку.</p>
+<p>Практичний наслідок: щоб перевірити, що конкретна транзакція включена до блоку, потрібно лише <code>log₂(n)</code> хешів, а не всі <code>n</code> транзакцій. Для блоку з 2 000 транзакцій верифікація вимагає 11 хешів замість 2 000 — основа для Спрощеної Перевірки Платежів (SPV) у легких клієнтах.</p>
+<h3 id="ecdsa">Цифрові підписи (ECDSA) <a class="heading-anchor" href="#ecdsa" aria-label="Посилання на Цифрові підписи (ECDSA)">#</a></h3>
+<p>Авторизація транзакцій у Bitcoin і Ethereum використовує алгоритм цифрового підпису на еліптичній кривій (ECDSA) на кривій secp256k1. Приватний ключ підписує транзакцію; будь-який вузол може перевірити підпис за допомогою відповідного публічного ключа, не знаючи приватного ключа. Це гарантує, що лише власник приватного ключа може авторизувати витрату з адреси.</p>
+<p>Адреси Ethereum — це останні 20 байтів Keccak-256-хешу публічного ключа — похідна, що робить адреси компактними та портативними, залишаючись криптографічно пов'язаними з парою ключів.</p>
+<h2 id="blockchain-bitcoin">Як працює Blockchain Bitcoin <a class="heading-anchor" href="#blockchain-bitcoin" aria-label="Посилання на Як працює Blockchain Bitcoin">#</a></h2>
+<p>Блок Bitcoin містить три логічні компоненти:</p>
+<p><strong>Заголовок блоку</strong> — 80 байтів, що включають: версію протоколу, хеш заголовка попереднього блоку, корінь Merkle транзакцій, Unix-мітку часу, поточну ціль складності та nonce. Майнери перебирають nonce (а іноді мітку часу або extra-nonce у coinbase-транзакції), доки подвійний SHA-256-хеш заголовка не впаде нижче цілі складності.</p>
+<p><strong>Список транзакцій</strong> — впорядкований набір транзакцій, включених до блоку. Coinbase-транзакція (перша) призначає нагороду за блок та комісійні транзакції на адресу майнера.</p>
+<p><strong>Ланцюг</strong> — зв'язок заголовків. Накопичений proof-of-work у ланцюгу (сума всієї роботи, виконаної для виробництва кожного блоку) визначає, який форк є канонічним ланцюгом. Вузли завжди слідують ланцюгу з найбільшою накопиченою роботою.</p>
+<p>Цільовий час блоку для Bitcoin становить 10 хвилин. Складність коригується кожні 2 016 блоків (приблизно два тижні), щоб підтримувати цю ціль при зміні загального хешрейту мережі.</p>
+<h2 id="ethereum">Програмований шар Ethereum <a class="heading-anchor" href="#ethereum" aria-label="Посилання на Програмований шар Ethereum">#</a></h2>
+<p>Ethereum узагальнив транзакційну модель Bitcoin від «переказу вартості» до «виконання коду». Ключові доповнення:</p>
+<p><strong>Ethereum Virtual Machine (EVM).</strong> 256-бітна слово-орієнтована стекова віртуальна машина, що виконується детерміновано на всіх повних вузлах. Кожен опкод має явну вартість gas. Обчислення обмежені лімітом gas блоку, запобігаючи зупинці мережі через нескінченні цикли. Всі вузли, що виконують однаковий байткод на однаковому стані, повинні виробляти однаковий вихід — саме цей консенсус виконання робить смарт-контракти незалежними від довіри.</p>
+<p><strong>Акаунти.</strong> Ethereum має два типи акаунтів: Externally Owned Accounts (EOA), контрольовані приватними ключами, та Contract Accounts, чий код зберігається в ланцюгу. Транзакція, надіслана на адресу контракту, запускає виконання байткоду контракту.</p>
+<p><strong>Стан.</strong> Глобальний стан Ethereum — це відображення адрес на стани акаунтів (nonce, баланс, сховище, хеш коду). Корінь стану — дерево Patricia trie на основі Merkle для всіх станів акаунтів — включається в кожний заголовок блоку, дозволяючи ефективно довести стан будь-якого акаунту на будь-якій висоті блоку.</p>
+<p><strong>Gas.</strong> Користувачі платять gas (в ETH) за кожну операцію EVM. Gas виконує дві функції: компенсує майнерам/валідаторам обчислення та обмежує ресурси, які може споживати будь-яка окрема транзакція, запобігаючи атакам типу «відмова в обслуговуванні» через дорогі операції.</p>
+<h2 id="solidity">Написання смарт-контрактів у Solidity <a class="heading-anchor" href="#solidity" aria-label="Посилання на Написання смарт-контрактів у Solidity">#</a></h2>
+<p>Solidity — це статично типізована, контрактно-орієнтована мова, що компілюється в байткод EVM. Мінімальний контракт токена ілюструє основні концепції:</p>
+<pre><code class="language-solidity">pragma solidity ^0.8.0;
+
+contract MyToken {
+    string public name;
+    string public symbol;
+    uint8 public decimals;
+    uint256 public totalSupply;
+    mapping(address =&gt; uint256) public balanceOf;
+
+    event Transfer(address indexed from, address indexed to, uint256 value);
+
+    constructor(
+        string memory _name,
+        string memory _symbol,
+        uint8 _decimals,
+        uint256 _totalSupply
+    ) {
+        name = _name;
+        symbol = _symbol;
+        decimals = _decimals;
+        totalSupply = _totalSupply;
+        balanceOf[msg.sender] = _totalSupply;
+    }
+
+    function transfer(address _to, uint256 _value) external returns (bool) {
+        require(balanceOf[msg.sender] &gt;= _value, &quot;Insufficient balance&quot;);
+        balanceOf[msg.sender] -= _value;
+        balanceOf[_to] += _value;
+        emit Transfer(msg.sender, _to, _value);
+        return true;
+    }
+}
+</code></pre>
+<p>Ключові спостереження: <code>mapping(address =&gt; uint256)</code> — це схема сховища EVM, а не структура даних у пам'яті — читання та записи коштують gas. <code>require</code> скасовує всю транзакцію при невдачі, повертаючи невикористаний gas. <code>event Transfer</code> випускає журнал, який позаланцюгові індексатори використовують для відстеження переказів без повторного читання повного стану. <code>constructor</code> запускається один раз при розгортанні; наступні виклики йдуть до іменованих функцій.</p>
+<p>Стандарт ERC-20 формалізував загальний інтерфейс для замінних токенів — <code>transfer</code>, <code>transferFrom</code>, <code>approve</code>, <code>allowance</code>, <code>balanceOf</code>, <code>totalSupply</code> — дозволяючи будь-якому ERC-20-сумісному токену працювати з будь-якою ERC-20-орієнтованою біржею або гаманцем без спеціальної інтеграції.</p>
+<h2 id="section-9">Від реєстру до фінансової інфраструктури <a class="heading-anchor" href="#section-9" aria-label="Посилання на Від реєстру до фінансової інфраструктури">#</a></h2>
+<p>Примітиви blockchain, описані тут — хеш-ланцюги, дерева Merkle, EVM та ERC-20 — стали фундаментом для ширшого набору фінансових додатків між 2018 і 2026 роками:</p>
+<p><strong>Децентралізовані фінанси (DeFi).</strong> Кредитні протоколи (Compound, Aave), автоматизовані маркет-мейкери (Uniswap) та агрегатори прибутковості — всі вони працюють як EVM-смарт-контракти. Вони замінюють кліринг, зберігання та розрахункові функції традиційних фінансових посередників самовиконуваним кодом та пулами ліквідності в ланцюгу.</p>
+<p><strong>Токенізовані активи.</strong> Центральні банки та комерційні банки пілотують токенізовані депозити, токенізовані облігації та токенізовані фонди грошового ринку на дозволених варіантах EVM-сумісних ланцюгів. Базова механіка — переходи стану, захищені хешем, атомарні розрахунки, програмовані правила переказу — є прямими нащадками архітектури Ethereum 2014 року.</p>
+<p><strong>Цифрові валюти центральних банків.</strong> Оптові дослідження CBDC Банку Англії, програма цифрового євро ЄЦБ та Project Agorá — всі вони досліджують DLT-архітектури, похідні або сумісні з фундаментальними проектами Bitcoin та Ethereum. Консенсусні та хеш-ланцюгові структури залишаються актуальними навіть там, де модель дозволів та управління повністю відрізняється від публічних blockchain.</p>
+<p>Шлях від технічного документа Bitcoin 2008 року до токенізованих фінансів 2026 року охоплює два десятиліття, але він проходить по когерентній технічній лінії. Розуміння того, як хеш-ланцюг SHA-256 забезпечує незмінність, як дерево Merkle дозволяє ефективну верифікацію, і як EVM виконує смарт-контракти атомарно, є обов'язковою умовою для оцінки будь-якого твердження про те, що blockchain може і не може робити в регульованих фінансових послугах.</p>
+<h2 id="section-10">Часті запитання <a class="heading-anchor" href="#section-10" aria-label="Посилання на Часті запитання">#</a></h2>
+<p><strong>Яка різниця між blockchain та розподіленою базою даних?</strong></p>
+<p>Традиційна розподілена база даних реплікує дані по вузлах для доступності та продуктивності, але довіра централізована — адміністратор може змінювати записи. Blockchain робить підробку обчислювально дорогою через хеш-ланцюг та консенсус: зміна будь-якого історичного запису вимагає повторення всього наступного proof-of-work або proof-of-stake та переконання мережі прийняти змінений форк. Відмітна властивість — захист від підробки, забезпечений криптографією та дизайном стимулів, а не контролем доступу.</p>
+<p><strong>Чому Ethereum використовує Keccak-256 замість SHA-256?</strong></p>
+<p>Ethereum прийняв Keccak-256 (фіналіст SHA-3 до коригувань стандартизації NIST) частково тому, що його розробники хотіли незалежності від лінії SHA-2, на яку вже покладався Bitcoin. Keccak також має різні алгебраїчні властивості, які зробили його привабливим для певних операцій EVM. Практичний ефект для розробників полягає в тому, що виведення адреси Ethereum та хешування слотів сховища використовують Keccak-256, а не SHA-256d, як у Bitcoin.</p>
+<p><strong>Що запобігає «gas» в EVM?</strong></p>
+<p>Gas запобігає двом категоріям атак. По-перше, він запобігає відмові в обслуговуванні через обчислювально дорогі операції: кожен опкод коштує gas, тому зловмисник не може змусити мережу виконувати нескінченні цикли безкоштовно. По-друге, ліміт gas блоку обмежує загальні обчислення на блок, забезпечуючи обмежений і передбачуваний час валідації блоку для повних вузлів. Без gas один виклик контракту міг би зупинити мережу, виконуючи необмежені обчислення.</p>
+<p><strong>Як proof-of-stake змінює модель безпеки порівняно з proof-of-work?</strong></p>
+<p>У proof-of-work безпека забезпечується витратами енергії: атака на ланцюг вимагає контролю понад 50% хешрейту мережі, що означає контроль понад 50% її фізичного обладнання та потужності. У proof-of-stake (використовуваному Ethereum після злиття у 2022 році) безпека забезпечується економічною часткою: валідатори блокують ETH як заставу, яка конфісковується, якщо вони підписують конфліктуючі блоки. Атака 51% вимагає придбання та ризику більш ніж 50% усіх застейканих ETH — це капітальні витрати, а не витрати на обладнання та енергію. Модель безпеки різна, але математично порівнянна в економічних термінах за умови, що раціональні валідатори віддають перевагу доходам від комісій над знищенням капіталу.</p>
+<h2 id="section-11">Посилання <a class="heading-anchor" href="#section-11" aria-label="Посилання на Посилання">#</a></h2>
+<ul>
+<li>Nakamoto, S., (2008). <a href="https://bitcoin.org/bitcoin.pdf" title="Bitcoin Whitepaper">Bitcoin: A Peer-to-Peer Electronic Cash System ⧉</a>.</li>
+<li>Buterin, V., (2014). <a href="https://ethereum.org/whitepaper" title="Ethereum Whitepaper">Ethereum: A Next-Generation Smart Contract and Decentralised Application Platform ⧉</a>.</li>
+<li>Wood, G., (2014). <a href="https://ethereum.github.io/yellowpaper/paper.pdf" title="Ethereum Yellow Paper">Ethereum: A Secure Decentralised Generalised Transaction Ledger ⧉</a>.</li>
+<li>NIST, (2015). <a href="https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions" title="NIST FIPS 202">SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Останній перегляд <time datetime="2026-05-24">2026-05-24</time>.</p>
+
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Про автора"><img alt="Портрет Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/uk/pro-mene/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Старший технологічний експерт у банківській справі. Пишу про прикладний штучний інтелект, міграцію на ISO 20022, постквантову криптографію для фінансових послуг та структурну трансформацію оптових платежів.</span><span class="author-credentials">Понад 20 років досвіду в HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/uk/pro-mene/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Останній перегляд <time datetime="2026-05-27">2026-05-27</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Пов’язане читання</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/uk/2023-10-09-shokunin-naishvydshyi-rust-statychnyy-henerator/index.html" class="related-media" aria-label="[UK DRAFT] Static Site Generator: Fastest Rust-Based SSG" tabindex="-1"><img alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right" src="https://cloudcdn.pro/api/transform?url=/stocks/images/anna-nekrashevich-8534387.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="uk-draft-static-site-generator-fastest-rust-based-ssg"><a href="https://sebastienrousseau.com/uk/2023-10-09-shokunin-naishvydshyi-rust-statychnyy-henerator/index.html">[UK DRAFT] Static Site Generator: Fastest Rust-Based SSG</a> <a class="heading-anchor" href="#uk-draft-static-site-generator-fastest-rust-based-ssg" aria-label="Посилання на [UK DRAFT] Static Site Generator: Fastest Rust-Based SSG">#</a></h3><p><time datetime="2023-10-09">2023-10-09</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/uk/2023-09-29-avtomatyzatsiya-platizhnykh-faylov-iso-20022-z-pain001/index.html" class="related-media" aria-label="[UK DRAFT] Automating ISO 20022 Payment Files Creation with Pain001" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/api/transform?url=/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="uk-draft-automating-iso-20022-payment-files-creation-with-pain001"><a href="https://sebastienrousseau.com/uk/2023-09-29-avtomatyzatsiya-platizhnykh-faylov-iso-20022-z-pain001/index.html">[UK DRAFT] Automating ISO 20022 Payment Files Creation with Pain001</a> <a class="heading-anchor" href="#uk-draft-automating-iso-20022-payment-files-creation-with-pain001" aria-label="Посилання на [UK DRAFT] Automating ISO 20022 Payment Files Creation with Pain001">#</a></h3><p><time datetime="2023-09-29">2023-09-29</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/uk/2018-02-04-nova-kryptovaluta-shvydshe-rishennia-dlia-platezhiv/index.html" class="related-media" aria-label="[UK DRAFT] Unveiling a new Cryptocurrency and Faster Payment Solution" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/api/transform?url=/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="uk-draft-unveiling-a-new-cryptocurrency-and-faster-payment-solution"><a href="https://sebastienrousseau.com/uk/2018-02-04-nova-kryptovaluta-shvydshe-rishennia-dlia-platezhiv/index.html">[UK DRAFT] Unveiling a new Cryptocurrency and Faster Payment Solution</a> <a class="heading-anchor" href="#uk-draft-unveiling-a-new-cryptocurrency-and-faster-payment-solution" aria-label="Посилання на [UK DRAFT] Unveiling a new Cryptocurrency and Faster Payment Solution">#</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/uk/2018-01-24-standart-tokena-erc-20" class="related-media" aria-label="[UK DRAFT] ERC-20: The Ethereum Token Interface That Changed the World" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="uk-draft-erc-20-the-ethereum-token-interface-that-changed-the-world"><a href="https://sebastienrousseau.com/uk/2018-01-24-standart-tokena-erc-20">[UK DRAFT] ERC-20: The Ethereum Token Interface That Changed the World</a> <a class="heading-anchor" href="#uk-draft-erc-20-the-ethereum-token-interface-that-changed-the-world" aria-label="Посилання на [UK DRAFT] ERC-20: The Ethereum Token Interface That Changed the World">#</a></h3><p><time datetime="2018-01-24">2018-01-24</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/uk/2018-02-04-nova-kryptovaluta-shvydshe-rishennia-dlia-platezhiv" class="related-media" aria-label="Unveiling a New Cryptocurrency and Faster Payment Solution" tabindex="-1"><img alt="A very tall building with a lot of holes in it" src="https://cloudcdn.pro/api/transform?url=/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="unveiling-a-new-cryptocurrency-and-faster-payment-solution"><a href="https://sebastienrousseau.com/uk/2018-02-04-nova-kryptovaluta-shvydshe-rishennia-dlia-platezhiv">Unveiling a New Cryptocurrency and Faster Payment Solution</a> <a class="heading-anchor" href="#unveiling-a-new-cryptocurrency-and-faster-payment-solution" aria-label="Посилання на Unveiling a New Cryptocurrency and Faster Payment Solution">#</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/uk/2018-02-15-stvorennia-platformy-express-transaction-credits" class="related-media" aria-label="The Making of the Express Transaction Credits Platform" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="the-making-of-the-express-transaction-credits-platform"><a href="https://sebastienrousseau.com/uk/2018-02-15-stvorennia-platformy-express-transaction-credits">The Making of the Express Transaction Credits Platform</a> <a class="heading-anchor" href="#the-making-of-the-express-transaction-credits-platform" aria-label="Посилання на The Making of the Express Transaction Credits Platform">#</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
 </div>
-</aside><nav class="post-pagination" aria-label="Навігація статтями"><a class="post-pagination-prev" href="/uk/2018-01-02-blokchein-tekhnolohiya-yaka-maye-znachennia-2018/"><span class="post-pagination-label">Попередня</span><span class="post-pagination-title">Blockchain explained, the technology that matters the most</span></a><a class="post-pagination-next" href="/uk/2018-01-24-standart-tokena-erc-20/"><span class="post-pagination-label">Наступна</span><span class="post-pagination-title">ERC-20: The Ethereum Token Interface That Changed the World</span></a></nav></div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Джерела та посилання</h2><ol class="article-sources-list"><li><a href="https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions" rel="external noopener nofollow"><span class="source-host">www.nist.gov</span><span class="source-path">/publications/sha-3-standard-permutation-based-hash-and-extendable-output-fun…</span></a></li></ol></aside><nav class="post-pagination" aria-label="Навігація статтями"><a class="post-pagination-prev" href="/uk/2018-01-02-blokchein-tekhnolohiya-yaka-maye-znachennia-2018/"><span class="post-pagination-label">Попередня</span><span class="post-pagination-title">Blockchain explained, the technology that matters the most</span></a><a class="post-pagination-next" href="/uk/2018-01-24-standart-tokena-erc-20/"><span class="post-pagination-label">Наступна</span><span class="post-pagination-title">ERC-20: The Ethereum Token Interface That Changed the World</span></a></nav></div>
     </main>
 
 <!-- gen-layouts:footer-start -->
@@ -275,7 +371,7 @@
     <!-- Schema.org structured data -->
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"uk"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"uk"}]}</script>
 
-        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":218,"about":{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]},"headline":"[UK DRAFT] Understanding the Technology behind Blockchain","description":"Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp","width":"100vw","height":"100vh","caption":"Turned off laptop computer on top of brown wooden table"},"url":"https://sebastienrousseau.com/uk/2018-01-09-rozuminnia-tekhnolohiyi-za-blokcheinom/","datePublished":"2023-01-09T09:09:00+00:00","dateModified":"2026-05-11","inLanguage":"uk","keywords":"pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/uk/2018-01-09-rozuminnia-tekhnolohiyi-za-blokcheinom/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"uk"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/uk/"},{"@type":"ListItem","position":3,"name":"[UK DRAFT] Understanding the Technology behind Blockchain","item":"https://sebastienrousseau.com/uk/2018-01-09-rozuminnia-tekhnolohiyi-za-blokcheinom/"}]}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1758,"about":{"@type":"Thing","name":"Blockchain","sameAs":["https://en.wikipedia.org/wiki/Blockchain","https://www.wikidata.org/wiki/Q20514253","https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"]},"mentions":[{"@type":"Thing","name":"Ethereum","sameAs":["https://en.wikipedia.org/wiki/Ethereum","https://www.wikidata.org/wiki/Q21825854","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]},{"@type":"Thing","name":"ERC-20","sameAs":["https://en.wikipedia.org/wiki/Ethereum#Tokens","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]}],"headline":"Understanding the Technology behind Blockchain","description":"Технічний вступ до роботи blockchain: криптографічні хеш-ланцюги, дерева Меркла, розподілений консенсус і те, як програмований рівень Ethereum перетворив платіжний реєстр на платформу для смарт-контрактів і токенізованих активів.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp","width":"100vw","height":"100vh","caption":"Абстрактні блоки цифрового реєстру, з'єднані світловими слідами на темному фоні"},"url":"https://sebastienrousseau.com/uk/2018-01-09-rozuminnia-tekhnolohiyi-za-blokcheinom/","datePublished":"2018-01-09T09:09:00+00:00","dateModified":"2026-05-24","inLanguage":"uk","keywords":"технологія blockchain, криптографічний хеш, дерево Меркла, розподілений консенсус, proof of work, Ethereum, смарт-контракти, EVM, Solidity, ERC-20, розподілений реєстр, децентралізовані фінанси","articleSection":"Blockchain","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/uk/2018-01-09-rozuminnia-tekhnolohiyi-za-blokcheinom/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"uk"},"citation":[{"@type":"CreativeWork","url":"https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/uk/"},{"@type":"ListItem","position":3,"name":"Understanding the Technology behind Blockchain","item":"https://sebastienrousseau.com/uk/2018-01-09-rozuminnia-tekhnolohiyi-za-blokcheinom/"}]}]}</script>
 <script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
   
 <!-- SSG Search Widget -->
@@ -301,5 +397,5 @@
 </div>
 <script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
 </div>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"[UK DRAFT] [UK DRAFT] Understanding the Technology behind Blockchain","url":"https://sebastienrousseau.com/uk/2018-01-09-rozuminnia-tekhnolohiyi-za-blokcheinom/","inLanguage":"uk-UA","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation","dependencies":["ISO 20022"]}</script></body>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"[UK DRAFT] Understanding the Technology behind Blockchain","url":"https://sebastienrousseau.com/uk/2018-01-09-rozuminnia-tekhnolohiyi-za-blokcheinom/","inLanguage":"uk-UA","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"технологія blockchain, криптографічний хеш, дерево Меркла, розподілений консенсус, proof of work, Ethereum, смарт-контракти, EVM, Solidity, ERC-20, розподілений реєстр, децентралізовані фінанси","programmingLanguage":"Solidity","dependencies":["Blockchain","Ethereum","ERC-20"]}</script></body>
 </html>

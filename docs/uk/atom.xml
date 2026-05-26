@@ -4,7 +4,7 @@
   <link href="https://sebastienrousseau.com/uk/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/uk/"/>
   <id>https://sebastienrousseau.com/uk/</id>
-  <updated>2026-05-22T21:38:56+00:00</updated>
+  <updated>2026-05-26T23:13:19+00:00</updated>
   <entry>
     <title>UK Payments Forward Plan 2026: стейблкоїни, відкритий банкінг, токенізовані депозити, агентські платежі</title>
     <link href="https://sebastienrousseau.com/uk/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/"/>
@@ -33,21 +33,21 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+    <title>Токенізовані депозити у 2026 році: банківські послуги, конкуренція зі стейблкоїнами та статус програмованих грошей комерційних банків</title>
     <link href="https://sebastienrousseau.com/uk/2026-05-21-tokenised-deposits-banking-services-status-2026/"/>
     <id>https://sebastienrousseau.com/uk/2026-05-21-tokenised-deposits-banking-services-status-2026/</id>
     <updated>2026-05-21T06:06:06+00:00</updated>
     <published>2026-05-21T06:06:06+00:00</published>
-    <summary>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</summary>
+    <summary>У 2026 році токенізовані депозитні послуги переходять від досліджень до банківських пілотів і ранніх клієнтських пропозицій. Статус ще до масштабний, але напрямок зрозумілий: комерційні банківські гроші адаптуються для програмованих розрахунків, цифрових гаманців, сумісності зі стейблкоїнами та токенізованих ринків капіталу.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+    <title>Хмарно-нативний банкінг у 2026 році: Kubernetes, DORA, суверенітет і кінець протистояння VM проти контейнерів</title>
     <link href="https://sebastienrousseau.com/uk/2026-05-20-cloud-native-banking-financial-institutions-2026/"/>
     <id>https://sebastienrousseau.com/uk/2026-05-20-cloud-native-banking-financial-institutions-2026/</id>
     <updated>2026-05-20T06:06:06+00:00</updated>
     <published>2026-05-20T06:06:06+00:00</published>
-    <summary>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</summary>
+    <summary>Cloud native банківська справа у 2026 році охоплює платформну інженерію на базі Kubernetes, операційну стійкість відповідно до DORA, конвергенцію VM і контейнерів, хмарний суверенітет, розміщення навантажень AI, переносимість даних та доведення стійкості критичних фінансових послуг до збоїв провайдерів.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -74,7 +74,7 @@
     <id>https://sebastienrousseau.com/uk/2026-05-17-ahentyna-inzheneriya-banky-blueprint-2026/</id>
     <updated>2026-05-17T06:06:06+00:00</updated>
     <published>2026-05-17T06:06:06+00:00</published>
-    <summary>Agentic AI has crossed from pilot into production across global banking. 70% of institutions are using it to some degree; only one in five has a mature governance model. Meanwhile, autonomous adversaries are operating at machine speed, the legacy COBOL estate the new systems must interoperate with was written for the batch-processing assumptions of the 1960s, and the EU AI Act&apos;s August 2026 high-risk deadline is twelve weeks away. This is the engineering and governance position a bank needs to hold.</summary>
+    <summary>Агентичний ШІ перейшов від пілоту до виробництва у банках. 70% його використовують; лише один із п&apos;яти має зрілу модель управління. Дедлайн EU AI Act — за 12 тижнів.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -92,7 +92,7 @@
     <id>https://sebastienrousseau.com/uk/2026-05-15-prykhovana-dokhidnist-blackrock-brsrv-bstbl-genius-act/</id>
     <updated>2026-05-15T06:06:06+00:00</updated>
     <published>2026-05-15T06:06:06+00:00</published>
-    <summary>Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two SEC registrations for products that solve this constraint by being regulated as money market funds rather than stablecoins — while behaving, in the wallet, like yield-bearing dollars. A close reading of BRSRV, BSTBL, and the OCC rulemaking they respond to.</summary>
+    <summary>Стейблкоїни не можуть виплачувати дохід згідно з GENIUS Act. 8 травня 2026 року BlackRock подала до SEC реєстрації BRSRV і BSTBL — фонди грошового ринку, що виплачують дохід у гаманці на блокчейні, а не стейблкоїни.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -101,7 +101,7 @@
     <id>https://sebastienrousseau.com/uk/2026-05-14-zakhyst-knyhy-postkvantova-migratsiya-korporatyvnykh-finansiv/</id>
     <updated>2026-05-14T06:06:06+00:00</updated>
     <published>2026-05-14T06:06:06+00:00</published>
-    <summary>Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026, the EU, UK, and ASD timelines clarified, and the BIS Project Leap proving feasibility at the central-bank level, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today&apos;s data expires.</summary>
+    <summary>Квантовий ризик став регуляторним мандатом. Дорожня карта G7 2026 та BIS Project Leap підтверджують: питання вже не «чи мігрувати на PQC», а «чи встигнути».</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -110,7 +110,7 @@
     <id>https://sebastienrousseau.com/uk/2026-05-12-iso-20022-pacs008-strukturovana-adresa-deadline/</id>
     <updated>2026-05-12T06:06:06+00:00</updated>
     <published>2026-05-12T06:06:06+00:00</published>
-    <summary>From November 2026, SWIFT CBPR+ requires structured postal addresses in cross-border payment messages. Unstructured address lines (AdrLine alone) will no longer be accepted for key party fields in pacs.008. At minimum, TwnNm and Ctry are required, with StrtNm and BldgNb or PstBx recommended. With six months to go, 65% of payment messages still contain unstructured addresses and 44% of banks remain behind schedule.</summary>
+    <summary>З листопада 2026 р. SWIFT CBPR+ вимагає структурованих адрес у pacs.008: TwnNm і Ctry обов&apos;язкові, лише AdrLine відхиляється. 65% повідомлень невідповідні, 44% банків відстають.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -119,7 +119,7 @@
     <id>https://sebastienrousseau.com/uk/2026-05-11-lucy-besson-peredacha-znan-shi-i-kvantovi-tekhnolohiyi/</id>
     <updated>2026-05-11T06:06:06+00:00</updated>
     <published>2026-05-11T06:06:06+00:00</published>
-    <summary>Twelve years on, Besson&apos;s Lucy reads like a thought experiment about knowledge migrating from flesh to machine — quietly validated by LLMs and qubits.</summary>
+    <summary>Дванадцять років по тому «Lucy» Бессона читається як уявний експеримент про перехід знань від плоті до машини — тихо підтверджений LLM та кубітами.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -128,7 +128,7 @@
     <id>https://sebastienrousseau.com/uk/2026-04-11-kvantovi-porohy-znovu-zminyuyutsya/</id>
     <updated>2026-04-11T06:06:06+00:00</updated>
     <published>2026-04-11T06:06:06+00:00</published>
-    <summary>Shor&apos;s algorithm may now run on as few as 10,000 qubits. RSA, ECC and the timeline for post-quantum migration are all moving up. Here&apos;s why.</summary>
+    <summary>Алгоритм Шора може працювати лише на 10 000 кубітах. RSA, ECC і терміни міграції на пост-квантову криптографію стрімко наближаються. Ось чому.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -137,7 +137,7 @@
     <id>https://sebastienrousseau.com/uk/2025-09-01-kvantovo-stiyki-platezhi-epaa/</id>
     <updated>2025-09-01T06:06:06+00:00</updated>
     <published>2025-09-01T06:06:06+00:00</published>
-    <summary>Quantum computing threatens payment system cryptography. The EPAA white paper outlines the structural risk and the urgent case for PQC migration.</summary>
+    <summary>Квантові обчислення загрожують криптографії платіжних систем. White paper EPAA окреслює структурний ризик і нагальну потребу в міграції на PQC.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -146,7 +146,7 @@
     <id>https://sebastienrousseau.com/uk/2024-04-22-pomylka-v-kvantovomu-alhorytmi-dlya-hratkovoyi-kryptohrafiyi/</id>
     <updated>2024-04-22T06:06:06+00:00</updated>
     <published>2024-04-22T06:06:06+00:00</published>
-    <summary>A bug in Yilei Chen&apos;s quantum LWE algorithm temporarily reprieves lattice-based cryptography. What it means for CRYSTALS-Kyber, Dilithium and the PQC roadmap.</summary>
+    <summary>Помилка в квантовому алгоритмі LWE Yilei Chen тимчасово відстрочує загрозу для криптографії на основі ґраток. Що це означає для CRYSTALS-Kyber, Dilithium та дорожньої карти PQC.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -164,7 +164,7 @@
     <id>https://sebastienrousseau.com/uk/2024-04-15-kvantovyy-alhorytm-kydaye-vyklyk-hratkovii-kryptohrafiyi/</id>
     <updated>2024-04-01T06:06:06+00:00</updated>
     <published>2024-04-01T06:06:06+00:00</published>
-    <summary>A new polynomial-time quantum algorithm by Yilei Chen targets lattice-based cryptography. Implications for post-quantum standards including CRYSTALS-Kyber.</summary>
+    <summary>Новий поліноміальний квантовий алгоритм Йілей Чена атакує криптографію на основі ґраток з наслідками для постквантових стандартів, зокрема CRYSTALS-Kyber.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -173,7 +173,7 @@
     <id>https://sebastienrousseau.com/uk/2024-03-25-povnistyu-homomorfne-shyfruvannia-v-bankivskii-kvantovii-eri/</id>
     <updated>2024-03-25T06:06:06+00:00</updated>
     <published>2024-03-25T06:06:06+00:00</published>
-    <summary>Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats.</summary>
+    <summary>Дізнайтеся, як Fully Homomorphic Encryption революціонізує безпеку даних у банківництві, захищаючи конфіденційність від загроз quantum computing.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -182,7 +182,7 @@
     <id>https://sebastienrousseau.com/uk/2024-03-18-prosuvannia-shi-z-multymodalnymy-llm-uroky-mm1/</id>
     <updated>2024-03-17T06:06:06+00:00</updated>
     <published>2024-03-17T06:06:06+00:00</published>
-    <summary>Explore Apple&apos;s MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials.</summary>
+    <summary>Досліджуйте статтю Apple MM1 про багатомодальні великі мовні моделі (MLLM). Дізнайтеся про архітектуру, стратегії попереднього навчання та потенціал AI.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -191,7 +191,7 @@
     <id>https://sebastienrousseau.com/uk/2024-03-12-rozpiznavannia-movy-v-realnomu-chasi-na-macos-z-whisper/</id>
     <updated>2024-03-12T06:06:06+00:00</updated>
     <published>2024-03-12T06:06:06+00:00</published>
-    <summary>Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy.</summary>
+    <summary>Дізнайтеся, як OpenAI Whisper і Metal Performance Shaders трансформують розпізнавання мовлення в реальному часі на macOS, забезпечуючи неперевершену швидкість і точність.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -200,7 +200,7 @@
     <id>https://sebastienrousseau.com/uk/2024-03-08-rustlogs-prosunuta-biblioteka-zhurnalyuvannya-dlya-rust/</id>
     <updated>2024-03-08T06:06:06+00:00</updated>
     <published>2024-03-08T06:06:06+00:00</published>
-    <summary>Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. </summary>
+    <summary>Відкрийте для себе RustLogs (RLG) — гнучку бібліотеку логування для Rust зі структурованими форматами журналів, асинхронним логуванням та широкими можливостями налаштування.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -209,7 +209,7 @@
     <id>https://sebastienrousseau.com/uk/2024-03-04-le-chat-vid-mistral-ai-nova-era-rozmovnoho-shi/</id>
     <updated>2024-03-04T06:06:06+00:00</updated>
     <published>2024-03-04T06:06:06+00:00</published>
-    <summary>Meet Mistral AI&apos;s new multilingual Assistant. An advanced AI that can understand and respond in multiple languages, all in one conversation and in real-time.</summary>
+    <summary>Познайомтеся з новим багатомовним Асистентом Mistral AI. Розвинений ШІ, що розуміє та відповідає кількома мовами в одній розмові та в режимі реального часу.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -218,7 +218,7 @@
     <id>https://sebastienrousseau.com/uk/2024-02-26-google-gemma-transformatsiya-rozrobky-vidkrytoho-shi/</id>
     <updated>2024-02-26T06:06:06+00:00</updated>
     <published>2024-02-26T06:06:06+00:00</published>
-    <summary>Explore Google&apos;s Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use.</summary>
+    <summary>Досліджуйте модель ШІ Gemma від Google: проєкт з відкритим кодом, що пропонує етичні рішення ШІ для особистого та корпоративного використання.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -227,7 +227,7 @@
     <id>https://sebastienrousseau.com/uk/2024-02-19-vidkryvayuchy-gemini-revoliutsiya-shi-vid-google/</id>
     <updated>2024-02-19T06:06:06+00:00</updated>
     <published>2024-02-19T06:06:06+00:00</published>
-    <summary>Gemini 1.5 from Google scales context windows past 1M tokens. What that unlocks for retrieval-augmented finance and the trade-offs worth knowing.</summary>
+    <summary>Gemini 1.5 від Google розширює контекстні вікна понад 1 мільйон токенів. Що це дає для фінансів із доповненим пошуком і які компроміси варто враховувати.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -236,7 +236,7 @@
     <id>https://sebastienrousseau.com/uk/2024-02-13-rehlament-shi-ies-formuvannia-maibutnoho-svitovoho-rehulyuvannya/</id>
     <updated>2024-02-13T06:06:06+00:00</updated>
     <published>2024-02-13T06:06:06+00:00</published>
-    <summary>The EU AI Act sets the first comprehensive framework for ethical, risk-tiered AI regulation worldwide. What changes for banks, vendors and high-risk systems.</summary>
+    <summary>EU AI Act запроваджує перший у світі комплексний рівневий регуляторний акт для ШІ. Що змінюється для банків, постачальників та систем із високим ризиком.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -245,7 +245,16 @@
     <id>https://sebastienrousseau.com/uk/2024-02-12-akande-holosovyy-asystent-osobyste-ta-vykonavche-asystyrovannia/</id>
     <updated>2024-02-12T06:06:06+00:00</updated>
     <published>2024-02-12T06:06:06+00:00</published>
-    <summary>Discover how Àkàndé leverages OpenAI GPT&apos;s natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance.</summary>
+    <summary>Дізнайтесь, як Àkàndé використовує розуміння природної мови OpenAI GPT, резюме PDF та ефективне кешування, щоб переосмислити особисту й виконавчу допомогу.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
+    <link href="https://sebastienrousseau.com/uk/2024-02-12-akande-holosovyy-asystent-osobyste-ta-vykonavche-asystyrovannia/"/>
+    <id>https://sebastienrousseau.com/uk/2024-02-12-akande-holosovyy-asystent-osobyste-ta-vykonavche-asystyrovannia/</id>
+    <updated>2024-02-12T06:06:06+00:00</updated>
+    <published>2024-02-12T06:06:06+00:00</published>
+    <summary>Àkàndé — це голосовий асистент з відкритим кодом на Python, який поєднує розпізнавання мовлення OpenAI Whisper, завершення чату GPT-4 та локальний кеш SQLite у голосовий робочий процес — генерує PDF-зведення з історії розмов і зберігає всі дані локально.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -254,7 +263,16 @@
     <id>https://sebastienrousseau.com/uk/2024-02-08-revoliutsiya-reklamy-yak-shi-formuye-maibutnye/</id>
     <updated>2024-02-08T06:06:06+00:00</updated>
     <published>2024-02-08T06:06:06+00:00</published>
-    <summary>Explore how AI transforms advertising with insights on Amazon&apos;s Rufus and Meta&apos;s latest developments. Discover the impact on consumer engagement</summary>
+    <summary>Дізнайтесь, як AI трансформує рекламу: аналіз Rufus від Amazon та останніх розробок Meta. Відкрийте вплив на залученість споживачів у цифровому маркетингу</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
+    <link href="https://sebastienrousseau.com/uk/2024-01-29-audio-analiz-pereklady-i-perspektyvy-na-shi/"/>
+    <id>https://sebastienrousseau.com/uk/2024-01-29-audio-analiz-pereklady-i-perspektyvy-na-shi/</id>
+    <updated>2024-01-29T06:06:06+00:00</updated>
+    <published>2024-01-29T06:06:06+00:00</published>
+    <summary>Audio Analyser використовує нейронні моделі розпізнавання мовлення Azure Cognitive Services, Text Analytics NLP та CherryPy для перетворення аудіозаписів на доступні для пошуку транскрипти з оцінками тональності, вилученням ключових слів і багатомовним перекладом.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -263,7 +281,16 @@
     <id>https://sebastienrousseau.com/uk/2024-01-29-audio-analiz-pereklady-i-perspektyvy-na-shi/</id>
     <updated>2024-01-29T06:06:06+00:00</updated>
     <published>2024-01-29T06:06:06+00:00</published>
-    <summary>Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conversion, text analysis, and translations for actionable insights.</summary>
+    <summary>Дізнайтеся, як Audio Analyser на базі Azure AI перетворює розпізнавання мовлення, аналіз тексту та переклади на практичні аналітичні дані.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>AI Prompt Engineering 2024: Techniques That Work</title>
+    <link href="https://sebastienrousseau.com/uk/2024-01-23-prohres-v-inzheneriyi-promptiv-shi/"/>
+    <id>https://sebastienrousseau.com/uk/2024-01-23-prohres-v-inzheneriyi-promptiv-shi/</id>
+    <updated>2024-01-23T06:06:06+00:00</updated>
+    <published>2024-01-23T06:06:06+00:00</published>
+    <summary>Prompt-інжиніринг керує поведінкою LLM під час виведення. Стаття охоплює zero-shot та few-shot підходи, ланцюгове міркування, самоузгодженість, архітектуру ReAct, ризики непрямої ін&apos;єкції промптів та патерни з фінансових сервісів.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -272,7 +299,7 @@
     <id>https://sebastienrousseau.com/uk/2024-01-23-prohres-v-inzheneriyi-promptiv-shi/</id>
     <updated>2024-01-23T06:06:06+00:00</updated>
     <published>2024-01-23T06:06:06+00:00</published>
-    <summary>Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors.</summary>
+    <summary>Досліджуйте досягнення 2024 року в AI Prompt Engineering, відкриваючи інноваційні тенденції та техніки, що революціонізують технологічний і фінансовий сектори.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -281,7 +308,7 @@
     <id>https://sebastienrousseau.com/uk/2024-01-15-alien-studio-revoliutsiya-mystetstva-z-shi-fotohrafiyeyu/</id>
     <updated>2024-01-15T06:06:06+00:00</updated>
     <published>2024-01-15T06:06:06+00:00</published>
-    <summary>Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio.</summary>
+    <summary>Приєднуйтеся до мене у моїй особистій подорожі від Rust, AI та Quantum Computing до переосмислення мистецтва та фотографії через Alien Studio.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -290,7 +317,7 @@
     <id>https://sebastienrousseau.com/uk/2024-01-01-trendy-shi-2024-prohnozy-i-perspektyvy/</id>
     <updated>2024-01-08T06:06:06+00:00</updated>
     <published>2024-01-08T06:06:06+00:00</published>
-    <summary>AI trends for 2024: generative AI in finance, multimodal models, on-device LLMs and the shifts that will reshape banking and product engineering.</summary>
+    <summary>Тенденції ШІ 2024: генеративний ШІ у фінансах, мультимодальні моделі, LLM на пристроях та зміни, що переформують банківську справу й розробку продуктів.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -299,7 +326,7 @@
     <id>https://sebastienrousseau.com/uk/2024-01-08-optymizatsiya-kredytnoho-koefitsiyenta-z-ibm-qiskit-ta-kvantovym-fure/</id>
     <updated>2024-01-08T06:06:06+00:00</updated>
     <published>2024-01-08T06:06:06+00:00</published>
-    <summary>Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed.</summary>
+    <summary>Дізнайтеся, як IBM Qiskit і Квантове перетворення Фур&apos;є революціонізують аналіз кредитних коефіцієнтів у фінансах, забезпечуючи безпрецедентну точність і швидкість.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -308,7 +335,7 @@
     <id>https://sebastienrousseau.com/uk/2023-12-25-revoliutsiya-finansiv-z-kvantovymy-alhorytmamy-pidsylenymy-shi/</id>
     <updated>2023-12-25T06:06:06+00:00</updated>
     <published>2023-12-25T06:06:06+00:00</published>
-    <summary>Explore the transformative role of AI in quantum algorithms for finance, with a focus on their mathematical intricacies and banking applications.</summary>
+    <summary>Досліджуйте трансформаційну роль ШІ в квантових алгоритмах для фінансів, зосереджуючись на їх математичних тонкощах та банківських застосуваннях.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -317,7 +344,7 @@
     <id>https://sebastienrousseau.com/uk/2023-12-18-stan-shi-ta-kvantovykh-obchyslen-v-bankivnytstvi-pidsumky-2023/</id>
     <updated>2023-12-18T06:06:06+00:00</updated>
     <published>2023-12-18T06:06:06+00:00</published>
-    <summary>Exploring 2023&apos;s Technological Landscape: AI &amp; Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations &amp; Governance</summary>
+    <summary>Технологічний ландшафт 2023 року: AI та Quantum Computing революціонізують банківництво, зростання open-source моделей та розвиток регулювання й управління</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -326,7 +353,7 @@
     <id>https://sebastienrousseau.com/uk/2023-12-11-kvantovyy-rozpodil-klyuchiv-revoliutsiya-bezpeky-v-bankivnytstvi/</id>
     <updated>2023-12-11T06:06:06+00:00</updated>
     <published>2023-12-11T06:06:06+00:00</published>
-    <summary>As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security.</summary>
+    <summary>Оскільки квантові комп&apos;ютери загрожують традиційним методам шифрування, Квантовий розподіл ключів (QKD) стає революційним рішенням, що пропонує безпрецедентний рівень захисту.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -335,7 +362,7 @@
     <id>https://sebastienrousseau.com/uk/2023-12-04-data-i-chas-u-rust-z-bibliotekoyu-dtt/</id>
     <updated>2023-12-04T06:06:06+00:00</updated>
     <published>2023-12-04T06:06:06+00:00</published>
-    <summary>DateTime (DTT) is a Rust library for parsing, validating, manipulating and formatting dates and times — high precision, broad functionality.</summary>
+    <summary>DateTime (DTT) — бібліотека Rust для розбору, валідації, маніпулювання та форматування дат і часу — висока точність, широка функціональність.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -344,7 +371,7 @@
     <id>https://sebastienrousseau.com/uk/2023-11-28-kyberlib-rust-shchyt-proty-kvantovykh-zahroz/</id>
     <updated>2023-11-28T06:06:06+00:00</updated>
     <published>2023-11-28T06:06:06+00:00</published>
-    <summary>A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algorithm, to Protect Your Data from Quantum Threats and Cryptanalytic Attacks.</summary>
+    <summary>Надійна та квантово-безпечна реалізація криптографії на основі алгоритму CRYSTALS-Kyber для захисту ваших даних від квантових загроз і криптоаналітичних атак.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -353,7 +380,7 @@
     <id>https://sebastienrousseau.com/uk/2023-11-19-crystals-kyber-alhorytm-zakhystu-v-kvantovu-eru/</id>
     <updated>2023-11-19T06:06:06+00:00</updated>
     <published>2023-11-19T06:06:06+00:00</published>
-    <summary>Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.</summary>
+    <summary>Дізнайтеся, як CRYSTALS-Kyber, квантово-стійкий алгоритм криптографії, революціонізує світ криптографії та готує нас до квантової ери.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -366,12 +393,30 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>Generative AI in 2023: How It Works, Where It Lands</title>
+    <link href="https://sebastienrousseau.com/uk/2023-11-12-doslidzhuyuchy-heneratyvnyy-shi/"/>
+    <id>https://sebastienrousseau.com/uk/2023-11-12-doslidzhuyuchy-heneratyvnyy-shi/</id>
+    <updated>2023-11-12T06:06:06+00:00</updated>
+    <published>2023-11-12T06:06:06+00:00</published>
+    <summary>Як працюють transformer-моделі, які моделі 2023 року встановили еталон, де генеративний ШІ впроваджується у фінансових послугах і які питання управління потребують відповіді.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>[UK DRAFT] Mathematical and Cryptographic Constants for Rust Security</title>
     <link href="https://sebastienrousseau.com/uk/2023-11-05-matematychni-ta-kryptohrafichni-konstanty-dlya-rust/"/>
     <id>https://sebastienrousseau.com/uk/2023-11-05-matematychni-ta-kryptohrafichni-konstanty-dlya-rust/</id>
     <updated>2023-11-05T06:06:06+00:00</updated>
     <published>2023-11-05T06:06:06+00:00</published>
-    <summary>Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code security.</summary>
+    <summary>Захистіть цілісність коду за допомогою ретельно перевірених математичних і криптографічних констант, зміцнюючи безпеку пам&apos;яті та паралельності для підвищеного захисту коду.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>LibMake: Rust Library Scaffold Generator</title>
+    <link href="https://sebastienrousseau.com/uk/2023-10-26-libmake-henerator-kodu-dlya-rust-bibliotek/"/>
+    <id>https://sebastienrousseau.com/uk/2023-10-26-libmake-henerator-kodu-dlya-rust-bibliotek/</id>
+    <updated>2023-10-26T06:06:06+00:00</updated>
+    <published>2023-10-26T06:06:06+00:00</published>
+    <summary>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -380,7 +425,7 @@
     <id>https://sebastienrousseau.com/uk/2023-10-26-libmake-henerator-kodu-dlya-rust-bibliotek/</id>
     <updated>2023-10-26T06:06:06+00:00</updated>
     <published>2023-10-26T06:06:06+00:00</published>
-    <summary>Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort.</summary>
+    <summary>Покращте розробку бібліотек Rust за допомогою LibMake: інструменту генерації коду, який застосовує найкращі практики та створює початковий код, заощаджуючи час і зусилля розробників.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -389,7 +434,7 @@
     <id>https://sebastienrousseau.com/uk/2023-10-16-zakhyst-danykh-u-kvantovu-eru-biblioteka-hash-hsh/</id>
     <updated>2023-10-16T06:06:06+00:00</updated>
     <published>2023-10-16T06:06:06+00:00</published>
-    <summary>HSH uses quantum-resistant cryptographic primitives to protect your data, ensuring its security even in the face of future quantum computing advances.</summary>
+    <summary>HSH використовує квантово-стійкі криптографічні примітиви для захисту ваших даних, гарантуючи їхню безпеку навіть в умовах майбутніх досягнень квантових обчислень.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -398,7 +443,16 @@
     <id>https://sebastienrousseau.com/uk/2023-10-09-shokunin-naishvydshyi-rust-statychnyy-henerator/</id>
     <updated>2023-10-09T06:06:06+00:00</updated>
     <published>2023-10-09T06:06:06+00:00</published>
-    <summary>Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control.</summary>
+    <summary>Надаємо вам можливість створювати ефективні статичні веб-сайти з безмежними можливостями, необмеженою масштабованістю та справді унікальною веб-присутністю під вашим повним контролем.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Automating ISO 20022 Payment Files Creation with pain001</title>
+    <link href="https://sebastienrousseau.com/uk/2023-09-29-avtomatyzatsiya-platizhnykh-faylov-iso-20022-z-pain001/"/>
+    <id>https://sebastienrousseau.com/uk/2023-09-29-avtomatyzatsiya-platizhnykh-faylov-iso-20022-z-pain001/</id>
+    <updated>2023-09-29T06:06:06+00:00</updated>
+    <published>2023-09-29T06:06:06+00:00</published>
+    <summary>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -407,7 +461,7 @@
     <id>https://sebastienrousseau.com/uk/2023-09-29-avtomatyzatsiya-platizhnykh-faylov-iso-20022-z-pain001/</id>
     <updated>2023-09-29T06:06:06+00:00</updated>
     <published>2023-09-29T06:06:06+00:00</published>
-    <summary>Automate the creation of ISO 20022 pain.001 payment files from CSV or SQLite. pain001 is the open-source Python library that streamlines compliance.</summary>
+    <summary>Автоматизуйте створення платіжних файлів ISO 20022 pain.001 з CSV або SQLite. pain001 — бібліотека Python з відкритим кодом, яка спрощує дотримання вимог.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -420,6 +474,15 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>The making of the Express Transaction Credits Platform</title>
+    <link href="https://sebastienrousseau.com/uk/2018-02-15-stvorennia-platformy-express-transaction-credits/"/>
+    <id>https://sebastienrousseau.com/uk/2018-02-15-stvorennia-platformy-express-transaction-credits/</id>
+    <updated>2018-02-15T06:06:06+00:00</updated>
+    <published>2018-02-15T06:06:06+00:00</published>
+    <summary>Технічний огляд того, як платформа EXTC була побудована на Ethereum ERC-223 у 2018 році: архітектура токенів, виплати з мультипідписом, передачі з часовим блокуванням та миттєві кредити під заставу.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>[UK DRAFT] Unveiling a new Cryptocurrency and Faster Payment Solution</title>
     <link href="https://sebastienrousseau.com/uk/2018-02-04-nova-kryptovaluta-shvydshe-rishennia-dlia-platezhiv/"/>
     <id>https://sebastienrousseau.com/uk/2018-02-04-nova-kryptovaluta-shvydshe-rishennia-dlia-platezhiv/</id>
@@ -429,12 +492,21 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
+    <link href="https://sebastienrousseau.com/uk/2018-02-04-nova-kryptovaluta-shvydshe-rishennia-dlia-platezhiv/"/>
+    <id>https://sebastienrousseau.com/uk/2018-02-04-nova-kryptovaluta-shvydshe-rishennia-dlia-platezhiv/</id>
+    <updated>2018-02-04T06:06:06+00:00</updated>
+    <published>2018-02-04T06:06:06+00:00</published>
+    <summary>На початку 2018 року платформа EXTC досліджувала швидші транскордонні платежі через смарт-контракти Ethereum ERC-223 — ранній план того, що децентралізовані фінанси пізніше побудують.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>[UK DRAFT] ERC-20: The Ethereum Token Interface That Changed the World</title>
     <link href="https://sebastienrousseau.com/uk/2018-01-24-standart-tokena-erc-20/"/>
     <id>https://sebastienrousseau.com/uk/2018-01-24-standart-tokena-erc-20/</id>
     <updated>2018-01-24T06:06:06+00:00</updated>
     <published>2018-01-24T06:06:06+00:00</published>
-    <summary>ERC-20: The Ethereum Token ERC-20 is the most common type of token used on the Ethereum blockchain and is often referred to as a smart contract digital contract</summary>
+    <summary>ERC-20 — найпоширеніший стандарт токенів у блокчейні Ethereum, відомий як цифровий смарт-контракт, що революціонізував обіг цифрових активів.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -447,12 +519,21 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>Understanding the Technology behind Blockchain</title>
+    <link href="https://sebastienrousseau.com/uk/2018-01-09-rozuminnia-tekhnolohiyi-za-blokcheinom/"/>
+    <id>https://sebastienrousseau.com/uk/2018-01-09-rozuminnia-tekhnolohiyi-za-blokcheinom/</id>
+    <updated>2018-01-09T06:06:06+00:00</updated>
+    <published>2018-01-09T06:06:06+00:00</published>
+    <summary>Технічний вступ до роботи blockchain: криптографічні хеш-ланцюги, дерева Меркла, розподілений консенсус і те, як програмований рівень Ethereum перетворив платіжний реєстр на платформу для смарт-контрактів і токенізованих активів.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>[UK DRAFT] Blockchain explained, the technology that matters the most</title>
     <link href="https://sebastienrousseau.com/uk/2018-01-02-blokchein-tekhnolohiya-yaka-maye-znachennia-2018/"/>
     <id>https://sebastienrousseau.com/uk/2018-01-02-blokchein-tekhnolohiya-yaka-maye-znachennia-2018/</id>
     <updated>2018-01-02T06:06:06+00:00</updated>
     <published>2018-01-02T06:06:06+00:00</published>
-    <summary>A story of the extraordinary journey of securing digital transactions through Private-key Cryptography and Peer-to-peer (P2P) networks.</summary>
+    <summary>Історія надзвичайної подорожі із захисту цифрових транзакцій за допомогою криптографії з приватним ключем та мереж Peer-to-peer (P2P).</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -461,7 +542,7 @@
     <id>https://sebastienrousseau.com/uk/2018-01-01-bitcoin-pidsumky-roku/</id>
     <updated>2018-01-01T06:06:06+00:00</updated>
     <published>2018-01-01T06:06:06+00:00</published>
-    <summary>Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online.</summary>
+    <summary>Bitcoin: однорангова електронна платіжна система (P2P ECS), яка має потенціал революціонізувати спосіб онлайн-транзакцій між людьми.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
 </feed>

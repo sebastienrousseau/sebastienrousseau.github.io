@@ -1,11 +1,11 @@
 {
-  "subtitle": "Peer Review Reveals Flaw in Chen's Groundbreaking Work",
-  "keywords": "post-quantum cryptography, NIST, PQC standardisation, Yilei Chen, quantum algorithm, lattice-based cryptography, LWE problem, CRYSTALS-KYBER, CRYSTALS-Dilithium, quantum-resistant cryptography",
-  "banner_alt": "Image generated using MidJourney - A Network of digital nodes in red and blue hues.",
-  "date": "Apr 22, 2024",
-  "description": "A bug in Yilei Chen's quantum LWE algorithm temporarily reprieves lattice-based cryptography. What it means for CRYSTALS-Kyber, Dilithium and the PQC roadmap.",
-  "locale": "ro_RO",
+  "subtitle": "Revizuirea de Colegi Dezvăluie un Defect în Lucrarea Revoluționară a lui Chen",
+  "banner_alt": "Imagine generată cu MidJourney - O rețea de noduri digitale în nuanțe de roșu și albastru.",
+  "language": "ro-RO",
+  "keywords": "criptografie post-cuantică, NIST, standardizare PQC, Yilei Chen, algoritm cuantic, criptografie bazată pe rețele, problema LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, criptografie rezistentă la cuantică",
   "title": "Quantum Lattice Crypto: Bug in Chen's LWE Attack",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
-  "language": "ro-RO"
+  "description": "Un bug în algoritmul cuantic LWE al lui Yilei Chen acordă o amânare temporară criptografiei bazate pe rețele. Ce înseamnă pentru CRYSTALS-Kyber, Dilithium și foaia de parcurs PQC.",
+  "locale": "ro_RO",
+  "date": "Apr 22, 2024",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
 }

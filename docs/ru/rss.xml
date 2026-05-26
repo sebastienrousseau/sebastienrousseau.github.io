@@ -6,7 +6,7 @@
     <description>Статьи на русском языке: прикладной ИИ, платежи ISO 20022, постквантовая криптография и трансформация оптовых платежей.</description>
     <atom:link href="https://sebastienrousseau.com/ru/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ru-RU</language>
-    <lastBuildDate>Fri, 22 May 2026 21:38:56 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 23:13:19 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Все права защищены.</copyright>
     <item>
       <title>UK Payments Forward Plan 2026: стейблкоины, открытый банкинг, токенизированные депозиты</title>
@@ -84,51 +84,51 @@
       <category>джазовые концерты в Лондоне</category>
     </item>
     <item>
-      <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+      <title>Токенизированные депозиты в 2026 году: банковские услуги, конкуренция со стейблкоинами и состояние программируемых денег коммерческих банков</title>
       <link>https://sebastienrousseau.com/ru/2026-05-21-tokenised-deposits-banking-services-status-2026/</link>
-      <description>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</description>
+      <description>В 2026 году токенизированные депозиты переходят от исследований к пилотам банков. Коммерческие банковские деньги адаптируются для программируемых расчётов, цифровых кошельков, совместимости со стейблкоинами и токенизированных рынков капитала.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-21-tokenised-deposits-banking-services-status-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" type="image/webp" length="0"/>
-      <category>tokenised deposits 2026</category>
+      <category>токенизированные депозиты 2026</category>
       <category>tokenized deposits banking</category>
       <category>deposit tokens</category>
       <category>Great British Tokenised Deposits</category>
       <category>Lloyds digital assets</category>
       <category>stablecoins</category>
-      <category>commercial bank money</category>
+      <category>коммерческие банковские деньги</category>
       <category>BIS stablecoins</category>
       <category>Project Agora</category>
       <category>unified ledger</category>
       <category>Deutsche Bank digital money</category>
       <category>CBDC</category>
-      <category>tokenised money</category>
-      <category>digital wallets</category>
+      <category>токенизированные деньги</category>
+      <category>цифровые кошельки</category>
       <category>tokenised gilts</category>
     </item>
     <item>
-      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <title>Облачно-нативный банкинг в 2026 году: Kubernetes, DORA, суверенитет и конец водораздела между VM и контейнерами</title>
       <link>https://sebastienrousseau.com/ru/2026-05-20-cloud-native-banking-financial-institutions-2026/</link>
-      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <description>Облачно-нативный банкинг в 2026 году охватывает платформенную инженерию на Kubernetes, операционную устойчивость DORA, конвергенцию VM и контейнеров, облачный суверенитет и переносимость данных.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-20-cloud-native-banking-financial-institutions-2026/</guid>
       <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
-      <category>cloud native banking 2026</category>
-      <category>Kubernetes banks</category>
-      <category>financial institutions cloud</category>
+      <category>облачно-нативный банкинг 2026</category>
+      <category>Kubernetes банки</category>
+      <category>финансовые институты облако</category>
       <category>DORA 2026</category>
-      <category>cloud resilience</category>
+      <category>облачная устойчивость</category>
       <category>Red Hat OpenShift</category>
       <category>Portworx</category>
-      <category>VM container coexistence</category>
-      <category>bank cloud sovereignty</category>
-      <category>financial services cloud dependency</category>
-      <category>operational resilience</category>
-      <category>disaster recovery</category>
-      <category>cloud exit strategy</category>
-      <category>AI banking workloads</category>
+      <category>сосуществование VM контейнер</category>
+      <category>облачный суверенитет банков</category>
+      <category>зависимость финансовых услуг от облака</category>
+      <category>операционная устойчивость</category>
+      <category>аварийное восстановление</category>
+      <category>стратегия выхода из облака</category>
+      <category>рабочие нагрузки AI в банкинге</category>
     </item>
     <item>
       <title>Оптовые платежи в мире в 2026 году: ISO 20022, обновление RTGS и экономика интероперабельности</title>
@@ -608,6 +608,27 @@
       <category>open source</category>
     </item>
     <item>
+      <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
+      <link>https://sebastienrousseau.com/ru/2024-02-12-akande-golosovoi-pomoshchnik-revolyutsiya-personalnoi-i-rukovoditelnoi-podderzhki/</link>
+      <description>Àkàndé — голосовой ассистент с открытым исходным кодом на Python, объединяющий распознавание речи OpenAI Whisper, чат-дополнения GPT-4 и локальный кэш SQLite для голосового рабочего процесса с генерацией PDF-сводок.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2024-02-12-akande-golosovoi-pomoshchnik-revolyutsiya-personalnoi-i-rukovoditelnoi-podderzhki/</guid>
+      <pubDate>Mon, 12 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" type="image/webp" length="0"/>
+      <category>Àkàndé</category>
+      <category>OpenAI GPT-4</category>
+      <category>Whisper STT</category>
+      <category>кэширование SQLite</category>
+      <category>fpdf2</category>
+      <category>голосовой ассистент Python</category>
+      <category>API чат-дополнений</category>
+      <category>генерация PDF-сводок</category>
+      <category>кэш SHA-256</category>
+      <category>преобразование текста в речь</category>
+      <category>ИИ-ассистент для руководителей</category>
+      <category>открытый исходный код</category>
+    </item>
+    <item>
       <title>Революция рекламы: как ИИ формирует будущее</title>
       <link>https://sebastienrousseau.com/ru/2024-02-08-revolyutsiya-reklamy-kak-ii-formiruet-budushchee/</link>
       <description>ИИ преобразует рекламную индустрию — от таргетирования и оптимизации показов до генерации креативов и персонализации сообщений.</description>
@@ -625,6 +646,27 @@
       <category>маркетинг банков</category>
     </item>
     <item>
+      <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
+      <link>https://sebastienrousseau.com/ru/2024-01-29-audio-analiz-perevody-i-insaity-s-pomoshchyu-ii/</link>
+      <description>Audio Analyser использует нейронные модели Azure Cognitive Services для распознавания речи, Text Analytics NLP и CherryPy для преобразования аудиозаписей в транскрипты с оценкой тональности, извлечением ключевых слов и переводом.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2024-01-29-audio-analiz-perevody-i-insaity-s-pomoshchyu-ii/</guid>
+      <pubDate>Mon, 29 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" type="image/webp" length="0"/>
+      <category>Azure Cognitive Services</category>
+      <category>распознавание речи</category>
+      <category>нейронная акустическая модель</category>
+      <category>Azure Text Analytics</category>
+      <category>обработка естественного языка</category>
+      <category>анализ тональности</category>
+      <category>CherryPy</category>
+      <category>batch transcription API</category>
+      <category>многоязычное ASR</category>
+      <category>Azure Translator</category>
+      <category>транскрипция аудио</category>
+      <category>обработка аудио на Python</category>
+    </item>
+    <item>
       <title>Аудио-анализ, переводы и инсайты с помощью ИИ</title>
       <link>https://sebastienrousseau.com/ru/2024-01-29-audio-analiz-perevody-i-insaity-s-pomoshchyu-ii/</link>
       <description>Современные ИИ-инструменты превращают аудио в текст, переводят на десятки языков и извлекают полезные выводы из записей разговоров.</description>
@@ -640,6 +682,27 @@
       <category>аудио-аналитика</category>
       <category>банковский call-центр</category>
       <category>comlpiance</category>
+    </item>
+    <item>
+      <title>AI Prompt Engineering 2024: Techniques That Work</title>
+      <link>https://sebastienrousseau.com/ru/2024-01-23-dostizheniya-v-inzhenerii-promptov-ii/</link>
+      <description>Инженерия промптов управляет поведением LLM во время инференса. Статья охватывает zero-shot и few-shot промптинг, цепочку рассуждений, self-consistency, архитектуру ReAct и риски инъекций промптов.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2024-01-23-dostizheniya-v-inzhenerii-promptov-ii/</guid>
+      <pubDate>Tue, 23 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" type="image/webp" length="0"/>
+      <category>инженерия промптов</category>
+      <category>chain-of-thought prompting</category>
+      <category>few-shot learning</category>
+      <category>zero-shot prompting</category>
+      <category>in-context learning</category>
+      <category>prompt injection</category>
+      <category>ReAct</category>
+      <category>self-consistency</category>
+      <category>retrieval-augmented generation</category>
+      <category>BloombergGPT</category>
+      <category>system prompt</category>
+      <category>LLM agent</category>
     </item>
     <item>
       <title>Достижения в инженерии промптов ИИ</title>
@@ -812,6 +875,25 @@
       <category>безопасность</category>
     </item>
     <item>
+      <title>Generative AI in 2023: How It Works, Where It Lands</title>
+      <link>https://sebastienrousseau.com/ru/2023-11-12-izuchaem-generativnyi-ii/</link>
+      <description>Как работают трансформерные модели, какие модели 2023 года задали эталон, где генеративный ИИ внедряется первым в финансовых услугах и какие вопросы управления нужно решить до развёртывания.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2023-11-12-izuchaem-generativnyi-ii/</guid>
+      <pubDate>Sun, 12 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
+      <category>генеративный ИИ</category>
+      <category>большая языковая модель</category>
+      <category>трансформерная архитектура</category>
+      <category>GPT-4</category>
+      <category>ИИ в финансовых услугах</category>
+      <category>галлюцинации</category>
+      <category>retrieval-augmented generation</category>
+      <category>управление ИИ</category>
+      <category>foundation model</category>
+      <category>fine-tuning</category>
+    </item>
+    <item>
       <title>Изучаем генеративный ИИ</title>
       <link>https://sebastienrousseau.com/ru/2023-11-12-izuchaem-generativnyi-ii/</link>
       <description>Обзор генеративного ИИ: архитектуры, возможности, ограничения и сценарии применения в финансовых услугах.</description>
@@ -845,6 +927,25 @@
       <category>π</category>
       <category>e</category>
       <category>эллиптические кривые</category>
+    </item>
+    <item>
+      <title>LibMake: Rust Library Scaffold Generator</title>
+      <link>https://sebastienrousseau.com/ru/2023-10-26-libmake-generator-koda-dlya-bibliotek-rust/</link>
+      <description>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2023-10-26-libmake-generator-koda-dlya-bibliotek-rust/</guid>
+      <pubDate>Thu, 26 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
+      <category>LibMake</category>
+      <category>Rust code generator</category>
+      <category>cargo scaffold</category>
+      <category>Rust library template</category>
+      <category>Tera templating</category>
+      <category>GitHub Actions Rust</category>
+      <category>cargo-audit</category>
+      <category>Rust API Guidelines</category>
+      <category>boilerplate generator</category>
+      <category>Rust CI workflow</category>
     </item>
     <item>
       <title>libmake: генератор кода для создания качественных Rust-библиотек</title>
@@ -900,6 +1001,29 @@
       <category>open source</category>
     </item>
     <item>
+      <title>Automating ISO 20022 Payment Files Creation with pain001</title>
+      <link>https://sebastienrousseau.com/ru/2023-09-29-avtomatizatsiya-platezhnykh-failov-iso-20022-s-pain001/</link>
+      <description>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2023-09-29-avtomatizatsiya-platezhnykh-failov-iso-20022-s-pain001/</guid>
+      <pubDate>Fri, 29 Sep 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" type="image/webp" length="0"/>
+      <category>pain001</category>
+      <category>ISO 20022</category>
+      <category>pain.001.001.09</category>
+      <category>CustomerCreditTransferInitiation</category>
+      <category>SEPA Credit Transfer</category>
+      <category>CBPR+</category>
+      <category>payment automation</category>
+      <category>XML generation</category>
+      <category>XSD validation</category>
+      <category>GrpHdr</category>
+      <category>PmtInf</category>
+      <category>CdtTrfTxInf</category>
+      <category>CtrlSum</category>
+      <category>SWIFT</category>
+    </item>
+    <item>
       <title>Автоматизация создания платёжных файлов ISO 20022 с pain001</title>
       <link>https://sebastienrousseau.com/ru/2023-09-29-avtomatizatsiya-platezhnykh-failov-iso-20022-s-pain001/</link>
       <description>pain001 — это open-source Python-библиотека для автоматизации генерации платёжных файлов ISO 20022 pain.001 из CSV или SQLite.</description>
@@ -936,6 +1060,25 @@
       <category>инженерия</category>
     </item>
     <item>
+      <title>The making of the Express Transaction Credits Platform</title>
+      <link>https://sebastienrousseau.com/ru/2018-02-15-sozdanie-platformy-express-transaction-credits/</link>
+      <description>Технический разбор платформы EXTC, построенной на Ethereum ERC-223 в 2018 году: архитектура токенов, мультиподписные выплаты, переводы с временной блокировкой и займы под залог.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2018-02-15-sozdanie-platformy-express-transaction-credits/</guid>
+      <pubDate>Thu, 15 Feb 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
+      <category>платформа EXTC</category>
+      <category>ERC-223</category>
+      <category>смарт-контракты Ethereum</category>
+      <category>архитектура токенов</category>
+      <category>мультиподпись</category>
+      <category>перевод с временной блокировкой</category>
+      <category>блокчейн-платежи</category>
+      <category>займы под залог</category>
+      <category>децентрализованные финансы</category>
+      <category>криптовалюта 2018</category>
+    </item>
+    <item>
       <title>Представление новой криптовалюты и более быстрого платёжного решения</title>
       <link>https://sebastienrousseau.com/ru/2018-02-04-novaya-kriptovalyuta-i-bystroe-platezhnoe-reshenie/</link>
       <description>Значимая глава в эволюции глобального финансового ландшафта — технологические инновации, геополитические сдвиги и устойчивые финансы.</description>
@@ -952,6 +1095,25 @@
       <category>блокчейн</category>
       <category>трансграничные платежи</category>
       <category>финансовая инклюзия</category>
+    </item>
+    <item>
+      <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
+      <link>https://sebastienrousseau.com/ru/2018-02-04-novaya-kriptovalyuta-i-bystroe-platezhnoe-reshenie/</link>
+      <description>В начале 2018 года платформа EXTC исследовала ускоренные трансграничные платежи через смарт-контракты Ethereum ERC-223 — ранний прообраз того, что впоследствии создаст децентрализованные финансы.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2018-02-04-novaya-kriptovalyuta-i-bystroe-platezhnoe-reshenie/</guid>
+      <pubDate>Sun, 04 Feb 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" type="image/webp" length="0"/>
+      <category>EXTC</category>
+      <category>ERC-223</category>
+      <category>смарт-контракты Ethereum</category>
+      <category>быстрые платежи</category>
+      <category>криптовалюта</category>
+      <category>блокчейн-платежи</category>
+      <category>платёжный токен</category>
+      <category>децентрализованные финансы</category>
+      <category>ERC-20</category>
+      <category>трансграничные платежи</category>
     </item>
     <item>
       <title>ERC-20: стандарт токенов Ethereum, изменивший мир</title>
@@ -988,6 +1150,27 @@
       <category>proof-of-stake</category>
       <category>Merkle-дерево</category>
       <category>P2P-сеть</category>
+    </item>
+    <item>
+      <title>Understanding the Technology behind Blockchain</title>
+      <link>https://sebastienrousseau.com/ru/2018-01-09-ponimanie-tekhnologii-blockchain/</link>
+      <description>Техническое введение в работу блокчейна: криптографические хеш-цепочки, деревья Меркла, распределённый консенсус и как программируемый уровень Ethereum превратил платёжный реестр в платформу для смарт-контрактов и токенизированных активов.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2018-01-09-ponimanie-tekhnologii-blockchain/</guid>
+      <pubDate>Tue, 09 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" type="image/webp" length="0"/>
+      <category>технология blockchain</category>
+      <category>криптографический хеш</category>
+      <category>дерево Меркла</category>
+      <category>распределённый консенсус</category>
+      <category>proof of work</category>
+      <category>Ethereum</category>
+      <category>смарт-контракты</category>
+      <category>EVM</category>
+      <category>Solidity</category>
+      <category>ERC-20</category>
+      <category>распределённый реестр</category>
+      <category>децентрализованные финансы</category>
     </item>
     <item>
       <title>Блокчейн: технология, которая имеет значение в 2018 году</title>

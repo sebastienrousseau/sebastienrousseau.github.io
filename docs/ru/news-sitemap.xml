@@ -45,8 +45,8 @@
       <news:language>ru-RU</news:language>
     </news:publication>
     <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</news:title>
-    <news:keywords>tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, commercial bank money, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenised money, digital wallets, tokenised gilts</news:keywords>
+    <news:title>Токенизированные депозиты в 2026 году: банковские услуги, конкуренция со стейблкоинами и состояние программируемых денег коммерческих банков</news:title>
+    <news:keywords>токенизированные депозиты 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, коммерческие банковские деньги, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, токенизированные деньги, цифровые кошельки, tokenised gilts</news:keywords>
   </news:news>
 </url>
 <url>
@@ -57,8 +57,8 @@
       <news:language>ru-RU</news:language>
     </news:publication>
     <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
-    <news:title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</news:title>
-    <news:keywords>cloud native banking 2026, Kubernetes banks, financial institutions cloud, DORA 2026, cloud resilience, Red Hat OpenShift, Portworx, VM container coexistence, bank cloud sovereignty, financial services cloud dependency, operational resilience, disaster recovery, cloud exit strategy, AI banking workloads</news:keywords>
+    <news:title>Облачно-нативный банкинг в 2026 году: Kubernetes, DORA, суверенитет и конец водораздела между VM и контейнерами</news:title>
+    <news:keywords>облачно-нативный банкинг 2026, Kubernetes банки, финансовые институты облако, DORA 2026, облачная устойчивость, Red Hat OpenShift, Portworx, сосуществование VM контейнер, облачный суверенитет банков, зависимость финансовых услуг от облака, операционная устойчивость, аварийное восстановление, стратегия выхода из облака, рабочие нагрузки AI в банкинге</news:keywords>
   </news:news>
 </url>
 <url>
@@ -326,6 +326,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/ru/2024-02-12-akande-golosovoi-pomoshchnik-revolyutsiya-personalnoi-i-rukovoditelnoi-podderzhki/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-12T06:06:06+00:00</news:publication_date>
+    <news:title>Àkàndé: GPT-Powered Voice Assistant for Executives</news:title>
+    <news:keywords>Àkàndé, OpenAI GPT-4, Whisper STT, кэширование SQLite, fpdf2, голосовой ассистент Python, API чат-дополнений, генерация PDF-сводок, кэш SHA-256, преобразование текста в речь, ИИ-ассистент для руководителей, открытый исходный код</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ru/2024-02-08-revolyutsiya-reklamy-kak-ii-formiruet-budushchee/</loc>
   <news:news>
     <news:publication>
@@ -345,8 +357,32 @@
       <news:language>ru-RU</news:language>
     </news:publication>
     <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
+    <news:title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</news:title>
+    <news:keywords>Azure Cognitive Services, распознавание речи, нейронная акустическая модель, Azure Text Analytics, обработка естественного языка, анализ тональности, CherryPy, batch transcription API, многоязычное ASR, Azure Translator, транскрипция аудио, обработка аудио на Python</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2024-01-29-audio-analiz-perevody-i-insaity-s-pomoshchyu-ii/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
     <news:title>Аудио-анализ, переводы и инсайты с помощью ИИ</news:title>
     <news:keywords>распознавание речи, Whisper, ASR, перевод аудио, диаризация, аудио-аналитика, банковский call-центр, comlpiance</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2024-01-23-dostizheniya-v-inzhenerii-promptov-ii/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-23T06:06:06+00:00</news:publication_date>
+    <news:title>AI Prompt Engineering 2024: Techniques That Work</news:title>
+    <news:keywords>инженерия промптов, chain-of-thought prompting, few-shot learning, zero-shot prompting, in-context learning, prompt injection, ReAct, self-consistency, retrieval-augmented generation, BloombergGPT, system prompt, LLM agent</news:keywords>
   </news:news>
 </url>
 <url>
@@ -477,6 +513,18 @@
       <news:language>ru-RU</news:language>
     </news:publication>
     <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
+    <news:title>Generative AI in 2023: How It Works, Where It Lands</news:title>
+    <news:keywords>генеративный ИИ, большая языковая модель, трансформерная архитектура, GPT-4, ИИ в финансовых услугах, галлюцинации, retrieval-augmented generation, управление ИИ, foundation model, fine-tuning</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2023-11-12-izuchaem-generativnyi-ii/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
     <news:title>Изучаем генеративный ИИ</news:title>
     <news:keywords>генеративный ИИ, LLM, трансформеры, GPT, мультимодальность, prompt-инжиниринг, финансовые услуги, ответственный ИИ</news:keywords>
   </news:news>
@@ -491,6 +539,18 @@
     <news:publication_date>2023-11-05T06:06:06+00:00</news:publication_date>
     <news:title>Математические и криптографические константы для безопасности на Rust</news:title>
     <news:keywords>константы, Rust, криптография, математика, безопасность, простые числа, π, e, эллиптические кривые</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2023-10-26-libmake-generator-koda-dlya-bibliotek-rust/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2023-10-26T06:06:06+00:00</news:publication_date>
+    <news:title>LibMake: Rust Library Scaffold Generator</news:title>
+    <news:keywords>LibMake, Rust code generator, cargo scaffold, Rust library template, Tera templating, GitHub Actions Rust, cargo-audit, Rust API Guidelines, boilerplate generator, Rust CI workflow</news:keywords>
   </news:news>
 </url>
 <url>
@@ -537,6 +597,18 @@
       <news:language>ru-RU</news:language>
     </news:publication>
     <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
+    <news:title>Automating ISO 20022 Payment Files Creation with pain001</news:title>
+    <news:keywords>pain001, ISO 20022, pain.001.001.09, CustomerCreditTransferInitiation, SEPA Credit Transfer, CBPR+, payment automation, XML generation, XSD validation, GrpHdr, PmtInf, CdtTrfTxInf, CtrlSum, SWIFT</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2023-09-29-avtomatizatsiya-platezhnykh-failov-iso-20022-s-pain001/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
     <news:title>Автоматизация создания платёжных файлов ISO 20022 с pain001</news:title>
     <news:keywords>ISO 20022, pain.001, SWIFT, SEPA, Python, автоматизация платежей, валидация XML, структурированные сообщения, миграция MT</news:keywords>
   </news:news>
@@ -554,6 +626,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/ru/2018-02-15-sozdanie-platformy-express-transaction-credits/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-15T06:06:06+00:00</news:publication_date>
+    <news:title>The making of the Express Transaction Credits Platform</news:title>
+    <news:keywords>платформа EXTC, ERC-223, смарт-контракты Ethereum, архитектура токенов, мультиподпись, перевод с временной блокировкой, блокчейн-платежи, займы под залог, децентрализованные финансы, криптовалюта 2018</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ru/2018-02-04-novaya-kriptovalyuta-i-bystroe-platezhnoe-reshenie/</loc>
   <news:news>
     <news:publication>
@@ -563,6 +647,18 @@
     <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
     <news:title>Представление новой криптовалюты и более быстрого платёжного решения</news:title>
     <news:keywords>EXTC Network, криптовалюта, быстрые платежи, Ethereum, EIP20, смарт-контракты, блокчейн, трансграничные платежи, финансовая инклюзия</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2018-02-04-novaya-kriptovalyuta-i-bystroe-platezhnoe-reshenie/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
+    <news:title>Unveiling a new Cryptocurrency and Faster Payment Solution</news:title>
+    <news:keywords>EXTC, ERC-223, смарт-контракты Ethereum, быстрые платежи, криптовалюта, блокчейн-платежи, платёжный токен, децентрализованные финансы, ERC-20, трансграничные платежи</news:keywords>
   </news:news>
 </url>
 <url>
@@ -587,6 +683,18 @@
     <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
     <news:title>Понимание технологии, лежащей в основе блокчейна</news:title>
     <news:keywords>блокчейн, хеширование, SHA-256, цифровые подписи, консенсус, proof-of-work, proof-of-stake, Merkle-дерево, P2P-сеть</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2018-01-09-ponimanie-tekhnologii-blockchain/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
+    <news:title>Understanding the Technology behind Blockchain</news:title>
+    <news:keywords>технология blockchain, криптографический хеш, дерево Меркла, распределённый консенсус, proof of work, Ethereum, смарт-контракты, EVM, Solidity, ERC-20, распределённый реестр, децентрализованные финансы</news:keywords>
   </news:news>
 </url>
 <url>

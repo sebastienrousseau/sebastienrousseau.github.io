@@ -1,11 +1,11 @@
 {
-  "language": "uk-UA",
-  "keywords": "bitcoin, cryptocurrency, blockchain, decentralized finance, digital currency, peer-to-peer payments, digital gold, programmable money, future of money, financial revolution",
-  "subtitle": "Bitcoin, cryptocurrency, and the technology reshaping financial markets.",
-  "banner_alt": "A pile of gold and silver coins sitting on top of a table",
   "locale": "uk_UA",
-  "description": "Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online.",
-  "title": "[UK DRAFT] Bitcoin: A Year In Review of the First Cryptocurrency",
+  "description": "Bitcoin: однорангова електронна платіжна система (P2P ECS), яка має потенціал революціонізувати спосіб онлайн-транзакцій між людьми.",
+  "language": "uk-UA",
+  "subtitle": "Bitcoin, криптовалюта та технологія, що кардинально змінює фінансові ринки.",
+  "keywords": "bitcoin, cryptocurrency, blockchain, децентралізовані фінанси, цифрова валюта, однорангові платежі, цифрове золото, програмовані гроші, майбутнє грошей, фінансова революція",
   "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
-  "date": "Jan 01, 2018"
+  "title": "[UK DRAFT] Bitcoin: A Year In Review of the First Cryptocurrency",
+  "date": "Jan 01, 2018",
+  "banner_alt": "Купа золотих і срібних монет, що лежать на столі"
 }

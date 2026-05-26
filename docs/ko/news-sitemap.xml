@@ -45,8 +45,8 @@
       <news:language>ko-KR</news:language>
     </news:publication>
     <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</news:title>
-    <news:keywords>tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, commercial bank money, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenised money, digital wallets, tokenised gilts</news:keywords>
+    <news:title>2026년 토큰화 예금: 은행 서비스, 스테이블코인 경쟁, 그리고 프로그래밍 가능한 상업은행 화폐의 현황</news:title>
+    <news:keywords>토큰화 예금 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, 상업은행 자금, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, 토큰화 화폐, digital wallets, tokenised gilts</news:keywords>
   </news:news>
 </url>
 <url>
@@ -57,8 +57,8 @@
       <news:language>ko-KR</news:language>
     </news:publication>
     <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
-    <news:title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</news:title>
-    <news:keywords>cloud native banking 2026, Kubernetes banks, financial institutions cloud, DORA 2026, cloud resilience, Red Hat OpenShift, Portworx, VM container coexistence, bank cloud sovereignty, financial services cloud dependency, operational resilience, disaster recovery, cloud exit strategy, AI banking workloads</news:keywords>
+    <news:title>2026년 클라우드 네이티브 뱅킹: Kubernetes, DORA, 주권, 그리고 VM 대 컨테이너 분단의 종말</news:title>
+    <news:keywords>클라우드 네이티브 뱅킹 2026, Kubernetes 은행, 금융기관 클라우드, DORA 2026, 클라우드 복원력, Red Hat OpenShift, Portworx, VM 컨테이너 공존, 은행 클라우드 주권, 금융서비스 클라우드 의존성, 운영 복원력, disaster recovery, 클라우드 전환 전략, AI 뱅킹 워크로드</news:keywords>
   </news:news>
 </url>
 <url>
@@ -326,6 +326,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/ko/2024-02-12-akande-eumseong-bijoja-gaein-imwon-bijo-hyeokmyeong/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-12T06:06:06+00:00</news:publication_date>
+    <news:title>Àkàndé: GPT-Powered Voice Assistant for Executives</news:title>
+    <news:keywords>Àkàndé, OpenAI GPT-4, Whisper STT, SQLite 캐싱, fpdf2, Python 음성 어시스턴트, 채팅 완성 API, PDF 요약 생성, SHA-256 캐시, 텍스트 음성 변환, 임원 어시스턴트 AI, 오픈소스</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ko/2024-02-08-ai-ga-mirae-reul-hyeongseong-haneun-gwanggo-hyeokmyeong/</loc>
   <news:news>
     <news:publication>
@@ -347,6 +359,30 @@
     <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
     <news:title>AI 기반 음성 분석, 번역, 통찰</news:title>
     <news:keywords>AI, 음성 인식, 음성-텍스트 변환, Whisper, 번역, 다국어, 오디오 통찰</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2024-01-29-ai-gibon-eumseong-bunseok-beonyeok-tongchal/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
+    <news:title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</news:title>
+    <news:keywords>Azure Cognitive Services, 음성-텍스트 변환, 신경 음향 모델, Azure Text Analytics, 자연어 처리, 감정 분석, CherryPy, 배치 전사 API, 다국어 ASR, Azure Translator, 오디오 전사, Python 오디오 처리</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2024-01-23-ai-peurompeuteu-enjineoring-baljeon/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-23T06:06:06+00:00</news:publication_date>
+    <news:title>AI Prompt Engineering 2024: Techniques That Work</news:title>
+    <news:keywords>chain-of-thought 프롬프팅, 퓨샷 학습, 제로샷 프롬프팅, 인컨텍스트 학습, 프롬프트 인젝션, ReAct, 자기일관성, 검색 증강 생성, BloombergGPT, 시스템 프롬프트, 프롬프트 보안, LLM 에이전트</news:keywords>
   </news:news>
 </url>
 <url>
@@ -477,6 +513,18 @@
       <news:language>ko-KR</news:language>
     </news:publication>
     <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
+    <news:title>Generative AI in 2023: How It Works, Where It Lands</news:title>
+    <news:keywords>생성형 AI, 대규모 언어 모델, transformer architecture, GPT-4, 금융 서비스 AI, 환각, retrieval-augmented generation, AI 거버넌스, foundation model, 파인튜닝</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2023-11-12-saengseonghyung-ai-tamgu/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
     <news:title>생성 AI 탐구</news:title>
     <news:keywords>생성 AI, LLM, 대규모 언어 모델, 확산 모델, GPT, Claude, Gemini, 엔터프라이즈 AI</news:keywords>
   </news:news>
@@ -491,6 +539,18 @@
     <news:publication_date>2023-11-05T06:06:06+00:00</news:publication_date>
     <news:title>Rust 보안을 위한 수학적·암호적 상수</news:title>
     <news:keywords>암호 상수, 수학, Rust, ECC, RSA, NIST 곡선, PQC, 보안, mathconst</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2023-10-26-libmake-rust-laibeureori-koodeu-saengseonggi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2023-10-26T06:06:06+00:00</news:publication_date>
+    <news:title>LibMake: Rust Library Scaffold Generator</news:title>
+    <news:keywords>LibMake, Rust code generator, cargo scaffold, Rust library template, Tera templating, GitHub Actions Rust, cargo-audit, Rust API Guidelines, boilerplate generator, Rust CI workflow</news:keywords>
   </news:news>
 </url>
 <url>
@@ -537,6 +597,18 @@
       <news:language>ko-KR</news:language>
     </news:publication>
     <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
+    <news:title>Automating ISO 20022 Payment Files Creation with pain001</news:title>
+    <news:keywords>pain001, ISO 20022, pain.001.001.09, CustomerCreditTransferInitiation, SEPA Credit Transfer, CBPR+, payment automation, XML generation, XSD validation, GrpHdr, PmtInf, CdtTrfTxInf, CtrlSum, SWIFT</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2023-09-29-pain001-ro-iso-20022-junsu-gyeoljepail-jadonghwa/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
     <news:title>pain001로 ISO 20022 준수 결제 파일 생성 자동화</news:title>
     <news:keywords>ISO 20022, pain.001, ISO 20022 이행, SWIFT, SEPA, 결제 자동화, Python, 오픈소스, 국경 간 송금</news:keywords>
   </news:news>
@@ -554,6 +626,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/ko/2018-02-15-express-transaction-credits-peullaetpom-jejak/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-15T06:06:06+00:00</news:publication_date>
+    <news:title>The making of the Express Transaction Credits Platform</news:title>
+    <news:keywords>EXTC 플랫폼, ERC-223, Ethereum 스마트 컨트랙트, 토큰 아키텍처, 다중 서명, 타임락 전송, 블록체인 결제, 담보 기반 대출, 탈중앙화 금융, 2018 크립토</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ko/2018-02-04-saeroun-amhohwapye-wa-misirae-gwasok-gyeoljeyusol/</loc>
   <news:news>
     <news:publication>
@@ -563,6 +647,18 @@
     <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
     <news:title>새로운 암호자산을 공개하며 미래의 보다 빠른 결제 솔루션을 제공한다</news:title>
     <news:keywords>암호자산, 결제, 실시간 결제, 토큰, ICO, 블록체인, 핀테크, 국경 간 송금</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2018-02-04-saeroun-amhohwapye-wa-misirae-gwasok-gyeoljeyusol/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
+    <news:title>Unveiling a new Cryptocurrency and Faster Payment Solution</news:title>
+    <news:keywords>EXTC, ERC-223, Ethereum 스마트 계약, 빠른 결제, 암호화폐, 블록체인 결제, 결제 토큰, 탈중앙화 금융, ERC-20, 국경 간 결제</news:keywords>
   </news:news>
 </url>
 <url>
@@ -587,6 +683,18 @@
     <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
     <news:title>블록체인 배후의 기술 이해하기</news:title>
     <news:keywords>블록체인, 암호, 해시, 디지털 서명, 머클 트리, 합의, 작업 증명, P2P 네트워크</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2018-01-09-beulrokchein-baehu-gisul-ihae/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
+    <news:title>Understanding the Technology behind Blockchain</news:title>
+    <news:keywords>블록체인 기술, cryptographic hash, Merkle tree, 분산 합의, proof of work, Ethereum, 스마트 컨트랙트, EVM, Solidity, ERC-20, 분산 원장, 탈중앙화 금융</news:keywords>
   </news:news>
 </url>
 <url>

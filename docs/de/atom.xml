@@ -4,9 +4,9 @@
   <link href="https://sebastienrousseau.com/de/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/de/"/>
   <id>https://sebastienrousseau.com/de/</id>
-  <updated>2026-05-22T21:38:56+00:00</updated>
+  <updated>2026-05-26T23:13:19+00:00</updated>
   <entry>
-    <title>UK Payments Forward Plan 2026: Stablecoins, Open Banking, tokenisierte Einlagen</title>
+    <title>UK Payments Forward Plan 2026: Stablecoins, Open Banking, tokenisierte Einlagen und agentenbasierte Zahlungen</title>
     <link href="https://sebastienrousseau.com/de/2026-05-24-uk-zahlungsverkehr-forward-plan-stablecoins-open-banking-tokenised-zahlungsverkehr-2026/"/>
     <id>https://sebastienrousseau.com/de/2026-05-24-uk-zahlungsverkehr-forward-plan-stablecoins-open-banking-tokenised-zahlungsverkehr-2026/</id>
     <updated>2026-05-24T06:06:06+00:00</updated>
@@ -33,21 +33,21 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+    <title>Tokenisierte Einlagen 2026: Bankdienstleistungen, Stablecoin-Wettbewerb und der Status programmierbaren Geschäftsbankgelds</title>
     <link href="https://sebastienrousseau.com/de/2026-05-21-tokenised-deposits-banking-services-status-2026/"/>
     <id>https://sebastienrousseau.com/de/2026-05-21-tokenised-deposits-banking-services-status-2026/</id>
     <updated>2026-05-21T06:06:06+00:00</updated>
     <published>2026-05-21T06:06:06+00:00</published>
-    <summary>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</summary>
+    <summary>Tokenisierte Einlagen 2026 treten in Bankpiloten ein. Geschäftsbankengeld passt sich an für programmierbares Settlement, digitale Wallets und tokenisierte Kapitalmärkte.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+    <title>Cloud-natives Banking 2026: Kubernetes, DORA, Souveränität und das Ende der Trennung zwischen VM und Container</title>
     <link href="https://sebastienrousseau.com/de/2026-05-20-cloud-native-banking-financial-institutions-2026/"/>
     <id>https://sebastienrousseau.com/de/2026-05-20-cloud-native-banking-financial-institutions-2026/</id>
     <updated>2026-05-20T06:06:06+00:00</updated>
     <published>2026-05-20T06:06:06+00:00</published>
-    <summary>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</summary>
+    <summary>Cloud-native Banking 2026: Kubernetes, DORA-Resilienz, VM/Container-Konvergenz, Cloud-Souveränität und KI-Workloads für kritische Finanzdienstleistungen.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -249,6 +249,15 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
+    <link href="https://sebastienrousseau.com/de/2024-02-12-akande-sprachassistent-revolution-persoenlicher-und-fuehrungsassistenz/"/>
+    <id>https://sebastienrousseau.com/de/2024-02-12-akande-sprachassistent-revolution-persoenlicher-und-fuehrungsassistenz/</id>
+    <updated>2024-02-12T06:06:06+00:00</updated>
+    <published>2024-02-12T06:06:06+00:00</published>
+    <summary>Àkàndé ist ein Open-Source-Python-Sprachassistent, der OpenAI Whisper-Spracherkennung, GPT-4 Chat Completions und einen lokalen SQLite-Cache zu einem sprachgesteuerten Workflow verknüpft — er erstellt PDF-Zusammenfassungen aus dem Gesprächsverlauf und speichert alle Daten lokal.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>Generative KI in der Werbung: Amazon Rufus &amp; Meta</title>
     <link href="https://sebastienrousseau.com/de/2024-02-08-werbung-revolutionieren-wie-ki-die-zukunft-gestaltet/"/>
     <id>https://sebastienrousseau.com/de/2024-02-08-werbung-revolutionieren-wie-ki-die-zukunft-gestaltet/</id>
@@ -258,12 +267,30 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
+    <link href="https://sebastienrousseau.com/de/2024-01-29-ki-gestuetzte-audio-einblicke-analyse-uebersetzungen/"/>
+    <id>https://sebastienrousseau.com/de/2024-01-29-ki-gestuetzte-audio-einblicke-analyse-uebersetzungen/</id>
+    <updated>2024-01-29T06:06:06+00:00</updated>
+    <published>2024-01-29T06:06:06+00:00</published>
+    <summary>Audio Analyser nutzt neuronale Spracherkennungsmodelle von Azure Cognitive Services, Text Analytics NLP und CherryPy, um Audioaufnahmen in durchsuchbare Transkripte mit Sentiment-Scores, Schlüsselwortextraktion und mehrsprachigen Übersetzungen umzuwandeln.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>KI-gestützte Sprachanalyse, Übersetzung und Insights-Tool</title>
     <link href="https://sebastienrousseau.com/de/2024-01-29-ki-gestuetzte-audio-einblicke-analyse-uebersetzungen/"/>
     <id>https://sebastienrousseau.com/de/2024-01-29-ki-gestuetzte-audio-einblicke-analyse-uebersetzungen/</id>
     <updated>2024-01-29T06:06:06+00:00</updated>
     <published>2024-01-29T06:06:06+00:00</published>
     <summary>Wie Audio Analyser, angetrieben durch Azure AI, Speech-to-Text-Konvertierung, Textanalyse und Übersetzungen für umsetzbare Insights transformiert.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>AI Prompt Engineering 2024: Techniques That Work</title>
+    <link href="https://sebastienrousseau.com/de/2024-01-23-fortschritte-im-ki-prompt-engineering/"/>
+    <id>https://sebastienrousseau.com/de/2024-01-23-fortschritte-im-ki-prompt-engineering/</id>
+    <updated>2024-01-23T06:06:06+00:00</updated>
+    <published>2024-01-23T06:06:06+00:00</published>
+    <summary>Prompt Engineering steuert das LLM-Verhalten zur Inferenzzeit. Der Artikel behandelt Zero-Shot- und Few-Shot-Prompting, Chain-of-Thought-Reasoning, Self-Consistency-Sampling, ReAct-Architektur, Prompt-Injection-Risiken und Muster aus dem Finanzdienstleistungsbereich.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -357,6 +384,15 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>Generative AI in 2023: How It Works, Where It Lands</title>
+    <link href="https://sebastienrousseau.com/de/2023-11-12-generative-ki-im-detail/"/>
+    <id>https://sebastienrousseau.com/de/2023-11-12-generative-ki-im-detail/</id>
+    <updated>2023-11-12T06:06:06+00:00</updated>
+    <published>2023-11-12T06:06:06+00:00</published>
+    <summary>Wie Transformer-Modelle funktionieren, welche Modelle 2023 Maßstäbe gesetzt haben, wo Generative AI zuerst in Finanzdienstleistungen landet und welche Governance-Fragen Praktiker vor dem Einsatz klären müssen.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>Generative KI im Jahr 2023: Funktionsweise und Einsatzfelder</title>
     <link href="https://sebastienrousseau.com/de/2023-11-12-generative-ki-im-detail/"/>
     <id>https://sebastienrousseau.com/de/2023-11-12-generative-ki-im-detail/</id>
@@ -372,6 +408,15 @@
     <updated>2023-11-05T06:06:06+00:00</updated>
     <published>2023-11-05T06:06:06+00:00</published>
     <summary>Schützen Sie die Integrität Ihres Codes mit sorgfältig validierten mathematischen und kryptografischen Konstanten, die Speicher- und Nebenläufigkeitssicherheit stärken.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>LibMake: Rust Library Scaffold Generator</title>
+    <link href="https://sebastienrousseau.com/de/2023-10-26-libmake-codegenerator-fuer-hochwertige-rust-bibliotheken/"/>
+    <id>https://sebastienrousseau.com/de/2023-10-26-libmake-codegenerator-fuer-hochwertige-rust-bibliotheken/</id>
+    <updated>2023-10-26T06:06:06+00:00</updated>
+    <published>2023-10-26T06:06:06+00:00</published>
+    <summary>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -402,6 +447,15 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>Automating ISO 20022 Payment Files Creation with pain001</title>
+    <link href="https://sebastienrousseau.com/de/2023-09-29-iso-20022-konforme-zahlungsdateien-automatisieren-mit-pain001/"/>
+    <id>https://sebastienrousseau.com/de/2023-09-29-iso-20022-konforme-zahlungsdateien-automatisieren-mit-pain001/</id>
+    <updated>2023-09-29T06:06:06+00:00</updated>
+    <published>2023-09-29T06:06:06+00:00</published>
+    <summary>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>ISO 20022-konforme Zahlungsdateien automatisieren mit Pain001</title>
     <link href="https://sebastienrousseau.com/de/2023-09-29-iso-20022-konforme-zahlungsdateien-automatisieren-mit-pain001/"/>
     <id>https://sebastienrousseau.com/de/2023-09-29-iso-20022-konforme-zahlungsdateien-automatisieren-mit-pain001/</id>
@@ -420,12 +474,30 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>The making of the Express Transaction Credits Platform</title>
+    <link href="https://sebastienrousseau.com/de/2018-02-15-entstehung-der-express-transaction-credits-plattform/"/>
+    <id>https://sebastienrousseau.com/de/2018-02-15-entstehung-der-express-transaction-credits-plattform/</id>
+    <updated>2018-02-15T06:06:06+00:00</updated>
+    <published>2018-02-15T06:06:06+00:00</published>
+    <summary>Ein technischer Einblick in den Aufbau der EXTC-Plattform auf Ethereum ERC-223 im Jahr 2018: Token-Architektur, Multi-Sig-Auszahlungen, zeitgesperrte Transfers und besicherte Sofortkredite.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>Eine neue Kryptowährung und eine schnellere Zahlungslösung für die Zukunft</title>
     <link href="https://sebastienrousseau.com/de/2018-02-04-neue-kryptowaehrung-schnellere-zahlungsloesung-fuer-die-zukunft/"/>
     <id>https://sebastienrousseau.com/de/2018-02-04-neue-kryptowaehrung-schnellere-zahlungsloesung-fuer-die-zukunft/</id>
     <updated>2018-02-04T06:06:06+00:00</updated>
     <published>2018-02-04T06:06:06+00:00</published>
     <summary>Ein bedeutendes Kapitel in der Entwicklung der globalen Finanzlandschaft, geprägt von technologischer Innovation, geopolitischen Verschiebungen und nachhaltiger Finanzwirtschaft.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Vorstellung einer neuen Kryptowährung und schnelleren Zahlungslösung</title>
+    <link href="https://sebastienrousseau.com/de/2018-02-04-neue-kryptowaehrung-schnellere-zahlungsloesung-fuer-die-zukunft/"/>
+    <id>https://sebastienrousseau.com/de/2018-02-04-neue-kryptowaehrung-schnellere-zahlungsloesung-fuer-die-zukunft/</id>
+    <updated>2018-02-04T06:06:06+00:00</updated>
+    <published>2018-02-04T06:06:06+00:00</published>
+    <summary>Anfang 2018 untersuchte die EXTC-Plattform schnellere grenzüberschreitende Zahlungen über Ethereum-ERC-223-Smart-Contracts — ein früher Entwurf für das, was dezentralisierte Finanzen später realisieren sollten.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -444,6 +516,15 @@
     <updated>2018-01-09T06:06:06+00:00</updated>
     <published>2018-01-09T06:06:06+00:00</published>
     <summary>Eine Kryptowährung auf der Ethereum-Blockchain entwickeln: ein umfassender Leitfaden zur Blockchain-Entwicklung, Tokenisierung und Implementierung einer Kryptowährung.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Understanding the Technology behind Blockchain</title>
+    <link href="https://sebastienrousseau.com/de/2018-01-09-die-technologie-hinter-blockchain-verstehen/"/>
+    <id>https://sebastienrousseau.com/de/2018-01-09-die-technologie-hinter-blockchain-verstehen/</id>
+    <updated>2018-01-09T06:06:06+00:00</updated>
+    <published>2018-01-09T06:06:06+00:00</published>
+    <summary>Eine technische Einführung in die Funktionsweise von Blockchain: kryptografische Hash-Ketten, Merkle-Bäume, verteilter Konsens und warum Ethereums programmierbare Schicht ein Zahlungsbuch in eine Plattform für Smart Contracts und tokenisierte Assets verwandelte.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

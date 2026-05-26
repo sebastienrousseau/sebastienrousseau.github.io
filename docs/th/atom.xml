@@ -4,7 +4,7 @@
   <link href="https://sebastienrousseau.com/th/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/th/"/>
   <id>https://sebastienrousseau.com/th/</id>
-  <updated>2026-05-22T21:38:56+00:00</updated>
+  <updated>2026-05-26T23:13:19+00:00</updated>
   <entry>
     <title>UK Payments Forward Plan 2026: สเตเบิลคอยน์ โอเพนแบงกิ้ง โทเคน เอเจนต์</title>
     <link href="https://sebastienrousseau.com/th/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/"/>
@@ -33,21 +33,21 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+    <title>เงินฝากโทเคนในปี 2026: บริการธนาคาร การแข่งขันกับสเตเบลคอยน์ และสถานะของเงินของธนาคารพาณิชย์ที่ตั้งโปรแกรมได้</title>
     <link href="https://sebastienrousseau.com/th/2026-05-21-tokenised-deposits-banking-services-status-2026/"/>
     <id>https://sebastienrousseau.com/th/2026-05-21-tokenised-deposits-banking-services-status-2026/</id>
     <updated>2026-05-21T06:06:06+00:00</updated>
     <published>2026-05-21T06:06:06+00:00</published>
-    <summary>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</summary>
+    <summary>บริการเงินฝากโทเคไนซ์ในปี 2026 กำลังเปลี่ยนจากงานวิจัยสู่การทดลองของธนาคารและข้อเสนอลูกค้าช่วงแรก เงินธนาคารพาณิชย์กำลังถูกปรับให้รองรับการชำระเงินแบบโปรแกรมได้ กระเป๋าเงินดิจิทัล และตลาดทุนโทเคไนซ์</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+    <title>คลาวด์เนทีฟแบงก์กิ้งในปี 2026: Kubernetes, DORA, อธิปไตย และการสิ้นสุดของรอยแยกระหว่าง VM กับคอนเทนเนอร์</title>
     <link href="https://sebastienrousseau.com/th/2026-05-20-cloud-native-banking-financial-institutions-2026/"/>
     <id>https://sebastienrousseau.com/th/2026-05-20-cloud-native-banking-financial-institutions-2026/</id>
     <updated>2026-05-20T06:06:06+00:00</updated>
     <published>2026-05-20T06:06:06+00:00</published>
-    <summary>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</summary>
+    <summary>Cloud native banking ในปี 2026 ครอบคลุม Kubernetes, ความยืดหยุ่นตาม DORA, การรวม VM และคอนเทนเนอร์, อธิปไตยคลาวด์, การจัดวาง AI, ความสามารถพกพาข้อมูล และการพิสูจน์ว่าบริการการเงินสำคัญอยู่รอดได้หากผู้ให้บริการหยุดชะงัก</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -249,6 +249,15 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
+    <link href="https://sebastienrousseau.com/th/2024-02-12-akande-phu-chuai-siang-patiwat-kan-chuai-luea/"/>
+    <id>https://sebastienrousseau.com/th/2024-02-12-akande-phu-chuai-siang-patiwat-kan-chuai-luea/</id>
+    <updated>2024-02-12T06:06:06+00:00</updated>
+    <published>2024-02-12T06:06:06+00:00</published>
+    <summary>Àkàndé คือผู้ช่วยเสียงแบบ Python โอเพนซอร์สที่รวม OpenAI Whisper, GPT-4 และแคช SQLite ในเครื่องเข้าด้วยกัน เพื่อสร้างเวิร์กโฟลว์ขับเคลื่อนด้วยเสียงพร้อมสรุป PDF</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>IA generativa en la publicidad: Amazon Rufus y Meta</title>
     <link href="https://sebastienrousseau.com/th/2024-02-08-patiwat-khotsana-ai-sang-anakhot/"/>
     <id>https://sebastienrousseau.com/th/2024-02-08-patiwat-khotsana-ai-sang-anakhot/</id>
@@ -258,12 +267,30 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
+    <link href="https://sebastienrousseau.com/th/2024-01-29-kan-wikhro-siang-praeplian-lae-khwam-khaochai-ai/"/>
+    <id>https://sebastienrousseau.com/th/2024-01-29-kan-wikhro-siang-praeplian-lae-khwam-khaochai-ai/</id>
+    <updated>2024-01-29T06:06:06+00:00</updated>
+    <published>2024-01-29T06:06:06+00:00</published>
+    <summary>Audio Analyser ใช้โมเดลประมวลผลเสียงพูด Azure Cognitive Services, Text Analytics NLP และ CherryPy เพื่อแปลงไฟล์เสียงเป็นบทถอดความที่ค้นหาได้ พร้อมคะแนนความรู้สึก การดึงคำสำคัญ และการแปลหลายภาษา</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>Análisis, traducción e insights de audio impulsados por IA</title>
     <link href="https://sebastienrousseau.com/th/2024-01-29-kan-wikhro-siang-praeplian-lae-khwam-khaochai-ai/"/>
     <id>https://sebastienrousseau.com/th/2024-01-29-kan-wikhro-siang-praeplian-lae-khwam-khaochai-ai/</id>
     <updated>2024-01-29T06:06:06+00:00</updated>
     <published>2024-01-29T06:06:06+00:00</published>
     <summary>Cómo Audio Analyser, impulsado por Azure AI, transforma la conversión speech-to-text, el análisis de texto y las traducciones para insights accionables.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>AI Prompt Engineering 2024: Techniques That Work</title>
+    <link href="https://sebastienrousseau.com/th/2024-01-23-khwam-kaona-nai-witsawakam-prompt-ai/"/>
+    <id>https://sebastienrousseau.com/th/2024-01-23-khwam-kaona-nai-witsawakam-prompt-ai/</id>
+    <updated>2024-01-23T06:06:06+00:00</updated>
+    <published>2024-01-23T06:06:06+00:00</published>
+    <summary>Prompt engineering ควบคุมพฤติกรรม LLM ในขณะอนุมาน บทความนี้ครอบคลุม zero-shot, few-shot prompting, chain-of-thought, self-consistency, สถาปัตยกรรม ReAct และความเสี่ยง prompt injection</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -357,6 +384,15 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>Generative AI in 2023: How It Works, Where It Lands</title>
+    <link href="https://sebastienrousseau.com/th/2023-11-12-samruat-ai-khwam-chong-charoen/"/>
+    <id>https://sebastienrousseau.com/th/2023-11-12-samruat-ai-khwam-chong-charoen/</id>
+    <updated>2023-11-12T06:06:06+00:00</updated>
+    <published>2023-11-12T06:06:06+00:00</published>
+    <summary>วิธีการทำงานของ transformer model, โมเดลปี 2023 ที่กำหนดมาตรฐาน, จุดแรกที่ generative AI เข้าสู่บริการทางการเงิน และคำถามด้านธรรมาภิบาลที่ต้องตอบก่อนนำไปใช้งาน</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>IA generativa en 2023: cómo funciona, dónde aterriza</title>
     <link href="https://sebastienrousseau.com/th/2023-11-12-samruat-ai-khwam-chong-charoen/"/>
     <id>https://sebastienrousseau.com/th/2023-11-12-samruat-ai-khwam-chong-charoen/</id>
@@ -372,6 +408,15 @@
     <updated>2023-11-05T06:06:06+00:00</updated>
     <published>2023-11-05T06:06:06+00:00</published>
     <summary>Proteja la integridad del código con constantes matemáticas y criptográficas rigurosamente verificadas, reforzando la seguridad de memoria y la concurrencia.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>LibMake: Rust Library Scaffold Generator</title>
+    <link href="https://sebastienrousseau.com/th/2023-10-26-libmake-tua-sang-khot-samrap-laibrari-rust/"/>
+    <id>https://sebastienrousseau.com/th/2023-10-26-libmake-tua-sang-khot-samrap-laibrari-rust/</id>
+    <updated>2023-10-26T06:06:06+00:00</updated>
+    <published>2023-10-26T06:06:06+00:00</published>
+    <summary>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -411,6 +456,15 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>Automating ISO 20022 Payment Files Creation with pain001</title>
+    <link href="https://sebastienrousseau.com/th/2023-09-29-attanomat-fai-chamra-nguen-iso-20022-duai-pain001/"/>
+    <id>https://sebastienrousseau.com/th/2023-09-29-attanomat-fai-chamra-nguen-iso-20022-duai-pain001/</id>
+    <updated>2023-09-29T06:06:06+00:00</updated>
+    <published>2023-09-29T06:06:06+00:00</published>
+    <summary>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>La creación de la plataforma Express Transaction Credits</title>
     <link href="https://sebastienrousseau.com/th/2018-02-15-kan-sang-platform-express-transaction-credits/"/>
     <id>https://sebastienrousseau.com/th/2018-02-15-kan-sang-platform-express-transaction-credits/</id>
@@ -420,12 +474,30 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>The making of the Express Transaction Credits Platform</title>
+    <link href="https://sebastienrousseau.com/th/2018-02-15-kan-sang-platform-express-transaction-credits/"/>
+    <id>https://sebastienrousseau.com/th/2018-02-15-kan-sang-platform-express-transaction-credits/</id>
+    <updated>2018-02-15T06:06:06+00:00</updated>
+    <published>2018-02-15T06:06:06+00:00</published>
+    <summary>เจาะลึกทางเทคนิคเกี่ยวกับการสร้างแพลตฟอร์ม EXTC บน Ethereum ERC-223 ในปี 2018: สถาปัตยกรรมโทเค็น, การเบิกจ่ายแบบ multi-sig, การโอนแบบ time-locked และสินเชื่อทันทีที่มีหลักทรัพย์ค้ำประกัน</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>Presentación de una nueva criptomoneda y una solución de pago más rápida</title>
     <link href="https://sebastienrousseau.com/th/2018-02-04-pertua-kripto-mai-lae-nguen-chamra-reo-khuen/"/>
     <id>https://sebastienrousseau.com/th/2018-02-04-pertua-kripto-mai-lae-nguen-chamra-reo-khuen/</id>
     <updated>2018-02-04T06:06:06+00:00</updated>
     <published>2018-02-04T06:06:06+00:00</published>
     <summary>Un capítulo significativo en la evolución del panorama financiero mundial, configurado por la innovación tecnológica, los cambios geopolíticos y las finanzas sostenibles.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
+    <link href="https://sebastienrousseau.com/th/2018-02-04-pertua-kripto-mai-lae-nguen-chamra-reo-khuen/"/>
+    <id>https://sebastienrousseau.com/th/2018-02-04-pertua-kripto-mai-lae-nguen-chamra-reo-khuen/</id>
+    <updated>2018-02-04T06:06:06+00:00</updated>
+    <published>2018-02-04T06:06:06+00:00</published>
+    <summary>ในต้นปี 2018 แพลตฟอร์ม EXTC ได้สำรวจการชำระเงินข้ามพรมแดนที่รวดเร็วขึ้นผ่านสัญญาอัจฉริยะ Ethereum ERC-223 ซึ่งเป็นแผนงานเบื้องต้นสำหรับสิ่งที่การเงินแบบกระจายศูนย์จะสร้างขึ้นในภายหลัง</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -444,6 +516,15 @@
     <updated>2018-01-09T06:06:06+00:00</updated>
     <published>2018-01-09T06:06:06+00:00</published>
     <summary>Construir una criptomoneda en la blockchain Ethereum: una guía completa de desarrollo blockchain, tokenización e implementación.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Understanding the Technology behind Blockchain</title>
+    <link href="https://sebastienrousseau.com/th/2018-01-09-khao-chai-theknoloyi-beuang-lang-blockchain/"/>
+    <id>https://sebastienrousseau.com/th/2018-01-09-khao-chai-theknoloyi-beuang-lang-blockchain/</id>
+    <updated>2018-01-09T06:06:06+00:00</updated>
+    <published>2018-01-09T06:06:06+00:00</published>
+    <summary>บทนำทางเทคนิคเกี่ยวกับการทำงานของ blockchain: ห่วงโซ่แฮชเข้ารหัส, Merkle tree, ฉันทามติแบบกระจาย และวิธีที่ชั้น programmable ของ Ethereum เปลี่ยนบัญชีการชำระเงินให้กลายเป็นแพลตฟอร์มสำหรับ smart contract และสินทรัพย์ tokenised</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
