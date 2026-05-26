@@ -110,6 +110,16 @@ When the parallel batch completes, verify completeness:
 python3 scripts/editorial/translate_post.py <slug> --list-stubs       # should report 'all 27 locales translated'
 ```
 
+### 6b. Backfill any remaining English frontmatter
+
+Sub-agents translate `title`, `subtitle`, `description`, `keywords`, `twitter_title`, `twitter_description`, and `excerpt`. This step covers the fields they do not touch: `seo_title`, `banner_alt`, `tags`, `item_description`, `item_title`, `twitter_title` (where missed), and `apple-mobile-web-app-title`.
+
+```bash
+python3 scripts/editorial/translate_frontmatter.py --slug <slug>
+```
+
+The script is idempotent — it only writes a field when the locale value is still byte-for-byte identical to the English source, so it never overwrites a good sub-agent translation. Run it unconditionally; a clean article produces zero writes in under a second.
+
 ### 7. Homepage card rotation
 
 Edit `_posts/index.md`: in the `<div class="newsroom-grid feat-latest-grid">` block, **prepend** a new `<article class="newsroom-card">` for today (mirror the structure of the cards already there) and **drop the bottom card** so there are still **6 visible**. The 6-card balance fills the 3-column grid cleanly across all 28 locales (`build_translations.py` rewrites per-locale at build time).
