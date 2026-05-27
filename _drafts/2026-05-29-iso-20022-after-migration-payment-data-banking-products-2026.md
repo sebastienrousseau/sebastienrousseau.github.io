@@ -49,7 +49,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/rss.xml"
-category: "Finance"
+category: "Payments"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "The 2026 ISO 20022 product blueprint — structured addresses, purpose codes, enriched remittance, reconciliation, sanctions screening, payment repair, and treasury analytics."

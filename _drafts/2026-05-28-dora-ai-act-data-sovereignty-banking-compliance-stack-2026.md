@@ -49,7 +49,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/rss.xml"
-category: "Technology"
+category: "Finance"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "The 2026 bank compliance stack — DORA resilience, EU AI Act transparency, sovereign data control, AI logs, cloud concentration, and third-party provider proof."
