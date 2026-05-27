@@ -239,7 +239,7 @@ site_software: "Static Site Generator, Rust"
 <img alt="UK payments modernisation diagram showing stablecoins, tokenised deposits, open banking, AI agents, FCA regulation, PSR consolidation, and wholesale digital markets" src="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">UK Policy · Payments · Open Banking</span>
+<span class="newsroom-eyebrow">UK Payments · Payments Forward Plan · Stablecoins</span>
 <h3><a href="/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html">The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-24">May 24, 2026</time></p>
 <p class="newsroom-excerpt">The UK Payments Forward Plan and April 2026 policy package set out a single framework for traditional payments, stablecoins, tokenised deposits, open banking, and agentic payments. The strategic question for banks is design discipline: which data, rails, controls, liabilities, and client workflows belong together — and how to evidence the orchestration to regulators.</p>
@@ -251,7 +251,7 @@ site_software: "Static Site Generator, Rust"
 <img alt="Agentic payments architecture diagram showing AI agents, consent mandates, tokenised credentials, card networks, banks, merchants, and audit trails" src="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Agentic Payments · AI · Banking</span>
+<span class="newsroom-eyebrow">Agentic Payments · AI Payments · Mastercard Agent Pay</span>
 <h3><a href="/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html">Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-23">May 23, 2026</time></p>
 <p class="newsroom-excerpt">Agentic payments crossed from concept to live transaction in 2026 — Mastercard and Rabobank executed a Netherlands AI-agent payment via Agent Pay, AP2-style cryptographic mandates are emerging, and HM Treasury says payment-services regulation must adapt. The banking architecture question is consent, identity, liability, and pre-settlement evidence.</p>
@@ -260,10 +260,10 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html" title="The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture">
-<img alt="UK acid jazz renewal collage for 2026 with Hammond organ, vinyl, Ronnie Scott's, Acid Jazz Records, jazz-funk festival stages, and London groove culture" src="https://cloudcdn.pro/api/transform?url=/stocks/images/aperture-vintage-SshYpuf607g.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="UK acid jazz renewal collage for 2026 with Hammond organ, vinyl, Ronnie Scott’s, Acid Jazz Records, jazz-funk festival stages, and London groove culture" src="https://cloudcdn.pro/api/transform?url=/stocks/images/aperture-vintage-SshYpuf607g.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Acid Jazz · UK Music · Groove Culture</span>
+<span class="newsroom-eyebrow">Acid Jazz · UK Jazz · Acid Jazz Records</span>
 <h3><a href="/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html">The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-22">May 22, 2026</time></p>
 <p class="newsroom-excerpt">The UK acid jazz renewal in 2026 spans label releases, live dates by first-wave acts, and festival programming — Acid Jazz Records, Bangs &amp; Talbot, The Brand New Heavies, Galliano, James Taylor Quartet, and Mostly Jazz Funk &amp; Soul Festival are all active at once.</p>
@@ -275,10 +275,10 @@ site_software: "Static Site Generator, Rust"
 <img alt="Tokenised deposit banking architecture for 2026 showing commercial bank money, digital wallets, stablecoins, CBDCs, tokenised gilts, and Project Agorá settlement paths" src="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Tokenised Deposits · Digital Money · Banking</span>
+<span class="newsroom-eyebrow">Tokenised Deposits · Tokenized Deposits · Deposit Tokens</span>
 <h3><a href="/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-21">May 21, 2026</time></p>
-<p class="newsroom-excerpt">Tokenised deposits are becoming the banking sector's most important answer to stablecoins: programmable commercial bank money on controlled platforms, with pilots moving through UK marketplace payments, remortgaging, digital-asset settlement, and corporate wallets. The status is still pre-scale, but the direction is clear.</p>
+<p class="newsroom-excerpt">Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets…</p>
 </div>
 </article>
 
@@ -287,10 +287,10 @@ site_software: "Static Site Generator, Rust"
 <img alt="Cloud-native banking architecture for 2026 showing Kubernetes, VM coexistence, DORA resilience, sovereign cloud, observability, and bank platform engineering" src="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Cloud Native · DORA · Banking</span>
+<span class="newsroom-eyebrow">Cloud Native Banking · Kubernetes · DORA</span>
 <h3><a href="/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html">Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-20">May 20, 2026</time></p>
-<p class="newsroom-excerpt">Cloud native banking in 2026 is a regulated platform-engineering discipline: Kubernetes plus VM coexistence, DORA-tested resilience, sovereign cloud, data portability, and proof that critical services can survive provider disruption. Architecture is now a supervisory artefact.</p>
+<p class="newsroom-excerpt">Cloud native banking in 2026 is no longer a debate about whether banks can use cloud. It is a regulated platform-engineering discipline: how to run critical services across containers, virtual…</p>
 </div>
 </article>
 
@@ -299,12 +299,13 @@ site_software: "Static Site Generator, Rust"
 <img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Payments · ISO 20022 · Cross-Border</span>
+<span class="newsroom-eyebrow">Wholesale Payments · ISO 20022 · RTGS</span>
 <h3><a href="/2026-05-19-global-wholesale-payments-economics-2026/index.html">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-19">May 19, 2026</time></p>
-<p class="newsroom-excerpt">Wholesale payments in 2026 are part of macroeconomic resilience: ISO 20022 harmonisation, RTGS renewal and extended operating hours, non-bank access, interlinking, and DLT settlement pilots are converging around the cost of moving global liquidity — and the G20 cross-border targets are still off-track for 2027.</p>
+<p class="newsroom-excerpt">Wholesale payments in 2026 are no longer just bank plumbing. They are part of macroeconomic resilience, trade competitiveness, liquidity efficiency, sanctions compliance, and the strategic contest…</p>
 </div>
 </article>
+
 
 </div>
 
