@@ -45,8 +45,8 @@
       <news:language>he-IL</news:language>
     </news:publication>
     <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</news:title>
-    <news:keywords>tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, commercial bank money, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenised money, digital wallets, tokenised gilts</news:keywords>
+    <news:title>פיקדונות מתויגים ב-2026: שירותי בנקאות, תחרות סטייבלקוינים והסטטוס של כספי בנקים מסחריים בני-תכנות</news:title>
+    <news:keywords>tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, כסף בנקאי מסחרי, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenised money, ארנקים דיגיטליים, tokenised gilts</news:keywords>
   </news:news>
 </url>
 <url>
@@ -57,8 +57,8 @@
       <news:language>he-IL</news:language>
     </news:publication>
     <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
-    <news:title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</news:title>
-    <news:keywords>cloud native banking 2026, Kubernetes banks, financial institutions cloud, DORA 2026, cloud resilience, Red Hat OpenShift, Portworx, VM container coexistence, bank cloud sovereignty, financial services cloud dependency, operational resilience, disaster recovery, cloud exit strategy, AI banking workloads</news:keywords>
+    <news:title>בנקאות cloud native ב-2026: Kubernetes, DORA, ריבונות וסוף הפיצול בין VM לקונטיינר</news:title>
+    <news:keywords>בנקאות ענן-נייטיב 2026, Kubernetes בנקים, ענן מוסדות פיננסיים, DORA 2026, חוסן ענן, Red Hat OpenShift, Portworx, דו-קיום VM ומכולות, ריבונות ענן בנקים, תלות שירותים פיננסיים בענן, חוסן תפעולי, התאוששות מאסון, אסטרטגיית יציאה מענן, עומסי AI בבנקאות</news:keywords>
   </news:news>
 </url>
 <url>
@@ -321,8 +321,8 @@
       <news:language>he-IL</news:language>
     </news:publication>
     <news:publication_date>2024-02-12T06:06:06+00:00</news:publication_date>
-    <news:title>Àkàndé: مساعد صوتي مدعوم بـ GPT للتنفيذيين</news:title>
-    <news:keywords>Àkàndé, مساعد صوتي, فهم اللغة الطبيعية, تلخيصات PDF, تخزين مؤقت فعّال, OpenAI GPT, مساعدة تنفيذية, مساعدة شخصية, مساعدون رقميون, ابتكار تكنولوجي</news:keywords>
+    <news:title>Àkàndé: GPT-Powered Voice Assistant for Executives</news:title>
+    <news:keywords>Àkàndé, OpenAI GPT-4, Whisper STT, SQLite caching, fpdf2, Python voice assistant, chat completions API, PDF summary generation, SHA-256 cache, text-to-speech, executive assistant AI, open-source</news:keywords>
   </news:news>
 </url>
 <url>
@@ -345,8 +345,8 @@
       <news:language>he-IL</news:language>
     </news:publication>
     <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
-    <news:title>تحليل الكلام والترجمة والرؤى المدعومة بالذكاء الاصطناعي</news:title>
-    <news:keywords>audio analyser, azure ai, speech-to-text, تحليل البيانات الصوتية, تحليل النصوص, ترجمات الذكاء الاصطناعي, رؤى صوتية, التفريغ الآلي, معالجة البيانات الصوتية, تعلم الآلة</news:keywords>
+    <news:title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</news:title>
+    <news:keywords>Azure Cognitive Services, speech-to-text, מודל אקוסטי נוירוני, Azure Text Analytics, עיבוד שפה טבעית, ניתוח סנטימנט, CherryPy, batch transcription API, ASR רב-לשוני, Azure Translator, תמלול שמע, עיבוד שמע ב-Python</news:keywords>
   </news:news>
 </url>
 <url>
@@ -357,8 +357,8 @@
       <news:language>he-IL</news:language>
     </news:publication>
     <news:publication_date>2024-01-23T06:06:06+00:00</news:publication_date>
-    <news:title>هندسة الموجِّهات في الذكاء الاصطناعي 2024: تقنيات فعّالة</news:title>
-    <news:keywords>AI Prompt Engineering، التعليمات المخصّصة، الذكاء الاصطناعي متعدّد الشخصيات، chain of thought، الحوسبة الكمومية، الذكاء الاصطناعي الأخلاقي، adaptive prompting، zero shot، few shot، اتّجاهات تكنولوجيا الذكاء الاصطناعي</news:keywords>
+    <news:title>AI Prompt Engineering 2024: Techniques That Work</news:title>
+    <news:keywords>chain-of-thought prompting, few-shot learning, zero-shot prompting, in-context learning, prompt injection, ReAct, self-consistency, retrieval-augmented generation, BloombergGPT, system prompt, prompt security, LLM agent</news:keywords>
   </news:news>
 </url>
 <url>
@@ -477,8 +477,8 @@
       <news:language>he-IL</news:language>
     </news:publication>
     <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
-    <news:title>الذكاء الاصطناعي التوليدي في 2023: كيف يعمل، وأين يَحلّ</news:title>
-    <news:keywords>الذكاء الاصطناعي التوليدي، التقنية، المستقبل، الأثر، الأخلاقيات، التآزر، الابتكار، الإبداع، التحوّل، التطوّر</news:keywords>
+    <news:title>Generative AI in 2023: How It Works, Where It Lands</news:title>
+    <news:keywords>generative AI, large language model, transformer architecture, GPT-4, AI בשירותים פיננסיים, hallucination, retrieval-augmented generation, AI governance, foundation model, fine-tuning</news:keywords>
   </news:news>
 </url>
 <url>
@@ -501,8 +501,8 @@
       <news:language>he-IL</news:language>
     </news:publication>
     <news:publication_date>2023-10-26T06:06:06+00:00</news:publication_date>
-    <news:title>تبسيط تطوير مكتبات Rust عبر توليد الشفرة</news:title>
-    <news:keywords>Rust، المكتبة، التطوير، الشفرة، المولِّد، البويلربليت، أفضل الممارسات، الجودة، الموثوقية</news:keywords>
+    <news:title>LibMake: Rust Library Scaffold Generator</news:title>
+    <news:keywords>LibMake, Rust code generator, cargo scaffold, Rust library template, Tera templating, GitHub Actions Rust, cargo-audit, Rust API Guidelines, boilerplate generator, Rust CI workflow</news:keywords>
   </news:news>
 </url>
 <url>
@@ -537,8 +537,8 @@
       <news:language>he-IL</news:language>
     </news:publication>
     <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
-    <news:title>أتمتة إنشاء ملفّات الدفع المتوافقة مع ISO 20022 باستخدام Pain001</news:title>
-    <news:keywords>ISO 20022, pain.001, Pain001, Python, المدفوعات, الأتمتة, CBPR+, HVPS+, SEPA, الامتثال, التحويلات</news:keywords>
+    <news:title>Automating ISO 20022 Payment Files Creation with pain001</news:title>
+    <news:keywords>pain001, ISO 20022, pain.001.001.09, CustomerCreditTransferInitiation, SEPA Credit Transfer, CBPR+, payment automation, XML generation, XSD validation, GrpHdr, PmtInf, CdtTrfTxInf, CtrlSum, SWIFT</news:keywords>
   </news:news>
 </url>
 <url>
@@ -549,8 +549,8 @@
       <news:language>he-IL</news:language>
     </news:publication>
     <news:publication_date>2018-02-15T06:06:06+00:00</news:publication_date>
-    <news:title>صناعة منصّة Express Transaction Credits</news:title>
-    <news:keywords>Ethereum, ERC-223, ERC-20, EXTC, Express Transaction Credits, blockchain, المدفوعات, التوكنات, القروض, التمويل اللامركزي</news:keywords>
+    <news:title>The making of the Express Transaction Credits Platform</news:title>
+    <news:keywords>פלטפורמת EXTC, ERC-223, חוזים חכמים Ethereum, ארכיטקטורת טוקן, multi-signature, time-locked transfer, תשלומי blockchain, collateral-backed loans, מימון מבוזר, 2018 crypto</news:keywords>
   </news:news>
 </url>
 <url>
@@ -561,8 +561,8 @@
       <news:language>he-IL</news:language>
     </news:publication>
     <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
-    <news:title>كشف عملة مشفّرة جديدة وحلّ مدفوعات أسرع</news:title>
-    <news:keywords>EXTC Network, العملة المشفّرة, المدفوعات الأسرع, Ethereum, EIP20, smart contracts, blockchain, المدفوعات العابرة للحدود, الشمول المالي</news:keywords>
+    <news:title>Unveiling a new Cryptocurrency and Faster Payment Solution</news:title>
+    <news:keywords>EXTC, ERC-223, חוזים חכמים של Ethereum, תשלומים מהירים, cryptocurrency, blockchain payments, payment token, decentralised finance, ERC-20, תשלומים חוצי-גבולות</news:keywords>
   </news:news>
 </url>
 <url>
@@ -585,8 +585,8 @@
       <news:language>he-IL</news:language>
     </news:publication>
     <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
-    <news:title>فهم التقنية الكامنة وراء البلوكشين</news:title>
-    <news:keywords>blockchain, Ethereum, smart contract, العملة المشفّرة, Solidity, Geth, dApps, ERC-20, الترميز, testnet</news:keywords>
+    <news:title>Understanding the Technology behind Blockchain</news:title>
+    <news:keywords>טכנולוגיית blockchain, cryptographic hash, עץ Merkle, distributed consensus, proof of work, Ethereum, חוזים חכמים, EVM, Solidity, ERC-20, distributed ledger, decentralised finance</news:keywords>
   </news:news>
 </url>
 <url>

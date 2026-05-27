@@ -6,10 +6,10 @@
     <description>Labaran Hausa: AI mai amfani, biyan kuɗi na ISO 20022, kiriftografi bayan kwantum da sauye-sauyen biyan kuɗi na manyan.</description>
     <atom:link href="https://sebastienrousseau.com/ha/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ha-NG</language>
-    <lastBuildDate>Fri, 22 May 2026 21:38:56 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 23:13:19 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. An kiyaye duk hakkokin.</copyright>
     <item>
-      <title>UK Payments Forward Plan 2026: Stablecoins, Open Banking, Tokens</title>
+      <title>UK Payments Forward Plan a 2026: Stablecoins, Open Banking, Adibassu da Aka Mai Da Su Tokens, da Biyan Kuɗi ta Wakili</title>
       <link>https://sebastienrousseau.com/ha/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>
       <description>UK Payments Forward Plan da fakitin manufofin Afrilu 2026 sun nuna tsari ɗaya mai daidaito ga biyan kuɗi na al&apos;ada, stablecoins, adibassu da aka mai da su tokens, open banking, da biyan kuɗi ta wakili na AI.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</guid>
@@ -81,9 +81,9 @@
       <category>wasannin jazz na London</category>
     </item>
     <item>
-      <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+      <title>Tokenized Deposits a 2026: Sabis na Banki, Gasar Stablecoins, da Matsayin Kuɗin Banki na Kasuwanci da Ake Iya Tsarawa</title>
       <link>https://sebastienrousseau.com/ha/2026-05-21-tokenised-deposits-banking-services-status-2026/</link>
-      <description>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</description>
+      <description>Ayyukan tokenised deposits na 2026 suna tafiya daga bincike zuwa gwaji na banki da shawarwari na farko ga abokan ciniki. Matsayin yana pre-scale har yanzu, amma alkibla tana bayyane: ana daidaita kuɗin banki na kasuwanci don programmable settlement, digital wallets, stablecoin interoperability, da tokenised capital markets.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-21-tokenised-deposits-banking-services-status-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
@@ -94,7 +94,7 @@
       <category>Great British Tokenised Deposits</category>
       <category>Lloyds digital assets</category>
       <category>stablecoins</category>
-      <category>commercial bank money</category>
+      <category>kuɗin banki na kasuwanci</category>
       <category>BIS stablecoins</category>
       <category>Project Agora</category>
       <category>unified ledger</category>
@@ -105,27 +105,27 @@
       <category>tokenised gilts</category>
     </item>
     <item>
-      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <title>Cloud Native Banking a 2026: Kubernetes, DORA, Ikon Mallaka, da Ƙarshen Rabe-Raben VM da Container</title>
       <link>https://sebastienrousseau.com/ha/2026-05-20-cloud-native-banking-financial-institutions-2026/</link>
-      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <description>Tsarin cloud native banking a 2026 ya haɗa da injiniyan dandali na Kubernetes, juriya ta aiki ta DORA, haɗuwar VM da container, ikon cloud, ayyukan AI, jigilar bayanai, da tabbacin ci gaban sabis na kuɗi.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-20-cloud-native-banking-financial-institutions-2026/</guid>
       <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
       <category>cloud native banking 2026</category>
-      <category>Kubernetes banks</category>
-      <category>financial institutions cloud</category>
+      <category>Kubernetes bankuna</category>
+      <category>cibiyoyin kuɗi cloud</category>
       <category>DORA 2026</category>
-      <category>cloud resilience</category>
+      <category>juriya cloud</category>
       <category>Red Hat OpenShift</category>
       <category>Portworx</category>
       <category>VM container coexistence</category>
-      <category>bank cloud sovereignty</category>
-      <category>financial services cloud dependency</category>
-      <category>operational resilience</category>
-      <category>disaster recovery</category>
-      <category>cloud exit strategy</category>
-      <category>AI banking workloads</category>
+      <category>ikon cloud na bankuna</category>
+      <category>dogaro da cloud na sabis kuɗi</category>
+      <category>juriya ta aiki</category>
+      <category>dawo bayan bala&apos;i</category>
+      <category>dabarar fita cloud</category>
+      <category>ayyukan AI na banki</category>
     </item>
     <item>
       <title>Biyan Kuɗi na Manyan Ƙimomi a Duniya a 2026: ISO 20022, Sabunta RTGS, da Tattalin Arzikin Haɗakar Tsare-tsare</title>
@@ -186,15 +186,15 @@
     <item>
       <title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
       <link>https://sebastienrousseau.com/ha/2026-05-17-agentic-engineering-banks-blueprint-2026/</link>
-      <description>Agentic AI has crossed from pilot into production across global banking. 70% of institutions are using it to some degree; only one in five has a mature governance model. Meanwhile, autonomous adversaries are operating at machine speed, the legacy COBOL estate the new systems must interoperate with was written for the batch-processing assumptions of the 1960s, and the EU AI Act&apos;s August 2026 high-risk deadline is twelve weeks away. This is the engineering and governance position a bank needs to hold.</description>
+      <description>Agentic AI ya wuce daga gwaji zuwa samarwa a bankunan duniya. Kashi 70% na cibiyoyi suna amfani da shi; ɗaya cikin biyar ne kawai ke da ƙwararre na mulki. Abokan gaba masu cin gashin kansu suna aiki da saurin injin, gado na COBOL an rubuta shi don zato na sarrafawa-tari na 1960s, kuma EU AI Act ta Agusta 2026 tana nesa da makonni goma sha biyu.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-17-agentic-engineering-banks-blueprint-2026/</guid>
       <pubDate>Sun, 17 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
-      <category>agentic engineering</category>
+      <category>injiniyan agentic</category>
       <category>spec-driven development</category>
-      <category>banks</category>
-      <category>financial services</category>
+      <category>bankunan</category>
+      <category>sabis na kuɗi</category>
       <category>AI governance</category>
       <category>EU AI Act</category>
       <category>DORA</category>
@@ -214,14 +214,14 @@
       <category>HITL</category>
       <category>human on the loop</category>
       <category>HOTL</category>
-      <category>third-party risk management</category>
+      <category>sarrafa haɗarin ɓangare na uku</category>
       <category>TPRM</category>
       <category>vendor risk</category>
       <category>post-quantum cryptography</category>
       <category>agent control plane</category>
       <category>FCA</category>
       <category>SM&amp;CR</category>
-      <category>12-week action plan</category>
+      <category>shirin aiki na makonni 12</category>
       <category>Sebastien Rousseau</category>
     </item>
     <item>
@@ -283,7 +283,7 @@
     <item>
       <title>Stablecoin Yield by Another Name: BlackRock&apos;s BRSRV and BSTBL Filings Decoded</title>
       <link>https://sebastienrousseau.com/ha/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/</link>
-      <description>Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two SEC registrations for products that solve this constraint by being regulated as money market funds rather than stablecoins — while behaving, in the wallet, like yield-bearing dollars. A close reading of BRSRV, BSTBL, and the OCC rulemaking they respond to.</description>
+      <description>Dokar GENIUS ba ta barin stablecoins su biya riba. BlackRock ta shigar da BRSRV da BSTBL a 8 Mayu 2026 a matsayin kuɗin kasuwannin SEC, ba stablecoins ba. Nazarin OCC da sauran dokoki.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/</guid>
       <pubDate>Fri, 15 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
@@ -295,22 +295,22 @@
       <category>GENIUS Act</category>
       <category>OCC</category>
       <category>stablecoin</category>
-      <category>tokenised money market fund</category>
+      <category>kuɗin kasuwannin da aka tokenize</category>
       <category>OnChain Shares</category>
       <category>Securitize</category>
     </item>
     <item>
       <title>Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</title>
       <link>https://sebastienrousseau.com/ha/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/</link>
-      <description>Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026, the EU, UK, and ASD timelines clarified, and the BIS Project Leap proving feasibility at the central-bank level, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today&apos;s data expires.</description>
+      <description>Haɗarin quantum ya ƙaura daga bincike zuwa umarnin ƙa&apos;ida. G7 roadmap na Janairu 2026, EU, UK, da ASD, da BIS Project Leap sun tabbatar cewa tambayar hukuma yanzu ita ce ko za a kammala ƙaura kafin ƙarshen rayuwar bayanai.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/</guid>
       <pubDate>Thu, 14 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" type="image/webp" length="0"/>
       <category>post-quantum cryptography</category>
-      <category>PQC migration</category>
-      <category>corporate banking</category>
-      <category>financial services</category>
+      <category>ƙaura ta PQC</category>
+      <category>bankin kamfanoni</category>
+      <category>sabis na kuɗi</category>
       <category>G7 CEG roadmap</category>
       <category>BIS Project Leap</category>
       <category>ML-KEM</category>
@@ -321,7 +321,7 @@
     <item>
       <title>The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View</title>
       <link>https://sebastienrousseau.com/ha/2026-05-12-iso-20022-pacs008-structured-address-deadline/</link>
-      <description>From November 2026, SWIFT CBPR+ requires structured postal addresses in cross-border payment messages. Unstructured address lines (AdrLine alone) will no longer be accepted for key party fields in pacs.008. At minimum, TwnNm and Ctry are required, with StrtNm and BldgNb or PstBx recommended. With six months to go, 65% of payment messages still contain unstructured addresses and 44% of banks remain behind schedule.</description>
+      <description>Daga Nuwamba 2026, SWIFT CBPR+ yana buƙatar adireshi na gidan waya da aka tsara a cikin saƙonnin biyan kuɗi na ƙasa da ƙasa. Layin adireshi marasa tsari (AdrLine kaɗai) ba za a yarda da su ba a pacs.008; aƙalla TwnNm da Ctry ana buƙata. Har yanzu kashi 65% na saƙonnin da kashi 44% na bankunan ba su cika ka&apos;ida ba.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-12-iso-20022-pacs008-structured-address-deadline/</guid>
       <pubDate>Tue, 12 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
@@ -329,9 +329,9 @@
       <category>ISO 20022</category>
       <category>pacs.008</category>
       <category>SWIFT CBPR+</category>
-      <category>structured address</category>
-      <category>November 2026</category>
-      <category>postal address</category>
+      <category>adireshi mai tsari</category>
+      <category>Nuwamba 2026</category>
+      <category>adireshi na gidan waya</category>
       <category>TwnNm</category>
       <category>Ctry</category>
       <category>StrtNm</category>
@@ -340,26 +340,26 @@
     <item>
       <title>Lucy&apos;s Flash Drive Revisited: AI, Quantum &amp; Knowledge</title>
       <link>https://sebastienrousseau.com/ha/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/</link>
-      <description>Twelve years on, Besson&apos;s Lucy reads like a thought experiment about knowledge migrating from flesh to machine — quietly validated by LLMs and qubits.</description>
+      <description>Shekaru goma sha biyu bayan, fim ɗin Lucy na Besson yana karantawa kamar gwajin tunani game da ilimi da ke ƙaura daga jiki zuwa na&apos;ura — LLMs da qubits sun tabbatar da shi a ɓoye.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/</guid>
       <pubDate>Mon, 11 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" type="image/webp" length="0"/>
       <category>Lucy 2014 film</category>
       <category>Luc Besson</category>
-      <category>knowledge transfer</category>
+      <category>ƙaurar ilimi</category>
       <category>large language models</category>
       <category>neutral atom qubits</category>
       <category>whole-brain emulation</category>
       <category>substrate independence</category>
-      <category>AI philosophy</category>
+      <category>falsafar AI</category>
       <category>quantum computing</category>
-      <category>knowledge persistence</category>
+      <category>adana ilimi</category>
     </item>
     <item>
       <title>Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</title>
       <link>https://sebastienrousseau.com/ha/2026-04-11-quantum-thresholds-are-moving-again/</link>
-      <description>Shor&apos;s algorithm may now run on as few as 10,000 qubits. RSA, ECC and the timeline for post-quantum migration are all moving up. Here&apos;s why.</description>
+      <description>Shor&apos;s algorithm yanzu yana iya gudana akan qubits 10,000 kawai. RSA, ECC da jadawalin ƙaura na post-quantum duk suna matsawa gaba. Ga dalilin.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-04-11-quantum-thresholds-are-moving-again/</guid>
       <pubDate>Sat, 11 Apr 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
@@ -371,44 +371,44 @@
       <category>RSA-2048</category>
       <category>elliptic curve cryptography</category>
       <category>neutral atom qubits</category>
-      <category>quantum error correction</category>
+      <category>gyaran kuskure na quantum</category>
       <category>cryptographic agility</category>
-      <category>quantum threat timeline</category>
+      <category>jadawalin barazanar quantum</category>
     </item>
     <item>
       <title>Quantum-Safe Payments: Why the Industry Must Act Now</title>
       <link>https://sebastienrousseau.com/ha/2025-09-01-quantum-safe-payments-epaa/</link>
-      <description>Quantum computing threatens payment system cryptography. The EPAA white paper outlines the structural risk and the urgent case for PQC migration.</description>
+      <description>Kwamfutar quantum na barazana ga cryptography na tsarin biyan kuɗi. Takarda ta EPAA ta bayyana haɗarin tsarin da gaggawar hijira zuwa PQC.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2025-09-01-quantum-safe-payments-epaa/</guid>
       <pubDate>Mon, 01 Sep 2025 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/digital-nodes.webp" type="image/webp" length="0"/>
-      <category>quantum-safe payments</category>
-      <category>post-quantum cryptography</category>
+      <category>biyan kuɗi masu aminci na quantum</category>
+      <category>cryptography bayan-quantum</category>
       <category>SEPA</category>
       <category>SWIFT gpi</category>
       <category>ISO 20022</category>
-      <category>financial services security</category>
+      <category>tsaro na ayyukan kuɗi</category>
       <category>EPAA</category>
       <category>harvest-now decrypt-later</category>
-      <category>cryptographic agility</category>
+      <category>sauƙin cryptographic</category>
       <category>Sebastien Rousseau</category>
     </item>
     <item>
       <title>Quantum Lattice Crypto: Bug in Chen&apos;s LWE Attack</title>
       <link>https://sebastienrousseau.com/ha/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/</link>
-      <description>A bug in Yilei Chen&apos;s quantum LWE algorithm temporarily reprieves lattice-based cryptography. What it means for CRYSTALS-Kyber, Dilithium and the PQC roadmap.</description>
+      <description>An gano kuskure a cikin algorithm ɗin quantum LWE na Yilei Chen, wanda ya ba da kariya ta wucin gadi ga lattice-based cryptography. Me wannan ke nufi ga CRYSTALS-Kyber, Dilithium da tafarkin PQC.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/</guid>
       <pubDate>Mon, 22 Apr 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/digital-nodes.webp" type="image/webp" length="0"/>
       <category>post-quantum cryptography</category>
       <category>NIST</category>
-      <category>PQC standardisation</category>
+      <category>daidaita PQC</category>
       <category>Yilei Chen</category>
       <category>quantum algorithm</category>
       <category>lattice-based cryptography</category>
-      <category>LWE problem</category>
+      <category>matsalar LWE</category>
       <category>CRYSTALS-KYBER</category>
       <category>CRYSTALS-Dilithium</category>
       <category>quantum-resistant cryptography</category>
@@ -422,20 +422,20 @@
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/open-voice.webp" type="image/webp" length="0"/>
       <category>OpenVoice</category>
-      <category>Voice Cloning Technology</category>
-      <category>AI Synthetic Speech</category>
-      <category>Open-Source Voice Cloning</category>
-      <category>Cross-Lingual Voice Synthesis</category>
-      <category>Instant Voice Cloning</category>
-      <category>Voice Style Control</category>
-      <category>Accessibility Voice Tech</category>
-      <category>Entertainment Industry Voices</category>
-      <category>Customer Service Voice AI</category>
+      <category>Fasahar Kwafin Murya</category>
+      <category>AI Magana ta Roba</category>
+      <category>Open-Source Kwafin Murya</category>
+      <category>Haɗin Murya Tsakanin Harsuna</category>
+      <category>Gaggawar Kwafin Murya</category>
+      <category>Sarrafa Salon Murya</category>
+      <category>Fasahar Murya ta Accessibility</category>
+      <category>Muryoyin Masana&apos;antar Nishaɗi</category>
+      <category>AI Murya ta Sabis na Abokan Ciniki</category>
     </item>
     <item>
       <title>Quantum Algorithm Challenges Lattice-Based Cryptography</title>
       <link>https://sebastienrousseau.com/ha/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/</link>
-      <description>A new polynomial-time quantum algorithm by Yilei Chen targets lattice-based cryptography. Implications for post-quantum standards including CRYSTALS-Kyber.</description>
+      <description>Sabon algorithm na quantum na polynomial-time na Yilei Chen yana kai hari ga lattice-based cryptography. Tasirin da hakan ke da shi ga ma&apos;auni na post-quantum kamar CRYSTALS-Kyber.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/</guid>
       <pubDate>Mon, 01 Apr 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
@@ -444,567 +444,577 @@
       <category>quantum algorithm</category>
       <category>lattice cryptography</category>
       <category>LWE</category>
-      <category>encryption</category>
+      <category>ɓoyewa</category>
       <category>post-quantum cryptography</category>
-      <category>cybersecurity</category>
+      <category>tsaron yanar gizo</category>
       <category>Yilei Chen</category>
-      <category>cryptography research</category>
-      <category>security threats</category>
+      <category>binciken cryptography</category>
+      <category>barazanar tsaro</category>
     </item>
     <item>
       <title>Fully Homomorphic Encryption (FHE) in a Banking Quantum Era</title>
       <link>https://sebastienrousseau.com/ha/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/</link>
-      <description>Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats.</description>
+      <description>Bincike yadda Fully Homomorphic Encryption ke juya tsaron bayanai a Banking da Masana&apos;antar Kudi, tare da tabbatar da sirri daga barazanar quantum computing.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/</guid>
       <pubDate>Mon, 25 Mar 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp" type="image/webp" length="0"/>
       <category>Fully Homomorphic Encryption</category>
-      <category>banking security</category>
+      <category>tsaron banking</category>
       <category>quantum computing</category>
-      <category>financial data encryption</category>
+      <category>ɓoye bayanai na kudi</category>
       <category>FHE case studies</category>
-      <category>regulatory frameworks FHE</category>
+      <category>tsarin doka FHE</category>
       <category>computational overhead FHE</category>
-      <category>FHE research</category>
-      <category>FHE hardware</category>
-      <category>data privacy laws</category>
+      <category>binciken FHE</category>
+      <category>kayan aiki FHE</category>
+      <category>dokar sirrin bayanai</category>
     </item>
     <item>
       <title>Advancing AI with Multimodal LLMs: Insights from MM1</title>
       <link>https://sebastienrousseau.com/ha/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/</link>
-      <description>Explore Apple&apos;s MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials.</description>
+      <description>Bincika takarda ta MM1 ta Apple akan Multimodal Large Language Models (MLLMs). Koyi game da gine-ginensu, dabarun pre-training, da yuwuwar AI.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/</guid>
       <pubDate>Sun, 17 Mar 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/mm1-visual.webp" type="image/webp" length="0"/>
       <category>Multimodal LLMs</category>
-      <category>MM1 study</category>
-      <category>AI advancements</category>
-      <category>pre-training strategies</category>
-      <category>image recognition</category>
-      <category>natural language processing</category>
-      <category>AI applications</category>
-      <category>future of AI</category>
+      <category>binciken MM1</category>
+      <category>ci gaban AI</category>
+      <category>dabarun pre-training</category>
+      <category>gane hoto</category>
+      <category>sarrafa harshe na halitta</category>
+      <category>aikace-aikacen AI</category>
+      <category>makomar AI</category>
       <category>multimodal learning</category>
-      <category>AI research</category>
+      <category>binciken AI</category>
     </item>
     <item>
       <title>Fast Real-Time Speech Recognition on macOS: OpenAI Whisper</title>
       <link>https://sebastienrousseau.com/ha/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/</link>
-      <description>Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy.</description>
+      <description>Gano yadda OpenAI Whisper da Metal Performance Shaders ke canza gane magana a lokaci na gaske a macOS, suna ba da sauri da daidaito marar misali.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/</guid>
       <pubDate>Tue, 12 Mar 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/research-paper.webp" type="image/webp" length="0"/>
       <category>OpenAI Whisper</category>
       <category>Metal Performance Shaders</category>
-      <category>macOS speech recognition</category>
-      <category>real-time transcription</category>
-      <category>voice activity detection</category>
-      <category>GPU acceleration</category>
-      <category>Python integration</category>
+      <category>gane magana macOS</category>
+      <category>fassarar lokaci na gaske</category>
+      <category>gano ayyukan murya</category>
+      <category>hanzarin GPU</category>
+      <category>haɗin Python</category>
       <category>speech-to-text macOS</category>
-      <category>energy-efficient speech detection</category>
+      <category>gano magana mai adana makamashi</category>
       <category>Apple silicon</category>
     </item>
     <item>
       <title>RustLogs (RLG): Structured Logging Library for Rust</title>
       <link>https://sebastienrousseau.com/ha/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/</link>
-      <description>Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. </description>
+      <description>Gano RustLogs (RLG), ɗakin karatu mai sassauci na logging don Rust tare da tsarin log da aka tsara, logging na asynchronous, da zaɓuɓɓuka masu yawa na keɓantawa.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/</guid>
       <pubDate>Fri, 08 Mar 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/rustlogs.webp" type="image/webp" length="0"/>
-      <category>Rust logging library</category>
+      <category>ɗakin karatu na Rust logging</category>
       <category>asynchronous Rust logging</category>
-      <category>structured log formats</category>
-      <category>Rust application debugging</category>
-      <category>customisable logging Rust</category>
-      <category>Rust development tools</category>
-      <category>RustLogs RLG features</category>
-      <category>efficient Rust logging</category>
-      <category>RustLogs integration</category>
-      <category>RustLogs documentation</category>
+      <category>tsarin log da aka tsara</category>
+      <category>gyaran kuskure na Rust application</category>
+      <category>logging na Rust mai keɓantawa</category>
+      <category>kayan aikin Rust development</category>
+      <category>fasalulluka na RustLogs RLG</category>
+      <category>logging na Rust mai inganci</category>
+      <category>haɗin RustLogs</category>
+      <category>takardun RustLogs</category>
     </item>
     <item>
       <title>Le Chat by Mistral AI: Multilingual Conversational AI</title>
       <link>https://sebastienrousseau.com/ha/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/</link>
-      <description>Meet Mistral AI&apos;s new multilingual Assistant. An advanced AI that can understand and respond in multiple languages, all in one conversation and in real-time.</description>
+      <description>Ku san sabon Mataimaki mai harsuna da yawa na Mistral AI. AI na zamani wanda zai iya fahimta da mayar da martani cikin harsuna da yawa, a tattaunawa ɗaya kuma a lokaci na gaske.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/</guid>
       <pubDate>Mon, 04 Mar 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp" type="image/webp" length="0"/>
       <category>Le Chat AI</category>
       <category>Mistral AI chatbot</category>
-      <category>Le Chat virtual assistant</category>
-      <category>Mistral AI language understanding</category>
-      <category>Le Chat AI customer service</category>
-      <category>Mistral AI enterprise solutions</category>
-      <category>Le Chat AI customisation</category>
-      <category>Mistral AI multilingual support</category>
-      <category>Le Chat AI-powered communication</category>
-      <category>Mistral AI AI-driven business solutions</category>
+      <category>Le Chat mataimaki na dijital</category>
+      <category>Mistral AI fahimtar harshe</category>
+      <category>Le Chat AI hidimar abokin ciniki</category>
+      <category>Mistral AI mafita na kasuwanci</category>
+      <category>Le Chat AI keɓancewa</category>
+      <category>Mistral AI tallafin harsuna da yawa</category>
+      <category>Le Chat AI sadarwa mai ƙarfi</category>
+      <category>Mistral AI mafita na kasuwanci ta AI</category>
     </item>
     <item>
       <title>Google Gemma AI: Transforming Open-Source AI Development</title>
       <link>https://sebastienrousseau.com/ha/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/</link>
-      <description>Explore Google&apos;s Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use.</description>
+      <description>Bincika Samfurin AI na Google Gemma: Aikin buɗaɗɗen tushe wanda ke bayar da mafita na AI na ɗabi&apos;a don amfanin mutum ɗaya da kamfanoni.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/</guid>
       <pubDate>Mon, 26 Feb 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/ai-ship.webp" type="image/webp" length="0"/>
       <category>Google Gemma AI</category>
-      <category>open-source AI model</category>
-      <category>Gemma technical architecture</category>
+      <category>samfurin AI na buɗaɗɗen tushe</category>
+      <category>ginin fasaha na Gemma</category>
       <category>Gemma 2B 7B</category>
-      <category>ethical AI</category>
-      <category>AI integration macOS</category>
-      <category>AI enterprise solutions</category>
-      <category>conversational AI</category>
-      <category>data analysis AI</category>
-      <category>AI for edge devices</category>
+      <category>AI na ɗabi&apos;a</category>
+      <category>haɗa AI macOS</category>
+      <category>mafita na AI na kasuwanci</category>
+      <category>AI mai tattaunawa</category>
+      <category>AI nazarin bayanai</category>
+      <category>AI don na&apos;urori na gefen hanyar sadarwa</category>
     </item>
     <item>
       <title>Unlocking Gemini 1.5: Google&apos;s AI Revolution Explained</title>
       <link>https://sebastienrousseau.com/ha/2024-02-19-unlocking-gemini-google-ai-revolution-explained/</link>
-      <description>Gemini 1.5 from Google scales context windows past 1M tokens. What that unlocks for retrieval-augmented finance and the trade-offs worth knowing.</description>
+      <description>Gemini 1.5 na Google yana faɗaɗa tagar mahallin sama da alamomi miliyan 1. Abin da wannan ke buɗewa don harkar kuɗi ta retrieval-augmented da wuraren musayar da ya kamata a san su.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2024-02-19-unlocking-gemini-google-ai-revolution-explained/</guid>
       <pubDate>Mon, 19 Feb 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp" type="image/webp" length="0"/>
       <category>Gemini 1.5</category>
       <category>Google AI</category>
-      <category>Mixture-of-Experts architecture</category>
-      <category>computational efficiency</category>
-      <category>context window expansion</category>
-      <category>AI innovation</category>
-      <category>data analysis transformation</category>
-      <category>in-context learning</category>
-      <category>AI use cases</category>
-      <category>technology revolution</category>
+      <category>ginin Mixture-of-Experts</category>
+      <category>ingancin lissafi</category>
+      <category>faɗaɗa tagar mahallin</category>
+      <category>ƙirƙirar AI</category>
+      <category>canjin nazarin bayanai</category>
+      <category>koyon cikin mahallin</category>
+      <category>amfanin AI</category>
+      <category>juyin fasaha</category>
     </item>
     <item>
       <title>EU&apos;s AI Act: Pioneering Ethical AI Regulation Worldwide</title>
       <link>https://sebastienrousseau.com/ha/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/</link>
-      <description>The EU AI Act sets the first comprehensive framework for ethical, risk-tiered AI regulation worldwide. What changes for banks, vendors and high-risk systems.</description>
+      <description>EU AI Act ta kafa tsarin farko mai cikakken tsari na kula da AI ta hanyar da ta dace da ɗa&apos;a da ƙayyadaddun haɗari a duniya. Abin da ya canza ga bankunan, masu siyarwa da tsarin haɗarin babba.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/</guid>
       <pubDate>Tue, 13 Feb 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" type="image/webp" length="0"/>
       <category>EU AI Act</category>
-      <category>Artificial Intelligence regulation</category>
-      <category>Ethical AI framework</category>
-      <category>AI risk management</category>
-      <category>AI innovation</category>
-      <category>AI transparency</category>
-      <category>AI consumer rights</category>
-      <category>AI governance</category>
-      <category>AI standards</category>
-      <category>AI ethics</category>
+      <category>regulation na Artificial Intelligence</category>
+      <category>tsarin AI na ɗa&apos;a</category>
+      <category>sarrafa haɗarin AI</category>
+      <category>sabuntawa na AI</category>
+      <category>gaskiya na AI</category>
+      <category>haƙƙoƙin masu amfani na AI</category>
+      <category>gudanarwa na AI</category>
+      <category>ƙa&apos;idodin AI</category>
+      <category>ɗa&apos;ar AI</category>
     </item>
     <item>
       <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
       <link>https://sebastienrousseau.com/ha/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/</link>
-      <description>Discover how Àkàndé leverages OpenAI GPT&apos;s natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance.</description>
+      <description>Àkàndé wani open-source na Python voice assistant ne wanda ke haɗa OpenAI Whisper speech recognition, GPT-4 chat completions, da kuma SQLite response cache na gida cikin workflow mai amfani da murya — yana samar da takardun PDF daga tarihin tattaunawa tare da adana duk bayanan a gida.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/</guid>
       <pubDate>Mon, 12 Feb 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" type="image/webp" length="0"/>
       <category>Àkàndé</category>
-      <category>Voice Assistant</category>
-      <category>Natural Language Understanding</category>
-      <category>PDF Summaries</category>
-      <category>Efficient Caching</category>
-      <category>OpenAI GPT</category>
-      <category>Executive Assistance</category>
-      <category>Personal Assistance</category>
-      <category>Digital Assistants</category>
-      <category>Technology Innovation</category>
+      <category>OpenAI GPT-4</category>
+      <category>Whisper STT</category>
+      <category>SQLite caching</category>
+      <category>fpdf2</category>
+      <category>Python voice assistant</category>
+      <category>chat completions API</category>
+      <category>PDF summary generation</category>
+      <category>SHA-256 cache</category>
+      <category>text-to-speech</category>
+      <category>executive assistant AI</category>
+      <category>open-source</category>
     </item>
     <item>
       <title>Generative AI in Advertising: Amazon Rufus &amp; Meta</title>
       <link>https://sebastienrousseau.com/ha/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/</link>
-      <description>Explore how AI transforms advertising with insights on Amazon&apos;s Rufus and Meta&apos;s latest developments. Discover the impact on consumer engagement</description>
+      <description>Bincika yadda AI ke canza duniyar talla ta hanyar fahimtar Amazon Rufus da sabbin ci gaban Meta. Gano tasirin kan hulɗar masu amfani da samfuran.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/</guid>
       <pubDate>Thu, 08 Feb 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/advertising-ai.webp" type="image/webp" length="0"/>
-      <category>AI in advertising</category>
+      <category>AI a cikin talla</category>
       <category>Amazon Rufus</category>
-      <category>Meta AI tools</category>
-      <category>consumer targeting</category>
-      <category>advertising technology</category>
+      <category>kayan aikin Meta AI</category>
+      <category>niyya ta masu amfani</category>
+      <category>fasahar talla</category>
       <category>AI chatbots</category>
-      <category>digital marketing trends</category>
-      <category>AI analytics</category>
-      <category>creative AI</category>
-      <category>ad campaign optimization</category>
+      <category>yanayin tallan dijital</category>
+      <category>nazarin AI</category>
+      <category>AI mai ƙirƙira</category>
+      <category>inganta yaƙin talla</category>
     </item>
     <item>
-      <title>AI-Powered Speech Analysis, Translation, &amp; Insight Tool</title>
+      <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
       <link>https://sebastienrousseau.com/ha/2024-01-29-ai-powered-audio-insights-analysis-translations/</link>
-      <description>Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conversion, text analysis, and translations for actionable insights.</description>
+      <description>Audio Analyser yana amfani da Azure Cognitive Services speech-to-text neural models, Text Analytics NLP, da CherryPy don canza rikodin sauti zuwa fassarorin da za a iya bincika, tare da kimantawar ji, cirewa kalmomin muhimmanci, da fassara zuwa yarurruka da yawa.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2024-01-29-ai-powered-audio-insights-analysis-translations/</guid>
       <pubDate>Mon, 29 Jan 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" type="image/webp" length="0"/>
-      <category>audio analyser</category>
-      <category>azure ai</category>
+      <category>Azure Cognitive Services</category>
       <category>speech-to-text</category>
-      <category>audio data analysis</category>
-      <category>text analysis</category>
-      <category>ai translations</category>
-      <category>audio insights</category>
-      <category>automated transcription</category>
-      <category>audio data processing</category>
-      <category>machine learning</category>
+      <category>neural acoustic model</category>
+      <category>Azure Text Analytics</category>
+      <category>sarrafa harshe na halitta</category>
+      <category>binciken ji</category>
+      <category>CherryPy</category>
+      <category>batch transcription API</category>
+      <category>multilingual ASR</category>
+      <category>Azure Translator</category>
+      <category>rubutun sauti</category>
+      <category>sarrafa sauti da Python</category>
     </item>
     <item>
       <title>AI Prompt Engineering 2024: Techniques That Work</title>
       <link>https://sebastienrousseau.com/ha/2024-01-23-advancements-in-ai-prompt-engineering/</link>
-      <description>Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors.</description>
+      <description>Injiniyan prompt yana sarrafa ɗabi&apos;ar LLM a lokacin inference. Labarin yana rufe zero-shot, few-shot, chain-of-thought, ReAct, self-consistency, haɗarin prompt injection, da ƙirar RAG daga ayyukan kuɗi.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2024-01-23-advancements-in-ai-prompt-engineering/</guid>
       <pubDate>Tue, 23 Jan 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" type="image/webp" length="0"/>
-      <category>AI Prompt Engineering</category>
-      <category>Custom Instructions</category>
-      <category>Multi-Persona AI</category>
-      <category>Chain of Thought</category>
-      <category>Quantum Computing</category>
-      <category>Ethical AI</category>
-      <category>Adaptive Prompting</category>
-      <category>Zero Shot Prompting</category>
-      <category>Few Shot Prompting</category>
-      <category>AI Technology Trends</category>
+      <category>chain-of-thought prompting</category>
+      <category>few-shot learning</category>
+      <category>zero-shot prompting</category>
+      <category>in-context learning</category>
+      <category>prompt injection</category>
+      <category>ReAct</category>
+      <category>self-consistency</category>
+      <category>retrieval-augmented generation</category>
+      <category>BloombergGPT</category>
+      <category>system prompt</category>
+      <category>prompt security</category>
+      <category>LLM agent</category>
     </item>
     <item>
       <title>Alien Studio: My Tech-to Art Journey in Photography</title>
       <link>https://sebastienrousseau.com/ha/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/</link>
-      <description>Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio.</description>
+      <description>Ku tare da ni a tafiyata ta sirri daga Rust, AI, da Quantum Computing zuwa sake fasalin fasaha da daukar hoto ta Alien Studio.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/</guid>
       <pubDate>Mon, 15 Jan 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" type="image/webp" length="0"/>
-      <category>personal tech journey</category>
-      <category>Rust discovery</category>
-      <category>AI exploration</category>
+      <category>tafiyar fasaha ta sirri</category>
+      <category>binciken Rust</category>
+      <category>binciken AI</category>
       <category>Quantum Computing</category>
-      <category>art and photography fusion</category>
+      <category>haɗin fasaha da daukar hoto</category>
       <category>Alien Studio</category>
-      <category>digital art creation</category>
-      <category>technology in art</category>
-      <category>innovative photography</category>
-      <category>artistic rediscovery</category>
+      <category>ƙirƙirar fasahar dijital</category>
+      <category>fasaha a cikin zane-zane</category>
+      <category>daukar hoto mai ƙirƙira</category>
+      <category>sake binciken fasaha</category>
     </item>
     <item>
       <title>AI Trends 2024: Insights and Predictions for the Future</title>
       <link>https://sebastienrousseau.com/ha/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/</link>
-      <description>AI trends for 2024: generative AI in finance, multimodal models, on-device LLMs and the shifts that will reshape banking and product engineering.</description>
+      <description>Abubuwan da suka fi muhimmanci na AI na 2024: generative AI a harkar kuɗi, ƙirar multimodal, LLMs na na&apos;ura, da sauye-sauyen da za su sake fasalin banki da injiniyancin kayayyaki.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/</guid>
       <pubDate>Mon, 08 Jan 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" type="image/webp" length="0"/>
       <category>AI trends 2024</category>
       <category>generative AI</category>
-      <category>AI in education</category>
+      <category>AI a ilimi</category>
       <category>AI cybersecurity</category>
-      <category>AI finance</category>
-      <category>AI content creation</category>
-      <category>AI space exploration</category>
+      <category>AI a harkar kuɗi</category>
+      <category>AI ƙirƙirar abun ciki</category>
+      <category>AI binciken sarari</category>
       <category>ethical AI</category>
-      <category>AI in retail</category>
+      <category>AI a ciniki</category>
       <category>AI analytics</category>
     </item>
     <item>
       <title>Qiskit &amp; Quantum Fourier Transform for Credit Ratio Analysis</title>
       <link>https://sebastienrousseau.com/ha/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/</link>
-      <description>Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed.</description>
+      <description>Bincika yadda IBM Qiskit da Quantum Fourier Transform ke canza binciken rabo na kuɗi a bangaren kudi, suna bayar da inganci da sauri mara misali.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/</guid>
       <pubDate>Mon, 08 Jan 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp" type="image/webp" length="0"/>
       <category>quantum computing</category>
-      <category>finance</category>
-      <category>credit ratio analysis</category>
+      <category>kudi</category>
+      <category>binciken rabo na kuɗi</category>
       <category>Qiskit</category>
       <category>Quantum Fourier Transform</category>
       <category>IBM</category>
-      <category>machine learning</category>
-      <category>artificial intelligence</category>
-      <category>financial risk assessment</category>
-      <category>creditworthiness</category>
+      <category>koyon injin</category>
+      <category>hankali na wucin gadi</category>
+      <category>tantance haɗarin kudi</category>
+      <category>cancanta na bashi</category>
     </item>
     <item>
       <title>Revolutionising Finance with AI-Enhanced Quantum Algorithms</title>
       <link>https://sebastienrousseau.com/ha/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/</link>
-      <description>Explore the transformative role of AI in quantum algorithms for finance, with a focus on their mathematical intricacies and banking applications.</description>
+      <description>Bincika rawar canjawa ta AI a cikin algorithms na quantum don kuɗi, tare da mai da hankali kan rikitarwar lissafinsu da aikace-aikacen banki.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/</guid>
       <pubDate>Mon, 25 Dec 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
       <category>Quantum Computing</category>
       <category>AI Algorithms</category>
-      <category>Financial Mathematics</category>
+      <category>Lissafin Kuɗi</category>
       <category>Banking Technology</category>
-      <category>Risk Management</category>
+      <category>Sarrafa Hadari</category>
       <category>Algorithm Design</category>
-      <category>Data Analysis</category>
-      <category>Investment Strategies</category>
+      <category>Nazarin Bayanai</category>
+      <category>Dabarun Zuba Jari</category>
       <category>Quantum Finance</category>
       <category>Machine Learning</category>
     </item>
     <item>
       <title>State of AI and Quantum Computing in Banking: A 2023 Review</title>
       <link>https://sebastienrousseau.com/ha/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/</link>
-      <description>Exploring 2023&apos;s Technological Landscape: AI &amp; Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations &amp; Governance</description>
+      <description>Binciken Fasahar Teknoloji na 2023: AI da Quantum Computing suna juya Banki, Haɓakar Samfuran Open-Source, da Dokokin Tsarin Mulki</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/</guid>
       <pubDate>Mon, 18 Dec 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
-      <category>AI in banking</category>
+      <category>AI a cikin banki</category>
       <category>Quantum Computing</category>
       <category>Financial Technology</category>
       <category>Open-source AI</category>
-      <category>Risk Management</category>
+      <category>Gudanar da Haɗari</category>
       <category>Quantum Security</category>
-      <category>AI Regulation</category>
-      <category>AI Ethics</category>
-      <category>AI Governance</category>
-      <category>Banking Innovation</category>
+      <category>Tsarin AI</category>
+      <category>Ɗabi&apos;ar AI</category>
+      <category>Mulkin AI</category>
+      <category>Ƙirƙirar Banki</category>
     </item>
     <item>
       <title>Quantum Key Distribution Revolutionising Security in Banking</title>
       <link>https://sebastienrousseau.com/ha/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/</link>
-      <description>As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security.</description>
+      <description>Yayin da kwamfutocin quantum ke barazana ga hanyoyin ɓoyewa na gargajiya, Quantum Key Distribution (QKD) ta fito a matsayin canjin wasa, tana ba da tsaro marar misali.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/</guid>
       <pubDate>Mon, 11 Dec 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" type="image/webp" length="0"/>
       <category>Quantum Key Distribution (QKD)</category>
-      <category>Quantum Security</category>
-      <category>Banking</category>
-      <category>Financial Industry</category>
-      <category>Digital Finance</category>
-      <category>Cybersecurity</category>
+      <category>Tsaron Quantum</category>
+      <category>Banki</category>
+      <category>Masana&apos;antar Kuɗi</category>
+      <category>Kuɗi na Dijital</category>
+      <category>Tsaron Yanar Gizo</category>
       <category>Quantum Computing</category>
       <category>HSBC</category>
       <category>Quantum Protection Trial</category>
-      <category>Financial Transactions</category>
+      <category>Ma&apos;amalolin Kuɗi</category>
     </item>
     <item>
       <title>Efficient Date and Time Management with DateTime (DTT)</title>
       <link>https://sebastienrousseau.com/ha/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/</link>
-      <description>DateTime (DTT) is a Rust library for parsing, validating, manipulating and formatting dates and times — high precision, broad functionality.</description>
+      <description>DateTime (DTT) ɗakin karatu ne na Rust don tattaro, tabbatarwa, sarrafa da tsara kwanaki da lokaci — daidaito mai girma, ayyuka masu faɗi.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/</guid>
       <pubDate>Mon, 04 Dec 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg" type="image/webp" length="0"/>
       <category>DateTime</category>
       <category>DTT</category>
-      <category>Rust library</category>
-      <category>parsing</category>
-      <category>validating</category>
-      <category>manipulating</category>
-      <category>formatting</category>
-      <category>dates</category>
-      <category>times</category>
+      <category>ɗakin karatu na Rust</category>
+      <category>tattarowa</category>
+      <category>tabbatarwa</category>
+      <category>sarrafa</category>
+      <category>tsarawa</category>
+      <category>kwanaki</category>
+      <category>lokaci</category>
     </item>
     <item>
       <title>KyberLib: Rust CRYSTALS-Kyber for Post-Quantum</title>
       <link>https://sebastienrousseau.com/ha/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/</link>
-      <description>A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algorithm, to Protect Your Data from Quantum Threats and Cryptanalytic Attacks.</description>
+      <description>Aiwatar da ɓoyayyar bayanai ta CRYSTALS-Kyber mai ƙarfi da juriya ga quantum, don kare bayananku daga barazanar ƙididdigewa da hare-haren cryptanalytic.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/</guid>
       <pubDate>Tue, 28 Nov 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" type="image/webp" length="0"/>
       <category>KyberLib</category>
       <category>Rust CRYSTALS-Kyber</category>
-      <category>post-quantum cryptography</category>
+      <category>cryptography bayan-quantum</category>
       <category>lattice-based cryptography</category>
-      <category>quantum-resistant key exchange</category>
+      <category>musayar mabuɗi mai juriya ga quantum</category>
       <category>NIST FIPS 203</category>
       <category>Sebastien Rousseau</category>
       <category>KEM</category>
-      <category>payment authentication</category>
+      <category>tabbatar da biyan kuɗi</category>
       <category>PQC library</category>
     </item>
     <item>
       <title>CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</title>
       <link>https://sebastienrousseau.com/ha/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/</link>
-      <description>Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.</description>
+      <description>Gano yadda CRYSTALS-Kyber, algorithm na cryptography mai tsayayya da quantum, ke canza duniyar cryptography tana shirya mu don zamanin quantum.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/</guid>
       <pubDate>Sun, 19 Nov 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" type="image/webp" length="0"/>
       <category>quantum computing</category>
-      <category>quantum-resistant cryptography</category>
+      <category>cryptography mai juriya da quantum</category>
       <category>CRYSTALS-Kyber</category>
       <category>cryptography</category>
-      <category>security</category>
-      <category>banking</category>
-      <category>financial</category>
+      <category>tsaro</category>
+      <category>banki</category>
+      <category>kuɗaɗe</category>
       <category>encryption</category>
-      <category>data protection</category>
-      <category>future-proof</category>
+      <category>kariyar bayanai</category>
+      <category>tabbataccen makoma</category>
     </item>
     <item>
       <title>Generative AI in 2023: How It Works, Where It Lands</title>
       <link>https://sebastienrousseau.com/ha/2023-11-12-exploring-generative-ai/</link>
-      <description>Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.</description>
+      <description>Yadda transformer models ke aiki, benchmark ɗin 2023, inda generative AI ke shiga ayyukan kudi, da tambayoyin gudanarwa da ake buƙata kafin tura su.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2023-11-12-exploring-generative-ai/</guid>
       <pubDate>Sun, 12 Nov 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
-      <category>Generative AI</category>
-      <category>technology</category>
-      <category>future</category>
-      <category>impact</category>
-      <category>ethics</category>
-      <category>synergies</category>
-      <category>innovation</category>
-      <category>creativity</category>
-      <category>transformation</category>
-      <category>evolution</category>
+      <category>generative AI</category>
+      <category>large language model</category>
+      <category>transformer architecture</category>
+      <category>GPT-4</category>
+      <category>AI na ayyukan kudi</category>
+      <category>hallucination</category>
+      <category>retrieval-augmented generation</category>
+      <category>AI governance</category>
+      <category>foundation model</category>
+      <category>fine-tuning</category>
     </item>
     <item>
       <title>Mathematical and Cryptographic Constants for Rust Security</title>
       <link>https://sebastienrousseau.com/ha/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/</link>
-      <description>Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code security.</description>
+      <description>Kare ingancin code da constants na lissafi da cryptography da aka tabbatar sosai, ƙarfafa amincin memory da concurrency don ƙara tsaro na code.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/</guid>
       <pubDate>Sun, 05 Nov 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp" type="image/webp" length="0"/>
-      <category>mathematical constants</category>
-      <category>cryptographic constants</category>
+      <category>constants na lissafi</category>
+      <category>constants na cryptography</category>
       <category>Rust security</category>
-      <category>secure communication</category>
+      <category>sadarwa mai aminci</category>
       <category>encryption</category>
       <category>RSA</category>
       <category>elliptic curve cryptography</category>
       <category>Common (CMN) library</category>
       <category>Rust applications</category>
-      <category>mathematical computations</category>
+      <category>lissafin lissafi</category>
     </item>
     <item>
-      <title>Streamlining Rust Library Development with Code Generation</title>
+      <title>LibMake: Rust Library Scaffold Generator</title>
       <link>https://sebastienrousseau.com/ha/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/</link>
-      <description>Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort.</description>
+      <description>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/</guid>
       <pubDate>Thu, 26 Oct 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
-      <category>Rust</category>
-      <category>library</category>
-      <category>development</category>
-      <category>code</category>
-      <category>generator</category>
-      <category>boilerplate</category>
-      <category>best</category>
-      <category>practices</category>
-      <category>quality</category>
-      <category>reliable</category>
+      <category>LibMake</category>
+      <category>Rust code generator</category>
+      <category>cargo scaffold</category>
+      <category>Rust library template</category>
+      <category>Tera templating</category>
+      <category>GitHub Actions Rust</category>
+      <category>cargo-audit</category>
+      <category>Rust API Guidelines</category>
+      <category>boilerplate generator</category>
+      <category>Rust CI workflow</category>
     </item>
     <item>
       <title>Protecting Data in the Quantum Age: The Hash Library (HSH)</title>
       <link>https://sebastienrousseau.com/ha/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/</link>
-      <description>HSH uses quantum-resistant cryptographic primitives to protect your data, ensuring its security even in the face of future quantum computing advances.</description>
+      <description>HSH yana amfani da kayan aikin cryptographic masu tsayayya da kwamfutar quantum don kare bayananka, yana tabbatar da tsaronsu har ma a gaban ci gaban quantum na gaba.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/</guid>
       <pubDate>Mon, 16 Oct 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp" type="image/webp" length="0"/>
-      <category>quantum-resistant cryptography</category>
+      <category>cryptography mai tsayayya da quantum</category>
       <category>post-quantum cryptography</category>
-      <category>hash library</category>
+      <category>ɗakin karatu na hash</category>
       <category>HSH</category>
-      <category>password hashing</category>
-      <category>key derivation</category>
+      <category>hashing kalmar sirri</category>
+      <category>kamus na key</category>
       <category>Argon2i</category>
       <category>Bcrypt</category>
       <category>Scrypt</category>
-      <category>quantum computing</category>
+      <category>kwamfutar quantum</category>
     </item>
     <item>
       <title>Static Site Generator: Fastest Rust-Based SSG</title>
       <link>https://sebastienrousseau.com/ha/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/</link>
-      <description>Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control.</description>
+      <description>Yana ba ku damar ƙirƙirar gidajen yanar gizo na tsaye masu tasiri tare da yiwuwar da ba ta iyaka, girma marar iyaka, da kasancewar yanar gizo ta musamman da kuke sarrafawa.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/</guid>
       <pubDate>Mon, 09 Oct 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" type="image/webp" length="0"/>
       <category>pain001</category>
       <category>iso 20022</category>
-      <category>payment automation</category>
-      <category>cost reduction</category>
-      <category>payment processing</category>
-      <category>payment files</category>
-      <category>payment initiation</category>
+      <category>automation na biyan kuɗi</category>
+      <category>rage kashe kuɗi</category>
+      <category>sarrafa biyan kuɗi</category>
+      <category>fayilolin biyan kuɗi</category>
+      <category>fara biyan kuɗi</category>
       <category>pain message</category>
       <category>pain message standards</category>
       <category>pain message validation</category>
     </item>
     <item>
-      <title>Automating ISO 20022 Payment Files Creation with Pain001</title>
+      <title>Automating ISO 20022 Payment Files Creation with pain001</title>
       <link>https://sebastienrousseau.com/ha/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/</link>
-      <description>Automate the creation of ISO 20022 pain.001 payment files from CSV or SQLite. pain001 is the open-source Python library that streamlines compliance.</description>
+      <description>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/</guid>
       <pubDate>Fri, 29 Sep 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" type="image/webp" length="0"/>
       <category>pain001</category>
-      <category>iso 20022</category>
+      <category>ISO 20022</category>
+      <category>pain.001.001.09</category>
+      <category>CustomerCreditTransferInitiation</category>
+      <category>SEPA Credit Transfer</category>
+      <category>CBPR+</category>
       <category>payment automation</category>
-      <category>cost reduction</category>
-      <category>payment processing</category>
-      <category>payment files</category>
-      <category>payment initiation</category>
-      <category>pain message</category>
-      <category>pain message standards</category>
-      <category>pain message validation</category>
+      <category>XML generation</category>
+      <category>XSD validation</category>
+      <category>GrpHdr</category>
+      <category>PmtInf</category>
+      <category>CdtTrfTxInf</category>
+      <category>CtrlSum</category>
+      <category>SWIFT</category>
     </item>
     <item>
       <title>The making of the Express Transaction Credits Platform</title>
       <link>https://sebastienrousseau.com/ha/2018-02-15-the-making-of-the-express-transaction-credits-platform/</link>
-      <description>Developing a comprehensive framework for the next generation of Ethereum Request for Comment compliant tokens using the ERC-223 standard.</description>
+      <description>Bincike mai zurfi na fasaha game da yadda aka gina dandalin EXTC a kan Ethereum ERC-223 a 2018: ginin token, multi-sig disbursements, time-locked transfers, da lamuni na instant masu goyan bayan collateral.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2018-02-15-the-making-of-the-express-transaction-credits-platform/</guid>
       <pubDate>Thu, 15 Feb 2018 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
-      <category>mathematical constants</category>
-      <category>cryptographic constants</category>
-      <category>rust</category>
-      <category>cmn library</category>
-      <category>secure</category>
-      <category>reliable</category>
-      <category>accurate</category>
-      <category>portability</category>
-      <category>performance</category>
-      <category>documentation</category>
+      <category>EXTC platform</category>
+      <category>ERC-223</category>
+      <category>Ethereum smart contracts</category>
+      <category>ginin token</category>
+      <category>multi-signature</category>
+      <category>time-locked transfer</category>
+      <category>blockchain payments</category>
+      <category>collateral-backed loans</category>
+      <category>kuɗin da ba na tsakiya ba</category>
+      <category>2018 crypto</category>
     </item>
     <item>
       <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
       <link>https://sebastienrousseau.com/ha/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/</link>
-      <description>A significant chapter in the evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and sustainable finance.</description>
+      <description>A farkon 2018, dandalin EXTC ya bincika hanyoyin biya mafi sauri ta iyakoki ta hanyar Ethereum ERC-223 smart contracts — tsarin farko na abin da kuɗin da ba na tsakiya zai gina daga baya.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/</guid>
       <pubDate>Sun, 04 Feb 2018 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" type="image/webp" length="0"/>
-      <category>pain001</category>
-      <category>iso 20022</category>
-      <category>payment automation</category>
-      <category>cost reduction</category>
-      <category>payment processing</category>
-      <category>payment files</category>
-      <category>payment initiation</category>
-      <category>pain message</category>
-      <category>pain message standards</category>
-      <category>pain message validation</category>
+      <category>EXTC</category>
+      <category>ERC-223</category>
+      <category>Ethereum smart contracts</category>
+      <category>biyan kuɗi mafi sauri</category>
+      <category>cryptocurrency</category>
+      <category>blockchain payments</category>
+      <category>payment token</category>
+      <category>decentralised finance</category>
+      <category>ERC-20</category>
+      <category>cross-border payments</category>
     </item>
     <item>
       <title>ERC-20: The Ethereum Token Interface That Changed the World</title>
       <link>https://sebastienrousseau.com/ha/2018-01-24-the-erc-20-token-standard/</link>
-      <description>ERC-20: The Ethereum Token ERC-20 is the most common type of token used on the Ethereum blockchain and is often referred to as a smart contract digital contract</description>
+      <description>ERC-20 shine mafi yawan nau&apos;in token da ake amfani da shi a blockchain na Ethereum, wanda kuma ana kiransa kwangilar dijital ta smart contract.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2018-01-24-the-erc-20-token-standard/</guid>
       <pubDate>Wed, 24 Jan 2018 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
@@ -1013,46 +1023,48 @@
       <category>erc20</category>
       <category>eip</category>
       <category>tokens</category>
-      <category>contracts</category>
+      <category>kwantoci</category>
       <category>blockchain</category>
-      <category>cryptocurrencies</category>
+      <category>kuɗaɗen dijital</category>
       <category>smart-token</category>
       <category>solidity</category>
     </item>
     <item>
       <title>Understanding the Technology behind Blockchain</title>
       <link>https://sebastienrousseau.com/ha/2018-01-09-understanding-the-technology-behind-blockchain/</link>
-      <description>Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation</description>
+      <description>Gabatarwa ta fasaha game da yadda blockchain ke aiki: cryptographic hash chains, Merkle trees, distributed consensus, da dalilin da yasa layer na programmable na Ethereum ya canza payments ledger zuwa platform don smart contracts da tokenised assets.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2018-01-09-understanding-the-technology-behind-blockchain/</guid>
       <pubDate>Tue, 09 Jan 2018 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" type="image/webp" length="0"/>
-      <category>pain001</category>
-      <category>iso 20022</category>
-      <category>payment automation</category>
-      <category>cost reduction</category>
-      <category>payment processing</category>
-      <category>payment files</category>
-      <category>payment initiation</category>
-      <category>pain message</category>
-      <category>pain message standards</category>
-      <category>pain message validation</category>
+      <category>blockchain technology</category>
+      <category>cryptographic hash</category>
+      <category>Merkle tree</category>
+      <category>distributed consensus</category>
+      <category>proof of work</category>
+      <category>Ethereum</category>
+      <category>smart contracts</category>
+      <category>EVM</category>
+      <category>Solidity</category>
+      <category>ERC-20</category>
+      <category>distributed ledger</category>
+      <category>decentralised finance</category>
     </item>
     <item>
       <title>Blockchain explained, the technology that matters the most</title>
       <link>https://sebastienrousseau.com/ha/2018-01-02-blockchain-the-technology-that-matters-in-2018/</link>
-      <description>A story of the extraordinary journey of securing digital transactions through Private-key Cryptography and Peer-to-peer (P2P) networks.</description>
+      <description>Labarin tafiya mai ban al&apos;ajabi na kare ma&apos;amalar dijital ta hanyar Private-key Cryptography da hanyoyin sadarwar Peer-to-peer (P2P).</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2018-01-02-blockchain-the-technology-that-matters-in-2018/</guid>
       <pubDate>Tue, 02 Jan 2018 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp" type="image/webp" length="0"/>
       <category>pain001</category>
       <category>iso 20022</category>
-      <category>payment automation</category>
-      <category>cost reduction</category>
-      <category>payment processing</category>
-      <category>payment files</category>
-      <category>payment initiation</category>
+      <category>atomatik biyan kuɗi</category>
+      <category>rage farashi</category>
+      <category>sarrafa biyan kuɗi</category>
+      <category>fayilolin biyan kuɗi</category>
+      <category>fara biyan kuɗi</category>
       <category>pain message</category>
       <category>pain message standards</category>
       <category>pain message validation</category>
@@ -1060,7 +1072,7 @@
     <item>
       <title>Bitcoin: A Year In Review of the First Cryptocurrency</title>
       <link>https://sebastienrousseau.com/ha/2018-01-01-bitcoin-the-year-in-review/</link>
-      <description>Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online.</description>
+      <description>Bitcoin: Tsarin Kuɗin Lantarki na Peer-to-Peer (P2P ECS) wanda ke da yuwuwar sauya yadda mutane ke yin ciniki ta yanar gizo.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2018-01-01-bitcoin-the-year-in-review/</guid>
       <pubDate>Mon, 01 Jan 2018 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
@@ -1068,13 +1080,13 @@
       <category>bitcoin</category>
       <category>cryptocurrency</category>
       <category>blockchain</category>
-      <category>decentralized finance</category>
-      <category>digital currency</category>
-      <category>peer-to-peer payments</category>
-      <category>digital gold</category>
-      <category>programmable money</category>
-      <category>future of money</category>
-      <category>financial revolution</category>
+      <category>kuɗin da ba a tsakiyance ba</category>
+      <category>kuɗin dijital</category>
+      <category>biyan kuɗi na peer-to-peer</category>
+      <category>zinarin dijital</category>
+      <category>kuɗin da ake iya shirye-shirye</category>
+      <category>makomar kuɗi</category>
+      <category>juyin kuɗi</category>
     </item>
   </channel>
 </rss>

@@ -158,7 +158,7 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/bn/2024-01-23-advancements-in-ai-prompt-engineering/index.html</loc>
+  <loc>https://sebastienrousseau.com/tr/2024-01-23-advancements-in-ai-prompt-engineering/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -166,7 +166,7 @@
     </news:publication>
     <news:publication_date>2024-01-23T05:06:06+00:00</news:publication_date>
     <news:title>AI Prompt Engineering 2024: Techniques That Work</news:title>
-    <news:keywords>AI Prompt Engineering, Custom Instructions, Multi-Persona AI, Chain of Thought, Quantum Computing, Ethical AI, Adaptive Prompting, Zero Shot Prompting, Few Shot Prompting, AI Technology Trends</news:keywords>
+    <news:keywords>chain-of-thought prompting, few-shot learning, zero-shot prompting, in-context learning, prompt injection, ReAct, self-consistency, retrieval-augmented generation, BloombergGPT, system prompt</news:keywords>
   </news:news>
 </url>
 <url>
@@ -182,7 +182,7 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/bn/2023-11-12-exploring-generative-ai/index.html</loc>
+  <loc>https://sebastienrousseau.com/tr/2023-11-12-exploring-generative-ai/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -190,7 +190,7 @@
     </news:publication>
     <news:publication_date>2023-11-12T20:30:00+00:00</news:publication_date>
     <news:title>Generative AI in 2023: How It Works, Where It Lands</news:title>
-    <news:keywords>Generative AI, technology, future, impact, ethics, synergies, innovation, creativity, transformation, evolution</news:keywords>
+    <news:keywords>generative AI, large language model, transformer architecture, GPT-4, financial services AI, hallucination, retrieval-augmented generation, AI governance, foundation model, fine-tuning</news:keywords>
   </news:news>
 </url>
 <url>
@@ -290,7 +290,7 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/bn/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html</loc>
+  <loc>https://sebastienrousseau.com/tr/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -298,7 +298,7 @@
     </news:publication>
     <news:publication_date>2024-02-12T11:12:12+00:00</news:publication_date>
     <news:title>Àkàndé: GPT-Powered Voice Assistant for Executives</news:title>
-    <news:keywords>Àkàndé, Voice Assistant, Natural Language Understanding, PDF Summaries, Efficient Caching, OpenAI GPT, Executive Assistance, Personal Assistance, Digital Assistants, Technology Innovation</news:keywords>
+    <news:keywords>Àkàndé, OpenAI GPT-4, Whisper STT, SQLite caching, fpdf2, Python voice assistant, chat completions API, PDF summary generation, SHA-256 cache, text-to-speech</news:keywords>
   </news:news>
 </url>
 <url>
@@ -326,7 +326,7 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <loc>https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -470,7 +470,7 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/bn/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html</loc>
+  <loc>https://sebastienrousseau.com/tr/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -478,7 +478,7 @@
     </news:publication>
     <news:publication_date>2018-02-15T18:18:18+00:00</news:publication_date>
     <news:title>The making of the Express Transaction Credits Platform</news:title>
-    <news:keywords>mathematical constants, cryptographic constants, rust, cmn library, secure, reliable, accurate, portability, performance, documentation</news:keywords>
+    <news:keywords>EXTC platform, ERC-223, Ethereum smart contracts, token architecture, multi-signature, time-locked transfer, blockchain payments, collateral-backed loans, decentralised finance, 2018 crypto</news:keywords>
   </news:news>
 </url>
 <url>
@@ -530,18 +530,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/bn/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>en-GB</news:language>
-    </news:publication>
-    <news:publication_date>2023-10-26T11:21:00+00:00</news:publication_date>
-    <news:title>Streamlining Rust Library Development with Code Generation</news:title>
-    <news:keywords>Rust, library, development, code, generator, boilerplate, best, practices, quality, reliable</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/bn/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html</loc>
   <news:news>
     <news:publication>
@@ -578,19 +566,19 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/bn/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html</loc>
+  <loc>https://sebastienrousseau.com/tr/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>en-GB</news:language>
     </news:publication>
     <news:publication_date>2023-09-29T08:57:00+00:00</news:publication_date>
-    <news:title>Automating ISO 20022 Payment Files Creation with Pain001</news:title>
-    <news:keywords>pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation</news:keywords>
+    <news:title>Automating ISO 20022 Payment Files Creation with pain001</news:title>
+    <news:keywords>pain001, ISO 20022, pain.001.001.09, CustomerCreditTransferInitiation, SEPA Credit Transfer, CBPR+, payment automation, XML generation, XSD validation, GrpHdr</news:keywords>
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/bn/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html</loc>
+  <loc>https://sebastienrousseau.com/tr/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -598,19 +586,19 @@
     </news:publication>
     <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
     <news:title>Unveiling a new Cryptocurrency and Faster Payment Solution</news:title>
-    <news:keywords>pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation</news:keywords>
+    <news:keywords>EXTC, ERC-223, Ethereum smart contracts, faster payments, cryptocurrency, blockchain payments, payment token, decentralised finance, ERC-20, cross-border payments</news:keywords>
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/bn/2018-01-09-understanding-the-technology-behind-blockchain/index.html</loc>
+  <loc>https://sebastienrousseau.com/tr/2018-01-09-understanding-the-technology-behind-blockchain/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>en-GB</news:language>
     </news:publication>
-    <news:publication_date>2023-01-09T09:09:00+00:00</news:publication_date>
+    <news:publication_date>2018-01-09T09:09:00+00:00</news:publication_date>
     <news:title>Understanding the Technology behind Blockchain</news:title>
-    <news:keywords>pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation</news:keywords>
+    <news:keywords>blockchain technology, cryptographic hash, Merkle tree, distributed consensus, proof of work, Ethereum, smart contracts, EVM, Solidity, ERC-20</news:keywords>
   </news:news>
 </url>
 <url>
@@ -722,7 +710,7 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/tr/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <loc>https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -746,15 +734,15 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/bn/2024-01-29-ai-powered-audio-insights-analysis-translations/index.html</loc>
+  <loc>https://sebastienrousseau.com/tr/2024-01-29-ai-powered-audio-insights-analysis-translations/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>en-GB</news:language>
     </news:publication>
     <news:publication_date>2024-01-29T05:06:06+00:00</news:publication_date>
-    <news:title>AI-Powered Speech Analysis, Translation, &amp; Insight Tool</news:title>
-    <news:keywords>audio analyser, azure ai, speech-to-text, audio data analysis, text analysis, ai translations, audio insights, automated transcription, audio data processing, machine learning</news:keywords>
+    <news:title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</news:title>
+    <news:keywords>Azure Cognitive Services, speech-to-text, neural acoustic model, Azure Text Analytics, natural language processing, sentiment analysis, CherryPy, batch transcription API, multilingual ASR, Azure Translator</news:keywords>
   </news:news>
 </url>
 <url>
@@ -962,6 +950,32 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/tr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T06:06:06+00:00</news:publication_date>
+    <news:title>ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026</news:title>
+    <news:keywords>ISO 20022 2026, yapılandırılmış adres, CBPR+, ödeme veri ürünleri, ödeme amaç kodları, kurumsal hazine, mutabakat, yaptırım taraması, dolandırıcılık tespiti</news:keywords>
+  </news:news>
+</url>
+
+
+<url>
+  <loc>https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-27T06:06:06+00:00</news:publication_date>
+    <news:title>AI as the Operating System of Payments: Fraud, Routing, Resilience, and…</news:title>
+    <news:keywords>yapay zeka ödemeleri 2026, ödeme dolandırıcılığı, ödeme yönlendirme, gerçek zamanlı dolandırıcılık önleme, ISO 20022 AI, ödeme dayanıklılığı, işlem analizi, nakit akışı tahmini</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/tr/2026-05-18-kuantum-kriptografi-standartlari-gelismeler-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -1069,6 +1083,7 @@
     <news:keywords>ajan tabanlı yapay zeka, ajanlar, bankacılık, 2026, mimari, yönetişim, LLM</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/tr/2024-02-19-gemini-google-yapay-zeka-devrimi-aciklandi/index.html</loc>
   <news:news>
@@ -1093,7 +1108,18 @@
     <news:keywords>UK Payments Forward Plan 2026, İngiltere stablecoinler, İngiltere tokenleştirilmiş mevduatlar, açık bankacılık FCA, PSR FCA konsolidasyonu, İngiltere yapay zeka ajanı ödemeleri, Wholesale Digital Markets Champion, Chris Woolard, ödeme hizmetleri düzenlemesi</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>2026'da Bulut Yerel Bankacılık: Kubernetes, DORA, Egemenlik ve VM ile…</news:title>
+    <news:keywords>cloud native bankacılık 2026, Kubernetes bankalar, finansal kurumlar bulut, DORA 2026, bulut dayanıklılığı, Red Hat OpenShift, Portworx, VM container coexistence, banka bulut egemenliği, finansal hizmetler bulut bağımlılığı</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/tr/2024-03-04-mistral-ai-le-chat-konusma-tabanli-yapay-zekada-yeni-cag/index.html</loc>
   <news:news>
@@ -1166,6 +1192,7 @@
     <news:keywords>kripto para, ödemeler, blockchain, hızlı ödemeler, fintech, ölçeklenebilirlik</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/tr/2024-01-29-yapay-zeka-destekli-ses-analizi-ceviri-ve-icgoruler/index.html</loc>
   <news:news>
@@ -1188,6 +1215,18 @@
     <news:publication_date></news:publication_date>
     <news:title>libmake: tekrarlayan görevleri azaltıp kaliteli Rust kütüphaneleri inşa eden…</news:title>
     <news:keywords>Rust, libmake, kod üretici, açık kaynak, otomasyon, kütüphaneler</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
+    <news:title>Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New…</news:title>
+    <news:keywords>UK toptan dijital piyasalar 2026, Chris Woolard, tokenize gilts, tokenize toptan finans, dijital piyasalar şampiyonu, tokenizasyon UK, takas</news:keywords>
   </news:news>
 </url>
 <url>
@@ -1215,6 +1254,19 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/tr/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-25T06:06:06+00:00</news:publication_date>
+    <news:title>Programmable Liquidity in 2026: AI, Tokenised Deposits, and Real-Time Treasury…</news:title>
+    <news:keywords>programlanabilir likidite 2026, hazine orkestrasyonu, AI hazine, tokenize mevduatlar, gerçek zamanlı likidite, stablecoin hazine, çok raylı ödemeler, sanal hesaplar, işlem bankacılığı, teminat hareketliliği</news:keywords>
+  </news:news>
+</url>
+
+<url>
   <loc>https://sebastienrousseau.com/tr/2018-01-24-erc-20-token-standardi/index.html</loc>
   <news:news>
     <news:publication>
@@ -1224,6 +1276,32 @@
     <news:publication_date></news:publication_date>
     <news:title>ERC-20 token standardı</news:title>
     <news:keywords>ERC-20, Ethereum, token, akıllı sözleşmeler, ICO, DeFi, Solidity</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>Stablecoins vs Tokenised Deposits in 2026: What Banks Actually Need to Defend</news:title>
+    <news:keywords>stablecoin&apos;ler 2026, tokenize mevduatlar, banka mevduatları, GENIUS Act, JPM Coin, mevduat token&apos;ları, stablecoin rezervleri, banka finansmanı, dijital para</news:keywords>
+  </news:news>
+</url>
+
+
+<url>
+  <loc>https://sebastienrousseau.com/tr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T06:06:06+00:00</news:publication_date>
+    <news:title>DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</news:title>
+    <news:keywords>DORA 2026, EU AI Act 2026, bankalar veri egemenliği, operasyonel dayanıklılık, bulut yoğunlaşma riski, finansal hizmetler yapay zeka uyumu, yüksek riskli yapay zeka</news:keywords>
   </news:news>
 </url>
 <url>
@@ -1260,6 +1338,18 @@
     <news:publication_date>2026-05-22T06:06:06+00:00</news:publication_date>
     <news:title>İngiltere Acid Jazz 2026: Yenilenme, Sanatçılar, Konserler</news:title>
     <news:keywords>İngiltere acid jazz 2026, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott’s, Bangs and Talbot, Chris Bangs, Mick Talbot, Smokin Aces</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T06:06:06+00:00</news:publication_date>
+    <news:title>Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than…</news:title>
+    <news:keywords>kuantum sonrası ödemeler 2026, PQC bankacılık, ML-KEM, ML-DSA, ödeme altyapısı, kripto-çeviklik, HNDL, harvest now decrypt later, ISO 20022</news:keywords>
   </news:news>
 </url>
 <url>
@@ -1334,7 +1424,18 @@
     <news:keywords>Bitcoin, kripto para, blockchain, P2P, çifte harcama, madencilik, proof-of-work, ETF, Satoshi Nakamoto, merkeziyetsiz finans</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/tr/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>2026'da Tokenize Mevduatlar: Bankacılık Hizmetleri, Stablecoin Rekabeti ve…</news:title>
+    <news:keywords>tokenize mevduatlar 2026, tokenized mevduat bankacılığı, mevduat token&apos;ları, Great British Tokenised Deposits, Lloyds dijital varlıklar, stablecoins, ticari banka parası, BIS stablecoins, Project Agora, birleşik defter</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/tr/2023-11-28-kyberlib-kuantum-tehditlerine-karsi-rust-kalkani/index.html</loc>
   <news:news>
@@ -1347,6 +1448,7 @@
     <news:keywords>KyberLib, CRYSTALS-Kyber, post-kuantum, Rust, kriptografi, KEM, FIPS 203, açık kaynak</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/tr/2024-04-01-openvoice-ses-klonlama-teknolojisinde-onculuk/index.html</loc>
   <news:news>
@@ -1491,6 +1593,7 @@
     <news:keywords>IA en la banca, computación cuántica, tecnología financiera, IA de código abierto, gestión del riesgo, seguridad cuántica, regulación de la IA, ética de la IA, gobernanza de la IA, innovación bancaria</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/th/2026-05-15-phon-tobthaen-son-blackrock-brsrv-bstbl-genius-act/index.html</loc>
   <news:news>
@@ -1503,6 +1606,7 @@
     <news:keywords>stablecoins, GENIUS Act, BlackRock, BRSRV, BSTBL, fondo monetario tokenizado, OCC, OnChain Shares, Securitize, BNY Mellon</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/th/2026-05-12-iso-20022-pacs008-thi-yu-baep-mi-khrongsang-ked-wela/index.html</loc>
   <news:news>
@@ -1527,6 +1631,8 @@
     <news:keywords>Gemini 1.5, Google AI, arquitectura Mixture-of-Experts, eficiencia computacional, expansión de la ventana de contexto, innovación IA, transformación del análisis de datos, in-context learning, casos de uso IA, revolución tecnológica</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/th/2023-12-11-kan-krachai-khun-kunchae-quantum-pra-thanakhan/index.html</loc>
   <news:news>
@@ -1563,6 +1669,7 @@
     <news:keywords>blockchain, Ethereum, smart contract, criptomoneda, Solidity, Geth, dApps, ERC-20, tokenización, testnet</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/th/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
   <news:news>
@@ -1587,7 +1694,18 @@
     <news:keywords>Rust, biblioteca, desarrollo, código, generador, boilerplate, buenas prácticas, calidad, fiable</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/th/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>คลาวด์เนทีฟแบงก์กิ้งในปี 2026: Kubernetes, DORA, อธิปไตย…</news:title>
+    <news:keywords>cloud native banking 2026, Kubernetes banks, สถาบันการเงินคลาวด์, DORA 2026, cloud resilience, Red Hat OpenShift, Portworx, VM container coexistence, อธิปไตยคลาวด์ธนาคาร, การพึ่งพาคลาวด์บริการการเงิน</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/th/2018-01-24-mattrathan-tokenrec-20/index.html</loc>
   <news:news>
@@ -1708,6 +1826,7 @@
     <news:keywords>Ethereum, ERC-223, ERC-20, EXTC, Express Transaction Credits, blockchain, pagos, tokens, préstamos, finanzas descentralizadas</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/th/2024-01-29-kan-wikhro-siang-praeplian-lae-khwam-khaochai-ai/index.html</loc>
   <news:news>
@@ -1768,6 +1887,8 @@
     <news:keywords>pagos resistentes a lo cuántico, criptografía postcuántica, SEPA, SWIFT gpi, ISO 20022, seguridad de los servicios financieros, EPAA, harvest-now decrypt-later, agilidad criptográfica, Sebastien Rousseau</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/th/2024-04-01-openvoice-nawattakam-namna-kan-khlon-siang/index.html</loc>
   <news:news>
@@ -1780,6 +1901,7 @@
     <news:keywords>OpenVoice, clonación de voz, síntesis vocal IA, clonación de voz de código abierto, síntesis vocal multilingüe, clonación de voz instantánea, control de estilo vocal, accesibilidad vocal, voz en el entretenimiento, voz IA para servicio al cliente</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/th/2023-10-16-pongkan-khomun-yuk-quantum-laibrari-hash-hsh/index.html</loc>
   <news:news>
@@ -1804,6 +1926,10 @@
     <news:keywords>KyberLib, Rust CRYSTALS-Kyber, criptografía postcuántica, criptografía sobre retículos, intercambio de claves resistente a lo cuántico, NIST FIPS 203, Sebastien Rousseau, KEM, autenticación de pagos, biblioteca PQC</news:keywords>
   </news:news>
 </url>
+
+
+
+
 <url>
   <loc>https://sebastienrousseau.com/th/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html</loc>
   <news:news>
@@ -1816,6 +1942,7 @@
     <news:keywords>UK acid jazz 2026, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott&apos;s, Bangs and Talbot, Chris Bangs, Mick Talbot, Smokin Aces</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/th/2018-02-04-pertua-kripto-mai-lae-nguen-chamra-reo-khuen/index.html</loc>
   <news:news>
@@ -1924,7 +2051,18 @@
     <news:keywords>ISO 20022, pain.001, Pain001, Python, pagos, automatización, CBPR+, HVPS+, SEPA, cumplimiento</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/th/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>เงินฝากโทเคนในปี 2026: บริการธนาคาร การแข่งขันกับสเตเบลคอยน์…</news:title>
+    <news:keywords>เงินฝากโทเคไนซ์ 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, เงินธนาคารพาณิชย์, BIS stablecoins, Project Agora, unified ledger</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/th/2023-11-19-crystals-kyber-aljorhithem-pongkan-yuk-quantum/index.html</loc>
   <news:news>
@@ -1961,6 +2099,7 @@
     <news:keywords>Static Site Generator, generador de sitios estáticos, SSG, Rust, rendimiento, SEO, accesibilidad, WCAG, ADA, PWA</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/th/2026-05-16-sthapattayakam-cloud-thi-di-thi-sut-samrap-thanakhan-2026/index.html</loc>
   <news:news>
@@ -2003,6 +2142,7 @@
 
 
 
+
 <url>
   <loc>https://sebastienrousseau.com/es/2026-05-19-global-mayorista-pagos-economia-2026/index.html</loc>
   <news:news>
@@ -2034,6 +2174,22 @@
 
 
 
+<url>
+  <loc>https://sebastienrousseau.com/es/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>es</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>Banca cloud-nativa en 2026: Kubernetes, DORA, soberanía y el fin de la…</news:title>
+    <news:keywords>banca cloud native 2026, Kubernetes bancos, instituciones financieras cloud, DORA 2026, resiliencia cloud, Red Hat OpenShift, Portworx, coexistencia VM contenedores, soberanía cloud bancaria, dependencia cloud servicios financieros</news:keywords>
+  </news:news>
+</url>
+
+
+
+
 
 
 
@@ -2061,6 +2217,24 @@
     <news:publication_date>2026-05-23T06:06:06+00:00</news:publication_date>
     <news:title>Pagos agénticos en banca: consentimiento, responsabilidad y nueva UX en 2026</news:title>
     <news:keywords>pagos agénticos 2026, pagos con agentes de IA, Mastercard Agent Pay, Rabobank pago IA, AP2, A2A, x402, MCP, protocolo de pagos máquina, consentimiento de pago</news:keywords>
+  </news:news>
+</url>
+
+
+
+
+
+
+<url>
+  <loc>https://sebastienrousseau.com/es/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>es</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
+    <news:title>Presentación de una nueva criptomoneda y solución de pagos más rápidos</news:title>
+    <news:keywords>EXTC, ERC-223, contratos inteligentes Ethereum, pagos rápidos, criptomoneda, pagos en cadena de bloques, token de pago, finanzas descentralizadas, ERC-20, pagos transfronterizos</news:keywords>
   </news:news>
 </url>
 
@@ -2110,6 +2284,19 @@
 
 
 
+
+<url>
+  <loc>https://sebastienrousseau.com/es/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>es</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>Depósitos tokenizados en 2026: servicios bancarios, competencia con…</news:title>
+    <news:keywords>depósitos tokenizados 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, dinero bancario comercial, BIS stablecoins, Project Agora, unified ledger</news:keywords>
+  </news:news>
+</url>
 
 
 
@@ -2162,6 +2349,7 @@
     <news:keywords>cryptographie post-quantique, NIST, standardisation PQC, Yilei Chen, algorithme quantique, cryptographie sur réseaux, problème LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, cryptographie quantique-résistante</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/fr/2026-05-12-iso-20022-pacs008-adresse-structuree-echeance/index.html</loc>
   <news:news>
@@ -2198,6 +2386,7 @@
     <news:keywords>paiements quantique-résistants, cryptographie post-quantique, SEPA, SWIFT gpi, ISO 20022, sécurité des services financiers, EPAA, harvest-now decrypt-later, agilité cryptographique, Sebastien Rousseau</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/fr/2023-11-12-explorer-l-ia-generative/index.html</loc>
   <news:news>
@@ -2210,6 +2399,7 @@
     <news:keywords>IA générative, technologie, futur, impact, éthique, synergies, innovation, créativité, transformation, évolution</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/fr/2026-05-23-agentique-paiements-banking-consent-liability-new-payment-ux-2026/index.html</loc>
   <news:news>
@@ -2246,6 +2436,7 @@
     <news:keywords>EXTC Network, cryptomonnaie, paiements plus rapides, Ethereum, EIP20, smart contracts, blockchain, paiements transfrontaliers, inclusion financière</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/fr/2023-11-05-constantes-mathematiques-et-cryptographiques-pour-rust/index.html</loc>
   <news:news>
@@ -2294,6 +2485,7 @@
     <news:keywords>Google Gemma, modèle d&apos;IA open source, architecture technique Gemma, Gemma 2B 7B, IA éthique, intégration IA macOS, solutions IA pour entreprise, IA conversationnelle, analyse de données IA, IA pour appareils edge</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/fr/2023-10-09-shokunin-generateur-de-sites-statiques-rust-le-plus-rapide/index.html</loc>
   <news:news>
@@ -2330,7 +2522,18 @@
     <news:keywords>chiffrement entièrement homomorphe, sécurité bancaire, calcul quantique, chiffrement de données financières, FHE, RGPD, CCPA, conformité, calcul cloud, IA et confidentialité</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/fr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fr</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>Banque cloud natif en 2026 : Kubernetes, DORA, souveraineté et fin de la…</news:title>
+    <news:keywords>cloud native bancaire 2026, Kubernetes banques, cloud institutions financières, DORA 2026, résilience cloud, Red Hat OpenShift, Portworx, coexistence VM conteneurs, souveraineté cloud bancaire, dépendance cloud services financiers</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/fr/2023-11-19-algorithme-de-protection-a-l-ere-quantique-crystals-kyber/index.html</loc>
   <news:news>
@@ -2463,6 +2666,7 @@
     <news:keywords>algorithme de Shor, qubits, calcul quantique, ECC, RSA-2048, atomes neutres reconfigurables, codes de correction d&apos;erreurs, CRYSTALS-Kyber, CRYSTALS-Dilithium, PQC</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/fr/2024-02-08-revolutionner-la-publicite-comment-l-ia-faconne-l-avenir/index.html</loc>
   <news:news>
@@ -2511,6 +2715,8 @@
     <news:keywords>cryptographie post-quantique, ML-KEM, ML-DSA, FIPS 203, FIPS 204, BIS Project Leap, G7 CEG, NCSC, ANSSI, BSI</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/fr/2023-09-29-automatiser-fichiers-de-paiement-iso-20022-avec-pain001/index.html</loc>
   <news:news>
@@ -2572,6 +2778,20 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/fr/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fr</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
+    <news:title>Présentation d'une nouvelle cryptomonnaie et d'une solution de paiement rapide</news:title>
+    <news:keywords>EXTC, ERC-223, contrats intelligents Ethereum, paiements rapides, cryptomonnaie, paiements blockchain, jeton de paiement, finance décentralisée, ERC-20, paiements transfrontaliers</news:keywords>
+  </news:news>
+</url>
+
+
+<url>
   <loc>https://sebastienrousseau.com/fr/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -2583,6 +2803,7 @@
     <news:keywords>acid jazz UK 2026, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott&apos;s, Bangs and Talbot, Chris Bangs, Mick Talbot, Smokin Aces</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/fr/2026-05-11-lucy-besson-transfert-de-connaissances-ia-et-quantique/index.html</loc>
   <news:news>
@@ -2655,7 +2876,18 @@
     <news:keywords>tendances IA 2024, IA générative, IA en éducation, cybersécurité IA, IA en finance, création de contenu IA, IA pour l&apos;espace, IA éthique, IA dans la distribution, analytique IA</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/fr/2026-05-21-tokenise-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fr</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>Les dépôts tokenisés en 2026 : services bancaires, concurrence des stablecoins…</news:title>
+    <news:keywords>dépôts tokenisés 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, monnaie bancaire commerciale, BIS stablecoins, Project Agora, unified ledger</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/fr/2023-12-04-maitriser-date-et-heure-en-rust-avec-la-bibliotheque-dtt/index.html</loc>
   <news:news>
@@ -2692,6 +2924,7 @@
     <news:keywords>stablecoins, GENIUS Act, BlackRock, BRSRV, BSTBL, fonds monétaire tokenisé, OCC, OnChain Shares, Securitize, BNY Mellon</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/fr/2024-02-19-decouvrir-gemini-la-revolution-ia-de-google-expliquee/index.html</loc>
   <news:news>
@@ -2704,6 +2937,8 @@
     <news:keywords>Gemini 1.5, Google AI, architecture Mixture-of-Experts, efficacité computationnelle, expansion de la fenêtre de contexte, innovation IA, transformation de l&apos;analyse de données, in-context learning, cas d&apos;usage IA, révolution technologique</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/id/2023-12-18-keadaan-ai-dan-komputasi-kuantum-di-perbankan-ulasan-2023/index.html</loc>
   <news:news>
@@ -2713,7 +2948,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] State of AI and Quantum Computing in Banking: A 2023 Review</news:title>
-    <news:keywords>AI in banking, Quantum Computing, Financial Technology, Open-source AI, Risk Management, Quantum Security, AI Regulation, AI Ethics, AI Governance, Banking Innovation</news:keywords>
+    <news:keywords>AI dalam perbankan, Quantum Computing, Financial Technology, AI open-source, manajemen risiko, Quantum Security, regulasi AI, etika AI, tata kelola AI, inovasi perbankan</news:keywords>
   </news:news>
 </url>
 <url>
@@ -2725,7 +2960,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Automating ISO 20022 Payment Files Creation with Pain001</news:title>
-    <news:keywords>pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation</news:keywords>
+    <news:keywords>pain001, iso 20022, otomasi pembayaran, pengurangan biaya, pemrosesan pembayaran, file pembayaran, inisiasi pembayaran, pain message, pain message standards, pain message validation</news:keywords>
   </news:news>
 </url>
 <url>
@@ -2737,7 +2972,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Fast Real-Time Speech Recognition on macOS: OpenAI Whisper</news:title>
-    <news:keywords>OpenAI Whisper, Metal Performance Shaders, macOS speech recognition, real-time transcription, voice activity detection, GPU acceleration, Python integration, speech-to-text macOS, energy-efficient speech detection, Apple silicon</news:keywords>
+    <news:keywords>OpenAI Whisper, Metal Performance Shaders, pengenalan ucapan macOS, transkripsi real-time, deteksi aktivitas suara, akselerasi GPU, integrasi Python, speech-to-text macOS, deteksi ucapan hemat energi, Apple silicon</news:keywords>
   </news:news>
 </url>
 <url>
@@ -2773,7 +3008,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Quantum Algorithm Challenges Lattice-Based Cryptography</news:title>
-    <news:keywords>quantum computing, quantum algorithm, lattice cryptography, LWE, encryption, post-quantum cryptography, cybersecurity, Yilei Chen, cryptography research, security threats</news:keywords>
+    <news:keywords>komputasi kuantum, algoritma kuantum, lattice cryptography, LWE, enkripsi, post-quantum cryptography, keamanan siber, Yilei Chen, penelitian kriptografi, ancaman keamanan</news:keywords>
   </news:news>
 </url>
 <url>
@@ -2785,7 +3020,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Quantum-Safe Payments: Why the Industry Must Act Now</news:title>
-    <news:keywords>quantum-safe payments, post-quantum cryptography, SEPA, SWIFT gpi, ISO 20022, financial services security, EPAA, harvest-now decrypt-later, cryptographic agility, Sebastien Rousseau</news:keywords>
+    <news:keywords>pembayaran quantum-safe, kriptografi pasca-kuantum, SEPA, SWIFT gpi, ISO 20022, keamanan layanan keuangan, EPAA, harvest-now decrypt-later, kelincahan kriptografi, Sebastien Rousseau</news:keywords>
   </news:news>
 </url>
 <url>
@@ -2797,7 +3032,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Le Chat by Mistral AI: Multilingual Conversational AI</news:title>
-    <news:keywords>Le Chat AI, Mistral AI chatbot, Le Chat virtual assistant, Mistral AI language understanding, Le Chat AI customer service, Mistral AI enterprise solutions, Le Chat AI customisation, Mistral AI multilingual support, Le Chat AI-powered communication, Mistral AI AI-driven business solutions</news:keywords>
+    <news:keywords>Le Chat AI, Mistral AI chatbot, Le Chat asisten virtual, Mistral AI pemahaman bahasa, Le Chat AI layanan pelanggan, Mistral AI solusi enterprise, Le Chat AI kustomisasi, Mistral AI dukungan multibahasa, Le Chat AI komunikasi berbasis AI, Mistral AI solusi bisnis berbasis AI</news:keywords>
   </news:news>
 </url>
 <url>
@@ -2809,7 +3044,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Static Site Generator: Fastest Rust-Based SSG</news:title>
-    <news:keywords>pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation</news:keywords>
+    <news:keywords>pain001, iso 20022, otomatisasi pembayaran, pengurangan biaya, pemrosesan pembayaran, file pembayaran, inisiasi pembayaran, pain message, pain message standards, pain message validation</news:keywords>
   </news:news>
 </url>
 <url>
@@ -2821,7 +3056,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Advancing AI with Multimodal LLMs: Insights from MM1</news:title>
-    <news:keywords>Multimodal LLMs, MM1 study, AI advancements, pre-training strategies, image recognition, natural language processing, AI applications, future of AI, multimodal learning, AI research</news:keywords>
+    <news:keywords>Multimodal LLMs, studi MM1, kemajuan AI, strategi pre-training, pengenalan gambar, pemrosesan bahasa alami, aplikasi AI, masa depan AI, multimodal learning, penelitian AI</news:keywords>
   </news:news>
 </url>
 <url>
@@ -2833,7 +3068,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] OpenVoice: Leading Innovation in Voice Cloning Technology</news:title>
-    <news:keywords>OpenVoice, Voice Cloning Technology, AI Synthetic Speech, Open-Source Voice Cloning, Cross-Lingual Voice Synthesis, Instant Voice Cloning, Voice Style Control, Accessibility Voice Tech, Entertainment Industry Voices, Customer Service Voice AI</news:keywords>
+    <news:keywords>OpenVoice, Teknologi Kloning Suara, Ucapan Sintetis AI, Kloning Suara Open-Source, Sintesis Suara Lintas Bahasa, Kloning Suara Instan, Kontrol Gaya Suara, Teknologi Suara Aksesibilitas, Suara Industri Hiburan, AI Suara Layanan Pelanggan</news:keywords>
   </news:news>
 </url>
 <url>
@@ -2845,7 +3080,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Mathematical and Cryptographic Constants for Rust Security</news:title>
-    <news:keywords>mathematical constants, cryptographic constants, Rust security, secure communication, encryption, RSA, elliptic curve cryptography, Common (CMN) library, Rust applications, mathematical computations</news:keywords>
+    <news:keywords>konstanta matematika, konstanta kriptografi, Rust security, komunikasi aman, enkripsi, RSA, elliptic curve cryptography, Common (CMN) library, aplikasi Rust, komputasi matematika</news:keywords>
   </news:news>
 </url>
 <url>
@@ -2872,6 +3107,10 @@
     <news:keywords>pembayaran wholesale 2026, ekonomi pembayaran global, ISO 20022, RTGS, pembayaran lintas batas, BIS CPMI, FSB, Swift CBPR+, peta jalan G20, real time gross settlement</news:keywords>
   </news:news>
 </url>
+
+
+
+
 <url>
   <loc>https://sebastienrousseau.com/id/2026-05-16-arsitektur-infrastruktur-cloud-terbaik-untuk-bank-2026/index.html</loc>
   <news:news>
@@ -2893,7 +3132,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] The November 2026 pacs.008 Structured-Address Deadline: A Six-Month…</news:title>
-    <news:keywords>ISO 20022, pacs.008, SWIFT CBPR+, structured address, November 2026, postal address, TwnNm, Ctry, StrtNm, BldgNb</news:keywords>
+    <news:keywords>ISO 20022, pacs.008, SWIFT CBPR+, alamat terstruktur, November 2026, alamat pos, TwnNm, Ctry, StrtNm, BldgNb</news:keywords>
   </news:news>
 </url>
 <url>
@@ -2905,7 +3144,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</news:title>
-    <news:keywords>quantum computing, Shor&apos;s algorithm, 10000 qubits, post-quantum cryptography, RSA-2048, elliptic curve cryptography, neutral atom qubits, quantum error correction, cryptographic agility, quantum threat timeline</news:keywords>
+    <news:keywords>komputasi kuantum, Shor&apos;s algorithm, 10000 qubit, kriptografi post-quantum, RSA-2048, elliptic curve cryptography, neutral atom qubits, koreksi kesalahan kuantum, cryptographic agility, jadwal ancaman kuantum</news:keywords>
   </news:news>
 </url>
 <url>
@@ -2929,7 +3168,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Àkàndé: GPT-Powered Voice Assistant for Executives</news:title>
-    <news:keywords>Àkàndé, Voice Assistant, Natural Language Understanding, PDF Summaries, Efficient Caching, OpenAI GPT, Executive Assistance, Personal Assistance, Digital Assistants, Technology Innovation</news:keywords>
+    <news:keywords>Àkàndé, Asisten Suara, Pemahaman Bahasa Alami, Ringkasan PDF, Caching Efisien, OpenAI GPT, Bantuan Eksekutif, Bantuan Personal, Asisten Digital, Inovasi Teknologi</news:keywords>
   </news:news>
 </url>
 <url>
@@ -2941,7 +3180,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</news:title>
-    <news:keywords>quantum computing, quantum-resistant cryptography, CRYSTALS-Kyber, cryptography, security, banking, financial, encryption, data protection, future-proof</news:keywords>
+    <news:keywords>komputasi kuantum, kriptografi tahan kuantum, CRYSTALS-Kyber, kriptografi, keamanan, perbankan, keuangan, enkripsi, perlindungan data, tahan masa depan</news:keywords>
   </news:news>
 </url>
 <url>
@@ -2953,9 +3192,10 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Streamlining Rust Library Development with Code Generation</news:title>
-    <news:keywords>Rust, library, development, code, generator, boilerplate, best, practices, quality, reliable</news:keywords>
+    <news:keywords>Rust, pustaka, pengembangan, kode, generator, boilerplate, praktik, terbaik, kualitas, andal</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/id/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
   <news:news>
@@ -2964,11 +3204,22 @@
       <news:language>id</news:language>
     </news:publication>
     <news:publication_date>2026-05-24T06:06:06+00:00</news:publication_date>
-    <news:title>UK Payments Forward Plan 2026: Stablecoin dan Deposito Tertokenisasi</news:title>
+    <news:title>UK Payments Forward Plan 2026: Stablecoin, Open Banking, Deposito…</news:title>
     <news:keywords>UK Payments Forward Plan 2026, stablecoin Inggris, deposito tertokenisasi Inggris, open banking FCA, konsolidasi PSR FCA, pembayaran agen AI Inggris, Wholesale Digital Markets Champion, Chris Woolard, regulasi layanan pembayaran</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/id/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>id</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>Perbankan Cloud Native pada 2026: Kubernetes, DORA, Kedaulatan, dan Akhir dari…</news:title>
+    <news:keywords>perbankan cloud native 2026, Kubernetes bank, cloud lembaga keuangan, DORA 2026, ketahanan cloud, Red Hat OpenShift, Portworx, koeksistensi VM kontainer, kedaulatan cloud bank, ketergantungan cloud layanan keuangan</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/id/2018-01-02-blockchain-teknologi-yang-penting-di-2018/index.html</loc>
   <news:news>
@@ -2978,7 +3229,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Blockchain explained, the technology that matters the most</news:title>
-    <news:keywords>pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation</news:keywords>
+    <news:keywords>pain001, iso 20022, otomasi pembayaran, pengurangan biaya, pemrosesan pembayaran, file pembayaran, inisiasi pembayaran, pain message, pain message standards, pain message validation</news:keywords>
   </news:news>
 </url>
 <url>
@@ -2990,7 +3241,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Revolutionising Finance with AI-Enhanced Quantum Algorithms</news:title>
-    <news:keywords>Quantum Computing, AI Algorithms, Financial Mathematics, Banking Technology, Risk Management, Algorithm Design, Data Analysis, Investment Strategies, Quantum Finance, Machine Learning</news:keywords>
+    <news:keywords>Quantum Computing, AI Algorithms, Matematika Keuangan, Banking Technology, Manajemen Risiko, Algorithm Design, Analisis Data, Strategi Investasi, Quantum Finance, Machine Learning</news:keywords>
   </news:news>
 </url>
 <url>
@@ -3002,7 +3253,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] AI Prompt Engineering 2024: Techniques That Work</news:title>
-    <news:keywords>AI Prompt Engineering, Custom Instructions, Multi-Persona AI, Chain of Thought, Quantum Computing, Ethical AI, Adaptive Prompting, Zero Shot Prompting, Few Shot Prompting, AI Technology Trends</news:keywords>
+    <news:keywords>AI Prompt Engineering, Instruksi Khusus, Multi-Persona AI, Chain of Thought, Quantum Computing, AI Etis, Adaptive Prompting, Zero Shot Prompting, Few Shot Prompting, Tren Teknologi AI</news:keywords>
   </news:news>
 </url>
 <url>
@@ -3014,7 +3265,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] RustLogs (RLG): Structured Logging Library for Rust</news:title>
-    <news:keywords>Rust logging library, asynchronous Rust logging, structured log formats, Rust application debugging, customisable logging Rust, Rust development tools, RustLogs RLG features, efficient Rust logging, RustLogs integration, RustLogs documentation</news:keywords>
+    <news:keywords>pustaka logging Rust, logging Rust asinkron, format log terstruktur, debugging aplikasi Rust, logging Rust yang dapat dikustomisasi, alat pengembangan Rust, fitur RustLogs RLG, logging Rust efisien, integrasi RustLogs, dokumentasi RustLogs</news:keywords>
   </news:news>
 </url>
 <url>
@@ -3026,7 +3277,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Qiskit &amp; Quantum Fourier Transform for Credit Ratio Analysis</news:title>
-    <news:keywords>quantum computing, finance, credit ratio analysis, Qiskit, Quantum Fourier Transform, IBM, machine learning, artificial intelligence, financial risk assessment, creditworthiness</news:keywords>
+    <news:keywords>komputasi kuantum, keuangan, analisis rasio kredit, Qiskit, Quantum Fourier Transform, IBM, pembelajaran mesin, kecerdasan buatan, penilaian risiko keuangan, kelayakan kredit</news:keywords>
   </news:news>
 </url>
 <url>
@@ -3038,7 +3289,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Fully Homomorphic Encryption (FHE) in a Banking Quantum Era</news:title>
-    <news:keywords>Fully Homomorphic Encryption, banking security, quantum computing, financial data encryption, FHE case studies, regulatory frameworks FHE, computational overhead FHE, FHE research, FHE hardware, data privacy laws</news:keywords>
+    <news:keywords>Fully Homomorphic Encryption, keamanan perbankan, quantum computing, enkripsi data keuangan, studi kasus FHE, kerangka regulasi FHE, overhead komputasi FHE, penelitian FHE, perangkat keras FHE, undang-undang privasi data</news:keywords>
   </news:news>
 </url>
 <url>
@@ -3050,9 +3301,10 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Quantum Lattice Crypto: Bug in Chen's LWE Attack</news:title>
-    <news:keywords>post-quantum cryptography, NIST, PQC standardisation, Yilei Chen, quantum algorithm, lattice-based cryptography, LWE problem, CRYSTALS-KYBER, CRYSTALS-Dilithium, quantum-resistant cryptography</news:keywords>
+    <news:keywords>kriptografi pasca-kuantum, NIST, standardisasi PQC, Yilei Chen, algoritma kuantum, kriptografi berbasis kisi, masalah LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, kriptografi tahan kuantum</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/id/2023-12-11-distribusi-kunci-kuantum-revolusi-keamanan-perbankan/index.html</loc>
   <news:news>
@@ -3062,7 +3314,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Quantum Key Distribution Revolutionising Security in Banking</news:title>
-    <news:keywords>Quantum Key Distribution (QKD), Quantum Security, Banking, Financial Industry, Digital Finance, Cybersecurity, Quantum Computing, HSBC, Quantum Protection Trial, Financial Transactions</news:keywords>
+    <news:keywords>Quantum Key Distribution (QKD), Keamanan Kuantum, Perbankan, Industri Keuangan, Keuangan Digital, Keamanan Siber, Quantum Computing, HSBC, Quantum Protection Trial, Transaksi Keuangan</news:keywords>
   </news:news>
 </url>
 <url>
@@ -3074,7 +3326,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] KyberLib: Rust CRYSTALS-Kyber for Post-Quantum</news:title>
-    <news:keywords>KyberLib, Rust CRYSTALS-Kyber, post-quantum cryptography, lattice-based cryptography, quantum-resistant key exchange, NIST FIPS 203, Sebastien Rousseau, KEM, payment authentication, PQC library</news:keywords>
+    <news:keywords>KyberLib, Rust CRYSTALS-Kyber, kriptografi pasca-kuantum, kriptografi berbasis kisi, pertukaran kunci tahan-kuantum, NIST FIPS 203, Sebastien Rousseau, KEM, autentikasi pembayaran, PQC library</news:keywords>
   </news:news>
 </url>
 <url>
@@ -3086,7 +3338,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Google Gemma AI: Transforming Open-Source AI Development</news:title>
-    <news:keywords>Google Gemma AI, open-source AI model, Gemma technical architecture, Gemma 2B 7B, ethical AI, AI integration macOS, AI enterprise solutions, conversational AI, data analysis AI, AI for edge devices</news:keywords>
+    <news:keywords>Google Gemma AI, model AI open-source, arsitektur teknis Gemma, Gemma 2B 7B, AI etis, integrasi AI macOS, solusi AI enterprise, AI percakapan, AI analisis data, AI untuk perangkat edge</news:keywords>
   </news:news>
 </url>
 <url>
@@ -3098,7 +3350,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Alien Studio: My Tech-to Art Journey in Photography</news:title>
-    <news:keywords>personal tech journey, Rust discovery, AI exploration, Quantum Computing, art and photography fusion, Alien Studio, digital art creation, technology in art, innovative photography, artistic rediscovery</news:keywords>
+    <news:keywords>perjalanan teknologi pribadi, penemuan Rust, eksplorasi AI, Quantum Computing, perpaduan seni dan fotografi, Alien Studio, pembuatan seni digital, teknologi dalam seni, fotografi inovatif, penemuan kembali artistik</news:keywords>
   </news:news>
 </url>
 <url>
@@ -3110,9 +3362,10 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Lucy's Flash Drive Revisited: AI, Quantum &amp; Knowledge</news:title>
-    <news:keywords>Lucy 2014 film, Luc Besson, knowledge transfer, large language models, neutral atom qubits, whole-brain emulation, substrate independence, AI philosophy, quantum computing, knowledge persistence</news:keywords>
+    <news:keywords>film Lucy 2014, Luc Besson, transfer pengetahuan, large language models, neutral atom qubits, whole-brain emulation, substrate independence, filosofi AI, quantum computing, persistensi pengetahuan</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/id/2024-01-01-tren-ai-2024-wawasan-dan-prediksi/index.html</loc>
   <news:news>
@@ -3122,9 +3375,10 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] AI Trends 2024: Insights and Predictions for the Future</news:title>
-    <news:keywords>AI trends 2024, generative AI, AI in education, AI cybersecurity, AI finance, AI content creation, AI space exploration, ethical AI, AI in retail, AI analytics</news:keywords>
+    <news:keywords>tren AI 2024, generative AI, AI dalam pendidikan, keamanan siber AI, AI keuangan, pembuatan konten AI, eksplorasi luar angkasa AI, AI etis, AI dalam ritel, analitik AI</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/id/2024-01-29-wawasan-audio-analisis-dan-terjemahan-bertenaga-ai/index.html</loc>
   <news:news>
@@ -3134,9 +3388,10 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] AI-Powered Speech Analysis, Translation, &amp; Insight Tool</news:title>
-    <news:keywords>audio analyser, azure ai, speech-to-text, audio data analysis, text analysis, ai translations, audio insights, automated transcription, audio data processing, machine learning</news:keywords>
+    <news:keywords>audio analyser, azure ai, speech-to-text, analisis data audio, analisis teks, terjemahan ai, wawasan audio, transkripsi otomatis, pemrosesan data audio, machine learning</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/id/2024-02-08-revolusi-periklanan-bagaimana-ai-membentuk-masa-depan/index.html</loc>
   <news:news>
@@ -3146,9 +3401,12 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Generative AI in Advertising: Amazon Rufus &amp; Meta</news:title>
-    <news:keywords>AI in advertising, Amazon Rufus, Meta AI tools, consumer targeting, advertising technology, AI chatbots, digital marketing trends, AI analytics, creative AI, ad campaign optimization</news:keywords>
+    <news:keywords>AI dalam periklanan, Amazon Rufus, alat Meta AI, penargetan konsumen, teknologi periklanan, chatbot AI, tren pemasaran digital, analitik AI, AI kreatif, optimasi kampanye iklan</news:keywords>
   </news:news>
 </url>
+
+
+
 <url>
   <loc>https://sebastienrousseau.com/id/2018-01-01-bitcoin-ulasan-tahunan/index.html</loc>
   <news:news>
@@ -3158,9 +3416,10 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Bitcoin: A Year In Review of the First Cryptocurrency</news:title>
-    <news:keywords>bitcoin, cryptocurrency, blockchain, decentralized finance, digital currency, peer-to-peer payments, digital gold, programmable money, future of money, financial revolution</news:keywords>
+    <news:keywords>bitcoin, cryptocurrency, blockchain, keuangan terdesentralisasi, mata uang digital, pembayaran peer-to-peer, emas digital, uang terprogram, masa depan uang, revolusi keuangan</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/id/2026-05-17-rekayasa-agentik-bank-cetak-biru-2026/index.html</loc>
   <news:news>
@@ -3170,7 +3429,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and…</news:title>
-    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
+    <news:keywords>rekayasa agentik, spec-driven development, bank, layanan keuangan, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
   </news:news>
 </url>
 <url>
@@ -3197,6 +3456,7 @@
     <news:keywords>kriptografi kuantum 2026, kriptografi pasca-kuantum, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/id/2024-02-19-membuka-gemini-revolusi-ai-google-dijelaskan/index.html</loc>
   <news:news>
@@ -3206,7 +3466,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Unlocking Gemini 1.5: Google's AI Revolution Explained</news:title>
-    <news:keywords>Gemini 1.5, Google AI, Mixture-of-Experts architecture, computational efficiency, context window expansion, AI innovation, data analysis transformation, in-context learning, AI use cases, technology revolution</news:keywords>
+    <news:keywords>Gemini 1.5, Google AI, arsitektur Mixture-of-Experts, efisiensi komputasional, perluasan jendela konteks, inovasi AI, transformasi analisis data, pembelajaran dalam konteks, kasus penggunaan AI, revolusi teknologi</news:keywords>
   </news:news>
 </url>
 <url>
@@ -3218,7 +3478,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Securing the Ledger: A Board-Level Guide to Post-Quantum Migration…</news:title>
-    <news:keywords>post-quantum cryptography, PQC migration, corporate banking, financial services, G7 CEG roadmap, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204</news:keywords>
+    <news:keywords>kriptografi pasca-kuantum, migrasi PQC, perbankan korporat, layanan keuangan, G7 CEG roadmap, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204</news:keywords>
   </news:news>
 </url>
 <url>
@@ -3230,7 +3490,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL…</news:title>
-    <news:keywords>BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoin, tokenised money market fund, OnChain Shares, Securitize</news:keywords>
+    <news:keywords>BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoin, dana pasar uang yang ditokenisasi, OnChain Shares, Securitize</news:keywords>
   </news:news>
 </url>
 <url>
@@ -3242,7 +3502,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] EU's AI Act: Pioneering Ethical AI Regulation Worldwide</news:title>
-    <news:keywords>EU AI Act, Artificial Intelligence regulation, Ethical AI framework, AI risk management, AI innovation, AI transparency, AI consumer rights, AI governance, AI standards, AI ethics</news:keywords>
+    <news:keywords>EU AI Act, regulasi Artificial Intelligence, kerangka AI etis, manajemen risiko AI, inovasi AI, transparansi AI, hak konsumen AI, tata kelola AI, standar AI, etika AI</news:keywords>
   </news:news>
 </url>
 <url>
@@ -3254,7 +3514,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Efficient Date and Time Management with DateTime (DTT)</news:title>
-    <news:keywords>DateTime, DTT, Rust library, parsing, validating, manipulating, formatting, dates, times</news:keywords>
+    <news:keywords>DateTime, DTT, pustaka Rust, penguraian, validasi, manipulasi, pemformatan, tanggal, waktu</news:keywords>
   </news:news>
 </url>
 <url>
@@ -3269,7 +3529,18 @@
     <news:keywords>mathematical constants, cryptographic constants, rust, cmn library, secure, reliable, accurate, portability, performance, documentation</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/id/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>id</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>Deposito Tertokenisasi pada 2026: Layanan Perbankan, Persaingan Stablecoin…</news:title>
+    <news:keywords>tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, uang bank komersial, BIS stablecoins, Project Agora, unified ledger</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/id/2023-10-16-melindungi-data-di-era-kuantum-pustaka-hash-hsh/index.html</loc>
   <news:news>
@@ -3279,7 +3550,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Protecting Data in the Quantum Age: The Hash Library (HSH)</news:title>
-    <news:keywords>quantum-resistant cryptography, post-quantum cryptography, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, quantum computing</news:keywords>
+    <news:keywords>kriptografi tahan kuantum, kriptografi pasca-kuantum, pustaka hash, HSH, hashing kata sandi, derivasi kunci, Argon2i, Bcrypt, Scrypt, komputasi kuantum</news:keywords>
   </news:news>
 </url>
 <url>
@@ -3291,9 +3562,10 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] ERC-20: The Ethereum Token Interface That Changed the World</news:title>
-    <news:keywords>ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, solidity</news:keywords>
+    <news:keywords>ethereum, erc20, eip, token, kontrak, blockchain, mata uang kripto, smart-token, solidity</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/ko/2024-03-18-meolti-modeol-llm-euro-ai-baljeon-mm1-tongchal/index.html</loc>
   <news:news>
@@ -3474,6 +3746,10 @@
     <news:keywords>블록체인, 암호, 해시, 디지털 서명, 머클 트리, 합의, 작업 증명, P2P 네트워크</news:keywords>
   </news:news>
 </url>
+
+
+
+
 <url>
   <loc>https://sebastienrousseau.com/ko/2023-10-16-yangja-sidae-deiteo-bohogi-hash-laibeureori-hsh/index.html</loc>
   <news:news>
@@ -3558,6 +3834,7 @@
     <news:keywords>OpenAI Whisper, macOS, Metal Performance Shaders, MPS, 실시간, 음성 인식, Apple Silicon</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/ko/2018-01-02-beulrokchein-2018-junggyo-gisul/index.html</loc>
   <news:news>
@@ -3594,7 +3871,18 @@
     <news:keywords>IBM Qiskit, 양자 푸리에 변환, QFT, 신용 비율, 양자 금융, 양자 컴퓨팅, 포트폴리오 분석</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/ko/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>2026년 클라우드 네이티브 뱅킹: Kubernetes, DORA, 주권, 그리고 VM 대 컨테이너 분단의 종말</news:title>
+    <news:keywords>클라우드 네이티브 뱅킹 2026, Kubernetes 은행, 금융기관 클라우드, DORA 2026, 클라우드 복원력, Red Hat OpenShift, Portworx, VM 컨테이너 공존, 은행 클라우드 주권, 금융서비스 클라우드 의존성</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/ko/2018-02-15-express-transaction-credits-peullaetpom-jejak/index.html</loc>
   <news:news>
@@ -3643,6 +3931,7 @@
     <news:keywords>프롬프트 엔지니어링, AI, LLM, chain-of-thought, RAG, 도구 사용, 에이전트, 워크플로</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/ko/2024-02-26-google-gemma-opeun-soseu-ai-gaebal-hyeonsin/index.html</loc>
   <news:news>
@@ -3691,6 +3980,7 @@
     <news:keywords>QKD, 양자 키 분배, 양자 암호, BB84, BBM92, 양자 네트워크, 은행 보안, 양자 인터넷</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/ko/2025-09-01-yangja-anjeon-gyeolje-epaa/index.html</loc>
   <news:news>
@@ -3715,6 +4005,8 @@
     <news:keywords>EU AI 법, AI 규제, 거버넌스, 위험 분류, 규정 준수, GDPR, AI 감독</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/ko/2023-11-05-rust-bohan-eul-wihan-suhakjeok-amhojeok-sangsu/index.html</loc>
   <news:news>
@@ -3727,6 +4019,10 @@
     <news:keywords>암호 상수, 수학, Rust, ECC, RSA, NIST 곡선, PQC, 보안, mathconst</news:keywords>
   </news:news>
 </url>
+
+
+
+
 <url>
   <loc>https://sebastienrousseau.com/ko/2026-05-17-eijenteuk-enjineoring-eunhaeng-2026-seolgyedo/index.html</loc>
   <news:news>
@@ -3787,6 +4083,7 @@
     <news:keywords>kyberlib, CRYSTALS-Kyber, Rust, ML-KEM, FIPS 203, 키 캡슐화, 포스트 양자 암호, 양자 내성</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/ko/2023-10-09-shokunin-choegoseok-rust-gibon-jeongjeoksaiteu-saengseonggi/index.html</loc>
   <news:news>
@@ -3859,7 +4156,18 @@
     <news:keywords>AI, 음성 인식, 음성-텍스트 변환, Whisper, 번역, 다국어, 오디오 통찰</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/ko/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>2026년 토큰화 예금: 은행 서비스, 스테이블코인 경쟁, 그리고 프로그래밍 가능한 상업은행 화폐의 현황</news:title>
+    <news:keywords>토큰화 예금 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, 상업은행 자금, BIS stablecoins, Project Agora, unified ledger</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/ko/2023-09-29-pain001-ro-iso-20022-junsu-gyeoljepail-jadonghwa/index.html</loc>
   <news:news>
@@ -3872,6 +4180,7 @@
     <news:keywords>ISO 20022, pain.001, ISO 20022 이행, SWIFT, SEPA, 결제 자동화, Python, 오픈소스, 국경 간 송금</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/ko/2018-01-24-erc-20-tokeun-pyojun/index.html</loc>
   <news:news>
@@ -3920,6 +4229,7 @@
     <news:keywords>Quantencomputing, Quantenalgorithmus, gitterbasierte Kryptographie, LWE, Verschlüsselung, Post-Quanten-Kryptographie, Cybersicherheit, Yilei Chen, kryptographische Forschung, Sicherheitsbedrohungen</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/de/2024-02-26-google-gemma-transformiert-die-open-source-ki-entwicklung/index.html</loc>
   <news:news>
@@ -4004,6 +4314,9 @@
     <news:keywords>KI-Trends 2024, generative KI, KI in der Bildung, KI-Cybersicherheit, KI im Finanzwesen, KI-Content-Erstellung, KI für den Weltraum, ethische KI, KI im Handel, KI-Analytik</news:keywords>
   </news:news>
 </url>
+
+
+
 <url>
   <loc>https://sebastienrousseau.com/de/2026-04-11-quantenschwellen-verschieben-sich-erneut/index.html</loc>
   <news:news>
@@ -4028,6 +4341,7 @@
     <news:keywords>KI-Prompt-Engineering, benutzerdefinierte Instruktionen, Multi-Persona-KI, Chain of Thought, Quantencomputing, ethische KI, Adaptive Prompting, Zero Shot, Few Shot, KI-Technologietrends</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/de/2023-12-25-finanzwesen-revolutionieren-mit-ki-gestuetzten-quantenalgorithmen/index.html</loc>
   <news:news>
@@ -4088,6 +4402,7 @@
     <news:keywords>KI in der Werbung, Amazon Rufus, Meta-KI-Tools, Konsumenten-Targeting, Werbetechnologie, KI-Chatbots, Trends im digitalen Marketing, KI-Analytik, kreative KI, Kampagnenoptimierung</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/de/2026-05-14-das-hauptbuch-sichern-post-quanten-migration-im-corporate-finance/index.html</loc>
   <news:news>
@@ -4100,7 +4415,18 @@
     <news:keywords>Post-Quanten-Kryptografie, ML-KEM, ML-DSA, FIPS 203, FIPS 204, BIS Project Leap, G7 CEG, NCSC, ANSSI, BSI</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/de/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>de</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>Cloud-natives Banking 2026: Kubernetes, DORA, Souveränität und das Ende der…</news:title>
+    <news:keywords>cloud-native Banking 2026, Kubernetes Banken, Finanzinstitute Cloud, DORA 2026, Cloud-Resilienz, Red Hat OpenShift, Portworx, VM Container Koexistenz, Bank Cloud-Souveränität, Finanzdienstleistungen Cloud-Abhängigkeit</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/de/2023-12-11-quantenschluesselverteilung-revolution-der-banksicherheit/index.html</loc>
   <news:news>
@@ -4181,7 +4507,7 @@
       <news:language>de</news:language>
     </news:publication>
     <news:publication_date>2026-05-24T06:06:06+00:00</news:publication_date>
-    <news:title>UK Payments Forward Plan 2026: Stablecoins, Open Banking, tokenisierte Einlagen</news:title>
+    <news:title>UK Payments Forward Plan 2026: Stablecoins, Open Banking, tokenisierte…</news:title>
     <news:keywords>UK Payments Forward Plan 2026, Stablecoins UK, tokenisierte Einlagen UK, Open Banking FCA, PSR FCA Konsolidierung, agentenbasierte Zahlungen UK, Wholesale Digital Markets Champion, Chris Woolard, Zahlungsverkehrsregulierung</news:keywords>
   </news:news>
 </url>
@@ -4221,6 +4547,7 @@
     <news:keywords>generative KI, Technologie, Zukunft, Wirkung, Ethik, Synergien, Innovation, Kreativität, Transformation, Entwicklung</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/de/2024-04-22-fehler-im-quantenalgorithmus-fuer-gitterbasierte-kryptografie-entdeckt/index.html</loc>
   <news:news>
@@ -4269,6 +4596,9 @@
     <news:keywords>Quantencomputing, Finanzen, Kreditquotenanalyse, Qiskit, Quanten-Fourier-Transformation, IBM, maschinelles Lernen, Künstliche Intelligenz, Bewertung finanzieller Risiken, Bonität</news:keywords>
   </news:news>
 </url>
+
+
+
 <url>
   <loc>https://sebastienrousseau.com/de/2023-11-05-mathematische-und-kryptografische-konstanten-fuer-rust-sicherheit/index.html</loc>
   <news:news>
@@ -4305,6 +4635,20 @@
     <news:keywords>Lucy, Luc Besson, Wissenstransfer, KI, LLM, Qubits aus neutralen Atomen, Hirnemulation, Neuralink, Eon Systems, Carboncopies</news:keywords>
   </news:news>
 </url>
+
+<url>
+  <loc>https://sebastienrousseau.com/de/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>de</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
+    <news:title>Vorstellung einer neuen Kryptowährung und schnelleren Zahlungslösung</news:title>
+    <news:keywords>EXTC, ERC-223, Ethereum Smart Contracts, schnellere Zahlungen, Kryptowährung, Blockchain-Zahlungen, Zahlungs-Token, dezentralisierte Finanzen, ERC-20, grenzüberschreitende Zahlungen</news:keywords>
+  </news:news>
+</url>
+
 <url>
   <loc>https://sebastienrousseau.com/de/2023-12-04-datum-und-zeit-in-rust-meistern-mit-der-dtt-bibliothek/index.html</loc>
   <news:news>
@@ -4317,6 +4661,7 @@
     <news:keywords>DateTime, DTT, Rust-Bibliothek, Parsen, Validieren, Manipulieren, Formatieren, Datum, Zeit</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/de/2024-03-04-le-chat-von-mistral-ai-neue-aera-der-konversations-ki/index.html</loc>
   <news:news>
@@ -4401,7 +4746,18 @@
     <news:keywords>EU-KI-Verordnung, Regulierung künstlicher Intelligenz, ethischer KI-Rahmen, KI-Risikomanagement, KI-Innovation, KI-Transparenz, Verbraucherrechte KI, KI-Governance, KI-Standards, KI-Ethik</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/de/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>de</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>Tokenisierte Einlagen 2026: Bankdienstleistungen, Stablecoin-Wettbewerb und…</news:title>
+    <news:keywords>tokenisierte Einlagen 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, Stablecoins, Geschäftsbankengeld, BIS stablecoins, Project Agora, unified ledger</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/de/2018-02-04-neue-kryptowaehrung-schnellere-zahlungsloesung-fuer-die-zukunft/index.html</loc>
   <news:news>
@@ -4426,6 +4782,7 @@
     <news:keywords>OpenVoice, Voice Cloning, KI-Sprachsynthese, Open-Source-Voice-Cloning, sprachübergreifende Stimmsynthese, sofortiges Voice Cloning, Stimm-Stilkontrolle, Barrierefreiheit Sprachtechnologie, Stimmen in der Unterhaltungsindustrie, KI-Stimmen im Kundenservice</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/de/2023-09-29-iso-20022-konforme-zahlungsdateien-automatisieren-mit-pain001/index.html</loc>
   <news:news>
@@ -4594,6 +4951,7 @@
     <news:keywords>MM1, Apple, मल्टीमॉडल, LLM, AI, vision, transformer, training, फाउंडेशन मॉडल, बेंचमार्क</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/hi/2023-12-25-ai-samvardhit-quantum-algorithm-se-vitt-mein-kraanti/index.html</loc>
   <news:news>
@@ -4618,6 +4976,7 @@
     <news:keywords>QKD, क्वांटम कुंजी-वितरण, BB84, क्वांटम क्रिप्टोग्राफी, बैंकिंग सुरक्षा, post-quantum, NIST, फ़ोटॉन, उलझाव, सुरक्षा</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/hi/2024-01-29-ai-aadharit-audio-vishleshan-anuvaad-aur-drishtikon/index.html</loc>
   <news:news>
@@ -4630,6 +4989,8 @@
     <news:keywords>AI, ऑडियो, Whisper, अनुवाद, भाषण-पहचान, NLP, speaker diarization, multilingual, ASR, transcription</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/hi/2023-10-09-shokunin-sabse-tez-rust-static-site-generator/index.html</loc>
   <news:news>
@@ -4690,6 +5051,7 @@
     <news:keywords>blockchain, वितरित बही, क्रिप्टोग्राफी, सहमति, proof-of-work, smart contract, हैश, मर्कल वृक्ष, विकेंद्रीकरण, P2P</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/hi/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
   <news:news>
@@ -4714,7 +5076,18 @@
     <news:keywords>Gemma, Google, ओपन सोर्स, AI, LLM, फ़ाइन-ट्यूनिंग, स्थानीय, edge, Gemini, मॉडल</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/hi/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>hi</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>2026 में क्लाउड-नेटिव बैंकिंग: Kubernetes, DORA, संप्रभुता, और VM बनाम कंटेनर…</news:title>
+    <news:keywords>क्लाउड नेटिव बैंकिंग 2026, Kubernetes बैंक, वित्तीय संस्थान क्लाउड, DORA 2026, क्लाउड लचीलापन, Red Hat OpenShift, Portworx, VM कंटेनर सहअस्तित्व, बैंक क्लाउड संप्रभुता, वित्तीय सेवाएं क्लाउड निर्भरता</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/hi/2024-03-08-rustlogs-rust-applications-ke-liye-logging-library/index.html</loc>
   <news:news>
@@ -4835,6 +5208,7 @@
     <news:keywords>EPAA, क्वांटम-सुरक्षित, post-quantum, ISO 20022, भुगतान, क्रिप्टोग्राफी, ML-DSA, Dilithium, NIST, बैंकिंग</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/hi/2024-01-01-ai-rujhaan-2024-bhavishya-anumaan-aur-drishtikon/index.html</loc>
   <news:news>
@@ -4859,6 +5233,7 @@
     <news:keywords>क्वांटम, थ्रेसहोल्ड, post-quantum, NIST, क्रिप्टोग्राफी, RSA, HNDL, harvest now, माइग्रेशन, बैंकिंग</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/hi/2023-11-28-kyberlib-quantum-khatron-se-rust-rakshak/index.html</loc>
   <news:news>
@@ -4871,6 +5246,8 @@
     <news:keywords>KyberLib, Rust, CRYSTALS-Kyber, post-quantum, KEM, एम्बेडेड, क्रिप्टोग्राफी, सुरक्षा, NIST, FIPS</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/hi/2023-11-12-generative-ai-ki-padtaal/index.html</loc>
   <news:news>
@@ -4883,6 +5260,8 @@
     <news:keywords>जनरेटिव AI, LLM, GPT, Stable Diffusion, MidJourney, उद्यम AI, AI नैतिकता, फाउंडेशन मॉडल, ट्रांसफ़ॉर्मर, NLP</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/hi/2018-02-04-nayi-cryptocurrency-aur-teevra-bhugtaan-samaadhaan/index.html</loc>
   <news:news>
@@ -4895,6 +5274,7 @@
     <news:keywords>क्रिप्टोकरेंसी, तीव्र भुगतान, सीमा-पार, blockchain, टोकन, ICO, वित्तीय समावेशन, ETC, P2P, payment rails</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/hi/2024-03-25-banking-quantum-yug-mein-poorn-homomorphic-encryption/index.html</loc>
   <news:news>
@@ -4907,6 +5287,7 @@
     <news:keywords>FHE, होमोमॉर्फ़िक एन्क्रिप्शन, बैंकिंग, क्वांटम, post-quantum, क्रिप्टोग्राफी, BFV, CKKS, गोपनीयता, सुरक्षा</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/hi/2024-02-19-gemini-google-ai-kraanti-ki-vyaakhya/index.html</loc>
   <news:news>
@@ -4955,6 +5336,7 @@
     <news:keywords>BlackRock, BRSRV, BSTBL, GENIUS Act, MMF, टोकनीकरण, stablecoin, T-bills, repo, बैंकिंग</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/hi/2024-04-22-lattice-cryptography-quantum-algorithm-mein-truti-mili/index.html</loc>
   <news:news>
@@ -4991,7 +5373,18 @@
     <news:keywords>AI, विज्ञापन, जनरेटिव, व्यक्तिगतकरण, marketing, ROAS, attribution, अनुकूलन, मीडिया, टार्गेटिंग</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/hi/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>hi</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>2026 में टोकनीकृत जमा: बैंकिंग सेवाएँ, स्टेबलकॉइन्स प्रतिस्पर्धा, और प्रोग्राम…</news:title>
+    <news:keywords>टोकनाइज्ड डिपॉजिट 2026, टोकनाइज्ड डिपॉजिट बैंकिंग, डिपॉजिट टोकन, Great British Tokenised Deposits, Lloyds digital assets, स्टेबलकॉइन, कमर्शियल बैंक मनी, BIS stablecoins, Project Agora, यूनिफाइड लेजर</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/hi/2023-12-04-rust-mein-dtt-library-se-tarikh-aur-samay/index.html</loc>
   <news:news>
@@ -5016,6 +5409,7 @@
     <news:keywords>ERC-20, Ethereum, token, ICO, smart contract, क्रिप्टोकरेंसी, टोकनीकरण, मानक, इंटरऑपरेबिलिटी, blockchain</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/hi/2026-05-11-lucy-besson-gyaan-hastantaran-ai-aur-quantum/index.html</loc>
   <news:news>
@@ -5148,18 +5542,8 @@
     <news:keywords>wholesale na bayad 2026, ekonomiya ng pandaigdigang bayad, ISO 20022, RTGS, cross-border na bayad, BIS CPMI, FSB, Swift CBPR+, G20 roadmap, real time gross settlement</news:keywords>
   </news:news>
 </url>
-<url>
-  <loc>https://sebastienrousseau.com/fil/2024-01-23-advancements-in-ai-prompt-engineering/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>fil-PH</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>هندسة الموجِّهات في الذكاء الاصطناعي 2024: تقنيات فعّالة</news:title>
-    <news:keywords>AI Prompt Engineering، التعليمات المخصّصة، الذكاء الاصطناعي متعدّد الشخصيات، chain of thought، الحوسبة الكمومية، الذكاء الاصطناعي الأخلاقي، adaptive prompting، zero shot، few shot، اتّجاهات تكنولوجيا الذكاء الاصطناعي</news:keywords>
-  </news:news>
-</url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/fil/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html</loc>
   <news:news>
@@ -5172,18 +5556,8 @@
     <news:keywords>التشفير المقاوم للكم، التشفير ما بعد الكمي، مكتبة الهاش، HSH، تجزئة كلمات المرور، اشتقاق المفاتيح، Argon2i، Bcrypt، Scrypt، الحوسبة الكمية</news:keywords>
   </news:news>
 </url>
-<url>
-  <loc>https://sebastienrousseau.com/fil/2023-11-12-exploring-generative-ai/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>fil-PH</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>الذكاء الاصطناعي التوليدي في 2023: كيف يعمل، وأين يَحلّ</news:title>
-    <news:keywords>الذكاء الاصطناعي التوليدي، التقنية، المستقبل، الأثر، الأخلاقيات، التآزر، الابتكار، الإبداع، التحوّل، التطوّر</news:keywords>
-  </news:news>
-</url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/fil/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html</loc>
   <news:news>
@@ -5280,18 +5654,7 @@
     <news:keywords>Lucy، Luc Besson، نقل المعرفة، الذكاء الاصطناعي، LLM، qubits الذرّات المحايدة، محاكاة الدماغ، Neuralink، Eon Systems، Carboncopies، Fromm، استقلال الركيزة، فلسفة الذكاء الاصطناعي</news:keywords>
   </news:news>
 </url>
-<url>
-  <loc>https://sebastienrousseau.com/fil/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>fil-PH</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>Àkàndé: مساعد صوتي مدعوم بـ GPT للتنفيذيين</news:title>
-    <news:keywords>Àkàndé, مساعد صوتي, فهم اللغة الطبيعية, تلخيصات PDF, تخزين مؤقت فعّال, OpenAI GPT, مساعدة تنفيذية, مساعدة شخصية, مساعدون رقميون, ابتكار تكنولوجي</news:keywords>
-  </news:news>
-</url>
+
 <url>
   <loc>https://sebastienrousseau.com/fil/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
   <news:news>
@@ -5316,7 +5679,18 @@
     <news:keywords>DateTime، DTT، مكتبة Rust، التحليل، التحقّق، المعالجة، التنسيق، التواريخ، الأوقات</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/fil/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fil</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>Cloud Native Banking sa 2026: Kubernetes, DORA, Soberanya, at ang Katapusan ng…</news:title>
+    <news:keywords>cloud native banking 2026, Kubernetes bangko, financial institutions cloud, DORA 2026, cloud resilience, Red Hat OpenShift, Portworx, VM container coexistence, bank cloud sovereignty, financial services cloud dependency</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/fil/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html</loc>
   <news:news>
@@ -5389,18 +5763,7 @@
     <news:keywords>ISO 20022، pacs.008، pacs.009، pacs.004، pacs.003، pain.001، CBPR+، SWIFT، SR2026، العنوان المُهيكَل، SEPA، EPC، المدفوعات العابرة للحدود، فحص العقوبات، pacs008</news:keywords>
   </news:news>
 </url>
-<url>
-  <loc>https://sebastienrousseau.com/fil/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>fil-PH</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>صناعة منصّة Express Transaction Credits</news:title>
-    <news:keywords>Ethereum, ERC-223, ERC-20, EXTC, Express Transaction Credits, blockchain, المدفوعات, التوكنات, القروض, التمويل اللامركزي</news:keywords>
-  </news:news>
-</url>
+
 <url>
   <loc>https://sebastienrousseau.com/fil/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html</loc>
   <news:news>
@@ -5437,18 +5800,7 @@
     <news:keywords>بيتكوين, عملة مشفّرة, blockchain, P2P, الإنفاق المزدوج, التعدين, proof-of-work, ETF, Satoshi Nakamoto, التمويل اللامركزي</news:keywords>
   </news:news>
 </url>
-<url>
-  <loc>https://sebastienrousseau.com/fil/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>fil-PH</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>تبسيط تطوير مكتبات Rust عبر توليد الشفرة</news:title>
-    <news:keywords>Rust، المكتبة، التطوير، الشفرة، المولِّد، البويلربليت، أفضل الممارسات، الجودة، الموثوقية</news:keywords>
-  </news:news>
-</url>
+
 <url>
   <loc>https://sebastienrousseau.com/fil/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html</loc>
   <news:news>
@@ -5461,6 +5813,7 @@
     <news:keywords>Static Site Generator, مولّد المواقع الساكنة, SSG, Rust, الأداء, SEO, الوصول الميسّر, WCAG, ADA, PWA</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/fil/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html</loc>
   <news:news>
@@ -5473,42 +5826,10 @@
     <news:keywords>OpenVoice, تقنية الاستنساخ الصوتي, الكلام الصناعي بالذكاء الاصطناعي, الاستنساخ الصوتي مفتوح المصدر, التركيب الصوتي عبر اللغات, الاستنساخ الصوتي الفوري, التحكّم في الأسلوب الصوتي, تقنية صوتية للوصول, الأصوات في صناعة الترفيه, الذكاء الاصطناعي الصوتي لخدمة العملاء</news:keywords>
   </news:news>
 </url>
-<url>
-  <loc>https://sebastienrousseau.com/fil/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>fil-PH</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>أتمتة إنشاء ملفّات الدفع المتوافقة مع ISO 20022 باستخدام Pain001</news:title>
-    <news:keywords>ISO 20022, pain.001, Pain001, Python, المدفوعات, الأتمتة, CBPR+, HVPS+, SEPA, الامتثال</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/fil/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>fil-PH</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>كشف عملة مشفّرة جديدة وحلّ مدفوعات أسرع</news:title>
-    <news:keywords>EXTC Network, العملة المشفّرة, المدفوعات الأسرع, Ethereum, EIP20, smart contracts, blockchain, المدفوعات العابرة للحدود, الشمول المالي</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/fil/2018-01-09-understanding-the-technology-behind-blockchain/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>fil-PH</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>فهم التقنية الكامنة وراء البلوكشين</news:title>
-    <news:keywords>blockchain, Ethereum, smart contract, العملة المشفّرة, Solidity, Geth, dApps, ERC-20, الترميز, testnet</news:keywords>
-  </news:news>
-</url>
+
+
+
+
 <url>
   <loc>https://sebastienrousseau.com/fil/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html</loc>
   <news:news>
@@ -5521,6 +5842,7 @@
     <news:keywords>Google Gemma, نموذج ذكاء اصطناعي مفتوح المصدر, البنية التقنية لـ Gemma, Gemma 2B 7B, ذكاء اصطناعي أخلاقي, دمج الذكاء الاصطناعي مع macOS, حلول الذكاء الاصطناعي للمؤسسات, الذكاء الاصطناعي الحواري, تحليل البيانات بالذكاء الاصطناعي, الذكاء الاصطناعي للأجهزة الطرفية</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/fil/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html</loc>
   <news:news>
@@ -5569,6 +5891,7 @@
     <news:keywords>blockchain, العملة المشفّرة, Bitcoin, P2P, smart contract, السجل الموزّع, التمويل, سلسلة التوريد, الهويّة الرقمية, الترميز</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/fil/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html</loc>
   <news:news>
@@ -5581,19 +5904,19 @@
     <news:keywords>الذكاء الاصطناعي في الإعلان, Amazon Rufus, أدوات Meta AI, استهداف المستهلكين, تكنولوجيا الإعلان, روبوتات الدردشة, اتجاهات التسويق الرقمي, تحليلات الذكاء الاصطناعي, الذكاء الاصطناعي الإبداعي, تحسين الحملات</news:keywords>
   </news:news>
 </url>
-
 <url>
-  <loc>https://sebastienrousseau.com/fil/2024-01-29-ai-powered-audio-insights-analysis-translations/index.html</loc>
+  <loc>https://sebastienrousseau.com/fil/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
   <news:news>
     <news:publication>
-      <news:name></news:name>
-      <news:language>fil-PH</news:language>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fil</news:language>
     </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>تحليل الكلام والترجمة والرؤى المدعومة بالذكاء الاصطناعي</news:title>
-    <news:keywords>audio analyser, azure ai, speech-to-text, تحليل البيانات الصوتية, تحليل النصوص, ترجمات الذكاء الاصطناعي, رؤى صوتية, التفريغ الآلي, معالجة البيانات الصوتية, تعلم الآلة</news:keywords>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>Tokenized Deposits sa 2026: Banking Services, Kompetensiya ng Stablecoin, at…</news:title>
+    <news:keywords>tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, pera ng komersyal na bangko, BIS stablecoins, Project Agora, unified ledger</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/fil/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html</loc>
   <news:news>
@@ -5683,6 +6006,8 @@
 
 
 
+
+
 <url>
   <loc>https://sebastienrousseau.com/bn/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
   <news:news>
@@ -5695,6 +6020,20 @@
     <news:keywords>UK Payments Forward Plan ২০২৬, স্টেবলকয়েন UK, টোকেনাইজড আমানত UK, ওপেন ব্যাংকিং FCA, PSR FCA একীভূতকরণ, এআই এজেন্ট পেমেন্ট UK, Wholesale Digital Markets Champion, Chris Woolard, পেমেন্ট পরিষেবা নিয়ন্ত্রণ</news:keywords>
   </news:news>
 </url>
+
+<url>
+  <loc>https://sebastienrousseau.com/bn/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>bn</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>২০২৬-এ ক্লাউড-নেটিভ ব্যাংকিং: Kubernetes, DORA, সার্বভৌমত্ব এবং VM বনাম…</news:title>
+    <news:keywords>ক্লাউড নেটিভ ব্যাংকিং ২০২৬, Kubernetes ব্যাংক, আর্থিক প্রতিষ্ঠান ক্লাউড, DORA 2026, ক্লাউড রেজিলিয়েন্স, Red Hat OpenShift, Portworx, VM কন্টেইনার সহাবস্থান, ব্যাংক ক্লাউড সার্বভৌমত্ব, আর্থিক সেবা ক্লাউড নির্ভরতা</news:keywords>
+  </news:news>
+</url>
+
 
 
 
@@ -5731,6 +6070,18 @@
 
 
 
+<url>
+  <loc>https://sebastienrousseau.com/bn/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>bn</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>২০২৬-এ টোকেনাইজড আমানত: ব্যাংকিং পরিষেবা, স্টেবলকয়েন প্রতিযোগিতা এবং…</news:title>
+    <news:keywords>টোকেনাইজড ডিপোজিট ২০২৬, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, বাণিজ্যিক ব্যাংক অর্থ, BIS stablecoins, Project Agora, unified ledger</news:keywords>
+  </news:news>
+</url>
 
 
 
@@ -5867,6 +6218,7 @@
     <news:keywords>wholesalebetalingen 2026, economie van mondiale betalingen, ISO 20022, RTGS, grensoverschrijdende betalingen, BIS CPMI, FSB, Swift CBPR+, G20-routekaart, real-time bruto-afwikkeling</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/nl/2024-02-13-eu-ai-verordening-de-toekomst-van-wereldwijde-ai-regulering/index.html</loc>
   <news:news>
@@ -5891,6 +6243,7 @@
     <news:keywords>Hash, digest, cryptografie, post-kwantum, Rust, beveiliging, wachtwoord</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/nl/2023-10-09-shokunin-de-snelste-rust-gebaseerde-statische-sitegenerator/index.html</loc>
   <news:news>
@@ -5903,6 +6256,8 @@
     <news:keywords>Static Site Generator, statische sitegenerator, Rust, SSG, prestaties, SEO, JSON-LD, toegankelijkheid</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/nl/2024-03-25-volledig-homomorfe-versleuteling-in-het-bank-kwantumtijdperk/index.html</loc>
   <news:news>
@@ -5939,6 +6294,7 @@
     <news:keywords>AI, audio, spraakherkenning, samenvatting, vertaling, machine learning</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/nl/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
   <news:news>
@@ -5951,7 +6307,18 @@
     <news:keywords>UK Payments Forward Plan 2026, stablecoins VK, getokeniseerde deposito&apos;s VK, open banking FCA, PSR FCA consolidatie, AI-agentbetalingen VK, Wholesale Digital Markets Champion, Chris Woolard, regelgeving betalingsdiensten</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/nl/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>Cloud-native bankieren in 2026: Kubernetes, DORA, soevereiniteit en het einde…</news:title>
+    <news:keywords>cloud native banking 2026, Kubernetes banken, financiële instellingen cloud, DORA 2026, cloudweerbaarheid, Red Hat OpenShift, Portworx, VM containercoëxistentie, bankcloudsoevereiniteit, financiële diensten cloudafhankelijkheid</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/nl/2024-02-19-gemini-ontsluiten-de-ai-revolutie-van-google-uitgelegd/index.html</loc>
   <news:news>
@@ -6024,6 +6391,7 @@
     <news:keywords>Cryptovaluta, betalingen, fintech, blockchain, real-time, settlement, payments</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/nl/2026-05-12-iso-20022-pacs008-gestructureerd-adres-deadline/index.html</loc>
   <news:news>
@@ -6072,6 +6440,7 @@
     <news:keywords>Blockchain, gedistribueerd grootboek, smart contracts, tokenisatie, Ethereum, Bitcoin, fintech, regulering</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/nl/2018-01-24-de-erc-20-tokenstandaard/index.html</loc>
   <news:news>
@@ -6084,6 +6453,7 @@
     <news:keywords>ERC-20, Ethereum, smart contracts, tokens, ICO, blockchain, interoperabiliteit</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/nl/2024-03-04-le-chat-van-mistral-ai-een-nieuw-tijdperk-in-conversatie-ai/index.html</loc>
   <news:news>
@@ -6096,6 +6466,7 @@
     <news:keywords>Le Chat, Mistral AI, conversatie-AI, LLM, Europa, open source</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/nl/2026-05-15-blackrock-brsrv-bstbl-genius-act-getokeniseerd-geldmarktfonds/index.html</loc>
   <news:news>
@@ -6106,6 +6477,19 @@
     <news:publication_date></news:publication_date>
     <news:title>BlackRock BRSRV en BSTBL onder de GENIUS Act: een getokeniseerd geldmarktfonds</news:title>
     <news:keywords>BlackRock, BRSRV, BSTBL, GENIUS Act, geldmarktfonds, stablecoin, tokenisatie</news:keywords>
+  </news:news>
+</url>
+
+<url>
+  <loc>https://sebastienrousseau.com/nl/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
+    <news:title>Een nieuwe Cryptocurrency en Snellere Betalingsoplossing onthuld</news:title>
+    <news:keywords>EXTC, ERC-223, Ethereum slimme contracten, snellere betalingen, cryptocurrency, blockchain-betalingen, betalingstoken, gedecentraliseerde financiering, ERC-20, grensoverschrijdende betalingen</news:keywords>
   </news:news>
 </url>
 <url>
@@ -6120,6 +6504,8 @@
     <news:keywords>AI, kwantumcomputing, banking, 2023, terugblik, financiële dienstverlening, fintech</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/nl/2024-01-15-alien-studio-kunst-revolutie-met-ai-fotografie/index.html</loc>
   <news:news>
@@ -6180,6 +6566,7 @@
     <news:keywords>Apple MM1, multimodale LLM, AI, machine learning, pretraining</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/nl/2023-11-28-kyberlib-rust-schild-tegen-kwantumdreigingen/index.html</loc>
   <news:news>
@@ -6264,7 +6651,18 @@
     <news:keywords>EPAA, kwantumveilige betalingen, post-kwantum, whitepaper, betalingsverkeer, banking</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/nl/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>Getokeniseerde deposito's in 2026: bancaire diensten, concurrentie van…</news:title>
+    <news:keywords>getokeniseerde deposito&apos;s 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, commercieel bankgeld, BIS stablecoins, Project Agora, unified ledger</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/nl/2024-03-12-real-time-spraakherkenning-op-macos-met-openai-whisper/index.html</loc>
   <news:news>
@@ -6301,6 +6699,7 @@
     <news:keywords>AI-trends, 2024, voorspellingen, machine learning, regelgeving, multimodaal, LLM</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/nl/2026-05-16-beste-cloud-infrastructuur-architectuur-voor-banken-2026/index.html</loc>
   <news:news>
@@ -6409,6 +6808,8 @@
     <news:keywords>Bitcoin, criptomoeda, blockchain, P2P, gasto duplo, mineração, proof-of-work, ETF, Satoshi Nakamoto, finanzas descentralizadas</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/pt-br/2023-12-04-dominar-data-e-hora-em-rust-com-a-biblioteca-dtt/index.html</loc>
   <news:news>
@@ -6421,6 +6822,8 @@
     <news:keywords>DateTime, DTT, biblioteca Rust, parseo, validação, manipulación, formateo, fechas, horas</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/pt-br/2023-12-25-revolucionar-as-financas-com-algoritmos-quanticos-impulsionados-por-ia/index.html</loc>
   <news:news>
@@ -6481,6 +6884,7 @@
     <news:keywords>Lucy, Luc Besson, transferencia de conhecimento, IA, LLM, qubits de átomos neutros, emulación cerebral, Neuralink, Eon Systems, Carboncopies</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/pt-br/2024-02-13-regulamento-europeu-de-ia-moldar-o-futuro-da-regulacao-mundial/index.html</loc>
   <news:news>
@@ -6493,7 +6897,18 @@
     <news:keywords>AI Act UE, regulação de a inteligência artificial, marco ético IA, gestión de riesgos IA, innovación IA, transparencia IA, derechos de os consumidores, gobernanza IA, estándares IA, ética IA</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/pt-br/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pt-br</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>Cloud-native banking em 2026: Kubernetes, DORA, soberania e o fim da divisão…</news:title>
+    <news:keywords>cloud native banking 2026, Kubernetes bancos, instituições financeiras nuvem, DORA 2026, resiliência em nuvem, Red Hat OpenShift, Portworx, coexistência VM contêiner, soberania de nuvem bancária, dependência de nuvem em serviços financeiros</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/pt-br/2018-02-15-criacao-da-plataforma-express-transaction-credits/index.html</loc>
   <news:news>
@@ -6556,6 +6971,7 @@
 </url>
 
 
+
 <url>
   <loc>https://sebastienrousseau.com/pt-br/2023-11-28-kyberlib-escudo-rust-contra-ameacas-quanticas/index.html</loc>
   <news:news>
@@ -6616,6 +7032,7 @@
     <news:keywords>computação quântica, finanzas, análisis de ratios de crédito, Qiskit, transformada de Fourier quântica, IBM, aprendizado de máquina, inteligência artificial, avaliação do riesgo financeiro, solvencia</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/pt-br/2026-05-15-rendimento-oculto-decifrando-depositos-blackrock-brsrv-bstbl-genius-act/index.html</loc>
   <news:news>
@@ -6667,6 +7084,7 @@
 </url>
 
 
+
 <url>
   <loc>https://sebastienrousseau.com/pt-br/2026-04-11-os-limiares-quanticos-voltam-a-se-mover/index.html</loc>
   <news:news>
@@ -6679,6 +7097,7 @@
     <news:keywords>algoritmo de Shor, qubits, computação quântica, ECC, RSA-2048, átomos neutros reconfigurables, códigos de corrección de errores, CRYSTALS-Kyber, CRYSTALS-Dilithium, PQC</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/pt-br/2024-02-08-revolucionar-a-publicidade-como-a-ia-molda-o-futuro/index.html</loc>
   <news:news>
@@ -6699,10 +7118,25 @@
       <news:language>pt-br</news:language>
     </news:publication>
     <news:publication_date>2026-05-24T06:06:06+00:00</news:publication_date>
-    <news:title>UK Payments Forward Plan 2026: Stablecoins, Open Banking e Pagamentos Agênticos</news:title>
+    <news:title>UK Payments Forward Plan 2026: Stablecoins, Open Banking, Depósitos…</news:title>
     <news:keywords>UK Payments Forward Plan 2026, stablecoins Reino Unido, depósitos tokenizados Reino Unido, open banking FCA, consolidação PSR FCA, pagamentos agênticos Reino Unido, Wholesale Digital Markets Champion, Chris Woolard, regulação de serviços de pagamento</news:keywords>
   </news:news>
 </url>
+
+<url>
+  <loc>https://sebastienrousseau.com/pt-br/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pt-br</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
+    <news:title>Revelando uma Nova Criptomoeda e Solução de Pagamento Mais Rápido</news:title>
+    <news:keywords>EXTC, ERC-223, contratos inteligentes Ethereum, pagamentos mais rápidos, criptomoeda, pagamentos blockchain, token de pagamento, finanças descentralizadas, ERC-20, pagamentos transfronteiriços</news:keywords>
+  </news:news>
+</url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/pt-br/2023-09-29-automatizar-arquivos-de-pagamento-iso-20022-com-pain001/index.html</loc>
   <news:news>
@@ -6799,6 +7233,18 @@
     <news:keywords>OpenVoice, clonación de voz, síntesis vocal IA, clonación de voz de código aberto, síntesis vocal multilingüe, clonación de voz instantánea, control de estilo vocal, acessibilidade vocal, voz em o entretenimiento, voz IA para serviço ao cliente</news:keywords>
   </news:news>
 </url>
+<url>
+  <loc>https://sebastienrousseau.com/pt-br/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pt-br</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>Depósitos tokenizados em 2026: serviços bancários, concorrência dos…</news:title>
+    <news:keywords>depósitos tokenizados 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, dinheiro de banco comercial, BIS stablecoins, Project Agora, unified ledger</news:keywords>
+  </news:news>
+</url>
 
 <url>
   <loc>https://sebastienrousseau.com/pt-br/2023-11-05-constantes-matematicas-e-criptograficas-para-rust/index.html</loc>
@@ -6824,6 +7270,7 @@
     <news:keywords>criptografia quântica 2026, criptografia pós-quântica, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/pt-br/2024-02-12-akande-assistente-de-voz-revolucao-da-assistencia-pessoal-e-executiva/index.html</loc>
   <news:news>
@@ -6913,6 +7360,8 @@
 
 
 
+
+
 <url>
   <loc>https://sebastienrousseau.com/ar/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
   <news:news>
@@ -6925,6 +7374,20 @@
     <news:keywords>UK Payments Forward Plan 2026، العملات المستقرة، الودائع المرمَّزة، الخدمات المصرفية المفتوحة، FCA، PSR، المدفوعات الوكيلة، Wholesale Digital Markets Champion، Chris Woolard، تنظيم خدمات الدفع</news:keywords>
   </news:news>
 </url>
+
+<url>
+  <loc>https://sebastienrousseau.com/ar/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ar</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>الخدمات المصرفية القائمة على السحابة الأصلية في عام 2026: Kubernetes، وDORA،…</news:title>
+    <news:keywords>البنوك السحابية الأصيلة 2026، Kubernetes للبنوك، المؤسسات المالية السحابة، DORA 2026، المرونة السحابية، Red Hat OpenShift، Portworx، التعايش بين الأجهزة الافتراضية والحاويات، سيادة السحابة المصرفية، اعتماد الخدمات المالية على السحابة، المرونة التشغيلية، التعافي من الكوارث، استراتيجية الخروج السحابي، أعباء عمل الذكاء الاصطناعي المصرفي</news:keywords>
+  </news:news>
+</url>
+
 
 
 
@@ -6961,6 +7424,18 @@
 
 
 
+<url>
+  <loc>https://sebastienrousseau.com/ar/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ar</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>الودائع المرمَّزة في 2026: الخدمات المصرفية، والمنافسة مع العملات المستقرة،…</news:title>
+    <news:keywords>الودائع المرمّزة 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, أموال البنوك التجارية, BIS stablecoins, Project Agora, unified ledger</news:keywords>
+  </news:news>
+</url>
 
 
 <url>
@@ -7029,6 +7504,8 @@
 
 
 
+
+
 <url>
   <loc>https://sebastienrousseau.com/ha/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
   <news:news>
@@ -7037,10 +7514,24 @@
       <news:language>ha</news:language>
     </news:publication>
     <news:publication_date>2026-05-24T06:06:06+00:00</news:publication_date>
-    <news:title>UK Payments Forward Plan 2026: Stablecoins, Open Banking, Tokens</news:title>
+    <news:title>UK Payments Forward Plan a 2026: Stablecoins, Open Banking, Adibassu da Aka…</news:title>
     <news:keywords>UK Payments Forward Plan 2026, stablecoins UK, tokenised deposits UK, open banking FCA, haɗewar PSR FCA, biyan kuɗi ta wakili AI UK, Wholesale Digital Markets Champion, Chris Woolard, tsarin sabis na biyan kuɗi</news:keywords>
   </news:news>
 </url>
+
+<url>
+  <loc>https://sebastienrousseau.com/ha/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ha</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>Cloud Native Banking a 2026: Kubernetes, DORA, Ikon Mallaka, da Ƙarshen…</news:title>
+    <news:keywords>cloud native banking 2026, Kubernetes bankuna, cibiyoyin kuɗi cloud, DORA 2026, juriya cloud, Red Hat OpenShift, Portworx, VM container coexistence, ikon cloud na bankuna, dogaro da cloud na sabis kuɗi</news:keywords>
+  </news:news>
+</url>
+
 
 
 
@@ -7077,6 +7568,18 @@
 
 
 
+<url>
+  <loc>https://sebastienrousseau.com/ha/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ha</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>Tokenized Deposits a 2026: Sabis na Banki, Gasar Stablecoins, da Matsayin…</news:title>
+    <news:keywords>tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, kuɗin banki na kasuwanci, BIS stablecoins, Project Agora, unified ledger</news:keywords>
+  </news:news>
+</url>
 
 
 
@@ -7091,7 +7594,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] AI-Powered Speech Analysis, Translation, &amp; Insight Tool</news:title>
-    <news:keywords>audio analyser, azure ai, speech-to-text, audio data analysis, text analysis, ai translations, audio insights, automated transcription, audio data processing, machine learning</news:keywords>
+    <news:keywords>аудіо аналізатор, azure ai, speech-to-text, аналіз аудіоданих, аналіз тексту, переклади ai, аудіо insights, автоматична транскрипція, обробка аудіоданих, machine learning</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7103,7 +7606,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Le Chat by Mistral AI: Multilingual Conversational AI</news:title>
-    <news:keywords>Le Chat AI, Mistral AI chatbot, Le Chat virtual assistant, Mistral AI language understanding, Le Chat AI customer service, Mistral AI enterprise solutions, Le Chat AI customisation, Mistral AI multilingual support, Le Chat AI-powered communication, Mistral AI AI-driven business solutions</news:keywords>
+    <news:keywords>Le Chat AI, чат-бот Mistral AI, віртуальний асистент Le Chat, розуміння мов Mistral AI, обслуговування клієнтів Le Chat AI, корпоративні рішення Mistral AI, налаштування Le Chat AI, багатомовна підтримка Mistral AI, комунікація Le Chat AI, бізнес-рішення Mistral AI</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7115,7 +7618,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] RustLogs (RLG): Structured Logging Library for Rust</news:title>
-    <news:keywords>Rust logging library, asynchronous Rust logging, structured log formats, Rust application debugging, customisable logging Rust, Rust development tools, RustLogs RLG features, efficient Rust logging, RustLogs integration, RustLogs documentation</news:keywords>
+    <news:keywords>бібліотека логування Rust, асинхронне логування Rust, структуровані формати журналів, налагодження застосунків Rust, налаштовуване логування Rust, інструменти розробки Rust, функції RustLogs RLG, ефективне логування Rust, інтеграція RustLogs, документація RustLogs</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7127,7 +7630,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Securing the Ledger: A Board-Level Guide to Post-Quantum Migration…</news:title>
-    <news:keywords>post-quantum cryptography, PQC migration, corporate banking, financial services, G7 CEG roadmap, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204</news:keywords>
+    <news:keywords>постквантова криптографія, міграція PQC, корпоративний банкінг, фінансові послуги, дорожня карта G7 CEG, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7139,7 +7642,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Fully Homomorphic Encryption (FHE) in a Banking Quantum Era</news:title>
-    <news:keywords>Fully Homomorphic Encryption, banking security, quantum computing, financial data encryption, FHE case studies, regulatory frameworks FHE, computational overhead FHE, FHE research, FHE hardware, data privacy laws</news:keywords>
+    <news:keywords>Fully Homomorphic Encryption, банківська безпека, quantum computing, шифрування фінансових даних, кейси FHE, регуляторні рамки FHE, обчислювальне навантаження FHE, дослідження FHE, апаратне забезпечення FHE, закони про захист даних</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7151,7 +7654,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] State of AI and Quantum Computing in Banking: A 2023 Review</news:title>
-    <news:keywords>AI in banking, Quantum Computing, Financial Technology, Open-source AI, Risk Management, Quantum Security, AI Regulation, AI Ethics, AI Governance, Banking Innovation</news:keywords>
+    <news:keywords>AI у банківництві, Quantum Computing, фінансові технології, open-source AI, управління ризиками, квантова безпека, регулювання AI, етика AI, управління AI, банківські інновації</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7163,7 +7666,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Advancing AI with Multimodal LLMs: Insights from MM1</news:title>
-    <news:keywords>Multimodal LLMs, MM1 study, AI advancements, pre-training strategies, image recognition, natural language processing, AI applications, future of AI, multimodal learning, AI research</news:keywords>
+    <news:keywords>Багатомодальні LLM, дослідження MM1, досягнення AI, стратегії попереднього навчання, розпізнавання зображень, обробка природної мови, застосування AI, майбутнє AI, багатомодальне навчання, дослідження AI</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7187,7 +7690,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</news:title>
-    <news:keywords>quantum computing, Shor&apos;s algorithm, 10000 qubits, post-quantum cryptography, RSA-2048, elliptic curve cryptography, neutral atom qubits, quantum error correction, cryptographic agility, quantum threat timeline</news:keywords>
+    <news:keywords>квантові обчислення, алгоритм Шора, 10000 кубітів, пост-квантова криптографія, RSA-2048, криптографія на еліптичних кривих, кубіти на нейтральних атомах, квантове виправлення помилок, криптографічна гнучкість, хронологія квантової загрози</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7202,6 +7705,8 @@
     <news:keywords>оптові платежі 2026, економіка глобальних платежів, ISO 20022, RTGS, транскордонні платежі, BIS CPMI, FSB, Swift CBPR+, дорожня карта G20, валові розрахунки у реальному часі</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/uk/2018-01-24-standart-tokena-erc-20/index.html</loc>
   <news:news>
@@ -7211,9 +7716,11 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] ERC-20: The Ethereum Token Interface That Changed the World</news:title>
-    <news:keywords>ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, solidity</news:keywords>
+    <news:keywords>ethereum, erc20, eip, токени, контракти, blockchain, криптовалюти, smart-token, solidity</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/uk/2024-04-22-pomylka-v-kvantovomu-alhorytmi-dlya-hratkovoyi-kryptohrafiyi/index.html</loc>
   <news:news>
@@ -7223,7 +7730,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Quantum Lattice Crypto: Bug in Chen's LWE Attack</news:title>
-    <news:keywords>post-quantum cryptography, NIST, PQC standardisation, Yilei Chen, quantum algorithm, lattice-based cryptography, LWE problem, CRYSTALS-KYBER, CRYSTALS-Dilithium, quantum-resistant cryptography</news:keywords>
+    <news:keywords>постквантова криптографія, NIST, стандартизація PQC, Yilei Chen, квантовий алгоритм, криптографія на основі ґраток, задача LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, квантово-стійка криптографія</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7235,7 +7742,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] AI Prompt Engineering 2024: Techniques That Work</news:title>
-    <news:keywords>AI Prompt Engineering, Custom Instructions, Multi-Persona AI, Chain of Thought, Quantum Computing, Ethical AI, Adaptive Prompting, Zero Shot Prompting, Few Shot Prompting, AI Technology Trends</news:keywords>
+    <news:keywords>AI Prompt Engineering, Персоналізовані Інструкції, Multi-Persona AI, Chain of Thought, Quantum Computing, Етичний AI, Adaptive Prompting, Zero Shot Prompting, Few Shot Prompting, Тенденції Технологій AI</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7247,7 +7754,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Efficient Date and Time Management with DateTime (DTT)</news:title>
-    <news:keywords>DateTime, DTT, Rust library, parsing, validating, manipulating, formatting, dates, times</news:keywords>
+    <news:keywords>DateTime, DTT, бібліотека Rust, розбір, валідація, маніпулювання, форматування, дати, час</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7259,7 +7766,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL…</news:title>
-    <news:keywords>BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoin, tokenised money market fund, OnChain Shares, Securitize</news:keywords>
+    <news:keywords>BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, стейблкоїн, токенізований фонд грошового ринку, OnChain Shares, Securitize</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7271,7 +7778,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Blockchain explained, the technology that matters the most</news:title>
-    <news:keywords>pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation</news:keywords>
+    <news:keywords>pain001, iso 20022, автоматизація платежів, скорочення витрат, обробка платежів, файли платежів, ініціювання платежів, pain message, pain message standards, pain message validation</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7283,7 +7790,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Generative AI in Advertising: Amazon Rufus &amp; Meta</news:title>
-    <news:keywords>AI in advertising, Amazon Rufus, Meta AI tools, consumer targeting, advertising technology, AI chatbots, digital marketing trends, AI analytics, creative AI, ad campaign optimization</news:keywords>
+    <news:keywords>AI у рекламі, Amazon Rufus, інструменти Meta AI, таргетування споживачів, рекламні технології, AI чат-боти, тенденції цифрового маркетингу, AI аналітика, творчий AI, оптимізація рекламних кампаній</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7295,9 +7802,10 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Mathematical and Cryptographic Constants for Rust Security</news:title>
-    <news:keywords>mathematical constants, cryptographic constants, Rust security, secure communication, encryption, RSA, elliptic curve cryptography, Common (CMN) library, Rust applications, mathematical computations</news:keywords>
+    <news:keywords>математичні константи, криптографічні константи, Rust security, безпечний зв&apos;язок, шифрування, RSA, elliptic curve cryptography, Common (CMN) library, Rust-додатки, математичні обчислення</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/uk/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
   <news:news>
@@ -7310,7 +7818,18 @@
     <news:keywords>UK Payments Forward Plan 2026, стейблкоїни Велика Британія, токенізовані депозити, відкритий банкінг FCA, консолідація PSR FCA, агентські платежі, Wholesale Digital Markets Champion, Chris Woolard, регулювання платіжних послуг</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/uk/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>uk</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>Хмарно-нативний банкінг у 2026 році: Kubernetes, DORA, суверенітет і кінець…</news:title>
+    <news:keywords>cloud native банківська справа 2026, Kubernetes банки, хмара фінансових установ, DORA 2026, хмарна стійкість, Red Hat OpenShift, Portworx, VM container coexistence, хмарний суверенітет банку, залежність фінансових послуг від хмари</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/uk/2023-10-16-zakhyst-danykh-u-kvantovu-eru-biblioteka-hash-hsh/index.html</loc>
   <news:news>
@@ -7320,7 +7839,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Protecting Data in the Quantum Age: The Hash Library (HSH)</news:title>
-    <news:keywords>quantum-resistant cryptography, post-quantum cryptography, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, quantum computing</news:keywords>
+    <news:keywords>квантово-стійка криптографія, пост-квантова криптографія, хеш-бібліотека, HSH, хешування паролів, виведення ключів, Argon2i, Bcrypt, Scrypt, квантові обчислення</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7332,7 +7851,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Lucy's Flash Drive Revisited: AI, Quantum &amp; Knowledge</news:title>
-    <news:keywords>Lucy 2014 film, Luc Besson, knowledge transfer, large language models, neutral atom qubits, whole-brain emulation, substrate independence, AI philosophy, quantum computing, knowledge persistence</news:keywords>
+    <news:keywords>фільм Lucy 2014, Luc Besson, передача знань, large language models, neutral atom qubits, whole-brain emulation, незалежність від субстрату, філософія AI, квантові обчислення, збереження знань</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7344,7 +7863,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] KyberLib: Rust CRYSTALS-Kyber for Post-Quantum</news:title>
-    <news:keywords>KyberLib, Rust CRYSTALS-Kyber, post-quantum cryptography, lattice-based cryptography, quantum-resistant key exchange, NIST FIPS 203, Sebastien Rousseau, KEM, payment authentication, PQC library</news:keywords>
+    <news:keywords>KyberLib, Rust CRYSTALS-Kyber, постквантова криптографія, криптографія на основі ґраток, квантово-стійкий обмін ключами, NIST FIPS 203, Sebastien Rousseau, KEM, автентифікація платежів, PQC бібліотека</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7356,9 +7875,10 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] OpenVoice: Leading Innovation in Voice Cloning Technology</news:title>
-    <news:keywords>OpenVoice, Voice Cloning Technology, AI Synthetic Speech, Open-Source Voice Cloning, Cross-Lingual Voice Synthesis, Instant Voice Cloning, Voice Style Control, Accessibility Voice Tech, Entertainment Industry Voices, Customer Service Voice AI</news:keywords>
+    <news:keywords>OpenVoice, Технологія клонування голосу, AI синтетичне мовлення, Клонування голосу з відкритим кодом, Міжмовний синтез голосу, Миттєве клонування голосу, Управління стилем голосу, Голосові технології для доступності, Голоси для індустрії розваг, AI голосовий асистент для обслуговування клієнтів</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/uk/2026-05-17-ahentyna-inzheneriya-banky-blueprint-2026/index.html</loc>
   <news:news>
@@ -7368,9 +7888,10 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and…</news:title>
-    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
+    <news:keywords>агентична інженерія, spec-driven розробка, банки, фінансові послуги, управління ШІ, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/uk/2024-01-15-alien-studio-revoliutsiya-mystetstva-z-shi-fotohrafiyeyu/index.html</loc>
   <news:news>
@@ -7380,9 +7901,11 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Alien Studio: My Tech-to Art Journey in Photography</news:title>
-    <news:keywords>personal tech journey, Rust discovery, AI exploration, Quantum Computing, art and photography fusion, Alien Studio, digital art creation, technology in art, innovative photography, artistic rediscovery</news:keywords>
+    <news:keywords>особиста технологічна подорож, відкриття Rust, дослідження AI, Quantum Computing, поєднання мистецтва та фотографії, Alien Studio, створення цифрового мистецтва, технології в мистецтві, інноваційна фотографія, художнє перевідкриття</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/uk/2018-02-04-nova-kryptovaluta-shvydshe-rishennia-dlia-platezhiv/index.html</loc>
   <news:news>
@@ -7395,6 +7918,7 @@
     <news:keywords>pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/uk/2018-01-09-rozuminnia-tekhnolohiyi-za-blokcheinom/index.html</loc>
   <news:news>
@@ -7416,9 +7940,12 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Quantum-Safe Payments: Why the Industry Must Act Now</news:title>
-    <news:keywords>quantum-safe payments, post-quantum cryptography, SEPA, SWIFT gpi, ISO 20022, financial services security, EPAA, harvest-now decrypt-later, cryptographic agility, Sebastien Rousseau</news:keywords>
+    <news:keywords>квантово-захищені платежі, пост-квантова криптографія, SEPA, SWIFT gpi, ISO 20022, безпека фінансових послуг, EPAA, harvest-now decrypt-later, криптографічна гнучкість, Sebastien Rousseau</news:keywords>
   </news:news>
 </url>
+
+
+
 <url>
   <loc>https://sebastienrousseau.com/uk/2024-02-12-akande-holosovyy-asystent-osobyste-ta-vykonavche-asystyrovannia/index.html</loc>
   <news:news>
@@ -7428,7 +7955,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Àkàndé: GPT-Powered Voice Assistant for Executives</news:title>
-    <news:keywords>Àkàndé, Voice Assistant, Natural Language Understanding, PDF Summaries, Efficient Caching, OpenAI GPT, Executive Assistance, Personal Assistance, Digital Assistants, Technology Innovation</news:keywords>
+    <news:keywords>Àkàndé, Голосовий асистент, Розуміння природної мови, Резюме PDF, Ефективне кешування, OpenAI GPT, Виконавча допомога, Особиста допомога, Цифрові асистенти, Технологічні інновації</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7440,7 +7967,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Bitcoin: A Year In Review of the First Cryptocurrency</news:title>
-    <news:keywords>bitcoin, cryptocurrency, blockchain, decentralized finance, digital currency, peer-to-peer payments, digital gold, programmable money, future of money, financial revolution</news:keywords>
+    <news:keywords>bitcoin, cryptocurrency, blockchain, децентралізовані фінанси, цифрова валюта, однорангові платежі, цифрове золото, програмовані гроші, майбутнє грошей, фінансова революція</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7476,7 +8003,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] AI Trends 2024: Insights and Predictions for the Future</news:title>
-    <news:keywords>AI trends 2024, generative AI, AI in education, AI cybersecurity, AI finance, AI content creation, AI space exploration, ethical AI, AI in retail, AI analytics</news:keywords>
+    <news:keywords>тенденції ШІ 2024, генеративний ШІ, ШІ в освіті, кібербезпека ШІ, ШІ у фінансах, створення контенту ШІ, дослідження космосу ШІ, етичний ШІ, ШІ в роздрібній торгівлі, аналітика ШІ</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7488,7 +8015,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Google Gemma AI: Transforming Open-Source AI Development</news:title>
-    <news:keywords>Google Gemma AI, open-source AI model, Gemma technical architecture, Gemma 2B 7B, ethical AI, AI integration macOS, AI enterprise solutions, conversational AI, data analysis AI, AI for edge devices</news:keywords>
+    <news:keywords>Google Gemma AI, модель ШІ з відкритим кодом, технічна архітектура Gemma, Gemma 2B 7B, етичний ШІ, інтеграція AI macOS, корпоративні рішення AI, розмовний AI, аналіз даних AI, AI для edge-пристроїв</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7500,7 +8027,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] EU's AI Act: Pioneering Ethical AI Regulation Worldwide</news:title>
-    <news:keywords>EU AI Act, Artificial Intelligence regulation, Ethical AI framework, AI risk management, AI innovation, AI transparency, AI consumer rights, AI governance, AI standards, AI ethics</news:keywords>
+    <news:keywords>EU AI Act, регулювання штучного інтелекту, етична рамка ШІ, управління ризиками ШІ, інновації ШІ, прозорість ШІ, права споживачів ШІ, управління ШІ, стандарти ШІ, етика ШІ</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7512,9 +8039,10 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Quantum Algorithm Challenges Lattice-Based Cryptography</news:title>
-    <news:keywords>quantum computing, quantum algorithm, lattice cryptography, LWE, encryption, post-quantum cryptography, cybersecurity, Yilei Chen, cryptography research, security threats</news:keywords>
+    <news:keywords>квантові обчислення, квантовий алгоритм, криптографія на ґратках, LWE, шифрування, постквантова криптографія, кібербезпека, Yilei Chen, дослідження в криптографії, загрози безпеці</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/uk/2026-05-12-iso-20022-pacs008-strukturovana-adresa-deadline/index.html</loc>
   <news:news>
@@ -7524,7 +8052,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] The November 2026 pacs.008 Structured-Address Deadline: A Six-Month…</news:title>
-    <news:keywords>ISO 20022, pacs.008, SWIFT CBPR+, structured address, November 2026, postal address, TwnNm, Ctry, StrtNm, BldgNb</news:keywords>
+    <news:keywords>ISO 20022, pacs.008, SWIFT CBPR+, структурована адреса, листопад 2026, поштова адреса, TwnNm, Ctry, StrtNm, BldgNb</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7536,7 +8064,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Qiskit &amp; Quantum Fourier Transform for Credit Ratio Analysis</news:title>
-    <news:keywords>quantum computing, finance, credit ratio analysis, Qiskit, Quantum Fourier Transform, IBM, machine learning, artificial intelligence, financial risk assessment, creditworthiness</news:keywords>
+    <news:keywords>квантові обчислення, фінанси, аналіз кредитних коефіцієнтів, Qiskit, Quantum Fourier Transform, IBM, машинне навчання, штучний інтелект, оцінка фінансових ризиків, кредитоспроможність</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7548,7 +8076,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</news:title>
-    <news:keywords>quantum computing, quantum-resistant cryptography, CRYSTALS-Kyber, cryptography, security, banking, financial, encryption, data protection, future-proof</news:keywords>
+    <news:keywords>квантові обчислення, квантово-стійка криптографія, CRYSTALS-Kyber, криптографія, безпека, банківська справа, фінансовий, шифрування, захист даних, стійкий до майбутнього</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7584,7 +8112,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Automating ISO 20022 Payment Files Creation with Pain001</news:title>
-    <news:keywords>pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation</news:keywords>
+    <news:keywords>pain001, iso 20022, автоматизація платежів, скорочення витрат, обробка платежів, платіжні файли, ініціювання платежів, pain message, pain message standards, pain message validation</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7596,10 +8124,21 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Revolutionising Finance with AI-Enhanced Quantum Algorithms</news:title>
-    <news:keywords>Quantum Computing, AI Algorithms, Financial Mathematics, Banking Technology, Risk Management, Algorithm Design, Data Analysis, Investment Strategies, Quantum Finance, Machine Learning</news:keywords>
+    <news:keywords>Quantum Computing, Алгоритми ШІ, Фінансова математика, Банківські технології, Управління ризиками, Розробка алгоритмів, Аналіз даних, Інвестиційні стратегії, Quantum Finance, Machine Learning</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/uk/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>uk</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>Токенізовані депозити у 2026 році: банківські послуги, конкуренція зі…</news:title>
+    <news:keywords>токенізовані депозити 2026, tokenized deposits banking, депозитні токени, Great British Tokenised Deposits, Lloyds цифрові активи, stablecoins, комерційні банківські гроші, BIS stablecoins, Project Agora, уніфікований реєстр</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/uk/2023-10-26-libmake-henerator-kodu-dlya-rust-bibliotek/index.html</loc>
   <news:news>
@@ -7609,9 +8148,10 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Streamlining Rust Library Development with Code Generation</news:title>
-    <news:keywords>Rust, library, development, code, generator, boilerplate, best, practices, quality, reliable</news:keywords>
+    <news:keywords>Rust, бібліотека, розробка, код, генератор, boilerplate, найкращі, практики, якість, надійний</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/uk/2023-10-09-shokunin-naishvydshyi-rust-statychnyy-henerator/index.html</loc>
   <news:news>
@@ -7621,7 +8161,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Static Site Generator: Fastest Rust-Based SSG</news:title>
-    <news:keywords>pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation</news:keywords>
+    <news:keywords>pain001, iso 20022, автоматизація платежів, зниження витрат, обробка платежів, платіжні файли, ініціювання платежів, pain message, pain message standards, pain message validation</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7633,7 +8173,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Fast Real-Time Speech Recognition on macOS: OpenAI Whisper</news:title>
-    <news:keywords>OpenAI Whisper, Metal Performance Shaders, macOS speech recognition, real-time transcription, voice activity detection, GPU acceleration, Python integration, speech-to-text macOS, energy-efficient speech detection, Apple silicon</news:keywords>
+    <news:keywords>OpenAI Whisper, Metal Performance Shaders, розпізнавання мовлення macOS, транскрипція в реальному часі, виявлення голосової активності, GPU-прискорення, інтеграція Python, speech-to-text macOS, енергоефективне виявлення мовлення, Apple silicon</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7657,7 +8197,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Unlocking Gemini 1.5: Google's AI Revolution Explained</news:title>
-    <news:keywords>Gemini 1.5, Google AI, Mixture-of-Experts architecture, computational efficiency, context window expansion, AI innovation, data analysis transformation, in-context learning, AI use cases, technology revolution</news:keywords>
+    <news:keywords>Gemini 1.5, Google AI, архітектура Mixture-of-Experts, обчислювальна ефективність, розширення контекстного вікна, інновації AI, трансформація аналізу даних, навчання в контексті, варіанти використання AI, технологічна революція</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7669,7 +8209,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Quantum Key Distribution Revolutionising Security in Banking</news:title>
-    <news:keywords>Quantum Key Distribution (QKD), Quantum Security, Banking, Financial Industry, Digital Finance, Cybersecurity, Quantum Computing, HSBC, Quantum Protection Trial, Financial Transactions</news:keywords>
+    <news:keywords>Квантовий розподіл ключів (QKD), Квантова безпека, Banking, Фінансова індустрія, Цифрові фінанси, Кібербезпека, Квантові обчислення, HSBC, Quantum Protection Trial, Фінансові транзакції</news:keywords>
   </news:news>
 </url>
 
@@ -7725,6 +8265,8 @@
 
 
 
+
+
 <url>
   <loc>https://sebastienrousseau.com/yo/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
   <news:news>
@@ -7733,10 +8275,24 @@
       <news:language>yo</news:language>
     </news:publication>
     <news:publication_date>2026-05-24T06:06:06+00:00</news:publication_date>
-    <news:title>UK Payments Forward Plan 2026: Stablecoins, Ẹnu-Ọ̀nà Bankì, Tókènì, Agent</news:title>
+    <news:title>UK Payments Forward Plan ní 2026: Stablecoins, Ẹnu-Ọ̀nà Bankì, Àwọn Ìfowópamọ́…</news:title>
     <news:keywords>UK Payments Forward Plan 2026, stablecoins UK, àwọn ìfowópamọ́ tókènì UK, ẹnu-ọ̀nà bankì FCA, ìṣọ̀kan PSR FCA, ìsanwó AI agent UK, Wholesale Digital Markets Champion, Chris Woolard, ìṣàkóso iṣẹ́-ìsanwó</news:keywords>
   </news:news>
 </url>
+
+<url>
+  <loc>https://sebastienrousseau.com/yo/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>yo</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>Cloud Native Banking ní 2026: Kubernetes, DORA, Ipa-ọba, àti Òpin Ìpínyà…</news:title>
+    <news:keywords>cloud native banking 2026, Kubernetes àwọn bánkì, àwọn ilé-iṣẹ́ owó àwòsánmà, DORA 2026, ìrójú àwòsánmà, Red Hat OpenShift, Portworx, àpapọ̀ VM container, ọládì àwòsánmà bánkì, ìgbẹ́kẹ̀lé àwòsánmà iṣẹ́ owó</news:keywords>
+  </news:news>
+</url>
+
 
 
 
@@ -7773,6 +8329,18 @@
 
 
 
+<url>
+  <loc>https://sebastienrousseau.com/yo/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>yo</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>Àdéposito Tokenized ní 2026: Iṣẹ́ Báńkì, Ìdíje Stablecoin, àti Ipò Owó Báńkì…</news:title>
+    <news:keywords>ìfipamọ́ àmì 2026, tokenized deposits ilé-ifowopamọ́, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, owó ilé-ifowopamọ́ iṣòwò, BIS stablecoins, Project Agora, unified ledger</news:keywords>
+  </news:news>
+</url>
 
 
 
@@ -7785,7 +8353,7 @@
     </news:publication>
     <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
     <news:title>Ìkọ́lé Ìpìlẹ̀ Ìkùukùu Tó Dára Jùlọ ní 2026: Ìlànà AI-Native, Multi-Cloud…</news:title>
-    <news:keywords>cloud architecture 2026, AI-native infrastructure, multi-cloud, sovereign cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, sovereign AI, open-weight models</news:keywords>
+    <news:keywords>ètò àpẹẹrẹ cloud 2026, AI-native infrastructure, multi-cloud, sovereign cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, sovereign AI, open-weight models</news:keywords>
   </news:news>
 </url>
 
@@ -7842,6 +8410,8 @@
 
 
 
+
+
 <url>
   <loc>https://sebastienrousseau.com/ro/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
   <news:news>
@@ -7854,6 +8424,20 @@
     <news:keywords>UK Payments Forward Plan 2026, stablecoinuri UK, depozite tokenizate UK, open banking FCA, consolidare PSR FCA, plăți agentice UK, Wholesale Digital Markets Champion, Chris Woolard, reglementarea serviciilor de plată</news:keywords>
   </news:news>
 </url>
+
+<url>
+  <loc>https://sebastienrousseau.com/ro/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ro</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>Banking cloud-native în 2026: Kubernetes, DORA, suveranitate și sfârșitul…</news:title>
+    <news:keywords>banking cloud native 2026, Kubernetes bănci, instituții financiare cloud, DORA 2026, reziliență cloud, Red Hat OpenShift, Portworx, coexistență VM container, suveranitate cloud bancară, dependență cloud servicii financiare</news:keywords>
+  </news:news>
+</url>
+
 
 
 
@@ -7890,6 +8474,18 @@
 
 
 
+<url>
+  <loc>https://sebastienrousseau.com/ro/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ro</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>Depozite tokenizate în 2026: servicii bancare, concurența stablecoinurilor și…</news:title>
+    <news:keywords>depozite tokenizate 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, bani bancă comercială, BIS stablecoins, Project Agora, unified ledger</news:keywords>
+  </news:news>
+</url>
 
 
 
@@ -8050,6 +8646,8 @@
     <news:keywords>Yilei Chen, LWE, ошибка в алгоритме, решётчатая криптография, ML-KEM, постквантовая безопасность, академическая проверка</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/ru/2023-11-05-matematicheskie-i-kriptograficheskie-konstanty-dlya-rust/index.html</loc>
   <news:news>
@@ -8062,6 +8660,8 @@
     <news:keywords>константы, Rust, криптография, математика, безопасность, простые числа, π, e, эллиптические кривые</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/ru/2026-05-18-kvantovaya-kriptografiya-standarty-razvitiye-2026/index.html</loc>
   <news:news>
@@ -8122,6 +8722,7 @@
     <news:keywords>dtt, дата, время, Rust, временные зоны, ISO 8601, финансовые вычисления, отчётность, открытый код</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/ru/2024-01-23-dostizheniya-v-inzhenerii-promptov-ii/index.html</loc>
   <news:news>
@@ -8158,7 +8759,18 @@
     <news:keywords>Alien Studio, ИИ-фотография, генеративные модели, искусство, креативность, Stable Diffusion, Midjourney, prompt-инжиниринг</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/ru/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>Облачно-нативный банкинг в 2026 году: Kubernetes, DORA, суверенитет и конец…</news:title>
+    <news:keywords>облачно-нативный банкинг 2026, Kubernetes банки, финансовые институты облако, DORA 2026, облачная устойчивость, Red Hat OpenShift, Portworx, сосуществование VM контейнер, облачный суверенитет банков, зависимость финансовых услуг от облака</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/ru/2023-11-19-crystals-kyber-zashchitnyi-algoritm-v-kvantovuyu-epokhu/index.html</loc>
   <news:news>
@@ -8231,6 +8843,7 @@
     <news:keywords>FHE, гомоморфное шифрование, конфиденциальность, банковская безопасность, постквантовая криптография, машинное обучение, частные вычисления</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/ru/2023-12-25-revolyutsiya-finansov-s-kvantovymi-algoritmami-usilennymi-ii/index.html</loc>
   <news:news>
@@ -8267,6 +8880,7 @@
     <news:keywords>Static Site Generator, статический генератор сайтов, Rust, SSG, производительность, SEO, JSON-LD, доступность, open source</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/ru/2024-01-01-trendy-ii-2024-perspektivy-i-prognozy/index.html</loc>
   <news:news>
@@ -8291,6 +8905,7 @@
     <news:keywords>передача знаний, наставничество, ИИ, квантовые технологии, обучение, банковская инженерия, развитие команд</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/ru/2018-01-02-blockchain-tekhnologiya-kotoraya-imeet-znachenie-v-2018/index.html</loc>
   <news:news>
@@ -8303,6 +8918,10 @@
     <news:keywords>блокчейн, распределённый реестр, смарт-контракты, токенизация, Ethereum, доверие, прозрачность, финансовые услуги, цифровая трансформация</news:keywords>
   </news:news>
 </url>
+
+
+
+
 <url>
   <loc>https://sebastienrousseau.com/ru/2024-04-15-kvantovyi-algoritm-brosaet-vyzov-reshetchatoi-kriptografii/index.html</loc>
   <news:news>
@@ -8315,6 +8934,7 @@
     <news:keywords>квантовый алгоритм, LWE, Learning With Errors, решётчатая криптография, ML-KEM, постквантовая безопасность, исследования</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/ru/2026-04-11-kvantovye-porogi-snova-dvizhutsya/index.html</loc>
   <news:news>
@@ -8363,6 +8983,7 @@
     <news:keywords>MM1, Apple, мультимодальные LLM, vision-language, предобучение, in-context learning, эмерджентные способности, исследовательская статья</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/ru/2024-03-08-rustlogs-prodvinutaya-biblioteka-zhurnalirovaniya-dlya-rust/index.html</loc>
   <news:news>
@@ -8447,7 +9068,18 @@
     <news:keywords>IBM Qiskit, квантовое преобразование Фурье, QFT, кредитный анализ, банковские риски, квантовая оптимизация, финансовое моделирование</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/ru/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>Токенизированные депозиты в 2026 году: банковские услуги, конкуренция со…</news:title>
+    <news:keywords>токенизированные депозиты 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, коммерческие банковские деньги, BIS stablecoins, Project Agora, unified ledger</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/ru/2025-09-01-kvantovo-zashchishchennye-platezhi-epaa/index.html</loc>
   <news:news>
@@ -8472,6 +9104,7 @@
     <news:keywords>Google Gemma, open source, LLM, Gemini, локальное развёртывание, банковский ИИ, конфиденциальность, дистилляция знаний</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/ru/2023-10-26-libmake-generator-koda-dlya-bibliotek-rust/index.html</loc>
   <news:news>
@@ -8542,6 +9175,8 @@
   </news:news>
 </url>
 
+
+
 <url>
   <loc>https://sebastienrousseau.com/cs/2026-05-18-kvantova-kryptografie-standardy-vyvoj-2026/index.html</loc>
   <news:news>
@@ -8557,6 +9192,9 @@
 
 
 
+
+
+
 <url>
   <loc>https://sebastienrousseau.com/cs/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
   <news:news>
@@ -8569,6 +9207,25 @@
     <news:keywords>UK Payments Forward Plan 2026, stablecoiny UK, tokenizované vklady UK, open banking FCA, konsolidace PSR FCA, agentní platby UK, Wholesale Digital Markets Champion, Chris Woolard, regulace platebních služeb</news:keywords>
   </news:news>
 </url>
+
+
+<url>
+  <loc>https://sebastienrousseau.com/cs/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>Cloud native bankovnictví v roce 2026: Kubernetes, DORA, suverenita a konec…</news:title>
+    <news:keywords>cloud native bankovnictví 2026, Kubernetes banky, finanční instituce cloud, DORA 2026, cloudová odolnost, Red Hat OpenShift, Portworx, koexistence VM a kontejnerů, cloudová suverenita bank, závislost finančních služeb na cloudu</news:keywords>
+  </news:news>
+</url>
+
+
+
+
+
 
 
 
@@ -8608,6 +9265,19 @@
 
 
 
+
+<url>
+  <loc>https://sebastienrousseau.com/cs/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>Tokenizované vklady v roce 2026: bankovní služby, konkurence stablecoinů a…</news:title>
+    <news:keywords>tokenizované vklady 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoiny, komerční bankovní peníze, BIS stablecoins, Project Agora, unified ledger</news:keywords>
+  </news:news>
+</url>
 
 
 
@@ -8685,6 +9355,8 @@
     <news:keywords>QKD, distribuzione quantistica chiavi, sicurezza bancaria, crittografia quantistica, BB84, BBM92</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/it/2024-04-01-openvoice-innovazione-di-punta-nella-clonazione-vocale/index.html</loc>
   <news:news>
@@ -8721,6 +9393,7 @@
     <news:keywords>FHE, cifratura omomorfica, banking, post-quantistica, privacy, calcolo sicuro</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/it/2026-05-15-rendimento-nascosto-decifrare-i-depositi-blackrock-brsrv-bstbl-genius-act/index.html</loc>
   <news:news>
@@ -8831,6 +9504,18 @@
 </url>
 
 <url>
+  <loc>https://sebastienrousseau.com/it/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>Banca cloud nativa nel 2026: Kubernetes, DORA, sovranità e la fine della…</news:title>
+    <news:keywords>banking cloud native 2026, Kubernetes banche, cloud istituzioni finanziarie, DORA 2026, resilienza cloud, Red Hat OpenShift, Portworx, coesistenza VM container, sovranità cloud banche, dipendenza cloud servizi finanziari</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/it/2024-03-08-rustlogs-libreria-avanzata-di-logging-per-rust/index.html</loc>
   <news:news>
     <news:publication>
@@ -8914,6 +9599,7 @@
     <news:keywords>Shor, qubit, RSA, ECC, PQC, soglia quantistica, harvest now decrypt later</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/it/2026-05-24-uk-pagamenti-forward-plan-stablecoins-open-banking-tokenised-pagamenti-2026/index.html</loc>
   <news:news>
@@ -8938,6 +9624,7 @@
     <news:keywords>MM1, Apple, multimodale, LLM, pre-training, visione, IA</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/it/2024-03-04-le-chat-di-mistral-ai-una-nuova-era-dellia-conversazionale/index.html</loc>
   <news:news>
@@ -8974,6 +9661,7 @@
     <news:keywords>Static Site Generator, SSG, Rust, generatore di siti statici, prestazioni, SEO, accessibilità, JSON-LD</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/it/2024-01-15-rivoluzione-dellarte-con-la-fotografia-ia-alien-studio/index.html</loc>
   <news:news>
@@ -9010,6 +9698,9 @@
     <news:keywords>criptovaluta, pagamenti istantanei, regolamento, blockchain, scalabilità, transazioni</news:keywords>
   </news:news>
 </url>
+
+
+
 <url>
   <loc>https://sebastienrousseau.com/it/2026-05-19-globali-wholesale-pagamenti-economia-2026/index.html</loc>
   <news:news>
@@ -9034,6 +9725,20 @@
     <news:keywords>HSH, hash, digest, Rust, crittografia, post-quantistica, password, autenticazione</news:keywords>
   </news:news>
 </url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
+    <news:title>Una Nuova Criptovaluta e una Soluzione di Pagamento più Rapida</news:title>
+    <news:keywords>EXTC, ERC-223, contratti intelligenti Ethereum, pagamenti più rapidi, criptovaluta, pagamenti blockchain, token di pagamento, finanza decentralizzata, ERC-20, pagamenti transfrontalieri</news:keywords>
+  </news:news>
+</url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/it/2024-01-08-ottimizzare-lanalisi-del-rapporto-di-credito-con-ibm-qiskit-e-fourier-quantistica/index.html</loc>
   <news:news>
@@ -9164,6 +9869,19 @@
     <news:publication_date></news:publication_date>
     <news:title>Libmake: un generatore di codice per ridurre i compiti ripetitivi e costruire…</news:title>
     <news:keywords>Libmake, Rust, generatore di codice, scaffolding, automazione, open source</news:keywords>
+  </news:news>
+</url>
+
+<url>
+  <loc>https://sebastienrousseau.com/it/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>Depositi tokenizzati nel 2026: servizi bancari, concorrenza degli stablecoins…</news:title>
+    <news:keywords>tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, moneta bancaria commerciale, BIS stablecoins, Project Agora, unified ledger</news:keywords>
   </news:news>
 </url>
 
@@ -9347,6 +10065,7 @@
     <news:keywords>ホールセール決済 2026, グローバル決済経済学, ISO 20022, RTGS, クロスボーダー決済, BIS CPMI, FSB, Swift CBPR+, G20ロードマップ, 即時グロス決済</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/ja/2024-03-18-marutimoodaru-llm-de-ai-wo-zenshin-mm1-kara-no-insaito/index.html</loc>
   <news:news>
@@ -9359,6 +10078,9 @@
     <news:keywords>MM1, Apple AI, マルチモーダル LLM, ビジョン言語, 事前学習, スケーリング法則</news:keywords>
   </news:news>
 </url>
+
+
+
 <url>
   <loc>https://sebastienrousseau.com/ja/2023-12-04-dtt-raiburari-de-rust-no-nichiji-wo-shuutoku-suru/index.html</loc>
   <news:news>
@@ -9443,6 +10165,7 @@
     <news:keywords>libmake, コードジェネレータ, Rust, Cargo, ライブラリ, テンプレート, 開発者ツール, ベストプラクティス</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/ja/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
   <news:news>
@@ -9467,7 +10190,18 @@
     <news:keywords>CRYSTALS-Kyber, 量子耐性, 鍵カプセル化, KEM, NIST PQC, 格子ベース暗号, ML-KEM, FIPS 203</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/ja/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ja</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>2026 年のクラウドネイティブ・バンキング：Kubernetes、DORA、主権、そして VM とコンテナの分断の終わり</news:title>
+    <news:keywords>クラウドネイティブバンキング2026, Kubernetes銀行, 金融機関クラウド, DORA 2026, クラウドレジリエンス, Red Hat OpenShift, Portworx, VM コンテナ共存, 銀行クラウド主権, 金融サービスクラウド依存</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/ja/2024-01-08-ibm-qiskit-to-ryoushi-fourier-henkan-de-shinyou-bunseki-saitekika/index.html</loc>
   <news:news>
@@ -9600,6 +10334,7 @@
     <news:keywords>AI, 音声認識, 音声テキスト変換, Whisper, 翻訳, 多言語, オーディオインサイト</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/ja/2024-03-12-openai-whisper-de-macos-no-riarutaimu-onsei-ninshiki-wo-kakushin/index.html</loc>
   <news:news>
@@ -9612,6 +10347,7 @@
     <news:keywords>OpenAI Whisper, macOS, Metal Performance Shaders, MPS, リアルタイム, 音声認識, Apple Silicon</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/ja/2018-02-04-arata-na-ankouka-tsuuka-to-koukousoku-kessai-no-shourai/index.html</loc>
   <news:news>
@@ -9624,6 +10360,8 @@
     <news:keywords>暗号資産, 決済, リアルタイム決済, トークン, ICO, ブロックチェーン, フィンテック, 国際送金</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/ja/2026-05-17-eejentikku-enjiniaringu-ginkou-no-2026-sekkeizu/index.html</loc>
   <news:news>
@@ -9636,6 +10374,21 @@
     <news:keywords>エージェンティック AI, エージェント, AI オーケストレーション, MCP, AIBOM, EU AI 法, 銀行ソフトウェア, Bedrock Agents, Vertex AI Agent Builder, Azure AI Foundry</news:keywords>
   </news:news>
 </url>
+
+<url>
+  <loc>https://sebastienrousseau.com/ja/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ja</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
+    <news:title>新たな暗号資産と高速決済ソリューションの公開</news:title>
+    <news:keywords>EXTC、ERC-223、Ethereumスマートコントラクト、高速決済、暗号資産、ブロックチェーン決済、ペイメントトークン、分散型金融、ERC-20、国際送金</news:keywords>
+  </news:news>
+</url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/ja/2018-01-09-burokkuchein-no-gijutsu-wo-rikai-suru/index.html</loc>
   <news:news>
@@ -9684,6 +10437,7 @@
     <news:keywords>ブロックチェーン, 分散型台帳, 暗号資産, スマートコントラクト, トークン化, フィンテック, 信頼, 透明性</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/ja/2024-01-23-ai-puronputo-enjiniaringu-no-shinpo/index.html</loc>
   <news:news>
@@ -9744,7 +10498,18 @@
     <news:keywords>Gemma, Google, オープンソース AI, LLM, Llama, ファインチューニング, デバイス内 AI</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/ja/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ja</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>2026年のトークン化預金：銀行サービス、ステーブルコインとの競争、そしてプログラム可能な商業銀行マネーの現状</news:title>
+    <news:keywords>トークン化預金2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, 商業銀行通貨, BIS stablecoins, Project Agora, unified ledger</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/ja/2024-03-08-rustlogs-rust-muke-koudo-roguingu-raiburari/index.html</loc>
   <news:news>
@@ -9757,6 +10522,7 @@
     <news:keywords>RustLogs, Rust, ロギング, 構造化ログ, JSON, トレーシング, 観測可能性, 本番</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/ja/2023-10-09-shokunin-saisoku-no-rust-sei-shizen-saito-jenereta/index.html</loc>
   <news:news>
@@ -9834,6 +10600,8 @@
 
 
 
+
+
 <url>
   <loc>https://sebastienrousseau.com/he/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
   <news:news>
@@ -9846,6 +10614,20 @@
     <news:keywords>UK Payments Forward Plan 2026, סטייבלקוינים בריטניה, פיקדונות מתורמזים בריטניה, בנקאות פתוחה FCA, איחוד PSR FCA, תשלומי סוכני AI בריטניה, Wholesale Digital Markets Champion, Chris Woolard, רגולציית שירותי תשלום</news:keywords>
   </news:news>
 </url>
+
+<url>
+  <loc>https://sebastienrousseau.com/he/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>בנקאות cloud native ב-2026: Kubernetes, DORA, ריבונות וסוף הפיצול בין VM…</news:title>
+    <news:keywords>בנקאות ענן-נייטיב 2026, Kubernetes בנקים, ענן מוסדות פיננסיים, DORA 2026, חוסן ענן, Red Hat OpenShift, Portworx, דו-קיום VM ומכולות, ריבונות ענן בנקים, תלות שירותים פיננסיים בענן</news:keywords>
+  </news:news>
+</url>
+
 
 
 
@@ -9882,6 +10664,18 @@
 
 
 
+<url>
+  <loc>https://sebastienrousseau.com/he/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>פיקדונות מתויגים ב-2026: שירותי בנקאות, תחרות סטייבלקוינים והסטטוס של כספי…</news:title>
+    <news:keywords>tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, כסף בנקאי מסחרי, BIS stablecoins, Project Agora, unified ledger</news:keywords>
+  </news:news>
+</url>
 
 
 <url>
@@ -9946,6 +10740,11 @@
 
 
 
+
+
+
+
+
 <url>
   <loc>https://sebastienrousseau.com/sv/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
   <news:news>
@@ -9960,7 +10759,18 @@
 </url>
 
 
-
+<url>
+  <loc>https://sebastienrousseau.com/sv/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>Cloud native banking 2026: Kubernetes, DORA, suveränitet och slutet på klyftan…</news:title>
+    <news:keywords>molnbaserad bankverksamhet 2026, Kubernetes banker, finansiella institutioner molnet, DORA 2026, molnresistens, Red Hat OpenShift, Portworx, VM container samexistens, bank molnsouveränitet, finansiella tjänster molnberoende</news:keywords>
+  </news:news>
+</url>
 
 
 
@@ -9977,6 +10787,14 @@
     <news:keywords>molnarkitektur 2026, AI-nativ infrastruktur, multi-cloud, suverän cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, suverän AI, öppna viktmodeller</news:keywords>
   </news:news>
 </url>
+
+
+
+
+
+
+
+
 
 
 
@@ -10015,6 +10833,19 @@
 
 
 <url>
+  <loc>https://sebastienrousseau.com/sv/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>Tokeniserade depositioner 2026: banktjänster, konkurrens från stablecoins och…</news:title>
+    <news:keywords>tokeniserade insättningar 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, kommersiella bankpengar, BIS stablecoins, Project Agora, unified ledger</news:keywords>
+  </news:news>
+</url>
+
+<url>
   <loc>https://sebastienrousseau.com/vi/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -10038,6 +10869,11 @@
     <news:keywords>thanh toán bán buôn 2026, kinh tế học thanh toán toàn cầu, ISO 20022, RTGS, thanh toán xuyên biên giới, BIS CPMI, FSB, Swift CBPR+, lộ trình G20, thanh toán tổng tức thời</news:keywords>
   </news:news>
 </url>
+
+
+
+
+
 <url>
   <loc>https://sebastienrousseau.com/vi/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
   <news:news>
@@ -10050,6 +10886,25 @@
     <news:keywords>UK Payments Forward Plan 2026, stablecoin Anh quốc, tiền gửi tokenized UK, ngân hàng mở FCA, hợp nhất PSR FCA, thanh toán tác tử AI UK, Wholesale Digital Markets Champion, Chris Woolard, quản lý dịch vụ thanh toán</news:keywords>
   </news:news>
 </url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>Ngân hàng cloud native năm 2026: Kubernetes, DORA, chủ quyền và hồi kết của…</news:title>
+    <news:keywords>cloud native banking 2026, Kubernetes ngân hàng, tổ chức tài chính đám mây, DORA 2026, khả năng phục hồi đám mây, Red Hat OpenShift, Portworx, cùng tồn tại VM container, chủ quyền đám mây ngân hàng, phụ thuộc đám mây dịch vụ tài chính</news:keywords>
+  </news:news>
+</url>
+
+
+
+
+
+
+
 
 <url>
   <loc>https://sebastienrousseau.com/vi/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html</loc>
@@ -10061,6 +10916,19 @@
     <news:publication_date>2026-05-22T06:06:06+00:00</news:publication_date>
     <news:title>Sự Đổi Mới Acid Jazz tại Anh: Nghệ Sĩ, Concert và Album 2026</news:title>
     <news:keywords>acid jazz Anh 2026, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott&apos;s, Bangs and Talbot, Chris Bangs, Mick Talbot, Smokin Aces</news:keywords>
+  </news:news>
+</url>
+
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>Tiền gửi mã hóa năm 2026: Dịch vụ ngân hàng, cạnh tranh với stablecoin và hiện…</news:title>
+    <news:keywords>tiền gửi token hóa 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds tài sản kỹ thuật số, stablecoins, tiền ngân hàng thương mại, BIS stablecoins, Project Agora, sổ cái hợp nhất</news:keywords>
   </news:news>
 </url>
 
@@ -10208,6 +11076,8 @@
     <news:keywords>płatności hurtowe 2026, ekonomia płatności globalnych, ISO 20022, RTGS, płatności transgraniczne, BIS CPMI, FSB, Swift CBPR+, mapa drogowa G20, rozrachunek brutto w czasie rzeczywistym</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/pl/2023-11-05-stale-matematyczne-i-kryptograficzne-dla-bezpieczenstwa-rust/index.html</loc>
   <news:news>
@@ -10232,6 +11102,8 @@
     <news:keywords>FHE, homomorficzne szyfrowanie, kwanty, bankowość, prywatność, kryptografia</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/pl/2024-04-01-openvoice-innowacja-w-klonowaniu-glosu/index.html</loc>
   <news:news>
@@ -10328,6 +11200,7 @@
     <news:keywords>generatywna AI, LLM, GPT, diffusion, sztuczna inteligencja, ChatGPT, modele językowe</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/pl/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
   <news:news>
@@ -10352,7 +11225,18 @@
     <news:keywords>ISO 20022, pacs.008, pacs.009, pacs.004, pacs.003, pain.001, CBPR+, SWIFT, SR2026, strukturalny adres</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>Bankowość cloud native w 2026 roku: Kubernetes, DORA, suwerenność i koniec…</news:title>
+    <news:keywords>cloud native banking 2026, Kubernetes banki, instytucje finansowe chmura, DORA 2026, odporność chmury, Red Hat OpenShift, Portworx, współistnienie VM kontener, suwerenność chmury bankowej, uzależnienie od chmury w usługach finansowych</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/pl/2024-01-15-alien-studio-rewolucja-sztuki-przez-fotografie-ai/index.html</loc>
   <news:news>
@@ -10413,6 +11297,7 @@
     <news:keywords>migracja postkwantowa, PQC, finanse korporacyjne, skarbce, G7, BIS Project Leap, kryptografia</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/pl/2023-12-11-kwantowa-dystrybucja-kluczy-rewolucja-bezpieczenstwa-w-bankowosci/index.html</loc>
   <news:news>
@@ -10449,6 +11334,7 @@
     <news:keywords>AI, kwanty, bankowość, podsumowanie 2023, fintech, LLM, kryptografia postkwantowa</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/pl/2024-02-26-google-gemma-przeksztalca-rozwoj-open-source-ai/index.html</loc>
   <news:news>
@@ -10461,6 +11347,7 @@
     <news:keywords>Gemma, Google, open source AI, LLM, modele otwarte, Gemini</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/pl/2023-09-29-automatyzacja-plikow-platnosci-iso-20022-z-pain001/index.html</loc>
   <news:news>
@@ -10473,6 +11360,7 @@
     <news:keywords>ISO 20022, pain.001, płatności, SEPA, SWIFT, Python, automatyzacja, open source</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/pl/2023-11-28-kyberlib-tarcza-rust-przed-zagrozeniami-kwantowymi/index.html</loc>
   <news:news>
@@ -10485,6 +11373,10 @@
     <news:keywords>KyberLib, CRYSTALS-Kyber, Rust, PQC, kryptografia postkwantowa, NIST, FIPS 203</news:keywords>
   </news:news>
 </url>
+
+
+
+
 <url>
   <loc>https://sebastienrousseau.com/pl/2024-03-12-rozpoznawanie-mowy-w-czasie-rzeczywistym-na-macos-z-openai-whisper/index.html</loc>
   <news:news>
@@ -10557,6 +11449,7 @@
     <news:keywords>Static Site Generator, generator stron statycznych, Rust, SSG, wydajność, SEO, dostępność, JSON-LD</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/pl/2025-09-01-platnosci-odporne-na-kwantowe-epaa/index.html</loc>
   <news:news>
@@ -10605,7 +11498,18 @@
     <news:keywords>architektura chmurowa 2026, infrastruktura natywna AI, multi-cloud, suwerenna chmura, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, suwerenna AI, modele open-weight</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>Depozyty tokenizowane w 2026 roku: usługi bankowe, konkurencja ze strony…</news:title>
+    <news:keywords>tokenizowane depozyty 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, pieniądz banku komercyjnego, BIS stablecoins, Project Agora, unified ledger</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/pl/2024-03-18-rozwoj-ai-z-multimodalnymi-llm-wnioski-z-mm1/index.html</loc>
   <news:news>
@@ -10630,6 +11534,7 @@
     <news:keywords>transfer wiedzy, AI, kwanty, konsulting, knowledge transfer, Lucy Besson</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/pl/2018-01-24-standard-tokenow-erc-20/index.html</loc>
   <news:news>
@@ -10774,6 +11679,8 @@
     <news:keywords>2026 大額支付、全球支付經濟學、ISO 20022、RTGS、跨境支付、BIS CPMI、FSB、Swift CBPR+、G20 路線圖、即時總額清算、Project Agorá、Project Mandala、Project Nexus、支付互通性、代理銀行、支付分裂、批發型 CBDC</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/zh-hant/2024-04-01-openvoice-yuyin-kelong-jishu-de-lingxian-chuangxin-tw/index.html</loc>
   <news:news>
@@ -10810,6 +11717,8 @@
     <news:keywords>EPAA, 抗量子支付, 後量子密碼學, ML-KEM, ML-DSA, SWIFT, SEPA, HNDL, NIST, FIPS 203</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/zh-hant/2024-03-12-yong-openai-whisper-biange-macos-shishi-yuyin-shibie-tw/index.html</loc>
   <news:news>
@@ -10894,6 +11803,7 @@
     <news:keywords>貝萊德, BRSRV, BSTBL, GENIUS 法案, 穩定幣, 代幣化, 貨幣市場基金, BUIDL, 以太坊, BNY Mellon</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/zh-hant/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</loc>
   <news:news>
@@ -10906,7 +11816,18 @@
     <news:keywords>UK Payments Forward Plan 2026, 英國 stablecoins, 英國 tokenised deposits, open banking FCA, PSR FCA 整併, 英國智慧代理支付, Wholesale Digital Markets Champion, Chris Woolard, 支付服務監理</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>2026 年的雲原生銀行：Kubernetes、DORA、主權與 VM 對容器分野的終結</news:title>
+    <news:keywords>雲原生銀行2026, Kubernetes銀行, 金融機構雲端, DORA 2026, 雲端韌性, Red Hat OpenShift, Portworx, 虛擬機容器共存, 銀行雲端主權, 金融服務雲端依賴</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/zh-hant/2024-01-29-ai-yinpin-fenxi-fanyi-yu-jianjie-tw/index.html</loc>
   <news:news>
@@ -11027,6 +11948,7 @@
     <news:keywords>量子演算法, 量子傅立葉變換, QFT, Grover 演算法, 金融 AI, 高盛, BBVA, 桑坦德, TerraQuantum, 風險管理</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/zh-hant/2024-03-08-rustlogs-rust-ying-yong-de-gaoji-rizhi-ku-tw/index.html</loc>
   <news:news>
@@ -11051,6 +11973,7 @@
     <news:keywords>Google Gemma, 開源 AI, Gemini, Ollama, macOS, 2B, 7B, 大型語言模型, 合倫理 AI, 企業應用</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/zh-hant/2024-04-22-gezhuang-mima-liangzi-suanfa-faxian-louhdong-tw/index.html</loc>
   <news:news>
@@ -11075,6 +11998,8 @@
     <news:keywords>EXTC, ERC-223, 以太坊, 智慧合約, 去中心化交易所, 即時貸款, 跨境支付, 金融普惠, 代幣, 區塊鏈</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/zh-hant/2023-11-28-kyberlib-duikang-liangzi-weixie-de-rust-dunpai-tw/index.html</loc>
   <news:news>
@@ -11099,6 +12024,10 @@
     <news:keywords>歐盟 AI 法案, AI 監管, 風險等級, 透明度, 基本權利, GDPR, 合倫理 AI, 高風險應用, 創新, 全球治理</news:keywords>
   </news:news>
 </url>
+
+
+
+
 <url>
   <loc>https://sebastienrousseau.com/zh-hant/2023-10-16-liangzi-shidai-shuju-baohu-hsh-haxi-ku-tw/index.html</loc>
   <news:news>
@@ -11135,6 +12064,7 @@
     <news:keywords>Alien Studio, AI 攝影, MidJourney, Rust, 人工智慧, 量子計算, 數字藝術, 攝影, 創意, 數字文藝復興</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/zh-hant/2018-01-02-quqiulian-2018-zui-zhongyao-de-jishu-tw/index.html</loc>
   <news:news>
@@ -11207,7 +12137,18 @@
     <news:keywords>區塊鏈, 以太坊, 智慧合約, Solidity, 加密貨幣, 代幣化, ERC-20, dApps, Geth, 測試網</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>2026年的代幣化存款：銀行服務、穩定幣競爭與可程式化商業銀行貨幣的現況</news:title>
+    <news:keywords>代幣化存款2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, 商業銀行貨幣, BIS stablecoins, Project Agora, unified ledger</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/zh-hant/2024-01-23-ai-tishici-gongcheng-de-jinzhan-tw/index.html</loc>
   <news:news>
@@ -11232,6 +12173,7 @@
     <news:keywords>Shor 演算法, 量子計算, 後量子密碼學, 中性原子量子位元, ECC, RSA, NIST, CRYSTALS-Kyber, 量子閾值, 錯誤糾正</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/zh-hant/2024-02-19-jiedu-gemini-google-ai-biange-jiexi-tw/index.html</loc>
   <news:news>
@@ -11364,6 +12306,8 @@
     <news:keywords>比特币, 加密货币, 区块链, 点对点, 双重支付, 挖矿, 工作量证明, ETF, 中本聪, 去中心化金融</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/zh-hans/2024-03-25-liangzi-yinhang-shidai-de-quan-tongtai-jiami/index.html</loc>
   <news:news>
@@ -11376,6 +12320,8 @@
     <news:keywords>全同态加密, FHE, 同态加密, 银行业, 金融, 量子计算, 后量子, 格密码, 隐私, Zama</news:keywords>
   </news:news>
 </url>
+
+
 <url>
   <loc>https://sebastienrousseau.com/zh-hans/2024-01-29-ai-yinpin-fenxi-fanyi-yu-jianjie/index.html</loc>
   <news:news>
@@ -11436,6 +12382,7 @@
     <news:keywords>CRYSTALS-Kyber, 后量子密码学, KEM, LWE, 格密码学, NIST, Kyber512, Kyber768, Kyber1024, 银行业</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/zh-hans/2026-05-15-beilaide-brsrv-bstbl-genius-fa-an-daibihua-mmf/index.html</loc>
   <news:news>
@@ -11460,7 +12407,18 @@
     <news:keywords>UK Payments Forward Plan 2026, 英国稳定币, 代币化存款, 开放银行 FCA, PSR FCA 整合, AI 智能体支付, Wholesale Digital Markets Champion, Chris Woolard, 支付服务监管</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
+    <news:title>2026 年的云原生银行：Kubernetes、DORA、主权与 VM 和容器分界线的终结</news:title>
+    <news:keywords>云原生银行2026, Kubernetes银行, 金融机构云, DORA 2026, 云韧性, Red Hat OpenShift, Portworx, 虚拟机容器共存, 银行云主权, 金融服务云依赖</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/zh-hans/2026-05-16-2026-zuijia-yun-jichu-jiagou/index.html</loc>
   <news:news>
@@ -11581,6 +12539,7 @@
     <news:keywords>代理式工程, 规范驱动开发, 银行, 金融服务, AI 治理, 欧盟 AI 法案, DORA, SR 11-7, COBOL 现代化, Claude Code</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/zh-hans/2024-03-18-yong-duomotai-llm-tuijin-ai-mm1-qishi/index.html</loc>
   <news:news>
@@ -11617,6 +12576,7 @@
     <news:keywords>欧盟 AI 法案, AI 监管, 风险等级, 透明度, 基本权利, GDPR, 合伦理 AI, 高风险应用, 创新, 全球治理</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/zh-hans/2026-05-12-iso-20022-pacs008-jiegouhua-dizhi-jiezhi-riqi/index.html</loc>
   <news:news>
@@ -11653,6 +12613,7 @@
     <news:keywords>Le Chat, Mistral AI, 对话式 AI, 多语言, 定制化, 离线能力, 生成式 AI, ChatGPT, 企业 AI, NLP</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/zh-hans/2023-12-25-ai-zengqiang-de-liangzi-suanfa-biange-jinrong/index.html</loc>
   <news:news>
@@ -11665,6 +12626,7 @@
     <news:keywords>量子算法, 量子傅里叶变换, QFT, Grover 算法, 金融 AI, 高盛, BBVA, 桑坦德, TerraQuantum, 风险管理</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/zh-hans/2023-12-04-yong-dtt-ku-zhangwo-rust-de-riqi-yu-shijian/index.html</loc>
   <news:news>
@@ -11689,6 +12651,10 @@
     <news:keywords>提示词工程, AI, 自定义指令, 多角色, 思维链, 向量数据库, 零样本, 小样本, 量子计算, AI 伦理</news:keywords>
   </news:news>
 </url>
+
+
+
+
 <url>
   <loc>https://sebastienrousseau.com/zh-hans/2024-02-19-jiedu-gemini-google-ai-biange-jiexi/index.html</loc>
   <news:news>
@@ -11725,6 +12691,7 @@
     <news:keywords>英国酸爵士 2026, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott’s, Bangs and Talbot, Chris Bangs, Mick Talbot, Smokin Aces</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/zh-hans/2018-02-04-xin-jiamihuobi-yu-gengkuai-zhifu-fangan/index.html</loc>
   <news:news>
@@ -11785,7 +12752,18 @@
     <news:keywords>RustLogs, RLG, Rust, 日志, 结构化日志, 异步, JSON, CEF, Logstash, 性能</news:keywords>
   </news:news>
 </url>
-
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>2026年的代币化存款：银行服务、稳定币竞争与可编程商业银行货币的现状</news:title>
+    <news:keywords>代币化存款2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, 商业银行货币, BIS stablecoins, Project Agora, unified ledger</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/zh-hans/2023-10-26-libmake-rust-ku-de-daima-shengchengqi/index.html</loc>
   <news:news>
@@ -11810,6 +12788,7 @@
     <news:keywords>区块链, 加密货币, 分布式账本, 智能合约, 去中心化金融, 供应链, 数字身份, 共识机制, 银行业, 金融科技</news:keywords>
   </news:news>
 </url>
+
 <url>
   <loc>https://sebastienrousseau.com/zh-hans/2024-01-15-alien-studio-yong-ai-sheying-biange-yishu/index.html</loc>
   <news:news>

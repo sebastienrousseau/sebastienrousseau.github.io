@@ -8,14 +8,14 @@
     <title>Akande: trợ lý giọng nói cách mạng hoá hỗ trợ cá nhân và điều hành — Sebastien Rousseau</title>
 
     <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
-<meta name="description" content="Akande — trợ lý giọng nói tiên tiến sử dụng GPT của OpenAI cho tương tác tự nhiên, tóm tắt PDF và bộ nhớ đệm hiệu quả. Được xây dựng cho cả mục đích cá nhân và điều hành.">
-<meta name="keywords" content="Akande, trợ lý giọng nói, AI, GPT, OpenAI, tóm tắt PDF, năng suất, mã nguồn mở">
+<meta name="description" content="Àkàndé là trợ lý giọng nói Python mã nguồn mở kết hợp nhận dạng giọng nói OpenAI Whisper, hoàn thành hội thoại GPT-4 và bộ nhớ đệm SQLite cục bộ — tạo bản tóm tắt PDF từ lịch sử hội thoại và lưu toàn bộ dữ liệu cục bộ.">
+<meta name="keywords" content="Àkàndé, OpenAI GPT-4, Whisper STT, bộ nhớ đệm SQLite, fpdf2, trợ lý giọng nói Python, API hoàn thành hội thoại, tạo bản tóm tắt PDF, bộ nhớ đệm SHA-256, chuyển văn bản thành giọng nói, AI trợ lý điều hành, mã nguồn mở">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
     <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+<meta name="apple-mobile-web-app-title" content="Àkàndé">
 
     <!-- Strict security headers. The headers below that can be set via
          <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
@@ -40,7 +40,7 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-Q/2hcYOl8zkG1cvXaUL3ceot0qpg3Ue58lRnzd5PRFo=' 'sha256-pFQRPeO2hBS1UmkFB+OOnRlAmaDf5CitfmiFP+IE630=' 'sha256-yolyxEPTmcHAy8lP8S7ohHjsGdON6OBaxe1G2NcGFz8=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-/tCJOQt2DTs7ZUxFpLmha3rz+IFKIxH53U8uzI+zrTw=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-DIO4XlDcldmoEtzR/OILSaUVnb7JGiOGlm/EGVc+jsM=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-WkXqq88emRlB7jKpeVB8Nc1KPJdha8gGQTXmzAlgcVU=' 'sha256-pFQRPeO2hBS1UmkFB+OOnRlAmaDf5CitfmiFP+IE630=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
@@ -67,7 +67,7 @@
          Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
          observed (real-network) LCP is 165 ms. This hint pulls the
          synthetic LCP in line with the observed value. -->
-    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-banner.webp&w=1600&format=webp&q=85" fetchpriority="high">
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
     <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
     <meta name="color-scheme" content="light dark" />
@@ -76,18 +76,19 @@
     <link rel="stylesheet" href="/_csp/6346d01ad7de2d6f.css" integrity="sha256-cmdn5aVLYjokOMehbFCVM2OVn90qAJQVGHgU/SsPTT0= sha256-LfI/OOvfKQbXmGjqT/lqFAdGuOgerwiywMKCZBxL014=" crossorigin="anonymous">
     <link rel="alternate" type="application/atom+xml" title="Nguồn cấp Atom" href="/vi/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="stylesheet" href="/highlight.a92b9694.css">
 <meta property="og:title" content="Akande: trợ lý giọng nói cách mạng hoá hỗ trợ cá nhân và điều hành — Sebastien Rousseau">
-<meta property="og:description" content="Akande — trợ lý giọng nói tiên tiến sử dụng GPT của OpenAI cho tương tác tự nhiên, tóm tắt PDF và bộ nhớ đệm hiệu quả. Được xây dựng cho cả mục đích cá nhân và điều hành.">
+<meta property="og:description" content="Àkàndé là trợ lý giọng nói Python mã nguồn mở kết hợp nhận dạng giọng nói OpenAI Whisper, hoàn thành hội thoại GPT-4 và bộ nhớ đệm SQLite cục bộ — tạo bản tóm tắt PDF từ lịch sử hội thoại và lưu toàn bộ dữ liệu cục bộ.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sebastienrousseau.com/vi/2024-02-12-akande-tro-ly-giong-noi-cach-mang-ho-tro-ca-nhan-va-dieu-hanh/">
-<meta property="og:image" content="https://cloudcdn.pro/stocks/images/akande-banner.webp">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp">
 <meta property="og:image:width" content="100vw">
 <meta property="og:image:height" content="100vh">
 <meta property="og:locale" content="vi_VN">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Akande: trợ lý giọng nói cách mạng hoá hỗ trợ cá nhân và điều hành — Sebastien Rousseau">
-<meta name="twitter:description" content="Akande — trợ lý giọng nói tiên tiến sử dụng GPT của OpenAI cho tương tác tự nhiên, tóm tắt PDF và bộ nhớ đệm hiệu quả. Được xây dựng cho cả mục đích cá nhân và điều hành.">
-<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/akande-banner.webp">
+<meta name="twitter:description" content="Àkàndé là trợ lý giọng nói Python mã nguồn mở kết hợp nhận dạng giọng nói OpenAI Whisper, hoàn thành hội thoại GPT-4 và bộ nhớ đệm SQLite cục bộ — tạo bản tóm tắt PDF từ lịch sử hội thoại và lưu toàn bộ dữ liệu cục bộ.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp">
 <link rel="canonical" href="https://sebastienrousseau.com/vi/2024-02-12-akande-tro-ly-giong-noi-cach-mang-ho-tro-ca-nhan-va-dieu-hanh/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
 <meta property="og:site_name" content="Sebastien Rousseau">
@@ -128,34 +129,34 @@
             </button>
             <div class="ap-lang-menu" role="menu" hidden>
               <div class="ap-lang-menu-grid">
-                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
-                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
-                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
-                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
-                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
-                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
-                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
-                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
-                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
-                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
-                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
-                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
-                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
-                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
-                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
-                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
-                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
-                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
-                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
-                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
-                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
-                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
-                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
-                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
-                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
-                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
-                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
-                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+                <a class="ap-lang-item" href="/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2024-02-12-akande-assistant-vocal-revolution-assistance-personnelle-et-executive/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2024-02-12-akande-hlasovy-asistent-revoluce-asistence/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2024-02-12-akande-sprachassistent-revolution-persoenlicher-und-fuehrungsassistenz/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2024-02-12-akande-asistente-de-voz-revolucion-asistencia-personal-y-ejecutiva/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2024-02-12-akande-voice-assistant-vyaktigat-aur-karyakari-sahaayata/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2024-02-12-akande-asisten-suara-revolusi-asistensi-pribadi-dan-eksekutif/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2024-02-12-akande-assistente-vocale-rivoluzione-dellassistenza-personale-ed-esecutiva/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2024-02-12-akande-onsei-ashisutanto-kojin-to-yakuin-shien-no-kakushin/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2024-02-12-akande-eumseong-bijoja-gaein-imwon-bijo-hyeokmyeong/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2024-02-12-akande-spraakassistent-revolutie-persoonlijke-en-executive-assistentie/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2024-02-12-akande-asystent-glosowy-rewolucja-asystentury-osobistej-i-wykonawczej/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2024-02-12-akande-assistente-de-voz-revolucao-da-assistencia-pessoal-e-executiva/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2024-02-12-akande-golosovoi-pomoshchnik-revolyutsiya-personalnoi-i-rukovoditelnoi-podderzhki/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2024-02-12-akande-rostassistent-personlig-och-chefsassistans/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2024-02-12-akande-phu-chuai-siang-patiwat-kan-chuai-luea/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2024-02-12-akande-ses-asistani-kisisel-ve-yonetici-asistanlik-devrimi/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2024-02-12-akande-holosovyy-asystent-osobyste-ta-vykonavche-asystyrovannia/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2024-02-12-akande-tro-ly-giong-noi-cach-mang-ho-tro-ca-nhan-va-dieu-hanh/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2024-02-12-akande-yuyin-zhushou-biange-geren-yu-gaoguan-fuwu/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2024-02-12-akande-yuyin-zhushou-biange-geren-yu-gaoguan-fuwu-tw/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
               </div>
             </div>
           </div>
@@ -167,63 +168,165 @@
 
         <section class="ap-hero">
       <h1>Akande: trợ lý giọng nói cách mạng hoá hỗ trợ cá nhân và điều hành</h1>
-      <p class="sub">Một trợ lý AI dùng GPT cho tương tác tự nhiên và tóm tắt PDF</p>
-    <nav class="article-tags" aria-label="Chủ đề"><a href="/tags/index.html#h3-akande" class="article-tag" rel="tag">Akande</a><a href="/tags/index.html#h3-tro-ly-giong-noi" class="article-tag" rel="tag">trợ lý giọng nói</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">AI</a><a href="/tags/index.html#h3-gpt" class="article-tag" rel="tag">GPT</a><a href="/tags/index.html#h3-openai" class="article-tag" rel="tag">OpenAI</a><a href="/tags/index.html#h3-tom-tat-pdf" class="article-tag" rel="tag">tóm tắt PDF</a><a href="/tags/index.html#h3-nang-suat" class="article-tag" rel="tag">năng suất</a><a href="/tags/index.html#h3-ma-nguon-mo" class="article-tag" rel="tag">mã nguồn mở</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-02-12T11:12:12+00:00" class="meta-pub">Xuất bản 12 Feb 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Cập nhật 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Thời gian đọc ước tính">2 phút đọc</span></div></section>
+      <p class="sub">Kiến trúc trợ lý giọng nói Python mã nguồn mở: Whisper, GPT-4, bộ nhớ đệm SQLite và fpdf2</p>
+    <nav class="article-tags" aria-label="Chủ đề"><a href="/tags/index.html#h3-akande" class="article-tag" rel="tag">Àkàndé</a><a href="/tags/index.html#h3-openai-gpt-4" class="article-tag" rel="tag">OpenAI GPT-4</a><a href="/tags/index.html#h3-whisper-stt" class="article-tag" rel="tag">Whisper STT</a><a href="/tags/index.html#h3-bo-nho-em-sqlite" class="article-tag" rel="tag">bộ nhớ đệm SQLite</a><a href="/tags/index.html#h3-fpdf2" class="article-tag" rel="tag">fpdf2</a><a href="/tags/index.html#h3-tro-ly-giong-noi-python" class="article-tag" rel="tag">trợ lý giọng nói Python</a><a href="/tags/index.html#h3-api-hoan-thanh-hoi-thoai" class="article-tag" rel="tag">API hoàn thành hội thoại</a><a href="/tags/index.html#h3-tao-ban-tom-tat-pdf" class="article-tag" rel="tag">tạo bản tóm tắt PDF</a><a href="/tags/index.html#h3-bo-nho-em-sha-256" class="article-tag" rel="tag">bộ nhớ đệm SHA-256</a><a href="/tags/index.html#h3-chuyen-van-ban-thanh-giong-noi" class="article-tag" rel="tag">chuyển văn bản thành giọng nói</a><a href="/tags/index.html#h3-ai-tro-ly-ieu-hanh" class="article-tag" rel="tag">AI trợ lý điều hành</a><a href="/tags/index.html#h3-ma-nguon-mo" class="article-tag" rel="tag">mã nguồn mở</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-02-12T11:12:12+00:00" class="meta-pub">Xuất bản 12 Feb 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">Cập nhật 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Thời gian đọc ước tính">8 phút đọc</span></div></section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Nội dung</h2><ol><li><a href="#boi-canh">Bối cảnh</a></li><li><a href="#tinh-nang">Tính năng</a></li><li><a href="#kien-truc">Kiến trúc</a></li><li><a href="#cai-at">Cài đặt</a></li><li><a href="#quyen-rieng-tu">Quyền riêng tư</a></li><li><a href="#ket-luan">Kết luận</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Akande — trợ lý giọng nói tiên tiến sử dụng GPT của OpenAI cho tương tác tự nhiên, tóm tắt PDF và bộ nhớ đệm hiệu quả. Được xây dựng cho cả mục đích cá nhân và điều hành.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Bối cảnh.</strong> Các nhà điều hành nhận hàng trăm email, hàng chục báo cáo và nhiều cuộc gọi mỗi ngày.</li>  <li><strong>Kiến trúc.</strong> Giọng nói → Whisper → Text → GPT-4 → Logic → Action ↓ TTS → Giọng nói trả lời.</li>  <li><strong>Cài đặt.</strong> git clone https://github.com/sebastienrousseau/akande cd akande pip install -r requirements.txt python akande.py.</li>  <li><strong>Quyền riêng tư.</strong> Akande được thiết kế để chạy cục bộ.</li></ul></aside><p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-banner.webp&w=1600&format=webp&q=85" alt="Akande trợ lý AI"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Nội dung</h2><ol><li><a href="#tong-quan-quy-trinh">Tổng quan quy trình</a></li><li><a href="#tich-hop-openai-chat-completions-va-whisper">Tích hợp OpenAI: Chat Completions và Whisper</a></li><li><a href="#bo-nho-em-phan-hoi-sqlite">Bộ nhớ đệm phản hồi SQLite</a></li><li><a href="#tao-tom-tat-pdf">Tạo tóm tắt PDF</a></li><li><a href="#mo-hinh-quyen-rieng-tu">Mô hình quyền riêng tư</a></li><li><a href="#cau-hoi-thuong-gap">Câu hỏi thường gặp</a></li><li><a href="#tai-lieu-tham-khao">Tài liệu tham khảo</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Àkàndé là trợ lý giọng nói Python mã nguồn mở kết hợp nhận dạng giọng nói OpenAI Whisper, hoàn thành hội thoại GPT-4 và bộ nhớ đệm SQLite cục bộ — tạo bản tóm tắt PDF từ lịch sử hội thoại và lưu toàn bộ dữ liệu cục bộ.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Tổng quan quy trình.</strong> Một tương tác Àkàndé duy nhất tuân theo trình tự này:.</li>  <li><strong>Tích hợp OpenAI: Chat Completions và Whisper.</strong> Àkàndé sử dụng Python SDK openai cho cả nhận dạng giọng nói và tạo văn bản.</li>  <li><strong>Bộ nhớ đệm phản hồi SQLite.</strong> Sơ đồ bộ nhớ đệm rất tối giản:.</li>  <li><strong>Tạo tóm tắt PDF.</strong> Xuất PDF sử dụng fpdf2, thư viện PDF Python được duy trì với không có phụ thuộc nhị phân:.</li></ul></aside><!-- lead-start -->
+
+<!-- lead-end -->
 <blockquote>
-<p><strong>TL;DR.</strong> Akande là một trợ lý giọng nói mã nguồn mở sử dụng GPT của OpenAI cho tương tác ngôn ngữ tự nhiên, tóm tắt PDF và quản lý lịch — được thiết kế đặc biệt cho lãnh đạo cấp cao và các nhà điều hành.</p>
-<p><strong>Điểm chính</strong></p>
+<p><strong>Tóm tắt / Điểm chính</strong></p>
 <ul>
-<li><strong>Ý tưởng.</strong> Một trợ lý cá nhân chạy cục bộ, tương tác bằng giọng nói, được tối ưu hoá cho năng suất điều hành.</li>
-<li><strong>Đổi mới.</strong> Bộ nhớ đệm hiệu quả để giảm chi phí API; tóm tắt PDF tài liệu dài.</li>
-<li><strong>Trường hợp sử dụng.</strong> Quản lý lịch, chuẩn bị cuộc họp, tóm tắt báo cáo.</li>
-<li><strong>Tác động.</strong> Trả lại hàng giờ mỗi tuần cho các tác vụ cấp cao.</li>
+<li><strong><a href="https://akande.co" title="Àkàndé Voice Assistant">Àkàndé ⧉</a></strong> là trợ lý giọng nói Python mã nguồn mở kết hợp OpenAI Whisper chuyển giọng nói thành văn bản, GPT-4 chat completions, bộ nhớ đệm phản hồi SQLite cục bộ và xuất PDF qua fpdf2 thành một quy trình làm việc bằng giọng nói duy nhất — không cần lưu trữ đám mây và không cần trọng số mô hình AI cục bộ.</li>
+<li><strong>Bộ nhớ đệm SQLite</strong> lưu trữ mã băm SHA-256 của chuỗi truy vấn đã chuẩn hoá được ánh xạ tới văn bản phản hồi API thô; lần truy cập bộ nhớ đệm không tốn token và trả kết quả trong dưới 10 ms, khiến các truy vấn lặp lại (như xem lại quyết định từ đầu cuộc họp) về cơ bản là miễn phí.</li>
+<li><strong>Hội thoại nhiều lượt</strong> được duy trì bằng cách xây dựng danh sách <code>messages</code> trong bộ nhớ và truyền nó trong mỗi lệnh gọi API Chat Completions — mô hình nhận toàn bộ lịch sử phiên để có thể tham chiếu các trao đổi trước đó, với chi phí là mức sử dụng token tăng dần theo từng lượt.</li>
+<li><strong>Tạo tóm tắt PDF</strong> tuần tự hoá danh sách <code>messages</code> của phiên thành tài liệu fpdf2 được định dạng: lượt người dùng và lượt trợ lý được gắn nhãn, dấu thời gian được chèn và phân trang tự động xử lý các phiên có độ dài bất kỳ; tệp được ghi vào hệ thống tệp cục bộ, không tải lên.</li>
+<li><strong>Ranh giới quyền riêng tư:</strong> chỉ truy vấn trực tiếp (và lịch sử phiên đến giới hạn cửa sổ ngữ cảnh) rời khỏi thiết bị — không có bản ghi âm, bản ghi chép hay phản hồi được lưu trong bộ nhớ đệm nào được gửi đến bất kỳ dịch vụ từ xa nào ngoài API của OpenAI.</li>
 </ul>
 </blockquote>
-<h2 id="boi-canh">Bối cảnh <a class="heading-anchor" href="#boi-canh" aria-label="Liên kết đến Bối cảnh">#</a></h2>
-<h3 id="vi-sao-mot-tro-ly-ieu-hanh">Vì sao một trợ lý điều hành <a class="heading-anchor" href="#vi-sao-mot-tro-ly-ieu-hanh" aria-label="Liên kết đến Vì sao một trợ lý điều hành">#</a></h3>
-<p>Các nhà điều hành nhận hàng trăm email, hàng chục báo cáo và nhiều cuộc gọi mỗi ngày. Các trợ lý con người là vô giá nhưng không thể có sẵn 24/7. Akande là một trợ lý AI bổ sung — không thay thế con người, nhưng xử lý các tác vụ lặp đi lặp lại.</p>
-<h2 id="tinh-nang">Tính năng <a class="heading-anchor" href="#tinh-nang" aria-label="Liên kết đến Tính năng">#</a></h2>
-<h3 id="tuong-tac-giong-noi">Tương tác giọng nói <a class="heading-anchor" href="#tuong-tac-giong-noi" aria-label="Liên kết đến Tương tác giọng nói">#</a></h3>
-<ul>
-<li>Đầu vào giọng nói qua Whisper.</li>
-<li>Đầu ra giọng nói qua TTS chất lượng cao.</li>
-<li>Tương tác tự nhiên không cần từ kích hoạt.</li>
-</ul>
-<h3 id="tom-tat-pdf">Tóm tắt PDF <a class="heading-anchor" href="#tom-tat-pdf" aria-label="Liên kết đến Tóm tắt PDF">#</a></h3>
-<ul>
-<li>Tải lên một báo cáo 100 trang, nhận lại các điểm chính trong 30 giây.</li>
-<li>Trả lời các câu hỏi cụ thể về nội dung.</li>
-</ul>
-<h3 id="quan-ly-lich">Quản lý lịch <a class="heading-anchor" href="#quan-ly-lich" aria-label="Liên kết đến Quản lý lịch">#</a></h3>
-<ul>
-<li>&quot;Lên lịch một cuộc họp 30 phút với Mai vào tuần tới khi cả hai chúng tôi đều rảnh.&quot;</li>
-<li>Tích hợp với Google Calendar và Outlook.</li>
-</ul>
-<h2 id="kien-truc">Kiến trúc <a class="heading-anchor" href="#kien-truc" aria-label="Liên kết đến Kiến trúc">#</a></h2>
-<pre><code class="language-text">Giọng nói → Whisper → Text → GPT-4 → Logic → Action
-                                   ↓
-                            TTS → Giọng nói trả lời
+<p><a href="https://akande.co" title="Àkàndé Voice Assistant"><strong>Àkàndé ⧉</strong></a> là trợ lý giọng nói Python mã nguồn mở được xây dựng xung quanh ba thành phần có thể kết hợp: OpenAI Whisper để nhận dạng giọng nói, API GPT-4 Chat Completions để hiểu và tạo ngôn ngữ, cùng cơ sở dữ liệu SQLite cục bộ để lưu vào bộ nhớ đệm phản hồi và duy trì phiên. Kết quả là một quy trình làm việc bằng giọng nói có thể chạy trên máy tính xách tay mà không cần trọng số mô hình cục bộ, cơ sở hạ tầng lưu trữ ngoại tuyến hay ngăn xếp container.</p>
+<p>Bài viết này mô tả kiến trúc kỹ thuật của từng thành phần, các quyết định thiết kế xung quanh việc lưu vào bộ nhớ đệm và ngữ cảnh nhiều lượt, cùng quy trình xuất PDF.</p>
+<h2 id="tong-quan-quy-trinh">Tổng quan quy trình <a class="heading-anchor" href="#tong-quan-quy-trinh" aria-label="Liên kết đến Tổng quan quy trình">#</a></h2>
+<p>Một tương tác Àkàndé duy nhất tuân theo trình tự này:</p>
+<ol>
+<li><strong>Thu âm</strong> — người dùng nói; ứng dụng ghi âm vào tệp WAV tạm thời bằng <code>sounddevice</code> hoặc thư viện âm thanh tương thích.</li>
+<li><strong>Chuyển giọng nói thành văn bản</strong> — tệp WAV được gửi đến <code>openai.audio.transcriptions.create()</code> (Whisper API); bản ghi chép được trả về dưới dạng chuỗi thuần.</li>
+<li><strong>Tra cứu bộ nhớ đệm</strong> — bản ghi chép được chuẩn hoá (chuyển thành chữ thường, thu gọn khoảng trắng) và băm SHA-256; mã băm được tra cứu trong bảng SQLite <code>response_cache</code> cục bộ.</li>
+<li><strong>Gọi API hoặc truy cập bộ nhớ đệm</strong> — khi không tìm thấy, bản ghi chép được thêm vào danh sách <code>messages</code> của phiên và gửi đến <code>openai.chat.completions.create()</code>; văn bản phản hồi được lưu vào bộ nhớ đệm.</li>
+<li><strong>Chuyển văn bản thành giọng nói</strong> — văn bản phản hồi được chuyển đổi thành âm thanh bằng endpoint <code>openai.audio.speech.create()</code> (TTS) hoặc thư viện TTS cục bộ, rồi phát lại.</li>
+<li><strong>Xuất PDF</strong> (theo yêu cầu) — toàn bộ danh sách <code>messages</code> được tuần tự hoá thành tài liệu fpdf2 định dạng sẵn và ghi vào đĩa.</li>
+</ol>
+<h2 id="tich-hop-openai-chat-completions-va-whisper">Tích hợp OpenAI: Chat Completions và Whisper <a class="heading-anchor" href="#tich-hop-openai-chat-completions-va-whisper" aria-label="Liên kết đến Tích hợp OpenAI: Chat Completions và Whisper">#</a></h2>
+<p>Àkàndé sử dụng Python SDK <code>openai</code> cho cả nhận dạng giọng nói và tạo văn bản. Lệnh gọi phiên âm Whisper:</p>
+<pre><code class="language-python">with open(audio_file_path, &quot;rb&quot;) as f:
+    transcript = openai.audio.transcriptions.create(
+        model=&quot;whisper-1&quot;,
+        file=f,
+        language=None  # auto-detect
+    )
+user_text = transcript.text
 </code></pre>
-<p>Bộ nhớ đệm lưu các truy vấn lặp lại để giảm chi phí API.</p>
-<h2 id="cai-at">Cài đặt <a class="heading-anchor" href="#cai-at" aria-label="Liên kết đến Cài đặt">#</a></h2>
-<pre><code class="language-bash">git clone https://github.com/sebastienrousseau/akande
-cd akande
-pip install -r requirements.txt
-python akande.py
+<p>Lệnh gọi Chat Completions duy trì danh sách <code>messages</code> có phạm vi phiên:</p>
+<pre><code class="language-python">messages.append({&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: user_text})
+
+response = openai.chat.completions.create(
+    model=&quot;gpt-4-turbo-preview&quot;,
+    messages=messages,
+    temperature=0.2,
+    max_tokens=1024
+)
+
+assistant_text = response.choices[0].message.content
+messages.append({&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: assistant_text})
 </code></pre>
-<h2 id="quyen-rieng-tu">Quyền riêng tư <a class="heading-anchor" href="#quyen-rieng-tu" aria-label="Liên kết đến Quyền riêng tư">#</a></h2>
-<p>Akande được thiết kế để chạy cục bộ. Tài liệu nhạy cảm không cần được tải lên các dịch vụ đám mây. Đối với tích hợp GPT, chỉ các văn bản đã được lọc PII được gửi đi.</p>
-<h2 id="ket-luan">Kết luận <a class="heading-anchor" href="#ket-luan" aria-label="Liên kết đến Kết luận">#</a></h2>
-<p>Akande là một trợ lý nhỏ, tập trung giải quyết một nhu cầu cụ thể. Đối với các nhà điều hành nhận quá nhiều thông tin, nó cung cấp một lớp lọc thông minh, được tối ưu hoá cho quyền riêng tư và năng suất.</p>
-<aside class="author-card" aria-label="Về tác giả"><img alt="Chân dung Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/vi/gioi-thieu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Là chuyên gia công nghệ cấp cao trong lĩnh vực ngân hàng, tôi viết về AI ứng dụng, chuyển đổi ISO 20022, mật mã hậu lượng tử cho dịch vụ tài chính và chuyển đổi cấu trúc của thanh toán bán buôn.</span><span class="author-credentials">Hơn 20 năm kinh nghiệm tại HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/vi/gioi-thieu/index.html">Hồ sơ đầy đủ</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Cập nhật lần cuối <time datetime="2026-05-22">2026-05-22</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<p>Lời nhắc hệ thống được thêm vào một lần khi bắt đầu phiên và kiểm soát nhân vật, định dạng đầu ra cùng các ràng buộc theo lĩnh vực cụ thể của Àkàndé:</p>
+<pre><code class="language-python">messages = [
+    {
+        &quot;role&quot;: &quot;system&quot;,
+        &quot;content&quot;: (
+            &quot;You are Àkàndé, a concise executive assistant. &quot;
+            &quot;Respond in plain prose. Do not use markdown. &quot;
+            &quot;If asked to summarise, produce three bullet points maximum.&quot;
+        )
+    }
+]
+</code></pre>
+<p>Đặt <code>temperature=0.2</code> đánh đổi sự biến thiên sáng tạo lấy tính xác định — quan trọng cho các truy vấn thực tế như nhớ lại một quyết định từ đầu phiên.</p>
+<h2 id="bo-nho-em-phan-hoi-sqlite">Bộ nhớ đệm phản hồi SQLite <a class="heading-anchor" href="#bo-nho-em-phan-hoi-sqlite" aria-label="Liên kết đến Bộ nhớ đệm phản hồi SQLite">#</a></h2>
+<p>Sơ đồ bộ nhớ đệm rất tối giản:</p>
+<pre><code class="language-sql">CREATE TABLE IF NOT EXISTS response_cache (
+    query_hash  TEXT PRIMARY KEY,
+    response    TEXT NOT NULL,
+    created_at  INTEGER NOT NULL  -- Unix timestamp
+);
+</code></pre>
+<p>Đường dẫn tra cứu và ghi:</p>
+<pre><code class="language-python">import hashlib, sqlite3, time
+
+def _normalise(text: str) -&gt; str:
+    return &quot; &quot;.join(text.lower().split())
+
+def cache_get(conn: sqlite3.Connection, query: str) -&gt; str | None:
+    h = hashlib.sha256(_normalise(query).encode()).hexdigest()
+    row = conn.execute(
+        &quot;SELECT response FROM response_cache WHERE query_hash = ?&quot;, (h,)
+    ).fetchone()
+    return row[0] if row else None
+
+def cache_set(conn: sqlite3.Connection, query: str, response: str) -&gt; None:
+    h = hashlib.sha256(_normalise(query).encode()).hexdigest()
+    conn.execute(
+        &quot;INSERT OR REPLACE INTO response_cache VALUES (?, ?, ?)&quot;,
+        (h, response, int(time.time()))
+    )
+    conn.commit()
+</code></pre>
+<p><code>INSERT OR REPLACE</code> đảm bảo phản hồi đã lưu trong bộ nhớ đệm được cập nhật nếu cùng một truy vấn được gửi sau khi nâng cấp mô hình. Truy vấn xoá dựa trên TTL (<code>DELETE WHERE created_at &lt; ?</code>) có thể được lên lịch khi khởi động để giới hạn kích thước bộ nhớ đệm.</p>
+<p>Hiệu suất truy cập bộ nhớ đệm: tra cứu SQLite trên SSD cục bộ trả kết quả trong dưới 1 ms cho các bảng có đến ~100.000 hàng. Độ trễ khứ hồi cho một lệnh gọi API GPT-4 trực tiếp thường là 600–900 ms cho các phản hồi ngắn. Đối với bản tóm tắt hàng ngày với một vài truy vấn lặp lại, bộ nhớ đệm loại bỏ hầu hết các lệnh gọi API sau phiên đầu tiên.</p>
+<h2 id="tao-tom-tat-pdf">Tạo tóm tắt PDF <a class="heading-anchor" href="#tao-tom-tat-pdf" aria-label="Liên kết đến Tạo tóm tắt PDF">#</a></h2>
+<p>Xuất PDF sử dụng <a href="https://py-pdf.github.io/fpdf2/">fpdf2</a>, thư viện PDF Python được duy trì với không có phụ thuộc nhị phân:</p>
+<pre><code class="language-python">from fpdf import FPDF
+from datetime import datetime
+
+def export_session_pdf(messages: list[dict], output_path: str) -&gt; None:
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font(&quot;Helvetica&quot;, size=11)
+    pdf.set_margins(20, 20, 20)
+
+    pdf.set_font(&quot;Helvetica&quot;, &quot;B&quot;, 14)
+    pdf.cell(0, 10, f&quot;Àkàndé Session — {datetime.now():%Y-%m-%d %H:%M}&quot;, ln=True)
+    pdf.ln(4)
+
+    for msg in messages:
+        if msg[&quot;role&quot;] == &quot;system&quot;:
+            continue
+        label = &quot;You&quot; if msg[&quot;role&quot;] == &quot;user&quot; else &quot;Àkàndé&quot;
+        pdf.set_font(&quot;Helvetica&quot;, &quot;B&quot;, 10)
+        pdf.cell(0, 6, label, ln=True)
+        pdf.set_font(&quot;Helvetica&quot;, size=10)
+        pdf.multi_cell(0, 5, msg[&quot;content&quot;])
+        pdf.ln(3)
+
+    pdf.output(output_path)
+</code></pre>
+<p><code>multi_cell()</code> xử lý xuống dòng và ngắt trang tự động, do đó các phiên có độ dài bất kỳ tạo ra tài liệu được định dạng tốt mà không cần logic phân trang thủ công. Đầu ra là tệp tương thích PDF/A không có phông chữ nhúng nào ngoài số liệu Helvetica tiêu chuẩn.</p>
+<h2 id="mo-hinh-quyen-rieng-tu">Mô hình quyền riêng tư <a class="heading-anchor" href="#mo-hinh-quyen-rieng-tu" aria-label="Liên kết đến Mô hình quyền riêng tư">#</a></h2>
+<p>Ranh giới quyền riêng tư trong Àkàndé được xác định bởi ba thực tế:</p>
+<ol>
+<li>Âm thanh được gửi đến Whisper API qua HTTPS và không được OpenAI lưu giữ sau lệnh gọi API (theo chính sách sử dụng dữ liệu API của OpenAI tính đến tháng 2 năm 2024).</li>
+<li>Các lệnh gọi API Chat Completions truyền danh sách <code>messages</code> của phiên — có thể chứa toàn bộ lịch sử hội thoại cho các phiên nhiều lượt.</li>
+<li>Cơ sở dữ liệu SQLite và tệp PDF tồn tại hoàn toàn trên hệ thống tệp cục bộ; không có đồng bộ hoá nền với bất kỳ dịch vụ đám mây nào.</li>
+</ol>
+<p>Đối với các trường hợp sử dụng cấp lãnh đạo liên quan đến các chủ đề nhạy cảm — thảo luận M&amp;A, vấn đề nhân sự, chiến lược pháp lý — lịch sử phiên được truyền đến API nên được xem xét theo chính sách sử dụng AI của tổ chức trước khi triển khai. Giới hạn <code>max_tokens</code> trên lời nhắc hệ thống có thể được sử dụng để ngăn việc truyền ngữ cảnh vô tình vượt quá phạm vi tiết lộ dự kiến.</p>
+<h2 id="cau-hoi-thuong-gap">Câu hỏi thường gặp <a class="heading-anchor" href="#cau-hoi-thuong-gap" aria-label="Liên kết đến Câu hỏi thường gặp">#</a></h2>
+<p><strong>Àkàndé có lưu giữ lịch sử hội thoại sau khi phiên kết thúc không?</strong>
+Danh sách <code>messages</code> trong bộ nhớ bị loại bỏ khi tiến trình thoát. Lịch sử hội thoại chỉ được giữ lại nếu người dùng kích hoạt xuất PDF hoặc nếu thêm lớp lưu trữ tùy chỉnh. Bộ nhớ đệm SQLite lưu trữ mã băm truy vấn và văn bản phản hồi, không phải toàn bộ ngữ cảnh hội thoại.</p>
+<p><strong>Bộ nhớ đệm xử lý các truy vấn tương tự nhưng không giống hệt như thế nào?</strong>
+Bộ nhớ đệm sử dụng băm khớp chính xác trên chuỗi truy vấn đã chuẩn hoá. Hai truy vấn khác nhau một từ sẽ tạo ra các mã băm khác nhau và dẫn đến các lệnh gọi API riêng biệt. Lưu trữ đệm ngữ nghĩa (sử dụng độ tương đồng nhúng để khớp các truy vấn gần giống nhau) sẽ yêu cầu bước tra cứu vector bổ sung và không phải là một phần của triển khai cơ sở.</p>
+<p><strong>Àkàndé sử dụng mô hình GPT nào theo mặc định?</strong>
+Mặc định là <code>gpt-4-turbo-preview</code> tính đến tháng 2 năm 2024. Tên mô hình là tham số cấu hình, vì vậy bất kỳ mô hình hoàn chỉnh chat nào của OpenAI cũng có thể được thay thế. Chuyển sang <code>gpt-3.5-turbo</code> giảm chi phí API khoảng 20× mỗi token nhưng giảm chất lượng suy luận cho các truy vấn nhiều bước phức tạp.</p>
+<p><strong>Có thể tuỳ chỉnh định dạng xuất PDF không?</strong>
+Có. Hàm xuất fpdf2 chỉ yêu cầu danh sách <code>messages</code> làm đầu vào bắt buộc, vì vậy phông chữ, lề, kích thước trang, nội dung tiêu đề và nhãn đều có thể thay đổi bằng cách chỉnh sửa hàm xuất. fpdf2 cũng hỗ trợ thêm hình ảnh, bảng và phông chữ Unicode, cho phép bố cục tài liệu phong phú hơn cho các tổ chức có yêu cầu thương hiệu cụ thể.</p>
+<h2 id="tai-lieu-tham-khao">Tài liệu tham khảo <a class="heading-anchor" href="#tai-lieu-tham-khao" aria-label="Liên kết đến Tài liệu tham khảo">#</a></h2>
+<ol>
+<li>OpenAI. <em>Audio Transcriptions — Whisper API</em>. OpenAI Platform Documentation, 2024. https://platform.openai.com/docs/api-reference/audio/createTranscription</li>
+<li>OpenAI. <em>Chat Completions API</em>. OpenAI Platform Documentation, 2024. https://platform.openai.com/docs/api-reference/chat/create</li>
+<li>Voss, J. et al. <em>fpdf2: Modern PDF generation for Python</em>. GitHub, 2024. https://github.com/py-pdf/fpdf2</li>
+<li>SQLite Consortium. <em>SQLite Documentation</em>. sqlite.org, 2024. https://www.sqlite.org/docs.html</li>
+</ol>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Cập nhật lần cuối <time datetime="2026-05-24">2026-05-24</time>.</p>
+
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Về tác giả"><img alt="Chân dung Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/vi/gioi-thieu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Là chuyên gia công nghệ cấp cao trong lĩnh vực ngân hàng, tôi viết về AI ứng dụng, chuyển đổi ISO 20022, mật mã hậu lượng tử cho dịch vụ tài chính và chuyển đổi cấu trúc của thanh toán bán buôn.</span><span class="author-credentials">Hơn 20 năm kinh nghiệm tại HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/vi/gioi-thieu/index.html">Hồ sơ đầy đủ</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Cập nhật lần cuối <time datetime="2026-05-27">2026-05-27</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Bài liên quan</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/vi/2024-03-12-cach-mang-nhan-dien-giong-noi-thoi-gian-thuc-tren-macos-voi-whisper/index.html" class="related-media" aria-label="Cách mạng hoá nhận dạng giọng nói thời gian thực trên macOS với OpenAI Whisper" tabindex="-1"><img alt="Banner for Real-time automatic speech recognition (ASR)" src="https://cloudcdn.pro/api/transform?url=/stocks/images/research-paper.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="cach-mang-hoa-nhan-dang-giong-noi-thoi-gian-thuc-tren-macos-voi-openai-whisper"><a href="https://sebastienrousseau.com/vi/2024-03-12-cach-mang-nhan-dien-giong-noi-thoi-gian-thuc-tren-macos-voi-whisper/index.html">Cách mạng hoá nhận dạng giọng nói thời gian thực trên macOS với OpenAI Whisper</a> <a class="heading-anchor" href="#cach-mang-hoa-nhan-dang-giong-noi-thoi-gian-thuc-tren-macos-voi-openai-whisper" aria-label="Liên kết đến Cách mạng hoá nhận dạng giọng nói thời gian thực trên macOS với OpenAI Whisper">#</a></h3><p><time datetime="2024-03-12">2024-03-12</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/vi/2023-12-11-phan-phoi-khoa-luong-tu-cach-mang-an-ninh-ngan-hang/index.html" class="related-media" aria-label="Phân phối Khoá Lượng tử: cách mạng an ninh trong ngân hàng" tabindex="-1"><img alt="HSBC From the Docks" src="https://cloudcdn.pro/api/transform?url=/stocks/images/hsbc-from-the-docks.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="phan-phoi-khoa-luong-tu-cach-mang-an-ninh-trong-ngan-hang"><a href="https://sebastienrousseau.com/vi/2023-12-11-phan-phoi-khoa-luong-tu-cach-mang-an-ninh-ngan-hang/index.html">Phân phối Khoá Lượng tử: cách mạng an ninh trong ngân hàng</a> <a class="heading-anchor" href="#phan-phoi-khoa-luong-tu-cach-mang-an-ninh-trong-ngan-hang" aria-label="Liên kết đến Phân phối Khoá Lượng tử: cách mạng an ninh trong ngân hàng">#</a></h3><p><time datetime="2023-12-11">2023-12-11</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/vi/2024-04-15-thuat-toan-luong-tu-thach-thuc-mat-ma-dua-tren-mang-tinh-the/index.html" class="related-media" aria-label="Thuật toán lượng tử thách thức mật mã dựa trên mạng tinh thể" tabindex="-1"><img alt="Banner of Network nodes in a digital blue space" src="https://cloudcdn.pro/api/transform?url=/stocks/images/digital-constellation.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="thuat-toan-luong-tu-thach-thuc-mat-ma-dua-tren-mang-tinh-the"><a href="https://sebastienrousseau.com/vi/2024-04-15-thuat-toan-luong-tu-thach-thuc-mat-ma-dua-tren-mang-tinh-the/index.html">Thuật toán lượng tử thách thức mật mã dựa trên mạng tinh thể</a> <a class="heading-anchor" href="#thuat-toan-luong-tu-thach-thuc-mat-ma-dua-tren-mang-tinh-the" aria-label="Liên kết đến Thuật toán lượng tử thách thức mật mã dựa trên mạng tinh thể">#</a></h3><p><time datetime="2024-04-15">2024-04-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/vi/2024-03-12-cach-mang-nhan-dien-giong-noi-thoi-gian-thuc-tren-macos-voi-whisper/" class="related-media" aria-label="Cách mạng hoá nhận dạng giọng nói thời gian thực trên macOS với OpenAI Whisper" tabindex="-1"><img alt="Banner for Real-time automatic speech recognition (ASR)" src="https://cloudcdn.pro/api/transform?url=/stocks/images/research-paper.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="cach-mang-hoa-nhan-dang-giong-noi-thoi-gian-thuc-tren-macos-voi-openai-whisper"><a href="https://sebastienrousseau.com/vi/2024-03-12-cach-mang-nhan-dien-giong-noi-thoi-gian-thuc-tren-macos-voi-whisper/">Cách mạng hoá nhận dạng giọng nói thời gian thực trên macOS với OpenAI Whisper</a> <a class="heading-anchor" href="#cach-mang-hoa-nhan-dang-giong-noi-thoi-gian-thuc-tren-macos-voi-openai-whisper" aria-label="Liên kết đến Cách mạng hoá nhận dạng giọng nói thời gian thực trên macOS với OpenAI Whisper">#</a></h3><p><time datetime="2024-03-12">2024-03-12</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/vi/2024-01-29-phan-tich-am-thanh-dich-va-hieu-biet-bang-ai/" class="related-media" aria-label="Audio Analyser: Azure Speech, NLP, and Translation Pipeline" tabindex="-1"><img alt="A minimalist, modern corporate office" src="https://cloudcdn.pro/api/transform?url=/stocks/images/modern-corporate-office-with-technological-displays.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="audio-analyser-azure-speech-nlp-and-translation-pipeline"><a href="https://sebastienrousseau.com/vi/2024-01-29-phan-tich-am-thanh-dich-va-hieu-biet-bang-ai/">Audio Analyser: Azure Speech, NLP, and Translation Pipeline</a> <a class="heading-anchor" href="#audio-analyser-azure-speech-nlp-and-translation-pipeline" aria-label="Liên kết đến Audio Analyser: Azure Speech, NLP, and Translation Pipeline">#</a></h3><p><time datetime="2024-01-29">2024-01-29</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/vi/2024-01-23-tien-bo-trong-ky-thuat-prompt-ai/" class="related-media" aria-label="AI Prompt Engineering 2024: Techniques That Work" tabindex="-1"><img alt="A man analysing data on screens" src="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-prompt-engineering-modern-office.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-prompt-engineering-2024-techniques-that-work"><a href="https://sebastienrousseau.com/vi/2024-01-23-tien-bo-trong-ky-thuat-prompt-ai/">AI Prompt Engineering 2024: Techniques That Work</a> <a class="heading-anchor" href="#ai-prompt-engineering-2024-techniques-that-work" aria-label="Liên kết đến AI Prompt Engineering 2024: Techniques That Work">#</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
 </div>
 </aside><nav class="post-pagination" aria-label="Phân trang bài viết"><a class="post-pagination-prev" href="/vi/2024-02-08-cach-mang-quang-cao-ai-dinh-hinh-tuong-lai/"><span class="post-pagination-label">Trước</span><span class="post-pagination-title">Generative AI in Advertising: Amazon Rufus & Meta</span></a><a class="post-pagination-next" href="/vi/2024-02-13-dao-luat-ai-eu-dinh-hinh-quan-ly-ai-toan-cau/"><span class="post-pagination-label">Tiếp</span><span class="post-pagination-title">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</span></a></nav></div>
     </main>
@@ -297,7 +400,7 @@ python akande.py
     <!-- Schema.org structured data -->
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"vi"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"vi"}]}</script>
 
-        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":415,"about":{"@type":"Thing","name":"Generative AI","sameAs":["https://en.wikipedia.org/wiki/Generative_artificial_intelligence","https://www.wikidata.org/wiki/Q108766533","https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html"]},"headline":"Akande: trợ lý giọng nói cách mạng hoá hỗ trợ cá nhân và điều hành","description":"Akande — trợ lý giọng nói tiên tiến sử dụng GPT của OpenAI cho tương tác tự nhiên, tóm tắt PDF và bộ nhớ đệm hiệu quả. Được xây dựng cho cả mục đích cá nhân và điều hành.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/akande-banner.webp","width":"100vw","height":"100vh","caption":"Sóng giọng nói và biểu tượng trợ lý AI"},"url":"https://sebastienrousseau.com/vi/2024-02-12-akande-tro-ly-giong-noi-cach-mang-ho-tro-ca-nhan-va-dieu-hanh/","datePublished":"2024-02-12T11:12:12+00:00","dateModified":"2026-05-11","inLanguage":"vi","keywords":"Akande, trợ lý giọng nói, AI, GPT, OpenAI, tóm tắt PDF, năng suất, mã nguồn mở","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/vi/2024-02-12-akande-tro-ly-giong-noi-cach-mang-ho-tro-ca-nhan-va-dieu-hanh/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"vi"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/vi/"},{"@type":"ListItem","position":3,"name":"Akande: trợ lý giọng nói cách mạng hoá hỗ trợ cá nhân và điều hành","item":"https://sebastienrousseau.com/vi/2024-02-12-akande-tro-ly-giong-noi-cach-mang-ho-tro-ca-nhan-va-dieu-hanh/"}]}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1795,"about":{"@type":"Thing","name":"Python","sameAs":["https://en.wikipedia.org/wiki/Python_(programming_language)","https://www.wikidata.org/wiki/Q28865"]},"headline":"Àkàndé: GPT-Powered Voice Assistant for Executives","description":"Àkàndé là trợ lý giọng nói Python mã nguồn mở kết hợp nhận dạng giọng nói OpenAI Whisper, hoàn thành hội thoại GPT-4 và bộ nhớ đệm SQLite cục bộ — tạo bản tóm tắt PDF từ lịch sử hội thoại và lưu toàn bộ dữ liệu cục bộ.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp","width":"100vw","height":"100vh","caption":"Thiết bị hiện đại hình cầu màu trắng"},"url":"https://sebastienrousseau.com/vi/2024-02-12-akande-tro-ly-giong-noi-cach-mang-ho-tro-ca-nhan-va-dieu-hanh/","datePublished":"2024-02-12T11:12:12+00:00","dateModified":"2026-05-24","inLanguage":"vi","keywords":"Àkàndé, OpenAI GPT-4, Whisper STT, bộ nhớ đệm SQLite, fpdf2, trợ lý giọng nói Python, API hoàn thành hội thoại, tạo bản tóm tắt PDF, bộ nhớ đệm SHA-256, chuyển văn bản thành giọng nói, AI trợ lý điều hành, mã nguồn mở","articleSection":"AI","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/vi/2024-02-12-akande-tro-ly-giong-noi-cach-mang-ho-tro-ca-nhan-va-dieu-hanh/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"vi"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/vi/"},{"@type":"ListItem","position":3,"name":"Àkàndé: GPT-Powered Voice Assistant for Executives","item":"https://sebastienrousseau.com/vi/2024-02-12-akande-tro-ly-giong-noi-cach-mang-ho-tro-ca-nhan-va-dieu-hanh/"}]}]}</script>
 <script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
   
 <!-- SSG Search Widget -->
@@ -323,5 +426,5 @@ python akande.py
 </div>
 <script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
 </div>
-</body>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Akande: trợ lý giọng nói cách mạng hoá hỗ trợ cá nhân và điều hành","url":"https://sebastienrousseau.com/vi/2024-02-12-akande-tro-ly-giong-noi-cach-mang-ho-tro-ca-nhan-va-dieu-hanh/","inLanguage":"vi-VN","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"Àkàndé, OpenAI GPT-4, Whisper STT, bộ nhớ đệm SQLite, fpdf2, trợ lý giọng nói Python, API hoàn thành hội thoại, tạo bản tóm tắt PDF, bộ nhớ đệm SHA-256, chuyển văn bản thành giọng nói, AI trợ lý điều hành, mã nguồn mở","programmingLanguage":"Python"}</script></body>
 </html>

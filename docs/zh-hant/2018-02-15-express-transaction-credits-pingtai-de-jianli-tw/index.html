@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta itemprop="datePublished" content="Thu, 15 Feb 2018 18:18:18 +0000" id="date" />
     <meta itemprop="dateModified" content="Thu, 15 Feb 2018 18:18:18 +0000" id="last-modified" />
-    <title>Express Transaction Credits 平臺的誕生 — Sebastien Rousseau</title>
+    <title>The making of the Express Transaction Credits Platform — Sebastien Rousseau</title>
 
     <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
-<meta name="description" content="EXTC 平臺基於 ERC-223 標準，致力於透過去中心化交易平臺實現閃電般的金融交易。">
-<meta name="keywords" content="EXTC, ERC-223, 以太坊, 智慧合約, 去中心化交易所, 即時貸款, 跨境支付, 金融普惠, 代幣, 區塊鏈">
+<meta name="description" content="深入探討2018年基於以太坊ERC-223構建EXTC平台的技術細節：代幣架構、多重簽名分發、時間鎖定轉帳及抵押品支持的即時貸款。">
+<meta name="keywords" content="EXTC平台, ERC-223, 以太坊智能合約, 代幣架構, 多重簽名, 時間鎖定轉帳, 區塊鏈支付, 抵押貸款, 去中心化金融, 2018年加密貨幣">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
     <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+<meta name="apple-mobile-web-app-title" content="EXTC Platform 2018">
 
     <!-- Strict security headers. The headers below that can be set via
          <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
@@ -40,7 +40,7 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-kO+2yRlYkIaycCXiKCFSAaHtQqhRGUr6otE5Eq2TePM=' 'sha256-pDD6LKsX+CrErB7CvhrX7B2ORrIZWiciheRGS8WQelw=' 'sha256-wDSmiFAMwPD4Ju1hVjZ+JvYKxiKZvcDoFojB4Zg6/ZU=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-1OMUPhgIjgIPlEGGQa0SS5Bj6TMj/WN/nWgTlTM+/Eo=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-nwXKChpzuTTXDcBvVyZT0FctZeb8a8FKKXXrlw3uY8A=' 'sha256-wDSmiFAMwPD4Ju1hVjZ+JvYKxiKZvcDoFojB4Zg6/ZU=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
@@ -67,7 +67,7 @@
          Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
          observed (real-network) LCP is 165 ms. This hint pulls the
          synthetic LCP in line with the observed value. -->
-    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/rawpixel-com-369782.webp&w=1600&format=webp&q=85" fetchpriority="high">
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1600&format=webp&q=85" fetchpriority="high">
     <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
     <meta name="color-scheme" content="light dark" />
@@ -76,18 +76,18 @@
     <link rel="stylesheet" href="/_csp/6346d01ad7de2d6f.css" integrity="sha256-cmdn5aVLYjokOMehbFCVM2OVn90qAJQVGHgU/SsPTT0= sha256-LfI/OOvfKQbXmGjqT/lqFAdGuOgerwiywMKCZBxL014=" crossorigin="anonymous">
     <link rel="alternate" type="application/atom+xml" title="Atom 訂閱源" href="/zh-hant/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-<meta property="og:title" content="Express Transaction Credits 平臺的誕生 — Sebastien Rousseau">
-<meta property="og:description" content="EXTC 平臺基於 ERC-223 標準，致力於透過去中心化交易平臺實現閃電般的金融交易。">
+<meta property="og:title" content="The making of the Express Transaction Credits Platform — Sebastien Rousseau">
+<meta property="og:description" content="深入探討2018年基於以太坊ERC-223構建EXTC平台的技術細節：代幣架構、多重簽名分發、時間鎖定轉帳及抵押品支持的即時貸款。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sebastienrousseau.com/zh-hant/2018-02-15-express-transaction-credits-pingtai-de-jianli-tw/">
-<meta property="og:image" content="https://cloudcdn.pro/stocks/images/rawpixel-com-369782.webp">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp">
 <meta property="og:image:width" content="100vw">
 <meta property="og:image:height" content="100vh">
 <meta property="og:locale" content="zh_TW">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Express Transaction Credits 平臺的誕生 — Sebastien Rousseau">
-<meta name="twitter:description" content="EXTC 平臺基於 ERC-223 標準，致力於透過去中心化交易平臺實現閃電般的金融交易。">
-<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/rawpixel-com-369782.webp">
+<meta name="twitter:title" content="The making of the Express Transaction Credits Platform — Sebastien Rousseau">
+<meta name="twitter:description" content="深入探討2018年基於以太坊ERC-223構建EXTC平台的技術細節：代幣架構、多重簽名分發、時間鎖定轉帳及抵押品支持的即時貸款。">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp">
 <link rel="canonical" href="https://sebastienrousseau.com/zh-hant/2018-02-15-express-transaction-credits-pingtai-de-jianli-tw/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
 <meta property="og:site_name" content="Sebastien Rousseau">
@@ -128,34 +128,34 @@
             </button>
             <div class="ap-lang-menu" role="menu" hidden>
               <div class="ap-lang-menu-grid">
-                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
-                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
-                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
-                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
-                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
-                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
-                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
-                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
-                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
-                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
-                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
-                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
-                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
-                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
-                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
-                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
-                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
-                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
-                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
-                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
-                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
-                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
-                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
-                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
-                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
-                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
-                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
-                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+                <a class="ap-lang-item" href="/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2018-02-15-creation-de-la-plateforme-express-transaction-credits/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2018-02-15-vznik-platformy-express-transaction-credits/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2018-02-15-entstehung-der-express-transaction-credits-plattform/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2018-02-15-creacion-de-la-plataforma-express-transaction-credits/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2018-02-15-express-transaction-credits-platform-ka-nirmaan/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2018-02-15-pembuatan-platform-express-transaction-credits/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2018-02-15-creazione-della-piattaforma-express-transaction-credits/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2018-02-15-express-transaction-credits-puratto-foomu-no-kaihatsu/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2018-02-15-express-transaction-credits-peullaetpom-jejak/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2018-02-15-het-ontstaan-van-het-express-transaction-credits-platform/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2018-02-15-powstanie-platformy-express-transaction-credits/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2018-02-15-criacao-da-plataforma-express-transaction-credits/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2018-02-15-sozdanie-platformy-express-transaction-credits/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2018-02-15-skapandet-av-express-transaction-credits-plattformen/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2018-02-15-kan-sang-platform-express-transaction-credits/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2018-02-15-express-transaction-credits-platformunun-yapimi/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2018-02-15-stvorennia-platformy-express-transaction-credits/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2018-02-15-xay-dung-nen-tang-express-transaction-credits/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2018-02-15-express-transaction-credits-pingtai-de-jianli/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2018-02-15-express-transaction-credits-pingtai-de-jianli-tw/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
               </div>
             </div>
           </div>
@@ -166,53 +166,113 @@
     </header>
 
         <section class="ap-hero">
-      <h1>Express Transaction Credits 平臺的誕生</h1>
-      <p class="sub">為下一代以太坊 ERC-223 合規代幣打造的全面框架</p>
-    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-extc" class="article-tag" rel="tag">EXTC</a><a href="/tags/index.html#h3-erc-223" class="article-tag" rel="tag">ERC-223</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">以太坊</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">智慧合約</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">去中心化交易所</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">即時貸款</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">跨境支付</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">金融普惠</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">代幣</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">區塊鏈</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-02-15T18:18:18+00:00" class="meta-pub">Published 15 Feb 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Updated 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">1 min read</span></div></section>
+      <h1>The making of the Express Transaction Credits Platform</h1>
+      <p class="sub">2018年以太坊上的代幣架構、多重簽名分發及時間鎖定轉帳。</p>
+    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-extc" class="article-tag" rel="tag">EXTC平台</a><a href="/tags/index.html#h3-erc-223" class="article-tag" rel="tag">ERC-223</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">以太坊智能合約</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">代幣架構</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">多重簽名</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">時間鎖定轉帳</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">區塊鏈支付</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">抵押貸款</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">去中心化金融</a><a href="/tags/index.html#h3-2018" class="article-tag" rel="tag">2018年加密貨幣</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-02-15T18:18:18+00:00" class="meta-pub">Published 15 Feb 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">Updated 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">1 min read</span></div></section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap report-wrap"><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> EXTC 平臺基於 ERC-223 標準，致力於透過去中心化交易平臺實現閃電般的金融交易。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>洞察.</strong> Express Transaction Credits（EXTC）平臺的起源始於 2018 年，根植於對傳統金融體系侷限的認識。交易延遲、中介介入和可及性不足是主要挑戰。.</li>  <li><strong>理念.</strong> EXTC 平臺的核心是 Ethereum Request for Comment（ERC）223 標準，這是 ERC-20 代幣標準的擴充套件。這一選擇源於增強安全性與功能性的需要。該平臺旨在透過利用 ERC-223 標準為下一代 ERC-223 合規代幣提供全面框架，從而解決相關問題。.</li>  <li><strong>影響.</strong> EXTC 的影響遠超其技術屬性。透過促進即時貸款、快速支付和迅速存款，平臺顯著提升了金融交易的效率。等待資金到賬或貸款審批的日子一去不返。藉助 EXTC，交易實時發生，為個人和企業賦能。.</li>  <li><strong>激勵.</strong> 任何金融平臺的成功都依賴於使用者的採用與參與。EXTC 也不例外。為激勵使用者參與平臺，採用了多項策略：.</li></ul></aside><p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/rawpixel-com-369782.webp&w=1600&format=webp&q=85" alt="巨大的白色柱子"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
-<h2 id="section-1">洞察 <a class="heading-anchor" href="#section-1" aria-label="Link to 洞察">#</a></h2>
-<h3 id="section-2">開啟金融服務的新時代 <a class="heading-anchor" href="#section-2" aria-label="Link to 開啟金融服務的新時代">#</a></h3>
-<p>Express Transaction Credits（EXTC）平臺的起源始於 2018 年，根植於對傳統金融體系侷限的認識。交易延遲、中介介入和可及性不足是主要挑戰。</p>
-<p>這一洞察啟動了一個去中心化交易平臺的開發，旨在消除這些障礙。它致力於讓使用者使用法定貨幣、加密貨幣或合規代幣進行閃電般的交易。</p>
-<h2 id="section-3">理念 <a class="heading-anchor" href="#section-3" aria-label="Link to 理念">#</a></h2>
-<h3 id="erc-223-express-transaction-credits">探索 ERC-223 標準與 Express Transaction Credits 平臺 <a class="heading-anchor" href="#erc-223-express-transaction-credits" aria-label="Link to 探索 ERC-223 標準與 Express Transaction Credits 平臺">#</a></h3>
-<p>EXTC 平臺的核心是 Ethereum Request for Comment（ERC）223 標準，這是 ERC-20 代幣標準的擴充套件。這一選擇源於增強安全性與功能性的需要。該平臺旨在透過利用 ERC-223 標準為下一代 ERC-223 合規代幣提供全面框架，從而解決相關問題。</p>
-<p>EXTC 利用 ERC-223 標準的能力，確保與以太坊生態中各種智慧合約和 API 的相容性。Express Transaction Credits 代幣（EXTC）作為這一標準的代表被引入，具備一套明確定義的屬性。</p>
-<p>構想中的代幣具備穩健的特性：</p>
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Contents</h2><ol><li><a href="#erc-20">設計問題：ERC-20為何不足</a></li><li><a href="#erc-223">ERC-223解決方案：帶通知的原子轉帳</a></li><li><a href="#extc">EXTC合約架構</a></li><li><a href="#section-9">抵押擔保即時貸款機制</a></li><li><a href="#section-10">實驗揭示的內容</a></li><li><a href="#section-11">進入生產的想法</a></li><li><a href="#section-12">常見問題解答</a></li><li><a href="#section-13">參考文獻</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 深入探討2018年基於以太坊ERC-223構建EXTC平台的技術細節：代幣架構、多重簽名分發、時間鎖定轉帳及抵押品支持的即時貸款。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>設計問題：ERC-20為何不足.</strong> ERC-20標準於2015年提出，並在Ethereum改進提案20中正式確立，定義了推動2017–2018年ICO熱潮的標準同質化代幣介面。其六個核心函數——totalSupply、balanceOf、transfer、transferFrom、approve和allowance——足以支援簡單的代幣發行和交換。.</li>  <li><strong>ERC-223解決方案：帶通知的原子轉帳.</strong> ERC-223在Ethereum EIPs GitHub問題追蹤器上提出，透過改變代幣轉帳的必要操作來解決靜默遺失問題。在ERC-223下，transfer(address _to, uint256 _value, bytes _data)會檢查接收位址是否包含合約程式碼。若包含，轉帳將呼叫_to.tokenFallback(address _from, uint256 _value, bytes _data)。.</li>  <li><strong>EXTC合約架構.</strong> EXTC代幣合約是圍繞五個模組建構的Solidity實現：.</li>  <li><strong>抵押擔保即時貸款機制.</strong> EXTC借貸原語是最複雜的組件。設計如下：.</li></ul></aside><!-- lead-start -->
+
+<!-- lead-end -->
+<p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1600&format=webp&q=85" alt="Giant white pillars"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<blockquote>
+<p><strong>執行摘要 / 核心要點</strong></p>
 <ul>
-<li><strong>名稱、符號與小數位</strong>：代幣的身份由名稱和符號定義，小數位引數確保價值表示的精度。</li>
-<li><strong>總供應量</strong>：EXTC 的總供應量是一項關鍵指標，代表所有流通代幣的總和。</li>
-<li><strong>餘額與轉賬</strong>：使用者可以查詢代幣餘額並向其他地址進行代幣轉賬。</li>
-<li><strong>ERC-223 合規性</strong>：代幣合約遵守 ERC-223 標準，相較其前身 ERC-20 提供更高階的功能。</li>
+<li><strong>根本問題。</strong> ERC-20是2018年主流Ethereum代幣標準，存在結構性缺陷：代幣直接轉入智慧合約位址時，若合約缺少處理程式，將被靜默銷毀。基於ERC-20建構的任何支付平台都繼承了這一風險（<a href="https://eips.ethereum.org/EIPS/eip-20" title="EIP-20: Token Standard">Ethereum EIPs</a>）。</li>
+<li><strong>ERC-223作為解決方案。</strong> ERC-223要求接收合約實現<code>tokenFallback(address, uint, bytes)</code>函數。若不存在，轉帳將原子性回滾。代幣不會被靜默遺失（<a href="https://github.com/ethereum/EIPs/issues/223" title="ERC-223 Token Standard Proposal">Ethereum EIPs GitHub</a>）。</li>
+<li><strong>EXTC的五個合約原語。</strong> 代幣身份標識（名稱、符號、18位小數精度）、固定供應量、符合ERC-223的轉帳、企業撥款多簽名授權，以及基於區塊高度的時間鎖常委託。</li>
+<li><strong>抵押貸款機制。</strong> 借款人將EXTC代幣鎖入合約託管；合約在收到抵押品後原子性釋放貸款，無需承銷延遲或信貸委員會審批。</li>
+<li><strong>實驗揭示的Ethereum限制。</strong> 2018年1月高峰時主網吞吐量約15 TPS，每筆交易Gas費用$0.10–$1.00，處理匯款規模流量的支付網路在沒有Layer-2基礎設施的情況下，在經濟和技術上均不可行。</li>
 </ul>
-<h2 id="section-5">影響 <a class="heading-anchor" href="#section-5" aria-label="Link to 影響">#</a></h2>
-<h3 id="section-6">重新定義金融交易 <a class="heading-anchor" href="#section-6" aria-label="Link to 重新定義金融交易">#</a></h3>
-<p>EXTC 的影響遠超其技術屬性。透過促進即時貸款、快速支付和迅速存款，平臺顯著提升了金融交易的效率。等待資金到賬或貸款審批的日子一去不返。藉助 EXTC，交易實時發生，為個人和企業賦能。</p>
-<p>該平臺為微貸款、跨境交易以及為無銀行賬戶人群提供更便利的金融服務開闢了新路徑。此外，EXTC 的去中心化特性消除了中介，降低了相關費用，並增強了安全性。</p>
-<h2 id="section-7">激勵 <a class="heading-anchor" href="#section-7" aria-label="Link to 激勵">#</a></h2>
-<h3 id="section-8">推動採用與參與 <a class="heading-anchor" href="#section-8" aria-label="Link to 推動採用與參與">#</a></h3>
-<p>任何金融平臺的成功都依賴於使用者的採用與參與。EXTC 也不例外。為激勵使用者參與平臺，採用了多項策略：</p>
+</blockquote>
+<hr />
+<h2 id="erc-20">設計問題：ERC-20為何不足 <a class="heading-anchor" href="#erc-20" aria-label="Link to 設計問題：ERC-20為何不足">#</a></h2>
+<p>ERC-20標準於2015年提出，並在Ethereum改進提案20中正式確立，定義了推動2017–2018年ICO熱潮的標準同質化代幣介面。其六個核心函數——<code>totalSupply</code>、<code>balanceOf</code>、<code>transfer</code>、<code>transferFrom</code>、<code>approve</code>和<code>allowance</code>——足以支援簡單的代幣發行和交換。</p>
+<p>然而，對於支付平台而言，ERC-20存在生產級關鍵缺陷。<code>transfer(address _to, uint256 _value)</code>函數可將代幣移動至任何位址，包括合約位址，而不會觸發接收合約中的任何程式碼。未專門程式設計追蹤傳入ERC-20轉帳的合約無法偵測到這些轉帳。以這種方式傳送的代幣將永久被困，沒有任何恢復機制。</p>
+<p>Ethereum社群估計，截至2018年中，透過這一機制永久損失的ERC-20代幣價值達數千萬美元。建構一個轉帳可能靜默失敗並銷毀使用者資金的支付平台是不可接受的。</p>
+<h2 id="erc-223">ERC-223解決方案：帶通知的原子轉帳 <a class="heading-anchor" href="#erc-223" aria-label="Link to ERC-223解決方案：帶通知的原子轉帳">#</a></h2>
+<p>ERC-223在Ethereum EIPs GitHub問題追蹤器上提出，透過改變代幣轉帳的必要操作來解決靜默遺失問題。在ERC-223下，<code>transfer(address _to, uint256 _value, bytes _data)</code>會檢查接收位址是否包含合約程式碼。若包含，轉帳將呼叫<code>_to.tokenFallback(address _from, uint256 _value, bytes _data)</code>。</p>
+<p>關鍵屬性：若接收合約未實現<code>tokenFallback</code>，整個轉帳交易將回滾。傳送方餘額中不會減少代幣，也不會有代幣被困。轉帳具有原子性——要麼在接收方程式碼執行後完成，要麼完全失敗且狀態不變。</p>
+<p>對於EXTC而言，這意味著：</p>
 <ul>
-<li><strong>速度與效率</strong>：主要激勵在於平臺的速度與效率。尋求快速支付或貸款的使用者會自然被一個迅速滿足其需求的系統所吸引。</li>
-<li><strong>成本節約</strong>：相較傳統金融體系，更低的費用使 EXTC 對成本敏感的個人與企業具有吸引力。</li>
-<li><strong>全球可及性</strong>：平臺的無國界特性吸引了需要跨境交易、避免貨幣兌換繁瑣的使用者。</li>
-<li><strong>代幣效用</strong>：EXTC 代幣不僅用於交易。它們可整合到去中心化應用（DApps）中，甚至在生態內作為獎勵或抵押。</li>
-<li><strong>金融普惠</strong>：透過面向無銀行賬戶人群，EXTC 為以往被排除在外的人提供金融服務。</li>
+<li><strong>向智慧合約付款在構造上是安全的。</strong> 託管合約、多簽名錢包和借貸合約均可接收EXTC代幣，無需擔憂資金被不可逆轉地損失。</li>
+<li><strong><code>_data</code>欄位支援豐富的支付元資料。</strong> 位元組載荷可攜帶發票引用、路由代碼或合規證明——這些資訊是簡單的ERC-20轉帳無法傳遞的。</li>
+<li><strong>Gas費用略有增加。</strong> 呼叫<code>tokenFallback</code>每次轉帳約增加2,000–5,000 Gas，在2018年的Gas價格下屬於小額開銷。</li>
 </ul>
-<p>總之，Express Transaction Credits 平臺（EXTC）代表了金融交易世界的一次正規化轉變。</p>
-<p>透過利用 ERC-223 標準，提供無與倫比的速度、安全與可及性，EXTC 為真正全球化、包容性的金融服務未來鋪平道路。</p>
-<p>隨著平臺獲得動力與採用，其對金融格局的影響有望具有革命性，跨越國界、讓經濟機會更加民主化。</p>
-<p>無論你是技術愛好者、金融專業人士，還是對金融未來充滿好奇，EXTC 都是值得探索與參與的平臺。</p>
-<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/zh-hant/guanyu-tw/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行技術專家，撰寫關於應用人工智慧、ISO 20022 遷移、面向金融服務的後量子密碼學，以及批發支付結構性轉型的內容。</span><span class="author-credentials">20 多年經驗，曾任職於滙豐商業及投資銀行、PayPal、巴克萊、Shazam、AKQA、維珍集團。 <a href="/zh-hant/guanyu-tw/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最近審閱 <time datetime="2026-05-22">2026-05-22</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="extc">EXTC合約架構 <a class="heading-anchor" href="#extc" aria-label="Link to EXTC合約架構">#</a></h2>
+<p>EXTC代幣合約是圍繞五個模組建構的Solidity實現：</p>
+<h3 id="1">1. 代幣身份標識 <a class="heading-anchor" href="#1" aria-label="Link to 1. 代幣身份標識">#</a></h3>
+<pre><code>string public name = &quot;Express Transaction Credits&quot;;
+string public symbol = &quot;EXTC&quot;;
+uint8 public decimals = 18;
+</code></pre>
+<p>十八位小數給予EXTC亞分精度，滿足小額支付和小額貸款用例所需的精細度。符號<code>EXTC</code>是在代幣合約中登錄的鏈上識別碼。</p>
+<h3 id="2">2. 固定總供應量 <a class="heading-anchor" href="#2" aria-label="Link to 2. 固定總供應量">#</a></h3>
+<p>總供應量在合約部署時設定，後續鑄造無法增發。這一設計選擇使EXTC具有通縮特性：透過不可逆銷毀操作永久從流通中移除的代幣將減少供應而無法補充。固定供應模型是2018年支付代幣設計的標準，反映了受Bitcoin影響的假設——通縮壓力對於交換媒介而言是一種特性。</p>
+<h3 id="3-erc-223">3. 符合ERC-223的餘額與轉帳 <a class="heading-anchor" href="#3-erc-223" aria-label="Link to 3. 符合ERC-223的餘額與轉帳">#</a></h3>
+<p>核心轉帳函數實現了完整的ERC-223介面。內部餘額映射追蹤每個位址的持有量。<code>isContract(address)</code>輔助函數區分EOA（外部擁有帳戶）位址和合約位址，以確定是否需要呼叫<code>tokenFallback</code>。</p>
+<h3 id="4">4. 多簽名企業撥款 <a class="heading-anchor" href="#4" aria-label="Link to 4. 多簽名企業撥款">#</a></h3>
+<p>企業支付工作流需要聯合授權：沒有單一簽名者可以單方面發起超過規定閾值的撥款。EXTC合約實現了N中取2的多簽名方案：</p>
+<ol>
+<li>指定發起人提出轉帳，指定接收方、金額和隨機數。</li>
+<li>聯署人確認隨機數。</li>
+<li>僅在兩個簽名均記錄在鏈上後，轉帳才會執行。</li>
+</ol>
+<p>這消除了企業帳戶的單點故障風險，同時將整個授權流程保持在鏈上且可稽核，無需清算所中介。</p>
+<h3 id="5">5. 基於區塊高度的時間鎖常委託 <a class="heading-anchor" href="#5" aria-label="Link to 5. 基於區塊高度的時間鎖常委託">#</a></h3>
+<p>定期支付——工資、訂閱、預定貸款還款——需要常委託原語。EXTC將其實現為時間鎖：轉帳記錄儲存在合約中，帶有<code>releaseBlock</code>參數。在Ethereum區塊高度達到<code>releaseBlock</code>之前，轉帳無法執行。</p>
+<p>以區塊高度作為時間代理在2018年是務實的選擇。Ethereum目標區塊間隔為15秒，使區塊高度成為分鐘範圍內相當可靠的掛鐘時間代理。絕對時間戳（<code>block.timestamp</code>）雖然可用，但在±900秒視窗內易受礦工操縱，使區塊高度成為金融合約更安全的參考。</p>
+<h2 id="section-9">抵押擔保即時貸款機制 <a class="heading-anchor" href="#section-9" aria-label="Link to 抵押擔保即時貸款機制">#</a></h2>
+<p>EXTC借貸原語是最複雜的組件。設計如下：</p>
+<ol>
+<li><strong>借款人鎖定抵押品。</strong> 借款人呼叫<code>lockCollateral(uint256 _collateralAmount)</code>，透過ERC-223的<code>tokenFallback</code>將EXTC代幣轉移至借貸合約託管。</li>
+<li><strong>貸款價值比檢查。</strong> 合約讀取預配置的LTV比率（例如50%），並根據鎖定抵押品計算最大貸款金額。</li>
+<li><strong>原子性貸款撥付。</strong> 若抵押品滿足最低閾值，合約立即將貸款金額轉移至借款人位址。無需承銷佇列，無需信貸委員會，無需結算延遲。</li>
+<li><strong>還款與釋放。</strong> 在還款——本金加固定利率——後，合約將抵押品釋放回借款人。未能在<code>releaseBlock</code>之前還款將觸發自動清算：合約將抵押品轉移至貸款方指定位址。</li>
+</ol>
+<p>整個流程由合約程式碼強制執行。雙方無需互相信任，也無需依賴中介來執行條款。</p>
+<h2 id="section-10">實驗揭示的內容 <a class="heading-anchor" href="#section-10" aria-label="Link to 實驗揭示的內容">#</a></h2>
+<p>EXTC合約架構在技術上是連貫的。ERC-223解決了ERC-20最嚴重的安全缺陷。多簽名和時間鎖原語直接映射到真實的企業支付工作流。抵押貸款機制證明了有擔保貸款可以完全自動化並在鏈上自我執行。</p>
+<p>實踐中暴露了兩個限制：</p>
+<p><strong>Gas費用。</strong> 在2018年1月高峰時，Ethereum Gas價格達到50–100 gwei，使單次ERC-223代幣轉帳成本為$0.50–$2.00。對於$10–$50的小額支付或匯款，這些費用是不可接受的。</p>
+<p><strong>吞吐量。</strong> 2018年初Ethereum主網區塊Gas上限約為800萬Gas。ERC-223轉帳消耗約50,000–80,000 Gas。因此網路每個區塊約可處理100–160筆EXTC代幣轉帳，在15秒區塊間隔下約為每秒7–11筆。支付網路規模——每秒數百或數千筆交易——在沒有生產形式的Layer-2基礎設施的情況下，在公鏈Ethereum上無法實現。</p>
+<p>這些是基礎設施限制，而非EXTC的設計缺陷。合約邏輯是正確的。底層區塊鏈尚無法支援金融行業規模的支付量。</p>
+<h2 id="section-11">進入生產的想法 <a class="heading-anchor" href="#section-11" aria-label="Link to 進入生產的想法">#</a></h2>
+<p>來自EXTC的幾種設計模式在後續開發中得到驗證：</p>
+<p><strong>帶接收方通知的原子代幣轉帳</strong>——ERC-223的核心屬性——成為ERC-777（2019年）的基礎，ERC-777擴展了通知模型，後來被納入DeFi借貸協議。<code>tokenFallback</code>模式貫穿現代DeFi架構。</p>
+<p><strong>企業撥款的多簽名授權</strong>——執行前需要多個鏈上簽名的模式——成為DAO國庫管理和機構託管解決方案的標準模型。Gnosis Safe於2018年推出，將這一模式大規模推廣。</p>
+<p><strong>無中介的抵押即時貸款</strong>——將抵押品鎖入託管並原子性釋放貸款的機制——是DeFi借貸協議如Compound（2018年）和Aave（2020年）的基本設計。</p>
+<p><strong>定期支付的區塊高度時間鎖</strong>——在合約中編碼未來執行時間的模式——出現在代幣歸屬合約、延遲治理提案和DeFi生態系統中的時間加權平均價格（TWAP）預言機設計中。</p>
+<p>EXTC實驗未能達到生產規模。使設計可行所需的基礎設施還需三到五年才能成熟。它所提出的設計問題對於2018年來說是正確的。</p>
+<h2 id="section-12">常見問題解答 <a class="heading-anchor" href="#section-12" aria-label="Link to 常見問題解答">#</a></h2>
+<p><strong>為何ERC-223儘管修復了ERC-20的缺陷，卻從未成為主流代幣標準？</strong></p>
+<p>ERC-223要求接收合約實現<code>tokenFallback</code>，這破壞了與已為ERC-20代幣部署的數千份合約的向後相容性。現有ERC-20生態系統太大，難以遷移。後續提案——特別是ERC-777和ERC-1363——以不同的相容性權衡解決了同一問題，但ERC-20透過網路效應和引入避免靜默遺失場景的包裝代幣模式保持了主導地位。</p>
+<p><strong>EXTC代幣和平台發生了什麼？</strong></p>
+<p>EXTC是2018年的概念驗證和早期研究專案。隨著Ethereum可擴展性限制和監管不確定性變得明朗，更廣泛的ICO和支付代幣市場在2018–2019年急劇收縮。EXTC設計中蘊含的想法在後來能夠存取Layer-2基礎設施、更好工具和更清晰監管框架的協議中重新出現。</p>
+<p><strong>EXTC的抵押貸款模型與Aave等現代DeFi協議相比如何？</strong></p>
+<p>核心機制相同：鎖定抵押品，獲得按LTV比率計算的貸款，還款或面臨清算。區別在於：（1）現代DeFi協議使用預言機價格源進行動態LTV，而非固定比率；（2）它們使用響應池利用率的演算法利率；（3）它們在Layer-2網路上運行，Gas成本比2018年主網低10–100倍；（4）Aave和Compound已通過正式安全審計並持有數十億美元流動性，提供了基本模型合理性的經驗驗證。</p>
+<p><strong>2018年初Solidity版本有哪些限制？</strong></p>
+<p>EXTC合約為Solidity 0.4.x編寫，這是2018年初的主流版本。Solidity 0.4缺乏後續版本引入的許多安全特性：整數溢位檢查（0.8.0中自動新增）、帶錯誤訊息的<code>require</code>/<code>revert</code>（0.4中受限）以及顯式函數可見性（0.4中預設為public）。合約依賴OpenZeppelin的SafeMath函式庫防止溢位，這是編譯器原生強制執行前的常見模式。</p>
+<h2 id="section-13">參考文獻 <a class="heading-anchor" href="#section-13" aria-label="Link to 參考文獻">#</a></h2>
+<ul>
+<li>Ethereum Foundation, (2015). <a href="https://eips.ethereum.org/EIPS/eip-20" title="EIP-20 Token Standard">EIP-20: Token Standard ⧉</a>.</li>
+<li>Dexaran, Ethereum GitHub, (2017). <a href="https://github.com/ethereum/EIPs/issues/223" title="ERC-223 discussion">ERC-223 Token Standard Proposal ⧉</a>.</li>
+<li>OpenZeppelin, (2018). <a href="https://github.com/OpenZeppelin/openzeppelin-contracts" title="OpenZeppelin Contracts">OpenZeppelin Contracts — SafeMath ⧉</a>.</li>
+<li>Ethereum Foundation, (2014). <a href="https://ethereum.org/whitepaper" title="Ethereum Whitepaper">Ethereum Whitepaper ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">最近審閱 <time datetime="2026-05-24">2026-05-24</time>.</p>
+
+<!-- enrich-end -->
+<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/zh-hant/guanyu-tw/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行技術專家，撰寫關於應用人工智慧、ISO 20022 遷移、面向金融服務的後量子密碼學，以及批發支付結構性轉型的內容。</span><span class="author-credentials">20 多年經驗，曾任職於滙豐商業及投資銀行、PayPal、巴克萊、Shazam、AKQA、維珍集團。 <a href="/zh-hant/guanyu-tw/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最近審閱 <time datetime="2026-05-27">2026-05-27</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">相關閱讀</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2024-03-08-rustlogs-rust-ying-yong-de-gaoji-rizhi-ku-tw/index.html" class="related-media" aria-label="RustLogs：面向 Rust 應用的高階日誌庫" tabindex="-1"><img alt="Banner for RustLogs (RLG)" src="https://cloudcdn.pro/api/transform?url=/stocks/images/rustlogs.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="rustlogs-rust"><a href="https://sebastienrousseau.com/zh-hant/2024-03-08-rustlogs-rust-ying-yong-de-gaoji-rizhi-ku-tw/index.html">RustLogs：面向 Rust 應用的高階日誌庫</a> <a class="heading-anchor" href="#rustlogs-rust" aria-label="Link to RustLogs：面向 Rust 應用的高階日誌庫">#</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2023-10-26-libmake-rust-ku-de-daima-shengchengqi-tw/index.html" class="related-media" aria-label="LibMake：減少重複任務、構建高質量 Rust 庫的程式碼生成器" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="libmake-rust"><a href="https://sebastienrousseau.com/zh-hant/2023-10-26-libmake-rust-ku-de-daima-shengchengqi-tw/index.html">LibMake：減少重複任務、構建高質量 Rust 庫的程式碼生成器</a> <a class="heading-anchor" href="#libmake-rust" aria-label="Link to LibMake：減少重複任務、構建高質量 Rust 庫的程式碼生成器">#</a></h3><p><time datetime="2023-10-26">2023-10-26</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2024-01-15-alien-studio-yong-ai-sheying-biange-yishu-tw/index.html" class="related-media" aria-label="Alien Studio：用 AI 攝影變革藝術" tabindex="-1"><img alt="Sunset's muse, a serene glance; beauty in stillness" src="https://cloudcdn.pro/api/transform?url=/clients/alienstudio/v1/collections/radiance/radiance-08.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="alien-studio-ai"><a href="https://sebastienrousseau.com/zh-hant/2024-01-15-alien-studio-yong-ai-sheying-biange-yishu-tw/index.html">Alien Studio：用 AI 攝影變革藝術</a> <a class="heading-anchor" href="#alien-studio-ai" aria-label="Link to Alien Studio：用 AI 攝影變革藝術">#</a></h3><p><time datetime="2024-01-15">2024-01-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2018-02-04-xin-jiamihuobi-yu-gengkuai-zhifu-fangan-tw" class="related-media" aria-label="Unveiling a New Cryptocurrency and Faster Payment Solution" tabindex="-1"><img alt="A very tall building with a lot of holes in it" src="https://cloudcdn.pro/api/transform?url=/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="unveiling-a-new-cryptocurrency-and-faster-payment-solution"><a href="https://sebastienrousseau.com/zh-hant/2018-02-04-xin-jiamihuobi-yu-gengkuai-zhifu-fangan-tw">Unveiling a New Cryptocurrency and Faster Payment Solution</a> <a class="heading-anchor" href="#unveiling-a-new-cryptocurrency-and-faster-payment-solution" aria-label="Link to Unveiling a New Cryptocurrency and Faster Payment Solution">#</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2018-01-24-erc-20-daibi-biaozhun-tw" class="related-media" aria-label="ERC-20 代幣標準" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="erc-20-2"><a href="https://sebastienrousseau.com/zh-hant/2018-01-24-erc-20-daibi-biaozhun-tw">ERC-20 代幣標準</a> <a class="heading-anchor" href="#erc-20-2" aria-label="Link to ERC-20 代幣標準">#</a></h3><p><time datetime="2018-01-24">2018-01-24</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2026-05-21-tokenised-deposits-banking-services-status-2026" class="related-media" aria-label="Tokenised Deposits in 2026" tabindex="-1"><img alt="Tokenised deposit banking architecture for 2026" src="https://cloudcdn.pro/api/transform?url=/stocks/images/bit-cloud-GlqbGLCPnQ4.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="tokenised-deposits-in-2026"><a href="https://sebastienrousseau.com/zh-hant/2026-05-21-tokenised-deposits-banking-services-status-2026">Tokenised Deposits in 2026</a> <a class="heading-anchor" href="#tokenised-deposits-in-2026" aria-label="Link to Tokenised Deposits in 2026">#</a></h3><p><time datetime="2026-05-21">2026-05-21</time></p></footer></article>
 </div>
-</aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/zh-hant/2018-02-04-xin-jiamihuobi-yu-gengkuai-zhifu-fangan-tw/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">Unveiling a new Cryptocurrency and Faster Payment Solution</span></a><a class="post-pagination-next" href="/zh-hant/2023-09-29-yong-pain001-zidonghua-iso-20022-zhifu-wenjian-tw/"><span class="post-pagination-label">Next</span><span class="post-pagination-title">Automating ISO 20022 Payment Files Creation with Pain001</span></a></nav></div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Sources & references</h2><ol class="article-sources-list"><li><a href="https://github.com/ethereum/EIPs/issues/223" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/ethereum/EIPs/issues/223</span></a></li><li><a href="https://github.com/OpenZeppelin/openzeppelin-contracts" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/OpenZeppelin/openzeppelin-contracts</span></a></li></ol></aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/zh-hant/2018-02-04-xin-jiamihuobi-yu-gengkuai-zhifu-fangan-tw/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">Unveiling a new Cryptocurrency and Faster Payment Solution</span></a><a class="post-pagination-next" href="/zh-hant/2023-09-29-yong-pain001-zidonghua-iso-20022-zhifu-wenjian-tw/"><span class="post-pagination-label">Next</span><span class="post-pagination-title">Automating ISO 20022 Payment Files Creation with pain001</span></a></nav></div>
     </main>
 
 <!-- gen-layouts:footer-start -->
@@ -284,7 +344,7 @@
     <!-- Schema.org structured data -->
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"zh-hant"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"zh-hant"}]}</script>
 
-        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":94,"headline":"Express Transaction Credits 平臺的誕生","description":"EXTC 平臺基於 ERC-223 標準，致力於透過去中心化交易平臺實現閃電般的金融交易。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/rawpixel-com-369782.webp","width":"100vw","height":"100vh","caption":"巨大的白色柱子"},"url":"https://sebastienrousseau.com/zh-hant/2018-02-15-express-transaction-credits-pingtai-de-jianli-tw/","datePublished":"2018-02-15T18:18:18+00:00","dateModified":"2026-05-11","inLanguage":"zh-hant","keywords":"EXTC, ERC-223, 以太坊, 智慧合約, 去中心化交易所, 即時貸款, 跨境支付, 金融普惠, 代幣, 區塊鏈","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hant/2018-02-15-express-transaction-credits-pingtai-de-jianli-tw/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"zh-hant"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/zh-hant/"},{"@type":"ListItem","position":3,"name":"Express Transaction Credits 平臺的誕生","item":"https://sebastienrousseau.com/zh-hant/2018-02-15-express-transaction-credits-pingtai-de-jianli-tw/"}]}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":231,"headline":"The making of the Express Transaction Credits Platform","description":"深入探討2018年基於以太坊ERC-223構建EXTC平台的技術細節：代幣架構、多重簽名分發、時間鎖定轉帳及抵押品支持的即時貸款。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp","width":"100vw","height":"100vh","caption":"巨大的白色柱子"},"url":"https://sebastienrousseau.com/zh-hant/2018-02-15-express-transaction-credits-pingtai-de-jianli-tw/","datePublished":"2018-02-15T18:18:18+00:00","dateModified":"2026-05-24","inLanguage":"zh-hant","keywords":"EXTC平台, ERC-223, 以太坊智能合約, 代幣架構, 多重簽名, 時間鎖定轉帳, 區塊鏈支付, 抵押貸款, 去中心化金融, 2018年加密貨幣","articleSection":"Blockchain","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hant/2018-02-15-express-transaction-credits-pingtai-de-jianli-tw/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"zh-hant"},"citation":[{"@type":"CreativeWork","url":"https://github.com/ethereum/EIPs/issues/223"},{"@type":"CreativeWork","url":"https://github.com/OpenZeppelin/openzeppelin-contracts"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/zh-hant/"},{"@type":"ListItem","position":3,"name":"The making of the Express Transaction Credits Platform","item":"https://sebastienrousseau.com/zh-hant/2018-02-15-express-transaction-credits-pingtai-de-jianli-tw/"}]}]}</script>
 <script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
   
 <!-- SSG Search Widget -->

@@ -6,7 +6,7 @@
     <description>Artykuły po polsku: stosowana sztuczna inteligencja, płatności ISO 20022, kryptografia postkwantowa oraz transformacja płatności hurtowych.</description>
     <atom:link href="https://sebastienrousseau.com/pl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>pl-PL</language>
-    <lastBuildDate>Fri, 22 May 2026 21:38:56 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 23:13:19 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Wszelkie prawa zastrzeżone.</copyright>
     <item>
       <title>UK Payments Forward Plan 2026: stablecoiny, open banking, depozyty tokenizowane, płatności agentowe</title>
@@ -81,51 +81,51 @@
       <category>koncerty jazzowe Londyn</category>
     </item>
     <item>
-      <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+      <title>Depozyty tokenizowane w 2026 roku: usługi bankowe, konkurencja ze strony stablecoinów oraz status programowalnego pieniądza banków komercyjnych</title>
       <link>https://sebastienrousseau.com/pl/2026-05-21-tokenised-deposits-banking-services-status-2026/</link>
-      <description>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</description>
+      <description>Tokenizowane depozyty w 2026 r. przechodzą z badań do pilotaży bankowych. Banki adaptują pieniądz komercyjny do programowalnych rozliczeń, cyfrowych portfeli i interoperacyjności stablecoinów oraz tokenizowanych rynków kapitałowych.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-21-tokenised-deposits-banking-services-status-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" type="image/webp" length="0"/>
-      <category>tokenised deposits 2026</category>
+      <category>tokenizowane depozyty 2026</category>
       <category>tokenized deposits banking</category>
       <category>deposit tokens</category>
       <category>Great British Tokenised Deposits</category>
       <category>Lloyds digital assets</category>
       <category>stablecoins</category>
-      <category>commercial bank money</category>
+      <category>pieniądz banku komercyjnego</category>
       <category>BIS stablecoins</category>
       <category>Project Agora</category>
       <category>unified ledger</category>
       <category>Deutsche Bank digital money</category>
       <category>CBDC</category>
-      <category>tokenised money</category>
-      <category>digital wallets</category>
+      <category>tokenizowany pieniądz</category>
+      <category>cyfrowe portfele</category>
       <category>tokenised gilts</category>
     </item>
     <item>
-      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <title>Bankowość cloud native w 2026 roku: Kubernetes, DORA, suwerenność i koniec podziału na maszyny wirtualne i kontenery</title>
       <link>https://sebastienrousseau.com/pl/2026-05-20-cloud-native-banking-financial-institutions-2026/</link>
-      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <description>Cloud native banking 2026: Kubernetes, odporność operacyjna DORA, konwergencja VM/kontenerów, suwerenność chmury i przenośność danych dla krytycznych instytucji finansowych.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-20-cloud-native-banking-financial-institutions-2026/</guid>
       <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
       <category>cloud native banking 2026</category>
-      <category>Kubernetes banks</category>
-      <category>financial institutions cloud</category>
+      <category>Kubernetes banki</category>
+      <category>instytucje finansowe chmura</category>
       <category>DORA 2026</category>
-      <category>cloud resilience</category>
+      <category>odporność chmury</category>
       <category>Red Hat OpenShift</category>
       <category>Portworx</category>
-      <category>VM container coexistence</category>
-      <category>bank cloud sovereignty</category>
-      <category>financial services cloud dependency</category>
-      <category>operational resilience</category>
-      <category>disaster recovery</category>
-      <category>cloud exit strategy</category>
-      <category>AI banking workloads</category>
+      <category>współistnienie VM kontener</category>
+      <category>suwerenność chmury bankowej</category>
+      <category>uzależnienie od chmury w usługach finansowych</category>
+      <category>odporność operacyjna</category>
+      <category>odtwarzanie po awarii</category>
+      <category>strategia wyjścia z chmury</category>
+      <category>obciążenia AI w bankowości</category>
     </item>
     <item>
       <title>Globalne płatności hurtowe w 2026 roku: ISO 20022, odnowienie RTGS i ekonomia interoperacyjności</title>
@@ -589,6 +589,27 @@
       <category>produktywność</category>
     </item>
     <item>
+      <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
+      <link>https://sebastienrousseau.com/pl/2024-02-12-akande-asystent-glosowy-rewolucja-asystentury-osobistej-i-wykonawczej/</link>
+      <description>Àkàndé to otwartoźródłowy asystent głosowy Python łączący rozpoznawanie mowy OpenAI Whisper, GPT-4 chat completions i lokalny cache SQLite w workflow głosowy — generując podsumowania PDF z historii rozmów i przechowując dane lokalnie.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2024-02-12-akande-asystent-glosowy-rewolucja-asystentury-osobistej-i-wykonawczej/</guid>
+      <pubDate>Mon, 12 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" type="image/webp" length="0"/>
+      <category>Àkàndé</category>
+      <category>OpenAI GPT-4</category>
+      <category>Whisper STT</category>
+      <category>SQLite caching</category>
+      <category>fpdf2</category>
+      <category>asystent głosowy Python</category>
+      <category>chat completions API</category>
+      <category>generowanie podsumowań PDF</category>
+      <category>cache SHA-256</category>
+      <category>zamiana tekstu na mowę</category>
+      <category>asystent AI dla kadry zarządzającej</category>
+      <category>open-source</category>
+    </item>
+    <item>
       <title>Rewolucja reklamy: jak AI kształtuje przyszłość</title>
       <link>https://sebastienrousseau.com/pl/2024-02-08-rewolucja-reklamy-jak-ai-ksztaltuje-przyszlosc/</link>
       <description>Jak sztuczna inteligencja zmienia branżę reklamową: personalizacja, generowanie kreacji i optymalizacja kampanii.</description>
@@ -605,6 +626,27 @@
       <category>automatyzacja</category>
     </item>
     <item>
+      <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
+      <link>https://sebastienrousseau.com/pl/2024-01-29-analiza-dzwieku-tlumaczenia-i-spostrzezenia-z-ai/</link>
+      <description>Audio Analyser wykorzystuje modele neuronowe mowy Azure Cognitive Services, Text Analytics NLP i CherryPy do konwersji nagrań audio na przeszukiwalne transkrypcje z wynikami sentymentu, ekstrakcją słów kluczowych i tłumaczeniami wielojęzycznymi.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2024-01-29-analiza-dzwieku-tlumaczenia-i-spostrzezenia-z-ai/</guid>
+      <pubDate>Mon, 29 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" type="image/webp" length="0"/>
+      <category>Azure Cognitive Services</category>
+      <category>mowa na tekst</category>
+      <category>neuronowy model akustyczny</category>
+      <category>Azure Text Analytics</category>
+      <category>przetwarzanie języka naturalnego</category>
+      <category>analiza sentymentu</category>
+      <category>CherryPy</category>
+      <category>wsadowe API transkrypcji</category>
+      <category>wielojęzyczne ASR</category>
+      <category>Azure Translator</category>
+      <category>transkrypcja audio</category>
+      <category>przetwarzanie audio w Python</category>
+    </item>
+    <item>
       <title>Analiza dźwięku, tłumaczenia i spostrzeżenia z AI</title>
       <link>https://sebastienrousseau.com/pl/2024-01-29-analiza-dzwieku-tlumaczenia-i-spostrzezenia-z-ai/</link>
       <description>Konwertuj dźwięk na tekst w czasie rzeczywistym dzięki zaawansowanemu rozpoznawaniu mowy AI, wydobywając użyteczne spostrzeżenia z danych audio.</description>
@@ -619,6 +661,27 @@
       <category>Whisper</category>
       <category>rozpoznawanie mowy</category>
       <category>NLP</category>
+    </item>
+    <item>
+      <title>AI Prompt Engineering 2024: Techniques That Work</title>
+      <link>https://sebastienrousseau.com/pl/2024-01-23-postep-w-inzynierii-promptow-ai/</link>
+      <description>Inżynieria promptów kontroluje zachowanie LLM w czasie wnioskowania. Artykuł omawia prompting zero-shot i few-shot, rozumowanie chain-of-thought, próbkowanie self-consistency, architekturę ReAct, ryzyko wstrzykiwania promptów oraz wzorce stosowane w usługach finansowych.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2024-01-23-postep-w-inzynierii-promptow-ai/</guid>
+      <pubDate>Tue, 23 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" type="image/webp" length="0"/>
+      <category>prompting chain-of-thought</category>
+      <category>uczenie few-shot</category>
+      <category>prompting zero-shot</category>
+      <category>uczenie w kontekście</category>
+      <category>wstrzykiwanie promptów</category>
+      <category>ReAct</category>
+      <category>self-consistency</category>
+      <category>generacja wspomagana wyszukiwaniem</category>
+      <category>BloombergGPT</category>
+      <category>prompt systemowy</category>
+      <category>bezpieczeństwo promptów</category>
+      <category>agent LLM</category>
     </item>
     <item>
       <title>Postęp w inżynierii promptów AI</title>
@@ -796,6 +859,25 @@
       <category>modele językowe</category>
     </item>
     <item>
+      <title>Generative AI in 2023: How It Works, Where It Lands</title>
+      <link>https://sebastienrousseau.com/pl/2023-11-12-eksploracja-generatywnej-ai/</link>
+      <description>Jak działają modele transformer, które modele z 2023 roku wyznaczają benchmarki, gdzie generatywna AI trafia w usługach finansowych i jakie pytania dotyczące governance należy rozwiązać przed wdrożeniem.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2023-11-12-eksploracja-generatywnej-ai/</guid>
+      <pubDate>Sun, 12 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
+      <category>generatywna AI</category>
+      <category>duży model językowy</category>
+      <category>architektura transformer</category>
+      <category>GPT-4</category>
+      <category>AI w usługach finansowych</category>
+      <category>halucynacja</category>
+      <category>retrieval-augmented generation</category>
+      <category>AI governance</category>
+      <category>model fundacyjny</category>
+      <category>fine-tuning</category>
+    </item>
+    <item>
       <title>Stałe matematyczne i kryptograficzne dla bezpieczeństwa Rust</title>
       <link>https://sebastienrousseau.com/pl/2023-11-05-stale-matematyczne-i-kryptograficzne-dla-bezpieczenstwa-rust/</link>
       <description>Biblioteka Rust dostarczająca stałe matematyczne i kryptograficzne wykorzystywane w bezpiecznych aplikacjach.</description>
@@ -809,6 +891,25 @@
       <category>matematyka</category>
       <category>bezpieczeństwo</category>
       <category>NIST</category>
+    </item>
+    <item>
+      <title>LibMake: Rust Library Scaffold Generator</title>
+      <link>https://sebastienrousseau.com/pl/2023-10-26-libmake-generator-kodu-do-bibliotek-rust/</link>
+      <description>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2023-10-26-libmake-generator-kodu-do-bibliotek-rust/</guid>
+      <pubDate>Thu, 26 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
+      <category>LibMake</category>
+      <category>Rust code generator</category>
+      <category>cargo scaffold</category>
+      <category>Rust library template</category>
+      <category>Tera templating</category>
+      <category>GitHub Actions Rust</category>
+      <category>cargo-audit</category>
+      <category>Rust API Guidelines</category>
+      <category>boilerplate generator</category>
+      <category>Rust CI workflow</category>
     </item>
     <item>
       <title>Libmake: generator kodu redukujący powtarzalne zadania w bibliotekach Rust</title>
@@ -861,6 +962,29 @@
       <category>JSON-LD</category>
     </item>
     <item>
+      <title>Automating ISO 20022 Payment Files Creation with pain001</title>
+      <link>https://sebastienrousseau.com/pl/2023-09-29-automatyzacja-plikow-platnosci-iso-20022-z-pain001/</link>
+      <description>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2023-09-29-automatyzacja-plikow-platnosci-iso-20022-z-pain001/</guid>
+      <pubDate>Fri, 29 Sep 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" type="image/webp" length="0"/>
+      <category>pain001</category>
+      <category>ISO 20022</category>
+      <category>pain.001.001.09</category>
+      <category>CustomerCreditTransferInitiation</category>
+      <category>SEPA Credit Transfer</category>
+      <category>CBPR+</category>
+      <category>payment automation</category>
+      <category>XML generation</category>
+      <category>XSD validation</category>
+      <category>GrpHdr</category>
+      <category>PmtInf</category>
+      <category>CdtTrfTxInf</category>
+      <category>CtrlSum</category>
+      <category>SWIFT</category>
+    </item>
+    <item>
       <title>Automatyzacja tworzenia plików płatności zgodnych z ISO 20022 przy użyciu pain001</title>
       <link>https://sebastienrousseau.com/pl/2023-09-29-automatyzacja-plikow-platnosci-iso-20022-z-pain001/</link>
       <description>Biblioteka Python pain001 automatyzuje tworzenie plików płatności ISO 20022 pain.001 z CSV lub SQLite, zaprojektowana dla globalnej migracji SWIFT i SEPA.</description>
@@ -893,6 +1017,25 @@
       <category>architektura</category>
     </item>
     <item>
+      <title>The making of the Express Transaction Credits Platform</title>
+      <link>https://sebastienrousseau.com/pl/2018-02-15-powstanie-platformy-express-transaction-credits/</link>
+      <description>Techniczny wgląd w platformę EXTC zbudowaną na Ethereum ERC-223 w 2018 r.: architektura tokenów, multi-sig, transfery time-lock i natychmiastowe pożyczki zabezpieczone aktywami.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2018-02-15-powstanie-platformy-express-transaction-credits/</guid>
+      <pubDate>Thu, 15 Feb 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
+      <category>platforma EXTC</category>
+      <category>ERC-223</category>
+      <category>inteligentne kontrakty Ethereum</category>
+      <category>architektura tokenów</category>
+      <category>wielopodpis</category>
+      <category>transfer time-lock</category>
+      <category>płatności blockchain</category>
+      <category>pożyczki zabezpieczone aktywami</category>
+      <category>zdecentralizowane finanse</category>
+      <category>krypto 2018</category>
+    </item>
+    <item>
       <title>Nowa kryptowaluta i rozwiązanie szybszych płatności przyszłości</title>
       <link>https://sebastienrousseau.com/pl/2018-02-04-nowa-kryptowaluta-i-szybsze-platnosci-przyszlosci/</link>
       <description>Prezentacja nowej kryptowaluty i protokołu zaprojektowanego dla szybszych, tańszych płatności globalnych.</description>
@@ -905,6 +1048,25 @@
       <category>blockchain</category>
       <category>protokół</category>
       <category>fintech</category>
+    </item>
+    <item>
+      <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
+      <link>https://sebastienrousseau.com/pl/2018-02-04-nowa-kryptowaluta-i-szybsze-platnosci-przyszlosci/</link>
+      <description>Na początku 2018 roku platforma EXTC badała szybsze płatności transgraniczne za pomocą inteligentnych kontraktów Ethereum ERC-223 — wczesny projekt tego, co zdecentralizowane finanse później zbudowały.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2018-02-04-nowa-kryptowaluta-i-szybsze-platnosci-przyszlosci/</guid>
+      <pubDate>Sun, 04 Feb 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" type="image/webp" length="0"/>
+      <category>EXTC</category>
+      <category>ERC-223</category>
+      <category>inteligentne kontrakty Ethereum</category>
+      <category>szybkie płatności</category>
+      <category>kryptowaluta</category>
+      <category>płatności blockchain</category>
+      <category>token płatniczy</category>
+      <category>zdecentralizowane finanse</category>
+      <category>ERC-20</category>
+      <category>płatności transgraniczne</category>
     </item>
     <item>
       <title>Standard tokenów ERC-20</title>
@@ -921,6 +1083,27 @@
       <category>kryptowaluta</category>
       <category>ICO</category>
       <category>blockchain</category>
+    </item>
+    <item>
+      <title>Understanding the Technology behind Blockchain</title>
+      <link>https://sebastienrousseau.com/pl/2018-01-09-zrozumiec-technologie-stojaca-za-blockchainem/</link>
+      <description>Techniczne wprowadzenie do blockchain: łańcuchy hash, drzewa Merkle, konsensus rozproszony i jak programowalna warstwa Ethereum przekształciła rejestr płatności w platformę dla smart contracts i tokenizowanych aktywów.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2018-01-09-zrozumiec-technologie-stojaca-za-blockchainem/</guid>
+      <pubDate>Tue, 09 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" type="image/webp" length="0"/>
+      <category>technologia blockchain</category>
+      <category>hash kryptograficzny</category>
+      <category>drzewo Merkle</category>
+      <category>konsensus rozproszony</category>
+      <category>proof of work</category>
+      <category>Ethereum</category>
+      <category>smart contracts</category>
+      <category>EVM</category>
+      <category>Solidity</category>
+      <category>ERC-20</category>
+      <category>rejestr rozproszony</category>
+      <category>zdecentralizowane finanse</category>
     </item>
     <item>
       <title>Zrozumieć technologię stojącą za blockchainem</title>

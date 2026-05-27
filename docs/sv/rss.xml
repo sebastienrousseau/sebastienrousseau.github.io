@@ -6,7 +6,7 @@
     <description>Artiklar på svenska: tillämpad AI, ISO 20022-betalningar, postkvantkryptografi och transformationen av grossistbetalningar.</description>
     <atom:link href="https://sebastienrousseau.com/sv/rss.xml" rel="self" type="application/rss+xml"/>
     <language>sv-SE</language>
-    <lastBuildDate>Fri, 22 May 2026 21:38:56 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 23:13:19 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alla rättigheter förbehållna.</copyright>
     <item>
       <title>UK Payments Forward Plan 2026: stablecoins, öppen bankverksamhet och agentbetalningar</title>
@@ -83,51 +83,51 @@
       <category>Londonjazz konserter</category>
     </item>
     <item>
-      <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+      <title>Tokeniserade depositioner 2026: banktjänster, konkurrens från stablecoins och status för programmerbara pengar från affärsbanker</title>
       <link>https://sebastienrousseau.com/sv/2026-05-21-tokenised-deposits-banking-services-status-2026/</link>
-      <description>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</description>
+      <description>Tokeniserade insättningstjänster 2026 går från forskning till bankpiloter och tidiga kunderbjudanden. Kommersiella bankpengar anpassas för programmerbar avveckling, digitala plånböcker, stablecoin-interoperabilitet och tokeniserade kapitalmarknader.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-21-tokenised-deposits-banking-services-status-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" type="image/webp" length="0"/>
-      <category>tokenised deposits 2026</category>
+      <category>tokeniserade insättningar 2026</category>
       <category>tokenized deposits banking</category>
       <category>deposit tokens</category>
       <category>Great British Tokenised Deposits</category>
       <category>Lloyds digital assets</category>
       <category>stablecoins</category>
-      <category>commercial bank money</category>
+      <category>kommersiella bankpengar</category>
       <category>BIS stablecoins</category>
       <category>Project Agora</category>
       <category>unified ledger</category>
       <category>Deutsche Bank digital money</category>
       <category>CBDC</category>
-      <category>tokenised money</category>
-      <category>digital wallets</category>
+      <category>tokeniserade pengar</category>
+      <category>digitala plånböcker</category>
       <category>tokenised gilts</category>
     </item>
     <item>
-      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <title>Cloud native banking 2026: Kubernetes, DORA, suveränitet och slutet på klyftan mellan VM och container</title>
       <link>https://sebastienrousseau.com/sv/2026-05-20-cloud-native-banking-financial-institutions-2026/</link>
-      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <description>Molnbaserad bankverksamhet 2026 handlar om Kubernetes-plattformsengineering, DORA-anpassad driftsäkerhet, VM- och containerkonvergens, molnsouveränitet, AI-arbetsbelastningar och dataportabilitet.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-20-cloud-native-banking-financial-institutions-2026/</guid>
       <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
-      <category>cloud native banking 2026</category>
-      <category>Kubernetes banks</category>
-      <category>financial institutions cloud</category>
+      <category>molnbaserad bankverksamhet 2026</category>
+      <category>Kubernetes banker</category>
+      <category>finansiella institutioner molnet</category>
       <category>DORA 2026</category>
-      <category>cloud resilience</category>
+      <category>molnresistens</category>
       <category>Red Hat OpenShift</category>
       <category>Portworx</category>
-      <category>VM container coexistence</category>
-      <category>bank cloud sovereignty</category>
-      <category>financial services cloud dependency</category>
-      <category>operational resilience</category>
-      <category>disaster recovery</category>
-      <category>cloud exit strategy</category>
-      <category>AI banking workloads</category>
+      <category>VM container samexistens</category>
+      <category>bank molnsouveränitet</category>
+      <category>finansiella tjänster molnberoende</category>
+      <category>driftsäkerhet</category>
+      <category>katastrofåterställning</category>
+      <category>molnutgångsstrategi</category>
+      <category>AI bankarbetsbelastningar</category>
     </item>
     <item>
       <title>Globala stora betalningar 2026: ISO 20022, förnyelse av RTGS och interoperabilitetens ekonomi</title>
@@ -688,6 +688,27 @@
       <category>innovación tecnológica</category>
     </item>
     <item>
+      <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
+      <link>https://sebastienrousseau.com/sv/2024-02-12-akande-rostassistent-personlig-och-chefsassistans/</link>
+      <description>Àkàndé är en Python-röstassistent med öppen källkod som kombinerar OpenAI Whisper-taligenkänning, GPT-4-chattavslutningar och en lokal SQLite-cache för ett röstdrivet arbetsflöde med PDF-sammanfattningar.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2024-02-12-akande-rostassistent-personlig-och-chefsassistans/</guid>
+      <pubDate>Mon, 12 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" type="image/webp" length="0"/>
+      <category>Àkàndé</category>
+      <category>OpenAI GPT-4</category>
+      <category>Whisper STT</category>
+      <category>SQLite-cachelagring</category>
+      <category>fpdf2</category>
+      <category>Python-röstassistent</category>
+      <category>API för chattavslutningar</category>
+      <category>PDF-sammanfattning</category>
+      <category>SHA-256-cache</category>
+      <category>text-till-tal</category>
+      <category>AI-assistent för chefer</category>
+      <category>öppen källkod</category>
+    </item>
+    <item>
       <title>IA generativa en la publicidad: Amazon Rufus y Meta</title>
       <link>https://sebastienrousseau.com/sv/2024-02-08-revolutionera-reklam-hur-ai-formar-framtiden/</link>
       <description>Cómo la IA transforma la publicidad: perspectivas sobre Rufus de Amazon y los últimos desarrollos de Meta. Descubra el impacto en el compromiso del consumidor.</description>
@@ -724,6 +745,48 @@
       <category>transcripción automatizada</category>
       <category>tratamiento de datos de audio</category>
       <category>aprendizaje automático</category>
+    </item>
+    <item>
+      <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
+      <link>https://sebastienrousseau.com/sv/2024-01-29-ai-driven-ljudanalys-oversattningar-och-insikter/</link>
+      <description>Audio Analyser använder Azures neurala speech-to-text-modeller, Text Analytics NLP och CherryPy för att omvandla ljudinspelningar till sökbara transkript med sentimentpoäng, nyckelordsextrahering och flerspråkiga översättningar.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2024-01-29-ai-driven-ljudanalys-oversattningar-och-insikter/</guid>
+      <pubDate>Mon, 29 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" type="image/webp" length="0"/>
+      <category>Azure Cognitive Services</category>
+      <category>tal till text</category>
+      <category>neural akustisk modell</category>
+      <category>Azure Text Analytics</category>
+      <category>naturlig språkbehandling</category>
+      <category>sentimentanalys</category>
+      <category>CherryPy</category>
+      <category>batch transcription API</category>
+      <category>flerspråkig ASR</category>
+      <category>Azure Translator</category>
+      <category>ljudtranskription</category>
+      <category>Python-ljudbehandling</category>
+    </item>
+    <item>
+      <title>AI Prompt Engineering 2024: Techniques That Work</title>
+      <link>https://sebastienrousseau.com/sv/2024-01-23-framsteg-inom-ai-promptteknik/</link>
+      <description>Prompt engineering styr LLM-beteende vid inferenstid. Artikeln täcker zero-shot och few-shot prompting, chain-of-thought-resonemang, self-consistency, ReAct-arkitektur och prompt injection-risker.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2024-01-23-framsteg-inom-ai-promptteknik/</guid>
+      <pubDate>Tue, 23 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" type="image/webp" length="0"/>
+      <category>prompt engineering</category>
+      <category>chain-of-thought prompting</category>
+      <category>few-shot learning</category>
+      <category>zero-shot prompting</category>
+      <category>in-context learning</category>
+      <category>prompt injection</category>
+      <category>ReAct</category>
+      <category>self-consistency</category>
+      <category>retrieval-augmented generation</category>
+      <category>BloombergGPT</category>
+      <category>system prompt</category>
+      <category>LLM agent</category>
     </item>
     <item>
       <title>AI Prompt Engineering 2024: técnicas que funcionan</title>
@@ -916,6 +979,25 @@
       <category>perdurabilidad</category>
     </item>
     <item>
+      <title>Generative AI in 2023: How It Works, Where It Lands</title>
+      <link>https://sebastienrousseau.com/sv/2023-11-12-utforska-generativ-ai/</link>
+      <description>Hur transformermodeller fungerar, vilka 2023-modeller satte måttstocken, var generativ AI landar först i finansiella tjänster och vilka styrningsfrågor som måste besvaras innan driftsättning.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2023-11-12-utforska-generativ-ai/</guid>
+      <pubDate>Sun, 12 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
+      <category>generativ AI</category>
+      <category>stor språkmodell</category>
+      <category>transformerarkitektur</category>
+      <category>GPT-4</category>
+      <category>AI inom finansiella tjänster</category>
+      <category>hallucination</category>
+      <category>retrieval-augmented generation</category>
+      <category>AI-styrning</category>
+      <category>foundation model</category>
+      <category>fine-tuning</category>
+    </item>
+    <item>
       <title>IA generativa en 2023: cómo funciona, dónde aterriza</title>
       <link>https://sebastienrousseau.com/sv/2023-11-12-utforska-generativ-ai/</link>
       <description>Explore la IA generativa en 2023: cómo funciona, dónde se implanta primero en los servicios financieros, y las cuestiones éticas y arquitectónicas a plantearse.</description>
@@ -952,6 +1034,25 @@
       <category>biblioteca Common (CMN)</category>
       <category>aplicaciones Rust</category>
       <category>cálculos matemáticos</category>
+    </item>
+    <item>
+      <title>LibMake: Rust Library Scaffold Generator</title>
+      <link>https://sebastienrousseau.com/sv/2023-10-26-libmake-kodgenerator-for-rust-bibliotek/</link>
+      <description>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2023-10-26-libmake-kodgenerator-for-rust-bibliotek/</guid>
+      <pubDate>Thu, 26 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
+      <category>LibMake</category>
+      <category>Rust code generator</category>
+      <category>cargo scaffold</category>
+      <category>Rust library template</category>
+      <category>Tera templating</category>
+      <category>GitHub Actions Rust</category>
+      <category>cargo-audit</category>
+      <category>Rust API Guidelines</category>
+      <category>boilerplate generator</category>
+      <category>Rust CI workflow</category>
     </item>
     <item>
       <title>Racionalizar el desarrollo de bibliotecas Rust mediante la generación de código</title>
@@ -1017,6 +1118,29 @@
       <category>RSS</category>
     </item>
     <item>
+      <title>Automating ISO 20022 Payment Files Creation with pain001</title>
+      <link>https://sebastienrousseau.com/sv/2023-09-29-automatisera-iso-20022-betalfiler-med-pain001/</link>
+      <description>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2023-09-29-automatisera-iso-20022-betalfiler-med-pain001/</guid>
+      <pubDate>Fri, 29 Sep 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" type="image/webp" length="0"/>
+      <category>pain001</category>
+      <category>ISO 20022</category>
+      <category>pain.001.001.09</category>
+      <category>CustomerCreditTransferInitiation</category>
+      <category>SEPA Credit Transfer</category>
+      <category>CBPR+</category>
+      <category>payment automation</category>
+      <category>XML generation</category>
+      <category>XSD validation</category>
+      <category>GrpHdr</category>
+      <category>PmtInf</category>
+      <category>CdtTrfTxInf</category>
+      <category>CtrlSum</category>
+      <category>SWIFT</category>
+    </item>
+    <item>
       <title>Automatizar la creación de archivos de pago conformes con ISO 20022 con Pain001</title>
       <link>https://sebastienrousseau.com/sv/2023-09-29-automatisera-iso-20022-betalfiler-med-pain001/</link>
       <description>Automatice la creación de archivos de pago pain.001 conformes con ISO 20022 a partir de CSV o SQLite con Pain001, la biblioteca Python de código abierto.</description>
@@ -1056,6 +1180,25 @@
       <category>finanzas descentralizadas</category>
     </item>
     <item>
+      <title>The making of the Express Transaction Credits Platform</title>
+      <link>https://sebastienrousseau.com/sv/2018-02-15-skapandet-av-express-transaction-credits-plattformen/</link>
+      <description>En teknisk genomgång av hur EXTC-plattformen byggdes på Ethereum ERC-223 år 2018: tokenarkitektur, multisig-utbetalningar, tidslåsta överföringar och säkerhetskopplade snabblån.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2018-02-15-skapandet-av-express-transaction-credits-plattformen/</guid>
+      <pubDate>Thu, 15 Feb 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
+      <category>EXTC-plattformen</category>
+      <category>ERC-223</category>
+      <category>Ethereum smarta kontrakt</category>
+      <category>tokenarkitektur</category>
+      <category>multisignatur</category>
+      <category>tidslåst överföring</category>
+      <category>blockkedjebetalningar</category>
+      <category>säkerhetskopplade lån</category>
+      <category>decentraliserad finans</category>
+      <category>krypto 2018</category>
+    </item>
+    <item>
       <title>Presentación de una nueva criptomoneda y una solución de pago más rápida</title>
       <link>https://sebastienrousseau.com/sv/2018-02-04-ny-kryptovaluta-och-snabbare-betallosning/</link>
       <description>Un capítulo significativo en la evolución del panorama financiero mundial, configurado por la innovación tecnológica, los cambios geopolíticos y las finanzas sostenibles.</description>
@@ -1072,6 +1215,25 @@
       <category>blockchain</category>
       <category>pagos transfronterizos</category>
       <category>inclusión financiera</category>
+    </item>
+    <item>
+      <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
+      <link>https://sebastienrousseau.com/sv/2018-02-04-ny-kryptovaluta-och-snabbare-betallosning/</link>
+      <description>I början av 2018 utforskade EXTC-plattformen snabbare gränsöverskridande betalningar via Ethereum ERC-223-smarta kontrakt — en tidig ritning för vad decentraliserad finans senare skulle bygga.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2018-02-04-ny-kryptovaluta-och-snabbare-betallosning/</guid>
+      <pubDate>Sun, 04 Feb 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" type="image/webp" length="0"/>
+      <category>EXTC</category>
+      <category>ERC-223</category>
+      <category>Ethereum smarta kontrakt</category>
+      <category>snabbare betalningar</category>
+      <category>kryptovaluta</category>
+      <category>blockkedjebetalningar</category>
+      <category>betalningstoken</category>
+      <category>decentraliserad finans</category>
+      <category>ERC-20</category>
+      <category>gränsöverskridande betalningar</category>
     </item>
     <item>
       <title>El estándar de token ERC-20</title>
@@ -1110,6 +1272,27 @@
       <category>ERC-20</category>
       <category>tokenización</category>
       <category>testnet</category>
+    </item>
+    <item>
+      <title>Understanding the Technology behind Blockchain</title>
+      <link>https://sebastienrousseau.com/sv/2018-01-09-forsta-tekniken-bakom-blockchain/</link>
+      <description>En teknisk introduktion till hur blockchain fungerar: kryptografiska hash-kedjor, Merkle-träd, distribuerad konsensus och hur Ethereums programmerbara lager förvandlade ett betalningsregister till en plattform för smarta kontrakt och tokeniserade tillgångar.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2018-01-09-forsta-tekniken-bakom-blockchain/</guid>
+      <pubDate>Tue, 09 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" type="image/webp" length="0"/>
+      <category>blockchain-teknik</category>
+      <category>kryptografisk hash</category>
+      <category>Merkle-träd</category>
+      <category>distribuerad konsensus</category>
+      <category>proof of work</category>
+      <category>Ethereum</category>
+      <category>smarta kontrakt</category>
+      <category>EVM</category>
+      <category>Solidity</category>
+      <category>ERC-20</category>
+      <category>distribuerat register</category>
+      <category>decentraliserad finans</category>
     </item>
     <item>
       <title>Blockchain: la tecnología que importa en 2018</title>

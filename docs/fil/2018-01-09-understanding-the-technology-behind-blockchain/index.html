@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta itemprop="datePublished" content="Mon, 09 Jan 2023 09:09:00 +0000" id="date" />
-    <meta itemprop="dateModified" content="Mon, 09 Jan 2023 09:09:00 +0000" id="last-modified" />
-    <title>فهم التقنية الكامنة وراء البلوكشين — Sebastien Rousseau</title>
+    <meta itemprop="datePublished" content="Tue, 09 Jan 2018 09:09:00 +0000" id="date" />
+    <meta itemprop="dateModified" content="Tue, 09 Jan 2018 09:09:00 +0000" id="last-modified" />
+    <title>Understanding the Technology behind Blockchain — Sebastien Rousseau</title>
 
     <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
-<meta name="description" content="بناء عملة مشفّرة على بلوكشين Ethereum: دليل شامل لتطوير البلوكشين والترميز وتنفيذ العملات المشفّرة.">
-<meta name="keywords" content="blockchain, Ethereum, smart contract, العملة المشفّرة, Solidity, Geth, dApps, ERC-20, الترميز, testnet">
+<meta name="description" content="Teknikal na introduksyon sa blockchain: cryptographic hash chains, Merkle trees, distributed consensus, at kung paano pinalawak ng Ethereum ang payments ledger bilang platform para sa smart contracts at tokenised assets.">
+<meta name="keywords" content="blockchain technology, cryptographic hash, Merkle tree, distributed consensus, proof of work, Ethereum, smart contracts, EVM, Solidity, ERC-20, distributed ledger, decentralised finance">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
     <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+<meta name="apple-mobile-web-app-title" content="Blockchain Tech">
 
     <!-- Strict security headers. The headers below that can be set via
          <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
@@ -40,7 +40,7 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-2XxGdPWjcoNhztXjZifZ45b6g4GZMD5vDZ7b0/SRgkI=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-F5deFxlM7MnZoDwP4Y0WYPbExrcEG8AFsFFx8oDgDyY=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-RGXlit3N8CsCaCCYFj88xejOUWx3ViD0sUm0ZGQqv8Y=' 'sha256-kda9qhz8J5ax3US+Fe0s+3Dy+CGLqu02M429EqDiRQM=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-+x1a5gwDaXXOWYIvdu078iqXdRtSd7sCLNE9by/lwlA=' 'sha256-4AurfxEIE27Ee2aDIXaV7PMe9ii5rQJLZFHzktjcKXk=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-F5deFxlM7MnZoDwP4Y0WYPbExrcEG8AFsFFx8oDgDyY=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-RGXlit3N8CsCaCCYFj88xejOUWx3ViD0sUm0ZGQqv8Y=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
@@ -77,8 +77,8 @@
     <link rel="alternate" type="application/atom+xml" title="Feed ng Atom" href="/fil/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="stylesheet" href="/highlight.a92b9694.css">
-<meta property="og:title" content="فهم التقنية الكامنة وراء البلوكشين — Sebastien Rousseau">
-<meta property="og:description" content="بناء عملة مشفّرة على بلوكشين Ethereum: دليل شامل لتطوير البلوكشين والترميز وتنفيذ العملات المشفّرة.">
+<meta property="og:title" content="Understanding the Technology behind Blockchain — Sebastien Rousseau">
+<meta property="og:description" content="Teknikal na introduksyon sa blockchain: cryptographic hash chains, Merkle trees, distributed consensus, at kung paano pinalawak ng Ethereum ang payments ledger bilang platform para sa smart contracts at tokenised assets.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sebastienrousseau.com/fil/2018-01-09-understanding-the-technology-behind-blockchain/">
 <meta property="og:image" content="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp">
@@ -86,8 +86,8 @@
 <meta property="og:image:height" content="100vh">
 <meta property="og:locale" content="fil_PH">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="فهم التقنية الكامنة وراء البلوكشين — Sebastien Rousseau">
-<meta name="twitter:description" content="بناء عملة مشفّرة على بلوكشين Ethereum: دليل شامل لتطوير البلوكشين والترميز وتنفيذ العملات المشفّرة.">
+<meta name="twitter:title" content="Understanding the Technology behind Blockchain — Sebastien Rousseau">
+<meta name="twitter:description" content="Teknikal na introduksyon sa blockchain: cryptographic hash chains, Merkle trees, distributed consensus, at kung paano pinalawak ng Ethereum ang payments ledger bilang platform para sa smart contracts at tokenised assets.">
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp">
 <link rel="canonical" href="https://sebastienrousseau.com/fil/2018-01-09-understanding-the-technology-behind-blockchain/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
@@ -129,34 +129,34 @@
             </button>
             <div class="ap-lang-menu" role="menu" hidden>
               <div class="ap-lang-menu-grid">
-                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
-                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
-                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
-                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
-                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
-                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
-                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
-                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
-                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
-                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
-                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
-                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
-                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
-                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
-                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
-                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
-                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
-                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
-                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
-                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
-                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
-                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
-                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
-                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
-                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
-                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
-                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
-                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+                <a class="ap-lang-item" href="/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2018-01-09-comprendre-la-technologie-derriere-la-blockchain/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2018-01-09-pochopeni-technologie-za-blockchainem/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2018-01-09-die-technologie-hinter-blockchain-verstehen/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2018-01-09-comprender-la-tecnologia-detras-de-blockchain/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2018-01-09-blockchain-ke-peechhe-ki-takneek-samajhna/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2018-01-09-memahami-teknologi-di-balik-blockchain/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2018-01-09-comprendere-la-tecnologia-dietro-la-blockchain/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2018-01-09-burokkuchein-no-gijutsu-wo-rikai-suru/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2018-01-09-beulrokchein-baehu-gisul-ihae/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2018-01-09-de-technologie-achter-blockchain-begrijpen/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2018-01-09-zrozumiec-technologie-stojaca-za-blockchainem/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2018-01-09-compreender-a-tecnologia-por-tras-do-blockchain/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2018-01-09-ponimanie-tekhnologii-blockchain/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2018-01-09-forsta-tekniken-bakom-blockchain/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2018-01-09-khao-chai-theknoloyi-beuang-lang-blockchain/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2018-01-09-blockchain-arkasindaki-teknolojiyi-anlamak/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2018-01-09-rozuminnia-tekhnolohiyi-za-blokcheinom/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2018-01-09-hieu-ve-cong-nghe-dang-sau-blockchain/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2018-01-09-lijie-quqiulian-beihou-de-jishu/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2018-01-09-lijie-quqiulian-beihou-de-jishu-tw/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
               </div>
             </div>
           </div>
@@ -167,108 +167,139 @@
     </header>
 
         <section class="ap-hero">
-      <h1>فهم التقنية الكامنة وراء البلوكشين</h1>
-      <p class="sub">بناء عملة مشفّرة على Ethereum، خطوةً خطوة</p>
-    <nav class="article-tags" aria-label="Mga paksa"><a href="/tags/index.html#h3-blockchain" class="article-tag" rel="tag">blockchain</a><a href="/tags/index.html#h3-ethereum" class="article-tag" rel="tag">Ethereum</a><a href="/tags/index.html#h3-smart-contract" class="article-tag" rel="tag">smart contract</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">العملة المشفّرة</a><a href="/tags/index.html#h3-solidity" class="article-tag" rel="tag">Solidity</a><a href="/tags/index.html#h3-geth" class="article-tag" rel="tag">Geth</a><a href="/tags/index.html#h3-dapps" class="article-tag" rel="tag">dApps</a><a href="/tags/index.html#h3-erc-20" class="article-tag" rel="tag">ERC-20</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">الترميز</a><a href="/tags/index.html#h3-testnet" class="article-tag" rel="tag">testnet</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2023-01-09T09:09:00+00:00" class="meta-pub">Inilathala noong 9 Jan 2023</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Na-update noong 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Tinatayang oras ng pagbasa">3 min basahin</span></div></section>
+      <h1>Understanding the Technology behind Blockchain</h1>
+      <p class="sub">Mula sa cryptographic hash chains hanggang sa programmable smart contracts: ang mekanika na gumawa ng blockchain na platform, hindi lamang ledger.</p>
+    <nav class="article-tags" aria-label="Mga paksa"><a href="/tags/index.html#h3-blockchain-technology" class="article-tag" rel="tag">blockchain technology</a><a href="/tags/index.html#h3-cryptographic-hash" class="article-tag" rel="tag">cryptographic hash</a><a href="/tags/index.html#h3-merkle-tree" class="article-tag" rel="tag">Merkle tree</a><a href="/tags/index.html#h3-distributed-consensus" class="article-tag" rel="tag">distributed consensus</a><a href="/tags/index.html#h3-proof-of-work" class="article-tag" rel="tag">proof of work</a><a href="/tags/index.html#h3-ethereum" class="article-tag" rel="tag">Ethereum</a><a href="/tags/index.html#h3-smart-contracts" class="article-tag" rel="tag">smart contracts</a><a href="/tags/index.html#h3-evm" class="article-tag" rel="tag">EVM</a><a href="/tags/index.html#h3-solidity" class="article-tag" rel="tag">Solidity</a><a href="/tags/index.html#h3-erc-20" class="article-tag" rel="tag">ERC-20</a><a href="/tags/index.html#h3-distributed-ledger" class="article-tag" rel="tag">distributed ledger</a><a href="/tags/index.html#h3-decentralised-finance" class="article-tag" rel="tag">decentralised finance</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-01-09T09:09:00+00:00" class="meta-pub">Inilathala noong 9 Jan 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">Na-update noong 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Tinatayang oras ng pagbasa">11 min basahin</span></div></section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Mga nilalaman</h2><ol><li><a href="#section-1">فهم التقنية الكامنة وراء البلوكشين</a></li><li><a href="#section-2">الفكرة</a></li><li><a href="#section-6">الأثر</a></li><li><a href="#section-7">الحوافز</a></li><li><a href="#section-8">خاتمة</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> بناء عملة مشفّرة على بلوكشين Ethereum: دليل شامل لتطوير البلوكشين والترميز وتنفيذ العملات المشفّرة.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>فهم التقنية الكامنة وراء البلوكشين.</strong> فتحت تقنية البلوكشين الباب أمام حقبةٍ جديدة من التطبيقات اللامركزية (dApps) التي تعمل باستقلاليّةٍ من دون تحكّمٍ مركزي.</li>  <li><strong>الفكرة.</strong> هدفنا بناء عملة مشفّرة بسيطة على Ethereum، تمنحك تجربةً عمليّة في تطوير البلوكشين.</li>  <li><strong>الأثر.</strong> ببناء عملةٍ مشفّرة قائمة على Ethereum من الصفر، ستحصل على:.</li>  <li><strong>الحوافز.</strong> يفتح إنجاز بناء توكن من البداية إلى النهاية بابَ تجربةٍ عمليّة مباشرة مع:.</li></ul></aside><p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/adam-smigielski-K5mPtONmpHM.webp&w=1600&format=webp&q=85" alt="حاسوب محمول مُطفأ فوق طاولة خشبية بُنّية"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
-<h2 id="section-1">فهم التقنية الكامنة وراء البلوكشين <a class="heading-anchor" href="#section-1" aria-label="Link patungo sa فهم التقنية الكامنة وراء البلوكشين">#</a></h2>
-<p>فتحت تقنية البلوكشين الباب أمام حقبةٍ جديدة من التطبيقات اللامركزية (dApps) التي تعمل باستقلاليّةٍ من دون تحكّمٍ مركزي. وتُوفّر Ethereum منصّةً قوية لإنشاء dApps معقّدة وعقود ذكية.</p>
-<p>ومن أبرز استخدامات Ethereum الواعدة إطلاق عملات مشفّرة وتوكنات رقمية مخصّصة. وفي هذا الدليل الشامل، سنستعرض خطوةً خطوة كيفية إنشاء توكن تشفيري خاصّ بك على Ethereum.</p>
-<h2 id="section-2">الفكرة <a class="heading-anchor" href="#section-2" aria-label="Link patungo sa الفكرة">#</a></h2>
-<p>هدفنا بناء عملة مشفّرة بسيطة على Ethereum، تمنحك تجربةً عمليّة في تطوير البلوكشين. وهذه هي الخطوات الرئيسية التي سنتناولها:</p>
-<h3 id="section-3">تصميم العملة المشفّرة <a class="heading-anchor" href="#section-3" aria-label="Link patungo sa تصميم العملة المشفّرة">#</a></h3>
-<p>أوّل مهمّة محورية هي تصميم عملتك المشفّرة. ويشمل ذلك تحديد سماتٍ أساسية:</p>
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Mga nilalaman</h2><ol><li><a href="#ang-problemang-nalutas-ng-blockchain">Ang Problemang Nalutas ng Blockchain</a></li><li><a href="#ang-mga-cryptographic-building-block">Ang Mga Cryptographic Building Block</a></li><li><a href="#paano-gumagana-ang-bitcoin-blockchain">Paano Gumagana ang Bitcoin Blockchain</a></li><li><a href="#programmable-layer-ng-ethereum">Programmable Layer ng Ethereum</a></li><li><a href="#pagsulat-ng-mga-smart-contract-sa-solidity">Pagsulat ng Mga Smart Contract sa Solidity</a></li><li><a href="#mula-sa-ledger-hanggang-sa-financial-infrastructure">Mula sa Ledger hanggang sa Financial Infrastructure</a></li><li><a href="#mga-madalas-itanong">Mga Madalas Itanong</a></li><li><a href="#mga-sanggunian">Mga Sanggunian</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Teknikal na introduksyon sa blockchain: cryptographic hash chains, Merkle trees, distributed consensus, at kung paano pinalawak ng Ethereum ang payments ledger bilang platform para sa smart contracts at tokenised assets.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Ang Problemang Nalutas ng Blockchain.</strong> Bago ang Bitcoin, ang mga digital na pagbabayad ay nangangailangan ng isang pinagkakatiwalaang intermediary — isang bangko, payment processor, o clearing house — upang maiwasan ang double-spending.</li>  <li><strong>Ang Mga Cryptographic Building Block.</strong> Ang teknolohiya ng blockchain ay nag-aasemble ng tatlong pre-existing na cryptographic primitive sa isang bagong arkitektura:.</li>  <li><strong>Paano Gumagana ang Bitcoin Blockchain.</strong> Ang isang Bitcoin block ay naglalaman ng tatlong lohikal na bahagi:.</li>  <li><strong>Programmable Layer ng Ethereum.</strong> Pinag-generalize ng Ethereum ang transaction model ng Bitcoin mula sa &quot;transfer value&quot; hanggang sa &quot;execute code.&quot; Ang mga pangunahing karagdagan:.</li></ul></aside><!-- lead-start -->
+
+<!-- lead-end -->
+<p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/adam-smigielski-K5mPtONmpHM.webp&w=1600&format=webp&q=85" alt="Abstract digital ledger blocks connected by light trails on dark background"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<blockquote>
+<p><strong>Buod / Mga Pangunahing Punto</strong></p>
 <ul>
-<li><strong>الاسم:</strong> اختر اسماً فريداً يُمثّل هويّة التوكن وغايته.</li>
-<li><strong>الرمز:</strong> انتق رمزاً قصيراً مثل BTC لبيتكوين. يُستخدم في المنصّات.</li>
-<li><strong>المعروض الإجمالي:</strong> حدّد العدد الأقصى للتوكنات المتداولة.</li>
-<li><strong>العدد العشري (Decimals):</strong> اضبط قابليّة قسمة التوكن، كأن يكون 2 للسنتات.</li>
-<li><strong>مزايا إضافية:</strong> أَضِف اختياريّاً ميزاتٍ كالسكّ (minting) والحرق (burning) والتجميد (freezing) وغيرها.</li>
+<li><strong>Ang problema.</strong> Ang digital cash ay nangangailangan ng paglutas ng problema ng double-spend: pag-iwas sa paggastos ng parehong yunit nang dalawang beses nang walang pinagkakatiwalaang clearinghouse. Nalutas ito ng 2008 whitepaper ng Bitcoin sa pamamagitan ng pagpapalit ng mga pinagkakatiwalaang intermediary ng cryptographic proof at distributed consensus (<a href="https://bitcoin.org/bitcoin.pdf" title="Bitcoin: A Peer-to-Peer Electronic Cash System">Nakamoto, 2008</a>).</li>
+<li><strong>Ang data structure.</strong> Ang blockchain ay isang linked list ng mga bloke kung saan ang bawat block header ay naglalaman ng SHA-256 hash ng nakaraang header. Ginagawa ng hash chain ang kasaysayan na append-only: ang pagbabago ng anumang nakaraang bloke ay nagpapawalang-bisa sa bawat kasunod na hash, na pinipilit ang isang umaatake na gawin muli ang lahat ng kasunod na proof-of-work.</li>
+<li><strong>Merkle trees.</strong> Ang mga transaksyon sa loob ng isang bloke ay naka-hash sa isang binary Merkle tree. Ang root hash, na nakaimbak sa block header, ay nagbibigay-daan sa mahusay na pag-verify ng anumang indibidwal na transaksyon nang hindi dina-download ang buong bloke — ang batayan para sa magagaang SPV client.</li>
+<li><strong>Pagpapalawak ng Ethereum.</strong> Ipinakilala ng Yellow Paper ng Ethereum (2014) ang EVM — isang deterministic stack machine na tumatakbo sa bawat full node. Ang mga smart contract ay bytecode na na-deploy sa chain; nagpapatakbo sila nang magkapareho sa lahat ng node at nagse-settle nang atomically, pinapalitan ang mga pinagkakatiwalaang intermediary ng self-enforcing code (<a href="https://ethereum.github.io/yellowpaper/paper.pdf" title="Ethereum Yellow Paper">Wood, 2014</a>).</li>
+<li><strong>Praktikal na kahalagahan.</strong> Ang bawat tokenised asset, stablecoin, at DeFi protocol na na-deploy mula 2017 ay tumatakbo sa mga pundasyon na ito. Ang pag-unawa sa hash chain, ang Merkle tree, at ang EVM execution model ay kinakailangan bago magtrabaho sa anumang Ethereum-based na sistema.</li>
 </ul>
-<h3 id="section-4">كتابة العقود الذكية <a class="heading-anchor" href="#section-4" aria-label="Link patungo sa كتابة العقود الذكية">#</a></h3>
-<p>لبثّ الحياة في عملتك المشفّرة، ستحتاج إلى برمجة عقودٍ ذكية تُحدّد وظائف التوكن وقواعده. والعقود الذكية سكربتات برمجية مُخزّنة على البلوكشين تعمل تلقائيّاً عند استيفاء شروطٍ معيّنة.</p>
-<p>ومن القدرات الجوهرية التي تجعل العقود الذكية مثاليّةً للعملات المشفّرة:</p>
+</blockquote>
+<hr />
+<h2 id="ang-problemang-nalutas-ng-blockchain">Ang Problemang Nalutas ng Blockchain <a class="heading-anchor" href="#ang-problemang-nalutas-ng-blockchain" aria-label="Link patungo sa Ang Problemang Nalutas ng Blockchain">#</a></h2>
+<p>Bago ang Bitcoin, ang mga digital na pagbabayad ay nangangailangan ng isang pinagkakatiwalaang intermediary — isang bangko, payment processor, o clearing house — upang maiwasan ang double-spending. Kung magpadala si Alice ng digital na file na kumakatawan sa £10 kay Bob, walang nasa file mismo ang pumigil sa kanya na magpadala ng magkaparehong kopya kay Carol. Ang solusyon sa bawat umiiral na sistema ay sentralisadong pagpapanatili ng talaan: sinabi ng ledger ng bangko na nagastos na ang pera, kaya hindi na ito maaaring gastusin muli.</p>
+<p>Ang kontribusyon ng Bitcoin ay palitan ang pinagkakatiwalaang ledger na iyon ng isang distributed na ledger kung saan ang talaan ng lahat ng transaksyon ay na-replicate sa libu-libong independiyenteng node. Ang mutual na kawalan ng tiwala sa pagitan ng mga node ay na-convert sa seguridad sa pamamagitan ng dalawang mekanismo:</p>
+<ol>
+<li>
+<p><strong>Cryptographic linking.</strong> Ang bawat bloke ng mga transaksyon ay naglalaman ng hash ng nakaraang bloke. Ang hash function ay isang one-way deterministic mapping: para sa anumang input, ang function ay gumagawa ng fixed-length output, at ang pagbabago kahit isang bit ng input ay gumagawa ng ganap na naiibang output. Nangangahulugang ang anumang pagbabago sa isang makasaysayang bloke ay nagpapawalang-bisa sa bawat bloke pagkatapos nito.</p>
+</li>
+<li>
+<p><strong>Proof-of-work consensus.</strong> Ang pagdaragdag ng bagong bloke ay nangangailangan ng paghahanap ng nonce value na ang hash ng bloke ay mas mababa sa isang target threshold — mahal sa computational na paraan na mahanap, mura naman na i-verify. Ginagawa nitong proporsyonal na mahal ang muling pagsulat ng kasaysayan sa lalim ng blokeng binabago, dahil dapat gawin muli ng umaatake ang lahat ng proof-of-work mula sa blokeng iyon hanggang sa dulo ng chain.</p>
+</li>
+</ol>
+<p>Ang kombinasyon ay nangangahulugan na ang pinakamahabang chain na may pinakamaraming cumulative proof-of-work ay, sa pamamagitan ng konstruksyon, ang isa na pinapanatili ng mga tapat na kalahok na gumagugol ng tunay na mapagkukunan.</p>
+<h2 id="ang-mga-cryptographic-building-block">Ang Mga Cryptographic Building Block <a class="heading-anchor" href="#ang-mga-cryptographic-building-block" aria-label="Link patungo sa Ang Mga Cryptographic Building Block">#</a></h2>
+<p>Ang teknolohiya ng blockchain ay nag-aasemble ng tatlong pre-existing na cryptographic primitive sa isang bagong arkitektura:</p>
+<h3 id="mga-hash-function-ng-sha-256">Mga Hash Function ng SHA-256 <a class="heading-anchor" href="#mga-hash-function-ng-sha-256" aria-label="Link patungo sa Mga Hash Function ng SHA-256">#</a></h3>
+<p>Ang SHA-256 (Secure Hash Algorithm 256-bit) ay isang miyembro ng pamilyang SHA-2 na na-standardize ng NIST. Tumatanggap ito ng input na may arbitrary na haba at gumagawa ng 256-bit na output. Mga pangunahing katangian para sa paggamit ng blockchain:</p>
 <ul>
-<li><strong>التنفيذ الذاتي:</strong> تعمل تلقائيّاً عند تشغيلها دون تدخّل طرفٍ ثالث.</li>
-<li><strong>عدم القابلية للتعديل:</strong> بمجرّد نشر الشيفرة، لا يمكن تغييرها. وهذا يُوفّر أماناً.</li>
-<li><strong>الاستقلالية:</strong> لا حاجة إلى سلطةٍ مركزيّة لإدارة العقود الذكية.</li>
-<li><strong>الشفافية:</strong> يستطيع أيّ شخصٍ تفقّد منطق العقد الذكي.</li>
-<li><strong>الأتمتة:</strong> تُؤتمَت إجراءات كتحويل الأموال عبر شيفرة العقد.</li>
-<li><strong>الأمان:</strong> تبقى الأموال المحفوظة في العقد آمنةً حتى استيفاء شروط الإفراج.</li>
-<li><strong>الكفاءة:</strong> تُلغي العقود الذكية الوسطاء، فتُسرّع العمليات وتُخفّض كلفتها.</li>
+<li><strong>Deterministic.</strong> Ang parehong input ay laging gumagawa ng parehong output.</li>
+<li><strong>Pre-image resistance.</strong> Dahil sa isang hash output, hindi maaasahang maibalik ang input sa computational na paraan.</li>
+<li><strong>Avalanche effect.</strong> Ang pagbabago ng isang bit ng input ay nagbabago ng halos kalahati ng mga output bit, na ginagawang hindi mahusay ang brute-force search.</li>
+<li><strong>Collision resistance.</strong> Hindi maaasahang mahanap ang dalawang magkaibang input na gumagawa ng parehong hash sa computational na paraan.</li>
 </ul>
-<p>مثال على شيفرة عقدٍ بلغة Solidity.</p>
+<p>Inilalapat ng Bitcoin ang SHA-256 nang dalawang beses (SHA-256d) para sa karagdagang seguridad laban sa mga length-extension attack. Gumagamit ang Ethereum ng Keccak-256, isang SHA-3 finalist variant.</p>
+<h3 id="merkle-trees">Merkle Trees <a class="heading-anchor" href="#merkle-trees" aria-label="Link patungo sa Merkle Trees">#</a></h3>
+<p>Ang Merkle tree ay isang binary tree ng mga hash. Ang bawat leaf node ay ang hash ng isang transaksyon. Ang bawat internal node ay ang hash ng dalawang anak nito. Ang ugat — ang Merkle root — ay nagbubuod ng lahat ng transaksyon sa bloke sa isang solong 32-byte na halaga na nakaimbak sa block header.</p>
+<p>Ang praktikal na kahihinatnan: upang i-verify na ang isang partikular na transaksyon ay kasama sa isang bloke, kailangan mo lamang ng <code>log₂(n)</code> na hash, hindi lahat ng <code>n</code> na transaksyon. Para sa isang bloke na may 2,000 transaksyon, ang pag-verify ay nangangailangan ng 11 hash sa halip na 2,000 — ang batayan para sa Simplified Payment Verification (SPV) sa mga magagaang client.</p>
+<h3 id="mga-digital-signature-ecdsa">Mga Digital Signature (ECDSA) <a class="heading-anchor" href="#mga-digital-signature-ecdsa" aria-label="Link patungo sa Mga Digital Signature (ECDSA)">#</a></h3>
+<p>Gumagamit ang awtorisasyon ng transaksyon sa Bitcoin at Ethereum ng Elliptic Curve Digital Signature Algorithm (ECDSA) sa ibabaw ng secp256k1 curve. Ang isang private key ay pumipirma ng transaksyon; ang sinumang node ay maaaring i-verify ang pirma gamit ang kaukulang public key nang hindi alam ang private key. Tinitiyak nito na ang humahawak lamang ng private key ang maaaring mag-authorize ng gastos mula sa isang address.</p>
+<p>Ang mga address ng Ethereum ay ang huling 20 byte ng Keccak-256 hash ng public key — isang derivation na ginagawang compact at portable ang mga address habang nananatiling cryptographically na nakatali sa key pair.</p>
+<h2 id="paano-gumagana-ang-bitcoin-blockchain">Paano Gumagana ang Bitcoin Blockchain <a class="heading-anchor" href="#paano-gumagana-ang-bitcoin-blockchain" aria-label="Link patungo sa Paano Gumagana ang Bitcoin Blockchain">#</a></h2>
+<p>Ang isang Bitcoin block ay naglalaman ng tatlong lohikal na bahagi:</p>
+<p><strong>Ang block header</strong> — 80 byte na binubuo ng: ang bersyon ng protocol, ang hash ng nakaraang block header, ang Merkle root ng mga transaksyon, isang Unix timestamp, ang kasalukuyang difficulty target, at ang nonce. Ino-iterate ng mga miner ang nonce (at minsan ang timestamp o extra-nonce sa coinbase transaction) hanggang ang double-SHA-256 hash ng header ay mas mababa sa difficulty target.</p>
+<p><strong>Ang listahan ng transaksyon</strong> — ang ordered set ng mga transaksyon na kasama sa bloke. Ang coinbase transaction (ang una) ay nagtatalaga ng block reward at mga bayad sa transaksyon sa address ng miner.</p>
+<p><strong>Ang chain</strong> — ang pagkakakonekta ng mga header. Ang cumulative proof-of-work sa chain (ang kabuuan ng lahat ng trabahong ginawa upang makagawa ng bawat bloke) ay tinutukoy kung aling fork ang canonical chain. Laging sumusunod ang mga node sa chain na may pinakamaraming cumulative work.</p>
+<p>Ang oras ng bloke ay naglalayong 10 minuto para sa Bitcoin. Nag-a-adjust ang difficulty tuwing 2,016 na bloke (humigit-kumulang dalawang linggo) upang mapanatili ang target na iyon habang nagbabago ang kabuuang hash rate ng network.</p>
+<h2 id="programmable-layer-ng-ethereum">Programmable Layer ng Ethereum <a class="heading-anchor" href="#programmable-layer-ng-ethereum" aria-label="Link patungo sa Programmable Layer ng Ethereum">#</a></h2>
+<p>Pinag-generalize ng Ethereum ang transaction model ng Bitcoin mula sa &quot;transfer value&quot; hanggang sa &quot;execute code.&quot; Ang mga pangunahing karagdagan:</p>
+<p><strong>Ang Ethereum Virtual Machine (EVM).</strong> Isang 256-bit na salita, stack-based virtual machine na nagpapatakbo nang deterministically sa lahat ng full node. Ang bawat opcode ay may explicit na gas cost. Ang computation ay limitado ng block gas limit, pinipigilan ang mga infinite loop mula sa pagpigil sa network. Ang lahat ng node na nagpapatakbo ng parehong bytecode sa parehong estado ay dapat gumawa ng parehong output — ang consensus na ito sa execution ang nagpapaging trustless ng mga smart contract.</p>
+<p><strong>Mga Account.</strong> Ang Ethereum ay may dalawang uri ng account: Externally Owned Accounts (EOA) na kinokontrol ng mga private key, at Contract Accounts na ang code ay nakaimbak sa chain. Ang isang transaksyon na ipinadala sa isang contract address ay nag-trigger ng bytecode execution ng contract.</p>
+<p><strong>Estado.</strong> Ang global state ng Ethereum ay isang mapping ng mga address sa mga account state (nonce, balanse, storage, code hash). Ang state root — isang Merkle Patricia trie ng lahat ng account state — ay kasama sa bawat block header, na nagbibigay-daan sa mahusay na patunay ng estado ng anumang account sa anumang block height.</p>
+<p><strong>Gas.</strong> Nagbabayad ang mga gumagamit ng gas (sa ETH) para sa bawat EVM operation. Nagsisilbi ang gas ng dalawang function: binibigyan nito ng kabayaran ang mga miner/validator para sa computation, at nililimitahan nito ang mga mapagkukunan na maaaring gamitin ng anumang solong transaksyon, pinipigilan ang mga denial-of-service attack sa pamamagitan ng mga mahal na operasyon.</p>
+<h2 id="pagsulat-ng-mga-smart-contract-sa-solidity">Pagsulat ng Mga Smart Contract sa Solidity <a class="heading-anchor" href="#pagsulat-ng-mga-smart-contract-sa-solidity" aria-label="Link patungo sa Pagsulat ng Mga Smart Contract sa Solidity">#</a></h2>
+<p>Ang Solidity ay isang statically-typed, contract-oriented na wika na nag-compile sa EVM bytecode. Isang minimal na token contract ang naglalarawan ng mga pangunahing konsepto:</p>
 <pre><code class="language-solidity">pragma solidity ^0.8.0;
 
 contract MyToken {
+    string public name;
+    string public symbol;
+    uint8 public decimals;
+    uint256 public totalSupply;
+    mapping(address =&gt; uint256) public balanceOf;
 
-  string public name;
-  string public symbol;
-  uint256 public decimals;
-  uint256 public totalSupply;
+    event Transfer(address indexed from, address indexed to, uint256 value);
 
-  constructor(string memory _name, string memory _symbol, uint8 _decimals, uint256 _totalSupply) {
-    name = _name;
-    symbol = _symbol;
-    decimals = _decimals;
-    totalSupply = _totalSupply;
-  }
+    constructor(
+        string memory _name,
+        string memory _symbol,
+        uint8 _decimals,
+        uint256 _totalSupply
+    ) {
+        name = _name;
+        symbol = _symbol;
+        decimals = _decimals;
+        totalSupply = _totalSupply;
+        balanceOf[msg.sender] = _totalSupply;
+    }
 
+    function transfer(address _to, uint256 _value) external returns (bool) {
+        require(balanceOf[msg.sender] &gt;= _value, &quot;Insufficient balance&quot;);
+        balanceOf[msg.sender] -= _value;
+        balanceOf[_to] += _value;
+        emit Transfer(msg.sender, _to, _value);
+        return true;
+    }
 }
 </code></pre>
-<p>يُتيح هذا العقد البسيط إنشاء توكن بخصائص كالاسم والرمز والعدد العشري والمعروض الإجمالي.</p>
-<p>وتُهيّئ دالّة <code>constructor</code> هذه المعاملات عند نشر العقد.</p>
-<p>ولا يضبط هذا المثال سوى خصائص أساسية. وستوسّع العقد لإضافة وظائف أخرى، منها:</p>
+<p>Mga pangunahing obserbasyon: ang <code>mapping(address =&gt; uint256)</code> ay isang EVM storage layout, hindi isang in-memory data structure — ang mga pagbabasa at pagsulat ay nagkakahalaga ng gas. Binabawi ng <code>require</code> ang buong transaksyon sa kabiguan, ibinabalik ang hindi nagamit na gas. Ang <code>event Transfer</code> ay nag-e-emit ng log na ginagamit ng mga off-chain indexer upang subaybayan ang mga transfer nang hindi muling binabasa ang buong estado. Ang <code>constructor</code> ay tumatakbo nang isang beses sa pag-deploy; ang mga kasunod na tawag ay pupunta sa mga pinangalanang function.</p>
+<p>Pina-formalize ng ERC-20 standard ang isang karaniwang interface para sa mga fungible token — <code>transfer</code>, <code>transferFrom</code>, <code>approve</code>, <code>allowance</code>, <code>balanceOf</code>, <code>totalSupply</code> — na nagbibigay-daan sa anumang ERC-20-compliant na token na gumana sa anumang ERC-20-aware na palitan o wallet nang walang custom integration.</p>
+<h2 id="mula-sa-ledger-hanggang-sa-financial-infrastructure">Mula sa Ledger hanggang sa Financial Infrastructure <a class="heading-anchor" href="#mula-sa-ledger-hanggang-sa-financial-infrastructure" aria-label="Link patungo sa Mula sa Ledger hanggang sa Financial Infrastructure">#</a></h2>
+<p>Ang mga blockchain primitive na inilarawan dito — mga hash chain, Merkle tree, ang EVM, at ERC-20 — ay naging pundasyon para sa mas malawak na hanay ng mga aplikasyong pinansyal sa pagitan ng 2018 at 2026:</p>
+<p><strong>Desentralisadong Pananalapi (DeFi).</strong> Ang mga lending protocol (Compound, Aave), mga automated market maker (Uniswap), at mga yield aggregator ay lahat tumatakbo bilang mga EVM smart contract. Pinapalitan nila ang mga function ng clearing, custody, at settlement ng tradisyonal na mga pinansyal na intermediary ng self-executing code at mga on-chain liquidity pool.</p>
+<p><strong>Mga Tokenised Asset.</strong> Ang mga sentral na bangko at komersyal na bangko ay nag-pi-pilot ng mga tokenised deposit, tokenised bond, at tokenised money market fund sa mga permissioned na variant ng mga EVM-compatible na chain. Ang pinagbabatayan na mekaniko — mga hash-secured state transition, atomic settlement, mga programmable transfer rule — ay mga direktang inapo ng 2014 Ethereum architecture.</p>
+<p><strong>Mga Central Bank Digital Currency.</strong> Ang wholesale CBDC research ng Bank of England, ang digital euro programme ng ECB, at Project Agorá ay lahat nag-eeksplora ng mga DLT architecture na nagmula sa o katugma ng mga pundasyon na disenyo sa Bitcoin at Ethereum. Ang mga istruktura ng consensus at hash-chain ay nananatiling may kaugnayan kahit saan ang permissioning at modelo ng pamamahala ay ganap na naiiba mula sa mga public blockchain.</p>
+<p>Ang paglalakbay mula sa 2008 Bitcoin whitepaper hanggang sa 2026 tokenised finance ay sumasaklaw ng dalawang dekada, ngunit tumatakbo ito sa isang magkakaugnay na teknikal na linya. Ang pag-unawa kung paano nagpapatupad ng immutability ang isang SHA-256 hash chain, kung paano nagbibigay-daan ang isang Merkle tree sa mahusay na pag-verify, at kung paano nag-e-execute ang EVM ng mga smart contract nang atomically ay kinakailangan bago masuri ang anumang pahayag tungkol sa kung ano ang kaya at hindi kaya ng blockchain sa mga regulated na serbisyong pinansyal.</p>
+<h2 id="mga-madalas-itanong">Mga Madalas Itanong <a class="heading-anchor" href="#mga-madalas-itanong" aria-label="Link patungo sa Mga Madalas Itanong">#</a></h2>
+<p><strong>Ano ang pagkakaiba ng blockchain at distributed database?</strong></p>
+<p>Ang tradisyonal na distributed database ay nag-re-replicate ng data sa mga node para sa availability at performance, ngunit ang tiwala ay sentralisado — maaaring baguhin ng isang administrator ang mga talaan. Ginagawa ng blockchain ang pag-tamper na mahal sa computational na paraan sa pamamagitan ng hash chaining at consensus: ang pagbabago ng anumang makasaysayang talaan ay nangangailangan ng pag-redo ng lahat ng kasunod na proof-of-work o proof-of-stake, at ng paghikayat sa network na tanggapin ang binagong fork. Ang pagkakaibang katangian ay tamper-evidence na ipinapatupad ng cryptography at disenyo ng insentibo sa halip na mga kontrol sa pag-access.</p>
+<p><strong>Bakit gumagamit ang Ethereum ng Keccak-256 sa halip na SHA-256?</strong></p>
+<p>Pinagtibay ng Ethereum ang Keccak-256 (ang SHA-3 finalist bago ang mga pagsasaayos sa standardisasyon ng NIST) bahagyang dahil gusto ng mga designer nito ang kalayaan mula sa linya ng SHA-2 na umaasa na ang Bitcoin. Mayroon ding iba't ibang algebraic na katangian ang Keccak na ginawa itong kaakit-akit para sa ilang mga operasyon ng EVM. Ang praktikal na epekto para sa mga developer ay ang Ethereum address derivation at storage slot hashing ay gumagamit ng Keccak-256, hindi SHA-256d tulad ng sa Bitcoin.</p>
+<p><strong>Ano ang pinipigilan ng &quot;gas&quot; sa EVM?</strong></p>
+<p>Pinipigilan ng gas ang dalawang kategorya ng atake. Una, pinipigilan nito ang denial-of-service sa pamamagitan ng mga operasyong mahal sa computational na paraan: ang bawat opcode ay nagkakahalaga ng gas, kaya hindi maaaring pilitin ng isang umaatake ang network na mag-execute ng mga infinite loop nang walang bayad. Pangalawa, nililimitahan ng block gas limit ang kabuuang computation sa bawat bloke, tinitiyak na ang oras ng pag-validate ng bloke ay nananatiling limitado at predictable para sa mga full node. Nang walang gas, ang isang solong contract call ay maaaring mapigilan ang network sa pamamagitan ng pag-execute ng walang limitasyong computation.</p>
+<p><strong>Paano binabago ng proof-of-stake ang modelo ng seguridad kumpara sa proof-of-work?</strong></p>
+<p>Sa proof-of-work, ang seguridad ay ibinibigay ng paggugol ng enerhiya: ang pag-atake sa chain ay nangangailangan ng pagkontrol sa mahigit 50% ng hash rate ng network, na nangangahulugang pagkontrol sa mahigit 50% ng pisikal na hardware at kapangyarihan nito. Sa proof-of-stake (ginagamit ng Ethereum mula noong Merge noong 2022), ang seguridad ay ibinibigay ng economic stake: nagla-lock ang mga validator ng ETH bilang collateral, na sini-slash kung pumirma sila ng mga nagtatagisang bloke. Ang isang 51% na atake ay nangangailangan ng pagkuha at pag-aaksaya ng mahigit 50% ng lahat ng naka-stake na ETH — isang capital cost sa halip na hardware at energy cost. Ang modelo ng seguridad ay naiiba ngunit mathematically na maihahambing sa mga tuntunin ng ekonomiya sa ilalim ng pagpapalagay na mas gusto ng mga makatwirang validator ang kita ng bayad kaysa pagkasira ng kapital.</p>
+<h2 id="mga-sanggunian">Mga Sanggunian <a class="heading-anchor" href="#mga-sanggunian" aria-label="Link patungo sa Mga Sanggunian">#</a></h2>
 <ul>
-<li>نقل التوكنات بين العناوين</li>
-<li>إدارة الأرصدة</li>
-<li>التفاويض (allowances) لإنفاق التوكنات</li>
-<li>سكّ التوكنات وحرقها</li>
-<li>تجميد عمليات النقل أو قفلها</li>
-<li>تطبيق معايير التوكنات مثل ERC-20</li>
-<li>نشر العقد والتفاعل معه</li>
+<li>Nakamoto, S., (2008). <a href="https://bitcoin.org/bitcoin.pdf" title="Bitcoin Whitepaper">Bitcoin: A Peer-to-Peer Electronic Cash System ⧉</a>.</li>
+<li>Buterin, V., (2014). <a href="https://ethereum.org/whitepaper" title="Ethereum Whitepaper">Ethereum: A Next-Generation Smart Contract and Decentralised Application Platform ⧉</a>.</li>
+<li>Wood, G., (2014). <a href="https://ethereum.github.io/yellowpaper/paper.pdf" title="Ethereum Yellow Paper">Ethereum: A Secure Decentralised Generalised Transaction Ledger ⧉</a>.</li>
+<li>NIST, (2015). <a href="https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions" title="NIST FIPS 202">SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions ⧉</a>.</li>
 </ul>
-<h3 id="section-5">التطوير والاختبار محلّيّاً <a class="heading-anchor" href="#section-5" aria-label="Link patungo sa التطوير والاختبار محلّيّاً">#</a></h3>
-<p>قبل نشر عملتك المشفّرة على بلوكشين Ethereum، من الحكمة إجراء اختبارٍ محلّيّ معمّق. وهذا يضمن أن تعمل عملتك المشفّرة كما هو مُخطّط، دون مفاجآت أو ثغرات غير متوقّعة.</p>
-<p>للبدء، اتّبع الخطوات التالية:</p>
-<h4>تنزيل Go-Ethereum (Geth)</h4>
-<p>ابدأ بتنزيل <a href="https://geth.ethereum.org/downloads/">Go-Ethereum</a>، المعروف أيضاً بـ Geth، وهو عميل Ethereum مكتوب بلغة Go. ويُؤدّي Geth دور واجهة سطر الأوامر (CLI) لعميل Ethereum، ويعمل على ويندوز وماك ولينكس. وهو أداةٌ متعدّدة الاستعمال تتيح التعدين وإنشاء العقود الذكية والتفاعل معها على شبكة Ethereum.</p>
-<h4>تثبيت Ethereum</h4>
-<p>بعد تنزيل Geth، انتقل إلى تثبيت Ethereum. للاطّلاع على المتطلبات وتعليمات البناء الشاملة، يُرجى مراجعة <a href="https://geth.ethereum.org/docs/getting-started/installing-geth">Installation Instructions</a> المتاحة في الويكي الرسمي.</p>
-<h4>إعداد بيئة تطوير</h4>
-<p>لتيسير تطوير عملتك المشفّرة، ستحتاج إلى بيئة تطوير، وإطار اختبار، وخطّ أصول (asset pipeline) لـ Ethereum. وتوجد تعليمات مفصّلة لإعداد هذه الأدوات الأساسية على ويكي Ethereum.</p>
-<h4>النشر على شبكة اختبار (Testnet)</h4>
-<p>بعد اجتياز عملتك المشفّرة للاختبارات المحلّيّة، يمكنك نشرها على شبكة اختبار. وشبكة الاختبار بيئةٌ آمنة ومضبوطة تُحاكي الشبكة الرئيسة لـ Ethereum، وتُتيح لك تقييم أداء عملتك المشفّرة في وضعٍ واقعيّ دون مخاطر ماليّةٍ حقيقية.</p>
-<h2 id="section-6">الأثر <a class="heading-anchor" href="#section-6" aria-label="Link patungo sa الأثر">#</a></h2>
-<p>ببناء عملةٍ مشفّرة قائمة على Ethereum من الصفر، ستحصل على:</p>
-<ul>
-<li>معرفةٍ عميقة بالتطبيقات اللامركزية (dApps) وبرمجة العقود الذكية</li>
-<li>خبرةٍ عمليّة في البرمجة بـ Solidity</li>
-<li>فهمٍ لبروتوكولات الإجماع في Ethereum</li>
-<li>إلمامٍ بمعايير التوكنات مثل ERC-20</li>
-</ul>
-<p>وسيُمكّنك هذا التعلّم من توظيف تقنية البلوكشين لإيجاد حلولٍ مبتكرة.</p>
-<h2 id="section-7">الحوافز <a class="heading-anchor" href="#section-7" aria-label="Link patungo sa الحوافز">#</a></h2>
-<p>يفتح إنجاز بناء توكن من البداية إلى النهاية بابَ تجربةٍ عمليّة مباشرة مع:</p>
-<ul>
-<li>معماريّة البلوكشين</li>
-<li>ميكانيكا العملات المشفّرة</li>
-<li>تطوير العقود الذكية</li>
-<li>إمكانات Ethereum وحدوده</li>
-</ul>
-<p>وستكتسب مهاراتٍ ثمينة تُقدّم بها مسارك المهني في برمجة البلوكشين.</p>
-<h2 id="section-8">خاتمة <a class="heading-anchor" href="#section-8" aria-label="Link patungo sa خاتمة">#</a></h2>
-<p>في ميدان تقنية البلوكشين، أفضل سبيلٍ إلى الفهم هو التطبيق العملي. ويُتيح بناء عملةٍ مشفّرة على منصّة Ethereum فرصةً فريدة لاكتساب خبرةٍ مباشرة بقدرات هذه التقنية وحدودها. ويُسلّحك هذا الدليل بالمعارف والمهارات اللازمة لخوض هذه الرحلة المُشوّقة، مُغذّياً الابتكار والاكتشاف في عالم تطوير البلوكشين والعملات المشفّرة الدائم التحوّل.</p>
-<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Portrait ni Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/fil/tungkol-sa-akin/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist na sumusulat tungkol sa applied AI, ISO 20022 migration, post-quantum cryptography para sa financial services, at structural transformation ng wholesale payments.</span><span class="author-credentials">Higit sa 20 taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA at Virgin Group. <a href="/fil/tungkol-sa-akin/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Huling sinuri <time datetime="2026-05-22">2026-05-22</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<!-- enrich-start -->
+
+<p class="post-reviewed">Huling sinuri <time datetime="2026-05-24">2026-05-24</time>.</p>
+
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Portrait ni Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/fil/tungkol-sa-akin/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist na sumusulat tungkol sa applied AI, ISO 20022 migration, post-quantum cryptography para sa financial services, at structural transformation ng wholesale payments.</span><span class="author-credentials">Higit sa 20 taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA at Virgin Group. <a href="/fil/tungkol-sa-akin/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Huling sinuri <time datetime="2026-05-27">2026-05-27</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Kaugnay na pagbasa</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/fil/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" class="related-media" aria-label="Static Site Generator: أسرع مولّد للمواقع الساكنة قائمٌ على Rust" tabindex="-1"><img alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right" src="https://cloudcdn.pro/api/transform?url=/stocks/images/anna-nekrashevich-8534387.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="static-site-generator-rust"><a href="https://sebastienrousseau.com/fil/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html">Static Site Generator: أسرع مولّد للمواقع الساكنة قائمٌ على Rust</a> <a class="heading-anchor" href="#static-site-generator-rust" aria-label="Link patungo sa Static Site Generator: أسرع مولّد للمواقع الساكنة قائمٌ على Rust">#</a></h3><p><time datetime="2023-10-09">2023-10-09</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/fil/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html" class="related-media" aria-label="أتمتة إنشاء ملفّات الدفع المتوافقة مع ISO 20022 باستخدام Pain001" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/api/transform?url=/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="iso-20022-pain001"><a href="https://sebastienrousseau.com/fil/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html">أتمتة إنشاء ملفّات الدفع المتوافقة مع ISO 20022 باستخدام Pain001</a> <a class="heading-anchor" href="#iso-20022-pain001" aria-label="Link patungo sa أتمتة إنشاء ملفّات الدفع المتوافقة مع ISO 20022 باستخدام Pain001">#</a></h3><p><time datetime="2023-09-29">2023-09-29</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/fil/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html" class="related-media" aria-label="كشف عملة مشفّرة جديدة وحلّ مدفوعات أسرع" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/api/transform?url=/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-11"><a href="https://sebastienrousseau.com/fil/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html">كشف عملة مشفّرة جديدة وحلّ مدفوعات أسرع</a> <a class="heading-anchor" href="#section-11" aria-label="Link patungo sa كشف عملة مشفّرة جديدة وحلّ مدفوعات أسرع">#</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2018-01-24-the-erc-20-token-standard" class="related-media" aria-label="معيار التوكن ERC-20" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="erc-20"><a href="https://sebastienrousseau.com/fil/2018-01-24-the-erc-20-token-standard">معيار التوكن ERC-20</a> <a class="heading-anchor" href="#erc-20" aria-label="Link patungo sa معيار التوكن ERC-20">#</a></h3><p><time datetime="2018-01-24">2018-01-24</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution" class="related-media" aria-label="Unveiling a New Cryptocurrency and Faster Payment Solution" tabindex="-1"><img alt="A very tall building with a lot of holes in it" src="https://cloudcdn.pro/api/transform?url=/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="unveiling-a-new-cryptocurrency-and-faster-payment-solution"><a href="https://sebastienrousseau.com/fil/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution">Unveiling a New Cryptocurrency and Faster Payment Solution</a> <a class="heading-anchor" href="#unveiling-a-new-cryptocurrency-and-faster-payment-solution" aria-label="Link patungo sa Unveiling a New Cryptocurrency and Faster Payment Solution">#</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2018-02-15-the-making-of-the-express-transaction-credits-platform" class="related-media" aria-label="The Making of the Express Transaction Credits Platform" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="the-making-of-the-express-transaction-credits-platform"><a href="https://sebastienrousseau.com/fil/2018-02-15-the-making-of-the-express-transaction-credits-platform">The Making of the Express Transaction Credits Platform</a> <a class="heading-anchor" href="#the-making-of-the-express-transaction-credits-platform" aria-label="Link patungo sa The Making of the Express Transaction Credits Platform">#</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
 </div>
-</aside><nav class="post-pagination" aria-label="Pagination ng artikulo"><a class="post-pagination-prev" href="/fil/2018-01-02-blockchain-the-technology-that-matters-in-2018/"><span class="post-pagination-label">Nakaraan</span><span class="post-pagination-title">Blockchain explained, the technology that matters the most</span></a><a class="post-pagination-next" href="/fil/2018-01-24-the-erc-20-token-standard/"><span class="post-pagination-label">Susunod</span><span class="post-pagination-title">ERC-20: The Ethereum Token Interface That Changed the World</span></a></nav></div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Mga pinagmulan at sanggunian</h2><ol class="article-sources-list"><li><a href="https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions" rel="external noopener nofollow"><span class="source-host">www.nist.gov</span><span class="source-path">/publications/sha-3-standard-permutation-based-hash-and-extendable-output-fun…</span></a></li></ol></aside><nav class="post-pagination" aria-label="Pagination ng artikulo"><a class="post-pagination-prev" href="/fil/2018-01-02-blockchain-the-technology-that-matters-in-2018/"><span class="post-pagination-label">Nakaraan</span><span class="post-pagination-title">Blockchain explained, the technology that matters the most</span></a><a class="post-pagination-next" href="/fil/2018-01-24-the-erc-20-token-standard/"><span class="post-pagination-label">Susunod</span><span class="post-pagination-title">ERC-20: The Ethereum Token Interface That Changed the World</span></a></nav></div>
     </main>
 
 <!-- gen-layouts:footer-start -->
@@ -340,7 +371,7 @@ contract MyToken {
     <!-- Schema.org structured data -->
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"fil"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"fil"}]}</script>
 
-        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":664,"about":{"@type":"Thing","name":"Blockchain","sameAs":["https://en.wikipedia.org/wiki/Blockchain","https://www.wikidata.org/wiki/Q20514253","https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"]},"mentions":[{"@type":"Thing","name":"Ethereum","sameAs":["https://en.wikipedia.org/wiki/Ethereum","https://www.wikidata.org/wiki/Q21825854","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]},{"@type":"Thing","name":"ERC-20","sameAs":["https://en.wikipedia.org/wiki/Ethereum#Tokens","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]}],"headline":"فهم التقنية الكامنة وراء البلوكشين","description":"بناء عملة مشفّرة على بلوكشين Ethereum: دليل شامل لتطوير البلوكشين والترميز وتنفيذ العملات المشفّرة.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp","width":"100vw","height":"100vh","caption":"حاسوب محمول مُطفأ فوق طاولة خشبية بُنّية"},"url":"https://sebastienrousseau.com/fil/2018-01-09-understanding-the-technology-behind-blockchain/","datePublished":"2023-01-09T09:09:00+00:00","dateModified":"2026-05-11","inLanguage":"fil","keywords":"blockchain, Ethereum, smart contract, العملة المشفّرة, Solidity, Geth, dApps, ERC-20, الترميز, testnet","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/fil/2018-01-09-understanding-the-technology-behind-blockchain/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"fil"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/fil/"},{"@type":"ListItem","position":3,"name":"فهم التقنية الكامنة وراء البلوكشين","item":"https://sebastienrousseau.com/fil/2018-01-09-understanding-the-technology-behind-blockchain/"}]}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":2495,"about":{"@type":"Thing","name":"Blockchain","sameAs":["https://en.wikipedia.org/wiki/Blockchain","https://www.wikidata.org/wiki/Q20514253","https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"]},"mentions":[{"@type":"Thing","name":"Ethereum","sameAs":["https://en.wikipedia.org/wiki/Ethereum","https://www.wikidata.org/wiki/Q21825854","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]},{"@type":"Thing","name":"ERC-20","sameAs":["https://en.wikipedia.org/wiki/Ethereum#Tokens","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]}],"headline":"Understanding the Technology behind Blockchain","description":"Teknikal na introduksyon sa blockchain: cryptographic hash chains, Merkle trees, distributed consensus, at kung paano pinalawak ng Ethereum ang payments ledger bilang platform para sa smart contracts at tokenised assets.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp","width":"100vw","height":"100vh","caption":"Mga abstract na digital ledger block na konektado ng mga light trail sa madilim na background"},"url":"https://sebastienrousseau.com/fil/2018-01-09-understanding-the-technology-behind-blockchain/","datePublished":"2018-01-09T09:09:00+00:00","dateModified":"2026-05-24","inLanguage":"fil","keywords":"blockchain technology, cryptographic hash, Merkle tree, distributed consensus, proof of work, Ethereum, smart contracts, EVM, Solidity, ERC-20, distributed ledger, decentralised finance","articleSection":"Blockchain","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/fil/2018-01-09-understanding-the-technology-behind-blockchain/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"fil"},"citation":[{"@type":"CreativeWork","url":"https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/fil/"},{"@type":"ListItem","position":3,"name":"Understanding the Technology behind Blockchain","item":"https://sebastienrousseau.com/fil/2018-01-09-understanding-the-technology-behind-blockchain/"}]}]}</script>
 <script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
   
 <!-- SSG Search Widget -->
@@ -366,5 +397,5 @@ contract MyToken {
 </div>
 <script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
 </div>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"فهم التقنية الكامنة وراء البلوكشين","url":"https://sebastienrousseau.com/fil/2018-01-09-understanding-the-technology-behind-blockchain/","inLanguage":"fil-PH","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"blockchain, Ethereum, smart contract, العملة المشفّرة, Solidity, Geth, dApps, ERC-20, الترميز, testnet","programmingLanguage":"Solidity","dependencies":["Blockchain","Ethereum","ERC-20"]}</script></body>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Understanding the Technology behind Blockchain","url":"https://sebastienrousseau.com/fil/2018-01-09-understanding-the-technology-behind-blockchain/","inLanguage":"fil-PH","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"blockchain technology, cryptographic hash, Merkle tree, distributed consensus, proof of work, Ethereum, smart contracts, EVM, Solidity, ERC-20, distributed ledger, decentralised finance","programmingLanguage":"Solidity","dependencies":["Blockchain","Ethereum","ERC-20"]}</script></body>
 </html>

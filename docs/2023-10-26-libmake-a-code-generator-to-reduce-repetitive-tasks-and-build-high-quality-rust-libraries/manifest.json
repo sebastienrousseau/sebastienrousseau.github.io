@@ -1,6 +1,6 @@
 {
   "background_color": "#ffffff",
-  "description": "Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial co",
+  "description": "LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test ",
   "display": "standalone",
   "icons": [
     {

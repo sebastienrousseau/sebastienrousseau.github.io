@@ -4,7 +4,7 @@
   <link href="https://sebastienrousseau.com/fil/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/fil/"/>
   <id>https://sebastienrousseau.com/fil/</id>
-  <updated>2026-05-22T21:38:56+00:00</updated>
+  <updated>2026-05-26T23:13:19+00:00</updated>
   <entry>
     <title>UK Payments Forward Plan 2026: Stablecoins, Open Banking, at Agentikong Pagbabayad</title>
     <link href="https://sebastienrousseau.com/fil/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/"/>
@@ -33,21 +33,21 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+    <title>Tokenized Deposits sa 2026: Banking Services, Kompetensiya ng Stablecoin, at ang Status ng Programmable na Pera ng Komersyal na Bangko</title>
     <link href="https://sebastienrousseau.com/fil/2026-05-21-tokenised-deposits-banking-services-status-2026/"/>
     <id>https://sebastienrousseau.com/fil/2026-05-21-tokenised-deposits-banking-services-status-2026/</id>
     <updated>2026-05-21T06:06:06+00:00</updated>
     <published>2026-05-21T06:06:06+00:00</published>
-    <summary>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</summary>
+    <summary>Ang mga serbisyo ng tokenised deposits sa 2026 ay lumilipat mula sa pananaliksik patungo sa mga pilot ng bangko at maagang mungkahi sa kliyente. Pre-scale pa rin ang katayuan, ngunit malinaw ang direksyon: ina-adapt ang pera ng komersyal na bangko para sa programmable settlement, digital wallets, stablecoin interoperability, at tokenised capital markets.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+    <title>Cloud Native Banking sa 2026: Kubernetes, DORA, Soberanya, at ang Katapusan ng Pagitan ng VM at Container</title>
     <link href="https://sebastienrousseau.com/fil/2026-05-20-cloud-native-banking-financial-institutions-2026/"/>
     <id>https://sebastienrousseau.com/fil/2026-05-20-cloud-native-banking-financial-institutions-2026/</id>
     <updated>2026-05-20T06:06:06+00:00</updated>
     <published>2026-05-20T06:06:06+00:00</published>
-    <summary>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</summary>
+    <summary>Ang cloud native banking sa 2026 ay sumasaklaw sa platform engineering batay sa Kubernetes, DORA-ready na operational resilience, VM at container convergence, cloud sovereignty, AI workloads, data portability, at patunay ng katatagan ng mga serbisyong pinansyal.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -240,12 +240,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Àkàndé: مساعد صوتي مدعوم بـ GPT للتنفيذيين</title>
+    <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
     <link href="https://sebastienrousseau.com/fil/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/"/>
     <id>https://sebastienrousseau.com/fil/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/</id>
     <updated>2024-02-12T06:06:06+00:00</updated>
     <published>2024-02-12T06:06:06+00:00</published>
-    <summary>كيف يستفيد Àkàndé من فهم اللغة الطبيعية في OpenAI GPT، وتلخيصات PDF، والتخزين المؤقت الفعّال لإعادة تعريف المساعدة الشخصية والتنفيذية.</summary>
+    <summary>Ang Àkàndé ay isang open-source na Python voice assistant na pinagsama ang OpenAI Whisper speech recognition, GPT-4 chat completions, at lokal na SQLite response cache para sa voice-driven na workflow — gumagawa ng PDF summaries mula sa kasaysayan ng pakikipag-usap.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -258,21 +258,21 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>تحليل الكلام والترجمة والرؤى المدعومة بالذكاء الاصطناعي</title>
+    <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
     <link href="https://sebastienrousseau.com/fil/2024-01-29-ai-powered-audio-insights-analysis-translations/"/>
     <id>https://sebastienrousseau.com/fil/2024-01-29-ai-powered-audio-insights-analysis-translations/</id>
     <updated>2024-01-29T06:06:06+00:00</updated>
     <published>2024-01-29T06:06:06+00:00</published>
-    <summary>كيف يُحوِّل Audio Analyser، المدعوم بـ Azure AI، تحويل speech-to-text وتحليل النصوص والترجمات إلى رؤى قابلة للتنفيذ.</summary>
+    <summary>Ginagamit ng Audio Analyser ang Azure Cognitive Services speech-to-text neural models, Text Analytics NLP, at CherryPy para i-convert ang mga audio recording sa mga nahahanap na transcript na may sentiment scores, keyword extraction, at multilingual na pagsasalin.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>هندسة الموجِّهات في الذكاء الاصطناعي 2024: تقنيات فعّالة</title>
+    <title>AI Prompt Engineering 2024: Techniques That Work</title>
     <link href="https://sebastienrousseau.com/fil/2024-01-23-advancements-in-ai-prompt-engineering/"/>
     <id>https://sebastienrousseau.com/fil/2024-01-23-advancements-in-ai-prompt-engineering/</id>
     <updated>2024-01-23T06:06:06+00:00</updated>
     <published>2024-01-23T06:06:06+00:00</published>
-    <summary>استكشف تقدّمات 2024 في هندسة الموجِّهات (AI Prompt Engineering) — اتّجاهات وتقنيات مبتكرة تُحدث ثورة في قطاعَي التكنولوجيا والتمويل.</summary>
+    <summary>Kinokontrol ng prompt engineering ang gawi ng LLM sa inference time. Sinasaklaw ng artikulong ito ang zero-shot, few-shot, chain-of-thought, ReAct, self-consistency, mga panganib ng prompt injection, at RAG pattern mula sa financial services.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -357,12 +357,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>الذكاء الاصطناعي التوليدي في 2023: كيف يعمل، وأين يَحلّ</title>
+    <title>Generative AI in 2023: How It Works, Where It Lands</title>
     <link href="https://sebastienrousseau.com/fil/2023-11-12-exploring-generative-ai/"/>
     <id>https://sebastienrousseau.com/fil/2023-11-12-exploring-generative-ai/</id>
     <updated>2023-11-12T06:06:06+00:00</updated>
     <published>2023-11-12T06:06:06+00:00</published>
-    <summary>استكشفوا الذكاء الاصطناعي التوليدي في 2023: كيف يعمل، وأين يَحلّ أوّلاً في الخدمات المالية، والأسئلة الأخلاقية والمعمارية الجديرة بالطرح.</summary>
+    <summary>Paano gumagana ang mga transformer model, ang mga benchmark ng 2023, kung saan nalalapat ang generative AI sa mga serbisyong pinansyal, at ang mga tanong sa pamamahala na kailangan bago mag-deploy.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -375,12 +375,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>تبسيط تطوير مكتبات Rust عبر توليد الشفرة</title>
+    <title>LibMake: Rust Library Scaffold Generator</title>
     <link href="https://sebastienrousseau.com/fil/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/"/>
     <id>https://sebastienrousseau.com/fil/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/</id>
     <updated>2023-10-26T06:06:06+00:00</updated>
     <published>2023-10-26T06:06:06+00:00</published>
-    <summary>عزِّزوا تطوير مكتبات Rust مع LibMake: أداة لتوليد الشفرة تفرض أفضل الممارسات وتُنتج الشفرة الأولية، فتُوفّر للمطوّرين الوقت والجهد.</summary>
+    <summary>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -402,30 +402,30 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>أتمتة إنشاء ملفّات الدفع المتوافقة مع ISO 20022 باستخدام Pain001</title>
+    <title>Automating ISO 20022 Payment Files Creation with pain001</title>
     <link href="https://sebastienrousseau.com/fil/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/"/>
     <id>https://sebastienrousseau.com/fil/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/</id>
     <updated>2023-09-29T06:06:06+00:00</updated>
     <published>2023-09-29T06:06:06+00:00</published>
-    <summary>أتمتة إنشاء ملفّات الدفع pain.001 المتوافقة مع ISO 20022 انطلاقاً من CSV أو SQLite عبر Pain001، مكتبة Python مفتوحة المصدر.</summary>
+    <summary>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>صناعة منصّة Express Transaction Credits</title>
+    <title>The making of the Express Transaction Credits Platform</title>
     <link href="https://sebastienrousseau.com/fil/2018-02-15-the-making-of-the-express-transaction-credits-platform/"/>
     <id>https://sebastienrousseau.com/fil/2018-02-15-the-making-of-the-express-transaction-credits-platform/</id>
     <updated>2018-02-15T06:06:06+00:00</updated>
     <published>2018-02-15T06:06:06+00:00</published>
-    <summary>تطوير إطارٍ شامل للجيل المقبل من التوكنات المتوافقة مع Ethereum Request for Comment عبر معيار ERC-223.</summary>
+    <summary>Teknikal na pagsusuri ng EXTC platform na itinayo sa Ethereum ERC-223 noong 2018: arkitektura ng token, multi-sig disbursements, time-locked transfers, at collateral-backed instant loans.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>كشف عملة مشفّرة جديدة وحلّ مدفوعات أسرع</title>
+    <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
     <link href="https://sebastienrousseau.com/fil/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/"/>
     <id>https://sebastienrousseau.com/fil/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/</id>
     <updated>2018-02-04T06:06:06+00:00</updated>
     <published>2018-02-04T06:06:06+00:00</published>
-    <summary>فصل بالغ الأهمية في تطوّر المشهد المالي العالمي، يصوغه الابتكار التقني والتحوّلات الجيوسياسية والتمويل المستدام.</summary>
+    <summary>Noong unang bahagi ng 2018, sinuri ng EXTC platform ang mas mabilis na cross-border payments gamit ang Ethereum ERC-223 smart contracts — isang maagang blueprint para sa decentralised finance.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -438,12 +438,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>فهم التقنية الكامنة وراء البلوكشين</title>
+    <title>Understanding the Technology behind Blockchain</title>
     <link href="https://sebastienrousseau.com/fil/2018-01-09-understanding-the-technology-behind-blockchain/"/>
     <id>https://sebastienrousseau.com/fil/2018-01-09-understanding-the-technology-behind-blockchain/</id>
     <updated>2018-01-09T06:06:06+00:00</updated>
     <published>2018-01-09T06:06:06+00:00</published>
-    <summary>بناء عملة مشفّرة على بلوكشين Ethereum: دليل شامل لتطوير البلوكشين والترميز وتنفيذ العملات المشفّرة.</summary>
+    <summary>Teknikal na introduksyon sa blockchain: cryptographic hash chains, Merkle trees, distributed consensus, at kung paano pinalawak ng Ethereum ang payments ledger bilang platform para sa smart contracts at tokenised assets.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

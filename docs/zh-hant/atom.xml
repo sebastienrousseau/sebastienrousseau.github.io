@@ -4,7 +4,7 @@
   <link href="https://sebastienrousseau.com/zh-hant/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/zh-hant/"/>
   <id>https://sebastienrousseau.com/zh-hant/</id>
-  <updated>2026-05-22T21:38:56+00:00</updated>
+  <updated>2026-05-26T23:13:19+00:00</updated>
   <entry>
     <title>UK Payments Forward Plan 2026:stablecoins、open banking、代幣化存款與智慧代理支付</title>
     <link href="https://sebastienrousseau.com/zh-hant/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/"/>
@@ -33,21 +33,21 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+    <title>2026年的代幣化存款：銀行服務、穩定幣競爭與可程式化商業銀行貨幣的現況</title>
     <link href="https://sebastienrousseau.com/zh-hant/2026-05-21-tokenised-deposits-banking-services-status-2026/"/>
     <id>https://sebastienrousseau.com/zh-hant/2026-05-21-tokenised-deposits-banking-services-status-2026/</id>
     <updated>2026-05-21T06:06:06+00:00</updated>
     <published>2026-05-21T06:06:06+00:00</published>
-    <summary>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</summary>
+    <summary>2026年，代幣化存款服務正從研究階段進入銀行試點和早期客戶方案。規模仍處於早期，但方向明確：商業銀行貨幣正適應可程式化結算、數位錢包、穩定幣互通性和代幣化資本市場。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+    <title>2026 年的雲原生銀行：Kubernetes、DORA、主權與 VM 對容器分野的終結</title>
     <link href="https://sebastienrousseau.com/zh-hant/2026-05-20-cloud-native-banking-financial-institutions-2026/"/>
     <id>https://sebastienrousseau.com/zh-hant/2026-05-20-cloud-native-banking-financial-institutions-2026/</id>
     <updated>2026-05-20T06:06:06+00:00</updated>
     <published>2026-05-20T06:06:06+00:00</published>
-    <summary>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</summary>
+    <summary>2026年的雲原生銀行涵蓋Kubernetes平台工程、DORA合規韌性、虛擬機與容器融合、雲端主權、AI工作負載部署、資料可攜性，以及關鍵金融服務抵禦供應商中斷的實證。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -240,6 +240,15 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2024-02-12-akande-yuyin-zhushou-biange-geren-yu-gaoguan-fuwu-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2024-02-12-akande-yuyin-zhushou-biange-geren-yu-gaoguan-fuwu-tw/</id>
+    <updated>2024-02-12T06:06:06+00:00</updated>
+    <published>2024-02-12T06:06:06+00:00</published>
+    <summary>Àkàndé 是一款開源 Python 語音助手，將 OpenAI Whisper 語音辨識、GPT-4 對話補全和本地 SQLite 回應快取整合為語音驅動的工作流程——從對話歷史生成 PDF 摘要，並將所有資料保存在本地。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>Àkàndé 語音助手：變革個人與高管協助</title>
     <link href="https://sebastienrousseau.com/zh-hant/2024-02-12-akande-yuyin-zhushou-biange-geren-yu-gaoguan-fuwu-tw/"/>
     <id>https://sebastienrousseau.com/zh-hant/2024-02-12-akande-yuyin-zhushou-biange-geren-yu-gaoguan-fuwu-tw/</id>
@@ -258,12 +267,30 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2024-01-29-ai-yinpin-fenxi-fanyi-yu-jianjie-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2024-01-29-ai-yinpin-fenxi-fanyi-yu-jianjie-tw/</id>
+    <updated>2024-01-29T06:06:06+00:00</updated>
+    <published>2024-01-29T06:06:06+00:00</published>
+    <summary>Audio Analyser 使用 Azure Cognitive Services 語音轉文字神經模型、Text Analytics NLP 和 CherryPy，將音訊錄音轉換為可搜尋的文字記錄，並提供情感評分、關鍵詞提取和多語言翻譯功能。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>AI 驅動的音訊分析、翻譯與洞察</title>
     <link href="https://sebastienrousseau.com/zh-hant/2024-01-29-ai-yinpin-fenxi-fanyi-yu-jianjie-tw/"/>
     <id>https://sebastienrousseau.com/zh-hant/2024-01-29-ai-yinpin-fenxi-fanyi-yu-jianjie-tw/</id>
     <updated>2024-01-29T06:06:06+00:00</updated>
     <published>2024-01-29T06:06:06+00:00</published>
     <summary>Audio Analyser 藉助 Microsoft Azure AI 實現音訊轉錄、情感分析、翻譯與可執行洞察，加速決策。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>AI Prompt Engineering 2024: Techniques That Work</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2024-01-23-ai-tishici-gongcheng-de-jinzhan-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2024-01-23-ai-tishici-gongcheng-de-jinzhan-tw/</id>
+    <updated>2024-01-23T06:06:06+00:00</updated>
+    <published>2024-01-23T06:06:06+00:00</published>
+    <summary>提示工程在推理時控制LLM行為。本文涵蓋零樣本與少樣本提示、思維鏈推理、自一致性採樣、ReAct工具呼叫架構、間接提示注入風險，以及金融服務領域的應用模式。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -357,6 +384,15 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>Generative AI in 2023: How It Works, Where It Lands</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng-tw/</id>
+    <updated>2023-11-12T06:06:06+00:00</updated>
+    <published>2023-11-12T06:06:06+00:00</published>
+    <summary>Transformer模型的運作原理、2023年樹立標竿的模型、生成式AI在金融服務領域的首要落地場景，以及從業者在部署前需要回答的治理問題。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>探索生成式人工智慧</title>
     <link href="https://sebastienrousseau.com/zh-hant/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng-tw/"/>
     <id>https://sebastienrousseau.com/zh-hant/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng-tw/</id>
@@ -372,6 +408,15 @@
     <updated>2023-11-05T06:06:06+00:00</updated>
     <published>2023-11-05T06:06:06+00:00</published>
     <summary>Common（CMN）庫為 Rust 開發者提供精確的數學與密碼常數，提升程式碼安全性與可靠性。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>LibMake: Rust Library Scaffold Generator</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2023-10-26-libmake-rust-ku-de-daima-shengchengqi-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2023-10-26-libmake-rust-ku-de-daima-shengchengqi-tw/</id>
+    <updated>2023-10-26T06:06:06+00:00</updated>
+    <published>2023-10-26T06:06:06+00:00</published>
+    <summary>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -402,6 +447,15 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>Automating ISO 20022 Payment Files Creation with pain001</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2023-09-29-yong-pain001-zidonghua-iso-20022-zhifu-wenjian-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2023-09-29-yong-pain001-zidonghua-iso-20022-zhifu-wenjian-tw/</id>
+    <updated>2023-09-29T06:06:06+00:00</updated>
+    <published>2023-09-29T06:06:06+00:00</published>
+    <summary>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>用 pain001 自動化建立符合 ISO 20022 標準的支付檔案</title>
     <link href="https://sebastienrousseau.com/zh-hant/2023-09-29-yong-pain001-zidonghua-iso-20022-zhifu-wenjian-tw/"/>
     <id>https://sebastienrousseau.com/zh-hant/2023-09-29-yong-pain001-zidonghua-iso-20022-zhifu-wenjian-tw/</id>
@@ -417,6 +471,24 @@
     <updated>2018-02-15T06:06:06+00:00</updated>
     <published>2018-02-15T06:06:06+00:00</published>
     <summary>EXTC 平臺基於 ERC-223 標準，致力於透過去中心化交易平臺實現閃電般的金融交易。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>The making of the Express Transaction Credits Platform</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2018-02-15-express-transaction-credits-pingtai-de-jianli-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2018-02-15-express-transaction-credits-pingtai-de-jianli-tw/</id>
+    <updated>2018-02-15T06:06:06+00:00</updated>
+    <published>2018-02-15T06:06:06+00:00</published>
+    <summary>深入探討2018年基於以太坊ERC-223構建EXTC平台的技術細節：代幣架構、多重簽名分發、時間鎖定轉帳及抵押品支持的即時貸款。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2018-02-04-xin-jiamihuobi-yu-gengkuai-zhifu-fangan-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2018-02-04-xin-jiamihuobi-yu-gengkuai-zhifu-fangan-tw/</id>
+    <updated>2018-02-04T06:06:06+00:00</updated>
+    <published>2018-02-04T06:06:06+00:00</published>
+    <summary>2018年初，EXTC平台透過以太坊ERC-223智慧合約探索更快的跨境支付——這是去中心化金融後來構建的早期藍圖。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -444,6 +516,15 @@
     <updated>2018-01-09T06:06:06+00:00</updated>
     <published>2018-01-09T06:06:06+00:00</published>
     <summary>區塊鏈技術已經開啟了一個去中心化的新時代。本文以以太坊為平臺，帶你逐步構建自己的加密貨幣。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Understanding the Technology behind Blockchain</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2018-01-09-lijie-quqiulian-beihou-de-jishu-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2018-01-09-lijie-quqiulian-beihou-de-jishu-tw/</id>
+    <updated>2018-01-09T06:06:06+00:00</updated>
+    <published>2018-01-09T06:06:06+00:00</published>
+    <summary>區塊鏈技術深度解析：密碼雜湊鏈、Merkle樹、分散式共識機制，以及Ethereum的可程式化層如何將支付帳本轉變為智能合約與代幣化資產平台。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

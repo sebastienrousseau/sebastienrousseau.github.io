@@ -6,14 +6,14 @@
     <description>Türkçe makaleler: uygulamalı yapay zeka, ISO 20022 ödemeleri, post-kuantum kriptografi ve toptan ödemelerin dönüşümü.</description>
     <atom:link href="https://sebastienrousseau.com/tr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>tr-TR</language>
-    <lastBuildDate>Fri, 22 May 2026 21:38:56 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 23:13:19 +0000</lastBuildDate>
     <copyright>© Telif Hakkı 2007 - 2026 - Sebastien Rousseau. Tüm hakları saklıdır.</copyright>
     <item>
-      <title>UK Payments Forward Plan 2026: Stablecoinler, Açık Bankacılık, Tokenleştirilmiş Mevduatlar</title>
+      <title>UK Payments Forward Plan 2026: Stablecoinler, Açık Bankacılık, Tokenleştirilmiş Mevduatlar ve Ajansal Ödemeler</title>
       <link>https://sebastienrousseau.com/tr/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>
       <description>UK Payments Forward Plan ve Nisan 2026 politika paketi; geleneksel ödemeler, stablecoinler, tokenleştirilmiş mevduatlar, açık bankacılık ve yapay zeka ajanı ödemeleri için tek tutarlı bir çerçeveye işaret ediyor.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</guid>
-      <pubDate>Fri, 22 May 2026 21:38:56 +0000</pubDate>
+      <pubDate>Tue, 26 May 2026 23:13:19 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>UK Payments Forward Plan 2026</category>
@@ -31,7 +31,7 @@
       <link>https://sebastienrousseau.com/tr/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>
       <description>2026&apos;da ajansal ödemeler kavramdan canlı işleme geçti. Bankacılık sorusu artık yapay zeka ajanlarının ödeme başlatıp başlatamayacağı değil; onay, sorumluluk, kimlik, denetlenebilirlik, dolandırıcılık kontrolleri ve protokol birlikte çalışabilirliğinin nasıl kurulacağıdır.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</guid>
-      <pubDate>Fri, 22 May 2026 21:38:56 +0000</pubDate>
+      <pubDate>Tue, 26 May 2026 23:13:19 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>ajansal ödemeler 2026</category>
@@ -81,50 +81,50 @@
       <category>Londra jazz konserleri</category>
     </item>
     <item>
-      <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+      <title>2026&apos;da Tokenize Mevduatlar: Bankacılık Hizmetleri, Stablecoin Rekabeti ve Programlanabilir Ticari Banka Parasının Durumu</title>
       <link>https://sebastienrousseau.com/tr/2026-05-21-tokenised-deposits-banking-services-status-2026/</link>
-      <description>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</description>
+      <description>2026&apos;da tokenize mevduat hizmetleri araştırmadan banka pilotlarına ve erken müşteri tekliflerine geçiyor. Durum hâlâ ölçek öncesi, ancak yön net: ticari banka parası programlanabilir uzlaşma, dijital cüzdanlar, stablecoin birlikte çalışabilirliği ve tokenize sermaye piyasaları için uyarlanıyor.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-21-tokenised-deposits-banking-services-status-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" type="image/webp" length="0"/>
-      <category>tokenised deposits 2026</category>
-      <category>tokenized deposits banking</category>
-      <category>deposit tokens</category>
+      <category>tokenize mevduatlar 2026</category>
+      <category>tokenized mevduat bankacılığı</category>
+      <category>mevduat token&apos;ları</category>
       <category>Great British Tokenised Deposits</category>
-      <category>Lloyds digital assets</category>
+      <category>Lloyds dijital varlıklar</category>
       <category>stablecoins</category>
-      <category>commercial bank money</category>
+      <category>ticari banka parası</category>
       <category>BIS stablecoins</category>
       <category>Project Agora</category>
-      <category>unified ledger</category>
-      <category>Deutsche Bank digital money</category>
+      <category>birleşik defter</category>
+      <category>Deutsche Bank dijital para</category>
       <category>CBDC</category>
-      <category>tokenised money</category>
-      <category>digital wallets</category>
-      <category>tokenised gilts</category>
+      <category>tokenize para</category>
+      <category>dijital cüzdanlar</category>
+      <category>tokenize gilts</category>
     </item>
     <item>
-      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <title>2026&apos;da Bulut Yerel Bankacılık: Kubernetes, DORA, Egemenlik ve VM ile Konteyner Ayrımının Sonu</title>
       <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/</link>
-      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <description>2026&apos;da cloud native bankacılık; Kubernetes tabanlı platform mühendisliği, DORA uyumlu operasyonel dayanıklılık, VM ve konteyner yakınsaması, bulut egemenliği, AI iş yükü yerleşimi, veri taşınabilirliği ve kritik finansal hizmetlerin sağlayıcı kesintisine karşı dayanıklılığının kanıtını kapsamaktadır.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/</guid>
       <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
-      <category>cloud native banking 2026</category>
-      <category>Kubernetes banks</category>
-      <category>financial institutions cloud</category>
+      <category>cloud native bankacılık 2026</category>
+      <category>Kubernetes bankalar</category>
+      <category>finansal kurumlar bulut</category>
       <category>DORA 2026</category>
-      <category>cloud resilience</category>
+      <category>bulut dayanıklılığı</category>
       <category>Red Hat OpenShift</category>
       <category>Portworx</category>
       <category>VM container coexistence</category>
-      <category>bank cloud sovereignty</category>
-      <category>financial services cloud dependency</category>
-      <category>operational resilience</category>
+      <category>banka bulut egemenliği</category>
+      <category>finansal hizmetler bulut bağımlılığı</category>
+      <category>operasyonel dayanıklılık</category>
       <category>disaster recovery</category>
-      <category>cloud exit strategy</category>
+      <category>bulut çıkış stratejisi</category>
       <category>AI banking workloads</category>
     </item>
     <item>
@@ -576,6 +576,27 @@
       <category>üretkenlik</category>
     </item>
     <item>
+      <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
+      <link>https://sebastienrousseau.com/tr/2024-02-12-akande-ses-asistani-kisisel-ve-yonetici-asistanlik-devrimi/</link>
+      <description>Àkàndé, OpenAI Whisper konuşma tanıma, GPT-4 sohbet tamamlamaları ve yerel SQLite yanıt önbelleğini ses odaklı bir iş akışında birleştiren açık kaynaklı Python ses asistanıdır — konuşma geçmişinden PDF özetleri oluşturur ve tüm verileri yerel tutar.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2024-02-12-akande-ses-asistani-kisisel-ve-yonetici-asistanlik-devrimi/</guid>
+      <pubDate>Mon, 12 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" type="image/webp" length="0"/>
+      <category>Àkàndé</category>
+      <category>OpenAI GPT-4</category>
+      <category>Whisper STT</category>
+      <category>SQLite önbelleğe alma</category>
+      <category>fpdf2</category>
+      <category>Python ses asistanı</category>
+      <category>sohbet tamamlamaları API</category>
+      <category>PDF özet oluşturma</category>
+      <category>SHA-256 önbellek</category>
+      <category>metinden konuşmaya</category>
+      <category>yönetici asistan AI</category>
+      <category>açık kaynak</category>
+    </item>
+    <item>
       <title>Reklamcılıkta devrim: yapay zeka geleceği nasıl şekillendiriyor</title>
       <link>https://sebastienrousseau.com/tr/2024-02-08-reklamcilikta-devrim-yapay-zeka-gelecegi-nasil-sekillendiriyor/</link>
       <description>Yapay zekanın reklamcılığı dönüştürdüğü yollar: hiper-kişiselleştirme, kreatif üretim ve programatik optimizasyon.</description>
@@ -591,6 +612,27 @@
       <category>programatik</category>
     </item>
     <item>
+      <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
+      <link>https://sebastienrousseau.com/tr/2024-01-29-yapay-zeka-destekli-ses-analizi-ceviri-ve-icgoruler/</link>
+      <description>Audio Analyser, Azure Cognitive Services konuşma tanıma sinir modelleri, Text Analytics NLP ve CherryPy kullanarak ses kayıtlarını duygu puanları, anahtar kelime çıkarımı ve çok dilli çevirilerle aranabilir transkriptlere dönüştürür.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2024-01-29-yapay-zeka-destekli-ses-analizi-ceviri-ve-icgoruler/</guid>
+      <pubDate>Mon, 29 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" type="image/webp" length="0"/>
+      <category>Azure Cognitive Services</category>
+      <category>konuşmadan metne</category>
+      <category>sinir akustik modeli</category>
+      <category>Azure Text Analytics</category>
+      <category>doğal dil işleme</category>
+      <category>duygu analizi</category>
+      <category>CherryPy</category>
+      <category>toplu transkripsiyon API</category>
+      <category>çok dilli ASR</category>
+      <category>Azure Translator</category>
+      <category>ses transkripsiyon</category>
+      <category>Python ses işleme</category>
+    </item>
+    <item>
       <title>Yapay zeka ile ses analizi, çeviriler ve içgörüler</title>
       <link>https://sebastienrousseau.com/tr/2024-01-29-yapay-zeka-destekli-ses-analizi-ceviri-ve-icgoruler/</link>
       <description>Ses verilerini metne dönüştürmek, çevirmek ve eyleme dönüştürülebilir içgörüler çıkarmak için yapay zeka çözümleri.</description>
@@ -604,6 +646,27 @@
       <category>çeviri</category>
       <category>içgörüler</category>
       <category>analiz</category>
+    </item>
+    <item>
+      <title>AI Prompt Engineering 2024: Techniques That Work</title>
+      <link>https://sebastienrousseau.com/tr/2024-01-23-yapay-zeka-prompt-muhendisliginde-ilerlemeler/</link>
+      <description>Prompt mühendisliği, çıkarım zamanında LLM davranışını kontrol eder. Bu makale sıfır-atış ve az-atış yöntemlerini, zincir-düşünce akıl yürütmeyi, öz-tutarlılık örneklemesini, ReAct araç kullanım mimarisini, dolaylı prompt enjeksiyon risklerini ve finansal hizmetlerden uygulama kalıplarını kapsar.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2024-01-23-yapay-zeka-prompt-muhendisliginde-ilerlemeler/</guid>
+      <pubDate>Tue, 23 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" type="image/webp" length="0"/>
+      <category>zincir-düşünce yönlendirme</category>
+      <category>az-atış öğrenme</category>
+      <category>sıfır-atış yönlendirme</category>
+      <category>bağlam içi öğrenme</category>
+      <category>prompt enjeksiyonu</category>
+      <category>ReAct</category>
+      <category>öz-tutarlılık</category>
+      <category>geri alma destekli üretim</category>
+      <category>BloombergGPT</category>
+      <category>sistem promptu</category>
+      <category>prompt güvenliği</category>
+      <category>LLM ajan</category>
     </item>
     <item>
       <title>Yapay zeka prompt mühendisliğinde ilerlemeler</title>
@@ -759,6 +822,25 @@
       <category>kafes tabanlı</category>
     </item>
     <item>
+      <title>Generative AI in 2023: How It Works, Where It Lands</title>
+      <link>https://sebastienrousseau.com/tr/2023-11-12-uretken-yapay-zekayi-kesfetmek/</link>
+      <description>Transformer modellerin nasıl çalıştığı, 2023&apos;ün kıyaslama modellerini hangileri oluşturduğu, üretken yapay zekanın finansal hizmetlerde nereye yerleştiği ve yönetişim soruları.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2023-11-12-uretken-yapay-zekayi-kesfetmek/</guid>
+      <pubDate>Sun, 12 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
+      <category>üretken yapay zeka</category>
+      <category>büyük dil modeli</category>
+      <category>transformer mimarisi</category>
+      <category>GPT-4</category>
+      <category>finansal hizmetlerde yapay zeka</category>
+      <category>halüsinasyon</category>
+      <category>retrieval-augmented generation</category>
+      <category>yapay zeka yönetişimi</category>
+      <category>foundation model</category>
+      <category>ince ayar</category>
+    </item>
+    <item>
       <title>Üretken yapay zekayı keşfetmek</title>
       <link>https://sebastienrousseau.com/tr/2023-11-12-uretken-yapay-zekayi-kesfetmek/</link>
       <description>Üretken yapay zekaya genel bakış: yayılma modelleri, GAN&apos;ler, dil modelleri ve gerçek dünya uygulamaları.</description>
@@ -788,6 +870,25 @@
       <category>sabitler</category>
       <category>güvenlik</category>
       <category>açık kaynak</category>
+    </item>
+    <item>
+      <title>LibMake: Rust Library Scaffold Generator</title>
+      <link>https://sebastienrousseau.com/tr/2023-10-26-libmake-rust-kutuphaneleri-icin-kod-uretici/</link>
+      <description>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2023-10-26-libmake-rust-kutuphaneleri-icin-kod-uretici/</guid>
+      <pubDate>Thu, 26 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
+      <category>LibMake</category>
+      <category>Rust code generator</category>
+      <category>cargo scaffold</category>
+      <category>Rust library template</category>
+      <category>Tera templating</category>
+      <category>GitHub Actions Rust</category>
+      <category>cargo-audit</category>
+      <category>Rust API Guidelines</category>
+      <category>boilerplate generator</category>
+      <category>Rust CI workflow</category>
     </item>
     <item>
       <title>libmake: tekrarlayan görevleri azaltıp kaliteli Rust kütüphaneleri inşa eden kod üretici</title>
@@ -838,6 +939,29 @@
       <category>açık kaynak</category>
     </item>
     <item>
+      <title>Automating ISO 20022 Payment Files Creation with pain001</title>
+      <link>https://sebastienrousseau.com/tr/2023-09-29-iso-20022-uyumlu-odeme-dosyalarini-pain001-ile-otomatiklestirme/</link>
+      <description>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2023-09-29-iso-20022-uyumlu-odeme-dosyalarini-pain001-ile-otomatiklestirme/</guid>
+      <pubDate>Fri, 29 Sep 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" type="image/webp" length="0"/>
+      <category>pain001</category>
+      <category>ISO 20022</category>
+      <category>pain.001.001.09</category>
+      <category>CustomerCreditTransferInitiation</category>
+      <category>SEPA Credit Transfer</category>
+      <category>CBPR+</category>
+      <category>payment automation</category>
+      <category>XML generation</category>
+      <category>XSD validation</category>
+      <category>GrpHdr</category>
+      <category>PmtInf</category>
+      <category>CdtTrfTxInf</category>
+      <category>CtrlSum</category>
+      <category>SWIFT</category>
+    </item>
+    <item>
       <title>ISO 20022 uyumlu ödeme dosyalarını pain001 ile otomatikleştirme</title>
       <link>https://sebastienrousseau.com/tr/2023-09-29-iso-20022-uyumlu-odeme-dosyalarini-pain001-ile-otomatiklestirme/</link>
       <description>pain001, CSV veya SQLite kaynaklarından başlayarak ISO 20022 uyumlu pain.001 ödeme dosyalarının oluşturulmasını otomatikleştirir.</description>
@@ -868,6 +992,44 @@
       <category>mimari</category>
       <category>ölçeklenebilirlik</category>
       <category>uyum</category>
+    </item>
+    <item>
+      <title>The making of the Express Transaction Credits Platform</title>
+      <link>https://sebastienrousseau.com/tr/2018-02-15-express-transaction-credits-platformunun-yapimi/</link>
+      <description>EXTC platformunun 2018&apos;de Ethereum ERC-223 üzerine nasıl inşa edildiğine dair teknik bir inceleme: token mimarisi, çok imzalı ödemeler, zaman kilitli transferler ve teminata dayalı anlık krediler.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2018-02-15-express-transaction-credits-platformunun-yapimi/</guid>
+      <pubDate>Thu, 15 Feb 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
+      <category>EXTC platform</category>
+      <category>ERC-223</category>
+      <category>Ethereum akıllı sözleşmeler</category>
+      <category>token mimarisi</category>
+      <category>çok imza</category>
+      <category>zaman kilitli transfer</category>
+      <category>blockchain ödemeleri</category>
+      <category>teminata dayalı krediler</category>
+      <category>merkezi olmayan finans</category>
+      <category>2018 kripto</category>
+    </item>
+    <item>
+      <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
+      <link>https://sebastienrousseau.com/tr/2018-02-04-yeni-bir-kripto-para-ve-daha-hizli-odeme-cozumu/</link>
+      <description>2018&apos;in başlarında EXTC platformu, Ethereum ERC-223 akıllı sözleşmeleri aracılığıyla daha hızlı sınır ötesi ödemeleri araştırdı — merkeziyetsiz finansın daha sonra inşa edeceği şeyin erken bir planı.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2018-02-04-yeni-bir-kripto-para-ve-daha-hizli-odeme-cozumu/</guid>
+      <pubDate>Sun, 04 Feb 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" type="image/webp" length="0"/>
+      <category>EXTC</category>
+      <category>ERC-223</category>
+      <category>Ethereum akıllı sözleşmeleri</category>
+      <category>hızlı ödemeler</category>
+      <category>kripto para</category>
+      <category>blockchain ödemeleri</category>
+      <category>ödeme token&apos;ı</category>
+      <category>merkeziyetsiz finans</category>
+      <category>ERC-20</category>
+      <category>sınır ötesi ödemeler</category>
     </item>
     <item>
       <title>Yeni bir kripto para ve daha hızlı bir ödeme çözümü tanıtımı</title>
@@ -915,6 +1077,27 @@
       <category>proof-of-work</category>
       <category>proof-of-stake</category>
       <category>dağıtık defter</category>
+    </item>
+    <item>
+      <title>Understanding the Technology behind Blockchain</title>
+      <link>https://sebastienrousseau.com/tr/2018-01-09-blockchain-arkasindaki-teknolojiyi-anlamak/</link>
+      <description>Blockchain&apos;in nasıl çalıştığına teknik bir giriş: kriptografik hash zincirleri, Merkle ağaçları, dağıtık konsensüs ve Ethereum&apos;un programlanabilir katmanının bir ödeme defterini akıllı sözleşmeler ve tokenize varlıklar için bir platforma nasıl dönüştürdüğü.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2018-01-09-blockchain-arkasindaki-teknolojiyi-anlamak/</guid>
+      <pubDate>Tue, 09 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" type="image/webp" length="0"/>
+      <category>blockchain teknolojisi</category>
+      <category>kriptografik hash</category>
+      <category>Merkle ağacı</category>
+      <category>dağıtık konsensüs</category>
+      <category>proof of work</category>
+      <category>Ethereum</category>
+      <category>akıllı sözleşmeler</category>
+      <category>EVM</category>
+      <category>Solidity</category>
+      <category>ERC-20</category>
+      <category>dağıtık defter</category>
+      <category>merkeziyetsiz finans</category>
     </item>
     <item>
       <title>Blockchain: 2018&apos;de önemli olan teknoloji</title>

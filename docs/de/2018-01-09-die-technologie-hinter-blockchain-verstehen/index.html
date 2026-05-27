@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta itemprop="datePublished" content="Mon, 09 Jan 2023 09:09:00 +0000" id="date" />
-    <meta itemprop="dateModified" content="Mon, 09 Jan 2023 09:09:00 +0000" id="last-modified" />
+    <meta itemprop="datePublished" content="Tue, 09 Jan 2018 09:09:00 +0000" id="date" />
+    <meta itemprop="dateModified" content="Tue, 09 Jan 2018 09:09:00 +0000" id="last-modified" />
     <title>Die Technologie hinter Blockchain verstehen — Sebastien Rousseau</title>
 
     <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
-<meta name="description" content="Eine Kryptowährung auf der Ethereum-Blockchain entwickeln: ein umfassender Leitfaden zur Blockchain-Entwicklung, Tokenisierung und Implementierung einer Kryptowährung.">
-<meta name="keywords" content="Blockchain, Ethereum, Smart Contract, Kryptowährung, Solidity, Geth, dApps, ERC-20, Tokenisierung, Testnet">
+<meta name="description" content="Eine technische Einführung in die Funktionsweise von Blockchain: kryptografische Hash-Ketten, Merkle-Bäume, verteilter Konsens und warum Ethereums programmierbare Schicht ein Zahlungsbuch in eine Plattform für Smart Contracts und tokenisierte Assets verwandelte.">
+<meta name="keywords" content="Blockchain-Technologie, kryptografischer Hash, Merkle-Baum, verteilter Konsens, Proof of Work, Ethereum, Smart Contracts, EVM, Solidity, ERC-20, verteiltes Hauptbuch, dezentralisierte Finanzen">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
     <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+<meta name="apple-mobile-web-app-title" content="Blockchain Tech">
 
     <!-- Strict security headers. The headers below that can be set via
          <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
@@ -40,7 +40,7 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-2FTgwru7JDXDH9Y/hF5XAe3+cIbVe4SqmK0T19vK1xQ=' 'sha256-4nMtr3vjoIosArCS3DK/TTjX6tHDkmzW90HQYw8OFJ0=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-prblayYsUvaBfdUUX0GZO9hLukYpBO/DysqzB+R1SRg=' 'sha256-zGHZX9OcAqU4BnwBclFcCrv6AiirD1v1aasA5o1wj8I=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-4nMtr3vjoIosArCS3DK/TTjX6tHDkmzW90HQYw8OFJ0=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-vzbTKQMvqhOmAomFW66kFBQpvLxv/vNFRSQw6azI3+I=' 'sha256-x3na1cXNkJm9QHJ3pwY/cvHAemlzJNuaHA+5Sb7WZw4=' 'sha256-zGHZX9OcAqU4BnwBclFcCrv6AiirD1v1aasA5o1wj8I=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
@@ -78,7 +78,7 @@
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="stylesheet" href="/highlight.a92b9694.css">
 <meta property="og:title" content="Die Technologie hinter Blockchain verstehen — Sebastien Rousseau">
-<meta property="og:description" content="Eine Kryptowährung auf der Ethereum-Blockchain entwickeln: ein umfassender Leitfaden zur Blockchain-Entwicklung, Tokenisierung und Implementierung einer Kryptowährung.">
+<meta property="og:description" content="Eine technische Einführung in die Funktionsweise von Blockchain: kryptografische Hash-Ketten, Merkle-Bäume, verteilter Konsens und warum Ethereums programmierbare Schicht ein Zahlungsbuch in eine Plattform für Smart Contracts und tokenisierte Assets verwandelte.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sebastienrousseau.com/de/2018-01-09-die-technologie-hinter-blockchain-verstehen/">
 <meta property="og:image" content="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp">
@@ -87,7 +87,7 @@
 <meta property="og:locale" content="de_DE">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Die Technologie hinter Blockchain verstehen — Sebastien Rousseau">
-<meta name="twitter:description" content="Eine Kryptowährung auf der Ethereum-Blockchain entwickeln: ein umfassender Leitfaden zur Blockchain-Entwicklung, Tokenisierung und Implementierung einer Kryptowährung.">
+<meta name="twitter:description" content="Eine technische Einführung in die Funktionsweise von Blockchain: kryptografische Hash-Ketten, Merkle-Bäume, verteilter Konsens und warum Ethereums programmierbare Schicht ein Zahlungsbuch in eine Plattform für Smart Contracts und tokenisierte Assets verwandelte.">
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp">
 <link rel="canonical" href="https://sebastienrousseau.com/de/2018-01-09-die-technologie-hinter-blockchain-verstehen/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
@@ -129,34 +129,34 @@
             </button>
             <div class="ap-lang-menu" role="menu" hidden>
               <div class="ap-lang-menu-grid">
-                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
-                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
-                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
-                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
-                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
-                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
-                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
-                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
-                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
-                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
-                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
-                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
-                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
-                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
-                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
-                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
-                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
-                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
-                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
-                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
-                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
-                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
-                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
-                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
-                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
-                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
-                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
-                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+                <a class="ap-lang-item" href="/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2018-01-09-comprendre-la-technologie-derriere-la-blockchain/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2018-01-09-pochopeni-technologie-za-blockchainem/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2018-01-09-die-technologie-hinter-blockchain-verstehen/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2018-01-09-comprender-la-tecnologia-detras-de-blockchain/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2018-01-09-blockchain-ke-peechhe-ki-takneek-samajhna/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2018-01-09-memahami-teknologi-di-balik-blockchain/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2018-01-09-comprendere-la-tecnologia-dietro-la-blockchain/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2018-01-09-burokkuchein-no-gijutsu-wo-rikai-suru/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2018-01-09-beulrokchein-baehu-gisul-ihae/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2018-01-09-de-technologie-achter-blockchain-begrijpen/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2018-01-09-zrozumiec-technologie-stojaca-za-blockchainem/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2018-01-09-compreender-a-tecnologia-por-tras-do-blockchain/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2018-01-09-ponimanie-tekhnologii-blockchain/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2018-01-09-forsta-tekniken-bakom-blockchain/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2018-01-09-khao-chai-theknoloyi-beuang-lang-blockchain/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2018-01-09-blockchain-arkasindaki-teknolojiyi-anlamak/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2018-01-09-rozuminnia-tekhnolohiyi-za-blokcheinom/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2018-01-09-hieu-ve-cong-nghe-dang-sau-blockchain/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2018-01-09-understanding-the-technology-behind-blockchain/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2018-01-09-lijie-quqiulian-beihou-de-jishu/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2018-01-09-lijie-quqiulian-beihou-de-jishu-tw/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
               </div>
             </div>
           </div>
@@ -168,107 +168,138 @@
 
         <section class="ap-hero">
       <h1>Die Technologie hinter Blockchain verstehen</h1>
-      <p class="sub">Eine Kryptowährung auf Ethereum aufbauen — Schritt für Schritt</p>
-    <nav class="article-tags" aria-label="Themen"><a href="/tags/index.html#h3-blockchain" class="article-tag" rel="tag">Blockchain</a><a href="/tags/index.html#h3-ethereum" class="article-tag" rel="tag">Ethereum</a><a href="/tags/index.html#h3-smart-contract" class="article-tag" rel="tag">Smart Contract</a><a href="/tags/index.html#h3-kryptowahrung" class="article-tag" rel="tag">Kryptowährung</a><a href="/tags/index.html#h3-solidity" class="article-tag" rel="tag">Solidity</a><a href="/tags/index.html#h3-geth" class="article-tag" rel="tag">Geth</a><a href="/tags/index.html#h3-dapps" class="article-tag" rel="tag">dApps</a><a href="/tags/index.html#h3-erc-20" class="article-tag" rel="tag">ERC-20</a><a href="/tags/index.html#h3-tokenisierung" class="article-tag" rel="tag">Tokenisierung</a><a href="/tags/index.html#h3-testnet" class="article-tag" rel="tag">Testnet</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2023-01-09T09:09:00+00:00" class="meta-pub">Veröffentlicht am 9 Jan 2023</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Aktualisiert am 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Geschätzte Lesezeit">4 Min. Lesezeit</span></div></section>
+      <p class="sub">Von kryptografischen Hash-Ketten zu programmierbaren Smart Contracts: die Mechanismen, die Blockchain zu einer Plattform und nicht nur zu einem Buchführungssystem machten.</p>
+    <nav class="article-tags" aria-label="Themen"><a href="/tags/index.html#h3-blockchain-technologie" class="article-tag" rel="tag">Blockchain-Technologie</a><a href="/tags/index.html#h3-kryptografischer-hash" class="article-tag" rel="tag">kryptografischer Hash</a><a href="/tags/index.html#h3-merkle-baum" class="article-tag" rel="tag">Merkle-Baum</a><a href="/tags/index.html#h3-verteilter-konsens" class="article-tag" rel="tag">verteilter Konsens</a><a href="/tags/index.html#h3-proof-of-work" class="article-tag" rel="tag">Proof of Work</a><a href="/tags/index.html#h3-ethereum" class="article-tag" rel="tag">Ethereum</a><a href="/tags/index.html#h3-smart-contracts" class="article-tag" rel="tag">Smart Contracts</a><a href="/tags/index.html#h3-evm" class="article-tag" rel="tag">EVM</a><a href="/tags/index.html#h3-solidity" class="article-tag" rel="tag">Solidity</a><a href="/tags/index.html#h3-erc-20" class="article-tag" rel="tag">ERC-20</a><a href="/tags/index.html#h3-verteiltes-hauptbuch" class="article-tag" rel="tag">verteiltes Hauptbuch</a><a href="/tags/index.html#h3-dezentralisierte-finanzen" class="article-tag" rel="tag">dezentralisierte Finanzen</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-01-09T09:09:00+00:00" class="meta-pub">Veröffentlicht am 9 Jan 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">Aktualisiert am 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Geschätzte Lesezeit">9 Min. Lesezeit</span></div></section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Inhalt</h2><ol><li><a href="#uberblick">Überblick</a></li><li><a href="#idee">Idee</a></li><li><a href="#auswirkungen">Auswirkungen</a></li><li><a href="#anreize">Anreize</a></li><li><a href="#fazit">Fazit</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Eine Kryptowährung auf der Ethereum-Blockchain entwickeln: ein umfassender Leitfaden zur Blockchain-Entwicklung, Tokenisierung und Implementierung einer Kryptowährung.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Überblick.</strong> Die Blockchain-Technologie hat die Tür zu einer neuen Ära dezentraler Anwendungen (dApps) geöffnet, die unabhängig und ohne zentrale Kontrolle laufen.</li>  <li><strong>Idee.</strong> Unser Ziel ist es, eine einfache Kryptowährung auf Ethereum aufzubauen und Ihnen damit praktische Erfahrung in der Blockchain-Entwicklung zu vermitteln.</li>  <li><strong>Auswirkungen.</strong> Indem Sie eine auf Ethereum basierende Kryptowährung von Grund auf aufbauen, gewinnen Sie:.</li>  <li><strong>Anreize.</strong> Der vollständige Aufbau eines Tokens vermittelt unmittelbar praktische Erfahrung mit:.</li></ul></aside><p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/adam-smigielski-K5mPtONmpHM.webp&w=1600&format=webp&q=85" alt="Ausgeschalteter Laptop auf einem braunen Holztisch"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
-<h2 id="uberblick">Überblick <a class="heading-anchor" href="#uberblick" aria-label="Link zu Überblick">#</a></h2>
-<p>Die Blockchain-Technologie hat die Tür zu einer neuen Ära dezentraler Anwendungen (dApps) geöffnet, die unabhängig und ohne zentrale Kontrolle laufen. Ethereum bietet eine leistungsstarke Plattform, um komplexe dApps und Smart Contracts zu erstellen.</p>
-<p>Eine der vielversprechendsten Einsatzmöglichkeiten von Ethereum ist die Einführung individueller Kryptowährungen und digitaler Tokens. In diesem umfassenden Leitfaden gehen wir Schritt für Schritt durch, wie Sie Ihr eigenes Krypto-Token auf Ethereum erstellen.</p>
-<h2 id="idee">Idee <a class="heading-anchor" href="#idee" aria-label="Link zu Idee">#</a></h2>
-<p>Unser Ziel ist es, eine einfache Kryptowährung auf Ethereum aufzubauen und Ihnen damit praktische Erfahrung in der Blockchain-Entwicklung zu vermitteln. Im Folgenden die wichtigsten Schritte, die wir behandeln:</p>
-<h3 id="die-kryptowahrung-entwerfen">Die Kryptowährung entwerfen <a class="heading-anchor" href="#die-kryptowahrung-entwerfen" aria-label="Link zu Die Kryptowährung entwerfen">#</a></h3>
-<p>Die erste entscheidende Aufgabe besteht darin, Ihre Kryptowährung zu entwerfen. Dazu gehört die Definition der wichtigsten Attribute:</p>
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Inhalt</h2><ol><li><a href="#das-durch-blockchain-geloste-problem">Das durch Blockchain gelöste Problem</a></li><li><a href="#die-kryptographischen-bausteine">Die kryptographischen Bausteine</a></li><li><a href="#wie-die-bitcoin-blockchain-funktioniert">Wie die Bitcoin-Blockchain funktioniert</a></li><li><a href="#ethereums-programmierbare-schicht">Ethereums programmierbare Schicht</a></li><li><a href="#smart-contracts-in-solidity-schreiben">Smart Contracts in Solidity schreiben</a></li><li><a href="#vom-hauptbuch-zur-finanzinfrastruktur">Vom Hauptbuch zur Finanzinfrastruktur</a></li><li><a href="#haufig-gestellte-fragen">Häufig gestellte Fragen</a></li><li><a href="#referenzen">Referenzen</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Eine technische Einführung in die Funktionsweise von Blockchain: kryptografische Hash-Ketten, Merkle-Bäume, verteilter Konsens und warum Ethereums programmierbare Schicht ein Zahlungsbuch in eine Plattform für Smart Contracts und tokenisierte Assets verwandelte.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Das durch Blockchain gelöste Problem.</strong> Vor Bitcoin erforderten digitale Zahlungen einen vertrauenswürdigen Intermediär — eine Bank, einen Zahlungsdienstleister oder ein Clearinghaus — um Double-Spending zu verhindern.</li>  <li><strong>Die kryptographischen Bausteine.</strong> Die Blockchain-Technologie kombiniert drei vorhandene kryptographische Primitive zu einer neuen Architektur:.</li>  <li><strong>Wie die Bitcoin-Blockchain funktioniert.</strong> Ein Bitcoin-Block enthält drei logische Komponenten:.</li>  <li><strong>Ethereums programmierbare Schicht.</strong> Ethereum verallgemeinerte Bitcoins Transaktionsmodell von „Wert übertragen&quot; zu „Code ausführen&quot;.</li></ul></aside><!-- lead-start -->
+
+<!-- lead-end -->
+<p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/adam-smigielski-K5mPtONmpHM.webp&w=1600&format=webp&q=85" alt="Abstract digital ledger blocks connected by light trails on dark background"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<blockquote>
+<p><strong>Zusammenfassung / Wichtigste Erkenntnisse</strong></p>
 <ul>
-<li><strong>Name</strong>: Wählen Sie einen einzigartigen Namen, der die Identität und den Zweck des Tokens widerspiegelt.</li>
-<li><strong>Symbol</strong>: Wählen Sie ein kurzes Symbol wie BTC für Bitcoin. Es wird an Börsen verwendet.</li>
-<li><strong>Gesamtangebot</strong>: Legen Sie die maximale Anzahl an im Umlauf befindlichen Tokens fest.</li>
-<li><strong>Dezimalstellen</strong>: Definieren Sie die Teilbarkeit Ihres Tokens, etwa 2 für Cent-Einheiten.</li>
-<li><strong>Zusatzfunktionen</strong>: Ergänzen Sie optional Extras wie Minting, Burning, Freezing usw.</li>
+<li><strong>Das Problem.</strong> Digitales Geld erfordert die Lösung des Double-Spend-Problems: zu verhindern, dass dieselbe Einheit zweimal ausgegeben wird, ohne eine vertrauenswürdige Clearingstelle. Bitcoins Whitepaper von 2008 löste dies, indem es vertrauenswürdige Intermediäre durch kryptographischen Nachweis und verteilten Konsens ersetzte (<a href="https://bitcoin.org/bitcoin.pdf" title="Bitcoin: A Peer-to-Peer Electronic Cash System">Nakamoto, 2008</a>).</li>
+<li><strong>Die Datenstruktur.</strong> Eine Blockchain ist eine verknüpfte Liste von Blöcken, wobei jeder Block-Header den SHA-256-Hash des vorherigen Headers enthält. Die Hash-Kette macht den Verlauf append-only: Die Änderung eines vergangenen Blocks macht alle nachfolgenden Hashes ungültig und zwingt einen Angreifer, den gesamten nachfolgenden proof-of-work zu wiederholen.</li>
+<li><strong>Merkle Trees.</strong> Transaktionen innerhalb eines Blocks werden in einem binären Merkle tree gehasht. Der im Block-Header gespeicherte Root-Hash ermöglicht die effiziente Verifizierung einer einzelnen Transaktion, ohne den gesamten Block herunterzuladen — die Grundlage für leichtgewichtige SPV-Clients.</li>
+<li><strong>Ethereums Erweiterung.</strong> Ethereums Yellow Paper (2014) führte die EVM ein — eine deterministische Stack-Maschine, die auf jedem Full Node läuft. Smart Contracts sind auf der Kette eingesetzter Bytecode; sie werden auf allen Nodes identisch ausgeführt und atomar abgewickelt, was vertrauenswürdige Intermediäre durch selbst-ausführenden Code ersetzt (<a href="https://ethereum.github.io/yellowpaper/paper.pdf" title="Ethereum Yellow Paper">Wood, 2014</a>).</li>
+<li><strong>Praktische Bedeutung.</strong> Jedes tokenisierte Asset, jeder Stablecoin und jedes DeFi-Protokoll, das seit 2017 eingesetzt wurde, läuft auf diesen Grundlagen. Das Verständnis der Hash-Kette, des Merkle Trees und des EVM-Ausführungsmodells ist Voraussetzung für die Arbeit mit jedem Ethereum-basierten System.</li>
 </ul>
-<h3 id="smart-contracts-schreiben">Smart Contracts schreiben <a class="heading-anchor" href="#smart-contracts-schreiben" aria-label="Link zu Smart Contracts schreiben">#</a></h3>
-<p>Um Ihre Kryptowährung zum Leben zu erwecken, müssen Sie Smart Contracts programmieren, die die Funktionalität und die Regeln des Tokens definieren. Smart Contracts sind programmatische Skripte, die auf der Blockchain gespeichert sind und automatisch ausgeführt werden, sobald bestimmte Bedingungen erfüllt sind.</p>
-<p>Einige zentrale Eigenschaften, die Smart Contracts ideal für Kryptowährungen machen, sind:</p>
+</blockquote>
+<hr />
+<h2 id="das-durch-blockchain-geloste-problem">Das durch Blockchain gelöste Problem <a class="heading-anchor" href="#das-durch-blockchain-geloste-problem" aria-label="Link zu Das durch Blockchain gelöste Problem">#</a></h2>
+<p>Vor Bitcoin erforderten digitale Zahlungen einen vertrauenswürdigen Intermediär — eine Bank, einen Zahlungsdienstleister oder ein Clearinghaus — um Double-Spending zu verhindern. Wenn Alice eine digitale Datei, die £10 repräsentiert, an Bob schickte, hinderte sie nichts in der Datei selbst daran, eine identische Kopie an Carol zu senden. Die Lösung in allen bestehenden Systemen war eine zentralisierte Buchführung: Das Kontobuch der Bank verzeichnete, dass das Geld ausgegeben war, sodass es nicht erneut ausgegeben werden konnte.</p>
+<p>Bitcoins Beitrag war, dieses vertrauenswürdige Hauptbuch durch ein verteiltes zu ersetzen, in dem der Nachweis aller Transaktionen über Tausende unabhängiger Nodes repliziert wird. Gegenseitiges Misstrauen zwischen Nodes wurde durch zwei Mechanismen in Sicherheit umgewandelt:</p>
+<ol>
+<li>
+<p><strong>Kryptographische Verknüpfung.</strong> Jeder Transaktionsblock enthält den Hash des vorherigen Blocks. Eine Hash-Funktion ist eine einwegdeterministische Abbildung: Bei jeder Eingabe erzeugt die Funktion eine Ausgabe fester Länge, und die Änderung auch nur eines Bits der Eingabe erzeugt eine völlig andere Ausgabe. Das bedeutet, dass jede Änderung an einem historischen Block alle nachfolgenden Blöcke ungültig macht.</p>
+</li>
+<li>
+<p><strong>Proof-of-work-Konsens.</strong> Das Hinzufügen eines neuen Blocks erfordert das Finden eines Nonce-Wertes, so dass der Hash des Blocks unter einen Zielschwellwert fällt — rechnerisch teuer zu finden, trivial günstig zu verifizieren. Dies macht das Umschreiben der Geschichte proportional teuer zur Tiefe des geänderten Blocks, da ein Angreifer den gesamten proof-of-work von diesem Block bis zur Kettenspitze wiederholen muss.</p>
+</li>
+</ol>
+<p>Die Kombination bedeutet, dass die längste Kette mit dem kumulativsten proof-of-work per Konstruktion diejenige ist, die von ehrlichen Teilnehmern mit realen Ressourcen aufrechterhalten wird.</p>
+<h2 id="die-kryptographischen-bausteine">Die kryptographischen Bausteine <a class="heading-anchor" href="#die-kryptographischen-bausteine" aria-label="Link zu Die kryptographischen Bausteine">#</a></h2>
+<p>Die Blockchain-Technologie kombiniert drei vorhandene kryptographische Primitive zu einer neuen Architektur:</p>
+<h3 id="sha-256-hash-funktionen">SHA-256-Hash-Funktionen <a class="heading-anchor" href="#sha-256-hash-funktionen" aria-label="Link zu SHA-256-Hash-Funktionen">#</a></h3>
+<p>SHA-256 (Secure Hash Algorithm 256-Bit) ist Mitglied der von NIST standardisierten SHA-2-Familie. Sie nimmt eine beliebig lange Eingabe und erzeugt eine 256-Bit-Ausgabe. Schlüsseleigenschaften für den Blockchain-Einsatz:</p>
 <ul>
-<li><strong>Selbstausführend</strong> — sie laufen ohne Beteiligung Dritter automatisch ab, sobald sie ausgelöst werden.</li>
-<li><strong>Unveränderlichkeit</strong> — einmal bereitgestellt, kann der Code nicht mehr geändert werden. Dies sorgt für Sicherheit.</li>
-<li><strong>Autonomie</strong> — es ist keine zentrale Instanz nötig, um Smart Contracts zu verwalten.</li>
-<li><strong>Transparenz</strong> — jeder kann die Logik eines Smart Contracts einsehen.</li>
-<li><strong>Automatisierung</strong> — Aktionen wie Mittelübertragungen lassen sich über den Vertragscode automatisieren.</li>
-<li><strong>Sicherheit</strong> — Mittel in einem Contract sind gesichert, bis die Freigabebedingungen erfüllt sind.</li>
-<li><strong>Effizienz</strong> — Smart Contracts schalten Intermediäre aus und machen Prozesse schneller und günstiger.</li>
+<li><strong>Deterministisch.</strong> Dieselbe Eingabe erzeugt immer dieselbe Ausgabe.</li>
+<li><strong>Urbildresistenz.</strong> Bei einer Hash-Ausgabe ist es rechnerisch undurchführbar, die Eingabe zu rekonstruieren.</li>
+<li><strong>Lawineneffekt.</strong> Die Änderung eines Eingabebits ändert ungefähr die Hälfte der Ausgabebits, was die Brute-Force-Suche ineffizient macht.</li>
+<li><strong>Kollisionsresistenz.</strong> Es ist rechnerisch undurchführbar, zwei verschiedene Eingaben zu finden, die denselben Hash erzeugen.</li>
 </ul>
-<p>Beispielcode für einen Contract in Solidity.</p>
+<p>Bitcoin wendet SHA-256 zweimal an (SHA-256d) für erhöhte Sicherheit gegen Length-Extension-Angriffe. Ethereum verwendet Keccak-256, eine SHA-3-Finalisten-Variante.</p>
+<h3 id="merkle-trees">Merkle Trees <a class="heading-anchor" href="#merkle-trees" aria-label="Link zu Merkle Trees">#</a></h3>
+<p>Ein Merkle Tree ist ein binärer Baum von Hashes. Jeder Blattknoten ist der Hash einer Transaktion. Jeder innere Knoten ist der Hash seiner zwei Kinder. Die Wurzel — die Merkle-Wurzel — fasst alle Transaktionen im Block in einem einzigen 32-Byte-Wert zusammen, der im Block-Header gespeichert ist.</p>
+<p>Die praktische Konsequenz: Um zu verifizieren, dass eine bestimmte Transaktion in einem Block enthalten ist, benötigt man nur <code>log₂(n)</code> Hashes, nicht alle <code>n</code> Transaktionen. Bei einem Block mit 2.000 Transaktionen erfordert die Verifizierung 11 Hashes statt 2.000 — die Grundlage für Simplified Payment Verification (SPV) in leichtgewichtigen Clients.</p>
+<h3 id="digitale-signaturen-ecdsa">Digitale Signaturen (ECDSA) <a class="heading-anchor" href="#digitale-signaturen-ecdsa" aria-label="Link zu Digitale Signaturen (ECDSA)">#</a></h3>
+<p>Die Transaktionsautorisierung in Bitcoin und Ethereum verwendet den Elliptic Curve Digital Signature Algorithm (ECDSA) über die secp256k1-Kurve. Ein privater Schlüssel signiert eine Transaktion; jeder Node kann die Signatur mit dem entsprechenden öffentlichen Schlüssel verifizieren, ohne den privaten Schlüssel zu kennen. Dies stellt sicher, dass nur der Inhaber des privaten Schlüssels eine Ausgabe von einer Adresse autorisieren kann.</p>
+<p>Ethereum-Adressen sind die letzten 20 Bytes des Keccak-256-Hashes des öffentlichen Schlüssels — eine Ableitung, die Adressen kompakt und portabel macht und dabei kryptographisch an das Schlüsselpaar gebunden bleibt.</p>
+<h2 id="wie-die-bitcoin-blockchain-funktioniert">Wie die Bitcoin-Blockchain funktioniert <a class="heading-anchor" href="#wie-die-bitcoin-blockchain-funktioniert" aria-label="Link zu Wie die Bitcoin-Blockchain funktioniert">#</a></h2>
+<p>Ein Bitcoin-Block enthält drei logische Komponenten:</p>
+<p><strong>Der Block-Header</strong> — 80 Bytes, bestehend aus: der Protokollversion, dem Hash des vorherigen Block-Headers, der Merkle-Wurzel der Transaktionen, einem Unix-Zeitstempel, dem aktuellen Schwierigkeitsziel und dem Nonce. Miner iterieren den Nonce (und manchmal den Zeitstempel oder Extra-Nonce in der Coinbase-Transaktion), bis der double-SHA-256-Hash des Headers unter das Schwierigkeitsziel fällt.</p>
+<p><strong>Die Transaktionsliste</strong> — der geordnete Satz von Transaktionen, die im Block enthalten sind. Die Coinbase-Transaktion (die erste) weist die Blockbelohnung und Transaktionsgebühren der Adresse des Miners zu.</p>
+<p><strong>Die Kette</strong> — die Verknüpfung der Header. Der kumulative proof-of-work in der Kette (die Summe aller Arbeit, die zur Erzeugung jedes Blocks geleistet wurde) bestimmt, welche Verzweigung die kanonische Kette ist. Nodes folgen immer der Kette mit der meisten kumulativen Arbeit.</p>
+<p>Die Blockzeit ist für Bitcoin auf 10 Minuten ausgelegt. Die Schwierigkeit passt sich alle 2.016 Blöcke (ungefähr zwei Wochen) an, um dieses Ziel beizubehalten, wenn sich die Gesamtnetzwerk-Hash-Rate ändert.</p>
+<h2 id="ethereums-programmierbare-schicht">Ethereums programmierbare Schicht <a class="heading-anchor" href="#ethereums-programmierbare-schicht" aria-label="Link zu Ethereums programmierbare Schicht">#</a></h2>
+<p>Ethereum verallgemeinerte Bitcoins Transaktionsmodell von „Wert übertragen&quot; zu „Code ausführen&quot;. Die wichtigsten Ergänzungen:</p>
+<p><strong>Die Ethereum Virtual Machine (EVM).</strong> Eine 256-Bit-Wort-, Stack-basierte virtuelle Maschine, die deterministisch auf allen Full Nodes ausgeführt wird. Jeder Opcode hat explizite Gas-Kosten. Die Berechnung ist durch das Block-Gas-Limit begrenzt, um zu verhindern, dass Endlosschleifen das Netzwerk zum Erliegen bringen. Alle Nodes, die denselben Bytecode im selben Zustand ausführen, müssen dieselbe Ausgabe erzeugen — dieser Konsens über die Ausführung ist es, was Smart Contracts vertrauenslos macht.</p>
+<p><strong>Konten.</strong> Ethereum hat zwei Kontotypen: Externally Owned Accounts (EOAs), die durch private Schlüssel kontrolliert werden, und Contract Accounts, deren Code on-chain gespeichert ist. Eine Transaktion, die an eine Vertragsadresse gesendet wird, löst die Bytecode-Ausführung des Vertrags aus.</p>
+<p><strong>Zustand.</strong> Ethereums globaler Zustand ist eine Abbildung von Adressen auf Kontostände (Nonce, Guthaben, Speicher, Code-Hash). Die Zustandswurzel — ein Merkle Patricia Trie aller Kontostände — ist in jedem Block-Header enthalten und ermöglicht den effizienten Nachweis des Zustands eines Kontos bei jeder Block-Höhe.</p>
+<p><strong>Gas.</strong> Benutzer zahlen Gas (in ETH) für jede EVM-Operation. Gas erfüllt zwei Funktionen: Es entschädigt Miner/Validatoren für Berechnungen und begrenzt die Ressourcen, die eine einzelne Transaktion verbrauchen kann, um Denial-of-Service-Angriffe über teure Operationen zu verhindern.</p>
+<h2 id="smart-contracts-in-solidity-schreiben">Smart Contracts in Solidity schreiben <a class="heading-anchor" href="#smart-contracts-in-solidity-schreiben" aria-label="Link zu Smart Contracts in Solidity schreiben">#</a></h2>
+<p>Solidity ist eine statisch typisierte, vertragsorientierte Sprache, die zu EVM-Bytecode kompiliert. Ein minimaler Token-Vertrag veranschaulicht die Kernkonzepte:</p>
 <pre><code class="language-solidity">pragma solidity ^0.8.0;
 
 contract MyToken {
+    string public name;
+    string public symbol;
+    uint8 public decimals;
+    uint256 public totalSupply;
+    mapping(address =&gt; uint256) public balanceOf;
 
-  string public name;
-  string public symbol;
-  uint256 public decimals;
-  uint256 public totalSupply;
+    event Transfer(address indexed from, address indexed to, uint256 value);
 
-  constructor(string memory _name, string memory _symbol, uint8 _decimals, uint256 _totalSupply) {
-    name = _name;
-    symbol = _symbol;
-    decimals = _decimals;
-    totalSupply = _totalSupply;
-  }
+    constructor(
+        string memory _name,
+        string memory _symbol,
+        uint8 _decimals,
+        uint256 _totalSupply
+    ) {
+        name = _name;
+        symbol = _symbol;
+        decimals = _decimals;
+        totalSupply = _totalSupply;
+        balanceOf[msg.sender] = _totalSupply;
+    }
 
+    function transfer(address _to, uint256 _value) external returns (bool) {
+        require(balanceOf[msg.sender] &gt;= _value, &quot;Insufficient balance&quot;);
+        balanceOf[msg.sender] -= _value;
+        balanceOf[_to] += _value;
+        emit Transfer(msg.sender, _to, _value);
+        return true;
+    }
 }
 </code></pre>
-<p>Dieser einfache Contract erlaubt es, ein Token mit Eigenschaften wie Name, Symbol, Dezimalstellen und Gesamtangebot zu erstellen.</p>
-<p>Die <code>constructor</code>-Funktion initialisiert diese Parameter beim Deployment des Contracts.</p>
-<p>Dieses Beispiel richtet lediglich grundlegende Token-Eigenschaften ein. Sie würden den Contract erweitern, um weitere Funktionen hinzuzufügen, wie etwa:</p>
+<p>Wichtige Beobachtungen: <code>mapping(address =&gt; uint256)</code> ist ein EVM-Speicherlayout, keine In-Memory-Datenstruktur — Lesen und Schreiben kosten Gas. <code>require</code> macht die gesamte Transaktion bei Fehler rückgängig und gibt ungenutztes Gas zurück. <code>event Transfer</code> gibt ein Log aus, das Off-Chain-Indexer verwenden, um Transfers zu verfolgen, ohne den vollständigen Zustand neu zu lesen. Der <code>constructor</code> wird einmalig beim Deployment ausgeführt; nachfolgende Aufrufe gehen an die benannten Funktionen.</p>
+<p>Der ERC-20-Standard formalisierte eine gemeinsame Schnittstelle für fungible Token — <code>transfer</code>, <code>transferFrom</code>, <code>approve</code>, <code>allowance</code>, <code>balanceOf</code>, <code>totalSupply</code> — die es jedem ERC-20-konformen Token ermöglicht, mit jeder ERC-20-fähigen Börse oder Wallet ohne benutzerdefinierte Integration zu arbeiten.</p>
+<h2 id="vom-hauptbuch-zur-finanzinfrastruktur">Vom Hauptbuch zur Finanzinfrastruktur <a class="heading-anchor" href="#vom-hauptbuch-zur-finanzinfrastruktur" aria-label="Link zu Vom Hauptbuch zur Finanzinfrastruktur">#</a></h2>
+<p>Die hier beschriebenen Blockchain-Primitive — Hash-Ketten, Merkle Trees, die EVM und ERC-20 — wurden zwischen 2018 und 2026 zur Grundlage eines breiteren Satzes von Finanzanwendungen:</p>
+<p><strong>Dezentrale Finanzen (DeFi).</strong> Kreditprotokolle (Compound, Aave), automatisierte Market Maker (Uniswap) und Yield-Aggregatoren laufen alle als EVM-Smart-Contracts. Sie ersetzen die Clearing-, Verwahrungs- und Abwicklungsfunktionen traditioneller Finanzintermediäre durch selbst-ausführenden Code und On-Chain-Liquiditätspools.</p>
+<p><strong>Tokenisierte Assets.</strong> Zentral- und Geschäftsbanken erproben tokenisierte Einlagen, tokenisierte Anleihen und tokenisierte Geldmarktfonds auf zugelassenen Varianten von EVM-kompatiblen Ketten. Die zugrunde liegenden Mechanismen — Hash-gesicherte Zustandsübergänge, atomare Abwicklung, programmierbare Transferregeln — sind direkte Nachkommen der Ethereum-Architektur von 2014.</p>
+<p><strong>Digitale Zentralbankwährungen.</strong> Die Großhandels-CBDC-Forschung der Bank of England, das Digitale-Euro-Programm der EZB und Project Agorá erkunden alle DLT-Architekturen, die von den grundlegenden Designs in Bitcoin und Ethereum abgeleitet sind oder damit kompatibel sind. Die Konsens- und Hash-Kettenstrukturen bleiben relevant, auch wenn sich das Berechtigungs- und Governance-Modell vollständig von öffentlichen Blockchains unterscheidet.</p>
+<p>Der Weg vom Bitcoin-Whitepaper 2008 zur tokenisierten Finanzwelt 2026 umspannt zwei Jahrzehnte, aber er läuft auf einer kohärenten technischen Linie. Das Verständnis, wie eine SHA-256-Hash-Kette Unveränderlichkeit erzwingt, wie ein Merkle Tree effiziente Verifizierung ermöglicht und wie die EVM Smart Contracts atomar ausführt, ist Voraussetzung für die Bewertung jeglicher Behauptungen darüber, was Blockchain im regulierten Finanzwesen leisten kann und was nicht.</p>
+<h2 id="haufig-gestellte-fragen">Häufig gestellte Fragen <a class="heading-anchor" href="#haufig-gestellte-fragen" aria-label="Link zu Häufig gestellte Fragen">#</a></h2>
+<p><strong>Was ist der Unterschied zwischen einer Blockchain und einer verteilten Datenbank?</strong></p>
+<p>Eine traditionelle verteilte Datenbank repliziert Daten für Verfügbarkeit und Leistung auf Nodes, aber das Vertrauen ist zentralisiert — ein Administrator kann Einträge ändern. Eine Blockchain macht Manipulationen durch Hash-Chaining und Konsens rechnerisch teuer: Die Änderung eines historischen Eintrags erfordert die Wiederholung des gesamten nachfolgenden proof-of-work oder proof-of-stake und überzeugt das Netzwerk, die geänderte Verzweigung zu akzeptieren. Die unterscheidende Eigenschaft ist die durch Kryptographie und Anreizdesign erzwungene Manipulationssicherheit statt durch Zugriffskontrollen.</p>
+<p><strong>Warum verwendet Ethereum Keccak-256 statt SHA-256?</strong></p>
+<p>Ethereum übernahm Keccak-256 (den SHA-3-Finalisten vor den NIST-Standardisierungsanpassungen) teilweise, weil seine Designer Unabhängigkeit von der SHA-2-Linie wollten, von der Bitcoin bereits abhängig war. Keccak hat auch andere algebraische Eigenschaften, die es für bestimmte EVM-Operationen attraktiv machten. Der praktische Effekt für Entwickler ist, dass Ethereum-Adressableitung und Speicherslot-Hashing Keccak-256 verwenden, nicht SHA-256d wie in Bitcoin.</p>
+<p><strong>Was verhindert „Gas&quot; in der EVM?</strong></p>
+<p>Gas verhindert zwei Kategorien von Angriffen. Erstens verhindert es Denial-of-Service über rechnerisch teure Operationen: Jeder Opcode kostet Gas, sodass ein Angreifer das Netzwerk nicht dazu zwingen kann, Endlosschleifen kostenlos auszuführen. Zweitens begrenzt das Block-Gas-Limit die Gesamtberechnung pro Block und stellt sicher, dass die Block-Validierungszeit für Full Nodes begrenzt und vorhersehbar bleibt. Ohne Gas könnte ein einzelner Vertragsaufruf das Netzwerk durch unbegrenzte Berechnungen zum Stillstand bringen.</p>
+<p><strong>Wie ändert proof-of-stake das Sicherheitsmodell im Vergleich zu proof-of-work?</strong></p>
+<p>Bei proof-of-work wird Sicherheit durch Energieaufwand bereitgestellt: Ein Angriff auf die Kette erfordert die Kontrolle von mehr als 50 % der Hash-Rate des Netzwerks, was die Kontrolle von mehr als 50 % seiner physischen Hardware und Stromversorgung bedeutet. Bei proof-of-stake (von Ethereum seit dem Merge 2022 verwendet) wird Sicherheit durch wirtschaftlichen Einsatz bereitgestellt: Validatoren sperren ETH als Sicherheit, die reduziert wird, wenn sie konfliktive Blöcke signieren. Ein 51%-Angriff erfordert den Erwerb und die Riskierung von mehr als 50 % aller gestakten ETH — Kapitalkosten statt Hardware- und Energiekosten. Das Sicherheitsmodell ist verschieden, aber mathematisch vergleichbar in wirtschaftlichen Begriffen unter der Annahme, dass rationale Validatoren Gebühreneinnahmen der Kapitalzerstörung vorziehen.</p>
+<h2 id="referenzen">Referenzen <a class="heading-anchor" href="#referenzen" aria-label="Link zu Referenzen">#</a></h2>
 <ul>
-<li>Token-Transfers zwischen Adressen</li>
-<li>Verwaltung von Guthaben</li>
-<li>Allowances für das Ausgeben von Tokens</li>
-<li>Minting und Burning von Tokens</li>
-<li>Einfrieren oder Sperren von Token-Transfers</li>
-<li>Implementierung von Token-Standards wie ERC-20</li>
-<li>Bereitstellung und Interaktion mit dem Contract</li>
+<li>Nakamoto, S., (2008). <a href="https://bitcoin.org/bitcoin.pdf" title="Bitcoin Whitepaper">Bitcoin: A Peer-to-Peer Electronic Cash System ⧉</a>.</li>
+<li>Buterin, V., (2014). <a href="https://ethereum.org/whitepaper" title="Ethereum Whitepaper">Ethereum: A Next-Generation Smart Contract and Decentralised Application Platform ⧉</a>.</li>
+<li>Wood, G., (2014). <a href="https://ethereum.github.io/yellowpaper/paper.pdf" title="Ethereum Yellow Paper">Ethereum: A Secure Decentralised Generalised Transaction Ledger ⧉</a>.</li>
+<li>NIST, (2015). <a href="https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions" title="NIST FIPS 202">SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions ⧉</a>.</li>
 </ul>
-<h3 id="lokale-entwicklung-und-tests">Lokale Entwicklung und Tests <a class="heading-anchor" href="#lokale-entwicklung-und-tests" aria-label="Link zu Lokale Entwicklung und Tests">#</a></h3>
-<p>Bevor Sie Ihre Kryptowährung auf der Ethereum-Blockchain bereitstellen, ist es ratsam, gründliche lokale Tests durchzuführen. So stellen Sie sicher, dass Ihre Kryptowährung wie vorgesehen funktioniert, ohne unvorhergesehene Fehler oder Schwachstellen.</p>
-<p>Folgen Sie diesen Schritten, um loszulegen:</p>
-<h4>Go-Ethereum (Geth) herunterladen</h4>
-<p>Beginnen Sie mit dem Download von <a href="https://geth.ethereum.org/downloads/">Go-Ethereum</a>, auch als Geth bekannt — einem in Go geschriebenen Ethereum-Client. Geth ist der Command-Line-Interface-(CLI-)Ethereum-Client, der auf Windows-, Mac- und Linux-Plattformen läuft. Es handelt sich um ein vielseitiges Werkzeug, mit dem Sie minen, Smart Contracts erstellen und mit ihnen im Ethereum-Netzwerk interagieren können. Sie können Geth hier herunterladen.</p>
-<h4>Ethereum installieren</h4>
-<p>Sobald Sie Geth heruntergeladen haben, fahren Sie mit der Installation von Ethereum fort. Detaillierte Voraussetzungen und vollständige Build-Anleitungen finden Sie in den <a href="https://geth.ethereum.org/docs/getting-started/installing-geth">Installation Instructions</a> im offiziellen Wiki.</p>
-<h4>Eine Entwicklungsumgebung einrichten</h4>
-<p>Um die Entwicklung Ihrer Kryptowährung zu erleichtern, benötigen Sie eine Entwicklungsumgebung, ein Test-Framework und eine Asset-Pipeline für Ethereum. Detaillierte Anleitungen zur Einrichtung dieser unverzichtbaren Werkzeuge finden Sie im Ethereum-Wiki.</p>
-<h4>Auf einem Testnet bereitstellen</h4>
-<p>Sobald Ihre Kryptowährung die lokalen Tests besteht, können Sie sie in einem Testnet bereitstellen. Ein Testnet ist eine sichere und kontrollierte Umgebung, die das Ethereum-Mainnet nachbildet, sodass Sie die Leistung Ihrer Kryptowährung unter realen Bedingungen bewerten können, ohne reale finanzielle Risiken einzugehen.</p>
-<h2 id="auswirkungen">Auswirkungen <a class="heading-anchor" href="#auswirkungen" aria-label="Link zu Auswirkungen">#</a></h2>
-<p>Indem Sie eine auf Ethereum basierende Kryptowährung von Grund auf aufbauen, gewinnen Sie:</p>
-<ul>
-<li>Fundiertes Wissen zu dezentralen Anwendungen (dApps) und der Programmierung von Smart Contracts</li>
-<li>Praktische Erfahrung mit der Solidity-Programmierung</li>
-<li>Verständnis der Konsensprotokolle von Ethereum</li>
-<li>Vertrautheit mit Token-Standards wie ERC-20</li>
-</ul>
-<p>Dieses Wissen befähigt Sie, die Blockchain-Technologie für innovative Lösungen zu nutzen.</p>
-<h2 id="anreize">Anreize <a class="heading-anchor" href="#anreize" aria-label="Link zu Anreize">#</a></h2>
-<p>Der vollständige Aufbau eines Tokens vermittelt unmittelbar praktische Erfahrung mit:</p>
-<ul>
-<li>Blockchain-Architektur</li>
-<li>Mechanik von Kryptowährungen</li>
-<li>Smart-Contract-Entwicklung</li>
-<li>Möglichkeiten und Grenzen von Ethereum</li>
-</ul>
-<p>Sie erwerben wertvolle Fähigkeiten, um Ihre Karriere in der Blockchain-Programmierung voranzutreiben.</p>
-<h2 id="fazit">Fazit <a class="heading-anchor" href="#fazit" aria-label="Link zu Fazit">#</a></h2>
-<p>Im Bereich der Blockchain-Technologie wird Verständnis am besten durch praktische Umsetzung erreicht. Eine Kryptowährung auf der Ethereum-Plattform zu bauen, bietet eine einzigartige Gelegenheit, aus erster Hand Erfahrung mit den Möglichkeiten und Grenzen der Technologie zu sammeln. Dieser Leitfaden gibt Ihnen das Wissen und die Fähigkeiten an die Hand, um diese spannende Reise zu beginnen — und fördert Innovation und Entdeckergeist in der sich stetig weiterentwickelnden Welt der Blockchain- und Kryptowährungsentwicklung.</p>
-<aside class="author-card" aria-label="Über den Autor"><img alt="Porträt von Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/de/uber-mich/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior-Technologe im Banking, schreibe über angewandte KI, ISO-20022-Migration, Post-Quanten-Kryptografie für Finanzdienstleistungen und die strukturelle Transformation des Wholesale-Zahlungsverkehrs.</span><span class="author-credentials">20+ Jahre Erfahrung bei HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/de/uber-mich/index.html">Vollständiges Profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Zuletzt überprüft <time datetime="2026-05-22">2026-05-22</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<!-- enrich-start -->
+
+<p class="post-reviewed">Zuletzt überprüft <time datetime="2026-05-24">2026-05-24</time>.</p>
+
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Über den Autor"><img alt="Porträt von Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/de/uber-mich/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior-Technologe im Banking, schreibe über angewandte KI, ISO-20022-Migration, Post-Quanten-Kryptografie für Finanzdienstleistungen und die strukturelle Transformation des Wholesale-Zahlungsverkehrs.</span><span class="author-credentials">20+ Jahre Erfahrung bei HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/de/uber-mich/index.html">Vollständiges Profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Zuletzt überprüft <time datetime="2026-05-27">2026-05-27</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Verwandte Artikel</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/de/2023-10-09-shokunin-der-schnellste-rust-basierte-static-site-generator/index.html" class="related-media" aria-label="Static Site Generator: der schnellste Rust-basierte Static Site Generator" tabindex="-1"><img alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right" src="https://cloudcdn.pro/api/transform?url=/stocks/images/anna-nekrashevich-8534387.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="static-site-generator-der-schnellste-rust-basierte-static-site-generator"><a href="https://sebastienrousseau.com/de/2023-10-09-shokunin-der-schnellste-rust-basierte-static-site-generator/index.html">Static Site Generator: der schnellste Rust-basierte Static Site Generator</a> <a class="heading-anchor" href="#static-site-generator-der-schnellste-rust-basierte-static-site-generator" aria-label="Link zu Static Site Generator: der schnellste Rust-basierte Static Site Generator">#</a></h3><p><time datetime="2023-10-09">2023-10-09</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/de/2023-09-29-iso-20022-konforme-zahlungsdateien-automatisieren-mit-pain001/index.html" class="related-media" aria-label="ISO 20022-konforme Zahlungsdateien automatisieren mit Pain001" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/api/transform?url=/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="iso-20022-konforme-zahlungsdateien-automatisieren-mit-pain001"><a href="https://sebastienrousseau.com/de/2023-09-29-iso-20022-konforme-zahlungsdateien-automatisieren-mit-pain001/index.html">ISO 20022-konforme Zahlungsdateien automatisieren mit Pain001</a> <a class="heading-anchor" href="#iso-20022-konforme-zahlungsdateien-automatisieren-mit-pain001" aria-label="Link zu ISO 20022-konforme Zahlungsdateien automatisieren mit Pain001">#</a></h3><p><time datetime="2023-09-29">2023-09-29</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/de/2018-02-04-neue-kryptowaehrung-schnellere-zahlungsloesung-fuer-die-zukunft/index.html" class="related-media" aria-label="Eine neue Kryptowährung und eine schnellere Zahlungslösung für die Zukunft" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/api/transform?url=/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="eine-neue-kryptowahrung-und-eine-schnellere-zahlungslosung-fur-die-zukunft"><a href="https://sebastienrousseau.com/de/2018-02-04-neue-kryptowaehrung-schnellere-zahlungsloesung-fuer-die-zukunft/index.html">Eine neue Kryptowährung und eine schnellere Zahlungslösung für die Zukunft</a> <a class="heading-anchor" href="#eine-neue-kryptowahrung-und-eine-schnellere-zahlungslosung-fur-die-zukunft" aria-label="Link zu Eine neue Kryptowährung und eine schnellere Zahlungslösung für die Zukunft">#</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/de/2018-01-24-der-erc-20-token-standard" class="related-media" aria-label="Der ERC-20-Token-Standard" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="der-erc-20-token-standard"><a href="https://sebastienrousseau.com/de/2018-01-24-der-erc-20-token-standard">Der ERC-20-Token-Standard</a> <a class="heading-anchor" href="#der-erc-20-token-standard" aria-label="Link zu Der ERC-20-Token-Standard">#</a></h3><p><time datetime="2018-01-24">2018-01-24</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/de/2018-02-04-neue-kryptowaehrung-schnellere-zahlungsloesung-fuer-die-zukunft" class="related-media" aria-label="Unveiling a New Cryptocurrency and Faster Payment Solution" tabindex="-1"><img alt="A very tall building with a lot of holes in it" src="https://cloudcdn.pro/api/transform?url=/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="unveiling-a-new-cryptocurrency-and-faster-payment-solution"><a href="https://sebastienrousseau.com/de/2018-02-04-neue-kryptowaehrung-schnellere-zahlungsloesung-fuer-die-zukunft">Unveiling a New Cryptocurrency and Faster Payment Solution</a> <a class="heading-anchor" href="#unveiling-a-new-cryptocurrency-and-faster-payment-solution" aria-label="Link zu Unveiling a New Cryptocurrency and Faster Payment Solution">#</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/de/2018-02-15-entstehung-der-express-transaction-credits-plattform" class="related-media" aria-label="The Making of the Express Transaction Credits Platform" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="the-making-of-the-express-transaction-credits-platform"><a href="https://sebastienrousseau.com/de/2018-02-15-entstehung-der-express-transaction-credits-plattform">The Making of the Express Transaction Credits Platform</a> <a class="heading-anchor" href="#the-making-of-the-express-transaction-credits-platform" aria-label="Link zu The Making of the Express Transaction Credits Platform">#</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
 </div>
-</aside><nav class="post-pagination" aria-label="Artikel-Navigation"><a class="post-pagination-prev" href="/de/2018-01-02-blockchain-die-technologie-die-2018-zaehlt/"><span class="post-pagination-label">Zurück</span><span class="post-pagination-title">Blockchain explained, the technology that matters the most</span></a><a class="post-pagination-next" href="/de/2018-01-24-der-erc-20-token-standard/"><span class="post-pagination-label">Weiter</span><span class="post-pagination-title">ERC-20: The Ethereum Token Interface That Changed the World</span></a></nav></div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Quellen und Referenzen</h2><ol class="article-sources-list"><li><a href="https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions" rel="external noopener nofollow"><span class="source-host">www.nist.gov</span><span class="source-path">/publications/sha-3-standard-permutation-based-hash-and-extendable-output-fun…</span></a></li></ol></aside><nav class="post-pagination" aria-label="Artikel-Navigation"><a class="post-pagination-prev" href="/de/2018-01-02-blockchain-die-technologie-die-2018-zaehlt/"><span class="post-pagination-label">Zurück</span><span class="post-pagination-title">Blockchain explained, the technology that matters the most</span></a><a class="post-pagination-next" href="/de/2018-01-24-der-erc-20-token-standard/"><span class="post-pagination-label">Weiter</span><span class="post-pagination-title">ERC-20: The Ethereum Token Interface That Changed the World</span></a></nav></div>
     </main>
 
 <!-- gen-layouts:footer-start -->
@@ -340,7 +371,7 @@ contract MyToken {
     <!-- Schema.org structured data -->
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"de"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"de"}]}</script>
 
-        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":819,"about":{"@type":"Thing","name":"Blockchain","sameAs":["https://en.wikipedia.org/wiki/Blockchain","https://www.wikidata.org/wiki/Q20514253","https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"]},"mentions":[{"@type":"Thing","name":"Ethereum","sameAs":["https://en.wikipedia.org/wiki/Ethereum","https://www.wikidata.org/wiki/Q21825854","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]},{"@type":"Thing","name":"ERC-20","sameAs":["https://en.wikipedia.org/wiki/Ethereum#Tokens","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]}],"headline":"Die Technologie hinter Blockchain verstehen","description":"Eine Kryptowährung auf der Ethereum-Blockchain entwickeln: ein umfassender Leitfaden zur Blockchain-Entwicklung, Tokenisierung und Implementierung einer Kryptowährung.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp","width":"100vw","height":"100vh","caption":"Ausgeschalteter Laptop auf einem braunen Holztisch"},"url":"https://sebastienrousseau.com/de/2018-01-09-die-technologie-hinter-blockchain-verstehen/","datePublished":"2023-01-09T09:09:00+00:00","dateModified":"2026-05-11","inLanguage":"de","keywords":"Blockchain, Ethereum, Smart Contract, Kryptowährung, Solidity, Geth, dApps, ERC-20, Tokenisierung, Testnet","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/de/2018-01-09-die-technologie-hinter-blockchain-verstehen/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"de"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/de/"},{"@type":"ListItem","position":3,"name":"Die Technologie hinter Blockchain verstehen","item":"https://sebastienrousseau.com/de/2018-01-09-die-technologie-hinter-blockchain-verstehen/"}]}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1914,"about":{"@type":"Thing","name":"Blockchain","sameAs":["https://en.wikipedia.org/wiki/Blockchain","https://www.wikidata.org/wiki/Q20514253","https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"]},"mentions":[{"@type":"Thing","name":"Ethereum","sameAs":["https://en.wikipedia.org/wiki/Ethereum","https://www.wikidata.org/wiki/Q21825854","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]},{"@type":"Thing","name":"ERC-20","sameAs":["https://en.wikipedia.org/wiki/Ethereum#Tokens","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]}],"headline":"Understanding the Technology behind Blockchain","description":"Eine technische Einführung in die Funktionsweise von Blockchain: kryptografische Hash-Ketten, Merkle-Bäume, verteilter Konsens und warum Ethereums programmierbare Schicht ein Zahlungsbuch in eine Plattform für Smart Contracts und tokenisierte Assets verwandelte.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp","width":"100vw","height":"100vh","caption":"Abstrakte digitale Hauptbuchblöcke, verbunden durch Lichtspuren auf dunklem Hintergrund"},"url":"https://sebastienrousseau.com/de/2018-01-09-die-technologie-hinter-blockchain-verstehen/","datePublished":"2018-01-09T09:09:00+00:00","dateModified":"2026-05-24","inLanguage":"de","keywords":"Blockchain-Technologie, kryptografischer Hash, Merkle-Baum, verteilter Konsens, Proof of Work, Ethereum, Smart Contracts, EVM, Solidity, ERC-20, verteiltes Hauptbuch, dezentralisierte Finanzen","articleSection":"Blockchain","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/de/2018-01-09-die-technologie-hinter-blockchain-verstehen/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"de"},"citation":[{"@type":"CreativeWork","url":"https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/de/"},{"@type":"ListItem","position":3,"name":"Understanding the Technology behind Blockchain","item":"https://sebastienrousseau.com/de/2018-01-09-die-technologie-hinter-blockchain-verstehen/"}]}]}</script>
 <script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
   
 <!-- SSG Search Widget -->
@@ -366,5 +397,5 @@ contract MyToken {
 </div>
 <script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
 </div>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Die Technologie hinter Blockchain verstehen","url":"https://sebastienrousseau.com/de/2018-01-09-die-technologie-hinter-blockchain-verstehen/","inLanguage":"de-DE","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"Blockchain, Ethereum, Smart Contract, Kryptowährung, Solidity, Geth, dApps, ERC-20, Tokenisierung, Testnet","programmingLanguage":"Solidity","dependencies":["Blockchain","Ethereum","ERC-20"]}</script></body>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Die Technologie hinter Blockchain verstehen","url":"https://sebastienrousseau.com/de/2018-01-09-die-technologie-hinter-blockchain-verstehen/","inLanguage":"de-DE","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"Blockchain-Technologie, kryptografischer Hash, Merkle-Baum, verteilter Konsens, Proof of Work, Ethereum, Smart Contracts, EVM, Solidity, ERC-20, verteiltes Hauptbuch, dezentralisierte Finanzen","programmingLanguage":"Solidity","dependencies":["Blockchain","Ethereum","ERC-20"]}</script></body>
 </html>

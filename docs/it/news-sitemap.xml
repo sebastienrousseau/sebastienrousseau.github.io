@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/it/2026-05-23-agentic-pagamenti-banking-consent-liability-new-payment-ux-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it-IT</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T23:13:19+00:00</news:publication_date>
+    <news:title>Pagamenti agentici nel banking: consenso, responsabilità e nuova UX 2026</news:title>
+    <news:keywords>pagamenti agentici 2026, pagamenti agenti IA, Mastercard Agent Pay, pagamento IA Rabobank, AP2, A2A, x402, MCP, machine payments protocol, consenso ai pagamenti, Regulation E, EFTA, responsabilità nei pagamenti, intento verificabile, tokenizzazione, passkey, UX bancaria, commercio IA</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/it/2026-05-24-uk-pagamenti-forward-plan-stablecoins-open-banking-tokenised-pagamenti-2026/</loc>
   <news:news>
     <news:publication>
@@ -11,18 +23,6 @@
     <news:publication_date>2026-05-24T06:06:06+00:00</news:publication_date>
     <news:title>UK Payments Forward Plan 2026: stablecoin, open banking, depositi tokenizzati e pagamenti agentici</news:title>
     <news:keywords>UK Payments Forward Plan 2026, stablecoin Regno Unito, depositi tokenizzati Regno Unito, open banking FCA, consolidamento PSR FCA, pagamenti agentici Regno Unito, Wholesale Digital Markets Champion, Chris Woolard, regolamentazione servizi di pagamento</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/it/2026-05-23-agentic-pagamenti-banking-consent-liability-new-payment-ux-2026/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>it-IT</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-22T21:38:56+00:00</news:publication_date>
-    <news:title>Pagamenti agentici nel banking: consenso, responsabilità e nuova UX 2026</news:title>
-    <news:keywords>pagamenti agentici 2026, pagamenti agenti IA, Mastercard Agent Pay, pagamento IA Rabobank, AP2, A2A, x402, MCP, machine payments protocol, consenso ai pagamenti, Regulation E, EFTA, responsabilità nei pagamenti, intento verificabile, tokenizzazione, passkey, UX bancaria, commercio IA</news:keywords>
   </news:news>
 </url>
 <url>
@@ -45,8 +45,8 @@
       <news:language>it-IT</news:language>
     </news:publication>
     <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</news:title>
-    <news:keywords>tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, commercial bank money, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenised money, digital wallets, tokenised gilts</news:keywords>
+    <news:title>Depositi tokenizzati nel 2026: servizi bancari, concorrenza degli stablecoins e stato della moneta di banca commerciale programmabile</news:title>
+    <news:keywords>tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, moneta bancaria commerciale, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenised money, portafogli digitali, tokenised gilts</news:keywords>
   </news:news>
 </url>
 <url>
@@ -57,8 +57,8 @@
       <news:language>it-IT</news:language>
     </news:publication>
     <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
-    <news:title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</news:title>
-    <news:keywords>cloud native banking 2026, Kubernetes banks, financial institutions cloud, DORA 2026, cloud resilience, Red Hat OpenShift, Portworx, VM container coexistence, bank cloud sovereignty, financial services cloud dependency, operational resilience, disaster recovery, cloud exit strategy, AI banking workloads</news:keywords>
+    <news:title>Banca cloud nativa nel 2026: Kubernetes, DORA, sovranità e la fine della divisione tra VM e container</news:title>
+    <news:keywords>banking cloud native 2026, Kubernetes banche, cloud istituzioni finanziarie, DORA 2026, resilienza cloud, Red Hat OpenShift, Portworx, coesistenza VM container, sovranità cloud banche, dipendenza cloud servizi finanziari, resilienza operativa, disaster recovery, strategia di uscita cloud, carichi AI banking</news:keywords>
   </news:news>
 </url>
 <url>
@@ -326,6 +326,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/it/2024-02-12-akande-assistente-vocale-rivoluzione-dellassistenza-personale-ed-esecutiva/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it-IT</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-12T06:06:06+00:00</news:publication_date>
+    <news:title>Àkàndé: GPT-Powered Voice Assistant for Executives</news:title>
+    <news:keywords>Àkàndé, OpenAI GPT-4, Whisper STT, caching SQLite, fpdf2, assistente vocale Python, chat completions API, generazione riepiloghi PDF, cache SHA-256, sintesi vocale, AI assistente esecutivo, open-source</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/it/2024-02-08-rivoluzionare-la-pubblicita-come-lia-plasma-il-futuro/</loc>
   <news:news>
     <news:publication>
@@ -345,8 +357,32 @@
       <news:language>it-IT</news:language>
     </news:publication>
     <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
+    <news:title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</news:title>
+    <news:keywords>Azure Cognitive Services, speech-to-text, modello acustico neurale, Azure Text Analytics, elaborazione del linguaggio naturale, analisi del sentiment, CherryPy, batch transcription API, ASR multilingua, Azure Translator, trascrizione audio, elaborazione audio Python</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2024-01-29-analisi-audio-traduzioni-e-prospettive-con-lia/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it-IT</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
     <news:title>Analisi audio, traduzioni e prospettive con l&apos;IA</news:title>
     <news:keywords>IA, audio, trascrizione, Whisper, traduzione, sentiment, insight</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2024-01-23-progressi-nellingegneria-dei-prompt-ia/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it-IT</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-23T06:06:06+00:00</news:publication_date>
+    <news:title>AI Prompt Engineering 2024: Techniques That Work</news:title>
+    <news:keywords>chain-of-thought prompting, few-shot learning, zero-shot prompting, in-context learning, prompt injection, ReAct, self-consistency, retrieval-augmented generation, BloombergGPT, system prompt, prompt security, LLM agent</news:keywords>
   </news:news>
 </url>
 <url>
@@ -482,6 +518,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/it/2023-11-12-esplorare-lia-generativa/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it-IT</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
+    <news:title>Generative AI in 2023: How It Works, Where It Lands</news:title>
+    <news:keywords>generative AI, large language model, transformer architecture, GPT-4, AI nei servizi finanziari, hallucination, retrieval-augmented generation, AI governance, foundation model, fine-tuning</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/it/2023-11-05-costanti-matematiche-e-crittografiche-per-rust/</loc>
   <news:news>
     <news:publication>
@@ -491,6 +539,18 @@
     <news:publication_date>2023-11-05T06:06:06+00:00</news:publication_date>
     <news:title>Costanti matematiche e crittografiche per la sicurezza Rust</news:title>
     <news:keywords>Rust, matematica, crittografia, costanti, precisione, calcolo scientifico</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2023-10-26-libmake-generatore-di-codice-per-librerie-rust/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it-IT</news:language>
+    </news:publication>
+    <news:publication_date>2023-10-26T06:06:06+00:00</news:publication_date>
+    <news:title>LibMake: Rust Library Scaffold Generator</news:title>
+    <news:keywords>LibMake, Rust code generator, cargo scaffold, Rust library template, Tera templating, GitHub Actions Rust, cargo-audit, Rust API Guidelines, boilerplate generator, Rust CI workflow</news:keywords>
   </news:news>
 </url>
 <url>
@@ -537,6 +597,18 @@
       <news:language>it-IT</news:language>
     </news:publication>
     <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
+    <news:title>Automating ISO 20022 Payment Files Creation with pain001</news:title>
+    <news:keywords>pain001, ISO 20022, pain.001.001.09, CustomerCreditTransferInitiation, SEPA Credit Transfer, CBPR+, payment automation, XML generation, XSD validation, GrpHdr, PmtInf, CdtTrfTxInf, CtrlSum, SWIFT</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2023-09-29-automatizzare-i-file-di-pagamento-iso-20022-con-pain001/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it-IT</news:language>
+    </news:publication>
+    <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
     <news:title>Automatizzare la creazione di file di pagamento conformi a ISO 20022 con Pain001</news:title>
     <news:keywords>ISO 20022, pain.001, pagamenti, SWIFT, SEPA, Python, automazione, open source</news:keywords>
   </news:news>
@@ -554,6 +626,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/it/2018-02-15-creazione-della-piattaforma-express-transaction-credits/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it-IT</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-15T06:06:06+00:00</news:publication_date>
+    <news:title>The making of the Express Transaction Credits Platform</news:title>
+    <news:keywords>EXTC platform, ERC-223, Ethereum smart contracts, architettura token, multi-signature, time-locked transfer, pagamenti blockchain, collateral-backed loans, finanza decentralizzata, crypto 2018</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/it/2018-02-04-nuova-criptovaluta-e-soluzione-di-pagamento-piu-rapida/</loc>
   <news:news>
     <news:publication>
@@ -563,6 +647,18 @@
     <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
     <news:title>Svelare una nuova criptovaluta e offrire una soluzione di pagamento più rapida</news:title>
     <news:keywords>criptovaluta, pagamenti istantanei, regolamento, blockchain, scalabilità, transazioni</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2018-02-04-nuova-criptovaluta-e-soluzione-di-pagamento-piu-rapida/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it-IT</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
+    <news:title>Una Nuova Criptovaluta e una Soluzione di Pagamento più Rapida</news:title>
+    <news:keywords>EXTC, ERC-223, contratti intelligenti Ethereum, pagamenti più rapidi, criptovaluta, pagamenti blockchain, token di pagamento, finanza decentralizzata, ERC-20, pagamenti transfrontalieri</news:keywords>
   </news:news>
 </url>
 <url>
@@ -587,6 +683,18 @@
     <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
     <news:title>Comprendere la tecnologia dietro la blockchain</news:title>
     <news:keywords>blockchain, crittografia, hash, Merkle, consenso, Bizantino, P2P, libro mastro distribuito</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2018-01-09-comprendere-la-tecnologia-dietro-la-blockchain/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it-IT</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
+    <news:title>Understanding the Technology behind Blockchain</news:title>
+    <news:keywords>tecnologia blockchain, hash crittografico, Merkle tree, consenso distribuito, proof of work, Ethereum, smart contracts, EVM, Solidity, ERC-20, distributed ledger, finanza decentralizzata</news:keywords>
   </news:news>
 </url>
 <url>

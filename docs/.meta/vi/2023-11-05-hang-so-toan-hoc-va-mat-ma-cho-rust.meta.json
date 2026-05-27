@@ -1,11 +1,11 @@
 {
-  "description": "cmn — thư viện Rust cung cấp các hằng số toán học và mật mã với độ chính xác cao cho các ứng dụng tài chính và bảo mật.",
-  "locale": "vi_VN",
+  "subtitle": "Một thư viện Rust cho các hằng số có độ chính xác cao",
+  "date": "November 5, 2023",
   "banner_alt": "Hình ảnh trừu tượng của các hằng số toán học",
   "banner": "https://cloudcdn.pro/stocks/images/cmn-banner.webp",
-  "subtitle": "Một thư viện Rust cho các hằng số có độ chính xác cao",
-  "keywords": "Rust, hằng số toán học, mật mã, cmn, độ chính xác cao, tài chính, bảo mật",
-  "date": "November 5, 2023",
+  "description": "cmn — thư viện Rust cung cấp các hằng số toán học và mật mã với độ chính xác cao cho các ứng dụng tài chính và bảo mật.",
+  "title": "Hằng số toán học và mật mã cho bảo mật Rust",
   "language": "vi-VN",
-  "title": "Hằng số toán học và mật mã cho bảo mật Rust"
+  "keywords": "Rust, hằng số toán học, mật mã, cmn, độ chính xác cao, tài chính, bảo mật",
+  "locale": "vi_VN"
 }

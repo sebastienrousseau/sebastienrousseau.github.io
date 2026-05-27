@@ -8,14 +8,14 @@
     <title>Express Transaction Credits プラットフォームの開発 — Sebastien Rousseau</title>
 
     <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
-<meta name="description" content="ブロックチェーンと暗号資産を利用した高速な国際送金プラットフォーム Express Transaction Credits の構築。">
-<meta name="keywords" content="国際送金, ブロックチェーン, 暗号資産, トークン, スマートコントラクト, 決済プラットフォーム, フィンテック">
+<meta name="description" content="2018年にEthereum ERC-223上に構築されたEXTCプラットフォームの技術的考察：トークンアーキテクチャ、マルチシグ送金、タイムロック転送、担保付き即時ローンを詳解。">
+<meta name="keywords" content="EXTCプラットフォーム, ERC-223, Ethereumスマートコントラクト, トークンアーキテクチャ, マルチシグネチャ, タイムロック転送, ブロックチェーン決済, 担保付きローン, 分散型金融, 2018年クリプト">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
     <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+<meta name="apple-mobile-web-app-title" content="EXTC Platform 2018">
 
     <!-- Strict security headers. The headers below that can be set via
          <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
@@ -40,7 +40,7 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-1QTzhu0IQem7QmMGRdEN85+efczXJINRLwRiCRLZ7Us=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-EaUy2ID3jVc8qzOvLbAmWX22lGc6Qie3B3S18nE0IxU=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-yVgBM16rnTArO3t/XmFH46extjAx6iuY27Rg9RU9uXE=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-1QTzhu0IQem7QmMGRdEN85+efczXJINRLwRiCRLZ7Us=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-GRdWWNcZGMwNHl1wtFMACuP0n76+IINHGre8SbSYKp4=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-jCW1xwX33UMeuxCtViIrYAnPQ7egINXR2fTizfPAGYw=' 'sha256-pMxwfWs6GRPrOg1F2q4kLU+mrLUnYKaRyUzzA/xl6QM=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
@@ -67,7 +67,7 @@
          Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
          observed (real-network) LCP is 165 ms. This hint pulls the
          synthetic LCP in line with the observed value. -->
-    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/joshua-sortino-LqKhnDzSF-8-unsplash.webp&w=1600&format=webp&q=85" fetchpriority="high">
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1600&format=webp&q=85" fetchpriority="high">
     <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
     <meta name="color-scheme" content="light dark" />
@@ -77,17 +77,17 @@
     <link rel="alternate" type="application/atom+xml" title="Atom フィード" href="/ja/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta property="og:title" content="Express Transaction Credits プラットフォームの開発 — Sebastien Rousseau">
-<meta property="og:description" content="ブロックチェーンと暗号資産を利用した高速な国際送金プラットフォーム Express Transaction Credits の構築。">
+<meta property="og:description" content="2018年にEthereum ERC-223上に構築されたEXTCプラットフォームの技術的考察：トークンアーキテクチャ、マルチシグ送金、タイムロック転送、担保付き即時ローンを詳解。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sebastienrousseau.com/ja/2018-02-15-express-transaction-credits-puratto-foomu-no-kaihatsu/">
-<meta property="og:image" content="https://cloudcdn.pro/stocks/images/joshua-sortino-LqKhnDzSF-8-unsplash.webp">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp">
 <meta property="og:image:width" content="100vw">
 <meta property="og:image:height" content="100vh">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Express Transaction Credits プラットフォームの開発 — Sebastien Rousseau">
-<meta name="twitter:description" content="ブロックチェーンと暗号資産を利用した高速な国際送金プラットフォーム Express Transaction Credits の構築。">
-<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/joshua-sortino-LqKhnDzSF-8-unsplash.webp">
+<meta name="twitter:description" content="2018年にEthereum ERC-223上に構築されたEXTCプラットフォームの技術的考察：トークンアーキテクチャ、マルチシグ送金、タイムロック転送、担保付き即時ローンを詳解。">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp">
 <link rel="canonical" href="https://sebastienrousseau.com/ja/2018-02-15-express-transaction-credits-puratto-foomu-no-kaihatsu/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
 <meta property="og:site_name" content="Sebastien Rousseau">
@@ -128,34 +128,34 @@
             </button>
             <div class="ap-lang-menu" role="menu" hidden>
               <div class="ap-lang-menu-grid">
-                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
-                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
-                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
-                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
-                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
-                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
-                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
-                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
-                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
-                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
-                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
-                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
-                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
-                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
-                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
-                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
-                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
-                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
-                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
-                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
-                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
-                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
-                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
-                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
-                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
-                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
-                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
-                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+                <a class="ap-lang-item" href="/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2018-02-15-creation-de-la-plateforme-express-transaction-credits/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2018-02-15-vznik-platformy-express-transaction-credits/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2018-02-15-entstehung-der-express-transaction-credits-plattform/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2018-02-15-creacion-de-la-plataforma-express-transaction-credits/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2018-02-15-express-transaction-credits-platform-ka-nirmaan/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2018-02-15-pembuatan-platform-express-transaction-credits/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2018-02-15-creazione-della-piattaforma-express-transaction-credits/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2018-02-15-express-transaction-credits-puratto-foomu-no-kaihatsu/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2018-02-15-express-transaction-credits-peullaetpom-jejak/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2018-02-15-het-ontstaan-van-het-express-transaction-credits-platform/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2018-02-15-powstanie-platformy-express-transaction-credits/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2018-02-15-criacao-da-plataforma-express-transaction-credits/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2018-02-15-sozdanie-platformy-express-transaction-credits/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2018-02-15-skapandet-av-express-transaction-credits-plattformen/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2018-02-15-kan-sang-platform-express-transaction-credits/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2018-02-15-express-transaction-credits-platformunun-yapimi/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2018-02-15-stvorennia-platformy-express-transaction-credits/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2018-02-15-xay-dung-nen-tang-express-transaction-credits/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2018-02-15-express-transaction-credits-pingtai-de-jianli/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2018-02-15-express-transaction-credits-pingtai-de-jianli-tw/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
               </div>
             </div>
           </div>
@@ -167,43 +167,112 @@
 
         <section class="ap-hero">
       <h1>Express Transaction Credits プラットフォームの開発</h1>
-      <p class="sub">ブロックチェーンを用いた高速国際送金プラットフォームの設計</p>
-    <nav class="article-tags" aria-label="トピック"><a href="/tags/index.html#h3-" class="article-tag" rel="tag">国際送金</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">ブロックチェーン</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">暗号資産</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">トークン</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">スマートコントラクト</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">決済プラットフォーム</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">フィンテック</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-02-15T18:18:18+00:00" class="meta-pub">公開日 15 Feb 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">更新日 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="想定読了時間">1 分で読了</span></div></section>
+      <p class="sub">2018年のEthereumにおけるトークンアーキテクチャ、マルチシグネチャ送金、タイムロック転送。</p>
+    <nav class="article-tags" aria-label="トピック"><a href="/tags/index.html#h3-extc" class="article-tag" rel="tag">EXTCプラットフォーム</a><a href="/tags/index.html#h3-erc-223" class="article-tag" rel="tag">ERC-223</a><a href="/tags/index.html#h3-ethereum" class="article-tag" rel="tag">Ethereumスマートコントラクト</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">トークンアーキテクチャ</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">マルチシグネチャ</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">タイムロック転送</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">ブロックチェーン決済</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">担保付きローン</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">分散型金融</a><a href="/tags/index.html#h3-2018" class="article-tag" rel="tag">2018年クリプト</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-02-15T18:18:18+00:00" class="meta-pub">公開日 15 Feb 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">更新日 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="想定読了時間">1 分で読了</span></div></section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>目次</h2><ol><li><a href="#section-1">インサイト</a></li><li><a href="#section-3">アイデア</a></li><li><a href="#section-5">手法</a></li><li><a href="#section-7">イノベーション</a></li><li><a href="#section-9">アプローチ</a></li><li><a href="#section-11">課題</a></li><li><a href="#section-13">ユースケース</a></li><li><a href="#section-15">結論</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> ブロックチェーンと暗号資産を利用した高速な国際送金プラットフォーム Express Transaction Credits の構築。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>インサイト.</strong> 国際送金は、依然として遅く、不透明で、高価です。送金、貿易ファイナンス、中小企業の支払いは、決済時間と手数料、為替損失に苦しんでいます。Express Transaction Credits (ETC) はこの問題への構造的な対応として設計されました。.</li>  <li><strong>アイデア.</strong> ETC プラットフォームは、ブロックチェーンベースのトークンを使用して国境を越えた価値を移動し、既存の銀行レールに統合します。これにより、トークン化された決済の速度と従来の決済の規制適合性を組み合わせます。.</li>  <li><strong>手法.</strong> プラットフォームは 4 つのコアコンポーネントで構成されています:(1) トークン契約 —— 価値移動のための ERC-20 互換トークン;(2) 流動性プール —— 法定通貨とトークン間のオンランプ/オフランプ;(3) コンプライアンスレイヤー —— KYC/AML/サンクションスクリーニング;(4) 決済エンジン —— 銀行レール統合用。.</li>  <li><strong>イノベーション.</strong> ボラティリティ問題を解決するため、ETC はステーブルコイン担保流動性プールを使用し、価値が移動中の安定性を保証します。これにより、暗号資産のボラティリティと従来の決済の確実性を整合させます。.</li></ul></aside><p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/joshua-sortino-LqKhnDzSF-8-unsplash.webp&w=1600&format=webp&q=85" alt="夜の電子回路基板の青いライト"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
-<h2 id="section-1">インサイト <a class="heading-anchor" href="#section-1" aria-label="リンク先 インサイト">#</a></h2>
-<h3 id="section-2">問題:遅くて高価な国際送金 <a class="heading-anchor" href="#section-2" aria-label="リンク先 問題:遅くて高価な国際送金">#</a></h3>
-<p>国際送金は、依然として遅く、不透明で、高価です。送金、貿易ファイナンス、中小企業の支払いは、決済時間と手数料、為替損失に苦しんでいます。Express Transaction Credits (ETC) はこの問題への構造的な対応として設計されました。</p>
-<h2 id="section-3">アイデア <a class="heading-anchor" href="#section-3" aria-label="リンク先 アイデア">#</a></h2>
-<h3 id="section-4">ハイブリッドレールアーキテクチャ <a class="heading-anchor" href="#section-4" aria-label="リンク先 ハイブリッドレールアーキテクチャ">#</a></h3>
-<p>ETC プラットフォームは、ブロックチェーンベースのトークンを使用して国境を越えた価値を移動し、既存の銀行レールに統合します。これにより、トークン化された決済の速度と従来の決済の規制適合性を組み合わせます。</p>
-<h2 id="section-5">手法 <a class="heading-anchor" href="#section-5" aria-label="リンク先 手法">#</a></h2>
-<h3 id="section-6">プラットフォームコンポーネント <a class="heading-anchor" href="#section-6" aria-label="リンク先 プラットフォームコンポーネント">#</a></h3>
-<p>プラットフォームは 4 つのコアコンポーネントで構成されています:(1) トークン契約 —— 価値移動のための ERC-20 互換トークン;(2) 流動性プール —— 法定通貨とトークン間のオンランプ/オフランプ;(3) コンプライアンスレイヤー —— KYC/AML/サンクションスクリーニング;(4) 決済エンジン —— 銀行レール統合用。</p>
-<h2 id="section-7">イノベーション <a class="heading-anchor" href="#section-7" aria-label="リンク先 イノベーション">#</a></h2>
-<h3 id="section-8">ステーブルコイン担保流動性 <a class="heading-anchor" href="#section-8" aria-label="リンク先 ステーブルコイン担保流動性">#</a></h3>
-<p>ボラティリティ問題を解決するため、ETC はステーブルコイン担保流動性プールを使用し、価値が移動中の安定性を保証します。これにより、暗号資産のボラティリティと従来の決済の確実性を整合させます。</p>
-<h2 id="section-9">アプローチ <a class="heading-anchor" href="#section-9" aria-label="リンク先 アプローチ">#</a></h2>
-<h3 id="section-10">段階的なローンチ戦略 <a class="heading-anchor" href="#section-10" aria-label="リンク先 段階的なローンチ戦略">#</a></h3>
-<p>ローンチは段階的に行われ、最初は限定された規制された通貨ペアと信頼できるカウンターパーティに焦点を当てます。これにより、コンプライアンスを最初から組み込み、KYC/AML 制御の運用テストを可能にします。</p>
-<h2 id="section-11">課題 <a class="heading-anchor" href="#section-11" aria-label="リンク先 課題">#</a></h2>
-<h3 id="section-12">規制の複雑さ <a class="heading-anchor" href="#section-12" aria-label="リンク先 規制の複雑さ">#</a></h3>
-<p>最大の課題は技術的ではなく、規制的なものです。プラットフォームは、複数の法域にわたる送金マネーライセンス、サンクションコンプライアンス、消費者保護、データ保護を航行する必要があります。</p>
-<h2 id="section-13">ユースケース <a class="heading-anchor" href="#section-13" aria-label="リンク先 ユースケース">#</a></h2>
-<h3 id="section-14">送金から貿易ファイナンスへ <a class="heading-anchor" href="#section-14" aria-label="リンク先 送金から貿易ファイナンスへ">#</a></h3>
-<p>最初のユースケースには、家庭送金、中小企業の B2B 支払い、企業のトレジャリーが含まれます。各セグメントには異なる UX、ボリューム、コンプライアンス要件があり、プラットフォームの設計を形作ります。</p>
-<h2 id="section-15">結論 <a class="heading-anchor" href="#section-15" aria-label="リンク先 結論">#</a></h2>
-<h3 id="etc">配管としての ETC <a class="heading-anchor" href="#etc" aria-label="リンク先 配管としての ETC">#</a></h3>
-<p>ETC の最良の結果は、顧客に見えない配管 —— 高速、低コスト、信頼性の高い国境を越えた価値移動 —— になることです。それが暗号資産がレガシーシステムよりも測定可能に優れている場所であり、構造的価値が解き放たれます。</p>
-<aside class="author-card" aria-label="著者について"><img alt="Sebastien Rousseau の肖像" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/ja/nitsuite/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">シニア・バンキング・テクノロジスト。応用AI、ISO 20022 への移行、金融サービス向けポスト量子暗号、ホールセール決済の構造変革について執筆しています。</span><span class="author-credentials">HSBC コマーシャル・アンド・インベストメント・バンク、PayPal、Barclays、Shazam、AKQA、Virgin Group にて 20 年以上の経験。 <a href="/ja/nitsuite/index.html">プロフィール全文</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最終確認日 <time datetime="2026-05-22">2026-05-22</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>目次</h2><ol><li><a href="#erc-20">設計上の問題：なぜERC-20は不十分だったのか</a></li><li><a href="#erc-223">ERC-223の解決策：通知付き原子的転送</a></li><li><a href="#extc">EXTCコントラクトのアーキテクチャ</a></li><li><a href="#section-9">担保付き即時ローンメカニズム</a></li><li><a href="#section-10">実験が明らかにしたもの</a></li><li><a href="#section-11">本番環境に到達したアイデア</a></li><li><a href="#section-12">よくある質問</a></li><li><a href="#section-13">参照文献</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 2018年にEthereum ERC-223上に構築されたEXTCプラットフォームの技術的考察：トークンアーキテクチャ、マルチシグ送金、タイムロック転送、担保付き即時ローンを詳解。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>設計上の問題：なぜERC-20は不十分だったのか.</strong> 2015年に提案され、Ethereum改善提案20として正式化されたERC-20標準は、2017–2018年のICOブームを支えた標準的なファンジブルトークンインターフェースを定義しました。その6つのコア関数 — totalSupply、balanceOf、transfer、transferFrom、approve、allowance — は、単純なトークン発行と交換には十分でした。.</li>  <li><strong>ERC-223の解決策：通知付き原子的転送.</strong> Ethereum EIPsのGitHub issueトラッカーで提案されたERC-223は、トークン転送が行うべきことを変更することでサイレントロスの問題に対処しました。ERC-223では、transfer(address _to, uint256 _value, bytes…</li>  <li><strong>EXTCコントラクトのアーキテクチャ.</strong> EXTCトークンコントラクトは、5つのモジュールを中心に構成されたSolidity実装でした：.</li>  <li><strong>担保付き即時ローンメカニズム.</strong> EXTCレンディングプリミティブは最も複雑なコンポーネントでした。設計：.</li></ul></aside><!-- lead-start -->
+
+<!-- lead-end -->
+<p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1600&format=webp&q=85" alt="大きな白い柱"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<blockquote>
+<p><strong>エグゼクティブサマリー / 主なポイント</strong></p>
+<ul>
+<li><strong>根本的な問題。</strong> 2018年のEthereumドミナントトークン標準ERC-20には構造的な欠陥がありました：スマートコントラクトアドレスに直接転送されたトークンは、コントラクトにハンドラーがなければサイレントに消滅していました。ERC-20上に構築されたあらゆる決済プラットフォームはそのリスクを引き継いでいました (<a href="https://eips.ethereum.org/EIPS/eip-20" title="EIP-20: Token Standard">Ethereum EIPs</a>)。</li>
+<li><strong>ERC-223による解決策。</strong> ERC-223は受信コントラクトに<code>tokenFallback(address, uint, bytes)</code>関数の実装を要求しました。存在しない場合、転送は原子的にリバートされました。トークンがサイレントに失われることはありませんでした (<a href="https://github.com/ethereum/EIPs/issues/223" title="ERC-223 Token Standard Proposal">Ethereum EIPs GitHub</a>)。</li>
+<li><strong>EXTCの5つのコントラクトプリミティブ。</strong> トークンアイデンティティ（名前、シンボル、18桁精度）、固定供給量、ERC-223準拠転送、マルチシグネチャ企業送金、ブロック高タイムロック定期注文。</li>
+<li><strong>担保ローンメカニズム。</strong> 借り手はEXTCトークンをコントラクトのエスクローに預け、コントラクトは担保受領時に即座に融資額を原子的にリリースしました。引受審査の遅延も信用委員会の承認も不要でした。</li>
+<li><strong>実験がEthereumの限界について明らかにしたこと。</strong> 2018年1月のピーク時、メインネットのスループット約15 TPS、ガスコスト$0.10–$1.00/取引という状況では、送金規模のボリュームを処理する決済ネットワークでさえ、Layer-2インフラなしにパブリックEthereumで経済的・技術的に実現不可能でした。</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="erc-20">設計上の問題：なぜERC-20は不十分だったのか <a class="heading-anchor" href="#erc-20" aria-label="リンク先 設計上の問題：なぜERC-20は不十分だったのか">#</a></h2>
+<p>2015年に提案され、Ethereum改善提案20として正式化されたERC-20標準は、2017–2018年のICOブームを支えた標準的なファンジブルトークンインターフェースを定義しました。その6つのコア関数 — <code>totalSupply</code>、<code>balanceOf</code>、<code>transfer</code>、<code>transferFrom</code>、<code>approve</code>、<code>allowance</code> — は、単純なトークン発行と交換には十分でした。</p>
+<p>しかし決済プラットフォームにとって、ERC-20には本番環境で致命的な欠陥がありました。<code>transfer(address _to, uint256 _value)</code>関数は、受信コントラクト内のコードを起動することなく、コントラクトアドレスを含む任意のアドレスにトークンを移動させました。受信ERC-20転送を追跡するよう特別にプログラムされていないコントラクトは、それを検出する方法がありませんでした。この方法で送られたトークンは回収メカニズムなしに永久に閉じ込められました。</p>
+<p>Ethereumコミュニティは、このメカニズムにより2018年半ばまでに数千万ドル相当のERC-20トークンが永久に失われたと推定していました。転送がサイレントに失敗してユーザーの資金を消滅させる可能性がある決済プラットフォームを構築することは受け入れられませんでした。</p>
+<h2 id="erc-223">ERC-223の解決策：通知付き原子的転送 <a class="heading-anchor" href="#erc-223" aria-label="リンク先 ERC-223の解決策：通知付き原子的転送">#</a></h2>
+<p>Ethereum EIPsのGitHub issueトラッカーで提案されたERC-223は、トークン転送が行うべきことを変更することでサイレントロスの問題に対処しました。ERC-223では、<code>transfer(address _to, uint256 _value, bytes _data)</code>が受信アドレスにコントラクトコードが含まれているかどうかを確認しました。含まれている場合、転送は<code>_to.tokenFallback(address _from, uint256 _value, bytes _data)</code>を呼び出しました。</p>
+<p>重要な特性：受信コントラクトが<code>tokenFallback</code>を実装していない場合、転送トランザクション全体がリバートされました。送信者の残高からトークンは出て行きませんでした。トークンは閉じ込められませんでした。転送は原子的でした — 受信者のコードが実行されて完了するか、状態が変化しないまま完全に失敗するかのどちらかでした。</p>
+<p>EXTCにとって、これは次のことを意味しました：</p>
+<ul>
+<li><strong>スマートコントラクトへの支払いは設計上安全でした。</strong> エスクローコントラクト、マルチシグウォレット、融資コントラクトは、資金が不可逆的に失われるリスクなしにEXTCトークンを受け取れました。</li>
+<li><strong><code>_data</code>フィールドが豊富な支払いメタデータを可能にしました。</strong> バイトペイロードは、請求書参照、ルーティングコード、またはコンプライアンス証明を運べました — 単純なERC-20転送では伝えられない情報です。</li>
+<li><strong>ガスコストはわずかに高くなりました。</strong> <code>tokenFallback</code>の呼び出しは転送ごとに約2,000–5,000ガスを追加しましたが、2018年のガス価格では小さなオーバーヘッドでした。</li>
+</ul>
+<h2 id="extc">EXTCコントラクトのアーキテクチャ <a class="heading-anchor" href="#extc" aria-label="リンク先 EXTCコントラクトのアーキテクチャ">#</a></h2>
+<p>EXTCトークンコントラクトは、5つのモジュールを中心に構成されたSolidity実装でした：</p>
+<h3 id="1">1. トークンアイデンティティ <a class="heading-anchor" href="#1" aria-label="リンク先 1. トークンアイデンティティ">#</a></h3>
+<pre><code>string public name = &quot;Express Transaction Credits&quot;;
+string public symbol = &quot;EXTC&quot;;
+uint8 public decimals = 18;
+</code></pre>
+<p>18桁の小数点以下精度により、EXTCはサブセント精度を持ち、マイクロペイメントとマイクロローンのユースケースに必要な粒度と一致していました。シンボル<code>EXTC</code>は、トークンコントラクトに登録されたオンチェーン識別子でした。</p>
+<h3 id="2">2. 固定総供給量 <a class="heading-anchor" href="#2" aria-label="リンク先 2. 固定総供給量">#</a></h3>
+<p>総供給量はコントラクトのデプロイ時に設定され、その後のミントによって増加させることはできませんでした。この設計上の選択により、EXTCはデフレ通貨となりました：不可逆的なバーン操作によって流通から永久に除去されたトークンは、補充なしに供給量を減少させました。固定供給モデルは2018年の決済トークン設計では標準的であり、デフレ圧力は交換媒体の特徴であるというビットコイン影響を受けた仮定を反映していました。</p>
+<h3 id="3-erc-223">3. ERC-223準拠の残高と転送 <a class="heading-anchor" href="#3-erc-223" aria-label="リンク先 3. ERC-223準拠の残高と転送">#</a></h3>
+<p>コア転送関数は完全なERC-223インターフェースを実装しました。内部残高マッピングが各アドレスの保有量を追跡しました。<code>isContract(address)</code>ヘルパーは、EOA（外部所有アカウント）アドレスとコントラクトアドレスを区別し、<code>tokenFallback</code>を呼び出す必要があるかどうかを判断しました。</p>
+<h3 id="4">4. マルチシグネチャ企業送金 <a class="heading-anchor" href="#4" aria-label="リンク先 4. マルチシグネチャ企業送金">#</a></h3>
+<p>企業の決済ワークフローには共同承認が必要でした：定義された閾値を超える送金を一方的に開始できる署名者は存在しませんでした。EXTCコントラクトはN個中2個のマルチシグネチャスキームを実装しました：</p>
+<ol>
+<li>指定された開始者が受取人、金額、ノンスを指定して転送を提案しました。</li>
+<li>共同署名者がノンスを確認しました。</li>
+<li>両方の署名がオンチェーンに記録された後にのみ、転送が実行されました。</li>
+</ol>
+<p>これにより、清算所の仲介なしに承認フロー全体をオンチェーンで監査可能に維持しながら、企業アカウントの単一障害点リスクを排除しました。</p>
+<h3 id="5">5. ブロック高タイムロック定期注文 <a class="heading-anchor" href="#5" aria-label="リンク先 5. ブロック高タイムロック定期注文">#</a></h3>
+<p>定期的な支払い — 給与、サブスクリプション、ローンの定期返済 — には定期注文プリミティブが必要でした。EXTCはこれをタイムロックとして実装しました：転送レコードが<code>releaseBlock</code>パラメーターとともにコントラクトに保存されました。EthereumのブロックハイトがreleaseBlockに達するまで転送を実行できませんでした。</p>
+<p>ブロック高を時間プロキシとして使用することは2018年における実用的な選択でした。Ethereumは15秒のブロックインターバルを目標としており、ブロック高は数分の範囲内で実時間の合理的に信頼できるプロキシとなりました。絶対タイムスタンプ（<code>block.timestamp</code>）は利用可能でしたが、±900秒のウィンドウ内でマイナーによる操作が可能であり、金融コントラクトではブロック高の方が安全な参照でした。</p>
+<h2 id="section-9">担保付き即時ローンメカニズム <a class="heading-anchor" href="#section-9" aria-label="リンク先 担保付き即時ローンメカニズム">#</a></h2>
+<p>EXTCレンディングプリミティブは最も複雑なコンポーネントでした。設計：</p>
+<ol>
+<li><strong>借り手が担保を預ける。</strong> 借り手は<code>lockCollateral(uint256 _collateralAmount)</code>を呼び出し、ERC-223の<code>tokenFallback</code>を介してEXTCトークンをレンディングコントラクトのエスクローに転送しました。</li>
+<li><strong>LTV比率チェック。</strong> コントラクトは事前設定されたLTV比率（例：50%）を読み取り、預けられた担保に対する最大融資額を計算しました。</li>
+<li><strong>原子的融資実行。</strong> 担保が最低閾値を満たした場合、コントラクトは即座に融資額を借り手のアドレスに転送しました。引受審査キューなし、信用委員会なし、決済遅延なし。</li>
+<li><strong>返済と解放。</strong> 返済時 — 元本プラス固定金利 — コントラクトは担保を借り手に戻しました。<code>releaseBlock</code>までに返済に失敗すると自動清算が発動：コントラクトは担保を貸し手の指定アドレスに転送しました。</li>
+</ol>
+<p>フロー全体がコントラクトコードによって強制されました。どちらの当事者も相手を信頼したり、条件を執行するための仲介者に依存したりする必要がありませんでした。</p>
+<h2 id="section-10">実験が明らかにしたもの <a class="heading-anchor" href="#section-10" aria-label="リンク先 実験が明らかにしたもの">#</a></h2>
+<p>EXTCコントラクトのアーキテクチャは技術的に一貫していました。ERC-223はERC-20の最も深刻な安全上の欠陥を解決しました。マルチシグネチャとタイムロックのプリミティブは、実際の企業決済ワークフローに直接対応していました。担保ローンメカニズムは、担保付き融資がオンチェーンで完全に自動化され自己執行できることを実証しました。</p>
+<p>実践では2つの制約が明らかになりました：</p>
+<p><strong>ガスコスト。</strong> 2018年1月のピーク時、EthereumのガスプライスはKWei 50–100に達し、ERC-223トークン転送1回のコストは$0.50–$2.00になりました。$10–$50のマイクロペイメントや送金には、これらの手数料は法外でした。</p>
+<p><strong>スループット。</strong> 2018年初頭のEthereumメインネットのブロックガスリミットは約800万ガスでした。ERC-223転送は約50,000–80,000ガスを消費しました。したがってネットワークはブロックごとに約100–160のEXTCトークン転送を処理でき、15秒ブロックインターバルでは1秒あたり約7–11回でした。決済ネットワークの規模 — 1秒あたり数百から数千のトランザクション — は、まだ本番形態で存在しなかったLayer-2インフラなしにパブリックEthereumで達成不可能でした。</p>
+<p>これらはインフラの制約であり、EXTCの設計上の欠陥ではありませんでした。コントラクトのロジックは正しいものでした。基礎となるブロックチェーンは、金融業界規模での決済量をまだサポートできませんでした。</p>
+<h2 id="section-11">本番環境に到達したアイデア <a class="heading-anchor" href="#section-11" aria-label="リンク先 本番環境に到達したアイデア">#</a></h2>
+<p>EXTCのいくつかの設計パターンは、その後の開発によって検証されました：</p>
+<p><strong>受信者通知付き原子的トークン転送</strong> — ERC-223のコア特性 — は、通知モデルを拡張し後にDeFiレンディングプロトコルに組み込まれたERC-777（2019年）の基礎となりました。<code>tokenFallback</code>パターンは現代のDeFiアーキテクチャ全体に見られます。</p>
+<p><strong>企業送金向けマルチシグネチャ認証</strong> — 実行前に複数のオンチェーン署名を要求するパターン — はDAOのトレジャリー管理と機関投資家向けカストディソリューションの標準モデルになりました。2018年に立ち上がったGnosis Safeは、このパターンを大規模に普及させました。</p>
+<p><strong>仲介者なしの担保付き即時ローン</strong> — 担保をエスクローに預け、融資収益を原子的にリリースするメカニズム — は、Compound（2018年）やAave（2020年）などのDeFiレンディングプロトコルの基本設計です。</p>
+<p><strong>定期支払い向けブロック高タイムロック</strong> — コントラクトに将来の実行タイミングをエンコードするパターン — は、DeFiエコシステム全体でトークンのベスティングコントラクト、遅延ガバナンス提案、時間加重平均価格（TWAP）オラクル設計に現れています。</p>
+<p>EXTCの実験は本番規模に到達しませんでした。設計を実現可能にするために必要なインフラは、さらに3〜5年の熟成を必要としました。それが提起した設計上の問いは、2018年にとって正しいものでした。</p>
+<h2 id="section-12">よくある質問 <a class="heading-anchor" href="#section-12" aria-label="リンク先 よくある質問">#</a></h2>
+<p><strong>ERC-223はERC-20の欠陥を修正したにもかかわらず、なぜドミナントなトークン標準として採用されなかったのですか？</strong></p>
+<p>ERC-223は受信コントラクトに<code>tokenFallback</code>の実装を要求し、ERC-20トークン向けにすでにデプロイされた何千ものコントラクトとの後方互換性を破りました。既存のERC-20エコシステムは移行するには大きすぎました。その後の提案 — 特にERC-777とERC-1363 — は異なる互換性のトレードオフで同じ問題に対処しましたが、ERC-20はネットワーク効果とサイレントロスシナリオを回避するラップドトークンパターンの導入により、引き続き支配的でした。</p>
+<p><strong>EXTCトークンとプラットフォームはどうなりましたか？</strong></p>
+<p>EXTCは2018年のプルーフオブコンセプトおよび初期研究プロジェクトでした。EthereumのスケーラビリティとRegulatorの不確実性が明らかになるにつれて、より広いICOと決済トークン市場は2018–2019年にかけて急激に縮小しました。EXTC設計に組み込まれたアイデアは、Layer-2インフラ、より良いツール、より明確な規制フレームワークへのアクセスを持つ後のプロトコルに再浮上しました。</p>
+<p><strong>EXTCの担保ローンモデルはAaveなどの現代のDeFiプロトコルと比較してどうですか？</strong></p>
+<p>コアメカニズムは同じです：担保を預け、LTV比率に対してサイズ設定されたローンを受け取り、返済するか清算に直面します。違いは：（1）現代のDeFiプロトコルは固定比率ではなく動的LTV向けにオラクル価格フィードを使用します；（2）プール利用に応じたアルゴリズム的金利を使用します；（3）2018年のメインネットより10〜100倍低いガスコストでLayer-2ネットワーク上で動作します；（4）AaveとCompoundは正式なセキュリティ監査を経て数十億ドルの流動性を保有し、基本モデルが健全であることの実証的検証を提供しています。</p>
+<p><strong>2018年初頭のSolidityバージョンの制約は何でしたか？</strong></p>
+<p>EXTCコントラクトは、2018年初頭のドミナントバージョンであるSolidity 0.4.x向けに書かれました。Solidity 0.4は、後のバージョンで導入された多くのセキュリティ機能を欠いていました：整数オーバーフローチェック（0.8.0で自動追加）、エラーメッセージ付きの<code>require</code>/<code>revert</code>（0.4では限定的）、および明示的な関数可視性（0.4ではデフォルトでパブリック）。コントラクトはオーバーフロー対策にOpenZeppelinのSafeMathライブラリに依存していましたが、これはコンパイラがネイティブにこれを強制する前の一般的なパターンでした。</p>
+<h2 id="section-13">参照文献 <a class="heading-anchor" href="#section-13" aria-label="リンク先 参照文献">#</a></h2>
+<ul>
+<li>Ethereum Foundation, (2015). <a href="https://eips.ethereum.org/EIPS/eip-20" title="EIP-20 Token Standard">EIP-20: Token Standard ⧉</a>.</li>
+<li>Dexaran, Ethereum GitHub, (2017). <a href="https://github.com/ethereum/EIPs/issues/223" title="ERC-223 discussion">ERC-223 Token Standard Proposal ⧉</a>.</li>
+<li>OpenZeppelin, (2018). <a href="https://github.com/OpenZeppelin/openzeppelin-contracts" title="OpenZeppelin Contracts">OpenZeppelin Contracts — SafeMath ⧉</a>.</li>
+<li>Ethereum Foundation, (2014). <a href="https://ethereum.org/whitepaper" title="Ethereum Whitepaper">Ethereum Whitepaper ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">最終確認日 <time datetime="2026-05-24">2026-05-24</time>.</p>
+
+<!-- enrich-end -->
+<aside class="author-card" aria-label="著者について"><img alt="Sebastien Rousseau の肖像" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/ja/nitsuite/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">シニア・バンキング・テクノロジスト。応用AI、ISO 20022 への移行、金融サービス向けポスト量子暗号、ホールセール決済の構造変革について執筆しています。</span><span class="author-credentials">HSBC コマーシャル・アンド・インベストメント・バンク、PayPal、Barclays、Shazam、AKQA、Virgin Group にて 20 年以上の経験。 <a href="/ja/nitsuite/index.html">プロフィール全文</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最終確認日 <time datetime="2026-05-27">2026-05-27</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">関連記事</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/ja/2024-03-08-rustlogs-rust-muke-koudo-roguingu-raiburari/index.html" class="related-media" aria-label="RustLogs:Rust 向け高度ロギングライブラリ" tabindex="-1"><img alt="Banner for RustLogs (RLG)" src="https://cloudcdn.pro/api/transform?url=/stocks/images/rustlogs.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="rustlogs-rust"><a href="https://sebastienrousseau.com/ja/2024-03-08-rustlogs-rust-muke-koudo-roguingu-raiburari/index.html">RustLogs:Rust 向け高度ロギングライブラリ</a> <a class="heading-anchor" href="#rustlogs-rust" aria-label="リンク先 RustLogs:Rust 向け高度ロギングライブラリ">#</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/ja/2023-10-26-libmake-rust-raiburari-no-koodo-jenereta/index.html" class="related-media" aria-label="libmake:反復作業を削減し、高品質な Rust ライブラリを構築するコードジェネレータ" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="libmake-rust"><a href="https://sebastienrousseau.com/ja/2023-10-26-libmake-rust-raiburari-no-koodo-jenereta/index.html">libmake:反復作業を削減し、高品質な Rust ライブラリを構築するコードジェネレータ</a> <a class="heading-anchor" href="#libmake-rust" aria-label="リンク先 libmake:反復作業を削減し、高品質な Rust ライブラリを構築するコードジェネレータ">#</a></h3><p><time datetime="2023-10-26">2023-10-26</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/ja/2024-01-15-alien-studio-ai-shashin-de-aato-wo-kakushin/index.html" class="related-media" aria-label="Alien Studio:AI 写真でアートを革新" tabindex="-1"><img alt="Sunset's muse, a serene glance; beauty in stillness" src="https://cloudcdn.pro/api/transform?url=/clients/alienstudio/v1/collections/radiance/radiance-08.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="alien-studio-ai"><a href="https://sebastienrousseau.com/ja/2024-01-15-alien-studio-ai-shashin-de-aato-wo-kakushin/index.html">Alien Studio:AI 写真でアートを革新</a> <a class="heading-anchor" href="#alien-studio-ai" aria-label="リンク先 Alien Studio:AI 写真でアートを革新">#</a></h3><p><time datetime="2024-01-15">2024-01-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ja/2018-02-04-arata-na-ankouka-tsuuka-to-koukousoku-kessai-no-shourai" class="related-media" aria-label="Unveiling a New Cryptocurrency and Faster Payment Solution" tabindex="-1"><img alt="A very tall building with a lot of holes in it" src="https://cloudcdn.pro/api/transform?url=/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="unveiling-a-new-cryptocurrency-and-faster-payment-solution"><a href="https://sebastienrousseau.com/ja/2018-02-04-arata-na-ankouka-tsuuka-to-koukousoku-kessai-no-shourai">Unveiling a New Cryptocurrency and Faster Payment Solution</a> <a class="heading-anchor" href="#unveiling-a-new-cryptocurrency-and-faster-payment-solution" aria-label="リンク先 Unveiling a New Cryptocurrency and Faster Payment Solution">#</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ja/2018-01-24-erc-20-tokun-hyoujun" class="related-media" aria-label="ERC-20:世界を変えたイーサリアム・トークン・インターフェース" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="erc-20-2"><a href="https://sebastienrousseau.com/ja/2018-01-24-erc-20-tokun-hyoujun">ERC-20:世界を変えたイーサリアム・トークン・インターフェース</a> <a class="heading-anchor" href="#erc-20-2" aria-label="リンク先 ERC-20:世界を変えたイーサリアム・トークン・インターフェース">#</a></h3><p><time datetime="2018-01-24">2018-01-24</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ja/2026-05-21-tokenised-deposits-banking-services-status-2026" class="related-media" aria-label="Tokenised Deposits in 2026" tabindex="-1"><img alt="Tokenised deposit banking architecture for 2026" src="https://cloudcdn.pro/api/transform?url=/stocks/images/bit-cloud-GlqbGLCPnQ4.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="tokenised-deposits-in-2026"><a href="https://sebastienrousseau.com/ja/2026-05-21-tokenised-deposits-banking-services-status-2026">Tokenised Deposits in 2026</a> <a class="heading-anchor" href="#tokenised-deposits-in-2026" aria-label="リンク先 Tokenised Deposits in 2026">#</a></h3><p><time datetime="2026-05-21">2026-05-21</time></p></footer></article>
 </div>
-</aside><nav class="post-pagination" aria-label="記事ページネーション"><a class="post-pagination-prev" href="/ja/2018-02-04-arata-na-ankouka-tsuuka-to-koukousoku-kessai-no-shourai/"><span class="post-pagination-label">前へ</span><span class="post-pagination-title">Unveiling a new Cryptocurrency and Faster Payment Solution</span></a><a class="post-pagination-next" href="/ja/2023-09-29-pain001-de-iso-20022-junkyo-kessai-fairu-no-jidouka/"><span class="post-pagination-label">次へ</span><span class="post-pagination-title">Automating ISO 20022 Payment Files Creation with Pain001</span></a></nav></div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">出典・参考文献</h2><ol class="article-sources-list"><li><a href="https://github.com/ethereum/EIPs/issues/223" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/ethereum/EIPs/issues/223</span></a></li><li><a href="https://github.com/OpenZeppelin/openzeppelin-contracts" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/OpenZeppelin/openzeppelin-contracts</span></a></li></ol></aside><nav class="post-pagination" aria-label="記事ページネーション"><a class="post-pagination-prev" href="/ja/2018-02-04-arata-na-ankouka-tsuuka-to-koukousoku-kessai-no-shourai/"><span class="post-pagination-label">前へ</span><span class="post-pagination-title">Unveiling a new Cryptocurrency and Faster Payment Solution</span></a><a class="post-pagination-next" href="/ja/2023-09-29-pain001-de-iso-20022-junkyo-kessai-fairu-no-jidouka/"><span class="post-pagination-label">次へ</span><span class="post-pagination-title">Automating ISO 20022 Payment Files Creation with pain001</span></a></nav></div>
     </main>
 
 <!-- gen-layouts:footer-start -->
@@ -275,7 +344,7 @@
     <!-- Schema.org structured data -->
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ja"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ja"}]}</script>
 
-        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":61,"headline":"Express Transaction Credits プラットフォームの開発","description":"ブロックチェーンと暗号資産を利用した高速な国際送金プラットフォーム Express Transaction Credits の構築。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/joshua-sortino-LqKhnDzSF-8-unsplash.webp","width":"100vw","height":"100vh","caption":"夜の電子回路基板の青いライト"},"url":"https://sebastienrousseau.com/ja/2018-02-15-express-transaction-credits-puratto-foomu-no-kaihatsu/","datePublished":"2018-02-15T18:18:18+00:00","dateModified":"2026-05-11","inLanguage":"ja","keywords":"国際送金, ブロックチェーン, 暗号資産, トークン, スマートコントラクト, 決済プラットフォーム, フィンテック","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ja/2018-02-15-express-transaction-credits-puratto-foomu-no-kaihatsu/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ja"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ja/"},{"@type":"ListItem","position":3,"name":"Express Transaction Credits プラットフォームの開発","item":"https://sebastienrousseau.com/ja/2018-02-15-express-transaction-credits-puratto-foomu-no-kaihatsu/"}]}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":261,"about":{"@type":"Thing","name":"Ethereum","sameAs":["https://en.wikipedia.org/wiki/Ethereum","https://www.wikidata.org/wiki/Q21825854","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]},"headline":"The making of the Express Transaction Credits Platform","description":"2018年にEthereum ERC-223上に構築されたEXTCプラットフォームの技術的考察：トークンアーキテクチャ、マルチシグ送金、タイムロック転送、担保付き即時ローンを詳解。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp","width":"100vw","height":"100vh","caption":"巨大な白い柱"},"url":"https://sebastienrousseau.com/ja/2018-02-15-express-transaction-credits-puratto-foomu-no-kaihatsu/","datePublished":"2018-02-15T18:18:18+00:00","dateModified":"2026-05-24","inLanguage":"ja","keywords":"EXTCプラットフォーム, ERC-223, Ethereumスマートコントラクト, トークンアーキテクチャ, マルチシグネチャ, タイムロック転送, ブロックチェーン決済, 担保付きローン, 分散型金融, 2018年クリプト","articleSection":"Blockchain","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ja/2018-02-15-express-transaction-credits-puratto-foomu-no-kaihatsu/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ja"},"citation":[{"@type":"CreativeWork","url":"https://github.com/ethereum/EIPs/issues/223"},{"@type":"CreativeWork","url":"https://github.com/OpenZeppelin/openzeppelin-contracts"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ja/"},{"@type":"ListItem","position":3,"name":"The making of the Express Transaction Credits Platform","item":"https://sebastienrousseau.com/ja/2018-02-15-express-transaction-credits-puratto-foomu-no-kaihatsu/"}]}]}</script>
 <script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
   
 <!-- SSG Search Widget -->
@@ -301,5 +370,5 @@
 </div>
 <script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
 </div>
-</body>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Express Transaction Credits プラットフォームの開発","url":"https://sebastienrousseau.com/ja/2018-02-15-express-transaction-credits-puratto-foomu-no-kaihatsu/","inLanguage":"ja-JP","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"EXTCプラットフォーム, ERC-223, Ethereumスマートコントラクト, トークンアーキテクチャ, マルチシグネチャ, タイムロック転送, ブロックチェーン決済, 担保付きローン, 分散型金融, 2018年クリプト","dependencies":["Ethereum"]}</script></body>
 </html>
