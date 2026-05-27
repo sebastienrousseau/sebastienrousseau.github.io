@@ -49,7 +49,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/ja/2026-05-16-2026-saiyou-no-kuraudo-infura-aakitekucha/rss.xml"
-category: "Technology"
+category: "Finance"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "2026年クラウドアーキテクチャの設計図 — 6本の基盤柱、エージェント型ユニットエコノミクス、マルチエージェントHPCの現実、継続的トレジャリーの要請、MCPセキュリティ危機、暗号学的エージェントアイデンティティ、アルゴリズム的伝染、そしてエッジエージェント危機のためのオープンソース参照実装としてのCloudCDN。"

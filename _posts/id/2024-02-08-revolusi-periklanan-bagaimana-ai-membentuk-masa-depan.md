@@ -1,13 +1,13 @@
 ---
 title: "[ID DRAFT] Generative AI in Advertising: Amazon Rufus & Meta"
-subtitle: "How AI Transforms Consumer Interactions and Advertising Dynamics"
-description: "Explore how AI transforms advertising with insights on Amazon's Rufus and Meta's latest developments. Discover the impact on consumer engagement"
+subtitle: "Bagaimana AI Mengubah Interaksi Konsumen dan Dinamika Periklanan"
+description: "Jelajahi bagaimana AI mengubah periklanan melalui wawasan tentang Amazon Rufus dan perkembangan terbaru Meta. Temukan dampaknya terhadap keterlibatan konsumen."
 date: "Feb 08, 2024"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/stocks/images/advertising-ai.webp"
-banner_alt: "A robotic woman with butterflies and flowers"
-keywords: "AI in advertising, Amazon Rufus, Meta AI tools, consumer targeting, advertising technology, AI chatbots, digital marketing trends, AI analytics, creative AI, ad campaign optimization"
+banner_alt: "Seorang wanita robot dikelilingi kupu-kupu dan bunga"
+keywords: "AI dalam periklanan, Amazon Rufus, alat Meta AI, penargetan konsumen, teknologi periklanan, chatbot AI, tren pemasaran digital, analitik AI, AI kreatif, optimasi kampanye iklan"
 ---
 
 ![A robotic woman with butterflies and flowers](https://cloudcdn.pro/stocks/images/advertising-ai.webp).class=\"img-fluid clearfix\"

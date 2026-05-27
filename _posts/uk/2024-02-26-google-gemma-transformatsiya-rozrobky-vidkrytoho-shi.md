@@ -1,13 +1,13 @@
 ---
 title: "[UK DRAFT] Google Gemma AI: Transforming Open-Source AI Development"
-subtitle: "An Inside Look at Capabilities, Open Source Contributions, and What's Ahead"
-description: "Explore Google's Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use."
+subtitle: "Детальний погляд на можливості, внески у відкритий код та перспективи розвитку"
+description: "Досліджуйте модель ШІ Gemma від Google: проєкт з відкритим кодом, що пропонує етичні рішення ШІ для особистого та корпоративного використання."
 date: "Feb 26, 2024"
 language: "uk-UA"
 locale: "uk_UA"
 banner: "https://cloudcdn.pro/stocks/images/ai-ship.webp"
-banner_alt: "Futuristic blue spaceship with neon lights"
-keywords: "Google Gemma AI, open-source AI model, Gemma technical architecture, Gemma 2B 7B, ethical AI, AI integration macOS, AI enterprise solutions, conversational AI, data analysis AI, AI for edge devices"
+banner_alt: "Футуристичний синій космічний корабель із неоновим підсвічуванням"
+keywords: "Google Gemma AI, модель ШІ з відкритим кодом, технічна архітектура Gemma, Gemma 2B 7B, етичний ШІ, інтеграція AI macOS, корпоративні рішення AI, розмовний AI, аналіз даних AI, AI для edge-пристроїв"
 ---
 
 ![Futuristic blue spaceship with neon lights](https://cloudcdn.pro/stocks/images/ai-ship.webp).class=\"img-fluid clearfix\"

@@ -1,13 +1,13 @@
 ---
 title: "[UK DRAFT] AI Trends 2024: Insights and Predictions for the Future"
-subtitle: "A Pivotal Year for Tech, Society, and Ethical Evolution"
-description: "AI trends for 2024: generative AI in finance, multimodal models, on-device LLMs and the shifts that will reshape banking and product engineering."
+subtitle: "Переломний Рік для Технологій, Суспільства та Етичної Еволюції"
+description: "Тенденції ШІ 2024: генеративний ШІ у фінансах, мультимодальні моделі, LLM на пристроях та зміни, що переформують банківську справу й розробку продуктів."
 date: "Jan 08, 2024"
 language: "uk-UA"
 locale: "uk_UA"
 banner: "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp"
-banner_alt: "Drone View of London"
-keywords: "AI trends 2024, generative AI, AI in education, AI cybersecurity, AI finance, AI content creation, AI space exploration, ethical AI, AI in retail, AI analytics"
+banner_alt: "Вид з дрона на Лондон"
+keywords: "тенденції ШІ 2024, генеративний ШІ, ШІ в освіті, кібербезпека ШІ, ШІ у фінансах, створення контенту ШІ, дослідження космосу ШІ, етичний ШІ, ШІ в роздрібній торгівлі, аналітика ШІ"
 ---
 
 ![Drone View of London](https://cloudcdn.pro/stocks/images/drone-view-of-london.webp).class=\"img-fluid clearfix\"

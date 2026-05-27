@@ -1,13 +1,13 @@
 ---
 title: "Revolutionising Finance with AI-Enhanced Quantum Algorithms"
-subtitle: "Unleashing the Power of Quantum for Financial Innovation: AI at the Heart of Next-Gen Algorithms"
-description: "Explore the transformative role of AI in quantum algorithms for finance, with a focus on their mathematical intricacies and banking applications."
+subtitle: "আর্থিক উদ্ভাবনের জন্য Quantum-এর শক্তি উন্মোচন: পরবর্তী প্রজন্মের Algorithm-এর কেন্দ্রে AI"
+description: "অর্থায়নে কোয়ান্টাম অ্যালগরিদমে AI-এর রূপান্তরকারী ভূমিকা অন্বেষণ করুন, তাদের গাণিতিক জটিলতা এবং ব্যাংকিং প্রয়োগের উপর মনোযোগ দিয়ে।"
 date: "Dec 25, 2023"
 language: "bn-BD"
 locale: "bn_BD"
 banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
-banner_alt: "Revolutionising Finance with AI-Enhanced Quantum Algorithms"
-keywords: "Quantum Computing, AI Algorithms, Financial Mathematics, Banking Technology, Risk Management, Algorithm Design, Data Analysis, Investment Strategies, Quantum Finance, Machine Learning"
+banner_alt: "AI-উন্নত Quantum অ্যালগরিদম দিয়ে অর্থায়নে বিপ্লব"
+keywords: "Quantum Computing, AI Algorithms, আর্থিক গণিত, Banking Technology, ঝুঁকি ব্যবস্থাপনা, Algorithm Design, ডেটা বিশ্লেষণ, বিনিয়োগ কৌশল, Quantum Finance, Machine Learning"
 ---
 
 ![Revolutionising Finance with AI-Enhanced Quantum Algorithms](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp).class="img-fluid clearfix"

@@ -1,13 +1,13 @@
 ---
 title: "[ID DRAFT] Le Chat by Mistral AI: Multilingual Conversational AI"
-subtitle: "Redefining User Interaction Across Languages"
-description: "Meet Mistral AI's new multilingual Assistant. An advanced AI that can understand and respond in multiple languages, all in one conversation and in real-time."
+subtitle: "Mendefinisikan Ulang Interaksi Pengguna Lintas Bahasa"
+description: "Kenali Asisten multibahasa baru dari Mistral AI. AI canggih yang dapat memahami dan merespons dalam berbagai bahasa, semua dalam satu percakapan dan secara real-time."
 date: "Mar 04, 2024"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp"
-banner_alt: "Colourful, abstract digital art of a cat"
-keywords: "Le Chat AI, Mistral AI chatbot, Le Chat virtual assistant, Mistral AI language understanding, Le Chat AI customer service, Mistral AI enterprise solutions, Le Chat AI customisation, Mistral AI multilingual support, Le Chat AI-powered communication, Mistral AI AI-driven business solutions"
+banner_alt: "Seni digital abstrak berwarna-warni dari seekor kucing"
+keywords: "Le Chat AI, Mistral AI chatbot, Le Chat asisten virtual, Mistral AI pemahaman bahasa, Le Chat AI layanan pelanggan, Mistral AI solusi enterprise, Le Chat AI kustomisasi, Mistral AI dukungan multibahasa, Le Chat AI komunikasi berbasis AI, Mistral AI solusi bisnis berbasis AI"
 ---
 
 ![Colourful, abstract digital art of a cat](https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp).class=\"img-fluid clearfix\"

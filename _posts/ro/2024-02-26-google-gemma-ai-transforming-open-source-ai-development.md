@@ -1,13 +1,13 @@
 ---
 title: "Google Gemma AI: Transforming Open-Source AI Development"
-subtitle: "An Inside Look at Capabilities, Open Source Contributions, and What's Ahead"
-description: "Explore Google's Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use."
+subtitle: "O privire detaliată asupra capabilităților, contribuțiilor open-source și direcțiilor viitoare"
+description: "Explorați modelul AI Gemma de la Google: un proiect open-source care oferă soluții AI etice atât pentru uz personal, cât și pentru întreprinderi."
 date: "Feb 26, 2024"
 language: "ro-RO"
 locale: "ro_RO"
 banner: "https://cloudcdn.pro/stocks/images/ai-ship.webp"
-banner_alt: "Futuristic blue spaceship with neon lights"
-keywords: "Google Gemma AI, open-source AI model, Gemma technical architecture, Gemma 2B 7B, ethical AI, AI integration macOS, AI enterprise solutions, conversational AI, data analysis AI, AI for edge devices"
+banner_alt: "Navă spațială futuristă albastră cu lumini neon"
+keywords: "Google Gemma AI, model AI open-source, arhitectură tehnică Gemma, Gemma 2B 7B, AI etic, integrare AI macOS, soluții AI enterprise, AI conversațional, analiză date AI, AI pentru dispozitive edge"
 ---
 
 ![Futuristic blue spaceship with neon lights](https://cloudcdn.pro/stocks/images/ai-ship.webp).class="img-fluid clearfix"

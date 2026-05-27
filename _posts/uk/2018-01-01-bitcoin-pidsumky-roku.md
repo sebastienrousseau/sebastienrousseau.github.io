@@ -1,13 +1,13 @@
 ---
 title: "[UK DRAFT] Bitcoin: A Year In Review of the First Cryptocurrency"
-subtitle: "Bitcoin, cryptocurrency, and the technology reshaping financial markets."
-description: "Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online."
+subtitle: "Bitcoin, криптовалюта та технологія, що кардинально змінює фінансові ринки."
+description: "Bitcoin: однорангова електронна платіжна система (P2P ECS), яка має потенціал революціонізувати спосіб онлайн-транзакцій між людьми."
 date: "Jan 01, 2018"
 language: "uk-UA"
 locale: "uk_UA"
 banner: "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp"
-banner_alt: "A pile of gold and silver coins sitting on top of a table"
-keywords: "bitcoin, cryptocurrency, blockchain, decentralized finance, digital currency, peer-to-peer payments, digital gold, programmable money, future of money, financial revolution"
+banner_alt: "Купа золотих і срібних монет, що лежать на столі"
+keywords: "bitcoin, cryptocurrency, blockchain, децентралізовані фінанси, цифрова валюта, однорангові платежі, цифрове золото, програмовані гроші, майбутнє грошей, фінансова революція"
 ---
 
 ![A pile of gold and silver coins sitting on top of a table](https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp).class=\"img-fluid clearfix\"

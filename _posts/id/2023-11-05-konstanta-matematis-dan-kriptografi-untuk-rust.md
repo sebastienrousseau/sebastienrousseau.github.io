@@ -1,13 +1,13 @@
 ---
 title: "[ID DRAFT] Mathematical and Cryptographic Constants for Rust Security"
-subtitle: "Vetted mathematical and cryptographic constants for memory-safe Rust security."
-description: "Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code security."
+subtitle: "Konstanta matematika dan kriptografi terverifikasi untuk keamanan Rust yang aman memori."
+description: "Lindungi integritas kode dengan konstanta matematika dan kriptografi yang telah diverifikasi secara cermat, memperkuat keamanan memori dan konkurensi demi keamanan kode yang lebih tinggi."
 date: "Nov 05, 2023"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp"
-banner_alt: "Mathematics computation"
-keywords: "mathematical constants, cryptographic constants, Rust security, secure communication, encryption, RSA, elliptic curve cryptography, Common (CMN) library, Rust applications, mathematical computations"
+banner_alt: "Komputasi matematika"
+keywords: "konstanta matematika, konstanta kriptografi, Rust security, komunikasi aman, enkripsi, RSA, elliptic curve cryptography, Common (CMN) library, aplikasi Rust, komputasi matematika"
 ---
 
 ![Mathematics computation](https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp).class=\"img-fluid clearfix\"

@@ -1,13 +1,13 @@
 ---
 title: "Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded"
-subtitle: "Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two products that are not, legally, stablecoins — and that can pay yield, in a wallet, on a public blockchain."
-description: "Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two SEC registrations for products that solve this constraint by being regulated as money market funds rather than stablecoins — while behaving, in the wallet, like yield-bearing dollars. A close reading of BRSRV, BSTBL, and the OCC rulemaking they respond to."
+subtitle: "Dokar GENIUS ba ta barin stablecoins su biya riba. A ranar 8 ga Mayu 2026, BlackRock ta shigar da kayayyaki biyu waɗanda ba stablecoins ba bisa doka — kuma za su iya biya riba a cikin wallet akan blockchain na jama'a."
+description: "Dokar GENIUS ba ta barin stablecoins su biya riba. BlackRock ta shigar da BRSRV da BSTBL a 8 Mayu 2026 a matsayin kuɗin kasuwannin SEC, ba stablecoins ba. Nazarin OCC da sauran dokoki."
 date: "May 15, 2026"
 language: "ha-NG"
 locale: "ha_NG"
 banner: "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp"
-banner_alt: "BlackRock tokenised money market fund architecture diagram — BRSRV OnChain Shares and BSTBL ERC-20 share class with GENIUS Act reserve flows"
-keywords: "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoin, tokenised money market fund, OnChain Shares, Securitize"
+banner_alt: "Zanen gine-ginen tokenised money market fund na BlackRock — BRSRV OnChain Shares da BSTBL ERC-20 share class tare da GENIUS Act reserve flows"
+keywords: "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoin, kuɗin kasuwannin da aka tokenize, OnChain Shares, Securitize"
 ---
 
 ![BlackRock tokenised money market fund architecture diagram — BRSRV OnChain Shares and BSTBL ERC-20 share class with GENIUS Act reserve flows](https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp).class="img-fluid clearfix"

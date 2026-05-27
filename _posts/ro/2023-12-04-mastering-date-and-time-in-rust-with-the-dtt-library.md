@@ -1,13 +1,13 @@
 ---
 title: "Efficient Date and Time Management with DateTime (DTT)"
-subtitle: "DTT, the high-precision Rust library for date and time operations."
-description: "DateTime (DTT) is a Rust library for parsing, validating, manipulating and formatting dates and times — high precision, broad functionality."
+subtitle: "DTT, biblioteca Rust de înaltă precizie pentru operații cu date și ore."
+description: "DateTime (DTT) este o bibliotecă Rust pentru parsarea, validarea, manipularea și formatarea datelor și orelor — precizie ridicată, funcționalitate extinsă."
 date: "Dec 04, 2023"
 language: "ro-RO"
 locale: "ro_RO"
 banner: "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg"
-banner_alt: "DateTime (DTT), Your Essential Toolkit for Date and Time Operations."
-keywords: "DateTime, DTT, Rust library, parsing, validating, manipulating, formatting, dates, times"
+banner_alt: "DateTime (DTT), Trusa Dumneavoastră Esențială pentru Operații cu Date și Ore."
+keywords: "DateTime, DTT, bibliotecă Rust, parsare, validare, manipulare, formatare, date, ore"
 ---
 
 ![DateTime (DTT), Your Essential Toolkit for Date and Time Operations.](https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg).class="img-fluid clearfix"

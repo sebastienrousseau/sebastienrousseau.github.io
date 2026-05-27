@@ -1,13 +1,13 @@
 ---
 title: "EU's AI Act: Pioneering Ethical AI Regulation Worldwide"
-subtitle: "Navigating the Future of AI with the EU's Groundbreaking Legal Framework"
-description: "The EU AI Act sets the first comprehensive framework for ethical, risk-tiered AI regulation worldwide. What changes for banks, vendors and high-risk systems."
+subtitle: "Ìmọ ọ̀nà sí ọjọ́ iwájú AI pẹ̀lú Ilana Òfin Aṣáájú-ọ̀nà ti EU"
+description: "EU AI Act ṣe ilana àkọ́kọ́ tí ó gbòde káríayé fún ìlànà AI tó ní ìpele ewu. Ohun tó yí padà fún àwọn bánkì, àwọn olùpèsè, àti àwọn ètò ewu gíga."
 date: "Feb 13, 2024"
 language: "yo-NG"
 locale: "yo_NG"
 banner: "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp"
-banner_alt: "A person sitting on black bench reading newspaper"
-keywords: "EU AI Act, Artificial Intelligence regulation, Ethical AI framework, AI risk management, AI innovation, AI transparency, AI consumer rights, AI governance, AI standards, AI ethics"
+banner_alt: "Ènìyàn kan tó jókòó lórí ìjókòó dúdú tó ń ka ìwé ìròyìn"
+keywords: "EU AI Act, ìlànà Artificial Intelligence, ilana AI tó ní ìwà rere, ìṣàkóso ewu AI, iminira AI, ṣíṣí AI, ẹ̀tọ́ àwọn olùra AI, ìṣàkóso AI, àwọn ìpele AI, ìwà rere AI"
 ---
 
 ![A person sitting on black bench reading newspaper](https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp).class="img-fluid clearfix"

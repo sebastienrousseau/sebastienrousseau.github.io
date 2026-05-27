@@ -1,13 +1,13 @@
 ---
 title: "[ID DRAFT] Quantum Lattice Crypto: Bug in Chen's LWE Attack"
-subtitle: "Peer Review Reveals Flaw in Chen's Groundbreaking Work"
-description: "A bug in Yilei Chen's quantum LWE algorithm temporarily reprieves lattice-based cryptography. What it means for CRYSTALS-Kyber, Dilithium and the PQC roadmap."
+subtitle: "Tinjauan Sejawat Mengungkap Cacat dalam Karya Terobosan Chen"
+description: "Bug dalam algoritma quantum LWE milik Yilei Chen memberikan jeda sementara bagi kriptografi berbasis kisi. Apa artinya bagi CRYSTALS-Kyber, Dilithium, dan peta jalan PQC."
 date: "Apr 22, 2024"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
-banner_alt: "Image generated using MidJourney - A Network of digital nodes in red and blue hues."
-keywords: "post-quantum cryptography, NIST, PQC standardisation, Yilei Chen, quantum algorithm, lattice-based cryptography, LWE problem, CRYSTALS-KYBER, CRYSTALS-Dilithium, quantum-resistant cryptography"
+banner_alt: "Gambar yang dihasilkan menggunakan MidJourney — jaringan simpul digital dalam nuansa merah dan biru."
+keywords: "kriptografi pasca-kuantum, NIST, standardisasi PQC, Yilei Chen, algoritma kuantum, kriptografi berbasis kisi, masalah LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, kriptografi tahan kuantum"
 ---
 
 ![Image generated using MidJourney - A Network of digital nodes in red and blue hues.](https://cloudcdn.pro/stocks/images/digital-nodes.webp).class=\"img-fluid clearfix\"

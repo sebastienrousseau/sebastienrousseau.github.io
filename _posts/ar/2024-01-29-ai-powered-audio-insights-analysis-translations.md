@@ -1,146 +1,283 @@
 ---
-title: "تحليل الكلام والترجمة والرؤى المدعومة بالذكاء الاصطناعي"
-subtitle: "إحداث ثورة في معالجة البيانات الصوتية بمنصة Azure AI"
-description: "كيف يُحوِّل Audio Analyser، المدعوم بـ Azure AI، تحويل speech-to-text وتحليل النصوص والترجمات إلى رؤى قابلة للتنفيذ."
-date: "Jan 29, 2024"
-language: "ar"
-locale: "ar_SA"
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+banner_alt: "مكتب مؤسسي حديث وبسيط"
+banner_height: "100vh"
+banner_width: "100vw"
 banner: "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp"
-banner_alt: "مكتب شركة عصري وبسيط"
-keywords: "audio analyser, azure ai, speech-to-text, تحليل البيانات الصوتية, تحليل النصوص, ترجمات الذكاء الاصطناعي, رؤى صوتية, التفريغ الآلي, معالجة البيانات الصوتية, تعلم الآلة"
+cdn: "https://cloudcdn.pro/clients"
+changefreq: "weekly"
+charset: "UTF-8"
+cname: "sebastienrousseau.com"
+copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
+date: "Jan 29, 2024"
+description: "يستخدم Audio Analyser نماذج التعرف على الكلام العصبية من Azure Cognitive Services وتحليلات النصوص NLP وCherryPy لتحويل التسجيلات الصوتية إلى نصوص قابلة للبحث مع درجات المشاعر واستخراج الكلمات المفتاحية والترجمات متعددة اللغات."
+format-detection: "telephone=no"
+hreflang: "ar"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/ar/2024-01-29-ai-powered-audio-insights-analysis-translations"
+image_alt: "A black and white photo of Sebastien Rousseau"
+image_height: "161"
+image_width: "161"
+image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+keywords: "Azure Cognitive Services، التعرف على الكلام، النموذج الصوتي العصبي، Azure Text Analytics، معالجة اللغة الطبيعية، تحليل المشاعر، CherryPy، واجهة برمجة النسخ الدفعي، ASR متعدد اللغات، Azure Translator، نسخ الصوت، معالجة الصوت بـ Python"
+language: "ar"
+layout: "report"
+locale: "ar_AR"
+logo_alt: "Logo for Sebastien Rousseau"
+logo_height: "44"
+logo_width: "44"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+menu: "active"
+measurementID: "G-169G4ET5HQ"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/ar/2024-01-29-ai-powered-audio-insights-analysis-translations"
+rating: "general"
+referrer: "no-referrer"
+revisit-after: "7 days"
+robots: "index, follow"
+short_name: "sebastienrousseau"
+subtitle: "معمارية وخط أنابيب أداة تحليل الكلام المدعومة بـ Azure"
+tags: "Azure، CherryPy، SpeechToText، NLP، تحليل المشاعر، النسخ الدفعي، AudioAnalyser، NeuralASR، TextAnalytics، متعدد اللغات"
+theme-color: "0, 67, 165"
+title: "Audio Analyser: Azure Speech, NLP, and Translation Pipeline"
+url: "https://sebastienrousseau.com/ar/2024-01-29-ai-powered-audio-insights-analysis-translations"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+news_genres: "Blog"
+news_keywords: "Azure Cognitive Services, speech-to-text, neural acoustic model, Azure Text Analytics, NLP, sentiment analysis, CherryPy, batch transcription, multilingual ASR, Azure Translator"
+news_language: "en"
+news_image_loc: "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp"
+news_loc: "https://sebastienrousseau.com/2024-01-29-ai-powered-audio-insights-analysis-translations/index.html"
+news_publication_date: "Mon, 29 Jan 2024 05:06:06 +0000"
+news_publication_name: "sebastienrousseau.com"
+news_title: "Audio Analyser: Azure Speech, NLP, and Translation Pipeline"
+atom_link: "https://sebastienrousseau.com/2024-01-29-ai-powered-audio-insights-analysis-translations/rss.xml"
+category: "AI"
+docs: "https://validator.w3.org/feed/docs/rss2.html"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
+item_description: "يحوّل Audio Analyser التسجيلات الصوتية إلى نصوص منظمة مع درجات المشاعر واستخراج الكلمات المفتاحية والترجمات متعددة اللغات عبر Azure Cognitive Services."
+item_guid: "https://sebastienrousseau.com/2024-01-29-ai-powered-audio-insights-analysis-translations/rss.xml"
+item_link: "https://sebastienrousseau.com/2024-01-29-ai-powered-audio-insights-analysis-translations/rss.xml"
+item_pub_date: "Mon, 29 Jan 2024 05:06:06 +0000"
+item_title: "Audio Analyser: خط أنابيب Azure Speech وNLP والترجمة"
+last_build_date: "Mon, 29 Jan 2024 05:06:06 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+pub_date: "Mon, 29 Jan 2024 05:06:06 +0000"
+ttl: "60"
+type: "website"
+webmaster: "contact@sebastienrousseau.com"
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "محلل الصوت"
+apple-touch-fullscreen: "yes"
+msapplication-navbutton-color: "0, 67, 165"
+twitter_card: "summary"
+twitter_creator: "@wwdseb"
+twitter_description: "يستخدم Audio Analyser Azure Cognitive Services وText Analytics NLP وCherryPy لتحويل التسجيلات الصوتية إلى نصوص قابلة للبحث مع تحليل المشاعر والترجمات."
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image_alt: "Logo of Sebastien Rousseau"
+twitter_site: "@wwdseb"
+twitter_title: "Audio Analyser: Azure Speech وNLP والترجمة"
+twitter_url: "https://sebastienrousseau.com/2024-01-29-ai-powered-audio-insights-analysis-translations/index.html"
+author_website: "https://sebastienrousseau.com/2024-01-29-ai-powered-audio-insights-analysis-translations/index.html"
+author_twitter: "@wwdseb"
+author_location: "London, UK"
+thanks: "Thanks for reading!"
+site_last_updated: "2024-01-29"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_software: "Static Site Generator, Rust"
+excerpt: "Audio Analyser أداة Python مفتوحة المصدر تربط Azure Cognitive Services للتعرف على الكلام وText Analytics NLP وTranslator في تطبيق ويب CherryPy واحد — تحوّل التسجيلات الصوتية إلى نصوص منظمة ودرجات مشاعر وترجمات متعددة اللغات دون تقييد بالغيوم بما يتجاوز Azure SDK."
+last_reviewed: "2026-05-24"
 ---
 
-## تحليل الكلام والترجمة والرؤى المدعومة بالذكاء الاصطناعي
+<!-- lead-start -->
+<aside class="post-lead" aria-label="ملخص المقالة">
+<p class="post-lead-tldr"><strong>ملخص.</strong> Audio Analyser هو تطبيق Python مفتوح المصدر يربط خدمات Azure Cognitive Services — تحويل الكلام إلى نص بالدُفعات، وNLP من Text Analytics، والمترجم — عبر واجهة ويب خفيفة الوزن من CherryPy، مما ينتج نصوصًا مُهيكلة ودرجات المشاعر والترجمات من ملفات الصوت بصيغ WAV أو MP3 أو OGG أو FLAC.</p>
+<p class="post-lead-heading"><strong>أبرز النقاط</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>محرك ASR العصبي.</strong> تستخدم واجهة Azure Batch Transcription API نموذجًا صوتيًا هجينًا من CTC/انتباه يحقق معدلات خطأ في الكلمات أقل من 6% على الكلام البثي، ويدعم تمييز المتحدثين (وضع علامات على المتحدثين) عبر علامة JSON واحدة.</li>
+  <li><strong>NLP بطلب واحد.</strong> ترجع واجهة Azure Text Analytics API العبارات الرئيسية والكيانات المُسمَّاة ودرجات المشاعر (إيجابية / سلبية / محايدة / مختلطة مع الثقة لكل تصنيف) واكتشاف اللغة في طلب HTTP واحد.</li>
+  <li><strong>مضيف خفيف الوزن.</strong> تعالج CherryPy ذات البصمة البالغة ~3 ميغابايت رفع الملفات واستطلاع النسخ غير المتزامن وعرض القوالب في عملية Python واحدة — دون الحاجة إلى تنسيق الحاويات.</li>
+  <li><strong>ترجمة بـ135 لغة.</strong> تغطي ترجمة Azure الآلية العصبية 135 لغة ولهجة، وتُطبَّق بعد النسخ مع الكشف التلقائي عن اللغة دون الحاجة إلى تحديد لغة المصدر.</li>
+</ul>
+<p class="post-lead-related"><strong>قراءة ذات صلة:</strong> <a href="https://sebastienrousseau.com/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/">الذكاء الاصطناعي التوليدي في الإعلانات: Amazon Rufus وMeta</a>، <a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/">قانون الذكاء الاصطناعي الأوروبي: رائد تنظيم الذكاء الاصطناعي الأخلاقي عالميًا</a>، <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/">هندسة التوجيهات للذكاء الاصطناعي 2024: تقنيات فعّالة</a>.</p>
+</aside>
+<!-- lead-end -->
 
-[**Audio Analyser ⧉**][00]، المعتمد على Microsoft Azure AI Platform، يُعيد تعريف مشهد تحليل البيانات الصوتية. تُقدِّم هذه الأداة تحويلاً متقدماً من speech-to-text، وتحليلاً شاملاً للنصوص، ورؤى قابلة للتنفيذ، وترجمات سلسة، فتُوفِّر تحليلات تفصيلية دقيقة من البيانات الصوتية بكفاءة. وهي أصل أساسي لقطاعات مثل أبحاث السوق، ومراكز الاتصال، وخدمة العملاء، والرعاية الصحية، والمصارف والتمويل، إذ تُحوِّل طريقة تفسيرنا للمعلومات الصوتية والاستفادة منها.
+> **الملخص التنفيذي / أبرز النقاط**
+>
+> - تقبل **واجهة Azure Batch Transcription API** ملفات صوتية تصل مدتها إلى 2.5 ساعة (WAV/MP3/OGG/FLAC)، وتعالجها بشكل غير متزامن، وترجع مصفوفة JSON من `recognizedPhrases` تحتوي على مرشحات `nBest` لكل عبارة ودرجات الثقة ومخرجات التطبيع العكسي للنص (ITN) وتمييز المتحدثين الاختياري — دون الحاجة إلى اتصال بثّ (Microsoft Azure، 2024).
+> - قلّلت **نماذج الصوتيات العصبية من Microsoft** معدل خطأ الكلمات بنسبة تقارب 50% مقارنةً بخطوط الأساس القديمة لنماذج ماركوف المخفية (HMM) على معيار Switchboard للمحادثة، لتصل إلى مستوى مساوٍ للمُنسِّخين البشريين المحترفين على تلك البيانات بمعدل WER يبلغ ~5.1% (Xiong وآخرون، Microsoft Research، تحديث 2016/2021).
+> - تعالج **Azure Text Analytics** (المدرجة الآن ضمن Azure AI Language) نص النسخة من خلال استخراج العبارات الرئيسية، والتعرف على الكيانات المُسمَّاة (NER)، وتحليل المشاعر مع استخراج الآراء، واكتشاف اللغة — كل ذلك في استدعاء واحد لـ `analyze_sentiment` أو `begin_analyze_actions` باستخدام Python SDK.
+> - توفر **CherryPy** طبقة الويب: توجيه URL، ومعالجة رفع الملفات متعدد الأجزاء، وإدارة الجلسات، وعرض قوالب Jinja2 في عملية Python بسيطة تعمل على جهاز افتراضي واحد منخفض التكلفة دون أي عبء تنسيق.
+> - تكتشف **Azure Translator NMT** لغة المصدر تلقائيًا وتترجم النصوص إلى أي من 135 لغة هدف، مما يتيح إجراء تحليل NLP في المراحل اللاحقة على كل من النص الأصلي والمترجم ضمن نفس تشغيل خط الأنابيب.
 
-في السوق المدفوع بالتجربة اليوم، أصبحت القدرة على تحليل البيانات الصوتية للعملاء بسرعة — من المكالمات والمحادثات والبريد الصوتي وغيرها — أمراً جوهرياً لتقديم دعم استثنائي. ومع تنامي التوقعات، تُحدث تحليلات الكلام الأصلية مثل **Audio Analyser** فارقاً للشركات التي تسعى إلى الاحتفاظ بعملائها ورعاية علاقات دائمة.
+[**Audio Analyser ⧉**][00] هو تطبيق Python مفتوح المصدر يربط ثلاثة خدمات من Azure Cognitive Services في سير عمل واحد: Batch Transcription لتحويل الكلام إلى نص، وAzure AI Language (Text Analytics) لمعالجة اللغة الطبيعية، وAzure Translator للمخرجات متعددة اللغات. تُقدَّم واجهة الويب عبر CherryPy، ويمكن حفظ النتائج بصيغ JSON أو نص عادي أو قاعدة بيانات SQLite محلية.
 
-مدعوماً بـ Microsoft Azure AI، يتجاوز **Audio Analyser** التفريغ الأساسي ليكشف عن رؤى قابلة للتنفيذ من كل تفاعل خدمي. تُعالج قدراته المتقدمة في معالجة اللغة الطبيعية أكثر من 100 لغة فورياً، وتُحلِّل النصوص للمشاعر والنوايا، وتُولِّد مؤشرات مؤثرة حول نقاط التواصل الحرجة التي يُشير إليها العملاء كثيراً.
+تصف هذه المقالة البنية التقنية لكل مرحلة في خط الأنابيب، وعقود Azure API، وخيارات التصميم التي اتُّخذت في طبقة CherryPy.
 
-يستخدم قادة الصناعة بالفعل هذا النوع من تحليلات الكلام الاستباقية لتحقيق تحسينات ملموسة. أزمنة معالجة أقصر، ومعدلات حل أعلى، والأهم — درجات رضا أعلى للعملاء. يُمكِّن **Audio Analyser** الشركات ليس فقط من مواكبة الإيقاع، بل من وضع معايير جديدة لإشراك العملاء. فبرصد الاحتياجات بسرعة أكبر، وحل المشكلات بذكاء أعلى، ورفع مستوى التفاعلات، يُساهم في بناء سفراء علامة تجارية يبقون على المدى الطويل.
+## كيف يعمل Audio Analyser: نظرة عامة على البنية
 
-## رؤية
+يتكون خط الأنابيب من خمس مراحل منفصلة:
 
-### الإمكانات غير المستغلة للبيانات الصوتية
+1. **الرفع** — يقدّم المستخدم ملف صوتي عبر واجهة ويب CherryPy. تخزّن CherryPy الملف في دليل مؤقت وترجع معرّف المهمة.
+2. **النسخ** — يرسل Audio Analyser الملف إلى Azure Batch Transcription REST API. نظرًا لأن النسخ الدفعي غير متزامن، تستطلع التطبيق نقطة نهاية حالة المهمة على فترات وتنتظر حالة `Succeeded` قبل المتابعة.
+3. **NLP** — يُمرَّر نص النسخة الخام إلى Azure AI Language لاستخراج العبارات الرئيسية وNER وتحليل المشاعر واكتشاف اللغة.
+4. **الترجمة** (اختياري) — إذا حُدِّدت لغة هدف، أُرسل النسخة إلى Azure Translator، وأُعيد تشغيل تحليل NLP على النص المترجم.
+5. **المخرجات** — تُكتب النتائج بالصيغة المختارة (JSON أو TXT أو SQLite) وتُعرض في واجهة ويب CherryPy.
 
-#### أهمية البيانات الصوتية في العصر الرقمي
+التبعيات الوحيدة في وقت التشغيل خارج مكتبة Python القياسية هي `azure-cognitiveservices-speech` و`azure-ai-textanalytics` و`azure-ai-translation-text` و`cherrypy`. تُقرأ جميع بيانات اعتماد Azure من متغيرات البيئة.
 
-تُهيمن البيانات الصوتية على المشهد الرقمي، ومع ذلك تظل إمكاناتها غير مستغلة إلى حد كبير. يُقدَّر أن 93% من التواصل البشري غير لفظي، يُنقل عبر النبرة والتنغيم والإشارات السمعية الأخرى. ومع تقدم قدرات الذكاء الاصطناعي، تُمثِّل البيانات الصوتية أصلاً ثميناً لكن مُهملاً. سوق التعرف الصوتي وحده في ازدهار، إذ يُتوقع أن ينمو من 4.1 مليار دولار في 2021 إلى أكثر من 14.1 مليار بحلول 2030 وفقاً لـ[أحدث منشور](https://www.meticulousresearch.com/product/speech-analytics-market-5364) من Meticulous Research®. يُشير ذلك إلى تحول جوهري نحو تسخير البيانات الصوتية أخيراً.
+## Azure Cognitive Services: محرك النسخ الدفعي
 
-يمكن للقدرات في التعرف على الكلام وتحليلات الكلام والقياسات الحيوية الصوتية ومجالات أخرى أن تُحوِّل طريقة عمل الشركات عبر القطاعات. غير أن تحليل البيانات الصوتية يظل معقداً، ويتطلب غالباً مراجعة يدوية مُستهلكة للوقت. يُمثِّل **Audio Analyser** أداة رائدة مهيأة للاستفادة من طبقة البيانات هذه قليلة الاستخدام. فبتحويله الصوت الخام بكفاءة إلى رؤى قابلة للتنفيذ، يَعِد بفتح مستويات جديدة من السرعة والدقة.
+تقبل واجهة برمجة تطبيقات النسخ الدفعي لخدمة Azure Speech (`/speechtotext/v3.0/transcriptions`) مرجعًا لملف صوتي في Azure Blob Storage وجسم JSON للتكوين. يرفع Audio Analyser الملف المحلي إلى Blob Storage باستخدام رابط SAS مُوقَّع مسبقًا، ثم يرسل مهمة النسخ.
 
-#### Audio Analyser: أداة رائدة
+الحمولة الدنيا لإرسال مهمة:
 
-ما الذي يرفع **Audio Analyser** فوق برامج تفريغ الكلام القياسية؟ يفتح دمج الذكاء الاصطناعي الرائد من Microsoft Azure قدرات تحليلية أكثر دقة بكثير. وبتسخير أحدث خوارزميات تعلم الآلة، يغوص **Audio Analyser** في أنماط الكلام — ليس فقط بتحويل الكلمات، بل باستكشاف الدقائق كالنبرة والعاطفة والمعاني الكامنة.
+```json
+{
+  "contentUrls": ["https://<account>.blob.core.windows.net/<container>/<file>.wav?<sas>"],
+  "locale": "en-US",
+  "displayName": "audio-analyser-job-001",
+  "properties": {
+    "diarizationEnabled": true,
+    "wordLevelTimestampsEnabled": true,
+    "punctuationMode": "DictatedAndAutomatic",
+    "profanityFilterMode": "Masked"
+  }
+}
+```
 
-تُتيح معالجته المتقدمة للغة الطبيعية أن يُدرك Audio Analyser الروابط اللغوية والإحالات السياقية التي قد يفوتها البشر. ومن خلال تحديد العبارات الرئيسية والمشاعر والنية وغيرها، يُولِّد رؤى أثمن بأضعاف من مجرد التفريغات. كما تَفتح قدراته في التعرف على الكلام وترجمته متعدد اللغات إمكانات للتطبيق العالمي.
+تحتوي مصفوفة `recognizedPhrases` في الاستجابة على كائن واحد لكل تعبير صوتي مُعترَف به. يتضمن كل إدخال:
 
-#### الميزات الرئيسية لـ Audio Analyser
+- `nBest[0].confidence` — رقم عائم بين 0 و1
+- `nBest[0].lexical` — الكلمات الخام كما نُطقت
+- `nBest[0].itn` — الصيغة المُطبَّعة عكسيًا (أرقام وتواريخ وعملات مُوسَّعة)
+- `nBest[0].display` — مُنسَّق للقراءة مع علامات الترقيم
+- `speaker` — معرّف المتحدث الصحيح عند تفعيل تمييز المتحدثين
 
-- **التسجيل الصوتي**: تسجيل ملفات صوتية ومحادثات بسهولة.
-- **التفريغ الفوري**: تحويل اللغة المنطوقة إلى نص بسرعة باستخدام خدمة speech-to-text من Azure.
-- **التحليل النصي المُعمَّق**: الغوص في بياناتك مع خدمة تحليل النصوص من Azure، لكشف المشاعر والمعلومات الرئيسية والفهم متعدد الأوجه.
-- **توصيات قابلة للتنفيذ**: تلقَّ اقتراحات مُصمَّمة استناداً إلى نتائج التحليل.
-- **دعم متعدد اللغات**: يشمل دعماً لمجموعة واسعة من اللغات، ويُوفِّر قابلية تطبيق عالمية.
-- **خيارات إخراج مرنة**: اختر من بين تنسيقات متنوعة كـ JSON وTXT وSQLite لنتائج تحليلك.
+يتوفر الضبط الدقيق لـ **Custom Speech** للمفردات الخاصة بالمجال. يؤدي رفع معجم النطق أو مجموعة بيانات التكيّف (مجموعة من الجمل النصية تمثّل المجال) إلى ضبط نموذج اللغة ويمكنه تقليل معدل WER بشكل ملحوظ على المحتوى المتخصص مثل المصطلحات المالية أو المصطلحات الطبية.
 
-مع تنامي اعتماد العالم على البحث الصوتي والبيانات الصوتية والتبادلات الشفهية، تُصبح أدوات مثل **Audio Analyser** القادرة على معالجة هذه المعلومات وفك ترميزها بكفاءة حيوية بشكل متزايد. ولا تزال المؤسسات في القطاعين الخاص والعام في بداية استثمار هذه الإمكانات التحليلية.
+## معالجة اللغة الطبيعية مع Azure AI Language
 
-![divider][divider].class=\"m-10 w-100\"
+بعد النسخ، يرسل Audio Analyser نص النسخة بصيغة العرض إلى Azure AI Language عبر Python SDK من `azure-ai-textanalytics`:
 
-## فكرة
+```python
+from azure.ai.textanalytics import TextAnalyticsClient
+from azure.core.credentials import AzureKeyCredential
 
-### إثراء معالجة البيانات الصوتية
+client = TextAnalyticsClient(
+    endpoint=os.environ["AZURE_LANGUAGE_ENDPOINT"],
+    credential=AzureKeyCredential(os.environ["AZURE_LANGUAGE_KEY"])
+)
 
-#### التقليدي مقابل المُسيَّر بالذكاء الاصطناعي
+documents = [{"id": "1", "language": detected_lang, "text": transcript}]
 
-تعاني الطرق التقليدية لتحليل الصوت من قيود شديدة. التفريغ اليدوي مُستهلك للوقت، ويستغرق ما يصل إلى 10 ساعات لمعالجة ساعة صوتية واحدة. وهو عرضة كذلك للأخطاء والتفاوتات التي قد تُشوِّه المعنى. حتى برامج speech-to-text المنتشرة كثيراً ما تفشل في التقاط السياق والمشاعر الدقيقة والسخرية والنية.
+sentiment_result = client.analyze_sentiment(documents, show_opinion_mining=True)
+for doc in sentiment_result:
+    print(f"Sentiment: {doc.sentiment}")
+    print(f"Scores: pos={doc.confidence_scores.positive:.2f} "
+          f"neg={doc.confidence_scores.negative:.2f} "
+          f"neu={doc.confidence_scores.neutral:.2f}")
+    for sentence in doc.sentences:
+        for opinion in sentence.mined_opinions:
+            print(f"  Target: {opinion.target.text}, "
+                  f"Assessment: {[a.text for a in opinion.assessments]}")
 
-في المقابل، يُجسِّد **Audio Analyser** نموذجاً جديداً — استخدام قوة الذكاء الاصطناعي لمعالجة صوتية مُعزَّزة. يُطبِّق نهجه المُسيَّر بالذكاء الاصطناعي التعرف المتقدم على الكلام، وفهم اللغة الطبيعية، وخوارزميات تعلم الآلة لضمان تحليل أكثر دقة بجهد يدوي أقل.
+keyphrases_result = client.extract_key_phrases(documents)
+entities_result  = client.recognize_entities(documents)
+```
 
-ومع أن المراجعة البشرية تظل ذات قيمة، تُعطي تقنية مثل **Audio Analyser** المؤسسات القدرة على معالجة كميات الصوت بسرعة. ولا تتمتع التفريغات الآلية التي تُنتجها بدقة إجمالية تصل إلى 99% فحسب، بل — وهو الأهم — تلتقط رؤى لغوية أعمق. وبفاعلية تتجاوز 10 أضعاف الجهود اليدوية، تُتيح تحليلات صوتية قابلة للتوسع حقاً.
+يُفعِّل `show_opinion_mining=True` تحليل المشاعر على مستوى الجوانب: لا تُعيد الواجهة البرمجية القطبية على مستوى المستند فحسب، بل تُعيد أيضًا أزواج هدف-تقييم محددة (مثلًا: target="جودة الصوت"، assessment="ضعيفة"). يجعل هذا المخرجات مفيدة لتحديد المشكلات الملموسة في تحليل مكالمات خدمة العملاء.
 
-#### دور Microsoft Azure AI Platform
+يصنّف التعرف على الكيانات المُسمَّاة النصوص ضمن إحدى الفئات: `Person`، `Organization`، `Location`، `Event`، `Product`، `DateTime`، `Quantity`، `IP`، `URL`، `Email`، `PersonType`، `Skill`، `Address`، `PhoneNumber`.
 
-خلف قدرات **Audio Analyser** يكمن الذكاء الاصطناعي الرائد من Microsoft Azure، الذي يستفيد من أحدث الابتكارات في تعلم الآلة. تُجهِّز Azure AI Platform الحلَّ بنماذج كلامية متطورة جداً تتعلم وتتحسن باستمرار لتعكس دقائق اللغة الواقعية.
+## الدعم متعدد اللغات عبر Azure Translator
 
-تشمل خدمات Azure الرئيسية التي تُشغِّل **Audio Analyser** وظيفة speech-to-text باستخدام الشبكات العصبية، ومعالجة اللغة الطبيعية لفك ترميز النص، وخوارزميات تُحدِّد المشاعر العاطفية أو النية. وتضمن آلاف الساعات من بيانات التدريب تعرفاً دقيقاً على المصطلحات الصناعية واللهجات الإقليمية والصوت الحواري.
+يُستدعى Azure Translator بعد اكتشاف اللغة عندما يطلب المستخدم لغة هدف. تدعم الخدمة 135 لغة ولهجة بالترجمة الآلية العصبية (NMT). يستخدم Audio Analyser نقطة النهاية `/translate` REST مع `autodetect` كمعامل `from`، لذا لا تلزم مواصفة لغة المصدر:
 
-تُتيح لبنات Azure AI Platform المرنة وعلى مستوى المؤسسات أن يُقدِّم **Audio Analyser** تحليلاً صوتياً آمناً وموثوقاً مُصمَّماً لاحتياجات كل عميل. سواء في إعداد محاضر الاجتماعات، أو مراجعة المكالمات، أو فهرسة أرشيف البودكاست — تُعالج خوارزميات المنصة المتطورة السياق والذاتية والدقائق ببراعة لكشف الرؤى المخفية داخل البيانات الصوتية.
+```python
+import requests, uuid
 
-![divider][divider].class=\"m-10 w-100\"
+url = "https://api.cognitive.microsofttranslator.com/translate"
+params = {"api-version": "3.0", "to": target_lang}
+headers = {
+    "Ocp-Apim-Subscription-Key": os.environ["AZURE_TRANSLATOR_KEY"],
+    "Ocp-Apim-Subscription-Region": os.environ["AZURE_TRANSLATOR_REGION"],
+    "Content-type": "application/json",
+    "X-ClientTraceId": str(uuid.uuid4())
+}
+body = [{"text": transcript}]
+response = requests.post(url, params=params, headers=headers, json=body)
+translated_text = response.json()[0]["translations"][0]["text"]
+detected_language = response.json()[0]["detectedLanguage"]["language"]
+```
 
-## أثر
+بعد الترجمة، يُعيد Audio Analyser اختياريًا تشغيل معالجة Text Analytics NLP على النص المترجم، لتتوفر مخرجات العبارات الرئيسية والمشاعر في كل من لغة المصدر واللغة الهدف.
 
-### تحويل الصناعات بتحليل متقدم
+يُضبط اختيار صيغة المخرجات (JSON أو TXT أو SQLite) عند بدء التشغيل. تخزّن مخرجات SQLite كل جلسة تحليل صفًا بأعمدة لمعرّف المهمة والطابع الزمني ولغة المصدر والنسخة والنسخة المترجمة ودرجات المشاعر والعبارات الرئيسية بوصفها JSON blob — مما يتيح استعلامات SQL عبر الجلسات.
 
-#### دراسات حالة في مختلف الصناعات
+## CherryPy كطبقة ويب
 
-- **أبحاث السوق**: يُقدِّم Audio Analyser منهجاً تحويلياً لأبحاث السوق بإيصال تحليل متقدم للرؤى القابلة للتنفيذ.
-- **خدمة العملاء**: يُثبت قيمته في خدمة العملاء، إذ يُوفِّر رؤى عند تحليل البيانات الصوتية من مكالمات الخدمة.
-- **الرعاية الصحية**: في الاستشارات الطبية، يخدم Audio Analyser المهنيين الصحيين بتقديم رؤى ثمينة.
-- **التعليم**: يستطيع تحليل البيانات الصوتية من المحاضرات والاجتماعات، بما يُفيد الطلاب والمهنيين.
-- **التمويل**: على نحو مماثل، يمكن تطبيقه على المعاملات المالية، مع تقديم رؤى ثمينة للمؤسسات المالية.
+تربط CherryPy مسارات URL بأساليب Python باستخدام وحدات تحكم قائمة على الفصائل. يستخدم Audio Analyser ثلاثة مسارات:
 
-#### المكاسب الكمية
+| المسار | الأسلوب | الوصف |
+|---|---|---|
+| `GET /` | `index()` | يعرض نموذج الرفع |
+| `POST /analyse` | `analyse()` | يقبل الرفع متعدد الأجزاء، ويشغّل خط الأنابيب، ويُعيد معرّف المهمة |
+| `GET /results/<job_id>` | `results()` | يستطلع حالة المهمة؛ يعرض صفحة النتائج عند الاكتمال |
 
-سجَّلت الشركات التي تستخدم **Audio Analyser** تخفيضاً بنسبة 50% في الوقت المُستغرق في معالجة البيانات الصوتية. تتحول مكاسب الكفاءة هذه إلى وفورات تكلفة كبيرة واتخاذ قرار أسرع.
+يحافظ الحد الأدنى من التكوين على صغر حجم بصمة الخادم:
 
-![divider][divider].class=\"m-10 w-100\"
+```python
+import cherrypy
 
-## حوافز
+cherrypy.config.update({
+    "server.socket_host": "0.0.0.0",
+    "server.socket_port": 8080,
+    "tools.sessions.on": True,
+    "tools.sessions.timeout": 60
+})
+cherrypy.quickstart(AudioAnalyserApp(), "/", conf)
+```
 
-### لماذا تختار Audio Analyser
+تحتفظ حالة الجلسة بمعرّف المهمة الحالي وصيغة المخرجات المختارة ولغة الترجمة الهدف. يعتمد تخزين الجلسة المدمج في CherryPy بشكل افتراضي على الملفات، دون الحاجة إلى طبقة تخزين مؤقت خارجية.
 
-#### الكفاءة وتوفير الوقت
+## الأسئلة الشائعة
 
-يُقدِّم **Audio Analyser** كفاءات لا تُضاهى في معالجة البيانات الصوتية. يُحلِّل التعرف الآلي على الكلام وقدرات اللغة الطبيعية الصوتَ الخام بسرعة تصل إلى 10 أضعاف الطرق اليدوية. وهذا يُقلِّص الوقت والجهد اللازمين لاستخلاص رؤى قابلة للاستخدام بصورة ملحوظة.
+**ما صيغ الصوت وأحجام الملفات التي يقبلها Audio Analyser؟**
+تدعم واجهة Azure Batch Transcription API ملفات WAV وMP3 وOGG وFLAC بمدة تصل إلى 2.5 ساعة. يجب تقسيم الملفات الأطول قبل الرفع. تُقبل الملفات الاستريو ولا حاجة للتحويل إلى أحادية الصوت.
 
-تأمَّل ما يعنيه ذلك لاحتياجات التحليل الصوتي الشائعة:
+**كيف يعمل تمييز المتحدثين؟**
+يؤدي تعيين `diarizationEnabled: true` في طلب النسخ الدفعي إلى تنشيط نموذج فصل المتحدثين في Azure. يتضمن كل `recognizedPhrase` في الاستجابة حقلًا صحيحًا `speaker`. يحدد النموذج المتحدثين من خلال الخصائص الصوتية ويمنح معرّفات ثابتة ضمن الجلسة، لكنه لا يعرّف هويات المتحدثين دون خطوة تسجيل ملف صوتي منفصلة.
 
-- تفريغ اجتماع كان يتطلب 6 ساعات من العمل ينتهي الآن في أقل من 30 دقيقة.
-- أيام تُقضى في مراجعة سجلات مكالمات العملاء تُختزل إلى ساعات قليلة فقط باستخدام التعرف على الأنماط الواسع.
-- يمكن فهرسة أرشيفات بودكاست بأكملها والبحث فيها سريعاً بناءً على المحتوى المنطوق.
-- بتولِّيه أعباء التفريغ والتحليل المُستهلكة للوقت، يُعيد **Audio Analyser** وقتاً ثميناً للتركيز على مبادرات ذات أولوية أعلى. وتُتيح أتمتته للمؤسسات توسيع نطاق معالجة البيانات الصوتية بإيقاع وحجم غير ممكنَين بطرق أخرى.
+**هل تُحتفظ بملفات الصوت بعد النسخ؟**
+تُرفع ملفات الصوت إلى Azure Blob Storage باستخدام رابط SAS قصير الأجل وتُحذف من الدليل المحلي المؤقت بعد اكتمال الرفع. يعتمد الاحتفاظ بالكائنات الثنائية في Azure Blob Storage على سياسة دورة حياة الحاوية؛ لا يُعيّن Audio Analyser بشكل افتراضي سياسة حذف صريحة، لذا يُوصى في النشرات الإنتاجية بتكوين قاعدة TTL قصيرة (مثل حذف الكائنات الأقدم من يوم) في بوابة Azure.
 
-#### عمق التحليل وسهولة الاستخدام
+**هل يمكن تشغيل تحليل NLP بدون ترجمة؟**
+نعم. الترجمة مرحلة اختيارية في خط الأنابيب يتحكم فيها الإشارة `--target-lang` في واجهة سطر الأوامر أو قائمة اللغة الهدف في واجهة الويب. عند عدم تحديد لغة هدف، يُشغِّل خط الأنابيب فقط تحويل الكلام إلى نص و Text Analytics.
 
-يتميز **Audio Analyser** ليس فقط بكفاءة تحويله الصوتي، بل بالرؤى ذات المعنى التي يُولِّدها. يتجاوز تعلم الآلة المُدمج speech-to-text ليُراعي النبرة والمشاعر والكلمات المفتاحية في المحتوى والعلاقات بينها.
+## المراجع
 
-ويُنتج الحل تقارير تحليلية مُنظَّمة وقابلة للاستيعاب، تُتاح عبر واجهة ويب سهلة الاستخدام. هذا التنسيق سهل الاستهلاك، مع لوحات تحكم قابلة للتخصيص، يُقلِّص نقطة ألم أخرى تواجهها المؤسسات في استثمار البيانات الصوتية. تستطيع القيادات التركيز على الاتجاهات ومراقبة المؤشرات وتبادل النتائج بين الفرق.
+1. Microsoft. *نظرة عامة على النسخ الدفعي — خدمات Azure AI*. Microsoft Learn، 2024. <https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-transcription>
+2. Xiong, W. وآخرون. "Achieving Human Parity in Conversational Speech Recognition." *تقرير Microsoft Research التقني*، 2016؛ تحديث 2021. <https://arxiv.org/abs/1610.05256>
+3. Microsoft. *ما هو Azure AI Language؟* Microsoft Learn، 2024. <https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview>
+4. Microsoft. *Azure AI Translator — اللغات المدعومة*. Microsoft Learn، 2024. <https://learn.microsoft.com/en-us/azure/ai-services/translator/language-support>
 
-في الواقع، يُعيد **Audio Analyser** ابتكار ما هو ممكن لاستخدام البيانات الصوتية. تُقدِّم خلفية Azure الآمنة، مقترنةً بالتحليل المُبسَّط، طريقة أسهل للشركات لاستثمار هذا الأصل قليل الاستخدام. فهو يُحوِّل المحتوى الصوتي الخامل سابقاً إلى سجلات قابلة للبحث وبيانات قابلة للتنقيب — مما يُتيح قرارات أذكى وأسرع.
+[00]: https://audioanalyser.co/ "Audio Analyser — أداة تحليل الكلام المدعومة بـ Azure"
 
-![divider][divider].class=\"m-10 w-100\"
-
-## الأساس التقني — مُشيَّد على أرضية صلبة
-
-### دور ذكاء Azure في تحليل دقيق
-
-الذكاء الاصطناعي المتقدم داخل Microsoft Azure هو القوة الدافعة وراء قدرات **Audio Analyser**. تُدمج خدمات الكلام في Azure ومعالجة اللغة الطبيعية نماذج تعلم آلة مُدرَّبة على آلاف الساعات من البيانات.
-
-![The Audio Analyser Architecture](https://cloudcdn.pro/stocks/diagrams/audio-analyser-architecture-topaz.webp).class=\"m-10 w-100\"
-
-تضمن هذه التقنية بمستوى صناعي أعلى مستويات الدقة في التفريغ والتحليل. وبدعم من معايير قوية لخصوصية البيانات، تُوفِّر Azure أساساً آمناً جاهزاً للمؤسسات.
-
-تحديداً، يستفيد **Audio Analyser** من خدمات Azure المعرفية الرائدة من أجل:
-
-- تحويل speech-to-text باستخدام خوارزميات الشبكات العصبية
-- فهم اللغة الطبيعية لتفسير النص
-- تحليل المشاعر لتحديد النبرة العاطفية
-- اكتشاف الشذوذات لإيجاد الانحرافات
-- التعرف المُخصَّص على الكلام مُكيَّفاً مع كلمات/عبارات فريدة
-
-علاوة على قدرات Azure، يبني **Audio Analyser** منطقاً إضافياً حول توليد الرؤى الصوتية. ويُضيف إطار CherryPy للويب عرضاً مُهيكلاً لهذه البيانات ذات المعنى. تُيسِّر الجداول والمرشحات والعروض المُخصَّصة تنقل المستخدمين غير التقنيين في الذكاء الصوتي.
-
-![divider][divider].class=\"m-10 w-100\"
-
-[**Audio Analyser ⧉**][00] يفتح منهجاً مُتكاملاً لاستثمار القيمة داخل البيانات الصوتية. مُدعَّم بـ Microsoft Azure AI Platform بمستوى صناعي للأمن والدقة، يجعل الرؤى المبنية على الكلام أكثر إتاحة عبر الأتمتة والتسليم المُبسَّط.
-
-سواء أكان توليد محاضر اجتماعات، أو مراجعة مكالمات، أو البحث في أرشيف بودكاست، أو خلاف ذلك من استثمار المحتوى الصوتي، تفتح هذه الأداة الرائدة إمكانات جديدة. ويُساعد عمق التحليل وسلاستها التي تُقدِّمها المؤسسات الرائدة على تحسين فائدة الصوت إلى درجة غير مسبوقة.
-
-![divider][divider].class=\"m-10 w-100\"
-
-[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-[00]: https://audioanalyser.co/ "Unlock Actionable Insights from Audio Data to Enhance CX/EX"
+<!-- enrich-start -->
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-24">2026-05-24</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/" class="related-media" aria-label="Generative AI in Advertising: Amazon Rufus & Meta" tabindex="-1"><img alt="A robotic woman with butterflies and flowers" src="https://cloudcdn.pro/stocks/images/advertising-ai.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/">Generative AI in Advertising: Amazon Rufus & Meta</a></h3><p><time datetime="2024-02-08">2024-02-08</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/" class="related-media" aria-label="EU's AI Act: Pioneering Ethical AI Regulation Worldwide" tabindex="-1"><img alt="A person sitting on black bench reading newspaper" src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/" class="related-media" aria-label="AI Prompt Engineering 2024: Techniques That Work" tabindex="-1"><img alt="A man analysing data on screens" src="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/">AI Prompt Engineering 2024: Techniques That Work</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

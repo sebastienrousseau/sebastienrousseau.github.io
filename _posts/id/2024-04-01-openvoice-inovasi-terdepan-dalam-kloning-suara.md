@@ -1,13 +1,13 @@
 ---
 title: "[ID DRAFT] OpenVoice: Leading Innovation in Voice Cloning Technology"
-subtitle: "The Next-Gen Open-Source Voice Cloning Tool"
+subtitle: "Alat Kloning Suara Open-Source Generasi Berikutnya"
 description: "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing."
 date: "Apr 01, 2024"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/stocks/images/open-voice.webp"
-banner_alt: "Banner of Vibrant gradient overlay on repeated profiles"
-keywords: "OpenVoice, Voice Cloning Technology, AI Synthetic Speech, Open-Source Voice Cloning, Cross-Lingual Voice Synthesis, Instant Voice Cloning, Voice Style Control, Accessibility Voice Tech, Entertainment Industry Voices, Customer Service Voice AI"
+banner_alt: "Spanduk dengan hamparan gradien cerah pada profil yang berulang"
+keywords: "OpenVoice, Teknologi Kloning Suara, Ucapan Sintetis AI, Kloning Suara Open-Source, Sintesis Suara Lintas Bahasa, Kloning Suara Instan, Kontrol Gaya Suara, Teknologi Suara Aksesibilitas, Suara Industri Hiburan, AI Suara Layanan Pelanggan"
 ---
 
 ![Banner of Vibrant gradient overlay on repeated profiles](https://cloudcdn.pro/stocks/images/open-voice.webp).class=\"img-fluid clearfix\"

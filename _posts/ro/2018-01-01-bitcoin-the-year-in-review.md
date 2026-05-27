@@ -1,13 +1,13 @@
 ---
 title: "Bitcoin: A Year In Review of the First Cryptocurrency"
-subtitle: "Bitcoin, cryptocurrency, and the technology reshaping financial markets."
-description: "Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online."
+subtitle: "Bitcoin, criptomonede și tehnologia care remodelează piețele financiare."
+description: "Bitcoin: Un sistem electronic de plăți peer-to-peer (P2P ECS) cu potențialul de a revoluționa modul în care oamenii tranzacționează online."
 date: "Jan 01, 2018"
 language: "ro-RO"
 locale: "ro_RO"
 banner: "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp"
-banner_alt: "A pile of gold and silver coins sitting on top of a table"
-keywords: "bitcoin, cryptocurrency, blockchain, decentralized finance, digital currency, peer-to-peer payments, digital gold, programmable money, future of money, financial revolution"
+banner_alt: "O grămadă de monede de aur și argint așezate pe o masă"
+keywords: "bitcoin, cryptocurrency, blockchain, finanțe descentralizate, monedă digitală, plăți peer-to-peer, aur digital, bani programabili, viitorul banilor, revoluție financiară"
 ---
 
 ![A pile of gold and silver coins sitting on top of a table](https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp).class="img-fluid clearfix"

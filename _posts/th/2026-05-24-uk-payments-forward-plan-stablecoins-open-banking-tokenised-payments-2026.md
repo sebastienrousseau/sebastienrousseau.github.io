@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "UK payments modernisation diagram showing stablecoins, tokenised deposits, open banking, AI agents, FCA regulation, PSR consolidation, and wholesale digital markets"
+banner_alt: "ไดอะแกรมการปรับปรุงระบบการชำระเงินของสหราชอาณาจักร แสดง stablecoins, tokenised deposits, open banking, AI agents, กฎระเบียบ FCA, การรวม PSR และตลาดดิจิทัลขายส่ง"
 banner_height: "571"
 banner_width: "1425"
 banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80"

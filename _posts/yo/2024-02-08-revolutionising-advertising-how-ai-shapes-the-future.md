@@ -1,13 +1,13 @@
 ---
 title: "Generative AI in Advertising: Amazon Rufus & Meta"
-subtitle: "How AI Transforms Consumer Interactions and Advertising Dynamics"
-description: "Explore how AI transforms advertising with insights on Amazon's Rufus and Meta's latest developments. Discover the impact on consumer engagement"
+subtitle: "Bii AI Ṣe N Yipada Ajọṣepọ Onibara ati Agbara Ipolowo"
+description: "Ṣawari bii AI ṣe n yipada ipolowo pẹlu awọn imọran nipa Rufus Amazon ati awọn idagbasoke tuntun Meta. Ṣe awari ipa rẹ lori ifarabalẹ awọn onibara"
 date: "Feb 08, 2024"
 language: "yo-NG"
 locale: "yo_NG"
 banner: "https://cloudcdn.pro/stocks/images/advertising-ai.webp"
-banner_alt: "A robotic woman with butterflies and flowers"
-keywords: "AI in advertising, Amazon Rufus, Meta AI tools, consumer targeting, advertising technology, AI chatbots, digital marketing trends, AI analytics, creative AI, ad campaign optimization"
+banner_alt: "Obinrin roboti kan pẹlu àwọn labalaba àti ododo"
+keywords: "AI ninu ipolowo, Amazon Rufus, awọn irinṣẹ Meta AI, ifọkasi onibara, ìmọ-ẹrọ ipolowo, AI chatbots, awọn aṣa titaja oni-nọmba, AI analytics, AI ẹda, iṣapeye ipolowo"
 ---
 
 ![A robotic woman with butterflies and flowers](https://cloudcdn.pro/stocks/images/advertising-ai.webp).class="img-fluid clearfix"

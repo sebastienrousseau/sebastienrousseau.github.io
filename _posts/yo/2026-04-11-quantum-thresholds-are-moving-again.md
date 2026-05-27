@@ -1,13 +1,13 @@
 ---
 title: "Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk"
-subtitle: "A new paper suggests Shor's algorithm could run on as few as 10,000 qubits. The implications for cryptography are hard to ignore."
-description: "Shor's algorithm may now run on as few as 10,000 qubits. RSA, ECC and the timeline for post-quantum migration are all moving up. Here's why."
+subtitle: "Ìwádìí tuntun dábàá pé algorithmù Shor lè ṣiṣẹ́ lórí qubit 10,000 péré. Àwọn ìpadà fún cryptography ṣòro láti fojú fò."
+description: "Algorithmù Shor lè ṣiṣẹ́ lórí qubit 10,000 péré. RSA, ECC àti àkókò ìṣípò sí post-quantum cryptography ń yára yí padà. Èyí ni ìdí rẹ̀."
 date: "Apr 11, 2026"
 language: "yo-NG"
 locale: "yo_NG"
 banner: "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp"
-banner_alt: "Shor's algorithm qubit threshold diagram. Quantum computing circuit board with blue light patterns"
-keywords: "quantum computing, Shor's algorithm, 10000 qubits, post-quantum cryptography, RSA-2048, elliptic curve cryptography, neutral atom qubits, quantum error correction, cryptographic agility, quantum threat timeline"
+banner_alt: "Àwòrán ìlẹ̀sẹ̀ qubit fún algorithmù Shor. Bọ́ọ̀dù circuit ìṣirò quantum pẹ̀lú àwọn àpẹẹrẹ ìmọlẹ̀ búlúù"
+keywords: "ìṣirò quantum, algorithmù Shor, qubit 10000, cryptography post-quantum, RSA-2048, cryptography elliptic curve, qubit atom didoju, àtúnṣe àṣìṣe quantum, ìrọ̀rùn cryptography, àkókò ìhalẹ̀ quantum"
 ---
 
 ![Shor's algorithm qubit threshold diagram. Quantum computing circuit board with blue light patterns](https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp).class="img-fluid clearfix"

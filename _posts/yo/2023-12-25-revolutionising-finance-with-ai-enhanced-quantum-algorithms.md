@@ -1,13 +1,13 @@
 ---
 title: "Revolutionising Finance with AI-Enhanced Quantum Algorithms"
-subtitle: "Unleashing the Power of Quantum for Financial Innovation: AI at the Heart of Next-Gen Algorithms"
-description: "Explore the transformative role of AI in quantum algorithms for finance, with a focus on their mathematical intricacies and banking applications."
+subtitle: "Ṣiṣi agbara kuantọm fun imọ-ẹrọ owo: AI ni àárín awọn algorithm iran-tuntun"
+description: "Ṣawari ipa iyipada AI ninu awọn algorithm kuantọm fun iṣowo owo, pẹlu idojukọ lori awọn idiju mathimatiki wọn ati awọn ohun elo banki."
 date: "Dec 25, 2023"
 language: "yo-NG"
 locale: "yo_NG"
 banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
-banner_alt: "Revolutionising Finance with AI-Enhanced Quantum Algorithms"
-keywords: "Quantum Computing, AI Algorithms, Financial Mathematics, Banking Technology, Risk Management, Algorithm Design, Data Analysis, Investment Strategies, Quantum Finance, Machine Learning"
+banner_alt: "Iyipada iṣowo pẹlu awọn algorithm kuantọm ti AI ṣe ilọsiwaju"
+keywords: "Quantum Computing, Awọn Algorithm AI, Mathimatiki Iṣowo, Imọ-ẹrọ Banki, Iṣakoso Ewu, Apẹrẹ Algorithm, Itupalẹ Data, Awọn Ilana Idoko-owó, Quantum Finance, Machine Learning"
 ---
 
 ![Revolutionising Finance with AI-Enhanced Quantum Algorithms](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp).class="img-fluid clearfix"

@@ -49,7 +49,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/ko/2026-05-16-2026-choeseon-keulaeudeu-infra-akitekcheo/rss.xml"
-category: "Technology"
+category: "Finance"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "2026 클라우드 아키텍처 청사진 — 여섯 가지 기초 기둥, 에이전트 단위 경제학, 다중 에이전트 HPC 현실, 연속 트레저리 명령, MCP 보안 위기, 암호학적 에이전트 신원, 알고리즘 전염, 그리고 엣지 에이전트 위기를 위한 오픈소스 참조 구현으로서의 CloudCDN."

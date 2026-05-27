@@ -1,13 +1,13 @@
 ---
 title: "[ID DRAFT] Quantum Algorithm Challenges Lattice-Based Cryptography"
-subtitle: "The Next polynomial-time quantum algorithm for lattice-based cryptography"
-description: "A new polynomial-time quantum algorithm by Yilei Chen targets lattice-based cryptography. Implications for post-quantum standards including CRYSTALS-Kyber."
+subtitle: "Algoritma kuantum polynomial-time berikutnya untuk kriptografi berbasis lattice"
+description: "Algoritma kuantum polynomial-time baru oleh Yilei Chen menargetkan kriptografi berbasis lattice. Implikasinya bagi standar post-kuantum termasuk CRYSTALS-Kyber."
 date: "Apr 01, 2024"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"
-banner_alt: "Banner of Network nodes in a digital blue space"
-keywords: "quantum computing, quantum algorithm, lattice cryptography, LWE, encryption, post-quantum cryptography, cybersecurity, Yilei Chen, cryptography research, security threats"
+banner_alt: "Banner simpul-simpul jaringan dalam ruang biru digital"
+keywords: "komputasi kuantum, algoritma kuantum, lattice cryptography, LWE, enkripsi, post-quantum cryptography, keamanan siber, Yilei Chen, penelitian kriptografi, ancaman keamanan"
 ---
 
 ![Banner of Network nodes in a digital blue space](https://cloudcdn.pro/stocks/images/digital-constellation.webp).class=\"img-fluid clearfix\"

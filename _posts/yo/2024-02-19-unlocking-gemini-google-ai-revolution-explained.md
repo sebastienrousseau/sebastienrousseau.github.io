@@ -1,13 +1,13 @@
 ---
 title: "Unlocking Gemini 1.5: Google's AI Revolution Explained"
-subtitle: "A Deep Dive into Google's Latest AI Breakthrough"
-description: "Gemini 1.5 from Google scales context windows past 1M tokens. What that unlocks for retrieval-augmented finance and the trade-offs worth knowing."
+subtitle: "Iwadii Jijinlẹ sinu Ilọsiwaju AI Tuntun ti Google"
+description: "Gemini 1.5 lati ọdọ Google faagun awọn ferese ọrọ-ọrọ ju 1M ami lọ. Kini eyi ṣii fun iṣuna-owo ti a fikun pẹlu imularada ati awọn ipadabọ ti o tọ si mimọ."
 date: "Feb 19, 2024"
 language: "yo-NG"
 locale: "yo_NG"
 banner: "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp"
-banner_alt: "Abstract visualisation of AI networks, representing Gemini 1.5's capabilities"
-keywords: "Gemini 1.5, Google AI, Mixture-of-Experts architecture, computational efficiency, context window expansion, AI innovation, data analysis transformation, in-context learning, AI use cases, technology revolution"
+banner_alt: "Aworan àkójọpọ ti awọn nẹtiwọọki AI, ti o ṣe aṣoju awọn agbara Gemini 1.5"
+keywords: "Gemini 1.5, Google AI, faaji Mixture-of-Experts, ṣiṣedeede iṣiro, faagun ferese ọrọ-ọrọ, imọ-ẹrọ AI titun, iyipada itupalẹ data, ẹkọ ninu ọrọ-ọrọ, awọn lilo AI, iyipada imọ-ẹrọ"
 ---
 
 ![Abstract visualisation of AI networks, representing Gemini 1.5's capabilities](https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp).class="img-fluid clearfix"

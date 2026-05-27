@@ -1,195 +1,216 @@
 ---
-title: "Generative AI in 2023: How It Works, Where It Lands"
-subtitle: "Applied artificial intelligence in banking and financial services."
-description: "Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking."
-date: "Nov 12, 2023"
-language: "yo-NG"
-locale: "yo_NG"
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+banner_alt: "Àwòrán nẹ́tiwọọkì iṣan ara àrọ́mọdọmọ nínú àwọn àwọ̀ bulu àti eleyi-tì tí ó ṣàpẹẹrẹ ìṣiṣẹ́ AI"
+banner_height: "100vh"
+banner_width: "100vw"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
-banner_alt: "AI, Artificial Intelligence concept,3d rendering,conceptual image"
-keywords: "Generative AI, technology, future, impact, ethics, synergies, innovation, creativity, transformation, evolution"
----
-
-![AI, Artificial Intelligence concept,3d rendering,conceptual image](https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp).class="img-fluid clearfix"
-
----
-
-> **TL;DR.** Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.
->
-> **Awọn Pataki Ojulowo**
->
-> - DRAFT translation: this article is a Yorùbá stub generated from the English source. Body text is intentionally left in English until a native reviewer signs off.
-> - Source title: *Generative AI in 2023: How It Works, Where It Lands*.
-> - Source subtitle: *Applied artificial intelligence in banking and financial services.*.
-> - Editorial note: replace this block with hand-translated copy before flipping `active=True` for yo in `scripts/_lang_registry.py`.
-
+cdn: "https://cloudcdn.pro/clients"
+changefreq: "weekly"
+charset: "UTF-8"
+cname: "sebastienrousseau.com"
+copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
+date: "Nov 12, 2023"
+description: "Bí àwọn ẹ̀rọ transformer ṣe ń ṣiṣẹ́, àwọn ọ̀nà ẹ̀kọ́ 2023 tí ó ṣeto àmìdá, ibi tí AI àgbékalẹ̀ ti dé àkọ́kọ́ nínú àwọn iṣẹ́ owó, àti àwọn ìbéèrè ìṣàkóso tí àwọn akọrin nílò ìdáhùn ṣáájú ìgbéṣẹ̀."
+format-detection: "telephone=no"
+hreflang: "yo"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/yo/2023-11-12-exploring-generative-ai"
+image_alt: "Black and White Portrait of Sebastien Rousseau"
+image_height: "161"
+image_width: "161"
+image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+keywords: "AI àgbékalẹ̀, ọ̀nà ẹ̀kọ́ èdè ńlá, ẹ̀rọ transformer, GPT-4, AI iṣẹ́ owó, hallucination, retrieval-augmented generation, ìṣàkóso AI, foundation model, fine-tuning"
+language: "yo"
+layout: "report"
+locale: "yo_NG"
+logo_alt: "Logo for Sebastien Rousseau"
+logo_height: "44"
+logo_width: "44"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+menu: "active"
+measurementID: "G-169G4ET5HQ"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/yo/2023-11-12-exploring-generative-ai"
+rating: "general"
+referrer: "no-referrer"
+revisit-after: "7 days"
+robots: "index, follow"
+short_name: "sebastienrousseau"
+subtitle: "Ẹ̀rọ transformer, àwọn ìwọ̀n ọ̀nà ẹ̀kọ́ 2023, àwọn ìlò nínú iṣẹ́ owó, àti àwọn ìbéèrè ìṣàkóso tí a kò lè sún wọn sẹ́yìn."
+tags: "AI àgbékalẹ̀, ọ̀nà ẹ̀kọ́ èdè ńlá, GPT-4, transformer, iṣẹ́ owó, hallucination, RAG, ìṣàkóso AI, foundation model, fine-tuning"
+theme-color: "0, 67, 165"
+title: "Generative AI in 2023: How It Works, Where It Lands"
+url: "https://sebastienrousseau.com/yo/2023-11-12-exploring-generative-ai"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+atom_link: "https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/rss.xml"
+category: "AI"
+docs: "https://validator.w3.org/feed/docs/rss2.html"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
+item_description: "Bí àwọn ẹ̀rọ transformer ṣe ń ṣiṣẹ́, àwọn ọ̀nà ẹ̀kọ́ 2023 tí ó ṣeto àmìdá, ibi tí AI àgbékalẹ̀ ti dé àkọ́kọ́ nínú iṣẹ́ owó, àti àwọn ìbéèrè ìṣàkóso."
+item_guid: "https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/rss.xml"
+item_link: "https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/rss.xml"
+item_pub_date: "Sun, 12 Nov 2023 20:30:00 +0000"
+item_title: "AI Àgbékalẹ̀ ní 2023: Bí Ó Ṣe Ń Ṣiṣẹ́, Ibi Tí Ó Ti Dé"
+last_build_date: "Sun, 12 Nov 2023 20:30:00 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+pub_date: "Sun, 12 Nov 2023 20:30:00 +0000"
+ttl: "60"
+type: "website"
+webmaster: "contact@sebastienrousseau.com"
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "AI Àgbékalẹ̀ 2023"
+apple-touch-fullscreen: "yes"
+msapplication-navbutton-color: "0, 67, 165"
+twitter_card: "summary"
+twitter_creator: "@wwdseb"
+twitter_description: "Ẹ̀rọ transformer, àwọn ìwọ̀n ọ̀nà ẹ̀kọ́ 2023, àwọn ìlò nínú iṣẹ́ owó, àti àwọn ìbéèrè ìṣàkóso tí a kò lè sún wọn sẹ́yìn."
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image_alt: "Logo of Sebastien Rousseau"
+twitter_site: "@wwdseb"
+twitter_title: "AI Àgbékalẹ̀ 2023: Bí Ó Ṣe Ń Ṣiṣẹ́"
+twitter_url: "https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html"
+author_website: "https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html"
+author_twitter: "@wwdseb"
+author_location: "London, UK"
+thanks: "Thanks for reading!"
+site_last_updated: "2023-11-05"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_software: "Static Site Generator, Rust"
+excerpt: "AI àgbékalẹ̀ gba ọ̀nà láti ìwádìí sí ìgbéṣẹ̀ gidi ní 2023. GPT-4, Claude 2, Llama 2, àti Mistral fi hàn pé àwọn ọ̀nà ẹ̀kọ́ èdè ńlá lè ṣàmúlò àtúnyẹ̀wò ìwé òfin, ìpilẹ̀ṣẹ̀ kóòdù, àti ìfọ̀rọ̀wérọ̀ oníbàárà ní ìpele tó jọ ti ènìyàn — tí ó fa àwọn ìbéèrè ìṣàkóso lẹ́sẹ̀kẹsẹ̀ nípa hallucination, jíjáde àlàyé, àti ìbámu àwọn òfin nínú àwọn iṣẹ́ owó."
+last_reviewed: "2026-05-24"
 ---
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.</p>
-<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Generative AI yipada lati iwadi si iṣelọpọ ni ọdun 2023. Ẹya transformer — paapaa ẹrọ self-attention — ni ohun ti o fun awọn awoṣe ede nla agbara lati mu ẹsun gigun ninu awọn iwe aṣẹ. GPT-4, Claude 2, Llama 2, ati Mistral ṣalaye ala-ilẹ benchmark ti ọdun 2023. Awọn iṣẹ owo ri awọn imọran ile-iṣẹ akọkọ ni ẹda koodu, idinku aṣẹ ilana, ati ifikọti KYC, ṣugbọn lilo iṣelọpọ nilo dojukọ ewu hallucination, ijọba data, ati awọn ireti ilana ti awọn aṣofin ti n wo ni itara.</p>
+<p class="post-lead-heading"><strong>Awọn ẹkọ pataki</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Idea.</strong> The journey of generative AI began with simple models that could barely string together coherent sentences.</li>
-  <li><strong>Impact.</strong> Generative AI is not just an academic curiosity; it's a transformative force across multiple industries.</li>
-  <li><strong>Incentives.</strong> The development of generative AI is largely driven by economic incentives.</li>
-  <li><strong>Understanding the Mechanics of Generative AI.</strong> Generative Artificial Intelligence is a cutting-edge field of machine learning that enables computers to produce content indistinguishable from that created by humans.</li>
+  <li><strong>Transformer ni ipilẹ.</strong> Gbogbo LLM pataki ni ọdun 2023 ni a kọ lori ẹya transformer ti o da lori attention ti a ṣafihan ni "Attention Is All You Need" (2017). Ẹrọ self-attention ngbanilaaye awoṣe lati iwọn pataki ti gbogbo token si gbogbo token miiran ninu window ẹsun — ṣiṣe ipilẹṣẹ fọọmu pipẹ ti o ni ibamu kọja ẹgbẹẹgbẹrun awọn token.</li>
+  <li><strong>Iwọn ṣe iyipada didara.</strong> GPT-4 (Oṣù Kẹta 2023) gba awọn ami ti o dọgba si percentile 90th ninu idanwo Bar AMẸRIKA ati percentile 99th ninu apakan GRE verbal — ṣafihan pe iwọn awoṣe ṣe awọn agbara ti a ko le sọtọ lati awọn asaaju kekere.</li>
+  <li><strong>Awọn awoṣe open-weight yipada idogba iraye si.</strong> Llama 2 (Meta, Oṣù Keje 2023) ati Mistral 7B (Oṣù Kẹsan 2023) fihan pe awọn awoṣe ti o dije pẹlu awọn ọna ṣiṣe kilasi GPT-3 ti iṣaaju le ṣiṣẹ lori ohun elo ti o wọpọ tabi amayederun ikọkọ — ti yọ igbẹkẹle awọsanma bi idena fun awọn ile-iṣẹ ti o ṣakoso pẹlu awọn ibeere ibugbe data ti o muna.</li>
+  <li><strong>Awọn ọran lilo ninu awọn iṣẹ owo jẹ gidi ṣugbọn awọn ewu kii ṣe kekere.</strong> Ni ipari ọdun 2023, awọn banki pataki n ṣe awọn awakọ inu fun atunyẹwo adehun, idinku iyipada ilana, ati iṣelọpọ olupilẹṣẹ. Awọn ewu iṣelọpọ ti a ko yanju — hallucination, prompt injection, awọn itọpa ayẹwo, ati ipilẹṣẹ awoṣe — wa ni awọn idena akọkọ si imọran jakejado.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a>, <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a>, <a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html">AI Trends 2024: Insights and Predictions for the Future</a>.</p>
+<p class="post-lead-related"><strong>Kika siwaju:</strong> <a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future">Awọn Aṣa AI 2024: Awọn Imọran ati Awọn Asọtẹlẹ</a>, <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering">Imọ-ẹrọ Prompt AI 2024: Awọn Ilana Ti Ṣiṣẹ</a>, <a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation">Ofin AI EU: Ṣiṣṣọtọ Ilana AI Ti Ẹdajẹ Ni Agbaye</a>.</p>
 </aside>
 <!-- lead-end -->
 
-![AI, Artificial Intelligence concept,3d rendering,conceptual image](https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp).class=\"img-fluid clearfix\"
+![Abstract neural network visualisation in blue and purple tones representing AI processing](https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp).class=\"img-fluid clearfix\"
 
-## Insight
+> **Akopọ Alase / Awọn Ẹkọ Pataki**
+>
+> - **Ẹya ti o yi ohun gbogbo pada.** Iwe transformer ti ọdun 2017 ṣafihan self-attention: ẹrọ kan ti o ṣe iṣiro awọn iwuwo pataki laarin gbogbo tọkọtaya ti awọn token ninu titẹ sii, rọpo sisẹ lẹsẹsẹ ti RNNs pẹlu awọn iṣẹ matrix ti a le jẹ ẹgbẹ. Gbogbo awoṣe ede pataki ni ọdun 2023 jẹ iyatọ transformer ([Vaswani et al., 2017](https://arxiv.org/abs/1706.03762 "Attention Is All You Need")).
+> - **GPT-4 gẹgẹ bi benchmark ti ọdun 2023.** Ti tu silẹ ni Oṣù Kẹta 2023, GPT-4 gba percentile 90th ninu idanwo Bar AMẸRIKA, 99th ninu GRE Verbal, ati ṣafihan ero inu igbese pupọ kọja awọn iwe aṣẹ gigun. O ṣeto benchmark agbara ti awọn awoṣe atẹle ní ero lati pade tabi ju kọja ([OpenAI, 2023](https://arxiv.org/abs/2303.08774 "GPT-4 Technical Report")).
+> - **Awọn awoṣe open-weight ṣe ijọba tiwantiwa iraye si.** Llama 2 ti Meta (Oṣù Keje 2023) ati Mistral 7B ti Mistral AI (Oṣù Kẹsan 2023) fihan pe awọn awoṣe ti o dije pẹlu agbara kilasi GPT-3.5 le ṣiṣẹ lori amayederun ikọkọ — ti o ni ipa awọn ibeere ibugbe data ti awọn ile-iṣẹ ti o ṣakoso.
+> - **Awọn awakọ iṣẹ owo ni ọdun 2023.** Awọn imọran gbooro ni ipari ọdun 2023 pẹlu atunyẹwo adehun ofin (iwadi DocLLM JPMorgan), ibojuwo iyipada ilana, ati awọn irinṣẹ iṣelọpọ olupilẹṣẹ. Goldman Sachs royin lilo inu ti awọn oluranlọwọ koodu AI kọja awọn olupilẹṣẹ 10,000.
+> - **Hallucination jẹ idena iṣelọpọ.** Awọn LLM ṣe awọn abajade ti ko tọ ti o dun ni igbẹkẹle ni awọn oṣuwọn ti o yatọ nipasẹ iru iṣẹ ati awoṣe. Ninu awọn ọran lilo ti o ṣakoso — awọn ipinnu kirẹditi, awọn ero inu ibamu, awọn ifihan si alabara — hallucination kii ṣe abawọn ohun ọṣọ; o jẹ ewu ilana ati ojuṣe ti o nilo awọn idinku ẹya bii retrieval-augmented generation (RAG).
 
-### Understanding the Mechanics of Generative AI
+---
 
-#### Introduction to Generative AI
+## Bii Ẹya Transformer Ṣe Ṣiṣẹ
 
-Generative Artificial Intelligence is a cutting-edge field of machine learning that enables computers to produce content indistinguishable from that created by humans. This technology is a subset of AI that shifts from reactive responses to proactive creation. While AI tells you the weather, generative AI could write a poem about a rainy day, using metaphors and emotions that feel human.
+Gbogbo awoṣe ede pataki ti a fi ranṣẹ ni ọdun 2023 — GPT-4, Claude 2, Llama 2, Mistral, Falcon — ni a kọ lori ẹya transformer ti a ṣafihan ninu iwe ti ọdun 2017 "Attention Is All You Need." Oye ti ẹrọ akọkọ ṣalaye idi ti awọn awoṣe wọnyi ṣe ṣiṣẹ ati ibi ti wọn kuna.
 
-Generative AI is about predicting the next sequence in a pattern, such as words, pixels, or notes. Generative AI's power is that it learns from data to make new creations that are different from others.
+**Awọn token ati awọn embedding.** Awoṣe bẹrẹ nipa pipin ọrọ titẹ sii sinu awọn token ọrọ-abẹ (ni gbogbogbo nipa lilo byte-pair encoding). Token kọọkan ni a ṣe afiwe si vector iwọn giga (embedding) ti o ṣe koodu awọn ibatan itumo rẹ pẹlu awọn token miiran, ti a kọ lakoko pre-training.
 
-#### The Science Behind Generative AI
+**Self-attention.** Fun token kọọkan, awoṣe ṣe iṣiro awọn vector mẹta: Query (kini token yii n wa), Key (kini token yii nfunni), ati Value (kini token yii n ṣe ipa). Awọn ami attention ni a ṣe iṣiro nipa ṣiṣe ọja dot ti Query kọọkan si gbogbo Keys, ṣiṣe softmax lati ṣe awọn iwuwo, ati yiyi awọn Value ti a wọn pẹlu awọn ami wọnyẹn. Eyi tumọ si pe token kọọkan fiyesi si gbogbo token miiran ninu window ẹsun ni akoko kanna — ẹrọ ti o fun awọn transformer agbara wọn lati mu awọn igbẹkẹle gigun.
 
-To understand how generative AI like ChatGPT works, we must first delve into the neural network architectures that power it. At the pinnacle of these architectures is the transformer model, a type of neural network that is particularly adept at handling sequential data. Unlike its predecessors, the transformer does not process data in order, allowing it to look at all parts of the data simultaneously. This is known as the attention mechanism, which lets the model weigh the importance of different parts of the input data when predicting an output.
+**Multi-head attention.** Awọn ori attention pupọ n ṣiṣẹ ni afiwera, olukuluku n kọ awọn iru ibatan ti o yatọ (atọwọdọwọ, itumo, ipo). Awọn abajade wọn ni a sopọ ati ṣe asọtẹlẹ laini.
 
-Training these models involves feeding them an enormous corpus of text. During training, the model predicts what comes next in a sentence and receives feedback on its predictions. Over time, it adjusts its internal parameters to improve its accuracy. Unsupervised learning doesn't need labelled data, allowing the model to learn from any text.
+**Awọn Layer feed-forward.** Lẹhin attention, ipo kọọkan kọja nipasẹ awọn iyipada laini meji pẹlu imudara ti kii ṣe laini. Layer yii n ṣe iṣiro fun token kọọkan ni ominira, ti o mu awọn iyipada ẹya agbegbe.
 
-#### Differentiation from Other AI Systems
+**Iwọn.** GPT-4 ni ifoju ni ju trillion kan lọ awọn paramita (ti OpenAI ko tii jẹrisi). Llama 2 70B nlo 70 bilionu. Mistral 7B nlo 7 bilionu, pẹlu grouped-query attention ati sliding window attention fun ṣiṣe daradara. Awọn awoṣe nla ni gbogbogbo ṣe afihan ero inu zero-shot ati few-shot ti o dara julọ — awọn agbara ti n jade ti o jẹ ki wọn ṣe anfani fun awọn iṣẹ ti a ko kọ wọn ni gbangba fun.
 
-One might wonder how generative AI differs fundamentally from the expert systems of the past. Traditional AI systems rely on a set of rules crafted by humans. They are deterministic, predictable, and limited by the scenarios they are programmed to handle. Generative AI, however, is probabilistic and can handle uncertainty and ambiguity in a way that mimics human thought processes.
+## Ala-Ilẹ Awoṣe ti ọdun 2023
 
-While expert systems can tell if a sentence is grammatically correct, generative AI can write an article imbued with creativity and nuance. This shift from rule-based systems to models that generate new content has opened up possibilities that were previously the realm of science fiction.
+Ọdun 2023 gbekalẹ awọn ifilọlẹ awoṣe pataki diẹ sii ju ọdun kankan ti iṣaaju:
 
-## Idea
+**GPT-4 (OpenAI, Oṣù Kẹta 2023).** Ọpọ-ọna (ọrọ + titẹ sii aworan), window ẹsun to awọn token 128,000 ni iyatọ GPT-4 Turbo nigbamii, ero inu igbese-pupọ ti o lagbara. Ṣeto benchmark fun awọn iṣẹ ibugbe alamọja.
 
-### The Evolution and Advances in Generative AI
+**Claude 2 (Anthropic, Oṣù Keje 2023).** Window ẹsun token 100,000 (gigun julọ ni ifilọlẹ), iṣẹ ti o lagbara lori awọn iṣẹ iwe aṣẹ gigun bii atunyẹwo adehun ati itupalẹ ilana. Ikẹkọ Constitutional AI fun awọn abajade ipalara ti dinku.
 
-#### Historical Perspective
+**Llama 2 (Meta, Oṣù Keje 2023).** Ifilọlẹ open-weight ni awọn iyatọ paramita 7B, 13B, 34B, ati 70B. Lilo iṣowo jẹ laaye. Ṣiṣẹ imọran on-premise fun awọn ile-iṣẹ ti o ṣakoso. Bí ọgọọgọrun awọn iyatọ fine-tuned (Code Llama, Vicuna, WizardLM).
 
-The journey of generative AI began with simple models that could barely string together coherent sentences. Initially, these models were based on rules and decision trees, which made them rigid and limited to the knowledge explicitly coded into them. However, the advent of machine learning, and more recently deep learning, brought about a paradigm shift.
+**Mistral 7B (Mistral AI, Oṣù Kẹsan 2023).** 7 bilionu paramita ti o ju Llama 2 13B lọ lori ọpọlọpọ awọn benchmark. Grouped-query attention ati sliding window attention din iye owo inference kù. Awoṣe agbegbe Ilu Yuroopu pataki akọkọ, ti o yẹ ni ẹsun GDPR ati EU AI Act.
 
-The historical evolution of generative AI can be traced from early symbolic AI to today's neural networks. Each stage brought us closer to the goal of creating machines that could truly understand and generate human-like content.
+**Falcon 180B (TII, Oṣù Kẹsan 2023).** Awoṣe open-weight ti 180 bilionu paramita, ti a kọ lori awọn token 3.5 ẹgbẹrun bilionu ti data RefinedWeb. Ṣe afihan pe awọn awoṣe open-weight le sunmọ iwọn kilasi GPT-4.
 
-#### Latest Models
+## Ibi Ti Generative AI Wọ Ni Akọkọ Ninu Awọn Iṣẹ Owo
 
-Today, Generative Pre-trained Transformers 4 (GPT-4) and later models have raised the bar for what can be achieved with generative AI. These models can write essays like humans, make complex computer code, and more.
+Ni ipari ọdun 2023, awọn ile-iṣẹ owo ti yipada lati idanwo inu si awọn eto awakọ ti a ṣeto ni ọpọlọpọ awọn ọran lilo iyatọ:
 
-These advancements are a result of both architectural innovations and the exponential increase in the amount of data and computing power available. Transformer models are revolutionary because they capture input context.
+**Iṣelọpọ olupilẹṣẹ.** Awọn irinṣẹ ẹda koodu (GitHub Copilot, Amazon CodeWhisperer, awọn awoṣe fine-tuned inu) di ẹka ti a fi ranṣẹ gbooro julọ. Goldman Sachs royin pe awọn olupilẹṣẹ 10,000 ni iraye si iranlọwọ koodu AI. Morgan Stanley fi ranṣẹ GPT-4 inu lati ṣe iranlọwọ fun awọn alamọran owo gba alaye lati ipilẹ imọ iwe aṣẹ 100,000.
 
-#### Comparison with Previous Technologies
+**Sisẹ iwe aṣẹ ofin ati ilana.** Isẹ gbigba abala adehun, ibojuwo iyipada ilana, ati maapu ibamu jẹ awọn awakọ iye ti o ga julọ. Iwadi JPMorgan lori DocLLM fihan pe awọn awoṣe ede ti o mọ aṣa iwe aṣẹ ju awọn LLM gbogbogbo lọ lori awọn iṣẹ oye iwe aṣẹ owo.
 
-The contrast between generative AI and its predecessors is stark. Where older models might struggle with ambiguity and context, modern generative AI thrives on it. The robustness of these models comes not only from their architecture but also from their training methodologies. They train on datasets with different topics and styles, so they generate content that is both accurate and varied.
+**Imudara iṣẹ alabara.** Awọn banki fi ranṣẹ awọn oluranlọwọ ti LLM ṣe agbara fun awọn ibeere alabara ila-akọkọ, pẹlu igoke eniyan fun imọran ti o ṣakoso. Awọn ihamọ pataki: awoṣe ko le fun imọran ti o ṣakoso, ko gbọdọ hallucinate awọn ofin ọja, ati pe o gbọdọ jẹ ayẹwọ.
 
-## Impact
+**Ẹda itan KYC ati AML.** Ṣidinku awọn ilana iṣowo eka ati awọn profaili alabara fun atunyẹwo onínọmbà — rọpo ohun ti ti jẹ iṣẹ kikọ ọwọ — jade bi ọran lilo ti a le gbẹkẹle pẹlu ewu hallucination kekere nitori awoṣe ṣidinku data ti a pese dipo ṣe awọn ẹtọ tuntun.
 
-### The Broad Implications of Generative AI
+## Awọn Ewu Ti Iṣelọpọ Ṣafihan
 
-#### Influence on Various Sectors
+Gbigbe lati afihan si iṣelọpọ ninu awọn iṣẹ owo ṣafihan eto awọn ewu ti o nilo awọn idahun ẹya:
 
-Generative AI is not just an academic curiosity; it's a transformative force across multiple industries. In the creative sectors, such as music and literature, AI has begun to blur the lines between human and machine creativity.
+**Hallucination.** Awọn LLM ṣe awọn abajade ti o dun ni igbẹkẹle ti ko tọ ni awọn oṣuwọn ti o yatọ nipasẹ iru iṣẹ ati awoṣe. Lori awọn iṣẹ iranti otitọ, paapaa GPT-4 ṣe hallucinate ni awọn oṣuwọn ti ko ṣe gbanilaaye fun awọn ero inu ibamu tabi awọn ifihan kirẹditi. Idinku akọkọ jẹ retrieval-augmented generation (RAG): ṣe aaye abajade awoṣe ni awọn iwe aṣẹ ti a gba, ti a le jẹrisi dipo gbẹkẹle imọ paramita nikan.
 
-AI has also improved customer service in businesses, giving human-like responses to customers' questions. In healthcare, generative models are being used to predict molecular structures.
+**Prompt injection.** Awọn titẹ sii ọtá ti a fi sinu awọn iwe aṣẹ tabi awọn ifiranṣẹ olumulo le tun tọ ihuwasi awoṣe. Ninu awọn iṣẹ owo, ibi ti awọn LLM n ṣe ilana awọn iwe aṣẹ ti a ko gbẹkẹle (awọn adehun, awọn imeeli, awọn ifisilẹ alabara), prompt injection jẹ ewu aabo iṣelọpọ, kii ṣe imọ-ọrọ.
 
-Gen AI can be used for any tasks, like content creation, translation, game development, and more.
+**Jiju data.** Awọn awoṣe fine-tuned tabi ti a fun pẹlu data ikọkọ le ṣe atunṣe data yẹn ninu abajade — ewu ohun elo fun PII, awọn ipo iṣowo, ati alaye alabara. Awọn iṣakoso ẹya (imọran ikọkọ, iṣakoso data-ninu-ẹsun, sisẹ abajade) ni a nilo, kii ṣe aṣayan.
 
-#### Ethical and Societal Considerations
+**Ipilẹṣẹ awoṣe ati iyẹwọ.** Awọn aṣofin nireti awọn ile-iṣẹ owo lati ṣe alaye awọn ipinnu adaṣe. LLM kan ti o ṣe igbelewọn kirẹditi laisi itọpa ero inu ti a le ṣe ayẹwo kuna awọn ibeere ṣiṣe alaye ti GDPR Abala 22, awọn ipese AI eewu-giga ti EU AI Act, ati itọnisọna eewu awoṣe FCA ti isiyi.
 
-With the rise of generative AI, ethical considerations have come to the forefront. The potential for deepfakes, misinformation, and the displacement of jobs traditionally done by humans are real concerns that society must address. There is also the question of ownership and copyright when content is generated by AI.
+**Imọ ti ogbo.** Awọn LLM ni awọn ọjọ ipalẹmọ ikẹkọ. Awoṣe ti a kọ lori data titi di ibẹrẹ ọdun 2023 ko mọ nipa awọn iyipada ilana, awọn ipinnu oṣuwọn, tabi awọn iṣẹlẹ ọja lẹhin ọjọ yẹn — ihamọ pataki fun lilo akoko gidi tabi awọn ọran lilo asọye ọja laisi RAG tabi gbigba akoko gidi.
 
-The societal impact of generative AI extends beyond these concerns, though. There's also potential for change, such as personalised education programmes that adapt to each student's learning style or AI that can bridge language barriers.
+## Awọn Ibeere Ijọba Ṣaaju Imọran
 
-#### Long-Term Outlook
+Awọn akosemose iṣẹ owo ti n ṣiṣẹ ni ọdun 2023 ko duro de idaniloju ilana ṣaaju imọran — ṣugbọn awọn ile-iṣẹ olori gba awọn ilana iṣakoso eewu awoṣe (MRM) ti a ṣatunṣe lati itọnisọna SR 11-7 ati SS3/18:
 
-Looking ahead, the long-term impact of generative AI hinges on how we choose to integrate it into our lives and control its development. The potential for this technology to benefit humanity is enormous, but it requires careful management and regulation.
+**Ipo awoṣe ati iwe aṣẹ.** Awọn LLM ti a fi ranṣẹ fun awọn iṣẹ iṣowo nilo iwe aṣẹ ti ipilẹṣẹ data ikẹkọ, ilana fine-tuning, awọn ipo ikuna ti a mọ, ati iṣẹ lori awọn eto ijẹrisi pato ibugbe.
 
-Future advancements in generative AI could lead to more personalised and engaging interactions with technology, creating experiences tailored to individual preferences and needs. However, this future is contingent upon our ability to navigate the ethical challenges and to develop AI in a responsible and controlled manner.
+**Awọn aaye iṣayẹwo eniyan ninu lupu.** Fun awọn abajade ti o ṣakoso (awọn ipinnu kirẹditi, awọn ero inu ibamu, awọn ifihan si alabara), atunyẹwo eniyan wa ni pataki ni ọdun 2023. Adaṣe ni a lo si ṣiṣẹda ati idinku; ifọwọsi ikẹhin wa ni eniyan.
 
-## Incentives
+**Ewu ti o ta.** Lilo API awoṣe ẹgbẹ-kẹta (OpenAI, Anthropic, Google) ṣe afihan ewu ifọkansi ti o ta, ewu ibugbe data, ati ewu iyipada awoṣe (awọn olupese le ṣe imudojuiwọn awọn awoṣe ni farasin). Awọn adehun ile-iṣẹ ati awọn imọran ikọkọ ṣe idinku apa kan iwọnyi.
 
-### The Driving Forces Behind Generative AI Development
+**Ifowosowopo ilana.** FCA, PRA, ECB, ati FINRA gbogbo wọn gbekalẹ awọn iwe tabi awọn ọrọ lori ijọba AI ni ọdun 2023. Ifiranṣẹ ti o ni ibamu: awọn ilana eewu awoṣe ti o wa tẹlẹ kan si AI, ati awọn ile-iṣẹ yẹ ki o jẹ proactive ni ṣiṣe iwe aṣẹ ọna ijọba wọn ṣaaju itọnisọna osise.
 
-#### Economic Incentives
+## Awọn Ibeere Ti A Saba Beere
 
-The development of generative AI is largely driven by economic incentives. Businesses are always on the lookout for ways to improve efficiency and reduce costs, and AI offers both. With its ability to automate complex tasks and generate creative solutions, generative AI can provide significant cost savings and productivity boosts.
+**Kini iyatọ laarin awoṣe ede nla ati awoṣe ipilẹ?**
 
-AI-generated content can be tailored to different audiences in marketing, software development, and more. This can reduce the time and cost of bringing new software to market.
+Awoṣe ede nla (LLM) jẹ awoṣe ti a kọ lori data ọrọ ni iwọn lati sọtẹlẹ ati ṣe ede. Awoṣe ipilẹ jẹ ọrọ ti o gbooro julọ fun eyikeyi awoṣe ti a ti kọ tẹlẹ nla ti o le ṣatunṣe (fine-tuned tabi ti a fun) fun ọpọlọpọ awọn iṣẹ downstream — pẹlu awọn LLM ṣugbọn tun awọn awoṣe iran, awọn awoṣe koodu, ati awọn awoṣe ọpọ-ọna. GPT-4 jẹ LLM mejeeji ati awoṣe ipilẹ. DALL-E 3 jẹ awoṣe ipilẹ ṣugbọn kii ṣe LLM. Ni iṣe, awọn ọrọ naa ni a maa n lo ni paarọ nigbati o n tọka si awọn ọna ṣiṣe ẹda ọrọ.
 
-#### Innovation and Competition
+**Kini retrieval-augmented generation ati idi ti o ṣe pataki fun awọn iṣẹ owo?**
 
-The field of generative AI is also propelled by the desire to innovate and gain a competitive edge. As AI technology becomes a crucial differentiator in the market, companies are investing heavily in research and development. This competitive drive spurs continuous improvements in AI capabilities, leading to more advanced and capable systems.
+RAG darapo awoṣe ede pẹlu eto gbigba: dipo gbẹkẹle nikan lori imọ paramita ti awoṣe (ohun ti o kọ lakoko ikẹkọ), RAG ṣe gbigba awọn iwe aṣẹ ti o yẹ ni akoko inference ati pese wọn bi ẹsun. Eyi ṣe idinku hallucination pataki lori awọn iṣẹ otitọ nitori awoṣe n ṣe ajọpọ ọrọ ti a pese dipo iranti awọn otitọ ti a kọ. Fun awọn iṣẹ owo, RAG ṣiṣẹ awọn ọran lilo bii ibojuwo iyipada ilana (nigbagbogbo ṣe gbigba awọn ofin lọwọlọwọ) ati atunyẹwo adehun (fi awoṣe sii ninu ọrọ adehun gidi) ti yoo jẹ hallucination-prone pupọ pẹlu ọna ẹda mimọ.
 
-The race to achieve AI supremacy is not just among companies but also among nations, which view leadership in AI technology as a strategic advantage.
+**Bawo ni awọn ile-iṣẹ owo ṣe yẹ ki o ṣe mu EU AI Act si awọn imọran generative AI ni ọdun 2023?**
 
-#### Societal Benefits
+EU AI Act wa ni ilana ofin ni ọdun 2023 (Ile-igbimọ Ilu Yuroopu gbekalẹ ni Oṣù Kẹta 2024, wọ si agbara Oṣù Kẹjọ 2024). Sibẹsibẹ, awọn ile-iṣẹ ti o ni awọn iṣẹ EU tabi awọn alabara EU ti n ṣe iṣiro awọn paipu wọn tẹlẹ. Awọn ọna ṣiṣe AI eewu-giga ni ṣiṣe aami kirẹditi, awọn ipinnu iṣẹ, ati amayederun pataki nilo awọn igbelewọn ibamu, awọn ẹrọ abojuto eniyan, ati iwesilẹ ayẹwo. Awọn awoṣe General-purpose AI (GPAI) — eyiti o pẹlu awọn awoṣe ipilẹ bii GPT-4 — ni ipele tiwọn ti awọn ibeere ni ayika ìmọ ati eewu eto. Awọn ile-iṣẹ ti o bẹrẹ iṣẹ iwe aṣẹ ati ijọba ni ọdun 2023 wa ni ipo ti o dara julọ fun awọn ọjọ gbepọ imọran.
 
-Beyond the economic and competitive advantages, there are powerful societal incentives driving the development of generative AI. This technology has the potential to address some of the most pressing challenges facing the world today, from climate change to healthcare.
+**Kini iyatọ iṣe laarin fine-tuning ati prompt engineering fun awọn imọran LLM ile-iṣẹ?**
 
-Generative AI could, for example, model climate systems to predict changes and offer solutions or help with drug discovery by predicting interactions between molecules.
+Fine-tuning ṣe atunṣe awọn iwuwo awoṣe nipa tẹsiwaju ikẹkọ lori data pato ibugbe — o kọ awoṣe imọ tuntun ati awọn ilana ihuwasi. O nilo data ikẹkọ ti a samisi, isuna iṣiro, ati itọju itẹsiwaju bi awọn awoṣe ipilẹ ti wa ni imudojuiwọn. Prompt engineering (pẹlu awọn apẹẹrẹ few-shot ati awọn prompt eto) ṣe apẹrẹ ihuwasi ni akoko inference laisi yiyipada awọn iwuwo — yiyara lati ṣe imọran ati imudojuiwọn, ṣugbọn ti diwọn nipasẹ ohun ti awoṣe ipilẹ mọ tẹlẹ. Fun ọpọlọpọ awọn imọran iṣẹ owo ọdun 2023, RAG pẹlu prompt engineering ni ibẹrẹ ibẹrẹ ti a fẹ; fine-tuning ni a fi pamọ fun awọn ọran ibi ti awoṣe nilo lati kọ ọrọ-aṣẹ tabi gba awọn ọna abajade to muna.
 
-## Conclusion
+## Awọn Itọkasi
 
-### Embracing the Future of Generative AI
-
-As we approach a new era in technology, generative AI is a beacon of innovation, mimicking the mind's ingenuity. From its humble beginnings to today's sophisticated algorithms, generative AI has transcended its role as a tool.
-
-Generative AI's changes to what machines can do and how we use them have a big impact on sectors like technology and law. The ripples of this impact extend beyond economic gains and competitive edges; they touch the very fabric of societal advancement and ethical considerations.
-
-The incentives driving the development of generative AI paint a picture of a future filled with potential. Yet, with great power comes the imperative for responsible stewardship. As we harness this technology to solve complex problems and inspire unprecedented creativity, we must also navigate the moral landscapes it unveils.
-
-Generative AI holds a mirror to our collective consciousness, challenging us to reflect on the kind of future we wish to create. It is not just about what AI can do for us, but what we aspire to achieve with AI as our partner. In this partnership lies the potential for a synergy that could elevate humanity to new heights of accomplishment.
-
-As we forge ahead, let us embrace generative AI with a balanced perspective, harnessing its capabilities with caution and foresight. By doing so, we can guarantee that this remarkable technology serves as a cornerstone for an inclusive, progressive, and enlightened tomorrow.
-
-### Navigating the Cutting Edge: Latest Advancements in Generative AI
-
-The field of generative AI is constantly evolving, with new advancements emerging at a rapid pace. Here are some of the latest breakthroughs that are shaping the future of this transformative technology:
-
-#### 1. GPT-4 and Beyond: Unleashing the Power of Large Language Models
-
-The development of large language models (LLM) has been a major driver of innovation in generative AI. GPT-4, the latest iteration of OpenAI's groundbreaking LLM, has demonstrated remarkable capabilities, including generating human-quality text, translating languages, and writing different kinds of creative content. Other LLMs, such as Google AI's Meena and LaMDA, are also pushing the boundaries of what's possible with generative AI.
-
-#### 2. Generative Adversarial Networks (GANs): Refining Creativity and Realism
-
-GANs have become a powerful tool for generating realistic and creative content. These models consist of two neural networks that compete against each other, resulting in the creation of increasingly sophisticated images, videos, and audio. GANs have been used to generate art, design fashion, and even create deepfakes.
-
-#### 3. Autoencoders and Diffusion Models: Unveiling Hidden Patterns and Structures
-
-Autoencoders and diffusion models are two emerging techniques that are gaining traction in generative AI. Autoencoders learn to compress and reconstruct data, allowing them to identify underlying patterns and structures. Diffusion models, on the other hand, start with a noisy representation of data and gradually refine it to produce a high-quality output.
-
-#### 4. Multimodal Generative AI: Bridging the Gap Between Senses
-
-Multimodal generative AI aims to bridge the gap between different senses, such as sight, sound, and text. This technology has the potential to create immersive experiences that blur the lines between the digital and physical worlds. For instance, multimodal generative models could generate music that matches a specific image or create a virtual environment that responds to natural language commands.
-
-#### 5. Explainable AI: Unravelling the Black Box
-
-As generative AI models become increasingly complex, there is a growing need for explainable AI (XAI) techniques. XAI helps to explain how these models make decisions, providing transparency and accountability. This is crucial for building trust in generative AI and making sure that it is used responsibly and ethically.
-
-These advancements represent just a glimpse into the ever-evolving landscape of generative AI. As research continues and computational power increases, we can expect even more groundbreaking developments that will further shape the future of this transformative technology.
-
-### The Promise of Open-Source AI: Fostering Innovation and Shaping a Brighter Future
-
-The open-source AI movement has seen tremendous growth in recent years. Numerous projects and initiatives are leveraging cutting-edge AI technologies, which were previously only available to large companies and research institutions. Now, however, anyone can access and contribute to this field.
-
-This movement has been a driving force behind the remarkable progress in generative AI, breaking down barriers to access and fostering collaboration among researchers and developers. This synergy has enabled them to undertake groundbreaking projects, creating powerful tools and frameworks that are redefining the future of generative AI technology.
-
-The development of large language models (LLMs), such as GPT-3 and LaMDA, stands as a testament to the power of open-source AI. These models have demonstrated exceptional capabilities in generating human-quality text, translating languages, and crafting diverse creative content. Their availability has ignited innovation across various domains, from creative writing and marketing to education and healthcare.
-
-Open-source AI is also playing a pivotal role in the advancement of other AI technologies, including natural language processing (NLP), computer vision, and robotics. These advancements herald a future where AI is more accessible, adaptable, and seamlessly integrated into our daily lives.
-
-The promising future of open-source AI hinges on its ability to foster collaboration, transparency, and accelerated innovation. By openly sharing knowledge and resources, researchers and developers can synergize their efforts to tackle complex challenges and propel the field of AI forward. Open-source AI provides transparency and facilitates public review and ethical considerations, ensuring the responsible use of this technology for the benefit of society.
-
-As open-source AI continues to evolve, it holds the potential to revolutionise industries and transform our world. Open-source AI is key to a future where technology helps humanity and benefits everyone. This comes from personalised education and healthcare, creative expression and scientific discovery.
-
-![divider][divider].class=\"m-10 w-100\"
-
-In closing, I hope this article has sparked your interest in the exciting world of generative AI. If you're eager to dive deeper into this transformative technology or have any questions, please don't hesitate to reach out to me on [LinkedIn ⧉][LinkedIn] or via the [contact page][contact].
-
-Thank you again for your time and I look forward to hearing from you.
-
-[contact]: /contact/index.html "Contact"
-[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-[linkedin]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
-
+- Vaswani, A., et al., (2017). [Attention Is All You Need ⧉](https://arxiv.org/abs/1706.03762 "Attention Is All You Need").
+- OpenAI, (2023). [GPT-4 Technical Report ⧉](https://arxiv.org/abs/2303.08774 "GPT-4 Technical Report").
+- Touvron, H., et al., Meta AI, (2023). [Llama 2: Open Foundation and Fine-Tuned Chat Models ⧉](https://arxiv.org/abs/2307.09288 "Llama 2").
+- Jiang, A., et al., Mistral AI, (2023). [Mistral 7B ⧉](https://arxiv.org/abs/2310.06825 "Mistral 7B").
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-24">2026-05-24</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future" class="related-media" aria-label="AI Trends 2024: Insights and Predictions for the Future" tabindex="-1"><img alt="Drone View of London" src="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future">AI Trends 2024: Insights and Predictions for the Future</a></h3><p><time datetime="2024-01-01">2024-01-01</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering" class="related-media" aria-label="AI Prompt Engineering 2024: Techniques That Work" tabindex="-1"><img alt="A man analysing data on screens" src="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering">AI Prompt Engineering 2024: Techniques That Work</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation" class="related-media" aria-label="EU's AI Act: Pioneering Ethical AI Regulation Worldwide" tabindex="-1"><img alt="A person sitting on black bench reading newspaper" src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

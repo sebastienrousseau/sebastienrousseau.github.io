@@ -1,13 +1,13 @@
 ---
 title: "Mathematical and Cryptographic Constants for Rust Security"
-subtitle: "Vetted mathematical and cryptographic constants for memory-safe Rust security."
-description: "Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code security."
+subtitle: "মেমরি-সেফ Rust নিরাপত্তার জন্য যাচাইকৃত গাণিতিক ও ক্রিপ্টোগ্রাফিক কনস্ট্যান্ট।"
+description: "সুনিপুণভাবে যাচাইকৃত গাণিতিক ও ক্রিপ্টোগ্রাফিক কনস্ট্যান্ট দিয়ে কোড অখণ্ডতা সুরক্ষিত করুন, মেমরি ও কনকারেন্সি নিরাপত্তা শক্তিশালী করে উন্নত কোড সুরক্ষা নিশ্চিত করুন।"
 date: "Nov 05, 2023"
 language: "bn-BD"
 locale: "bn_BD"
 banner: "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp"
-banner_alt: "Mathematics computation"
-keywords: "mathematical constants, cryptographic constants, Rust security, secure communication, encryption, RSA, elliptic curve cryptography, Common (CMN) library, Rust applications, mathematical computations"
+banner_alt: "গণিত গণনা"
+keywords: "গাণিতিক কনস্ট্যান্ট, ক্রিপ্টোগ্রাফিক কনস্ট্যান্ট, Rust security, নিরাপদ যোগাযোগ, এনক্রিপশন, RSA, elliptic curve cryptography, Common (CMN) library, Rust অ্যাপ্লিকেশন, গাণিতিক গণনা"
 ---
 
 ![Mathematics computation](https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp).class="img-fluid clearfix"

@@ -1,13 +1,13 @@
 ---
 title: "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
-subtitle: "CRYSTALS-Kyber, the NIST FIPS 203 standard for post-quantum key encapsulation."
-description: "Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era."
+subtitle: "CRYSTALS-Kyber, পোস্ট-কোয়ান্টাম কী এনক্যাপসুলেশনের জন্য NIST FIPS 203 মান।"
+description: "আবিষ্কার করুন কীভাবে CRYSTALS-Kyber, একটি কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফি অ্যালগরিদম, ক্রিপ্টোগ্রাফির বিশ্বে বিপ্লব এনেছে এবং আমাদের কোয়ান্টাম যুগের জন্য প্রস্তুত করছে।"
 date: "Nov 19, 2023"
 language: "bn-BD"
 locale: "bn_BD"
 banner: "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp"
-banner_alt: "A modern, sleek quantum computer"
-keywords: "quantum computing, quantum-resistant cryptography, CRYSTALS-Kyber, cryptography, security, banking, financial, encryption, data protection, future-proof"
+banner_alt: "একটি আধুনিক ও মসৃণ কোয়ান্টাম কম্পিউটার"
+keywords: "কোয়ান্টাম কম্পিউটিং, কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফি, CRYSTALS-Kyber, ক্রিপ্টোগ্রাফি, নিরাপত্তা, ব্যাংকিং, আর্থিক, এনক্রিপশন, ডেটা সুরক্ষা, ভবিষ্যৎ-নিশ্চিত"
 ---
 
 ![A modern, sleek quantum computer](https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp).class="img-fluid clearfix"

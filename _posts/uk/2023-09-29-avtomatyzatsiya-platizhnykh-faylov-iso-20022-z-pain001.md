@@ -1,13 +1,13 @@
 ---
 title: "[UK DRAFT] Automating ISO 20022 Payment Files Creation with Pain001"
-subtitle: "ISO 20022 payment automation and wholesale-payments engineering with pain001."
-description: "Automate the creation of ISO 20022 pain.001 payment files from CSV or SQLite. pain001 is the open-source Python library that streamlines compliance."
+subtitle: "Автоматизація платежів ISO 20022 та інжиніринг оптових платежів за допомогою pain001."
+description: "Автоматизуйте створення платіжних файлів ISO 20022 pain.001 з CSV або SQLite. pain001 — бібліотека Python з відкритим кодом, яка спрощує дотримання вимог."
 date: "Sep 29, 2023"
 language: "uk-UA"
 locale: "uk_UA"
 banner: "https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp"
-banner_alt: "Turned off laptop computer on top of brown wooden table"
-keywords: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
+banner_alt: "Вимкнений ноутбук на коричневому дерев'яному столі"
+keywords: "pain001, iso 20022, автоматизація платежів, скорочення витрат, обробка платежів, платіжні файли, ініціювання платежів, pain message, pain message standards, pain message validation"
 ---
 
 ![Turned off laptop computer on top of brown wooden table](https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp).class=\"img-fluid clearfix\"

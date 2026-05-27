@@ -1,13 +1,13 @@
 ---
 title: "[UK DRAFT] Protecting Data in the Quantum Age: The Hash Library (HSH)"
-subtitle: "HSH: a quantum-resistant hash library for the post-quantum era of authentication."
-description: "HSH uses quantum-resistant cryptographic primitives to protect your data, ensuring its security even in the face of future quantum computing advances."
+subtitle: "HSH: квантово-стійка хеш-бібліотека для пост-квантової ери автентифікації."
+description: "HSH використовує квантово-стійкі криптографічні примітиви для захисту ваших даних, гарантуючи їхню безпеку навіть в умовах майбутніх досягнень квантових обчислень."
 date: "Oct 16, 2023"
 language: "uk-UA"
 locale: "uk_UA"
 banner: "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp"
-banner_alt: "A creative illustration on Quantum computing theme"
-keywords: "quantum-resistant cryptography, post-quantum cryptography, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, quantum computing"
+banner_alt: "Творча ілюстрація на тему квантових обчислень"
+keywords: "квантово-стійка криптографія, пост-квантова криптографія, хеш-бібліотека, HSH, хешування паролів, виведення ключів, Argon2i, Bcrypt, Scrypt, квантові обчислення"
 ---
 
 ![A creative illustration on Quantum computing theme](https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp).class=\"img-fluid clearfix\"
