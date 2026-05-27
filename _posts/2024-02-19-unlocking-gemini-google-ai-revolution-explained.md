@@ -58,7 +58,7 @@ news_title: "Unlocking Gemini 1.5: Google's AI Revolution Explained"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-02-19-unlocking-gemini-google-ai-revolution-explained/rss.xml"
-category: "Technology"
+category: "AI"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Explore Gemini 1.5, Google's AI breakthrough, enhancing efficiency, quality, and context understanding in the AI landscape"

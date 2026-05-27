@@ -49,7 +49,7 @@ last_reviewed: "2026-05-17"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/rss.xml"
-category: "Technology"
+category: "Finance"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "The definitive 2026 blueprint for agentic engineering in banks and financial institutions — covering the move from vibe coding to spec-driven development, HITL vs HOTL, third-party risk management under DORA, the regulatory stack, legacy modernisation, and the quantum-safe substrate."

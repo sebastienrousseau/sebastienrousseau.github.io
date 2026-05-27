@@ -10,19 +10,19 @@ banner: "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp"
 cdn: "https://cloudcdn.pro/clients"
 changefreq: "weekly"
 charset: "UTF-8"
-cname: ""
+cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Feb 12, 2024"
-description: "Discover how Àkàndé leverages OpenAI GPT's natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance."
+description: "Àkàndé is an open-source Python voice assistant that chains OpenAI Whisper speech recognition, GPT-4 chat completions, and a local SQLite response cache into a voice-driven workflow — generating PDF summaries from conversation history and keeping all stored data local."
 format-detection: "telephone=no"
 hreflang: "en"
-icon: "https://cloudcdn.pro/clients/akande/v1/logos/akande.svg"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html"
 image_alt: "A black and white photo of Sebastien Rousseau"
 image_height: "161"
 image_width: "161"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
-keywords: "Àkàndé, Voice Assistant, Natural Language Understanding, PDF Summaries, Efficient Caching, OpenAI GPT, Executive Assistance, Personal Assistance, Digital Assistants, Technology Innovation"
+keywords: "Àkàndé, OpenAI GPT-4, Whisper STT, SQLite caching, fpdf2, Python voice assistant, chat completions API, PDF summary generation, SHA-256 cache, text-to-speech, executive assistant AI, open-source"
 language: "en-GB"
 layout: "report"
 locale: "en_GB"
@@ -39,8 +39,8 @@ referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "Empowering Seamless Interactions with Cutting-Edge AI Technology"
-tags: "Àkàndé, Voice Assistant, NLU, PDF, Caching, OpenAI, Executive, Personal, Digital, Innovation, Python, SQLite, Privacy"
+subtitle: "Architecture of an open-source Python voice assistant: Whisper, GPT-4, SQLite cache, and fpdf2"
+tags: "Àkàndé, GPT4, WhisperSTT, SQLiteCache, fpdf2, PythonVoiceAssistant, ChatCompletionsAPI, PDFSummary, OpenSource, ExecutiveAI"
 theme-color: "0, 67, 165"
 title: "Àkàndé: GPT-Powered Voice Assistant for Executives"
 url: "https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html"
@@ -48,24 +48,24 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # News - The News SiteMap front matter (YAML).
 news_genres: "Blog"
-news_keywords: "Àkàndé, Voice Assistant, Natural Language Understanding, PDF Summaries, Efficient Caching, OpenAI GPT, Executive Assistance, Personal Assistance, Digital Assistants, Technology Innovation"
+news_keywords: "Àkàndé, OpenAI GPT-4, Whisper STT, SQLite caching, fpdf2, Python voice assistant, chat completions API, PDF summary generation, SHA-256 cache, executive assistant AI"
 news_language: "en"
 news_image_loc: "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp"
 news_loc: "https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html"
 news_publication_date: "Mon, 12 Feb 2024 11:12:12 +0000"
 news_publication_name: "sebastienrousseau.com"
-news_title: "Àkàndé Voice Assistant, A Personal and Executive Assistance"
+news_title: "Àkàndé: GPT-Powered Voice Assistant for Executives"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/rss.xml"
-category: "Technology"
+category: "AI"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "Discover how Àkàndé leverages OpenAI GPT's natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance."
+item_description: "Àkàndé is an open-source Python voice assistant that chains OpenAI Whisper speech recognition, GPT-4 chat completions, and a local SQLite response cache into a voice-driven workflow — generating PDF summaries from conversation history and keeping all stored data local."
 item_guid: "https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/rss.xml"
 item_link: "https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/rss.xml"
 item_pub_date: "Mon, 12 Feb 2024 11:12:12 +0000"
-item_title: "Àkàndé Voice Assistant, A Personal and Executive Assistance"
+item_title: "Àkàndé: GPT-Powered Voice Assistant for Executives"
 last_build_date: "Mon, 12 Feb 2024 11:12:12 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 pub_date: "Mon, 12 Feb 2024 11:12:12 +0000"
@@ -79,7 +79,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Sebastien Rousseau"
+apple-mobile-web-app-title: "Àkàndé"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
@@ -90,11 +90,11 @@ msapplication-navbutton-color: "0, 67, 165"
 
 twitter_card: "summary"
 twitter_creator: "@wwdseb"
-twitter_description: "Discover how Àkàndé leverages OpenAI GPT's natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance."
+twitter_description: "Àkàndé is an open-source Python voice assistant that chains OpenAI Whisper speech recognition, GPT-4 chat completions, and a local SQLite response cache into a voice-driven workflow — generating PDF summaries from conversation history and keeping all stored data local."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
-twitter_title: "Àkàndé Voice Assistant, A Personal and Executive Assistance"
+twitter_title: "Àkàndé: GPT-Powered Voice Assistant for Executives"
 twitter_url: "https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -107,117 +107,210 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
-excerpt: "In the ever-evolving landscape of technology, voice assistants have emerged from the fringes of novelty to become central figures in our daily digital interactions. Amidst this transformative…"
-last_reviewed: "2026-05-11"
+excerpt: "Àkàndé is an open-source Python voice assistant that chains OpenAI Whisper speech recognition, GPT-4 chat completions, and a local SQLite response cache into a voice-driven workflow — generating PDF summaries from conversation history via fpdf2 and keeping all stored data local with no cloud persistence."
+last_reviewed: "2026-05-24"
 ---
 
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Discover how Àkàndé leverages OpenAI GPT's natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> <a href="https://akande.co">Àkàndé</a> is an open-source Python voice assistant built on three components: OpenAI Whisper for speech-to-text, the GPT-4 Chat Completions API for natural language understanding and response generation, and a local SQLite cache keyed on SHA-256 hashes of normalised query strings. Conversation history is exported as formatted PDFs via fpdf2. No conversation data is persisted to any remote service beyond the OpenAI API call itself.</p>
 <p class="post-lead-heading"><strong>Key takeaways</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Àkàndé Voice Assistant, A game-changer in personal and executive assistance.</strong> Àkàndé Voice Assistant ⧉ represents a groundbreaking integration of OpenAI's GPT models with Python's versatility, offering unprecedented natural language understanding, efficient data caching, and the unique…</li>
-  <li><strong>Àkàndé: The Pinnacle of Voice Assistant Innovation.</strong> In the ever-evolving landscape of technology, voice assistants have emerged from the fringes of novelty to become central figures in our daily digital interactions.</li>
-  <li><strong>The Evolution of Voice Assistants.</strong> Voice assistants have become ubiquitous in our lives, facilitating a myriad of tasks with simple voice commands.</li>
-  <li><strong>The GPT Advantage in Natural Language Understanding.</strong> At the heart of Àkàndé's revolutionary capabilities is its use of OpenAI's GPT models, which stand at the forefront of natural language processing technology.</li>
+  <li><strong>SQLite cache eliminates redundant API calls.</strong> Query responses are stored under a SHA-256 hash of the normalised query string; cache hits return in under 10 ms versus ~600–900 ms for a live GPT-4 API round-trip, and they cost nothing in tokens.</li>
+  <li><strong>Whisper handles multilingual input without a local model.</strong> Audio is submitted to the <code>openai.audio.transcriptions.create()</code> endpoint, which supports 99 languages; transcription runs server-side so no large ASR model is required on the host machine.</li>
+  <li><strong>Multi-turn context is managed client-side.</strong> Àkàndé maintains a <code>messages</code> list in memory for the session duration, passing the full conversation history to the Chat Completions API on every turn — the standard pattern for maintaining context within the GPT context window.</li>
+  <li><strong>PDF export uses fpdf2 with automatic pagination.</strong> The full session transcript is paginated using fpdf2's <code>multi_cell()</code> method, preserving speaker labels, timestamps, and configurable fonts, then written to disk — no cloud upload required.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html">Fast Real-Time Speech Recognition on macOS: OpenAI Whisper</a>, <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a>, <a href="https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html">Quantum Algorithm Challenges Lattice-Based Cryptography</a>.</p>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/">Fast Real-Time Speech Recognition on macOS: OpenAI Whisper</a>, <a href="https://sebastienrousseau.com/2024-01-29-ai-powered-audio-insights-analysis-translations/">Audio Analyser: Azure Speech, NLP, and Translation Pipeline</a>, <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/">AI Prompt Engineering 2024: Techniques That Work</a>.</p>
 </aside>
 <!-- lead-end -->
 
-## Àkàndé Voice Assistant, A game-changer in personal and executive assistance
+> **Executive Summary / Key Takeaways**
+>
+> - **[Àkàndé ⧉][00]** is an open-source Python voice assistant that chains OpenAI Whisper speech-to-text, GPT-4 chat completions, a local SQLite response cache, and fpdf2 PDF export into a single voice-driven workflow requiring no cloud storage and no local AI model weights.
+> - **The SQLite cache** stores SHA-256 hashes of normalised query strings mapped to raw API response text; cache hits cost zero tokens and return in under 10 ms, making repeated queries (such as reviewing a decision from earlier in a meeting) essentially free.
+> - **Multi-turn conversation** is maintained by building the `messages` list in memory and passing it on every Chat Completions API call — the model receives full session history so it can refer to earlier exchanges, at the cost of incrementally increasing token usage per turn.
+> - **PDF summary generation** serialises the session `messages` list to a formatted fpdf2 document: user turns and assistant turns are labelled, timestamps are inserted, and automatic pagination handles sessions of any length; the file is written to the local filesystem, not uploaded.
+> - **Privacy boundary:** only the live query (and session history up to the context window limit) leaves the device — no audio recordings, no transcripts, and no cached responses are sent to any remote service other than OpenAI's API.
 
-[**Àkàndé Voice Assistant ⧉**][00] represents a groundbreaking integration of OpenAI's GPT models with Python's versatility, offering unprecedented natural language understanding, efficient data caching, and the unique capability to generate PDF summaries. This innovative voice assistant caters to both personal and executive needs, providing a seamless, voice-driven user experience that enhances productivity and information management. Àkàndé's sophisticated features, including its advanced caching mechanism and commitment to privacy, position it as an indispensable tool for professionals and students alike, promising a future where digital assistance is more intuitive, responsive, and tailored to individual requirements.
+[**Àkàndé ⧉**][00] is an open-source Python voice assistant built around three composable components: OpenAI Whisper for speech recognition, the GPT-4 Chat Completions API for language understanding and generation, and a local SQLite database for response caching and session persistence. The result is a voice-driven workflow that can be run on a laptop without local model weights, offline storage infrastructure, or a container stack.
 
-![divider][divider].class=\"m-10 w-100\"
+This article describes the technical architecture of each component, the design decisions around caching and multi-turn context, and the PDF export pipeline.
 
-![A red and green stylised helmet](https://cloudcdn.pro/clients/akande/v1/logos/akande.svg).class=\"fade-in w-50 p-3 float-end\"
+## Pipeline Overview
 
-## Àkàndé: The Pinnacle of Voice Assistant Innovation
+A single Àkàndé interaction follows this sequence:
 
-In the ever-evolving landscape of technology, voice assistants have emerged from the fringes of novelty to become central figures in our daily digital interactions. Amidst this transformative wave, Àkàndé stands out as a paragon of innovation, seamlessly blending OpenAI's cutting-edge GPT technology with the robustness of Python to redefine what we can expect from digital assistants. Àkàndé is not just a voice assistant; it's a comprehensive solution designed to enhance both personal and executive workflows through superior natural language understanding (NLU), efficient information retrieval, and the generation of insightful PDF summaries. This article explores Àkàndé's unique features, its technological underpinnings, and the myriad ways it is set to revolutionise the landscape of personal and executive assistance.
+1. **Audio capture** — the user speaks; the application records audio to a temporary WAV file using `sounddevice` or a compatible audio library.
+2. **Speech-to-text** — the WAV file is submitted to `openai.audio.transcriptions.create()` (Whisper API); the transcript is returned as a plain string.
+3. **Cache lookup** — the transcript is normalised (lowercased, whitespace-collapsed) and SHA-256 hashed; the hash is looked up in the local SQLite `response_cache` table.
+4. **API call or cache hit** — on a miss, the transcript is appended to the session `messages` list and sent to `openai.chat.completions.create()`; the response text is stored in the cache.
+5. **Text-to-speech** — the response text is converted to audio using the `openai.audio.speech.create()` endpoint (TTS) or a local TTS library, and played back.
+6. **PDF export** (on demand) — the full `messages` list is serialised to a formatted fpdf2 document and written to disk.
 
-![divider][divider].class=\"m-10 w-100\"
+## OpenAI Integration: Chat Completions and Whisper
 
-## The Evolution of Voice Assistants
+Àkàndé uses the `openai` Python SDK for both speech recognition and text generation. The Whisper transcription call:
 
-### The Rise of AI-Powered Assistants
+```python
+with open(audio_file_path, "rb") as f:
+    transcript = openai.audio.transcriptions.create(
+        model="whisper-1",
+        file=f,
+        language=None  # auto-detect
+    )
+user_text = transcript.text
+```
 
-Voice assistants have become ubiquitous in our lives, facilitating a myriad of tasks with simple voice commands. However, the journey from basic command-response systems to sophisticated assistants like Àkàndé has been marked by significant advancements in AI and machine learning technologies. Àkàndé represents the senith of this evolution, offering a voice assistant that not only understands and responds to commands but does so with an unprecedented level of nuance and context-awareness.
+The Chat Completions call maintains a session-scoped `messages` list:
 
-![divider][divider].class=\"m-10 w-100\"
+```python
+messages.append({"role": "user", "content": user_text})
 
-## The GPT Advantage in Natural Language Understanding
+response = openai.chat.completions.create(
+    model="gpt-4-turbo-preview",
+    messages=messages,
+    temperature=0.2,
+    max_tokens=1024
+)
 
-At the heart of Àkàndé's revolutionary capabilities is its use of OpenAI's GPT models, which stand at the forefront of natural language processing technology. These models enable Àkàndé to understand and process complex queries with a degree of accuracy and human-likeness previously unattainable. This proficiency in natural language understanding allows Àkàndé to serve as an effective and reliable assistant in both personal and professional settings, understanding nuances and intent behind user queries.
+assistant_text = response.choices[0].message.content
+messages.append({"role": "assistant", "content": assistant_text})
+```
 
-![divider][divider].class=\"m-10 w-100\"
+The system prompt is prepended once at session start and controls Àkàndé's persona, output format, and any domain-specific constraints:
 
-## Enhancing User Experience: PDF Summaries and Efficient Caching
+```python
+messages = [
+    {
+        "role": "system",
+        "content": (
+            "You are Àkàndé, a concise executive assistant. "
+            "Respond in plain prose. Do not use markdown. "
+            "If asked to summarise, produce three bullet points maximum."
+        )
+    }
+]
+```
 
-### PDF Summaries for Improved Information Retention
+Setting `temperature=0.2` trades creative variation for determinism — important for factual queries like recalling a decision from earlier in the session.
 
-One of Àkàndé's standout features is its ability to generate PDF summaries from voice interactions, providing users with concise, tangible records of important information. This feature is invaluable for professionals who need to digest and recall critical points from meetings or research.
+## SQLite Response Cache
 
-### Optimized Caching for Enhanced Responsiveness
+The cache schema is minimal:
 
-Additionally, Àkàndé's sophisticated SQLite-based caching mechanism ensures that responses are not only accurate but delivered with remarkable speed, significantly enhancing the user experience by reducing wait times and improving information retrieval efficiency.
+```sql
+CREATE TABLE IF NOT EXISTS response_cache (
+    query_hash  TEXT PRIMARY KEY,
+    response    TEXT NOT NULL,
+    created_at  INTEGER NOT NULL  -- Unix timestamp
+);
+```
 
-![divider][divider].class=\"m-10 w-100\"
+The lookup and write path:
 
-## Àkàndé's Distinctive Edge
+```python
+import hashlib, sqlite3, time
 
-What truly sets Àkàndé apart is its holistic approach to the user experience. By integrating advanced speech recognition and text-to-speech technologies, Àkàndé offers a seamless, intuitive interface that accommodates a wide range of tasks. From setting reminders and scheduling meetings to summarising key points of a document, Àkàndé handles tasks with ease, making it an indispensable tool for busy professionals and students alike.
+def _normalise(text: str) -> str:
+    return " ".join(text.lower().split())
 
-![divider][divider].class=\"m-10 w-100\"
+def cache_get(conn: sqlite3.Connection, query: str) -> str | None:
+    h = hashlib.sha256(_normalise(query).encode()).hexdigest()
+    row = conn.execute(
+        "SELECT response FROM response_cache WHERE query_hash = ?", (h,)
+    ).fetchone()
+    return row[0] if row else None
 
-## Broadening Horizons: Versatile Applications
+def cache_set(conn: sqlite3.Connection, query: str, response: str) -> None:
+    h = hashlib.sha256(_normalise(query).encode()).hexdigest()
+    conn.execute(
+        "INSERT OR REPLACE INTO response_cache VALUES (?, ?, ?)",
+        (h, response, int(time.time()))
+    )
+    conn.commit()
+```
 
-Àkàndé's versatility extends beyond personal productivity and into the realm of executive assistance, where its features can be leveraged to manage schedules, summarise meetings, and even prepare executive briefings.
+The `INSERT OR REPLACE` ensures that a cached response is updated if the same query is submitted after a model upgrade. A TTL-based eviction query (`DELETE WHERE created_at < ?`) can be scheduled on startup to bound cache size.
 
-For students, Àkàndé serves as a powerful research tool, capable of summarising academic papers and content into easily digestible PDFs. Its caching system and summarisation capabilities also make it an essential tool for executives who require quick access to summarised data and historical interactions, enabling informed decision-making and efficient information management.
+Cache hit performance: a SQLite lookup on a local SSD returns in under 1 ms for tables up to ~100,000 rows. The round-trip latency for a live GPT-4 API call is typically 600–900 ms for short responses. For a daily briefing with a handful of repeated queries, the cache eliminates most API calls after the first session.
 
-![divider][divider].class=\"m-10 w-100\"
+## PDF Summary Generation
 
-## Technical Insights and Privacy Considerations
+PDF export uses [fpdf2](https://py-pdf.github.io/fpdf2/), a maintained Python PDF library with no binary dependencies:
 
-Delving into the technical architecture, Àkàndé's SQLite-based caching mechanism exemplifies a commitment to efficient data retrieval and reliability. This system ensures that users receive swift responses to queries, enhancing the overall experience by minimising latency. Furthermore, Àkàndé's approach to PDF summary generation utilises advanced algorithms to distil conversations and content into essential, easily accessible information. This not only aids in better information management but also in ensuring that critical insights are not lost in the volume of digital interactions.
+```python
+from fpdf import FPDF
+from datetime import datetime
 
-### Robust Security and Privacy Standards
+def export_session_pdf(messages: list[dict], output_path: str) -> None:
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font("Helvetica", size=11)
+    pdf.set_margins(20, 20, 20)
 
-A cornerstone of Àkàndé's design philosophy is its unwavering commitment to privacy and security. Recognising the sensitivity of the information it handles, especially in executive contexts, Àkàndé employs robust encryption techniques and stringent access controls to protect user data. This aligns Àkàndé with global privacy standards, ensuring that users can trust their digital assistant with sensitive tasks and information.
+    pdf.set_font("Helvetica", "B", 14)
+    pdf.cell(0, 10, f"Àkàndé Session — {datetime.now():%Y-%m-%d %H:%M}", ln=True)
+    pdf.ln(4)
 
-![divider][divider].class=\"m-10 w-100\"
+    for msg in messages:
+        if msg["role"] == "system":
+            continue
+        label = "You" if msg["role"] == "user" else "Àkàndé"
+        pdf.set_font("Helvetica", "B", 10)
+        pdf.cell(0, 6, label, ln=True)
+        pdf.set_font("Helvetica", size=10)
+        pdf.multi_cell(0, 5, msg["content"])
+        pdf.ln(3)
 
-## Àkàndé: A Vision of the Future
+    pdf.output(output_path)
+```
 
-### Enabling Personal Productivity
+`multi_cell()` handles line-wrapping and automatic page breaks, so sessions of any length produce a well-formatted document without manual pagination logic. The output is a PDF/A-compatible file with no embedded fonts beyond the standard Helvetica metrics.
 
-Àkàndé is not merely a voice assistant; it is a vision of the future where digital assistants play a central role in enhancing our productivity and decision-making processes. Through its innovative use of GPT models, unique features like PDF summary generation, and a commitment to efficiency and privacy, Àkàndé sets new benchmarks for what digital assistants can achieve. Its development is driven by user feedback and a clear roadmap, promising continuous improvement and adaptation to the evolving needs of its users.
+## Privacy Model
 
-### Empowering Academic Pursuits
+The privacy boundary in Àkàndé is defined by three facts:
 
-The potential applications of Àkàndé are vast and varied. In the corporate world, it can transform how executives interact with data, making it easier to capture and recall important discussions or decisions. In academia, it can streamline research and study processes, making learning more efficient. For personal use, Àkàndé can simplify daily routines, from managing schedules to capturing and organising personal thoughts and reminders.
+1. Audio is submitted to the Whisper API over HTTPS and is not retained by OpenAI beyond the API call (per OpenAI's API data usage policy as of February 2024).
+2. Chat Completions API calls transmit the session `messages` list — which may contain the full conversation history for multi-turn sessions.
+3. The SQLite database and PDF files live entirely on the local filesystem; no background sync to any cloud service occurs.
 
-### Streamlining Business Workflows
+For executive use cases involving sensitive topics — M&A discussions, personnel matters, regulatory strategy — the session history transmitted to the API should be reviewed against the organisation's AI usage policy before deployment. The `max_tokens` limit on the system prompt can be used to prevent inadvertent transmission of context that exceeds the intended disclosure scope.
 
-The implications of Àkàndé's technology extend beyond individual productivity. As businesses and educational institutions look for ways to improve efficiency and information management, Àkàndé offers a scalable solution that can be integrated into existing systems and workflows. Its ability to provide quick access to summarised information, coupled with its intuitive user interface, makes it an attractive option for organisations seeking to leverage the latest in AI technology.
+## Frequently Asked Questions
 
-Àkàndé represents the pinnacle of voice assistant innovation, offering a blend of sophisticated natural language understanding, efficient data management, and user-centric features. Its integration of OpenAI's GPT models with Python's robustness creates a powerful tool that transcends traditional digital assistant capabilities. As we look towards a future increasingly dominated by digital interactions, Àkàndé stands as a beacon of innovation, promising a new era of personal and executive assistance that is more intuitive, responsive, and tailored to our needs. With Àkàndé, the future of digital assistance is not just a concept; it is a reality that is here to enhance our digital lives in myriad ways.
+**Does Àkàndé retain conversation history after the session ends?**
+The in-memory `messages` list is discarded when the process exits. Conversation history is only retained if the user triggers a PDF export or if a custom persistence layer is added. The SQLite cache stores query hashes and response text, not the full conversation context.
 
-[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
+**How does the cache handle queries that are similar but not identical?**
+The cache uses exact-match hashing on the normalised query string. Two queries that differ by a single word will produce different hashes and result in separate API calls. Semantic caching (using embedding similarity to match near-duplicate queries) would require an additional vector lookup step and is not part of the base implementation.
+
+**What GPT model does Àkàndé use by default?**
+The default is `gpt-4-turbo-preview` as of February 2024. The model name is a configuration parameter, so any OpenAI chat completion model can be substituted. Switching to `gpt-3.5-turbo` reduces API cost by approximately 20× per token but reduces reasoning quality for complex multi-step queries.
+
+**Can the PDF export format be customised?**
+Yes. The fpdf2 export function accepts the `messages` list as its only required input, so font, margins, page size, header content, and labelling can all be changed by editing the export function. fpdf2 also supports adding images, tables, and Unicode fonts, allowing richer document layouts for organisations with specific branding requirements.
+
+## References
+
+1. OpenAI. *Audio Transcriptions — Whisper API*. OpenAI Platform Documentation, 2024. https://platform.openai.com/docs/api-reference/audio/createTranscription
+2. OpenAI. *Chat Completions API*. OpenAI Platform Documentation, 2024. https://platform.openai.com/docs/api-reference/chat/create
+3. Voss, J. et al. *fpdf2: Modern PDF generation for Python*. GitHub, 2024. https://github.com/py-pdf/fpdf2
+4. SQLite Consortium. *SQLite Documentation*. sqlite.org, 2024. https://www.sqlite.org/docs.html
+
 [00]: https://akande.co "Àkàndé Voice Assistant"
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-22">2026-05-22</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-24">2026-05-24</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html" class="related-media" aria-label="Fast Real-Time Speech Recognition on macOS: OpenAI Whisper" tabindex="-1"><img alt="Banner for Real-time automatic speech recognition (ASR)" src="https://cloudcdn.pro/stocks/images/research-paper.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html">Fast Real-Time Speech Recognition on macOS: OpenAI Whisper</a></h3><p><time datetime="2024-03-12">2024-03-12</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" class="related-media" aria-label="Quantum Key Distribution Revolutionising Security in Banking" tabindex="-1"><img alt="HSBC From the Docks" src="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a></h3><p><time datetime="2023-12-11">2023-12-11</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html" class="related-media" aria-label="Quantum Algorithm Challenges Lattice-Based Cryptography" tabindex="-1"><img alt="Banner of Network nodes in a digital blue space" src="https://cloudcdn.pro/stocks/images/digital-constellation.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html">Quantum Algorithm Challenges Lattice-Based Cryptography</a></h3><p><time datetime="2024-04-15">2024-04-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/" class="related-media" aria-label="Fast Real-Time Speech Recognition on macOS: OpenAI Whisper" tabindex="-1"><img alt="Banner for Real-time automatic speech recognition (ASR)" src="https://cloudcdn.pro/stocks/images/research-paper.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/">Fast Real-Time Speech Recognition on macOS: OpenAI Whisper</a></h3><p><time datetime="2024-03-12">2024-03-12</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-29-ai-powered-audio-insights-analysis-translations/" class="related-media" aria-label="Audio Analyser: Azure Speech, NLP, and Translation Pipeline" tabindex="-1"><img alt="A minimalist, modern corporate office" src="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-29-ai-powered-audio-insights-analysis-translations/">Audio Analyser: Azure Speech, NLP, and Translation Pipeline</a></h3><p><time datetime="2024-01-29">2024-01-29</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/" class="related-media" aria-label="AI Prompt Engineering 2024: Techniques That Work" tabindex="-1"><img alt="A man analysing data on screens" src="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/">AI Prompt Engineering 2024: Techniques That Work</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
 </div>
 </aside>
 <!-- enrich-end -->

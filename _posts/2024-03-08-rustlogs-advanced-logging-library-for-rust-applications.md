@@ -58,7 +58,7 @@ news_title: "Unleashing the Power of Logging in Rust with RustLogs (RLG)"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/rss.xml"
-category: "Technology"
+category: "Open Source"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. "

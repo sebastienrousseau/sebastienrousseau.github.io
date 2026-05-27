@@ -49,7 +49,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/rss.xml"
-category: "Technology"
+category: "Finance"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "The 2026 cloud architecture blueprint — six foundational pillars, agentic unit economics, multi-agent HPC realities, the continuous-treasury imperative, the MCP security crisis, cryptographic agent identity, algorithmic contagion, and CloudCDN as an open-source reference implementation for the edge-agent crisis."
