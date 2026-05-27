@@ -128,8 +128,7 @@ def _articles_map_for_language(
         # Pass 3: sorted residual pairing
         en_remaining.sort()
         locale_stems.sort()
-        for en_slug, locale_stem in zip(en_remaining, locale_stems, strict=False):
-            out[en_slug] = locale_stem
+        out.update(zip(en_remaining, locale_stems, strict=False))
     return out
 
 
