@@ -112,33 +112,27 @@ _LATIN_DIACRITICS: dict[str, re.Pattern[str]] = {
 # Used as a secondary signal for Latin-script locales where diacritics
 # might not appear in a short title.
 _LOCALE_STOPWORDS: dict[str, frozenset[str]] = {
-    "fr": frozenset("le la les un une des du de et est dans pour sur que qui par avec sans plus aux ces cette son sa ses leur leurs ne pas où vers entre depuis chez selon contre dont".split()),
-    "es": frozenset("el la los las un una unos unas de del en y es son por para con sobre que se su sus le les este esta estos estas más donde como entre desde hacia hasta".split()),
-    "de": frozenset("der die das den dem des ein eine einen einem einer eines und ist sind in für mit von zu auf nicht wie auch nur sich nach über bei vor durch gegen ohne".split()),
-    "it": frozenset("il la i le un una di del della dei delle in e è sono per con su che non come da più anche tra fra dove quando ma se quale questo questa queste questi".split()),
-    "pt-br": frozenset("o a os as um uma de do da dos das em e é são para com por que não como mais entre sobre quando onde também só já se sua suas seu seus pelo pela".split()),
-    "nl": frozenset("de het een van en is zijn in voor met op niet als ook maar dan dat die deze nog naar bij door zonder over tussen onder boven".split()),
-    "pl": frozenset("i w na z do nie się że jest są jak po przez bez od ale lub aby tak tym tej ten ta to co który która które którzy"
-                    .split()),
-    "cs": frozenset("a v na z do je jsou se že jak po přes bez od ale nebo aby ten ta to co který která které kteří mezi pro při".split()),
-    "ro": frozenset("și de la în pe cu nu se este sunt pentru din prin că care ce ca să mai unde când dacă dar sau ai au are".split()),
-    "tr": frozenset("ve bir bu şu o için ile da de mi mı mu mü ne en çok daha gibi kadar fakat ama veya ya yani ise eğer".split()),
-    "vi": frozenset("và của trong là cho với từ đến không có thì mà như nhưng hoặc khi nếu thế này đó kia cũng đã sẽ đang được bị".split()),
-    "sv": frozenset("och i på av att en ett den det som med för till från men eller är var har inte också mer än när där där".split()),
-    "id": frozenset("dan di yang dengan untuk dari pada adalah ini itu atau juga akan tidak telah dapat sebagai oleh dalam hingga ketika namun sehingga karena".split()),
-    "fil": frozenset("ang mga sa ng at o na hindi ay para sa kanila kanya kanyang ito iyon iyan dahil kung pero pero ngunit ayon habang upang".split()),
-    "ha": frozenset("kuma ko da ne ce na ta yana tana suna muka mun ku kun a cikin daga yi sa har sai amma idan dai".split()),
-    "yo": frozenset("àti tí ti ní nínú jẹ́ jẹ ṣe lè kì kò pẹ̀lú láti fún ọ̀rọ̀ wọn rẹ̀ òun lórí nínú ṣùgbọ́n bí torí".split()),
+    "fr": frozenset(["le", "la", "les", "un", "une", "des", "du", "de", "et", "est", "dans", "pour", "sur", "que", "qui", "par", "avec", "sans", "plus", "aux", "ces", "cette", "son", "sa", "ses", "leur", "leurs", "ne", "pas", "où", "vers", "entre", "depuis", "chez", "selon", "contre", "dont"]),
+    "es": frozenset(["el", "la", "los", "las", "un", "una", "unos", "unas", "de", "del", "en", "y", "es", "son", "por", "para", "con", "sobre", "que", "se", "su", "sus", "le", "les", "este", "esta", "estos", "estas", "más", "donde", "como", "entre", "desde", "hacia", "hasta"]),
+    "de": frozenset(["der", "die", "das", "den", "dem", "des", "ein", "eine", "einen", "einem", "einer", "eines", "und", "ist", "sind", "in", "für", "mit", "von", "zu", "auf", "nicht", "wie", "auch", "nur", "sich", "nach", "über", "bei", "vor", "durch", "gegen", "ohne"]),
+    "it": frozenset(["il", "la", "i", "le", "un", "una", "di", "del", "della", "dei", "delle", "in", "e", "è", "sono", "per", "con", "su", "che", "non", "come", "da", "più", "anche", "tra", "fra", "dove", "quando", "ma", "se", "quale", "questo", "questa", "queste", "questi"]),
+    "pt-br": frozenset(["o", "a", "os", "as", "um", "uma", "de", "do", "da", "dos", "das", "em", "e", "é", "são", "para", "com", "por", "que", "não", "como", "mais", "entre", "sobre", "quando", "onde", "também", "só", "já", "se", "sua", "suas", "seu", "seus", "pelo", "pela"]),
+    "nl": frozenset(["de", "het", "een", "van", "en", "is", "zijn", "in", "voor", "met", "op", "niet", "als", "ook", "maar", "dan", "dat", "die", "deze", "nog", "naar", "bij", "door", "zonder", "over", "tussen", "onder", "boven"]),
+    "pl": frozenset(["i", "w", "na", "z", "do", "nie", "się", "że", "jest", "są", "jak", "po", "przez", "bez", "od", "ale", "lub", "aby", "tak", "tym", "tej", "ten", "ta", "to", "co", "który", "która", "które", "którzy"]),
+    "cs": frozenset(["a", "v", "na", "z", "do", "je", "jsou", "se", "že", "jak", "po", "přes", "bez", "od", "ale", "nebo", "aby", "ten", "ta", "to", "co", "který", "která", "které", "kteří", "mezi", "pro", "při"]),
+    "ro": frozenset(["și", "de", "la", "în", "pe", "cu", "nu", "se", "este", "sunt", "pentru", "din", "prin", "că", "care", "ce", "ca", "să", "mai", "unde", "când", "dacă", "dar", "sau", "ai", "au", "are"]),
+    "tr": frozenset(["ve", "bir", "bu", "şu", "o", "için", "ile", "da", "de", "mi", "mı", "mu", "mü", "ne", "en", "çok", "daha", "gibi", "kadar", "fakat", "ama", "veya", "ya", "yani", "ise", "eğer"]),
+    "vi": frozenset(["và", "của", "trong", "là", "cho", "với", "từ", "đến", "không", "có", "thì", "mà", "như", "nhưng", "hoặc", "khi", "nếu", "thế", "này", "đó", "kia", "cũng", "đã", "sẽ", "đang", "được", "bị"]),
+    "sv": frozenset(["och", "i", "på", "av", "att", "en", "ett", "den", "det", "som", "med", "för", "till", "från", "men", "eller", "är", "var", "har", "inte", "också", "mer", "än", "när", "där", "där"]),
+    "id": frozenset(["dan", "di", "yang", "dengan", "untuk", "dari", "pada", "adalah", "ini", "itu", "atau", "juga", "akan", "tidak", "telah", "dapat", "sebagai", "oleh", "dalam", "hingga", "ketika", "namun", "sehingga", "karena"]),
+    "fil": frozenset(["ang", "mga", "sa", "ng", "at", "o", "na", "hindi", "ay", "para", "sa", "kanila", "kanya", "kanyang", "ito", "iyon", "iyan", "dahil", "kung", "pero", "pero", "ngunit", "ayon", "habang", "upang"]),
+    "ha": frozenset(["kuma", "ko", "da", "ne", "ce", "na", "ta", "yana", "tana", "suna", "muka", "mun", "ku", "kun", "a", "cikin", "daga", "yi", "sa", "har", "sai", "amma", "idan", "dai"]),
+    "yo": frozenset(["àti", "tí", "ti", "ní", "nínú", "jẹ́", "jẹ", "ṣe", "lè", "kì", "kò", "pẹ̀lú", "láti", "fún", "ọ̀rọ̀", "wọn", "rẹ̀", "òun", "lórí", "nínú", "ṣùgbọ́n", "bí", "torí"]),
 }
 
 # Distinctly English stop-words / phrases — strong signal text is EN.
 _EN_STOPWORDS: frozenset[str] = frozenset(
-    "the and of to a in is for on with by from at as an be this that "
-    "are or but not have has will would could should which who whose where "
-    "when how why their our your his her its also more most some any all "
-    "both each every few many other such no nor only own same than too very "
-    "into through during before after between during above below within without"
-    .split()
+    ["the", "and", "of", "to", "a", "in", "is", "for", "on", "with", "by", "from", "at", "as", "an", "be", "this", "that", "are", "or", "but", "not", "have", "has", "will", "would", "could", "should", "which", "who", "whose", "where", "when", "how", "why", "their", "our", "your", "his", "her", "its", "also", "more", "most", "some", "any", "all", "both", "each", "every", "few", "many", "other", "such", "no", "nor", "only", "own", "same", "than", "too", "very", "into", "through", "during", "before", "after", "between", "during", "above", "below", "within", "without"]
 )
 
 
@@ -174,9 +168,7 @@ def _is_in_target_locale(text: str, locale: str) -> bool:
         return True
     if locale_score >= 2 and locale_score > en_score:
         return True
-    if locale_score >= 1 and en_score == 0:
-        return True
-    return False
+    return locale_score >= 1 and en_score == 0
 
 
 # ---------------------------------------------------------------------------
@@ -313,7 +305,6 @@ def _fix_one(md: Path, locale: str) -> str | None:
 def main() -> int:
     rewrites = 0
     files = 0
-    skipped_locale_mismatch = 0
     for loc in LOCALES:
         d = POSTS / loc
         if not d.is_dir():

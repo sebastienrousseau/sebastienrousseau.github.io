@@ -30,7 +30,7 @@ ROOT = Path(__file__).resolve().parents[2]
 POSTS = ROOT / "_posts"
 
 sys.path.insert(0, str(ROOT / "scripts" / "lib"))
-import _lang_registry  # noqa: E402
+import _lang_registry
 
 # Fields to translate if still matching English source
 FIELDS = [
@@ -240,7 +240,7 @@ Example structure:
 # ---------------------------------------------------------------------------
 
 
-def _process_article(
+def _process_article(  # noqa: C901 — orchestrates the per-article EN→27 locales frontmatter sync end-to-end
     en_slug: str,
     en_path: Path,
     *,
