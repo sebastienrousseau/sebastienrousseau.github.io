@@ -2,6 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/uk/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>uk-UA</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-27T06:06:06+00:00</news:publication_date>
+    <news:title>ШІ як операційна система платежів: шахрайство, маршрутизація, стійкість і відповідність у 2026</news:title>
+    <news:keywords>ШІ у платежах 2026, шахрайство платежів, маршрутизація платежів, запобігання шахрайству в реальному часі, ISO 20022 ШІ, стійкість платежів, аналіз транзакцій, прогноз грошових потоків</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/uk/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>uk-UA</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>Magnifica Humanitas: прочитання першої папської енцикліки про ШІ</news:title>
+    <news:keywords>Magnifica Humanitas, Pope Leo XIV, енцикліка про ШІ, етика штучного інтелекту, етика квантових обчислень, Rerum Novarum, Вавилонська вежа, технологія ніколи не є нейтральною, трансгуманізм, постгуманізм, людська гідність, технологічна парадигма, потяг автомобіль ядерна енергія інтернет, моральна паніка в історії технологій, Lucy передача знань, надія на ШІ, EU AI Act, DORA, Anthropic, Sebastien Rousseau</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/uk/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>uk-UA</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>Стейблкоїни проти токенізованих депозитів у 2026: що банкам справді треба захищати</news:title>
+    <news:keywords>стейблкоїни 2026, токенізовані депозити, банківські депозити, GENIUS Act, MiCA, депозитні токени, резерви стейблкоїнів, фондування банків, цифрові гроші</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/uk/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>uk-UA</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-25T06:06:06+00:00</news:publication_date>
+    <news:title>Програмована ліквідність 2026: ШІ, токенізовані депозити та оркестрація казначейства</news:title>
+    <news:keywords>програмована ліквідність 2026, оркестрація казначейства, ШІ-казначейство, токенізовані депозити, ліквідність у реальному часі, стейблкоїни казначейство, мультиканальні платежі, віртуальні рахунки, транзакційний банкінг, мобільність застави</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/uk/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</loc>
   <news:news>
     <news:publication>
@@ -326,18 +374,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/uk/2024-02-12-akande-holosovyy-asystent-osobyste-ta-vykonavche-asystyrovannia/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>uk-UA</news:language>
-    </news:publication>
-    <news:publication_date>2024-02-12T06:06:06+00:00</news:publication_date>
-    <news:title>Àkàndé: GPT-Powered Voice Assistant for Executives</news:title>
-    <news:keywords>Àkàndé, OpenAI GPT-4, Whisper STT, кешування SQLite, fpdf2, Python голосовий асистент, API завершення чату, генерація PDF-зведень, кеш SHA-256, синтез мовлення, AI помічник керівника, відкритий код</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/uk/2024-02-08-revoliutsiya-reklamy-yak-shi-formuye-maibutnye/</loc>
   <news:news>
     <news:publication>
@@ -357,32 +393,8 @@
       <news:language>uk-UA</news:language>
     </news:publication>
     <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
-    <news:title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</news:title>
-    <news:keywords>Azure Cognitive Services, розпізнавання мовлення, нейронна акустична модель, Azure Text Analytics, обробка природної мови, аналіз тональності, CherryPy, API пакетної транскрипції, багатомовний ASR, Azure Translator, транскрипція аудіо, обробка аудіо на Python</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/uk/2024-01-29-audio-analiz-pereklady-i-perspektyvy-na-shi/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>uk-UA</news:language>
-    </news:publication>
-    <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
     <news:title>[UK DRAFT] AI-Powered Speech Analysis, Translation, &amp; Insight Tool</news:title>
     <news:keywords>аудіо аналізатор, azure ai, speech-to-text, аналіз аудіоданих, аналіз тексту, переклади ai, аудіо insights, автоматична транскрипція, обробка аудіоданих, machine learning</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/uk/2024-01-23-prohres-v-inzheneriyi-promptiv-shi/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>uk-UA</news:language>
-    </news:publication>
-    <news:publication_date>2024-01-23T06:06:06+00:00</news:publication_date>
-    <news:title>AI Prompt Engineering 2024: Techniques That Work</news:title>
-    <news:keywords>ланцюгове міркування, few-shot навчання, zero-shot підказки, навчання в контексті, ін&apos;єкція промптів, ReAct, самоузгодженість, генерація з доповненим пошуком, BloombergGPT, системний промпт, безпека промптів, LLM агент</news:keywords>
   </news:news>
 </url>
 <url>
@@ -518,18 +530,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/uk/2023-11-12-doslidzhuyuchy-heneratyvnyy-shi/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>uk-UA</news:language>
-    </news:publication>
-    <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
-    <news:title>Generative AI in 2023: How It Works, Where It Lands</news:title>
-    <news:keywords>генеративний ШІ, велика мовна модель, архітектура transformer, GPT-4, ШІ у фінансових послугах, галюцинація, retrieval-augmented generation, управління ШІ, foundation model, дообробка</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/uk/2023-11-05-matematychni-ta-kryptohrafichni-konstanty-dlya-rust/</loc>
   <news:news>
     <news:publication>
@@ -539,18 +539,6 @@
     <news:publication_date>2023-11-05T06:06:06+00:00</news:publication_date>
     <news:title>[UK DRAFT] Mathematical and Cryptographic Constants for Rust Security</news:title>
     <news:keywords>математичні константи, криптографічні константи, Rust security, безпечний зв&apos;язок, шифрування, RSA, elliptic curve cryptography, Common (CMN) library, Rust-додатки, математичні обчислення</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/uk/2023-10-26-libmake-henerator-kodu-dlya-rust-bibliotek/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>uk-UA</news:language>
-    </news:publication>
-    <news:publication_date>2023-10-26T06:06:06+00:00</news:publication_date>
-    <news:title>LibMake: Rust Library Scaffold Generator</news:title>
-    <news:keywords>LibMake, Rust code generator, cargo scaffold, Rust library template, Tera templating, GitHub Actions Rust, cargo-audit, Rust API Guidelines, boilerplate generator, Rust CI workflow</news:keywords>
   </news:news>
 </url>
 <url>
@@ -597,18 +585,6 @@
       <news:language>uk-UA</news:language>
     </news:publication>
     <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
-    <news:title>Automating ISO 20022 Payment Files Creation with pain001</news:title>
-    <news:keywords>pain001, ISO 20022, pain.001.001.09, CustomerCreditTransferInitiation, SEPA Credit Transfer, CBPR+, payment automation, XML generation, XSD validation, GrpHdr, PmtInf, CdtTrfTxInf, CtrlSum, SWIFT</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/uk/2023-09-29-avtomatyzatsiya-platizhnykh-faylov-iso-20022-z-pain001/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>uk-UA</news:language>
-    </news:publication>
-    <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
     <news:title>[UK DRAFT] Automating ISO 20022 Payment Files Creation with Pain001</news:title>
     <news:keywords>pain001, iso 20022, автоматизація платежів, скорочення витрат, обробка платежів, платіжні файли, ініціювання платежів, pain message, pain message standards, pain message validation</news:keywords>
   </news:news>
@@ -626,18 +602,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/uk/2018-02-15-stvorennia-platformy-express-transaction-credits/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>uk-UA</news:language>
-    </news:publication>
-    <news:publication_date>2018-02-15T06:06:06+00:00</news:publication_date>
-    <news:title>The making of the Express Transaction Credits Platform</news:title>
-    <news:keywords>EXTC platform, ERC-223, смарт-контракти Ethereum, архітектура токенів, мультипідпис, передача з часовим блокуванням, блокчейн-платежі, кредити під заставу, децентралізовані фінанси, крипто 2018</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/uk/2018-02-04-nova-kryptovaluta-shvydshe-rishennia-dlia-platezhiv/</loc>
   <news:news>
     <news:publication>
@@ -647,18 +611,6 @@
     <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
     <news:title>[UK DRAFT] Unveiling a new Cryptocurrency and Faster Payment Solution</news:title>
     <news:keywords>pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/uk/2018-02-04-nova-kryptovaluta-shvydshe-rishennia-dlia-platezhiv/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>uk-UA</news:language>
-    </news:publication>
-    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
-    <news:title>Unveiling a new Cryptocurrency and Faster Payment Solution</news:title>
-    <news:keywords>EXTC, ERC-223, смарт-контракти Ethereum, швидкі платежі, криптовалюта, blockchain-платежі, платіжний токен, децентралізовані фінанси, ERC-20, транскордонні платежі</news:keywords>
   </news:news>
 </url>
 <url>
@@ -683,18 +635,6 @@
     <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
     <news:title>[UK DRAFT] Understanding the Technology behind Blockchain</news:title>
     <news:keywords>pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/uk/2018-01-09-rozuminnia-tekhnolohiyi-za-blokcheinom/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>uk-UA</news:language>
-    </news:publication>
-    <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
-    <news:title>Understanding the Technology behind Blockchain</news:title>
-    <news:keywords>технологія blockchain, криптографічний хеш, дерево Меркла, розподілений консенсус, proof of work, Ethereum, смарт-контракти, EVM, Solidity, ERC-20, розподілений реєстр, децентралізовані фінанси</news:keywords>
   </news:news>
 </url>
 <url>

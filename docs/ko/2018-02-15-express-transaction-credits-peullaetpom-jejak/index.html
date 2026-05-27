@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta itemprop="datePublished" content="Thu, 15 Feb 2018 18:18:18 +0000" id="date" />
     <meta itemprop="dateModified" content="Thu, 15 Feb 2018 18:18:18 +0000" id="last-modified" />
-    <title>The making of the Express Transaction Credits Platform — Sebastien Rousseau</title>
+    <title>Express Transaction Credits 플랫폼의 개발 — Sebastien Rousseau</title>
 
     <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
-<meta name="description" content="2018년 Ethereum ERC-223 기반으로 구축된 EXTC 플랫폼에 대한 기술적 심층 분석: 토큰 아키텍처, 멀티시그 지급, 타임락 전송, 담보 기반 즉시 대출을 상세히 다룹니다.">
-<meta name="keywords" content="EXTC 플랫폼, ERC-223, Ethereum 스마트 컨트랙트, 토큰 아키텍처, 다중 서명, 타임락 전송, 블록체인 결제, 담보 기반 대출, 탈중앙화 금융, 2018 크립토">
+<meta name="description" content="블록체인과 암호자산을 활용한 고속 국경 간 송금 플랫폼 Express Transaction Credits의 구축.">
+<meta name="keywords" content="국경 간 송금, 블록체인, 암호자산, 토큰, 스마트 컨트랙트, 결제 플랫폼, 핀테크">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
@@ -40,7 +40,7 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-060O/p5UeXja3D0Ft9GKZTZETj2Tj1kSZGZOv8ECUTE=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-DrWlPE4VG5/H6kjZoW/Eq700R83hqnmSpfML2laNSvw=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-aAR/alubqwuG1+UbvKNFLiB6Ecrw3PGzkKoIj8kYGkU=' 'sha256-p6DiCi8tdyLKr6nMt3PbJm5UEy/c54fI1hvuuDOFtao=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-Hx4q7Els8HbgkNXS3bMbm/jHeracEO6bqztUr3Hb6oE=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-aAR/alubqwuG1+UbvKNFLiB6Ecrw3PGzkKoIj8kYGkU=' 'sha256-iVvAMe8IwKgdjx5O6vgnGQgECv+qGM+4W/cbfvJZN/s=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
@@ -67,7 +67,7 @@
          Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
          observed (real-network) LCP is 165 ms. This hint pulls the
          synthetic LCP in line with the observed value. -->
-    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1600&format=webp&q=85" fetchpriority="high">
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/joshua-sortino-LqKhnDzSF-8-unsplash.webp&w=1600&format=webp&q=85" fetchpriority="high">
     <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
     <meta name="color-scheme" content="light dark" />
@@ -76,18 +76,18 @@
     <link rel="stylesheet" href="/_csp/6346d01ad7de2d6f.css" integrity="sha256-cmdn5aVLYjokOMehbFCVM2OVn90qAJQVGHgU/SsPTT0= sha256-LfI/OOvfKQbXmGjqT/lqFAdGuOgerwiywMKCZBxL014=" crossorigin="anonymous">
     <link rel="alternate" type="application/atom+xml" title="Atom 피드" href="/ko/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-<meta property="og:title" content="The making of the Express Transaction Credits Platform — Sebastien Rousseau">
-<meta property="og:description" content="2018년 Ethereum ERC-223 기반으로 구축된 EXTC 플랫폼에 대한 기술적 심층 분석: 토큰 아키텍처, 멀티시그 지급, 타임락 전송, 담보 기반 즉시 대출을 상세히 다룹니다.">
+<meta property="og:title" content="Express Transaction Credits 플랫폼의 개발 — Sebastien Rousseau">
+<meta property="og:description" content="블록체인과 암호자산을 활용한 고속 국경 간 송금 플랫폼 Express Transaction Credits의 구축.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sebastienrousseau.com/ko/2018-02-15-express-transaction-credits-peullaetpom-jejak/">
-<meta property="og:image" content="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/joshua-sortino-LqKhnDzSF-8-unsplash.webp">
 <meta property="og:image:width" content="100vw">
 <meta property="og:image:height" content="100vh">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="The making of the Express Transaction Credits Platform — Sebastien Rousseau">
-<meta name="twitter:description" content="2018년 Ethereum ERC-223 기반으로 구축된 EXTC 플랫폼에 대한 기술적 심층 분석: 토큰 아키텍처, 멀티시그 지급, 타임락 전송, 담보 기반 즉시 대출을 상세히 다룹니다.">
-<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp">
+<meta name="twitter:title" content="Express Transaction Credits 플랫폼의 개발 — Sebastien Rousseau">
+<meta name="twitter:description" content="블록체인과 암호자산을 활용한 고속 국경 간 송금 플랫폼 Express Transaction Credits의 구축.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/joshua-sortino-LqKhnDzSF-8-unsplash.webp">
 <link rel="canonical" href="https://sebastienrousseau.com/ko/2018-02-15-express-transaction-credits-peullaetpom-jejak/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
 <meta property="og:site_name" content="Sebastien Rousseau">
@@ -166,113 +166,44 @@
     </header>
 
         <section class="ap-hero">
-      <h1>The making of the Express Transaction Credits Platform</h1>
-      <p class="sub">2018년 Ethereum의 토큰 아키텍처, 다중 서명 지급, 타임락 전송.</p>
-    <nav class="article-tags" aria-label="주제"><a href="/tags/index.html#h3-extc" class="article-tag" rel="tag">EXTC 플랫폼</a><a href="/tags/index.html#h3-erc-223" class="article-tag" rel="tag">ERC-223</a><a href="/tags/index.html#h3-ethereum" class="article-tag" rel="tag">Ethereum 스마트 컨트랙트</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">토큰 아키텍처</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">다중 서명</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">타임락 전송</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">블록체인 결제</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">담보 기반 대출</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">탈중앙화 금융</a><a href="/tags/index.html#h3-2018" class="article-tag" rel="tag">2018 크립토</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-02-15T18:18:18+00:00" class="meta-pub">발행일 15 Feb 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">갱신일 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="예상 소요 시간">6 분 소요</span></div></section>
+      <h1>Express Transaction Credits 플랫폼의 개발</h1>
+      <p class="sub">블록체인을 활용한 고속 국경 간 송금 플랫폼 설계</p>
+    <nav class="article-tags" aria-label="주제"><a href="/tags/index.html#h3-" class="article-tag" rel="tag">국경 간 송금</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">블록체인</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">암호자산</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">토큰</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">스마트 컨트랙트</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">결제 플랫폼</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">핀테크</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-02-15T18:18:18+00:00" class="meta-pub">발행일 15 Feb 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">갱신일 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="예상 소요 시간">1 분 소요</span></div></section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>목차</h2><ol><li><a href="#erc-20">설계 문제: ERC-20이 불충분했던 이유</a></li><li><a href="#erc-223">ERC-223 솔루션: 알림과 함께하는 원자적 전송</a></li><li><a href="#extc">EXTC 컨트랙트 아키텍처</a></li><li><a href="#section-9">담보 기반 즉시 대출 메커니즘</a></li><li><a href="#section-10">실험이 드러낸 것</a></li><li><a href="#section-11">프로덕션에 도달한 아이디어들</a></li><li><a href="#section-12">자주 묻는 질문</a></li><li><a href="#section-13">참고 문헌</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 2018년 Ethereum ERC-223 기반으로 구축된 EXTC 플랫폼에 대한 기술적 심층 분석: 토큰 아키텍처, 멀티시그 지급, 타임락 전송, 담보 기반 즉시 대출을 상세히 다룹니다.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>설계 문제: ERC-20이 불충분했던 이유.</strong> ERC-20 표준은 2015년에 제안되고 Ethereum Improvement Proposal 20으로 공식화되어, 2017–2018년 ICO 붐을 이끈 표준 대체 가능 토큰 인터페이스를 정의했습니다.</li>  <li><strong>ERC-223 솔루션: 알림과 함께하는 원자적 전송.</strong> Ethereum EIPs GitHub 이슈 트래커에 제안된 ERC-223은 토큰 전송이 해야 하는 것을 변경함으로써 묵시적 손실 문제를 해결했습니다.</li>  <li><strong>EXTC 컨트랙트 아키텍처.</strong> EXTC 토큰 컨트랙트는 다섯 가지 모듈로 구성된 Solidity 구현이었습니다:.</li>  <li><strong>담보 기반 즉시 대출 메커니즘.</strong> EXTC 대출 원시 요소는 가장 복잡한 구성 요소였습니다.</li></ul></aside><!-- lead-start -->
-
-<!-- lead-end -->
-<p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1600&format=webp&q=85" alt="Giant white pillars"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
-<blockquote>
-<p><strong>요약 / 핵심 요점</strong></p>
-<ul>
-<li><strong>근본적인 문제.</strong> 2018년 주류 Ethereum 토큰 표준인 ERC-20은 구조적 결함이 있었습니다: 스마트 컨트랙트 주소로 직접 전송된 토큰이 핸들러가 없을 경우 묵시적으로 소멸되었습니다. ERC-20을 기반으로 구축된 모든 결제 플랫폼은 이 위험을 그대로 이어받았습니다 (<a href="https://eips.ethereum.org/EIPS/eip-20" title="EIP-20: Token Standard">Ethereum EIPs</a>).</li>
-<li><strong>ERC-223이 해결책.</strong> ERC-223은 수신 컨트랙트가 <code>tokenFallback(address, uint, bytes)</code> 함수를 구현하도록 요구했습니다. 없는 경우 전송이 원자적으로 롤백되었습니다. 토큰이 묵시적으로 손실될 수 없었습니다 (<a href="https://github.com/ethereum/EIPs/issues/223" title="ERC-223 Token Standard Proposal">Ethereum EIPs GitHub</a>).</li>
-<li><strong>EXTC의 다섯 가지 컨트랙트 원시 요소.</strong> 토큰 식별(이름, 심볼, 18자리 소수점 정밀도), 고정 공급량, ERC-223 호환 전송, 기업 지급 다중 서명 인증, 블록 높이 시간 잠금 정기 주문.</li>
-<li><strong>담보 대출 메커니즘.</strong> 차용자가 EXTC 토큰을 컨트랙트 에스크로에 잠금; 컨트랙트는 담보 수령 즉시 원자적으로 대출금을 지급하며, 심사 지연이나 신용위원회 승인 없이 처리됩니다.</li>
-<li><strong>Ethereum 한계에 대한 실험 결과.</strong> 2018년 1월 피크 시 메인넷 처리량 약 15 TPS와 거래당 Gas 비용 $0.10–$1.00에서, Layer-2 인프라 없이 공개 Ethereum 상에서 송금 규모의 거래량을 처리하는 결제 네트워크는 경제적으로나 기술적으로 실현 불가능했습니다.</li>
-</ul>
-</blockquote>
-<hr />
-<h2 id="erc-20">설계 문제: ERC-20이 불충분했던 이유 <a class="heading-anchor" href="#erc-20" aria-label="링크 설계 문제: ERC-20이 불충분했던 이유">#</a></h2>
-<p>ERC-20 표준은 2015년에 제안되고 Ethereum Improvement Proposal 20으로 공식화되어, 2017–2018년 ICO 붐을 이끈 표준 대체 가능 토큰 인터페이스를 정의했습니다. 여섯 가지 핵심 함수—<code>totalSupply</code>, <code>balanceOf</code>, <code>transfer</code>, <code>transferFrom</code>, <code>approve</code>, <code>allowance</code>—는 단순한 토큰 발행과 교환에는 충분했습니다.</p>
-<p>그러나 결제 플랫폼의 경우 ERC-20에는 프로덕션 수준의 치명적 결함이 있었습니다. <code>transfer(address _to, uint256 _value)</code> 함수는 수신 컨트랙트에서 어떤 코드도 트리거하지 않고 컨트랙트 주소를 포함한 어떤 주소로도 토큰을 이동했습니다. 수신 ERC-20 전송을 추적하도록 특별히 프로그래밍되지 않은 컨트랙트는 이를 감지할 방법이 없었습니다. 이런 방식으로 전송된 토큰은 복구 메커니즘 없이 영구적으로 갇히게 되었습니다.</p>
-<p>Ethereum 커뮤니티는 이 메커니즘을 통해 2018년 중반까지 수천만 달러 상당의 ERC-20 토큰이 영구적으로 손실되었다고 추정했습니다. 전송이 묵시적으로 실패하여 사용자 자금을 소멸시킬 수 있는 결제 플랫폼을 구축하는 것은 받아들일 수 없었습니다.</p>
-<h2 id="erc-223">ERC-223 솔루션: 알림과 함께하는 원자적 전송 <a class="heading-anchor" href="#erc-223" aria-label="링크 ERC-223 솔루션: 알림과 함께하는 원자적 전송">#</a></h2>
-<p>Ethereum EIPs GitHub 이슈 트래커에 제안된 ERC-223은 토큰 전송이 해야 하는 것을 변경함으로써 묵시적 손실 문제를 해결했습니다. ERC-223에서 <code>transfer(address _to, uint256 _value, bytes _data)</code>는 수신 주소에 컨트랙트 코드가 포함되어 있는지 확인했습니다. 포함된 경우 전송은 <code>_to.tokenFallback(address _from, uint256 _value, bytes _data)</code>를 호출했습니다.</p>
-<p>핵심 속성: 수신 컨트랙트가 <code>tokenFallback</code>을 구현하지 않으면 전체 전송 트랜잭션이 롤백되었습니다. 발신자 잔액에서 토큰이 빠지지 않았고, 갇힌 토큰도 없었습니다. 전송은 원자적이었습니다—수신자 코드가 실행되면서 완료되거나, 상태가 변경되지 않은 채 완전히 실패했습니다.</p>
-<p>EXTC에 있어 이는 다음을 의미했습니다:</p>
-<ul>
-<li><strong>스마트 컨트랙트로의 결제가 구조적으로 안전했습니다.</strong> 에스크로 컨트랙트, 다중 서명 지갑, 대출 컨트랙트가 EXTC 토큰을 받을 때 자금이 돌이킬 수 없이 손실될 위험이 없었습니다.</li>
-<li><strong><code>_data</code> 필드가 풍부한 결제 메타데이터를 가능하게 했습니다.</strong> 바이트 페이로드는 청구서 참조, 라우팅 코드, 또는 컴플라이언스 증명을 담을 수 있었습니다—단순한 ERC-20 전송으로는 전달할 수 없는 정보입니다.</li>
-<li><strong>Gas 비용이 약간 높았습니다.</strong> <code>tokenFallback</code> 호출로 전송당 약 2,000–5,000 Gas가 추가되었는데, 2018년 Gas 가격에서는 사소한 오버헤드였습니다.</li>
-</ul>
-<h2 id="extc">EXTC 컨트랙트 아키텍처 <a class="heading-anchor" href="#extc" aria-label="링크 EXTC 컨트랙트 아키텍처">#</a></h2>
-<p>EXTC 토큰 컨트랙트는 다섯 가지 모듈로 구성된 Solidity 구현이었습니다:</p>
-<h3 id="1">1. 토큰 식별 <a class="heading-anchor" href="#1" aria-label="링크 1. 토큰 식별">#</a></h3>
-<pre><code>string public name = &quot;Express Transaction Credits&quot;;
-string public symbol = &quot;EXTC&quot;;
-uint8 public decimals = 18;
-</code></pre>
-<p>18자리 소수점은 EXTC에 센트 이하 정밀도를 부여하여 소액 결제 및 소액 대출 사용 사례에 필요한 세분성을 충족했습니다. 심볼 <code>EXTC</code>는 토큰 컨트랙트에 등록된 온체인 식별자였습니다.</p>
-<h3 id="2">2. 고정 총 공급량 <a class="heading-anchor" href="#2" aria-label="링크 2. 고정 총 공급량">#</a></h3>
-<p>총 공급량은 컨트랙트 배포 시 설정되었으며 이후 발행으로 늘릴 수 없었습니다. 이 설계 선택은 EXTC를 디플레이션적으로 만들었습니다: 불가역적 소각 작업을 통해 영구적으로 유통에서 제거된 토큰은 보충 없이 공급을 감소시켰습니다. 고정 공급 모델은 2018년 결제 토큰 설계의 표준이었으며, 디플레이션 압력이 교환 매체의 특성이라는 Bitcoin 영향을 받은 가정을 반영했습니다.</p>
-<h3 id="3-erc-223">3. ERC-223 호환 잔액 및 전송 <a class="heading-anchor" href="#3-erc-223" aria-label="링크 3. ERC-223 호환 잔액 및 전송">#</a></h3>
-<p>핵심 전송 함수는 완전한 ERC-223 인터페이스를 구현했습니다. 내부 잔액 매핑이 각 주소의 보유량을 추적했습니다. <code>isContract(address)</code> 헬퍼는 EOA(외부 소유 계정) 주소와 컨트랙트 주소를 구분하여 <code>tokenFallback</code>을 호출해야 하는지 결정했습니다.</p>
-<h3 id="4">4. 다중 서명 기업 지급 <a class="heading-anchor" href="#4" aria-label="링크 4. 다중 서명 기업 지급">#</a></h3>
-<p>기업 결제 워크플로는 공동 인증이 필요했습니다: 단일 서명자가 정의된 임계값 이상의 지급을 일방적으로 시작할 수 없었습니다. EXTC 컨트랙트는 N 중 2의 다중 서명 방식을 구현했습니다:</p>
-<ol>
-<li>지정된 발기인이 수취인, 금액, 논스를 지정하여 전송을 제안했습니다.</li>
-<li>공동 서명자가 논스를 확인했습니다.</li>
-<li>두 서명이 모두 온체인에 기록된 후에만 전송이 실행되었습니다.</li>
-</ol>
-<p>이는 기업 계정에 대한 단일 실패 지점 위험을 제거하면서 전체 인증 흐름을 청산소 중개자 없이 온체인에서 감사 가능하게 유지했습니다.</p>
-<h3 id="5">5. 블록 높이 시간 잠금 정기 주문 <a class="heading-anchor" href="#5" aria-label="링크 5. 블록 높이 시간 잠금 정기 주문">#</a></h3>
-<p>반복 결제—급여, 구독, 예정된 대출 상환—에는 정기 주문 원시 요소가 필요했습니다. EXTC는 이를 시간 잠금으로 구현했습니다: 전송 레코드가 <code>releaseBlock</code> 파라미터와 함께 컨트랙트에 저장되었습니다. Ethereum 블록 높이가 <code>releaseBlock</code>에 도달할 때까지 전송을 실행할 수 없었습니다.</p>
-<p>블록 높이를 시간 대리자로 사용하는 것은 2018년의 실용적 선택이었습니다. Ethereum은 15초 블록 간격을 목표로 하여 블록 높이를 분 범위 내에서 꽤 신뢰할 수 있는 실시간 대리자로 만들었습니다. 절대 타임스탬프(<code>block.timestamp</code>)는 사용 가능했지만 ±900초 창 내에서 채굴자 조작에 취약하여 블록 높이가 금융 컨트랙트에 더 안전한 참조였습니다.</p>
-<h2 id="section-9">담보 기반 즉시 대출 메커니즘 <a class="heading-anchor" href="#section-9" aria-label="링크 담보 기반 즉시 대출 메커니즘">#</a></h2>
-<p>EXTC 대출 원시 요소는 가장 복잡한 구성 요소였습니다. 설계:</p>
-<ol>
-<li><strong>차용자가 담보를 잠급니다.</strong> 차용자가 <code>lockCollateral(uint256 _collateralAmount)</code>를 호출하여 ERC-223 <code>tokenFallback</code>을 통해 EXTC 토큰을 대출 컨트랙트 에스크로로 전송했습니다.</li>
-<li><strong>담보 대출 비율 확인.</strong> 컨트랙트가 사전 구성된 LTV 비율(예: 50%)을 읽고 잠긴 담보에 대한 최대 대출 금액을 계산했습니다.</li>
-<li><strong>원자적 대출 지급.</strong> 담보가 최소 임계값을 충족하면 컨트랙트가 즉시 대출 금액을 차용자 주소로 전송했습니다. 심사 대기열 없음, 신용위원회 없음, 결제 지연 없음.</li>
-<li><strong>상환 및 해제.</strong> 상환—원금 더하기 고정 이자율—시 컨트랙트가 담보를 차용자에게 반환했습니다. <code>releaseBlock</code>까지 상환에 실패하면 자동 청산이 트리거되었습니다: 컨트랙트가 담보를 대출자의 지정 주소로 전송했습니다.</li>
-</ol>
-<p>전체 흐름이 컨트랙트 코드에 의해 강제되었습니다. 어느 당사자도 상대방을 신뢰하거나 조건을 집행하기 위해 중개자에 의존할 필요가 없었습니다.</p>
-<h2 id="section-10">실험이 드러낸 것 <a class="heading-anchor" href="#section-10" aria-label="링크 실험이 드러낸 것">#</a></h2>
-<p>EXTC 컨트랙트 아키텍처는 기술적으로 일관성이 있었습니다. ERC-223은 ERC-20의 가장 심각한 안전 결함을 해결했습니다. 다중 서명 및 시간 잠금 원시 요소가 실제 기업 결제 워크플로에 직접 매핑되었습니다. 담보 대출 메커니즘은 담보부 대출이 완전히 자동화되고 온체인에서 자체 집행될 수 있음을 보여주었습니다.</p>
-<p>실제로 두 가지 제약이 드러났습니다:</p>
-<p><strong>Gas 비용.</strong> 2018년 1월 피크 시 Ethereum Gas 가격이 50–100 gwei에 달해 단일 ERC-223 토큰 전송 비용이 $0.50–$2.00가 되었습니다. $10–$50의 소액 결제나 송금의 경우 이러한 수수료는 감당할 수 없었습니다.</p>
-<p><strong>처리량.</strong> 2018년 초 Ethereum 메인넷 블록 Gas 한도는 약 800만 Gas였습니다. ERC-223 전송은 약 50,000–80,000 Gas를 소비했습니다. 따라서 네트워크는 블록당 약 100–160건의 EXTC 토큰 전송, 즉 15초 블록 간격에서 초당 약 7–11건을 처리할 수 있었습니다. 결제 네트워크 규모—초당 수백 또는 수천 건의 트랜잭션—는 생산 형태로 존재하지 않았던 Layer-2 인프라 없이는 공개 Ethereum에서 달성할 수 없었습니다.</p>
-<p>이는 인프라 제약이었지 EXTC의 설계 결함이 아니었습니다. 컨트랙트 로직은 올바랐습니다. 기반 블록체인이 금융 산업 규모의 결제량을 아직 지원할 수 없었습니다.</p>
-<h2 id="section-11">프로덕션에 도달한 아이디어들 <a class="heading-anchor" href="#section-11" aria-label="링크 프로덕션에 도달한 아이디어들">#</a></h2>
-<p>EXTC의 여러 설계 패턴이 이후 개발에서 검증되었습니다:</p>
-<p><strong>수신자 알림과 함께하는 원자적 토큰 전송</strong>—ERC-223의 핵심 속성—은 알림 모델을 확장하고 이후 DeFi 대출 프로토콜에 통합된 ERC-777(2019)의 기반이 되었습니다. <code>tokenFallback</code> 패턴은 현대 DeFi 아키텍처 전반에 나타납니다.</p>
-<p><strong>기업 지급을 위한 다중 서명 인증</strong>—실행 전에 여러 온체인 서명을 요구하는 패턴—은 DAO 재무 관리 및 기관 보관 솔루션의 표준 모델이 되었습니다. 2018년에 출시된 Gnosis Safe가 이 패턴을 대규모로 대중화했습니다.</p>
-<p><strong>중개자 없는 담보 즉시 대출</strong>—에스크로에 담보를 잠그고 원자적으로 대출금을 해제하는 메커니즘—은 Compound(2018)와 Aave(2020) 같은 DeFi 대출 프로토콜의 기본 설계입니다.</p>
-<p><strong>정기 결제를 위한 블록 높이 시간 잠금</strong>—컨트랙트에서 미래 실행 타이밍을 인코딩하는 패턴—은 토큰 베스팅 컨트랙트, 지연된 거버넌스 제안, DeFi 생태계 전반의 시간 가중 평균 가격(TWAP) 오라클 설계에 나타납니다.</p>
-<p>EXTC 실험은 프로덕션 규모에 도달하지 못했습니다. 설계를 실행 가능하게 만드는 데 필요한 인프라는 3~5년이 더 성숙하는 데 걸렸습니다. 그것이 제기한 설계 질문들은 2018년에 올바른 것이었습니다.</p>
-<h2 id="section-12">자주 묻는 질문 <a class="heading-anchor" href="#section-12" aria-label="링크 자주 묻는 질문">#</a></h2>
-<p><strong>ERC-223이 ERC-20의 결함을 수정했음에도 왜 지배적인 토큰 표준으로 채택되지 않았나요?</strong></p>
-<p>ERC-223은 수신 컨트랙트가 <code>tokenFallback</code>을 구현하도록 요구하여 ERC-20 토큰을 위해 이미 배포된 수천 개의 컨트랙트와의 하위 호환성을 깨뜨렸습니다. 기존 ERC-20 생태계는 너무 커서 마이그레이션할 수 없었습니다. 후속 제안—특히 ERC-777과 ERC-1363—은 다른 호환성 절충점으로 같은 문제를 해결했지만, ERC-20은 네트워크 효과와 묵시적 손실 시나리오를 피하는 래핑된 토큰 패턴의 도입을 통해 지배적 지위를 유지했습니다.</p>
-<p><strong>EXTC 토큰과 플랫폼에 무슨 일이 일어났나요?</strong></p>
-<p>EXTC는 2018년의 개념 증명 및 초기 연구 프로젝트였습니다. Ethereum 확장성 한계와 규제 불확실성이 명확해지면서 더 넓은 ICO 및 결제 토큰 시장이 2018–2019년을 통해 급격히 축소되었습니다. EXTC 설계에 내재된 아이디어들은 Layer-2 인프라, 더 나은 도구, 더 명확한 규제 프레임워크에 접근할 수 있는 이후 프로토콜에서 다시 나타났습니다.</p>
-<p><strong>EXTC의 담보 대출 모델은 Aave 같은 현대 DeFi 프로토콜과 어떻게 비교되나요?</strong></p>
-<p>핵심 메커니즘은 동일합니다: 담보를 잠그고, LTV 비율에 따라 크기가 정해진 대출을 받고, 상환하거나 청산을 당합니다. 차이점은: (1) 현대 DeFi 프로토콜은 고정 비율 대신 동적 LTV를 위해 오라클 가격 피드를 사용합니다; (2) 풀 활용도에 반응하는 알고리즘 이자율을 사용합니다; (3) 2018년 메인넷보다 Gas 비용이 10–100배 낮은 Layer-2 네트워크에서 운영됩니다; (4) Aave와 Compound는 공식 보안 감사를 거쳤고 수십억 달러의 유동성을 보유하여 기본 모델이 건전하다는 경험적 검증을 제공했습니다.</p>
-<p><strong>2018년 초 Solidity 버전 제약은 어땠나요?</strong></p>
-<p>EXTC 컨트랙트는 2018년 초의 지배적 버전인 Solidity 0.4.x로 작성되었습니다. Solidity 0.4에는 이후 버전에서 도입된 많은 안전 기능이 부족했습니다: 정수 오버플로 검사(0.8.0에서 자동으로 추가됨), 오류 메시지가 있는 <code>require</code>/<code>revert</code>(0.4에서 제한됨), 명시적 함수 가시성(0.4에서 기본값은 public). 컨트랙트는 오버플로를 방지하기 위해 OpenZeppelin의 SafeMath 라이브러리에 의존했는데, 이는 컴파일러가 이를 기본적으로 강제하기 전의 일반적인 패턴이었습니다.</p>
-<h2 id="section-13">참고 문헌 <a class="heading-anchor" href="#section-13" aria-label="링크 참고 문헌">#</a></h2>
-<ul>
-<li>Ethereum Foundation, (2015). <a href="https://eips.ethereum.org/EIPS/eip-20" title="EIP-20 Token Standard">EIP-20: Token Standard ⧉</a>.</li>
-<li>Dexaran, Ethereum GitHub, (2017). <a href="https://github.com/ethereum/EIPs/issues/223" title="ERC-223 discussion">ERC-223 Token Standard Proposal ⧉</a>.</li>
-<li>OpenZeppelin, (2018). <a href="https://github.com/OpenZeppelin/openzeppelin-contracts" title="OpenZeppelin Contracts">OpenZeppelin Contracts — SafeMath ⧉</a>.</li>
-<li>Ethereum Foundation, (2014). <a href="https://ethereum.org/whitepaper" title="Ethereum Whitepaper">Ethereum Whitepaper ⧉</a>.</li>
-</ul>
-<!-- enrich-start -->
-
-<p class="post-reviewed">최종 검토 <time datetime="2026-05-24">2026-05-24</time>.</p>
-
-<!-- enrich-end -->
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>목차</h2><ol><li><a href="#section-1">통찰</a></li><li><a href="#section-3">아이디어</a></li><li><a href="#section-5">방법론</a></li><li><a href="#section-7">혁신</a></li><li><a href="#section-9">접근 방식</a></li><li><a href="#section-11">과제</a></li><li><a href="#section-13">활용 사례</a></li><li><a href="#section-15">결론</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 블록체인과 암호자산을 활용한 고속 국경 간 송금 플랫폼 Express Transaction Credits의 구축.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>통찰.</strong> 국경 간 송금은 여전히 느리고 불투명하며 비쌉니다.</li>  <li><strong>아이디어.</strong> ETC 플랫폼은 블록체인 기반 토큰을 사용하여 국경을 넘어 가치를 이동시키고, 기존 은행 레일과 통합합니다.</li>  <li><strong>방법론.</strong> 플랫폼은 4가지 핵심 구성 요소로 이루어집니다: (1) 토큰 컨트랙트 — 가치 이동을 위한 ERC-20 호환 토큰; (2) 유동성 풀 — 법정통화와 토큰 간의 온램프/오프램프; (3) 규정 준수 계층 — KYC/AML/제재 스크리닝; (4) 결제 엔진 — 은행 레일 통합용.</li>  <li><strong>혁신.</strong> 변동성 문제를 해결하기 위하여, ETC는 스테이블코인 담보 유동성 풀을 사용하여 이동 중 가치의 안정성을 보장합니다.</li></ul></aside><p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/joshua-sortino-LqKhnDzSF-8-unsplash.webp&w=1600&format=webp&q=85" alt="야간 전자 회로 기판의 파란 빛"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<h2 id="section-1">통찰 <a class="heading-anchor" href="#section-1" aria-label="링크 통찰">#</a></h2>
+<h3 id="section-2">문제: 느리고 비싼 국경 간 송금 <a class="heading-anchor" href="#section-2" aria-label="링크 문제: 느리고 비싼 국경 간 송금">#</a></h3>
+<p>국경 간 송금은 여전히 느리고 불투명하며 비쌉니다. 송금, 무역 금융, 중소기업 결제는 결제 시간과 수수료, 환차손에 시달리고 있습니다. Express Transaction Credits (ETC)는 이 문제에 대한 구조적 대응으로 설계되었습니다.</p>
+<h2 id="section-3">아이디어 <a class="heading-anchor" href="#section-3" aria-label="링크 아이디어">#</a></h2>
+<h3 id="section-4">하이브리드 레일 아키텍처 <a class="heading-anchor" href="#section-4" aria-label="링크 하이브리드 레일 아키텍처">#</a></h3>
+<p>ETC 플랫폼은 블록체인 기반 토큰을 사용하여 국경을 넘어 가치를 이동시키고, 기존 은행 레일과 통합합니다. 이를 통하여 토큰화 결제의 속도와 전통 결제의 규제 적합성을 결합합니다.</p>
+<h2 id="section-5">방법론 <a class="heading-anchor" href="#section-5" aria-label="링크 방법론">#</a></h2>
+<h3 id="section-6">플랫폼 구성 요소 <a class="heading-anchor" href="#section-6" aria-label="링크 플랫폼 구성 요소">#</a></h3>
+<p>플랫폼은 4가지 핵심 구성 요소로 이루어집니다: (1) 토큰 컨트랙트 — 가치 이동을 위한 ERC-20 호환 토큰; (2) 유동성 풀 — 법정통화와 토큰 간의 온램프/오프램프; (3) 규정 준수 계층 — KYC/AML/제재 스크리닝; (4) 결제 엔진 — 은행 레일 통합용.</p>
+<h2 id="section-7">혁신 <a class="heading-anchor" href="#section-7" aria-label="링크 혁신">#</a></h2>
+<h3 id="section-8">스테이블코인 담보 유동성 <a class="heading-anchor" href="#section-8" aria-label="링크 스테이블코인 담보 유동성">#</a></h3>
+<p>변동성 문제를 해결하기 위하여, ETC는 스테이블코인 담보 유동성 풀을 사용하여 이동 중 가치의 안정성을 보장합니다. 이를 통하여 암호자산의 변동성과 전통 결제의 확실성을 정합시킵니다.</p>
+<h2 id="section-9">접근 방식 <a class="heading-anchor" href="#section-9" aria-label="링크 접근 방식">#</a></h2>
+<h3 id="section-10">단계적 출시 전략 <a class="heading-anchor" href="#section-10" aria-label="링크 단계적 출시 전략">#</a></h3>
+<p>출시는 단계적으로 이루어지며, 처음에는 한정된 규제 통화쌍과 신뢰할 수 있는 거래 상대방에 초점을 둡니다. 이를 통하여 규정 준수를 처음부터 내장하고 KYC/AML 통제의 운영 시험을 가능하게 합니다.</p>
+<h2 id="section-11">과제 <a class="heading-anchor" href="#section-11" aria-label="링크 과제">#</a></h2>
+<h3 id="section-12">규제의 복잡성 <a class="heading-anchor" href="#section-12" aria-label="링크 규제의 복잡성">#</a></h3>
+<p>가장 큰 과제는 기술적인 것이 아니라 규제적인 것입니다. 플랫폼은 복수 법역에 걸친 송금 라이선스, 제재 준수, 소비자 보호, 데이터 보호를 헤쳐 나가야 합니다.</p>
+<h2 id="section-13">활용 사례 <a class="heading-anchor" href="#section-13" aria-label="링크 활용 사례">#</a></h2>
+<h3 id="section-14">송금에서 무역 금융까지 <a class="heading-anchor" href="#section-14" aria-label="링크 송금에서 무역 금융까지">#</a></h3>
+<p>초기 활용 사례에는 가계 송금, 중소기업의 B2B 결제, 기업 트레저리가 포함됩니다. 각 세그먼트는 서로 다른 UX, 거래량, 준수 요건을 가지며, 플랫폼 설계를 형성합니다.</p>
+<h2 id="section-15">결론 <a class="heading-anchor" href="#section-15" aria-label="링크 결론">#</a></h2>
+<h3 id="etc">배관으로서의 ETC <a class="heading-anchor" href="#etc" aria-label="링크 배관으로서의 ETC">#</a></h3>
+<p>ETC의 최선의 성과는 고객에게 보이지 않는 배관 — 고속·저비용·고신뢰의 국경 간 가치 이동 — 이 되는 것입니다. 그것이 암호자산이 레거시 시스템보다 측정 가능한 수준으로 우월한 자리이며, 구조적 가치가 풀려나는 지점입니다.</p>
 <aside class="author-card" aria-label="저자 소개"><img alt="Sebastien Rousseau의 초상화" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/ko/sogae/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, ISO 20022 이행, 금융 서비스를 위한 포스트 양자 암호, 도매 결제의 구조적 변혁에 관해 집필하는 시니어 뱅킹 테크놀로지스트입니다.</span><span class="author-credentials">HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group에서 20년 이상의 경험을 보유하였습니다. <a href="/ko/sogae/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">최종 검토 <time datetime="2026-05-27">2026-05-27</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">관련 읽을거리</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/ko/2018-02-04-saeroun-amhohwapye-wa-misirae-gwasok-gyeoljeyusol" class="related-media" aria-label="Unveiling a New Cryptocurrency and Faster Payment Solution" tabindex="-1"><img alt="A very tall building with a lot of holes in it" src="https://cloudcdn.pro/api/transform?url=/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="unveiling-a-new-cryptocurrency-and-faster-payment-solution"><a href="https://sebastienrousseau.com/ko/2018-02-04-saeroun-amhohwapye-wa-misirae-gwasok-gyeoljeyusol">Unveiling a New Cryptocurrency and Faster Payment Solution</a> <a class="heading-anchor" href="#unveiling-a-new-cryptocurrency-and-faster-payment-solution" aria-label="링크 Unveiling a New Cryptocurrency and Faster Payment Solution">#</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/ko/2018-01-24-erc-20-tokeun-pyojun" class="related-media" aria-label="ERC-20: 세상을 바꾼 이더리움 토큰 인터페이스" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="erc-20-2"><a href="https://sebastienrousseau.com/ko/2018-01-24-erc-20-tokeun-pyojun">ERC-20: 세상을 바꾼 이더리움 토큰 인터페이스</a> <a class="heading-anchor" href="#erc-20-2" aria-label="링크 ERC-20: 세상을 바꾼 이더리움 토큰 인터페이스">#</a></h3><p><time datetime="2018-01-24">2018-01-24</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/ko/2026-05-21-tokenised-deposits-banking-services-status-2026" class="related-media" aria-label="Tokenised Deposits in 2026" tabindex="-1"><img alt="Tokenised deposit banking architecture for 2026" src="https://cloudcdn.pro/api/transform?url=/stocks/images/bit-cloud-GlqbGLCPnQ4.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="tokenised-deposits-in-2026"><a href="https://sebastienrousseau.com/ko/2026-05-21-tokenised-deposits-banking-services-status-2026">Tokenised Deposits in 2026</a> <a class="heading-anchor" href="#tokenised-deposits-in-2026" aria-label="링크 Tokenised Deposits in 2026">#</a></h3><p><time datetime="2026-05-21">2026-05-21</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ko/2018-02-04-saeroun-amhohwapye-wa-misirae-gwasok-gyeoljeyusol/index.html" class="related-media" aria-label="새로운 암호자산을 공개하며 미래의 보다 빠른 결제 솔루션을 제공한다" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/api/transform?url=/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-17"><a href="https://sebastienrousseau.com/ko/2018-02-04-saeroun-amhohwapye-wa-misirae-gwasok-gyeoljeyusol/index.html">새로운 암호자산을 공개하며 미래의 보다 빠른 결제 솔루션을 제공한다</a> <a class="heading-anchor" href="#section-17" aria-label="링크 새로운 암호자산을 공개하며 미래의 보다 빠른 결제 솔루션을 제공한다">#</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ko/2018-01-09-beulrokchein-baehu-gisul-ihae/index.html" class="related-media" aria-label="블록체인 배후의 기술 이해하기" tabindex="-1"><img alt="Abstract digital ledger blocks connected by light trails on dark background" src="https://cloudcdn.pro/api/transform?url=/stocks/images/adam-smigielski-K5mPtONmpHM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-18"><a href="https://sebastienrousseau.com/ko/2018-01-09-beulrokchein-baehu-gisul-ihae/index.html">블록체인 배후의 기술 이해하기</a> <a class="heading-anchor" href="#section-18" aria-label="링크 블록체인 배후의 기술 이해하기">#</a></h3><p><time datetime="2018-01-09">2018-01-09</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ko/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenhwa-mmf" class="related-media" aria-label="숨겨진 수익: BlackRock의 BRSRV·BSTBL과 GENIUS Act 토큰화 MMF 해독" tabindex="-1"><img alt="BlackRock tokenised money market fund architecture diagram — BRSRV OnChain Shares and BSTBL ERC-20 share class with GENIUS Act reserve flows" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="blackrock-brsrvbstbl-genius-act-mmf"><a href="https://sebastienrousseau.com/ko/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenhwa-mmf">숨겨진 수익: BlackRock의 BRSRV·BSTBL과 GENIUS Act 토큰화 MMF 해독</a> <a class="heading-anchor" href="#blackrock-brsrvbstbl-genius-act-mmf" aria-label="링크 숨겨진 수익: BlackRock의 BRSRV·BSTBL과 GENIUS Act 토큰화 MMF 해독">#</a></h3><p><time datetime="2026-05-15">2026-05-15</time></p></footer></article>
 </div>
-</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">출처 및 참고문헌</h2><ol class="article-sources-list"><li><a href="https://github.com/ethereum/EIPs/issues/223" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/ethereum/EIPs/issues/223</span></a></li><li><a href="https://github.com/OpenZeppelin/openzeppelin-contracts" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/OpenZeppelin/openzeppelin-contracts</span></a></li></ol></aside><nav class="post-pagination" aria-label="기사 페이지 이동"><a class="post-pagination-prev" href="/ko/2018-02-04-saeroun-amhohwapye-wa-misirae-gwasok-gyeoljeyusol/"><span class="post-pagination-label">이전</span><span class="post-pagination-title">Unveiling a new Cryptocurrency and Faster Payment Solution</span></a><a class="post-pagination-next" href="/ko/2023-09-29-pain001-ro-iso-20022-junsu-gyeoljepail-jadonghwa/"><span class="post-pagination-label">다음</span><span class="post-pagination-title">Automating ISO 20022 Payment Files Creation with pain001</span></a></nav></div>
+</aside><nav class="post-pagination" aria-label="기사 페이지 이동"><a class="post-pagination-prev" href="/ko/2018-02-04-saeroun-amhohwapye-wa-misirae-gwasok-gyeoljeyusol/"><span class="post-pagination-label">이전</span><span class="post-pagination-title">Unveiling a new Cryptocurrency and Faster Payment Solution</span></a><a class="post-pagination-next" href="/ko/2023-09-29-pain001-ro-iso-20022-junsu-gyeoljepail-jadonghwa/"><span class="post-pagination-label">다음</span><span class="post-pagination-title">Automating ISO 20022 Payment Files Creation with pain001</span></a></nav></div>
     </main>
 
 <!-- gen-layouts:footer-start -->
@@ -344,7 +275,7 @@ uint8 public decimals = 18;
     <!-- Schema.org structured data -->
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ko"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ko"}]}</script>
 
-        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1421,"about":{"@type":"Thing","name":"Ethereum","sameAs":["https://en.wikipedia.org/wiki/Ethereum","https://www.wikidata.org/wiki/Q21825854","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]},"headline":"The making of the Express Transaction Credits Platform","description":"2018년 Ethereum ERC-223 기반으로 구축된 EXTC 플랫폼에 대한 기술적 심층 분석: 토큰 아키텍처, 멀티시그 지급, 타임락 전송, 담보 기반 즉시 대출을 상세히 다룹니다.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp","width":"100vw","height":"100vh","caption":"거대한 흰색 기둥들"},"url":"https://sebastienrousseau.com/ko/2018-02-15-express-transaction-credits-peullaetpom-jejak/","datePublished":"2018-02-15T18:18:18+00:00","dateModified":"2026-05-24","inLanguage":"ko","keywords":"EXTC 플랫폼, ERC-223, Ethereum 스마트 컨트랙트, 토큰 아키텍처, 다중 서명, 타임락 전송, 블록체인 결제, 담보 기반 대출, 탈중앙화 금융, 2018 크립토","articleSection":"Blockchain","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ko/2018-02-15-express-transaction-credits-peullaetpom-jejak/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ko"},"citation":[{"@type":"CreativeWork","url":"https://github.com/ethereum/EIPs/issues/223"},{"@type":"CreativeWork","url":"https://github.com/OpenZeppelin/openzeppelin-contracts"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ko/"},{"@type":"ListItem","position":3,"name":"The making of the Express Transaction Credits Platform","item":"https://sebastienrousseau.com/ko/2018-02-15-express-transaction-credits-peullaetpom-jejak/"}]}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":256,"headline":"Express Transaction Credits 플랫폼의 개발","description":"블록체인과 암호자산을 활용한 고속 국경 간 송금 플랫폼 Express Transaction Credits의 구축.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/joshua-sortino-LqKhnDzSF-8-unsplash.webp","width":"100vw","height":"100vh","caption":"야간 전자 회로 기판의 파란 빛"},"url":"https://sebastienrousseau.com/ko/2018-02-15-express-transaction-credits-peullaetpom-jejak/","datePublished":"2018-02-15T18:18:18+00:00","dateModified":"2026-05-24","inLanguage":"ko","keywords":"국경 간 송금, 블록체인, 암호자산, 토큰, 스마트 컨트랙트, 결제 플랫폼, 핀테크","articleSection":"Blockchain","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ko/2018-02-15-express-transaction-credits-peullaetpom-jejak/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ko"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ko/"},{"@type":"ListItem","position":3,"name":"Express Transaction Credits 플랫폼의 개발","item":"https://sebastienrousseau.com/ko/2018-02-15-express-transaction-credits-peullaetpom-jejak/"}]}]}</script>
 <script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
   
 <!-- SSG Search Widget -->
@@ -370,5 +301,5 @@ uint8 public decimals = 18;
 </div>
 <script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
 </div>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"The making of the Express Transaction Credits Platform","url":"https://sebastienrousseau.com/ko/2018-02-15-express-transaction-credits-peullaetpom-jejak/","inLanguage":"ko-KR","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"EXTC 플랫폼, ERC-223, Ethereum 스마트 컨트랙트, 토큰 아키텍처, 다중 서명, 타임락 전송, 블록체인 결제, 담보 기반 대출, 탈중앙화 금융, 2018 크립토","dependencies":["Ethereum"]}</script></body>
+</body>
 </html>

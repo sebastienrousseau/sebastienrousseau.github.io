@@ -4,7 +4,43 @@
   <link href="https://sebastienrousseau.com/zh-hans/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/zh-hans/"/>
   <id>https://sebastienrousseau.com/zh-hans/</id>
-  <updated>2026-05-26T23:13:19+00:00</updated>
+  <updated>2026-05-27T22:09:52+00:00</updated>
+  <entry>
+    <title>2026 支付人工智能操作系统：欺诈、路由、韧性与合规</title>
+    <link href="https://sebastienrousseau.com/zh-hans/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hans/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</id>
+    <updated>2026-05-27T06:06:06+00:00</updated>
+    <published>2026-05-27T06:06:06+00:00</published>
+    <summary>2026 年人工智能正成为支付的操作系统，从分析仪表盘走向欺诈防范、支付修复、路由、流动性预测、合规筛查与代理式商业控制的实时决策层。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Magnifica Humanitas：AI行业视角解读教宗通谕</title>
+    <link href="https://sebastienrousseau.com/zh-hans/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/"/>
+    <id>https://sebastienrousseau.com/zh-hans/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>2026年5月25日，教宗良十四世发布《Magnifica Humanitas》，这是首份专门讨论人工智能的教宗通谕。从科技行业内部客观阅读，它不是教义，而是迄今为AI与量子时代提出的最具一贯性的伦理框架之一，呼应了火车、汽车、核能与互联网当年所引发的道德焦虑。本文剖析其对行业、对人类的意义，以及为何诚实的阅读最终落在希望之上。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 稳定币与代币化存款：银行真正需要守住什么</title>
+    <link href="https://sebastienrousseau.com/zh-hans/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hans/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>稳定币与代币化存款正围绕可编程清算趋同，但其资产负债表、法律、流动性与信任模型仍各不相同；银行须分清边界。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 可编程流动性：AI、代币化存款与实时资金管理编排</title>
+    <link href="https://sebastienrousseau.com/zh-hans/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hans/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</id>
+    <updated>2026-05-25T06:06:06+00:00</updated>
+    <published>2026-05-25T06:06:06+00:00</published>
+    <summary>2026 年的可编程流动性把 AI 预测、代币化存款、实时支付通道、虚拟账户、稳定币与资金管理系统整合为统一编排层，重塑营运资金治理与银行运营模式。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>2026 年 UK Payments Forward Plan：稳定币、开放银行、代币化存款与智能体支付</title>
     <link href="https://sebastienrousseau.com/zh-hans/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/"/>
@@ -240,15 +276,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
-    <link href="https://sebastienrousseau.com/zh-hans/2024-02-12-akande-yuyin-zhushou-biange-geren-yu-gaoguan-fuwu/"/>
-    <id>https://sebastienrousseau.com/zh-hans/2024-02-12-akande-yuyin-zhushou-biange-geren-yu-gaoguan-fuwu/</id>
-    <updated>2024-02-12T06:06:06+00:00</updated>
-    <published>2024-02-12T06:06:06+00:00</published>
-    <summary>Àkàndé 是一款开源 Python 语音助手，将 OpenAI Whisper 语音识别、GPT-4 对话补全和本地 SQLite 响应缓存整合为语音驱动的工作流——从对话历史生成 PDF 摘要，并将所有数据保存在本地。</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>Àkàndé 语音助手：变革个人与高管协助</title>
     <link href="https://sebastienrousseau.com/zh-hans/2024-02-12-akande-yuyin-zhushou-biange-geren-yu-gaoguan-fuwu/"/>
     <id>https://sebastienrousseau.com/zh-hans/2024-02-12-akande-yuyin-zhushou-biange-geren-yu-gaoguan-fuwu/</id>
@@ -267,30 +294,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
-    <link href="https://sebastienrousseau.com/zh-hans/2024-01-29-ai-yinpin-fenxi-fanyi-yu-jianjie/"/>
-    <id>https://sebastienrousseau.com/zh-hans/2024-01-29-ai-yinpin-fenxi-fanyi-yu-jianjie/</id>
-    <updated>2024-01-29T06:06:06+00:00</updated>
-    <published>2024-01-29T06:06:06+00:00</published>
-    <summary>Audio Analyser 使用 Azure Cognitive Services 语音转文字神经模型、Text Analytics NLP 和 CherryPy，将音频录音转换为可搜索的文字记录，并提供情感评分、关键词提取和多语言翻译功能。</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>AI 驱动的音频分析、翻译与洞察</title>
     <link href="https://sebastienrousseau.com/zh-hans/2024-01-29-ai-yinpin-fenxi-fanyi-yu-jianjie/"/>
     <id>https://sebastienrousseau.com/zh-hans/2024-01-29-ai-yinpin-fenxi-fanyi-yu-jianjie/</id>
     <updated>2024-01-29T06:06:06+00:00</updated>
     <published>2024-01-29T06:06:06+00:00</published>
     <summary>Audio Analyser 借助 Microsoft Azure AI 实现音频转录、情感分析、翻译与可执行洞察，加速决策。</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>AI Prompt Engineering 2024: Techniques That Work</title>
-    <link href="https://sebastienrousseau.com/zh-hans/2024-01-23-ai-tishici-gongcheng-de-jinzhan/"/>
-    <id>https://sebastienrousseau.com/zh-hans/2024-01-23-ai-tishici-gongcheng-de-jinzhan/</id>
-    <updated>2024-01-23T06:06:06+00:00</updated>
-    <published>2024-01-23T06:06:06+00:00</published>
-    <summary>提示工程在推理时控制LLM行为。本文涵盖零样本与少样本提示、思维链推理、自一致性采样、ReAct工具调用架构、间接提示注入风险，以及金融服务领域的应用模式。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -384,15 +393,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Generative AI in 2023: How It Works, Where It Lands</title>
-    <link href="https://sebastienrousseau.com/zh-hans/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng/"/>
-    <id>https://sebastienrousseau.com/zh-hans/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng/</id>
-    <updated>2023-11-12T06:06:06+00:00</updated>
-    <published>2023-11-12T06:06:06+00:00</published>
-    <summary>Transformer模型的工作原理、2023年树立标杆的模型、生成式AI在金融服务领域的首要落地场景，以及从业者在部署前需要回答的治理问题。</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>探索生成式人工智能</title>
     <link href="https://sebastienrousseau.com/zh-hans/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng/"/>
     <id>https://sebastienrousseau.com/zh-hans/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng/</id>
@@ -408,15 +408,6 @@
     <updated>2023-11-05T06:06:06+00:00</updated>
     <published>2023-11-05T06:06:06+00:00</published>
     <summary>Common（CMN）库为 Rust 开发者提供精确的数学与密码常数，提升代码安全性与可靠性。</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>LibMake: Rust Library Scaffold Generator</title>
-    <link href="https://sebastienrousseau.com/zh-hans/2023-10-26-libmake-rust-ku-de-daima-shengchengqi/"/>
-    <id>https://sebastienrousseau.com/zh-hans/2023-10-26-libmake-rust-ku-de-daima-shengchengqi/</id>
-    <updated>2023-10-26T06:06:06+00:00</updated>
-    <published>2023-10-26T06:06:06+00:00</published>
-    <summary>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -447,15 +438,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Automating ISO 20022 Payment Files Creation with pain001</title>
-    <link href="https://sebastienrousseau.com/zh-hans/2023-09-29-yong-pain001-zidonghua-iso-20022-zhifu-wenjian/"/>
-    <id>https://sebastienrousseau.com/zh-hans/2023-09-29-yong-pain001-zidonghua-iso-20022-zhifu-wenjian/</id>
-    <updated>2023-09-29T06:06:06+00:00</updated>
-    <published>2023-09-29T06:06:06+00:00</published>
-    <summary>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>用 pain001 自动化创建符合 ISO 20022 标准的支付文件</title>
     <link href="https://sebastienrousseau.com/zh-hans/2023-09-29-yong-pain001-zidonghua-iso-20022-zhifu-wenjian/"/>
     <id>https://sebastienrousseau.com/zh-hans/2023-09-29-yong-pain001-zidonghua-iso-20022-zhifu-wenjian/</id>
@@ -471,24 +453,6 @@
     <updated>2018-02-15T06:06:06+00:00</updated>
     <published>2018-02-15T06:06:06+00:00</published>
     <summary>EXTC 平台基于 ERC-223 标准，致力于通过去中心化交易平台实现闪电般的金融交易。</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>The making of the Express Transaction Credits Platform</title>
-    <link href="https://sebastienrousseau.com/zh-hans/2018-02-15-express-transaction-credits-pingtai-de-jianli/"/>
-    <id>https://sebastienrousseau.com/zh-hans/2018-02-15-express-transaction-credits-pingtai-de-jianli/</id>
-    <updated>2018-02-15T06:06:06+00:00</updated>
-    <published>2018-02-15T06:06:06+00:00</published>
-    <summary>深入探讨2018年基于以太坊ERC-223构建EXTC平台的技术细节：代币架构、多重签名分发、时间锁定转账及抵押品支持的即时贷款。</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
-    <link href="https://sebastienrousseau.com/zh-hans/2018-02-04-xin-jiamihuobi-yu-gengkuai-zhifu-fangan/"/>
-    <id>https://sebastienrousseau.com/zh-hans/2018-02-04-xin-jiamihuobi-yu-gengkuai-zhifu-fangan/</id>
-    <updated>2018-02-04T06:06:06+00:00</updated>
-    <published>2018-02-04T06:06:06+00:00</published>
-    <summary>2018年初，EXTC平台通过以太坊ERC-223智能合约探索更快的跨境支付——这是去中心化金融后来构建的早期蓝图。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -516,15 +480,6 @@
     <updated>2018-01-09T06:06:06+00:00</updated>
     <published>2018-01-09T06:06:06+00:00</published>
     <summary>区块链技术已经开启了一个去中心化的新时代。本文以以太坊为平台，带你逐步构建自己的加密货币。</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Understanding the Technology behind Blockchain</title>
-    <link href="https://sebastienrousseau.com/zh-hans/2018-01-09-lijie-quqiulian-beihou-de-jishu/"/>
-    <id>https://sebastienrousseau.com/zh-hans/2018-01-09-lijie-quqiulian-beihou-de-jishu/</id>
-    <updated>2018-01-09T06:06:06+00:00</updated>
-    <published>2018-01-09T06:06:06+00:00</published>
-    <summary>区块链技术深度解析：密码哈希链、Merkle树、分布式共识机制，以及Ethereum的可编程层如何将支付账本转变为智能合约与代币化资产平台。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

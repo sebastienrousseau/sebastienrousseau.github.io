@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta itemprop="datePublished" content="Tue, 09 Jan 2018 09:09:00 +0000" id="date" />
     <meta itemprop="dateModified" content="Tue, 09 Jan 2018 09:09:00 +0000" id="last-modified" />
-    <title>Blockchain'in arkasındaki teknolojiyi anlamak — Sebastien Rousseau</title>
+    <title>Blockchain&#x27;in arkasındaki teknolojiyi anlamak — Sebastien Rousseau</title>
 
     <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
-<meta name="description" content="Blockchain&#x27;in nasıl çalıştığına teknik bir giriş: kriptografik hash zincirleri, Merkle ağaçları, dağıtık konsensüs ve Ethereum&#x27;un programlanabilir katmanının bir ödeme defterini akıllı sözleşmeler ve tokenize varlıklar için bir platforma nasıl dönüştürdüğü.">
-<meta name="keywords" content="blockchain teknolojisi, kriptografik hash, Merkle ağacı, dağıtık konsensüs, proof of work, Ethereum, akıllı sözleşmeler, EVM, Solidity, ERC-20, dağıtık defter, merkeziyetsiz finans">
+<meta name="description" content="Blockchain&#x27;in mimarisi: bloklar, hash&#x27;ler, konsensüs algoritmaları ve güveni mümkün kılan kriptografi.">
+<meta name="keywords" content="blockchain, kriptografi, hash, konsensüs, proof-of-work, proof-of-stake, dağıtık defter">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
@@ -40,7 +40,7 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-QFSWzGghYLWWu6P7qPeSpxkAO748D5ZzoPGkSUy57tA=' 'sha256-WSwlz76k++5g+gjc8065BlbmhQ4k5cWyzqBa4por6CE=' 'sha256-aSw7UwGHc2mfRmDg9lzgE/WHMTeCp4pDb+qvRcIpJXY=' 'sha256-otgW0F5erylcpE/iR5PCe8DpWaoggFsP24F9jYTODMA=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-/UtDeUJswfPcAc3jAZcGImQjgPEdDv0RsG9W5/ezASM=' 'sha256-6IdIkC08bLkZSeb7XoqPc1jpf9yS1qGB6Z5WRDwIwC4=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-QFSWzGghYLWWu6P7qPeSpxkAO748D5ZzoPGkSUy57tA=' 'sha256-otgW0F5erylcpE/iR5PCe8DpWaoggFsP24F9jYTODMA=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
@@ -77,8 +77,8 @@
     <link rel="alternate" type="application/atom+xml" title="Atom Akışı" href="/tr/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="stylesheet" href="/highlight.a92b9694.css">
-<meta property="og:title" content="Blockchain'in arkasındaki teknolojiyi anlamak — Sebastien Rousseau">
-<meta property="og:description" content="Blockchain&#x27;in nasıl çalıştığına teknik bir giriş: kriptografik hash zincirleri, Merkle ağaçları, dağıtık konsensüs ve Ethereum&#x27;un programlanabilir katmanının bir ödeme defterini akıllı sözleşmeler ve tokenize varlıklar için bir platforma nasıl dönüştürdüğü.">
+<meta property="og:title" content="Blockchain&#x27;in arkasındaki teknolojiyi anlamak — Sebastien Rousseau">
+<meta property="og:description" content="Blockchain&#x27;in mimarisi: bloklar, hash&#x27;ler, konsensüs algoritmaları ve güveni mümkün kılan kriptografi.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sebastienrousseau.com/tr/2018-01-09-blockchain-arkasindaki-teknolojiyi-anlamak/">
 <meta property="og:image" content="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp">
@@ -86,8 +86,8 @@
 <meta property="og:image:height" content="100vh">
 <meta property="og:locale" content="tr_TR">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Blockchain'in arkasındaki teknolojiyi anlamak — Sebastien Rousseau">
-<meta name="twitter:description" content="Blockchain&#x27;in nasıl çalıştığına teknik bir giriş: kriptografik hash zincirleri, Merkle ağaçları, dağıtık konsensüs ve Ethereum&#x27;un programlanabilir katmanının bir ödeme defterini akıllı sözleşmeler ve tokenize varlıklar için bir platforma nasıl dönüştürdüğü.">
+<meta name="twitter:title" content="Blockchain&#x27;in arkasındaki teknolojiyi anlamak — Sebastien Rousseau">
+<meta name="twitter:description" content="Blockchain&#x27;in mimarisi: bloklar, hash&#x27;ler, konsensüs algoritmaları ve güveni mümkün kılan kriptografi.">
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp">
 <link rel="canonical" href="https://sebastienrousseau.com/tr/2018-01-09-blockchain-arkasindaki-teknolojiyi-anlamak/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
@@ -167,139 +167,120 @@
     </header>
 
         <section class="ap-hero">
-      <h1>Blockchain'in arkasındaki teknolojiyi anlamak</h1>
-      <p class="sub">Kriptografik hash zincirlerinden programlanabilir akıllı sözleşmelere: blockchain&#x27;i sadece bir defter değil, bir platform yapan mekanikler.</p>
-    <nav class="article-tags" aria-label="Konular"><a href="/tags/index.html#h3-blockchain-teknolojisi" class="article-tag" rel="tag">blockchain teknolojisi</a><a href="/tags/index.html#h3-kriptografik-hash" class="article-tag" rel="tag">kriptografik hash</a><a href="/tags/index.html#h3-merkle-agac" class="article-tag" rel="tag">Merkle ağacı</a><a href="/tags/index.html#h3-dagtk-konsensus" class="article-tag" rel="tag">dağıtık konsensüs</a><a href="/tags/index.html#h3-proof-of-work" class="article-tag" rel="tag">proof of work</a><a href="/tags/index.html#h3-ethereum" class="article-tag" rel="tag">Ethereum</a><a href="/tags/index.html#h3-akll-sozlesmeler" class="article-tag" rel="tag">akıllı sözleşmeler</a><a href="/tags/index.html#h3-evm" class="article-tag" rel="tag">EVM</a><a href="/tags/index.html#h3-solidity" class="article-tag" rel="tag">Solidity</a><a href="/tags/index.html#h3-erc-20" class="article-tag" rel="tag">ERC-20</a><a href="/tags/index.html#h3-dagtk-defter" class="article-tag" rel="tag">dağıtık defter</a><a href="/tags/index.html#h3-merkeziyetsiz-finans" class="article-tag" rel="tag">merkeziyetsiz finans</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-01-09T09:09:00+00:00" class="meta-pub">Yayımlandı 9 Jan 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">Güncellendi 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Tahmini okuma süresi">8 dk okuma</span></div></section>
+      <h1>Blockchain&#x27;in arkasındaki teknolojiyi anlamak</h1>
+      <p class="sub">Dağıtık defter sistemini destekleyen temel mekanizmalar</p>
+    <nav class="article-tags" aria-label="Konular"><a href="/tags/index.html#h3-blockchain" class="article-tag" rel="tag">blockchain</a><a href="/tags/index.html#h3-kriptografi" class="article-tag" rel="tag">kriptografi</a><a href="/tags/index.html#h3-hash" class="article-tag" rel="tag">hash</a><a href="/tags/index.html#h3-konsensus" class="article-tag" rel="tag">konsensüs</a><a href="/tags/index.html#h3-proof-of-work" class="article-tag" rel="tag">proof-of-work</a><a href="/tags/index.html#h3-proof-of-stake" class="article-tag" rel="tag">proof-of-stake</a><a href="/tags/index.html#h3-dagtk-defter" class="article-tag" rel="tag">dağıtık defter</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-01-09T09:09:00+00:00" class="meta-pub">Yayımlandı 9 Jan 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">Güncellendi 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Tahmini okuma süresi">4 dk okuma</span></div></section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>İçindekiler</h2><ol><li><a href="#blockchain-in-cozdugu-sorun">Blockchain'in Çözdüğü Sorun</a></li><li><a href="#kriptografik-yap-taslar">Kriptografik Yapı Taşları</a></li><li><a href="#bitcoin-blockchain-i-nasl-calsr">Bitcoin Blockchain'i Nasıl Çalışır</a></li><li><a href="#ethereum-un-programlanabilir-katman">Ethereum'un Programlanabilir Katmanı</a></li><li><a href="#solidity-de-akll-sozlesme-yazma">Solidity'de Akıllı Sözleşme Yazma</a></li><li><a href="#defterden-finansal-altyapya">Defterden Finansal Altyapıya</a></li><li><a href="#sk-sorulan-sorular">Sık Sorulan Sorular</a></li><li><a href="#kaynaklar">Kaynaklar</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Blockchain&#x27;in nasıl çalıştığına teknik bir giriş: kriptografik hash zincirleri, Merkle ağaçları, dağıtık konsensüs ve Ethereum&#x27;un programlanabilir katmanının bir ödeme defterini akıllı sözleşmeler ve tokenize varlıklar için bir platforma nasıl dönüştürdüğü.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Blockchain&#x27;in Çözdüğü Sorun.</strong> Bitcoin&#x27;den önce, dijital ödemeler çifte harcamayı önlemek için güvenilir bir aracı — banka, ödeme işlemcisi veya takas evi — gerektiriyordu.</li>  <li><strong>Kriptografik Yapı Taşları.</strong> Blockchain teknolojisi, üç önceden var olan kriptografik ilkeli yeni bir mimaride bir araya getirir:.</li>  <li><strong>Bitcoin Blockchain&#x27;i Nasıl Çalışır.</strong> Bir Bitcoin bloğu üç mantıksal bileşen içerir:.</li>  <li><strong>Ethereum&#x27;un Programlanabilir Katmanı.</strong> Ethereum, Bitcoin&#x27;in işlem modelini &quot;değer transferinden&quot; &quot;kod yürütmeye&quot; genelleştirdi.</li></ul></aside><!-- lead-start -->
-
-<!-- lead-end -->
-<p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/adam-smigielski-K5mPtONmpHM.webp&w=1600&format=webp&q=85" alt="Abstract digital ledger blocks connected by light trails on dark background"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>İçindekiler</h2><ol><li><a href="#baks">Bakış</a></li><li><a href="#fikir">Fikir</a></li><li><a href="#etki">Etki</a></li><li><a href="#tesvikler">Teşvikler</a></li><li><a href="#sonuc">Sonuç</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Blockchain&#x27;in mimarisi: bloklar, hash&#x27;ler, konsensüs algoritmaları ve güveni mümkün kılan kriptografi.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Bakış.</strong> La tecnologia blockchain ha aperto la puerta a una nuova era di applicazioni decentralizzate (dApps) che operano in modo independiente, senza control centralizado.</li>  <li><strong>Fikir.</strong> Il nostro objetivo è costruire una criptovaluta semplice su Ethereum, ofreciéndole una experiencia pratica di desarrollo blockchain.</li>  <li><strong>Etki.</strong> Al costruire una criptovaluta basata in Ethereum da cero, obtendrá:.</li>  <li><strong>Teşvikler.</strong> Completar una construcción di token di extremo a extremo desbloquea una experiencia pratica di primera mano con:.</li></ul></aside><p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/adam-smigielski-K5mPtONmpHM.webp&w=1600&format=webp&q=85" alt="Soyut bir blockchain ağ görselleştirmesi"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<hr />
 <blockquote>
-<p><strong>Yönetici Özeti / Temel Çıkarımlar</strong></p>
+<p><strong>TL;DR.</strong> La blockchain combina funzioni hash crittografiche, alberi di Merkle, firme digitali e algoritmi di consenso distribuito per produrre un libro mastro condiviso, immutabile e senza fiducia. Capire questi mattoni è il punto di partenza per qualsiasi applicazione seria in pagamenti, regolamento o tokenizzazione.</p>
+<p><strong>Önemli Çıkarımlar</strong></p>
 <ul>
-<li><strong>Sorun.</strong> Dijital nakit, güvenilir bir takas merkezi olmaksızın aynı birimin iki kez harcanmasını önlemek için çifte harcama sorununu çözmeyi gerektirir. Bitcoin'in 2008 teknik belgesi bunu, güvenilir aracıları kriptografik kanıt ve dağıtık konsensüsle değiştirerek çözdü (<a href="https://bitcoin.org/bitcoin.pdf" title="Bitcoin: A Peer-to-Peer Electronic Cash System">Nakamoto, 2008</a>).</li>
-<li><strong>Veri yapısı.</strong> Blockchain, her blok başlığının önceki başlığın SHA-256 hash'ini içerdiği bağlantılı bir bloklar listesidir. Hash zinciri geçmişi yalnızca eklenebilir yapar: herhangi bir geçmiş bloğu değiştirmek sonraki tüm hash'leri geçersiz kılar ve bir saldırganı sonraki tüm proof-of-work'ü yeniden yapmaya zorlar.</li>
-<li><strong>Merkle trees.</strong> Bir bloktaki işlemler ikili bir Merkle ağacına hash'lenir. Blok başlığında saklanan kök hash, tam bloğu indirmeden herhangi bir bireysel işlemin verimli doğrulanmasına olanak tanır — hafif SPV istemcilerinin temelini oluşturur.</li>
-<li><strong>Ethereum'un uzantısı.</strong> Ethereum'un Yellow Paper'ı (2014) EVM'yi tanıttı — her tam düğümde çalışan deterministik bir yığın makinesi. Akıllı sözleşmeler zincire dağıtılmış bytecode'dur; tüm düğümlerde özdeş şekilde yürütülür ve atomik olarak uzlaşır, güvenilir aracıların yerini kendi kendini uygulayan kodla alır (<a href="https://ethereum.github.io/yellowpaper/paper.pdf" title="Ethereum Yellow Paper">Wood, 2014</a>).</li>
-<li><strong>Pratik önem.</strong> 2017'den bu yana dağıtılan her tokenize varlık, stablecoin ve DeFi protokolü bu temeller üzerinde çalışır. Hash zincirini, Merkle ağacını ve EVM yürütme modelini anlamak, Ethereum tabanlı herhangi bir sistemle çalışmanın ön koşuludur.</li>
+<li><strong>Hash crittografici</strong> — funzioni gibi SHA-256 producono impronte uniche e irreversibili che ancorano l'integrità ın catena.</li>
+<li><strong>Alberi di Merkle</strong> — strutture dati efficienti che permettono verifica compatta di grandi insiemi di transazioni.</li>
+<li><strong>Firme digitali</strong> — coppie chiave pubblica/privata che autorizzano transazioni e garantiscono il non ripudio.</li>
+<li><strong>Consenso bizantino</strong> — protocolli che tollerano nodi malevoli e producono accordo finale senza coordinamento centrale.</li>
 </ul>
 </blockquote>
 <hr />
-<h2 id="blockchain-in-cozdugu-sorun">Blockchain'in Çözdüğü Sorun <a class="heading-anchor" href="#blockchain-in-cozdugu-sorun" aria-label="Bağlantı Blockchain'in Çözdüğü Sorun">#</a></h2>
-<p>Bitcoin'den önce, dijital ödemeler çifte harcamayı önlemek için güvenilir bir aracı — banka, ödeme işlemcisi veya takas evi — gerektiriyordu. Alice, Bob'a £10'ı temsil eden bir dijital dosya gönderdiyse, dosyanın kendisinde hiçbir şey onu Carol'a özdeş bir kopya göndermekten alıkoymazdı. Her mevcut sistemdeki çözüm merkezi kayıt tutmaydı: bankanın defteri paranın harcandığını söylüyordu, bu yüzden tekrar harcanamıyordu.</p>
-<p>Bitcoin'in katkısı, bu güvenilir defteri, tüm işlemlerin kaydının binlerce bağımsız düğüme çoğaltıldığı dağıtık bir deftere dönüştürmekti. Düğümler arasındaki karşılıklı güvensizlik iki mekanizma aracılığıyla güvenliğe dönüştürüldü:</p>
-<ol>
-<li>
-<p><strong>Kriptografik bağlantı.</strong> Her işlem bloğu, önceki bloğun hash'ini içerir. Hash fonksiyonu tek yönlü deterministik bir eşlemedir: herhangi bir giriş için fonksiyon sabit uzunlukta bir çıktı üretir ve girişin tek bir bitini değiştirmek tamamen farklı bir çıktı üretir. Bu, tarihi bir blokta yapılan herhangi bir değişikliğin sonrasındaki her bloğu geçersiz kılacağı anlamına gelir.</p>
-</li>
-<li>
-<p><strong>Proof-of-work konsensüsü.</strong> Yeni bir blok eklemek, blok hash'inin hedef eşiğin altına düşmesi için bir nonce değeri bulmayı gerektirir — bulmak hesaplama açısından pahalı, doğrulamak önemsiz derecede ucuz. Bu, tarih yeniden yazmayı değiştirilen bloğun derinliğiyle orantılı olarak pahalı hale getirir, çünkü bir saldırgan o bloktan zincirin ucuna kadar tüm proof-of-work'ü yeniden yapmalıdır.</p>
-</li>
-</ol>
-<p>Kombinasyon, en fazla birikimli proof-of-work'e sahip en uzun zincirin, yapı gereği, gerçek kaynaklar harcayan dürüst katılımcılar tarafından sürdürülen zincir olduğu anlamına gelir.</p>
-<h2 id="kriptografik-yap-taslar">Kriptografik Yapı Taşları <a class="heading-anchor" href="#kriptografik-yap-taslar" aria-label="Bağlantı Kriptografik Yapı Taşları">#</a></h2>
-<p>Blockchain teknolojisi, üç önceden var olan kriptografik ilkeli yeni bir mimaride bir araya getirir:</p>
-<h3 id="sha-256-hash-fonksiyonlar">SHA-256 Hash Fonksiyonları <a class="heading-anchor" href="#sha-256-hash-fonksiyonlar" aria-label="Bağlantı SHA-256 Hash Fonksiyonları">#</a></h3>
-<p>SHA-256 (Güvenli Hash Algoritması 256-bit), NIST tarafından standartlaştırılan SHA-2 ailesinin bir üyesidir. Keyfi uzunlukta bir giriş alır ve 256-bit çıktı üretir. Blockchain kullanımı için temel özellikler:</p>
+<h2 id="baks">Bakış <a class="heading-anchor" href="#baks" aria-label="Bağlantı Bakış">#</a></h2>
+<p>La tecnologia blockchain ha aperto la puerta a una nuova era di applicazioni decentralizzate (dApps) che operano in modo independiente, senza control centralizado. Ethereum fornisce una piattaforma potente per creare dApps complejas e smart contracts.</p>
+<p>Uno ın usos daha çok prometedores di Ethereum è il lanzamiento di criptovalute e tokens digitali personalizados. In questa guía completa examinaremos passo a passo gibi creare il suo propio token crittografico su Ethereum.</p>
+<h2 id="fikir">Fikir <a class="heading-anchor" href="#fikir" aria-label="Bağlantı Fikir">#</a></h2>
+<p>Il nostro objetivo è costruire una criptovaluta semplice su Ethereum, ofreciéndole una experiencia pratica di desarrollo blockchain. Questi sono i passi chiave che cubriremos:</p>
+<h3 id="disenar-la-criptovaluta">Diseñar la criptovaluta <a class="heading-anchor" href="#disenar-la-criptovaluta" aria-label="Bağlantı Diseñar la criptovaluta">#</a></h3>
+<p>La primera tarea crucial è progettare il suo criptovaluta. Esto abarca la definición di atributos chiave:</p>
 <ul>
-<li><strong>Deterministik.</strong> Aynı giriş her zaman aynı çıktıyı üretir.</li>
-<li><strong>Ön görüntü direnci.</strong> Bir hash çıktısı verildiğinde, girişi yeniden oluşturmak hesaplama açısından mümkün değildir.</li>
-<li><strong>Çığ etkisi.</strong> Girişin bir bitini değiştirmek çıktı bitlerinin yaklaşık yarısını değiştirerek kaba kuvvet aramasını verimsiz hale getirir.</li>
-<li><strong>Çarpışma direnci.</strong> Aynı hash'i üreten iki farklı giriş bulmak hesaplama açısından mümkün değildir.</li>
+<li><strong>Nombre</strong>: elija un nombre único che represente la identidad ve propósito ın token.</li>
+<li><strong>Símbolo</strong>: elija un símbolo corto gibi BTC per Bitcoin. Se utilizza in i exchanges.</li>
+<li><strong>Oferta total</strong>: determine il número máximo di tokens in circulación.</li>
+<li><strong>Decimales</strong>: defina la divisibilidad di il suo token, gibi 2 per céntimos.</li>
+<li><strong>Funcionalidades adicionales</strong>: añada opcionalmente extras gibi minting, burning, freezing, etc.</li>
 </ul>
-<p>Bitcoin, uzunluk uzantısı saldırılarına karşı ek güvenlik için SHA-256'yı iki kez uygular (SHA-256d). Ethereum, SHA-3 finalist varyantı olan Keccak-256 kullanır.</p>
-<h3 id="merkle-trees">Merkle Trees <a class="heading-anchor" href="#merkle-trees" aria-label="Bağlantı Merkle Trees">#</a></h3>
-<p>Merkle ağacı, hash'lerden oluşan ikili bir ağaçtır. Her yaprak düğüm, bir işlemin hash'idir. Her iç düğüm, iki çocuğunun hash'idir. Kök — Merkle kökü — bloktaki tüm işlemleri, blok başlığında saklanan tek bir 32 baytlık değerde özetler.</p>
-<p>Pratik sonuç: belirli bir işlemin bir bloğa dahil olduğunu doğrulamak için yalnızca <code>log₂(n)</code> hash'e ihtiyacınız vardır, tüm <code>n</code> işlemlere değil. 2.000 işlem içeren bir blok için doğrulama 2.000 yerine 11 hash gerektirir — hafif istemcilerde Basitleştirilmiş Ödeme Doğrulaması'nın (SPV) temelidir.</p>
-<h3 id="dijital-imzalar-ecdsa">Dijital İmzalar (ECDSA) <a class="heading-anchor" href="#dijital-imzalar-ecdsa" aria-label="Bağlantı Dijital İmzalar (ECDSA)">#</a></h3>
-<p>Bitcoin ve Ethereum'da işlem yetkilendirmesi, secp256k1 eğrisi üzerindeki Eliptik Eğri Dijital İmza Algoritması'nı (ECDSA) kullanır. Bir özel anahtar bir işlemi imzalar; herhangi bir düğüm, özel anahtarı bilmeden karşılık gelen genel anahtarı kullanarak imzayı doğrulayabilir. Bu, yalnızca özel anahtarın sahibinin bir adresten harcama yapabileceğini garanti eder.</p>
-<p>Ethereum adresleri, genel anahtarın Keccak-256 hash'inin son 20 baytıdır — bu türetme, anahtar çiftiyle kriptografik olarak bağlı kalırken adresleri kompakt ve taşınabilir yapar.</p>
-<h2 id="bitcoin-blockchain-i-nasl-calsr">Bitcoin Blockchain'i Nasıl Çalışır <a class="heading-anchor" href="#bitcoin-blockchain-i-nasl-calsr" aria-label="Bağlantı Bitcoin Blockchain'i Nasıl Çalışır">#</a></h2>
-<p>Bir Bitcoin bloğu üç mantıksal bileşen içerir:</p>
-<p><strong>Blok başlığı</strong> — 80 bayt: protokol versiyonu, önceki blok başlığının hash'i, işlemlerin Merkle kökü, Unix zaman damgası, mevcut zorluk hedefi ve nonce. Madenciler, başlığın çift-SHA-256 hash'i zorluk hedefinin altına düşene kadar nonce'u (ve bazen coinbase işlemindeki zaman damgasını veya extra-nonce'u) yineleyerek çalışır.</p>
-<p><strong>İşlem listesi</strong> — bloğa dahil edilen sıralı işlem kümesi. Coinbase işlemi (ilk) blok ödülünü ve işlem ücretlerini madencinin adresine atar.</p>
-<p><strong>Zincir</strong> — başlıkların bağlantısı. Zincirdeki birikimli proof-of-work (her bloğu üretmek için yapılan tüm işin toplamı) hangi dalın kanonik zincir olduğunu belirler. Düğümler her zaman en fazla birikimli işe sahip zinciri takip eder.</p>
-<p>Bitcoin için hedef blok süresi 10 dakikadır. Zorluk, toplam ağ hash hızı değiştikçe bu hedefi korumak için her 2.016 blokta (yaklaşık iki haftada bir) ayarlanır.</p>
-<h2 id="ethereum-un-programlanabilir-katman">Ethereum'un Programlanabilir Katmanı <a class="heading-anchor" href="#ethereum-un-programlanabilir-katman" aria-label="Bağlantı Ethereum'un Programlanabilir Katmanı">#</a></h2>
-<p>Ethereum, Bitcoin'in işlem modelini &quot;değer transferinden&quot; &quot;kod yürütmeye&quot; genelleştirdi. Temel eklemeler:</p>
-<p><strong>Ethereum Virtual Machine (EVM).</strong> Tüm tam düğümlerde deterministik olarak çalışan, 256-bit kelime, yığın tabanlı sanal makine. Her işlem kodunun açık bir gas maliyeti vardır. Hesaplama, sonsuz döngülerin ağı durdurmasını engelleyen blok gas limitiyle sınırlıdır. Aynı bytecode'u aynı durumda çalıştıran tüm düğümler aynı çıktıyı üretmek zorundadır — yürütme üzerindeki bu konsensüs akıllı sözleşmeleri güvensiz hale getirir.</p>
-<p><strong>Hesaplar.</strong> Ethereum iki hesap türüne sahiptir: özel anahtarlar tarafından kontrol edilen Externally Owned Accounts (EOA) ve kodu zincirde saklanan Contract Accounts. Bir sözleşme adresine gönderilen işlem, sözleşmenin bytecode yürütmesini tetikler.</p>
-<p><strong>Durum.</strong> Ethereum'un küresel durumu, adreslerin hesap durumlarına (nonce, bakiye, depolama, kod hash'i) eşlenmesidir. Durum kökü — tüm hesap durumlarının Merkle Patricia trie'si — her blok başlığına dahil edilir ve herhangi bir hesabın herhangi bir blok yüksekliğindeki durumunun verimli şekilde kanıtlanmasına olanak tanır.</p>
-<p><strong>Gas.</strong> Kullanıcılar her EVM işlemi için gas (ETH cinsinden) öder. Gas iki işlev görür: madencilere/doğrulayıcılara hesaplama için ödeme yapar ve tek bir işlemin tüketebileceği kaynakları sınırlayarak pahalı işlemler aracılığıyla hizmet reddi saldırılarını önler.</p>
-<h2 id="solidity-de-akll-sozlesme-yazma">Solidity'de Akıllı Sözleşme Yazma <a class="heading-anchor" href="#solidity-de-akll-sozlesme-yazma" aria-label="Bağlantı Solidity'de Akıllı Sözleşme Yazma">#</a></h2>
-<p>Solidity, EVM bytecode'una derlenen statik tipli, sözleşme odaklı bir dildir. Minimal bir token sözleşmesi temel kavramları gösterir:</p>
+<h3 id="escribir-smart-contracts">Escribir smart contracts <a class="heading-anchor" href="#escribir-smart-contracts" aria-label="Bağlantı Escribir smart contracts">#</a></h3>
+<p>Per dar vida a il suo criptovaluta, dovrà codificar smart contracts che definan la funzionalità ve regole ın token. I smart contracts sono scripts programáticos almacenados in la blockchain che se ejecutan automáticamente quando se cumplen ciertas condiciones.</p>
+<p>Queste sono alcune capacità chiave che hacen che i smart contracts sean idóneos per le criptovalute:</p>
+<ul>
+<li><strong>Autoejecución</strong>: se activan automáticamente, senza intervención di un tercero.</li>
+<li><strong>Inmutabilidad</strong>: una vez desplegado, il código non può modificarse. Esto garantisce la sicurezza.</li>
+<li><strong>Autonomía</strong>: non è necesaria nessuna autoridad central per gestire i smart contracts.</li>
+<li><strong>Transparencia</strong>: qualsiasi può inspeccionar la lógica di un smart contract.</li>
+<li><strong>Automatización</strong>: acciones gibi la transferencia di fondi possono automatizarse mediante il codice ın contratto.</li>
+<li><strong>Seguridad</strong>: i fondi depositados in un contrato rimangono protegidos fino a che se cumplen le condiciones di liberación.</li>
+<li><strong>Eficiencia</strong>: i smart contracts eliminan intermediarios, haciendo i processi daha çok rápidos e meno costosos.</li>
+</ul>
+<p>Ejemplo di código di contrato in Solidity.</p>
 <pre><code class="language-solidity">pragma solidity ^0.8.0;
 
 contract MyToken {
-    string public name;
-    string public symbol;
-    uint8 public decimals;
-    uint256 public totalSupply;
-    mapping(address =&gt; uint256) public balanceOf;
 
-    event Transfer(address indexed from, address indexed to, uint256 value);
+ string public name;
+ string public symbol;
+ uint256 public decimals;
+ uint256 public totalSupply;
 
-    constructor(
-        string memory _name,
-        string memory _symbol,
-        uint8 _decimals,
-        uint256 _totalSupply
-    ) {
-        name = _name;
-        symbol = _symbol;
-        decimals = _decimals;
-        totalSupply = _totalSupply;
-        balanceOf[msg.sender] = _totalSupply;
-    }
+ constructor(string memory _name, string memory _symbol, uint8 _decimals, uint256 _totalSupply) {
+ name = _name;
+ symbol = _symbol;
+ decimals = _decimals;
+ totalSupply = _totalSupply;
+ }
 
-    function transfer(address _to, uint256 _value) external returns (bool) {
-        require(balanceOf[msg.sender] &gt;= _value, &quot;Insufficient balance&quot;);
-        balanceOf[msg.sender] -= _value;
-        balanceOf[_to] += _value;
-        emit Transfer(msg.sender, _to, _value);
-        return true;
-    }
 }
 </code></pre>
-<p>Temel gözlemler: <code>mapping(address =&gt; uint256)</code> bellekteki bir veri yapısı değil, bir EVM depolama düzenidir — okumalar ve yazmalar gas harcar. <code>require</code>, başarısızlık durumunda tüm işlemi geri alır ve kullanılmayan gas'ı iade eder. <code>event Transfer</code>, zincir dışı dizin oluşturucuların tam durumu yeniden okumadan transferleri izlemek için kullandığı bir günlük yayar. <code>constructor</code> dağıtımda bir kez çalışır; sonraki çağrılar adlandırılmış fonksiyonlara gider.</p>
-<p>ERC-20 standardı, değiştirilebilir tokenlar için ortak bir arayüzü — <code>transfer</code>, <code>transferFrom</code>, <code>approve</code>, <code>allowance</code>, <code>balanceOf</code>, <code>totalSupply</code> — resmileştirdi ve herhangi bir ERC-20 uyumlu tokenun özel entegrasyon olmaksızın herhangi bir ERC-20 farkında borsa veya cüzdanla çalışmasına olanak tanıdı.</p>
-<h2 id="defterden-finansal-altyapya">Defterden Finansal Altyapıya <a class="heading-anchor" href="#defterden-finansal-altyapya" aria-label="Bağlantı Defterden Finansal Altyapıya">#</a></h2>
-<p>Burada açıklanan blockchain ilkelleri — hash zincirleri, Merkle ağaçları, EVM ve ERC-20 — 2018 ile 2026 yılları arasında daha geniş bir finansal uygulama seti için temel oluşturdu:</p>
-<p><strong>Merkeziyetsiz Finans (DeFi).</strong> Borç verme protokolleri (Compound, Aave), otomatik piyasa yapıcılar (Uniswap) ve getiri agregörlerinin tamamı EVM akıllı sözleşmeleri olarak çalışır. Geleneksel finansal aracıların takas, saklama ve uzlaşma işlevlerini kendi kendini yürüten kod ve zincir üstü likidite havuzlarıyla değiştirirler.</p>
-<p><strong>Tokenize Varlıklar.</strong> Merkez bankaları ve ticari bankalar, EVM uyumlu zincirlerin izinli varyantlarında tokenize mevduatlar, tokenize tahviller ve tokenize para piyasası fonlarını pilot uygulama olarak yürütmektedir. Altta yatan mekanik — hash güvenceli durum geçişleri, atomik uzlaşma, programlanabilir transfer kuralları — 2014 Ethereum mimarisinin doğrudan torunlarıdır.</p>
-<p><strong>Merkez Bankası Dijital Paraları.</strong> İngiltere Merkez Bankası'nın toptan CBDC araştırması, ECB'nin dijital euro programı ve Proje Agorá, Bitcoin ve Ethereum'daki temel tasarımlardan türetilmiş veya bunlarla uyumlu DLT mimarilerini araştırmaktadır. İzin verme ve yönetişim modeli kamuya açık blockchain'lerden tamamen farklı olsa bile konsensüs ve hash zinciri yapıları ilgini korur.</p>
-<p>2008 Bitcoin teknik belgesinden 2026 tokenize finansına uzanan yolculuk iki on yılı kapsamaktadır, ancak tutarlı bir teknik soydan geçmektedir. SHA-256 hash zincirinin değişmezliği nasıl sağladığını, Merkle ağacının verimli doğrulamayı nasıl mümkün kıldığını ve EVM'nin akıllı sözleşmeleri atomik olarak nasıl yürüttüğünü anlamak, düzenlenmiş finansal hizmetlerde blockchain'in neler yapıp yapamayacağına dair herhangi bir iddianın değerlendirilmesi için ön koşuldur.</p>
-<h2 id="sk-sorulan-sorular">Sık Sorulan Sorular <a class="heading-anchor" href="#sk-sorulan-sorular" aria-label="Bağlantı Sık Sorulan Sorular">#</a></h2>
-<p><strong>Blockchain ile dağıtık veritabanı arasındaki fark nedir?</strong></p>
-<p>Geleneksel bir dağıtık veritabanı, kullanılabilirlik ve performans için verileri düğümlere çoğaltır, ancak güven merkezileştirilmiştir — bir yönetici kayıtları değiştirebilir. Blockchain, kurcalamayı hash zinciri ve konsensüs yoluyla hesaplama açısından pahalı hale getirir: herhangi bir tarihsel kaydı değiştirmek, sonraki tüm proof-of-work veya proof-of-stake'i yeniden yapmayı ve ağı değiştirilen dalı kabul etmeye ikna etmeyi gerektirir. Ayırt edici özellik, erişim kontrolleri yerine kriptografi ve teşvik tasarımı tarafından zorlanan kurcalama kanıtıdır.</p>
-<p><strong>Ethereum neden SHA-256 yerine Keccak-256 kullanıyor?</strong></p>
-<p>Ethereum, kısmen tasarımcılarının Bitcoin'in zaten bağımlı olduğu SHA-2 soyundan bağımsızlık istemeleri nedeniyle Keccak-256'yı (NIST standartlaştırma düzenlemelerinden önce SHA-3 finalisti) benimsedi. Keccak ayrıca belirli EVM işlemleri için onu cazip hale getiren farklı cebirsel özelliklere sahiptir. Geliştiriciler için pratik etki, Ethereum adres türetme ve depolama slot hash'inin Bitcoin'deki gibi SHA-256d değil Keccak-256 kullandığıdır.</p>
-<p><strong>EVM'de &quot;gas&quot; neyi önler?</strong></p>
-<p>Gas iki kategoride saldırıyı önler. Birincisi, hesaplama açısından pahalı işlemler aracılığıyla hizmet reddini önler: her işlem kodu gas harcar, bu nedenle bir saldırgan ağı ücretsiz olarak sonsuz döngüler yürütmeye zorlayamaz. İkincisi, blok gas limiti blok başına toplam hesaplamayı sınırlayarak tam düğümler için blok doğrulama süresinin sınırlı ve öngörülebilir kalmasını sağlar. Gas olmadan, tek bir sözleşme çağrısı sınırsız hesaplama yaparak ağı durdurabilirdi.</p>
-<p><strong>Proof-of-stake, proof-of-work ile karşılaştırıldığında güvenlik modelini nasıl değiştirir?</strong></p>
-<p>Proof-of-work'te güvenlik enerji harcamasıyla sağlanır: zincire saldırmak ağın hash hızının %50'sinden fazlasını kontrol etmeyi gerektirir, bu da fiziksel donanımının ve gücünün %50'sinden fazlasını kontrol etmek anlamına gelir. Proof-of-stake'te (Ethereum tarafından 2022'deki Birleşme'den bu yana kullanılmaktadır), güvenlik ekonomik paya göre sağlanır: doğrulayıcılar çakışan blokları imzalarlarsa kesilen ETH'yi teminat olarak kilitler. %51 saldırısı, donanım ve enerji maliyeti değil sermaye maliyeti olan tüm stake edilmiş ETH'nin %50'sinden fazlasını elde etmeyi ve riske atmayı gerektirir. Güvenlik modeli farklıdır, ancak rasyonel doğrulayıcıların sermaye imhasına göre ücret gelirini tercih ettiği varsayımı altında ekonomik açıdan matematiksel olarak karşılaştırılabilir.</p>
-<h2 id="kaynaklar">Kaynaklar <a class="heading-anchor" href="#kaynaklar" aria-label="Bağlantı Kaynaklar">#</a></h2>
+<p>Questo contrato básico consente creare un token con propiedades gibi nombre, símbolo, decimales e offerta total.</p>
+<p>La función <code>constructor</code> inicializa questi parámetros in il momento ın despliegue ın contrato.</p>
+<p>Questo ejemplo se limita a configurar propiedades básicas. Extendería il contrato per añadir daha çok funzionalità:</p>
 <ul>
-<li>Nakamoto, S., (2008). <a href="https://bitcoin.org/bitcoin.pdf" title="Bitcoin Whitepaper">Bitcoin: A Peer-to-Peer Electronic Cash System ⧉</a>.</li>
-<li>Buterin, V., (2014). <a href="https://ethereum.org/whitepaper" title="Ethereum Whitepaper">Ethereum: A Next-Generation Smart Contract and Decentralised Application Platform ⧉</a>.</li>
-<li>Wood, G., (2014). <a href="https://ethereum.github.io/yellowpaper/paper.pdf" title="Ethereum Yellow Paper">Ethereum: A Secure Decentralised Generalised Transaction Ledger ⧉</a>.</li>
-<li>NIST, (2015). <a href="https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions" title="NIST FIPS 202">SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions ⧉</a>.</li>
+<li>Transferencias di tokens tra indirizzi</li>
+<li>Gestión di saldos</li>
+<li>Autorizaciones (allowances) per gastar tokens</li>
+<li>Minting e burning di tokens</li>
+<li>Congelación o bloqueo di transferencias di tokens</li>
+<li>Implementación di standard di token gibi ERC-20</li>
+<li>Despliegue e interacción con il contrato</li>
 </ul>
-<!-- enrich-start -->
-
-<p class="post-reviewed">Son inceleme <time datetime="2026-05-24">2026-05-24</time>.</p>
-
-<!-- enrich-end -->
+<h3 id="desarrollo-e-pruebas-locali">Desarrollo e pruebas locali <a class="heading-anchor" href="#desarrollo-e-pruebas-locali" aria-label="Bağlantı Desarrollo e pruebas locali">#</a></h3>
+<p>Antes di desplegar il suo criptovaluta in la blockchain Ethereum, è prudente realizar pruebas locali exhaustivas. Esto garantisce che il suo criptovaluta funcione gibi se espera, senza bugs ni vulnerabilidades imprevistas.</p>
+<p>Per empezar, siga questi passi:</p>
+<h4>Descargar Go-Ethereum (Geth)</h4>
+<p>Comience descargando <a href="https://geth.ethereum.org/downloads/">Go-Ethereum</a>, anche llamado Geth, un cliente Ethereum escrito in Go. Geth actúa gibi interfaz di línea di comandos (CLI) Ethereum, ejecutable in Windows, Mac e Linux. È una strumento versátil che consente minar, creare e interactuar con smart contracts in la rete Ethereum.</p>
+<h4>Instalar Ethereum</h4>
+<p>Una vez descargado Geth, instale Ethereum. Per i requisitos previos detallados e instrucciones di compilación complete, consulte le <a href="https://geth.ethereum.org/docs/getting-started/installing-geth">Installation Instructions</a> disponibles in il suo wiki oficial.</p>
+<h4>Configurar un entorno di desarrollo</h4>
+<p>Per facilitar il desarrollo di il suo criptovaluta, necesitará un entorno di desarrollo, un framework di pruebas e una canalización di activos per Ethereum. Le instrucciones detalladas per instalar queste strumenti esenciales se encuentran in la wiki di Ethereum.</p>
+<h4>Desplegar in una testnet</h4>
+<p>Una vez che il suo criptovaluta supere le pruebas locali, può desplegarla in una testnet. Una testnet è un entorno seguro e controlado che imita il mainnet di Ethereum, permitiéndole evaluar il prestazioni di il suo criptovaluta in un entorno real, senza rischio finanziario real.</p>
+<h2 id="etki">Etki <a class="heading-anchor" href="#etki" aria-label="Bağlantı Etki">#</a></h2>
+<p>Al costruire una criptovaluta basata in Ethereum da cero, obtendrá:</p>
+<ul>
+<li>Un conocimiento profundo ın applicazioni decentralizzate (dApps) e ın programación di smart contracts</li>
+<li>Experiencia pratica con la programación in Solidity</li>
+<li>Una comprensión ın protocolos di consenso di Ethereum</li>
+<li>Familiaridad con standard di token gibi ERC-20</li>
+</ul>
+<p>Questo aprendizaje le otorgará i medios per aprovechar la tecnologia blockchain in soluzioni innovadoras.</p>
+<h2 id="tesvikler">Teşvikler <a class="heading-anchor" href="#tesvikler" aria-label="Bağlantı Teşvikler">#</a></h2>
+<p>Completar una construcción di token di extremo a extremo desbloquea una experiencia pratica di primera mano con:</p>
+<ul>
+<li>La arquitectura blockchain</li>
+<li>La mecánica ın criptovalute</li>
+<li>Il desarrollo di smart contracts</li>
+<li>Le capacità e limitaciones di Ethereum</li>
+</ul>
+<p>Adquirirá competencias valiosas per fare avanzar il suo carrera in programación blockchain.</p>
+<h2 id="sonuc">Sonuç <a class="heading-anchor" href="#sonuc" aria-label="Bağlantı Sonuç">#</a></h2>
+<p>In il campo ın tecnologia blockchain, la comprensión se gana mejor attraverso la puesta in pratica. Construir una criptovaluta su la piattaforma Ethereum offre una oportunidad única di adquirir experiencia di primera mano con le capacità e limitaciones ın tecnologia. Questa guía le arma con i conocimientos e competencias per emprender questo apasionante viaje, favoreciendo la innovación ve descubrimiento in il universo in perpetua evolución ın desarrollo blockchain e cripto.</p>
 <aside class="author-card" aria-label="Yazar hakkında"><img alt="Sebastien Rousseau portresi" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/tr/hakkimda/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Kıdemli bankacılık teknoloğu olarak uygulamalı yapay zeka, ISO 20022 geçişi, finansal hizmetler için post-kuantum kriptografi ve toptan ödemelerin yapısal dönüşümü üzerine yazıyorum.</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA ve Virgin Group bünyesinde 20 yılı aşkın deneyim. <a href="/tr/hakkimda/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Son inceleme <time datetime="2026-05-27">2026-05-27</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">İlgili okumalar</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/tr/2018-01-24-erc-20-token-standardi" class="related-media" aria-label="ERC-20 token standardı" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="erc-20-token-standard"><a href="https://sebastienrousseau.com/tr/2018-01-24-erc-20-token-standardi">ERC-20 token standardı</a> <a class="heading-anchor" href="#erc-20-token-standard" aria-label="Bağlantı ERC-20 token standardı">#</a></h3><p><time datetime="2018-01-24">2018-01-24</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/tr/2018-02-04-yeni-bir-kripto-para-ve-daha-hizli-odeme-cozumu" class="related-media" aria-label="Unveiling a New Cryptocurrency and Faster Payment Solution" tabindex="-1"><img alt="A very tall building with a lot of holes in it" src="https://cloudcdn.pro/api/transform?url=/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="unveiling-a-new-cryptocurrency-and-faster-payment-solution"><a href="https://sebastienrousseau.com/tr/2018-02-04-yeni-bir-kripto-para-ve-daha-hizli-odeme-cozumu">Unveiling a New Cryptocurrency and Faster Payment Solution</a> <a class="heading-anchor" href="#unveiling-a-new-cryptocurrency-and-faster-payment-solution" aria-label="Bağlantı Unveiling a New Cryptocurrency and Faster Payment Solution">#</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/tr/2018-02-15-express-transaction-credits-platformunun-yapimi" class="related-media" aria-label="The Making of the Express Transaction Credits Platform" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="the-making-of-the-express-transaction-credits-platform"><a href="https://sebastienrousseau.com/tr/2018-02-15-express-transaction-credits-platformunun-yapimi">The Making of the Express Transaction Credits Platform</a> <a class="heading-anchor" href="#the-making-of-the-express-transaction-credits-platform" aria-label="Bağlantı The Making of the Express Transaction Credits Platform">#</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/tr/2018-02-15-express-transaction-credits-platformunun-yapimi/index.html" class="related-media" aria-label="Express Transaction Credits platformunun yapımı" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="express-transaction-credits-platformunun-yapm"><a href="https://sebastienrousseau.com/tr/2018-02-15-express-transaction-credits-platformunun-yapimi/index.html">Express Transaction Credits platformunun yapımı</a> <a class="heading-anchor" href="#express-transaction-credits-platformunun-yapm" aria-label="Bağlantı Express Transaction Credits platformunun yapımı">#</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/tr/2018-02-04-yeni-bir-kripto-para-ve-daha-hizli-odeme-cozumu/index.html" class="related-media" aria-label="Yeni bir kripto para ve daha hızlı bir ödeme çözümü tanıtımı" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/api/transform?url=/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="yeni-bir-kripto-para-ve-daha-hzl-bir-odeme-cozumu-tantm"><a href="https://sebastienrousseau.com/tr/2018-02-04-yeni-bir-kripto-para-ve-daha-hizli-odeme-cozumu/index.html">Yeni bir kripto para ve daha hızlı bir ödeme çözümü tanıtımı</a> <a class="heading-anchor" href="#yeni-bir-kripto-para-ve-daha-hzl-bir-odeme-cozumu-tantm" aria-label="Bağlantı Yeni bir kripto para ve daha hızlı bir ödeme çözümü tanıtımı">#</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/tr/2018-01-24-erc-20-token-standardi/index.html" class="related-media" aria-label="ERC-20 token standardı" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/api/transform?url=/stocks/images/m-ZzOa5G8hSPI.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="erc-20-token-standard"><a href="https://sebastienrousseau.com/tr/2018-01-24-erc-20-token-standardi/index.html">ERC-20 token standardı</a> <a class="heading-anchor" href="#erc-20-token-standard" aria-label="Bağlantı ERC-20 token standardı">#</a></h3><p><time datetime="2018-01-24">2018-01-24</time></p></footer></article>
 </div>
-</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Kaynaklar ve referanslar</h2><ol class="article-sources-list"><li><a href="https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions" rel="external noopener nofollow"><span class="source-host">www.nist.gov</span><span class="source-path">/publications/sha-3-standard-permutation-based-hash-and-extendable-output-fun…</span></a></li></ol></aside><nav class="post-pagination" aria-label="Makale sayfalama"><a class="post-pagination-prev" href="/tr/2018-01-02-blockchain-2018de-onemli-olan-teknoloji/"><span class="post-pagination-label">Önceki</span><span class="post-pagination-title">Blockchain explained, the technology that matters the most</span></a><a class="post-pagination-next" href="/tr/2018-01-24-erc-20-token-standardi/"><span class="post-pagination-label">Sonraki</span><span class="post-pagination-title">ERC-20: The Ethereum Token Interface That Changed the World</span></a></nav></div>
+</aside><nav class="post-pagination" aria-label="Makale sayfalama"><a class="post-pagination-prev" href="/tr/2018-01-02-blockchain-2018de-onemli-olan-teknoloji/"><span class="post-pagination-label">Önceki</span><span class="post-pagination-title">Blockchain explained, the technology that matters the most</span></a><a class="post-pagination-next" href="/tr/2018-01-24-erc-20-token-standardi/"><span class="post-pagination-label">Sonraki</span><span class="post-pagination-title">ERC-20: The Ethereum Token Interface That Changed the World</span></a></nav></div>
     </main>
 
 <!-- gen-layouts:footer-start -->
@@ -371,7 +352,7 @@ contract MyToken {
     <!-- Schema.org structured data -->
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"tr"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"tr"}]}</script>
 
-        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1757,"about":{"@type":"Thing","name":"Blockchain","sameAs":["https://en.wikipedia.org/wiki/Blockchain","https://www.wikidata.org/wiki/Q20514253","https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"]},"mentions":[{"@type":"Thing","name":"Ethereum","sameAs":["https://en.wikipedia.org/wiki/Ethereum","https://www.wikidata.org/wiki/Q21825854","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]},{"@type":"Thing","name":"ERC-20","sameAs":["https://en.wikipedia.org/wiki/Ethereum#Tokens","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]}],"headline":"Understanding the Technology behind Blockchain","description":"Blockchain'in nasıl çalıştığına teknik bir giriş: kriptografik hash zincirleri, Merkle ağaçları, dağıtık konsensüs ve Ethereum'un programlanabilir katmanının bir ödeme defterini akıllı sözleşmeler ve tokenize varlıklar için bir platforma nasıl dönüştürdüğü.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp","width":"100vw","height":"100vh","caption":"Karanlık arka planda ışık izleriyle birbirine bağlanan soyut dijital defter blokları"},"url":"https://sebastienrousseau.com/tr/2018-01-09-blockchain-arkasindaki-teknolojiyi-anlamak/","datePublished":"2018-01-09T09:09:00+00:00","dateModified":"2026-05-24","inLanguage":"tr","keywords":"blockchain teknolojisi, kriptografik hash, Merkle ağacı, dağıtık konsensüs, proof of work, Ethereum, akıllı sözleşmeler, EVM, Solidity, ERC-20, dağıtık defter, merkeziyetsiz finans","articleSection":"Blockchain","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/tr/2018-01-09-blockchain-arkasindaki-teknolojiyi-anlamak/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"tr"},"citation":[{"@type":"CreativeWork","url":"https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/tr/"},{"@type":"ListItem","position":3,"name":"Understanding the Technology behind Blockchain","item":"https://sebastienrousseau.com/tr/2018-01-09-blockchain-arkasindaki-teknolojiyi-anlamak/"}]}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":968,"about":{"@type":"Thing","name":"Blockchain","sameAs":["https://en.wikipedia.org/wiki/Blockchain","https://www.wikidata.org/wiki/Q20514253","https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"]},"headline":"Blockchain'in arkasındaki teknolojiyi anlamak","description":"Blockchain'in mimarisi: bloklar, hash'ler, konsensüs algoritmaları ve güveni mümkün kılan kriptografi.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp","width":"100vw","height":"100vh","caption":"Soyut bir blockchain ağ görselleştirmesi"},"url":"https://sebastienrousseau.com/tr/2018-01-09-blockchain-arkasindaki-teknolojiyi-anlamak/","datePublished":"2018-01-09T09:09:00+00:00","dateModified":"2026-05-24","inLanguage":"tr","keywords":"blockchain, kriptografi, hash, konsensüs, proof-of-work, proof-of-stake, dağıtık defter","articleSection":"Blockchain","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/tr/2018-01-09-blockchain-arkasindaki-teknolojiyi-anlamak/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"tr"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/tr/"},{"@type":"ListItem","position":3,"name":"Blockchain'in arkasındaki teknolojiyi anlamak","item":"https://sebastienrousseau.com/tr/2018-01-09-blockchain-arkasindaki-teknolojiyi-anlamak/"}]}]}</script>
 <script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
   
 <!-- SSG Search Widget -->
@@ -397,5 +378,5 @@ contract MyToken {
 </div>
 <script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
 </div>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Blockchain'in arkasındaki teknolojiyi anlamak","url":"https://sebastienrousseau.com/tr/2018-01-09-blockchain-arkasindaki-teknolojiyi-anlamak/","inLanguage":"tr-TR","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"blockchain teknolojisi, kriptografik hash, Merkle ağacı, dağıtık konsensüs, proof of work, Ethereum, akıllı sözleşmeler, EVM, Solidity, ERC-20, dağıtık defter, merkeziyetsiz finans","programmingLanguage":"Solidity","dependencies":["Blockchain","Ethereum","ERC-20"]}</script></body>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Blockchain'in arkasındaki teknolojiyi anlamak","url":"https://sebastienrousseau.com/tr/2018-01-09-blockchain-arkasindaki-teknolojiyi-anlamak/","inLanguage":"tr-TR","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"blockchain, kriptografi, hash, konsensüs, proof-of-work, proof-of-stake, dağıtık defter","dependencies":["Blockchain"]}</script></body>
 </html>

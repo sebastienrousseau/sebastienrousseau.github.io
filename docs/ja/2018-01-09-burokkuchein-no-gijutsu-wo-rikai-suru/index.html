@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta itemprop="datePublished" content="Tue, 09 Jan 2018 09:09:00 +0000" id="date" />
     <meta itemprop="dateModified" content="Tue, 09 Jan 2018 09:09:00 +0000" id="last-modified" />
-    <title>Understanding the Technology behind Blockchain — Sebastien Rousseau</title>
+    <title>ブロックチェーンの背後にある技術を理解する — Sebastien Rousseau</title>
 
     <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
-<meta name="description" content="ブロックチェーンの技術的解説：暗号ハッシュチェーン、Merkleツリー、分散コンセンサス、そしてEthereumのプログラマブルレイヤーが決済台帳をスマートコントラクトとトークン化資産のプラットフォームへと変えた経緯を紹介します。">
-<meta name="keywords" content="ブロックチェーン技術, cryptographic hash, Merkle tree, 分散コンセンサス, proof of work, Ethereum, スマートコントラクト, EVM, Solidity, ERC-20, 分散型台帳, 分散型金融">
+<meta name="description" content="ブロックチェーンを構成する暗号、ネットワーク、合意の各レイヤーを技術的に分解して解説します。">
+<meta name="keywords" content="ブロックチェーン, 暗号, ハッシュ, デジタル署名, マークルツリー, 合意, プルーフ・オブ・ワーク, P2P ネットワーク">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
@@ -40,7 +40,7 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-1QTzhu0IQem7QmMGRdEN85+efczXJINRLwRiCRLZ7Us=' 'sha256-27zoBIRpsYHjD03pj04ekhwj4TKECm0mKy2uUbnekQ8=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-SDJ9oE28wFx41IcJNndHRsumRnzLcGn+wfKurgo5l4A=' 'sha256-bLzctUdjTD25uyalJNbuEnk388sKqzT0gob3XqFFWGM=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-1MA566x5khlZEr+SoMiLmPMOfe72avvpP1L4HtljFvQ=' 'sha256-1QTzhu0IQem7QmMGRdEN85+efczXJINRLwRiCRLZ7Us=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-Zmf6uhBOFxxYVEv2tW+VAgr0nh+14wnB/RRfw4iY+qc=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
@@ -67,7 +67,7 @@
          Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
          observed (real-network) LCP is 165 ms. This hint pulls the
          synthetic LCP in line with the observed value. -->
-    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/adam-smigielski-K5mPtONmpHM.webp&w=1600&format=webp&q=85" fetchpriority="high">
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp&w=1600&format=webp&q=85" fetchpriority="high">
     <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
     <meta name="color-scheme" content="light dark" />
@@ -77,18 +77,18 @@
     <link rel="alternate" type="application/atom+xml" title="Atom フィード" href="/ja/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="stylesheet" href="/highlight.a92b9694.css">
-<meta property="og:title" content="Understanding the Technology behind Blockchain — Sebastien Rousseau">
-<meta property="og:description" content="ブロックチェーンの技術的解説：暗号ハッシュチェーン、Merkleツリー、分散コンセンサス、そしてEthereumのプログラマブルレイヤーが決済台帳をスマートコントラクトとトークン化資産のプラットフォームへと変えた経緯を紹介します。">
+<meta property="og:title" content="ブロックチェーンの背後にある技術を理解する — Sebastien Rousseau">
+<meta property="og:description" content="ブロックチェーンを構成する暗号、ネットワーク、合意の各レイヤーを技術的に分解して解説します。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sebastienrousseau.com/ja/2018-01-09-burokkuchein-no-gijutsu-wo-rikai-suru/">
-<meta property="og:image" content="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp">
 <meta property="og:image:width" content="100vw">
 <meta property="og:image:height" content="100vh">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Understanding the Technology behind Blockchain — Sebastien Rousseau">
-<meta name="twitter:description" content="ブロックチェーンの技術的解説：暗号ハッシュチェーン、Merkleツリー、分散コンセンサス、そしてEthereumのプログラマブルレイヤーが決済台帳をスマートコントラクトとトークン化資産のプラットフォームへと変えた経緯を紹介します。">
-<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp">
+<meta name="twitter:title" content="ブロックチェーンの背後にある技術を理解する — Sebastien Rousseau">
+<meta name="twitter:description" content="ブロックチェーンを構成する暗号、ネットワーク、合意の各レイヤーを技術的に分解して解説します。">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp">
 <link rel="canonical" href="https://sebastienrousseau.com/ja/2018-01-09-burokkuchein-no-gijutsu-wo-rikai-suru/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
 <meta property="og:site_name" content="Sebastien Rousseau">
@@ -167,139 +167,47 @@
     </header>
 
         <section class="ap-hero">
-      <h1>Understanding the Technology behind Blockchain</h1>
-      <p class="sub">暗号ハッシュチェーンからプログラマブルなスマートコントラクトへ：ブロックチェーンを単なる台帳ではなくプラットフォームにした仕組み。</p>
-    <nav class="article-tags" aria-label="トピック"><a href="/tags/index.html#h3-" class="article-tag" rel="tag">ブロックチェーン技術</a><a href="/tags/index.html#h3-cryptographic-hash" class="article-tag" rel="tag">cryptographic hash</a><a href="/tags/index.html#h3-merkle-tree" class="article-tag" rel="tag">Merkle tree</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">分散コンセンサス</a><a href="/tags/index.html#h3-proof-of-work" class="article-tag" rel="tag">proof of work</a><a href="/tags/index.html#h3-ethereum" class="article-tag" rel="tag">Ethereum</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">スマートコントラクト</a><a href="/tags/index.html#h3-evm" class="article-tag" rel="tag">EVM</a><a href="/tags/index.html#h3-solidity" class="article-tag" rel="tag">Solidity</a><a href="/tags/index.html#h3-erc-20" class="article-tag" rel="tag">ERC-20</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">分散型台帳</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">分散型金融</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-01-09T09:09:00+00:00" class="meta-pub">公開日 9 Jan 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">更新日 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="想定読了時間">1 分で読了</span></div></section>
+      <h1>ブロックチェーンの背後にある技術を理解する</h1>
+      <p class="sub">暗号、合意、ネットワークレイヤーを技術的に分解する</p>
+    <nav class="article-tags" aria-label="トピック"><a href="/tags/index.html#h3-" class="article-tag" rel="tag">ブロックチェーン</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">暗号</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">ハッシュ</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">デジタル署名</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">マークルツリー</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">合意</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">プルーフ・オブ・ワーク</a><a href="/tags/index.html#h3-p2p" class="article-tag" rel="tag">P2P ネットワーク</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-01-09T09:09:00+00:00" class="meta-pub">公開日 9 Jan 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">更新日 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="想定読了時間">1 分で読了</span></div></section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>目次</h2><ol><li><a href="#section-1">ブロックチェーンが解決した問題</a></li><li><a href="#section-2">暗号学的ビルディングブロック</a></li><li><a href="#bitcoin">Bitcoin ブロックチェーンの仕組み</a></li><li><a href="#ethereum">Ethereumのプログラマブルレイヤー</a></li><li><a href="#solidity">Solidityでスマートコントラクトを書く</a></li><li><a href="#section-9">台帳から金融インフラへ</a></li><li><a href="#section-10">よくある質問</a></li><li><a href="#section-11">参考文献</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> ブロックチェーンの技術的解説：暗号ハッシュチェーン、Merkleツリー、分散コンセンサス、そしてEthereumのプログラマブルレイヤーが決済台帳をスマートコントラクトとトークン化資産のプラットフォームへと変えた経緯を紹介します。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>ブロックチェーンが解決した問題.</strong> Bitcoin以前、デジタル支払いには二重支払いを防ぐために信頼できる仲介者 — 銀行、決済処理業者、またはクリアリングハウス — が必要でした。アリスが£10を表すデジタルファイルをボブに送った場合、ファイル自体には彼女が同一のコピーをキャロルに送ることを止めるものは何もありませんでした。既存のすべてのシステムの解決策は集中型の記録管理でした。銀行の台帳がお金は使われたと示すため、再び使うことはできませんでした。.</li>  <li><strong>暗号学的ビルディングブロック.</strong> ブロックチェーン技術は3つの既存の暗号学的プリミティブを新しいアーキテクチャに組み合わせています：.</li>  <li><strong>Bitcoin ブロックチェーンの仕組み.</strong> Bitcoinブロックには3つの論理コンポーネントが含まれています：.</li>  <li><strong>Ethereumのプログラマブルレイヤー.</strong> Ethereumは「価値の転送」から「コードの実行」へとBitcoinのトランザクションモデルを一般化しました。主な追加事項：.</li></ul></aside><!-- lead-start -->
-
-<!-- lead-end -->
-<p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/adam-smigielski-K5mPtONmpHM.webp&w=1600&format=webp&q=85" alt="Abstract digital ledger blocks connected by light trails on dark background"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
-<blockquote>
-<p><strong>エグゼクティブサマリー / 主なポイント</strong></p>
-<ul>
-<li><strong>問題。</strong> デジタル現金は二重支払い問題を解決する必要があります。信頼できるクリアリングハウスなしに、同じ単位が2回支払われることを防ぐ問題です。Bitcoinの2008年のホワイトペーパーは、信頼できる仲介者を暗号学的証明と分散コンセンサスに置き換えることでこれを解決しました（<a href="https://bitcoin.org/bitcoin.pdf" title="Bitcoin: A Peer-to-Peer Electronic Cash System">Nakamoto, 2008</a>）。</li>
-<li><strong>データ構造。</strong> ブロックチェーンは、各ブロックヘッダーが前のヘッダーのSHA-256ハッシュを含むブロックのリンクリストです。ハッシュチェーンにより履歴は追記専用になります。過去のブロックを変更すると以降のすべてのハッシュが無効化され、攻撃者はすべての後続のproof-of-workをやり直すことを余儀なくされます。</li>
-<li><strong>Merkle tree。</strong> ブロック内のトランザクションはバイナリMerkle treeにハッシュ化されます。ブロックヘッダーに格納されたルートハッシュにより、ブロック全体をダウンロードせずに個々のトランザクションを効率的に検証できます — 軽量SPVクライアントの基盤です。</li>
-<li><strong>Ethereumの拡張。</strong> Ethereumのイエローペーパー（2014年）はEVM — すべてのフルノードで実行される決定論的なスタックマシン — を導入しました。スマートコントラクトはチェーンにデプロイされたバイトコードです。すべてのノードで同一に実行され、アトミックに決済されます（<a href="https://ethereum.github.io/yellowpaper/paper.pdf" title="Ethereum Yellow Paper">Wood, 2014</a>）。</li>
-<li><strong>実践的意義。</strong> 2017年以降にデプロイされたすべてのトークン化資産、ステーブルコイン、DeFiプロトコルはこれらの基盤の上で動作しています。ハッシュチェーン、Merkle tree、EVMの実行モデルを理解することは、Ethereumベースのシステムを扱うための前提条件です。</li>
-</ul>
-</blockquote>
-<hr />
-<h2 id="section-1">ブロックチェーンが解決した問題 <a class="heading-anchor" href="#section-1" aria-label="リンク先 ブロックチェーンが解決した問題">#</a></h2>
-<p>Bitcoin以前、デジタル支払いには二重支払いを防ぐために信頼できる仲介者 — 銀行、決済処理業者、またはクリアリングハウス — が必要でした。アリスが£10を表すデジタルファイルをボブに送った場合、ファイル自体には彼女が同一のコピーをキャロルに送ることを止めるものは何もありませんでした。既存のすべてのシステムの解決策は集中型の記録管理でした。銀行の台帳がお金は使われたと示すため、再び使うことはできませんでした。</p>
-<p>Bitcoinの貢献は、その信頼できる台帳を、すべてのトランザクションの記録が何千もの独立したノードに複製される分散型のものに置き換えることでした。ノード間の相互不信は2つのメカニズムを通じてセキュリティに変換されました：</p>
-<ol>
-<li>
-<p><strong>暗号学的連結。</strong> 各トランザクションブロックには前のブロックのハッシュが含まれています。ハッシュ関数は一方向の決定論的マッピングです。任意の入力に対して、関数は固定長の出力を生成し、入力の1ビットを変更するだけでまったく異なる出力が生成されます。これは過去のブロックへのいかなる変更もそれ以降のすべてのブロックを無効にすることを意味します。</p>
-</li>
-<li>
-<p><strong>proof-of-workコンセンサス。</strong> 新しいブロックを追加するには、ブロックのハッシュが目標しきい値を下回るようなnonce値を見つける必要があります — 見つけるのは計算コストが高く、検証するのは計算コストが低い。これにより、攻撃者はそのブロックからチェーンの先端までのすべてのproof-of-workをやり直す必要があるため、変更されるブロックの深さに比例して履歴の書き換えコストが高くなります。</p>
-</li>
-</ol>
-<p>この組み合わせにより、最も累積proof-of-workを持つ最長チェーンは、その構造上、実際のリソースを費やす誠実な参加者によって維持されるものになります。</p>
-<h2 id="section-2">暗号学的ビルディングブロック <a class="heading-anchor" href="#section-2" aria-label="リンク先 暗号学的ビルディングブロック">#</a></h2>
-<p>ブロックチェーン技術は3つの既存の暗号学的プリミティブを新しいアーキテクチャに組み合わせています：</p>
-<h3 id="sha-256">SHA-256ハッシュ関数 <a class="heading-anchor" href="#sha-256" aria-label="リンク先 SHA-256ハッシュ関数">#</a></h3>
-<p>SHA-256（Secure Hash Algorithm 256ビット）はNISTによって標準化されたSHA-2ファミリーのメンバーです。任意長の入力を受け取り、256ビットの出力を生成します。ブロックチェーン利用における主要な特性：</p>
-<ul>
-<li><strong>決定論的。</strong> 同じ入力は常に同じ出力を生成します。</li>
-<li><strong>原像抵抗性。</strong> ハッシュ出力が与えられても、入力を再構築することは計算上不可能です。</li>
-<li><strong>アバランシェ効果。</strong> 入力の1ビットを変更すると、出力ビットの約半分が変化し、ブルートフォース検索を非効率にします。</li>
-<li><strong>衝突耐性。</strong> 同じハッシュを生成する2つの異なる入力を見つけることは計算上不可能です。</li>
-</ul>
-<p>BitcoinはLength Extension攻撃に対する追加のセキュリティのためにSHA-256を2回適用します（SHA-256d）。EthereumはSHA-3の最終候補変種であるKeccak-256を使用します。</p>
-<h3 id="merkle-tree">Merkle Tree <a class="heading-anchor" href="#merkle-tree" aria-label="リンク先 Merkle Tree">#</a></h3>
-<p>Merkle treeはハッシュのバイナリツリーです。各リーフノードはトランザクションのハッシュです。各内部ノードはその2つの子のハッシュです。ルート — Merkleルート — はブロック内のすべてのトランザクションをブロックヘッダーに格納された単一の32バイト値に要約します。</p>
-<p>実践的な結果：特定のトランザクションがブロックに含まれていることを検証するには、<code>n</code>個のトランザクション全てではなく<code>log₂(n)</code>個のハッシュだけが必要です。2,000のトランザクションを持つブロックの場合、検証には2,000ではなく11のハッシュが必要です — 軽量クライアントにおける簡易決済検証（SPV）の基盤です。</p>
-<h3 id="ecdsa">デジタル署名（ECDSA） <a class="heading-anchor" href="#ecdsa" aria-label="リンク先 デジタル署名（ECDSA）">#</a></h3>
-<p>BitcoinとEthereumでのトランザクション承認は、secp256k1曲線上の楕円曲線デジタル署名アルゴリズム（ECDSA）を使用します。秘密鍵がトランザクションに署名します。任意のノードは秘密鍵を知ることなく対応する公開鍵を使って署名を検証できます。これにより、秘密鍵の保持者だけがアドレスからの支払いを承認できることが保証されます。</p>
-<p>EthereumアドレスはKeccak-256公開鍵ハッシュの最後の20バイトです — これにより、鍵ペアと暗号学的に結びついたままアドレスをコンパクトで移植性の高いものにする派生が行われます。</p>
-<h2 id="bitcoin">Bitcoin ブロックチェーンの仕組み <a class="heading-anchor" href="#bitcoin" aria-label="リンク先 Bitcoin ブロックチェーンの仕組み">#</a></h2>
-<p>Bitcoinブロックには3つの論理コンポーネントが含まれています：</p>
-<p><strong>ブロックヘッダー</strong> — 80バイト：プロトコルバージョン、前のブロックヘッダーのハッシュ、トランザクションのMerkleルート、Unixタイムスタンプ、現在の難易度ターゲット、nonceで構成されます。マイナーはヘッダーのdouble-SHA-256ハッシュが難易度ターゲットを下回るまでnonce（場合によってはコインベーストランザクションのタイムスタンプまたはエクストラnonce）を繰り返します。</p>
-<p><strong>トランザクションリスト</strong> — ブロックに含まれるトランザクションの順序付きセット。コインベーストランザクション（最初のもの）はブロック報酬とトランザクション手数料をマイナーのアドレスに割り当てます。</p>
-<p><strong>チェーン</strong> — ヘッダーのリンク。チェーン内の累積proof-of-work（すべてのブロックを生成するために行われたすべての作業の合計）がどのフォークが正規チェーンかを決定します。ノードは常に最も累積作業量の多いチェーンに従います。</p>
-<p>Bitcoinのブロック時間は10分が目標です。ネットワーク全体のハッシュレートが変化するにつれてその目標を維持するため、難易度は2,016ブロック（約2週間）ごとに調整されます。</p>
-<h2 id="ethereum">Ethereumのプログラマブルレイヤー <a class="heading-anchor" href="#ethereum" aria-label="リンク先 Ethereumのプログラマブルレイヤー">#</a></h2>
-<p>Ethereumは「価値の転送」から「コードの実行」へとBitcoinのトランザクションモデルを一般化しました。主な追加事項：</p>
-<p><strong>Ethereum Virtual Machine（EVM）。</strong> すべてのフルノードで決定論的に実行される256ビットワード、スタックベースの仮想マシンです。すべてのオペコードには明示的なガスコストがあります。ブロックのガスリミットによって計算が制限されるため、無限ループがネットワークを停止させることを防ぎます。同じ状態で同じバイトコードを実行するすべてのノードは同じ出力を生成しなければなりません — この実行上のコンセンサスがスマートコントラクトをトラストレスにするものです。</p>
-<p><strong>アカウント。</strong> Ethereumには2種類のアカウントがあります：秘密鍵で制御される外部所有アカウント（EOA）と、コードがオンチェーンに格納されているコントラクトアカウントです。コントラクトアドレスへのトランザクションはコントラクトのバイトコード実行を開始します。</p>
-<p><strong>状態。</strong> Ethereumのグローバル状態は、アドレスからアカウント状態（nonce、残高、ストレージ、コードハッシュ）へのマッピングです。状態ルート — すべてのアカウント状態のMerkle Patricia trie — は各ブロックヘッダーに含まれており、任意のブロック高さでの任意のアカウントの状態の効率的な証明を可能にします。</p>
-<p><strong>ガス。</strong> ユーザーはすべてのEVM操作に対してガス（ETH建て）を支払います。ガスは2つの機能を果たします：マイナー/バリデータの計算に対して報酬を与え、1回のトランザクションが消費できるリソースを上限設定し、高コストな操作によるサービス拒否攻撃を防ぎます。</p>
-<h2 id="solidity">Solidityでスマートコントラクトを書く <a class="heading-anchor" href="#solidity" aria-label="リンク先 Solidityでスマートコントラクトを書く">#</a></h2>
-<p>Solidityは静的型付けのコントラクト指向言語で、EVMバイトコードにコンパイルされます。最小限のトークンコントラクトがコアコンセプトを示しています：</p>
-<pre><code class="language-solidity">pragma solidity ^0.8.0;
-
-contract MyToken {
-    string public name;
-    string public symbol;
-    uint8 public decimals;
-    uint256 public totalSupply;
-    mapping(address =&gt; uint256) public balanceOf;
-
-    event Transfer(address indexed from, address indexed to, uint256 value);
-
-    constructor(
-        string memory _name,
-        string memory _symbol,
-        uint8 _decimals,
-        uint256 _totalSupply
-    ) {
-        name = _name;
-        symbol = _symbol;
-        decimals = _decimals;
-        totalSupply = _totalSupply;
-        balanceOf[msg.sender] = _totalSupply;
-    }
-
-    function transfer(address _to, uint256 _value) external returns (bool) {
-        require(balanceOf[msg.sender] &gt;= _value, &quot;Insufficient balance&quot;);
-        balanceOf[msg.sender] -= _value;
-        balanceOf[_to] += _value;
-        emit Transfer(msg.sender, _to, _value);
-        return true;
-    }
-}
-</code></pre>
-<p>主な観察点：<code>mapping(address =&gt; uint256)</code>はインメモリデータ構造ではなく、EVMストレージレイアウトです — 読み書きにはガスがかかります。<code>require</code>は失敗時にトランザクション全体をリバートし、未使用のガスを返還します。<code>event Transfer</code>はオフチェーンインデクサーがフルステートを再読することなく転送を追跡するために使用するログを発行します。<code>constructor</code>はデプロイ時に1回だけ実行されます。その後の呼び出しは名前付き関数に向かいます。</p>
-<p>ERC-20標準は代替可能トークンの共通インターフェース — <code>transfer</code>、<code>transferFrom</code>、<code>approve</code>、<code>allowance</code>、<code>balanceOf</code>、<code>totalSupply</code> — を形式化し、ERC-20準拠のトークンが独自統合なしに任意のERC-20対応取引所またはウォレットと連携できるようにしました。</p>
-<h2 id="section-9">台帳から金融インフラへ <a class="heading-anchor" href="#section-9" aria-label="リンク先 台帳から金融インフラへ">#</a></h2>
-<p>ここで説明したブロックチェーンプリミティブ — ハッシュチェーン、Merkle tree、EVM、ERC-20 — は2018年から2026年の間により広範な金融アプリケーションの基盤となりました：</p>
-<p><strong>分散型金融（DeFi）。</strong> 貸付プロトコル（Compound、Aave）、自動マーケットメーカー（Uniswap）、利回りアグリゲーターはすべてEVMスマートコントラクトとして動作します。従来の金融仲介機関のクリアリング、カストディ、決済機能を自己実行コードとオンチェーン流動性プールで置き換えます。</p>
-<p><strong>トークン化資産。</strong> 中央銀行と商業銀行は、EVM互換チェーンの許可型バリアントでトークン化預金、トークン化債券、トークン化マネーマーケットファンドを試験運用しています。基礎となるメカニクス — ハッシュで保護された状態遷移、アトミック決済、プログラマブルな転送ルール — は2014年のEthereumアーキテクチャの直系の子孫です。</p>
-<p><strong>中央銀行デジタル通貨。</strong> Bank of EnglandのホールセールCBDC研究、ECBのデジタルユーロプログラム、Project Agoráはすべて、BitcoinとEthereumの基礎設計から派生または互換性のあるDLTアーキテクチャを探求しています。パーミッショニングとガバナンスモデルがパブリックブロックチェーンと完全に異なる場合でも、コンセンサスとハッシュチェーン構造は関連性を保ち続けています。</p>
-<p>2008年のBitcoinホワイトペーパーから2026年のトークン化金融への旅は20年にわたりますが、一貫した技術的系譜の上に成り立っています。SHA-256ハッシュチェーンがどのように不変性を強制するか、Merkle treeがどのように効率的な検証を可能にするか、EVMがどのようにスマートコントラクトをアトミックに実行するかを理解することが、規制された金融サービスでブロックチェーンができることとできないことについてのあらゆる主張を評価するための前提条件です。</p>
-<h2 id="section-10">よくある質問 <a class="heading-anchor" href="#section-10" aria-label="リンク先 よくある質問">#</a></h2>
-<p><strong>ブロックチェーンと分散型データベースの違いは何ですか？</strong></p>
-<p>従来の分散型データベースは可用性とパフォーマンスのためにノード全体にデータを複製しますが、信頼は集中化されています — 管理者がレコードを変更できます。ブロックチェーンはハッシュチェーンとコンセンサスを通じて改ざんを計算上コストの高いものにします。過去のレコードを変更するには、後続のすべてのproof-of-workまたはproof-of-stakeをやり直し、改変されたフォークを受け入れるようネットワークを説得する必要があります。区別する特性は、アクセス制御ではなく、暗号学とインセンティブ設計によって強制される改ざん証拠です。</p>
-<p><strong>EthereumはSHA-256ではなくKeccak-256を使用するのはなぜですか？</strong></p>
-<p>EthereumがKeccak-256（NIST標準化調整前のSHA-3最終候補）を採用した理由の1つは、設計者たちがBitcoinがすでに依存していたSHA-2系統からの独立性を望んだからです。Keccakはまた、特定のEVM操作に魅力的な異なる代数的特性も持っています。開発者にとっての実際の影響は、Ethereumのアドレス導出とストレージスロットハッシュ化にKeccak-256が使用され、BitcoinのようにSHA-256dではないということです。</p>
-<p><strong>EVMにおける「ガス」は何を防ぎますか？</strong></p>
-<p>ガスは2種類の攻撃を防ぎます。第一に、計算コストの高い操作によるサービス拒否を防ぎます。すべてのオペコードにガスがかかるため、攻撃者は無コストで無限ループを実行するようネットワークを強制することができません。第二に、ブロックのガスリミットがブロックごとの総計算量を上限設定し、ブロック検証時間がフルノードにとって有界かつ予測可能なままであることを保証します。ガスがなければ、単一のコントラクト呼び出しが無限計算を実行することでネットワークを停止させる可能性があります。</p>
-<p><strong>proof-of-stakeはproof-of-workと比べてセキュリティモデルをどのように変えますか？</strong></p>
-<p>proof-of-workでは、セキュリティはエネルギー消費によって提供されます。チェーンを攻撃するには、ネットワークのハッシュレートの50%超を制御する必要があり、これはその物理ハードウェアと電力の50%超を制御することを意味します。proof-of-stake（2022年のマージ以来Ethereumで使用）では、セキュリティは経済的ステーキングによって提供されます。バリデータはETHを担保としてロックし、矛盾するブロックに署名した場合はスラッシュされます。51%攻撃にはすべてのステーキングETHの50%超を取得してリスクにさらす必要があります — ハードウェアとエネルギーコストではなく、資本コストです。セキュリティモデルは異なりますが、合理的なバリデータが資本破壊よりも手数料収入を好むという前提の下、経済的観点から数学的に比較可能です。</p>
-<h2 id="section-11">参考文献 <a class="heading-anchor" href="#section-11" aria-label="リンク先 参考文献">#</a></h2>
-<ul>
-<li>Nakamoto, S., (2008). <a href="https://bitcoin.org/bitcoin.pdf" title="Bitcoin Whitepaper">Bitcoin: A Peer-to-Peer Electronic Cash System ⧉</a>.</li>
-<li>Buterin, V., (2014). <a href="https://ethereum.org/whitepaper" title="Ethereum Whitepaper">Ethereum: A Next-Generation Smart Contract and Decentralised Application Platform ⧉</a>.</li>
-<li>Wood, G., (2014). <a href="https://ethereum.github.io/yellowpaper/paper.pdf" title="Ethereum Yellow Paper">Ethereum: A Secure Decentralised Generalised Transaction Ledger ⧉</a>.</li>
-<li>NIST, (2015). <a href="https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions" title="NIST FIPS 202">SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions ⧉</a>.</li>
-</ul>
-<!-- enrich-start -->
-
-<p class="post-reviewed">最終確認日 <time datetime="2026-05-24">2026-05-24</time>.</p>
-
-<!-- enrich-end -->
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>目次</h2><ol><li><a href="#section-1">インサイト</a></li><li><a href="#section-3">アイデア</a></li><li><a href="#section-5">イノベーション</a></li><li><a href="#section-7">アプローチ</a></li><li><a href="#section-9">手法</a></li><li><a href="#section-11">知見</a></li><li><a href="#section-13">課題</a></li><li><a href="#section-15">機会</a></li><li><a href="#section-17">結論</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> ブロックチェーンを構成する暗号、ネットワーク、合意の各レイヤーを技術的に分解して解説します。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>インサイト.</strong> ブロックチェーンは単一の技術ではなく、暗号、データ構造、分散ネットワーク、ゲーム理論の慎重な組み合わせです。それぞれのレイヤーがどう機能するかを理解することは、何が可能で何がそうでないかを評価する鍵となります。.</li>  <li><strong>アイデア.</strong> 各ブロックには取引のセットと前のブロックの暗号ハッシュが含まれます。任意のブロックを変更するとそのハッシュが変わり、それ以降のすべてのブロックが無効になります。これによりブロックチェーンは追加専用で改ざん証明可能になります。.</li>  <li><strong>イノベーション.</strong> ブロック内では、取引はマークルツリー —— ハッシュのバイナリツリー —— にまとめられ、各取引にコンパクトな証明を提供します。これにより、軽量クライアントは台帳全体をダウンロードせずに取引を検証できます。.</li>  <li><strong>アプローチ.</strong> 各取引は楕円曲線暗号を使用して秘密鍵で署名されます。ネットワーク上の誰もが対応する公開鍵を使用してその署名を検証でき、送信者の真正性と取引内容の完全性が保証されます。.</li></ul></aside><p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp&w=1600&format=webp&q=85" alt="ターミナル画面上のコード"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<h2 id="section-1">インサイト <a class="heading-anchor" href="#section-1" aria-label="リンク先 インサイト">#</a></h2>
+<h3 id="section-2">ブロックチェーンを技術スタックとして理解する <a class="heading-anchor" href="#section-2" aria-label="リンク先 ブロックチェーンを技術スタックとして理解する">#</a></h3>
+<p>ブロックチェーンは単一の技術ではなく、暗号、データ構造、分散ネットワーク、ゲーム理論の慎重な組み合わせです。それぞれのレイヤーがどう機能するかを理解することは、何が可能で何がそうでないかを評価する鍵となります。</p>
+<h2 id="section-3">アイデア <a class="heading-anchor" href="#section-3" aria-label="リンク先 アイデア">#</a></h2>
+<h3 id="section-4">改ざん不能な記録のための暗号ハッシュ <a class="heading-anchor" href="#section-4" aria-label="リンク先 改ざん不能な記録のための暗号ハッシュ">#</a></h3>
+<p>各ブロックには取引のセットと前のブロックの暗号ハッシュが含まれます。任意のブロックを変更するとそのハッシュが変わり、それ以降のすべてのブロックが無効になります。これによりブロックチェーンは追加専用で改ざん証明可能になります。</p>
+<h2 id="section-5">イノベーション <a class="heading-anchor" href="#section-5" aria-label="リンク先 イノベーション">#</a></h2>
+<h3 id="section-6">効率的な検証のためのマークルツリー <a class="heading-anchor" href="#section-6" aria-label="リンク先 効率的な検証のためのマークルツリー">#</a></h3>
+<p>ブロック内では、取引はマークルツリー —— ハッシュのバイナリツリー —— にまとめられ、各取引にコンパクトな証明を提供します。これにより、軽量クライアントは台帳全体をダウンロードせずに取引を検証できます。</p>
+<h2 id="section-7">アプローチ <a class="heading-anchor" href="#section-7" aria-label="リンク先 アプローチ">#</a></h2>
+<h3 id="section-8">完全性のためのデジタル署名 <a class="heading-anchor" href="#section-8" aria-label="リンク先 完全性のためのデジタル署名">#</a></h3>
+<p>各取引は楕円曲線暗号を使用して秘密鍵で署名されます。ネットワーク上の誰もが対応する公開鍵を使用してその署名を検証でき、送信者の真正性と取引内容の完全性が保証されます。</p>
+<h2 id="section-9">手法 <a class="heading-anchor" href="#section-9" aria-label="リンク先 手法">#</a></h2>
+<h3 id="section-10">ピア・ツー・ピア・ネットワーキング <a class="heading-anchor" href="#section-10" aria-label="リンク先 ピア・ツー・ピア・ネットワーキング">#</a></h3>
+<p>ブロックチェーンはピア・ツー・ピア・ネットワーク上で動作します。各ノードはピアのリストを維持し、取引とブロックをブロードキャストします。中央のサーバーや権威は存在しません。ネットワークのトポロジー自体が回復力を提供します。</p>
+<h2 id="section-11">知見 <a class="heading-anchor" href="#section-11" aria-label="リンク先 知見">#</a></h2>
+<h3 id="section-12">ビザンチン耐性のための合意 <a class="heading-anchor" href="#section-12" aria-label="リンク先 ビザンチン耐性のための合意">#</a></h3>
+<p>合意メカニズム(プルーフ・オブ・ワーク、プルーフ・オブ・ステーク、その他)は、悪意あるノードや故障したノードが存在する場合でも、ノードが台帳の状態に合意することを保証します。これがビットコインがビザンチン将軍問題を解決した方法です。</p>
+<h2 id="section-13">課題 <a class="heading-anchor" href="#section-13" aria-label="リンク先 課題">#</a></h2>
+<h3 id="section-14">スケーラビリティのトリレンマ <a class="heading-anchor" href="#section-14" aria-label="リンク先 スケーラビリティのトリレンマ">#</a></h3>
+<p>分散化、セキュリティ、スケーラビリティ —— ブロックチェーンはこれら 3 つを同時に最大化することはできません。設計上のトレードオフが避けられないため、レイヤー 2、シャーディング、新しい合意アルゴリズムが活発な研究分野となっています。</p>
+<h2 id="section-15">機会 <a class="heading-anchor" href="#section-15" aria-label="リンク先 機会">#</a></h2>
+<h3 id="section-16">改ざん不能な記録が問題となる場所 <a class="heading-anchor" href="#section-16" aria-label="リンク先 改ざん不能な記録が問題となる場所">#</a></h3>
+<p>ブロックチェーン技術が最大の有用性を持つのは、複数の当事者が互いに完全に信頼できない場合に共有された真実が必要となる場所です:国境を越えた決済、サプライチェーン、デジタルアイデンティティ、知的財産。</p>
+<h2 id="section-17">結論 <a class="heading-anchor" href="#section-17" aria-label="リンク先 結論">#</a></h2>
+<h3 id="section-18">慎重に積み重ねられたシンプリシティ <a class="heading-anchor" href="#section-18" aria-label="リンク先 慎重に積み重ねられたシンプリシティ">#</a></h3>
+<p>ブロックチェーンの技術的優雅さは、複雑さではなくシンプルさにあります —— 慎重に組み合わされたシンプルなコンポーネント(ハッシュ、署名、ネットワーク、合意)が、より大きな部分の合計を生み出します。これがブロックチェーンを評価し、構築するために学ぶ価値があるシステムにしています。</p>
 <aside class="author-card" aria-label="著者について"><img alt="Sebastien Rousseau の肖像" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/ja/nitsuite/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">シニア・バンキング・テクノロジスト。応用AI、ISO 20022 への移行、金融サービス向けポスト量子暗号、ホールセール決済の構造変革について執筆しています。</span><span class="author-credentials">HSBC コマーシャル・アンド・インベストメント・バンク、PayPal、Barclays、Shazam、AKQA、Virgin Group にて 20 年以上の経験。 <a href="/ja/nitsuite/index.html">プロフィール全文</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最終確認日 <time datetime="2026-05-27">2026-05-27</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">関連記事</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/ja/2018-01-24-erc-20-tokun-hyoujun" class="related-media" aria-label="ERC-20:世界を変えたイーサリアム・トークン・インターフェース" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="erc-20"><a href="https://sebastienrousseau.com/ja/2018-01-24-erc-20-tokun-hyoujun">ERC-20:世界を変えたイーサリアム・トークン・インターフェース</a> <a class="heading-anchor" href="#erc-20" aria-label="リンク先 ERC-20:世界を変えたイーサリアム・トークン・インターフェース">#</a></h3><p><time datetime="2018-01-24">2018-01-24</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/ja/2018-02-04-arata-na-ankouka-tsuuka-to-koukousoku-kessai-no-shourai" class="related-media" aria-label="Unveiling a New Cryptocurrency and Faster Payment Solution" tabindex="-1"><img alt="A very tall building with a lot of holes in it" src="https://cloudcdn.pro/api/transform?url=/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="unveiling-a-new-cryptocurrency-and-faster-payment-solution"><a href="https://sebastienrousseau.com/ja/2018-02-04-arata-na-ankouka-tsuuka-to-koukousoku-kessai-no-shourai">Unveiling a New Cryptocurrency and Faster Payment Solution</a> <a class="heading-anchor" href="#unveiling-a-new-cryptocurrency-and-faster-payment-solution" aria-label="リンク先 Unveiling a New Cryptocurrency and Faster Payment Solution">#</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/ja/2018-02-15-express-transaction-credits-puratto-foomu-no-kaihatsu" class="related-media" aria-label="The Making of the Express Transaction Credits Platform" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="the-making-of-the-express-transaction-credits-platform"><a href="https://sebastienrousseau.com/ja/2018-02-15-express-transaction-credits-puratto-foomu-no-kaihatsu">The Making of the Express Transaction Credits Platform</a> <a class="heading-anchor" href="#the-making-of-the-express-transaction-credits-platform" aria-label="リンク先 The Making of the Express Transaction Credits Platform">#</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ja/2018-02-15-express-transaction-credits-puratto-foomu-no-kaihatsu/index.html" class="related-media" aria-label="Express Transaction Credits プラットフォームの開発" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="express-transaction-credits"><a href="https://sebastienrousseau.com/ja/2018-02-15-express-transaction-credits-puratto-foomu-no-kaihatsu/index.html">Express Transaction Credits プラットフォームの開発</a> <a class="heading-anchor" href="#express-transaction-credits" aria-label="リンク先 Express Transaction Credits プラットフォームの開発">#</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ja/2018-02-04-arata-na-ankouka-tsuuka-to-koukousoku-kessai-no-shourai/index.html" class="related-media" aria-label="新たな暗号資産を公開し、将来のより高速な決済ソリューションを提供する" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/api/transform?url=/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-20"><a href="https://sebastienrousseau.com/ja/2018-02-04-arata-na-ankouka-tsuuka-to-koukousoku-kessai-no-shourai/index.html">新たな暗号資産を公開し、将来のより高速な決済ソリューションを提供する</a> <a class="heading-anchor" href="#section-20" aria-label="リンク先 新たな暗号資産を公開し、将来のより高速な決済ソリューションを提供する">#</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ja/2018-01-24-erc-20-tokun-hyoujun/index.html" class="related-media" aria-label="ERC-20:世界を変えたイーサリアム・トークン・インターフェース" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/api/transform?url=/stocks/images/m-ZzOa5G8hSPI.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="erc-20"><a href="https://sebastienrousseau.com/ja/2018-01-24-erc-20-tokun-hyoujun/index.html">ERC-20:世界を変えたイーサリアム・トークン・インターフェース</a> <a class="heading-anchor" href="#erc-20" aria-label="リンク先 ERC-20:世界を変えたイーサリアム・トークン・インターフェース">#</a></h3><p><time datetime="2018-01-24">2018-01-24</time></p></footer></article>
 </div>
-</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">出典・参考文献</h2><ol class="article-sources-list"><li><a href="https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions" rel="external noopener nofollow"><span class="source-host">www.nist.gov</span><span class="source-path">/publications/sha-3-standard-permutation-based-hash-and-extendable-output-fun…</span></a></li></ol></aside><nav class="post-pagination" aria-label="記事ページネーション"><a class="post-pagination-prev" href="/ja/2018-01-02-burokkuchein-2018-nen-juuyou-gijutsu/"><span class="post-pagination-label">前へ</span><span class="post-pagination-title">Blockchain explained, the technology that matters the most</span></a><a class="post-pagination-next" href="/ja/2018-01-24-erc-20-tokun-hyoujun/"><span class="post-pagination-label">次へ</span><span class="post-pagination-title">ERC-20: The Ethereum Token Interface That Changed the World</span></a></nav></div>
+</aside><nav class="post-pagination" aria-label="記事ページネーション"><a class="post-pagination-prev" href="/ja/2018-01-02-burokkuchein-2018-nen-juuyou-gijutsu/"><span class="post-pagination-label">前へ</span><span class="post-pagination-title">Blockchain explained, the technology that matters the most</span></a><a class="post-pagination-next" href="/ja/2018-01-24-erc-20-tokun-hyoujun/"><span class="post-pagination-label">次へ</span><span class="post-pagination-title">ERC-20: The Ethereum Token Interface That Changed the World</span></a></nav></div>
     </main>
 
 <!-- gen-layouts:footer-start -->
@@ -371,7 +279,7 @@ contract MyToken {
     <!-- Schema.org structured data -->
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ja"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ja"}]}</script>
 
-        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":324,"about":{"@type":"Thing","name":"Ethereum","sameAs":["https://en.wikipedia.org/wiki/Ethereum","https://www.wikidata.org/wiki/Q21825854","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]},"mentions":[{"@type":"Thing","name":"ERC-20","sameAs":["https://en.wikipedia.org/wiki/Ethereum#Tokens","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]}],"headline":"Understanding the Technology behind Blockchain","description":"ブロックチェーンの技術的解説：暗号ハッシュチェーン、Merkleツリー、分散コンセンサス、そしてEthereumのプログラマブルレイヤーが決済台帳をスマートコントラクトとトークン化資産のプラットフォームへと変えた経緯を紹介します。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp","width":"100vw","height":"100vh","caption":"暗い背景に光のトレイルで繋がれた抽象的なデジタル台帳ブロック"},"url":"https://sebastienrousseau.com/ja/2018-01-09-burokkuchein-no-gijutsu-wo-rikai-suru/","datePublished":"2018-01-09T09:09:00+00:00","dateModified":"2026-05-24","inLanguage":"ja","keywords":"ブロックチェーン技術, cryptographic hash, Merkle tree, 分散コンセンサス, proof of work, Ethereum, スマートコントラクト, EVM, Solidity, ERC-20, 分散型台帳, 分散型金融","articleSection":"Blockchain","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ja/2018-01-09-burokkuchein-no-gijutsu-wo-rikai-suru/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ja"},"citation":[{"@type":"CreativeWork","url":"https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ja/"},{"@type":"ListItem","position":3,"name":"Understanding the Technology behind Blockchain","item":"https://sebastienrousseau.com/ja/2018-01-09-burokkuchein-no-gijutsu-wo-rikai-suru/"}]}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":43,"headline":"ブロックチェーンの背後にある技術を理解する","description":"ブロックチェーンを構成する暗号、ネットワーク、合意の各レイヤーを技術的に分解して解説します。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp","width":"100vw","height":"100vh","caption":"ターミナル画面上のコード"},"url":"https://sebastienrousseau.com/ja/2018-01-09-burokkuchein-no-gijutsu-wo-rikai-suru/","datePublished":"2018-01-09T09:09:00+00:00","dateModified":"2026-05-24","inLanguage":"ja","keywords":"ブロックチェーン, 暗号, ハッシュ, デジタル署名, マークルツリー, 合意, プルーフ・オブ・ワーク, P2P ネットワーク","articleSection":"Blockchain","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ja/2018-01-09-burokkuchein-no-gijutsu-wo-rikai-suru/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ja"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ja/"},{"@type":"ListItem","position":3,"name":"ブロックチェーンの背後にある技術を理解する","item":"https://sebastienrousseau.com/ja/2018-01-09-burokkuchein-no-gijutsu-wo-rikai-suru/"}]}]}</script>
 <script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
   
 <!-- SSG Search Widget -->
@@ -397,5 +305,5 @@ contract MyToken {
 </div>
 <script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
 </div>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Understanding the Technology behind Blockchain","url":"https://sebastienrousseau.com/ja/2018-01-09-burokkuchein-no-gijutsu-wo-rikai-suru/","inLanguage":"ja-JP","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"ブロックチェーン技術, cryptographic hash, Merkle tree, 分散コンセンサス, proof of work, Ethereum, スマートコントラクト, EVM, Solidity, ERC-20, 分散型台帳, 分散型金融","programmingLanguage":"Solidity","dependencies":["Ethereum","ERC-20"]}</script></body>
+</body>
 </html>

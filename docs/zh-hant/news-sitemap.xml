@@ -2,6 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-27T06:06:06+00:00</news:publication_date>
+    <news:title>支付的人工智慧作業系統:2026 年詐騙、路由、韌性與法遵</news:title>
+    <news:keywords>AI 支付 2026, 支付詐騙, 支付路由, 即時詐騙防範, ISO 20022 AI, 支付韌性, 交易分析, 現金流預測</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>Magnifica Humanitas:首份 AI 宗座通諭的產業解讀</news:title>
+    <news:keywords>Magnifica Humanitas, Pope Leo XIV, AI 通諭, 人工智慧倫理, 量子運算倫理, Rerum Novarum, 巴別塔, 技術從非中立, transhumanism, posthumanism, 人的尊嚴, 技術典範, 火車 汽車 核能 網際網路, 技術史上的道德恐慌, Lucy 知識傳遞, AI 希望, EU AI Act, DORA, Anthropic, Sebastien Rousseau</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>2026 年穩定幣與代幣化存款:銀行真正必須捍衛的是什麼</news:title>
+    <news:keywords>穩定幣 2026, 代幣化存款, 銀行存款, GENIUS Act, JPM Coin, 存款代幣, 穩定幣準備金, 銀行資金, 數位貨幣</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-25T06:06:06+00:00</news:publication_date>
+    <news:title>2026 可程式化流動性:AI、代幣化存款與即時資金管理編排</news:title>
+    <news:keywords>可程式化流動性 2026, 資金管理編排, AI 資金管理, 代幣化存款, 即時流動性, 穩定幣資金管理, 多軌道支付, 虛擬帳戶, 交易銀行, 抵押品移動性, programmable liquidity, tokenised deposits, ISO 20022, Standard Chartered, J.P. Morgan, Oliver Wyman</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/zh-hant/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</loc>
   <news:news>
     <news:publication>
@@ -321,18 +369,6 @@
       <news:language>zh-Hant</news:language>
     </news:publication>
     <news:publication_date>2024-02-12T06:06:06+00:00</news:publication_date>
-    <news:title>Àkàndé: GPT-Powered Voice Assistant for Executives</news:title>
-    <news:keywords>Àkàndé, OpenAI GPT-4, Whisper STT, SQLite 快取, fpdf2, Python 語音助手, 對話補全 API, PDF 摘要生成, SHA-256 快取, 文字轉語音, 行政助理 AI, 開源</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/zh-hant/2024-02-12-akande-yuyin-zhushou-biange-geren-yu-gaoguan-fuwu-tw/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>zh-Hant</news:language>
-    </news:publication>
-    <news:publication_date>2024-02-12T06:06:06+00:00</news:publication_date>
     <news:title>Àkàndé 語音助手：變革個人與高管協助</news:title>
     <news:keywords>Àkàndé, 語音助手, GPT, Python, OpenAI, 自然語言理解, PDF 摘要, SQLite, 快取, 高管助手</news:keywords>
   </news:news>
@@ -357,32 +393,8 @@
       <news:language>zh-Hant</news:language>
     </news:publication>
     <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
-    <news:title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</news:title>
-    <news:keywords>Azure Cognitive Services, 語音轉文字, 神經聲學模型, Azure Text Analytics, 自然語言處理, 情感分析, CherryPy, 批次轉錄 API, 多語言 ASR, Azure Translator, 音訊轉錄, Python 音訊處理</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/zh-hant/2024-01-29-ai-yinpin-fenxi-fanyi-yu-jianjie-tw/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>zh-Hant</news:language>
-    </news:publication>
-    <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
     <news:title>AI 驅動的音訊分析、翻譯與洞察</news:title>
     <news:keywords>Audio Analyser, Azure AI, 語音轉文字, 自然語言處理, 情感分析, 多語言翻譯, 客戶服務, 市場研究, 醫療, 金融</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/zh-hant/2024-01-23-ai-tishici-gongcheng-de-jinzhan-tw/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>zh-Hant</news:language>
-    </news:publication>
-    <news:publication_date>2024-01-23T06:06:06+00:00</news:publication_date>
-    <news:title>AI Prompt Engineering 2024: Techniques That Work</news:title>
-    <news:keywords>思維鏈提示, 少樣本學習, 零樣本提示, 情境學習, 提示注入, ReAct, 自一致性, 檢索增強生成, BloombergGPT, 系統提示, 提示安全, LLM agent</news:keywords>
   </news:news>
 </url>
 <url>
@@ -513,18 +525,6 @@
       <news:language>zh-Hant</news:language>
     </news:publication>
     <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
-    <news:title>Generative AI in 2023: How It Works, Where It Lands</news:title>
-    <news:keywords>生成式AI, 大型語言模型, transformer架構, GPT-4, 金融服務AI, 幻覺, 檢索增強生成, AI治理, 基礎模型, 微調</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/zh-hant/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng-tw/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>zh-Hant</news:language>
-    </news:publication>
-    <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
     <news:title>探索生成式人工智慧</news:title>
     <news:keywords>生成式 AI, 人工智慧, GPT-4, 大型語言模型, Transformer, GAN, 自動編碼器, 擴散模型, 多模態 AI, 可解釋 AI</news:keywords>
   </news:news>
@@ -539,18 +539,6 @@
     <news:publication_date>2023-11-05T06:06:06+00:00</news:publication_date>
     <news:title>Rust 安全所需的數學與密碼常數</news:title>
     <news:keywords>CMN, Common 庫, Rust, 數學常數, 密碼常數, RSA, 橢圓曲線, π, e, 後量子密碼學</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/zh-hant/2023-10-26-libmake-rust-ku-de-daima-shengchengqi-tw/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>zh-Hant</news:language>
-    </news:publication>
-    <news:publication_date>2023-10-26T06:06:06+00:00</news:publication_date>
-    <news:title>LibMake: Rust Library Scaffold Generator</news:title>
-    <news:keywords>LibMake, Rust code generator, cargo scaffold, Rust library template, Tera templating, GitHub Actions Rust, cargo-audit, Rust API Guidelines, boilerplate generator, Rust CI workflow</news:keywords>
   </news:news>
 </url>
 <url>
@@ -597,18 +585,6 @@
       <news:language>zh-Hant</news:language>
     </news:publication>
     <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
-    <news:title>Automating ISO 20022 Payment Files Creation with pain001</news:title>
-    <news:keywords>pain001, ISO 20022, pain.001.001.09, CustomerCreditTransferInitiation, SEPA Credit Transfer, CBPR+, payment automation, XML generation, XSD validation, GrpHdr, PmtInf, CdtTrfTxInf, CtrlSum, SWIFT</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/zh-hant/2023-09-29-yong-pain001-zidonghua-iso-20022-zhifu-wenjian-tw/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>zh-Hant</news:language>
-    </news:publication>
-    <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
     <news:title>用 pain001 自動化建立符合 ISO 20022 標準的支付檔案</news:title>
     <news:keywords>ISO 20022, pain.001, pain001, 支付自動化, HVPS+, CBPR+, SEPA, 跨境支付, Python 庫, 開源</news:keywords>
   </news:news>
@@ -623,30 +599,6 @@
     <news:publication_date>2018-02-15T06:06:06+00:00</news:publication_date>
     <news:title>Express Transaction Credits 平臺的誕生</news:title>
     <news:keywords>EXTC, ERC-223, 以太坊, 智慧合約, 去中心化交易所, 即時貸款, 跨境支付, 金融普惠, 代幣, 區塊鏈</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/zh-hant/2018-02-15-express-transaction-credits-pingtai-de-jianli-tw/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>zh-Hant</news:language>
-    </news:publication>
-    <news:publication_date>2018-02-15T06:06:06+00:00</news:publication_date>
-    <news:title>The making of the Express Transaction Credits Platform</news:title>
-    <news:keywords>EXTC平台, ERC-223, 以太坊智能合約, 代幣架構, 多重簽名, 時間鎖定轉帳, 區塊鏈支付, 抵押貸款, 去中心化金融, 2018年加密貨幣</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/zh-hant/2018-02-04-xin-jiamihuobi-yu-gengkuai-zhifu-fangan-tw/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>zh-Hant</news:language>
-    </news:publication>
-    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
-    <news:title>Unveiling a new Cryptocurrency and Faster Payment Solution</news:title>
-    <news:keywords>EXTC, ERC-223, 以太坊智慧合約, 快速支付, 加密貨幣, 區塊鏈支付, 支付代幣, 去中心化金融, ERC-20, 跨境支付</news:keywords>
   </news:news>
 </url>
 <url>
@@ -683,18 +635,6 @@
     <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
     <news:title>理解區塊鏈背後的技術</news:title>
     <news:keywords>區塊鏈, 以太坊, 智慧合約, Solidity, 加密貨幣, 代幣化, ERC-20, dApps, Geth, 測試網</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/zh-hant/2018-01-09-lijie-quqiulian-beihou-de-jishu-tw/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>zh-Hant</news:language>
-    </news:publication>
-    <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
-    <news:title>Understanding the Technology behind Blockchain</news:title>
-    <news:keywords>區塊鏈技術, 密碼雜湊, Merkle樹, 分散式共識, proof of work, Ethereum, 智能合約, EVM, Solidity, ERC-20, 分散式帳本, 去中心化金融</news:keywords>
   </news:news>
 </url>
 <url>

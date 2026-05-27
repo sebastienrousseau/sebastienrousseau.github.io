@@ -8,8 +8,8 @@
     <title>理解區塊鏈背後的技術 — Sebastien Rousseau</title>
 
     <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
-<meta name="description" content="區塊鏈技術深度解析：密碼雜湊鏈、Merkle樹、分散式共識機制，以及Ethereum的可程式化層如何將支付帳本轉變為智能合約與代幣化資產平台。">
-<meta name="keywords" content="區塊鏈技術, 密碼雜湊, Merkle樹, 分散式共識, proof of work, Ethereum, 智能合約, EVM, Solidity, ERC-20, 分散式帳本, 去中心化金融">
+<meta name="description" content="區塊鏈技術已經開啟了一個去中心化的新時代。本文以以太坊為平臺，帶你逐步構建自己的加密貨幣。">
+<meta name="keywords" content="區塊鏈, 以太坊, 智慧合約, Solidity, 加密貨幣, 代幣化, ERC-20, dApps, Geth, 測試網">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
@@ -40,7 +40,7 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-4hM9lQ0REXLNIVgTC+6UljhBL3TgMOYP4kQZ2Pdwz1A=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-E0zolSeGq/AiruVQXI8vbdYehV4iVIWuMzQsQqXxD7E=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-S2FoyjftwgHs7EFJ1NIRDw73/vysfAU8+2fYiHqMN4Q=' 'sha256-wDSmiFAMwPD4Ju1hVjZ+JvYKxiKZvcDoFojB4Zg6/ZU=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-KMPc/9s517VXh3aOABt1aD/BxUL6XLWr0W/FGRanAmM=' 'sha256-OX8lgEIt8zQ9H9aF1AT6IpgDIZCkHgrhgUqA+4rbcto=' 'sha256-S2FoyjftwgHs7EFJ1NIRDw73/vysfAU8+2fYiHqMN4Q=' 'sha256-wDSmiFAMwPD4Ju1hVjZ+JvYKxiKZvcDoFojB4Zg6/ZU=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
@@ -78,7 +78,7 @@
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="stylesheet" href="/highlight.a92b9694.css">
 <meta property="og:title" content="理解區塊鏈背後的技術 — Sebastien Rousseau">
-<meta property="og:description" content="區塊鏈技術深度解析：密碼雜湊鏈、Merkle樹、分散式共識機制，以及Ethereum的可程式化層如何將支付帳本轉變為智能合約與代幣化資產平台。">
+<meta property="og:description" content="區塊鏈技術已經開啟了一個去中心化的新時代。本文以以太坊為平臺，帶你逐步構建自己的加密貨幣。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sebastienrousseau.com/zh-hant/2018-01-09-lijie-quqiulian-beihou-de-jishu-tw/">
 <meta property="og:image" content="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp">
@@ -87,7 +87,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="理解區塊鏈背後的技術 — Sebastien Rousseau">
-<meta name="twitter:description" content="區塊鏈技術深度解析：密碼雜湊鏈、Merkle樹、分散式共識機制，以及Ethereum的可程式化層如何將支付帳本轉變為智能合約與代幣化資產平台。">
+<meta name="twitter:description" content="區塊鏈技術已經開啟了一個去中心化的新時代。本文以以太坊為平臺，帶你逐步構建自己的加密貨幣。">
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp">
 <link rel="canonical" href="https://sebastienrousseau.com/zh-hant/2018-01-09-lijie-quqiulian-beihou-de-jishu-tw/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
@@ -168,138 +168,107 @@
 
         <section class="ap-hero">
       <h1>理解區塊鏈背後的技術</h1>
-      <p class="sub">從密碼雜湊鏈到可程式化智能合約：使區塊鏈成為平台而非僅是帳本的核心機制。</p>
-    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-" class="article-tag" rel="tag">區塊鏈技術</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">密碼雜湊</a><a href="/tags/index.html#h3-merkle" class="article-tag" rel="tag">Merkle樹</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">分散式共識</a><a href="/tags/index.html#h3-proof-of-work" class="article-tag" rel="tag">proof of work</a><a href="/tags/index.html#h3-ethereum" class="article-tag" rel="tag">Ethereum</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">智能合約</a><a href="/tags/index.html#h3-evm" class="article-tag" rel="tag">EVM</a><a href="/tags/index.html#h3-solidity" class="article-tag" rel="tag">Solidity</a><a href="/tags/index.html#h3-erc-20" class="article-tag" rel="tag">ERC-20</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">分散式帳本</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">去中心化金融</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-01-09T09:09:00+00:00" class="meta-pub">Published 9 Jan 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">Updated 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">2 min read</span></div></section>
+      <p class="sub">在以太坊上構建加密貨幣：區塊鏈開發、代幣化與加密貨幣實現的全面指南</p>
+    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-" class="article-tag" rel="tag">區塊鏈</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">以太坊</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">智慧合約</a><a href="/tags/index.html#h3-solidity" class="article-tag" rel="tag">Solidity</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">加密貨幣</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">代幣化</a><a href="/tags/index.html#h3-erc-20" class="article-tag" rel="tag">ERC-20</a><a href="/tags/index.html#h3-dapps" class="article-tag" rel="tag">dApps</a><a href="/tags/index.html#h3-geth" class="article-tag" rel="tag">Geth</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">測試網</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-01-09T09:09:00+00:00" class="meta-pub">Published 9 Jan 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">Updated 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">1 min read</span></div></section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Contents</h2><ol><li><a href="#section-1">區塊鏈解決的問題</a></li><li><a href="#section-2">密碼學構建模組</a></li><li><a href="#bitcoin">Bitcoin 區塊鏈的工作原理</a></li><li><a href="#ethereum">Ethereum 的可程式化層</a></li><li><a href="#solidity">用 Solidity 編寫智慧合約</a></li><li><a href="#section-9">從帳本到金融基礎設施</a></li><li><a href="#section-10">常見問題</a></li><li><a href="#section-11">參考文獻</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 區塊鏈技術深度解析：密碼雜湊鏈、Merkle樹、分散式共識機制，以及Ethereum的可程式化層如何將支付帳本轉變為智能合約與代幣化資產平台。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>區塊鏈解決的問題.</strong> 在 Bitcoin 出現之前，數位支付需要一個可信中介——銀行、支付處理商或清算所——來防止雙重支付。如果 Alice 向 Bob 傳送代表 10 英鎊的數位檔案，檔案本身沒有任何東西能阻止她向 Carol 傳送一份相同的副本。每個現有系統中的解決方案都是中心化記帳：銀行的帳本顯示錢已被花費，因此無法再次花費。.</li>  <li><strong>密碼學構建模組.</strong> 區塊鏈技術將三種預先存在的密碼學原語組合成一種新的架構：.</li>  <li><strong>Bitcoin 區塊鏈的工作原理.</strong> 一個 Bitcoin 區塊包含三個邏輯元件：.</li>  <li><strong>Ethereum 的可程式化層.</strong> Ethereum 將 Bitcoin 的交易模型從「轉移價值」泛化為「執行程式碼」。主要新增內容：.</li></ul></aside><!-- lead-start -->
-
-<!-- lead-end -->
-<p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/adam-smigielski-K5mPtONmpHM.webp&w=1600&format=webp&q=85" alt="Abstract digital ledger blocks connected by light trails on dark background"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
-<blockquote>
-<p><strong>執行摘要 / 核心要點</strong></p>
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Contents</h2><ol><li><a href="#section-1">洞察</a></li><li><a href="#section-2">理念</a></li><li><a href="#section-6">影響</a></li><li><a href="#section-7">激勵</a></li><li><a href="#section-8">結論</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 區塊鏈技術已經開啟了一個去中心化的新時代。本文以以太坊為平臺，帶你逐步構建自己的加密貨幣。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>洞察.</strong> 區塊鏈技術開啟了去中心化應用（dApps）的新時代——它們獨立執行，無需中心化控制。以太坊為構建複雜的 dApps 和智慧合約提供了強大的平臺。.</li>  <li><strong>理念.</strong> 我們的目標是在以太坊上構建一個簡單的加密貨幣，讓你親身體驗區塊鏈開發。下面是我們將涉及的關鍵步驟：.</li>  <li><strong>影響.</strong> 透過從零開始構建以太坊加密貨幣，你將獲得：.</li>  <li><strong>激勵.</strong> 完成端到端的代幣構建可讓你親身掌握：.</li></ul></aside><p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/adam-smigielski-K5mPtONmpHM.webp&w=1600&format=webp&q=85" alt="一座具有許多孔洞的高塔建築"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<h2 id="section-1">洞察 <a class="heading-anchor" href="#section-1" aria-label="Link to 洞察">#</a></h2>
+<p>區塊鏈技術開啟了去中心化應用（dApps）的新時代——它們獨立執行，無需中心化控制。以太坊為構建複雜的 dApps 和智慧合約提供了強大的平臺。</p>
+<p>以太坊最具前景的用途之一是發行自定義加密貨幣與數字代幣。本指南將逐步帶你在以太坊上建立自己的加密代幣。</p>
+<h2 id="section-2">理念 <a class="heading-anchor" href="#section-2" aria-label="Link to 理念">#</a></h2>
+<p>我們的目標是在以太坊上構建一個簡單的加密貨幣，讓你親身體驗區塊鏈開發。下面是我們將涉及的關鍵步驟：</p>
+<h3 id="section-3">設計加密貨幣 <a class="heading-anchor" href="#section-3" aria-label="Link to 設計加密貨幣">#</a></h3>
+<p>第一項關鍵任務是設計你的加密貨幣，包括定義關鍵屬性：</p>
 <ul>
-<li><strong>問題所在。</strong> 數位現金需要解決雙重支付問題：在沒有可信清算機構的情況下，防止同一單位被消費兩次。Bitcoin 2008 年的白皮書透過用密碼學證明和分散式共識取代可信中介解決了這一問題（<a href="https://bitcoin.org/bitcoin.pdf" title="Bitcoin: A Peer-to-Peer Electronic Cash System">Nakamoto, 2008</a>）。</li>
-<li><strong>資料結構。</strong> 區塊鏈是一個區塊的鏈結串列，每個區塊頭都包含前一個區塊頭的 SHA-256 雜湊值。雜湊鏈使歷史記錄只可追加：修改任何過去的區塊都會使此後每個雜湊值失效，迫使攻擊者重新完成所有後續的 proof-of-work。</li>
-<li><strong>Merkle 樹。</strong> 區塊內的交易被雜湊化為二元 Merkle 樹。儲存在區塊頭中的根雜湊值允許高效驗證任何單筆交易，無需下載完整區塊——這是輕量級 SPV 客戶端的基礎。</li>
-<li><strong>Ethereum 的擴充。</strong> Ethereum 的黃皮書（2014 年）引入了 EVM——一個在每個全節點上執行的確定性堆疊機器。智慧合約是部署到鏈上的位元組碼；它們在所有節點上以相同方式執行並以原子方式結算，用自我執行程式碼取代了可信中介（<a href="https://ethereum.github.io/yellowpaper/paper.pdf" title="Ethereum Yellow Paper">Wood, 2014</a>）。</li>
-<li><strong>實際意義。</strong> 自 2017 年以來部署的每一個代幣化資產、穩定幣和 DeFi 協定都執行在這些基礎之上。理解雜湊鏈、Merkle 樹和 EVM 執行模型，是使用任何基於 Ethereum 系統的前提條件。</li>
+<li><strong>名稱</strong>：選擇一個獨特的名稱，體現代幣的身份與目的。</li>
+<li><strong>符號</strong>：選擇一個簡短符號，如比特幣的 BTC，用於交易所標識。</li>
+<li><strong>總供應量</strong>：確定流通代幣的最大數量。</li>
+<li><strong>小數位數</strong>：設定代幣可拆分的精度，例如 2 位表示&quot;分&quot;。</li>
+<li><strong>附加特性</strong>：可選擇新增鑄造、銷燬、凍結等功能。</li>
 </ul>
-</blockquote>
-<hr />
-<h2 id="section-1">區塊鏈解決的問題 <a class="heading-anchor" href="#section-1" aria-label="Link to 區塊鏈解決的問題">#</a></h2>
-<p>在 Bitcoin 出現之前，數位支付需要一個可信中介——銀行、支付處理商或清算所——來防止雙重支付。如果 Alice 向 Bob 傳送代表 10 英鎊的數位檔案，檔案本身沒有任何東西能阻止她向 Carol 傳送一份相同的副本。每個現有系統中的解決方案都是中心化記帳：銀行的帳本顯示錢已被花費，因此無法再次花費。</p>
-<p>Bitcoin 的貢獻在於用分散式帳本取代了那個可信帳本，其中所有交易的記錄在數千個獨立節點上被複製。節點間的相互不信任透過兩種機制轉化為安全性：</p>
-<ol>
-<li>
-<p><strong>密碼學鏈結。</strong> 每個交易區塊都包含前一個區塊的雜湊值。雜湊函數是一種單向確定性映射：給定任何輸入，函數產生固定長度的輸出，即使輸入改變一個位元也會產生完全不同的輸出。這意味著對歷史區塊的任何修改都會使其後的每個區塊失效。</p>
-</li>
-<li>
-<p><strong>Proof-of-work 共識。</strong> 新增區塊需要找到一個 nonce 值，使區塊的雜湊值低於目標閾值——找到它在計算上昂貴，驗證它則極其廉價。這使得重寫歷史的代價與被修改區塊的深度成正比，因為攻擊者必須從該區塊到鏈尖重新完成所有的 proof-of-work。</p>
-</li>
-</ol>
-<p>這種組合意味著，具有最多累積 proof-of-work 的最長鏈，從其構造上來說，就是由誠實參與者消耗真實資源所維護的那條鏈。</p>
-<h2 id="section-2">密碼學構建模組 <a class="heading-anchor" href="#section-2" aria-label="Link to 密碼學構建模組">#</a></h2>
-<p>區塊鏈技術將三種預先存在的密碼學原語組合成一種新的架構：</p>
-<h3 id="sha-256">SHA-256 雜湊函數 <a class="heading-anchor" href="#sha-256" aria-label="Link to SHA-256 雜湊函數">#</a></h3>
-<p>SHA-256（安全雜湊演算法 256 位元）是由 NIST 標準化的 SHA-2 系列成員。它接受任意長度的輸入，並產生 256 位元的輸出。區塊鏈使用的關鍵特性：</p>
+<h3 id="section-4">編寫智慧合約 <a class="heading-anchor" href="#section-4" aria-label="Link to 編寫智慧合約">#</a></h3>
+<p>要讓加密貨幣運轉起來，你需要編寫定義代幣功能與規則的智慧合約。智慧合約是儲存在區塊鏈上的可程式設計指令碼，在滿足特定條件時自動執行。</p>
+<p>智慧合約非常適合加密貨幣的關鍵能力包括：</p>
 <ul>
-<li><strong>確定性。</strong> 相同的輸入始終產生相同的輸出。</li>
-<li><strong>原像抗性。</strong> 給定雜湊輸出，在計算上不可行重建輸入。</li>
-<li><strong>雪崩效應。</strong> 改變輸入的一個位元會改變大約一半的輸出位元，使暴力搜尋效率低下。</li>
-<li><strong>碰撞抗性。</strong> 在計算上不可行找到產生相同雜湊值的兩個不同輸入。</li>
+<li><strong>自動執行</strong> —— 觸發時自動執行，無需第三方介入。</li>
+<li><strong>不可篡改</strong> —— 一旦部署，程式碼無法更改，從而提供安全性。</li>
+<li><strong>自主性</strong> —— 管理智慧合約無需中心化權威。</li>
+<li><strong>透明性</strong> —— 任何人都可以審查合約邏輯。</li>
+<li><strong>自動化</strong> —— 轉賬等操作可透過合約程式碼自動完成。</li>
+<li><strong>安全性</strong> —— 合約持有的資金在釋放條件滿足之前是安全的。</li>
+<li><strong>效率</strong> —— 智慧合約去除中介，使流程更快、更便宜。</li>
 </ul>
-<p>Bitcoin 將 SHA-256 應用兩次（SHA-256d），以增強對長度延伸攻擊的安全性。Ethereum 使用 Keccak-256，一種 SHA-3 決賽入圍變體。</p>
-<h3 id="merkle">Merkle 樹 <a class="heading-anchor" href="#merkle" aria-label="Link to Merkle 樹">#</a></h3>
-<p>Merkle 樹是雜湊值的二元樹。每個葉節點是一筆交易的雜湊值。每個內部節點是其兩個子節點的雜湊值。根節點——Merkle 根——將區塊中的所有交易彙總為儲存在區塊頭中的單個 32 位元組值。</p>
-<p>實際意義：要驗證特定交易是否包含在區塊中，只需 <code>log₂(n)</code> 個雜湊值，而不是所有 <code>n</code> 筆交易。對於包含 2,000 筆交易的區塊，驗證只需要 11 個雜湊值而非 2,000 個——這是輕量級客戶端簡化支付驗證（SPV）的基礎。</p>
-<h3 id="ecdsa">數位簽章（ECDSA） <a class="heading-anchor" href="#ecdsa" aria-label="Link to 數位簽章（ECDSA）">#</a></h3>
-<p>Bitcoin 和 Ethereum 中的交易授權使用基於 secp256k1 曲線的橢圓曲線數位簽章演算法（ECDSA）。私鑰對交易簽章；任何節點都可以使用對應的公鑰驗證簽章，而無需知道私鑰。這確保只有私鑰持有者才能授權從某個地址進行花費。</p>
-<p>Ethereum 地址是公鑰 Keccak-256 雜湊值的最後 20 個位元組——這種推導方式使地址緊湊且可攜，同時在密碼學上與金鑰對綁定。</p>
-<h2 id="bitcoin">Bitcoin 區塊鏈的工作原理 <a class="heading-anchor" href="#bitcoin" aria-label="Link to Bitcoin 區塊鏈的工作原理">#</a></h2>
-<p>一個 Bitcoin 區塊包含三個邏輯元件：</p>
-<p><strong>區塊頭</strong>——80 位元組，包含：協定版本、前一個區塊頭的雜湊值、交易的 Merkle 根、Unix 時間戳記、當前難度目標和 nonce。礦工不斷迭代 nonce（有時還有時間戳記或 coinbase 交易中的額外 nonce），直到區塊頭的雙重 SHA-256 雜湊值低於難度目標。</p>
-<p><strong>交易列表</strong>——區塊中包含的有序交易集合。coinbase 交易（第一筆）將區塊獎勵和交易費分配給礦工的地址。</p>
-<p><strong>鏈</strong>——區塊頭的鏈結。鏈中累積的 proof-of-work（生產每個區塊所做的所有工作總和）決定哪個分叉是規範鏈。節點始終遵循具有最多累積工作量的鏈。</p>
-<p>Bitcoin 的目標區塊時間為 10 分鐘。難度每 2,016 個區塊（約兩週）調整一次，以在總網路雜湊率變化時維持該目標。</p>
-<h2 id="ethereum">Ethereum 的可程式化層 <a class="heading-anchor" href="#ethereum" aria-label="Link to Ethereum 的可程式化層">#</a></h2>
-<p>Ethereum 將 Bitcoin 的交易模型從「轉移價值」泛化為「執行程式碼」。主要新增內容：</p>
-<p><strong>以太坊虛擬機器（EVM）。</strong> 一個 256 位元字、基於堆疊的虛擬機器，在所有全節點上確定性地執行。每個操作碼都有明確的 gas 成本。計算受區塊 gas 限制約束，防止無限迴圈使網路停止。所有節點在相同狀態下執行相同位元組碼必須產生相同輸出——這種對執行的共識使智慧合約無需信任。</p>
-<p><strong>帳戶。</strong> Ethereum 有兩種帳戶類型：由私鑰控制的外部擁有帳戶（EOA），以及程式碼儲存在鏈上的合約帳戶。傳送到合約地址的交易會觸發合約位元組碼的執行。</p>
-<p><strong>狀態。</strong> Ethereum 的全域狀態是地址到帳戶狀態（nonce、餘額、儲存、程式碼雜湊）的映射。狀態根——所有帳戶狀態的 Merkle Patricia 前綴樹——包含在每個區塊頭中，允許高效證明任何區塊高度下任何帳戶的狀態。</p>
-<p><strong>Gas。</strong> 使用者為每個 EVM 操作支付 gas（以 ETH 計）。Gas 有兩個功能：它補償礦工/驗證者的計算，並限制單筆交易可消耗的資源，防止透過昂貴操作進行阻斷服務攻擊。</p>
-<h2 id="solidity">用 Solidity 編寫智慧合約 <a class="heading-anchor" href="#solidity" aria-label="Link to 用 Solidity 編寫智慧合約">#</a></h2>
-<p>Solidity 是一種靜態型別、面向合約的語言，可編譯為 EVM 位元組碼。一個最小化的代幣合約說明了核心概念：</p>
+<p>Solidity 合約示例程式碼。</p>
 <pre><code class="language-solidity">pragma solidity ^0.8.0;
 
 contract MyToken {
-    string public name;
-    string public symbol;
-    uint8 public decimals;
-    uint256 public totalSupply;
-    mapping(address =&gt; uint256) public balanceOf;
 
-    event Transfer(address indexed from, address indexed to, uint256 value);
+  string public name;
+  string public symbol;
+  uint256 public decimals;
+  uint256 public totalSupply;
 
-    constructor(
-        string memory _name,
-        string memory _symbol,
-        uint8 _decimals,
-        uint256 _totalSupply
-    ) {
-        name = _name;
-        symbol = _symbol;
-        decimals = _decimals;
-        totalSupply = _totalSupply;
-        balanceOf[msg.sender] = _totalSupply;
-    }
+  constructor(string memory _name, string memory _symbol, uint8 _decimals, uint256 _totalSupply) {
+    name = _name;
+    symbol = _symbol;
+    decimals = _decimals;
+    totalSupply = _totalSupply;
+  }
 
-    function transfer(address _to, uint256 _value) external returns (bool) {
-        require(balanceOf[msg.sender] &gt;= _value, &quot;Insufficient balance&quot;);
-        balanceOf[msg.sender] -= _value;
-        balanceOf[_to] += _value;
-        emit Transfer(msg.sender, _to, _value);
-        return true;
-    }
 }
 </code></pre>
-<p>關鍵觀察：<code>mapping(address =&gt; uint256)</code> 是 EVM 儲存佈局，而不是記憶體資料結構——讀寫都需要消耗 gas。<code>require</code> 在失敗時回滾整個交易，退還未使用的 gas。<code>event Transfer</code> 發出一個日誌，鏈下索引器使用該日誌追蹤轉帳，而無需重新讀取完整狀態。<code>constructor</code> 在部署時執行一次；後續呼叫轉到具名函數。</p>
-<p>ERC-20 標準規範了同質化代幣的通用介面——<code>transfer</code>、<code>transferFrom</code>、<code>approve</code>、<code>allowance</code>、<code>balanceOf</code>、<code>totalSupply</code>——允許任何 ERC-20 相容代幣與任何支援 ERC-20 的交易所或錢包協作，無需自訂整合。</p>
-<h2 id="section-9">從帳本到金融基礎設施 <a class="heading-anchor" href="#section-9" aria-label="Link to 從帳本到金融基礎設施">#</a></h2>
-<p>此處描述的區塊鏈原語——雜湊鏈、Merkle 樹、EVM 和 ERC-20——在 2018 年至 2026 年間成為更廣泛金融應用的基礎：</p>
-<p><strong>去中心化金融（DeFi）。</strong> 借貸協定（Compound、Aave）、自動做市商（Uniswap）和收益聚合器都以 EVM 智慧合約形式執行。它們用自我執行的程式碼和鏈上流動性池取代了傳統金融中介的清算、託管和結算功能。</p>
-<p><strong>代幣化資產。</strong> 中央銀行和商業銀行正在 EVM 相容鏈的許可變體上試驗代幣化存款、代幣化債券和代幣化貨幣市場基金。其底層機制——雜湊安全的狀態轉換、原子結算、可程式化轉帳規則——是 2014 年 Ethereum 架構的直接後代。</p>
-<p><strong>央行數位貨幣。</strong> Bank of England 的批發 CBDC 研究、ECB 的數位歐元計畫以及 Project Agorá 都在探索源自或相容於 Bitcoin 和 Ethereum 基礎設計的 DLT 架構。即使許可和治理模型與公共區塊鏈完全不同，共識和雜湊鏈結構仍然具有重要意義。</p>
-<p>從 2008 年 Bitcoin 白皮書到 2026 年代幣化金融的旅程跨越了二十年，但它執行在一個連貫的技術脈絡上。理解 SHA-256 雜湊鏈如何強制執行不可變性、Merkle 樹如何實現高效驗證，以及 EVM 如何以原子方式執行智慧合約，是評估區塊鏈在受監管金融服務中能做什麼和不能做什麼的先決條件。</p>
-<h2 id="section-10">常見問題 <a class="heading-anchor" href="#section-10" aria-label="Link to 常見問題">#</a></h2>
-<p><strong>區塊鏈與分散式資料庫有什麼區別？</strong></p>
-<p>傳統的分散式資料庫為了可用性和效能而在節點間複製資料，但信任是中心化的——管理員可以修改記錄。區塊鏈透過雜湊鏈和共識使篡改在計算上代價高昂：修改任何歷史記錄需要重新完成所有後續的 proof-of-work 或 proof-of-stake，並說服網路接受修改後的分叉。其顯著特性是透過密碼學和激勵設計而非存取控制來強制執行的防篡改性。</p>
-<p><strong>Ethereum 為什麼使用 Keccak-256 而不是 SHA-256？</strong></p>
-<p>Ethereum 採用 Keccak-256（NIST 標準化調整前的 SHA-3 決賽入圍演算法），部分原因是其設計者希望獨立於 Bitcoin 已經依賴的 SHA-2 系列。Keccak 還具有不同的代數特性，使其對某些 EVM 操作具有吸引力。對開發者的實際影響是，Ethereum 地址推導和儲存槽雜湊使用 Keccak-256，而不是 Bitcoin 中的 SHA-256d。</p>
-<p><strong>EVM 中的「gas」防止什麼？</strong></p>
-<p>Gas 防止兩類攻擊。首先，它防止透過計算昂貴的操作進行阻斷服務攻擊：每個操作碼都消耗 gas，因此攻擊者無法強迫網路免費執行無限迴圈。其次，區塊 gas 限制限制了每個區塊的總計算量，確保區塊驗證時間對全節點保持有界且可預測。沒有 gas，單個合約呼叫可能透過執行無限計算使網路停止。</p>
-<p><strong>proof-of-stake 與 proof-of-work 相比如何改變安全模型？</strong></p>
-<p>在 proof-of-work 中，安全性由能源消耗提供：攻擊鏈需要控制網路超過 50% 的雜湊率，這意味著控制超過 50% 的實體硬體和電力。在 proof-of-stake 中（Ethereum 自 2022 年合併後採用），安全性由經濟質押提供：驗證者鎖定 ETH 作為抵押品，如果他們簽署相互衝突的區塊，抵押品將被削減。51% 攻擊需要獲取並冒險使用超過 50% 的所有質押 ETH——這是資本成本而非硬體和能源成本。在理性驗證者更傾向於費用收入而非資本損失的假設下，安全模型不同但在經濟上具有數學上的可比性。</p>
-<h2 id="section-11">參考文獻 <a class="heading-anchor" href="#section-11" aria-label="Link to 參考文獻">#</a></h2>
+<p>這個基礎合約允許建立一個具有名稱、符號、小數位與總供應量等屬性的代幣。</p>
+<p>建構函式在部署合約時初始化這些引數。</p>
+<p>該示例僅設定了一些基本代幣屬性。你可以擴充套件合約以新增更多功能，例如：</p>
 <ul>
-<li>Nakamoto, S., (2008). <a href="https://bitcoin.org/bitcoin.pdf" title="Bitcoin Whitepaper">Bitcoin: A Peer-to-Peer Electronic Cash System ⧉</a>.</li>
-<li>Buterin, V., (2014). <a href="https://ethereum.org/whitepaper" title="Ethereum Whitepaper">Ethereum: A Next-Generation Smart Contract and Decentralised Application Platform ⧉</a>.</li>
-<li>Wood, G., (2014). <a href="https://ethereum.github.io/yellowpaper/paper.pdf" title="Ethereum Yellow Paper">Ethereum: A Secure Decentralised Generalised Transaction Ledger ⧉</a>.</li>
-<li>NIST, (2015). <a href="https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions" title="NIST FIPS 202">SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions ⧉</a>.</li>
+<li>地址之間的代幣轉賬</li>
+<li>餘額管理</li>
+<li>代幣使用授權</li>
+<li>代幣的鑄造與銷燬</li>
+<li>凍結或鎖定代幣轉賬</li>
+<li>實現 ERC-20 等代幣標準</li>
+<li>描述部署合約並與之互動的方式：</li>
 </ul>
-<!-- enrich-start -->
-
-<p class="post-reviewed">最近審閱 <time datetime="2026-05-24">2026-05-24</time>.</p>
-
-<!-- enrich-end -->
+<h3 id="section-5">本地開發與測試 <a class="heading-anchor" href="#section-5" aria-label="Link to 本地開發與測試">#</a></h3>
+<p>在將加密貨幣部署到以太坊主網之前，進行充分的本地測試是明智之舉。這能確保你的加密貨幣按預期執行，不會出現意外故障或漏洞。</p>
+<p>按以下步驟開始：</p>
+<h4>下載 Go-Ethereum（Geth）</h4>
+<p>首先下載 <a href="https://geth.ethereum.org/downloads/">Go-Ethereum</a>（也稱為 Geth），它是用 Go 編寫的以太坊客戶端。Geth 是一種命令列介面（CLI）以太坊客戶端，可在 Windows、Mac 和 Linux 平臺上執行。它是一種多功能工具，可讓你在以太坊網路上挖礦、建立並與智慧合約互動。你可以在此處下載 Geth。</p>
+<h4>安裝以太坊</h4>
+<p>下載 Geth 後，繼續安裝以太坊。詳細的前置條件與全面的構建說明請參閱官方 wiki 中的<a href="https://geth.ethereum.org/docs/getting-started/installing-geth">安裝說明</a>。</p>
+<h4>搭建開發環境</h4>
+<p>為便於開發加密貨幣，你需要一個面向以太坊的開發環境、測試框架以及資源管道。詳細的搭建說明可在以太坊 wiki 中找到。</p>
+<h4>部署到測試網</h4>
+<p>加密貨幣透過本地測試後，可部署到測試網。測試網是一個安全且受控的環境，模擬以太坊主網，可讓你在不承擔真實資金風險的情況下評估加密貨幣在真實環境中的表現。</p>
+<h2 id="section-6">影響 <a class="heading-anchor" href="#section-6" aria-label="Link to 影響">#</a></h2>
+<p>透過從零開始構建以太坊加密貨幣，你將獲得：</p>
+<ul>
+<li>對去中心化應用（dApps）和智慧合約程式設計的深入知識</li>
+<li>親身的 Solidity 程式設計經驗</li>
+<li>對以太坊共識協議的理解</li>
+<li>對 ERC-20 等代幣標準的熟悉</li>
+</ul>
+<p>這些學習將賦能你利用區塊鏈技術創造創新解決方案。</p>
+<h2 id="section-7">激勵 <a class="heading-anchor" href="#section-7" aria-label="Link to 激勵">#</a></h2>
+<p>完成端到端的代幣構建可讓你親身掌握：</p>
+<ul>
+<li>區塊鏈架構</li>
+<li>加密貨幣機制</li>
+<li>智慧合約開發</li>
+<li>以太坊的能力與侷限</li>
+</ul>
+<p>你將獲得寶貴技能，助力區塊鏈程式設計職業發展。</p>
+<h2 id="section-8">結論 <a class="heading-anchor" href="#section-8" aria-label="Link to 結論">#</a></h2>
+<p>在區塊鏈技術領域，理解的最佳途徑是動手實踐。在以太坊平臺上構建加密貨幣提供了一個獨特機會，親身體驗該技術的能力與限制。本指南為你裝備了開啟這一精彩旅程所需的知識與技能，激發在不斷演進的區塊鏈與加密貨幣開發世界中的創新與發現。</p>
 <aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/zh-hant/guanyu-tw/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行技術專家，撰寫關於應用人工智慧、ISO 20022 遷移、面向金融服務的後量子密碼學，以及批發支付結構性轉型的內容。</span><span class="author-credentials">20 多年經驗，曾任職於滙豐商業及投資銀行、PayPal、巴克萊、Shazam、AKQA、維珍集團。 <a href="/zh-hant/guanyu-tw/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最近審閱 <time datetime="2026-05-27">2026-05-27</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">相關閱讀</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2018-01-24-erc-20-daibi-biaozhun-tw" class="related-media" aria-label="ERC-20 代幣標準" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="erc-20"><a href="https://sebastienrousseau.com/zh-hant/2018-01-24-erc-20-daibi-biaozhun-tw">ERC-20 代幣標準</a> <a class="heading-anchor" href="#erc-20" aria-label="Link to ERC-20 代幣標準">#</a></h3><p><time datetime="2018-01-24">2018-01-24</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2018-02-04-xin-jiamihuobi-yu-gengkuai-zhifu-fangan-tw" class="related-media" aria-label="Unveiling a New Cryptocurrency and Faster Payment Solution" tabindex="-1"><img alt="A very tall building with a lot of holes in it" src="https://cloudcdn.pro/api/transform?url=/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="unveiling-a-new-cryptocurrency-and-faster-payment-solution"><a href="https://sebastienrousseau.com/zh-hant/2018-02-04-xin-jiamihuobi-yu-gengkuai-zhifu-fangan-tw">Unveiling a New Cryptocurrency and Faster Payment Solution</a> <a class="heading-anchor" href="#unveiling-a-new-cryptocurrency-and-faster-payment-solution" aria-label="Link to Unveiling a New Cryptocurrency and Faster Payment Solution">#</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2018-02-15-express-transaction-credits-pingtai-de-jianli-tw" class="related-media" aria-label="The Making of the Express Transaction Credits Platform" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="the-making-of-the-express-transaction-credits-platform"><a href="https://sebastienrousseau.com/zh-hant/2018-02-15-express-transaction-credits-pingtai-de-jianli-tw">The Making of the Express Transaction Credits Platform</a> <a class="heading-anchor" href="#the-making-of-the-express-transaction-credits-platform" aria-label="Link to The Making of the Express Transaction Credits Platform">#</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2018-02-15-express-transaction-credits-pingtai-de-jianli-tw/index.html" class="related-media" aria-label="Express Transaction Credits 平臺的誕生" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="express-transaction-credits"><a href="https://sebastienrousseau.com/zh-hant/2018-02-15-express-transaction-credits-pingtai-de-jianli-tw/index.html">Express Transaction Credits 平臺的誕生</a> <a class="heading-anchor" href="#express-transaction-credits" aria-label="Link to Express Transaction Credits 平臺的誕生">#</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2018-02-04-xin-jiamihuobi-yu-gengkuai-zhifu-fangan-tw/index.html" class="related-media" aria-label="推出新的加密貨幣與面向未來的更快支付方案" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/api/transform?url=/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-10"><a href="https://sebastienrousseau.com/zh-hant/2018-02-04-xin-jiamihuobi-yu-gengkuai-zhifu-fangan-tw/index.html">推出新的加密貨幣與面向未來的更快支付方案</a> <a class="heading-anchor" href="#section-10" aria-label="Link to 推出新的加密貨幣與面向未來的更快支付方案">#</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2018-01-24-erc-20-daibi-biaozhun-tw/index.html" class="related-media" aria-label="ERC-20 代幣標準" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/api/transform?url=/stocks/images/m-ZzOa5G8hSPI.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="erc-20"><a href="https://sebastienrousseau.com/zh-hant/2018-01-24-erc-20-daibi-biaozhun-tw/index.html">ERC-20 代幣標準</a> <a class="heading-anchor" href="#erc-20" aria-label="Link to ERC-20 代幣標準">#</a></h3><p><time datetime="2018-01-24">2018-01-24</time></p></footer></article>
 </div>
-</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Sources & references</h2><ol class="article-sources-list"><li><a href="https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions" rel="external noopener nofollow"><span class="source-host">www.nist.gov</span><span class="source-path">/publications/sha-3-standard-permutation-based-hash-and-extendable-output-fun…</span></a></li></ol></aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/zh-hant/2018-01-02-quqiulian-2018-zui-zhongyao-de-jishu-tw/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">Blockchain explained, the technology that matters the most</span></a><a class="post-pagination-next" href="/zh-hant/2018-01-24-erc-20-daibi-biaozhun-tw/"><span class="post-pagination-label">Next</span><span class="post-pagination-title">ERC-20: The Ethereum Token Interface That Changed the World</span></a></nav></div>
+</aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/zh-hant/2018-01-02-quqiulian-2018-zui-zhongyao-de-jishu-tw/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">Blockchain explained, the technology that matters the most</span></a><a class="post-pagination-next" href="/zh-hant/2018-01-24-erc-20-daibi-biaozhun-tw/"><span class="post-pagination-label">Next</span><span class="post-pagination-title">ERC-20: The Ethereum Token Interface That Changed the World</span></a></nav></div>
     </main>
 
 <!-- gen-layouts:footer-start -->
@@ -371,7 +340,7 @@ contract MyToken {
     <!-- Schema.org structured data -->
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"zh-hant"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"zh-hant"}]}</script>
 
-        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":484,"about":{"@type":"Thing","name":"Ethereum","sameAs":["https://en.wikipedia.org/wiki/Ethereum","https://www.wikidata.org/wiki/Q21825854","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]},"mentions":[{"@type":"Thing","name":"ERC-20","sameAs":["https://en.wikipedia.org/wiki/Ethereum#Tokens","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]}],"headline":"Understanding the Technology behind Blockchain","description":"區塊鏈技術深度解析：密碼雜湊鏈、Merkle樹、分散式共識機制，以及Ethereum的可程式化層如何將支付帳本轉變為智能合約與代幣化資產平台。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp","width":"100vw","height":"100vh","caption":"深色背景上由光線軌跡連接的抽象數位帳本區塊"},"url":"https://sebastienrousseau.com/zh-hant/2018-01-09-lijie-quqiulian-beihou-de-jishu-tw/","datePublished":"2018-01-09T09:09:00+00:00","dateModified":"2026-05-24","inLanguage":"zh-hant","keywords":"區塊鏈技術, 密碼雜湊, Merkle樹, 分散式共識, proof of work, Ethereum, 智能合約, EVM, Solidity, ERC-20, 分散式帳本, 去中心化金融","articleSection":"Blockchain","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hant/2018-01-09-lijie-quqiulian-beihou-de-jishu-tw/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"zh-hant"},"citation":[{"@type":"CreativeWork","url":"https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/zh-hant/"},{"@type":"ListItem","position":3,"name":"Understanding the Technology behind Blockchain","item":"https://sebastienrousseau.com/zh-hant/2018-01-09-lijie-quqiulian-beihou-de-jishu-tw/"}]}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":159,"about":{"@type":"Thing","name":"ERC-20","sameAs":["https://en.wikipedia.org/wiki/Ethereum#Tokens","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]},"headline":"理解區塊鏈背後的技術","description":"區塊鏈技術已經開啟了一個去中心化的新時代。本文以以太坊為平臺，帶你逐步構建自己的加密貨幣。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp","width":"100vw","height":"100vh","caption":"一座具有許多孔洞的高塔建築"},"url":"https://sebastienrousseau.com/zh-hant/2018-01-09-lijie-quqiulian-beihou-de-jishu-tw/","datePublished":"2018-01-09T09:09:00+00:00","dateModified":"2026-05-24","inLanguage":"zh-hant","keywords":"區塊鏈, 以太坊, 智慧合約, Solidity, 加密貨幣, 代幣化, ERC-20, dApps, Geth, 測試網","articleSection":"Blockchain","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hant/2018-01-09-lijie-quqiulian-beihou-de-jishu-tw/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"zh-hant"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/zh-hant/"},{"@type":"ListItem","position":3,"name":"理解區塊鏈背後的技術","item":"https://sebastienrousseau.com/zh-hant/2018-01-09-lijie-quqiulian-beihou-de-jishu-tw/"}]}]}</script>
 <script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
   
 <!-- SSG Search Widget -->
@@ -397,5 +366,5 @@ contract MyToken {
 </div>
 <script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
 </div>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"理解區塊鏈背後的技術","url":"https://sebastienrousseau.com/zh-hant/2018-01-09-lijie-quqiulian-beihou-de-jishu-tw/","inLanguage":"zh-Hant","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"區塊鏈技術, 密碼雜湊, Merkle樹, 分散式共識, proof of work, Ethereum, 智能合約, EVM, Solidity, ERC-20, 分散式帳本, 去中心化金融","programmingLanguage":"Solidity","dependencies":["Ethereum","ERC-20"]}</script></body>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"理解區塊鏈背後的技術","url":"https://sebastienrousseau.com/zh-hant/2018-01-09-lijie-quqiulian-beihou-de-jishu-tw/","inLanguage":"zh-Hant","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"區塊鏈, 以太坊, 智慧合約, Solidity, 加密貨幣, 代幣化, ERC-20, dApps, Geth, 測試網","programmingLanguage":"Solidity","dependencies":["ERC-20"]}</script></body>
 </html>

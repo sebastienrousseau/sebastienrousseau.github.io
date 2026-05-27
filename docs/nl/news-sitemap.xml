@@ -2,6 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl-NL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-27T06:06:06+00:00</news:publication_date>
+    <news:title>AI als besturingssysteem van betalingen: fraude, routering, veerkracht en compliance in 2026</news:title>
+    <news:keywords>AI-besturingssysteem betalingen 2026, betalingsfraude, routering, realtime fraudepreventie, ISO 20022 AI, veerkracht betalingen, transactieanalyse, liquiditeitsprognose, FedNow, RTP, agentic commerce</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/nl/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl-NL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>Magnifica Humanitas: een industrielezing van de AI-encycliek</news:title>
+    <news:keywords>Magnifica Humanitas, Pope Leo XIV, AI-encycliek, ethiek van kunstmatige intelligentie, ethiek van quantum computing, Rerum Novarum, Toren van Babel, technologie nooit neutraal, transhumanisme, posthumanisme, menselijke waardigheid, technologisch paradigma, trein auto kernenergie internet, morele paniek technologiegeschiedenis, Lucy kennisoverdracht, AI hoop, EU AI Act, DORA, Anthropic, Sebastien Rousseau</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/nl/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl-NL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>Stablecoins vs getokeniseerde deposito&apos;s in 2026: wat banken moeten verdedigen</news:title>
+    <news:keywords>stablecoins 2026, getokeniseerde deposito&apos;s, bankdeposito&apos;s, GENIUS Act, JPM Coin, deposit tokens, stablecoin-reserves, bankfinanciering, digitaal geld</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/nl/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl-NL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-25T06:06:06+00:00</news:publication_date>
+    <news:title>Programmeerbare liquiditeit 2026: AI, getokeniseerde deposito&apos;s en real-time treasury</news:title>
+    <news:keywords>programmeerbare liquiditeit 2026, treasury-orkestratie, AI-treasury, getokeniseerde deposito&apos;s, real-time liquiditeit, stablecoins treasury, multi-rail betalingen, virtuele rekeningen, transaction banking, onderpandsmobiliteit</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/nl/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</loc>
   <news:news>
     <news:publication>
@@ -326,18 +374,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/nl/2024-02-12-akande-spraakassistent-revolutie-persoonlijke-en-executive-assistentie/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>nl-NL</news:language>
-    </news:publication>
-    <news:publication_date>2024-02-12T06:06:06+00:00</news:publication_date>
-    <news:title>Àkàndé: GPT-Powered Voice Assistant for Executives</news:title>
-    <news:keywords>Àkàndé, OpenAI GPT-4, Whisper STT, SQLite-caching, fpdf2, Python-spraakassistent, chat completions API, PDF-samenvatting genereren, SHA-256-cache, tekst-naar-spraak, AI-executive-assistent, open-source</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/nl/2024-02-08-reclame-revolutioneren-hoe-ai-de-toekomst-vormgeeft/</loc>
   <news:news>
     <news:publication>
@@ -357,32 +393,8 @@
       <news:language>nl-NL</news:language>
     </news:publication>
     <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
-    <news:title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</news:title>
-    <news:keywords>Azure Cognitive Services, spraak-naar-tekst, neuraal akoestisch model, Azure Text Analytics, natuurlijke taalverwerking, sentimentanalyse, CherryPy, batch-transcriptie-API, meertalige ASR, Azure Translator, audiotranscriptie, Python-audioverwerking</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/nl/2024-01-29-door-ai-aangestuurde-audio-inzichten-analyse-vertalingen/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>nl-NL</news:language>
-    </news:publication>
-    <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
     <news:title>Door AI aangestuurde audio: inzichten, analyse en vertalingen</news:title>
     <news:keywords>AI, audio, spraakherkenning, samenvatting, vertaling, machine learning</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/nl/2024-01-23-vooruitgang-in-ai-prompt-engineering/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>nl-NL</news:language>
-    </news:publication>
-    <news:publication_date>2024-01-23T06:06:06+00:00</news:publication_date>
-    <news:title>AI Prompt Engineering 2024: Techniques That Work</news:title>
-    <news:keywords>chain-of-thought prompting, few-shot learning, zero-shot prompting, in-context learning, prompt injection, ReAct, self-consistency, retrieval-augmented generation, BloombergGPT, systeemprompt, promptbeveiliging, LLM-agent</news:keywords>
   </news:news>
 </url>
 <url>
@@ -513,18 +525,6 @@
       <news:language>nl-NL</news:language>
     </news:publication>
     <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
-    <news:title>Generative AI in 2023: How It Works, Where It Lands</news:title>
-    <news:keywords>generatieve AI, groot taalmodel, transformer architecture, GPT-4, AI in financiële diensten, hallucinatie, retrieval-augmented generation, AI-governance, foundation model, fine-tuning</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/nl/2023-11-12-generatieve-ai-verkennen/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>nl-NL</news:language>
-    </news:publication>
-    <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
     <news:title>Generatieve AI verkennen</news:title>
     <news:keywords>Generatieve AI, LLM, GAN, diffusiemodellen, GPT, machine learning, AI</news:keywords>
   </news:news>
@@ -539,18 +539,6 @@
     <news:publication_date>2023-11-05T06:06:06+00:00</news:publication_date>
     <news:title>Wiskundige en cryptografische constanten voor Rust-beveiliging</news:title>
     <news:keywords>Rust, cryptografie, wiskundige constanten, beveiliging, open source</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/nl/2023-10-26-libmake-codegenerator-voor-hoogwaardige-rust-bibliotheken/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>nl-NL</news:language>
-    </news:publication>
-    <news:publication_date>2023-10-26T06:06:06+00:00</news:publication_date>
-    <news:title>LibMake: Rust Library Scaffold Generator</news:title>
-    <news:keywords>LibMake, Rust code generator, cargo scaffold, Rust library template, Tera templating, GitHub Actions Rust, cargo-audit, Rust API Guidelines, boilerplate generator, Rust CI workflow</news:keywords>
   </news:news>
 </url>
 <url>
@@ -597,18 +585,6 @@
       <news:language>nl-NL</news:language>
     </news:publication>
     <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
-    <news:title>Automating ISO 20022 Payment Files Creation with pain001</news:title>
-    <news:keywords>pain001, ISO 20022, pain.001.001.09, CustomerCreditTransferInitiation, SEPA Credit Transfer, CBPR+, payment automation, XML generation, XSD validation, GrpHdr, PmtInf, CdtTrfTxInf, CtrlSum, SWIFT</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/nl/2023-09-29-iso-20022-conforme-betaalbestanden-automatiseren-met-pain001/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>nl-NL</news:language>
-    </news:publication>
-    <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
     <news:title>ISO 20022-conforme betaalbestanden automatiseren met pain001</news:title>
     <news:keywords>ISO 20022, pain.001, betalingen, SWIFT, SEPA, Python, open source, automatisering</news:keywords>
   </news:news>
@@ -626,18 +602,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/nl/2018-02-15-het-ontstaan-van-het-express-transaction-credits-platform/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>nl-NL</news:language>
-    </news:publication>
-    <news:publication_date>2018-02-15T06:06:06+00:00</news:publication_date>
-    <news:title>The making of the Express Transaction Credits Platform</news:title>
-    <news:keywords>EXTC-platform, ERC-223, Ethereum smart contracts, tokenarchitectuur, multi-handtekening, tijdvergrendelde overdracht, blockchain-betalingen, door onderpand gedekte leningen, gedecentraliseerde financiën, 2018 crypto</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/nl/2018-02-04-nieuwe-cryptovaluta-en-snellere-betaaloplossing-voor-de-toekomst/</loc>
   <news:news>
     <news:publication>
@@ -647,18 +611,6 @@
     <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
     <news:title>Een nieuwe cryptovaluta onthullen: snellere betaaloplossing voor de toekomst</news:title>
     <news:keywords>Cryptovaluta, betalingen, fintech, blockchain, real-time, settlement, payments</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/nl/2018-02-04-nieuwe-cryptovaluta-en-snellere-betaaloplossing-voor-de-toekomst/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>nl-NL</news:language>
-    </news:publication>
-    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
-    <news:title>Een nieuwe Cryptocurrency en Snellere Betalingsoplossing onthuld</news:title>
-    <news:keywords>EXTC, ERC-223, Ethereum slimme contracten, snellere betalingen, cryptocurrency, blockchain-betalingen, betalingstoken, gedecentraliseerde financiering, ERC-20, grensoverschrijdende betalingen</news:keywords>
   </news:news>
 </url>
 <url>
@@ -683,18 +635,6 @@
     <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
     <news:title>De technologie achter blockchain begrijpen</news:title>
     <news:keywords>Blockchain, cryptografie, consensus, hashing, proof-of-work, proof-of-stake, gedistribueerd grootboek</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/nl/2018-01-09-de-technologie-achter-blockchain-begrijpen/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>nl-NL</news:language>
-    </news:publication>
-    <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
-    <news:title>Understanding the Technology behind Blockchain</news:title>
-    <news:keywords>blockchaintechnologie, cryptografische hash, Merkle-boom, gedistribueerde consensus, proof of work, Ethereum, smart contracts, EVM, Solidity, ERC-20, gedistribueerd ledger, gedecentraliseerde financiën</news:keywords>
   </news:news>
 </url>
 <url>

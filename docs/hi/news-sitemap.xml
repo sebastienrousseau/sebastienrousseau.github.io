@@ -2,6 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/hi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>hi-IN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-27T06:06:06+00:00</news:publication_date>
+    <news:title>भुगतान का AI ऑपरेटिंग सिस्टम: 2026 में धोखाधड़ी, रूटिंग, लचीलापन और अनुपालन</news:title>
+    <news:keywords>AI भुगतान 2026, भुगतान धोखाधड़ी, भुगतान रूटिंग, रीयल-टाइम धोखाधड़ी रोकथाम, ISO 20022 AI, भुगतान लचीलापन, लेनदेन विश्लेषण, नकदी प्रवाह पूर्वानुमान</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/hi/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>hi-IN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>Magnifica Humanitas: AI पर पहले पोप विश्वपत्र का उद्योग-पठन</news:title>
+    <news:keywords>Magnifica Humanitas, Pope Leo XIV, AI विश्वपत्र, कृत्रिम बुद्धिमत्ता नैतिकता, क्वांटम कंप्यूटिंग नैतिकता, Rerum Novarum, बाबेल की मीनार, तकनीक कभी तटस्थ नहीं, ट्रांसह्यूमनिज़्म, पोस्टह्यूमनिज़्म, मानव गरिमा, तकनीकी प्रतिमान, ट्रेन ऑटोमोबाइल परमाणु इंटरनेट, तकनीक के इतिहास में नैतिक भय, Lucy ज्ञान हस्तांतरण, AI आशा, EU AI Act, DORA, Anthropic, Sebastien Rousseau</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/hi/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>hi-IN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>स्टेबलकॉइन बनाम टोकनीकृत जमा 2026: बैंकों को वास्तव में किसकी रक्षा करनी है</news:title>
+    <news:keywords>स्टेबलकॉइन 2026, टोकनीकृत जमा, बैंक जमा, GENIUS Act, JPM Coin, डिपॉज़िट टोकन, स्टेबलकॉइन रिज़र्व, बैंक फंडिंग, डिजिटल मुद्रा</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/hi/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>hi-IN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-25T06:06:06+00:00</news:publication_date>
+    <news:title>प्रोग्रामेबल तरलता 2026: AI, टोकनीकृत जमा और रीयल-टाइम कोषागार</news:title>
+    <news:keywords>प्रोग्रामेबल तरलता 2026, कोषागार ऑर्केस्ट्रेशन, AI कोषागार, टोकनीकृत जमा, रीयल-टाइम तरलता, स्टेबलकॉइन कोषागार, मल्टी-रेल भुगतान, वर्चुअल खाते, ट्रांज़ैक्शन बैंकिंग, संपार्श्विक गतिशीलता</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/hi/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</loc>
   <news:news>
     <news:publication>
@@ -321,18 +369,6 @@
       <news:language>hi-IN</news:language>
     </news:publication>
     <news:publication_date>2024-02-12T06:06:06+00:00</news:publication_date>
-    <news:title>Àkàndé: GPT-Powered Voice Assistant for Executives</news:title>
-    <news:keywords>Àkàndé, OpenAI GPT-4, Whisper STT, SQLite कैशिंग, fpdf2, Python वॉयस असिस्टेंट, चैट कंप्लीशन API, PDF सारांश निर्माण, SHA-256 कैश, टेक्स्ट-टू-स्पीच, एग्जीक्यूटिव असिस्टेंट AI, ओपन-सोर्स</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/hi/2024-02-12-akande-voice-assistant-vyaktigat-aur-karyakari-sahaayata/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>hi-IN</news:language>
-    </news:publication>
-    <news:publication_date>2024-02-12T06:06:06+00:00</news:publication_date>
     <news:title>Akande वॉइस-सहायक: व्यक्तिगत और कार्यकारी-सहायता में क्रांति</news:title>
     <news:keywords>Akande, वॉइस सहायक, Rust, AI, गोपनीयता, executive, सहायक, Whisper, TTS, LLM</news:keywords>
   </news:news>
@@ -359,30 +395,6 @@
     <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
     <news:title>AI-संचालित ऑडियो-अंतर्दृष्टि, विश्लेषण और अनुवाद</news:title>
     <news:keywords>AI, ऑडियो, Whisper, अनुवाद, भाषण-पहचान, NLP, speaker diarization, multilingual, ASR, transcription</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/hi/2024-01-29-ai-aadharit-audio-vishleshan-anuvaad-aur-drishtikon/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>hi-IN</news:language>
-    </news:publication>
-    <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
-    <news:title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</news:title>
-    <news:keywords>Azure Cognitive Services, speech-to-text, न्यूरल अकॉस्टिक मॉडल, Azure Text Analytics, प्राकृतिक भाषा प्रसंस्करण, सेंटीमेंट विश्लेषण, CherryPy, batch transcription API, बहुभाषी ASR, Azure Translator, ऑडियो ट्रांसक्रिप्शन, Python ऑडियो प्रोसेसिंग</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/hi/2024-01-23-ai-prompt-engineering-mein-pragati/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>hi-IN</news:language>
-    </news:publication>
-    <news:publication_date>2024-01-23T06:06:06+00:00</news:publication_date>
-    <news:title>AI Prompt Engineering 2024: Techniques That Work</news:title>
-    <news:keywords>chain-of-thought prompting, few-shot learning, zero-shot prompting, in-context learning, prompt injection, ReAct, self-consistency, retrieval-augmented generation, BloombergGPT, system prompt, prompt security, LLM agent</news:keywords>
   </news:news>
 </url>
 <url>
@@ -513,18 +525,6 @@
       <news:language>hi-IN</news:language>
     </news:publication>
     <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
-    <news:title>Generative AI in 2023: How It Works, Where It Lands</news:title>
-    <news:keywords>generative AI, large language model, transformer architecture, GPT-4, वित्तीय सेवाएं AI, hallucination, retrieval-augmented generation, AI governance, foundation model, fine-tuning</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/hi/2023-11-12-generative-ai-ki-padtaal/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>hi-IN</news:language>
-    </news:publication>
-    <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
     <news:title>जनरेटिव AI की पड़ताल</news:title>
     <news:keywords>जनरेटिव AI, LLM, GPT, Stable Diffusion, MidJourney, उद्यम AI, AI नैतिकता, फाउंडेशन मॉडल, ट्रांसफ़ॉर्मर, NLP</news:keywords>
   </news:news>
@@ -539,18 +539,6 @@
     <news:publication_date>2023-11-05T06:06:06+00:00</news:publication_date>
     <news:title>Rust सुरक्षा हेतु गणितीय और क्रिप्टोग्राफिक स्थिरांक</news:title>
     <news:keywords>Rust, स्थिरांक, क्रिप्टोग्राफी, गणित, सुरक्षा, टाइप-सुरक्षा, Cargo, NIST, π, e</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/hi/2023-10-26-libmake-rust-libraries-ke-liye-code-generator/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>hi-IN</news:language>
-    </news:publication>
-    <news:publication_date>2023-10-26T06:06:06+00:00</news:publication_date>
-    <news:title>LibMake: Rust Library Scaffold Generator</news:title>
-    <news:keywords>LibMake, Rust code generator, cargo scaffold, Rust library template, Tera templating, GitHub Actions Rust, cargo-audit, Rust API Guidelines, boilerplate generator, Rust CI workflow</news:keywords>
   </news:news>
 </url>
 <url>
@@ -597,18 +585,6 @@
       <news:language>hi-IN</news:language>
     </news:publication>
     <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
-    <news:title>Automating ISO 20022 Payment Files Creation with pain001</news:title>
-    <news:keywords>pain001, ISO 20022, pain.001.001.09, CustomerCreditTransferInitiation, SEPA Credit Transfer, CBPR+, payment automation, XML generation, XSD validation, GrpHdr, PmtInf, CdtTrfTxInf, CtrlSum, SWIFT</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/hi/2023-09-29-pain001-ke-saath-iso-20022-bhugtaan-file-svachalan/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>hi-IN</news:language>
-    </news:publication>
-    <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
     <news:title>pain001 के साथ ISO 20022-अनुपालक भुगतान-फ़ाइलों का स्वचालन</news:title>
     <news:keywords>ISO 20022, pain.001, Python, भुगतान, स्वचालन, SEPA, SWIFT, XML, बैंकिंग, ट्रेज़री</news:keywords>
   </news:news>
@@ -626,18 +602,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/hi/2018-02-15-express-transaction-credits-platform-ka-nirmaan/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>hi-IN</news:language>
-    </news:publication>
-    <news:publication_date>2018-02-15T06:06:06+00:00</news:publication_date>
-    <news:title>The making of the Express Transaction Credits Platform</news:title>
-    <news:keywords>EXTC platform, ERC-223, Ethereum smart contracts, टोकन आर्किटेक्चर, multi-signature, time-locked transfer, ब्लॉकचेन पेमेंट, collateral-backed loans, विकेंद्रीकृत वित्त, 2018 crypto</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/hi/2018-02-04-nayi-cryptocurrency-aur-teevra-bhugtaan-samaadhaan/</loc>
   <news:news>
     <news:publication>
@@ -647,18 +611,6 @@
     <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
     <news:title>एक नई क्रिप्टोकरेंसी का अनावरण और भविष्य के तीव्र-भुगतान-समाधान की प्रस्तुति</news:title>
     <news:keywords>क्रिप्टोकरेंसी, तीव्र भुगतान, सीमा-पार, blockchain, टोकन, ICO, वित्तीय समावेशन, ETC, P2P, payment rails</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/hi/2018-02-04-nayi-cryptocurrency-aur-teevra-bhugtaan-samaadhaan/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>hi-IN</news:language>
-    </news:publication>
-    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
-    <news:title>Unveiling a new Cryptocurrency and Faster Payment Solution</news:title>
-    <news:keywords>EXTC, ERC-223, Ethereum स्मार्ट कॉन्ट्रैक्ट, तेज़ भुगतान, क्रिप्टोकरेंसी, ब्लॉकचेन भुगतान, पेमेंट टोकन, विकेन्द्रीकृत वित्त, ERC-20, सीमा-पार भुगतान</news:keywords>
   </news:news>
 </url>
 <url>
@@ -683,18 +635,6 @@
     <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
     <news:title>Blockchain के पीछे की प्रौद्योगिकी को समझना</news:title>
     <news:keywords>blockchain, वितरित बही, क्रिप्टोग्राफी, सहमति, proof-of-work, smart contract, हैश, मर्कल वृक्ष, विकेंद्रीकरण, P2P</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/hi/2018-01-09-blockchain-ke-peechhe-ki-takneek-samajhna/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>hi-IN</news:language>
-    </news:publication>
-    <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
-    <news:title>Understanding the Technology behind Blockchain</news:title>
-    <news:keywords>blockchain तकनीक, क्रिप्टोग्राफिक हैश, Merkle tree, वितरित सहमति, proof of work, Ethereum, smart contracts, EVM, Solidity, ERC-20, distributed ledger, विकेंद्रीकृत वित्त</news:keywords>
   </news:news>
 </url>
 <url>

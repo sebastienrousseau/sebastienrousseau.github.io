@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta itemprop="datePublished" content="Mon, 29 Jan 2024 05:06:06 +0000" id="date" />
     <meta itemprop="dateModified" content="Mon, 29 Jan 2024 05:06:06 +0000" id="last-modified" />
-    <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline — Sebastien Rousseau</title>
+    <title>AI-संचालित ऑडियो-अंतर्दृष्टि, विश्लेषण और अनुवाद — Sebastien Rousseau</title>
 
     <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
-<meta name="description" content="Audio Analyser, Azure Cognitive Services के speech-to-text न्यूरल मॉडल, Text Analytics NLP और CherryPy का उपयोग करके ऑडियो रिकॉर्डिंग को खोज योग्य ट्रांसक्रिप्ट, सेंटीमेंट स्कोर, कीवर्ड निष्कर्षण और बहुभाषी अनुवाद में बदलता है।">
-<meta name="keywords" content="Azure Cognitive Services, speech-to-text, न्यूरल अकॉस्टिक मॉडल, Azure Text Analytics, प्राकृतिक भाषा प्रसंस्करण, सेंटीमेंट विश्लेषण, CherryPy, batch transcription API, बहुभाषी ASR, Azure Translator, ऑडियो ट्रांसक्रिप्शन, Python ऑडियो प्रोसेसिंग">
+<meta name="description" content="AI-संचालित ऑडियो-विश्लेषण, बोलने वालों की पहचान, भाषाई पहचान और अनुवाद का परिचय।">
+<meta name="keywords" content="AI, ऑडियो, Whisper, अनुवाद, भाषण-पहचान, NLP, speaker diarization, multilingual, ASR, transcription">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
@@ -40,7 +40,7 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-1BEfLeqevXq6RlF0qjghcLWgPkp0XLHdEmmQ6oZaUa4=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-J9xGfUmIIWS4UGH5F/7jdTBqFNKh5QSJQUlV4RMxvKc=' 'sha256-V+4gQokLuSBsAEd6+rjrLAuEInhUBgDlkXBQzYxtrJ8=' 'sha256-zAu9K3yKcPEDf6mM/JEg0mCfQ2I7OfM45hGNdt8m/Mk=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-HoiUdV05OWBb+O2X6RQmqTbAwepbrsDWN9czCZ4sBO0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-V+4gQokLuSBsAEd6+rjrLAuEInhUBgDlkXBQzYxtrJ8=' 'sha256-ZHJjfWbykPRdWQtRxCU4qZZ0GJx52g7kGeHIJbCvjmk=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
@@ -67,7 +67,7 @@
          Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
          observed (real-network) LCP is 165 ms. This hint pulls the
          synthetic LCP in line with the observed value. -->
-    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <link rel="preload" as="image" href="https://cloudcdn.pro/clients/common/images/elements/divider.svg" fetchpriority="high">
     <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
     <meta name="color-scheme" content="light dark" />
@@ -77,8 +77,8 @@
     <link rel="alternate" type="application/atom+xml" title="Atom फ़ीड" href="/hi/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="stylesheet" href="/highlight.a92b9694.css">
-<meta property="og:title" content="Audio Analyser: Azure Speech, NLP, and Translation Pipeline — Sebastien Rousseau">
-<meta property="og:description" content="Audio Analyser, Azure Cognitive Services के speech-to-text न्यूरल मॉडल, Text Analytics NLP और CherryPy का उपयोग करके ऑडियो रिकॉर्डिंग को खोज योग्य ट्रांसक्रिप्ट, सेंटीमेंट स्कोर, कीवर्ड निष्कर्षण और बहुभाषी अनुवाद में बदलता है।">
+<meta property="og:title" content="AI-संचालित ऑडियो-अंतर्दृष्टि, विश्लेषण और अनुवाद — Sebastien Rousseau">
+<meta property="og:description" content="AI-संचालित ऑडियो-विश्लेषण, बोलने वालों की पहचान, भाषाई पहचान और अनुवाद का परिचय।">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sebastienrousseau.com/hi/2024-01-29-ai-aadharit-audio-vishleshan-anuvaad-aur-drishtikon/">
 <meta property="og:image" content="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp">
@@ -86,8 +86,8 @@
 <meta property="og:image:height" content="100vh">
 <meta property="og:locale" content="hi_IN">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Audio Analyser: Azure Speech, NLP, and Translation Pipeline — Sebastien Rousseau">
-<meta name="twitter:description" content="Audio Analyser, Azure Cognitive Services के speech-to-text न्यूरल मॉडल, Text Analytics NLP और CherryPy का उपयोग करके ऑडियो रिकॉर्डिंग को खोज योग्य ट्रांसक्रिप्ट, सेंटीमेंट स्कोर, कीवर्ड निष्कर्षण और बहुभाषी अनुवाद में बदलता है।">
+<meta name="twitter:title" content="AI-संचालित ऑडियो-अंतर्दृष्टि, विश्लेषण और अनुवाद — Sebastien Rousseau">
+<meta name="twitter:description" content="AI-संचालित ऑडियो-विश्लेषण, बोलने वालों की पहचान, भाषाई पहचान और अनुवाद का परिचय।">
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp">
 <link rel="canonical" href="https://sebastienrousseau.com/hi/2024-01-29-ai-aadharit-audio-vishleshan-anuvaad-aur-drishtikon/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
@@ -167,176 +167,110 @@
     </header>
 
         <section class="ap-hero">
-      <h1>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</h1>
-      <p class="sub">Azure-समर्थित स्पीच एनालिटिक्स टूल की आर्किटेक्चर और पाइपलाइन</p>
-    <nav class="article-tags" aria-label="विषय"><a href="/tags/index.html#h3-azure-cognitive-services" class="article-tag" rel="tag">Azure Cognitive Services</a><a href="/tags/index.html#h3-speech-to-text" class="article-tag" rel="tag">speech-to-text</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">न्यूरल अकॉस्टिक मॉडल</a><a href="/tags/index.html#h3-azure-text-analytics" class="article-tag" rel="tag">Azure Text Analytics</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">प्राकृतिक भाषा प्रसंस्करण</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">सेंटीमेंट विश्लेषण</a><a href="/tags/index.html#h3-cherrypy" class="article-tag" rel="tag">CherryPy</a><a href="/tags/index.html#h3-batch-transcription-api" class="article-tag" rel="tag">batch transcription API</a><a href="/tags/index.html#h3-asr" class="article-tag" rel="tag">बहुभाषी ASR</a><a href="/tags/index.html#h3-azure-translator" class="article-tag" rel="tag">Azure Translator</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">ऑडियो ट्रांसक्रिप्शन</a><a href="/tags/index.html#h3-python" class="article-tag" rel="tag">Python ऑडियो प्रोसेसिंग</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-01-29T05:06:06+00:00" class="meta-pub">प्रकाशित 29 Jan 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">अद्यतन 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="अनुमानित पठन-समय">7 मिनट का पठन</span></div></section>
+      <h1>AI-संचालित ऑडियो-अंतर्दृष्टि, विश्लेषण और अनुवाद</h1>
+      <p class="sub">Whisper, बोलने वालों की पहचान और भाषा-पहचान के बीच</p>
+    <nav class="article-tags" aria-label="विषय"><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">AI</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">ऑडियो</a><a href="/tags/index.html#h3-whisper" class="article-tag" rel="tag">Whisper</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">अनुवाद</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">भाषण-पहचान</a><a href="/tags/index.html#h3-nlp" class="article-tag" rel="tag">NLP</a><a href="/tags/index.html#h3-speaker-diarization" class="article-tag" rel="tag">speaker diarization</a><a href="/tags/index.html#h3-multilingual" class="article-tag" rel="tag">multilingual</a><a href="/tags/index.html#h3-asr" class="article-tag" rel="tag">ASR</a><a href="/tags/index.html#h3-transcription" class="article-tag" rel="tag">transcription</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-01-29T05:06:06+00:00" class="meta-pub">प्रकाशित 29 Jan 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">अद्यतन 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="अनुमानित पठन-समय">10 मिनट का पठन</span></div></section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>विषय-सूची</h2><ol><li><a href="#audio-analyser">Audio Analyser कैसे काम करता है: आर्किटेक्चर अवलोकन</a></li><li><a href="#azure-cognitive-services">Azure Cognitive Services: बैच ट्रांसक्रिप्शन इंजन</a></li><li><a href="#azure-ai-language">Azure AI Language के साथ नेचुरल लैंग्वेज प्रोसेसिंग</a></li><li><a href="#azure-translator">Azure Translator के माध्यम से बहुभाषी समर्थन</a></li><li><a href="#cherrypy">CherryPy वेब लेयर के रूप में</a></li><li><a href="#section-6">अक्सर पूछे जाने वाले प्रश्न</a></li><li><a href="#section-7">संदर्भ</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Audio Analyser, Azure Cognitive Services के speech-to-text न्यूरल मॉडल, Text Analytics NLP और CherryPy का उपयोग करके ऑडियो रिकॉर्डिंग को खोज योग्य ट्रांसक्रिप्ट, सेंटीमेंट स्कोर, कीवर्ड निष्कर्षण और बहुभाषी अनुवाद में बदलता है।</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Audio Analyser कैसे काम करता है: आर्किटेक्चर अवलोकन.</strong> पाइपलाइन के पाँच अलग चरण हैं:.</li>  <li><strong>Azure Cognitive Services: बैच ट्रांसक्रिप्शन इंजन.</strong> Azure Speech service बैच ट्रांसक्रिप्शन API (/speechtotext/v3.0/transcriptions) Azure Blob Storage में ऑडियो फाइल का संदर्भ और एक कॉन्फिगरेशन JSON बॉडी स्वीकार करता है। Audio Analyser प्री-साइन्ड SAS URL का उपयोग…</li>  <li><strong>Azure AI Language के साथ नेचुरल लैंग्वेज प्रोसेसिंग.</strong> ट्रांसक्रिप्शन के बाद, Audio Analyser azure-ai-textanalytics Python SDK के माध्यम से डिस्प्ले-फॉर्म ट्रांसक्रिप्ट को Azure AI Language को भेजता है:.</li>  <li><strong>Azure Translator के माध्यम से बहुभाषी समर्थन.</strong> Azure Translator को भाषा पहचान के बाद तब बुलाया जाता है जब उपयोगकर्ता लक्ष्य भाषा का अनुरोध करता है। सर्विस न्यूरल मशीन ट्रांसलेशन (NMT) के साथ 135 भाषाओं और बोलियों का समर्थन करती है। Audio Analyser from पैरामीटर के…</li></ul></aside><!-- lead-start -->
-
-<!-- lead-end -->
-<blockquote>
-<p><strong>कार्यकारी सारांश / मुख्य बातें</strong></p>
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>विषय-सूची</h2><ol><li><a href="#section-1">दृष्टिकोण</a></li><li><a href="#section-3">विचार</a></li><li><a href="#section-5">प्रभाव</a></li><li><a href="#section-7">प्रोत्साहन</a></li><li><a href="#fundamento-tecnico-sobre-lo-solido">Fundamento técnico — निर्मित sobre lo sólido</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> AI-संचालित ऑडियो-विश्लेषण, बोलने वालों की पहचान, भाषाई पहचान और अनुवाद का परिचय।</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>दृष्टिकोण.</strong> Los डेटा का audio impregnan nuestro panorama डिजिटल, और हालाँकि उसका potencial जारी रखता है ampliamente inexplorado.</li>  <li><strong>विचार.</strong> Los métodos tradicionales का análisis का audio tienen limitaciones severas.</li>  <li><strong>प्रभाव.</strong> Las उद्यम जो उपयोग करते हैं Audio Analyser हैं constatado एक reducción के 50 % के tiempo dedicado को tratamiento का वे डेटा का audio.</li>  <li><strong>प्रोत्साहन.</strong> Audio Analyser entrega eficiencias inigualables में वह tratamiento का वे डेटा का audio.</li></ul></aside><p><a href="https://audioanalyser.co/" title="Unlock Actionable Insights from Audio Data to Enhance CX/EX"><strong>Audio Analyser ⧉</strong></a>, apoyándose में Microsoft Azure AI Platform, redefine वह panorama के análisis का वे डेटा का audio. Esta उपकरण प्रदान करता है एक conversión speech-to-text avanzada, एक análisis का texto exhaustivo, insights accionables और traducciones fluidas, proporcionando eficientemente analíticas detalladas से शुरू होकर वे डेटा का audio. Es एक activo अत्यावश्यक के लिए sectores जैसे वह estudio का बाज़ार, वे centros का contacto, वह servicio को cliente, वह sanidad, वह बैंकिंग और वे वित्त, transformando वह manera में जो interpretamos और utilizamos वह जानकारी का audio.</p>
+<p>En वह बाज़ार actual impulsado द्वारा वह experiencia, वह capacidad का analizar rápidamente वे डेटा का audio के cliente —llamadas, chats, mensajes का voz— se है vuelto अत्यावश्यक के लिए proporcionar एक soporte excepcional. Con expectativas crecientes, वह analítica का voz nativa जैसे <strong>Audio Analyser</strong> marca वह diferencia के लिए वे उद्यम जो desean retener को उसके ग्राहक और cultivar relaciones duraderas.</p>
+<p>Impulsado द्वारा Microsoft Azure AI, <strong>Audio Analyser</strong> va अधिक allá का वह transcripción básica के लिए उजागर करना insights accionables का cada interacción का servicio. Sus capacidades punteras में lenguaje natural tratan instantáneamente अधिक का 100 lenguas, analizan वह texto में busca का sentimientos e intenciones और generan indicadores impactantes sobre वे puntos का contacto críticos जो वे ग्राहक mencionan अधिक.</p>
+<p>Los líderes का वह industria उपयोग करते हैं ya यह tipo का analítica का voz proactiva के लिए generar mejoras tangibles. Tiempos का tratamiento अधिक cortos, tasas का resolución mayores और, sobre todo, puntuaciones का satisfacción के cliente अधिक altas. <strong>Audio Analyser</strong> अनुमति देता है को वे उद्यम नहीं solo जारी रखना वह ritmo sino fijar नए मानक का compromiso के साथ वह cliente. Detectando वे necesidades अधिक तेज़, resolviendo वे समस्याएँ के साथ mayor inteligencia और elevando वे interacciones, ayuda को forjar embajadores का marca जो se quedarán को largo plazo.</p>
+<h2 id="section-1">दृष्टिकोण <a class="heading-anchor" href="#section-1" aria-label="लिंक:  दृष्टिकोण">#</a></h2>
+<h3 id="el-potencial-inexplorado-audio">El potencial inexplorado का वे डेटा का audio <a class="heading-anchor" href="#el-potencial-inexplorado-audio" aria-label="लिंक:  El potencial inexplorado का वे डेटा का audio">#</a></h3>
+<h4>La importancia का वे डेटा का audio में वह था डिजिटल</h4>
+<p>Los डेटा का audio impregnan nuestro panorama डिजिटल, और हालाँकि उसका potencial जारी रखता है ampliamente inexplorado. Considere जो se estima में एक 93 % वह parte का वह comunicación humana नहीं verbal, vehiculada द्वारा वह tono, वह inflexión और otras कुंजियाँ audibles. A medida जो वे capacidades का IA progresan, वे डेटा का audio representan एक activo inestimable परंतु descuidado. El बाज़ार के reconocimiento का audio द्वारा sí solo se halla में pleno विकास, proyectado के लिए pasar का 4.100 millones का dólares में 2021 को अधिक का 14.100 millones के लिए 2030 según वह <a href="https://www.meticulousresearch.com/product/speech-analytics-market-5364">última publicación</a> का Meticulous Research®. Esto indica एक giro monumental hacia वह aprovechamiento द्वारा fin real का वे डेटा का audio.</p>
+<p>Las capacidades में reconocimiento का voz, analítica का voz, biometría का voz और otros ámbitos podrían बदलना वह manera में जो वे उद्यम operan में सभी वे sectores. Sin embargo, वह análisis का डेटा का audio जारी रखता है siendo complejo, exigiendo को menudo एक revisión manual costosa में tiempo. <strong>Audio Analyser</strong> representa एक उपकरण pionera lista के लिए capitalizar यह capa का डेटा infrautilizada. Convirtiendo eficientemente वह audio bruto में insights accionables, promete desbloquear नए niveles का velocidad और precisión.</p>
+<h4>Audio Analyser: एक उपकरण pionera</h4>
+<p>¿Qué eleva को <strong>Audio Analyser</strong> अधिक allá का वे softwares का transcripción मानक? La integración का वह IA puntera का Microsoft Azure desbloquea capacidades का análisis mucho अधिक matizadas. Aprovechando वे últimos algoritmos का मशीन-लर्निंग, <strong>Audio Analyser</strong> se sumerge में profundidad में वे patrones का habla: नहीं solo convirtiendo वे palabras, sino explorando वे sutilezas जैसे वह tono, वह emoción और वे significados subyacentes.</p>
+<p>Su tratamiento avanzado के lenguaje natural अनुमति देता है को Audio Analyser reconocer conexiones lingüísticas और referencias contextuales जो वे humanos podrían pasar द्वारा उच्च. Identificando frases कुंजी, sentimiento, intención और अधिक, genera insights mucho अधिक valiosos जो वे solas transcripciones. Además, उसके capacidades का reconocimiento और traducción multilingües abren posibilidades का अनुप्रयोग वैश्विक.</p>
+<h4>Funcionalidades कुंजी का Audio Analyser</h4>
 <ul>
-<li><strong>Azure Batch Transcription API</strong> 2.5 घंटे तक की ऑडियो फाइलें (WAV/MP3/OGG/FLAC) स्वीकार करता है, उन्हें एसिंक्रोनस रूप से प्रोसेस करता है और प्रति-वाक्यांश <code>nBest</code> कैंडिडेट, कॉन्फिडेंस स्कोर, इनवर्स-टेक्स्ट-नॉर्मलाइज्ड (ITN) आउटपुट, और वैकल्पिक स्पीकर diarisation के साथ <code>recognizedPhrases</code> JSON एरे वापस करता है — स्ट्रीमिंग कनेक्शन आवश्यक नहीं (Microsoft Azure, 2024)।</li>
-<li><strong>Microsoft के न्यूरल अकॉस्टिक मॉडल</strong> ने Switchboard बातचीत बेंचमार्क पर पुराने हिडन मार्कोव मॉडल (HMM) बेसलाइन की तुलना में वर्ड एरर रेट को लगभग 50% कम किया, उस डेटासेट पर ~5.1% WER पर पेशेवर मानव ट्रांसक्राइबर के साथ समानता हासिल की (Xiong et al., Microsoft Research, 2016/2021 अपडेट)।</li>
-<li><strong>Azure Text Analytics</strong> (अब Azure AI Language का हिस्सा) ट्रांसक्रिप्ट टेक्स्ट को की फ्रेज़ एक्सट्रैक्शन, नामित इकाई पहचान (NER), ओपिनियन माइनिंग के साथ सेंटिमेंट एनालिसिस और भाषा पहचान के माध्यम से प्रोसेस करता है — Python SDK का उपयोग करके एकल <code>analyze_sentiment</code> या <code>begin_analyze_actions</code> कॉल में।</li>
-<li><strong>CherryPy</strong> वेब लेयर प्रदान करता है: URL रूटिंग, मल्टीपार्ट अपलोड हैंडलिंग, सेशन मैनेजमेंट और Jinja2 टेम्पलेट रेंडरिंग एक न्यूनतम Python प्रक्रिया में जो ऑर्केस्ट्रेशन ओवरहेड के बिना एकल कम-लागत VM पर चल सकती है।</li>
-<li><strong>Azure Translator NMT</strong> स्वचालित रूप से स्रोत भाषा का पता लगाता है और ट्रांसक्रिप्ट को 135 लक्ष्य भाषाओं में से किसी में भी अनुवाद करता है, जिससे एक ही पाइपलाइन रन में मूल और अनुवादित टेक्स्ट दोनों पर डाउनस्ट्रीम NLP विश्लेषण संभव होता है।</li>
+<li><strong>Grabación का audio</strong>: grabe fácilmente archivos का audio और conversaciones.</li>
+<li><strong>Transcripción instantánea</strong>: convierta rápidamente वह lenguaje hablado में texto utilizando वह servicio speech-to-text का Azure.</li>
+<li><strong>Análisis का texto profundo</strong>: sumérjase में उसके डेटा के साथ वह servicio का analítica का texto का Azure, descubriendo sentimiento, जानकारी कुंजी और comprensión multifacética.</li>
+<li><strong>Recomendaciones accionables</strong>: reciba sugerencias adaptadas sobre वह base का उसके resultados का análisis.</li>
+<li><strong>Soporte multilingüe</strong>: soporte का एक amplia gama का lenguas, ofreciendo aplicabilidad वैश्विक.</li>
+<li><strong>Opciones का salida flexibles</strong>: elija बीच diversos formatos: JSON, TXT, SQLite, के लिए उसके resultados का análisis.</li>
+</ul>
+<p>A medida जो वह mundo se vuelve अधिक dependiente का वह búsqueda द्वारा voz, वे डेटा का audio और वे intercambios verbales, उपकरण जैसे <strong>Audio Analyser</strong> capaces का tratar और decodificar eficientemente यह जानकारी हैं cada vez अधिक vitales. Las संगठन privadas और públicas नहीं hacen sino empezar को explotar यह potencial analítico.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" fetchpriority="high">.class=&quot;m-10 w-100&quot;</p>
+<blockquote>
+<p><strong>TL;DR.</strong> AI-संचालित ऑडियो-विश्लेषण, बोलने वालों की पहचान, भाषाई पहचान और अनुवाद का परिचय। (DRAFT — मशीन-सहायता प्राप्त हिंदी अनुवाद; देशी समीक्षा लंबित।)</p>
+<p><strong>मुख्य निष्कर्ष</strong></p>
+<ul>
+<li>यह लेख एक तकनीकी विषय का विश्लेषण प्रस्तुत करता है।</li>
+<li>मुख्य अवधारणाएँ ऊपर परिभाषित की गई हैं।</li>
+<li>बैंकिंग और वित्तीय निहितार्थ नीचे विवेचित हैं।</li>
+<li>प्रौद्योगिकी, अंगीकार और जोखिमों पर दृष्टिकोण साझा किया गया है।</li>
+<li>दीर्घकालिक रुझान निष्कर्ष में सारांशित हैं।</li>
 </ul>
 </blockquote>
-<p><a href="https://audioanalyser.co/" title="Audio Analyser — Azure-समर्थित वाक् विश्लेषण उपकरण"><strong>Audio Analyser ⧉</strong></a> एक ओपन-सोर्स Python एप्लिकेशन है जो तीन Azure Cognitive Services को एक वर्कफ़्लो में जोड़ता है: स्पीच-टू-टेक्स्ट के लिए Batch Transcription, NLP के लिए Azure AI Language (Text Analytics) और बहुभाषी आउटपुट के लिए Azure Translator। वेब इंटरफेस CherryPy द्वारा सर्व किया जाता है, और परिणाम JSON, प्लेन टेक्स्ट, या लोकल SQLite डेटाबेस में सहेजे जा सकते हैं।</p>
-<p>यह लेख प्रत्येक पाइपलाइन चरण की तकनीकी आर्किटेक्चर, Azure API अनुबंध और CherryPy लेयर में लिए गए डिज़ाइन निर्णयों का वर्णन करता है।</p>
-<h2 id="audio-analyser">Audio Analyser कैसे काम करता है: आर्किटेक्चर अवलोकन <a class="heading-anchor" href="#audio-analyser" aria-label="लिंक:  Audio Analyser कैसे काम करता है: आर्किटेक्चर अवलोकन">#</a></h2>
-<p>पाइपलाइन के पाँच अलग चरण हैं:</p>
-<ol>
-<li><strong>अपलोड</strong> — उपयोगकर्ता CherryPy वेब इंटरफेस के माध्यम से एक ऑडियो फाइल सबमिट करता है। CherryPy फाइल को एक अस्थायी डायरेक्टरी में स्टोर करता है और एक जॉब ID वापस करता है।</li>
-<li><strong>ट्रांसक्रिप्शन</strong> — Audio Analyser फाइल को Azure Batch Transcription REST API पर सबमिट करता है। चूंकि बैच ट्रांसक्रिप्शन एसिंक्रोनस है, एप्लिकेशन अंतराल पर जॉब स्टेटस एंडपॉइंट को पोल करता है और आगे बढ़ने से पहले <code>Succeeded</code> अवस्था की प्रतीक्षा करता है।</li>
-<li><strong>NLP</strong> — रॉ ट्रांसक्रिप्ट टेक्स्ट को की फ्रेज़ एक्सट्रैक्शन, NER, सेंटिमेंट एनालिसिस और भाषा पहचान के लिए Azure AI Language को पास किया जाता है।</li>
-<li><strong>अनुवाद</strong> (वैकल्पिक) — यदि लक्ष्य भाषा निर्दिष्ट है, तो ट्रांसक्रिप्ट Azure Translator को भेजा जाता है और अनुवादित टेक्स्ट पर NLP विश्लेषण फिर से चलाया जाता है।</li>
-<li><strong>आउटपुट</strong> — परिणाम चयनित आउटपुट फॉर्मेट (JSON, TXT या SQLite) में लिखे जाते हैं और CherryPy वेब UI में रेंडर होते हैं।</li>
-</ol>
-<p>Python स्टैंडर्ड लाइब्रेरी के बाहर एकमात्र रनटाइम डिपेंडेंसी हैं: <code>azure-cognitiveservices-speech</code>, <code>azure-ai-textanalytics</code>, <code>azure-ai-translation-text</code> और <code>cherrypy</code>। सभी Azure क्रेडेंशियल एनवायरनमेंट वेरिएबल से पढ़े जाते हैं।</p>
-<h2 id="azure-cognitive-services">Azure Cognitive Services: बैच ट्रांसक्रिप्शन इंजन <a class="heading-anchor" href="#azure-cognitive-services" aria-label="लिंक:  Azure Cognitive Services: बैच ट्रांसक्रिप्शन इंजन">#</a></h2>
-<p>Azure Speech service बैच ट्रांसक्रिप्शन API (<code>/speechtotext/v3.0/transcriptions</code>) Azure Blob Storage में ऑडियो फाइल का संदर्भ और एक कॉन्फिगरेशन JSON बॉडी स्वीकार करता है। Audio Analyser प्री-साइन्ड SAS URL का उपयोग करके लोकल फाइल को Blob Storage में अपलोड करता है, फिर ट्रांसक्रिप्शन जॉब सबमिट करता है।</p>
-<p>न्यूनतम जॉब सबमिशन पेलोड:</p>
-<pre><code class="language-json">{
-  &quot;contentUrls&quot;: [&quot;https://&lt;account&gt;.blob.core.windows.net/&lt;container&gt;/&lt;file&gt;.wav?&lt;sas&gt;&quot;],
-  &quot;locale&quot;: &quot;en-US&quot;,
-  &quot;displayName&quot;: &quot;audio-analyser-job-001&quot;,
-  &quot;properties&quot;: {
-    &quot;diarizationEnabled&quot;: true,
-    &quot;wordLevelTimestampsEnabled&quot;: true,
-    &quot;punctuationMode&quot;: &quot;DictatedAndAutomatic&quot;,
-    &quot;profanityFilterMode&quot;: &quot;Masked&quot;
-  }
-}
-</code></pre>
-<p>रिस्पॉन्स में <code>recognizedPhrases</code> एरे में प्रत्येक पहचाने गए उच्चारण के लिए एक ऑब्जेक्ट होता है। प्रत्येक एंट्री में शामिल हैं:</p>
+<h2 id="section-3">विचार <a class="heading-anchor" href="#section-3" aria-label="लिंक:  विचार">#</a></h2>
+<h3 id="enriquecer-tratamiento-audio">Enriquecer वह tratamiento का वे डेटा का audio <a class="heading-anchor" href="#enriquecer-tratamiento-audio" aria-label="लिंक:  Enriquecer वह tratamiento का वे डेटा का audio">#</a></h3>
+<h4>Tradicional frente को impulsado द्वारा IA</h4>
+<p>Los métodos tradicionales का análisis का audio tienen limitaciones severas. La transcripción manual है costosa में tiempo, llevando hasta 10 horas tratar एक sola hora का audio. También है propensa को वे errores e imprecisiones जो pueden alterar वह significado. Incluso वे softwares speech-to-text अधिक extendidos नहीं logran को menudo captar वह contexto, वे emociones sutiles, वह sarcasmo और वह intención.</p>
+<p>Por वह contrario, <strong>Audio Analyser</strong> ilustra एक नया paradigma: उपयोग करना वह poder का वह कृत्रिम-बुद्धिमत्ता के लिए एक tratamiento का audio reforzado. Su enfoque impulsado द्वारा IA aplica वह reconocimiento का voz avanzado, वह comprensión के lenguaje natural और वे algoritmos का मशीन-लर्निंग के लिए सुनिश्चित करना एक análisis अधिक preciso के साथ कम esfuerzo manual.</p>
+<p>Aunque वह revisión humana mantiene उसका मूल्य, एक प्रौद्योगिकी जैसे <strong>Audio Analyser</strong> da को वे संगठन वह capacidad का tratar rápidamente grandes volúmenes का audio. Las transcripciones automatizadas जो produce नहीं solo tienen एक precisión वैश्विक superior जो puede alcanzar वह 99 %, sino जो, अधिक महत्वपूर्ण, captan perspectivas lingüísticas अधिक profundas. Con ganancias का दक्षता जो superan 10 veces वे esfuerzos manuales, अनुमति देता है एक analítica का audio verdaderamente escalable.</p>
+<h4>El papel का Microsoft Azure AI Platform</h4>
+<p>Detrás का वे capacidades का <strong>Audio Analyser</strong> se encuentra वह IA puntera का Microsoft Azure, sacando partido का वे últimas नवाचार में मशीन-लर्निंग. Azure AI Platform equipa वह समाधान के साथ मॉडल का voz altamente sofisticados जो aprenden और se optimizan continuamente के लिए reflejar वे matices के lenguaje real.</p>
+<p>Los servicios कुंजी का Azure जो impulsan <strong>Audio Analyser</strong> incluyen वह funcionalidad speech-to-text utilizando न्यूरल नेटवर्क, वह procesamiento के lenguaje natural के लिए decodificar वह texto और algoritmos जो identifican वह sentimiento emocional या वह intención. Miles का horas का डेटा का entrenamiento सुनिश्चित करते हैं एक reconocimiento preciso के jerga के sector, वे dialectos regionales और वह voz conversacional.</p>
+<p>Estos bloques का construcción Azure AI Platform flexibles और का nivel empresarial permiten को <strong>Audio Analyser</strong> प्रदान करना एक análisis का audio seguro और fiable adaptado को वे necesidades का cada cliente. Ya se trate का रचना actas का reunión, revisar llamadas या indexar archivos का podcasts, वे algoritmos evolutivos का वह प्लेटफ़ॉर्म manipulan hábilmente contexto, subjetividad और sutilezas के लिए उजागर करना perspectivas ocultas में वे डेटा का audio.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="section-5">प्रभाव <a class="heading-anchor" href="#section-5" aria-label="लिंक:  प्रभाव">#</a></h2>
+<h3 id="transformar-industrias-gracias-analisis-avanzado">Transformar वे industrias gracias को एक análisis avanzado <a class="heading-anchor" href="#transformar-industrias-gracias-analisis-avanzado" aria-label="लिंक:  Transformar वे industrias gracias को एक análisis avanzado">#</a></h3>
+<h4>Casos का estudio में diversos sectores</h4>
 <ul>
-<li><code>nBest[0].confidence</code> — 0 और 1 के बीच फ्लोट</li>
-<li><code>nBest[0].lexical</code> — जैसा बोला गया कच्चे शब्द</li>
-<li><code>nBest[0].itn</code> — इनवर्स-टेक्स्ट-नॉर्मलाइज्ड फॉर्म (संख्याएं, तारीखें, मुद्राएं विस्तारित)</li>
-<li><code>nBest[0].display</code> — पंक्चुएशन के साथ पढ़ने के लिए फॉर्मेट किया गया</li>
-<li><code>speaker</code> — diarisation सक्षम होने पर इंटीजर स्पीकर ID</li>
+<li><strong>Estudio का बाज़ार</strong>: Audio Analyser प्रदान करता है एक enfoque परिवर्तनकारी के estudio का बाज़ार entregando एक análisis avanzado के लिए insights accionables.</li>
+<li><strong>Servicio को cliente</strong>: resulta valioso के लिए वह servicio को cliente, proporcionando perspectivas में वह análisis का वे डेटा का audio का llamadas का servicio.</li>
+<li><strong>Sanidad</strong>: में वे consultas médicas, Audio Analyser sirve को वे profesionales का वह sanidad ofreciendo perspectivas valiosas.</li>
+<li><strong>Educación</strong>: puede analizar वे डेटा का audio का clases और reuniones, में beneficio का estudiantes और profesionales.</li>
+<li><strong>Finanzas</strong>: के mismo modo, puede aplicarse को वे लेनदेन वित्तीय, ofreciendo perspectivas valiosas को वे वित्तीय संस्थान.</li>
 </ul>
-<p>डोमेन-विशिष्ट शब्दावली के लिए <strong>Custom Speech</strong> फाइन-ट्यूनिंग उपलब्ध है। एक उच्चारण लेक्सिकॉन या अडेप्टेशन कॉर्पस (डोमेन का प्रतिनिधित्व करने वाले टेक्स्ट वाक्यों का एक सेट) अपलोड करना भाषा मॉडल को समायोजित करता है और वित्तीय शब्दों या चिकित्सा जार्गन जैसी विशेष सामग्री पर WER को काफी कम कर सकता है।</p>
-<h2 id="azure-ai-language">Azure AI Language के साथ नेचुरल लैंग्वेज प्रोसेसिंग <a class="heading-anchor" href="#azure-ai-language" aria-label="लिंक:  Azure AI Language के साथ नेचुरल लैंग्वेज प्रोसेसिंग">#</a></h2>
-<p>ट्रांसक्रिप्शन के बाद, Audio Analyser <code>azure-ai-textanalytics</code> Python SDK के माध्यम से डिस्प्ले-फॉर्म ट्रांसक्रिप्ट को Azure AI Language को भेजता है:</p>
-<pre><code class="language-python">from azure.ai.textanalytics import TextAnalyticsClient
-from azure.core.credentials import AzureKeyCredential
-
-client = TextAnalyticsClient(
-    endpoint=os.environ[&quot;AZURE_LANGUAGE_ENDPOINT&quot;],
-    credential=AzureKeyCredential(os.environ[&quot;AZURE_LANGUAGE_KEY&quot;])
-)
-
-documents = [{&quot;id&quot;: &quot;1&quot;, &quot;language&quot;: detected_lang, &quot;text&quot;: transcript}]
-
-sentiment_result = client.analyze_sentiment(documents, show_opinion_mining=True)
-for doc in sentiment_result:
-    print(f&quot;Sentiment: {doc.sentiment}&quot;)
-    print(f&quot;Scores: pos={doc.confidence_scores.positive:.2f} &quot;
-          f&quot;neg={doc.confidence_scores.negative:.2f} &quot;
-          f&quot;neu={doc.confidence_scores.neutral:.2f}&quot;)
-    for sentence in doc.sentences:
-        for opinion in sentence.mined_opinions:
-            print(f&quot;  Target: {opinion.target.text}, &quot;
-                  f&quot;Assessment: {[a.text for a in opinion.assessments]}&quot;)
-
-keyphrases_result = client.extract_key_phrases(documents)
-entities_result  = client.recognize_entities(documents)
-</code></pre>
-<p><code>show_opinion_mining=True</code> एस्पेक्ट-लेवल सेंटिमेंट सक्षम करता है: API केवल डॉक्यूमेंट-लेवल पोलैरिटी नहीं बल्कि विशिष्ट टार्गेट–असेसमेंट जोड़े भी वापस करता है (जैसे, target=&quot;audio quality&quot;, assessment=&quot;poor&quot;)। यह आउटपुट को कस्टमर सर्विस कॉल एनालिसिस में ठोस समस्याओं की पहचान के लिए उपयोगी बनाता है।</p>
-<p>नामित इकाई पहचान स्पैन को इनमें से एक के रूप में वर्गीकृत करती है: <code>Person</code>, <code>Organization</code>, <code>Location</code>, <code>Event</code>, <code>Product</code>, <code>DateTime</code>, <code>Quantity</code>, <code>IP</code>, <code>URL</code>, <code>Email</code>, <code>PersonType</code>, <code>Skill</code>, <code>Address</code>, <code>PhoneNumber</code>।</p>
-<h2 id="azure-translator">Azure Translator के माध्यम से बहुभाषी समर्थन <a class="heading-anchor" href="#azure-translator" aria-label="लिंक:  Azure Translator के माध्यम से बहुभाषी समर्थन">#</a></h2>
-<p>Azure Translator को भाषा पहचान के बाद तब बुलाया जाता है जब उपयोगकर्ता लक्ष्य भाषा का अनुरोध करता है। सर्विस न्यूरल मशीन ट्रांसलेशन (NMT) के साथ 135 भाषाओं और बोलियों का समर्थन करती है। Audio Analyser <code>from</code> पैरामीटर के रूप में <code>autodetect</code> के साथ <code>/translate</code> REST एंडपॉइंट का उपयोग करता है, इसलिए स्रोत-भाषा विशिष्टता की आवश्यकता नहीं:</p>
-<pre><code class="language-python">import requests, uuid
-
-url = &quot;https://api.cognitive.microsofttranslator.com/translate&quot;
-params = {&quot;api-version&quot;: &quot;3.0&quot;, &quot;to&quot;: target_lang}
-headers = {
-    &quot;Ocp-Apim-Subscription-Key&quot;: os.environ[&quot;AZURE_TRANSLATOR_KEY&quot;],
-    &quot;Ocp-Apim-Subscription-Region&quot;: os.environ[&quot;AZURE_TRANSLATOR_REGION&quot;],
-    &quot;Content-type&quot;: &quot;application/json&quot;,
-    &quot;X-ClientTraceId&quot;: str(uuid.uuid4())
-}
-body = [{&quot;text&quot;: transcript}]
-response = requests.post(url, params=params, headers=headers, json=body)
-translated_text = response.json()[0][&quot;translations&quot;][0][&quot;text&quot;]
-detected_language = response.json()[0][&quot;detectedLanguage&quot;][&quot;language&quot;]
-</code></pre>
-<p>अनुवाद के बाद, Audio Analyser वैकल्पिक रूप से अनुवादित टेक्स्ट पर Text Analytics NLP पास फिर से चलाता है ताकि की फ्रेज़ और सेंटिमेंट आउटपुट स्रोत और लक्ष्य दोनों भाषाओं में उपलब्ध हों।</p>
-<p>आउटपुट फॉर्मेट चयन (JSON, TXT, SQLite) स्टार्टअप पर सेट किया जाता है। SQLite आउटपुट प्रत्येक एनालिसिस सेशन को जॉब ID, टाइमस्टैम्प, स्रोत भाषा, ट्रांसक्रिप्ट, अनुवादित ट्रांसक्रिप्ट, सेंटिमेंट स्कोर और JSON blob के रूप में की फ्रेज़ के लिए कॉलम के साथ एक पंक्ति के रूप में स्टोर करता है — सेशन में SQL क्वेरी सक्षम करता है।</p>
-<h2 id="cherrypy">CherryPy वेब लेयर के रूप में <a class="heading-anchor" href="#cherrypy" aria-label="लिंक:  CherryPy वेब लेयर के रूप में">#</a></h2>
-<p>CherryPy क्लास-बेस्ड कंट्रोलर का उपयोग करके URL रूट को Python मेथड में मैप करता है। Audio Analyser तीन रूट का उपयोग करता है:</p>
-<table>
-<thead>
-<tr>
-<th>रूट</th>
-<th>मेथड</th>
-<th>विवरण</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>GET /</code></td>
-<td><code>index()</code></td>
-<td>अपलोड फॉर्म रेंडर करता है</td>
-</tr>
-<tr>
-<td><code>POST /analyse</code></td>
-<td><code>analyse()</code></td>
-<td>मल्टीपार्ट अपलोड स्वीकार करता है, पाइपलाइन ट्रिगर करता है, जॉब ID वापस करता है</td>
-</tr>
-<tr>
-<td><code>GET /results/&lt;job_id&gt;</code></td>
-<td><code>results()</code></td>
-<td>जॉब स्टेटस पोल करता है; पूर्ण होने पर रिजल्ट पेज रेंडर करता है</td>
-</tr>
-</tbody>
-</table>
-<p>न्यूनतम कॉन्फिगरेशन सर्वर फुटप्रिंट छोटा रखती है:</p>
-<pre><code class="language-python">import cherrypy
-
-cherrypy.config.update({
-    &quot;server.socket_host&quot;: &quot;0.0.0.0&quot;,
-    &quot;server.socket_port&quot;: 8080,
-    &quot;tools.sessions.on&quot;: True,
-    &quot;tools.sessions.timeout&quot;: 60
-})
-cherrypy.quickstart(AudioAnalyserApp(), &quot;/&quot;, conf)
-</code></pre>
-<p>सेशन स्टेट वर्तमान जॉब ID, चयनित आउटपुट फॉर्मेट और लक्ष्य अनुवाद भाषा रखती है। CherryPy की बिल्ट-इन सेशन स्टोरेज डिफ़ॉल्ट रूप से फाइल-बैक्ड है, जिसके लिए कोई बाहरी कैश लेयर आवश्यक नहीं।</p>
-<h2 id="section-6">अक्सर पूछे जाने वाले प्रश्न <a class="heading-anchor" href="#section-6" aria-label="लिंक:  अक्सर पूछे जाने वाले प्रश्न">#</a></h2>
-<p><strong>Audio Analyser कौन से ऑडियो फॉर्मेट और फाइल आकार स्वीकार करता है?</strong>
-Azure Batch Transcription API 2.5 घंटे तक की WAV, MP3, OGG और FLAC फाइलों का समर्थन करता है। इस रेंज से बाहर की फाइलें अपलोड से पहले विभाजित की जानी चाहिए। स्टीरियो फाइलें स्वीकार की जाती हैं; मोनो रूपांतरण आवश्यक नहीं।</p>
-<p><strong>स्पीकर diarisation कैसे काम करती है?</strong>
-बैच ट्रांसक्रिप्शन अनुरोध में <code>diarizationEnabled: true</code> सेट करना Azure के स्पीकर सेपरेशन मॉडल को सक्रिय करता है। रिस्पॉन्स में प्रत्येक <code>recognizedPhrase</code> में एक <code>speaker</code> इंटीजर फील्ड शामिल होता है। मॉडल अकॉस्टिक विशेषताओं द्वारा स्पीकर की पहचान करता है और एक सेशन के भीतर सुसंगत ID असाइन करता है, लेकिन अलग वॉइस प्रोफाइल एनरोलमेंट चरण के बिना स्पीकर की पहचान नहीं करता।</p>
-<p><strong>क्या ट्रांसक्रिप्शन के बाद ऑडियो फाइलें रखी जाती हैं?</strong>
-ऑडियो फाइलें Azure Blob Storage पर शॉर्ट-लिव्ड SAS URL के साथ अपलोड की जाती हैं और अपलोड पूरा होने के बाद अस्थायी लोकल डायरेक्टरी से हटा दी जाती हैं। Azure Blob Storage में blobs की रिटेंशन कंटेनर की लाइफसाइकिल पॉलिसी पर निर्भर करती है; डिफ़ॉल्ट रूप से, Audio Analyser कोई स्पष्ट डिलीशन पॉलिसी सेट नहीं करता, इसलिए प्रोडक्शन डिप्लॉयमेंट के लिए Azure पोर्टल में शॉर्ट TTL नियम (जैसे, 1 दिन से पुराने blobs हटाएं) कॉन्फिगर करने की सिफारिश की जाती है।</p>
-<p><strong>क्या NLP विश्लेषण अनुवाद के बिना चलाया जा सकता है?</strong>
-हाँ। अनुवाद एक वैकल्पिक पाइपलाइन चरण है जिसे <code>--target-lang</code> CLI फ्लैग या वेब UI में लक्ष्य भाषा ड्रॉपडाउन द्वारा नियंत्रित किया जाता है। जब कोई लक्ष्य भाषा नहीं चुनी जाती, पाइपलाइन केवल स्पीच-टू-टेक्स्ट और Text Analytics चलाती है।</p>
-<h2 id="section-7">संदर्भ <a class="heading-anchor" href="#section-7" aria-label="लिंक:  संदर्भ">#</a></h2>
-<ol>
-<li>Microsoft. <em>Batch transcription overview — Azure AI services</em>. Microsoft Learn, 2024. <a href="https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-transcription">https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-transcription</a></li>
-<li>Xiong, W. et al. &quot;Achieving Human Parity in Conversational Speech Recognition.&quot; <em>Microsoft Research Technical Report</em>, 2016; updated 2021. <a href="https://arxiv.org/abs/1610.05256">https://arxiv.org/abs/1610.05256</a></li>
-<li>Microsoft. <em>What is Azure AI Language?</em> Microsoft Learn, 2024. <a href="https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview">https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview</a></li>
-<li>Microsoft. <em>Azure AI Translator — Supported languages</em>. Microsoft Learn, 2024. <a href="https://learn.microsoft.com/en-us/azure/ai-services/translator/language-support">https://learn.microsoft.com/en-us/azure/ai-services/translator/language-support</a></li>
-</ol>
-<!-- enrich-start -->
-
-<p class="post-reviewed">अंतिम समीक्षा <time datetime="2026-05-24">2026-05-24</time>.</p>
-
-<!-- enrich-end -->
-<aside class="author-card" aria-label="लेखक के बारे में"><img alt="Sebastien Rousseau का चित्र" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/hi/hamare-baare-mein/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग टेक्नोलॉजिस्ट; मैं व्यावहारिक AI, ISO 20022 की ओर माइग्रेशन, वित्तीय सेवाओं के लिए पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतानों के संरचनात्मक रूपांतरण पर लिखता हूँ।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20 वर्ष से अधिक का अनुभव। <a href="/hi/hamare-baare-mein/index.html">पूरा परिचय</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">अंतिम समीक्षा <time datetime="2026-05-27">2026-05-27</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h4>लाभ cuantitativos</h4>
+<p>Las उद्यम जो उपयोग करते हैं <strong>Audio Analyser</strong> हैं constatado एक reducción के 50 % के tiempo dedicado को tratamiento का वे डेटा का audio. Esta ganancia का दक्षता se traduce में ahorros का coste significativos और एक toma का decisiones अधिक तेज़.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="section-7">प्रोत्साहन <a class="heading-anchor" href="#section-7" aria-label="लिंक:  प्रोत्साहन">#</a></h2>
+<h3 id="por-que-elegir-audio-analyser">Por qué elegir Audio Analyser <a class="heading-anchor" href="#por-que-elegir-audio-analyser" aria-label="लिंक:  Por qué elegir Audio Analyser">#</a></h3>
+<h4>Eficiencia और ahorro का tiempo</h4>
+<p><strong>Audio Analyser</strong> entrega eficiencias inigualables में वह tratamiento का वे डेटा का audio. Su reconocimiento का voz स्वचालित और उसके capacidades में lenguaje natural analizan वह audio bruto hasta 10 veces अधिक तेज़ जो वे métodos manuales. Esto reduce significativamente वह tiempo और वह esfuerzo necesarios के लिए extraer perspectivas utilizables.</p>
+<p>Considere lo जो esto significa के लिए वे necesidades habituales में análisis का audio:</p>
+<ul>
+<li>La transcripción का reunión जो antes requería 6 horas का trabajo se termina ahora में कम का 30 minutos.</li>
+<li>Días pasados examinando वे registros का llamadas का ग्राहक se reducen को solo unas horas gracias को reconocimiento का patrones amplios.</li>
+<li>Archivos enteros का podcasts pueden indexarse और buscarse rápidamente sobre वह base के contenido hablado.</li>
+<li>Asumiendo वे cargas costosas में tiempo का transcripción और análisis, <strong>Audio Analyser</strong> restituye एक tiempo valioso के लिए concentrarse में iniciativas का mayor prioridad. Su स्वचालन अनुमति देता है को वे संगठन escalar वह tratamiento का audio को एक ritmo और एक volumen जो का otro modo serían imposibles.</li>
+</ul>
+<h4>Profundidad का análisis और comodidad का उपयोग</h4>
+<p><strong>Audio Analyser</strong> se distingue नहीं solo द्वारा वह दक्षता का उसका conversión का audio, sino द्वारा वे perspectivas significativas जो genera. El मशीन-लर्निंग integrado va अधिक allá के speech-to-text के लिए विचार करना वह tono, वह sentimiento, वे palabras कुंजी में वह contenido और वे relaciones बीच ellas.</p>
+<p>La समाधान produce informes analíticos organizados और digeribles, disponibles के माध्यम से एक interfaz वेब intuitiva. Este formato fácilmente consumible, combinado के साथ paneles personalizables, reduce otro punto का dolor के साथ वह जो वे संगठन se encuentran को explotar वे डेटा का audio. Los directivos pueden ampliar वे tendencias, vigilar वे métricas और compartir वे resultados में सभी वे equipos.</p>
+<p>En suma, <strong>Audio Analyser</strong> reinventa lo संभव के लिए वह utilización का वे डेटा का audio. Su backend Azure seguro combinado के साथ एक análisis simplificado da को वे उद्यम एक medio अधिक fácil का capitalizar यह activo infrautilizado. Transforma वह contenido का audio hasta ahora inactivo में registros buscables और में डेटा accionables, permitiendo decisiones अधिक inteligentes और अधिक rápidas.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="fundamento-tecnico-sobre-lo-solido">Fundamento técnico — निर्मित sobre lo sólido <a class="heading-anchor" href="#fundamento-tecnico-sobre-lo-solido" aria-label="लिंक:  Fundamento técnico — निर्मित sobre lo sólido">#</a></h2>
+<h3 id="el-papel-ia-azure-analisis-preciso">El papel का वह IA Azure में एक análisis preciso <a class="heading-anchor" href="#el-papel-ia-azure-analisis-preciso" aria-label="लिंक:  El papel का वह IA Azure में एक análisis preciso">#</a></h3>
+<p>La कृत्रिम-बुद्धिमत्ता avanzada के भीतर Microsoft Azure है वह fuerza motriz detrás का वे capacidades का <strong>Audio Analyser</strong>. Los servicios का voz Azure और वह procesamiento के lenguaje natural integran मॉडल का मशीन-लर्निंग entrenados के साथ miles का horas का डेटा.</p>
+<p><img src="https://cloudcdn.pro/api/transform?url=/stocks/diagrams/audio-analyser-architecture-topaz.webp&w=1600&format=webp&q=80" alt="The Audio Analyser Architecture"  width="1200" height="800" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<p>Esta प्रौद्योगिकी का nivel industrial सुनिश्चित करता है वे अधिक altos niveles का precisión में transcripción और análisis. Respaldada द्वारा मानक sólidos का confidencialidad का वे डेटा, Azure proporciona एक base segura, lista के लिए वह उद्यम.</p>
+<p>Más concretamente, <strong>Audio Analyser</strong> se समर्थन देता है में वे principales servicios cognitivos Azure के लिए:</p>
+<ul>
+<li>La conversión speech-to-text utilizando algoritmos का न्यूरल नेटवर्क</li>
+<li>La comprensión के lenguaje natural के लिए interpretar वह texto</li>
+<li>El análisis का sentimiento जो determina वह tono emocional</li>
+<li>La detección का anomalías जो encuentra वे anormalidades</li>
+<li>El reconocimiento vocal personalizado adaptado को palabras/frases únicas</li>
+</ul>
+<p>Además का वे capacidades का Azure, <strong>Audio Analyser</strong> añade एक lógica propia में torno को वह generación का perspectivas का audio. El framework वेब CherryPy añade एक presentación estructurada का ये डेटा significativos. Tablas, filtros और vistas personalizadas hacen sencillo, के लिए वे उपयोगकर्ता नहीं técnicos, navegar द्वारा वह inteligencia का audio.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<p><a href="https://audioanalyser.co/" title="Unlock Actionable Insights from Audio Data to Enhance CX/EX"><strong>Audio Analyser ⧉</strong></a> desbloquea एक enfoque integrado के लिए explotar वह मूल्य का वे डेटा का audio. Respaldado द्वारा Microsoft Azure AI Platform का nivel industrial के लिए वह सुरक्षा और वह precisión, hace जो वे perspectivas का voz sean अधिक accesibles mediante वह स्वचालन और वह entrega simplificada.</p>
+<p>Ya se trate का generar actas का reunión, examinar llamadas, buscar में archivos का podcasts या का otro modo explotar वह contenido का audio, यह उपकरण pionera abre नई posibilidades. La profundidad का análisis और वह intuitividad जो प्रदान करता है ayudan को वे संगठन líderes को optimizar वह उपयोगिता के audio में एक grado बिना precedentes.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<aside class="author-card" aria-label="लेखक के बारे में"><img alt="Sebastien Rousseau का चित्र" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/hi/hamare-baare-mein/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग टेक्नोलॉजिस्ट; मैं व्यावहारिक AI, ISO 20022 की ओर माइग्रेशन, वित्तीय सेवाओं के लिए पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतानों के संरचनात्मक रूपांतरण पर लिखता हूँ।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20 वर्ष से अधिक का अनुभव। <a href="/hi/hamare-baare-mein/index.html">पूरा परिचय</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">अंतिम समीक्षा <time datetime="2026-05-27">2026-05-27</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">संबंधित पठन</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/hi/2024-02-08-vigyaapan-mein-kraanti-ai-bhavishya-ko-aakaar-deti-hai/" class="related-media" aria-label="विज्ञापन में क्रांति: AI भविष्य को कैसे आकार देता है" tabindex="-1"><img alt="A robotic woman with butterflies and flowers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/advertising-ai.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai"><a href="https://sebastienrousseau.com/hi/2024-02-08-vigyaapan-mein-kraanti-ai-bhavishya-ko-aakaar-deti-hai/">विज्ञापन में क्रांति: AI भविष्य को कैसे आकार देता है</a> <a class="heading-anchor" href="#ai" aria-label="लिंक:  विज्ञापन में क्रांति: AI भविष्य को कैसे आकार देता है">#</a></h3><p><time datetime="2024-02-08">2024-02-08</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/hi/2024-02-13-eu-ai-act-vaishvik-ai-niyaman-ka-bhavishya/" class="related-media" aria-label="EU AI Act: वैश्विक AI-विनियमन के भविष्य को आकार देना" tabindex="-1"><img alt="A person sitting on black bench reading newspaper" src="https://cloudcdn.pro/api/transform?url=/stocks/images/ryoji-iwata-a-qsFZimp1M.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="eu-ai-act-ai"><a href="https://sebastienrousseau.com/hi/2024-02-13-eu-ai-act-vaishvik-ai-niyaman-ka-bhavishya/">EU AI Act: वैश्विक AI-विनियमन के भविष्य को आकार देना</a> <a class="heading-anchor" href="#eu-ai-act-ai" aria-label="लिंक:  EU AI Act: वैश्विक AI-विनियमन के भविष्य को आकार देना">#</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/hi/2024-01-23-ai-prompt-engineering-mein-pragati/" class="related-media" aria-label="AI Prompt Engineering 2024: Techniques That Work" tabindex="-1"><img alt="A man analysing data on screens" src="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-prompt-engineering-modern-office.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-prompt-engineering-2024-techniques-that-work"><a href="https://sebastienrousseau.com/hi/2024-01-23-ai-prompt-engineering-mein-pragati/">AI Prompt Engineering 2024: Techniques That Work</a> <a class="heading-anchor" href="#ai-prompt-engineering-2024-techniques-that-work" aria-label="लिंक:  AI Prompt Engineering 2024: Techniques That Work">#</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/hi/2024-03-18-multimodal-llm-se-ai-ko-aage-badhana-mm1-drishtikon/index.html" class="related-media" aria-label="मल्टीमॉडल LLM से AI को आगे बढ़ाना: MM1 की सीख" tabindex="-1"><img alt="Banner for the Apple MM1" src="https://cloudcdn.pro/api/transform?url=/stocks/images/mm1-visual.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="llm-ai-mm1"><a href="https://sebastienrousseau.com/hi/2024-03-18-multimodal-llm-se-ai-ko-aage-badhana-mm1-drishtikon/index.html">मल्टीमॉडल LLM से AI को आगे बढ़ाना: MM1 की सीख</a> <a class="heading-anchor" href="#llm-ai-mm1" aria-label="लिंक:  मल्टीमॉडल LLM से AI को आगे बढ़ाना: MM1 की सीख">#</a></h3><p><time datetime="2024-03-18">2024-03-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/hi/2024-03-04-mistral-ai-le-chat-conversational-ai-ka-nayaa-yug/index.html" class="related-media" aria-label="Mistral AI का Le Chat: संवादात्मक AI का नया युग" tabindex="-1"><img alt="Colourful, abstract digital art of a cat" src="https://cloudcdn.pro/api/transform?url=/stocks/images/abstract-digital-art-of-a-cat.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="mistral-ai-le-chat-ai"><a href="https://sebastienrousseau.com/hi/2024-03-04-mistral-ai-le-chat-conversational-ai-ka-nayaa-yug/index.html">Mistral AI का Le Chat: संवादात्मक AI का नया युग</a> <a class="heading-anchor" href="#mistral-ai-le-chat-ai" aria-label="लिंक:  Mistral AI का Le Chat: संवादात्मक AI का नया युग">#</a></h3><p><time datetime="2024-03-04">2024-03-04</time></p></footer></article>
 </div>
-</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">स्रोत और संदर्भ</h2><ol class="article-sources-list"><li><a href="https://arxiv.org/abs/1610.05256" rel="external noopener nofollow"><span class="source-host">arxiv.org</span><span class="source-path">/abs/1610.05256</span></a></li></ol></aside><nav class="post-pagination" aria-label="लेख पृष्ठ-क्रम"><a class="post-pagination-prev" href="/hi/2024-01-23-ai-prompt-engineering-mein-pragati/"><span class="post-pagination-label">पिछला</span><span class="post-pagination-title">AI Prompt Engineering 2024: Techniques That Work</span></a><a class="post-pagination-next" href="/hi/2024-02-08-vigyaapan-mein-kraanti-ai-bhavishya-ko-aakaar-deti-hai/"><span class="post-pagination-label">अगला</span><span class="post-pagination-title">Generative AI in Advertising: Amazon Rufus & Meta</span></a></nav></div>
+</aside><nav class="post-pagination" aria-label="लेख पृष्ठ-क्रम"><a class="post-pagination-prev" href="/hi/2024-01-23-ai-prompt-engineering-mein-pragati/"><span class="post-pagination-label">पिछला</span><span class="post-pagination-title">AI Prompt Engineering 2024: Techniques That Work</span></a><a class="post-pagination-next" href="/hi/2024-02-08-vigyaapan-mein-kraanti-ai-bhavishya-ko-aakaar-deti-hai/"><span class="post-pagination-label">अगला</span><span class="post-pagination-title">Generative AI in Advertising: Amazon Rufus & Meta</span></a></nav></div>
     </main>
 
 <!-- gen-layouts:footer-start -->
@@ -408,7 +342,7 @@ Azure Batch Transcription API 2.5 घंटे तक की WAV, MP3, OGG औ�
     <!-- Schema.org structured data -->
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"hi"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"hi"}]}</script>
 
-        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1508,"about":{"@type":"Thing","name":"Python","sameAs":["https://en.wikipedia.org/wiki/Python_(programming_language)","https://www.wikidata.org/wiki/Q28865"]},"headline":"Audio Analyser: Azure Speech, NLP, and Translation Pipeline","description":"Audio Analyser, Azure Cognitive Services के speech-to-text न्यूरल मॉडल, Text Analytics NLP और CherryPy का उपयोग करके ऑडियो रिकॉर्डिंग को खोज योग्य ट्रांसक्रिप्ट, सेंटीमेंट स्कोर, कीवर्ड निष्कर्षण और बहुभाषी अनुवाद में बदलता है।","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp","width":"100vw","height":"100vh","caption":"एक न्यूनतम, आधुनिक कॉर्पोरेट कार्यालय"},"url":"https://sebastienrousseau.com/hi/2024-01-29-ai-aadharit-audio-vishleshan-anuvaad-aur-drishtikon/","datePublished":"2024-01-29T05:06:06+00:00","dateModified":"2026-05-24","inLanguage":"hi","keywords":"Azure Cognitive Services, speech-to-text, न्यूरल अकॉस्टिक मॉडल, Azure Text Analytics, प्राकृतिक भाषा प्रसंस्करण, सेंटीमेंट विश्लेषण, CherryPy, batch transcription API, बहुभाषी ASR, Azure Translator, ऑडियो ट्रांसक्रिप्शन, Python ऑडियो प्रोसेसिंग","articleSection":"AI","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/hi/2024-01-29-ai-aadharit-audio-vishleshan-anuvaad-aur-drishtikon/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"hi"},"citation":[{"@type":"CreativeWork","url":"https://arxiv.org/abs/1610.05256"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/hi/"},{"@type":"ListItem","position":3,"name":"Audio Analyser: Azure Speech, NLP, and Translation Pipeline","item":"https://sebastienrousseau.com/hi/2024-01-29-ai-aadharit-audio-vishleshan-anuvaad-aur-drishtikon/"}]}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":2109,"about":{"@type":"Thing","name":"Generative AI","sameAs":["https://en.wikipedia.org/wiki/Generative_artificial_intelligence","https://www.wikidata.org/wiki/Q108766533","https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html"]},"headline":"AI-संचालित ऑडियो-अंतर्दृष्टि, विश्लेषण और अनुवाद","description":"AI-संचालित ऑडियो-विश्लेषण, बोलने वालों की पहचान, भाषाई पहचान और अनुवाद का परिचय।","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp","width":"100vw","height":"100vh","caption":"ऑडियो-तरंग-रूप की कलात्मक छवि"},"url":"https://sebastienrousseau.com/hi/2024-01-29-ai-aadharit-audio-vishleshan-anuvaad-aur-drishtikon/","datePublished":"2024-01-29T05:06:06+00:00","dateModified":"2026-05-24","inLanguage":"hi","keywords":"AI, ऑडियो, Whisper, अनुवाद, भाषण-पहचान, NLP, speaker diarization, multilingual, ASR, transcription","articleSection":"AI","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/hi/2024-01-29-ai-aadharit-audio-vishleshan-anuvaad-aur-drishtikon/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"hi"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/hi/"},{"@type":"ListItem","position":3,"name":"AI-संचालित ऑडियो-अंतर्दृष्टि, विश्लेषण और अनुवाद","item":"https://sebastienrousseau.com/hi/2024-01-29-ai-aadharit-audio-vishleshan-anuvaad-aur-drishtikon/"}]}]}</script>
 <script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
   
 <!-- SSG Search Widget -->
@@ -434,5 +368,5 @@ Azure Batch Transcription API 2.5 घंटे तक की WAV, MP3, OGG औ�
 </div>
 <script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
 </div>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Audio Analyser: Azure Speech, NLP, and Translation Pipeline","url":"https://sebastienrousseau.com/hi/2024-01-29-ai-aadharit-audio-vishleshan-anuvaad-aur-drishtikon/","inLanguage":"hi-IN","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"Azure Cognitive Services, speech-to-text, न्यूरल अकॉस्टिक मॉडल, Azure Text Analytics, प्राकृतिक भाषा प्रसंस्करण, सेंटीमेंट विश्लेषण, CherryPy, batch transcription API, बहुभाषी ASR, Azure Translator, ऑडियो ट्रांसक्रिप्शन, Python ऑडियो प्रोसेसिंग","programmingLanguage":"Python"}</script></body>
+</body>
 </html>

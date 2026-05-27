@@ -2,13 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-27T22:09:52+00:00</news:publication_date>
+    <news:title>Ödemelerin İşletim Sistemi Olarak AI: 2026&apos;da Dolandırıcılık, Yönlendirme, Dayanıklılık ve Uyum</news:title>
+    <news:keywords>AI ödemeler 2026, ödeme dolandırıcılığı, ödeme yönlendirme, gerçek zamanlı dolandırıcılık önleme, ISO 20022 AI, ödeme dayanıklılığı, işlem analizi, nakit akışı tahmini</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-27T22:09:52+00:00</news:publication_date>
+    <news:title>Stablecoinler ve Tokenleştirilmiş Mevduatlar 2026: Bankaların Gerçekten Savunması Gereken</news:title>
+    <news:keywords>stablecoinler 2026, tokenleştirilmiş mevduatlar, banka mevduatları, GENIUS Act, JPM Coin, mevduat tokenları, stablecoin rezervleri, banka fonlaması, dijital para</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/tr/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>tr-TR</news:language>
     </news:publication>
-    <news:publication_date>2026-05-26T23:13:19+00:00</news:publication_date>
+    <news:publication_date>2026-05-27T22:09:52+00:00</news:publication_date>
     <news:title>UK Payments Forward Plan 2026: Stablecoinler, Açık Bankacılık, Tokenleştirilmiş Mevduatlar ve Ajansal Ödemeler</news:title>
     <news:keywords>UK Payments Forward Plan 2026, İngiltere stablecoinler, İngiltere tokenleştirilmiş mevduatlar, açık bankacılık FCA, PSR FCA konsolidasyonu, İngiltere yapay zeka ajanı ödemeleri, Wholesale Digital Markets Champion, Chris Woolard, ödeme hizmetleri düzenlemesi</news:keywords>
   </news:news>
@@ -20,9 +44,33 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>tr-TR</news:language>
     </news:publication>
-    <news:publication_date>2026-05-26T23:13:19+00:00</news:publication_date>
+    <news:publication_date>2026-05-27T22:09:52+00:00</news:publication_date>
     <news:title>Bankacılıkta Ajansal Ödemeler: Onay, Sorumluluk ve 2026 Ödeme UX&apos;i</news:title>
     <news:keywords>ajansal ödemeler 2026, yapay zeka ajan ödemeleri, Mastercard Agent Pay, Rabobank yapay zeka ödemesi, AP2, A2A, x402, MCP, makine ödeme protokolü, ödeme onayı, Regulation E, EFTA, ödeme sorumluluğu, doğrulanabilir niyet, tokenleştirme, geçiş anahtarları, bankacılık UX, yapay zeka ticareti</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>Magnifica Humanitas: Yapay Zekâ Genelgesinin Sektörel Okuması</news:title>
+    <news:keywords>Magnifica Humanitas, Pope Leo XIV, yapay zeka genelgesi, yapay zeka etiği, kuantum bilişim etiği, Rerum Novarum, Babil Kulesi, teknoloji asla tarafsız değildir, transhümanizm, posthümanizm, insan onuru, teknolojik paradigma, tren otomobil nükleer internet, teknoloji tarihinde ahlaki panik, Lucy bilgi aktarımı, yapay zeka umudu, EU AI Act, DORA, Anthropic, Sebastien Rousseau</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-25T06:06:06+00:00</news:publication_date>
+    <news:title>Programlanabilir Likidite 2026: AI, Tokenleştirilmiş Mevduatlar ve Gerçek Zamanlı Hazine</news:title>
+    <news:keywords>programlanabilir likidite 2026, hazine orkestrasyonu, AI hazine, tokenleştirilmiş mevduatlar, gerçek zamanlı likidite, stablecoin hazine, çok raylı ödemeler, sanal hesaplar, işlem bankacılığı, teminat hareketliliği</news:keywords>
   </news:news>
 </url>
 <url>
@@ -326,18 +374,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/tr/2024-02-12-akande-ses-asistani-kisisel-ve-yonetici-asistanlik-devrimi/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>tr-TR</news:language>
-    </news:publication>
-    <news:publication_date>2024-02-12T06:06:06+00:00</news:publication_date>
-    <news:title>Àkàndé: GPT-Powered Voice Assistant for Executives</news:title>
-    <news:keywords>Àkàndé, OpenAI GPT-4, Whisper STT, SQLite önbelleğe alma, fpdf2, Python ses asistanı, sohbet tamamlamaları API, PDF özet oluşturma, SHA-256 önbellek, metinden konuşmaya, yönetici asistan AI, açık kaynak</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/tr/2024-02-08-reklamcilikta-devrim-yapay-zeka-gelecegi-nasil-sekillendiriyor/</loc>
   <news:news>
     <news:publication>
@@ -357,32 +393,8 @@
       <news:language>tr-TR</news:language>
     </news:publication>
     <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
-    <news:title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</news:title>
-    <news:keywords>Azure Cognitive Services, konuşmadan metne, sinir akustik modeli, Azure Text Analytics, doğal dil işleme, duygu analizi, CherryPy, toplu transkripsiyon API, çok dilli ASR, Azure Translator, ses transkripsiyon, Python ses işleme</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/tr/2024-01-29-yapay-zeka-destekli-ses-analizi-ceviri-ve-icgoruler/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>tr-TR</news:language>
-    </news:publication>
-    <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
     <news:title>Yapay zeka ile ses analizi, çeviriler ve içgörüler</news:title>
     <news:keywords>yapay zeka, ses, konuşma tanıma, çeviri, içgörüler, analiz</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/tr/2024-01-23-yapay-zeka-prompt-muhendisliginde-ilerlemeler/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>tr-TR</news:language>
-    </news:publication>
-    <news:publication_date>2024-01-23T06:06:06+00:00</news:publication_date>
-    <news:title>AI Prompt Engineering 2024: Techniques That Work</news:title>
-    <news:keywords>zincir-düşünce yönlendirme, az-atış öğrenme, sıfır-atış yönlendirme, bağlam içi öğrenme, prompt enjeksiyonu, ReAct, öz-tutarlılık, geri alma destekli üretim, BloombergGPT, sistem promptu, prompt güvenliği, LLM ajan</news:keywords>
   </news:news>
 </url>
 <url>
@@ -513,18 +525,6 @@
       <news:language>tr-TR</news:language>
     </news:publication>
     <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
-    <news:title>Generative AI in 2023: How It Works, Where It Lands</news:title>
-    <news:keywords>üretken yapay zeka, büyük dil modeli, transformer mimarisi, GPT-4, finansal hizmetlerde yapay zeka, halüsinasyon, retrieval-augmented generation, yapay zeka yönetişimi, foundation model, ince ayar</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/tr/2023-11-12-uretken-yapay-zekayi-kesfetmek/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>tr-TR</news:language>
-    </news:publication>
-    <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
     <news:title>Üretken yapay zekayı keşfetmek</news:title>
     <news:keywords>üretken yapay zeka, makine öğrenmesi, LLM, GAN, yayılma modelleri, üretken modeller</news:keywords>
   </news:news>
@@ -539,18 +539,6 @@
     <news:publication_date>2023-11-05T06:06:06+00:00</news:publication_date>
     <news:title>Rust güvenliği için matematiksel ve kriptografik sabitler</news:title>
     <news:keywords>Rust, cmn, kriptografi, matematik, sabitler, güvenlik, açık kaynak</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/tr/2023-10-26-libmake-rust-kutuphaneleri-icin-kod-uretici/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>tr-TR</news:language>
-    </news:publication>
-    <news:publication_date>2023-10-26T06:06:06+00:00</news:publication_date>
-    <news:title>LibMake: Rust Library Scaffold Generator</news:title>
-    <news:keywords>LibMake, Rust code generator, cargo scaffold, Rust library template, Tera templating, GitHub Actions Rust, cargo-audit, Rust API Guidelines, boilerplate generator, Rust CI workflow</news:keywords>
   </news:news>
 </url>
 <url>
@@ -597,18 +585,6 @@
       <news:language>tr-TR</news:language>
     </news:publication>
     <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
-    <news:title>Automating ISO 20022 Payment Files Creation with pain001</news:title>
-    <news:keywords>pain001, ISO 20022, pain.001.001.09, CustomerCreditTransferInitiation, SEPA Credit Transfer, CBPR+, payment automation, XML generation, XSD validation, GrpHdr, PmtInf, CdtTrfTxInf, CtrlSum, SWIFT</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/tr/2023-09-29-iso-20022-uyumlu-odeme-dosyalarini-pain001-ile-otomatiklestirme/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>tr-TR</news:language>
-    </news:publication>
-    <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
     <news:title>ISO 20022 uyumlu ödeme dosyalarını pain001 ile otomatikleştirme</news:title>
     <news:keywords>ISO 20022, pain.001, Python, ödemeler, otomasyon, SEPA, SWIFT, açık kaynak</news:keywords>
   </news:news>
@@ -623,30 +599,6 @@
     <news:publication_date>2018-02-15T06:06:06+00:00</news:publication_date>
     <news:title>Express Transaction Credits platformunun yapımı</news:title>
     <news:keywords>anlık ödemeler, ödeme platformu, fintech, mimari, ölçeklenebilirlik, uyum</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/tr/2018-02-15-express-transaction-credits-platformunun-yapimi/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>tr-TR</news:language>
-    </news:publication>
-    <news:publication_date>2018-02-15T06:06:06+00:00</news:publication_date>
-    <news:title>The making of the Express Transaction Credits Platform</news:title>
-    <news:keywords>EXTC platform, ERC-223, Ethereum akıllı sözleşmeler, token mimarisi, çok imza, zaman kilitli transfer, blockchain ödemeleri, teminata dayalı krediler, merkezi olmayan finans, 2018 kripto</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/tr/2018-02-04-yeni-bir-kripto-para-ve-daha-hizli-odeme-cozumu/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>tr-TR</news:language>
-    </news:publication>
-    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
-    <news:title>Unveiling a new Cryptocurrency and Faster Payment Solution</news:title>
-    <news:keywords>EXTC, ERC-223, Ethereum akıllı sözleşmeleri, hızlı ödemeler, kripto para, blockchain ödemeleri, ödeme token&apos;ı, merkeziyetsiz finans, ERC-20, sınır ötesi ödemeler</news:keywords>
   </news:news>
 </url>
 <url>
@@ -683,18 +635,6 @@
     <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
     <news:title>Blockchain&apos;in arkasındaki teknolojiyi anlamak</news:title>
     <news:keywords>blockchain, kriptografi, hash, konsensüs, proof-of-work, proof-of-stake, dağıtık defter</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/tr/2018-01-09-blockchain-arkasindaki-teknolojiyi-anlamak/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>tr-TR</news:language>
-    </news:publication>
-    <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
-    <news:title>Understanding the Technology behind Blockchain</news:title>
-    <news:keywords>blockchain teknolojisi, kriptografik hash, Merkle ağacı, dağıtık konsensüs, proof of work, Ethereum, akıllı sözleşmeler, EVM, Solidity, ERC-20, dağıtık defter, merkeziyetsiz finans</news:keywords>
   </news:news>
 </url>
 <url>

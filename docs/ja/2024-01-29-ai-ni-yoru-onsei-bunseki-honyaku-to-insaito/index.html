@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta itemprop="datePublished" content="Mon, 29 Jan 2024 05:06:06 +0000" id="date" />
     <meta itemprop="dateModified" content="Mon, 29 Jan 2024 05:06:06 +0000" id="last-modified" />
-    <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline — Sebastien Rousseau</title>
+    <title>AI による音声分析、翻訳、インサイト — Sebastien Rousseau</title>
 
     <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
-<meta name="description" content="Audio AnalyserはAzure Cognitive Servicesの音声テキスト変換ニューラルモデル、Text Analytics NLP、CherryPyを使用して音声録音を感情スコア、キーワード抽出、多言語翻訳付きの検索可能なトランスクリプトに変換します。">
-<meta name="keywords" content="Azure Cognitive Services、音声テキスト変換、ニューラル音響モデル、Azure Text Analytics、自然言語処理、感情分析、CherryPy、バッチ転写API、多言語ASR、Azure Translator、音声転写、Pythonオーディオ処理">
+<meta name="description" content="OpenAI Whisper、リアルタイム音声テキスト変換、多言語翻訳によるオーディオインサイトのための AI ソリューション。">
+<meta name="keywords" content="AI, 音声認識, 音声テキスト変換, Whisper, 翻訳, 多言語, オーディオインサイト">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
@@ -40,7 +40,7 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-1QTzhu0IQem7QmMGRdEN85+efczXJINRLwRiCRLZ7Us=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-Nld0afCsL/qg8MWtl/DU5LX74eQgZjfKZ1UjDzg0fRc=' 'sha256-jfGzi1daH/2egIKSeb4ZLUSzt4tsLnGmmXEAfr8rJfc=' 'sha256-pmMLmZvpK47geeYywyXj2I71VaowzXLduKR6nv2z7Lc=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-1QTzhu0IQem7QmMGRdEN85+efczXJINRLwRiCRLZ7Us=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-K571YaAAXJCllwdJFIc+gH3N5cVyd/Yk+SFSCDbbkYA=' 'sha256-wcuhTdYwn5JKfXcwXI0WbpEx32iw1m9svMlyzjVmve0=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
@@ -67,7 +67,7 @@
          Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
          observed (real-network) LCP is 165 ms. This hint pulls the
          synthetic LCP in line with the observed value. -->
-    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp&w=1600&format=webp&q=85" fetchpriority="high">
     <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
     <meta name="color-scheme" content="light dark" />
@@ -77,18 +77,18 @@
     <link rel="alternate" type="application/atom+xml" title="Atom フィード" href="/ja/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="stylesheet" href="/highlight.a92b9694.css">
-<meta property="og:title" content="Audio Analyser: Azure Speech, NLP, and Translation Pipeline — Sebastien Rousseau">
-<meta property="og:description" content="Audio AnalyserはAzure Cognitive Servicesの音声テキスト変換ニューラルモデル、Text Analytics NLP、CherryPyを使用して音声録音を感情スコア、キーワード抽出、多言語翻訳付きの検索可能なトランスクリプトに変換します。">
+<meta property="og:title" content="AI による音声分析、翻訳、インサイト — Sebastien Rousseau">
+<meta property="og:description" content="OpenAI Whisper、リアルタイム音声テキスト変換、多言語翻訳によるオーディオインサイトのための AI ソリューション。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sebastienrousseau.com/ja/2024-01-29-ai-ni-yoru-onsei-bunseki-honyaku-to-insaito/">
-<meta property="og:image" content="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp">
 <meta property="og:image:width" content="100vw">
 <meta property="og:image:height" content="100vh">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Audio Analyser: Azure Speech, NLP, and Translation Pipeline — Sebastien Rousseau">
-<meta name="twitter:description" content="Audio AnalyserはAzure Cognitive Servicesの音声テキスト変換ニューラルモデル、Text Analytics NLP、CherryPyを使用して音声録音を感情スコア、キーワード抽出、多言語翻訳付きの検索可能なトランスクリプトに変換します。">
-<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp">
+<meta name="twitter:title" content="AI による音声分析、翻訳、インサイト — Sebastien Rousseau">
+<meta name="twitter:description" content="OpenAI Whisper、リアルタイム音声テキスト変換、多言語翻訳によるオーディオインサイトのための AI ソリューション。">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp">
 <link rel="canonical" href="https://sebastienrousseau.com/ja/2024-01-29-ai-ni-yoru-onsei-bunseki-honyaku-to-insaito/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
 <meta property="og:site_name" content="Sebastien Rousseau">
@@ -167,176 +167,43 @@
     </header>
 
         <section class="ap-hero">
-      <h1>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</h1>
-      <p class="sub">Azureバックエンドを活用した音声分析ツールのアーキテクチャとパイプライン</p>
-    <nav class="article-tags" aria-label="トピック"><a href="/tags/index.html#h3-azure-cognitive-servicesazure-text-analyticscherrypyapiasrazure-translatorpython" class="article-tag" rel="tag">Azure Cognitive Services、音声テキスト変換、ニューラル音響モデル、Azure Text Analytics、自然言語処理、感情分析、CherryPy、バッチ転写API、多言語ASR、Azure Translator、音声転写、Pythonオーディオ処理</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-01-29T05:06:06+00:00" class="meta-pub">公開日 29 Jan 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">更新日 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="想定読了時間">3 分で読了</span></div></section>
+      <h1>AI による音声分析、翻訳、インサイト</h1>
+      <p class="sub">リアルタイム音声テキスト変換と多言語インサイトのための AI</p>
+    <nav class="article-tags" aria-label="トピック"><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">AI</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">音声認識</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">音声テキスト変換</a><a href="/tags/index.html#h3-whisper" class="article-tag" rel="tag">Whisper</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">翻訳</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">多言語</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">オーディオインサイト</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-01-29T05:06:06+00:00" class="meta-pub">公開日 29 Jan 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">更新日 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="想定読了時間">1 分で読了</span></div></section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>目次</h2><ol><li><a href="#audio-analyser">Audio Analyser の仕組み：アーキテクチャの概要</a></li><li><a href="#azure-cognitive-services">Azure Cognitive Services：バッチ文字起こしエンジン</a></li><li><a href="#azure-ai-language">Azure AI Language による自然言語処理</a></li><li><a href="#azure-translator">Azure Translator による多言語サポート</a></li><li><a href="#cherrypy-web">CherryPy を Web レイヤーとして使用</a></li><li><a href="#section-6">よくある質問</a></li><li><a href="#section-7">参考文献</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Audio AnalyserはAzure Cognitive Servicesの音声テキスト変換ニューラルモデル、Text Analytics NLP、CherryPyを使用して音声録音を感情スコア、キーワード抽出、多言語翻訳付きの検索可能なトランスクリプトに変換します。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Audio Analyser の仕組み：アーキテクチャの概要.</strong> パイプラインには 5 つの独立したステージがあります：.</li>  <li><strong>Azure Cognitive Services：バッチ文字起こしエンジン.</strong> Azure Speech サービスのバッチ文字起こし API（/speechtotext/v3.0/transcriptions）は、Azure Blob Storage 内の音声ファイルへの参照と設定 JSON 本文を受け付けます。Audio Analyser は、事前署名された SAS URL を使用してローカルファイルを Blob Storage にアップロードし、文字起こしジョブを送信します。.</li>  <li><strong>Azure AI Language による自然言語処理.</strong> 文字起こし後、Audio Analyser は azure-ai-textanalytics Python SDK を通じて表示形式の文字起こしを Azure AI Language に送信します：.</li>  <li><strong>Azure Translator による多言語サポート.</strong> Azure Translator は、ユーザーが対象言語を要求した際に言語検出後に呼び出されます。このサービスは、ニューラル機械翻訳（NMT）で 135 の言語と方言をサポートしています。Audio Analyser は /translate REST エンドポイントを from パラメーターとして autodetect を使用するため、ソース言語の指定は不要です：.</li></ul></aside><!-- lead-start -->
-
-<!-- lead-end -->
-<blockquote>
-<p><strong>エグゼクティブサマリー / 主なポイント</strong></p>
-<ul>
-<li><strong>Azure Batch Transcription API</strong> は最大 2.5 時間の音声ファイル（WAV/MP3/OGG/FLAC）を受け付け、非同期で処理し、フレーズごとの <code>nBest</code> 候補、信頼度スコア、逆テキスト正規化（ITN）出力、オプションの話者ダイアリゼーションを含む <code>recognizedPhrases</code> JSON 配列を返します。ストリーミング接続は不要です（Microsoft Azure、2024 年）。</li>
-<li><strong>Microsoft のニューラル音響モデル</strong>は、Switchboard 会話ベンチマークにおける隠れマルコフモデル（HMM）ベースラインと比較して単語誤り率を約 50% 削減し、そのデータセットで専門の人間の文字起こし担当者と同等の約 5.1% の WER を達成しました（Xiong ら、Microsoft Research、2016 年 / 2021 年更新）。</li>
-<li><strong>Azure Text Analytics</strong>（現在は Azure AI Language の一部）は、Python SDK を使用した単一の <code>analyze_sentiment</code> または <code>begin_analyze_actions</code> 呼び出しで、キーフレーズ抽出、固有表現認識（NER）、意見マイニング付き感情分析、言語検出を通じて文字起こしテキストを処理します。</li>
-<li><strong>CherryPy</strong> は、URL ルーティング、マルチパートアップロード処理、セッション管理、Jinja2 テンプレートレンダリングを提供する Web レイヤーとして機能します。オーケストレーションのオーバーヘッドなしに、低コストの単一 VM 上で動作します。</li>
-<li><strong>Azure Translator NMT</strong> はソース言語を自動検出し、135 の対象言語のいずれかに文字起こしを翻訳します。同じパイプライン実行内で、元のテキストと翻訳されたテキストの両方に対して下流の NLP 分析が可能です。</li>
-</ul>
-</blockquote>
-<p><a href="https://audioanalyser.co/" title="Audio Analyser — Azure を活用した音声分析ツール"><strong>Audio Analyser ⧉</strong></a> は、Batch Transcription（音声テキスト変換）、Azure AI Language（Text Analytics、NLP）、Azure Translator（多言語出力）という 3 つの Azure Cognitive Services を単一のワークフローに連携させるオープンソースの Python アプリケーションです。Web インターフェースは CherryPy で提供され、結果は JSON、プレーンテキスト、またはローカルの SQLite データベースに保存できます。</p>
-<p>この記事では、各パイプラインステージの技術的なアーキテクチャ、Azure API のコントラクト、CherryPy レイヤーでの設計上の選択について説明します。</p>
-<h2 id="audio-analyser">Audio Analyser の仕組み：アーキテクチャの概要 <a class="heading-anchor" href="#audio-analyser" aria-label="リンク先 Audio Analyser の仕組み：アーキテクチャの概要">#</a></h2>
-<p>パイプラインには 5 つの独立したステージがあります：</p>
-<ol>
-<li><strong>アップロード</strong> — ユーザーが CherryPy Web インターフェースを通じて音声ファイルを送信します。CherryPy はファイルを一時ディレクトリに保存し、ジョブ ID を返します。</li>
-<li><strong>文字起こし</strong> — Audio Analyser がファイルを Azure Batch Transcription REST API に送信します。バッチ文字起こしは非同期であるため、アプリケーションはジョブステータスエンドポイントを定期的にポーリングし、<code>Succeeded</code> 状態になるまで待機してから次のステップに進みます。</li>
-<li><strong>NLP</strong> — 生の文字起こしテキストが Azure AI Language に渡され、キーフレーズ抽出、NER、感情分析、言語検出が行われます。</li>
-<li><strong>翻訳</strong>（オプション）— 対象言語が指定されている場合、文字起こしは Azure Translator に送信され、翻訳されたテキストに対して NLP 分析が再実行されます。</li>
-<li><strong>出力</strong> — 結果は選択した出力形式（JSON、TXT、または SQLite）に書き込まれ、CherryPy の Web UI にレンダリングされます。</li>
-</ol>
-<p>Python 標準ライブラリ以外で必要なランタイム依存関係は <code>azure-cognitiveservices-speech</code>、<code>azure-ai-textanalytics</code>、<code>azure-ai-translation-text</code>、および <code>cherrypy</code> のみです。すべての Azure 認証情報は環境変数から読み込まれます。</p>
-<h2 id="azure-cognitive-services">Azure Cognitive Services：バッチ文字起こしエンジン <a class="heading-anchor" href="#azure-cognitive-services" aria-label="リンク先 Azure Cognitive Services：バッチ文字起こしエンジン">#</a></h2>
-<p>Azure Speech サービスのバッチ文字起こし API（<code>/speechtotext/v3.0/transcriptions</code>）は、Azure Blob Storage 内の音声ファイルへの参照と設定 JSON 本文を受け付けます。Audio Analyser は、事前署名された SAS URL を使用してローカルファイルを Blob Storage にアップロードし、文字起こしジョブを送信します。</p>
-<p>最小限のジョブ送信ペイロード：</p>
-<pre><code class="language-json">{
-  &quot;contentUrls&quot;: [&quot;https://&lt;account&gt;.blob.core.windows.net/&lt;container&gt;/&lt;file&gt;.wav?&lt;sas&gt;&quot;],
-  &quot;locale&quot;: &quot;en-US&quot;,
-  &quot;displayName&quot;: &quot;audio-analyser-job-001&quot;,
-  &quot;properties&quot;: {
-    &quot;diarizationEnabled&quot;: true,
-    &quot;wordLevelTimestampsEnabled&quot;: true,
-    &quot;punctuationMode&quot;: &quot;DictatedAndAutomatic&quot;,
-    &quot;profanityFilterMode&quot;: &quot;Masked&quot;
-  }
-}
-</code></pre>
-<p>レスポンスの <code>recognizedPhrases</code> 配列には、認識された発話ごとに 1 つのオブジェクトが含まれます。各エントリには以下が含まれます：</p>
-<ul>
-<li><code>nBest[0].confidence</code> — 0 から 1 の浮動小数点数</li>
-<li><code>nBest[0].lexical</code> — 話された通りの生の単語</li>
-<li><code>nBest[0].itn</code> — 逆テキスト正規化形式（数字、日付、通貨が展開）</li>
-<li><code>nBest[0].display</code> — 句読点付きの読みやすい形式</li>
-<li><code>speaker</code> — ダイアリゼーションが有効な場合の整数話者 ID</li>
-</ul>
-<p><strong>Custom Speech</strong> ファインチューニングは、ドメイン固有の語彙に対して利用できます。発音辞書またはアダプテーションコーパス（ドメインを代表するテキスト文のセット）をアップロードすることで言語モデルが調整され、金融用語や医学用語などの専門コンテンツでの WER を大幅に削減できます。</p>
-<h2 id="azure-ai-language">Azure AI Language による自然言語処理 <a class="heading-anchor" href="#azure-ai-language" aria-label="リンク先 Azure AI Language による自然言語処理">#</a></h2>
-<p>文字起こし後、Audio Analyser は <code>azure-ai-textanalytics</code> Python SDK を通じて表示形式の文字起こしを Azure AI Language に送信します：</p>
-<pre><code class="language-python">from azure.ai.textanalytics import TextAnalyticsClient
-from azure.core.credentials import AzureKeyCredential
-
-client = TextAnalyticsClient(
-    endpoint=os.environ[&quot;AZURE_LANGUAGE_ENDPOINT&quot;],
-    credential=AzureKeyCredential(os.environ[&quot;AZURE_LANGUAGE_KEY&quot;])
-)
-
-documents = [{&quot;id&quot;: &quot;1&quot;, &quot;language&quot;: detected_lang, &quot;text&quot;: transcript}]
-
-sentiment_result = client.analyze_sentiment(documents, show_opinion_mining=True)
-for doc in sentiment_result:
-    print(f&quot;Sentiment: {doc.sentiment}&quot;)
-    print(f&quot;Scores: pos={doc.confidence_scores.positive:.2f} &quot;
-          f&quot;neg={doc.confidence_scores.negative:.2f} &quot;
-          f&quot;neu={doc.confidence_scores.neutral:.2f}&quot;)
-    for sentence in doc.sentences:
-        for opinion in sentence.mined_opinions:
-            print(f&quot;  Target: {opinion.target.text}, &quot;
-                  f&quot;Assessment: {[a.text for a in opinion.assessments]}&quot;)
-
-keyphrases_result = client.extract_key_phrases(documents)
-entities_result  = client.recognize_entities(documents)
-</code></pre>
-<p><code>show_opinion_mining=True</code> はアスペクトレベルの感情分析を有効にします。API はドキュメントレベルの極性だけでなく、特定のターゲット–評価ペア（例：ターゲット=&quot;音声品質&quot;、評価=&quot;不良&quot;）も返します。これにより、カスタマーサービスの通話分析で具体的な問題を特定するのに役立つ出力が得られます。</p>
-<p>固有表現認識は、スパンを次のいずれかに分類します：<code>Person</code>、<code>Organization</code>、<code>Location</code>、<code>Event</code>、<code>Product</code>、<code>DateTime</code>、<code>Quantity</code>、<code>IP</code>、<code>URL</code>、<code>Email</code>、<code>PersonType</code>、<code>Skill</code>、<code>Address</code>、<code>PhoneNumber</code>。</p>
-<h2 id="azure-translator">Azure Translator による多言語サポート <a class="heading-anchor" href="#azure-translator" aria-label="リンク先 Azure Translator による多言語サポート">#</a></h2>
-<p>Azure Translator は、ユーザーが対象言語を要求した際に言語検出後に呼び出されます。このサービスは、ニューラル機械翻訳（NMT）で 135 の言語と方言をサポートしています。Audio Analyser は <code>/translate</code> REST エンドポイントを <code>from</code> パラメーターとして <code>autodetect</code> を使用するため、ソース言語の指定は不要です：</p>
-<pre><code class="language-python">import requests, uuid
-
-url = &quot;https://api.cognitive.microsofttranslator.com/translate&quot;
-params = {&quot;api-version&quot;: &quot;3.0&quot;, &quot;to&quot;: target_lang}
-headers = {
-    &quot;Ocp-Apim-Subscription-Key&quot;: os.environ[&quot;AZURE_TRANSLATOR_KEY&quot;],
-    &quot;Ocp-Apim-Subscription-Region&quot;: os.environ[&quot;AZURE_TRANSLATOR_REGION&quot;],
-    &quot;Content-type&quot;: &quot;application/json&quot;,
-    &quot;X-ClientTraceId&quot;: str(uuid.uuid4())
-}
-body = [{&quot;text&quot;: transcript}]
-response = requests.post(url, params=params, headers=headers, json=body)
-translated_text = response.json()[0][&quot;translations&quot;][0][&quot;text&quot;]
-detected_language = response.json()[0][&quot;detectedLanguage&quot;][&quot;language&quot;]
-</code></pre>
-<p>翻訳後、Audio Analyser はオプションとして翻訳されたテキストに対して Text Analytics NLP パスを再実行し、キーフレーズと感情の出力をソース言語と対象言語の両方で利用できるようにします。</p>
-<p>出力形式の選択（JSON、TXT、SQLite）は起動時に設定されます。SQLite 出力では、各分析セッションがジョブ ID、タイムスタンプ、ソース言語、文字起こし、翻訳された文字起こし、感情スコア、JSON ブロブとしてのキーフレーズの列を持つ行として保存され、セッション間での SQL クエリが可能になります。</p>
-<h2 id="cherrypy-web">CherryPy を Web レイヤーとして使用 <a class="heading-anchor" href="#cherrypy-web" aria-label="リンク先 CherryPy を Web レイヤーとして使用">#</a></h2>
-<p>CherryPy は、クラスベースのコントローラーを使用して URL ルートを Python メソッドにマッピングします。Audio Analyser は 3 つのルートを使用します：</p>
-<table>
-<thead>
-<tr>
-<th>ルート</th>
-<th>メソッド</th>
-<th>説明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>GET /</code></td>
-<td><code>index()</code></td>
-<td>アップロードフォームをレンダリング</td>
-</tr>
-<tr>
-<td><code>POST /analyse</code></td>
-<td><code>analyse()</code></td>
-<td>マルチパートアップロードを受け付け、パイプラインを起動し、ジョブ ID を返す</td>
-</tr>
-<tr>
-<td><code>GET /results/&lt;job_id&gt;</code></td>
-<td><code>results()</code></td>
-<td>ジョブステータスをポーリング；完了時に結果ページをレンダリング</td>
-</tr>
-</tbody>
-</table>
-<p>最小限の設定でサーバーのフットプリントを小さく保ちます：</p>
-<pre><code class="language-python">import cherrypy
-
-cherrypy.config.update({
-    &quot;server.socket_host&quot;: &quot;0.0.0.0&quot;,
-    &quot;server.socket_port&quot;: 8080,
-    &quot;tools.sessions.on&quot;: True,
-    &quot;tools.sessions.timeout&quot;: 60
-})
-cherrypy.quickstart(AudioAnalyserApp(), &quot;/&quot;, conf)
-</code></pre>
-<p>セッション状態は、現在のジョブ ID、選択した出力形式、対象翻訳言語を保持します。CherryPy のビルトインセッションストレージはデフォルトでファイルベースであり、外部キャッシュレイヤーは不要です。</p>
-<h2 id="section-6">よくある質問 <a class="heading-anchor" href="#section-6" aria-label="リンク先 よくある質問">#</a></h2>
-<p><strong>Audio Analyser はどのような音声形式とファイルサイズを受け付けますか？</strong>
-Azure Batch Transcription API は、最大 2.5 時間の WAV、MP3、OGG、FLAC ファイルをサポートしています。この範囲を超えるファイルはアップロード前に分割する必要があります。ステレオファイルは受け付けられ、モノラル変換は不要です。</p>
-<p><strong>話者ダイアリゼーションはどのように機能しますか？</strong>
-バッチ文字起こしリクエストで <code>diarizationEnabled: true</code> を設定すると、Azure の話者分離モデルが有効になります。レスポンス内の各 <code>recognizedPhrase</code> には整数の <code>speaker</code> フィールドが含まれます。モデルは音響特性によって話者を識別し、セッション内で一貫した ID を割り当てますが、別途音声プロファイルの登録ステップなしには話者が誰であるかは特定しません。</p>
-<p><strong>文字起こし後、音声ファイルは保持されますか？</strong>
-音声ファイルは短期間の SAS URL を使用して Azure Blob Storage にアップロードされ、アップロード完了後に一時ローカルディレクトリから削除されます。Azure Blob Storage でのブロブの保持は、コンテナのライフサイクルポリシーに依存します。デフォルトでは Audio Analyser は明示的な削除ポリシーを設定しないため、本番環境では Azure ポータルで短い TTL ルール（例：1 日以上経過したブロブを削除）を設定することをお勧めします。</p>
-<p><strong>翻訳なしで NLP 分析を実行できますか？</strong>
-はい。翻訳はオプションのパイプラインステージで、<code>--target-lang</code> CLI フラグまたは Web UI の対象言語ドロップダウンで制御されます。対象言語が選択されていない場合、パイプラインは音声テキスト変換と Text Analytics のみを実行します。</p>
-<h2 id="section-7">参考文献 <a class="heading-anchor" href="#section-7" aria-label="リンク先 参考文献">#</a></h2>
-<ol>
-<li>Microsoft. <em>バッチ文字起こしの概要 — Azure AI サービス</em>. Microsoft Learn, 2024. <a href="https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-transcription">https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-transcription</a></li>
-<li>Xiong, W. et al. &quot;Achieving Human Parity in Conversational Speech Recognition.&quot; <em>Microsoft Research テクニカルレポート</em>, 2016; 2021 年更新. <a href="https://arxiv.org/abs/1610.05256">https://arxiv.org/abs/1610.05256</a></li>
-<li>Microsoft. <em>Azure AI Language とは？</em> Microsoft Learn, 2024. <a href="https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview">https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview</a></li>
-<li>Microsoft. <em>Azure AI Translator — サポートされている言語</em>. Microsoft Learn, 2024. <a href="https://learn.microsoft.com/en-us/azure/ai-services/translator/language-support">https://learn.microsoft.com/en-us/azure/ai-services/translator/language-support</a></li>
-</ol>
-<!-- enrich-start -->
-
-<p class="post-reviewed">最終確認日 <time datetime="2026-05-24">2026-05-24</time>.</p>
-
-<!-- enrich-end -->
-<aside class="author-card" aria-label="著者について"><img alt="Sebastien Rousseau の肖像" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/ja/nitsuite/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">シニア・バンキング・テクノロジスト。応用AI、ISO 20022 への移行、金融サービス向けポスト量子暗号、ホールセール決済の構造変革について執筆しています。</span><span class="author-credentials">HSBC コマーシャル・アンド・インベストメント・バンク、PayPal、Barclays、Shazam、AKQA、Virgin Group にて 20 年以上の経験。 <a href="/ja/nitsuite/index.html">プロフィール全文</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最終確認日 <time datetime="2026-05-27">2026-05-27</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>目次</h2><ol><li><a href="#section-1">インサイト</a></li><li><a href="#section-3">アイデア</a></li><li><a href="#section-5">イノベーション</a></li><li><a href="#section-7">アプローチ</a></li><li><a href="#section-9">ユースケース</a></li><li><a href="#section-11">課題</a></li><li><a href="#section-13">多言語</a></li><li><a href="#section-15">結論</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> OpenAI Whisper、リアルタイム音声テキスト変換、多言語翻訳によるオーディオインサイトのための AI ソリューション。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>インサイト.</strong> 会議、コールセンター、講演、ポッドキャスト、エグゼクティブインタビュー —— オーディオは、しばしば過小評価されている膨大な構造化されていないデータソースです。AI はこのデータをアクション可能なインサイトに変換します。.</li>  <li><strong>アイデア.</strong> OpenAI の Whisper は、複数の言語(99 言語)で高精度なリアルタイム音声テキスト変換を提供するオープンソースモデルです。これは、業界が成熟したオーディオ AI の主要な基盤です。.</li>  <li><strong>イノベーション.</strong> オーディオは、AI が分析できる豊富なデータです:話者識別、感情分析、トピック抽出、要約、翻訳。これらは、より広範なマルチモーダルパイプラインに組み合わされます。.</li>  <li><strong>アプローチ.</strong> リアルタイム転写(コール中)とバッチ処理(後で会議の要約のため)は、異なるトレードオフを持ちます:遅延 vs 精度、ストリーミング vs ファイナル品質、ライブ vs ポストプロダクション。.</li></ul></aside><p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp&w=1600&format=webp&q=85" alt="波形を持つマイク"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<h2 id="section-1">インサイト <a class="heading-anchor" href="#section-1" aria-label="リンク先 インサイト">#</a></h2>
+<h3 id="section-2">オーディオは大規模なデータソース <a class="heading-anchor" href="#section-2" aria-label="リンク先 オーディオは大規模なデータソース">#</a></h3>
+<p>会議、コールセンター、講演、ポッドキャスト、エグゼクティブインタビュー —— オーディオは、しばしば過小評価されている膨大な構造化されていないデータソースです。AI はこのデータをアクション可能なインサイトに変換します。</p>
+<h2 id="section-3">アイデア <a class="heading-anchor" href="#section-3" aria-label="リンク先 アイデア">#</a></h2>
+<h3 id="whisper-ai">Whisper はオーディオ AI の基盤 <a class="heading-anchor" href="#whisper-ai" aria-label="リンク先 Whisper はオーディオ AI の基盤">#</a></h3>
+<p>OpenAI の Whisper は、複数の言語(99 言語)で高精度なリアルタイム音声テキスト変換を提供するオープンソースモデルです。これは、業界が成熟したオーディオ AI の主要な基盤です。</p>
+<h2 id="section-5">イノベーション <a class="heading-anchor" href="#section-5" aria-label="リンク先 イノベーション">#</a></h2>
+<h3 id="section-6">マルチモーダルパイプライン <a class="heading-anchor" href="#section-6" aria-label="リンク先 マルチモーダルパイプライン">#</a></h3>
+<p>オーディオは、AI が分析できる豊富なデータです:話者識別、感情分析、トピック抽出、要約、翻訳。これらは、より広範なマルチモーダルパイプラインに組み合わされます。</p>
+<h2 id="section-7">アプローチ <a class="heading-anchor" href="#section-7" aria-label="リンク先 アプローチ">#</a></h2>
+<h3 id="vs">リアルタイム vs バッチ <a class="heading-anchor" href="#vs" aria-label="リンク先 リアルタイム vs バッチ">#</a></h3>
+<p>リアルタイム転写(コール中)とバッチ処理(後で会議の要約のため)は、異なるトレードオフを持ちます:遅延 vs 精度、ストリーミング vs ファイナル品質、ライブ vs ポストプロダクション。</p>
+<h2 id="section-9">ユースケース <a class="heading-anchor" href="#section-9" aria-label="リンク先 ユースケース">#</a></h2>
+<h3 id="section-10">銀行とフィンテックでの応用 <a class="heading-anchor" href="#section-10" aria-label="リンク先 銀行とフィンテックでの応用">#</a></h3>
+<p>主要な銀行とフィンテックのユースケース:コールセンター品質管理、コンプライアンスチェック、顧客感情分析、会議要約、規制レポート、トレジャリーコール記録のためのコンプライアンス。</p>
+<h2 id="section-11">課題 <a class="heading-anchor" href="#section-11" aria-label="リンク先 課題">#</a></h2>
+<h3 id="section-12">プライバシー、セキュリティ、コンプライアンス <a class="heading-anchor" href="#section-12" aria-label="リンク先 プライバシー、セキュリティ、コンプライアンス">#</a></h3>
+<p>オーディオデータには、機密性の高い顧客情報が含まれます。GDPR、CCPA、PCI-DSS、SOC 2 への準拠は、エンタープライズオーディオ AI システムの慎重な設計を必要とします。</p>
+<h2 id="section-13">多言語 <a class="heading-anchor" href="#section-13" aria-label="リンク先 多言語">#</a></h2>
+<h3 id="section-14">多言語環境 <a class="heading-anchor" href="#section-14" aria-label="リンク先 多言語環境">#</a></h3>
+<p>グローバル銀行は、20+ 言語の顧客と従業員をサポートする必要があります。Whisper の多言語サポートは、これを実現可能にし、追加の自動翻訳がコンテンツを共通言語に統合します。</p>
+<h2 id="section-15">結論 <a class="heading-anchor" href="#section-15" aria-label="リンク先 結論">#</a></h2>
+<h3 id="ai">オーディオ AI は変革的な機会 <a class="heading-anchor" href="#ai" aria-label="リンク先 オーディオ AI は変革的な機会">#</a></h3>
+<p>オーディオは、多くの組織にとっての未開拓のリソースです。Whisper のような AI ツールは、それをアクセス可能で、検索可能で、有用なデータに変えます。準備された企業は、戦略的な利点を獲得します。</p>
+<aside class="author-card" aria-label="著者について"><img alt="Sebastien Rousseau の肖像" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/ja/nitsuite/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">シニア・バンキング・テクノロジスト。応用AI、ISO 20022 への移行、金融サービス向けポスト量子暗号、ホールセール決済の構造変革について執筆しています。</span><span class="author-credentials">HSBC コマーシャル・アンド・インベストメント・バンク、PayPal、Barclays、Shazam、AKQA、Virgin Group にて 20 年以上の経験。 <a href="/ja/nitsuite/index.html">プロフィール全文</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最終確認日 <time datetime="2026-05-27">2026-05-27</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">関連記事</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/ja/2024-02-08-ai-ga-shourai-wo-katadoru-koukoku-no-kakushin/" class="related-media" aria-label="AI が未来を形作る:広告の革新" tabindex="-1"><img alt="A robotic woman with butterflies and flowers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/advertising-ai.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai"><a href="https://sebastienrousseau.com/ja/2024-02-08-ai-ga-shourai-wo-katadoru-koukoku-no-kakushin/">AI が未来を形作る:広告の革新</a> <a class="heading-anchor" href="#ai" aria-label="リンク先 AI が未来を形作る:広告の革新">#</a></h3><p><time datetime="2024-02-08">2024-02-08</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/ja/2024-02-13-eu-ai-kisei-sekai-no-ai-kisei-no-shourai/" class="related-media" aria-label="EU AI 規制:世界の AI 規制の未来を形作る" tabindex="-1"><img alt="A person sitting on black bench reading newspaper" src="https://cloudcdn.pro/api/transform?url=/stocks/images/ryoji-iwata-a-qsFZimp1M.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="eu-ai-ai"><a href="https://sebastienrousseau.com/ja/2024-02-13-eu-ai-kisei-sekai-no-ai-kisei-no-shourai/">EU AI 規制:世界の AI 規制の未来を形作る</a> <a class="heading-anchor" href="#eu-ai-ai" aria-label="リンク先 EU AI 規制:世界の AI 規制の未来を形作る">#</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/ja/2024-01-23-ai-puronputo-enjiniaringu-no-shinpo/" class="related-media" aria-label="AI Prompt Engineering 2024: Techniques That Work" tabindex="-1"><img alt="A man analysing data on screens" src="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-prompt-engineering-modern-office.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-prompt-engineering-2024-techniques-that-work"><a href="https://sebastienrousseau.com/ja/2024-01-23-ai-puronputo-enjiniaringu-no-shinpo/">AI Prompt Engineering 2024: Techniques That Work</a> <a class="heading-anchor" href="#ai-prompt-engineering-2024-techniques-that-work" aria-label="リンク先 AI Prompt Engineering 2024: Techniques That Work">#</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ja/2024-03-18-marutimoodaru-llm-de-ai-wo-zenshin-mm1-kara-no-insaito/index.html" class="related-media" aria-label="マルチモーダル LLM で AI を前進:MM1 からの洞察" tabindex="-1"><img alt="Banner for the Apple MM1" src="https://cloudcdn.pro/api/transform?url=/stocks/images/mm1-visual.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="llm-ai-mm1"><a href="https://sebastienrousseau.com/ja/2024-03-18-marutimoodaru-llm-de-ai-wo-zenshin-mm1-kara-no-insaito/index.html">マルチモーダル LLM で AI を前進:MM1 からの洞察</a> <a class="heading-anchor" href="#llm-ai-mm1" aria-label="リンク先 マルチモーダル LLM で AI を前進:MM1 からの洞察">#</a></h3><p><time datetime="2024-03-18">2024-03-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ja/2024-03-04-mistral-ai-no-le-chat-taiwa-gata-ai-no-shinjidai/index.html" class="related-media" aria-label="Mistral AI の Le Chat:対話型 AI の新時代" tabindex="-1"><img alt="Colourful, abstract digital art of a cat" src="https://cloudcdn.pro/api/transform?url=/stocks/images/abstract-digital-art-of-a-cat.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="mistral-ai-le-chat-ai"><a href="https://sebastienrousseau.com/ja/2024-03-04-mistral-ai-no-le-chat-taiwa-gata-ai-no-shinjidai/index.html">Mistral AI の Le Chat:対話型 AI の新時代</a> <a class="heading-anchor" href="#mistral-ai-le-chat-ai" aria-label="リンク先 Mistral AI の Le Chat:対話型 AI の新時代">#</a></h3><p><time datetime="2024-03-04">2024-03-04</time></p></footer></article>
 </div>
-</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">出典・参考文献</h2><ol class="article-sources-list"><li><a href="https://arxiv.org/abs/1610.05256" rel="external noopener nofollow"><span class="source-host">arxiv.org</span><span class="source-path">/abs/1610.05256</span></a></li></ol></aside><nav class="post-pagination" aria-label="記事ページネーション"><a class="post-pagination-prev" href="/ja/2024-01-23-ai-puronputo-enjiniaringu-no-shinpo/"><span class="post-pagination-label">前へ</span><span class="post-pagination-title">AI Prompt Engineering 2024: Techniques That Work</span></a><a class="post-pagination-next" href="/ja/2024-02-08-ai-ga-shourai-wo-katadoru-koukoku-no-kakushin/"><span class="post-pagination-label">次へ</span><span class="post-pagination-title">Generative AI in Advertising: Amazon Rufus & Meta</span></a></nav></div>
+</aside><nav class="post-pagination" aria-label="記事ページネーション"><a class="post-pagination-prev" href="/ja/2024-01-23-ai-puronputo-enjiniaringu-no-shinpo/"><span class="post-pagination-label">前へ</span><span class="post-pagination-title">AI Prompt Engineering 2024: Techniques That Work</span></a><a class="post-pagination-next" href="/ja/2024-02-08-ai-ga-shourai-wo-katadoru-koukoku-no-kakushin/"><span class="post-pagination-label">次へ</span><span class="post-pagination-title">Generative AI in Advertising: Amazon Rufus & Meta</span></a></nav></div>
     </main>
 
 <!-- gen-layouts:footer-start -->
@@ -408,7 +275,7 @@ Azure Batch Transcription API は、最大 2.5 時間の WAV、MP3、OGG、FLAC 
     <!-- Schema.org structured data -->
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ja"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ja"}]}</script>
 
-        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":567,"about":{"@type":"Thing","name":"Python","sameAs":["https://en.wikipedia.org/wiki/Python_(programming_language)","https://www.wikidata.org/wiki/Q28865"]},"headline":"Audio Analyser: Azure Speech, NLP, and Translation Pipeline","description":"Audio AnalyserはAzure Cognitive Servicesの音声テキスト変換ニューラルモデル、Text Analytics NLP、CherryPyを使用して音声録音を感情スコア、キーワード抽出、多言語翻訳付きの検索可能なトランスクリプトに変換します。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp","width":"100vw","height":"100vh","caption":"ミニマリストでモダンなコーポレートオフィス"},"url":"https://sebastienrousseau.com/ja/2024-01-29-ai-ni-yoru-onsei-bunseki-honyaku-to-insaito/","datePublished":"2024-01-29T05:06:06+00:00","dateModified":"2026-05-24","inLanguage":"ja","keywords":"Azure Cognitive Services、音声テキスト変換、ニューラル音響モデル、Azure Text Analytics、自然言語処理、感情分析、CherryPy、バッチ転写API、多言語ASR、Azure Translator、音声転写、Pythonオーディオ処理","articleSection":"AI","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ja/2024-01-29-ai-ni-yoru-onsei-bunseki-honyaku-to-insaito/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ja"},"citation":[{"@type":"CreativeWork","url":"https://arxiv.org/abs/1610.05256"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ja/"},{"@type":"ListItem","position":3,"name":"Audio Analyser: Azure Speech, NLP, and Translation Pipeline","item":"https://sebastienrousseau.com/ja/2024-01-29-ai-ni-yoru-onsei-bunseki-honyaku-to-insaito/"}]}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":61,"about":{"@type":"Thing","name":"Generative AI","sameAs":["https://en.wikipedia.org/wiki/Generative_artificial_intelligence","https://www.wikidata.org/wiki/Q108766533","https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html"]},"headline":"AI による音声分析、翻訳、インサイト","description":"OpenAI Whisper、リアルタイム音声テキスト変換、多言語翻訳によるオーディオインサイトのための AI ソリューション。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp","width":"100vw","height":"100vh","caption":"波形を持つマイク"},"url":"https://sebastienrousseau.com/ja/2024-01-29-ai-ni-yoru-onsei-bunseki-honyaku-to-insaito/","datePublished":"2024-01-29T05:06:06+00:00","dateModified":"2026-05-24","inLanguage":"ja","keywords":"AI, 音声認識, 音声テキスト変換, Whisper, 翻訳, 多言語, オーディオインサイト","articleSection":"AI","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ja/2024-01-29-ai-ni-yoru-onsei-bunseki-honyaku-to-insaito/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ja"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ja/"},{"@type":"ListItem","position":3,"name":"AI による音声分析、翻訳、インサイト","item":"https://sebastienrousseau.com/ja/2024-01-29-ai-ni-yoru-onsei-bunseki-honyaku-to-insaito/"}]}]}</script>
 <script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
   
 <!-- SSG Search Widget -->
@@ -434,5 +301,5 @@ Azure Batch Transcription API は、最大 2.5 時間の WAV、MP3、OGG、FLAC 
 </div>
 <script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
 </div>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Audio Analyser: Azure Speech, NLP, and Translation Pipeline","url":"https://sebastienrousseau.com/ja/2024-01-29-ai-ni-yoru-onsei-bunseki-honyaku-to-insaito/","inLanguage":"ja-JP","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"Azure Cognitive Services、音声テキスト変換、ニューラル音響モデル、Azure Text Analytics、自然言語処理、感情分析、CherryPy、バッチ転写API、多言語ASR、Azure Translator、音声転写、Pythonオーディオ処理","programmingLanguage":"Python"}</script></body>
+</body>
 </html>

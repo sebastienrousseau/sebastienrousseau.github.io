@@ -2,6 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>de-DE</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-27T22:09:52+00:00</news:publication_date>
+    <news:title>KI als Betriebssystem des Zahlungsverkehrs: Betrug, Routing, Resilienz und Compliance 2026</news:title>
+    <news:keywords>KI-Zahlungsverkehr 2026, Zahlungsbetrug, Payment Routing, Echtzeit-Betrugsabwehr, ISO 20022 KI, Resilienz im Zahlungsverkehr, Transaktionsanalyse, Liquiditätsprognose</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/de/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>de-DE</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>Magnifica Humanitas: Die erste päpstliche KI-Enzyklika gelesen</news:title>
+    <news:keywords>Magnifica Humanitas, Pope Leo XIV, KI-Enzyklika, Ethik der künstlichen Intelligenz, Ethik des Quantencomputings, Rerum Novarum, Turm zu Babel, Technologie ist nie neutral, Transhumanismus, Posthumanismus, Menschenwürde, technologisches Paradigma, Eisenbahn Automobil Atomkraft Internet, moralische Panik in der Technikgeschichte, Lucy Wissenstransfer, Hoffnung durch KI, EU AI Act, DORA, Anthropic, Sebastien Rousseau</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/de/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>de-DE</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>Stablecoins vs. tokenisierte Einlagen 2026: Was Banken wirklich verteidigen müssen</news:title>
+    <news:keywords>Stablecoins 2026, tokenisierte Einlagen, Bankeinlagen, GENIUS Act, JPM Coin, Deposit Tokens, Stablecoin-Reserven, Bankrefinanzierung, digitales Geld</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/de/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>de-DE</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-25T06:06:06+00:00</news:publication_date>
+    <news:title>Programmierbare Liquidität 2026: KI, tokenisierte Einlagen, Echtzeit-Treasury</news:title>
+    <news:keywords>programmierbare Liquidität 2026, Treasury-Orchestrierung, KI-Treasury, tokenisierte Einlagen, Echtzeit-Liquidität, Stablecoins Treasury, Multi-Rail-Zahlungsverkehr, virtuelle Konten, Transaction Banking, Sicherheitenmobilität</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/de/2026-05-24-uk-zahlungsverkehr-forward-plan-stablecoins-open-banking-tokenised-zahlungsverkehr-2026/</loc>
   <news:news>
     <news:publication>
@@ -326,18 +374,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/de/2024-02-12-akande-sprachassistent-revolution-persoenlicher-und-fuehrungsassistenz/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>de-DE</news:language>
-    </news:publication>
-    <news:publication_date>2024-02-12T06:06:06+00:00</news:publication_date>
-    <news:title>Àkàndé: GPT-Powered Voice Assistant for Executives</news:title>
-    <news:keywords>Àkàndé, OpenAI GPT-4, Whisper STT, SQLite Caching, fpdf2, Python-Sprachassistent, Chat Completions API, PDF-Zusammenfassung, SHA-256-Cache, Text-to-Speech, KI-Führungsassistent, Open-Source</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/de/2024-02-08-werbung-revolutionieren-wie-ki-die-zukunft-gestaltet/</loc>
   <news:news>
     <news:publication>
@@ -357,32 +393,8 @@
       <news:language>de-DE</news:language>
     </news:publication>
     <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
-    <news:title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</news:title>
-    <news:keywords>Azure Cognitive Services, Spracherkennung, neuronales akustisches Modell, Azure Text Analytics, natürliche Sprachverarbeitung, Sentiment-Analyse, CherryPy, Batch Transcription API, mehrsprachige ASR, Azure Translator, Audiotranskription, Python-Audioverarbeitung</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/de/2024-01-29-ki-gestuetzte-audio-einblicke-analyse-uebersetzungen/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>de-DE</news:language>
-    </news:publication>
-    <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
     <news:title>KI-gestützte Sprachanalyse, Übersetzung und Insights-Tool</news:title>
     <news:keywords>Audio Analyser, Azure AI, Speech-to-Text, Audiodatenanalyse, Textanalyse, KI-Übersetzungen, Audio-Insights, automatisierte Transkription, Audiodatenverarbeitung, maschinelles Lernen</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/de/2024-01-23-fortschritte-im-ki-prompt-engineering/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>de-DE</news:language>
-    </news:publication>
-    <news:publication_date>2024-01-23T06:06:06+00:00</news:publication_date>
-    <news:title>AI Prompt Engineering 2024: Techniques That Work</news:title>
-    <news:keywords>Chain-of-Thought-Prompting, Few-Shot-Lernen, Zero-Shot-Prompting, In-Context-Lernen, Prompt-Injection, ReAct, Self-Consistency, Retrieval-Augmented Generation, BloombergGPT, System-Prompt, Prompt-Sicherheit, LLM-Agent</news:keywords>
   </news:news>
 </url>
 <url>
@@ -513,18 +525,6 @@
       <news:language>de-DE</news:language>
     </news:publication>
     <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
-    <news:title>Generative AI in 2023: How It Works, Where It Lands</news:title>
-    <news:keywords>Generative AI, Large Language Model, Transformer-Architektur, GPT-4, AI in Finanzdienstleistungen, Halluzination, Retrieval-Augmented Generation, AI-Governance, Foundation Model, Fine-Tuning</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/de/2023-11-12-generative-ki-im-detail/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>de-DE</news:language>
-    </news:publication>
-    <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
     <news:title>Generative KI im Jahr 2023: Funktionsweise und Einsatzfelder</news:title>
     <news:keywords>generative KI, Technologie, Zukunft, Wirkung, Ethik, Synergien, Innovation, Kreativität, Transformation, Entwicklung</news:keywords>
   </news:news>
@@ -539,18 +539,6 @@
     <news:publication_date>2023-11-05T06:06:06+00:00</news:publication_date>
     <news:title>Mathematische und kryptografische Konstanten für die Rust-Sicherheit</news:title>
     <news:keywords>mathematische Konstanten, kryptografische Konstanten, Rust-Sicherheit, sichere Kommunikation, Verschlüsselung, RSA, Elliptische-Kurven-Kryptografie, Common (CMN) Bibliothek, Rust-Anwendungen, mathematische Berechnungen</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/de/2023-10-26-libmake-codegenerator-fuer-hochwertige-rust-bibliotheken/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>de-DE</news:language>
-    </news:publication>
-    <news:publication_date>2023-10-26T06:06:06+00:00</news:publication_date>
-    <news:title>LibMake: Rust Library Scaffold Generator</news:title>
-    <news:keywords>LibMake, Rust code generator, cargo scaffold, Rust library template, Tera templating, GitHub Actions Rust, cargo-audit, Rust API Guidelines, boilerplate generator, Rust CI workflow</news:keywords>
   </news:news>
 </url>
 <url>
@@ -597,18 +585,6 @@
       <news:language>de-DE</news:language>
     </news:publication>
     <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
-    <news:title>Automating ISO 20022 Payment Files Creation with pain001</news:title>
-    <news:keywords>pain001, ISO 20022, pain.001.001.09, CustomerCreditTransferInitiation, SEPA Credit Transfer, CBPR+, payment automation, XML generation, XSD validation, GrpHdr, PmtInf, CdtTrfTxInf, CtrlSum, SWIFT</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/de/2023-09-29-iso-20022-konforme-zahlungsdateien-automatisieren-mit-pain001/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>de-DE</news:language>
-    </news:publication>
-    <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
     <news:title>ISO 20022-konforme Zahlungsdateien automatisieren mit Pain001</news:title>
     <news:keywords>ISO 20022, pain.001, Pain001, Python, Zahlungen, Automatisierung, CBPR+, HVPS+, SEPA, Compliance, Überweisungen</news:keywords>
   </news:news>
@@ -626,18 +602,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/de/2018-02-15-entstehung-der-express-transaction-credits-plattform/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>de-DE</news:language>
-    </news:publication>
-    <news:publication_date>2018-02-15T06:06:06+00:00</news:publication_date>
-    <news:title>The making of the Express Transaction Credits Platform</news:title>
-    <news:keywords>EXTC platform, ERC-223, Ethereum smart contracts, Token-Architektur, multi-signature, zeitgesperrter Transfer, blockchain payments, besicherte Kredite, dezentralisierte Finanzen, 2018 crypto</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/de/2018-02-04-neue-kryptowaehrung-schnellere-zahlungsloesung-fuer-die-zukunft/</loc>
   <news:news>
     <news:publication>
@@ -647,18 +611,6 @@
     <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
     <news:title>Eine neue Kryptowährung und eine schnellere Zahlungslösung für die Zukunft</news:title>
     <news:keywords>EXTC Network, Kryptowährung, schnellere Zahlungen, Ethereum, EIP20, Smart Contracts, Blockchain, grenzüberschreitende Zahlungen, finanzielle Inklusion</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/de/2018-02-04-neue-kryptowaehrung-schnellere-zahlungsloesung-fuer-die-zukunft/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>de-DE</news:language>
-    </news:publication>
-    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
-    <news:title>Vorstellung einer neuen Kryptowährung und schnelleren Zahlungslösung</news:title>
-    <news:keywords>EXTC, ERC-223, Ethereum Smart Contracts, schnellere Zahlungen, Kryptowährung, Blockchain-Zahlungen, Zahlungs-Token, dezentralisierte Finanzen, ERC-20, grenzüberschreitende Zahlungen</news:keywords>
   </news:news>
 </url>
 <url>
@@ -683,18 +635,6 @@
     <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
     <news:title>Die Technologie hinter Blockchain verstehen</news:title>
     <news:keywords>Blockchain, Ethereum, Smart Contract, Kryptowährung, Solidity, Geth, dApps, ERC-20, Tokenisierung, Testnet</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/de/2018-01-09-die-technologie-hinter-blockchain-verstehen/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>de-DE</news:language>
-    </news:publication>
-    <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
-    <news:title>Understanding the Technology behind Blockchain</news:title>
-    <news:keywords>Blockchain-Technologie, kryptografischer Hash, Merkle-Baum, verteilter Konsens, Proof of Work, Ethereum, Smart Contracts, EVM, Solidity, ERC-20, verteiltes Hauptbuch, dezentralisierte Finanzen</news:keywords>
   </news:news>
 </url>
 <url>

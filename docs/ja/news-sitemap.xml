@@ -2,6 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ja-JP</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-27T06:06:06+00:00</news:publication_date>
+    <news:title>決済のオペレーティングシステムとしての AI: 2026 年の不正、ルーティング、レジリエンス、コンプライアンス</news:title>
+    <news:keywords>AI 決済 2026, 決済不正, 決済ルーティング, リアルタイム不正防止, ISO 20022 AI, 決済レジリエンス, 取引分析, キャッシュフロー予測, FedNow, RTP, エージェント型コマース</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ja/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ja-JP</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>Magnifica Humanitas:AI業界の視点から読む初のAI回勅</news:title>
+    <news:keywords>Magnifica Humanitas, Pope Leo XIV, AI回勅, 人工知能倫理, 量子コンピューティング倫理, Rerum Novarum, バベルの塔, 技術は中立ではない, トランスヒューマニズム, ポストヒューマニズム, 人間の尊厳, 技術的パラダイム, 鉄道 自動車 原子力 インターネット, 技術史における道徳的パニック, Lucy 知識伝達, AIへの希望, EU AI Act, DORA, Anthropic, Sebastien Rousseau</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ja/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ja-JP</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>ステーブルコイン vs トークン化預金 2026:銀行が本当に守るべきもの</news:title>
+    <news:keywords>ステーブルコイン 2026, トークン化預金, 銀行預金, GENIUS Act, JPM Coin, デポジットトークン, ステーブルコイン準備金, 銀行ファンディング, デジタルマネー</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ja/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ja-JP</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-25T06:06:06+00:00</news:publication_date>
+    <news:title>2026 年のプログラマブル流動性:AI・トークン化預金・リアルタイムトレジャリー</news:title>
+    <news:keywords>プログラマブル流動性 2026, トレジャリーオーケストレーション, AI トレジャリー, トークン化預金, リアルタイム流動性, ステーブルコイン トレジャリー, マルチレール決済, バーチャル口座, トランザクションバンキング, 担保流動性, ISO 20022, TMS, Standard Chartered, J.P. Morgan, Oliver Wyman</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ja/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</loc>
   <news:news>
     <news:publication>
@@ -326,18 +374,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/ja/2024-02-12-akande-onsei-ashisutanto-kojin-to-yakuin-shien-no-kakushin/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>ja-JP</news:language>
-    </news:publication>
-    <news:publication_date>2024-02-12T06:06:06+00:00</news:publication_date>
-    <news:title>Àkàndé: GPT-Powered Voice Assistant for Executives</news:title>
-    <news:keywords>Àkàndé、OpenAI GPT-4、Whisper STT、SQLiteキャッシュ、fpdf2、Python音声アシスタント、チャット補完API、PDF要約生成、SHA-256キャッシュ、テキスト読み上げ、エグゼクティブアシスタントAI、オープンソース</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/ja/2024-02-08-ai-ga-shourai-wo-katadoru-koukoku-no-kakushin/</loc>
   <news:news>
     <news:publication>
@@ -359,30 +395,6 @@
     <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
     <news:title>AI による音声分析、翻訳、インサイト</news:title>
     <news:keywords>AI, 音声認識, 音声テキスト変換, Whisper, 翻訳, 多言語, オーディオインサイト</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/ja/2024-01-29-ai-ni-yoru-onsei-bunseki-honyaku-to-insaito/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>ja-JP</news:language>
-    </news:publication>
-    <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
-    <news:title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</news:title>
-    <news:keywords>Azure Cognitive Services、音声テキスト変換、ニューラル音響モデル、Azure Text Analytics、自然言語処理、感情分析、CherryPy、バッチ転写API、多言語ASR、Azure Translator、音声転写、Pythonオーディオ処理</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/ja/2024-01-23-ai-puronputo-enjiniaringu-no-shinpo/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>ja-JP</news:language>
-    </news:publication>
-    <news:publication_date>2024-01-23T06:06:06+00:00</news:publication_date>
-    <news:title>AI Prompt Engineering 2024: Techniques That Work</news:title>
-    <news:keywords>chain-of-thoughtプロンプティング, フューショット学習, ゼロショットプロンプティング, インコンテキスト学習, プロンプトインジェクション, ReAct, 自己整合性, 検索拡張生成, BloombergGPT, システムプロンプト, プロンプトセキュリティ, LLMエージェント</news:keywords>
   </news:news>
 </url>
 <url>
@@ -513,18 +525,6 @@
       <news:language>ja-JP</news:language>
     </news:publication>
     <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
-    <news:title>Generative AI in 2023: How It Works, Where It Lands</news:title>
-    <news:keywords>生成AI, 大規模言語モデル, transformer architecture, GPT-4, 金融サービスAI, ハルシネーション, retrieval-augmented generation, AIガバナンス, foundation model, ファインチューニング</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/ja/2023-11-12-seisei-ai-wo-tankyuu-suru/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>ja-JP</news:language>
-    </news:publication>
-    <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
     <news:title>生成 AI を探求する</news:title>
     <news:keywords>生成 AI, LLM, 大規模言語モデル, 拡散モデル, GPT, Claude, Gemini, エンタープライズ AI</news:keywords>
   </news:news>
@@ -539,18 +539,6 @@
     <news:publication_date>2023-11-05T06:06:06+00:00</news:publication_date>
     <news:title>Rust セキュリティのための数学的・暗号的定数</news:title>
     <news:keywords>暗号定数, 数学, Rust, ECC, RSA, NIST 曲線, PQC, セキュリティ, mathconst</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/ja/2023-10-26-libmake-rust-raiburari-no-koodo-jenereta/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>ja-JP</news:language>
-    </news:publication>
-    <news:publication_date>2023-10-26T06:06:06+00:00</news:publication_date>
-    <news:title>LibMake: Rust Library Scaffold Generator</news:title>
-    <news:keywords>LibMake, Rust code generator, cargo scaffold, Rust library template, Tera templating, GitHub Actions Rust, cargo-audit, Rust API Guidelines, boilerplate generator, Rust CI workflow</news:keywords>
   </news:news>
 </url>
 <url>
@@ -597,18 +585,6 @@
       <news:language>ja-JP</news:language>
     </news:publication>
     <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
-    <news:title>Automating ISO 20022 Payment Files Creation with pain001</news:title>
-    <news:keywords>pain001, ISO 20022, pain.001.001.09, CustomerCreditTransferInitiation, SEPA Credit Transfer, CBPR+, payment automation, XML generation, XSD validation, GrpHdr, PmtInf, CdtTrfTxInf, CtrlSum, SWIFT</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/ja/2023-09-29-pain001-de-iso-20022-junkyo-kessai-fairu-no-jidouka/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>ja-JP</news:language>
-    </news:publication>
-    <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
     <news:title>pain001 による ISO 20022 準拠決済ファイル作成の自動化</news:title>
     <news:keywords>ISO 20022, pain.001, ISO 20022 移行, SWIFT, SEPA, 決済自動化, Python, オープンソース, 国際送金</news:keywords>
   </news:news>
@@ -626,18 +602,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/ja/2018-02-15-express-transaction-credits-puratto-foomu-no-kaihatsu/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>ja-JP</news:language>
-    </news:publication>
-    <news:publication_date>2018-02-15T06:06:06+00:00</news:publication_date>
-    <news:title>The making of the Express Transaction Credits Platform</news:title>
-    <news:keywords>EXTCプラットフォーム, ERC-223, Ethereumスマートコントラクト, トークンアーキテクチャ, マルチシグネチャ, タイムロック転送, ブロックチェーン決済, 担保付きローン, 分散型金融, 2018年クリプト</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/ja/2018-02-04-arata-na-ankouka-tsuuka-to-koukousoku-kessai-no-shourai/</loc>
   <news:news>
     <news:publication>
@@ -647,18 +611,6 @@
     <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
     <news:title>新たな暗号資産を公開し、将来のより高速な決済ソリューションを提供する</news:title>
     <news:keywords>暗号資産, 決済, リアルタイム決済, トークン, ICO, ブロックチェーン, フィンテック, 国際送金</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/ja/2018-02-04-arata-na-ankouka-tsuuka-to-koukousoku-kessai-no-shourai/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>ja-JP</news:language>
-    </news:publication>
-    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
-    <news:title>新たな暗号資産と高速決済ソリューションの公開</news:title>
-    <news:keywords>EXTC、ERC-223、Ethereumスマートコントラクト、高速決済、暗号資産、ブロックチェーン決済、ペイメントトークン、分散型金融、ERC-20、国際送金</news:keywords>
   </news:news>
 </url>
 <url>
@@ -683,18 +635,6 @@
     <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
     <news:title>ブロックチェーンの背後にある技術を理解する</news:title>
     <news:keywords>ブロックチェーン, 暗号, ハッシュ, デジタル署名, マークルツリー, 合意, プルーフ・オブ・ワーク, P2P ネットワーク</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/ja/2018-01-09-burokkuchein-no-gijutsu-wo-rikai-suru/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>ja-JP</news:language>
-    </news:publication>
-    <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
-    <news:title>Understanding the Technology behind Blockchain</news:title>
-    <news:keywords>ブロックチェーン技術, cryptographic hash, Merkle tree, 分散コンセンサス, proof of work, Ethereum, スマートコントラクト, EVM, Solidity, ERC-20, 分散型台帳, 分散型金融</news:keywords>
   </news:news>
 </url>
 <url>

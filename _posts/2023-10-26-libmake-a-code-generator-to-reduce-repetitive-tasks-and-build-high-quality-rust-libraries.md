@@ -112,20 +112,6 @@ last_reviewed: "2026-05-24"
 ---
 
 
-<!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> <a href="https://github.com/sebastienrousseau/libmake">LibMake</a> is an open-source Rust CLI tool (<code>cargo install libmake</code>) that generates a production-ready library scaffold from CLI flags or a versioned config file (TOML, YAML, JSON, or CSV), producing a complete project structure with Cargo.toml, src/lib.rs, tests/, benches/, and a GitHub Actions CI workflow in a single invocation.</p>
-<p class="post-lead-heading"><strong>Key takeaways</strong></p>
-<ul class="post-lead-takeaways">
-  <li><strong>Complete scaffold, not just a Cargo.toml.</strong> LibMake generates src/lib.rs with pre-populated module doc comments and <code>#![doc = include_str!("../README.md")]</code>, an integration test file, a Criterion benchmark harness, CONTRIBUTING.md, and MIT/Apache-2.0 dual-licence files — everything needed to pass <code>cargo test</code> and <code>cargo bench</code> immediately after generation.</li>
-  <li><strong>Config-file mode enables team-level templates.</strong> Committing a <code>libmake.toml</code> to a repository makes scaffold generation reproducible: every developer runs <code>libmake --config libmake.toml</code> and gets identical structure, enforcing conventions without a shared mental checklist.</li>
-  <li><strong>GitHub Actions workflow covers the full Rust CI matrix.</strong> The generated workflow includes separate jobs for testing on stable, beta, and nightly toolchains, clippy linting with <code>-D warnings</code>, rustfmt format checking, and cargo-audit for dependency vulnerability scanning.</li>
-  <li><strong>Tera templates are user-overridable.</strong> LibMake uses the Tera templating engine internally; custom template directories can be provided via the <code>--template</code> flag, so teams with non-standard directory layouts or additional file requirements are not locked into the default output.</li>
-</ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/">RustLogs (RLG): Structured Logging Library for Rust</a>, <a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/">The Making of the Express Transaction Credits Platform</a>, <a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/">Alien Studio: My Tech-to-Art Journey in Photography</a>.</p>
-</aside>
-<!-- lead-end -->
-
 > **Executive Summary / Key Takeaways**
 >
 > - **[LibMake ⧉][00]** is an open-source Rust CLI tool installed via `cargo install libmake` that generates a complete library scaffold from CLI flags or a config file (TOML, YAML, JSON, or CSV), with output covering Cargo.toml, source, tests, benchmarks, documentation, and CI in one invocation.
@@ -170,6 +156,20 @@ For team use, all CLI flags can be expressed in a TOML config file:
 
 ```toml
 # libmake.toml
+
+<!-- lead-start -->
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Installation and Basic Usage.</strong> LibMake is published on crates.io and installed via Cargo:.</li>
+  <li><strong>Config-File Mode.</strong> For team use, all CLI flags can be expressed in a TOML config file:.</li>
+  <li><strong>Generated Project Structure.</strong> A LibMake invocation creates the following layout:.</li>
+  <li><strong>GitHub Actions CI Workflow.</strong> The generated .github/workflows/release.yml runs five jobs on every push and pull request:.</li>
+</ul>
+</aside>
+<!-- lead-end -->
+
 author      = "Jane Smith"
 email       = "jane@example.com"
 name        = "my_library"
@@ -276,13 +276,5 @@ LibMake accepts any string for `--edition` and `--rustversion` and writes the va
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-24">2026-05-24</time>.</p>
-<aside class="related-posts" aria-labelledby="related-heading">
-<h2 id="related-heading" class="related-heading">Related reading</h2>
-<div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/" class="related-media" aria-label="RustLogs (RLG): Structured Logging Library for Rust" tabindex="-1"><img alt="Banner for RustLogs (RLG)" src="https://cloudcdn.pro/stocks/images/rustlogs.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/">RustLogs (RLG): Structured Logging Library for Rust</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/" class="related-media" aria-label="The Making of the Express Transaction Credits Platform" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/">The Making of the Express Transaction Credits Platform</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/" class="related-media" aria-label="Alien Studio: My Tech-to-Art Journey in Photography" tabindex="-1"><img alt="Sunset's muse, a serene glance; beauty in stillness" src="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/">Alien Studio: My Tech-to-Art Journey in Photography</a></h3><p><time datetime="2024-01-15">2024-01-15</time></p></footer></article>
-</div>
-</aside>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-27">2026-05-27</time>.</p>
 <!-- enrich-end -->

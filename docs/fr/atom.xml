@@ -4,7 +4,43 @@
   <link href="https://sebastienrousseau.com/fr/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/fr/"/>
   <id>https://sebastienrousseau.com/fr/</id>
-  <updated>2026-05-26T23:13:19+00:00</updated>
+  <updated>2026-05-27T22:09:52+00:00</updated>
+  <entry>
+    <title>L&apos;IA comme système d&apos;exploitation des paiements : fraude, routage, résilience et conformité en 2026</title>
+    <link href="https://sebastienrousseau.com/fr/2026-05-27-ai-operating-system-paiements-fraud-routing-resilience-compliance-2026/"/>
+    <id>https://sebastienrousseau.com/fr/2026-05-27-ai-operating-system-paiements-fraud-routing-resilience-compliance-2026/</id>
+    <updated>2026-05-27T06:06:06+00:00</updated>
+    <published>2026-05-27T06:06:06+00:00</published>
+    <summary>L&apos;IA devient le système d&apos;exploitation des paiements en 2026 : prévention de la fraude, réparation des paiements, routage, prévision de liquidité, filtrage de conformité et garde-fous du commerce agentique.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Magnifica Humanitas : lecture industrielle de l&apos;encyclique sur l&apos;IA</title>
+    <link href="https://sebastienrousseau.com/fr/2026-05-26-magnifica-humanitas-ai-quantique-message-of-hope/"/>
+    <id>https://sebastienrousseau.com/fr/2026-05-26-magnifica-humanitas-ai-quantique-message-of-hope/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>Le 25 mai 2026, le Pape Léon XIV publie Magnifica Humanitas, première encyclique pontificale consacrée à l&apos;intelligence artificielle. Lue depuis l&apos;industrie technologique — non comme doctrine, mais comme l&apos;un des cadres éthiques les plus cohérents jamais formulés pour l&apos;ère de l&apos;IA et du quantique — elle prolonge les inquiétudes morales qui ont accompagné le train, l&apos;automobile, le nucléaire et l&apos;internet. Ce qu&apos;elle signifie pour l&apos;industrie, pour l&apos;humanité, et pourquoi la lecture honnête est, au bout du compte, une lecture d&apos;espérance.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Stablecoins vs dépôts tokenisés en 2026 : ce que les banques doivent défendre</title>
+    <link href="https://sebastienrousseau.com/fr/2026-05-26-stablecoins-vs-tokenise-deposits-bank-strategy-2026/"/>
+    <id>https://sebastienrousseau.com/fr/2026-05-26-stablecoins-vs-tokenise-deposits-bank-strategy-2026/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>Stablecoins et dépôts tokenisés convergent vers le règlement programmable, mais leurs modèles de bilan, juridiques, de liquidité et de confiance restent distincts.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Liquidité programmable 2026 : IA, dépôts tokenisés, trésorerie temps réel</title>
+    <link href="https://sebastienrousseau.com/fr/2026-05-25-programmable-liquidity-ai-tokenise-deposits-real-time-treasury-2026/"/>
+    <id>https://sebastienrousseau.com/fr/2026-05-25-programmable-liquidity-ai-tokenise-deposits-real-time-treasury-2026/</id>
+    <updated>2026-05-25T06:06:06+00:00</updated>
+    <published>2026-05-25T06:06:06+00:00</published>
+    <summary>Liquidité programmable en 2026 : prévision IA, dépôts tokenisés, rails de paiement temps réel, comptes virtuels, stablecoins et TMS dans une seule couche d&apos;orchestration pour le fonds de roulement.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>UK Payments Forward Plan 2026 : stablecoins, open banking, dépôts tokenisés, paiements agentiques</title>
     <link href="https://sebastienrousseau.com/fr/2026-05-24-uk-paiements-forward-plan-stablecoins-open-banking-tokenise-paiements-2026/"/>
@@ -249,30 +285,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
-    <link href="https://sebastienrousseau.com/fr/2024-02-12-akande-assistant-vocal-revolution-assistance-personnelle-et-executive/"/>
-    <id>https://sebastienrousseau.com/fr/2024-02-12-akande-assistant-vocal-revolution-assistance-personnelle-et-executive/</id>
-    <updated>2024-02-12T06:06:06+00:00</updated>
-    <published>2024-02-12T06:06:06+00:00</published>
-    <summary>Àkàndé est un assistant vocal Python open-source qui combine la reconnaissance vocale OpenAI Whisper, les complétions GPT-4 et un cache SQLite local pour générer des résumés PDF et conserver les données en local.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>IA générative dans la publicité : Amazon Rufus &amp; Meta</title>
     <link href="https://sebastienrousseau.com/fr/2024-02-08-revolutionner-la-publicite-comment-l-ia-faconne-l-avenir/"/>
     <id>https://sebastienrousseau.com/fr/2024-02-08-revolutionner-la-publicite-comment-l-ia-faconne-l-avenir/</id>
     <updated>2024-02-08T06:06:06+00:00</updated>
     <published>2024-02-08T06:06:06+00:00</published>
     <summary>Comment l&apos;IA transforme la publicité — aperçus sur Rufus d&apos;Amazon et les derniers développements de Meta. Découvrez l&apos;impact sur l&apos;engagement consommateur.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
-    <link href="https://sebastienrousseau.com/fr/2024-01-29-analyse-audio-traductions-et-perspectives-par-l-ia/"/>
-    <id>https://sebastienrousseau.com/fr/2024-01-29-analyse-audio-traductions-et-perspectives-par-l-ia/</id>
-    <updated>2024-01-29T06:06:06+00:00</updated>
-    <published>2024-01-29T06:06:06+00:00</published>
-    <summary>Audio Analyser utilise les modèles neuronaux speech-to-text d&apos;Azure Cognitive Services, Text Analytics NLP et CherryPy pour convertir des enregistrements audio en transcriptions consultables avec scores de sentiment, extraction de mots-clés et traductions multilingues.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -384,30 +402,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Generative AI in 2023: How It Works, Where It Lands</title>
-    <link href="https://sebastienrousseau.com/fr/2023-11-12-explorer-l-ia-generative/"/>
-    <id>https://sebastienrousseau.com/fr/2023-11-12-explorer-l-ia-generative/</id>
-    <updated>2023-11-12T06:06:06+00:00</updated>
-    <published>2023-11-12T06:06:06+00:00</published>
-    <summary>Modèles transformer, benchmarks 2023, cas d&apos;usage de l&apos;IA générative dans les services financiers et questions de gouvernance à résoudre avant tout déploiement.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>Constantes mathématiques et cryptographiques pour la sécurité Rust</title>
     <link href="https://sebastienrousseau.com/fr/2023-11-05-constantes-mathematiques-et-cryptographiques-pour-rust/"/>
     <id>https://sebastienrousseau.com/fr/2023-11-05-constantes-mathematiques-et-cryptographiques-pour-rust/</id>
     <updated>2023-11-05T06:06:06+00:00</updated>
     <published>2023-11-05T06:06:06+00:00</published>
     <summary>Protégez l&apos;intégrité du code avec des constantes mathématiques et cryptographiques rigoureusement vérifiées, renforçant sûreté mémoire et concurrence.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>LibMake: Rust Library Scaffold Generator</title>
-    <link href="https://sebastienrousseau.com/fr/2023-10-26-libmake-generateur-de-code-pour-bibliotheques-rust/"/>
-    <id>https://sebastienrousseau.com/fr/2023-10-26-libmake-generateur-de-code-pour-bibliotheques-rust/</id>
-    <updated>2023-10-26T06:06:06+00:00</updated>
-    <published>2023-10-26T06:06:06+00:00</published>
-    <summary>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -438,15 +438,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Automating ISO 20022 Payment Files Creation with pain001</title>
-    <link href="https://sebastienrousseau.com/fr/2023-09-29-automatiser-fichiers-de-paiement-iso-20022-avec-pain001/"/>
-    <id>https://sebastienrousseau.com/fr/2023-09-29-automatiser-fichiers-de-paiement-iso-20022-avec-pain001/</id>
-    <updated>2023-09-29T06:06:06+00:00</updated>
-    <published>2023-09-29T06:06:06+00:00</published>
-    <summary>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>Automatiser la création de fichiers de paiement conformes ISO 20022 avec Pain001</title>
     <link href="https://sebastienrousseau.com/fr/2023-09-29-automatiser-fichiers-de-paiement-iso-20022-avec-pain001/"/>
     <id>https://sebastienrousseau.com/fr/2023-09-29-automatiser-fichiers-de-paiement-iso-20022-avec-pain001/</id>
@@ -465,30 +456,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>The making of the Express Transaction Credits Platform</title>
-    <link href="https://sebastienrousseau.com/fr/2018-02-15-creation-de-la-plateforme-express-transaction-credits/"/>
-    <id>https://sebastienrousseau.com/fr/2018-02-15-creation-de-la-plateforme-express-transaction-credits/</id>
-    <updated>2018-02-15T06:06:06+00:00</updated>
-    <published>2018-02-15T06:06:06+00:00</published>
-    <summary>Une plongée technique dans la construction de la plateforme EXTC sur Ethereum ERC-223 en 2018 : architecture des tokens, décaissements multi-sig, transferts à verrouillage temporel et prêts instantanés garantis par des actifs.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>Dévoiler une nouvelle cryptomonnaie et une solution de paiement plus rapide</title>
     <link href="https://sebastienrousseau.com/fr/2018-02-04-nouvelle-cryptomonnaie-solution-de-paiement-plus-rapide/"/>
     <id>https://sebastienrousseau.com/fr/2018-02-04-nouvelle-cryptomonnaie-solution-de-paiement-plus-rapide/</id>
     <updated>2018-02-04T06:06:06+00:00</updated>
     <published>2018-02-04T06:06:06+00:00</published>
     <summary>Un chapitre significatif dans l&apos;évolution du paysage financier mondial, façonné par l&apos;innovation technologique, les bascules géopolitiques et la finance durable.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Présentation d&apos;une nouvelle cryptomonnaie et d&apos;une solution de paiement rapide</title>
-    <link href="https://sebastienrousseau.com/fr/2018-02-04-nouvelle-cryptomonnaie-solution-de-paiement-plus-rapide/"/>
-    <id>https://sebastienrousseau.com/fr/2018-02-04-nouvelle-cryptomonnaie-solution-de-paiement-plus-rapide/</id>
-    <updated>2018-02-04T06:06:06+00:00</updated>
-    <published>2018-02-04T06:06:06+00:00</published>
-    <summary>Début 2018, la plateforme EXTC explorait des paiements transfrontaliers plus rapides via des contrats intelligents Ethereum ERC-223 — une esquisse précoce de ce que la finance décentralisée allait ensuite formaliser.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -507,15 +480,6 @@
     <updated>2018-01-09T06:06:06+00:00</updated>
     <published>2018-01-09T06:06:06+00:00</published>
     <summary>Construire une cryptomonnaie sur la blockchain Ethereum : un guide complet du développement blockchain, de la tokenisation et de l&apos;implémentation.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Understanding the Technology behind Blockchain</title>
-    <link href="https://sebastienrousseau.com/fr/2018-01-09-comprendre-la-technologie-derriere-la-blockchain/"/>
-    <id>https://sebastienrousseau.com/fr/2018-01-09-comprendre-la-technologie-derriere-la-blockchain/</id>
-    <updated>2018-01-09T06:06:06+00:00</updated>
-    <published>2018-01-09T06:06:06+00:00</published>
-    <summary>Une introduction technique au fonctionnement de la blockchain : chaînes de hachage cryptographique, arbres de Merkle, consensus distribué, et comment la couche programmable d&apos;Ethereum a transformé un registre de paiements en plateforme pour les smart contracts et les actifs tokenisés.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

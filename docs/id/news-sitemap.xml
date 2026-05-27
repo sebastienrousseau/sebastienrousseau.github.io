@@ -2,15 +2,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>id-ID</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-27T22:09:52+00:00</news:publication_date>
+    <news:title>AI sebagai Sistem Operasi Pembayaran: Penipuan, Routing, Ketahanan, dan Kepatuhan pada 2026</news:title>
+    <news:keywords>sistem operasi AI pembayaran 2026, penipuan pembayaran, routing pembayaran, pencegahan penipuan real-time, ISO 20022 AI, ketahanan pembayaran, analisis transaksi, prakiraan arus kas</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/id/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>id-ID</news:language>
     </news:publication>
-    <news:publication_date>2026-05-26T23:13:19+00:00</news:publication_date>
+    <news:publication_date>2026-05-27T22:09:52+00:00</news:publication_date>
     <news:title>Pembayaran Agentik di Perbankan: Persetujuan, Tanggung Jawab, UX 2026</news:title>
     <news:keywords>pembayaran agentik 2026, pembayaran AI agent, Mastercard Agent Pay, pembayaran AI Rabobank, AP2, A2A, x402, MCP, machine payments protocol, mandat persetujuan pembayaran, Regulation E, EFTA, tanggung jawab pembayaran, niat yang dapat diverifikasi, tokenisasi, kunci akses, UX perbankan, perdagangan AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/id/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>id-ID</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>Magnifica Humanitas: Pembacaan Industri AI atas Ensiklik Kepausan Pertama tentang AI</news:title>
+    <news:keywords>Magnifica Humanitas, Paus Leo XIV, Pope Leo XIV, ensiklik AI, etika kecerdasan buatan, etika komputasi kuantum, Rerum Novarum, Menara Babel, teknologi tidak pernah netral, transhumanisme, posthumanisme, martabat manusia, paradigma teknologi, Lucy transfer pengetahuan, harapan AI, EU AI Act, DORA, Anthropic, Sebastien Rousseau</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/id/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>id-ID</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>Stablecoin vs Deposito Tertokenisasi 2026: Yang Harus Dibela Bank</news:title>
+    <news:keywords>stablecoin 2026, deposito tertokenisasi, deposito bank, GENIUS Act, JPM Coin, token deposito, cadangan stablecoin, pendanaan bank, uang digital</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/id/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>id-ID</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-25T06:06:06+00:00</news:publication_date>
+    <news:title>Likuiditas yang Dapat Diprogram 2026: AI, Deposito Tertokenisasi, Treasury Real-Time</news:title>
+    <news:keywords>likuiditas yang dapat diprogram 2026, orkestrasi treasury, AI treasury, deposito tertokenisasi, likuiditas real-time, stablecoin treasury, pembayaran multi-jalur, akun virtual, transaction banking, mobilitas agunan</news:keywords>
   </news:news>
 </url>
 <url>
@@ -326,18 +374,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/id/2024-02-12-akande-asisten-suara-revolusi-asistensi-pribadi-dan-eksekutif/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>id-ID</news:language>
-    </news:publication>
-    <news:publication_date>2024-02-12T06:06:06+00:00</news:publication_date>
-    <news:title>Àkàndé: GPT-Powered Voice Assistant for Executives</news:title>
-    <news:keywords>Àkàndé, OpenAI GPT-4, Whisper STT, SQLite caching, fpdf2, asisten suara Python, chat completions API, pembuatan ringkasan PDF, cache SHA-256, text-to-speech, AI asisten eksekutif, open-source</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/id/2024-02-08-revolusi-periklanan-bagaimana-ai-membentuk-masa-depan/</loc>
   <news:news>
     <news:publication>
@@ -357,32 +393,8 @@
       <news:language>id-ID</news:language>
     </news:publication>
     <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
-    <news:title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</news:title>
-    <news:keywords>Azure Cognitive Services, speech-to-text, model akustik neural, Azure Text Analytics, pemrosesan bahasa alami, analisis sentimen, CherryPy, batch transcription API, ASR multibahasa, Azure Translator, transkripsi audio, pemrosesan audio Python</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/id/2024-01-29-wawasan-audio-analisis-dan-terjemahan-bertenaga-ai/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>id-ID</news:language>
-    </news:publication>
-    <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
     <news:title>[ID DRAFT] AI-Powered Speech Analysis, Translation, &amp; Insight Tool</news:title>
     <news:keywords>audio analyser, azure ai, speech-to-text, analisis data audio, analisis teks, terjemahan ai, wawasan audio, transkripsi otomatis, pemrosesan data audio, machine learning</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/id/2024-01-23-kemajuan-rekayasa-prompt-ai/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>id-ID</news:language>
-    </news:publication>
-    <news:publication_date>2024-01-23T06:06:06+00:00</news:publication_date>
-    <news:title>AI Prompt Engineering 2024: Techniques That Work</news:title>
-    <news:keywords>chain-of-thought prompting, few-shot learning, zero-shot prompting, in-context learning, prompt injection, ReAct, self-consistency, retrieval-augmented generation, BloombergGPT, system prompt, prompt security, LLM agent</news:keywords>
   </news:news>
 </url>
 <url>
@@ -513,18 +525,6 @@
       <news:language>id-ID</news:language>
     </news:publication>
     <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
-    <news:title>Generative AI in 2023: How It Works, Where It Lands</news:title>
-    <news:keywords>generative AI, large language model, transformer architecture, GPT-4, AI layanan keuangan, halusinasi, retrieval-augmented generation, AI governance, foundation model, fine-tuning</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/id/2023-11-12-menjelajahi-ai-generatif/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>id-ID</news:language>
-    </news:publication>
-    <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
     <news:title>[ID DRAFT] Generative AI in 2023: How It Works, Where It Lands</news:title>
     <news:keywords>Generative AI, technology, future, impact, ethics, synergies, innovation, creativity, transformation, evolution</news:keywords>
   </news:news>
@@ -539,18 +539,6 @@
     <news:publication_date>2023-11-05T06:06:06+00:00</news:publication_date>
     <news:title>[ID DRAFT] Mathematical and Cryptographic Constants for Rust Security</news:title>
     <news:keywords>konstanta matematika, konstanta kriptografi, Rust security, komunikasi aman, enkripsi, RSA, elliptic curve cryptography, Common (CMN) library, aplikasi Rust, komputasi matematika</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/id/2023-10-26-libmake-generator-kode-untuk-pustaka-rust/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>id-ID</news:language>
-    </news:publication>
-    <news:publication_date>2023-10-26T06:06:06+00:00</news:publication_date>
-    <news:title>LibMake: Rust Library Scaffold Generator</news:title>
-    <news:keywords>LibMake, Rust code generator, cargo scaffold, Rust library template, Tera templating, GitHub Actions Rust, cargo-audit, Rust API Guidelines, boilerplate generator, Rust CI workflow</news:keywords>
   </news:news>
 </url>
 <url>
@@ -597,18 +585,6 @@
       <news:language>id-ID</news:language>
     </news:publication>
     <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
-    <news:title>Automating ISO 20022 Payment Files Creation with pain001</news:title>
-    <news:keywords>pain001, ISO 20022, pain.001.001.09, CustomerCreditTransferInitiation, SEPA Credit Transfer, CBPR+, payment automation, XML generation, XSD validation, GrpHdr, PmtInf, CdtTrfTxInf, CtrlSum, SWIFT</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/id/2023-09-29-otomatisasi-pembuatan-berkas-pembayaran-iso-20022-dengan-pain001/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>id-ID</news:language>
-    </news:publication>
-    <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
     <news:title>[ID DRAFT] Automating ISO 20022 Payment Files Creation with Pain001</news:title>
     <news:keywords>pain001, iso 20022, otomasi pembayaran, pengurangan biaya, pemrosesan pembayaran, file pembayaran, inisiasi pembayaran, pain message, pain message standards, pain message validation</news:keywords>
   </news:news>
@@ -626,18 +602,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/id/2018-02-15-pembuatan-platform-express-transaction-credits/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>id-ID</news:language>
-    </news:publication>
-    <news:publication_date>2018-02-15T06:06:06+00:00</news:publication_date>
-    <news:title>The making of the Express Transaction Credits Platform</news:title>
-    <news:keywords>EXTC platform, ERC-223, Ethereum smart contracts, arsitektur token, multi-signature, time-locked transfer, pembayaran blockchain, collateral-backed loans, keuangan terdesentralisasi, 2018 crypto</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/id/2018-02-04-mata-uang-kripto-baru-dan-solusi-pembayaran-lebih-cepat/</loc>
   <news:news>
     <news:publication>
@@ -647,18 +611,6 @@
     <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
     <news:title>[ID DRAFT] Unveiling a new Cryptocurrency and Faster Payment Solution</news:title>
     <news:keywords>pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/id/2018-02-04-mata-uang-kripto-baru-dan-solusi-pembayaran-lebih-cepat/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>id-ID</news:language>
-    </news:publication>
-    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
-    <news:title>Unveiling a new Cryptocurrency and Faster Payment Solution</news:title>
-    <news:keywords>EXTC, ERC-223, smart contract Ethereum, pembayaran lebih cepat, cryptocurrency, pembayaran blockchain, token pembayaran, keuangan terdesentralisasi, ERC-20, pembayaran lintas batas</news:keywords>
   </news:news>
 </url>
 <url>
@@ -683,18 +635,6 @@
     <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
     <news:title>[ID DRAFT] Understanding the Technology behind Blockchain</news:title>
     <news:keywords>pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/id/2018-01-09-memahami-teknologi-di-balik-blockchain/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>id-ID</news:language>
-    </news:publication>
-    <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
-    <news:title>Understanding the Technology behind Blockchain</news:title>
-    <news:keywords>teknologi blockchain, hash kriptografis, Merkle tree, konsensus terdistribusi, proof of work, Ethereum, smart contracts, EVM, Solidity, ERC-20, distributed ledger, keuangan terdesentralisasi</news:keywords>
   </news:news>
 </url>
 <url>

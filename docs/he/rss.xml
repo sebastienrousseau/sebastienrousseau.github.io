@@ -6,8 +6,99 @@
     <description>מאמרים בעברית: AI יישומי, תשלומי ISO 20022, קריפטוגרפיה פוסט-קוונטית, וטרנספורמציה של תשלומי סיטונאות.</description>
     <atom:link href="https://sebastienrousseau.com/he/rss.xml" rel="self" type="application/rss+xml"/>
     <language>he-IL</language>
-    <lastBuildDate>Tue, 26 May 2026 23:13:19 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 22:09:52 +0000</lastBuildDate>
     <copyright>© זכויות יוצרים 2007 - 2026 - Sebastien Rousseau. כל הזכויות שמורות.</copyright>
+    <item>
+      <title>AI כמערכת ההפעלה של התשלומים: הונאה, ניתוב, חוסן וציות ב-2026</title>
+      <link>https://sebastienrousseau.com/he/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</link>
+      <description>בינה מלאכותית הופכת ב-2026 למערכת ההפעלה של התשלומים — מנתחת הונאה, מתקנת תשלומים, מנתבת מסילות, צופה נזילות, מסננת סנקציות ו-AML ומבקרת מסחר אוטונומי במהירות התהליך.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>מערכת הפעלה לבינה מלאכותית בתשלומים 2026</category>
+      <category>הונאה בתשלומים</category>
+      <category>ניתוב תשלומים</category>
+      <category>מניעת הונאה בזמן אמת</category>
+      <category>ISO 20022</category>
+      <category>חוסן תשלומים</category>
+      <category>ניתוח עסקאות</category>
+      <category>תחזית תזרים מזומנים</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>AML</category>
+      <category>סנקציות</category>
+      <category>מסחר אוטונומי</category>
+    </item>
+    <item>
+      <title>Magnifica Humanitas: קריאה הנדסית באנציקליקה על AI</title>
+      <link>https://sebastienrousseau.com/he/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</link>
+      <description>ב-25 במאי 2026 פרסם האפיפיור לאו ה-14 את Magnifica Humanitas, האנציקליקה האפיפיורית הראשונה המוקדשת לבינה מלאכותית — קריאה הנדסית מעידן ה-AI והקוונטים.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
+      <category>Magnifica Humanitas</category>
+      <category>Pope Leo XIV</category>
+      <category>AI encyclical</category>
+      <category>אתיקה של בינה מלאכותית</category>
+      <category>אתיקה של מחשוב קוונטי</category>
+      <category>Rerum Novarum</category>
+      <category>מגדל בבל</category>
+      <category>הטכנולוגיה לעולם אינה ניטרלית</category>
+      <category>טרנס-הומניזם</category>
+      <category>פוסט-הומניזם</category>
+      <category>כבוד האדם</category>
+      <category>פרדיגמה טכנולוגית</category>
+      <category>רכבת מכונית גרעין אינטרנט</category>
+      <category>היסטוריה של פאניקה מוסרית סביב הטכנולוגיה</category>
+      <category>העברת ידע של Lucy</category>
+      <category>תקווה של AI</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+      <category>Anthropic</category>
+      <category>Sebastien Rousseau</category>
+    </item>
+    <item>
+      <title>סטייבלקוינים מול פיקדונות מתורמזים ב-2026: על מה הבנקים חייבים להגן</title>
+      <link>https://sebastienrousseau.com/he/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</link>
+      <description>סטייבלקוינים ופיקדונות מתורמזים מתכנסים סביב סליקה הניתנת לתכנות ב-2026, אך מודלי המאזן, המשפט, הנזילות והאמון שלהם נותרים שונים — והבנקים חייבים להגן על זכיינות הפיקדונות.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>סטייבלקוינים 2026</category>
+      <category>פיקדונות מתורמזים</category>
+      <category>פיקדונות בנק</category>
+      <category>GENIUS Act</category>
+      <category>JPM Coin</category>
+      <category>טוקני פיקדון</category>
+      <category>רזרבות סטייבלקוין</category>
+      <category>מימון בנק</category>
+      <category>כסף דיגיטלי</category>
+      <category>MiCA</category>
+      <category>FedNow</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>נזילות הניתנת לתכנות ב-2026: AI, פיקדונות מתורמזים וגזברות בזמן אמת</title>
+      <link>https://sebastienrousseau.com/he/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</link>
+      <description>נזילות הניתנת לתכנות ב-2026 מחברת חיזוי AI, פיקדונות מתורמזים, ערוצי תשלום בזמן אמת, חשבונות וירטואליים, סטייבלקוינס ומערכות TMS לשכבת תזמור אחת להון חוזר תאגידי.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</guid>
+      <pubDate>Mon, 25 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>נזילות הניתנת לתכנות 2026</category>
+      <category>תזמור גזברות</category>
+      <category>AI בגזברות</category>
+      <category>פיקדונות מתורמזים</category>
+      <category>נזילות בזמן אמת</category>
+      <category>סטייבלקוינס גזברות</category>
+      <category>תשלומים רב-ערוציים</category>
+      <category>חשבונות וירטואליים</category>
+      <category>בנקאות עסקאות</category>
+      <category>ניידות בטחונות</category>
+    </item>
     <item>
       <title>UK Payments Forward Plan 2026: סטייבלקוינים, בנקאות פתוחה ותשלומים אגנטיים</title>
       <link>https://sebastienrousseau.com/he/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>

@@ -4,7 +4,43 @@
   <link href="https://sebastienrousseau.com/cs/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/cs/"/>
   <id>https://sebastienrousseau.com/cs/</id>
-  <updated>2026-05-26T23:13:19+00:00</updated>
+  <updated>2026-05-27T22:09:52+00:00</updated>
+  <entry>
+    <title>AI jako operační systém plateb: podvody, směrování, odolnost a compliance v roce 2026</title>
+    <link href="https://sebastienrousseau.com/cs/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/"/>
+    <id>https://sebastienrousseau.com/cs/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</id>
+    <updated>2026-05-27T06:06:06+00:00</updated>
+    <published>2026-05-27T06:06:06+00:00</published>
+    <summary>AI se v roce 2026 stává operačním systémem plateb — propojuje prevenci podvodů, opravu plateb, směrování, prognózu likvidity, screening compliance a kontroly agentického obchodu v rychlosti workflow.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Magnifica Humanitas: čtení první papežské encykliky o UI</title>
+    <link href="https://sebastienrousseau.com/cs/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/"/>
+    <id>https://sebastienrousseau.com/cs/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>25. května 2026 vydal papež Lev XIV. encykliku Magnifica Humanitas, první papežskou encykliku o UI. Čtení průmyslu — etický rámec, nikoli doktrína.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Stablecoiny vs tokenizované vklady v roce 2026: co banky skutečně musí bránit</title>
+    <link href="https://sebastienrousseau.com/cs/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/"/>
+    <id>https://sebastienrousseau.com/cs/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>Stablecoiny a tokenizované vklady konvergují kolem programovatelného vypořádání, ale jejich rozvaha, právní, likviditní a důvěryhodnostní modely zůstávají odlišné.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Programovatelná likvidita 2026: AI, tokenizované vklady, real-time treasury</title>
+    <link href="https://sebastienrousseau.com/cs/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/"/>
+    <id>https://sebastienrousseau.com/cs/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</id>
+    <updated>2026-05-25T06:06:06+00:00</updated>
+    <published>2026-05-25T06:06:06+00:00</published>
+    <summary>Programovatelná likvidita v roce 2026 propojuje AI prognózování, tokenizované vklady, real-time raily, virtuální účty, stablecoiny a TMS do jedné orchestrační vrstvy pro provozní kapitál.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>UK Payments Forward Plan 2026: stablecoiny, open banking, tokenizované vklady</title>
     <link href="https://sebastienrousseau.com/cs/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/"/>
@@ -249,15 +285,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
-    <link href="https://sebastienrousseau.com/cs/2024-02-12-akande-hlasovy-asistent-revoluce-asistence/"/>
-    <id>https://sebastienrousseau.com/cs/2024-02-12-akande-hlasovy-asistent-revoluce-asistence/</id>
-    <updated>2024-02-12T06:06:06+00:00</updated>
-    <published>2024-02-12T06:06:06+00:00</published>
-    <summary>Àkàndé je open-source hlasový asistent v Pythonu, který propojuje rozpoznávání řeči OpenAI Whisper, GPT-4 chat completions a lokální SQLite cache do hlasového pracovního procesu — generuje PDF shrnutí z historie konverzací a uchovává veškerá data lokálně.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>IA generativa en la publicidad: Amazon Rufus y Meta</title>
     <link href="https://sebastienrousseau.com/cs/2024-02-08-revoluce-reklamy-jak-ai-tvori-budoucnost/"/>
     <id>https://sebastienrousseau.com/cs/2024-02-08-revoluce-reklamy-jak-ai-tvori-budoucnost/</id>
@@ -267,30 +294,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
-    <link href="https://sebastienrousseau.com/cs/2024-01-29-analyza-audia-preklady-a-poznatky-s-ai/"/>
-    <id>https://sebastienrousseau.com/cs/2024-01-29-analyza-audia-preklady-a-poznatky-s-ai/</id>
-    <updated>2024-01-29T06:06:06+00:00</updated>
-    <published>2024-01-29T06:06:06+00:00</published>
-    <summary>Audio Analyser využívá neurální modely převodu řeči na text Azure Cognitive Services, NLP Text Analytics a CherryPy k převodu zvukových nahrávek na prohledávatelné přepisy se skóre sentimentu, extrakcí klíčových slov a vícejazyčnými překlady.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>Análisis, traducción e insights de audio impulsados por IA</title>
     <link href="https://sebastienrousseau.com/cs/2024-01-29-analyza-audia-preklady-a-poznatky-s-ai/"/>
     <id>https://sebastienrousseau.com/cs/2024-01-29-analyza-audia-preklady-a-poznatky-s-ai/</id>
     <updated>2024-01-29T06:06:06+00:00</updated>
     <published>2024-01-29T06:06:06+00:00</published>
     <summary>Cómo Audio Analyser, impulsado por Azure AI, transforma la conversión speech-to-text, el análisis de texto y las traducciones para insights accionables.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>AI Prompt Engineering 2024: Techniques That Work</title>
-    <link href="https://sebastienrousseau.com/cs/2024-01-23-pokrok-v-prompt-engineeringu/"/>
-    <id>https://sebastienrousseau.com/cs/2024-01-23-pokrok-v-prompt-engineeringu/</id>
-    <updated>2024-01-23T06:06:06+00:00</updated>
-    <published>2024-01-23T06:06:06+00:00</published>
-    <summary>Prompt engineering řídí chování LLM při inferenci. Článek pokrývá zero-shot a few-shot prompting, chain-of-thought uvažování, self-consistency vzorkování, architekturu ReAct, rizika injekce promptů a vzory z finančních služeb.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -384,15 +393,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Generative AI in 2023: How It Works, Where It Lands</title>
-    <link href="https://sebastienrousseau.com/cs/2023-11-12-zkoumani-generativni-ai/"/>
-    <id>https://sebastienrousseau.com/cs/2023-11-12-zkoumani-generativni-ai/</id>
-    <updated>2023-11-12T06:06:06+00:00</updated>
-    <published>2023-11-12T06:06:06+00:00</published>
-    <summary>Jak fungují transformerové modely, které modely z roku 2023 stanovily měřítko, kde generativní AI proniká jako první do finančních služeb a jaké otázky správy musí odborníci zodpovědět před nasazením.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>IA generativa en 2023: cómo funciona, dónde aterriza</title>
     <link href="https://sebastienrousseau.com/cs/2023-11-12-zkoumani-generativni-ai/"/>
     <id>https://sebastienrousseau.com/cs/2023-11-12-zkoumani-generativni-ai/</id>
@@ -408,15 +408,6 @@
     <updated>2023-11-05T06:06:06+00:00</updated>
     <published>2023-11-05T06:06:06+00:00</published>
     <summary>Proteja la integridad del código con constantes matemáticas y criptográficas rigurosamente verificadas, reforzando la seguridad de memoria y la concurrencia.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>LibMake: Rust Library Scaffold Generator</title>
-    <link href="https://sebastienrousseau.com/cs/2023-10-26-libmake-generator-kodu-pro-rust-knihovny/"/>
-    <id>https://sebastienrousseau.com/cs/2023-10-26-libmake-generator-kodu-pro-rust-knihovny/</id>
-    <updated>2023-10-26T06:06:06+00:00</updated>
-    <published>2023-10-26T06:06:06+00:00</published>
-    <summary>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -447,30 +438,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Automating ISO 20022 Payment Files Creation with pain001</title>
-    <link href="https://sebastienrousseau.com/cs/2023-09-29-automatizace-platebnich-souboru-iso-20022-s-pain001/"/>
-    <id>https://sebastienrousseau.com/cs/2023-09-29-automatizace-platebnich-souboru-iso-20022-s-pain001/</id>
-    <updated>2023-09-29T06:06:06+00:00</updated>
-    <published>2023-09-29T06:06:06+00:00</published>
-    <summary>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>Automatizar la creación de archivos de pago conformes con ISO 20022 con Pain001</title>
     <link href="https://sebastienrousseau.com/cs/2023-09-29-automatizace-platebnich-souboru-iso-20022-s-pain001/"/>
     <id>https://sebastienrousseau.com/cs/2023-09-29-automatizace-platebnich-souboru-iso-20022-s-pain001/</id>
     <updated>2023-09-29T06:06:06+00:00</updated>
     <published>2023-09-29T06:06:06+00:00</published>
     <summary>Automatice la creación de archivos de pago pain.001 conformes con ISO 20022 a partir de CSV o SQLite con Pain001, la biblioteca Python de código abierto.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>The making of the Express Transaction Credits Platform</title>
-    <link href="https://sebastienrousseau.com/cs/2018-02-15-vznik-platformy-express-transaction-credits/"/>
-    <id>https://sebastienrousseau.com/cs/2018-02-15-vznik-platformy-express-transaction-credits/</id>
-    <updated>2018-02-15T06:06:06+00:00</updated>
-    <published>2018-02-15T06:06:06+00:00</published>
-    <summary>Technický pohled na to, jak byla platforma EXTC postavena na Ethereum ERC-223 v roce 2018: architektura tokenů, multi-sig výplaty, časově uzamčené převody a půjčky kryté kolaterálem.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -492,15 +465,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
-    <link href="https://sebastienrousseau.com/cs/2018-02-04-nova-kryptomena-a-reseni-pro-rychlejsi-platby/"/>
-    <id>https://sebastienrousseau.com/cs/2018-02-04-nova-kryptomena-a-reseni-pro-rychlejsi-platby/</id>
-    <updated>2018-02-04T06:06:06+00:00</updated>
-    <published>2018-02-04T06:06:06+00:00</published>
-    <summary>Platforma EXTC v roce 2018 zkoumala rychlejší přeshraniční platby pomocí Ethereum ERC-223 smart kontraktů — raný plán toho, co DeFi později vybudovalo.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>El estándar de token ERC-20</title>
     <link href="https://sebastienrousseau.com/cs/2018-01-24-standard-tokenu-erc-20/"/>
     <id>https://sebastienrousseau.com/cs/2018-01-24-standard-tokenu-erc-20/</id>
@@ -516,15 +480,6 @@
     <updated>2018-01-09T06:06:06+00:00</updated>
     <published>2018-01-09T06:06:06+00:00</published>
     <summary>Construir una criptomoneda en la blockchain Ethereum: una guía completa de desarrollo blockchain, tokenización e implementación.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Understanding the Technology behind Blockchain</title>
-    <link href="https://sebastienrousseau.com/cs/2018-01-09-pochopeni-technologie-za-blockchainem/"/>
-    <id>https://sebastienrousseau.com/cs/2018-01-09-pochopeni-technologie-za-blockchainem/</id>
-    <updated>2018-01-09T06:06:06+00:00</updated>
-    <published>2018-01-09T06:06:06+00:00</published>
-    <summary>Technický úvod do fungování blockchainu: kryptografické hash řetězce, Merkle stromy, distribuovaný konsensus a proč programovatelná vrstva Etherea proměnila platební knihu v platformu pro smart kontrakty a tokenizovaná aktiva.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

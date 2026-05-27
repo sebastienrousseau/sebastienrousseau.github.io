@@ -6,88 +6,894 @@
     <description>AI, banking and payments expert. Senior payments leader. Applied AI, ISO 20022 migration, wholesale payments and post-quantum cryptography.</description>
     <atom:link href="https://sebastienrousseau.com/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Sun, 31 May 2026 06:06:06 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 06:06:06 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
     <item>
-      <title>Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails</title>
-      <link>https://sebastienrousseau.com/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
-      <description>Kuantum sonrası kriptografi bankalar için zorlu bir soru yaratıyor: mevcut ödeme altyapısını yenilemek mi yoksa kripto-çevik altyapıyla değiştirmek mi?</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
-      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <title>AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026</title>
+      <link>https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026</link>
+      <description>AI is becoming the operating system of payments in 2026, moving from analytics into fraud prevention, payment repair, routing, liquidity forecasting, compliance screening, and agentic commerce controls.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/post-quantum-payments-infrastructure-2026-banner.webp" type="image/webp" length="0"/>
-      <category>Payments</category>
-      <category>kuantum sonrası kriptografi</category>
-      <category>ödeme altyapısı</category>
-      <category>kripto-çeviklik</category>
-      <category>ML-KEM</category>
-      <category>ML-DSA</category>
-      <category>HNDL</category>
-      <category>ISO 20022</category>
-    </item>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <item>
-      <title>Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role</title>
-      <link>https://sebastienrousseau.com/tr/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>İngiltere&apos;nin Toptan Dijital Piyasalar Şampiyonu rolü, tokenize toptan finansı ulusal bir rekabet projesine dönüştürüyor.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/uk-wholesale-digital-markets-2026-banner.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
       <category>Finance</category>
-      <category>toptan dijital piyasalar</category>
-      <category>tokenize gilts</category>
-      <category>Chris Woolard</category>
-      <category>UK tokenizasyon</category>
-      <category>takas</category>
-      <category>teminat hareketliliği</category>
+      <category>AI payments</category>
+      <category>fraud prevention</category>
+      <category>routing</category>
+      <category>resilience</category>
+      <category>compliance</category>
+      <category>ISO 20022</category>
+      <category>agentic commerce</category>
     </item>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    <item>
+      <title>Ödemelerin İşletim Sistemi Olarak AI: 2026'da Dolandırıcılık, Yönlendirme, Dayanıklılık ve Uyum</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>AI 2026&apos;da ödemelerin işletim sistemi hâline geliyor; analitikten dolandırıcılık önleme, ödeme onarımı, yönlendirme, likidite tahmini, uyum taraması ve aracılı ticaret kontrollerine geçiyor.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>AI ödemeler</category>
+      <category>dolandırıcılık önleme</category>
+      <category>yönlendirme</category>
+      <category>dayanıklılık</category>
+      <category>uyum</category>
+      <category>ISO 20022</category>
+      <category>aracılı ticaret</category>
+    </item>
+    <item>
+      <title>AI ในฐานะระบบปฏิบัติการของการชำระเงิน: ฉ้อโกง เส้นทาง ยืดหยุ่น ปฏิบัติตามกฎ 2026</title>
+      <link>https://sebastienrousseau.com/th/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>AI กำลังกลายเป็นระบบปฏิบัติการของการชำระเงินในปี 2026 ขยายจากการวิเคราะห์ไปสู่การป้องกันการฉ้อโกง การซ่อมแซมการชำระเงิน การกำหนดเส้นทาง การคาดการณ์สภาพคล่อง การคัดกรองการปฏิบัติตามกฎ และการควบคุมพาณิชย์เชิงตัวแทน</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>AI การชำระเงิน</category>
+      <category>การป้องกันการฉ้อโกง</category>
+      <category>การกำหนดเส้นทาง</category>
+      <category>ความยืดหยุ่น</category>
+      <category>การปฏิบัติตามกฎ</category>
+      <category>ISO 20022</category>
+      <category>พาณิชย์เชิงตัวแทน</category>
+    </item>
+    <item>
+      <title>La IA como sistema operativo de los pagos: fraude, enrutamiento, resiliencia y cumplimiento en 2026</title>
+      <link>https://sebastienrousseau.com/es/2026-05-27-ai-operating-system-pagos-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>La IA se está convirtiendo en el sistema operativo de los pagos en 2026: prevención de fraude, reparación, enrutamiento, previsión de liquidez, cribado de cumplimiento y controles de comercio agéntico.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-05-27-ai-operating-system-pagos-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>IA pagos</category>
+      <category>prevención de fraude</category>
+      <category>enrutamiento</category>
+      <category>resiliencia</category>
+      <category>cumplimiento</category>
+      <category>ISO 20022</category>
+      <category>comercio agéntico</category>
+    </item>
+    <item>
+      <title>L'IA comme système d'exploitation des paiements : fraude, routage, résilience et conformité en 2026</title>
+      <link>https://sebastienrousseau.com/fr/2026-05-27-ai-operating-system-paiements-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>L&apos;IA devient le système d&apos;exploitation des paiements en 2026 : prévention de la fraude, réparation des paiements, routage, prévision de liquidité, filtrage de conformité et garde-fous du commerce agentique.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-27-ai-operating-system-paiements-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>IA paiements</category>
+      <category>prévention fraude</category>
+      <category>routage</category>
+      <category>résilience</category>
+      <category>conformité</category>
+      <category>ISO 20022</category>
+      <category>commerce agentique</category>
+    </item>
+    <item>
+      <title>AI sebagai Sistem Operasi Pembayaran: Penipuan, Routing, Ketahanan, dan Kepatuhan pada 2026</title>
+      <link>https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>AI menjadi sistem operasi pembayaran pada 2026, bergeser dari analitik ke pencegahan penipuan, perbaikan pembayaran, routing, prakiraan likuiditas, penyaringan kepatuhan, dan kontrol agentic commerce.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Keuangan</category>
+      <category>pembayaran AI</category>
+      <category>pencegahan penipuan</category>
+      <category>routing</category>
+      <category>ketahanan</category>
+      <category>kepatuhan</category>
+      <category>ISO 20022</category>
+      <category>agentic commerce</category>
+    </item>
+    <item>
+      <title>결제의 AI 운영체제: 2026년 사기, 라우팅, 회복력, 컴플라이언스</title>
+      <link>https://sebastienrousseau.com/ko/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>2026년 AI는 결제의 운영체제로 자리잡으며, 분석 대시보드를 넘어 사기 방지, 결제 복구, 라우팅, 유동성 예측, 컴플라이언스 검사, 에이전틱 커머스 통제 영역으로 확장되고 있습니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>AI 결제</category>
+      <category>사기 방지</category>
+      <category>라우팅</category>
+      <category>회복력</category>
+      <category>컴플라이언스</category>
+      <category>ISO 20022</category>
+      <category>에이전틱 커머스</category>
+    </item>
+    <item>
+      <title>KI als Betriebssystem des Zahlungsverkehrs: Betrug, Routing, Resilienz und Compliance 2026</title>
+      <link>https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>KI wird 2026 zum Betriebssystem des Zahlungsverkehrs: vom Analytik-Werkzeug zur Steuerungsschicht für Betrugsabwehr, Zahlungsreparatur, Routing, Liquiditätsprognose, Compliance-Prüfung und agentische Handelskontrollen.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>KI-Zahlungsverkehr</category>
+      <category>Betrugsabwehr</category>
+      <category>Routing</category>
+      <category>Resilienz</category>
+      <category>Compliance</category>
+      <category>ISO 20022</category>
+      <category>agentischer Handel</category>
+    </item>
+    <item>
+      <title>भुगतान का AI ऑपरेटिंग सिस्टम: 2026 में धोखाधड़ी, रूटिंग, लचीलापन और अनुपालन</title>
+      <link>https://sebastienrousseau.com/hi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>2026 में AI भुगतान का ऑपरेटिंग सिस्टम बन रहा है — विश्लेषण से आगे बढ़कर धोखाधड़ी रोकथाम, भुगतान मरम्मत, रूटिंग, तरलता पूर्वानुमान, अनुपालन स्क्रीनिंग और एजेंटिक कॉमर्स नियंत्रण तक।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>AI भुगतान</category>
+      <category>धोखाधड़ी रोकथाम</category>
+      <category>रूटिंग</category>
+      <category>लचीलापन</category>
+      <category>अनुपालन</category>
+      <category>ISO 20022</category>
+      <category>एजेंटिक कॉमर्स</category>
+    </item>
+    <item>
+      <title>AI Bilang Operating System ng Pagbabayad: Pandaraya, Ruta, Katatagan, at Compliance sa 2026</title>
+      <link>https://sebastienrousseau.com/fil/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>Nagiging operating system ng pagbabayad ang AI sa 2026, lumipat mula analytics tungo sa pag-iwas sa pandaraya, pag-aayos ng bayad, ruta, forecasting ng likido, screening ng compliance, at kontrol ng agentic commerce.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>AI payments</category>
+      <category>pag-iwas sa pandaraya</category>
+      <category>ruta</category>
+      <category>katatagan</category>
+      <category>compliance</category>
+      <category>ISO 20022</category>
+      <category>agentic commerce</category>
+    </item>
+    <item>
+      <title>পেমেন্টের অপারেটিং সিস্টেম হিসেবে AI: ২০২৬-এ প্রতারণা, রাউটিং, স্থিতিস্থাপকতা ও কমপ্লায়েন্স</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>২০২৬ সালে AI পেমেন্টের অপারেটিং সিস্টেমে পরিণত হচ্ছে — অ্যানালিটিক্স থেকে সরে গিয়ে প্রতারণা প্রতিরোধ, পেমেন্ট মেরামত, রাউটিং, তারল্য পূর্বাভাস, কমপ্লায়েন্স স্ক্রিনিং ও এজেন্টিক কমার্স নিয়ন্ত্রণে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>AI পেমেন্ট</category>
+      <category>প্রতারণা প্রতিরোধ</category>
+      <category>রাউটিং</category>
+      <category>স্থিতিস্থাপকতা</category>
+      <category>কমপ্লায়েন্স</category>
+      <category>ISO 20022</category>
+      <category>এজেন্টিক কমার্স</category>
+    </item>
+    <item>
+      <title>AI als besturingssysteem van betalingen: fraude, routering, veerkracht en compliance in 2026</title>
+      <link>https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>AI wordt in 2026 het besturingssysteem van betalingen: van analytics naar fraudepreventie, betalingsherstel, routering, liquiditeitsprognose, compliance-screening en agentic-commerce-controles.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>AI betalingen</category>
+      <category>fraudepreventie</category>
+      <category>routering</category>
+      <category>veerkracht</category>
+      <category>compliance</category>
+      <category>ISO 20022</category>
+      <category>agentic commerce</category>
+    </item>
+    <item>
+      <title>IA como Sistema Operacional dos Pagamentos: Fraude, Roteamento, Resiliência e Conformidade em 2026</title>
+      <link>https://sebastienrousseau.com/pt-br/2026-05-27-ai-operating-system-pagamentos-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>Em 2026 a IA assume o papel de sistema operacional dos pagamentos: prevenção de fraude, reparo, roteamento, previsão de liquidez, triagem de conformidade e controles de comércio agêntico.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-05-27-ai-operating-system-pagamentos-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>IA em pagamentos</category>
+      <category>prevenção de fraude</category>
+      <category>roteamento</category>
+      <category>resiliência</category>
+      <category>conformidade</category>
+      <category>ISO 20022</category>
+      <category>comércio agêntico</category>
+    </item>
+    <item>
+      <title>الذكاء الاصطناعي بوصفه نظام تشغيل المدفوعات: الاحتيال والتوجيه والمرونة والامتثال في 2026</title>
+      <link>https://sebastienrousseau.com/ar/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>يُصبح الذكاء الاصطناعي نظام تشغيل المدفوعات في 2026، منتقلاً من التحليلات إلى منع الاحتيال، وإصلاح المدفوعات، والتوجيه، والتنبؤ بالسيولة، وفحص الامتثال، وضوابط التجارة الوكيلة.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>نظام تشغيل الذكاء الاصطناعي للمدفوعات</category>
+      <category>منع الاحتيال</category>
+      <category>التوجيه</category>
+      <category>المرونة</category>
+      <category>الامتثال</category>
+      <category>ISO 20022</category>
+      <category>التجارة الوكيلة</category>
+    </item>
+    <item>
+      <title>AI a Matsayin Tsarin Aiki na Biya: Zamba, Tuƙi, Juriya, da Bin Doka a 2026</title>
+      <link>https://sebastienrousseau.com/ha/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>A 2026, AI yana zama tsarin aiki na biya, yana motsi daga nazari zuwa hana zamba, gyaran biya, tuƙi, hasashen ruwa-ruwa, tantance bin doka, da sarrafa cinikayyar agentic commerce.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>AI payments</category>
+      <category>fraud prevention</category>
+      <category>routing</category>
+      <category>resilience</category>
+      <category>compliance</category>
+      <category>ISO 20022</category>
+      <category>agentic commerce</category>
+    </item>
+    <item>
+      <title>ШІ як операційна система платежів: шахрайство, маршрутизація, стійкість і відповідність у 2026</title>
+      <link>https://sebastienrousseau.com/uk/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>ШІ стає операційною системою платежів у 2026 році: виходить за межі аналітики у запобігання шахрайству, відновлення платежів, маршрутизацію, прогноз ліквідності та перевірку відповідності.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>ШІ у платежах</category>
+      <category>запобігання шахрайству</category>
+      <category>маршрутизація</category>
+      <category>стійкість</category>
+      <category>відповідність</category>
+      <category>ISO 20022</category>
+      <category>агентна комерція</category>
+    </item>
+    <item>
+      <title>AI gẹ́gẹ́ bí Ètò Ìṣiṣẹ́ AI ti Ìsanwó: Jìbìtì, Ìpinnu Ọ̀nà, Ìfaradà, Ìbámu 2026</title>
+      <link>https://sebastienrousseau.com/yo/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>AI ti ń di ètò ìṣiṣẹ́ AI ti ìsanwó ní 2026, ó ń kọjá láti àyẹ̀wò sí ìdènà jìbìtì, àtúnṣe ìsanwó, ìpinnu ọ̀nà, ìhùmọ̀ owó tó ń sàn, àyẹ̀wò ìbámu, àti ìṣàkóso agentic commerce.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>AI payments</category>
+      <category>fraud prevention</category>
+      <category>routing</category>
+      <category>resilience</category>
+      <category>compliance</category>
+      <category>ISO 20022</category>
+      <category>agentic commerce</category>
+    </item>
+    <item>
+      <title>AI ca sistem de operare al plăților: fraudă, rutare, reziliență și conformitate în 2026</title>
+      <link>https://sebastienrousseau.com/ro/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>AI devine sistemul de operare al plăților în 2026: prevenirea fraudei, repararea plăților, rutarea, prognoza lichidității, screening de conformitate și controale pentru comerțul agentic la viteza fluxului.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>AI payments</category>
+      <category>fraud prevention</category>
+      <category>routing</category>
+      <category>resilience</category>
+      <category>compliance</category>
+      <category>ISO 20022</category>
+      <category>agentic commerce</category>
+    </item>
+    <item>
+      <title>ИИ как операционная система платежей: мошенничество, маршрутизация, устойчивость и комплаенс в 2026</title>
+      <link>https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>В 2026 году ИИ становится операционной системой платежей: от аналитики к предотвращению мошенничества, восстановлению платежей, маршрутизации, прогнозу ликвидности, проверкам комплаенса и контролю агентной коммерции.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>ИИ в платежах</category>
+      <category>предотвращение мошенничества</category>
+      <category>маршрутизация</category>
+      <category>устойчивость</category>
+      <category>комплаенс</category>
+      <category>ISO 20022</category>
+      <category>агентная коммерция</category>
+    </item>
+    <item>
+      <title>AI jako operační systém plateb: podvody, směrování, odolnost a compliance v roce 2026</title>
+      <link>https://sebastienrousseau.com/cs/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>AI se v roce 2026 stává operačním systémem plateb — propojuje prevenci podvodů, opravu plateb, směrování, prognózu likvidity, screening compliance a kontroly agentického obchodu v rychlosti workflow.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>AI platby</category>
+      <category>prevence podvodů</category>
+      <category>směrování</category>
+      <category>odolnost</category>
+      <category>compliance</category>
+      <category>ISO 20022</category>
+      <category>agentický obchod</category>
+    </item>
+    <item>
+      <title>L'IA come sistema operativo dei pagamenti: frode, routing, resilienza e conformità nel 2026</title>
+      <link>https://sebastienrousseau.com/it/2026-05-27-ai-operating-system-pagamenti-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>Nel 2026 l&apos;IA diventa il sistema operativo dei pagamenti: prevenzione frodi, riparazione, routing, previsione di liquidità, screening di conformità e controlli per il commercio agentico in tempo reale.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-27-ai-operating-system-pagamenti-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>AI pagamenti</category>
+      <category>prevenzione frodi</category>
+      <category>routing</category>
+      <category>resilienza</category>
+      <category>conformità</category>
+      <category>ISO 20022</category>
+      <category>commercio agentico</category>
+    </item>
+    <item>
+      <title>決済のオペレーティングシステムとしての AI: 2026 年の不正、ルーティング、レジリエンス、コンプライアンス</title>
+      <link>https://sebastienrousseau.com/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>2026 年、AI は決済のオペレーティングシステムへと進化し、分析を越えて不正防止、決済修復、ルーティング、流動性予測、コンプライアンススクリーニング、エージェント型コマース統制を担います。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>AI 決済</category>
+      <category>不正防止</category>
+      <category>ルーティング</category>
+      <category>レジリエンス</category>
+      <category>コンプライアンス</category>
+      <category>ISO 20022</category>
+      <category>エージェント型コマース</category>
+    </item>
+    <item>
+      <title>AI כמערכת ההפעלה של התשלומים: הונאה, ניתוב, חוסן וציות ב-2026</title>
+      <link>https://sebastienrousseau.com/he/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>בינה מלאכותית הופכת ב-2026 למערכת ההפעלה של התשלומים — מנתחת הונאה, מתקנת תשלומים, מנתבת מסילות, צופה נזילות, מסננת סנקציות ו-AML ומבקרת מסחר אוטונומי במהירות התהליך.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>AI בתשלומים</category>
+      <category>מניעת הונאה</category>
+      <category>ניתוב</category>
+      <category>חוסן</category>
+      <category>ציות</category>
+      <category>ISO 20022</category>
+      <category>מסחר אוטונומי</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>AML</category>
+      <category>סנקציות</category>
+    </item>
+    <item>
+      <title>AI som betalningarnas operativsystem: bedrägeri, routning, resiliens och efterlevnad 2026</title>
+      <link>https://sebastienrousseau.com/sv/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>AI blir betalningarnas operativsystem 2026 och går från analys till bedrägeriskydd, betalningsreparation, routning, likviditetsprognos, efterlevnadsscreening och kontroller för agentisk handel.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>AI-betalningar</category>
+      <category>bedrägeriskydd</category>
+      <category>routning</category>
+      <category>resiliens</category>
+      <category>efterlevnad</category>
+      <category>ISO 20022</category>
+      <category>agentisk handel</category>
+    </item>
+    <item>
+      <title>AI là hệ điều hành của thanh toán: Gian lận, định tuyến, phục hồi và tuân thủ năm 2026</title>
+      <link>https://sebastienrousseau.com/vi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>AI đang trở thành hệ điều hành của thanh toán năm 2026, dịch chuyển từ phân tích sang phòng chống gian lận, sửa chữa thanh toán, định tuyến, dự báo thanh khoản, sàng lọc tuân thủ và kiểm soát thương mại agentic.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>AI thanh toán</category>
+      <category>phòng chống gian lận</category>
+      <category>định tuyến</category>
+      <category>khả năng phục hồi</category>
+      <category>tuân thủ</category>
+      <category>ISO 20022</category>
+      <category>thương mại agentic</category>
+    </item>
+    <item>
+      <title>AI jako system operacyjny platnosci: oszustwo, routing, odpornosc i zgodnosc w 2026</title>
+      <link>https://sebastienrousseau.com/pl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>AI staje sie systemem operacyjnym platnosci w 2026 roku — od analityki po prewencje oszustw, naprawe platnosci, routing, prognoze plynnosci, screening zgodnosci oraz kontrole handlu agentowego.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>AI w platnosciach</category>
+      <category>prewencja oszustw</category>
+      <category>routing</category>
+      <category>odpornosc</category>
+      <category>zgodnosc</category>
+      <category>ISO 20022</category>
+      <category>handel agentowy</category>
+    </item>
+    <item>
+      <title>支付的人工智慧作業系統:2026 年詐騙、路由、韌性與法遵</title>
+      <link>https://sebastienrousseau.com/zh-hant/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>2026 年人工智慧正成為支付的作業系統,從分析跨入詐騙防範、付款修復、路由、流動性預測、法遵篩查與代理商務控制,並以工作流速度運作於銀行決策。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>AI 支付</category>
+      <category>詐騙防範</category>
+      <category>路由</category>
+      <category>韌性</category>
+      <category>法遵</category>
+      <category>ISO 20022</category>
+      <category>代理商務</category>
+    </item>
+    <item>
+      <title>2026 支付人工智能操作系统：欺诈、路由、韧性与合规</title>
+      <link>https://sebastienrousseau.com/zh-hans/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>2026 年人工智能正成为支付的操作系统，从分析仪表盘走向欺诈防范、支付修复、路由、流动性预测、合规筛查与代理式商业控制的实时决策层。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>支付 AI</category>
+      <category>欺诈防范</category>
+      <category>路由</category>
+      <category>韧性</category>
+      <category>合规</category>
+      <category>ISO 20022</category>
+      <category>代理式商业</category>
+    </item>
+    <item>
+      <title>Magnifica Humanitas: An AI-Industry Reading of the First Papal Encyclical on Artificial Intelligence</title>
+      <link>https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope</link>
+      <description>On 25 May 2026, Pope Leo XIV released Magnifica Humanitas, the first papal encyclical devoted to artificial intelligence. Read objectively from inside the technology industry — not as doctrine but as one of the most coherent ethical frameworks yet articulated for the AI and quantum era — it echoes the moral anxieties that accompanied the train, the automobile, nuclear power, and the internet. This is what it means for the industry, for humanity, and why, in the end, the honest reading is one of hope.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Magnifica Humanitas</category>
+      <category>Pope Leo XIV</category>
+      <category>AI ethics</category>
+      <category>quantum computing</category>
+      <category>technology history</category>
+      <category>transhumanism</category>
+      <category>human dignity</category>
+      <category>Lucy</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+    </item>
+    <item>
+      <title>Stablecoins vs Tokenised Deposits in 2026: What Banks Actually Need to Defend</title>
+      <link>https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026</link>
+      <description>Stablecoins and tokenised deposits are converging around programmable settlement, but their balance-sheet, legal, liquidity, and trust models remain different.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>stablecoins</category>
+      <category>tokenised deposits</category>
+      <category>bank strategy</category>
+      <category>deposit tokens</category>
+      <category>JPM Coin</category>
+      <category>GENIUS Act</category>
+      <category>commercial bank money</category>
+    </item>
+    <item>
+      <title>Magnifica Humanitas: Yapay Zekâ Genelgesinin Sektörel Okuması</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</link>
+      <description>Papa XIV. Leon&apos;un yapay zekâ üzerine ilk genelgesi Magnifica Humanitas&apos;ın sektörel okuması: tren, otomobil, nükleer ve internet emsalleri; umuda varan analiz.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Magnifica Humanitas</category>
+      <category>Pope Leo XIV</category>
+      <category>yapay zeka etiği</category>
+      <category>kuantum bilişim</category>
+      <category>teknoloji tarihi</category>
+      <category>transhümanizm</category>
+      <category>insan onuru</category>
+      <category>Lucy</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+    </item>
+    <item>
+      <title>Stablecoinler ve Tokenleştirilmiş Mevduatlar 2026: Bankaların Gerçekten Savunması Gereken</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</link>
+      <description>Stablecoinler ve tokenleştirilmiş mevduatlar programlanabilir mutabakat etrafında yakınsıyor; ancak bilanço, hukuki, likidite ve güven modelleri farklı kalıyor.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finans</category>
+      <category>stablecoinler</category>
+      <category>tokenleştirilmiş mevduatlar</category>
+      <category>banka stratejisi</category>
+      <category>mevduat tokenları</category>
+      <category>JPM Coin</category>
+      <category>GENIUS Act</category>
+      <category>ticari banka parası</category>
+    </item>
+    <item>
+      <title>Magnifica Humanitas: การอ่านสมณสาส์น AI ฉบับแรกในมุมอุตสาหกรรม</title>
+      <link>https://sebastienrousseau.com/th/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</link>
+      <description>25 พฤษภาคม 2026 สมเด็จพระสันตะปาปาเลโอที่ 14 ทรงประกาศ Magnifica Humanitas สมณสาส์นฉบับแรกว่าด้วย AI อ่านเชิงวิศวกรรมเป็นกรอบจริยธรรมยุค AI ที่ลงเอยที่ความหวัง</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Magnifica Humanitas</category>
+      <category>สมเด็จพระสันตะปาปาลีโอที่ 14</category>
+      <category>จริยธรรม AI</category>
+      <category>ควอนตัมคอมพิวติ้ง</category>
+      <category>ประวัติศาสตร์เทคโนโลยี</category>
+      <category>ทรานส์ฮิวแมนิสม์</category>
+      <category>ศักดิ์ศรีความเป็นมนุษย์</category>
+      <category>Lucy</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+    </item>
+    <item>
+      <title>สเตเบิลคอยน์ vs เงินฝากแบบโทเคนในปี 2026: สิ่งที่ธนาคารต้องปกป้อง</title>
+      <link>https://sebastienrousseau.com/th/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</link>
+      <description>สเตเบิลคอยน์และเงินฝากแบบโทเคนกำลังบรรจบที่การชำระบัญชีที่ตั้งโปรแกรมได้ แต่แบบจำลองงบดุล กฎหมาย สภาพคล่อง และความเชื่อมั่นยังต่างกัน ธนาคารต้องเลือกสถาปัตยกรรม</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>stablecoins</category>
+      <category>tokenised deposits</category>
+      <category>bank strategy</category>
+      <category>deposit tokens</category>
+      <category>JPM Coin</category>
+      <category>GENIUS Act</category>
+      <category>commercial bank money</category>
+    </item>
+    <item>
+      <title>Magnifica Humanitas: lectura desde la industria de la IA</title>
+      <link>https://sebastienrousseau.com/es/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</link>
+      <description>Lectura desde la ingeniería de Magnifica Humanitas, la primera encíclica papal sobre IA del Papa León XIV: marco ético para la era cuántica y esperanza.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Magnifica Humanitas</category>
+      <category>Pope Leo XIV</category>
+      <category>ética de la IA</category>
+      <category>computación cuántica</category>
+      <category>historia de la tecnología</category>
+      <category>transhumanismo</category>
+      <category>dignidad humana</category>
+      <category>Lucy</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+    </item>
+    <item>
+      <title>Stablecoins vs depósitos tokenizados 2026: qué debe defender la banca</title>
+      <link>https://sebastienrousseau.com/es/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</link>
+      <description>Stablecoins y depósitos tokenizados convergen en liquidación programable, pero sus modelos de balance, legales, de liquidez y de confianza siguen siendo distintos.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>stablecoins</category>
+      <category>depósitos tokenizados</category>
+      <category>estrategia bancaria</category>
+      <category>tokens de depósito</category>
+      <category>JPM Coin</category>
+      <category>GENIUS Act</category>
+      <category>dinero de banco comercial</category>
+    </item>
+    <item>
+      <title>Stablecoins vs dépôts tokenisés en 2026 : ce que les banques doivent défendre</title>
+      <link>https://sebastienrousseau.com/fr/2026-05-26-stablecoins-vs-tokenise-deposits-bank-strategy-2026/index.html</link>
+      <description>Stablecoins et dépôts tokenisés convergent vers le règlement programmable, mais leurs modèles de bilan, juridiques, de liquidité et de confiance restent distincts.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-26-stablecoins-vs-tokenise-deposits-bank-strategy-2026/index.html</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>stablecoins</category>
+      <category>dépôts tokenisés</category>
+      <category>stratégie bancaire</category>
+      <category>jetons de dépôt</category>
+      <category>JPM Coin</category>
+      <category>GENIUS Act</category>
+      <category>monnaie de banque commerciale</category>
+    </item>
+    <item>
+      <title>Magnifica Humanitas : lecture industrielle de l'encyclique sur l'IA</title>
+      <link>https://sebastienrousseau.com/fr/2026-05-26-magnifica-humanitas-ai-quantique-message-of-hope/index.html</link>
+      <description>Le 25 mai 2026, le Pape Léon XIV publie Magnifica Humanitas, première encyclique pontificale consacrée à l&apos;intelligence artificielle. Lue depuis l&apos;industrie technologique — non comme doctrine, mais comme l&apos;un des cadres éthiques les plus cohérents jamais formulés pour l&apos;ère de l&apos;IA et du quantique — elle prolonge les inquiétudes morales qui ont accompagné le train, l&apos;automobile, le nucléaire et l&apos;internet. Ce qu&apos;elle signifie pour l&apos;industrie, pour l&apos;humanité, et pourquoi la lecture honnête est, au bout du compte, une lecture d&apos;espérance.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-26-magnifica-humanitas-ai-quantique-message-of-hope/index.html</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Magnifica Humanitas</category>
+      <category>Pape Léon XIV</category>
+      <category>éthique de l&apos;IA</category>
+      <category>informatique quantique</category>
+      <category>histoire des technologies</category>
+      <category>transhumanisme</category>
+      <category>dignité humaine</category>
+      <category>Lucy</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+    </item>
+    <item>
+      <title>Magnifica Humanitas: Pembacaan Industri AI atas Ensiklik Kepausan Pertama tentang AI</title>
+      <link>https://sebastienrousseau.com/id/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</link>
+      <description>Pada 25 Mei 2026, Paus Leo XIV merilis Magnifica Humanitas, ensiklik kepausan pertama tentang kecerdasan buatan — dibaca dari dalam industri teknologi sebagai kerangka etika untuk era AI dan kuantum.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Magnifica Humanitas</category>
+      <category>Pope Leo XIV</category>
+      <category>etika AI</category>
+      <category>komputasi kuantum</category>
+      <category>sejarah teknologi</category>
+      <category>transhumanisme</category>
+      <category>martabat manusia</category>
+      <category>Lucy</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+    </item>
+    <item>
+      <title>Stablecoin vs Deposito Tertokenisasi 2026: Yang Harus Dibela Bank</title>
+      <link>https://sebastienrousseau.com/id/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</link>
+      <description>Stablecoin dan deposito tertokenisasi menyatu pada penyelesaian yang dapat diprogram, namun model neraca, hukum, likuiditas, dan kepercayaannya tetap berbeda bagi bank.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>stablecoins</category>
+      <category>tokenised deposits</category>
+      <category>bank strategy</category>
+      <category>deposit tokens</category>
+      <category>JPM Coin</category>
+      <category>GENIUS Act</category>
+      <category>commercial bank money</category>
+    </item>
+    <item>
+      <title>Magnifica Humanitas: AI 회칙의 산업적 독해</title>
+      <link>https://sebastienrousseau.com/ko/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</link>
+      <description>2026년 5월 25일, 교황 레오 14세는 인공지능을 다룬 최초의 교황 회칙 Magnifica Humanitas를 발표했습니다. 교리가 아닌 AI·양자 시대의 윤리 프레임워크로 읽으면 기차, 자동차, 원자력, 인터넷이 불러온 도덕적 불안을 그대로 반영합니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Magnifica Humanitas</category>
+      <category>Pope Leo XIV</category>
+      <category>AI 윤리</category>
+      <category>양자 컴퓨팅</category>
+      <category>기술사</category>
+      <category>트랜스휴머니즘</category>
+      <category>인간 존엄성</category>
+      <category>Lucy</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+    </item>
+    <item>
+      <title>2026 스테이블코인 vs 토큰화 예금: 은행이 진정으로 방어해야 할 것</title>
+      <link>https://sebastienrousseau.com/ko/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</link>
+      <description>스테이블코인과 토큰화 예금은 프로그래머블 결제를 중심으로 수렴하고 있으나, 대차대조표·법적·유동성·신뢰 모델은 여전히 서로 다른 양상을 유지하고 있습니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>스테이블코인</category>
+      <category>토큰화 예금</category>
+      <category>은행 전략</category>
+      <category>예금 토큰</category>
+      <category>JPM Coin</category>
+      <category>GENIUS Act</category>
+      <category>상업은행 화폐</category>
+    </item>
+    <item>
+      <title>Magnifica Humanitas: Die erste päpstliche KI-Enzyklika gelesen</title>
+      <link>https://sebastienrousseau.com/de/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</link>
+      <description>Papst Leo XIV. Magnifica Humanitas (25. Mai 2026), die erste KI-Enzyklika, aus Sicht der Technologiebranche als Ethikrahmen für KI und Quanten gelesen.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Magnifica Humanitas</category>
+      <category>Pope Leo XIV</category>
+      <category>KI-Ethik</category>
+      <category>Quantencomputing</category>
+      <category>Technikgeschichte</category>
+      <category>Transhumanismus</category>
+      <category>Menschenwürde</category>
+      <category>Lucy</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+    </item>
+    <item>
+      <title>Stablecoins vs. tokenisierte Einlagen 2026: Was Banken wirklich verteidigen müssen</title>
+      <link>https://sebastienrousseau.com/de/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</link>
+      <description>Stablecoins und tokenisierte Einlagen konvergieren bei programmierbarer Abwicklung, doch Bilanz, Rechtsanspruch, Liquidität und Vertrauensmodell bleiben unterschiedlich.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>Stablecoins</category>
+      <category>tokenisierte Einlagen</category>
+      <category>Bankstrategie</category>
+      <category>Deposit Tokens</category>
+      <category>JPM Coin</category>
+      <category>GENIUS Act</category>
+      <category>Geschäftsbankengeld</category>
+    </item>
+    <item>
+      <title>Magnifica Humanitas: AI पर पहले पोप विश्वपत्र का उद्योग-पठन</title>
+      <link>https://sebastienrousseau.com/hi/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</link>
+      <description>25 मई 2026 को पोप लियो XIV ने Magnifica Humanitas जारी किया — AI पर पहला पोप विश्वपत्र। प्रौद्योगिकी उद्योग के भीतर से पढ़ने पर यह आशा का संदेश है।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Magnifica Humanitas</category>
+      <category>Pope Leo XIV</category>
+      <category>AI नैतिकता</category>
+      <category>क्वांटम कंप्यूटिंग</category>
+      <category>तकनीकी इतिहास</category>
+      <category>ट्रांसह्यूमनिज़्म</category>
+      <category>मानव गरिमा</category>
+      <category>Lucy</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+    </item>
+    <item>
+      <title>स्टेबलकॉइन बनाम टोकनीकृत जमा 2026: बैंकों को वास्तव में किसकी रक्षा करनी है</title>
+      <link>https://sebastienrousseau.com/hi/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</link>
+      <description>स्टेबलकॉइन और टोकनीकृत जमा प्रोग्रामेबल निपटान पर अभिसरित हो रहे हैं, परंतु उनके बैलेंस शीट, विधिक, तरलता और भरोसे के मॉडल भिन्न बने हुए हैं।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>स्टेबलकॉइन</category>
+      <category>टोकनीकृत जमा</category>
+      <category>बैंक रणनीति</category>
+      <category>डिपॉज़िट टोकन</category>
+      <category>JPM Coin</category>
+      <category>GENIUS Act</category>
+      <category>वाणिज्यिक बैंक मुद्रा</category>
+    </item>
+    <item>
+      <title>Magnifica Humanitas: Pagbasa ng Industriya sa Enciklika ni Leo XIV</title>
+      <link>https://sebastienrousseau.com/fil/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</link>
+      <description>Pagbasa mula sa industriya ng teknolohiya kay Papa Leo XIV at sa Magnifica Humanitas — ang unang papal na enciklika sa AI, dumadapo sa pag-asa, hindi takot.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Magnifica Humanitas</category>
+      <category>Pope Leo XIV</category>
+      <category>AI ethics</category>
+      <category>quantum computing</category>
+      <category>kasaysayan ng teknolohiya</category>
+      <category>transhumanism</category>
+      <category>dignidad ng tao</category>
+      <category>Lucy</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+    </item>
+    <item>
+      <title>Stablecoins vs Tokenized Deposits 2026: Ano ang Dapat Ipagtanggol ng Bangko</title>
+      <link>https://sebastienrousseau.com/fil/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</link>
+      <description>Nag-uugnay ang stablecoins at tokenized deposits sa programmable settlement, ngunit magkaiba pa rin ang balance sheet, legal, likido, at modelo ng tiwala.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>stablecoins</category>
+      <category>tokenized deposits</category>
+      <category>estratehiya ng bangko</category>
+      <category>deposit tokens</category>
+      <category>JPM Coin</category>
+      <category>GENIUS Act</category>
+      <category>pera ng commercial bank</category>
+    </item>
+    <item>
+      <title>Magnifica Humanitas: AI বিশ্বপত্রের প্রযুক্তি-শিল্প পাঠ</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</link>
+      <description>পোপ লিও চতুর্দশের Magnifica Humanitas — AI নিয়ে প্রথম পোপীয় বিশ্বপত্র; প্রযুক্তি শিল্পের ভিতর থেকে নৈতিক কাঠামো হিসেবে পড়লে এটি আশায় গিয়ে দাঁড়ায়।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Magnifica Humanitas</category>
+      <category>পোপ চতুর্দশ লিও</category>
+      <category>AI নীতিশাস্ত্র</category>
+      <category>কোয়ান্টাম কম্পিউটিং</category>
+      <category>প্রযুক্তির ইতিহাস</category>
+      <category>ট্রান্সহিউম্যানিজম</category>
+      <category>মানব মর্যাদা</category>
+      <category>Lucy</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+    </item>
+    <item>
+      <title>স্টেবলকয়েন বনাম টোকেনাইজড আমানত ২০২৬: ব্যাংককে আসলে কী রক্ষা করতে হবে</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</link>
+      <description>স্টেবলকয়েন ও টোকেনাইজড আমানত প্রোগ্রামেবল নিষ্পত্তিতে মিলছে, তবে ব্যালেন্স শিট, আইনি, তারল্য ও আস্থার মডেল ভিন্ন থাকছে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>stablecoins</category>
+      <category>tokenised deposits</category>
+      <category>bank strategy</category>
+      <category>deposit tokens</category>
+      <category>JPM Coin</category>
+      <category>GENIUS Act</category>
+      <category>commercial bank money</category>
+    </item>
   </channel>
 </rss>

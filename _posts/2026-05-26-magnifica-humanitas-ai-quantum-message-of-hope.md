@@ -98,24 +98,25 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Shokunin, Rust"
 
+last_reviewed: "2026-05-27"
 ---
 
 # Magnifica Humanitas: An AI-Industry Reading of the First Papal Encyclical on Artificial Intelligence
 
 
 
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> On 25 May 2026, Pope Leo XIV released <em>Magnifica Humanitas</em>, the first papal encyclical on AI. Read from inside the technology industry as an ethical framework rather than as doctrine, it echoes every moral anxiety that accompanied the train, the automobile, nuclear power, and the internet — and lands, honestly, on hope.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> On 25 May 2026, Pope Leo XIV released Magnifica Humanitas, the first papal encyclical devoted to artificial intelligence. Read objectively from inside the technology industry — not as doctrine but as one of the most coherent ethical frameworks yet articulated for the AI and quantum era — it echoes the moral anxieties that accompanied the train, the automobile, nuclear power, and the internet. This is what it means for the industry, for humanity, and why, in the end, the honest reading is one of hope.</p>
 <p class="post-lead-heading"><strong>Key takeaways</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Technology is never neutral.</strong> The encyclical's central design observation — that technology "takes on the characteristics of those who devise, finance, regulate and use it" — is the position a decade of AI-safety engineering has been slowly, expensively rediscovering.</li>
-  <li><strong>The right historical frame is <em>Rerum Novarum</em>.</strong> By signing on the 135th anniversary of Leo XIII's 1891 industrial-revolution encyclical, Leo XIV is making a deliberate claim: AI is another industrial revolution, and governance has to catch up with capability the way it eventually did for the train, the car, nuclear, and the internet.</li>
-  <li><strong>The choice is Babel or Jerusalem, not yes or no.</strong> Extractive AI (uniformity, profit-idolatry, the person as data) versus humane AI (communion, shared responsibility, plural voices) — a sharper frame than the accelerationist-versus-doomer binary.</li>
-  <li><strong>The transhumanist temptation is the deepest warning.</strong> Treating human limits (illness, ageing, vulnerability) as defects to optimise away connects directly to the <em>Lucy</em> fantasy of knowledge migrating from flesh to machine.</li>
-  <li><strong>The honest conclusion is hopeful.</strong> The encyclical's deepest claim is that AI is not weather, happening to people. It is architecture, being designed right now in every architecture review, training run, and decision about what to optimise and what to refuse.</li>
+  <li><strong>A Note on How to Read This.</strong> This is not a theological reading.</li>
+  <li><strong>What the Encyclical Actually Says.</strong> The framing device is two biblical images, and they are worth understanding even for a wholly secular reader because they do real analytical work.</li>
+  <li><strong>Technology Is Never Neutral: A Design Observation, Not a Sermon.</strong> The single most important sentence in the encyclical, for an engineer, is the claim that technology "takes on the characteristics of those who devise, finance, regulate and use it." Strip away the context and this is…</li>
+  <li><strong>The Pattern: Train, Automobile, Nuclear, Internet.</strong> What gives the encyclical its real interpretive power is its explicit anchoring in Rerum Novarum, Leo XIII's 1891 encyclical on the Industrial Revolution.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html">Lucy's Flash Drive, Revisited: Knowledge Transfer, AI, and Quantum</a>.</p>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html">Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</a>, <a href="https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</a>, <a href="https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026">Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</a>.</p>
 </aside>
 <!-- lead-end -->
 
@@ -257,3 +258,16 @@ Optimistic, but not naïvely so. The argument is that the future of AI and quant
 - TIME, (2026). [Pope Leo Uses First Major Papal Text to Warn About Dangers of AI ⧉](https://time.com/article/2026/05/25/pope-leo-encyclical-ai-magnifica-humanitas/ "TIME — Pope Leo AI encyclical"). TIME.
 - CNN, (2026). [Pope Leo warns of AI fueling warfare in first major theological document ⧉](https://www.cnn.com/2026/05/25/europe/pope-leo-ai-encyclical-magnifica-humanitas-intl "CNN — Pope Leo AI encyclical"). CNN.
 - Ascension Press, (2026). [A Complete Guide to Pope Leo's First Encyclical: Magnifica Humanitas ⧉](https://ascensionpress.com/blogs/articles/a-complete-guide-to-pope-leo-s-encyclical-magnificent-humanitas "Ascension — Guide to Magnifica Humanitas"). Ascension Press.
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-27">2026-05-27</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html" class="related-media" aria-label="Lucy's Flash Drive Revisited: AI, Quantum & Knowledge" tabindex="-1"><img alt="Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles" src="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html">Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</a></h3><p><time datetime="2026-05-11">2026-05-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026" class="related-media" aria-label="Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It" tabindex="-1"><img alt="Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows" src="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</a></h3><p><time datetime="2026-05-17">2026-05-17</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026" class="related-media" aria-label="Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide" tabindex="-1"><img alt="Cloud-native banking architecture for 2026 showing Kubernetes, VM coexistence, DORA resilience, sovereign cloud, observability, and bank platform engineering" src="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026">Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</a></h3><p><time datetime="2026-05-20">2026-05-20</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->
