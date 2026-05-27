@@ -2,6 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/th/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th-TH</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-27T06:06:06+00:00</news:publication_date>
+    <news:title>AI ในฐานะระบบปฏิบัติการของการชำระเงิน: ฉ้อโกง เส้นทาง ยืดหยุ่น ปฏิบัติตามกฎ 2026</news:title>
+    <news:keywords>AI การชำระเงิน 2026, การฉ้อโกงการชำระเงิน, การกำหนดเส้นทางการชำระเงิน, การป้องกันการฉ้อโกงเรียลไทม์, ISO 20022 AI, ความยืดหยุ่นการชำระเงิน, การวิเคราะห์ธุรกรรม, การคาดการณ์กระแสเงินสด</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/th/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th-TH</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>Magnifica Humanitas: การอ่านสมณสาส์น AI ฉบับแรกในมุมอุตสาหกรรม</news:title>
+    <news:keywords>Magnifica Humanitas, Pope Leo XIV, สมณสาส์น AI, จริยธรรม AI, จริยธรรมคอมพิวเตอร์ควอนตัม, Rerum Novarum, หอบาเบล, เทคโนโลยีไม่เป็นกลาง, ทรานส์ฮิวแมนิสม์, โพสต์ฮิวแมนิสม์, ศักดิ์ศรีความเป็นมนุษย์, รถไฟ รถยนต์ นิวเคลียร์ อินเทอร์เน็ต, ประวัติศาสตร์ความตื่นตระหนกทางเทคโนโลยี, Lucy การถ่ายโอนความรู้, ความหวัง AI, EU AI Act, DORA, Anthropic, Sebastien Rousseau</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/th/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th-TH</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>สเตเบิลคอยน์ vs เงินฝากแบบโทเคนในปี 2026: สิ่งที่ธนาคารต้องปกป้อง</news:title>
+    <news:keywords>สเตเบิลคอยน์ 2026, เงินฝากแบบโทเคน, เงินฝากธนาคาร, GENIUS Act, JPM Coin, deposit tokens, เงินสำรองสเตเบิลคอยน์, การระดมทุนของธนาคาร, เงินดิจิทัล</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/th/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th-TH</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-25T06:06:06+00:00</news:publication_date>
+    <news:title>สภาพคล่องที่ตั้งโปรแกรมได้ในปี 2026: AI เงินฝากแบบโทเคน และคลังเรียลไทม์</news:title>
+    <news:keywords>programmable liquidity, tokenised deposits, AI agent, TMS, ISO 20022, virtual accounts, stablecoins, Standard Chartered, J.P. Morgan, Oliver Wyman</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/th/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</loc>
   <news:news>
     <news:publication>
@@ -326,18 +374,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/th/2024-02-12-akande-phu-chuai-siang-patiwat-kan-chuai-luea/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>th-TH</news:language>
-    </news:publication>
-    <news:publication_date>2024-02-12T06:06:06+00:00</news:publication_date>
-    <news:title>Àkàndé: GPT-Powered Voice Assistant for Executives</news:title>
-    <news:keywords>Àkàndé, OpenAI GPT-4, Whisper STT, การแคช SQLite, fpdf2, ผู้ช่วยเสียง Python, API chat completions, การสร้างสรุป PDF, แคช SHA-256, แปลงข้อความเป็นเสียง, AI ผู้ช่วยผู้บริหาร, โอเพนซอร์ส</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/th/2024-02-08-patiwat-khotsana-ai-sang-anakhot/</loc>
   <news:news>
     <news:publication>
@@ -357,32 +393,8 @@
       <news:language>th-TH</news:language>
     </news:publication>
     <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
-    <news:title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</news:title>
-    <news:keywords>Azure Cognitive Services, แปลงเสียงเป็นข้อความ, โมเดลเสียงเชิงประสาท, Azure Text Analytics, การประมวลผลภาษาธรรมชาติ, การวิเคราะห์ความรู้สึก, CherryPy, batch transcription API, ASR หลายภาษา, Azure Translator, การถอดความเสียง, การประมวลผลเสียงด้วย Python</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/th/2024-01-29-kan-wikhro-siang-praeplian-lae-khwam-khaochai-ai/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>th-TH</news:language>
-    </news:publication>
-    <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
     <news:title>Análisis, traducción e insights de audio impulsados por IA</news:title>
     <news:keywords>audio analyser, azure ai, speech-to-text, análisis de datos de audio, análisis de texto, traducciones IA, insights de audio, transcripción automatizada, tratamiento de datos de audio, aprendizaje automático</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/th/2024-01-23-khwam-kaona-nai-witsawakam-prompt-ai/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>th-TH</news:language>
-    </news:publication>
-    <news:publication_date>2024-01-23T06:06:06+00:00</news:publication_date>
-    <news:title>AI Prompt Engineering 2024: Techniques That Work</news:title>
-    <news:keywords>prompt engineering, chain-of-thought prompting, few-shot learning, zero-shot prompting, in-context learning, prompt injection, ReAct, self-consistency, retrieval-augmented generation, BloombergGPT, system prompt, LLM agent</news:keywords>
   </news:news>
 </url>
 <url>
@@ -513,18 +525,6 @@
       <news:language>th-TH</news:language>
     </news:publication>
     <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
-    <news:title>Generative AI in 2023: How It Works, Where It Lands</news:title>
-    <news:keywords>generative AI, large language model, transformer architecture, GPT-4, AI ในบริการทางการเงิน, hallucination, retrieval-augmented generation, AI governance, foundation model, fine-tuning</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/th/2023-11-12-samruat-ai-khwam-chong-charoen/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>th-TH</news:language>
-    </news:publication>
-    <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
     <news:title>IA generativa en 2023: cómo funciona, dónde aterriza</news:title>
     <news:keywords>IA generativa, tecnología, futuro, impacto, ética, sinergias, innovación, creatividad, transformación, evolución</news:keywords>
   </news:news>
@@ -539,18 +539,6 @@
     <news:publication_date>2023-11-05T06:06:06+00:00</news:publication_date>
     <news:title>Constantes matemáticas y criptográficas para la seguridad en Rust</news:title>
     <news:keywords>constantes matemáticas, constantes criptográficas, seguridad Rust, comunicación segura, cifrado, RSA, criptografía de curva elíptica, biblioteca Common (CMN), aplicaciones Rust, cálculos matemáticos</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/th/2023-10-26-libmake-tua-sang-khot-samrap-laibrari-rust/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>th-TH</news:language>
-    </news:publication>
-    <news:publication_date>2023-10-26T06:06:06+00:00</news:publication_date>
-    <news:title>LibMake: Rust Library Scaffold Generator</news:title>
-    <news:keywords>LibMake, Rust code generator, cargo scaffold, Rust library template, Tera templating, GitHub Actions Rust, cargo-audit, Rust API Guidelines, boilerplate generator, Rust CI workflow</news:keywords>
   </news:news>
 </url>
 <url>
@@ -602,18 +590,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/th/2023-09-29-attanomat-fai-chamra-nguen-iso-20022-duai-pain001/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>th-TH</news:language>
-    </news:publication>
-    <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
-    <news:title>Automating ISO 20022 Payment Files Creation with pain001</news:title>
-    <news:keywords>pain001, ISO 20022, pain.001.001.09, CustomerCreditTransferInitiation, SEPA Credit Transfer, CBPR+, payment automation, XML generation, XSD validation, GrpHdr, PmtInf, CdtTrfTxInf, CtrlSum, SWIFT</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/th/2018-02-15-kan-sang-platform-express-transaction-credits/</loc>
   <news:news>
     <news:publication>
@@ -626,18 +602,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/th/2018-02-15-kan-sang-platform-express-transaction-credits/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>th-TH</news:language>
-    </news:publication>
-    <news:publication_date>2018-02-15T06:06:06+00:00</news:publication_date>
-    <news:title>The making of the Express Transaction Credits Platform</news:title>
-    <news:keywords>แพลตฟอร์ม EXTC, ERC-223, สมาร์ทคอนแทรกต์ Ethereum, สถาปัตยกรรมโทเค็น, multi-signature, การโอนแบบ time-locked, การชำระเงินบล็อกเชน, สินเชื่อค้ำประกัน, การเงินแบบกระจายศูนย์, คริปโต 2018</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/th/2018-02-04-pertua-kripto-mai-lae-nguen-chamra-reo-khuen/</loc>
   <news:news>
     <news:publication>
@@ -647,18 +611,6 @@
     <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
     <news:title>Presentación de una nueva criptomoneda y una solución de pago más rápida</news:title>
     <news:keywords>EXTC Network, criptomoneda, pagos más rápidos, Ethereum, EIP20, smart contracts, blockchain, pagos transfronterizos, inclusión financiera</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/th/2018-02-04-pertua-kripto-mai-lae-nguen-chamra-reo-khuen/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>th-TH</news:language>
-    </news:publication>
-    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
-    <news:title>Unveiling a new Cryptocurrency and Faster Payment Solution</news:title>
-    <news:keywords>EXTC, ERC-223, สัญญาอัจฉริยะ Ethereum, การชำระเงินที่รวดเร็วขึ้น, คริปโตเคอร์เรนซี, การชำระเงินบล็อกเชน, โทเค็นการชำระเงิน, การเงินแบบกระจายศูนย์, ERC-20, การชำระเงินข้ามพรมแดน</news:keywords>
   </news:news>
 </url>
 <url>
@@ -683,18 +635,6 @@
     <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
     <news:title>Comprender la tecnología detrás de blockchain</news:title>
     <news:keywords>blockchain, Ethereum, smart contract, criptomoneda, Solidity, Geth, dApps, ERC-20, tokenización, testnet</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/th/2018-01-09-khao-chai-theknoloyi-beuang-lang-blockchain/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>th-TH</news:language>
-    </news:publication>
-    <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
-    <news:title>Understanding the Technology behind Blockchain</news:title>
-    <news:keywords>เทคโนโลยี blockchain, แฮชเข้ารหัส, Merkle tree, ฉันทามติแบบกระจาย, proof of work, Ethereum, smart contract, EVM, Solidity, ERC-20, บัญชีแยกประเภทแบบกระจาย, การเงินแบบกระจายอำนาจ</news:keywords>
   </news:news>
 </url>
 <url>

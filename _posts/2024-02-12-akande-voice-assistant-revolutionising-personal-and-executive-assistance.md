@@ -114,15 +114,14 @@ last_reviewed: "2026-05-24"
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> <a href="https://akande.co">Àkàndé</a> is an open-source Python voice assistant built on three components: OpenAI Whisper for speech-to-text, the GPT-4 Chat Completions API for natural language understanding and response generation, and a local SQLite cache keyed on SHA-256 hashes of normalised query strings. Conversation history is exported as formatted PDFs via fpdf2. No conversation data is persisted to any remote service beyond the OpenAI API call itself.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Àkàndé is an open-source Python voice assistant that chains OpenAI Whisper speech recognition, GPT-4 chat completions, and a local SQLite response cache into a voice-driven workflow — generating PDF summaries from conversation history and keeping all stored data local.</p>
 <p class="post-lead-heading"><strong>Key takeaways</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>SQLite cache eliminates redundant API calls.</strong> Query responses are stored under a SHA-256 hash of the normalised query string; cache hits return in under 10 ms versus ~600–900 ms for a live GPT-4 API round-trip, and they cost nothing in tokens.</li>
-  <li><strong>Whisper handles multilingual input without a local model.</strong> Audio is submitted to the <code>openai.audio.transcriptions.create()</code> endpoint, which supports 99 languages; transcription runs server-side so no large ASR model is required on the host machine.</li>
-  <li><strong>Multi-turn context is managed client-side.</strong> Àkàndé maintains a <code>messages</code> list in memory for the session duration, passing the full conversation history to the Chat Completions API on every turn — the standard pattern for maintaining context within the GPT context window.</li>
-  <li><strong>PDF export uses fpdf2 with automatic pagination.</strong> The full session transcript is paginated using fpdf2's <code>multi_cell()</code> method, preserving speaker labels, timestamps, and configurable fonts, then written to disk — no cloud upload required.</li>
+  <li><strong>Pipeline Overview.</strong> A single Àkàndé interaction follows this sequence:.</li>
+  <li><strong>OpenAI Integration: Chat Completions and Whisper.</strong> Àkàndé uses the openai Python SDK for both speech recognition and text generation.</li>
+  <li><strong>SQLite Response Cache.</strong> The cache schema is minimal:.</li>
+  <li><strong>PDF Summary Generation.</strong> PDF export uses fpdf2, a maintained Python PDF library with no binary dependencies:.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/">Fast Real-Time Speech Recognition on macOS: OpenAI Whisper</a>, <a href="https://sebastienrousseau.com/2024-01-29-ai-powered-audio-insights-analysis-translations/">Audio Analyser: Azure Speech, NLP, and Translation Pipeline</a>, <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/">AI Prompt Engineering 2024: Techniques That Work</a>.</p>
 </aside>
 <!-- lead-end -->
 
@@ -304,13 +303,5 @@ Yes. The fpdf2 export function accepts the `messages` list as its only required 
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-24">2026-05-24</time>.</p>
-<aside class="related-posts" aria-labelledby="related-heading">
-<h2 id="related-heading" class="related-heading">Related reading</h2>
-<div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/" class="related-media" aria-label="Fast Real-Time Speech Recognition on macOS: OpenAI Whisper" tabindex="-1"><img alt="Banner for Real-time automatic speech recognition (ASR)" src="https://cloudcdn.pro/stocks/images/research-paper.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/">Fast Real-Time Speech Recognition on macOS: OpenAI Whisper</a></h3><p><time datetime="2024-03-12">2024-03-12</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-29-ai-powered-audio-insights-analysis-translations/" class="related-media" aria-label="Audio Analyser: Azure Speech, NLP, and Translation Pipeline" tabindex="-1"><img alt="A minimalist, modern corporate office" src="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-29-ai-powered-audio-insights-analysis-translations/">Audio Analyser: Azure Speech, NLP, and Translation Pipeline</a></h3><p><time datetime="2024-01-29">2024-01-29</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/" class="related-media" aria-label="AI Prompt Engineering 2024: Techniques That Work" tabindex="-1"><img alt="A man analysing data on screens" src="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/">AI Prompt Engineering 2024: Techniques That Work</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
-</div>
-</aside>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-27">2026-05-27</time>.</p>
 <!-- enrich-end -->

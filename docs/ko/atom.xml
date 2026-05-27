@@ -4,7 +4,43 @@
   <link href="https://sebastienrousseau.com/ko/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ko/"/>
   <id>https://sebastienrousseau.com/ko/</id>
-  <updated>2026-05-26T23:13:19+00:00</updated>
+  <updated>2026-05-27T22:09:52+00:00</updated>
+  <entry>
+    <title>결제의 AI 운영체제: 2026년 사기, 라우팅, 회복력, 컴플라이언스</title>
+    <link href="https://sebastienrousseau.com/ko/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</id>
+    <updated>2026-05-27T06:06:06+00:00</updated>
+    <published>2026-05-27T06:06:06+00:00</published>
+    <summary>2026년 AI는 결제의 운영체제로 자리잡으며, 분석 대시보드를 넘어 사기 방지, 결제 복구, 라우팅, 유동성 예측, 컴플라이언스 검사, 에이전틱 커머스 통제 영역으로 확장되고 있습니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Magnifica Humanitas: AI 회칙의 산업적 독해</title>
+    <link href="https://sebastienrousseau.com/ko/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/"/>
+    <id>https://sebastienrousseau.com/ko/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>2026년 5월 25일, 교황 레오 14세는 인공지능을 다룬 최초의 교황 회칙 Magnifica Humanitas를 발표했습니다. 교리가 아닌 AI·양자 시대의 윤리 프레임워크로 읽으면 기차, 자동차, 원자력, 인터넷이 불러온 도덕적 불안을 그대로 반영합니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 스테이블코인 vs 토큰화 예금: 은행이 진정으로 방어해야 할 것</title>
+    <link href="https://sebastienrousseau.com/ko/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>스테이블코인과 토큰화 예금은 프로그래머블 결제를 중심으로 수렴하고 있으나, 대차대조표·법적·유동성·신뢰 모델은 여전히 서로 다른 양상을 유지하고 있습니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026년 프로그래머블 유동성: AI, 토큰화 예금, 실시간 자금 관리 오케스트레이션</title>
+    <link href="https://sebastienrousseau.com/ko/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</id>
+    <updated>2026-05-25T06:06:06+00:00</updated>
+    <published>2026-05-25T06:06:06+00:00</published>
+    <summary>2026년 프로그래머블 유동성은 AI 예측, 토큰화 예금, 실시간 결제 레일, 가상 계좌, 스테이블코인, 자금 관리 시스템을 운전자본을 위한 하나의 오케스트레이션 계층으로 연결합니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>2026 UK Payments Forward Plan: 스테이블코인·오픈뱅킹·토큰화 예금·에이전트 결제</title>
     <link href="https://sebastienrousseau.com/ko/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/"/>
@@ -249,15 +285,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
-    <link href="https://sebastienrousseau.com/ko/2024-02-12-akande-eumseong-bijoja-gaein-imwon-bijo-hyeokmyeong/"/>
-    <id>https://sebastienrousseau.com/ko/2024-02-12-akande-eumseong-bijoja-gaein-imwon-bijo-hyeokmyeong/</id>
-    <updated>2024-02-12T06:06:06+00:00</updated>
-    <published>2024-02-12T06:06:06+00:00</published>
-    <summary>Àkàndé는 OpenAI Whisper 음성 인식, GPT-4 채팅 완성, 로컬 SQLite 캐시를 연결한 오픈소스 Python 음성 어시스턴트로, 대화 기록에서 PDF 요약을 생성하고 모든 데이터를 로컬에 저장합니다.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>AI가 미래를 형성하다: 광고의 혁신</title>
     <link href="https://sebastienrousseau.com/ko/2024-02-08-ai-ga-mirae-reul-hyeongseong-haneun-gwanggo-hyeokmyeong/"/>
     <id>https://sebastienrousseau.com/ko/2024-02-08-ai-ga-mirae-reul-hyeongseong-haneun-gwanggo-hyeokmyeong/</id>
@@ -273,24 +300,6 @@
     <updated>2024-01-29T06:06:06+00:00</updated>
     <published>2024-01-29T06:06:06+00:00</published>
     <summary>OpenAI Whisper, 실시간 음성-텍스트 변환, 다국어 번역을 통한 오디오 통찰을 위한 AI 솔루션.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
-    <link href="https://sebastienrousseau.com/ko/2024-01-29-ai-gibon-eumseong-bunseok-beonyeok-tongchal/"/>
-    <id>https://sebastienrousseau.com/ko/2024-01-29-ai-gibon-eumseong-bunseok-beonyeok-tongchal/</id>
-    <updated>2024-01-29T06:06:06+00:00</updated>
-    <published>2024-01-29T06:06:06+00:00</published>
-    <summary>Audio Analyser는 Azure Cognitive Services 음성-텍스트 변환 신경망 모델, Text Analytics NLP, CherryPy를 사용하여 음성 녹음을 감정 점수, 키워드 추출, 다국어 번역이 포함된 검색 가능한 트랜스크립트로 변환합니다.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>AI Prompt Engineering 2024: Techniques That Work</title>
-    <link href="https://sebastienrousseau.com/ko/2024-01-23-ai-peurompeuteu-enjineoring-baljeon/"/>
-    <id>https://sebastienrousseau.com/ko/2024-01-23-ai-peurompeuteu-enjineoring-baljeon/</id>
-    <updated>2024-01-23T06:06:06+00:00</updated>
-    <published>2024-01-23T06:06:06+00:00</published>
-    <summary>프롬프트 엔지니어링은 추론 시점에 LLM 동작을 제어합니다. 제로샷·퓨샷 프롬프팅, chain-of-thought 추론, 자기일관성 샘플링, ReAct 아키텍처, 간접 프롬프트 인젝션 위험, 금융 서비스 적용 패턴을 다룹니다.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -384,15 +393,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Generative AI in 2023: How It Works, Where It Lands</title>
-    <link href="https://sebastienrousseau.com/ko/2023-11-12-saengseonghyung-ai-tamgu/"/>
-    <id>https://sebastienrousseau.com/ko/2023-11-12-saengseonghyung-ai-tamgu/</id>
-    <updated>2023-11-12T06:06:06+00:00</updated>
-    <published>2023-11-12T06:06:06+00:00</published>
-    <summary>트랜스포머 모델의 작동 원리, 2023년 벤치마크 모델, 금융 서비스에서 생성형 AI가 먼저 도입되는 분야, 배포 전에 실무자들이 반드시 답해야 할 거버넌스 질문을 다룹니다.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>생성 AI 탐구</title>
     <link href="https://sebastienrousseau.com/ko/2023-11-12-saengseonghyung-ai-tamgu/"/>
     <id>https://sebastienrousseau.com/ko/2023-11-12-saengseonghyung-ai-tamgu/</id>
@@ -408,15 +408,6 @@
     <updated>2023-11-05T06:06:06+00:00</updated>
     <published>2023-11-05T06:06:06+00:00</published>
     <summary>Rust의 수학적·암호적 상수 라이브러리. ECC, PQC, 암호 스위트를 위한 검증된 상수를 포함합니다.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>LibMake: Rust Library Scaffold Generator</title>
-    <link href="https://sebastienrousseau.com/ko/2023-10-26-libmake-rust-laibeureori-koodeu-saengseonggi/"/>
-    <id>https://sebastienrousseau.com/ko/2023-10-26-libmake-rust-laibeureori-koodeu-saengseonggi/</id>
-    <updated>2023-10-26T06:06:06+00:00</updated>
-    <published>2023-10-26T06:06:06+00:00</published>
-    <summary>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -447,15 +438,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Automating ISO 20022 Payment Files Creation with pain001</title>
-    <link href="https://sebastienrousseau.com/ko/2023-09-29-pain001-ro-iso-20022-junsu-gyeoljepail-jadonghwa/"/>
-    <id>https://sebastienrousseau.com/ko/2023-09-29-pain001-ro-iso-20022-junsu-gyeoljepail-jadonghwa/</id>
-    <updated>2023-09-29T06:06:06+00:00</updated>
-    <published>2023-09-29T06:06:06+00:00</published>
-    <summary>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>pain001로 ISO 20022 준수 결제 파일 생성 자동화</title>
     <link href="https://sebastienrousseau.com/ko/2023-09-29-pain001-ro-iso-20022-junsu-gyeoljepail-jadonghwa/"/>
     <id>https://sebastienrousseau.com/ko/2023-09-29-pain001-ro-iso-20022-junsu-gyeoljepail-jadonghwa/</id>
@@ -474,30 +456,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>The making of the Express Transaction Credits Platform</title>
-    <link href="https://sebastienrousseau.com/ko/2018-02-15-express-transaction-credits-peullaetpom-jejak/"/>
-    <id>https://sebastienrousseau.com/ko/2018-02-15-express-transaction-credits-peullaetpom-jejak/</id>
-    <updated>2018-02-15T06:06:06+00:00</updated>
-    <published>2018-02-15T06:06:06+00:00</published>
-    <summary>2018년 Ethereum ERC-223 기반으로 구축된 EXTC 플랫폼에 대한 기술적 심층 분석: 토큰 아키텍처, 멀티시그 지급, 타임락 전송, 담보 기반 즉시 대출을 상세히 다룹니다.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>새로운 암호자산을 공개하며 미래의 보다 빠른 결제 솔루션을 제공한다</title>
     <link href="https://sebastienrousseau.com/ko/2018-02-04-saeroun-amhohwapye-wa-misirae-gwasok-gyeoljeyusol/"/>
     <id>https://sebastienrousseau.com/ko/2018-02-04-saeroun-amhohwapye-wa-misirae-gwasok-gyeoljeyusol/</id>
     <updated>2018-02-04T06:06:06+00:00</updated>
     <published>2018-02-04T06:06:06+00:00</published>
     <summary>새로운 암호자산 프로젝트와, 그것이 보다 빠른 결제 솔루션을 어떻게 가능하게 하는지에 관하여.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
-    <link href="https://sebastienrousseau.com/ko/2018-02-04-saeroun-amhohwapye-wa-misirae-gwasok-gyeoljeyusol/"/>
-    <id>https://sebastienrousseau.com/ko/2018-02-04-saeroun-amhohwapye-wa-misirae-gwasok-gyeoljeyusol/</id>
-    <updated>2018-02-04T06:06:06+00:00</updated>
-    <published>2018-02-04T06:06:06+00:00</published>
-    <summary>2018년 초, EXTC 플랫폼은 Ethereum ERC-223 스마트 계약을 활용해 더 빠른 국경 간 결제를 탐색했습니다. 이는 탈중앙화 금융이 이후에 발전시킬 개념들의 초기 청사진이었습니다.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -516,15 +480,6 @@
     <updated>2018-01-09T06:06:06+00:00</updated>
     <published>2018-01-09T06:06:06+00:00</published>
     <summary>블록체인을 구성하는 암호·네트워크·합의 각 계층을 기술적으로 분해하여 해설합니다.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Understanding the Technology behind Blockchain</title>
-    <link href="https://sebastienrousseau.com/ko/2018-01-09-beulrokchein-baehu-gisul-ihae/"/>
-    <id>https://sebastienrousseau.com/ko/2018-01-09-beulrokchein-baehu-gisul-ihae/</id>
-    <updated>2018-01-09T06:06:06+00:00</updated>
-    <published>2018-01-09T06:06:06+00:00</published>
-    <summary>블록체인 작동 원리에 대한 기술적 소개: 암호 해시 체인, Merkle 트리, 분산 합의, Ethereum의 프로그래밍 가능한 레이어가 결제 원장을 스마트 컨트랙트와 토큰화 자산 플랫폼으로 변환한 방법을 설명합니다.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

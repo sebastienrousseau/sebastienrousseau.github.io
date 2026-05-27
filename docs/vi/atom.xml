@@ -4,7 +4,43 @@
   <link href="https://sebastienrousseau.com/vi/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/vi/"/>
   <id>https://sebastienrousseau.com/vi/</id>
-  <updated>2026-05-26T23:13:19+00:00</updated>
+  <updated>2026-05-27T22:09:52+00:00</updated>
+  <entry>
+    <title>AI là hệ điều hành của thanh toán: Gian lận, định tuyến, phục hồi và tuân thủ năm 2026</title>
+    <link href="https://sebastienrousseau.com/vi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/"/>
+    <id>https://sebastienrousseau.com/vi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</id>
+    <updated>2026-05-27T06:06:06+00:00</updated>
+    <published>2026-05-27T06:06:06+00:00</published>
+    <summary>AI đang trở thành hệ điều hành của thanh toán năm 2026, dịch chuyển từ phân tích sang phòng chống gian lận, sửa chữa thanh toán, định tuyến, dự báo thanh khoản, sàng lọc tuân thủ và kiểm soát thương mại agentic.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Magnifica Humanitas: Đọc thông điệp giáo hoàng đầu tiên về AI</title>
+    <link href="https://sebastienrousseau.com/vi/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/"/>
+    <id>https://sebastienrousseau.com/vi/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>Magnifica Humanitas của Giáo hoàng Lêô XIV: đọc thông điệp đầu tiên về AI dưới góc nhìn kỹ thuật — tàu hỏa, ô tô, hạt nhân, internet và hy vọng.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Stablecoin vs Tiền gửi tokenized 2026: Ngân hàng cần bảo vệ điều gì</title>
+    <link href="https://sebastienrousseau.com/vi/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/"/>
+    <id>https://sebastienrousseau.com/vi/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>Stablecoin và tiền gửi tokenized đang hội tụ quanh quyết toán lập trình được, nhưng các mô hình bảng cân đối, pháp lý, thanh khoản và niềm tin vẫn khác biệt.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Thanh khoản lập trình được 2026: AI, tiền gửi tokenized và điều phối ngân quỹ thời gian thực</title>
+    <link href="https://sebastienrousseau.com/vi/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/"/>
+    <id>https://sebastienrousseau.com/vi/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</id>
+    <updated>2026-05-25T06:06:06+00:00</updated>
+    <published>2026-05-25T06:06:06+00:00</published>
+    <summary>Thanh khoản lập trình được năm 2026 kết nối dự báo AI, tiền gửi tokenized, kênh thanh toán thời gian thực, tài khoản ảo, stablecoin và hệ thống quản lý ngân quỹ thành một lớp điều phối thống nhất cho vốn lưu động.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>UK Payments Forward Plan 2026: Stablecoin, ngân hàng mở, tiền gửi tokenized và thanh toán tác tử</title>
     <link href="https://sebastienrousseau.com/vi/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/"/>
@@ -249,15 +285,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
-    <link href="https://sebastienrousseau.com/vi/2024-02-12-akande-tro-ly-giong-noi-cach-mang-ho-tro-ca-nhan-va-dieu-hanh/"/>
-    <id>https://sebastienrousseau.com/vi/2024-02-12-akande-tro-ly-giong-noi-cach-mang-ho-tro-ca-nhan-va-dieu-hanh/</id>
-    <updated>2024-02-12T06:06:06+00:00</updated>
-    <published>2024-02-12T06:06:06+00:00</published>
-    <summary>Àkàndé là trợ lý giọng nói Python mã nguồn mở kết hợp nhận dạng giọng nói OpenAI Whisper, hoàn thành hội thoại GPT-4 và bộ nhớ đệm SQLite cục bộ — tạo bản tóm tắt PDF từ lịch sử hội thoại và lưu toàn bộ dữ liệu cục bộ.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>Cách mạng hoá quảng cáo: cách AI định hình tương lai</title>
     <link href="https://sebastienrousseau.com/vi/2024-02-08-cach-mang-quang-cao-ai-dinh-hinh-tuong-lai/"/>
     <id>https://sebastienrousseau.com/vi/2024-02-08-cach-mang-quang-cao-ai-dinh-hinh-tuong-lai/</id>
@@ -267,30 +294,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
-    <link href="https://sebastienrousseau.com/vi/2024-01-29-phan-tich-am-thanh-dich-va-hieu-biet-bang-ai/"/>
-    <id>https://sebastienrousseau.com/vi/2024-01-29-phan-tich-am-thanh-dich-va-hieu-biet-bang-ai/</id>
-    <updated>2024-01-29T06:06:06+00:00</updated>
-    <published>2024-01-29T06:06:06+00:00</published>
-    <summary>Audio Analyser sử dụng các mô hình nhận dạng giọng nói thần kinh của Azure Cognitive Services, Text Analytics NLP và CherryPy để chuyển đổi bản ghi âm thành bản chép lời có thể tìm kiếm với điểm cảm xúc, trích xuất từ khóa và dịch thuật đa ngôn ngữ.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>Phân tích âm thanh, dịch và hiểu biết bằng AI</title>
     <link href="https://sebastienrousseau.com/vi/2024-01-29-phan-tich-am-thanh-dich-va-hieu-biet-bang-ai/"/>
     <id>https://sebastienrousseau.com/vi/2024-01-29-phan-tich-am-thanh-dich-va-hieu-biet-bang-ai/</id>
     <updated>2024-01-29T06:06:06+00:00</updated>
     <published>2024-01-29T06:06:06+00:00</published>
     <summary>Cách các mô hình AI mới — Whisper, mô hình ngôn ngữ-âm thanh — biến âm thanh thành văn bản, dịch ngôn ngữ và trích xuất hiểu biết theo thời gian thực.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>AI Prompt Engineering 2024: Techniques That Work</title>
-    <link href="https://sebastienrousseau.com/vi/2024-01-23-tien-bo-trong-ky-thuat-prompt-ai/"/>
-    <id>https://sebastienrousseau.com/vi/2024-01-23-tien-bo-trong-ky-thuat-prompt-ai/</id>
-    <updated>2024-01-23T06:06:06+00:00</updated>
-    <published>2024-01-23T06:06:06+00:00</published>
-    <summary>Kỹ thuật prompt kiểm soát hành vi LLM tại thời điểm suy luận. Bài viết đề cập zero-shot, few-shot, lý luận chuỗi suy nghĩ, lấy mẫu tự nhất quán, kiến trúc ReAct, rủi ro tiêm nhiễm prompt và các mẫu ứng dụng từ dịch vụ tài chính.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -384,15 +393,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Generative AI in 2023: How It Works, Where It Lands</title>
-    <link href="https://sebastienrousseau.com/vi/2023-11-12-kham-pha-tri-tue-nhan-tao-tao-sinh/"/>
-    <id>https://sebastienrousseau.com/vi/2023-11-12-kham-pha-tri-tue-nhan-tao-tao-sinh/</id>
-    <updated>2023-11-12T06:06:06+00:00</updated>
-    <published>2023-11-12T06:06:06+00:00</published>
-    <summary>Cách các mô hình transformer hoạt động, mô hình nào thiết lập chuẩn mực năm 2023, AI tổng quát triển khai đầu tiên ở đâu trong dịch vụ tài chính và các câu hỏi quản trị cần giải đáp.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>Khám phá trí tuệ nhân tạo tạo sinh</title>
     <link href="https://sebastienrousseau.com/vi/2023-11-12-kham-pha-tri-tue-nhan-tao-tao-sinh/"/>
     <id>https://sebastienrousseau.com/vi/2023-11-12-kham-pha-tri-tue-nhan-tao-tao-sinh/</id>
@@ -408,15 +408,6 @@
     <updated>2023-11-05T06:06:06+00:00</updated>
     <published>2023-11-05T06:06:06+00:00</published>
     <summary>cmn — thư viện Rust cung cấp các hằng số toán học và mật mã với độ chính xác cao cho các ứng dụng tài chính và bảo mật.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>LibMake: Rust Library Scaffold Generator</title>
-    <link href="https://sebastienrousseau.com/vi/2023-10-26-libmake-bo-sinh-ma-cho-thu-vien-rust/"/>
-    <id>https://sebastienrousseau.com/vi/2023-10-26-libmake-bo-sinh-ma-cho-thu-vien-rust/</id>
-    <updated>2023-10-26T06:06:06+00:00</updated>
-    <published>2023-10-26T06:06:06+00:00</published>
-    <summary>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -447,30 +438,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Automating ISO 20022 Payment Files Creation with pain001</title>
-    <link href="https://sebastienrousseau.com/vi/2023-09-29-tu-dong-hoa-tep-thanh-toan-iso-20022-voi-pain001/"/>
-    <id>https://sebastienrousseau.com/vi/2023-09-29-tu-dong-hoa-tep-thanh-toan-iso-20022-voi-pain001/</id>
-    <updated>2023-09-29T06:06:06+00:00</updated>
-    <published>2023-09-29T06:06:06+00:00</published>
-    <summary>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>Tự động hoá tạo tệp thanh toán tuân thủ ISO 20022 với pain001</title>
     <link href="https://sebastienrousseau.com/vi/2023-09-29-tu-dong-hoa-tep-thanh-toan-iso-20022-voi-pain001/"/>
     <id>https://sebastienrousseau.com/vi/2023-09-29-tu-dong-hoa-tep-thanh-toan-iso-20022-voi-pain001/</id>
     <updated>2023-09-29T06:06:06+00:00</updated>
     <published>2023-09-29T06:06:06+00:00</published>
     <summary>pain001 — thư viện Python tự động hoá việc tạo tệp thanh toán ISO 20022 pain.001 từ CSV hoặc SQLite, hỗ trợ chuyển đổi MT/MX trên SWIFT, SEPA và các sơ đồ lớn.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>The making of the Express Transaction Credits Platform</title>
-    <link href="https://sebastienrousseau.com/vi/2018-02-15-xay-dung-nen-tang-express-transaction-credits/"/>
-    <id>https://sebastienrousseau.com/vi/2018-02-15-xay-dung-nen-tang-express-transaction-credits/</id>
-    <updated>2018-02-15T06:06:06+00:00</updated>
-    <published>2018-02-15T06:06:06+00:00</published>
-    <summary>Phân tích kỹ thuật chuyên sâu về cách nền tảng EXTC được xây dựng trên Ethereum ERC-223 năm 2018: kiến trúc token, giải ngân đa chữ ký, chuyển khoản khóa thời gian và khoản vay tức thì có tài sản đảm bảo.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -492,15 +465,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
-    <link href="https://sebastienrousseau.com/vi/2018-02-04-tien-ma-hoa-moi-va-giai-phap-thanh-toan-nhanh-hon/"/>
-    <id>https://sebastienrousseau.com/vi/2018-02-04-tien-ma-hoa-moi-va-giai-phap-thanh-toan-nhanh-hon/</id>
-    <updated>2018-02-04T06:06:06+00:00</updated>
-    <published>2018-02-04T06:06:06+00:00</published>
-    <summary>Đầu năm 2018, nền tảng EXTC khám phá thanh toán xuyên biên giới nhanh hơn qua hợp đồng thông minh Ethereum ERC-223 — một bản thiết kế sơ khai cho những gì tài chính phi tập trung sau này xây dựng.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>Tiêu chuẩn token ERC-20</title>
     <link href="https://sebastienrousseau.com/vi/2018-01-24-tieu-chuan-token-erc-20/"/>
     <id>https://sebastienrousseau.com/vi/2018-01-24-tieu-chuan-token-erc-20/</id>
@@ -516,15 +480,6 @@
     <updated>2018-01-09T06:06:06+00:00</updated>
     <published>2018-01-09T06:06:06+00:00</published>
     <summary>Cách blockchain hoạt động: băm mật mã, cây Merkle, cơ chế đồng thuận và mô hình kinh tế đảm bảo tính bất biến.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Understanding the Technology behind Blockchain</title>
-    <link href="https://sebastienrousseau.com/vi/2018-01-09-hieu-ve-cong-nghe-dang-sau-blockchain/"/>
-    <id>https://sebastienrousseau.com/vi/2018-01-09-hieu-ve-cong-nghe-dang-sau-blockchain/</id>
-    <updated>2018-01-09T06:06:06+00:00</updated>
-    <published>2018-01-09T06:06:06+00:00</published>
-    <summary>Giới thiệu kỹ thuật về cách blockchain hoạt động: chuỗi hash mật mã, cây Merkle, đồng thuận phân tán và cách lớp lập trình của Ethereum biến sổ cái thanh toán thành nền tảng cho hợp đồng thông minh và tài sản token hóa.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

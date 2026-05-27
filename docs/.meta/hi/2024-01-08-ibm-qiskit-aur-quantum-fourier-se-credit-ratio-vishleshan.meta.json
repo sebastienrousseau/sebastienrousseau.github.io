@@ -1,11 +1,11 @@
 {
-  "subtitle": "बैंकिंग जोखिम-मॉडलिंग पर एक व्यावहारिक क्वांटम प्रयोग",
-  "language": "hi-IN",
   "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
-  "date": "January 08, 2024",
+  "keywords": "Qiskit, IBM, क्वांटम, QFT, क्रेडिट, बैंकिंग, जोखिम, Python, अल्गोरिदम, post-quantum",
+  "description": "IBM Qiskit और क्वांटम-फूरियर-ट्रांसफ़ॉर्म पर आधारित क्रेडिट-अनुपात-विश्लेषण का एक व्यावहारिक प्रदर्शन।",
   "locale": "hi_IN",
   "banner_alt": "एक क्वांटम-सर्किट-आरेख",
-  "title": "IBM Qiskit और क्वांटम-फूरियर-ट्रांसफ़ॉर्म से क्रेडिट-अनुपात-विश्लेषण का अनुकूलन",
-  "description": "IBM Qiskit और क्वांटम-फूरियर-ट्रांसफ़ॉर्म पर आधारित क्रेडिट-अनुपात-विश्लेषण का एक व्यावहारिक प्रदर्शन।",
-  "keywords": "Qiskit, IBM, क्वांटम, QFT, क्रेडिट, बैंकिंग, जोखिम, Python, अल्गोरिदम, post-quantum"
+  "subtitle": "बैंकिंग जोखिम-मॉडलिंग पर एक व्यावहारिक क्वांटम प्रयोग",
+  "date": "January 08, 2024",
+  "language": "hi-IN",
+  "title": "IBM Qiskit और क्वांटम-फूरियर-ट्रांसफ़ॉर्म से क्रेडिट-अनुपात-विश्लेषण का अनुकूलन"
 }

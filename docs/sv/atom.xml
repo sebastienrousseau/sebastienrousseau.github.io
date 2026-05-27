@@ -4,7 +4,43 @@
   <link href="https://sebastienrousseau.com/sv/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/sv/"/>
   <id>https://sebastienrousseau.com/sv/</id>
-  <updated>2026-05-26T23:13:19+00:00</updated>
+  <updated>2026-05-27T22:09:52+00:00</updated>
+  <entry>
+    <title>AI som betalningarnas operativsystem: bedrägeri, routning, resiliens och efterlevnad 2026</title>
+    <link href="https://sebastienrousseau.com/sv/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/"/>
+    <id>https://sebastienrousseau.com/sv/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</id>
+    <updated>2026-05-27T06:06:06+00:00</updated>
+    <published>2026-05-27T06:06:06+00:00</published>
+    <summary>AI blir betalningarnas operativsystem 2026 och går från analys till bedrägeriskydd, betalningsreparation, routning, likviditetsprognos, efterlevnadsscreening och kontroller för agentisk handel.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Magnifica Humanitas: en teknikläsning av den första AI-encyklikan</title>
+    <link href="https://sebastienrousseau.com/sv/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/"/>
+    <id>https://sebastienrousseau.com/sv/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>Den 25 maj 2026 utfärdade Påve Leo XIV Magnifica Humanitas, den första AI-encyklikan. En teknikbranschläsning som etiskt ramverk — och landar i hopp.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Stablecoins vs tokeniserade insättningar 2026: vad banker måste försvara</title>
+    <link href="https://sebastienrousseau.com/sv/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/"/>
+    <id>https://sebastienrousseau.com/sv/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>Stablecoins och tokeniserade insättningar konvergerar kring programmerbar avveckling, men deras balansräknings-, juridiska, likviditets- och förtroendemodeller skiljer sig fortfarande åt.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Programmerbar likviditet 2026: AI, tokeniserade insättningar och treasury i realtid</title>
+    <link href="https://sebastienrousseau.com/sv/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/"/>
+    <id>https://sebastienrousseau.com/sv/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</id>
+    <updated>2026-05-25T06:06:06+00:00</updated>
+    <published>2026-05-25T06:06:06+00:00</published>
+    <summary>Programmerbar likviditet 2026 förenar AI-prognoser, tokeniserade insättningar, realtidsrails, virtuella konton, stablecoins och TMS i ett orkestreringslager för rörelsekapital.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>UK Payments Forward Plan 2026: stablecoins, öppen bankverksamhet och agentbetalningar</title>
     <link href="https://sebastienrousseau.com/sv/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/"/>
@@ -249,15 +285,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
-    <link href="https://sebastienrousseau.com/sv/2024-02-12-akande-rostassistent-personlig-och-chefsassistans/"/>
-    <id>https://sebastienrousseau.com/sv/2024-02-12-akande-rostassistent-personlig-och-chefsassistans/</id>
-    <updated>2024-02-12T06:06:06+00:00</updated>
-    <published>2024-02-12T06:06:06+00:00</published>
-    <summary>Àkàndé är en Python-röstassistent med öppen källkod som kombinerar OpenAI Whisper-taligenkänning, GPT-4-chattavslutningar och en lokal SQLite-cache för ett röstdrivet arbetsflöde med PDF-sammanfattningar.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>IA generativa en la publicidad: Amazon Rufus y Meta</title>
     <link href="https://sebastienrousseau.com/sv/2024-02-08-revolutionera-reklam-hur-ai-formar-framtiden/"/>
     <id>https://sebastienrousseau.com/sv/2024-02-08-revolutionera-reklam-hur-ai-formar-framtiden/</id>
@@ -273,24 +300,6 @@
     <updated>2024-01-29T06:06:06+00:00</updated>
     <published>2024-01-29T06:06:06+00:00</published>
     <summary>Cómo Audio Analyser, impulsado por Azure AI, transforma la conversión speech-to-text, el análisis de texto y las traducciones para insights accionables.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
-    <link href="https://sebastienrousseau.com/sv/2024-01-29-ai-driven-ljudanalys-oversattningar-och-insikter/"/>
-    <id>https://sebastienrousseau.com/sv/2024-01-29-ai-driven-ljudanalys-oversattningar-och-insikter/</id>
-    <updated>2024-01-29T06:06:06+00:00</updated>
-    <published>2024-01-29T06:06:06+00:00</published>
-    <summary>Audio Analyser använder Azures neurala speech-to-text-modeller, Text Analytics NLP och CherryPy för att omvandla ljudinspelningar till sökbara transkript med sentimentpoäng, nyckelordsextrahering och flerspråkiga översättningar.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>AI Prompt Engineering 2024: Techniques That Work</title>
-    <link href="https://sebastienrousseau.com/sv/2024-01-23-framsteg-inom-ai-promptteknik/"/>
-    <id>https://sebastienrousseau.com/sv/2024-01-23-framsteg-inom-ai-promptteknik/</id>
-    <updated>2024-01-23T06:06:06+00:00</updated>
-    <published>2024-01-23T06:06:06+00:00</published>
-    <summary>Prompt engineering styr LLM-beteende vid inferenstid. Artikeln täcker zero-shot och few-shot prompting, chain-of-thought-resonemang, self-consistency, ReAct-arkitektur och prompt injection-risker.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -384,15 +393,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Generative AI in 2023: How It Works, Where It Lands</title>
-    <link href="https://sebastienrousseau.com/sv/2023-11-12-utforska-generativ-ai/"/>
-    <id>https://sebastienrousseau.com/sv/2023-11-12-utforska-generativ-ai/</id>
-    <updated>2023-11-12T06:06:06+00:00</updated>
-    <published>2023-11-12T06:06:06+00:00</published>
-    <summary>Hur transformermodeller fungerar, vilka 2023-modeller satte måttstocken, var generativ AI landar först i finansiella tjänster och vilka styrningsfrågor som måste besvaras innan driftsättning.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>IA generativa en 2023: cómo funciona, dónde aterriza</title>
     <link href="https://sebastienrousseau.com/sv/2023-11-12-utforska-generativ-ai/"/>
     <id>https://sebastienrousseau.com/sv/2023-11-12-utforska-generativ-ai/</id>
@@ -408,15 +408,6 @@
     <updated>2023-11-05T06:06:06+00:00</updated>
     <published>2023-11-05T06:06:06+00:00</published>
     <summary>Proteja la integridad del código con constantes matemáticas y criptográficas rigurosamente verificadas, reforzando la seguridad de memoria y la concurrencia.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>LibMake: Rust Library Scaffold Generator</title>
-    <link href="https://sebastienrousseau.com/sv/2023-10-26-libmake-kodgenerator-for-rust-bibliotek/"/>
-    <id>https://sebastienrousseau.com/sv/2023-10-26-libmake-kodgenerator-for-rust-bibliotek/</id>
-    <updated>2023-10-26T06:06:06+00:00</updated>
-    <published>2023-10-26T06:06:06+00:00</published>
-    <summary>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -447,15 +438,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Automating ISO 20022 Payment Files Creation with pain001</title>
-    <link href="https://sebastienrousseau.com/sv/2023-09-29-automatisera-iso-20022-betalfiler-med-pain001/"/>
-    <id>https://sebastienrousseau.com/sv/2023-09-29-automatisera-iso-20022-betalfiler-med-pain001/</id>
-    <updated>2023-09-29T06:06:06+00:00</updated>
-    <published>2023-09-29T06:06:06+00:00</published>
-    <summary>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>Automatizar la creación de archivos de pago conformes con ISO 20022 con Pain001</title>
     <link href="https://sebastienrousseau.com/sv/2023-09-29-automatisera-iso-20022-betalfiler-med-pain001/"/>
     <id>https://sebastienrousseau.com/sv/2023-09-29-automatisera-iso-20022-betalfiler-med-pain001/</id>
@@ -474,30 +456,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>The making of the Express Transaction Credits Platform</title>
-    <link href="https://sebastienrousseau.com/sv/2018-02-15-skapandet-av-express-transaction-credits-plattformen/"/>
-    <id>https://sebastienrousseau.com/sv/2018-02-15-skapandet-av-express-transaction-credits-plattformen/</id>
-    <updated>2018-02-15T06:06:06+00:00</updated>
-    <published>2018-02-15T06:06:06+00:00</published>
-    <summary>En teknisk genomgång av hur EXTC-plattformen byggdes på Ethereum ERC-223 år 2018: tokenarkitektur, multisig-utbetalningar, tidslåsta överföringar och säkerhetskopplade snabblån.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>Presentación de una nueva criptomoneda y una solución de pago más rápida</title>
     <link href="https://sebastienrousseau.com/sv/2018-02-04-ny-kryptovaluta-och-snabbare-betallosning/"/>
     <id>https://sebastienrousseau.com/sv/2018-02-04-ny-kryptovaluta-och-snabbare-betallosning/</id>
     <updated>2018-02-04T06:06:06+00:00</updated>
     <published>2018-02-04T06:06:06+00:00</published>
     <summary>Un capítulo significativo en la evolución del panorama financiero mundial, configurado por la innovación tecnológica, los cambios geopolíticos y las finanzas sostenibles.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
-    <link href="https://sebastienrousseau.com/sv/2018-02-04-ny-kryptovaluta-och-snabbare-betallosning/"/>
-    <id>https://sebastienrousseau.com/sv/2018-02-04-ny-kryptovaluta-och-snabbare-betallosning/</id>
-    <updated>2018-02-04T06:06:06+00:00</updated>
-    <published>2018-02-04T06:06:06+00:00</published>
-    <summary>I början av 2018 utforskade EXTC-plattformen snabbare gränsöverskridande betalningar via Ethereum ERC-223-smarta kontrakt — en tidig ritning för vad decentraliserad finans senare skulle bygga.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -516,15 +480,6 @@
     <updated>2018-01-09T06:06:06+00:00</updated>
     <published>2018-01-09T06:06:06+00:00</published>
     <summary>Construir una criptomoneda en la blockchain Ethereum: una guía completa de desarrollo blockchain, tokenización e implementación.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Understanding the Technology behind Blockchain</title>
-    <link href="https://sebastienrousseau.com/sv/2018-01-09-forsta-tekniken-bakom-blockchain/"/>
-    <id>https://sebastienrousseau.com/sv/2018-01-09-forsta-tekniken-bakom-blockchain/</id>
-    <updated>2018-01-09T06:06:06+00:00</updated>
-    <published>2018-01-09T06:06:06+00:00</published>
-    <summary>En teknisk introduktion till hur blockchain fungerar: kryptografiska hash-kedjor, Merkle-träd, distribuerad konsensus och hur Ethereums programmerbara lager förvandlade ett betalningsregister till en plattform för smarta kontrakt och tokeniserade tillgångar.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

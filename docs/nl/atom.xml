@@ -4,7 +4,43 @@
   <link href="https://sebastienrousseau.com/nl/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/nl/"/>
   <id>https://sebastienrousseau.com/nl/</id>
-  <updated>2026-05-26T23:13:19+00:00</updated>
+  <updated>2026-05-27T22:09:52+00:00</updated>
+  <entry>
+    <title>AI als besturingssysteem van betalingen: fraude, routering, veerkracht en compliance in 2026</title>
+    <link href="https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/"/>
+    <id>https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</id>
+    <updated>2026-05-27T06:06:06+00:00</updated>
+    <published>2026-05-27T06:06:06+00:00</published>
+    <summary>AI wordt in 2026 het besturingssysteem van betalingen: van analytics naar fraudepreventie, betalingsherstel, routering, liquiditeitsprognose, compliance-screening en agentic-commerce-controles.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Magnifica Humanitas: een industrielezing van de AI-encycliek</title>
+    <link href="https://sebastienrousseau.com/nl/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/"/>
+    <id>https://sebastienrousseau.com/nl/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>Op 25 mei 2026 publiceerde Paus Leo XIV Magnifica Humanitas, de eerste pauselijke AI-encycliek — vanuit de technologiesector gelezen als ethisch kader.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Stablecoins vs getokeniseerde deposito&apos;s in 2026: wat banken moeten verdedigen</title>
+    <link href="https://sebastienrousseau.com/nl/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/"/>
+    <id>https://sebastienrousseau.com/nl/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>Stablecoins en getokeniseerde deposito&apos;s convergeren rond programmeerbare afwikkeling, maar verschillen in balans, juridische claim, liquiditeit en vertrouwensmodel.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Programmeerbare liquiditeit 2026: AI, getokeniseerde deposito&apos;s en real-time treasury</title>
+    <link href="https://sebastienrousseau.com/nl/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/"/>
+    <id>https://sebastienrousseau.com/nl/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</id>
+    <updated>2026-05-25T06:06:06+00:00</updated>
+    <published>2026-05-25T06:06:06+00:00</published>
+    <summary>Programmeerbare liquiditeit verbindt in 2026 AI-prognose, getokeniseerde deposito&apos;s, real-time rails, virtuele rekeningen, stablecoins en TMS tot één orkestratielaag voor werkkapitaal.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>UK Payments Forward Plan 2026: stablecoins, open banking en agentische betalingen</title>
     <link href="https://sebastienrousseau.com/nl/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/"/>
@@ -249,15 +285,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
-    <link href="https://sebastienrousseau.com/nl/2024-02-12-akande-spraakassistent-revolutie-persoonlijke-en-executive-assistentie/"/>
-    <id>https://sebastienrousseau.com/nl/2024-02-12-akande-spraakassistent-revolutie-persoonlijke-en-executive-assistentie/</id>
-    <updated>2024-02-12T06:06:06+00:00</updated>
-    <published>2024-02-12T06:06:06+00:00</published>
-    <summary>Àkàndé is een open-source Python-spraakassistent die OpenAI Whisper-spraakherkenning, GPT-4-chatcompletions en een lokale SQLite-cache combineert om PDF-samenvattingen te genereren uit gespreksgeschiedenis, met alle data lokaal opgeslagen.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>Reclame revolutioneren: hoe AI de toekomst vormgeeft</title>
     <link href="https://sebastienrousseau.com/nl/2024-02-08-reclame-revolutioneren-hoe-ai-de-toekomst-vormgeeft/"/>
     <id>https://sebastienrousseau.com/nl/2024-02-08-reclame-revolutioneren-hoe-ai-de-toekomst-vormgeeft/</id>
@@ -267,30 +294,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
-    <link href="https://sebastienrousseau.com/nl/2024-01-29-door-ai-aangestuurde-audio-inzichten-analyse-vertalingen/"/>
-    <id>https://sebastienrousseau.com/nl/2024-01-29-door-ai-aangestuurde-audio-inzichten-analyse-vertalingen/</id>
-    <updated>2024-01-29T06:06:06+00:00</updated>
-    <published>2024-01-29T06:06:06+00:00</published>
-    <summary>Audio Analyser gebruikt Azure Cognitive Services spraak-naar-tekst neurale modellen, Text Analytics NLP en CherryPy om geluidsopnamen te converteren naar doorzoekbare transcripties met sentimentscores, trefwoordextractie en meertalige vertalingen.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>Door AI aangestuurde audio: inzichten, analyse en vertalingen</title>
     <link href="https://sebastienrousseau.com/nl/2024-01-29-door-ai-aangestuurde-audio-inzichten-analyse-vertalingen/"/>
     <id>https://sebastienrousseau.com/nl/2024-01-29-door-ai-aangestuurde-audio-inzichten-analyse-vertalingen/</id>
     <updated>2024-01-29T06:06:06+00:00</updated>
     <published>2024-01-29T06:06:06+00:00</published>
     <summary>AI-gestuurde audio-analyse opent bruikbare inzichten, samenvattingen en vertalingen uit audiogegevens voor banking en productiviteit.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>AI Prompt Engineering 2024: Techniques That Work</title>
-    <link href="https://sebastienrousseau.com/nl/2024-01-23-vooruitgang-in-ai-prompt-engineering/"/>
-    <id>https://sebastienrousseau.com/nl/2024-01-23-vooruitgang-in-ai-prompt-engineering/</id>
-    <updated>2024-01-23T06:06:06+00:00</updated>
-    <published>2024-01-23T06:06:06+00:00</published>
-    <summary>Prompt engineering stuurt het gedrag van LLM&apos;s aan tijdens inferentie. Dit artikel behandelt zero-shot en few-shot prompting, chain-of-thought-redeneren, self-consistency-sampling, ReAct-architectuur, indirecte prompt injection-risico&apos;s en toegepaste patronen uit de financiële dienstverlening.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -384,15 +393,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Generative AI in 2023: How It Works, Where It Lands</title>
-    <link href="https://sebastienrousseau.com/nl/2023-11-12-generatieve-ai-verkennen/"/>
-    <id>https://sebastienrousseau.com/nl/2023-11-12-generatieve-ai-verkennen/</id>
-    <updated>2023-11-12T06:06:06+00:00</updated>
-    <published>2023-11-12T06:06:06+00:00</published>
-    <summary>Hoe transformermodellen werken, welke modellen in 2023 de benchmark zetten, waar generatieve AI als eerste in financiële diensten landt en welke governance-vragen vóór implementatie beantwoord moeten worden.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>Generatieve AI verkennen</title>
     <link href="https://sebastienrousseau.com/nl/2023-11-12-generatieve-ai-verkennen/"/>
     <id>https://sebastienrousseau.com/nl/2023-11-12-generatieve-ai-verkennen/</id>
@@ -408,15 +408,6 @@
     <updated>2023-11-05T06:06:06+00:00</updated>
     <published>2023-11-05T06:06:06+00:00</published>
     <summary>Een Rust-bibliotheek die een referentieset levert van wiskundige en cryptografische constanten voor beveiligingsapplicaties.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>LibMake: Rust Library Scaffold Generator</title>
-    <link href="https://sebastienrousseau.com/nl/2023-10-26-libmake-codegenerator-voor-hoogwaardige-rust-bibliotheken/"/>
-    <id>https://sebastienrousseau.com/nl/2023-10-26-libmake-codegenerator-voor-hoogwaardige-rust-bibliotheken/</id>
-    <updated>2023-10-26T06:06:06+00:00</updated>
-    <published>2023-10-26T06:06:06+00:00</published>
-    <summary>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -447,15 +438,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Automating ISO 20022 Payment Files Creation with pain001</title>
-    <link href="https://sebastienrousseau.com/nl/2023-09-29-iso-20022-conforme-betaalbestanden-automatiseren-met-pain001/"/>
-    <id>https://sebastienrousseau.com/nl/2023-09-29-iso-20022-conforme-betaalbestanden-automatiseren-met-pain001/</id>
-    <updated>2023-09-29T06:06:06+00:00</updated>
-    <published>2023-09-29T06:06:06+00:00</published>
-    <summary>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>ISO 20022-conforme betaalbestanden automatiseren met pain001</title>
     <link href="https://sebastienrousseau.com/nl/2023-09-29-iso-20022-conforme-betaalbestanden-automatiseren-met-pain001/"/>
     <id>https://sebastienrousseau.com/nl/2023-09-29-iso-20022-conforme-betaalbestanden-automatiseren-met-pain001/</id>
@@ -474,30 +456,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>The making of the Express Transaction Credits Platform</title>
-    <link href="https://sebastienrousseau.com/nl/2018-02-15-het-ontstaan-van-het-express-transaction-credits-platform/"/>
-    <id>https://sebastienrousseau.com/nl/2018-02-15-het-ontstaan-van-het-express-transaction-credits-platform/</id>
-    <updated>2018-02-15T06:06:06+00:00</updated>
-    <published>2018-02-15T06:06:06+00:00</published>
-    <summary>Een technische diepduik in hoe het EXTC-platform in 2018 op Ethereum ERC-223 werd gebouwd: tokenarchitectuur, multi-sig-uitbetalingen, tijdvergrendelde overdrachten en door onderpand gedekte directe leningen.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>Een nieuwe cryptovaluta onthullen: snellere betaaloplossing voor de toekomst</title>
     <link href="https://sebastienrousseau.com/nl/2018-02-04-nieuwe-cryptovaluta-en-snellere-betaaloplossing-voor-de-toekomst/"/>
     <id>https://sebastienrousseau.com/nl/2018-02-04-nieuwe-cryptovaluta-en-snellere-betaaloplossing-voor-de-toekomst/</id>
     <updated>2018-02-04T06:06:06+00:00</updated>
     <published>2018-02-04T06:06:06+00:00</published>
     <summary>Lancering van een nieuwe cryptovaluta die de hindernissen van traditionele betalingen wegneemt en snellere, goedkopere afwikkeling oplevert.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Een nieuwe Cryptocurrency en Snellere Betalingsoplossing onthuld</title>
-    <link href="https://sebastienrousseau.com/nl/2018-02-04-nieuwe-cryptovaluta-en-snellere-betaaloplossing-voor-de-toekomst/"/>
-    <id>https://sebastienrousseau.com/nl/2018-02-04-nieuwe-cryptovaluta-en-snellere-betaaloplossing-voor-de-toekomst/</id>
-    <updated>2018-02-04T06:06:06+00:00</updated>
-    <published>2018-02-04T06:06:06+00:00</published>
-    <summary>Begin 2018 onderzocht het EXTC-platform snellere grensoverschrijdende betalingen via Ethereum ERC-223 slimme contracten — een vroege blauwdruk voor wat gedecentraliseerde financiering later zou bouwen.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -516,15 +480,6 @@
     <updated>2018-01-09T06:06:06+00:00</updated>
     <published>2018-01-09T06:06:06+00:00</published>
     <summary>Een toegankelijke gids voor de technologie achter blockchain: cryptografische primitieven, consensusmechanismen en gedistribueerde netwerken.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Understanding the Technology behind Blockchain</title>
-    <link href="https://sebastienrousseau.com/nl/2018-01-09-de-technologie-achter-blockchain-begrijpen/"/>
-    <id>https://sebastienrousseau.com/nl/2018-01-09-de-technologie-achter-blockchain-begrijpen/</id>
-    <updated>2018-01-09T06:06:06+00:00</updated>
-    <published>2018-01-09T06:06:06+00:00</published>
-    <summary>Een technische introductie tot hoe blockchain werkt: cryptografische hashketens, Merkle-bomen, gedistribueerde consensus, en hoe Ethereum&apos;s programmeerbare laag een betalingsledger omzette in een platform voor smart contracts en getokeniseerde activa.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

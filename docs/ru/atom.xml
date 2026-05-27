@@ -4,7 +4,43 @@
   <link href="https://sebastienrousseau.com/ru/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ru/"/>
   <id>https://sebastienrousseau.com/ru/</id>
-  <updated>2026-05-26T23:13:19+00:00</updated>
+  <updated>2026-05-27T22:09:52+00:00</updated>
+  <entry>
+    <title>ИИ как операционная система платежей: мошенничество, маршрутизация, устойчивость и комплаенс в 2026</title>
+    <link href="https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/"/>
+    <id>https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</id>
+    <updated>2026-05-27T06:06:06+00:00</updated>
+    <published>2026-05-27T06:06:06+00:00</published>
+    <summary>В 2026 году ИИ становится операционной системой платежей: от аналитики к предотвращению мошенничества, восстановлению платежей, маршрутизации, прогнозу ликвидности, проверкам комплаенса и контролю агентной коммерции.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Magnifica Humanitas: прочтение первой папской энциклики об ИИ</title>
+    <link href="https://sebastienrousseau.com/ru/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/"/>
+    <id>https://sebastienrousseau.com/ru/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>25 мая 2026 Папа Лев XIV выпустил Magnifica Humanitas — первую папскую энциклику об ИИ. Инженерное прочтение: концентрация власти, постквантовая эпоха, надежда.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Стейблкоины и токенизированные депозиты 2026: что банкам реально защищать</title>
+    <link href="https://sebastienrousseau.com/ru/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/"/>
+    <id>https://sebastienrousseau.com/ru/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>Стейблкоины и токенизированные депозиты сходятся вокруг программируемого расчёта, но их модели баланса, юридических требований, ликвидности и доверия остаются разными.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Программируемая ликвидность 2026: ИИ, токенизированные депозиты, казначейство</title>
+    <link href="https://sebastienrousseau.com/ru/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/"/>
+    <id>https://sebastienrousseau.com/ru/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</id>
+    <updated>2026-05-25T06:06:06+00:00</updated>
+    <published>2026-05-25T06:06:06+00:00</published>
+    <summary>Программируемая ликвидность 2026 объединяет ИИ-прогноз, токенизированные депозиты, каналы в реальном времени, виртуальные счета, стейблкоины и TMS в единый слой оркестрации оборотного капитала.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>UK Payments Forward Plan 2026: стейблкоины, открытый банкинг, токенизированные депозиты</title>
     <link href="https://sebastienrousseau.com/ru/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/"/>
@@ -249,15 +285,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
-    <link href="https://sebastienrousseau.com/ru/2024-02-12-akande-golosovoi-pomoshchnik-revolyutsiya-personalnoi-i-rukovoditelnoi-podderzhki/"/>
-    <id>https://sebastienrousseau.com/ru/2024-02-12-akande-golosovoi-pomoshchnik-revolyutsiya-personalnoi-i-rukovoditelnoi-podderzhki/</id>
-    <updated>2024-02-12T06:06:06+00:00</updated>
-    <published>2024-02-12T06:06:06+00:00</published>
-    <summary>Àkàndé — голосовой ассистент с открытым исходным кодом на Python, объединяющий распознавание речи OpenAI Whisper, чат-дополнения GPT-4 и локальный кэш SQLite для голосового рабочего процесса с генерацией PDF-сводок.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>Революция рекламы: как ИИ формирует будущее</title>
     <link href="https://sebastienrousseau.com/ru/2024-02-08-revolyutsiya-reklamy-kak-ii-formiruet-budushchee/"/>
     <id>https://sebastienrousseau.com/ru/2024-02-08-revolyutsiya-reklamy-kak-ii-formiruet-budushchee/</id>
@@ -267,30 +294,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
-    <link href="https://sebastienrousseau.com/ru/2024-01-29-audio-analiz-perevody-i-insaity-s-pomoshchyu-ii/"/>
-    <id>https://sebastienrousseau.com/ru/2024-01-29-audio-analiz-perevody-i-insaity-s-pomoshchyu-ii/</id>
-    <updated>2024-01-29T06:06:06+00:00</updated>
-    <published>2024-01-29T06:06:06+00:00</published>
-    <summary>Audio Analyser использует нейронные модели Azure Cognitive Services для распознавания речи, Text Analytics NLP и CherryPy для преобразования аудиозаписей в транскрипты с оценкой тональности, извлечением ключевых слов и переводом.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>Аудио-анализ, переводы и инсайты с помощью ИИ</title>
     <link href="https://sebastienrousseau.com/ru/2024-01-29-audio-analiz-perevody-i-insaity-s-pomoshchyu-ii/"/>
     <id>https://sebastienrousseau.com/ru/2024-01-29-audio-analiz-perevody-i-insaity-s-pomoshchyu-ii/</id>
     <updated>2024-01-29T06:06:06+00:00</updated>
     <published>2024-01-29T06:06:06+00:00</published>
     <summary>Современные ИИ-инструменты превращают аудио в текст, переводят на десятки языков и извлекают полезные выводы из записей разговоров.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>AI Prompt Engineering 2024: Techniques That Work</title>
-    <link href="https://sebastienrousseau.com/ru/2024-01-23-dostizheniya-v-inzhenerii-promptov-ii/"/>
-    <id>https://sebastienrousseau.com/ru/2024-01-23-dostizheniya-v-inzhenerii-promptov-ii/</id>
-    <updated>2024-01-23T06:06:06+00:00</updated>
-    <published>2024-01-23T06:06:06+00:00</published>
-    <summary>Инженерия промптов управляет поведением LLM во время инференса. Статья охватывает zero-shot и few-shot промптинг, цепочку рассуждений, self-consistency, архитектуру ReAct и риски инъекций промптов.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -384,15 +393,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Generative AI in 2023: How It Works, Where It Lands</title>
-    <link href="https://sebastienrousseau.com/ru/2023-11-12-izuchaem-generativnyi-ii/"/>
-    <id>https://sebastienrousseau.com/ru/2023-11-12-izuchaem-generativnyi-ii/</id>
-    <updated>2023-11-12T06:06:06+00:00</updated>
-    <published>2023-11-12T06:06:06+00:00</published>
-    <summary>Как работают трансформерные модели, какие модели 2023 года задали эталон, где генеративный ИИ внедряется первым в финансовых услугах и какие вопросы управления нужно решить до развёртывания.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>Изучаем генеративный ИИ</title>
     <link href="https://sebastienrousseau.com/ru/2023-11-12-izuchaem-generativnyi-ii/"/>
     <id>https://sebastienrousseau.com/ru/2023-11-12-izuchaem-generativnyi-ii/</id>
@@ -408,15 +408,6 @@
     <updated>2023-11-05T06:06:06+00:00</updated>
     <published>2023-11-05T06:06:06+00:00</published>
     <summary>Библиотека математических и криптографических констант для Rust, обеспечивающая каноничные значения для надёжных вычислений и криптографических операций.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>LibMake: Rust Library Scaffold Generator</title>
-    <link href="https://sebastienrousseau.com/ru/2023-10-26-libmake-generator-koda-dlya-bibliotek-rust/"/>
-    <id>https://sebastienrousseau.com/ru/2023-10-26-libmake-generator-koda-dlya-bibliotek-rust/</id>
-    <updated>2023-10-26T06:06:06+00:00</updated>
-    <published>2023-10-26T06:06:06+00:00</published>
-    <summary>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -447,15 +438,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Automating ISO 20022 Payment Files Creation with pain001</title>
-    <link href="https://sebastienrousseau.com/ru/2023-09-29-avtomatizatsiya-platezhnykh-failov-iso-20022-s-pain001/"/>
-    <id>https://sebastienrousseau.com/ru/2023-09-29-avtomatizatsiya-platezhnykh-failov-iso-20022-s-pain001/</id>
-    <updated>2023-09-29T06:06:06+00:00</updated>
-    <published>2023-09-29T06:06:06+00:00</published>
-    <summary>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>Автоматизация создания платёжных файлов ISO 20022 с pain001</title>
     <link href="https://sebastienrousseau.com/ru/2023-09-29-avtomatizatsiya-platezhnykh-failov-iso-20022-s-pain001/"/>
     <id>https://sebastienrousseau.com/ru/2023-09-29-avtomatizatsiya-platezhnykh-failov-iso-20022-s-pain001/</id>
@@ -474,30 +456,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>The making of the Express Transaction Credits Platform</title>
-    <link href="https://sebastienrousseau.com/ru/2018-02-15-sozdanie-platformy-express-transaction-credits/"/>
-    <id>https://sebastienrousseau.com/ru/2018-02-15-sozdanie-platformy-express-transaction-credits/</id>
-    <updated>2018-02-15T06:06:06+00:00</updated>
-    <published>2018-02-15T06:06:06+00:00</published>
-    <summary>Технический разбор платформы EXTC, построенной на Ethereum ERC-223 в 2018 году: архитектура токенов, мультиподписные выплаты, переводы с временной блокировкой и займы под залог.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>Представление новой криптовалюты и более быстрого платёжного решения</title>
     <link href="https://sebastienrousseau.com/ru/2018-02-04-novaya-kriptovalyuta-i-bystroe-platezhnoe-reshenie/"/>
     <id>https://sebastienrousseau.com/ru/2018-02-04-novaya-kriptovalyuta-i-bystroe-platezhnoe-reshenie/</id>
     <updated>2018-02-04T06:06:06+00:00</updated>
     <published>2018-02-04T06:06:06+00:00</published>
     <summary>Значимая глава в эволюции глобального финансового ландшафта — технологические инновации, геополитические сдвиги и устойчивые финансы.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
-    <link href="https://sebastienrousseau.com/ru/2018-02-04-novaya-kriptovalyuta-i-bystroe-platezhnoe-reshenie/"/>
-    <id>https://sebastienrousseau.com/ru/2018-02-04-novaya-kriptovalyuta-i-bystroe-platezhnoe-reshenie/</id>
-    <updated>2018-02-04T06:06:06+00:00</updated>
-    <published>2018-02-04T06:06:06+00:00</published>
-    <summary>В начале 2018 года платформа EXTC исследовала ускоренные трансграничные платежи через смарт-контракты Ethereum ERC-223 — ранний прообраз того, что впоследствии создаст децентрализованные финансы.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -516,15 +480,6 @@
     <updated>2018-01-09T06:06:06+00:00</updated>
     <published>2018-01-09T06:06:06+00:00</published>
     <summary>Глубокое погружение в технические основы блокчейна: хеширование, цифровые подписи, алгоритмы консенсуса и архитектура распределённых реестров.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Understanding the Technology behind Blockchain</title>
-    <link href="https://sebastienrousseau.com/ru/2018-01-09-ponimanie-tekhnologii-blockchain/"/>
-    <id>https://sebastienrousseau.com/ru/2018-01-09-ponimanie-tekhnologii-blockchain/</id>
-    <updated>2018-01-09T06:06:06+00:00</updated>
-    <published>2018-01-09T06:06:06+00:00</published>
-    <summary>Техническое введение в работу блокчейна: криптографические хеш-цепочки, деревья Меркла, распределённый консенсус и как программируемый уровень Ethereum превратил платёжный реестр в платформу для смарт-контрактов и токенизированных активов.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

@@ -4,14 +4,50 @@
   <link href="https://sebastienrousseau.com/id/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/id/"/>
   <id>https://sebastienrousseau.com/id/</id>
-  <updated>2026-05-26T23:13:19+00:00</updated>
+  <updated>2026-05-27T22:09:52+00:00</updated>
+  <entry>
+    <title>AI sebagai Sistem Operasi Pembayaran: Penipuan, Routing, Ketahanan, dan Kepatuhan pada 2026</title>
+    <link href="https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/"/>
+    <id>https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</id>
+    <updated>2026-05-27T22:09:52+00:00</updated>
+    <published>2026-05-27T22:09:52+00:00</published>
+    <summary>AI menjadi sistem operasi pembayaran pada 2026, bergeser dari analitik ke pencegahan penipuan, perbaikan pembayaran, routing, prakiraan likuiditas, penyaringan kepatuhan, dan kontrol agentic commerce.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Pembayaran Agentik di Perbankan: Persetujuan, Tanggung Jawab, UX 2026</title>
     <link href="https://sebastienrousseau.com/id/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/"/>
     <id>https://sebastienrousseau.com/id/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</id>
-    <updated>2026-05-26T23:13:19+00:00</updated>
-    <published>2026-05-26T23:13:19+00:00</published>
+    <updated>2026-05-27T22:09:52+00:00</updated>
+    <published>2026-05-27T22:09:52+00:00</published>
     <summary>Pembayaran agentik pada 2026 telah berpindah dari konsep ke transaksi langsung. Tantangan perbankan bukan lagi apakah AI agent dapat memulai pembayaran, melainkan bagaimana persetujuan, tanggung jawab, identitas, auditabilitas, kendali fraud, dan interoperabilitas protokol harus dirancang.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Magnifica Humanitas: Pembacaan Industri AI atas Ensiklik Kepausan Pertama tentang AI</title>
+    <link href="https://sebastienrousseau.com/id/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/"/>
+    <id>https://sebastienrousseau.com/id/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>Pada 25 Mei 2026, Paus Leo XIV merilis Magnifica Humanitas, ensiklik kepausan pertama tentang kecerdasan buatan — dibaca dari dalam industri teknologi sebagai kerangka etika untuk era AI dan kuantum.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Stablecoin vs Deposito Tertokenisasi 2026: Yang Harus Dibela Bank</title>
+    <link href="https://sebastienrousseau.com/id/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/"/>
+    <id>https://sebastienrousseau.com/id/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>Stablecoin dan deposito tertokenisasi menyatu pada penyelesaian yang dapat diprogram, namun model neraca, hukum, likuiditas, dan kepercayaannya tetap berbeda bagi bank.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Likuiditas yang Dapat Diprogram 2026: AI, Deposito Tertokenisasi, Treasury Real-Time</title>
+    <link href="https://sebastienrousseau.com/id/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/"/>
+    <id>https://sebastienrousseau.com/id/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</id>
+    <updated>2026-05-25T06:06:06+00:00</updated>
+    <published>2026-05-25T06:06:06+00:00</published>
+    <summary>Likuiditas yang dapat diprogram pada 2026 menyatukan prakiraan AI, deposito tertokenisasi, jalur pembayaran real-time, akun virtual, stablecoin, dan TMS dalam satu lapisan orkestrasi modal kerja.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -249,15 +285,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
-    <link href="https://sebastienrousseau.com/id/2024-02-12-akande-asisten-suara-revolusi-asistensi-pribadi-dan-eksekutif/"/>
-    <id>https://sebastienrousseau.com/id/2024-02-12-akande-asisten-suara-revolusi-asistensi-pribadi-dan-eksekutif/</id>
-    <updated>2024-02-12T06:06:06+00:00</updated>
-    <published>2024-02-12T06:06:06+00:00</published>
-    <summary>Àkàndé adalah asisten suara Python open-source yang menggabungkan pengenalan suara OpenAI Whisper, GPT-4 chat completions, dan cache SQLite lokal untuk menghasilkan ringkasan PDF dari riwayat percakapan.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>[ID DRAFT] Generative AI in Advertising: Amazon Rufus &amp; Meta</title>
     <link href="https://sebastienrousseau.com/id/2024-02-08-revolusi-periklanan-bagaimana-ai-membentuk-masa-depan/"/>
     <id>https://sebastienrousseau.com/id/2024-02-08-revolusi-periklanan-bagaimana-ai-membentuk-masa-depan/</id>
@@ -267,30 +294,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
-    <link href="https://sebastienrousseau.com/id/2024-01-29-wawasan-audio-analisis-dan-terjemahan-bertenaga-ai/"/>
-    <id>https://sebastienrousseau.com/id/2024-01-29-wawasan-audio-analisis-dan-terjemahan-bertenaga-ai/</id>
-    <updated>2024-01-29T06:06:06+00:00</updated>
-    <published>2024-01-29T06:06:06+00:00</published>
-    <summary>Audio Analyser menggunakan model neural speech-to-text Azure Cognitive Services, Text Analytics NLP, dan CherryPy untuk mengubah rekaman audio menjadi transkrip yang dapat dicari dengan skor sentimen, ekstraksi kata kunci, dan terjemahan multibahasa.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>[ID DRAFT] AI-Powered Speech Analysis, Translation, &amp; Insight Tool</title>
     <link href="https://sebastienrousseau.com/id/2024-01-29-wawasan-audio-analisis-dan-terjemahan-bertenaga-ai/"/>
     <id>https://sebastienrousseau.com/id/2024-01-29-wawasan-audio-analisis-dan-terjemahan-bertenaga-ai/</id>
     <updated>2024-01-29T06:06:06+00:00</updated>
     <published>2024-01-29T06:06:06+00:00</published>
     <summary>Pelajari bagaimana Audio Analyser yang didukung Azure AI mengubah konversi speech-to-text, analisis teks, dan terjemahan menjadi wawasan yang dapat ditindaklanjuti.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>AI Prompt Engineering 2024: Techniques That Work</title>
-    <link href="https://sebastienrousseau.com/id/2024-01-23-kemajuan-rekayasa-prompt-ai/"/>
-    <id>https://sebastienrousseau.com/id/2024-01-23-kemajuan-rekayasa-prompt-ai/</id>
-    <updated>2024-01-23T06:06:06+00:00</updated>
-    <published>2024-01-23T06:06:06+00:00</published>
-    <summary>Prompt engineering mengendalikan perilaku LLM saat inferensi. Artikel ini membahas zero-shot dan few-shot prompting, chain-of-thought reasoning, self-consistency sampling, arsitektur ReAct tool-use, risiko indirect prompt injection, dan pola dari layanan keuangan.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -384,15 +393,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Generative AI in 2023: How It Works, Where It Lands</title>
-    <link href="https://sebastienrousseau.com/id/2023-11-12-menjelajahi-ai-generatif/"/>
-    <id>https://sebastienrousseau.com/id/2023-11-12-menjelajahi-ai-generatif/</id>
-    <updated>2023-11-12T06:06:06+00:00</updated>
-    <published>2023-11-12T06:06:06+00:00</published>
-    <summary>Cara kerja model transformer, model 2023 mana yang menetapkan tolok ukur, di mana generative AI pertama diterapkan dalam layanan keuangan, dan pertanyaan tata kelola apa yang harus dijawab sebelum deployment.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>[ID DRAFT] Generative AI in 2023: How It Works, Where It Lands</title>
     <link href="https://sebastienrousseau.com/id/2023-11-12-menjelajahi-ai-generatif/"/>
     <id>https://sebastienrousseau.com/id/2023-11-12-menjelajahi-ai-generatif/</id>
@@ -408,15 +408,6 @@
     <updated>2023-11-05T06:06:06+00:00</updated>
     <published>2023-11-05T06:06:06+00:00</published>
     <summary>Lindungi integritas kode dengan konstanta matematika dan kriptografi yang telah diverifikasi secara cermat, memperkuat keamanan memori dan konkurensi demi keamanan kode yang lebih tinggi.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>LibMake: Rust Library Scaffold Generator</title>
-    <link href="https://sebastienrousseau.com/id/2023-10-26-libmake-generator-kode-untuk-pustaka-rust/"/>
-    <id>https://sebastienrousseau.com/id/2023-10-26-libmake-generator-kode-untuk-pustaka-rust/</id>
-    <updated>2023-10-26T06:06:06+00:00</updated>
-    <published>2023-10-26T06:06:06+00:00</published>
-    <summary>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -447,15 +438,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Automating ISO 20022 Payment Files Creation with pain001</title>
-    <link href="https://sebastienrousseau.com/id/2023-09-29-otomatisasi-pembuatan-berkas-pembayaran-iso-20022-dengan-pain001/"/>
-    <id>https://sebastienrousseau.com/id/2023-09-29-otomatisasi-pembuatan-berkas-pembayaran-iso-20022-dengan-pain001/</id>
-    <updated>2023-09-29T06:06:06+00:00</updated>
-    <published>2023-09-29T06:06:06+00:00</published>
-    <summary>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>[ID DRAFT] Automating ISO 20022 Payment Files Creation with Pain001</title>
     <link href="https://sebastienrousseau.com/id/2023-09-29-otomatisasi-pembuatan-berkas-pembayaran-iso-20022-dengan-pain001/"/>
     <id>https://sebastienrousseau.com/id/2023-09-29-otomatisasi-pembuatan-berkas-pembayaran-iso-20022-dengan-pain001/</id>
@@ -474,30 +456,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>The making of the Express Transaction Credits Platform</title>
-    <link href="https://sebastienrousseau.com/id/2018-02-15-pembuatan-platform-express-transaction-credits/"/>
-    <id>https://sebastienrousseau.com/id/2018-02-15-pembuatan-platform-express-transaction-credits/</id>
-    <updated>2018-02-15T06:06:06+00:00</updated>
-    <published>2018-02-15T06:06:06+00:00</published>
-    <summary>Analisis mendalam tentang bagaimana platform EXTC dibangun di atas Ethereum ERC-223 pada 2018: arsitektur token, pencairan multi-sig, transfer time-locked, dan pinjaman instan berbasis kolateral.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>[ID DRAFT] Unveiling a new Cryptocurrency and Faster Payment Solution</title>
     <link href="https://sebastienrousseau.com/id/2018-02-04-mata-uang-kripto-baru-dan-solusi-pembayaran-lebih-cepat/"/>
     <id>https://sebastienrousseau.com/id/2018-02-04-mata-uang-kripto-baru-dan-solusi-pembayaran-lebih-cepat/</id>
     <updated>2018-02-04T06:06:06+00:00</updated>
     <published>2018-02-04T06:06:06+00:00</published>
     <summary>A significant chapter in the evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and sustainable finance.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
-    <link href="https://sebastienrousseau.com/id/2018-02-04-mata-uang-kripto-baru-dan-solusi-pembayaran-lebih-cepat/"/>
-    <id>https://sebastienrousseau.com/id/2018-02-04-mata-uang-kripto-baru-dan-solusi-pembayaran-lebih-cepat/</id>
-    <updated>2018-02-04T06:06:06+00:00</updated>
-    <published>2018-02-04T06:06:06+00:00</published>
-    <summary>Pada awal 2018, platform EXTC menjajaki pembayaran lintas batas yang lebih cepat melalui smart contract Ethereum ERC-223 — cetak biru awal bagi apa yang kemudian dibangun oleh keuangan terdesentralisasi.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -516,15 +480,6 @@
     <updated>2018-01-09T06:06:06+00:00</updated>
     <published>2018-01-09T06:06:06+00:00</published>
     <summary>Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Understanding the Technology behind Blockchain</title>
-    <link href="https://sebastienrousseau.com/id/2018-01-09-memahami-teknologi-di-balik-blockchain/"/>
-    <id>https://sebastienrousseau.com/id/2018-01-09-memahami-teknologi-di-balik-blockchain/</id>
-    <updated>2018-01-09T06:06:06+00:00</updated>
-    <published>2018-01-09T06:06:06+00:00</published>
-    <summary>Pengantar teknis cara kerja blockchain: rantai hash kriptografis, Merkle tree, konsensus terdistribusi, dan bagaimana lapisan terprogram Ethereum mengubah buku besar pembayaran menjadi platform smart contract dan aset tokenisasi.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

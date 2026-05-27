@@ -6,8 +6,91 @@
     <description>Статті українською: прикладний ШІ, платежі ISO 20022, постквантова криптографія та трансформація оптових платежів.</description>
     <atom:link href="https://sebastienrousseau.com/uk/rss.xml" rel="self" type="application/rss+xml"/>
     <language>uk-UA</language>
-    <lastBuildDate>Tue, 26 May 2026 23:13:19 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 22:09:52 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Усі права захищено.</copyright>
+    <item>
+      <title>ШІ як операційна система платежів: шахрайство, маршрутизація, стійкість і відповідність у 2026</title>
+      <link>https://sebastienrousseau.com/uk/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</link>
+      <description>ШІ стає операційною системою платежів у 2026 році: виходить за межі аналітики у запобігання шахрайству, відновлення платежів, маршрутизацію, прогноз ліквідності та перевірку відповідності.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ШІ у платежах 2026</category>
+      <category>шахрайство платежів</category>
+      <category>маршрутизація платежів</category>
+      <category>запобігання шахрайству в реальному часі</category>
+      <category>ISO 20022 ШІ</category>
+      <category>стійкість платежів</category>
+      <category>аналіз транзакцій</category>
+      <category>прогноз грошових потоків</category>
+    </item>
+    <item>
+      <title>Magnifica Humanitas: прочитання першої папської енцикліки про ШІ</title>
+      <link>https://sebastienrousseau.com/uk/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</link>
+      <description>25 травня 2026 Папа Лев XIV оприлюднив Magnifica Humanitas — першу папську енцикліку про ШІ. Прочитання з позиції технологічної індустрії: послання надії.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
+      <category>Magnifica Humanitas</category>
+      <category>Pope Leo XIV</category>
+      <category>енцикліка про ШІ</category>
+      <category>етика штучного інтелекту</category>
+      <category>етика квантових обчислень</category>
+      <category>Rerum Novarum</category>
+      <category>Вавилонська вежа</category>
+      <category>технологія ніколи не є нейтральною</category>
+      <category>трансгуманізм</category>
+      <category>постгуманізм</category>
+      <category>людська гідність</category>
+      <category>технологічна парадигма</category>
+      <category>потяг автомобіль ядерна енергія інтернет</category>
+      <category>моральна паніка в історії технологій</category>
+      <category>Lucy передача знань</category>
+      <category>надія на ШІ</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+      <category>Anthropic</category>
+      <category>Sebastien Rousseau</category>
+    </item>
+    <item>
+      <title>Стейблкоїни проти токенізованих депозитів у 2026: що банкам справді треба захищати</title>
+      <link>https://sebastienrousseau.com/uk/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</link>
+      <description>Стейблкоїни та токенізовані депозити збігаються довкола програмованого розрахунку, проте їх баланс, правові, ліквідні та довірчі моделі залишаються різними для банків.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>стейблкоїни 2026</category>
+      <category>токенізовані депозити</category>
+      <category>банківські депозити</category>
+      <category>GENIUS Act</category>
+      <category>MiCA</category>
+      <category>депозитні токени</category>
+      <category>резерви стейблкоїнів</category>
+      <category>фондування банків</category>
+      <category>цифрові гроші</category>
+    </item>
+    <item>
+      <title>Програмована ліквідність 2026: ШІ, токенізовані депозити та оркестрація казначейства</title>
+      <link>https://sebastienrousseau.com/uk/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</link>
+      <description>Програмована ліквідність у 2026 році об&apos;єднує ШІ-прогнозування, токенізовані депозити, канали у реальному часі, віртуальні рахунки, стейблкоїни та TMS в єдиний шар оркестрації оборотного капіталу.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</guid>
+      <pubDate>Mon, 25 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>програмована ліквідність 2026</category>
+      <category>оркестрація казначейства</category>
+      <category>ШІ-казначейство</category>
+      <category>токенізовані депозити</category>
+      <category>ліквідність у реальному часі</category>
+      <category>стейблкоїни казначейство</category>
+      <category>мультиканальні платежі</category>
+      <category>віртуальні рахунки</category>
+      <category>транзакційний банкінг</category>
+      <category>мобільність застави</category>
+    </item>
     <item>
       <title>UK Payments Forward Plan 2026: стейблкоїни, відкритий банкінг, токенізовані депозити, агентські платежі</title>
       <link>https://sebastienrousseau.com/uk/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>
@@ -622,27 +705,6 @@
       <category>Технологічні інновації</category>
     </item>
     <item>
-      <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
-      <link>https://sebastienrousseau.com/uk/2024-02-12-akande-holosovyy-asystent-osobyste-ta-vykonavche-asystyrovannia/</link>
-      <description>Àkàndé — це голосовий асистент з відкритим кодом на Python, який поєднує розпізнавання мовлення OpenAI Whisper, завершення чату GPT-4 та локальний кеш SQLite у голосовий робочий процес — генерує PDF-зведення з історії розмов і зберігає всі дані локально.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2024-02-12-akande-holosovyy-asystent-osobyste-ta-vykonavche-asystyrovannia/</guid>
-      <pubDate>Mon, 12 Feb 2024 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" type="image/webp" length="0"/>
-      <category>Àkàndé</category>
-      <category>OpenAI GPT-4</category>
-      <category>Whisper STT</category>
-      <category>кешування SQLite</category>
-      <category>fpdf2</category>
-      <category>Python голосовий асистент</category>
-      <category>API завершення чату</category>
-      <category>генерація PDF-зведень</category>
-      <category>кеш SHA-256</category>
-      <category>синтез мовлення</category>
-      <category>AI помічник керівника</category>
-      <category>відкритий код</category>
-    </item>
-    <item>
       <title>[UK DRAFT] Generative AI in Advertising: Amazon Rufus &amp; Meta</title>
       <link>https://sebastienrousseau.com/uk/2024-02-08-revoliutsiya-reklamy-yak-shi-formuye-maibutnye/</link>
       <description>Дізнайтесь, як AI трансформує рекламу: аналіз Rufus від Amazon та останніх розробок Meta. Відкрийте вплив на залученість споживачів у цифровому маркетингу</description>
@@ -662,27 +724,6 @@
       <category>оптимізація рекламних кампаній</category>
     </item>
     <item>
-      <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
-      <link>https://sebastienrousseau.com/uk/2024-01-29-audio-analiz-pereklady-i-perspektyvy-na-shi/</link>
-      <description>Audio Analyser використовує нейронні моделі розпізнавання мовлення Azure Cognitive Services, Text Analytics NLP та CherryPy для перетворення аудіозаписів на доступні для пошуку транскрипти з оцінками тональності, вилученням ключових слів і багатомовним перекладом.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2024-01-29-audio-analiz-pereklady-i-perspektyvy-na-shi/</guid>
-      <pubDate>Mon, 29 Jan 2024 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" type="image/webp" length="0"/>
-      <category>Azure Cognitive Services</category>
-      <category>розпізнавання мовлення</category>
-      <category>нейронна акустична модель</category>
-      <category>Azure Text Analytics</category>
-      <category>обробка природної мови</category>
-      <category>аналіз тональності</category>
-      <category>CherryPy</category>
-      <category>API пакетної транскрипції</category>
-      <category>багатомовний ASR</category>
-      <category>Azure Translator</category>
-      <category>транскрипція аудіо</category>
-      <category>обробка аудіо на Python</category>
-    </item>
-    <item>
       <title>[UK DRAFT] AI-Powered Speech Analysis, Translation, &amp; Insight Tool</title>
       <link>https://sebastienrousseau.com/uk/2024-01-29-audio-analiz-pereklady-i-perspektyvy-na-shi/</link>
       <description>Дізнайтеся, як Audio Analyser на базі Azure AI перетворює розпізнавання мовлення, аналіз тексту та переклади на практичні аналітичні дані.</description>
@@ -700,27 +741,6 @@
       <category>автоматична транскрипція</category>
       <category>обробка аудіоданих</category>
       <category>machine learning</category>
-    </item>
-    <item>
-      <title>AI Prompt Engineering 2024: Techniques That Work</title>
-      <link>https://sebastienrousseau.com/uk/2024-01-23-prohres-v-inzheneriyi-promptiv-shi/</link>
-      <description>Prompt-інжиніринг керує поведінкою LLM під час виведення. Стаття охоплює zero-shot та few-shot підходи, ланцюгове міркування, самоузгодженість, архітектуру ReAct, ризики непрямої ін&apos;єкції промптів та патерни з фінансових сервісів.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2024-01-23-prohres-v-inzheneriyi-promptiv-shi/</guid>
-      <pubDate>Tue, 23 Jan 2024 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" type="image/webp" length="0"/>
-      <category>ланцюгове міркування</category>
-      <category>few-shot навчання</category>
-      <category>zero-shot підказки</category>
-      <category>навчання в контексті</category>
-      <category>ін&apos;єкція промптів</category>
-      <category>ReAct</category>
-      <category>самоузгодженість</category>
-      <category>генерація з доповненим пошуком</category>
-      <category>BloombergGPT</category>
-      <category>системний промпт</category>
-      <category>безпека промптів</category>
-      <category>LLM агент</category>
     </item>
     <item>
       <title>[UK DRAFT] AI Prompt Engineering 2024: Techniques That Work</title>
@@ -931,25 +951,6 @@
       <category>evolution</category>
     </item>
     <item>
-      <title>Generative AI in 2023: How It Works, Where It Lands</title>
-      <link>https://sebastienrousseau.com/uk/2023-11-12-doslidzhuyuchy-heneratyvnyy-shi/</link>
-      <description>Як працюють transformer-моделі, які моделі 2023 року встановили еталон, де генеративний ШІ впроваджується у фінансових послугах і які питання управління потребують відповіді.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2023-11-12-doslidzhuyuchy-heneratyvnyy-shi/</guid>
-      <pubDate>Sun, 12 Nov 2023 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
-      <category>генеративний ШІ</category>
-      <category>велика мовна модель</category>
-      <category>архітектура transformer</category>
-      <category>GPT-4</category>
-      <category>ШІ у фінансових послугах</category>
-      <category>галюцинація</category>
-      <category>retrieval-augmented generation</category>
-      <category>управління ШІ</category>
-      <category>foundation model</category>
-      <category>дообробка</category>
-    </item>
-    <item>
       <title>[UK DRAFT] Mathematical and Cryptographic Constants for Rust Security</title>
       <link>https://sebastienrousseau.com/uk/2023-11-05-matematychni-ta-kryptohrafichni-konstanty-dlya-rust/</link>
       <description>Захистіть цілісність коду за допомогою ретельно перевірених математичних і криптографічних констант, зміцнюючи безпеку пам&apos;яті та паралельності для підвищеного захисту коду.</description>
@@ -967,25 +968,6 @@
       <category>Common (CMN) library</category>
       <category>Rust-додатки</category>
       <category>математичні обчислення</category>
-    </item>
-    <item>
-      <title>LibMake: Rust Library Scaffold Generator</title>
-      <link>https://sebastienrousseau.com/uk/2023-10-26-libmake-henerator-kodu-dlya-rust-bibliotek/</link>
-      <description>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2023-10-26-libmake-henerator-kodu-dlya-rust-bibliotek/</guid>
-      <pubDate>Thu, 26 Oct 2023 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
-      <category>LibMake</category>
-      <category>Rust code generator</category>
-      <category>cargo scaffold</category>
-      <category>Rust library template</category>
-      <category>Tera templating</category>
-      <category>GitHub Actions Rust</category>
-      <category>cargo-audit</category>
-      <category>Rust API Guidelines</category>
-      <category>boilerplate generator</category>
-      <category>Rust CI workflow</category>
     </item>
     <item>
       <title>[UK DRAFT] Streamlining Rust Library Development with Code Generation</title>
@@ -1045,29 +1027,6 @@
       <category>pain message validation</category>
     </item>
     <item>
-      <title>Automating ISO 20022 Payment Files Creation with pain001</title>
-      <link>https://sebastienrousseau.com/uk/2023-09-29-avtomatyzatsiya-platizhnykh-faylov-iso-20022-z-pain001/</link>
-      <description>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2023-09-29-avtomatyzatsiya-platizhnykh-faylov-iso-20022-z-pain001/</guid>
-      <pubDate>Fri, 29 Sep 2023 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" type="image/webp" length="0"/>
-      <category>pain001</category>
-      <category>ISO 20022</category>
-      <category>pain.001.001.09</category>
-      <category>CustomerCreditTransferInitiation</category>
-      <category>SEPA Credit Transfer</category>
-      <category>CBPR+</category>
-      <category>payment automation</category>
-      <category>XML generation</category>
-      <category>XSD validation</category>
-      <category>GrpHdr</category>
-      <category>PmtInf</category>
-      <category>CdtTrfTxInf</category>
-      <category>CtrlSum</category>
-      <category>SWIFT</category>
-    </item>
-    <item>
       <title>[UK DRAFT] Automating ISO 20022 Payment Files Creation with Pain001</title>
       <link>https://sebastienrousseau.com/uk/2023-09-29-avtomatyzatsiya-platizhnykh-faylov-iso-20022-z-pain001/</link>
       <description>Автоматизуйте створення платіжних файлів ISO 20022 pain.001 з CSV або SQLite. pain001 — бібліотека Python з відкритим кодом, яка спрощує дотримання вимог.</description>
@@ -1106,25 +1065,6 @@
       <category>documentation</category>
     </item>
     <item>
-      <title>The making of the Express Transaction Credits Platform</title>
-      <link>https://sebastienrousseau.com/uk/2018-02-15-stvorennia-platformy-express-transaction-credits/</link>
-      <description>Технічний огляд того, як платформа EXTC була побудована на Ethereum ERC-223 у 2018 році: архітектура токенів, виплати з мультипідписом, передачі з часовим блокуванням та миттєві кредити під заставу.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2018-02-15-stvorennia-platformy-express-transaction-credits/</guid>
-      <pubDate>Thu, 15 Feb 2018 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
-      <category>EXTC platform</category>
-      <category>ERC-223</category>
-      <category>смарт-контракти Ethereum</category>
-      <category>архітектура токенів</category>
-      <category>мультипідпис</category>
-      <category>передача з часовим блокуванням</category>
-      <category>блокчейн-платежі</category>
-      <category>кредити під заставу</category>
-      <category>децентралізовані фінанси</category>
-      <category>крипто 2018</category>
-    </item>
-    <item>
       <title>[UK DRAFT] Unveiling a new Cryptocurrency and Faster Payment Solution</title>
       <link>https://sebastienrousseau.com/uk/2018-02-04-nova-kryptovaluta-shvydshe-rishennia-dlia-platezhiv/</link>
       <description>A significant chapter in the evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and sustainable finance.</description>
@@ -1142,25 +1082,6 @@
       <category>pain message</category>
       <category>pain message standards</category>
       <category>pain message validation</category>
-    </item>
-    <item>
-      <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
-      <link>https://sebastienrousseau.com/uk/2018-02-04-nova-kryptovaluta-shvydshe-rishennia-dlia-platezhiv/</link>
-      <description>На початку 2018 року платформа EXTC досліджувала швидші транскордонні платежі через смарт-контракти Ethereum ERC-223 — ранній план того, що децентралізовані фінанси пізніше побудують.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2018-02-04-nova-kryptovaluta-shvydshe-rishennia-dlia-platezhiv/</guid>
-      <pubDate>Sun, 04 Feb 2018 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" type="image/webp" length="0"/>
-      <category>EXTC</category>
-      <category>ERC-223</category>
-      <category>смарт-контракти Ethereum</category>
-      <category>швидкі платежі</category>
-      <category>криптовалюта</category>
-      <category>blockchain-платежі</category>
-      <category>платіжний токен</category>
-      <category>децентралізовані фінанси</category>
-      <category>ERC-20</category>
-      <category>транскордонні платежі</category>
     </item>
     <item>
       <title>[UK DRAFT] ERC-20: The Ethereum Token Interface That Changed the World</title>
@@ -1198,27 +1119,6 @@
       <category>pain message</category>
       <category>pain message standards</category>
       <category>pain message validation</category>
-    </item>
-    <item>
-      <title>Understanding the Technology behind Blockchain</title>
-      <link>https://sebastienrousseau.com/uk/2018-01-09-rozuminnia-tekhnolohiyi-za-blokcheinom/</link>
-      <description>Технічний вступ до роботи blockchain: криптографічні хеш-ланцюги, дерева Меркла, розподілений консенсус і те, як програмований рівень Ethereum перетворив платіжний реєстр на платформу для смарт-контрактів і токенізованих активів.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2018-01-09-rozuminnia-tekhnolohiyi-za-blokcheinom/</guid>
-      <pubDate>Tue, 09 Jan 2018 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" type="image/webp" length="0"/>
-      <category>технологія blockchain</category>
-      <category>криптографічний хеш</category>
-      <category>дерево Меркла</category>
-      <category>розподілений консенсус</category>
-      <category>proof of work</category>
-      <category>Ethereum</category>
-      <category>смарт-контракти</category>
-      <category>EVM</category>
-      <category>Solidity</category>
-      <category>ERC-20</category>
-      <category>розподілений реєстр</category>
-      <category>децентралізовані фінанси</category>
     </item>
     <item>
       <title>[UK DRAFT] Blockchain explained, the technology that matters the most</title>

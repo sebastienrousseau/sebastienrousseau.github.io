@@ -6,8 +6,97 @@
     <description>বাংলা প্রবন্ধ: প্রায়োগিক এআই, ISO 20022 পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের রূপান্তর।</description>
     <atom:link href="https://sebastienrousseau.com/bn/rss.xml" rel="self" type="application/rss+xml"/>
     <language>bn-BD</language>
-    <lastBuildDate>Tue, 26 May 2026 23:13:19 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 22:09:52 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. সর্বস্বত্ব সংরক্ষিত।</copyright>
+    <item>
+      <title>পেমেন্টের অপারেটিং সিস্টেম হিসেবে AI: ২০২৬-এ প্রতারণা, রাউটিং, স্থিতিস্থাপকতা ও কমপ্লায়েন্স</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</link>
+      <description>২০২৬ সালে AI পেমেন্টের অপারেটিং সিস্টেমে পরিণত হচ্ছে — অ্যানালিটিক্স থেকে সরে গিয়ে প্রতারণা প্রতিরোধ, পেমেন্ট মেরামত, রাউটিং, তারল্য পূর্বাভাস, কমপ্লায়েন্স স্ক্রিনিং ও এজেন্টিক কমার্স নিয়ন্ত্রণে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>২০২৬ AI পেমেন্ট</category>
+      <category>পেমেন্ট প্রতারণা</category>
+      <category>পেমেন্ট রাউটিং</category>
+      <category>রিয়েল-টাইম প্রতারণা প্রতিরোধ</category>
+      <category>ISO 20022 AI</category>
+      <category>পেমেন্ট স্থিতিস্থাপকতা</category>
+      <category>লেনদেন বিশ্লেষণ</category>
+      <category>নগদ প্রবাহ পূর্বাভাস</category>
+    </item>
+    <item>
+      <title>Magnifica Humanitas: AI বিশ্বপত্রের প্রযুক্তি-শিল্প পাঠ</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</link>
+      <description>পোপ লিও চতুর্দশের Magnifica Humanitas — AI নিয়ে প্রথম পোপীয় বিশ্বপত্র; প্রযুক্তি শিল্পের ভিতর থেকে নৈতিক কাঠামো হিসেবে পড়লে এটি আশায় গিয়ে দাঁড়ায়।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
+      <category>Magnifica Humanitas</category>
+      <category>Pope Leo XIV</category>
+      <category>AI বিশ্বপত্র</category>
+      <category>কৃত্রিম বুদ্ধিমত্তা নৈতিকতা</category>
+      <category>কোয়ান্টাম কম্পিউটিং নৈতিকতা</category>
+      <category>Rerum Novarum</category>
+      <category>বাবেলের মিনার</category>
+      <category>প্রযুক্তি নিরপেক্ষ নয়</category>
+      <category>ট্রান্সহিউম্যানিজম</category>
+      <category>পোস্টহিউম্যানিজম</category>
+      <category>মানব মর্যাদা</category>
+      <category>প্রযুক্তিগত প্যারাডাইম</category>
+      <category>ট্রেন গাড়ি পারমাণবিক ইন্টারনেট</category>
+      <category>প্রযুক্তি ইতিহাসে নৈতিক উদ্বেগ</category>
+      <category>Lucy জ্ঞান স্থানান্তর</category>
+      <category>AI আশা</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+      <category>Anthropic</category>
+      <category>Sebastien Rousseau</category>
+    </item>
+    <item>
+      <title>স্টেবলকয়েন বনাম টোকেনাইজড আমানত ২০২৬: ব্যাংককে আসলে কী রক্ষা করতে হবে</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</link>
+      <description>স্টেবলকয়েন ও টোকেনাইজড আমানত প্রোগ্রামেবল নিষ্পত্তিতে মিলছে, তবে ব্যালেন্স শিট, আইনি, তারল্য ও আস্থার মডেল ভিন্ন থাকছে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>স্টেবলকয়েন ২০২৬</category>
+      <category>টোকেনাইজড আমানত</category>
+      <category>ব্যাংক আমানত</category>
+      <category>GENIUS Act</category>
+      <category>JPM Coin</category>
+      <category>ডিপোজিট টোকেন</category>
+      <category>স্টেবলকয়েন রিজার্ভ</category>
+      <category>ব্যাংক ফান্ডিং</category>
+      <category>ডিজিটাল অর্থ</category>
+    </item>
+    <item>
+      <title>প্রোগ্রামেবল তারল্য ২০২৬: এআই, টোকেনাইজড আমানত ও রিয়েল-টাইম কোষাগার</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</link>
+      <description>২০২৬-এ প্রোগ্রামেবল তারল্য এআই পূর্বাভাস, টোকেনাইজড আমানত, রিয়েল-টাইম রেল, ভার্চুয়াল হিসাব, স্টেবলকয়েন ও TMS-কে কর্মী মূলধনের একক অর্কেস্ট্রেশন স্তরে যুক্ত করছে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</guid>
+      <pubDate>Mon, 25 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>প্রোগ্রামেবল তারল্য ২০২৬</category>
+      <category>কোষাগার অর্কেস্ট্রেশন</category>
+      <category>এআই কোষাগার</category>
+      <category>টোকেনাইজড আমানত</category>
+      <category>রিয়েল-টাইম তারল্য</category>
+      <category>স্টেবলকয়েন কোষাগার</category>
+      <category>মাল্টি-রেল পেমেন্ট</category>
+      <category>ভার্চুয়াল হিসাব</category>
+      <category>লেনদেন ব্যাংকিং</category>
+      <category>জামানত গতিশীলতা</category>
+      <category>ISO 20022</category>
+      <category>Standard Chartered</category>
+      <category>J.P. Morgan</category>
+      <category>Oliver Wyman</category>
+      <category>AI agent</category>
+      <category>TMS</category>
+    </item>
     <item>
       <title>UK Payments Forward Plan ২০২৬: স্টেবলকয়েন, ওপেন ব্যাংকিং, টোকেনাইজড আমানত ও এজেন্টিক পেমেন্ট</title>
       <link>https://sebastienrousseau.com/bn/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>

@@ -6,8 +6,99 @@
     <description>日本語の記事:応用AI、ISO 20022 決済、ポスト量子暗号、ホールセール決済の構造変革。</description>
     <atom:link href="https://sebastienrousseau.com/ja/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ja-JP</language>
-    <lastBuildDate>Tue, 26 May 2026 23:13:19 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 22:09:52 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>決済のオペレーティングシステムとしての AI: 2026 年の不正、ルーティング、レジリエンス、コンプライアンス</title>
+      <link>https://sebastienrousseau.com/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</link>
+      <description>2026 年、AI は決済のオペレーティングシステムへと進化し、分析を越えて不正防止、決済修復、ルーティング、流動性予測、コンプライアンススクリーニング、エージェント型コマース統制を担います。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>AI 決済 2026</category>
+      <category>決済不正</category>
+      <category>決済ルーティング</category>
+      <category>リアルタイム不正防止</category>
+      <category>ISO 20022 AI</category>
+      <category>決済レジリエンス</category>
+      <category>取引分析</category>
+      <category>キャッシュフロー予測</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>エージェント型コマース</category>
+    </item>
+    <item>
+      <title>Magnifica Humanitas:AI業界の視点から読む初のAI回勅</title>
+      <link>https://sebastienrousseau.com/ja/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</link>
+      <description>2026年5月25日、教皇レオ14世はAIに特化した史上初の回勅『Magnifica Humanitas』を公布しました。テクノロジー業界の内側から、教義ではなくAI・量子時代に向けて最も整合的な倫理的枠組みのひとつとして読む。汽車・自動車・原子力・インターネットに伴った道徳的不安と重なる構図を踏まえ、業界・人類にとって何を意味するのか、そして最終的な誠実な読みが希望である理由を論じます。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
+      <category>Magnifica Humanitas</category>
+      <category>Pope Leo XIV</category>
+      <category>AI回勅</category>
+      <category>人工知能倫理</category>
+      <category>量子コンピューティング倫理</category>
+      <category>Rerum Novarum</category>
+      <category>バベルの塔</category>
+      <category>技術は中立ではない</category>
+      <category>トランスヒューマニズム</category>
+      <category>ポストヒューマニズム</category>
+      <category>人間の尊厳</category>
+      <category>技術的パラダイム</category>
+      <category>鉄道 自動車 原子力 インターネット</category>
+      <category>技術史における道徳的パニック</category>
+      <category>Lucy 知識伝達</category>
+      <category>AIへの希望</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+      <category>Anthropic</category>
+      <category>Sebastien Rousseau</category>
+    </item>
+    <item>
+      <title>ステーブルコイン vs トークン化預金 2026:銀行が本当に守るべきもの</title>
+      <link>https://sebastienrousseau.com/ja/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</link>
+      <description>ステーブルコインとトークン化預金はプログラマブル決済で収斂する一方、バランスシート、法的請求権、流動性、信認モデルは依然として異なります。2026 年の銀行戦略を整理します。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ステーブルコイン 2026</category>
+      <category>トークン化預金</category>
+      <category>銀行預金</category>
+      <category>GENIUS Act</category>
+      <category>JPM Coin</category>
+      <category>デポジットトークン</category>
+      <category>ステーブルコイン準備金</category>
+      <category>銀行ファンディング</category>
+      <category>デジタルマネー</category>
+    </item>
+    <item>
+      <title>2026 年のプログラマブル流動性:AI・トークン化預金・リアルタイムトレジャリー</title>
+      <link>https://sebastienrousseau.com/ja/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</link>
+      <description>2026 年のプログラマブル流動性は、AI 予測、トークン化預金、リアルタイム決済レール、バーチャル口座、ステーブルコイン、TMS を運転資本向けの単一オーケストレーション層に統合します。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</guid>
+      <pubDate>Mon, 25 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>プログラマブル流動性 2026</category>
+      <category>トレジャリーオーケストレーション</category>
+      <category>AI トレジャリー</category>
+      <category>トークン化預金</category>
+      <category>リアルタイム流動性</category>
+      <category>ステーブルコイン トレジャリー</category>
+      <category>マルチレール決済</category>
+      <category>バーチャル口座</category>
+      <category>トランザクションバンキング</category>
+      <category>担保流動性</category>
+      <category>ISO 20022</category>
+      <category>TMS</category>
+      <category>Standard Chartered</category>
+      <category>J.P. Morgan</category>
+      <category>Oliver Wyman</category>
+    </item>
     <item>
       <title>UK Payments Forward Plan 2026:ステーブルコイン・オープンバンキング・トークン化預金・エージェント型決済</title>
       <link>https://sebastienrousseau.com/ja/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>
@@ -599,16 +690,6 @@
       <category>AI</category>
     </item>
     <item>
-      <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
-      <link>https://sebastienrousseau.com/ja/2024-02-12-akande-onsei-ashisutanto-kojin-to-yakuin-shien-no-kakushin/</link>
-      <description>ÀkàndéはOpenAI Whisper音声認識、GPT-4チャット補完、ローカルSQLiteキャッシュを連携させたオープンソースのPython音声アシスタントで、会話履歴からPDFサマリーを生成し、データをローカルに保存します。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2024-02-12-akande-onsei-ashisutanto-kojin-to-yakuin-shien-no-kakushin/</guid>
-      <pubDate>Mon, 12 Feb 2024 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" type="image/webp" length="0"/>
-      <category>Àkàndé、OpenAI GPT-4、Whisper STT、SQLiteキャッシュ、fpdf2、Python音声アシスタント、チャット補完API、PDF要約生成、SHA-256キャッシュ、テキスト読み上げ、エグゼクティブアシスタントAI、オープンソース</category>
-    </item>
-    <item>
       <title>AI が未来を形作る:広告の革新</title>
       <link>https://sebastienrousseau.com/ja/2024-02-08-ai-ga-shourai-wo-katadoru-koukoku-no-kakushin/</link>
       <description>AI が広告の未来を形作る方法と、業界が直面する機会と倫理的考察。</description>
@@ -639,37 +720,6 @@
       <category>翻訳</category>
       <category>多言語</category>
       <category>オーディオインサイト</category>
-    </item>
-    <item>
-      <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
-      <link>https://sebastienrousseau.com/ja/2024-01-29-ai-ni-yoru-onsei-bunseki-honyaku-to-insaito/</link>
-      <description>Audio AnalyserはAzure Cognitive Servicesの音声テキスト変換ニューラルモデル、Text Analytics NLP、CherryPyを使用して音声録音を感情スコア、キーワード抽出、多言語翻訳付きの検索可能なトランスクリプトに変換します。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2024-01-29-ai-ni-yoru-onsei-bunseki-honyaku-to-insaito/</guid>
-      <pubDate>Mon, 29 Jan 2024 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" type="image/webp" length="0"/>
-      <category>Azure Cognitive Services、音声テキスト変換、ニューラル音響モデル、Azure Text Analytics、自然言語処理、感情分析、CherryPy、バッチ転写API、多言語ASR、Azure Translator、音声転写、Pythonオーディオ処理</category>
-    </item>
-    <item>
-      <title>AI Prompt Engineering 2024: Techniques That Work</title>
-      <link>https://sebastienrousseau.com/ja/2024-01-23-ai-puronputo-enjiniaringu-no-shinpo/</link>
-      <description>プロンプトエンジニアリングは推論時にLLMの動作を制御します。ゼロショット・フューショットプロンプティング、chain-of-thought推論、自己整合性サンプリング、ReActアーキテクチャ、間接プロンプトインジェクションリスク、金融サービスの応用パターンを解説します。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2024-01-23-ai-puronputo-enjiniaringu-no-shinpo/</guid>
-      <pubDate>Tue, 23 Jan 2024 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" type="image/webp" length="0"/>
-      <category>chain-of-thoughtプロンプティング</category>
-      <category>フューショット学習</category>
-      <category>ゼロショットプロンプティング</category>
-      <category>インコンテキスト学習</category>
-      <category>プロンプトインジェクション</category>
-      <category>ReAct</category>
-      <category>自己整合性</category>
-      <category>検索拡張生成</category>
-      <category>BloombergGPT</category>
-      <category>システムプロンプト</category>
-      <category>プロンプトセキュリティ</category>
-      <category>LLMエージェント</category>
     </item>
     <item>
       <title>AI プロンプトエンジニアリングの進歩</title>
@@ -841,25 +891,6 @@
       <category>FIPS 203</category>
     </item>
     <item>
-      <title>Generative AI in 2023: How It Works, Where It Lands</title>
-      <link>https://sebastienrousseau.com/ja/2023-11-12-seisei-ai-wo-tankyuu-suru/</link>
-      <description>トランスフォーマーモデルの仕組み、2023年のベンチマークモデル、金融サービスにおける生成AIの適用先、および実務者が展開前に回答すべきガバナンスの問いを解説する。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2023-11-12-seisei-ai-wo-tankyuu-suru/</guid>
-      <pubDate>Sun, 12 Nov 2023 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
-      <category>生成AI</category>
-      <category>大規模言語モデル</category>
-      <category>transformer architecture</category>
-      <category>GPT-4</category>
-      <category>金融サービスAI</category>
-      <category>ハルシネーション</category>
-      <category>retrieval-augmented generation</category>
-      <category>AIガバナンス</category>
-      <category>foundation model</category>
-      <category>ファインチューニング</category>
-    </item>
-    <item>
       <title>生成 AI を探求する</title>
       <link>https://sebastienrousseau.com/ja/2023-11-12-seisei-ai-wo-tankyuu-suru/</link>
       <description>生成 AI が画像、テキスト、音声、コードでどのように動作するか、エンタープライズアプリケーションの実用的な検討事項。</description>
@@ -893,25 +924,6 @@
       <category>PQC</category>
       <category>セキュリティ</category>
       <category>mathconst</category>
-    </item>
-    <item>
-      <title>LibMake: Rust Library Scaffold Generator</title>
-      <link>https://sebastienrousseau.com/ja/2023-10-26-libmake-rust-raiburari-no-koodo-jenereta/</link>
-      <description>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2023-10-26-libmake-rust-raiburari-no-koodo-jenereta/</guid>
-      <pubDate>Thu, 26 Oct 2023 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
-      <category>LibMake</category>
-      <category>Rust code generator</category>
-      <category>cargo scaffold</category>
-      <category>Rust library template</category>
-      <category>Tera templating</category>
-      <category>GitHub Actions Rust</category>
-      <category>cargo-audit</category>
-      <category>Rust API Guidelines</category>
-      <category>boilerplate generator</category>
-      <category>Rust CI workflow</category>
     </item>
     <item>
       <title>libmake:反復作業を削減し、高品質な Rust ライブラリを構築するコードジェネレータ</title>
@@ -965,29 +977,6 @@
       <category>アクセシビリティ</category>
     </item>
     <item>
-      <title>Automating ISO 20022 Payment Files Creation with pain001</title>
-      <link>https://sebastienrousseau.com/ja/2023-09-29-pain001-de-iso-20022-junkyo-kessai-fairu-no-jidouka/</link>
-      <description>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2023-09-29-pain001-de-iso-20022-junkyo-kessai-fairu-no-jidouka/</guid>
-      <pubDate>Fri, 29 Sep 2023 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" type="image/webp" length="0"/>
-      <category>pain001</category>
-      <category>ISO 20022</category>
-      <category>pain.001.001.09</category>
-      <category>CustomerCreditTransferInitiation</category>
-      <category>SEPA Credit Transfer</category>
-      <category>CBPR+</category>
-      <category>payment automation</category>
-      <category>XML generation</category>
-      <category>XSD validation</category>
-      <category>GrpHdr</category>
-      <category>PmtInf</category>
-      <category>CdtTrfTxInf</category>
-      <category>CtrlSum</category>
-      <category>SWIFT</category>
-    </item>
-    <item>
       <title>pain001 による ISO 20022 準拠決済ファイル作成の自動化</title>
       <link>https://sebastienrousseau.com/ja/2023-09-29-pain001-de-iso-20022-junkyo-kessai-fairu-no-jidouka/</link>
       <description>pain001 は ISO 20022 pain.001 決済ファイル作成を自動化する Python ライブラリで、MT/MX から構造化メッセージへの世界的な移行のために構築されています。</description>
@@ -1022,25 +1011,6 @@
       <category>フィンテック</category>
     </item>
     <item>
-      <title>The making of the Express Transaction Credits Platform</title>
-      <link>https://sebastienrousseau.com/ja/2018-02-15-express-transaction-credits-puratto-foomu-no-kaihatsu/</link>
-      <description>2018年にEthereum ERC-223上に構築されたEXTCプラットフォームの技術的考察：トークンアーキテクチャ、マルチシグ送金、タイムロック転送、担保付き即時ローンを詳解。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2018-02-15-express-transaction-credits-puratto-foomu-no-kaihatsu/</guid>
-      <pubDate>Thu, 15 Feb 2018 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
-      <category>EXTCプラットフォーム</category>
-      <category>ERC-223</category>
-      <category>Ethereumスマートコントラクト</category>
-      <category>トークンアーキテクチャ</category>
-      <category>マルチシグネチャ</category>
-      <category>タイムロック転送</category>
-      <category>ブロックチェーン決済</category>
-      <category>担保付きローン</category>
-      <category>分散型金融</category>
-      <category>2018年クリプト</category>
-    </item>
-    <item>
       <title>新たな暗号資産を公開し、将来のより高速な決済ソリューションを提供する</title>
       <link>https://sebastienrousseau.com/ja/2018-02-04-arata-na-ankouka-tsuuka-to-koukousoku-kessai-no-shourai/</link>
       <description>新たな暗号資産プロジェクトと、それがより高速な決済ソリューションをどのように可能にするかについて。</description>
@@ -1056,16 +1026,6 @@
       <category>ブロックチェーン</category>
       <category>フィンテック</category>
       <category>国際送金</category>
-    </item>
-    <item>
-      <title>新たな暗号資産と高速決済ソリューションの公開</title>
-      <link>https://sebastienrousseau.com/ja/2018-02-04-arata-na-ankouka-tsuuka-to-koukousoku-kessai-no-shourai/</link>
-      <description>2018年初頭、EXTCプラットフォームはEthereum ERC-223スマートコントラクトを用いた高速な国際送金の可能性を探求しました——後の分散型金融が発展させる先駆的な設計図です。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2018-02-04-arata-na-ankouka-tsuuka-to-koukousoku-kessai-no-shourai/</guid>
-      <pubDate>Sun, 04 Feb 2018 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" type="image/webp" length="0"/>
-      <category>EXTC、ERC-223、Ethereumスマートコントラクト、高速決済、暗号資産、ブロックチェーン決済、ペイメントトークン、分散型金融、ERC-20、国際送金</category>
     </item>
     <item>
       <title>ERC-20:世界を変えたイーサリアム・トークン・インターフェース</title>
@@ -1101,27 +1061,6 @@
       <category>合意</category>
       <category>プルーフ・オブ・ワーク</category>
       <category>P2P ネットワーク</category>
-    </item>
-    <item>
-      <title>Understanding the Technology behind Blockchain</title>
-      <link>https://sebastienrousseau.com/ja/2018-01-09-burokkuchein-no-gijutsu-wo-rikai-suru/</link>
-      <description>ブロックチェーンの技術的解説：暗号ハッシュチェーン、Merkleツリー、分散コンセンサス、そしてEthereumのプログラマブルレイヤーが決済台帳をスマートコントラクトとトークン化資産のプラットフォームへと変えた経緯を紹介します。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2018-01-09-burokkuchein-no-gijutsu-wo-rikai-suru/</guid>
-      <pubDate>Tue, 09 Jan 2018 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" type="image/webp" length="0"/>
-      <category>ブロックチェーン技術</category>
-      <category>cryptographic hash</category>
-      <category>Merkle tree</category>
-      <category>分散コンセンサス</category>
-      <category>proof of work</category>
-      <category>Ethereum</category>
-      <category>スマートコントラクト</category>
-      <category>EVM</category>
-      <category>Solidity</category>
-      <category>ERC-20</category>
-      <category>分散型台帳</category>
-      <category>分散型金融</category>
     </item>
     <item>
       <title>ブロックチェーン:2018 年に重要となるテクノロジー</title>

@@ -4,7 +4,43 @@
   <link href="https://sebastienrousseau.com/hi/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/hi/"/>
   <id>https://sebastienrousseau.com/hi/</id>
-  <updated>2026-05-26T23:13:19+00:00</updated>
+  <updated>2026-05-27T22:09:52+00:00</updated>
+  <entry>
+    <title>भुगतान का AI ऑपरेटिंग सिस्टम: 2026 में धोखाधड़ी, रूटिंग, लचीलापन और अनुपालन</title>
+    <link href="https://sebastienrousseau.com/hi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/"/>
+    <id>https://sebastienrousseau.com/hi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</id>
+    <updated>2026-05-27T06:06:06+00:00</updated>
+    <published>2026-05-27T06:06:06+00:00</published>
+    <summary>2026 में AI भुगतान का ऑपरेटिंग सिस्टम बन रहा है — विश्लेषण से आगे बढ़कर धोखाधड़ी रोकथाम, भुगतान मरम्मत, रूटिंग, तरलता पूर्वानुमान, अनुपालन स्क्रीनिंग और एजेंटिक कॉमर्स नियंत्रण तक।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Magnifica Humanitas: AI पर पहले पोप विश्वपत्र का उद्योग-पठन</title>
+    <link href="https://sebastienrousseau.com/hi/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/"/>
+    <id>https://sebastienrousseau.com/hi/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>25 मई 2026 को पोप लियो XIV ने Magnifica Humanitas जारी किया — AI पर पहला पोप विश्वपत्र। प्रौद्योगिकी उद्योग के भीतर से पढ़ने पर यह आशा का संदेश है।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>स्टेबलकॉइन बनाम टोकनीकृत जमा 2026: बैंकों को वास्तव में किसकी रक्षा करनी है</title>
+    <link href="https://sebastienrousseau.com/hi/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/"/>
+    <id>https://sebastienrousseau.com/hi/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>स्टेबलकॉइन और टोकनीकृत जमा प्रोग्रामेबल निपटान पर अभिसरित हो रहे हैं, परंतु उनके बैलेंस शीट, विधिक, तरलता और भरोसे के मॉडल भिन्न बने हुए हैं।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>प्रोग्रामेबल तरलता 2026: AI, टोकनीकृत जमा और रीयल-टाइम कोषागार</title>
+    <link href="https://sebastienrousseau.com/hi/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/"/>
+    <id>https://sebastienrousseau.com/hi/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</id>
+    <updated>2026-05-25T06:06:06+00:00</updated>
+    <published>2026-05-25T06:06:06+00:00</published>
+    <summary>2026 में प्रोग्रामेबल तरलता AI पूर्वानुमान, टोकनीकृत जमा, रीयल-टाइम रेल, वर्चुअल खातों, स्टेबलकॉइन और TMS को कार्यशील पूंजी हेतु एक ऑर्केस्ट्रेशन परत में जोड़ती है।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>UK Payments Forward Plan 2026: स्टेबलकॉइन, ओपन बैंकिंग, टोकनीकृत जमा व एजेंटिक भुगतान</title>
     <link href="https://sebastienrousseau.com/hi/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/"/>
@@ -240,15 +276,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
-    <link href="https://sebastienrousseau.com/hi/2024-02-12-akande-voice-assistant-vyaktigat-aur-karyakari-sahaayata/"/>
-    <id>https://sebastienrousseau.com/hi/2024-02-12-akande-voice-assistant-vyaktigat-aur-karyakari-sahaayata/</id>
-    <updated>2024-02-12T06:06:06+00:00</updated>
-    <published>2024-02-12T06:06:06+00:00</published>
-    <summary>Àkàndé एक ओपन-सोर्स Python वॉयस असिस्टेंट है जो OpenAI Whisper स्पीच रिकग्निशन, GPT-4 चैट कंप्लीशन और SQLite रिस्पॉन्स कैश को जोड़कर PDF सारांश बनाता है।</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>Akande वॉइस-सहायक: व्यक्तिगत और कार्यकारी-सहायता में क्रांति</title>
     <link href="https://sebastienrousseau.com/hi/2024-02-12-akande-voice-assistant-vyaktigat-aur-karyakari-sahaayata/"/>
     <id>https://sebastienrousseau.com/hi/2024-02-12-akande-voice-assistant-vyaktigat-aur-karyakari-sahaayata/</id>
@@ -273,24 +300,6 @@
     <updated>2024-01-29T06:06:06+00:00</updated>
     <published>2024-01-29T06:06:06+00:00</published>
     <summary>AI-संचालित ऑडियो-विश्लेषण, बोलने वालों की पहचान, भाषाई पहचान और अनुवाद का परिचय।</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
-    <link href="https://sebastienrousseau.com/hi/2024-01-29-ai-aadharit-audio-vishleshan-anuvaad-aur-drishtikon/"/>
-    <id>https://sebastienrousseau.com/hi/2024-01-29-ai-aadharit-audio-vishleshan-anuvaad-aur-drishtikon/</id>
-    <updated>2024-01-29T06:06:06+00:00</updated>
-    <published>2024-01-29T06:06:06+00:00</published>
-    <summary>Audio Analyser, Azure Cognitive Services के speech-to-text न्यूरल मॉडल, Text Analytics NLP और CherryPy का उपयोग करके ऑडियो रिकॉर्डिंग को खोज योग्य ट्रांसक्रिप्ट, सेंटीमेंट स्कोर, कीवर्ड निष्कर्षण और बहुभाषी अनुवाद में बदलता है।</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>AI Prompt Engineering 2024: Techniques That Work</title>
-    <link href="https://sebastienrousseau.com/hi/2024-01-23-ai-prompt-engineering-mein-pragati/"/>
-    <id>https://sebastienrousseau.com/hi/2024-01-23-ai-prompt-engineering-mein-pragati/</id>
-    <updated>2024-01-23T06:06:06+00:00</updated>
-    <published>2024-01-23T06:06:06+00:00</published>
-    <summary>प्रॉम्प्ट इंजीनियरिंग inference समय पर LLM व्यवहार को नियंत्रित करती है। यह लेख zero-shot, few-shot prompting, chain-of-thought reasoning, self-consistency sampling, ReAct tool-use architecture, indirect prompt injection जोखिम और वित्तीय सेवाओं के पैटर्न को कवर करता है।</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -384,15 +393,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Generative AI in 2023: How It Works, Where It Lands</title>
-    <link href="https://sebastienrousseau.com/hi/2023-11-12-generative-ai-ki-padtaal/"/>
-    <id>https://sebastienrousseau.com/hi/2023-11-12-generative-ai-ki-padtaal/</id>
-    <updated>2023-11-12T06:06:06+00:00</updated>
-    <published>2023-11-12T06:06:06+00:00</published>
-    <summary>ट्रांसफॉर्मर मॉडल कैसे काम करते हैं, 2023 के कौन से मॉडल बेंचमार्क बने, वित्तीय सेवाओं में generative AI पहले कहाँ उतरता है, और तैनाती से पहले किन गवर्नेंस प्रश्नों के उत्तर ज़रूरी हैं।</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>जनरेटिव AI की पड़ताल</title>
     <link href="https://sebastienrousseau.com/hi/2023-11-12-generative-ai-ki-padtaal/"/>
     <id>https://sebastienrousseau.com/hi/2023-11-12-generative-ai-ki-padtaal/</id>
@@ -408,15 +408,6 @@
     <updated>2023-11-05T06:06:06+00:00</updated>
     <published>2023-11-05T06:06:06+00:00</published>
     <summary>Rust हेतु एक क्रेट जो क्रिप्टोग्राफी और गणित के लिए सुरक्षित, संगत और परीक्षित स्थिरांकों का संग्रह प्रदान करती है।</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>LibMake: Rust Library Scaffold Generator</title>
-    <link href="https://sebastienrousseau.com/hi/2023-10-26-libmake-rust-libraries-ke-liye-code-generator/"/>
-    <id>https://sebastienrousseau.com/hi/2023-10-26-libmake-rust-libraries-ke-liye-code-generator/</id>
-    <updated>2023-10-26T06:06:06+00:00</updated>
-    <published>2023-10-26T06:06:06+00:00</published>
-    <summary>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -447,15 +438,6 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Automating ISO 20022 Payment Files Creation with pain001</title>
-    <link href="https://sebastienrousseau.com/hi/2023-09-29-pain001-ke-saath-iso-20022-bhugtaan-file-svachalan/"/>
-    <id>https://sebastienrousseau.com/hi/2023-09-29-pain001-ke-saath-iso-20022-bhugtaan-file-svachalan/</id>
-    <updated>2023-09-29T06:06:06+00:00</updated>
-    <published>2023-09-29T06:06:06+00:00</published>
-    <summary>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>pain001 के साथ ISO 20022-अनुपालक भुगतान-फ़ाइलों का स्वचालन</title>
     <link href="https://sebastienrousseau.com/hi/2023-09-29-pain001-ke-saath-iso-20022-bhugtaan-file-svachalan/"/>
     <id>https://sebastienrousseau.com/hi/2023-09-29-pain001-ke-saath-iso-20022-bhugtaan-file-svachalan/</id>
@@ -474,30 +456,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>The making of the Express Transaction Credits Platform</title>
-    <link href="https://sebastienrousseau.com/hi/2018-02-15-express-transaction-credits-platform-ka-nirmaan/"/>
-    <id>https://sebastienrousseau.com/hi/2018-02-15-express-transaction-credits-platform-ka-nirmaan/</id>
-    <updated>2018-02-15T06:06:06+00:00</updated>
-    <published>2018-02-15T06:06:06+00:00</published>
-    <summary>2018 में Ethereum ERC-223 पर EXTC प्लेटफॉर्म के निर्माण का तकनीकी विश्लेषण: टोकन आर्किटेक्चर, मल्टी-सिग वितरण, टाइम-लॉक्ड ट्रांसफर और कोलैटरल-बैक्ड इंस्टेंट लोन।</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
     <title>एक नई क्रिप्टोकरेंसी का अनावरण और भविष्य के तीव्र-भुगतान-समाधान की प्रस्तुति</title>
     <link href="https://sebastienrousseau.com/hi/2018-02-04-nayi-cryptocurrency-aur-teevra-bhugtaan-samaadhaan/"/>
     <id>https://sebastienrousseau.com/hi/2018-02-04-nayi-cryptocurrency-aur-teevra-bhugtaan-samaadhaan/</id>
     <updated>2018-02-04T06:06:06+00:00</updated>
     <published>2018-02-04T06:06:06+00:00</published>
     <summary>एक नई क्रिप्टोकरेंसी का अनावरण जो सीमा-पार भुगतान को तेज़, सस्ता और अधिक सुरक्षित बनाने का लक्ष्य रखती है।</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
-    <link href="https://sebastienrousseau.com/hi/2018-02-04-nayi-cryptocurrency-aur-teevra-bhugtaan-samaadhaan/"/>
-    <id>https://sebastienrousseau.com/hi/2018-02-04-nayi-cryptocurrency-aur-teevra-bhugtaan-samaadhaan/</id>
-    <updated>2018-02-04T06:06:06+00:00</updated>
-    <published>2018-02-04T06:06:06+00:00</published>
-    <summary>2018 की शुरुआत में, EXTC प्लेटफ़ॉर्म ने Ethereum ERC-223 स्मार्ट कॉन्ट्रैक्ट के माध्यम से तेज़ सीमा-पार भुगतान की खोज की — विकेन्द्रीकृत वित्त की नींव का प्रारंभिक खाका।</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -516,15 +480,6 @@
     <updated>2018-01-09T06:06:06+00:00</updated>
     <published>2018-01-09T06:06:06+00:00</published>
     <summary>Blockchain वितरित बही, क्रिप्टोग्राफी और सहमति-तंत्रों को कैसे जोड़ती है — इसकी एक स्पष्ट व्याख्या।</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Understanding the Technology behind Blockchain</title>
-    <link href="https://sebastienrousseau.com/hi/2018-01-09-blockchain-ke-peechhe-ki-takneek-samajhna/"/>
-    <id>https://sebastienrousseau.com/hi/2018-01-09-blockchain-ke-peechhe-ki-takneek-samajhna/</id>
-    <updated>2018-01-09T06:06:06+00:00</updated>
-    <published>2018-01-09T06:06:06+00:00</published>
-    <summary>ब्लॉकचेन कैसे काम करती है: क्रिप्टोग्राफिक हैश चेन, Merkle ट्री, वितरित सहमति, और Ethereum की प्रोग्रामेबल लेयर ने भुगतान लेजर को स्मार्ट कॉन्ट्रैक्ट और टोकनाइज्ड एसेट्स के प्लेटफॉर्म में कैसे बदला।</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

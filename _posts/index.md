@@ -235,6 +235,54 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html" title="AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026">
+<img alt="AI payments operating system diagram showing fraud scoring, multi-rail routing, liquidity forecasting, ISO 20022 data, compliance screening, and exception repair" src="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI Payments · Fraud Prevention · Routing</span>
+<h3><a href="/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html">AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-27">May 27, 2026</time></p>
+<p class="newsroom-excerpt">The 2026 AI operating system for payments wires fraud, routing, resilience, and compliance into a single workflow-speed decisioning layer. The strategic question for banks is design discipline — which AI controls run real time on which workflow — not which point tool to pilot.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html" title="Magnifica Humanitas: An AI-Industry Reading of the First Papal Encyclical on Artificial Intelligence">
+<img alt="Long-exposure photograph of light trails forming a path through darkness toward a luminous horizon, used as the visual key for an AI-ethics reading of the Magnifica Humanitas encyclical" src="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Magnifica Humanitas · Pope Leo XIV · AI Ethics</span>
+<h3><a href="/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html">Magnifica Humanitas: An AI-Industry Reading of the First Papal Encyclical on Artificial Intelligence</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-26">May 26, 2026</time></p>
+<p class="newsroom-excerpt">On 25 May 2026, Pope Leo XIV released Magnifica Humanitas — the first papal encyclical on artificial intelligence. Read from inside the technology industry, not as doctrine but as an ethical framework, it echoes every moral anxiety that accompanied the train, the automobile, nuclear power, and the internet, and lands on hope.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html" title="Stablecoins vs Tokenised Deposits in 2026: What Banks Actually Need to Defend">
+<img alt="Comparison diagram showing stablecoins, tokenised deposits, commercial bank money, reserve assets, wallets, settlement, liquidity, and bank balance sheets" src="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Stablecoins · Tokenised Deposits · Bank Strategy</span>
+<h3><a href="/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html">Stablecoins vs Tokenised Deposits in 2026: What Banks Actually Need to Defend</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-26">May 26, 2026</time></p>
+<p class="newsroom-excerpt">Stablecoins and tokenised deposits converge around programmable settlement but diverge on balance-sheet, legal, liquidity, and trust models. The 2026 strategic question for banks is design discipline — which money model carries which client workflow — and how to defend deposit franchise, settlement role, and regulated brand against private-issuer competition.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html" title="Programmable Liquidity in 2026: AI, Tokenised Deposits, and Real-Time Treasury Orchestration">
+<img alt="Programmable liquidity architecture diagram showing treasury systems, AI forecasting, tokenised deposits, real-time rails, stablecoins, virtual accounts, FX, and collateral mobility" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Programmable Liquidity · AI Treasury · Tokenised Deposits</span>
+<h3><a href="/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html">Programmable Liquidity in 2026: AI, Tokenised Deposits, and Real-Time Treasury Orchestration</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-25">May 25, 2026</time></p>
+<p class="newsroom-excerpt">Programmable liquidity in 2026 connects AI forecasting, tokenised deposits, real-time rails, virtual accounts, stablecoins, and TMS into one orchestration layer for working capital. The strategic question for banks is design discipline: which data, rails, controls, liabilities, and client workflows belong together — and how to evidence the orchestration to clients and supervisors.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html" title="The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments">
 <img alt="UK payments modernisation diagram showing stablecoins, tokenised deposits, open banking, AI agents, FCA regulation, PSR consolidation, and wholesale digital markets" src="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -255,54 +303,6 @@ site_software: "Static Site Generator, Rust"
 <h3><a href="/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html">Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-23">May 23, 2026</time></p>
 <p class="newsroom-excerpt">Agentic payments crossed from concept to live transaction in 2026 — Mastercard and Rabobank executed a Netherlands AI-agent payment via Agent Pay, AP2-style cryptographic mandates are emerging, and HM Treasury says payment-services regulation must adapt. The banking architecture question is consent, identity, liability, and pre-settlement evidence.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html" title="The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture">
-<img alt="UK acid jazz renewal collage for 2026 with Hammond organ, vinyl, Ronnie Scott’s, Acid Jazz Records, jazz-funk festival stages, and London groove culture" src="https://cloudcdn.pro/api/transform?url=/stocks/images/aperture-vintage-SshYpuf607g.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Acid Jazz · UK Jazz · Acid Jazz Records</span>
-<h3><a href="/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html">The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-22">May 22, 2026</time></p>
-<p class="newsroom-excerpt">The UK acid jazz renewal in 2026 spans label releases, live dates by first-wave acts, and festival programming — Acid Jazz Records, Bangs &amp; Talbot, The Brand New Heavies, Galliano, James Taylor Quartet, and Mostly Jazz Funk &amp; Soul Festival are all active at once.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html" title="Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money">
-<img alt="Tokenised deposit banking architecture for 2026 showing commercial bank money, digital wallets, stablecoins, CBDCs, tokenised gilts, and Project Agorá settlement paths" src="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Tokenised Deposits · Tokenized Deposits · Deposit Tokens</span>
-<h3><a href="/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-21">May 21, 2026</time></p>
-<p class="newsroom-excerpt">Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets…</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html" title="Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide">
-<img alt="Cloud-native banking architecture for 2026 showing Kubernetes, VM coexistence, DORA resilience, sovereign cloud, observability, and bank platform engineering" src="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Cloud Native Banking · Kubernetes · DORA</span>
-<h3><a href="/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html">Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-20">May 20, 2026</time></p>
-<p class="newsroom-excerpt">Cloud native banking in 2026 is no longer a debate about whether banks can use cloud. It is a regulated platform-engineering discipline: how to run critical services across containers, virtual…</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-19-global-wholesale-payments-economics-2026/index.html" title="Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability">
-<img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Wholesale Payments · ISO 20022 · RTGS</span>
-<h3><a href="/2026-05-19-global-wholesale-payments-economics-2026/index.html">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-19">May 19, 2026</time></p>
-<p class="newsroom-excerpt">Wholesale payments in 2026 are no longer just bank plumbing. They are part of macroeconomic resilience, trade competitiveness, liquidity efficiency, sanctions compliance, and the strategic contest…</p>
 </div>
 </article>
 

@@ -6,8 +6,94 @@
     <description>Bài viết tiếng Việt: AI ứng dụng, thanh toán ISO 20022, mật mã hậu lượng tử và chuyển đổi thanh toán bán buôn.</description>
     <atom:link href="https://sebastienrousseau.com/vi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>vi-VN</language>
-    <lastBuildDate>Tue, 26 May 2026 23:13:19 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 22:09:52 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Đã đăng ký bản quyền.</copyright>
+    <item>
+      <title>AI là hệ điều hành của thanh toán: Gian lận, định tuyến, phục hồi và tuân thủ năm 2026</title>
+      <link>https://sebastienrousseau.com/vi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</link>
+      <description>AI đang trở thành hệ điều hành của thanh toán năm 2026, dịch chuyển từ phân tích sang phòng chống gian lận, sửa chữa thanh toán, định tuyến, dự báo thanh khoản, sàng lọc tuân thủ và kiểm soát thương mại agentic.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>AI payments 2026</category>
+      <category>gian lận thanh toán</category>
+      <category>định tuyến thanh toán</category>
+      <category>phòng chống gian lận thời gian thực</category>
+      <category>ISO 20022 AI</category>
+      <category>khả năng phục hồi thanh toán</category>
+      <category>phân tích giao dịch</category>
+      <category>dự báo dòng tiền</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>thương mại agentic</category>
+    </item>
+    <item>
+      <title>Magnifica Humanitas: Đọc thông điệp giáo hoàng đầu tiên về AI</title>
+      <link>https://sebastienrousseau.com/vi/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</link>
+      <description>Magnifica Humanitas của Giáo hoàng Lêô XIV: đọc thông điệp đầu tiên về AI dưới góc nhìn kỹ thuật — tàu hỏa, ô tô, hạt nhân, internet và hy vọng.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
+      <category>Magnifica Humanitas</category>
+      <category>Pope Leo XIV</category>
+      <category>thông điệp AI</category>
+      <category>đạo đức trí tuệ nhân tạo</category>
+      <category>đạo đức điện toán lượng tử</category>
+      <category>Rerum Novarum</category>
+      <category>Tháp Babel</category>
+      <category>công nghệ không trung tính</category>
+      <category>chủ nghĩa siêu nhân</category>
+      <category>chủ nghĩa hậu nhân</category>
+      <category>phẩm giá con người</category>
+      <category>mô thức công nghệ</category>
+      <category>tàu hỏa ô tô hạt nhân internet</category>
+      <category>lịch sử hoảng loạn đạo đức công nghệ</category>
+      <category>Lucy chuyển giao tri thức</category>
+      <category>hy vọng AI</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+      <category>Anthropic</category>
+      <category>Sebastien Rousseau</category>
+    </item>
+    <item>
+      <title>Stablecoin vs Tiền gửi tokenized 2026: Ngân hàng cần bảo vệ điều gì</title>
+      <link>https://sebastienrousseau.com/vi/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</link>
+      <description>Stablecoin và tiền gửi tokenized đang hội tụ quanh quyết toán lập trình được, nhưng các mô hình bảng cân đối, pháp lý, thanh khoản và niềm tin vẫn khác biệt.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>stablecoin 2026</category>
+      <category>tiền gửi tokenized</category>
+      <category>tiền gửi ngân hàng</category>
+      <category>GENIUS Act</category>
+      <category>JPM Coin</category>
+      <category>deposit tokens</category>
+      <category>dự trữ stablecoin</category>
+      <category>vốn ngân hàng</category>
+      <category>tiền số</category>
+    </item>
+    <item>
+      <title>Thanh khoản lập trình được 2026: AI, tiền gửi tokenized và điều phối ngân quỹ thời gian thực</title>
+      <link>https://sebastienrousseau.com/vi/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</link>
+      <description>Thanh khoản lập trình được năm 2026 kết nối dự báo AI, tiền gửi tokenized, kênh thanh toán thời gian thực, tài khoản ảo, stablecoin và hệ thống quản lý ngân quỹ thành một lớp điều phối thống nhất cho vốn lưu động.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</guid>
+      <pubDate>Mon, 25 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>thanh khoản lập trình được 2026</category>
+      <category>điều phối ngân quỹ</category>
+      <category>AI ngân quỹ</category>
+      <category>tiền gửi tokenized</category>
+      <category>thanh khoản thời gian thực</category>
+      <category>stablecoin ngân quỹ</category>
+      <category>thanh toán đa kênh</category>
+      <category>tài khoản ảo</category>
+      <category>ngân hàng giao dịch</category>
+      <category>di động tài sản thế chấp</category>
+    </item>
     <item>
       <title>UK Payments Forward Plan 2026: Stablecoin, ngân hàng mở, tiền gửi tokenized và thanh toán tác tử</title>
       <link>https://sebastienrousseau.com/vi/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>
@@ -587,27 +673,6 @@
       <category>mã nguồn mở</category>
     </item>
     <item>
-      <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
-      <link>https://sebastienrousseau.com/vi/2024-02-12-akande-tro-ly-giong-noi-cach-mang-ho-tro-ca-nhan-va-dieu-hanh/</link>
-      <description>Àkàndé là trợ lý giọng nói Python mã nguồn mở kết hợp nhận dạng giọng nói OpenAI Whisper, hoàn thành hội thoại GPT-4 và bộ nhớ đệm SQLite cục bộ — tạo bản tóm tắt PDF từ lịch sử hội thoại và lưu toàn bộ dữ liệu cục bộ.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2024-02-12-akande-tro-ly-giong-noi-cach-mang-ho-tro-ca-nhan-va-dieu-hanh/</guid>
-      <pubDate>Mon, 12 Feb 2024 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" type="image/webp" length="0"/>
-      <category>Àkàndé</category>
-      <category>OpenAI GPT-4</category>
-      <category>Whisper STT</category>
-      <category>bộ nhớ đệm SQLite</category>
-      <category>fpdf2</category>
-      <category>trợ lý giọng nói Python</category>
-      <category>API hoàn thành hội thoại</category>
-      <category>tạo bản tóm tắt PDF</category>
-      <category>bộ nhớ đệm SHA-256</category>
-      <category>chuyển văn bản thành giọng nói</category>
-      <category>AI trợ lý điều hành</category>
-      <category>mã nguồn mở</category>
-    </item>
-    <item>
       <title>Cách mạng hoá quảng cáo: cách AI định hình tương lai</title>
       <link>https://sebastienrousseau.com/vi/2024-02-08-cach-mang-quang-cao-ai-dinh-hinh-tuong-lai/</link>
       <description>AI biến đổi từng giai đoạn của quảng cáo — sáng tạo, nhắm mục tiêu, tối ưu hoá, đo lường. Tổng quan các xu hướng và rủi ro cho marketers năm 2024.</description>
@@ -623,27 +688,6 @@
       <category>nhắm mục tiêu</category>
       <category>đo lường</category>
       <category>marketing tự động</category>
-    </item>
-    <item>
-      <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
-      <link>https://sebastienrousseau.com/vi/2024-01-29-phan-tich-am-thanh-dich-va-hieu-biet-bang-ai/</link>
-      <description>Audio Analyser sử dụng các mô hình nhận dạng giọng nói thần kinh của Azure Cognitive Services, Text Analytics NLP và CherryPy để chuyển đổi bản ghi âm thành bản chép lời có thể tìm kiếm với điểm cảm xúc, trích xuất từ khóa và dịch thuật đa ngôn ngữ.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2024-01-29-phan-tich-am-thanh-dich-va-hieu-biet-bang-ai/</guid>
-      <pubDate>Mon, 29 Jan 2024 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" type="image/webp" length="0"/>
-      <category>Azure Cognitive Services</category>
-      <category>nhận dạng giọng nói</category>
-      <category>mô hình âm học thần kinh</category>
-      <category>Azure Text Analytics</category>
-      <category>xử lý ngôn ngữ tự nhiên</category>
-      <category>phân tích cảm xúc</category>
-      <category>CherryPy</category>
-      <category>API phiên âm hàng loạt</category>
-      <category>ASR đa ngôn ngữ</category>
-      <category>Azure Translator</category>
-      <category>phiên âm âm thanh</category>
-      <category>xử lý âm thanh Python</category>
     </item>
     <item>
       <title>Phân tích âm thanh, dịch và hiểu biết bằng AI</title>
@@ -662,27 +706,6 @@
       <category>phân tích</category>
       <category>ngân hàng</category>
       <category>dịch vụ khách hàng</category>
-    </item>
-    <item>
-      <title>AI Prompt Engineering 2024: Techniques That Work</title>
-      <link>https://sebastienrousseau.com/vi/2024-01-23-tien-bo-trong-ky-thuat-prompt-ai/</link>
-      <description>Kỹ thuật prompt kiểm soát hành vi LLM tại thời điểm suy luận. Bài viết đề cập zero-shot, few-shot, lý luận chuỗi suy nghĩ, lấy mẫu tự nhất quán, kiến trúc ReAct, rủi ro tiêm nhiễm prompt và các mẫu ứng dụng từ dịch vụ tài chính.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2024-01-23-tien-bo-trong-ky-thuat-prompt-ai/</guid>
-      <pubDate>Tue, 23 Jan 2024 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" type="image/webp" length="0"/>
-      <category>nhắc nhở chuỗi suy nghĩ</category>
-      <category>học few-shot</category>
-      <category>nhắc nhở zero-shot</category>
-      <category>học trong ngữ cảnh</category>
-      <category>tiêm nhiễm prompt</category>
-      <category>ReAct</category>
-      <category>tự nhất quán</category>
-      <category>tạo sinh tăng cường truy xuất</category>
-      <category>BloombergGPT</category>
-      <category>prompt hệ thống</category>
-      <category>bảo mật prompt</category>
-      <category>tác nhân LLM</category>
     </item>
     <item>
       <title>Tiến bộ trong kỹ thuật prompt AI</title>
@@ -858,25 +881,6 @@
       <category>ML-KEM</category>
     </item>
     <item>
-      <title>Generative AI in 2023: How It Works, Where It Lands</title>
-      <link>https://sebastienrousseau.com/vi/2023-11-12-kham-pha-tri-tue-nhan-tao-tao-sinh/</link>
-      <description>Cách các mô hình transformer hoạt động, mô hình nào thiết lập chuẩn mực năm 2023, AI tổng quát triển khai đầu tiên ở đâu trong dịch vụ tài chính và các câu hỏi quản trị cần giải đáp.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2023-11-12-kham-pha-tri-tue-nhan-tao-tao-sinh/</guid>
-      <pubDate>Sun, 12 Nov 2023 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
-      <category>AI tổng quát</category>
-      <category>mô hình ngôn ngữ lớn</category>
-      <category>kiến trúc transformer</category>
-      <category>GPT-4</category>
-      <category>AI trong dịch vụ tài chính</category>
-      <category>ảo giác</category>
-      <category>retrieval-augmented generation</category>
-      <category>quản trị AI</category>
-      <category>foundation model</category>
-      <category>tinh chỉnh</category>
-    </item>
-    <item>
       <title>Khám phá trí tuệ nhân tạo tạo sinh</title>
       <link>https://sebastienrousseau.com/vi/2023-11-12-kham-pha-tri-tue-nhan-tao-tao-sinh/</link>
       <description>AI tạo sinh giờ đây tạo ra văn bản, hình ảnh, mã và âm thanh ở cấp độ con người. Tổng quan các mô hình, kiến trúc và ứng dụng cho doanh nghiệp.</description>
@@ -909,25 +913,6 @@
       <category>độ chính xác cao</category>
       <category>tài chính</category>
       <category>bảo mật</category>
-    </item>
-    <item>
-      <title>LibMake: Rust Library Scaffold Generator</title>
-      <link>https://sebastienrousseau.com/vi/2023-10-26-libmake-bo-sinh-ma-cho-thu-vien-rust/</link>
-      <description>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2023-10-26-libmake-bo-sinh-ma-cho-thu-vien-rust/</guid>
-      <pubDate>Thu, 26 Oct 2023 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
-      <category>LibMake</category>
-      <category>Rust code generator</category>
-      <category>cargo scaffold</category>
-      <category>Rust library template</category>
-      <category>Tera templating</category>
-      <category>GitHub Actions Rust</category>
-      <category>cargo-audit</category>
-      <category>Rust API Guidelines</category>
-      <category>boilerplate generator</category>
-      <category>Rust CI workflow</category>
     </item>
     <item>
       <title>libmake: bộ sinh mã giảm tác vụ lặp lại và xây dựng thư viện Rust chất lượng cao</title>
@@ -983,29 +968,6 @@
       <category>mã nguồn mở</category>
     </item>
     <item>
-      <title>Automating ISO 20022 Payment Files Creation with pain001</title>
-      <link>https://sebastienrousseau.com/vi/2023-09-29-tu-dong-hoa-tep-thanh-toan-iso-20022-voi-pain001/</link>
-      <description>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2023-09-29-tu-dong-hoa-tep-thanh-toan-iso-20022-voi-pain001/</guid>
-      <pubDate>Fri, 29 Sep 2023 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" type="image/webp" length="0"/>
-      <category>pain001</category>
-      <category>ISO 20022</category>
-      <category>pain.001.001.09</category>
-      <category>CustomerCreditTransferInitiation</category>
-      <category>SEPA Credit Transfer</category>
-      <category>CBPR+</category>
-      <category>payment automation</category>
-      <category>XML generation</category>
-      <category>XSD validation</category>
-      <category>GrpHdr</category>
-      <category>PmtInf</category>
-      <category>CdtTrfTxInf</category>
-      <category>CtrlSum</category>
-      <category>SWIFT</category>
-    </item>
-    <item>
       <title>Tự động hoá tạo tệp thanh toán tuân thủ ISO 20022 với pain001</title>
       <link>https://sebastienrousseau.com/vi/2023-09-29-tu-dong-hoa-tep-thanh-toan-iso-20022-voi-pain001/</link>
       <description>pain001 — thư viện Python tự động hoá việc tạo tệp thanh toán ISO 20022 pain.001 từ CSV hoặc SQLite, hỗ trợ chuyển đổi MT/MX trên SWIFT, SEPA và các sơ đồ lớn.</description>
@@ -1022,25 +984,6 @@
       <category>mã nguồn mở</category>
       <category>tự động hoá</category>
       <category>MT/MX</category>
-    </item>
-    <item>
-      <title>The making of the Express Transaction Credits Platform</title>
-      <link>https://sebastienrousseau.com/vi/2018-02-15-xay-dung-nen-tang-express-transaction-credits/</link>
-      <description>Phân tích kỹ thuật chuyên sâu về cách nền tảng EXTC được xây dựng trên Ethereum ERC-223 năm 2018: kiến trúc token, giải ngân đa chữ ký, chuyển khoản khóa thời gian và khoản vay tức thì có tài sản đảm bảo.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2018-02-15-xay-dung-nen-tang-express-transaction-credits/</guid>
-      <pubDate>Thu, 15 Feb 2018 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
-      <category>EXTC platform</category>
-      <category>ERC-223</category>
-      <category>hợp đồng thông minh Ethereum</category>
-      <category>kiến trúc token</category>
-      <category>đa chữ ký</category>
-      <category>chuyển khoản khóa thời gian</category>
-      <category>thanh toán blockchain</category>
-      <category>khoản vay có tài sản đảm bảo</category>
-      <category>tài chính phi tập trung</category>
-      <category>crypto 2018</category>
     </item>
     <item>
       <title>Xây dựng nền tảng Express Transaction Credits</title>
@@ -1075,25 +1018,6 @@
       <category>Layer 2</category>
     </item>
     <item>
-      <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
-      <link>https://sebastienrousseau.com/vi/2018-02-04-tien-ma-hoa-moi-va-giai-phap-thanh-toan-nhanh-hon/</link>
-      <description>Đầu năm 2018, nền tảng EXTC khám phá thanh toán xuyên biên giới nhanh hơn qua hợp đồng thông minh Ethereum ERC-223 — một bản thiết kế sơ khai cho những gì tài chính phi tập trung sau này xây dựng.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2018-02-04-tien-ma-hoa-moi-va-giai-phap-thanh-toan-nhanh-hon/</guid>
-      <pubDate>Sun, 04 Feb 2018 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" type="image/webp" length="0"/>
-      <category>EXTC</category>
-      <category>ERC-223</category>
-      <category>hợp đồng thông minh Ethereum</category>
-      <category>thanh toán nhanh</category>
-      <category>tiền mã hóa</category>
-      <category>thanh toán blockchain</category>
-      <category>token thanh toán</category>
-      <category>tài chính phi tập trung</category>
-      <category>ERC-20</category>
-      <category>thanh toán xuyên biên giới</category>
-    </item>
-    <item>
       <title>Tiêu chuẩn token ERC-20</title>
       <link>https://sebastienrousseau.com/vi/2018-01-24-tieu-chuan-token-erc-20/</link>
       <description>ERC-20 đã chuẩn hoá việc tạo token trên Ethereum, mở khoá hàng nghìn dự án và nền tảng cho stablecoin, DeFi và token hoá tài sản thực.</description>
@@ -1126,27 +1050,6 @@
       <category>sổ cái phân tán</category>
       <category>mật mã</category>
       <category>tài chính</category>
-    </item>
-    <item>
-      <title>Understanding the Technology behind Blockchain</title>
-      <link>https://sebastienrousseau.com/vi/2018-01-09-hieu-ve-cong-nghe-dang-sau-blockchain/</link>
-      <description>Giới thiệu kỹ thuật về cách blockchain hoạt động: chuỗi hash mật mã, cây Merkle, đồng thuận phân tán và cách lớp lập trình của Ethereum biến sổ cái thanh toán thành nền tảng cho hợp đồng thông minh và tài sản token hóa.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2018-01-09-hieu-ve-cong-nghe-dang-sau-blockchain/</guid>
-      <pubDate>Tue, 09 Jan 2018 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" type="image/webp" length="0"/>
-      <category>công nghệ blockchain</category>
-      <category>hash mật mã</category>
-      <category>cây Merkle</category>
-      <category>đồng thuận phân tán</category>
-      <category>proof of work</category>
-      <category>Ethereum</category>
-      <category>hợp đồng thông minh</category>
-      <category>EVM</category>
-      <category>Solidity</category>
-      <category>ERC-20</category>
-      <category>sổ cái phân tán</category>
-      <category>tài chính phi tập trung</category>
     </item>
     <item>
       <title>Blockchain: công nghệ quan trọng trong năm 2018</title>
