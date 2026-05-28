@@ -1,11 +1,11 @@
 {
-  "title": "Reconocimiento de voz em tempo real rápido em macOS: OpenAI Whisper",
-  "description": "Cómo OpenAI Whisper e Metal Performance Shaders transforman o reconhecimento de voz em tempo real em macOS, com velocidade e precisión inigualadas.",
-  "locale": "pt_BR",
-  "subtitle": "Liberar a potencia de a transcripción IA e GPU em seu Mac",
-  "language": "pt-BR",
-  "date": "March 12, 2024",
-  "keywords": "OpenAI Whisper, Metal Performance Shaders, reconhecimento de voz macOS, transcripción em tempo real, detección de atividade vocal, aceleración GPU, integração Python, speech-to-text macOS, detección de voz eficiente em energía, Apple silicon",
   "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
-  "banner_alt": "Banner para o reconhecimento de voz automático em tempo real (ASR)"
+  "language": "pt-BR",
+  "locale": "pt_BR",
+  "title": "Reconocimiento de voz em tempo real rápido em macOS: OpenAI Whisper",
+  "keywords": "OpenAI Whisper, Metal Performance Shaders, reconhecimento de voz macOS, transcripción em tempo real, detección de atividade vocal, aceleración GPU, integração Python, speech-to-text macOS, detección de voz eficiente em energía, Apple silicon",
+  "banner_alt": "Banner para o reconhecimento de voz automático em tempo real (ASR)",
+  "date": "March 12, 2024",
+  "description": "Cómo OpenAI Whisper e Metal Performance Shaders transforman o reconhecimento de voz em tempo real em macOS, com velocidade e precisión inigualadas.",
+  "subtitle": "Liberar a potencia de a transcripción IA e GPU em seu Mac"
 }

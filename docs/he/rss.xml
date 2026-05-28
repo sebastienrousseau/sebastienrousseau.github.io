@@ -6,8 +6,30 @@
     <description>מאמרים בעברית: AI יישומי, תשלומי ISO 20022, קריפטוגרפיה פוסט-קוונטית, וטרנספורמציה של תשלומי סיטונאות.</description>
     <atom:link href="https://sebastienrousseau.com/he/rss.xml" rel="self" type="application/rss+xml"/>
     <language>he-IL</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 11:26:24 +0000</lastBuildDate>
     <copyright>© זכויות יוצרים 2007 - 2026 - Sebastien Rousseau. כל הזכויות שמורות.</copyright>
+    <item>
+      <title>מדד ה-AI הסוכני לבנקים ב-2026: אוטונומיה, ממשל, ביקורת והשפעה עסקית</title>
+      <link>https://sebastienrousseau.com/he/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</link>
+      <description>מסגרת בסגנון מדד למדידת מוכנות AI סוכני בבנקים — סולם אוטונומיה, ממשל, ניתנות לביקורת, אמינות, בקרות וערך לכל החלטה.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</guid>
+      <pubDate>Wed, 03 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/mohammad-alizade-4wzRuAb-KWs.webp" type="image/webp" length="0"/>
+      <category>AI סוכני בבנקאות 2026</category>
+      <category>סוכני AI בבנקים</category>
+      <category>ממשל AI בשירותים פיננסיים</category>
+      <category>תהליכי בנקאות אוטונומיים</category>
+      <category>ניהול סיכון מודל</category>
+      <category>ניתנות לביקורת של AI</category>
+      <category>סולם אוטונומיה</category>
+      <category>מישור בקרת סוכנים</category>
+      <category>Stanford HAI</category>
+      <category>Cambridge CCAF</category>
+      <category>EU AI Act</category>
+      <category>NIST AI RMF</category>
+      <category>ISO 42001</category>
+    </item>
     <item>
       <title>DORA, חוק הבינה המלאכותית וריבונות נתונים: ערימת הציות של 2026 לבנקים</title>
       <link>https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

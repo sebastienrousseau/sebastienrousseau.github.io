@@ -6,8 +6,23 @@
     <description>हिन्दी लेख: व्यावहारिक AI, ISO 20022 भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतान का रूपांतरण।</description>
     <atom:link href="https://sebastienrousseau.com/hi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>hi-IN</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 11:26:24 +0000</lastBuildDate>
     <copyright>© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।</copyright>
+    <item>
+      <title>बैंकों के लिए एजेंटिक AI सूचकांक 2026: स्वायत्तता, शासन, लेखापरीक्षा-योग्यता और व्यावसायिक प्रभाव</title>
+      <link>https://sebastienrousseau.com/hi/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</link>
+      <description>बैंकों में एजेंटिक AI तत्परता मापने का सूचकांक-शैली ढाँचा — स्वायत्तता, शासन, लेखापरीक्षा-योग्यता, विश्वसनीयता, नियंत्रण और व्यावसायिक मूल्य को कवर करता है।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</guid>
+      <pubDate>Thu, 28 May 2026 11:26:24 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/mohammad-alizade-4wzRuAb-KWs.webp" type="image/webp" length="0"/>
+      <category>एजेंटिक AI बैंकिंग 2026</category>
+      <category>बैंकों में AI एजेंट</category>
+      <category>वित्तीय सेवा AI शासन</category>
+      <category>स्वायत्त बैंकिंग कार्यप्रवाह</category>
+      <category>मॉडल जोखिम प्रबंधन</category>
+      <category>AI लेखापरीक्षा-योग्यता</category>
+    </item>
     <item>
       <title>DORA, EU AI अधिनियम और डेटा संप्रभुता: बैंकों का 2026 अनुपालन स्टैक</title>
       <link>https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

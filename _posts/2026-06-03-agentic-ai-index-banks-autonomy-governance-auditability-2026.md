@@ -3,10 +3,10 @@
 # Front Matter (YAML)
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "The Agentic AI Index for Banks 2026 index diagram for banks and financial institutions in 2026"
-banner_height: "571"
-banner_width: "1425"
-banner: "https://cloudcdn.pro/stock/images/agentic-ai-index-banks-2026-banner.webp"
+banner_alt: "Abstract photograph of layered architectural surfaces and reflected light, used as the visual key for the 2026 Agentic AI Index for Banks — measuring autonomy, governance, auditability, reliability, controls, and business value"
+banner_height: "1597"
+banner_width: "2584"
+banner: "https://cloudcdn.pro/stocks/images/mohammad-alizade-4wzRuAb-KWs.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -42,6 +42,7 @@ seo_title: "The Agentic AI Index for Banks 2026"
 short_name: "sebastienrousseau"
 subtitle: "Agentic AI has moved from chat interfaces to bounded workflows; banks now need to measure autonomy, control, evidence, and value per decision."
 tags: "agentic AI, banking AI, AI governance, autonomous workflows, model risk, auditability"
+excerpt: "An index-style framework for measuring agentic AI readiness in banks: autonomy ladders, governance gates, auditability, reliability, controls, and per-decision business value — moving the conversation from chat interfaces to bounded workflows with evidence."
 theme-color: "0, 83, 191"
 title: "The Agentic AI Index for Banks in 2026: Measuring Autonomy, Governance, Auditability, and Business Impact"
 url: "https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026"
@@ -101,6 +102,23 @@ site_software: "Static Site Generator, Rust"
 ---
 
 # The Agentic AI Index for Banks in 2026: Measuring Autonomy, Governance, Auditability, and Business Impact
+
+
+
+
+<!-- lead-start -->
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> An index-style framework for measuring agentic AI readiness in banks, covering autonomy, governance, auditability, reliability, controls, and business value.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Why 2026 Is the Year This Index Matters.</strong> The Stanford AI Index is useful because it treats a fast-moving technology field as something that can be measured: research output, technical performance, responsible deployment, economics, sector adoption, policy,…</li>
+  <li><strong>Current Signals to Track.</strong> The first index dimension is the autonomy ladder.</li>
+  <li><strong>The Autonomy Ladder.</strong> The first index dimension is the autonomy ladder.</li>
+  <li><strong>The Agent Control Plane.</strong> The agent control plane is the missing architecture layer.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</a>, <a href="https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</a>, <a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a>.</p>
+</aside>
+<!-- lead-end -->
 
 Agentic AI in banking is no longer a future concept. It is becoming a workflow layer across software engineering, operations, customer support, fraud, compliance, treasury, and product development. The challenge for 2026 is not adoption; it is measuring whether autonomous systems can act within enforceable limits, produce evidence, and create value without creating new operational risk.
 
@@ -201,6 +219,14 @@ Boards should see adoption by autonomy tier, controls coverage, incident trends,
 - Cambridge Centre for Alternative Finance, (2026). [2026 Global AI in Financial Services Report ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 Global AI in Financial Services Report").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, payments infrastructure, tokenised money, ISO 20022, post-quantum security, cloud-native financial services, and regulated digital markets.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-06-03">2026-06-03</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" class="related-media" aria-label="DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks" tabindex="-1"><img alt="Compliance stack diagram showing DORA resilience, EU AI Act transparency, data sovereignty, cloud concentration risk, audit logs, model governance, and third-party providers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</a></h3><p><time datetime="2026-05-28">2026-05-28</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026" class="related-media" aria-label="Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It" tabindex="-1"><img alt="Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows" src="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</a></h3><p><time datetime="2026-05-17">2026-05-17</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html" class="related-media" aria-label="State of AI and Quantum Computing in Banking: A 2023 Review" tabindex="-1"><img alt="State of AI and Quantum Computing in Banking: A 2023 Review" src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a></h3><p><time datetime="2023-12-18">2023-12-18</time></p></footer></article>
+</div>
+</aside>
 <!-- enrich-end -->

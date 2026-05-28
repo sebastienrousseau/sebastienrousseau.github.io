@@ -6,8 +6,23 @@
     <description>Articles en français : IA appliquée, paiements ISO 20022, cryptographie post-quantique et transformation des paiements wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/fr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fr-FR</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 11:26:24 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Tous droits réservés.</copyright>
+    <item>
+      <title>L&apos;Indice 2026 d&apos;IA agentique pour les banques : mesurer autonomie, gouvernance, auditabilité et impact métier</title>
+      <link>https://sebastienrousseau.com/fr/2026-06-03-agentique-ai-index-banques-autonomy-governance-auditability-2026/</link>
+      <description>Un cadre de type indice pour mesurer la préparation à l&apos;IA agentique dans les banques : autonomie, gouvernance, auditabilité, fiabilité, contrôles et valeur métier.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-06-03-agentique-ai-index-banques-autonomy-governance-auditability-2026/</guid>
+      <pubDate>Thu, 28 May 2026 11:26:24 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/mohammad-alizade-4wzRuAb-KWs.webp" type="image/webp" length="0"/>
+      <category>IA agentique banques 2026</category>
+      <category>agents IA banques</category>
+      <category>gouvernance IA services financiers</category>
+      <category>workflows bancaires autonomes</category>
+      <category>risque modèle</category>
+      <category>auditabilité IA</category>
+    </item>
     <item>
       <title>DORA, EU AI Act et souveraineté des données : la pile de conformité 2026 pour les banques</title>
       <link>https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

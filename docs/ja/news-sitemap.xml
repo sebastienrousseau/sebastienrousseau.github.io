@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ja/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ja-JP</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T11:26:24+00:00</news:publication_date>
+    <news:title>2026 年の銀行向けエージェント型AI指数: 自律性、ガバナンス、監査可能性、ビジネスインパクトの測定</news:title>
+    <news:keywords>エージェント型AI 銀行 2026, AIエージェント 銀行, AIガバナンス 金融サービス, 自律型バンキングワークフロー, モデルリスク管理, AI監査可能性</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

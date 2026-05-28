@@ -1,11 +1,11 @@
 {
-  "description": "ERC-20 jẹ iru token tó wọ́pọ̀ jù lọ lórí blockchain Ethereum, tí a tún mọ sí adehun dijital smart contract tó yí ọ̀nà ìdáná ohun-ìní dijital padà.",
-  "title": "ERC-20: The Ethereum Token Interface That Changed the World",
-  "date": "Jan 24, 2018",
-  "locale": "yo_NG",
-  "keywords": "ethereum, erc20, eip, tokens, adehun, blockchain, owó fídíò, smart-token, solidity",
-  "subtitle": "Àwọn token ERC-20, smart contract Ethereum àti ìṣọ̀kan àwọn ohun-ìní dijital.",
-  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
   "language": "yo-NG",
-  "banner_alt": "Kọ̀mpútà laptop tí a pa tí ó wà lórí tábìlì igi brown"
+  "subtitle": "Àwọn token ERC-20, smart contract Ethereum àti ìṣọ̀kan àwọn ohun-ìní dijital.",
+  "date": "Jan 24, 2018",
+  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
+  "locale": "yo_NG",
+  "banner_alt": "Kọ̀mpútà laptop tí a pa tí ó wà lórí tábìlì igi brown",
+  "keywords": "ethereum, erc20, eip, tokens, adehun, blockchain, owó fídíò, smart-token, solidity",
+  "title": "ERC-20: The Ethereum Token Interface That Changed the World",
+  "description": "ERC-20 jẹ iru token tó wọ́pọ̀ jù lọ lórí blockchain Ethereum, tí a tún mọ sí adehun dijital smart contract tó yí ọ̀nà ìdáná ohun-ìní dijital padà."
 }

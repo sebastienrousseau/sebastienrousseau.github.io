@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/de/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>de-DE</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T11:26:24+00:00</news:publication_date>
+    <news:title>Der Agentic AI Index für Banken 2026: Autonomie, Governance, Auditierbarkeit und Geschäftswirkung messen</news:title>
+    <news:keywords>agentische KI Banken 2026, KI-Agenten Banken, KI-Governance Finanzdienstleistungen, autonome Banking-Workflows, Modellrisikomanagement, KI-Auditierbarkeit</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/de/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>de-DE</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T06:26:19+00:00</news:publication_date>
+    <news:publication_date>2026-05-28T11:26:24+00:00</news:publication_date>
     <news:title>DORA, EU-KI-Verordnung und Datensouveränität: Der Compliance-Stack 2026 für Banken</news:title>
     <news:keywords>DORA 2026, EU-KI-Verordnung 2026, Datensouveränität Banken, operationelle Resilienz, Cloud-Konzentrationsrisiko, KI-Compliance Finanzdienstleistungen, Hochrisiko-KI</news:keywords>
   </news:news>
@@ -20,7 +32,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>de-DE</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T06:26:19+00:00</news:publication_date>
+    <news:publication_date>2026-05-28T11:26:24+00:00</news:publication_date>
     <news:title>KI als Betriebssystem des Zahlungsverkehrs: Betrug, Routing, Resilienz und Compliance 2026</news:title>
     <news:keywords>KI-Zahlungsverkehr 2026, Zahlungsbetrug, Payment Routing, Echtzeit-Betrugsabwehr, ISO 20022 KI, Resilienz im Zahlungsverkehr, Transaktionsanalyse, Liquiditätsprognose</news:keywords>
   </news:news>

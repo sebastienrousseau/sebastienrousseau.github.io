@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ru/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T11:26:24+00:00</news:publication_date>
+    <news:title>Индекс агентного ИИ для банков 2026: автономность, управление, аудируемость, эффект</news:title>
+    <news:keywords>агентный ИИ банки 2026, ИИ-агенты в банках, управление ИИ в финансах, автономные банковские процессы, модельный риск, аудируемость ИИ</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

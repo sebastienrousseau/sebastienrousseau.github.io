@@ -6,8 +6,23 @@
     <description>日本語の記事:応用AI、ISO 20022 決済、ポスト量子暗号、ホールセール決済の構造変革。</description>
     <atom:link href="https://sebastienrousseau.com/ja/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ja-JP</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 11:26:24 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>2026 年の銀行向けエージェント型AI指数: 自律性、ガバナンス、監査可能性、ビジネスインパクトの測定</title>
+      <link>https://sebastienrousseau.com/ja/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</link>
+      <description>銀行におけるエージェント型AIの準備態勢を測定する指数型フレームワーク。自律性、ガバナンス、監査可能性、信頼性、統制、ビジネス価値までを対象とします。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</guid>
+      <pubDate>Thu, 28 May 2026 11:26:24 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/mohammad-alizade-4wzRuAb-KWs.webp" type="image/webp" length="0"/>
+      <category>エージェント型AI 銀行 2026</category>
+      <category>AIエージェント 銀行</category>
+      <category>AIガバナンス 金融サービス</category>
+      <category>自律型バンキングワークフロー</category>
+      <category>モデルリスク管理</category>
+      <category>AI監査可能性</category>
+    </item>
     <item>
       <title>DORA、EU AI Act、データ主権:2026 年銀行向けコンプライアンス・スタック</title>
       <link>https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

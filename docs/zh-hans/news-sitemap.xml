@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T11:26:24+00:00</news:publication_date>
+    <news:title>2026 银行智能体AI指数：衡量自主性、治理、可审计性与业务影响</news:title>
+    <news:keywords>智能体AI 银行 2026, AI 代理 银行, 金融服务 AI 治理, 自主银行工作流, 模型风险管理, AI 可审计性</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

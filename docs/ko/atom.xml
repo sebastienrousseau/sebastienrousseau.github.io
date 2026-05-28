@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/ko/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ko/"/>
   <id>https://sebastienrousseau.com/ko/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-28T11:26:24+00:00</updated>
+  <entry>
+    <title>은행을 위한 에이전트형 AI 지수 2026</title>
+    <link href="https://sebastienrousseau.com/ko/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</id>
+    <updated>2026-05-28T11:26:24+00:00</updated>
+    <published>2026-05-28T11:26:24+00:00</published>
+    <summary>은행의 에이전트형 AI 준비도를 측정하는 지수 형식의 프레임워크로, 자율성·거버넌스·감사 가능성·신뢰성·통제·비즈니스 가치를 다룹니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI 법, 데이터 주권: 2026년 은행을 위한 컴플라이언스 스택</title>
     <link href="https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

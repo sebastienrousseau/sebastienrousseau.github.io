@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="he-IL" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Wed, 03 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Wed, 03 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>מדד ה-AI הסוכני לבנקים ב-2026: אוטונומיה, ממשל, ביקורת והשפעה עסקית — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="מסגרת בסגנון מדד למדידת מוכנות AI סוכני בבנקים — סולם אוטונומיה, ממשל, ניתנות לביקורת, אמינות, בקרות וערך לכל החלטה.">
+<meta name="keywords" content="AI סוכני בבנקאות 2026, סוכני AI בבנקים, ממשל AI בשירותים פיננסיים, תהליכי בנקאות אוטונומיים, ניהול סיכון מודל, ניתנות לביקורת של AI, סולם אוטונומיה, מישור בקרת סוכנים, Stanford HAI, Cambridge CCAF, EU AI Act, NIST AI RMF, ISO 42001">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="The Agentic AI Index for Banks 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-2VV1q59CL2zhj8ra+VK7BLjGYP7tYuiSh/uq6Dlr1P4=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-BUm7870PT/W/MUcFBN3rsW8aP/W+7II3+6w+4EvtuYQ=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-ZKbkQGy1lPZcwN0WwLtvqNDiqDh4oi+Ta4IWWFJeFDs=' 'sha256-p8ARTlv3uOfMJ2bYCNpLNvI7NNUjm3MhM7zKbRbXlMY=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/he/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="ערוץ Atom" href="/he/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="מדד ה-AI הסוכני לבנקים ב-2026: אוטונומיה, ממשל, ביקורת והשפעה עסקית — Sebastien Rousseau">
+<meta property="og:description" content="מסגרת בסגנון מדד למדידת מוכנות AI סוכני בבנקים — סולם אוטונומיה, ממשל, ניתנות לביקורת, אמינות, בקרות וערך לכל החלטה.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/he/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/mohammad-alizade-4wzRuAb-KWs.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="he_IL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="מדד ה-AI הסוכני לבנקים ב-2026: אוטונומיה, ממשל, ביקורת והשפעה עסקית — Sebastien Rousseau">
+<meta name="twitter:description" content="מסגרת בסגנון מדד למדידת מוכנות AI סוכני בבנקים — סולם אוטונומיה, ממשל, ניתנות לביקורת, אמינות, בקרות וערך לכל החלטה.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/mohammad-alizade-4wzRuAb-KWs.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/he/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-03-agentique-ai-index-banques-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">דלג לתוכן הראשי</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="החלף ניווט" />
+      <div class="wrap">
+        <a class="ap-brand" href="/he/index.html" aria-label="דף הבית של Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="ניווט ראשי">
+          <ul class="ap-menu">
+            <li><a href="/he/aleynu/index.html">אודות</a></li>
+            <li><a href="/he/ma-amarim/index.html" aria-current="page" class="active">מאמרים</a></li>
+            <li><a href="/he/pirsumim/index.html">פרסומים</a></li>
+            <li><a href="/he/nos-im/index.html">נושאים</a></li>
+            <li><a href="/he/proyektim/index.html">פרויקטים</a></li>
+            <li><a href="/he/play-listim/index.html">פלייליסטים</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="מעבר למצב כהה" aria-pressed="false" title="החלף ערכת נושא">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="חיפוש (Cmd או Ctrl + K)" title="חיפוש (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="שפה">
+            <button type="button" class="ap-lang-toggle" aria-label="HE, שינוי שפה" aria-expanded="false" aria-haspopup="menu" title="שינוי שפה">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">HE</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-03-agentique-ai-index-banques-autonomy-governance-auditability-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/he/tsor-kesher/index.html" aria-label="צרו קשר">צרו קשר ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="החלף ניווט">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>מדד ה-AI הסוכני לבנקים ב-2026: אוטונומיה, ממשל, ביקורת והשפעה עסקית</h1>
+      <p class="sub">ה-AI הסוכני עבר מממשקי צ&#x27;אט לתהליכים תחומים; בנקים נדרשים כעת למדוד אוטונומיה, בקרה, ראיה וערך לכל החלטה.</p>
+    <nav class="article-tags" aria-label="נושאים"><a href="/tags/index.html#h3-ai-2026" class="article-tag" rel="tag">AI סוכני בבנקאות 2026</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">סוכני AI בבנקים</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">ממשל AI בשירותים פיננסיים</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">תהליכי בנקאות אוטונומיים</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">ניהול סיכון מודל</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">ניתנות לביקורת של AI</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">סולם אוטונומיה</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">מישור בקרת סוכנים</a><a href="/tags/index.html#h3-stanford-hai" class="article-tag" rel="tag">Stanford HAI</a><a href="/tags/index.html#h3-cambridge-ccaf" class="article-tag" rel="tag">Cambridge CCAF</a><a href="/tags/index.html#h3-eu-ai-act" class="article-tag" rel="tag">EU AI Act</a><a href="/tags/index.html#h3-nist-ai-rmf" class="article-tag" rel="tag">NIST AI RMF</a><a href="/tags/index.html#h3-iso-42001" class="article-tag" rel="tag">ISO 42001</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-03T06:06:06+00:00" class="meta-pub">פורסם בתאריך 3 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="זמן קריאה משוער">4 דקות קריאה</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>תוכן עניינים</h2><ol><li><a href="#2026">מדוע 2026 היא השנה שבה המדד הזה חשוב</a></li><li><a href="#2026-2">ארכיטקטורת מדד 2026</a></li><li><a href="#section-3">אותות נוכחיים למעקב</a></li><li><a href="#section-4">סולם האוטונומיה</a></li><li><a href="#section-5">מישור בקרת הסוכנים</a></li><li><a href="#section-6">מדידת השפעה עסקית</a></li><li><a href="#section-7">משמעות לפי סוג בנק</a></li><li><a href="#section-12">סיכום</a></li><li><a href="#section-13">שאלות נפוצות</a></li><li><a href="#section-14">הפניות</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> מסגרת בסגנון מדד למדידת מוכנות AI סוכני בבנקים — סולם אוטונומיה, ממשל, ניתנות לביקורת, אמינות, בקרות וערך לכל החלטה.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>מדוע 2026 היא השנה שבה המדד הזה חשוב.</strong> מדד ה-AI של Stanford שימושי משום שהוא מתייחס לתחום טכנולוגי מהיר-תנועה כאל משהו הניתן למדידה: תפוקת מחקר, ביצועים טכניים, פריסה אחראית, כלכלה, אימוץ ענפי, מדיניות ותחושת ציבור מובאים למסגרת אחת (Stanford HAI ⧉).</li>  <li><strong>אותות נוכחיים למעקב.</strong> ממד המדד הראשון הוא סולם האוטונומיה.</li>  <li><strong>סולם האוטונומיה.</strong> ממד המדד הראשון הוא סולם האוטונומיה.</li>  <li><strong>מישור בקרת הסוכנים.</strong> מישור בקרת הסוכנים הוא שכבת הארכיטקטורה החסרה.</li></ul></aside><h1>מדד ה-AI הסוכני לבנקים ב-2026: אוטונומיה, ממשל, ביקורת והשפעה עסקית</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>AI סוכני בבנקאות אינו עוד מושג עתידי. הוא הופך לשכבת תהליכים החוצה הנדסת תוכנה, תפעול, תמיכת לקוחות, הונאה, ציות, גזברות ופיתוח מוצר. האתגר של 2026 אינו אימוץ; הוא מדידה האם מערכות אוטונומיות יודעות לפעול בתוך גבולות אכיפים, להפיק ראיות וליצור ערך בלי לייצר סיכון תפעולי חדש.</p>
+<hr />
+<blockquote>
+<p><strong>תקציר מנהלים / נקודות מפתח</strong></p>
+<ul>
+<li><strong>האימוץ הסוכני כבר מהותי.</strong> Cambridge CCAF מדווח על 52% אימוץ פעיל של AI סוכני בקרב נשאלי תעשיית השירותים הפיננסיים ו-23% בבגרות של הרחבה או טרנספורמציה.</li>
+<li><strong>מבחני ביצועים מראים התקדמות אך לא אמינות בדרגת בנק.</strong> Stanford HAI מדווח שדיוק הסוכנים ב-OSWorld עלה ל-66.3%, קרוב לביצועי אדם אך עדיין נכשל בכשליש מהמשימות המובְנות.</li>
+<li><strong>המדד צריך להפריד בין סיוע לאוטונומיה.</strong> צ'אטבוט המנסח טקסט אינו אותו דבר כמו סוכן הקורא לכלים, מעדכן רשומות, מפעיל תשלומים או מסלים מקרה.</li>
+<li><strong>הממשל חייב לעבור אל ההרצה.</strong> כרטיסי מודלים, ועדות ומדיניות אינם מספיקים אלא אם מגבלות, הרשאות, יומנים ועקיפות ידניות מוטמעים בתהליך עצמו.</li>
+<li><strong>מדידת הערך עדיין חלשה.</strong> Cambridge CCAF מדווח ש-76% מהמוסדות הפיננסיים הגדולים מתקשים למדוד את ערך פריסת ה-AI.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="2026">מדוע 2026 היא השנה שבה המדד הזה חשוב <a class="heading-anchor" href="#2026" aria-label="קישור אל מדוע 2026 היא השנה שבה המדד הזה חשוב">#</a></h2>
+<p>מדד ה-AI של Stanford שימושי משום שהוא מתייחס לתחום טכנולוגי מהיר-תנועה כאל משהו הניתן למדידה: תפוקת מחקר, ביצועים טכניים, פריסה אחראית, כלכלה, אימוץ ענפי, מדיניות ותחושת ציבור מובאים למסגרת אחת (<a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" title="דוח מדד ה-AI 2026">Stanford HAI ⧉</a>). בנקים ומוסדות פיננסיים זקוקים כעת לאותה משמעת עבור התשתית. AI סוכני, אבטחה עמידה-קוונטית, חוסן ענן ילידי ותשלומים סיטונאיים אינם עוד מסלולי חדשנות נפרדים; הם מתכנסים למודל תפעולי אחד.</p>
+<p>השאלה המעשית לבנק אינה האם כל תחום חשוב. השאלה היא האם המוסד יכול למדוד מוכנות בכולם בו-זמנית. בנק יכול לפרוס AI סוכני ועדיין להישאר שביר אם הקריפטוגרפיה שלו אינה מוכנה למיגרציה. הוא יכול למודרן פלטפורמות ענן ועדיין להיכשל אם נתוני התשלום נותרים לא מובְנים. הוא יכול להריץ פיילוטים של טוקניזציה ועדיין ליצור סיכון מערכתי אם שכבות הסליקה, הנזילות, הזהות והביקורת אינן מתוכננות יחד.</p>
+<h2 id="2026-2">ארכיטקטורת מדד 2026 <a class="heading-anchor" href="#2026-2" aria-label="קישור אל ארכיטקטורת מדד 2026">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>שכבת המדד</th>
+<th>כיוון 2026</th>
+<th>מדד מוכנות</th>
+<th>סיכון בטיפול לקוי</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>דרגת אוטונומיה</strong></td>
+<td>סיווג רמות תצפית, המלצה, טיוטה, ביצוע ותזמור עצמי</td>
+<td>אחוז התהליכים לפי דרגת אוטונומיה</td>
+<td>אוטונומיה סמויה ללא בקרות</td>
+</tr>
+<tr>
+<td><strong>הרשאות כלים</strong></td>
+<td>בקרה אילו מערכות הסוכנים רשאים לקרוא ובאיזו סמכות</td>
+<td>כיסוי הרשאות וציון הרשאה מינימלית</td>
+<td>חריגת סוכן אל מערכות רגישות</td>
+</tr>
+<tr>
+<td><strong>פיקוח אנושי</strong></td>
+<td>הגדרה מתי בני אדם מאשרים, סוקרים, דוגמים או עוקפים ידנית</td>
+<td>שיעור עקיפה ידנית, שיעור חריגות, השהיית הסלמה</td>
+<td>ממשל של חתימת גומי</td>
+</tr>
+<tr>
+<td><strong>ניתנות לביקורת</strong></td>
+<td>שמירת הנחיות, קלטים, פלטים, קריאות כלים, אישורים והחלטות</td>
+<td>שלמות ראיות לכל תהליך</td>
+<td>אירועים תפעוליים בלתי-מוסברים</td>
+</tr>
+<tr>
+<td><strong>כלכלת יחידה</strong></td>
+<td>מדידת עלות וערך לכל החלטה שהושלמה</td>
+<td>עלות למקרה, תיקון, חקירה או פעולת תשלום</td>
+<td>אוטומציה יקרה שמהרסת ערך</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-3">אותות נוכחיים למעקב <a class="heading-anchor" href="#section-3" aria-label="קישור אל אותות נוכחיים למעקב">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>אות</th>
+<th>המשמעות לבנקים</th>
+<th>מקור</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>52% אימוץ פעיל</strong></td>
+<td>ה-AI הסוכני כבר מספיק מיינסטרים כדי לחייב ממשל ברמת המוסד</td>
+<td><a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="דוח Global AI in Financial Services 2026">Cambridge CCAF ⧉</a></td>
+</tr>
+<tr>
+<td><strong>23% בהרחבה או טרנספורמציה</strong></td>
+<td>מיעוט משמעותי עבר מעבר לפיילוטים</td>
+<td><a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="דוח Global AI in Financial Services 2026">Cambridge CCAF ⧉</a></td>
+</tr>
+<tr>
+<td><strong>OSWorld ב-66.3%</strong></td>
+<td>סוכנים שימושיים אך לא אמינים מספיק לתהליכי בנקאות ללא פיקוח</td>
+<td><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance" title="פרק הביצועים הטכניים">Stanford HAI ⧉</a></td>
+</tr>
+<tr>
+<td><strong>55% מציינים אובדן פיקוח אנושי</strong></td>
+<td>תכנון בקרה הוא סיכון מוביל, לא דאגת ציות משנית</td>
+<td><a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="דוח Global AI in Financial Services 2026">Cambridge CCAF ⧉</a></td>
+</tr>
+<tr>
+<td><strong>76% מהמוסדות הפיננסיים הגדולים מתקשים למדוד ערך</strong></td>
+<td>המקרה העסקי חייב להימדד ברמת התהליך</td>
+<td><a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="דוח Global AI in Financial Services 2026">Cambridge CCAF ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-4">סולם האוטונומיה <a class="heading-anchor" href="#section-4" aria-label="קישור אל סולם האוטונומיה">#</a></h2>
+<p>ממד המדד הראשון הוא סולם האוטונומיה. על הבנקים להבחין בין סוכנים שמתבוננים לבין סוכנים שממליצים, מנסחים טיוטה, מבצעים ומתזמרים כלים מרובים. כל דרגה דורשת בקרות שונות. סוכן סיכום עשוי לדרוש רק סקירת פלט; סוכן גזברות שמייזם גידור דורש זהות, סמכות, מגבלות, יכולת הסבר וראיה לאחר ביצוע העסקה.</p>
+<h2 id="section-5">מישור בקרת הסוכנים <a class="heading-anchor" href="#section-5" aria-label="קישור אל מישור בקרת הסוכנים">#</a></h2>
+<p>מישור בקרת הסוכנים הוא שכבת הארכיטקטורה החסרה. הוא צריך לכלול זהות, הרשאות, מדיניות-כקוד, ניתוב אישורים, מגבלות קצב, יומני קריאות כלים, מקור המודל ומפסקי חירום. בלי השכבה הזו, הבנקים בסופו של דבר מנהלים סוכנים דרך מסמכים במקום דרך בקרות זמן ריצה אכיפות.</p>
+<h2 id="section-6">מדידת השפעה עסקית <a class="heading-anchor" href="#section-6" aria-label="קישור אל מדידת השפעה עסקית">#</a></h2>
+<p>יש למדוד AI סוכני דרך תוצאות תהליך, ולא דרך טענות פרודוקטיביות כלליות. מדדים שימושיים כוללים תפוקת מקרים, מגעים ידניים שנמנעו, זמן טיפול ממוצע, הפסדי הונאה שהופחתו, פגמים בסקירות קוד, חיוביים שגויים, שביעות רצון לקוח ועלות לכל החלטה שהושלמה. אם תהליך הופך מהיר יותר אך פחות מוסבר, המדד אמור להעניש אותו.</p>
+<h2 id="section-7">משמעות לפי סוג בנק <a class="heading-anchor" href="#section-7" aria-label="קישור אל משמעות לפי סוג בנק">#</a></h2>
+<h3 id="section-8">בנקים חשובים מערכתית גלובלית <a class="heading-anchor" href="#section-8" aria-label="קישור אל בנקים חשובים מערכתית גלובלית">#</a></h3>
+<p>על הבנקים הגלובליים להתייחס למדד הזה כאל לוח תוצאות לארכיטקטורה ארגונית. העדיפות אינה עוד הוכחת היתכנות; אלא ראיה שתהליכים אוטונומיים, מיגרציה קריפטוגרפית, תלות בענן ומודרניזציית תשלומים ניתנים לממשל כמערכת סיכון וערך אחת.</p>
+<h3 id="section-9">בנקי עסקאות ובנקים תאגידיים <a class="heading-anchor" href="#section-9" aria-label="קישור אל בנקי עסקאות ובנקים תאגידיים">#</a></h3>
+<p>בנקי עסקאות צריכים להתמקד בתשלומים סיטונאיים, נתונים מובְנים, נזילות, פיקדונות בטוקנים ושירותי גזברות סוכניים. הצעת הערך הטובה ביותר ללקוח אינה רק העברת כסף מהירה יותר; היא העברת כסף מוסברת, ניתנת לביקורת ותכנותית עם פחות חקירות ונראות טובה יותר של הון חוזר.</p>
+<h3 id="section-10">בנקים אזוריים <a class="heading-anchor" href="#section-10" aria-label="קישור אל בנקים אזוריים">#</a></h3>
+<p>בנקים אזוריים צריכים להשתמש במדד כדי למנוע פיזור תוכניות. הם אינם חייבים להוביל בכל חזית, אך הם זקוקים לעמדות אמינות בממשל AI, מצאי פוסט-קוונטי, ראיות יציאה מענן ומוכנות נתוני תשלום.</p>
+<h3 id="psps">פינטקים, PSPs וספקי תשתית <a class="heading-anchor" href="#psps" aria-label="קישור אל פינטקים, PSPs וספקי תשתית">#</a></h3>
+<p>על הפינטקים וספקי התשתית להתאים את מפות הדרכים של המוצר למוכנות בנקאית מדידה. ההצעות הטובות ביותר יפחיתו סיכון אינטגרציה, יחזקו ראיות ויקלו על בנקים לממשל תשתית מורכבת.</p>
+<h2 id="section-12">סיכום <a class="heading-anchor" href="#section-12" aria-label="קישור אל סיכום">#</a></h2>
+<p>הערך של דוח בסגנון מדד הוא שהוא הופך אג'נדה טכנולוגית מפוצלת למודל תפעולי מדיד. ב-2026, המנצחים בתשתית הפיננסית לא יהיו המוסדות עם הכי הרבה פיילוטים. הם יהיו המוסדות שיוכלו להוכיח מוכנות באוטונומיה, אבטחה, חוסן, סליקה, כלכלה וממשל בו-זמנית.</p>
+<h2 id="section-13">שאלות נפוצות <a class="heading-anchor" href="#section-13" aria-label="קישור אל שאלות נפוצות">#</a></h2>
+<p><strong>מהו AI סוכני בבנקאות?</strong></p>
+<p>AI סוכני מתייחס למערכות AI היודעות לתכנן, לקרוא לכלים, להשתמש בזיכרון או בהקשר ולבצע משימות בגבולות מוגדרים, ולא רק להגיב להנחיה.</p>
+<p><strong>איפה הבנקים צריכים להתחיל?</strong></p>
+<p>להתחיל בתהליכים תחומים שבהם הערך מדיד והחיסרון מוגבל, כגון תיקון תשלומים, אחזור ידע, תמיכה בהנדסת תוכנה, מיון מקרים ואוטומציית תפעול.</p>
+<p><strong>מהו הסיכון הגדול ביותר?</strong></p>
+<p>הסיכון הגדול ביותר הוא לאפשר לסוכנים לבצע פעולות בין מערכות ללא זהות, הרשאות, יומני ביקורת וספי פיקוח אנושי.</p>
+<p><strong>כיצד יש לדווח על AI סוכני לדירקטוריונים?</strong></p>
+<p>הדירקטוריונים צריכים לראות את האימוץ לפי דרגת אוטונומיה, כיסוי בקרות, מגמות אירועים, ערך לכל תהליך ואת הסיכונים השיוריים המובילים.</p>
+<h2 id="section-14">הפניות <a class="heading-anchor" href="#section-14" aria-label="קישור אל הפניות">#</a></h2>
+<ul>
+<li>Stanford HAI, (2026). <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" title="The 2026 AI Index Report">דוח מדד ה-AI 2026 ⧉</a>.</li>
+<li>Stanford HAI, (2026). <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance" title="Technical Performance chapter">פרק הביצועים הטכניים ⧉</a>.</li>
+<li>Cambridge Centre for Alternative Finance, (2026). <a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="2026 Global AI in Financial Services Report">דוח Global AI in Financial Services 2026 ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">נבדק לאחרונה <time datetime="2026-06-03">3 ביוני 2026</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="אודות הכותב"><img alt="דיוקן של Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/he/aleynu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">מומחה טכנולוגיות בנקאות בכיר הכותב על AI יישומי, מעבר ל-ISO 20022, קריפטוגרפיה פוסט-קוונטית עבור שירותים פיננסיים, וטרנספורמציה מבנית של תשלומי סיטונאות.</span><span class="author-credentials">מעל 20 שנות ניסיון ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA ו-Virgin Group. <a href="/he/aleynu/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">נסקר לאחרונה <time datetime="2026-05-28">2026-05-28</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">קריאה נוספת</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" class="related-media" aria-label="DORA, חוק הבינה המלאכותית וריבונות נתונים: ערימת הציות של 2026 לבנקים" tabindex="-1"><img alt="Compliance stack diagram showing DORA resilience, EU AI Act transparency, data sovereignty, cloud concentration risk, audit logs, model governance, and third-party providers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="dora-2026"><a href="https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026">DORA, חוק הבינה המלאכותית וריבונות נתונים: ערימת הציות של 2026 לבנקים</a> <a class="heading-anchor" href="#dora-2026" aria-label="קישור אל DORA, חוק הבינה המלאכותית וריבונות נתונים: ערימת הציות של 2026 לבנקים">#</a></h3><p><time datetime="2026-05-28">2026-05-28</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/he/2026-05-17-agentic-engineering-banks-blueprint-2026" class="related-media" aria-label="الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه" tabindex="-1"><img alt="Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows" src="https://cloudcdn.pro/api/transform?url=/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-3"><a href="https://sebastienrousseau.com/he/2026-05-17-agentic-engineering-banks-blueprint-2026">الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه</a> <a class="heading-anchor" href="#2026-3" aria-label="קישור אל الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه">#</a></h3><p><time datetime="2026-05-17">2026-05-17</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/he/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html" class="related-media" aria-label="حالة الذكاء الاصطناعي والحوسبة الكمومية في القطاع المصرفي: مراجعة 2023" tabindex="-1"><img alt="حالة الذكاء الاصطناعي والحوسبة الكمومية في القطاع المصرفي: مراجعة 2023" src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-aTWKwJllPOA.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2023"><a href="https://sebastienrousseau.com/he/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">حالة الذكاء الاصطناعي والحوسبة الكمومية في القطاع المصرفي: مراجعة 2023</a> <a class="heading-anchor" href="#2023" aria-label="קישור אל حالة الذكاء الاصطناعي والحوسبة الكمومية في القطاع المصرفي: مراجعة 2023">#</a></h3><p><time datetime="2023-12-18">2023-12-18</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="מיון מאמרים"><a class="post-pagination-prev" href="/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">הקודם</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/he/aleynu/index.html">אודות</a></li>
+              <li><a href="/he/tsor-kesher/index.html">צור קשר</a></li>
+              <li><a href="/he/noseh-im-static-site-generator/index.html">נוצר עם Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">כתיבה</h2>
+            <ul>
+              <li><a href="/he/ma-amarim/index.html">מאמרים</a></li>
+              <li><a href="/he/pirsumim/index.html">פרסומים</a></li>
+              <li><a href="/he/tagim/index.html">תגיות</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">עבודה</h2>
+            <ul>
+              <li><a href="/he/proyektim/index.html">פרויקטים</a></li>
+              <li><a href="/he/play-listim/index.html">פלייליסטים</a></li>
+              <li><a href="/he/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">צור קשר</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="הרשמה לניוזלטר">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — פתקי מחקר על תשלומים, AI וקריפטוגרפיה פוסט-קוונטית. ללא ספאם.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="atah@bank.co.il" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">הרשמה</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="קישורי רשתות חברתיות">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau ב-Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau ב-Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau ב-LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau ב-LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau ב-Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau ב-Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau ב-YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau ב-YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/he/nigishut/index.html">נגישות</a> ·
+            <a href="/he/pratiyut/index.html">פרטיות</a> ·
+            <a href="/he/tnaim/index.html">תנאים</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"he"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"he"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":975,"headline":"מדד ה-AI הסוכני לבנקים ב-2026: אוטונומיה, ממשל, ביקורת והשפעה עסקית","description":"מסגרת בסגנון מדד למדידת מוכנות AI סוכני בבנקים — סולם אוטונומיה, ממשל, ניתנות לביקורת, אמינות, בקרות וערך לכל החלטה.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/mohammad-alizade-4wzRuAb-KWs.webp","width":"100vw","height":"100vh","caption":"צילום אבסטרקטי של משטחים אדריכליים שכבתיים ואור מוחזר, המשמש כמפתח חזותי למדד ה-AI הסוכני לבנקים 2026 — מדידת אוטונומיה, ממשל, ניתנות לביקורת, אמינות, בקרות וערך עסקי"},"url":"https://sebastienrousseau.com/he/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/","datePublished":"2026-06-03T06:06:06+00:00","dateModified":"2026-06-03","inLanguage":"he","keywords":"AI סוכני בבנקאות 2026, סוכני AI בבנקים, ממשל AI בשירותים פיננסיים, תהליכי בנקאות אוטונומיים, ניהול סיכון מודל, ניתנות לביקורת של AI, סולם אוטונומיה, מישור בקרת סוכנים, Stanford HAI, Cambridge CCAF, EU AI Act, NIST AI RMF, ISO 42001","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/he/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"he"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/he/"},{"@type":"ListItem","position":3,"name":"מדד ה-AI הסוכני לבנקים ב-2026: אוטונומיה, ממשל, ביקורת והשפעה עסקית","item":"https://sebastienrousseau.com/he/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="חיפוש">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>חיפוש</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="חיפוש">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="חיפוש בתיעוד..." autocomplete="off" aria-label="חיפוש"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> סגירה</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> ניווט</span><span><kbd>Enter</kbd> פתיחה</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"מדד ה-AI הסוכני לבנקים ב-2026: אוטונומיה, ממשל, ביקורת והשפעה עסקית","url":"https://sebastienrousseau.com/he/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/","inLanguage":"he-IL","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"AI סוכני בבנקאות 2026, סוכני AI בבנקים, ממשל AI בשירותים פיננסיים, תהליכי בנקאות אוטונומיים, ניהול סיכון מודל, ניתנות לביקורת של AI, סולם אוטונומיה, מישור בקרת סוכנים, Stanford HAI, Cambridge CCAF, EU AI Act, NIST AI RMF, ISO 42001","dependencies":["NIST"]}</script></body>
+</html>

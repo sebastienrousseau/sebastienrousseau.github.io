@@ -6,8 +6,23 @@
     <description>Artykuły po polsku: stosowana sztuczna inteligencja, płatności ISO 20022, kryptografia postkwantowa oraz transformacja płatności hurtowych.</description>
     <atom:link href="https://sebastienrousseau.com/pl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>pl-PL</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 11:26:24 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Wszelkie prawa zastrzeżone.</copyright>
+    <item>
+      <title>Indeks SI agentowej dla banków w 2026: pomiar autonomii, governance, audytowalności i wpływu biznesowego</title>
+      <link>https://sebastienrousseau.com/pl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</link>
+      <description>Indeksowy framework pomiaru gotowości banków na SI agentową: autonomia, governance, audytowalność, niezawodność, kontrole i wartość biznesowa na decyzję.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</guid>
+      <pubDate>Thu, 28 May 2026 11:26:24 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/mohammad-alizade-4wzRuAb-KWs.webp" type="image/webp" length="0"/>
+      <category>SI agentowa w bankowości 2026</category>
+      <category>agenci AI w bankach</category>
+      <category>governance AI w usługach finansowych</category>
+      <category>autonomiczne przepływy pracy w banku</category>
+      <category>zarządzanie ryzykiem modelu</category>
+      <category>audytowalność AI</category>
+    </item>
     <item>
       <title>DORA, EU AI Act i suwerennosc danych: stos zgodnosci bankow w 2026</title>
       <link>https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

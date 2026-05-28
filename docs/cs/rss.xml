@@ -6,8 +6,23 @@
     <description>Články v češtině: aplikovaná AI, platby ISO 20022, postkvantová kryptografie a transformace velkoobchodních plateb.</description>
     <atom:link href="https://sebastienrousseau.com/cs/rss.xml" rel="self" type="application/rss+xml"/>
     <language>cs-CZ</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 11:26:24 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Všechna práva vyhrazena.</copyright>
+    <item>
+      <title>Index agentní UI pro banky v roce 2026: autonomie, governance, auditovatelnost a dopad</title>
+      <link>https://sebastienrousseau.com/cs/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</link>
+      <description>Rámec ve stylu indexu pro měření připravenosti bank na agentní UI — autonomie, governance, auditovatelnost, spolehlivost, kontroly a obchodní hodnota.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</guid>
+      <pubDate>Thu, 28 May 2026 11:26:24 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/mohammad-alizade-4wzRuAb-KWs.webp" type="image/webp" length="0"/>
+      <category>agentní UI bankovnictví 2026</category>
+      <category>UI agenti banky</category>
+      <category>governance UI finanční služby</category>
+      <category>autonomní bankovní pracovní postupy</category>
+      <category>řízení modelového rizika</category>
+      <category>auditovatelnost UI</category>
+    </item>
     <item>
       <title>DORA, EU AI Act a suverenita dat: Compliance stack pro banky v roce 2026</title>
       <link>https://sebastienrousseau.com/cs/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

@@ -6,8 +6,23 @@
     <description>บทความภาษาไทย: AI ประยุกต์, การชำระเงิน ISO 20022, การเข้ารหัสหลังควอนตัม และการปฏิรูปการชำระเงินขายส่ง</description>
     <atom:link href="https://sebastienrousseau.com/th/rss.xml" rel="self" type="application/rss+xml"/>
     <language>th-TH</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 11:26:24 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์</copyright>
+    <item>
+      <title>ดัชนี AI เชิงตัวแทนสำหรับธนาคารปี 2026: วัดความเป็นอิสระ ธรรมาภิบาล ความสามารถในการตรวจสอบ และผลกระทบทางธุรกิจ</title>
+      <link>https://sebastienrousseau.com/th/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</link>
+      <description>กรอบเชิงดัชนีสำหรับวัดความพร้อมของ AI เชิงตัวแทนในธนาคาร ครอบคลุมความเป็นอิสระ ธรรมาภิบาล ความสามารถในการตรวจสอบ ความน่าเชื่อถือ การควบคุม และคุณค่าทางธุรกิจต่อการตัดสินใจ</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</guid>
+      <pubDate>Thu, 28 May 2026 11:26:24 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/mohammad-alizade-4wzRuAb-KWs.webp" type="image/webp" length="0"/>
+      <category>AI เชิงตัวแทนสำหรับธนาคาร 2026</category>
+      <category>ตัวแทน AI ธนาคาร</category>
+      <category>ธรรมาภิบาล AI บริการการเงิน</category>
+      <category>เวิร์กโฟลว์ธนาคารอัตโนมัติ</category>
+      <category>การบริหารความเสี่ยงแบบจำลอง</category>
+      <category>ความสามารถในการตรวจสอบ AI</category>
+    </item>
     <item>
       <title>DORA กฎหมาย AI ของ EU และอธิปไตยข้อมูล: สแต็คการปฏิบัติตามกฎปี 2026 ของธนาคาร</title>
       <link>https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

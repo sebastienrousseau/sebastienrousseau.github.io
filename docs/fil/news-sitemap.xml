@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/fil/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fil-PH</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T11:26:24+00:00</news:publication_date>
+    <news:title>Ang Agentic AI Index para sa mga Bangko sa 2026: Pagsukat ng Awtonomiya, Pamamahala, Kakayahang Ma-audit, at Epekto sa Negosyo</news:title>
+    <news:keywords>agentic AI sa pagbabangko 2026, AI agents sa mga bangko, pamamahala ng AI sa serbisyong pinansyal, awtonomong workflows ng bangko, pamamahala ng panganib ng modelo, kakayahang ma-audit ng AI</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

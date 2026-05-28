@@ -6,8 +6,23 @@
     <description>Artiklar på svenska: tillämpad AI, ISO 20022-betalningar, postkvantkryptografi och transformationen av grossistbetalningar.</description>
     <atom:link href="https://sebastienrousseau.com/sv/rss.xml" rel="self" type="application/rss+xml"/>
     <language>sv-SE</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 11:26:24 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alla rättigheter förbehållna.</copyright>
+    <item>
+      <title>Agentiska AI-indexet för banker 2026: autonomi, styrning, granskningsbarhet och affärsvärde</title>
+      <link>https://sebastienrousseau.com/sv/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</link>
+      <description>Ett indexliknande ramverk för att mäta bankers beredskap för agentisk AI — autonomi, styrning, granskningsbarhet, tillförlitlighet, kontroller och affärsvärde per beslut.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</guid>
+      <pubDate>Thu, 28 May 2026 11:26:24 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/mohammad-alizade-4wzRuAb-KWs.webp" type="image/webp" length="0"/>
+      <category>agentisk AI bank 2026</category>
+      <category>AI-agenter banker</category>
+      <category>AI-styrning finansiella tjänster</category>
+      <category>autonoma bankarbetsflöden</category>
+      <category>modellrisk</category>
+      <category>AI-granskningsbarhet</category>
+    </item>
     <item>
       <title>DORA, EU:s AI-förordning och datasuveränitet: bankernas efterlevnadsstack 2026</title>
       <link>https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

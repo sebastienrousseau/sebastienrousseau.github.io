@@ -6,8 +6,23 @@
     <description>한국어 기사: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 그리고 도매 결제 인프라의 구조적 변혁.</description>
     <atom:link href="https://sebastienrousseau.com/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 11:26:24 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>은행을 위한 에이전트형 AI 지수 2026</title>
+      <link>https://sebastienrousseau.com/ko/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</link>
+      <description>은행의 에이전트형 AI 준비도를 측정하는 지수 형식의 프레임워크로, 자율성·거버넌스·감사 가능성·신뢰성·통제·비즈니스 가치를 다룹니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</guid>
+      <pubDate>Thu, 28 May 2026 11:26:24 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/mohammad-alizade-4wzRuAb-KWs.webp" type="image/webp" length="0"/>
+      <category>에이전트형 AI 은행 2026</category>
+      <category>은행 AI 에이전트</category>
+      <category>금융 서비스 AI 거버넌스</category>
+      <category>자율 은행 워크플로</category>
+      <category>모델 리스크 관리</category>
+      <category>AI 감사 가능성</category>
+    </item>
     <item>
       <title>DORA, EU AI 법, 데이터 주권: 2026년 은행을 위한 컴플라이언스 스택</title>
       <link>https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
