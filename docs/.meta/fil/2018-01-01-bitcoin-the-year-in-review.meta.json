@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
-  "keywords": "بيتكوين, عملة مشفّرة, blockchain, P2P, الإنفاق المزدوج, التعدين, proof-of-work, ETF, Satoshi Nakamoto, التمويل اللامركزي",
   "language": "fil-PH",
-  "subtitle": "نظام دفع إلكتروني نِدّ-لنِدّ أعاد تعريف المال",
-  "title": "بيتكوين: عام في المراجعة لأوّل عملة مشفّرة",
-  "description": "بيتكوين: نظام نقد إلكتروني نِدّ-لنِدّ (P2P ECS) قادر على إحداث ثورة في طريقة تعامل الناس عبر الإنترنت.",
-  "date": "January 1, 2018",
   "banner_alt": "كومة من العملات الذهبية والفضية موضوعة فوق طاولة",
-  "locale": "fil_PH"
+  "description": "بيتكوين: نظام نقد إلكتروني نِدّ-لنِدّ (P2P ECS) قادر على إحداث ثورة في طريقة تعامل الناس عبر الإنترنت.",
+  "title": "بيتكوين: عام في المراجعة لأوّل عملة مشفّرة",
+  "locale": "fil_PH",
+  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
+  "date": "January 1, 2018",
+  "keywords": "بيتكوين, عملة مشفّرة, blockchain, P2P, الإنفاق المزدوج, التعدين, proof-of-work, ETF, Satoshi Nakamoto, التمويل اللامركزي",
+  "subtitle": "نظام دفع إلكتروني نِدّ-لنِدّ أعاد تعريف المال"
 }

@@ -1,11 +1,11 @@
 {
-  "locale": "yo_NG",
-  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
-  "subtitle": "Ṣíṣàfihàn Ọjọ́-iwájú AI: Bí Ìwádìí MM1 ti Apple Ṣe Ń Yí Ìkẹ́kọ̀ọ́ Ọ̀pọ̀-Ọ̀nà Padà",
-  "keywords": "LLMs Multimodal, ẹkọ MM1, ilọsiwaju AI, awọn ilana ikẹkọ iṣaaju, idanimọ aworan, ṣiṣe ede adayeba, awọn ohun elo AI, ọjọ iwaju AI, ẹkọ multimodal, iwadii AI",
-  "title": "Advancing AI with Multimodal LLMs: Insights from MM1",
-  "banner_alt": "Àkọlé fún Apple MM1",
   "description": "Ṣawari iwe MM1 ti Apple lori Awọn Awoṣe Ede Nla Multimodal (MLLMs). Kọ ẹkọ nipa eto wọn, awọn ilana ikẹkọ iṣaaju, ati agbara AI.",
+  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
+  "language": "yo-NG",
+  "keywords": "LLMs Multimodal, ẹkọ MM1, ilọsiwaju AI, awọn ilana ikẹkọ iṣaaju, idanimọ aworan, ṣiṣe ede adayeba, awọn ohun elo AI, ọjọ iwaju AI, ẹkọ multimodal, iwadii AI",
+  "locale": "yo_NG",
+  "banner_alt": "Àkọlé fún Apple MM1",
+  "subtitle": "Ṣíṣàfihàn Ọjọ́-iwájú AI: Bí Ìwádìí MM1 ti Apple Ṣe Ń Yí Ìkẹ́kọ̀ọ́ Ọ̀pọ̀-Ọ̀nà Padà",
   "date": "Mar 17, 2024",
-  "language": "yo-NG"
+  "title": "Advancing AI with Multimodal LLMs: Insights from MM1"
 }

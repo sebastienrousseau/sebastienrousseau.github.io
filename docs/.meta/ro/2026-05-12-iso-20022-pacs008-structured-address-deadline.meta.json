@@ -1,11 +1,11 @@
 {
+  "keywords": "ISO 20022, pacs.008, SWIFT CBPR+, adresă structurată, noiembrie 2026, adresă poștală, TwnNm, Ctry, StrtNm, BldgNb",
+  "language": "ro-RO",
+  "description": "Din nov. 2026, SWIFT CBPR+ impune adrese structurate în pacs.008: TwnNm și Ctry obligatorii, AdrLine singur respins. 65% din mesaje neconforme, 44% bănci în întârziere.",
   "subtitle": "Din mijlocul lunii noiembrie 2026, SWIFT CBPR+ va respinge adresele poștale nestructurate din pacs.008 și din mesajele conexe de plată transfrontalieră. Cu circa 65% din mesaje încă neconforme, fereastra de remediere se închide rapid.",
   "locale": "ro_RO",
-  "date": "May 12, 2026",
-  "description": "Din nov. 2026, SWIFT CBPR+ impune adrese structurate în pacs.008: TwnNm și Ctry obligatorii, AdrLine singur respins. 65% din mesaje neconforme, 44% bănci în întârziere.",
-  "language": "ro-RO",
-  "banner_alt": "Diagramă ISO 20022 pacs.008 cu adresă structurată — câmpuri de mesaj de plată transfrontalieră cu TwnNm și Ctry evidențiate",
-  "title": "The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View",
   "banner": "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp",
-  "keywords": "ISO 20022, pacs.008, SWIFT CBPR+, adresă structurată, noiembrie 2026, adresă poștală, TwnNm, Ctry, StrtNm, BldgNb"
+  "date": "May 12, 2026",
+  "banner_alt": "Diagramă ISO 20022 pacs.008 cu adresă structurată — câmpuri de mesaj de plată transfrontalieră cu TwnNm și Ctry evidențiate",
+  "title": "The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View"
 }

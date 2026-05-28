@@ -1,11 +1,11 @@
 {
-  "date": "Dec 25, 2023",
-  "title": "[UK DRAFT] Revolutionising Finance with AI-Enhanced Quantum Algorithms",
-  "banner_alt": "Революція у фінансах за допомогою квантових алгоритмів, вдосконалених штучним інтелектом",
-  "language": "uk-UA",
-  "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
-  "keywords": "Quantum Computing, Алгоритми ШІ, Фінансова математика, Банківські технології, Управління ризиками, Розробка алгоритмів, Аналіз даних, Інвестиційні стратегії, Quantum Finance, Machine Learning",
-  "subtitle": "Розкриваючи силу квантових технологій для фінансових інновацій: ШІ в центрі алгоритмів нового покоління",
   "locale": "uk_UA",
-  "description": "Досліджуйте трансформаційну роль ШІ в квантових алгоритмах для фінансів, зосереджуючись на їх математичних тонкощах та банківських застосуваннях."
+  "title": "[UK DRAFT] Revolutionising Finance with AI-Enhanced Quantum Algorithms",
+  "keywords": "Quantum Computing, Алгоритми ШІ, Фінансова математика, Банківські технології, Управління ризиками, Розробка алгоритмів, Аналіз даних, Інвестиційні стратегії, Quantum Finance, Machine Learning",
+  "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
+  "language": "uk-UA",
+  "date": "Dec 25, 2023",
+  "description": "Досліджуйте трансформаційну роль ШІ в квантових алгоритмах для фінансів, зосереджуючись на їх математичних тонкощах та банківських застосуваннях.",
+  "subtitle": "Розкриваючи силу квантових технологій для фінансових інновацій: ШІ в центрі алгоритмів нового покоління",
+  "banner_alt": "Революція у фінансах за допомогою квантових алгоритмів, вдосконалених штучним інтелектом"
 }

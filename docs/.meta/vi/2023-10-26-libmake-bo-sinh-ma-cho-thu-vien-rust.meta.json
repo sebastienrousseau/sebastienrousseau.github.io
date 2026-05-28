@@ -1,11 +1,11 @@
 {
-  "subtitle": "Tự động hoá việc khởi tạo dự án Rust với cấu trúc tốt",
-  "date": "October 26, 2023",
+  "banner": "https://cloudcdn.pro/stocks/images/libmake-banner.webp",
   "description": "libmake — một CLI Rust tạo các thư viện Rust mới với cấu trúc tốt, kiểm thử, CI/CD và tài liệu sẵn sàng.",
   "banner_alt": "Sơ đồ cấu trúc thư mục của một thư viện Rust",
-  "banner": "https://cloudcdn.pro/stocks/images/libmake-banner.webp",
+  "date": "October 26, 2023",
   "language": "vi-VN",
   "title": "libmake: bộ sinh mã giảm tác vụ lặp lại và xây dựng thư viện Rust chất lượng cao",
   "locale": "vi_VN",
+  "subtitle": "Tự động hoá việc khởi tạo dự án Rust với cấu trúc tốt",
   "keywords": "libmake, Rust, scaffold, sinh mã, CLI, mã nguồn mở, năng suất, phát triển"
 }
