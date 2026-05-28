@@ -6,8 +6,25 @@
     <description>Статьи на русском языке: прикладной ИИ, платежи ISO 20022, постквантовая криптография и трансформация оптовых платежей.</description>
     <atom:link href="https://sebastienrousseau.com/ru/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ru-RU</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 16:56:18 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Все права защищены.</copyright>
+    <item>
+      <title>Индекс оптовых платежей в 2026: ISO 20022, токенизированные депозиты, рельсы реального времени и трансграничные расчёты</title>
+      <link>https://sebastienrousseau.com/ru/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</link>
+      <description>Индекс готовности оптовых платежей 2026 года: измерение качества данных ISO 20022, токенизированных депозитов, рельсов реального времени, трансграничных расчётов и эффективности ликвидности.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</guid>
+      <pubDate>Thu, 28 May 2026 16:56:18 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/rodion-kutsaiev-OQ0zP6AS2DI.webp" type="image/webp" length="0"/>
+      <category>оптовые платежи 2026</category>
+      <category>ISO 20022</category>
+      <category>токенизированные депозиты</category>
+      <category>Project Agorá</category>
+      <category>трансграничные платежи</category>
+      <category>платежи реального времени</category>
+      <category>структурированный адрес</category>
+      <category>качество платёжных данных</category>
+    </item>
     <item>
       <title>DORA, Закон ЕС об ИИ и суверенитет данных: стек комплаенса банков 2026 года</title>
       <link>https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

@@ -6,8 +6,25 @@
     <description>Artículos en español: IA aplicada, pagos ISO 20022, criptografía postcuántica y transformación de los pagos mayoristas.</description>
     <atom:link href="https://sebastienrousseau.com/es/rss.xml" rel="self" type="application/rss+xml"/>
     <language>es-ES</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 16:56:18 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Todos los derechos reservados.</copyright>
+    <item>
+      <title>El Índice de Pagos Mayoristas 2026: ISO 20022, depósitos tokenizados y liquidación transfronteriza</title>
+      <link>https://sebastienrousseau.com/es/2026-06-06-mayorista-pagos-index-iso20022-tokenised-deposits-cross-border-2026/</link>
+      <description>Índice 2026 de madurez en pagos mayoristas: mide la calidad del dato ISO 20022, los depósitos tokenizados, los raíles en tiempo real y la liquidación transfronteriza.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-06-06-mayorista-pagos-index-iso20022-tokenised-deposits-cross-border-2026/</guid>
+      <pubDate>Thu, 28 May 2026 16:56:18 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/rodion-kutsaiev-OQ0zP6AS2DI.webp" type="image/webp" length="0"/>
+      <category>pagos mayoristas 2026</category>
+      <category>ISO 20022</category>
+      <category>depósitos tokenizados</category>
+      <category>Project Agorá</category>
+      <category>pagos transfronterizos</category>
+      <category>pagos en tiempo real</category>
+      <category>dirección estructurada</category>
+      <category>calidad del dato de pago</category>
+    </item>
     <item>
       <title>DORA, EU AI Act y soberanía de datos: el stack de cumplimiento bancario 2026</title>
       <link>https://sebastienrousseau.com/es/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

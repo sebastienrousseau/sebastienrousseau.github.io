@@ -6,8 +6,25 @@
     <description>中文文章：應用人工智慧、ISO 20022 支付、後量子密碼學以及批發支付的轉型。</description>
     <atom:link href="https://sebastienrousseau.com/zh-hant/rss.xml" rel="self" type="application/rss+xml"/>
     <language>zh-Hant</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 16:56:19 +0000</lastBuildDate>
     <copyright>© 2007 - 2026 - Sebastien Rousseau。版權所有，翻印必究。</copyright>
+    <item>
+      <title>2026 年大額支付指數:ISO 20022、代幣化存款、即時軌道與跨境結算</title>
+      <link>https://sebastienrousseau.com/zh-hant/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</link>
+      <description>2026 年大額支付準備度指數,衡量 ISO 20022 資料品質、代幣化存款、即時支付軌道、跨境結算與流動性效率。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</guid>
+      <pubDate>Thu, 28 May 2026 16:56:19 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/rodion-kutsaiev-OQ0zP6AS2DI.webp" type="image/webp" length="0"/>
+      <category>大額支付 2026</category>
+      <category>ISO 20022</category>
+      <category>代幣化存款</category>
+      <category>Project Agorá</category>
+      <category>跨境支付</category>
+      <category>即時支付</category>
+      <category>結構化地址資料</category>
+      <category>支付資料品質</category>
+    </item>
     <item>
       <title>DORA、EU AI 法與資料主權:銀行 2026 年法遵堆疊</title>
       <link>https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

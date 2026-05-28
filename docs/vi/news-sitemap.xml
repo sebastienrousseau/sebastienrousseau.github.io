@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/vi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T16:56:18+00:00</news:publication_date>
+    <news:title>Chỉ số Thanh toán Bán buôn 2026: ISO 20022, tiền gửi token hoá và quyết toán xuyên biên giới</news:title>
+    <news:keywords>thanh toán bán buôn 2026, ISO 20022, tiền gửi token hoá, Project Agorá, thanh toán xuyên biên giới, thanh toán thời gian thực, dữ liệu địa chỉ có cấu trúc, chất lượng dữ liệu thanh toán</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

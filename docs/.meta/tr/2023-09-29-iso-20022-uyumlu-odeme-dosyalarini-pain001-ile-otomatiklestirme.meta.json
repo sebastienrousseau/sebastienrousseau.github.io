@@ -1,11 +1,11 @@
 {
+  "locale": "tr_TR",
+  "description": "pain001, CSV veya SQLite kaynaklarından başlayarak ISO 20022 uyumlu pain.001 ödeme dosyalarının oluşturulmasını otomatikleştirir.",
+  "banner": "https://cloudcdn.pro/stocks/images/andrea-di-santis-T3Qen8vVgRc.webp",
+  "banner_alt": "Yapılandırılmış ödeme verilerinin ekran görüntüsü",
   "title": "ISO 20022 uyumlu ödeme dosyalarını pain001 ile otomatikleştirme",
   "language": "tr-TR",
-  "banner": "https://cloudcdn.pro/stocks/images/andrea-di-santis-T3Qen8vVgRc.webp",
-  "date": "September 29, 2023",
-  "banner_alt": "Yapılandırılmış ödeme verilerinin ekran görüntüsü",
   "subtitle": "Bir Python kütüphanesi ile yapılandırılmış ödemelere küresel geçiş",
-  "locale": "tr_TR",
   "keywords": "ISO 20022, pain.001, Python, ödemeler, otomasyon, SEPA, SWIFT, açık kaynak",
-  "description": "pain001, CSV veya SQLite kaynaklarından başlayarak ISO 20022 uyumlu pain.001 ödeme dosyalarının oluşturulmasını otomatikleştirir."
+  "date": "September 29, 2023"
 }

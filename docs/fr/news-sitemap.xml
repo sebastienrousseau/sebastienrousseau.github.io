@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/fr/2026-06-06-de-gros-paiements-index-iso20022-tokenise-deposits-cross-border-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fr-FR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T16:56:18+00:00</news:publication_date>
+    <news:title>L&apos;indice 2026 des paiements de gros : ISO 20022, dépôts tokenisés et règlement transfrontalier</news:title>
+    <news:keywords>paiements de gros 2026, ISO 20022, dépôts tokenisés, Project Agorá, paiements transfrontaliers, paiements temps réel, adresse structurée, qualité des données de paiement</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

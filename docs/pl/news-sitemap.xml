@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/pl/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T16:56:18+00:00</news:publication_date>
+    <news:title>Indeks Płatności Hurtowych 2026: ISO 20022, stokenizowane depozyty, szyny czasu rzeczywistego, rozliczenia transgraniczne</news:title>
+    <news:keywords>płatności hurtowe 2026, ISO 20022, stokenizowane depozyty, Project Agorá, płatności transgraniczne, płatności w czasie rzeczywistym, adres ustrukturyzowany, jakość danych płatniczych</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

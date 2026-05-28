@@ -1,11 +1,11 @@
 {
-  "keywords": "post-kuantum, kurumsal finans, hazine, kriptografi, geçiş, NIST PQC",
-  "description": "Hazinelerin ve kurumsal finansın post-kuantum kriptografiye nasıl geçeceği — tehdit, takvim ve operasyonel etkiler.",
-  "locale": "tr_TR",
-  "language": "tr-TR",
-  "title": "Defteri güvene almak: kurumsal finans için post-kuantum geçişi",
   "banner_alt": "Bir kurumsal hazinenin görselleştirmesi",
-  "subtitle": "Kurumsal finansta post-kuantum kriptografi geçiş yol haritası",
   "date": "May 14, 2026",
+  "description": "Hazinelerin ve kurumsal finansın post-kuantum kriptografiye nasıl geçeceği — tehdit, takvim ve operasyonel etkiler.",
+  "subtitle": "Kurumsal finansta post-kuantum kriptografi geçiş yol haritası",
+  "language": "tr-TR",
+  "keywords": "post-kuantum, kurumsal finans, hazine, kriptografi, geçiş, NIST PQC",
+  "title": "Defteri güvene almak: kurumsal finans için post-kuantum geçişi",
+  "locale": "tr_TR",
   "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
 }

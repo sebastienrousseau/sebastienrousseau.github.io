@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="bn-BD">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Sat, 06 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Sat, 06 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>২০২৬-এর হোলসেল পেমেন্ট সূচক: ISO 20022, টোকেনাইজড আমানত, রিয়েল-টাইম রেল ও আন্তঃসীমান্ত নিষ্পত্তি — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="হোলসেল পেমেন্ট প্রস্তুতির জন্য ২০২৬ সূচক — ISO 20022 ডেটার গুণমান, টোকেনাইজড আমানত, রিয়েল-টাইম রেল, আন্তঃসীমান্ত নিষ্পত্তি ও তরলতা দক্ষতা পরিমাপ করে পরিচালন মডেলের মধ্যে।">
+<meta name="keywords" content="হোলসেল পেমেন্ট ২০২৬, ISO 20022, টোকেনাইজড আমানত, Project Agorá, আন্তঃসীমান্ত পেমেন্ট, রিয়েল-টাইম পেমেন্ট, কাঠামোগত ঠিকানা ডেটা, পেমেন্ট ডেটার গুণমান">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="The Wholesale Payments Index 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-+L3xjIiPONs1J4FbBRuykdhK/aZz8iFhVxL6iw3u/74=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-d1HzCPRPSZMdSWX8y39pUZ7dNehPRqABMASedtw4Xno=' 'sha256-oESz4mocF6kWTioJGWRYoPuh1pHh2IBaGErwXO6REgk=' 'sha256-yB27iYv2TDR7Hc19Hqr/rQg7HoNO6Hw0Pdd0GqQxkA0=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/bn/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom ফিড" href="/bn/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="২০২৬-এর হোলসেল পেমেন্ট সূচক: ISO 20022, টোকেনাইজড আমানত, রিয়েল-টাইম রেল ও আন্তঃসীমান্ত নিষ্পত্তি — Sebastien Rousseau">
+<meta property="og:description" content="হোলসেল পেমেন্ট প্রস্তুতির জন্য ২০২৬ সূচক — ISO 20022 ডেটার গুণমান, টোকেনাইজড আমানত, রিয়েল-টাইম রেল, আন্তঃসীমান্ত নিষ্পত্তি ও তরলতা দক্ষতা পরিমাপ করে পরিচালন মডেলের মধ্যে।">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/bn/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/rodion-kutsaiev-OQ0zP6AS2DI.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="bn_BD">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="২০২৬-এর হোলসেল পেমেন্ট সূচক: ISO 20022, টোকেনাইজড আমানত, রিয়েল-টাইম রেল ও আন্তঃসীমান্ত নিষ্পত্তি — Sebastien Rousseau">
+<meta name="twitter:description" content="হোলসেল পেমেন্ট প্রস্তুতির জন্য ২০২৬ সূচক — ISO 20022 ডেটার গুণমান, টোকেনাইজড আমানত, রিয়েল-টাইম রেল, আন্তঃসীমান্ত নিষ্পত্তি ও তরলতা দক্ষতা পরিমাপ করে পরিচালন মডেলের মধ্যে।">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/rodion-kutsaiev-OQ0zP6AS2DI.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/bn/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-06-de-gros-paiements-index-iso20022-tokenise-deposits-cross-border-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-06-wholesale-zahlungsverkehr-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-06-mayorista-pagos-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-06-wholesale-pagamenti-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-06-atacado-pagamentos-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">মূল কনটেন্টে যান</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="নেভিগেশন টগল করুন" />
+      <div class="wrap">
+        <a class="ap-brand" href="/bn/index.html" aria-label="Sebastien Rousseau হোম">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="প্রধান নেভিগেশন">
+          <ul class="ap-menu">
+            <li><a href="/bn/amader-shomporke/index.html">About</a></li>
+            <li><a href="/bn/prabondho/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/bn/prokashana/index.html">Papers</a></li>
+            <li><a href="/bn/bishay/index.html">বিষয়</a></li>
+            <li><a href="/bn/prokolpo/index.html">Projects</a></li>
+            <li><a href="/bn/playlist/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="ডার্ক থিম চালু করুন" aria-pressed="false" title="থিম পরিবর্তন করুন">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="অনুসন্ধান (Cmd বা Ctrl + K)" title="অনুসন্ধান (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="ভাষা">
+            <button type="button" class="ap-lang-toggle" aria-label="BN, ভাষা পরিবর্তন" aria-expanded="false" aria-haspopup="menu" title="ভাষা পরিবর্তন">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">BN</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-06-de-gros-paiements-index-iso20022-tokenise-deposits-cross-border-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-06-wholesale-zahlungsverkehr-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-06-mayorista-pagos-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-06-wholesale-pagamenti-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-06-atacado-pagamentos-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/bn/jogajog/index.html" aria-label="যোগাযোগ">যোগাযোগ ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="নেভিগেশন টগল করুন">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>২০২৬-এর হোলসেল পেমেন্ট সূচক: ISO 20022, টোকেনাইজড আমানত, রিয়েল-টাইম রেল ও আন্তঃসীমান্ত নিষ্পত্তি</h1>
+      <p class="sub">হোলসেল পেমেন্ট মেসেজিং মাইগ্রেশন থেকে প্রোগ্রামেবল নিষ্পত্তির দিকে এগোচ্ছে; ব্যাংকগুলিকে ডেটার গুণমান, রেল অর্কেস্ট্রেশন, তরলতা ও চূড়ান্ততা পরিমাপ করতে হবে।</p>
+    <nav class="article-tags" aria-label="বিষয়"><a href="/tags/index.html#h3-" class="article-tag" rel="tag">হোলসেল পেমেন্ট ২০২৬</a><a href="/tags/index.html#h3-iso-20022" class="article-tag" rel="tag">ISO 20022</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">টোকেনাইজড আমানত</a><a href="/tags/index.html#h3-project-agora" class="article-tag" rel="tag">Project Agorá</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">আন্তঃসীমান্ত পেমেন্ট</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">রিয়েল-টাইম পেমেন্ট</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">কাঠামোগত ঠিকানা ডেটা</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">পেমেন্ট ডেটার গুণমান</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-06T06:06:06+00:00" class="meta-pub">প্রকাশিত 6 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="আনুমানিক পঠন সময়">5 মিনিট পঠন</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>বিষয়বস্তু</h2><ol><li><a href="#section-1">কেন ২০২৬ এই সূচকের গুরুত্বের বছর</a></li><li><a href="#section-2">২০২৬ সূচক স্থাপত্য</a></li><li><a href="#section-3">ট্র্যাক করার মতো বর্তমান সংকেত</a></li><li><a href="#section-4">পেমেন্ট ডেটার বাঁক বিন্দু</a></li><li><a href="#cbdc">টোকেনাইজড আমানত ও হোলসেল CBDC</a></li><li><a href="#section-6">নতুন হোলসেল পেমেন্ট পণ্য</a></li><li><a href="#section-7">ব্যাংকের ধরন অনুসারে এর অর্থ</a></li><li><a href="#section-12">উপসংহার</a></li><li><a href="#section-13">প্রায়শই জিজ্ঞাসিত প্রশ্ন</a></li><li><a href="#section-14">তথ্যসূত্র</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> হোলসেল পেমেন্ট প্রস্তুতির জন্য ২০২৬ সূচক — ISO 20022 ডেটার গুণমান, টোকেনাইজড আমানত, রিয়েল-টাইম রেল, আন্তঃসীমান্ত নিষ্পত্তি ও তরলতা দক্ষতা পরিমাপ করে পরিচালন মডেলের মধ্যে।</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>কেন ২০২৬ এই সূচকের গুরুত্বের বছর.</strong> Stanford AI Index উপযোগী এই কারণে যে এটি একটি দ্রুতগতির প্রযুক্তি ক্ষেত্রকে এমন কিছু হিসেবে বিবেচনা করে যা পরিমাপযোগ্য: গবেষণার ফলাফল, প্রযুক্তিগত কর্মক্ষমতা, দায়িত্বশীল স্থাপনা, অর্থনীতি, খাত গ্রহণ, নীতি ও জনমত —…</li>  <li><strong>ট্র্যাক করার মতো বর্তমান সংকেত.</strong> ISO 20022 মেসেজিং-ফরম্যাট প্রকল্প থেকে ডেটা-গুণমান পরিচালন মডেলে রূপান্তরিত হয়েছে। সুবিধাভোগী, ঋণগ্রহীতা, ঋণদাতা, এজেন্ট, শহর, দেশ, উদ্দেশ্য ও পক্ষ-ডেটা দুর্বল হলে ব্যাংক প্রত্যাখ্যান, মেরামত, নিষেধাজ্ঞা ঘর্ষণ,…</li>  <li><strong>পেমেন্ট ডেটার বাঁক বিন্দু.</strong> ISO 20022 মেসেজিং-ফরম্যাট প্রকল্প থেকে ডেটা-গুণমান পরিচালন মডেলে রূপান্তরিত হয়েছে। সুবিধাভোগী, ঋণগ্রহীতা, ঋণদাতা, এজেন্ট, শহর, দেশ, উদ্দেশ্য ও পক্ষ-ডেটা দুর্বল হলে ব্যাংক প্রত্যাখ্যান, মেরামত, নিষেধাজ্ঞা ঘর্ষণ,…</li>  <li><strong>টোকেনাইজড আমানত ও হোলসেল CBDC.</strong> টোকেনাইজড আমানত বাণিজ্যিক-ব্যাংক মুদ্রা মডেল সংরক্ষণ করে, একই সঙ্গে প্রোগ্রামযোগ্যতা যুক্ত করে। হোলসেল কেন্দ্রীয় ব্যাংক মুদ্রা নিষ্পত্তি চূড়ান্ততা সংরক্ষণ করে। আকর্ষণীয় নকশা প্যাটার্ন হল সমন্বয়: ক্লায়েন্ট…</li></ul></aside><h1>২০২৬-এর হোলসেল পেমেন্ট সূচক: ISO 20022, টোকেনাইজড আমানত, রিয়েল-টাইম রেল ও আন্তঃসীমান্ত নিষ্পত্তি</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>২০২৬-এ হোলসেল পেমেন্ট দুটি একযোগে পরিবর্তন দ্বারা পুনর্গঠিত হচ্ছে: কাঠামোগত পেমেন্ট ডেটা ও প্রোগ্রামেবল নিষ্পত্তি। SWIFT-এর নভেম্বর ২০২৬-এর কাঠামোগত-ঠিকানা মাইলফলক ডেটার গুণমানকে পরিচালন মডেলের ভেতরে বাধ্যতামূলকভাবে নিয়ে আসে, অন্যদিকে BIS Project Agorá ও টোকেনাইজড আমানত পরীক্ষা করছে আন্তঃসীমান্ত নিষ্পত্তি আরও পারমাণবিক, স্বচ্ছ ও সর্বদা-উপলব্ধ হয়ে উঠতে পারে কিনা।</p>
+<hr />
+<blockquote>
+<p><strong>এক্সিকিউটিভ সারাংশ / মূল গ্রহণযোগ্য বিষয়</strong></p>
+<ul>
+<li><strong>নভেম্বর ২০২৬ একটি কঠিন ডেটা মাইলফলক।</strong> SWIFT জানিয়েছে, SR 2026 পরিবর্তনের পর অকাঠামোগত ঠিকানাযুক্ত পেমেন্ট আর সমর্থিত হবে না।</li>
+<li><strong>কাঠামোগত ডেটা পণ্যের পরিকাঠামোয় পরিণত হচ্ছে।</strong> ন্যূনতমভাবে শহর ও দেশকে নির্ধারিত ক্ষেত্রে থাকতে হবে, যা পেমেন্ট-ডেটার গুণমানকে ক্লায়েন্ট, পরিচালনা ও কমপ্লায়েন্স বিষয় বানিয়ে তোলে।</li>
+<li><strong>টোকেনাইজড আমানত হোলসেল নকশার বিকল্প।</strong> Project Agorá একীভূত খতিয়ান মডেলে টোকেনাইজড বাণিজ্যিক ব্যাংক আমানত ও টোকেনাইজড কেন্দ্রীয় ব্যাংক রিজার্ভ অনুসন্ধান করে।</li>
+<li><strong>সূচকের কেবল গতি নয়, নিষ্পত্তির গুণমান পরিমাপ করা উচিত।</strong> চূড়ান্ততা, স্বচ্ছতা, মেরামতের হার, তরলতা ব্যবহার, কমপ্লায়েন্স ডেটা ও ক্লায়েন্ট দৃশ্যমানতা — তাৎক্ষণিক সম্পাদনের মতোই গুরুত্বপূর্ণ।</li>
+<li><strong>আন্তঃসীমান্ত পেমেন্ট একটি সরকারি-বেসরকারি কর্মসূচি হিসেবে অব্যাহত।</strong> FSB সরকারি ও বেসরকারি খাতের সমন্বয়ের মাধ্যমে বাস্তবায়নের মধ্য দিয়ে G20 রোডম্যাপ এগিয়ে নিচ্ছে।</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="section-1">কেন ২০২৬ এই সূচকের গুরুত্বের বছর <a class="heading-anchor" href="#section-1" aria-label="লিঙ্ক কেন ২০২৬ এই সূচকের গুরুত্বের বছর">#</a></h2>
+<p>Stanford AI Index উপযোগী এই কারণে যে এটি একটি দ্রুতগতির প্রযুক্তি ক্ষেত্রকে এমন কিছু হিসেবে বিবেচনা করে যা পরিমাপযোগ্য: গবেষণার ফলাফল, প্রযুক্তিগত কর্মক্ষমতা, দায়িত্বশীল স্থাপনা, অর্থনীতি, খাত গ্রহণ, নীতি ও জনমত — সব একটিই কাঠামোয় আনা হয় (<a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" title="২০২৬-এর AI Index প্রতিবেদন">Stanford HAI ⧉</a>)। ব্যাংক ও আর্থিক প্রতিষ্ঠানগুলিকে এখন পরিকাঠামোর জন্য একই শৃঙ্খলা প্রয়োজন। এজেন্টিক AI, কোয়ান্টাম-নিরাপদ সুরক্ষা, ক্লাউড-নেটিভ স্থিতিস্থাপকতা ও হোলসেল পেমেন্ট আর পৃথক উদ্ভাবন ট্র্যাক নয়; সেগুলি একটিই পরিচালন মডেলে একীভূত হচ্ছে।</p>
+<p>ব্যাংকের জন্য বাস্তব প্রশ্ন হল না যে প্রতিটি ক্ষেত্র গুরুত্বপূর্ণ কিনা। প্রশ্ন হল, প্রতিষ্ঠান কি সবকিছুতেই একসঙ্গে প্রস্তুতি পরিমাপ করতে পারে। একটি ব্যাংক এজেন্টিক AI স্থাপন করতে পারে, তবু তার ক্রিপ্টোগ্রাফি মাইগ্রেশন-প্রস্তুত না হলে ভঙ্গুর থাকবে। ক্লাউড প্ল্যাটফর্ম আধুনিকায়ন করতে পারে, তবু পেমেন্ট ডেটা অকাঠামোগত থাকলে ব্যর্থ হবে। টোকেনাইজেশন পাইলট চালাতে পারে, তবু নিষ্পত্তি, তরলতা, পরিচয় ও অডিট স্তর একসঙ্গে নকশা করা না হলে ব্যবস্থাগত ঝুঁকি তৈরি করবে।</p>
+<h2 id="section-2">২০২৬ সূচক স্থাপত্য <a class="heading-anchor" href="#section-2" aria-label="লিঙ্ক ২০২৬ সূচক স্থাপত্য">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>সূচক স্তর</th>
+<th>২০২৬ দিকনির্দেশ</th>
+<th>প্রস্তুতি মেট্রিক</th>
+<th>অপব্যবস্থাপনায় ঝুঁকি</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ISO 20022 ডেটা</strong></td>
+<td>অকাঠামোগত পাঠ্য থেকে শাসিত কাঠামোগত ক্ষেত্রে স্থানান্তর</td>
+<td>কাঠামোগত ঠিকানা প্রস্তুতি ও প্রত্যাখ্যান হার</td>
+<td>পেমেন্ট প্রত্যাখ্যান ও ম্যানুয়াল মেরামত</td>
+</tr>
+<tr>
+<td><strong>রেল অর্কেস্ট্রেশন</strong></td>
+<td>RTGS, ইনস্ট্যান্ট, করেসপন্ডেন্ট, স্টেবলকয়েন ও টোকেনাইজড রেল জুড়ে রাউটিং</td>
+<td>খরচ, গতি, চূড়ান্ততা ও এখতিয়ার-সচেতন রাউটিং</td>
+<td>দ্বৈত নিয়ন্ত্রণসহ খণ্ডিত রেল</td>
+</tr>
+<tr>
+<td><strong>টোকেনাইজড নিষ্পত্তি</strong></td>
+<td>যেখানে ঘর্ষণ কমায়, সেখানে টোকেনাইজড আমানত ও কেন্দ্রীয় ব্যাংক মুদ্রা ব্যবহার</td>
+<td>DvP, PvP, পারমাণবিক নিষ্পত্তির আওতা</td>
+<td>ব্যবসায়িক ওয়ার্কফ্লো মূল্য ছাড়া পাইলট সম্পদ</td>
+</tr>
+<tr>
+<td><strong>তরলতা</strong></td>
+<td>ইন্ট্রাডে তরলতা, আটকে থাকা নগদ ও নিষ্পত্তি উইন্ডো অনুকূলকরণ</td>
+<td>সংরক্ষিত তরলতা ও নিষ্পত্তি-ব্যর্থতা হ্রাস</td>
+<td>তরলতার দ্রুততর ক্ষয়</td>
+</tr>
+<tr>
+<td><strong>কমপ্লায়েন্স</strong></td>
+<td>পেমেন্ট ডেটায় AML, নিষেধাজ্ঞা, FATF ও অডিট প্রয়োজনীয়তা এমবেড করা</td>
+<td>স্ট্রেট-থ্রু কমপ্লায়েন্স ও ব্যাখ্যাযোগ্যতা</td>
+<td>শক্তিশালী নিয়ন্ত্রণ ছাড়া সমৃদ্ধতর ডেটা</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-3">ট্র্যাক করার মতো বর্তমান সংকেত <a class="heading-anchor" href="#section-3" aria-label="লিঙ্ক ট্র্যাক করার মতো বর্তমান সংকেত">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>সংকেত</th>
+<th>ব্যাংকের জন্য এর অর্থ</th>
+<th>উৎস</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>পেমেন্ট বার্তার 65% অকাঠামোগত ঠিকানা ধারণ করে</strong></td>
+<td>মেরামতের চ্যালেঞ্জ এখনও বড়</td>
+<td><a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" title="ISO 20022 নভেম্বর ২০২৬ কাঠামোগত ঠিকানা মাইলফলক">SWIFT ⧉</a></td>
+</tr>
+<tr>
+<td><strong>নভেম্বর ২০২৬-এর পর অকাঠামোগত ঠিকানা সরানো হবে</strong></td>
+<td>পেমেন্ট-ডেটা প্রস্তুতি জরুরি হয়ে উঠছে</td>
+<td><a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" title="ISO 20022 নভেম্বর ২০২৬ কাঠামোগত ঠিকানা মাইলফলক">SWIFT ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Project Agorá প্রোটোটাইপ পর্যায়</strong></td>
+<td>কেন্দ্রীয়-ব্যাংক ও বাণিজ্যিক-ব্যাংক পরিবেশে টোকেনাইজড নিষ্পত্তি পরীক্ষা চলছে</td>
+<td><a href="https://www.bis.org/about/bisih/topics/fmis/agora.htm" title="Project Agorá">BIS ⧉</a></td>
+</tr>
+<tr>
+<td><strong>FSB বাস্তবায়ন পর্যায়</strong></td>
+<td>আন্তঃসীমান্ত পেমেন্ট উন্নয়ন বৈশ্বিক নীতি অগ্রাধিকার হিসেবে রয়ে গেছে</td>
+<td><a href="https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/" title="আন্তঃসীমান্ত পেমেন্ট বাস্তবায়ন পর্যায়">FSB ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Deutsche Bank ডিজিটাল মুদ্রা কাঠামো</strong></td>
+<td>স্টেবলকয়েন, টোকেনাইজড আমানত ও CBDC ব্যবহারিক কর্পোরেট-ব্যাংক স্থাপত্যের বিষয় হয়ে উঠছে</td>
+<td><a href="https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs" title="ডিজিটাল মুদ্রা: স্টেবলকয়েন, টোকেনাইজড আমানত ও CBDC">Deutsche Bank ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-4">পেমেন্ট ডেটার বাঁক বিন্দু <a class="heading-anchor" href="#section-4" aria-label="লিঙ্ক পেমেন্ট ডেটার বাঁক বিন্দু">#</a></h2>
+<p>ISO 20022 মেসেজিং-ফরম্যাট প্রকল্প থেকে ডেটা-গুণমান পরিচালন মডেলে রূপান্তরিত হয়েছে। সুবিধাভোগী, ঋণগ্রহীতা, ঋণদাতা, এজেন্ট, শহর, দেশ, উদ্দেশ্য ও পক্ষ-ডেটা দুর্বল হলে ব্যাংক প্রত্যাখ্যান, মেরামত, নিষেধাজ্ঞা ঘর্ষণ, ক্লায়েন্ট অসন্তুষ্টি ও দুর্বল বিশ্লেষণের সম্মুখীন হবে।</p>
+<h2 id="cbdc">টোকেনাইজড আমানত ও হোলসেল CBDC <a class="heading-anchor" href="#cbdc" aria-label="লিঙ্ক টোকেনাইজড আমানত ও হোলসেল CBDC">#</a></h2>
+<p>টোকেনাইজড আমানত বাণিজ্যিক-ব্যাংক মুদ্রা মডেল সংরক্ষণ করে, একই সঙ্গে প্রোগ্রামযোগ্যতা যুক্ত করে। হোলসেল কেন্দ্রীয় ব্যাংক মুদ্রা নিষ্পত্তি চূড়ান্ততা সংরক্ষণ করে। আকর্ষণীয় নকশা প্যাটার্ন হল সমন্বয়: ক্লায়েন্ট সম্পর্ক ও ক্রেডিট মধ্যস্থতার জন্য বাণিজ্যিক ব্যাংক মুদ্রা, এবং চূড়ান্ত নিষ্পত্তি ও ব্যবস্থাগত আস্থার জন্য কেন্দ্রীয় ব্যাংক মুদ্রা।</p>
+<h2 id="section-6">নতুন হোলসেল পেমেন্ট পণ্য <a class="heading-anchor" href="#section-6" aria-label="লিঙ্ক নতুন হোলসেল পেমেন্ট পণ্য">#</a></h2>
+<p>পণ্য আর কেবল পেমেন্ট নয়। এটি সম্পাদন, ডেটা, তরলতা, কমপ্লায়েন্স, অনুসন্ধানযোগ্যতা ও ব্যতিক্রম ব্যবস্থাপনার একটি বান্ডিল। যে ব্যাংকগুলি এই সক্ষমতাগুলিকে API ও ক্লায়েন্ট ড্যাশবোর্ডের মাধ্যমে উন্মুক্ত করতে পারে, তারা পরিকাঠামো কমপ্লায়েন্সকে ক্লায়েন্ট মূল্যে রূপান্তর করবে।</p>
+<h2 id="section-7">ব্যাংকের ধরন অনুসারে এর অর্থ <a class="heading-anchor" href="#section-7" aria-label="লিঙ্ক ব্যাংকের ধরন অনুসারে এর অর্থ">#</a></h2>
+<h3 id="section-8">বৈশ্বিকভাবে ব্যবস্থাগতভাবে গুরুত্বপূর্ণ ব্যাংক <a class="heading-anchor" href="#section-8" aria-label="লিঙ্ক বৈশ্বিকভাবে ব্যবস্থাগতভাবে গুরুত্বপূর্ণ ব্যাংক">#</a></h3>
+<p>বৈশ্বিক ব্যাংকগুলির এই সূচককে এন্টারপ্রাইজ স্থাপত্য স্কোরকার্ড হিসেবে গণ্য করা উচিত। অগ্রাধিকার আরেকটি প্রুফ অফ কনসেপ্ট নয়; প্রমাণ যে স্বায়ত্ত ওয়ার্কফ্লো, ক্রিপ্টোগ্রাফিক মাইগ্রেশন, ক্লাউড নির্ভরতা ও পেমেন্ট আধুনিকায়নকে একটিই ঝুঁকি ও মূল্য ব্যবস্থা হিসেবে পরিচালনা করা যায়।</p>
+<h3 id="section-9">লেনদেন ব্যাংক ও কর্পোরেট ব্যাংক <a class="heading-anchor" href="#section-9" aria-label="লিঙ্ক লেনদেন ব্যাংক ও কর্পোরেট ব্যাংক">#</a></h3>
+<p>লেনদেন ব্যাংকগুলির হোলসেল পেমেন্ট, কাঠামোগত ডেটা, তরলতা, টোকেনাইজড আমানত ও এজেন্টিক ট্রেজারি পরিষেবার উপর মনোনিবেশ করা উচিত। সর্বাধিক মূল্যবান ক্লায়েন্ট প্রস্তাব কেবল দ্রুত অর্থ স্থানান্তর নয়; এটি ব্যাখ্যাযোগ্য, অডিটযোগ্য, প্রোগ্রামেবল অর্থ স্থানান্তর — কম তদন্ত ও উন্নত ওয়ার্কিং-ক্যাপিটাল দৃশ্যমানতাসহ।</p>
+<h3 id="section-10">আঞ্চলিক ব্যাংক <a class="heading-anchor" href="#section-10" aria-label="লিঙ্ক আঞ্চলিক ব্যাংক">#</a></h3>
+<p>আঞ্চলিক ব্যাংকগুলির কর্মসূচির বিস্তার এড়াতে সূচক ব্যবহার করা উচিত। তাদের প্রতিটি ফ্রন্টিয়ারে নেতৃত্ব দিতে হবে না, তবে AI গভর্নেন্স, পোস্ট-কোয়ান্টাম ইনভেন্টরি, ক্লাউড এক্সিট প্রমাণ ও পেমেন্ট-ডেটা প্রস্তুতির উপর বিশ্বাসযোগ্য অবস্থান প্রয়োজন।</p>
+<h3 id="psp">ফিনটেক, PSP ও পরিকাঠামো প্রদানকারী <a class="heading-anchor" href="#psp" aria-label="লিঙ্ক ফিনটেক, PSP ও পরিকাঠামো প্রদানকারী">#</a></h3>
+<p>ফিনটেক ও পরিকাঠামো প্রদানকারীদের তাদের পণ্য রোডম্যাপ পরিমাপযোগ্য ব্যাংক প্রস্তুতির সঙ্গে সারিবদ্ধ করা উচিত। সেরা প্রস্তাবগুলি সংহতকরণের ঝুঁকি কমাবে, প্রমাণ শক্তিশালী করবে ও জটিল পরিকাঠামোকে ব্যাংকের জন্য পরিচালনা করা সহজ করে তুলবে।</p>
+<h2 id="section-12">উপসংহার <a class="heading-anchor" href="#section-12" aria-label="লিঙ্ক উপসংহার">#</a></h2>
+<p>সূচক-ধাঁচের প্রতিবেদনের মূল্য হল, এটি একটি খণ্ডিত প্রযুক্তি কর্মসূচিকে পরিমাপযোগ্য পরিচালন মডেলে রূপান্তর করে। ২০২৬-এ আর্থিক পরিকাঠামোর বিজয়ীরা সর্বাধিক পাইলটযুক্ত প্রতিষ্ঠান হবে না। বিজয়ী হবে সেই প্রতিষ্ঠানগুলি, যারা স্বায়ত্ততা, সুরক্ষা, স্থিতিস্থাপকতা, নিষ্পত্তি, অর্থনীতি ও গভর্নেন্সের জুড়ে একসঙ্গে প্রস্তুতি প্রমাণ করতে পারে।</p>
+<h2 id="section-13">প্রায়শই জিজ্ঞাসিত প্রশ্ন <a class="heading-anchor" href="#section-13" aria-label="লিঙ্ক প্রায়শই জিজ্ঞাসিত প্রশ্ন">#</a></h2>
+<p><strong>ISO 20022 কেন এখনও ২০২৬-এর বিষয়?</strong></p>
+<p>কারণ মাইগ্রেশন তখনই সম্পূর্ণ হবে, যখন পেমেন্ট ডেটা কাঠামোবদ্ধ, শাসিত, উৎসে ধৃত ও চ্যানেল, ক্লায়েন্ট ও বাজার পরিকাঠামোর জুড়ে ব্যবহারযোগ্য হবে।</p>
+<p><strong>টোকেনাইজড আমানত কী?</strong></p>
+<p>টোকেনাইজড আমানত হল বাণিজ্যিক ব্যাংক মুদ্রার একটি ডিজিটাল প্রতিনিধিত্ব, যা ব্যাংক-আমানতকারীর সম্পর্ক সংরক্ষণের পাশাপাশি প্রোগ্রামেবল নিষ্পত্তি সক্ষম করার জন্য নকশা করা।</p>
+<p><strong>টোকেনাইজড আমানত কি স্টেবলকয়েনকে প্রতিস্থাপন করে?</strong></p>
+<p>সর্বত্র নয়। কিছু ডিজিটাল-সম্পদ ও আন্তঃসীমান্ত প্রসঙ্গে স্টেবলকয়েন উপযোগী থাকতে পারে, অন্যদিকে নিয়ন্ত্রিত হোলসেল ব্যাংকিং-এর জন্য টোকেনাইজড আমানত কাঠামোগতভাবে আকর্ষণীয়।</p>
+<p><strong>ব্যাংকের কী পরিমাপ করা উচিত?</strong></p>
+<p>কাঠামোগত-ডেটা প্রস্তুতি, পেমেন্ট প্রত্যাখ্যান, মেরামত খরচ, নিষ্পত্তি সময়, তরলতা ব্যবহার, রেল রাউটিং ফলাফল ও ক্লায়েন্ট দৃশ্যমানতা পরিমাপ করুন।</p>
+<h2 id="section-14">তথ্যসূত্র <a class="heading-anchor" href="#section-14" aria-label="লিঙ্ক তথ্যসূত্র">#</a></h2>
+<ul>
+<li>SWIFT, (2026). <a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" title="ISO 20022 নভেম্বর ২০২৬ কাঠামোগত ঠিকানা মাইলফলক">ISO 20022 নভেম্বর ২০২৬ কাঠামোগত ঠিকানা মাইলফলক ⧉</a>।</li>
+<li>BIS Innovation Hub, (2026). <a href="https://www.bis.org/about/bisih/topics/fmis/agora.htm" title="Project Agorá">Project Agorá ⧉</a>।</li>
+<li>FSB, (2026). <a href="https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/" title="আন্তঃসীমান্ত পেমেন্ট বাস্তবায়ন পর্যায়">আন্তঃসীমান্ত পেমেন্ট বাস্তবায়ন পর্যায় ⧉</a>।</li>
+<li>Deutsche Bank, (2026). <a href="https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs" title="ডিজিটাল মুদ্রা: স্টেবলকয়েন, টোকেনাইজড আমানত ও CBDC">ডিজিটাল মুদ্রা: স্টেবলকয়েন, টোকেনাইজড আমানত ও CBDC ⧉</a>।</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-06-06">2026-06-06</time>।</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="Sebastien Rousseau-এর ছবি" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/bn/amader-shomporke/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">সিনিয়র ব্যাঙ্কিং প্রযুক্তিবিদ; আমি প্রায়োগিক এআই, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লিখি।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০ বছরেরও বেশি অভিজ্ঞতা। <a href="/bn/amader-shomporke/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-05-28">2026-05-28</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">সম্পর্কিত পঠন</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/bn/2026-05-19-global-wholesale-payments-economics-2026" class="related-media" aria-label="২০২৬-এ বৈশ্বিক পাইকারি পেমেন্ট: ISO 20022, RTGS পুনর্নবায়ন এবং আন্তঃকার্যকারিতার অর্থনীতি" tabindex="-1"><img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/api/transform?url=/stocks/images/meiying-ng-OrwkD-iWgqg.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="iso-20022-rtgs"><a href="https://sebastienrousseau.com/bn/2026-05-19-global-wholesale-payments-economics-2026">২০২৬-এ বৈশ্বিক পাইকারি পেমেন্ট: ISO 20022, RTGS পুনর্নবায়ন এবং আন্তঃকার্যকারিতার অর্থনীতি</a> <a class="heading-anchor" href="#iso-20022-rtgs" aria-label="লিঙ্ক ২০২৬-এ বৈশ্বিক পাইকারি পেমেন্ট: ISO 20022, RTGS পুনর্নবায়ন এবং আন্তঃকার্যকারিতার অর্থনীতি">#</a></h3><p><time datetime="2026-05-19">2026-05-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/bn/2026-05-21-tokenised-deposits-banking-services-status-2026" class="related-media" aria-label="২০২৬-এ টোকেনাইজড আমানত: ব্যাংকিং পরিষেবা, স্টেবলকয়েন প্রতিযোগিতা এবং প্রোগ্রামেবল বাণিজ্যিক ব্যাংকের অর্থের অবস্থা" tabindex="-1"><img alt="Tokenised deposit banking architecture for 2026 showing commercial bank money, digital wallets, stablecoins, CBDCs, tokenised gilts, and Project Agorá settlement paths" src="https://cloudcdn.pro/api/transform?url=/stocks/images/bit-cloud-GlqbGLCPnQ4.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-16"><a href="https://sebastienrousseau.com/bn/2026-05-21-tokenised-deposits-banking-services-status-2026">২০২৬-এ টোকেনাইজড আমানত: ব্যাংকিং পরিষেবা, স্টেবলকয়েন প্রতিযোগিতা এবং প্রোগ্রামেবল বাণিজ্যিক ব্যাংকের অর্থের অবস্থা</a> <a class="heading-anchor" href="#section-16" aria-label="লিঙ্ক ২০২৬-এ টোকেনাইজড আমানত: ব্যাংকিং পরিষেবা, স্টেবলকয়েন প্রতিযোগিতা এবং প্রোগ্রামেবল বাণিজ্যিক ব্যাংকের অর্থের অবস্থা">#</a></h3><p><time datetime="2026-05-21">2026-05-21</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/bn/2026-05-12-iso-20022-pacs008-structured-address-deadline" class="related-media" aria-label="The novembre 2026 pacs.008 Structured-Address Deadline: A Six-Month View" tabindex="-1"><img alt="ISO 20022 pacs.008 structured address diagram — cross-border payment message fields with TwnNm and Ctry highlighted" src="https://cloudcdn.pro/api/transform?url=/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="the-novembre-2026-pacs-008-structured-address-deadline-a-six-month-view"><a href="https://sebastienrousseau.com/bn/2026-05-12-iso-20022-pacs008-structured-address-deadline">The novembre 2026 pacs.008 Structured-Address Deadline: A Six-Month View</a> <a class="heading-anchor" href="#the-novembre-2026-pacs-008-structured-address-deadline-a-six-month-view" aria-label="লিঙ্ক The novembre 2026 pacs.008 Structured-Address Deadline: A Six-Month View">#</a></h3><p><time datetime="2026-05-12">2026-05-12</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">সূত্র ও তথ্যসূত্র</h2><ol class="article-sources-list"><li><a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" rel="external noopener nofollow"><span class="source-host">www.swift.com</span><span class="source-path">/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be…</span></a></li><li><a href="https://www.bis.org/about/bisih/topics/fmis/agora.htm" rel="external noopener nofollow"><span class="source-host">www.bis.org</span><span class="source-path">/about/bisih/topics/fmis/agora.htm</span></a></li></ol></aside><nav class="post-pagination" aria-label="নিবন্ধ পেজিনেশন"><a class="post-pagination-prev" href="/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">পূর্ববর্তী</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/bn/amader-shomporke/index.html">About</a></li>
+              <li><a href="/bn/jogajog/index.html">Contact</a></li>
+              <li><a href="/bn/static-site-generator-die-toiri/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">লেখা</h2>
+            <ul>
+              <li><a href="/bn/prabondho/index.html">Articles</a></li>
+              <li><a href="/bn/prokashana/index.html">Papers</a></li>
+              <li><a href="/bn/tag/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">কাজ</h2>
+            <ul>
+              <li><a href="/bn/prokolpo/index.html">Projects</a></li>
+              <li><a href="/bn/playlist/index.html">Playlists</a></li>
+              <li><a href="/bn/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">যোগাযোগ</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="নিউজলেটার সাবস্ক্রিপশন">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — পেমেন্ট, এআই এবং পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি বিষয়ক গবেষণা নোট। কোনও স্প্যাম নয়।</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="apni@bank.bd" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">সাবস্ক্রাইব করুন</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="সামাজিক লিঙ্ক">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau-এ Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau-এ LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau-এ Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau-এ YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/bn/prabeshjogyota/index.html">Accessibility</a> ·
+            <a href="/bn/goponiyota/index.html">Privacy</a> ·
+            <a href="/bn/shorto/index.html">Terms</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"bn"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"bn"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1001,"about":{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]},"headline":"২০২৬-এর হোলসেল পেমেন্ট সূচক: ISO 20022, টোকেনাইজড আমানত, রিয়েল-টাইম রেল ও আন্তঃসীমান্ত নিষ্পত্তি","description":"হোলসেল পেমেন্ট প্রস্তুতির জন্য ২০২৬ সূচক — ISO 20022 ডেটার গুণমান, টোকেনাইজড আমানত, রিয়েল-টাইম রেল, আন্তঃসীমান্ত নিষ্পত্তি ও তরলতা দক্ষতা পরিমাপ করে পরিচালন মডেলের মধ্যে।","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/rodion-kutsaiev-OQ0zP6AS2DI.webp","width":"100vw","height":"100vh","caption":"২০২৬ হোলসেল পেমেন্ট সূচকের ভিজ্যুয়াল হিসেবে ব্যবহৃত বিমূর্ত স্থাপত্য আলোকচিত্র — ISO 20022 ডেটার গুণমান, টোকেনাইজড আমানত, রিয়েল-টাইম রেল, আন্তঃসীমান্ত নিষ্পত্তি ও তরলতা দক্ষতা পরিমাপ করে"},"url":"https://sebastienrousseau.com/bn/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/","datePublished":"2026-06-06T06:06:06+00:00","dateModified":"2026-06-06","inLanguage":"bn","keywords":"হোলসেল পেমেন্ট ২০২৬, ISO 20022, টোকেনাইজড আমানত, Project Agorá, আন্তঃসীমান্ত পেমেন্ট, রিয়েল-টাইম পেমেন্ট, কাঠামোগত ঠিকানা ডেটা, পেমেন্ট ডেটার গুণমান","articleSection":"Finance","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/bn/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"bn"},"citation":[{"@type":"CreativeWork","url":"https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed"},{"@type":"CreativeWork","url":"https://www.bis.org/about/bisih/topics/fmis/agora.htm"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/bn/"},{"@type":"ListItem","position":3,"name":"২০২৬-এর হোলসেল পেমেন্ট সূচক: ISO 20022, টোকেনাইজড আমানত, রিয়েল-টাইম রেল ও আন্তঃসীমান্ত নিষ্পত্তি","item":"https://sebastienrousseau.com/bn/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="অনুসন্ধান">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>অনুসন্ধান</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="অনুসন্ধান">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="ডকুমেন্টে অনুসন্ধান করুন..." autocomplete="off" aria-label="অনুসন্ধান"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> বন্ধ করুন</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> নেভিগেট করুন</span><span><kbd>Enter</kbd> খুলুন</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"২০২৬-এর হোলসেল পেমেন্ট সূচক: ISO 20022, টোকেনাইজড আমানত, রিয়েল-টাইম রেল ও আন্তঃসীমান্ত নিষ্পত্তি","url":"https://sebastienrousseau.com/bn/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/","inLanguage":"bn-BD","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"হোলসেল পেমেন্ট ২০২৬, ISO 20022, টোকেনাইজড আমানত, Project Agorá, আন্তঃসীমান্ত পেমেন্ট, রিয়েল-টাইম পেমেন্ট, কাঠামোগত ঠিকানা ডেটা, পেমেন্ট ডেটার গুণমান","dependencies":["ISO 20022"]}</script></body>
+</html>

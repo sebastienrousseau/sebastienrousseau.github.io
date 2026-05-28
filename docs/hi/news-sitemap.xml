@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/hi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>hi-IN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T16:56:18+00:00</news:publication_date>
+    <news:title>2026 का थोक भुगतान सूचकांक: ISO 20022, टोकनाइज़्ड जमा, रियल-टाइम रेल और सीमा-पार निपटान</news:title>
+    <news:keywords>थोक भुगतान 2026, ISO 20022, टोकनाइज़्ड जमा, Project Agorá, सीमा-पार भुगतान, रियल-टाइम भुगतान, संरचित पता डेटा, भुगतान डेटा गुणवत्ता</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

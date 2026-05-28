@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/bn/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>bn-BD</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T16:56:18+00:00</news:publication_date>
+    <news:title>২০২৬-এর হোলসেল পেমেন্ট সূচক: ISO 20022, টোকেনাইজড আমানত, রিয়েল-টাইম রেল ও আন্তঃসীমান্ত নিষ্পত্তি</news:title>
+    <news:keywords>হোলসেল পেমেন্ট ২০২৬, ISO 20022, টোকেনাইজড আমানত, Project Agorá, আন্তঃসীমান্ত পেমেন্ট, রিয়েল-টাইম পেমেন্ট, কাঠামোগত ঠিকানা ডেটা, পেমেন্ট ডেটার গুণমান</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

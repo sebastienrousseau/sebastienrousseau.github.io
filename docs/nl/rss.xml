@@ -6,14 +6,31 @@
     <description>Artikelen in het Nederlands: toegepaste AI, ISO 20022-betalingen, post-kwantumcryptografie en transformatie van het wholesale-betalingsverkeer.</description>
     <atom:link href="https://sebastienrousseau.com/nl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>nl-NL</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 16:56:18 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle rechten voorbehouden.</copyright>
+    <item>
+      <title>De Wholesale Payments Index in 2026: ISO 20022, deposito&apos;s, realtime rails en grensoverschrijdende afwikkeling</title>
+      <link>https://sebastienrousseau.com/nl/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</link>
+      <description>Een index voor 2026 die de gereedheid van grootschalige betalingen meet: ISO 20022-datakwaliteit, getokeniseerde deposito&apos;s, realtime rails, grensoverschrijdende afwikkeling en liquiditeitsefficiëntie.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</guid>
+      <pubDate>Thu, 28 May 2026 16:56:18 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/rodion-kutsaiev-OQ0zP6AS2DI.webp" type="image/webp" length="0"/>
+      <category>grootschalige betalingen 2026</category>
+      <category>ISO 20022</category>
+      <category>getokeniseerde deposito&apos;s</category>
+      <category>Project Agorá</category>
+      <category>grensoverschrijdende betalingen</category>
+      <category>realtime betalingen</category>
+      <category>gestructureerd adres</category>
+      <category>betalingsdatakwaliteit</category>
+    </item>
     <item>
       <title>DORA, EU AI Act en datasoevereiniteit: de compliance-stack 2026 voor banken</title>
       <link>https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
       <description>DORA, EU AI Act, GDPR, concentratierisico cloud en datasoevereiniteit smelten in 2026 samen tot één compliance-stack voor banken in Nederland.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
-      <pubDate>Thu, 28 May 2026 06:26:19 +0000</pubDate>
+      <pubDate>Thu, 28 May 2026 16:56:18 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>DORA 2026</category>

@@ -6,8 +6,25 @@
     <description>हिन्दी लेख: व्यावहारिक AI, ISO 20022 भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतान का रूपांतरण।</description>
     <atom:link href="https://sebastienrousseau.com/hi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>hi-IN</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 16:56:18 +0000</lastBuildDate>
     <copyright>© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।</copyright>
+    <item>
+      <title>2026 का थोक भुगतान सूचकांक: ISO 20022, टोकनाइज़्ड जमा, रियल-टाइम रेल और सीमा-पार निपटान</title>
+      <link>https://sebastienrousseau.com/hi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</link>
+      <description>थोक भुगतान तत्परता का 2026 सूचकांक — ISO 20022 डेटा गुणवत्ता, टोकनाइज़्ड जमा, रियल-टाइम रेल, सीमा-पार निपटान और तरलता दक्षता के मापन हेतु बैंक स्कोरकार्ड।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</guid>
+      <pubDate>Thu, 28 May 2026 16:56:18 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/rodion-kutsaiev-OQ0zP6AS2DI.webp" type="image/webp" length="0"/>
+      <category>थोक भुगतान 2026</category>
+      <category>ISO 20022</category>
+      <category>टोकनाइज़्ड जमा</category>
+      <category>Project Agorá</category>
+      <category>सीमा-पार भुगतान</category>
+      <category>रियल-टाइम भुगतान</category>
+      <category>संरचित पता डेटा</category>
+      <category>भुगतान डेटा गुणवत्ता</category>
+    </item>
     <item>
       <title>DORA, EU AI अधिनियम और डेटा संप्रभुता: बैंकों का 2026 अनुपालन स्टैक</title>
       <link>https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

@@ -6,8 +6,25 @@
     <description>Articles en français : IA appliquée, paiements ISO 20022, cryptographie post-quantique et transformation des paiements wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/fr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fr-FR</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 16:56:18 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Tous droits réservés.</copyright>
+    <item>
+      <title>L&apos;indice 2026 des paiements de gros : ISO 20022, dépôts tokenisés et règlement transfrontalier</title>
+      <link>https://sebastienrousseau.com/fr/2026-06-06-de-gros-paiements-index-iso20022-tokenise-deposits-cross-border-2026/</link>
+      <description>Un indice 2026 de maturité des paiements de gros, mesurant la qualité des données ISO 20022, les dépôts tokenisés, les rails temps réel, le règlement transfrontalier et l&apos;efficacité de liquidité.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-06-06-de-gros-paiements-index-iso20022-tokenise-deposits-cross-border-2026/</guid>
+      <pubDate>Thu, 28 May 2026 16:56:18 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/rodion-kutsaiev-OQ0zP6AS2DI.webp" type="image/webp" length="0"/>
+      <category>paiements de gros 2026</category>
+      <category>ISO 20022</category>
+      <category>dépôts tokenisés</category>
+      <category>Project Agorá</category>
+      <category>paiements transfrontaliers</category>
+      <category>paiements temps réel</category>
+      <category>adresse structurée</category>
+      <category>qualité des données de paiement</category>
+    </item>
     <item>
       <title>DORA, EU AI Act et souveraineté des données : la pile de conformité 2026 pour les banques</title>
       <link>https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

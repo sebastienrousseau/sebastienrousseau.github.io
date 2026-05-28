@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/uk/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>uk-UA</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T16:56:18+00:00</news:publication_date>
+    <news:title>Індекс оптових платежів у 2026: ISO 20022, токенізовані депозити, рейки реального часу та транскордонні розрахунки</news:title>
+    <news:keywords>оптові платежі 2026, ISO 20022, токенізовані депозити, Project Agorá, транскордонні платежі, платежі в реальному часі, структуровані адресні дані, якість платіжних даних</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/uk/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

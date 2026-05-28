@@ -6,8 +6,25 @@
     <description>Статті українською: прикладний ШІ, платежі ISO 20022, постквантова криптографія та трансформація оптових платежів.</description>
     <atom:link href="https://sebastienrousseau.com/uk/rss.xml" rel="self" type="application/rss+xml"/>
     <language>uk-UA</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 16:56:18 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Усі права захищено.</copyright>
+    <item>
+      <title>Індекс оптових платежів у 2026: ISO 20022, токенізовані депозити, рейки реального часу та транскордонні розрахунки</title>
+      <link>https://sebastienrousseau.com/uk/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</link>
+      <description>Індекс готовності оптових платежів 2026: якість даних ISO 20022, токенізовані депозити, платіжні рейки реального часу, транскордонні розрахунки та ефективність ліквідності.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</guid>
+      <pubDate>Thu, 28 May 2026 16:56:18 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/rodion-kutsaiev-OQ0zP6AS2DI.webp" type="image/webp" length="0"/>
+      <category>оптові платежі 2026</category>
+      <category>ISO 20022</category>
+      <category>токенізовані депозити</category>
+      <category>Project Agorá</category>
+      <category>транскордонні платежі</category>
+      <category>платежі в реальному часі</category>
+      <category>структуровані адресні дані</category>
+      <category>якість платіжних даних</category>
+    </item>
     <item>
       <title>DORA, EU AI Act і суверенітет даних: стек банківського комплаєнсу 2026</title>
       <link>https://sebastienrousseau.com/uk/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

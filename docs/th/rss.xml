@@ -6,8 +6,25 @@
     <description>บทความภาษาไทย: AI ประยุกต์, การชำระเงิน ISO 20022, การเข้ารหัสหลังควอนตัม และการปฏิรูปการชำระเงินขายส่ง</description>
     <atom:link href="https://sebastienrousseau.com/th/rss.xml" rel="self" type="application/rss+xml"/>
     <language>th-TH</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 16:56:18 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์</copyright>
+    <item>
+      <title>ดัชนีการชำระเงินขายส่งในปี 2026: ISO 20022 เงินฝากโทเค็น รางเรียลไทม์ และการชำระบัญชีข้ามพรมแดน</title>
+      <link>https://sebastienrousseau.com/th/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</link>
+      <description>ดัชนีความพร้อมการชำระเงินขายส่งปี 2026 วัดคุณภาพข้อมูล ISO 20022 เงินฝากโทเค็น รางการชำระเงินเรียลไทม์ การชำระบัญชีข้ามพรมแดน และประสิทธิภาพสภาพคล่องในระดับธนาคาร</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</guid>
+      <pubDate>Thu, 28 May 2026 16:56:18 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/rodion-kutsaiev-OQ0zP6AS2DI.webp" type="image/webp" length="0"/>
+      <category>การชำระเงินขายส่ง 2026</category>
+      <category>ISO 20022</category>
+      <category>เงินฝากโทเค็น</category>
+      <category>Project Agorá</category>
+      <category>การชำระเงินข้ามพรมแดน</category>
+      <category>การชำระเงินเรียลไทม์</category>
+      <category>ที่อยู่แบบมีโครงสร้าง</category>
+      <category>คุณภาพข้อมูลการชำระเงิน</category>
+    </item>
     <item>
       <title>DORA กฎหมาย AI ของ EU และอธิปไตยข้อมูล: สแต็คการปฏิบัติตามกฎปี 2026 ของธนาคาร</title>
       <link>https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

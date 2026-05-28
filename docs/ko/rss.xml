@@ -6,8 +6,25 @@
     <description>한국어 기사: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 그리고 도매 결제 인프라의 구조적 변혁.</description>
     <atom:link href="https://sebastienrousseau.com/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 16:56:18 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>2026 거액 결제 지수: ISO 20022·토큰화 예금·실시간 레일</title>
+      <link>https://sebastienrousseau.com/ko/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</link>
+      <description>ISO 20022 데이터 품질, 토큰화 예금, 실시간 결제 레일, 국경 간 결제, 유동성 효율성을 측정하는 2026년 거액 결제 준비도 지수입니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</guid>
+      <pubDate>Thu, 28 May 2026 16:56:18 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/rodion-kutsaiev-OQ0zP6AS2DI.webp" type="image/webp" length="0"/>
+      <category>거액 결제 2026</category>
+      <category>ISO 20022</category>
+      <category>토큰화 예금</category>
+      <category>Project Agorá</category>
+      <category>국경 간 결제</category>
+      <category>실시간 결제</category>
+      <category>구조화된 주소 데이터</category>
+      <category>결제 데이터 품질</category>
+    </item>
     <item>
       <title>DORA, EU AI 법, 데이터 주권: 2026년 은행을 위한 컴플라이언스 스택</title>
       <link>https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

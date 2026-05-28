@@ -3,10 +3,10 @@
 # Front Matter (YAML)
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "The Wholesale Payments Index 2026 index diagram for banks and financial institutions in 2026"
-banner_height: "571"
-banner_width: "1425"
-banner: "https://cloudcdn.pro/stock/images/wholesale-payments-index-2026-banner.webp"
+banner_alt: "Abstract architectural photograph used as the visual key for the 2026 Wholesale Payments Index — measuring ISO 20022 data quality, tokenised deposits, real-time rails, cross-border settlement, and liquidity efficiency"
+banner_height: "1597"
+banner_width: "2584"
+banner: "https://cloudcdn.pro/stocks/images/rodion-kutsaiev-OQ0zP6AS2DI.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -42,6 +42,7 @@ seo_title: "The Wholesale Payments Index 2026"
 short_name: "sebastienrousseau"
 subtitle: "Wholesale payments are moving from messaging migration to programmable settlement; banks need to measure data quality, rail orchestration, liquidity, and finality."
 tags: "wholesale payments, ISO 20022, tokenised deposits, cross-border payments, Project Agora, payment data"
+excerpt: "A 2026 wholesale payments readiness index — measuring ISO 20022 data-quality completeness, tokenised deposit pilot maturity, real-time rail orchestration, cross-border settlement architecture, and liquidity efficiency across the operating model."
 theme-color: "0, 83, 191"
 title: "The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement"
 url: "https://sebastienrousseau.com/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026"
@@ -101,6 +102,23 @@ site_software: "Static Site Generator, Rust"
 ---
 
 # The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement
+
+
+
+
+<!-- lead-start -->
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> A 2026 index for wholesale payments readiness, measuring ISO 20022 data quality, tokenised deposits, real-time rails, cross-border settlement, and liquidity efficiency.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Why 2026 Is the Year This Index Matters.</strong> The Stanford AI Index is useful because it treats a fast-moving technology field as something that can be measured: research output, technical performance, responsible deployment, economics, sector adoption, policy,…</li>
+  <li><strong>Current Signals to Track.</strong> ISO 20022 has moved from a messaging-format project to a data-quality operating model.</li>
+  <li><strong>The Payment Data Inflection Point.</strong> ISO 20022 has moved from a messaging-format project to a data-quality operating model.</li>
+  <li><strong>Tokenised Deposits and Wholesale CBDC.</strong> Tokenised deposits preserve the commercial-bank money model while adding programmability.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</a>, <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026">Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</a>, <a href="https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline">The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View</a>.</p>
+</aside>
+<!-- lead-end -->
 
 Wholesale payments in 2026 are being reshaped by two simultaneous shifts: structured payment data and programmable settlement. SWIFT’s November 2026 structured-address milestone forces data quality into the operating model, while BIS Project Agorá and tokenised deposits are testing whether cross-border settlement can become more atomic, transparent, and always-on.
 
@@ -202,6 +220,14 @@ Measure structured-data readiness, payment rejects, repair cost, settlement time
 - Deutsche Bank, (2026). [Digital Money: stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, payments infrastructure, tokenised money, ISO 20022, post-quantum security, cloud-native financial services, and regulated digital markets.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-06-06">2026-06-06</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026" class="related-media" aria-label="Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability" tabindex="-1"><img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</a></h3><p><time datetime="2026-05-19">2026-05-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026" class="related-media" aria-label="Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money" tabindex="-1"><img alt="Tokenised deposit banking architecture for 2026 showing commercial bank money, digital wallets, stablecoins, CBDCs, tokenised gilts, and Project Agorá settlement paths" src="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026">Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</a></h3><p><time datetime="2026-05-21">2026-05-21</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline" class="related-media" aria-label="The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View" tabindex="-1"><img alt="ISO 20022 pacs.008 structured address diagram — cross-border payment message fields with TwnNm and Ctry highlighted" src="https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline">The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View</a></h3><p><time datetime="2026-05-12">2026-05-12</time></p></footer></article>
+</div>
+</aside>
 <!-- enrich-end -->

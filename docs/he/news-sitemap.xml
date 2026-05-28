@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/he/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T16:56:18+00:00</news:publication_date>
+    <news:title>מדד התשלומים הסיטונאיים 2026: ISO 20022, פיקדונות מתוקנים, מסילות בזמן אמת וסליקה חוצה-גבולות</news:title>
+    <news:keywords>תשלומים סיטונאיים 2026, ISO 20022, פיקדונות מתוקנים, Project Agorá, תשלומים חוצי-גבולות, תשלומים בזמן אמת, כתובת מובנית, איכות נתוני תשלום, מסילות בזמן אמת, סליקה חוצה-גבולות, נזילות תוך-יומית</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

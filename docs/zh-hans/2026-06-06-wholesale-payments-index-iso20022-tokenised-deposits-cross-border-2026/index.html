@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Sat, 06 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Sat, 06 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>2026 大额支付指数：ISO 20022、代币化存款与跨境结算 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="面向 2026 年的大额支付就绪度指数，衡量 ISO 20022 数据质量、代币化存款、实时支付轨道、跨境结算与流动性效率，把碎片化议程整合为一套可计量的运营模型。">
+<meta name="keywords" content="大额支付 2026, ISO 20022, 代币化存款, Project Agorá, 跨境结算, 实时支付轨道, 结构化地址, 支付数据质量">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="The Wholesale Payments Index 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-YD0wVlXcppvl/dE2jdwEj/e1K155b+IfKUGVSm39Xlc=' 'sha256-qnnDEBBWEiO60OOejgPDmUhM0isnbVKFLYkD5w0Ptd4=' 'sha256-s3FElW5pn3pPXM90714hxcuAM6TDkS5H+P2dBn7+1IY=' 'sha256-th7aTH3lpOHLCL+8pQOB3pzzqUY3ysP/ajxziTMiqtY=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/zh-hans/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom 订阅源" href="/zh-hans/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="2026 大额支付指数：ISO 20022、代币化存款与跨境结算 — Sebastien Rousseau">
+<meta property="og:description" content="面向 2026 年的大额支付就绪度指数，衡量 ISO 20022 数据质量、代币化存款、实时支付轨道、跨境结算与流动性效率，把碎片化议程整合为一套可计量的运营模型。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/zh-hans/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/rodion-kutsaiev-OQ0zP6AS2DI.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2026 大额支付指数：ISO 20022、代币化存款与跨境结算 — Sebastien Rousseau">
+<meta name="twitter:description" content="面向 2026 年的大额支付就绪度指数，衡量 ISO 20022 数据质量、代币化存款、实时支付轨道、跨境结算与流动性效率，把碎片化议程整合为一套可计量的运营模型。">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/rodion-kutsaiev-OQ0zP6AS2DI.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/zh-hans/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-06-de-gros-paiements-index-iso20022-tokenise-deposits-cross-border-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-06-wholesale-zahlungsverkehr-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-06-mayorista-pagos-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-06-wholesale-pagamenti-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-06-atacado-pagamentos-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">跳至主要内容</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="切换导航" />
+      <div class="wrap">
+        <a class="ap-brand" href="/zh-hans/index.html" aria-label="Sebastien Rousseau 首页">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="主导航">
+          <ul class="ap-menu">
+            <li><a href="/zh-hans/guanyu/index.html">关于</a></li>
+            <li><a href="/zh-hans/wenzhang/index.html" aria-current="page" class="active">文章</a></li>
+            <li><a href="/zh-hans/lunwen/index.html">论文与白皮书</a></li>
+            <li><a href="/zh-hans/zhuti/index.html">主题</a></li>
+            <li><a href="/zh-hans/xiangmu/index.html">项目</a></li>
+            <li><a href="/zh-hans/boqing/index.html">播放列表</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="切换到深色主题" aria-pressed="false" title="切换主题">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="搜索（Cmd 或 Ctrl + K）" title="搜索（⌘K）">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="语言">
+            <button type="button" class="ap-lang-toggle" aria-label="ZH，切换语言" aria-expanded="false" aria-haspopup="menu" title="切换语言">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">ZH</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-06-de-gros-paiements-index-iso20022-tokenise-deposits-cross-border-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-06-wholesale-zahlungsverkehr-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-06-mayorista-pagos-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-06-wholesale-pagamenti-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-06-atacado-pagamentos-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/zh-hans/lianxi/index.html" aria-label="联系我">联系我 ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="切换导航">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>2026 大额支付指数：ISO 20022、代币化存款与跨境结算</h1>
+      <p class="sub">大额支付正从报文迁移迈向可编程结算；银行需要把数据质量、轨道编排、流动性与终结性当作同一套指数来衡量。</p>
+    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-2026" class="article-tag" rel="tag">大额支付 2026</a><a href="/tags/index.html#h3-iso-20022" class="article-tag" rel="tag">ISO 20022</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">代币化存款</a><a href="/tags/index.html#h3-project-agora" class="article-tag" rel="tag">Project Agorá</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">跨境结算</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">实时支付轨道</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">结构化地址</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">支付数据质量</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-06T06:06:06+00:00" class="meta-pub">Published 6 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">1 min read</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Contents</h2><ol><li><a href="#2026">为什么 2026 年是该指数成型的转折点</a></li><li><a href="#2026-2">2026 指数架构</a></li><li><a href="#section-3">当下需追踪的信号</a></li><li><a href="#section-4">支付数据的拐点</a></li><li><a href="#cbdc">代币化存款与大额 CBDC</a></li><li><a href="#section-6">新一代大额支付产品</a></li><li><a href="#section-7">不同银行类型的含义</a></li><li><a href="#section-12">结论</a></li><li><a href="#section-13">常见问题</a></li><li><a href="#section-14">参考资料</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 面向 2026 年的大额支付就绪度指数，衡量 ISO 20022 数据质量、代币化存款、实时支付轨道、跨境结算与流动性效率，把碎片化议程整合为一套可计量的运营模型。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>为什么 2026 年是该指数成型的转折点.</strong> Stanford AI Index 之所以有用，在于它把一项快速演进的技术领域当作可衡量的对象：研究产出、技术性能、负责任部署、经济性、行业采纳、政策与公众情绪被纳入同一框架（Stanford HAI ⧉）。银行与金融机构如今需要为基础设施建立同样的纪律。代理式 AI、抗量子安全、云原生韧性与大额支付，已不再是彼此独立的创新轨道，而是汇入同一套运营模型。.</li>  <li><strong>当下需追踪的信号.</strong> ISO 20022 已从报文格式项目演进为数据质量运营模型。若收款人、付款人、债权人、代理行、城市、国家、用途与当事方数据薄弱，银行就会面对拒付、修复、制裁筛查摩擦、客户不满与分析能力欠佳。.</li>  <li><strong>支付数据的拐点.</strong> ISO 20022 已从报文格式项目演进为数据质量运营模型。若收款人、付款人、债权人、代理行、城市、国家、用途与当事方数据薄弱，银行就会面对拒付、修复、制裁筛查摩擦、客户不满与分析能力欠佳。.</li>  <li><strong>代币化存款与大额 CBDC.</strong> 代币化存款在保留商业银行货币模型的同时引入可编程性。大额央行货币则守住结算终结性。值得关注的设计模式是二者的组合：商业银行货币服务于客户关系与信贷中介，央行货币用于最终结算与系统性信心。.</li></ul></aside><h1>2026 大额支付指数：ISO 20022、代币化存款与跨境结算</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>2026 年的大额支付正被两股同时发生的力量重塑：结构化支付数据与可编程结算。SWIFT 的 2026 年 11 月结构化地址里程碑把数据质量推入运营模型，而 BIS 的 Project Agorá 与代币化存款正在检验跨境结算能否走向更原子、更透明、始终在线。</p>
+<hr />
+<blockquote>
+<p><strong>董事会摘要 / 核心要点</strong></p>
+<ul>
+<li>**2026 年 11 月是一个硬性数据里程碑。**SWIFT 明确，SR 2026 变更之后将不再支持含有非结构化地址的支付。</li>
+<li>**结构化数据成为产品基础设施。**城市与国家至少须落入指定字段，支付数据质量由此变为客户、运营与合规共同的议题。</li>
+<li>**代币化存款是大额支付的设计选项。**Project Agorá 在统一账本模型下，探索代币化商业银行存款与代币化央行储备的组合。</li>
+<li>**指数应衡量结算质量，而非仅速度。**终结性、透明度、修复率、流动性占用、合规数据与客户可视性，与即时执行同等重要。</li>
+<li>**跨境支付仍是公私协同议题。**FSB 推动 G20 路线图进入实施阶段，由公共与私营部门共同协调。</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="2026">为什么 2026 年是该指数成型的转折点 <a class="heading-anchor" href="#2026" aria-label="Link to 为什么 2026 年是该指数成型的转折点">#</a></h2>
+<p>Stanford AI Index 之所以有用，在于它把一项快速演进的技术领域当作可衡量的对象：研究产出、技术性能、负责任部署、经济性、行业采纳、政策与公众情绪被纳入同一框架（<a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" title="2026 AI 指数报告">Stanford HAI ⧉</a>）。银行与金融机构如今需要为基础设施建立同样的纪律。代理式 AI、抗量子安全、云原生韧性与大额支付，已不再是彼此独立的创新轨道，而是汇入同一套运营模型。</p>
+<p>银行真正要回答的问题，不是每一个领域是否重要，而是机构能否同时衡量这些领域的就绪度。若密码学迁移尚未就绪，部署代理式 AI 仍会脆弱；若支付数据仍未结构化，云平台再现代化也会失灵；若结算、流动性、身份与审计层未一并设计，代币化试点反而会制造系统性风险。</p>
+<h2 id="2026-2">2026 指数架构 <a class="heading-anchor" href="#2026-2" aria-label="Link to 2026 指数架构">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>指数层级</th>
+<th>2026 方向</th>
+<th>就绪度指标</th>
+<th>处理不当的风险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ISO 20022 数据</strong></td>
+<td>从非结构化文本迈向受治理的结构化字段</td>
+<td>结构化地址就绪度与拒付率</td>
+<td>支付拒付与人工修复</td>
+</tr>
+<tr>
+<td><strong>轨道编排</strong></td>
+<td>跨 RTGS、即时、代理行、稳定币与代币化轨道路由</td>
+<td>兼顾成本、速度、终结性与司法管辖的智能路由</td>
+<td>轨道碎片化与控制重复</td>
+</tr>
+<tr>
+<td><strong>代币化结算</strong></td>
+<td>在能降低摩擦处使用代币化存款与央行货币</td>
+<td>DvP、PvP、原子结算覆盖率</td>
+<td>仅有试点资产而无业务工作流价值</td>
+</tr>
+<tr>
+<td><strong>流动性</strong></td>
+<td>优化日间流动性、被困资金与结算窗口</td>
+<td>节省的流动性与结算失败下降幅度</td>
+<td>加速流动性耗损</td>
+</tr>
+<tr>
+<td><strong>合规</strong></td>
+<td>把反洗钱、制裁、FATF 与审计要求嵌入支付数据</td>
+<td>直通合规与可解释性</td>
+<td>数据更丰富但控制并未更强</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-3">当下需追踪的信号 <a class="heading-anchor" href="#section-3" aria-label="Link to 当下需追踪的信号">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>信号</th>
+<th>对银行的含义</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>65% 的支付报文含有非结构化地址</strong></td>
+<td>整改工作量仍然庞大</td>
+<td><a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" title="ISO 20022 2026 年 11 月结构化地址里程碑">SWIFT ⧉</a></td>
+</tr>
+<tr>
+<td><strong>2026 年 11 月之后非结构化地址将被剔除</strong></td>
+<td>支付数据就绪度变得紧迫</td>
+<td><a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" title="ISO 20022 2026 年 11 月结构化地址里程碑">SWIFT ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Project Agorá 进入原型阶段</strong></td>
+<td>代币化结算正在央行与商业银行场景中接受检验</td>
+<td><a href="https://www.bis.org/about/bisih/topics/fmis/agora.htm" title="Project Agorá">BIS ⧉</a></td>
+</tr>
+<tr>
+<td><strong>FSB 实施阶段</strong></td>
+<td>提升跨境支付仍是全球政策优先项</td>
+<td><a href="https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/" title="跨境支付实施阶段">FSB ⧉</a></td>
+</tr>
+<tr>
+<td><strong>德意志银行数字货币框架</strong></td>
+<td>稳定币、代币化存款与 CBDC 正成为公司银行架构的实际议题</td>
+<td><a href="https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs" title="数字货币：稳定币、代币化存款与 CBDC">Deutsche Bank ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-4">支付数据的拐点 <a class="heading-anchor" href="#section-4" aria-label="Link to 支付数据的拐点">#</a></h2>
+<p>ISO 20022 已从报文格式项目演进为数据质量运营模型。若收款人、付款人、债权人、代理行、城市、国家、用途与当事方数据薄弱，银行就会面对拒付、修复、制裁筛查摩擦、客户不满与分析能力欠佳。</p>
+<h2 id="cbdc">代币化存款与大额 CBDC <a class="heading-anchor" href="#cbdc" aria-label="Link to 代币化存款与大额 CBDC">#</a></h2>
+<p>代币化存款在保留商业银行货币模型的同时引入可编程性。大额央行货币则守住结算终结性。值得关注的设计模式是二者的组合：商业银行货币服务于客户关系与信贷中介，央行货币用于最终结算与系统性信心。</p>
+<h2 id="section-6">新一代大额支付产品 <a class="heading-anchor" href="#section-6" aria-label="Link to 新一代大额支付产品">#</a></h2>
+<p>产品不再只是一笔支付，而是执行、数据、流动性、合规、可追溯性与异常处理的组合包。能通过 API 与客户控制台对外暴露这些能力的银行，才能把基础设施合规转化为客户价值。</p>
+<h2 id="section-7">不同银行类型的含义 <a class="heading-anchor" href="#section-7" aria-label="Link to 不同银行类型的含义">#</a></h2>
+<h3 id="section-8">全球系统重要性银行 <a class="heading-anchor" href="#section-8" aria-label="Link to 全球系统重要性银行">#</a></h3>
+<p>全球银行应把本指数当作企业架构记分卡。优先项不是再做一个概念验证，而是举证：自主工作流、密码迁移、云依赖与支付现代化能作为同一套风险与价值体系来治理。</p>
+<h3 id="section-9">交易银行与公司银行 <a class="heading-anchor" href="#section-9" aria-label="Link to 交易银行与公司银行">#</a></h3>
+<p>交易银行应聚焦于大额支付、结构化数据、流动性、代币化存款与代理式财资服务。最具价值的客户主张不是更快的资金转移，而是可解释、可审计、可编程的资金转移——更少调查、更佳营运资金可视性。</p>
+<h3 id="section-10">区域银行 <a class="heading-anchor" href="#section-10" aria-label="Link to 区域银行">#</a></h3>
+<p>区域银行应借助指数避免项目蔓延。它们不必引领每条前沿，但需要在 AI 治理、后量子盘点、云退出证据与支付数据就绪度上拥有可信定位。</p>
+<h3 id="psp">金融科技、PSP 与基础设施提供者 <a class="heading-anchor" href="#psp" aria-label="Link to 金融科技、PSP 与基础设施提供者">#</a></h3>
+<p>金融科技与基础设施提供者应把产品路线对齐到可计量的银行就绪度。最佳提案应降低集成风险、强化证据，并让复杂基础设施更易被银行治理。</p>
+<h2 id="section-12">结论 <a class="heading-anchor" href="#section-12" aria-label="Link to 结论">#</a></h2>
+<p>指数式报告的价值，在于把碎片化的技术议程转化为可计量的运营模型。2026 年金融基础设施的胜出者，不会是试点最多的机构，而是能同时在自主性、安全、韧性、结算、经济性与治理上举证就绪度的机构。</p>
+<h2 id="section-13">常见问题 <a class="heading-anchor" href="#section-13" aria-label="Link to 常见问题">#</a></h2>
+<p><strong>为什么 ISO 20022 仍是 2026 年的议题？</strong></p>
+<p>因为只有当支付数据被结构化、受治理、源头采集，并可在渠道、客户与市场基础设施之间流转使用时，迁移才算完成。</p>
+<p><strong>什么是代币化存款？</strong></p>
+<p>代币化存款是商业银行货币的数字化呈现，旨在保留银行与存款人之间的关系，同时支持可编程结算。</p>
+<p><strong>代币化存款会取代稳定币吗？</strong></p>
+<p>并非全面取代。稳定币在某些数字资产与跨境结算场景仍可发挥作用，而代币化存款在受监管的大额支付银行业务中具有结构性吸引力。</p>
+<p><strong>银行应衡量什么？</strong></p>
+<p>衡量结构化数据就绪度、支付拒付、修复成本、结算时间、流动性占用、轨道路由成效与客户可视性。</p>
+<h2 id="section-14">参考资料 <a class="heading-anchor" href="#section-14" aria-label="Link to 参考资料">#</a></h2>
+<ul>
+<li>SWIFT, (2026). <a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" title="ISO 20022 2026 年 11 月结构化地址里程碑">ISO 20022 2026 年 11 月结构化地址里程碑 ⧉</a>.</li>
+<li>BIS Innovation Hub, (2026). <a href="https://www.bis.org/about/bisih/topics/fmis/agora.htm" title="Project Agorá">Project Agorá ⧉</a>.</li>
+<li>FSB, (2026). <a href="https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/" title="跨境支付实施阶段">跨境支付实施阶段 ⧉</a>.</li>
+<li>Deutsche Bank, (2026). <a href="https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs" title="数字货币：稳定币、代币化存款与 CBDC">数字货币：稳定币、代币化存款与 CBDC ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">最近审阅 <time datetime="2026-06-06">2026-06-06</time>。</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/zh-hans/guanyu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家，撰写关于应用人工智能、ISO 20022 迁移、面向金融服务的后量子密码学，以及批发支付结构性转型的内容。</span><span class="author-credentials">20 多年经验，曾任职于汇丰商业及投资银行、PayPal、巴克莱、Shazam、AKQA、维珍集团。 <a href="/zh-hans/guanyu/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最近审阅 <time datetime="2026-05-28">2026-05-28</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">相关阅读</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2026-05-19-global-wholesale-payments-economics-2026" class="related-media" aria-label="2026年全球批发支付：ISO 20022、RTGS更新与互操作性的经济学" tabindex="-1"><img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/api/transform?url=/stocks/images/meiying-ng-OrwkD-iWgqg.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-iso-20022rtgs"><a href="https://sebastienrousseau.com/zh-hans/2026-05-19-global-wholesale-payments-economics-2026">2026年全球批发支付：ISO 20022、RTGS更新与互操作性的经济学</a> <a class="heading-anchor" href="#2026-iso-20022rtgs" aria-label="Link to 2026年全球批发支付：ISO 20022、RTGS更新与互操作性的经济学">#</a></h3><p><time datetime="2026-05-19">2026-05-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2026-05-21-tokenised-deposits-banking-services-status-2026" class="related-media" aria-label="2026年的代币化存款：银行服务、稳定币竞争与可编程商业银行货币的现状" tabindex="-1"><img alt="Tokenised deposit banking architecture for 2026 showing commercial bank money, digital wallets, stablecoins, CBDCs, tokenised gilts, and Project Agorá settlement paths" src="https://cloudcdn.pro/api/transform?url=/stocks/images/bit-cloud-GlqbGLCPnQ4.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-3"><a href="https://sebastienrousseau.com/zh-hans/2026-05-21-tokenised-deposits-banking-services-status-2026">2026年的代币化存款：银行服务、稳定币竞争与可编程商业银行货币的现状</a> <a class="heading-anchor" href="#2026-3" aria-label="Link to 2026年的代币化存款：银行服务、稳定币竞争与可编程商业银行货币的现状">#</a></h3><p><time datetime="2026-05-21">2026-05-21</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2026-05-12-iso-20022-pacs008-jiegouhua-dizhi-jiezhi-riqi" class="related-media" aria-label="2026 年 11 月 pacs.008 结构化地址截止日期：六个月视角" tabindex="-1"><img alt="ISO 20022 pacs.008 structured address diagram — cross-border payment message fields with TwnNm and Ctry highlighted" src="https://cloudcdn.pro/api/transform?url=/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-11-pacs-008"><a href="https://sebastienrousseau.com/zh-hans/2026-05-12-iso-20022-pacs008-jiegouhua-dizhi-jiezhi-riqi">2026 年 11 月 pacs.008 结构化地址截止日期：六个月视角</a> <a class="heading-anchor" href="#2026-11-pacs-008" aria-label="Link to 2026 年 11 月 pacs.008 结构化地址截止日期：六个月视角">#</a></h3><p><time datetime="2026-05-12">2026-05-12</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Sources & references</h2><ol class="article-sources-list"><li><a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" rel="external noopener nofollow"><span class="source-host">www.swift.com</span><span class="source-path">/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be…</span></a></li><li><a href="https://www.bis.org/about/bisih/topics/fmis/agora.htm" rel="external noopener nofollow"><span class="source-host">www.bis.org</span><span class="source-path">/about/bisih/topics/fmis/agora.htm</span></a></li></ol></aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/zh-hans/guanyu/index.html">关于</a></li>
+              <li><a href="/zh-hans/lianxi/index.html">联系</a></li>
+              <li><a href="/zh-hans/yong-static-site-generator-zhizuo/index.html">使用 Static Site Generator 构建</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">文章</h2>
+            <ul>
+              <li><a href="/zh-hans/wenzhang/index.html">文章</a></li>
+              <li><a href="/zh-hans/lunwen/index.html">论文与白皮书</a></li>
+              <li><a href="/zh-hans/biaoqian/index.html">标签</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">工作</h2>
+            <ul>
+              <li><a href="/zh-hans/xiangmu/index.html">项目</a></li>
+              <li><a href="/zh-hans/boqing/index.html">播放列表</a></li>
+              <li><a href="/zh-hans/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">联系</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="通讯订阅">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — 关于支付、人工智能与后量子密码学的研究笔记。无垃圾邮件。</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="nin@yinhang.com" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">订阅</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="社交链接">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau 于 Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau 于 LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau 于 Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau 于 YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/zh-hans/wuzhang-ai/index.html">无障碍访问</a> ·
+            <a href="/zh-hans/yinsi/index.html">隐私</a> ·
+            <a href="/zh-hans/tiaokuan/index.html">条款</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"zh-hans"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"zh-hans"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":191,"about":{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]},"headline":"2026 大额支付指数：ISO 20022、代币化存款与跨境结算","description":"面向 2026 年的大额支付就绪度指数，衡量 ISO 20022 数据质量、代币化存款、实时支付轨道、跨境结算与流动性效率，把碎片化议程整合为一套可计量的运营模型。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/rodion-kutsaiev-OQ0zP6AS2DI.webp","width":"100vw","height":"100vh","caption":"抽象建筑摄影，作为 2026 大额支付指数的视觉主图——衡量 ISO 20022 数据质量、代币化存款、实时支付轨道、跨境结算与流动性效率"},"url":"https://sebastienrousseau.com/zh-hans/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/","datePublished":"2026-06-06T06:06:06+00:00","dateModified":"2026-06-06","inLanguage":"zh-hans","keywords":"大额支付 2026, ISO 20022, 代币化存款, Project Agorá, 跨境结算, 实时支付轨道, 结构化地址, 支付数据质量","articleSection":"Finance","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hans/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"zh-hans"},"citation":[{"@type":"CreativeWork","url":"https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed"},{"@type":"CreativeWork","url":"https://www.bis.org/about/bisih/topics/fmis/agora.htm"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/zh-hans/"},{"@type":"ListItem","position":3,"name":"2026 大额支付指数：ISO 20022、代币化存款与跨境结算","item":"https://sebastienrousseau.com/zh-hans/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="搜索">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>搜索</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="搜索">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="搜索文档…" autocomplete="off" aria-label="搜索"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> 关闭</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 导航</span><span><kbd>Enter</kbd> 打开</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"2026 大额支付指数：ISO 20022、代币化存款与跨境结算","url":"https://sebastienrousseau.com/zh-hans/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/","inLanguage":"zh-Hans","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"大额支付 2026, ISO 20022, 代币化存款, Project Agorá, 跨境结算, 实时支付轨道, 结构化地址, 支付数据质量","dependencies":["ISO 20022"]}</script></body>
+</html>

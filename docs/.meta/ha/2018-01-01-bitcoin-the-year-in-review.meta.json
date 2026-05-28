@@ -1,11 +1,11 @@
 {
-  "date": "Jan 01, 2018",
-  "locale": "ha_NG",
-  "description": "Bitcoin: Tsarin Kuɗin Lantarki na Peer-to-Peer (P2P ECS) wanda ke da yuwuwar sauya yadda mutane ke yin ciniki ta yanar gizo.",
   "keywords": "bitcoin, cryptocurrency, blockchain, kuɗin da ba a tsakiyance ba, kuɗin dijital, biyan kuɗi na peer-to-peer, zinarin dijital, kuɗin da ake iya shirye-shirye, makomar kuɗi, juyin kuɗi",
-  "title": "Bitcoin: A Year In Review of the First Cryptocurrency",
-  "banner_alt": "Tarin tsabar zinari da azurfa da aka ajiye a kan tebur",
+  "date": "Jan 01, 2018",
+  "description": "Bitcoin: Tsarin Kuɗin Lantarki na Peer-to-Peer (P2P ECS) wanda ke da yuwuwar sauya yadda mutane ke yin ciniki ta yanar gizo.",
   "subtitle": "Bitcoin, cryptocurrency, da fasaha da ke sake fasalin kasuwannin kuɗi.",
+  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
   "language": "ha-NG",
-  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp"
+  "locale": "ha_NG",
+  "title": "Bitcoin: A Year In Review of the First Cryptocurrency",
+  "banner_alt": "Tarin tsabar zinari da azurfa da aka ajiye a kan tebur"
 }

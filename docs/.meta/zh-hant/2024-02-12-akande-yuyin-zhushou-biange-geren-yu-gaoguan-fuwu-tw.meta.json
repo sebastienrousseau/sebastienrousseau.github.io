@@ -1,11 +1,11 @@
 {
-  "banner_alt": "一臺白色球形現代裝置",
-  "banner": "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp",
-  "language": "zh-Hant",
-  "locale": "zh_TW",
-  "title": "Àkàndé 語音助手：變革個人與高管協助",
   "date": "February 12, 2024",
   "subtitle": "OpenAI GPT 與 Python 多功能性的結合，提供自然語言理解、高效快取與 PDF 摘要的語音助手",
-  "description": "Àkàndé 語音助手整合 OpenAI GPT 模型，提供自然語言理解、PDF 摘要與 SQLite 高效快取。",
-  "keywords": "Àkàndé, 語音助手, GPT, Python, OpenAI, 自然語言理解, PDF 摘要, SQLite, 快取, 高管助手"
+  "title": "Àkàndé 語音助手：變革個人與高管協助",
+  "banner_alt": "一臺白色球形現代裝置",
+  "banner": "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp",
+  "keywords": "Àkàndé, 語音助手, GPT, Python, OpenAI, 自然語言理解, PDF 摘要, SQLite, 快取, 高管助手",
+  "locale": "zh_TW",
+  "language": "zh-Hant",
+  "description": "Àkàndé 語音助手整合 OpenAI GPT 模型，提供自然語言理解、PDF 摘要與 SQLite 高效快取。"
 }

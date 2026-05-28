@@ -6,14 +6,35 @@
     <description>مقالات بالعربية: الذكاء الاصطناعي التطبيقي، مدفوعات ISO 20022، التشفير ما بعد الكمي، وتحوّل المدفوعات بالجملة.</description>
     <atom:link href="https://sebastienrousseau.com/ar/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ar-SA</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 16:56:18 +0000</lastBuildDate>
     <copyright>© حقوق النشر 2007 - 2026 - سيباستيان روسو. جميع الحقوق محفوظة.</copyright>
+    <item>
+      <title>مؤشر مدفوعات الجملة في 2026: ISO 20022 والودائع المرمَّزة ومسارات الدفع الفوري</title>
+      <link>https://sebastienrousseau.com/ar/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</link>
+      <description>مؤشر 2026 لجاهزية مدفوعات الجملة: قياس جودة بيانات ISO 20022، والودائع المرمَّزة، ومسارات الدفع الفوري، والتسوية العابرة للحدود، وكفاءة السيولة في نموذج التشغيل المصرفي.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</guid>
+      <pubDate>Thu, 28 May 2026 16:56:18 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/rodion-kutsaiev-OQ0zP6AS2DI.webp" type="image/webp" length="0"/>
+      <category>مدفوعات الجملة 2026</category>
+      <category>ISO 20022</category>
+      <category>الودائع المرمَّزة</category>
+      <category>Project Agorá</category>
+      <category>المدفوعات العابرة للحدود</category>
+      <category>مسارات الدفع الفوري</category>
+      <category>العنوان المهيكَل</category>
+      <category>جودة بيانات المدفوعات</category>
+      <category>دفتر الأستاذ الموحَّد</category>
+      <category>كفاءة السيولة</category>
+      <category>BIS</category>
+      <category>SWIFT</category>
+    </item>
     <item>
       <title>Magnifica Humanitas: قراءة هندسية لأول رسالة بابوية عن الذكاء الاصطناعي</title>
       <link>https://sebastienrousseau.com/ar/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</link>
       <description>في 25 مايو 2026 أصدر البابا ليون الرابع عشر Magnifica Humanitas، أول رسالة بابوية مخصّصة للذكاء الاصطناعي. قراءتها من داخل قطاع التقنية تكشف إطارًا أخلاقيًا متماسكًا لعصر الذكاء الاصطناعي والكم، وتنتهي إلى الرجاء لا الخوف.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</guid>
-      <pubDate>Thu, 28 May 2026 06:26:19 +0000</pubDate>
+      <pubDate>Thu, 28 May 2026 16:56:18 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
       <category>Magnifica Humanitas</category>

@@ -6,8 +6,25 @@
     <description>Bài viết tiếng Việt: AI ứng dụng, thanh toán ISO 20022, mật mã hậu lượng tử và chuyển đổi thanh toán bán buôn.</description>
     <atom:link href="https://sebastienrousseau.com/vi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>vi-VN</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 16:56:18 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Đã đăng ký bản quyền.</copyright>
+    <item>
+      <title>Chỉ số Thanh toán Bán buôn 2026: ISO 20022, tiền gửi token hoá và quyết toán xuyên biên giới</title>
+      <link>https://sebastienrousseau.com/vi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</link>
+      <description>Chỉ số 2026 đo lường mức độ sẵn sàng thanh toán bán buôn — chất lượng dữ liệu ISO 20022, tiền gửi token hoá, kênh thanh toán thời gian thực, quyết toán xuyên biên giới và hiệu quả thanh khoản.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</guid>
+      <pubDate>Thu, 28 May 2026 16:56:18 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/rodion-kutsaiev-OQ0zP6AS2DI.webp" type="image/webp" length="0"/>
+      <category>thanh toán bán buôn 2026</category>
+      <category>ISO 20022</category>
+      <category>tiền gửi token hoá</category>
+      <category>Project Agorá</category>
+      <category>thanh toán xuyên biên giới</category>
+      <category>thanh toán thời gian thực</category>
+      <category>dữ liệu địa chỉ có cấu trúc</category>
+      <category>chất lượng dữ liệu thanh toán</category>
+    </item>
     <item>
       <title>DORA, Đạo luật AI EU và chủ quyền dữ liệu: ngăn xếp tuân thủ 2026 cho ngân hàng</title>
       <link>https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
