@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/nl/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl-NL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T22:08:37+00:00</news:publication_date>
+    <news:title>AI-governance-index 2026 voor financiële instellingen: uitlegbaarheid, toezicht, audit-logs, aansprakelijkheid en toezichtbewijs</news:title>
+    <news:keywords>AI-governance financiële instellingen 2026, AI-toezicht banken, uitlegbaarheid AI, audit-logs AI, aansprakelijkheid AI, AI Act banken, modelrisicobeheer</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>nl-NL</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T06:26:19+00:00</news:publication_date>
+    <news:publication_date>2026-05-28T22:08:37+00:00</news:publication_date>
     <news:title>DORA, EU AI Act en datasoevereiniteit: de compliance-stack 2026 voor banken</news:title>
     <news:keywords>DORA 2026, EU AI Act 2026, datasoevereiniteit banken, operationele veerkracht, concentratierisico cloud, AI-compliance financiële sector, hoog-risico AI</news:keywords>
   </news:news>

@@ -1,11 +1,11 @@
 {
-  "language": "ro-RO",
-  "locale": "ro_RO",
-  "banner": "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp",
-  "title": "EU's AI Act: Pioneering Ethical AI Regulation Worldwide",
   "description": "EU AI Act creează primul cadru global cuprinzător pentru reglementarea IA pe niveluri de risc. Ce se schimbă pentru bănci, furnizori și sisteme cu risc ridicat.",
   "subtitle": "Navigând viitorul inteligenței artificiale cu cadrul juridic revoluționar al UE",
-  "banner_alt": "O persoană așezată pe o bancă neagră citind un ziar",
+  "banner": "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp",
   "keywords": "EU AI Act, reglementarea inteligenței artificiale, cadru etic IA, gestionarea riscurilor IA, inovație IA, transparență IA, drepturile consumatorilor IA, guvernanță IA, standarde IA, etică IA",
-  "date": "Feb 13, 2024"
+  "date": "Feb 13, 2024",
+  "locale": "ro_RO",
+  "language": "ro-RO",
+  "banner_alt": "O persoană așezată pe o bancă neagră citind un ziar",
+  "title": "EU's AI Act: Pioneering Ethical AI Regulation Worldwide"
 }

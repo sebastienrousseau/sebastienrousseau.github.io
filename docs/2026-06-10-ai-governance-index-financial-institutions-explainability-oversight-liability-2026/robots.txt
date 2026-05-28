@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sebastienrousseau.com/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/sitemap.xml

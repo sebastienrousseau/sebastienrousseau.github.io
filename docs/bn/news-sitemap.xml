@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/bn/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>bn-BD</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-10T06:06:06+00:00</news:publication_date>
+    <news:title>২০২৬-এ আর্থিক প্রতিষ্ঠানের জন্য AI শাসন সূচক: ব্যাখ্যাযোগ্যতা, মানব তদারকি, অডিট লগ, দায়বদ্ধতা ও নিয়ন্ত্রক প্রমাণ</news:title>
+    <news:keywords>AI শাসন আর্থিক প্রতিষ্ঠান ২০২৬, ব্যাংকে AI তদারকি, AI ব্যাখ্যাযোগ্যতা, AI অডিট লগ, AI দায়বদ্ধতা, AI Act ব্যাংক, model risk ব্যবস্থাপনা</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

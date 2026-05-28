@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/fil/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fil-PH</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T22:08:37+00:00</news:publication_date>
+    <news:title>Indeks ng AI Governance para sa Mga Bangko sa 2026: Pananagutan at Ebidensya</news:title>
+    <news:keywords>AI governance institusyong pinansyal 2026, pangangasiwa ng AI sa bangko, kakayahang ipaliwanag ng AI, AI audit logs, pananagutan sa AI, AI Act bangko, model risk management</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

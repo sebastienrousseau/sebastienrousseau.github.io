@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/vi/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T22:08:37+00:00</news:publication_date>
+    <news:title>Chỉ số quản trị AI cho định chế tài chính 2026: khả năng giải thích, giám sát, nhật ký kiểm toán và trách nhiệm pháp lý</news:title>
+    <news:keywords>quản trị AI định chế tài chính 2026, giám sát AI ngân hàng, khả năng giải thích AI, nhật ký kiểm toán AI, trách nhiệm pháp lý AI, AI Act ngân hàng, model risk management</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

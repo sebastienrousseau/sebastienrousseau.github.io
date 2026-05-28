@@ -1,11 +1,11 @@
 {
-  "keywords": "ISO 20022, pacs.008, SWIFT, CBPR+, yapılandırılmış adres, ödemeler, uyum",
-  "date": "May 12, 2026",
-  "banner_alt": "Yapılandırılmış adres alanlarının ekran görüntüsü",
-  "banner": "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp",
-  "locale": "tr_TR",
-  "subtitle": "SWIFT CBPR+ Kasım 2026'dan itibaren yapılandırılmamış adresleri reddediyor",
-  "language": "tr-TR",
   "title": "ISO 20022 pacs.008: yapılandırılmış adres son tarihi yaklaşıyor",
-  "description": "Kasım 2026'dan itibaren SWIFT CBPR+ sınır ötesi pacs.008 mesajlarında yapılandırılmamış posta adreslerini reddediyor."
+  "keywords": "ISO 20022, pacs.008, SWIFT, CBPR+, yapılandırılmış adres, ödemeler, uyum",
+  "banner_alt": "Yapılandırılmış adres alanlarının ekran görüntüsü",
+  "language": "tr-TR",
+  "date": "May 12, 2026",
+  "banner": "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp",
+  "description": "Kasım 2026'dan itibaren SWIFT CBPR+ sınır ötesi pacs.008 mesajlarında yapılandırılmamış posta adreslerini reddediyor.",
+  "subtitle": "SWIFT CBPR+ Kasım 2026'dan itibaren yapılandırılmamış adresleri reddediyor",
+  "locale": "tr_TR"
 }

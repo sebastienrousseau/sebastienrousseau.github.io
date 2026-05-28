@@ -1,11 +1,11 @@
 {
-  "language": "nl-NL",
-  "banner_alt": "Visualisatie van cryptografische hash-functies",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
   "subtitle": "Veilige hash- en digest-algoritmen met een kwantumresistente houding",
+  "language": "nl-NL",
   "date": "October 16, 2023",
+  "keywords": "Hash, digest, cryptografie, post-kwantum, Rust, beveiliging, wachtwoord",
+  "banner_alt": "Visualisatie van cryptografische hash-functies",
   "locale": "nl_NL",
-  "title": "Data beschermen in het kwantumtijdperk: de hash-bibliotheek hsh",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
   "description": "hsh is een Rust-bibliotheek die veilige hash- en digest-algoritmen implementeert voor wachtwoordversleuteling, ontworpen voor het post-PQC-tijdperk.",
-  "keywords": "Hash, digest, cryptografie, post-kwantum, Rust, beveiliging, wachtwoord"
+  "title": "Data beschermen in het kwantumtijdperk: de hash-bibliotheek hsh"
 }

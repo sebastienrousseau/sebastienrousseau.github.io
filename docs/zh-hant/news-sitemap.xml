@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T22:08:37+00:00</news:publication_date>
+    <news:title>2026 年金融機構 AI 治理指數:可解釋性、人工監督、稽核日誌、責任與監管證據</news:title>
+    <news:keywords>金融機構 AI 治理 2026, 銀行 AI 監督, AI 可解釋性, AI 稽核日誌, AI 責任, AI Act 銀行, 模型風險管理</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

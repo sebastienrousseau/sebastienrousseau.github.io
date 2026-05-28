@@ -6,8 +6,24 @@
     <description>हिन्दी लेख: व्यावहारिक AI, ISO 20022 भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतान का रूपांतरण।</description>
     <atom:link href="https://sebastienrousseau.com/hi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>hi-IN</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 22:08:37 +0000</lastBuildDate>
     <copyright>© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।</copyright>
+    <item>
+      <title>वित्तीय संस्थानों के लिए 2026 का AI शासन सूचकांक: व्याख्या योग्यता, मानवीय निगरानी, ऑडिट लॉग, दायित्व और नियामक साक्ष्य</title>
+      <link>https://sebastienrousseau.com/hi/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/</link>
+      <description>वित्तीय संस्थानों के लिए 2026 AI शासन सूचकांक — व्याख्या योग्यता, निगरानी, ऑडिट लॉग, दायित्व, नियामक साक्ष्य, फाउंडेशन मॉडल और एजेंटिक AI नियंत्रणों का मापन।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/</guid>
+      <pubDate>Thu, 28 May 2026 22:08:37 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ai-robot.webp" type="image/webp" length="0"/>
+      <category>AI शासन वित्तीय संस्थान 2026</category>
+      <category>बैंकों के लिए AI निगरानी</category>
+      <category>AI व्याख्या योग्यता</category>
+      <category>AI ऑडिट लॉग</category>
+      <category>AI दायित्व</category>
+      <category>AI Act बैंक</category>
+      <category>मॉडल जोखिम प्रबंधन</category>
+    </item>
     <item>
       <title>DORA, EU AI अधिनियम और डेटा संप्रभुता: बैंकों का 2026 अनुपालन स्टैक</title>
       <link>https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

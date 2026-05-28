@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Wed, 10 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Wed, 10 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>2026 年金融機関 AI ガバナンス指数:説明可能性と監督 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="金融機関のための 2026 年 AI ガバナンス指数。説明可能性、監督、監査ログ、責任、規制上の証拠、基盤モデル、エージェント型 AI の統制を網羅します。">
+<meta name="keywords" content="金融機関 AI ガバナンス 2026, 銀行 AI 監督, AI 説明可能性, AI 監査ログ, AI 責任, AI Act 銀行, モデルリスク管理">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="The AI Governance Index for Financial Institutions 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-1QTzhu0IQem7QmMGRdEN85+efczXJINRLwRiCRLZ7Us=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-HO8txFtbBJHVXSo1kdvHZNnSw5YrZWJQiDoZvxARZOw=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-zuQbZW1rzRRx5LZmpM8T01OR9iEFgbx+T+ZyOW+jxmE=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/ja/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom フィード" href="/ja/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="2026 年金融機関 AI ガバナンス指数:説明可能性と監督 — Sebastien Rousseau">
+<meta property="og:description" content="金融機関のための 2026 年 AI ガバナンス指数。説明可能性、監督、監査ログ、責任、規制上の証拠、基盤モデル、エージェント型 AI の統制を網羅します。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/ja/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/ai-robot.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2026 年金融機関 AI ガバナンス指数:説明可能性と監督 — Sebastien Rousseau">
+<meta name="twitter:description" content="金融機関のための 2026 年 AI ガバナンス指数。説明可能性、監督、監査ログ、責任、規制上の証拠、基盤モデル、エージェント型 AI の統制を網羅します。">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/ai-robot.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/ja/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">メインコンテンツへスキップ</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="ナビゲーションを切り替える" />
+      <div class="wrap">
+        <a class="ap-brand" href="/ja/index.html" aria-label="Sebastien Rousseau ホーム">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="メインナビゲーション">
+          <ul class="ap-menu">
+            <li><a href="/ja/nitsuite/index.html">私について</a></li>
+            <li><a href="/ja/kiji/index.html" aria-current="page" class="active">記事</a></li>
+            <li><a href="/ja/ronbun/index.html">論文</a></li>
+            <li><a href="/ja/toppikku/index.html">トピック</a></li>
+            <li><a href="/ja/purojekuto/index.html">プロジェクト</a></li>
+            <li><a href="/ja/pureirisuto/index.html">プレイリスト</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="ダークテーマに切り替える" aria-pressed="false" title="テーマを切り替える">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="検索 (Cmd または Ctrl + K)" title="検索 (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="言語">
+            <button type="button" class="ap-lang-toggle" aria-label="JA、言語を変更" aria-expanded="false" aria-haspopup="menu" title="言語を変更">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">JA</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/ja/otoiawase/index.html" aria-label="お問い合わせ">お問い合わせ ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="ナビゲーションを切り替える">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>2026 年金融機関 AI ガバナンス指数:説明可能性と監督</h1>
+      <p class="sub">金融サービスの AI ガバナンスは、委員会と原則から、強制可能な統制、証拠、説明可能性、説明責任を担うオペレーティングモデルへと移行する必要があります。</p>
+    <nav class="article-tags" aria-label="トピック"><a href="/tags/index.html#h3-ai-2026" class="article-tag" rel="tag">金融機関 AI ガバナンス 2026</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">銀行 AI 監督</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">AI 説明可能性</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">AI 監査ログ</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">AI 責任</a><a href="/tags/index.html#h3-ai-act" class="article-tag" rel="tag">AI Act 銀行</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">モデルリスク管理</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-10T06:06:06+00:00" class="meta-pub">公開日 10 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="想定読了時間">1 分で読了</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>目次</h2><ol><li><a href="#2026">なぜ 2026 年がこの指数が重要となる年なのか</a></li><li><a href="#2026-2">2026 年指数のアーキテクチャ</a></li><li><a href="#section-3">追跡すべき現在のシグナル</a></li><li><a href="#section-4">モデルガバナンスからワークフロー・ガバナンスへ</a></li><li><a href="#section-5">証拠レイヤー</a></li><li><a href="#section-6">責任とアカウンタビリティ</a></li><li><a href="#section-7">銀行タイプ別の意味</a></li><li><a href="#section-12">結論</a></li><li><a href="#section-13">よくある質問</a></li><li><a href="#section-14">参考文献</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 金融機関のための 2026 年 AI ガバナンス指数。説明可能性、監督、監査ログ、責任、規制上の証拠、基盤モデル、エージェント型 AI の統制を網羅します。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>なぜ 2026 年がこの指数が重要となる年なのか.</strong> Stanford AI Index が有用なのは、変化の速い技術分野を測定可能なものとして扱うからです。研究成果、技術的性能、責任ある展開、経済性、セクター別の導入、政策、世論が単一のフレームに統合されています(Stanford HAI ⧉)。銀行と金融機関は、いまやインフラに対して同じ規律を必要としています。エージェント型…</li>  <li><strong>追跡すべき現在のシグナル.</strong> 従来の model risk 管理は必要ですが、エージェント型 AI には不十分です。モデルは単体では安全でも、過剰な権限、貧弱なデータ、不適切なプロンプト、不明確な人間によるレビュー、または無制御のツールアクセスを伴うワークフローではリスクを生み出します。ガバナンスは入力からアクションまで意思決定を追跡しなければなりません。.</li>  <li><strong>モデルガバナンスからワークフロー・ガバナンスへ.</strong> 従来の model risk 管理は必要ですが、エージェント型 AI には不十分です。モデルは単体では安全でも、過剰な権限、貧弱なデータ、不適切なプロンプト、不明確な人間によるレビュー、または無制御のツールアクセスを伴うワークフローではリスクを生み出します。ガバナンスは入力からアクションまで意思決定を追跡しなければなりません。.</li>  <li><strong>証拠レイヤー.</strong> 証拠レイヤーは、AI の原則と AI の統制を分かつものです。モデルバージョン、データリネージ、プロンプトテンプレート、検索ソース、ツール呼び出し、承認、例外、オーバーライド、アウトプット、モニタリング結果、インシデント記録を取得すべきです。証拠は監査のために再構成するのではなく、プラットフォームに設計として組み込まれているべきです。.</li></ul></aside><h1>2026 年金融機関 AI ガバナンス指数:説明可能性、人間による監督、監査ログ、責任、規制上の証拠</h1>
+<!-- lead-start -->
+<aside class="lead" aria-label="記事の要約">
+<p>**要点。**金融サービスの AI ガバナンスは、取締役会レベルの原則から、強制可能な証拠へと移行しつつあります。2026 年のガバナンス指数は、説明可能性、人間による監督、監査ログ、責任、規制上の証拠、基盤モデルの統制、エージェント型 AI の権限を測定します — それぞれが、委員会が主張できるものではなく、監督当局が検査できるものとしてです。</p>
+<p><strong>主要なポイント:</strong></p>
+<ul>
+<li>**導入はガバナンスを上回るペースで進んでいます。**金融サービス企業の 81% が AI を活用していますが、モデルの意思決定をオンデマンドで証明できるのはごく一部にとどまります。</li>
+<li>**説明可能性は最重要の統制ポイントです。**規制当局はこれを重要と評価していますが、金融機関は依然としてモニタリング、バイアス、チャレンジャーモデルに苦戦しています。</li>
+<li>**監査ログは唯一の真実の源泉となります。**すべてのモデル呼び出し、データ入力、人間によるオーバーライドは再構成可能でなければなりません。</li>
+<li>**エージェント型 AI が水準を引き上げます。**AI がワークフローを実行するようになれば、ガバナンスはアウトプットだけでなく、権限、アイデンティティ、承認、可逆性までを対象とする必要があります。</li>
+<li>**責任は金融機関に移転します。**基盤モデルのベンダー条項はエクスポージャーに上限を設けるため、銀行が規制上および顧客対応上のリスクを負うことになります。</li>
+</ul>
+<p><strong>関連記事:</strong> <a href="/ja/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/">DORA + AI Act コンプライアンス・スタック</a> · <a href="/ja/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/">決済のための AI オペレーティングシステム</a> · <a href="/ja/ja/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/">エージェント型決済の同意と責任</a></p>
+</aside>
+<!-- lead-end -->
+<p>金融機関における AI ガバナンスは、2026 年により厳しい局面に入ります。業界は原則、方針、実験の段階を超え、いまや、モデルが何を行い、なぜ行い、誰が承認し、どのデータを使用し、人間がどのように介入できたかを証明できる統制システムを必要としています。指数はガバナンスを意図ではなく証拠として測定すべきです。</p>
+<hr />
+<blockquote>
+<p><strong>エグゼクティブサマリー / 主要なポイント</strong></p>
+<ul>
+<li>**金融サービスの AI 導入は高水準にあります。**Cambridge CCAF は、金融サービス企業の 81% が何らかのレベルで AI を導入し、40% が高度な成熟度に達していると報告しています。</li>
+<li>**規制当局は業界の導入から後れを取っています。**同じ報告書は、多くの規制当局が依然として模索またはパイロット段階にあることを示しており、金融機関側からの明確な証拠の必要性を高めています。</li>
+<li>**説明可能性は依然として中心です。**規制当局は説明可能性を重要または重要視すべきものと評価していますが、多くの金融機関は依然としてモニタリングとバイアス統制に苦戦しています。</li>
+<li>**エージェント型 AI が水準を引き上げます。**AI システムがツールを呼び出してワークフローを実行するようになれば、ガバナンスは権限、アイデンティティ、アクション、承認、可逆性を対象とする必要があります。</li>
+<li>**ガバナンス指数は運用的でなければなりません。**委員会だけでは不十分であり、監査ログ、モデルインベントリ、テスト結果、インシデント記録、統制テレメトリは継続的に生成される必要があります。</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="2026">なぜ 2026 年がこの指数が重要となる年なのか <a class="heading-anchor" href="#2026" aria-label="リンク先 なぜ 2026 年がこの指数が重要となる年なのか">#</a></h2>
+<p>Stanford AI Index が有用なのは、変化の速い技術分野を測定可能なものとして扱うからです。研究成果、技術的性能、責任ある展開、経済性、セクター別の導入、政策、世論が単一のフレームに統合されています(<a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" title="2026 年 AI インデックス報告書">Stanford HAI ⧉</a>)。銀行と金融機関は、いまやインフラに対して同じ規律を必要としています。エージェント型 AI、量子安全セキュリティ、クラウドネイティブ・レジリエンス、ホールセール決済は、もはや別個のイノベーション・トラックではなく、1 つのオペレーティングモデルへと収斂しつつあります。</p>
+<p>銀行にとっての実務上の問いは、各領域が重要かどうかではありません。問いは、金融機関がそれらすべての準備態勢を同時に測定できるかどうかです。銀行はエージェント型 AI を展開しても、暗号が移行準備できていなければ依然として脆弱です。クラウドプラットフォームを近代化しても、決済データが構造化されていなければ失敗し得ます。トークン化のパイロットを実施しても、決済、流動性、アイデンティティ、監査の各レイヤーが一体として設計されていなければ、システミックリスクを生み出します。</p>
+<h2 id="2026-2">2026 年指数のアーキテクチャ <a class="heading-anchor" href="#2026-2" aria-label="リンク先 2026 年指数のアーキテクチャ">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>指数レイヤー</th>
+<th>2026 年の方向性</th>
+<th>準備態勢の指標</th>
+<th>誤処理時のリスク</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>インベントリ</strong></td>
+<td>モデル、エージェント、データセット、プロンプト、ベンダーの動的な登録簿を維持</td>
+<td>AI インベントリのカバレッジと鮮度</td>
+<td>モデル使用の不可視化</td>
+</tr>
+<tr>
+<td><strong>説明可能性</strong></td>
+<td>説明の深さをリスクとユーザーへの影響に合わせる</td>
+<td>ユースケース別の説明可能性カバレッジ</td>
+<td>規制対象ワークフローにおけるブラックボックス意思決定</td>
+</tr>
+<tr>
+<td><strong>監督</strong></td>
+<td>承認、モニタリング、例外処理、アカウンタビリティに関する人間の役割を定義</td>
+<td>自律性ティア別の監督モデル</td>
+<td>実質的な人間の制御の喪失</td>
+</tr>
+<tr>
+<td><strong>証拠</strong></td>
+<td>ログ、テスト、データリネージ、プロンプト、ツール呼び出し、承認を取得</td>
+<td>監査証拠の完全性</td>
+<td>証明できないガバナンス</td>
+</tr>
+<tr>
+<td><strong>責任</strong></td>
+<td>銀行、ベンダー、ユーザー、モデルプロバイダー、ワークフローオーナー間の責任を明確化</td>
+<td>アカウンタビリティ・マッピングの品質</td>
+<td>損害発生後の責任の不明確化</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-3">追跡すべき現在のシグナル <a class="heading-anchor" href="#section-3" aria-label="リンク先 追跡すべき現在のシグナル">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>シグナル</th>
+<th>銀行にとっての意味</th>
+<th>出典</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>金融サービス企業における 81% の AI 導入率</strong></td>
+<td>AI はすでに広範に展開されているため、ガバナンスはスケールしなければならない</td>
+<td><a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="2026 年金融サービスにおけるグローバル AI 報告書">Cambridge CCAF ⧉</a></td>
+</tr>
+<tr>
+<td><strong>40% の高度な AI 成熟度</strong></td>
+<td>多くの企業が実験段階を超えている</td>
+<td><a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="2026 年金融サービスにおけるグローバル AI 報告書">Cambridge CCAF ⧉</a></td>
+</tr>
+<tr>
+<td><strong>規制当局の 78% が説明可能性を重要または重要視すべきと評価</strong></td>
+<td>説明可能性は「あれば望ましい」ものではなく、監督上の期待事項である</td>
+<td><a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="2026 年金融サービスにおけるグローバル AI 報告書">Cambridge CCAF ⧉</a></td>
+</tr>
+<tr>
+<td><strong>責任ある AI 報告は依然として不均一</strong></td>
+<td>能力に関する報告は、安全性とガバナンスの測定よりも進んでいる</td>
+<td><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" title="2026 年 AI インデックス報告書">Stanford HAI ⧉</a></td>
+</tr>
+<tr>
+<td><strong>AI エージェントの信頼性ギャップは依然として存在</strong></td>
+<td>能力が向上しても、ガバナンスは失敗を織り込む必要がある</td>
+<td><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance" title="技術的性能の章">Stanford HAI ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-4">モデルガバナンスからワークフロー・ガバナンスへ <a class="heading-anchor" href="#section-4" aria-label="リンク先 モデルガバナンスからワークフロー・ガバナンスへ">#</a></h2>
+<p>従来の model risk 管理は必要ですが、エージェント型 AI には不十分です。モデルは単体では安全でも、過剰な権限、貧弱なデータ、不適切なプロンプト、不明確な人間によるレビュー、または無制御のツールアクセスを伴うワークフローではリスクを生み出します。ガバナンスは入力からアクションまで意思決定を追跡しなければなりません。</p>
+<h2 id="section-5">証拠レイヤー <a class="heading-anchor" href="#section-5" aria-label="リンク先 証拠レイヤー">#</a></h2>
+<p>証拠レイヤーは、AI の原則と AI の統制を分かつものです。モデルバージョン、データリネージ、プロンプトテンプレート、検索ソース、ツール呼び出し、承認、例外、オーバーライド、アウトプット、モニタリング結果、インシデント記録を取得すべきです。証拠は監査のために再構成するのではなく、プラットフォームに設計として組み込まれているべきです。</p>
+<h2 id="section-6">責任とアカウンタビリティ <a class="heading-anchor" href="#section-6" aria-label="リンク先 責任とアカウンタビリティ">#</a></h2>
+<p>最も難しいガバナンス上の問いは、AI 対応ワークフローが顧客に損害を与えたり、ルールに違反したり、支払いを誤ルーティングしたり、サイバー・エクスポージャーを生じさせた場合に、誰が責任を負うのかという点です。指数は、ユースケース、モデル、データ、プラットフォーム、ベンダー、ビジネスプロセスの各レベルでアカウンタビリティを担うオーナーを要求すべきです。</p>
+<h2 id="section-7">銀行タイプ別の意味 <a class="heading-anchor" href="#section-7" aria-label="リンク先 銀行タイプ別の意味">#</a></h2>
+<h3 id="section-8">グローバルなシステム上重要な銀行 <a class="heading-anchor" href="#section-8" aria-label="リンク先 グローバルなシステム上重要な銀行">#</a></h3>
+<p>グローバル銀行は、この指数をエンタープライズ・アーキテクチャのスコアカードとして扱うべきです。優先事項は新たな概念実証ではなく、自律的ワークフロー、暗号移行、クラウド依存、決済近代化を、単一のリスクと価値のシステムとしてガバナンスできることの証拠です。</p>
+<h3 id="section-9">トランザクションバンクとコーポレートバンク <a class="heading-anchor" href="#section-9" aria-label="リンク先 トランザクションバンクとコーポレートバンク">#</a></h3>
+<p>トランザクションバンクは、ホールセール決済、構造化データ、流動性、トークン化預金、エージェント型トレジャリー・サービスに注力すべきです。最も価値のある顧客向け提案は、より速い資金移動だけではなく、説明可能で、監査可能で、プログラム可能な資金移動であり、調査の減少と運転資本の可視性の向上を伴うものです。</p>
+<h3 id="section-10">地域銀行 <a class="heading-anchor" href="#section-10" aria-label="リンク先 地域銀行">#</a></h3>
+<p>地域銀行は、プログラムの拡散を避けるためにこの指数を活用すべきです。すべてのフロンティアをリードする必要はありませんが、AI ガバナンス、ポスト量子インベントリ、クラウド退出の証拠、決済データの準備態勢に関して信頼できる立ち位置が必要です。</p>
+<h3 id="psp">フィンテック、PSP、インフラ・プロバイダー <a class="heading-anchor" href="#psp" aria-label="リンク先 フィンテック、PSP、インフラ・プロバイダー">#</a></h3>
+<p>フィンテックとインフラ・プロバイダーは、製品ロードマップを測定可能な銀行の準備態勢に整合させるべきです。最良の提案は、統合リスクを低減し、証拠を強化し、複雑なインフラを銀行がガバナンスしやすくするものです。</p>
+<h2 id="section-12">結論 <a class="heading-anchor" href="#section-12" aria-label="リンク先 結論">#</a></h2>
+<p>指数型レポートの価値は、断片化した技術アジェンダを測定可能なオペレーティングモデルへと変換する点にあります。2026 年において、金融インフラの勝者となるのは、最も多くのパイロットを抱える金融機関ではありません。勝者となるのは、自律性、セキュリティ、レジリエンス、決済、経済性、ガバナンスにわたる準備態勢を同時に証明できる金融機関です。</p>
+<h2 id="section-13">よくある質問 <a class="heading-anchor" href="#section-13" aria-label="リンク先 よくある質問">#</a></h2>
+<p><strong>金融サービスにおける AI ガバナンスとは何ですか?</strong></p>
+<p>それは、モデルのライフサイクルとビジネスワークフロー全体にわたり、AI 利用が合法、説明可能、安全、公正、監査可能、レジリエント、説明責任を伴うものであることを保証する統制システムです。</p>
+<p><strong>なぜエージェント型 AI のガバナンスはより困難なのですか?</strong></p>
+<p>エージェント型 AI はツールを呼び出し、タスクを計画し、コンテキストを活用し、アクションをトリガーできるためです。すなわち、ガバナンスはアウトプットの品質だけでなく、実行権限を対象とする必要があります。</p>
+<p><strong>AI ガバナンス指数には何を含めるべきですか?</strong></p>
+<p>インベントリ、説明可能性、監督、証拠、データガバナンス、ベンダーのアカウンタビリティ、インシデント対応、セキュリティ、測定可能なビジネス価値を含めるべきです。</p>
+<p><strong>最も重要な最初のステップは何ですか?</strong></p>
+<p>完全な AI インベントリを構築し、それをリスクのティアリング、オーナーシップ、統制、モニタリング、証拠収集に接続することです。</p>
+<h2 id="section-14">参考文献 <a class="heading-anchor" href="#section-14" aria-label="リンク先 参考文献">#</a></h2>
+<ul>
+<li>Stanford HAI, (2026). <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" title="2026 年 AI インデックス報告書">2026 年 AI インデックス報告書 ⧉</a>.</li>
+<li>Stanford HAI, (2026). <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance" title="技術的性能の章">技術的性能の章 ⧉</a>.</li>
+<li>Cambridge Centre for Alternative Finance, (2026). <a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="2026 年金融サービスにおけるグローバル AI 報告書">2026 年金融サービスにおけるグローバル AI 報告書 ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">最終確認 <time datetime="2026-06-10">2026-06-10</time>。</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="著者について"><img alt="Sebastien Rousseau の肖像" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/ja/nitsuite/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">シニア・バンキング・テクノロジスト。応用AI、ISO 20022 への移行、金融サービス向けポスト量子暗号、ホールセール決済の構造変革について執筆しています。</span><span class="author-credentials">HSBC コマーシャル・アンド・インベストメント・バンク、PayPal、Barclays、Shazam、AKQA、Virgin Group にて 20 年以上の経験。 <a href="/ja/nitsuite/index.html">プロフィール全文</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最終確認日 <time datetime="2026-05-28">2026-05-28</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">関連記事</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/ja/2023-12-18-ginkou-ni-okeru-ai-to-ryoushi-keisan-no-genjou-2023-soukatsu/index.html" class="related-media" aria-label="銀行における AI と量子計算の現状:2023 年総括" tabindex="-1"><img alt="銀行における AI と量子計算の現状:2023 年総括" src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-aTWKwJllPOA.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-2023"><a href="https://sebastienrousseau.com/ja/2023-12-18-ginkou-ni-okeru-ai-to-ryoushi-keisan-no-genjou-2023-soukatsu/index.html">銀行における AI と量子計算の現状:2023 年総括</a> <a class="heading-anchor" href="#ai-2023" aria-label="リンク先 銀行における AI と量子計算の現状:2023 年総括">#</a></h3><p><time datetime="2023-12-18">2023-12-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" class="related-media" aria-label="DORA、EU AI Act、データ主権:2026 年銀行向けコンプライアンス・スタック" tabindex="-1"><img alt="Compliance stack diagram showing DORA resilience, EU AI Act transparency, data sovereignty, cloud concentration risk, audit logs, model governance, and third-party providers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="doraeu-ai-act-2026"><a href="https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026">DORA、EU AI Act、データ主権:2026 年銀行向けコンプライアンス・スタック</a> <a class="heading-anchor" href="#doraeu-ai-act-2026" aria-label="リンク先 DORA、EU AI Act、データ主権:2026 年銀行向けコンプライアンス・スタック">#</a></h3><p><time datetime="2026-05-28">2026-05-28</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ja/2026-05-20-cloud-native-banking-financial-institutions-2026" class="related-media" aria-label="2026 年のクラウドネイティブ・バンキング：Kubernetes、DORA、主権、そして VM とコンテナの分断の終わり" tabindex="-1"><img alt="Cloud-native banking architecture for 2026 showing Kubernetes, VM coexistence, DORA resilience, sovereign cloud, observability, and bank platform engineering" src="https://cloudcdn.pro/api/transform?url=/stocks/images/freeman-zhou-oV9hp8wXkPE.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-kubernetesdora-vm"><a href="https://sebastienrousseau.com/ja/2026-05-20-cloud-native-banking-financial-institutions-2026">2026 年のクラウドネイティブ・バンキング：Kubernetes、DORA、主権、そして VM とコンテナの分断の終わり</a> <a class="heading-anchor" href="#2026-kubernetesdora-vm" aria-label="リンク先 2026 年のクラウドネイティブ・バンキング：Kubernetes、DORA、主権、そして VM とコンテナの分断の終わり">#</a></h3><p><time datetime="2026-05-20">2026-05-20</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="記事ページネーション"><a class="post-pagination-prev" href="/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">前へ</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/ja/nitsuite/index.html">私について</a></li>
+              <li><a href="/ja/otoiawase/index.html">お問い合わせ</a></li>
+              <li><a href="/ja/sutaitikku-saito-jenereta-de-sakusei/index.html">Static Site Generator で作成</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">記事</h2>
+            <ul>
+              <li><a href="/ja/kiji/index.html">記事</a></li>
+              <li><a href="/ja/ronbun/index.html">論文</a></li>
+              <li><a href="/ja/tagu/index.html">タグ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">活動</h2>
+            <ul>
+              <li><a href="/ja/purojekuto/index.html">プロジェクト</a></li>
+              <li><a href="/ja/pureirisuto/index.html">プレイリスト</a></li>
+              <li><a href="/ja/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">連絡先</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="ニュースレター登録">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — 決済、AI、ポスト量子暗号に関するリサーチノート。スパムは送りません。</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="anata@ginkou.com" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">登録する</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="ソーシャルリンク">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau の Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau の Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau の LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau の LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau の Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau の Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau の YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau の YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/ja/akusesibiriti/index.html">アクセシビリティ</a> ·
+            <a href="/ja/puraibashi/index.html">プライバシー</a> ·
+            <a href="/ja/riyou-kiyaku/index.html">利用規約</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ja"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ja"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":195,"headline":"2026 年金融機関 AI ガバナンス指数:説明可能性と監督","description":"金融機関のための 2026 年 AI ガバナンス指数。説明可能性、監督、監査ログ、責任、規制上の証拠、基盤モデル、エージェント型 AI の統制を網羅します。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/ai-robot.webp","width":"100vw","height":"100vh","caption":"銀行ガバナンスデスクに着くヒューマノイドロボット — 2026 年の金融機関における AI の説明可能性、人間による監督、説明責任を担うモデルリスク管理を象徴"},"url":"https://sebastienrousseau.com/ja/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/","datePublished":"2026-06-10T06:06:06+00:00","dateModified":"2026-06-10","inLanguage":"ja","keywords":"金融機関 AI ガバナンス 2026, 銀行 AI 監督, AI 説明可能性, AI 監査ログ, AI 責任, AI Act 銀行, モデルリスク管理","articleSection":"Risk","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ja/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ja"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ja/"},{"@type":"ListItem","position":3,"name":"2026 年金融機関 AI ガバナンス指数:説明可能性と監督","item":"https://sebastienrousseau.com/ja/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="検索">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>検索</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="検索">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="ドキュメントを検索..." autocomplete="off" aria-label="検索"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> 閉じる</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 移動</span><span><kbd>Enter</kbd> 開く</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

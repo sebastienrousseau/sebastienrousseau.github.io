@@ -1,11 +1,11 @@
 {
-  "description": "জানুন কীভাবে OpenAI Whisper এবং Metal Performance Shaders macOS-এ রিয়েল-টাইম স্পিচ রিকগনিশন রূপান্তরিত করছে, অতুলনীয় গতি ও নির্ভুলতা প্রদান করে।",
-  "title": "Fast Real-Time Speech Recognition on macOS: OpenAI Whisper",
-  "language": "bn-BD",
-  "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
-  "banner_alt": "রিয়েল-টাইম স্বয়ংক্রিয় স্পিচ রিকগনিশন (ASR)-এর জন্য ব্যানার",
   "locale": "bn_BD",
-  "subtitle": "আপনার Mac-এ AI-চালিত, GPU-ত্বরান্বিত স্পিচ-টু-টেক্সটের শক্তি উন্মোচন করুন",
   "date": "Mar 12, 2024",
-  "keywords": "OpenAI Whisper, Metal Performance Shaders, macOS স্পিচ রিকগনিশন, রিয়েল-টাইম ট্রান্সক্রিপশন, ভয়েস অ্যাক্টিভিটি ডিটেকশন, GPU অ্যাক্সেলারেশন, Python ইন্টিগ্রেশন, স্পিচ-টু-টেক্সট macOS, শক্তি-সাশ্রয়ী স্পিচ ডিটেকশন, Apple silicon"
+  "banner_alt": "রিয়েল-টাইম স্বয়ংক্রিয় স্পিচ রিকগনিশন (ASR)-এর জন্য ব্যানার",
+  "language": "bn-BD",
+  "description": "জানুন কীভাবে OpenAI Whisper এবং Metal Performance Shaders macOS-এ রিয়েল-টাইম স্পিচ রিকগনিশন রূপান্তরিত করছে, অতুলনীয় গতি ও নির্ভুলতা প্রদান করে।",
+  "keywords": "OpenAI Whisper, Metal Performance Shaders, macOS স্পিচ রিকগনিশন, রিয়েল-টাইম ট্রান্সক্রিপশন, ভয়েস অ্যাক্টিভিটি ডিটেকশন, GPU অ্যাক্সেলারেশন, Python ইন্টিগ্রেশন, স্পিচ-টু-টেক্সট macOS, শক্তি-সাশ্রয়ী স্পিচ ডিটেকশন, Apple silicon",
+  "title": "Fast Real-Time Speech Recognition on macOS: OpenAI Whisper",
+  "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
+  "subtitle": "আপনার Mac-এ AI-চালিত, GPU-ত্বরান্বিত স্পিচ-টু-টেক্সটের শক্তি উন্মোচন করুন"
 }

@@ -6,8 +6,24 @@
     <description>Artiklar på svenska: tillämpad AI, ISO 20022-betalningar, postkvantkryptografi och transformationen av grossistbetalningar.</description>
     <atom:link href="https://sebastienrousseau.com/sv/rss.xml" rel="self" type="application/rss+xml"/>
     <language>sv-SE</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 22:08:37 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alla rättigheter förbehållna.</copyright>
+    <item>
+      <title>AI-styrningsindex för finansiella institutioner 2026: förklarbarhet, tillsyn, revisionsloggar och ansvar</title>
+      <link>https://sebastienrousseau.com/sv/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/</link>
+      <description>Ett AI-styrningsindex 2026 för finansiella institutioner som täcker förklarbarhet, tillsyn, revisionsloggar, ansvar, regulatoriskt bevis, grundmodeller och kontroller för agentisk AI.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/</guid>
+      <pubDate>Wed, 10 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ai-robot.webp" type="image/webp" length="0"/>
+      <category>AI-styrning finansiella institutioner 2026</category>
+      <category>AI-tillsyn banker</category>
+      <category>AI-förklarbarhet</category>
+      <category>AI-revisionsloggar</category>
+      <category>AI-ansvar</category>
+      <category>AI Act banker</category>
+      <category>modellriskhantering</category>
+    </item>
     <item>
       <title>DORA, EU:s AI-förordning och datasuveränitet: bankernas efterlevnadsstack 2026</title>
       <link>https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

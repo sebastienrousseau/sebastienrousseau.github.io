@@ -6,8 +6,24 @@
     <description>บทความภาษาไทย: AI ประยุกต์, การชำระเงิน ISO 20022, การเข้ารหัสหลังควอนตัม และการปฏิรูปการชำระเงินขายส่ง</description>
     <atom:link href="https://sebastienrousseau.com/th/rss.xml" rel="self" type="application/rss+xml"/>
     <language>th-TH</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 22:08:37 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์</copyright>
+    <item>
+      <title>ดัชนีธรรมาภิบาล AI สำหรับสถาบันการเงินในปี 2026: ความสามารถในการอธิบาย การกำกับโดยมนุษย์ บันทึกการตรวจสอบ ความรับผิด และหลักฐานเชิงกำกับ</title>
+      <link>https://sebastienrousseau.com/th/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/</link>
+      <description>ดัชนีธรรมาภิบาล AI ปี 2026 สำหรับสถาบันการเงิน ครอบคลุมความสามารถในการอธิบาย การกำกับ บันทึกการตรวจสอบ ความรับผิด หลักฐานเชิงกำกับ โมเดลพื้นฐาน และการควบคุม AI แบบเอเจนต์</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/</guid>
+      <pubDate>Thu, 28 May 2026 22:08:37 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ai-robot.webp" type="image/webp" length="0"/>
+      <category>ธรรมาภิบาล AI สถาบันการเงิน 2026</category>
+      <category>การกำกับ AI ธนาคาร</category>
+      <category>ความสามารถในการอธิบาย AI</category>
+      <category>บันทึกการตรวจสอบ AI</category>
+      <category>ความรับผิด AI</category>
+      <category>AI Act ธนาคาร</category>
+      <category>model risk management</category>
+    </item>
     <item>
       <title>DORA กฎหมาย AI ของ EU และอธิปไตยข้อมูล: สแต็คการปฏิบัติตามกฎปี 2026 ของธนาคาร</title>
       <link>https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

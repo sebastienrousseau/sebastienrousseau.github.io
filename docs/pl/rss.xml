@@ -6,8 +6,24 @@
     <description>Artykuły po polsku: stosowana sztuczna inteligencja, płatności ISO 20022, kryptografia postkwantowa oraz transformacja płatności hurtowych.</description>
     <atom:link href="https://sebastienrousseau.com/pl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>pl-PL</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 22:08:37 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Wszelkie prawa zastrzeżone.</copyright>
+    <item>
+      <title>Indeks zarządzania AI w instytucjach finansowych 2026: wyjaśnialność, nadzór, dzienniki audytu, odpowiedzialność</title>
+      <link>https://sebastienrousseau.com/pl/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/</link>
+      <description>Indeks zarządzania AI w instytucjach finansowych 2026: wyjaśnialność, nadzór ludzki, dzienniki audytu, odpowiedzialność, dowody regulacyjne, modele bazowe i kontrole agentowego AI.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-06-10-ai-governance-index-financial-institutions-explainability-oversight-liability-2026/</guid>
+      <pubDate>Wed, 10 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ai-robot.webp" type="image/webp" length="0"/>
+      <category>zarzadzanie AI instytucje finansowe 2026</category>
+      <category>nadzor AI banki</category>
+      <category>wyjasnialnosc AI</category>
+      <category>dzienniki audytu AI</category>
+      <category>odpowiedzialnosc AI</category>
+      <category>AI Act banki</category>
+      <category>zarzadzanie ryzykiem modeli</category>
+    </item>
     <item>
       <title>DORA, EU AI Act i suwerennosc danych: stos zgodnosci bankow w 2026</title>
       <link>https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

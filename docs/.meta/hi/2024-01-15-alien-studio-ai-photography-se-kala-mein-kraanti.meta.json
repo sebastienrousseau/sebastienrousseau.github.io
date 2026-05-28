@@ -1,11 +1,11 @@
 {
-  "subtitle": "जनरेटिव छवियों से एक नया स्टूडियो-प्रवाह",
-  "description": "Alien Studio: AI-फ़ोटोग्राफ़ी द्वारा कला को कैसे नया आकार दिया जा रहा है।",
-  "banner_alt": "AI-निर्मित कला-कृति",
-  "date": "January 15, 2024",
-  "keywords": "Alien Studio, AI, फ़ोटोग्राफ़ी, जनरेटिव, कला, Stable Diffusion, MidJourney, रचनात्मकता, फ़ाइन-ट्यूनिंग, स्टाइल",
-  "title": "Alien Studio: AI-फ़ोटोग्राफ़ी से कला में क्रांति",
-  "locale": "hi_IN",
   "language": "hi-IN",
-  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp"
+  "title": "Alien Studio: AI-फ़ोटोग्राफ़ी से कला में क्रांति",
+  "date": "January 15, 2024",
+  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
+  "locale": "hi_IN",
+  "subtitle": "जनरेटिव छवियों से एक नया स्टूडियो-प्रवाह",
+  "banner_alt": "AI-निर्मित कला-कृति",
+  "description": "Alien Studio: AI-फ़ोटोग्राफ़ी द्वारा कला को कैसे नया आकार दिया जा रहा है।",
+  "keywords": "Alien Studio, AI, फ़ोटोग्राफ़ी, जनरेटिव, कला, Stable Diffusion, MidJourney, रचनात्मकता, फ़ाइन-ट्यूनिंग, स्टाइल"
 }
