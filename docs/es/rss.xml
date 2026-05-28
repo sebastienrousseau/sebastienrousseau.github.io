@@ -6,8 +6,26 @@
     <description>Artículos en español: IA aplicada, pagos ISO 20022, criptografía postcuántica y transformación de los pagos mayoristas.</description>
     <atom:link href="https://sebastienrousseau.com/es/rss.xml" rel="self" type="application/rss+xml"/>
     <language>es-ES</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 08:31:07 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Todos los derechos reservados.</copyright>
+    <item>
+      <title>El banco multirraíl en 2026: cards, A2A, stablecoins, RTP, FedNow y Open Banking en una sola estrategia</title>
+      <link>https://sebastienrousseau.com/es/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
+      <description>El banco multirraíl de 2026 no elige un único futuro de pagos: orquesta cards, A2A, RTP, FedNow, stablecoins, Open Banking, carteras e ISO 20022 por coste, velocidad y finalidad.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>banco multirraíl 2026</category>
+      <category>pagos A2A</category>
+      <category>FedNow</category>
+      <category>red RTP</category>
+      <category>stablecoins</category>
+      <category>Open Banking</category>
+      <category>cards</category>
+      <category>orquestación de pagos</category>
+      <category>ISO 20022</category>
+    </item>
     <item>
       <title>DORA, EU AI Act y soberanía de datos: el stack de cumplimiento bancario 2026</title>
       <link>https://sebastienrousseau.com/es/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

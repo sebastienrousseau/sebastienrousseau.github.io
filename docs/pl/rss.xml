@@ -6,8 +6,26 @@
     <description>Artykuły po polsku: stosowana sztuczna inteligencja, płatności ISO 20022, kryptografia postkwantowa oraz transformacja płatności hurtowych.</description>
     <atom:link href="https://sebastienrousseau.com/pl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>pl-PL</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 08:31:08 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Wszelkie prawa zastrzeżone.</copyright>
+    <item>
+      <title>Wieloszynowy bank w 2026: karty, A2A, stablecoiny, RTP, FedNow i Open Banking w jednej strategii</title>
+      <link>https://sebastienrousseau.com/pl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
+      <description>Wieloszynowy bank w 2026 nie wybiera jednej przyszlosci platnosci. Orkiestruje karty, platnosci konto do konta (A2A), RTP, FedNow, stablecoiny, Open Banking, portfele i dane ISO 20022 wedlug kosztu, predkosci, ryzyka, finalnosci i kontekstu klienta.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
+      <pubDate>Thu, 28 May 2026 08:31:08 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>wieloszynowy bank 2026</category>
+      <category>platnosci A2A</category>
+      <category>FedNow</category>
+      <category>siec RTP</category>
+      <category>stablecoiny</category>
+      <category>Open Banking</category>
+      <category>karty</category>
+      <category>orkiestracja platnosci</category>
+      <category>ISO 20022</category>
+    </item>
     <item>
       <title>DORA, EU AI Act i suwerennosc danych: stos zgodnosci bankow w 2026</title>
       <link>https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

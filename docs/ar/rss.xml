@@ -6,14 +6,35 @@
     <description>مقالات بالعربية: الذكاء الاصطناعي التطبيقي، مدفوعات ISO 20022، التشفير ما بعد الكمي، وتحوّل المدفوعات بالجملة.</description>
     <atom:link href="https://sebastienrousseau.com/ar/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ar-SA</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 08:31:07 +0000</lastBuildDate>
     <copyright>© حقوق النشر 2007 - 2026 - سيباستيان روسو. جميع الحقوق محفوظة.</copyright>
+    <item>
+      <title>المصرف متعدد المسارات في 2026: البطاقات وA2A والعملات المستقرَّة وRTP وFedNow وOpen Banking في استراتيجية واحدة</title>
+      <link>https://sebastienrousseau.com/ar/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
+      <description>المصرف متعدد المسارات في 2026 لا يختار مستقبلاً واحداً للمدفوعات. يُنسِّق البطاقات وA2A وRTP وFedNow والعملات المستقرَّة وOpen Banking وبيانات ISO 20022 بحسب التكلفة والسرعة.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>المصرف متعدد المسارات 2026</category>
+      <category>مدفوعات A2A</category>
+      <category>FedNow</category>
+      <category>شبكة RTP</category>
+      <category>العملات المستقرَّة</category>
+      <category>Open Banking</category>
+      <category>البطاقات</category>
+      <category>تنسيق المدفوعات</category>
+      <category>ISO 20022</category>
+      <category>نموذج التشغيل المصرفي</category>
+      <category>التسوية الفورية</category>
+      <category>J.P. Morgan</category>
+    </item>
     <item>
       <title>Magnifica Humanitas: قراءة هندسية لأول رسالة بابوية عن الذكاء الاصطناعي</title>
       <link>https://sebastienrousseau.com/ar/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</link>
       <description>في 25 مايو 2026 أصدر البابا ليون الرابع عشر Magnifica Humanitas، أول رسالة بابوية مخصّصة للذكاء الاصطناعي. قراءتها من داخل قطاع التقنية تكشف إطارًا أخلاقيًا متماسكًا لعصر الذكاء الاصطناعي والكم، وتنتهي إلى الرجاء لا الخوف.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</guid>
-      <pubDate>Thu, 28 May 2026 06:26:19 +0000</pubDate>
+      <pubDate>Thu, 28 May 2026 08:31:07 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
       <category>Magnifica Humanitas</category>

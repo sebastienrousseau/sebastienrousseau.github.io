@@ -6,8 +6,26 @@
     <description>Články v češtině: aplikovaná AI, platby ISO 20022, postkvantová kryptografie a transformace velkoobchodních plateb.</description>
     <atom:link href="https://sebastienrousseau.com/cs/rss.xml" rel="self" type="application/rss+xml"/>
     <language>cs-CZ</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 08:31:07 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Všechna práva vyhrazena.</copyright>
+    <item>
+      <title>Vícekolejová banka v roce 2026: karty, A2A, stablecoiny, RTP, FedNow a Open Banking v jedné strategii</title>
+      <link>https://sebastienrousseau.com/cs/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
+      <description>Vícekolejová banka v roce 2026 si nevolí jedinou platební budoucnost. Orchestruje karty, A2A platby, RTP, FedNow, stablecoiny, Open Banking, peněženky a data ISO 20022 podle nákladů, rychlosti, rizika, finality a kontextu klienta.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
+      <pubDate>Thu, 28 May 2026 08:31:07 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>vícekolejová banka 2026</category>
+      <category>A2A platby</category>
+      <category>FedNow</category>
+      <category>RTP network</category>
+      <category>stablecoiny</category>
+      <category>Open Banking</category>
+      <category>karty</category>
+      <category>orchestrace plateb</category>
+      <category>ISO 20022</category>
+    </item>
     <item>
       <title>DORA, EU AI Act a suverenita dat: Compliance stack pro banky v roce 2026</title>
       <link>https://sebastienrousseau.com/cs/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

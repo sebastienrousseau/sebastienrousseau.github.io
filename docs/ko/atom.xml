@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/ko/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ko/"/>
   <id>https://sebastienrousseau.com/ko/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-28T08:31:08+00:00</updated>
+  <entry>
+    <title>2026년 멀티레일 은행 전략</title>
+    <link href="https://sebastienrousseau.com/ko/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
+    <updated>2026-05-28T08:31:08+00:00</updated>
+    <published>2026-05-28T08:31:08+00:00</published>
+    <summary>2026년 멀티레일 은행은 단일한 결제 미래를 선택하지 않습니다. 카드, 계좌 간 (A2A), RTP, FedNow, 스테이블코인, Open Banking, 월렛, ISO 20022 데이터를 비용·속도·리스크·완결성·고객 맥락에 따라 오케스트레이션합니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI 법, 데이터 주권: 2026년 은행을 위한 컴플라이언스 스택</title>
     <link href="https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

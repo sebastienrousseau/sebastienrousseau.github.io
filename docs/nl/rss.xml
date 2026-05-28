@@ -6,14 +6,32 @@
     <description>Artikelen in het Nederlands: toegepaste AI, ISO 20022-betalingen, post-kwantumcryptografie en transformatie van het wholesale-betalingsverkeer.</description>
     <atom:link href="https://sebastienrousseau.com/nl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>nl-NL</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 08:31:08 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle rechten voorbehouden.</copyright>
+    <item>
+      <title>De multi-rail bank in 2026: kaarten, A2A, stablecoins, RTP, FedNow en Open Banking in één strategie</title>
+      <link>https://sebastienrousseau.com/nl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
+      <description>De multi-rail bank kiest in 2026 geen enkele betaaltoekomst. Zij orkestreert kaarten, van rekening tot rekening (A2A), RTP, FedNow, stablecoins, Open Banking, wallets en ISO 20022-data op kosten, snelheid, risico, finaliteit en klantcontext.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
+      <pubDate>Thu, 28 May 2026 08:31:08 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>multi-rail bank 2026</category>
+      <category>A2A-betalingen</category>
+      <category>FedNow</category>
+      <category>RTP-netwerk</category>
+      <category>stablecoins</category>
+      <category>Open Banking</category>
+      <category>kaarten</category>
+      <category>betalingsorkestratie</category>
+      <category>ISO 20022</category>
+    </item>
     <item>
       <title>DORA, EU AI Act en datasoevereiniteit: de compliance-stack 2026 voor banken</title>
       <link>https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
       <description>DORA, EU AI Act, GDPR, concentratierisico cloud en datasoevereiniteit smelten in 2026 samen tot één compliance-stack voor banken in Nederland.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
-      <pubDate>Thu, 28 May 2026 06:26:19 +0000</pubDate>
+      <pubDate>Thu, 28 May 2026 08:31:08 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>DORA 2026</category>

@@ -6,8 +6,26 @@
     <description>日本語の記事:応用AI、ISO 20022 決済、ポスト量子暗号、ホールセール決済の構造変革。</description>
     <atom:link href="https://sebastienrousseau.com/ja/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ja-JP</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 08:31:08 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>2026 年のマルチレール銀行:単一戦略におけるカード、A2A、RTP、FedNow、OB</title>
+      <link>https://sebastienrousseau.com/ja/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
+      <description>2026 年のマルチレール銀行は、単一の決済の未来を選びません。カード、口座間 (A2A) 決済、RTP、FedNow、ステーブルコイン、オープンバンキング、ウォレット、ISO 20022 データを、コスト、速度、リスク、ファイナリティ、顧客文脈に応じてオーケストレーションします。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>マルチレール銀行 2026</category>
+      <category>A2A 決済</category>
+      <category>FedNow</category>
+      <category>RTP ネットワーク</category>
+      <category>ステーブルコイン</category>
+      <category>オープンバンキング</category>
+      <category>カード</category>
+      <category>決済オーケストレーション</category>
+      <category>ISO 20022</category>
+    </item>
     <item>
       <title>DORA、EU AI Act、データ主権:2026 年銀行向けコンプライアンス・スタック</title>
       <link>https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

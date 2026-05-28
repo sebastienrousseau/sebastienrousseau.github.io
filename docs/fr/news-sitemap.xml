@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/fr/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fr-FR</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-01T06:06:06+00:00</news:publication_date>
+    <news:title>La banque multi-rails en 2026 : cartes, A2A, stablecoins, RTP, FedNow et Open Banking</news:title>
+    <news:keywords>banque multi-rails 2026, paiements A2A, FedNow, RTP, stablecoins, Open Banking, cartes, orchestration des paiements, ISO 20022</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

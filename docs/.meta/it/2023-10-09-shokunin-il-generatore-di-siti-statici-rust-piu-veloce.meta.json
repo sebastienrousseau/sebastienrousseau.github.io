@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Laptop spento su un tavolo bianco con un bicchiere d'acqua a sinistra e una penna, un taccuino e una pianta a destra",
-  "date": "October 9, 2023",
   "locale": "it_IT",
-  "title": "Static Site Generator: il generatore di siti statici più veloce basato su Rust",
   "keywords": "Static Site Generator, SSG, Rust, generatore di siti statici, prestazioni, SEO, accessibilità, JSON-LD",
   "subtitle": "Prestazioni, accessibilità e SEO di prima classe per i contenuti tecnici",
+  "date": "October 9, 2023",
+  "banner_alt": "Laptop spento su un tavolo bianco con un bicchiere d'acqua a sinistra e una penna, un taccuino e una pianta a destra",
   "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
-  "description": "Static Site Generator è un generatore di siti statici scritto in Rust, ottimizzato per build ultraveloci, accessibilità di alto livello e SEO con supporto JSON-LD nativo.",
-  "language": "it-IT"
+  "title": "Static Site Generator: il generatore di siti statici più veloce basato su Rust",
+  "language": "it-IT",
+  "description": "Static Site Generator è un generatore di siti statici scritto in Rust, ottimizzato per build ultraveloci, accessibilità di alto livello e SEO con supporto JSON-LD nativo."
 }

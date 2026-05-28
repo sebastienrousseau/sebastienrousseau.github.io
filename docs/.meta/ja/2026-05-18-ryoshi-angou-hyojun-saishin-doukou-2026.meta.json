@@ -1,12 +1,12 @@
 {
+  "keywords": "量子暗号 2026, ポスト量子暗号, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, ハイブリッド鍵交換, QKD, ETSI QKD, ISO IEC 23837, 暗号アジリティ, harvest now decrypt later, HNDL, 金融サービス暗号, 銀行セキュリティ",
+  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
   "banner_alt": "2026 年向け量子安全暗号移行マップ:NIST PQC 標準、ハイブリッドプロトコル作業、QKD 保証、暗号アジリティ、銀行データリスク階層を示す",
-  "date": "May 18, 2026",
+  "title": "2026 年の量子暗号リセット:PQC 標準、QKD 保証、銀行が先送りできない移行作業",
+  "last_reviewed": "2026-05-18",
+  "language": "ja-JP",
+  "description": "2026 年の量子暗号は、もはや量子コンピュータが差し迫っているかという議論ではない。それは、ポスト量子暗号、暗号アジリティ、量子鍵配送保証、プロトコル標準、サプライヤー準備、そして「いま収穫し、あとで復号する」リスクにすでに晒されている長期保管金融データを横断する移行プログラムである。",
   "subtitle": "量子暗号は地平線スキャンから実装規律へ移行した:NIST PQC 標準は準備完了、UK NCSC ガイダンスはアルゴリズム選択を絞り込み、IETF プロトコル作業はなお成熟段階、QKD 保証は実験室の信頼から認証言語へ移行している。",
   "locale": "ja_JP",
-  "language": "ja-JP",
-  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
-  "last_reviewed": "2026-05-18",
-  "description": "2026 年の量子暗号は、もはや量子コンピュータが差し迫っているかという議論ではない。それは、ポスト量子暗号、暗号アジリティ、量子鍵配送保証、プロトコル標準、サプライヤー準備、そして「いま収穫し、あとで復号する」リスクにすでに晒されている長期保管金融データを横断する移行プログラムである。",
-  "keywords": "量子暗号 2026, ポスト量子暗号, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, ハイブリッド鍵交換, QKD, ETSI QKD, ISO IEC 23837, 暗号アジリティ, harvest now decrypt later, HNDL, 金融サービス暗号, 銀行セキュリティ",
-  "title": "2026 年の量子暗号リセット:PQC 標準、QKD 保証、銀行が先送りできない移行作業"
+  "date": "May 18, 2026"
 }

@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/ja/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ja/"/>
   <id>https://sebastienrousseau.com/ja/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-28T08:31:08+00:00</updated>
+  <entry>
+    <title>2026 年のマルチレール銀行:単一戦略におけるカード、A2A、RTP、FedNow、OB</title>
+    <link href="https://sebastienrousseau.com/ja/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
+    <id>https://sebastienrousseau.com/ja/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
+    <updated>2026-06-01T06:06:06+00:00</updated>
+    <published>2026-06-01T06:06:06+00:00</published>
+    <summary>2026 年のマルチレール銀行は、単一の決済の未来を選びません。カード、口座間 (A2A) 決済、RTP、FedNow、ステーブルコイン、オープンバンキング、ウォレット、ISO 20022 データを、コスト、速度、リスク、ファイナリティ、顧客文脈に応じてオーケストレーションします。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA、EU AI Act、データ主権:2026 年銀行向けコンプライアンス・スタック</title>
     <link href="https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

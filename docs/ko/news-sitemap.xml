@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ko/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T08:31:08+00:00</news:publication_date>
+    <news:title>2026년 멀티레일 은행 전략</news:title>
+    <news:keywords>2026년 멀티레일 은행, A2A 결제, FedNow, RTP 네트워크, 스테이블코인, 오픈뱅킹, 카드, 결제 오케스트레이션, ISO 20022</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

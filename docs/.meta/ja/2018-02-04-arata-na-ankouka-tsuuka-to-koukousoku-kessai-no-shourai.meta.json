@@ -1,12 +1,12 @@
 {
-  "description": "新たな暗号資産プロジェクトと、それがより高速な決済ソリューションをどのように可能にするかについて。",
-  "locale": "ja_JP",
-  "banner_alt": "都市の街灯のネオン",
-  "banner": "https://cloudcdn.pro/stocks/images/clay-banks-l9tsdhTDecg-unsplash.webp",
-  "subtitle": "暗号資産から実世界の決済インフラへ",
-  "title": "新たな暗号資産を公開し、将来のより高速な決済ソリューションを提供する",
-  "language": "ja-JP",
   "keywords": "暗号資産, 決済, リアルタイム決済, トークン, ICO, ブロックチェーン, フィンテック, 国際送金",
   "last_reviewed": "2026-05-11",
-  "date": "February 4, 2018"
+  "date": "February 4, 2018",
+  "language": "ja-JP",
+  "subtitle": "暗号資産から実世界の決済インフラへ",
+  "description": "新たな暗号資産プロジェクトと、それがより高速な決済ソリューションをどのように可能にするかについて。",
+  "banner_alt": "都市の街灯のネオン",
+  "locale": "ja_JP",
+  "banner": "https://cloudcdn.pro/stocks/images/clay-banks-l9tsdhTDecg-unsplash.webp",
+  "title": "新たな暗号資産を公開し、将来のより高速な決済ソリューションを提供する"
 }

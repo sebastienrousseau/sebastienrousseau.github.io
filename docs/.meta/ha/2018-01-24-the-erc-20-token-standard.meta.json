@@ -1,11 +1,11 @@
 {
+  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
+  "language": "ha-NG",
   "description": "ERC-20 shine mafi yawan nau'in token da ake amfani da shi a blockchain na Ethereum, wanda kuma ana kiransa kwangilar dijital ta smart contract.",
+  "date": "Jan 24, 2018",
+  "locale": "ha_NG",
   "keywords": "ethereum, erc20, eip, tokens, kwantoci, blockchain, kuɗaɗen dijital, smart-token, solidity",
   "subtitle": "Alamomin ERC-20, kwangilar smart na Ethereum da daidaitaccen kadarorin dijital.",
-  "language": "ha-NG",
-  "locale": "ha_NG",
-  "date": "Jan 24, 2018",
-  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
-  "title": "ERC-20: The Ethereum Token Interface That Changed the World",
-  "banner_alt": "Kwamfutar laptop da aka kashe da aka ajiye a saman teburin itace mai launin ruwan kasa"
+  "banner_alt": "Kwamfutar laptop da aka kashe da aka ajiye a saman teburin itace mai launin ruwan kasa",
+  "title": "ERC-20: The Ethereum Token Interface That Changed the World"
 }

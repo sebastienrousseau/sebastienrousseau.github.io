@@ -6,8 +6,26 @@
     <description>Bài viết tiếng Việt: AI ứng dụng, thanh toán ISO 20022, mật mã hậu lượng tử và chuyển đổi thanh toán bán buôn.</description>
     <atom:link href="https://sebastienrousseau.com/vi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>vi-VN</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 08:31:08 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Đã đăng ký bản quyền.</copyright>
+    <item>
+      <title>Ngân hàng đa kênh 2026: thẻ, A2A, stablecoin, RTP, FedNow và Open Banking trong một chiến lược</title>
+      <link>https://sebastienrousseau.com/vi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
+      <description>Ngân hàng đa kênh 2026 không chọn một tương lai thanh toán duy nhất. Họ điều phối thẻ, A2A, RTP, FedNow, stablecoin, Open Banking, ví và dữ liệu ISO 20022 theo chi phí, tốc độ, rủi ro và bối cảnh.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>ngân hàng đa kênh 2026</category>
+      <category>thanh toán A2A</category>
+      <category>FedNow</category>
+      <category>mạng RTP</category>
+      <category>stablecoin</category>
+      <category>Open Banking</category>
+      <category>thẻ</category>
+      <category>điều phối thanh toán</category>
+      <category>ISO 20022</category>
+    </item>
     <item>
       <title>DORA, Đạo luật AI EU và chủ quyền dữ liệu: ngăn xếp tuân thủ 2026 cho ngân hàng</title>
       <link>https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

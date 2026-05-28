@@ -6,8 +6,26 @@
     <description>Mga artikulo sa Filipino: applied AI, ISO 20022 payments, post-quantum cryptography at wholesale-payments transformation.</description>
     <atom:link href="https://sebastienrousseau.com/fil/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fil-PH</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 08:31:07 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Lahat ng karapatan ay nakalaan.</copyright>
+    <item>
+      <title>Ang Multi-Rail Bank sa 2026: Cards, A2A, Stablecoins, RTP, FedNow, at Open Banking sa Isang Estratehiya</title>
+      <link>https://sebastienrousseau.com/fil/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
+      <description>Hindi pumipili ng iisang kinabukasan ng pagbabayad ang multi-rail bank sa 2026. Inoorkestra nito ang cards, account-to-account (A2A) payments, RTP, FedNow, stablecoins, Open Banking, wallets, at ISO 20022 data batay sa gastos, bilis, panganib, finality, at konteksto ng kliyente.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
+      <pubDate>Thu, 28 May 2026 08:31:07 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>multi-rail bank 2026</category>
+      <category>A2A payments</category>
+      <category>FedNow</category>
+      <category>RTP network</category>
+      <category>stablecoins</category>
+      <category>Open Banking</category>
+      <category>cards</category>
+      <category>orkestrasyon ng pagbabayad</category>
+      <category>ISO 20022</category>
+    </item>
     <item>
       <title>DORA, EU AI Act, at Soberanya ng Data: Compliance Stack ng Bangko 2026</title>
       <link>https://sebastienrousseau.com/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

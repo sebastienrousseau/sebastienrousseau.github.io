@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/he/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-01T06:06:06+00:00</news:publication_date>
+    <news:title>הבנק הרב-מסילתי ב-2026: כרטיסים, A2A, סטייבלקוינים, RTP, FedNow ו-Open Banking באסטרטגיה אחת</news:title>
+    <news:keywords>בנק רב-מסילתי 2026, תשלומי A2A, FedNow, רשת RTP, סטייבלקוינים, Open Banking, כרטיסים, תזמור תשלומים, ISO 20022, מסילות תשלום, סליקה מיידית, ארנקים דיגיטליים</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

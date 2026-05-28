@@ -6,8 +6,26 @@
     <description>한국어 기사: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 그리고 도매 결제 인프라의 구조적 변혁.</description>
     <atom:link href="https://sebastienrousseau.com/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 08:31:08 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>2026년 멀티레일 은행 전략</title>
+      <link>https://sebastienrousseau.com/ko/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
+      <description>2026년 멀티레일 은행은 단일한 결제 미래를 선택하지 않습니다. 카드, 계좌 간 (A2A), RTP, FedNow, 스테이블코인, Open Banking, 월렛, ISO 20022 데이터를 비용·속도·리스크·완결성·고객 맥락에 따라 오케스트레이션합니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
+      <pubDate>Thu, 28 May 2026 08:31:08 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>2026년 멀티레일 은행</category>
+      <category>A2A 결제</category>
+      <category>FedNow</category>
+      <category>RTP 네트워크</category>
+      <category>스테이블코인</category>
+      <category>오픈뱅킹</category>
+      <category>카드</category>
+      <category>결제 오케스트레이션</category>
+      <category>ISO 20022</category>
+    </item>
     <item>
       <title>DORA, EU AI 법, 데이터 주권: 2026년 은행을 위한 컴플라이언스 스택</title>
       <link>https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

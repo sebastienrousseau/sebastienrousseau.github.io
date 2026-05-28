@@ -1,0 +1,19 @@
+{
+  "background_color": "#ffffff",
+  "description": "The multi-rail bank in 2026 does not pick one payments future. It orchestrates cards, account-to-account payments, RTP, ",
+  "display": "standalone",
+  "icons": [
+    {
+      "purpose": "any maskable",
+      "sizes": "512x512",
+      "src": "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg",
+      "type": "image/svg+xml"
+    }
+  ],
+  "name": "Sebastien Rousseau",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": "sebastienrou",
+  "start_url": ".",
+  "theme_color": "#ffffff"
+}

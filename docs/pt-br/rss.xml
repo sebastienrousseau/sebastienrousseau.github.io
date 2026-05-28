@@ -6,8 +6,26 @@
     <description>Artigos em português: IA aplicada, pagamentos ISO 20022, criptografia pós-quântica e transformação dos pagamentos de atacado.</description>
     <atom:link href="https://sebastienrousseau.com/pt-br/rss.xml" rel="self" type="application/rss+xml"/>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 08:31:08 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Todos os direitos reservados.</copyright>
+    <item>
+      <title>O banco multi-rail em 2026: cartões, A2A, stablecoins, RTP, FedNow e Open Banking em uma estratégia</title>
+      <link>https://sebastienrousseau.com/pt-br/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
+      <description>O banco multi-rail em 2026 não escolhe um futuro único de pagamentos. Orquestra cartões, A2A, RTP, FedNow, stablecoins, Open Banking, carteiras e dados ISO 20022 por custo, velocidade, risco e finalidade.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
+      <pubDate>Thu, 28 May 2026 08:31:08 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>banco multi-rail 2026</category>
+      <category>pagamentos A2A</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>stablecoins</category>
+      <category>Open Banking</category>
+      <category>cartões</category>
+      <category>orquestração de pagamentos</category>
+      <category>ISO 20022</category>
+    </item>
     <item>
       <title>DORA, EU AI Act e soberania de dados: a stack de conformidade bancária 2026</title>
       <link>https://sebastienrousseau.com/pt-br/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

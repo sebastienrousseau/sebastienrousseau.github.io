@@ -6,8 +6,26 @@
     <description>中文文章：應用人工智慧、ISO 20022 支付、後量子密碼學以及批發支付的轉型。</description>
     <atom:link href="https://sebastienrousseau.com/zh-hant/rss.xml" rel="self" type="application/rss+xml"/>
     <language>zh-Hant</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 08:31:08 +0000</lastBuildDate>
     <copyright>© 2007 - 2026 - Sebastien Rousseau。版權所有，翻印必究。</copyright>
+    <item>
+      <title>2026 多軌銀行:卡、A2A、穩定幣、RTP、FedNow 與 Open Banking 整合策略</title>
+      <link>https://sebastienrousseau.com/zh-hant/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
+      <description>2026 年的多軌銀行不會押注單一支付未來,而是依成本、速度、風險、終結性與客戶情境,編排卡、帳戶對帳戶 (A2A) 支付、RTP、FedNow、穩定幣、Open Banking、錢包與 ISO 20022 資料。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
+      <pubDate>Thu, 28 May 2026 08:31:08 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>多軌銀行 2026</category>
+      <category>A2A 支付</category>
+      <category>FedNow</category>
+      <category>RTP 網絡</category>
+      <category>穩定幣</category>
+      <category>Open Banking</category>
+      <category>卡</category>
+      <category>支付編排</category>
+      <category>ISO 20022</category>
+    </item>
     <item>
       <title>DORA、EU AI 法與資料主權:銀行 2026 年法遵堆疊</title>
       <link>https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
