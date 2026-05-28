@@ -6,8 +6,26 @@
     <description>Mga artikulo sa Filipino: applied AI, ISO 20022 payments, post-quantum cryptography at wholesale-payments transformation.</description>
     <atom:link href="https://sebastienrousseau.com/fil/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fil-PH</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 10:12:23 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Lahat ng karapatan ay nakalaan.</copyright>
+    <item>
+      <title>Indeks ng Impraestraktura ng Pagbabangko 2026: Pagsukat sa Kahandaan</title>
+      <link>https://sebastienrousseau.com/fil/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</link>
+      <description>Indeks ng impraestraktura ng pagbabangko para sa 2026 na hango sa Stanford AI Index, sinusukat ang kahandaan sa agentic AI, kaligtasan sa quantum, cloud-native na katatagan, at pandaigdigang wholesale payments.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</guid>
+      <pubDate>Thu, 28 May 2026 10:12:23 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/vladislav-klapin-YeO44yVTl20.webp" type="image/webp" length="0"/>
+      <category>indeks ng impraestraktura ng pagbabangko 2026</category>
+      <category>agentic AI sa pagbabangko</category>
+      <category>kaligtasan sa quantum sa pagbabangko</category>
+      <category>cloud-native na pagbabangko</category>
+      <category>wholesale payments</category>
+      <category>ISO 20022</category>
+      <category>DORA</category>
+      <category>Project Agorá</category>
+      <category>tokenised deposits</category>
+    </item>
     <item>
       <title>DORA, EU AI Act, at Soberanya ng Data: Compliance Stack ng Bangko 2026</title>
       <link>https://sebastienrousseau.com/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/pl/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T10:12:24+00:00</news:publication_date>
+    <news:title>Indeks Infrastruktury Bankowej 2026: gotowość na agentową SI, kryptografię postkwantową, chmurę i płatności hurtowe</news:title>
+    <news:keywords>indeks infrastruktury bankowej 2026, agentowa SI w bankowości, bankowość postkwantowa, bankowość cloud-native, płatności hurtowe, ISO 20022, DORA, Project Agorá, depozyty tokenizowane</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

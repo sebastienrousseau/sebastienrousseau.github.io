@@ -1,11 +1,11 @@
 {
-  "locale": "nl_NL",
-  "subtitle": "Een open-modelfamilie die de basis legt voor toegankelijke generatieve AI",
-  "language": "nl-NL",
-  "description": "Google Gemma transformeert open-source AI-ontwikkeling door een licht, performant en goed gedocumenteerd modelfamilie te bieden.",
-  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
-  "keywords": "Google Gemma, open source, AI, LLM, generatieve AI, ontwikkeling",
+  "title": "Google Gemma transformeert open-source AI-ontwikkeling",
   "banner_alt": "Banner van Google Gemma: open-source AI",
+  "locale": "nl_NL",
   "date": "February 26, 2024",
-  "title": "Google Gemma transformeert open-source AI-ontwikkeling"
+  "subtitle": "Een open-modelfamilie die de basis legt voor toegankelijke generatieve AI",
+  "description": "Google Gemma transformeert open-source AI-ontwikkeling door een licht, performant en goed gedocumenteerd modelfamilie te bieden.",
+  "language": "nl-NL",
+  "keywords": "Google Gemma, open source, AI, LLM, generatieve AI, ontwikkeling",
+  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp"
 }

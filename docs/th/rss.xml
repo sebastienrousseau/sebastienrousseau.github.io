@@ -6,8 +6,26 @@
     <description>บทความภาษาไทย: AI ประยุกต์, การชำระเงิน ISO 20022, การเข้ารหัสหลังควอนตัม และการปฏิรูปการชำระเงินขายส่ง</description>
     <atom:link href="https://sebastienrousseau.com/th/rss.xml" rel="self" type="application/rss+xml"/>
     <language>th-TH</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 10:12:24 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์</copyright>
+    <item>
+      <title>ดัชนีโครงสร้างพื้นฐานทางการธนาคาร 2026: วัดความพร้อมด้าน AI เชิงตัวแทน ความปลอดภัยจากควอนตัม Cloud Native และการชำระเงินขายส่ง</title>
+      <link>https://sebastienrousseau.com/th/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</link>
+      <description>ดัชนีโครงสร้างพื้นฐานทางการธนาคารปี 2026 ที่ได้แรงบันดาลใจจาก Stanford AI Index วัดความพร้อมด้าน AI เชิงตัวแทน ความปลอดภัยจากควอนตัม ความสามารถในการฟื้นตัวแบบ cloud-native และการชำระเงินขายส่งทั่วโลก</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</guid>
+      <pubDate>Thu, 28 May 2026 10:12:24 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/vladislav-klapin-YeO44yVTl20.webp" type="image/webp" length="0"/>
+      <category>ดัชนีโครงสร้างพื้นฐานทางการธนาคาร 2026</category>
+      <category>AI เชิงตัวแทนในธนาคาร</category>
+      <category>ธนาคารปลอดภัยจากควอนตัม</category>
+      <category>ธนาคาร cloud-native</category>
+      <category>การชำระเงินขายส่ง</category>
+      <category>ISO 20022</category>
+      <category>DORA</category>
+      <category>Project Agorá</category>
+      <category>เงินฝากโทเค็น</category>
+    </item>
     <item>
       <title>DORA กฎหมาย AI ของ EU และอธิปไตยข้อมูล: สแต็คการปฏิบัติตามกฎปี 2026 ของธนาคาร</title>
       <link>https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

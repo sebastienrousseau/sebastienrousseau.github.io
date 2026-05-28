@@ -6,8 +6,26 @@
     <description>Статьи на русском языке: прикладной ИИ, платежи ISO 20022, постквантовая криптография и трансформация оптовых платежей.</description>
     <atom:link href="https://sebastienrousseau.com/ru/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ru-RU</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 10:12:24 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Все права защищены.</copyright>
+    <item>
+      <title>Индекс банковской инфраструктуры 2026: агентный ИИ, кванты, облако, платежи</title>
+      <link>https://sebastienrousseau.com/ru/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</link>
+      <description>Индекс банковской инфраструктуры 2026 года в духе Stanford AI Index: готовность к агентному ИИ, постквантовой безопасности, cloud-native устойчивости и оптовым платежам.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</guid>
+      <pubDate>Tue, 02 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/vladislav-klapin-YeO44yVTl20.webp" type="image/webp" length="0"/>
+      <category>индекс банковской инфраструктуры 2026</category>
+      <category>агентный ИИ в банках</category>
+      <category>постквантовая безопасность банков</category>
+      <category>cloud-native банкинг</category>
+      <category>оптовые платежи</category>
+      <category>ISO 20022</category>
+      <category>DORA</category>
+      <category>Project Agorá</category>
+      <category>токенизированные депозиты</category>
+    </item>
     <item>
       <title>DORA, Закон ЕС об ИИ и суверенитет данных: стек комплаенса банков 2026 года</title>
       <link>https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

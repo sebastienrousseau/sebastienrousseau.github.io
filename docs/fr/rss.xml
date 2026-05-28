@@ -6,8 +6,26 @@
     <description>Articles en français : IA appliquée, paiements ISO 20022, cryptographie post-quantique et transformation des paiements wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/fr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fr-FR</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 10:12:23 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Tous droits réservés.</copyright>
+    <item>
+      <title>L&apos;Indice d&apos;infrastructure bancaire 2026 : mesurer la préparation à l&apos;IA agentique, au quantique, au cloud et aux paiements de gros</title>
+      <link>https://sebastienrousseau.com/fr/2026-06-02-banking-infrastructure-index-agentique-ai-quantique-cloud-de-gros-paiements-2026/</link>
+      <description>Un indice d&apos;infrastructure bancaire 2026 inspiré du Stanford AI Index, mesurant la préparation à l&apos;IA agentique, à la sécurité résistante au quantique, à la résilience cloud native et aux paiements de gros mondiaux.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-06-02-banking-infrastructure-index-agentique-ai-quantique-cloud-de-gros-paiements-2026/</guid>
+      <pubDate>Thu, 28 May 2026 10:12:23 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/vladislav-klapin-YeO44yVTl20.webp" type="image/webp" length="0"/>
+      <category>indice infrastructure bancaire 2026</category>
+      <category>IA agentique banque</category>
+      <category>banque résistante au quantique</category>
+      <category>banque cloud native</category>
+      <category>paiements de gros</category>
+      <category>ISO 20022</category>
+      <category>DORA</category>
+      <category>Project Agorá</category>
+      <category>dépôts tokenisés</category>
+    </item>
     <item>
       <title>DORA, EU AI Act et souveraineté des données : la pile de conformité 2026 pour les banques</title>
       <link>https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

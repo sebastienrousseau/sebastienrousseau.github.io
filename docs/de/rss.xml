@@ -6,14 +6,32 @@
     <description>Artikel auf Deutsch: angewandte KI, ISO-20022-Zahlungen, Post-Quanten-Kryptografie und Transformation des Wholesale-Zahlungsverkehrs.</description>
     <atom:link href="https://sebastienrousseau.com/de/rss.xml" rel="self" type="application/rss+xml"/>
     <language>de-DE</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 10:12:23 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle Rechte vorbehalten.</copyright>
+    <item>
+      <title>Bankinfrastruktur-Index 2026: Reife für agentische KI, quantensichere Sicherheit, Cloud-Native-Resilienz und Großbetragszahlungsverkehr</title>
+      <link>https://sebastienrousseau.com/de/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-zahlungsverkehr-2026/</link>
+      <description>Ein vom Stanford AI Index inspirierter Bankinfrastruktur-Index 2026 zur Messung der Reife in agentischer KI, quantensicherer Sicherheit, Cloud-Native-Resilienz und globalem Großbetragszahlungsverkehr.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-zahlungsverkehr-2026/</guid>
+      <pubDate>Thu, 28 May 2026 10:12:23 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/vladislav-klapin-YeO44yVTl20.webp" type="image/webp" length="0"/>
+      <category>Bankinfrastruktur-Index 2026</category>
+      <category>agentische KI Banken</category>
+      <category>quantensichere Bankinfrastruktur</category>
+      <category>Cloud-Native-Banken</category>
+      <category>Großbetragszahlungsverkehr</category>
+      <category>ISO 20022</category>
+      <category>DORA</category>
+      <category>Project Agorá</category>
+      <category>tokenisierte Einlagen</category>
+    </item>
     <item>
       <title>DORA, EU-KI-Verordnung und Datensouveränität: Der Compliance-Stack 2026 für Banken</title>
       <link>https://sebastienrousseau.com/de/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
       <description>DORA, die EU-KI-Verordnung, DSGVO, Cloud-Konzentrationsrisiko und Datensouveränität verschmelzen 2026 zu einem Compliance-Stack für Banken.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
-      <pubDate>Thu, 28 May 2026 06:26:19 +0000</pubDate>
+      <pubDate>Thu, 28 May 2026 10:12:23 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>DORA 2026</category>
@@ -29,7 +47,7 @@
       <link>https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/</link>
       <description>KI wird 2026 zum Betriebssystem des Zahlungsverkehrs: vom Analytik-Werkzeug zur Steuerungsschicht für Betrugsabwehr, Zahlungsreparatur, Routing, Liquiditätsprognose, Compliance-Prüfung und agentische Handelskontrollen.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/</guid>
-      <pubDate>Thu, 28 May 2026 06:26:19 +0000</pubDate>
+      <pubDate>Thu, 28 May 2026 10:12:23 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>KI-Zahlungsverkehr 2026</category>

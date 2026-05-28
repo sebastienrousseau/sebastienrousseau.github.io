@@ -3,10 +3,10 @@
 # Front Matter (YAML)
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "The Banking Infrastructure Index 2026 index diagram for banks and financial institutions in 2026"
-banner_height: "571"
-banner_width: "1425"
-banner: "https://cloudcdn.pro/stock/images/banking-infrastructure-index-2026-banner.webp"
+banner_alt: "Abstract architectural photograph used as the visual key for the 2026 Banking Infrastructure Index — measuring readiness across agentic AI, quantum-safe security, cloud-native resilience, and global wholesale payments"
+banner_height: "1597"
+banner_width: "2584"
+banner: "https://cloudcdn.pro/stocks/images/vladislav-klapin-YeO44yVTl20.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -42,6 +42,7 @@ seo_title: "The Banking Infrastructure Index 2026"
 short_name: "sebastienrousseau"
 subtitle: "Banks need an annual index for infrastructure readiness: autonomy, quantum-safe security, cloud resilience, payment modernisation, and measurable economics in one operating model."
 tags: "banking infrastructure, agentic AI, quantum cryptography, cloud native banking, wholesale payments, DORA, ISO 20022, tokenised deposits"
+excerpt: "A Stanford AI Index-inspired banking infrastructure index for 2026 — measuring readiness across agentic AI, quantum-safe security, cloud-native resilience, and global wholesale payments as one operating model, not four separate transformation programmes."
 theme-color: "0, 83, 191"
 title: "The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments"
 url: "https://sebastienrousseau.com/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026"
@@ -102,6 +103,23 @@ site_software: "Static Site Generator, Rust"
 
 # The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments
 
+
+
+
+<!-- lead-start -->
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> A Stanford AI Index-inspired banking infrastructure index for 2026, measuring readiness across agentic AI, quantum-safe security, cloud native resilience, and global wholesale payments.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Why 2026 Is the Year This Index Matters.</strong> The Stanford AI Index is useful because it treats a fast-moving technology field as something that can be measured: research output, technical performance, responsible deployment, economics, sector adoption, policy,…</li>
+  <li><strong>Current Signals to Track.</strong> The index should score banks across four domains.</li>
+  <li><strong>The Four-Domain Readiness Model.</strong> The index should score banks across four domains.</li>
+  <li><strong>Capability Versus Reliability.</strong> The key lesson from the AI Index is that capability and reliability are not the same thing.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026">Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</a>, <a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</a>, <a href="https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</a>.</p>
+</aside>
+<!-- lead-end -->
+
 Banking infrastructure in 2026 has reached the point where it needs an index, not another trend list. The four domains that matter most are agentic AI, quantum-safe cryptography, cloud native resilience, and global wholesale payments. Together they define whether a bank can automate safely, secure long-lived data, withstand operational disruption, and move value across old and new rails with credible governance.
 
 ---
@@ -130,7 +148,7 @@ The practical question for a bank is not whether each domain is important. It is
 | **Agentic AI** | From copilots to bounded autonomous workflows | Task success, human override, auditability, value per decision | Unbounded autonomy, hallucinated action, weak accountability |
 | **Quantum-safe security** | From crypto inventory to hybrid PQC migration | Coverage of ML-KEM, ML-DSA, SLH-DSA readiness | Harvest-now-decrypt-later exposure |
 | **Cloud native resilience** | From cloud adoption to demonstrable exit and failover evidence | DORA register, exit tests, concentration controls | Critical-function outage without credible recovery |
-| **Wholesale payments** | From messaging migration to programmable settlement | ISO 20022 quality, tokenised settlement, liquidity impact | Faster fragmented payments with poor data |
+| **Wholesale payments** | From messaging migration to programmable settlement | [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) quality, tokenised settlement, liquidity impact | Faster fragmented payments with poor data |
 | **Economics** | From innovation budgets to unit economics | Cost per decision, payment, repair, investigation, and settlement | Scaling technology without measurable value |
 
 ## Current Signals to Track
@@ -207,6 +225,14 @@ Annually for strategic comparison, with quarterly internal refreshes for the met
 - European Banking Authority, (2026). [Digital Operational Resilience Act ⧉](https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act "Digital Operational Resilience Act").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, payments infrastructure, tokenised money, ISO 20022, post-quantum security, cloud-native financial services, and regulated digital markets.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-06-02">2026-06-02</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026" class="related-media" aria-label="Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide" tabindex="-1"><img alt="Cloud-native banking architecture for 2026 showing Kubernetes, VM coexistence, DORA resilience, sovereign cloud, observability, and bank platform engineering" src="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026">Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</a></h3><p><time datetime="2026-05-20">2026-05-20</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026" class="related-media" aria-label="Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability" tabindex="-1"><img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</a></h3><p><time datetime="2026-05-19">2026-05-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" class="related-media" aria-label="DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks" tabindex="-1"><img alt="Compliance stack diagram showing DORA resilience, EU AI Act transparency, data sovereignty, cloud concentration risk, audit logs, model governance, and third-party providers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</a></h3><p><time datetime="2026-05-28">2026-05-28</time></p></footer></article>
+</div>
+</aside>
 <!-- enrich-end -->

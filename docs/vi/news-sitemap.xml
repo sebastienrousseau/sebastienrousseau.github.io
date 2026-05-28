@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/vi/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T10:12:24+00:00</news:publication_date>
+    <news:title>Chỉ số Hạ tầng Ngân hàng 2026: đo lường mức độ sẵn sàng cho AI tác tử, bảo mật an toàn lượng tử, khả năng chống chịu cloud-native và thanh toán bán buôn</news:title>
+    <news:keywords>chỉ số hạ tầng ngân hàng 2026, AI tác tử ngân hàng, ngân hàng an toàn lượng tử, ngân hàng cloud-native, thanh toán bán buôn, ISO 20022, DORA, Project Agorá, tiền gửi token hoá</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

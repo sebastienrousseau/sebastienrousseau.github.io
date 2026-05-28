@@ -6,8 +6,26 @@
     <description>מאמרים בעברית: AI יישומי, תשלומי ISO 20022, קריפטוגרפיה פוסט-קוונטית, וטרנספורמציה של תשלומי סיטונאות.</description>
     <atom:link href="https://sebastienrousseau.com/he/rss.xml" rel="self" type="application/rss+xml"/>
     <language>he-IL</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 10:12:23 +0000</lastBuildDate>
     <copyright>© זכויות יוצרים 2007 - 2026 - Sebastien Rousseau. כל הזכויות שמורות.</copyright>
+    <item>
+      <title>מדד תשתית בנקאית 2026: מוכנות ל-AI סוכני, אבטחה קוונטית, חוסן ענן ותשלומים סיטונאיים</title>
+      <link>https://sebastienrousseau.com/he/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</link>
+      <description>מדד תשתית בנקאית בהשראת Stanford AI Index לשנת 2026, מודד מוכנות ב-AI סוכני, אבטחה קוונטית-בטיחותית, חוסן cloud-native ותשלומים סיטונאיים גלובליים.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</guid>
+      <pubDate>Tue, 02 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/vladislav-klapin-YeO44yVTl20.webp" type="image/webp" length="0"/>
+      <category>מדד תשתית בנקאית 2026</category>
+      <category>AI סוכני בבנקאות</category>
+      <category>בנקאות קוונטית-בטיחותית</category>
+      <category>בנקאות cloud-native</category>
+      <category>תשלומים סיטונאיים</category>
+      <category>ISO 20022</category>
+      <category>DORA</category>
+      <category>Project Agorá</category>
+      <category>פיקדונות מתוקנים</category>
+    </item>
     <item>
       <title>DORA, חוק הבינה המלאכותית וריבונות נתונים: ערימת הציות של 2026 לבנקים</title>
       <link>https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
