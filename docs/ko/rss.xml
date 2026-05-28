@@ -6,8 +6,24 @@
     <description>한국어 기사: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 그리고 도매 결제 인프라의 구조적 변혁.</description>
     <atom:link href="https://sebastienrousseau.com/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 15:43:38 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>2026년 클라우드 네이티브 뱅킹 지수: DORA, 플랫폼 엔지니어링, 회복탄력성</title>
+      <link>https://sebastienrousseau.com/ko/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
+      <description>DORA 준비도, 플랫폼 엔지니어링 성숙도, 클라우드 집중 위험, 출구 증거, 운영 회복탄력성을 측정하기 위한 2026년 클라우드 네이티브 뱅킹 지수입니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
+      <pubDate>Thu, 28 May 2026 15:43:38 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/humphrey-muleba-1660004.webp" type="image/webp" length="0"/>
+      <category>클라우드 네이티브 뱅킹 2026</category>
+      <category>DORA 은행</category>
+      <category>클라우드 집중 위험</category>
+      <category>은행 플랫폼 엔지니어링</category>
+      <category>ICT 제3자 위험</category>
+      <category>클라우드 출구 전략</category>
+      <category>주권 클라우드</category>
+    </item>
     <item>
       <title>DORA, EU AI 법, 데이터 주권: 2026년 은행을 위한 컴플라이언스 스택</title>
       <link>https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

@@ -1,11 +1,11 @@
 {
+  "title": "Static Site Generator: Rust tabanlı en hızlı statik site jeneratörü",
+  "subtitle": "Performans, SEO ve erişilebilirlik için inşa edilmiş açık kaynak SSG",
+  "language": "tr-TR",
+  "banner_alt": "Static Site Generator (SSG) logosu",
   "locale": "tr_TR",
   "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
-  "banner_alt": "Static Site Generator (SSG) logosu",
-  "title": "Static Site Generator: Rust tabanlı en hızlı statik site jeneratörü",
   "description": "Static Site Generator, performans, SEO ve erişilebilirlik için tasarlanmış Rust tabanlı bir statik site jeneratörüdür.",
   "keywords": "Static Site Generator, statik site jeneratörü, Rust, SSG, performans, SEO, açık kaynak",
-  "language": "tr-TR",
-  "date": "October 9, 2023",
-  "subtitle": "Performans, SEO ve erişilebilirlik için inşa edilmiş açık kaynak SSG"
+  "date": "October 9, 2023"
 }

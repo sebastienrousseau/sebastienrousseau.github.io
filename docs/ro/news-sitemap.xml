@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ro/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ro-RO</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T15:43:38+00:00</news:publication_date>
+    <news:title>Indicele Cloud-Nativ Bancar 2026: DORA, ingineria platformei, cloud suveran și reziliență operațională</news:title>
+    <news:keywords>banking cloud-nativ 2026, DORA bănci, risc de concentrare cloud, ingineria platformei bănci, risc ICT terță parte, plan de ieșire cloud, cloud suveran</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ro/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Bir masanın üzerinde duran altın ve gümüş paralardan oluşan bir yığın",
-  "keywords": "Bitcoin, kripto para, blockchain, P2P, çifte harcama, madencilik, proof-of-work, ETF, Satoshi Nakamoto, merkeziyetsiz finans",
-  "language": "tr-TR",
   "subtitle": "Parayı yeniden tanımlayan eşler arası bir elektronik ödeme sistemi",
-  "title": "Bitcoin: ilk kripto paranın yıllık değerlendirmesi",
-  "date": "January 1, 2018",
+  "locale": "tr_TR",
   "description": "Bitcoin: insanların çevrimiçi işlem yapma şeklini devrim niteliğinde değiştirebilen eşler arası elektronik nakit sistemi (P2P ECS).",
+  "keywords": "Bitcoin, kripto para, blockchain, P2P, çifte harcama, madencilik, proof-of-work, ETF, Satoshi Nakamoto, merkeziyetsiz finans",
+  "date": "January 1, 2018",
   "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
-  "locale": "tr_TR"
+  "language": "tr-TR",
+  "title": "Bitcoin: ilk kripto paranın yıllık değerlendirmesi",
+  "banner_alt": "Bir masanın üzerinde duran altın ve gümüş paralardan oluşan bir yığın"
 }

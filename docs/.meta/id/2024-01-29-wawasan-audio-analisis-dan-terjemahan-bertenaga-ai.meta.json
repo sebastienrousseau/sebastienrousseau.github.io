@@ -1,11 +1,11 @@
 {
-  "language": "id-ID",
-  "subtitle": "Merevolusi pemrosesan data audio dengan Azure AI Platform",
-  "description": "Pelajari bagaimana Audio Analyser yang didukung Azure AI mengubah konversi speech-to-text, analisis teks, dan terjemahan menjadi wawasan yang dapat ditindaklanjuti.",
-  "locale": "id_ID",
   "banner_alt": "Kantor perusahaan modern yang minimalis",
+  "title": "[ID DRAFT] AI-Powered Speech Analysis, Translation, & Insight Tool",
+  "subtitle": "Merevolusi pemrosesan data audio dengan Azure AI Platform",
   "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp",
   "date": "Jan 29, 2024",
-  "title": "[ID DRAFT] AI-Powered Speech Analysis, Translation, & Insight Tool",
-  "keywords": "audio analyser, azure ai, speech-to-text, analisis data audio, analisis teks, terjemahan ai, wawasan audio, transkripsi otomatis, pemrosesan data audio, machine learning"
+  "keywords": "audio analyser, azure ai, speech-to-text, analisis data audio, analisis teks, terjemahan ai, wawasan audio, transkripsi otomatis, pemrosesan data audio, machine learning",
+  "locale": "id_ID",
+  "language": "id-ID",
+  "description": "Pelajari bagaimana Audio Analyser yang didukung Azure AI mengubah konversi speech-to-text, analisis teks, dan terjemahan menjadi wawasan yang dapat ditindaklanjuti."
 }

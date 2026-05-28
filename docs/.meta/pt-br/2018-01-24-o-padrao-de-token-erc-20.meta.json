@@ -1,11 +1,11 @@
 {
   "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
-  "title": "El estándar de token ERC-20",
-  "language": "pt-BR",
-  "description": "ERC-20: o tipo de token mais extendido em a blockchain Ethereum, frequentemente descrito como um contrato digital inteligente (smart contract).",
   "locale": "pt_BR",
+  "subtitle": "La interfaz unificada que permitiu prosperar ao ecosistema Ethereum",
   "keywords": "ERC-20, Ethereum, token, smart contract, DeFi, EIP, blockchain, interoperabilidade, DApps, estándar",
-  "banner_alt": "Ordenador portátil apagado sobre uma mesa de madera marrón",
+  "description": "ERC-20: o tipo de token mais extendido em a blockchain Ethereum, frequentemente descrito como um contrato digital inteligente (smart contract).",
   "date": "January 24, 2018",
-  "subtitle": "La interfaz unificada que permitiu prosperar ao ecosistema Ethereum"
+  "title": "El estándar de token ERC-20",
+  "banner_alt": "Ordenador portátil apagado sobre uma mesa de madera marrón",
+  "language": "pt-BR"
 }

@@ -6,8 +6,24 @@
     <description>Статті українською: прикладний ШІ, платежі ISO 20022, постквантова криптографія та трансформація оптових платежів.</description>
     <atom:link href="https://sebastienrousseau.com/uk/rss.xml" rel="self" type="application/rss+xml"/>
     <language>uk-UA</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 15:43:38 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Усі права захищено.</copyright>
+    <item>
+      <title>Індекс cloud-native банкінгу 2026: DORA, платформенна інженерія, суверенна хмара та стійкість</title>
+      <link>https://sebastienrousseau.com/uk/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
+      <description>Індекс cloud-native банкінгу 2026 для вимірювання готовності до DORA, зрілості платформенної інженерії, ризику концентрації у хмарі, доказів плану виходу та операційної стійкості.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
+      <pubDate>Thu, 28 May 2026 15:43:38 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/humphrey-muleba-1660004.webp" type="image/webp" length="0"/>
+      <category>cloud-native банкінг 2026</category>
+      <category>DORA банки</category>
+      <category>ризик концентрації у хмарі</category>
+      <category>платформенна інженерія банки</category>
+      <category>ризик ІКТ-третіх сторін</category>
+      <category>план виходу з хмари</category>
+      <category>суверенна хмара</category>
+    </item>
     <item>
       <title>DORA, EU AI Act і суверенітет даних: стек банківського комплаєнсу 2026</title>
       <link>https://sebastienrousseau.com/uk/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

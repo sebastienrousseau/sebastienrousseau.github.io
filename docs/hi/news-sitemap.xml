@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/hi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>hi-IN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T15:43:38+00:00</news:publication_date>
+    <news:title>क्लाउड-नेटिव बैंकिंग सूचकांक 2026: DORA, प्लेटफ़ॉर्म इंजीनियरिंग और परिचालन लचीलापन</news:title>
+    <news:keywords>क्लाउड-नेटिव बैंकिंग 2026, DORA बैंक, क्लाउड संकेन्द्रण जोखिम, प्लेटफ़ॉर्म इंजीनियरिंग बैंक, ICT तृतीय-पक्ष जोखिम, क्लाउड निकास रणनीति, संप्रभु क्लाउड</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

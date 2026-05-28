@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/cs/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/cs/"/>
   <id>https://sebastienrousseau.com/cs/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-28T15:43:38+00:00</updated>
+  <entry>
+    <title>Cloud Native Banking Index v roce 2026: DORA, platform engineering a odolnost</title>
+    <link href="https://sebastienrousseau.com/cs/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"/>
+    <id>https://sebastienrousseau.com/cs/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</id>
+    <updated>2026-05-28T15:43:38+00:00</updated>
+    <published>2026-05-28T15:43:38+00:00</published>
+    <summary>Cloud-native bankovní index 2026 pro měření připravenosti na DORA, vyspělosti platformového inženýrství, rizika koncentrace v cloudu, důkazů exit plánu a operační odolnosti.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI Act a suverenita dat: Compliance stack pro banky v roce 2026</title>
     <link href="https://sebastienrousseau.com/cs/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

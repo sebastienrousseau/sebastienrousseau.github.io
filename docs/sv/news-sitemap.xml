@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/sv/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv-SE</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T15:43:38+00:00</news:publication_date>
+    <news:title>Cloud Native Banking Index 2026: DORA, plattformsteknik, suverän moln och operationell motståndskraft</news:title>
+    <news:keywords>cloud-native bank 2026, DORA banker, koncentrationsrisk moln, plattformsteknik bank, ICT tredjepartsrisk, utträdesplan moln, suverän moln</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

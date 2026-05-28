@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/he/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T15:43:38+00:00</news:publication_date>
+    <news:title>מדד הבנקאות ה-cloud-native ב-2026: DORA, הנדסת פלטפורמה, ענן ריבוני וחוסן תפעולי</news:title>
+    <news:keywords>בנקאות cloud-native 2026, DORA בנקים, סיכון ריכוז ענן, הנדסת פלטפורמה בבנקים, סיכון צד שלישי ICT, תוכנית יציאה מענן, ענן ריבוני, חוסן תפעולי, TLPT, ENISA, NIS2</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

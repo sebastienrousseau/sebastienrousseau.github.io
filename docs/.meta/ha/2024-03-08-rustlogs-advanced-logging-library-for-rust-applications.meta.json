@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
-  "banner_alt": "Banner don RustLogs (RLG)",
   "title": "RustLogs (RLG): Structured Logging Library for Rust",
-  "language": "ha-NG",
   "description": "Gano RustLogs (RLG), ɗakin karatu mai sassauci na logging don Rust tare da tsarin log da aka tsara, logging na asynchronous, da zaɓuɓɓuka masu yawa na keɓantawa.",
-  "keywords": "ɗakin karatu na Rust logging, asynchronous Rust logging, tsarin log da aka tsara, gyaran kuskure na Rust application, logging na Rust mai keɓantawa, kayan aikin Rust development, fasalulluka na RustLogs RLG, logging na Rust mai inganci, haɗin RustLogs, takardun RustLogs",
-  "locale": "ha_NG",
+  "date": "Mar 08, 2024",
   "subtitle": "Sauƙaƙe Tsarin Aiki na Rust Logging",
-  "date": "Mar 08, 2024"
+  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
+  "locale": "ha_NG",
+  "language": "ha-NG",
+  "keywords": "ɗakin karatu na Rust logging, asynchronous Rust logging, tsarin log da aka tsara, gyaran kuskure na Rust application, logging na Rust mai keɓantawa, kayan aikin Rust development, fasalulluka na RustLogs RLG, logging na Rust mai inganci, haɗin RustLogs, takardun RustLogs",
+  "banner_alt": "Banner don RustLogs (RLG)"
 }

@@ -1,11 +1,11 @@
 {
+  "date": "April 11, 2026",
   "subtitle": "新论文显示 Shor 算法可在 10,000 量子比特上运行——具密码学意义的量子计算门槛下降速度比多数人预期的快",
   "banner_alt": "Shor 算法量子比特阈值示意图——蓝光图案的量子计算电路板",
   "keywords": "Shor 算法, 量子计算, 后量子密码学, 中性原子量子比特, ECC, RSA, NIST, CRYSTALS-Kyber, 量子阈值, 错误纠正",
-  "description": "新研究显示 Shor 算法可能仅需 10,000 量子比特，密码学相关量子计算门槛正快速下降。",
   "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
+  "title": "量子阈值再次移动：10,000 量子比特的 Shor 风险",
   "language": "zh-Hans",
-  "date": "April 11, 2026",
   "locale": "zh_CN",
-  "title": "量子阈值再次移动：10,000 量子比特的 Shor 风险"
+  "description": "新研究显示 Shor 算法可能仅需 10,000 量子比特，密码学相关量子计算门槛正快速下降。"
 }

@@ -6,8 +6,24 @@
     <description>Články v češtině: aplikovaná AI, platby ISO 20022, postkvantová kryptografie a transformace velkoobchodních plateb.</description>
     <atom:link href="https://sebastienrousseau.com/cs/rss.xml" rel="self" type="application/rss+xml"/>
     <language>cs-CZ</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 15:43:38 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Všechna práva vyhrazena.</copyright>
+    <item>
+      <title>Cloud Native Banking Index v roce 2026: DORA, platform engineering a odolnost</title>
+      <link>https://sebastienrousseau.com/cs/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
+      <description>Cloud-native bankovní index 2026 pro měření připravenosti na DORA, vyspělosti platformového inženýrství, rizika koncentrace v cloudu, důkazů exit plánu a operační odolnosti.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
+      <pubDate>Thu, 28 May 2026 15:43:38 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/humphrey-muleba-1660004.webp" type="image/webp" length="0"/>
+      <category>cloud-native bankovnictví 2026</category>
+      <category>DORA banky</category>
+      <category>riziko koncentrace v cloudu</category>
+      <category>platform engineering banky</category>
+      <category>riziko ICT třetích stran</category>
+      <category>cloud exit plán</category>
+      <category>suverénní cloud</category>
+    </item>
     <item>
       <title>DORA, EU AI Act a suverenita dat: Compliance stack pro banky v roce 2026</title>
       <link>https://sebastienrousseau.com/cs/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

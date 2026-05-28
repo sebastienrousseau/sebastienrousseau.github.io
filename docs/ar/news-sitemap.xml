@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ar/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ar-SA</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T15:43:38+00:00</news:publication_date>
+    <news:title>مؤشر الصيرفة السحابية الأصلية 2026: DORA وهندسة المنصات والسحابة السيادية والمرونة التشغيلية</news:title>
+    <news:keywords>الصيرفة السحابية الأصلية 2026، DORA للمصارف، مخاطر التركز السحابي، هندسة المنصات في المصارف، مخاطر الطرف الثالث ICT، استراتيجية الخروج السحابي، السحابة السيادية</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ar/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ar-SA</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T06:26:19+00:00</news:publication_date>
+    <news:publication_date>2026-05-28T15:43:38+00:00</news:publication_date>
     <news:title>Magnifica Humanitas: قراءة هندسية لأول رسالة بابوية عن الذكاء الاصطناعي</news:title>
     <news:keywords>Magnifica Humanitas, البابا ليو الرابع عشر, رسالة بابوية حول الذكاء الاصطناعي, أخلاقيات الذكاء الاصطناعي, أخلاقيات الحوسبة الكمومية, Rerum Novarum, برج بابل, التكنولوجيا ليست محايدة, ما بعد الإنسانية, التحول الإنساني, الكرامة الإنسانية, النموذج التكنولوجي, القطار السيارة النووي الإنترنت, تاريخ الذعر الأخلاقي من التكنولوجيا, نقل المعرفة Lucy, أمل الذكاء الاصطناعي, EU AI Act, DORA, Anthropic, Sebastien Rousseau</news:keywords>
   </news:news>

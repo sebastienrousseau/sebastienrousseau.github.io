@@ -6,8 +6,24 @@
     <description>हिन्दी लेख: व्यावहारिक AI, ISO 20022 भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतान का रूपांतरण।</description>
     <atom:link href="https://sebastienrousseau.com/hi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>hi-IN</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 15:43:38 +0000</lastBuildDate>
     <copyright>© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।</copyright>
+    <item>
+      <title>क्लाउड-नेटिव बैंकिंग सूचकांक 2026: DORA, प्लेटफ़ॉर्म इंजीनियरिंग और परिचालन लचीलापन</title>
+      <link>https://sebastienrousseau.com/hi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
+      <description>DORA तत्परता, प्लेटफ़ॉर्म इंजीनियरिंग परिपक्वता, क्लाउड संकेन्द्रण जोखिम, निकास साक्ष्य और परिचालन लचीलापन मापने के लिए 2026 का क्लाउड-नेटिव बैंकिंग सूचकांक।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
+      <pubDate>Thu, 28 May 2026 15:43:38 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/humphrey-muleba-1660004.webp" type="image/webp" length="0"/>
+      <category>क्लाउड-नेटिव बैंकिंग 2026</category>
+      <category>DORA बैंक</category>
+      <category>क्लाउड संकेन्द्रण जोखिम</category>
+      <category>प्लेटफ़ॉर्म इंजीनियरिंग बैंक</category>
+      <category>ICT तृतीय-पक्ष जोखिम</category>
+      <category>क्लाउड निकास रणनीति</category>
+      <category>संप्रभु क्लाउड</category>
+    </item>
     <item>
       <title>DORA, EU AI अधिनियम और डेटा संप्रभुता: बैंकों का 2026 अनुपालन स्टैक</title>
       <link>https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

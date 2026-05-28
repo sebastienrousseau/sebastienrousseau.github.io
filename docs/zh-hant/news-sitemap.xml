@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T15:43:38+00:00</news:publication_date>
+    <news:title>2026 年雲原生銀行指數:DORA、平台工程、主權雲與營運韌性</news:title>
+    <news:keywords>雲原生銀行 2026, DORA 銀行, 雲端集中風險, 銀行平台工程, ICT 第三方風險, 雲端退出策略, 主權雲</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

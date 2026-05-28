@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/th/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th-TH</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T15:43:38+00:00</news:publication_date>
+    <news:title>ดัชนีธนาคาร cloud-native ปี 2026: DORA วิศวกรรมแพลตฟอร์ม คลาวด์อธิปไตย และความสามารถในการฟื้นตัวของการดำเนินงาน</news:title>
+    <news:keywords>ธนาคาร cloud-native 2026, DORA ธนาคาร, ความเสี่ยงจากการกระจุกตัวของคลาวด์, วิศวกรรมแพลตฟอร์มธนาคาร, ความเสี่ยงบุคคลที่สาม ICT, กลยุทธ์แผนถอนตัวคลาวด์, คลาวด์อธิปไตย</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

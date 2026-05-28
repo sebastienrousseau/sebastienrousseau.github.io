@@ -6,8 +6,24 @@
     <description>Artykuły po polsku: stosowana sztuczna inteligencja, płatności ISO 20022, kryptografia postkwantowa oraz transformacja płatności hurtowych.</description>
     <atom:link href="https://sebastienrousseau.com/pl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>pl-PL</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 15:43:38 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Wszelkie prawa zastrzeżone.</copyright>
+    <item>
+      <title>Indeks Cloud-Native Banking w 2026: DORA, inżynieria platform, suwerenna chmura i odporność operacyjna</title>
+      <link>https://sebastienrousseau.com/pl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
+      <description>Indeks cloud-native banking 2026 do pomiaru gotowości DORA, dojrzałości inżynierii platform, ryzyka koncentracji chmury, dowodów wyjścia i odporności operacyjnej w bankach.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
+      <pubDate>Thu, 28 May 2026 15:43:38 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/humphrey-muleba-1660004.webp" type="image/webp" length="0"/>
+      <category>cloud-native banking 2026</category>
+      <category>DORA banki</category>
+      <category>ryzyko koncentracji chmury</category>
+      <category>inżynieria platform w bankach</category>
+      <category>ryzyko ICT stron trzecich</category>
+      <category>strategia wyjścia z chmury</category>
+      <category>suwerenna chmura</category>
+    </item>
     <item>
       <title>DORA, EU AI Act i suwerennosc danych: stos zgodnosci bankow w 2026</title>
       <link>https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

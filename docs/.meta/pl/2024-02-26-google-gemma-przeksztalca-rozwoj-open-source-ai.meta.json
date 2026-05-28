@@ -1,11 +1,11 @@
 {
-  "subtitle": "Otwarte modele AI od Google na bazie technologii Gemini",
-  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
-  "banner_alt": "Logo Gemma z motywem open source AI",
-  "keywords": "Gemma, Google, open source AI, LLM, modele otwarte, Gemini",
-  "title": "Google Gemma: przekształcanie rozwoju open source AI",
   "description": "Gemma od Google: rodzina otwartych modeli AI opartych na technologii Gemini, przyspieszająca rozwój open source AI.",
+  "title": "Google Gemma: przekształcanie rozwoju open source AI",
+  "subtitle": "Otwarte modele AI od Google na bazie technologii Gemini",
+  "banner_alt": "Logo Gemma z motywem open source AI",
+  "date": "Feb 26, 2024",
+  "keywords": "Gemma, Google, open source AI, LLM, modele otwarte, Gemini",
+  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
   "language": "pl-PL",
-  "locale": "pl_PL",
-  "date": "Feb 26, 2024"
+  "locale": "pl_PL"
 }

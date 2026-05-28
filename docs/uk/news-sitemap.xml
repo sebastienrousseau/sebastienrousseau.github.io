@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/uk/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>uk-UA</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T15:43:38+00:00</news:publication_date>
+    <news:title>Індекс cloud-native банкінгу 2026: DORA, платформенна інженерія, суверенна хмара та стійкість</news:title>
+    <news:keywords>cloud-native банкінг 2026, DORA банки, ризик концентрації у хмарі, платформенна інженерія банки, ризик ІКТ-третіх сторін, план виходу з хмари, суверенна хмара</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/uk/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

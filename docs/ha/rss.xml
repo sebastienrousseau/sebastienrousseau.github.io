@@ -6,8 +6,24 @@
     <description>Labaran Hausa: AI mai amfani, biyan kuɗi na ISO 20022, kiriftografi bayan kwantum da sauye-sauyen biyan kuɗi na manyan.</description>
     <atom:link href="https://sebastienrousseau.com/ha/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ha-NG</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 15:43:38 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. An kiyaye duk hakkokin.</copyright>
+    <item>
+      <title>Fihirisar Cloud-Native Banking ta 2026: DORA, Injiniyan Dandali, Sovereign Cloud, da Juriya na Ayyukan</title>
+      <link>https://sebastienrousseau.com/ha/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
+      <description>Fihirisar cloud-native banking ta 2026 don auna shirye-shiryen DORA, balagar injiniyan dandali, haɗarin tarawar cloud, shaidar shirin fita, da juriya na ayyukan.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
+      <pubDate>Thu, 28 May 2026 15:43:38 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/humphrey-muleba-1660004.webp" type="image/webp" length="0"/>
+      <category>cloud-native banking 2026</category>
+      <category>DORA bankuna</category>
+      <category>haɗarin tarawar cloud</category>
+      <category>injiniyan dandali bankuna</category>
+      <category>haɗarin ICT na ɓangare na uku</category>
+      <category>dabarar shirin fita na cloud</category>
+      <category>sovereign cloud</category>
+    </item>
     <item>
       <title>DORA, EU AI Act, da Ikon Mallakar Bayanai: Tarin Bin Doka na 2026 ga Bankuna</title>
       <link>https://sebastienrousseau.com/ha/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

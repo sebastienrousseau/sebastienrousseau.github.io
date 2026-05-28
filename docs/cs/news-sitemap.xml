@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/cs/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs-CZ</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T15:43:38+00:00</news:publication_date>
+    <news:title>Cloud Native Banking Index v roce 2026: DORA, platform engineering a odolnost</news:title>
+    <news:keywords>cloud-native bankovnictví 2026, DORA banky, riziko koncentrace v cloudu, platform engineering banky, riziko ICT třetích stran, cloud exit plán, suverénní cloud</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/cs/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

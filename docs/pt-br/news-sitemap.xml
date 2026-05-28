@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/pt-br/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pt-BR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T15:43:38+00:00</news:publication_date>
+    <news:title>O Índice de Banking Cloud-Native em 2026: DORA, engenharia de plataforma e resiliência</news:title>
+    <news:keywords>banking cloud-native 2026, DORA bancos, risco de concentração em nuvem, engenharia de plataforma bancos, risco de terceiros ICT, plano de saída de nuvem, nuvem soberana</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/pt-br/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

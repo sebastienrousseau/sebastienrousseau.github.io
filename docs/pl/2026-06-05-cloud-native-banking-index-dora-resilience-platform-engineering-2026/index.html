@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Fri, 05 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Fri, 05 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>Indeks Cloud-Native Banking w 2026: DORA, inżynieria platform, suwerenna chmura i odporność operacyjna — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Indeks cloud-native banking 2026 do pomiaru gotowości DORA, dojrzałości inżynierii platform, ryzyka koncentracji chmury, dowodów wyjścia i odporności operacyjnej w bankach.">
+<meta name="keywords" content="cloud-native banking 2026, DORA banki, ryzyko koncentracji chmury, inżynieria platform w bankach, ryzyko ICT stron trzecich, strategia wyjścia z chmury, suwerenna chmura">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="The Cloud Native Banking Index 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-CnwqJnEDqPLtvB6DYfnnIWQFi4cSCSENshqX434X0QE=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-oEdzxGrxfPb9pvX7TD1ekm2vEiqzNchre/JORlq6gjg=' 'sha256-vy6oDYzbonbmtBS93Ddr8YM8J7OF6waqmmMglAgxMK8=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/pl/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Kanał Atom" href="/pl/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Indeks Cloud-Native Banking w 2026: DORA, inżynieria platform, suwerenna chmura i odporność operacyjna — Sebastien Rousseau">
+<meta property="og:description" content="Indeks cloud-native banking 2026 do pomiaru gotowości DORA, dojrzałości inżynierii platform, ryzyka koncentracji chmury, dowodów wyjścia i odporności operacyjnej w bankach.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/pl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/humphrey-muleba-1660004.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="pl_PL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Indeks Cloud-Native Banking w 2026: DORA, inżynieria platform, suwerenna chmura i odporność operacyjna — Sebastien Rousseau">
+<meta name="twitter:description" content="Indeks cloud-native banking 2026 do pomiaru gotowości DORA, dojrzałości inżynierii platform, ryzyka koncentracji chmury, dowodów wyjścia i odporności operacyjnej w bankach.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/humphrey-muleba-1660004.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/pl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-05-cloud-native-banking-index-dora-resilience-platform-ingenierie-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Przejdź do treści głównej</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Przełącz nawigację" />
+      <div class="wrap">
+        <a class="ap-brand" href="/pl/index.html" aria-label="Strona główna Sebastiena Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Nawigacja główna">
+          <ul class="ap-menu">
+            <li><a href="/pl/o-mnie/index.html">O mnie</a></li>
+            <li><a href="/pl/artykuly/index.html" aria-current="page" class="active">Artykuły</a></li>
+            <li><a href="/pl/publikacje/index.html">Publikacje</a></li>
+            <li><a href="/pl/tematy/index.html">Tematy</a></li>
+            <li><a href="/pl/projekty/index.html">Projekty</a></li>
+            <li><a href="/pl/playlisty/index.html">Playlisty</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Przełącz na motyw ciemny" aria-pressed="false" title="Zmień motyw">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Szukaj (Cmd lub Ctrl + K)" title="Szukaj (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Język">
+            <button type="button" class="ap-lang-toggle" aria-label="PL, Zmień język" aria-expanded="false" aria-haspopup="menu" title="Zmień język">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">PL</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-05-cloud-native-banking-index-dora-resilience-platform-ingenierie-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/pl/kontakt/index.html" aria-label="Skontaktuj się">Skontaktuj się ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Przełącz nawigację">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Indeks Cloud-Native Banking w 2026: DORA, inżynieria platform, suwerenna chmura i odporność operacyjna</h1>
+      <p class="sub">Cloud-native banking nie polega już na adopcji chmury; chodzi o udowadnialną odporność, zdolność wyjścia, zarządzanie ryzykiem koncentracji i kontrolowaną inżynierię platform.</p>
+    <nav class="article-tags" aria-label="Tematy"><a href="/tags/index.html#h3-cloud-native-banking-2026" class="article-tag" rel="tag">cloud-native banking 2026</a><a href="/tags/index.html#h3-dora-banki" class="article-tag" rel="tag">DORA banki</a><a href="/tags/index.html#h3-ryzyko-koncentracji-chmury" class="article-tag" rel="tag">ryzyko koncentracji chmury</a><a href="/tags/index.html#h3-inzynieria-platform-w-bankach" class="article-tag" rel="tag">inżynieria platform w bankach</a><a href="/tags/index.html#h3-ryzyko-ict-stron-trzecich" class="article-tag" rel="tag">ryzyko ICT stron trzecich</a><a href="/tags/index.html#h3-strategia-wyjscia-z-chmury" class="article-tag" rel="tag">strategia wyjścia z chmury</a><a href="/tags/index.html#h3-suwerenna-chmura" class="article-tag" rel="tag">suwerenna chmura</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-05T06:06:06+00:00" class="meta-pub">Opublikowano 5 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Szacowany czas czytania">5 min czytania</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Spis treści</h2><ol><li><a href="#dlaczego-2026-to-rok-w-ktorym-ten-indeks-ma-znaczenie">Dlaczego 2026 to rok, w którym ten indeks ma znaczenie</a></li><li><a href="#architektura-indeksu-2026">Architektura Indeksu 2026</a></li><li><a href="#biezace-sygnay-do-sledzenia">Bieżące sygnały do śledzenia</a></li><li><a href="#od-migracji-do-kontroli">Od migracji do kontroli</a></li><li><a href="#model-utwardzonej-drogi">Model utwardzonej drogi</a></li><li><a href="#realia-wyjscia-z-chmury">Realia wyjścia z chmury</a></li><li><a href="#co-to-oznacza-dla-poszczegolnych-typow-bankow">Co to oznacza dla poszczególnych typów banków</a></li><li><a href="#wnioski">Wnioski</a></li><li><a href="#najczesciej-zadawane-pytania">Najczęściej zadawane pytania</a></li><li><a href="#bibliografia">Bibliografia</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Indeks cloud-native banking 2026 do pomiaru gotowości DORA, dojrzałości inżynierii platform, ryzyka koncentracji chmury, dowodów wyjścia i odporności operacyjnej w bankach.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Dlaczego 2026 to rok, w którym ten indeks ma znaczenie.</strong> Indeks AI Stanforda jest użyteczny, ponieważ traktuje szybko zmieniającą się dziedzinę technologii jako coś, co da się mierzyć: wyniki badawcze, wydajność techniczna, odpowiedzialne wdrożenia, ekonomika, adopcja…</li>  <li><strong>Bieżące sygnały do śledzenia.</strong> Pierwsza fala bankowości chmurowej polegała na przenoszeniu obciążeń.</li>  <li><strong>Od migracji do kontroli.</strong> Pierwsza fala bankowości chmurowej polegała na przenoszeniu obciążeń.</li>  <li><strong>Model utwardzonej drogi.</strong> Dojrzałość cloud-native należy mierzyć tym, jaka część majątku działa na utwardzonych drogach.</li></ul></aside><h1>Indeks Cloud-Native Banking w 2026: DORA, inżynieria platform, suwerenna chmura i odporność operacyjna</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>Cloud-native banking w 2026 roku wyszło poza fazę migracji. Pytanie nie brzmi już, czy banki używają chmury; brzmi, czy funkcje krytyczne hostowane w chmurze są odporne, przenośne, obserwowalne, bezpieczne i wykazywalnie kontrolowane w ramach DORA. Indeks powinien mierzyć dojrzałość platformy i odporność operacyjną razem, ponieważ skalowalna platforma bez przetestowanego odzyskania jest słabością regulacyjną.</p>
+<hr />
+<blockquote>
+<p><strong>Podsumowanie dla zarządu / Wnioski kluczowe</strong></p>
+<ul>
+<li><strong>DORA uczyniła odporność chmury mierzalną.</strong> Priorytety EBC na lata 2026–28 koncentrują się na ryzyku ICT stron trzecich, cyberodporności, testach penetracyjnych prowadzonych przez zagrożenia oraz gotowości na poważne zakłócenia usług chmurowych.</li>
+<li><strong>Model nadzoru EBA zmienia środowisko kontroli.</strong> Krytyczni dostawcy ICT stron trzecich mogą być monitorowani przez Europejskie Urzędy Nadzoru, w tym poprzez żądania informacji, inspekcje, kary i zalecenia.</li>
+<li><strong>Inżynieria platform to model operacyjny.</strong> Banki potrzebują utwardzonych dróg dla deweloperów: bezpieczne szablony, polityka jako kod, tożsamość, obserwowalność, sekrety, kontrole wdrożeniowe i zbieranie dowodów.</li>
+<li><strong>Koncentracja chmury jest dziś sprawą zarządu.</strong> Zależność od wąskiej grupy dostawców musi być mierzona na poziomie funkcji krytycznej, a nie tylko na poziomie umowy.</li>
+<li><strong>Dowody wyjścia biją hasła o wyjściu.</strong> Wiarygodny plan wyjścia z chmury musi być przetestowany, wycenny czasowo i kosztowo oraz powiązany z przenośnością danych i ciągłością operacyjną.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="dlaczego-2026-to-rok-w-ktorym-ten-indeks-ma-znaczenie">Dlaczego 2026 to rok, w którym ten indeks ma znaczenie <a class="heading-anchor" href="#dlaczego-2026-to-rok-w-ktorym-ten-indeks-ma-znaczenie" aria-label="Link do Dlaczego 2026 to rok, w którym ten indeks ma znaczenie">#</a></h2>
+<p>Indeks AI Stanforda jest użyteczny, ponieważ traktuje szybko zmieniającą się dziedzinę technologii jako coś, co da się mierzyć: wyniki badawcze, wydajność techniczna, odpowiedzialne wdrożenia, ekonomika, adopcja sektorowa, polityka i nastroje społeczne są ujęte w jedną ramę (<a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" title="Raport Indeks AI 2026">Stanford HAI ⧉</a>). Banki i instytucje finansowe potrzebują dziś tej samej dyscypliny dla infrastruktury. Agentowa AI, bezpieczeństwo odporne na komputery kwantowe, odporność cloud-native i płatności hurtowe to już nie odrębne ścieżki innowacji; zbiegają się w jeden model operacyjny.</p>
+<p>Praktyczne pytanie dla banku nie brzmi, czy każda z tych dziedzin jest ważna. Brzmi, czy instytucja potrafi mierzyć gotowość we wszystkich jednocześnie. Bank może wdrożyć agentową AI i wciąż być kruchy, jeśli jego kryptografia nie jest gotowa do migracji. Może zmodernizować platformy chmurowe i wciąż zawieść, jeśli dane płatnicze pozostają niestrukturalne. Może prowadzić piloty tokenizacji i wciąż tworzyć ryzyko systemowe, jeśli warstwy rozrachunku, płynności, tożsamości i audytu nie są projektowane razem.</p>
+<h2 id="architektura-indeksu-2026">Architektura Indeksu 2026 <a class="heading-anchor" href="#architektura-indeksu-2026" aria-label="Link do Architektura Indeksu 2026">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Warstwa indeksu</th>
+<th>Kierunek 2026</th>
+<th>Metryka gotowości</th>
+<th>Ryzyko przy złym wykonaniu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Dojrzałość platformy</strong></td>
+<td>Standaryzacja bezpiecznych ścieżek deweloperskich i kontrolek wielokrotnego użytku</td>
+<td>Procent obciążeń na nadzorowanych platformach</td>
+<td>Cieniste platformy i niespójne kontrole</td>
+</tr>
+<tr>
+<td><strong>Dowody DORA</strong></td>
+<td>Ciągłe wytwarzanie rejestrów, testów, incydentów i dowodów od stron trzecich</td>
+<td>Kompletność dowodów i świeżość audytu</td>
+<td>Ręczne odtwarzanie zgodności</td>
+</tr>
+<tr>
+<td><strong>Ryzyko koncentracji</strong></td>
+<td>Mapowanie funkcji krytycznych na dostawców chmury i podwykonawców</td>
+<td>Zależność od dostawcy według usługi krytycznej</td>
+<td>Ukryte zależności systemowe</td>
+</tr>
+<tr>
+<td><strong>Zdolność wyjścia</strong></td>
+<td>Testowanie migracji, przełączania awaryjnego, przenośności danych i procedur zastępczych</td>
+<td>Czas odzyskania, zakres testów, wskaźnik przenośności danych</td>
+<td>Plan wyjścia istniejący wyłącznie na papierze</td>
+</tr>
+<tr>
+<td><strong>Obserwowalność</strong></td>
+<td>Instrumentacja usług, zależności, incydentów i wpływu na użytkownika</td>
+<td>Pokrycie logów, śladów, metryk i SLO</td>
+<td>Ślepa propagacja awarii</td>
+</tr>
+</tbody>
+</table>
+<h2 id="biezace-sygnay-do-sledzenia">Bieżące sygnały do śledzenia <a class="heading-anchor" href="#biezace-sygnay-do-sledzenia" aria-label="Link do Bieżące sygnały do śledzenia">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Sygnał</th>
+<th>Co oznacza dla banków</th>
+<th>Źródło</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nadzór DORA wchodzi w praktykę</strong></td>
+<td>Nadzór nad krytycznymi dostawcami ICT staje się częścią środowiska kontroli bankowej</td>
+<td><a href="https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act" title="Akt o cyfrowej odporności operacyjnej">EBA ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Pogłębiona analiza EBC nad zakłóceniami chmury</strong></td>
+<td>Nadzorcy będą oceniać gotowość na zakłócenia powodowane przez głównych dostawców usług chmurowych</td>
+<td><a href="https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html" title="Priorytety nadzorcze 2026-28">Nadzór Bankowy EBC ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Testy penetracyjne prowadzone przez zagrożenia</strong></td>
+<td>Testowanie staje się częścią nadzorczego mandatu odporności</td>
+<td><a href="https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html" title="Priorytety nadzorcze 2026-28">Nadzór Bankowy EBC ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Uprawnienia wobec krytycznych dostawców</strong></td>
+<td>Wiodący nadzorcy mogą żądać informacji, prowadzić dochodzenia, inspekcje, nakładać kary i wydawać zalecenia</td>
+<td><a href="https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act" title="Akt o cyfrowej odporności operacyjnej">EBA ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Koncentracja chmury jest wyraźnie wskazana</strong></td>
+<td>Silna zależność od garstki dostawców jest identyfikowana jako podatność</td>
+<td><a href="https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html" title="Priorytety nadzorcze 2026-28">Nadzór Bankowy EBC ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="od-migracji-do-kontroli">Od migracji do kontroli <a class="heading-anchor" href="#od-migracji-do-kontroli" aria-label="Link do Od migracji do kontroli">#</a></h2>
+<p>Pierwsza fala bankowości chmurowej polegała na przenoszeniu obciążeń. Dyscypliną 2026 roku jest kontrola: czy bank potrafi udowodnić, kto jest właścicielem każdej usługi, od którego dostawcy zależy, jak się ona psuje, jak się odzyskuje, jak przemieszczają się jej dane i jakie dowody wspierają to twierdzenie?</p>
+<h2 id="model-utwardzonej-drogi">Model utwardzonej drogi <a class="heading-anchor" href="#model-utwardzonej-drogi" aria-label="Link do Model utwardzonej drogi">#</a></h2>
+<p>Dojrzałość cloud-native należy mierzyć tym, jaka część majątku działa na utwardzonych drogach. Są to zatwierdzone wzorce dla Kubernetes, serverless, API, usług danych, sekretów, obserwowalności, CI/CD, polityki jako kodu i reagowania na incydenty. Im więcej zespołów korzysta z utwardzonych dróg, tym łatwiej w sposób spójny udowodnić odporność.</p>
+<h2 id="realia-wyjscia-z-chmury">Realia wyjścia z chmury <a class="heading-anchor" href="#realia-wyjscia-z-chmury" aria-label="Link do Realia wyjścia z chmury">#</a></h2>
+<p>Wyjście nie oznacza, że każde obciążenie działa w trybie active-active w wielu chmurach. Oznacza, że bank rozumie substytuowalność, przenośność danych, procesy zastępcze, czasy odzyskania i koszt przywrócenia usługi. Indeks powinien nagradzać dowody i penalizować ogólnikowe odwoływanie się do oświadczeń dostawców o odporności.</p>
+<h2 id="co-to-oznacza-dla-poszczegolnych-typow-bankow">Co to oznacza dla poszczególnych typów banków <a class="heading-anchor" href="#co-to-oznacza-dla-poszczegolnych-typow-bankow" aria-label="Link do Co to oznacza dla poszczególnych typów banków">#</a></h2>
+<h3 id="globalne-banki-o-znaczeniu-systemowym">Globalne banki o znaczeniu systemowym <a class="heading-anchor" href="#globalne-banki-o-znaczeniu-systemowym" aria-label="Link do Globalne banki o znaczeniu systemowym">#</a></h3>
+<p>Banki globalne powinny traktować ten indeks jako kartę wyników architektury korporacyjnej. Priorytetem nie jest kolejny proof of concept; priorytetem są dowody, że autonomiczne procesy, migracja kryptograficzna, zależność od chmury i modernizacja płatności mogą być nadzorowane jako jeden system ryzyka i wartości.</p>
+<h3 id="banki-transakcyjne-i-korporacyjne">Banki transakcyjne i korporacyjne <a class="heading-anchor" href="#banki-transakcyjne-i-korporacyjne" aria-label="Link do Banki transakcyjne i korporacyjne">#</a></h3>
+<p>Banki transakcyjne powinny skupić się na płatnościach hurtowych, danych strukturalnych, płynności, depozytach tokenizowanych i agentowych usługach skarbowych. Najcenniejsza propozycja dla klienta to nie samo szybsze przemieszczanie pieniądza; to wyjaśnialne, audytowalne, programowalne przemieszczanie pieniądza z mniejszą liczbą śledztw i lepszą widocznością kapitału obrotowego.</p>
+<h3 id="banki-regionalne">Banki regionalne <a class="heading-anchor" href="#banki-regionalne" aria-label="Link do Banki regionalne">#</a></h3>
+<p>Banki regionalne powinny używać indeksu, by unikać rozrostu programów. Nie muszą prowadzić każdej granicy, ale muszą mieć wiarygodne stanowiska w zakresie nadzoru nad AI, inwentarza post-kwantowego, dowodów wyjścia z chmury i gotowości danych płatniczych.</p>
+<h3 id="fintechy-psp-i-dostawcy-infrastruktury">Fintechy, PSP i dostawcy infrastruktury <a class="heading-anchor" href="#fintechy-psp-i-dostawcy-infrastruktury" aria-label="Link do Fintechy, PSP i dostawcy infrastruktury">#</a></h3>
+<p>Fintechy i dostawcy infrastruktury powinni dostosować swoje mapy produktowe do mierzalnej gotowości banków. Najlepsze propozycje zredukują ryzyko integracji, wzmocnią dowody i ułatwią bankom nadzorowanie złożonej infrastruktury.</p>
+<h2 id="wnioski">Wnioski <a class="heading-anchor" href="#wnioski" aria-label="Link do Wnioski">#</a></h2>
+<p>Wartość raportu w stylu indeksu polega na tym, że konwertuje on rozdrobnioną agendę technologiczną w mierzalny model operacyjny. W 2026 roku zwycięzcami w infrastrukturze finansowej nie będą instytucje z największą liczbą pilotów. Będą nimi instytucje, które potrafią udowodnić gotowość w zakresie autonomii, bezpieczeństwa, odporności, rozrachunku, ekonomiki i nadzoru jednocześnie.</p>
+<h2 id="najczesciej-zadawane-pytania">Najczęściej zadawane pytania <a class="heading-anchor" href="#najczesciej-zadawane-pytania" aria-label="Link do Najczęściej zadawane pytania">#</a></h2>
+<p><strong>Czy cloud-native oznacza wyłącznie chmurę publiczną?</strong></p>
+<p>Nie. Cloud-native to model operacyjny zbudowany wokół automatyzacji, API, kontenerów, obserwowalności, odporności i inżynierii platform. Może działać w środowiskach publicznych, prywatnych, hybrydowych i suwerennych.</p>
+<p><strong>Co DORA zmienia w strategii chmurowej?</strong></p>
+<p>DORA stawia ryzyko ICT stron trzecich, odporność operacyjną, rejestry, raportowanie incydentów, testowanie i nadzór nad krytycznymi dostawcami w centrum nadzoru nad chmurą.</p>
+<p><strong>Czy każdy bank powinien działać w wielu chmurach?</strong></p>
+<p>Niekoniecznie. Pytanie brzmi, czy funkcje krytyczne mają wiarygodne dowody odporności, przenośności, odzyskania i awaryjności.</p>
+<p><strong>Co należy zmierzyć jako pierwsze?</strong></p>
+<p>Zmapować krytyczne usługi biznesowe na zależności chmurowe, a następnie przetestować odzyskanie, przenośność danych i awaryjne procedury operacyjne dla najważniejszych usług.</p>
+<h2 id="bibliografia">Bibliografia <a class="heading-anchor" href="#bibliografia" aria-label="Link do Bibliografia">#</a></h2>
+<ul>
+<li>Nadzór Bankowy EBC, (2026). <a href="https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html" title="Priorytety nadzorcze 2026-28">Priorytety nadzorcze 2026-28 ⧉</a>.</li>
+<li>European Banking Authority, (2026). <a href="https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act" title="Akt o cyfrowej odporności operacyjnej">Akt o cyfrowej odporności operacyjnej ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Ostatnia weryfikacja <time datetime="2026-06-05">2026-06-05</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="O autorze"><img alt="Portret Sebastiena Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/pl/o-mnie/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Starszy technolog bankowy, pisze o zastosowanej sztucznej inteligencji, migracji na ISO 20022, kryptografii postkwantowej dla usług finansowych oraz strukturalnej transformacji płatności hurtowych.</span><span class="author-credentials">Ponad 20 lat doświadczenia w HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/pl/o-mnie/index.html">Pełny profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Ostatnia weryfikacja <time datetime="2026-05-28">2026-05-28</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Powiązane lektury</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/pl/2026-05-20-cloud-native-banking-financial-institutions-2026" class="related-media" aria-label="Bankowość cloud native w 2026 roku: Kubernetes, DORA, suwerenność i koniec podziału na maszyny wirtualne i kontenery" tabindex="-1"><img alt="Cloud-native banking architecture for 2026 showing Kubernetes, VM coexistence, DORA resilience, sovereign cloud, observability, and bank platform engineering" src="https://cloudcdn.pro/api/transform?url=/stocks/images/freeman-zhou-oV9hp8wXkPE.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="bankowosc-cloud-native-w-2026-roku-kubernetes-dora-suwerennosc-i-koniec-podziau-"><a href="https://sebastienrousseau.com/pl/2026-05-20-cloud-native-banking-financial-institutions-2026">Bankowość cloud native w 2026 roku: Kubernetes, DORA, suwerenność i koniec podziału na maszyny wirtualne i kontenery</a> <a class="heading-anchor" href="#bankowosc-cloud-native-w-2026-roku-kubernetes-dora-suwerennosc-i-koniec-podziau-" aria-label="Link do Bankowość cloud native w 2026 roku: Kubernetes, DORA, suwerenność i koniec podziału na maszyny wirtualne i kontenery">#</a></h3><p><time datetime="2026-05-20">2026-05-20</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" class="related-media" aria-label="DORA, EU AI Act i suwerennosc danych: stos zgodnosci bankow w 2026" tabindex="-1"><img alt="Compliance stack diagram showing DORA resilience, EU AI Act transparency, data sovereignty, cloud concentration risk, audit logs, model governance, and third-party providers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="dora-eu-ai-act-i-suwerennosc-danych-stos-zgodnosci-bankow-w-2026"><a href="https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026">DORA, EU AI Act i suwerennosc danych: stos zgodnosci bankow w 2026</a> <a class="heading-anchor" href="#dora-eu-ai-act-i-suwerennosc-danych-stos-zgodnosci-bankow-w-2026" aria-label="Link do DORA, EU AI Act i suwerennosc danych: stos zgodnosci bankow w 2026">#</a></h3><p><time datetime="2026-05-28">2026-05-28</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/pl/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope" class="related-media" aria-label="Magnifica Humanitas: branżowa lektura pierwszej encykliki o AI" tabindex="-1"><img alt="Long-exposure photograph of light trails forming a path through darkness toward a luminous horizon, used as the visual key for an AI-ethics reading of the Magnifica Humanitas encyclical" src="https://cloudcdn.pro/api/transform?url=/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="magnifica-humanitas-branzowa-lektura-pierwszej-encykliki-o-ai"><a href="https://sebastienrousseau.com/pl/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope">Magnifica Humanitas: branżowa lektura pierwszej encykliki o AI</a> <a class="heading-anchor" href="#magnifica-humanitas-branzowa-lektura-pierwszej-encykliki-o-ai" aria-label="Link do Magnifica Humanitas: branżowa lektura pierwszej encykliki o AI">#</a></h3><p><time datetime="2026-05-26">2026-05-26</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="Nawigacja po artykule"><a class="post-pagination-prev" href="/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">Poprzedni</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/pl/o-mnie/index.html">O mnie</a></li>
+              <li><a href="/pl/kontakt/index.html">Kontakt</a></li>
+              <li><a href="/pl/stworzone-statycznym-generatorem/index.html">Stworzone statycznym generatorem</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Publikacje</h2>
+            <ul>
+              <li><a href="/pl/artykuly/index.html">Artykuły</a></li>
+              <li><a href="/pl/publikacje/index.html">Publikacje</a></li>
+              <li><a href="/pl/tagi/index.html">Tagi</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Praca</h2>
+            <ul>
+              <li><a href="/pl/projekty/index.html">Projekty</a></li>
+              <li><a href="/pl/playlisty/index.html">Playlisty</a></li>
+              <li><a href="/pl/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Kontakt</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Zapis do newslettera">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — notatki badawcze o płatnościach, AI i kryptografii postkwantowej. Bez spamu.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="ty@bank.pl" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Zapisz się</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Linki społecznościowe">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau na Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau na LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau na Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau na YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/pl/dostepnosc/index.html">Dostępność</a> ·
+            <a href="/pl/prywatnosc/index.html">Prywatność</a> ·
+            <a href="/pl/warunki/index.html">Warunki</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"pl"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"pl"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1073,"headline":"Indeks Cloud-Native Banking w 2026: DORA, inżynieria platform, suwerenna chmura i odporność operacyjna","description":"Indeks cloud-native banking 2026 do pomiaru gotowości DORA, dojrzałości inżynierii platform, ryzyka koncentracji chmury, dowodów wyjścia i odporności operacyjnej w bankach.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/humphrey-muleba-1660004.webp","width":"100vw","height":"100vh","caption":"Abstrakcyjna fotografia architektoniczna jako klucz wizualny dla Indeksu Cloud-Native Banking 2026 — mierzącego gotowość DORA, dojrzałość inżynierii platform, ryzyko koncentracji chmury, dowody wyjścia i odporność operacyjną"},"url":"https://sebastienrousseau.com/pl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/","datePublished":"2026-06-05T06:06:06+00:00","dateModified":"2026-06-05","inLanguage":"pl","keywords":"cloud-native banking 2026, DORA banki, ryzyko koncentracji chmury, inżynieria platform w bankach, ryzyko ICT stron trzecich, strategia wyjścia z chmury, suwerenna chmura","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/pl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"pl"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/pl/"},{"@type":"ListItem","position":3,"name":"Indeks Cloud-Native Banking w 2026: DORA, inżynieria platform, suwerenna chmura i odporność operacyjna","item":"https://sebastienrousseau.com/pl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Szukaj">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Szukaj</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Szukaj">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Przeszukaj dokumentację..." autocomplete="off" aria-label="Szukaj"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> zamknij</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> nawiguj</span><span><kbd>Enter</kbd> otwórz</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

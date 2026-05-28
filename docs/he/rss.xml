@@ -6,8 +6,28 @@
     <description>מאמרים בעברית: AI יישומי, תשלומי ISO 20022, קריפטוגרפיה פוסט-קוונטית, וטרנספורמציה של תשלומי סיטונאות.</description>
     <atom:link href="https://sebastienrousseau.com/he/rss.xml" rel="self" type="application/rss+xml"/>
     <language>he-IL</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 15:43:38 +0000</lastBuildDate>
     <copyright>© זכויות יוצרים 2007 - 2026 - Sebastien Rousseau. כל הזכויות שמורות.</copyright>
+    <item>
+      <title>מדד הבנקאות ה-cloud-native ב-2026: DORA, הנדסת פלטפורמה, ענן ריבוני וחוסן תפעולי</title>
+      <link>https://sebastienrousseau.com/he/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
+      <description>מדד בנקאות cloud-native לשנת 2026 — מדידת מוכנות DORA, בגרות הנדסת פלטפורמה, סיכון ריכוז ענן, ראיות תוכנית יציאה וחוסן תפעולי לבנקים.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
+      <pubDate>Thu, 28 May 2026 15:43:38 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/humphrey-muleba-1660004.webp" type="image/webp" length="0"/>
+      <category>בנקאות cloud-native 2026</category>
+      <category>DORA בנקים</category>
+      <category>סיכון ריכוז ענן</category>
+      <category>הנדסת פלטפורמה בבנקים</category>
+      <category>סיכון צד שלישי ICT</category>
+      <category>תוכנית יציאה מענן</category>
+      <category>ענן ריבוני</category>
+      <category>חוסן תפעולי</category>
+      <category>TLPT</category>
+      <category>ENISA</category>
+      <category>NIS2</category>
+    </item>
     <item>
       <title>DORA, חוק הבינה המלאכותית וריבונות נתונים: ערימת הציות של 2026 לבנקים</title>
       <link>https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

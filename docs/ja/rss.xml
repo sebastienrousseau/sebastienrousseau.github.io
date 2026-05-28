@@ -6,8 +6,24 @@
     <description>日本語の記事:応用AI、ISO 20022 決済、ポスト量子暗号、ホールセール決済の構造変革。</description>
     <atom:link href="https://sebastienrousseau.com/ja/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ja-JP</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 15:43:38 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>クラウドネイティブ・バンキング指数 2026:DORA、プラットフォームエンジニアリング、ソブリンクラウド</title>
+      <link>https://sebastienrousseau.com/ja/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
+      <description>DORA 準備態勢、プラットフォームエンジニアリングの成熟度、クラウド集中リスク、撤退エビデンス、オペレーショナル・レジリエンスを測定する 2026 年のクラウドネイティブ・バンキング指数です。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
+      <pubDate>Thu, 28 May 2026 15:43:38 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/humphrey-muleba-1660004.webp" type="image/webp" length="0"/>
+      <category>クラウドネイティブ・バンキング 2026</category>
+      <category>DORA 銀行</category>
+      <category>クラウド集中リスク</category>
+      <category>プラットフォームエンジニアリング 銀行</category>
+      <category>ICT サードパーティリスク</category>
+      <category>クラウド撤退計画</category>
+      <category>ソブリンクラウド</category>
+    </item>
     <item>
       <title>DORA、EU AI Act、データ主権:2026 年銀行向けコンプライアンス・スタック</title>
       <link>https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

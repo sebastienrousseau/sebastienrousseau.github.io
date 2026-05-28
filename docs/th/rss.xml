@@ -6,8 +6,24 @@
     <description>บทความภาษาไทย: AI ประยุกต์, การชำระเงิน ISO 20022, การเข้ารหัสหลังควอนตัม และการปฏิรูปการชำระเงินขายส่ง</description>
     <atom:link href="https://sebastienrousseau.com/th/rss.xml" rel="self" type="application/rss+xml"/>
     <language>th-TH</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 15:43:38 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์</copyright>
+    <item>
+      <title>ดัชนีธนาคาร cloud-native ปี 2026: DORA วิศวกรรมแพลตฟอร์ม คลาวด์อธิปไตย และความสามารถในการฟื้นตัวของการดำเนินงาน</title>
+      <link>https://sebastienrousseau.com/th/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
+      <description>ดัชนีธนาคาร cloud-native ปี 2026 สำหรับวัดความพร้อม DORA ความเป็นผู้ใหญ่ของวิศวกรรมแพลตฟอร์ม ความเสี่ยงจากการกระจุกตัวของคลาวด์ หลักฐานแผนถอนตัว และความสามารถในการฟื้นตัวของการดำเนินงาน</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
+      <pubDate>Thu, 28 May 2026 15:43:38 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/humphrey-muleba-1660004.webp" type="image/webp" length="0"/>
+      <category>ธนาคาร cloud-native 2026</category>
+      <category>DORA ธนาคาร</category>
+      <category>ความเสี่ยงจากการกระจุกตัวของคลาวด์</category>
+      <category>วิศวกรรมแพลตฟอร์มธนาคาร</category>
+      <category>ความเสี่ยงบุคคลที่สาม ICT</category>
+      <category>กลยุทธ์แผนถอนตัวคลาวด์</category>
+      <category>คลาวด์อธิปไตย</category>
+    </item>
     <item>
       <title>DORA กฎหมาย AI ของ EU และอธิปไตยข้อมูล: สแต็คการปฏิบัติตามกฎปี 2026 ของธนาคาร</title>
       <link>https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

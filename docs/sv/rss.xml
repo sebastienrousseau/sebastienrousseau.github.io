@@ -6,8 +6,24 @@
     <description>Artiklar på svenska: tillämpad AI, ISO 20022-betalningar, postkvantkryptografi och transformationen av grossistbetalningar.</description>
     <atom:link href="https://sebastienrousseau.com/sv/rss.xml" rel="self" type="application/rss+xml"/>
     <language>sv-SE</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 15:43:38 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alla rättigheter förbehållna.</copyright>
+    <item>
+      <title>Cloud Native Banking Index 2026: DORA, plattformsteknik, suverän moln och operationell motståndskraft</title>
+      <link>https://sebastienrousseau.com/sv/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
+      <description>Ett cloud-native bankindex för 2026 som mäter DORA-beredskap, plattformsteknikens mognad, koncentrationsrisk i molnet, utträdesbevis och operationell motståndskraft.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
+      <pubDate>Thu, 28 May 2026 15:43:38 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/humphrey-muleba-1660004.webp" type="image/webp" length="0"/>
+      <category>cloud-native bank 2026</category>
+      <category>DORA banker</category>
+      <category>koncentrationsrisk moln</category>
+      <category>plattformsteknik bank</category>
+      <category>ICT tredjepartsrisk</category>
+      <category>utträdesplan moln</category>
+      <category>suverän moln</category>
+    </item>
     <item>
       <title>DORA, EU:s AI-förordning och datasuveränitet: bankernas efterlevnadsstack 2026</title>
       <link>https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

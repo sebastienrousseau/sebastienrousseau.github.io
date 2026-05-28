@@ -6,8 +6,24 @@
     <description>Artigos em português: IA aplicada, pagamentos ISO 20022, criptografia pós-quântica e transformação dos pagamentos de atacado.</description>
     <atom:link href="https://sebastienrousseau.com/pt-br/rss.xml" rel="self" type="application/rss+xml"/>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 15:43:38 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Todos os direitos reservados.</copyright>
+    <item>
+      <title>O Índice de Banking Cloud-Native em 2026: DORA, engenharia de plataforma e resiliência</title>
+      <link>https://sebastienrousseau.com/pt-br/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
+      <description>Um índice de banking cloud-native em 2026 para medir prontidão DORA, maturidade de engenharia de plataforma, risco de concentração em nuvem, evidências de plano de saída e resiliência operacional.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
+      <pubDate>Thu, 28 May 2026 15:43:38 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/humphrey-muleba-1660004.webp" type="image/webp" length="0"/>
+      <category>banking cloud-native 2026</category>
+      <category>DORA bancos</category>
+      <category>risco de concentração em nuvem</category>
+      <category>engenharia de plataforma bancos</category>
+      <category>risco de terceiros ICT</category>
+      <category>plano de saída de nuvem</category>
+      <category>nuvem soberana</category>
+    </item>
     <item>
       <title>DORA, EU AI Act e soberania de dados: a stack de conformidade bancária 2026</title>
       <link>https://sebastienrousseau.com/pt-br/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

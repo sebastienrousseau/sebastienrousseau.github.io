@@ -6,8 +6,24 @@
     <description>Статьи на русском языке: прикладной ИИ, платежи ISO 20022, постквантовая криптография и трансформация оптовых платежей.</description>
     <atom:link href="https://sebastienrousseau.com/ru/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ru-RU</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 15:43:38 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Все права защищены.</copyright>
+    <item>
+      <title>Индекс cloud-native банкинга 2026: DORA, платформенная инженерия, суверенное облако и устойчивость</title>
+      <link>https://sebastienrousseau.com/ru/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
+      <description>Индекс cloud-native банкинга 2026 года: измерение готовности по DORA, зрелости платформенной инженерии, риска концентрации в облаке, доказательств выхода и устойчивости.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
+      <pubDate>Thu, 28 May 2026 15:43:38 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/humphrey-muleba-1660004.webp" type="image/webp" length="0"/>
+      <category>cloud-native банкинг 2026</category>
+      <category>DORA банки</category>
+      <category>риск концентрации в облаке</category>
+      <category>платформенная инженерия банков</category>
+      <category>риск ICT третьих сторон</category>
+      <category>план выхода из облака</category>
+      <category>суверенное облако</category>
+    </item>
     <item>
       <title>DORA, Закон ЕС об ИИ и суверенитет данных: стек комплаенса банков 2026 года</title>
       <link>https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

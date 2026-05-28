@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/ko/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ko/"/>
   <id>https://sebastienrousseau.com/ko/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-28T15:43:38+00:00</updated>
+  <entry>
+    <title>2026년 클라우드 네이티브 뱅킹 지수: DORA, 플랫폼 엔지니어링, 회복탄력성</title>
+    <link href="https://sebastienrousseau.com/ko/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</id>
+    <updated>2026-05-28T15:43:38+00:00</updated>
+    <published>2026-05-28T15:43:38+00:00</published>
+    <summary>DORA 준비도, 플랫폼 엔지니어링 성숙도, 클라우드 집중 위험, 출구 증거, 운영 회복탄력성을 측정하기 위한 2026년 클라우드 네이티브 뱅킹 지수입니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI 법, 데이터 주권: 2026년 은행을 위한 컴플라이언스 스택</title>
     <link href="https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

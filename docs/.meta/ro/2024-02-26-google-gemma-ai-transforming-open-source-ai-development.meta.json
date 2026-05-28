@@ -1,11 +1,11 @@
 {
-  "locale": "ro_RO",
-  "keywords": "Google Gemma AI, model AI open-source, arhitectură tehnică Gemma, Gemma 2B 7B, AI etic, integrare AI macOS, soluții AI enterprise, AI conversațional, analiză date AI, AI pentru dispozitive edge",
-  "language": "ro-RO",
-  "title": "Google Gemma AI: Transforming Open-Source AI Development",
   "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
   "description": "Explorați modelul AI Gemma de la Google: un proiect open-source care oferă soluții AI etice atât pentru uz personal, cât și pentru întreprinderi.",
   "date": "Feb 26, 2024",
+  "locale": "ro_RO",
   "subtitle": "O privire detaliată asupra capabilităților, contribuțiilor open-source și direcțiilor viitoare",
-  "banner_alt": "Navă spațială futuristă albastră cu lumini neon"
+  "language": "ro-RO",
+  "keywords": "Google Gemma AI, model AI open-source, arhitectură tehnică Gemma, Gemma 2B 7B, AI etic, integrare AI macOS, soluții AI enterprise, AI conversațional, analiză date AI, AI pentru dispozitive edge",
+  "banner_alt": "Navă spațială futuristă albastră cu lumini neon",
+  "title": "Google Gemma AI: Transforming Open-Source AI Development"
 }

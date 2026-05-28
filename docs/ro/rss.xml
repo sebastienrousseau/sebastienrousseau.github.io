@@ -6,8 +6,24 @@
     <description>Articole în limba română: IA aplicată, plăți ISO 20022, criptografie post-cuantică și transformarea plăților wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/ro/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ro-RO</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 15:43:38 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Toate drepturile rezervate.</copyright>
+    <item>
+      <title>Indicele Cloud-Nativ Bancar 2026: DORA, ingineria platformei, cloud suveran și reziliență operațională</title>
+      <link>https://sebastienrousseau.com/ro/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
+      <description>Un indice cloud-nativ bancar 2026 pentru măsurarea pregătirii DORA, a maturității ingineriei platformei, a riscului de concentrare cloud, a dovezilor planului de ieșire și a rezilienței operaționale.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
+      <pubDate>Thu, 28 May 2026 15:43:38 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/humphrey-muleba-1660004.webp" type="image/webp" length="0"/>
+      <category>banking cloud-nativ 2026</category>
+      <category>DORA bănci</category>
+      <category>risc de concentrare cloud</category>
+      <category>ingineria platformei bănci</category>
+      <category>risc ICT terță parte</category>
+      <category>plan de ieșire cloud</category>
+      <category>cloud suveran</category>
+    </item>
     <item>
       <title>DORA, EU AI Act și suveranitatea datelor: stiva de conformitate bancară 2026</title>
       <link>https://sebastienrousseau.com/ro/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

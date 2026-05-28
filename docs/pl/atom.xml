@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/pl/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/pl/"/>
   <id>https://sebastienrousseau.com/pl/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-28T15:43:38+00:00</updated>
+  <entry>
+    <title>Indeks Cloud-Native Banking w 2026: DORA, inżynieria platform, suwerenna chmura i odporność operacyjna</title>
+    <link href="https://sebastienrousseau.com/pl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"/>
+    <id>https://sebastienrousseau.com/pl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</id>
+    <updated>2026-05-28T15:43:38+00:00</updated>
+    <published>2026-05-28T15:43:38+00:00</published>
+    <summary>Indeks cloud-native banking 2026 do pomiaru gotowości DORA, dojrzałości inżynierii platform, ryzyka koncentracji chmury, dowodów wyjścia i odporności operacyjnej w bankach.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI Act i suwerennosc danych: stos zgodnosci bankow w 2026</title>
     <link href="https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>
