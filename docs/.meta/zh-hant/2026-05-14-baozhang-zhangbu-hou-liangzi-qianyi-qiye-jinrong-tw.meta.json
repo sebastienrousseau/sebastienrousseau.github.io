@@ -1,11 +1,11 @@
 {
-  "language": "zh-Hant",
   "description": "G7 路線圖與 BIS Project Leap 讓後量子遷移從研究興趣變為監管要求，董事會必須制定明確時間表。",
-  "date": "May 14, 2026",
+  "language": "zh-Hant",
   "banner_alt": "後量子密碼學遷移路線圖——企業銀行基礎設施從 RSA 過渡到 ML-KEM 與 ML-DSA",
+  "date": "May 14, 2026",
+  "subtitle": "G7 路線圖與 BIS Project Leap 讓後量子遷移從研究興趣變為監管要求",
   "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp",
   "title": "保障賬簿：後量子遷移面向企業金融的董事會級指南",
-  "subtitle": "G7 路線圖與 BIS Project Leap 讓後量子遷移從研究興趣變為監管要求",
   "locale": "zh_TW",
   "keywords": "後量子密碼學, PQC, ML-KEM, ML-DSA, FIPS 203, FIPS 204, G7, BIS Project Leap, HNDL, Mosca 方程"
 }

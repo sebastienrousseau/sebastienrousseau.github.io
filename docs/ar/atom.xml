@@ -4,13 +4,22 @@
   <link href="https://sebastienrousseau.com/ar/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ar/"/>
   <id>https://sebastienrousseau.com/ar/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-28T23:46:21+00:00</updated>
+  <entry>
+    <title>CloudCDN: مخطط مفتوح المصدر للحافة الأصلية للذكاء الاصطناعي في 2026</title>
+    <link href="https://sebastienrousseau.com/ar/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/"/>
+    <id>https://sebastienrousseau.com/ar/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</id>
+    <updated>2026-05-28T23:46:21+00:00</updated>
+    <published>2026-05-28T23:46:21+00:00</published>
+    <summary>CloudCDN مخطط مفتوح المصدر لشبكة CDN حافة أصلية للذكاء الاصطناعي: بنية تحتية تحت تحكم MCP، وتحديد المعدل عبر Durable Objects، وعناوين URL موقّعة، ووصول وقابلية تدقيق.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Magnifica Humanitas: قراءة هندسية لأول رسالة بابوية عن الذكاء الاصطناعي</title>
     <link href="https://sebastienrousseau.com/ar/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/"/>
     <id>https://sebastienrousseau.com/ar/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</id>
-    <updated>2026-05-28T06:26:19+00:00</updated>
-    <published>2026-05-28T06:26:19+00:00</published>
+    <updated>2026-05-28T23:46:21+00:00</updated>
+    <published>2026-05-28T23:46:21+00:00</published>
     <summary>في 25 مايو 2026 أصدر البابا ليون الرابع عشر Magnifica Humanitas، أول رسالة بابوية مخصّصة للذكاء الاصطناعي. قراءتها من داخل قطاع التقنية تكشف إطارًا أخلاقيًا متماسكًا لعصر الذكاء الاصطناعي والكم، وتنتهي إلى الرجاء لا الخوف.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>

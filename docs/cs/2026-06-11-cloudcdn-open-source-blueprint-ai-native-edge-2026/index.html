@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 11 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 11 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>CloudCDN: Open source plán pro AI-nativní edge v roce 2026 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="CloudCDN je open source AI-nativní plán edge CDN: infrastruktura řízená přes MCP, omezování rychlosti Durable Objects, signed URLs, přístupnost a auditovatelnost.">
+<meta name="keywords" content="CloudCDN, AI-nativní edge, open source CDN, MCP server, Cloudflare Workers, Durable Objects, signed URLs, passkeys, SLSA, infrastruktura edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="CloudCDN: Open-Source AI-Native Edge Blueprint">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-FnhyvOVQ+FD7RzUVT9J8CqC7lctgrjTaWaMP+j6o+Bc=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-PQ03Okm61SBv1P/YW6azg0ipOp0ujXcVjs0TpHlB5/4=' 'sha256-QTW0yc36cWtZ+w7AZAOCQGl2JvDDbl6sBjXHqxPCnZo=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/cs/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="/cs/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="CloudCDN: Open source plán pro AI-nativní edge v roce 2026 — Sebastien Rousseau">
+<meta property="og:description" content="CloudCDN je open source AI-nativní plán edge CDN: infrastruktura řízená přes MCP, omezování rychlosti Durable Objects, signed URLs, přístupnost a auditovatelnost.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/cs/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="cs_CZ">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CloudCDN: Open source plán pro AI-nativní edge v roce 2026 — Sebastien Rousseau">
+<meta name="twitter:description" content="CloudCDN je open source AI-nativní plán edge CDN: infrastruktura řízená přes MCP, omezování rychlosti Durable Objects, signed URLs, přístupnost a auditovatelnost.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/cs/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Přeskočit na hlavní obsah</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Přepnout navigaci" />
+      <div class="wrap">
+        <a class="ap-brand" href="/cs/index.html" aria-label="Domovská stránka Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Hlavní navigace">
+          <ul class="ap-menu">
+            <li><a href="/cs/o-mne/index.html">O mně</a></li>
+            <li><a href="/cs/clanky/index.html" aria-current="page" class="active">Články</a></li>
+            <li><a href="/cs/publikace/index.html">Publikace</a></li>
+            <li><a href="/cs/temata/index.html">Témata</a></li>
+            <li><a href="/cs/projekty/index.html">Projekty</a></li>
+            <li><a href="/cs/playlisty/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Přepnout na tmavý motiv" aria-pressed="false" title="Přepnout motiv">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Hledat (Cmd nebo Ctrl + K)" title="Hledat (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Jazyk">
+            <button type="button" class="ap-lang-toggle" aria-label="CS, změnit jazyk" aria-expanded="false" aria-haspopup="menu" title="Změnit jazyk">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">CS</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/cs/kontakt/index.html" aria-label="Kontaktovat">Kontaktovat ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Přepnout navigaci">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>CloudCDN: Open source plán pro AI-nativní edge v roce 2026</h1>
+      <p class="sub">CloudCDN ukazuje, jak se open source edge infrastruktura může stát zkontrolovatelnou, agentně řiditelnou, s omezováním rychlosti, přístupnou a v bankovní kvalitě.</p>
+    <nav class="article-tags" aria-label="Témata"><a href="/tags/index.html#h3-cloudcdn" class="article-tag" rel="tag">CloudCDN</a><a href="/tags/index.html#h3-ai-nativni-edge" class="article-tag" rel="tag">AI-nativní edge</a><a href="/tags/index.html#h3-open-source-cdn" class="article-tag" rel="tag">open source CDN</a><a href="/tags/index.html#h3-mcp-server" class="article-tag" rel="tag">MCP server</a><a href="/tags/index.html#h3-cloudflare-workers" class="article-tag" rel="tag">Cloudflare Workers</a><a href="/tags/index.html#h3-durable-objects" class="article-tag" rel="tag">Durable Objects</a><a href="/tags/index.html#h3-signed-urls" class="article-tag" rel="tag">signed URLs</a><a href="/tags/index.html#h3-passkeys" class="article-tag" rel="tag">passkeys</a><a href="/tags/index.html#h3-slsa" class="article-tag" rel="tag">SLSA</a><a href="/tags/index.html#h3-infrastruktura-edge" class="article-tag" rel="tag">infrastruktura edge</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-11T06:06:06+00:00" class="meta-pub">Publikováno 11 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Odhadovaná doba čtení">5 min čtení</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Obsah</h2><ol><li><a href="#proc-na-tomto-open-source-projektu-v-roce-2026-zalezi">Proč na tomto open source projektu v roce 2026 záleží</a></li><li><a href="#architektonicka-optika">Architektonická optika</a></li><li><a href="#signaly-ke-sledovani">Signály ke sledování</a></li><li><a href="#cdn-se-stava-ridici-rovinou">CDN se stává řídicí rovinou</a></li><li><a href="#proc-open-source-meni-model-duvery">Proč open source mění model důvěry</a></li><li><a href="#vzor-edge-v-bankovni-kvalite">Vzor edge v bankovní kvalitě</a></li><li><a href="#co-to-znamena-podle-publika">Co to znamená podle publika</a></li><li><a href="#zaver">Závěr</a></li><li><a href="#casto-kladene-otazky">Často kladené otázky</a></li><li><a href="#reference">Reference</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> CloudCDN je open source AI-nativní plán edge CDN: infrastruktura řízená přes MCP, omezování rychlosti Durable Objects, signed URLs, přístupnost a auditovatelnost.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Proč na tomto open source projektu v roce 2026 záleží.</strong> Strategická hodnota open source se v roce 2026 už neomezuje na transparentnost, opětovné použití nebo dobrou vůli vývojářů.</li>  <li><strong>Signály ke sledování.</strong> Tradiční CDN byly postaveny kolem akcelerace obsahu, mazání cache, směrování a ochrany podobné WAF.</li>  <li><strong>CDN se stává řídicí rovinou.</strong> Tradiční CDN byly postaveny kolem akcelerace obsahu, mazání cache, směrování a ochrany podobné WAF.</li>  <li><strong>Proč open source mění model důvěry.</strong> Pro regulované instituce není přitažlivost CloudCDN jen ve výkonu.</li></ul></aside><h1>CloudCDN: Open source plán pro AI-nativní edge v roce 2026</h1>
+<!-- lead-start -->
+<aside class="lead" aria-label="Stručný přehled">
+<p><strong>Stručně.</strong> CloudCDN je open source AI-nativní plán pro edge. Pracuje s CDN jako s agentním rozhraním — řízeným přes MCP, vázaným na identitu, s omezováním rychlosti, kontrolovaným podepsanými URL, otestovaným na přístupnost a reprodukovatelným ze zdrojového kódu — místo neprůhledné dodavatelské konzole. Referenční repozitář dosahuje TTFB pod 100 ms napříč PoP Cloudflare s 3 185 testy při 100% pokrytí.</p>
+<p><strong>Klíčové body:</strong></p>
+<ul>
+<li><strong>Edge je nová řídicí rovina.</strong> Agenti budou mazat cache, vydávat podepsané URL a přesouvat provoz — to vyžaduje řiditelnou infrastrukturu, nikoli dodavatelský portál.</li>
+<li><strong>MCP mění akce CDN v typované nástroje.</strong> Každá operace je auditovatelná, vázaná na identitu a ohraničená politikou.</li>
+<li><strong>Durable Objects řeší matematiku omezování rychlosti.</strong> Limity podle klíče, IP a route, které přežijí výpadek.</li>
+<li><strong>Podepsané URL a passkeys hlídají přístup.</strong> Žádné bearer tokeny poletující v logech, žádné sdílené API klíče.</li>
+<li><strong>Open source je mechanismus důvěry.</strong> Banky a podniky si mohou řídicí rovinu přečíst místo důvěřování PDF dokumentům dodavatele.</li>
+</ul>
+<p><strong>Doporučená četba:</strong> <a href="/cs/2026-05-20-cloud-native-banking-financial-institutions-2026/">Cloud-native bankovnictví</a> · <a href="/cs/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/">AI operační systém pro platby</a> · <a href="/cs/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/">Compliance stack DORA + AI Act</a></p>
+</aside>
+<!-- lead-end -->
+<p>CloudCDN je důležitý, protože edge se stává řídicí rovinou pro AI-nativní software. Jakmile agenti začnou volat nástroje, přesouvat data, mazat cache, žádat o podepsané URL a koordinovat workflow, starý model CDN s neprůhlednými konzolemi a proprietárními řídicími rovinami přestává stačit. CloudCDN obhajuje jiný model: otevřenou, zkontrolovatelnou, agentně řiditelnou edge platformu, která považuje bezpečnost, přístupnost, výkon a auditovatelnost za prvotřídní designová omezení.</p>
+<p>Open source referencí tohoto článku je <a href="https://github.com/sebastienrousseau/cloudcdn.pro" title="cloudcdn.pro">cloudcdn.pro ⧉</a>. Repozitář se pozicionuje jako: víceklientská, AI-nativní CDN, kterou lze přečíst od konce ke konci a nasadit nezávisle, s TTFB pod 100 ms napříč PoP Cloudflare, řízením přes MCP, omezováním rychlosti Durable Objects, přístupností WCAG-AA, podepsanými URL, passkeys, SLSA a 3 185 testy při 100% pokrytí.</p>
+<hr />
+<blockquote>
+<p><strong>Shrnutí pro představenstvo / klíčové body</strong></p>
+<ul>
+<li><strong>CloudCDN je vlajková open source story o infrastruktuře.</strong> Spojuje mechaniku CDN, Cloudflare Workers, Durable Objects, MCP, podepsané URL, passkeys, omezování rychlosti, přístupnost a disciplínu testování.</li>
+<li><strong>Edge se stává agentním rozhraním.</strong> Jakmile AI systémy mohou ovládat infrastrukturu skrze nástroje MCP, musí být CDN řiditelná identitou, politikou, limity rychlosti a auditními logy.</li>
+<li><strong>Open source je mechanismus důvěry.</strong> Banka nebo podnik si může prohlédnout, jak řídicí rovina funguje, místo aby se zcela spoléhal na tvrzení dodavatele.</li>
+<li><strong>Atomické omezování rychlosti je strategické.</strong> Durable Objects poskytují koordinační bod pro omezování jak vnějšího zneužití, tak vnitřních agentních smyček.</li>
+<li><strong>Projekt je referenční architektura.</strong> Jeho hodnota není jen v tom, co dodává, ale v tom, co učí o příští generaci edge infrastruktury.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="proc-na-tomto-open-source-projektu-v-roce-2026-zalezi">Proč na tomto open source projektu v roce 2026 záleží <a class="heading-anchor" href="#proc-na-tomto-open-source-projektu-v-roce-2026-zalezi" aria-label="Odkaz na Proč na tomto open source projektu v roce 2026 záleží">#</a></h2>
+<p>Strategická hodnota open source se v roce 2026 už neomezuje na transparentnost, opětovné použití nebo dobrou vůli vývojářů. Pro banky a finanční instituce se open source infrastruktura stala způsobem, jak prověřit předpoklady, otestovat kontroly, snížit dodavatelskou neprůhlednost a proměnit architektonická tvrzení v kód, který lze přečíst, forkovat, otužit a provozovat. Nejužitečnější projekty nejsou dema. Jsou to referenční implementace, které odhalují, jak do sebe zapadají bezpečnost, přístupnost, výkon, compliance a vývojářská zkušenost.</p>
+<p>To je optikou, kterou je třeba na cloudcdn.pro nahlížet. Není to pouze repozitář; je to konkrétní designový argument. Říká, že kritická infrastruktura má být auditovatelná, kombinovatelná, zdokumentovaná, testovatelná a srozumitelná lidem, kteří na ní závisí. Ve finančních službách na tom záleží, protože systémy stále častěji leží na průsečíku agentní AI, plateb v reálném čase, postkvantové kryptografie, cloud-native odolnosti, strukturovaných dat a regulatorních důkazů.</p>
+<h2 id="architektonicka-optika">Architektonická optika <a class="heading-anchor" href="#architektonicka-optika" aria-label="Odkaz na Architektonická optika">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Vrstva</th>
+<th>Designové rozhodnutí</th>
+<th>Proč na tom záleží</th>
+<th>Riziko při špatném zacházení</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Edge runtime</strong></td>
+<td>Cloudflare Workers a Pages</td>
+<td>Globální vykonávání s nízkou provozní režií</td>
+<td>Latenční zisky bez kontrolní disciplíny</td>
+</tr>
+<tr>
+<td><strong>Koordinace stavu</strong></td>
+<td>Durable Objects pro atomické limity a sdílenou kontrolu</td>
+<td>Brání race conditions při vynucování na edge</td>
+<td>Distribuované zneužití a nekonzistentní kvóty</td>
+</tr>
+<tr>
+<td><strong>Rozhraní pro agenty</strong></td>
+<td>Operace vystavené přes MCP</td>
+<td>Umožňuje agentům řídit infrastrukturu skrze řízené nástroje</td>
+<td>Neohraničené volání nástrojů</td>
+</tr>
+<tr>
+<td><strong>Řízení přístupu</strong></td>
+<td>Passkeys, signed URLs, oprávnění a auditní záznamy</td>
+<td>Mění operace CDN v dohledatelné akce</td>
+<td>Anonymní nebo slabě připsané změny</td>
+</tr>
+<tr>
+<td><strong>Kvalitativní brány</strong></td>
+<td>Přístupnost, testování, SLSA a kontroly nasazení</td>
+<td>Činí důvěru součástí dodávky</td>
+<td>Rychlá infrastruktura, kterou nelze bezpečně řídit</td>
+</tr>
+</tbody>
+</table>
+<h2 id="signaly-ke-sledovani">Signály ke sledování <a class="heading-anchor" href="#signaly-ke-sledovani" aria-label="Odkaz na Signály ke sledování">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Signál</th>
+<th>Co znamená</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>42 nástrojů MCP</strong></td>
+<td>CloudCDN je navržen pro agentně řiditelnou infrastrukturu</td>
+<td><a href="https://github.com/sebastienrousseau/cloudcdn.pro" title="Repozitář CloudCDN">cloudcdn.pro ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Omezování rychlosti přes Durable Objects</strong></td>
+<td>Stavová koordinace na edge se stává bezpečnostním primitivem</td>
+<td><a href="https://developers.cloudflare.com/durable-objects/" title="Dokumentace Cloudflare Durable Objects">Cloudflare Durable Objects ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Cloudflare Agents SDK a MCP</strong></td>
+<td>Širší ekosystém edge směřuje k autentizované konektivitě agentů</td>
+<td><a href="https://blog.cloudflare.com/building-ai-agents-with-mcp-authn-authz-and-durable-objects/" title="Cloudflare MCP, auth a Durable Objects">Cloudflare ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Podepsané URL a passkeys</strong></td>
+<td>Přístup a delegace jsou řešeny jako infrastrukturní otázky</td>
+<td><a href="https://github.com/sebastienrousseau/cloudcdn.pro" title="Repozitář CloudCDN">cloudcdn.pro ⧉</a></td>
+</tr>
+<tr>
+<td><strong>3 185 testů při 100% pokrytí</strong></td>
+<td>Projekt staví ověřování jako součást designu infrastruktury</td>
+<td><a href="https://github.com/sebastienrousseau/cloudcdn.pro" title="Repozitář CloudCDN">cloudcdn.pro ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="cdn-se-stava-ridici-rovinou">CDN se stává řídicí rovinou <a class="heading-anchor" href="#cdn-se-stava-ridici-rovinou" aria-label="Odkaz na CDN se stává řídicí rovinou">#</a></h2>
+<p>Tradiční CDN byly postaveny kolem akcelerace obsahu, mazání cache, směrování a ochrany podobné WAF. AI-nativní edge přidává nový požadavek: softwaroví agenti musí bezpečně inspekci provádět, spouštět a řídit infrastrukturu. To proměňuje CDN v řídicí rovinu. Řídicí rovina musí mít identitu, oprávnění, logy, limity rychlosti a vysvětlitelnost.</p>
+<h2 id="proc-open-source-meni-model-duvery">Proč open source mění model důvěry <a class="heading-anchor" href="#proc-open-source-meni-model-duvery" aria-label="Odkaz na Proč open source mění model důvěry">#</a></h2>
+<p>Pro regulované instituce není přitažlivost CloudCDN jen ve výkonu. Je ve zkontrolovatelnosti. Týmy si mohou přečíst, jak fungují limity rychlosti, jak jsou exponována rozhraní nástrojů, jak se generují podepsané URL, jak jsou strukturovány testy a jak je vynucována přístupnost. To vytváří jiný vztah mezi infrastrukturou a governance.</p>
+<h2 id="vzor-edge-v-bankovni-kvalite">Vzor edge v bankovní kvalitě <a class="heading-anchor" href="#vzor-edge-v-bankovni-kvalite" aria-label="Odkaz na Vzor edge v bankovní kvalitě">#</a></h2>
+<p>Bankovní vzor je jednoduchý, ale obtížně proveditelný: operace dostupné agentům, silně ohraničená oprávnění, atomické omezování rychlosti, neměnné auditní záznamy, kontroly přístupnosti, podepsaná distribuce a důkazy o nasazení. CloudCDN proměňuje tento vzor v kód, nikoli v prezentaci.</p>
+<h2 id="co-to-znamena-podle-publika">Co to znamená podle publika <a class="heading-anchor" href="#co-to-znamena-podle-publika" aria-label="Odkaz na Co to znamená podle publika">#</a></h2>
+<h3 id="pro-vedeni-technologii-v-bance">Pro vedení technologií v bance <a class="heading-anchor" href="#pro-vedeni-technologii-v-bance" aria-label="Odkaz na Pro vedení technologií v bance">#</a></h3>
+<p>Otázkou je, zda projekt může pomoci proměnit strategický tlak v proveditelnou architekturu. Hodnota je nejsilnější tehdy, kdy repozitář dává týmům něco konkrétního ke kontrole: rozhraní, konfiguraci, testy, bezpečnostní hranice, předpoklady nasazení a poruchové režimy.</p>
+<h3 id="pro-tymy-bezpecnosti-a-rizik">Pro týmy bezpečnosti a rizik <a class="heading-anchor" href="#pro-tymy-bezpecnosti-a-rizik" aria-label="Odkaz na Pro týmy bezpečnosti a rizik">#</a></h3>
+<p>Projekt je třeba hodnotit nejen podle funkcí, ale podle důkazů o kontrole. Užitečná open source finanční infrastruktura odhaluje, jak má fungovat identita, tajemství, validace, auditní logy, limity rychlosti, podpisy, provenience a obnova.</p>
+<h3 id="pro-vyvojare-a-platformni-inzenyry">Pro vývojáře a platformní inženýry <a class="heading-anchor" href="#pro-vyvojare-a-platformni-inzenyry" aria-label="Odkaz na Pro vývojáře a platformní inženýry">#</a></h3>
+<p>Nejdůležitějším testem je, zda projekt snižuje kognitivní zátěž bez skrývání důležité mechaniky. Dobrý open source by měl udělat z bezpečné cesty cestu nejsnazší a zároveň zkušeným inženýrům umožnit pochopit a upravit implementaci.</p>
+<h3 id="pro-prispevatele">Pro přispěvatele <a class="heading-anchor" href="#pro-prispevatele" aria-label="Odkaz na Pro přispěvatele">#</a></h3>
+<p>Příležitostí je posílit projekt tam, kde reálné instituce potřebují ujištění: dokumentace, příklady, testy shody, otužení CI, modely hrozeb, výkonnostní profily, kontroly přístupnosti a integrační průvodci.</p>
+<h2 id="zaver">Závěr <a class="heading-anchor" href="#zaver" aria-label="Odkaz na Závěr">#</a></h2>
+<p>Důvodem, proč psát o cloudcdn.pro, je to, že proměňuje širší problém odvětví v něco konkrétního. V roce 2026 banky nepotřebují další abstraktní jazyk transformace. Potřebují zkontrolovatelné systémy, které ukazují, jak lze moderní infrastrukturu postavit, zabezpečit, otestovat a řídit. Open source je nejdůvěryhodnější způsob, jak tento argument zviditelnit.</p>
+<h2 id="casto-kladene-otazky">Často kladené otázky <a class="heading-anchor" href="#casto-kladene-otazky" aria-label="Odkaz na Často kladené otázky">#</a></h2>
+<p><strong>Proč psát o CloudCDN jako o prvním?</strong></p>
+<p>Protože je to nejširší open source story: AI agenti, edge, MCP, bezpečnost, přístupnost, výkon a auditovatelnost v bankovní kvalitě v jednom projektu.</p>
+<p><strong>Je CloudCDN jen pro banky?</strong></p>
+<p>Ne. Architektura je obecně užitečná, ale banky představují náročnou optiku, protože vynucují silnější kontroly, auditovatelnost a požadavky na odolnost.</p>
+<p><strong>Co dělá CloudCDN AI-nativním?</strong></p>
+<p>Operace řízené přes MCP a model kontroly uvědomující si agenty ho činí vhodným pro autonomní infrastrukturní workflow, nikoli jen pro lidské použití konzole.</p>
+<p><strong>Co je nejsilnější technickou myšlenkou?</strong></p>
+<p>Atomické omezování rychlosti na edge s Durable Objects, protože dokáže bránit jak vnějšímu zneužití, tak vnitřnímu agentnímu uvolněnému chování.</p>
+<h2 id="reference">Reference <a class="heading-anchor" href="#reference" aria-label="Odkaz na Reference">#</a></h2>
+<ul>
+<li>GitHub, (2026). <a href="https://github.com/sebastienrousseau/cloudcdn.pro" title="Repozitář cloudcdn.pro">Repozitář cloudcdn.pro ⧉</a>.</li>
+<li>Cloudflare, (2026). <a href="https://blog.cloudflare.com/building-ai-agents-with-mcp-authn-authz-and-durable-objects/" title="Stavba AI agentů s MCP, autentizací a Durable Objects">Stavba AI agentů s MCP, autentizací a Durable Objects ⧉</a>.</li>
+<li>Cloudflare, (2026). <a href="https://developers.cloudflare.com/durable-objects/" title="Dokumentace Durable Objects">Dokumentace Durable Objects ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Naposledy zkontrolováno <time datetime="2026-06-11">2026-06-11</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="O autorovi"><img alt="Portrét Sebastiena Rousseaua" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/cs/o-mne/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior bankovní technolog, píši o aplikované AI, migraci na ISO 20022, postkvantové kryptografii pro finanční služby a strukturální transformaci velkoobchodních plateb.</span><span class="author-credentials">Více než 20 let zkušeností v HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/cs/o-mne/index.html">Celý profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Naposledy revidováno <time datetime="2026-05-29">2026-05-29</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Související četba</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/cs/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026" class="related-media" aria-label="Agentní platby v bankovnictví: souhlas, odpovědnost a nové UX 2026" tabindex="-1"><img alt="Agentic payments architecture diagram showing AI agents, consent mandates, tokenised credentials, card networks, banks, merchants, and audit trails" src="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="agentni-platby-v-bankovnictvi-souhlas-odpovednost-a-nove-ux-2026"><a href="https://sebastienrousseau.com/cs/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026">Agentní platby v bankovnictví: souhlas, odpovědnost a nové UX 2026</a> <a class="heading-anchor" href="#agentni-platby-v-bankovnictvi-souhlas-odpovednost-a-nove-ux-2026" aria-label="Odkaz na Agentní platby v bankovnictví: souhlas, odpovědnost a nové UX 2026">#</a></h3><p><time datetime="2026-05-23">2026-05-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/cs/2026-05-16-nejlepsi-cloudova-architektura-pro-banky-2026" class="related-media" aria-label="Nejlepší cloudová infrastrukturní architektura v roce 2026: AI-nativní, multi-cloudový a kvantově odolný plán pro finanční služby" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="nejlepsi-cloudova-infrastrukturni-architektura-v-roce-2026-ai-nativni-multi-clou"><a href="https://sebastienrousseau.com/cs/2026-05-16-nejlepsi-cloudova-architektura-pro-banky-2026">Nejlepší cloudová infrastrukturní architektura v roce 2026: AI-nativní, multi-cloudový a kvantově odolný plán pro finanční služby</a> <a class="heading-anchor" href="#nejlepsi-cloudova-infrastrukturni-architektura-v-roce-2026-ai-nativni-multi-clou" aria-label="Odkaz na Nejlepší cloudová infrastrukturní architektura v roce 2026: AI-nativní, multi-cloudový a kvantově odolný plán pro finanční služby">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Zdroje a odkazy</h2><ol class="article-sources-list"><li><a href="https://github.com/sebastienrousseau/cloudcdn.pro" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/sebastienrousseau/cloudcdn.pro</span></a></li></ol></aside><nav class="post-pagination" aria-label="Stránkování článků"><a class="post-pagination-prev" href="/cs/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">Předchozí</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/cs/o-mne/index.html">O mně</a></li>
+              <li><a href="/cs/kontakt/index.html">Kontakt</a></li>
+              <li><a href="/cs/vytvoreno-statickym-generatorem/index.html">Vytvořeno se Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Publikace</h2>
+            <ul>
+              <li><a href="/cs/clanky/index.html">Články</a></li>
+              <li><a href="/cs/publikace/index.html">Publikace</a></li>
+              <li><a href="/cs/stitky/index.html">Štítky</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Práce</h2>
+            <ul>
+              <li><a href="/cs/projekty/index.html">Projekty</a></li>
+              <li><a href="/cs/playlisty/index.html">Playlists</a></li>
+              <li><a href="/cs/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Kontakt</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Přihlášení k odběru newsletteru">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — výzkumné poznámky o platbách, AI a postkvantové kryptografii. Žádný spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="vy@banka.cz" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Přihlásit se k odběru</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Sociální odkazy">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau na Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau na LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau na Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau na YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/cs/pristupnost/index.html">Přístupnost</a> ·
+            <a href="/cs/soukromi/index.html">Soukromí</a> ·
+            <a href="/cs/podminky/index.html">Podmínky</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"cs"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"cs"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1056,"headline":"CloudCDN: Open source plán pro AI-nativní edge v roce 2026","description":"CloudCDN je open source AI-nativní plán edge CDN: infrastruktura řízená přes MCP, omezování rychlosti Durable Objects, signed URLs, přístupnost a auditovatelnost.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp","width":"100vw","height":"100vh","caption":"Svítící stojan datového centra v noci — symbol zkontrolovatelného, agentně řiditelného open source edge, na kterém CloudCDN staví"},"url":"https://sebastienrousseau.com/cs/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/","datePublished":"2026-06-11T06:06:06+00:00","dateModified":"2026-06-11","inLanguage":"cs","keywords":"CloudCDN, AI-nativní edge, open source CDN, MCP server, Cloudflare Workers, Durable Objects, signed URLs, passkeys, SLSA, infrastruktura edge","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/cs/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"cs"},"citation":[{"@type":"CreativeWork","url":"https://github.com/sebastienrousseau/cloudcdn.pro"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/cs/"},{"@type":"ListItem","position":3,"name":"CloudCDN: Open source plán pro AI-nativní edge v roce 2026","item":"https://sebastienrousseau.com/cs/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Hledat">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Hledat</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Hledat">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Hledat v dokumentaci..." autocomplete="off" aria-label="Hledat"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> zavřít</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigovat</span><span><kbd>Enter</kbd> otevřít</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

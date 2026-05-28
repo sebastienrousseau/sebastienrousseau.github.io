@@ -6,8 +6,27 @@
     <description>日本語の記事:応用AI、ISO 20022 決済、ポスト量子暗号、ホールセール決済の構造変革。</description>
     <atom:link href="https://sebastienrousseau.com/ja/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ja-JP</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 23:46:22 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>CloudCDN:2026 年 AIネイティブ・エッジのオープンソース・ブループリント</title>
+      <link>https://sebastienrousseau.com/ja/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</link>
+      <description>CloudCDN は、MCP 制御インフラ、Durable Objects によるレート制限、署名付きURL、アクセシビリティ、監査可能性のための、オープンソースかつ AIネイティブなエッジ CDN ブループリントです。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>CloudCDN</category>
+      <category>AIネイティブ・エッジ</category>
+      <category>オープンソース CDN</category>
+      <category>MCP サーバー</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>署名付きURL</category>
+      <category>passkeys</category>
+      <category>SLSA</category>
+      <category>エッジインフラ</category>
+    </item>
     <item>
       <title>DORA、EU AI Act、データ主権:2026 年銀行向けコンプライアンス・スタック</title>
       <link>https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

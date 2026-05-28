@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/bn/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>bn-BD</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T23:46:21+00:00</news:publication_date>
+    <news:title>CloudCDN: ২০২৬-এ AI-নেটিভ এজের জন্য একটি ওপেন সোর্স নকশা</news:title>
+    <news:keywords>CloudCDN, AI-নেটিভ এজ, ওপেন সোর্স CDN, MCP সার্ভার, Cloudflare Workers, Durable Objects, স্বাক্ষরিত URL, passkeys, SLSA, এজ পরিকাঠামো</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

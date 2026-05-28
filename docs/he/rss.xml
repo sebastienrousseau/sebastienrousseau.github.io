@@ -6,8 +6,27 @@
     <description>מאמרים בעברית: AI יישומי, תשלומי ISO 20022, קריפטוגרפיה פוסט-קוונטית, וטרנספורמציה של תשלומי סיטונאות.</description>
     <atom:link href="https://sebastienrousseau.com/he/rss.xml" rel="self" type="application/rss+xml"/>
     <language>he-IL</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 23:46:22 +0000</lastBuildDate>
     <copyright>© זכויות יוצרים 2007 - 2026 - Sebastien Rousseau. כל הזכויות שמורות.</copyright>
+    <item>
+      <title>CloudCDN: תכנית אב של קוד פתוח לקצה ילידי-AI ב-2026</title>
+      <link>https://sebastienrousseau.com/he/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</link>
+      <description>CloudCDN היא תכנית אב של קוד פתוח, ילידת-AI, לרשת CDN בקצה — תשתית בבקרת MCP, הגבלת קצב ב-Durable Objects, כתובות URL חתומות, נגישות ויכולת ביקורת.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</guid>
+      <pubDate>Thu, 28 May 2026 23:46:22 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>CloudCDN</category>
+      <category>קצה ילידי-AI</category>
+      <category>CDN בקוד פתוח</category>
+      <category>שרת MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>כתובות URL חתומות</category>
+      <category>passkeys</category>
+      <category>SLSA</category>
+      <category>תשתית קצה</category>
+    </item>
     <item>
       <title>DORA, חוק הבינה המלאכותית וריבונות נתונים: ערימת הציות של 2026 לבנקים</title>
       <link>https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

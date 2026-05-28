@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Abstrakte Visualisierung von KI-Netzwerken — als Sinnbild der Fähigkeiten von Gemini 1.5",
-  "title": "Gemini 1.5 entschlüsselt: die KI-Revolution von Google erklärt",
-  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
   "description": "Googles Gemini 1.5 skaliert das Kontextfenster über die 1-Million-Token-Marke hinaus. Was das für retrieval-augmentierte Finanzanwendungen freischaltet — und welche Kompromisse zu kennen sind.",
-  "subtitle": "Eingehender Blick auf den jüngsten KI-Durchbruch von Google",
   "keywords": "Gemini 1.5, Google AI, Mixture-of-Experts-Architektur, Recheneffizienz, Erweiterung des Kontextfensters, KI-Innovation, Transformation der Datenanalyse, In-Context-Learning, KI-Anwendungsfälle, Technologierevolution",
+  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
+  "locale": "de_DE",
   "language": "de",
+  "subtitle": "Eingehender Blick auf den jüngsten KI-Durchbruch von Google",
   "date": "February 19, 2024",
-  "locale": "de_DE"
+  "banner_alt": "Abstrakte Visualisierung von KI-Netzwerken — als Sinnbild der Fähigkeiten von Gemini 1.5",
+  "title": "Gemini 1.5 entschlüsselt: die KI-Revolution von Google erklärt"
 }

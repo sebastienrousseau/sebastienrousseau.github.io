@@ -1,12 +1,12 @@
 {
-  "locale": "ko_KR",
-  "title": "Rust 보안을 위한 수학적·암호적 상수",
-  "last_reviewed": "2026-05-16",
-  "language": "ko-KR",
-  "date": "November 5, 2023",
   "keywords": "암호 상수, 수학, Rust, ECC, RSA, NIST 곡선, PQC, 보안, mathconst",
-  "banner_alt": "책상에서 작업 중인 수학 방정식",
-  "subtitle": "Rust 암호 응용을 위한 신중히 검증된 상수",
+  "title": "Rust 보안을 위한 수학적·암호적 상수",
+  "date": "November 5, 2023",
+  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-_zsL306fDck-unsplash.webp",
   "description": "Rust의 수학적·암호적 상수 라이브러리. ECC, PQC, 암호 스위트를 위한 검증된 상수를 포함합니다.",
-  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-_zsL306fDck-unsplash.webp"
+  "language": "ko-KR",
+  "locale": "ko_KR",
+  "banner_alt": "책상에서 작업 중인 수학 방정식",
+  "last_reviewed": "2026-05-16",
+  "subtitle": "Rust 암호 응용을 위한 신중히 검증된 상수"
 }

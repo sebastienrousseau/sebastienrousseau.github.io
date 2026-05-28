@@ -6,8 +6,27 @@
     <description>Mga artikulo sa Filipino: applied AI, ISO 20022 payments, post-quantum cryptography at wholesale-payments transformation.</description>
     <atom:link href="https://sebastienrousseau.com/fil/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fil-PH</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 23:46:21 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Lahat ng karapatan ay nakalaan.</copyright>
+    <item>
+      <title>CloudCDN: Open-Source na Blueprint para sa AI-Native Edge sa 2026</title>
+      <link>https://sebastienrousseau.com/fil/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</link>
+      <description>Ang CloudCDN ay open-source, AI-native edge CDN blueprint para sa imprastraktura na MCP-controlled, rate limiting ng Durable Objects, signed URLs, accessibility, at kakayahang i-audit.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</guid>
+      <pubDate>Thu, 28 May 2026 23:46:21 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>CloudCDN</category>
+      <category>AI-native edge</category>
+      <category>open-source CDN</category>
+      <category>MCP server</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>signed URLs</category>
+      <category>passkeys</category>
+      <category>SLSA</category>
+      <category>imprastraktura ng edge</category>
+    </item>
     <item>
       <title>DORA, EU AI Act, at Soberanya ng Data: Compliance Stack ng Bangko 2026</title>
       <link>https://sebastienrousseau.com/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

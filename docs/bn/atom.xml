@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/bn/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/bn/"/>
   <id>https://sebastienrousseau.com/bn/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-28T23:46:21+00:00</updated>
+  <entry>
+    <title>CloudCDN: ২০২৬-এ AI-নেটিভ এজের জন্য একটি ওপেন সোর্স নকশা</title>
+    <link href="https://sebastienrousseau.com/bn/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/"/>
+    <id>https://sebastienrousseau.com/bn/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</id>
+    <updated>2026-05-28T23:46:21+00:00</updated>
+    <published>2026-05-28T23:46:21+00:00</published>
+    <summary>CloudCDN হল MCP-নিয়ন্ত্রিত পরিকাঠামো, Durable Objects রেট লিমিটিং, স্বাক্ষরিত URL, অভিগম্যতা ও নিরীক্ষণযোগ্যতার জন্য একটি ওপেন সোর্স, AI-নেটিভ এজ CDN নকশা।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI আইন ও ডেটা সার্বভৌমত্ব: ব্যাংকের জন্য ২০২৬-এর কমপ্লায়েন্স স্ট্যাক</title>
     <link href="https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

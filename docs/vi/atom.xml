@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/vi/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/vi/"/>
   <id>https://sebastienrousseau.com/vi/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-28T23:46:22+00:00</updated>
+  <entry>
+    <title>CloudCDN: bản thiết kế mã nguồn mở cho biên AI-bản địa 2026</title>
+    <link href="https://sebastienrousseau.com/vi/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/"/>
+    <id>https://sebastienrousseau.com/vi/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</id>
+    <updated>2026-05-28T23:46:22+00:00</updated>
+    <published>2026-05-28T23:46:22+00:00</published>
+    <summary>CloudCDN là bản thiết kế CDN biên AI-bản địa mã nguồn mở cho hạ tầng do MCP điều khiển, giới hạn tốc độ Durable Objects, signed URLs và khả năng kiểm toán.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, Đạo luật AI EU và chủ quyền dữ liệu: ngăn xếp tuân thủ 2026 cho ngân hàng</title>
     <link href="https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

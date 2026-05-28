@@ -1,11 +1,11 @@
 {
-  "date": "Jan 01, 2018",
-  "description": "Bitcoin: Eto Owo Itanna Peer-to-Peer (P2P ECS) ti o ni agbara lati yi ọna ti awọn eniyan ṣe iṣowo lori ayelujara pada patapata.",
-  "title": "Bitcoin: A Year In Review of the First Cryptocurrency",
-  "locale": "yo_NG",
-  "banner_alt": "Opo owó wura àti fadaka tí wọ́n fi sí orí tábìlì",
   "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
-  "subtitle": "Bitcoin, cryptocurrency, ati imọ-ẹrọ ti n tun ṣe eto awọn ọjà inawo.",
+  "banner_alt": "Opo owó wura àti fadaka tí wọ́n fi sí orí tábìlì",
+  "date": "Jan 01, 2018",
+  "locale": "yo_NG",
   "language": "yo-NG",
-  "keywords": "bitcoin, cryptocurrency, blockchain, inawo alailakoso, owo oni-nọmba, isanwo peer-to-peer, wura oni-nọmba, owo ti a le ṣeto, ojo iwaju owo, iyipada inawo"
+  "title": "Bitcoin: A Year In Review of the First Cryptocurrency",
+  "subtitle": "Bitcoin, cryptocurrency, ati imọ-ẹrọ ti n tun ṣe eto awọn ọjà inawo.",
+  "keywords": "bitcoin, cryptocurrency, blockchain, inawo alailakoso, owo oni-nọmba, isanwo peer-to-peer, wura oni-nọmba, owo ti a le ṣeto, ojo iwaju owo, iyipada inawo",
+  "description": "Bitcoin: Eto Owo Itanna Peer-to-Peer (P2P ECS) ti o ni agbara lati yi ọna ti awọn eniyan ṣe iṣowo lori ayelujara pada patapata."
 }

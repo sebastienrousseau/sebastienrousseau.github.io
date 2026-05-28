@@ -1,11 +1,11 @@
 {
-  "description": "আর্থিক খাতে ক্রেডিট রেশিও বিশ্লেষণে IBM Qiskit এবং Quantum Fourier Transform কীভাবে বিপ্লব আনছে তা অন্বেষণ করুন, যা অভূতপূর্ব নির্ভুলতা ও গতি প্রদান করে।",
   "subtitle": "IBM Qiskit এবং Quantum Fourier Transform দিয়ে ক্রেডিট রেশিও বিশ্লেষণের অপ্টিমাইজেশন",
-  "date": "Jan 08, 2024",
-  "banner_alt": "কোয়ান্টাম কম্পিউটার রুম",
+  "description": "আর্থিক খাতে ক্রেডিট রেশিও বিশ্লেষণে IBM Qiskit এবং Quantum Fourier Transform কীভাবে বিপ্লব আনছে তা অন্বেষণ করুন, যা অভূতপূর্ব নির্ভুলতা ও গতি প্রদান করে।",
   "language": "bn-BD",
+  "title": "Qiskit & Quantum Fourier Transform for Credit Ratio Analysis",
   "locale": "bn_BD",
   "keywords": "কোয়ান্টাম কম্পিউটিং, অর্থায়ন, ক্রেডিট রেশিও বিশ্লেষণ, Qiskit, Quantum Fourier Transform, IBM, মেশিন লার্নিং, কৃত্রিম বুদ্ধিমত্তা, আর্থিক ঝুঁকি মূল্যায়ন, ঋণযোগ্যতা",
+  "date": "Jan 08, 2024",
   "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
-  "title": "Qiskit & Quantum Fourier Transform for Credit Ratio Analysis"
+  "banner_alt": "কোয়ান্টাম কম্পিউটার রুম"
 }

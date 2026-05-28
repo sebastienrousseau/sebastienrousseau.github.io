@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/es/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/es/"/>
   <id>https://sebastienrousseau.com/es/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-28T23:46:21+00:00</updated>
+  <entry>
+    <title>CloudCDN: modelo de código abierto para el edge nativo de IA en 2026</title>
+    <link href="https://sebastienrousseau.com/es/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/"/>
+    <id>https://sebastienrousseau.com/es/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</id>
+    <updated>2026-05-28T23:46:21+00:00</updated>
+    <published>2026-05-28T23:46:21+00:00</published>
+    <summary>CloudCDN es un modelo de CDN edge nativo de IA y de código abierto: infraestructura controlada por MCP, limitación de tasa con Durable Objects, URLs firmadas y auditabilidad.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI Act y soberanía de datos: el stack de cumplimiento bancario 2026</title>
     <link href="https://sebastienrousseau.com/es/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

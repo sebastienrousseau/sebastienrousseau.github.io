@@ -6,8 +6,27 @@
     <description>हिन्दी लेख: व्यावहारिक AI, ISO 20022 भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतान का रूपांतरण।</description>
     <atom:link href="https://sebastienrousseau.com/hi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>hi-IN</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 23:46:22 +0000</lastBuildDate>
     <copyright>© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।</copyright>
+    <item>
+      <title>CloudCDN: 2026 में AI-नेटिव एज का ओपन सोर्स ब्लूप्रिंट</title>
+      <link>https://sebastienrousseau.com/hi/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</link>
+      <description>CloudCDN एक ओपन सोर्स, AI-नेटिव एज CDN ब्लूप्रिंट है — MCP-नियंत्रित अवसंरचना, Durable Objects रेट लिमिटिंग, हस्ताक्षरित URL, सुगम्यता और ऑडिट योग्यता।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</guid>
+      <pubDate>Thu, 28 May 2026 23:46:22 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>CloudCDN</category>
+      <category>AI-नेटिव एज</category>
+      <category>ओपन सोर्स CDN</category>
+      <category>MCP सर्वर</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>हस्ताक्षरित URL</category>
+      <category>passkeys</category>
+      <category>SLSA</category>
+      <category>एज अवसंरचना</category>
+    </item>
     <item>
       <title>DORA, EU AI अधिनियम और डेटा संप्रभुता: बैंकों का 2026 अनुपालन स्टैक</title>
       <link>https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

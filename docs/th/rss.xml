@@ -6,8 +6,27 @@
     <description>บทความภาษาไทย: AI ประยุกต์, การชำระเงิน ISO 20022, การเข้ารหัสหลังควอนตัม และการปฏิรูปการชำระเงินขายส่ง</description>
     <atom:link href="https://sebastienrousseau.com/th/rss.xml" rel="self" type="application/rss+xml"/>
     <language>th-TH</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 23:46:22 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์</copyright>
+    <item>
+      <title>CloudCDN: พิมพ์เขียวโอเพนซอร์สสำหรับเอดจ์ AI-เนทีฟในปี 2569</title>
+      <link>https://sebastienrousseau.com/th/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</link>
+      <description>CloudCDN คือพิมพ์เขียวเอดจ์ CDN แบบโอเพนซอร์ส AI-เนทีฟ สำหรับโครงสร้างพื้นฐานที่ควบคุมด้วย MCP การจำกัดอัตราด้วย Durable Objects signed URLs การเข้าถึงได้ และความสามารถในการตรวจสอบ</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</guid>
+      <pubDate>Thu, 28 May 2026 23:46:22 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>CloudCDN</category>
+      <category>เอดจ์ AI-เนทีฟ</category>
+      <category>CDN โอเพนซอร์ส</category>
+      <category>MCP server</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>signed URLs</category>
+      <category>passkeys</category>
+      <category>SLSA</category>
+      <category>โครงสร้างพื้นฐานเอดจ์</category>
+    </item>
     <item>
       <title>DORA กฎหมาย AI ของ EU และอธิปไตยข้อมูล: สแต็คการปฏิบัติตามกฎปี 2026 ของธนาคาร</title>
       <link>https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

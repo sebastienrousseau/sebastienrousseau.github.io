@@ -6,8 +6,27 @@
     <description>한국어 기사: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 그리고 도매 결제 인프라의 구조적 변혁.</description>
     <atom:link href="https://sebastienrousseau.com/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 23:46:22 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>CloudCDN: 2026년 AI 네이티브 엣지의 오픈 소스 블루프린트</title>
+      <link>https://sebastienrousseau.com/ko/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</link>
+      <description>CloudCDN은 MCP 제어 인프라, Durable Objects 속도 제한, 서명된 URL, 접근성, 감사 가능성을 갖춘 오픈 소스 AI 네이티브 엣지 CDN 블루프린트입니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</guid>
+      <pubDate>Thu, 28 May 2026 23:46:22 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>CloudCDN</category>
+      <category>AI 네이티브 엣지</category>
+      <category>오픈 소스 CDN</category>
+      <category>MCP 서버</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>서명된 URL</category>
+      <category>passkeys</category>
+      <category>SLSA</category>
+      <category>엣지 인프라</category>
+    </item>
     <item>
       <title>DORA, EU AI 법, 데이터 주권: 2026년 은행을 위한 컴플라이언스 스택</title>
       <link>https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

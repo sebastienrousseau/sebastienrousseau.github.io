@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/th/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/th/"/>
   <id>https://sebastienrousseau.com/th/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-28T23:46:22+00:00</updated>
+  <entry>
+    <title>CloudCDN: พิมพ์เขียวโอเพนซอร์สสำหรับเอดจ์ AI-เนทีฟในปี 2569</title>
+    <link href="https://sebastienrousseau.com/th/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/"/>
+    <id>https://sebastienrousseau.com/th/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</id>
+    <updated>2026-05-28T23:46:22+00:00</updated>
+    <published>2026-05-28T23:46:22+00:00</published>
+    <summary>CloudCDN คือพิมพ์เขียวเอดจ์ CDN แบบโอเพนซอร์ส AI-เนทีฟ สำหรับโครงสร้างพื้นฐานที่ควบคุมด้วย MCP การจำกัดอัตราด้วย Durable Objects signed URLs การเข้าถึงได้ และความสามารถในการตรวจสอบ</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA กฎหมาย AI ของ EU และอธิปไตยข้อมูล: สแต็คการปฏิบัติตามกฎปี 2026 ของธนาคาร</title>
     <link href="https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

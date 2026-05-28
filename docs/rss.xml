@@ -6,8 +6,540 @@
     <description>AI, banking and payments expert. Senior payments leader. Applied AI, ISO 20022 migration, wholesale payments and post-quantum cryptography.</description>
     <atom:link href="https://sebastienrousseau.com/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Thu, 28 May 2026 06:06:06 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 06:06:06 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026</title>
+      <link>https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026</link>
+      <description>CloudCDN is an open-source, AI-native edge CDN blueprint for MCP-controlled infrastructure, Durable Objects rate limiting, signed URLs, accessibility, and auditability.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>open source</category>
+      <category>CDN</category>
+      <category>edge</category>
+      <category>AI agents</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>rate limiting</category>
+    </item>
+    <item>
+      <title>CloudCDN: 2026'da AI-Yerel Edge için Açık Kaynak Şablon</title>
+      <link>https://sebastienrousseau.com/tr/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN, MCP-kontrollü altyapı, Durable Objects hız sınırlama, imzalı URL&apos;ler, erişilebilirlik ve denetlenebilirlik için açık kaynak, AI-yerel bir edge CDN şablonudur.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>açık kaynak</category>
+      <category>CDN</category>
+      <category>edge</category>
+      <category>AI ajanları</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>hız sınırlama</category>
+    </item>
+    <item>
+      <title>CloudCDN: พิมพ์เขียวโอเพนซอร์สสำหรับเอดจ์ AI-เนทีฟในปี 2569</title>
+      <link>https://sebastienrousseau.com/th/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN คือพิมพ์เขียวเอดจ์ CDN แบบโอเพนซอร์ส AI-เนทีฟ สำหรับโครงสร้างพื้นฐานที่ควบคุมด้วย MCP การจำกัดอัตราด้วย Durable Objects signed URLs การเข้าถึงได้ และความสามารถในการตรวจสอบ</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>โอเพนซอร์ส</category>
+      <category>CDN</category>
+      <category>เอดจ์</category>
+      <category>เอเจนต์ AI</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>การจำกัดอัตรา</category>
+    </item>
+    <item>
+      <title>CloudCDN: modelo de código abierto para el edge nativo de IA en 2026</title>
+      <link>https://sebastienrousseau.com/es/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN es un modelo de CDN edge nativo de IA y de código abierto: infraestructura controlada por MCP, limitación de tasa con Durable Objects, URLs firmadas y auditabilidad.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>código abierto</category>
+      <category>CDN</category>
+      <category>edge</category>
+      <category>agentes de IA</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>limitación de tasa</category>
+    </item>
+    <item>
+      <title>CloudCDN : un plan open source pour l'edge nativement IA en 2026</title>
+      <link>https://sebastienrousseau.com/fr/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN est un plan open source d&apos;edge CDN nativement IA pour une infrastructure pilotée par MCP, limitation de débit via Durable Objects, URLs signées, accessibilité et auditabilité.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>open source</category>
+      <category>CDN</category>
+      <category>edge</category>
+      <category>agents IA</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>limitation de débit</category>
+    </item>
+    <item>
+      <title>CloudCDN: Blueprint Open Source untuk Edge AI-Native di 2026</title>
+      <link>https://sebastienrousseau.com/id/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN adalah blueprint CDN edge open source dan AI-native untuk infrastruktur terkendali MCP, pembatasan laju Durable Objects, signed URLs, aksesibilitas, dan kemampuan audit.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Teknologi</category>
+      <category>CloudCDN</category>
+      <category>open source</category>
+      <category>CDN</category>
+      <category>edge</category>
+      <category>agen AI</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>pembatasan laju</category>
+    </item>
+    <item>
+      <title>CloudCDN: 2026년 AI 네이티브 엣지의 오픈 소스 블루프린트</title>
+      <link>https://sebastienrousseau.com/ko/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN은 MCP 제어 인프라, Durable Objects 속도 제한, 서명된 URL, 접근성, 감사 가능성을 갖춘 오픈 소스 AI 네이티브 엣지 CDN 블루프린트입니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>오픈 소스</category>
+      <category>CDN</category>
+      <category>엣지</category>
+      <category>AI 에이전트</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>속도 제한</category>
+    </item>
+    <item>
+      <title>CloudCDN: Eine quelloffene Blaupause für die KI-native Edge 2026</title>
+      <link>https://sebastienrousseau.com/de/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN ist eine quelloffene, KI-native Edge-CDN-Blaupause für MCP-gesteuerte Infrastruktur, Durable-Objects-Rate-Limiting, signierte URLs, Barrierefreiheit und Prüfbarkeit.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>Open Source</category>
+      <category>CDN</category>
+      <category>Edge</category>
+      <category>KI-Agenten</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>Rate-Limiting</category>
+    </item>
+    <item>
+      <title>CloudCDN: 2026 में AI-नेटिव एज का ओपन सोर्स ब्लूप्रिंट</title>
+      <link>https://sebastienrousseau.com/hi/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN एक ओपन सोर्स, AI-नेटिव एज CDN ब्लूप्रिंट है — MCP-नियंत्रित अवसंरचना, Durable Objects रेट लिमिटिंग, हस्ताक्षरित URL, सुगम्यता और ऑडिट योग्यता।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>ओपन सोर्स</category>
+      <category>CDN</category>
+      <category>एज</category>
+      <category>AI एजेंट</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>रेट लिमिटिंग</category>
+    </item>
+    <item>
+      <title>CloudCDN: Open-Source na Blueprint para sa AI-Native Edge sa 2026</title>
+      <link>https://sebastienrousseau.com/fil/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>Ang CloudCDN ay open-source, AI-native edge CDN blueprint para sa imprastraktura na MCP-controlled, rate limiting ng Durable Objects, signed URLs, accessibility, at kakayahang i-audit.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>open source</category>
+      <category>CDN</category>
+      <category>edge</category>
+      <category>AI agents</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>rate limiting</category>
+    </item>
+    <item>
+      <title>CloudCDN: ২০২৬-এ AI-নেটিভ এজের জন্য একটি ওপেন সোর্স নকশা</title>
+      <link>https://sebastienrousseau.com/bn/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN হল MCP-নিয়ন্ত্রিত পরিকাঠামো, Durable Objects রেট লিমিটিং, স্বাক্ষরিত URL, অভিগম্যতা ও নিরীক্ষণযোগ্যতার জন্য একটি ওপেন সোর্স, AI-নেটিভ এজ CDN নকশা।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>ওপেন সোর্স</category>
+      <category>CDN</category>
+      <category>এজ</category>
+      <category>AI এজেন্ট</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>রেট লিমিটিং</category>
+    </item>
+    <item>
+      <title>CloudCDN: een open source blauwdruk voor de AI-native edge in 2026</title>
+      <link>https://sebastienrousseau.com/nl/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN is een open source, AI-native edge CDN-blauwdruk voor MCP-bestuurde infrastructuur, Durable Objects rate limiting, ondertekende URLs, toegankelijkheid en auditeerbaarheid.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>open source</category>
+      <category>CDN</category>
+      <category>edge</category>
+      <category>AI-agents</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>rate limiting</category>
+    </item>
+    <item>
+      <title>CloudCDN: um blueprint de código aberto para a edge AI-nativa em 2026</title>
+      <link>https://sebastienrousseau.com/pt-br/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN é um blueprint de CDN de edge AI-nativo e de código aberto, com infraestrutura controlada por MCP, limitação de taxa via Durable Objects, signed URLs e auditabilidade.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>código aberto</category>
+      <category>CDN</category>
+      <category>edge</category>
+      <category>agentes de IA</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>limitação de taxa</category>
+    </item>
+    <item>
+      <title>CloudCDN: مخطط مفتوح المصدر للحافة الأصلية للذكاء الاصطناعي في 2026</title>
+      <link>https://sebastienrousseau.com/ar/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN مخطط مفتوح المصدر لشبكة CDN حافة أصلية للذكاء الاصطناعي: بنية تحتية تحت تحكم MCP، وتحديد المعدل عبر Durable Objects، وعناوين URL موقّعة، ووصول وقابلية تدقيق.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>المصدر المفتوح</category>
+      <category>CDN</category>
+      <category>الحافة</category>
+      <category>وكلاء الذكاء الاصطناعي</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>تحديد المعدل</category>
+    </item>
+    <item>
+      <title>CloudCDN: Tsari na Buɗaɗɗen Tushe ga Gefe na AI-na Asali a 2026</title>
+      <link>https://sebastienrousseau.com/ha/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN tsari ne na buɗaɗɗen tushe, na CDN na gefe na AI-na asali don ababen more rayuwa da MCP ke sarrafa, iyakancewar adadi ta Durable Objects, signed URLs, da ikon bincike.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>buɗaɗɗen tushe</category>
+      <category>CDN</category>
+      <category>gefe</category>
+      <category>wakilan AI</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>iyakancewar adadi</category>
+    </item>
+    <item>
+      <title>CloudCDN: відкрита схема AI-нативної периферії у 2026</title>
+      <link>https://sebastienrousseau.com/uk/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN — це AI-нативна схема периферійного CDN з відкритим вихідним кодом: MCP-керування інфраструктурою, обмеження частоти запитів на Durable Objects, підписані URL і перевіреність.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>відкритий вихідний код</category>
+      <category>CDN</category>
+      <category>периферія</category>
+      <category>AI-агенти</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>обмеження частоти запитів</category>
+    </item>
+    <item>
+      <title>CloudCDN: Ètò Ìpinnu Orisun Ṣiṣi fún Eti AI-Ìbílẹ̀ ní 2026</title>
+      <link>https://sebastienrousseau.com/yo/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN jẹ́ ètò ìpinnu CDN eti AI-ìbílẹ̀, orisun ṣiṣi fún ìgbékalẹ̀ tí MCP ń ṣàkóso, ìdìnà ìwọ̀n Durable Objects, signed URLs, ìráyé, àti ìbéère.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>orisun ṣiṣi</category>
+      <category>CDN</category>
+      <category>eti</category>
+      <category>aṣojú AI</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>ìdìnà ìwọ̀n</category>
+    </item>
+    <item>
+      <title>CloudCDN: o schemă open source pentru edge-ul AI-nativ în 2026</title>
+      <link>https://sebastienrousseau.com/ro/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN este o schemă open source de CDN edge AI-nativ pentru infrastructură controlată prin MCP, limitare a ratei cu Durable Objects, signed URLs, accesibilitate și auditabilitate.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>open source</category>
+      <category>CDN</category>
+      <category>edge</category>
+      <category>agenți AI</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>limitare a ratei</category>
+    </item>
+    <item>
+      <title>CloudCDN: открытая схема AI-нативной периферии в 2026 году</title>
+      <link>https://sebastienrousseau.com/ru/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN — открытая AI-нативная схема периферийного CDN: управление через MCP, лимиты на Durable Objects, подписанные URL, доступность, аудируемость.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>открытый исходный код</category>
+      <category>CDN</category>
+      <category>периферия</category>
+      <category>AI-агенты</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>ограничение частоты запросов</category>
+    </item>
+    <item>
+      <title>CloudCDN: Open source plán pro AI-nativní edge v roce 2026</title>
+      <link>https://sebastienrousseau.com/cs/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN je open source AI-nativní plán edge CDN: infrastruktura řízená přes MCP, omezování rychlosti Durable Objects, signed URLs, přístupnost a auditovatelnost.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>open source</category>
+      <category>CDN</category>
+      <category>edge</category>
+      <category>AI agenti</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>omezování rychlosti</category>
+    </item>
+    <item>
+      <title>CloudCDN: un progetto di riferimento open source per l'edge AI-nativo nel 2026</title>
+      <link>https://sebastienrousseau.com/it/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN è un progetto di riferimento open source di CDN edge AI-nativa: infrastruttura controllata via MCP, rate limiting su Durable Objects, URL firmati, accessibilità e auditabilità.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>open source</category>
+      <category>CDN</category>
+      <category>edge</category>
+      <category>agenti AI</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>rate limiting</category>
+    </item>
+    <item>
+      <title>CloudCDN:2026 年 AIネイティブ・エッジのオープンソース・ブループリント</title>
+      <link>https://sebastienrousseau.com/ja/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN は、MCP 制御インフラ、Durable Objects によるレート制限、署名付きURL、アクセシビリティ、監査可能性のための、オープンソースかつ AIネイティブなエッジ CDN ブループリントです。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>オープンソース</category>
+      <category>CDN</category>
+      <category>エッジ</category>
+      <category>AI エージェント</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>レート制限</category>
+    </item>
+    <item>
+      <title>CloudCDN: תכנית אב של קוד פתוח לקצה ילידי-AI ב-2026</title>
+      <link>https://sebastienrousseau.com/he/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN היא תכנית אב של קוד פתוח, ילידת-AI, לרשת CDN בקצה — תשתית בבקרת MCP, הגבלת קצב ב-Durable Objects, כתובות URL חתומות, נגישות ויכולת ביקורת.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>קוד פתוח</category>
+      <category>CDN</category>
+      <category>קצה</category>
+      <category>סוכני AI</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>הגבלת קצב</category>
+    </item>
+    <item>
+      <title>CloudCDN: en ritning med öppen källkod för AI-inbyggd edge 2026</title>
+      <link>https://sebastienrousseau.com/sv/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN är en AI-inbyggd edge-CDN-ritning med öppen källkod: MCP-styrning, Durable Objects-frekvensbegränsning, signerade URL:er och granskningsbarhet.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>öppen källkod</category>
+      <category>CDN</category>
+      <category>edge</category>
+      <category>AI-agenter</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>frekvensbegränsning</category>
+    </item>
+    <item>
+      <title>CloudCDN: bản thiết kế mã nguồn mở cho biên AI-bản địa 2026</title>
+      <link>https://sebastienrousseau.com/vi/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN là bản thiết kế CDN biên AI-bản địa mã nguồn mở cho hạ tầng do MCP điều khiển, giới hạn tốc độ Durable Objects, signed URLs và khả năng kiểm toán.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>mã nguồn mở</category>
+      <category>CDN</category>
+      <category>biên</category>
+      <category>tác nhân AI</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>giới hạn tốc độ</category>
+    </item>
+    <item>
+      <title>CloudCDN: open-source schemat AI-natywnego edge w 2026</title>
+      <link>https://sebastienrousseau.com/pl/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN to open-source, AI-natywny schemat brzegowego CDN: infrastruktura sterowana przez MCP, ograniczanie liczby żądań w Durable Objects, podpisane adresy URL i audytowalność.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>open source</category>
+      <category>CDN</category>
+      <category>edge</category>
+      <category>agenci AI</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>ograniczanie liczby żądań</category>
+    </item>
+    <item>
+      <title>CloudCDN:2026 年 AI原生邊緣的開源藍圖</title>
+      <link>https://sebastienrousseau.com/zh-hant/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN 是一份開源 AI原生邊緣 CDN 藍圖,涵蓋 MCP 控制的基礎設施、Durable Objects 速率限制、signed URLs、無障礙與可稽核性。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>開源</category>
+      <category>CDN</category>
+      <category>邊緣</category>
+      <category>AI 代理</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>速率限制</category>
+    </item>
+    <item>
+      <title>CloudCDN：2026 年 AI原生 边缘的开源蓝图</title>
+      <link>https://sebastienrousseau.com/zh-hans/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</link>
+      <description>CloudCDN：面向 MCP 控制基础设施、Durable Objects 速率限制、签名URL、无障碍与可审计性的 AI原生 边缘 CDN 开源蓝图。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>CloudCDN</category>
+      <category>开源</category>
+      <category>CDN</category>
+      <category>边缘</category>
+      <category>AI 代理</category>
+      <category>MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>速率限制</category>
+    </item>
     <item>
       <title>DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</title>
       <link>https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026</link>
@@ -359,476 +891,6 @@
       <category>オペレーショナル・レジリエンス</category>
       <category>クラウド集中リスク</category>
       <category>AI ガバナンス</category>
-    </item>
-    <item>
-      <title>DORA, חוק הבינה המלאכותית וריבונות נתונים: ערימת הציות של 2026 לבנקים</title>
-      <link>https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, חוק הבינה המלאכותית של האיחוד האירופי, GDPR, סיכון ריכוז ענן וריבונות נתונים מתכנסים ב-2026 לערימת ציות אחת לבנקים.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>חוק הבינה המלאכותית של האיחוד האירופי</category>
-      <category>ריבונות נתונים</category>
-      <category>חוסן תפעולי</category>
-      <category>סיכון ריכוז ענן</category>
-      <category>ממשל AI</category>
-    </item>
-    <item>
-      <title>DORA, EU:s AI-förordning och datasuveränitet: bankernas efterlevnadsstack 2026</title>
-      <link>https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU:s AI-förordning, GDPR, koncentrationsrisk i molnet och datasuveränitet konvergerar 2026 till en gemensam efterlevnadsstack för banker.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>datasuveränitet</category>
-      <category>operativ resiliens</category>
-      <category>koncentrationsrisk moln</category>
-      <category>AI-styrning</category>
-    </item>
-    <item>
-      <title>DORA, Đạo luật AI EU và chủ quyền dữ liệu: ngăn xếp tuân thủ 2026 cho ngân hàng</title>
-      <link>https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU AI Act, GDPR, rủi ro tập trung cloud và chủ quyền dữ liệu hội tụ thành một ngăn xếp tuân thủ 2026 cho ngân hàng — kiến trúc, không phải tủ hồ sơ chính sách.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>chủ quyền dữ liệu</category>
-      <category>khả năng phục hồi vận hành</category>
-      <category>rủi ro tập trung cloud</category>
-      <category>quản trị AI</category>
-    </item>
-    <item>
-      <title>DORA, EU AI Act i suwerennosc danych: stos zgodnosci bankow w 2026</title>
-      <link>https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU AI Act, RODO, ryzyko koncentracji chmury i suwerennosc danych laczy sie w jeden stos zgodnosci banku na 2026 rok.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>suwerennosc danych</category>
-      <category>odpornosc operacyjna</category>
-      <category>ryzyko koncentracji chmury</category>
-      <category>nadzor nad AI</category>
-    </item>
-    <item>
-      <title>DORA、EU AI 法與資料主權:銀行 2026 年法遵堆疊</title>
-      <link>https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA、EU AI 法、GDPR、雲端集中風險與資料主權,2026 年正匯流為銀行的單一法遵堆疊,設計紀律成為決勝關鍵。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>資料主權</category>
-      <category>營運韌性</category>
-      <category>雲端集中風險</category>
-      <category>AI 治理</category>
-    </item>
-    <item>
-      <title>DORA、EU AI 法案与数据主权：银行 2026 合规栈</title>
-      <link>https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA、EU AI 法案、GDPR、云集中风险与数据主权在 2026 年汇聚为银行的一套合规栈，决定董事会层级的运营模型设计。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI 法案</category>
-      <category>数据主权</category>
-      <category>运营韧性</category>
-      <category>云集中风险</category>
-      <category>AI 治理</category>
-    </item>
-    <item>
-      <title>AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026</title>
-      <link>https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026</link>
-      <description>AI is becoming the operating system of payments in 2026, moving from analytics into fraud prevention, payment repair, routing, liquidity forecasting, compliance screening, and agentic commerce controls.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI payments</category>
-      <category>fraud prevention</category>
-      <category>routing</category>
-      <category>resilience</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>Ödemelerin İşletim Sistemi Olarak AI: 2026'da Dolandırıcılık, Yönlendirme, Dayanıklılık ve Uyum</title>
-      <link>https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI 2026&apos;da ödemelerin işletim sistemi hâline geliyor; analitikten dolandırıcılık önleme, ödeme onarımı, yönlendirme, likidite tahmini, uyum taraması ve aracılı ticaret kontrollerine geçiyor.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI ödemeler</category>
-      <category>dolandırıcılık önleme</category>
-      <category>yönlendirme</category>
-      <category>dayanıklılık</category>
-      <category>uyum</category>
-      <category>ISO 20022</category>
-      <category>aracılı ticaret</category>
-    </item>
-    <item>
-      <title>AI ในฐานะระบบปฏิบัติการของการชำระเงิน: ฉ้อโกง เส้นทาง ยืดหยุ่น ปฏิบัติตามกฎ 2026</title>
-      <link>https://sebastienrousseau.com/th/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI กำลังกลายเป็นระบบปฏิบัติการของการชำระเงินในปี 2026 ขยายจากการวิเคราะห์ไปสู่การป้องกันการฉ้อโกง การซ่อมแซมการชำระเงิน การกำหนดเส้นทาง การคาดการณ์สภาพคล่อง การคัดกรองการปฏิบัติตามกฎ และการควบคุมพาณิชย์เชิงตัวแทน</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI การชำระเงิน</category>
-      <category>การป้องกันการฉ้อโกง</category>
-      <category>การกำหนดเส้นทาง</category>
-      <category>ความยืดหยุ่น</category>
-      <category>การปฏิบัติตามกฎ</category>
-      <category>ISO 20022</category>
-      <category>พาณิชย์เชิงตัวแทน</category>
-    </item>
-    <item>
-      <title>La IA como sistema operativo de los pagos: fraude, enrutamiento, resiliencia y cumplimiento en 2026</title>
-      <link>https://sebastienrousseau.com/es/2026-05-27-ai-operating-system-pagos-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>La IA se está convirtiendo en el sistema operativo de los pagos en 2026: prevención de fraude, reparación, enrutamiento, previsión de liquidez, cribado de cumplimiento y controles de comercio agéntico.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-05-27-ai-operating-system-pagos-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>IA pagos</category>
-      <category>prevención de fraude</category>
-      <category>enrutamiento</category>
-      <category>resiliencia</category>
-      <category>cumplimiento</category>
-      <category>ISO 20022</category>
-      <category>comercio agéntico</category>
-    </item>
-    <item>
-      <title>L'IA comme système d'exploitation des paiements : fraude, routage, résilience et conformité en 2026</title>
-      <link>https://sebastienrousseau.com/fr/2026-05-27-ai-operating-system-paiements-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>L&apos;IA devient le système d&apos;exploitation des paiements en 2026 : prévention de la fraude, réparation des paiements, routage, prévision de liquidité, filtrage de conformité et garde-fous du commerce agentique.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-27-ai-operating-system-paiements-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>IA paiements</category>
-      <category>prévention fraude</category>
-      <category>routage</category>
-      <category>résilience</category>
-      <category>conformité</category>
-      <category>ISO 20022</category>
-      <category>commerce agentique</category>
-    </item>
-    <item>
-      <title>AI sebagai Sistem Operasi Pembayaran: Penipuan, Routing, Ketahanan, dan Kepatuhan pada 2026</title>
-      <link>https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI menjadi sistem operasi pembayaran pada 2026, bergeser dari analitik ke pencegahan penipuan, perbaikan pembayaran, routing, prakiraan likuiditas, penyaringan kepatuhan, dan kontrol agentic commerce.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Keuangan</category>
-      <category>pembayaran AI</category>
-      <category>pencegahan penipuan</category>
-      <category>routing</category>
-      <category>ketahanan</category>
-      <category>kepatuhan</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>결제의 AI 운영체제: 2026년 사기, 라우팅, 회복력, 컴플라이언스</title>
-      <link>https://sebastienrousseau.com/ko/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>2026년 AI는 결제의 운영체제로 자리잡으며, 분석 대시보드를 넘어 사기 방지, 결제 복구, 라우팅, 유동성 예측, 컴플라이언스 검사, 에이전틱 커머스 통제 영역으로 확장되고 있습니다.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI 결제</category>
-      <category>사기 방지</category>
-      <category>라우팅</category>
-      <category>회복력</category>
-      <category>컴플라이언스</category>
-      <category>ISO 20022</category>
-      <category>에이전틱 커머스</category>
-    </item>
-    <item>
-      <title>KI als Betriebssystem des Zahlungsverkehrs: Betrug, Routing, Resilienz und Compliance 2026</title>
-      <link>https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>KI wird 2026 zum Betriebssystem des Zahlungsverkehrs: vom Analytik-Werkzeug zur Steuerungsschicht für Betrugsabwehr, Zahlungsreparatur, Routing, Liquiditätsprognose, Compliance-Prüfung und agentische Handelskontrollen.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>KI-Zahlungsverkehr</category>
-      <category>Betrugsabwehr</category>
-      <category>Routing</category>
-      <category>Resilienz</category>
-      <category>Compliance</category>
-      <category>ISO 20022</category>
-      <category>agentischer Handel</category>
-    </item>
-    <item>
-      <title>भुगतान का AI ऑपरेटिंग सिस्टम: 2026 में धोखाधड़ी, रूटिंग, लचीलापन और अनुपालन</title>
-      <link>https://sebastienrousseau.com/hi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>2026 में AI भुगतान का ऑपरेटिंग सिस्टम बन रहा है — विश्लेषण से आगे बढ़कर धोखाधड़ी रोकथाम, भुगतान मरम्मत, रूटिंग, तरलता पूर्वानुमान, अनुपालन स्क्रीनिंग और एजेंटिक कॉमर्स नियंत्रण तक।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI भुगतान</category>
-      <category>धोखाधड़ी रोकथाम</category>
-      <category>रूटिंग</category>
-      <category>लचीलापन</category>
-      <category>अनुपालन</category>
-      <category>ISO 20022</category>
-      <category>एजेंटिक कॉमर्स</category>
-    </item>
-    <item>
-      <title>AI Bilang Operating System ng Pagbabayad: Pandaraya, Ruta, Katatagan, at Compliance sa 2026</title>
-      <link>https://sebastienrousseau.com/fil/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>Nagiging operating system ng pagbabayad ang AI sa 2026, lumipat mula analytics tungo sa pag-iwas sa pandaraya, pag-aayos ng bayad, ruta, forecasting ng likido, screening ng compliance, at kontrol ng agentic commerce.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI payments</category>
-      <category>pag-iwas sa pandaraya</category>
-      <category>ruta</category>
-      <category>katatagan</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>পেমেন্টের অপারেটিং সিস্টেম হিসেবে AI: ২০২৬-এ প্রতারণা, রাউটিং, স্থিতিস্থাপকতা ও কমপ্লায়েন্স</title>
-      <link>https://sebastienrousseau.com/bn/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>২০২৬ সালে AI পেমেন্টের অপারেটিং সিস্টেমে পরিণত হচ্ছে — অ্যানালিটিক্স থেকে সরে গিয়ে প্রতারণা প্রতিরোধ, পেমেন্ট মেরামত, রাউটিং, তারল্য পূর্বাভাস, কমপ্লায়েন্স স্ক্রিনিং ও এজেন্টিক কমার্স নিয়ন্ত্রণে।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI পেমেন্ট</category>
-      <category>প্রতারণা প্রতিরোধ</category>
-      <category>রাউটিং</category>
-      <category>স্থিতিস্থাপকতা</category>
-      <category>কমপ্লায়েন্স</category>
-      <category>ISO 20022</category>
-      <category>এজেন্টিক কমার্স</category>
-    </item>
-    <item>
-      <title>AI als besturingssysteem van betalingen: fraude, routering, veerkracht en compliance in 2026</title>
-      <link>https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI wordt in 2026 het besturingssysteem van betalingen: van analytics naar fraudepreventie, betalingsherstel, routering, liquiditeitsprognose, compliance-screening en agentic-commerce-controles.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI betalingen</category>
-      <category>fraudepreventie</category>
-      <category>routering</category>
-      <category>veerkracht</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>IA como Sistema Operacional dos Pagamentos: Fraude, Roteamento, Resiliência e Conformidade em 2026</title>
-      <link>https://sebastienrousseau.com/pt-br/2026-05-27-ai-operating-system-pagamentos-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>Em 2026 a IA assume o papel de sistema operacional dos pagamentos: prevenção de fraude, reparo, roteamento, previsão de liquidez, triagem de conformidade e controles de comércio agêntico.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-05-27-ai-operating-system-pagamentos-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>IA em pagamentos</category>
-      <category>prevenção de fraude</category>
-      <category>roteamento</category>
-      <category>resiliência</category>
-      <category>conformidade</category>
-      <category>ISO 20022</category>
-      <category>comércio agêntico</category>
-    </item>
-    <item>
-      <title>الذكاء الاصطناعي بوصفه نظام تشغيل المدفوعات: الاحتيال والتوجيه والمرونة والامتثال في 2026</title>
-      <link>https://sebastienrousseau.com/ar/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>يُصبح الذكاء الاصطناعي نظام تشغيل المدفوعات في 2026، منتقلاً من التحليلات إلى منع الاحتيال، وإصلاح المدفوعات، والتوجيه، والتنبؤ بالسيولة، وفحص الامتثال، وضوابط التجارة الوكيلة.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>نظام تشغيل الذكاء الاصطناعي للمدفوعات</category>
-      <category>منع الاحتيال</category>
-      <category>التوجيه</category>
-      <category>المرونة</category>
-      <category>الامتثال</category>
-      <category>ISO 20022</category>
-      <category>التجارة الوكيلة</category>
-    </item>
-    <item>
-      <title>AI a Matsayin Tsarin Aiki na Biya: Zamba, Tuƙi, Juriya, da Bin Doka a 2026</title>
-      <link>https://sebastienrousseau.com/ha/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>A 2026, AI yana zama tsarin aiki na biya, yana motsi daga nazari zuwa hana zamba, gyaran biya, tuƙi, hasashen ruwa-ruwa, tantance bin doka, da sarrafa cinikayyar agentic commerce.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI payments</category>
-      <category>fraud prevention</category>
-      <category>routing</category>
-      <category>resilience</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>ШІ як операційна система платежів: шахрайство, маршрутизація, стійкість і відповідність у 2026</title>
-      <link>https://sebastienrousseau.com/uk/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>ШІ стає операційною системою платежів у 2026 році: виходить за межі аналітики у запобігання шахрайству, відновлення платежів, маршрутизацію, прогноз ліквідності та перевірку відповідності.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ШІ у платежах</category>
-      <category>запобігання шахрайству</category>
-      <category>маршрутизація</category>
-      <category>стійкість</category>
-      <category>відповідність</category>
-      <category>ISO 20022</category>
-      <category>агентна комерція</category>
-    </item>
-    <item>
-      <title>AI gẹ́gẹ́ bí Ètò Ìṣiṣẹ́ AI ti Ìsanwó: Jìbìtì, Ìpinnu Ọ̀nà, Ìfaradà, Ìbámu 2026</title>
-      <link>https://sebastienrousseau.com/yo/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI ti ń di ètò ìṣiṣẹ́ AI ti ìsanwó ní 2026, ó ń kọjá láti àyẹ̀wò sí ìdènà jìbìtì, àtúnṣe ìsanwó, ìpinnu ọ̀nà, ìhùmọ̀ owó tó ń sàn, àyẹ̀wò ìbámu, àti ìṣàkóso agentic commerce.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI payments</category>
-      <category>fraud prevention</category>
-      <category>routing</category>
-      <category>resilience</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>AI ca sistem de operare al plăților: fraudă, rutare, reziliență și conformitate în 2026</title>
-      <link>https://sebastienrousseau.com/ro/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI devine sistemul de operare al plăților în 2026: prevenirea fraudei, repararea plăților, rutarea, prognoza lichidității, screening de conformitate și controale pentru comerțul agentic la viteza fluxului.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI payments</category>
-      <category>fraud prevention</category>
-      <category>routing</category>
-      <category>resilience</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>ИИ как операционная система платежей: мошенничество, маршрутизация, устойчивость и комплаенс в 2026</title>
-      <link>https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>В 2026 году ИИ становится операционной системой платежей: от аналитики к предотвращению мошенничества, восстановлению платежей, маршрутизации, прогнозу ликвидности, проверкам комплаенса и контролю агентной коммерции.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ИИ в платежах</category>
-      <category>предотвращение мошенничества</category>
-      <category>маршрутизация</category>
-      <category>устойчивость</category>
-      <category>комплаенс</category>
-      <category>ISO 20022</category>
-      <category>агентная коммерция</category>
-    </item>
-    <item>
-      <title>AI jako operační systém plateb: podvody, směrování, odolnost a compliance v roce 2026</title>
-      <link>https://sebastienrousseau.com/cs/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI se v roce 2026 stává operačním systémem plateb — propojuje prevenci podvodů, opravu plateb, směrování, prognózu likvidity, screening compliance a kontroly agentického obchodu v rychlosti workflow.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI platby</category>
-      <category>prevence podvodů</category>
-      <category>směrování</category>
-      <category>odolnost</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentický obchod</category>
-    </item>
-    <item>
-      <title>L'IA come sistema operativo dei pagamenti: frode, routing, resilienza e conformità nel 2026</title>
-      <link>https://sebastienrousseau.com/it/2026-05-27-ai-operating-system-pagamenti-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>Nel 2026 l&apos;IA diventa il sistema operativo dei pagamenti: prevenzione frodi, riparazione, routing, previsione di liquidità, screening di conformità e controlli per il commercio agentico in tempo reale.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-27-ai-operating-system-pagamenti-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI pagamenti</category>
-      <category>prevenzione frodi</category>
-      <category>routing</category>
-      <category>resilienza</category>
-      <category>conformità</category>
-      <category>ISO 20022</category>
-      <category>commercio agentico</category>
-    </item>
-    <item>
-      <title>決済のオペレーティングシステムとしての AI: 2026 年の不正、ルーティング、レジリエンス、コンプライアンス</title>
-      <link>https://sebastienrousseau.com/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>2026 年、AI は決済のオペレーティングシステムへと進化し、分析を越えて不正防止、決済修復、ルーティング、流動性予測、コンプライアンススクリーニング、エージェント型コマース統制を担います。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI 決済</category>
-      <category>不正防止</category>
-      <category>ルーティング</category>
-      <category>レジリエンス</category>
-      <category>コンプライアンス</category>
-      <category>ISO 20022</category>
-      <category>エージェント型コマース</category>
     </item>
   </channel>
 </rss>

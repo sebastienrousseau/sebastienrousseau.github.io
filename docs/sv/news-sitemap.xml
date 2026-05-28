@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/sv/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv-SE</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T23:46:22+00:00</news:publication_date>
+    <news:title>CloudCDN: en ritning med öppen källkod för AI-inbyggd edge 2026</news:title>
+    <news:keywords>CloudCDN, AI-inbyggd edge, CDN med öppen källkod, MCP-server, Cloudflare Workers, Durable Objects, signerade URL:er, passkeys, SLSA, edge-infrastruktur</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

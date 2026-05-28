@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/fr/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fr-FR</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T06:06:06+00:00</news:publication_date>
+    <news:title>CloudCDN : un plan open source pour l&apos;edge nativement IA en 2026</news:title>
+    <news:keywords>CloudCDN, edge AI-native, CDN open source, serveur MCP, Cloudflare Workers, Durable Objects, URLs signées, passkeys, SLSA, infrastructure edge</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

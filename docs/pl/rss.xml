@@ -6,8 +6,27 @@
     <description>Artykuły po polsku: stosowana sztuczna inteligencja, płatności ISO 20022, kryptografia postkwantowa oraz transformacja płatności hurtowych.</description>
     <atom:link href="https://sebastienrousseau.com/pl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>pl-PL</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 23:46:22 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Wszelkie prawa zastrzeżone.</copyright>
+    <item>
+      <title>CloudCDN: open-source schemat AI-natywnego edge w 2026</title>
+      <link>https://sebastienrousseau.com/pl/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</link>
+      <description>CloudCDN to open-source, AI-natywny schemat brzegowego CDN: infrastruktura sterowana przez MCP, ograniczanie liczby żądań w Durable Objects, podpisane adresy URL i audytowalność.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</guid>
+      <pubDate>Thu, 28 May 2026 23:46:22 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>CloudCDN</category>
+      <category>AI-natywny edge</category>
+      <category>open-source CDN</category>
+      <category>serwer MCP</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>podpisane adresy URL</category>
+      <category>passkeys</category>
+      <category>SLSA</category>
+      <category>infrastruktura brzegowa</category>
+    </item>
     <item>
       <title>DORA, EU AI Act i suwerennosc danych: stos zgodnosci bankow w 2026</title>
       <link>https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

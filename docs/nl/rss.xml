@@ -6,14 +6,33 @@
     <description>Artikelen in het Nederlands: toegepaste AI, ISO 20022-betalingen, post-kwantumcryptografie en transformatie van het wholesale-betalingsverkeer.</description>
     <atom:link href="https://sebastienrousseau.com/nl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>nl-NL</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 23:46:22 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle rechten voorbehouden.</copyright>
+    <item>
+      <title>CloudCDN: een open source blauwdruk voor de AI-native edge in 2026</title>
+      <link>https://sebastienrousseau.com/nl/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</link>
+      <description>CloudCDN is een open source, AI-native edge CDN-blauwdruk voor MCP-bestuurde infrastructuur, Durable Objects rate limiting, ondertekende URLs, toegankelijkheid en auditeerbaarheid.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</guid>
+      <pubDate>Thu, 28 May 2026 23:46:22 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>CloudCDN</category>
+      <category>AI-native edge</category>
+      <category>open source CDN</category>
+      <category>MCP-server</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>ondertekende URLs</category>
+      <category>passkeys</category>
+      <category>SLSA</category>
+      <category>edge-infrastructuur</category>
+    </item>
     <item>
       <title>DORA, EU AI Act en datasoevereiniteit: de compliance-stack 2026 voor banken</title>
       <link>https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
       <description>DORA, EU AI Act, GDPR, concentratierisico cloud en datasoevereiniteit smelten in 2026 samen tot één compliance-stack voor banken in Nederland.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
-      <pubDate>Thu, 28 May 2026 06:26:19 +0000</pubDate>
+      <pubDate>Thu, 28 May 2026 23:46:22 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>DORA 2026</category>

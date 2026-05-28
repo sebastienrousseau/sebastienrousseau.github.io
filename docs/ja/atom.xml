@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/ja/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ja/"/>
   <id>https://sebastienrousseau.com/ja/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-28T23:46:22+00:00</updated>
+  <entry>
+    <title>CloudCDN:2026 年 AIネイティブ・エッジのオープンソース・ブループリント</title>
+    <link href="https://sebastienrousseau.com/ja/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/"/>
+    <id>https://sebastienrousseau.com/ja/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</id>
+    <updated>2026-06-11T06:06:06+00:00</updated>
+    <published>2026-06-11T06:06:06+00:00</published>
+    <summary>CloudCDN は、MCP 制御インフラ、Durable Objects によるレート制限、署名付きURL、アクセシビリティ、監査可能性のための、オープンソースかつ AIネイティブなエッジ CDN ブループリントです。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA、EU AI Act、データ主権:2026 年銀行向けコンプライアンス・スタック</title>
     <link href="https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

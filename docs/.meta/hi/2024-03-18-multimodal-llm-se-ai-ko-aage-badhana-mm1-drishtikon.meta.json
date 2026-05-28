@@ -1,11 +1,11 @@
 {
-  "locale": "hi_IN",
-  "subtitle": "Apple के MM1 परिवार से प्रशिक्षण-निर्णयों की प्राप्तियाँ",
-  "keywords": "MM1, Apple, मल्टीमॉडल, LLM, AI, vision, transformer, training, फाउंडेशन मॉडल, बेंचमार्क",
   "title": "मल्टीमॉडल LLM से AI को आगे बढ़ाना: MM1 की सीख",
-  "date": "March 18, 2024",
+  "locale": "hi_IN",
+  "keywords": "MM1, Apple, मल्टीमॉडल, LLM, AI, vision, transformer, training, फाउंडेशन मॉडल, बेंचमार्क",
   "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
-  "description": "Apple के MM1 परिवार से मल्टीमॉडल LLM के प्रशिक्षण के बारे में सीख और अंतर्दृष्टि।",
+  "language": "hi-IN",
   "banner_alt": "MM1 मॉडल-वास्तुकला की प्रतीकात्मक छवि",
-  "language": "hi-IN"
+  "date": "March 18, 2024",
+  "description": "Apple के MM1 परिवार से मल्टीमॉडल LLM के प्रशिक्षण के बारे में सीख और अंतर्दृष्टि।",
+  "subtitle": "Apple के MM1 परिवार से प्रशिक्षण-निर्णयों की प्राप्तियाँ"
 }

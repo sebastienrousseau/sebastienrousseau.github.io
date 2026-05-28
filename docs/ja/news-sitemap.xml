@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ja/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ja-JP</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T06:06:06+00:00</news:publication_date>
+    <news:title>CloudCDN:2026 年 AIネイティブ・エッジのオープンソース・ブループリント</news:title>
+    <news:keywords>CloudCDN, AIネイティブ・エッジ, オープンソース CDN, MCP サーバー, Cloudflare Workers, Durable Objects, 署名付きURL, passkeys, SLSA, エッジインフラ</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

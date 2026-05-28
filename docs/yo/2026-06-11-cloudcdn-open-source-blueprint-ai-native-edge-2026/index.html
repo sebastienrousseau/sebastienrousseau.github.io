@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="yo-NG">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 11 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 11 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>CloudCDN: Ètò Ìpinnu Orisun Ṣiṣi fún Eti AI-Ìbílẹ̀ ní 2026 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="CloudCDN jẹ́ ètò ìpinnu CDN eti AI-ìbílẹ̀, orisun ṣiṣi fún ìgbékalẹ̀ tí MCP ń ṣàkóso, ìdìnà ìwọ̀n Durable Objects, signed URLs, ìráyé, àti ìbéère.">
+<meta name="keywords" content="CloudCDN, eti AI-ìbílẹ̀, CDN orisun ṣiṣi, MCP server, Cloudflare Workers, Durable Objects, signed URLs, passkeys, SLSA, ìgbékalẹ̀ eti">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="CloudCDN: Open-Source AI-Native Edge Blueprint">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-72kyKl/gEyXoEMzjlq3njLawuQyhd37SHSi3m6YESjk=' 'sha256-AMdAyNNr5SB2bflmJgZ79lhfbXXhWvGgtKYSXTmheT4=' 'sha256-HAhWERbrLzOsOWsmkbjLKKPNa6EQPgxXieyz/QewDaQ=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/yo/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Àyẹ́ Atom" href="/yo/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="CloudCDN: Ètò Ìpinnu Orisun Ṣiṣi fún Eti AI-Ìbílẹ̀ ní 2026 — Sebastien Rousseau">
+<meta property="og:description" content="CloudCDN jẹ́ ètò ìpinnu CDN eti AI-ìbílẹ̀, orisun ṣiṣi fún ìgbékalẹ̀ tí MCP ń ṣàkóso, ìdìnà ìwọ̀n Durable Objects, signed URLs, ìráyé, àti ìbéère.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/yo/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="yo_NG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CloudCDN: Ètò Ìpinnu Orisun Ṣiṣi fún Eti AI-Ìbílẹ̀ ní 2026 — Sebastien Rousseau">
+<meta name="twitter:description" content="CloudCDN jẹ́ ètò ìpinnu CDN eti AI-ìbílẹ̀, orisun ṣiṣi fún ìgbékalẹ̀ tí MCP ń ṣàkóso, ìdìnà ìwọ̀n Durable Objects, signed URLs, ìráyé, àti ìbéère.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/yo/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Fò sí àkóónú àkọ́kọ́</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Yí ìwọ̀ndì padà" />
+      <div class="wrap">
+        <a class="ap-brand" href="/yo/index.html" aria-label="Ilé Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Ìwọ̀ndì àkọ́kọ́">
+          <ul class="ap-menu">
+            <li><a href="/yo/nipa-wa/index.html">About</a></li>
+            <li><a href="/yo/awon-akole/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/yo/awon-iwe/index.html">Papers</a></li>
+            <li><a href="/yo/awon-koko/index.html">Àwọn kókó</a></li>
+            <li><a href="/yo/awon-ise/index.html">Projects</a></li>
+            <li><a href="/yo/akojopo-orin/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Tan àkòrí òkùnkùn" aria-pressed="false" title="Yí àkòrí padà">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Wá (Cmd tàbí Ctrl + K)" title="Wá (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Èdè">
+            <button type="button" class="ap-lang-toggle" aria-label="YO, Yí èdè padà" aria-expanded="false" aria-haspopup="menu" title="Yí èdè padà">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">YO</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/yo/kan-si-wa/index.html" aria-label="Kàn sí wa">Kàn sí wa ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Yí ìwọ̀ndì padà">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>CloudCDN: Ètò Ìpinnu Orisun Ṣiṣi fún Eti AI-Ìbílẹ̀ ní 2026</h1>
+      <p class="sub">CloudCDN fihàn bí ìgbékalẹ̀ eti orisun ṣiṣi ṣe lè di èyí tí a lè yẹ̀wò, tí aṣojú lè kó, tí a dín ìwọ̀n rẹ̀, tí ó lè ráyé, àti tí ó tó ipele báńkì.</p>
+    <nav class="article-tags" aria-label="Àwọn kókó"><a href="/tags/index.html#h3-cloudcdn" class="article-tag" rel="tag">CloudCDN</a><a href="/tags/index.html#h3-eti-ai-ibile" class="article-tag" rel="tag">eti AI-ìbílẹ̀</a><a href="/tags/index.html#h3-cdn-orisun-sisi" class="article-tag" rel="tag">CDN orisun ṣiṣi</a><a href="/tags/index.html#h3-mcp-server" class="article-tag" rel="tag">MCP server</a><a href="/tags/index.html#h3-cloudflare-workers" class="article-tag" rel="tag">Cloudflare Workers</a><a href="/tags/index.html#h3-durable-objects" class="article-tag" rel="tag">Durable Objects</a><a href="/tags/index.html#h3-signed-urls" class="article-tag" rel="tag">signed URLs</a><a href="/tags/index.html#h3-passkeys" class="article-tag" rel="tag">passkeys</a><a href="/tags/index.html#h3-slsa" class="article-tag" rel="tag">SLSA</a><a href="/tags/index.html#h3-igbekale-eti" class="article-tag" rel="tag">ìgbékalẹ̀ eti</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-11T06:06:06+00:00" class="meta-pub">Tẹ̀ jáde 11 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Àkókò kíkà tó tó">7 ìṣẹ́jú kíkà</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Àkóónú</h2><ol><li><a href="#idi-ti-ise-orisun-sisi-yii-fi-se-pataki-ni-2026">Ìdí Tí Iṣẹ́ Orisun Ṣiṣi Yìí Fi Ṣe Pàtàkì Ní 2026</a></li><li><a href="#gilasi-ikole">Gilasi Ìkọ́lé</a></li><li><a href="#awon-ami-lati-topinpin">Àwọn Àmì Láti Tọpinpin</a></li><li><a href="#cdn-n-di-ipele-isakoso">CDN Ń Di Ipele Iṣakoso</a></li><li><a href="#idi-ti-orisun-sisi-fi-yi-awokose-igbekele-pada">Ìdí Tí Orisun Ṣiṣi Fi Yí Àwòkọ́ṣe Ìgbẹ́kẹ̀lé Padà</a></li><li><a href="#awokose-eti-to-to-ipele-banki">Àwòkọ́ṣe Eti Tó Tó Ipele Báńkì</a></li><li><a href="#ohun-ti-eyi-tumo-si-nipa-olugbo">Ohun Tí Èyí Túmọ̀ Sí Nípa Olùgbọ́</a></li><li><a href="#ipari">Ìparí</a></li><li><a href="#awon-ibeere-ti-a-n-beere-leralera">Àwọn Ìbéèrè Tí A Ń Béèrè Léraléra</a></li><li><a href="#awon-itokasi">Àwọn Ìtọ́kasí</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> CloudCDN jẹ́ ètò ìpinnu CDN eti AI-ìbílẹ̀, orisun ṣiṣi fún ìgbékalẹ̀ tí MCP ń ṣàkóso, ìdìnà ìwọ̀n Durable Objects, signed URLs, ìráyé, àti ìbéère.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Ìdí Tí Iṣẹ́ Orisun Ṣiṣi Yìí Fi Ṣe Pàtàkì Ní 2026.</strong> Iye ìlànà ti orisun ṣiṣi ní 2026 kò sí ní ti àlàyé, ìlòpọ̀, tàbí ìfẹ́ àwọn ẹlẹrọ́ nìkan mọ́.</li>  <li><strong>Àwọn Àmì Láti Tọpinpin.</strong> A kọ́ àwọn CDN ìbílẹ̀ yí àyíká ìyára àkóónú, pípa àwọn ìpamọ́ rẹ́, ọ̀nà ìránṣẹ́, àti àwọn ìdáàbò tí ó dà bí WAF.</li>  <li><strong>CDN Ń Di Ipele Iṣakoso.</strong> A kọ́ àwọn CDN ìbílẹ̀ yí àyíká ìyára àkóónú, pípa àwọn ìpamọ́ rẹ́, ọ̀nà ìránṣẹ́, àti àwọn ìdáàbò tí ó dà bí WAF.</li>  <li><strong>Ìdí Tí Orisun Ṣiṣi Fi Yí Àwòkọ́ṣe Ìgbẹ́kẹ̀lé Padà.</strong> Fún àwọn ilé-iṣẹ́ tí a ń ṣàkóso, ìfẹ́ CloudCDN kìí ṣe agbára iṣẹ́ nìkan.</li></ul></aside><h1>CloudCDN: Ètò Ìpinnu Orisun Ṣiṣi fún Eti AI-Ìbílẹ̀ ní 2026</h1>
+<!-- lead-start -->
+<aside class="lead" aria-label="Àkótán">
+<p><strong>TL;DR.</strong> CloudCDN jẹ́ ètò ìpinnu eti AI-ìbílẹ̀, orisun ṣiṣi. Ó ka CDN sí gẹ́gẹ́ bí ojú aṣojú — tí MCP ń ṣàkóso, tí a so mọ́ ìdánimọ̀, tí a dín ìwọ̀n rẹ̀, tí signed URLs ń ṣọ́, tí a dán ìráyé wò, tí a sì lè ṣe àtúnṣe láti orísun rẹ̀ — dípò pẹpẹ olùpèsè tí kò ní àlàyé. Ibi ìpamọ́ ìtọ́kasí ń ṣiṣẹ́ pẹ̀lú TTFB tí ó dín ní 100ms káàkiri àwọn PoP Cloudflare pẹ̀lú ìdánwò 3,185 ní ìbòlẹ̀wò 100%.</p>
+<p><strong>Àwọn àyọkà pàtàkì:</strong></p>
+<ul>
+<li><strong>Eti ti di ipele iṣakoso tuntun.</strong> Àwọn aṣojú yóò pa àwọn ìpamọ́ rẹ̀, ṣe signed URLs, kí wọn ó sì yí ìṣíkiri padà — èyí nílò ìgbékalẹ̀ tí a lè ṣàkóso, kìí ṣe pọ́tálì olùpèsè.</li>
+<li><strong>MCP ń yí àwọn iṣẹ́ CDN padà di irinṣẹ́ tí a ti yan irú rẹ̀.</strong> Iṣẹ́ kọ̀ọ̀kan ni a lè yẹ̀wò, tí a so mọ́ ìdánimọ̀, tí ìlànà sì dí lẹ́bi.</li>
+<li><strong>Durable Objects ń ṣe iṣiro ìdìnà ìwọ̀n.</strong> Àwọn ààlà fún ọ̀kọ̀ọ̀kan kọ́kọ́rọ́, IP, àti ọ̀nà tí ó wà láàyè lẹ́yìn ìbàjẹ́.</li>
+<li><strong>Signed URLs + passkeys ń ṣọ́ ìráyé.</strong> Kò sí àwọn tókènì bearer tí ń lúwẹ̀ẹ́ nínú àkọsílẹ̀; kò sí API key tí a pín.</li>
+<li><strong>Orisun ṣiṣi ni ọ̀nà ìgbẹ́kẹ̀lé.</strong> Àwọn báńkì àti ilé-iṣẹ́ lè ka ipele iṣakoso dípò gbígbẹ́kẹ̀lé àwọn PDF olùpèsè.</li>
+</ul>
+<p><strong>Kíkà tí ó jẹmọ́:</strong> <a href="/yo/2026-05-20-cloud-native-banking-financial-institutions-2026/">Báńkì cloud-native</a> · <a href="/yo/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/">Ètò ìṣiṣẹ́ AI fún ìsanwó</a> · <a href="/yo/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/">Akopọ ìbámu DORA + AI Act</a></p>
+</aside>
+<!-- lead-end -->
+<p>CloudCDN ṣe pàtàkì nítorí pé eti ń di ipele iṣakoso fún sọ́fítíwà AI-ìbílẹ̀. Bí àwọn aṣojú ṣe bẹ̀rẹ̀ sí ní pe àwọn irinṣẹ́, gbé dátà, pa àwọn ìpamọ́ rẹ́, béèrè signed URLs, kí wọn ó sì ṣètò àwọn ìṣàn iṣẹ́, àwòkọ́ṣe CDN àtijọ́ tí ó ní àwọn pẹpẹ tí kò ní àlàyé àti àwọn ipele iṣakoso aládàáni di aláìtó. CloudCDN ń jiyàn fún àwòkọ́ṣe mìíràn: pẹpẹ eti tí ó ṣíi, tí a lè yẹ̀wò, tí aṣojú lè kó, tí ó ka ààbò, ìráyé, agbára iṣẹ́, àti ìbéère sí gẹ́gẹ́ bí àwọn ìdè ìpinnu tó pọn dandan.</p>
+<p>Ipele ìtọ́kasí orisun ṣiṣi fún àpilẹ̀kọ yìí ni <a href="https://github.com/sebastienrousseau/cloudcdn.pro" title="cloudcdn.pro">cloudcdn.pro ⧉</a>. A gbé ibi ìpamọ́ náà kalẹ̀ gẹ́gẹ́ bí: CDN AI-ìbílẹ̀ tí ó ní onígbalejò pípọ̀, tí a lè kà láti ìbẹ̀rẹ̀ dé òpin, tí a sì lè gbé jáde lọ́tọ̀ọ̀tọ̀, pẹ̀lú TTFB tí ó dín ní 100ms káàkiri àwọn PoP Cloudflare, ìṣàkóso MCP, ìdìnà ìwọ̀n Durable Objects, ìráyé WCAG-AA, signed URLs, passkeys, SLSA, àti ìdánwò 3,185 ní ìbòlẹ̀wò 100%.</p>
+<hr />
+<blockquote>
+<p><strong>Àkótán Àlàṣẹ / Àwọn Àyọkà Pàtàkì</strong></p>
+<ul>
+<li><strong>CloudCDN ni ìtàn ìgbékalẹ̀ orisun ṣiṣi tí ó wà ní ipò gíga.</strong> Ó kó àwọn ọ̀nà CDN, Cloudflare Workers, Durable Objects, MCP, signed URLs, passkeys, ìdìnà ìwọ̀n, ìráyé, àti ìbáwí ìdánwò pọ̀.</li>
+<li><strong>Eti ń di ojú aṣojú.</strong> Ní kíákíá tí àwọn ètò AI bá lè ṣiṣẹ́ ìgbékalẹ̀ nípasẹ̀ àwọn irinṣẹ́ MCP, CDN gbọ́dọ̀ di èyí tí a lè ṣàkóso nípa ìdánimọ̀, ìlànà, ààlà ìwọ̀n, àti àkọsílẹ̀ àyẹ̀wò.</li>
+<li><strong>Orisun ṣiṣi ni ọ̀nà ìgbẹ́kẹ̀lé.</strong> Báńkì tàbí ilé-iṣẹ́ lè yẹ̀wò bí ipele iṣakoso ṣe ń ṣiṣẹ́ dípò gbígbẹ́kẹ̀lé àwọn ẹ̀rí olùpèsè nìkan.</li>
+<li><strong>Ìdìnà ìwọ̀n atomiki ní ìlànà.</strong> Durable Objects pèsè ibi ìṣọ̀kan fún dídín ilòkulò òde àti àwọn àyípo aṣojú ti inú.</li>
+<li><strong>Iṣẹ́ náà jẹ́ ìkọ́lé ìtọ́kasí.</strong> Iye rẹ̀ kìí ṣe ohun tí ó ń ṣe nìkan, ṣùgbọ́n ohun tí ó kọ́ni nípa ìran ìgbékalẹ̀ eti tí ó ń bọ̀.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="idi-ti-ise-orisun-sisi-yii-fi-se-pataki-ni-2026">Ìdí Tí Iṣẹ́ Orisun Ṣiṣi Yìí Fi Ṣe Pàtàkì Ní 2026 <a class="heading-anchor" href="#idi-ti-ise-orisun-sisi-yii-fi-se-pataki-ni-2026" aria-label="Ìjápọ̀ sí Ìdí Tí Iṣẹ́ Orisun Ṣiṣi Yìí Fi Ṣe Pàtàkì Ní 2026">#</a></h2>
+<p>Iye ìlànà ti orisun ṣiṣi ní 2026 kò sí ní ti àlàyé, ìlòpọ̀, tàbí ìfẹ́ àwọn ẹlẹrọ́ nìkan mọ́. Fún àwọn báńkì àti àwọn ilé-iṣẹ́ ìnáwó, ìgbékalẹ̀ orisun ṣiṣi ti di ọ̀nà láti yẹ̀wò àwọn àròyé, dán àwọn ìṣàkóso wò, dín àìmọ́ olùpèsè kù, kí a sì yí àwọn àròyé ìkọ́lé padà di kóòdù tí a lè kà, tí a lè ya, tí a lè fún lókun, tí a sì lè ṣiṣẹ́ pẹ̀lú. Àwọn iṣẹ́ tó wúlò jù kìí ṣe ìfihàn. Wọ́n jẹ́ ìṣiṣẹ́ ìtọ́kasí tí ó ṣe àfihàn bí ààbò, ìráyé, agbára iṣẹ́, ìbámu, àti ìrírí ẹlẹrọ́ ṣe ń bá ara wọn mu.</p>
+<p>Ìyẹn ni gilasi tí a fi ń wo cloudcdn.pro. Kò jẹ́ ibi ìpamọ́ nìkan; ó jẹ́ àròyé ìpinnu tó dájú. Ó sọ pé ìgbékalẹ̀ pàtàkì gbọ́dọ̀ jẹ́ èyí tí a lè yẹ̀wò, tí a lè kó pọ̀, tí a kọ àkọsílẹ̀ rẹ̀, tí a lè dánwò, tí àwọn ènìyàn tí ó gbáralé rẹ̀ sì lè lóye. Ní iṣẹ́ ìnáwó, ìyẹn ṣe pàtàkì nítorí pé àwọn ètò ń jókòó síwájú síi ní àárín ti AI aṣojú, ìsanwó àkókò gangan, cryptography post-quantum, ìfaradà cloud-native, dátà tí ó ní ìṣètò, àti ẹ̀rí ìbojútó.</p>
+<h2 id="gilasi-ikole">Gilasi Ìkọ́lé <a class="heading-anchor" href="#gilasi-ikole" aria-label="Ìjápọ̀ sí Gilasi Ìkọ́lé">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Ìpele</th>
+<th>Ìpinnu Ìkọ́lé</th>
+<th>Ìdí Tí Ó Fi Ṣe Pàtàkì</th>
+<th>Ewu Bí A Kò Bá Ṣàkóso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ìran eti</strong></td>
+<td>Cloudflare Workers àti Pages</td>
+<td>Ìṣiṣẹ́ àgbáyé pẹ̀lú àfikún iṣẹ́ kéréje</td>
+<td>Ìṣẹ́gun latency láìsí ìbáwí ìṣàkóso</td>
+</tr>
+<tr>
+<td><strong>Ìṣọ̀kan ìpò</strong></td>
+<td>Durable Objects fún àwọn ààlà atomiki àti ìṣàkóso tí a pín</td>
+<td>Dí ìjà ìran ní ìfipá mú ní eti</td>
+<td>Ilòkulò pípín àti àwọn ìtọ́kasí tí kò bá ara wọn mu</td>
+</tr>
+<tr>
+<td><strong>Ojú aṣojú</strong></td>
+<td>Àwọn iṣẹ́ tí a fi MCP hàn</td>
+<td>Jẹ́ kí àwọn aṣojú ṣiṣẹ́ ìgbékalẹ̀ nípasẹ̀ àwọn irinṣẹ́ tí a ṣàkóso</td>
+<td>Ìpè irinṣẹ́ tí kò ní ààlà</td>
+</tr>
+<tr>
+<td><strong>Ìṣàkóso ìráyé</strong></td>
+<td>Passkeys, signed URLs, ìfọwọ́sí, àti àwọn ipa àyẹ̀wò</td>
+<td>Yí àwọn iṣẹ́ CDN padà di iṣẹ́ tí a lè dáhùn lórí</td>
+<td>Àwọn ìyípadà aláìmọ̀ tàbí èyí tí kò ní ìdánimọ̀ tó dájú</td>
+</tr>
+<tr>
+<td><strong>Ẹnu-ọ̀nà ìdára</strong></td>
+<td>Ìráyé, ìdánwò, SLSA, àti àwọn àyẹ̀wò ìgbéjáde</td>
+<td>Sọ ìgbẹ́kẹ̀lé di ara ìfiránṣẹ́</td>
+<td>Ìgbékalẹ̀ yáyára tí a kò lè ṣàkóso lọ́nà àìléwu</td>
+</tr>
+</tbody>
+</table>
+<h2 id="awon-ami-lati-topinpin">Àwọn Àmì Láti Tọpinpin <a class="heading-anchor" href="#awon-ami-lati-topinpin" aria-label="Ìjápọ̀ sí Àwọn Àmì Láti Tọpinpin">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Àmì</th>
+<th>Ohun Tí Ó Túmọ̀ Sí</th>
+<th>Ìtọ́kasí</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Irinṣẹ́ MCP 42</strong></td>
+<td>A ṣe CloudCDN fún ìgbékalẹ̀ tí aṣojú lè kó</td>
+<td><a href="https://github.com/sebastienrousseau/cloudcdn.pro" title="Ibi ìpamọ́ CloudCDN">cloudcdn.pro ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Ìdìnà ìwọ̀n Durable Objects</strong></td>
+<td>Ìṣọ̀kan eti tí ó ní ìpò ń di ìpilẹ̀ ààbò</td>
+<td><a href="https://developers.cloudflare.com/durable-objects/" title="Àkọsílẹ̀ Cloudflare Durable Objects">Cloudflare Durable Objects ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Cloudflare Agents SDK àti MCP</strong></td>
+<td>Ìpín àyíká eti gbígbòòrò ń lọ sí ìjápọ̀ aṣojú tí a fi ìdánimọ̀ rẹ̀ múlẹ̀</td>
+<td><a href="https://blog.cloudflare.com/building-ai-agents-with-mcp-authn-authz-and-durable-objects/" title="Cloudflare MCP, ìdánimọ̀ àti Durable Objects">Cloudflare ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Signed URLs àti passkeys</strong></td>
+<td>A ka ìráyé àti àṣẹàṣẹ́ sí gẹ́gẹ́ bí àwọn ọ̀rọ̀ ìgbékalẹ̀</td>
+<td><a href="https://github.com/sebastienrousseau/cloudcdn.pro" title="Ibi ìpamọ́ CloudCDN">cloudcdn.pro ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Ìdánwò 3,185 ní ìbòlẹ̀wò 100%</strong></td>
+<td>Iṣẹ́ náà gbé ìmúdájú kalẹ̀ gẹ́gẹ́ bí ara ìpinnu ìgbékalẹ̀</td>
+<td><a href="https://github.com/sebastienrousseau/cloudcdn.pro" title="Ibi ìpamọ́ CloudCDN">cloudcdn.pro ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="cdn-n-di-ipele-isakoso">CDN Ń Di Ipele Iṣakoso <a class="heading-anchor" href="#cdn-n-di-ipele-isakoso" aria-label="Ìjápọ̀ sí CDN Ń Di Ipele Iṣakoso">#</a></h2>
+<p>A kọ́ àwọn CDN ìbílẹ̀ yí àyíká ìyára àkóónú, pípa àwọn ìpamọ́ rẹ́, ọ̀nà ìránṣẹ́, àti àwọn ìdáàbò tí ó dà bí WAF. Eti AI-ìbílẹ̀ fi ohun tí a nílò tuntun kún: àwọn aṣojú sọ́fítíwà nílò láti yẹ̀wò, fà jáde, kí wọn ó sì ṣiṣẹ́ ìgbékalẹ̀ lọ́nà àìléwu. Ìyẹn yí CDN padà di ipele iṣakoso. Ipele iṣakoso gbọ́dọ̀ ní ìdánimọ̀, ìfọwọ́sí, àkọsílẹ̀, ààlà ìwọ̀n, àti agbára ìṣàlàyé.</p>
+<h2 id="idi-ti-orisun-sisi-fi-yi-awokose-igbekele-pada">Ìdí Tí Orisun Ṣiṣi Fi Yí Àwòkọ́ṣe Ìgbẹ́kẹ̀lé Padà <a class="heading-anchor" href="#idi-ti-orisun-sisi-fi-yi-awokose-igbekele-pada" aria-label="Ìjápọ̀ sí Ìdí Tí Orisun Ṣiṣi Fi Yí Àwòkọ́ṣe Ìgbẹ́kẹ̀lé Padà">#</a></h2>
+<p>Fún àwọn ilé-iṣẹ́ tí a ń ṣàkóso, ìfẹ́ CloudCDN kìí ṣe agbára iṣẹ́ nìkan. Ó jẹ́ agbára láti yẹ̀wò. Àwọn ẹgbẹ́ lè ka bí àwọn ààlà ìwọ̀n ṣe ń ṣiṣẹ́, bí a ṣe fi àwọn ojú irinṣẹ́ hàn, bí a ṣe ṣẹ̀dá signed URLs, bí a ṣe ṣètò àwọn ìdánwò, àti bí a ṣe fi ìráyé mú lágbára. Èyí ń dá ìbáṣepọ̀ tí ó yàtọ̀ sílẹ̀ láàrín ìgbékalẹ̀ àti ìṣàkóso.</p>
+<h2 id="awokose-eti-to-to-ipele-banki">Àwòkọ́ṣe Eti Tó Tó Ipele Báńkì <a class="heading-anchor" href="#awokose-eti-to-to-ipele-banki" aria-label="Ìjápọ̀ sí Àwòkọ́ṣe Eti Tó Tó Ipele Báńkì">#</a></h2>
+<p>Àwòkọ́ṣe tó tó ipele báńkì rọrùn ṣùgbọ́n ó ṣòro láti gbé jáde: àwọn iṣẹ́ tí aṣojú lè ráyé sí, ìfọwọ́sí tí ó ní ààlà tó lágbára, ìdìnà ìwọ̀n atomiki, àwọn ipa àyẹ̀wò tí a kò lè yí padà, àyẹ̀wò ìráyé, ìpín tí a fọwọsi, àti ẹ̀rí ìgbéjáde. CloudCDN yí àwòkọ́ṣe yẹn padà di kóòdù dípò ojú-iwe ìpèsè.</p>
+<h2 id="ohun-ti-eyi-tumo-si-nipa-olugbo">Ohun Tí Èyí Túmọ̀ Sí Nípa Olùgbọ́ <a class="heading-anchor" href="#ohun-ti-eyi-tumo-si-nipa-olugbo" aria-label="Ìjápọ̀ sí Ohun Tí Èyí Túmọ̀ Sí Nípa Olùgbọ́">#</a></h2>
+<h3 id="fun-awon-oludari-ero-ni-banki">Fún Àwọn Olùdarí Ẹ̀rọ ní Báńkì <a class="heading-anchor" href="#fun-awon-oludari-ero-ni-banki" aria-label="Ìjápọ̀ sí Fún Àwọn Olùdarí Ẹ̀rọ ní Báńkì">#</a></h3>
+<p>Ìbéèrè náà ni bóyá iṣẹ́ náà lè ràn ni lọ́wọ́ láti yí ìpọ́njú ìlànà padà di ìkọ́lé tí a lè gbé jáde. Iye náà ní okun jùlọ nígbà tí ibi ìpamọ́ bá fún àwọn ẹgbẹ́ ní ohun tó dájú láti yẹ̀wò: àwọn ojú, ìṣètò, ìdánwò, àwọn ààlà ààbò, àròyé ìgbéjáde, àti àwọn ọ̀nà ìkùnà.</p>
+<h3 id="fun-awon-egbe-aabo-ati-ewu">Fún Àwọn Ẹgbẹ́ Ààbò àti Ewu <a class="heading-anchor" href="#fun-awon-egbe-aabo-ati-ewu" aria-label="Ìjápọ̀ sí Fún Àwọn Ẹgbẹ́ Ààbò àti Ewu">#</a></h3>
+<p>A gbọ́dọ̀ ṣàyẹ̀wò iṣẹ́ náà kìí ṣe fún àwọn ẹya nìkan ṣùgbọ́n fún ẹ̀rí ìṣàkóso. Ìgbékalẹ̀ ìnáwó orisun ṣiṣi tó wúlò ń fi bí ìdánimọ̀, àṣírí, ìmúdájú, àkọsílẹ̀ àyẹ̀wò, ààlà ìwọ̀n, àwọn ìfọwọsí, orísun, àti ìrànlọ́wọ́ ṣe yẹ kí wọn ó ṣiṣẹ́ hàn.</p>
+<h3 id="fun-awon-elero-ati-elero-pepe">Fún Àwọn Ẹlẹrọ́ àti Ẹlẹrọ́ Pẹpẹ <a class="heading-anchor" href="#fun-awon-elero-ati-elero-pepe" aria-label="Ìjápọ̀ sí Fún Àwọn Ẹlẹrọ́ àti Ẹlẹrọ́ Pẹpẹ">#</a></h3>
+<p>Ìdánwò tí ó ṣe pàtàkì jùlọ ni bóyá iṣẹ́ náà ń dín ẹrù ìmọ̀ kù láìfi àwọn ọ̀nà pàtàkì pamọ́. Orisun ṣiṣi tó dára gbọ́dọ̀ sọ ọ̀nà àìléwu di ọ̀nà tó rọrùn lakoko tí ó ṣì ń jẹ́ kí àwọn ẹlẹrọ́ tí ó ní ìrírí lè lóye àti ṣe ìyípadà sí ìṣiṣẹ́ náà.</p>
+<h3 id="fun-awon-oluseranlowo">Fún Àwọn Olùṣèrànlọ́wọ́ <a class="heading-anchor" href="#fun-awon-oluseranlowo" aria-label="Ìjápọ̀ sí Fún Àwọn Olùṣèrànlọ́wọ́">#</a></h3>
+<p>Àǹfààní náà ni láti fún iṣẹ́ náà lókun níbi tí àwọn ilé-iṣẹ́ gidi nílò ìdánilójú: àkọsílẹ̀, àpẹẹrẹ, ìdánwò ìbámu, fífún CI lókun, àwòkọ́ṣe ewu, àwòrán agbára iṣẹ́, àyẹ̀wò ìráyé, àti ìtọ́sọ́nà ìjápọ̀.</p>
+<h2 id="ipari">Ìparí <a class="heading-anchor" href="#ipari" aria-label="Ìjápọ̀ sí Ìparí">#</a></h2>
+<p>Ìdí tí a fi ń kọ nípa cloudcdn.pro ni pé ó yí ìṣòro ilé-iṣẹ́ gbígbòòrò padà di ohun tó dájú. Ní 2026, àwọn báńkì kò nílò èdè ìyípadà ìmúdàgbà síi. Wọ́n nílò àwọn ètò tí a lè yẹ̀wò tí ó fihàn bí a ṣe lè kọ́, ní ààbò, dánwò, kí a sì ṣàkóso ìgbékalẹ̀ òde òní. Orisun ṣiṣi ni ọ̀nà tí ó gba ìgbẹ́kẹ̀lé jùlọ láti fi àròyé yẹn hàn ní kedere.</p>
+<h2 id="awon-ibeere-ti-a-n-beere-leralera">Àwọn Ìbéèrè Tí A Ń Béèrè Léraléra <a class="heading-anchor" href="#awon-ibeere-ti-a-n-beere-leralera" aria-label="Ìjápọ̀ sí Àwọn Ìbéèrè Tí A Ń Béèrè Léraléra">#</a></h2>
+<p><strong>Ìdí tí a fi ń kọ nípa CloudCDN ní àkọ́kọ́?</strong></p>
+<p>Nítorí pé ó jẹ́ ìtàn orisun ṣiṣi tó gbòòrò jùlọ: àwọn aṣojú AI, eti, MCP, ààbò, ìráyé, agbára iṣẹ́, àti ìbéère tó tó ipele báńkì nínú iṣẹ́ kan.</p>
+<p><strong>Ǹjẹ́ CloudCDN jẹ́ fún àwọn báńkì nìkan?</strong></p>
+<p>Bẹ́ẹ̀kọ́. Ìkọ́lé náà wúlò ní gbogbogbòò, ṣùgbọ́n àwọn báńkì ni gilasi tí ó nilò jùlọ nítorí pé wọ́n ń fipá mú àwọn ìṣàkóso tó lágbára, ìbéère, àti àwọn ohun tí a nilò fún ìfaradà.</p>
+<p><strong>Kínni ó sọ CloudCDN di AI-ìbílẹ̀?</strong></p>
+<p>Àwọn iṣẹ́ rẹ̀ tí MCP ń ṣàkóso àti àwòkọ́ṣe ìṣàkóso tí ó mọ̀ nípa aṣojú jẹ́ kí ó yẹ fún àwọn ìṣàn iṣẹ́ ìgbékalẹ̀ aládàáni dípò lílo pẹpẹ ènìyàn nìkan.</p>
+<p><strong>Kínni èrò ẹ̀rọ tó lágbára jùlọ?</strong></p>
+<p>Ìdìnà ìwọ̀n eti atomiki pẹ̀lú Durable Objects, nítorí pé ó lè dáàbò bo lòdì sí ilòkulò òde àti ìṣesí aṣojú ti inú tí ó ti kọjá ààlà.</p>
+<h2 id="awon-itokasi">Àwọn Ìtọ́kasí <a class="heading-anchor" href="#awon-itokasi" aria-label="Ìjápọ̀ sí Àwọn Ìtọ́kasí">#</a></h2>
+<ul>
+<li>GitHub, (2026). <a href="https://github.com/sebastienrousseau/cloudcdn.pro" title="Ibi ìpamọ́ cloudcdn.pro">Ibi ìpamọ́ cloudcdn.pro ⧉</a>.</li>
+<li>Cloudflare, (2026). <a href="https://blog.cloudflare.com/building-ai-agents-with-mcp-authn-authz-and-durable-objects/" title="Kíkọ́ àwọn aṣojú AI pẹ̀lú MCP, ìdánimọ̀ àti Durable Objects">Kíkọ́ àwọn aṣojú AI pẹ̀lú MCP, ìdánimọ̀ àti Durable Objects ⧉</a>.</li>
+<li>Cloudflare, (2026). <a href="https://developers.cloudflare.com/durable-objects/" title="Àkọsílẹ̀ Durable Objects">Àkọsílẹ̀ Durable Objects ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Àyẹ̀wò tó kẹ́yìn <time datetime="2026-06-11">2026-06-11</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/yo/nipa-wa/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ báńkì àgbà; mò ń kọ nípa AI tó wúlò, ìṣírò ISO 20022, kírípító lẹ́yìn-kuántọ́mù fún iṣẹ́ ìnáwó àti àtúnṣe ètò ìsanwó ńláńlá.</span><span class="author-credentials">Ìrírí ọdún 20+ ní HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/yo/nipa-wa/index.html">Àkọsílẹ̀ kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Àyẹ̀wò àkọ́kọ́ <time datetime="2026-05-29">2026-05-29</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Ìwé tó jọmọ́</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026" class="related-media" aria-label="Ìsanwó Alábòójútó nínú Báńkì: Àṣẹ Ìfọwọ́sí, Ojúṣe, UX Ìsanwó 2026" tabindex="-1"><img alt="Agentic payments architecture diagram showing AI agents, consent mandates, tokenised credentials, card networks, banks, merchants, and audit trails" src="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="isanwo-alaboojuto-ninu-banki-ase-ifowosi-ojuse-ux-isanwo-2026"><a href="https://sebastienrousseau.com/yo/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026">Ìsanwó Alábòójútó nínú Báńkì: Àṣẹ Ìfọwọ́sí, Ojúṣe, UX Ìsanwó 2026</a> <a class="heading-anchor" href="#isanwo-alaboojuto-ninu-banki-ase-ifowosi-ojuse-ux-isanwo-2026" aria-label="Ìjápọ̀ sí Ìsanwó Alábòójútó nínú Báńkì: Àṣẹ Ìfọwọ́sí, Ojúṣe, UX Ìsanwó 2026">#</a></h3><p><time datetime="2026-05-23">2026-05-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2026-05-16-best-cloud-infrastructure-architecture-2026" class="related-media" aria-label="Ìkọ́lé Ìpìlẹ̀ Ìkùukùu Tó Dára Jùlọ ní 2026: Ìlànà AI-Native, Multi-Cloud, Olùmọ̀-Quantum fún Àwọn Iṣẹ́-Ìnáwó" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ikole-ipile-ikuukuu-to-dara-julo-ni-2026-ilana-ai-native-multi-cloud-olumo-quant"><a href="https://sebastienrousseau.com/yo/2026-05-16-best-cloud-infrastructure-architecture-2026">Ìkọ́lé Ìpìlẹ̀ Ìkùukùu Tó Dára Jùlọ ní 2026: Ìlànà AI-Native, Multi-Cloud, Olùmọ̀-Quantum fún Àwọn Iṣẹ́-Ìnáwó</a> <a class="heading-anchor" href="#ikole-ipile-ikuukuu-to-dara-julo-ni-2026-ilana-ai-native-multi-cloud-olumo-quant" aria-label="Ìjápọ̀ sí Ìkọ́lé Ìpìlẹ̀ Ìkùukùu Tó Dára Jùlọ ní 2026: Ìlànà AI-Native, Multi-Cloud, Olùmọ̀-Quantum fún Àwọn Iṣẹ́-Ìnáwó">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Orisun & àyọ̀kà</h2><ol class="article-sources-list"><li><a href="https://github.com/sebastienrousseau/cloudcdn.pro" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/sebastienrousseau/cloudcdn.pro</span></a></li></ol></aside><nav class="post-pagination" aria-label="Ìpín àkọlé"><a class="post-pagination-prev" href="/yo/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">Tẹ́lẹ̀</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/yo/nipa-wa/index.html">About</a></li>
+              <li><a href="/yo/kan-si-wa/index.html">Contact</a></li>
+              <li><a href="/yo/static-site-generator-lo-ti-se/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Àkọsílẹ̀</h2>
+            <ul>
+              <li><a href="/yo/awon-akole/index.html">Articles</a></li>
+              <li><a href="/yo/awon-iwe/index.html">Papers</a></li>
+              <li><a href="/yo/awon-ami/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Iṣẹ́</h2>
+            <ul>
+              <li><a href="/yo/awon-ise/index.html">Projects</a></li>
+              <li><a href="/yo/akojopo-orin/index.html">Playlists</a></li>
+              <li><a href="/yo/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Kàn sí</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Ìforúkọsílẹ̀ ìwé ìròyìn">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — àwọn àkíyèsí ìwádìí lórí ìsanwó, AI àti kírípító lẹ́yìn-kuántọ́mù. Kò sí spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="iwo@banki.com.ng" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Forúkọsílẹ̀</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Àwọn ọ̀nà àjọṣepọ̀">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau lórí Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau lórí LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau lórí Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau lórí YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/yo/ile-wiwole/index.html">Accessibility</a> ·
+            <a href="/yo/aabo-ikoko/index.html">Privacy</a> ·
+            <a href="/yo/awon-ofin/index.html">Terms</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"yo"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"yo"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1463,"headline":"CloudCDN: Ètò Ìpinnu Orisun Ṣiṣi fún Eti AI-Ìbílẹ̀ ní 2026","description":"CloudCDN jẹ́ ètò ìpinnu CDN eti AI-ìbílẹ̀, orisun ṣiṣi fún ìgbékalẹ̀ tí MCP ń ṣàkóso, ìdìnà ìwọ̀n Durable Objects, signed URLs, ìráyé, àti ìbéère.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp","width":"100vw","height":"100vh","caption":"Àkójọ rack ilé-iṣẹ́ dátà tó ń tàn ní alẹ́ — àmì ti eti orisun ṣiṣi tí a lè yẹ̀wò tí ó sì lè jẹ́ kíkó nípasẹ̀ aṣojú, èyí tí a kọ́ CloudCDN sí"},"url":"https://sebastienrousseau.com/yo/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/","datePublished":"2026-06-11T06:06:06+00:00","dateModified":"2026-06-11","inLanguage":"yo","keywords":"CloudCDN, eti AI-ìbílẹ̀, CDN orisun ṣiṣi, MCP server, Cloudflare Workers, Durable Objects, signed URLs, passkeys, SLSA, ìgbékalẹ̀ eti","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/yo/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"yo"},"citation":[{"@type":"CreativeWork","url":"https://github.com/sebastienrousseau/cloudcdn.pro"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/yo/"},{"@type":"ListItem","position":3,"name":"CloudCDN: Ètò Ìpinnu Orisun Ṣiṣi fún Eti AI-Ìbílẹ̀ ní 2026","item":"https://sebastienrousseau.com/yo/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Wá">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Wá</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Wá">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Wá nínú àwọn ìwé..." autocomplete="off" aria-label="Wá"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> tì</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> ríranlọ́wọ́</span><span><kbd>Enter</kbd> ṣí</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

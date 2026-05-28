@@ -6,8 +6,27 @@
     <description>Awọn akọle Yorùbá: AI tó wúlò, ìsanwó ISO 20022, kírípítógíráfì lẹ́yìn-kuántọ́mù, àti àtúnṣe ètò ìsanwó ńláńlá.</description>
     <atom:link href="https://sebastienrousseau.com/yo/rss.xml" rel="self" type="application/rss+xml"/>
     <language>yo-NG</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 23:46:22 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Gbogbo ẹtọ ti wa ni ipamọ.</copyright>
+    <item>
+      <title>CloudCDN: Ètò Ìpinnu Orisun Ṣiṣi fún Eti AI-Ìbílẹ̀ ní 2026</title>
+      <link>https://sebastienrousseau.com/yo/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</link>
+      <description>CloudCDN jẹ́ ètò ìpinnu CDN eti AI-ìbílẹ̀, orisun ṣiṣi fún ìgbékalẹ̀ tí MCP ń ṣàkóso, ìdìnà ìwọ̀n Durable Objects, signed URLs, ìráyé, àti ìbéère.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</guid>
+      <pubDate>Thu, 28 May 2026 23:46:22 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>CloudCDN</category>
+      <category>eti AI-ìbílẹ̀</category>
+      <category>CDN orisun ṣiṣi</category>
+      <category>MCP server</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>signed URLs</category>
+      <category>passkeys</category>
+      <category>SLSA</category>
+      <category>ìgbékalẹ̀ eti</category>
+    </item>
     <item>
       <title>DORA, EU AI Act, àti Ọba Lori Dátà: Akopọ Ìbámu 2026 fún Báńkì</title>
       <link>https://sebastienrousseau.com/yo/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

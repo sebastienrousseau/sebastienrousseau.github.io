@@ -1,12 +1,12 @@
 {
-  "title": "EU AI 규제: 세계 AI 규제의 미래를 형성하다",
-  "last_reviewed": "2026-05-16",
-  "banner_alt": "브뤼셀 EU 의회",
-  "description": "EU AI 법이 세계 AI 규제를 어떻게 형성하고 기업의 AI 채택에 영향을 미치는지에 관하여.",
-  "banner": "https://cloudcdn.pro/stocks/images/guillaume-perigois-0NRkVddA1fw-unsplash.webp",
-  "subtitle": "EU AI 법과 그 세계적 영향",
-  "locale": "ko_KR",
   "date": "February 13, 2024",
+  "description": "EU AI 법이 세계 AI 규제를 어떻게 형성하고 기업의 AI 채택에 영향을 미치는지에 관하여.",
+  "subtitle": "EU AI 법과 그 세계적 영향",
+  "banner": "https://cloudcdn.pro/stocks/images/guillaume-perigois-0NRkVddA1fw-unsplash.webp",
+  "locale": "ko_KR",
+  "keywords": "EU AI 법, AI 규제, 거버넌스, 위험 분류, 규정 준수, GDPR, AI 감독",
   "language": "ko-KR",
-  "keywords": "EU AI 법, AI 규제, 거버넌스, 위험 분류, 규정 준수, GDPR, AI 감독"
+  "title": "EU AI 규제: 세계 AI 규제의 미래를 형성하다",
+  "banner_alt": "브뤼셀 EU 의회",
+  "last_reviewed": "2026-05-16"
 }

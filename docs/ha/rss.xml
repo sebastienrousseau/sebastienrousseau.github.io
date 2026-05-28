@@ -6,8 +6,27 @@
     <description>Labaran Hausa: AI mai amfani, biyan kuɗi na ISO 20022, kiriftografi bayan kwantum da sauye-sauyen biyan kuɗi na manyan.</description>
     <atom:link href="https://sebastienrousseau.com/ha/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ha-NG</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 23:46:21 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. An kiyaye duk hakkokin.</copyright>
+    <item>
+      <title>CloudCDN: Tsari na Buɗaɗɗen Tushe ga Gefe na AI-na Asali a 2026</title>
+      <link>https://sebastienrousseau.com/ha/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</link>
+      <description>CloudCDN tsari ne na buɗaɗɗen tushe, na CDN na gefe na AI-na asali don ababen more rayuwa da MCP ke sarrafa, iyakancewar adadi ta Durable Objects, signed URLs, da ikon bincike.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</guid>
+      <pubDate>Thu, 28 May 2026 23:46:21 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>CloudCDN</category>
+      <category>gefe na AI-na asali</category>
+      <category>CDN na buɗaɗɗen tushe</category>
+      <category>MCP server</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>signed URLs</category>
+      <category>passkeys</category>
+      <category>SLSA</category>
+      <category>ababen more rayuwa na gefe</category>
+    </item>
     <item>
       <title>DORA, EU AI Act, da Ikon Mallakar Bayanai: Tarin Bin Doka na 2026 ga Bankuna</title>
       <link>https://sebastienrousseau.com/ha/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

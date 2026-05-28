@@ -6,8 +6,27 @@
     <description>Статьи на русском языке: прикладной ИИ, платежи ISO 20022, постквантовая криптография и трансформация оптовых платежей.</description>
     <atom:link href="https://sebastienrousseau.com/ru/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ru-RU</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 23:46:22 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Все права защищены.</copyright>
+    <item>
+      <title>CloudCDN: открытая схема AI-нативной периферии в 2026 году</title>
+      <link>https://sebastienrousseau.com/ru/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</link>
+      <description>CloudCDN — открытая AI-нативная схема периферийного CDN: управление через MCP, лимиты на Durable Objects, подписанные URL, доступность, аудируемость.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</guid>
+      <pubDate>Thu, 28 May 2026 23:46:22 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>CloudCDN</category>
+      <category>AI-нативная периферия</category>
+      <category>открытый CDN</category>
+      <category>MCP-сервер</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>подписанные URL</category>
+      <category>passkeys</category>
+      <category>SLSA</category>
+      <category>периферийная инфраструктура</category>
+    </item>
     <item>
       <title>DORA, Закон ЕС об ИИ и суверенитет данных: стек комплаенса банков 2026 года</title>
       <link>https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

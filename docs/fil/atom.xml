@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/fil/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/fil/"/>
   <id>https://sebastienrousseau.com/fil/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-28T23:46:21+00:00</updated>
+  <entry>
+    <title>CloudCDN: Open-Source na Blueprint para sa AI-Native Edge sa 2026</title>
+    <link href="https://sebastienrousseau.com/fil/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/"/>
+    <id>https://sebastienrousseau.com/fil/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</id>
+    <updated>2026-05-28T23:46:21+00:00</updated>
+    <published>2026-05-28T23:46:21+00:00</published>
+    <summary>Ang CloudCDN ay open-source, AI-native edge CDN blueprint para sa imprastraktura na MCP-controlled, rate limiting ng Durable Objects, signed URLs, accessibility, at kakayahang i-audit.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI Act, at Soberanya ng Data: Compliance Stack ng Bangko 2026</title>
     <link href="https://sebastienrousseau.com/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>
