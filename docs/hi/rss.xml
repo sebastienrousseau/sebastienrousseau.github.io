@@ -6,8 +6,24 @@
     <description>हिन्दी लेख: व्यावहारिक AI, ISO 20022 भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतान का रूपांतरण।</description>
     <atom:link href="https://sebastienrousseau.com/hi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>hi-IN</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 20:55:00 +0000</lastBuildDate>
     <copyright>© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।</copyright>
+    <item>
+      <title>2026 में टोकनयुक्त निपटान सूचकांक: स्टेबलकॉइन, टोकनयुक्त जमा, थोक CBDC और निपटान अंतिमता</title>
+      <link>https://sebastienrousseau.com/hi/2026-06-09-tokenised-settlement-index-stablecoins-tokenised-deposits-wholesale-cbdc-2026/</link>
+      <description>स्टेबलकॉइन, टोकनयुक्त जमा, थोक CBDC, डिजिटल प्रतिभूतियाँ, संपार्श्विक और निपटान-अंतिमता मॉडलों की तुलना करता 2026 का टोकनयुक्त निपटान सूचकांक।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-06-09-tokenised-settlement-index-stablecoins-tokenised-deposits-wholesale-cbdc-2026/</guid>
+      <pubDate>Thu, 28 May 2026 20:55:00 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck.webp" type="image/webp" length="0"/>
+      <category>टोकनयुक्त निपटान 2026</category>
+      <category>बैंकों के लिए स्टेबलकॉइन</category>
+      <category>टोकनयुक्त जमा</category>
+      <category>थोक CBDC</category>
+      <category>निपटान अंतिमता</category>
+      <category>डिजिटल प्रतिभूतियाँ सैंडबॉक्स</category>
+      <category>Project Agorá</category>
+    </item>
     <item>
       <title>DORA, EU AI अधिनियम और डेटा संप्रभुता: बैंकों का 2026 अनुपालन स्टैक</title>
       <link>https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

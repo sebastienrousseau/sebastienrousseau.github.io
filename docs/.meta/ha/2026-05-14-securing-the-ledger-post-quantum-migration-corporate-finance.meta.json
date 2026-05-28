@@ -1,11 +1,11 @@
 {
   "description": "Haɗarin quantum ya ƙaura daga bincike zuwa umarnin ƙa'ida. G7 roadmap na Janairu 2026, EU, UK, da ASD, da BIS Project Leap sun tabbatar cewa tambayar hukuma yanzu ita ce ko za a kammala ƙaura kafin ƙarshen rayuwar bayanai.",
-  "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp",
-  "locale": "ha_NG",
-  "keywords": "post-quantum cryptography, ƙaura ta PQC, bankin kamfanoni, sabis na kuɗi, G7 CEG roadmap, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204",
   "date": "May 14, 2026",
   "title": "Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance",
   "banner_alt": "Diagram na hanyar ƙaura ta post-quantum cryptography — kayan aikin bankin kamfanoni na canza daga RSA zuwa ML-KEM da ML-DSA",
+  "language": "ha-NG",
+  "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp",
+  "locale": "ha_NG",
   "subtitle": "Haɗarin quantum ya ƙaura daga sha'awar bincike zuwa umarnin ƙa'ida mai aiki. Tare da G7 roadmap na 2026 da BIS Project Leap da ya tabbatar da yiwuwa a cikin tsarin biyan kuɗi, tambayar a matakin hukuma yanzu ita ce ko ƙaurar za a kammala kafin ƙarshen rayuwar bayanan yau.",
-  "language": "ha-NG"
+  "keywords": "post-quantum cryptography, ƙaura ta PQC, bankin kamfanoni, sabis na kuɗi, G7 CEG roadmap, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204"
 }

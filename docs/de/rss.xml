@@ -6,14 +6,30 @@
     <description>Artikel auf Deutsch: angewandte KI, ISO-20022-Zahlungen, Post-Quanten-Kryptografie und Transformation des Wholesale-Zahlungsverkehrs.</description>
     <atom:link href="https://sebastienrousseau.com/de/rss.xml" rel="self" type="application/rss+xml"/>
     <language>de-DE</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 20:55:00 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle Rechte vorbehalten.</copyright>
+    <item>
+      <title>Tokenisierte Abwicklung 2026: Stablecoins, Einlagen, CBDC, Finalität</title>
+      <link>https://sebastienrousseau.com/de/2026-06-09-tokenised-settlement-index-stablecoins-tokenised-deposits-wholesale-cbdc-2026/</link>
+      <description>Index der tokenisierten Abwicklung 2026: Stablecoins, tokenisierte Einlagen, Wholesale-CBDC, digitale Wertpapiere und Modelle der Abwicklungsfinalität.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-06-09-tokenised-settlement-index-stablecoins-tokenised-deposits-wholesale-cbdc-2026/</guid>
+      <pubDate>Thu, 28 May 2026 20:55:00 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck.webp" type="image/webp" length="0"/>
+      <category>tokenisierte Abwicklung 2026</category>
+      <category>Stablecoins Banken</category>
+      <category>tokenisierte Einlagen</category>
+      <category>Wholesale-CBDC</category>
+      <category>Abwicklungsfinalität</category>
+      <category>Digital Securities Sandbox</category>
+      <category>Project Agorá</category>
+    </item>
     <item>
       <title>DORA, EU-KI-Verordnung und Datensouveränität: Der Compliance-Stack 2026 für Banken</title>
       <link>https://sebastienrousseau.com/de/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
       <description>DORA, die EU-KI-Verordnung, DSGVO, Cloud-Konzentrationsrisiko und Datensouveränität verschmelzen 2026 zu einem Compliance-Stack für Banken.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
-      <pubDate>Thu, 28 May 2026 06:26:19 +0000</pubDate>
+      <pubDate>Thu, 28 May 2026 20:55:00 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>DORA 2026</category>
@@ -29,7 +45,7 @@
       <link>https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/</link>
       <description>KI wird 2026 zum Betriebssystem des Zahlungsverkehrs: vom Analytik-Werkzeug zur Steuerungsschicht für Betrugsabwehr, Zahlungsreparatur, Routing, Liquiditätsprognose, Compliance-Prüfung und agentische Handelskontrollen.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/</guid>
-      <pubDate>Thu, 28 May 2026 06:26:19 +0000</pubDate>
+      <pubDate>Thu, 28 May 2026 20:55:00 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>KI-Zahlungsverkehr 2026</category>

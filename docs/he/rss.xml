@@ -6,8 +6,24 @@
     <description>מאמרים בעברית: AI יישומי, תשלומי ISO 20022, קריפטוגרפיה פוסט-קוונטית, וטרנספורמציה של תשלומי סיטונאות.</description>
     <atom:link href="https://sebastienrousseau.com/he/rss.xml" rel="self" type="application/rss+xml"/>
     <language>he-IL</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 20:55:00 +0000</lastBuildDate>
     <copyright>© זכויות יוצרים 2007 - 2026 - Sebastien Rousseau. כל הזכויות שמורות.</copyright>
+    <item>
+      <title>מדד הסליקה מבוססת האסימונים ב-2026: סטייבלקוינים, פיקדונות, CBDC סיטונאי וסופיות</title>
+      <link>https://sebastienrousseau.com/he/2026-06-09-tokenised-settlement-index-stablecoins-tokenised-deposits-wholesale-cbdc-2026/</link>
+      <description>מדד סליקה מבוססת אסימונים ל-2026: השוואה בין סטייבלקוינים, פיקדונות מבוססי אסימונים, CBDC סיטונאי, ניירות ערך דיגיטליים, בטוחה וסופיות סליקה לבנקים.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-06-09-tokenised-settlement-index-stablecoins-tokenised-deposits-wholesale-cbdc-2026/</guid>
+      <pubDate>Tue, 09 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck.webp" type="image/webp" length="0"/>
+      <category>סליקה מבוססת אסימונים 2026</category>
+      <category>סטייבלקוינים בבנקים</category>
+      <category>פיקדונות מבוססי אסימונים</category>
+      <category>CBDC סיטונאי</category>
+      <category>סופיות סליקה</category>
+      <category>ארגז חול לניירות ערך דיגיטליים</category>
+      <category>Project Agorá</category>
+    </item>
     <item>
       <title>DORA, חוק הבינה המלאכותית וריבונות נתונים: ערימת הציות של 2026 לבנקים</title>
       <link>https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

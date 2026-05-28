@@ -6,8 +6,24 @@
     <description>Artículos en español: IA aplicada, pagos ISO 20022, criptografía postcuántica y transformación de los pagos mayoristas.</description>
     <atom:link href="https://sebastienrousseau.com/es/rss.xml" rel="self" type="application/rss+xml"/>
     <language>es-ES</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 20:55:00 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Todos los derechos reservados.</copyright>
+    <item>
+      <title>Índice de Liquidación Tokenizada 2026: stablecoins, depósitos y CBDC mayorista</title>
+      <link>https://sebastienrousseau.com/es/2026-06-09-tokenised-settlement-index-stablecoins-tokenised-deposits-wholesale-cbdc-2026/</link>
+      <description>Índice de liquidación tokenizada 2026: comparativa de stablecoins, depósitos tokenizados, CBDC mayorista, valores digitales, colateral y finalidad de liquidación.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-06-09-tokenised-settlement-index-stablecoins-tokenised-deposits-wholesale-cbdc-2026/</guid>
+      <pubDate>Thu, 28 May 2026 20:55:00 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck.webp" type="image/webp" length="0"/>
+      <category>liquidación tokenizada 2026</category>
+      <category>stablecoins banca</category>
+      <category>depósitos tokenizados</category>
+      <category>CBDC mayorista</category>
+      <category>finalidad de liquidación</category>
+      <category>sandbox de valores digitales</category>
+      <category>Project Agorá</category>
+    </item>
     <item>
       <title>DORA, EU AI Act y soberanía de datos: el stack de cumplimiento bancario 2026</title>
       <link>https://sebastienrousseau.com/es/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

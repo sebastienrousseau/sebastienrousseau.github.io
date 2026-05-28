@@ -1,11 +1,11 @@
 {
-  "title": "Static Site Generator: de snelste statische sitegenerator in Rust",
-  "description": "Static Site Generator is een statische sitegenerator in Rust, ontworpen voor prestaties, toegankelijkheid en SEO, met eersteklas JSON-LD.",
-  "language": "nl-NL",
-  "date": "October 9, 2023",
-  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
-  "locale": "nl_NL",
-  "banner_alt": "Banner van Static Site Generator: statische sitegenerator in Rust",
+  "keywords": "Static Site Generator, statische sitegenerator, Rust, SSG, prestaties, SEO, JSON-LD, toegankelijkheid",
   "subtitle": "Razendsnelle builds met eersteklas JSON-LD, toegankelijkheid en SEO",
-  "keywords": "Static Site Generator, statische sitegenerator, Rust, SSG, prestaties, SEO, JSON-LD, toegankelijkheid"
+  "date": "October 9, 2023",
+  "locale": "nl_NL",
+  "language": "nl-NL",
+  "description": "Static Site Generator is een statische sitegenerator in Rust, ontworpen voor prestaties, toegankelijkheid en SEO, met eersteklas JSON-LD.",
+  "title": "Static Site Generator: de snelste statische sitegenerator in Rust",
+  "banner_alt": "Banner van Static Site Generator: statische sitegenerator in Rust",
+  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
 }

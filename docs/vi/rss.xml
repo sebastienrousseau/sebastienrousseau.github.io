@@ -6,8 +6,24 @@
     <description>Bài viết tiếng Việt: AI ứng dụng, thanh toán ISO 20022, mật mã hậu lượng tử và chuyển đổi thanh toán bán buôn.</description>
     <atom:link href="https://sebastienrousseau.com/vi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>vi-VN</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 20:55:00 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Đã đăng ký bản quyền.</copyright>
+    <item>
+      <title>Chỉ số Thanh toán Token hóa 2026: stablecoin, tiền gửi token hóa, CBDC bán buôn và tính cuối cùng của thanh toán</title>
+      <link>https://sebastienrousseau.com/vi/2026-06-09-tokenised-settlement-index-stablecoins-tokenised-deposits-wholesale-cbdc-2026/</link>
+      <description>Chỉ số thanh toán token hóa 2026 so sánh stablecoin, tiền gửi token hóa, CBDC bán buôn, chứng khoán số, tài sản thế chấp và các mô hình tính cuối cùng của thanh toán.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-06-09-tokenised-settlement-index-stablecoins-tokenised-deposits-wholesale-cbdc-2026/</guid>
+      <pubDate>Thu, 28 May 2026 20:55:00 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck.webp" type="image/webp" length="0"/>
+      <category>thanh toán token hóa 2026</category>
+      <category>stablecoin ngân hàng</category>
+      <category>tiền gửi token hóa</category>
+      <category>CBDC bán buôn</category>
+      <category>tính cuối cùng của thanh toán</category>
+      <category>sandbox chứng khoán số</category>
+      <category>Project Agorá</category>
+    </item>
     <item>
       <title>DORA, Đạo luật AI EU và chủ quyền dữ liệu: ngăn xếp tuân thủ 2026 cho ngân hàng</title>
       <link>https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

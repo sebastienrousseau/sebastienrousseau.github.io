@@ -6,8 +6,24 @@
     <description>中文文章：應用人工智慧、ISO 20022 支付、後量子密碼學以及批發支付的轉型。</description>
     <atom:link href="https://sebastienrousseau.com/zh-hant/rss.xml" rel="self" type="application/rss+xml"/>
     <language>zh-Hant</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 20:55:00 +0000</lastBuildDate>
     <copyright>© 2007 - 2026 - Sebastien Rousseau。版權所有，翻印必究。</copyright>
+    <item>
+      <title>2026 代幣化結算指數:穩定幣、存款與批發型 CBDC</title>
+      <link>https://sebastienrousseau.com/zh-hant/2026-06-09-tokenised-settlement-index-stablecoins-tokenised-deposits-wholesale-cbdc-2026/</link>
+      <description>2026 年代幣化結算指數,比較穩定幣、代幣化存款、批發型 CBDC、數位證券與抵押品在信任、最終性、流動性、監理與整合面向的就緒度。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-06-09-tokenised-settlement-index-stablecoins-tokenised-deposits-wholesale-cbdc-2026/</guid>
+      <pubDate>Tue, 09 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck.webp" type="image/webp" length="0"/>
+      <category>代幣化結算 2026</category>
+      <category>穩定幣銀行</category>
+      <category>代幣化存款</category>
+      <category>批發型 CBDC</category>
+      <category>結算最終性</category>
+      <category>數位證券沙盒</category>
+      <category>Project Agorá</category>
+    </item>
     <item>
       <title>DORA、EU AI 法與資料主權:銀行 2026 年法遵堆疊</title>
       <link>https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

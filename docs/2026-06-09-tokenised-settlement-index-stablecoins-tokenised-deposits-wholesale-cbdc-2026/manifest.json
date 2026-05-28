@@ -1,0 +1,19 @@
+{
+  "background_color": "#ffffff",
+  "description": "A 2026 tokenised settlement index comparing stablecoins, tokenised deposits, wholesale CBDC, digital securities, collate",
+  "display": "standalone",
+  "icons": [
+    {
+      "purpose": "any maskable",
+      "sizes": "512x512",
+      "src": "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg",
+      "type": "image/svg+xml"
+    }
+  ],
+  "name": "Sebastien Rousseau",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": "sebastienrou",
+  "start_url": ".",
+  "theme_color": "#ffffff"
+}

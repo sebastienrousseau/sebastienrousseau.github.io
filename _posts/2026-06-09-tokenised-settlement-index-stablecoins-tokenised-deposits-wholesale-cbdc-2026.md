@@ -3,10 +3,10 @@
 # Front Matter (YAML)
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "The Tokenised Settlement Index 2026 index diagram for banks and financial institutions in 2026"
-banner_height: "571"
-banner_width: "1425"
-banner: "https://cloudcdn.pro/stock/images/tokenised-settlement-index-2026-banner.webp"
+banner_alt: "Abstract architectural photograph used as the visual key for the 2026 Tokenised Settlement Index — comparing stablecoins, tokenised deposits, wholesale CBDC, digital securities, collateral, and settlement-finality models"
+banner_height: "1597"
+banner_width: "2584"
+banner: "https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -42,6 +42,7 @@ seo_title: "The Tokenised Settlement Index 2026"
 short_name: "sebastienrousseau"
 subtitle: "Tokenised settlement is moving from market narrative to infrastructure design; banks must compare money forms by trust, finality, liquidity, regulation, and integration."
 tags: "tokenised settlement, stablecoins, tokenised deposits, wholesale CBDC, digital securities, settlement finality"
+excerpt: "A 2026 tokenised settlement index — comparing stablecoins, tokenised deposits, wholesale CBDC, digital securities, and collateral across trust, finality, liquidity, regulation, and integration."
 theme-color: "0, 83, 191"
 title: "The Tokenised Settlement Index in 2026: Stablecoins, Tokenised Deposits, Wholesale CBDC, and Settlement Finality"
 url: "https://sebastienrousseau.com/2026-06-09-tokenised-settlement-index-stablecoins-tokenised-deposits-wholesale-cbdc-2026"
@@ -101,6 +102,23 @@ site_software: "Static Site Generator, Rust"
 ---
 
 # The Tokenised Settlement Index in 2026: Stablecoins, Tokenised Deposits, Wholesale CBDC, and Settlement Finality
+
+
+
+
+<!-- lead-start -->
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> A 2026 tokenised settlement index comparing stablecoins, tokenised deposits, wholesale CBDC, digital securities, collateral, and settlement-finality models.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Why 2026 Is the Year This Index Matters.</strong> The Stanford AI Index is useful because it treats a fast-moving technology field as something that can be measured: research output, technical performance, responsible deployment, economics, sector adoption, policy,…</li>
+  <li><strong>Current Signals to Track.</strong> The index should not treat stablecoins, tokenised deposits, and wholesale CBDC as interchangeable.</li>
+  <li><strong>Three Forms of Digital Money.</strong> The index should not treat stablecoins, tokenised deposits, and wholesale CBDC as interchangeable.</li>
+  <li><strong>The Cash Leg Problem.</strong> Tokenised securities only become useful at scale when the cash leg is equally robust.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026">Stablecoins vs Tokenised Deposits in 2026: What Banks Actually Need to Defend</a>, <a href="https://sebastienrousseau.com/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026">Programmable Liquidity in 2026: AI, Tokenised Deposits, and Real-Time Treasury Orchestration</a>, <a href="https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026">The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments</a>.</p>
+</aside>
+<!-- lead-end -->
 
 Tokenised settlement in 2026 is not a contest between one form of digital money and all others. Stablecoins, tokenised deposits, and wholesale CBDC each solve different problems. The index should measure when each settlement asset improves trust, liquidity, finality, programmability, and integration with regulated financial-market infrastructure.
 
@@ -203,6 +221,14 @@ Compare them by finality, regulatory treatment, liquidity, credit risk, programm
 - Deutsche Bank, (2026). [Digital Money: stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, payments infrastructure, tokenised money, ISO 20022, post-quantum security, cloud-native financial services, and regulated digital markets.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-06-09">2026-06-09</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026" class="related-media" aria-label="Stablecoins vs Tokenised Deposits in 2026: What Banks Actually Need to Defend" tabindex="-1"><img alt="Comparison diagram showing stablecoins, tokenised deposits, commercial bank money, reserve assets, wallets, settlement, liquidity, and bank balance sheets" src="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026">Stablecoins vs Tokenised Deposits in 2026: What Banks Actually Need to Defend</a></h3><p><time datetime="2026-05-26">2026-05-26</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026" class="related-media" aria-label="Programmable Liquidity in 2026: AI, Tokenised Deposits, and Real-Time Treasury Orchestration" tabindex="-1"><img alt="Programmable liquidity architecture diagram showing treasury systems, AI forecasting, tokenised deposits, real-time rails, stablecoins, virtual accounts, FX, and collateral mobility" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026">Programmable Liquidity in 2026: AI, Tokenised Deposits, and Real-Time Treasury Orchestration</a></h3><p><time datetime="2026-05-25">2026-05-25</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026" class="related-media" aria-label="The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments" tabindex="-1"><img alt="UK payments modernisation diagram showing stablecoins, tokenised deposits, open banking, AI agents, FCA regulation, PSR consolidation, and wholesale digital markets" src="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026">The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments</a></h3><p><time datetime="2026-05-24">2026-05-24</time></p></footer></article>
+</div>
+</aside>
 <!-- enrich-end -->

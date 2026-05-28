@@ -1,11 +1,11 @@
 {
-  "keywords": "ISO 20022, pacs.008, SWIFT CBPR+, alamat terstruktur, November 2026, alamat pos, TwnNm, Ctry, StrtNm, BldgNb",
-  "description": "Mulai November 2026, SWIFT CBPR+ mewajibkan alamat pos terstruktur dalam pesan pembayaran lintas batas. Baris alamat tidak terstruktur (hanya AdrLine) tidak lagi diterima di pacs.008; minimal TwnNm dan Ctry diperlukan. Saat ini 65% pesan masih tidak patuh dan 44% bank tertinggal dari jadwal.",
   "language": "id-ID",
-  "subtitle": "Mulai pertengahan November 2026, SWIFT CBPR+ akan menolak alamat pos tidak terstruktur dalam pacs.008 dan pesan pembayaran lintas batas terkait. Dengan sekitar 65% pesan masih tidak patuh, jendela remediasi semakin sempit.",
-  "locale": "id_ID",
-  "banner_alt": "Diagram alamat terstruktur ISO 20022 pacs.008 — bidang pesan pembayaran lintas batas dengan TwnNm dan Ctry yang disorot",
+  "banner": "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp",
   "title": "[ID DRAFT] The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View",
   "date": "May 12, 2026",
-  "banner": "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
+  "subtitle": "Mulai pertengahan November 2026, SWIFT CBPR+ akan menolak alamat pos tidak terstruktur dalam pacs.008 dan pesan pembayaran lintas batas terkait. Dengan sekitar 65% pesan masih tidak patuh, jendela remediasi semakin sempit.",
+  "banner_alt": "Diagram alamat terstruktur ISO 20022 pacs.008 — bidang pesan pembayaran lintas batas dengan TwnNm dan Ctry yang disorot",
+  "keywords": "ISO 20022, pacs.008, SWIFT CBPR+, alamat terstruktur, November 2026, alamat pos, TwnNm, Ctry, StrtNm, BldgNb",
+  "description": "Mulai November 2026, SWIFT CBPR+ mewajibkan alamat pos terstruktur dalam pesan pembayaran lintas batas. Baris alamat tidak terstruktur (hanya AdrLine) tidak lagi diterima di pacs.008; minimal TwnNm dan Ctry diperlukan. Saat ini 65% pesan masih tidak patuh dan 44% bank tertinggal dari jadwal.",
+  "locale": "id_ID"
 }

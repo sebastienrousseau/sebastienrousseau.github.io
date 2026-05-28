@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp",
-  "title": "[UK DRAFT] Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded",
-  "keywords": "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, стейблкоїн, токенізований фонд грошового ринку, OnChain Shares, Securitize",
-  "date": "May 15, 2026",
-  "subtitle": "Стейблкоїни не можуть виплачувати дохід згідно з GENIUS Act. 8 травня 2026 року BlackRock подала два продукти, які юридично не є стейблкоїнами — і можуть виплачувати дохід у гаманці на публічному блокчейні.",
-  "banner_alt": "Архітектурна діаграма токенізованого фонду грошового ринку BlackRock — BRSRV OnChain Shares та клас акцій BSTBL ERC-20 із резервними потоками GENIUS Act",
   "language": "uk-UA",
+  "keywords": "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, стейблкоїн, токенізований фонд грошового ринку, OnChain Shares, Securitize",
+  "subtitle": "Стейблкоїни не можуть виплачувати дохід згідно з GENIUS Act. 8 травня 2026 року BlackRock подала два продукти, які юридично не є стейблкоїнами — і можуть виплачувати дохід у гаманці на публічному блокчейні.",
+  "date": "May 15, 2026",
   "locale": "uk_UA",
+  "banner": "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp",
+  "banner_alt": "Архітектурна діаграма токенізованого фонду грошового ринку BlackRock — BRSRV OnChain Shares та клас акцій BSTBL ERC-20 із резервними потоками GENIUS Act",
+  "title": "[UK DRAFT] Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded",
   "description": "Стейблкоїни не можуть виплачувати дохід згідно з GENIUS Act. 8 травня 2026 року BlackRock подала до SEC реєстрації BRSRV і BSTBL — фонди грошового ринку, що виплачують дохід у гаманці на блокчейні, а не стейблкоїни."
 }

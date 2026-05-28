@@ -1,11 +1,11 @@
 {
-  "title": "ERC-20: The Ethereum Token Interface That Changed the World",
-  "description": "ERC-20 হল Ethereum ব্লকচেইনে সর্বাধিক ব্যবহৃত টোকেন মান, যা স্মার্ট কন্ট্রাক্ট ডিজিটাল চুক্তি হিসেবে পরিচিত এবং ডিজিটাল সম্পদ লেনদেনকে সহজ করে তোলে।",
-  "date": "Jan 24, 2018",
   "locale": "bn_BD",
-  "banner_alt": "বাদামি কাঠের টেবিলের উপর বন্ধ ল্যাপটপ কম্পিউটার",
   "language": "bn-BD",
+  "banner_alt": "বাদামি কাঠের টেবিলের উপর বন্ধ ল্যাপটপ কম্পিউটার",
+  "date": "Jan 24, 2018",
+  "title": "ERC-20: The Ethereum Token Interface That Changed the World",
+  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
   "keywords": "ethereum, erc20, eip, টোকেন, কন্ট্রাক্ট, blockchain, ক্রিপ্টোকারেন্সি, smart-token, solidity",
   "subtitle": "ERC-20 টোকেন, Ethereum স্মার্ট কন্ট্রাক্ট এবং ডিজিটাল সম্পদের মানকীকরণ।",
-  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
+  "description": "ERC-20 হল Ethereum ব্লকচেইনে সর্বাধিক ব্যবহৃত টোকেন মান, যা স্মার্ট কন্ট্রাক্ট ডিজিটাল চুক্তি হিসেবে পরিচিত এবং ডিজিটাল সম্পদ লেনদেনকে সহজ করে তোলে।"
 }

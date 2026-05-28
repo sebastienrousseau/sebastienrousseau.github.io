@@ -1,11 +1,11 @@
 {
-  "keywords": "AI, audio, transkrypcja, tłumaczenia, Whisper, rozpoznawanie mowy, NLP",
   "locale": "pl_PL",
-  "description": "Konwertuj dźwięk na tekst w czasie rzeczywistym dzięki zaawansowanemu rozpoznawaniu mowy AI, wydobywając użyteczne spostrzeżenia z danych audio.",
-  "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp",
   "banner_alt": "Falowa wizualizacja dźwięku z elementami AI",
+  "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp",
+  "subtitle": "Jak AI przekształca pracę z danymi audio",
+  "description": "Konwertuj dźwięk na tekst w czasie rzeczywistym dzięki zaawansowanemu rozpoznawaniu mowy AI, wydobywając użyteczne spostrzeżenia z danych audio.",
   "date": "Jan 29, 2024",
   "language": "pl-PL",
-  "subtitle": "Jak AI przekształca pracę z danymi audio",
+  "keywords": "AI, audio, transkrypcja, tłumaczenia, Whisper, rozpoznawanie mowy, NLP",
   "title": "Analiza dźwięku, tłumaczenia i spostrzeżenia z AI"
 }
