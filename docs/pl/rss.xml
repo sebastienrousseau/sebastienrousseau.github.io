@@ -6,8 +6,25 @@
     <description>Artykuły po polsku: stosowana sztuczna inteligencja, płatności ISO 20022, kryptografia postkwantowa oraz transformacja płatności hurtowych.</description>
     <atom:link href="https://sebastienrousseau.com/pl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>pl-PL</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 14:29:14 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Wszelkie prawa zastrzeżone.</copyright>
+    <item>
+      <title>Indeks Postkwantowej Gotowości Bankowej 2026: PQC, QKD, agilność kryptograficzna i ryzyko HNDL</title>
+      <link>https://sebastienrousseau.com/pl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</link>
+      <description>Bankowy indeks postkwantowej gotowości w 2026 roku — standardy postkwantowe NIST, inwentarz kryptograficzny, agilność kryptograficzna, QKD oraz ekspozycja długoterminowych danych.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</guid>
+      <pubDate>Thu, 28 May 2026 14:29:14 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/luis-villasmil-PFAX9owWRbI.webp" type="image/webp" length="0"/>
+      <category>bankowość postkwantowa 2026</category>
+      <category>kryptografia postkwantowa banki</category>
+      <category>NIST FIPS 203</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>agilność kryptograficzna</category>
+      <category>QKD bankowość</category>
+    </item>
     <item>
       <title>DORA, EU AI Act i suwerennosc danych: stos zgodnosci bankow w 2026</title>
       <link>https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

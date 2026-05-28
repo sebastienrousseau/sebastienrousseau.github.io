@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/zh-hant/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/zh-hant/"/>
   <id>https://sebastienrousseau.com/zh-hant/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-28T14:29:14+00:00</updated>
+  <entry>
+    <title>2026 抗量子銀行指數:PQC、QKD 與密碼敏捷性</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</id>
+    <updated>2026-05-28T14:29:14+00:00</updated>
+    <published>2026-05-28T14:29:14+00:00</published>
+    <summary>2026 年的抗量子銀行就緒度指數,涵蓋 NIST 後量子標準、密碼學清單、密碼敏捷性、QKD,以及長期保存資料的曝險。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA、EU AI 法與資料主權:銀行 2026 年法遵堆疊</title>
     <link href="https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

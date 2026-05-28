@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>bn-BD</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T14:29:14+00:00</news:publication_date>
+    <news:title>কোয়ান্টাম-নিরাপদ ব্যাংকিং সূচক 2026: PQC, QKD ও HNDL ঝুঁকি</news:title>
+    <news:keywords>কোয়ান্টাম-নিরাপদ ব্যাংকিং 2026, ব্যাংকের পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, ক্রিপ্টো-চটপটতা, QKD ব্যাংকিং</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

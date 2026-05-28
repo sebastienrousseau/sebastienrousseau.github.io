@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/fil/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/fil/"/>
   <id>https://sebastienrousseau.com/fil/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-28T14:29:14+00:00</updated>
+  <entry>
+    <title>Indeks ng Ligtas-sa-Quantum na Pagbabangko sa 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, at Panganib ng Harvest-Now-Decrypt-Later</title>
+    <link href="https://sebastienrousseau.com/fil/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"/>
+    <id>https://sebastienrousseau.com/fil/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</id>
+    <updated>2026-05-28T14:29:14+00:00</updated>
+    <published>2026-05-28T14:29:14+00:00</published>
+    <summary>Isang indeks ng pagbabangko para sa kahandaan na ligtas sa quantum sa 2026, sumasaklaw sa mga NIST post-quantum standards, cryptographic inventory, crypto-agility, QKD, at exposure ng long-lived data.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI Act, at Soberanya ng Data: Compliance Stack ng Bangko 2026</title>
     <link href="https://sebastienrousseau.com/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

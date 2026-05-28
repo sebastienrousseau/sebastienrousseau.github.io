@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/fr/2026-06-04-quantique-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fr-FR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T14:29:13+00:00</news:publication_date>
+    <news:title>Indice 2026 du banking résistant au quantique : PQC, QKD, agilité cryptographique et risque HNDL</news:title>
+    <news:keywords>banking résistant au quantique 2026, cryptographie post-quantique banques, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, agilité cryptographique, QKD banques</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

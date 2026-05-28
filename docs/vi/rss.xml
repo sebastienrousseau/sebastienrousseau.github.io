@@ -6,8 +6,25 @@
     <description>Bài viết tiếng Việt: AI ứng dụng, thanh toán ISO 20022, mật mã hậu lượng tử và chuyển đổi thanh toán bán buôn.</description>
     <atom:link href="https://sebastienrousseau.com/vi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>vi-VN</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 14:29:14 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Đã đăng ký bản quyền.</copyright>
+    <item>
+      <title>Chỉ số Ngân hàng An toàn Lượng tử 2026: mật mã hậu lượng tử, QKD, tính linh hoạt mật mã và rủi ro harvest now, decrypt later</title>
+      <link>https://sebastienrousseau.com/vi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</link>
+      <description>Chỉ số ngân hàng về mức sẵn sàng an toàn lượng tử 2026: chuẩn NIST hậu lượng tử, kiểm kê mật mã, tính linh hoạt mật mã, QKD và dữ liệu dài hạn.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</guid>
+      <pubDate>Thu, 28 May 2026 14:29:14 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/luis-villasmil-PFAX9owWRbI.webp" type="image/webp" length="0"/>
+      <category>ngân hàng an toàn lượng tử 2026</category>
+      <category>mật mã hậu lượng tử ngân hàng</category>
+      <category>NIST FIPS 203</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>tính linh hoạt mật mã</category>
+      <category>QKD ngân hàng</category>
+    </item>
     <item>
       <title>DORA, Đạo luật AI EU và chủ quyền dữ liệu: ngăn xếp tuân thủ 2026 cho ngân hàng</title>
       <link>https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ha/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ha-NG</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T14:29:14+00:00</news:publication_date>
+    <news:title>Fihirisar Bankin Quantum-Safe a 2026: Cryptography na Post-Quantum, QKD, Crypto-Agility, da Haɗarin Harvest-Now-Decrypt-Later</news:title>
+    <news:keywords>bankin quantum-safe 2026, cryptography na post-quantum bankuna, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto-agility, QKD a banki</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ha/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

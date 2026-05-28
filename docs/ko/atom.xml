@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/ko/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ko/"/>
   <id>https://sebastienrousseau.com/ko/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-28T14:29:14+00:00</updated>
+  <entry>
+    <title>양자내성 뱅킹 지수 2026: 포스트양자 암호, QKD, 암호 민첩성, harvest now, decrypt later 리스크</title>
+    <link href="https://sebastienrousseau.com/ko/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</id>
+    <updated>2026-05-28T14:29:14+00:00</updated>
+    <published>2026-05-28T14:29:14+00:00</published>
+    <summary>2026년 양자내성 준비도를 측정하는 뱅킹 지수. NIST 포스트양자 표준, 암호 인벤토리, 암호 민첩성, QKD, 장기 보관 데이터 노출을 다룹니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI 법, 데이터 주권: 2026년 은행을 위한 컴플라이언스 스택</title>
     <link href="https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

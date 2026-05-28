@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/fr/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/fr/"/>
   <id>https://sebastienrousseau.com/fr/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-28T14:29:13+00:00</updated>
+  <entry>
+    <title>Indice 2026 du banking résistant au quantique : PQC, QKD, agilité cryptographique et risque HNDL</title>
+    <link href="https://sebastienrousseau.com/fr/2026-06-04-quantique-safe-banking-index-pqc-qkd-crypto-agility-2026/"/>
+    <id>https://sebastienrousseau.com/fr/2026-06-04-quantique-safe-banking-index-pqc-qkd-crypto-agility-2026/</id>
+    <updated>2026-05-28T14:29:13+00:00</updated>
+    <published>2026-05-28T14:29:13+00:00</published>
+    <summary>Un indice bancaire de préparation au quantique en 2026 : standards post-quantiques du NIST, inventaire cryptographique, agilité cryptographique, QKD et exposition des données à durée de vie longue.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI Act et souveraineté des données : la pile de conformité 2026 pour les banques</title>
     <link href="https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

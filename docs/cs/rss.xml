@@ -6,8 +6,25 @@
     <description>Články v češtině: aplikovaná AI, platby ISO 20022, postkvantová kryptografie a transformace velkoobchodních plateb.</description>
     <atom:link href="https://sebastienrousseau.com/cs/rss.xml" rel="self" type="application/rss+xml"/>
     <language>cs-CZ</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 14:29:14 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Všechna práva vyhrazena.</copyright>
+    <item>
+      <title>Index postkvantově bezpečného bankovnictví 2026: PQC, QKD, krypto-agilita a riziko harvest now, decrypt later</title>
+      <link>https://sebastienrousseau.com/cs/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</link>
+      <description>Bankovní index postkvantově bezpečné připravenosti v roce 2026 — postkvantové standardy NIST, kryptografický inventář, krypto-agilita, QKD a expozice dlouhodobých dat.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</guid>
+      <pubDate>Thu, 28 May 2026 14:29:14 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/luis-villasmil-PFAX9owWRbI.webp" type="image/webp" length="0"/>
+      <category>postkvantově bezpečné bankovnictví 2026</category>
+      <category>postkvantová kryptografie banky</category>
+      <category>NIST FIPS 203</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>krypto-agilita</category>
+      <category>QKD bankovnictví</category>
+    </item>
     <item>
       <title>DORA, EU AI Act a suverenita dat: Compliance stack pro banky v roce 2026</title>
       <link>https://sebastienrousseau.com/cs/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

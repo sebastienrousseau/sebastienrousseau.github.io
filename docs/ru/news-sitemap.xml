@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ru/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T14:29:14+00:00</news:publication_date>
+    <news:title>Индекс квантово-безопасного банкинга 2026: PQC, QKD и криптогибкость</news:title>
+    <news:keywords>квантово-безопасный банкинг 2026, постквантовая криптография банки, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, криптографическая гибкость, QKD в банкинге</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

@@ -1,11 +1,11 @@
 {
-  "locale": "ha_NG",
   "date": "May 11, 2026",
   "title": "Lucy's Flash Drive Revisited: AI, Quantum & Knowledge",
-  "description": "Shekaru goma sha biyu bayan, fim ɗin Lucy na Besson yana karantawa kamar gwajin tunani game da ilimi da ke ƙaura daga jiki zuwa na'ura — LLMs da qubits sun tabbatar da shi a ɓoye.",
-  "language": "ha-NG",
   "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
-  "banner_alt": "Hoton abstract na neural networks da quantum atomic arrays. Kwamfuta mai baƙar fata tana kafa daga ƙananan barbashi da ke sake tsarawa",
+  "language": "ha-NG",
+  "locale": "ha_NG",
+  "description": "Shekaru goma sha biyu bayan, fim ɗin Lucy na Besson yana karantawa kamar gwajin tunani game da ilimi da ke ƙaura daga jiki zuwa na'ura — LLMs da qubits sun tabbatar da shi a ɓoye.",
   "keywords": "Lucy 2014 film, Luc Besson, ƙaurar ilimi, large language models, neutral atom qubits, whole-brain emulation, substrate independence, falsafar AI, quantum computing, adana ilimi",
-  "subtitle": "Shekaru goma sha biyu bayan fim ɗin Lucy na Luc Besson, tsakiyar misalin ƙaurar ilimi daga jiki zuwa na'ura an tabbatar da shi ba tsammani ta LLMs, neutral atom qubits, da whole-brain emulation."
+  "subtitle": "Shekaru goma sha biyu bayan fim ɗin Lucy na Luc Besson, tsakiyar misalin ƙaurar ilimi daga jiki zuwa na'ura an tabbatar da shi ba tsammani ta LLMs, neutral atom qubits, da whole-brain emulation.",
+  "banner_alt": "Hoton abstract na neural networks da quantum atomic arrays. Kwamfuta mai baƙar fata tana kafa daga ƙananan barbashi da ke sake tsarawa"
 }

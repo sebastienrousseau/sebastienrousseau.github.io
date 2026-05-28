@@ -1,11 +1,11 @@
 {
-  "locale": "yo_NG",
-  "keywords": "Quantum Computing, Awọn Algorithm AI, Mathimatiki Iṣowo, Imọ-ẹrọ Banki, Iṣakoso Ewu, Apẹrẹ Algorithm, Itupalẹ Data, Awọn Ilana Idoko-owó, Quantum Finance, Machine Learning",
-  "banner_alt": "Iyipada iṣowo pẹlu awọn algorithm kuantọm ti AI ṣe ilọsiwaju",
-  "subtitle": "Ṣiṣi agbara kuantọm fun imọ-ẹrọ owo: AI ni àárín awọn algorithm iran-tuntun",
-  "description": "Ṣawari ipa iyipada AI ninu awọn algorithm kuantọm fun iṣowo owo, pẹlu idojukọ lori awọn idiju mathimatiki wọn ati awọn ohun elo banki.",
   "date": "Dec 25, 2023",
-  "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
+  "locale": "yo_NG",
   "language": "yo-NG",
-  "title": "Revolutionising Finance with AI-Enhanced Quantum Algorithms"
+  "banner_alt": "Iyipada iṣowo pẹlu awọn algorithm kuantọm ti AI ṣe ilọsiwaju",
+  "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
+  "description": "Ṣawari ipa iyipada AI ninu awọn algorithm kuantọm fun iṣowo owo, pẹlu idojukọ lori awọn idiju mathimatiki wọn ati awọn ohun elo banki.",
+  "keywords": "Quantum Computing, Awọn Algorithm AI, Mathimatiki Iṣowo, Imọ-ẹrọ Banki, Iṣakoso Ewu, Apẹrẹ Algorithm, Itupalẹ Data, Awọn Ilana Idoko-owó, Quantum Finance, Machine Learning",
+  "title": "Revolutionising Finance with AI-Enhanced Quantum Algorithms",
+  "subtitle": "Ṣiṣi agbara kuantọm fun imọ-ẹrọ owo: AI ni àárín awọn algorithm iran-tuntun"
 }

@@ -6,8 +6,25 @@
     <description>บทความภาษาไทย: AI ประยุกต์, การชำระเงิน ISO 20022, การเข้ารหัสหลังควอนตัม และการปฏิรูปการชำระเงินขายส่ง</description>
     <atom:link href="https://sebastienrousseau.com/th/rss.xml" rel="self" type="application/rss+xml"/>
     <language>th-TH</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 14:29:14 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์</copyright>
+    <item>
+      <title>ดัชนีธนาคารปลอดภัยจากควอนตัมในปี 2026: PQC, QKD และความคล่องตัวทางการเข้ารหัส</title>
+      <link>https://sebastienrousseau.com/th/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</link>
+      <description>ดัชนีธนาคารสำหรับความพร้อมปลอดภัยจากควอนตัมในปี 2026 ครอบคลุมมาตรฐาน NIST หลังควอนตัม การสำรวจการเข้ารหัส ความคล่องตัวทางการเข้ารหัส QKD และข้อมูลอายุยืน</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</guid>
+      <pubDate>Thu, 28 May 2026 14:29:14 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/luis-villasmil-PFAX9owWRbI.webp" type="image/webp" length="0"/>
+      <category>ธนาคารปลอดภัยจากควอนตัม 2026</category>
+      <category>การเข้ารหัสหลังควอนตัมสำหรับธนาคาร</category>
+      <category>NIST FIPS 203</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>ความคล่องตัวทางการเข้ารหัส</category>
+      <category>QKD ธนาคาร</category>
+    </item>
     <item>
       <title>DORA กฎหมาย AI ของ EU และอธิปไตยข้อมูล: สแต็คการปฏิบัติตามกฎปี 2026 ของธนาคาร</title>
       <link>https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

@@ -6,8 +6,25 @@
     <description>한국어 기사: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 그리고 도매 결제 인프라의 구조적 변혁.</description>
     <atom:link href="https://sebastienrousseau.com/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 14:29:14 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>양자내성 뱅킹 지수 2026: 포스트양자 암호, QKD, 암호 민첩성, harvest now, decrypt later 리스크</title>
+      <link>https://sebastienrousseau.com/ko/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</link>
+      <description>2026년 양자내성 준비도를 측정하는 뱅킹 지수. NIST 포스트양자 표준, 암호 인벤토리, 암호 민첩성, QKD, 장기 보관 데이터 노출을 다룹니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</guid>
+      <pubDate>Thu, 28 May 2026 14:29:14 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/luis-villasmil-PFAX9owWRbI.webp" type="image/webp" length="0"/>
+      <category>양자내성 뱅킹 2026</category>
+      <category>은행 포스트양자 암호</category>
+      <category>NIST FIPS 203</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>암호 민첩성</category>
+      <category>은행 QKD</category>
+    </item>
     <item>
       <title>DORA, EU AI 법, 데이터 주권: 2026년 은행을 위한 컴플라이언스 스택</title>
       <link>https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

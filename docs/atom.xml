@@ -4,7 +4,250 @@
   <link href="https://sebastienrousseau.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com"/>
   <id>https://sebastienrousseau.com</id>
-  <updated>2026-05-28T06:06:06+00:00</updated>
+  <updated>2026-06-04T06:06:06+00:00</updated>
+  <entry>
+    <title>The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk</title>
+    <link href="https://sebastienrousseau.com/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026"/>
+    <id>https://sebastienrousseau.com/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>A banking index for quantum-safe readiness in 2026, covering NIST post-quantum standards, cryptographic inventory, crypto-agility, QKD, and long-lived data exposure.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 Kuantuma Dayanıklı Bankacılık Endeksi: Post-Kuantum Kriptografisi, QKD, Kripto-Çevikliği ve &apos;Harvest Now, Decrypt Later&apos; Riski</title>
+    <link href="https://sebastienrousseau.com/tr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/tr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>2026 için kuantuma dayanıklı hazırlık bankacılık endeksi — NIST post-kuantum standartları, kriptografik envanter, kripto-çevikliği, QKD ve uzun ömürlü veri ifşası.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ดัชนีธนาคารปลอดภัยจากควอนตัมในปี 2026: PQC, QKD และความคล่องตัวทางการเข้ารหัส</title>
+    <link href="https://sebastienrousseau.com/th/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/th/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>ดัชนีธนาคารสำหรับความพร้อมปลอดภัยจากควอนตัมในปี 2026 ครอบคลุมมาตรฐาน NIST หลังควอนตัม การสำรวจการเข้ารหัส ความคล่องตัวทางการเข้ารหัส QKD และข้อมูลอายุยืน</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>El Índice de Banca Resistente al Cuántico 2026: PQC, QKD y agilidad criptográfica</title>
+    <link href="https://sebastienrousseau.com/es/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/es/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>Índice bancario de preparación resistente al cuántico en 2026: cubre estándares poscuánticos de NIST, inventario criptográfico, agilidad criptográfica, QKD y exposición de datos de larga vida útil.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Indice 2026 du banking résistant au quantique : PQC, QKD, agilité cryptographique et risque HNDL</title>
+    <link href="https://sebastienrousseau.com/fr/2026-06-04-quantique-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/fr/2026-06-04-quantique-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>Un indice bancaire de préparation au quantique en 2026 : standards post-quantiques du NIST, inventaire cryptographique, agilité cryptographique, QKD et exposition des données à durée de vie longue.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Indeks Perbankan Tahan Kuantum 2026: PQC, QKD, Krypto-Agility, dan Risiko &apos;Harvest Now, Decrypt Later&apos;</title>
+    <link href="https://sebastienrousseau.com/id/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/id/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>Indeks perbankan untuk kesiapan tahan kuantum pada 2026, mencakup standar pasca-kuantum NIST, inventaris kriptografi, krypto-agility, QKD, dan eksposur data berumur panjang.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>양자내성 뱅킹 지수 2026: 포스트양자 암호, QKD, 암호 민첩성, harvest now, decrypt later 리스크</title>
+    <link href="https://sebastienrousseau.com/ko/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/ko/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>2026년 양자내성 준비도를 측정하는 뱅킹 지수. NIST 포스트양자 표준, 암호 인벤토리, 암호 민첩성, QKD, 장기 보관 데이터 노출을 다룹니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 में क्वांटम-सुरक्षित बैंकिंग सूचकांक: पोस्ट-क्वांटम क्रिप्टोग्राफी, QKD, क्रिप्टो चपलता</title>
+    <link href="https://sebastienrousseau.com/hi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/hi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>2026 में क्वांटम-सुरक्षित तत्परता का बैंकिंग सूचकांक — NIST पोस्ट-क्वांटम मानक, क्रिप्टोग्राफिक इन्वेंटरी, क्रिप्टो चपलता, QKD और लंबे जीवनकाल वाले डेटा का जोखिम।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Indeks ng Ligtas-sa-Quantum na Pagbabangko sa 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, at Panganib ng Harvest-Now-Decrypt-Later</title>
+    <link href="https://sebastienrousseau.com/fil/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/fil/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>Isang indeks ng pagbabangko para sa kahandaan na ligtas sa quantum sa 2026, sumasaklaw sa mga NIST post-quantum standards, cryptographic inventory, crypto-agility, QKD, at exposure ng long-lived data.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>কোয়ান্টাম-নিরাপদ ব্যাংকিং সূচক 2026: PQC, QKD ও HNDL ঝুঁকি</title>
+    <link href="https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>2026-এ কোয়ান্টাম-নিরাপদ প্রস্তুতির ব্যাংকিং সূচক — NIST পোস্ট-কোয়ান্টাম মান, ক্রিপ্টোগ্রাফিক ইনভেন্টরি, ক্রিপ্টো-চটপটতা, QKD ও দীর্ঘস্থায়ী ডেটার এক্সপোজার।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>De Kwantum-Veilige Banking Index 2026: PQC, QKD, crypto-agility en HNDL-risico</title>
+    <link href="https://sebastienrousseau.com/nl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/nl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>Een bankenindex voor kwantum-veilige gereedheid in 2026 — NIST post-kwantum-standaarden, cryptografisch inventaris, crypto-agility, QKD en blootstelling van langlevende data.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Índice de Banca Resistente ao Quântico 2026: PQC, QKD, cripto-agilidade e risco HNDL</title>
+    <link href="https://sebastienrousseau.com/pt-br/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/pt-br/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>Um índice bancário para prontidão resistente ao quântico em 2026, cobrindo padrões pós-quânticos do NIST, inventário criptográfico, cripto-agilidade, QKD e exposição de dados de vida longa.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>مؤشر المصارف الآمن كميًّا في 2026: التشفير ما بعد الكمي وQKD وخفّة الحركة التشفيرية ومخاطر harvest now, decrypt later</title>
+    <link href="https://sebastienrousseau.com/ar/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/ar/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>مؤشر مصرفي لقياس الجاهزية الآمنة كميًّا في 2026: معايير NIST ما بعد الكمي، والجرد التشفيري، وخفّة الحركة التشفيرية، وQKD، وتعرّض البيانات طويلة الأجل.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Fihirisar Bankin Quantum-Safe a 2026: Cryptography na Post-Quantum, QKD, Crypto-Agility, da Haɗarin Harvest-Now-Decrypt-Later</title>
+    <link href="https://sebastienrousseau.com/ha/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/ha/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>Fihirisar banki ga shirye-shiryen quantum-safe a 2026: matakan NIST na post-quantum, ƙididdigar cryptography, crypto-agility, QKD, da fallasa bayanai masu tsayi.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Індекс постквантового банкінгу 2026: PQC, QKD, криптографічна гнучкість і ризик «harvest now, decrypt later»</title>
+    <link href="https://sebastienrousseau.com/uk/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/uk/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>Банківський індекс постквантової готовності 2026 року: стандарти PQC від NIST, криптографічна інвентаризація, криптографічна гнучкість, QKD та експозиція довгоживучих даних.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Ìmọ̀ Báńkì Ààbò Quantum 2026: Cryptography Lẹ́yìn Quantum, QKD, Crypto-Agility, àti Ewu Harvest-Now-Decrypt-Later</title>
+    <link href="https://sebastienrousseau.com/yo/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/yo/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>Ìmọ̀ báńkì fún ìmúrasílẹ̀ ààbò quantum ní 2026 — àwọn ìlànà NIST lẹ́yìn quantum, àkójọ cryptography, crypto-agility, QKD, àti ewu data tí ó pẹ́.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Indicele Băncilor Rezistente la Cuantic în 2026: criptografie post-cuantică, QKD, agilitate criptografică și riscul „harvest now, decrypt later”</title>
+    <link href="https://sebastienrousseau.com/ro/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/ro/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>Un indice bancar al pregătirii rezistente la cuantic în 2026, ce acoperă standardele post-cuantice NIST, inventarul criptografic, agilitatea criptografică, QKD și expunerea datelor cu durată lungă.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Индекс квантово-безопасного банкинга 2026: PQC, QKD и криптогибкость</title>
+    <link href="https://sebastienrousseau.com/ru/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/ru/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>Банковский индекс квантово-безопасной готовности 2026 года: постквантовые стандарты NIST, криптографическая инвентаризация, криптогибкость, QKD и долгоживущие данные.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Index postkvantově bezpečného bankovnictví 2026: PQC, QKD, krypto-agilita a riziko harvest now, decrypt later</title>
+    <link href="https://sebastienrousseau.com/cs/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/cs/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>Bankovní index postkvantově bezpečné připravenosti v roce 2026 — postkvantové standardy NIST, kryptografický inventář, krypto-agilita, QKD a expozice dlouhodobých dat.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Indice 2026 della banca resistente al quantum: PQC, QKD e rischio HNDL</title>
+    <link href="https://sebastienrousseau.com/it/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/it/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>Indice 2026 sulla preparazione resistente al quantum delle banche: standard NIST PQC, inventario crittografico, cripto-agilità, QKD e dati a lunga vita.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ポスト量子安全な銀行指数 2026:PQC、QKD、暗号アジリティ</title>
+    <link href="https://sebastienrousseau.com/ja/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/ja/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>2026 年のポスト量子安全な準備態勢を測る銀行指数。NIST のポスト量子標準、暗号インベントリ、暗号アジリティ、QKD、長期保存データの曝露を扱います。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>מדד הבנקאות הקוונטית-בטיחותית 2026: קריפטוגרפיה פוסט-קוונטית, QKD וזריזות</title>
+    <link href="https://sebastienrousseau.com/he/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/he/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>מדד בנקאי למוכנות לעידן הקוונטי ב-2026, המכסה תקני NIST לפוסט-קוונטום, מצאי קריפטוגרפי, crypto-agility, QKD וחשיפת נתונים ארוכת טווח.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Kvantsäkert bankindex 2026: post-kvant-kryptografi, QKD, kryptoagilitet och risken för harvest now, decrypt later</title>
+    <link href="https://sebastienrousseau.com/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>Ett bankindex för kvantsäker beredskap 2026, som täcker NIST post-kvant-standarder, kryptografiskt inventarium, kryptoagilitet, QKD och exponering av långlivad data.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Chỉ số Ngân hàng An toàn Lượng tử 2026: mật mã hậu lượng tử, QKD, tính linh hoạt mật mã và rủi ro harvest now, decrypt later</title>
+    <link href="https://sebastienrousseau.com/vi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/vi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>Chỉ số ngân hàng về mức sẵn sàng an toàn lượng tử 2026: chuẩn NIST hậu lượng tử, kiểm kê mật mã, tính linh hoạt mật mã, QKD và dữ liệu dài hạn.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Indeks Postkwantowej Gotowości Bankowej 2026: PQC, QKD, agilność kryptograficzna i ryzyko HNDL</title>
+    <link href="https://sebastienrousseau.com/pl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/pl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>Bankowy indeks postkwantowej gotowości w 2026 roku — standardy postkwantowe NIST, inwentarz kryptograficzny, agilność kryptograficzna, QKD oraz ekspozycja długoterminowych danych.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 抗量子銀行指數:PQC、QKD 與密碼敏捷性</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>2026 年的抗量子銀行就緒度指數,涵蓋 NIST 後量子標準、密碼學清單、密碼敏捷性、QKD,以及長期保存資料的曝險。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 抗量子银行指数：后量子密码学、QKD、密码敏捷性与 harvest now, decrypt later 风险</title>
+    <link href="https://sebastienrousseau.com/zh-hans/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html"/>
+    <id>https://sebastienrousseau.com/zh-hans/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>面向银行的 2026 抗量子就绪度指数——涵盖 NIST 后量子标准、密码学清单、密码敏捷性、QKD 与长期数据敞口的衡量框架。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</title>
     <link href="https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026"/>
@@ -210,249 +453,6 @@
     <updated>2026-05-28T06:06:06+00:00</updated>
     <published>2026-05-28T06:06:06+00:00</published>
     <summary>DORA, חוק הבינה המלאכותית של האיחוד האירופי, GDPR, סיכון ריכוז ענן וריבונות נתונים מתכנסים ב-2026 לערימת ציות אחת לבנקים.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>DORA, EU:s AI-förordning och datasuveränitet: bankernas efterlevnadsstack 2026</title>
-    <link href="https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
-    <id>https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
-    <updated>2026-05-28T06:06:06+00:00</updated>
-    <published>2026-05-28T06:06:06+00:00</published>
-    <summary>DORA, EU:s AI-förordning, GDPR, koncentrationsrisk i molnet och datasuveränitet konvergerar 2026 till en gemensam efterlevnadsstack för banker.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>DORA, Đạo luật AI EU và chủ quyền dữ liệu: ngăn xếp tuân thủ 2026 cho ngân hàng</title>
-    <link href="https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
-    <id>https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
-    <updated>2026-05-28T06:06:06+00:00</updated>
-    <published>2026-05-28T06:06:06+00:00</published>
-    <summary>DORA, EU AI Act, GDPR, rủi ro tập trung cloud và chủ quyền dữ liệu hội tụ thành một ngăn xếp tuân thủ 2026 cho ngân hàng — kiến trúc, không phải tủ hồ sơ chính sách.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>DORA, EU AI Act i suwerennosc danych: stos zgodnosci bankow w 2026</title>
-    <link href="https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
-    <id>https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
-    <updated>2026-05-28T06:06:06+00:00</updated>
-    <published>2026-05-28T06:06:06+00:00</published>
-    <summary>DORA, EU AI Act, RODO, ryzyko koncentracji chmury i suwerennosc danych laczy sie w jeden stos zgodnosci banku na 2026 rok.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>DORA、EU AI 法與資料主權:銀行 2026 年法遵堆疊</title>
-    <link href="https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
-    <id>https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
-    <updated>2026-05-28T06:06:06+00:00</updated>
-    <published>2026-05-28T06:06:06+00:00</published>
-    <summary>DORA、EU AI 法、GDPR、雲端集中風險與資料主權,2026 年正匯流為銀行的單一法遵堆疊,設計紀律成為決勝關鍵。</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>DORA、EU AI 法案与数据主权：银行 2026 合规栈</title>
-    <link href="https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html"/>
-    <id>https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</id>
-    <updated>2026-05-28T06:06:06+00:00</updated>
-    <published>2026-05-28T06:06:06+00:00</published>
-    <summary>DORA、EU AI 法案、GDPR、云集中风险与数据主权在 2026 年汇聚为银行的一套合规栈，决定董事会层级的运营模型设计。</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026</title>
-    <link href="https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026"/>
-    <id>https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>AI is becoming the operating system of payments in 2026, moving from analytics into fraud prevention, payment repair, routing, liquidity forecasting, compliance screening, and agentic commerce controls.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Ödemelerin İşletim Sistemi Olarak AI: 2026&apos;da Dolandırıcılık, Yönlendirme, Dayanıklılık ve Uyum</title>
-    <link href="https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>AI 2026&apos;da ödemelerin işletim sistemi hâline geliyor; analitikten dolandırıcılık önleme, ödeme onarımı, yönlendirme, likidite tahmini, uyum taraması ve aracılı ticaret kontrollerine geçiyor.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>AI ในฐานะระบบปฏิบัติการของการชำระเงิน: ฉ้อโกง เส้นทาง ยืดหยุ่น ปฏิบัติตามกฎ 2026</title>
-    <link href="https://sebastienrousseau.com/th/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/th/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>AI กำลังกลายเป็นระบบปฏิบัติการของการชำระเงินในปี 2026 ขยายจากการวิเคราะห์ไปสู่การป้องกันการฉ้อโกง การซ่อมแซมการชำระเงิน การกำหนดเส้นทาง การคาดการณ์สภาพคล่อง การคัดกรองการปฏิบัติตามกฎ และการควบคุมพาณิชย์เชิงตัวแทน</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>La IA como sistema operativo de los pagos: fraude, enrutamiento, resiliencia y cumplimiento en 2026</title>
-    <link href="https://sebastienrousseau.com/es/2026-05-27-ai-operating-system-pagos-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/es/2026-05-27-ai-operating-system-pagos-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>La IA se está convirtiendo en el sistema operativo de los pagos en 2026: prevención de fraude, reparación, enrutamiento, previsión de liquidez, cribado de cumplimiento y controles de comercio agéntico.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>L&apos;IA comme système d&apos;exploitation des paiements : fraude, routage, résilience et conformité en 2026</title>
-    <link href="https://sebastienrousseau.com/fr/2026-05-27-ai-operating-system-paiements-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/fr/2026-05-27-ai-operating-system-paiements-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>L&apos;IA devient le système d&apos;exploitation des paiements en 2026 : prévention de la fraude, réparation des paiements, routage, prévision de liquidité, filtrage de conformité et garde-fous du commerce agentique.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>AI sebagai Sistem Operasi Pembayaran: Penipuan, Routing, Ketahanan, dan Kepatuhan pada 2026</title>
-    <link href="https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>AI menjadi sistem operasi pembayaran pada 2026, bergeser dari analitik ke pencegahan penipuan, perbaikan pembayaran, routing, prakiraan likuiditas, penyaringan kepatuhan, dan kontrol agentic commerce.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>결제의 AI 운영체제: 2026년 사기, 라우팅, 회복력, 컴플라이언스</title>
-    <link href="https://sebastienrousseau.com/ko/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/ko/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>2026년 AI는 결제의 운영체제로 자리잡으며, 분석 대시보드를 넘어 사기 방지, 결제 복구, 라우팅, 유동성 예측, 컴플라이언스 검사, 에이전틱 커머스 통제 영역으로 확장되고 있습니다.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>KI als Betriebssystem des Zahlungsverkehrs: Betrug, Routing, Resilienz und Compliance 2026</title>
-    <link href="https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>KI wird 2026 zum Betriebssystem des Zahlungsverkehrs: vom Analytik-Werkzeug zur Steuerungsschicht für Betrugsabwehr, Zahlungsreparatur, Routing, Liquiditätsprognose, Compliance-Prüfung und agentische Handelskontrollen.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>भुगतान का AI ऑपरेटिंग सिस्टम: 2026 में धोखाधड़ी, रूटिंग, लचीलापन और अनुपालन</title>
-    <link href="https://sebastienrousseau.com/hi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/hi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>2026 में AI भुगतान का ऑपरेटिंग सिस्टम बन रहा है — विश्लेषण से आगे बढ़कर धोखाधड़ी रोकथाम, भुगतान मरम्मत, रूटिंग, तरलता पूर्वानुमान, अनुपालन स्क्रीनिंग और एजेंटिक कॉमर्स नियंत्रण तक।</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>AI Bilang Operating System ng Pagbabayad: Pandaraya, Ruta, Katatagan, at Compliance sa 2026</title>
-    <link href="https://sebastienrousseau.com/fil/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/fil/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>Nagiging operating system ng pagbabayad ang AI sa 2026, lumipat mula analytics tungo sa pag-iwas sa pandaraya, pag-aayos ng bayad, ruta, forecasting ng likido, screening ng compliance, at kontrol ng agentic commerce.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>পেমেন্টের অপারেটিং সিস্টেম হিসেবে AI: ২০২৬-এ প্রতারণা, রাউটিং, স্থিতিস্থাপকতা ও কমপ্লায়েন্স</title>
-    <link href="https://sebastienrousseau.com/bn/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/bn/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>২০২৬ সালে AI পেমেন্টের অপারেটিং সিস্টেমে পরিণত হচ্ছে — অ্যানালিটিক্স থেকে সরে গিয়ে প্রতারণা প্রতিরোধ, পেমেন্ট মেরামত, রাউটিং, তারল্য পূর্বাভাস, কমপ্লায়েন্স স্ক্রিনিং ও এজেন্টিক কমার্স নিয়ন্ত্রণে।</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>AI als besturingssysteem van betalingen: fraude, routering, veerkracht en compliance in 2026</title>
-    <link href="https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>AI wordt in 2026 het besturingssysteem van betalingen: van analytics naar fraudepreventie, betalingsherstel, routering, liquiditeitsprognose, compliance-screening en agentic-commerce-controles.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>IA como Sistema Operacional dos Pagamentos: Fraude, Roteamento, Resiliência e Conformidade em 2026</title>
-    <link href="https://sebastienrousseau.com/pt-br/2026-05-27-ai-operating-system-pagamentos-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/pt-br/2026-05-27-ai-operating-system-pagamentos-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>Em 2026 a IA assume o papel de sistema operacional dos pagamentos: prevenção de fraude, reparo, roteamento, previsão de liquidez, triagem de conformidade e controles de comércio agêntico.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>الذكاء الاصطناعي بوصفه نظام تشغيل المدفوعات: الاحتيال والتوجيه والمرونة والامتثال في 2026</title>
-    <link href="https://sebastienrousseau.com/ar/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/ar/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>يُصبح الذكاء الاصطناعي نظام تشغيل المدفوعات في 2026، منتقلاً من التحليلات إلى منع الاحتيال، وإصلاح المدفوعات، والتوجيه، والتنبؤ بالسيولة، وفحص الامتثال، وضوابط التجارة الوكيلة.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>AI a Matsayin Tsarin Aiki na Biya: Zamba, Tuƙi, Juriya, da Bin Doka a 2026</title>
-    <link href="https://sebastienrousseau.com/ha/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/ha/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>A 2026, AI yana zama tsarin aiki na biya, yana motsi daga nazari zuwa hana zamba, gyaran biya, tuƙi, hasashen ruwa-ruwa, tantance bin doka, da sarrafa cinikayyar agentic commerce.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>ШІ як операційна система платежів: шахрайство, маршрутизація, стійкість і відповідність у 2026</title>
-    <link href="https://sebastienrousseau.com/uk/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/uk/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>ШІ стає операційною системою платежів у 2026 році: виходить за межі аналітики у запобігання шахрайству, відновлення платежів, маршрутизацію, прогноз ліквідності та перевірку відповідності.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>AI gẹ́gẹ́ bí Ètò Ìṣiṣẹ́ AI ti Ìsanwó: Jìbìtì, Ìpinnu Ọ̀nà, Ìfaradà, Ìbámu 2026</title>
-    <link href="https://sebastienrousseau.com/yo/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/yo/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>AI ti ń di ètò ìṣiṣẹ́ AI ti ìsanwó ní 2026, ó ń kọjá láti àyẹ̀wò sí ìdènà jìbìtì, àtúnṣe ìsanwó, ìpinnu ọ̀nà, ìhùmọ̀ owó tó ń sàn, àyẹ̀wò ìbámu, àti ìṣàkóso agentic commerce.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>AI ca sistem de operare al plăților: fraudă, rutare, reziliență și conformitate în 2026</title>
-    <link href="https://sebastienrousseau.com/ro/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/ro/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>AI devine sistemul de operare al plăților în 2026: prevenirea fraudei, repararea plăților, rutarea, prognoza lichidității, screening de conformitate și controale pentru comerțul agentic la viteza fluxului.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>ИИ как операционная система платежей: мошенничество, маршрутизация, устойчивость и комплаенс в 2026</title>
-    <link href="https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>В 2026 году ИИ становится операционной системой платежей: от аналитики к предотвращению мошенничества, восстановлению платежей, маршрутизации, прогнозу ликвидности, проверкам комплаенса и контролю агентной коммерции.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>AI jako operační systém plateb: podvody, směrování, odolnost a compliance v roce 2026</title>
-    <link href="https://sebastienrousseau.com/cs/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/cs/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>AI se v roce 2026 stává operačním systémem plateb — propojuje prevenci podvodů, opravu plateb, směrování, prognózu likvidity, screening compliance a kontroly agentického obchodu v rychlosti workflow.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>L&apos;IA come sistema operativo dei pagamenti: frode, routing, resilienza e conformità nel 2026</title>
-    <link href="https://sebastienrousseau.com/it/2026-05-27-ai-operating-system-pagamenti-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/it/2026-05-27-ai-operating-system-pagamenti-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>Nel 2026 l&apos;IA diventa il sistema operativo dei pagamenti: prevenzione frodi, riparazione, routing, previsione di liquidità, screening di conformità e controlli per il commercio agentico in tempo reale.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>決済のオペレーティングシステムとしての AI: 2026 年の不正、ルーティング、レジリエンス、コンプライアンス</title>
-    <link href="https://sebastienrousseau.com/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html"/>
-    <id>https://sebastienrousseau.com/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</id>
-    <updated>2026-05-27T06:06:06+00:00</updated>
-    <published>2026-05-27T06:06:06+00:00</published>
-    <summary>2026 年、AI は決済のオペレーティングシステムへと進化し、分析を越えて不正防止、決済修復、ルーティング、流動性予測、コンプライアンススクリーニング、エージェント型コマース統制を担います。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
 </feed>

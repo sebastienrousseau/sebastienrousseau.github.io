@@ -6,8 +6,25 @@
     <description>Articole în limba română: IA aplicată, plăți ISO 20022, criptografie post-cuantică și transformarea plăților wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/ro/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ro-RO</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 14:29:14 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Toate drepturile rezervate.</copyright>
+    <item>
+      <title>Indicele Băncilor Rezistente la Cuantic în 2026: criptografie post-cuantică, QKD, agilitate criptografică și riscul „harvest now, decrypt later”</title>
+      <link>https://sebastienrousseau.com/ro/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</link>
+      <description>Un indice bancar al pregătirii rezistente la cuantic în 2026, ce acoperă standardele post-cuantice NIST, inventarul criptografic, agilitatea criptografică, QKD și expunerea datelor cu durată lungă.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</guid>
+      <pubDate>Thu, 28 May 2026 14:29:14 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/luis-villasmil-PFAX9owWRbI.webp" type="image/webp" length="0"/>
+      <category>bănci rezistente la cuantic 2026</category>
+      <category>criptografie post-cuantică bănci</category>
+      <category>NIST FIPS 203</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>agilitate criptografică</category>
+      <category>QKD bancar</category>
+    </item>
     <item>
       <title>DORA, EU AI Act și suveranitatea datelor: stiva de conformitate bancară 2026</title>
       <link>https://sebastienrousseau.com/ro/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

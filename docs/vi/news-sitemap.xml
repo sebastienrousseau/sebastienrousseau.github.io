@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/vi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T14:29:14+00:00</news:publication_date>
+    <news:title>Chỉ số Ngân hàng An toàn Lượng tử 2026: mật mã hậu lượng tử, QKD, tính linh hoạt mật mã và rủi ro harvest now, decrypt later</news:title>
+    <news:keywords>ngân hàng an toàn lượng tử 2026, mật mã hậu lượng tử ngân hàng, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, tính linh hoạt mật mã, QKD ngân hàng</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

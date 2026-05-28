@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/ja/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ja/"/>
   <id>https://sebastienrousseau.com/ja/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-28T14:29:14+00:00</updated>
+  <entry>
+    <title>ポスト量子安全な銀行指数 2026:PQC、QKD、暗号アジリティ</title>
+    <link href="https://sebastienrousseau.com/ja/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"/>
+    <id>https://sebastienrousseau.com/ja/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</id>
+    <updated>2026-05-28T14:29:14+00:00</updated>
+    <published>2026-05-28T14:29:14+00:00</published>
+    <summary>2026 年のポスト量子安全な準備態勢を測る銀行指数。NIST のポスト量子標準、暗号インベントリ、暗号アジリティ、QKD、長期保存データの曝露を扱います。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA、EU AI Act、データ主権:2026 年銀行向けコンプライアンス・スタック</title>
     <link href="https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

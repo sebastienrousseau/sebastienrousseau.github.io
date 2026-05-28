@@ -1,11 +1,11 @@
 {
+  "language": "pt-BR",
+  "locale": "pt_BR",
   "banner_alt": "Esquema de um mensaje de pagamento transfronteiriço com direção estructurada, com TwnNm e Ctry resaltados",
   "keywords": "ISO 20022, pacs.008, pacs.009, pacs.004, pacs.003, pain.001, CBPR+, SWIFT, SR2026, direção estructurada, SEPA, EPC, pagamentos transfronteiriços, cribado de sanciones, pacs008",
-  "locale": "pt_BR",
-  "description": "A mediados de noviembre de 2026, SWIFT CBPR+ rechazará as direções postales no estructuradas em os mensajes pacs.008 e mensajes asociados. Con perto do 65 % de mensajes ainda no conformes e o 44 % de os bancos atrasados, a ventana de remediación se cierra mais rápido de lo que a maioria de os programas de preparación estão diseñados para gestionar.",
-  "language": "pt-BR",
+  "title": "El prazo pacs.008 de «direção estructurada» de noviembre de 2026: vista a seis meses",
   "date": "May 12, 2026",
   "banner": "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp",
   "subtitle": "A mediados de noviembre de 2026, SWIFT CBPR+ rechazará as direções postales no estructuradas em os mensajes pacs.008 e mensajes de pagamento transfronteiriços asociados.",
-  "title": "El prazo pacs.008 de «direção estructurada» de noviembre de 2026: vista a seis meses"
+  "description": "A mediados de noviembre de 2026, SWIFT CBPR+ rechazará as direções postales no estructuradas em os mensajes pacs.008 e mensajes asociados. Con perto do 65 % de mensajes ainda no conformes e o 44 % de os bancos atrasados, a ventana de remediación se cierra mais rápido de lo que a maioria de os programas de preparación estão diseñados para gestionar."
 }
