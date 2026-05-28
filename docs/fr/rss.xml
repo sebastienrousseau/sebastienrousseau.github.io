@@ -6,8 +6,24 @@
     <description>Articles en français : IA appliquée, paiements ISO 20022, cryptographie post-quantique et transformation des paiements wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/fr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fr-FR</language>
-    <lastBuildDate>Wed, 27 May 2026 22:09:52 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Tous droits réservés.</copyright>
+    <item>
+      <title>DORA, EU AI Act et souveraineté des données : la pile de conformité 2026 pour les banques</title>
+      <link>https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
+      <description>DORA, l&apos;EU AI Act, le RGPD, le risque de concentration cloud et la souveraineté des données convergent en 2026 vers une pile de conformité unique pour les banques.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>DORA 2026</category>
+      <category>EU AI Act 2026</category>
+      <category>souveraineté des données banques</category>
+      <category>résilience opérationnelle</category>
+      <category>risque de concentration cloud</category>
+      <category>conformité IA services financiers</category>
+      <category>IA à haut risque</category>
+    </item>
     <item>
       <title>L&apos;IA comme système d&apos;exploitation des paiements : fraude, routage, résilience et conformité en 2026</title>
       <link>https://sebastienrousseau.com/fr/2026-05-27-ai-operating-system-paiements-fraud-routing-resilience-compliance-2026/</link>

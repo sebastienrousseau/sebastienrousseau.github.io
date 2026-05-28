@@ -1,11 +1,11 @@
 {
-  "language": "yo-NG",
   "title": "Alien Studio: My Tech-to Art Journey in Photography",
-  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
   "locale": "yo_NG",
-  "date": "Jan 15, 2024",
+  "description": "Darapọ mọ mi lori irin-ajo ti ara ẹni lati Rust, AI, ati Quantum Computing si atunṣafihan aworan ati fọtoyiya nipasẹ Alien Studio.",
   "keywords": "irin-ajo imọ-ẹrọ ti ara ẹni, wiwa Rust, iwadii AI, Quantum Computing, idapọ aworan ati fọtoyiya, Alien Studio, ẹda aworan oni-nọmba, imọ-ẹrọ ninu aworan, fọtoyiya tuntun, atunṣawari iṣẹ-ọnà",
-  "subtitle": "Ibẹrẹ Irin-ajo Imọ-ẹrọ",
+  "date": "Jan 15, 2024",
   "banner_alt": "Atilẹyin oorun, oju aifọkanbalẹ; ẹwa ninu idakẹjẹ",
-  "description": "Darapọ mọ mi lori irin-ajo ti ara ẹni lati Rust, AI, ati Quantum Computing si atunṣafihan aworan ati fọtoyiya nipasẹ Alien Studio."
+  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
+  "subtitle": "Ibẹrẹ Irin-ajo Imọ-ẹrọ",
+  "language": "yo-NG"
 }

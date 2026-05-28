@@ -1,11 +1,11 @@
 {
   "language": "zh-Hant",
-  "keywords": "ISO 20022, pain.001, pain001, 支付自動化, HVPS+, CBPR+, SEPA, 跨境支付, Python 庫, 開源",
-  "banner": "https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp",
-  "title": "用 pain001 自動化建立符合 ISO 20022 標準的支付檔案",
-  "subtitle": "從 CSV 或 SQLite 自動化生成 ISO 20022 pain.001 支付檔案；pain001 是簡化合規的開源 Python 庫",
-  "date": "September 29, 2023",
   "locale": "zh_TW",
+  "description": "pain001 是一個開源 Python 庫，可從 CSV 或 SQLite 自動生成 ISO 20022 合規的支付檔案。",
+  "banner": "https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp",
+  "subtitle": "從 CSV 或 SQLite 自動化生成 ISO 20022 pain.001 支付檔案；pain001 是簡化合規的開源 Python 庫",
+  "keywords": "ISO 20022, pain.001, pain001, 支付自動化, HVPS+, CBPR+, SEPA, 跨境支付, Python 庫, 開源",
+  "title": "用 pain001 自動化建立符合 ISO 20022 標準的支付檔案",
   "banner_alt": "棕色木桌上一臺關機的膝上型電腦",
-  "description": "pain001 是一個開源 Python 庫，可從 CSV 或 SQLite 自動生成 ISO 20022 合規的支付檔案。"
+  "date": "September 29, 2023"
 }
