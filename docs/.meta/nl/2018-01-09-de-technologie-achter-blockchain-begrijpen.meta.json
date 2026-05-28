@@ -1,11 +1,11 @@
 {
-  "subtitle": "Cryptografie, consensus en de architectuur van gedecentraliseerde netwerken",
-  "locale": "nl_NL",
-  "date": "January 9, 2018",
-  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
-  "title": "De technologie achter blockchain begrijpen",
-  "language": "nl-NL",
   "description": "Een toegankelijke gids voor de technologie achter blockchain: cryptografische primitieven, consensusmechanismen en gedistribueerde netwerken.",
+  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
+  "date": "January 9, 2018",
   "banner_alt": "Abstracte weergave van blockchain-blokken die met elkaar verbonden zijn",
-  "keywords": "Blockchain, cryptografie, consensus, hashing, proof-of-work, proof-of-stake, gedistribueerd grootboek"
+  "title": "De technologie achter blockchain begrijpen",
+  "keywords": "Blockchain, cryptografie, consensus, hashing, proof-of-work, proof-of-stake, gedistribueerd grootboek",
+  "language": "nl-NL",
+  "locale": "nl_NL",
+  "subtitle": "Cryptografie, consensus en de architectuur van gedecentraliseerde netwerken"
 }

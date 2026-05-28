@@ -1,11 +1,11 @@
 {
+  "keywords": "ISO 20022, pain.001, płatności, SEPA, SWIFT, Python, automatyzacja, open source",
+  "title": "Automatyzacja tworzenia plików płatności zgodnych z ISO 20022 przy użyciu pain001",
+  "banner": "https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp",
+  "locale": "pl_PL",
   "subtitle": "Otwarta biblioteka Python dla pain.001",
   "language": "pl-PL",
-  "locale": "pl_PL",
-  "keywords": "ISO 20022, pain.001, płatności, SEPA, SWIFT, Python, automatyzacja, open source",
-  "banner": "https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp",
-  "date": "Sep 29, 2023",
-  "description": "Biblioteka Python pain001 automatyzuje tworzenie plików płatności ISO 20022 pain.001 z CSV lub SQLite, zaprojektowana dla globalnej migracji SWIFT i SEPA.",
   "banner_alt": "Logo biblioteki pain001 z kodem ISO 20022 w tle",
-  "title": "Automatyzacja tworzenia plików płatności zgodnych z ISO 20022 przy użyciu pain001"
+  "description": "Biblioteka Python pain001 automatyzuje tworzenie plików płatności ISO 20022 pain.001 z CSV lub SQLite, zaprojektowana dla globalnej migracji SWIFT i SEPA.",
+  "date": "Sep 29, 2023"
 }

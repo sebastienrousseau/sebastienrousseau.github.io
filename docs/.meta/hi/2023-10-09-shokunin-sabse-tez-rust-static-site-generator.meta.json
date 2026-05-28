@@ -1,11 +1,11 @@
 {
-  "title": "Static Site Generator: सबसे तेज़ Rust-आधारित स्टैटिक-साइट जनरेटर",
-  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
-  "keywords": "Static Site Generator, Rust, स्टैटिक साइट, SSG, Markdown, Hugo, Jekyll, निष्पादन, सुरक्षा, ओपन सोर्स",
   "language": "hi-IN",
-  "subtitle": "Rust की गति को सरल वर्डप्रेस-शैली के लेखक-अनुभव से जोड़ना",
-  "locale": "hi_IN",
+  "keywords": "Static Site Generator, Rust, स्टैटिक साइट, SSG, Markdown, Hugo, Jekyll, निष्पादन, सुरक्षा, ओपन सोर्स",
+  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
   "description": "Static Site Generator एक Rust-आधारित स्टैटिक-साइट जनरेटर है जो उच्च-निष्पादन, कम-स्मृति और सुरक्षा को प्राथमिकता देता है।",
+  "locale": "hi_IN",
   "banner_alt": "Rust लोगो के साथ कोड-संपादक की स्क्रीन",
-  "date": "October 9, 2023"
+  "date": "October 9, 2023",
+  "title": "Static Site Generator: सबसे तेज़ Rust-आधारित स्टैटिक-साइट जनरेटर",
+  "subtitle": "Rust की गति को सरल वर्डप्रेस-शैली के लेखक-अनुभव से जोड़ना"
 }

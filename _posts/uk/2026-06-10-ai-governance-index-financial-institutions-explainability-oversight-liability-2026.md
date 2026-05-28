@@ -101,7 +101,7 @@ site_software: "Static Site Generator, Rust"
 - **Агентний ШІ підвищує планку.** Як тільки ШІ виконує робочі процеси, управління має охоплювати повноваження, ідентичність, погодження та оборотність — не лише результати.
 - **Відповідальність переходить до установи.** Умови постачальників базових моделей обмежують їхній ризик; банк несе регуляторну та клієнтську відповідальність.
 
-**Дотичні матеріали:** [Стек комплаєнсу DORA + AI Act](/uk/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/) · [Операційна система ШІ для платежів](/uk/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/) · [Згода й відповідальність в агентних платежах](/uk/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/)
+**Дотичні матеріали:** [Стек комплаєнсу DORA + AI Act](/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/) · [Операційна система ШІ для платежів](/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/) · [Згода й відповідальність в агентних платежах](/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/)
 
 </aside>
 <!-- lead-end -->

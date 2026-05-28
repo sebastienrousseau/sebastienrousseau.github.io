@@ -1,11 +1,11 @@
 {
-  "title": "抗量子支付：行业必须立即行动（EPAA）",
-  "subtitle": "为何支付行业必须现在采取行动应对量子威胁",
+  "banner_alt": "蓝色光线下的量子计算电路板",
   "language": "zh-Hans",
   "keywords": "EPAA, 抗量子支付, 后量子密码学, ML-KEM, ML-DSA, SWIFT, SEPA, HNDL, NIST, FIPS 203",
-  "description": "EPAA 量子安全支付白皮书阐述支付行业为何必须立即采取行动应对量子威胁。",
-  "banner_alt": "蓝色光线下的量子计算电路板",
-  "date": "September 1, 2025",
+  "title": "抗量子支付：行业必须立即行动（EPAA）",
   "locale": "zh_CN",
+  "subtitle": "为何支付行业必须现在采取行动应对量子威胁",
+  "date": "September 1, 2025",
+  "description": "EPAA 量子安全支付白皮书阐述支付行业为何必须立即采取行动应对量子威胁。",
   "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
 }

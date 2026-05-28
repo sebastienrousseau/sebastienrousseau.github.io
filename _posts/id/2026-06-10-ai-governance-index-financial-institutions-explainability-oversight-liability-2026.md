@@ -101,7 +101,7 @@ site_software: "Static Site Generator, Rust"
 - **AI agentik menaikkan standar.** Begitu AI mengeksekusi alur kerja, tata kelola harus mencakup kewenangan, identitas, persetujuan, dan reversibilitas — bukan hanya output.
 - **Tanggung jawab berpindah ke lembaga.** Ketentuan vendor model fondasi membatasi eksposur mereka; bank yang memikul risiko regulatori dan menghadap nasabah.
 
-**Bacaan terkait:** [Tumpukan kepatuhan DORA + AI Act](/id/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/) · [Sistem operasi AI untuk pembayaran](/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/) · [Persetujuan dan tanggung jawab pembayaran agentik](/id/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/)
+**Bacaan terkait:** [Tumpukan kepatuhan DORA + AI Act](/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/) · [Sistem operasi AI untuk pembayaran](/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/) · [Persetujuan dan tanggung jawab pembayaran agentik](/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/)
 
 </aside>
 <!-- lead-end -->

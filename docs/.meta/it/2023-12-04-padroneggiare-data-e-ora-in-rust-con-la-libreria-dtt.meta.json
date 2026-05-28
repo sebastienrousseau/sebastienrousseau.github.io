@@ -1,11 +1,11 @@
 {
-  "date": "December 04, 2023",
   "banner_alt": "DateTime (DTT), il toolkit essenziale per le operazioni di data e ora",
-  "language": "it-IT",
-  "locale": "it_IT",
-  "keywords": "DTT, DateTime, Rust, data, ora, fuso orario, parsing, libreria",
   "subtitle": "DateTime (DTT): il toolkit essenziale per le operazioni di data e ora",
   "description": "DTT è una libreria Rust per la gestione di data e ora con supporto per fusi orari, parsing flessibile e calcoli precisi.",
+  "locale": "it_IT",
+  "keywords": "DTT, DateTime, Rust, data, ora, fuso orario, parsing, libreria",
+  "language": "it-IT",
   "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
+  "date": "December 04, 2023",
   "title": "Padroneggiare data e ora in Rust con la libreria DTT"
 }

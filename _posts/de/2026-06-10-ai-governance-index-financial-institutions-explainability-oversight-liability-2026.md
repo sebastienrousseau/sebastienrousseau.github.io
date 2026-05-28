@@ -101,7 +101,7 @@ site_software: "Static Site Generator, Rust"
 - **Agentische KI hebt die Messlatte.** Sobald KI Workflows ausführt, muss Governance Befugnis, Identität, Freigaben und Umkehrbarkeit abdecken — nicht nur Ausgaben.
 - **Haftung verlagert sich auf das Institut.** Anbieterbedingungen für Foundation-Modelle begrenzen die Exposition; die Bank trägt das regulatorische und kundenseitige Risiko.
 
-**Verwandte Beiträge:** [DORA + AI Act Compliance-Stack](/de/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/) · [KI-Betriebssystem für Zahlungen](/de/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/) · [Agentische Zahlungen — Einwilligung + Haftung](/de/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/)
+**Verwandte Beiträge:** [DORA + AI Act Compliance-Stack](/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/) · [KI-Betriebssystem für Zahlungen](/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/) · [Agentische Zahlungen — Einwilligung + Haftung](/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/)
 
 </aside>
 <!-- lead-end -->

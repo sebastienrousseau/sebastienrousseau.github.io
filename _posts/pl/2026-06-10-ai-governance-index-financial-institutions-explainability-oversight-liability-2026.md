@@ -101,7 +101,7 @@ site_software: "Static Site Generator, Rust"
 - **Agentowe AI podnosi poprzeczkę.** Gdy AI wykonuje procesy, zarządzanie musi obejmować uprawnienia, tożsamość, zatwierdzenia i odwracalność — a nie tylko wyjścia.
 - **Odpowiedzialność przechodzi na instytucję.** Warunki dostawców modeli bazowych ograniczają ich ekspozycję; bank ponosi ryzyko regulacyjne i wobec klienta.
 
-**Powiązane lektury:** [DORA + AI Act — stos zgodności](/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/) · [System operacyjny AI dla płatności](/pl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/) · [Agentowe płatności — zgoda i odpowiedzialność](/pl/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/)
+**Powiązane lektury:** [DORA + AI Act — stos zgodności](/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/) · [System operacyjny AI dla płatności](/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/) · [Agentowe płatności — zgoda i odpowiedzialność](/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/)
 
 </aside>
 <!-- lead-end -->

@@ -101,7 +101,7 @@ site_software: "Static Site Generator, Rust"
 - **Ajan YZ çıtayı yükseltir.** YZ iş akışlarını yürütmeye başladığında, yönetişim yalnızca çıktıları değil; yetkiyi, kimliği, onayları ve geri alınabilirliği kapsamalıdır.
 - **Sorumluluk kuruma kayar.** Temel model satıcısı sözleşmeleri tazminatı sınırlandırır; düzenleyici ve müşteriye dönük riski banka taşır.
 
-**İlgili okumalar:** [DORA + AI Act uyum yığını](/tr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/) · [Ödemeler için YZ işletim sistemi](/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/) · [Ajan ödemelerde onay ve sorumluluk](/tr/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/)
+**İlgili okumalar:** [DORA + AI Act uyum yığını](/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/) · [Ödemeler için YZ işletim sistemi](/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/) · [Ajan ödemelerde onay ve sorumluluk](/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/)
 
 </aside>
 <!-- lead-end -->

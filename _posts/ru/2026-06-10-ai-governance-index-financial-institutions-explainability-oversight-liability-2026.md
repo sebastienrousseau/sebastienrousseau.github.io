@@ -101,7 +101,7 @@ site_software: "Static Site Generator, Rust"
 - **Агентный ИИ поднимает планку.** Как только ИИ исполняет рабочие процессы, управление должно охватывать полномочия, идентификацию, согласования и обратимость — а не только результаты.
 - **Ответственность смещается к институту.** Условия поставщиков базовых моделей ограничивают их экспозицию; банк несёт регуляторный и клиентский риск.
 
-**Связанные материалы:** [Стек комплаенса DORA + AI Act](/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/) · [Операционная система ИИ для платежей](/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/) · [Согласие и ответственность в агентных платежах](/ru/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/)
+**Связанные материалы:** [Стек комплаенса DORA + AI Act](/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/) · [Операционная система ИИ для платежей](/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/) · [Согласие и ответственность в агентных платежах](/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/)
 
 </aside>
 <!-- lead-end -->

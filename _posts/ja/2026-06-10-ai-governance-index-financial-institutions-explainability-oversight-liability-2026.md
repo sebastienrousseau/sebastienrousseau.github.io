@@ -101,7 +101,7 @@ site_software: "Static Site Generator, Rust"
 - **エージェント型 AI が水準を引き上げます。**AI がワークフローを実行するようになれば、ガバナンスはアウトプットだけでなく、権限、アイデンティティ、承認、可逆性までを対象とする必要があります。
 - **責任は金融機関に移転します。**基盤モデルのベンダー条項はエクスポージャーに上限を設けるため、銀行が規制上および顧客対応上のリスクを負うことになります。
 
-**関連記事:** [DORA + AI Act コンプライアンス・スタック](/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/) · [決済のための AI オペレーティングシステム](/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/) · [エージェント型決済の同意と責任](/ja/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/)
+**関連記事:** [DORA + AI Act コンプライアンス・スタック](/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/) · [決済のための AI オペレーティングシステム](/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/) · [エージェント型決済の同意と責任](/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/)
 
 </aside>
 <!-- lead-end -->

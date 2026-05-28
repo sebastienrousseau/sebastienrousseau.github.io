@@ -1,11 +1,11 @@
 {
-  "date": "January 23, 2024",
-  "banner": "https://cloudcdn.pro/stocks/images/prompt-engineering-banner.webp",
   "locale": "vi_VN",
-  "language": "vi-VN",
   "title": "Tiến bộ trong kỹ thuật prompt AI",
+  "banner": "https://cloudcdn.pro/stocks/images/prompt-engineering-banner.webp",
+  "subtitle": "Khoa học của việc giao tiếp với các mô hình ngôn ngữ lớn",
+  "language": "vi-VN",
   "keywords": "kỹ thuật prompt, LLM, chain of thought, ReAct, RAG, few-shot, GPT, Claude",
-  "banner_alt": "Sơ đồ trừu tượng của các kỹ thuật prompt",
   "description": "Kỹ thuật prompt đã trưởng thành thành một ngành kỹ thuật riêng. Các kỹ thuật mới — CoT, ReAct, RAG — giúp tối đa hoá giá trị từ các LLM.",
-  "subtitle": "Khoa học của việc giao tiếp với các mô hình ngôn ngữ lớn"
+  "date": "January 23, 2024",
+  "banner_alt": "Sơ đồ trừu tượng của các kỹ thuật prompt"
 }

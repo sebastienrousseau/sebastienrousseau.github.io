@@ -1,11 +1,11 @@
 {
-  "description": "Imuse cryptography CRYSTALS-Kyber ti o lagbara ati ailewu-kuantum, lati daabobo data rẹ lọwọ awọn irokeke kuantum ati ikọlu cryptanalytic.",
-  "date": "Nov 28, 2023",
-  "subtitle": "KyberLib, imuse Rust ti o lagbara ti CRYSTALS-Kyber fun akoko kuantum.",
-  "locale": "yo_NG",
-  "title": "KyberLib: Rust CRYSTALS-Kyber for Post-Quantum",
-  "language": "yo-NG",
   "banner_alt": "Agbara Ibasọrọ Ailewu ni Akoko Kuantum pẹlu KyberLib",
+  "language": "yo-NG",
+  "locale": "yo_NG",
+  "subtitle": "KyberLib, imuse Rust ti o lagbara ti CRYSTALS-Kyber fun akoko kuantum.",
+  "description": "Imuse cryptography CRYSTALS-Kyber ti o lagbara ati ailewu-kuantum, lati daabobo data rẹ lọwọ awọn irokeke kuantum ati ikọlu cryptanalytic.",
   "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
-  "keywords": "KyberLib, Rust CRYSTALS-Kyber, cryptography lẹhin-kuantum, lattice-based cryptography, paṣipaarọ bọtini ti o daabobo lọwọ kuantum, NIST FIPS 203, Sebastien Rousseau, KEM, ìfẹsẹmúlẹ̀ isanwó, PQC library"
+  "keywords": "KyberLib, Rust CRYSTALS-Kyber, cryptography lẹhin-kuantum, lattice-based cryptography, paṣipaarọ bọtini ti o daabobo lọwọ kuantum, NIST FIPS 203, Sebastien Rousseau, KEM, ìfẹsẹmúlẹ̀ isanwó, PQC library",
+  "date": "Nov 28, 2023",
+  "title": "KyberLib: Rust CRYSTALS-Kyber for Post-Quantum"
 }

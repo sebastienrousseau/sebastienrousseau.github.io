@@ -1,11 +1,11 @@
 {
   "description": "Hé lộ Express Transaction Credits — một đồng tiền mã hoá mới được thiết kế để giải quyết các giới hạn tốc độ của Bitcoin và Ethereum.",
-  "date": "February 4, 2018",
-  "subtitle": "Tổng quan thiết kế của Express Transaction Credits (ETC)",
   "banner_alt": "Một sơ đồ trừu tượng về một mạng thanh toán nhanh",
-  "title": "Hé lộ một đồng tiền mã hoá mới và giải pháp thanh toán nhanh hơn cho tương lai",
   "language": "vi-VN",
+  "banner": "https://cloudcdn.pro/stocks/images/etc-banner.webp",
   "keywords": "tiền mã hoá, thanh toán nhanh, Express Transaction Credits, ETC, blockchain, giao dịch tức thời, Layer 2",
   "locale": "vi_VN",
-  "banner": "https://cloudcdn.pro/stocks/images/etc-banner.webp"
+  "title": "Hé lộ một đồng tiền mã hoá mới và giải pháp thanh toán nhanh hơn cho tương lai",
+  "subtitle": "Tổng quan thiết kế của Express Transaction Credits (ETC)",
+  "date": "February 4, 2018"
 }

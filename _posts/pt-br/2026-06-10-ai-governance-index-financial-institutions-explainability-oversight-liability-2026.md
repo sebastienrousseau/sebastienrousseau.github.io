@@ -100,7 +100,7 @@ site_software: "Static Site Generator, Rust"
 - **A IA agêntica eleva o sarrafo.** Quando a IA executa fluxos de trabalho, a governança precisa cobrir autoridade, identidade, aprovações e reversibilidade — não só os outputs.
 - **A responsabilidade se desloca para a instituição.** Os termos de fornecedores de modelos fundacionais limitam exposição; o banco carrega o risco regulatório e o risco perante o cliente.
 
-**Leitura relacionada:** [Stack de conformidade DORA + AI Act](/pt-br/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/) · [Sistema operacional de IA para pagamentos](/pt-br/2026-05-27-ai-operating-system-pagamentos-fraud-routing-resilience-compliance-2026/) · [Consentimento e responsabilidade em pagamentos agênticos](/pt-br/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/)
+**Leitura relacionada:** [Stack de conformidade DORA + AI Act](/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/) · [Sistema operacional de IA para pagamentos](/2026-05-27-ai-operating-system-pagamentos-fraud-routing-resilience-compliance-2026/) · [Consentimento e responsabilidade em pagamentos agênticos](/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/)
 
 </aside>
 <!-- lead-end -->

@@ -100,7 +100,7 @@ site_software: "Static Site Generator, Rust"
 - **AI tác nhân nâng tiêu chuẩn.** Khi AI thực thi quy trình, quản trị phải bao trùm thẩm quyền, định danh, phê duyệt và khả năng đảo ngược — không chỉ đầu ra.
 - **Trách nhiệm pháp lý dịch chuyển về định chế.** Điều khoản nhà cung cấp mô hình nền tảng giới hạn phơi nhiễm của họ; ngân hàng gánh rủi ro pháp lý và đối diện khách hàng.
 
-**Đọc thêm:** [Ngăn xếp tuân thủ DORA + AI Act](/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/) · [Hệ điều hành AI cho thanh toán](/vi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/) · [Thanh toán tác nhân: chấp thuận + trách nhiệm](/vi/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/)
+**Đọc thêm:** [Ngăn xếp tuân thủ DORA + AI Act](/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/) · [Hệ điều hành AI cho thanh toán](/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/) · [Thanh toán tác nhân: chấp thuận + trách nhiệm](/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/)
 
 </aside>
 <!-- lead-end -->

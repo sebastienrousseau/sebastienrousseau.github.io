@@ -1,12 +1,12 @@
 {
-  "banner_alt": "暗号化されたデータと量子コンピュータ",
-  "locale": "ja_JP",
   "description": "完全準同型暗号が銀行・金融サービスにおけるデータセキュリティをどのように革新し、量子時代の脅威に対してプライバシーを保護するか。",
-  "keywords": "完全準同型暗号, FHE, 量子安全, 銀行, プライバシー, クラウド計算, ML-FHE",
+  "locale": "ja_JP",
   "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-iar-afB0QQw-unsplash.webp",
-  "last_reviewed": "2026-05-11",
+  "keywords": "完全準同型暗号, FHE, 量子安全, 銀行, プライバシー, クラウド計算, ML-FHE",
   "title": "銀行量子時代の完全準同型暗号",
   "subtitle": "FHE が量子時代におけるデータセキュリティを革新",
+  "banner_alt": "暗号化されたデータと量子コンピュータ",
+  "last_reviewed": "2026-05-11",
   "language": "ja-JP",
   "date": "March 25, 2024"
 }
