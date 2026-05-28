@@ -6,8 +6,23 @@
     <description>Articles en français : IA appliquée, paiements ISO 20022, cryptographie post-quantique et transformation des paiements wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/fr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fr-FR</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 18:12:26 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Tous droits réservés.</copyright>
+    <item>
+      <title>L&apos;Indice de trésorerie autonome 2026 : trésorerie agentique, liquidité programmable, dépôts tokenisés et contrôle en temps réel</title>
+      <link>https://sebastienrousseau.com/fr/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenise-deposits-2026/</link>
+      <description>Indice 2026 de préparation à la trésorerie autonome : flux agentiques, liquidité programmable, dépôts tokenisés, paiements temps réel et contrôle automatisé.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenise-deposits-2026/</guid>
+      <pubDate>Thu, 28 May 2026 18:12:26 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" type="image/webp" length="0"/>
+      <category>trésorerie autonome 2026</category>
+      <category>trésorerie agentique</category>
+      <category>liquidité programmable</category>
+      <category>dépôts tokenisés trésorerie</category>
+      <category>trésorerie temps réel</category>
+      <category>gestion de trésorerie IA</category>
+    </item>
     <item>
       <title>DORA, EU AI Act et souveraineté des données : la pile de conformité 2026 pour les banques</title>
       <link>https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

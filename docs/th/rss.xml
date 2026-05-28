@@ -6,8 +6,25 @@
     <description>บทความภาษาไทย: AI ประยุกต์, การชำระเงิน ISO 20022, การเข้ารหัสหลังควอนตัม และการปฏิรูปการชำระเงินขายส่ง</description>
     <atom:link href="https://sebastienrousseau.com/th/rss.xml" rel="self" type="application/rss+xml"/>
     <language>th-TH</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 18:12:27 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์</copyright>
+    <item>
+      <title>ดัชนีคลังอิสระปี 2026: คลังเชิงตัวแทน สภาพคล่องที่โปรแกรมได้ เงินฝากโทเค็น และการควบคุมเงินสดเรียลไทม์</title>
+      <link>https://sebastienrousseau.com/th/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</link>
+      <description>ดัชนีปี 2026 สำหรับความพร้อมของคลังอิสระ ครอบคลุม workflow คลังเชิงตัวแทน สภาพคล่องที่โปรแกรมได้ เงินฝากโทเค็น การชำระเงินเรียลไทม์ และการควบคุมเงินสดอัตโนมัติเป็นโครงสร้างเดียว</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</guid>
+      <pubDate>Thu, 28 May 2026 18:12:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" type="image/webp" length="0"/>
+      <category>คลังอิสระ 2026</category>
+      <category>คลังเชิงตัวแทน</category>
+      <category>สภาพคล่องที่โปรแกรมได้</category>
+      <category>เงินฝากโทเค็นสำหรับคลัง</category>
+      <category>คลังเรียลไทม์</category>
+      <category>การจัดการเงินสดด้วย AI</category>
+      <category>ISO 20022</category>
+      <category>การควบคุมเงินสดเรียลไทม์</category>
+    </item>
     <item>
       <title>DORA กฎหมาย AI ของ EU และอธิปไตยข้อมูล: สแต็คการปฏิบัติตามกฎปี 2026 ของธนาคาร</title>
       <link>https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

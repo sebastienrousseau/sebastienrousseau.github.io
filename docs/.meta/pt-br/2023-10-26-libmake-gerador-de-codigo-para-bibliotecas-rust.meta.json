@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
   "banner_alt": "Grandes columnas blancas",
-  "keywords": "Rust, biblioteca, desenvolvimento, código, generador, boilerplate, buenas práticas, qualidade, fiable",
-  "subtitle": "LibMake: um generador de código Rust que impone as buenas práticas desde ou primer día",
-  "language": "pt-BR",
   "date": "October 26, 2023",
+  "keywords": "Rust, biblioteca, desenvolvimento, código, generador, boilerplate, buenas práticas, qualidade, fiable",
+  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
+  "description": "Impulse o desenvolvimento de bibliotecas Rust com LibMake: uma ferramenta de geração de código que impone as buenas práticas e produce o código inicial, ahorrando tempo e esfuerzo.",
+  "subtitle": "LibMake: um generador de código Rust que impone as buenas práticas desde ou primer día",
   "title": "Racionalizar o desenvolvimento de bibliotecas Rust mediante a geração de código",
   "locale": "pt_BR",
-  "description": "Impulse o desenvolvimento de bibliotecas Rust com LibMake: uma ferramenta de geração de código que impone as buenas práticas e produce o código inicial, ahorrando tempo e esfuerzo."
+  "language": "pt-BR"
 }

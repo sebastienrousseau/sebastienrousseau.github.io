@@ -1,11 +1,11 @@
 {
   "title": "The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View",
-  "language": "ha-NG",
-  "keywords": "ISO 20022, pacs.008, SWIFT CBPR+, adireshi mai tsari, Nuwamba 2026, adireshi na gidan waya, TwnNm, Ctry, StrtNm, BldgNb",
-  "locale": "ha_NG",
   "date": "May 12, 2026",
+  "locale": "ha_NG",
+  "language": "ha-NG",
   "description": "Daga Nuwamba 2026, SWIFT CBPR+ yana buƙatar adireshi na gidan waya da aka tsara a cikin saƙonnin biyan kuɗi na ƙasa da ƙasa. Layin adireshi marasa tsari (AdrLine kaɗai) ba za a yarda da su ba a pacs.008; aƙalla TwnNm da Ctry ana buƙata. Har yanzu kashi 65% na saƙonnin da kashi 44% na bankunan ba su cika ka'ida ba.",
-  "subtitle": "Daga tsakiyar Nuwamba 2026, SWIFT CBPR+ zai ƙi adireshi na gidan waya marasa tsari a pacs.008 da saƙonnin biyan kuɗi na ƙasa da ƙasa. Kusan kashi 65% na saƙonnin ba su cika ka'ida ba, tagar gyarawa na rufewa da sauri.",
   "banner_alt": "Zanen adireshi mai tsari na ISO 20022 pacs.008 — filayen saƙon biyan kuɗi na ƙasa da ƙasa tare da TwnNm da Ctry da aka haskaka",
-  "banner": "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
+  "banner": "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp",
+  "keywords": "ISO 20022, pacs.008, SWIFT CBPR+, adireshi mai tsari, Nuwamba 2026, adireshi na gidan waya, TwnNm, Ctry, StrtNm, BldgNb",
+  "subtitle": "Daga tsakiyar Nuwamba 2026, SWIFT CBPR+ zai ƙi adireshi na gidan waya marasa tsari a pacs.008 da saƙonnin biyan kuɗi na ƙasa da ƙasa. Kusan kashi 65% na saƙonnin ba su cika ka'ida ba, tagar gyarawa na rufewa da sauri."
 }

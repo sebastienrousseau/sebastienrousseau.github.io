@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/bn/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>bn-BD</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+    <news:title>2026-এ স্বায়ত্তশাসিত ট্রেজারি সূচক: এজেন্টিক ট্রেজারি, প্রোগ্রামযোগ্য তরলতা, টোকেনাইজড আমানত ও রিয়েল-টাইম নগদ নিয়ন্ত্রণ</news:title>
+    <news:keywords>স্বায়ত্তশাসিত ট্রেজারি 2026, এজেন্টিক ট্রেজারি, প্রোগ্রামযোগ্য তরলতা, টোকেনাইজড আমানত ট্রেজারি, রিয়েল-টাইম ট্রেজারি, ক্যাশ ম্যানেজমেন্ট AI</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

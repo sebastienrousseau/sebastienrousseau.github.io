@@ -1,11 +1,11 @@
 {
+  "keywords": "Àkàndé, 语音助手, GPT, Python, OpenAI, 自然语言理解, PDF 摘要, SQLite, 缓存, 高管助手",
+  "description": "Àkàndé 语音助手整合 OpenAI GPT 模型，提供自然语言理解、PDF 摘要与 SQLite 高效缓存。",
   "locale": "zh_CN",
   "banner": "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp",
   "date": "February 12, 2024",
-  "language": "zh-Hans",
-  "keywords": "Àkàndé, 语音助手, GPT, Python, OpenAI, 自然语言理解, PDF 摘要, SQLite, 缓存, 高管助手",
   "title": "Àkàndé 语音助手：变革个人与高管协助",
+  "language": "zh-Hans",
   "banner_alt": "一台白色球形现代设备",
-  "subtitle": "OpenAI GPT 与 Python 多功能性的结合，提供自然语言理解、高效缓存与 PDF 摘要的语音助手",
-  "description": "Àkàndé 语音助手整合 OpenAI GPT 模型，提供自然语言理解、PDF 摘要与 SQLite 高效缓存。"
+  "subtitle": "OpenAI GPT 与 Python 多功能性的结合，提供自然语言理解、高效缓存与 PDF 摘要的语音助手"
 }

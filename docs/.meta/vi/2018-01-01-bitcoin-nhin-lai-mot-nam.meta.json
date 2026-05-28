@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Một đống tiền vàng và bạc đặt trên một chiếc bàn",
   "description": "Bitcoin: một hệ thống tiền mặt điện tử ngang hàng (P2P ECS) có khả năng cách mạng hoá cách mọi người giao dịch trực tuyến.",
+  "language": "vi-VN",
   "date": "January 1, 2018",
-  "title": "Bitcoin: nhìn lại một năm của đồng tiền mã hoá đầu tiên",
+  "banner_alt": "Một đống tiền vàng và bạc đặt trên một chiếc bàn",
   "keywords": "Bitcoin, tiền mã hoá, blockchain, P2P, chi tiêu hai lần, đào, proof-of-work, ETF, Satoshi Nakamoto, tài chính phi tập trung",
   "subtitle": "Một hệ thống thanh toán điện tử ngang hàng đã định nghĩa lại tiền tệ",
-  "locale": "vi_VN",
   "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
-  "language": "vi-VN"
+  "title": "Bitcoin: nhìn lại một năm của đồng tiền mã hoá đầu tiên",
+  "locale": "vi_VN"
 }

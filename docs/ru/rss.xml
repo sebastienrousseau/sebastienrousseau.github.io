@@ -6,8 +6,23 @@
     <description>Статьи на русском языке: прикладной ИИ, платежи ISO 20022, постквантовая криптография и трансформация оптовых платежей.</description>
     <atom:link href="https://sebastienrousseau.com/ru/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ru-RU</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 18:12:27 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Все права защищены.</copyright>
+    <item>
+      <title>Индекс автономного казначейства 2026: агентные процессы, программируемая ликвидность, токенизированные депозиты</title>
+      <link>https://sebastienrousseau.com/ru/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</link>
+      <description>Индекс готовности автономного казначейства 2026: агентные процессы, программируемая ликвидность, токенизированные депозиты, платежи в реальном времени, контроль наличных.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</guid>
+      <pubDate>Thu, 28 May 2026 18:12:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" type="image/webp" length="0"/>
+      <category>автономное казначейство 2026</category>
+      <category>агентное казначейство</category>
+      <category>программируемая ликвидность</category>
+      <category>токенизированные депозиты казначейство</category>
+      <category>казначейство в реальном времени</category>
+      <category>управление наличными ИИ</category>
+    </item>
     <item>
       <title>DORA, Закон ЕС об ИИ и суверенитет данных: стек комплаенса банков 2026 года</title>
       <link>https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

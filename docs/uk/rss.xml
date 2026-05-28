@@ -6,8 +6,23 @@
     <description>Статті українською: прикладний ШІ, платежі ISO 20022, постквантова криптографія та трансформація оптових платежів.</description>
     <atom:link href="https://sebastienrousseau.com/uk/rss.xml" rel="self" type="application/rss+xml"/>
     <language>uk-UA</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 18:12:27 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Усі права захищено.</copyright>
+    <item>
+      <title>Індекс автономного казначейства 2026: агенти, програмована ліквідність і токенізовані депозити</title>
+      <link>https://sebastienrousseau.com/uk/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</link>
+      <description>Індекс готовності до автономного казначейства 2026: агентні процеси, програмована ліквідність, токенізовані депозити, платежі в реальному часі та керування грошима.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</guid>
+      <pubDate>Thu, 28 May 2026 18:12:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" type="image/webp" length="0"/>
+      <category>автономне казначейство 2026</category>
+      <category>агентне казначейство</category>
+      <category>програмована ліквідність</category>
+      <category>токенізовані депозити казначейство</category>
+      <category>казначейство в реальному часі</category>
+      <category>керування грошима ШІ</category>
+    </item>
     <item>
       <title>DORA, EU AI Act і суверенітет даних: стек банківського комплаєнсу 2026</title>
       <link>https://sebastienrousseau.com/uk/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

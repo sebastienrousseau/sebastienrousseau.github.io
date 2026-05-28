@@ -1,11 +1,11 @@
 {
-  "locale": "zh_CN",
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "title": "区块链：2018 年最重要的技术",
   "subtitle": "通过私钥密码学和点对点（P2P）网络保障数字交易的非凡历程",
   "description": "区块链——驱动加密货币飞速崛起的底层技术——正在颠覆企业、金融服务和资本市场。",
-  "keywords": "区块链, 加密货币, 分布式账本, 智能合约, 去中心化金融, 供应链, 数字身份, 共识机制, 银行业, 金融科技",
-  "language": "zh-Hans",
   "date": "January 2, 2018",
-  "title": "区块链：2018 年最重要的技术",
-  "banner_alt": "一座具有许多孔洞的高塔建筑"
+  "locale": "zh_CN",
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "keywords": "区块链, 加密货币, 分布式账本, 智能合约, 去中心化金融, 供应链, 数字身份, 共识机制, 银行业, 金融科技",
+  "banner_alt": "一座具有许多孔洞的高塔建筑",
+  "language": "zh-Hans"
 }
