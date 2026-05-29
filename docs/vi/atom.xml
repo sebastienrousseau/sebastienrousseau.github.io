@@ -4,7 +4,52 @@
   <link href="https://sebastienrousseau.com/vi/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/vi/"/>
   <id>https://sebastienrousseau.com/vi/</id>
-  <updated>2026-05-22T21:38:56+00:00</updated>
+  <updated>2026-05-28T06:26:19+00:00</updated>
+  <entry>
+    <title>DORA, Đạo luật AI EU và chủ quyền dữ liệu: ngăn xếp tuân thủ 2026 cho ngân hàng</title>
+    <link href="https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>
+    <id>https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, EU AI Act, GDPR, rủi ro tập trung cloud và chủ quyền dữ liệu hội tụ thành một ngăn xếp tuân thủ 2026 cho ngân hàng — kiến trúc, không phải tủ hồ sơ chính sách.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>AI là hệ điều hành của thanh toán: Gian lận, định tuyến, phục hồi và tuân thủ năm 2026</title>
+    <link href="https://sebastienrousseau.com/vi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/"/>
+    <id>https://sebastienrousseau.com/vi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</id>
+    <updated>2026-05-27T06:06:06+00:00</updated>
+    <published>2026-05-27T06:06:06+00:00</published>
+    <summary>AI đang trở thành hệ điều hành của thanh toán năm 2026, dịch chuyển từ phân tích sang phòng chống gian lận, sửa chữa thanh toán, định tuyến, dự báo thanh khoản, sàng lọc tuân thủ và kiểm soát thương mại agentic.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Magnifica Humanitas: Đọc thông điệp giáo hoàng đầu tiên về AI</title>
+    <link href="https://sebastienrousseau.com/vi/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/"/>
+    <id>https://sebastienrousseau.com/vi/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>Magnifica Humanitas của Giáo hoàng Lêô XIV: đọc thông điệp đầu tiên về AI dưới góc nhìn kỹ thuật — tàu hỏa, ô tô, hạt nhân, internet và hy vọng.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Stablecoin vs Tiền gửi tokenized 2026: Ngân hàng cần bảo vệ điều gì</title>
+    <link href="https://sebastienrousseau.com/vi/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/"/>
+    <id>https://sebastienrousseau.com/vi/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>Stablecoin và tiền gửi tokenized đang hội tụ quanh quyết toán lập trình được, nhưng các mô hình bảng cân đối, pháp lý, thanh khoản và niềm tin vẫn khác biệt.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Thanh khoản lập trình được 2026: AI, tiền gửi tokenized và điều phối ngân quỹ thời gian thực</title>
+    <link href="https://sebastienrousseau.com/vi/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/"/>
+    <id>https://sebastienrousseau.com/vi/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</id>
+    <updated>2026-05-25T06:06:06+00:00</updated>
+    <published>2026-05-25T06:06:06+00:00</published>
+    <summary>Thanh khoản lập trình được năm 2026 kết nối dự báo AI, tiền gửi tokenized, kênh thanh toán thời gian thực, tài khoản ảo, stablecoin và hệ thống quản lý ngân quỹ thành một lớp điều phối thống nhất cho vốn lưu động.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>UK Payments Forward Plan 2026: Stablecoin, ngân hàng mở, tiền gửi tokenized và thanh toán tác tử</title>
     <link href="https://sebastienrousseau.com/vi/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/"/>
@@ -33,21 +78,21 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+    <title>Tiền gửi mã hóa năm 2026: Dịch vụ ngân hàng, cạnh tranh với stablecoin và hiện trạng của tiền của ngân hàng thương mại có khả năng lập trình</title>
     <link href="https://sebastienrousseau.com/vi/2026-05-21-tokenised-deposits-banking-services-status-2026/"/>
     <id>https://sebastienrousseau.com/vi/2026-05-21-tokenised-deposits-banking-services-status-2026/</id>
     <updated>2026-05-21T06:06:06+00:00</updated>
     <published>2026-05-21T06:06:06+00:00</published>
-    <summary>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</summary>
+    <summary>Dịch vụ tiền gửi token hóa năm 2026 đang chuyển từ nghiên cứu sang các chương trình thí điểm ngân hàng và đề xuất khách hàng ban đầu. Hiện vẫn ở giai đoạn tiền quy mô, nhưng hướng đi rõ ràng: tiền ngân hàng thương mại đang được điều chỉnh cho thanh toán có thể lập trình, ví kỹ thuật số, khả năng tương tác stablecoin và thị trường vốn token hóa.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+    <title>Ngân hàng cloud native năm 2026: Kubernetes, DORA, chủ quyền và hồi kết của ranh giới giữa VM và container</title>
     <link href="https://sebastienrousseau.com/vi/2026-05-20-cloud-native-banking-financial-institutions-2026/"/>
     <id>https://sebastienrousseau.com/vi/2026-05-20-cloud-native-banking-financial-institutions-2026/</id>
     <updated>2026-05-20T06:06:06+00:00</updated>
     <published>2026-05-20T06:06:06+00:00</published>
-    <summary>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</summary>
+    <summary>Cloud native banking 2026 tập trung vào kỹ thuật nền tảng Kubernetes, khả năng phục hồi hoạt động DORA, hội tụ VM và container, chủ quyền đám mây, phân bổ khối lượng công việc AI, di chuyển dữ liệu và bằng chứng rằng dịch vụ tài chính quan trọng có thể vượt qua gián đoạn nhà cung cấp.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

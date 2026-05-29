@@ -1,11 +1,11 @@
 {
+  "subtitle": "Ṣíṣàfihàn Ọjọ́-iwájú AI: Bí Ìwádìí MM1 ti Apple Ṣe Ń Yí Ìkẹ́kọ̀ọ́ Ọ̀pọ̀-Ọ̀nà Padà",
+  "banner_alt": "Àkọlé fún Apple MM1",
+  "title": "Advancing AI with Multimodal LLMs: Insights from MM1",
   "locale": "yo_NG",
-  "description": "Explore Apple's MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials.",
-  "language": "yo-NG",
-  "subtitle": "Unveiling the Future of AI: How Apple's Groundbreaking MM1 Study Revolutionises Multimodal Learning",
-  "banner_alt": "Banner for the Apple MM1",
-  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
-  "keywords": "Multimodal LLMs, MM1 study, AI advancements, pre-training strategies, image recognition, natural language processing, AI applications, future of AI, multimodal learning, AI research",
   "date": "Mar 17, 2024",
-  "title": "Advancing AI with Multimodal LLMs: Insights from MM1"
+  "description": "Ṣawari iwe MM1 ti Apple lori Awọn Awoṣe Ede Nla Multimodal (MLLMs). Kọ ẹkọ nipa eto wọn, awọn ilana ikẹkọ iṣaaju, ati agbara AI.",
+  "keywords": "LLMs Multimodal, ẹkọ MM1, ilọsiwaju AI, awọn ilana ikẹkọ iṣaaju, idanimọ aworan, ṣiṣe ede adayeba, awọn ohun elo AI, ọjọ iwaju AI, ẹkọ multimodal, iwadii AI",
+  "language": "yo-NG",
+  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp"
 }

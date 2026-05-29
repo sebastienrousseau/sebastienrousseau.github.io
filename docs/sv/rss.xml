@@ -6,8 +6,107 @@
     <description>Artiklar på svenska: tillämpad AI, ISO 20022-betalningar, postkvantkryptografi och transformationen av grossistbetalningar.</description>
     <atom:link href="https://sebastienrousseau.com/sv/rss.xml" rel="self" type="application/rss+xml"/>
     <language>sv-SE</language>
-    <lastBuildDate>Fri, 22 May 2026 21:38:56 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alla rättigheter förbehållna.</copyright>
+    <item>
+      <title>DORA, EU:s AI-förordning och datasuveränitet: bankernas efterlevnadsstack 2026</title>
+      <link>https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
+      <description>DORA, EU:s AI-förordning, GDPR, koncentrationsrisk i molnet och datasuveränitet konvergerar 2026 till en gemensam efterlevnadsstack för banker.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>DORA 2026</category>
+      <category>EU AI Act 2026</category>
+      <category>datasuveränitet banker</category>
+      <category>operativ resiliens</category>
+      <category>koncentrationsrisk moln</category>
+      <category>AI-efterlevnad finansiella tjänster</category>
+      <category>högrisk AI</category>
+    </item>
+    <item>
+      <title>AI som betalningarnas operativsystem: bedrägeri, routning, resiliens och efterlevnad 2026</title>
+      <link>https://sebastienrousseau.com/sv/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</link>
+      <description>AI blir betalningarnas operativsystem 2026 och går från analys till bedrägeriskydd, betalningsreparation, routning, likviditetsprognos, efterlevnadsscreening och kontroller för agentisk handel.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>AI-betalningar 2026</category>
+      <category>betalningsbedrägeri</category>
+      <category>betalningsroutning</category>
+      <category>realtidsbedrägeriskydd</category>
+      <category>ISO 20022 AI</category>
+      <category>betalningsresiliens</category>
+      <category>transaktionsanalys</category>
+      <category>kassaflödesprognos</category>
+    </item>
+    <item>
+      <title>Magnifica Humanitas: en teknikläsning av den första AI-encyklikan</title>
+      <link>https://sebastienrousseau.com/sv/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</link>
+      <description>Den 25 maj 2026 utfärdade Påve Leo XIV Magnifica Humanitas, den första AI-encyklikan. En teknikbranschläsning som etiskt ramverk — och landar i hopp.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
+      <category>Magnifica Humanitas</category>
+      <category>Påve Leo XIV</category>
+      <category>AI-encyklika</category>
+      <category>etik för artificiell intelligens</category>
+      <category>etik för kvantdatorer</category>
+      <category>Rerum Novarum</category>
+      <category>Babels torn</category>
+      <category>teknik aldrig neutral</category>
+      <category>transhumanism</category>
+      <category>posthumanism</category>
+      <category>mänsklig värdighet</category>
+      <category>teknologiskt paradigm</category>
+      <category>tåg bil kärnkraft internet</category>
+      <category>moralisk panik teknikhistoria</category>
+      <category>Lucy kunskapsöverföring</category>
+      <category>AI-hopp</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+      <category>Anthropic</category>
+      <category>Sebastien Rousseau</category>
+    </item>
+    <item>
+      <title>Stablecoins vs tokeniserade insättningar 2026: vad banker måste försvara</title>
+      <link>https://sebastienrousseau.com/sv/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</link>
+      <description>Stablecoins och tokeniserade insättningar konvergerar kring programmerbar avveckling, men deras balansräknings-, juridiska, likviditets- och förtroendemodeller skiljer sig fortfarande åt.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>stablecoins 2026</category>
+      <category>tokeniserade insättningar</category>
+      <category>bankinsättningar</category>
+      <category>GENIUS Act</category>
+      <category>JPM Coin</category>
+      <category>insättningstokens</category>
+      <category>stablecoin-reserver</category>
+      <category>bankfinansiering</category>
+      <category>digitala pengar</category>
+    </item>
+    <item>
+      <title>Programmerbar likviditet 2026: AI, tokeniserade insättningar och treasury i realtid</title>
+      <link>https://sebastienrousseau.com/sv/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</link>
+      <description>Programmerbar likviditet 2026 förenar AI-prognoser, tokeniserade insättningar, realtidsrails, virtuella konton, stablecoins och TMS i ett orkestreringslager för rörelsekapital.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</guid>
+      <pubDate>Mon, 25 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>programmerbar likviditet 2026</category>
+      <category>treasury-orkestrering</category>
+      <category>AI-treasury</category>
+      <category>tokeniserade insättningar</category>
+      <category>realtidslikviditet</category>
+      <category>stablecoins treasury</category>
+      <category>multi-rail betalningar</category>
+      <category>virtuella konton</category>
+      <category>transaktionsbank</category>
+      <category>säkerhetsmobilitet</category>
+    </item>
     <item>
       <title>UK Payments Forward Plan 2026: stablecoins, öppen bankverksamhet och agentbetalningar</title>
       <link>https://sebastienrousseau.com/sv/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>
@@ -83,51 +182,51 @@
       <category>Londonjazz konserter</category>
     </item>
     <item>
-      <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+      <title>Tokeniserade depositioner 2026: banktjänster, konkurrens från stablecoins och status för programmerbara pengar från affärsbanker</title>
       <link>https://sebastienrousseau.com/sv/2026-05-21-tokenised-deposits-banking-services-status-2026/</link>
-      <description>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</description>
+      <description>Tokeniserade insättningstjänster 2026 går från forskning till bankpiloter och tidiga kunderbjudanden. Kommersiella bankpengar anpassas för programmerbar avveckling, digitala plånböcker, stablecoin-interoperabilitet och tokeniserade kapitalmarknader.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-21-tokenised-deposits-banking-services-status-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" type="image/webp" length="0"/>
-      <category>tokenised deposits 2026</category>
+      <category>tokeniserade insättningar 2026</category>
       <category>tokenized deposits banking</category>
       <category>deposit tokens</category>
       <category>Great British Tokenised Deposits</category>
       <category>Lloyds digital assets</category>
       <category>stablecoins</category>
-      <category>commercial bank money</category>
+      <category>kommersiella bankpengar</category>
       <category>BIS stablecoins</category>
       <category>Project Agora</category>
       <category>unified ledger</category>
       <category>Deutsche Bank digital money</category>
       <category>CBDC</category>
-      <category>tokenised money</category>
-      <category>digital wallets</category>
+      <category>tokeniserade pengar</category>
+      <category>digitala plånböcker</category>
       <category>tokenised gilts</category>
     </item>
     <item>
-      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <title>Cloud native banking 2026: Kubernetes, DORA, suveränitet och slutet på klyftan mellan VM och container</title>
       <link>https://sebastienrousseau.com/sv/2026-05-20-cloud-native-banking-financial-institutions-2026/</link>
-      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <description>Molnbaserad bankverksamhet 2026 handlar om Kubernetes-plattformsengineering, DORA-anpassad driftsäkerhet, VM- och containerkonvergens, molnsouveränitet, AI-arbetsbelastningar och dataportabilitet.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-20-cloud-native-banking-financial-institutions-2026/</guid>
       <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
-      <category>cloud native banking 2026</category>
-      <category>Kubernetes banks</category>
-      <category>financial institutions cloud</category>
+      <category>molnbaserad bankverksamhet 2026</category>
+      <category>Kubernetes banker</category>
+      <category>finansiella institutioner molnet</category>
       <category>DORA 2026</category>
-      <category>cloud resilience</category>
+      <category>molnresistens</category>
       <category>Red Hat OpenShift</category>
       <category>Portworx</category>
-      <category>VM container coexistence</category>
-      <category>bank cloud sovereignty</category>
-      <category>financial services cloud dependency</category>
-      <category>operational resilience</category>
-      <category>disaster recovery</category>
-      <category>cloud exit strategy</category>
-      <category>AI banking workloads</category>
+      <category>VM container samexistens</category>
+      <category>bank molnsouveränitet</category>
+      <category>finansiella tjänster molnberoende</category>
+      <category>driftsäkerhet</category>
+      <category>katastrofåterställning</category>
+      <category>molnutgångsstrategi</category>
+      <category>AI bankarbetsbelastningar</category>
     </item>
     <item>
       <title>Globala stora betalningar 2026: ISO 20022, förnyelse av RTGS och interoperabilitetens ekonomi</title>

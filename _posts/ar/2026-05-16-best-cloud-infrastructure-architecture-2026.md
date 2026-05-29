@@ -49,7 +49,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/ar/2026-05-16-best-cloud-infrastructure-architecture-2026/rss.xml"
-category: "Technology"
+category: "Finance"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "مخطط بنية السحابة لعام 2026 — ست ركائز أساسية، اقتصاديات الوحدة الوكيلة، حقائق HPC متعددة الوكلاء، حتمية الخزانة المستمرة، أزمة أمان MCP، هوية الوكلاء التشفيرية، العدوى الخوارزمية، وCloudCDN كتطبيق مرجعي مفتوح المصدر لأزمة وكيل الحافة."

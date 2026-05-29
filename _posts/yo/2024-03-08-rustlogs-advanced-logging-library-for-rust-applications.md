@@ -1,13 +1,13 @@
 ---
 title: "RustLogs (RLG): Structured Logging Library for Rust"
-subtitle: "Streamline Your Rust Logging Workflow"
-description: "Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. "
+subtitle: "Mú Ìlànà Ìgbàánú Rust Rẹ Dára Sí i"
+description: "Ṣàwárí RustLogs (RLG), ìwé-ìkàwé ìgbàánú onírúurú fún Rust, pẹ̀lú àwọn ìpele ìgbàánú tó ṣètò, ìgbàánú àsínú, àti ọpọlọpọ àwọn àṣàyàn ìdásí."
 date: "Mar 08, 2024"
 language: "yo-NG"
 locale: "yo_NG"
 banner: "https://cloudcdn.pro/stocks/images/rustlogs.webp"
-banner_alt: "Banner for RustLogs (RLG)"
-keywords: "Rust logging library, asynchronous Rust logging, structured log formats, Rust application debugging, customisable logging Rust, Rust development tools, RustLogs RLG features, efficient Rust logging, RustLogs integration, RustLogs documentation"
+banner_alt: "Àpáta fún RustLogs (RLG)"
+keywords: "ìwé-ìkàwé ìgbàánú Rust, ìgbàánú àsínú Rust, àwọn ìpele ìgbàánú tó ṣètò, ìtúnṣe àwọn ètò Rust, ìgbàánú tó lè yípò Rust, àwọn irinṣẹ ìdàgbàsókè Rust, àwọn ẹ̀yà RustLogs RLG, ìgbàánú tó múná Rust, àpapọ̀ RustLogs, àkọsílẹ̀ RustLogs"
 ---
 
 ![Banner for RustLogs (RLG)](https://cloudcdn.pro/stocks/images/rustlogs.webp).class="img-fluid clearfix"

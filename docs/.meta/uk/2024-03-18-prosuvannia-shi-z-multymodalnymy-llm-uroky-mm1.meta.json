@@ -1,11 +1,11 @@
 {
-  "subtitle": "Unveiling the Future of AI: How Apple's Groundbreaking MM1 Study Revolutionises Multimodal Learning",
-  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
-  "title": "[UK DRAFT] Advancing AI with Multimodal LLMs: Insights from MM1",
-  "banner_alt": "Banner for the Apple MM1",
+  "keywords": "Багатомодальні LLM, дослідження MM1, досягнення AI, стратегії попереднього навчання, розпізнавання зображень, обробка природної мови, застосування AI, майбутнє AI, багатомодальне навчання, дослідження AI",
+  "description": "Досліджуйте статтю Apple MM1 про багатомодальні великі мовні моделі (MLLM). Дізнайтеся про архітектуру, стратегії попереднього навчання та потенціал AI.",
+  "subtitle": "Розкриваючи майбутнє AI: як революційне дослідження MM1 від Apple трансформує багатомодальне навчання",
   "date": "Mar 17, 2024",
+  "title": "[UK DRAFT] Advancing AI with Multimodal LLMs: Insights from MM1",
+  "locale": "uk_UA",
+  "banner_alt": "Банер для Apple MM1",
   "language": "uk-UA",
-  "keywords": "Multimodal LLMs, MM1 study, AI advancements, pre-training strategies, image recognition, natural language processing, AI applications, future of AI, multimodal learning, AI research",
-  "description": "Explore Apple's MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials.",
-  "locale": "uk_UA"
+  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp"
 }

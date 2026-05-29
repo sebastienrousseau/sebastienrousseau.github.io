@@ -2,6 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl-NL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T06:26:19+00:00</news:publication_date>
+    <news:title>DORA, EU AI Act en datasoevereiniteit: de compliance-stack 2026 voor banken</news:title>
+    <news:keywords>DORA 2026, EU AI Act 2026, datasoevereiniteit banken, operationele veerkracht, concentratierisico cloud, AI-compliance financiële sector, hoog-risico AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl-NL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-27T06:06:06+00:00</news:publication_date>
+    <news:title>AI als besturingssysteem van betalingen: fraude, routering, veerkracht en compliance in 2026</news:title>
+    <news:keywords>AI-besturingssysteem betalingen 2026, betalingsfraude, routering, realtime fraudepreventie, ISO 20022 AI, veerkracht betalingen, transactieanalyse, liquiditeitsprognose, FedNow, RTP, agentic commerce</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/nl/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl-NL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>Magnifica Humanitas: een industrielezing van de AI-encycliek</news:title>
+    <news:keywords>Magnifica Humanitas, Pope Leo XIV, AI-encycliek, ethiek van kunstmatige intelligentie, ethiek van quantum computing, Rerum Novarum, Toren van Babel, technologie nooit neutraal, transhumanisme, posthumanisme, menselijke waardigheid, technologisch paradigma, trein auto kernenergie internet, morele paniek technologiegeschiedenis, Lucy kennisoverdracht, AI hoop, EU AI Act, DORA, Anthropic, Sebastien Rousseau</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/nl/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl-NL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>Stablecoins vs getokeniseerde deposito&apos;s in 2026: wat banken moeten verdedigen</news:title>
+    <news:keywords>stablecoins 2026, getokeniseerde deposito&apos;s, bankdeposito&apos;s, GENIUS Act, JPM Coin, deposit tokens, stablecoin-reserves, bankfinanciering, digitaal geld</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/nl/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl-NL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-25T06:06:06+00:00</news:publication_date>
+    <news:title>Programmeerbare liquiditeit 2026: AI, getokeniseerde deposito&apos;s en real-time treasury</news:title>
+    <news:keywords>programmeerbare liquiditeit 2026, treasury-orkestratie, AI-treasury, getokeniseerde deposito&apos;s, real-time liquiditeit, stablecoins treasury, multi-rail betalingen, virtuele rekeningen, transaction banking, onderpandsmobiliteit</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/nl/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</loc>
   <news:news>
     <news:publication>
@@ -45,8 +105,8 @@
       <news:language>nl-NL</news:language>
     </news:publication>
     <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</news:title>
-    <news:keywords>tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, commercial bank money, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenised money, digital wallets, tokenised gilts</news:keywords>
+    <news:title>Getokeniseerde deposito&apos;s in 2026: bancaire diensten, concurrentie van stablecoins en de status van programmeerbaar geld van commerciële banken</news:title>
+    <news:keywords>getokeniseerde deposito&apos;s 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, commercieel bankgeld, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, getokeniseerd geld, digital wallets, tokenised gilts</news:keywords>
   </news:news>
 </url>
 <url>
@@ -57,8 +117,8 @@
       <news:language>nl-NL</news:language>
     </news:publication>
     <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
-    <news:title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</news:title>
-    <news:keywords>cloud native banking 2026, Kubernetes banks, financial institutions cloud, DORA 2026, cloud resilience, Red Hat OpenShift, Portworx, VM container coexistence, bank cloud sovereignty, financial services cloud dependency, operational resilience, disaster recovery, cloud exit strategy, AI banking workloads</news:keywords>
+    <news:title>Cloud-native bankieren in 2026: Kubernetes, DORA, soevereiniteit en het einde van de scheidslijn tussen VM en container</news:title>
+    <news:keywords>cloud native banking 2026, Kubernetes banken, financiële instellingen cloud, DORA 2026, cloudweerbaarheid, Red Hat OpenShift, Portworx, VM containercoëxistentie, bankcloudsoevereiniteit, financiële diensten cloudafhankelijkheid, operationele weerbaarheid, rampherstel, cloud exitstrategie, AI bankworkloads</news:keywords>
   </news:news>
 </url>
 <url>

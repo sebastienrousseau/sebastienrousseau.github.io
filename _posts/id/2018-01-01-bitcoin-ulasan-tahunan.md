@@ -1,13 +1,13 @@
 ---
 title: "[ID DRAFT] Bitcoin: A Year In Review of the First Cryptocurrency"
-subtitle: "Bitcoin, cryptocurrency, and the technology reshaping financial markets."
-description: "Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online."
+subtitle: "Bitcoin, cryptocurrency, dan teknologi yang membentuk ulang pasar keuangan global."
+description: "Bitcoin: Sistem Uang Elektronik Peer-to-Peer (P2P ECS) yang berpotensi merevolusi cara orang bertransaksi secara online."
 date: "Jan 01, 2018"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp"
-banner_alt: "A pile of gold and silver coins sitting on top of a table"
-keywords: "bitcoin, cryptocurrency, blockchain, decentralized finance, digital currency, peer-to-peer payments, digital gold, programmable money, future of money, financial revolution"
+banner_alt: "Setumpuk koin emas dan perak yang tersusun di atas meja"
+keywords: "bitcoin, cryptocurrency, blockchain, keuangan terdesentralisasi, mata uang digital, pembayaran peer-to-peer, emas digital, uang terprogram, masa depan uang, revolusi keuangan"
 ---
 
 ![A pile of gold and silver coins sitting on top of a table](https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp).class=\"img-fluid clearfix\"

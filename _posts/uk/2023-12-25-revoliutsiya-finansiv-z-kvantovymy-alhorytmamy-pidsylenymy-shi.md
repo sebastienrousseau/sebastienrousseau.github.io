@@ -1,13 +1,13 @@
 ---
 title: "[UK DRAFT] Revolutionising Finance with AI-Enhanced Quantum Algorithms"
-subtitle: "Unleashing the Power of Quantum for Financial Innovation: AI at the Heart of Next-Gen Algorithms"
-description: "Explore the transformative role of AI in quantum algorithms for finance, with a focus on their mathematical intricacies and banking applications."
+subtitle: "Розкриваючи силу квантових технологій для фінансових інновацій: ШІ в центрі алгоритмів нового покоління"
+description: "Досліджуйте трансформаційну роль ШІ в квантових алгоритмах для фінансів, зосереджуючись на їх математичних тонкощах та банківських застосуваннях."
 date: "Dec 25, 2023"
 language: "uk-UA"
 locale: "uk_UA"
 banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
-banner_alt: "Revolutionising Finance with AI-Enhanced Quantum Algorithms"
-keywords: "Quantum Computing, AI Algorithms, Financial Mathematics, Banking Technology, Risk Management, Algorithm Design, Data Analysis, Investment Strategies, Quantum Finance, Machine Learning"
+banner_alt: "Революція у фінансах за допомогою квантових алгоритмів, вдосконалених штучним інтелектом"
+keywords: "Quantum Computing, Алгоритми ШІ, Фінансова математика, Банківські технології, Управління ризиками, Розробка алгоритмів, Аналіз даних, Інвестиційні стратегії, Quantum Finance, Machine Learning"
 ---
 
 ![Revolutionising Finance with AI-Enhanced Quantum Algorithms](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp).class=\"img-fluid clearfix\"

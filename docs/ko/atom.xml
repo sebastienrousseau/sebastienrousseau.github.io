@@ -4,7 +4,52 @@
   <link href="https://sebastienrousseau.com/ko/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ko/"/>
   <id>https://sebastienrousseau.com/ko/</id>
-  <updated>2026-05-22T21:38:56+00:00</updated>
+  <updated>2026-05-28T06:26:19+00:00</updated>
+  <entry>
+    <title>DORA, EU AI 법, 데이터 주권: 2026년 은행을 위한 컴플라이언스 스택</title>
+    <link href="https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, EU AI 법, GDPR, 클라우드 집중 위험, 데이터 주권이 2026년 은행을 위한 하나의 컴플라이언스 스택으로 수렴합니다. 다섯 개의 병행 프로그램이 아닌 하나의 아키텍처 규율이 승부를 가릅니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>결제의 AI 운영체제: 2026년 사기, 라우팅, 회복력, 컴플라이언스</title>
+    <link href="https://sebastienrousseau.com/ko/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</id>
+    <updated>2026-05-27T06:06:06+00:00</updated>
+    <published>2026-05-27T06:06:06+00:00</published>
+    <summary>2026년 AI는 결제의 운영체제로 자리잡으며, 분석 대시보드를 넘어 사기 방지, 결제 복구, 라우팅, 유동성 예측, 컴플라이언스 검사, 에이전틱 커머스 통제 영역으로 확장되고 있습니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Magnifica Humanitas: AI 회칙의 산업적 독해</title>
+    <link href="https://sebastienrousseau.com/ko/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/"/>
+    <id>https://sebastienrousseau.com/ko/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>2026년 5월 25일, 교황 레오 14세는 인공지능을 다룬 최초의 교황 회칙 Magnifica Humanitas를 발표했습니다. 교리가 아닌 AI·양자 시대의 윤리 프레임워크로 읽으면 기차, 자동차, 원자력, 인터넷이 불러온 도덕적 불안을 그대로 반영합니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 스테이블코인 vs 토큰화 예금: 은행이 진정으로 방어해야 할 것</title>
+    <link href="https://sebastienrousseau.com/ko/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>스테이블코인과 토큰화 예금은 프로그래머블 결제를 중심으로 수렴하고 있으나, 대차대조표·법적·유동성·신뢰 모델은 여전히 서로 다른 양상을 유지하고 있습니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026년 프로그래머블 유동성: AI, 토큰화 예금, 실시간 자금 관리 오케스트레이션</title>
+    <link href="https://sebastienrousseau.com/ko/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</id>
+    <updated>2026-05-25T06:06:06+00:00</updated>
+    <published>2026-05-25T06:06:06+00:00</published>
+    <summary>2026년 프로그래머블 유동성은 AI 예측, 토큰화 예금, 실시간 결제 레일, 가상 계좌, 스테이블코인, 자금 관리 시스템을 운전자본을 위한 하나의 오케스트레이션 계층으로 연결합니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>2026 UK Payments Forward Plan: 스테이블코인·오픈뱅킹·토큰화 예금·에이전트 결제</title>
     <link href="https://sebastienrousseau.com/ko/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/"/>
@@ -33,21 +78,21 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+    <title>2026년 토큰화 예금: 은행 서비스, 스테이블코인 경쟁, 그리고 프로그래밍 가능한 상업은행 화폐의 현황</title>
     <link href="https://sebastienrousseau.com/ko/2026-05-21-tokenised-deposits-banking-services-status-2026/"/>
     <id>https://sebastienrousseau.com/ko/2026-05-21-tokenised-deposits-banking-services-status-2026/</id>
     <updated>2026-05-21T06:06:06+00:00</updated>
     <published>2026-05-21T06:06:06+00:00</published>
-    <summary>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</summary>
+    <summary>2026년 토큰화 예금 서비스는 연구에서 은행 파일럿과 초기 고객 제안으로 이동하고 있습니다. 현재 상태는 사전 규모 단계이지만, 상업은행 자금은 프로그래머블 결제, 디지털 지갑, stablecoin 상호운용성 및 토큰화 자본시장에 맞게 적용되고 있습니다.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+    <title>2026년 클라우드 네이티브 뱅킹: Kubernetes, DORA, 주권, 그리고 VM 대 컨테이너 분단의 종말</title>
     <link href="https://sebastienrousseau.com/ko/2026-05-20-cloud-native-banking-financial-institutions-2026/"/>
     <id>https://sebastienrousseau.com/ko/2026-05-20-cloud-native-banking-financial-institutions-2026/</id>
     <updated>2026-05-20T06:06:06+00:00</updated>
     <published>2026-05-20T06:06:06+00:00</published>
-    <summary>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</summary>
+    <summary>2026년 클라우드 네이티브 뱅킹은 Kubernetes 기반 플랫폼 엔지니어링, DORA 대응 운영 복원력, VM·컨테이너 통합, 클라우드 주권, AI 워크로드 배치, 데이터 이식성을 중심으로 발전하고 있습니다.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

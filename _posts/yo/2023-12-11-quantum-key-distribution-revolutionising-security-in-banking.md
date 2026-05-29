@@ -1,13 +1,14 @@
 ---
 title: "Quantum Key Distribution Revolutionising Security in Banking"
-subtitle: "Quantum Key Distribution (QKD) for financial-grade security in banking."
-description: "As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security."
+excerpt: "As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security."
+subtitle: "Ìpínkiri Kọ́kọ́rọ́ Kuántọ̀m (QKD) fún ààbò ìpele ìṣúná nínú ẹ̀ka ìfowópamọ́."
+description: "Bí àwọn kọ̀mpútà kuántọ̀m ṣe ń halẹ̀ mọ́ àwọn ọ̀nà ìfipamọ́ àtọwọdọwọ, Ìpínkiri Kọ́kọ́rọ́ Kuántọ̀m (QKD) jẹ́ ìyípadà àgbàyanu, tí ń pèsè ààbò àìlẹ́gbẹ́."
 date: "Dec 11, 2023"
 language: "yo-NG"
 locale: "yo_NG"
 banner: "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp"
-banner_alt: "HSBC From the Docks"
-keywords: "Quantum Key Distribution (QKD), Quantum Security, Banking, Financial Industry, Digital Finance, Cybersecurity, Quantum Computing, HSBC, Quantum Protection Trial, Financial Transactions"
+banner_alt: "HSBC Láti Ọ̀dọ̀ Àwọn Dọ́ọ̀kù"
+keywords: "Ìpínkiri Kọ́kọ́rọ́ Kuántọ̀m (QKD), Ààbò Kuántọ̀m, Banking, Ẹ̀ka Ìṣúná, Ìṣúná Dígítà, Ààbò Ìkànnì, Ìṣiro Kuántọ̀m, HSBC, Quantum Protection Trial, Àwọn Ìdúnàádúrà Ìṣúná"
 ---
 
 ![HSBC From the Docks](https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp).class="img-fluid clearfix"

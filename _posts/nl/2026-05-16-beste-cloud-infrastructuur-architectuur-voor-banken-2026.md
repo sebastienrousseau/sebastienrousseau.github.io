@@ -49,7 +49,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/nl/2026-05-16-beste-cloud-infrastructuur-architectuur-voor-banken-2026/rss.xml"
-category: "Technologie"
+category: "Finance"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "De blauwdruk voor cloudarchitectuur in 2026 — zes fundamentele pijlers, agentic unit economics, de realiteit van multi-agent HPC, het continue-treasury imperatief, de MCP-beveiligingscrisis, cryptografische agentidentiteit, algoritmische besmetting en CloudCDN als open-source referentie-implementatie voor de edge-agentcrisis."

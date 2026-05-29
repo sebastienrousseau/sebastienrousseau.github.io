@@ -6,14 +6,49 @@
     <description>Türkçe makaleler: uygulamalı yapay zeka, ISO 20022 ödemeleri, post-kuantum kriptografi ve toptan ödemelerin dönüşümü.</description>
     <atom:link href="https://sebastienrousseau.com/tr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>tr-TR</language>
-    <lastBuildDate>Fri, 22 May 2026 21:38:56 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
     <copyright>© Telif Hakkı 2007 - 2026 - Sebastien Rousseau. Tüm hakları saklıdır.</copyright>
     <item>
-      <title>UK Payments Forward Plan 2026: Stablecoinler, Açık Bankacılık, Tokenleştirilmiş Mevduatlar</title>
+      <title>Ödemelerin İşletim Sistemi Olarak AI: 2026&apos;da Dolandırıcılık, Yönlendirme, Dayanıklılık ve Uyum</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</link>
+      <description>AI 2026&apos;da ödemelerin işletim sistemi hâline geliyor; analitikten dolandırıcılık önleme, ödeme onarımı, yönlendirme, likidite tahmini, uyum taraması ve aracılı ticaret kontrollerine geçiyor.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
+      <pubDate>Thu, 28 May 2026 06:26:19 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>AI ödemeler 2026</category>
+      <category>ödeme dolandırıcılığı</category>
+      <category>ödeme yönlendirme</category>
+      <category>gerçek zamanlı dolandırıcılık önleme</category>
+      <category>ISO 20022 AI</category>
+      <category>ödeme dayanıklılığı</category>
+      <category>işlem analizi</category>
+      <category>nakit akışı tahmini</category>
+    </item>
+    <item>
+      <title>Stablecoinler ve Tokenleştirilmiş Mevduatlar 2026: Bankaların Gerçekten Savunması Gereken</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</link>
+      <description>Stablecoinler ve tokenleştirilmiş mevduatlar programlanabilir mutabakat etrafında yakınsıyor; ancak bilanço, hukuki, likidite ve güven modelleri farklı kalıyor.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</guid>
+      <pubDate>Thu, 28 May 2026 06:26:19 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>stablecoinler 2026</category>
+      <category>tokenleştirilmiş mevduatlar</category>
+      <category>banka mevduatları</category>
+      <category>GENIUS Act</category>
+      <category>JPM Coin</category>
+      <category>mevduat tokenları</category>
+      <category>stablecoin rezervleri</category>
+      <category>banka fonlaması</category>
+      <category>dijital para</category>
+    </item>
+    <item>
+      <title>UK Payments Forward Plan 2026: Stablecoinler, Açık Bankacılık, Tokenleştirilmiş Mevduatlar ve Ajansal Ödemeler</title>
       <link>https://sebastienrousseau.com/tr/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>
       <description>UK Payments Forward Plan ve Nisan 2026 politika paketi; geleneksel ödemeler, stablecoinler, tokenleştirilmiş mevduatlar, açık bankacılık ve yapay zeka ajanı ödemeleri için tek tutarlı bir çerçeveye işaret ediyor.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</guid>
-      <pubDate>Fri, 22 May 2026 21:38:56 +0000</pubDate>
+      <pubDate>Thu, 28 May 2026 06:26:19 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>UK Payments Forward Plan 2026</category>
@@ -31,7 +66,7 @@
       <link>https://sebastienrousseau.com/tr/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>
       <description>2026&apos;da ajansal ödemeler kavramdan canlı işleme geçti. Bankacılık sorusu artık yapay zeka ajanlarının ödeme başlatıp başlatamayacağı değil; onay, sorumluluk, kimlik, denetlenebilirlik, dolandırıcılık kontrolleri ve protokol birlikte çalışabilirliğinin nasıl kurulacağıdır.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</guid>
-      <pubDate>Fri, 22 May 2026 21:38:56 +0000</pubDate>
+      <pubDate>Thu, 28 May 2026 06:26:19 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>ajansal ödemeler 2026</category>
@@ -52,6 +87,70 @@
       <category>geçiş anahtarları</category>
       <category>bankacılık UX</category>
       <category>yapay zeka ticareti</category>
+    </item>
+    <item>
+      <title>DORA, EU AI Yasası ve Veri Egemenliği: Bankalar için 2026 Uyum Yığını</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
+      <description>DORA, EU AI Yasası, GDPR, bulut yoğunlaşma riski ve veri egemenliği 2026&apos;da bankalar için tek bir uyum yığınında birleşiyor — yığın artık mimari bir disiplindir.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>DORA 2026</category>
+      <category>EU AI Yasası 2026</category>
+      <category>bankalar için veri egemenliği</category>
+      <category>operasyonel dayanıklılık</category>
+      <category>bulut yoğunlaşma riski</category>
+      <category>finansal hizmetler AI uyumu</category>
+      <category>yüksek riskli AI</category>
+    </item>
+    <item>
+      <title>Magnifica Humanitas: Yapay Zekâ Genelgesinin Sektörel Okuması</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</link>
+      <description>Papa XIV. Leon&apos;un yapay zekâ üzerine ilk genelgesi Magnifica Humanitas&apos;ın sektörel okuması: tren, otomobil, nükleer ve internet emsalleri; umuda varan analiz.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
+      <category>Magnifica Humanitas</category>
+      <category>Pope Leo XIV</category>
+      <category>yapay zeka genelgesi</category>
+      <category>yapay zeka etiği</category>
+      <category>kuantum bilişim etiği</category>
+      <category>Rerum Novarum</category>
+      <category>Babil Kulesi</category>
+      <category>teknoloji asla tarafsız değildir</category>
+      <category>transhümanizm</category>
+      <category>posthümanizm</category>
+      <category>insan onuru</category>
+      <category>teknolojik paradigma</category>
+      <category>tren otomobil nükleer internet</category>
+      <category>teknoloji tarihinde ahlaki panik</category>
+      <category>Lucy bilgi aktarımı</category>
+      <category>yapay zeka umudu</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+      <category>Anthropic</category>
+      <category>Sebastien Rousseau</category>
+    </item>
+    <item>
+      <title>Programlanabilir Likidite 2026: AI, Tokenleştirilmiş Mevduatlar ve Gerçek Zamanlı Hazine</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</link>
+      <description>2026&apos;da programlanabilir likidite; AI tahminleme, tokenleştirilmiş mevduatlar, gerçek zamanlı raylar, sanal hesaplar, stablecoin&apos;ler ve TMS&apos;leri tek bir işletme sermayesi orkestrasyon katmanında birleştirir.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</guid>
+      <pubDate>Mon, 25 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>programlanabilir likidite 2026</category>
+      <category>hazine orkestrasyonu</category>
+      <category>AI hazine</category>
+      <category>tokenleştirilmiş mevduatlar</category>
+      <category>gerçek zamanlı likidite</category>
+      <category>stablecoin hazine</category>
+      <category>çok raylı ödemeler</category>
+      <category>sanal hesaplar</category>
+      <category>işlem bankacılığı</category>
+      <category>teminat hareketliliği</category>
     </item>
     <item>
       <title>İngiltere Acid Jazz 2026: Yenilenme, Sanatçılar, Konserler</title>
@@ -81,50 +180,50 @@
       <category>Londra jazz konserleri</category>
     </item>
     <item>
-      <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+      <title>2026&apos;da Tokenize Mevduatlar: Bankacılık Hizmetleri, Stablecoin Rekabeti ve Programlanabilir Ticari Banka Parasının Durumu</title>
       <link>https://sebastienrousseau.com/tr/2026-05-21-tokenised-deposits-banking-services-status-2026/</link>
-      <description>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</description>
+      <description>2026&apos;da tokenize mevduat hizmetleri araştırmadan banka pilotlarına ve erken müşteri tekliflerine geçiyor. Durum hâlâ ölçek öncesi, ancak yön net: ticari banka parası programlanabilir uzlaşma, dijital cüzdanlar, stablecoin birlikte çalışabilirliği ve tokenize sermaye piyasaları için uyarlanıyor.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-21-tokenised-deposits-banking-services-status-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" type="image/webp" length="0"/>
-      <category>tokenised deposits 2026</category>
-      <category>tokenized deposits banking</category>
-      <category>deposit tokens</category>
+      <category>tokenize mevduatlar 2026</category>
+      <category>tokenized mevduat bankacılığı</category>
+      <category>mevduat token&apos;ları</category>
       <category>Great British Tokenised Deposits</category>
-      <category>Lloyds digital assets</category>
+      <category>Lloyds dijital varlıklar</category>
       <category>stablecoins</category>
-      <category>commercial bank money</category>
+      <category>ticari banka parası</category>
       <category>BIS stablecoins</category>
       <category>Project Agora</category>
-      <category>unified ledger</category>
-      <category>Deutsche Bank digital money</category>
+      <category>birleşik defter</category>
+      <category>Deutsche Bank dijital para</category>
       <category>CBDC</category>
-      <category>tokenised money</category>
-      <category>digital wallets</category>
-      <category>tokenised gilts</category>
+      <category>tokenize para</category>
+      <category>dijital cüzdanlar</category>
+      <category>tokenize gilts</category>
     </item>
     <item>
-      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <title>2026&apos;da Bulut Yerel Bankacılık: Kubernetes, DORA, Egemenlik ve VM ile Konteyner Ayrımının Sonu</title>
       <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/</link>
-      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <description>2026&apos;da cloud native bankacılık; Kubernetes tabanlı platform mühendisliği, DORA uyumlu operasyonel dayanıklılık, VM ve konteyner yakınsaması, bulut egemenliği, AI iş yükü yerleşimi, veri taşınabilirliği ve kritik finansal hizmetlerin sağlayıcı kesintisine karşı dayanıklılığının kanıtını kapsamaktadır.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/</guid>
       <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
-      <category>cloud native banking 2026</category>
-      <category>Kubernetes banks</category>
-      <category>financial institutions cloud</category>
+      <category>cloud native bankacılık 2026</category>
+      <category>Kubernetes bankalar</category>
+      <category>finansal kurumlar bulut</category>
       <category>DORA 2026</category>
-      <category>cloud resilience</category>
+      <category>bulut dayanıklılığı</category>
       <category>Red Hat OpenShift</category>
       <category>Portworx</category>
       <category>VM container coexistence</category>
-      <category>bank cloud sovereignty</category>
-      <category>financial services cloud dependency</category>
-      <category>operational resilience</category>
+      <category>banka bulut egemenliği</category>
+      <category>finansal hizmetler bulut bağımlılığı</category>
+      <category>operasyonel dayanıklılık</category>
       <category>disaster recovery</category>
-      <category>cloud exit strategy</category>
+      <category>bulut çıkış stratejisi</category>
       <category>AI banking workloads</category>
     </item>
     <item>

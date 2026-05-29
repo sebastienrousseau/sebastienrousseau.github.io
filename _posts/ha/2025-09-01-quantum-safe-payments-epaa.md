@@ -1,13 +1,13 @@
 ---
 title: "Quantum-Safe Payments: Why the Industry Must Act Now"
-subtitle: "Quantum-safe readiness is a current infrastructure decision. Not a future one."
-description: "Quantum computing threatens payment system cryptography. The EPAA white paper outlines the structural risk and the urgent case for PQC migration."
+subtitle: "Shirye-shiryen quantum-safe yanke shawara ce ta yanzu game da kayayyakin more rayuwa. Ba ta gaba ba."
+description: "Kwamfutar quantum na barazana ga cryptography na tsarin biyan kuɗi. Takarda ta EPAA ta bayyana haɗarin tsarin da gaggawar hijira zuwa PQC."
 date: "Sep 01, 2025"
 language: "ha-NG"
 locale: "ha_NG"
 banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
-banner_alt: "Quantum computing circuit board in blue light"
-keywords: "quantum-safe payments, post-quantum cryptography, SEPA, SWIFT gpi, ISO 20022, financial services security, EPAA, harvest-now decrypt-later, cryptographic agility, Sebastien Rousseau"
+banner_alt: "Kwamfutar quantum da kewaye a cikin haske mai shuɗi"
+keywords: "biyan kuɗi masu aminci na quantum, cryptography bayan-quantum, SEPA, SWIFT gpi, ISO 20022, tsaro na ayyukan kuɗi, EPAA, harvest-now decrypt-later, sauƙin cryptographic, Sebastien Rousseau"
 ---
 
 ![Quantum computing circuit board in blue light](https://cloudcdn.pro/stocks/images/digital-nodes.webp).class="img-fluid clearfix"

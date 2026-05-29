@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
-  "description": "Agentic AI has crossed from pilot into production across global banking. 70% of institutions are using it to some degree; only one in five has a mature governance model. Meanwhile, autonomous adversaries are operating at machine speed, the legacy COBOL estate the new systems must interoperate with was written for the batch-processing assumptions of the 1960s, and the EU AI Act's August 2026 high-risk deadline is twelve weeks away. This is the engineering and governance position a bank needs to hold.",
-  "keywords": "agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001, COBOL modernisation, mainframe, vibe coding, vibe hacking, autonomous agents, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, third-party risk management, TPRM, vendor risk, post-quantum cryptography, agent control plane, FCA, SM&CR, 12-week action plan, Sebastien Rousseau",
-  "subtitle": "Agentic AI has crossed from pilot into production. 70% of banks are using it; only one in five has a mature governance model. Adversaries are operating at machine speed, the legacy estate was written for the batch-processing assumptions of the 1960s, and the EU AI Act's high-risk deadline is twelve weeks away.",
-  "banner_alt": "Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows",
-  "title": "[UK DRAFT] Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It",
-  "locale": "uk_UA",
+  "description": "Агентичний ШІ перейшов від пілоту до виробництва у банках. 70% його використовують; лише один із п'яти має зрілу модель управління. Дедлайн EU AI Act — за 12 тижнів.",
+  "banner_alt": "Діаграма архітектури агентичної інженерії для банків — spec-driven агенти ШІ, площина управління, квантово-безпечний субстрат та потоки модернізації застарілого mainframe",
   "date": "May 17, 2026",
-  "language": "uk-UA"
+  "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
+  "keywords": "агентична інженерія, spec-driven розробка, банки, фінансові послуги, управління ШІ, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001, модернізація COBOL, mainframe, vibe coding, vibe hacking, автономні агенти, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, управління ризиками третіх сторін, TPRM, ризик постачальників, постквантова криптографія, площина управління агентами, FCA, SM&CR, план дій на 12 тижнів, Sebastien Rousseau",
+  "locale": "uk_UA",
+  "language": "uk-UA",
+  "title": "[UK DRAFT] Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It",
+  "subtitle": "Агентичний ШІ перейшов від пілоту до виробництва. 70% банків використовують його; лише один із п'яти має зрілу модель управління. Противники діють зі швидкістю машин, спадщина COBOL залишається з епохи пакетної обробки 1960-х, а дедлайн EU AI Act — за 12 тижнів."
 }

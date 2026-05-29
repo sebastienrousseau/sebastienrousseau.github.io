@@ -49,7 +49,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/rss.xml"
-category: "Technology"
+category: "Quantum"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "The 2026 quantum cryptography reset — NIST PQC standards, NCSC migration advice, IETF protocol readiness, QKD assurance, crypto-agility, and what banks should prioritise this week."
@@ -102,6 +102,8 @@ excerpt: "Quantum cryptography in 2026 has split into two practical tracks. Post
 ---
 
 # The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer
+
+
 
 
 
@@ -280,7 +282,7 @@ The biggest trap is treating PQC as an algorithm swap. The migration touches pro
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-22">2026-05-22</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-28">2026-05-28</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

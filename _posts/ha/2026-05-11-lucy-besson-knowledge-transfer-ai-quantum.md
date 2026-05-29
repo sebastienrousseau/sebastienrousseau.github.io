@@ -1,13 +1,13 @@
 ---
 title: "Lucy's Flash Drive Revisited: AI, Quantum & Knowledge"
-subtitle: "Twelve years after Luc Besson's Lucy, the film's central metaphor of knowledge migrating from flesh to machine is being unexpectedly validated by LLMs, neutral atom qubits, and whole-brain emulation."
-description: "Twelve years on, Besson's Lucy reads like a thought experiment about knowledge migrating from flesh to machine — quietly validated by LLMs and qubits."
+subtitle: "Shekaru goma sha biyu bayan fim ɗin Lucy na Luc Besson, tsakiyar misalin ƙaurar ilimi daga jiki zuwa na'ura an tabbatar da shi ba tsammani ta LLMs, neutral atom qubits, da whole-brain emulation."
+description: "Shekaru goma sha biyu bayan, fim ɗin Lucy na Besson yana karantawa kamar gwajin tunani game da ilimi da ke ƙaura daga jiki zuwa na'ura — LLMs da qubits sun tabbatar da shi a ɓoye."
 date: "May 11, 2026"
 language: "ha-NG"
 locale: "ha_NG"
 banner: "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp"
-banner_alt: "Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles"
-keywords: "Lucy 2014 film, Luc Besson, knowledge transfer, large language models, neutral atom qubits, whole-brain emulation, substrate independence, AI philosophy, quantum computing, knowledge persistence"
+banner_alt: "Hoton abstract na neural networks da quantum atomic arrays. Kwamfuta mai baƙar fata tana kafa daga ƙananan barbashi da ke sake tsarawa"
+keywords: "Lucy 2014 film, Luc Besson, ƙaurar ilimi, large language models, neutral atom qubits, whole-brain emulation, substrate independence, falsafar AI, quantum computing, adana ilimi"
 ---
 
 ![Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles](https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp).class="img-fluid clearfix"

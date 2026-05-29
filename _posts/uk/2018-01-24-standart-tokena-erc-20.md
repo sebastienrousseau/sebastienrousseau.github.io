@@ -1,13 +1,13 @@
 ---
 title: "[UK DRAFT] ERC-20: The Ethereum Token Interface That Changed the World"
-subtitle: "ERC-20 tokens, Ethereum smart contracts and the standardisation of digital assets."
-description: "ERC-20: The Ethereum Token ERC-20 is the most common type of token used on the Ethereum blockchain and is often referred to as a smart contract digital contract"
+subtitle: "Токени ERC-20, смарт-контракти Ethereum та стандартизація цифрових активів."
+description: "ERC-20 — найпоширеніший стандарт токенів у блокчейні Ethereum, відомий як цифровий смарт-контракт, що революціонізував обіг цифрових активів."
 date: "Jan 24, 2018"
 language: "uk-UA"
 locale: "uk_UA"
 banner: "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
-banner_alt: "Turned off laptop computer on top of brown wooden table"
-keywords: "ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, solidity"
+banner_alt: "Вимкнений ноутбук на коричневому дерев'яному столі"
+keywords: "ethereum, erc20, eip, токени, контракти, blockchain, криптовалюти, smart-token, solidity"
 ---
 
 ![Turned off laptop computer on top of brown wooden table](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class=\"img-fluid clearfix\"

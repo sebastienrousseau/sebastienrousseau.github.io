@@ -1,13 +1,13 @@
 ---
 title: "[UK DRAFT] AI Prompt Engineering 2024: Techniques That Work"
-subtitle: "Reshaping human-computer interaction with significant advancements in custom instructions"
-description: "Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors."
+subtitle: "Переосмислення взаємодії людини з комп'ютером завдяки значним досягненням у персоналізованих інструкціях"
+description: "Досліджуйте досягнення 2024 року в AI Prompt Engineering, відкриваючи інноваційні тенденції та техніки, що революціонізують технологічний і фінансовий сектори."
 date: "Jan 23, 2024"
 language: "uk-UA"
 locale: "uk_UA"
 banner: "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp"
-banner_alt: "A man analysing data on screens"
-keywords: "AI Prompt Engineering, Custom Instructions, Multi-Persona AI, Chain of Thought, Quantum Computing, Ethical AI, Adaptive Prompting, Zero Shot Prompting, Few Shot Prompting, AI Technology Trends"
+banner_alt: "Чоловік аналізує дані на екранах"
+keywords: "AI Prompt Engineering, Персоналізовані Інструкції, Multi-Persona AI, Chain of Thought, Quantum Computing, Етичний AI, Adaptive Prompting, Zero Shot Prompting, Few Shot Prompting, Тенденції Технологій AI"
 ---
 
 ![A man analysing data on screens](https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp).class=\"img-fluid clearfix\"

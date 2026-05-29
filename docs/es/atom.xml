@@ -4,7 +4,52 @@
   <link href="https://sebastienrousseau.com/es/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/es/"/>
   <id>https://sebastienrousseau.com/es/</id>
-  <updated>2026-05-22T21:38:56+00:00</updated>
+  <updated>2026-05-28T06:26:19+00:00</updated>
+  <entry>
+    <title>DORA, EU AI Act y soberanía de datos: el stack de cumplimiento bancario 2026</title>
+    <link href="https://sebastienrousseau.com/es/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>
+    <id>https://sebastienrousseau.com/es/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA, EU AI Act, GDPR, riesgo de concentración cloud y soberanía de datos convergen en 2026 en un único stack de cumplimiento para la banca europea.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>La IA como sistema operativo de los pagos: fraude, enrutamiento, resiliencia y cumplimiento en 2026</title>
+    <link href="https://sebastienrousseau.com/es/2026-05-27-ai-operating-system-pagos-fraud-routing-resilience-compliance-2026/"/>
+    <id>https://sebastienrousseau.com/es/2026-05-27-ai-operating-system-pagos-fraud-routing-resilience-compliance-2026/</id>
+    <updated>2026-05-27T06:06:06+00:00</updated>
+    <published>2026-05-27T06:06:06+00:00</published>
+    <summary>La IA se está convirtiendo en el sistema operativo de los pagos en 2026: prevención de fraude, reparación, enrutamiento, previsión de liquidez, cribado de cumplimiento y controles de comercio agéntico.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Magnifica Humanitas: lectura desde la industria de la IA</title>
+    <link href="https://sebastienrousseau.com/es/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/"/>
+    <id>https://sebastienrousseau.com/es/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>Lectura desde la ingeniería de Magnifica Humanitas, la primera encíclica papal sobre IA del Papa León XIV: marco ético para la era cuántica y esperanza.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Stablecoins vs depósitos tokenizados 2026: qué debe defender la banca</title>
+    <link href="https://sebastienrousseau.com/es/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/"/>
+    <id>https://sebastienrousseau.com/es/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>Stablecoins y depósitos tokenizados convergen en liquidación programable, pero sus modelos de balance, legales, de liquidez y de confianza siguen siendo distintos.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Liquidez programable 2026: IA, depósitos tokenizados y tesorería en tiempo real</title>
+    <link href="https://sebastienrousseau.com/es/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/"/>
+    <id>https://sebastienrousseau.com/es/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</id>
+    <updated>2026-05-25T06:06:06+00:00</updated>
+    <published>2026-05-25T06:06:06+00:00</published>
+    <summary>La liquidez programable en 2026 conecta previsión con IA, depósitos tokenizados, rails de pago en tiempo real, cuentas virtuales, stablecoins y sistemas TMS en una capa de orquestación del capital circulante.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>UK Payments Forward Plan 2026: stablecoins, open banking y depósitos tokenizados</title>
     <link href="https://sebastienrousseau.com/es/2026-05-24-uk-pagos-forward-plan-stablecoins-open-banking-tokenised-pagos-2026/"/>
@@ -33,21 +78,21 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+    <title>Depósitos tokenizados en 2026: servicios bancarios, competencia con stablecoins y estado del dinero de banco comercial programable</title>
     <link href="https://sebastienrousseau.com/es/2026-05-21-tokenised-deposits-banking-services-status-2026/"/>
     <id>https://sebastienrousseau.com/es/2026-05-21-tokenised-deposits-banking-services-status-2026/</id>
     <updated>2026-05-21T06:06:06+00:00</updated>
     <published>2026-05-21T06:06:06+00:00</published>
-    <summary>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</summary>
+    <summary>Los depósitos tokenizados 2026 pasan a pilotos bancarios. El dinero bancario comercial avanza hacia liquidación programable, billeteras digitales y mercados de capitales tokenizados.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+    <title>Banca cloud-nativa en 2026: Kubernetes, DORA, soberanía y el fin de la división entre VM y contenedor</title>
     <link href="https://sebastienrousseau.com/es/2026-05-20-cloud-native-banking-financial-institutions-2026/"/>
     <id>https://sebastienrousseau.com/es/2026-05-20-cloud-native-banking-financial-institutions-2026/</id>
     <updated>2026-05-20T06:06:06+00:00</updated>
     <published>2026-05-20T06:06:06+00:00</published>
-    <summary>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</summary>
+    <summary>La banca cloud native en 2026 abarca ingeniería de plataformas basada en Kubernetes, resiliencia operacional DORA, convergencia de VMs y contenedores, soberanía cloud, cargas de trabajo de IA, portabilidad de datos y continuidad ante interrupciones de proveedores.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

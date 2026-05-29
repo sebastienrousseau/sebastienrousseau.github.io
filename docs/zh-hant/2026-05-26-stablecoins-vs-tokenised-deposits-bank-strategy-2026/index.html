@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Tue, 26 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Tue, 26 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>2026 年穩定幣與代幣化存款:銀行真正必須捍衛的是什麼 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="穩定幣與代幣化存款正圍繞可程式化清算趨於匯流,但兩者的資產負債表、法律、流動性與信任模型仍然有所差異。">
+<meta name="keywords" content="穩定幣 2026, 代幣化存款, 銀行存款, GENIUS Act, JPM Coin, 存款代幣, 穩定幣準備金, 銀行資金, 數位貨幣">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Stablecoins vs Deposits">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-KkLjfC5FA1/b4qB4lyxijX0nqeIWBEp1/r778xTMoR4=' 'sha256-bHzglO6egvPtgAs1KknkKO/nI3jzgwMjW/63SZxbKmQ=' 'sha256-wDSmiFAMwPD4Ju1hVjZ+JvYKxiKZvcDoFojB4Zg6/ZU=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/zh-hant/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom 訂閱源" href="/zh-hant/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="2026 年穩定幣與代幣化存款:銀行真正必須捍衛的是什麼 — Sebastien Rousseau">
+<meta property="og:description" content="穩定幣與代幣化存款正圍繞可程式化清算趨於匯流,但兩者的資產負債表、法律、流動性與信任模型仍然有所差異。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/zh-hant/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2026 年穩定幣與代幣化存款:銀行真正必須捍衛的是什麼 — Sebastien Rousseau">
+<meta name="twitter:description" content="穩定幣與代幣化存款正圍繞可程式化清算趨於匯流,但兩者的資產負債表、法律、流動性與信任模型仍然有所差異。">
+<meta name="twitter:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80">
+<link rel="canonical" href="https://sebastienrousseau.com/zh-hant/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-26-stablecoins-vs-tokenise-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">跳至主要內容</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="切換導航" />
+      <div class="wrap">
+        <a class="ap-brand" href="/zh-hant/index.html" aria-label="Sebastien Rousseau 首頁">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="主導航">
+          <ul class="ap-menu">
+            <li><a href="/zh-hant/guanyu-tw/index.html">關於</a></li>
+            <li><a href="/zh-hant/wenzhang-tw/index.html" aria-current="page" class="active">文章</a></li>
+            <li><a href="/zh-hant/lunwen-tw/index.html">論文與白皮書</a></li>
+            <li><a href="/zh-hant/zhuti-tw/index.html">主題</a></li>
+            <li><a href="/zh-hant/xiangmu-tw/index.html">專案</a></li>
+            <li><a href="/zh-hant/boqing-tw/index.html">播放列表</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="切換到深色主題" aria-pressed="false" title="切換主題">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="搜尋（Cmd 或 Ctrl + K）" title="搜尋（⌘K）">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="語言">
+            <button type="button" class="ap-lang-toggle" aria-label="ZH，切換語言" aria-expanded="false" aria-haspopup="menu" title="切換語言">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">ZH</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-05-26-stablecoins-vs-tokenise-deposits-bank-strategy-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/zh-hant/lianxi-tw/index.html" aria-label="聯絡我">聯絡我 ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="切換導航">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>2026 年穩定幣與代幣化存款:銀行真正必須捍衛的是什麼</h1>
+      <p class="sub">穩定幣迫使銀行捍衛支付效用,而不僅是存款餘額。代幣化存款是銀行原生答案,但前提是必須在可程式性、可用性與清算速度上對齊。</p>
+    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-2026" class="article-tag" rel="tag">穩定幣 2026</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">代幣化存款</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">銀行存款</a><a href="/tags/index.html#h3-genius-act" class="article-tag" rel="tag">GENIUS Act</a><a href="/tags/index.html#h3-jpm-coin" class="article-tag" rel="tag">JPM Coin</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">存款代幣</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">穩定幣準備金</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">銀行資金</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">數位貨幣</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-26T06:06:06+00:00" class="meta-pub">Published 26 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">1 min read</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Contents</h2><ol><li><a href="#2026">為何 2026 是此議題轉為策略性的一年</a></li><li><a href="#2026-2">2026 架構基線</a></li><li><a href="#section-8">策略架構表</a></li><li><a href="#section-9">各類銀行的意涵</a></li><li><a href="#section-14">結論</a></li><li><a href="#section-15">常見問題</a></li><li><a href="#section-16">參考資料</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 穩定幣與代幣化存款正圍繞可程式化清算趨於匯流,但兩者的資產負債表、法律、流動性與信任模型仍然有所差異。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>為何 2026 是此議題轉為策略性的一年.</strong> 產業已超越採用階段。單純加入一條軌道、遷移一種報文、跑一個 AI 概念驗證或宣布一項代幣化試點,已不再足夠。2026 年的策略優勢來自將這些能力編排到實際工作流之上,並證明該工作流更安全、更快、更便宜、更具韌性,或對客戶更有用。.</li>  <li><strong>2026 架構基線.</strong> 銀行應從摩擦點切入:被困住的流動性、清算延遲、對帳成本、失敗支付、詐欺曝險、稽核性薄弱或客戶體驗不佳。唯有當技術能消除這些摩擦時,投入才正當(Federal Reserve)。.</li>  <li><strong>策略架構表.</strong> 全球性銀行應建立平台層級的編排,避免每個市場、每條軌道、每種代幣與每項 AI 能力都演變為獨立的營運模式。.</li>  <li><strong>各類銀行的意涵.</strong> 全球性銀行應建立平台層級的編排,避免每個市場、每條軌道、每種代幣與每項 AI 能力都演變為獨立的營運模式。.</li></ul></aside><h1>2026 年穩定幣與代幣化存款:銀行真正必須捍衛的是什麼</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>穩定幣與代幣化存款正圍繞可程式化清算趨於匯流,但其資產負債表、法律、流動性與信任模型仍然有所差異。2026 年的訊號是:數位貨幣防禦已從創新作秀走入銀行營運模式之中,而決定性的問題是設計紀律——哪些資料、軌道、控制、負債與客戶工作流應當被組裝在一起(<a href="https://www.federalreserve.gov/econres/notes/feds-notes/banks-in-the-age-of-stablecoins-lessons-from-their-historical-responses-to-financial-innovations-20260501.html" title="Banks in the Age of Stablecoins">Federal Reserve</a>)。</p>
+<hr />
+<blockquote>
+<p><strong>行政摘要 / 關鍵要點</strong></p>
+<ul>
+<li>**數位貨幣防禦如今具策略意義。**此議題已與營運模式、韌性、客戶價值與監管證據相連,而非單一狹義的產品上市(<a href="https://www.federalreserve.gov/econres/notes/feds-notes/banks-in-the-age-of-stablecoins-lessons-from-their-historical-responses-to-financial-innovations-20260501.html" title="Banks in the Age of Stablecoins">Federal Reserve</a>)。</li>
+<li>**設計原則是受監管的貨幣。**銀行需要的架構必須串接政策、產品、資料、軌道選擇、風險控制與可衡量的經濟效益(<a href="https://www.oliverwyman.com/our-expertise/insights/2026/may/digital-assets-future-wholesale-banking.html" title="Digital assets reshaping the future of wholesale banking">Oliver Wyman</a>)。</li>
+<li>**控制模型必須即時。**詐欺、流動性、合規、清算與作業風險決策必須以工作流速度執行,而非事後處理。</li>
+<li>**資料品質成為商業優勢。**結構化資料、交易情境、稽核日誌與身分訊號將成為自動化與客戶端產品的基礎資產。</li>
+<li>**碎片化是最大敵人。**若銀行針對每條軌道、每種代幣、每個模型或每項合規要求各自鋪設孤立試點,未來的作業風險將被自行製造出來。</li>
+<li>**致勝模型是編排。**能夠路由、治理、定價、舉證並解釋每一條工作流的機構,將勝過僅僅再採用一項工具的機構(<a href="https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology" title="UK fintech backed to embrace future payments technology">GOV.UK</a>)。</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="2026">為何 2026 是此議題轉為策略性的一年 <a class="heading-anchor" href="#2026" aria-label="Link to 為何 2026 是此議題轉為策略性的一年">#</a></h2>
+<p>產業已超越採用階段。單純加入一條軌道、遷移一種報文、跑一個 AI 概念驗證或宣布一項代幣化試點,已不再足夠。2026 年的策略優勢來自將這些能力編排到實際工作流之上,並證明該工作流更安全、更快、更便宜、更具韌性,或對客戶更有用。</p>
+<p>這也是為何數位貨幣防禦如今已是董事會層級議題。同樣的壓力反覆出現:更豐富的支付資料、即時清算、代幣化貨幣、AI 決策、開放銀行、作業韌性、雲端集中度,以及更強的監管證據。若分開處理,這些壓力會造成專案蔓生;若視為一套架構處理,則能產生營運槓桿(<a href="https://www.federalreserve.gov/econres/notes/feds-notes/banks-in-the-age-of-stablecoins-lessons-from-their-historical-responses-to-financial-innovations-20260501.html" title="Banks in the Age of Stablecoins">Federal Reserve</a>、<a href="https://www.oliverwyman.com/our-expertise/insights/2026/may/digital-assets-future-wholesale-banking.html" title="Digital assets reshaping the future of wholesale banking">Oliver Wyman</a>)。</p>
+<h2 id="2026-2">2026 架構基線 <a class="heading-anchor" href="#2026-2" aria-label="Link to 2026 架構基線">#</a></h2>
+<h3 id="1">1. 工作流優先,技術其次 <a class="heading-anchor" href="#1" aria-label="Link to 1. 工作流優先,技術其次">#</a></h3>
+<p>銀行應從摩擦點切入:被困住的流動性、清算延遲、對帳成本、失敗支付、詐欺曝險、稽核性薄弱或客戶體驗不佳。唯有當技術能消除這些摩擦時,投入才正當(<a href="https://www.federalreserve.gov/econres/notes/feds-notes/banks-in-the-age-of-stablecoins-lessons-from-their-historical-responses-to-financial-innovations-20260501.html" title="Banks in the Age of Stablecoins">Federal Reserve</a>)。</p>
+<h3 id="2">2. 以資料作為控制平面 <a class="heading-anchor" href="#2" aria-label="Link to 2. 以資料作為控制平面">#</a></h3>
+<p>結構化、受治理且可追溯的資料是基礎。沒有可用資料,自動化會脆弱化、合規會回到人工;有可用資料,銀行才能建立路由智慧、即時控制與客戶端分析(<a href="https://www.oliverwyman.com/our-expertise/insights/2026/may/digital-assets-future-wholesale-banking.html" title="Digital assets reshaping the future of wholesale banking">Oliver Wyman</a>)。</p>
+<h3 id="3">3. 跨軌道與跨平台的編排 <a class="heading-anchor" href="#3" aria-label="Link to 3. 跨軌道與跨平台的編排">#</a></h3>
+<p>架構必須支援多重軌道、多家供應商、多種身分機制、多種風險訊號與多種清算資產。路由決策應以成本、速度、終局性、司法管轄、客戶偏好、韌性與資料豐富度為依據。</p>
+<h3 id="4">4. 內建合規與證據 <a class="heading-anchor" href="#4" aria-label="Link to 4. 內建合規與證據">#</a></h3>
+<p>合規模型必須原生內建於工作流。政策即程式、自動化稽核日誌、作業韌性證據、同意紀錄與模型治理,都必須作為執行的一部分產出,而非事後為稽核人員重建。</p>
+<h3 id="5">5. 單位經濟與客戶價值 <a class="heading-anchor" href="#5" aria-label="Link to 5. 單位經濟與客戶價值">#</a></h3>
+<p>每一項計畫都需要商業價值證據。每筆支付成本、每項決策成本、每件調查成本、節省的流動性、避免的人工修補、降低的詐欺損失,以及客戶採用率,都應決定規模化的判斷。</p>
+<h2 id="section-8">策略架構表 <a class="heading-anchor" href="#section-8" aria-label="Link to 策略架構表">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>層次</th>
+<th>2026 方向</th>
+<th>銀行機會</th>
+<th>處理失當的風險</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>工作流層</strong></td>
+<td>由客戶痛點定義產品</td>
+<td>清晰的商業案例與採用</td>
+<td>沒有使用者的技術主導試點</td>
+</tr>
+<tr>
+<td><strong>資料層</strong></td>
+<td>結構化、受治理的交易與控制資料</td>
+<td>自動化、分析與稽核性</td>
+<td>把壞資料搬得更快</td>
+</tr>
+<tr>
+<td><strong>軌道層</strong></td>
+<td>跨卡片、A2A、RTGS、穩定幣、存款、API、DLT 的路由</td>
+<td>最佳化成本、速度與終局性</td>
+<td>通路蔓生與控制重複</td>
+</tr>
+<tr>
+<td><strong>控制層</strong></td>
+<td>即時的政策、詐欺、制裁、韌性、身分與同意</td>
+<td>在執行速度上管理風險</td>
+<td>事後人工合規</td>
+</tr>
+<tr>
+<td><strong>經濟層</strong></td>
+<td>經衡量的單位成本與客戶價值</td>
+<td>以證據主導的規模化</td>
+<td>創新支出而無持久回報</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-9">各類銀行的意涵 <a class="heading-anchor" href="#section-9" aria-label="Link to 各類銀行的意涵">#</a></h2>
+<h3 id="section-10">全球性銀行 <a class="heading-anchor" href="#section-10" aria-label="Link to 全球性銀行">#</a></h3>
+<p>全球性銀行應建立平台層級的編排,避免每個市場、每條軌道、每種代幣與每項 AI 能力都演變為獨立的營運模式。</p>
+<h3 id="section-11">區域性銀行 <a class="heading-anchor" href="#section-11" aria-label="Link to 區域性銀行">#</a></h3>
+<p>區域性銀行應聚焦在信任、在地市場知識與較簡單的整合勝過規模的應用場景:資金可視性、詐欺防範、開放銀行支付,以及受監管的數位貨幣服務。</p>
+<h3 id="psp">金融科技與 PSP <a class="heading-anchor" href="#psp" aria-label="Link to 金融科技與 PSP">#</a></h3>
+<p>金融科技業者應為銀行降低複雜度,而非再增添一條孤立軌道。最佳提案將帶來編排、合規證據或資料情報。</p>
+<h3 id="section-13">企業財務長 <a class="heading-anchor" href="#section-13" aria-label="Link to 企業財務長">#</a></h3>
+<p>企業財務人員應要求可衡量的改善:更少的支付修補、更佳的流動性可視性、更豐富的對帳資料、更快的清算,以及對自動化決策更強的掌控。</p>
+<h2 id="section-14">結論 <a class="heading-anchor" href="#section-14" aria-label="Link to 結論">#</a></h2>
+<p>2026 年的穩定幣與代幣化存款議題本質上是架構問題。勝出的不會是試點最多或創新口號最響的機構,而是能將客戶工作流、資料品質、軌道編排、內建合規與單位經濟,整合為一套連貫營運模式的機構。</p>
+<h2 id="section-15">常見問題 <a class="heading-anchor" href="#section-15" aria-label="Link to 常見問題">#</a></h2>
+<p><strong>為何此議題在 2026 具迫切性?</strong></p>
+<p>因為相關基礎建設、監管與客戶需求訊號已匯流。原屬選擇性的實驗,如今正成為銀行營運模式的一部分。</p>
+<p><strong>最大的實作風險是什麼?</strong></p>
+<p>最大風險是碎片化:不同團隊建立不同試點,各自具有不同的資料、控制、治理與經濟條件。</p>
+<p><strong>銀行應該優先建立什麼?</strong></p>
+<p>銀行應從具有可衡量價值的工作流著手,例如更快的清算、更低的對帳成本、更少的調查案件、更強的詐欺防範,或更佳的流動性可視性。</p>
+<p><strong>應如何衡量成功?</strong></p>
+<p>成功應以單位經濟、韌性證據、資料品質、客戶採用率、作業風險降低,以及流動性或營運資金改善作為衡量基準。</p>
+<h2 id="section-16">參考資料 <a class="heading-anchor" href="#section-16" aria-label="Link to 參考資料">#</a></h2>
+<ul>
+<li>Federal Reserve, (2026). <a href="https://www.federalreserve.gov/econres/notes/feds-notes/banks-in-the-age-of-stablecoins-lessons-from-their-historical-responses-to-financial-innovations-20260501.html" title="Banks in the Age of Stablecoins">Banks in the Age of Stablecoins ⧉</a>.</li>
+<li>Oliver Wyman, (2026). <a href="https://www.oliverwyman.com/our-expertise/insights/2026/may/digital-assets-future-wholesale-banking.html" title="Digital assets reshaping wholesale banking">Digital assets reshaping the future of wholesale banking ⧉</a>.</li>
+<li>GOV.UK, (2026). <a href="https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology" title="UK fintech backed">UK fintech backed to embrace future payments technology ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">最近審閱 <time datetime="2026-05-26">2026-05-26</time>。</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/zh-hant/guanyu-tw/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行技術專家，撰寫關於應用人工智慧、ISO 20022 遷移、面向金融服務的後量子密碼學，以及批發支付結構性轉型的內容。</span><span class="author-credentials">20 多年經驗，曾任職於滙豐商業及投資銀行、PayPal、巴克萊、Shazam、AKQA、維珍集團。 <a href="/zh-hant/guanyu-tw/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最近審閱 <time datetime="2026-05-28">2026-05-28</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">相關閱讀</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2026-05-21-tokenised-deposits-banking-services-status-2026" class="related-media" aria-label="2026年的代幣化存款：銀行服務、穩定幣競爭與可程式化商業銀行貨幣的現況" tabindex="-1"><img alt="Tokenised deposit banking architecture for 2026 showing commercial bank money, digital wallets, stablecoins, CBDCs, tokenised gilts, and Project Agorá settlement paths" src="https://cloudcdn.pro/api/transform?url=/stocks/images/bit-cloud-GlqbGLCPnQ4.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-3"><a href="https://sebastienrousseau.com/zh-hant/2026-05-21-tokenised-deposits-banking-services-status-2026">2026年的代幣化存款：銀行服務、穩定幣競爭與可程式化商業銀行貨幣的現況</a> <a class="heading-anchor" href="#2026-3" aria-label="Link to 2026年的代幣化存款：銀行服務、穩定幣競爭與可程式化商業銀行貨幣的現況">#</a></h3><p><time datetime="2026-05-21">2026-05-21</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026" class="related-media" aria-label="2026 可程式化流動性:AI、代幣化存款與即時資金管理編排" tabindex="-1"><img alt="Programmable liquidity architecture diagram showing treasury systems, AI forecasting, tokenised deposits, real-time rails, stablecoins, virtual accounts, FX, and collateral mobility" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-ai"><a href="https://sebastienrousseau.com/zh-hant/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026">2026 可程式化流動性:AI、代幣化存款與即時資金管理編排</a> <a class="heading-anchor" href="#2026-ai" aria-label="Link to 2026 可程式化流動性:AI、代幣化存款與即時資金管理編排">#</a></h3><p><time datetime="2026-05-25">2026-05-25</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026" class="related-media" aria-label="UK Payments Forward Plan 2026:stablecoins、open banking、代幣化存款與智慧代理支付" tabindex="-1"><img alt="UK payments modernisation diagram showing stablecoins, tokenised deposits, open banking, AI agents, FCA regulation, PSR consolidation, and wholesale digital markets" src="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="uk-payments-forward-plan-2026-stablecoinsopen-banking"><a href="https://sebastienrousseau.com/zh-hant/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026">UK Payments Forward Plan 2026:stablecoins、open banking、代幣化存款與智慧代理支付</a> <a class="heading-anchor" href="#uk-payments-forward-plan-2026-stablecoinsopen-banking" aria-label="Link to UK Payments Forward Plan 2026:stablecoins、open banking、代幣化存款與智慧代理支付">#</a></h3><p><time datetime="2026-05-24">2026-05-24</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/zh-hant/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">Programmable Liquidity in 2026: AI, Tokenised Deposits, and Real-Time Treasury Orchestration</span></a><a class="post-pagination-next" href="/zh-hant/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/"><span class="post-pagination-label">Next</span><span class="post-pagination-title">Magnifica Humanitas: An AI-Industry Reading of the First Papal Encyclical on Artificial Intelligence</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/zh-hant/guanyu-tw/index.html">關於</a></li>
+              <li><a href="/zh-hant/lianxi-tw/index.html">聯絡</a></li>
+              <li><a href="/zh-hant/yong-static-site-generator-zhizuo-tw/index.html">使用 Static Site Generator 構建</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">文章</h2>
+            <ul>
+              <li><a href="/zh-hant/wenzhang-tw/index.html">文章</a></li>
+              <li><a href="/zh-hant/lunwen-tw/index.html">論文與白皮書</a></li>
+              <li><a href="/zh-hant/biaoqian-tw/index.html">標籤</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">工作</h2>
+            <ul>
+              <li><a href="/zh-hant/xiangmu-tw/index.html">專案</a></li>
+              <li><a href="/zh-hant/boqing-tw/index.html">播放列表</a></li>
+              <li><a href="/zh-hant/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">聯絡</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="通訊訂閱">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — 關於支付、人工智慧與後量子密碼學的研究筆記。無垃圾郵件。</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="nin@yinhang-tw.com" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">訂閱</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="社交連結">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 於 Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau 於 Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 於 LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau 於 LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 於 Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau 於 Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 於 YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau 於 YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/zh-hant/wuzhang-ai-tw/index.html">無障礙訪問</a> ·
+            <a href="/zh-hant/yinsi-tw/index.html">隱私</a> ·
+            <a href="/zh-hant/tiaokuan-tw/index.html">條款</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"zh-hant"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"zh-hant"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":158,"headline":"2026 年穩定幣與代幣化存款:銀行真正必須捍衛的是什麼","description":"穩定幣與代幣化存款正圍繞可程式化清算趨於匯流,但兩者的資產負債表、法律、流動性與信任模型仍然有所差異。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80","width":"100vw","height":"100vh","caption":"比較示意圖,呈現穩定幣、代幣化存款、商業銀行貨幣、準備金資產、錢包、清算、流動性與銀行資產負債表"},"url":"https://sebastienrousseau.com/zh-hant/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/","datePublished":"2026-05-26T06:06:06+00:00","dateModified":"2026-05-26","inLanguage":"zh-hant","keywords":"穩定幣 2026, 代幣化存款, 銀行存款, GENIUS Act, JPM Coin, 存款代幣, 穩定幣準備金, 銀行資金, 數位貨幣","articleSection":"Finance","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hant/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"zh-hant"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/zh-hant/"},{"@type":"ListItem","position":3,"name":"2026 年穩定幣與代幣化存款:銀行真正必須捍衛的是什麼","item":"https://sebastienrousseau.com/zh-hant/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="搜尋">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>搜尋</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="搜尋">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="搜尋文件…" autocomplete="off" aria-label="搜尋"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> 關閉</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 導航</span><span><kbd>Enter</kbd> 開啟</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

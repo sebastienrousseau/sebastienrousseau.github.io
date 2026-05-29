@@ -1,13 +1,13 @@
 ---
 title: "Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded"
-subtitle: "Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two products that are not, legally, stablecoins — and that can pay yield, in a wallet, on a public blockchain."
-description: "Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two SEC registrations for products that solve this constraint by being regulated as money market funds rather than stablecoins — while behaving, in the wallet, like yield-bearing dollars. A close reading of BRSRV, BSTBL, and the OCC rulemaking they respond to."
+subtitle: "GENIUS আইনের অধীনে স্টেবলকয়েন সুদ দিতে পারে না। ৮ মে ২০২৬-এ BlackRock দুটি পণ্য নিবন্ধন করেছে যা আইনত স্টেবলকয়েন নয়—এবং পাবলিক ব্লকচেইনে ওয়ালেটে সুদ প্রদান করতে পারে।"
+description: "GENIUS আইনে স্টেবলকয়েন সুদ দিতে পারে না। ৮ মে ২০২৬-এ BlackRock দুটি SEC নিবন্ধন দাখিল করেছে যা মানি মার্কেট ফান্ড হিসেবে নিয়ন্ত্রিত, স্টেবলকয়েন নয়। BRSRV, BSTBL ও OCC নিয়মের বিশ্লেষণ।"
 date: "May 15, 2026"
 language: "bn-BD"
 locale: "bn_BD"
 banner: "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp"
-banner_alt: "BlackRock tokenised money market fund architecture diagram — BRSRV OnChain Shares and BSTBL ERC-20 share class with GENIUS Act reserve flows"
-keywords: "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoin, tokenised money market fund, OnChain Shares, Securitize"
+banner_alt: "BlackRock টোকেনাইজড মানি মার্কেট ফান্ডের আর্কিটেকচার ডায়াগ্রাম — BRSRV OnChain Shares এবং BSTBL ERC-20 শেয়ার ক্লাস ও GENIUS Act রিজার্ভ প্রবাহ"
+keywords: "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, স্টেবলকয়েন, টোকেনাইজড মানি মার্কেট ফান্ড, OnChain Shares, Securitize"
 ---
 
 ![BlackRock tokenised money market fund architecture diagram — BRSRV OnChain Shares and BSTBL ERC-20 share class with GENIUS Act reserve flows](https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp).class="img-fluid clearfix"

@@ -1,13 +1,13 @@
 ---
 title: "ERC-20: The Ethereum Token Interface That Changed the World"
-subtitle: "ERC-20 tokens, Ethereum smart contracts and the standardisation of digital assets."
-description: "ERC-20: The Ethereum Token ERC-20 is the most common type of token used on the Ethereum blockchain and is often referred to as a smart contract digital contract"
+subtitle: "Tokenuri ERC-20, contracte inteligente Ethereum și standardizarea activelor digitale."
+description: "ERC-20 este cel mai utilizat standard de token pe blockchain-ul Ethereum, cunoscut ca un contract digital smart contract care a revoluționat activele digitale."
 date: "Jan 24, 2018"
 language: "ro-RO"
 locale: "ro_RO"
 banner: "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
-banner_alt: "Turned off laptop computer on top of brown wooden table"
-keywords: "ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, solidity"
+banner_alt: "Laptop închis pe un birou din lemn maro"
+keywords: "ethereum, erc20, eip, tokenuri, contracte, blockchain, criptomonede, smart-token, solidity"
 ---
 
 ![Turned off laptop computer on top of brown wooden table](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class="img-fluid clearfix"

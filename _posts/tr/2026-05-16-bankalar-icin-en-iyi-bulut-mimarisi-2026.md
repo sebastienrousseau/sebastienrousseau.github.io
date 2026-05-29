@@ -49,7 +49,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/rss.xml"
-category: "Teknoloji"
+category: "Finance"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "2026 bulut mimarisi şablonu — altı temel sütun, ajansal birim ekonomisi, çoklu-ajan HPC gerçekleri, sürekli hazine zorunluluğu, MCP güvenlik krizi, kriptografik ajan kimliği, algoritmik bulaşma ve uç-ajan krizi için açık kaynaklı referans uygulaması olarak CloudCDN."

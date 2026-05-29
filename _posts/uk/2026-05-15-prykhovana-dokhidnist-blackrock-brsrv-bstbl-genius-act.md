@@ -1,13 +1,13 @@
 ---
 title: "[UK DRAFT] Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded"
-subtitle: "Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two products that are not, legally, stablecoins — and that can pay yield, in a wallet, on a public blockchain."
-description: "Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two SEC registrations for products that solve this constraint by being regulated as money market funds rather than stablecoins — while behaving, in the wallet, like yield-bearing dollars. A close reading of BRSRV, BSTBL, and the OCC rulemaking they respond to."
+subtitle: "Стейблкоїни не можуть виплачувати дохід згідно з GENIUS Act. 8 травня 2026 року BlackRock подала два продукти, які юридично не є стейблкоїнами — і можуть виплачувати дохід у гаманці на публічному блокчейні."
+description: "Стейблкоїни не можуть виплачувати дохід згідно з GENIUS Act. 8 травня 2026 року BlackRock подала до SEC реєстрації BRSRV і BSTBL — фонди грошового ринку, що виплачують дохід у гаманці на блокчейні, а не стейблкоїни."
 date: "May 15, 2026"
 language: "uk-UA"
 locale: "uk_UA"
 banner: "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp"
-banner_alt: "BlackRock tokenised money market fund architecture diagram — BRSRV OnChain Shares and BSTBL ERC-20 share class with GENIUS Act reserve flows"
-keywords: "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoin, tokenised money market fund, OnChain Shares, Securitize"
+banner_alt: "Архітектурна діаграма токенізованого фонду грошового ринку BlackRock — BRSRV OnChain Shares та клас акцій BSTBL ERC-20 із резервними потоками GENIUS Act"
+keywords: "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, стейблкоїн, токенізований фонд грошового ринку, OnChain Shares, Securitize"
 ---
 
 ![BlackRock tokenised money market fund architecture diagram — BRSRV OnChain Shares and BSTBL ERC-20 share class with GENIUS Act reserve flows](https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp).class=\"img-fluid clearfix\"

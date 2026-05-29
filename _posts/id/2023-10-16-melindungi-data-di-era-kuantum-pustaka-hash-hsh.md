@@ -1,13 +1,13 @@
 ---
 title: "[ID DRAFT] Protecting Data in the Quantum Age: The Hash Library (HSH)"
-subtitle: "HSH: a quantum-resistant hash library for the post-quantum era of authentication."
-description: "HSH uses quantum-resistant cryptographic primitives to protect your data, ensuring its security even in the face of future quantum computing advances."
+subtitle: "HSH: pustaka hash tahan-kuantum untuk era pasca-kuantum dalam autentikasi."
+description: "HSH menggunakan primitif kriptografi tahan-kuantum untuk melindungi data Anda, memastikan keamanannya bahkan menghadapi kemajuan komputasi kuantum di masa depan."
 date: "Oct 16, 2023"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp"
-banner_alt: "A creative illustration on Quantum computing theme"
-keywords: "quantum-resistant cryptography, post-quantum cryptography, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, quantum computing"
+banner_alt: "Ilustrasi kreatif bertema komputasi kuantum"
+keywords: "kriptografi tahan kuantum, kriptografi pasca-kuantum, pustaka hash, HSH, hashing kata sandi, derivasi kunci, Argon2i, Bcrypt, Scrypt, komputasi kuantum"
 ---
 
 ![A creative illustration on Quantum computing theme](https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp).class=\"img-fluid clearfix\"

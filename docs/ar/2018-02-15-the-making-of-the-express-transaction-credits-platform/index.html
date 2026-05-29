@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta itemprop="datePublished" content="Thu, 15 Feb 2018 18:18:18 +0000" id="date" />
     <meta itemprop="dateModified" content="Thu, 15 Feb 2018 18:18:18 +0000" id="last-modified" />
-    <title>صناعة منصّة Express Transaction Credits — Sebastien Rousseau</title>
+    <title>The making of the Express Transaction Credits Platform — Sebastien Rousseau</title>
 
     <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
-<meta name="description" content="تطوير إطارٍ شامل للجيل المقبل من التوكنات المتوافقة مع Ethereum Request for Comment عبر معيار ERC-223.">
-<meta name="keywords" content="Ethereum, ERC-223, ERC-20, EXTC, Express Transaction Credits, blockchain, المدفوعات, التوكنات, القروض, التمويل اللامركزي">
+<meta name="description" content="استعراض تقني معمّق لكيفية بناء منصة EXTC على Ethereum ERC-223 عام 2018: هيكلية الرموز، الصرف متعدد التوقيعات، التحويلات المقيّدة زمنياً، والقروض الفورية المدعومة بضمانات.">
+<meta name="keywords" content="منصة EXTC، ERC-223، عقود Ethereum الذكية، هيكلية الرموز، متعدد التوقيعات، تحويل مقيّد زمنياً، مدفوعات blockchain، قروض مدعومة بضمانات، تمويل لامركزي، كريبتو 2018">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
     <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+<meta name="apple-mobile-web-app-title" content="EXTC Platform 2018">
 
     <!-- Strict security headers. The headers below that can be set via
          <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
@@ -40,7 +40,7 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-2WbaCN7bQz/LTzBibI/duG9Zc17dPJ/y99Oo0S3zUfg=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-QclfxgnbDr1VymtaO7sxcAinYNsfoIGR97QFXq2CF0c=' 'sha256-YGIwp4j+7gGuhQhDXYdJhosE6VhM7wucN7XnFi3eYaU=' 'sha256-agSnU5lumDLDn7u+toMWlm8VpE+7y1yC5gUaGFnQumE=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-70bedhGpEgqNq7hFlDUiqVeqhf7oHxT/k0phGNJvbUc=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-KbWxTkbEUV3Y0oCbS41wl8P4zUGbJiwV5eu1IIf/ahw=' 'sha256-QclfxgnbDr1VymtaO7sxcAinYNsfoIGR97QFXq2CF0c=' 'sha256-vLFxvnBlkwvF4AKQujiz5VZnj8wzVsN6XeUsDw8q614=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
@@ -67,7 +67,7 @@
          Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
          observed (real-network) LCP is 165 ms. This hint pulls the
          synthetic LCP in line with the observed value. -->
-    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/rawpixel-com-369782.webp&w=1600&format=webp&q=85" fetchpriority="high">
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1600&format=webp&q=85" fetchpriority="high">
     <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
     <meta name="color-scheme" content="light dark" />
@@ -76,8 +76,8 @@
     <link rel="stylesheet" href="/_csp/6346d01ad7de2d6f.css" integrity="sha256-cmdn5aVLYjokOMehbFCVM2OVn90qAJQVGHgU/SsPTT0= sha256-LfI/OOvfKQbXmGjqT/lqFAdGuOgerwiywMKCZBxL014=" crossorigin="anonymous">
     <link rel="alternate" type="application/atom+xml" title="تغذية Atom" href="/ar/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-<meta property="og:title" content="صناعة منصّة Express Transaction Credits — Sebastien Rousseau">
-<meta property="og:description" content="تطوير إطارٍ شامل للجيل المقبل من التوكنات المتوافقة مع Ethereum Request for Comment عبر معيار ERC-223.">
+<meta property="og:title" content="The making of the Express Transaction Credits Platform — Sebastien Rousseau">
+<meta property="og:description" content="استعراض تقني معمّق لكيفية بناء منصة EXTC على Ethereum ERC-223 عام 2018: هيكلية الرموز، الصرف متعدد التوقيعات، التحويلات المقيّدة زمنياً، والقروض الفورية المدعومة بضمانات.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sebastienrousseau.com/ar/2018-02-15-the-making-of-the-express-transaction-credits-platform/">
 <meta property="og:image" content="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp">
@@ -85,8 +85,8 @@
 <meta property="og:image:height" content="100vh">
 <meta property="og:locale" content="ar_SA">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="صناعة منصّة Express Transaction Credits — Sebastien Rousseau">
-<meta name="twitter:description" content="تطوير إطارٍ شامل للجيل المقبل من التوكنات المتوافقة مع Ethereum Request for Comment عبر معيار ERC-223.">
+<meta name="twitter:title" content="The making of the Express Transaction Credits Platform — Sebastien Rousseau">
+<meta name="twitter:description" content="استعراض تقني معمّق لكيفية بناء منصة EXTC على Ethereum ERC-223 عام 2018: هيكلية الرموز، الصرف متعدد التوقيعات، التحويلات المقيّدة زمنياً، والقروض الفورية المدعومة بضمانات.">
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp">
 <link rel="canonical" href="https://sebastienrousseau.com/ar/2018-02-15-the-making-of-the-express-transaction-credits-platform/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
@@ -128,34 +128,34 @@
             </button>
             <div class="ap-lang-menu" role="menu" hidden>
               <div class="ap-lang-menu-grid">
-                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
-                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
-                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
-                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
-                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
-                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
-                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
-                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
-                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
-                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
-                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
-                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
-                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
-                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
-                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
-                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
-                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
-                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
-                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
-                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
-                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
-                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
-                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
-                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
-                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
-                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
-                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
-                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+                <a class="ap-lang-item" href="/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2018-02-15-creation-de-la-plateforme-express-transaction-credits/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2018-02-15-vznik-platformy-express-transaction-credits/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2018-02-15-entstehung-der-express-transaction-credits-plattform/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2018-02-15-creacion-de-la-plataforma-express-transaction-credits/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2018-02-15-express-transaction-credits-platform-ka-nirmaan/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2018-02-15-pembuatan-platform-express-transaction-credits/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2018-02-15-creazione-della-piattaforma-express-transaction-credits/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2018-02-15-express-transaction-credits-puratto-foomu-no-kaihatsu/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2018-02-15-express-transaction-credits-peullaetpom-jejak/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2018-02-15-het-ontstaan-van-het-express-transaction-credits-platform/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2018-02-15-powstanie-platformy-express-transaction-credits/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2018-02-15-criacao-da-plataforma-express-transaction-credits/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2018-02-15-sozdanie-platformy-express-transaction-credits/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2018-02-15-skapandet-av-express-transaction-credits-plattformen/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2018-02-15-kan-sang-platform-express-transaction-credits/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2018-02-15-express-transaction-credits-platformunun-yapimi/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2018-02-15-stvorennia-platformy-express-transaction-credits/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2018-02-15-xay-dung-nen-tang-express-transaction-credits/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2018-02-15-the-making-of-the-express-transaction-credits-platform/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2018-02-15-express-transaction-credits-pingtai-de-jianli/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2018-02-15-express-transaction-credits-pingtai-de-jianli-tw/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
               </div>
             </div>
           </div>
@@ -166,53 +166,113 @@
     </header>
 
         <section class="ap-hero">
-      <h1>صناعة منصّة Express Transaction Credits</h1>
-      <p class="sub">إطارٌ شامل للجيل المقبل من توكنات ERC-223</p>
-    <nav class="article-tags" aria-label="المواضيع"><a href="/tags/index.html#h3-ethereum" class="article-tag" rel="tag">Ethereum</a><a href="/tags/index.html#h3-erc-223" class="article-tag" rel="tag">ERC-223</a><a href="/tags/index.html#h3-erc-20" class="article-tag" rel="tag">ERC-20</a><a href="/tags/index.html#h3-extc" class="article-tag" rel="tag">EXTC</a><a href="/tags/index.html#h3-express-transaction-credits" class="article-tag" rel="tag">Express Transaction Credits</a><a href="/tags/index.html#h3-blockchain" class="article-tag" rel="tag">blockchain</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">المدفوعات</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">التوكنات</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">القروض</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">التمويل اللامركزي</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-02-15T18:18:18+00:00" class="meta-pub">نُشر في 15 Feb 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">حُدّث في 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="وقت القراءة المقدّر">2 دقيقة قراءة</span></div></section>
+      <h1>The making of the Express Transaction Credits Platform</h1>
+      <p class="sub">هيكلية الرموز، والصرف متعدد التوقيعات، والتحويلات المقيّدة زمنياً على Ethereum عام 2018.</p>
+    <nav class="article-tags" aria-label="المواضيع"><a href="/tags/index.html#h3-extc-erc-223-ethereum-blockchain-2018" class="article-tag" rel="tag">منصة EXTC، ERC-223، عقود Ethereum الذكية، هيكلية الرموز، متعدد التوقيعات، تحويل مقيّد زمنياً، مدفوعات blockchain، قروض مدعومة بضمانات، تمويل لامركزي، كريبتو 2018</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-02-15T18:18:18+00:00" class="meta-pub">نُشر في 15 Feb 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">حُدّث في 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="وقت القراءة المقدّر">8 دقيقة قراءة</span></div></section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap report-wrap"><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> تطوير إطارٍ شامل للجيل المقبل من التوكنات المتوافقة مع Ethereum Request for Comment عبر معيار ERC-223.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>صناعة منصّة Express Transaction Credits.</strong> تعود أصول منصّة Express Transaction Credits (EXTC) إلى عام 2018، وهي متجذّرة في إدراك حدود المنظومات المالية التقليدية.</li>  <li><strong>الفكرة.</strong> يقبع في قلب منصّة EXTC معيار Ethereum Request for Comment (ERC) 223، وهو امتدادٌ لمعيار التوكن ERC20.</li>  <li><strong>الأثر.</strong> يمتدّ أثر EXTC إلى ما هو أبعد من سماتها التقنية.</li>  <li><strong>الحوافز.</strong> يتوقّف نجاح أيّ منصّة ماليّة على تبنّي المستخدمين ومشاركتهم.</li></ul></aside><p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/rawpixel-com-369782.webp&w=1600&format=webp&q=85" alt="أعمدة ضخمة بيضاء"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
-<h2 id="express-transaction-credits">صناعة منصّة Express Transaction Credits <a class="heading-anchor" href="#express-transaction-credits" aria-label="رابط إلى صناعة منصّة Express Transaction Credits">#</a></h2>
-<h3 id="section-2">روّاد عصرٍ جديد للخدمات المالية <a class="heading-anchor" href="#section-2" aria-label="رابط إلى روّاد عصرٍ جديد للخدمات المالية">#</a></h3>
-<p>تعود أصول منصّة Express Transaction Credits (EXTC) إلى عام 2018، وهي متجذّرة في إدراك حدود المنظومات المالية التقليدية. ومن أبرز التحدّيات التأخّر في المعاملات، وانخراط الوسطاء، وقصور سهولة الوصول.</p>
-<p>وقد انطلق من هذا الإدراك تطوير منصّةٍ لامركزية للتبادل بهدف رفع هذه الحواجز. وتسعى المنصّة إلى تمكين المستخدمين من إجراء معاملاتٍ فائقة السرعة بالعملات الورقية أو المشفّرة أو التوكنات المتوافقة.</p>
-<h2 id="section-3">الفكرة <a class="heading-anchor" href="#section-3" aria-label="رابط إلى الفكرة">#</a></h2>
-<h3 id="erc223-express-transaction-credits">استكشاف معيار ERC223 ومنصّة Express Transaction Credits <a class="heading-anchor" href="#erc223-express-transaction-credits" aria-label="رابط إلى استكشاف معيار ERC223 ومنصّة Express Transaction Credits">#</a></h3>
-<p>يقبع في قلب منصّة EXTC معيار Ethereum Request for Comment (ERC) 223، وهو امتدادٌ لمعيار التوكن ERC20. وقد جاء هذا الاختيار مدفوعاً بالرغبة في تعزيز الأمان والوظائف. وتهدف المنصّة إلى معالجة هذه الإشكاليات بالاستفادة من معيار ERC-223 وتقديم إطارٍ شامل للجيل المقبل من التوكنات المتوافقة معه.</p>
-<p>وتستثمر EXTC قدرات معيار ERC223، بما يضمن التوافق مع طيفٍ متنوّع من العقود الذكية وواجهات البرمجة (APIs) ضمن منظومة Ethereum. وقد طُرح توكن Express Transaction Credits (EXTC) تجسيداً لهذا المعيار، بمجموعةٍ محدّدة من السمات.</p>
-<p>كانت الفكرة إنشاء توكن بمزايا متينة:</p>
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>المحتويات</h2><ol><li><a href="#erc-20">مشكلة التصميم: لماذا كان ERC-20 قاصراً</a></li><li><a href="#erc-223">حل ERC-223: التحويل الذري مع الإشعار</a></li><li><a href="#extc">بنية عقد EXTC</a></li><li><a href="#section-9">آلية القرض الفوري المضمون بالضمانات</a></li><li><a href="#section-10">ما كشفه التجريب</a></li><li><a href="#section-11">الأفكار التي بلغت الإنتاج</a></li><li><a href="#section-12">الأسئلة الشائعة</a></li><li><a href="#section-13">المراجع</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> استعراض تقني معمّق لكيفية بناء منصة EXTC على Ethereum ERC-223 عام 2018: هيكلية الرموز، الصرف متعدد التوقيعات، التحويلات المقيّدة زمنياً، والقروض الفورية المدعومة بضمانات.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>مشكلة التصميم: لماذا كان ERC-20 قاصراً.</strong> حدّد معيار ERC-20، المقترح عام 2015 والمُقنَّن في اقتراح تحسين Ethereum رقم 20، واجهة الرمز القابل للاستبدال المعيارية التي أججت طفرة ICO في الفترة 2017–2018.</li>  <li><strong>حل ERC-223: التحويل الذري مع الإشعار.</strong> تناول ERC-223، المقترح على متتبع القضايا في GitHub الخاص بـ Ethereum EIPs، مشكلة الفقدان الصامت بتغيير ما يتعين أن يفعله تحويل الرمز.</li>  <li><strong>بنية عقد EXTC.</strong> كان عقد رمز EXTC تطبيقاً بـ Solidity منظماً حول خمسة وحدات:.</li>  <li><strong>آلية القرض الفوري المضمون بالضمانات.</strong> كانت بدائية الإقراض في EXTC أكثر المكونات تعقيداً.</li></ul></aside><!-- lead-start -->
+
+<!-- lead-end -->
+<p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1600&format=webp&q=85" alt="Giant white pillars"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<blockquote>
+<p><strong>الملخص التنفيذي / أبرز النقاط</strong></p>
 <ul>
-<li><strong>الاسم والرمز والعدد العشري:</strong> تتحدّد هويّة التوكن باسمه ورمزه، فيما يضمن مُعامِل العدد العشري دقّة تمثيل القيمة.</li>
-<li><strong>المعروض الإجمالي:</strong> يُمثّل المعروض الإجمالي لـ EXTC مقياساً محوريّاً، إذ يعكس مجموع التوكنات المتداولة.</li>
-<li><strong>الرصيد والتحويل:</strong> يستطيع المستخدمون الاطّلاع على رصيدهم من التوكنات وإجراء تحويلاتٍ إلى عناوين أخرى.</li>
-<li><strong>التوافق مع ERC223:</strong> يلتزم عقد التوكن بمعيار ERC223، ما يُقدّم وظائف متقدّمة مقارنةً بسابقه ERC20.</li>
+<li><strong>المشكلة الجذرية.</strong> كان ERC-20، معيار رمز Ethereum السائد في 2018، يعاني خللاً هيكلياً: تُدمَّر الرموز المحوَّلة مباشرةً إلى عنوان عقد ذكي بصمت إذا افتقر العقد إلى معالج. يرث كل منصة دفع مبنية على ERC-20 هذا الخطر (<a href="https://eips.ethereum.org/EIPS/eip-20" title="EIP-20: Token Standard">Ethereum EIPs</a>).</li>
+<li><strong>ERC-223 بوصفه الحل.</strong> يشترط ERC-223 أن تُنفّذ العقود المستقبِلة دالة <code>tokenFallback(address, uint, bytes)</code>. وإن غابت، يُعكَس التحويل ذرياً. لا يمكن فقدان أي رمز بصمت (<a href="https://github.com/ethereum/EIPs/issues/223" title="ERC-223 Token Standard Proposal">Ethereum EIPs GitHub</a>).</li>
+<li><strong>البدائيات الخمس لعقد EXTC.</strong> هوية الرمز (الاسم، الرمز المختصر، دقة 18 خانة عشرية)، والمعروض الثابت، والتحويل المتوافق مع ERC-223، والصرف المؤسسي متعدد التوقيعات، والأوامر الدائمة المقفلة بارتفاع الكتلة.</li>
+<li><strong>آلية القرض بالضمان.</strong> يقفل المقترضون رموز EXTC في ضمان العقد؛ يُفرج العقد عن عائدات القرض ذرياً فور استلام الضمان، دون تأخير في الاكتتاب أو موافقة لجنة الائتمان.</li>
+<li><strong>ما كشفه التجريب عن حدود Ethereum.</strong> عند إنتاجية الشبكة الرئيسية البالغة نحو 15 معاملة في الثانية وتكاليف غاز تتراوح بين 0.10 و1.00 دولار للمعاملة في ذروة يناير 2018، كانت شبكة الدفع التي تعالج حتى حجم التحويلات غير قابلة للتنفيذ اقتصادياً وتقنياً على Ethereum العام دون بنية تحتية للطبقة الثانية.</li>
 </ul>
-<h2 id="section-5">الأثر <a class="heading-anchor" href="#section-5" aria-label="رابط إلى الأثر">#</a></h2>
-<h3 id="section-6">إعادة تعريف المعاملات المالية <a class="heading-anchor" href="#section-6" aria-label="رابط إلى إعادة تعريف المعاملات المالية">#</a></h3>
-<p>يمتدّ أثر EXTC إلى ما هو أبعد من سماتها التقنية. فبتيسيرها القروض الفورية والمدفوعات السريعة والإيداعات العاجلة، تُعزّز المنصّة كفاءة المعاملات المالية تعزيزاً ملحوظاً. وقد ولّى زمن انتظار مقاصّة الأموال أو الموافقة على القروض. فمع EXTC، تُنجَز المعاملات في الزمن الحقيقي، فتُمكّن الأفراد والشركات على حدٍّ سواء.</p>
-<p>وتفتح هذه المنصّة آفاقاً للقروض الصغرى والمعاملات العابرة للحدود وخدماتٍ ماليّةٍ أيسر تناولاً لشريحة غير المتعاملين مع المصارف. علاوةً على ذلك، تُلغي الطبيعة اللامركزية لـ EXTC الوسطاء، ما يخفض الرسوم المرتبطة بهم ويُعزّز الأمان.</p>
-<h2 id="section-7">الحوافز <a class="heading-anchor" href="#section-7" aria-label="رابط إلى الحوافز">#</a></h2>
-<h3 id="section-8">حفز التبنّي والمشاركة <a class="heading-anchor" href="#section-8" aria-label="رابط إلى حفز التبنّي والمشاركة">#</a></h3>
-<p>يتوقّف نجاح أيّ منصّة ماليّة على تبنّي المستخدمين ومشاركتهم. ولا تختلف EXTC في ذلك. ولحفز المستخدمين على الانخراط في المنصّة، تُوظَّف استراتيجياتٌ عدّة:</p>
+</blockquote>
+<hr />
+<h2 id="erc-20">مشكلة التصميم: لماذا كان ERC-20 قاصراً <a class="heading-anchor" href="#erc-20" aria-label="رابط إلى مشكلة التصميم: لماذا كان ERC-20 قاصراً">#</a></h2>
+<p>حدّد معيار ERC-20، المقترح عام 2015 والمُقنَّن في اقتراح تحسين Ethereum رقم 20، واجهة الرمز القابل للاستبدال المعيارية التي أججت طفرة ICO في الفترة 2017–2018. وظائفه الست الأساسية — <code>totalSupply</code> و<code>balanceOf</code> و<code>transfer</code> و<code>transferFrom</code> و<code>approve</code> و<code>allowance</code> — كانت كافية لإصدار الرموز وتبادلها البسيط.</p>
+<p>غير أنه بالنسبة لمنصة دفع، كان ERC-20 يحمل خللاً حرجاً على مستوى الإنتاج. تنقل دالة <code>transfer(address _to, uint256 _value)</code> الرموز إلى أي عنوان بما فيها عناوين العقود، دون أن تُثير أي شفرة في العقد المستقبِل. لا يملك العقد غير المبرمج خصيصاً لتتبع واردات ERC-20 أي وسيلة لرصدها. تظل الرموز المرسلة بهذه الطريقة محجوزة بصفة دائمة دون أي آلية استرداد.</p>
+<p>قدّر مجتمع Ethereum أن عشرات الملايين من الدولارات من رموز ERC-20 قد ضاعت إلى غير رجعة بحلول منتصف 2018 عبر هذه الآلية. بناء منصة دفع قد تفشل فيها التحويلات صامتةً وتُتلف أموال المستخدمين أمر غير مقبول.</p>
+<h2 id="erc-223">حل ERC-223: التحويل الذري مع الإشعار <a class="heading-anchor" href="#erc-223" aria-label="رابط إلى حل ERC-223: التحويل الذري مع الإشعار">#</a></h2>
+<p>تناول ERC-223، المقترح على متتبع القضايا في GitHub الخاص بـ Ethereum EIPs، مشكلة الفقدان الصامت بتغيير ما يتعين أن يفعله تحويل الرمز. بموجب ERC-223، تتحقق <code>transfer(address _to, uint256 _value, bytes _data)</code> مما إذا كان عنوان المستقبِل يحتوي شفرة عقد. وإن احتوى، يستدعي التحويل <code>_to.tokenFallback(address _from, uint256 _value, bytes _data)</code>.</p>
+<p>الخاصية الجوهرية: إذا لم يُنفّذ العقد المستقبِل <code>tokenFallback</code>، يُعكَس كامل معاملة التحويل. لا تغادر الرموز رصيد المرسِل. لا تُحجز أي رموز. التحويل ذري — إما يكتمل مع تنفيذ شفرة المستقبِل، أو يفشل كلياً مع بقاء الحالة دون تغيير.</p>
+<p>بالنسبة لـ EXTC، كان هذا يعني:</p>
 <ul>
-<li><strong>السرعة والكفاءة:</strong> يقبع الحافز الأكبر في سرعة المنصّة وكفاءتها. فالمستخدمون الباحثون عن مدفوعاتٍ أو قروضٍ سريعة ينجذبون بطبعهم إلى منظومةٍ تُلبّي احتياجاتهم بسرعة.</li>
-<li><strong>الوفر في الكلفة:</strong> تُسهم الرسوم المنخفضة مقارنةً بالمنظومات المالية التقليدية في جعل EXTC خياراً جاذباً للأفراد والشركات الحريصين على الكلفة.</li>
-<li><strong>الوصول العالمي:</strong> تجذب الطبيعة العابرة للحدود للمنصّة المستخدمين الذين يحتاجون إلى معاملاتٍ دولية دون مشقّة تحويل العملات.</li>
-<li><strong>منفعة التوكن:</strong> تتعدّى توكنات EXTC نطاق المعاملات. فيمكن دمجها في تطبيقاتٍ لامركزية (DApps)، بل وأن تخدم بوصفها مكافآت أو ضماناتٍ داخل المنظومة.</li>
-<li><strong>الشمول المالي:</strong> باستهدافها شريحة غير المتعاملين مع المصارف، تفتح EXTC أبواب الخدمات المالية أمام مَن كانوا مُستبعدين سابقاً.</li>
+<li><strong>الدفع للعقود الذكية آمن في جوهره.</strong> يمكن لعقود الضمان والمحافظ متعددة التوقيعات وعقود الإقراض استقبال رموز EXTC دون أي خطر لضياع الأموال بشكل لا رجعة فيه.</li>
+<li><strong>أتاح حقل <code>_data</code> بيانات وصفية غنية للدفع.</strong> يمكن لحمولة البايتات حمل مراجع الفواتير وأكواد التوجيه أو شهادات الامتثال — معلومات لا يستطيع تحويل ERC-20 البسيط نقلها.</li>
+<li><strong>ارتفع تكلفة الغاز بشكل طفيف.</strong> أضافت دعوة <code>tokenFallback</code> نحو 2,000–5,000 غاز لكل تحويل، وهو عبء بسيط بأسعار غاز 2018.</li>
 </ul>
-<p>وختاماً، تُمثّل منصّة Express Transaction Credits (EXTC) تحوّلاً نموذجياً في عالم المعاملات المالية.</p>
-<p>وبالاستفادة من معيار ERC223 وتقديم سرعةٍ وأمانٍ وسهولة وصولٍ لا نظير لها، تمهّد EXTC الطريق نحو مستقبلٍ تكون فيه الخدمات المالية عالميّةً وشاملةً بحقّ.</p>
-<p>ومع اكتساب المنصّة زخماً وتبنّياً، يَعِد أثرها في المشهد المالي بأن يكون ثوريّاً، يتجاوز الحدود ويُديمقرط الوصول إلى الفرص الاقتصادية.</p>
-<p>سواءٌ كنتَ من عشّاق التقنية، أو محترفاً في المالية، أو مجرّد فضوليٍّ تجاه مستقبل التمويل، فإنّ EXTC منصّةٌ تدعو إلى الاستكشاف والانخراط.</p>
-<aside class="author-card" aria-label="نبذة عن الكاتب"><img alt="صورة سيباستيان روسو" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/ar/hawla/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">تقني مصرفي كبير يكتب عن الذكاء الاصطناعي التطبيقي، وهجرة ISO 20022، والتشفير ما بعد الكمي للخدمات المالية، والتحوّل الهيكلي للمدفوعات بالجملة.</span><span class="author-credentials">أكثر من 20 عامًا في HSBC Commercial &amp; Investment Bank وPayPal وBarclays وShazam وAKQA وVirgin Group. <a href="/ar/hawla/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">آخر مراجعة <time datetime="2026-05-22">2026-05-22</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="extc">بنية عقد EXTC <a class="heading-anchor" href="#extc" aria-label="رابط إلى بنية عقد EXTC">#</a></h2>
+<p>كان عقد رمز EXTC تطبيقاً بـ Solidity منظماً حول خمسة وحدات:</p>
+<h3 id="1">1. هوية الرمز <a class="heading-anchor" href="#1" aria-label="رابط إلى 1. هوية الرمز">#</a></h3>
+<pre><code>string public name = &quot;Express Transaction Credits&quot;;
+string public symbol = &quot;EXTC&quot;;
+uint8 public decimals = 18;
+</code></pre>
+<p>أعطت الخانات العشرية الثماني عشرة EXTC دقةً دون السنت، مما يلبي التفصيل اللازم لحالات استخدام المدفوعات الصغيرة والقروض الصغيرة. كان الرمز المختصر <code>EXTC</code> هو المعرّف على السلسلة المسجّل في عقد الرمز.</p>
+<h3 id="2">2. إجمالي المعروض الثابت <a class="heading-anchor" href="#2" aria-label="رابط إلى 2. إجمالي المعروض الثابت">#</a></h3>
+<p>حُدِّد إجمالي المعروض عند نشر العقد ولا يمكن تضخيمه بمصكوكات لاحقة. جعل هذا الاختيار التصميمي EXTC انكماشياً: أي رموز تُزال نهائياً من التداول — عبر عمليات الحرق غير القابلة للعكس — تُقلّص المعروض دون تعويض. كان نموذج المعروض الثابت معياراً في تصميمات رموز الدفع لعام 2018، ويعكس الافتراض المستوحى من Bitcoin بأن الضغط الانكماشي ميزة لوسيط التبادل.</p>
+<h3 id="3-erc-223">3. الرصيد والتحويل المتوافقان مع ERC-223 <a class="heading-anchor" href="#3-erc-223" aria-label="رابط إلى 3. الرصيد والتحويل المتوافقان مع ERC-223">#</a></h3>
+<p>نفّذت دالة التحويل الأساسية كامل واجهة ERC-223. تتبّعت خرائط الرصيد الداخلية ممتلكات كل عنوان. ميّزت المساعدة <code>isContract(address)</code> بين عناوين EOA (الحسابات المملوكة خارجياً) وعناوين العقود لتحديد ما إذا كانت <code>tokenFallback</code> بحاجة إلى الاستدعاء.</p>
+<h3 id="4">4. الصرف المؤسسي متعدد التوقيعات <a class="heading-anchor" href="#4" aria-label="رابط إلى 4. الصرف المؤسسي متعدد التوقيعات">#</a></h3>
+<p>تستلزم سير عمل الدفع المؤسسي تخويلاً مشتركاً: لا يستطيع موقّع واحد بمفرده بدء صرف يتجاوز حداً محدداً. نفّذ عقد EXTC مخططاً متعدد التوقيعات بنظام اثنين من N:</p>
+<ol>
+<li>يقترح بادئ معيّن تحويلاً محدداً بالمستلم والمبلغ والرقم المتسلسل.</li>
+<li>يؤكد مشارك التوقيع الرقم المتسلسل.</li>
+<li>لا يُنفَّذ التحويل إلا بعد تسجيل كلا التوقيعين على السلسلة.</li>
+</ol>
+<p>أزال هذا مخاطر نقطة الفشل الواحدة للحسابات المؤسسية مع إبقاء تدفق التخويل بأكمله على السلسلة وقابلاً للتدقيق دون وسيط غرفة مقاصة.</p>
+<h3 id="5">5. الأوامر الدائمة المقفلة بارتفاع الكتلة <a class="heading-anchor" href="#5" aria-label="رابط إلى 5. الأوامر الدائمة المقفلة بارتفاع الكتلة">#</a></h3>
+<p>تستلزم المدفوعات المتكررة — الرواتب والاشتراكات وسداد القروض المجدولة — بدائيةً للأوامر الدائمة. نفّذ EXTC هذا كقفل زمني: يُخزَّن سجل التحويل في العقد بمعامل <code>releaseBlock</code>. لا يمكن تنفيذ التحويل حتى يبلغ ارتفاع كتلة Ethereum قيمة <code>releaseBlock</code>.</p>
+<p>كان استخدام ارتفاع الكتلة وكيلاً زمنياً خياراً براغماتياً في 2018. استهدف Ethereum فاصلاً زمنياً بين الكتل يبلغ 15 ثانية، مما يجعل ارتفاع الكتلة وكيلاً موثوقاً بشكل معقول للوقت الفعلي في حدود الدقائق. كانت الطوابع الزمنية المطلقة (<code>block.timestamp</code>) متاحة لكنها عرضة لتلاعب المعدّنين في نافذة ±900 ثانية، مما يجعل ارتفاع الكتلة المرجعَ الأكثر أماناً للعقود المالية.</p>
+<h2 id="section-9">آلية القرض الفوري المضمون بالضمانات <a class="heading-anchor" href="#section-9" aria-label="رابط إلى آلية القرض الفوري المضمون بالضمانات">#</a></h2>
+<p>كانت بدائية الإقراض في EXTC أكثر المكونات تعقيداً. التصميم:</p>
+<ol>
+<li><strong>يقفل المقترض الضمان.</strong> استدعى المقترض <code>lockCollateral(uint256 _collateralAmount)</code> لنقل رموز EXTC إلى ضمان عقد الإقراض عبر <code>tokenFallback</code> من ERC-223.</li>
+<li><strong>فحص نسبة القرض إلى القيمة.</strong> قرأ العقد نسبة LTV المُعدَّة مسبقاً (مثلاً 50%) وحسب الحد الأقصى لمبلغ القرض مقابل الضمان المقفل.</li>
+<li><strong>صرف القرض الذري.</strong> إذا استوفى الضمان الحد الأدنى، نقل العقد فوراً مبلغ القرض إلى عنوان المقترض. لا طابور اكتتاب، لا لجنة ائتمان، لا تأخير في التسوية.</li>
+<li><strong>السداد والإفراج.</strong> عند السداد — أصل المبلغ زائد سعر فائدة ثابت — يُفرج العقد عن الضمان للمقترض. يؤدي الإخفاق في السداد بحلول <code>releaseBlock</code> إلى تفعيل التصفية التلقائية: ينقل العقد الضمان إلى العنوان المحدد للمُقرض.</li>
+</ol>
+<p>يُفرَض كامل التدفق بموجب شفرة العقد. لا يحتاج أي طرف إلى الوثوق بالآخر أو الاعتماد على وسيط لتطبيق الشروط.</p>
+<h2 id="section-10">ما كشفه التجريب <a class="heading-anchor" href="#section-10" aria-label="رابط إلى ما كشفه التجريب">#</a></h2>
+<p>كانت بنية عقد EXTC متسقة تقنياً. حل ERC-223 أخطر ثغرات السلامة في ERC-20. ارتبطت بدائيات التوقيع المتعدد والقفل الزمني مباشرةً بسير عمل الدفع المؤسسي الفعلي. أثبت آليةَ القرض بالضمان أن الإقراض المضمون يمكن أن يكون آلياً بالكامل وذاتي التطبيق على السلسلة.</p>
+<p>أظهرت الممارسة قيدين:</p>
+<p><strong>تكاليف الغاز.</strong> في ذروة يناير 2018، وصلت أسعار غاز Ethereum إلى 50–100 غاوي، مما جعل تكلفة تحويل رمز ERC-223 الواحد 0.50–2.00 دولار. بالنسبة للمدفوعات الصغيرة أو التحويلات بقيمة 10–50 دولاراً، كانت هذه الرسوم باهظة.</p>
+<p><strong>الإنتاجية.</strong> كان حد غاز الكتلة في الشبكة الرئيسية لـ Ethereum في مطلع 2018 نحو 8 ملايين غاز. يستهلك تحويل ERC-223 نحو 50,000–80,000 غاز. كان بإمكان الشبكة بالتالي معالجة نحو 100–160 تحويل رمز EXTC لكل كتلة، أي نحو 7–11 تحويل في الثانية عند فاصل كتلة 15 ثانية. لم يكن بالإمكان تحقيق مقياس شبكة الدفع — المئات أو الآلاف من المعاملات في الثانية — على Ethereum العام دون بنية تحتية للطبقة الثانية لم تكن موجودة بعد في صورتها الإنتاجية.</p>
+<p>كانت هذه قيوداً تحتية، لا عيوباً في تصميم EXTC. كانت منطق العقد صحيحاً. لم يكن بلوكتشين الأساسي قادراً بعد على دعم حجم مدفوعات بمقياس الصناعة المالية.</p>
+<h2 id="section-11">الأفكار التي بلغت الإنتاج <a class="heading-anchor" href="#section-11" aria-label="رابط إلى الأفكار التي بلغت الإنتاج">#</a></h2>
+<p>جُرِّحت عدة أنماط تصميمية من EXTC في التطوير اللاحق:</p>
+<p><strong>التحويل الذري للرمز مع إشعار المستقبِل</strong> — الخاصية الجوهرية لـ ERC-223 — صار أساس ERC-777 (2019)، الذي وسّع نموذج الإشعار وأُدرج لاحقاً في بروتوكولات إقراض DeFi. يظهر نمط <code>tokenFallback</code> في بنية DeFi الحديثة بأكملها.</p>
+<p><strong>التخويل متعدد التوقيعات للصرف المؤسسي</strong> — نمط اشتراط توقيعات متعددة على السلسلة قبل التنفيذ — صار نموذجاً معيارياً لإدارة خزينة DAO وحلول الحضانة المؤسسية. Gnosis Safe، الذي أُطلق عام 2018، أشاع هذا النمط على نطاق واسع.</p>
+<p><strong>القروض الفورية المضمونة بلا وسطاء</strong> — آلية قفل الضمانات في الإيداع والإفراج الذري عن عائدات القرض — هي التصميم الجوهري لبروتوكولات إقراض DeFi كـ Compound (2018) وAave (2020).</p>
+<p><strong>أقفال الوقت القائمة على ارتفاع الكتلة للمدفوعات المجدولة</strong> — نمط ترميز توقيت التنفيذ المستقبلي في العقد — يظهر في عقود الاستحقاق التدريجي للرموز ومقترحات الحوكمة المؤجلة وتصاميم أوراكل السعر المتوسط المرجّح بالوقت (TWAP) عبر نظام DeFi البيئي.</p>
+<p>لم يبلغ تجريب EXTC مقياس الإنتاج. احتاجت البنية التحتية اللازمة لجعل التصميم قابلاً للتطبيق إلى ثلاث إلى خمس سنوات إضافية لتنضج. كانت أسئلة التصميم التي طرحها الأسئلةَ الصحيحةَ لعام 2018.</p>
+<h2 id="section-12">الأسئلة الشائعة <a class="heading-anchor" href="#section-12" aria-label="رابط إلى الأسئلة الشائعة">#</a></h2>
+<p><strong>لماذا لم يُعتمَد ERC-223 معياراً للرموز السائداً رغم إصلاحه خلل ERC-20؟</strong></p>
+<p>يشترط ERC-223 أن تُنفّذ العقود المستقبِلة <code>tokenFallback</code>، مما يكسر التوافق مع الإصدارات السابقة لآلاف العقود المنشورة فعلاً لرموز ERC-20. كان النظام البيئي القائم لـ ERC-20 أكبر من أن يُهاجَر. تناولت المقترحات اللاحقة — ولا سيما ERC-777 وERC-1363 — المشكلة ذاتها بتسويات توافق مختلفة، لكن ERC-20 ظل سائداً بفضل تضافر تأثيرات الشبكة وإدخال أنماط الرموز الملفوفة التي تجنّبت سيناريو الفقدان الصامت.</p>
+<p><strong>ما الذي حدث لرمز EXTC ومنصته؟</strong></p>
+<p>كان EXTC مشروعاً إثباتاً للمفهوم وبحثاً مبكراً من 2018. انكمش سوق ICO ورموز الدفع الأوسع بشدة خلال 2018–2019 مع وضوح حدود قابلية التوسع في Ethereum وغموض التنظيم. ظهرت الأفكار المضمّنة في تصميم EXTC من جديد في البروتوكولات اللاحقة التي توفّر لها الوصول إلى بنية تحتية للطبقة الثانية وأدوات أفضل وأُطر تنظيمية أوضح.</p>
+<p><strong>كيف يُقارَن نموذج القرض بضمان EXTC ببروتوكولات DeFi الحديثة كـ Aave؟</strong></p>
+<p>الآلية الجوهرية واحدة: قفل الضمان، والحصول على قرض بحسب نسبة LTV، والسداد أو مواجهة التصفية. الفوارق: (1) تستخدم بروتوكولات DeFi الحديثة تغذيات أسعار الأوراكل لـ LTV الديناميكي بدلاً من النسب الثابتة؛ (2) تستخدم أسعار فائدة خوارزمية تستجيب لاستخدام المجمع؛ (3) تعمل على شبكات الطبقة الثانية بتكاليف غاز أقل بـ 10–100 مرة من الشبكة الرئيسية في 2018؛ (4) خضع Aave وCompound لعمليات تدقيق أمني رسمية وامتلكا مليارات الدولارات من السيولة، مما يوفر تحققاً تجريبياً من سلامة النموذج الأساسي.</p>
+<p><strong>ما كانت قيود إصدار Solidity في مطلع 2018؟</strong></p>
+<p>كُتب عقد EXTC بـ Solidity 0.4.x، الإصدار السائد في مطلع 2018. افتقر Solidity 0.4 إلى العديد من ميزات السلامة المُدرجة في الإصدارات اللاحقة: فحص تجاوز الأعداد الصحيحة (أُضيف تلقائياً في 0.8.0)، و<code>require</code>/<code>revert</code> مع رسائل الخطأ (محدودة في 0.4)، والرؤية الصريحة للدوال (كانت عامة افتراضياً في 0.4). اعتمد العقد على مكتبة SafeMath من OpenZeppelin للحماية من التجاوز، وهو نمط شائع قبل أن يفرض المُترجم ذلك أصلاً.</p>
+<h2 id="section-13">المراجع <a class="heading-anchor" href="#section-13" aria-label="رابط إلى المراجع">#</a></h2>
+<ul>
+<li>Ethereum Foundation, (2015). <a href="https://eips.ethereum.org/EIPS/eip-20" title="EIP-20 Token Standard">EIP-20: Token Standard ⧉</a>.</li>
+<li>Dexaran, Ethereum GitHub, (2017). <a href="https://github.com/ethereum/EIPs/issues/223" title="ERC-223 discussion">ERC-223 Token Standard Proposal ⧉</a>.</li>
+<li>OpenZeppelin, (2018). <a href="https://github.com/OpenZeppelin/openzeppelin-contracts" title="OpenZeppelin Contracts">OpenZeppelin Contracts — SafeMath ⧉</a>.</li>
+<li>Ethereum Foundation, (2014). <a href="https://ethereum.org/whitepaper" title="Ethereum Whitepaper">Ethereum Whitepaper ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">آخر مراجعة <time datetime="2026-05-24">2026-05-24</time>.</p>
+
+<!-- enrich-end -->
+<aside class="author-card" aria-label="نبذة عن الكاتب"><img alt="صورة سيباستيان روسو" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/ar/hawla/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">تقني مصرفي كبير يكتب عن الذكاء الاصطناعي التطبيقي، وهجرة ISO 20022، والتشفير ما بعد الكمي للخدمات المالية، والتحوّل الهيكلي للمدفوعات بالجملة.</span><span class="author-credentials">أكثر من 20 عامًا في HSBC Commercial &amp; Investment Bank وPayPal وBarclays وShazam وAKQA وVirgin Group. <a href="/ar/hawla/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">آخر مراجعة <time datetime="2026-05-28">2026-05-28</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">قراءات ذات صلة</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/ar/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html" class="related-media" aria-label="RustLogs (RLG): مكتبة تسجيل منظَّمة للغة Rust" tabindex="-1"><img alt="Banner for RustLogs (RLG)" src="https://cloudcdn.pro/api/transform?url=/stocks/images/rustlogs.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="rustlogs-rlg-rust"><a href="https://sebastienrousseau.com/ar/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">RustLogs (RLG): مكتبة تسجيل منظَّمة للغة Rust</a> <a class="heading-anchor" href="#rustlogs-rlg-rust" aria-label="رابط إلى RustLogs (RLG): مكتبة تسجيل منظَّمة للغة Rust">#</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/ar/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html" class="related-media" aria-label="تبسيط تطوير مكتبات Rust عبر توليد الشفرة" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="rust"><a href="https://sebastienrousseau.com/ar/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html">تبسيط تطوير مكتبات Rust عبر توليد الشفرة</a> <a class="heading-anchor" href="#rust" aria-label="رابط إلى تبسيط تطوير مكتبات Rust عبر توليد الشفرة">#</a></h3><p><time datetime="2023-10-26">2023-10-26</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/ar/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html" class="related-media" aria-label="Alien Studio: رحلتي من التكنولوجيا إلى الفنّ التصويري" tabindex="-1"><img alt="Sunset's muse, a serene glance; beauty in stillness" src="https://cloudcdn.pro/api/transform?url=/clients/alienstudio/v1/collections/radiance/radiance-08.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="alien-studio"><a href="https://sebastienrousseau.com/ar/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html">Alien Studio: رحلتي من التكنولوجيا إلى الفنّ التصويري</a> <a class="heading-anchor" href="#alien-studio" aria-label="رابط إلى Alien Studio: رحلتي من التكنولوجيا إلى الفنّ التصويري">#</a></h3><p><time datetime="2024-01-15">2024-01-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ar/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html" class="related-media" aria-label="Unveiling a new Cryptocurrency and Faster Payment Solution" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/api/transform?url=/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="unveiling-a-new-cryptocurrency-and-faster-payment-solution"><a href="https://sebastienrousseau.com/ar/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html">Unveiling a new Cryptocurrency and Faster Payment Solution</a> <a class="heading-anchor" href="#unveiling-a-new-cryptocurrency-and-faster-payment-solution" aria-label="رابط إلى Unveiling a new Cryptocurrency and Faster Payment Solution">#</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ar/2018-01-09-understanding-the-technology-behind-blockchain/index.html" class="related-media" aria-label="Understanding the Technology behind Blockchain" tabindex="-1"><img alt="Abstract digital ledger blocks connected by light trails on dark background" src="https://cloudcdn.pro/api/transform?url=/stocks/images/adam-smigielski-K5mPtONmpHM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="understanding-the-technology-behind-blockchain"><a href="https://sebastienrousseau.com/ar/2018-01-09-understanding-the-technology-behind-blockchain/index.html">Understanding the Technology behind Blockchain</a> <a class="heading-anchor" href="#understanding-the-technology-behind-blockchain" aria-label="رابط إلى Understanding the Technology behind Blockchain">#</a></h3><p><time datetime="2018-01-09">2018-01-09</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ar/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf" class="related-media" aria-label="العائد المخفي: تفكيك إيداعات BRSRV و BSTBL من BlackRock" tabindex="-1"><img alt="BlackRock tokenised money market fund architecture diagram — BRSRV OnChain Shares and BSTBL ERC-20 share class with GENIUS Act reserve flows" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="brsrv-bstbl-blackrock"><a href="https://sebastienrousseau.com/ar/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf">العائد المخفي: تفكيك إيداعات BRSRV و BSTBL من BlackRock</a> <a class="heading-anchor" href="#brsrv-bstbl-blackrock" aria-label="رابط إلى العائد المخفي: تفكيك إيداعات BRSRV و BSTBL من BlackRock">#</a></h3><p><time datetime="2026-05-15">2026-05-15</time></p></footer></article>
 </div>
-</aside><nav class="post-pagination" aria-label="ترقيم المقال"><a class="post-pagination-prev" href="/ar/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/"><span class="post-pagination-label">السابق</span><span class="post-pagination-title">Unveiling a new Cryptocurrency and Faster Payment Solution</span></a><a class="post-pagination-next" href="/ar/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/"><span class="post-pagination-label">التالي</span><span class="post-pagination-title">Automating ISO 20022 Payment Files Creation with Pain001</span></a></nav></div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">المصادر والمراجع</h2><ol class="article-sources-list"><li><a href="https://github.com/ethereum/EIPs/issues/223" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/ethereum/EIPs/issues/223</span></a></li><li><a href="https://github.com/OpenZeppelin/openzeppelin-contracts" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/OpenZeppelin/openzeppelin-contracts</span></a></li></ol></aside><nav class="post-pagination" aria-label="ترقيم المقال"><a class="post-pagination-prev" href="/ar/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/"><span class="post-pagination-label">السابق</span><span class="post-pagination-title">Unveiling a new Cryptocurrency and Faster Payment Solution</span></a><a class="post-pagination-next" href="/ar/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/"><span class="post-pagination-label">التالي</span><span class="post-pagination-title">Automating ISO 20022 Payment Files Creation with pain001</span></a></nav></div>
     </main>
 
 <!-- gen-layouts:footer-start -->
@@ -284,7 +344,7 @@
     <!-- Schema.org structured data -->
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ar"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ar"}]}</script>
 
-        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":521,"about":{"@type":"Thing","name":"Ethereum","sameAs":["https://en.wikipedia.org/wiki/Ethereum","https://www.wikidata.org/wiki/Q21825854","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]},"mentions":[{"@type":"Thing","name":"ERC-20","sameAs":["https://en.wikipedia.org/wiki/Ethereum#Tokens","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]},{"@type":"Thing","name":"Blockchain","sameAs":["https://en.wikipedia.org/wiki/Blockchain","https://www.wikidata.org/wiki/Q20514253","https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"]}],"headline":"صناعة منصّة Express Transaction Credits","description":"تطوير إطارٍ شامل للجيل المقبل من التوكنات المتوافقة مع Ethereum Request for Comment عبر معيار ERC-223.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp","width":"100vw","height":"100vh","caption":"أعمدة ضخمة بيضاء"},"url":"https://sebastienrousseau.com/ar/2018-02-15-the-making-of-the-express-transaction-credits-platform/","datePublished":"2018-02-15T18:18:18+00:00","dateModified":"2026-05-11","inLanguage":"ar","keywords":"Ethereum, ERC-223, ERC-20, EXTC, Express Transaction Credits, blockchain, المدفوعات, التوكنات, القروض, التمويل اللامركزي","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ar/2018-02-15-the-making-of-the-express-transaction-credits-platform/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ar"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ar/"},{"@type":"ListItem","position":3,"name":"صناعة منصّة Express Transaction Credits","item":"https://sebastienrousseau.com/ar/2018-02-15-the-making-of-the-express-transaction-credits-platform/"}]}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1676,"about":{"@type":"Thing","name":"Blockchain","sameAs":["https://en.wikipedia.org/wiki/Blockchain","https://www.wikidata.org/wiki/Q20514253","https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"]},"headline":"The making of the Express Transaction Credits Platform","description":"استعراض تقني معمّق لكيفية بناء منصة EXTC على Ethereum ERC-223 عام 2018: هيكلية الرموز، الصرف متعدد التوقيعات، التحويلات المقيّدة زمنياً، والقروض الفورية المدعومة بضمانات.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp","width":"100vw","height":"100vh","caption":"أعمدة بيضاء ضخمة"},"url":"https://sebastienrousseau.com/ar/2018-02-15-the-making-of-the-express-transaction-credits-platform/","datePublished":"2018-02-15T18:18:18+00:00","dateModified":"2026-05-24","inLanguage":"ar","keywords":"منصة EXTC، ERC-223، عقود Ethereum الذكية، هيكلية الرموز، متعدد التوقيعات، تحويل مقيّد زمنياً، مدفوعات blockchain، قروض مدعومة بضمانات، تمويل لامركزي، كريبتو 2018","articleSection":"Blockchain","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ar/2018-02-15-the-making-of-the-express-transaction-credits-platform/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ar"},"citation":[{"@type":"CreativeWork","url":"https://github.com/ethereum/EIPs/issues/223"},{"@type":"CreativeWork","url":"https://github.com/OpenZeppelin/openzeppelin-contracts"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ar/"},{"@type":"ListItem","position":3,"name":"The making of the Express Transaction Credits Platform","item":"https://sebastienrousseau.com/ar/2018-02-15-the-making-of-the-express-transaction-credits-platform/"}]}]}</script>
 <script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
   
 <!-- SSG Search Widget -->
@@ -310,5 +370,5 @@
 </div>
 <script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
 </div>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"صناعة منصّة Express Transaction Credits","url":"https://sebastienrousseau.com/ar/2018-02-15-the-making-of-the-express-transaction-credits-platform/","inLanguage":"ar-SA","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"Ethereum, ERC-223, ERC-20, EXTC, Express Transaction Credits, blockchain, المدفوعات, التوكنات, القروض, التمويل اللامركزي","dependencies":["Blockchain","Ethereum","ERC-20"]}</script></body>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"The making of the Express Transaction Credits Platform","url":"https://sebastienrousseau.com/ar/2018-02-15-the-making-of-the-express-transaction-credits-platform/","inLanguage":"ar-SA","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"منصة EXTC، ERC-223، عقود Ethereum الذكية، هيكلية الرموز، متعدد التوقيعات، تحويل مقيّد زمنياً، مدفوعات blockchain، قروض مدعومة بضمانات، تمويل لامركزي، كريبتو 2018","dependencies":["Blockchain","Ethereum"]}</script></body>
 </html>

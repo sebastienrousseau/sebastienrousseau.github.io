@@ -1,13 +1,13 @@
 ---
 title: "Efficient Date and Time Management with DateTime (DTT)"
-subtitle: "DTT, the high-precision Rust library for date and time operations."
-description: "DateTime (DTT) is a Rust library for parsing, validating, manipulating and formatting dates and times — high precision, broad functionality."
+subtitle: "DTT, ɗakin karatu na Rust mai daidaito mai girma don ayyukan kwana da lokaci."
+description: "DateTime (DTT) ɗakin karatu ne na Rust don tattaro, tabbatarwa, sarrafa da tsara kwanaki da lokaci — daidaito mai girma, ayyuka masu faɗi."
 date: "Dec 04, 2023"
 language: "ha-NG"
 locale: "ha_NG"
 banner: "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg"
-banner_alt: "DateTime (DTT), Your Essential Toolkit for Date and Time Operations."
-keywords: "DateTime, DTT, Rust library, parsing, validating, manipulating, formatting, dates, times"
+banner_alt: "DateTime (DTT), Kayan Aikin da Ake Bukata don Ayyukan Kwana da Lokaci."
+keywords: "DateTime, DTT, ɗakin karatu na Rust, tattarowa, tabbatarwa, sarrafa, tsarawa, kwanaki, lokaci"
 ---
 
 ![DateTime (DTT), Your Essential Toolkit for Date and Time Operations.](https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg).class="img-fluid clearfix"

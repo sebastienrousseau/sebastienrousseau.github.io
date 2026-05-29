@@ -49,7 +49,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/fil/2026-05-16-best-cloud-infrastructure-architecture-2026/rss.xml"
-category: "Technology"
+category: "Finance"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Ang blueprint ng arkitektura ng cloud para sa 2026 — anim na pundasyong haligi, agentic unit economics, multi-agent HPC realities, ang continuous-treasury imperative, ang MCP security crisis, cryptographic agent identity, algorithmic contagion, at CloudCDN bilang open-source reference implementation para sa edge-agent crisis."
@@ -70,7 +70,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Cloud Architecture 2026"
+apple-mobile-web-app-title: "Arkitektura ng Cloud 2026"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).

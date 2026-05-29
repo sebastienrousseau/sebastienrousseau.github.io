@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Logo Gemma của Google",
-  "language": "vi-VN",
-  "date": "February 26, 2024",
-  "keywords": "Gemma, Google, AI mã nguồn mở, LLM, Llama, Mistral, mô hình mở, phát triển",
   "subtitle": "Mô hình ngôn ngữ mở của Google cho các nhà phát triển",
-  "title": "Google Gemma: biến đổi phát triển AI mã nguồn mở",
-  "description": "Gemma là họ mô hình ngôn ngữ mở của Google, được xây dựng từ cùng nghiên cứu với Gemini. Cách nó thay đổi bối cảnh AI mã nguồn mở.",
   "locale": "vi_VN",
-  "banner": "https://cloudcdn.pro/stocks/images/gemma-banner.webp"
+  "keywords": "Gemma, Google, AI mã nguồn mở, LLM, Llama, Mistral, mô hình mở, phát triển",
+  "language": "vi-VN",
+  "banner_alt": "Logo Gemma của Google",
+  "description": "Gemma là họ mô hình ngôn ngữ mở của Google, được xây dựng từ cùng nghiên cứu với Gemini. Cách nó thay đổi bối cảnh AI mã nguồn mở.",
+  "date": "February 26, 2024",
+  "banner": "https://cloudcdn.pro/stocks/images/gemma-banner.webp",
+  "title": "Google Gemma: biến đổi phát triển AI mã nguồn mở"
 }

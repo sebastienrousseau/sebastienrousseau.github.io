@@ -4,7 +4,52 @@
   <link href="https://sebastienrousseau.com/ja/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ja/"/>
   <id>https://sebastienrousseau.com/ja/</id>
-  <updated>2026-05-22T21:38:56+00:00</updated>
+  <updated>2026-05-28T06:26:19+00:00</updated>
+  <entry>
+    <title>DORA、EU AI Act、データ主権:2026 年銀行向けコンプライアンス・スタック</title>
+    <link href="https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>
+    <id>https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA、EU AI Act、GDPR、クラウド集中リスク、データ主権は、2026 年に銀行向けの単一のコンプライアンス・スタックへと収斂しつつあります。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>決済のオペレーティングシステムとしての AI: 2026 年の不正、ルーティング、レジリエンス、コンプライアンス</title>
+    <link href="https://sebastienrousseau.com/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/"/>
+    <id>https://sebastienrousseau.com/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</id>
+    <updated>2026-05-27T06:06:06+00:00</updated>
+    <published>2026-05-27T06:06:06+00:00</published>
+    <summary>2026 年、AI は決済のオペレーティングシステムへと進化し、分析を越えて不正防止、決済修復、ルーティング、流動性予測、コンプライアンススクリーニング、エージェント型コマース統制を担います。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Magnifica Humanitas:AI業界の視点から読む初のAI回勅</title>
+    <link href="https://sebastienrousseau.com/ja/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/"/>
+    <id>https://sebastienrousseau.com/ja/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>2026年5月25日、教皇レオ14世はAIに特化した史上初の回勅『Magnifica Humanitas』を公布しました。テクノロジー業界の内側から、教義ではなくAI・量子時代に向けて最も整合的な倫理的枠組みのひとつとして読む。汽車・自動車・原子力・インターネットに伴った道徳的不安と重なる構図を踏まえ、業界・人類にとって何を意味するのか、そして最終的な誠実な読みが希望である理由を論じます。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ステーブルコイン vs トークン化預金 2026:銀行が本当に守るべきもの</title>
+    <link href="https://sebastienrousseau.com/ja/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/"/>
+    <id>https://sebastienrousseau.com/ja/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>ステーブルコインとトークン化預金はプログラマブル決済で収斂する一方、バランスシート、法的請求権、流動性、信認モデルは依然として異なります。2026 年の銀行戦略を整理します。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 年のプログラマブル流動性:AI・トークン化預金・リアルタイムトレジャリー</title>
+    <link href="https://sebastienrousseau.com/ja/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/"/>
+    <id>https://sebastienrousseau.com/ja/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</id>
+    <updated>2026-05-25T06:06:06+00:00</updated>
+    <published>2026-05-25T06:06:06+00:00</published>
+    <summary>2026 年のプログラマブル流動性は、AI 予測、トークン化預金、リアルタイム決済レール、バーチャル口座、ステーブルコイン、TMS を運転資本向けの単一オーケストレーション層に統合します。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>UK Payments Forward Plan 2026:ステーブルコイン・オープンバンキング・トークン化預金・エージェント型決済</title>
     <link href="https://sebastienrousseau.com/ja/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/"/>
@@ -33,21 +78,21 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+    <title>2026年のトークン化預金：銀行サービス、ステーブルコインとの競争、そしてプログラム可能な商業銀行マネーの現状</title>
     <link href="https://sebastienrousseau.com/ja/2026-05-21-tokenised-deposits-banking-services-status-2026/"/>
     <id>https://sebastienrousseau.com/ja/2026-05-21-tokenised-deposits-banking-services-status-2026/</id>
     <updated>2026-05-21T06:06:06+00:00</updated>
     <published>2026-05-21T06:06:06+00:00</published>
-    <summary>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</summary>
+    <summary>2026年のトークン化預金サービスは研究段階から銀行パイロットと初期クライアント提案へと移行しています。現状はプレスケール段階ですが、商業銀行通貨はプログラマブル決済、デジタルウォレット、ステーブルコイン相互運用性、トークン化資本市場へ適応されています。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+    <title>2026 年のクラウドネイティブ・バンキング：Kubernetes、DORA、主権、そして VM とコンテナの分断の終わり</title>
     <link href="https://sebastienrousseau.com/ja/2026-05-20-cloud-native-banking-financial-institutions-2026/"/>
     <id>https://sebastienrousseau.com/ja/2026-05-20-cloud-native-banking-financial-institutions-2026/</id>
     <updated>2026-05-20T06:06:06+00:00</updated>
     <published>2026-05-20T06:06:06+00:00</published>
-    <summary>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</summary>
+    <summary>2026年のクラウドネイティブバンキングは、Kubernetesベースのプラットフォームエンジニアリング、DORA対応の運用レジリエンス、VMとコンテナの統合、クラウド主権、AIワークロード配置、データポータビリティが核心です。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

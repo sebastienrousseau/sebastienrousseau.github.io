@@ -6,1138 +6,829 @@
     <description>AI, banking and payments expert. Senior payments leader. Applied AI, ISO 20022 migration, wholesale payments and post-quantum cryptography.</description>
     <atom:link href="https://sebastienrousseau.com/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Sun, 24 May 2026 06:06:06 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 06:06:06 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
     <item>
-      <title>The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments</title>
-      <link>https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026</link>
-      <description>The UK Payments Forward Plan and April 2026 policy package point to a single coherent framework for traditional payments, stablecoins, tokenised deposits, open banking, and AI-agent payments.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</title>
+      <link>https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026</link>
+      <description>DORA, the EU AI Act, GDPR, cloud concentration risk, and data sovereignty are converging into one 2026 compliance stack for banks.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>UK payments</category>
-      <category>Payments Forward Plan</category>
-      <category>stablecoins</category>
-      <category>tokenised deposits</category>
-      <category>open banking</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>AI agent payments</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI Act</category>
+      <category>data sovereignty</category>
+      <category>operational resilience</category>
+      <category>cloud concentration risk</category>
+      <category>AI governance</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan 2026: Stablecoinler, Açık Bankacılık, Tokenleştirilmiş Mevduatlar</title>
-      <link>https://sebastienrousseau.com/tr/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</link>
-      <description>UK Payments Forward Plan ve Nisan 2026 politika paketi; geleneksel ödemeler, stablecoinler, tokenleştirilmiş mevduatlar, açık bankacılık ve yapay zeka ajanı ödemeleri için tek tutarlı bir çerçeveye işaret ediyor.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA, EU AI Yasası ve Veri Egemenliği: Bankalar için 2026 Uyum Yığını</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA, EU AI Yasası, GDPR, bulut yoğunlaşma riski ve veri egemenliği 2026&apos;da bankalar için tek bir uyum yığınında birleşiyor — yığın artık mimari bir disiplindir.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>İngiltere ödemeleri</category>
-      <category>Payments Forward Plan</category>
-      <category>stablecoinler</category>
-      <category>tokenleştirilmiş mevduatlar</category>
-      <category>açık bankacılık</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>yapay zeka ajanı ödemeleri</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI Yasası</category>
+      <category>veri egemenliği</category>
+      <category>operasyonel dayanıklılık</category>
+      <category>bulut yoğunlaşma riski</category>
+      <category>AI yönetişimi</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan 2026: สเตเบิลคอยน์ โอเพนแบงกิ้ง โทเคน เอเจนต์</title>
-      <link>https://sebastienrousseau.com/th/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</link>
-      <description>UK Payments Forward Plan และชุดนโยบายเดือนเมษายน 2026 ชี้ไปยังกรอบกำกับดูแลเดียวสำหรับการชำระเงินทั่วไป สเตเบิลคอยน์ เงินฝากแบบโทเคน โอเพนแบงกิ้ง และการชำระเงินแบบเอเจนต์ของธนาคารในสหราชอาณาจักร</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA กฎหมาย AI ของ EU และอธิปไตยข้อมูล: สแต็คการปฏิบัติตามกฎปี 2026 ของธนาคาร</title>
+      <link>https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA กฎหมาย AI ของ EU GDPR ความเสี่ยงการกระจุกตัวของคลาวด์ และอธิปไตยข้อมูลกำลังหลอมรวมเป็นสแต็คการปฏิบัติตามกฎเดียวสำหรับธนาคารในปี 2026 คำถามเชิงกลยุทธ์คือวินัยในการออกแบบสถาปัตยกรรม</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>การชำระเงิน UK</category>
-      <category>Payments Forward Plan</category>
-      <category>สเตเบิลคอยน์</category>
-      <category>เงินฝากแบบโทเคน</category>
-      <category>โอเพนแบงกิ้ง</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>การชำระเงินแบบเอเจนต์ AI</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>กฎหมาย AI ของ EU</category>
+      <category>อธิปไตยข้อมูล</category>
+      <category>ความยืดหยุ่นการปฏิบัติงาน</category>
+      <category>ความเสี่ยงการกระจุกตัวของคลาวด์</category>
+      <category>การกำกับดูแล AI</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan 2026: stablecoins, open banking y depósitos tokenizados</title>
-      <link>https://sebastienrousseau.com/es/2026-05-24-uk-pagos-forward-plan-stablecoins-open-banking-tokenised-pagos-2026/index.html</link>
-      <description>El UK Payments Forward Plan y el paquete de abril de 2026 perfilan un marco coherente único para pagos tradicionales, stablecoins, depósitos tokenizados, open banking y pagos agénticos.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-05-24-uk-pagos-forward-plan-stablecoins-open-banking-tokenised-pagos-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA, EU AI Act y soberanía de datos: el stack de cumplimiento bancario 2026</title>
+      <link>https://sebastienrousseau.com/es/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA, EU AI Act, GDPR, riesgo de concentración cloud y soberanía de datos convergen en 2026 en un único stack de cumplimiento para la banca europea.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>pagos Reino Unido</category>
-      <category>Payments Forward Plan</category>
-      <category>stablecoins</category>
-      <category>depósitos tokenizados</category>
-      <category>open banking</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>pagos agénticos</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI Act</category>
+      <category>soberanía de datos</category>
+      <category>resiliencia operativa</category>
+      <category>riesgo de concentración cloud</category>
+      <category>gobernanza de IA</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan 2026 : stablecoins, open banking, dépôts tokenisés, paiements agentiques</title>
-      <link>https://sebastienrousseau.com/fr/2026-05-24-uk-paiements-forward-plan-stablecoins-open-banking-tokenise-paiements-2026/index.html</link>
-      <description>Le UK Payments Forward Plan et le paquet réglementaire d&apos;avril 2026 dessinent un cadre unique et cohérent pour paiements traditionnels, stablecoins, dépôts tokenisés, open banking et paiements agentiques.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-24-uk-paiements-forward-plan-stablecoins-open-banking-tokenise-paiements-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA, EU AI Act et souveraineté des données : la pile de conformité 2026 pour les banques</title>
+      <link>https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA, l&apos;EU AI Act, le RGPD, le risque de concentration cloud et la souveraineté des données convergent en 2026 vers une pile de conformité unique pour les banques.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>paiements UK</category>
-      <category>Payments Forward Plan</category>
-      <category>stablecoins</category>
-      <category>dépôts tokenisés</category>
-      <category>open banking</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>paiements agents IA</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI Act</category>
+      <category>souveraineté des données</category>
+      <category>résilience opérationnelle</category>
+      <category>risque de concentration cloud</category>
+      <category>gouvernance IA</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan 2026: Stablecoin dan Deposito Tertokenisasi</title>
-      <link>https://sebastienrousseau.com/id/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</link>
-      <description>UK Payments Forward Plan dan paket April 2026 menyatukan pembayaran tradisional, stablecoin, deposito tertokenisasi, open banking, dan pembayaran agen AI.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA, EU AI Act, dan Kedaulatan Data: Tumpukan Kepatuhan 2026 bagi Bank</title>
+      <link>https://sebastienrousseau.com/id/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA, EU AI Act, GDPR, risiko konsentrasi cloud, dan kedaulatan data berkonvergensi menjadi satu tumpukan kepatuhan 2026 bagi bank — orkestrasi bukti tunggal.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>pembayaran Inggris</category>
-      <category>Payments Forward Plan</category>
-      <category>stablecoin</category>
-      <category>deposito tertokenisasi</category>
-      <category>open banking</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>pembayaran agen AI</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Kepatuhan</category>
+      <category>DORA</category>
+      <category>EU AI Act</category>
+      <category>kedaulatan data</category>
+      <category>ketahanan operasional</category>
+      <category>risiko konsentrasi cloud</category>
+      <category>tata kelola AI</category>
     </item>
     <item>
-      <title>2026 UK Payments Forward Plan: 스테이블코인·오픈뱅킹·토큰화 예금·에이전트 결제</title>
-      <link>https://sebastienrousseau.com/ko/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</link>
-      <description>UK Payments Forward Plan과 2026년 4월 정책 패키지는 전통 결제, 스테이블코인, 토큰화 예금, 오픈뱅킹, AI 에이전트 결제를 아우르는 단일의 일관된 규제 프레임워크를 제시합니다.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA, EU AI 법, 데이터 주권: 2026년 은행을 위한 컴플라이언스 스택</title>
+      <link>https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA, EU AI 법, GDPR, 클라우드 집중 위험, 데이터 주권이 2026년 은행을 위한 하나의 컴플라이언스 스택으로 수렴합니다. 다섯 개의 병행 프로그램이 아닌 하나의 아키텍처 규율이 승부를 가릅니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>영국 결제</category>
-      <category>Payments Forward Plan</category>
-      <category>스테이블코인</category>
-      <category>토큰화 예금</category>
-      <category>오픈뱅킹</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>AI 에이전트 결제</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI 법</category>
+      <category>데이터 주권</category>
+      <category>운영 회복력</category>
+      <category>클라우드 집중 위험</category>
+      <category>AI 거버넌스</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan 2026: Stablecoins, Open Banking, tokenisierte Einlagen</title>
-      <link>https://sebastienrousseau.com/de/2026-05-24-uk-zahlungsverkehr-forward-plan-stablecoins-open-banking-tokenised-zahlungsverkehr-2026/index.html</link>
-      <description>Der UK Payments Forward Plan und das Policy-Paket vom April 2026 schaffen einen kohärenten Rahmen für Zahlungsverkehr, Stablecoins, tokenisierte Einlagen, Open Banking und agentenbasierte Zahlungen.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-24-uk-zahlungsverkehr-forward-plan-stablecoins-open-banking-tokenised-zahlungsverkehr-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA, EU-KI-Verordnung und Datensouveränität: Der Compliance-Stack 2026 für Banken</title>
+      <link>https://sebastienrousseau.com/de/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA, die EU-KI-Verordnung, DSGVO, Cloud-Konzentrationsrisiko und Datensouveränität verschmelzen 2026 zu einem Compliance-Stack für Banken.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>UK Zahlungsverkehr</category>
-      <category>Payments Forward Plan</category>
-      <category>Stablecoins</category>
-      <category>tokenisierte Einlagen</category>
-      <category>Open Banking</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>agentenbasierte Zahlungen</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU-KI-Verordnung</category>
+      <category>Datensouveränität</category>
+      <category>operationelle Resilienz</category>
+      <category>Cloud-Konzentrationsrisiko</category>
+      <category>KI-Governance</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan 2026: स्टेबलकॉइन, ओपन बैंकिंग, टोकनीकृत जमा व एजेंटिक भुगतान</title>
-      <link>https://sebastienrousseau.com/hi/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</link>
-      <description>UK Payments Forward Plan और अप्रैल 2026 नीति पैकेज पारंपरिक भुगतान, स्टेबलकॉइन, टोकनीकृत जमा, ओपन बैंकिंग और AI-एजेंट भुगतान के लिए एक सुसंगत नियामक परिधि निर्धारित करते हैं।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA, EU AI अधिनियम और डेटा संप्रभुता: बैंकों का 2026 अनुपालन स्टैक</title>
+      <link>https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA, EU AI अधिनियम, GDPR, क्लाउड संकेंद्रण जोखिम और डेटा संप्रभुता बैंकों के लिए 2026 के एकल अनुपालन स्टैक में मिल रहे हैं।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>UK payments</category>
-      <category>Payments Forward Plan</category>
-      <category>स्टेबलकॉइन</category>
-      <category>टोकनीकृत जमा</category>
-      <category>ओपन बैंकिंग</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>AI एजेंट भुगतान</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI Act</category>
+      <category>डेटा संप्रभुता</category>
+      <category>परिचालन लचीलापन</category>
+      <category>क्लाउड संकेंद्रण जोखिम</category>
+      <category>AI गवर्नेंस</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan 2026: Stablecoins, Open Banking, at Agentikong Pagbabayad</title>
-      <link>https://sebastienrousseau.com/fil/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</link>
-      <description>Ang UK Payments Forward Plan at Abril 2026 policy package ay nagtatakda ng iisang magkakaugnay na balangkas para sa tradisyonal na pagbabayad, stablecoins, tokenized deposits, open banking, at AI-agent na pagbabayad.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA, EU AI Act, at Soberanya ng Data: Compliance Stack ng Bangko 2026</title>
+      <link>https://sebastienrousseau.com/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>Ang DORA, EU AI Act, GDPR, panganib ng konsentrasyon sa cloud, at soberanya ng data ay nagtatagpo sa iisang compliance stack para sa mga bangko sa 2026.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>UK payments</category>
-      <category>Payments Forward Plan</category>
-      <category>stablecoins</category>
-      <category>tokenized deposits</category>
-      <category>open banking</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>AI agent payments</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI Act</category>
+      <category>soberanya ng data</category>
+      <category>katatagan ng operasyon</category>
+      <category>panganib ng konsentrasyon sa cloud</category>
+      <category>AI governance</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan ২০২৬: স্টেবলকয়েন, ওপেন ব্যাংকিং, টোকেনাইজড আমানত ও এজেন্টিক পেমেন্ট</title>
-      <link>https://sebastienrousseau.com/bn/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</link>
-      <description>UK Payments Forward Plan ও এপ্রিল ২০২৬ নীতি প্যাকেজ প্রচলিত পেমেন্ট, স্টেবলকয়েন, টোকেনাইজড আমানত, ওপেন ব্যাংকিং ও এআই-এজেন্ট পেমেন্টের জন্য একক সুসংগত কাঠামোর দিকে ইঙ্গিত করছে।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA, EU AI আইন ও ডেটা সার্বভৌমত্ব: ব্যাংকের জন্য ২০২৬-এর কমপ্লায়েন্স স্ট্যাক</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA, EU AI আইন, GDPR, ক্লাউড ঘনত্ব ঝুঁকি ও ডেটা সার্বভৌমত্ব ২০২৬-এ ব্যাংকগুলির জন্য একক কমপ্লায়েন্স স্ট্যাকে একীভূত হচ্ছে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>UK payments</category>
-      <category>Payments Forward Plan</category>
-      <category>stablecoins</category>
-      <category>tokenised deposits</category>
-      <category>open banking</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>AI agent payments</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI Act</category>
+      <category>ডেটা সার্বভৌমত্ব</category>
+      <category>পরিচালনগত স্থিতিস্থাপকতা</category>
+      <category>ক্লাউড কেন্দ্রীভবন ঝুঁকি</category>
+      <category>AI শাসন</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan 2026: stablecoins, open banking en agentische betalingen</title>
-      <link>https://sebastienrousseau.com/nl/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</link>
-      <description>Het UK Payments Forward Plan en het beleidspakket van april 2026 wijzen op één coherent kader voor traditionele betalingen, stablecoins, getokeniseerde deposito&apos;s, open banking en AI-agentbetalingen.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA, EU AI Act en datasoevereiniteit: de compliance-stack 2026 voor banken</title>
+      <link>https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA, EU AI Act, GDPR, concentratierisico cloud en datasoevereiniteit smelten in 2026 samen tot één compliance-stack voor banken in Nederland.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>VK betalingen</category>
-      <category>Payments Forward Plan</category>
-      <category>stablecoins</category>
-      <category>getokeniseerde deposito&apos;s</category>
-      <category>open banking</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>AI-agentbetalingen</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI Act</category>
+      <category>datasoevereiniteit</category>
+      <category>operationele veerkracht</category>
+      <category>concentratierisico cloud</category>
+      <category>AI-governance</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan 2026: Stablecoins, Open Banking e Pagamentos Agênticos</title>
-      <link>https://sebastienrousseau.com/pt-br/2026-05-24-uk-pagamentos-forward-plan-stablecoins-open-banking-tokenised-pagamentos-2026/index.html</link>
-      <description>O UK Payments Forward Plan e o pacote regulatório de abril de 2026 desenham um arcabouço único para pagamentos tradicionais, stablecoins, depósitos tokenizados, open banking e pagamentos agênticos para bancos.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-05-24-uk-pagamentos-forward-plan-stablecoins-open-banking-tokenised-pagamentos-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA, EU AI Act e soberania de dados: a stack de conformidade bancária 2026</title>
+      <link>https://sebastienrousseau.com/pt-br/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA, EU AI Act, GDPR, risco de concentração em nuvem e soberania de dados convergem em uma stack de conformidade única para bancos em 2026.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>UK payments</category>
-      <category>Payments Forward Plan</category>
-      <category>stablecoins</category>
-      <category>depósitos tokenizados</category>
-      <category>open banking</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>pagamentos agênticos</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI Act</category>
+      <category>soberania de dados</category>
+      <category>resiliência operacional</category>
+      <category>risco de concentração em nuvem</category>
+      <category>governança de IA</category>
     </item>
     <item>
-      <title>خطة UK Payments Forward Plan 2026: العملات المستقرة والودائع المرمَّزة</title>
-      <link>https://sebastienrousseau.com/ar/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</link>
-      <description>خطة UK Payments Forward Plan وحزمة سياسات أبريل 2026 ترسم إطاراً تنظيمياً واحداً للمدفوعات التقليدية، والعملات المستقرة، والودائع المرمَّزة، والخدمات المصرفية المفتوحة، والمدفوعات الوكيلة في المملكة المتحدة.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA وقانون الذكاء الاصطناعي وسيادة البيانات: حزمة امتثال 2026 للمصارف</title>
+      <link>https://sebastienrousseau.com/ar/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>تتقارب DORA وقانون الذكاء الاصطناعي الأوروبي وGDPR ومخاطر التركيز السحابي وسيادة البيانات في حزمة امتثال موحدة للمصارف عام 2026 ضمن هندسة تشغيلية واحدة.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>UK payments</category>
-      <category>Payments Forward Plan</category>
-      <category>stablecoins</category>
-      <category>tokenised deposits</category>
-      <category>open banking</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>AI agent payments</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI Act</category>
+      <category>السيادة على البيانات</category>
+      <category>المرونة التشغيلية</category>
+      <category>مخاطر تركز السحابة</category>
+      <category>حوكمة الذكاء الاصطناعي</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan 2026: Stablecoins, Open Banking, Tokens</title>
-      <link>https://sebastienrousseau.com/ha/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</link>
-      <description>UK Payments Forward Plan da fakitin manufofin Afrilu 2026 sun nuna tsari ɗaya mai daidaito ga biyan kuɗi na al&apos;ada, stablecoins, adibassu da aka mai da su tokens, open banking, da biyan kuɗi ta wakili na AI.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA, EU AI Act, da Ikon Mallakar Bayanai: Tarin Bin Doka na 2026 ga Bankuna</title>
+      <link>https://sebastienrousseau.com/ha/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA, EU AI Act, GDPR, haɗarin tarawar cloud, da ikon mallakar bayanai sun haɗu zuwa tarin bin doka guda na bankuna a 2026.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>UK payments</category>
-      <category>Payments Forward Plan</category>
-      <category>stablecoins</category>
-      <category>tokenised deposits</category>
-      <category>open banking</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>AI agent payments</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI Act</category>
+      <category>ikon mallakar bayanai</category>
+      <category>juriya na aiki</category>
+      <category>haɗarin tarawar cloud</category>
+      <category>gudanar da AI</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan 2026: стейблкоїни, відкритий банкінг, токенізовані депозити, агентські платежі</title>
-      <link>https://sebastienrousseau.com/uk/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</link>
-      <description>UK Payments Forward Plan і пакет політик квітня 2026 окреслюють єдиний регуляторний периметр для класичних платежів, стейблкоїнів, токенізованих депозитів, відкритого банкінгу та агентських платежів.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA, EU AI Act і суверенітет даних: стек банківського комплаєнсу 2026</title>
+      <link>https://sebastienrousseau.com/uk/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA, EU AI Act, GDPR, концентраційний ризик хмари та суверенітет даних збираються в єдиний стек банківського комплаєнсу 2026 року.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>UK payments</category>
-      <category>Payments Forward Plan</category>
-      <category>stablecoins</category>
-      <category>tokenised deposits</category>
-      <category>open banking</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>AI agent payments</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI Act</category>
+      <category>суверенітет даних</category>
+      <category>операційна стійкість</category>
+      <category>концентраційний ризик хмари</category>
+      <category>управління ШІ</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan 2026: Stablecoins, Ẹnu-Ọ̀nà Bankì, Tókènì, Agent</title>
-      <link>https://sebastienrousseau.com/yo/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</link>
-      <description>UK Payments Forward Plan àti àkójọpọ̀ ìlànà April 2026 fi àwòṣe ìṣọ̀kan kan hàn fún ìsanwó ìbílẹ̀, stablecoins, àwọn ìfowópamọ́ tókènì, ẹnu-ọ̀nà bankì, àti ìsanwó AI agent.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA, EU AI Act, àti Ọba Lori Dátà: Akopọ Ìbámu 2026 fún Báńkì</title>
+      <link>https://sebastienrousseau.com/yo/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA, EU AI Act, GDPR, ewu ìṣàkójọ cloud, àti ọba lori dátà ń pa pọ̀ di akopọ ìbámu kan ṣoṣo fún àwọn báńkì ní 2026 — ìbéèrè ìlànà ni.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>UK payments</category>
-      <category>Payments Forward Plan</category>
-      <category>stablecoins</category>
-      <category>àwọn ìfowópamọ́ tókènì</category>
-      <category>ẹnu-ọ̀nà bankì</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>ìsanwó AI agent</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI Act</category>
+      <category>ọba lori dátà</category>
+      <category>ìfaradà iṣẹ́</category>
+      <category>ewu ìṣàkójọ cloud</category>
+      <category>ìṣàkóso AI</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan 2026: stablecoinuri, open banking, depozite tokenizate</title>
-      <link>https://sebastienrousseau.com/ro/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</link>
-      <description>UK Payments Forward Plan și pachetul de politici din aprilie 2026 conturează un cadru coerent pentru plăți tradiționale, stablecoinuri, depozite tokenizate, open banking și plăți agentice.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA, EU AI Act și suveranitatea datelor: stiva de conformitate bancară 2026</title>
+      <link>https://sebastienrousseau.com/ro/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA, EU AI Act, GDPR, riscul de concentrare cloud și suveranitatea datelor converg într-o singură stivă de conformitate bancară pentru 2026.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>plăți UK</category>
-      <category>Payments Forward Plan</category>
-      <category>stablecoinuri</category>
-      <category>depozite tokenizate</category>
-      <category>open banking</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>plăți agentice UK</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI Act</category>
+      <category>suveranitatea datelor</category>
+      <category>reziliență operațională</category>
+      <category>risc de concentrare cloud</category>
+      <category>guvernanța AI</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan 2026: стейблкоины, открытый банкинг, токенизированные депозиты</title>
-      <link>https://sebastienrousseau.com/ru/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</link>
-      <description>UK Payments Forward Plan и апрельский пакет 2026 года формируют единый регуляторный периметр для платежей, стейблкоинов, токенизированных депозитов, открытого банкинга и агентских платежей.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA, Закон ЕС об ИИ и суверенитет данных: стек комплаенса банков 2026 года</title>
+      <link>https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA, EU AI Act, GDPR, риск концентрации в облаке и суверенитет данных сходятся в единый стек комплаенса банков 2026 года — архитектурный выбор.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>UK payments</category>
-      <category>Payments Forward Plan</category>
-      <category>стейблкоины</category>
-      <category>токенизированные депозиты</category>
-      <category>открытый банкинг</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>агентские платежи</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI Act</category>
+      <category>суверенитет данных</category>
+      <category>операционная устойчивость</category>
+      <category>риск концентрации в облаке</category>
+      <category>управление ИИ</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan 2026: stablecoiny, open banking, tokenizované vklady</title>
-      <link>https://sebastienrousseau.com/cs/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</link>
-      <description>UK Payments Forward Plan a balíček politik z dubna 2026 vytyčují jednotný rámec pro tradiční platby, stablecoiny, tokenizované vklady, open banking a platby řízené AI agenty.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA, EU AI Act a suverenita dat: Compliance stack pro banky v roce 2026</title>
+      <link>https://sebastienrousseau.com/cs/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA, EU AI Act, GDPR, koncentrační riziko v cloudu a suverenita dat se v roce 2026 sbíhají do jediného compliance stacku pro banky.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>UK platby</category>
-      <category>Payments Forward Plan</category>
-      <category>stablecoiny</category>
-      <category>tokenizované vklady</category>
-      <category>open banking</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>agentní platby</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI Act</category>
+      <category>suverenita dat</category>
+      <category>provozní odolnost</category>
+      <category>koncentrační riziko v cloudu</category>
+      <category>governance AI</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan 2026: stablecoin, open banking, depositi tokenizzati e pagamenti agentici</title>
-      <link>https://sebastienrousseau.com/it/2026-05-24-uk-pagamenti-forward-plan-stablecoins-open-banking-tokenised-pagamenti-2026/index.html</link>
-      <description>Il UK Payments Forward Plan e il pacchetto di policy di aprile 2026 delineano un quadro coerente per pagamenti tradizionali, stablecoin, depositi tokenizzati, open banking e pagamenti agentici.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-24-uk-pagamenti-forward-plan-stablecoins-open-banking-tokenised-pagamenti-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA, EU AI Act e sovranità dei dati: lo stack di conformità 2026 per le banche</title>
+      <link>https://sebastienrousseau.com/it/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA, EU AI Act, GDPR, rischio di concentrazione cloud e sovranità dei dati convergono nello stack di conformità 2026 per le banche europee.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>pagamenti UK</category>
-      <category>Payments Forward Plan</category>
-      <category>stablecoin</category>
-      <category>depositi tokenizzati</category>
-      <category>open banking</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>pagamenti agentici</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI Act</category>
+      <category>sovranità dei dati</category>
+      <category>resilienza operativa</category>
+      <category>rischio di concentrazione cloud</category>
+      <category>governance AI</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan 2026:ステーブルコイン・オープンバンキング・トークン化預金・エージェント型決済</title>
-      <link>https://sebastienrousseau.com/ja/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</link>
-      <description>UK Payments Forward Plan と 2026 年 4 月の政策パッケージは、伝統的決済、ステーブルコイン、トークン化預金、オープンバンキング、AI エージェント決済を統合する単一の規制枠組みを提示しています。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA、EU AI Act、データ主権:2026 年銀行向けコンプライアンス・スタック</title>
+      <link>https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA、EU AI Act、GDPR、クラウド集中リスク、データ主権は、2026 年に銀行向けの単一のコンプライアンス・スタックへと収斂しつつあります。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>英国決済</category>
-      <category>Payments Forward Plan</category>
-      <category>ステーブルコイン</category>
-      <category>トークン化預金</category>
-      <category>オープンバンキング</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>AI エージェント決済</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI Act</category>
+      <category>データ主権</category>
+      <category>オペレーショナル・レジリエンス</category>
+      <category>クラウド集中リスク</category>
+      <category>AI ガバナンス</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan 2026: סטייבלקוינים, בנקאות פתוחה ותשלומים אגנטיים</title>
-      <link>https://sebastienrousseau.com/he/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</link>
-      <description>UK Payments Forward Plan וחבילת המדיניות של אפריל 2026 מצביעים על מסגרת רגולטורית אחת לתשלומים מסורתיים, סטייבלקוינים, פיקדונות מתורמזים, בנקאות פתוחה ותשלומי סוכני AI.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA, חוק הבינה המלאכותית וריבונות נתונים: ערימת הציות של 2026 לבנקים</title>
+      <link>https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA, חוק הבינה המלאכותית של האיחוד האירופי, GDPR, סיכון ריכוז ענן וריבונות נתונים מתכנסים ב-2026 לערימת ציות אחת לבנקים.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>UK payments</category>
-      <category>Payments Forward Plan</category>
-      <category>stablecoins</category>
-      <category>tokenised deposits</category>
-      <category>open banking</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>AI agent payments</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>חוק הבינה המלאכותית של האיחוד האירופי</category>
+      <category>ריבונות נתונים</category>
+      <category>חוסן תפעולי</category>
+      <category>סיכון ריכוז ענן</category>
+      <category>ממשל AI</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan 2026: stablecoins, öppen bankverksamhet och agentbetalningar</title>
-      <link>https://sebastienrousseau.com/sv/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</link>
-      <description>UK Payments Forward Plan och policypaketet i april 2026 ritar en gemensam regulatorisk perimeter för traditionella betalningar, stablecoins, tokeniserade insättningar, öppen bankverksamhet och agentbaserade betalningar.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA, EU:s AI-förordning och datasuveränitet: bankernas efterlevnadsstack 2026</title>
+      <link>https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA, EU:s AI-förordning, GDPR, koncentrationsrisk i molnet och datasuveränitet konvergerar 2026 till en gemensam efterlevnadsstack för banker.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>brittiska betalningar</category>
-      <category>Payments Forward Plan</category>
-      <category>stablecoins</category>
-      <category>tokeniserade insättningar</category>
-      <category>öppen bankverksamhet</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>agentbaserade betalningar</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI Act</category>
+      <category>datasuveränitet</category>
+      <category>operativ resiliens</category>
+      <category>koncentrationsrisk moln</category>
+      <category>AI-styrning</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan 2026: Stablecoin, ngân hàng mở, tiền gửi tokenized và thanh toán tác tử</title>
-      <link>https://sebastienrousseau.com/vi/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</link>
-      <description>UK Payments Forward Plan và gói chính sách tháng 4/2026 định hình một khuôn khổ thống nhất cho thanh toán truyền thống, stablecoin, tiền gửi tokenized, ngân hàng mở và thanh toán tác tử AI.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA, Đạo luật AI EU và chủ quyền dữ liệu: ngăn xếp tuân thủ 2026 cho ngân hàng</title>
+      <link>https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA, EU AI Act, GDPR, rủi ro tập trung cloud và chủ quyền dữ liệu hội tụ thành một ngăn xếp tuân thủ 2026 cho ngân hàng — kiến trúc, không phải tủ hồ sơ chính sách.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>UK payments</category>
-      <category>Payments Forward Plan</category>
-      <category>stablecoins</category>
-      <category>tokenised deposits</category>
-      <category>open banking</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>AI agent payments</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI Act</category>
+      <category>chủ quyền dữ liệu</category>
+      <category>khả năng phục hồi vận hành</category>
+      <category>rủi ro tập trung cloud</category>
+      <category>quản trị AI</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan 2026: stablecoiny, open banking, depozyty tokenizowane, płatności agentowe</title>
-      <link>https://sebastienrousseau.com/pl/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</link>
-      <description>UK Payments Forward Plan i pakiet polityk z kwietnia 2026 wyznaczają jeden spójny perymetr regulacyjny dla płatności tradycyjnych, stablecoinów, depozytów tokenizowanych, open bankingu i płatności agentowych.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA, EU AI Act i suwerennosc danych: stos zgodnosci bankow w 2026</title>
+      <link>https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA, EU AI Act, RODO, ryzyko koncentracji chmury i suwerennosc danych laczy sie w jeden stos zgodnosci banku na 2026 rok.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>UK payments</category>
-      <category>Payments Forward Plan</category>
-      <category>stablecoiny</category>
-      <category>depozyty tokenizowane</category>
-      <category>open banking</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>płatności agentowe</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI Act</category>
+      <category>suwerennosc danych</category>
+      <category>odpornosc operacyjna</category>
+      <category>ryzyko koncentracji chmury</category>
+      <category>nadzor nad AI</category>
     </item>
     <item>
-      <title>UK Payments Forward Plan 2026:stablecoins、open banking、代幣化存款與智慧代理支付</title>
-      <link>https://sebastienrousseau.com/zh-hant/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</link>
-      <description>UK Payments Forward Plan 與 2026 年 4 月政策包,為傳統支付、stablecoins、tokenised deposits、open banking 與智慧代理支付,建立單一且連貫的監理框架。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA、EU AI 法與資料主權:銀行 2026 年法遵堆疊</title>
+      <link>https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA、EU AI 法、GDPR、雲端集中風險與資料主權,2026 年正匯流為銀行的單一法遵堆疊,設計紀律成為決勝關鍵。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>英國支付</category>
-      <category>Payments Forward Plan</category>
-      <category>stablecoins</category>
-      <category>tokenised deposits</category>
-      <category>open banking</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>智慧代理支付</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI Act</category>
+      <category>資料主權</category>
+      <category>營運韌性</category>
+      <category>雲端集中風險</category>
+      <category>AI 治理</category>
     </item>
     <item>
-      <title>2026 年 UK Payments Forward Plan：稳定币、开放银行、代币化存款与智能体支付</title>
-      <link>https://sebastienrousseau.com/zh-hans/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</link>
-      <description>UK Payments Forward Plan 与 2026 年 4 月政策包，将传统支付、稳定币、代币化存款、开放银行与 AI 智能体支付纳入同一连贯框架，重塑英国银行运营模式。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html</guid>
-      <pubDate>Sun, 24 May 2026 06:06:06 +0000</pubDate>
+      <title>DORA、EU AI 法案与数据主权：银行 2026 合规栈</title>
+      <link>https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
+      <description>DORA、EU AI 法案、GDPR、云集中风险与数据主权在 2026 年汇聚为银行的一套合规栈，决定董事会层级的运营模型设计。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>UK payments</category>
-      <category>Payments Forward Plan</category>
-      <category>stablecoins</category>
-      <category>tokenised deposits</category>
-      <category>open banking</category>
-      <category>FCA</category>
-      <category>PSR</category>
-      <category>AI agent payments</category>
-      <category>Chris Woolard</category>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>DORA</category>
+      <category>EU AI 法案</category>
+      <category>数据主权</category>
+      <category>运营韧性</category>
+      <category>云集中风险</category>
+      <category>AI 治理</category>
     </item>
     <item>
-      <title>Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026</title>
-      <link>https://sebastienrousseau.com/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026</link>
-      <description>Agentic payments in 2026 have moved from concept to live transaction. The banking challenge is no longer whether AI agents can initiate payments, but how consent, liability, identity, auditability, fraud controls, and protocol interoperability should work.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026</guid>
-      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <title>AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026</title>
+      <link>https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026</link>
+      <description>AI is becoming the operating system of payments in 2026, moving from analytics into fraud prevention, payment repair, routing, liquidity forecasting, compliance screening, and agentic commerce controls.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
       <category>Finance</category>
-      <category>agentic payments</category>
       <category>AI payments</category>
-      <category>Mastercard Agent Pay</category>
-      <category>Rabobank</category>
-      <category>AP2</category>
-      <category>A2A</category>
-      <category>x402</category>
-      <category>MCP</category>
-      <category>MPP</category>
-      <category>verifiable intent</category>
-      <category>consent</category>
-      <category>liability</category>
-      <category>Regulation E</category>
-      <category>EFTA</category>
-      <category>tokenisation</category>
-      <category>passkeys</category>
-      <category>payment UX</category>
-      <category>banking innovation</category>
+      <category>fraud prevention</category>
+      <category>routing</category>
+      <category>resilience</category>
+      <category>compliance</category>
+      <category>ISO 20022</category>
+      <category>agentic commerce</category>
     </item>
     <item>
-      <title>Bankacılıkta Ajansal Ödemeler: Onay, Sorumluluk ve 2026 Ödeme UX'i</title>
-      <link>https://sebastienrousseau.com/tr/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</link>
-      <description>2026&apos;da ajansal ödemeler kavramdan canlı işleme geçti. Bankacılık sorusu artık yapay zeka ajanlarının ödeme başlatıp başlatamayacağı değil; onay, sorumluluk, kimlik, denetlenebilirlik, dolandırıcılık kontrolleri ve protokol birlikte çalışabilirliğinin nasıl kurulacağıdır.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</guid>
-      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <title>Ödemelerin İşletim Sistemi Olarak AI: 2026'da Dolandırıcılık, Yönlendirme, Dayanıklılık ve Uyum</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>AI 2026&apos;da ödemelerin işletim sistemi hâline geliyor; analitikten dolandırıcılık önleme, ödeme onarımı, yönlendirme, likidite tahmini, uyum taraması ve aracılı ticaret kontrollerine geçiyor.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finans</category>
-      <category>ajansal ödemeler</category>
-      <category>yapay zeka ödemeleri</category>
-      <category>Mastercard Agent Pay</category>
-      <category>Rabobank</category>
-      <category>AP2</category>
-      <category>A2A</category>
-      <category>x402</category>
-      <category>MCP</category>
-      <category>MPP</category>
-      <category>doğrulanabilir niyet</category>
-      <category>onay</category>
-      <category>sorumluluk</category>
-      <category>Regulation E</category>
-      <category>EFTA</category>
-      <category>tokenleştirme</category>
-      <category>geçiş anahtarları</category>
-      <category>ödeme UX</category>
-      <category>bankacılık inovasyonu</category>
-    </item>
-    <item>
-      <title>การชำระเงินแบบเอเจนต์ในธนาคาร: ความยินยอม ความรับผิด และ UX การชำระเงินใหม่ปี 2026</title>
-      <link>https://sebastienrousseau.com/th/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</link>
-      <description>การชำระเงินแบบเอเจนต์ในปี 2026 ก้าวจากแนวคิดสู่ธุรกรรมจริง โจทย์ของธนาคารไม่ใช่ AI agent ชำระเงินได้หรือไม่ แต่อยู่ที่ความยินยอม ความรับผิด อัตลักษณ์ การตรวจสอบ การควบคุมทุจริต และโพรโทคอลที่ทำงานร่วมกันได้</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</guid>
-      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
       <category>Finance</category>
-      <category>agentic payments</category>
-      <category>AI payments</category>
-      <category>Mastercard Agent Pay</category>
-      <category>Rabobank</category>
-      <category>AP2</category>
-      <category>A2A</category>
-      <category>x402</category>
-      <category>MCP</category>
-      <category>MPP</category>
-      <category>verifiable intent</category>
-      <category>consent</category>
-      <category>liability</category>
-      <category>Regulation E</category>
-      <category>EFTA</category>
-      <category>tokenisation</category>
-      <category>passkeys</category>
-      <category>payment UX</category>
-      <category>banking innovation</category>
+      <category>AI ödemeler</category>
+      <category>dolandırıcılık önleme</category>
+      <category>yönlendirme</category>
+      <category>dayanıklılık</category>
+      <category>uyum</category>
+      <category>ISO 20022</category>
+      <category>aracılı ticaret</category>
     </item>
     <item>
-      <title>Pagos agénticos en banca: consentimiento, responsabilidad y nueva UX en 2026</title>
-      <link>https://sebastienrousseau.com/es/2026-05-23-agentic-pagos-banking-consent-liability-new-payment-ux-2026/index.html</link>
-      <description>Los pagos agénticos en 2026 pasaron del concepto a la transacción real. El reto bancario ya no es si los agentes de IA pueden iniciar pagos, sino cómo articular consentimiento, responsabilidad, identidad, auditabilidad y controles de fraude.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-05-23-agentic-pagos-banking-consent-liability-new-payment-ux-2026/index.html</guid>
-      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <title>AI ในฐานะระบบปฏิบัติการของการชำระเงิน: ฉ้อโกง เส้นทาง ยืดหยุ่น ปฏิบัติตามกฎ 2026</title>
+      <link>https://sebastienrousseau.com/th/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>AI กำลังกลายเป็นระบบปฏิบัติการของการชำระเงินในปี 2026 ขยายจากการวิเคราะห์ไปสู่การป้องกันการฉ้อโกง การซ่อมแซมการชำระเงิน การกำหนดเส้นทาง การคาดการณ์สภาพคล่อง การคัดกรองการปฏิบัติตามกฎ และการควบคุมพาณิชย์เชิงตัวแทน</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
       <category>Finance</category>
-      <category>pagos agénticos</category>
-      <category>pagos con IA</category>
-      <category>Mastercard Agent Pay</category>
-      <category>Rabobank</category>
-      <category>AP2</category>
-      <category>A2A</category>
-      <category>x402</category>
-      <category>MCP</category>
-      <category>MPP</category>
-      <category>intención verificable</category>
-      <category>consentimiento</category>
-      <category>responsabilidad</category>
-      <category>Regulation E</category>
-      <category>EFTA</category>
-      <category>tokenización</category>
-      <category>claves de acceso</category>
-      <category>UX de pago</category>
-      <category>innovación bancaria</category>
+      <category>AI การชำระเงิน</category>
+      <category>การป้องกันการฉ้อโกง</category>
+      <category>การกำหนดเส้นทาง</category>
+      <category>ความยืดหยุ่น</category>
+      <category>การปฏิบัติตามกฎ</category>
+      <category>ISO 20022</category>
+      <category>พาณิชย์เชิงตัวแทน</category>
     </item>
     <item>
-      <title>Paiements agentiques en banque : consentement, responsabilité et nouvelle UX en 2026</title>
-      <link>https://sebastienrousseau.com/fr/2026-05-23-agentique-paiements-banking-consent-liability-new-payment-ux-2026/index.html</link>
-      <description>Les paiements agentiques sont passés du concept à la transaction réelle en 2026. L&apos;enjeu bancaire n&apos;est plus la capacité technique mais l&apos;architecture de consentement, de responsabilité, d&apos;identité et de preuve pré-règlement.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-23-agentique-paiements-banking-consent-liability-new-payment-ux-2026/index.html</guid>
-      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <title>La IA como sistema operativo de los pagos: fraude, enrutamiento, resiliencia y cumplimiento en 2026</title>
+      <link>https://sebastienrousseau.com/es/2026-05-27-ai-operating-system-pagos-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>La IA se está convirtiendo en el sistema operativo de los pagos en 2026: prevención de fraude, reparación, enrutamiento, previsión de liquidez, cribado de cumplimiento y controles de comercio agéntico.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-05-27-ai-operating-system-pagos-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
       <category>Finance</category>
-      <category>paiements agentiques</category>
-      <category>paiements IA</category>
-      <category>Mastercard Agent Pay</category>
-      <category>Rabobank</category>
-      <category>AP2</category>
-      <category>A2A</category>
-      <category>x402</category>
-      <category>MCP</category>
-      <category>MPP</category>
-      <category>intention vérifiable</category>
-      <category>consentement</category>
-      <category>responsabilité</category>
-      <category>Regulation E</category>
-      <category>EFTA</category>
-      <category>tokenisation</category>
-      <category>passkeys</category>
-      <category>UX paiement</category>
-      <category>innovation bancaire</category>
+      <category>IA pagos</category>
+      <category>prevención de fraude</category>
+      <category>enrutamiento</category>
+      <category>resiliencia</category>
+      <category>cumplimiento</category>
+      <category>ISO 20022</category>
+      <category>comercio agéntico</category>
     </item>
     <item>
-      <title>Pembayaran Agentik di Perbankan: Persetujuan, Tanggung Jawab, UX 2026</title>
-      <link>https://sebastienrousseau.com/id/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</link>
-      <description>Pembayaran agentik pada 2026 telah berpindah dari konsep ke transaksi langsung. Tantangan perbankan bukan lagi apakah AI agent dapat memulai pembayaran, melainkan bagaimana persetujuan, tanggung jawab, identitas, auditabilitas, kendali fraud, dan interoperabilitas protokol harus dirancang.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</guid>
-      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <title>L'IA comme système d'exploitation des paiements : fraude, routage, résilience et conformité en 2026</title>
+      <link>https://sebastienrousseau.com/fr/2026-05-27-ai-operating-system-paiements-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>L&apos;IA devient le système d&apos;exploitation des paiements en 2026 : prévention de la fraude, réparation des paiements, routage, prévision de liquidité, filtrage de conformité et garde-fous du commerce agentique.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-27-ai-operating-system-paiements-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>IA paiements</category>
+      <category>prévention fraude</category>
+      <category>routage</category>
+      <category>résilience</category>
+      <category>conformité</category>
+      <category>ISO 20022</category>
+      <category>commerce agentique</category>
+    </item>
+    <item>
+      <title>AI sebagai Sistem Operasi Pembayaran: Penipuan, Routing, Ketahanan, dan Kepatuhan pada 2026</title>
+      <link>https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>AI menjadi sistem operasi pembayaran pada 2026, bergeser dari analitik ke pencegahan penipuan, perbaikan pembayaran, routing, prakiraan likuiditas, penyaringan kepatuhan, dan kontrol agentic commerce.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
       <category>Keuangan</category>
-      <category>pembayaran agentik</category>
       <category>pembayaran AI</category>
-      <category>Mastercard Agent Pay</category>
-      <category>Rabobank</category>
-      <category>AP2</category>
-      <category>A2A</category>
-      <category>x402</category>
-      <category>MCP</category>
-      <category>MPP</category>
-      <category>niat yang dapat diverifikasi</category>
-      <category>persetujuan</category>
-      <category>tanggung jawab</category>
-      <category>Regulation E</category>
-      <category>EFTA</category>
-      <category>tokenisasi</category>
-      <category>kunci akses</category>
-      <category>UX pembayaran</category>
-      <category>inovasi perbankan</category>
+      <category>pencegahan penipuan</category>
+      <category>routing</category>
+      <category>ketahanan</category>
+      <category>kepatuhan</category>
+      <category>ISO 20022</category>
+      <category>agentic commerce</category>
     </item>
     <item>
-      <title>뱅킹 에이전트 결제: 2026년 동의·책임·새로운 결제 UX</title>
-      <link>https://sebastienrousseau.com/ko/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</link>
-      <description>2026년 에이전트 결제(agentic payments)는 개념에서 실거래로 이동하였습니다. 뱅킹의 과제는 AI 에이전트가 결제를 개시할 수 있느냐가 아니라, 동의·책임·신원·감사 가능성·사기 통제·프로토콜 상호운용성을 어떻게 설계해야 하느냐의 문제입니다.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</guid>
-      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <title>결제의 AI 운영체제: 2026년 사기, 라우팅, 회복력, 컴플라이언스</title>
+      <link>https://sebastienrousseau.com/ko/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>2026년 AI는 결제의 운영체제로 자리잡으며, 분석 대시보드를 넘어 사기 방지, 결제 복구, 라우팅, 유동성 예측, 컴플라이언스 검사, 에이전틱 커머스 통제 영역으로 확장되고 있습니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
       <category>Finance</category>
-      <category>에이전트 결제</category>
       <category>AI 결제</category>
-      <category>Mastercard Agent Pay</category>
-      <category>Rabobank</category>
-      <category>AP2</category>
-      <category>A2A</category>
-      <category>x402</category>
-      <category>MCP</category>
-      <category>MPP</category>
-      <category>검증 가능한 의도</category>
-      <category>동의</category>
-      <category>책임</category>
-      <category>Regulation E</category>
-      <category>EFTA</category>
-      <category>토큰화</category>
-      <category>패스키</category>
-      <category>결제 UX</category>
-      <category>뱅킹 혁신</category>
+      <category>사기 방지</category>
+      <category>라우팅</category>
+      <category>회복력</category>
+      <category>컴플라이언스</category>
+      <category>ISO 20022</category>
+      <category>에이전틱 커머스</category>
     </item>
     <item>
-      <title>Agentenbasierte Zahlungen im Banking: Einwilligung, Haftung, neue Zahlungs-UX 2026</title>
-      <link>https://sebastienrousseau.com/de/2026-05-23-agentic-zahlungsverkehr-banking-consent-liability-new-payment-ux-2026/index.html</link>
-      <description>Agentenbasierte Zahlungen 2026 sind von Konzept zur Live-Transaktion gereift. Die Bankenfrage ist nicht mehr, ob AI-Agenten zahlen, sondern wie Einwilligung, Haftung, Identität, Auditierbarkeit und Protokoll funktionieren.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-23-agentic-zahlungsverkehr-banking-consent-liability-new-payment-ux-2026/index.html</guid>
-      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <title>KI als Betriebssystem des Zahlungsverkehrs: Betrug, Routing, Resilienz und Compliance 2026</title>
+      <link>https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>KI wird 2026 zum Betriebssystem des Zahlungsverkehrs: vom Analytik-Werkzeug zur Steuerungsschicht für Betrugsabwehr, Zahlungsreparatur, Routing, Liquiditätsprognose, Compliance-Prüfung und agentische Handelskontrollen.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
       <category>Finance</category>
-      <category>agentenbasierte Zahlungen</category>
-      <category>AI-Zahlungen</category>
-      <category>Mastercard Agent Pay</category>
-      <category>Rabobank</category>
-      <category>AP2</category>
-      <category>A2A</category>
-      <category>x402</category>
-      <category>MCP</category>
-      <category>MPP</category>
-      <category>nachweisbare Absicht</category>
-      <category>Einwilligung</category>
-      <category>Haftung</category>
-      <category>Regulation E</category>
-      <category>EFTA</category>
-      <category>Tokenisierung</category>
-      <category>Passkeys</category>
-      <category>Zahlungs-UX</category>
-      <category>Banking-Innovation</category>
+      <category>KI-Zahlungsverkehr</category>
+      <category>Betrugsabwehr</category>
+      <category>Routing</category>
+      <category>Resilienz</category>
+      <category>Compliance</category>
+      <category>ISO 20022</category>
+      <category>agentischer Handel</category>
     </item>
     <item>
-      <title>बैंकिंग में एजेंटिक भुगतान: सहमति, दायित्व और 2026 का नया भुगतान UX</title>
-      <link>https://sebastienrousseau.com/hi/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</link>
-      <description>2026 में एजेंटिक भुगतान संकल्पना से सजीव लेनदेन तक पहुँचे। बैंकिंग चुनौती यह नहीं कि AI एजेंट भुगतान आरंभ कर सकते हैं, बल्कि सहमति, दायित्व, पहचान, ऑडिट-योग्यता, धोखाधड़ी नियंत्रण और प्रोटोकॉल अंतर-संचालन कैसे कार्य करे।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</guid>
-      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <title>भुगतान का AI ऑपरेटिंग सिस्टम: 2026 में धोखाधड़ी, रूटिंग, लचीलापन और अनुपालन</title>
+      <link>https://sebastienrousseau.com/hi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>2026 में AI भुगतान का ऑपरेटिंग सिस्टम बन रहा है — विश्लेषण से आगे बढ़कर धोखाधड़ी रोकथाम, भुगतान मरम्मत, रूटिंग, तरलता पूर्वानुमान, अनुपालन स्क्रीनिंग और एजेंटिक कॉमर्स नियंत्रण तक।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
       <category>Finance</category>
-      <category>एजेंटिक भुगतान</category>
       <category>AI भुगतान</category>
-      <category>Mastercard Agent Pay</category>
-      <category>Rabobank</category>
-      <category>AP2</category>
-      <category>A2A</category>
-      <category>x402</category>
-      <category>MCP</category>
-      <category>MPP</category>
-      <category>सत्यापन योग्य आशय</category>
-      <category>सहमति</category>
-      <category>दायित्व</category>
-      <category>Regulation E</category>
-      <category>EFTA</category>
-      <category>टोकनीकरण</category>
-      <category>पासकीज़</category>
-      <category>भुगतान UX</category>
-      <category>बैंकिंग नवाचार</category>
+      <category>धोखाधड़ी रोकथाम</category>
+      <category>रूटिंग</category>
+      <category>लचीलापन</category>
+      <category>अनुपालन</category>
+      <category>ISO 20022</category>
+      <category>एजेंटिक कॉमर्स</category>
     </item>
     <item>
-      <title>Agentikong Pagbabayad sa Pagbabangko 2026: Pahintulot at Pananagutan</title>
-      <link>https://sebastienrousseau.com/fil/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</link>
-      <description>Noong 2026, lumipat ang agentikong pagbabayad mula konsepto patungo sa live na transaksyon. Hamon na ngayon sa bangko ang konstruksyon ng pahintulot, pananagutan, identity, auditability, kontrol sa fraud, at interoperabilidad ng protocol.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</guid>
-      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <title>AI Bilang Operating System ng Pagbabayad: Pandaraya, Ruta, Katatagan, at Compliance sa 2026</title>
+      <link>https://sebastienrousseau.com/fil/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>Nagiging operating system ng pagbabayad ang AI sa 2026, lumipat mula analytics tungo sa pag-iwas sa pandaraya, pag-aayos ng bayad, ruta, forecasting ng likido, screening ng compliance, at kontrol ng agentic commerce.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
       <category>Finance</category>
-      <category>agentikong pagbabayad</category>
       <category>AI payments</category>
-      <category>Mastercard Agent Pay</category>
-      <category>Rabobank</category>
-      <category>AP2</category>
-      <category>A2A</category>
-      <category>x402</category>
-      <category>MCP</category>
-      <category>MPP</category>
-      <category>napapatunayang layunin</category>
-      <category>pahintulot</category>
-      <category>pananagutan</category>
-      <category>Regulation E</category>
-      <category>EFTA</category>
-      <category>tokenisasyon</category>
-      <category>passkeys</category>
-      <category>payment UX</category>
-      <category>banking innovation</category>
+      <category>pag-iwas sa pandaraya</category>
+      <category>ruta</category>
+      <category>katatagan</category>
+      <category>compliance</category>
+      <category>ISO 20022</category>
+      <category>agentic commerce</category>
     </item>
     <item>
-      <title>ব্যাংকিংয়ে এজেন্টিক পেমেন্ট: সম্মতি, দায় ও ২০২৬-এর নতুন পেমেন্ট UX</title>
-      <link>https://sebastienrousseau.com/bn/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</link>
-      <description>২০২৬ সালে এজেন্টিক পেমেন্ট ধারণা থেকে লাইভ লেনদেনে পৌঁছেছে। ব্যাংকিং প্রশ্ন আর AI agent পেমেন্ট শুরু করতে পারে কিনা তা নয় — সম্মতি, দায়, পরিচয়, অডিটযোগ্যতা, জালিয়াতি নিয়ন্ত্রণ ও প্রোটোকল কীভাবে কাজ করবে।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</guid>
-      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <title>পেমেন্টের অপারেটিং সিস্টেম হিসেবে AI: ২০২৬-এ প্রতারণা, রাউটিং, স্থিতিস্থাপকতা ও কমপ্লায়েন্স</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>২০২৬ সালে AI পেমেন্টের অপারেটিং সিস্টেমে পরিণত হচ্ছে — অ্যানালিটিক্স থেকে সরে গিয়ে প্রতারণা প্রতিরোধ, পেমেন্ট মেরামত, রাউটিং, তারল্য পূর্বাভাস, কমপ্লায়েন্স স্ক্রিনিং ও এজেন্টিক কমার্স নিয়ন্ত্রণে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
       <category>Finance</category>
-      <category>এজেন্টিক পেমেন্ট</category>
       <category>AI পেমেন্ট</category>
-      <category>Mastercard Agent Pay</category>
-      <category>Rabobank</category>
-      <category>AP2</category>
-      <category>A2A</category>
-      <category>x402</category>
-      <category>MCP</category>
-      <category>MPP</category>
-      <category>যাচাইযোগ্য অভিপ্রায়</category>
-      <category>সম্মতি</category>
-      <category>দায়</category>
-      <category>Regulation E</category>
-      <category>EFTA</category>
-      <category>টোকেনাইজেশন</category>
-      <category>পাসকি</category>
-      <category>পেমেন্ট UX</category>
-      <category>ব্যাংকিং উদ্ভাবন</category>
+      <category>প্রতারণা প্রতিরোধ</category>
+      <category>রাউটিং</category>
+      <category>স্থিতিস্থাপকতা</category>
+      <category>কমপ্লায়েন্স</category>
+      <category>ISO 20022</category>
+      <category>এজেন্টিক কমার্স</category>
     </item>
     <item>
-      <title>Agentische betalingen in banking: toestemming en aansprakelijkheid 2026</title>
-      <link>https://sebastienrousseau.com/nl/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</link>
-      <description>Agentische betalingen zijn in 2026 van concept naar live-transactie verschoven. De bankvraag is niet meer of AI-agents kunnen betalen, maar hoe toestemming, aansprakelijkheid, identiteit, auditeerbaarheid en protocollen werken.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</guid>
-      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <title>AI als besturingssysteem van betalingen: fraude, routering, veerkracht en compliance in 2026</title>
+      <link>https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>AI wordt in 2026 het besturingssysteem van betalingen: van analytics naar fraudepreventie, betalingsherstel, routering, liquiditeitsprognose, compliance-screening en agentic-commerce-controles.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
       <category>Finance</category>
-      <category>agentische betalingen</category>
-      <category>AI-betalingen</category>
-      <category>Mastercard Agent Pay</category>
-      <category>Rabobank</category>
-      <category>AP2</category>
-      <category>A2A</category>
-      <category>x402</category>
-      <category>MCP</category>
-      <category>MPP</category>
-      <category>verifieerbare intentie</category>
-      <category>toestemming</category>
-      <category>aansprakelijkheid</category>
-      <category>Regulation E</category>
-      <category>EFTA</category>
-      <category>tokenisatie</category>
-      <category>passkeys</category>
-      <category>bank-UX</category>
-      <category>banking-innovatie</category>
+      <category>AI betalingen</category>
+      <category>fraudepreventie</category>
+      <category>routering</category>
+      <category>veerkracht</category>
+      <category>compliance</category>
+      <category>ISO 20022</category>
+      <category>agentic commerce</category>
     </item>
     <item>
-      <title>Pagamentos agênticos no banking: consentimento, responsabilidade e UX em 2026</title>
-      <link>https://sebastienrousseau.com/pt-br/2026-05-23-agentic-pagamentos-banking-consent-liability-new-payment-ux-2026/index.html</link>
-      <description>Os pagamentos agênticos em 2026 saíram do conceito para a transação ao vivo. O desafio bancário deixou de ser se agentes de IA podem iniciar pagamentos, e passou a ser como consentimento, responsabilidade, identidade, auditabilidade e fraude devem funcionar.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-05-23-agentic-pagamentos-banking-consent-liability-new-payment-ux-2026/index.html</guid>
-      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <title>IA como Sistema Operacional dos Pagamentos: Fraude, Roteamento, Resiliência e Conformidade em 2026</title>
+      <link>https://sebastienrousseau.com/pt-br/2026-05-27-ai-operating-system-pagamentos-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>Em 2026 a IA assume o papel de sistema operacional dos pagamentos: prevenção de fraude, reparo, roteamento, previsão de liquidez, triagem de conformidade e controles de comércio agêntico.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-05-27-ai-operating-system-pagamentos-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
       <category>Finance</category>
-      <category>pagamentos agênticos</category>
-      <category>pagamentos por IA</category>
-      <category>Mastercard Agent Pay</category>
-      <category>Rabobank</category>
-      <category>AP2</category>
-      <category>A2A</category>
-      <category>x402</category>
-      <category>MCP</category>
-      <category>MPP</category>
-      <category>intenção verificável</category>
-      <category>consentimento</category>
-      <category>responsabilidade</category>
-      <category>Regulation E</category>
-      <category>EFTA</category>
-      <category>tokenização</category>
-      <category>passkeys</category>
-      <category>UX de pagamentos</category>
-      <category>inovação bancária</category>
+      <category>IA em pagamentos</category>
+      <category>prevenção de fraude</category>
+      <category>roteamento</category>
+      <category>resiliência</category>
+      <category>conformidade</category>
+      <category>ISO 20022</category>
+      <category>comércio agêntico</category>
     </item>
     <item>
-      <title>المدفوعات الوكيلة في المصارف: الموافقة والمسؤولية وتجربة الدفع الجديدة 2026</title>
-      <link>https://sebastienrousseau.com/ar/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</link>
-      <description>انتقلت المدفوعات الوكيلة في 2026 من المفهوم إلى المعاملة الحية. التحدي المصرفي لم يعد قدرة وكلاء الذكاء الاصطناعي على بدء المدفوعات، بل كيفية ضبط الموافقة والمسؤولية والهوية والتدقيق والاحتيال وتشغيل البروتوكولات.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</guid>
-      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <title>الذكاء الاصطناعي بوصفه نظام تشغيل المدفوعات: الاحتيال والتوجيه والمرونة والامتثال في 2026</title>
+      <link>https://sebastienrousseau.com/ar/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>يُصبح الذكاء الاصطناعي نظام تشغيل المدفوعات في 2026، منتقلاً من التحليلات إلى منع الاحتيال، وإصلاح المدفوعات، والتوجيه، والتنبؤ بالسيولة، وفحص الامتثال، وضوابط التجارة الوكيلة.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
       <category>Finance</category>
-      <category>المدفوعات الوكيلة، مدفوعات الذكاء الاصطناعي، Mastercard Agent Pay، Rabobank، AP2، A2A، x402، MCP، MPP، النية القابلة للتحقق، الموافقة، المسؤولية، Regulation E، EFTA، الترميز، مفاتيح المرور، تجربة الدفع، الابتكار المصرفي</category>
+      <category>نظام تشغيل الذكاء الاصطناعي للمدفوعات</category>
+      <category>منع الاحتيال</category>
+      <category>التوجيه</category>
+      <category>المرونة</category>
+      <category>الامتثال</category>
+      <category>ISO 20022</category>
+      <category>التجارة الوكيلة</category>
     </item>
     <item>
-      <title>Biyan Kuɗi ta Wakili a Banki: Yarda, Alhaki, da Sabon UX na Biyan Kuɗi 2026</title>
-      <link>https://sebastienrousseau.com/ha/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</link>
-      <description>A 2026, biyan kuɗi ta wakili ya wuce daga ra&apos;ayi zuwa hada-hada kai tsaye. Tambayar bankuna ba ko AI agent na iya fara biyan kuɗi ba ce, sai dai yadda yarda, alhaki, sa hannu, da tabbacin bin doka za su yi aiki.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</guid>
-      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <title>AI a Matsayin Tsarin Aiki na Biya: Zamba, Tuƙi, Juriya, da Bin Doka a 2026</title>
+      <link>https://sebastienrousseau.com/ha/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>A 2026, AI yana zama tsarin aiki na biya, yana motsi daga nazari zuwa hana zamba, gyaran biya, tuƙi, hasashen ruwa-ruwa, tantance bin doka, da sarrafa cinikayyar agentic commerce.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
       <category>Finance</category>
-      <category>biyan kuɗi ta wakili</category>
-      <category>biyan AI</category>
-      <category>Mastercard Agent Pay</category>
-      <category>Rabobank</category>
-      <category>AP2</category>
-      <category>A2A</category>
-      <category>x402</category>
-      <category>MCP</category>
-      <category>MPP</category>
-      <category>niyya mai tabbas</category>
-      <category>yarda</category>
-      <category>alhaki</category>
-      <category>Regulation E</category>
-      <category>EFTA</category>
-      <category>tokenisation</category>
-      <category>passkeys</category>
-      <category>UX na biyan kuɗi</category>
-      <category>ƙirƙira banki</category>
+      <category>AI payments</category>
+      <category>fraud prevention</category>
+      <category>routing</category>
+      <category>resilience</category>
+      <category>compliance</category>
+      <category>ISO 20022</category>
+      <category>agentic commerce</category>
     </item>
     <item>
-      <title>Агентські платежі у банкінгу: згода, відповідальність та новий UX 2026</title>
-      <link>https://sebastienrousseau.com/uk/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</link>
-      <description>Агентські платежі 2026 року перейшли від концепції до живої транзакції. Питання для банків — не чи можуть AI-агенти ініціювати платежі, а як побудувати згоду, відповідальність, ідентичність, аудит та контроль шахрайства.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</guid>
-      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <title>ШІ як операційна система платежів: шахрайство, маршрутизація, стійкість і відповідність у 2026</title>
+      <link>https://sebastienrousseau.com/uk/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>ШІ стає операційною системою платежів у 2026 році: виходить за межі аналітики у запобігання шахрайству, відновлення платежів, маршрутизацію, прогноз ліквідності та перевірку відповідності.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
       <category>Finance</category>
-      <category>агентські платежі</category>
-      <category>AI-платежі</category>
-      <category>Mastercard Agent Pay</category>
-      <category>Rabobank</category>
-      <category>AP2</category>
-      <category>A2A</category>
-      <category>x402</category>
-      <category>MCP</category>
-      <category>MPP</category>
-      <category>перевірюваний намір</category>
-      <category>згода</category>
-      <category>відповідальність</category>
-      <category>Regulation E</category>
-      <category>EFTA</category>
-      <category>токенізація</category>
-      <category>ключі доступу</category>
-      <category>платіжний UX</category>
-      <category>банківські інновації</category>
+      <category>ШІ у платежах</category>
+      <category>запобігання шахрайству</category>
+      <category>маршрутизація</category>
+      <category>стійкість</category>
+      <category>відповідність</category>
+      <category>ISO 20022</category>
+      <category>агентна комерція</category>
     </item>
     <item>
-      <title>Ìsanwó Alábòójútó nínú Báńkì: Àṣẹ Ìfọwọ́sí, Ojúṣe, UX Ìsanwó 2026</title>
-      <link>https://sebastienrousseau.com/yo/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</link>
-      <description>Ìsanwó alábòójútó ní 2026 ti kọjá lóókan sí ìṣòwò alààyè. Ìpèníjà báńkì kì í ṣe bóyá AI agent lè bẹ̀rẹ̀ ìsanwó, bí kò ṣe bí àṣẹ ìfọwọ́sí, ojúṣe, ìdánimọ̀, àti àkọsílẹ̀ yẹ ṣe ṣiṣẹ́.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</guid>
-      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <title>AI gẹ́gẹ́ bí Ètò Ìṣiṣẹ́ AI ti Ìsanwó: Jìbìtì, Ìpinnu Ọ̀nà, Ìfaradà, Ìbámu 2026</title>
+      <link>https://sebastienrousseau.com/yo/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>AI ti ń di ètò ìṣiṣẹ́ AI ti ìsanwó ní 2026, ó ń kọjá láti àyẹ̀wò sí ìdènà jìbìtì, àtúnṣe ìsanwó, ìpinnu ọ̀nà, ìhùmọ̀ owó tó ń sàn, àyẹ̀wò ìbámu, àti ìṣàkóso agentic commerce.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
       <category>Finance</category>
-      <category>ìsanwó alábòójútó</category>
-      <category>ìsanwó AI</category>
-      <category>Mastercard Agent Pay</category>
-      <category>Rabobank</category>
-      <category>AP2</category>
-      <category>A2A</category>
-      <category>x402</category>
-      <category>MCP</category>
-      <category>MPP</category>
-      <category>ète tí a lè jẹ́rìí sí</category>
-      <category>àṣẹ ìfọwọ́sí</category>
-      <category>ojúṣe</category>
-      <category>Regulation E</category>
-      <category>EFTA</category>
-      <category>ìṣe àmì-tókènì</category>
-      <category>kọ́kọ́rọ́ ìwọlé</category>
-      <category>UX ìsanwó</category>
-      <category>ìṣẹ̀dá báńkì</category>
+      <category>AI payments</category>
+      <category>fraud prevention</category>
+      <category>routing</category>
+      <category>resilience</category>
+      <category>compliance</category>
+      <category>ISO 20022</category>
+      <category>agentic commerce</category>
     </item>
     <item>
-      <title>Plăți agentice în bănci: consimțământ, răspundere și noul UX de plată în 2026</title>
-      <link>https://sebastienrousseau.com/ro/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</link>
-      <description>Plățile agentice au trecut în 2026 de la concept la tranzacție reală. Întrebarea bancară nu mai este dacă agenții AI pot iniția plăți, ci cum trebuie regândite consimțământul, răspunderea, identitatea, auditabilitatea și interoperabilitatea protocoalelor.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</guid>
-      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <title>AI ca sistem de operare al plăților: fraudă, rutare, reziliență și conformitate în 2026</title>
+      <link>https://sebastienrousseau.com/ro/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>AI devine sistemul de operare al plăților în 2026: prevenirea fraudei, repararea plăților, rutarea, prognoza lichidității, screening de conformitate și controale pentru comerțul agentic la viteza fluxului.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
       <category>Finance</category>
-      <category>plăți agentice</category>
-      <category>plăți AI</category>
-      <category>Mastercard Agent Pay</category>
-      <category>Rabobank</category>
-      <category>AP2</category>
-      <category>A2A</category>
-      <category>x402</category>
-      <category>MCP</category>
-      <category>MPP</category>
-      <category>intenție verificabilă</category>
-      <category>consimțământ</category>
-      <category>răspundere</category>
-      <category>Regulation E</category>
-      <category>EFTA</category>
-      <category>tokenizare</category>
-      <category>chei de acces</category>
-      <category>UX plăți</category>
-      <category>inovație bancară</category>
+      <category>AI payments</category>
+      <category>fraud prevention</category>
+      <category>routing</category>
+      <category>resilience</category>
+      <category>compliance</category>
+      <category>ISO 20022</category>
+      <category>agentic commerce</category>
     </item>
     <item>
-      <title>Агентские платежи в банкинге: согласие, ответственность, новый UX 2026</title>
-      <link>https://sebastienrousseau.com/ru/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</link>
-      <description>Агентские платежи в 2026 году перешли от концепции к реальной транзакции. Вопрос для банков — не способны ли AI-агенты инициировать платежи, а как выстроить согласие, ответственность, идентификацию, аудит и совместимость протоколов.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</guid>
-      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <title>ИИ как операционная система платежей: мошенничество, маршрутизация, устойчивость и комплаенс в 2026</title>
+      <link>https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>В 2026 году ИИ становится операционной системой платежей: от аналитики к предотвращению мошенничества, восстановлению платежей, маршрутизации, прогнозу ликвидности, проверкам комплаенса и контролю агентной коммерции.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
       <category>Finance</category>
-      <category>агентские платежи</category>
-      <category>AI-платежи</category>
-      <category>Mastercard Agent Pay</category>
-      <category>Rabobank</category>
-      <category>AP2</category>
-      <category>A2A</category>
-      <category>x402</category>
-      <category>MCP</category>
-      <category>MPP</category>
-      <category>проверяемое намерение</category>
-      <category>согласие</category>
-      <category>ответственность</category>
-      <category>Regulation E</category>
-      <category>EFTA</category>
-      <category>токенизация</category>
-      <category>ключи доступа</category>
-      <category>платёжный UX</category>
-      <category>банковские инновации</category>
+      <category>ИИ в платежах</category>
+      <category>предотвращение мошенничества</category>
+      <category>маршрутизация</category>
+      <category>устойчивость</category>
+      <category>комплаенс</category>
+      <category>ISO 20022</category>
+      <category>агентная коммерция</category>
     </item>
     <item>
-      <title>Agentní platby v bankovnictví: souhlas, odpovědnost a nové UX 2026</title>
-      <link>https://sebastienrousseau.com/cs/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</link>
-      <description>Agentní platby v roce 2026 přešly z konceptu do živé transakce. Otázkou pro banky již není, zda AI agenti dokážou iniciovat platby, ale jak nastavit souhlas, odpovědnost, identitu, auditovatelnost, kontroly podvodů a interoperabilitu protokolů.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</guid>
-      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <title>AI jako operační systém plateb: podvody, směrování, odolnost a compliance v roce 2026</title>
+      <link>https://sebastienrousseau.com/cs/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>AI se v roce 2026 stává operačním systémem plateb — propojuje prevenci podvodů, opravu plateb, směrování, prognózu likvidity, screening compliance a kontroly agentického obchodu v rychlosti workflow.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
       <category>Finance</category>
-      <category>agentní platby</category>
       <category>AI platby</category>
-      <category>Mastercard Agent Pay</category>
-      <category>Rabobank</category>
-      <category>AP2</category>
-      <category>A2A</category>
-      <category>x402</category>
-      <category>MCP</category>
-      <category>MPP</category>
-      <category>ověřitelný úmysl</category>
-      <category>souhlas</category>
-      <category>odpovědnost</category>
-      <category>Regulation E</category>
-      <category>EFTA</category>
-      <category>tokenizace</category>
-      <category>přístupové klíče</category>
-      <category>platební UX</category>
-      <category>bankovní inovace</category>
+      <category>prevence podvodů</category>
+      <category>směrování</category>
+      <category>odolnost</category>
+      <category>compliance</category>
+      <category>ISO 20022</category>
+      <category>agentický obchod</category>
     </item>
     <item>
-      <title>Pagamenti agentici nel banking: consenso, responsabilità e nuova UX 2026</title>
-      <link>https://sebastienrousseau.com/it/2026-05-23-agentic-pagamenti-banking-consent-liability-new-payment-ux-2026/index.html</link>
-      <description>Nel 2026 i pagamenti agentici sono passati dal concetto alla transazione reale. Per le banche la sfida non è più se gli agenti IA possano disporre pagamenti, ma come strutturare consenso, responsabilità, identità, auditabilità, controlli antifrode e interoperabilità dei protocolli.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-23-agentic-pagamenti-banking-consent-liability-new-payment-ux-2026/index.html</guid>
-      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <title>L'IA come sistema operativo dei pagamenti: frode, routing, resilienza e conformità nel 2026</title>
+      <link>https://sebastienrousseau.com/it/2026-05-27-ai-operating-system-pagamenti-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>Nel 2026 l&apos;IA diventa il sistema operativo dei pagamenti: prevenzione frodi, riparazione, routing, previsione di liquidità, screening di conformità e controlli per il commercio agentico in tempo reale.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-27-ai-operating-system-pagamenti-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
       <category>Finance</category>
-      <category>pagamenti agentici</category>
-      <category>pagamenti IA</category>
-      <category>Mastercard Agent Pay</category>
-      <category>Rabobank</category>
-      <category>AP2</category>
-      <category>A2A</category>
-      <category>x402</category>
-      <category>MCP</category>
-      <category>MPP</category>
-      <category>intento verificabile</category>
-      <category>consenso</category>
-      <category>responsabilità</category>
-      <category>Regulation E</category>
-      <category>EFTA</category>
-      <category>tokenizzazione</category>
-      <category>passkey</category>
-      <category>UX pagamenti</category>
-      <category>innovazione bancaria</category>
+      <category>AI pagamenti</category>
+      <category>prevenzione frodi</category>
+      <category>routing</category>
+      <category>resilienza</category>
+      <category>conformità</category>
+      <category>ISO 20022</category>
+      <category>commercio agentico</category>
     </item>
     <item>
-      <title>銀行のエージェント型決済:同意・責任・2026 年の新しい決済 UX</title>
-      <link>https://sebastienrousseau.com/ja/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</link>
-      <description>2026 年、エージェント型決済は構想から実取引へと移行しました。銀行の課題は AI エージェントが決済を起動できるかではなく、同意・責任・本人確認・監査性・不正対策・プロトコル相互運用性をどう設計するかです。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html</guid>
-      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <title>決済のオペレーティングシステムとしての AI: 2026 年の不正、ルーティング、レジリエンス、コンプライアンス</title>
+      <link>https://sebastienrousseau.com/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
+      <description>2026 年、AI は決済のオペレーティングシステムへと進化し、分析を越えて不正防止、決済修復、ルーティング、流動性予測、コンプライアンススクリーニング、エージェント型コマース統制を担います。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
       <category>Finance</category>
-      <category>エージェント型決済</category>
       <category>AI 決済</category>
-      <category>Mastercard Agent Pay</category>
-      <category>Rabobank</category>
-      <category>AP2</category>
-      <category>A2A</category>
-      <category>x402</category>
-      <category>MCP</category>
-      <category>MPP</category>
-      <category>検証可能な意図</category>
-      <category>同意</category>
-      <category>責任</category>
-      <category>Regulation E</category>
-      <category>EFTA</category>
-      <category>トークン化</category>
-      <category>パスキー</category>
-      <category>決済 UX</category>
-      <category>銀行イノベーション</category>
+      <category>不正防止</category>
+      <category>ルーティング</category>
+      <category>レジリエンス</category>
+      <category>コンプライアンス</category>
+      <category>ISO 20022</category>
+      <category>エージェント型コマース</category>
     </item>
   </channel>
 </rss>

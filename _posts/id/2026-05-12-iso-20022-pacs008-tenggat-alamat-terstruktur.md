@@ -1,13 +1,13 @@
 ---
 title: "[ID DRAFT] The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View"
-subtitle: "From mid-November 2026, SWIFT CBPR+ will reject unstructured postal addresses in pacs.008 and related cross-border payment messages. With approximately 65% of messages still non-compliant, the remediation window is closing fast."
-description: "From November 2026, SWIFT CBPR+ requires structured postal addresses in cross-border payment messages. Unstructured address lines (AdrLine alone) will no longer be accepted for key party fields in pacs.008. At minimum, TwnNm and Ctry are required, with StrtNm and BldgNb or PstBx recommended. With six months to go, 65% of payment messages still contain unstructured addresses and 44% of banks remain behind schedule."
+subtitle: "Mulai pertengahan November 2026, SWIFT CBPR+ akan menolak alamat pos tidak terstruktur dalam pacs.008 dan pesan pembayaran lintas batas terkait. Dengan sekitar 65% pesan masih tidak patuh, jendela remediasi semakin sempit."
+description: "Mulai November 2026, SWIFT CBPR+ mewajibkan alamat pos terstruktur dalam pesan pembayaran lintas batas. Baris alamat tidak terstruktur (hanya AdrLine) tidak lagi diterima di pacs.008; minimal TwnNm dan Ctry diperlukan. Saat ini 65% pesan masih tidak patuh dan 44% bank tertinggal dari jadwal."
 date: "May 12, 2026"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
-banner_alt: "ISO 20022 pacs.008 structured address diagram — cross-border payment message fields with TwnNm and Ctry highlighted"
-keywords: "ISO 20022, pacs.008, SWIFT CBPR+, structured address, November 2026, postal address, TwnNm, Ctry, StrtNm, BldgNb"
+banner_alt: "Diagram alamat terstruktur ISO 20022 pacs.008 — bidang pesan pembayaran lintas batas dengan TwnNm dan Ctry yang disorot"
+keywords: "ISO 20022, pacs.008, SWIFT CBPR+, alamat terstruktur, November 2026, alamat pos, TwnNm, Ctry, StrtNm, BldgNb"
 ---
 
 ![ISO 20022 pacs.008 structured address diagram — cross-border payment message fields with TwnNm and Ctry highlighted](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

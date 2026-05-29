@@ -1,11 +1,11 @@
 {
+  "language": "hi-IN",
+  "subtitle": "एक पीयर-टू-पीयर इलेक्ट्रॉनिक भुगतान-प्रणाली जिसने पैसे को पुनर्परिभाषित किया",
+  "title": "Bitcoin: पहली क्रिप्टोकरेंसी के वर्ष की समीक्षा",
   "banner_alt": "एक मेज़ पर सोने और चाँदी के सिक्कों का ढेर",
   "date": "January 1, 2018",
   "keywords": "Bitcoin, क्रिप्टोकरेंसी, blockchain, P2P, दोहरा-व्यय, माइनिंग, proof-of-work, ETF, Satoshi Nakamoto, विकेंद्रीकृत वित्त",
-  "language": "hi-IN",
-  "title": "Bitcoin: पहली क्रिप्टोकरेंसी के वर्ष की समीक्षा",
-  "subtitle": "एक पीयर-टू-पीयर इलेक्ट्रॉनिक भुगतान-प्रणाली जिसने पैसे को पुनर्परिभाषित किया",
-  "locale": "hi_IN",
   "description": "Bitcoin: एक पीयर-टू-पीयर इलेक्ट्रॉनिक नक़द-प्रणाली (P2P ECS) जो ऑनलाइन लेनदेन के तरीक़े में क्रांति ला सकती है।",
+  "locale": "hi_IN",
   "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp"
 }

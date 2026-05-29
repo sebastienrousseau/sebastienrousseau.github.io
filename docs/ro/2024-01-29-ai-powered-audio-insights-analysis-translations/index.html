@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta itemprop="datePublished" content="Mon, 29 Jan 2024 05:06:06 +0000" id="date" />
     <meta itemprop="dateModified" content="Mon, 29 Jan 2024 05:06:06 +0000" id="last-modified" />
-    <title>AI-Powered Speech Analysis, Translation, &amp; Insight Tool — Sebastien Rousseau</title>
+    <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline — Sebastien Rousseau</title>
 
     <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
-<meta name="description" content="Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conversion, text analysis, and translations for actionable insights.">
-<meta name="keywords" content="audio analyser, azure ai, speech-to-text, audio data analysis, text analysis, ai translations, audio insights, automated transcription, audio data processing, machine learning">
+<meta name="description" content="Audio Analyser utilizează modele neuronale de vorbire Azure Cognitive Services, Text Analytics NLP și CherryPy pentru a converti înregistrări audio în transcrieri căutabile cu scoruri de sentiment, extragere de cuvinte cheie și traduceri multilingve.">
+<meta name="keywords" content="Azure Cognitive Services, conversie vorbire în text, model acustic neural, Azure Text Analytics, procesare limbaj natural, analiză sentiment, CherryPy, API transcriere în lot, ASR multilingv, Azure Translator, transcriere audio, procesare audio Python">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
     <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+<meta name="apple-mobile-web-app-title" content="Audio Analyser">
 
     <!-- Strict security headers. The headers below that can be set via
          <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
@@ -40,7 +40,7 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-8B2ObTpbsUj4nS3CztI1xPPCFCcPJ1jpkVdqSwB20Io=' 'sha256-8gDhgSjubgxEyjJFWdG9t7ItYoMcmdlnsA/4BBfPa2o=' 'sha256-AAqu7Vo5o9MvXfyB6qenAhBQ2xobPumZCx6DUKqGoJU=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-2KKvVdXnpZcXAPBHClIUUtNwYbD6x35sEcQONmMFoZ0=' 'sha256-5VKPiyGGiUxUZWhEbgUx/b9jEdA6vogvQSwycC7ngfA=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-AAqu7Vo5o9MvXfyB6qenAhBQ2xobPumZCx6DUKqGoJU=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-IwtusbB5A0njrmfqS3pJ3oLX6XYY8QH1y7mjH4MGSQc=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
@@ -67,7 +67,7 @@
          Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
          observed (real-network) LCP is 165 ms. This hint pulls the
          synthetic LCP in line with the observed value. -->
-    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/modern-corporate-office-with-technological-displays.webp&w=1600&format=webp&q=85" fetchpriority="high">
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
     <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
     <meta name="color-scheme" content="light dark" />
@@ -76,8 +76,9 @@
     <link rel="stylesheet" href="/_csp/6346d01ad7de2d6f.css" integrity="sha256-cmdn5aVLYjokOMehbFCVM2OVn90qAJQVGHgU/SsPTT0= sha256-LfI/OOvfKQbXmGjqT/lqFAdGuOgerwiywMKCZBxL014=" crossorigin="anonymous">
     <link rel="alternate" type="application/atom+xml" title="Flux Atom" href="/ro/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-<meta property="og:title" content="AI-Powered Speech Analysis, Translation, &amp; Insight Tool — Sebastien Rousseau">
-<meta property="og:description" content="Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conversion, text analysis, and translations for actionable insights.">
+<link rel="stylesheet" href="/highlight.a92b9694.css">
+<meta property="og:title" content="Audio Analyser: Azure Speech, NLP, and Translation Pipeline — Sebastien Rousseau">
+<meta property="og:description" content="Audio Analyser utilizează modele neuronale de vorbire Azure Cognitive Services, Text Analytics NLP și CherryPy pentru a converti înregistrări audio în transcrieri căutabile cu scoruri de sentiment, extragere de cuvinte cheie și traduceri multilingve.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sebastienrousseau.com/ro/2024-01-29-ai-powered-audio-insights-analysis-translations/">
 <meta property="og:image" content="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp">
@@ -85,8 +86,8 @@
 <meta property="og:image:height" content="100vh">
 <meta property="og:locale" content="ro_RO">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AI-Powered Speech Analysis, Translation, &amp; Insight Tool — Sebastien Rousseau">
-<meta name="twitter:description" content="Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conversion, text analysis, and translations for actionable insights.">
+<meta name="twitter:title" content="Audio Analyser: Azure Speech, NLP, and Translation Pipeline — Sebastien Rousseau">
+<meta name="twitter:description" content="Audio Analyser utilizează modele neuronale de vorbire Azure Cognitive Services, Text Analytics NLP și CherryPy pentru a converti înregistrări audio în transcrieri căutabile cu scoruri de sentiment, extragere de cuvinte cheie și traduceri multilingve.">
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp">
 <link rel="canonical" href="https://sebastienrousseau.com/ro/2024-01-29-ai-powered-audio-insights-analysis-translations/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
@@ -128,34 +129,34 @@
             </button>
             <div class="ap-lang-menu" role="menu" hidden>
               <div class="ap-lang-menu-grid">
-                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
-                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
-                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
-                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
-                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
-                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
-                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
-                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
-                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
-                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
-                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
-                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
-                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
-                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
-                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
-                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
-                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
-                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
-                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
-                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
-                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
-                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
-                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
-                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
-                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
-                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
-                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
-                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+                <a class="ap-lang-item" href="/2024-01-29-ai-powered-audio-insights-analysis-translations/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2024-01-29-analyse-audio-traductions-et-perspectives-par-l-ia/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2024-01-29-ai-powered-audio-insights-analysis-translations/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2024-01-29-ai-powered-audio-insights-analysis-translations/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2024-01-29-analyza-audia-preklady-a-poznatky-s-ai/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2024-01-29-ki-gestuetzte-audio-einblicke-analyse-uebersetzungen/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2024-01-29-analisis-audio-traducciones-y-perspectivas-con-ia/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2024-01-29-ai-powered-audio-insights-analysis-translations/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2024-01-29-ai-powered-audio-insights-analysis-translations/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2024-01-29-ai-powered-audio-insights-analysis-translations/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2024-01-29-ai-aadharit-audio-vishleshan-anuvaad-aur-drishtikon/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2024-01-29-wawasan-audio-analisis-dan-terjemahan-bertenaga-ai/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2024-01-29-analisi-audio-traduzioni-e-prospettive-con-lia/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2024-01-29-ai-ni-yoru-onsei-bunseki-honyaku-to-insaito/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2024-01-29-ai-gibon-eumseong-bunseok-beonyeok-tongchal/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2024-01-29-door-ai-aangestuurde-audio-inzichten-analyse-vertalingen/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2024-01-29-analiza-dzwieku-tlumaczenia-i-spostrzezenia-z-ai/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2024-01-29-analise-audio-traducoes-e-insights-com-ia/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2024-01-29-ai-powered-audio-insights-analysis-translations/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2024-01-29-audio-analiz-perevody-i-insaity-s-pomoshchyu-ii/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2024-01-29-ai-driven-ljudanalys-oversattningar-och-insikter/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2024-01-29-kan-wikhro-siang-praeplian-lae-khwam-khaochai-ai/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2024-01-29-yapay-zeka-destekli-ses-analizi-ceviri-ve-icgoruler/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2024-01-29-audio-analiz-pereklady-i-perspektyvy-na-shi/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2024-01-29-phan-tich-am-thanh-dich-va-hieu-biet-bang-ai/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2024-01-29-ai-powered-audio-insights-analysis-translations/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2024-01-29-ai-yinpin-fenxi-fanyi-yu-jianjie/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2024-01-29-ai-yinpin-fenxi-fanyi-yu-jianjie-tw/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
               </div>
             </div>
           </div>
@@ -166,118 +167,175 @@
     </header>
 
         <section class="ap-hero">
-      <h1>AI-Powered Speech Analysis, Translation, &amp; Insight Tool</h1>
-      <p class="sub">Revolutionising audio data processing with Azure AI Platform</p>
-    <nav class="article-tags" aria-label="Subiecte"><a href="/tags/index.html#h3-audio-analyser" class="article-tag" rel="tag">audio analyser</a><a href="/tags/index.html#h3-azure-ai" class="article-tag" rel="tag">azure ai</a><a href="/tags/index.html#h3-speech-to-text" class="article-tag" rel="tag">speech-to-text</a><a href="/tags/index.html#h3-audio-data-analysis" class="article-tag" rel="tag">audio data analysis</a><a href="/tags/index.html#h3-text-analysis" class="article-tag" rel="tag">text analysis</a><a href="/tags/index.html#h3-ai-translations" class="article-tag" rel="tag">ai translations</a><a href="/tags/index.html#h3-audio-insights" class="article-tag" rel="tag">audio insights</a><a href="/tags/index.html#h3-automated-transcription" class="article-tag" rel="tag">automated transcription</a><a href="/tags/index.html#h3-audio-data-processing" class="article-tag" rel="tag">audio data processing</a><a href="/tags/index.html#h3-machine-learning" class="article-tag" rel="tag">machine learning</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-01-29T05:06:06+00:00" class="meta-pub">Publicat 29 Jan 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Actualizat 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Timp estimat de citire">7 min de citit</span></div></section>
+      <h1>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</h1>
+      <p class="sub">Arhitectura și pipeline-ul unui instrument de analiză a vorbirii bazat pe Azure</p>
+    <nav class="article-tags" aria-label="Subiecte"><a href="/tags/index.html#h3-azure-cognitive-services" class="article-tag" rel="tag">Azure Cognitive Services</a><a href="/tags/index.html#h3-conversie-vorbire-in-text" class="article-tag" rel="tag">conversie vorbire în text</a><a href="/tags/index.html#h3-model-acustic-neural" class="article-tag" rel="tag">model acustic neural</a><a href="/tags/index.html#h3-azure-text-analytics" class="article-tag" rel="tag">Azure Text Analytics</a><a href="/tags/index.html#h3-procesare-limbaj-natural" class="article-tag" rel="tag">procesare limbaj natural</a><a href="/tags/index.html#h3-analiza-sentiment" class="article-tag" rel="tag">analiză sentiment</a><a href="/tags/index.html#h3-cherrypy" class="article-tag" rel="tag">CherryPy</a><a href="/tags/index.html#h3-api-transcriere-in-lot" class="article-tag" rel="tag">API transcriere în lot</a><a href="/tags/index.html#h3-asr-multilingv" class="article-tag" rel="tag">ASR multilingv</a><a href="/tags/index.html#h3-azure-translator" class="article-tag" rel="tag">Azure Translator</a><a href="/tags/index.html#h3-transcriere-audio" class="article-tag" rel="tag">transcriere audio</a><a href="/tags/index.html#h3-procesare-audio-python" class="article-tag" rel="tag">procesare audio Python</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-01-29T05:06:06+00:00" class="meta-pub">Publicat 29 Jan 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">Actualizat 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Timp estimat de citire">6 min de citit</span></div></section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Cuprins</h2><ol><li><a href="#insight">Insight</a></li><li><a href="#idea">Idea</a></li><li><a href="#impact">Impact</a></li><li><a href="#incentives">Incentives</a></li><li><a href="#technical-foundation-built-on-solid-ground">Technical Foundation - Built on Solid Ground</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conversion, text analysis, and translations for actionable insights.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Insight.</strong> Audio data pervades our digital landscape, yet its potential remains largely untapped.</li>  <li><strong>Idea.</strong> Traditional methods of audio analysis have severe limitations.</li>  <li><strong>Impact.</strong> Businesses using Audio Analyser have seen a 50% reduction in time spent on audio data processing.</li>  <li><strong>Incentives.</strong> Audio Analyser delivers unparalleled efficiencies in audio data processing.</li></ul></aside><p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/modern-corporate-office-with-technological-displays.webp&w=1600&format=webp&q=85" alt="A minimalist, modern corporate office"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
-<hr />
-<blockquote>
-<p><strong>TL;DR.</strong> Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conversion, text analysis, and translations for actionable insights.</p>
-<p><strong>Concluzii cheie</strong></p>
-<ul>
-<li>DRAFT translation: this article is a Română stub generated from the English source. Body text is intentionally left in English until a native reviewer signs off.</li>
-<li>Source title: <em>AI-Powered Speech Analysis, Translation, &amp; Insight Tool</em>.</li>
-<li>Source subtitle: <em>Revolutionising audio data processing with Azure AI Platform</em>.</li>
-<li>Editorial note: replace this block with hand-translated copy before flipping <code>active=True</code> for ro in <code>scripts/_lang_registry.py</code>.</li>
-</ul>
-</blockquote>
-<hr />
-<!-- lead-start -->
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Cuprins</h2><ol><li><a href="#cum-functioneaza-audio-analyser-prezentare-generala-a-arhitecturii">Cum funcționează Audio Analyser: prezentare generală a arhitecturii</a></li><li><a href="#azure-cognitive-services-motorul-de-transcriere-batch">Azure Cognitive Services: motorul de transcriere batch</a></li><li><a href="#procesarea-limbajului-natural-cu-azure-ai-language">Procesarea limbajului natural cu Azure AI Language</a></li><li><a href="#suport-multilingv-prin-azure-translator">Suport multilingv prin Azure Translator</a></li><li><a href="#cherrypy-ca-strat-web">CherryPy ca strat web</a></li><li><a href="#intrebari-frecvente">Întrebări frecvente</a></li><li><a href="#referinte">Referințe</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Audio Analyser utilizează modele neuronale de vorbire Azure Cognitive Services, Text Analytics NLP și CherryPy pentru a converti înregistrări audio în transcrieri căutabile cu scoruri de sentiment, extragere de cuvinte cheie și traduceri multilingve.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Cum funcționează Audio Analyser: prezentare generală a arhitecturii.</strong> Conducta are cinci etape distincte:.</li>  <li><strong>Azure Cognitive Services: motorul de transcriere batch.</strong> Azure Speech service batch transcription API (/speechtotext/v3.0/transcriptions) acceptă o referință la un fișier audio din Azure Blob Storage și un corp JSON de configurare.</li>  <li><strong>Procesarea limbajului natural cu Azure AI Language.</strong> După transcriere, Audio Analyser trimite transcrierea în forma de afișare la Azure AI Language prin Python SDK azure-ai-textanalytics:.</li>  <li><strong>Suport multilingv prin Azure Translator.</strong> Azure Translator este invocat după detectarea limbii când utilizatorul solicită o limbă țintă.</li></ul></aside><!-- lead-start -->
 
 <!-- lead-end -->
-<p><a href="https://audioanalyser.co/" title="Unlock Actionable Insights from Audio Data to Enhance CX/EX"><strong>Audio Analyser ⧉</strong></a>, leveraging Microsoft Azure AI Platform, is redefining the landscape of audio data analysis. This tool offers advanced speech-to-text conversion, comprehensive text analysis, actionable insights and seamless translations, providing critical detailed analytics from audio data efficiently. It's an essential asset for sectors like market research, contact centers, customer service, healthcare, banking and finance, transforming the way we interpret and utilise audio information.</p>
-<p>In today's experience-driven market, the ability to quickly analyze customer audio data from calls, chats, voice mails and more has become essential for delivering exceptional support. With rising expectations, native speech analytics like <strong>Audio Analyser</strong> make the difference for companies aiming to retain customers and nurture lasting relationships.</p>
-<p>Powered by Microsoft Azure AI, <strong>Audio Analyser</strong> goes beyond basic transcription to uncover actionable insights from every service interaction. Its cutting-edge natural language capabilities instantly process over 100 languages, analyze text for sentiments and intents, and generate impactful metrics on critical touchpoints customers mention most.</p>
-<p>Industry leaders are already using these kinds of proactive speech analytics to drive tangible improvements. Shorter handle times, increased issue resolution rates, and most crucially, higher customer satisfaction scores. <strong>Audio Analyser</strong> enables businesses not just to keep pace, but to set new standards for customer engagement. By detecting needs faster, resolving problems smarter, and elevating interactions, it helps forge brand advocates that will stay for the long term.</p>
-<h2 id="insight">Insight <a class="heading-anchor" href="#insight" aria-label="Link către Insight">#</a></h2>
-<h3 id="the-untapped-potential-of-audio-data">The Untapped Potential of Audio Data <a class="heading-anchor" href="#the-untapped-potential-of-audio-data" aria-label="Link către The Untapped Potential of Audio Data">#</a></h3>
-<h4>The Importance of Audio Data in the Digital Age</h4>
-<p>Audio data pervades our digital landscape, yet its potential remains largely untapped. Consider that an estimated 93% of human communication is non-verbal, conveyed through tone, inflection and other audible cues. As AI capabilities advance, audio data represents an invaluable yet overlooked asset. The audio recognition market alone is burgeoning, projected to grow from $4.1 billion in 2021 to over $14.1 billion by 2030 according to the <a href="https://www.meticulousresearch.com/product/speech-analytics-market-5364">latest publication</a> from Meticulous Research®. This indicates a monumental shift towards finally harnessing audio data.</p>
-<p>Capabilities in speech recognition, speech analytics, voice biometrics and other areas could transform how businesses operate across sectors. However audio data analysis remains complex, often requiring time-intensive manual review. <strong>Audio Analyser</strong> represents a pioneering tool that is set to capitalize on this underutilized data layer. By efficiently converting raw audio into actionable insights, it promises to unlock new levels of speed and precision.</p>
-<h4>Audio Analyser: A Pioneering Tool</h4>
-<!-- ![A Powerful Audio Analytics Dashboard](https://cloudcdn.pro/clients/audioanalyser/v1/screenshots/dashboard.png).class=\"fade-in w-100\" -->
-<p>What elevates <strong>Audio Analyser</strong> beyond standard speech transcription software? The integration of Microsoft Azure's leading-edge AI unlocks far more nuanced analysis capabilities. Harnessing the latest machine learning algorithms, <strong>Audio Analyser</strong> delves deeply into speech patterns - not just converting words, but exploring subtleties like tone, emotion and underlying meanings.</p>
-<p>Its advanced natural language processing allows Audio Analyser to recognize linguistic connections and contextual references that humans might miss. By identifying key phrases, sentiment, intent and more, it generates insights many times more valuable than transcripts alone. Furthermore, its multilingual speech recognition and translation abilities open up possibilities for global application.</p>
-<h4>Key Features of Audio Analyser</h4>
-<!-- ![A Pioneering Suite of Tool](https://cloudcdn.pro/clients/audioanalyser/v1/screenshots/tools.png).class=\"fade-in w-100\" -->
+<blockquote>
+<p><strong>Rezumat executiv / Concluzii cheie</strong></p>
 <ul>
-<li><strong>Audio Recording</strong>: Easily record audio files and conversations.</li>
-<li><strong>Instant Transcription</strong>: Swiftly convert spoken language to text using Azure's speech-to-text service.</li>
-<li><strong>In-Depth Text Analysis</strong>: Dive deeper into your data with Azure’s text analytics service, uncovering sentiment, key information, and multi-faceted understanding.</li>
-<li><strong>Actionable Recommendations</strong>: Receive tailored suggestions based on your analysis results.</li>
-<li><strong>Multilingual Support</strong>: Includes support for a wide range of languages, providing global applicability.</li>
-<li><strong>Flexible Output Options</strong>: Choose from various formats like JSON, TXT, and SQLite for your analysis results.</li>
+<li><strong>Azure Batch Transcription API</strong> acceptă fișiere audio de până la 2,5 ore (WAV/MP3/OGG/FLAC), le procesează asincron și returnează un array JSON <code>recognizedPhrases</code> cu candidați <code>nBest</code> per frază, scoruri de încredere, ieșire normalizată invers (ITN) și diarizare opțională a vorbitorului — nu este necesară o conexiune în flux (Microsoft Azure, 2024).</li>
+<li><strong>Modelele acustice neuronale Microsoft</strong> au redus rata de eroare a cuvintelor cu aproximativ 50% față de bazele anterioare ale modelului Markov ascuns (HMM) pe benchmark-ul conversațional Switchboard, atingând paritatea cu transcriitorii umani profesioniști pe acel set de date la ~5,1% WER (Xiong et al., Microsoft Research, actualizare 2016/2021).</li>
+<li><strong>Azure Text Analytics</strong> (acum parte din Azure AI Language) procesează textul transcrierii prin extragerea frazelor cheie, recunoașterea entităților numite (NER), analiza sentimentului cu opinion mining și detectarea limbii — toate printr-un singur apel <code>analyze_sentiment</code> sau <code>begin_analyze_actions</code> folosind Python SDK.</li>
+<li><strong>CherryPy</strong> furnizează stratul web: rutarea URL, gestionarea încărcărilor multipart, managementul sesiunilor și randarea șabloanelor Jinja2 într-un proces Python minimal care poate rula pe o singură VM de cost redus fără overhead de orchestrare.</li>
+<li><strong>Azure Translator NMT</strong> detectează automat limba sursă și traduce transcrierile în oricare dintre cele 135 de limbi țintă, permițând analiza NLP în aval atât pe textul original, cât și pe cel tradus în cadrul aceluiași rulaj al conductei.</li>
 </ul>
-<p>As the world becomes more reliant on voice search, audio data and verbal exchanges, tools like <strong>Audio Analyser</strong> that can efficiently process and decode this information are increasingly vital. Both private and public sector organizations are only just beginning to tap into this analytical potential.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
-<h2 id="idea">Idea <a class="heading-anchor" href="#idea" aria-label="Link către Idea">#</a></h2>
-<h3 id="enriching-audio-data-processing">Enriching Audio Data Processing <a class="heading-anchor" href="#enriching-audio-data-processing" aria-label="Link către Enriching Audio Data Processing">#</a></h3>
-<h4>Traditional vs AI-Driven Audio Analysis</h4>
-<p>Traditional methods of audio analysis have severe limitations. Manual transcription is time-intensive, taking up to 10 hours to process a single hour of audio. It is also prone to errors and inaccuracies that can misconstrue meaning. Even widespread speech-to-text software often fails to capture context, subtle emotions, sarcasm and intent.</p>
-<p>By contrast, <strong>Audio Analyser</strong> exemplifies a new paradigm - using the power of artificial intelligence for enhanced audio data processing. Its AI-driven approach applies advanced speech recognition, natural language understanding and machine learning algorithms to ensure higher precision analysis with less manual effort.</p>
-<p>While human review still has value, technology like <strong>Audio Analyser</strong> gives organizations the ability to rapidly process volumes of audio data. The automated transcripts it produces not only have higher overall accuracy of up to 99%, but more importantly, capture deeper linguistic insights. With efficiencies over 10 times faster than manual efforts, it enables genuinely scalable audio analytics.</p>
-<h4>The Role of Microsoft Azure AI Platform</h4>
-<p>Behind <strong>Audio Analyser</strong>'s capabilities is the cutting-edge AI of Microsoft Azure, leveraging the latest innovations in machine learning. Azure AI Platform equips the solution with highly sophisticated speech models that continually learn and optimize to reflect real-world language nuances.</p>
-<p>Key Azure services powering <strong>Audio Analyser</strong> include speech-to-text functionality using neural networks, natural language processing to decode text, and algorithms that identify emotional sentiment or intent. Thousand of hours of training data ensure accurate recognition of industry jargon, regional dialects and conversational voice.</p>
-<p>These flexible, enterprise-grade Azure AI Platform building blocks allow <strong>Audio Analyser</strong> to offer secure and reliable audio analysis tailored to each customer's needs. Whether creating meeting minutes, reviewing calls, or indexing podcast archives - the platform's evolving algorithms adeptly handle context, subjectivity and subtleties to uncover insights hidden within audio data.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
-<h2 id="impact">Impact <a class="heading-anchor" href="#impact" aria-label="Link către Impact">#</a></h2>
-<h3 id="transforming-industries-with-advanced-analysis">Transforming Industries with Advanced Analysis <a class="heading-anchor" href="#transforming-industries-with-advanced-analysis" aria-label="Link către Transforming Industries with Advanced Analysis">#</a></h3>
-<h4>Case Studies in Various Industries</h4>
+</blockquote>
+<p><a href="https://audioanalyser.co/" title="Audio Analyser — instrument de analiză vocală bazat pe Azure"><strong>Audio Analyser ⧉</strong></a> este o aplicație Python open-source care conectează trei Azure Cognitive Services într-un singur flux de lucru: Batch Transcription pentru speech-to-text, Azure AI Language (Text Analytics) pentru NLP și Azure Translator pentru ieșire multilingvă. Interfața web este deservită de CherryPy, iar rezultatele pot fi persistate în JSON, text simplu sau o bază de date SQLite locală.</p>
+<p>Acest articol descrie arhitectura tehnică a fiecărei etape a conductei, contractele Azure API și deciziile de proiectare luate în stratul CherryPy.</p>
+<h2 id="cum-functioneaza-audio-analyser-prezentare-generala-a-arhitecturii">Cum funcționează Audio Analyser: prezentare generală a arhitecturii <a class="heading-anchor" href="#cum-functioneaza-audio-analyser-prezentare-generala-a-arhitecturii" aria-label="Link către Cum funcționează Audio Analyser: prezentare generală a arhitecturii">#</a></h2>
+<p>Conducta are cinci etape distincte:</p>
+<ol>
+<li><strong>Încărcare</strong> — utilizatorul trimite un fișier audio prin interfața web CherryPy. CherryPy stochează fișierul într-un director temporar și returnează un ID de job.</li>
+<li><strong>Transcriere</strong> — Audio Analyser trimite fișierul la Azure Batch Transcription REST API. Deoarece transcrierea batch este asincronă, aplicația interogează periodic endpoint-ul de status al job-ului și așteaptă starea <code>Succeeded</code> înainte de a continua.</li>
+<li><strong>NLP</strong> — textul brut al transcrierii este transmis la Azure AI Language pentru extragerea frazelor cheie, NER, analiza sentimentului și detectarea limbii.</li>
+<li><strong>Traducere</strong> (opțional) — dacă este specificată o limbă țintă, transcrierea este trimisă la Azure Translator, iar analiza NLP este re-rulată pe textul tradus.</li>
+<li><strong>Ieșire</strong> — rezultatele sunt scrise în formatul de ieșire selectat (JSON, TXT sau SQLite) și randate în interfața web CherryPy.</li>
+</ol>
+<p>Singurele dependențe de rulare din afara bibliotecii standard Python sunt <code>azure-cognitiveservices-speech</code>, <code>azure-ai-textanalytics</code>, <code>azure-ai-translation-text</code> și <code>cherrypy</code>. Toate credențialele Azure sunt citite din variabilele de mediu.</p>
+<h2 id="azure-cognitive-services-motorul-de-transcriere-batch">Azure Cognitive Services: motorul de transcriere batch <a class="heading-anchor" href="#azure-cognitive-services-motorul-de-transcriere-batch" aria-label="Link către Azure Cognitive Services: motorul de transcriere batch">#</a></h2>
+<p>Azure Speech service batch transcription API (<code>/speechtotext/v3.0/transcriptions</code>) acceptă o referință la un fișier audio din Azure Blob Storage și un corp JSON de configurare. Audio Analyser încarcă fișierul local în Blob Storage folosind un SAS URL pre-semnat, apoi trimite job-ul de transcriere.</p>
+<p>Un payload minim de trimitere a job-ului:</p>
+<pre><code class="language-json">{
+  &quot;contentUrls&quot;: [&quot;https://&lt;account&gt;.blob.core.windows.net/&lt;container&gt;/&lt;file&gt;.wav?&lt;sas&gt;&quot;],
+  &quot;locale&quot;: &quot;en-US&quot;,
+  &quot;displayName&quot;: &quot;audio-analyser-job-001&quot;,
+  &quot;properties&quot;: {
+    &quot;diarizationEnabled&quot;: true,
+    &quot;wordLevelTimestampsEnabled&quot;: true,
+    &quot;punctuationMode&quot;: &quot;DictatedAndAutomatic&quot;,
+    &quot;profanityFilterMode&quot;: &quot;Masked&quot;
+  }
+}
+</code></pre>
+<p>Array-ul <code>recognizedPhrases</code> din răspuns conține un obiect per enunț recunoscut. Fiecare intrare include:</p>
 <ul>
-<li><strong>Market Research</strong>: Audio Analyser offers a transformative approach to market research by delivering advanced analysis for actionable insights.</li>
-<li><strong>Customer Service</strong>: It proves invaluable in customer service, providing insights when analyzing audio data from service calls.</li>
-<li><strong>Healthcare</strong>: In medical consultations, Audio Analyser serves healthcare professionals by offering valuable insights.</li>
-<li><strong>Education</strong>: It can analyze audio data from lectures and meetings, benefiting students and professionals.</li>
-<li><strong>Finance</strong>: Similarly, it can be applied to financial transactions, offering valuable insights to financial institutions.</li>
+<li><code>nBest[0].confidence</code> — număr flotant între 0 și 1</li>
+<li><code>nBest[0].lexical</code> — cuvintele brute așa cum au fost rostite</li>
+<li><code>nBest[0].itn</code> — forma normalizată invers (numere, date, valute expandate)</li>
+<li><code>nBest[0].display</code> — formatat pentru citire, cu punctuație</li>
+<li><code>speaker</code> — ID întreg al vorbitorului când diarizarea este activată</li>
 </ul>
-<h4>Quantitative Benefits</h4>
-<p>Businesses using <strong>Audio Analyser</strong> have seen a 50% reduction in time spent on audio data processing. This efficiency gain translates into significant cost savings and faster decision-making.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
-<h2 id="incentives">Incentives <a class="heading-anchor" href="#incentives" aria-label="Link către Incentives">#</a></h2>
-<h3 id="why-choose-audio-analyser">Why Choose Audio Analyser <a class="heading-anchor" href="#why-choose-audio-analyser" aria-label="Link către Why Choose Audio Analyser">#</a></h3>
-<h4>Efficiency and Time-Saving</h4>
-<p><strong>Audio Analyser</strong> delivers unparalleled efficiencies in audio data processing. Its automated speech recognition and natural language capabilities analyze raw audio up to 10 times faster than manual methods. This significantly reduces the time and effort needed to extract usable insights.</p>
-<p>Consider what this means for common audio analysis needs:</p>
-<ul>
-<li>Meeting transcription that once required 6 hours of work now finishes in under 30 minutes.</li>
-<li>Days spent reviewing customer call logs is reduced to just hours using broad pattern recognition.</li>
-<li>Entire podcast archives can be rapidly indexed and searched based on spoken content.</li>
-<li>By handling time-intensive transcription and analysis workloads, <strong>Audio Analyser</strong> gives back valuable time to focus on higher-priority initiatives. Its automation enables organizations to scale audio data processing at a pace and volume not otherwise feasible.</li>
-</ul>
-<h4>Depth of Analysis and User-Friendliness</h4>
-<p><strong>Audio Analyser</strong> stands out not only in the efficiency of its audio conversion, but the meaningful insights it generates. The integrated machine learning goes beyond speech-to-text to consider tone, sentiment, keywords in content and relationships between them.</p>
-<p>The solution produces organized, digestible analytic reporting available through an intuitive web interface. This readily consumable format, paired with customizable dashboards, reduces another pain point organizations face in leveraging audio data. Leadership can zero in on trends, monitor metrics and share findings across teams.</p>
-<p>In effect, <strong>Audio Analyser</strong> is reinventing what's possible for audio data utilization. Its secure Azure backend combined with simplified analysis gives companies an easier way to capitalize on this underused asset. It turns previously idle audio content into searchable records and mineable data - enabling smarter, faster decisions.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
-<h2 id="technical-foundation-built-on-solid-ground">Technical Foundation - Built on Solid Ground <a class="heading-anchor" href="#technical-foundation-built-on-solid-ground" aria-label="Link către Technical Foundation - Built on Solid Ground">#</a></h2>
-<h3 id="azure-s-ai-s-role-in-precise-analysis">Azure's AI's Role in Precise Analysis <a class="heading-anchor" href="#azure-s-ai-s-role-in-precise-analysis" aria-label="Link către Azure's AI's Role in Precise Analysis">#</a></h3>
-<p>The advanced artificial intelligence within Microsoft Azure is the driving force behind <strong>Audio Analyser</strong>'s capabilities. Azure's speech services and natural language processing integrate machine learning models trained on thousands of hours of data.</p>
-<p><img src="https://cloudcdn.pro/api/transform?url=/stocks/diagrams/audio-analyser-architecture-topaz.webp&w=1600&format=webp&q=80" alt="The Audio Analyser Architecture"  width="1200" height="800" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
-<p>This industrial-strength technology ensures the highest levels of accuracy in transcription and analysis. Backed by strong data privacy standards, Azure provides a secure, enterprise-ready foundation.</p>
-<p>Specifically, <strong>Audio Analyser</strong> taps into leading Azure cognitive services for:</p>
-<ul>
-<li>Speech-to-text conversion using neural network algorithms</li>
-<li>Natural language understanding to interpret text</li>
-<li>Sentiment analysis determining emotional tone</li>
-<li>Anomaly detection finding abnormalities</li>
-<li>Custom speech recognition tailored to unique words/phrases</li>
-</ul>
-<p>On top of Azure's capabilities, <strong>Audio Analyser</strong> builds further logic around audio insight generation. The CherryPy web framework adds structured presentation of this meaningful data. Tables, filters and custom views make it simple for non-technical users to navigate audio intelligence.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
-<p><a href="https://audioanalyser.co/" title="Unlock Actionable Insights from Audio Data to Enhance CX/EX"><strong>Audio Analyser ⧉</strong></a> unlocks an integrated approach to tapping value within audio data. Backed by industrial-strength Microsoft Azure AI Platform for security and precision, it makes speech-based insights more accessible through automation and simplified delivery.</p>
-<p>Whether generating meeting minutes, reviewing calls, searching podcast archives or otherwise harnessing audio content, this pioneering tool opens new possibilities. The depth of analysis and intuitiveness it offers are helping leading organizations optimize audio utility to an unprecedented degree.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
-<aside class="author-card" aria-label="Despre autor"><img alt="Portretul lui Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/ro/despre/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tehnolog bancar senior; scriu despre IA aplicată, migrarea la ISO 20022, criptografie post-cuantică pentru serviciile financiare și transformarea structurală a plăților wholesale.</span><span class="author-credentials">Peste 20 de ani de experiență în HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/ro/despre/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Ultima revizuire <time datetime="2026-05-22">2026-05-22</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<p>Ajustarea fină <strong>Custom Speech</strong> este disponibilă pentru vocabularul specific domeniului. Încărcarea unui lexicon de pronunție sau a unui corpus de adaptare (un set de propoziții text reprezentative pentru domeniu) ajustează modelul de limbă și poate reduce substanțial WER pentru conținut specializat, cum ar fi termeni financiari sau jargon medical.</p>
+<h2 id="procesarea-limbajului-natural-cu-azure-ai-language">Procesarea limbajului natural cu Azure AI Language <a class="heading-anchor" href="#procesarea-limbajului-natural-cu-azure-ai-language" aria-label="Link către Procesarea limbajului natural cu Azure AI Language">#</a></h2>
+<p>După transcriere, Audio Analyser trimite transcrierea în forma de afișare la Azure AI Language prin Python SDK <code>azure-ai-textanalytics</code>:</p>
+<pre><code class="language-python">from azure.ai.textanalytics import TextAnalyticsClient
+from azure.core.credentials import AzureKeyCredential
+
+client = TextAnalyticsClient(
+    endpoint=os.environ[&quot;AZURE_LANGUAGE_ENDPOINT&quot;],
+    credential=AzureKeyCredential(os.environ[&quot;AZURE_LANGUAGE_KEY&quot;])
+)
+
+documents = [{&quot;id&quot;: &quot;1&quot;, &quot;language&quot;: detected_lang, &quot;text&quot;: transcript}]
+
+sentiment_result = client.analyze_sentiment(documents, show_opinion_mining=True)
+for doc in sentiment_result:
+    print(f&quot;Sentiment: {doc.sentiment}&quot;)
+    print(f&quot;Scores: pos={doc.confidence_scores.positive:.2f} &quot;
+          f&quot;neg={doc.confidence_scores.negative:.2f} &quot;
+          f&quot;neu={doc.confidence_scores.neutral:.2f}&quot;)
+    for sentence in doc.sentences:
+        for opinion in sentence.mined_opinions:
+            print(f&quot;  Target: {opinion.target.text}, &quot;
+                  f&quot;Assessment: {[a.text for a in opinion.assessments]}&quot;)
+
+keyphrases_result = client.extract_key_phrases(documents)
+entities_result  = client.recognize_entities(documents)
+</code></pre>
+<p><code>show_opinion_mining=True</code> activează sentimentul la nivel de aspect: API-ul returnează nu doar polaritatea la nivel de document, ci și perechi specifice țintă–evaluare (de ex., țintă=&quot;calitate audio&quot;, evaluare=&quot;slabă&quot;). Aceasta face ieșirea utilă pentru identificarea problemelor concrete în analiza apelurilor serviciului clienți.</p>
+<p>Recunoașterea entităților numite clasifică fragmentele ca una dintre: <code>Person</code>, <code>Organization</code>, <code>Location</code>, <code>Event</code>, <code>Product</code>, <code>DateTime</code>, <code>Quantity</code>, <code>IP</code>, <code>URL</code>, <code>Email</code>, <code>PersonType</code>, <code>Skill</code>, <code>Address</code>, <code>PhoneNumber</code>.</p>
+<h2 id="suport-multilingv-prin-azure-translator">Suport multilingv prin Azure Translator <a class="heading-anchor" href="#suport-multilingv-prin-azure-translator" aria-label="Link către Suport multilingv prin Azure Translator">#</a></h2>
+<p>Azure Translator este invocat după detectarea limbii când utilizatorul solicită o limbă țintă. Serviciul suportă 135 de limbi și dialecte cu traducere automată neurală (NMT). Audio Analyser folosește endpoint-ul REST <code>/translate</code> cu <code>autodetect</code> ca parametru <code>from</code>, astfel încât nu este necesară specificarea limbii sursă:</p>
+<pre><code class="language-python">import requests, uuid
+
+url = &quot;https://api.cognitive.microsofttranslator.com/translate&quot;
+params = {&quot;api-version&quot;: &quot;3.0&quot;, &quot;to&quot;: target_lang}
+headers = {
+    &quot;Ocp-Apim-Subscription-Key&quot;: os.environ[&quot;AZURE_TRANSLATOR_KEY&quot;],
+    &quot;Ocp-Apim-Subscription-Region&quot;: os.environ[&quot;AZURE_TRANSLATOR_REGION&quot;],
+    &quot;Content-type&quot;: &quot;application/json&quot;,
+    &quot;X-ClientTraceId&quot;: str(uuid.uuid4())
+}
+body = [{&quot;text&quot;: transcript}]
+response = requests.post(url, params=params, headers=headers, json=body)
+translated_text = response.json()[0][&quot;translations&quot;][0][&quot;text&quot;]
+detected_language = response.json()[0][&quot;detectedLanguage&quot;][&quot;language&quot;]
+</code></pre>
+<p>După traducere, Audio Analyser re-rulează opțional pasul NLP Text Analytics pe textul tradus, astfel încât ieșirile de fraze cheie și sentiment sunt disponibile atât în limba sursă, cât și în cea țintă.</p>
+<p>Selecția formatului de ieșire (JSON, TXT, SQLite) este setată la pornire. Ieșirea SQLite stochează fiecare sesiune de analiză ca un rând cu coloane pentru ID job, marcaj temporal, limbă sursă, transcriere, transcriere tradusă, scoruri de sentiment și fraze cheie ca blob JSON — permițând interogări SQL între sesiuni.</p>
+<h2 id="cherrypy-ca-strat-web">CherryPy ca strat web <a class="heading-anchor" href="#cherrypy-ca-strat-web" aria-label="Link către CherryPy ca strat web">#</a></h2>
+<p>CherryPy mapează rutele URL la metodele Python folosind controlere bazate pe clase. Audio Analyser folosește trei rute:</p>
+<table>
+<thead>
+<tr>
+<th>Rută</th>
+<th>Metodă</th>
+<th>Descriere</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GET /</code></td>
+<td><code>index()</code></td>
+<td>Randează formularul de încărcare</td>
+</tr>
+<tr>
+<td><code>POST /analyse</code></td>
+<td><code>analyse()</code></td>
+<td>Acceptă încărcare multipart, declanșează conducta, returnează ID job</td>
+</tr>
+<tr>
+<td><code>GET /results/&lt;job_id&gt;</code></td>
+<td><code>results()</code></td>
+<td>Interogează statusul job-ului; randează pagina de rezultate când este completă</td>
+</tr>
+</tbody>
+</table>
+<p>Configurația minimă menține amprenta serverului mică:</p>
+<pre><code class="language-python">import cherrypy
+
+cherrypy.config.update({
+    &quot;server.socket_host&quot;: &quot;0.0.0.0&quot;,
+    &quot;server.socket_port&quot;: 8080,
+    &quot;tools.sessions.on&quot;: True,
+    &quot;tools.sessions.timeout&quot;: 60
+})
+cherrypy.quickstart(AudioAnalyserApp(), &quot;/&quot;, conf)
+</code></pre>
+<p>Starea sesiunii deține ID-ul job-ului curent, formatul de ieșire selectat și limba țintă de traducere. Stocarea sesiunilor încorporată în CherryPy este susținută de fișiere implicit, fără a necesita un strat extern de cache.</p>
+<h2 id="intrebari-frecvente">Întrebări frecvente <a class="heading-anchor" href="#intrebari-frecvente" aria-label="Link către Întrebări frecvente">#</a></h2>
+<p><strong>Ce formate audio și dimensiuni de fișiere acceptă Audio Analyser?</strong>
+Azure Batch Transcription API suportă fișiere WAV, MP3, OGG și FLAC cu o durată de până la 2,5 ore. Fișierele în afara acestui interval trebuie împărțite înainte de încărcare. Fișierele stereo sunt acceptate; conversia la mono nu este necesară.</p>
+<p><strong>Cum funcționează diarizarea vorbitorului?</strong>
+Setarea <code>diarizationEnabled: true</code> în cererea de transcriere batch activează modelul de separare a vorbitorului Azure. Fiecare <code>recognizedPhrase</code> din răspuns include un câmp întreg <code>speaker</code>. Modelul identifică vorbitorii prin caracteristici acustice și atribuie ID-uri consistente în cadrul unei sesiuni, dar nu identifică cine sunt vorbitorii fără un pas separat de înregistrare a profilului vocal.</p>
+<p><strong>Sunt păstrate fișierele audio după transcriere?</strong>
+Fișierele audio sunt încărcate în Azure Blob Storage cu un SAS URL de scurtă durată și șterse din directorul temporar local după finalizarea încărcării. Păstrarea blob-urilor în Azure Blob Storage depinde de politica ciclului de viață a containerului; implicit, Audio Analyser nu setează o politică explicită de ștergere, deci configurarea unei reguli TTL scurte (de ex., ștergere blob-uri mai vechi de 1 zi) în portalul Azure este recomandată pentru implementările de producție.</p>
+<p><strong>Poate analiza NLP să fie rulată fără traducere?</strong>
+Da. Traducerea este o etapă opțională a conductei controlată de indicatorul CLI <code>--target-lang</code> sau meniul derulant al limbii țintă din interfața web. Când nu este selectată nicio limbă țintă, conducta rulează doar speech-to-text și Text Analytics.</p>
+<h2 id="referinte">Referințe <a class="heading-anchor" href="#referinte" aria-label="Link către Referințe">#</a></h2>
+<ol>
+<li>Microsoft. <em>Batch transcription overview — Azure AI services</em>. Microsoft Learn, 2024. <a href="https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-transcription">https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-transcription</a></li>
+<li>Xiong, W. et al. &quot;Achieving Human Parity in Conversational Speech Recognition.&quot; <em>Microsoft Research Technical Report</em>, 2016; updated 2021. <a href="https://arxiv.org/abs/1610.05256">https://arxiv.org/abs/1610.05256</a></li>
+<li>Microsoft. <em>What is Azure AI Language?</em> Microsoft Learn, 2024. <a href="https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview">https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview</a></li>
+<li>Microsoft. <em>Azure AI Translator — Supported languages</em>. Microsoft Learn, 2024. <a href="https://learn.microsoft.com/en-us/azure/ai-services/translator/language-support">https://learn.microsoft.com/en-us/azure/ai-services/translator/language-support</a></li>
+</ol>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Ultima revizuire <time datetime="2026-05-24">2026-05-24</time>.</p>
+
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Despre autor"><img alt="Portretul lui Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/ro/despre/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tehnolog bancar senior; scriu despre IA aplicată, migrarea la ISO 20022, criptografie post-cuantică pentru serviciile financiare și transformarea structurală a plăților wholesale.</span><span class="author-credentials">Peste 20 de ani de experiență în HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/ro/despre/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Ultima revizuire <time datetime="2026-05-28">2026-05-28</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Lecturi conexe</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/ro/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html" class="related-media" aria-label="Generative AI in Advertising: Amazon Rufus & Meta" tabindex="-1"><img alt="A robotic woman with butterflies and flowers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/advertising-ai.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="generative-ai-in-advertising-amazon-rufus-meta"><a href="https://sebastienrousseau.com/ro/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html">Generative AI in Advertising: Amazon Rufus & Meta</a> <a class="heading-anchor" href="#generative-ai-in-advertising-amazon-rufus-meta" aria-label="Link către Generative AI in Advertising: Amazon Rufus & Meta">#</a></h3><p><time datetime="2024-02-08">2024-02-08</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/ro/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html" class="related-media" aria-label="EU's AI Act: Pioneering Ethical AI Regulation Worldwide" tabindex="-1"><img alt="A person sitting on black bench reading newspaper" src="https://cloudcdn.pro/api/transform?url=/stocks/images/ryoji-iwata-a-qsFZimp1M.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="eu-s-ai-act-pioneering-ethical-ai-regulation-worldwide"><a href="https://sebastienrousseau.com/ro/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a> <a class="heading-anchor" href="#eu-s-ai-act-pioneering-ethical-ai-regulation-worldwide" aria-label="Link către EU's AI Act: Pioneering Ethical AI Regulation Worldwide">#</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/ro/2024-01-23-advancements-in-ai-prompt-engineering/index.html" class="related-media" aria-label="AI Prompt Engineering 2024: Techniques That Work" tabindex="-1"><img alt="A man analysing data on screens" src="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-prompt-engineering-modern-office.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-prompt-engineering-2024-techniques-that-work"><a href="https://sebastienrousseau.com/ro/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a> <a class="heading-anchor" href="#ai-prompt-engineering-2024-techniques-that-work" aria-label="Link către AI Prompt Engineering 2024: Techniques That Work">#</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ro/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html" class="related-media" aria-label="Advancing AI with Multimodal LLMs: Insights from MM1" tabindex="-1"><img alt="Banner for the Apple MM1" src="https://cloudcdn.pro/api/transform?url=/stocks/images/mm1-visual.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="advancing-ai-with-multimodal-llms-insights-from-mm1"><a href="https://sebastienrousseau.com/ro/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html">Advancing AI with Multimodal LLMs: Insights from MM1</a> <a class="heading-anchor" href="#advancing-ai-with-multimodal-llms-insights-from-mm1" aria-label="Link către Advancing AI with Multimodal LLMs: Insights from MM1">#</a></h3><p><time datetime="2024-03-18">2024-03-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ro/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html" class="related-media" aria-label="Le Chat by Mistral AI: Multilingual Conversational AI" tabindex="-1"><img alt="Colourful, abstract digital art of a cat" src="https://cloudcdn.pro/api/transform?url=/stocks/images/abstract-digital-art-of-a-cat.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="le-chat-by-mistral-ai-multilingual-conversational-ai"><a href="https://sebastienrousseau.com/ro/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html">Le Chat by Mistral AI: Multilingual Conversational AI</a> <a class="heading-anchor" href="#le-chat-by-mistral-ai-multilingual-conversational-ai" aria-label="Link către Le Chat by Mistral AI: Multilingual Conversational AI">#</a></h3><p><time datetime="2024-03-04">2024-03-04</time></p></footer></article>
 </div>
-</aside><nav class="post-pagination" aria-label="Paginare articol"><a class="post-pagination-prev" href="/ro/2024-01-23-advancements-in-ai-prompt-engineering/"><span class="post-pagination-label">Anterior</span><span class="post-pagination-title">AI Prompt Engineering 2024: Techniques That Work</span></a><a class="post-pagination-next" href="/ro/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/"><span class="post-pagination-label">Următor</span><span class="post-pagination-title">Generative AI in Advertising: Amazon Rufus & Meta</span></a></nav></div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Surse și referințe</h2><ol class="article-sources-list"><li><a href="https://arxiv.org/abs/1610.05256" rel="external noopener nofollow"><span class="source-host">arxiv.org</span><span class="source-path">/abs/1610.05256</span></a></li></ol></aside><nav class="post-pagination" aria-label="Paginare articol"><a class="post-pagination-prev" href="/ro/2024-01-23-advancements-in-ai-prompt-engineering/"><span class="post-pagination-label">Anterior</span><span class="post-pagination-title">AI Prompt Engineering 2024: Techniques That Work</span></a><a class="post-pagination-next" href="/ro/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/"><span class="post-pagination-label">Următor</span><span class="post-pagination-title">Generative AI in Advertising: Amazon Rufus & Meta</span></a></nav></div>
     </main>
 
 <!-- gen-layouts:footer-start -->
@@ -349,7 +407,7 @@
     <!-- Schema.org structured data -->
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ro"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ro"}]}</script>
 
-        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1647,"headline":"AI-Powered Speech Analysis, Translation, & Insight Tool","description":"Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conversion, text analysis, and translations for actionable insights.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp","width":"100vw","height":"100vh","caption":"A minimalist, modern corporate office"},"url":"https://sebastienrousseau.com/ro/2024-01-29-ai-powered-audio-insights-analysis-translations/","datePublished":"2024-01-29T05:06:06+00:00","dateModified":"2026-05-11","inLanguage":"ro","keywords":"audio analyser, azure ai, speech-to-text, audio data analysis, text analysis, ai translations, audio insights, automated transcription, audio data processing, machine learning","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ro/2024-01-29-ai-powered-audio-insights-analysis-translations/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ro"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ro/"},{"@type":"ListItem","position":3,"name":"AI-Powered Speech Analysis, Translation, & Insight Tool","item":"https://sebastienrousseau.com/ro/2024-01-29-ai-powered-audio-insights-analysis-translations/"}]}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1372,"about":{"@type":"Thing","name":"Python","sameAs":["https://en.wikipedia.org/wiki/Python_(programming_language)","https://www.wikidata.org/wiki/Q28865"]},"headline":"Audio Analyser: Azure Speech, NLP, and Translation Pipeline","description":"Audio Analyser utilizează modele neuronale de vorbire Azure Cognitive Services, Text Analytics NLP și CherryPy pentru a converti înregistrări audio în transcrieri căutabile cu scoruri de sentiment, extragere de cuvinte cheie și traduceri multilingve.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp","width":"100vw","height":"100vh","caption":"Un birou corporativ modern și minimalist"},"url":"https://sebastienrousseau.com/ro/2024-01-29-ai-powered-audio-insights-analysis-translations/","datePublished":"2024-01-29T05:06:06+00:00","dateModified":"2026-05-24","inLanguage":"ro","keywords":"Azure Cognitive Services, conversie vorbire în text, model acustic neural, Azure Text Analytics, procesare limbaj natural, analiză sentiment, CherryPy, API transcriere în lot, ASR multilingv, Azure Translator, transcriere audio, procesare audio Python","articleSection":"AI","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ro/2024-01-29-ai-powered-audio-insights-analysis-translations/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ro"},"citation":[{"@type":"CreativeWork","url":"https://arxiv.org/abs/1610.05256"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ro/"},{"@type":"ListItem","position":3,"name":"Audio Analyser: Azure Speech, NLP, and Translation Pipeline","item":"https://sebastienrousseau.com/ro/2024-01-29-ai-powered-audio-insights-analysis-translations/"}]}]}</script>
 <script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
   
 <!-- SSG Search Widget -->
@@ -375,5 +433,5 @@
 </div>
 <script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
 </div>
-</body>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Audio Analyser: Azure Speech, NLP, and Translation Pipeline","url":"https://sebastienrousseau.com/ro/2024-01-29-ai-powered-audio-insights-analysis-translations/","inLanguage":"ro-RO","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"Azure Cognitive Services, conversie vorbire în text, model acustic neural, Azure Text Analytics, procesare limbaj natural, analiză sentiment, CherryPy, API transcriere în lot, ASR multilingv, Azure Translator, transcriere audio, procesare audio Python","programmingLanguage":"Python"}</script></body>
 </html>

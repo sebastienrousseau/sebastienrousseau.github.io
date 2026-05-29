@@ -1,13 +1,13 @@
 ---
 title: "[ID DRAFT] Streamlining Rust Library Development with Code Generation"
-subtitle: "LibMake: a Rust code generator that enforces best practices from day one."
-description: "Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort."
+subtitle: "LibMake: pembuat kode Rust yang menerapkan praktik terbaik sejak hari pertama."
+description: "Tingkatkan pengembangan pustaka Rust dengan LibMake: alat pembuat kode yang menerapkan praktik terbaik dan menghasilkan kode awal, sehingga menghemat waktu dan tenaga para pengembang."
 date: "Oct 26, 2023"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp"
-banner_alt: "Giant white pillars"
-keywords: "Rust, library, development, code, generator, boilerplate, best, practices, quality, reliable"
+banner_alt: "Pilar-pilar putih raksasa"
+keywords: "Rust, pustaka, pengembangan, kode, generator, boilerplate, praktik, terbaik, kualitas, andal"
 ---
 
 ![Giant white pillars](https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp).class=\"img-fluid clearfix\"

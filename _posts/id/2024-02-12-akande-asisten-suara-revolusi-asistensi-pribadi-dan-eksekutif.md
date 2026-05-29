@@ -1,13 +1,13 @@
 ---
 title: "[ID DRAFT] Àkàndé: GPT-Powered Voice Assistant for Executives"
-subtitle: "Empowering Seamless Interactions with Cutting-Edge AI Technology"
-description: "Discover how Àkàndé leverages OpenAI GPT's natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance."
+subtitle: "Memberdayakan Interaksi Tanpa Hambatan dengan Teknologi AI Mutakhir"
+description: "Temukan bagaimana Àkàndé memanfaatkan pemahaman bahasa alami OpenAI GPT, ringkasan PDF, dan caching efisien untuk mendefinisikan ulang bantuan personal dan eksekutif."
 date: "Feb 12, 2024"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp"
-banner_alt: "A white, spherical modern device"
-keywords: "Àkàndé, Voice Assistant, Natural Language Understanding, PDF Summaries, Efficient Caching, OpenAI GPT, Executive Assistance, Personal Assistance, Digital Assistants, Technology Innovation"
+banner_alt: "Perangkat modern berbentuk bulat berwarna putih"
+keywords: "Àkàndé, Asisten Suara, Pemahaman Bahasa Alami, Ringkasan PDF, Caching Efisien, OpenAI GPT, Bantuan Eksekutif, Bantuan Personal, Asisten Digital, Inovasi Teknologi"
 ---
 
 ![A white, spherical modern device](https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp).class=\"img-fluid clearfix\"

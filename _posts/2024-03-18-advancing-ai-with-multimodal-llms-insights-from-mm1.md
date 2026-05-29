@@ -58,7 +58,7 @@ news_title: "Advancing AI with Multimodal LLMs: Insights from MM1"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/rss.xml"
-category: "Technology"
+category: "AI"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Explore Apple's MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials."
@@ -120,7 +120,7 @@ last_reviewed: "2026-05-11"
   <li><strong>Key Findings and Insights.</strong> The MM1 study yielded several groundbreaking insights that have shaped our understanding of MLLMs and their potential.</li>
   <li><strong>MM1 Model Architecture and Multimodal Learning Process.</strong> The diagram illustrates the architecture and learning process of the MM1 model.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html">Generative AI in 2023: How It Works, Where It Lands</a>, <a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html">Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</a>, <a href="https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html">Quantum Algorithm Challenges Lattice-Based Cryptography</a>.</p>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html">Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</a>, <a href="https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html">Quantum Algorithm Challenges Lattice-Based Cryptography</a>, <a href="https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html">Fully Homomorphic Encryption (FHE) in a Banking Quantum Era</a>.</p>
 </aside>
 <!-- lead-end -->
 
@@ -209,13 +209,13 @@ To learn more about the groundbreaking MM1 study and explore the fascinating wor
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-22">2026-05-22</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-28">2026-05-28</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html" class="related-media" aria-label="Generative AI in 2023: How It Works, Where It Lands" tabindex="-1"><img alt="AI, Artificial Intelligence concept,3d rendering,conceptual image" src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html">Generative AI in 2023: How It Works, Where It Lands</a></h3><p><time datetime="2023-11-12">2023-11-12</time></p></footer></article>
 <article class="related-card"><a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html" class="related-media" aria-label="Lucy's Flash Drive Revisited: AI, Quantum & Knowledge" tabindex="-1"><img alt="Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles" src="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html">Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</a></h3><p><time datetime="2026-05-11">2026-05-11</time></p></footer></article>
 <article class="related-card"><a href="https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html" class="related-media" aria-label="Quantum Algorithm Challenges Lattice-Based Cryptography" tabindex="-1"><img alt="Banner of Network nodes in a digital blue space" src="https://cloudcdn.pro/stocks/images/digital-constellation.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html">Quantum Algorithm Challenges Lattice-Based Cryptography</a></h3><p><time datetime="2024-04-15">2024-04-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html" class="related-media" aria-label="Fully Homomorphic Encryption (FHE) in a Banking Quantum Era" tabindex="-1"><img alt="Banner for the Fully Homomorphic Encryption" src="https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html">Fully Homomorphic Encryption (FHE) in a Banking Quantum Era</a></h3><p><time datetime="2024-03-25">2024-03-25</time></p></footer></article>
 </div>
 </aside>
 <!-- enrich-end -->

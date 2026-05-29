@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="th-TH">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Tue, 26 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Tue, 26 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>Magnifica Humanitas: การอ่านสมณสาส์น AI ฉบับแรกในมุมอุตสาหกรรม — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="25 พฤษภาคม 2026 สมเด็จพระสันตะปาปาเลโอที่ 14 ทรงประกาศ Magnifica Humanitas สมณสาส์นฉบับแรกว่าด้วย AI อ่านเชิงวิศวกรรมเป็นกรอบจริยธรรมยุค AI ที่ลงเอยที่ความหวัง">
+<meta name="keywords" content="Magnifica Humanitas, Pope Leo XIV, สมณสาส์น AI, จริยธรรม AI, จริยธรรมคอมพิวเตอร์ควอนตัม, Rerum Novarum, หอบาเบล, เทคโนโลยีไม่เป็นกลาง, ทรานส์ฮิวแมนิสม์, โพสต์ฮิวแมนิสม์, ศักดิ์ศรีความเป็นมนุษย์, รถไฟ รถยนต์ นิวเคลียร์ อินเทอร์เน็ต, ประวัติศาสตร์ความตื่นตระหนกทางเทคโนโลยี, Lucy การถ่ายโอนความรู้, ความหวัง AI, EU AI Act, DORA, Anthropic, Sebastien Rousseau">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Magnifica Humanitas">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-7D/Rsn69NQJexrgeyOHS03HJlWIyrY/+M2laZe915TU=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-bSEmlvzLEVSZ0Mk2GlOjxE2j+gIShS2AxPbkKU1C3xI=' 'sha256-cyX9CYT82Xd3MVvfAyVp/08c/hfHJIBsbyIXpTisPvM=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/th/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="ฟีด Atom" href="/th/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Magnifica Humanitas: การอ่านสมณสาส์น AI ฉบับแรกในมุมอุตสาหกรรม — Sebastien Rousseau">
+<meta property="og:description" content="25 พฤษภาคม 2026 สมเด็จพระสันตะปาปาเลโอที่ 14 ทรงประกาศ Magnifica Humanitas สมณสาส์นฉบับแรกว่าด้วย AI อ่านเชิงวิศวกรรมเป็นกรอบจริยธรรมยุค AI ที่ลงเอยที่ความหวัง">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/th/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="th_TH">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Magnifica Humanitas: การอ่านสมณสาส์น AI ฉบับแรกในมุมอุตสาหกรรม — Sebastien Rousseau">
+<meta name="twitter:description" content="25 พฤษภาคม 2026 สมเด็จพระสันตะปาปาเลโอที่ 14 ทรงประกาศ Magnifica Humanitas สมณสาส์นฉบับแรกว่าด้วย AI อ่านเชิงวิศวกรรมเป็นกรอบจริยธรรมยุค AI ที่ลงเอยที่ความหวัง">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/th/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-26-magnifica-humanitas-ai-quantique-message-of-hope/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">ข้ามไปยังเนื้อหาหลัก</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="สลับการนำทาง" />
+      <div class="wrap">
+        <a class="ap-brand" href="/th/index.html" aria-label="หน้าแรกของ Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="การนำทางหลัก">
+          <ul class="ap-menu">
+            <li><a href="/th/nueng-rao/index.html">เกี่ยวกับเรา</a></li>
+            <li><a href="/th/bot-khwam/index.html" aria-current="page" class="active">บทความ</a></li>
+            <li><a href="/th/ngan-wichai/index.html">งานวิจัย</a></li>
+            <li><a href="/th/hua-kho/index.html">หัวข้อ</a></li>
+            <li><a href="/th/khrong-kan/index.html">โครงการ</a></li>
+            <li><a href="/th/rai-kan-len/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="เปลี่ยนเป็นธีมมืด" aria-pressed="false" title="เปลี่ยนธีม">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="ค้นหา (Cmd หรือ Ctrl + K)" title="ค้นหา (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="ภาษา">
+            <button type="button" class="ap-lang-toggle" aria-label="TH, เปลี่ยนภาษา" aria-expanded="false" aria-haspopup="menu" title="เปลี่ยนภาษา">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">TH</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-05-26-magnifica-humanitas-ai-quantique-message-of-hope/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/th/tit-to/index.html" aria-label="ติดต่อ">ติดต่อ ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="สลับการนำทาง">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Magnifica Humanitas: การอ่านสมณสาส์น AI ฉบับแรกในมุมอุตสาหกรรม</h1>
+      <p class="sub">25 พฤษภาคม 2026 สมเด็จพระสันตะปาปาเลโอที่ 14 ทรงประกาศสมณสาส์นฉบับแรกที่อุทิศแก่ปัญญาประดิษฐ์ อ่านจากภายในอุตสาหกรรมเทคโนโลยี ไม่ใช่ในฐานะหลักคำสอน แต่ในฐานะกรอบจริยธรรม สาส์นนี้สะท้อนความวิตกทางศีลธรรมทั้งหมดที่เคยมาพร้อมกับรถไฟ รถยนต์ พลังงานนิวเคลียร์ และอินเทอร์เน็ต และสุดท้ายลงเอยที่ความหวัง</p>
+    <nav class="article-tags" aria-label="หัวข้อ"><a href="/tags/index.html#h3-magnifica-humanitas" class="article-tag" rel="tag">Magnifica Humanitas</a><a href="/tags/index.html#h3-pope-leo-xiv" class="article-tag" rel="tag">Pope Leo XIV</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">สมณสาส์น AI</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">จริยธรรม AI</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">จริยธรรมคอมพิวเตอร์ควอนตัม</a><a href="/tags/index.html#h3-rerum-novarum" class="article-tag" rel="tag">Rerum Novarum</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">หอบาเบล</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">เทคโนโลยีไม่เป็นกลาง</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">ทรานส์ฮิวแมนิสม์</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">โพสต์ฮิวแมนิสม์</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">ศักดิ์ศรีความเป็นมนุษย์</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">รถไฟ รถยนต์ นิวเคลียร์ อินเทอร์เน็ต</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">ประวัติศาสตร์ความตื่นตระหนกทางเทคโนโลยี</a><a href="/tags/index.html#h3-lucy" class="article-tag" rel="tag">Lucy การถ่ายโอนความรู้</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">ความหวัง AI</a><a href="/tags/index.html#h3-eu-ai-act" class="article-tag" rel="tag">EU AI Act</a><a href="/tags/index.html#h3-dora" class="article-tag" rel="tag">DORA</a><a href="/tags/index.html#h3-anthropic" class="article-tag" rel="tag">Anthropic</a><a href="/tags/index.html#h3-sebastien-rousseau" class="article-tag" rel="tag">Sebastien Rousseau</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-26T06:06:06+00:00" class="meta-pub">เผยแพร่เมื่อ 26 May 2026</time> <span aria-hidden="true">·</span> <time datetime="2026-05-27" class="meta-rev">อัปเดตเมื่อ 27 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="เวลาในการอ่านโดยประมาณ">5 นาทีในการอ่าน</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>สารบัญ</h2><ol><li><a href="#section-1">หมายเหตุว่าด้วยวิธีการอ่านบทความนี้</a></li><li><a href="#section-2">สาส์นกล่าวอะไรกันแน่</a></li><li><a href="#section-3">เทคโนโลยีไม่เคยเป็นกลาง: ข้อสังเกตเชิงออกแบบ ไม่ใช่บทเทศนา</a></li><li><a href="#section-4">แบบรูป: รถไฟ รถยนต์ นิวเคลียร์ อินเทอร์เน็ต</a></li><li><a href="#section-5">จุดที่สาส์นนี้สัมผัสกับวิศวกรรมการเงิน</a></li><li><a href="#lucy">สิ่งล่อใจของทรานส์ฮิวแมนิสม์ และบทเรียนจาก Lucy</a></li><li><a href="#section-7">บทเพลงแห่งความหวัง: สถาปัตยกรรม ไม่ใช่ดินฟ้าอากาศ</a></li><li><a href="#section-8">ความหมายตามตำแหน่งของผู้อ่าน</a></li><li><a href="#section-9">บทสรุป</a></li><li><a href="#section-10">คำถามที่พบบ่อย</a></li><li><a href="#section-11">อ้างอิง</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 25 พฤษภาคม 2026 สมเด็จพระสันตะปาปาเลโอที่ 14 ทรงประกาศ Magnifica Humanitas สมณสาส์นฉบับแรกว่าด้วย AI อ่านเชิงวิศวกรรมเป็นกรอบจริยธรรมยุค AI ที่ลงเอยที่ความหวัง</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>หมายเหตุว่าด้วยวิธีการอ่านบทความนี้.</strong> นี่ไม่ใช่การอ่านในเชิงเทววิทยา เลนส์ที่ใช้คือวิศวกรรม โครงสร้างพื้นฐานการชำระเงิน วิทยาการรหัสลับหลังควอนตัม ระบบ agentic ซึ่งเป็นงานที่ Magnifica Humanitas สนใจอยู่ สมณสาส์นนี้ในถ้อยคำของเอกสารเองส่งถึง…</li>  <li><strong>สาส์นกล่าวอะไรกันแน่.</strong> อุปกรณ์ในการวางกรอบคือภาพจากพระคัมภีร์สองภาพ และคุ้มค่าที่จะเข้าใจแม้สำหรับผู้อ่านฆราวาสล้วน ๆ เพราะทำงานเชิงวิเคราะห์อย่างแท้จริง ภาพแรกคือ หอบาเบล ภาษาเดียว เทคโนโลยีเดียว ทิศทางเดียว สร้างขึ้น ตามที่สมณสาส์นอ่าน…</li>  <li><strong>เทคโนโลยีไม่เคยเป็นกลาง: ข้อสังเกตเชิงออกแบบ ไม่ใช่บทเทศนา.</strong> ประโยคที่สำคัญที่สุดเพียงประโยคเดียวในสมณสาส์นสำหรับวิศวกรคือข้อเรียกร้องที่ว่าเทคโนโลยี &quot;รับเอาลักษณะของผู้ที่คิดค้น สนับสนุนทางการเงิน กำกับดูแล และใช้งานมัน&quot; ถอดบริบทออก ประโยคนี้ก็เป็น ความจริง อย่างตรงไปตรงมา…</li>  <li><strong>แบบรูป: รถไฟ รถยนต์ นิวเคลียร์ อินเทอร์เน็ต.</strong> สิ่งที่ให้พลังการตีความที่แท้จริงแก่สมณสาส์นคือการยึดโยงอย่างชัดแจ้งกับ Rerum Novarum สมณสาส์นของสมเด็จพระสันตะปาปาเลโอที่ 13 ในปี 1891 ว่าด้วยการปฏิวัติอุตสาหกรรม ด้วยการลงพระนาม Magnifica Humanitas ในวันครบรอบ 135…</li></ul></aside><h1>Magnifica Humanitas: การอ่านสมณสาส์น AI ฉบับแรกในมุมอุตสาหกรรม</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>25 พฤษภาคม 2026 สมเด็จพระสันตะปาปาเลโอที่ 14 ทรงประกาศ <em>Magnifica Humanitas</em> สมณสาส์นฉบับแรกที่อุทิศแก่ปัญญาประดิษฐ์ (<a href="https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html" title="Vatican News — Magnifica Humanitas">Vatican News</a>) อ่านจากภายในอุตสาหกรรมเทคโนโลยี ไม่ใช่ในฐานะหลักคำสอน แต่ในฐานะกรอบจริยธรรมที่สอดคล้องผิดธรรมดาสำหรับยุค AI และควอนตัม สาส์นนี้สะท้อนความวิตกทางศีลธรรมที่เคยมาพร้อมกับรถไฟ รถยนต์ พลังงานนิวเคลียร์ และอินเทอร์เน็ต และลงเอยที่ความหวังมากกว่าความกลัว</p>
+<hr />
+<blockquote>
+<p><strong>บทสรุปผู้บริหาร / ประเด็นสำคัญ</strong></p>
+<ul>
+<li>25 พฤษภาคม 2026 สมเด็จพระสันตะปาปาเลโอที่ 14 ทรงประกาศ <strong>Magnifica Humanitas</strong> (&quot;มนุษยชาติอันยิ่งใหญ่&quot;) เป็น <strong>สมณสาส์น 42,300 คำ</strong> มีคำบรรยายว่า <em>On Safeguarding the Human Person in the Time of Artificial Intelligence</em> และเป็นสมณสาส์นฉบับแรกที่อุทิศแก่ AI (<a href="https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html" title="Vatican News — Magnifica Humanitas">Vatican News</a>) ลงพระนามเมื่อ 15 พฤษภาคม ซึ่งเป็น <strong>วันครบรอบ 135 ปีของ <em>Rerum Novarum</em> ของสมเด็จพระสันตะปาปาเลโอที่ 13</strong> (1891) และเปิดตัวที่นครรัฐวาติกันพร้อมด้วยผู้ร่วมก่อตั้ง Anthropic (<a href="https://www.ncronline.org/vatican/vatican-news/pope-leo-present-his-encyclical-ai-alongside-anthropic-co-founder" title="NCR — Pope Leo AI encyclical">NCR</a>)</li>
+<li>หากอ่านอย่างเที่ยงตรงจากสายเทคโนโลยี ข้อเรียกร้องหลักของสาส์นนี้คือสิ่งที่วิศวกรจริงจังส่วนใหญ่ยึดถืออยู่แล้ว นั่นคือ <strong>เทคโนโลยีไม่เคยเป็นกลาง</strong> มันรับเอาลักษณะของผู้ที่คิดค้น สนับสนุนทางการเงิน กำกับดูแล และใช้งานมัน นี่ไม่ใช่ข้อยืนยันทางศาสนา แต่เป็นข้อสังเกตเชิงออกแบบ</li>
+<li>เอกสารนี้วางคู่ขนานกับ <strong>Rerum Novarum</strong> ที่กล่าวถึงการปฏิวัติอุตสาหกรรมโดยจงใจ และความคู่ขนานนั้นคือกุญแจของการอ่านอย่างถูกต้อง เทคโนโลยีที่เปลี่ยนแปลงอย่างใหญ่หลวงทุกชิ้น ไม่ว่าจะเป็น <strong>รถไฟ รถยนต์ พลังงานนิวเคลียร์ อินเทอร์เน็ต</strong> ล้วนมาพร้อมความวิตกทางศีลธรรม และในทุกกรณีความวิตกนั้นไม่ใช่ฮิสทีเรียล้วน ๆ ก็ไม่ใช่การขัดขวางล้วน ๆ แต่เป็น <strong>สัญญาณว่าการกำกับดูแลต้องไล่ตามขีดความสามารถให้ทัน</strong></li>
+<li>คุณูปการที่คมที่สุดคือการปรับกรอบคำถามหลักใหม่ สาส์นนี้โต้แย้งว่าทางเลือก &quot;ไม่ใช่ระหว่างการ 'ตอบรับ' หรือ 'ปฏิเสธ' เทคโนโลยี&quot; แต่อยู่ระหว่าง <strong>การสร้างหอบาเบล</strong> (เอกรูป การบูชากำไร คนที่ถูกลดเหลือ &quot;ข้อมูลและสมรรถนะ&quot;) กับ <strong>การสร้างเยรูซาเล็มขึ้นใหม่</strong> (การเชื่อมโยง ความรับผิดชอบร่วม เสียงที่หลากหลายร่วมกันสร้าง) สำหรับอุตสาหกรรม นี่แมปตรงเข้ากับความต่างระหว่าง <strong>AI แบบสกัดประโยชน์กับ AI ที่เคารพมนุษย์</strong></li>
+<li>คำเตือนเรื่อง <strong>ทรานส์ฮิวแมนิสม์และโพสต์ฮิวแมนิสม์</strong> ซึ่งเป็นสิ่งล่อใจให้มองข้อจำกัดของมนุษย์ (ความเจ็บป่วย ความแก่ ความเปราะบาง) เป็นข้อบกพร่องที่ต้องปรับให้หายไป เชื่อมตรงกับธีมที่สำรวจไว้ใน <a href="https://sebastienrousseau.com/th/2026-05-11-lucy-besson-thai-thot-khwam-ru-ai-lae-quantum/index.html" title="แฟลชไดรฟ์ของ Lucy ทบทวนใหม่">บทความเดือนพฤษภาคม 2026 ว่าด้วย <em>Lucy</em></a> บนเว็บไซต์นี้ คือจินตนาการอันยั่วยวนของความรู้ที่อพยพจากเนื้อหนังสู่เครื่องจักร</li>
+<li>ข้อสรุปที่ซื่อสัตย์คือ <strong>มีความหวัง ไม่ใช่ปลุกความตื่นตระหนก</strong> ข้อโต้แย้งที่ลึกที่สุดของสมณสาส์นคืออนาคตของ AI ไม่ใช่ดินฟ้าอากาศที่เกิดขึ้น <em>กับ</em> ผู้คน หากเป็นสถาปัตยกรรมที่สร้างขึ้น <em>โดย</em> ผู้คน กำลังถูกออกแบบในการทบทวนสถาปัตยกรรมทุกครั้ง การฝึกฝนทุกรอบ และทุกการตัดสินใจว่าจะปรับให้ดีที่สุดอะไรและจะปฏิเสธอะไร นี่ไม่ใช่คำเตือน หากเป็นคำเชิญ</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="section-1">หมายเหตุว่าด้วยวิธีการอ่านบทความนี้ <a class="heading-anchor" href="#section-1" aria-label="ลิงก์ไปยัง หมายเหตุว่าด้วยวิธีการอ่านบทความนี้">#</a></h2>
+<p>นี่ไม่ใช่การอ่านในเชิงเทววิทยา เลนส์ที่ใช้คือวิศวกรรม โครงสร้างพื้นฐานการชำระเงิน วิทยาการรหัสลับหลังควอนตัม ระบบ agentic ซึ่งเป็นงานที่ <em>Magnifica Humanitas</em> สนใจอยู่ สมณสาส์นนี้ในถ้อยคำของเอกสารเองส่งถึง &quot;ผู้ศรัทธาคาทอลิกทั้งปวง คริสต์ศาสนิกชนทั้งปวง และผู้ทรงน้ำใจไมตรี&quot; (<a href="https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html" title="Magnifica Humanitas — ฉบับเต็ม">Vatican.va</a>) ซึ่งเป็นใบเบิกทางสำหรับการอ่านอย่างฆราวาสที่ตามมา</p>
+<p>เมื่ออ่านในฐานะการให้เหตุผลทางจริยธรรมมากกว่าหลักคำสอน เอกสารนี้สอดคล้องเป็นระบบ มากกว่าสิ่งที่อุตสาหกรรมผลิตเกี่ยวกับตัวเองส่วนใหญ่ ซื่อตรงต่อประเด็นการกระจุกตัวของอำนาจมากกว่าสมุดปกขาวด้านการกำกับดูแลส่วนใหญ่ และมีความหวังมากกว่าวาทกรรมหนักอึ้งด้วยความหายนะที่ครอบงำการวิพากษ์ AI มาตั้งแต่ 2023</p>
+<h2 id="section-2">สาส์นกล่าวอะไรกันแน่ <a class="heading-anchor" href="#section-2" aria-label="ลิงก์ไปยัง สาส์นกล่าวอะไรกันแน่">#</a></h2>
+<p>อุปกรณ์ในการวางกรอบคือภาพจากพระคัมภีร์สองภาพ และคุ้มค่าที่จะเข้าใจแม้สำหรับผู้อ่านฆราวาสล้วน ๆ เพราะทำงานเชิงวิเคราะห์อย่างแท้จริง ภาพแรกคือ <strong>หอบาเบล</strong> ภาษาเดียว เทคโนโลยีเดียว ทิศทางเดียว สร้างขึ้น ตามที่สมณสาส์นอ่าน บน &quot;ความหยิ่งผยองและการอ้างว่าพึ่งตนเองได้&quot; โครงการที่ &quot;สังเวยศักดิ์ศรีความเป็นมนุษย์เพื่อประสิทธิภาพ&quot; ภาพที่สองคือ <strong>การสร้างกำแพงเยรูซาเล็มขึ้นใหม่</strong> ภายใต้เนหะมีย์ โครงการที่ &quot;สร้างความสัมพันธ์ขึ้นใหม่ก่อนสร้างด้วยก้อนหิน&quot; ซึ่งงานถูกกระจายไปทั่วทั้งชุมชน และความหลากหลายกลายเป็นทรัพยากรไม่ใช่ภัยคุกคาม</p>
+<p>การเคลื่อนไหวที่เป็นจุดเปลี่ยนของสมณสาส์นคือการโต้แย้งว่าทางเลือกที่แท้จริงของยุค AI &quot;ไม่ใช่ระหว่างการ 'ตอบรับ' หรือ 'ปฏิเสธ' เทคโนโลยี แต่อยู่ระหว่างการสร้างหอบาเบลหรือสร้างเยรูซาเล็มขึ้นใหม่&quot; นี่เป็นการวางกรอบที่ซับซ้อนกว่าการแบ่งสองขั้วระหว่างฝ่ายเร่งเครื่องกับฝ่ายมองโลกในแง่ร้ายที่อุตสาหกรรมติดอยู่ มันปฏิเสธทั้งจุดยืนยูโทเปียทางเทคโนโลยี (ที่ว่าขีดความสามารถมากขึ้นย่อมดีโดยอัตโนมัติ) และจุดยืนปฏิเสธโดยสัญชาตญาณ (ที่ว่าเทคโนโลยีกัดกร่อนอย่างอันตรายในตัวเอง) แทนที่จะเป็นเช่นนั้น มันวางน้ำหนักทางศีลธรรมไว้ตรงจุดที่มันอยู่จริง ในแบบที่ <em>สิ่งนั้น</em> ถูกสร้าง สนับสนุนทางการเงิน กำกับดูแล และใช้งาน</p>
+<p>จากนั้นเอกสารนี้มีโครงสร้างที่มีวินัย มันสถาปนาว่าเทคโนโลยีได้เป็น &quot;ความเป็นจริงของมนุษย์อย่างลึกซึ้ง เชื่อมโยงกับเอกราชและเสรีภาพของมนุษย์&quot; ตั้งแต่ต้น และตลอดหลายศตวรรษได้ปรับปรุงสภาพความเป็นอยู่ของมนุษย์อย่างมีนัยสำคัญ นี่ไม่ใช่บทตอบโต้แบบปฏิกิริยา จากนั้นมันให้ข้อสังเกตหลัก สิ่งที่ควรหยุดวิศวกรซื่อสัตย์ทุกคนให้นิ่งฟัง ในทางปฏิบัติเทคโนโลยีไม่เคยเป็นกลาง เพราะมันรับเอาลักษณะของผู้ที่คิดค้น สนับสนุนทางการเงิน กำกับดูแล และใช้งานมัน มันเตือนถึงการเปลี่ยนแปลงเชิงโครงสร้างเฉพาะในเรื่องอำนาจ ว่าผู้ขับเคลื่อนการพัฒนาหลักในปัจจุบันเป็นคู่กรณีเอกชนซึ่งบ่อยครั้งข้ามชาติ ซึ่งทรัพยากรและขีดความสามารถในการแทรกแซงเหนือกว่ารัฐบาลจำนวนมาก และมันเตือนถึงอันตรายเชิงมานุษยวิทยาเฉพาะ คือการลดทอนบุคคลให้เป็น &quot;ข้อมูลและสมรรถนะ&quot; การมองข้อจำกัดของมนุษย์เป็นข้อบกพร่องที่ต้องวิศวกรรมให้หายไป บทถัด ๆ มากล่าวถึงความจริงในฐานะสมบัติร่วม ศักดิ์ศรีของแรงงานในยุคของระบบอัตโนมัติ และอย่างหนักแน่นเป็นพิเศษ การใช้ AI ในสงครามและอาวุธอัตโนมัติ (<a href="https://time.com/article/2026/05/25/pope-leo-encyclical-ai-magnifica-humanitas/" title="TIME — สมณสาส์น AI ของพระสันตะปาปาเลโอ">TIME</a>, <a href="https://www.cnn.com/2026/05/25/europe/pope-leo-ai-encyclical-magnifica-humanitas-intl" title="CNN — สมณสาส์น AI ของพระสันตะปาปาเลโอ">CNN</a>)</p>
+<p>นั่นคือสถาปัตยกรรม การอ่านจากด้านวิศวกรรมจะตามมา</p>
+<h2 id="section-3">เทคโนโลยีไม่เคยเป็นกลาง: ข้อสังเกตเชิงออกแบบ ไม่ใช่บทเทศนา <a class="heading-anchor" href="#section-3" aria-label="ลิงก์ไปยัง เทคโนโลยีไม่เคยเป็นกลาง: ข้อสังเกตเชิงออกแบบ ไม่ใช่บทเทศนา">#</a></h2>
+<p>ประโยคที่สำคัญที่สุดเพียงประโยคเดียวในสมณสาส์นสำหรับวิศวกรคือข้อเรียกร้องที่ว่าเทคโนโลยี &quot;รับเอาลักษณะของผู้ที่คิดค้น สนับสนุนทางการเงิน กำกับดูแล และใช้งานมัน&quot; ถอดบริบทออก ประโยคนี้ก็เป็น <em>ความจริง</em> อย่างตรงไปตรงมา และเป็นจริงในแบบที่วงการนี้ได้ค่อย ๆ เรียนรู้ใหม่ด้วยต้นทุนสูงตลอดทศวรรษ</p>
+<p>อัลกอริทึมแนะนำที่ปรับให้ดีที่สุดเพื่อ engagement รับเอาลักษณะของเมตริกที่ได้รับมา มันไม่ได้ &quot;ตัดสินใจ&quot; จะทำให้ใครหัวรุนแรง แต่มันจะค้นพบว่าความเดือดดาลรักษาความสนใจไว้ได้และจะเสิร์ฟมันเพิ่มขึ้น โมเดลสินเชื่อที่ฝึกบนข้อมูลการให้กู้ที่มีอคติทางประวัติศาสตร์รับเอาลักษณะของประวัติศาสตร์นั้น มันไม่ได้ &quot;ตั้งใจ&quot; เลือกปฏิบัติ แต่มันจะทำ ระบบจดจำใบหน้ารับเอาลักษณะของชุดข้อมูลที่ใช้ฝึกและสถาบันที่นำไปใช้ ไม่เป็นพิษภัยในแอปรูปภาพ แต่เป็นอย่างอื่นโดยสิ้นเชิงในบริบทการสอดส่อง วินัยทั้งหมดของความปลอดภัยของ AI การปรับแนว AI และวิศวกรรม AI ที่รับผิดชอบ ในความหมายหนึ่ง คือการกล่าวซ้ำประโยคของสมณสาส์นอย่างละเอียด <em>ค่านิยมของผู้สร้างและผู้นำไปใช้ถูกจารึกไว้ในสิ่งประดิษฐ์ ไม่ว่าใครจะตั้งใจหรือไม่ก็ตาม</em></p>
+<p>นี่คือเหตุผลที่กรอบสำคัญกว่าข้อสรุป การป้องกันตัวทางวาทศิลป์ที่อุตสาหกรรมใช้บ่อยที่สุด ที่ว่า &quot;เทคโนโลยีเป็นแค่เครื่องมือ มันเป็นกลาง ขึ้นอยู่กับว่าคุณใช้อย่างไร&quot; เป็นจุดยืนที่สมณสาส์นและประสบการณ์ทางวิศวกรรมที่ยากลำบากตลอดทศวรรษหักล้างได้พอดี เครื่องมือไม่เป็นกลาง พวกมันแบกลายนิ้วมือของผู้สร้างไว้ในค่าตั้งต้น ข้อมูลฝึก เป้าหมายการปรับให้ดีที่สุด โมเดลการเข้าถึง และโมเดลธุรกิจที่หล่อเลี้ยงพวกมัน การยอมรับสิ่งนี้ไม่ใช่การต่อต้านเทคโนโลยี หากเป็นเงื่อนไขเบื้องต้นของการสร้างเทคโนโลยีให้ดี</p>
+<h2 id="section-4">แบบรูป: รถไฟ รถยนต์ นิวเคลียร์ อินเทอร์เน็ต <a class="heading-anchor" href="#section-4" aria-label="ลิงก์ไปยัง แบบรูป: รถไฟ รถยนต์ นิวเคลียร์ อินเทอร์เน็ต">#</a></h2>
+<p>สิ่งที่ให้พลังการตีความที่แท้จริงแก่สมณสาส์นคือการยึดโยงอย่างชัดแจ้งกับ <em>Rerum Novarum</em> สมณสาส์นของสมเด็จพระสันตะปาปาเลโอที่ 13 ในปี 1891 ว่าด้วยการปฏิวัติอุตสาหกรรม ด้วยการลงพระนาม <em>Magnifica Humanitas</em> ในวันครบรอบ 135 ปีของเอกสารฉบับนั้น สมเด็จพระสันตะปาปาเลโอที่ 14 ทรงประกาศข้อเรียกร้องทางประวัติศาสตร์โดยจงใจ ว่า AI คือ &quot;การปฏิวัติอุตสาหกรรมอีกครั้ง&quot; และว่าการตอบสนองที่ถูกต้องไม่ใช่หยุดมัน ไม่ใช่บูชามัน แต่คือการสร้างนั่งร้านทางสังคมและจริยธรรมที่ทำให้ประโยชน์ของมันเข้าถึงทุกคน และโทษของมันไม่ตกแก่ผู้ใด</p>
+<p>นี่คือกรอบที่ถูกต้องและคุ้มค่าที่จะขยาย เพราะประวัติศาสตร์ให้กำลังใจอย่างแท้จริงเมื่อมองอย่างชัดเจน เทคโนโลยีที่เปลี่ยนแปลงอย่างใหญ่หลวงทุกชิ้นมาถึงพร้อมเมฆแห่งความวิตกทางศีลธรรม และในทุกกรณีความวิตกนั้นพกพาสัญญาณจริง</p>
+<p>เมื่อ <strong>ทางรถไฟ</strong> แผ่ขยายไปทั่วอังกฤษในช่วงทศวรรษ 1830 และ 1840 ความเห็นทางการแพทย์ที่น่านับถือถือว่าร่างกายมนุษย์ไม่อาจรอดจากความเร็ว 30 ไมล์ต่อชั่วโมง ผู้โดยสารจะหายใจไม่ออก หรืออวัยวะจะเสียหาย มีบทเทศน์เรื่องความไม่เกรงพระเจ้าของความเร็วเช่นนั้น ความวิตกนั้นในรูปแบบตามตัวอักษรคือเรื่องไร้สาระ แต่ภายใต้นั้นมีความกังวลที่แท้และชอบธรรมเรื่องการพลิกผัน ทางรถไฟพลิกเศรษฐกิจท้องถิ่นจริง รวมศูนย์ทุนในรูปแบบใหม่จริง ต้องการกฎหมายความปลอดภัยทั้งชุดใหม่ที่เขียนด้วยเลือดของอุบัติเหตุยุคแรกจริง ฮิสทีเรียผิด แต่สัญชาตญาณพื้นฐานที่ว่า <em>สิ่งนี้เปลี่ยนทุกอย่าง และเรายังไม่พร้อม</em> นั้นถูก</p>
+<p>เมื่อ <strong>รถยนต์</strong> มาถึง แบบรูปก็ซ้ำเดิม Locomotive Acts ของสหราชอาณาจักร หรือ &quot;Red Flag Acts&quot; กำหนดให้ต้องมีคนเดินนำหน้ายานยนต์ทุกคันถือธงแดง ปัจจุบันถูกเย้ยหยันว่าเป็นการขัดขวางอย่างไร้สาระ แต่จริง ๆ เป็นความพยายามครั้งแรกอย่างเทอะทะที่จะตอบคำถามที่แท้จริงว่า เกิดอะไรขึ้นเมื่อเอกชนสามารถเคลื่อนเครื่องจักรหนักผ่านพื้นที่สาธารณะร่วมด้วยความเร็วที่ถึงตายได้ ใช้เวลาหลายสิบปีจึงสร้างคำตอบ การออกใบอนุญาต กฎจราจร การออกแบบถนน เข็มขัดนิรภัย มาตรฐานการชน รถยนต์ฆ่าคนจริง การกำกับดูแลก็ตามทันในที่สุด เราไม่ได้แบนรถยนต์ และเราก็ไม่ปล่อยมันโดยไม่ควบคุม เรา <em>ทำให้มันเป็นอารยะ</em></p>
+<p><strong>เทคโนโลยีนิวเคลียร์</strong> คือกรณีที่ยากที่สุดและให้บทเรียนมากที่สุด ที่นี่ความวิตกไม่ใช่ฮิสทีเรียเลย เทคโนโลยีสามารถยุติอารยธรรมได้จริง และในปี 1945 มันสาธิตขีดความสามารถในการลบเมืองสองครั้ง แต่แม้ที่นี่เรื่องราวก็ไม่ใช่หายนะล้วน ฟิสิกส์เดียวกันให้แหล่งพลังงานปลอดคาร์บอนซึ่งต่อหน่วยพลังงานที่ส่งมอบฆ่าคนน้อยกว่าทางเลือกแทบทุกอย่าง ระบอบไม่แพร่กระจาย แม้เปราะบาง ก็ยืนยาวมาแปดสิบปีต้านการคาดการณ์ที่มั่นใจว่ามันจะไม่ยืน นิวเคลียร์คือกรณีที่บทว่าด้วยอาวุธและ AI ของสมณสาส์นกำลังคิดถึงชัดเจนที่สุด และเป็นนิทานเตือนภัยที่ถูกต้อง เทคโนโลยีที่ศักยภาพในการทำลายและในการสร้างสรรค์ล้วนสูงสุด และซึ่งเรารอดมาได้ก็โดยการสร้าง อย่างไม่สมบูรณ์ ถกเถียงกัน แต่จริง นั่งร้านระหว่างประเทศเพื่อกำกับดูแลมัน</p>
+<p>และ <strong>อินเทอร์เน็ต</strong> สิ่งที่พวกเราส่วนใหญ่อยู่ในยุคนั้น ความวิตกในยุคแรก (ว่ามันจะกัดกร่อนจิตใจเด็ก ทำลายการเชื่อมโยงของมนุษย์จริง ๆ จมความจริงในเสียงรบกวน) ถูกปัดทิ้งโดยนักเทคโนโลยีว่าเป็นความตื่นตระหนกทางศีลธรรม ผมเองก็เป็นหนึ่งในนั้น ด้วยเวลาสองทศวรรษมองย้อนกลับ ความวิตกบางอย่างเหล่านั้นดูเป็นการตื่นตระหนกน้อยลงและเป็นการประเมินต่ำไปมากขึ้น เศรษฐกิจความสนใจ การแบ่งขั้วเชิงอัลกอริทึม การล่มสลายของฐานข้อเท็จจริงร่วม ผลกระทบต่อสุขภาพจิตของวัยรุ่นที่ถูกบันทึกไว้ อินเทอร์เน็ตส่งมอบสิ่งดีอันมหาศาล การเข้าถึงองค์ความรู้ทั้งหมดของมนุษย์ การล่มสลายของระยะทาง การทำให้เสียงเป็นประชาธิปไตย แต่มันก็สร้างความเสียหายจริงที่เราโบกมือไล่ไป เพียงเพราะกรอบของผู้มองโลกในแง่ดีทางเทคโนโลยีบอกเราว่าความก้าวหน้านั้นชอบธรรมในตัวเอง บทเรียนไม่ใช่ &quot;ฝ่ายมองโลกในแง่ร้ายถูก&quot; แต่คือว่า <em>ความวิตกนั้นเป็นข้อมูล และเราควรอ่านมันแทนที่จะปัดทิ้ง</em></p>
+<p>นี่คือแบบรูปที่ <em>Magnifica Humanitas</em> ชี้ และเหตุใดจึงไม่ควรอ่านเอกสารนี้ในฐานะ Luddism ในทุกกรณีความวิตกทางศีลธรรมที่มาพร้อมเทคโนโลยีไม่ใช่ฮิสทีเรียล้วน ๆ ก็ไม่ใช่ปัญญาล้วน ๆ มันเป็นสัญญาณว่า <em>ขีดความสามารถวิ่งนำการกำกับดูแลไปแล้ว</em> และต้องอุดช่องว่างด้วยความพยายามอย่างจงใจของมนุษย์ สมณสาส์นนี้คือ ในความเป็นจริง ความวิตกทางศีลธรรมระยะแรกของยุค AI และบันทึกทางประวัติศาสตร์บอกว่าการตอบสนองที่ถูกต้องต่อความวิตกเช่นนั้นไม่ใช่ปัดทิ้งว่าเป็นความกลัวเทคโนโลยีของศาสนา แต่คืออ่านมันเพื่อสัญญาณที่มันพกพา และอุดช่องว่างการกำกับดูแลให้เร็วกว่าครั้งที่แล้ว</p>
+<h2 id="section-5">จุดที่สาส์นนี้สัมผัสกับวิศวกรรมการเงิน <a class="heading-anchor" href="#section-5" aria-label="ลิงก์ไปยัง จุดที่สาส์นนี้สัมผัสกับวิศวกรรมการเงิน">#</a></h2>
+<p>ความกังวลเฉพาะของสมณสาส์นสองประการตกตรงเข้าวิศวกรรมระบบการเงิน และทั้งสองสมควรได้รับการตอบสนองของวิศวกรมากกว่าของผู้ศรัทธา</p>
+<p>ประการแรกคือ <strong>การกระจุกตัวของอำนาจในมือเอกชนข้ามชาติ</strong> ข้อสังเกตของสมณสาส์นที่ว่าผู้ขับเคลื่อนหลักของเทคโนโลยีนี้ในปัจจุบันเป็นผู้กระทำเอกชนซึ่งขีดความสามารถเกินกว่ารัฐจำนวนมากนั้น ไม่ใช่ข้อเรียกร้องทางเทววิทยา หากเป็นคำบรรยายที่แม่นยำของภูมิทัศน์ AI ปี 2026 และเป็นความกังวลเดียวกันที่วิ่งผ่านสถาปัตยกรรมกำกับดูแลที่อุตสาหกรรมกำลังเร่งปฏิบัติตามอยู่ ภาระความเสี่ยงสูงของ EU AI Act ที่บังคับใช้ตั้งแต่ 2 สิงหาคม 2026 บทบัญญัติความเสี่ยงจากการกระจุกตัวของผู้ให้บริการรายที่สามภายใต้ DORA และการเคลื่อนไหวเรื่องคลาวด์อธิปไตยและ control plane อธิปไตยที่กล่าวถึงใน <a href="https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html" title="สถาปัตยกรรมโครงสร้างพื้นฐานคลาวด์ที่ดีที่สุดในปี 2026">สถาปัตยกรรมคลาวด์</a> และ <a href="https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html" title="วิศวกรรม Agentic สำหรับธนาคาร">วิศวกรรม agentic</a> บนเว็บไซต์นี้ สมณสาส์นและ EU AI Act ที่น่าทึ่งคือกังวลเรื่องเดียวกัน ว่าขีดความสามารถที่ปราศจากความรับผิดชอบจะกระจุกอำนาจในแบบที่หลุดพ้นจากการกำกับดูแลแบบประชาธิปไตย ฝ่ายหนึ่งพูดในภาษาของหลักคำสอนทางสังคม อีกฝ่ายในภาษาของการประเมินความสอดคล้อง การวินิจฉัยเหมือนกันทุกประการ</p>
+<p>ประการที่สองคือ <strong>คอมพิวเตอร์ควอนตัม</strong> ซึ่งสมณสาส์นไม่ได้เอ่ยชื่อ แต่คาดการณ์รูปร่างจริยธรรมไว้อย่างแม่นยำ สมมติฐานของการเปลี่ยนผ่านสู่หลังควอนตัมที่กล่าวถึงใน <a href="https://sebastienrousseau.com/th/2026-05-14-kan-pongkan-banchi-yai-postquantum-kanngeon-borisat/index.html">Securing the Ledger</a> คือขีดความสามารถที่กำลังก่อสร้างอยู่ ซึ่งก็คือคอมพิวเตอร์ควอนตัมที่เกี่ยวข้องทางวิทยาการรหัสลับ เมื่อมาถึง จะเปิดเผยทุกอย่างที่เข้ารหัสภายใต้สมมติฐานของวันนี้ย้อนหลัง &quot;harvest now, decrypt later&quot; ในรีจิสเตอร์ฆราวาส คือพอดีกับสิ่งที่สมณสาส์นเตือน คืออำนาจที่ปราศจากปัญญา เทคโนโลยีที่ผลพวงมาในเส้นเวลาที่วิ่งนำการเตรียมความพร้อม ในมือของผู้ที่มีทรัพยากรเพียงพอจะใช้มันก่อน การยืนกรานของสมณสาส์นที่จะถามว่า &quot;เรากำลังจะไปไหน&quot; ก่อนที่ลำดับฉุกเฉินจะกำหนดเส้นทาง สำหรับวิศวกรความปลอดภัยคือแนวปฏิบัติที่ดีถูกแปลเป็นปรัชญาศีลธรรม</p>
+<h2 id="lucy">สิ่งล่อใจของทรานส์ฮิวแมนิสม์ และบทเรียนจาก <em>Lucy</em> <a class="heading-anchor" href="#lucy" aria-label="ลิงก์ไปยัง สิ่งล่อใจของทรานส์ฮิวแมนิสม์ และบทเรียนจาก Lucy">#</a></h2>
+<p>สมณสาส์นสงวนคำวิจารณ์ที่ค้นลึกที่สุดไว้ให้กับ <strong>ทรานส์ฮิวแมนิสม์และโพสต์ฮิวแมนิสม์</strong> เรื่องเล่าที่มองข้อจำกัดของมนุษย์ (ความเจ็บป่วย ความแก่ ความทุกข์ ความเปราะบาง) ไม่ใช่ในฐานะส่วนประกอบของสภาวะมนุษย์ แต่ในฐานะข้อบกพร่องทางวิศวกรรมที่รอการอัปเกรด ข้อเรียกร้องของมันในย่อหน้าแล้วย่อหน้าเล่าคือมนุษย์มักจะ <em>เบ่งบานผ่าน</em> ข้อจำกัดของตน และว่า AI ที่ล่อใจให้เรา &quot;หลีกหนีข้อจำกัดผ่านการปรับให้ดีที่สุด&quot; แทนที่จะหนุนเสริม &quot;ความเปิดกว้างและการเชื่อมโยง&quot; ได้เข้าใจผิดว่าบุคคลมีไว้เพื่ออะไร</p>
+<p>นี่คือการล่อใจที่สำรวจไว้ใน <a href="https://sebastienrousseau.com/th/2026-05-11-lucy-besson-thai-thot-khwam-ru-ai-lae-quantum/index.html" title="แฟลชไดรฟ์ของ Lucy ทบทวนใหม่">บทความเดือนพฤษภาคม 2026 ว่าด้วย <em>Lucy</em> ของลุค เบสซง</a> บนเว็บไซต์นี้ จินตนาการของภาพยนตร์ ที่ว่าจิตสำนึกอาจถูกปลดล็อกอย่างค่อยเป็นค่อยไปจนกระทั่งอพยพอย่างครบถ้วนจากเนื้อหนังสู่แฟลชไดรฟ์ คือการแสดงออกที่บริสุทธิ์ที่สุดเท่าที่จะเป็นไปได้ของฝันโพสต์ฮิวแมนิสม์ที่สมณสาส์นกังวล ความรู้ที่ปราศจากผู้รู้ ความฉลาดที่ปราศจากรูปกาย มนุษย์ที่ถูกลดเป็นข้อมูลที่สกัดได้ บทความนั้นโต้แย้งว่าจินตนาการนี้ยั่วยวนเพราะมันประจบความอึดอัดต่อข้อจำกัด และว่าความจริงที่น่าสนใจกว่าคือสิ่งตรงข้าม คือข้อจำกัดไม่ใช่บั๊ก หากเป็นส่วนใหญ่ของที่ที่ความหมายอาศัยอยู่ สมณสาส์นไปถึงข้อสรุปเดียวกันโดยเส้นทางอื่น การที่นักวิจารณ์ภาพยนตร์อ่านหนังระทึกขวัญไซไฟกับสมณสาส์นมาบรรจบที่จุดเดียวกันนั้นเองคุ้มค่าจะสังเกต มันชี้ว่าข้อค้นพบไม่ได้คับแคบอยู่ในกรอบใดกรอบหนึ่ง</p>
+<p>นี่คือจุดที่ผู้อ่านฆราวาสกับสมณสาส์นสามารถจับมือกันได้โดยไม่ต้องมีใครเปลี่ยนศาสนา การเชื่อว่ามนุษย์เป็นมากกว่าชุดข้อมูลไม่จำเป็นต้องเชื่อในวิญญาณ มันเพียงต้องการให้สังเกตว่าสิ่งที่มีความหมายที่สุดในชีวิต ความรัก ความโศกเศร้า การได้มาซึ่งปัญญาอย่างช้า ๆ ความใกล้ชิดที่ความเปราะบางทำให้เป็นไปได้ ไม่ใช่ปัญหาการปรับให้ดีที่สุด และว่าอุตสาหกรรมที่ปฏิบัติกับสิ่งเหล่านี้ในฐานะปัญหาการปรับให้ดีที่สุด จะสร้างเครื่องมือที่ทำให้คนมีประสิทธิภาพและเดียวดาย สมณสาส์นเรียกชื่อสิ่งนี้ด้วยความแม่นยำผิดธรรมดา</p>
+<h2 id="section-7">บทเพลงแห่งความหวัง: สถาปัตยกรรม ไม่ใช่ดินฟ้าอากาศ <a class="heading-anchor" href="#section-7" aria-label="ลิงก์ไปยัง บทเพลงแห่งความหวัง: สถาปัตยกรรม ไม่ใช่ดินฟ้าอากาศ">#</a></h2>
+<p>รีจิสเตอร์ที่ครอบงำการวิพากษ์ AI ตั้งแต่ 2023 คือความกลัว สมณสาส์นนี้ แม้จะมีคำเตือนทั้งหมด สุดท้ายแล้วก็ไม่ใช่เอกสารแห่งความกลัว บทปิดของมันชื่อว่า &quot;บทเพลงแห่งความหวัง&quot; (<a href="https://ascensionpress.com/blogs/articles/a-complete-guide-to-pope-leo-s-encyclical-magnificent-humanitas" title="Ascension — คู่มือ Magnifica Humanitas">Ascension Press</a>) และความหวังนั้นคุ้มค่าจะอ่านด้วยความแม่นยำเชิงวิศวกรรม</p>
+<p>ทางเลือกระหว่าง &quot;การสร้างหอบาเบลกับการสร้างเยรูซาเล็มขึ้นใหม่&quot; ไม่ใช่คำทำนายว่าเทคโนโลยีจะส่งมอบอนาคตแบบไหน หากเป็นถ้อยแถลงว่าอนาคตกำลังถูกสร้าง และว่าผู้คนที่สร้างมันมีอำนาจกำหนดรูปร่างของมัน นี่คือสิ่งที่วิศวกรทุกคนรู้ในมือแม้จะไม่เคยแสดงออกในถ้อยคำเหล่านี้ ระบบทำสิ่งที่มันถูกออกแบบให้ทำ เครื่องมือแนะนำปรับให้ดีที่สุดเพื่อสิ่งที่มันได้รับคำสั่งให้ปรับ โมเดลรวมเอาค่านิยมที่ถูกฝึกเข้าไป เอเจนต์กระทำภายในขอบเขตที่ได้รับ AI ไม่ใช่ดินฟ้าอากาศที่เกิดขึ้นกับผู้คน หากเป็นสถาปัตยกรรมที่สร้างขึ้นโดยผู้คน และในภาพของสมณสาส์น คือครอบครัวของเนหะมีย์ ที่แต่ละครอบครัวได้รับมอบหมายส่วนของกำแพง</p>
+<p>การปรับกรอบนั้นสลายลัทธิชะตากรรมเทียมในวาทกรรมปัจจุบันส่วนใหญ่ คำถามที่ว่า &quot;AI จะดีหรือร้ายต่อมนุษยชาติ&quot; ตั้งไม่ดี เพราะปฏิบัติกับ AI ราวกับเป็นแรงเอกเทศที่มีวิถีของตัวเอง คำถามที่ซื่อสัตย์คือ &quot;อะไรกำลังถูกสร้าง โดยใคร ภายใต้ข้อจำกัดอะไร&quot; และนั่นเป็นคำถามที่มีคำตอบทุกวัน ในการทบทวนการออกแบบ การตัดสินใจด้านสถาปัตยกรรม และทางเลือกเงียบ ๆ ว่าจะปรับให้ดีที่สุดอะไรและจะปฏิเสธอะไร</p>
+<p>บันทึกทางประวัติศาสตร์โดยรวมแล้วให้กำลังใจ รถไฟถูกทำให้เป็นอารยะ รถยนต์ถูกทำให้เป็นอารยะ พลังงานนิวเคลียร์ ทั้งที่ดูเหมือนเป็นไปไม่ได้ ก็ถูกยึดไว้ได้ ระบอบไม่แพร่กระจาย แม้เปราะบาง ก็ยืนยาวมาแปดสิบปีต้านการคาดการณ์ที่มั่นใจว่ามันจะไม่ยืน โทษของอินเทอร์เน็ตกำลังถูกจัดการอย่างช้า ๆ และล่าช้า ในทุกกรณีสิ่งดีถูกรักษาไว้และโทษถูกลด ไม่ใช่เพราะเทคโนโลยีมาถึงในสภาพที่เป็นอารยะอยู่แล้ว และไม่ใช่เพราะคนวิตกหยุดมัน แต่เพราะผู้สร้างและพลเมืองรับผิดชอบต่อรูปร่างของสิ่งนั้น AI และคอมพิวเตอร์ควอนตัมคือส่วนของกำแพงของยุคปัจจุบัน</p>
+<h2 id="section-8">ความหมายตามตำแหน่งของผู้อ่าน <a class="heading-anchor" href="#section-8" aria-label="ลิงก์ไปยัง ความหมายตามตำแหน่งของผู้อ่าน">#</a></h2>
+<p>นัยของสมณสาส์นต่างกันไปตามบทบาท</p>
+<p><strong>ผู้นำและผู้ก่อตั้งด้านเทคโนโลยี</strong> ข้อเรียกร้องที่ว่า &quot;เทคโนโลยีไม่เคยเป็นกลาง&quot; คือคำสั่งด้านการกำกับดูแล ไม่ใช่ข้อสังเกตทางปรัชญาข้างทาง ค่านิยม สิ่งจูงใจ และโมเดลธุรกิจเบื้องหลังระบบเป็นส่วนหนึ่งของข้อกำหนด และการแสร้งทำเป็นอย่างอื่นไม่น่าเชื่อถืออีกต่อไปสำหรับหน่วยกำกับ ประชาชน หรือวิศวกรภายในบริษัท สถาบันที่ดูดซับเรื่องนี้จะปฏิบัติกับจริยธรรมในฐานะข้อกังวลทางสถาปัตยกรรมที่ออกแบบเข้าไปตั้งแต่ต้น ไม่ใช่ชั้นประชาสัมพันธ์ที่ติดเข้าไปภายหลัง</p>
+<p><strong>วิศวกรและนักวิจัย</strong> สมณสาส์นนี้อย่างไม่คาดคิดอยู่ฝ่ายข้อโต้แย้งภายในที่สำคัญที่สุดของวงการ ที่ว่า <em>วิธี</em> การสร้างสิ่งหนึ่งสำคัญพอ ๆ กับ <em>การ</em> ที่มันทำงานได้ การผลักดันการออกแบบที่รับผิดชอบมากขึ้น ตรวจสอบได้มากขึ้น เคารพมนุษย์มากขึ้น ต้านแรงกดดันให้ส่งของแบบสกัดประโยชน์ คืองานที่สมณสาส์นบรรยายว่าเป็นการสร้างเยรูซาเล็มขึ้นใหม่ การโต้แย้งให้กับงานนั้นในปัจจุบันมีหลักคำสอนทางสังคมคาทอลิกอยู่ข้างเดียวกับ EU AI Act DORA และสิบปีของการเรียนรู้หลังเหตุการณ์</p>
+<p><strong>ผู้กำหนดนโยบายและหน่วยกำกับ</strong> สมณสาส์นและ EU AI Act กำลังบรรยายความเสี่ยงเดียวกันจากศัพท์ที่ต่างกัน การมาบรรจบเป็นโอกาส กรอบทางศีลธรรมสามารถสร้างความชอบธรรมสาธารณะที่การกำกับดูแลเชิงเทคนิคโดยลำพังพยายามให้ได้แต่ทำได้ยาก &quot;การกระจุกตัวของอำนาจที่ปราศจากความรับผิดชอบ&quot; เป็นนามธรรม &quot;บาเบล&quot; เป็นเรื่องเล่า และเรื่องเล่าขับเคลื่อนผู้คนให้ลงมือ</p>
+<p><strong>สาธารณชนทั่วไป &quot;ผู้ทรงน้ำใจไมตรี&quot; ของสมณสาส์น</strong> บรรทัดที่คมที่สุดของสมณสาส์นสำหรับผู้อ่านที่ไม่ใช่ผู้เชี่ยวชาญคือ ที่ว่าคนส่วนใหญ่กำลัง &quot;ดูและรอ สังเกตจากไกล และเพียงหวังให้ดีที่สุด&quot; ท่าทีนั้นไม่เป็นกลาง ที่ใดที่เกี่ยวกับโครงสร้างพื้นฐาน การงดเว้นเองคือทางเลือกว่าใครจะได้ออกแบบค่าตั้งต้น</p>
+<h2 id="section-9">บทสรุป <a class="heading-anchor" href="#section-9" aria-label="ลิงก์ไปยัง บทสรุป">#</a></h2>
+<p>อุตสาหกรรมเทคโนโลยีส่วนใหญ่หากอ่าน <em>Magnifica Humanitas</em> เลย จะอ่านในฐานะเอกสารทางศาสนาที่มีน้ำหนักจำกัดต่อวิศวกรรม นั่นจะเป็นความผิดพลาด เมื่ออ่านในฐานะการให้เหตุผลทางจริยธรรมมากกว่าหลักคำสอน มันอยู่ในกลุ่มถ้อยแถลงที่ชัดเจนที่สุดเท่าที่เคยมีของสิ่งที่อุตสาหกรรมจำเป็นต้องได้ยินที่สุดและต้านการได้ยินที่สุด ว่าสิ่งประดิษฐ์ที่สร้างขึ้นพกพาค่านิยมของผู้สร้าง ไม่ว่าผู้สร้างจะยอมรับหรือไม่ ว่าขีดความสามารถวิ่งนำการกำกับดูแลไปอีกครั้ง และว่าช่องว่างจะถูกอุดได้ด้วยการเลือกของมนุษย์ที่จงใจเท่านั้น มันพูดเรื่องนี้พร้อมกับ <em>Rerum Novarum</em> และประวัติศาสตร์ยาวนานของเทคโนโลยี ทั้งรถไฟ รถยนต์ พลังงานนิวเคลียร์ อินเทอร์เน็ต ที่มาพร้อมความวิตกทางศีลธรรม และในที่สุดไม่ถูกหยุดและไม่ถูกบูชา แต่ถูกทำให้เป็นอารยะโดยผู้คนที่รับผิดชอบต่อมัน</p>
+<p>มันลงเอยที่ความหวัง อนาคตของ AI และคอมพิวเตอร์ควอนตัมไม่ใช่คำพยากรณ์ ในวลีของสมณสาส์น คือ &quot;สถานก่อสร้างแห่งยุคสมัยของเรา&quot; บนหลักฐานทางประวัติศาสตร์ ช่องว่างระหว่างขีดความสามารถกับการกำกับดูแลปิดได้อีกครั้ง ไม่สมบูรณ์ ไม่ปราศจากต้นทุน แต่ปิดได้ ด้วยกลไกเดียวกับที่ปิดได้สำหรับรถไฟ รถยนต์ นิวเคลียร์ และอินเทอร์เน็ต คือผู้สร้างและพลเมืองรับผิดชอบต่อรูปร่างของสิ่งนั้น นั่นคือโน้ตที่ถูกต้องในการเริ่มต้น</p>
+<h2 id="section-10">คำถามที่พบบ่อย <a class="heading-anchor" href="#section-10" aria-label="ลิงก์ไปยัง คำถามที่พบบ่อย">#</a></h2>
+<p><strong><em>Magnifica Humanitas</em> คืออะไรในถ้อยคำง่าย ๆ</strong></p>
+<p>เป็นสมณสาส์น (รูปแบบเอกสารสอนของพระสันตะปาปาที่มีอำนาจสูงสุด) ฉบับแรกที่อุทิศแก่ปัญญาประดิษฐ์ทั้งหมด ประกาศโดยสมเด็จพระสันตะปาปาเลโอที่ 14 เมื่อ 25 พฤษภาคม 2026 มีความยาวประมาณ 42,300 คำ และมีคำบรรยายว่า <em>On Safeguarding the Human Person in the Time of Artificial Intelligence</em> วาง AI ไว้ภายใน &quot;หลักคำสอนทางสังคม&quot; ของคริสตจักรคาทอลิก ตัวบทสอนเดียวกันกับที่เริ่มต้นด้วยสมณสาส์น <em>Rerum Novarum</em> ของสมเด็จพระสันตะปาปาเลโอที่ 13 ในปี 1891 ว่าด้วยการปฏิวัติอุตสาหกรรม ซึ่งครบรอบ 135 ปีของเอกสารดังกล่าวเป็นวันที่เอกสารฉบับนี้ลงพระนาม สาส์นนี้ส่งถึงไม่เพียงชาวคาทอลิก แต่อย่างชัดแจ้งถึง &quot;ผู้ทรงน้ำใจไมตรีทั้งปวง&quot; ซึ่งเป็นใบเบิกทางในการอ่าน ดังที่บทความนี้ทำ ในฐานะการให้เหตุผลทางจริยธรรมแบบฆราวาส ไม่เพียงในฐานะเอกสารทางศาสนา</p>
+<p><strong>ทำไมคนในอุตสาหกรรมเทคโนโลยีต้องสนใจสิ่งที่สมณสาส์นกล่าวเกี่ยวกับ AI</strong></p>
+<p>เพราะมันเป็นหนึ่งในกรอบจริยธรรมที่สอดคล้องที่สุดและคงทนทางสถาบันที่สุดที่ใครเคยผลิตขึ้นสำหรับเทคโนโลยีนี้ และเพราะข้อเรียกร้องหลักของมันถูกต้องในเงื่อนไขของตัวเอง &quot;เทคโนโลยีไม่เคยเป็นกลาง&quot; เป็นข้อสังเกตเชิงออกแบบที่วินัยทั้งหมดของความปลอดภัยของ AI รับรองโดยปริยาย คำเตือนเรื่องการกระจุกอำนาจในผู้กระทำเอกชนข้ามชาติเป็นคำบรรยายที่แม่นยำของภูมิทัศน์ปี 2026 ที่ EU AI Act และ DORA พยายามจัดการอย่างอิสระต่อกัน คุณไม่ต้องเห็นพ้องกับเทววิทยาจึงจะพบว่าการวิเคราะห์มีประโยชน์ และผู้เขียนสมณสาส์นเชื้อเชิญการอ่านแบบนั้นอย่างชัดแจ้ง</p>
+<p><strong>การเทียบ AI กับรถไฟ รถยนต์ นิวเคลียร์ และอินเทอร์เน็ตเป็นการลดทอนความเสี่ยงหรือเปล่า</strong></p>
+<p>ตรงข้ามจริง ๆ แบบรูปทางประวัติศาสตร์แสดงว่าความวิตกทางศีลธรรมที่มาพร้อมเทคโนโลยีที่เปลี่ยนแปลงอย่างใหญ่หลวงทุกชิ้นพกพาสัญญาณจริง มันบ่งบอกช่องว่างระหว่างสิ่งที่เทคโนโลยีทำได้กับสิ่งที่การกำกับดูแลของเราพร้อม ในบางกรณี (รถไฟ) ความกลัวตามตัวอักษรเป็นเรื่องไร้สาระ แต่สัญชาตญาณว่าการพลิกผันกำลังมาถึงนั้นถูก ในกรณีอื่น (นิวเคลียร์ และอินเทอร์เน็ตในระดับหนึ่ง) ความวิตกถูกประเมินต่ำไป และเราจ่ายราคาที่ปัดมันทิ้ง บทเรียนไม่ใช่ว่า AI ไม่มีโทษเพราะเรารอดอันอื่นมาได้ แต่คือว่าเรารอดอันอื่นมาได้ด้วยการเอาความวิตกมาจริงจังและอุดช่องว่างการกำกับดูแลอย่างจงใจ และว่าเราควรทำเช่นนั้นให้เร็วขึ้นในครั้งนี้</p>
+<p><strong>เรื่องนี้เชื่อมกับบทความก่อนหน้าว่าด้วย <em>Lucy</em> ของคุณอย่างไร</strong></p>
+<p>คำวิจารณ์ทรานส์ฮิวแมนิสม์ของสมณสาส์น คือการมองข้อจำกัดของมนุษย์เป็นข้อบกพร่องที่ต้องปรับให้หายไป เป็นคำวิจารณ์เดียวกันที่ <a href="https://sebastienrousseau.com/th/2026-05-11-lucy-besson-thai-thot-khwam-ru-ai-lae-quantum/index.html" title="แฟลชไดรฟ์ของ Lucy ทบทวนใหม่">บทความ <em>Lucy</em></a> เสนอเกี่ยวกับจินตนาการของภาพยนตร์เรื่องนั้นเรื่องจิตสำนึกที่อพยพจากเนื้อหนังสู่เครื่องจักร ทั้งสองมาถึงข้อสรุปว่ามนุษย์เป็นมากกว่าข้อมูลที่สกัดได้ และว่าข้อจำกัดที่เราถูกล่อใจให้วิศวกรรมให้หายไปเป็นส่วนใหญ่ของที่ที่ความหมายอาศัยอยู่จริง การที่นักวิจารณ์ภาพยนตร์อ่านกับสมณสาส์นมาถึงข้อสรุปเดียวกันโดยเส้นทางต่างกันเป็นสัญญาณว่าข้อค้นพบนั้นแข็งแกร่งมากกว่าคับแคบ</p>
+<p><strong>สมณสาส์นกับ EU AI Act เห็นพ้องกันที่จุดใดจริง ๆ</strong></p>
+<p>ที่การกระจุกตัวของอำนาจ ข้อสังเกตของสมณสาส์นที่ว่า &quot;ผู้ขับเคลื่อนหลักของเทคโนโลยีนี้ในปัจจุบันเป็นคู่กรณีเอกชนซึ่งบ่อยครั้งข้ามชาติ ซึ่งทรัพยากรและขีดความสามารถในการแทรกแซงเหนือกว่ารัฐบาลจำนวนมาก&quot; นั้นแทบจะเหมือนคำต่อคำกับความวิตกเชิงโครงสร้างที่อยู่เบื้องหลังภาระความเสี่ยงสูงของ EU AI Act บทบัญญัติความเสี่ยงจากการกระจุกตัวของผู้ให้บริการรายที่สามภายใต้ DORA และการเคลื่อนไหวเรื่องคลาวด์อธิปไตยที่กำลังหล่อหลอมการจัดซื้อโครงสร้างพื้นฐานทางการเงินใหม่ในขณะนี้ สมณสาส์นไปถึงข้อสรุปผ่านหลักคำสอนทางสังคม การกำกับดูแลไปถึงผ่านการประเมินความสอดคล้อง การวินิจฉัยเหมือนกันทุกประการ</p>
+<p><strong>สรุปแล้วสาส์นโดยรวมมองโลกในแง่ดีหรือร้ายต่อ AI</strong></p>
+<p>ในแง่ดี แต่ไม่ใช่อย่างไร้เดียงสา ข้อโต้แย้งคืออนาคตของ AI และคอมพิวเตอร์ควอนตัมไม่ได้ถูกกำหนดไว้ล่วงหน้า มันกำลังถูกสร้างอยู่ ณ ขณะนี้ ด้วยทางเลือกของมนุษย์ และว่าประวัติศาสตร์แสดงว่าเรามีความสามารถจะรักษาความดีของเทคโนโลยีที่ทรงพลังในขณะที่ลดโทษของมัน หากเรารับผิดชอบต่อรูปร่างของมันแทนที่จะปฏิบัติกับมันราวกับเป็นแรงเอกเทศ ความกลัวปฏิบัติกับ AI ราวกับเป็นดินฟ้าอากาศ ความหวังปฏิบัติกับมันราวกับเป็นสถาปัตยกรรม การอ่านที่ซื่อสัตย์ของทั้งสมณสาส์นและของวิศวกรรมคือมันเป็นสถาปัตยกรรม และว่าผู้คนที่กำลังสร้างมันสามารถเลือกสร้างให้ดีได้ นี่คือข้อสรุปที่มีความหวังอย่างแท้จริง และเป็นข้อสรุปที่ได้มาด้วยการพิสูจน์ ไม่ใช่ด้วยการปรารถนา</p>
+<h2 id="section-11">อ้างอิง <a class="heading-anchor" href="#section-11" aria-label="ลิงก์ไปยัง อ้างอิง">#</a></h2>
+<ul>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/th/2026-05-11-lucy-besson-thai-thot-khwam-ru-ai-lae-quantum/index.html" title="แฟลชไดรฟ์ของ Lucy ทบทวนใหม่">แฟลชไดรฟ์ของ Lucy ทบทวนใหม่: การถ่ายโอนความรู้ AI และควอนตัม</a></li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/th/2026-05-14-kan-pongkan-banchi-yai-postquantum-kanngeon-borisat/index.html" title="Securing the Ledger">Securing the Ledger: คู่มือระดับคณะกรรมการสำหรับการเปลี่ยนผ่านสู่หลังควอนตัมในการเงินองค์กร</a></li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html" title="วิศวกรรม Agentic สำหรับธนาคาร">วิศวกรรม Agentic สำหรับธนาคาร: พิมพ์เขียวปี 2026</a></li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html">สถาปัตยกรรมโครงสร้างพื้นฐานคลาวด์ที่ดีที่สุดในปี 2026</a></li>
+<li>Pope Leo XIV, (2026). <a href="https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html" title="Magnifica Humanitas — ฉบับเต็ม Vatican.va">สมณสาส์น <em>Magnifica Humanitas</em> ว่าด้วยการพิทักษ์บุคคลในมนุษย์ในยุคปัญญาประดิษฐ์ ⧉</a> The Holy See</li>
+<li>Pope Leo XIII, (1891). <a href="https://www.vatican.va/content/leo-xiii/en/encyclicals/documents/hf_l-xiii_enc_15051891_rerum-novarum.html" title="Rerum Novarum — Vatican.va">สมณสาส์น <em>Rerum Novarum</em> ว่าด้วยทุนและแรงงาน ⧉</a> The Holy See</li>
+<li>Vatican News, (2026). <a href="https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html" title="Vatican News — Magnifica Humanitas">สมณสาส์นฉบับแรก <em>Magnifica humanitas</em> ของสมเด็จพระสันตะปาปาเลโอที่ 14 จะเผยแพร่ 25 พฤษภาคม ⧉</a> Vatican News</li>
+<li>National Catholic Reporter, (2026). <a href="https://www.ncronline.org/vatican/vatican-news/pope-leo-present-his-encyclical-ai-alongside-anthropic-co-founder" title="NCR — สมณสาส์น AI ของพระสันตะปาปาเลโอ">สมเด็จพระสันตะปาปาเลโอจะเปิดตัวสมณสาส์น AI พร้อมผู้ร่วมก่อตั้ง Anthropic ⧉</a> NCR</li>
+<li>TIME, (2026). <a href="https://time.com/article/2026/05/25/pope-leo-encyclical-ai-magnifica-humanitas/" title="TIME — สมณสาส์น AI ของพระสันตะปาปาเลโอ">สมเด็จพระสันตะปาปาเลโอใช้พระธรรมเทศนาสำคัญฉบับแรกเตือนภัยอันตรายของ AI ⧉</a> TIME</li>
+<li>CNN, (2026). <a href="https://www.cnn.com/2026/05/25/europe/pope-leo-ai-encyclical-magnifica-humanitas-intl" title="CNN — สมณสาส์น AI ของพระสันตะปาปาเลโอ">สมเด็จพระสันตะปาปาเลโอเตือนเรื่อง AI ที่หนุนสงครามในเอกสารทางเทววิทยาสำคัญฉบับแรก ⧉</a> CNN</li>
+<li>Ascension Press, (2026). <a href="https://ascensionpress.com/blogs/articles/a-complete-guide-to-pope-leo-s-encyclical-magnificent-humanitas" title="Ascension — คู่มือ Magnifica Humanitas">คู่มือสมบูรณ์สู่สมณสาส์นฉบับแรกของสมเด็จพระสันตะปาปาเลโอ: Magnifica Humanitas ⧉</a> Ascension Press</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">ตรวจสอบล่าสุด <time datetime="2026-05-26">2026-05-26</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="เกี่ยวกับผู้เขียน"><img alt="ภาพถ่าย Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/th/nueng-rao/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">ผู้เชี่ยวชาญด้านเทคโนโลยีธนาคารระดับอาวุโส เขียนเกี่ยวกับ AI ประยุกต์ การย้ายระบบ ISO 20022 การเข้ารหัสหลังควอนตัมสำหรับบริการการเงิน และการปฏิรูปเชิงโครงสร้างของการชำระเงินขายส่ง</span><span class="author-credentials">ประสบการณ์กว่า 20 ปีที่ HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/th/nueng-rao/index.html">ดูประวัติเต็ม</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">ทบทวนล่าสุด <time datetime="2026-05-28">2026-05-28</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">อ่านเพิ่มเติม</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/th/2026-05-11-lucy-besson-thai-thot-khwam-ru-ai-lae-quantum/index.html" class="related-media" aria-label="La memoria flash de Lucy, revisitada: lo que Besson vio sobre la migración del conocimiento a las máquinas" tabindex="-1"><img alt="Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles" src="https://cloudcdn.pro/api/transform?url=/stocks/images/lucy-knowledge-transfer-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="la-memoria-flash-de-lucy-revisitada-lo-que-besson-vio-sobre-la-migracion-del-con"><a href="https://sebastienrousseau.com/th/2026-05-11-lucy-besson-thai-thot-khwam-ru-ai-lae-quantum/index.html">La memoria flash de Lucy, revisitada: lo que Besson vio sobre la migración del conocimiento a las máquinas</a> <a class="heading-anchor" href="#la-memoria-flash-de-lucy-revisitada-lo-que-besson-vio-sobre-la-migracion-del-con" aria-label="ลิงก์ไปยัง La memoria flash de Lucy, revisitada: lo que Besson vio sobre la migración del conocimiento a las máquinas">#</a></h3><p><time datetime="2026-05-11">2026-05-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" class="related-media" aria-label="DORA กฎหมาย AI ของ EU และอธิปไตยข้อมูล: สแต็คการปฏิบัติตามกฎปี 2026 ของธนาคาร" tabindex="-1"><img alt="Compliance stack diagram showing DORA resilience, EU AI Act transparency, data sovereignty, cloud concentration risk, audit logs, model governance, and third-party providers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="dora-ai-eu-2026"><a href="https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026">DORA กฎหมาย AI ของ EU และอธิปไตยข้อมูล: สแต็คการปฏิบัติตามกฎปี 2026 ของธนาคาร</a> <a class="heading-anchor" href="#dora-ai-eu-2026" aria-label="ลิงก์ไปยัง DORA กฎหมาย AI ของ EU และอธิปไตยข้อมูล: สแต็คการปฏิบัติตามกฎปี 2026 ของธนาคาร">#</a></h3><p><time datetime="2026-05-28">2026-05-28</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/th/2026-05-17-witsawakam-agentic-thanakhan-phaen-2026" class="related-media" aria-label="Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los ingenieros que lo construirán" tabindex="-1"><img alt="Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows" src="https://cloudcdn.pro/api/transform?url=/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ingenieria-agentica-para-bancos-un-blueprint-2026-para-el-comex-y-los-ingenieros"><a href="https://sebastienrousseau.com/th/2026-05-17-witsawakam-agentic-thanakhan-phaen-2026">Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los ingenieros que lo construirán</a> <a class="heading-anchor" href="#ingenieria-agentica-para-bancos-un-blueprint-2026-para-el-comex-y-los-ingenieros" aria-label="ลิงก์ไปยัง Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los ingenieros que lo construirán">#</a></h3><p><time datetime="2026-05-17">2026-05-17</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="การแบ่งหน้าบทความ"><a class="post-pagination-prev" href="/th/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/"><span class="post-pagination-label">ก่อนหน้า</span><span class="post-pagination-title">Stablecoins vs Tokenised Deposits in 2026: What Banks Actually Need to Defend</span></a><a class="post-pagination-next" href="/th/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/"><span class="post-pagination-label">ถัดไป</span><span class="post-pagination-title">AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/th/nueng-rao/index.html">เกี่ยวกับเรา</a></li>
+              <li><a href="/th/tit-to/index.html">ติดต่อ</a></li>
+              <li><a href="/th/sang-duai-static-site-generator/index.html">สร้างด้วย Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">บทความ</h2>
+            <ul>
+              <li><a href="/th/bot-khwam/index.html">บทความ</a></li>
+              <li><a href="/th/ngan-wichai/index.html">งานวิจัย</a></li>
+              <li><a href="/th/thaek/index.html">แท็ก</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">ผลงาน</h2>
+            <ul>
+              <li><a href="/th/khrong-kan/index.html">โครงการ</a></li>
+              <li><a href="/th/rai-kan-len/index.html">Playlists</a></li>
+              <li><a href="/th/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">ติดต่อ</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="สมัครรับจดหมายข่าว">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — บันทึกวิจัยเรื่องการชำระเงิน AI และการเข้ารหัสหลังควอนตัม ไม่มีสแปม</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="khun@thanakhan.co.th" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">สมัครรับ</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="ลิงก์โซเชียล">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau บน Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau บน Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau บน LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau บน LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau บน Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau บน Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau บน YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau บน YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/th/kan-khao-thueng/index.html">การเข้าถึง</a> ·
+            <a href="/th/khwam-pen-suan-tua/index.html">ความเป็นส่วนตัว</a> ·
+            <a href="/th/khu-bangkhab/index.html">เงื่อนไข</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"th"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"th"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1024,"headline":"Magnifica Humanitas: การอ่านสมณสาส์น AI ฉบับแรกในมุมอุตสาหกรรม","description":"25 พฤษภาคม 2026 สมเด็จพระสันตะปาปาเลโอที่ 14 ทรงประกาศ Magnifica Humanitas สมณสาส์นฉบับแรกว่าด้วย AI อ่านเชิงวิศวกรรมเป็นกรอบจริยธรรมยุค AI ที่ลงเอยที่ความหวัง","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp","width":"100vw","height":"100vh","caption":"ภาพถ่ายเปิดรับแสงนานของลำแสงที่ก่อเป็นเส้นทางผ่านความมืดสู่ขอบฟ้าอันสว่างไสว ใช้เป็นภาพสื่อสำหรับการอ่านสมณสาส์น Magnifica Humanitas ในเชิงจริยธรรม AI"},"url":"https://sebastienrousseau.com/th/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/","datePublished":"2026-05-26T06:06:06+00:00","dateModified":"2026-05-27","inLanguage":"th","keywords":"Magnifica Humanitas, Pope Leo XIV, สมณสาส์น AI, จริยธรรม AI, จริยธรรมคอมพิวเตอร์ควอนตัม, Rerum Novarum, หอบาเบล, เทคโนโลยีไม่เป็นกลาง, ทรานส์ฮิวแมนิสม์, โพสต์ฮิวแมนิสม์, ศักดิ์ศรีความเป็นมนุษย์, รถไฟ รถยนต์ นิวเคลียร์ อินเทอร์เน็ต, ประวัติศาสตร์ความตื่นตระหนกทางเทคโนโลยี, Lucy การถ่ายโอนความรู้, ความหวัง AI, EU AI Act, DORA, Anthropic, Sebastien Rousseau","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/th/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"th"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/th/"},{"@type":"ListItem","position":3,"name":"Magnifica Humanitas: การอ่านสมณสาส์น AI ฉบับแรกในมุมอุตสาหกรรม","item":"https://sebastienrousseau.com/th/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="ค้นหา">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>ค้นหา</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="ค้นหา">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="ค้นหาในเอกสาร..." autocomplete="off" aria-label="ค้นหา"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> ปิด</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> นำทาง</span><span><kbd>Enter</kbd> เปิด</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

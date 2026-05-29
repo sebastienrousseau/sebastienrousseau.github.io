@@ -1,13 +1,13 @@
 ---
 title: "[ID DRAFT] Fully Homomorphic Encryption (FHE) in a Banking Quantum Era"
-subtitle: "Strengthen Data Security, Enhance AI Privacy, and Build Customer Trust in the Quantum Computing Era with FHE"
-description: "Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats."
+subtitle: "Perkuat Keamanan Data, Tingkatkan Privasi AI, dan Bangun Kepercayaan Nasabah di Era Quantum Computing dengan FHE"
+description: "Jelajahi bagaimana Fully Homomorphic Encryption merevolusi keamanan data di Perbankan dan Industri Keuangan, memastikan privasi terhadap ancaman quantum computing."
 date: "Mar 25, 2024"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp"
-banner_alt: "Banner for the Fully Homomorphic Encryption"
-keywords: "Fully Homomorphic Encryption, banking security, quantum computing, financial data encryption, FHE case studies, regulatory frameworks FHE, computational overhead FHE, FHE research, FHE hardware, data privacy laws"
+banner_alt: "Banner untuk Fully Homomorphic Encryption"
+keywords: "Fully Homomorphic Encryption, keamanan perbankan, quantum computing, enkripsi data keuangan, studi kasus FHE, kerangka regulasi FHE, overhead komputasi FHE, penelitian FHE, perangkat keras FHE, undang-undang privasi data"
 ---
 
 ![Banner for the Fully Homomorphic Encryption](https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp).class=\"img-fluid clearfix\"

@@ -2,6 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/cs/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs-CZ</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T06:06:06+00:00</news:publication_date>
+    <news:title>DORA, EU AI Act a suverenita dat: Compliance stack pro banky v roce 2026</news:title>
+    <news:keywords>DORA 2026, EU AI Act 2026, suverenita dat banky, provozní odolnost, koncentrační riziko v cloudu, AI compliance finančních služeb, vysokorizikové AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/cs/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs-CZ</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-27T06:06:06+00:00</news:publication_date>
+    <news:title>AI jako operační systém plateb: podvody, směrování, odolnost a compliance v roce 2026</news:title>
+    <news:keywords>AI platby 2026, podvody v platbách, směrování plateb, prevence podvodů v reálném čase, ISO 20022 AI, odolnost plateb, analýza transakcí, prognóza cash flow</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/cs/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs-CZ</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>Magnifica Humanitas: čtení první papežské encykliky o UI</news:title>
+    <news:keywords>Magnifica Humanitas, Pope Leo XIV, encyklika o AI, etika umělé inteligence, etika kvantových výpočtů, Rerum Novarum, Babylonská věž, technologie nikdy není neutrální, transhumanismus, posthumanismus, lidská důstojnost, technologické paradigma, vlak automobil jaderná energie internet, morální panika v dějinách technologií, Lucy přenos znalostí, naděje v AI, EU AI Act, DORA, Anthropic, Sebastien Rousseau</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/cs/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs-CZ</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>Stablecoiny vs tokenizované vklady v roce 2026: co banky skutečně musí bránit</news:title>
+    <news:keywords>stablecoiny 2026, tokenizované vklady, bankovní vklady, GENIUS Act, JPM Coin, depozitní tokeny, rezervy stablecoinů, bankovní financování, digitální peníze</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/cs/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs-CZ</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-25T06:06:06+00:00</news:publication_date>
+    <news:title>Programovatelná likvidita 2026: AI, tokenizované vklady, real-time treasury</news:title>
+    <news:keywords>programovatelná likvidita 2026, treasury orchestrace, AI treasury, tokenizované vklady, likvidita v reálném čase, stablecoiny treasury, multi-rail platby, virtuální účty, transakční bankovnictví, mobilita kolaterálu</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/cs/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</loc>
   <news:news>
     <news:publication>
@@ -45,8 +105,8 @@
       <news:language>cs-CZ</news:language>
     </news:publication>
     <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</news:title>
-    <news:keywords>tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, commercial bank money, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenised money, digital wallets, tokenised gilts</news:keywords>
+    <news:title>Tokenizované vklady v roce 2026: bankovní služby, konkurence stablecoinů a stav programovatelných peněz komerčních bank</news:title>
+    <news:keywords>tokenizované vklady 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoiny, komerční bankovní peníze, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenizované peníze, digitální peněženky, tokenizované gilts</news:keywords>
   </news:news>
 </url>
 <url>
@@ -57,8 +117,8 @@
       <news:language>cs-CZ</news:language>
     </news:publication>
     <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
-    <news:title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</news:title>
-    <news:keywords>cloud native banking 2026, Kubernetes banks, financial institutions cloud, DORA 2026, cloud resilience, Red Hat OpenShift, Portworx, VM container coexistence, bank cloud sovereignty, financial services cloud dependency, operational resilience, disaster recovery, cloud exit strategy, AI banking workloads</news:keywords>
+    <news:title>Cloud native bankovnictví v roce 2026: Kubernetes, DORA, suverenita a konec rozdělení mezi VM a kontejnery</news:title>
+    <news:keywords>cloud native bankovnictví 2026, Kubernetes banky, finanční instituce cloud, DORA 2026, cloudová odolnost, Red Hat OpenShift, Portworx, koexistence VM a kontejnerů, cloudová suverenita bank, závislost finančních služeb na cloudu, provozní odolnost, obnova po havárii, strategie odchodu z cloudu, AI bankovní workloady</news:keywords>
   </news:news>
 </url>
 <url>

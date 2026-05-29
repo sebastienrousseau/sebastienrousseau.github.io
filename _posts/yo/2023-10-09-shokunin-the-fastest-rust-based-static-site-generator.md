@@ -1,13 +1,13 @@
 ---
 title: "Static Site Generator: Fastest Rust-Based SSG"
-subtitle: "Static Site Generator, the fastest Rust-based static site generator for high-impact websites."
-description: "Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control."
+subtitle: "Static Site Generator, olùṣẹ̀dá ìkànnì ẹlẹ́sẹ̀ tó yára jùlọ tó dá lórí Rust fún àwọn ìkànnì wẹ́bù tí ó ní ipa."
+description: "Ṣe ìfúnni agbára fún ọ láti ṣẹ̀dá àwọn ìkànnì wẹ́bù ẹlẹ́sẹ̀ tí ó ní ipa pẹ̀lú àwọn àǹfààní àìlópin, ìgbélárugẹ àìlópin, àti ìhàjọbí wẹ́bù àkànṣe tí ìwọ ń darí."
 date: "Oct 09, 2023"
 language: "yo-NG"
 locale: "yo_NG"
 banner: "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
-banner_alt: "Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right"
-keywords: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
+banner_alt: "Kọ̀mpútà alàgbèéká tí a ti pa ní orí tábìlì funfun pẹ̀lú gilasi omi ní ọwọ́ òsì àti pẹ̀n, àkọ̀sílẹ̀ àti ọ̀gbìn ní ọwọ́ ọ̀tún"
+keywords: "pain001, iso 20022, àtọwọdọwọ ìsanwó, ìdínkù ìnáwó, ìṣiṣẹ́ ìsanwó, àwọn fáìlì ìsanwó, ìbẹ̀rẹ̀ ìsanwó, pain message, pain message standards, pain message validation"
 ---
 
 ![Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right](https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp).class="img-fluid clearfix"

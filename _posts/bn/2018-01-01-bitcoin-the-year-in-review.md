@@ -1,13 +1,13 @@
 ---
 title: "Bitcoin: A Year In Review of the First Cryptocurrency"
-subtitle: "Bitcoin, cryptocurrency, and the technology reshaping financial markets."
-description: "Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online."
+subtitle: "Bitcoin, cryptocurrency এবং আর্থিক বাজারকে নতুনভাবে রূপদানকারী প্রযুক্তি।"
+description: "Bitcoin: একটি পিয়ার-টু-পিয়ার ইলেকট্রনিক ক্যাশ সিস্টেম (P2P ECS) যা মানুষের অনলাইন লেনদেনের পদ্ধতিকে বৈপ্লবিকভাবে পরিবর্তন করার সম্ভাবনা রাখে।"
 date: "Jan 01, 2018"
 language: "bn-BD"
 locale: "bn_BD"
 banner: "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp"
-banner_alt: "A pile of gold and silver coins sitting on top of a table"
-keywords: "bitcoin, cryptocurrency, blockchain, decentralized finance, digital currency, peer-to-peer payments, digital gold, programmable money, future of money, financial revolution"
+banner_alt: "একটি টেবিলের উপর সোনা ও রুপার মুদ্রার স্তূপ"
+keywords: "bitcoin, cryptocurrency, blockchain, বিকেন্দ্রীভূত অর্থায়ন, ডিজিটাল মুদ্রা, পিয়ার-টু-পিয়ার পেমেন্ট, ডিজিটাল গোল্ড, প্রোগ্রামযোগ্য অর্থ, অর্থের ভবিষ্যৎ, আর্থিক বিপ্লব"
 ---
 
 ![A pile of gold and silver coins sitting on top of a table](https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp).class="img-fluid clearfix"

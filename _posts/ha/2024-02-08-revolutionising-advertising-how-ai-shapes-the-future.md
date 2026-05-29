@@ -1,13 +1,13 @@
 ---
 title: "Generative AI in Advertising: Amazon Rufus & Meta"
-subtitle: "How AI Transforms Consumer Interactions and Advertising Dynamics"
-description: "Explore how AI transforms advertising with insights on Amazon's Rufus and Meta's latest developments. Discover the impact on consumer engagement"
+subtitle: "Yadda AI ke Canza Hulɗar Masu Amfani da Ayyukan Tallace-tallace"
+description: "Bincika yadda AI ke canza duniyar talla ta hanyar fahimtar Amazon Rufus da sabbin ci gaban Meta. Gano tasirin kan hulɗar masu amfani da samfuran."
 date: "Feb 08, 2024"
 language: "ha-NG"
 locale: "ha_NG"
 banner: "https://cloudcdn.pro/stocks/images/advertising-ai.webp"
-banner_alt: "A robotic woman with butterflies and flowers"
-keywords: "AI in advertising, Amazon Rufus, Meta AI tools, consumer targeting, advertising technology, AI chatbots, digital marketing trends, AI analytics, creative AI, ad campaign optimization"
+banner_alt: "Mace mai fasalin robot tare da malam buɗe ido da furanni"
+keywords: "AI a cikin talla, Amazon Rufus, kayan aikin Meta AI, niyya ta masu amfani, fasahar talla, AI chatbots, yanayin tallan dijital, nazarin AI, AI mai ƙirƙira, inganta yaƙin talla"
 ---
 
 ![A robotic woman with butterflies and flowers](https://cloudcdn.pro/stocks/images/advertising-ai.webp).class="img-fluid clearfix"

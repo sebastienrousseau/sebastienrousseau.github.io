@@ -1,13 +1,13 @@
 ---
 title: "Unlocking Gemini 1.5: Google's AI Revolution Explained"
-subtitle: "A Deep Dive into Google's Latest AI Breakthrough"
-description: "Gemini 1.5 from Google scales context windows past 1M tokens. What that unlocks for retrieval-augmented finance and the trade-offs worth knowing."
+subtitle: "Nazari Mai Zurfi na Babban Nasarar AI ta Google"
+description: "Gemini 1.5 na Google yana faɗaɗa tagar mahallin sama da alamomi miliyan 1. Abin da wannan ke buɗewa don harkar kuɗi ta retrieval-augmented da wuraren musayar da ya kamata a san su."
 date: "Feb 19, 2024"
 language: "ha-NG"
 locale: "ha_NG"
 banner: "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp"
-banner_alt: "Abstract visualisation of AI networks, representing Gemini 1.5's capabilities"
-keywords: "Gemini 1.5, Google AI, Mixture-of-Experts architecture, computational efficiency, context window expansion, AI innovation, data analysis transformation, in-context learning, AI use cases, technology revolution"
+banner_alt: "Zane-zane na ban mamaki na hanyoyin sadarwar AI, wakiltar iyawar Gemini 1.5"
+keywords: "Gemini 1.5, Google AI, ginin Mixture-of-Experts, ingancin lissafi, faɗaɗa tagar mahallin, ƙirƙirar AI, canjin nazarin bayanai, koyon cikin mahallin, amfanin AI, juyin fasaha"
 ---
 
 ![Abstract visualisation of AI networks, representing Gemini 1.5's capabilities](https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp).class="img-fluid clearfix"

@@ -49,7 +49,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/cs/2026-05-16-nejlepsi-cloudova-architektura-pro-banky-2026/rss.xml"
-category: "Technologie"
+category: "Finance"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Plán cloudové architektury 2026 — šest základních pilířů, agentní ekonomika jednotky, reality multi-agentního HPC, imperativ kontinuální treasury, krize MCP bezpečnosti, kryptografická identita agenta, algoritmická nákaza a CloudCDN jako open-source referenční implementace pro krizi edge agentů."

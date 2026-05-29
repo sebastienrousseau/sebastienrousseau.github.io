@@ -2,6 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T06:06:06+00:00</news:publication_date>
+    <news:title>DORA, Đạo luật AI EU và chủ quyền dữ liệu: ngăn xếp tuân thủ 2026 cho ngân hàng</news:title>
+    <news:keywords>DORA 2026, Đạo luật AI EU 2026, chủ quyền dữ liệu ngân hàng, khả năng phục hồi vận hành, rủi ro tập trung cloud, tuân thủ AI dịch vụ tài chính, AI rủi ro cao</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-27T06:06:06+00:00</news:publication_date>
+    <news:title>AI là hệ điều hành của thanh toán: Gian lận, định tuyến, phục hồi và tuân thủ năm 2026</news:title>
+    <news:keywords>AI payments 2026, gian lận thanh toán, định tuyến thanh toán, phòng chống gian lận thời gian thực, ISO 20022 AI, khả năng phục hồi thanh toán, phân tích giao dịch, dự báo dòng tiền, FedNow, RTP, thương mại agentic</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>Magnifica Humanitas: Đọc thông điệp giáo hoàng đầu tiên về AI</news:title>
+    <news:keywords>Magnifica Humanitas, Pope Leo XIV, thông điệp AI, đạo đức trí tuệ nhân tạo, đạo đức điện toán lượng tử, Rerum Novarum, Tháp Babel, công nghệ không trung tính, chủ nghĩa siêu nhân, chủ nghĩa hậu nhân, phẩm giá con người, mô thức công nghệ, tàu hỏa ô tô hạt nhân internet, lịch sử hoảng loạn đạo đức công nghệ, Lucy chuyển giao tri thức, hy vọng AI, EU AI Act, DORA, Anthropic, Sebastien Rousseau</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-26T06:06:06+00:00</news:publication_date>
+    <news:title>Stablecoin vs Tiền gửi tokenized 2026: Ngân hàng cần bảo vệ điều gì</news:title>
+    <news:keywords>stablecoin 2026, tiền gửi tokenized, tiền gửi ngân hàng, GENIUS Act, JPM Coin, deposit tokens, dự trữ stablecoin, vốn ngân hàng, tiền số</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-25T06:06:06+00:00</news:publication_date>
+    <news:title>Thanh khoản lập trình được 2026: AI, tiền gửi tokenized và điều phối ngân quỹ thời gian thực</news:title>
+    <news:keywords>thanh khoản lập trình được 2026, điều phối ngân quỹ, AI ngân quỹ, tiền gửi tokenized, thanh khoản thời gian thực, stablecoin ngân quỹ, thanh toán đa kênh, tài khoản ảo, ngân hàng giao dịch, di động tài sản thế chấp</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/vi/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</loc>
   <news:news>
     <news:publication>
@@ -45,8 +105,8 @@
       <news:language>vi-VN</news:language>
     </news:publication>
     <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</news:title>
-    <news:keywords>tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, commercial bank money, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenised money, digital wallets, tokenised gilts</news:keywords>
+    <news:title>Tiền gửi mã hóa năm 2026: Dịch vụ ngân hàng, cạnh tranh với stablecoin và hiện trạng của tiền của ngân hàng thương mại có khả năng lập trình</news:title>
+    <news:keywords>tiền gửi token hóa 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds tài sản kỹ thuật số, stablecoins, tiền ngân hàng thương mại, BIS stablecoins, Project Agora, sổ cái hợp nhất, Deutsche Bank tiền kỹ thuật số, CBDC, tiền token hóa, ví kỹ thuật số, tokenised gilts</news:keywords>
   </news:news>
 </url>
 <url>
@@ -57,8 +117,8 @@
       <news:language>vi-VN</news:language>
     </news:publication>
     <news:publication_date>2026-05-20T06:06:06+00:00</news:publication_date>
-    <news:title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</news:title>
-    <news:keywords>cloud native banking 2026, Kubernetes banks, financial institutions cloud, DORA 2026, cloud resilience, Red Hat OpenShift, Portworx, VM container coexistence, bank cloud sovereignty, financial services cloud dependency, operational resilience, disaster recovery, cloud exit strategy, AI banking workloads</news:keywords>
+    <news:title>Ngân hàng cloud native năm 2026: Kubernetes, DORA, chủ quyền và hồi kết của ranh giới giữa VM và container</news:title>
+    <news:keywords>cloud native banking 2026, Kubernetes ngân hàng, tổ chức tài chính đám mây, DORA 2026, khả năng phục hồi đám mây, Red Hat OpenShift, Portworx, cùng tồn tại VM container, chủ quyền đám mây ngân hàng, phụ thuộc đám mây dịch vụ tài chính, khả năng phục hồi hoạt động, khắc phục thảm họa, chiến lược thoát đám mây, khối lượng công việc AI ngân hàng</news:keywords>
   </news:news>
 </url>
 <url>
