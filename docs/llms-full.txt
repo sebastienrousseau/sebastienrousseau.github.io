@@ -2,11 +2,125 @@
 
 Every article on sebastienrousseau.com, newest-first, with navigation furniture stripped. Provided for LLM ingestion under Apache-2.0 attribution. See https://sebastienrousseau.com/ for the canonical formatting.
 
+## Turning Markdown into Accessible, SEO-Ready, Structured HTML with Rust in 2026
+
+_June 20, 2026_  ·  [https://sebastienrousseau.com/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/](https://sebastienrousseau.com/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/)
+
+# Turning Markdown into Accessible, SEO-Ready, Structured HTML with Rust in 2026
+
+
+<!-- lead-start -->
+
+<!-- lead-end -->
+
+Markdown is easy to write, but publishing-grade HTML is hard to generate well. It needs semantic structure, accessibility, metadata, tables of contents, structured data, math, diagrams, minification, and safe output. HTML Generator is useful because it treats Markdown rendering as a quality pipeline rather than a simple text conversion step.
+
+The open-source reference point for this article is [html-generator ⧉](https://github.com/sebastienrousseau/html-generator "html-generator"). The repository is positioned as: a Rust library that turns Markdown into WCAG-compliant, SEO-friendly HTML with front matter, table of contents, JSON-LD, MathML, Mermaid, minification, and native or WebAssembly execution.
+
+---
+
+> **Executive Summary / Key Takeaways**
+>
+> - **Markdown is not the final product.** The real output is accessible, structured, secure, SEO-ready HTML.
+> - **Front matter and metadata belong in the pipeline.** Publishing systems need consistent metadata extraction and rendering.
+> - **Accessibility should be generated, not patched.** Semantic HTML and ARIA-aware output reduce downstream remediation.
+> - **JSON-LD matters for discoverability.** Structured data connects content to search, social, and AI-discovery systems.
+> - **WASM expands the runtime model.** The same generation logic can run in native tools or browser-like environments.
+>
+---
+
+## Why This Open-Source Project Matters in 2026
+
+The strategic value of open source in 2026 is no longer limited to transparency, reuse, or developer goodwill. For banks and financial institutions, open-source infrastructure has become a way to inspect assumptions, test controls, reduce vendor opacity, and turn architectural claims into code that can be read, forked, hardened, and operated. The most useful projects are not demos. They are reference implementations that reveal how security, accessibility, performance, compliance, and developer experience fit together.
+
+This is the lens through which html-generator should be understood. It is not simply a repository; it is a concrete design argument. It says that critical infrastructure should be auditable, composable, documented, testable, and understandable by the people who depend on it. In financial services, that matters because systems increasingly sit at the intersection of agentic AI, real-time payments, post-quantum cryptography, cloud-native resilience, structured data, and regulatory evidence.
+
+## Architecture Lens
+
+| Layer | Design Decision | Why It Matters | Risk if Mishandled |
+|---|---|---|---|
+| **Input** | Markdown and front matter | Matches authoring workflows | Metadata drift |
+| **Structure** | TOC and semantic HTML | Improves navigation and accessibility | Flat, inaccessible pages |
+| **Rich content** | MathML and Mermaid support | Supports technical writing | Broken diagrams and equations |
+| **SEO** | JSON-LD and metadata generation | Improves machine readability | Content that search and agents misread |
+| **Runtime** | Native Rust and WASM | Supports CLI, server, and browser contexts | Single-environment dependency |
+
+## Signals to Track
+
+| Signal | What It Means | Reference |
+|---|---|---|
+| **WCAG-compliant output** | Accessibility is treated as an output requirement | [html-generator ⧉](https://github.com/sebastienrousseau/html-generator "html-generator repository") |
+| **JSON-LD support** | Structured data is part of content generation | [html-generator ⧉](https://github.com/sebastienrousseau/html-generator "html-generator repository") |
+| **MathML and Mermaid** | The project supports technical publishing needs | [html-generator ⧉](https://github.com/sebastienrousseau/html-generator "html-generator repository") |
+| **WASM target** | The generator can run outside traditional server contexts | [html-generator ⧉](https://github.com/sebastienrousseau/html-generator "html-generator repository") |
+| **Rust implementation** | The project fits a safe, fast publishing-toolchain narrative | [html-generator ⧉](https://github.com/sebastienrousseau/html-generator "html-generator repository") |
+
+## Rendering Is Not Enough
+
+Many Markdown pipelines stop at HTML conversion. Publishing systems need more. They need anchors, accessible headings, semantic tables, alt text handling, metadata, schema, canonical URLs, cards, feeds, and consistent output. HTML Generator belongs in that broader publishing pipeline.
+
+## Structured Data for AI Discovery
+
+Search engines, social platforms, and AI discovery systems increasingly depend on structured metadata. JSON-LD and clean semantic HTML help machines interpret content correctly. This is especially important for long-form technical articles where context and authorship matter.
+
+## Accessibility as a Generation Target
+
+Accessibility should not depend entirely on manual review. A generator can enforce heading structure, table semantics, ARIA conventions, image metadata, and navigable output. That makes accessibility more scalable across large content estates.
+
+## What This Means by Audience
+
+### For Bank Technology Leaders
+
+The question is whether the project can help turn a strategic pressure into an executable architecture. The value is strongest when the repository gives teams something concrete to inspect: interfaces, configuration, tests, security boundaries, deployment assumptions, and failure modes.
+
+### For Security and Risk Teams
+
+The project should be evaluated not only for features but for control evidence. Useful open-source financial infrastructure exposes how identity, secrets, validation, audit logs, rate limits, signatures, provenance, and recovery are meant to work.
+
+### For Developers and Platform Engineers
+
+The most important test is whether the project reduces cognitive load without hiding important mechanics. Good open source should make the safe path the easy path while still allowing experienced engineers to understand and modify the implementation.
+
+### For Contributors
+
+The opportunity is to strengthen the project where real institutions need assurance: documentation, examples, conformance tests, CI hardening, threat models, performance profiles, accessibility checks, and integration guides.
+
+## Conclusion
+
+The reason to write about html-generator is that it turns a wider industry problem into something concrete. In 2026, banks do not need more abstract transformation language. They need inspectable systems that show how modern infrastructure can be built, secured, tested, and governed. Open source is the most credible way to make that argument visible.
+
+## Frequently Asked Questions
+
+**What does HTML Generator do?**
+
+It converts Markdown into structured, accessible, SEO-friendly HTML with support for metadata and rich technical content.
+
+**Why not use a generic Markdown renderer?**
+
+Generic rendering often ignores publishing concerns such as structured data, accessibility, metadata, diagrams, math, and minification.
+
+**Who is the audience?**
+
+Static-site builders, documentation teams, technical writers, Rust developers, and publishing-platform engineers.
+
+**How does this relate to the static-site generator?**
+
+HTML Generator can be positioned as one content-processing layer inside a larger secure publishing pipeline.
+
+## References
+
+- GitHub, (2026). [html-generator repository ⧉](https://github.com/sebastienrousseau/html-generator "html-generator repository").
+- W3C, (2026). [Web Content Accessibility Guidelines ⧉](https://www.w3.org/WAI/standards-guidelines/wcag/ "Web Content Accessibility Guidelines").
+- Schema.org, (2026). [Schema.org structured data ⧉](https://schema.org/ "Schema.org structured data").
+
+---
+
 ## DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks
 
 _May 28, 2026_  ·  [https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/](https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/)
 
 # DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks
+
 
 
 
@@ -121,6 +235,7 @@ Success should be measured by unit economics, resilience evidence, data quality,
 _May 27, 2026_  ·  [https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/](https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/)
 
 # AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026
+
 
 
 
@@ -241,6 +356,7 @@ _May 26, 2026_  ·  [https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tok
 
 
 
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -351,6 +467,7 @@ Success should be measured by unit economics, resilience evidence, data quality,
 _May 26, 2026_  ·  [https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/](https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/)
 
 # Magnifica Humanitas: An AI-Industry Reading of the First Papal Encyclical on Artificial Intelligence
+
 
 
 
@@ -511,6 +628,7 @@ _May 25, 2026_  ·  [https://sebastienrousseau.com/2026-05-25-programmable-liqui
 
 
 
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -621,6 +739,7 @@ Success should be measured by unit economics, resilience evidence, data quality,
 _May 24, 2026_  ·  [https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/](https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/)
 
 # The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments
+
 
 
 
@@ -742,6 +861,7 @@ _May 23, 2026_  ·  [https://sebastienrousseau.com/2026-05-23-agentic-payments-b
 
 
 
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -854,6 +974,7 @@ Banks should start with low-risk, low-value, bounded use cases where mandates, s
 _May 22, 2026_  ·  [https://sebastienrousseau.com/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/](https://sebastienrousseau.com/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/)
 
 # The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture
+
 
 
 
@@ -1002,6 +1123,7 @@ The connection is groove, not strict genre labelling. Festivals such as Mostly J
 _May 21, 2026_  ·  [https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/](https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/)
 
 # Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money
+
 
 
 
@@ -1270,6 +1392,7 @@ _May 20, 2026_  ·  [https://sebastienrousseau.com/2026-05-20-cloud-native-banki
 
 
 
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -1409,6 +1532,7 @@ The biggest mistake is adopting containers without platform controls. If Kuberne
 _May 19, 2026_  ·  [https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026/](https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026/)
 
 # Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability
+
 
 
 
@@ -1579,6 +1703,7 @@ No. Stablecoins may influence cross-border payment design, but wholesale payment
 _May 18, 2026_  ·  [https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/](https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/)
 
 # The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer
+
 
 
 
@@ -2029,6 +2154,7 @@ Three things, sequenced. First, produce the AI Bill of Materials — the complet
 _May 16, 2026_  ·  [https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/)
 
 # The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services
+
 
 
 
@@ -6466,6 +6592,7 @@ For team use, all CLI flags can be expressed in a TOML config file:
 
 ```toml
 # libmake.toml
+
 
 
 <!-- lead-start -->

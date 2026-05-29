@@ -4,13 +4,22 @@
   <link href="https://sebastienrousseau.com/it/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/it/"/>
   <id>https://sebastienrousseau.com/it/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T19:52:16+00:00</updated>
+  <entry>
+    <title>Trasformare Markdown in HTML accessibile, SEO e strutturato con Rust nel 2026</title>
+    <link href="https://sebastienrousseau.com/it/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/"/>
+    <id>https://sebastienrousseau.com/it/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/</id>
+    <updated>2026-05-29T19:52:16+00:00</updated>
+    <published>2026-05-29T19:52:16+00:00</published>
+    <summary>HTML Generator è una libreria Rust che trasforma Markdown in HTML conforme a WCAG e ottimizzato per la SEO, con front matter, TOC, JSON-LD, MathML, Mermaid, minificazione e WASM.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI Act e sovranità dei dati: lo stack di conformità 2026 per le banche</title>
     <link href="https://sebastienrousseau.com/it/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>
     <id>https://sebastienrousseau.com/it/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</id>
-    <updated>2026-05-28T06:26:19+00:00</updated>
-    <published>2026-05-28T06:26:19+00:00</published>
+    <updated>2026-05-29T19:52:16+00:00</updated>
+    <published>2026-05-29T19:52:16+00:00</published>
     <summary>DORA, EU AI Act, GDPR, rischio di concentrazione cloud e sovranità dei dati convergono nello stack di conformità 2026 per le banche europee.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -18,8 +27,8 @@
     <title>Pagamenti agentici nel banking: consenso, responsabilità e nuova UX 2026</title>
     <link href="https://sebastienrousseau.com/it/2026-05-23-agentic-pagamenti-banking-consent-liability-new-payment-ux-2026/"/>
     <id>https://sebastienrousseau.com/it/2026-05-23-agentic-pagamenti-banking-consent-liability-new-payment-ux-2026/</id>
-    <updated>2026-05-28T06:26:19+00:00</updated>
-    <published>2026-05-28T06:26:19+00:00</published>
+    <updated>2026-05-29T19:52:16+00:00</updated>
+    <published>2026-05-29T19:52:16+00:00</published>
     <summary>Nel 2026 i pagamenti agentici sono passati dal concetto alla transazione reale. Per le banche la sfida non è più se gli agenti IA possano disporre pagamenti, ma come strutturare consenso, responsabilità, identità, auditabilità, controlli antifrode e interoperabilità dei protocolli.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>

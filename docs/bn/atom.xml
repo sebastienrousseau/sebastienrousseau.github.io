@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/bn/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/bn/"/>
   <id>https://sebastienrousseau.com/bn/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T19:52:16+00:00</updated>
+  <entry>
+    <title>২০২৬-এ Rust দিয়ে Markdown-কে অ্যাক্সেসিবল, SEO-প্রস্তুত, কাঠামোগত HTML-এ রূপান্তর</title>
+    <link href="https://sebastienrousseau.com/bn/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/"/>
+    <id>https://sebastienrousseau.com/bn/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/</id>
+    <updated>2026-05-29T19:52:16+00:00</updated>
+    <published>2026-05-29T19:52:16+00:00</published>
+    <summary>HTML Generator একটি Rust লাইব্রেরি যা Markdown-কে ফ্রন্ট ম্যাটার, TOC, JSON-LD, MathML, Mermaid, মিনিফিকেশন এবং WASM সমর্থন সহ WCAG-অনুবর্তী, SEO-বান্ধব HTML-এ রূপান্তর করে।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI আইন ও ডেটা সার্বভৌমত্ব: ব্যাংকের জন্য ২০২৬-এর কমপ্লায়েন্স স্ট্যাক</title>
     <link href="https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

@@ -3,10 +3,10 @@
 # Front Matter (YAML)
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "HTML Generator: Accessible, SEO-Ready Markdown to HTML architecture diagram for open-source banking infrastructure in 2026"
-banner_height: "571"
-banner_width: "1425"
-banner: "https://cloudcdn.pro/stock/images/html-generator-rust-2026-banner.webp"
+banner_alt: "Engineer at a quiet desk under warm light — symbolising the publishing-grade quality pipeline HTML Generator runs on every Markdown document: WCAG, JSON-LD, MathML, Mermaid, minification, and WASM"
+banner_height: "1597"
+banner_width: "2584"
+banner: "https://cloudcdn.pro/stocks/images/akande-voice-assistant-desk.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -88,6 +88,8 @@ twitter_site: "@wwdseb"
 twitter_title: "HTML Generator: Accessible, SEO-Ready Markdown to HTML"
 twitter_url: "https://sebastienrousseau.com/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026"
 
+excerpt: "HTML Generator turns Markdown into publishing-grade HTML — WCAG-compliant, SEO-ready, front-matter-aware, JSON-LD enriched, MathML + Mermaid capable, minified, and shippable as native Rust or WebAssembly. Markdown rendering as a quality pipeline, not a text conversion."
+
 # Humans.txt - The Humans.txt front matter (YAML).
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
@@ -101,6 +103,21 @@ site_software: "Static Site Generator, Rust"
 ---
 
 # Turning Markdown into Accessible, SEO-Ready, Structured HTML with Rust in 2026
+
+
+<!-- lead-start -->
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> HTML Generator is a Rust library that turns Markdown into WCAG-compliant, SEO-friendly HTML with front matter, TOC, JSON-LD, MathML, Mermaid, minification, and WASM support.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Why This Open-Source Project Matters in 2026.</strong> The strategic value of open source in 2026 is no longer limited to transparency, reuse, or developer goodwill.</li>
+  <li><strong>Signals to Track.</strong> Many Markdown pipelines stop at HTML conversion.</li>
+  <li><strong>Rendering Is Not Enough.</strong> Many Markdown pipelines stop at HTML conversion.</li>
+  <li><strong>Structured Data for AI Discovery.</strong> Search engines, social platforms, and AI discovery systems increasingly depend on structured metadata.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html">OpenVoice: Leading Innovation in Voice Cloning Technology</a>, <a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">RustLogs (RLG): Structured Logging Library for Rust</a>, <a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html">Alien Studio: My Tech-to Art Journey in Photography</a>.</p>
+</aside>
+<!-- lead-end -->
 
 Markdown is easy to write, but publishing-grade HTML is hard to generate well. It needs semantic structure, accessibility, metadata, tables of contents, structured data, math, diagrams, minification, and safe output. HTML Generator is useful because it treats Markdown rendering as a quality pipeline rather than a simple text conversion step.
 
@@ -203,6 +220,14 @@ HTML Generator can be positioned as one content-processing layer inside a larger
 - Schema.org, (2026). [Schema.org structured data ⧉](https://schema.org/ "Schema.org structured data").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, payments infrastructure, tokenised money, ISO 20022, post-quantum security, cloud-native financial services, open-source infrastructure, and regulated digital markets.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-06-20">2026-06-20</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html" class="related-media" aria-label="OpenVoice: Leading Innovation in Voice Cloning Technology" tabindex="-1"><img alt="Banner of Vibrant gradient overlay on repeated profiles" src="https://cloudcdn.pro/stocks/images/open-voice.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html">OpenVoice: Leading Innovation in Voice Cloning Technology</a></h3><p><time datetime="2024-04-01">2024-04-01</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html" class="related-media" aria-label="RustLogs (RLG): Structured Logging Library for Rust" tabindex="-1"><img alt="Banner for RustLogs (RLG)" src="https://cloudcdn.pro/stocks/images/rustlogs.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">RustLogs (RLG): Structured Logging Library for Rust</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html" class="related-media" aria-label="Alien Studio: My Tech-to Art Journey in Photography" tabindex="-1"><img alt="Sunset's muse, a serene glance; beauty in stillness" src="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html">Alien Studio: My Tech-to Art Journey in Photography</a></h3><p><time datetime="2024-01-15">2024-01-15</time></p></footer></article>
+</div>
+</aside>
 <!-- enrich-end -->

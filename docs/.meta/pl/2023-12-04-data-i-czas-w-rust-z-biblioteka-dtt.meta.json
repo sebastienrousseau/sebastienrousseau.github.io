@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
-  "title": "Opanowanie daty i czasu w Rust z biblioteką DTT",
-  "locale": "pl_PL",
-  "subtitle": "Kompletny zestaw narzędzi do obsługi daty i czasu w Rust",
-  "date": "Dec 04, 2023",
-  "banner_alt": "Wizualizacja biblioteki DTT do obsługi daty i czasu",
   "keywords": "DTT, Rust, data, czas, strefa czasowa, biblioteka, open source",
+  "title": "Opanowanie daty i czasu w Rust z biblioteką DTT",
+  "subtitle": "Kompletny zestaw narzędzi do obsługi daty i czasu w Rust",
+  "description": "DTT to biblioteka Rust do obsługi daty i czasu, oferująca parsowanie, formatowanie i konwersję stref czasowych.",
+  "banner_alt": "Wizualizacja biblioteki DTT do obsługi daty i czasu",
   "language": "pl-PL",
-  "description": "DTT to biblioteka Rust do obsługi daty i czasu, oferująca parsowanie, formatowanie i konwersję stref czasowych."
+  "locale": "pl_PL",
+  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
+  "date": "Dec 04, 2023"
 }

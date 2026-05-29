@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/ha/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ha/"/>
   <id>https://sebastienrousseau.com/ha/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T19:52:16+00:00</updated>
+  <entry>
+    <title>Mai da Markdown ya zama HTML mai Samun Damar, Shiri don SEO da Rust a 2026</title>
+    <link href="https://sebastienrousseau.com/ha/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/"/>
+    <id>https://sebastienrousseau.com/ha/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/</id>
+    <updated>2026-05-29T19:52:16+00:00</updated>
+    <published>2026-05-29T19:52:16+00:00</published>
+    <summary>HTML Generator dakin karatu ne na Rust da ke mai da Markdown ya zama HTML mai bin WCAG, mai dacewa da SEO tare da front matter, JSON-LD, MathML, Mermaid, da WASM.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI Act, da Ikon Mallakar Bayanai: Tarin Bin Doka na 2026 ga Bankuna</title>
     <link href="https://sebastienrousseau.com/ha/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

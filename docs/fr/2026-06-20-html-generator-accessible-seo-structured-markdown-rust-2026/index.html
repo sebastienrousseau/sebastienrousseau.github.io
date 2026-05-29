@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Sat, 20 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Sat, 20 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>Transformer Markdown en HTML accessible, prêt pour le SEO et structuré avec Rust en 2026 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="HTML Generator est une bibliothèque Rust qui transforme Markdown en HTML conforme WCAG et adapté au SEO, avec front matter, TOC, JSON-LD, MathML, Mermaid, minification et WASM.">
+<meta name="keywords" content="HTML Generator, Rust Markdown vers HTML, HTML WCAG, HTML SEO, JSON-LD, MathML, Mermaid, front matter, WASM">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="HTML Generator: Accessible, SEO-Ready Markdown to HTML">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-2MWsqg92sbAQTtS1jFEsSBQwTt0TNUJqjJ+ngF18DWU=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-fvR+2R7eBXKbqX0ciJ9KKVm/GXoSnEygg3e2DkhhPDc=' 'sha256-lcRU2AsMN6h9VGOZYHrIuiM9yleRMpou+++3MjYZrv4=' 'sha256-tyErzTLyQa4T+OrnQURRE7d4nHbNZsUsHQOhzMdNWMs=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/fr/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Flux Atom" href="/fr/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Transformer Markdown en HTML accessible, prêt pour le SEO et structuré avec Rust en 2026 — Sebastien Rousseau">
+<meta property="og:description" content="HTML Generator est une bibliothèque Rust qui transforme Markdown en HTML conforme WCAG et adapté au SEO, avec front matter, TOC, JSON-LD, MathML, Mermaid, minification et WASM.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/fr/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/akande-voice-assistant-desk.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Transformer Markdown en HTML accessible, prêt pour le SEO et structuré avec Rust en 2026 — Sebastien Rousseau">
+<meta name="twitter:description" content="HTML Generator est une bibliothèque Rust qui transforme Markdown en HTML conforme WCAG et adapté au SEO, avec front matter, TOC, JSON-LD, MathML, Mermaid, minification et WASM.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/akande-voice-assistant-desk.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/fr/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Aller au contenu principal</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Basculer la navigation" />
+      <div class="wrap">
+        <a class="ap-brand" href="/fr/index.html" aria-label="Accueil de Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Navigation principale">
+          <ul class="ap-menu">
+            <li><a href="/fr/a-propos/index.html">À propos</a></li>
+            <li><a href="/fr/articles/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/fr/publications/index.html">Publications</a></li>
+            <li><a href="/fr/sujets/index.html">Sujets</a></li>
+            <li><a href="/fr/projets/index.html">Projets</a></li>
+            <li><a href="/fr/playlists/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Activer le thème sombre" aria-pressed="false" title="Changer de thème">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Rechercher (Cmd ou Ctrl + K)" title="Rechercher (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Langue">
+            <button type="button" class="ap-lang-toggle" aria-label="FR, Changer de langue" aria-expanded="false" aria-haspopup="menu" title="Changer de langue">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">FR</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/fr/contact/index.html" aria-label="Me contacter">Me contacter ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Basculer la navigation">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Transformer Markdown en HTML accessible, prêt pour le SEO et structuré avec Rust en 2026</h1>
+      <p class="sub">La publication Markdown ne se réduit pas au rendu ; elle exige accessibilité, données structurées, front matter, diagrammes, mathématiques, minification et génération HTML sûre.</p>
+    <nav class="article-tags" aria-label="Sujets"><a href="/fr/etiquettes/index.html#h3-html-generator" class="article-tag" rel="tag">HTML Generator</a><a href="/fr/etiquettes/index.html#h3-rust-markdown-vers-html" class="article-tag" rel="tag">Rust Markdown vers HTML</a><a href="/fr/etiquettes/index.html#h3-html-wcag" class="article-tag" rel="tag">HTML WCAG</a><a href="/fr/etiquettes/index.html#h3-html-seo" class="article-tag" rel="tag">HTML SEO</a><a href="/fr/etiquettes/index.html#h3-json-ld" class="article-tag" rel="tag">JSON-LD</a><a href="/fr/etiquettes/index.html#h3-mathml" class="article-tag" rel="tag">MathML</a><a href="/fr/etiquettes/index.html#h3-mermaid" class="article-tag" rel="tag">Mermaid</a><a href="/fr/etiquettes/index.html#h3-front-matter" class="article-tag" rel="tag">front matter</a><a href="/fr/etiquettes/index.html#h3-wasm" class="article-tag" rel="tag">WASM</a></nav><div class="article-meta"><a href="/fr/a-propos/index.html" class="article-author" rel="author"><img alt="Portrait de Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-20T06:06:06+00:00" class="meta-pub">Publié le 20 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Temps de lecture estimé">5 min de lecture</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Sommaire</h2><ol><li><a href="#pourquoi-ce-projet-open-source-compte-en-2026">Pourquoi ce projet open source compte en 2026</a></li><li><a href="#grille-d-analyse-architecturale">Grille d'analyse architecturale</a></li><li><a href="#signaux-a-suivre">Signaux à suivre</a></li><li><a href="#le-rendu-ne-suffit-pas">Le rendu ne suffit pas</a></li><li><a href="#donnees-structurees-pour-la-decouverte-par-ia">Données structurées pour la découverte par IA</a></li><li><a href="#l-accessibilite-comme-cible-de-generation">L'accessibilité comme cible de génération</a></li><li><a href="#ce-que-cela-signifie-par-public">Ce que cela signifie par public</a></li><li><a href="#conclusion">Conclusion</a></li><li><a href="#foire-aux-questions">Foire aux questions</a></li><li><a href="#references">Références</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> HTML Generator est une bibliothèque Rust qui transforme Markdown en HTML conforme WCAG et adapté au SEO, avec front matter, TOC, JSON-LD, MathML, Mermaid, minification et WASM.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Pourquoi ce projet open source compte en 2026.</strong> La valeur stratégique de l&#x27;open source en 2026 ne se limite plus à la transparence, à la réutilisation ou à la bonne volonté envers les développeurs.</li>  <li><strong>Signaux à suivre.</strong> Beaucoup de pipelines Markdown s&#x27;arrêtent à la conversion HTML.</li>  <li><strong>Le rendu ne suffit pas.</strong> Beaucoup de pipelines Markdown s&#x27;arrêtent à la conversion HTML.</li>  <li><strong>Données structurées pour la découverte par IA.</strong> Les moteurs de recherche, les plateformes sociales et les systèmes de découverte par IA dépendent de plus en plus de métadonnées structurées.</li></ul></aside><h1>Transformer Markdown en HTML accessible, prêt pour le SEO et structuré avec Rust en 2026</h1>
+<!-- lead-start -->
+<aside class="lead" aria-label="En un coup d'œil">
+<p><strong>En bref.</strong> Markdown est facile à écrire ; produire un HTML de qualité publication l'est beaucoup moins. HTML Generator (la bibliothèque Rust open source) traite le rendu comme un pipeline — analyse du front matter, HTML5 sémantique, validation WCAG 2.1 AA, données structurées JSON-LD, table des matières, MathML, diagrammes Mermaid, minification et sortie sûre — livré en Rust natif ou WebAssembly.</p>
+<p><strong>Points clés à retenir :</strong></p>
+<ul>
+<li><strong>Le rendu est une barrière qualité.</strong> Structure sémantique, accessibilité, métadonnées et échappement sûr appartiennent au rendu, et non à une couche ajoutée après coup.</li>
+<li><strong>Les données structurées accompagnent le document.</strong> JSON-LD généré à partir du front matter — sans extension séparée.</li>
+<li><strong>Mathématiques et diagrammes sans JS à l'exécution.</strong> MathML et Mermaid compilés dans la sortie.</li>
+<li><strong>Même moteur, natif ou WASM.</strong> Construction côté serveur ou dans le navigateur ; mêmes réglages par défaut, même sortie.</li>
+<li><strong>L'open source, c'est la piste d'audit.</strong> Chaque transformation est inspectable en Rust.</li>
+</ul>
+<p><strong>Lectures complémentaires :</strong> <a title="Banque cloud natif en 2026 : Kubernetes, DORA, souveraineté et fin de la fracture VM/conteneurs" href="/fr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html">Cloud-native banking</a> · <a title="L&#x27;IA comme système d&#x27;exploitation des paiements : fraude, routage, résilience et conformité en 2026" href="/fr/2026-05-27-ai-operating-system-paiements-fraud-routing-resilience-compliance-2026/index.html">AI operating system for payments</a> · <a title="DORA, EU AI Act et souveraineté des données : la pile de conformité 2026 pour les banques" href="/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html">DORA + AI Act compliance stack</a></p>
+</aside>
+<!-- lead-end -->
+<p>Markdown est facile à écrire, mais produire un HTML de qualité publication ne l'est pas. Il faut une structure sémantique, de l'accessibilité, des métadonnées, des tables des matières, des données structurées, des mathématiques, des diagrammes, de la minification et une sortie sûre. HTML Generator est utile parce qu'il traite le rendu Markdown comme un pipeline de qualité plutôt que comme une simple étape de conversion textuelle.</p>
+<p>La référence open source de cet article est <a href="https://github.com/sebastienrousseau/html-generator" title="html-generator">html-generator ⧉</a>. Le dépôt se positionne ainsi : une bibliothèque Rust qui transforme Markdown en HTML conforme WCAG et adapté au SEO, avec front matter, table des matières, JSON-LD, MathML, Mermaid, minification, et exécution en natif ou WebAssembly.</p>
+<hr />
+<blockquote>
+<p><strong>Synthèse exécutive / Points clés à retenir</strong></p>
+<ul>
+<li><strong>Markdown n'est pas le produit final.</strong> La véritable sortie est un HTML accessible, structuré, sécurisé et prêt pour le SEO.</li>
+<li><strong>Le front matter et les métadonnées font partie du pipeline.</strong> Les systèmes de publication exigent une extraction et un rendu cohérents des métadonnées.</li>
+<li><strong>L'accessibilité doit être générée, et non corrigée.</strong> Une sortie HTML sémantique et consciente d'ARIA réduit la remédiation en aval.</li>
+<li><strong>JSON-LD compte pour la découvrabilité.</strong> Les données structurées relient le contenu aux moteurs de recherche, aux plateformes sociales et aux systèmes de découverte par IA.</li>
+<li><strong>WASM élargit le modèle d'exécution.</strong> La même logique de génération peut s'exécuter dans des outils natifs ou des environnements de type navigateur.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="pourquoi-ce-projet-open-source-compte-en-2026">Pourquoi ce projet open source compte en 2026 <a class="heading-anchor" href="#pourquoi-ce-projet-open-source-compte-en-2026" aria-label="Lien vers Pourquoi ce projet open source compte en 2026">#</a></h2>
+<p>La valeur stratégique de l'open source en 2026 ne se limite plus à la transparence, à la réutilisation ou à la bonne volonté envers les développeurs. Pour les banques et les institutions financières, l'infrastructure open source est devenue un moyen d'inspecter les hypothèses, de tester les contrôles, de réduire l'opacité des fournisseurs et de transformer des promesses d'architecture en code que l'on peut lire, forker, durcir et exploiter. Les projets les plus utiles ne sont pas des démonstrations. Ce sont des implémentations de référence qui révèlent comment sécurité, accessibilité, performance, conformité et expérience développeur s'articulent.</p>
+<p>C'est sous cet angle qu'il faut comprendre html-generator. Ce n'est pas qu'un simple dépôt ; c'est un argument de conception concret. Il affirme que les infrastructures critiques doivent être auditables, composables, documentées, testables et compréhensibles par celles et ceux qui en dépendent. Dans les services financiers, cela compte parce que les systèmes se situent de plus en plus à l'intersection de l'IA agentique, des paiements en temps réel, de la cryptographie post-quantique, de la résilience cloud-native, des données structurées et de la preuve réglementaire.</p>
+<h2 id="grille-d-analyse-architecturale">Grille d'analyse architecturale <a class="heading-anchor" href="#grille-d-analyse-architecturale" aria-label="Lien vers Grille d'analyse architecturale">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Couche</th>
+<th>Décision de conception</th>
+<th>Pourquoi cela compte</th>
+<th>Risque en cas de mauvaise gestion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Entrée</strong></td>
+<td>Markdown et front matter</td>
+<td>Correspond aux flux de rédaction</td>
+<td>Dérive des métadonnées</td>
+</tr>
+<tr>
+<td><strong>Structure</strong></td>
+<td>TOC et HTML sémantique</td>
+<td>Améliore la navigation et l'accessibilité</td>
+<td>Pages plates et inaccessibles</td>
+</tr>
+<tr>
+<td><strong>Contenu enrichi</strong></td>
+<td>Prise en charge MathML et Mermaid</td>
+<td>Soutient l'écriture technique</td>
+<td>Diagrammes et équations cassés</td>
+</tr>
+<tr>
+<td><strong>SEO</strong></td>
+<td>Génération JSON-LD et métadonnées</td>
+<td>Améliore la lisibilité machine</td>
+<td>Contenu mal interprété par moteurs et agents</td>
+</tr>
+<tr>
+<td><strong>Exécution</strong></td>
+<td>Rust natif et WASM</td>
+<td>Couvre CLI, serveur et contexte navigateur</td>
+<td>Dépendance à un seul environnement</td>
+</tr>
+</tbody>
+</table>
+<h2 id="signaux-a-suivre">Signaux à suivre <a class="heading-anchor" href="#signaux-a-suivre" aria-label="Lien vers Signaux à suivre">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>Ce qu'il signifie</th>
+<th>Référence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sortie conforme WCAG</strong></td>
+<td>L'accessibilité est traitée comme une exigence de sortie</td>
+<td><a href="https://github.com/sebastienrousseau/html-generator" title="html-generator repository">html-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Prise en charge JSON-LD</strong></td>
+<td>Les données structurées font partie de la génération de contenu</td>
+<td><a href="https://github.com/sebastienrousseau/html-generator" title="html-generator repository">html-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>MathML et Mermaid</strong></td>
+<td>Le projet répond aux besoins de l'édition technique</td>
+<td><a href="https://github.com/sebastienrousseau/html-generator" title="html-generator repository">html-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Cible WASM</strong></td>
+<td>Le générateur peut s'exécuter hors des contextes serveur traditionnels</td>
+<td><a href="https://github.com/sebastienrousseau/html-generator" title="html-generator repository">html-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Implémentation Rust</strong></td>
+<td>Le projet s'inscrit dans une chaîne de publication sûre et rapide</td>
+<td><a href="https://github.com/sebastienrousseau/html-generator" title="html-generator repository">html-generator ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="le-rendu-ne-suffit-pas">Le rendu ne suffit pas <a class="heading-anchor" href="#le-rendu-ne-suffit-pas" aria-label="Lien vers Le rendu ne suffit pas">#</a></h2>
+<p>Beaucoup de pipelines Markdown s'arrêtent à la conversion HTML. Les systèmes de publication exigent davantage. Il leur faut des ancres, des titres accessibles, des tableaux sémantiques, un traitement du texte alternatif, des métadonnées, du schéma, des URL canoniques, des cartes, des flux et une sortie cohérente. HTML Generator s'inscrit dans ce pipeline de publication plus large.</p>
+<h2 id="donnees-structurees-pour-la-decouverte-par-ia">Données structurées pour la découverte par IA <a class="heading-anchor" href="#donnees-structurees-pour-la-decouverte-par-ia" aria-label="Lien vers Données structurées pour la découverte par IA">#</a></h2>
+<p>Les moteurs de recherche, les plateformes sociales et les systèmes de découverte par IA dépendent de plus en plus de métadonnées structurées. JSON-LD et un HTML sémantique propre aident les machines à interpréter correctement le contenu. C'est d'autant plus important pour les articles techniques longs, où le contexte et la paternité comptent.</p>
+<h2 id="l-accessibilite-comme-cible-de-generation">L'accessibilité comme cible de génération <a class="heading-anchor" href="#l-accessibilite-comme-cible-de-generation" aria-label="Lien vers L'accessibilité comme cible de génération">#</a></h2>
+<p>L'accessibilité ne devrait pas reposer uniquement sur la revue manuelle. Un générateur peut imposer la structure des titres, la sémantique des tableaux, les conventions ARIA, les métadonnées d'image et une sortie navigable. Cela rend l'accessibilité plus scalable sur de vastes patrimoines de contenu.</p>
+<h2 id="ce-que-cela-signifie-par-public">Ce que cela signifie par public <a class="heading-anchor" href="#ce-que-cela-signifie-par-public" aria-label="Lien vers Ce que cela signifie par public">#</a></h2>
+<h3 id="pour-les-responsables-technologie-en-banque">Pour les responsables technologie en banque <a class="heading-anchor" href="#pour-les-responsables-technologie-en-banque" aria-label="Lien vers Pour les responsables technologie en banque">#</a></h3>
+<p>La question est de savoir si le projet peut aider à traduire une pression stratégique en architecture exécutable. La valeur est la plus forte quand le dépôt donne aux équipes quelque chose de concret à inspecter : interfaces, configuration, tests, frontières de sécurité, hypothèses de déploiement et modes de défaillance.</p>
+<h3 id="pour-les-equipes-securite-et-risque">Pour les équipes sécurité et risque <a class="heading-anchor" href="#pour-les-equipes-securite-et-risque" aria-label="Lien vers Pour les équipes sécurité et risque">#</a></h3>
+<p>Le projet doit être évalué non seulement sur ses fonctionnalités, mais sur la preuve de contrôle qu'il apporte. Une infrastructure financière open source utile expose comment identité, secrets, validation, journaux d'audit, limites de débit, signatures, provenance et récupération sont censés fonctionner.</p>
+<h3 id="pour-les-developpeurs-et-les-ingenieurs-plateforme">Pour les développeurs et les ingénieurs plateforme <a class="heading-anchor" href="#pour-les-developpeurs-et-les-ingenieurs-plateforme" aria-label="Lien vers Pour les développeurs et les ingénieurs plateforme">#</a></h3>
+<p>Le test le plus important est de savoir si le projet réduit la charge cognitive sans masquer les mécanismes essentiels. Un bon projet open source doit faire du chemin sûr le chemin facile, tout en laissant les ingénieurs expérimentés comprendre et modifier l'implémentation.</p>
+<h3 id="pour-les-contributeurs">Pour les contributeurs <a class="heading-anchor" href="#pour-les-contributeurs" aria-label="Lien vers Pour les contributeurs">#</a></h3>
+<p>L'occasion est de renforcer le projet là où les institutions ont besoin d'assurance : documentation, exemples, tests de conformité, durcissement de la CI, modèles de menace, profils de performance, contrôles d'accessibilité et guides d'intégration.</p>
+<h2 id="conclusion">Conclusion <a class="heading-anchor" href="#conclusion" aria-label="Lien vers Conclusion">#</a></h2>
+<p>La raison d'écrire sur html-generator, c'est qu'il transforme un problème plus large de l'industrie en quelque chose de concret. En 2026, les banques n'ont pas besoin d'un discours de transformation supplémentaire. Elles ont besoin de systèmes inspectables qui montrent comment l'infrastructure moderne peut être construite, sécurisée, testée et gouvernée. L'open source est la manière la plus crédible de rendre cet argument visible.</p>
+<h2 id="foire-aux-questions" class="qa-headline">Questions ? <span class="qa-headline-soft">Réponses.</span></h2><section class="qa-list" aria-labelledby="foire-aux-questions"><details class="qa-item" open><summary class="qa-q">Que fait HTML Generator ?</summary><section class="qa-a"><p>Il convertit Markdown en HTML structuré, accessible et adapté au SEO, avec prise en charge des métadonnées et du contenu technique enrichi.</p></section></details><details class="qa-item" open><summary class="qa-q">Pourquoi ne pas utiliser un rendu Markdown générique ?</summary><section class="qa-a"><p>Le rendu générique ignore souvent les enjeux de publication tels que les données structurées, l'accessibilité, les métadonnées, les diagrammes, les mathématiques et la minification.</p></section></details><details class="qa-item" open><summary class="qa-q">Quel est le public ?</summary><section class="qa-a"><p>Constructeurs de sites statiques, équipes de documentation, rédacteurs techniques, développeurs Rust et ingénieurs de plateformes de publication.</p></section></details><details class="qa-item" open><summary class="qa-q">Quel est le lien avec le générateur de sites statiques ?</summary><section class="qa-a"><p>HTML Generator peut être positionné comme une couche de traitement de contenu au sein d'un pipeline de publication sécurisé plus large.</p></section></details></section><h2 id="references">Références <a class="heading-anchor" href="#references" aria-label="Lien vers Références">#</a></h2>
+<ul>
+<li>GitHub, (2026). <a href="https://github.com/sebastienrousseau/html-generator" title="html-generator repository">html-generator repository ⧉</a>.</li>
+<li>W3C, (2026). <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" title="Web Content Accessibility Guidelines">Web Content Accessibility Guidelines ⧉</a>.</li>
+<li>Schema.org, (2026). <a href="https://schema.org/" title="Schema.org structured data">Schema.org structured data ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Dernière revue <time datetime="2026-06-20">2026-06-20</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="À propos de l'auteur"><img alt="Portrait de Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/fr/a-propos/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Technologue senior dans la banque, j'écris sur l'IA appliquée, la migration ISO 20022, la cryptographie post-quantique pour les services financiers, et la transformation structurelle des paiements wholesale.</span><span class="author-credentials">Plus de 20 ans d'expérience chez HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/fr/a-propos/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Dernière révision <time datetime="2026-05-29">2026-05-29</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Articles connexes</h2>
+<div class="related-grid">
+<article class="related-card"><a  class="related-media" aria-label="OpenVoice : à la pointe de l&#x27;innovation en clonage vocal" tabindex="-1" title="OpenVoice : à la pointe de l&#x27;innovation en clonage vocal" href="/fr/2024-04-01-openvoice-innovation-de-pointe-dans-le-clonage-vocal/index.html"><img alt="Banner of Vibrant gradient overlay on repeated profiles" src="https://cloudcdn.pro/api/transform?url=/stocks/images/open-voice.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="openvoice-a-la-pointe-de-l-innovation-en-clonage-vocal"><a href="/fr/2024-04-01-openvoice-innovation-de-pointe-dans-le-clonage-vocal/index.html">OpenVoice : à la pointe de l&#x27;innovation en clonage vocal</a> <a class="heading-anchor" href="#openvoice-a-la-pointe-de-l-innovation-en-clonage-vocal" aria-label="Lien vers OpenVoice : à la pointe de l&#x27;innovation en clonage vocal">#</a></h3><p><time datetime="2024-04-01">2024-04-01</time></p></footer></article>
+<article class="related-card"><a  class="related-media" aria-label="RustLogs (RLG) : bibliothèque de journalisation structurée pour Rust" tabindex="-1" title="RustLogs (RLG) : bibliothèque de journalisation structurée pour Rust" href="/fr/2024-03-08-rustlogs-bibliotheque-de-journalisation-avancee-pour-rust/index.html"><img alt="Banner for RustLogs (RLG)" src="https://cloudcdn.pro/api/transform?url=/stocks/images/rustlogs.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="rustlogs-rlg-bibliotheque-de-journalisation-structuree-pour-rust"><a href="/fr/2024-03-08-rustlogs-bibliotheque-de-journalisation-avancee-pour-rust/index.html">RustLogs (RLG) : bibliothèque de journalisation structurée pour Rust</a> <a class="heading-anchor" href="#rustlogs-rlg-bibliotheque-de-journalisation-structuree-pour-rust" aria-label="Lien vers RustLogs (RLG) : bibliothèque de journalisation structurée pour Rust">#</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
+<article class="related-card"><a  class="related-media" aria-label="Alien Studio : mon voyage de la tech à l&#x27;art photographique" tabindex="-1" title="Alien Studio : mon voyage de la tech à l&#x27;art photographique" href="/fr/2024-01-15-revolution-de-l-art-par-la-photographie-ia-alien-studio/index.html"><img alt="Sunset's muse, a serene glance; beauty in stillness" src="https://cloudcdn.pro/api/transform?url=/clients/alienstudio/v1/collections/radiance/radiance-08.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="alien-studio-mon-voyage-de-la-tech-a-l-art-photographique"><a href="/fr/2024-01-15-revolution-de-l-art-par-la-photographie-ia-alien-studio/index.html">Alien Studio : mon voyage de la tech à l&#x27;art photographique</a> <a class="heading-anchor" href="#alien-studio-mon-voyage-de-la-tech-a-l-art-photographique" aria-label="Lien vers Alien Studio : mon voyage de la tech à l&#x27;art photographique">#</a></h3><p><time datetime="2024-01-15">2024-01-15</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Sources et références</h2><ol class="article-sources-list"><li><a href="https://github.com/sebastienrousseau/html-generator" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/sebastienrousseau/html-generator</span></a></li><li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" rel="external noopener nofollow"><span class="source-host">www.w3.org</span><span class="source-path">/WAI/standards-guidelines/wcag/</span></a></li></ol></aside><nav class="post-pagination" aria-label="Pagination des articles"><a class="post-pagination-prev" href="/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">Précédent</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/fr/a-propos/index.html">À propos</a></li>
+              <li><a href="/fr/contact/index.html">Contact</a></li>
+              <li><a href="/fr/concu-avec-static-site-generator/index.html">Conçu avec Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Écrits</h2>
+            <ul>
+              <li><a href="/fr/articles/index.html">Articles</a></li>
+              <li><a href="/fr/publications/index.html">Publications</a></li>
+              <li><a href="/fr/etiquettes/index.html">Étiquettes</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Activité</h2>
+            <ul>
+              <li><a href="/fr/projets/index.html">Projets</a></li>
+              <li><a href="/fr/playlists/index.html">Playlists</a></li>
+              <li><a href="/fr/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Réseaux</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Inscription à la newsletter">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — notes de recherche sur les paiements, l'IA et la cryptographie post-quantique. Pas de spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="vous@banque.com" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">S'inscrire</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Liens sociaux">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau sur Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau sur LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau sur Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau sur YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/fr/accessibilite/index.html">Accessibilité</a> ·
+            <a href="/fr/confidentialite/index.html">Confidentialité</a> ·
+            <a href="/fr/conditions/index.html">Conditions</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"fr"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"fr"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1173,"about":{"@type":"Thing","name":"Rust","sameAs":["https://en.wikipedia.org/wiki/Rust_(programming_language)","https://www.wikidata.org/wiki/Q575650"]},"headline":"Transformer Markdown en HTML accessible, prêt pour le SEO et structuré avec Rust en 2026","description":"HTML Generator est une bibliothèque Rust qui transforme Markdown en HTML conforme WCAG et adapté au SEO, avec front matter, TOC, JSON-LD, MathML, Mermaid, minification et WASM.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/akande-voice-assistant-desk.webp","width":"100vw","height":"100vh","caption":"Ingénieur à un bureau calme sous une lumière chaude — symbolisant le pipeline de qualité publication que HTML Generator applique à chaque document Markdown : WCAG, JSON-LD, MathML, Mermaid, minification et WASM"},"url":"https://sebastienrousseau.com/fr/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/","datePublished":"2026-06-20T06:06:06+00:00","dateModified":"2026-06-20","inLanguage":"fr","keywords":"HTML Generator, Rust Markdown vers HTML, HTML WCAG, HTML SEO, JSON-LD, MathML, Mermaid, front matter, WASM","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/fr/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"fr"},"citation":[{"@type":"CreativeWork","url":"https://github.com/sebastienrousseau/html-generator"},{"@type":"CreativeWork","url":"https://www.w3.org/WAI/standards-guidelines/wcag/"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/fr/"},{"@type":"ListItem","position":3,"name":"Transformer Markdown en HTML accessible, prêt pour le SEO et structuré avec Rust en 2026","item":"https://sebastienrousseau.com/fr/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Rechercher">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Rechercher</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Rechercher">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Rechercher dans la documentation..." autocomplete="off" aria-label="Rechercher"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> fermer</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> naviguer</span><span><kbd>Entrée</kbd> ouvrir</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Transformer Markdown en HTML accessible, prêt pour le SEO et structuré avec Rust en 2026","url":"https://sebastienrousseau.com/fr/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/","inLanguage":"fr-FR","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"HTML Generator, Rust Markdown vers HTML, HTML WCAG, HTML SEO, JSON-LD, MathML, Mermaid, front matter, WASM","programmingLanguage":["Rust","WebAssembly"]}</script></body>
+</html>

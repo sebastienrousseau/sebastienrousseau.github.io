@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/fil/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/fil/"/>
   <id>https://sebastienrousseau.com/fil/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T19:52:16+00:00</updated>
+  <entry>
+    <title>Pag-convert ng Markdown sa Accessible, SEO-Ready, Structured HTML gamit ang Rust sa 2026</title>
+    <link href="https://sebastienrousseau.com/fil/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/"/>
+    <id>https://sebastienrousseau.com/fil/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/</id>
+    <updated>2026-05-29T19:52:16+00:00</updated>
+    <published>2026-05-29T19:52:16+00:00</published>
+    <summary>Ang HTML Generator ay Rust library na nagko-convert ng Markdown tungo sa WCAG-compliant, SEO-friendly na HTML — may front matter, TOC, JSON-LD, MathML, Mermaid, minification, at WASM.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI Act, at Soberanya ng Data: Compliance Stack ng Bangko 2026</title>
     <link href="https://sebastienrousseau.com/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/he/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/he/"/>
   <id>https://sebastienrousseau.com/he/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T19:52:16+00:00</updated>
+  <entry>
+    <title>המרת Markdown ל-HTML נגיש, מוכן ל-SEO ומובנה עם Rust בשנת 2026</title>
+    <link href="https://sebastienrousseau.com/he/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/"/>
+    <id>https://sebastienrousseau.com/he/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/</id>
+    <updated>2026-05-29T19:52:16+00:00</updated>
+    <published>2026-05-29T19:52:16+00:00</published>
+    <summary>HTML Generator היא ספריית Rust הממירה Markdown ל-HTML תואם WCAG וידידותי ל-SEO, עם front matter, תוכן עניינים, JSON-LD, MathML, Mermaid, מזעור ותמיכה ב-WASM.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, חוק הבינה המלאכותית וריבונות נתונים: ערימת הציות של 2026 לבנקים</title>
     <link href="https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

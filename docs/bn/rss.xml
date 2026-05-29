@@ -6,8 +6,26 @@
     <description>বাংলা প্রবন্ধ: প্রায়োগিক এআই, ISO 20022 পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের রূপান্তর।</description>
     <atom:link href="https://sebastienrousseau.com/bn/rss.xml" rel="self" type="application/rss+xml"/>
     <language>bn-BD</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 19:52:16 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. সর্বস্বত্ব সংরক্ষিত।</copyright>
+    <item>
+      <title>২০২৬-এ Rust দিয়ে Markdown-কে অ্যাক্সেসিবল, SEO-প্রস্তুত, কাঠামোগত HTML-এ রূপান্তর</title>
+      <link>https://sebastienrousseau.com/bn/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/</link>
+      <description>HTML Generator একটি Rust লাইব্রেরি যা Markdown-কে ফ্রন্ট ম্যাটার, TOC, JSON-LD, MathML, Mermaid, মিনিফিকেশন এবং WASM সমর্থন সহ WCAG-অনুবর্তী, SEO-বান্ধব HTML-এ রূপান্তর করে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/</guid>
+      <pubDate>Fri, 29 May 2026 19:52:16 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/akande-voice-assistant-desk.webp" type="image/webp" length="0"/>
+      <category>html-generator</category>
+      <category>Rust Markdown থেকে HTML</category>
+      <category>WCAG HTML</category>
+      <category>SEO HTML</category>
+      <category>JSON-LD</category>
+      <category>MathML</category>
+      <category>Mermaid</category>
+      <category>front matter</category>
+      <category>WASM</category>
+    </item>
     <item>
       <title>DORA, EU AI আইন ও ডেটা সার্বভৌমত্ব: ব্যাংকের জন্য ২০২৬-এর কমপ্লায়েন্স স্ট্যাক</title>
       <link>https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

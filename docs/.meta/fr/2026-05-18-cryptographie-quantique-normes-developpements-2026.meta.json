@@ -1,16 +1,16 @@
 {
-  "banner_alt": "Carte de migration vers une cryptographie résistante au quantique pour 2026 — normes NIST PQC, travail sur les protocoles hybrides, assurance QKD, crypto-agilité et niveaux de risque des données bancaires",
-  "tags": "cryptographie quantique, cryptographie post-quantique, PQC, NIST, FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC, IETF, TLS, IPsec, QKD, ETSI, crypto-agilité, HNDL, sécurité bancaire",
-  "date": "May 18, 2026",
-  "language": "fr",
+  "subtitle": "La cryptographie quantique est passée de la prospective à la discipline d'implémentation : les normes NIST PQC sont prêtes, la guidance du NCSC britannique a resserré le choix des algorithmes, le travail protocolaire de l'IETF mûrit encore, et l'assurance QKD passe de la confiance laboratoire au langage de certification.",
   "keywords": "cryptographie quantique 2026, cryptographie post-quantique, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, échange de clés hybride, QKD, ETSI QKD, ISO IEC 23837, crypto-agilité, harvest now decrypt later, HNDL, cryptographie des services financiers, sécurité bancaire",
-  "title": "La réinitialisation de la cryptographie quantique en 2026 : normes PQC, assurance QKD et le chantier de migration que les banques ne peuvent plus différer",
+  "date": "May 18, 2026",
+  "tags": "cryptographie quantique, cryptographie post-quantique, PQC, NIST, FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC, IETF, TLS, IPsec, QKD, ETSI, crypto-agilité, HNDL, sécurité bancaire",
   "twitter_description": "La réinitialisation de la cryptographie quantique 2026 — normes NIST PQC, recommandations de migration du NCSC, maturité protocolaire de l'IETF, assurance QKD, crypto-agilité, et ce que les banques devraient prioriser cette semaine.",
-  "twitter_title": "Cryptographie quantique 2026 : normes PQC et migration bancaire",
-  "description": "La cryptographie quantique en 2026 n'est plus un débat sur l'imminence des ordinateurs quantiques. C'est un programme de migration qui touche la cryptographie post-quantique, la crypto-agilité, l'assurance de la distribution quantique de clés, les normes de protocole, la maturité des fournisseurs et les données financières à longue durée de vie déjà exposées au risque « harvest-now-decrypt-later ».",
   "item_title": "La réinitialisation de la cryptographie quantique en 2026 : normes PQC, assurance QKD et le chantier de migration que les banques ne peuvent plus différer",
   "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
+  "banner_alt": "Carte de migration vers une cryptographie résistante au quantique pour 2026 — normes NIST PQC, travail sur les protocoles hybrides, assurance QKD, crypto-agilité et niveaux de risque des données bancaires",
+  "description": "La cryptographie quantique en 2026 n'est plus un débat sur l'imminence des ordinateurs quantiques. C'est un programme de migration qui touche la cryptographie post-quantique, la crypto-agilité, l'assurance de la distribution quantique de clés, les normes de protocole, la maturité des fournisseurs et les données financières à longue durée de vie déjà exposées au risque « harvest-now-decrypt-later ».",
+  "language": "fr",
+  "twitter_title": "Cryptographie quantique 2026 : normes PQC et migration bancaire",
   "locale": "fr_FR",
-  "subtitle": "La cryptographie quantique est passée de la prospective à la discipline d'implémentation : les normes NIST PQC sont prêtes, la guidance du NCSC britannique a resserré le choix des algorithmes, le travail protocolaire de l'IETF mûrit encore, et l'assurance QKD passe de la confiance laboratoire au langage de certification.",
-  "item_description": "La réinitialisation de la cryptographie quantique 2026 — normes NIST PQC, recommandations de migration du NCSC, maturité protocolaire de l'IETF, assurance QKD, crypto-agilité, et ce que les banques devraient prioriser cette semaine."
+  "item_description": "La réinitialisation de la cryptographie quantique 2026 — normes NIST PQC, recommandations de migration du NCSC, maturité protocolaire de l'IETF, assurance QKD, crypto-agilité, et ce que les banques devraient prioriser cette semaine.",
+  "title": "La réinitialisation de la cryptographie quantique en 2026 : normes PQC, assurance QKD et le chantier de migration que les banques ne peuvent plus différer"
 }

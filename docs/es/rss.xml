@@ -6,8 +6,26 @@
     <description>Artículos en español: IA aplicada, pagos ISO 20022, criptografía postcuántica y transformación de los pagos mayoristas.</description>
     <atom:link href="https://sebastienrousseau.com/es/rss.xml" rel="self" type="application/rss+xml"/>
     <language>es-ES</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 19:52:16 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Todos los derechos reservados.</copyright>
+    <item>
+      <title>Convertir Markdown en HTML accesible, estructurado y listo para SEO con Rust en 2026</title>
+      <link>https://sebastienrousseau.com/es/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/</link>
+      <description>HTML Generator es una biblioteca Rust que convierte Markdown en HTML conforme a WCAG y optimizado para SEO, con front matter, TOC, JSON-LD, MathML, Mermaid, minificación y WASM.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/</guid>
+      <pubDate>Fri, 29 May 2026 19:52:16 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/akande-voice-assistant-desk.webp" type="image/webp" length="0"/>
+      <category>HTML Generator</category>
+      <category>Markdown a HTML en Rust</category>
+      <category>HTML WCAG</category>
+      <category>HTML SEO</category>
+      <category>JSON-LD</category>
+      <category>MathML</category>
+      <category>Mermaid</category>
+      <category>front matter</category>
+      <category>WASM</category>
+    </item>
     <item>
       <title>DORA, EU AI Act y soberanía de datos: el stack de cumplimiento bancario 2026</title>
       <link>https://sebastienrousseau.com/es/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

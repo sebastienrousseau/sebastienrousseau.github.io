@@ -6,8 +6,26 @@
     <description>Labaran Hausa: AI mai amfani, biyan kuɗi na ISO 20022, kiriftografi bayan kwantum da sauye-sauyen biyan kuɗi na manyan.</description>
     <atom:link href="https://sebastienrousseau.com/ha/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ha-NG</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 19:52:16 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. An kiyaye duk hakkokin.</copyright>
+    <item>
+      <title>Mai da Markdown ya zama HTML mai Samun Damar, Shiri don SEO da Rust a 2026</title>
+      <link>https://sebastienrousseau.com/ha/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/</link>
+      <description>HTML Generator dakin karatu ne na Rust da ke mai da Markdown ya zama HTML mai bin WCAG, mai dacewa da SEO tare da front matter, JSON-LD, MathML, Mermaid, da WASM.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/</guid>
+      <pubDate>Fri, 29 May 2026 19:52:16 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/akande-voice-assistant-desk.webp" type="image/webp" length="0"/>
+      <category>html-generator</category>
+      <category>Rust Markdown zuwa HTML</category>
+      <category>WCAG HTML</category>
+      <category>SEO HTML</category>
+      <category>JSON-LD</category>
+      <category>MathML</category>
+      <category>Mermaid</category>
+      <category>front matter</category>
+      <category>WASM</category>
+    </item>
     <item>
       <title>DORA, EU AI Act, da Ikon Mallakar Bayanai: Tarin Bin Doka na 2026 ga Bankuna</title>
       <link>https://sebastienrousseau.com/ha/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

@@ -4,13 +4,22 @@
   <link href="https://sebastienrousseau.com/nl/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/nl/"/>
   <id>https://sebastienrousseau.com/nl/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T19:52:16+00:00</updated>
+  <entry>
+    <title>Markdown omzetten naar toegankelijke, SEO-klare, gestructureerde HTML met Rust in 2026</title>
+    <link href="https://sebastienrousseau.com/nl/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/"/>
+    <id>https://sebastienrousseau.com/nl/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/</id>
+    <updated>2026-05-29T19:52:16+00:00</updated>
+    <published>2026-05-29T19:52:16+00:00</published>
+    <summary>HTML Generator is een Rust-bibliotheek die Markdown omzet in WCAG-conforme, SEO-vriendelijke HTML met front matter, TOC, JSON-LD, MathML, Mermaid, minificatie en WASM-ondersteuning.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI Act en datasoevereiniteit: de compliance-stack 2026 voor banken</title>
     <link href="https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>
     <id>https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</id>
-    <updated>2026-05-28T06:26:19+00:00</updated>
-    <published>2026-05-28T06:26:19+00:00</published>
+    <updated>2026-05-29T19:52:16+00:00</updated>
+    <published>2026-05-29T19:52:16+00:00</published>
     <summary>DORA, EU AI Act, GDPR, concentratierisico cloud en datasoevereiniteit smelten in 2026 samen tot één compliance-stack voor banken in Nederland.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>

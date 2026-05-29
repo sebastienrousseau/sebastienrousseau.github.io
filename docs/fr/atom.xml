@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/fr/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/fr/"/>
   <id>https://sebastienrousseau.com/fr/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T19:52:16+00:00</updated>
+  <entry>
+    <title>Transformer Markdown en HTML accessible, prêt pour le SEO et structuré avec Rust en 2026</title>
+    <link href="https://sebastienrousseau.com/fr/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/"/>
+    <id>https://sebastienrousseau.com/fr/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/</id>
+    <updated>2026-05-29T19:52:16+00:00</updated>
+    <published>2026-05-29T19:52:16+00:00</published>
+    <summary>HTML Generator est une bibliothèque Rust qui transforme Markdown en HTML conforme WCAG et adapté au SEO, avec front matter, TOC, JSON-LD, MathML, Mermaid, minification et WASM.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI Act et souveraineté des données : la pile de conformité 2026 pour les banques</title>
     <link href="https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

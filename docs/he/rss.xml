@@ -6,8 +6,26 @@
     <description>מאמרים בעברית: AI יישומי, תשלומי ISO 20022, קריפטוגרפיה פוסט-קוונטית, וטרנספורמציה של תשלומי סיטונאות.</description>
     <atom:link href="https://sebastienrousseau.com/he/rss.xml" rel="self" type="application/rss+xml"/>
     <language>he-IL</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 19:52:16 +0000</lastBuildDate>
     <copyright>© זכויות יוצרים 2007 - 2026 - Sebastien Rousseau. כל הזכויות שמורות.</copyright>
+    <item>
+      <title>המרת Markdown ל-HTML נגיש, מוכן ל-SEO ומובנה עם Rust בשנת 2026</title>
+      <link>https://sebastienrousseau.com/he/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/</link>
+      <description>HTML Generator היא ספריית Rust הממירה Markdown ל-HTML תואם WCAG וידידותי ל-SEO, עם front matter, תוכן עניינים, JSON-LD, MathML, Mermaid, מזעור ותמיכה ב-WASM.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/</guid>
+      <pubDate>Fri, 29 May 2026 19:52:16 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/akande-voice-assistant-desk.webp" type="image/webp" length="0"/>
+      <category>html-generator</category>
+      <category>Rust Markdown ל-HTML</category>
+      <category>WCAG HTML</category>
+      <category>SEO HTML</category>
+      <category>JSON-LD</category>
+      <category>MathML</category>
+      <category>Mermaid</category>
+      <category>front matter</category>
+      <category>WASM</category>
+    </item>
     <item>
       <title>DORA, חוק הבינה המלאכותית וריבונות נתונים: ערימת הציות של 2026 לבנקים</title>
       <link>https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/vi/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/vi/"/>
   <id>https://sebastienrousseau.com/vi/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T19:52:16+00:00</updated>
+  <entry>
+    <title>Biến Markdown thành HTML có cấu trúc, tiếp cận, SEO với Rust năm 2026</title>
+    <link href="https://sebastienrousseau.com/vi/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/"/>
+    <id>https://sebastienrousseau.com/vi/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/</id>
+    <updated>2026-05-29T19:52:16+00:00</updated>
+    <published>2026-05-29T19:52:16+00:00</published>
+    <summary>HTML Generator là thư viện Rust biến Markdown thành HTML tuân thủ WCAG, thân thiện SEO với front matter, TOC, JSON-LD, MathML, Mermaid, tối giản và hỗ trợ WASM.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, Đạo luật AI EU và chủ quyền dữ liệu: ngăn xếp tuân thủ 2026 cho ngân hàng</title>
     <link href="https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>
