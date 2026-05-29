@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/fr/2026-06-19-quantique-resistant-password-generation-credentials-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fr-FR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T19:38:43+00:00</news:publication_date>
+    <news:title>Génération d&apos;identifiants résistants au quantique en 2026 : ce que les identifiants forts signifient pour les développeurs, les banques et les agents IA</news:title>
+    <news:keywords>Password Generator, mots de passe résistants au quantique, calcul d&apos;entropie, générateur de phrase secrète, sécurité JavaScript, CLI Password Generator, sécurité des identifiants</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

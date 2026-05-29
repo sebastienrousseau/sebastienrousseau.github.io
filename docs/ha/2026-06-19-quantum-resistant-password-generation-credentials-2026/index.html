@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ha-NG">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Fri, 19 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Fri, 19 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>Samar da Kalmomin Sirri Masu Juriya ga Quantum a 2026: Ma&#x27;anar Takaddun Shaida ga Bankuna da Wakilan AI — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Password Generator aikin JavaScript ne na buɗaɗɗen tushe don takaddun shaida masu ƙarfi, masu tunawa, base64, da masu juriya ga quantum, tare da entropy, CLI, da Web UI.">
+<meta name="keywords" content="Password Generator, kalmomin sirri masu juriya ga quantum, ƙididdigar entropy, mai samar da kalmar wucewa, tsaron JavaScript, CLI password generator, tsaron takaddun shaida">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Quantum-Resistant Password Generation in 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-DYkVEBAX60ljrfEyLmSKFJ5BKfF3Y/Mux2nGp3FEnoY=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-SsiwwEriyunn5e+z5F9pdxLGL51K5WLTeDMocv63Tuc=' 'sha256-YgJNReDE8LhcLgqylQpscO0/4F89T+QUY708d5ILlQ8=' 'sha256-hMRyA9Ci4bopfhW5hr3fmhqe2soTDF66m1iPr1Hn+pY=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/ha/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Feed na Atom" href="/ha/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Samar da Kalmomin Sirri Masu Juriya ga Quantum a 2026: Ma&#x27;anar Takaddun Shaida ga Bankuna da Wakilan AI — Sebastien Rousseau">
+<meta property="og:description" content="Password Generator aikin JavaScript ne na buɗaɗɗen tushe don takaddun shaida masu ƙarfi, masu tunawa, base64, da masu juriya ga quantum, tare da entropy, CLI, da Web UI.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/ha/2026-06-19-quantum-resistant-password-generation-credentials-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="ha_NG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Samar da Kalmomin Sirri Masu Juriya ga Quantum a 2026: Ma&#x27;anar Takaddun Shaida ga Bankuna da Wakilan AI — Sebastien Rousseau">
+<meta name="twitter:description" content="Password Generator aikin JavaScript ne na buɗaɗɗen tushe don takaddun shaida masu ƙarfi, masu tunawa, base64, da masu juriya ga quantum, tare da entropy, CLI, da Web UI.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/ha/2026-06-19-quantum-resistant-password-generation-credentials-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-19-quantique-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Tsallaka zuwa babban abun ciki</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Maɓallin kewayawa" />
+      <div class="wrap">
+        <a class="ap-brand" href="/ha/index.html" aria-label="Sebastien Rousseau gida">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Babban kewayawa">
+          <ul class="ap-menu">
+            <li><a href="/ha/game-da-mu/index.html">About</a></li>
+            <li><a href="/ha/labarai/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/ha/takardun-bincike/index.html">Papers</a></li>
+            <li><a href="/ha/batutuwa/index.html">Batutuwa</a></li>
+            <li><a href="/ha/ayyukan/index.html">Projects</a></li>
+            <li><a href="/ha/jerin-waka/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Kunna jigon duhu" aria-pressed="false" title="Canza jigo">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Bincika (Cmd ko Ctrl + K)" title="Bincika (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Harshe">
+            <button type="button" class="ap-lang-toggle" aria-label="HA, Canza harshe" aria-expanded="false" aria-haspopup="menu" title="Canza harshe">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">HA</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-19-quantique-resistant-password-generation-credentials-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/ha/tuntube-mu/index.html" aria-label="Tuntube mu">Tuntube mu ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Maɓallin kewayawa">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Samar da Kalmomin Sirri Masu Juriya ga Quantum a 2026: Ma&#x27;anar Takaddun Shaida ga Bankuna da Wakilan AI</h1>
+      <p class="sub">Samar da takaddun shaida na ci gaba da kasancewa makamin tsaro na farko, amma yanzu yana buƙatar bayyanar entropy, daidaitawar dandali daban-daban, ƙwarewar kalmar wucewa, da fahimtar wakilan AI.</p>
+    <nav class="article-tags" aria-label="Batutuwa"><a href="/tags/index.html#h3-password-generator" class="article-tag" rel="tag">Password Generator</a><a href="/tags/index.html#h3-kalmomin-sirri-masu-juriya-ga-quantum" class="article-tag" rel="tag">kalmomin sirri masu juriya ga quantum</a><a href="/tags/index.html#h3-ididdigar-entropy" class="article-tag" rel="tag">ƙididdigar entropy</a><a href="/tags/index.html#h3-mai-samar-da-kalmar-wucewa" class="article-tag" rel="tag">mai samar da kalmar wucewa</a><a href="/tags/index.html#h3-tsaron-javascript" class="article-tag" rel="tag">tsaron JavaScript</a><a href="/tags/index.html#h3-cli-password-generator" class="article-tag" rel="tag">CLI password generator</a><a href="/tags/index.html#h3-tsaron-takaddun-shaida" class="article-tag" rel="tag">tsaron takaddun shaida</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-19T06:06:06+00:00" class="meta-pub">An buga 19 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Lokacin karatun da aka kiyasta">6 minti karatu</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Abubuwan da ke ciki</h2><ol><li><a href="#me-yasa-wannan-aikin-buaen-tushe-yake-da-mahimmanci-a-2026">Me Yasa Wannan Aikin Buɗaɗɗen Tushe Yake da Mahimmanci a 2026</a></li><li><a href="#kallon-gine-gine">Kallon Gine-gine</a></li><li><a href="#alamomin-da-za-a-bibiya">Alamomin da Za A Bibiya</a></li><li><a href="#kalmomin-sirri-bayan-passkeys">Kalmomin Sirri Bayan Passkeys</a></li><li><a href="#entropy-a-matsayin-mahaar-mai-amfani">Entropy a Matsayin Mahaɗar Mai Amfani</a></li><li><a href="#wakilan-ai-da-asirai">Wakilan AI da Asirai</a></li><li><a href="#ma-anar-wannan-ta-masu-sauraro">Ma'anar Wannan ta Masu Sauraro</a></li><li><a href="#arshe">Ƙarshe</a></li><li><a href="#tambayoyin-da-akan-yi-yawanci">Tambayoyin da Akan Yi Yawanci</a></li><li><a href="#tunani">Tunani</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Password Generator aikin JavaScript ne na buɗaɗɗen tushe don takaddun shaida masu ƙarfi, masu tunawa, base64, da masu juriya ga quantum, tare da entropy, CLI, da Web UI.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Me Yasa Wannan Aikin Buɗaɗɗen Tushe Yake da Mahimmanci a 2026.</strong> Darajar dabara ta buɗaɗɗen tushe a 2026 ba ta iyakance ga gaskiya, sake amfani, ko alherin masu haɓakawa ba.</li>  <li><strong>Alamomin da Za A Bibiya.</strong> Passkeys suna rage dogaro ga kalmomin sirri ga ayyukan masu amfani da yawa, amma takaddun shaida sun rage a ko&#x27;ina: asusun admin, fara sabis, hanyoyin dawowa, tsarin gargajiya, shigarwar vault na hadin gwiwa,…</li>  <li><strong>Kalmomin Sirri Bayan Passkeys.</strong> Passkeys suna rage dogaro ga kalmomin sirri ga ayyukan masu amfani da yawa, amma takaddun shaida sun rage a ko&#x27;ina: asusun admin, fara sabis, hanyoyin dawowa, tsarin gargajiya, shigarwar vault na hadin gwiwa,…</li>  <li><strong>Entropy a Matsayin Mahaɗar Mai Amfani.</strong> Entropy ita ce gada tsakanin tsaron lissafi da yanke shawara na ɗan adam.</li></ul></aside><h1>Samar da Kalmomin Sirri Masu Juriya ga Quantum a 2026: Ma'anar Takaddun Shaida ga Bankuna da Wakilan AI</h1>
+<!-- lead-start -->
+<aside class="lead" aria-label="A taƙaice">
+<p><strong>A taƙaice.</strong> Kalmomin sirri fasaha ce ta dā, amma samar da takaddun shaida a 2026 ba matsala ce ta dā ba — passkeys, lambobin dawowa, makullin API, asusun sabis, da yanzu wakilan AI, duk suna cinye &quot;kalmomin sirri&quot; a matsayin entropy mara ƙarfi. Password Generator (aikin JavaScript na buɗaɗɗen tushe) yana ɗaukar wannan farfajiya a matsayin ababen more rayuwa da za a iya bincika: ginin hexagonal, ainihin ba dogaro, daidaitawar CLI da Web UI, hanyoyi masu ƙarfi/base64/masu tunawa/masu juriya ga quantum, da ƙididdigar entropy a ainihin lokaci da bankuna da ƙungiyoyin tsaro za su iya bincika.</p>
+<p><strong>Maganganu masu mahimmanci:</strong></p>
+<ul>
+<li><strong>Samar da takaddun shaida har yanzu makamin tsaro ne.</strong> Entropy mai rauni a lokacin bayarwa yana cin nasara kan kowace manufar juyawa ta gaba.</li>
+<li><strong>Dole entropy ya bayyana.</strong> Masu ƙididdiga da aka ɓoye sun fi haɗari fiye da iyakoki sananne.</li>
+<li><strong>Kalmar wucewa ta fi rubutu mara tsari ga mutane.</strong> Jerin kalmomi irin na EFF tare da ikirari na entropy a fili.</li>
+<li><strong>Daidaitawar CLI da Web UI tana da mahimmanci.</strong> Algorithm guda, daidaitawa guda, dukan farfajiyoyi — ba &quot;yanayin mai bincike ya bambanta&quot; ba.</li>
+<li><strong>Wakilan AI suma suna buƙatar takaddun shaida da manufa ta tilastawa.</strong> Asusun sabis da makullin kayan aiki suna cikin masu cinyewa na farko.</li>
+</ul>
+<p><strong>Karatu mai alaƙa:</strong> <a href="/ha/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/">Tarin bin doka na DORA + AI Act</a> · <a href="/ha/2026-05-20-cloud-native-banking-financial-institutions-2026/">Aikin banki na cloud-native</a> · <a href="/ha/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/">Tsarin aiki na AI don biyan kuɗi</a></p>
+</aside>
+<!-- lead-end -->
+<p>Kalmomin sirri fasaha ce ta dā, amma samar da takaddun shaida ba matsala ce ta dā ba. A 2026, takaddun shaida suna kasancewa kusa da passkeys, makullai, asirai, lambobin dawowa, makullin API, asusun sabis, da wakilan AI. Password Generator yana da amfani saboda yana ɗaukar samar da takaddun shaida a matsayin kayan aikin masu haɓakawa mai ɗauka, da za a iya bincika, da sane da entropy, ba a matsayin filin fom da za a jefar ba.</p>
+<p>Wurin tunani na buɗaɗɗen tushe na wannan labarin shi ne <a href="https://github.com/sebastienrousseau/password-generator" title="password-generator">password-generator ⧉</a>. Ana sanya ma'ajiyar a matsayin: Password Generator mai sauri na buɗaɗɗen tushe tare da ginin hexagonal, ainihin ba dogaro, demo na Web UI, CLI, daidaitawar dandali daban-daban, kalmomin sirri masu ƙarfi, base64, masu tunawa, da masu juriya ga quantum, da ƙididdigar entropy a ainihin lokaci.</p>
+<hr />
+<blockquote>
+<p><strong>Taƙaitawar Zartarwa / Maganganu Masu Mahimmanci</strong></p>
+<p><strong>Samar da takaddun shaida ya ci gaba da kasancewa mai dacewa.</strong> Ko da tare da passkeys, tsarin har yanzu ya dogara da kalmomin sirri, kalmar wucewa, asirai na API, makullin dawowa, da makullin da aka samar.
+<strong>Entropy ya kamata ya bayyana.</strong> Masu amfani da masu haɓakawa suna buƙatar fahimtar ƙarfi maimakon karɓar sandunan kore marasa tabbas.
+<strong>Ainihin ba dogaro yana da amfani ga tsaro.</strong> Ƙaramin dogaro yana rage farfajiyar harin sarkar samarwa.
+<strong>Daidaitawar dandali daban-daban tana da mahimmanci.</strong> Daidaiton CLI da Web UI yana tallafawa masu haɓakawa da masu amfani waɗanda ba na fasaha ba.
+<strong>Harshen mai juriya ga quantum yana buƙatar kulawa.</strong> Saƙon mai amfani shi ne asirai masu tsayi, masu entropy mafi girma, ba rashin damuwa ta hanyar sihiri ba.</p>
+</blockquote>
+<hr />
+<h2 id="me-yasa-wannan-aikin-buaen-tushe-yake-da-mahimmanci-a-2026">Me Yasa Wannan Aikin Buɗaɗɗen Tushe Yake da Mahimmanci a 2026 <a class="heading-anchor" href="#me-yasa-wannan-aikin-buaen-tushe-yake-da-mahimmanci-a-2026" aria-label="Hanyar haɗi zuwa Me Yasa Wannan Aikin Buɗaɗɗen Tushe Yake da Mahimmanci a 2026">#</a></h2>
+<p>Darajar dabara ta buɗaɗɗen tushe a 2026 ba ta iyakance ga gaskiya, sake amfani, ko alherin masu haɓakawa ba. Ga bankuna da cibiyoyin kuɗi, ababen more rayuwa na buɗaɗɗen tushe ya zama hanyar duba zato, gwada makamai, rage rashin gaskiya na mai siyarwa, da juya iƙirari na gine-gine zuwa lambar da za a iya karantawa, kwafi, ƙarfafa, da gudanarwa. Ayyukan da suka fi amfani ba demos ba ne. Su ne aiwatarwar tunani da ke bayyana yadda tsaro, samun damar shiga, aiki, bin doka, da ƙwarewar mai haɓakawa suka haɗu.</p>
+<p>Wannan ita ce kallon da za a fahimci password-generator a kai. Ba ma'ajiya kawai ba ne; mahawara ta ƙira ce ta zahiri. Yana cewa ababen more rayuwa masu mahimmanci ya kamata su zama masu yiwuwar bincika, masu hadawa, masu rubuce-rubuce, masu gwadawa, da masu fahimta ga mutanen da suka dogara da su. A cikin sabis na kuɗi, hakan yana da mahimmanci saboda tsarin ya ƙara zama a matsakaicin AI mai aiki, biyan kuɗi a ainihin lokaci, PQC, juriya na cloud-native, bayanai masu tsari, da shaida ta tsari.</p>
+<h2 id="kallon-gine-gine">Kallon Gine-gine <a class="heading-anchor" href="#kallon-gine-gine" aria-label="Hanyar haɗi zuwa Kallon Gine-gine">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Layi</th>
+<th>Yanke Shawarar Ƙira</th>
+<th>Me Yasa Yake Da Mahimmanci</th>
+<th>Haɗari Idan Ba A Sarrafa Shi Ba</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ainihi</strong></td>
+<td>Samar da kalmar sirri ba dogaro</td>
+<td>Yana rage fallasa sarkar samarwa</td>
+<td>Haɗarin dogaro a cikin kayan aikin tsaro</td>
+</tr>
+<tr>
+<td><strong>Hanyoyi</strong></td>
+<td>Zaɓuɓɓuka masu ƙarfi, base64, masu tunawa, da masu juriya ga quantum</td>
+<td>Yana tallafawa mahallin takaddun shaida daban-daban</td>
+<td>Asirai na girma ɗaya ga kowa</td>
+</tr>
+<tr>
+<td><strong>Entropy</strong></td>
+<td>Ƙididdigar ƙarfi a ainihin lokaci</td>
+<td>Yana sa tsaro ya bayyana</td>
+<td>Alamomin ƙarfi masu yaudara</td>
+</tr>
+<tr>
+<td><strong>Mahaɗa</strong></td>
+<td>CLI da Web UI</td>
+<td>Yana tallafawa masu haɓakawa da masu amfani na ƙarshe</td>
+<td>Halayyar samarwa mara daidaituwa</td>
+</tr>
+<tr>
+<td><strong>Gine-gine</strong></td>
+<td>Ƙirar hexagonal</td>
+<td>Yana raba ainihin dabaru daga mahaɗa</td>
+<td>UI da dabarun tsaro masu haɗawa sosai</td>
+</tr>
+</tbody>
+</table>
+<h2 id="alamomin-da-za-a-bibiya">Alamomin da Za A Bibiya <a class="heading-anchor" href="#alamomin-da-za-a-bibiya" aria-label="Hanyar haɗi zuwa Alamomin da Za A Bibiya">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Alama</th>
+<th>Ma'anarsa</th>
+<th>Tunani</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Taurari 24 na GitHub</strong></td>
+<td>Ma'ajiyar tana da bayyana a sararin kayan aikin tsaro</td>
+<td><a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Ainihin ba dogaro</strong></td>
+<td>Rage dogaro yana da mahimmanci ga kayan aikin tsaro</td>
+<td><a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Ƙididdigar entropy a ainihin lokaci</strong></td>
+<td>Ana fallasa ƙarfin takaddun shaida ga masu amfani</td>
+<td><a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Hanyar mai juriya ga quantum</strong></td>
+<td>Kayan aikin yana haɗa tsaftar takaddun shaida zuwa fahimtar tsaron bayan-quantum</td>
+<td><a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>CLI da Web UI</strong></td>
+<td>Aikin yana tallafawa duka aiki mai sarrafa kansa da amfani mai mu'amala</td>
+<td><a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="kalmomin-sirri-bayan-passkeys">Kalmomin Sirri Bayan Passkeys <a class="heading-anchor" href="#kalmomin-sirri-bayan-passkeys" aria-label="Hanyar haɗi zuwa Kalmomin Sirri Bayan Passkeys">#</a></h2>
+<p>Passkeys suna rage dogaro ga kalmomin sirri ga ayyukan masu amfani da yawa, amma takaddun shaida sun rage a ko'ina: asusun admin, fara sabis, hanyoyin dawowa, tsarin gargajiya, shigarwar vault na hadin gwiwa, makullin da aka samar, da asirai marasa kan layi. Password Generator har yanzu yana da mahimmanci lokacin da aka tsara shi a matsayin ababen more rayuwa na tsaro.</p>
+<h2 id="entropy-a-matsayin-mahaar-mai-amfani">Entropy a Matsayin Mahaɗar Mai Amfani <a class="heading-anchor" href="#entropy-a-matsayin-mahaar-mai-amfani" aria-label="Hanyar haɗi zuwa Entropy a Matsayin Mahaɗar Mai Amfani">#</a></h2>
+<p>Entropy ita ce gada tsakanin tsaron lissafi da yanke shawara na ɗan adam. Mai samarwa mai amfani ya kamata ya sa ƙarfi ya bayyana, ya bayyana kasuwanci, kuma ya tallafa wa asirai masu tunawa inda mutane suke buƙatar buga su ko su dawo da su.</p>
+<h2 id="wakilan-ai-da-asirai">Wakilan AI da Asirai <a class="heading-anchor" href="#wakilan-ai-da-asirai" aria-label="Hanyar haɗi zuwa Wakilan AI da Asirai">#</a></h2>
+<p>Wakilan AI suna ƙara buƙatar horon takaddun shaida. Wakilai na iya gudanar da CLIs, karanta sanyi, ƙirƙiri asusun gwaji, ko aiki tare da yanayin haɓakawa na gida. Mai samarwa mai aminci ya kamata ya tallafa wa ayyukan da ake samar da, adana, da raba asirai da ƙarancin fallasa ba da gangan ba.</p>
+<h2 id="ma-anar-wannan-ta-masu-sauraro">Ma'anar Wannan ta Masu Sauraro <a class="heading-anchor" href="#ma-anar-wannan-ta-masu-sauraro" aria-label="Hanyar haɗi zuwa Ma'anar Wannan ta Masu Sauraro">#</a></h2>
+<h3 id="ga-shugabannin-fasahar-banki">Ga Shugabannin Fasahar Banki <a class="heading-anchor" href="#ga-shugabannin-fasahar-banki" aria-label="Hanyar haɗi zuwa Ga Shugabannin Fasahar Banki">#</a></h3>
+<p>Tambayar ita ce ko aikin zai iya taimakawa juya matsi na dabara zuwa ginin da za a iya aiwatarwa. Ƙimar tana da ƙarfi sosai lokacin da ma'ajiyar ta ba ƙungiyoyi wani abu na zahiri don bincika: mahaɗa, sanyi, gwaje-gwaje, iyakokin tsaro, zato na turawa, da yanayin gazawa.</p>
+<h3 id="ga-ungiyoyin-tsaro-da-haari">Ga Ƙungiyoyin Tsaro da Haɗari <a class="heading-anchor" href="#ga-ungiyoyin-tsaro-da-haari" aria-label="Hanyar haɗi zuwa Ga Ƙungiyoyin Tsaro da Haɗari">#</a></h3>
+<p>Ya kamata a kimanta aikin ba kawai don fasali ba amma don shaidar sarrafawa. Ababen more rayuwa na kuɗi na buɗaɗɗen tushe masu amfani suna fallasa yadda ake nufin ainihi, asirai, tabbatarwa, rajistan ayyukan, iyakokin yawan, sa hannu, asali, da dawowa su yi aiki.</p>
+<h3 id="ga-masu-haakawa-da-injiniyoyin-dandali">Ga Masu Haɓakawa da Injiniyoyin Dandali <a class="heading-anchor" href="#ga-masu-haakawa-da-injiniyoyin-dandali" aria-label="Hanyar haɗi zuwa Ga Masu Haɓakawa da Injiniyoyin Dandali">#</a></h3>
+<p>Mafi mahimmancin gwaji shi ne ko aikin yana rage nauyin tunani ba tare da ɓoye injina masu mahimmanci ba. Buɗaɗɗen tushe mai kyau ya kamata ya sa hanyar lafiya ta zama mafi sauƙi yayin da har yanzu yana ba da damar ƙwararrun injiniyoyi su fahimta da gyara aiwatarwa.</p>
+<h3 id="ga-masu-bayar-da-gudummawa">Ga Masu Bayar da Gudummawa <a class="heading-anchor" href="#ga-masu-bayar-da-gudummawa" aria-label="Hanyar haɗi zuwa Ga Masu Bayar da Gudummawa">#</a></h3>
+<p>Damar ita ce ƙarfafa aikin inda cibiyoyi na zahiri ke buƙatar tabbaci: takardun, misalai, gwajin daidaituwa, ƙarfafa CI, samfuran haɗari, bayanan aiki, dubawar samun damar shiga, da jagororin haɗawa.</p>
+<h2 id="arshe">Ƙarshe <a class="heading-anchor" href="#arshe" aria-label="Hanyar haɗi zuwa Ƙarshe">#</a></h2>
+<p>Dalilin rubuta game da password-generator shi ne yana juya babbar matsalar masana'antu zuwa wani abu na zahiri. A 2026, bankuna ba sa buƙatar ƙarin harshen canji na zance. Suna buƙatar tsarin da za a iya bincika da ke nuna yadda za a iya gina ababen more rayuwa na zamani, a tsare su, a gwada su, kuma a gudanar da su. Buɗaɗɗen tushe ita ce hanya mafi yarda don sa wannan hujja ta bayyana.</p>
+<h2 id="tambayoyin-da-akan-yi-yawanci">Tambayoyin da Akan Yi Yawanci <a class="heading-anchor" href="#tambayoyin-da-akan-yi-yawanci" aria-label="Hanyar haɗi zuwa Tambayoyin da Akan Yi Yawanci">#</a></h2>
+<p><strong>Shin kalmomin sirri sun tsufa?</strong></p>
+<p>A'a. Passkeys suna rage amfani da kalmomin sirri a wasu mahallin, amma kalmomin sirri, kalmomin wucewa, asirai na API, da takaddun shaida na dawowa sun ci gaba da zama na yau da kullum.</p>
+<p><strong>Me ake nufi da kalmar sirri mai juriya ga quantum?</strong></p>
+<p>A aikace, yana nufin samar da takaddun shaida masu tsayi, masu entropy mafi girma waɗanda suka rage masu ƙarfi kan ƙarfin ƙarfafawa na gaba mafi ƙarfi.</p>
+<p><strong>Me yasa ba dogaro yake da mahimmanci?</strong></p>
+<p>Kayan aikin tsaro ya kamata su rage haɗarin dogaro mara amfani saboda dogaro na iya zama hanyoyin harin sarkar samarwa.</p>
+<p><strong>Wa zai yi amfani da aikin?</strong></p>
+<p>Masu haɓakawa, ƙungiyoyin tsaro, masu gudanarwa, da masu amfani waɗanda suke buƙatar samar da takaddun shaida da za a iya bincika a cikin ayyukan CLI da na yanar gizo.</p>
+<h2 id="tunani">Tunani <a class="heading-anchor" href="#tunani" aria-label="Hanyar haɗi zuwa Tunani">#</a></h2>
+<ul>
+<li>GitHub, (2026). <a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator repository ⧉</a>.</li>
+<li>NIST, (2026). <a href="https://pages.nist.gov/800-63-4/" title="Digital Identity Guidelines">Digital Identity Guidelines ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">An sake duba ta ƙarshe <time datetime="2026-06-19">2026-06-19</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/ha/game-da-mu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Manyan masanin fasahar banki; ina rubutu kan AI mai amfani, ƙaura zuwa ISO 20022, kiriftografi bayan kwantum don sabis na kuɗi da sauye-sauyen tsari na biyan kuɗi na manyan.</span><span class="author-credentials">Fiye da shekaru 20 na ƙwarewa a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/ha/game-da-mu/index.html">Cikakken bayanin martaba</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Bita ta ƙarshe <time datetime="2026-05-29">2026-05-29</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Karatun da ke da alaƙa</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/ha/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html" class="related-media" aria-label="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age" tabindex="-1"><img alt="A modern, sleek quantum computer" src="https://cloudcdn.pro/api/transform?url=/stocks/images/galina-nelyubova-V70-ng4FuiA.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age"><a href="https://sebastienrousseau.com/ha/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a> <a class="heading-anchor" href="#crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age" aria-label="Hanyar haɗi zuwa CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age">#</a></h3><p><time datetime="2023-11-19">2023-11-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ha/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html" class="related-media" aria-label="Quantum Algorithm Challenges Lattice-Based Cryptography" tabindex="-1"><img alt="Banner of Network nodes in a digital blue space" src="https://cloudcdn.pro/api/transform?url=/stocks/images/digital-constellation.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="quantum-algorithm-challenges-lattice-based-cryptography"><a href="https://sebastienrousseau.com/ha/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html">Quantum Algorithm Challenges Lattice-Based Cryptography</a> <a class="heading-anchor" href="#quantum-algorithm-challenges-lattice-based-cryptography" aria-label="Hanyar haɗi zuwa Quantum Algorithm Challenges Lattice-Based Cryptography">#</a></h3><p><time datetime="2024-04-15">2024-04-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ha/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" class="related-media" aria-label="Quantum Key Distribution Revolutionising Security in Banking" tabindex="-1"><img alt="HSBC From the Docks" src="https://cloudcdn.pro/api/transform?url=/stocks/images/hsbc-from-the-docks.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="quantum-key-distribution-revolutionising-security-in-banking"><a href="https://sebastienrousseau.com/ha/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a> <a class="heading-anchor" href="#quantum-key-distribution-revolutionising-security-in-banking" aria-label="Hanyar haɗi zuwa Quantum Key Distribution Revolutionising Security in Banking">#</a></h3><p><time datetime="2023-12-11">2023-12-11</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Tushen bayanai & nassoshi</h2><ol class="article-sources-list"><li><a href="https://github.com/sebastienrousseau/password-generator" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/sebastienrousseau/password-generator</span></a></li><li><a href="https://pages.nist.gov/800-63-4/" rel="external noopener nofollow"><span class="source-host">pages.nist.gov</span><span class="source-path">/800-63-4/</span></a></li></ol></aside><nav class="post-pagination" aria-label="Shafin labarin"><a class="post-pagination-prev" href="/ha/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">Baya</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/ha/game-da-mu/index.html">About</a></li>
+              <li><a href="/ha/tuntube-mu/index.html">Contact</a></li>
+              <li><a href="/ha/an-yi-da-static-site-generator/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Rubuce-rubuce</h2>
+            <ul>
+              <li><a href="/ha/labarai/index.html">Articles</a></li>
+              <li><a href="/ha/takardun-bincike/index.html">Papers</a></li>
+              <li><a href="/ha/tags/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Aiki</h2>
+            <ul>
+              <li><a href="/ha/ayyukan/index.html">Projects</a></li>
+              <li><a href="/ha/jerin-waka/index.html">Playlists</a></li>
+              <li><a href="/ha/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Tuntuɓa</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Yi rajistar wasiƙar labarai">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — bayanan bincike kan biyan kuɗi, AI da kiriftografi bayan kwantum. Babu spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="kai@banki.com.ng" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Yi rajista</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Hanyoyin sadarwa na zamantakewa">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau a kan Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau a kan Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau a kan LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau a kan LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau a kan Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau a kan Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau a kan YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau a kan YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/ha/isar-da-hannu/index.html">Accessibility</a> ·
+            <a href="/ha/sirri/index.html">Privacy</a> ·
+            <a href="/ha/sharudda/index.html">Terms</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ha"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ha"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1271,"headline":"Samar da Kalmomin Sirri Masu Juriya ga Quantum a 2026: Ma'anar Takaddun Shaida ga Bankuna da Wakilan AI","description":"Password Generator aikin JavaScript ne na buɗaɗɗen tushe don takaddun shaida masu ƙarfi, masu tunawa, base64, da masu juriya ga quantum, tare da entropy, CLI, da Web UI.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp","width":"100vw","height":"100vh","caption":"Zanen ƙawa mai sheƙi a ƙarƙashin haske mai sanyi — alama ta entropy, juriya ga quantum, da farfajiyar takaddun shaida da Password Generator na zamani ke buɗewa ga masu haɓakawa, bankuna, da wakilan AI"},"url":"https://sebastienrousseau.com/ha/2026-06-19-quantum-resistant-password-generation-credentials-2026/","datePublished":"2026-06-19T06:06:06+00:00","dateModified":"2026-06-19","inLanguage":"ha","keywords":"Password Generator, kalmomin sirri masu juriya ga quantum, ƙididdigar entropy, mai samar da kalmar wucewa, tsaron JavaScript, CLI password generator, tsaron takaddun shaida","articleSection":"Security","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ha/2026-06-19-quantum-resistant-password-generation-credentials-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ha"},"citation":[{"@type":"CreativeWork","url":"https://github.com/sebastienrousseau/password-generator"},{"@type":"CreativeWork","url":"https://pages.nist.gov/800-63-4/"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ha/"},{"@type":"ListItem","position":3,"name":"Samar da Kalmomin Sirri Masu Juriya ga Quantum a 2026: Ma'anar Takaddun Shaida ga Bankuna da Wakilan AI","item":"https://sebastienrousseau.com/ha/2026-06-19-quantum-resistant-password-generation-credentials-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Bincika">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Bincika</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Bincika">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Bincika cikin takardu..." autocomplete="off" aria-label="Bincika"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> rufe</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> kewayawa</span><span><kbd>Enter</kbd> buɗe</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Samar da Kalmomin Sirri Masu Juriya ga Quantum a 2026: Ma'anar Takaddun Shaida ga Bankuna da Wakilan AI","url":"https://sebastienrousseau.com/ha/2026-06-19-quantum-resistant-password-generation-credentials-2026/","inLanguage":"ha-NG","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"Password Generator, kalmomin sirri masu juriya ga quantum, ƙididdigar entropy, mai samar da kalmar wucewa, tsaron JavaScript, CLI password generator, tsaron takaddun shaida","programmingLanguage":"JavaScript"}</script></body>
+</html>

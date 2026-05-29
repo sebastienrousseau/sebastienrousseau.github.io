@@ -6,14 +6,30 @@
     <description>Artikelen in het Nederlands: toegepaste AI, ISO 20022-betalingen, post-kwantumcryptografie en transformatie van het wholesale-betalingsverkeer.</description>
     <atom:link href="https://sebastienrousseau.com/nl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>nl-NL</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 19:38:44 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle rechten voorbehouden.</copyright>
+    <item>
+      <title>Kwantumbestendige credentialgeneratie in 2026: sterke credentials voor ontwikkelaars, banken en AI-agenten</title>
+      <link>https://sebastienrousseau.com/nl/2026-06-19-quantum-resistant-password-generation-credentials-2026/</link>
+      <description>Password Generator: open source JavaScript voor sterke, memoriseerbare, base64 en kwantumbestendige credentials met entropie, CLI en Web UI.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-06-19-quantum-resistant-password-generation-credentials-2026/</guid>
+      <pubDate>Fri, 29 May 2026 19:38:44 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Password Generator</category>
+      <category>kwantumbestendige wachtwoorden</category>
+      <category>entropie</category>
+      <category>wachtwoordzin generator</category>
+      <category>JavaScript security</category>
+      <category>CLI Password Generator</category>
+      <category>credentialbeveiliging</category>
+    </item>
     <item>
       <title>DORA, EU AI Act en datasoevereiniteit: de compliance-stack 2026 voor banken</title>
       <link>https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
       <description>DORA, EU AI Act, GDPR, concentratierisico cloud en datasoevereiniteit smelten in 2026 samen tot één compliance-stack voor banken in Nederland.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
-      <pubDate>Thu, 28 May 2026 06:26:19 +0000</pubDate>
+      <pubDate>Fri, 29 May 2026 19:38:44 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>DORA 2026</category>

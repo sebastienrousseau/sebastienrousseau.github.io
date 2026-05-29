@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/hi/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/hi/"/>
   <id>https://sebastienrousseau.com/hi/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T19:38:44+00:00</updated>
+  <entry>
+    <title>2026 में क्वांटम-प्रतिरोधी पासवर्ड जनरेशन: डेवलपरों, बैंकों और AI एजेंट के लिए मज़बूत क्रेडेंशियल का अर्थ</title>
+    <link href="https://sebastienrousseau.com/hi/2026-06-19-quantum-resistant-password-generation-credentials-2026/"/>
+    <id>https://sebastienrousseau.com/hi/2026-06-19-quantum-resistant-password-generation-credentials-2026/</id>
+    <updated>2026-06-19T06:06:06+00:00</updated>
+    <published>2026-06-19T06:06:06+00:00</published>
+    <summary>Password Generator एक ओपन सोर्स JavaScript परियोजना है — मज़बूत, यादगार, base64 और क्वांटम-प्रतिरोधी क्रेडेंशियल, एन्ट्रॉपी गणना, CLI, Web UI एवं शून्य निर्भरता कोर के साथ।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI अधिनियम और डेटा संप्रभुता: बैंकों का 2026 अनुपालन स्टैक</title>
     <link href="https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

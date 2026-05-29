@@ -6,8 +6,24 @@
     <description>Bài viết tiếng Việt: AI ứng dụng, thanh toán ISO 20022, mật mã hậu lượng tử và chuyển đổi thanh toán bán buôn.</description>
     <atom:link href="https://sebastienrousseau.com/vi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>vi-VN</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 19:38:44 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Đã đăng ký bản quyền.</copyright>
+    <item>
+      <title>Tạo mật khẩu kháng lượng tử năm 2026: thông tin xác thực mạnh cho lập trình viên, ngân hàng và tác nhân AI</title>
+      <link>https://sebastienrousseau.com/vi/2026-06-19-quantum-resistant-password-generation-credentials-2026/</link>
+      <description>Password Generator là dự án JavaScript mã nguồn mở tạo thông tin xác thực mạnh, dễ nhớ, base64 và kháng lượng tử, có tính entropy, CLI, Web UI và lõi không phụ thuộc.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-06-19-quantum-resistant-password-generation-credentials-2026/</guid>
+      <pubDate>Fri, 29 May 2026 19:38:44 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Password Generator</category>
+      <category>mật khẩu kháng lượng tử</category>
+      <category>tính entropy</category>
+      <category>tạo cụm mật khẩu</category>
+      <category>bảo mật JavaScript</category>
+      <category>Password Generator CLI</category>
+      <category>bảo mật thông tin xác thực</category>
+    </item>
     <item>
       <title>DORA, Đạo luật AI EU và chủ quyền dữ liệu: ngăn xếp tuân thủ 2026 cho ngân hàng</title>
       <link>https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

@@ -1,11 +1,11 @@
 {
+  "keywords": "multimodale LLMs, MM1-Studie, KI-Fortschritte, Pre-Training-Strategien, Bilderkennung, Verarbeitung natürlicher Sprache, KI-Anwendungen, Zukunft der KI, multimodales Lernen, KI-Forschung",
+  "locale": "de_DE",
   "description": "Entdecken Sie Apples MM1-Paper zu Multimodal Large Language Models (MLLMs). Architektur, Pre-Training-Strategien und Potenziale der KI.",
   "banner_alt": "Banner für Apples MM1",
-  "language": "de",
-  "locale": "de_DE",
-  "subtitle": "Die Zukunft der KI enthüllen: Wie Apples bahnbrechende MM1-Studie das multimodale Lernen revolutioniert",
-  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
-  "keywords": "multimodale LLMs, MM1-Studie, KI-Fortschritte, Pre-Training-Strategien, Bilderkennung, Verarbeitung natürlicher Sprache, KI-Anwendungen, Zukunft der KI, multimodales Lernen, KI-Forschung",
   "date": "March 18, 2024",
-  "title": "KI mit multimodalen LLMs voranbringen: Erkenntnisse aus MM1"
+  "title": "KI mit multimodalen LLMs voranbringen: Erkenntnisse aus MM1",
+  "language": "de",
+  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
+  "subtitle": "Die Zukunft der KI enthüllen: Wie Apples bahnbrechende MM1-Studie das multimodale Lernen revolutioniert"
 }

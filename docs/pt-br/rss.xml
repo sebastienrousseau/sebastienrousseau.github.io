@@ -6,8 +6,24 @@
     <description>Artigos em português: IA aplicada, pagamentos ISO 20022, criptografia pós-quântica e transformação dos pagamentos de atacado.</description>
     <atom:link href="https://sebastienrousseau.com/pt-br/rss.xml" rel="self" type="application/rss+xml"/>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 19:38:44 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Todos os direitos reservados.</copyright>
+    <item>
+      <title>Geração de senhas resistente ao quantum em 2026</title>
+      <link>https://sebastienrousseau.com/pt-br/2026-06-19-quantum-resistant-password-generation-credentials-2026/</link>
+      <description>Password Generator é um projeto JavaScript de código aberto para credenciais fortes, memorizáveis, base64 e resistentes ao quantum, com cálculo de entropia, CLI, Web UI e núcleo sem dependências.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-06-19-quantum-resistant-password-generation-credentials-2026/</guid>
+      <pubDate>Fri, 29 May 2026 19:38:44 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Password Generator</category>
+      <category>senhas resistentes ao quantum</category>
+      <category>cálculo de entropia</category>
+      <category>gerador de frase secreta</category>
+      <category>segurança JavaScript</category>
+      <category>CLI Password Generator</category>
+      <category>segurança de credenciais</category>
+    </item>
     <item>
       <title>DORA, EU AI Act e soberania de dados: a stack de conformidade bancária 2026</title>
       <link>https://sebastienrousseau.com/pt-br/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

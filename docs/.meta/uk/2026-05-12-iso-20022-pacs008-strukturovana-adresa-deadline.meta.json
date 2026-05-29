@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Діаграма ISO 20022 pacs.008 зі структурованою адресою — поля транскордонного платіжного повідомлення з виділеними TwnNm і Ctry",
-  "banner": "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp",
   "description": "З листопада 2026 р. SWIFT CBPR+ вимагає структурованих адрес у pacs.008: TwnNm і Ctry обов'язкові, лише AdrLine відхиляється. 65% повідомлень невідповідні, 44% банків відстають.",
   "language": "uk-UA",
-  "subtitle": "З середини листопада 2026 року SWIFT CBPR+ відхилятиме неструктуровані поштові адреси в pacs.008 та пов'язаних транскордонних платіжних повідомленнях. Близько 65% повідомлень досі невідповідні — вікно для виправлень швидко закривається.",
-  "locale": "uk_UA",
   "keywords": "ISO 20022, pacs.008, SWIFT CBPR+, структурована адреса, листопад 2026, поштова адреса, TwnNm, Ctry, StrtNm, BldgNb",
+  "banner_alt": "Діаграма ISO 20022 pacs.008 зі структурованою адресою — поля транскордонного платіжного повідомлення з виділеними TwnNm і Ctry",
+  "subtitle": "З середини листопада 2026 року SWIFT CBPR+ відхилятиме неструктуровані поштові адреси в pacs.008 та пов'язаних транскордонних платіжних повідомленнях. Близько 65% повідомлень досі невідповідні — вікно для виправлень швидко закривається.",
   "date": "May 12, 2026",
-  "title": "[UK DRAFT] The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View"
+  "locale": "uk_UA",
+  "title": "[UK DRAFT] The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View",
+  "banner": "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 }

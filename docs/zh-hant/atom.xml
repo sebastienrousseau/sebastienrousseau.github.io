@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/zh-hant/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/zh-hant/"/>
   <id>https://sebastienrousseau.com/zh-hant/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T19:38:44+00:00</updated>
+  <entry>
+    <title>2026 年抗量子密碼生成:強憑證對開發者、銀行與 AI代理的意義</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-06-19-quantum-resistant-password-generation-credentials-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-06-19-quantum-resistant-password-generation-credentials-2026/</id>
+    <updated>2026-05-29T19:38:44+00:00</updated>
+    <published>2026-05-29T19:38:44+00:00</published>
+    <summary>Password Generator 是開源 JavaScript 專案,提供強密碼、好記、base64 與抗量子憑證,具熵計算、CLI、Web UI 與零依賴核心。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA、EU AI 法與資料主權:銀行 2026 年法遵堆疊</title>
     <link href="https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

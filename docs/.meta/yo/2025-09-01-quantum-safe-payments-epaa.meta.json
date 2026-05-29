@@ -1,11 +1,11 @@
 {
-  "subtitle": "Ìmúrasílẹ̀ fún ààbò kuatomu jẹ́ ìpinnu amayederun lọwọlọwọ. Kì í ṣe ti ọjọ iwaju.",
-  "title": "Quantum-Safe Payments: Why the Industry Must Act Now",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
   "language": "yo-NG",
-  "locale": "yo_NG",
-  "banner_alt": "Bọ́ọ̀dù ìyíká ìṣirò kuatomu nínú ìmọ́lẹ̀ búlúù",
   "keywords": "ìsanwó quantum-safe, cryptography post-quantum, SEPA, SWIFT gpi, ISO 20022, ààbò àwọn iṣẹ́ ìnáwó, EPAA, harvest-now decrypt-later, agility cryptographic, Sebastien Rousseau",
+  "subtitle": "Ìmúrasílẹ̀ fún ààbò kuatomu jẹ́ ìpinnu amayederun lọwọlọwọ. Kì í ṣe ti ọjọ iwaju.",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "locale": "yo_NG",
   "date": "Sep 01, 2025",
-  "description": "Ìṣirò kuatomu ń halẹ̀ mọ́ cryptography ti àwọn ètò ìsanwó. Ìwé funfun EPAA ṣàlàyé ewu ìgbékalẹ̀ àti ìjẹ̀pàtàkì ìjíkọ PQC."
+  "description": "Ìṣirò kuatomu ń halẹ̀ mọ́ cryptography ti àwọn ètò ìsanwó. Ìwé funfun EPAA ṣàlàyé ewu ìgbékalẹ̀ àti ìjẹ̀pàtàkì ìjíkọ PQC.",
+  "title": "Quantum-Safe Payments: Why the Industry Must Act Now",
+  "banner_alt": "Bọ́ọ̀dù ìyíká ìṣirò kuatomu nínú ìmọ́lẹ̀ búlúù"
 }

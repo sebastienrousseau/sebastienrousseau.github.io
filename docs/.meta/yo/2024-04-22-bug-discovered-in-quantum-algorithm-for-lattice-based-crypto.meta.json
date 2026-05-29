@@ -1,11 +1,11 @@
 {
-  "date": "Apr 22, 2024",
-  "subtitle": "Àtúnyẹ̀wò Ẹlẹgbẹ́ Ṣé Àṣìṣe ninu Iṣẹ́ Aṣáájú-ọnà Chen",
+  "language": "yo-NG",
+  "locale": "yo_NG",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "title": "Quantum Lattice Crypto: Bug in Chen's LWE Attack",
   "keywords": "cryptography post-kuatomu, NIST, ìṣọ̀kan PQC, Yilei Chen, algorithm kuatomu, cryptography lattice, ìṣòro LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, cryptography tó dáàbòbò kuatomu",
   "description": "Aṣiṣe kan ninu algorithm kuatomu LWE ti Yilei Chen fun akoko isinmi fun cryptography ti o da lori lattice. Ohun ti o tumọ si fun CRYSTALS-Kyber, Dilithium ati eto ìgbékalẹ̀ PQC.",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
-  "language": "yo-NG",
+  "date": "Apr 22, 2024",
   "banner_alt": "Àwòrán tí a ṣẹ̀dá pẹ̀lú MidJourney - Nẹtíwọ̀ọ̀kì ti àwọn ìpọ́njú ẹ̀rọ ìmọ̀ẹrọ ní àwọn àwọ̀ pupa àti búlúù.",
-  "locale": "yo_NG",
-  "title": "Quantum Lattice Crypto: Bug in Chen's LWE Attack"
+  "subtitle": "Àtúnyẹ̀wò Ẹlẹgbẹ́ Ṣé Àṣìṣe ninu Iṣẹ́ Aṣáájú-ọnà Chen"
 }

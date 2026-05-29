@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/he/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/he/"/>
   <id>https://sebastienrousseau.com/he/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T19:38:44+00:00</updated>
+  <entry>
+    <title>יצירת סיסמאות עמידות-קוונטים ב-2026: מה אישורים חזקים אומרים למפתחים, לבנקים ולסוכני AI</title>
+    <link href="https://sebastienrousseau.com/he/2026-06-19-quantum-resistant-password-generation-credentials-2026/"/>
+    <id>https://sebastienrousseau.com/he/2026-06-19-quantum-resistant-password-generation-credentials-2026/</id>
+    <updated>2026-05-29T19:38:44+00:00</updated>
+    <published>2026-05-29T19:38:44+00:00</published>
+    <summary>Password Generator הוא פרויקט JavaScript בקוד פתוח ליצירת אישורים חזקים, ניתנים לזכירה, base64 ועמידי-קוונטים עם חישוב אנטרופיה, CLI, ממשק Web וליבה ללא תלויות.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, חוק הבינה המלאכותית וריבונות נתונים: ערימת הציות של 2026 לבנקים</title>
     <link href="https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

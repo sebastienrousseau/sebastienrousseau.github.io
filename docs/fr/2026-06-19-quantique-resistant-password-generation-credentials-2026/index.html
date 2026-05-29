@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Fri, 19 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Fri, 19 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>Génération d&#x27;identifiants résistants au quantique en 2026 : ce que les identifiants forts signifient pour les développeurs, les banques et les agents IA — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Password Generator : projet JavaScript open source pour identifiants forts, mémorables, base64 et résistants au quantique, avec calcul d&#x27;entropie, CLI, Web UI et cœur sans dépendance.">
+<meta name="keywords" content="Password Generator, mots de passe résistants au quantique, calcul d&#x27;entropie, générateur de phrase secrète, sécurité JavaScript, CLI Password Generator, sécurité des identifiants">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Quantum-Resistant Password Generation in 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-AC97EwPmH1XLzZPhVazMUBIddO47oeEkuYt8RUVh1V0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-fvR+2R7eBXKbqX0ciJ9KKVm/GXoSnEygg3e2DkhhPDc=' 'sha256-t4CBp92cunEIpOZzHRTDydRRmyBo964/hyW0Rg+Q0YU=' 'sha256-tyErzTLyQa4T+OrnQURRE7d4nHbNZsUsHQOhzMdNWMs=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/fr/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Flux Atom" href="/fr/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Génération d&#x27;identifiants résistants au quantique en 2026 : ce que les identifiants forts signifient pour les développeurs, les banques et les agents IA — Sebastien Rousseau">
+<meta property="og:description" content="Password Generator : projet JavaScript open source pour identifiants forts, mémorables, base64 et résistants au quantique, avec calcul d&#x27;entropie, CLI, Web UI et cœur sans dépendance.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/fr/2026-06-19-quantique-resistant-password-generation-credentials-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Génération d&#x27;identifiants résistants au quantique en 2026 : ce que les identifiants forts signifient pour les développeurs, les banques et les agents IA — Sebastien Rousseau">
+<meta name="twitter:description" content="Password Generator : projet JavaScript open source pour identifiants forts, mémorables, base64 et résistants au quantique, avec calcul d&#x27;entropie, CLI, Web UI et cœur sans dépendance.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/fr/2026-06-19-quantique-resistant-password-generation-credentials-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-19-quantique-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Aller au contenu principal</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Basculer la navigation" />
+      <div class="wrap">
+        <a class="ap-brand" href="/fr/index.html" aria-label="Accueil de Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Navigation principale">
+          <ul class="ap-menu">
+            <li><a href="/fr/a-propos/index.html">À propos</a></li>
+            <li><a href="/fr/articles/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/fr/publications/index.html">Publications</a></li>
+            <li><a href="/fr/sujets/index.html">Sujets</a></li>
+            <li><a href="/fr/projets/index.html">Projets</a></li>
+            <li><a href="/fr/playlists/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Activer le thème sombre" aria-pressed="false" title="Changer de thème">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Rechercher (Cmd ou Ctrl + K)" title="Rechercher (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Langue">
+            <button type="button" class="ap-lang-toggle" aria-label="FR, Changer de langue" aria-expanded="false" aria-haspopup="menu" title="Changer de langue">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">FR</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-19-quantique-resistant-password-generation-credentials-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/fr/contact/index.html" aria-label="Me contacter">Me contacter ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Basculer la navigation">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Génération d&#x27;identifiants résistants au quantique en 2026 : ce que les identifiants forts signifient pour les développeurs, les banques et les agents IA</h1>
+      <p class="sub">La génération d&#x27;identifiants reste un contrôle de sécurité de première ligne, mais elle exige désormais visibilité de l&#x27;entropie, parité multi-plateforme, ergonomie des phrases secrètes et conscience des agents IA.</p>
+    <nav class="article-tags" aria-label="Sujets"><a href="/fr/etiquettes/index.html#h3-password-generator" class="article-tag" rel="tag">Password Generator</a><a href="/fr/etiquettes/index.html#h3-mots-de-passe-resistants-au-quantique" class="article-tag" rel="tag">mots de passe résistants au quantique</a><a href="/fr/etiquettes/index.html#h3-calcul-d-entropie" class="article-tag" rel="tag">calcul d'entropie</a><a href="/fr/etiquettes/index.html#h3-generateur-de-phrase-secrete" class="article-tag" rel="tag">générateur de phrase secrète</a><a href="/fr/etiquettes/index.html#h3-securite-javascript" class="article-tag" rel="tag">sécurité JavaScript</a><a href="/fr/etiquettes/index.html#h3-cli-password-generator" class="article-tag" rel="tag">CLI Password Generator</a><a href="/fr/etiquettes/index.html#h3-securite-des-identifiants" class="article-tag" rel="tag">sécurité des identifiants</a></nav><div class="article-meta"><a href="/fr/a-propos/index.html" class="article-author" rel="author"><img alt="Portrait de Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-19T06:06:06+00:00" class="meta-pub">Publié le 19 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Temps de lecture estimé">6 min de lecture</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Sommaire</h2><ol><li><a href="#pourquoi-ce-projet-open-source-compte-en-2026">Pourquoi ce projet open source compte en 2026</a></li><li><a href="#prisme-d-architecture">Prisme d'architecture</a></li><li><a href="#signaux-a-suivre">Signaux à suivre</a></li><li><a href="#les-mots-de-passe-apres-les-passkey">Les mots de passe après les passkey</a></li><li><a href="#l-entropie-comme-interface-utilisateur">L'entropie comme interface utilisateur</a></li><li><a href="#agents-ia-et-secrets">Agents IA et secrets</a></li><li><a href="#ce-que-cela-signifie-selon-l-audience">Ce que cela signifie selon l'audience</a></li><li><a href="#conclusion">Conclusion</a></li><li><a href="#foire-aux-questions">Foire aux questions</a></li><li><a href="#references">Références</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Password Generator : projet JavaScript open source pour identifiants forts, mémorables, base64 et résistants au quantique, avec calcul d&#x27;entropie, CLI, Web UI et cœur sans dépendance.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Pourquoi ce projet open source compte en 2026.</strong> La valeur stratégique de l&#x27;open source en 2026 ne se limite plus à la transparence, à la réutilisation ou à la bienveillance envers les développeurs.</li>  <li><strong>Signaux à suivre.</strong> Les passkey réduisent la dépendance aux mots de passe pour de nombreux parcours grand public, mais les identifiants restent partout : comptes d&#x27;administration, amorçage de services, processus de récupération,…</li>  <li><strong>Les mots de passe après les passkey.</strong> Les passkey réduisent la dépendance aux mots de passe pour de nombreux parcours grand public, mais les identifiants restent partout : comptes d&#x27;administration, amorçage de services, processus de récupération,…</li>  <li><strong>L&#x27;entropie comme interface utilisateur.</strong> L&#x27;entropie est le pont entre la sécurité mathématique et la décision humaine.</li></ul></aside><h1>Génération d'identifiants résistants au quantique en 2026 : ce que les identifiants forts signifient pour les développeurs, les banques et les agents IA</h1>
+<!-- lead-start -->
+<aside class="lead" aria-label="En bref">
+<p><strong>En bref.</strong> Les mots de passe sont une technologie ancienne, mais la génération d'identifiants en 2026 n'est pas un vieux problème — passkey, codes de récupération, clés API, comptes de service et désormais agents IA consomment tous des « mots de passe » comme de l'entropie brute. Password Generator (le projet JavaScript open source) traite cette surface comme une infrastructure inspectable : architecture hexagonale, cœur sans dépendance, parité CLI + Web UI, modes strong/base64/mémorable/résistant au quantique, et calcul d'entropie en temps réel que les banques et les équipes sécurité peuvent auditer.</p>
+<p><strong>Points clés à retenir :</strong></p>
+<ul>
+<li><strong>La génération d'identifiants reste un contrôle de sécurité.</strong> Une entropie faible à l'émission ruine toute politique de rotation en aval.</li>
+<li><strong>L'entropie doit être visible.</strong> Les estimateurs cachés sont un mode d'échec pire que des limites connues.</li>
+<li><strong>Les phrases secrètes battent les chaînes aléatoires pour les humains.</strong> Listes de mots de style EFF avec revendications d'entropie explicites.</li>
+<li><strong>La parité CLI + Web UI compte.</strong> Même algorithme, mêmes valeurs par défaut, les deux surfaces — pas de « mode navigateur différent ».</li>
+<li><strong>Les agents IA ont aussi besoin d'identifiants encadrés par la politique.</strong> Comptes de service et jetons d'outils sont des consommateurs de premier rang.</li>
+</ul>
+<p><strong>À lire également :</strong> <a title="DORA, EU AI Act et souveraineté des données : la pile de conformité 2026 pour les banques" href="/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html">Pile de conformité DORA + EU AI Act</a> · <a title="Banque cloud natif en 2026 : Kubernetes, DORA, souveraineté et fin de la fracture VM/conteneurs" href="/fr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html">Banque cloud-native</a> · <a title="L&#x27;IA comme système d&#x27;exploitation des paiements : fraude, routage, résilience et conformité en 2026" href="/fr/2026-05-27-ai-operating-system-paiements-fraud-routing-resilience-compliance-2026/index.html">Système d'exploitation IA pour les paiements</a></p>
+</aside>
+<!-- lead-end -->
+<p>Les mots de passe sont une technologie ancienne, mais la génération d'identifiants n'est pas un vieux problème. En 2026, les identifiants coexistent avec les passkey, jetons, secrets, codes de récupération, clés API, comptes de service et agents IA. Password Generator est utile parce qu'il traite la génération d'identifiants comme un outil de développeur portable, inspectable et conscient de l'entropie, plutôt que comme un champ de formulaire jetable.</p>
+<p>La référence open source de cet article est <a href="https://github.com/sebastienrousseau/password-generator" title="password-generator">password-generator ⧉</a>. Le dépôt se positionne comme : un Password Generator open source rapide avec architecture hexagonale, cœur sans dépendance, démo Web UI, CLI, parité multi-plateforme, mots de passe forts, base64, mémorables et résistants au quantique, et calcul d'entropie en temps réel.</p>
+<hr />
+<blockquote>
+<p><strong>Synthèse exécutive / Points clés à retenir</strong></p>
+<ul>
+<li><strong>La génération d'identifiants reste pertinente.</strong> Même avec les passkey, les systèmes s'appuient encore sur mots de passe, phrases secrètes, secrets API, clés de récupération et jetons générés.</li>
+<li><strong>L'entropie doit être visible.</strong> Utilisateurs et développeurs doivent comprendre la robustesse plutôt que d'accepter de vagues barres vertes.</li>
+<li><strong>Un cœur sans dépendance est une fonctionnalité de sécurité.</strong> Moins de dépendances réduit la surface d'attaque de la chaîne d'approvisionnement.</li>
+<li><strong>La parité multi-plateforme compte.</strong> La cohérence CLI et Web UI sert à la fois les développeurs et les utilisateurs non techniques.</li>
+<li><strong>Le langage « résistant au quantique » demande de la nuance.</strong> Le message pratique est : des secrets plus longs et à plus haute entropie, pas une immunité magique des mots de passe.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="pourquoi-ce-projet-open-source-compte-en-2026">Pourquoi ce projet open source compte en 2026 <a class="heading-anchor" href="#pourquoi-ce-projet-open-source-compte-en-2026" aria-label="Lien vers Pourquoi ce projet open source compte en 2026">#</a></h2>
+<p>La valeur stratégique de l'open source en 2026 ne se limite plus à la transparence, à la réutilisation ou à la bienveillance envers les développeurs. Pour les banques et les institutions financières, l'infrastructure open source est devenue un moyen d'inspecter des hypothèses, de tester des contrôles, de réduire l'opacité des fournisseurs et de transformer les promesses d'architecture en code que l'on peut lire, forker, durcir et exploiter. Les projets les plus utiles ne sont pas des démos. Ce sont des implémentations de référence qui révèlent comment sécurité, accessibilité, performance, conformité et expérience développeur s'articulent.</p>
+<p>C'est le prisme par lequel password-generator doit être compris. Il ne s'agit pas simplement d'un dépôt ; c'est un argument de conception concret. Il pose que toute infrastructure critique doit être auditable, composable, documentée, testable et compréhensible par ceux qui en dépendent. Dans les services financiers, cela compte parce que les systèmes se situent de plus en plus à l'intersection de l'IA agentique, des paiements en temps réel, de la cryptographie post-quantique (PQC), de la résilience cloud-native, des données structurées et des preuves réglementaires.</p>
+<h2 id="prisme-d-architecture">Prisme d'architecture <a class="heading-anchor" href="#prisme-d-architecture" aria-label="Lien vers Prisme d'architecture">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Couche</th>
+<th>Décision de conception</th>
+<th>Pourquoi cela compte</th>
+<th>Risque en cas de mauvaise gestion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cœur</strong></td>
+<td>Génération de mots de passe sans dépendance</td>
+<td>Réduit l'exposition à la chaîne d'approvisionnement</td>
+<td>Risque de dépendance dans l'outillage de sécurité</td>
+</tr>
+<tr>
+<td><strong>Modes</strong></td>
+<td>Options strong, base64, mémorable et résistant au quantique</td>
+<td>Couvre différents contextes d'identifiants</td>
+<td>Secrets « taille unique »</td>
+</tr>
+<tr>
+<td><strong>Entropie</strong></td>
+<td>Calcul de robustesse en temps réel</td>
+<td>Rend la sécurité visible</td>
+<td>Indicateurs de robustesse trompeurs</td>
+</tr>
+<tr>
+<td><strong>Interfaces</strong></td>
+<td>CLI et Web UI</td>
+<td>Sert développeurs et utilisateurs finaux</td>
+<td>Comportement de génération incohérent</td>
+</tr>
+<tr>
+<td><strong>Architecture</strong></td>
+<td>Conception hexagonale</td>
+<td>Sépare la logique cœur des interfaces</td>
+<td>UI et logique de sécurité fortement couplées</td>
+</tr>
+</tbody>
+</table>
+<h2 id="signaux-a-suivre">Signaux à suivre <a class="heading-anchor" href="#signaux-a-suivre" aria-label="Lien vers Signaux à suivre">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>Ce que cela signifie</th>
+<th>Référence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>24 étoiles GitHub</strong></td>
+<td>Le dépôt a une visibilité existante dans l'espace de l'outillage de sécurité</td>
+<td><a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Cœur sans dépendance</strong></td>
+<td>La minimisation des dépendances est importante pour les utilitaires de sécurité</td>
+<td><a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Calcul d'entropie en temps réel</strong></td>
+<td>La robustesse des identifiants est exposée aux utilisateurs</td>
+<td><a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Mode résistant au quantique</strong></td>
+<td>L'outil relie l'hygiène des identifiants à la conscience de la sécurité post-quantique</td>
+<td><a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>CLI et Web UI</strong></td>
+<td>Le projet prend en charge automatisation et usage interactif</td>
+<td><a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="les-mots-de-passe-apres-les-passkey">Les mots de passe après les passkey <a class="heading-anchor" href="#les-mots-de-passe-apres-les-passkey" aria-label="Lien vers Les mots de passe après les passkey">#</a></h2>
+<p>Les passkey réduisent la dépendance aux mots de passe pour de nombreux parcours grand public, mais les identifiants restent partout : comptes d'administration, amorçage de services, processus de récupération, systèmes hérités, entrées de coffre partagées, jetons générés et secrets hors ligne. Un Password Generator reste pertinent lorsqu'il est conçu comme une infrastructure de sécurité.</p>
+<h2 id="l-entropie-comme-interface-utilisateur">L'entropie comme interface utilisateur <a class="heading-anchor" href="#l-entropie-comme-interface-utilisateur" aria-label="Lien vers L'entropie comme interface utilisateur">#</a></h2>
+<p>L'entropie est le pont entre la sécurité mathématique et la décision humaine. Un générateur utile doit rendre la robustesse visible, expliquer les compromis et permettre des secrets mémorables là où les personnes doivent les saisir ou les récupérer.</p>
+<h2 id="agents-ia-et-secrets">Agents IA et secrets <a class="heading-anchor" href="#agents-ia-et-secrets" aria-label="Lien vers Agents IA et secrets">#</a></h2>
+<p>Les agents IA renforcent l'exigence de discipline sur les identifiants. Les agents peuvent piloter des CLI, lire de la configuration, créer des comptes de test ou intervenir dans des environnements de développement locaux. Un générateur sécurisé doit prendre en charge des flux où les secrets sont générés, stockés et partagés avec un minimum d'exposition accidentelle.</p>
+<h2 id="ce-que-cela-signifie-selon-l-audience">Ce que cela signifie selon l'audience <a class="heading-anchor" href="#ce-que-cela-signifie-selon-l-audience" aria-label="Lien vers Ce que cela signifie selon l'audience">#</a></h2>
+<h3 id="pour-les-responsables-technologiques-bancaires">Pour les responsables technologiques bancaires <a class="heading-anchor" href="#pour-les-responsables-technologiques-bancaires" aria-label="Lien vers Pour les responsables technologiques bancaires">#</a></h3>
+<p>La question est de savoir si le projet aide à traduire une pression stratégique en architecture exécutable. La valeur est la plus forte lorsque le dépôt offre aux équipes du concret à inspecter : interfaces, configuration, tests, frontières de sécurité, hypothèses de déploiement et modes d'échec.</p>
+<h3 id="pour-les-equipes-securite-et-risque">Pour les équipes sécurité et risque <a class="heading-anchor" href="#pour-les-equipes-securite-et-risque" aria-label="Lien vers Pour les équipes sécurité et risque">#</a></h3>
+<p>Le projet doit être évalué non seulement pour ses fonctionnalités, mais pour les preuves de contrôle qu'il fournit. Une infrastructure financière open source utile expose comment identité, secrets, validation, journaux d'audit, limites de débit, signatures, provenance et récupération sont censés fonctionner.</p>
+<h3 id="pour-les-developpeurs-et-les-ingenieurs-plateforme">Pour les développeurs et les ingénieurs plateforme <a class="heading-anchor" href="#pour-les-developpeurs-et-les-ingenieurs-plateforme" aria-label="Lien vers Pour les développeurs et les ingénieurs plateforme">#</a></h3>
+<p>Le test le plus important est de savoir si le projet réduit la charge cognitive sans masquer les mécanismes importants. Une bonne brique open source doit faire du chemin sûr le chemin facile, tout en permettant aux ingénieurs expérimentés de comprendre et de modifier l'implémentation.</p>
+<h3 id="pour-les-contributeurs">Pour les contributeurs <a class="heading-anchor" href="#pour-les-contributeurs" aria-label="Lien vers Pour les contributeurs">#</a></h3>
+<p>L'opportunité est de renforcer le projet là où les institutions réelles ont besoin d'assurance : documentation, exemples, tests de conformance, durcissement CI, modèles de menace, profils de performance, contrôles d'accessibilité et guides d'intégration.</p>
+<h2 id="conclusion">Conclusion <a class="heading-anchor" href="#conclusion" aria-label="Lien vers Conclusion">#</a></h2>
+<p>L'intérêt d'écrire sur password-generator est qu'il transforme un problème sectoriel plus large en quelque chose de concret. En 2026, les banques n'ont pas besoin de davantage de discours abstraits sur la transformation. Elles ont besoin de systèmes inspectables qui montrent comment l'infrastructure moderne peut être bâtie, sécurisée, testée et gouvernée. L'open source est la façon la plus crédible de rendre cet argument visible.</p>
+<h2 id="foire-aux-questions" class="qa-headline">Questions ? <span class="qa-headline-soft">Réponses.</span></h2><section class="qa-list" aria-labelledby="foire-aux-questions"><details class="qa-item" open><summary class="qa-q">Les mots de passe sont-ils obsolètes ?</summary><section class="qa-a"><p>Non. Les passkey réduisent l'usage des mots de passe dans certains contextes, mais mots de passe, phrases secrètes, secrets API et identifiants de récupération restent courants.</p></section></details><details class="qa-item" open><summary class="qa-q">Que signifie « mot de passe résistant au quantique » ?</summary><section class="qa-a"><p>En pratique, cela signifie générer des identifiants plus longs et à plus haute entropie qui restent robustes face à des capacités de force brute futures plus puissantes.</p></section></details><details class="qa-item" open><summary class="qa-q">Pourquoi le zéro dépendance compte-t-il ?</summary><section class="qa-a"><p>Les outils de sécurité doivent minimiser le risque de dépendances inutiles, car les dépendances peuvent devenir des chemins d'attaque de la chaîne d'approvisionnement.</p></section></details><details class="qa-item" open><summary class="qa-q">À qui s'adresse le projet ?</summary><section class="qa-a"><p>Aux développeurs, équipes sécurité, administrateurs et utilisateurs qui ont besoin d'une génération d'identifiants inspectable, à travers les flux CLI et web.</p></section></details></section><h2 id="references">Références <a class="heading-anchor" href="#references" aria-label="Lien vers Références">#</a></h2>
+<ul>
+<li>GitHub, (2026). <a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator repository ⧉</a>.</li>
+<li>NIST, (2026). <a href="https://pages.nist.gov/800-63-4/" title="Digital Identity Guidelines">Digital Identity Guidelines ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Dernière révision <time datetime="2026-06-19">2026-06-19</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="À propos de l'auteur"><img alt="Portrait de Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/fr/a-propos/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Technologue senior dans la banque, j'écris sur l'IA appliquée, la migration ISO 20022, la cryptographie post-quantique pour les services financiers, et la transformation structurelle des paiements wholesale.</span><span class="author-credentials">Plus de 20 ans d'expérience chez HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/fr/a-propos/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Dernière révision <time datetime="2026-05-29">2026-05-29</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Articles connexes</h2>
+<div class="related-grid">
+<article class="related-card"><a  class="related-media" aria-label="CRYSTALS-Kyber : l&#x27;algorithme de protection à l&#x27;ère quantique" tabindex="-1" title="CRYSTALS-Kyber : l&#x27;algorithme de protection à l&#x27;ère quantique" href="/fr/2023-11-19-algorithme-de-protection-a-l-ere-quantique-crystals-kyber/index.html"><img alt="A modern, sleek quantum computer" src="https://cloudcdn.pro/api/transform?url=/stocks/images/galina-nelyubova-V70-ng4FuiA.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="crystals-kyber-l-algorithme-de-protection-a-l-ere-quantique"><a href="/fr/2023-11-19-algorithme-de-protection-a-l-ere-quantique-crystals-kyber/index.html">CRYSTALS-Kyber : l&#x27;algorithme de protection à l&#x27;ère quantique</a> <a class="heading-anchor" href="#crystals-kyber-l-algorithme-de-protection-a-l-ere-quantique" aria-label="Lien vers CRYSTALS-Kyber : l&#x27;algorithme de protection à l&#x27;ère quantique">#</a></h3><p><time datetime="2023-11-19">2023-11-19</time></p></footer></article>
+<article class="related-card"><a  class="related-media" aria-label="Un algorithme quantique met au défi la cryptographie sur réseaux" tabindex="-1" title="Un algorithme quantique met au défi la cryptographie sur réseaux" href="/fr/2024-04-15-l-algorithme-quantique-defie-la-cryptographie-fondee-sur-les-reseaux/index.html"><img alt="Banner of Network nodes in a digital blue space" src="https://cloudcdn.pro/api/transform?url=/stocks/images/digital-constellation.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="un-algorithme-quantique-met-au-defi-la-cryptographie-sur-reseaux"><a href="/fr/2024-04-15-l-algorithme-quantique-defie-la-cryptographie-fondee-sur-les-reseaux/index.html">Un algorithme quantique met au défi la cryptographie sur réseaux</a> <a class="heading-anchor" href="#un-algorithme-quantique-met-au-defi-la-cryptographie-sur-reseaux" aria-label="Lien vers Un algorithme quantique met au défi la cryptographie sur réseaux">#</a></h3><p><time datetime="2024-04-15">2024-04-15</time></p></footer></article>
+<article class="related-card"><a  class="related-media" aria-label="La distribution de clés quantique révolutionne la sécurité bancaire" tabindex="-1" title="La distribution de clés quantique révolutionne la sécurité bancaire" href="/fr/2023-12-11-distribution-quantique-de-cles-revolution-securite-bancaire/index.html"><img alt="HSBC From the Docks" src="https://cloudcdn.pro/api/transform?url=/stocks/images/hsbc-from-the-docks.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="la-distribution-de-cles-quantique-revolutionne-la-securite-bancaire"><a href="/fr/2023-12-11-distribution-quantique-de-cles-revolution-securite-bancaire/index.html">La distribution de clés quantique révolutionne la sécurité bancaire</a> <a class="heading-anchor" href="#la-distribution-de-cles-quantique-revolutionne-la-securite-bancaire" aria-label="Lien vers La distribution de clés quantique révolutionne la sécurité bancaire">#</a></h3><p><time datetime="2023-12-11">2023-12-11</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Sources et références</h2><ol class="article-sources-list"><li><a href="https://github.com/sebastienrousseau/password-generator" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/sebastienrousseau/password-generator</span></a></li><li><a href="https://pages.nist.gov/800-63-4/" rel="external noopener nofollow"><span class="source-host">pages.nist.gov</span><span class="source-path">/800-63-4/</span></a></li></ol></aside><nav class="post-pagination" aria-label="Pagination des articles"><a class="post-pagination-prev" href="/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">Précédent</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/fr/a-propos/index.html">À propos</a></li>
+              <li><a href="/fr/contact/index.html">Contact</a></li>
+              <li><a href="/fr/concu-avec-static-site-generator/index.html">Conçu avec Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Écrits</h2>
+            <ul>
+              <li><a href="/fr/articles/index.html">Articles</a></li>
+              <li><a href="/fr/publications/index.html">Publications</a></li>
+              <li><a href="/fr/etiquettes/index.html">Étiquettes</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Activité</h2>
+            <ul>
+              <li><a href="/fr/projets/index.html">Projets</a></li>
+              <li><a href="/fr/playlists/index.html">Playlists</a></li>
+              <li><a href="/fr/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Réseaux</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Inscription à la newsletter">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — notes de recherche sur les paiements, l'IA et la cryptographie post-quantique. Pas de spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="vous@banque.com" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">S'inscrire</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Liens sociaux">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau sur Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau sur LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau sur Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau sur YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/fr/accessibilite/index.html">Accessibilité</a> ·
+            <a href="/fr/confidentialite/index.html">Confidentialité</a> ·
+            <a href="/fr/conditions/index.html">Conditions</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"fr"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"fr"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1212,"headline":"Génération d'identifiants résistants au quantique en 2026 : ce que les identifiants forts signifient pour les développeurs, les banques et les agents IA","description":"Password Generator : projet JavaScript open source pour identifiants forts, mémorables, base64 et résistants au quantique, avec calcul d'entropie, CLI, Web UI et cœur sans dépendance.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp","width":"100vw","height":"100vh","caption":"Texture abstraite vitrée sous une lumière froide — symbolisant l'entropie, la résistance au quantique et la surface d'identifiants inspectable qu'un Password Generator moderne expose aux développeurs, aux banques et aux agents IA"},"url":"https://sebastienrousseau.com/fr/2026-06-19-quantique-resistant-password-generation-credentials-2026/","datePublished":"2026-06-19T06:06:06+00:00","dateModified":"2026-06-19","inLanguage":"fr","keywords":"Password Generator, mots de passe résistants au quantique, calcul d'entropie, générateur de phrase secrète, sécurité JavaScript, CLI Password Generator, sécurité des identifiants","articleSection":"Security","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/fr/2026-06-19-quantique-resistant-password-generation-credentials-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"fr"},"citation":[{"@type":"CreativeWork","url":"https://github.com/sebastienrousseau/password-generator"},{"@type":"CreativeWork","url":"https://pages.nist.gov/800-63-4/"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/fr/"},{"@type":"ListItem","position":3,"name":"Génération d'identifiants résistants au quantique en 2026 : ce que les identifiants forts signifient pour les développeurs, les banques et les agents IA","item":"https://sebastienrousseau.com/fr/2026-06-19-quantique-resistant-password-generation-credentials-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Rechercher">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Rechercher</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Rechercher">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Rechercher dans la documentation..." autocomplete="off" aria-label="Rechercher"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> fermer</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> naviguer</span><span><kbd>Entrée</kbd> ouvrir</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Génération d'identifiants résistants au quantique en 2026 : ce que les identifiants forts signifient pour les développeurs, les banques et les agents IA","url":"https://sebastienrousseau.com/fr/2026-06-19-quantique-resistant-password-generation-credentials-2026/","inLanguage":"fr-FR","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"Password Generator, mots de passe résistants au quantique, calcul d'entropie, générateur de phrase secrète, sécurité JavaScript, CLI Password Generator, sécurité des identifiants","programmingLanguage":"JavaScript"}</script></body>
+</html>

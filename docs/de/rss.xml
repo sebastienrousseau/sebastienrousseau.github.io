@@ -6,14 +6,30 @@
     <description>Artikel auf Deutsch: angewandte KI, ISO-20022-Zahlungen, Post-Quanten-Kryptografie und Transformation des Wholesale-Zahlungsverkehrs.</description>
     <atom:link href="https://sebastienrousseau.com/de/rss.xml" rel="self" type="application/rss+xml"/>
     <language>de-DE</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 19:38:43 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle Rechte vorbehalten.</copyright>
+    <item>
+      <title>Quantenresistente Passwort-Erzeugung 2026: Was starke Anmeldedaten für Entwickler, Banken und KI-Agenten bedeuten</title>
+      <link>https://sebastienrousseau.com/de/2026-06-19-quantum-resistant-password-generation-credentials-2026/</link>
+      <description>Password Generator ist ein Open-Source-JavaScript-Projekt für starke, einprägsame, base64- und quantenresistente Anmeldedaten mit Entropie-Messung, CLI, Web-UI und Kern ohne Abhängigkeiten.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-06-19-quantum-resistant-password-generation-credentials-2026/</guid>
+      <pubDate>Fri, 29 May 2026 19:38:43 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Password Generator</category>
+      <category>quantenresistente Passwörter</category>
+      <category>Entropie-Messung</category>
+      <category>Passphrase-Generator</category>
+      <category>JavaScript-Sicherheit</category>
+      <category>CLI Password Generator</category>
+      <category>Anmeldedaten-Sicherheit</category>
+    </item>
     <item>
       <title>DORA, EU-KI-Verordnung und Datensouveränität: Der Compliance-Stack 2026 für Banken</title>
       <link>https://sebastienrousseau.com/de/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
       <description>DORA, die EU-KI-Verordnung, DSGVO, Cloud-Konzentrationsrisiko und Datensouveränität verschmelzen 2026 zu einem Compliance-Stack für Banken.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
-      <pubDate>Thu, 28 May 2026 06:26:19 +0000</pubDate>
+      <pubDate>Fri, 29 May 2026 19:38:43 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>DORA 2026</category>
@@ -29,7 +45,7 @@
       <link>https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/</link>
       <description>KI wird 2026 zum Betriebssystem des Zahlungsverkehrs: vom Analytik-Werkzeug zur Steuerungsschicht für Betrugsabwehr, Zahlungsreparatur, Routing, Liquiditätsprognose, Compliance-Prüfung und agentische Handelskontrollen.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/</guid>
-      <pubDate>Thu, 28 May 2026 06:26:19 +0000</pubDate>
+      <pubDate>Fri, 29 May 2026 19:38:43 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>KI-Zahlungsverkehr 2026</category>

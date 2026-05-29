@@ -6,8 +6,24 @@
     <description>Articole în limba română: IA aplicată, plăți ISO 20022, criptografie post-cuantică și transformarea plăților wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/ro/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ro-RO</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 19:38:44 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Toate drepturile rezervate.</copyright>
+    <item>
+      <title>Generare de parole rezistente la quantum 2026: dezvoltatori, bănci, agenți IA</title>
+      <link>https://sebastienrousseau.com/ro/2026-06-19-quantum-resistant-password-generation-credentials-2026/</link>
+      <description>Password Generator: proiect open source JavaScript pentru credențiale puternice, memorabile, base64 și rezistente la quantum, cu entropie vizibilă, CLI și paritate Web UI.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-06-19-quantum-resistant-password-generation-credentials-2026/</guid>
+      <pubDate>Fri, 29 May 2026 19:38:44 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Password Generator</category>
+      <category>parole rezistente la quantum</category>
+      <category>calcul entropie</category>
+      <category>frază de parolă</category>
+      <category>securitate JavaScript</category>
+      <category>CLI generare parole</category>
+      <category>securitate credențiale</category>
+    </item>
     <item>
       <title>DORA, EU AI Act și suveranitatea datelor: stiva de conformitate bancară 2026</title>
       <link>https://sebastienrousseau.com/ro/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

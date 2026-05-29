@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/fr/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/fr/"/>
   <id>https://sebastienrousseau.com/fr/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T19:38:43+00:00</updated>
+  <entry>
+    <title>Génération d&apos;identifiants résistants au quantique en 2026 : ce que les identifiants forts signifient pour les développeurs, les banques et les agents IA</title>
+    <link href="https://sebastienrousseau.com/fr/2026-06-19-quantique-resistant-password-generation-credentials-2026/"/>
+    <id>https://sebastienrousseau.com/fr/2026-06-19-quantique-resistant-password-generation-credentials-2026/</id>
+    <updated>2026-05-29T19:38:43+00:00</updated>
+    <published>2026-05-29T19:38:43+00:00</published>
+    <summary>Password Generator : projet JavaScript open source pour identifiants forts, mémorables, base64 et résistants au quantique, avec calcul d&apos;entropie, CLI, Web UI et cœur sans dépendance.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI Act et souveraineté des données : la pile de conformité 2026 pour les banques</title>
     <link href="https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

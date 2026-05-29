@@ -6,8 +6,24 @@
     <description>Articles en français : IA appliquée, paiements ISO 20022, cryptographie post-quantique et transformation des paiements wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/fr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fr-FR</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 19:38:43 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Tous droits réservés.</copyright>
+    <item>
+      <title>Génération d&apos;identifiants résistants au quantique en 2026 : ce que les identifiants forts signifient pour les développeurs, les banques et les agents IA</title>
+      <link>https://sebastienrousseau.com/fr/2026-06-19-quantique-resistant-password-generation-credentials-2026/</link>
+      <description>Password Generator : projet JavaScript open source pour identifiants forts, mémorables, base64 et résistants au quantique, avec calcul d&apos;entropie, CLI, Web UI et cœur sans dépendance.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-06-19-quantique-resistant-password-generation-credentials-2026/</guid>
+      <pubDate>Fri, 29 May 2026 19:38:43 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Password Generator</category>
+      <category>mots de passe résistants au quantique</category>
+      <category>calcul d&apos;entropie</category>
+      <category>générateur de phrase secrète</category>
+      <category>sécurité JavaScript</category>
+      <category>CLI Password Generator</category>
+      <category>sécurité des identifiants</category>
+    </item>
     <item>
       <title>DORA, EU AI Act et souveraineté des données : la pile de conformité 2026 pour les banques</title>
       <link>https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

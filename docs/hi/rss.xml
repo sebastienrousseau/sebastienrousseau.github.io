@@ -6,8 +6,24 @@
     <description>हिन्दी लेख: व्यावहारिक AI, ISO 20022 भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतान का रूपांतरण।</description>
     <atom:link href="https://sebastienrousseau.com/hi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>hi-IN</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 19:38:44 +0000</lastBuildDate>
     <copyright>© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।</copyright>
+    <item>
+      <title>2026 में क्वांटम-प्रतिरोधी पासवर्ड जनरेशन: डेवलपरों, बैंकों और AI एजेंट के लिए मज़बूत क्रेडेंशियल का अर्थ</title>
+      <link>https://sebastienrousseau.com/hi/2026-06-19-quantum-resistant-password-generation-credentials-2026/</link>
+      <description>Password Generator एक ओपन सोर्स JavaScript परियोजना है — मज़बूत, यादगार, base64 और क्वांटम-प्रतिरोधी क्रेडेंशियल, एन्ट्रॉपी गणना, CLI, Web UI एवं शून्य निर्भरता कोर के साथ।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-06-19-quantum-resistant-password-generation-credentials-2026/</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Password Generator</category>
+      <category>क्वांटम-प्रतिरोधी पासवर्ड</category>
+      <category>एन्ट्रॉपी गणना</category>
+      <category>पासफ्रेज जनरेटर</category>
+      <category>JavaScript सुरक्षा</category>
+      <category>CLI पासवर्ड जनरेटर</category>
+      <category>क्रेडेंशियल सुरक्षा</category>
+    </item>
     <item>
       <title>DORA, EU AI अधिनियम और डेटा संप्रभुता: बैंकों का 2026 अनुपालन स्टैक</title>
       <link>https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

@@ -1,6 +1,25 @@
 {
-  "count": 56,
+  "count": 57,
   "posts": [
+    {
+      "slug": "2026-06-19-quantum-resistant-password-generation-credentials-2026",
+      "url": "https://sebastienrousseau.com/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html",
+      "date": "2026-06-19",
+      "title": "Quantum-Resistant Password Generation in 2026: What Strong Credentials Mean for Developers, Banks, and AI Agents",
+      "description": "Password Generator is an open-source JavaScript project for strong, memorable, base64, and quantum-resistant credentials with entropy calculation, CLI, Web UI, and zero-dependency core.",
+      "keywords": [
+        "password generator",
+        "quantum resistant passwords",
+        "entropy calculation",
+        "passphrase generator",
+        "JavaScript security",
+        "CLI password generator",
+        "credential security"
+      ],
+      "banner": "https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp",
+      "topics": [],
+      "language": "en-GB"
+    },
     {
       "slug": "2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026",
       "url": "https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html",

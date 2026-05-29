@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/it/2026-06-19-quantum-resistant-password-generation-credentials-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it-IT</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T19:38:44+00:00</news:publication_date>
+    <news:title>Password resistenti al quantum nel 2026: credenziali forti per sviluppatori, banche e agenti IA</news:title>
+    <news:keywords>Password Generator, password resistenti al quantum, calcolo dell&apos;entropia, generatore di passphrase, sicurezza JavaScript, CLI Password Generator, sicurezza delle credenziali</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/it/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>it-IT</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T06:26:19+00:00</news:publication_date>
+    <news:publication_date>2026-05-29T19:38:44+00:00</news:publication_date>
     <news:title>DORA, EU AI Act e sovranità dei dati: lo stack di conformità 2026 per le banche</news:title>
     <news:keywords>DORA 2026, EU AI Act 2026, sovranità dei dati banche, resilienza operativa, rischio di concentrazione cloud, conformità AI servizi finanziari, AI ad alto rischio</news:keywords>
   </news:news>
@@ -20,7 +32,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>it-IT</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T06:26:19+00:00</news:publication_date>
+    <news:publication_date>2026-05-29T19:38:44+00:00</news:publication_date>
     <news:title>Pagamenti agentici nel banking: consenso, responsabilità e nuova UX 2026</news:title>
     <news:keywords>pagamenti agentici 2026, pagamenti agenti IA, Mastercard Agent Pay, pagamento IA Rabobank, AP2, A2A, x402, MCP, machine payments protocol, consenso ai pagamenti, Regulation E, EFTA, responsabilità nei pagamenti, intento verificabile, tokenizzazione, passkey, UX bancaria, commercio IA</news:keywords>
   </news:news>

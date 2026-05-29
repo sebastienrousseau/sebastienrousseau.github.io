@@ -6,8 +6,24 @@
     <description>บทความภาษาไทย: AI ประยุกต์, การชำระเงิน ISO 20022, การเข้ารหัสหลังควอนตัม และการปฏิรูปการชำระเงินขายส่ง</description>
     <atom:link href="https://sebastienrousseau.com/th/rss.xml" rel="self" type="application/rss+xml"/>
     <language>th-TH</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 19:38:44 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์</copyright>
+    <item>
+      <title>การสร้างรหัสผ่านต้านทานควอนตัมในปี 2026: ข้อมูลรับรองที่แข็งแรงสำหรับนักพัฒนา ธนาคาร และเอเจนต์ AI</title>
+      <link>https://sebastienrousseau.com/th/2026-06-19-quantum-resistant-password-generation-credentials-2026/</link>
+      <description>Password Generator คือโครงการโอเพนซอร์ส JavaScript สำหรับสร้างข้อมูลรับรองที่แข็งแรง จดจำง่าย base64 และต้านทานควอนตัม พร้อมการคำนวณเอนโทรปี CLI Web UI และแกนปลอดการพึ่งพา</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-19-quantum-resistant-password-generation-credentials-2026/</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Password Generator</category>
+      <category>รหัสผ่านต้านทานควอนตัม</category>
+      <category>การคำนวณเอนโทรปี</category>
+      <category>ตัวสร้างวลีรหัสผ่าน</category>
+      <category>ความมั่นคงปลอดภัย JavaScript</category>
+      <category>CLI สร้างรหัสผ่าน</category>
+      <category>ความมั่นคงปลอดภัยข้อมูลรับรอง</category>
+    </item>
     <item>
       <title>DORA กฎหมาย AI ของ EU และอธิปไตยข้อมูล: สแต็คการปฏิบัติตามกฎปี 2026 ของธนาคาร</title>
       <link>https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/ha/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ha/"/>
   <id>https://sebastienrousseau.com/ha/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T19:38:44+00:00</updated>
+  <entry>
+    <title>Samar da Kalmomin Sirri Masu Juriya ga Quantum a 2026: Ma&apos;anar Takaddun Shaida ga Bankuna da Wakilan AI</title>
+    <link href="https://sebastienrousseau.com/ha/2026-06-19-quantum-resistant-password-generation-credentials-2026/"/>
+    <id>https://sebastienrousseau.com/ha/2026-06-19-quantum-resistant-password-generation-credentials-2026/</id>
+    <updated>2026-05-29T19:38:44+00:00</updated>
+    <published>2026-05-29T19:38:44+00:00</published>
+    <summary>Password Generator aikin JavaScript ne na buɗaɗɗen tushe don takaddun shaida masu ƙarfi, masu tunawa, base64, da masu juriya ga quantum, tare da entropy, CLI, da Web UI.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI Act, da Ikon Mallakar Bayanai: Tarin Bin Doka na 2026 ga Bankuna</title>
     <link href="https://sebastienrousseau.com/ha/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

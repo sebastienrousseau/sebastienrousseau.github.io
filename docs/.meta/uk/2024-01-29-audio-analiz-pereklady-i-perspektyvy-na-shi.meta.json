@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Мінімалістичний сучасний корпоративний офіс",
-  "locale": "uk_UA",
-  "language": "uk-UA",
+  "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp",
   "title": "[UK DRAFT] AI-Powered Speech Analysis, Translation, & Insight Tool",
   "subtitle": "Революція в обробці аудіоданих за допомогою Azure AI Platform",
+  "banner_alt": "Мінімалістичний сучасний корпоративний офіс",
   "description": "Дізнайтеся, як Audio Analyser на базі Azure AI перетворює розпізнавання мовлення, аналіз тексту та переклади на практичні аналітичні дані.",
-  "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp",
+  "language": "uk-UA",
   "date": "Jan 29, 2024",
-  "keywords": "аудіо аналізатор, azure ai, speech-to-text, аналіз аудіоданих, аналіз тексту, переклади ai, аудіо insights, автоматична транскрипція, обробка аудіоданих, machine learning"
+  "keywords": "аудіо аналізатор, azure ai, speech-to-text, аналіз аудіоданих, аналіз тексту, переклади ai, аудіо insights, автоматична транскрипція, обробка аудіоданих, machine learning",
+  "locale": "uk_UA"
 }

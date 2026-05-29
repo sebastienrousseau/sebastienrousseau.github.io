@@ -6,8 +6,24 @@
     <description>Awọn akọle Yorùbá: AI tó wúlò, ìsanwó ISO 20022, kírípítógíráfì lẹ́yìn-kuántọ́mù, àti àtúnṣe ètò ìsanwó ńláńlá.</description>
     <atom:link href="https://sebastienrousseau.com/yo/rss.xml" rel="self" type="application/rss+xml"/>
     <language>yo-NG</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 19:38:44 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Gbogbo ẹtọ ti wa ni ipamọ.</copyright>
+    <item>
+      <title>Ìṣẹ̀dá Iwọlé Tó Tako Quantum ní 2026: Ohun Tí Iwọlé Lágbára Túmọ̀ Sí</title>
+      <link>https://sebastienrousseau.com/yo/2026-06-19-quantum-resistant-password-generation-credentials-2026/</link>
+      <description>Password Generator jẹ́ iṣẹ́ orisun ṣiṣi JavaScript fún àwọn iwọlé tó lágbára, base64, tó wúwo, àti tó tako quantum pẹ̀lú ìṣirò entropy, CLI, àti Web UI.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-06-19-quantum-resistant-password-generation-credentials-2026/</guid>
+      <pubDate>Fri, 29 May 2026 19:38:44 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Password Generator</category>
+      <category>iwọlé tó tako quantum</category>
+      <category>ìṣirò entropy</category>
+      <category>ọ̀rọ̀ ìjápalẹ̀</category>
+      <category>ààbò JavaScript</category>
+      <category>Password Generator CLI</category>
+      <category>ààbò àwọn iwọlé</category>
+    </item>
     <item>
       <title>DORA, EU AI Act, àti Ọba Lori Dátà: Akopọ Ìbámu 2026 fún Báńkì</title>
       <link>https://sebastienrousseau.com/yo/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

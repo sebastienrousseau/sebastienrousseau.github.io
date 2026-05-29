@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-06-19-quantum-resistant-password-generation-credentials-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T19:38:44+00:00</news:publication_date>
+    <news:title>2026 抗量子密码生成：强凭据对开发者、银行与 AI 代理的意义</news:title>
+    <news:keywords>password generator, 抗量子密码, 熵计算, 密码短语生成器, JavaScript 安全, CLI 密码生成器, 凭证安全</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

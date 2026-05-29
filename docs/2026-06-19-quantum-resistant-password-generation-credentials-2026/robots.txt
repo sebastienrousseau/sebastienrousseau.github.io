@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sebastienrousseau.com/2026-06-19-quantum-resistant-password-generation-credentials-2026/sitemap.xml

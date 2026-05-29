@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/bn/2026-06-19-quantum-resistant-password-generation-credentials-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>bn-BD</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T19:38:43+00:00</news:publication_date>
+    <news:title>২০২৬-এ কোয়ান্টাম-প্রতিরোধী পাসওয়ার্ড জেনারেশন: ডেভেলপার, ব্যাংক ও AI এজেন্টের জন্য শক্তিশালী ক্রেডেনশিয়াল</news:title>
+    <news:keywords>Password Generator, কোয়ান্টাম-প্রতিরোধী পাসওয়ার্ড, এনট্রপি গণনা, পাসফ্রেজ জেনারেটর, JavaScript সুরক্ষা, CLI পাসওয়ার্ড জেনারেটর, ক্রেডেনশিয়াল সুরক্ষা</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

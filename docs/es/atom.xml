@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/es/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/es/"/>
   <id>https://sebastienrousseau.com/es/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T19:38:44+00:00</updated>
+  <entry>
+    <title>Generación de contraseñas resistentes al quantum en 2026: credenciales fuertes para desarrolladores, bancos y agentes de IA</title>
+    <link href="https://sebastienrousseau.com/es/2026-06-19-quantum-resistant-password-generation-credentials-2026/"/>
+    <id>https://sebastienrousseau.com/es/2026-06-19-quantum-resistant-password-generation-credentials-2026/</id>
+    <updated>2026-05-29T19:38:44+00:00</updated>
+    <published>2026-05-29T19:38:44+00:00</published>
+    <summary>Password Generator es un proyecto JavaScript de código abierto para credenciales fuertes, memorables, en base64 y resistentes al quantum, con cálculo de entropía, CLI, Web UI y núcleo sin dependencias.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI Act y soberanía de datos: el stack de cumplimiento bancario 2026</title>
     <link href="https://sebastienrousseau.com/es/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

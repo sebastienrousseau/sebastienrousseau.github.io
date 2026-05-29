@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="hi-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Fri, 19 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Fri, 19 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>2026 में क्वांटम-प्रतिरोधी पासवर्ड जनरेशन: डेवलपरों, बैंकों और AI एजेंट के लिए मज़बूत क्रेडेंशियल का अर्थ — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Password Generator एक ओपन सोर्स JavaScript परियोजना है — मज़बूत, यादगार, base64 और क्वांटम-प्रतिरोधी क्रेडेंशियल, एन्ट्रॉपी गणना, CLI, Web UI एवं शून्य निर्भरता कोर के साथ।">
+<meta name="keywords" content="Password Generator, क्वांटम-प्रतिरोधी पासवर्ड, एन्ट्रॉपी गणना, पासफ्रेज जनरेटर, JavaScript सुरक्षा, CLI पासवर्ड जनरेटर, क्रेडेंशियल सुरक्षा">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Quantum-Resistant Password Generation in 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-HLo+OrUWJC9elFqWVT3Vm7SBI9LLqvO1g9jCtJgvMBc=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-K6zLdJvOMRF/q5sI1AmPNDRWx/Y3kUtzuS9N/Tp1n4c=' 'sha256-Oaaj9oGlpf1px8wmvxAxVS9SAkwp25GMtKQc0Ay7OUg=' 'sha256-V+4gQokLuSBsAEd6+rjrLAuEInhUBgDlkXBQzYxtrJ8=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/hi/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom फ़ीड" href="/hi/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="2026 में क्वांटम-प्रतिरोधी पासवर्ड जनरेशन: डेवलपरों, बैंकों और AI एजेंट के लिए मज़बूत क्रेडेंशियल का अर्थ — Sebastien Rousseau">
+<meta property="og:description" content="Password Generator एक ओपन सोर्स JavaScript परियोजना है — मज़बूत, यादगार, base64 और क्वांटम-प्रतिरोधी क्रेडेंशियल, एन्ट्रॉपी गणना, CLI, Web UI एवं शून्य निर्भरता कोर के साथ।">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/hi/2026-06-19-quantum-resistant-password-generation-credentials-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="hi_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2026 में क्वांटम-प्रतिरोधी पासवर्ड जनरेशन: डेवलपरों, बैंकों और AI एजेंट के लिए मज़बूत क्रेडेंशियल का अर्थ — Sebastien Rousseau">
+<meta name="twitter:description" content="Password Generator एक ओपन सोर्स JavaScript परियोजना है — मज़बूत, यादगार, base64 और क्वांटम-प्रतिरोधी क्रेडेंशियल, एन्ट्रॉपी गणना, CLI, Web UI एवं शून्य निर्भरता कोर के साथ।">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/hi/2026-06-19-quantum-resistant-password-generation-credentials-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-19-quantique-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">मुख्य सामग्री पर जाएँ</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="नेविगेशन बदलें" />
+      <div class="wrap">
+        <a class="ap-brand" href="/hi/index.html" aria-label="Sebastien Rousseau मुख्य पृष्ठ">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="मुख्य नेविगेशन">
+          <ul class="ap-menu">
+            <li><a href="/hi/hamare-baare-mein/index.html">हमारे बारे में</a></li>
+            <li><a href="/hi/lekh/index.html" aria-current="page" class="active">लेख</a></li>
+            <li><a href="/hi/prakashan/index.html">प्रकाशन</a></li>
+            <li><a href="/hi/vishay/index.html">विषय</a></li>
+            <li><a href="/hi/pariyojanaen/index.html">परियोजनाएँ</a></li>
+            <li><a href="/hi/pleelist/index.html">प्लेलिस्ट</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="डार्क थीम चालू करें" aria-pressed="false" title="थीम बदलें">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="खोजें (Cmd या Ctrl + K)" title="खोजें (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="भाषा">
+            <button type="button" class="ap-lang-toggle" aria-label="HI, भाषा बदलें" aria-expanded="false" aria-haspopup="menu" title="भाषा बदलें">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">HI</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-19-quantique-resistant-password-generation-credentials-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/hi/sampark/index.html" aria-label="संपर्क करें">संपर्क करें ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="नेविगेशन बदलें">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>2026 में क्वांटम-प्रतिरोधी पासवर्ड जनरेशन: डेवलपरों, बैंकों और AI एजेंट के लिए मज़बूत क्रेडेंशियल का अर्थ</h1>
+      <p class="sub">क्रेडेंशियल जनरेशन आज भी अग्रिम पंक्ति का सुरक्षा नियंत्रण है, पर अब इसे एन्ट्रॉपी दृश्यता, क्रॉस-प्लेटफ़ॉर्म समानता, पासफ्रेज एर्गोनॉमिक्स और AI-एजेंट जागरूकता चाहिए।</p>
+    <nav class="article-tags" aria-label="विषय"><a href="/tags/index.html#h3-password-generator" class="article-tag" rel="tag">Password Generator</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">क्वांटम-प्रतिरोधी पासवर्ड</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">एन्ट्रॉपी गणना</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">पासफ्रेज जनरेटर</a><a href="/tags/index.html#h3-javascript" class="article-tag" rel="tag">JavaScript सुरक्षा</a><a href="/tags/index.html#h3-cli" class="article-tag" rel="tag">CLI पासवर्ड जनरेटर</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">क्रेडेंशियल सुरक्षा</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-19T06:06:06+00:00" class="meta-pub">प्रकाशित 19 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="अनुमानित पठन-समय">5 मिनट का पठन</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>विषय-सूची</h2><ol><li><a href="#2026">2026 में यह ओपन सोर्स परियोजना क्यों मायने रखती है</a></li><li><a href="#section-2">वास्तुकला लेंस</a></li><li><a href="#section-3">निगरानी योग्य संकेत</a></li><li><a href="#section-4">पासकी के बाद पासवर्ड</a></li><li><a href="#section-5">उपयोगकर्ता इंटरफ़ेस के रूप में एन्ट्रॉपी</a></li><li><a href="#ai">AI एजेंट और सीक्रेट</a></li><li><a href="#section-7">अलग-अलग दर्शकों के लिए इसका अर्थ</a></li><li><a href="#section-12">निष्कर्ष</a></li><li><a href="#section-13">अक्सर पूछे जाने वाले प्रश्न</a></li><li><a href="#section-14">संदर्भ</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Password Generator एक ओपन सोर्स JavaScript परियोजना है — मज़बूत, यादगार, base64 और क्वांटम-प्रतिरोधी क्रेडेंशियल, एन्ट्रॉपी गणना, CLI, Web UI एवं शून्य निर्भरता कोर के साथ।</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>2026 में यह ओपन सोर्स परियोजना क्यों मायने रखती है.</strong> 2026 में ओपन सोर्स का रणनीतिक मूल्य अब पारदर्शिता, पुनः-उपयोग या डेवलपर सद्भावना तक सीमित नहीं है। बैंकों और वित्तीय संस्थानों के लिए ओपन सोर्स अवसंरचना धारणाओं का निरीक्षण करने, नियंत्रणों का परीक्षण करने, विक्रेता…</li>  <li><strong>निगरानी योग्य संकेत.</strong> पासकी कई उपभोक्ता कार्यप्रवाहों में पासवर्ड पर निर्भरता घटाती हैं, परंतु क्रेडेंशियल हर जगह बने रहते हैं: व्यवस्थापक खाते, सेवा बूटस्ट्रैप, रिकवरी प्रक्रियाएँ, लीगेसी सिस्टम, साझा वॉल्ट प्रविष्टियाँ, जनित टोकन और…</li>  <li><strong>पासकी के बाद पासवर्ड.</strong> पासकी कई उपभोक्ता कार्यप्रवाहों में पासवर्ड पर निर्भरता घटाती हैं, परंतु क्रेडेंशियल हर जगह बने रहते हैं: व्यवस्थापक खाते, सेवा बूटस्ट्रैप, रिकवरी प्रक्रियाएँ, लीगेसी सिस्टम, साझा वॉल्ट प्रविष्टियाँ, जनित टोकन और…</li>  <li><strong>उपयोगकर्ता इंटरफ़ेस के रूप में एन्ट्रॉपी.</strong> एन्ट्रॉपी गणितीय सुरक्षा और मानवीय निर्णय-निर्माण के बीच का सेतु है। एक उपयोगी जनरेटर को मज़बूती दृश्य बनानी चाहिए, समझौतों को स्पष्ट करना चाहिए और वहाँ यादगार सीक्रेट का समर्थन करना चाहिए जहाँ लोगों को टाइप करना या…</li></ul></aside><h1>2026 में क्वांटम-प्रतिरोधी पासवर्ड जनरेशन: डेवलपरों, बैंकों और AI एजेंट के लिए मज़बूत क्रेडेंशियल का अर्थ</h1>
+<!-- lead-start -->
+<aside class="lead" aria-label="एक नज़र में">
+<p><strong>संक्षेप में।</strong> पासवर्ड पुरानी तकनीक हैं, परंतु 2026 में क्रेडेंशियल जनरेशन पुरानी समस्या नहीं है — पासकी, रिकवरी कोड, API कुंजियाँ, सेवा खाते और अब AI एजेंट सभी &quot;पासवर्ड&quot; को कच्ची एन्ट्रॉपी के रूप में उपभोग करते हैं। Password Generator (ओपन सोर्स JavaScript परियोजना) इस सतह को निरीक्षण-योग्य अवसंरचना मानती है: हेक्सागोनल आर्किटेक्चर, शून्य निर्भरता कोर, CLI + Web UI समानता, मज़बूत/base64/यादगार/क्वांटम-प्रतिरोधी मोड, और वास्तविक-समय एन्ट्रॉपी गणना जिसे बैंक तथा सुरक्षा टीमें ऑडिट कर सकती हैं।</p>
+<p><strong>मुख्य निष्कर्ष:</strong></p>
+<ul>
+<li><strong>क्रेडेंशियल जनरेशन आज भी एक सुरक्षा नियंत्रण है।</strong> जारी होते समय कमज़ोर एन्ट्रॉपी हर डाउनस्ट्रीम रोटेशन नीति को निष्फल कर देती है।</li>
+<li><strong>एन्ट्रॉपी दृश्य होनी चाहिए।</strong> छिपे हुए अनुमानक ज्ञात सीमाओं की तुलना में अधिक ख़राब विफलता मोड हैं।</li>
+<li><strong>मनुष्यों के लिए पासफ्रेज यादृच्छिक स्ट्रिंग्स से बेहतर हैं।</strong> EFF-शैली की शब्द-सूचियाँ और स्पष्ट एन्ट्रॉपी दावे।</li>
+<li><strong>CLI + Web UI समानता मायने रखती है।</strong> एक ही एल्गोरिथ्म, एक ही डिफ़ॉल्ट, दोनों सतहें — कोई &quot;ब्राउज़र मोड अलग है&quot; नहीं।</li>
+<li><strong>AI एजेंट को भी नीति-प्रवर्तित क्रेडेंशियल चाहिए।</strong> सेवा खाते और टूल टोकन प्रथम-श्रेणी उपभोक्ता हैं।</li>
+</ul>
+<p><strong>संबंधित पठन:</strong> <a href="/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/">DORA + AI Act compliance stack</a> · <a href="/hi/2026-05-20-cloud-native-banking-financial-institutions-2026/">Cloud-native banking</a> · <a href="/hi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/">AI operating system for payments</a></p>
+</aside>
+<!-- lead-end -->
+<p>पासवर्ड पुरानी तकनीक हैं, पर क्रेडेंशियल जनरेशन पुरानी समस्या नहीं है। 2026 में क्रेडेंशियल पासकी, टोकन, सीक्रेट, रिकवरी कोड, API कुंजियों, सेवा खातों और AI एजेंट के साथ-साथ मौजूद हैं। Password Generator इसलिए उपयोगी है क्योंकि वह क्रेडेंशियल जनरेशन को एक फेंक देने वाले फ़ॉर्म फ़ील्ड के बजाय पोर्टेबल, निरीक्षण-योग्य और एन्ट्रॉपी-जागरूक डेवलपर टूल मानती है।</p>
+<p>इस लेख का ओपन सोर्स संदर्भ-बिंदु <a href="https://github.com/sebastienrousseau/password-generator" title="password-generator">password-generator ⧉</a> है। यह रिपॉज़िटरी इस रूप में स्थापित है: एक तेज़ ओपन सोर्स पासवर्ड जनरेटर जिसमें हेक्सागोनल आर्किटेक्चर, शून्य निर्भरता कोर, Web UI डेमो, CLI, क्रॉस-प्लेटफ़ॉर्म समानता, मज़बूत/base64/यादगार/क्वांटम-प्रतिरोधी पासवर्ड और वास्तविक-समय एन्ट्रॉपी गणना मौजूद है।</p>
+<hr />
+<blockquote>
+<p><strong>कार्यकारी सारांश / मुख्य निष्कर्ष</strong></p>
+<ul>
+<li><strong>क्रेडेंशियल जनरेशन प्रासंगिक बना हुआ है।</strong> पासकी के बावजूद, सिस्टम अब भी पासवर्ड, पासफ्रेज, API सीक्रेट, रिकवरी कुंजियों और जनित टोकन पर निर्भर हैं।</li>
+<li><strong>एन्ट्रॉपी दृश्य होनी चाहिए।</strong> उपयोगकर्ताओं और डेवलपरों को मज़बूती समझने की ज़रूरत है, धुँधले हरे बार स्वीकार करने की नहीं।</li>
+<li><strong>शून्य निर्भरता कोर एक सुरक्षा विशेषता है।</strong> कम निर्भरताएँ आपूर्ति-शृंखला आक्रमण सतह कम करती हैं।</li>
+<li><strong>क्रॉस-प्लेटफ़ॉर्म समानता मायने रखती है।</strong> CLI और Web UI की सुसंगति डेवलपरों और ग़ैर-तकनीकी उपयोगकर्ताओं दोनों का समर्थन करती है।</li>
+<li><strong>क्वांटम-प्रतिरोधी भाषा को सावधानी चाहिए।</strong> व्यावहारिक संदेश है — लंबे, उच्च-एन्ट्रॉपी वाले सीक्रेट, न कि कोई जादुई पासवर्ड अभेद्यता।</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="2026">2026 में यह ओपन सोर्स परियोजना क्यों मायने रखती है <a class="heading-anchor" href="#2026" aria-label="लिंक:  2026 में यह ओपन सोर्स परियोजना क्यों मायने रखती है">#</a></h2>
+<p>2026 में ओपन सोर्स का रणनीतिक मूल्य अब पारदर्शिता, पुनः-उपयोग या डेवलपर सद्भावना तक सीमित नहीं है। बैंकों और वित्तीय संस्थानों के लिए ओपन सोर्स अवसंरचना धारणाओं का निरीक्षण करने, नियंत्रणों का परीक्षण करने, विक्रेता अपारदर्शिता कम करने और वास्तुकला संबंधी दावों को ऐसे कोड में बदलने का माध्यम बन चुकी है जिसे पढ़ा, फ़ोर्क किया, सख़्त किया और संचालित किया जा सके। सबसे उपयोगी परियोजनाएँ डेमो नहीं हैं। वे संदर्भ कार्यान्वयन हैं जो दिखाती हैं कि सुरक्षा, सुगम्यता, प्रदर्शन, अनुपालन और डेवलपर अनुभव किस तरह एक साथ बैठते हैं।</p>
+<p>password-generator को इसी दृष्टि से समझा जाना चाहिए। यह केवल एक रिपॉज़िटरी नहीं है; यह एक ठोस डिज़ाइन तर्क है। यह कहती है कि महत्वपूर्ण अवसंरचना ऑडिट-योग्य, संयोज्य, प्रलेखित, परीक्षण-योग्य और उस पर निर्भर लोगों के लिए सुबोध होनी चाहिए। वित्तीय सेवाओं में यह इसलिए मायने रखता है क्योंकि सिस्टम तेज़ी से एजेंटिक AI, रियल-टाइम भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफ़ी, क्लाउड-नेटिव लचीलापन, संरचित डेटा और नियामक साक्ष्य के संगम पर बैठ रहे हैं।</p>
+<h2 id="section-2">वास्तुकला लेंस <a class="heading-anchor" href="#section-2" aria-label="लिंक:  वास्तुकला लेंस">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>परत</th>
+<th>डिज़ाइन निर्णय</th>
+<th>यह क्यों मायने रखता है</th>
+<th>ग़लत संचालन का जोखिम</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>कोर</strong></td>
+<td>शून्य निर्भरता पासवर्ड जनरेशन</td>
+<td>आपूर्ति-शृंखला जोखिम कम करता है</td>
+<td>सुरक्षा टूलिंग में निर्भरता जोखिम</td>
+</tr>
+<tr>
+<td><strong>मोड</strong></td>
+<td>मज़बूत, base64, यादगार और क्वांटम-प्रतिरोधी विकल्प</td>
+<td>विभिन्न क्रेडेंशियल संदर्भों का समर्थन</td>
+<td>एक-आकार-सबके-लिए सीक्रेट</td>
+</tr>
+<tr>
+<td><strong>एन्ट्रॉपी</strong></td>
+<td>वास्तविक-समय मज़बूती गणना</td>
+<td>सुरक्षा को दृश्य बनाती है</td>
+<td>भ्रामक मज़बूती संकेतक</td>
+</tr>
+<tr>
+<td><strong>इंटरफ़ेस</strong></td>
+<td>CLI और Web UI</td>
+<td>डेवलपरों और अंत-उपयोगकर्ताओं का समर्थन</td>
+<td>असंगत जनरेशन व्यवहार</td>
+</tr>
+<tr>
+<td><strong>आर्किटेक्चर</strong></td>
+<td>हेक्सागोनल डिज़ाइन</td>
+<td>कोर तर्क को इंटरफ़ेस से अलग करता है</td>
+<td>UI और सुरक्षा तर्क का कसा हुआ युग्मन</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-3">निगरानी योग्य संकेत <a class="heading-anchor" href="#section-3" aria-label="लिंक:  निगरानी योग्य संकेत">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>संकेत</th>
+<th>इसका क्या अर्थ है</th>
+<th>संदर्भ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>24 GitHub stars</strong></td>
+<td>सुरक्षा टूलिंग क्षेत्र में रिपॉज़िटरी की मौजूदा दृश्यता है</td>
+<td><a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>शून्य निर्भरता कोर</strong></td>
+<td>सुरक्षा उपयोगिताओं के लिए निर्भरता न्यूनीकरण महत्वपूर्ण है</td>
+<td><a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>वास्तविक-समय एन्ट्रॉपी गणना</strong></td>
+<td>क्रेडेंशियल मज़बूती उपयोगकर्ताओं के सामने उजागर है</td>
+<td><a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>क्वांटम-प्रतिरोधी मोड</strong></td>
+<td>टूल क्रेडेंशियल स्वच्छता को पोस्ट-क्वांटम सुरक्षा जागरूकता से जोड़ता है</td>
+<td><a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>CLI और Web UI</strong></td>
+<td>परियोजना स्वचालन और अंतःक्रियात्मक दोनों उपयोग का समर्थन करती है</td>
+<td><a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-4">पासकी के बाद पासवर्ड <a class="heading-anchor" href="#section-4" aria-label="लिंक:  पासकी के बाद पासवर्ड">#</a></h2>
+<p>पासकी कई उपभोक्ता कार्यप्रवाहों में पासवर्ड पर निर्भरता घटाती हैं, परंतु क्रेडेंशियल हर जगह बने रहते हैं: व्यवस्थापक खाते, सेवा बूटस्ट्रैप, रिकवरी प्रक्रियाएँ, लीगेसी सिस्टम, साझा वॉल्ट प्रविष्टियाँ, जनित टोकन और ऑफ़लाइन सीक्रेट। एक पासवर्ड जनरेटर तब भी मायने रखता है जब उसे सुरक्षा अवसंरचना के रूप में डिज़ाइन किया गया हो।</p>
+<h2 id="section-5">उपयोगकर्ता इंटरफ़ेस के रूप में एन्ट्रॉपी <a class="heading-anchor" href="#section-5" aria-label="लिंक:  उपयोगकर्ता इंटरफ़ेस के रूप में एन्ट्रॉपी">#</a></h2>
+<p>एन्ट्रॉपी गणितीय सुरक्षा और मानवीय निर्णय-निर्माण के बीच का सेतु है। एक उपयोगी जनरेटर को मज़बूती दृश्य बनानी चाहिए, समझौतों को स्पष्ट करना चाहिए और वहाँ यादगार सीक्रेट का समर्थन करना चाहिए जहाँ लोगों को टाइप करना या पुनर्प्राप्त करना हो।</p>
+<h2 id="ai">AI एजेंट और सीक्रेट <a class="heading-anchor" href="#ai" aria-label="लिंक:  AI एजेंट और सीक्रेट">#</a></h2>
+<p>AI एजेंट क्रेडेंशियल अनुशासन की आवश्यकता बढ़ाते हैं। एजेंट CLI चला सकते हैं, कॉन्फ़िगरेशन पढ़ सकते हैं, परीक्षण खाते बना सकते हैं या स्थानीय विकास परिवेशों के साथ काम कर सकते हैं। एक सुरक्षित जनरेटर को ऐसे कार्यप्रवाहों का समर्थन करना चाहिए जहाँ सीक्रेट न्यूनतम आकस्मिक उद्भासन के साथ जनित, संग्रहीत और साझा किए जाएँ।</p>
+<h2 id="section-7">अलग-अलग दर्शकों के लिए इसका अर्थ <a class="heading-anchor" href="#section-7" aria-label="लिंक:  अलग-अलग दर्शकों के लिए इसका अर्थ">#</a></h2>
+<h3 id="section-8">बैंक प्रौद्योगिकी नेताओं के लिए <a class="heading-anchor" href="#section-8" aria-label="लिंक:  बैंक प्रौद्योगिकी नेताओं के लिए">#</a></h3>
+<p>प्रश्न यह है कि क्या परियोजना एक रणनीतिक दबाव को निष्पादन-योग्य वास्तुकला में बदलने में सहायक हो सकती है। मूल्य तब सबसे प्रबल होता है जब रिपॉज़िटरी टीमों को निरीक्षण के लिए कुछ ठोस देती है: इंटरफ़ेस, कॉन्फ़िगरेशन, परीक्षण, सुरक्षा सीमाएँ, परिनियोजन धारणाएँ और विफलता मोड।</p>
+<h3 id="section-9">सुरक्षा एवं जोखिम टीमों के लिए <a class="heading-anchor" href="#section-9" aria-label="लिंक:  सुरक्षा एवं जोखिम टीमों के लिए">#</a></h3>
+<p>परियोजना का मूल्यांकन केवल विशेषताओं के लिए नहीं, बल्कि नियंत्रण साक्ष्य के लिए होना चाहिए। उपयोगी ओपन सोर्स वित्तीय अवसंरचना उजागर करती है कि पहचान, सीक्रेट, सत्यापन, ऑडिट लॉग, दर सीमाएँ, हस्ताक्षर, उद्गम और रिकवरी किस तरह काम करनी चाहिए।</p>
+<h3 id="section-10">डेवलपरों एवं प्लेटफ़ॉर्म इंजीनियरों के लिए <a class="heading-anchor" href="#section-10" aria-label="लिंक:  डेवलपरों एवं प्लेटफ़ॉर्म इंजीनियरों के लिए">#</a></h3>
+<p>सबसे महत्वपूर्ण परीक्षण यह है कि क्या परियोजना महत्वपूर्ण तंत्र छुपाए बिना संज्ञानात्मक भार कम करती है। अच्छे ओपन सोर्स को सुरक्षित पथ को आसान पथ बनाना चाहिए और साथ ही अनुभवी इंजीनियरों को कार्यान्वयन समझने तथा संशोधित करने की अनुमति देनी चाहिए।</p>
+<h3 id="section-11">योगदानकर्ताओं के लिए <a class="heading-anchor" href="#section-11" aria-label="लिंक:  योगदानकर्ताओं के लिए">#</a></h3>
+<p>अवसर परियोजना को वहाँ सुदृढ़ करना है जहाँ वास्तविक संस्थानों को आश्वासन चाहिए: प्रलेखन, उदाहरण, अनुरूपता परीक्षण, CI सख़्तीकरण, ख़तरा मॉडल, प्रदर्शन प्रोफ़ाइल, सुगम्यता जाँचें और एकीकरण मार्गदर्शिकाएँ।</p>
+<h2 id="section-12">निष्कर्ष <a class="heading-anchor" href="#section-12" aria-label="लिंक:  निष्कर्ष">#</a></h2>
+<p>password-generator पर लिखने का कारण यह है कि वह एक व्यापक उद्योग समस्या को कुछ ठोस में बदल देती है। 2026 में बैंकों को और अमूर्त रूपांतरण भाषा नहीं चाहिए। उन्हें ऐसे निरीक्षण-योग्य सिस्टम चाहिए जो दिखाएँ कि आधुनिक अवसंरचना किस तरह बनाई, सुरक्षित की, परीक्षित की और अभिशासित की जा सकती है। ओपन सोर्स इस तर्क को दृश्य बनाने का सबसे विश्वसनीय तरीक़ा है।</p>
+<h2 id="section-13">अक्सर पूछे जाने वाले प्रश्न <a class="heading-anchor" href="#section-13" aria-label="लिंक:  अक्सर पूछे जाने वाले प्रश्न">#</a></h2>
+<p><strong>क्या पासवर्ड अप्रचलित हो चुके हैं?</strong></p>
+<p>नहीं। पासकी कुछ संदर्भों में पासवर्ड उपयोग कम करती हैं, परंतु पासवर्ड, पासफ्रेज, API सीक्रेट और रिकवरी क्रेडेंशियल सामान्य बने रहते हैं।</p>
+<p><strong>क्वांटम-प्रतिरोधी पासवर्ड का क्या अर्थ है?</strong></p>
+<p>व्यावहारिक रूप से, इसका अर्थ है लंबे, उच्च-एन्ट्रॉपी क्रेडेंशियल जनित करना जो भविष्य की मज़बूत ब्रूट-फ़ोर्स क्षमताओं के समक्ष टिके रहें।</p>
+<p><strong>शून्य निर्भरता क्यों मायने रखती है?</strong></p>
+<p>सुरक्षा उपकरणों को अनावश्यक निर्भरता जोखिम न्यूनतम करना चाहिए क्योंकि निर्भरताएँ आपूर्ति-शृंखला आक्रमण पथ बन सकती हैं।</p>
+<p><strong>इस परियोजना का उपयोग किसे करना चाहिए?</strong></p>
+<p>डेवलपर, सुरक्षा टीमें, व्यवस्थापक और वे उपयोगकर्ता जिन्हें CLI तथा वेब कार्यप्रवाहों में निरीक्षण-योग्य क्रेडेंशियल जनरेशन की आवश्यकता है।</p>
+<h2 id="section-14">संदर्भ <a class="heading-anchor" href="#section-14" aria-label="लिंक:  संदर्भ">#</a></h2>
+<ul>
+<li>GitHub, (2026). <a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator repository ⧉</a>.</li>
+<li>NIST, (2026). <a href="https://pages.nist.gov/800-63-4/" title="Digital Identity Guidelines">Digital Identity Guidelines ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">अंतिम समीक्षा <time datetime="2026-06-19">19 जून 2026</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="लेखक के बारे में"><img alt="Sebastien Rousseau का चित्र" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/hi/hamare-baare-mein/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग टेक्नोलॉजिस्ट; मैं व्यावहारिक AI, ISO 20022 की ओर माइग्रेशन, वित्तीय सेवाओं के लिए पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतानों के संरचनात्मक रूपांतरण पर लिखता हूँ।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20 वर्ष से अधिक का अनुभव। <a href="/hi/hamare-baare-mein/index.html">पूरा परिचय</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">अंतिम समीक्षा <time datetime="2026-05-29">2026-05-29</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">संबंधित पठन</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/hi/2023-11-19-crystals-kyber-quantum-yug-mein-suraksha-algorithm/index.html" class="related-media" aria-label="CRYSTALS-Kyber: क्वांटम-युग का सुरक्षा-कवच अल्गोरिदम" tabindex="-1"><img alt="A modern, sleek quantum computer" src="https://cloudcdn.pro/api/transform?url=/stocks/images/galina-nelyubova-V70-ng4FuiA.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="crystals-kyber"><a href="https://sebastienrousseau.com/hi/2023-11-19-crystals-kyber-quantum-yug-mein-suraksha-algorithm/index.html">CRYSTALS-Kyber: क्वांटम-युग का सुरक्षा-कवच अल्गोरिदम</a> <a class="heading-anchor" href="#crystals-kyber" aria-label="लिंक:  CRYSTALS-Kyber: क्वांटम-युग का सुरक्षा-कवच अल्गोरिदम">#</a></h3><p><time datetime="2023-11-19">2023-11-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/hi/2024-04-15-quantum-algorithm-lattice-aadharit-cryptography-ko-chunauti/index.html" class="related-media" aria-label="एक क्वांटम-अल्गोरिदम लैटिस-आधारित क्रिप्टोग्राफी को चुनौती देता है" tabindex="-1"><img alt="Banner of Network nodes in a digital blue space" src="https://cloudcdn.pro/api/transform?url=/stocks/images/digital-constellation.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-16"><a href="https://sebastienrousseau.com/hi/2024-04-15-quantum-algorithm-lattice-aadharit-cryptography-ko-chunauti/index.html">एक क्वांटम-अल्गोरिदम लैटिस-आधारित क्रिप्टोग्राफी को चुनौती देता है</a> <a class="heading-anchor" href="#section-16" aria-label="लिंक:  एक क्वांटम-अल्गोरिदम लैटिस-आधारित क्रिप्टोग्राफी को चुनौती देता है">#</a></h3><p><time datetime="2024-04-15">2024-04-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/hi/2023-12-11-quantum-kunji-vitaran-banking-suraksha-mein-kraanti/index.html" class="related-media" aria-label="क्वांटम कुंजी-वितरण: बैंकिंग-सुरक्षा में क्रांति" tabindex="-1"><img alt="HSBC From the Docks" src="https://cloudcdn.pro/api/transform?url=/stocks/images/hsbc-from-the-docks.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-17"><a href="https://sebastienrousseau.com/hi/2023-12-11-quantum-kunji-vitaran-banking-suraksha-mein-kraanti/index.html">क्वांटम कुंजी-वितरण: बैंकिंग-सुरक्षा में क्रांति</a> <a class="heading-anchor" href="#section-17" aria-label="लिंक:  क्वांटम कुंजी-वितरण: बैंकिंग-सुरक्षा में क्रांति">#</a></h3><p><time datetime="2023-12-11">2023-12-11</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">स्रोत और संदर्भ</h2><ol class="article-sources-list"><li><a href="https://github.com/sebastienrousseau/password-generator" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/sebastienrousseau/password-generator</span></a></li><li><a href="https://pages.nist.gov/800-63-4/" rel="external noopener nofollow"><span class="source-host">pages.nist.gov</span><span class="source-path">/800-63-4/</span></a></li></ol></aside><nav class="post-pagination" aria-label="लेख पृष्ठ-क्रम"><a class="post-pagination-prev" href="/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">पिछला</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/hi/hamare-baare-mein/index.html">हमारे बारे में</a></li>
+              <li><a href="/hi/sampark/index.html">संपर्क</a></li>
+              <li><a href="/hi/static-site-generator-se-banaya/index.html">Static Site Generator से बनाया गया</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">लेखन</h2>
+            <ul>
+              <li><a href="/hi/lekh/index.html">लेख</a></li>
+              <li><a href="/hi/prakashan/index.html">प्रकाशन</a></li>
+              <li><a href="/hi/tag/index.html">टैग</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">कार्य</h2>
+            <ul>
+              <li><a href="/hi/pariyojanaen/index.html">परियोजनाएँ</a></li>
+              <li><a href="/hi/pleelist/index.html">प्लेलिस्ट</a></li>
+              <li><a href="/hi/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">संपर्क</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="न्यूज़लेटर सदस्यता">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — भुगतान, AI और पोस्ट-क्वांटम क्रिप्टोग्राफी पर शोध-नोट्स। कोई स्पैम नहीं।</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="aap@bank.in" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">सदस्यता लें</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="सामाजिक लिंक">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau पर Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau पर LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau पर Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau पर YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/hi/pahunch-yogyata/index.html">पहुँच-योग्यता</a> ·
+            <a href="/hi/gopniyata/index.html">गोपनीयता</a> ·
+            <a href="/hi/shartein/index.html">शर्तें</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"hi"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"hi"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1097,"headline":"2026 में क्वांटम-प्रतिरोधी पासवर्ड जनरेशन: डेवलपरों, बैंकों और AI एजेंट के लिए मज़बूत क्रेडेंशियल का अर्थ","description":"Password Generator एक ओपन सोर्स JavaScript परियोजना है — मज़बूत, यादगार, base64 और क्वांटम-प्रतिरोधी क्रेडेंशियल, एन्ट्रॉपी गणना, CLI, Web UI एवं शून्य निर्भरता कोर के साथ।","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp","width":"100vw","height":"100vh","caption":"ठंडी रोशनी में चमकदार अमूर्त बनावट — एन्ट्रॉपी, क्वांटम प्रतिरोध और आधुनिक Password Generator द्वारा डेवलपरों, बैंकों तथा AI एजेंट के लिए उजागर की गई निरीक्षण-योग्य क्रेडेंशियल सतह का प्रतीक"},"url":"https://sebastienrousseau.com/hi/2026-06-19-quantum-resistant-password-generation-credentials-2026/","datePublished":"2026-06-19T06:06:06+00:00","dateModified":"2026-06-19","inLanguage":"hi","keywords":"Password Generator, क्वांटम-प्रतिरोधी पासवर्ड, एन्ट्रॉपी गणना, पासफ्रेज जनरेटर, JavaScript सुरक्षा, CLI पासवर्ड जनरेटर, क्रेडेंशियल सुरक्षा","articleSection":"Security","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/hi/2026-06-19-quantum-resistant-password-generation-credentials-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"hi"},"citation":[{"@type":"CreativeWork","url":"https://github.com/sebastienrousseau/password-generator"},{"@type":"CreativeWork","url":"https://pages.nist.gov/800-63-4/"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/hi/"},{"@type":"ListItem","position":3,"name":"2026 में क्वांटम-प्रतिरोधी पासवर्ड जनरेशन: डेवलपरों, बैंकों और AI एजेंट के लिए मज़बूत क्रेडेंशियल का अर्थ","item":"https://sebastienrousseau.com/hi/2026-06-19-quantum-resistant-password-generation-credentials-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="खोजें">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>खोजें</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="खोजें">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="दस्तावेज़ में खोजें..." autocomplete="off" aria-label="खोजें"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> बंद करें</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> नेविगेट करें</span><span><kbd>Enter</kbd> खोलें</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"2026 में क्वांटम-प्रतिरोधी पासवर्ड जनरेशन: डेवलपरों, बैंकों और AI एजेंट के लिए मज़बूत क्रेडेंशियल का अर्थ","url":"https://sebastienrousseau.com/hi/2026-06-19-quantum-resistant-password-generation-credentials-2026/","inLanguage":"hi-IN","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"Password Generator, क्वांटम-प्रतिरोधी पासवर्ड, एन्ट्रॉपी गणना, पासफ्रेज जनरेटर, JavaScript सुरक्षा, CLI पासवर्ड जनरेटर, क्रेडेंशियल सुरक्षा","programmingLanguage":"JavaScript"}</script></body>
+</html>

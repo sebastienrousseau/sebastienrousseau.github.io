@@ -6,8 +6,24 @@
     <description>한국어 기사: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 그리고 도매 결제 인프라의 구조적 변혁.</description>
     <atom:link href="https://sebastienrousseau.com/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 19:38:44 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>2026 양자 내성 비밀번호 생성: 개발자·은행·AI 에이전트를 위한 강력한 자격 증명</title>
+      <link>https://sebastienrousseau.com/ko/2026-06-19-quantum-resistant-password-generation-credentials-2026/</link>
+      <description>Password Generator는 강력·기억형·base64·양자 내성 자격 증명을 엔트로피 계산, CLI, 웹 UI, 의존성 제로 코어로 제공하는 오픈 소스 JavaScript 프로젝트입니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-06-19-quantum-resistant-password-generation-credentials-2026/</guid>
+      <pubDate>Fri, 29 May 2026 19:38:44 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Password Generator</category>
+      <category>양자 내성 비밀번호</category>
+      <category>엔트로피 계산</category>
+      <category>패스프레이즈 생성기</category>
+      <category>JavaScript 보안</category>
+      <category>CLI 비밀번호 생성기</category>
+      <category>자격 증명 보안</category>
+    </item>
     <item>
       <title>DORA, EU AI 법, 데이터 주권: 2026년 은행을 위한 컴플라이언스 스택</title>
       <link>https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

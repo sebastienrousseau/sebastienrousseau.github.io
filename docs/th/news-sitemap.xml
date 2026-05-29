@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/th/2026-06-19-quantum-resistant-password-generation-credentials-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th-TH</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-19T06:06:06+00:00</news:publication_date>
+    <news:title>การสร้างรหัสผ่านต้านทานควอนตัมในปี 2026: ข้อมูลรับรองที่แข็งแรงสำหรับนักพัฒนา ธนาคาร และเอเจนต์ AI</news:title>
+    <news:keywords>Password Generator, รหัสผ่านต้านทานควอนตัม, การคำนวณเอนโทรปี, ตัวสร้างวลีรหัสผ่าน, ความมั่นคงปลอดภัย JavaScript, CLI สร้างรหัสผ่าน, ความมั่นคงปลอดภัยข้อมูลรับรอง</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

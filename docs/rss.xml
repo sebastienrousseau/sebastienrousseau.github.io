@@ -6,8 +6,468 @@
     <description>AI, banking and payments expert. Senior payments leader. Applied AI, ISO 20022 migration, wholesale payments and post-quantum cryptography.</description>
     <atom:link href="https://sebastienrousseau.com/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Thu, 28 May 2026 06:06:06 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 06:06:06 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>Quantum-Resistant Password Generation in 2026: What Strong Credentials Mean for Developers, Banks, and AI Agents</title>
+      <link>https://sebastienrousseau.com/pl/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator is an open-source JavaScript project for strong, memorable, base64, and quantum-resistant credentials with entropy calculation, CLI, Web UI, and zero-dependency core.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>password-generator</category>
+      <category>credentials</category>
+      <category>quantum-resistant</category>
+      <category>entropy</category>
+      <category>security</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>2026'da Kuantuma Dayanıklı Parola Üretimi: Güçlü Kimlik Bilgileri Ne Anlama Geliyor</title>
+      <link>https://sebastienrousseau.com/tr/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator, entropi hesaplaması, CLI, Web arayüzü ve sıfır bağımlılık çekirdeğiyle güçlü, akılda kalıcı, base64 ve kuantuma dayanıklı kimlik bilgileri üreten açık kaynak JavaScript projesidir.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>password-generator</category>
+      <category>kimlik-bilgileri</category>
+      <category>kuantuma-dayanikli</category>
+      <category>entropi</category>
+      <category>guvenlik</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>การสร้างรหัสผ่านต้านทานควอนตัมในปี 2026: ข้อมูลรับรองที่แข็งแรงสำหรับนักพัฒนา ธนาคาร และเอเจนต์ AI</title>
+      <link>https://sebastienrousseau.com/th/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator คือโครงการโอเพนซอร์ส JavaScript สำหรับสร้างข้อมูลรับรองที่แข็งแรง จดจำง่าย base64 และต้านทานควอนตัม พร้อมการคำนวณเอนโทรปี CLI Web UI และแกนปลอดการพึ่งพา</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>Password Generator</category>
+      <category>ข้อมูลรับรอง</category>
+      <category>ต้านทานควอนตัม</category>
+      <category>เอนโทรปี</category>
+      <category>ความมั่นคงปลอดภัย</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>Generación de contraseñas resistentes al quantum en 2026: credenciales fuertes para desarrolladores, bancos y agentes de IA</title>
+      <link>https://sebastienrousseau.com/es/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator es un proyecto JavaScript de código abierto para credenciales fuertes, memorables, en base64 y resistentes al quantum, con cálculo de entropía, CLI, Web UI y núcleo sin dependencias.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>password-generator</category>
+      <category>credenciales</category>
+      <category>resistente al quantum</category>
+      <category>entropía</category>
+      <category>seguridad</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>Génération d'identifiants résistants au quantique en 2026 : ce que les identifiants forts signifient pour les développeurs, les banques et les agents IA</title>
+      <link>https://sebastienrousseau.com/fr/2026-06-19-quantique-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator : projet JavaScript open source pour identifiants forts, mémorables, base64 et résistants au quantique, avec calcul d&apos;entropie, CLI, Web UI et cœur sans dépendance.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-06-19-quantique-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>Password Generator</category>
+      <category>identifiants</category>
+      <category>résistant au quantique</category>
+      <category>entropie</category>
+      <category>sécurité</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>Pembuatan Kata Sandi Tahan Kuantum 2026: Kredensial Kuat bagi Developer, Bank, dan Agen AI</title>
+      <link>https://sebastienrousseau.com/id/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator: proyek JavaScript open source untuk kredensial kuat, mudah diingat, base64, dan tahan kuantum dengan entropi, CLI, Web UI, tanpa dependensi.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>Password Generator</category>
+      <category>kredensial</category>
+      <category>tahan kuantum</category>
+      <category>entropi</category>
+      <category>keamanan</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>2026 양자 내성 비밀번호 생성: 개발자·은행·AI 에이전트를 위한 강력한 자격 증명</title>
+      <link>https://sebastienrousseau.com/ko/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator는 강력·기억형·base64·양자 내성 자격 증명을 엔트로피 계산, CLI, 웹 UI, 의존성 제로 코어로 제공하는 오픈 소스 JavaScript 프로젝트입니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>Password Generator</category>
+      <category>자격 증명</category>
+      <category>양자 내성</category>
+      <category>엔트로피</category>
+      <category>보안</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>Quantenresistente Passwort-Erzeugung 2026: Was starke Anmeldedaten für Entwickler, Banken und KI-Agenten bedeuten</title>
+      <link>https://sebastienrousseau.com/de/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator ist ein Open-Source-JavaScript-Projekt für starke, einprägsame, base64- und quantenresistente Anmeldedaten mit Entropie-Messung, CLI, Web-UI und Kern ohne Abhängigkeiten.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>Password Generator</category>
+      <category>Anmeldedaten</category>
+      <category>quantenresistent</category>
+      <category>Entropie</category>
+      <category>Sicherheit</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>2026 में क्वांटम-प्रतिरोधी पासवर्ड जनरेशन: डेवलपरों, बैंकों और AI एजेंट के लिए मज़बूत क्रेडेंशियल का अर्थ</title>
+      <link>https://sebastienrousseau.com/hi/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator एक ओपन सोर्स JavaScript परियोजना है — मज़बूत, यादगार, base64 और क्वांटम-प्रतिरोधी क्रेडेंशियल, एन्ट्रॉपी गणना, CLI, Web UI एवं शून्य निर्भरता कोर के साथ।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>Password Generator</category>
+      <category>क्रेडेंशियल</category>
+      <category>क्वांटम-प्रतिरोधी</category>
+      <category>एन्ट्रॉपी</category>
+      <category>सुरक्षा</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>Quantum-Resistant Password Generation 2026: Credentials sa Bangko at AI</title>
+      <link>https://sebastienrousseau.com/fil/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Ang Password Generator ay open source na JavaScript para sa malakas, naaalala, base64, at quantum-resistant na credentials na may entropy calculation, CLI, at walang dependency.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>Password Generator</category>
+      <category>credentials</category>
+      <category>quantum-resistant</category>
+      <category>entropy</category>
+      <category>seguridad</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>২০২৬-এ কোয়ান্টাম-প্রতিরোধী পাসওয়ার্ড জেনারেশন: ডেভেলপার, ব্যাংক ও AI এজেন্টের জন্য শক্তিশালী ক্রেডেনশিয়াল</title>
+      <link>https://sebastienrousseau.com/bn/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator একটি ওপেন সোর্স JavaScript প্রকল্প — শক্তিশালী, স্মরণযোগ্য, base64 ও কোয়ান্টাম-প্রতিরোধী ক্রেডেনশিয়াল, এনট্রপি গণনা, CLI, ওয়েব UI ও শূন্য নির্ভরতা কোর-সহ।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>Password Generator</category>
+      <category>ক্রেডেনশিয়াল</category>
+      <category>কোয়ান্টাম-প্রতিরোধী</category>
+      <category>এনট্রপি</category>
+      <category>সুরক্ষা</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>Kwantumbestendige credentialgeneratie in 2026: sterke credentials voor ontwikkelaars, banken en AI-agenten</title>
+      <link>https://sebastienrousseau.com/nl/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator: open source JavaScript voor sterke, memoriseerbare, base64 en kwantumbestendige credentials met entropie, CLI en Web UI.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>Password Generator</category>
+      <category>credentials</category>
+      <category>kwantumbestendig</category>
+      <category>entropie</category>
+      <category>security</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>Geração de senhas resistente ao quantum em 2026</title>
+      <link>https://sebastienrousseau.com/pt-br/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator é um projeto JavaScript de código aberto para credenciais fortes, memorizáveis, base64 e resistentes ao quantum, com cálculo de entropia, CLI, Web UI e núcleo sem dependências.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>Password Generator</category>
+      <category>credenciais</category>
+      <category>resistente ao quantum</category>
+      <category>entropia</category>
+      <category>segurança</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>توليد كلمات مرور مقاومة للكم في 2026: بيانات اعتماد قوية للمطورين والمصارف ووكلاء الذكاء الاصطناعي</title>
+      <link>https://sebastienrousseau.com/ar/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator مشروع JavaScript مفتوح المصدر لتوليد بيانات اعتماد قوية وقابلة للتذكر وbase64 ومقاومة للكم، مع حساب الإنتروبيا، CLI، واجهة ويب، ونواة بدون تبعيات.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>مولد كلمات المرور</category>
+      <category>بيانات الاعتماد</category>
+      <category>مقاوم للكم</category>
+      <category>الإنتروبيا</category>
+      <category>الأمن</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>Samar da Kalmomin Sirri Masu Juriya ga Quantum a 2026: Ma'anar Takaddun Shaida ga Bankuna da Wakilan AI</title>
+      <link>https://sebastienrousseau.com/ha/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator aikin JavaScript ne na buɗaɗɗen tushe don takaddun shaida masu ƙarfi, masu tunawa, base64, da masu juriya ga quantum, tare da entropy, CLI, da Web UI.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>Password Generator</category>
+      <category>takaddun shaida</category>
+      <category>mai juriya ga quantum</category>
+      <category>entropy</category>
+      <category>tsaro</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>Квантово-стійка генерація паролів 2026: що сильні облікові дані означають для розробників, банків та AI-агентів</title>
+      <link>https://sebastienrousseau.com/uk/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator — це JavaScript-проєкт з відкритим вихідним кодом для надійних, запам&apos;ятовуваних, base64 і квантово-стійких облікових даних з обчисленням ентропії, CLI та Web UI.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>Password Generator</category>
+      <category>облікові дані</category>
+      <category>квантово-стійкі</category>
+      <category>ентропія</category>
+      <category>безпека</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>Ìṣẹ̀dá Iwọlé Tó Tako Quantum ní 2026: Ohun Tí Iwọlé Lágbára Túmọ̀ Sí</title>
+      <link>https://sebastienrousseau.com/yo/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator jẹ́ iṣẹ́ orisun ṣiṣi JavaScript fún àwọn iwọlé tó lágbára, base64, tó wúwo, àti tó tako quantum pẹ̀lú ìṣirò entropy, CLI, àti Web UI.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>Password Generator</category>
+      <category>àwọn iwọlé</category>
+      <category>tó tako quantum</category>
+      <category>entropy</category>
+      <category>ààbò</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>Generare de parole rezistente la quantum 2026: dezvoltatori, bănci, agenți IA</title>
+      <link>https://sebastienrousseau.com/ro/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator: proiect open source JavaScript pentru credențiale puternice, memorabile, base64 și rezistente la quantum, cu entropie vizibilă, CLI și paritate Web UI.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>Password Generator</category>
+      <category>credențiale</category>
+      <category>rezistent la quantum</category>
+      <category>entropie</category>
+      <category>securitate</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>Квантово-устойчивая генерация паролей в 2026 году: что они значат для разработчиков, банков и ИИ</title>
+      <link>https://sebastienrousseau.com/ru/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator — открытый проект на JavaScript для сильных, запоминаемых, base64 и квантово-устойчивых учётных данных: расчёт энтропии, CLI, веб-интерфейс и ядро без зависимостей.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>Password Generator</category>
+      <category>учётные данные</category>
+      <category>квантово-устойчивый</category>
+      <category>энтропия</category>
+      <category>безопасность</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>Generování pověření odolných vůči kvantu v roce 2026: Co silná pověření znamenají pro vývojáře, banky a AI agenty</title>
+      <link>https://sebastienrousseau.com/cs/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator je open source JavaScript projekt pro silná, zapamatovatelná, base64 a kvantově odolná pověření s výpočtem entropie, CLI, Web UI a jádrem bez závislostí.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>Password Generator</category>
+      <category>pověření</category>
+      <category>odolný vůči kvantu</category>
+      <category>entropie</category>
+      <category>bezpečnost</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>Password resistenti al quantum nel 2026: credenziali forti per sviluppatori, banche e agenti IA</title>
+      <link>https://sebastienrousseau.com/it/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator è un progetto JavaScript open source per credenziali forti, memorabili, base64 e resistenti al quantum, con calcolo di entropia, CLI, Web UI e core zero-dipendenze.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>Password Generator</category>
+      <category>credenziali</category>
+      <category>resistente al quantum</category>
+      <category>entropia</category>
+      <category>sicurezza</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>2026 年の耐量子パスワード生成:開発者・銀行・AIエージェントにとっての強力な認証情報</title>
+      <link>https://sebastienrousseau.com/ja/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator は、強力・記憶可能・base64・耐量子の認証情報を、エントロピー算出、CLI、Web UI、依存ゼロのコアで提供するオープンソース JavaScript プロジェクトです。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>Password Generator</category>
+      <category>認証情報</category>
+      <category>耐量子</category>
+      <category>エントロピー</category>
+      <category>セキュリティ</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>יצירת סיסמאות עמידות-קוונטים ב-2026: מה אישורים חזקים אומרים למפתחים, לבנקים ולסוכני AI</title>
+      <link>https://sebastienrousseau.com/he/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator הוא פרויקט JavaScript בקוד פתוח ליצירת אישורים חזקים, ניתנים לזכירה, base64 ועמידי-קוונטים עם חישוב אנטרופיה, CLI, ממשק Web וליבה ללא תלויות.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>Password Generator</category>
+      <category>אישורים</category>
+      <category>עמיד-קוונטים</category>
+      <category>אנטרופיה</category>
+      <category>אבטחה</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>Kvantresistent lösenordsgenerering för utvecklare och banker 2026</title>
+      <link>https://sebastienrousseau.com/sv/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator: öppen källkod i JavaScript för starka, base64, minnesvänliga och kvantresistenta autentiseringsuppgifter med entropi, CLI och webb-UI.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>password-generator</category>
+      <category>autentiseringsuppgifter</category>
+      <category>kvantresistent</category>
+      <category>entropi</category>
+      <category>säkerhet</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>Tạo mật khẩu kháng lượng tử năm 2026: thông tin xác thực mạnh cho lập trình viên, ngân hàng và tác nhân AI</title>
+      <link>https://sebastienrousseau.com/vi/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator là dự án JavaScript mã nguồn mở tạo thông tin xác thực mạnh, dễ nhớ, base64 và kháng lượng tử, có tính entropy, CLI, Web UI và lõi không phụ thuộc.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>Password Generator</category>
+      <category>thông tin xác thực</category>
+      <category>kháng lượng tử</category>
+      <category>entropy</category>
+      <category>bảo mật</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    
+    <item>
+      <title>2026 年抗量子密碼生成:強憑證對開發者、銀行與 AI代理的意義</title>
+      <link>https://sebastienrousseau.com/zh-hant/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator 是開源 JavaScript 專案,提供強密碼、好記、base64 與抗量子憑證,具熵計算、CLI、Web UI 與零依賴核心。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>password-generator</category>
+      <category>憑證</category>
+      <category>抗量子</category>
+      <category>熵</category>
+      <category>安全</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
+    <item>
+      <title>2026 抗量子密码生成：强凭据对开发者、银行与 AI 代理的意义</title>
+      <link>https://sebastienrousseau.com/zh-hans/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</link>
+      <description>Password Generator 是开源 JavaScript 项目，生成强密码、易记密码、base64 与抗量子凭据，具备熵值计算、CLI、Web UI 与零依赖核心。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-06-19-quantum-resistant-password-generation-credentials-2026/index.html</guid>
+      <pubDate>Fri, 19 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Security</category>
+      <category>password-generator</category>
+      <category>credentials</category>
+      <category>quantum-resistant</category>
+      <category>熵</category>
+      <category>安全</category>
+      <category>JavaScript</category>
+      <category>CLI</category>
+    </item>
     <item>
       <title>DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</title>
       <link>https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026</link>
@@ -359,476 +819,6 @@
       <category>オペレーショナル・レジリエンス</category>
       <category>クラウド集中リスク</category>
       <category>AI ガバナンス</category>
-    </item>
-    <item>
-      <title>DORA, חוק הבינה המלאכותית וריבונות נתונים: ערימת הציות של 2026 לבנקים</title>
-      <link>https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, חוק הבינה המלאכותית של האיחוד האירופי, GDPR, סיכון ריכוז ענן וריבונות נתונים מתכנסים ב-2026 לערימת ציות אחת לבנקים.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>חוק הבינה המלאכותית של האיחוד האירופי</category>
-      <category>ריבונות נתונים</category>
-      <category>חוסן תפעולי</category>
-      <category>סיכון ריכוז ענן</category>
-      <category>ממשל AI</category>
-    </item>
-    <item>
-      <title>DORA, EU:s AI-förordning och datasuveränitet: bankernas efterlevnadsstack 2026</title>
-      <link>https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU:s AI-förordning, GDPR, koncentrationsrisk i molnet och datasuveränitet konvergerar 2026 till en gemensam efterlevnadsstack för banker.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>datasuveränitet</category>
-      <category>operativ resiliens</category>
-      <category>koncentrationsrisk moln</category>
-      <category>AI-styrning</category>
-    </item>
-    <item>
-      <title>DORA, Đạo luật AI EU và chủ quyền dữ liệu: ngăn xếp tuân thủ 2026 cho ngân hàng</title>
-      <link>https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU AI Act, GDPR, rủi ro tập trung cloud và chủ quyền dữ liệu hội tụ thành một ngăn xếp tuân thủ 2026 cho ngân hàng — kiến trúc, không phải tủ hồ sơ chính sách.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>chủ quyền dữ liệu</category>
-      <category>khả năng phục hồi vận hành</category>
-      <category>rủi ro tập trung cloud</category>
-      <category>quản trị AI</category>
-    </item>
-    <item>
-      <title>DORA, EU AI Act i suwerennosc danych: stos zgodnosci bankow w 2026</title>
-      <link>https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU AI Act, RODO, ryzyko koncentracji chmury i suwerennosc danych laczy sie w jeden stos zgodnosci banku na 2026 rok.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>suwerennosc danych</category>
-      <category>odpornosc operacyjna</category>
-      <category>ryzyko koncentracji chmury</category>
-      <category>nadzor nad AI</category>
-    </item>
-    <item>
-      <title>DORA、EU AI 法與資料主權:銀行 2026 年法遵堆疊</title>
-      <link>https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA、EU AI 法、GDPR、雲端集中風險與資料主權,2026 年正匯流為銀行的單一法遵堆疊,設計紀律成為決勝關鍵。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>資料主權</category>
-      <category>營運韌性</category>
-      <category>雲端集中風險</category>
-      <category>AI 治理</category>
-    </item>
-    <item>
-      <title>DORA、EU AI 法案与数据主权：银行 2026 合规栈</title>
-      <link>https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA、EU AI 法案、GDPR、云集中风险与数据主权在 2026 年汇聚为银行的一套合规栈，决定董事会层级的运营模型设计。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI 法案</category>
-      <category>数据主权</category>
-      <category>运营韧性</category>
-      <category>云集中风险</category>
-      <category>AI 治理</category>
-    </item>
-    <item>
-      <title>AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026</title>
-      <link>https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026</link>
-      <description>AI is becoming the operating system of payments in 2026, moving from analytics into fraud prevention, payment repair, routing, liquidity forecasting, compliance screening, and agentic commerce controls.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI payments</category>
-      <category>fraud prevention</category>
-      <category>routing</category>
-      <category>resilience</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>Ödemelerin İşletim Sistemi Olarak AI: 2026'da Dolandırıcılık, Yönlendirme, Dayanıklılık ve Uyum</title>
-      <link>https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI 2026&apos;da ödemelerin işletim sistemi hâline geliyor; analitikten dolandırıcılık önleme, ödeme onarımı, yönlendirme, likidite tahmini, uyum taraması ve aracılı ticaret kontrollerine geçiyor.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI ödemeler</category>
-      <category>dolandırıcılık önleme</category>
-      <category>yönlendirme</category>
-      <category>dayanıklılık</category>
-      <category>uyum</category>
-      <category>ISO 20022</category>
-      <category>aracılı ticaret</category>
-    </item>
-    <item>
-      <title>AI ในฐานะระบบปฏิบัติการของการชำระเงิน: ฉ้อโกง เส้นทาง ยืดหยุ่น ปฏิบัติตามกฎ 2026</title>
-      <link>https://sebastienrousseau.com/th/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI กำลังกลายเป็นระบบปฏิบัติการของการชำระเงินในปี 2026 ขยายจากการวิเคราะห์ไปสู่การป้องกันการฉ้อโกง การซ่อมแซมการชำระเงิน การกำหนดเส้นทาง การคาดการณ์สภาพคล่อง การคัดกรองการปฏิบัติตามกฎ และการควบคุมพาณิชย์เชิงตัวแทน</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI การชำระเงิน</category>
-      <category>การป้องกันการฉ้อโกง</category>
-      <category>การกำหนดเส้นทาง</category>
-      <category>ความยืดหยุ่น</category>
-      <category>การปฏิบัติตามกฎ</category>
-      <category>ISO 20022</category>
-      <category>พาณิชย์เชิงตัวแทน</category>
-    </item>
-    <item>
-      <title>La IA como sistema operativo de los pagos: fraude, enrutamiento, resiliencia y cumplimiento en 2026</title>
-      <link>https://sebastienrousseau.com/es/2026-05-27-ai-operating-system-pagos-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>La IA se está convirtiendo en el sistema operativo de los pagos en 2026: prevención de fraude, reparación, enrutamiento, previsión de liquidez, cribado de cumplimiento y controles de comercio agéntico.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-05-27-ai-operating-system-pagos-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>IA pagos</category>
-      <category>prevención de fraude</category>
-      <category>enrutamiento</category>
-      <category>resiliencia</category>
-      <category>cumplimiento</category>
-      <category>ISO 20022</category>
-      <category>comercio agéntico</category>
-    </item>
-    <item>
-      <title>L'IA comme système d'exploitation des paiements : fraude, routage, résilience et conformité en 2026</title>
-      <link>https://sebastienrousseau.com/fr/2026-05-27-ai-operating-system-paiements-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>L&apos;IA devient le système d&apos;exploitation des paiements en 2026 : prévention de la fraude, réparation des paiements, routage, prévision de liquidité, filtrage de conformité et garde-fous du commerce agentique.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-27-ai-operating-system-paiements-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>IA paiements</category>
-      <category>prévention fraude</category>
-      <category>routage</category>
-      <category>résilience</category>
-      <category>conformité</category>
-      <category>ISO 20022</category>
-      <category>commerce agentique</category>
-    </item>
-    <item>
-      <title>AI sebagai Sistem Operasi Pembayaran: Penipuan, Routing, Ketahanan, dan Kepatuhan pada 2026</title>
-      <link>https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI menjadi sistem operasi pembayaran pada 2026, bergeser dari analitik ke pencegahan penipuan, perbaikan pembayaran, routing, prakiraan likuiditas, penyaringan kepatuhan, dan kontrol agentic commerce.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Keuangan</category>
-      <category>pembayaran AI</category>
-      <category>pencegahan penipuan</category>
-      <category>routing</category>
-      <category>ketahanan</category>
-      <category>kepatuhan</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>결제의 AI 운영체제: 2026년 사기, 라우팅, 회복력, 컴플라이언스</title>
-      <link>https://sebastienrousseau.com/ko/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>2026년 AI는 결제의 운영체제로 자리잡으며, 분석 대시보드를 넘어 사기 방지, 결제 복구, 라우팅, 유동성 예측, 컴플라이언스 검사, 에이전틱 커머스 통제 영역으로 확장되고 있습니다.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI 결제</category>
-      <category>사기 방지</category>
-      <category>라우팅</category>
-      <category>회복력</category>
-      <category>컴플라이언스</category>
-      <category>ISO 20022</category>
-      <category>에이전틱 커머스</category>
-    </item>
-    <item>
-      <title>KI als Betriebssystem des Zahlungsverkehrs: Betrug, Routing, Resilienz und Compliance 2026</title>
-      <link>https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>KI wird 2026 zum Betriebssystem des Zahlungsverkehrs: vom Analytik-Werkzeug zur Steuerungsschicht für Betrugsabwehr, Zahlungsreparatur, Routing, Liquiditätsprognose, Compliance-Prüfung und agentische Handelskontrollen.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>KI-Zahlungsverkehr</category>
-      <category>Betrugsabwehr</category>
-      <category>Routing</category>
-      <category>Resilienz</category>
-      <category>Compliance</category>
-      <category>ISO 20022</category>
-      <category>agentischer Handel</category>
-    </item>
-    <item>
-      <title>भुगतान का AI ऑपरेटिंग सिस्टम: 2026 में धोखाधड़ी, रूटिंग, लचीलापन और अनुपालन</title>
-      <link>https://sebastienrousseau.com/hi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>2026 में AI भुगतान का ऑपरेटिंग सिस्टम बन रहा है — विश्लेषण से आगे बढ़कर धोखाधड़ी रोकथाम, भुगतान मरम्मत, रूटिंग, तरलता पूर्वानुमान, अनुपालन स्क्रीनिंग और एजेंटिक कॉमर्स नियंत्रण तक।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI भुगतान</category>
-      <category>धोखाधड़ी रोकथाम</category>
-      <category>रूटिंग</category>
-      <category>लचीलापन</category>
-      <category>अनुपालन</category>
-      <category>ISO 20022</category>
-      <category>एजेंटिक कॉमर्स</category>
-    </item>
-    <item>
-      <title>AI Bilang Operating System ng Pagbabayad: Pandaraya, Ruta, Katatagan, at Compliance sa 2026</title>
-      <link>https://sebastienrousseau.com/fil/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>Nagiging operating system ng pagbabayad ang AI sa 2026, lumipat mula analytics tungo sa pag-iwas sa pandaraya, pag-aayos ng bayad, ruta, forecasting ng likido, screening ng compliance, at kontrol ng agentic commerce.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI payments</category>
-      <category>pag-iwas sa pandaraya</category>
-      <category>ruta</category>
-      <category>katatagan</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>পেমেন্টের অপারেটিং সিস্টেম হিসেবে AI: ২০২৬-এ প্রতারণা, রাউটিং, স্থিতিস্থাপকতা ও কমপ্লায়েন্স</title>
-      <link>https://sebastienrousseau.com/bn/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>২০২৬ সালে AI পেমেন্টের অপারেটিং সিস্টেমে পরিণত হচ্ছে — অ্যানালিটিক্স থেকে সরে গিয়ে প্রতারণা প্রতিরোধ, পেমেন্ট মেরামত, রাউটিং, তারল্য পূর্বাভাস, কমপ্লায়েন্স স্ক্রিনিং ও এজেন্টিক কমার্স নিয়ন্ত্রণে।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI পেমেন্ট</category>
-      <category>প্রতারণা প্রতিরোধ</category>
-      <category>রাউটিং</category>
-      <category>স্থিতিস্থাপকতা</category>
-      <category>কমপ্লায়েন্স</category>
-      <category>ISO 20022</category>
-      <category>এজেন্টিক কমার্স</category>
-    </item>
-    <item>
-      <title>AI als besturingssysteem van betalingen: fraude, routering, veerkracht en compliance in 2026</title>
-      <link>https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI wordt in 2026 het besturingssysteem van betalingen: van analytics naar fraudepreventie, betalingsherstel, routering, liquiditeitsprognose, compliance-screening en agentic-commerce-controles.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI betalingen</category>
-      <category>fraudepreventie</category>
-      <category>routering</category>
-      <category>veerkracht</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>IA como Sistema Operacional dos Pagamentos: Fraude, Roteamento, Resiliência e Conformidade em 2026</title>
-      <link>https://sebastienrousseau.com/pt-br/2026-05-27-ai-operating-system-pagamentos-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>Em 2026 a IA assume o papel de sistema operacional dos pagamentos: prevenção de fraude, reparo, roteamento, previsão de liquidez, triagem de conformidade e controles de comércio agêntico.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-05-27-ai-operating-system-pagamentos-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>IA em pagamentos</category>
-      <category>prevenção de fraude</category>
-      <category>roteamento</category>
-      <category>resiliência</category>
-      <category>conformidade</category>
-      <category>ISO 20022</category>
-      <category>comércio agêntico</category>
-    </item>
-    <item>
-      <title>الذكاء الاصطناعي بوصفه نظام تشغيل المدفوعات: الاحتيال والتوجيه والمرونة والامتثال في 2026</title>
-      <link>https://sebastienrousseau.com/ar/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>يُصبح الذكاء الاصطناعي نظام تشغيل المدفوعات في 2026، منتقلاً من التحليلات إلى منع الاحتيال، وإصلاح المدفوعات، والتوجيه، والتنبؤ بالسيولة، وفحص الامتثال، وضوابط التجارة الوكيلة.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>نظام تشغيل الذكاء الاصطناعي للمدفوعات</category>
-      <category>منع الاحتيال</category>
-      <category>التوجيه</category>
-      <category>المرونة</category>
-      <category>الامتثال</category>
-      <category>ISO 20022</category>
-      <category>التجارة الوكيلة</category>
-    </item>
-    <item>
-      <title>AI a Matsayin Tsarin Aiki na Biya: Zamba, Tuƙi, Juriya, da Bin Doka a 2026</title>
-      <link>https://sebastienrousseau.com/ha/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>A 2026, AI yana zama tsarin aiki na biya, yana motsi daga nazari zuwa hana zamba, gyaran biya, tuƙi, hasashen ruwa-ruwa, tantance bin doka, da sarrafa cinikayyar agentic commerce.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI payments</category>
-      <category>fraud prevention</category>
-      <category>routing</category>
-      <category>resilience</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>ШІ як операційна система платежів: шахрайство, маршрутизація, стійкість і відповідність у 2026</title>
-      <link>https://sebastienrousseau.com/uk/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>ШІ стає операційною системою платежів у 2026 році: виходить за межі аналітики у запобігання шахрайству, відновлення платежів, маршрутизацію, прогноз ліквідності та перевірку відповідності.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ШІ у платежах</category>
-      <category>запобігання шахрайству</category>
-      <category>маршрутизація</category>
-      <category>стійкість</category>
-      <category>відповідність</category>
-      <category>ISO 20022</category>
-      <category>агентна комерція</category>
-    </item>
-    <item>
-      <title>AI gẹ́gẹ́ bí Ètò Ìṣiṣẹ́ AI ti Ìsanwó: Jìbìtì, Ìpinnu Ọ̀nà, Ìfaradà, Ìbámu 2026</title>
-      <link>https://sebastienrousseau.com/yo/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI ti ń di ètò ìṣiṣẹ́ AI ti ìsanwó ní 2026, ó ń kọjá láti àyẹ̀wò sí ìdènà jìbìtì, àtúnṣe ìsanwó, ìpinnu ọ̀nà, ìhùmọ̀ owó tó ń sàn, àyẹ̀wò ìbámu, àti ìṣàkóso agentic commerce.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI payments</category>
-      <category>fraud prevention</category>
-      <category>routing</category>
-      <category>resilience</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>AI ca sistem de operare al plăților: fraudă, rutare, reziliență și conformitate în 2026</title>
-      <link>https://sebastienrousseau.com/ro/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI devine sistemul de operare al plăților în 2026: prevenirea fraudei, repararea plăților, rutarea, prognoza lichidității, screening de conformitate și controale pentru comerțul agentic la viteza fluxului.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI payments</category>
-      <category>fraud prevention</category>
-      <category>routing</category>
-      <category>resilience</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>ИИ как операционная система платежей: мошенничество, маршрутизация, устойчивость и комплаенс в 2026</title>
-      <link>https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>В 2026 году ИИ становится операционной системой платежей: от аналитики к предотвращению мошенничества, восстановлению платежей, маршрутизации, прогнозу ликвидности, проверкам комплаенса и контролю агентной коммерции.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ИИ в платежах</category>
-      <category>предотвращение мошенничества</category>
-      <category>маршрутизация</category>
-      <category>устойчивость</category>
-      <category>комплаенс</category>
-      <category>ISO 20022</category>
-      <category>агентная коммерция</category>
-    </item>
-    <item>
-      <title>AI jako operační systém plateb: podvody, směrování, odolnost a compliance v roce 2026</title>
-      <link>https://sebastienrousseau.com/cs/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI se v roce 2026 stává operačním systémem plateb — propojuje prevenci podvodů, opravu plateb, směrování, prognózu likvidity, screening compliance a kontroly agentického obchodu v rychlosti workflow.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI platby</category>
-      <category>prevence podvodů</category>
-      <category>směrování</category>
-      <category>odolnost</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentický obchod</category>
-    </item>
-    <item>
-      <title>L'IA come sistema operativo dei pagamenti: frode, routing, resilienza e conformità nel 2026</title>
-      <link>https://sebastienrousseau.com/it/2026-05-27-ai-operating-system-pagamenti-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>Nel 2026 l&apos;IA diventa il sistema operativo dei pagamenti: prevenzione frodi, riparazione, routing, previsione di liquidità, screening di conformità e controlli per il commercio agentico in tempo reale.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-27-ai-operating-system-pagamenti-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI pagamenti</category>
-      <category>prevenzione frodi</category>
-      <category>routing</category>
-      <category>resilienza</category>
-      <category>conformità</category>
-      <category>ISO 20022</category>
-      <category>commercio agentico</category>
-    </item>
-    <item>
-      <title>決済のオペレーティングシステムとしての AI: 2026 年の不正、ルーティング、レジリエンス、コンプライアンス</title>
-      <link>https://sebastienrousseau.com/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>2026 年、AI は決済のオペレーティングシステムへと進化し、分析を越えて不正防止、決済修復、ルーティング、流動性予測、コンプライアンススクリーニング、エージェント型コマース統制を担います。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI 決済</category>
-      <category>不正防止</category>
-      <category>ルーティング</category>
-      <category>レジリエンス</category>
-      <category>コンプライアンス</category>
-      <category>ISO 20022</category>
-      <category>エージェント型コマース</category>
     </item>
   </channel>
 </rss>

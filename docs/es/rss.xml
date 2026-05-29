@@ -6,8 +6,24 @@
     <description>Artículos en español: IA aplicada, pagos ISO 20022, criptografía postcuántica y transformación de los pagos mayoristas.</description>
     <atom:link href="https://sebastienrousseau.com/es/rss.xml" rel="self" type="application/rss+xml"/>
     <language>es-ES</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 19:38:44 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Todos los derechos reservados.</copyright>
+    <item>
+      <title>Generación de contraseñas resistentes al quantum en 2026: credenciales fuertes para desarrolladores, bancos y agentes de IA</title>
+      <link>https://sebastienrousseau.com/es/2026-06-19-quantum-resistant-password-generation-credentials-2026/</link>
+      <description>Password Generator es un proyecto JavaScript de código abierto para credenciales fuertes, memorables, en base64 y resistentes al quantum, con cálculo de entropía, CLI, Web UI y núcleo sin dependencias.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-06-19-quantum-resistant-password-generation-credentials-2026/</guid>
+      <pubDate>Fri, 29 May 2026 19:38:44 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp" type="image/webp" length="0"/>
+      <category>Password Generator</category>
+      <category>contraseñas resistentes al quantum</category>
+      <category>cálculo de entropía</category>
+      <category>generador de frases de contraseña</category>
+      <category>seguridad JavaScript</category>
+      <category>CLI generador de contraseñas</category>
+      <category>seguridad de credenciales</category>
+    </item>
     <item>
       <title>DORA, EU AI Act y soberanía de datos: el stack de cumplimiento bancario 2026</title>
       <link>https://sebastienrousseau.com/es/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Fri, 19 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Fri, 19 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>2026 年抗量子密碼生成:強憑證對開發者、銀行與 AI代理的意義 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Password Generator 是開源 JavaScript 專案,提供強密碼、好記、base64 與抗量子憑證,具熵計算、CLI、Web UI 與零依賴核心。">
+<meta name="keywords" content="Password Generator, 抗量子密碼, 熵計算, 密碼短語產生器, JavaScript 安全, CLI 密碼產生器, 憑證安全">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Quantum-Resistant Password Generation in 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-3SqBRAuMikIENxCbwqOSYql9x6ke9t/RGc0qWCA7O/Y=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-KkLjfC5FA1/b4qB4lyxijX0nqeIWBEp1/r778xTMoR4=' 'sha256-eUxUtVYyyOzj16iTPpJY6xXw3KrZYnjOU7qvmzHKHY8=' 'sha256-wDSmiFAMwPD4Ju1hVjZ+JvYKxiKZvcDoFojB4Zg6/ZU=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/zh-hant/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom 訂閱源" href="/zh-hant/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="2026 年抗量子密碼生成:強憑證對開發者、銀行與 AI代理的意義 — Sebastien Rousseau">
+<meta property="og:description" content="Password Generator 是開源 JavaScript 專案,提供強密碼、好記、base64 與抗量子憑證,具熵計算、CLI、Web UI 與零依賴核心。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/zh-hant/2026-06-19-quantum-resistant-password-generation-credentials-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2026 年抗量子密碼生成:強憑證對開發者、銀行與 AI代理的意義 — Sebastien Rousseau">
+<meta name="twitter:description" content="Password Generator 是開源 JavaScript 專案,提供強密碼、好記、base64 與抗量子憑證,具熵計算、CLI、Web UI 與零依賴核心。">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/zh-hant/2026-06-19-quantum-resistant-password-generation-credentials-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-19-quantique-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-19-quantum-resistant-password-generation-credentials-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">跳至主要內容</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="切換導航" />
+      <div class="wrap">
+        <a class="ap-brand" href="/zh-hant/index.html" aria-label="Sebastien Rousseau 首頁">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="主導航">
+          <ul class="ap-menu">
+            <li><a href="/zh-hant/guanyu-tw/index.html">關於</a></li>
+            <li><a href="/zh-hant/wenzhang-tw/index.html" aria-current="page" class="active">文章</a></li>
+            <li><a href="/zh-hant/lunwen-tw/index.html">論文與白皮書</a></li>
+            <li><a href="/zh-hant/zhuti-tw/index.html">主題</a></li>
+            <li><a href="/zh-hant/xiangmu-tw/index.html">專案</a></li>
+            <li><a href="/zh-hant/boqing-tw/index.html">播放列表</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="切換到深色主題" aria-pressed="false" title="切換主題">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="搜尋（Cmd 或 Ctrl + K）" title="搜尋（⌘K）">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="語言">
+            <button type="button" class="ap-lang-toggle" aria-label="ZH，切換語言" aria-expanded="false" aria-haspopup="menu" title="切換語言">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">ZH</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-19-quantique-resistant-password-generation-credentials-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-19-quantum-resistant-password-generation-credentials-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/zh-hant/lianxi-tw/index.html" aria-label="聯絡我">聯絡我 ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="切換導航">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>2026 年抗量子密碼生成:強憑證對開發者、銀行與 AI代理的意義</h1>
+      <p class="sub">憑證生成仍是第一線安全控制,但如今需要熵可視性、跨平台一致性、密碼短語可用性,並具備 AI代理感知能力。</p>
+    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-password-generator" class="article-tag" rel="tag">Password Generator</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">抗量子密碼</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">熵計算</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">密碼短語產生器</a><a href="/tags/index.html#h3-javascript" class="article-tag" rel="tag">JavaScript 安全</a><a href="/tags/index.html#h3-cli" class="article-tag" rel="tag">CLI 密碼產生器</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">憑證安全</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-19T06:06:06+00:00" class="meta-pub">Published 19 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">1 min read</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Contents</h2><ol><li><a href="#2026">為何此開源專案在 2026 年具意義</a></li><li><a href="#section-2">架構檢視</a></li><li><a href="#section-3">值得追蹤的訊號</a></li><li><a href="#section-4">通行密鑰時代之後的密碼</a></li><li><a href="#section-5">熵作為使用者介面</a></li><li><a href="#ai">AI代理與機密</a></li><li><a href="#section-7">對不同對象的意義</a></li><li><a href="#section-12">結論</a></li><li><a href="#section-13">常見問題</a></li><li><a href="#section-14">參考資料</a></li><li><a href="#section-15">作者簡介</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Password Generator 是開源 JavaScript 專案,提供強密碼、好記、base64 與抗量子憑證,具熵計算、CLI、Web UI 與零依賴核心。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>為何此開源專案在 2026 年具意義.</strong> 2026 年開源的戰略價值,已不再侷限於透明度、再利用或開發者善意。對銀行與金融機構而言,開源基礎建設已成為檢視假設、驗證控制、降低供應商不透明度,並將架構主張轉化為可讀、可分叉、可加固、可營運程式碼的手段。最具用處的專案並非示範品,而是揭示安全、可及性、效能、法遵與開發者體驗如何協調共構的參考實作。.</li>  <li><strong>值得追蹤的訊號.</strong> 通行密鑰雖降低許多消費者工作流對密碼的依賴,但憑證仍無所不在:管理員帳戶、服務啟動、復原流程、舊系統、共用密庫項目、生成令牌與離線機密。當密碼產生器被設計為安全基礎建設時,它仍具意義。.</li>  <li><strong>通行密鑰時代之後的密碼.</strong> 通行密鑰雖降低許多消費者工作流對密碼的依賴,但憑證仍無所不在:管理員帳戶、服務啟動、復原流程、舊系統、共用密庫項目、生成令牌與離線機密。當密碼產生器被設計為安全基礎建設時,它仍具意義。.</li>  <li><strong>熵作為使用者介面.</strong> 熵是數學安全與人類決策之間的橋樑。一個實用的產生器應使強度可見、說明取捨,並在使用者需要鍵入或復原時支援好記的機密。.</li></ul></aside><h1>2026 年抗量子密碼生成:強憑證對開發者、銀行與 AI代理的意義</h1>
+<!-- lead-start -->
+<aside class="lead" aria-label="文章摘要">
+<p><strong>重點速覽。</strong> 密碼是舊技術,但 2026 年的憑證生成並非舊問題——通行密鑰、復原碼、API 金鑰、服務帳戶,以及如今的 AI代理,皆以原始熵的形式消費「密碼」。Password Generator(開源 JavaScript 專案)將該介面視為可稽核的基礎建設:六邊形架構、零依賴核心、CLI + Web UI 跨平台一致性,具備強密碼/base64/好記/抗量子模式,以及銀行與安全團隊可稽核的即時熵計算。</p>
+<p><strong>關鍵要點:</strong></p>
+<ul>
+<li>**憑證生成仍是安全控制。**簽發時的弱熵,將擊潰所有下游輪替政策。</li>
+<li>**熵必須可見。**隱藏式估算器是比已知限制更糟的失敗模式。</li>
+<li><strong>對人類而言,密碼短語勝過隨機字串。</strong> EFF 式詞庫搭配明示的熵宣告。</li>
+<li>**CLI + Web UI 一致性至關重要。**相同演算法、相同預設值、兩個介面——絕無「瀏覽器模式有別」。</li>
+<li>**AI代理同樣需要受政策約束的憑證。**服務帳戶與工具令牌皆為一等公民的消費者。</li>
+</ul>
+<p><strong>延伸閱讀:</strong> <a href="/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/">DORA + EU AI 法法遵堆疊</a> · <a href="/zh-hant/2026-05-20-cloud-native-banking-financial-institutions-2026/">雲端原生銀行</a> · <a href="/zh-hant/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/">支付的 AI 作業系統</a></p>
+</aside>
+<!-- lead-end -->
+<p>密碼是舊技術,但憑證生成並非舊問題。2026 年,憑證與通行密鑰、令牌、機密、復原碼、API 金鑰、服務帳戶與 AI代理並存。Password Generator 之所以實用,正在於它將憑證生成視為可攜、可稽核、熵感知的開發者工具,而非用過即丟的表單欄位。</p>
+<p>本文的開源參考對象為 <a href="https://github.com/sebastienrousseau/password-generator" title="password-generator">password-generator ⧉</a>。該儲存庫定位為:具六邊形架構、零依賴核心、Web UI 示範、CLI、跨平台一致性,以及強密碼、base64、好記與抗量子密碼,並支援即時熵計算的快速開源 Password Generator。</p>
+<hr />
+<blockquote>
+<p><strong>董事會摘要 / 關鍵要點</strong></p>
+<ul>
+<li>**憑證生成仍具關連性。**即便有通行密鑰,系統仍仰賴密碼、密碼短語、API 機密、復原金鑰與生成令牌。</li>
+<li>**熵應可見。**使用者與開發者應能理解強度,而非接受模糊的綠色強度條。</li>
+<li>**零依賴核心是一項安全特性。**較少依賴可降低供應鏈攻擊面。</li>
+<li><strong>跨平台一致性至關重要。</strong> CLI 與 Web UI 的一致性可同時支援開發者與非技術使用者。</li>
+<li>**抗量子語彙需審慎使用。**實務訊息是更長、更高熵的機密,而非神奇的密碼免疫。</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="2026">為何此開源專案在 2026 年具意義 <a class="heading-anchor" href="#2026" aria-label="Link to 為何此開源專案在 2026 年具意義">#</a></h2>
+<p>2026 年開源的戰略價值,已不再侷限於透明度、再利用或開發者善意。對銀行與金融機構而言,開源基礎建設已成為檢視假設、驗證控制、降低供應商不透明度,並將架構主張轉化為可讀、可分叉、可加固、可營運程式碼的手段。最具用處的專案並非示範品,而是揭示安全、可及性、效能、法遵與開發者體驗如何協調共構的參考實作。</p>
+<p>password-generator 應從此一視角理解。它不只是一份儲存庫,而是一項具體的設計主張。它主張關鍵基礎建設應可稽核、可組合、有文件、可測試,並能為仰賴它的人所理解。在金融服務中,這一點尤其要緊,因為系統日益座落於代理式 AI、即時支付、後量子密碼學、雲端原生韌性、結構化資料與監理證據的交會點。</p>
+<h2 id="section-2">架構檢視 <a class="heading-anchor" href="#section-2" aria-label="Link to 架構檢視">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>層級</th>
+<th>設計決策</th>
+<th>重要性</th>
+<th>處理不當的風險</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>核心</strong></td>
+<td>零依賴密碼生成</td>
+<td>降低供應鏈曝險</td>
+<td>安全工具的依賴風險</td>
+</tr>
+<tr>
+<td><strong>模式</strong></td>
+<td>強密碼、base64、好記與抗量子選項</td>
+<td>支援不同憑證情境</td>
+<td>一體適用的機密設計</td>
+</tr>
+<tr>
+<td><strong>熵</strong></td>
+<td>即時強度計算</td>
+<td>讓安全可見</td>
+<td>誤導性的強度指示器</td>
+</tr>
+<tr>
+<td><strong>介面</strong></td>
+<td>CLI 與 Web UI</td>
+<td>同時支援開發者與終端使用者</td>
+<td>生成行為不一致</td>
+</tr>
+<tr>
+<td><strong>架構</strong></td>
+<td>六邊形設計</td>
+<td>將核心邏輯與介面分離</td>
+<td>UI 與安全邏輯緊密耦合</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-3">值得追蹤的訊號 <a class="heading-anchor" href="#section-3" aria-label="Link to 值得追蹤的訊號">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>訊號</th>
+<th>含義</th>
+<th>參考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>24 個 GitHub 星標</strong></td>
+<td>該儲存庫在安全工具領域已具能見度</td>
+<td><a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>零依賴核心</strong></td>
+<td>對安全工具而言,依賴最小化至關重要</td>
+<td><a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>即時熵計算</strong></td>
+<td>將憑證強度暴露給使用者</td>
+<td><a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>抗量子模式</strong></td>
+<td>將憑證衛生與後量子安全意識相連</td>
+<td><a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>CLI 與 Web UI</strong></td>
+<td>該專案同時支援自動化與互動使用</td>
+<td><a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-4">通行密鑰時代之後的密碼 <a class="heading-anchor" href="#section-4" aria-label="Link to 通行密鑰時代之後的密碼">#</a></h2>
+<p>通行密鑰雖降低許多消費者工作流對密碼的依賴,但憑證仍無所不在:管理員帳戶、服務啟動、復原流程、舊系統、共用密庫項目、生成令牌與離線機密。當密碼產生器被設計為安全基礎建設時,它仍具意義。</p>
+<h2 id="section-5">熵作為使用者介面 <a class="heading-anchor" href="#section-5" aria-label="Link to 熵作為使用者介面">#</a></h2>
+<p>熵是數學安全與人類決策之間的橋樑。一個實用的產生器應使強度可見、說明取捨,並在使用者需要鍵入或復原時支援好記的機密。</p>
+<h2 id="ai">AI代理與機密 <a class="heading-anchor" href="#ai" aria-label="Link to AI代理與機密">#</a></h2>
+<p>AI代理使憑證紀律的需求升高。代理可能操作 CLI、讀取設定、建立測試帳戶,或於本機開發環境中作業。一個安全的產生器應支援將機密生成、儲存與分享過程中意外曝露降到最低的工作流。</p>
+<h2 id="section-7">對不同對象的意義 <a class="heading-anchor" href="#section-7" aria-label="Link to 對不同對象的意義">#</a></h2>
+<h3 id="section-8">對銀行科技領導者 <a class="heading-anchor" href="#section-8" aria-label="Link to 對銀行科技領導者">#</a></h3>
+<p>關鍵問題在於,該專案能否協助將戰略壓力轉化為可執行的架構。當儲存庫提供團隊可具體檢視的事物——介面、設定、測試、安全邊界、部署假設與失敗模式——其價值最為明顯。</p>
+<h3 id="section-9">對安全與風險團隊 <a class="heading-anchor" href="#section-9" aria-label="Link to 對安全與風險團隊">#</a></h3>
+<p>該專案應不僅就功能評估,亦應就控制證據評估。實用的開源金融基礎建設,會公開身分、機密、驗證、稽核日誌、流量限制、簽章、來源證明與復原機制應如何運作。</p>
+<h3 id="section-10">對開發者與平台工程師 <a class="heading-anchor" href="#section-10" aria-label="Link to 對開發者與平台工程師">#</a></h3>
+<p>最重要的測試,是該專案能否減少認知負擔而不隱藏關鍵機制。好的開源應使安全的路徑成為最簡單的路徑,同時仍允許資深工程師理解並修改其實作。</p>
+<h3 id="section-11">對貢獻者 <a class="heading-anchor" href="#section-11" aria-label="Link to 對貢獻者">#</a></h3>
+<p>機會在於從真實機構需要保證之處強化專案:文件、範例、合規測試、CI 加固、威脅模型、效能輪廓、可及性檢查與整合指引。</p>
+<h2 id="section-12">結論 <a class="heading-anchor" href="#section-12" aria-label="Link to 結論">#</a></h2>
+<p>撰寫 password-generator 的理由,在於它將更大的產業問題轉化為具體之物。2026 年,銀行不需要更多抽象的轉型語言。它們需要可稽核的系統,展示現代基礎建設如何被建構、保護、測試與治理。開源是讓此一主張可見的最可信途徑。</p>
+<h2 id="section-13">常見問題 <a class="heading-anchor" href="#section-13" aria-label="Link to 常見問題">#</a></h2>
+<p><strong>密碼是否已過時?</strong></p>
+<p>並未。通行密鑰在某些情境下降低了密碼使用,但密碼、密碼短語、API 機密與復原憑證仍屬常見。</p>
+<p><strong>抗量子密碼的意義為何?</strong></p>
+<p>就實務而言,意指生成更長、更高熵的憑證,以在未來更強的暴力破解能力下仍保有韌性。</p>
+<p><strong>為何零依賴重要?</strong></p>
+<p>安全工具應將不必要的依賴風險降至最低,因為依賴可能成為供應鏈攻擊路徑。</p>
+<p><strong>該專案適合誰使用?</strong></p>
+<p>開發者、安全團隊、管理員,以及需要跨 CLI 與網頁工作流進行可稽核憑證生成的使用者。</p>
+<h2 id="section-14">參考資料 <a class="heading-anchor" href="#section-14" aria-label="Link to 參考資料">#</a></h2>
+<ul>
+<li>GitHub, (2026). <a href="https://github.com/sebastienrousseau/password-generator" title="password-generator repository">password-generator repository ⧉</a>.</li>
+<li>NIST, (2026). <a href="https://pages.nist.gov/800-63-4/" title="Digital Identity Guidelines">Digital Identity Guidelines ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<h2 id="section-15">作者簡介 <a class="heading-anchor" href="#section-15" aria-label="Link to 作者簡介">#</a></h2>
+<p>Sebastien Rousseau 為資深銀行技術專家,專注於將開源密碼學工具、後量子安全與身分基礎建設帶入受監管金融服務的工作流——並提供可稽核之證據。其工作橫跨 HSBC Commercial &amp; Investment Bank、PayPal、Barclays、Shazam、AKQA 與 Virgin Group,著重將熵、憑證衛生與 AI代理機密管理連結至 DORA、NIST 與 OWASP 等控制框架。</p>
+<p class="post-reviewed">最後審閱日期 <time datetime="2026-06-19">2026-06-19</time>。</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/zh-hant/guanyu-tw/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行技術專家，撰寫關於應用人工智慧、ISO 20022 遷移、面向金融服務的後量子密碼學，以及批發支付結構性轉型的內容。</span><span class="author-credentials">20 多年經驗，曾任職於滙豐商業及投資銀行、PayPal、巴克萊、Shazam、AKQA、維珍集團。 <a href="/zh-hant/guanyu-tw/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最近審閱 <time datetime="2026-05-29">2026-05-29</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">相關閱讀</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2023-11-19-crystals-kyber-liangzi-shidai-de-baohu-suanfa-tw/index.html" class="related-media" aria-label="CRYSTALS-Kyber：量子時代的守護演算法" tabindex="-1"><img alt="A modern, sleek quantum computer" src="https://cloudcdn.pro/api/transform?url=/stocks/images/galina-nelyubova-V70-ng4FuiA.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="crystals-kyber"><a href="https://sebastienrousseau.com/zh-hant/2023-11-19-crystals-kyber-liangzi-shidai-de-baohu-suanfa-tw/index.html">CRYSTALS-Kyber：量子時代的守護演算法</a> <a class="heading-anchor" href="#crystals-kyber" aria-label="Link to CRYSTALS-Kyber：量子時代的守護演算法">#</a></h3><p><time datetime="2023-11-19">2023-11-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2024-04-15-liangzi-suanfa-tiaozhan-gezhuang-mima-xue-tw/index.html" class="related-media" aria-label="量子演算法挑戰格狀密碼學" tabindex="-1"><img alt="Banner of Network nodes in a digital blue space" src="https://cloudcdn.pro/api/transform?url=/stocks/images/digital-constellation.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-17"><a href="https://sebastienrousseau.com/zh-hant/2024-04-15-liangzi-suanfa-tiaozhan-gezhuang-mima-xue-tw/index.html">量子演算法挑戰格狀密碼學</a> <a class="heading-anchor" href="#section-17" aria-label="Link to 量子演算法挑戰格狀密碼學">#</a></h3><p><time datetime="2024-04-15">2024-04-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2023-12-11-liangzi-miyao-fenfa-yinhang-anquan-de-biange-tw/index.html" class="related-media" aria-label="量子金鑰分發：銀行安全的變革" tabindex="-1"><img alt="HSBC From the Docks" src="https://cloudcdn.pro/api/transform?url=/stocks/images/hsbc-from-the-docks.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-18"><a href="https://sebastienrousseau.com/zh-hant/2023-12-11-liangzi-miyao-fenfa-yinhang-anquan-de-biange-tw/index.html">量子金鑰分發：銀行安全的變革</a> <a class="heading-anchor" href="#section-18" aria-label="Link to 量子金鑰分發：銀行安全的變革">#</a></h3><p><time datetime="2023-12-11">2023-12-11</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Sources & references</h2><ol class="article-sources-list"><li><a href="https://github.com/sebastienrousseau/password-generator" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/sebastienrousseau/password-generator</span></a></li><li><a href="https://pages.nist.gov/800-63-4/" rel="external noopener nofollow"><span class="source-host">pages.nist.gov</span><span class="source-path">/800-63-4/</span></a></li></ol></aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/zh-hant/guanyu-tw/index.html">關於</a></li>
+              <li><a href="/zh-hant/lianxi-tw/index.html">聯絡</a></li>
+              <li><a href="/zh-hant/yong-static-site-generator-zhizuo-tw/index.html">使用 Static Site Generator 構建</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">文章</h2>
+            <ul>
+              <li><a href="/zh-hant/wenzhang-tw/index.html">文章</a></li>
+              <li><a href="/zh-hant/lunwen-tw/index.html">論文與白皮書</a></li>
+              <li><a href="/zh-hant/biaoqian-tw/index.html">標籤</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">工作</h2>
+            <ul>
+              <li><a href="/zh-hant/xiangmu-tw/index.html">專案</a></li>
+              <li><a href="/zh-hant/boqing-tw/index.html">播放列表</a></li>
+              <li><a href="/zh-hant/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">聯絡</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="通訊訂閱">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — 關於支付、人工智慧與後量子密碼學的研究筆記。無垃圾郵件。</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="nin@yinhang-tw.com" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">訂閱</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="社交連結">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 於 Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau 於 Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 於 LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau 於 LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 於 Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau 於 Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 於 YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau 於 YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/zh-hant/wuzhang-ai-tw/index.html">無障礙訪問</a> ·
+            <a href="/zh-hant/yinsi-tw/index.html">隱私</a> ·
+            <a href="/zh-hant/tiaokuan-tw/index.html">條款</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"zh-hant"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"zh-hant"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":169,"headline":"2026 年抗量子密碼生成:強憑證對開發者、銀行與 AI代理的意義","description":"Password Generator 是開源 JavaScript 專案,提供強密碼、好記、base64 與抗量子憑證,具熵計算、CLI、Web UI 與零依賴核心。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/bas-van-der-horst-IuVCERDQy5w.webp","width":"100vw","height":"100vh","caption":"冷光下的玻璃質感抽象紋理——象徵熵、抗量子能力，以及現代密碼產生器向開發者、銀行與 AI 代理所揭露的可檢視憑證介面"},"url":"https://sebastienrousseau.com/zh-hant/2026-06-19-quantum-resistant-password-generation-credentials-2026/","datePublished":"2026-06-19T06:06:06+00:00","dateModified":"2026-06-19","inLanguage":"zh-hant","keywords":"Password Generator, 抗量子密碼, 熵計算, 密碼短語產生器, JavaScript 安全, CLI 密碼產生器, 憑證安全","articleSection":"Security","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hant/2026-06-19-quantum-resistant-password-generation-credentials-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"zh-hant"},"citation":[{"@type":"CreativeWork","url":"https://github.com/sebastienrousseau/password-generator"},{"@type":"CreativeWork","url":"https://pages.nist.gov/800-63-4/"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/zh-hant/"},{"@type":"ListItem","position":3,"name":"2026 年抗量子密碼生成:強憑證對開發者、銀行與 AI代理的意義","item":"https://sebastienrousseau.com/zh-hant/2026-06-19-quantum-resistant-password-generation-credentials-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="搜尋">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>搜尋</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="搜尋">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="搜尋文件…" autocomplete="off" aria-label="搜尋"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> 關閉</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 導航</span><span><kbd>Enter</kbd> 開啟</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"2026 年抗量子密碼生成:強憑證對開發者、銀行與 AI代理的意義","url":"https://sebastienrousseau.com/zh-hant/2026-06-19-quantum-resistant-password-generation-credentials-2026/","inLanguage":"zh-Hant","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"Password Generator, 抗量子密碼, 熵計算, 密碼短語產生器, JavaScript 安全, CLI 密碼產生器, 憑證安全","programmingLanguage":"JavaScript"}</script></body>
+</html>

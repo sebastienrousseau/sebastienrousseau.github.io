@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
-  "description": "Bitcoin: een Peer-to-Peer Electronic Cash System (P2P ECS) met het potentieel om de manier waarop mensen online zaken doen te revolutioneren.",
   "keywords": "Bitcoin, cryptovaluta, blockchain, P2P, double spending, mining, proof-of-work, ETF, Satoshi Nakamoto, gedecentraliseerde financiën",
-  "language": "nl-NL",
-  "subtitle": "Een peer-to-peer-betaalsysteem dat geld opnieuw heeft gedefinieerd",
-  "title": "Bitcoin: het jaar in terugblik van de eerste cryptovaluta",
-  "locale": "nl_NL",
   "date": "January 1, 2018",
-  "banner_alt": "Een stapel gouden en zilveren munten op een tafel"
+  "title": "Bitcoin: het jaar in terugblik van de eerste cryptovaluta",
+  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
+  "banner_alt": "Een stapel gouden en zilveren munten op een tafel",
+  "locale": "nl_NL",
+  "description": "Bitcoin: een Peer-to-Peer Electronic Cash System (P2P ECS) met het potentieel om de manier waarop mensen online zaken doen te revolutioneren.",
+  "language": "nl-NL",
+  "subtitle": "Een peer-to-peer-betaalsysteem dat geld opnieuw heeft gedefinieerd"
 }
