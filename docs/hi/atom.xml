@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/hi/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/hi/"/>
   <id>https://sebastienrousseau.com/hi/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T00:56:34+00:00</updated>
+  <entry>
+    <title>KyberLib और 2026 का पोस्ट-क्वांटम बैंकिंग माइग्रेशन: मानकों से कोड तक</title>
+    <link href="https://sebastienrousseau.com/hi/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/"/>
+    <id>https://sebastienrousseau.com/hi/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</id>
+    <updated>2026-06-12T06:06:06+00:00</updated>
+    <published>2026-06-12T06:06:06+00:00</published>
+    <summary>KyberLib दिखाती है कि पोस्ट-क्वांटम क्रिप्टोग्राफी NIST मानकों और बैंकिंग माइग्रेशन कार्यक्रमों से निरीक्षण योग्य Rust कोड तक कैसे पहुँचती है।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI अधिनियम और डेटा संप्रभुता: बैंकों का 2026 अनुपालन स्टैक</title>
     <link href="https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

@@ -6,8 +6,24 @@
     <description>বাংলা প্রবন্ধ: প্রায়োগিক এআই, ISO 20022 পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের রূপান্তর।</description>
     <atom:link href="https://sebastienrousseau.com/bn/rss.xml" rel="self" type="application/rss+xml"/>
     <language>bn-BD</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 00:56:34 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. সর্বস্বত্ব সংরক্ষিত।</copyright>
+    <item>
+      <title>KyberLib ও ব্যাংকিং পোস্ট-কোয়ান্টাম মাইগ্রেশন ২০২৬: মানদণ্ড থেকে কোডে</title>
+      <link>https://sebastienrousseau.com/bn/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</link>
+      <description>KyberLib দেখায় কীভাবে পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি NIST মানদণ্ড ও ব্যাংকিং মাইগ্রেশন কর্মসূচি থেকে পরিদর্শনযোগ্য Rust কোডে রূপ নেয়।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</guid>
+      <pubDate>Fri, 29 May 2026 00:56:34 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp" type="image/webp" length="0"/>
+      <category>KyberLib</category>
+      <category>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি</category>
+      <category>CRYSTALS-Kyber</category>
+      <category>ML-KEM</category>
+      <category>PQC ব্যাংকিং</category>
+      <category>কোয়ান্টাম-নিরাপদ ব্যাংকিং</category>
+      <category>Rust ক্রিপ্টোগ্রাফি</category>
+    </item>
     <item>
       <title>DORA, EU AI আইন ও ডেটা সার্বভৌমত্ব: ব্যাংকের জন্য ২০২৬-এর কমপ্লায়েন্স স্ট্যাক</title>
       <link>https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

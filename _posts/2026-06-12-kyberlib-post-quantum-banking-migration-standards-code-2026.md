@@ -3,10 +3,10 @@
 # Front Matter (YAML)
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "KyberLib and Post-Quantum Banking Migration architecture diagram for open-source banking infrastructure in 2026"
-banner_height: "571"
-banner_width: "1425"
-banner: "https://cloudcdn.pro/stock/images/kyberlib-post-quantum-banking-2026-banner.webp"
+banner_alt: "Aerial view of the City of London at dusk — symbolising the post-quantum migration banks must run from NIST standards into inspectable cryptographic code"
+banner_height: "1597"
+banner_width: "2584"
+banner: "https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -88,6 +88,8 @@ twitter_site: "@wwdseb"
 twitter_title: "KyberLib and Post-Quantum Banking Migration"
 twitter_url: "https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026"
 
+excerpt: "KyberLib turns the post-quantum banking migration from policy paper into inspectable Rust — ML-KEM key encapsulation, hybrid deployment, crypto-agility, no_std targets, and HSM-ready APIs banks can audit."
+
 # Humans.txt - The Humans.txt front matter (YAML).
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
@@ -101,6 +103,21 @@ site_software: "Static Site Generator, Rust"
 ---
 
 # KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code
+
+
+<!-- lead-start -->
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> KyberLib shows how post-quantum cryptography moves from NIST standards and banking migration programmes into inspectable Rust code.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Why This Open-Source Project Matters in 2026.</strong> The strategic value of open source in 2026 is no longer limited to transparency, reuse, or developer goodwill.</li>
+  <li><strong>Signals to Track.</strong> NIST standards create direction, but they do not replace engineering work.</li>
+  <li><strong>From Standards to Migration Work.</strong> NIST standards create direction, but they do not replace engineering work.</li>
+  <li><strong>Why Rust Matters for PQC.</strong> Rust is attractive for cryptographic infrastructure because memory safety, packaging discipline, and systems-level performance matter.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html">KyberLib: Rust CRYSTALS-Kyber for Post-Quantum</a>, <a href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026">The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer</a>, <a href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</a>.</p>
+</aside>
+<!-- lead-end -->
 
 KyberLib is the right open-source project to connect the post-quantum banking narrative to actual code. Banks now have NIST standards to plan against, but migration will fail if it remains trapped in policy language. The hard work sits in libraries, APIs, key encapsulation, hybrid deployment, testing, HSM compatibility, and crypto-agility.
 
@@ -202,6 +219,14 @@ That post-quantum migration becomes real only when standards are connected to co
 - NIST, (2026). [First three finalized post-quantum encryption standards ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "First three finalized post-quantum encryption standards").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, payments infrastructure, tokenised money, ISO 20022, post-quantum security, cloud-native financial services, open-source infrastructure, and regulated digital markets.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-06-12">2026-06-12</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html" class="related-media" aria-label="KyberLib: Rust CRYSTALS-Kyber for Post-Quantum" tabindex="-1"><img alt="Empowering Secure Communications in the Quantum Era with KyberLib" src="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html">KyberLib: Rust CRYSTALS-Kyber for Post-Quantum</a></h3><p><time datetime="2023-11-28">2023-11-28</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026" class="related-media" aria-label="The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer" tabindex="-1"><img alt="Quantum-safe cryptography migration map for 2026 showing NIST PQC standards, hybrid protocol work, QKD assurance, crypto-agility, and bank data-risk tiers" src="https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026">The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer</a></h3><p><time datetime="2026-05-18">2026-05-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance" class="related-media" aria-label="Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance" tabindex="-1"><img alt="Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA" src="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</a></h3><p><time datetime="2026-05-14">2026-05-14</time></p></footer></article>
+</div>
+</aside>
 <!-- enrich-end -->

@@ -6,8 +6,24 @@
     <description>Articole în limba română: IA aplicată, plăți ISO 20022, criptografie post-cuantică și transformarea plăților wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/ro/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ro-RO</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 00:56:34 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Toate drepturile rezervate.</copyright>
+    <item>
+      <title>KyberLib și migrarea bancară post-cuantică în 2026: de la standarde la cod</title>
+      <link>https://sebastienrousseau.com/ro/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</link>
+      <description>KyberLib arată cum criptografia post-cuantică trece de la standardele NIST și programele bancare de migrare la cod Rust inspectabil pentru bănci.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</guid>
+      <pubDate>Fri, 29 May 2026 00:56:34 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp" type="image/webp" length="0"/>
+      <category>KyberLib</category>
+      <category>criptografie post-cuantică</category>
+      <category>CRYSTALS-Kyber</category>
+      <category>ML-KEM</category>
+      <category>PQC bănci</category>
+      <category>banking quantum safe</category>
+      <category>criptografie Rust</category>
+    </item>
     <item>
       <title>DORA, EU AI Act și suveranitatea datelor: stiva de conformitate bancară 2026</title>
       <link>https://sebastienrousseau.com/ro/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

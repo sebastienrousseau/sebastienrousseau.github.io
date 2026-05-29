@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Fri, 12 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Fri, 12 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>KyberLib와 양자 후 은행 마이그레이션 2026: 표준에서 코드로 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="KyberLib는 양자 후 암호가 NIST 표준과 은행 마이그레이션 프로그램에서 검사 가능한 Rust 코드로 이동하는 방식을 보여줍니다.">
+<meta name="keywords" content="KyberLib, 양자 후 암호, CRYSTALS-Kyber, ML-KEM, PQC 은행, 양자 안전 은행, Rust 암호">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="KyberLib and Post-Quantum Banking Migration">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-6kqUJptF1FHMeL4tPJ56k3D8HC/zSmhMz2WwqHB7ZJM=' 'sha256-IHOnaGIrPXUoCZn6WP7zRwxdhbsJTB+8nVRDrxrjp2E=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-PjltWG3ata/Iz8IavyIgA0T86bmvlYb0AWQmTI8ac9E=' 'sha256-aAR/alubqwuG1+UbvKNFLiB6Ecrw3PGzkKoIj8kYGkU=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/ko/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom 피드" href="/ko/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="KyberLib와 양자 후 은행 마이그레이션 2026: 표준에서 코드로 — Sebastien Rousseau">
+<meta property="og:description" content="KyberLib는 양자 후 암호가 NIST 표준과 은행 마이그레이션 프로그램에서 검사 가능한 Rust 코드로 이동하는 방식을 보여줍니다.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/ko/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="KyberLib와 양자 후 은행 마이그레이션 2026: 표준에서 코드로 — Sebastien Rousseau">
+<meta name="twitter:description" content="KyberLib는 양자 후 암호가 NIST 표준과 은행 마이그레이션 프로그램에서 검사 가능한 Rust 코드로 이동하는 방식을 보여줍니다.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/ko/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">본문으로 건너뛰기</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="내비게이션 전환" />
+      <div class="wrap">
+        <a class="ap-brand" href="/ko/index.html" aria-label="Sebastien Rousseau 홈">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="주요 내비게이션">
+          <ul class="ap-menu">
+            <li><a href="/ko/sogae/index.html">소개</a></li>
+            <li><a href="/ko/gisa/index.html" aria-current="page" class="active">기사</a></li>
+            <li><a href="/ko/nonmun/index.html">논문</a></li>
+            <li><a href="/ko/jujae/index.html">주제</a></li>
+            <li><a href="/ko/peurojekteu/index.html">프로젝트</a></li>
+            <li><a href="/ko/pleilliseuteu/index.html">플레이리스트</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="다크 테마로 전환" aria-pressed="false" title="테마 전환">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="검색 (Cmd 또는 Ctrl + K)" title="검색 (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="언어">
+            <button type="button" class="ap-lang-toggle" aria-label="KO, 언어 변경" aria-expanded="false" aria-haspopup="menu" title="언어 변경">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">KO</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/ko/munui/index.html" aria-label="문의하기">문의하기 ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="내비게이션 전환">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>KyberLib와 양자 후 은행 마이그레이션 2026: 표준에서 코드로</h1>
+      <p class="sub">양자 후 마이그레이션에는 정책 문서 이상의 것이 필요합니다. 개발자가 검사할 수 있는 라이브러리, 테스트, API, 그리고 암호 민첩성을 갖춘 엔지니어링 패턴이 필요합니다.</p>
+    <nav class="article-tags" aria-label="주제"><a href="/tags/index.html#h3-kyberlib" class="article-tag" rel="tag">KyberLib</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">양자 후 암호</a><a href="/tags/index.html#h3-crystals-kyber" class="article-tag" rel="tag">CRYSTALS-Kyber</a><a href="/tags/index.html#h3-ml-kem" class="article-tag" rel="tag">ML-KEM</a><a href="/tags/index.html#h3-pqc" class="article-tag" rel="tag">PQC 은행</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">양자 안전 은행</a><a href="/tags/index.html#h3-rust" class="article-tag" rel="tag">Rust 암호</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-12T06:06:06+00:00" class="meta-pub">발행일 12 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="예상 소요 시간">4 분 소요</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>목차</h2><ol><li><a href="#2026">왜 이 오픈 소스 프로젝트가 2026년에 중요한가</a></li><li><a href="#section-2">아키텍처 렌즈</a></li><li><a href="#section-3">추적해야 할 신호</a></li><li><a href="#section-4">표준에서 마이그레이션 작업으로</a></li><li><a href="#pqc-rust">왜 PQC에 Rust가 중요한가</a></li><li><a href="#section-6">암호 민첩성의 교훈</a></li><li><a href="#section-7">청중별 의미</a></li><li><a href="#section-12">결론</a></li><li><a href="#section-13">자주 묻는 질문</a></li><li><a href="#section-14">참고 자료</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> KyberLib는 양자 후 암호가 NIST 표준과 은행 마이그레이션 프로그램에서 검사 가능한 Rust 코드로 이동하는 방식을 보여줍니다.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>왜 이 오픈 소스 프로젝트가 2026년에 중요한가.</strong> 2026년 오픈 소스의 전략적 가치는 더 이상 투명성, 재사용, 개발자 호의에 한정되지 않습니다.</li>  <li><strong>추적해야 할 신호.</strong> NIST 표준은 방향을 제시하지만 엔지니어링 작업을 대체하지는 않습니다.</li>  <li><strong>표준에서 마이그레이션 작업으로.</strong> NIST 표준은 방향을 제시하지만 엔지니어링 작업을 대체하지는 않습니다.</li>  <li><strong>왜 PQC에 Rust가 중요한가.</strong> Rust는 메모리 안전성, 패키징 규율, 시스템 수준 성능이 중요하기 때문에 암호 인프라에 매력적입니다.</li></ul></aside><h1>KyberLib와 양자 후 은행 마이그레이션 2026: 표준에서 코드로</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>KyberLib는 양자 후 은행 서사를 실제 코드와 연결하기에 적합한 오픈 소스 프로젝트입니다. 은행은 이제 계획을 세울 NIST 표준을 갖고 있지만, 마이그레이션이 정책 언어에 갇혀 있는 한 실패할 것입니다. 어려운 작업은 라이브러리, API, 키 캡슐화, 하이브리드 배포, 테스트, HSM 호환성, 암호 민첩성에 자리합니다.</p>
+<p>이 글의 오픈 소스 참조점은 <a href="https://github.com/sebastienrousseau/kyberlib" title="kyberlib">kyberlib ⧉</a>입니다. 저장소는 CRYSTALS-Kyber 양자 후 암호를 위한 Rust 라이브러리로, 양자 후 KEM, no_std 지원, 양자 암호, 그리고 암호 라이브러리 설계를 중심에 두고 자리매김합니다.</p>
+<hr />
+<blockquote>
+<p><strong>이사회 요약 / 핵심 시사점</strong></p>
+<ul>
+<li><strong>KyberLib는 PQC를 엔지니어링의 대화로 바꿉니다.</strong> 순전히 전략적인 마이그레이션 주제가 아니라 CRYSTALS-Kyber를 중심으로 한 구체적인 Rust 라이브러리를 개발자에게 제공합니다.</li>
+<li><strong>NIST가 출발선을 명확히 했습니다.</strong> FIPS 203은 CRYSTALS-Kyber 계열에서 파생된 키 확립용 ML-KEM을 표준화합니다.</li>
+<li><strong>은행에는 암호 민첩성이 필요합니다.</strong> 지속 가능한 목표는 애플리케이션을 재작성하지 않고 프리미티브를 교체할 수 있는 능력입니다.</li>
+<li><strong>오픈 소스 PQC 라이브러리는 교육과 검증에 도움이 됩니다.</strong> 개발자는 프리미티브가 어떻게 패키징되고, 테스트되며, 노출되는지를 검사할 수 있습니다.</li>
+<li><strong>이 글은 표준과 구현을 연결합니다.</strong> 독자가 직접 공부할 수 있는 저장소에 양자 안전 은행 관련 글을 연결해 줍니다.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="2026">왜 이 오픈 소스 프로젝트가 2026년에 중요한가 <a class="heading-anchor" href="#2026" aria-label="링크 왜 이 오픈 소스 프로젝트가 2026년에 중요한가">#</a></h2>
+<p>2026년 오픈 소스의 전략적 가치는 더 이상 투명성, 재사용, 개발자 호의에 한정되지 않습니다. 은행과 금융기관에 오픈 소스 인프라는 가정을 검사하고, 통제를 테스트하고, 공급자 불투명성을 줄이며, 아키텍처 주장을 읽고 포크하고 강화하고 운영할 수 있는 코드로 바꾸는 수단이 되었습니다. 가장 유용한 프로젝트는 데모가 아닙니다. 보안, 접근성, 성능, 컴플라이언스, 개발자 경험이 어떻게 맞물리는지를 드러내는 참조 구현입니다.</p>
+<p>이것이 kyberlib를 이해해야 하는 렌즈입니다. 단순한 저장소가 아니라 구체적인 설계 논증입니다. 중요한 인프라는 의존하는 사람들이 감사 가능하고, 합성 가능하며, 문서화되고, 테스트 가능하고, 이해 가능해야 한다고 말합니다. 금융 서비스에서는 에이전틱 AI, 실시간 결제, 양자 후 암호, 클라우드 네이티브 회복력, 구조화된 데이터, 규제 증거의 교차점에 시스템이 점점 더 자리하기 때문에 이 점이 중요합니다.</p>
+<h2 id="section-2">아키텍처 렌즈 <a class="heading-anchor" href="#section-2" aria-label="링크 아키텍처 렌즈">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>계층</th>
+<th>설계 결정</th>
+<th>왜 중요한가</th>
+<th>잘못 다룰 때의 위험</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>프리미티브</strong></td>
+<td>CRYSTALS-Kyber / ML-KEM 방식 키 캡슐화</td>
+<td>고전 키 교환에 대한 양자 위협에 대응</td>
+<td>잘못된 파라미터 또는 API 사용</td>
+</tr>
+<tr>
+<td><strong>언어</strong></td>
+<td>Rust 구현</td>
+<td>메모리 안전성과 현대적 시스템 통합</td>
+<td>안전하지 않은 바인딩 또는 취약한 의존성 위생</td>
+</tr>
+<tr>
+<td><strong>배포</strong></td>
+<td>하이브리드 마이그레이션 패턴</td>
+<td>고전 알고리즘과 함께 단계적 도입을 허용</td>
+<td>상호운용성 파괴</td>
+</tr>
+<tr>
+<td><strong>보증</strong></td>
+<td>테스트, 예제, 문서</td>
+<td>암호 사용을 검증하기 더 쉽게 만듦</td>
+<td>구현 증명 없는 보안 연극</td>
+</tr>
+<tr>
+<td><strong>은행 적합성</strong></td>
+<td>암호 민첩성을 갖춘 라이브러리 경계</td>
+<td>안정된 인터페이스 뒤에서 프리미티브 교체로 마이그레이션 지원</td>
+<td>애플리케이션 전반의 알고리즘 하드코딩</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-3">추적해야 할 신호 <a class="heading-anchor" href="#section-3" aria-label="링크 추적해야 할 신호">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>신호</th>
+<th>의미</th>
+<th>참조</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>NIST FIPS 203</strong></td>
+<td>ML-KEM이 키 캡슐화에 대한 지정 표준</td>
+<td><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="NIST PQC 표준">NIST ⧉</a></td>
+</tr>
+<tr>
+<td><strong>KyberLib 저장소</strong></td>
+<td>구체적인 오픈 소스 Rust 구현 중심점 제공</td>
+<td><a href="https://github.com/sebastienrousseau/kyberlib" title="KyberLib 저장소">kyberlib ⧉</a></td>
+</tr>
+<tr>
+<td><strong>양자 후 KEM 주제</strong></td>
+<td>저장소가 PQC 마이그레이션 영역에 직접 자리매김</td>
+<td><a href="https://github.com/sebastienrousseau/kyberlib" title="KyberLib 저장소">kyberlib ⧉</a></td>
+</tr>
+<tr>
+<td><strong>no_std 주제</strong></td>
+<td>임베디드 및 제약 환경과의 잠재적 관련성</td>
+<td><a href="https://github.com/sebastienrousseau/kyberlib" title="KyberLib 저장소">kyberlib ⧉</a></td>
+</tr>
+<tr>
+<td><strong>은행 암호 인벤토리</strong></td>
+<td>마이그레이션은 키 교환이 어디에서 일어나는지 찾는 데서 시작</td>
+<td><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="NIST PQC 표준">NIST ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-4">표준에서 마이그레이션 작업으로 <a class="heading-anchor" href="#section-4" aria-label="링크 표준에서 마이그레이션 작업으로">#</a></h2>
+<p>NIST 표준은 방향을 제시하지만 엔지니어링 작업을 대체하지는 않습니다. 은행은 여전히 암호 의존성을 식별하고, 구현을 검증하고, 성능을 테스트하고, 공급자 준비도를 점검하고, 하이브리드 롤아웃을 설계해야 합니다. KyberLib가 유용한 이유는 그 마이그레이션의 한 부분을 손에 잡히도록 만들어 주기 때문입니다.</p>
+<h2 id="pqc-rust">왜 PQC에 Rust가 중요한가 <a class="heading-anchor" href="#pqc-rust" aria-label="링크 왜 PQC에 Rust가 중요한가">#</a></h2>
+<p>Rust는 메모리 안전성, 패키징 규율, 시스템 수준 성능이 중요하기 때문에 암호 인프라에 매력적입니다. PQC 라이브러리는 오용하기 어려워야 하고, 테스트하기 쉬워야 하며, 파라미터 선택이 명확해야 합니다. 이 글은 KyberLib를 저수준 암호 프리미티브가 더 넓은 은행 마이그레이션 계획의 일부가 될 수 있다는 사례로 사용합니다.</p>
+<h2 id="section-6">암호 민첩성의 교훈 <a class="heading-anchor" href="#section-6" aria-label="링크 암호 민첩성의 교훈">#</a></h2>
+<p>요지는 하나의 라이브러리가 전사적 마이그레이션을 해결한다고 주장하는 것이 아닙니다. 교훈은 은행에는 추상화 경계가 필요하다는 것입니다. 애플리케이션은 암호 가정을 하드코딩해서는 안 됩니다. 표준, 인증, 구현 지침이 성숙함에 따라 진화할 수 있는 인터페이스를 통해 잘 검토된 라이브러리를 호출해야 합니다.</p>
+<h2 id="section-7">청중별 의미 <a class="heading-anchor" href="#section-7" aria-label="링크 청중별 의미">#</a></h2>
+<h3 id="section-8">은행 기술 리더에게 <a class="heading-anchor" href="#section-8" aria-label="링크 은행 기술 리더에게">#</a></h3>
+<p>질문은 이 프로젝트가 전략적 압력을 실행 가능한 아키텍처로 바꾸는 데 도움이 될 수 있는가입니다. 저장소가 팀에게 검사할 구체적인 것을 제공할 때 가치가 가장 큽니다. 인터페이스, 구성, 테스트, 보안 경계, 배포 가정, 실패 모드가 그것입니다.</p>
+<h3 id="section-9">보안·리스크 팀에게 <a class="heading-anchor" href="#section-9" aria-label="링크 보안·리스크 팀에게">#</a></h3>
+<p>이 프로젝트는 기능뿐 아니라 통제 증거 측면에서도 평가되어야 합니다. 유용한 오픈 소스 금융 인프라는 신원, 비밀, 검증, 감사 로그, 속도 제한, 서명, 출처, 복구가 어떻게 작동하도록 의도되어 있는지를 드러냅니다.</p>
+<h3 id="section-10">개발자와 플랫폼 엔지니어에게 <a class="heading-anchor" href="#section-10" aria-label="링크 개발자와 플랫폼 엔지니어에게">#</a></h3>
+<p>가장 중요한 시험은 이 프로젝트가 중요한 메커니즘을 숨기지 않으면서 인지 부하를 줄여 주는가입니다. 좋은 오픈 소스는 안전한 길을 쉬운 길로 만들면서도, 숙련된 엔지니어가 구현을 이해하고 수정할 수 있게 해야 합니다.</p>
+<h3 id="section-11">기여자에게 <a class="heading-anchor" href="#section-11" aria-label="링크 기여자에게">#</a></h3>
+<p>기회는 실제 기관이 보증을 필요로 하는 지점에서 프로젝트를 강화하는 것입니다. 문서, 예제, 적합성 테스트, CI 강화, 위협 모델, 성능 프로파일, 접근성 점검, 통합 가이드가 그것입니다.</p>
+<h2 id="section-12">결론 <a class="heading-anchor" href="#section-12" aria-label="링크 결론">#</a></h2>
+<p>kyberlib에 대해 글을 쓰는 이유는 더 넓은 산업 문제를 구체적인 것으로 바꿔 놓기 때문입니다. 2026년에 은행은 더 추상적인 전환 언어를 필요로 하지 않습니다. 현대적인 인프라가 어떻게 구축, 보안, 테스트, 거버넌스될 수 있는지를 보여주는 검사 가능한 시스템이 필요합니다. 오픈 소스는 그 주장을 가시화하는 가장 신뢰할 만한 방법입니다.</p>
+<h2 id="section-13">자주 묻는 질문 <a class="heading-anchor" href="#section-13" aria-label="링크 자주 묻는 질문">#</a></h2>
+<p><strong>KyberLib는 무엇입니까?</strong></p>
+<p>KyberLib는 CRYSTALS-Kyber 방식의 양자 후 키 캡슐화에 초점을 둔 오픈 소스 Rust 프로젝트입니다.</p>
+<p><strong>왜 이것이 은행에 관련이 있습니까?</strong></p>
+<p>은행은 전송 보안, 신원, 서명, 결제, 아카이브, 그리고 고객 데이터의 기밀성을 위해 암호에 의존합니다.</p>
+<p><strong>라이브러리 하나가 PQC 마이그레이션을 해결합니까?</strong></p>
+<p>아닙니다. 그것은 하나의 구현 계층입니다. 마이그레이션에는 인벤토리, 공급자 관리, 정책, 테스트, 거버넌스도 함께 필요합니다.</p>
+<p><strong>독자가 무엇을 배워야 합니까?</strong></p>
+<p>양자 후 마이그레이션은 표준이 코드, API, 테스트, 운영 배포 패턴과 연결될 때에만 비로소 실현된다는 점입니다.</p>
+<h2 id="section-14">참고 자료 <a class="heading-anchor" href="#section-14" aria-label="링크 참고 자료">#</a></h2>
+<ul>
+<li>GitHub, (2026). <a href="https://github.com/sebastienrousseau/kyberlib" title="kyberlib 저장소">kyberlib 저장소 ⧉</a>.</li>
+<li>NIST, (2026). <a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="최초로 확정된 세 가지 양자 후 암호 표준">최초로 확정된 세 가지 양자 후 암호 표준 ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">최종 검토 <time datetime="2026-06-12">2026-06-12</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="저자 소개"><img alt="Sebastien Rousseau의 초상화" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/ko/sogae/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, ISO 20022 이행, 금융 서비스를 위한 포스트 양자 암호, 도매 결제의 구조적 변혁에 관해 집필하는 시니어 뱅킹 테크놀로지스트입니다.</span><span class="author-credentials">HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group에서 20년 이상의 경험을 보유하였습니다. <a href="/ko/sogae/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">최종 검토 <time datetime="2026-05-29">2026-05-29</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">관련 읽을거리</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/ko/2023-11-28-kyberlib-yangja-wihyeop-eul-makneun-rust-bangpae/index.html" class="related-media" aria-label="kyberlib: 양자 위협을 막는 Rust 방패" tabindex="-1"><img alt="Empowering Secure Communications in the Quantum Era with KyberLib" src="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="kyberlib-rust"><a href="https://sebastienrousseau.com/ko/2023-11-28-kyberlib-yangja-wihyeop-eul-makneun-rust-bangpae/index.html">kyberlib: 양자 위협을 막는 Rust 방패</a> <a class="heading-anchor" href="#kyberlib-rust" aria-label="링크 kyberlib: 양자 위협을 막는 Rust 방패">#</a></h3><p><time datetime="2023-11-28">2023-11-28</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ko/2026-05-18-yangja-amho-pyojun-baljeon-2026" class="related-media" aria-label="2026년 양자 암호 리셋: PQC 표준, QKD 보증, 그리고 은행이 미룰 수 없는 마이그레이션 작업" tabindex="-1"><img alt="Quantum-safe cryptography migration map for 2026 showing NIST PQC standards, hybrid protocol work, QKD assurance, crypto-agility, and bank data-risk tiers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-pqc-qkd"><a href="https://sebastienrousseau.com/ko/2026-05-18-yangja-amho-pyojun-baljeon-2026">2026년 양자 암호 리셋: PQC 표준, QKD 보증, 그리고 은행이 미룰 수 없는 마이그레이션 작업</a> <a class="heading-anchor" href="#2026-pqc-qkd" aria-label="링크 2026년 양자 암호 리셋: PQC 표준, QKD 보증, 그리고 은행이 미룰 수 없는 마이그레이션 작업">#</a></h3><p><time datetime="2026-05-18">2026-05-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ko/2026-05-14-jangbu-boho-beobinyung-pos-yangja-imun" class="related-media" aria-label="원장을 지키기: 기업 재무를 위한 포스트 양자 이행" tabindex="-1"><img alt="Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA" src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-17"><a href="https://sebastienrousseau.com/ko/2026-05-14-jangbu-boho-beobinyung-pos-yangja-imun">원장을 지키기: 기업 재무를 위한 포스트 양자 이행</a> <a class="heading-anchor" href="#section-17" aria-label="링크 원장을 지키기: 기업 재무를 위한 포스트 양자 이행">#</a></h3><p><time datetime="2026-05-14">2026-05-14</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">출처 및 참고문헌</h2><ol class="article-sources-list"><li><a href="https://github.com/sebastienrousseau/kyberlib" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/sebastienrousseau/kyberlib</span></a></li><li><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" rel="external noopener nofollow"><span class="source-host">www.nist.gov</span><span class="source-path">/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryp…</span></a></li></ol></aside><nav class="post-pagination" aria-label="기사 페이지 이동"><a class="post-pagination-prev" href="/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">이전</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/ko/sogae/index.html">소개</a></li>
+              <li><a href="/ko/munui/index.html">문의하기</a></li>
+              <li><a href="/ko/jeongjeok-saiteu-saengseonggi-ro-jejak/index.html">Static Site Generator로 제작</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">기사</h2>
+            <ul>
+              <li><a href="/ko/gisa/index.html">기사</a></li>
+              <li><a href="/ko/nonmun/index.html">논문</a></li>
+              <li><a href="/ko/taegeu/index.html">태그</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">업무</h2>
+            <ul>
+              <li><a href="/ko/peurojekteu/index.html">프로젝트</a></li>
+              <li><a href="/ko/pleilliseuteu/index.html">플레이리스트</a></li>
+              <li><a href="/ko/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">연락처</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="뉴스레터 구독">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — 결제, AI, 포스트 양자 암호에 관한 연구 노트. 스팸은 발송하지 않습니다.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="yongnim@eunhaeng.com" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">구독하기</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="소셜 링크">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau의 Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau의 LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau의 Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau의 YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/ko/jeobgeunseong/index.html">접근성</a> ·
+            <a href="/ko/gaeinjeongbo/index.html">개인정보처리방침</a> ·
+            <a href="/ko/yakgwan/index.html">이용약관</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ko"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ko"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":834,"about":{"@type":"Thing","name":"CRYSTALS-Kyber","sameAs":["https://en.wikipedia.org/wiki/Kyber","https://www.wikidata.org/wiki/Q116727584","https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html"]},"mentions":[{"@type":"Thing","name":"Rust","sameAs":["https://en.wikipedia.org/wiki/Rust_(programming_language)","https://www.wikidata.org/wiki/Q575650"]}],"headline":"KyberLib와 양자 후 은행 마이그레이션 2026: 표준에서 코드로","description":"KyberLib는 양자 후 암호가 NIST 표준과 은행 마이그레이션 프로그램에서 검사 가능한 Rust 코드로 이동하는 방식을 보여줍니다.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp","width":"100vw","height":"100vh","caption":"황혼 무렵 런던시티의 항공 전경 — 은행이 NIST 표준에서 검사 가능한 암호 코드로 옮겨가야 하는 양자 후 마이그레이션을 상징"},"url":"https://sebastienrousseau.com/ko/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/","datePublished":"2026-06-12T06:06:06+00:00","dateModified":"2026-06-12","inLanguage":"ko","keywords":"KyberLib, 양자 후 암호, CRYSTALS-Kyber, ML-KEM, PQC 은행, 양자 안전 은행, Rust 암호","articleSection":"Security","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ko/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ko"},"citation":[{"@type":"CreativeWork","url":"https://github.com/sebastienrousseau/kyberlib"},{"@type":"CreativeWork","url":"https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ko/"},{"@type":"ListItem","position":3,"name":"KyberLib와 양자 후 은행 마이그레이션 2026: 표준에서 코드로","item":"https://sebastienrousseau.com/ko/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="검색">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>검색</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="검색">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="문서 검색..." autocomplete="off" aria-label="검색"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> 닫기</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 이동</span><span><kbd>Enter</kbd> 열기</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"KyberLib와 양자 후 은행 마이그레이션 2026: 표준에서 코드로","url":"https://sebastienrousseau.com/ko/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/","inLanguage":"ko-KR","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"KyberLib, 양자 후 암호, CRYSTALS-Kyber, ML-KEM, PQC 은행, 양자 안전 은행, Rust 암호","programmingLanguage":"Rust","dependencies":["Post-Quantum Cryptography","CRYSTALS-Kyber (NIST FIPS 203)","CRYSTALS-Kyber"]}</script></body>
+</html>

@@ -758,6 +758,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code</news:title>
+    <news:keywords>KyberLib, post-quantum cryptography, CRYSTALS-Kyber, ML-KEM, PQC banking, quantum safe banking, Rust cryptography</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/contact</loc>
   <news:news>
     <news:publication>
@@ -1391,6 +1403,18 @@
     <news:publication_date></news:publication_date>
     <news:title>RustLogs: Rust uygulamaları için gelişmiş loglama kütüphanesi</news:title>
     <news:keywords>RustLogs, Rust, loglama, observability, açık kaynak, üretim</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib ve 2026'da Kuantum Sonrası Banka Geçişi: Standartlardan Koda</news:title>
+    <news:keywords>KyberLib, kuantum sonrası kriptografi, CRYSTALS-Kyber, ML-KEM, PQC bankacılık, kuantum güvenli bankacılık, Rust kriptografi</news:keywords>
   </news:news>
 </url>
 <url>
@@ -2042,6 +2066,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/th/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib และการย้ายระบบหลังควอนตัมของธนาคารปี 2026: จากมาตรฐานสู่โค้ด</news:title>
+    <news:keywords>KyberLib, การเข้ารหัสหลังควอนตัม, CRYSTALS-Kyber, ML-KEM, PQC ธนาคาร, ธนาคารปลอดภัยจากควอนตัม, การเข้ารหัส Rust</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/th/2024-03-08-rustlogs-laibrari-banthuek-rai-sayng-samrap-rust/index.html</loc>
   <news:news>
     <news:publication>
@@ -2362,6 +2398,18 @@
   </news:news>
 </url>
 
+<url>
+  <loc>https://sebastienrousseau.com/es/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>es</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib y la migración post-cuántica de la banca en 2026: de estándares a…</news:title>
+    <news:keywords>KyberLib, criptografía post-cuántica, CRYSTALS-Kyber, ML-KEM, PQC banca, banca cuánticamente segura, criptografía Rust, FIPS 203, migración post-cuántica, cripto-agilidad</news:keywords>
+  </news:news>
+</url>
 
 
 <url>
@@ -2958,6 +3006,18 @@
     <news:publication_date></news:publication_date>
     <news:title>KyberLib : CRYSTALS-Kyber en Rust pour le post-quantique</news:title>
     <news:keywords>KyberLib, Rust CRYSTALS-Kyber, cryptographie post-quantique, cryptographie sur réseaux, échange de clés quantique-résistant, NIST FIPS 203, Sebastien Rousseau, KEM, authentification de paiement, bibliothèque PQC</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fr</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib et la migration post-quantique des banques en 2026 : des normes au code</news:title>
+    <news:keywords>KyberLib, cryptographie post-quantique, CRYSTALS-Kyber, ML-KEM, PQC banque, banque quantum-safe, cryptographie Rust</news:keywords>
   </news:news>
 </url>
 <url>
@@ -3669,6 +3729,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/id/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>id</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib dan Migrasi Perbankan Pasca-Kuantum 2026: Dari Standar ke Kode</news:title>
+    <news:keywords>KyberLib, kriptografi pasca-kuantum, CRYSTALS-Kyber, ML-KEM, PQC perbankan, perbankan aman kuantum, kriptografi Rust</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/id/2026-05-15-imbal-hasil-tersembunyi-blackrock-brsrv-bstbl-genius-act/index.html</loc>
   <news:news>
     <news:publication>
@@ -4314,6 +4386,18 @@
     <news:publication_date></news:publication_date>
     <news:title>kyberlib: 양자 위협을 막는 Rust 방패</news:title>
     <news:keywords>kyberlib, CRYSTALS-Kyber, Rust, ML-KEM, FIPS 203, 키 캡슐화, 포스트 양자 암호, 양자 내성</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib와 양자 후 은행 마이그레이션 2026: 표준에서 코드로</news:title>
+    <news:keywords>KyberLib, 양자 후 암호, CRYSTALS-Kyber, ML-KEM, PQC 은행, 양자 안전 은행, Rust 암호</news:keywords>
   </news:news>
 </url>
 <url>
@@ -4974,6 +5058,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Die Technologie hinter Blockchain verstehen</news:title>
     <news:keywords>Blockchain, Ethereum, Smart Contract, Kryptowährung, Solidity, Geth, dApps, ERC-20, Tokenisierung, Testnet</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/de/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>de</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib und die Post-Quanten-Migration der Banken 2026: Von Normen zu Code</news:title>
+    <news:keywords>KyberLib, Post-Quanten-Kryptografie, CRYSTALS-Kyber, ML-KEM, PQC Banken, quantensichere Banken, Rust-Kryptografie</news:keywords>
   </news:news>
 </url>
 <url>
@@ -5661,6 +5757,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/hi/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>hi</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib और 2026 का पोस्ट-क्वांटम बैंकिंग माइग्रेशन: मानकों से कोड तक</news:title>
+    <news:keywords>KyberLib, पोस्ट-क्वांटम क्रिप्टोग्राफी, CRYSTALS-Kyber, ML-KEM, PQC बैंकिंग, क्वांटम-सुरक्षित बैंकिंग, Rust क्रिप्टोग्राफी</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/hi/2024-02-13-eu-ai-act-vaishvik-ai-niyaman-ka-bhavishya/index.html</loc>
   <news:news>
     <news:publication>
@@ -6268,6 +6376,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/fil/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fil</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib at ang Post-Quantum Migration ng Bangko 2026: Mula sa mga Pamantayan…</news:title>
+    <news:keywords>KyberLib, post-quantum cryptography, CRYSTALS-Kyber, ML-KEM, PQC sa mga bangko, quantum-safe na pagbabangko, Rust cryptography</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/fil/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -6486,6 +6606,18 @@
 
 
 
+<url>
+  <loc>https://sebastienrousseau.com/bn/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>bn</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib ও ব্যাংকিং পোস্ট-কোয়ান্টাম মাইগ্রেশন ২০২৬: মানদণ্ড থেকে কোডে</news:title>
+    <news:keywords>KyberLib, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, CRYSTALS-Kyber, ML-KEM, PQC ব্যাংকিং, কোয়ান্টাম-নিরাপদ ব্যাংকিং, Rust ক্রিপ্টোগ্রাফি</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/bn/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
   <news:news>
@@ -7052,6 +7184,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Lucy Besson — kennisoverdracht in AI en kwantum</news:title>
     <news:keywords>Lucy Besson, kennisoverdracht, AI, kwantum, mentorschap, banking</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/nl/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib en de post-quantum-migratie van banken in 2026: van standaarden naar…</news:title>
+    <news:keywords>KyberLib, post-quantum-cryptografie, CRYSTALS-Kyber, ML-KEM, PQC banken, quantum-veilig bankieren, Rust-cryptografie</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7672,6 +7816,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/pt-br/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pt-br</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib e a migração pós-quântica bancária em 2026: dos padrões ao código</news:title>
+    <news:keywords>KyberLib, criptografia pós-quântica, CRYSTALS-Kyber, ML-KEM, PQC bancos, banco quântico-seguro, criptografia em Rust</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/pt-br/2026-05-12-iso-20022-pacs008-endereco-estruturado-prazo/index.html</loc>
   <news:news>
     <news:publication>
@@ -7962,6 +8118,18 @@
 
 
 <url>
+  <loc>https://sebastienrousseau.com/ar/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ar</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib والترحيل ما بعد الكمي للبنوك في 2026: من المعايير إلى الرمز</news:title>
+    <news:keywords>KyberLib، التشفير ما بعد الكمي، CRYSTALS-Kyber، ML-KEM، PQC للبنوك، البنوك الآمنة كميًّا، تشفير Rust، المرونة التشفيرية، النشر الهجين</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ar/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -8158,6 +8326,18 @@
 
 
 
+<url>
+  <loc>https://sebastienrousseau.com/ha/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ha</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib da Ƙaurar Bankuna Bayan Ƙididdiga a 2026: Daga Matakai zuwa Lamba</news:title>
+    <news:keywords>KyberLib, ɓoyewar bayan ƙididdiga, CRYSTALS-Kyber, ML-KEM, bankuna PQC, banki mai aminci da ƙididdiga, ɓoyewar Rust</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/ha/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
   <news:news>
@@ -8692,6 +8872,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/uk/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>uk</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib і постквантова міграція банків 2026: від стандартів до коду</news:title>
+    <news:keywords>KyberLib, постквантова криптографія, CRYSTALS-Kyber, ML-KEM, PQC у банках, квантово-стійкий банкінг, криптографія на Rust</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/uk/2024-01-08-optymizatsiya-kredytnoho-koefitsiyenta-z-ibm-qiskit-ta-kvantovym-fure/index.html</loc>
   <news:news>
     <news:publication>
@@ -9018,6 +9210,18 @@
 
 
 <url>
+  <loc>https://sebastienrousseau.com/yo/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>yo</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib àti Ìrìnkiri Báńkì Lẹ́yìn-Quantum 2026: Láti Àwọn Ìpilẹ̀ṣẹ̀ sí Kóòdù</news:title>
+    <news:keywords>KyberLib, crypto lẹ́yìn-quantum, CRYSTALS-Kyber, ML-KEM, PQC báńkì, báńkì àìléwu-quantum, crypto Rust</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/yo/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -9215,6 +9419,18 @@
 
 
 
+<url>
+  <loc>https://sebastienrousseau.com/ro/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ro</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib și migrarea bancară post-cuantică în 2026: de la standarde la cod</news:title>
+    <news:keywords>KyberLib, criptografie post-cuantică, CRYSTALS-Kyber, ML-KEM, PQC bănci, banking quantum safe, criptografie Rust</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/ro/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
   <news:news>
@@ -9772,6 +9988,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/ru/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib и постквантовая миграция банков в 2026 году: от стандартов к коду</news:title>
+    <news:keywords>KyberLib, постквантовая криптография, CRYSTALS-Kyber, ML-KEM, PQC в банках, квантово-устойчивые банки, криптография на Rust</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ru/2024-03-08-rustlogs-prodvinutaya-biblioteka-zhurnalirovaniya-dlya-rust/index.html</loc>
   <news:news>
     <news:publication>
@@ -10094,6 +10322,18 @@
 
 
 
+<url>
+  <loc>https://sebastienrousseau.com/cs/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib a postkvantová migrace bank 2026: od standardů ke kódu</news:title>
+    <news:keywords>KyberLib, postkvantová kryptografie, CRYSTALS-Kyber, ML-KEM, PQC banky, kvantově odolné bankovnictví, Rust kryptografie</news:keywords>
+  </news:news>
+</url>
 
 
 
@@ -10688,6 +10928,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Pagamenti resistenti al quantum (EPAA)</news:title>
     <news:keywords>quantum-safe payments, EPAA, libro bianco, PQC, pagamenti wholesale, regolamentazione, infrastruttura</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib e la migrazione post-quantistica delle banche nel 2026: dagli…</news:title>
+    <news:keywords>KyberLib, crittografia post-quantistica, CRYSTALS-Kyber, ML-KEM, PQC banche, banche quantum safe, crittografia Rust</news:keywords>
   </news:news>
 </url>
 <url>
@@ -11339,6 +11591,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/ja/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ja</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib と 2026 年銀行の耐量子移行:規格からコードへ</news:title>
+    <news:keywords>KyberLib, 耐量子暗号, CRYSTALS-Kyber, ML-KEM, PQC 銀行, 量子安全な銀行, Rust 暗号</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ja/2024-01-23-ai-puronputo-enjiniaringu-no-shinpo/index.html</loc>
   <news:news>
     <news:publication>
@@ -11617,6 +11881,18 @@
 
 
 <url>
+  <loc>https://sebastienrousseau.com/he/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib והמעבר הפוסט-קוונטי של הבנקאות ב-2026: מתקנים לקוד</news:title>
+    <news:keywords>KyberLib, קריפטוגרפיה פוסט-קוונטית, CRYSTALS-Kyber, ML-KEM, PQC בנקאות, בנקאות בטוחה קוונטית, קריפטוגרפיה ב-Rust, FIPS 203, גמישות קריפטוגרפית, פריסה היברידית</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/he/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -11822,6 +12098,18 @@
   </news:news>
 </url>
 
+<url>
+  <loc>https://sebastienrousseau.com/sv/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib och bankernas postkvantum-migration 2026: från standarder till kod</news:title>
+    <news:keywords>KyberLib, postkvantum-kryptografi, CRYSTALS-Kyber, ML-KEM, PQC banker, kvantsäkra banker, Rust-kryptografi</news:keywords>
+  </news:news>
+</url>
 
 
 
@@ -11960,6 +12248,18 @@
     <news:publication_date>2026-05-22T06:06:06+00:00</news:publication_date>
     <news:title>Sự Đổi Mới Acid Jazz tại Anh: Nghệ Sĩ, Concert và Album 2026</news:title>
     <news:keywords>acid jazz Anh 2026, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott&apos;s, Bangs and Talbot, Chris Bangs, Mick Talbot, Smokin Aces</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib và di chuyển hậu lượng tử cho ngân hàng năm 2026: từ tiêu chuẩn sang mã</news:title>
+    <news:keywords>KyberLib, mật mã hậu lượng tử, CRYSTALS-Kyber, ML-KEM, ngân hàng PQC, ngân hàng an toàn lượng tử, mật mã Rust</news:keywords>
   </news:news>
 </url>
 <url>
@@ -12536,6 +12836,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Static Site Generator: najszybszy generator stron statycznych w Rust</news:title>
     <news:keywords>Static Site Generator, generator stron statycznych, Rust, SSG, wydajność, SEO, dostępność, JSON-LD</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib i migracja postkwantowa banków w 2026: od standardów do kodu</news:title>
+    <news:keywords>KyberLib, kryptografia postkwantowa, CRYSTALS-Kyber, ML-KEM, PQC w bankowości, bankowość kwantowo bezpieczna, kryptografia w Rust</news:keywords>
   </news:news>
 </url>
 <url>
@@ -13211,6 +13523,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib 與後量子銀行遷移 2026:從標準到程式碼</news:title>
+    <news:keywords>KyberLib, 後量子加密, CRYSTALS-Kyber, ML-KEM, PQC 銀行, 量子安全銀行, Rust 加密</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/zh-hant/2023-11-05-rust-anquan-de-shuxue-yu-mima-changshu-tw/index.html</loc>
   <news:news>
     <news:publication>
@@ -13868,6 +14192,18 @@
     <news:publication_date>2026-05-22T06:06:06+00:00</news:publication_date>
     <news:title>英国酸爵士复兴：2026年艺人、现场、专辑与律动文化的回归</news:title>
     <news:keywords>英国酸爵士 2026, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott’s, Bangs and Talbot, Chris Bangs, Mick Talbot, Smokin Aces</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib 与 2026 后量子银行迁移：从标准到代码</news:title>
+    <news:keywords>KyberLib, 后量子密码学, CRYSTALS-Kyber, ML-KEM, PQC 银行, 量子安全银行, Rust 密码学</news:keywords>
   </news:news>
 </url>
 <url>

@@ -1,11 +1,11 @@
 {
+  "locale": "hi_IN",
+  "description": "RustLogs: Rust-अनुप्रयोगों हेतु एक उन्नत संरचित-लॉगिंग लाइब्रेरी — कम-ओवरहेड और एर्गोनॉमिक।",
   "keywords": "RustLogs, Rust, logging, संरचित लॉग, observability, tracing, क्रेट, OpenTelemetry, JSON, ओपन सोर्स",
   "date": "March 08, 2024",
-  "subtitle": "संरचित लॉग, सम्बद्ध संदर्भ और निम्न ओवरहेड",
-  "title": "RustLogs: Rust-अनुप्रयोगों के लिए उन्नत लॉगिंग-लाइब्रेरी",
-  "banner_alt": "लॉग-स्ट्रीम की प्रतीकात्मक छवि",
   "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
+  "subtitle": "संरचित लॉग, सम्बद्ध संदर्भ और निम्न ओवरहेड",
   "language": "hi-IN",
-  "description": "RustLogs: Rust-अनुप्रयोगों हेतु एक उन्नत संरचित-लॉगिंग लाइब्रेरी — कम-ओवरहेड और एर्गोनॉमिक।",
-  "locale": "hi_IN"
+  "title": "RustLogs: Rust-अनुप्रयोगों के लिए उन्नत लॉगिंग-लाइब्रेरी",
+  "banner_alt": "लॉग-स्ट्रीम की प्रतीकात्मक छवि"
 }

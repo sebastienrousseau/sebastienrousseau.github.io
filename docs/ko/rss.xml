@@ -6,8 +6,24 @@
     <description>한국어 기사: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 그리고 도매 결제 인프라의 구조적 변혁.</description>
     <atom:link href="https://sebastienrousseau.com/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 00:56:34 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>KyberLib와 양자 후 은행 마이그레이션 2026: 표준에서 코드로</title>
+      <link>https://sebastienrousseau.com/ko/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</link>
+      <description>KyberLib는 양자 후 암호가 NIST 표준과 은행 마이그레이션 프로그램에서 검사 가능한 Rust 코드로 이동하는 방식을 보여줍니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</guid>
+      <pubDate>Fri, 29 May 2026 00:56:34 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp" type="image/webp" length="0"/>
+      <category>KyberLib</category>
+      <category>양자 후 암호</category>
+      <category>CRYSTALS-Kyber</category>
+      <category>ML-KEM</category>
+      <category>PQC 은행</category>
+      <category>양자 안전 은행</category>
+      <category>Rust 암호</category>
+    </item>
     <item>
       <title>DORA, EU AI 법, 데이터 주권: 2026년 은행을 위한 컴플라이언스 스택</title>
       <link>https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

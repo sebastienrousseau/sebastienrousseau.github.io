@@ -2,11 +2,124 @@
 
 Every article on sebastienrousseau.com, newest-first, with navigation furniture stripped. Provided for LLM ingestion under Apache-2.0 attribution. See https://sebastienrousseau.com/ for the canonical formatting.
 
+## KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code
+
+_June 12, 2026_  ·  [https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/](https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/)
+
+# KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code
+
+
+<!-- lead-start -->
+
+<!-- lead-end -->
+
+KyberLib is the right open-source project to connect the post-quantum banking narrative to actual code. Banks now have NIST standards to plan against, but migration will fail if it remains trapped in policy language. The hard work sits in libraries, APIs, key encapsulation, hybrid deployment, testing, HSM compatibility, and crypto-agility.
+
+The open-source reference point for this article is [kyberlib ⧉](https://github.com/sebastienrousseau/kyberlib "kyberlib"). The repository is positioned as: a Rust library for CRYSTALS-Kyber post-quantum cryptography, positioned around post-quantum KEMs, no_std support, quantum cryptography, and cryptographic library design.
+
+---
+
+> **Executive Summary / Key Takeaways**
+>
+> - **KyberLib turns PQC into an engineering conversation.** It gives developers a concrete Rust library around CRYSTALS-Kyber rather than a purely strategic migration theme.
+> - **NIST has made the starting line clear.** FIPS 203 standardises ML-KEM for key establishment, derived from the CRYSTALS-Kyber family.
+> - **Banks need crypto-agility.** The durable objective is the ability to change primitives without rewriting applications.
+> - **Open-source PQC libraries help education and scrutiny.** Developers can inspect how the primitives are packaged, tested, and exposed.
+> - **The article bridges standards and implementation.** It can link your quantum-safe banking writing to a repository readers can study.
+>
+---
+
+## Why This Open-Source Project Matters in 2026
+
+The strategic value of open source in 2026 is no longer limited to transparency, reuse, or developer goodwill. For banks and financial institutions, open-source infrastructure has become a way to inspect assumptions, test controls, reduce vendor opacity, and turn architectural claims into code that can be read, forked, hardened, and operated. The most useful projects are not demos. They are reference implementations that reveal how security, accessibility, performance, compliance, and developer experience fit together.
+
+This is the lens through which kyberlib should be understood. It is not simply a repository; it is a concrete design argument. It says that critical infrastructure should be auditable, composable, documented, testable, and understandable by the people who depend on it. In financial services, that matters because systems increasingly sit at the intersection of agentic AI, real-time payments, post-quantum cryptography, cloud-native resilience, structured data, and regulatory evidence.
+
+## Architecture Lens
+
+| Layer | Design Decision | Why It Matters | Risk if Mishandled |
+|---|---|---|---|
+| **Primitive** | CRYSTALS-Kyber / ML-KEM-style key encapsulation | Addresses quantum threat to classical key exchange | Incorrect parameter or API usage |
+| **Language** | Rust implementation | Memory safety and modern systems integration | Unsafe bindings or weak dependency hygiene |
+| **Deployment** | Hybrid migration patterns | Allows staged adoption with classical algorithms | Breaking interoperability |
+| **Assurance** | Tests, examples, and documentation | Makes cryptographic use easier to verify | Security theatre without implementation proof |
+| **Banking fit** | Crypto-agile library boundary | Supports migration by replacing primitives behind stable interfaces | Hard-coded algorithms across applications |
+
+## Signals to Track
+
+| Signal | What It Means | Reference |
+|---|---|---|
+| **NIST FIPS 203** | ML-KEM is the named standard for key encapsulation | [NIST ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "NIST PQC standards") |
+| **KyberLib repository** | The project provides a concrete open-source Rust implementation focus | [kyberlib ⧉](https://github.com/sebastienrousseau/kyberlib "KyberLib repository") |
+| **Post-quantum KEM topic** | The repo is positioned directly in the PQC migration space | [kyberlib ⧉](https://github.com/sebastienrousseau/kyberlib "KyberLib repository") |
+| **No-std topic** | Potential relevance to embedded and constrained environments | [kyberlib ⧉](https://github.com/sebastienrousseau/kyberlib "KyberLib repository") |
+| **Bank cryptographic inventory** | Migration starts by finding where key exchange happens | [NIST ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "NIST PQC standards") |
+
+## From Standards to Migration Work
+
+NIST standards create direction, but they do not replace engineering work. A bank still needs to identify cryptographic dependencies, validate implementations, test performance, check vendor readiness, and design hybrid rollouts. KyberLib is useful because it makes one part of that migration tangible.
+
+## Why Rust Matters for PQC
+
+Rust is attractive for cryptographic infrastructure because memory safety, packaging discipline, and systems-level performance matter. A PQC library must be hard to misuse, easy to test, and clear about parameter choices. The article should use KyberLib as the example of how low-level cryptographic primitives can become part of a broader banking migration plan.
+
+## The Crypto-Agility Lesson
+
+The point is not to claim that one library solves enterprise migration. The lesson is that banks need abstraction boundaries. Applications should not hard-code cryptographic assumptions. They should call well-reviewed libraries through interfaces that can evolve as standards, certification, and implementation guidance mature.
+
+## What This Means by Audience
+
+### For Bank Technology Leaders
+
+The question is whether the project can help turn a strategic pressure into an executable architecture. The value is strongest when the repository gives teams something concrete to inspect: interfaces, configuration, tests, security boundaries, deployment assumptions, and failure modes.
+
+### For Security and Risk Teams
+
+The project should be evaluated not only for features but for control evidence. Useful open-source financial infrastructure exposes how identity, secrets, validation, audit logs, rate limits, signatures, provenance, and recovery are meant to work.
+
+### For Developers and Platform Engineers
+
+The most important test is whether the project reduces cognitive load without hiding important mechanics. Good open source should make the safe path the easy path while still allowing experienced engineers to understand and modify the implementation.
+
+### For Contributors
+
+The opportunity is to strengthen the project where real institutions need assurance: documentation, examples, conformance tests, CI hardening, threat models, performance profiles, accessibility checks, and integration guides.
+
+## Conclusion
+
+The reason to write about kyberlib is that it turns a wider industry problem into something concrete. In 2026, banks do not need more abstract transformation language. They need inspectable systems that show how modern infrastructure can be built, secured, tested, and governed. Open source is the most credible way to make that argument visible.
+
+## Frequently Asked Questions
+
+**What is KyberLib?**
+
+KyberLib is an open-source Rust project focused on CRYSTALS-Kyber-style post-quantum key encapsulation.
+
+**Why is this relevant to banks?**
+
+Banks depend on cryptography for transport security, identity, signatures, payments, archives, and client data confidentiality.
+
+**Does a library solve PQC migration?**
+
+No. It is one implementation layer. Migration also requires inventory, vendor management, policy, testing, and governance.
+
+**What should readers learn?**
+
+That post-quantum migration becomes real only when standards are connected to code, APIs, tests, and operational deployment patterns.
+
+## References
+
+- GitHub, (2026). [kyberlib repository ⧉](https://github.com/sebastienrousseau/kyberlib "kyberlib repository").
+- NIST, (2026). [First three finalized post-quantum encryption standards ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "First three finalized post-quantum encryption standards").
+
+---
+
 ## DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks
 
 _May 28, 2026_  ·  [https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/](https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/)
 
 # DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks
+
 
 
 
@@ -121,6 +234,7 @@ Success should be measured by unit economics, resilience evidence, data quality,
 _May 27, 2026_  ·  [https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/](https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/)
 
 # AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026
+
 
 
 
@@ -241,6 +355,7 @@ _May 26, 2026_  ·  [https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tok
 
 
 
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -351,6 +466,7 @@ Success should be measured by unit economics, resilience evidence, data quality,
 _May 26, 2026_  ·  [https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/](https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/)
 
 # Magnifica Humanitas: An AI-Industry Reading of the First Papal Encyclical on Artificial Intelligence
+
 
 
 
@@ -511,6 +627,7 @@ _May 25, 2026_  ·  [https://sebastienrousseau.com/2026-05-25-programmable-liqui
 
 
 
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -621,6 +738,7 @@ Success should be measured by unit economics, resilience evidence, data quality,
 _May 24, 2026_  ·  [https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/](https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/)
 
 # The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments
+
 
 
 
@@ -742,6 +860,7 @@ _May 23, 2026_  ·  [https://sebastienrousseau.com/2026-05-23-agentic-payments-b
 
 
 
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -854,6 +973,7 @@ Banks should start with low-risk, low-value, bounded use cases where mandates, s
 _May 22, 2026_  ·  [https://sebastienrousseau.com/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/](https://sebastienrousseau.com/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/)
 
 # The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture
+
 
 
 
@@ -1002,6 +1122,7 @@ The connection is groove, not strict genre labelling. Festivals such as Mostly J
 _May 21, 2026_  ·  [https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/](https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/)
 
 # Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money
+
 
 
 
@@ -1270,6 +1391,7 @@ _May 20, 2026_  ·  [https://sebastienrousseau.com/2026-05-20-cloud-native-banki
 
 
 
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -1409,6 +1531,7 @@ The biggest mistake is adopting containers without platform controls. If Kuberne
 _May 19, 2026_  ·  [https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026/](https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026/)
 
 # Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability
+
 
 
 
@@ -1579,6 +1702,7 @@ No. Stablecoins may influence cross-border payment design, but wholesale payment
 _May 18, 2026_  ·  [https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/](https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/)
 
 # The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer
+
 
 
 
@@ -2029,6 +2153,7 @@ Three things, sequenced. First, produce the AI Bill of Materials — the complet
 _May 16, 2026_  ·  [https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/)
 
 # The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services
+
 
 
 
@@ -6466,6 +6591,7 @@ For team use, all CLI flags can be expressed in a TOML config file:
 
 ```toml
 # libmake.toml
+
 
 
 <!-- lead-start -->

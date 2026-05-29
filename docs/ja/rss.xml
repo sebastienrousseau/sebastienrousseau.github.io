@@ -6,8 +6,24 @@
     <description>日本語の記事:応用AI、ISO 20022 決済、ポスト量子暗号、ホールセール決済の構造変革。</description>
     <atom:link href="https://sebastienrousseau.com/ja/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ja-JP</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 00:56:34 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>KyberLib と 2026 年銀行の耐量子移行:規格からコードへ</title>
+      <link>https://sebastienrousseau.com/ja/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</link>
+      <description>KyberLib は、耐量子暗号が NIST 規格と銀行の移行プログラムから、検査可能な Rust コードへと結実する姿を示します。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</guid>
+      <pubDate>Fri, 29 May 2026 00:56:34 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp" type="image/webp" length="0"/>
+      <category>KyberLib</category>
+      <category>耐量子暗号</category>
+      <category>CRYSTALS-Kyber</category>
+      <category>ML-KEM</category>
+      <category>PQC 銀行</category>
+      <category>量子安全な銀行</category>
+      <category>Rust 暗号</category>
+    </item>
     <item>
       <title>DORA、EU AI Act、データ主権:2026 年銀行向けコンプライアンス・スタック</title>
       <link>https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

@@ -1,6 +1,25 @@
 {
-  "count": 56,
+  "count": 57,
   "posts": [
+    {
+      "slug": "2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026",
+      "url": "https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html",
+      "date": "2026-06-12",
+      "title": "KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code",
+      "description": "KyberLib shows how post-quantum cryptography moves from NIST standards and banking migration programmes into inspectable Rust code.",
+      "keywords": [
+        "KyberLib",
+        "post-quantum cryptography",
+        "CRYSTALS-Kyber",
+        "ML-KEM",
+        "PQC banking",
+        "quantum safe banking",
+        "Rust cryptography"
+      ],
+      "banner": "https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp",
+      "topics": [],
+      "language": "en-GB"
+    },
     {
       "slug": "2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026",
       "url": "https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html",

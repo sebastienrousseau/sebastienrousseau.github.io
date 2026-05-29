@@ -6,8 +6,24 @@
     <description>Artykuły po polsku: stosowana sztuczna inteligencja, płatności ISO 20022, kryptografia postkwantowa oraz transformacja płatności hurtowych.</description>
     <atom:link href="https://sebastienrousseau.com/pl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>pl-PL</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 00:56:34 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Wszelkie prawa zastrzeżone.</copyright>
+    <item>
+      <title>KyberLib i migracja postkwantowa banków w 2026: od standardów do kodu</title>
+      <link>https://sebastienrousseau.com/pl/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</link>
+      <description>KyberLib pokazuje, jak kryptografia postkwantowa przechodzi od standardów NIST i bankowych programów migracji do możliwego do inspekcji kodu w Rust.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</guid>
+      <pubDate>Fri, 29 May 2026 00:56:34 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp" type="image/webp" length="0"/>
+      <category>KyberLib</category>
+      <category>kryptografia postkwantowa</category>
+      <category>CRYSTALS-Kyber</category>
+      <category>ML-KEM</category>
+      <category>PQC w bankowości</category>
+      <category>bankowość kwantowo bezpieczna</category>
+      <category>kryptografia w Rust</category>
+    </item>
     <item>
       <title>DORA, EU AI Act i suwerennosc danych: stos zgodnosci bankow w 2026</title>
       <link>https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

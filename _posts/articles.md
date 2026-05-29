@@ -105,21 +105,33 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html" title="DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks">
-<img alt="Compliance stack diagram showing DORA resilience, EU AI Act transparency, data sovereignty, cloud concentration risk, audit logs, model governance, and third-party providers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html" title="KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code">
+<img alt="Aerial view of the City of London at dusk — symbolising the post-quantum migration banks must run from NIST standards into inspectable cryptographic code" src="https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Dora · Eu Ai Act · Data Sovereignty</span>
-<h3><a href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html" title="DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-28">May 28, 2026</time> · Sebastien Rousseau</p>
-<p>DORA, the EU AI Act, GDPR, cloud concentration risk, and data sovereignty converge into one 2026 compliance stack for banks. The strategic question is design discipline — running compliance, AI governance, ICT-resilience evidence, and sovereign-data choices as one architecture, not five parallel programmes.</p>
-<p><a class="pill ghost" href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html" title="DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks">Read the full story</a></p>
+<span class="newsroom-eyebrow">Kyberlib · Post-Quantum Cryptography · Quantum-Safe Banking</span>
+<h3><a href="/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html" title="KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code">KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-12">June 12, 2026</time> · Sebastien Rousseau</p>
+<p>KyberLib turns the post-quantum banking migration from policy paper into inspectable Rust — ML-KEM key encapsulation, hybrid deployment, crypto-agility, no_std targets, and HSM-ready APIs banks can audit.</p>
+<p><a class="pill ghost" href="/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html" title="KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html" title="DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks">
+<img alt="Compliance stack diagram showing DORA resilience, EU AI Act transparency, data sovereignty, cloud concentration risk, audit logs, model governance, and third-party providers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Dora · Eu Ai Act · Data Sovereignty</span>
+<h3><a href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html" title="DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-28">May 28, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">DORA, the EU AI Act, GDPR, cloud concentration risk, and data sovereignty converge into one 2026 compliance stack for banks. The strategic question is design discipline — running compliance, AI governance, ICT-resilience evidence, and sovereign-data choices as one architecture, not five parallel programmes.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html" title="AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026">

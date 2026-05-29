@@ -6,8 +6,27 @@
     <description>Artículos en español: IA aplicada, pagos ISO 20022, criptografía postcuántica y transformación de los pagos mayoristas.</description>
     <atom:link href="https://sebastienrousseau.com/es/rss.xml" rel="self" type="application/rss+xml"/>
     <language>es-ES</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 00:56:34 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Todos los derechos reservados.</copyright>
+    <item>
+      <title>KyberLib y la migración post-cuántica de la banca en 2026: de estándares a código</title>
+      <link>https://sebastienrousseau.com/es/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</link>
+      <description>KyberLib muestra cómo la criptografía post-cuántica pasa de los estándares NIST y los programas de migración bancaria a código Rust inspeccionable y auditable.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</guid>
+      <pubDate>Fri, 29 May 2026 00:56:34 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp" type="image/webp" length="0"/>
+      <category>KyberLib</category>
+      <category>criptografía post-cuántica</category>
+      <category>CRYSTALS-Kyber</category>
+      <category>ML-KEM</category>
+      <category>PQC banca</category>
+      <category>banca cuánticamente segura</category>
+      <category>criptografía Rust</category>
+      <category>FIPS 203</category>
+      <category>migración post-cuántica</category>
+      <category>cripto-agilidad</category>
+    </item>
     <item>
       <title>DORA, EU AI Act y soberanía de datos: el stack de cumplimiento bancario 2026</title>
       <link>https://sebastienrousseau.com/es/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

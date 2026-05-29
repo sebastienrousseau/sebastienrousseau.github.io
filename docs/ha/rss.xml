@@ -6,8 +6,24 @@
     <description>Labaran Hausa: AI mai amfani, biyan kuɗi na ISO 20022, kiriftografi bayan kwantum da sauye-sauyen biyan kuɗi na manyan.</description>
     <atom:link href="https://sebastienrousseau.com/ha/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ha-NG</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 00:56:34 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. An kiyaye duk hakkokin.</copyright>
+    <item>
+      <title>KyberLib da Ƙaurar Bankuna Bayan Ƙididdiga a 2026: Daga Matakai zuwa Lamba</title>
+      <link>https://sebastienrousseau.com/ha/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</link>
+      <description>KyberLib na nuna yadda ɓoyewar bayan ƙididdiga ke ƙaura daga matakan NIST da shirye-shiryen ƙaurar bankuna zuwa lambar Rust da ana iya bincika.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</guid>
+      <pubDate>Fri, 29 May 2026 00:56:34 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp" type="image/webp" length="0"/>
+      <category>KyberLib</category>
+      <category>ɓoyewar bayan ƙididdiga</category>
+      <category>CRYSTALS-Kyber</category>
+      <category>ML-KEM</category>
+      <category>bankuna PQC</category>
+      <category>banki mai aminci da ƙididdiga</category>
+      <category>ɓoyewar Rust</category>
+    </item>
     <item>
       <title>DORA, EU AI Act, da Ikon Mallakar Bayanai: Tarin Bin Doka na 2026 ga Bankuna</title>
       <link>https://sebastienrousseau.com/ha/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

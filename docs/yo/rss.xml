@@ -6,8 +6,24 @@
     <description>Awọn akọle Yorùbá: AI tó wúlò, ìsanwó ISO 20022, kírípítógíráfì lẹ́yìn-kuántọ́mù, àti àtúnṣe ètò ìsanwó ńláńlá.</description>
     <atom:link href="https://sebastienrousseau.com/yo/rss.xml" rel="self" type="application/rss+xml"/>
     <language>yo-NG</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 00:56:34 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Gbogbo ẹtọ ti wa ni ipamọ.</copyright>
+    <item>
+      <title>KyberLib àti Ìrìnkiri Báńkì Lẹ́yìn-Quantum 2026: Láti Àwọn Ìpilẹ̀ṣẹ̀ sí Kóòdù</title>
+      <link>https://sebastienrousseau.com/yo/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</link>
+      <description>KyberLib fihàn bí crypto lẹ́yìn-quantum ṣe ń yí padà láti àwọn ìpilẹ̀ṣẹ̀ NIST àti ètò ìrìnkiri báńkì sí kóòdù Rust tí a lè yẹ̀wò pẹ̀lú ìgbẹ́kẹ̀lé.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</guid>
+      <pubDate>Fri, 29 May 2026 00:56:34 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp" type="image/webp" length="0"/>
+      <category>KyberLib</category>
+      <category>crypto lẹ́yìn-quantum</category>
+      <category>CRYSTALS-Kyber</category>
+      <category>ML-KEM</category>
+      <category>PQC báńkì</category>
+      <category>báńkì àìléwu-quantum</category>
+      <category>crypto Rust</category>
+    </item>
     <item>
       <title>DORA, EU AI Act, àti Ọba Lori Dátà: Akopọ Ìbámu 2026 fún Báńkì</title>
       <link>https://sebastienrousseau.com/yo/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

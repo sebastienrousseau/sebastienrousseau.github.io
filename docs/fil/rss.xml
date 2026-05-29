@@ -6,8 +6,24 @@
     <description>Mga artikulo sa Filipino: applied AI, ISO 20022 payments, post-quantum cryptography at wholesale-payments transformation.</description>
     <atom:link href="https://sebastienrousseau.com/fil/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fil-PH</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 00:56:34 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Lahat ng karapatan ay nakalaan.</copyright>
+    <item>
+      <title>KyberLib at ang Post-Quantum Migration ng Bangko 2026: Mula sa mga Pamantayan Patungo sa Code</title>
+      <link>https://sebastienrousseau.com/fil/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</link>
+      <description>Ipinapakita ng KyberLib kung paano umuusad ang post-quantum cryptography mula sa mga pamantayan ng NIST at mga programa ng pagbabangko patungo sa masusuring Rust code.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</guid>
+      <pubDate>Fri, 29 May 2026 00:56:34 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp" type="image/webp" length="0"/>
+      <category>KyberLib</category>
+      <category>post-quantum cryptography</category>
+      <category>CRYSTALS-Kyber</category>
+      <category>ML-KEM</category>
+      <category>PQC sa mga bangko</category>
+      <category>quantum-safe na pagbabangko</category>
+      <category>Rust cryptography</category>
+    </item>
     <item>
       <title>DORA, EU AI Act, at Soberanya ng Data: Compliance Stack ng Bangko 2026</title>
       <link>https://sebastienrousseau.com/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/sitemap.xml

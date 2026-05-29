@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/hi/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>hi-IN</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-12T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib और 2026 का पोस्ट-क्वांटम बैंकिंग माइग्रेशन: मानकों से कोड तक</news:title>
+    <news:keywords>KyberLib, पोस्ट-क्वांटम क्रिप्टोग्राफी, CRYSTALS-Kyber, ML-KEM, PQC बैंकिंग, क्वांटम-सुरक्षित बैंकिंग, Rust क्रिप्टोग्राफी</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

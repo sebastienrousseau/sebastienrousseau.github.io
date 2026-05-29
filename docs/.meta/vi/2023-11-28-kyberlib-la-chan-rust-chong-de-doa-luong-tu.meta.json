@@ -1,11 +1,11 @@
 {
-  "description": "KyberLib — triển khai Rust thuần tuý của CRYSTALS-Kyber (ML-KEM/FIPS 203) được tối ưu hoá cho hiệu năng, tính di động và an toàn bộ nhớ.",
-  "title": "KyberLib: lá chắn Rust chống các mối đe doạ lượng tử",
-  "banner_alt": "Biểu ngữ KyberLib",
   "subtitle": "Triển khai Rust an toàn và nhanh của ML-KEM (FIPS 203)",
-  "language": "vi-VN",
-  "locale": "vi_VN",
+  "banner_alt": "Biểu ngữ KyberLib",
+  "date": "November 28, 2023",
+  "title": "KyberLib: lá chắn Rust chống các mối đe doạ lượng tử",
   "keywords": "KyberLib, Rust, CRYSTALS-Kyber, ML-KEM, FIPS 203, hậu lượng tử, mật mã, mã nguồn mở",
   "banner": "https://cloudcdn.pro/stocks/images/kyberlib-banner.webp",
-  "date": "November 28, 2023"
+  "locale": "vi_VN",
+  "language": "vi-VN",
+  "description": "KyberLib — triển khai Rust thuần tuý của CRYSTALS-Kyber (ML-KEM/FIPS 203) được tối ưu hoá cho hiệu năng, tính di động và an toàn bộ nhớ."
 }

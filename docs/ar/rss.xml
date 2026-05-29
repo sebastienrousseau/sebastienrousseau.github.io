@@ -6,14 +6,24 @@
     <description>مقالات بالعربية: الذكاء الاصطناعي التطبيقي، مدفوعات ISO 20022، التشفير ما بعد الكمي، وتحوّل المدفوعات بالجملة.</description>
     <atom:link href="https://sebastienrousseau.com/ar/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ar-SA</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 00:56:34 +0000</lastBuildDate>
     <copyright>© حقوق النشر 2007 - 2026 - سيباستيان روسو. جميع الحقوق محفوظة.</copyright>
+    <item>
+      <title>KyberLib والترحيل ما بعد الكمي للبنوك في 2026: من المعايير إلى الرمز</title>
+      <link>https://sebastienrousseau.com/ar/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</link>
+      <description>تُبيّن KyberLib كيف ينتقل التشفير ما بعد الكمي من معايير NIST وبرامج الترحيل المصرفي إلى رمز Rust قابل للفحص داخل البنوك المنظَّمة.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</guid>
+      <pubDate>Fri, 29 May 2026 00:56:34 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp" type="image/webp" length="0"/>
+      <category>KyberLib، التشفير ما بعد الكمي، CRYSTALS-Kyber، ML-KEM، PQC للبنوك، البنوك الآمنة كميًّا، تشفير Rust، المرونة التشفيرية، النشر الهجين</category>
+    </item>
     <item>
       <title>Magnifica Humanitas: قراءة هندسية لأول رسالة بابوية عن الذكاء الاصطناعي</title>
       <link>https://sebastienrousseau.com/ar/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</link>
       <description>في 25 مايو 2026 أصدر البابا ليون الرابع عشر Magnifica Humanitas، أول رسالة بابوية مخصّصة للذكاء الاصطناعي. قراءتها من داخل قطاع التقنية تكشف إطارًا أخلاقيًا متماسكًا لعصر الذكاء الاصطناعي والكم، وتنتهي إلى الرجاء لا الخوف.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</guid>
-      <pubDate>Thu, 28 May 2026 06:26:19 +0000</pubDate>
+      <pubDate>Fri, 29 May 2026 00:56:34 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
       <category>Magnifica Humanitas</category>

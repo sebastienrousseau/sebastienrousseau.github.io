@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/zh-hant/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/zh-hant/"/>
   <id>https://sebastienrousseau.com/zh-hant/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T00:56:34+00:00</updated>
+  <entry>
+    <title>KyberLib 與後量子銀行遷移 2026:從標準到程式碼</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</id>
+    <updated>2026-05-29T00:56:34+00:00</updated>
+    <published>2026-05-29T00:56:34+00:00</published>
+    <summary>KyberLib 展示後量子加密如何從 NIST 標準與銀行遷移計畫,落地為可檢查的 Rust 程式碼。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA、EU AI 法與資料主權:銀行 2026 年法遵堆疊</title>
     <link href="https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

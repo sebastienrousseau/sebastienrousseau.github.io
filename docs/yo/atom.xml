@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/yo/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/yo/"/>
   <id>https://sebastienrousseau.com/yo/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T00:56:34+00:00</updated>
+  <entry>
+    <title>KyberLib àti Ìrìnkiri Báńkì Lẹ́yìn-Quantum 2026: Láti Àwọn Ìpilẹ̀ṣẹ̀ sí Kóòdù</title>
+    <link href="https://sebastienrousseau.com/yo/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/"/>
+    <id>https://sebastienrousseau.com/yo/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</id>
+    <updated>2026-05-29T00:56:34+00:00</updated>
+    <published>2026-05-29T00:56:34+00:00</published>
+    <summary>KyberLib fihàn bí crypto lẹ́yìn-quantum ṣe ń yí padà láti àwọn ìpilẹ̀ṣẹ̀ NIST àti ètò ìrìnkiri báńkì sí kóòdù Rust tí a lè yẹ̀wò pẹ̀lú ìgbẹ́kẹ̀lé.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI Act, àti Ọba Lori Dátà: Akopọ Ìbámu 2026 fún Báńkì</title>
     <link href="https://sebastienrousseau.com/yo/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

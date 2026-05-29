@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/vi/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/vi/"/>
   <id>https://sebastienrousseau.com/vi/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T00:56:34+00:00</updated>
+  <entry>
+    <title>KyberLib và di chuyển hậu lượng tử cho ngân hàng năm 2026: từ tiêu chuẩn sang mã</title>
+    <link href="https://sebastienrousseau.com/vi/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/"/>
+    <id>https://sebastienrousseau.com/vi/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</id>
+    <updated>2026-05-29T00:56:34+00:00</updated>
+    <published>2026-05-29T00:56:34+00:00</published>
+    <summary>KyberLib cho thấy mật mã hậu lượng tử dịch chuyển từ tiêu chuẩn NIST và chương trình di chuyển ngân hàng sang mã Rust có thể kiểm tra như thế nào.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, Đạo luật AI EU và chủ quyền dữ liệu: ngăn xếp tuân thủ 2026 cho ngân hàng</title>
     <link href="https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

@@ -6,8 +6,24 @@
     <description>Статті українською: прикладний ШІ, платежі ISO 20022, постквантова криптографія та трансформація оптових платежів.</description>
     <atom:link href="https://sebastienrousseau.com/uk/rss.xml" rel="self" type="application/rss+xml"/>
     <language>uk-UA</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 00:56:34 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Усі права захищено.</copyright>
+    <item>
+      <title>KyberLib і постквантова міграція банків 2026: від стандартів до коду</title>
+      <link>https://sebastienrousseau.com/uk/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</link>
+      <description>KyberLib показує, як постквантова криптографія переходить від стандартів NIST і програм банківської міграції до перевіряного коду на Rust.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/</guid>
+      <pubDate>Fri, 29 May 2026 00:56:34 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp" type="image/webp" length="0"/>
+      <category>KyberLib</category>
+      <category>постквантова криптографія</category>
+      <category>CRYSTALS-Kyber</category>
+      <category>ML-KEM</category>
+      <category>PQC у банках</category>
+      <category>квантово-стійкий банкінг</category>
+      <category>криптографія на Rust</category>
+    </item>
     <item>
       <title>DORA, EU AI Act і суверенітет даних: стек банківського комплаєнсу 2026</title>
       <link>https://sebastienrousseau.com/uk/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
