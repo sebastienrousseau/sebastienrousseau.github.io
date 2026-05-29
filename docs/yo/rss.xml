@@ -6,8 +6,26 @@
     <description>Awọn akọle Yorùbá: AI tó wúlò, ìsanwó ISO 20022, kírípítógíráfì lẹ́yìn-kuántọ́mù, àti àtúnṣe ètò ìsanwó ńláńlá.</description>
     <atom:link href="https://sebastienrousseau.com/yo/rss.xml" rel="self" type="application/rss+xml"/>
     <language>yo-NG</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 05:57:25 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Gbogbo ẹtọ ti wa ni ipamọ.</copyright>
+    <item>
+      <title>ISO 20022 Lẹ́yìn Ìṣíkiri: Yíyí Dátà Ìsanwó Padà Di Ọjà Báńkì ní 2026</title>
+      <link>https://sebastienrousseau.com/yo/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 lẹ́yìn ìṣíkiri jẹ́ àǹfààní ọjà dátà. Àdírẹ́ẹ̀sì tó ní ìṣètò, kóòdù ìdí, àwọn ìránṣẹ́ ìwádìí, àti ìṣẹ̀lẹ̀ ipò ìsanwó tó kún ń di àwọn ọjà ìbáramu, àdàmọ̀, owó wíwà, ìbámu, àti àlàyé fún báńkì.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>àdírẹ́ẹ̀sì tó ní ìṣètò</category>
+      <category>CBPR+</category>
+      <category>àwọn ọjà dátà ìsanwó</category>
+      <category>kóòdù ìdí ìsanwó</category>
+      <category>akápò ilé-iṣẹ́</category>
+      <category>ìbáramu</category>
+      <category>àyẹ̀wò ìfòfindè</category>
+      <category>ìṣàwárí àdàmọ̀</category>
+    </item>
     <item>
       <title>DORA, EU AI Act, àti Ọba Lori Dátà: Akopọ Ìbámu 2026 fún Báńkì</title>
       <link>https://sebastienrousseau.com/yo/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

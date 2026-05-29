@@ -1,11 +1,11 @@
 {
-  "subtitle": "Riscul cuantic a trecut de la o curiozitate de cercetare la un mandat de reglementare activ. Cu foaia de parcurs G7 din 2026 și BIS Project Leap demonstrând fezabilitatea în sisteme de plată reale, întrebarea pentru consilii de administrație nu mai este dacă să migreze, ci dacă pot finaliza migrarea înainte ca datele actuale să-și piardă valoarea criptografică.",
-  "banner_alt": "Diagrama foii de parcurs pentru migrarea la criptografie post-cuantică — infrastructura bancară corporativă în tranziție de la RSA la ML-KEM și ML-DSA",
   "title": "Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance",
+  "subtitle": "Riscul cuantic a trecut de la o curiozitate de cercetare la un mandat de reglementare activ. Cu foaia de parcurs G7 din 2026 și BIS Project Leap demonstrând fezabilitatea în sisteme de plată reale, întrebarea pentru consilii de administrație nu mai este dacă să migreze, ci dacă pot finaliza migrarea înainte ca datele actuale să-și piardă valoarea criptografică.",
   "keywords": "criptografie post-cuantică, migrare PQC, corporate banking, servicii financiare, foaia de parcurs G7 CEG, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204",
-  "language": "ro-RO",
   "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp",
   "locale": "ro_RO",
+  "date": "May 14, 2026",
   "description": "Riscul cuantic este acum mandat de reglementare. Harta G7 din 2026 și BIS Project Leap confirmă că întrebarea nu mai este dacă să migrați la PQC, ci cât de repede.",
-  "date": "May 14, 2026"
+  "banner_alt": "Diagrama foii de parcurs pentru migrarea la criptografie post-cuantică — infrastructura bancară corporativă în tranziție de la RSA la ML-KEM și ML-DSA",
+  "language": "ro-RO"
 }

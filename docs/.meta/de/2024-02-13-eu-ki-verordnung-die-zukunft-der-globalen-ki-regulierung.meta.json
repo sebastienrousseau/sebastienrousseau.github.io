@@ -1,11 +1,11 @@
 {
-  "locale": "de_DE",
-  "banner_alt": "Person sitzt auf einer schwarzen Bank und liest Zeitung",
-  "subtitle": "Die Zukunft der KI mit dem wegweisenden Rechtsrahmen der EU navigieren",
-  "date": "February 13, 2024",
   "banner": "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp",
-  "title": "EU-KI-Verordnung: Wegbereiter ethischer KI-Regulierung weltweit",
+  "description": "Die EU-KI-Verordnung schafft den ersten umfassenden Rahmen für ethische, risikobasierte KI-Regulierung weltweit. Was sich für Banken, Anbieter und Hochrisikosysteme ändert.",
   "language": "de",
+  "locale": "de_DE",
+  "subtitle": "Die Zukunft der KI mit dem wegweisenden Rechtsrahmen der EU navigieren",
+  "banner_alt": "Person sitzt auf einer schwarzen Bank und liest Zeitung",
+  "date": "February 13, 2024",
   "keywords": "EU-KI-Verordnung, Regulierung künstlicher Intelligenz, ethischer KI-Rahmen, KI-Risikomanagement, KI-Innovation, KI-Transparenz, Verbraucherrechte KI, KI-Governance, KI-Standards, KI-Ethik",
-  "description": "Die EU-KI-Verordnung schafft den ersten umfassenden Rahmen für ethische, risikobasierte KI-Regulierung weltweit. Was sich für Banken, Anbieter und Hochrisikosysteme ändert."
+  "title": "EU-KI-Verordnung: Wegbereiter ethischer KI-Regulierung weltweit"
 }

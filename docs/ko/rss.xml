@@ -6,8 +6,26 @@
     <description>한국어 기사: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 그리고 도매 결제 인프라의 구조적 변혁.</description>
     <atom:link href="https://sebastienrousseau.com/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 05:57:25 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>ISO 20022 마이그레이션 이후: 2026년 결제 데이터를 은행 제품으로</title>
+      <link>https://sebastienrousseau.com/ko/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 마이그레이션 이후는 데이터 제품 기회입니다. 구조화 주소, 용도 코드, 송장 정보, 조사 메시지, 풍부한 결제 상태 이벤트가 대사·사기·유동성·컴플라이언스·분석 제품으로 전환됩니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>구조화 주소</category>
+      <category>CBPR+</category>
+      <category>결제 데이터 제품</category>
+      <category>용도 코드</category>
+      <category>기업 트레저리</category>
+      <category>대사</category>
+      <category>제재 스크리닝</category>
+      <category>사기 탐지</category>
+    </item>
     <item>
       <title>DORA, EU AI 법, 데이터 주권: 2026년 은행을 위한 컴플라이언스 스택</title>
       <link>https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

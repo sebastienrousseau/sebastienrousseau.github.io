@@ -1,12 +1,12 @@
 {
-  "locale": "ko_KR",
-  "banner": "https://cloudcdn.pro/stocks/images/eric-prouzet-T2rHb45GnRY-unsplash.webp",
-  "title": "Mistral AI의 Le Chat: 대화형 AI의 새 시대",
   "banner_alt": "유럽 의사당 전경",
+  "description": "Mistral AI의 Le Chat, 유럽 AI 챔피언의 부상, 프랑스 및 유럽 AI에 대한 영향.",
   "keywords": "Mistral AI, Le Chat, 유럽 AI, LLM, 오픈소스, 프랑스, AI 주권",
-  "date": "March 4, 2024",
+  "banner": "https://cloudcdn.pro/stocks/images/eric-prouzet-T2rHb45GnRY-unsplash.webp",
   "subtitle": "유럽 AI 챔피언의 부상",
   "language": "ko-KR",
+  "title": "Mistral AI의 Le Chat: 대화형 AI의 새 시대",
   "last_reviewed": "2026-05-16",
-  "description": "Mistral AI의 Le Chat, 유럽 AI 챔피언의 부상, 프랑스 및 유럽 AI에 대한 영향."
+  "locale": "ko_KR",
+  "date": "March 4, 2024"
 }

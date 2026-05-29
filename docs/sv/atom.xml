@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/sv/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/sv/"/>
   <id>https://sebastienrousseau.com/sv/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T05:57:25+00:00</updated>
+  <entry>
+    <title>ISO 20022 efter migreringen: betaldata som bankprodukter 2026</title>
+    <link href="https://sebastienrousseau.com/sv/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"/>
+    <id>https://sebastienrousseau.com/sv/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</id>
+    <updated>2026-05-29T06:06:06+00:00</updated>
+    <published>2026-05-29T06:06:06+00:00</published>
+    <summary>ISO 20022 efter migreringen är en möjlighet för betaldata-produkter. Strukturerade adresser, ändamålskoder, fakturadetaljer, utredningsmeddelanden och rikare statushändelser kan bli produkter för avstämning, bedrägeri, likviditet, regelefterlevnad och analys.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU:s AI-förordning och datasuveränitet: bankernas efterlevnadsstack 2026</title>
     <link href="https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

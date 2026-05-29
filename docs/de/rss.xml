@@ -6,14 +6,32 @@
     <description>Artikel auf Deutsch: angewandte KI, ISO-20022-Zahlungen, Post-Quanten-Kryptografie und Transformation des Wholesale-Zahlungsverkehrs.</description>
     <atom:link href="https://sebastienrousseau.com/de/rss.xml" rel="self" type="application/rss+xml"/>
     <language>de-DE</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 05:57:25 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle Rechte vorbehalten.</copyright>
+    <item>
+      <title>ISO 20022 nach Migration: Zahlungsdaten als Bankprodukte 2026</title>
+      <link>https://sebastienrousseau.com/de/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 nach der Migration ist eine Chance für Zahlungs-Datenprodukte. Strukturierte Adressen, Verwendungszweck-Codes, Rechnungsdetails, Untersuchungs-Nachrichten und reichere Statusereignisse werden zu Abstimmung, Betrugserkennung, Liquidität und Compliance.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 05:57:25 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>strukturierte Adresse</category>
+      <category>CBPR+</category>
+      <category>Zahlungs-Datenprodukte</category>
+      <category>Verwendungszweck-Codes</category>
+      <category>Corporate Treasury</category>
+      <category>Abstimmung</category>
+      <category>Sanktions-Screening</category>
+      <category>Betrugserkennung</category>
+    </item>
     <item>
       <title>DORA, EU-KI-Verordnung und Datensouveränität: Der Compliance-Stack 2026 für Banken</title>
       <link>https://sebastienrousseau.com/de/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
       <description>DORA, die EU-KI-Verordnung, DSGVO, Cloud-Konzentrationsrisiko und Datensouveränität verschmelzen 2026 zu einem Compliance-Stack für Banken.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
-      <pubDate>Thu, 28 May 2026 06:26:19 +0000</pubDate>
+      <pubDate>Fri, 29 May 2026 05:57:25 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>DORA 2026</category>
@@ -29,7 +47,7 @@
       <link>https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/</link>
       <description>KI wird 2026 zum Betriebssystem des Zahlungsverkehrs: vom Analytik-Werkzeug zur Steuerungsschicht für Betrugsabwehr, Zahlungsreparatur, Routing, Liquiditätsprognose, Compliance-Prüfung und agentische Handelskontrollen.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/</guid>
-      <pubDate>Thu, 28 May 2026 06:26:19 +0000</pubDate>
+      <pubDate>Fri, 29 May 2026 05:57:25 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>KI-Zahlungsverkehr 2026</category>

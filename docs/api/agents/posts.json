@@ -1,6 +1,27 @@
 {
-  "count": 56,
+  "count": 57,
   "posts": [
+    {
+      "slug": "2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026",
+      "url": "https://sebastienrousseau.com/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html",
+      "date": "2026-05-29",
+      "title": "ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026",
+      "description": "ISO 20022 after migration is a data-product opportunity. Structured addresses, purpose codes, invoice details, investigation messages, and richer payment status events can become reconciliation, fraud, liquidity, compliance, and analytics products.",
+      "keywords": [
+        "ISO 20022 2026",
+        "structured address",
+        "CBPR+",
+        "payment data products",
+        "payment purpose codes",
+        "corporate treasury",
+        "reconciliation",
+        "sanctions screening",
+        "fraud detection"
+      ],
+      "banner": "https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80",
+      "topics": [],
+      "language": "en-GB"
+    },
     {
       "slug": "2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026",
       "url": "https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html",

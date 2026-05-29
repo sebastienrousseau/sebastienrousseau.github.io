@@ -6,8 +6,29 @@
     <description>日本語の記事:応用AI、ISO 20022 決済、ポスト量子暗号、ホールセール決済の構造変革。</description>
     <atom:link href="https://sebastienrousseau.com/ja/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ja-JP</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 05:57:25 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>ISO 20022 移行後:決済データを 2026 年の銀行プロダクトに変える</title>
+      <link>https://sebastienrousseau.com/ja/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 移行後は決済データ・プロダクトの好機です。構造化アドレス、目的コード、請求明細、調査メッセージ、リッチな決済ステータスが照合、不正、流動性、コンプライアンス、分析プロダクトに進化します。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>構造化アドレス</category>
+      <category>CBPR+</category>
+      <category>決済データ・プロダクト</category>
+      <category>目的コード</category>
+      <category>コーポレート・トレジャリー</category>
+      <category>照合</category>
+      <category>制裁スクリーニング</category>
+      <category>不正検知</category>
+      <category>pacs.008</category>
+      <category>pain.001</category>
+      <category>SWIFT gpi</category>
+    </item>
     <item>
       <title>DORA、EU AI Act、データ主権:2026 年銀行向けコンプライアンス・スタック</title>
       <link>https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
