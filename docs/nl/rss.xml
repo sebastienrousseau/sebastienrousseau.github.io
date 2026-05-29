@@ -6,8 +6,24 @@
     <description>Artikelen in het Nederlands: toegepaste AI, ISO 20022-betalingen, post-kwantumcryptografie en transformatie van het wholesale-betalingsverkeer.</description>
     <atom:link href="https://sebastienrousseau.com/nl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>nl-NL</language>
-    <lastBuildDate>Fri, 29 May 2026 05:57:25 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 21:41:13 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle rechten voorbehouden.</copyright>
+    <item>
+      <title>DORA, EU AI Act en datasoevereiniteit: de compliance-stack 2026 voor banken</title>
+      <link>https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
+      <description>DORA, EU AI Act, GDPR, concentratierisico cloud en datasoevereiniteit smelten in 2026 samen tot één compliance-stack voor banken in Nederland.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
+      <pubDate>Fri, 29 May 2026 21:41:13 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>DORA 2026</category>
+      <category>EU AI Act 2026</category>
+      <category>datasoevereiniteit banken</category>
+      <category>operationele veerkracht</category>
+      <category>concentratierisico cloud</category>
+      <category>AI-compliance financiële sector</category>
+      <category>hoog-risico AI</category>
+    </item>
     <item>
       <title>ISO 20022 na migratie: betaaldata omzetten in bankproducten in 2026</title>
       <link>https://sebastienrousseau.com/nl/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
@@ -32,20 +48,23 @@
       <category>FedNow</category>
     </item>
     <item>
-      <title>DORA, EU AI Act en datasoevereiniteit: de compliance-stack 2026 voor banken</title>
-      <link>https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
-      <description>DORA, EU AI Act, GDPR, concentratierisico cloud en datasoevereiniteit smelten in 2026 samen tot één compliance-stack voor banken in Nederland.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
-      <pubDate>Fri, 29 May 2026 05:57:25 +0000</pubDate>
+      <title>Digitale activa in 2026: de infrastructuurtransitie die banken niet kunnen uitstellen</title>
+      <link>https://sebastienrousseau.com/nl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>Digitale activa zijn geen innovatie-experiment meer, maar een architectuurvraag over afwikkeling, bewaring en balans. De strategische opdracht voor banken is infrastructuurontwerp onder structurele onzekerheid.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
-      <category>DORA 2026</category>
-      <category>EU AI Act 2026</category>
-      <category>datasoevereiniteit banken</category>
-      <category>operationele veerkracht</category>
-      <category>concentratierisico cloud</category>
-      <category>AI-compliance financiële sector</category>
-      <category>hoog-risico AI</category>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>digitale activa 2026</category>
+      <category>getokeniseerde reële activa</category>
+      <category>stablecoins banken</category>
+      <category>getokeniseerde deposito&apos;s</category>
+      <category>bewaring digitale activa</category>
+      <category>DLT banken</category>
+      <category>afwikkelingsinfrastructuur</category>
+      <category>onderpandmobiliteit</category>
+      <category>programmeerbaar geld</category>
+      <category>bankstrategie digitale activa</category>
     </item>
     <item>
       <title>AI als besturingssysteem van betalingen: fraude, routering, veerkracht en compliance in 2026</title>

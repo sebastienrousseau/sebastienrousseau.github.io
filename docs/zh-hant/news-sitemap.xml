@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T21:41:13+00:00</news:publication_date>
+    <news:title>數位資產 2026:銀行不能延後的轉型</news:title>
+    <news:keywords>數位資產 2026, 代幣化現實資產, 穩定幣銀行, 代幣化存款, 數位資產託管, DLT 銀行, 結算基礎建設, 抵押品流動性, 可程式化貨幣, 數位資產銀行戰略</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/zh-hant/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
   <news:news>
     <news:publication>

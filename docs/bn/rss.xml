@@ -6,7 +6,7 @@
     <description>বাংলা প্রবন্ধ: প্রায়োগিক এআই, ISO 20022 পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের রূপান্তর।</description>
     <atom:link href="https://sebastienrousseau.com/bn/rss.xml" rel="self" type="application/rss+xml"/>
     <language>bn-BD</language>
-    <lastBuildDate>Fri, 29 May 2026 05:57:25 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 21:41:13 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. সর্বস্বত্ব সংরক্ষিত।</copyright>
     <item>
       <title>ISO 20022 মাইগ্রেশনের পরে: পেমেন্ট ডেটাকে ব্যাংকিং পণ্যে রূপান্তর ২০২৬</title>
@@ -30,6 +30,25 @@
       <category>SWIFT gpi</category>
       <category>SEPA Instant</category>
       <category>FedNow</category>
+    </item>
+    <item>
+      <title>ডিজিটাল সম্পদ ২০২৬: ব্যাংকের জন্য অপরিহার্য পরিকাঠামো রূপান্তর</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>ডিজিটাল সম্পদ আর উদ্ভাবন বাজি নয়। এটি সেটেলমেন্ট, কাস্টডি ও ব্যালেন্স শিট স্থাপত্যের প্রশ্ন। ব্যাংকের কৌশলগত কাজ কাঠামোগত অনিশ্চয়তায় পরিকাঠামো ডিজাইন।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>ডিজিটাল সম্পদ ২০২৬</category>
+      <category>টোকেনাইজড রিয়েল-ওয়ার্ল্ড অ্যাসেট</category>
+      <category>স্টেবলকয়েন ব্যাংকিং</category>
+      <category>টোকেনাইজড আমানত</category>
+      <category>ডিজিটাল সম্পদ কাস্টডি</category>
+      <category>DLT ব্যাংকিং</category>
+      <category>সেটেলমেন্ট পরিকাঠামো</category>
+      <category>কোল্যাটারাল মোবিলিটি</category>
+      <category>প্রোগ্রামযোগ্য মুদ্রা</category>
+      <category>ব্যাংক কৌশল ডিজিটাল সম্পদ</category>
     </item>
     <item>
       <title>DORA, EU AI আইন ও ডেটা সার্বভৌমত্ব: ব্যাংকের জন্য ২০২৬-এর কমপ্লায়েন্স স্ট্যাক</title>

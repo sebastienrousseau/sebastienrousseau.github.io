@@ -6,8 +6,27 @@
     <description>מאמרים בעברית: AI יישומי, תשלומי ISO 20022, קריפטוגרפיה פוסט-קוונטית, וטרנספורמציה של תשלומי סיטונאות.</description>
     <atom:link href="https://sebastienrousseau.com/he/rss.xml" rel="self" type="application/rss+xml"/>
     <language>he-IL</language>
-    <lastBuildDate>Fri, 29 May 2026 05:57:25 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 21:41:13 +0000</lastBuildDate>
     <copyright>© זכויות יוצרים 2007 - 2026 - Sebastien Rousseau. כל הזכויות שמורות.</copyright>
+    <item>
+      <title>נכסים דיגיטליים 2026: מעבר תשתית שהבנקים לא יכולים לדחות</title>
+      <link>https://sebastienrousseau.com/he/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>נכסים דיגיטליים אינם עוד הימור על חדשנות. הם שאלת ארכיטקטורה של סליקה, משמורת ומאזן. המשימה האסטרטגית של הבנקים היא תכנון תשתית באי-ודאות מבנית.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Fri, 29 May 2026 21:41:13 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>נכסים דיגיטליים 2026</category>
+      <category>נכסים מן העולם הממשי שעברו טוקניזציה</category>
+      <category>סטייבלקוינים בנקאות</category>
+      <category>פיקדונות מתוקנים</category>
+      <category>משמורת נכסים דיגיטליים</category>
+      <category>DLT בנקאות</category>
+      <category>תשתית סליקה</category>
+      <category>ניידות בטחונות</category>
+      <category>כסף ניתן לתכנות</category>
+      <category>אסטרטגיית בנקים בנכסים דיגיטליים</category>
+    </item>
     <item>
       <title>ISO 20022 לאחר ההגירה: הפיכת נתוני תשלום למוצרי בנקאות ב-2026</title>
       <link>https://sebastienrousseau.com/he/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>

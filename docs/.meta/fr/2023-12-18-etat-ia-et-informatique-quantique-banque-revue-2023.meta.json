@@ -1,11 +1,11 @@
 {
-  "subtitle": "Façonner l'avenir de la banque : IA, calcul quantique, modèles open source et paysage réglementaire",
-  "banner_alt": "État de l'IA et du calcul quantique dans la banque : revue 2023",
-  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
+  "title": "État de l'IA et du calcul quantique dans la banque : revue 2023",
   "description": "Explorer le paysage technologique 2023 : IA et calcul quantique révolutionnant la banque, montée des modèles open source, régulations et gouvernance en évolution.",
-  "keywords": "IA dans la banque, calcul quantique, technologie financière, IA open source, gestion des risques, sécurité quantique, régulation IA, éthique IA, gouvernance IA, innovation bancaire",
-  "language": "fr",
+  "subtitle": "Façonner l'avenir de la banque : IA, calcul quantique, modèles open source et paysage réglementaire",
   "date": "December 18, 2023",
-  "locale": "fr_FR",
-  "title": "État de l'IA et du calcul quantique dans la banque : revue 2023"
+  "banner_alt": "État de l'IA et du calcul quantique dans la banque : revue 2023",
+  "keywords": "IA dans la banque, calcul quantique, technologie financière, IA open source, gestion des risques, sécurité quantique, régulation IA, éthique IA, gouvernance IA, innovation bancaire",
+  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
+  "language": "fr",
+  "locale": "fr_FR"
 }

@@ -6,8 +6,27 @@
     <description>Články v češtině: aplikovaná AI, platby ISO 20022, postkvantová kryptografie a transformace velkoobchodních plateb.</description>
     <atom:link href="https://sebastienrousseau.com/cs/rss.xml" rel="self" type="application/rss+xml"/>
     <language>cs-CZ</language>
-    <lastBuildDate>Fri, 29 May 2026 05:57:25 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 21:41:13 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Všechna práva vyhrazena.</copyright>
+    <item>
+      <title>Digitální aktiva 2026: infrastrukturní přechod, který banky nemohou odkládat</title>
+      <link>https://sebastienrousseau.com/cs/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>Digitální aktiva už nejsou inovační sázkou. Jsou otázkou architektury vypořádání, úschovy a rozvahy. Strategickým úkolem bank je návrh infrastruktury za strukturální nejistoty.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Fri, 29 May 2026 21:41:13 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>digitální aktiva 2026</category>
+      <category>tokenizovaná reálná aktiva</category>
+      <category>stablecoiny banky</category>
+      <category>tokenizované vklady</category>
+      <category>úschova digitálních aktiv</category>
+      <category>DLT bankovnictví</category>
+      <category>infrastruktura vypořádání</category>
+      <category>mobilita kolaterálu</category>
+      <category>programovatelné peníze</category>
+      <category>strategie bank digitální aktiva</category>
+    </item>
     <item>
       <title>ISO 20022 po migraci: přeměna platebních dat na bankovní produkty v roce 2026</title>
       <link>https://sebastienrousseau.com/cs/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>

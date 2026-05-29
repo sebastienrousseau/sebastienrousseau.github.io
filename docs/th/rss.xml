@@ -6,7 +6,7 @@
     <description>บทความภาษาไทย: AI ประยุกต์, การชำระเงิน ISO 20022, การเข้ารหัสหลังควอนตัม และการปฏิรูปการชำระเงินขายส่ง</description>
     <atom:link href="https://sebastienrousseau.com/th/rss.xml" rel="self" type="application/rss+xml"/>
     <language>th-TH</language>
-    <lastBuildDate>Fri, 29 May 2026 05:57:25 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 21:41:13 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์</copyright>
     <item>
       <title>ISO 20022 หลังการย้ายระบบ: เปลี่ยนข้อมูลการชำระเงินเป็นผลิตภัณฑ์ธนาคารในปี 2026</title>
@@ -25,6 +25,25 @@
       <category>การกระทบยอด</category>
       <category>การคัดกรองการคว่ำบาตร</category>
       <category>การตรวจจับการฉ้อโกง</category>
+    </item>
+    <item>
+      <title>สินทรัพย์ดิจิทัลปี 2026: การเปลี่ยนผ่านโครงสร้างพื้นฐานที่ธนาคารเลื่อนไม่ได้</title>
+      <link>https://sebastienrousseau.com/th/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>สินทรัพย์ดิจิทัลไม่ใช่การเดิมพันด้านนวัตกรรมอีกต่อไป แต่เป็นคำถามสถาปัตยกรรมของการชำระบัญชี การคัสโตดี และงบดุล ภารกิจเชิงกลยุทธ์ของธนาคารคือการออกแบบโครงสร้างพื้นฐานภายใต้ความไม่แน่นอนเชิงโครงสร้าง</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>สินทรัพย์ดิจิทัล 2026</category>
+      <category>สินทรัพย์โลกจริงที่ถูกโทเค็นไนซ์</category>
+      <category>สเตเบิลคอยน์ของธนาคาร</category>
+      <category>เงินฝากโทเค็น</category>
+      <category>การคัสโตดีสินทรัพย์ดิจิทัล</category>
+      <category>DLT ของธนาคาร</category>
+      <category>โครงสร้างพื้นฐานการชำระบัญชี</category>
+      <category>การเคลื่อนย้ายหลักประกัน</category>
+      <category>เงินที่โปรแกรมได้</category>
+      <category>กลยุทธ์สินทรัพย์ดิจิทัลของธนาคาร</category>
     </item>
     <item>
       <title>DORA กฎหมาย AI ของ EU และอธิปไตยข้อมูล: สแต็คการปฏิบัติตามกฎปี 2026 ของธนาคาร</title>

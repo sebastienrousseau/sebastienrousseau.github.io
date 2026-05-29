@@ -1,12 +1,12 @@
 {
-  "title": "Express Transaction Credits 플랫폼의 개발",
   "subtitle": "블록체인을 활용한 고속 국경 간 송금 플랫폼 설계",
-  "banner_alt": "야간 전자 회로 기판의 파란 빛",
-  "date": "February 15, 2018",
-  "keywords": "국경 간 송금, 블록체인, 암호자산, 토큰, 스마트 컨트랙트, 결제 플랫폼, 핀테크",
-  "language": "ko-KR",
+  "title": "Express Transaction Credits 플랫폼의 개발",
   "banner": "https://cloudcdn.pro/stocks/images/joshua-sortino-LqKhnDzSF-8-unsplash.webp",
   "locale": "ko_KR",
+  "description": "블록체인과 암호자산을 활용한 고속 국경 간 송금 플랫폼 Express Transaction Credits의 구축.",
+  "date": "February 15, 2018",
   "last_reviewed": "2026-05-16",
-  "description": "블록체인과 암호자산을 활용한 고속 국경 간 송금 플랫폼 Express Transaction Credits의 구축."
+  "banner_alt": "야간 전자 회로 기판의 파란 빛",
+  "language": "ko-KR",
+  "keywords": "국경 간 송금, 블록체인, 암호자산, 토큰, 스마트 컨트랙트, 결제 플랫폼, 핀테크"
 }

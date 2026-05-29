@@ -6,8 +6,27 @@
     <description>한국어 기사: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 그리고 도매 결제 인프라의 구조적 변혁.</description>
     <atom:link href="https://sebastienrousseau.com/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 29 May 2026 05:57:25 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 21:41:13 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>디지털 자산 2026: 인프라 전환의 해</title>
+      <link>https://sebastienrousseau.com/ko/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>디지털 자산은 더 이상 혁신 베팅이 아닙니다. 결제, 수탁, 대차대조표 아키텍처의 문제입니다. 은행의 전략적 과제는 구조적 불확실성 속에서의 인프라 설계입니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Fri, 29 May 2026 21:41:13 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>디지털 자산 2026</category>
+      <category>토큰화된 실물자산</category>
+      <category>스테이블코인 은행</category>
+      <category>토큰화 예금</category>
+      <category>디지털 자산 수탁</category>
+      <category>DLT 뱅킹</category>
+      <category>결제 인프라</category>
+      <category>담보 이동성</category>
+      <category>프로그래밍 가능한 화폐</category>
+      <category>은행 디지털 자산 전략</category>
+    </item>
     <item>
       <title>ISO 20022 마이그레이션 이후: 2026년 결제 데이터를 은행 제품으로</title>
       <link>https://sebastienrousseau.com/ko/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>

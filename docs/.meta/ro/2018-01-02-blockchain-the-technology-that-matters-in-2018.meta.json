@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Laptop închis pe un birou din lemn maro",
-  "subtitle": "Blockchain, registre distribuite și tehnologia care contează cel mai mult în 2018.",
   "keywords": "pain001, iso 20022, automatizarea plăților, reducerea costurilor, procesarea plăților, fișiere de plată, inițierea plăților, pain message, pain message standards, pain message validation",
-  "locale": "ro_RO",
+  "language": "ro-RO",
+  "title": "Blockchain explained, the technology that matters the most",
+  "subtitle": "Blockchain, registre distribuite și tehnologia care contează cel mai mult în 2018.",
   "date": "Jan 02, 2018",
   "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
-  "language": "ro-RO",
-  "description": "Povestea extraordinarei călătorii de securizare a tranzacțiilor digitale prin criptografia cu cheie privată și rețelele Peer-to-peer (P2P).",
-  "title": "Blockchain explained, the technology that matters the most"
+  "banner_alt": "Laptop închis pe un birou din lemn maro",
+  "locale": "ro_RO",
+  "description": "Povestea extraordinarei călătorii de securizare a tranzacțiilor digitale prin criptografia cu cheie privată și rețelele Peer-to-peer (P2P)."
 }

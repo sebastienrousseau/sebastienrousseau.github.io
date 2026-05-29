@@ -134,6 +134,18 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/index.html" title="Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay">
+<img alt="Digital asset infrastructure diagram showing tokenised real-world assets, stablecoins, tokenised deposits, custody, settlement, collateral mobility, and bank platform layers" src="https://cloudcdn.pro/stocks/images/corporate-finance.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Digital Assets · Tokenisation · Stablecoins</span>
+<h3><a href="/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/index.html" title="Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay">Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-28">May 28, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Digital assets are no longer an innovation bet. They are a settlement, custody, and balance-sheet architecture question. Crypto is a ~$3 trillion asset class, stablecoins have reached ~$300 billion, and tokenised real-world assets grew ~300% in 2025. The strategic task for banks in 2026 is not whether to engage but how</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html" title="AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026">
 <img alt="AI payments operating system diagram showing fraud scoring, multi-rail routing, liquidity forecasting, ISO 20022 data, compliance screening, and exception repair" src="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>

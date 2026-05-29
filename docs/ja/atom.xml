@@ -4,7 +4,7 @@
   <link href="https://sebastienrousseau.com/ja/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ja/"/>
   <id>https://sebastienrousseau.com/ja/</id>
-  <updated>2026-05-29T05:57:25+00:00</updated>
+  <updated>2026-05-29T21:41:13+00:00</updated>
   <entry>
     <title>ISO 20022 移行後:決済データを 2026 年の銀行プロダクトに変える</title>
     <link href="https://sebastienrousseau.com/ja/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"/>
@@ -12,6 +12,15 @@
     <updated>2026-05-29T06:06:06+00:00</updated>
     <published>2026-05-29T06:06:06+00:00</published>
     <summary>ISO 20022 移行後は決済データ・プロダクトの好機です。構造化アドレス、目的コード、請求明細、調査メッセージ、リッチな決済ステータスが照合、不正、流動性、コンプライアンス、分析プロダクトに進化します。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>デジタル資産 2026:銀行が遅らせられないインフラ移行</title>
+    <link href="https://sebastienrousseau.com/ja/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
+    <id>https://sebastienrousseau.com/ja/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>デジタル資産はもはやイノベーションへの賭けではありません。決済、カストディ、バランスシートのアーキテクチャに関する問いです。銀行の戦略課題は構造的不確実性下でのインフラ設計です。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

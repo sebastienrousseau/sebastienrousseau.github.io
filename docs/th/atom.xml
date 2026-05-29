@@ -4,7 +4,7 @@
   <link href="https://sebastienrousseau.com/th/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/th/"/>
   <id>https://sebastienrousseau.com/th/</id>
-  <updated>2026-05-29T05:57:25+00:00</updated>
+  <updated>2026-05-29T21:41:13+00:00</updated>
   <entry>
     <title>ISO 20022 หลังการย้ายระบบ: เปลี่ยนข้อมูลการชำระเงินเป็นผลิตภัณฑ์ธนาคารในปี 2026</title>
     <link href="https://sebastienrousseau.com/th/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"/>
@@ -12,6 +12,15 @@
     <updated>2026-05-29T06:06:06+00:00</updated>
     <published>2026-05-29T06:06:06+00:00</published>
     <summary>ISO 20022 หลังการย้ายระบบคือโอกาสของผลิตภัณฑ์ข้อมูล ที่อยู่แบบมีโครงสร้าง รหัสวัตถุประสงค์ ข้อมูลการโอน และข้อความตรวจสอบกลายเป็นผลิตภัณฑ์การกระทบยอด การฉ้อโกง สภาพคล่อง และการปฏิบัติตามกฎสำหรับธนาคารในปี 2026</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>สินทรัพย์ดิจิทัลปี 2026: การเปลี่ยนผ่านโครงสร้างพื้นฐานที่ธนาคารเลื่อนไม่ได้</title>
+    <link href="https://sebastienrousseau.com/th/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
+    <id>https://sebastienrousseau.com/th/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>สินทรัพย์ดิจิทัลไม่ใช่การเดิมพันด้านนวัตกรรมอีกต่อไป แต่เป็นคำถามสถาปัตยกรรมของการชำระบัญชี การคัสโตดี และงบดุล ภารกิจเชิงกลยุทธ์ของธนาคารคือการออกแบบโครงสร้างพื้นฐานภายใต้ความไม่แน่นอนเชิงโครงสร้าง</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

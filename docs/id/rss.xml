@@ -6,32 +6,14 @@
     <description>Artikel berbahasa Indonesia: AI terapan, pembayaran ISO 20022, kriptografi pasca-kuantum, dan transformasi pembayaran grosir.</description>
     <atom:link href="https://sebastienrousseau.com/id/rss.xml" rel="self" type="application/rss+xml"/>
     <language>id-ID</language>
-    <lastBuildDate>Fri, 29 May 2026 05:57:25 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 21:41:13 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Hak cipta dilindungi.</copyright>
-    <item>
-      <title>ISO 20022 Pasca-Migrasi: Mengubah Data Pembayaran Menjadi Produk Bank 2026</title>
-      <link>https://sebastienrousseau.com/id/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
-      <description>ISO 20022 pasca-migrasi adalah peluang produk data. Alamat terstruktur, kode tujuan, detail faktur, dan pesan investigasi menjadi produk rekonsiliasi, penipuan, likuiditas, kepatuhan, dan analitik bank.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
-      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
-      <category>ISO 20022 2026</category>
-      <category>alamat terstruktur</category>
-      <category>CBPR+</category>
-      <category>produk data pembayaran</category>
-      <category>kode tujuan pembayaran</category>
-      <category>treasury korporat</category>
-      <category>rekonsiliasi</category>
-      <category>penyaringan sanksi</category>
-      <category>deteksi penipuan</category>
-    </item>
     <item>
       <title>DORA, EU AI Act, dan Kedaulatan Data: Tumpukan Kepatuhan 2026 bagi Bank</title>
       <link>https://sebastienrousseau.com/id/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
       <description>DORA, EU AI Act, GDPR, risiko konsentrasi cloud, dan kedaulatan data berkonvergensi menjadi satu tumpukan kepatuhan 2026 bagi bank — orkestrasi bukti tunggal.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
-      <pubDate>Fri, 29 May 2026 05:57:25 +0000</pubDate>
+      <pubDate>Fri, 29 May 2026 21:41:13 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>DORA 2026</category>
@@ -45,11 +27,30 @@
       <category>risiko pihak ketiga</category>
     </item>
     <item>
+      <title>Aset Digital pada 2026: Transisi Infrastruktur yang Tak Bisa Ditunda Bank</title>
+      <link>https://sebastienrousseau.com/id/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>Aset digital bukan lagi taruhan inovasi. Ini adalah pertanyaan arsitektur penyelesaian, kustodi, dan neraca. Tugas strategis bank adalah desain infrastruktur di tengah ketidakpastian struktural.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Fri, 29 May 2026 21:41:13 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>aset digital 2026</category>
+      <category>aset dunia nyata tertokenisasi</category>
+      <category>stablecoin perbankan</category>
+      <category>simpanan tertokenisasi</category>
+      <category>kustodi aset digital</category>
+      <category>perbankan DLT</category>
+      <category>infrastruktur penyelesaian</category>
+      <category>mobilitas agunan</category>
+      <category>uang terprogram</category>
+      <category>strategi bank aset digital</category>
+    </item>
+    <item>
       <title>AI sebagai Sistem Operasi Pembayaran: Penipuan, Routing, Ketahanan, dan Kepatuhan pada 2026</title>
       <link>https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</link>
       <description>AI menjadi sistem operasi pembayaran pada 2026, bergeser dari analitik ke pencegahan penipuan, perbaikan pembayaran, routing, prakiraan likuiditas, penyaringan kepatuhan, dan kontrol agentic commerce.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
-      <pubDate>Fri, 29 May 2026 05:57:25 +0000</pubDate>
+      <pubDate>Fri, 29 May 2026 21:41:13 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>sistem operasi AI pembayaran 2026</category>
@@ -66,7 +67,7 @@
       <link>https://sebastienrousseau.com/id/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>
       <description>Pembayaran agentik pada 2026 telah berpindah dari konsep ke transaksi langsung. Tantangan perbankan bukan lagi apakah AI agent dapat memulai pembayaran, melainkan bagaimana persetujuan, tanggung jawab, identitas, auditabilitas, kendali fraud, dan interoperabilitas protokol harus dirancang.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</guid>
-      <pubDate>Fri, 29 May 2026 05:57:25 +0000</pubDate>
+      <pubDate>Fri, 29 May 2026 21:41:13 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>pembayaran agentik 2026</category>
@@ -87,6 +88,24 @@
       <category>kunci akses</category>
       <category>UX perbankan</category>
       <category>perdagangan AI</category>
+    </item>
+    <item>
+      <title>ISO 20022 Pasca-Migrasi: Mengubah Data Pembayaran Menjadi Produk Bank 2026</title>
+      <link>https://sebastienrousseau.com/id/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 pasca-migrasi adalah peluang produk data. Alamat terstruktur, kode tujuan, detail faktur, dan pesan investigasi menjadi produk rekonsiliasi, penipuan, likuiditas, kepatuhan, dan analitik bank.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>alamat terstruktur</category>
+      <category>CBPR+</category>
+      <category>produk data pembayaran</category>
+      <category>kode tujuan pembayaran</category>
+      <category>treasury korporat</category>
+      <category>rekonsiliasi</category>
+      <category>penyaringan sanksi</category>
+      <category>deteksi penipuan</category>
     </item>
     <item>
       <title>Magnifica Humanitas: Pembacaan Industri AI atas Ensiklik Kepausan Pertama tentang AI</title>

@@ -1,11 +1,11 @@
 {
-  "title": "LibMake：減少重複任務、構建高質量 Rust 庫的程式碼生成器",
-  "date": "October 26, 2023",
-  "language": "zh-Hant",
-  "locale": "zh_TW",
-  "banner_alt": "巨大的白色柱子",
   "keywords": "LibMake, Rust 庫, 程式碼生成器, 模板, 腳手架, 最佳實踐, GitHub Actions, 開源, Cargo, CLI",
-  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
+  "date": "October 26, 2023",
+  "banner_alt": "巨大的白色柱子",
   "subtitle": "LibMake 透過強制最佳實踐與生成初始程式碼加速 Rust 庫開發，節省開發者時間與精力",
-  "description": "LibMake 是一款 Rust 庫程式碼生成工具，透過模板化生成減少重複勞動，強制最佳實踐。"
+  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
+  "title": "LibMake：減少重複任務、構建高質量 Rust 庫的程式碼生成器",
+  "description": "LibMake 是一款 Rust 庫程式碼生成工具，透過模板化生成減少重複勞動，強制最佳實踐。",
+  "language": "zh-Hant",
+  "locale": "zh_TW"
 }
