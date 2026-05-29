@@ -3,10 +3,10 @@
 # Front Matter (YAML)
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Automating ISO 20022 pain.001 with Open Source Python architecture diagram for open-source banking infrastructure in 2026"
-banner_height: "571"
-banner_width: "1425"
-banner: "https://cloudcdn.pro/stock/images/pain001-iso20022-python-2026-banner.webp"
+banner_alt: "Stack of euro banknotes — symbolising the corporate payment intent that pain.001 converts into structured, bank-readable ISO 20022 data"
+banner_height: "1597"
+banner_width: "2584"
+banner: "https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -88,6 +88,8 @@ twitter_site: "@wwdseb"
 twitter_title: "Automating ISO 20022 pain.001 with Open Source Python"
 twitter_url: "https://sebastienrousseau.com/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026"
 
+excerpt: "pain001 is an open-source Python toolkit for ISO 20022 customer credit transfer initiation — generating bank-grade pain.001 from CSV, SQLite, or in-memory data with validation, schema enforcement, and SEPA-ready defaults."
+
 # Humans.txt - The Humans.txt front matter (YAML).
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
@@ -101,6 +103,21 @@ site_software: "Static Site Generator, Rust"
 ---
 
 # Automating ISO 20022 pain.001 Payment Initiation with Open-Source Python in 2026
+
+
+<!-- lead-start -->
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Pain001 demonstrates how open-source Python can automate ISO 20022 customer credit transfer initiation from CSV, SQLite, and application data.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Why This Open-Source Project Matters in 2026.</strong> The strategic value of open source in 2026 is no longer limited to transparency, reuse, or developer goodwill.</li>
+  <li><strong>Signals to Track.</strong> A pain.001 file is not the beginning of payment automation; it is the output of a controlled workflow.</li>
+  <li><strong>The File Is the End of the Workflow.</strong> A pain.001 file is not the beginning of payment automation; it is the output of a controlled workflow.</li>
+  <li><strong>Why Python Is the Right On-Ramp.</strong> Python is already common in treasury analytics, reconciliation, data transformation, and operations tooling.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa">Quantum-Safe Payments: Why the Industry Must Act Now</a>, <a href="https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html">Static Site Generator: Fastest Rust-Based SSG</a>, <a href="https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html">Blockchain explained, the technology that matters the most</a>.</p>
+</aside>
+<!-- lead-end -->
 
 The pain.001 message sits at the practical edge of corporate banking modernisation. It is where payment intent becomes structured bank-readable data. Pain001 is valuable because it turns ISO 20022 payment initiation into code that treasury teams, developers, and operations engineers can test and automate.
 
@@ -202,6 +219,14 @@ Weak source data. Payment automation only works when creditor, debtor, account, 
 - SWIFT, (2026). [ISO 20022 November 2026 structured address milestone ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, payments infrastructure, tokenised money, ISO 20022, post-quantum security, cloud-native financial services, open-source infrastructure, and regulated digital markets.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-06-13">2026-06-13</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa" class="related-media" aria-label="Quantum-Safe Payments: Why the Industry Must Act Now" tabindex="-1"><img alt="Quantum computing circuit board in blue light" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa">Quantum-Safe Payments: Why the Industry Must Act Now</a></h3><p><time datetime="2025-09-01">2025-09-01</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" class="related-media" aria-label="Static Site Generator: Fastest Rust-Based SSG" tabindex="-1"><img alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right" src="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html">Static Site Generator: Fastest Rust-Based SSG</a></h3><p><time datetime="2023-10-09">2023-10-09</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html" class="related-media" aria-label="Blockchain explained, the technology that matters the most" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html">Blockchain explained, the technology that matters the most</a></h3><p><time datetime="2018-01-02">2018-01-02</time></p></footer></article>
+</div>
+</aside>
 <!-- enrich-end -->

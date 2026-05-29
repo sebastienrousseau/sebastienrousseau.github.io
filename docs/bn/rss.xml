@@ -6,8 +6,24 @@
     <description>বাংলা প্রবন্ধ: প্রায়োগিক এআই, ISO 20022 পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের রূপান্তর।</description>
     <atom:link href="https://sebastienrousseau.com/bn/rss.xml" rel="self" type="application/rss+xml"/>
     <language>bn-BD</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 02:09:16 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. সর্বস্বত্ব সংরক্ষিত।</copyright>
+    <item>
+      <title>ওপেন সোর্স Python দিয়ে ২০২৬-এ ISO 20022 pain.001 পেমেন্ট সূচনার স্বয়ংক্রিয়করণ</title>
+      <link>https://sebastienrousseau.com/bn/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</link>
+      <description>pain001 দেখায় কীভাবে ওপেন সোর্স Python CSV, SQLite ও অ্যাপ্লিকেশন ডেটা থেকে ISO 20022 গ্রাহক ক্রেডিট ট্রান্সফার পেমেন্ট সূচনা স্বয়ংক্রিয় করতে পারে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</guid>
+      <pubDate>Fri, 29 May 2026 02:09:16 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp" type="image/webp" length="0"/>
+      <category>pain001</category>
+      <category>ISO 20022</category>
+      <category>পেমেন্ট সূচনা</category>
+      <category>Python পেমেন্ট</category>
+      <category>SEPA</category>
+      <category>গ্রাহক ক্রেডিট ট্রান্সফার সূচনা</category>
+      <category>ওপেন সোর্স ব্যাংকিং</category>
+    </item>
     <item>
       <title>DORA, EU AI আইন ও ডেটা সার্বভৌমত্ব: ব্যাংকের জন্য ২০২৬-এর কমপ্লায়েন্স স্ট্যাক</title>
       <link>https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

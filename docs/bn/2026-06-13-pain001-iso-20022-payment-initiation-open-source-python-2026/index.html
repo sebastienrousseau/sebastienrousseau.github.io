@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="bn-BD">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Sat, 13 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Sat, 13 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>ওপেন সোর্স Python দিয়ে ২০২৬-এ ISO 20022 pain.001 পেমেন্ট সূচনার স্বয়ংক্রিয়করণ — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="pain001 দেখায় কীভাবে ওপেন সোর্স Python CSV, SQLite ও অ্যাপ্লিকেশন ডেটা থেকে ISO 20022 গ্রাহক ক্রেডিট ট্রান্সফার পেমেন্ট সূচনা স্বয়ংক্রিয় করতে পারে।">
+<meta name="keywords" content="pain001, ISO 20022, পেমেন্ট সূচনা, Python পেমেন্ট, SEPA, গ্রাহক ক্রেডিট ট্রান্সফার সূচনা, ওপেন সোর্স ব্যাংকিং">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Automating ISO 20022 pain.001 with Open Source Python">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-+L3xjIiPONs1J4FbBRuykdhK/aZz8iFhVxL6iw3u/74=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-Cjh2Foog+2gYwnRiJ/RUHDvaypx0xs+f+H8hT5/rWg8=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-TpLED9L2zudBaC227mkxmpPMmQG2TooRiBQJ2rgAl10=' 'sha256-d1HzCPRPSZMdSWX8y39pUZ7dNehPRqABMASedtw4Xno=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/bn/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom ফিড" href="/bn/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="ওপেন সোর্স Python দিয়ে ২০২৬-এ ISO 20022 pain.001 পেমেন্ট সূচনার স্বয়ংক্রিয়করণ — Sebastien Rousseau">
+<meta property="og:description" content="pain001 দেখায় কীভাবে ওপেন সোর্স Python CSV, SQLite ও অ্যাপ্লিকেশন ডেটা থেকে ISO 20022 গ্রাহক ক্রেডিট ট্রান্সফার পেমেন্ট সূচনা স্বয়ংক্রিয় করতে পারে।">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/bn/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="bn_BD">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ওপেন সোর্স Python দিয়ে ২০২৬-এ ISO 20022 pain.001 পেমেন্ট সূচনার স্বয়ংক্রিয়করণ — Sebastien Rousseau">
+<meta name="twitter:description" content="pain001 দেখায় কীভাবে ওপেন সোর্স Python CSV, SQLite ও অ্যাপ্লিকেশন ডেটা থেকে ISO 20022 গ্রাহক ক্রেডিট ট্রান্সফার পেমেন্ট সূচনা স্বয়ংক্রিয় করতে পারে।">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/bn/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">মূল কনটেন্টে যান</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="নেভিগেশন টগল করুন" />
+      <div class="wrap">
+        <a class="ap-brand" href="/bn/index.html" aria-label="Sebastien Rousseau হোম">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="প্রধান নেভিগেশন">
+          <ul class="ap-menu">
+            <li><a href="/bn/amader-shomporke/index.html">About</a></li>
+            <li><a href="/bn/prabondho/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/bn/prokashana/index.html">Papers</a></li>
+            <li><a href="/bn/bishay/index.html">বিষয়</a></li>
+            <li><a href="/bn/prokolpo/index.html">Projects</a></li>
+            <li><a href="/bn/playlist/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="ডার্ক থিম চালু করুন" aria-pressed="false" title="থিম পরিবর্তন করুন">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="অনুসন্ধান (Cmd বা Ctrl + K)" title="অনুসন্ধান (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="ভাষা">
+            <button type="button" class="ap-lang-toggle" aria-label="BN, ভাষা পরিবর্তন" aria-expanded="false" aria-haspopup="menu" title="ভাষা পরিবর্তন">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">BN</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/bn/jogajog/index.html" aria-label="যোগাযোগ">যোগাযোগ ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="নেভিগেশন টগল করুন">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>ওপেন সোর্স Python দিয়ে ২০২৬-এ ISO 20022 pain.001 পেমেন্ট সূচনার স্বয়ংক্রিয়করণ</h1>
+      <p class="sub">পেমেন্ট সূচনা কাঠামোগত, স্বয়ংক্রিয় ও ডেটা-সমৃদ্ধ হয়ে উঠছে; ওপেন সোর্স pain.001 টুলিং দলগুলিকে স্প্রেডশিট থেকে ISO 20022-প্রস্তুত ওয়ার্কফ্লোতে যেতে সাহায্য করে।</p>
+    <nav class="article-tags" aria-label="বিষয়"><a href="/tags/index.html#h3-pain001" class="article-tag" rel="tag">pain001</a><a href="/tags/index.html#h3-iso-20022" class="article-tag" rel="tag">ISO 20022</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">পেমেন্ট সূচনা</a><a href="/tags/index.html#h3-python" class="article-tag" rel="tag">Python পেমেন্ট</a><a href="/tags/index.html#h3-sepa" class="article-tag" rel="tag">SEPA</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">গ্রাহক ক্রেডিট ট্রান্সফার সূচনা</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">ওপেন সোর্স ব্যাংকিং</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-13T06:06:06+00:00" class="meta-pub">প্রকাশিত 13 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="আনুমানিক পঠন সময়">4 মিনিট পঠন</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>বিষয়বস্তু</h2><ol><li><a href="#section-1">কেন ২০২৬-এ এই ওপেন সোর্স প্রকল্প গুরুত্বপূর্ণ</a></li><li><a href="#section-2">স্থাপত্যের দৃষ্টিকোণ</a></li><li><a href="#section-3">নজরে রাখার সংকেত</a></li><li><a href="#section-4">ফাইলটি ওয়ার্কফ্লোর শেষ, শুরু নয়</a></li><li><a href="#python">কেন Python সঠিক প্রবেশপথ</a></li><li><a href="#section-6">স্বয়ংক্রিয়করণ থেকে পণ্যে</a></li><li><a href="#section-7">শ্রোতা অনুসারে এর অর্থ</a></li><li><a href="#section-12">উপসংহার</a></li><li><a href="#section-13">প্রায়শই জিজ্ঞাসিত প্রশ্ন</a></li><li><a href="#section-14">তথ্যসূত্র</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> pain001 দেখায় কীভাবে ওপেন সোর্স Python CSV, SQLite ও অ্যাপ্লিকেশন ডেটা থেকে ISO 20022 গ্রাহক ক্রেডিট ট্রান্সফার পেমেন্ট সূচনা স্বয়ংক্রিয় করতে পারে।</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>কেন ২০২৬-এ এই ওপেন সোর্স প্রকল্প গুরুত্বপূর্ণ.</strong> ২০২৬-এ ওপেন সোর্সের কৌশলগত মূল্য আর কেবল স্বচ্ছতা, পুনর্ব্যবহার বা ডেভেলপারের সদিচ্ছার মধ্যে সীমাবদ্ধ নেই। ব্যাংক ও আর্থিক প্রতিষ্ঠানের জন্য ওপেন সোর্স পরিকাঠামো অনুমান পরিদর্শন, নিয়ন্ত্রণ পরীক্ষা, ভেন্ডর অস্বচ্ছতা…</li>  <li><strong>নজরে রাখার সংকেত.</strong> একটি pain.001 ফাইল পেমেন্ট স্বয়ংক্রিয়করণের শুরু নয়; এটি একটি নিয়ন্ত্রিত ওয়ার্কফ্লোর আউটপুট। ঊর্ধ্বমুখী বিবেচনাগুলি হল সরবরাহকারীর ডেটা, ঋণগ্রহীতার অ্যাকাউন্ট, ঋণদাতার শনাক্তকারী, পরিমাণের ফরম্যাট, কার্যকর তারিখ,…</li>  <li><strong>ফাইলটি ওয়ার্কফ্লোর শেষ, শুরু নয়.</strong> একটি pain.001 ফাইল পেমেন্ট স্বয়ংক্রিয়করণের শুরু নয়; এটি একটি নিয়ন্ত্রিত ওয়ার্কফ্লোর আউটপুট। ঊর্ধ্বমুখী বিবেচনাগুলি হল সরবরাহকারীর ডেটা, ঋণগ্রহীতার অ্যাকাউন্ট, ঋণদাতার শনাক্তকারী, পরিমাণের ফরম্যাট, কার্যকর তারিখ,…</li>  <li><strong>কেন Python সঠিক প্রবেশপথ.</strong> Python ইতিমধ্যেই ট্রেজারি বিশ্লেষণ, পুনর্মিলন, ডেটা রূপান্তর ও পরিচালন টুলিং-এ প্রচলিত। একটি ওপেন সোর্স Python লাইব্রেরি স্প্রেডশিট-ভিত্তিক পেমেন্ট প্রস্তুতি ও কাঠামোগত ISO 20022 জেনারেশনের মধ্যে বাধা কমায়। এটি…</li></ul></aside><h1>ওপেন সোর্স Python দিয়ে ২০২৬-এ ISO 20022 pain.001 পেমেন্ট সূচনার স্বয়ংক্রিয়করণ</h1>
+<!-- lead-start -->
+<aside class="lead" aria-label="সংক্ষিপ্ত বিবরণ">
+<p><strong>সংক্ষেপে।</strong> pain.001 হল সেই ISO 20022 বার্তা, যা কর্পোরেট পেমেন্ট অভিপ্রায়কে কাঠামোগত, ব্যাংক-পাঠযোগ্য ডেটায় রূপান্তরিত করে। pain001 — ওপেন সোর্স Python লাইব্রেরি — সেই রূপান্তরকে শেষ-থেকে-শেষ পর্যন্ত স্বয়ংক্রিয় করে: ইনপুট হিসেবে CSV / SQLite / ইন-মেমরি ডেটা, আউটপুট হিসেবে XSD-বৈধ pain.001 XML, SEPA-নিরাপদ ডিফল্ট ও ট্রেজারির অডিটযোগ্য নিয়ন্ত্রণ-প্লেন সহ।</p>
+<p><strong>মূল গ্রহণযোগ্য বিষয়:</strong></p>
+<ul>
+<li><strong>pain.001 হল ISO 20022 কর্পোরেট পেমেন্টের প্রবেশদ্বার।</strong> এটি সঠিকভাবে করুন, বাকি ডেটা-সমৃদ্ধ স্ট্যাক স্বাভাবিকভাবেই অনুসরণ করবে।</li>
+<li><strong>পেমেন্ট সূচনা হল ডেটা ইঞ্জিনিয়ারিং।</strong> বৈধতা, সমৃদ্ধিকরণ, স্কিমা প্রয়োগ, অনুমোদন — কোনো এককালীন XML টেমপ্লেট নয়।</li>
+<li><strong>ওপেন সোর্স হল আস্থার ব্যবস্থা।</strong> ট্রেজারি ও ঝুঁকি বিভাগ ব্যবসায়িক ডেটা → ব্যাংক-মানের XML-এর ম্যাপিং সরাসরি পড়তে পারে, ভেন্ডর PDF-এর উপর আস্থা রাখতে হয় না।</li>
+<li><strong>স্প্রেডশিট স্কেল করে না।</strong> হাতে-তৈরি CSV/Excel পাইপলাইন সমৃদ্ধ ডেটা, কাঠামোগত প্রেরণ তথ্য ও উচ্চ-আয়তনের SEPA কাজের চাপে ব্যর্থ হয়।</li>
+<li><strong>অডিটের জন্য পুনরুৎপাদনযোগ্যতা গুরুত্বপূর্ণ।</strong> একই ইনপুট, একই XML, একই হ্যাশ — প্রতিবার।</li>
+</ul>
+<p><strong>সংশ্লিষ্ট পঠন:</strong> <a href="/bn/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/">মূল pain.001 + Python গভীর-পাঠ (২০২৩)</a> · <a href="/bn/2026-05-12-iso-20022-pacs008-structured-address-deadline/">ISO 20022 pacs.008 কাঠামোগত-ঠিকানার সময়সীমা</a> · <a href="/bn/2026-05-19-global-wholesale-payments-economics-2026/">পাইকারি পেমেন্ট অর্থনীতি ২০২৬</a></p>
+</aside>
+<!-- lead-end -->
+<p>pain.001 বার্তাটি কর্পোরেট ব্যাংকিং আধুনিকীকরণের বাস্তব প্রান্তে অবস্থান করে। এখানেই পেমেন্ট অভিপ্রায় কাঠামোগত, ব্যাংক-পাঠযোগ্য ডেটায় পরিণত হয়। pain001 মূল্যবান, কারণ এটি ISO 20022 পেমেন্ট সূচনাকে এমন কোডে রূপান্তরিত করে, যা ট্রেজারি দল, ডেভেলপার ও অপারেশন ইঞ্জিনিয়াররা পরীক্ষা ও স্বয়ংক্রিয় করতে পারেন।</p>
+<p>এই নিবন্ধের ওপেন সোর্স রেফারেন্স পয়েন্ট হল <a href="https://github.com/sebastienrousseau/pain001" title="pain001 রিপোজিটরি">pain001 ⧉</a>। রিপোজিটরিটি এভাবে অবস্থান নিয়েছে: একটি Python লাইব্রেরি যা CSV, SQLite বা Python ডেটা স্ট্রাকচার থেকে ISO 20022-সম্মত pain.001 পেমেন্ট ফাইল তৈরিতে সক্ষম, এবং এর বিষয়গুলির মধ্যে রয়েছে ব্যাংকিং, SEPA, পেমেন্ট প্রসেসিং, স্বয়ংক্রিয় পেমেন্ট ও গ্রাহক ক্রেডিট ট্রান্সফার সূচনা।</p>
+<hr />
+<blockquote>
+<p><strong>এক্সিকিউটিভ সারাংশ / মূল গ্রহণযোগ্য বিষয়</strong></p>
+<ul>
+<li><strong>pain001 একটি শক্তিশালী ব্যাংকিং রূপান্তর নিবন্ধ।</strong> এটি সরাসরি ISO 20022, কর্পোরেট পেমেন্ট, SEPA, CSV, SQLite ও পেমেন্ট স্বয়ংক্রিয়করণকে সমর্থন করে।</li>
+<li><strong>পেমেন্ট সূচনা হল ডেটা ইঞ্জিনিয়ারিং।</strong> ফাইলটি কেবল আউটপুট; প্রকৃত কাজ হল বৈধতা, সমৃদ্ধিকরণ, ফরম্যাটিং, অনুমোদন ও নিয়ন্ত্রণ।</li>
+<li><strong>ওপেন সোর্স টুলিং ISO 20022 ঘর্ষণ কমায়।</strong> ডেভেলপাররা ব্যবসায়িক ডেটা থেকে পেমেন্ট বার্তার কাঠামোয় ম্যাপিং পরিদর্শন করতে পারেন।</li>
+<li><strong>বিষয়টি ২০২৬-এর কাঠামোগত-ডেটা কর্মসূচির সঙ্গে মানানসই।</strong> পেমেন্ট স্কিমগুলি অসংগঠিত উপায়গুলি সরিয়ে নিতে থাকায় পেমেন্ট ডেটার গুণমান আরও গুরুত্বপূর্ণ হয়ে উঠছে।</li>
+<li><strong>রিপোজিটরিটি ব্যবহারিক নির্দেশিকার ভিত্তি হতে পারে।</strong> উদাহরণ, টেমপ্লেট, বৈধতা চেকলিস্ট ও ট্রেজারি ওয়ার্কফ্লো নিবন্ধটিকে কার্যকর করে তুলবে।</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="section-1">কেন ২০২৬-এ এই ওপেন সোর্স প্রকল্প গুরুত্বপূর্ণ <a class="heading-anchor" href="#section-1" aria-label="লিঙ্ক কেন ২০২৬-এ এই ওপেন সোর্স প্রকল্প গুরুত্বপূর্ণ">#</a></h2>
+<p>২০২৬-এ ওপেন সোর্সের কৌশলগত মূল্য আর কেবল স্বচ্ছতা, পুনর্ব্যবহার বা ডেভেলপারের সদিচ্ছার মধ্যে সীমাবদ্ধ নেই। ব্যাংক ও আর্থিক প্রতিষ্ঠানের জন্য ওপেন সোর্স পরিকাঠামো অনুমান পরিদর্শন, নিয়ন্ত্রণ পরীক্ষা, ভেন্ডর অস্বচ্ছতা হ্রাস এবং স্থাপত্যগত দাবিকে এমন কোডে রূপান্তরের উপায় হয়ে উঠেছে, যা পড়া, ফর্ক করা, শক্তিশালী করা ও পরিচালনা করা যায়। সবচেয়ে কার্যকর প্রকল্পগুলি ডেমো নয়। এগুলি রেফারেন্স বাস্তবায়ন, যা দেখায় নিরাপত্তা, প্রবেশযোগ্যতা, কর্মক্ষমতা, কমপ্লায়েন্স ও ডেভেলপার অভিজ্ঞতা একসঙ্গে কীভাবে কাজ করে।</p>
+<p>এই দৃষ্টিকোণ থেকেই pain001-কে বুঝতে হবে। এটি কেবল একটি রিপোজিটরি নয়; এটি একটি সুনির্দিষ্ট নকশাগত যুক্তি। এটি বলে যে গুরুত্বপূর্ণ পরিকাঠামো অডিটযোগ্য, সংযোজনযোগ্য, নথিভুক্ত, পরীক্ষাযোগ্য ও সেই মানুষদের কাছে বোধগম্য হওয়া উচিত যারা এর উপর নির্ভর করেন। আর্থিক পরিষেবায় এটি গুরুত্বপূর্ণ, কারণ সিস্টেমগুলি ক্রমশ এজেন্টিক AI, রিয়েল-টাইম পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, ক্লাউড-নেটিভ স্থিতিস্থাপকতা, কাঠামোগত ডেটা ও নিয়ন্ত্রক প্রমাণের সংযোগস্থলে অবস্থান করছে।</p>
+<h2 id="section-2">স্থাপত্যের দৃষ্টিকোণ <a class="heading-anchor" href="#section-2" aria-label="লিঙ্ক স্থাপত্যের দৃষ্টিকোণ">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>স্তর</th>
+<th>নকশাগত সিদ্ধান্ত</th>
+<th>কেন গুরুত্বপূর্ণ</th>
+<th>অপব্যবস্থাপনায় ঝুঁকি</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ইনপুট</strong></td>
+<td>CSV, SQLite ও Python ডেটা স্ট্রাকচার</td>
+<td>ট্রেজারি দলগুলিকে তাদের ডেটা যেখানে আছে সেখানেই সংযুক্ত করে</td>
+<td>আবর্জনা-ইন, কমপ্লায়েন্ট-দেখানো-আবর্জনা-আউট</td>
+</tr>
+<tr>
+<td><strong>বার্তা মডেল</strong></td>
+<td>pain.001 গ্রাহক ক্রেডিট ট্রান্সফার সূচনা</td>
+<td>পেমেন্ট অভিপ্রায়কে ISO 20022 কাঠামোয় ম্যাপ করে</td>
+<td>অবৈধ ফাইল বা ব্যাংকের প্রত্যাখ্যান</td>
+</tr>
+<tr>
+<td><strong>বৈধতা</strong></td>
+<td>ক্ষেত্র, স্কিম ও ব্যবসায়িক-নিয়ম যাচাই</td>
+<td>মেরামত, প্রত্যাখ্যান ও পরিচালন খরচ কমায়</td>
+<td>হাতে-কলমে তদন্ত ও বিলম্বিত পেমেন্ট</td>
+</tr>
+<tr>
+<td><strong>স্বয়ংক্রিয়করণ</strong></td>
+<td>লাইব্রেরি ও ওয়ার্কফ্লো ইন্টিগ্রেশন</td>
+<td>পেমেন্টকে স্প্রেডশিট-চালিত পরিচালনা থেকে সরিয়ে নেয়</td>
+<td>অনিয়ন্ত্রিত ব্যাচ তৈরি</td>
+</tr>
+<tr>
+<td><strong>গভর্নেন্স</strong></td>
+<td>অনুমোদন, লগ ও পুনর্মিলন হুক</td>
+<td>পেমেন্ট তৈরিকে অডিটযোগ্য করে</td>
+<td>পরিচালনাগত প্রমাণ ছাড়া পেমেন্ট ফাইল</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-3">নজরে রাখার সংকেত <a class="heading-anchor" href="#section-3" aria-label="লিঙ্ক নজরে রাখার সংকেত">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>সংকেত</th>
+<th>এর অর্থ</th>
+<th>তথ্যসূত্র</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>pain.001 রিপোজিটরি</strong></td>
+<td>প্রকল্পটি ISO 20022-সম্মত পেমেন্ট সূচনাকে লক্ষ্য করে</td>
+<td><a href="https://github.com/sebastienrousseau/pain001" title="pain001 রিপোজিটরি">pain001 ⧉</a></td>
+</tr>
+<tr>
+<td><strong>CSV ও SQLite সমর্থন</strong></td>
+<td>লাইব্রেরি প্রচলিত ট্রেজারি ডেটা উৎসের সঙ্গে সেতু তৈরি করতে পারে</td>
+<td><a href="https://github.com/sebastienrousseau/pain001" title="pain001 রিপোজিটরি">pain001 ⧉</a></td>
+</tr>
+<tr>
+<td><strong>SWIFT কাঠামোগত ঠিকানার মাইলফলক</strong></td>
+<td>পেমেন্ট প্রবাহ জুড়ে কাঠামোগত পেমেন্ট ডেটা আরও জরুরি হয়ে উঠছে</td>
+<td><a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" title="SWIFT ISO 20022 মাইলফলক">SWIFT ⧉</a></td>
+</tr>
+<tr>
+<td><strong>SEPA ও ব্যাংকিং বিষয়</strong></td>
+<td>প্রকল্পটি স্বাভাবিকভাবেই কর্পোরেট ব্যাংক ওয়ার্কফ্লোর জন্য উপযুক্ত</td>
+<td><a href="https://github.com/sebastienrousseau/pain001" title="pain001 রিপোজিটরি">pain001 ⧉</a></td>
+</tr>
+<tr>
+<td><strong>ওপেন সোর্স পেমেন্ট প্রসেসিং</strong></td>
+<td>পেমেন্ট টুলিং বাস্তবায়নকারীরা পরিদর্শন ও অভিযোজিত করতে পারেন</td>
+<td><a href="https://github.com/sebastienrousseau/pain001" title="pain001 রিপোজিটরি">pain001 ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-4">ফাইলটি ওয়ার্কফ্লোর শেষ, শুরু নয় <a class="heading-anchor" href="#section-4" aria-label="লিঙ্ক ফাইলটি ওয়ার্কফ্লোর শেষ, শুরু নয়">#</a></h2>
+<p>একটি pain.001 ফাইল পেমেন্ট স্বয়ংক্রিয়করণের শুরু নয়; এটি একটি নিয়ন্ত্রিত ওয়ার্কফ্লোর আউটপুট। ঊর্ধ্বমুখী বিবেচনাগুলি হল সরবরাহকারীর ডেটা, ঋণগ্রহীতার অ্যাকাউন্ট, ঋণদাতার শনাক্তকারী, পরিমাণের ফরম্যাট, কার্যকর তারিখ, প্রেরণ তথ্য, অনুমোদন, নিষেধাজ্ঞা স্ক্রিনিং ও পুনর্মিলন।</p>
+<h2 id="python">কেন Python সঠিক প্রবেশপথ <a class="heading-anchor" href="#python" aria-label="লিঙ্ক কেন Python সঠিক প্রবেশপথ">#</a></h2>
+<p>Python ইতিমধ্যেই ট্রেজারি বিশ্লেষণ, পুনর্মিলন, ডেটা রূপান্তর ও পরিচালন টুলিং-এ প্রচলিত। একটি ওপেন সোর্স Python লাইব্রেরি স্প্রেডশিট-ভিত্তিক পেমেন্ট প্রস্তুতি ও কাঠামোগত ISO 20022 জেনারেশনের মধ্যে বাধা কমায়। এটি দলগুলিকে ব্যাংক ইন্টারফেস প্রত্যাখ্যান করার আগে পেমেন্ট ফাইল পরীক্ষার একটি উপায়ও দেয়।</p>
+<h2 id="section-6">স্বয়ংক্রিয়করণ থেকে পণ্যে <a class="heading-anchor" href="#section-6" aria-label="লিঙ্ক স্বয়ংক্রিয়করণ থেকে পণ্যে">#</a></h2>
+<p>নিবন্ধটি pain001-কে কেবল একটি লাইব্রেরি হিসেবে নয়, ট্রেজারি পণ্যের নির্মাণ-ব্লক হিসেবে অবস্থান দেওয়া উচিত: পেমেন্ট ফ্যাক্টরি, অনুমোদন ওয়ার্কফ্লো, ভেন্ডর পেমেন্ট পোর্টাল, ERP কানেক্টর ও ISO 20022 মাইগ্রেশন ল্যাব।</p>
+<h2 id="section-7">শ্রোতা অনুসারে এর অর্থ <a class="heading-anchor" href="#section-7" aria-label="লিঙ্ক শ্রোতা অনুসারে এর অর্থ">#</a></h2>
+<h3 id="section-8">ব্যাংক প্রযুক্তি নেতাদের জন্য <a class="heading-anchor" href="#section-8" aria-label="লিঙ্ক ব্যাংক প্রযুক্তি নেতাদের জন্য">#</a></h3>
+<p>প্রশ্ন হল, প্রকল্পটি একটি কৌশলগত চাপকে কার্যকর স্থাপত্যে রূপান্তর করতে সাহায্য করতে পারে কি না। মূল্য সবচেয়ে শক্তিশালী হয় যখন রিপোজিটরি দলগুলিকে পরিদর্শনের জন্য সুনির্দিষ্ট কিছু দেয়: ইন্টারফেস, কনফিগারেশন, পরীক্ষা, নিরাপত্তার সীমানা, স্থাপনার অনুমান ও ব্যর্থতার ধরন।</p>
+<h3 id="section-9">নিরাপত্তা ও ঝুঁকি দলের জন্য <a class="heading-anchor" href="#section-9" aria-label="লিঙ্ক নিরাপত্তা ও ঝুঁকি দলের জন্য">#</a></h3>
+<p>প্রকল্পটি কেবল বৈশিষ্ট্যের জন্য নয়, নিয়ন্ত্রণ প্রমাণের জন্যও মূল্যায়ন করা উচিত। উপযোগী ওপেন সোর্স আর্থিক পরিকাঠামো দেখায় কীভাবে পরিচয়, গোপনীয়তা, বৈধতা, অডিট লগ, রেট লিমিট, স্বাক্ষর, উৎসপত্র ও পুনরুদ্ধার কাজ করার কথা।</p>
+<h3 id="section-10">ডেভেলপার ও প্ল্যাটফর্ম ইঞ্জিনিয়ারদের জন্য <a class="heading-anchor" href="#section-10" aria-label="লিঙ্ক ডেভেলপার ও প্ল্যাটফর্ম ইঞ্জিনিয়ারদের জন্য">#</a></h3>
+<p>সবচেয়ে গুরুত্বপূর্ণ পরীক্ষা হল, প্রকল্পটি গুরুত্বপূর্ণ যান্ত্রিকতা গোপন না করে জ্ঞানীয় বোঝা কমায় কি না। ভালো ওপেন সোর্স নিরাপদ পথকেই সহজ পথ করে তোলে, একই সঙ্গে অভিজ্ঞ ইঞ্জিনিয়ারদের বাস্তবায়ন বোঝা ও পরিবর্তন করার সুযোগ দেয়।</p>
+<h3 id="section-11">অবদানকারীদের জন্য <a class="heading-anchor" href="#section-11" aria-label="লিঙ্ক অবদানকারীদের জন্য">#</a></h3>
+<p>সুযোগ হল সেই জায়গাগুলিতে প্রকল্পটিকে শক্তিশালী করা, যেখানে প্রকৃত প্রতিষ্ঠানের আশ্বাস দরকার: ডকুমেন্টেশন, উদাহরণ, কনফরমেন্স টেস্ট, CI শক্তিশালীকরণ, থ্রেট মডেল, কর্মক্ষমতার প্রোফাইল, প্রবেশযোগ্যতা যাচাই ও ইন্টিগ্রেশন নির্দেশিকা।</p>
+<h2 id="section-12">উপসংহার <a class="heading-anchor" href="#section-12" aria-label="লিঙ্ক উপসংহার">#</a></h2>
+<p>pain001 সম্পর্কে লেখার কারণ হল, এটি একটি বৃহত্তর শিল্প সমস্যাকে সুনির্দিষ্ট কিছুতে পরিণত করে। ২০২৬-এ ব্যাংকগুলির আরও বিমূর্ত রূপান্তর-ভাষার প্রয়োজন নেই। তাদের প্রয়োজন পরিদর্শনযোগ্য সিস্টেম, যা দেখাবে আধুনিক পরিকাঠামো কীভাবে নির্মাণ, সুরক্ষা, পরীক্ষা ও পরিচালনা করা যায়। ওপেন সোর্স সেই যুক্তিকে দৃশ্যমান করার সবচেয়ে বিশ্বাসযোগ্য উপায়।</p>
+<h2 id="section-13">প্রায়শই জিজ্ঞাসিত প্রশ্ন <a class="heading-anchor" href="#section-13" aria-label="লিঙ্ক প্রায়শই জিজ্ঞাসিত প্রশ্ন">#</a></h2>
+<p><strong>pain.001 কী?</strong></p>
+<p>pain.001 হল একটি ISO 20022 গ্রাহক ক্রেডিট ট্রান্সফার সূচনা বার্তা, যা গ্রাহক থেকে ব্যাংকে পেমেন্ট শুরু করতে ব্যবহৃত হয়।</p>
+<p><strong>pain001 কাদের ব্যবহার করা উচিত?</strong></p>
+<p>ডেভেলপার, ট্রেজারি দল, ফিনটেক ও পেমেন্ট অপারেশন দলগুলি, যাদের ISO 20022 পেমেন্ট সূচনা ফাইল তৈরি করতে হয়।</p>
+<p><strong>এখানে ওপেন সোর্স কেন উপযোগী?</strong></p>
+<p>কারণ বাস্তবায়নকারীরা পেমেন্ট ফাইল তৈরিকে কালো বাক্স হিসেবে দেখার বদলে ক্ষেত্র ম্যাপিং, বৈধতা যুক্তি, উদাহরণ ও ইন্টিগ্রেশন প্যাটার্ন পরিদর্শন করতে পারেন।</p>
+<p><strong>সবচেয়ে বড় বাস্তবায়ন ঝুঁকি কী?</strong></p>
+<p>দুর্বল উৎস ডেটা। পেমেন্ট স্বয়ংক্রিয়করণ তখনই কাজ করে, যখন ঋণদাতা, ঋণগ্রহীতা, অ্যাকাউন্ট, ঠিকানা, তারিখ, পরিমাণ ও প্রেরণ তথ্য পরিষ্কার থাকে।</p>
+<h2 id="section-14">তথ্যসূত্র <a class="heading-anchor" href="#section-14" aria-label="লিঙ্ক তথ্যসূত্র">#</a></h2>
+<ul>
+<li>GitHub, (2026). <a href="https://github.com/sebastienrousseau/pain001" title="pain001 রিপোজিটরি">pain001 রিপোজিটরি ⧉</a>.</li>
+<li>SWIFT, (2026). <a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" title="ISO 20022 নভেম্বর ২০২৬ কাঠামোগত ঠিকানার মাইলফলক">ISO 20022 নভেম্বর ২০২৬ কাঠামোগত ঠিকানার মাইলফলক ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-06-13">2026-06-13</time>।</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="Sebastien Rousseau-এর ছবি" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/bn/amader-shomporke/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">সিনিয়র ব্যাঙ্কিং প্রযুক্তিবিদ; আমি প্রায়োগিক এআই, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লিখি।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০ বছরেরও বেশি অভিজ্ঞতা। <a href="/bn/amader-shomporke/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-05-29">2026-05-29</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">সম্পর্কিত পঠন</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/bn/2025-09-01-quantum-safe-payments-epaa" class="related-media" aria-label="Quantum-Safe Payments: Why the Industry Must Act Now" tabindex="-1"><img alt="Quantum computing circuit board in blue light" src="https://cloudcdn.pro/api/transform?url=/stocks/images/digital-nodes.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="quantum-safe-payments-why-the-industry-must-act-now"><a href="https://sebastienrousseau.com/bn/2025-09-01-quantum-safe-payments-epaa">Quantum-Safe Payments: Why the Industry Must Act Now</a> <a class="heading-anchor" href="#quantum-safe-payments-why-the-industry-must-act-now" aria-label="লিঙ্ক Quantum-Safe Payments: Why the Industry Must Act Now">#</a></h3><p><time datetime="2025-09-01">2025-09-01</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/bn/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" class="related-media" aria-label="Static Site Generator: Fastest Rust-Based SSG" tabindex="-1"><img alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right" src="https://cloudcdn.pro/api/transform?url=/stocks/images/anna-nekrashevich-8534387.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="static-site-generator-fastest-rust-based-ssg"><a href="https://sebastienrousseau.com/bn/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html">Static Site Generator: Fastest Rust-Based SSG</a> <a class="heading-anchor" href="#static-site-generator-fastest-rust-based-ssg" aria-label="লিঙ্ক Static Site Generator: Fastest Rust-Based SSG">#</a></h3><p><time datetime="2023-10-09">2023-10-09</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/bn/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html" class="related-media" aria-label="Blockchain explained, the technology that matters the most" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/api/transform?url=/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="blockchain-explained-the-technology-that-matters-the-most"><a href="https://sebastienrousseau.com/bn/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html">Blockchain explained, the technology that matters the most</a> <a class="heading-anchor" href="#blockchain-explained-the-technology-that-matters-the-most" aria-label="লিঙ্ক Blockchain explained, the technology that matters the most">#</a></h3><p><time datetime="2018-01-02">2018-01-02</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">সূত্র ও তথ্যসূত্র</h2><ol class="article-sources-list"><li><a href="https://github.com/sebastienrousseau/pain001" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/sebastienrousseau/pain001</span></a></li><li><a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" rel="external noopener nofollow"><span class="source-host">www.swift.com</span><span class="source-path">/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be…</span></a></li></ol></aside><nav class="post-pagination" aria-label="নিবন্ধ পেজিনেশন"><a class="post-pagination-prev" href="/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">পূর্ববর্তী</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/bn/amader-shomporke/index.html">About</a></li>
+              <li><a href="/bn/jogajog/index.html">Contact</a></li>
+              <li><a href="/bn/static-site-generator-die-toiri/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">লেখা</h2>
+            <ul>
+              <li><a href="/bn/prabondho/index.html">Articles</a></li>
+              <li><a href="/bn/prokashana/index.html">Papers</a></li>
+              <li><a href="/bn/tag/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">কাজ</h2>
+            <ul>
+              <li><a href="/bn/prokolpo/index.html">Projects</a></li>
+              <li><a href="/bn/playlist/index.html">Playlists</a></li>
+              <li><a href="/bn/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">যোগাযোগ</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="নিউজলেটার সাবস্ক্রিপশন">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — পেমেন্ট, এআই এবং পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি বিষয়ক গবেষণা নোট। কোনও স্প্যাম নয়।</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="apni@bank.bd" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">সাবস্ক্রাইব করুন</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="সামাজিক লিঙ্ক">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau-এ Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau-এ LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau-এ Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau-এ YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/bn/prabeshjogyota/index.html">Accessibility</a> ·
+            <a href="/bn/goponiyota/index.html">Privacy</a> ·
+            <a href="/bn/shorto/index.html">Terms</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"bn"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"bn"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":937,"about":{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]},"mentions":[{"@type":"Thing","name":"Python","sameAs":["https://en.wikipedia.org/wiki/Python_(programming_language)","https://www.wikidata.org/wiki/Q28865"]},{"@type":"Thing","name":"SEPA","sameAs":["https://en.wikipedia.org/wiki/Single_Euro_Payments_Area","https://www.wikidata.org/wiki/Q286094"]}],"headline":"ওপেন সোর্স Python দিয়ে ২০২৬-এ ISO 20022 pain.001 পেমেন্ট সূচনার স্বয়ংক্রিয়করণ","description":"pain001 দেখায় কীভাবে ওপেন সোর্স Python CSV, SQLite ও অ্যাপ্লিকেশন ডেটা থেকে ISO 20022 গ্রাহক ক্রেডিট ট্রান্সফার পেমেন্ট সূচনা স্বয়ংক্রিয় করতে পারে।","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp","width":"100vw","height":"100vh","caption":"ইউরো ব্যাংকনোটের স্তূপ — কর্পোরেট পেমেন্ট অভিপ্রায়ের প্রতীক, যা pain.001 কাঠামোগত, ব্যাংক-পাঠযোগ্য ISO 20022 ডেটায় রূপান্তর করে"},"url":"https://sebastienrousseau.com/bn/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/","datePublished":"2026-06-13T06:06:06+00:00","dateModified":"2026-06-13","inLanguage":"bn","keywords":"pain001, ISO 20022, পেমেন্ট সূচনা, Python পেমেন্ট, SEPA, গ্রাহক ক্রেডিট ট্রান্সফার সূচনা, ওপেন সোর্স ব্যাংকিং","articleSection":"Finance","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/bn/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"bn"},"citation":[{"@type":"CreativeWork","url":"https://github.com/sebastienrousseau/pain001"},{"@type":"CreativeWork","url":"https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/bn/"},{"@type":"ListItem","position":3,"name":"ওপেন সোর্স Python দিয়ে ২০২৬-এ ISO 20022 pain.001 পেমেন্ট সূচনার স্বয়ংক্রিয়করণ","item":"https://sebastienrousseau.com/bn/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="অনুসন্ধান">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>অনুসন্ধান</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="অনুসন্ধান">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="ডকুমেন্টে অনুসন্ধান করুন..." autocomplete="off" aria-label="অনুসন্ধান"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> বন্ধ করুন</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> নেভিগেট করুন</span><span><kbd>Enter</kbd> খুলুন</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"ওপেন সোর্স Python দিয়ে ২০২৬-এ ISO 20022 pain.001 পেমেন্ট সূচনার স্বয়ংক্রিয়করণ","url":"https://sebastienrousseau.com/bn/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/","inLanguage":"bn-BD","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"pain001, ISO 20022, পেমেন্ট সূচনা, Python পেমেন্ট, SEPA, গ্রাহক ক্রেডিট ট্রান্সফার সূচনা, ওপেন সোর্স ব্যাংকিং","programmingLanguage":"Python","dependencies":["ISO 20022","SEPA Instant Payments"]}</script></body>
+</html>

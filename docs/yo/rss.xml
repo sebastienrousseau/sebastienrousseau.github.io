@@ -6,8 +6,24 @@
     <description>Awọn akọle Yorùbá: AI tó wúlò, ìsanwó ISO 20022, kírípítógíráfì lẹ́yìn-kuántọ́mù, àti àtúnṣe ètò ìsanwó ńláńlá.</description>
     <atom:link href="https://sebastienrousseau.com/yo/rss.xml" rel="self" type="application/rss+xml"/>
     <language>yo-NG</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 02:09:17 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Gbogbo ẹtọ ti wa ni ipamọ.</copyright>
+    <item>
+      <title>Ṣíṣe Àdàṣe Ìbẹ̀rẹ̀ Ìsanwó ISO 20022 pain.001 pẹ̀lú Python Orisun Ṣiṣi ní 2026</title>
+      <link>https://sebastienrousseau.com/yo/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</link>
+      <description>pain001 fihàn báwo ni Python orisun ṣiṣi ṣe lè ṣe àdàṣe ìbẹ̀rẹ̀ ìsanwó ISO 20022 láti CSV, SQLite, àti data ohun èlò pẹ̀lú ìfọ̀wọ́sí àti ìbára-mu.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</guid>
+      <pubDate>Fri, 29 May 2026 02:09:17 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp" type="image/webp" length="0"/>
+      <category>pain001</category>
+      <category>ISO 20022</category>
+      <category>ìbẹ̀rẹ̀ ìsanwó</category>
+      <category>Python payments</category>
+      <category>SEPA</category>
+      <category>gbígbé awin onibara</category>
+      <category>ìṣòwò ilé-ifowopamọ́ orisun ṣiṣi</category>
+    </item>
     <item>
       <title>DORA, EU AI Act, àti Ọba Lori Dátà: Akopọ Ìbámu 2026 fún Báńkì</title>
       <link>https://sebastienrousseau.com/yo/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

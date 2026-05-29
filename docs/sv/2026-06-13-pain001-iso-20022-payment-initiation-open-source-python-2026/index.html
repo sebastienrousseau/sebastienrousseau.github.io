@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Sat, 13 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Sat, 13 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>Automatisera ISO 20022 pain.001-betalningsinitiering med Python (öppen källkod) 2026 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Pain001 visar hur Python med öppen källkod automatiserar ISO 20022 kundbetalningsöverföring från CSV, SQLite och applikationsdata med XSD-validering.">
+<meta name="keywords" content="pain001, ISO 20022, betalningsinitiering, Python-betalningar, SEPA, kundbetalningsöverföring, öppen källkod bank">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Automating ISO 20022 pain.001 with Open Source Python">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-A+vkxAOMZMwwqMAUAVI+BPAJYdNc4M8PeZ+yQdhgy9M=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-oS3ZJG7DxVxbGPjV1tZ6afJMuwZukWBK5sIuv/+4/pw=' 'sha256-pUfzDAnMGZXXT+X1GNocOOzuKHCTy3HgIf6S3ykUDlw=' 'sha256-xfao9NCHveExNrnC/LRxGJno7InDQc3CNJdzP4PFhZ4=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/sv/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom-flöde" href="/sv/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Automatisera ISO 20022 pain.001-betalningsinitiering med Python (öppen källkod) 2026 — Sebastien Rousseau">
+<meta property="og:description" content="Pain001 visar hur Python med öppen källkod automatiserar ISO 20022 kundbetalningsöverföring från CSV, SQLite och applikationsdata med XSD-validering.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/sv/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="sv_SE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Automatisera ISO 20022 pain.001-betalningsinitiering med Python (öppen källkod) 2026 — Sebastien Rousseau">
+<meta name="twitter:description" content="Pain001 visar hur Python med öppen källkod automatiserar ISO 20022 kundbetalningsöverföring från CSV, SQLite och applikationsdata med XSD-validering.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/sv/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Hoppa till huvudinnehållet</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Växla navigering" />
+      <div class="wrap">
+        <a class="ap-brand" href="/sv/index.html" aria-label="Sebastien Rousseau startsida">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Huvudnavigering">
+          <ul class="ap-menu">
+            <li><a href="/sv/om-mig/index.html">Om mig</a></li>
+            <li><a href="/sv/artiklar/index.html" aria-current="page" class="active">Artiklar</a></li>
+            <li><a href="/sv/publikationer/index.html">Publikationer</a></li>
+            <li><a href="/sv/amnen/index.html">Ämnen</a></li>
+            <li><a href="/sv/projekt/index.html">Projekt</a></li>
+            <li><a href="/sv/spellistor/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Växla till mörkt tema" aria-pressed="false" title="Byt tema">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Sök (Cmd eller Ctrl + K)" title="Sök (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Språk">
+            <button type="button" class="ap-lang-toggle" aria-label="SV, Byt språk" aria-expanded="false" aria-haspopup="menu" title="Byt språk">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">SV</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/sv/kontakt/index.html" aria-label="Ta kontakt">Ta kontakt ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Växla navigering">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Automatisera ISO 20022 pain.001-betalningsinitiering med Python (öppen källkod) 2026</h1>
+      <p class="sub">Betalningsinitiering blir strukturerad, automatiserad och databerikad; pain.001-verktyg med öppen källkod hjälper team att gå från kalkylblad till ISO 20022-redo arbetsflöden.</p>
+    <nav class="article-tags" aria-label="Ämnen"><a href="/tags/index.html#h3-pain001" class="article-tag" rel="tag">pain001</a><a href="/tags/index.html#h3-iso-20022" class="article-tag" rel="tag">ISO 20022</a><a href="/tags/index.html#h3-betalningsinitiering" class="article-tag" rel="tag">betalningsinitiering</a><a href="/tags/index.html#h3-python-betalningar" class="article-tag" rel="tag">Python-betalningar</a><a href="/tags/index.html#h3-sepa" class="article-tag" rel="tag">SEPA</a><a href="/tags/index.html#h3-kundbetalningsoverforing" class="article-tag" rel="tag">kundbetalningsöverföring</a><a href="/tags/index.html#h3-oppen-kallkod-bank" class="article-tag" rel="tag">öppen källkod bank</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-13T06:06:06+00:00" class="meta-pub">Publicerad 13 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Uppskattad lästid">4 min läsning</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Innehåll</h2><ol><li><a href="#darfor-ar-det-har-open-source-projektet-viktigt-2026">Därför är det här open source-projektet viktigt 2026</a></li><li><a href="#arkitekturlins">Arkitekturlins</a></li><li><a href="#signaler-att-folja">Signaler att följa</a></li><li><a href="#filen-ar-slutet-pa-arbetsflodet">Filen är slutet på arbetsflödet</a></li><li><a href="#darfor-ar-python-ratt-pafart">Därför är Python rätt påfart</a></li><li><a href="#fran-automation-till-produkt">Från automation till produkt</a></li><li><a href="#vad-detta-innebar-per-malgrupp">Vad detta innebär per målgrupp</a></li><li><a href="#slutsats">Slutsats</a></li><li><a href="#vanliga-fragor">Vanliga frågor</a></li><li><a href="#referenser">Referenser</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Pain001 visar hur Python med öppen källkod automatiserar ISO 20022 kundbetalningsöverföring från CSV, SQLite och applikationsdata med XSD-validering.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Därför är det här open source-projektet viktigt 2026.</strong> Det strategiska värdet av öppen källkod 2026 är inte längre begränsat till transparens, återanvändning eller utvecklargoodwill.</li>  <li><strong>Signaler att följa.</strong> En pain.001-fil är inte början på betalningsautomation; den är resultatet av ett kontrollerat arbetsflöde.</li>  <li><strong>Filen är slutet på arbetsflödet.</strong> En pain.001-fil är inte början på betalningsautomation; den är resultatet av ett kontrollerat arbetsflöde.</li>  <li><strong>Därför är Python rätt påfart.</strong> Python är redan vanligt inom analys för finansavdelningar, avstämning, datatransformation och driftsverktyg.</li></ul></aside><h1>Automatisera ISO 20022 pain.001-betalningsinitiering med Python (öppen källkod) 2026</h1>
+<!-- lead-start -->
+<aside class="lead" aria-label="Sammanfattning">
+<p><strong>Sammanfattning.</strong> pain.001 är det ISO 20022-meddelande som omvandlar företagens betalningsavsikt till strukturerad, bankläsbar data. pain001 — Python-biblioteket med öppen källkod — automatiserar den konverteringen från ända till ända: CSV / SQLite / minnesdata in, XSD-validerad pain.001 XML ut, med SEPA-säkra standardvärden och ett kontrollplan som finansavdelningen kan granska.</p>
+<p><strong>Viktiga slutsatser:</strong></p>
+<ul>
+<li><strong>pain.001 är ingången till ISO 20022-företagsbetalningar.</strong> Får man det rätt följer resten av den berikade datastacken.</li>
+<li><strong>Betalningsinitiering är dataingenjörskap.</strong> Validering, berikning, schemavalidering, godkännanden — inte en engångsmall för XML.</li>
+<li><strong>Öppen källkod är förtroendemekanismen.</strong> Finansavdelning och risk kan läsa kartläggningen från affärsdata → XML i bankkvalitet, inte lita på en leverantörs PDF.</li>
+<li><strong>Kalkylblad skalar inte.</strong> Handbyggda CSV/Excel-pipelines klarar inte berikad data, strukturerad betalningsinformation eller storskaliga SEPA-volymer.</li>
+<li><strong>Reproducerbarhet spelar roll för revision.</strong> Samma indata, samma XML, samma hash — varje gång.</li>
+</ul>
+<p><strong>Vidare läsning:</strong> <a href="/sv/2023-09-29-automatisera-iso-20022-betalfiler-med-pain001/">Den ursprungliga pain.001 + Python-fördjupningen (2023)</a> · <a href="/sv/2026-05-12-iso-20022-pacs008-strukturerad-adress-deadline/">ISO 20022 pacs.008 deadline för strukturerade adresser</a> · <a href="/sv/2026-05-19-global-wholesale-payments-economics-2026/">Ekonomin för wholesale-betalningar 2026</a></p>
+</aside>
+<!-- lead-end -->
+<p>pain.001-meddelandet ligger i den praktiska framkanten av moderniseringen för företagsbanker. Det är här betalningsavsikten blir strukturerad, bankläsbar data. Pain001 är värdefullt eftersom det omsätter ISO 20022-betalningsinitiering i kod som finansavdelningar, utvecklare och driftsingenjörer kan testa och automatisera.</p>
+<p>Referenspunkten med öppen källkod för den här artikeln är <a href="https://github.com/sebastienrousseau/pain001" title="pain001">pain001 ⧉</a>. Förrådet positioneras som: ett Python-bibliotek som möjliggör ISO 20022-kompatibla pain.001-betalfiler från CSV, SQLite eller Python-datastrukturer, med ämnen som bankverksamhet, SEPA, betalningsbehandling, automatiserade betalningar och kundbetalningsöverföring.</p>
+<hr />
+<blockquote>
+<p><strong>Executive sammanfattning / viktiga slutsatser</strong></p>
+<ul>
+<li><strong>Pain001 är en stark konverteringsartikel för bank.</strong> Den stöder direkt ISO 20022, företagsbetalningar, SEPA, CSV, SQLite och betalningsautomation.</li>
+<li><strong>Betalningsinitiering är dataingenjörskap.</strong> Filen är bara resultatet; det verkliga arbetet är validering, berikning, formatering, godkännande och kontroll.</li>
+<li><strong>Verktyg med öppen källkod minskar friktionen kring ISO 20022.</strong> Utvecklare kan inspektera kartläggningen från affärsdata till betalningsmeddelandets struktur.</li>
+<li><strong>Ämnet passar 2026 års agenda för strukturerad data.</strong> Kvaliteten på betalningsdata blir allt viktigare när betalningsscheman tar bort ostrukturerade lösningar.</li>
+<li><strong>Förrådet kan förankra praktiska guider.</strong> Exempel, mallar, valideringschecklistor och arbetsflöden för finansavdelningar gör artikeln konkret.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="darfor-ar-det-har-open-source-projektet-viktigt-2026">Därför är det här open source-projektet viktigt 2026 <a class="heading-anchor" href="#darfor-ar-det-har-open-source-projektet-viktigt-2026" aria-label="Länk till Därför är det här open source-projektet viktigt 2026">#</a></h2>
+<p>Det strategiska värdet av öppen källkod 2026 är inte längre begränsat till transparens, återanvändning eller utvecklargoodwill. För banker och finansiella institutioner har infrastruktur med öppen källkod blivit ett sätt att granska antaganden, testa kontroller, minska leverantörsopacitet och omsätta arkitektoniska påståenden i kod som kan läsas, forkas, härdas och driftas. De mest användbara projekten är inte demos. De är referensimplementationer som visar hur säkerhet, tillgänglighet, prestanda, efterlevnad och utvecklarupplevelse hänger ihop.</p>
+<p>Det är genom den linsen pain001 ska förstås. Det är inte bara ett förråd; det är ett konkret designargument. Det säger att kritisk infrastruktur ska vara granskningsbar, komponerbar, dokumenterad, testbar och begriplig för dem som är beroende av den. I finansiella tjänster spelar det roll eftersom systemen i allt högre grad ligger i skärningspunkten mellan agentisk AI, realtidsbetalningar, postkvantkryptografi, molnbaserad resiliens, strukturerad data och tillsynsbevis.</p>
+<h2 id="arkitekturlins">Arkitekturlins <a class="heading-anchor" href="#arkitekturlins" aria-label="Länk till Arkitekturlins">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Lager</th>
+<th>Designval</th>
+<th>Varför det spelar roll</th>
+<th>Risk vid felhantering</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Indata</strong></td>
+<td>CSV, SQLite och Python-datastrukturer</td>
+<td>Möter finansavdelningar där deras data redan finns</td>
+<td>Skräp in, skräp som ser efterlevnadsenligt ut</td>
+</tr>
+<tr>
+<td><strong>Meddelandemodell</strong></td>
+<td>pain.001 kundbetalningsöverföring</td>
+<td>Kartlägger betalningsavsikt till ISO 20022-struktur</td>
+<td>Ogiltiga filer eller bankavvisningar</td>
+</tr>
+<tr>
+<td><strong>Validering</strong></td>
+<td>Fält-, schema- och affärsregelkontroller</td>
+<td>Minskar rättning, avvisning och driftskostnad</td>
+<td>Manuell utredning och försenade betalningar</td>
+</tr>
+<tr>
+<td><strong>Automation</strong></td>
+<td>Bibliotek och arbetsflödesintegration</td>
+<td>Flyttar betalningar bort från kalkylbladsledd drift</td>
+<td>Okontrollerad batchgenerering</td>
+</tr>
+<tr>
+<td><strong>Styrning</strong></td>
+<td>Godkännanden, loggar och avstämningshakar</td>
+<td>Gör betalningsgenereringen granskningsbar</td>
+<td>Betalfiler utan driftsbevis</td>
+</tr>
+</tbody>
+</table>
+<h2 id="signaler-att-folja">Signaler att följa <a class="heading-anchor" href="#signaler-att-folja" aria-label="Länk till Signaler att följa">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>Vad det betyder</th>
+<th>Referens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>pain.001-förrådet</strong></td>
+<td>Projektet siktar på ISO 20022-kompatibel betalningsinitiering</td>
+<td><a href="https://github.com/sebastienrousseau/pain001" title="pain001-förrådet">pain001 ⧉</a></td>
+</tr>
+<tr>
+<td><strong>CSV- och SQLite-stöd</strong></td>
+<td>Biblioteket kan brygga vanliga datakällor på finansavdelningar</td>
+<td><a href="https://github.com/sebastienrousseau/pain001" title="pain001-förrådet">pain001 ⧉</a></td>
+</tr>
+<tr>
+<td><strong>SWIFT milstolpe för strukturerade adresser</strong></td>
+<td>Strukturerad betalningsdata blir mer brådskande över alla betalningsflöden</td>
+<td><a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" title="SWIFT ISO 20022-milstolpe">SWIFT ⧉</a></td>
+</tr>
+<tr>
+<td><strong>SEPA och bankämnen</strong></td>
+<td>Projektet är naturligt placerat för arbetsflöden i företagsbanker</td>
+<td><a href="https://github.com/sebastienrousseau/pain001" title="pain001-förrådet">pain001 ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Öppen källkod för betalningsbehandling</strong></td>
+<td>Betalningsverktyg kan granskas och anpassas av implementerare</td>
+<td><a href="https://github.com/sebastienrousseau/pain001" title="pain001-förrådet">pain001 ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="filen-ar-slutet-pa-arbetsflodet">Filen är slutet på arbetsflödet <a class="heading-anchor" href="#filen-ar-slutet-pa-arbetsflodet" aria-label="Länk till Filen är slutet på arbetsflödet">#</a></h2>
+<p>En pain.001-fil är inte början på betalningsautomation; den är resultatet av ett kontrollerat arbetsflöde. De uppströms liggande frågorna är leverantörsdata, gäldenärskonton, borgenärsidentifierare, beloppsformat, exekveringsdatum, betalningsinformation, godkännanden, sanktionsscreening och avstämning.</p>
+<h2 id="darfor-ar-python-ratt-pafart">Därför är Python rätt påfart <a class="heading-anchor" href="#darfor-ar-python-ratt-pafart" aria-label="Länk till Därför är Python rätt påfart">#</a></h2>
+<p>Python är redan vanligt inom analys för finansavdelningar, avstämning, datatransformation och driftsverktyg. Ett Python-bibliotek med öppen källkod sänker tröskeln mellan kalkylbladsbaserad betalningsförberedelse och strukturerad ISO 20022-generering. Det ger också team ett sätt att testa betalfiler innan bankens gränssnitt avvisar dem.</p>
+<h2 id="fran-automation-till-produkt">Från automation till produkt <a class="heading-anchor" href="#fran-automation-till-produkt" aria-label="Länk till Från automation till produkt">#</a></h2>
+<p>Artikeln bör positionera Pain001 inte enbart som ett bibliotek, utan som en byggsten för produkter på finansavdelningar: betalningsfabriker, godkännandeflöden, leverantörsportaler för betalningar, ERP-kopplingar och labb för ISO 20022-migrering.</p>
+<h2 id="vad-detta-innebar-per-malgrupp">Vad detta innebär per målgrupp <a class="heading-anchor" href="#vad-detta-innebar-per-malgrupp" aria-label="Länk till Vad detta innebär per målgrupp">#</a></h2>
+<h3 id="for-bankteknikledare">För bankteknikledare <a class="heading-anchor" href="#for-bankteknikledare" aria-label="Länk till För bankteknikledare">#</a></h3>
+<p>Frågan är om projektet kan hjälpa till att omvandla ett strategiskt tryck till en exekverbar arkitektur. Värdet är starkast när förrådet ger team något konkret att granska: gränssnitt, konfiguration, tester, säkerhetsgränser, driftsantaganden och fellägen.</p>
+<h3 id="for-sakerhets-och-riskteam">För säkerhets- och riskteam <a class="heading-anchor" href="#for-sakerhets-och-riskteam" aria-label="Länk till För säkerhets- och riskteam">#</a></h3>
+<p>Projektet bör utvärderas inte bara utifrån funktioner utan utifrån kontrollbevis. Användbar finansiell infrastruktur med öppen källkod visar hur identitet, hemligheter, validering, granskningsloggar, hastighetsgränser, signaturer, härkomst och återhämtning är tänkta att fungera.</p>
+<h3 id="for-utvecklare-och-plattformsingenjorer">För utvecklare och plattformsingenjörer <a class="heading-anchor" href="#for-utvecklare-och-plattformsingenjorer" aria-label="Länk till För utvecklare och plattformsingenjörer">#</a></h3>
+<p>Det viktigaste testet är om projektet minskar den kognitiva belastningen utan att dölja viktiga mekanismer. God öppen källkod ska göra den säkra vägen till den enkla vägen samtidigt som erfarna ingenjörer kan förstå och modifiera implementationen.</p>
+<h3 id="for-bidragsgivare">För bidragsgivare <a class="heading-anchor" href="#for-bidragsgivare" aria-label="Länk till För bidragsgivare">#</a></h3>
+<p>Möjligheten är att stärka projektet där verkliga institutioner behöver trygghet: dokumentation, exempel, konformanstester, härdning av CI, hotmodeller, prestandaprofiler, tillgänglighetskontroller och integrationsguider.</p>
+<h2 id="slutsats">Slutsats <a class="heading-anchor" href="#slutsats" aria-label="Länk till Slutsats">#</a></h2>
+<p>Skälet att skriva om pain001 är att det omvandlar ett bredare branschproblem till något konkret. 2026 behöver bankerna inte mer abstrakt transformationsretorik. De behöver granskningsbara system som visar hur modern infrastruktur kan byggas, säkras, testas och styras. Öppen källkod är det mest trovärdiga sättet att göra det argumentet synligt.</p>
+<h2 id="vanliga-fragor">Vanliga frågor <a class="heading-anchor" href="#vanliga-fragor" aria-label="Länk till Vanliga frågor">#</a></h2>
+<p><strong>Vad är pain.001?</strong></p>
+<p>pain.001 är ett ISO 20022-meddelande för kundbetalningsöverföring som används för att initiera betalningar från en kund till en bank.</p>
+<p><strong>Vem bör använda Pain001?</strong></p>
+<p>Utvecklare, finansavdelningar, fintechs och team för betalningsdrift som behöver generera ISO 20022-filer för betalningsinitiering.</p>
+<p><strong>Varför är öppen källkod användbart här?</strong></p>
+<p>Eftersom implementerare kan inspektera fältkartläggningar, valideringslogik, exempel och integrationsmönster i stället för att behandla genereringen av betalfiler som en svart låda.</p>
+<p><strong>Vad är den största implementeringsrisken?</strong></p>
+<p>Svag källdata. Betalningsautomation fungerar bara när data för borgenär, gäldenär, konto, adress, datum, belopp och betalningsinformation är ren.</p>
+<h2 id="referenser">Referenser <a class="heading-anchor" href="#referenser" aria-label="Länk till Referenser">#</a></h2>
+<ul>
+<li>GitHub, (2026). <a href="https://github.com/sebastienrousseau/pain001" title="pain001-förrådet">pain001-förrådet ⧉</a>.</li>
+<li>SWIFT, (2026). <a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" title="ISO 20022 milstolpe november 2026 strukturerade adresser">ISO 20022 milstolpe i november 2026 för strukturerade adresser ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Senast granskad <time datetime="2026-06-13">2026-06-13</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Om författaren"><img alt="Porträtt av Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/sv/om-mig/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banktekniker — skriver om tillämpad AI, migrering till ISO 20022, postkvantkryptografi för finansiella tjänster och den strukturella omvandlingen av grossistbetalningar.</span><span class="author-credentials">Över 20 års erfarenhet från HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA och Virgin Group. <a href="/sv/om-mig/index.html">Fullständig profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Senast granskad <time datetime="2026-05-29">2026-05-29</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Relaterad läsning</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/sv/2025-09-01-kvantsakra-betalningar-epaa" class="related-media" aria-label="Pagos resistentes a lo cuántico: por qué la industria debe actuar ahora" tabindex="-1"><img alt="Quantum computing circuit board in blue light" src="https://cloudcdn.pro/api/transform?url=/stocks/images/digital-nodes.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="pagos-resistentes-a-lo-cuantico-por-que-la-industria-debe-actuar-ahora"><a href="https://sebastienrousseau.com/sv/2025-09-01-kvantsakra-betalningar-epaa">Pagos resistentes a lo cuántico: por qué la industria debe actuar ahora</a> <a class="heading-anchor" href="#pagos-resistentes-a-lo-cuantico-por-que-la-industria-debe-actuar-ahora" aria-label="Länk till Pagos resistentes a lo cuántico: por qué la industria debe actuar ahora">#</a></h3><p><time datetime="2025-09-01">2025-09-01</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/sv/2023-10-09-shokunin-snabbaste-rust-baserade-statiska-sajtgeneratorn/index.html" class="related-media" aria-label="Static Site Generator: el generador de sitios estáticos más rápido basado en Rust" tabindex="-1"><img alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right" src="https://cloudcdn.pro/api/transform?url=/stocks/images/anna-nekrashevich-8534387.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="static-site-generator-el-generador-de-sitios-estaticos-mas-rapido-basado-en-rust"><a href="https://sebastienrousseau.com/sv/2023-10-09-shokunin-snabbaste-rust-baserade-statiska-sajtgeneratorn/index.html">Static Site Generator: el generador de sitios estáticos más rápido basado en Rust</a> <a class="heading-anchor" href="#static-site-generator-el-generador-de-sitios-estaticos-mas-rapido-basado-en-rust" aria-label="Länk till Static Site Generator: el generador de sitios estáticos más rápido basado en Rust">#</a></h3><p><time datetime="2023-10-09">2023-10-09</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/sv/2018-01-02-blockchain-tekniken-som-spelar-roll-2018/index.html" class="related-media" aria-label="Blockchain: la tecnología que importa en 2018" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/api/transform?url=/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="blockchain-la-tecnologia-que-importa-en-2018"><a href="https://sebastienrousseau.com/sv/2018-01-02-blockchain-tekniken-som-spelar-roll-2018/index.html">Blockchain: la tecnología que importa en 2018</a> <a class="heading-anchor" href="#blockchain-la-tecnologia-que-importa-en-2018" aria-label="Länk till Blockchain: la tecnología que importa en 2018">#</a></h3><p><time datetime="2018-01-02">2018-01-02</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Källor och referenser</h2><ol class="article-sources-list"><li><a href="https://github.com/sebastienrousseau/pain001" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/sebastienrousseau/pain001</span></a></li><li><a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" rel="external noopener nofollow"><span class="source-host">www.swift.com</span><span class="source-path">/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be…</span></a></li></ol></aside><nav class="post-pagination" aria-label="Artikelpaginering"><a class="post-pagination-prev" href="/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">Föregående</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/sv/om-mig/index.html">Om mig</a></li>
+              <li><a href="/sv/kontakt/index.html">Kontakt</a></li>
+              <li><a href="/sv/gjord-med-statisk-sajtgenerator/index.html">Gjord med Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Publikationer</h2>
+            <ul>
+              <li><a href="/sv/artiklar/index.html">Artiklar</a></li>
+              <li><a href="/sv/publikationer/index.html">Publikationer</a></li>
+              <li><a href="/sv/taggar/index.html">Taggar</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Verksamhet</h2>
+            <ul>
+              <li><a href="/sv/projekt/index.html">Projekt</a></li>
+              <li><a href="/sv/spellistor/index.html">Playlists</a></li>
+              <li><a href="/sv/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Kontakt</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Anmälan till nyhetsbrev">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — notas de investigación sobre pagos, IA y criptografía postcuántica. Sin spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="du@bank.se" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Prenumerera</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Sociala länkar">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau en Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau en Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau en LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau en LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau en Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau en Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau en YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau en YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/sv/tillganglighet/index.html">Tillgänglighet</a> ·
+            <a href="/sv/integritet/index.html">Integritet</a> ·
+            <a href="/sv/villkor/index.html">Villkor</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"sv"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"sv"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":887,"about":{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]},"mentions":[{"@type":"Thing","name":"Python","sameAs":["https://en.wikipedia.org/wiki/Python_(programming_language)","https://www.wikidata.org/wiki/Q28865"]},{"@type":"Thing","name":"SEPA","sameAs":["https://en.wikipedia.org/wiki/Single_Euro_Payments_Area","https://www.wikidata.org/wiki/Q286094"]}],"headline":"Automatisera ISO 20022 pain.001-betalningsinitiering med Python (öppen källkod) 2026","description":"Pain001 visar hur Python med öppen källkod automatiserar ISO 20022 kundbetalningsöverföring från CSV, SQLite och applikationsdata med XSD-validering.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp","width":"100vw","height":"100vh","caption":"Bunt eurosedlar — symbol för den företagsbetalningsavsikt som pain.001 omvandlar till strukturerad, bankläsbar ISO 20022-data"},"url":"https://sebastienrousseau.com/sv/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/","datePublished":"2026-06-13T06:06:06+00:00","dateModified":"2026-06-13","inLanguage":"sv","keywords":"pain001, ISO 20022, betalningsinitiering, Python-betalningar, SEPA, kundbetalningsöverföring, öppen källkod bank","articleSection":"Finance","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/sv/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"sv"},"citation":[{"@type":"CreativeWork","url":"https://github.com/sebastienrousseau/pain001"},{"@type":"CreativeWork","url":"https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/sv/"},{"@type":"ListItem","position":3,"name":"Automatisera ISO 20022 pain.001-betalningsinitiering med Python (öppen källkod) 2026","item":"https://sebastienrousseau.com/sv/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Sök">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Sök</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Sök">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Sök i dokumentationen..." autocomplete="off" aria-label="Sök"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> stäng</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigera</span><span><kbd>Enter</kbd> öppna</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Automatisera ISO 20022 pain.001-betalningsinitiering med Python (öppen källkod) 2026","url":"https://sebastienrousseau.com/sv/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/","inLanguage":"sv-SE","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"pain001, ISO 20022, betalningsinitiering, Python-betalningar, SEPA, kundbetalningsöverföring, öppen källkod bank","programmingLanguage":"Python","dependencies":["ISO 20022","SEPA Instant Payments"]}</script></body>
+</html>

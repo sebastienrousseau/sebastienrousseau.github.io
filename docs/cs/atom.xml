@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/cs/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/cs/"/>
   <id>https://sebastienrousseau.com/cs/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T02:09:16+00:00</updated>
+  <entry>
+    <title>Automatizace pain.001 ISO 20022 v open source Pythonu pro rok 2026</title>
+    <link href="https://sebastienrousseau.com/cs/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/"/>
+    <id>https://sebastienrousseau.com/cs/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</id>
+    <updated>2026-05-29T02:09:16+00:00</updated>
+    <published>2026-05-29T02:09:16+00:00</published>
+    <summary>Pain001 ukazuje, jak open source Python automatizuje iniciaci klientského úvěrového převodu ISO 20022 z CSV, SQLite i aplikačních dat.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI Act a suverenita dat: Compliance stack pro banky v roce 2026</title>
     <link href="https://sebastienrousseau.com/cs/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

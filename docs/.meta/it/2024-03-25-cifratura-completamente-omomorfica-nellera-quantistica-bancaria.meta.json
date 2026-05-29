@@ -1,11 +1,11 @@
 {
-  "language": "it-IT",
   "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp",
-  "date": "March 25, 2024",
-  "banner_alt": "Cifratura omomorfica e quantum",
-  "description": "Come la cifratura completamente omomorfica (FHE) rivoluziona la sicurezza dei dati nel banking e nei servizi finanziari, preservando la privacy contro le minacce dell'era quantistica.",
-  "title": "Cifratura completamente omomorfica nell'era quantistica bancaria",
   "keywords": "FHE, cifratura omomorfica, banking, post-quantistica, privacy, calcolo sicuro",
+  "description": "Come la cifratura completamente omomorfica (FHE) rivoluziona la sicurezza dei dati nel banking e nei servizi finanziari, preservando la privacy contro le minacce dell'era quantistica.",
   "subtitle": "Calcolo su dati cifrati come difesa contro le minacce dell'era quantistica",
-  "locale": "it_IT"
+  "banner_alt": "Cifratura omomorfica e quantum",
+  "title": "Cifratura completamente omomorfica nell'era quantistica bancaria",
+  "date": "March 25, 2024",
+  "locale": "it_IT",
+  "language": "it-IT"
 }

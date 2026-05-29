@@ -1,11 +1,11 @@
 {
+  "date": "January 08, 2024",
+  "language": "it-IT",
+  "description": "Come IBM Qiskit e la trasformata quantistica di Fourier ridisegnano l'analisi del rapporto di credito in finanza, offrendo precisione e velocità senza precedenti.",
+  "subtitle": "Come la QFT ridisegna l'analisi dei ratio di credito",
+  "locale": "it_IT",
+  "banner_alt": "Sala di un computer quantistico",
   "keywords": "Qiskit, IBM, quantistico, Fourier, credito, finanza, ratio, ottimizzazione",
   "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
-  "language": "it-IT",
-  "locale": "it_IT",
-  "date": "January 08, 2024",
-  "title": "Ottimizzare l'analisi del rapporto di credito con IBM Qiskit e la trasformata quantistica di Fourier",
-  "banner_alt": "Sala di un computer quantistico",
-  "subtitle": "Come la QFT ridisegna l'analisi dei ratio di credito",
-  "description": "Come IBM Qiskit e la trasformata quantistica di Fourier ridisegnano l'analisi del rapporto di credito in finanza, offrendo precisione e velocità senza precedenti."
+  "title": "Ottimizzare l'analisi del rapporto di credito con IBM Qiskit e la trasformata quantistica di Fourier"
 }

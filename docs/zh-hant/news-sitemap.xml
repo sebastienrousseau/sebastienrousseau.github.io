@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T02:09:17+00:00</news:publication_date>
+    <news:title>2026 年:用開源 Python 自動化 ISO 20022 pain.001 支付發起</news:title>
+    <news:keywords>pain001, ISO 20022, 支付發起, Python 支付, SEPA, 客戶信用轉帳發起, 開源銀行業務</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

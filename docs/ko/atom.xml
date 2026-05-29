@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/ko/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ko/"/>
   <id>https://sebastienrousseau.com/ko/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T02:09:16+00:00</updated>
+  <entry>
+    <title>오픈 소스 Python으로 ISO 20022 pain.001 자동화 2026</title>
+    <link href="https://sebastienrousseau.com/ko/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</id>
+    <updated>2026-05-29T02:09:16+00:00</updated>
+    <published>2026-05-29T02:09:16+00:00</published>
+    <summary>pain001은 오픈 소스 Python으로 CSV, SQLite, 애플리케이션 데이터에서 ISO 20022 고객 신용 이체 시작을 자동화하는 방식을 보여줍니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI 법, 데이터 주권: 2026년 은행을 위한 컴플라이언스 스택</title>
     <link href="https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

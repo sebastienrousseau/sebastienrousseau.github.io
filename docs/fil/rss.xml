@@ -6,8 +6,24 @@
     <description>Mga artikulo sa Filipino: applied AI, ISO 20022 payments, post-quantum cryptography at wholesale-payments transformation.</description>
     <atom:link href="https://sebastienrousseau.com/fil/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fil-PH</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 02:09:16 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Lahat ng karapatan ay nakalaan.</copyright>
+    <item>
+      <title>Pag-automate ng ISO 20022 pain.001 sa Open Source Python noong 2026</title>
+      <link>https://sebastienrousseau.com/fil/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</link>
+      <description>Ipinapakita ng pain001 kung paano i-automate ng open source Python ang ISO 20022 customer credit transfer initiation mula sa CSV, SQLite, at data ng app.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</guid>
+      <pubDate>Fri, 29 May 2026 02:09:16 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp" type="image/webp" length="0"/>
+      <category>pain001</category>
+      <category>ISO 20022</category>
+      <category>pagsisimula ng pagbabayad</category>
+      <category>Python payments</category>
+      <category>SEPA</category>
+      <category>customer credit transfer initiation</category>
+      <category>open source banking</category>
+    </item>
     <item>
       <title>DORA, EU AI Act, at Soberanya ng Data: Compliance Stack ng Bangko 2026</title>
       <link>https://sebastienrousseau.com/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

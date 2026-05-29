@@ -6,8 +6,24 @@
     <description>한국어 기사: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 그리고 도매 결제 인프라의 구조적 변혁.</description>
     <atom:link href="https://sebastienrousseau.com/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 02:09:16 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>오픈 소스 Python으로 ISO 20022 pain.001 자동화 2026</title>
+      <link>https://sebastienrousseau.com/ko/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</link>
+      <description>pain001은 오픈 소스 Python으로 CSV, SQLite, 애플리케이션 데이터에서 ISO 20022 고객 신용 이체 시작을 자동화하는 방식을 보여줍니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</guid>
+      <pubDate>Fri, 29 May 2026 02:09:16 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp" type="image/webp" length="0"/>
+      <category>pain001</category>
+      <category>ISO 20022</category>
+      <category>결제 시작</category>
+      <category>Python 결제</category>
+      <category>SEPA</category>
+      <category>고객 신용 이체 시작</category>
+      <category>오픈 소스 뱅킹</category>
+    </item>
     <item>
       <title>DORA, EU AI 법, 데이터 주권: 2026년 은행을 위한 컴플라이언스 스택</title>
       <link>https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

@@ -105,21 +105,33 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html" title="DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks">
-<img alt="Compliance stack diagram showing DORA resilience, EU AI Act transparency, data sovereignty, cloud concentration risk, audit logs, model governance, and third-party providers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/index.html" title="Automating ISO 20022 pain.001 Payment Initiation with Open-Source Python in 2026">
+<img alt="Stack of euro banknotes — symbolising the corporate payment intent that pain.001 converts into structured, bank-readable ISO 20022 data" src="https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Dora · Eu Ai Act · Data Sovereignty</span>
-<h3><a href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html" title="DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-28">May 28, 2026</time> · Sebastien Rousseau</p>
-<p>DORA, the EU AI Act, GDPR, cloud concentration risk, and data sovereignty converge into one 2026 compliance stack for banks. The strategic question is design discipline — running compliance, AI governance, ICT-resilience evidence, and sovereign-data choices as one architecture, not five parallel programmes.</p>
-<p><a class="pill ghost" href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html" title="DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks">Read the full story</a></p>
+<span class="newsroom-eyebrow">Pain001 · Iso 20022 · Payments</span>
+<h3><a href="/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/index.html" title="Automating ISO 20022 pain.001 Payment Initiation with Open-Source Python in 2026">Automating ISO 20022 pain.001 Payment Initiation with Open-Source Python in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-13">June 13, 2026</time> · Sebastien Rousseau</p>
+<p>pain001 is an open-source Python toolkit for ISO 20022 customer credit transfer initiation — generating bank-grade pain.001 from CSV, SQLite, or in-memory data with validation, schema enforcement, and SEPA-ready defaults.</p>
+<p><a class="pill ghost" href="/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/index.html" title="Automating ISO 20022 pain.001 Payment Initiation with Open-Source Python in 2026">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html" title="DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks">
+<img alt="Compliance stack diagram showing DORA resilience, EU AI Act transparency, data sovereignty, cloud concentration risk, audit logs, model governance, and third-party providers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Dora · Eu Ai Act · Data Sovereignty</span>
+<h3><a href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html" title="DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-28">May 28, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">DORA, the EU AI Act, GDPR, cloud concentration risk, and data sovereignty converge into one 2026 compliance stack for banks. The strategic question is design discipline — running compliance, AI governance, ICT-resilience evidence, and sovereign-data choices as one architecture, not five parallel programmes.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html" title="AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026">

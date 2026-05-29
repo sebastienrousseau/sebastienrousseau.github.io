@@ -6,8 +6,24 @@
     <description>Artículos en español: IA aplicada, pagos ISO 20022, criptografía postcuántica y transformación de los pagos mayoristas.</description>
     <atom:link href="https://sebastienrousseau.com/es/rss.xml" rel="self" type="application/rss+xml"/>
     <language>es-ES</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 02:09:16 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Todos los derechos reservados.</copyright>
+    <item>
+      <title>Automatizar la iniciación de pagos pain.001 ISO 20022 con Python de código abierto en 2026</title>
+      <link>https://sebastienrousseau.com/es/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</link>
+      <description>pain001 demuestra cómo el código abierto en Python puede automatizar la iniciación de transferencia de crédito de cliente ISO 20022 desde CSV, SQLite y datos de aplicación.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</guid>
+      <pubDate>Fri, 29 May 2026 02:09:16 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp" type="image/webp" length="0"/>
+      <category>pain001</category>
+      <category>ISO 20022</category>
+      <category>iniciación de pago</category>
+      <category>pagos en Python</category>
+      <category>SEPA</category>
+      <category>transferencia de crédito de cliente</category>
+      <category>banca de código abierto</category>
+    </item>
     <item>
       <title>DORA, EU AI Act y soberanía de datos: el stack de cumplimiento bancario 2026</title>
       <link>https://sebastienrousseau.com/es/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

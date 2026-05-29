@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sebastienrousseau.com/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/sitemap.xml

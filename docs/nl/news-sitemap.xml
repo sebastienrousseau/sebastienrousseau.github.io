@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/nl/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl-NL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T02:09:16+00:00</news:publication_date>
+    <news:title>ISO 20022 pain.001 betalingsinitiatie automatiseren met open source Python in 2026</news:title>
+    <news:keywords>pain001, ISO 20022, betalingsinitiatie, Python betalingen, SEPA, klant-overboeking, open source banking, treasury automatisering</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>nl-NL</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T06:26:19+00:00</news:publication_date>
+    <news:publication_date>2026-05-29T02:09:16+00:00</news:publication_date>
     <news:title>DORA, EU AI Act en datasoevereiniteit: de compliance-stack 2026 voor banken</news:title>
     <news:keywords>DORA 2026, EU AI Act 2026, datasoevereiniteit banken, operationele veerkracht, concentratierisico cloud, AI-compliance financiële sector, hoog-risico AI</news:keywords>
   </news:news>

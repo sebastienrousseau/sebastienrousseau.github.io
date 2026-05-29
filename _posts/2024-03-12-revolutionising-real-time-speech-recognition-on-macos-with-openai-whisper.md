@@ -120,7 +120,7 @@ last_reviewed: "2026-05-11"
   <li><strong>3. Implications for Users and Developers.</strong> The integration of Whisper and MPS on macOS has significant implications for both end-users and application developers.</li>
   <li><strong>4. Driving Adoption and Innovation.</strong> The modular architecture and Python implementation of this system facilitate integration into existing applications and lower the barrier to entry for developers looking to incorporate speech recognition capabilities.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html">Google Gemma AI: Transforming Open-Source AI Development</a>.</p>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026">Automating ISO 20022 pain.001 Payment Initiation with Open-Source Python in 2026</a>, <a href="https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html">Google Gemma AI: Transforming Open-Source AI Development</a>.</p>
 </aside>
 <!-- lead-end -->
 
@@ -174,10 +174,11 @@ To learn more about the integration of OpenAI Whisper and Metal Performance Shad
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-28">2026-05-28</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-29">2026-05-29</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026" class="related-media" aria-label="Automating ISO 20022 pain.001 Payment Initiation with Open-Source Python in 2026" tabindex="-1"><img alt="Stack of euro banknotes — symbolising the corporate payment intent that pain.001 converts into structured, bank-readable ISO 20022 data" src="https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026">Automating ISO 20022 pain.001 Payment Initiation with Open-Source Python in 2026</a></h3><p><time datetime="2026-06-13">2026-06-13</time></p></footer></article>
 <article class="related-card"><a href="https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html" class="related-media" aria-label="Google Gemma AI: Transforming Open-Source AI Development" tabindex="-1"><img alt="Futuristic blue spaceship with neon lights" src="https://cloudcdn.pro/stocks/images/ai-ship.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html">Google Gemma AI: Transforming Open-Source AI Development</a></h3><p><time datetime="2024-02-26">2024-02-26</time></p></footer></article>
 </div>
 </aside>

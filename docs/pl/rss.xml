@@ -6,8 +6,24 @@
     <description>Artykuły po polsku: stosowana sztuczna inteligencja, płatności ISO 20022, kryptografia postkwantowa oraz transformacja płatności hurtowych.</description>
     <atom:link href="https://sebastienrousseau.com/pl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>pl-PL</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 02:09:16 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Wszelkie prawa zastrzeżone.</copyright>
+    <item>
+      <title>Inicjowanie platnosci ISO 20022 pain.001 w open-source Pythonie w 2026</title>
+      <link>https://sebastienrousseau.com/pl/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</link>
+      <description>pain001 pokazuje, jak open-source Python automatyzuje inicjowanie przelewu kredytowego klienta ISO 20022 z danych CSV, SQLite i aplikacyjnych.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</guid>
+      <pubDate>Fri, 29 May 2026 02:09:16 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp" type="image/webp" length="0"/>
+      <category>pain001</category>
+      <category>ISO 20022</category>
+      <category>inicjowanie platnosci</category>
+      <category>platnosci w Pythonie</category>
+      <category>SEPA</category>
+      <category>inicjowanie przelewu kredytowego klienta</category>
+      <category>bankowosc open source</category>
+    </item>
     <item>
       <title>DORA, EU AI Act i suwerennosc danych: stos zgodnosci bankow w 2026</title>
       <link>https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

@@ -1,11 +1,11 @@
 {
   "keywords": "pain001, iso 20022, автоматизація платежів, скорочення витрат, обробка платежів, файли платежів, ініціювання платежів, pain message, pain message standards, pain message validation",
-  "subtitle": "Blockchain, розподілені реєстри та технологія, яка найбільше важить у 2018 році.",
-  "title": "[UK DRAFT] Blockchain explained, the technology that matters the most",
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
   "locale": "uk_UA",
-  "date": "Jan 02, 2018",
-  "description": "Історія надзвичайної подорожі із захисту цифрових транзакцій за допомогою криптографії з приватним ключем та мереж Peer-to-peer (P2P).",
+  "title": "[UK DRAFT] Blockchain explained, the technology that matters the most",
   "banner_alt": "Вимкнений ноутбук на коричневому дерев'яному столі",
-  "language": "uk-UA"
+  "language": "uk-UA",
+  "description": "Історія надзвичайної подорожі із захисту цифрових транзакцій за допомогою криптографії з приватним ключем та мереж Peer-to-peer (P2P).",
+  "subtitle": "Blockchain, розподілені реєстри та технологія, яка найбільше важить у 2018 році.",
+  "date": "Jan 02, 2018",
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp"
 }

@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/ru/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ru/"/>
   <id>https://sebastienrousseau.com/ru/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T02:09:16+00:00</updated>
+  <entry>
+    <title>Автоматизация инициирования платежа ISO 20022 pain.001 на открытом Python в 2026 году</title>
+    <link href="https://sebastienrousseau.com/ru/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/"/>
+    <id>https://sebastienrousseau.com/ru/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</id>
+    <updated>2026-06-13T06:06:06+00:00</updated>
+    <published>2026-06-13T06:06:06+00:00</published>
+    <summary>pain001 показывает, как открытый Python автоматизирует инициирование клиентского кредитового перевода ISO 20022 из CSV, SQLite и прикладных данных.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, Закон ЕС об ИИ и суверенитет данных: стек комплаенса банков 2026 года</title>
     <link href="https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

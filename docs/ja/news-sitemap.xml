@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ja/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ja-JP</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T02:09:16+00:00</news:publication_date>
+    <news:title>ISO 20022 pain.001 支払開始の Python 自動化 2026</news:title>
+    <news:keywords>pain001, ISO 20022, 支払開始, Python 決済, SEPA, 顧客送金, オープンソース銀行業務</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

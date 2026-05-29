@@ -1,6 +1,25 @@
 {
-  "count": 56,
+  "count": 57,
   "posts": [
+    {
+      "slug": "2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026",
+      "url": "https://sebastienrousseau.com/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/index.html",
+      "date": "2026-06-13",
+      "title": "Automating ISO 20022 pain.001 Payment Initiation with Open-Source Python in 2026",
+      "description": "Pain001 demonstrates how open-source Python can automate ISO 20022 customer credit transfer initiation from CSV, SQLite, and application data.",
+      "keywords": [
+        "pain001",
+        "ISO 20022",
+        "payment initiation",
+        "Python payments",
+        "SEPA",
+        "customer credit transfer initiation",
+        "open-source banking"
+      ],
+      "banner": "https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp",
+      "topics": [],
+      "language": "en-GB"
+    },
     {
       "slug": "2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026",
       "url": "https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html",

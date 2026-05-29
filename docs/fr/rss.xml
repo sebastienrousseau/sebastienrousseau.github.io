@@ -6,8 +6,24 @@
     <description>Articles en français : IA appliquée, paiements ISO 20022, cryptographie post-quantique et transformation des paiements wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/fr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fr-FR</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 02:09:16 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Tous droits réservés.</copyright>
+    <item>
+      <title>Initiation de paiement pain.001 ISO 20022 en Python open source 2026</title>
+      <link>https://sebastienrousseau.com/fr/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</link>
+      <description>pain001 montre comment Python open source automatise l&apos;initiation de paiement ISO 20022 par virement client depuis CSV, SQLite et données applicatives.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</guid>
+      <pubDate>Sat, 13 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp" type="image/webp" length="0"/>
+      <category>pain001</category>
+      <category>ISO 20022</category>
+      <category>initiation de paiement</category>
+      <category>paiements Python</category>
+      <category>SEPA</category>
+      <category>virement client</category>
+      <category>banque open source</category>
+    </item>
     <item>
       <title>DORA, EU AI Act et souveraineté des données : la pile de conformité 2026 pour les banques</title>
       <link>https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

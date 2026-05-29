@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/vi/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/vi/"/>
   <id>https://sebastienrousseau.com/vi/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T02:09:17+00:00</updated>
+  <entry>
+    <title>Tự động hóa khởi tạo thanh toán pain.001 ISO 20022 với Python mã nguồn mở năm 2026</title>
+    <link href="https://sebastienrousseau.com/vi/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/"/>
+    <id>https://sebastienrousseau.com/vi/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</id>
+    <updated>2026-05-29T02:09:17+00:00</updated>
+    <published>2026-05-29T02:09:17+00:00</published>
+    <summary>pain001 cho thấy Python mã nguồn mở có thể tự động hóa khởi tạo chuyển khoản tín dụng khách hàng ISO 20022 từ CSV, SQLite và dữ liệu ứng dụng như thế nào.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, Đạo luật AI EU và chủ quyền dữ liệu: ngăn xếp tuân thủ 2026 cho ngân hàng</title>
     <link href="https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

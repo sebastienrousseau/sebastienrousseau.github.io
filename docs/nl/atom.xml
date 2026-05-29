@@ -4,13 +4,22 @@
   <link href="https://sebastienrousseau.com/nl/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/nl/"/>
   <id>https://sebastienrousseau.com/nl/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T02:09:16+00:00</updated>
+  <entry>
+    <title>ISO 20022 pain.001 betalingsinitiatie automatiseren met open source Python in 2026</title>
+    <link href="https://sebastienrousseau.com/nl/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/"/>
+    <id>https://sebastienrousseau.com/nl/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</id>
+    <updated>2026-05-29T02:09:16+00:00</updated>
+    <published>2026-05-29T02:09:16+00:00</published>
+    <summary>pain001 laat zien hoe open source Python ISO 20022 klant-overboekingen vanuit CSV, SQLite en applicatiedata kan automatiseren met validatie en schema-handhaving.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI Act en datasoevereiniteit: de compliance-stack 2026 voor banken</title>
     <link href="https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>
     <id>https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</id>
-    <updated>2026-05-28T06:26:19+00:00</updated>
-    <published>2026-05-28T06:26:19+00:00</published>
+    <updated>2026-05-29T02:09:16+00:00</updated>
+    <published>2026-05-29T02:09:16+00:00</published>
     <summary>DORA, EU AI Act, GDPR, concentratierisico cloud en datasoevereiniteit smelten in 2026 samen tot één compliance-stack voor banken in Nederland.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>

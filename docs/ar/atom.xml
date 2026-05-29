@@ -4,13 +4,22 @@
   <link href="https://sebastienrousseau.com/ar/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ar/"/>
   <id>https://sebastienrousseau.com/ar/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T02:09:16+00:00</updated>
+  <entry>
+    <title>أتمتة بدء المدفوعات بمعيار ISO 20022 pain.001 ببايثون مفتوح المصدر في 2026</title>
+    <link href="https://sebastienrousseau.com/ar/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/"/>
+    <id>https://sebastienrousseau.com/ar/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</id>
+    <updated>2026-06-13T06:06:06+00:00</updated>
+    <published>2026-06-13T06:06:06+00:00</published>
+    <summary>تُبيِّن pain001 كيف يُمكن لِبايثون المصدر المفتوح أتمتة بدء التحويل الائتماني للعميل وفق ISO 20022 من CSV وSQLite وبيانات التطبيق.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Magnifica Humanitas: قراءة هندسية لأول رسالة بابوية عن الذكاء الاصطناعي</title>
     <link href="https://sebastienrousseau.com/ar/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/"/>
     <id>https://sebastienrousseau.com/ar/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</id>
-    <updated>2026-05-28T06:26:19+00:00</updated>
-    <published>2026-05-28T06:26:19+00:00</published>
+    <updated>2026-05-29T02:09:16+00:00</updated>
+    <published>2026-05-29T02:09:16+00:00</published>
     <summary>في 25 مايو 2026 أصدر البابا ليون الرابع عشر Magnifica Humanitas، أول رسالة بابوية مخصّصة للذكاء الاصطناعي. قراءتها من داخل قطاع التقنية تكشف إطارًا أخلاقيًا متماسكًا لعصر الذكاء الاصطناعي والكم، وتنتهي إلى الرجاء لا الخوف.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>

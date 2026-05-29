@@ -6,8 +6,24 @@
     <description>Artiklar på svenska: tillämpad AI, ISO 20022-betalningar, postkvantkryptografi och transformationen av grossistbetalningar.</description>
     <atom:link href="https://sebastienrousseau.com/sv/rss.xml" rel="self" type="application/rss+xml"/>
     <language>sv-SE</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 02:09:16 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alla rättigheter förbehållna.</copyright>
+    <item>
+      <title>Automatisera ISO 20022 pain.001-betalningsinitiering med Python (öppen källkod) 2026</title>
+      <link>https://sebastienrousseau.com/sv/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</link>
+      <description>Pain001 visar hur Python med öppen källkod automatiserar ISO 20022 kundbetalningsöverföring från CSV, SQLite och applikationsdata med XSD-validering.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</guid>
+      <pubDate>Fri, 29 May 2026 02:09:16 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp" type="image/webp" length="0"/>
+      <category>pain001</category>
+      <category>ISO 20022</category>
+      <category>betalningsinitiering</category>
+      <category>Python-betalningar</category>
+      <category>SEPA</category>
+      <category>kundbetalningsöverföring</category>
+      <category>öppen källkod bank</category>
+    </item>
     <item>
       <title>DORA, EU:s AI-förordning och datasuveränitet: bankernas efterlevnadsstack 2026</title>
       <link>https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

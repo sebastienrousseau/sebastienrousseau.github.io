@@ -1,11 +1,11 @@
 {
+  "title": "Static Site Generator: Fastest Rust-Based SSG",
   "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
-  "date": "Oct 09, 2023",
+  "description": "Vă oferim posibilitatea de a crea site-uri web statice cu impact ridicat, cu posibilități infinite, scalabilitate nelimitată și o prezență web cu adevărat unică pe care o controlați.",
+  "locale": "ro_RO",
   "banner_alt": "Laptop oprit pe o masă albă cu un pahar cu apă în stânga și un pix, un carnet și o plantă în dreapta",
   "language": "ro-RO",
-  "title": "Static Site Generator: Fastest Rust-Based SSG",
-  "description": "Vă oferim posibilitatea de a crea site-uri web statice cu impact ridicat, cu posibilități infinite, scalabilitate nelimitată și o prezență web cu adevărat unică pe care o controlați.",
+  "date": "Oct 09, 2023",
   "subtitle": "Static Site Generator, cel mai rapid generator de site-uri statice bazat pe Rust pentru site-uri web cu impact ridicat.",
-  "keywords": "pain001, iso 20022, automatizarea plăților, reducerea costurilor, procesarea plăților, fișiere de plată, inițierea plăților, pain message, pain message standards, pain message validation",
-  "locale": "ro_RO"
+  "keywords": "pain001, iso 20022, automatizarea plăților, reducerea costurilor, procesarea plăților, fișiere de plată, inițierea plăților, pain message, pain message standards, pain message validation"
 }

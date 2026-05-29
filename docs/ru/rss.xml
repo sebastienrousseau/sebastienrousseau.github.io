@@ -6,8 +6,24 @@
     <description>Статьи на русском языке: прикладной ИИ, платежи ISO 20022, постквантовая криптография и трансформация оптовых платежей.</description>
     <atom:link href="https://sebastienrousseau.com/ru/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ru-RU</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 02:09:16 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Все права защищены.</copyright>
+    <item>
+      <title>Автоматизация инициирования платежа ISO 20022 pain.001 на открытом Python в 2026 году</title>
+      <link>https://sebastienrousseau.com/ru/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</link>
+      <description>pain001 показывает, как открытый Python автоматизирует инициирование клиентского кредитового перевода ISO 20022 из CSV, SQLite и прикладных данных.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-06-13-pain001-iso-20022-payment-initiation-open-source-python-2026/</guid>
+      <pubDate>Sat, 13 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp" type="image/webp" length="0"/>
+      <category>pain001</category>
+      <category>ISO 20022</category>
+      <category>инициирование платежа</category>
+      <category>Python для платежей</category>
+      <category>SEPA</category>
+      <category>инициирование клиентского кредитового перевода</category>
+      <category>открытый банкинг</category>
+    </item>
     <item>
       <title>DORA, Закон ЕС об ИИ и суверенитет данных: стек комплаенса банков 2026 года</title>
       <link>https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
