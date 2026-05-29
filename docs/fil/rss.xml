@@ -6,8 +6,28 @@
     <description>Mga artikulo sa Filipino: applied AI, ISO 20022 payments, post-quantum cryptography at wholesale-payments transformation.</description>
     <atom:link href="https://sebastienrousseau.com/fil/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fil-PH</language>
-    <lastBuildDate>Fri, 29 May 2026 05:57:25 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 21:41:13 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Lahat ng karapatan ay nakalaan.</copyright>
+    <item>
+      <title>Digital Assets sa 2026: Transisyon ng Imprastraktura na Hindi Dapat Antalahin</title>
+      <link>https://sebastienrousseau.com/fil/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>Hindi na inobasyon ang digital assets, kundi tanong ng arkitektura ng settlement, custody, at balance sheet. Disenyo ng imprastraktura sa ilalim ng istrukturang kawalang-katiyakan ang estratehikong gawain ng bangko.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Fri, 29 May 2026 21:41:13 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>digital assets 2026</category>
+      <category>tokenized real-world assets</category>
+      <category>RWA</category>
+      <category>stablecoins banking</category>
+      <category>tokenized deposits</category>
+      <category>digital asset custody</category>
+      <category>DLT banking</category>
+      <category>imprastraktura ng settlement</category>
+      <category>mobility ng kolateral</category>
+      <category>programmable money</category>
+      <category>estratehiya ng bangko sa digital assets</category>
+    </item>
     <item>
       <title>ISO 20022 Pagkatapos ng Migration: Payment Data tungo sa Produkto ng Bangko 2026</title>
       <link>https://sebastienrousseau.com/fil/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>

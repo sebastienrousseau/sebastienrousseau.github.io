@@ -6,14 +6,14 @@
     <description>Artigos em português: IA aplicada, pagamentos ISO 20022, criptografia pós-quântica e transformação dos pagamentos de atacado.</description>
     <atom:link href="https://sebastienrousseau.com/pt-br/rss.xml" rel="self" type="application/rss+xml"/>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 29 May 2026 05:57:25 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 21:41:13 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Todos os direitos reservados.</copyright>
     <item>
       <title>ISO 20022 Pós-Migração: Transformando Dados de Pagamento em Produtos Bancários em 2026</title>
       <link>https://sebastienrousseau.com/pt-br/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
       <description>ISO 20022 após a migração é uma oportunidade de produto de dados. Endereços estruturados, códigos de finalidade, detalhes de fatura, mensagens de investigação e eventos de status mais ricos viram produtos de conciliação, fraude, liquidez, compliance e analytics.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
-      <pubDate>Fri, 29 May 2026 05:57:25 +0000</pubDate>
+      <pubDate>Fri, 29 May 2026 21:41:13 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>ISO 20022 2026</category>
@@ -25,6 +25,25 @@
       <category>conciliação</category>
       <category>triagem de sanções</category>
       <category>detecção de fraude</category>
+    </item>
+    <item>
+      <title>Ativos Digitais em 2026: A Transição de Infraestrutura dos Bancos</title>
+      <link>https://sebastienrousseau.com/pt-br/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>Ativos digitais deixaram de ser uma aposta de inovação. São uma questão de arquitetura de liquidação, custódia e balanço. A tarefa estratégica dos bancos é projetar infraestrutura sob incerteza estrutural.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>ativos digitais 2026</category>
+      <category>ativos reais tokenizados</category>
+      <category>stablecoins bancos</category>
+      <category>depósitos tokenizados</category>
+      <category>custódia de ativos digitais</category>
+      <category>DLT bancário</category>
+      <category>infraestrutura de liquidação</category>
+      <category>mobilidade de colateral</category>
+      <category>moeda programável</category>
+      <category>estratégia bancária ativos digitais</category>
     </item>
     <item>
       <title>DORA, EU AI Act e soberania de dados: a stack de conformidade bancária 2026</title>

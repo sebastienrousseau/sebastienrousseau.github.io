@@ -1,11 +1,11 @@
 {
-  "date": "Nov 19, 2023",
-  "title": "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age",
-  "description": "Descoperiți cum CRYSTALS-Kyber, un algoritm de criptografie rezistent la calculul cuantic, revoluționează criptografia și ne pregătește pentru era cuantică.",
-  "language": "ro-RO",
   "keywords": "calcul cuantic, criptografie rezistentă la cuantică, CRYSTALS-Kyber, criptografie, securitate, banking, financiar, criptare, protecția datelor, rezistent la viitor",
-  "subtitle": "CRYSTALS-Kyber, standardul NIST FIPS 203 pentru încapsularea cheilor post-cuantice.",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
+  "language": "ro-RO",
+  "description": "Descoperiți cum CRYSTALS-Kyber, un algoritm de criptografie rezistent la calculul cuantic, revoluționează criptografia și ne pregătește pentru era cuantică.",
+  "date": "Nov 19, 2023",
   "banner_alt": "Un calculator cuantic modern și elegant",
-  "locale": "ro_RO"
+  "subtitle": "CRYSTALS-Kyber, standardul NIST FIPS 203 pentru încapsularea cheilor post-cuantice.",
+  "locale": "ro_RO",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
+  "title": "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
 }

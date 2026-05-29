@@ -1,12 +1,12 @@
 {
-  "date": "October 26, 2023",
   "language": "ja-JP",
   "description": "libmake は、高品質な Rust ライブラリを迅速に作成するためのコードジェネレータで、定型コードを排除し、ベストプラクティスを組み込みます。",
+  "title": "libmake:反復作業を削減し、高品質な Rust ライブラリを構築するコードジェネレータ",
+  "date": "October 26, 2023",
   "banner": "https://cloudcdn.pro/stocks/images/danial-igdery-FCHlYvR5gJI-unsplash.webp",
-  "subtitle": "ライブラリ作成の決まり仕事を排除するコードジェネレータ",
-  "locale": "ja_JP",
   "last_reviewed": "2026-05-11",
-  "banner_alt": "コードエディタを使用する開発者",
   "keywords": "libmake, コードジェネレータ, Rust, Cargo, ライブラリ, テンプレート, 開発者ツール, ベストプラクティス",
-  "title": "libmake:反復作業を削減し、高品質な Rust ライブラリを構築するコードジェネレータ"
+  "locale": "ja_JP",
+  "subtitle": "ライブラリ作成の決まり仕事を排除するコードジェネレータ",
+  "banner_alt": "コードエディタを使用する開発者"
 }

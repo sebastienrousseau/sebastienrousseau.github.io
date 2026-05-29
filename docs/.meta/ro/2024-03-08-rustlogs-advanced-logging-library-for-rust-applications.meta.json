@@ -1,11 +1,11 @@
 {
-  "title": "RustLogs (RLG): Structured Logging Library for Rust",
-  "locale": "ro_RO",
-  "date": "Mar 08, 2024",
-  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
-  "keywords": "bibliotecă de logging Rust, logging asincron Rust, formate structurate de jurnal, depanare aplicații Rust, logging personalizabil Rust, instrumente de dezvoltare Rust, funcționalități RustLogs RLG, logging eficient Rust, integrare RustLogs, documentație RustLogs",
-  "language": "ro-RO",
-  "subtitle": "Optimizează-ți fluxul de lucru pentru logging în Rust",
   "banner_alt": "Banner pentru RustLogs (RLG)",
-  "description": "Descoperă RustLogs (RLG), biblioteca flexibilă de logging pentru Rust, cu formate structurate de jurnal, logging asincron și opțiuni extinse de personalizare."
+  "locale": "ro_RO",
+  "language": "ro-RO",
+  "title": "RustLogs (RLG): Structured Logging Library for Rust",
+  "keywords": "bibliotecă de logging Rust, logging asincron Rust, formate structurate de jurnal, depanare aplicații Rust, logging personalizabil Rust, instrumente de dezvoltare Rust, funcționalități RustLogs RLG, logging eficient Rust, integrare RustLogs, documentație RustLogs",
+  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
+  "subtitle": "Optimizează-ți fluxul de lucru pentru logging în Rust",
+  "description": "Descoperă RustLogs (RLG), biblioteca flexibilă de logging pentru Rust, cu formate structurate de jurnal, logging asincron și opțiuni extinse de personalizare.",
+  "date": "Mar 08, 2024"
 }

@@ -6,7 +6,7 @@
     <description>日本語の記事:応用AI、ISO 20022 決済、ポスト量子暗号、ホールセール決済の構造変革。</description>
     <atom:link href="https://sebastienrousseau.com/ja/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ja-JP</language>
-    <lastBuildDate>Fri, 29 May 2026 05:57:25 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 21:41:13 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
     <item>
       <title>ISO 20022 移行後:決済データを 2026 年の銀行プロダクトに変える</title>
@@ -28,6 +28,25 @@
       <category>pacs.008</category>
       <category>pain.001</category>
       <category>SWIFT gpi</category>
+    </item>
+    <item>
+      <title>デジタル資産 2026:銀行が遅らせられないインフラ移行</title>
+      <link>https://sebastienrousseau.com/ja/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>デジタル資産はもはやイノベーションへの賭けではありません。決済、カストディ、バランスシートのアーキテクチャに関する問いです。銀行の戦略課題は構造的不確実性下でのインフラ設計です。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>デジタル資産 2026</category>
+      <category>トークン化された現実資産</category>
+      <category>ステーブルコイン 銀行</category>
+      <category>トークン化預金</category>
+      <category>デジタル資産カストディ</category>
+      <category>DLT 銀行</category>
+      <category>決済インフラ</category>
+      <category>担保の移動性</category>
+      <category>プログラマブル・マネー</category>
+      <category>銀行戦略 デジタル資産</category>
     </item>
     <item>
       <title>DORA、EU AI Act、データ主権:2026 年銀行向けコンプライアンス・スタック</title>

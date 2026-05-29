@@ -1,5 +1,5 @@
 {
-  "count": 57,
+  "count": 58,
   "posts": [
     {
       "slug": "2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026",
@@ -20,6 +20,30 @@
       ],
       "banner": "https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80",
       "topics": [],
+      "language": "en-GB"
+    },
+    {
+      "slug": "2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026",
+      "url": "https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/index.html",
+      "date": "2026-05-28",
+      "title": "Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay",
+      "description": "Digital assets are no longer an innovation bet. They are a settlement, custody, and balance-sheet architecture question. The strategic task for banks is infrastructure design under structural uncertainty.",
+      "keywords": [
+        "digital assets 2026",
+        "tokenised real-world assets",
+        "stablecoins banking",
+        "tokenised deposits",
+        "digital asset custody",
+        "DLT banking",
+        "settlement infrastructure",
+        "collateral mobility",
+        "programmable money",
+        "bank strategy digital assets"
+      ],
+      "banner": "https://cloudcdn.pro/stocks/images/corporate-finance.webp",
+      "topics": [
+        "blockchain-digital-assets"
+      ],
       "language": "en-GB"
     },
     {

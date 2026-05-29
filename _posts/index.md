@@ -259,6 +259,18 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/index.html" title="Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay">
+<img alt="Digital asset infrastructure diagram showing tokenised real-world assets, stablecoins, tokenised deposits, custody, settlement, collateral mobility, and bank platform layers" src="https://cloudcdn.pro/stocks/images/corporate-finance.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Digital Assets · Tokenisation · Stablecoins</span>
+<h3><a href="/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/index.html">Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-28">May 28, 2026</time></p>
+<p class="newsroom-excerpt">Digital assets are no longer an innovation bet. They are a settlement, custody, and balance-sheet architecture question. Crypto is a ~$3 trillion asset class, stablecoins have reached ~$300 billion, and tokenised real-world assets grew ~300% in 2025. The strategic task for banks in 2026 is not whether to engage but how to design infrastructure, controls, and governance for a world where money, assets, and settlement become programmable.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html" title="AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026">
 <img alt="AI payments operating system diagram showing fraud scoring, multi-rail routing, liquidity forecasting, ISO 20022 data, compliance screening, and exception repair" src="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -291,18 +303,6 @@ site_software: "Static Site Generator, Rust"
 <h3><a href="/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html">Stablecoins vs Tokenised Deposits in 2026: What Banks Actually Need to Defend</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-26">May 26, 2026</time></p>
 <p class="newsroom-excerpt">Stablecoins and tokenised deposits converge around programmable settlement but diverge on balance-sheet, legal, liquidity, and trust models. The 2026 strategic question for banks is design discipline — which money model carries which client workflow — and how to defend deposit franchise, settlement role, and regulated brand against private-issuer competition.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html" title="Programmable Liquidity in 2026: AI, Tokenised Deposits, and Real-Time Treasury Orchestration">
-<img alt="Programmable liquidity architecture diagram showing treasury systems, AI forecasting, tokenised deposits, real-time rails, stablecoins, virtual accounts, FX, and collateral mobility" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Programmable Liquidity · AI Treasury · Tokenised Deposits</span>
-<h3><a href="/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html">Programmable Liquidity in 2026: AI, Tokenised Deposits, and Real-Time Treasury Orchestration</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-25">May 25, 2026</time></p>
-<p class="newsroom-excerpt">Programmable liquidity in 2026 connects AI forecasting, tokenised deposits, real-time rails, virtual accounts, stablecoins, and TMS into one orchestration layer for working capital. The strategic question for banks is design discipline: which data, rails, controls, liabilities, and client workflows belong together — and how to evidence the orchestration to clients and supervisors.</p>
 </div>
 </article>
 

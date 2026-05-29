@@ -6,7 +6,7 @@
     <description>Awọn akọle Yorùbá: AI tó wúlò, ìsanwó ISO 20022, kírípítógíráfì lẹ́yìn-kuántọ́mù, àti àtúnṣe ètò ìsanwó ńláńlá.</description>
     <atom:link href="https://sebastienrousseau.com/yo/rss.xml" rel="self" type="application/rss+xml"/>
     <language>yo-NG</language>
-    <lastBuildDate>Fri, 29 May 2026 05:57:25 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 21:41:13 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Gbogbo ẹtọ ti wa ni ipamọ.</copyright>
     <item>
       <title>ISO 20022 Lẹ́yìn Ìṣíkiri: Yíyí Dátà Ìsanwó Padà Di Ọjà Báńkì ní 2026</title>
@@ -25,6 +25,25 @@
       <category>ìbáramu</category>
       <category>àyẹ̀wò ìfòfindè</category>
       <category>ìṣàwárí àdàmọ̀</category>
+    </item>
+    <item>
+      <title>Àwọn Dúkìá Dijítà 2026: Ìyípadà Ìkọ́lé Tí Bánkì Kò Lè Sún Sẹ́yìn</title>
+      <link>https://sebastienrousseau.com/yo/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>Àwọn dúkìá dijítà ti di ìbéèrè ìkọ́lé ìsanwó ìparí, ìṣọ́, àti ìwé ìwọ̀ntúnwọ̀nsì — kìí ṣe ìmúdàgbà mọ́. Iṣẹ́ ìlànà fún àwọn bánkì ní 2026 ni ètò ìpilẹ̀ṣẹ̀ lábẹ́ àìdánilójú.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>àwọn dúkìá dijítà 2026</category>
+      <category>RWA tí a ti tokeníní</category>
+      <category>stablecoins bánkì</category>
+      <category>ìfowópamọ́ tí a ti tokeníní</category>
+      <category>ìṣọ́ dúkìá dijítà</category>
+      <category>DLT bánkì</category>
+      <category>ìkọ́lé ìsanwó ìparí</category>
+      <category>ìṣipopadà collateral</category>
+      <category>owó alágbára-ètò</category>
+      <category>ìlànà bánkì àwọn dúkìá dijítà</category>
     </item>
     <item>
       <title>DORA, EU AI Act, àti Ọba Lori Dátà: Akopọ Ìbámu 2026 fún Báńkì</title>

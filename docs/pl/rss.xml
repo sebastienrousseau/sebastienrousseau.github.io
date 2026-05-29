@@ -6,8 +6,27 @@
     <description>Artykuły po polsku: stosowana sztuczna inteligencja, płatności ISO 20022, kryptografia postkwantowa oraz transformacja płatności hurtowych.</description>
     <atom:link href="https://sebastienrousseau.com/pl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>pl-PL</language>
-    <lastBuildDate>Fri, 29 May 2026 05:57:25 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 21:41:13 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Wszelkie prawa zastrzeżone.</copyright>
+    <item>
+      <title>Aktywa cyfrowe w 2026: infrastrukturalne przejscie, ktorego banki nie odlozą</title>
+      <link>https://sebastienrousseau.com/pl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>Aktywa cyfrowe nie sa juz zakladem innowacyjnym. To pytanie o architekture rozliczenia, przechowywania i bilansu. Zadanie strategiczne bankow to projekt infrastruktury w warunkach strukturalnej niepewnosci.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Fri, 29 May 2026 21:41:13 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>aktywa cyfrowe 2026</category>
+      <category>stokenizowane aktywa rzeczywiste</category>
+      <category>stablecoiny bankowosc</category>
+      <category>stokenizowane depozyty</category>
+      <category>przechowywanie aktywow cyfrowych</category>
+      <category>DLT bankowosc</category>
+      <category>infrastruktura rozliczeniowa</category>
+      <category>mobilnosc zabezpieczen</category>
+      <category>pieniadz programowalny</category>
+      <category>strategia banku aktywa cyfrowe</category>
+    </item>
     <item>
       <title>ISO 20022 po migracji: dane płatnicze jako produkty bankowe w 2026</title>
       <link>https://sebastienrousseau.com/pl/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>

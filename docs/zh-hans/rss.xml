@@ -6,7 +6,7 @@
     <description>中文文章：应用人工智能、ISO 20022 支付、后量子密码学以及批发支付的转型。</description>
     <atom:link href="https://sebastienrousseau.com/zh-hans/rss.xml" rel="self" type="application/rss+xml"/>
     <language>zh-Hans</language>
-    <lastBuildDate>Fri, 29 May 2026 05:57:25 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 21:41:13 +0000</lastBuildDate>
     <copyright>© 版权所有 2007 - 2026 - Sebastien Rousseau。保留所有权利。</copyright>
     <item>
       <title>ISO 20022 迁移之后：把支付数据做成 2026 银行产品</title>
@@ -25,6 +25,25 @@
       <category>对账</category>
       <category>制裁筛查</category>
       <category>欺诈检测</category>
+    </item>
+    <item>
+      <title>数字资产 2026：基础设施转型不可缓</title>
+      <link>https://sebastienrousseau.com/zh-hans/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>数字资产已不再是创新押注，而是关于结算、托管与资产负债表的架构问题；银行的战略任务是在结构性不确定中设计基础设施。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>数字资产 2026</category>
+      <category>代币化现实资产</category>
+      <category>稳定币银行</category>
+      <category>代币化存款</category>
+      <category>数字资产托管</category>
+      <category>DLT 银行</category>
+      <category>结算基础设施</category>
+      <category>抵押品流动性</category>
+      <category>可编程货币</category>
+      <category>银行数字资产战略</category>
     </item>
     <item>
       <title>DORA、EU AI 法案与数据主权：银行 2026 合规栈</title>
