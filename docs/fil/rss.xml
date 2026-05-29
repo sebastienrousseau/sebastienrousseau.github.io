@@ -6,8 +6,31 @@
     <description>Mga artikulo sa Filipino: applied AI, ISO 20022 payments, post-quantum cryptography at wholesale-payments transformation.</description>
     <atom:link href="https://sebastienrousseau.com/fil/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fil-PH</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 05:57:25 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Lahat ng karapatan ay nakalaan.</copyright>
+    <item>
+      <title>ISO 20022 Pagkatapos ng Migration: Payment Data tungo sa Produkto ng Bangko 2026</title>
+      <link>https://sebastienrousseau.com/fil/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>Pagkatapos ng migration, ang ISO 20022 ay isang pagkakataon para sa mga payment data product — structured address, purpose code, impormasyon ng remittance, investigation message, at reconciliation bilang produkto ng bangko.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>structured address</category>
+      <category>CBPR+</category>
+      <category>mga payment data product</category>
+      <category>purpose code</category>
+      <category>corporate treasury</category>
+      <category>reconciliation</category>
+      <category>sanctions screening</category>
+      <category>fraud detection</category>
+      <category>pacs.008</category>
+      <category>pain.001</category>
+      <category>SWIFT gpi</category>
+      <category>SEPA Instant</category>
+      <category>FedNow</category>
+    </item>
     <item>
       <title>DORA, EU AI Act, at Soberanya ng Data: Compliance Stack ng Bangko 2026</title>
       <link>https://sebastienrousseau.com/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

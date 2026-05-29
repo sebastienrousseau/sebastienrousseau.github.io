@@ -1,11 +1,11 @@
 {
-  "title": "Trendy AI 2024: spostrzeżenia i przewidywania",
-  "keywords": "AI, trendy 2024, LLM, agenci AI, multimodalne, regulacje, fintech",
+  "banner_alt": "Reprezentacja trendów AI na rok 2024",
   "description": "Trendy 2024 w sztucznej inteligencji: agenci, multimodalne LLM-y, regulacja i AI w przedsiębiorstwach.",
-  "language": "pl-PL",
-  "date": "Jan 08, 2024",
   "banner": "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp",
   "subtitle": "Co czeka sztuczną inteligencję w 2024 i dalej",
-  "banner_alt": "Reprezentacja trendów AI na rok 2024",
+  "date": "Jan 08, 2024",
+  "keywords": "AI, trendy 2024, LLM, agenci AI, multimodalne, regulacje, fintech",
+  "title": "Trendy AI 2024: spostrzeżenia i przewidywania",
+  "language": "pl-PL",
   "locale": "pl_PL"
 }

@@ -6,8 +6,26 @@
     <description>Artiklar på svenska: tillämpad AI, ISO 20022-betalningar, postkvantkryptografi och transformationen av grossistbetalningar.</description>
     <atom:link href="https://sebastienrousseau.com/sv/rss.xml" rel="self" type="application/rss+xml"/>
     <language>sv-SE</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 05:57:25 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alla rättigheter förbehållna.</copyright>
+    <item>
+      <title>ISO 20022 efter migreringen: betaldata som bankprodukter 2026</title>
+      <link>https://sebastienrousseau.com/sv/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 efter migreringen är en möjlighet för betaldata-produkter. Strukturerade adresser, ändamålskoder, fakturadetaljer, utredningsmeddelanden och rikare statushändelser kan bli produkter för avstämning, bedrägeri, likviditet, regelefterlevnad och analys.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>strukturerad adress</category>
+      <category>CBPR+</category>
+      <category>betaldata-produkter</category>
+      <category>ändamålskoder</category>
+      <category>företagskassör</category>
+      <category>avstämning</category>
+      <category>sanktionsscreening</category>
+      <category>bedrägeridetektering</category>
+    </item>
     <item>
       <title>DORA, EU:s AI-förordning och datasuveränitet: bankernas efterlevnadsstack 2026</title>
       <link>https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

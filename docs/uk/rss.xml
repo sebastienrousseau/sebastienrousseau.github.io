@@ -6,8 +6,26 @@
     <description>Статті українською: прикладний ШІ, платежі ISO 20022, постквантова криптографія та трансформація оптових платежів.</description>
     <atom:link href="https://sebastienrousseau.com/uk/rss.xml" rel="self" type="application/rss+xml"/>
     <language>uk-UA</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 05:57:25 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Усі права захищено.</copyright>
+    <item>
+      <title>ISO 20022 після міграції: перетворення платіжних даних на банківські продукти у 2026</title>
+      <link>https://sebastienrousseau.com/uk/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 після міграції — це шанс на продукт даних. Структуровані адреси, коди призначення, реквізити рахунків, запити-розслідування та збагачені події статусу стають продуктами звіряння, шахрайства, ліквідності й комплаєнсу.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>структурована адреса</category>
+      <category>CBPR+</category>
+      <category>продукти платіжних даних</category>
+      <category>коди призначення</category>
+      <category>корпоративне казначейство</category>
+      <category>звіряння</category>
+      <category>скринінг санкцій</category>
+      <category>виявлення шахрайства</category>
+    </item>
     <item>
       <title>DORA, EU AI Act і суверенітет даних: стек банківського комплаєнсу 2026</title>
       <link>https://sebastienrousseau.com/uk/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

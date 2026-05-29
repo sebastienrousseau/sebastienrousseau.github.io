@@ -6,8 +6,31 @@
     <description>Articole în limba română: IA aplicată, plăți ISO 20022, criptografie post-cuantică și transformarea plăților wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/ro/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ro-RO</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 05:57:25 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Toate drepturile rezervate.</copyright>
+    <item>
+      <title>ISO 20022 după migrare: transformarea datelor de plată în produse bancare în 2026</title>
+      <link>https://sebastienrousseau.com/ro/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 după migrare devine șansa unui produs de date: adrese structurate, coduri de scop, detalii de factură, mesaje de investigație și evenimente bogate de stare se transformă în produse de reconciliere, fraudă, lichiditate și conformitate.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 05:57:25 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>adresă structurată</category>
+      <category>CBPR+</category>
+      <category>produse de date de plată</category>
+      <category>coduri de scop</category>
+      <category>trezorerie corporativă</category>
+      <category>reconciliere</category>
+      <category>screening de sancțiuni</category>
+      <category>detectarea fraudei</category>
+      <category>pacs.008</category>
+      <category>pain.001</category>
+      <category>SWIFT gpi</category>
+      <category>SEPA Instant</category>
+      <category>FedNow</category>
+    </item>
     <item>
       <title>DORA, EU AI Act și suveranitatea datelor: stiva de conformitate bancară 2026</title>
       <link>https://sebastienrousseau.com/ro/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

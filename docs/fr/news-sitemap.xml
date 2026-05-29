@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/fr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fr-FR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T05:57:25+00:00</news:publication_date>
+    <news:title>ISO 20022 après migration : transformer la donnée de paiement en produits bancaires en 2026</news:title>
+    <news:keywords>ISO 20022 2026, adresse structurée, CBPR+, produits de données de paiement, codes d&apos;objet, trésorerie d&apos;entreprise, rapprochement, filtrage sanctions, détection fraude</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

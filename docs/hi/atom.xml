@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/hi/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/hi/"/>
   <id>https://sebastienrousseau.com/hi/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T05:57:25+00:00</updated>
+  <entry>
+    <title>ISO 20022 माइग्रेशन के बाद: भुगतान डेटा को 2026 में बैंकिंग उत्पादों में बदलना</title>
+    <link href="https://sebastienrousseau.com/hi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"/>
+    <id>https://sebastienrousseau.com/hi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</id>
+    <updated>2026-05-29T06:06:06+00:00</updated>
+    <published>2026-05-29T06:06:06+00:00</published>
+    <summary>ISO 20022 माइग्रेशन के बाद डेटा उत्पाद अवसर है। संरचित पते, उद्देश्य कोड, चालान विवरण और समृद्ध स्थिति घटनाएँ मिलान, धोखाधड़ी, तरलता और अनुपालन उत्पाद बनती हैं।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI अधिनियम और डेटा संप्रभुता: बैंकों का 2026 अनुपालन स्टैक</title>
     <link href="https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

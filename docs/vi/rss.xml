@@ -6,8 +6,28 @@
     <description>Bài viết tiếng Việt: AI ứng dụng, thanh toán ISO 20022, mật mã hậu lượng tử và chuyển đổi thanh toán bán buôn.</description>
     <atom:link href="https://sebastienrousseau.com/vi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>vi-VN</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 05:57:25 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Đã đăng ký bản quyền.</copyright>
+    <item>
+      <title>ISO 20022 Sau Di Trú: Biến Dữ Liệu Thanh Toán Thành Sản Phẩm Ngân Hàng 2026</title>
+      <link>https://sebastienrousseau.com/vi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 sau di trú là cơ hội sản phẩm dữ liệu: địa chỉ có cấu trúc, mã mục đích, chi tiết hóa đơn, tin nhắn điều tra và sự kiện trạng thái thanh toán phong phú trở thành sản phẩm đối soát, gian lận, thanh khoản và tuân thủ.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 05:57:25 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>địa chỉ có cấu trúc</category>
+      <category>CBPR+</category>
+      <category>sản phẩm dữ liệu thanh toán</category>
+      <category>mã mục đích thanh toán</category>
+      <category>ngân quỹ doanh nghiệp</category>
+      <category>đối soát</category>
+      <category>sàng lọc trừng phạt</category>
+      <category>phát hiện gian lận</category>
+      <category>pacs.008</category>
+      <category>pain.001</category>
+    </item>
     <item>
       <title>DORA, Đạo luật AI EU và chủ quyền dữ liệu: ngăn xếp tuân thủ 2026 cho ngân hàng</title>
       <link>https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

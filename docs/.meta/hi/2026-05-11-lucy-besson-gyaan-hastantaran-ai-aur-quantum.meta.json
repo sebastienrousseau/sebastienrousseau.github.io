@@ -1,11 +1,11 @@
 {
-  "language": "hi-IN",
-  "banner_alt": "मेंटरिंग और ज्ञान-हस्तांतरण की प्रतीकात्मक छवि",
   "description": "AI और क्वांटम पर पीढ़ीगत ज्ञान-हस्तांतरण की एक यात्रा — Lucy Besson की सीख।",
-  "keywords": "Lucy Besson, ज्ञान हस्तांतरण, AI, क्वांटम, मेंटरिंग, करियर, STEM, education, इंटर्नशिप, technology",
-  "subtitle": "एक पीढ़ी से दूसरी पीढ़ी तक: संरचित मेंटरिंग",
-  "date": "May 11, 2026",
   "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
+  "subtitle": "एक पीढ़ी से दूसरी पीढ़ी तक: संरचित मेंटरिंग",
   "locale": "hi_IN",
-  "title": "Lucy Besson: AI और क्वांटम पर ज्ञान-हस्तांतरण"
+  "banner_alt": "मेंटरिंग और ज्ञान-हस्तांतरण की प्रतीकात्मक छवि",
+  "title": "Lucy Besson: AI और क्वांटम पर ज्ञान-हस्तांतरण",
+  "keywords": "Lucy Besson, ज्ञान हस्तांतरण, AI, क्वांटम, मेंटरिंग, करियर, STEM, education, इंटर्नशिप, technology",
+  "language": "hi-IN",
+  "date": "May 11, 2026"
 }
