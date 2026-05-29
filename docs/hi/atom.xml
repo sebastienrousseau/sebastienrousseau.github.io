@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/hi/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/hi/"/>
   <id>https://sebastienrousseau.com/hi/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T19:23:52+00:00</updated>
+  <entry>
+    <title>AI, MCP और वित्तीय बुनियादी ढाँचे के लिए YAML को सुरक्षित Rust स्टैक क्यों चाहिए</title>
+    <link href="https://sebastienrousseau.com/hi/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/"/>
+    <id>https://sebastienrousseau.com/hi/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/</id>
+    <updated>2026-05-29T19:23:52+00:00</updated>
+    <published>2026-05-29T19:23:52+00:00</published>
+    <summary>NoyaLib एक शुद्ध Rust YAML 1.2 पारिस्थितिकी है — सुरक्षित कॉन्फ़िगरेशन, स्कीमा सत्यापन, स्वरूपण, LSP, MCP, WASM और वित्तीय बुनियादी ढाँचे के लिए।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI अधिनियम और डेटा संप्रभुता: बैंकों का 2026 अनुपालन स्टैक</title>
     <link href="https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

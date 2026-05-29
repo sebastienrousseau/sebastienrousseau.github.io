@@ -6,8 +6,26 @@
     <description>Mga artikulo sa Filipino: applied AI, ISO 20022 payments, post-quantum cryptography at wholesale-payments transformation.</description>
     <atom:link href="https://sebastienrousseau.com/fil/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fil-PH</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 19:23:52 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Lahat ng karapatan ay nakalaan.</copyright>
+    <item>
+      <title>Bakit Kailangan ng YAML ang Mas Ligtas na Rust Stack para sa AI, MCP, at Financial Infrastructure sa 2026</title>
+      <link>https://sebastienrousseau.com/fil/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/</link>
+      <description>Ang NoyaLib ay puro Rust na YAML 1.2 ecosystem para sa ligtas na configuration, schema validation, formatting, LSP, MCP, WASM, at workflow ng financial infrastructure.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/</guid>
+      <pubDate>Fri, 29 May 2026 19:23:52 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>NoyaLib</category>
+      <category>YAML Rust</category>
+      <category>YAML 1.2</category>
+      <category>schema validation</category>
+      <category>MCP</category>
+      <category>WASM</category>
+      <category>LSP</category>
+      <category>ligtas na configuration</category>
+      <category>financial infrastructure</category>
+    </item>
     <item>
       <title>DORA, EU AI Act, at Soberanya ng Data: Compliance Stack ng Bangko 2026</title>
       <link>https://sebastienrousseau.com/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

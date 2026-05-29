@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/ru/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ru/"/>
   <id>https://sebastienrousseau.com/ru/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T19:23:52+00:00</updated>
+  <entry>
+    <title>NoyaLib: более безопасный YAML на Rust для ИИ, MCP и финансов в 2026</title>
+    <link href="https://sebastienrousseau.com/ru/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/"/>
+    <id>https://sebastienrousseau.com/ru/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/</id>
+    <updated>2026-05-29T19:23:52+00:00</updated>
+    <published>2026-05-29T19:23:52+00:00</published>
+    <summary>NoyaLib — экосистема YAML 1.2 на чистом Rust для безопасной конфигурации, валидации схемы, форматирования, LSP, MCP, WASM и финансовой инфраструктуры.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, Закон ЕС об ИИ и суверенитет данных: стек комплаенса банков 2026 года</title>
     <link href="https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

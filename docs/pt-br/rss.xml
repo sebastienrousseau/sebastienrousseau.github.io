@@ -6,8 +6,26 @@
     <description>Artigos em português: IA aplicada, pagamentos ISO 20022, criptografia pós-quântica e transformação dos pagamentos de atacado.</description>
     <atom:link href="https://sebastienrousseau.com/pt-br/rss.xml" rel="self" type="application/rss+xml"/>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 19:23:52 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Todos os direitos reservados.</copyright>
+    <item>
+      <title>Por que o YAML precisa de uma stack Rust mais segura para IA, MCP e infraestrutura financeira em 2026</title>
+      <link>https://sebastienrousseau.com/pt-br/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/</link>
+      <description>NoyaLib é um ecossistema YAML 1.2 em Rust puro para configuração segura, validação de esquema, formatação, LSP, MCP, WASM e infraestrutura financeira.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/</guid>
+      <pubDate>Fri, 29 May 2026 19:23:52 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>NoyaLib</category>
+      <category>YAML Rust</category>
+      <category>YAML 1.2</category>
+      <category>validação de esquema</category>
+      <category>MCP</category>
+      <category>WASM</category>
+      <category>LSP</category>
+      <category>configuração segura</category>
+      <category>infraestrutura financeira</category>
+    </item>
     <item>
       <title>DORA, EU AI Act e soberania de dados: a stack de conformidade bancária 2026</title>
       <link>https://sebastienrousseau.com/pt-br/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

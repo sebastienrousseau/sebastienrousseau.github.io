@@ -6,8 +6,26 @@
     <description>한국어 기사: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 그리고 도매 결제 인프라의 구조적 변혁.</description>
     <atom:link href="https://sebastienrousseau.com/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 19:23:52 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>2026년 AI·MCP·금융 인프라를 위해 YAML에 더 안전한 Rust 스택이 필요한 이유</title>
+      <link>https://sebastienrousseau.com/ko/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/</link>
+      <description>NoyaLib은 안전한 구성, 스키마 검증, 포매팅, LSP, MCP, WASM, 금융 인프라 워크플로를 위한 순수 Rust YAML 1.2 생태계입니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/</guid>
+      <pubDate>Fri, 29 May 2026 19:23:52 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>NoyaLib</category>
+      <category>YAML Rust</category>
+      <category>YAML 1.2</category>
+      <category>스키마 검증</category>
+      <category>MCP</category>
+      <category>WASM</category>
+      <category>LSP</category>
+      <category>안전한 구성</category>
+      <category>금융 인프라</category>
+    </item>
     <item>
       <title>DORA, EU AI 법, 데이터 주권: 2026년 은행을 위한 컴플라이언스 스택</title>
       <link>https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

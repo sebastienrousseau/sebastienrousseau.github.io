@@ -6,8 +6,26 @@
     <description>บทความภาษาไทย: AI ประยุกต์, การชำระเงิน ISO 20022, การเข้ารหัสหลังควอนตัม และการปฏิรูปการชำระเงินขายส่ง</description>
     <atom:link href="https://sebastienrousseau.com/th/rss.xml" rel="self" type="application/rss+xml"/>
     <language>th-TH</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 19:23:52 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์</copyright>
+    <item>
+      <title>ทำไม YAML จึงต้องการสแต็ก Rust ที่ปลอดภัยกว่าสำหรับ AI, MCP และโครงสร้างพื้นฐานทางการเงินในปี 2569</title>
+      <link>https://sebastienrousseau.com/th/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/</link>
+      <description>NoyaLib คือระบบนิเวศ YAML 1.2 แบบ Rust บริสุทธิ์สำหรับการกำหนดค่าที่ปลอดภัย การตรวจสอบสคีมา การจัดรูปแบบ LSP, MCP, WASM และงานโครงสร้างพื้นฐานทางการเงิน</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/</guid>
+      <pubDate>Fri, 29 May 2026 19:23:52 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>NoyaLib</category>
+      <category>YAML Rust</category>
+      <category>YAML 1.2</category>
+      <category>การตรวจสอบสคีมา</category>
+      <category>MCP</category>
+      <category>WASM</category>
+      <category>LSP</category>
+      <category>การกำหนดค่าที่ปลอดภัย</category>
+      <category>โครงสร้างพื้นฐานทางการเงิน</category>
+    </item>
     <item>
       <title>DORA กฎหมาย AI ของ EU และอธิปไตยข้อมูล: สแต็คการปฏิบัติตามกฎปี 2026 ของธนาคาร</title>
       <link>https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

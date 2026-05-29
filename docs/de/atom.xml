@@ -4,13 +4,22 @@
   <link href="https://sebastienrousseau.com/de/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/de/"/>
   <id>https://sebastienrousseau.com/de/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T19:23:52+00:00</updated>
+  <entry>
+    <title>Warum YAML 2026 einen sichereren Rust-Stack für KI, MCP und Finanzinfrastruktur braucht</title>
+    <link href="https://sebastienrousseau.com/de/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/"/>
+    <id>https://sebastienrousseau.com/de/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/</id>
+    <updated>2026-05-29T19:23:52+00:00</updated>
+    <published>2026-05-29T19:23:52+00:00</published>
+    <summary>NoyaLib ist ein reines Rust-YAML-1.2-Ökosystem für sichere Konfiguration, Schema-Validierung, Formatierung, LSP, MCP, WASM und Finanzinfrastruktur.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU-KI-Verordnung und Datensouveränität: Der Compliance-Stack 2026 für Banken</title>
     <link href="https://sebastienrousseau.com/de/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>
     <id>https://sebastienrousseau.com/de/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</id>
-    <updated>2026-05-28T06:26:19+00:00</updated>
-    <published>2026-05-28T06:26:19+00:00</published>
+    <updated>2026-05-29T19:23:52+00:00</updated>
+    <published>2026-05-29T19:23:52+00:00</published>
     <summary>DORA, die EU-KI-Verordnung, DSGVO, Cloud-Konzentrationsrisiko und Datensouveränität verschmelzen 2026 zu einem Compliance-Stack für Banken.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -18,8 +27,8 @@
     <title>KI als Betriebssystem des Zahlungsverkehrs: Betrug, Routing, Resilienz und Compliance 2026</title>
     <link href="https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/"/>
     <id>https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/</id>
-    <updated>2026-05-28T06:26:19+00:00</updated>
-    <published>2026-05-28T06:26:19+00:00</published>
+    <updated>2026-05-29T19:23:52+00:00</updated>
+    <published>2026-05-29T19:23:52+00:00</published>
     <summary>KI wird 2026 zum Betriebssystem des Zahlungsverkehrs: vom Analytik-Werkzeug zur Steuerungsschicht für Betrugsabwehr, Zahlungsreparatur, Routing, Liquiditätsprognose, Compliance-Prüfung und agentische Handelskontrollen.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>

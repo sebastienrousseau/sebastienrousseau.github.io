@@ -1,11 +1,11 @@
 {
-  "subtitle": "通过严谨审查的数学与密码常数维护代码完整性，增强内存与并发安全",
-  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
-  "locale": "zh_CN",
-  "keywords": "CMN, Common 库, Rust, 数学常数, 密码常数, RSA, 椭圆曲线, π, e, 后量子密码学",
-  "title": "Rust 安全所需的数学与密码常数",
   "language": "zh-Hans",
-  "banner_alt": "巨大的白色柱子",
+  "locale": "zh_CN",
   "date": "November 5, 2023",
-  "description": "Common（CMN）库为 Rust 开发者提供精确的数学与密码常数，提升代码安全性与可靠性。"
+  "keywords": "CMN, Common 库, Rust, 数学常数, 密码常数, RSA, 椭圆曲线, π, e, 后量子密码学",
+  "description": "Common（CMN）库为 Rust 开发者提供精确的数学与密码常数，提升代码安全性与可靠性。",
+  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
+  "title": "Rust 安全所需的数学与密码常数",
+  "subtitle": "通过严谨审查的数学与密码常数维护代码完整性，增强内存与并发安全",
+  "banner_alt": "巨大的白色柱子"
 }

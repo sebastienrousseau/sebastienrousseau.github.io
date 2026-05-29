@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="fil-PH">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 18 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 18 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>Bakit Kailangan ng YAML ang Mas Ligtas na Rust Stack para sa AI, MCP, at Financial Infrastructure sa 2026 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Ang NoyaLib ay puro Rust na YAML 1.2 ecosystem para sa ligtas na configuration, schema validation, formatting, LSP, MCP, WASM, at workflow ng financial infrastructure.">
+<meta name="keywords" content="NoyaLib, YAML Rust, YAML 1.2, schema validation, MCP, WASM, LSP, ligtas na configuration, financial infrastructure">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="NoyaLib: Safer YAML for AI, MCP, and Finance">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-D7CT7epBYklfo8X5EK9bgDUOPYpQOsV5J/QfQK9Xk50=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-JRuwd7xp+n8QllJKK/gz+WsS2k75xv2bs2At9uXlXDY=' 'sha256-RGXlit3N8CsCaCCYFj88xejOUWx3ViD0sUm0ZGQqv8Y=' 'sha256-TsdOpOiyE/dyr0yr3yy0+LFgLAHqfkqPazvKcQCA/EY=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/fil/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Feed ng Atom" href="/fil/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Bakit Kailangan ng YAML ang Mas Ligtas na Rust Stack para sa AI, MCP, at Financial Infrastructure sa 2026 — Sebastien Rousseau">
+<meta property="og:description" content="Ang NoyaLib ay puro Rust na YAML 1.2 ecosystem para sa ligtas na configuration, schema validation, formatting, LSP, MCP, WASM, at workflow ng financial infrastructure.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/fil/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="fil_PH">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bakit Kailangan ng YAML ang Mas Ligtas na Rust Stack para sa AI, MCP, at Financial Infrastructure sa 2026 — Sebastien Rousseau">
+<meta name="twitter:description" content="Ang NoyaLib ay puro Rust na YAML 1.2 ecosystem para sa ligtas na configuration, schema validation, formatting, LSP, MCP, WASM, at workflow ng financial infrastructure.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/fil/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Lumaktaw sa pangunahing nilalaman</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="I-toggle ang nabigasyon" />
+      <div class="wrap">
+        <a class="ap-brand" href="/fil/index.html" aria-label="Home ni Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Pangunahing nabigasyon">
+          <ul class="ap-menu">
+            <li><a href="/fil/tungkol-sa-akin/index.html">Tungkol</a></li>
+            <li><a href="/fil/mga-artikulo/index.html" aria-current="page" class="active">Mga artikulo</a></li>
+            <li><a href="/fil/mga-publikasyon/index.html">Mga publikasyon</a></li>
+            <li><a href="/fil/mga-paksa/index.html">Mga paksa</a></li>
+            <li><a href="/fil/mga-proyekto/index.html">Mga proyekto</a></li>
+            <li><a href="/fil/mga-playlist/index.html">Mga playlist</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Lumipat sa dark mode" aria-pressed="false" title="Ibahin ang tema">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Maghanap (Cmd o Ctrl + K)" title="Maghanap (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Wika">
+            <button type="button" class="ap-lang-toggle" aria-label="FIL, Baguhin ang wika" aria-expanded="false" aria-haspopup="menu" title="Baguhin ang wika">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">FIL</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/fil/makipag-ugnayan/index.html" aria-label="Makipag-ugnayan">Makipag-ugnayan ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="I-toggle ang nabigasyon">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Bakit Kailangan ng YAML ang Mas Ligtas na Rust Stack para sa AI, MCP, at Financial Infrastructure sa 2026</h1>
+      <p class="sub">Ang YAML ay configuration infrastructure; sa panahon ng AI agents at MCP tools, mas mahalaga kaysa kailanman ang parsing, validation, disiplina sa schema, at kaligtasan.</p>
+    <nav class="article-tags" aria-label="Mga paksa"><a href="/tags/index.html#h3-noyalib" class="article-tag" rel="tag">NoyaLib</a><a href="/tags/index.html#h3-yaml-rust" class="article-tag" rel="tag">YAML Rust</a><a href="/tags/index.html#h3-yaml-1-2" class="article-tag" rel="tag">YAML 1.2</a><a href="/tags/index.html#h3-schema-validation" class="article-tag" rel="tag">schema validation</a><a href="/tags/index.html#h3-mcp" class="article-tag" rel="tag">MCP</a><a href="/tags/index.html#h3-wasm" class="article-tag" rel="tag">WASM</a><a href="/tags/index.html#h3-lsp" class="article-tag" rel="tag">LSP</a><a href="/tags/index.html#h3-ligtas-na-configuration" class="article-tag" rel="tag">ligtas na configuration</a><a href="/tags/index.html#h3-financial-infrastructure" class="article-tag" rel="tag">financial infrastructure</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-18T06:06:06+00:00" class="meta-pub">Inilathala noong 18 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Tinatayang oras ng pagbasa">5 min basahin</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Mga nilalaman</h2><ol><li><a href="#bakit-mahalaga-ang-open-source-na-proyektong-ito-sa-2026">Bakit Mahalaga Ang Open Source na Proyektong Ito Sa 2026</a></li><li><a href="#lente-ng-arkitektura">Lente ng Arkitektura</a></li><li><a href="#mga-senyas-na-subaybayan">Mga Senyas na Subaybayan</a></li><li><a href="#ang-configuration-ay-code-ng-produksyon">Ang Configuration Ay Code ng Produksyon</a></li><li><a href="#bakit-mahalaga-ang-lossless">Bakit Mahalaga Ang Lossless</a></li><li><a href="#ang-yaml-sa-agentic-stack">Ang YAML sa Agentic Stack</a></li><li><a href="#ano-ang-ibig-sabihin-nito-ayon-sa-audience">Ano Ang Ibig Sabihin Nito ayon sa Audience</a></li><li><a href="#konklusyon">Konklusyon</a></li><li><a href="#mga-madalas-itanong">Mga Madalas Itanong</a></li><li><a href="#mga-sanggunian">Mga Sanggunian</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Ang NoyaLib ay puro Rust na YAML 1.2 ecosystem para sa ligtas na configuration, schema validation, formatting, LSP, MCP, WASM, at workflow ng financial infrastructure.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Bakit Mahalaga Ang Open Source na Proyektong Ito Sa 2026.</strong> Hindi na limitado sa transparency, paggamit muli, o kabutihan sa developer ang estratehikong halaga ng open source sa 2026.</li>  <li><strong>Mga Senyas na Subaybayan.</strong> Pangkulturang argumento ang unang punto.</li>  <li><strong>Ang Configuration Ay Code ng Produksyon.</strong> Pangkulturang argumento ang unang punto.</li>  <li><strong>Bakit Mahalaga Ang Lossless.</strong> Pinapanatili ng lossless parsing ang mga komento, pagkakasunod-sunod, espasyo, at estruktura.</li></ul></aside><h1>Bakit Kailangan ng YAML ang Mas Ligtas na Rust Stack para sa AI, MCP, at Financial Infrastructure sa 2026</h1>
+<!-- lead-start -->
+<aside class="lead" aria-label="Buod ng artikulo">
+<p><strong>TL;DR.</strong> Tahimik na pinapatakbo ng YAML ang mga workflow ng CI, manifest ng Kubernetes, patakaran sa seguridad, infrastructure-as-code, kahulugan ng agent tools, at lalong dumarami ang configuration ng MCP server. Ang NoyaLib ay puro Rust na YAML 1.2 stack na tinatrato ang lugar na ito bilang critical infrastructure — zero unsafe, 406/406 spec compliance, streaming serde, lossless CST, JSON Schema validation, at LSP/MCP/WASM bindings na magkasamang ibinibigay sa halip na idinikit sa hulihan.</p>
+<p><strong>Mga pangunahing tinik:</strong></p>
+<ul>
+<li><strong>Critical infrastructure na ngayon ang YAML.</strong> CI, Kubernetes, patakaran sa seguridad, agent tools — isang bug sa parser ay pagkawala ng produksyon.</li>
+<li><strong>Hindi &quot;nice to have&quot; ang spec compliance.</strong> 406/406 opisyal na suite tests; ang anumang mas mababa ay hanay ng tahimik na interop bugs.</li>
+<li><strong>Sinasaklaw ng streaming serde + lossless CST ang dalawang dulo.</strong> Bilis para sa malalaking configuration, lossless tree para sa tooling at refactor.</li>
+<li><strong>Sa proseso dapat ang schema validation.</strong> Ang JSON Schema bilang matigas na pintuan ang pumipigil sa malformed na configuration na umabot sa produksyon.</li>
+<li><strong>LSP + MCP + WASM sa iisang stack.</strong> Editor, agent, at browser ay parehong nakikipag-usap sa parehong engine — walang drift.</li>
+</ul>
+<p><strong>Karagdagang babasahin:</strong> <a href="/fil/2026-05-20-cloud-native-banking-financial-institutions-2026/">Cloud-native banking</a> · <a href="/fil/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/">AI operating system for payments</a> · <a href="/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/">DORA + AI Act compliance stack</a></p>
+</aside>
+<!-- lead-end -->
+<p>Mukhang abang ang YAML hanggang sa masira ang produksyon. Dinadala nito ang mga workflow ng CI, patakaran sa infrastructure, manifest ng Kubernetes, alituntunin sa seguridad, configuration, metadata ng dokumentasyon, at lalong dumarami ang kahulugan ng tools na ginagamit ng mga agent. Mahalaga ang NoyaLib dahil tinatrato nito ang YAML bilang critical infrastructure kaysa sa kombenyenteng teksto.</p>
+<p>Ang open source na sanggunian para sa artikulong ito ay <a href="https://github.com/sebastienrousseau/noyalib" title="noyalib">noyalib ⧉</a>. Ang repository ay nakaposisyon bilang: puro Rust na YAML 1.2 ecosystem na may zero unsafe, 100% spec compliance sa 406/406 opisyal na suite tests, streaming-first serde, lossless CST, JSON Schema validation, CLI tools, LSP, MCP, at WASM bindings.</p>
+<hr />
+<blockquote>
+<p><strong>Buod ng Ehekutibo / Mga Pangunahing Tinik</strong></p>
+<ul>
+<li><strong>Bahagi ng control plane ang YAML.</strong> Ang CI, deployment, patakaran, modelo, MCP, at mga sistema ng configuration ay madalas umaasa rito.</li>
+<li><strong>Mahalaga ang kaligtasan.</strong> Ang isang zero-unsafe na implementasyon sa Rust na may spec compliance ay malakas na kuwento para sa mga koponan ng infrastructure.</li>
+<li><strong>Binubuksan ng lossless parsing ang mas magagandang tools.</strong> Ang mga formatter, LSP, editor, migration tools, at automated refactoring ay nangangailangan ng parsing na nag-iingat sa estruktura.</li>
+<li><strong>Ang schema validation ang governance layer.</strong> Ginagawa ng JSON Schema validation na enforceable na kontrata ang configuration mula sa simpleng teksto.</li>
+<li><strong>Pinapalawak ng MCP at WASM ang proyekto.</strong> Maaaring iposisyon ang NoyaLib para sa agentic tooling at sa browser o edge environment.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="bakit-mahalaga-ang-open-source-na-proyektong-ito-sa-2026">Bakit Mahalaga Ang Open Source na Proyektong Ito Sa 2026 <a class="heading-anchor" href="#bakit-mahalaga-ang-open-source-na-proyektong-ito-sa-2026" aria-label="Link patungo sa Bakit Mahalaga Ang Open Source na Proyektong Ito Sa 2026">#</a></h2>
+<p>Hindi na limitado sa transparency, paggamit muli, o kabutihan sa developer ang estratehikong halaga ng open source sa 2026. Para sa mga bangko at institusyong pinansyal, naging paraan na ang open source na infrastructure upang siyasatin ang mga palagay, subukin ang mga kontrol, bawasan ang pagiging madilim ng vendor, at gawing code ang mga arkitektural na pag-aangkin na maaaring basahin, i-fork, patibayin, at patakbuhin. Ang pinaka-kapaki-pakinabang na mga proyekto ay hindi demo. Mga reference implementation ang mga ito na nagpapakita kung paano nagkakaugnay ang seguridad, accessibility, performance, compliance, at karanasan ng developer.</p>
+<p>Ito ang lente kung saan dapat maintindihan ang noyalib. Hindi lamang ito repository; isa itong matibay na argumento ng disenyo. Sinasabi nito na ang critical infrastructure ay dapat ma-audit, ma-compose, madokumento, masubok, at maintindihan ng mga taong umaasa rito. Sa serbisyong pinansyal, mahalaga iyon dahil lalong nakaupo ang mga sistema sa pagtatagpo ng agentic AI, real-time payments, post-quantum cryptography, cloud-native resilience, structured data, at ebidensya sa regulasyon.</p>
+<h2 id="lente-ng-arkitektura">Lente ng Arkitektura <a class="heading-anchor" href="#lente-ng-arkitektura" aria-label="Link patungo sa Lente ng Arkitektura">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Desisyon ng Disenyo</th>
+<th>Bakit Mahalaga</th>
+<th>Panganib Kapag Mali ang Pagtrato</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Parser</strong></td>
+<td>YAML 1.2 compliant na Rust parser</td>
+<td>Pundasyon para sa maaasahang configuration</td>
+<td>Malabong parsing at drift sa produksyon</td>
+</tr>
+<tr>
+<td><strong>Kaligtasan</strong></td>
+<td>Zero unsafe na disenyo</td>
+<td>Binabawasan ang alalahanin sa memory safety sa infrastructure tooling</td>
+<td>Mga kahinaan ng parser</td>
+</tr>
+<tr>
+<td><strong>CST</strong></td>
+<td>Lossless concrete syntax tree</td>
+<td>Nagbibigay-daan sa formatting at refactoring</td>
+<td>Sinisira ng tools ang mga komento at estruktura</td>
+</tr>
+<tr>
+<td><strong>Validation</strong></td>
+<td>Suporta para sa JSON Schema</td>
+<td>Ginagawang enforceable ang configuration</td>
+<td>Hindi na-validate na configuration ang umaabot sa produksyon</td>
+</tr>
+<tr>
+<td><strong>Tooling</strong></td>
+<td>CLI, LSP, MCP, WASM</td>
+<td>Ginagawang ecosystem ang parser</td>
+<td>Naiiwan na nakahiwalay ang library</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mga-senyas-na-subaybayan">Mga Senyas na Subaybayan <a class="heading-anchor" href="#mga-senyas-na-subaybayan" aria-label="Link patungo sa Mga Senyas na Subaybayan">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Senyas</th>
+<th>Ano Ang Ibig Sabihin</th>
+<th>Sanggunian</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>406/406 opisyal na suite</strong></td>
+<td>Iniposisyon ng repository ang compliance bilang nasusukat na pag-aangkin</td>
+<td><a href="https://github.com/sebastienrousseau/noyalib" title="noyalib repository">noyalib ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Zero unsafe</strong></td>
+<td>Bahagi ng pagkakakilanlan ng proyekto ang kaligtasan</td>
+<td><a href="https://github.com/sebastienrousseau/noyalib" title="noyalib repository">noyalib ⧉</a></td>
+</tr>
+<tr>
+<td><strong>LSP at CLI tools</strong></td>
+<td>Tinatarget ng proyekto ang workflow ng developer, hindi lamang ang paggamit bilang library</td>
+<td><a href="https://github.com/sebastienrousseau/noyalib" title="noyalib repository">noyalib ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Paksang MCP</strong></td>
+<td>Maaaring maging accessible sa agent ang YAML tooling</td>
+<td><a href="https://github.com/sebastienrousseau/noyalib" title="noyalib repository">noyalib ⧉</a></td>
+</tr>
+<tr>
+<td><strong>WASM bindings</strong></td>
+<td>Maaaring lumipat sa browser, edge, at embedded na konteksto ang configuration validation</td>
+<td><a href="https://github.com/sebastienrousseau/noyalib" title="noyalib repository">noyalib ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ang-configuration-ay-code-ng-produksyon">Ang Configuration Ay Code ng Produksyon <a class="heading-anchor" href="#ang-configuration-ay-code-ng-produksyon" aria-label="Link patungo sa Ang Configuration Ay Code ng Produksyon">#</a></h2>
+<p>Pangkulturang argumento ang unang punto. Hindi dapat trato sa YAML bilang walang kapinsalaang teksto. Ang isang malformed, malabo, o mahinang na-validate na configuration file ay maaaring magbago ng infrastructure, masira ang CI, magpahina sa patakaran ng seguridad, o magkamali ng configuration sa isang AI toolchain. Iyan ang dahilan kung bakit alalahanin ng sistema ang kalidad ng YAML parser.</p>
+<h2 id="bakit-mahalaga-ang-lossless">Bakit Mahalaga Ang Lossless <a class="heading-anchor" href="#bakit-mahalaga-ang-lossless" aria-label="Link patungo sa Bakit Mahalaga Ang Lossless">#</a></h2>
+<p>Pinapanatili ng lossless parsing ang mga komento, pagkakasunod-sunod, espasyo, at estruktura. Mahalaga iyon para sa mga totoong file dahil ang mga tao ay nag-aannotate sa configuration. Ang isang formatter o migration tool na sumisira sa kahulugan sa paligid ng data ay hindi pagkakatiwalaan ng mga koponan ng engineering.</p>
+<h2 id="ang-yaml-sa-agentic-stack">Ang YAML sa Agentic Stack <a class="heading-anchor" href="#ang-yaml-sa-agentic-stack" aria-label="Link patungo sa Ang YAML sa Agentic Stack">#</a></h2>
+<p>Lalong nagbabasa, sumusulat, at nagmo-modify ang mga agent sa configuration. Kung ina-update ng isang AI assistant ang isang deployment manifest, MCP tool registry, content front matter, o workflow file, nagiging bahagi ng safety boundary ang parser at validator. Binibigyan ka ng NoyaLib ng artikulo tungkol sa hangganang iyon.</p>
+<h2 id="ano-ang-ibig-sabihin-nito-ayon-sa-audience">Ano Ang Ibig Sabihin Nito ayon sa Audience <a class="heading-anchor" href="#ano-ang-ibig-sabihin-nito-ayon-sa-audience" aria-label="Link patungo sa Ano Ang Ibig Sabihin Nito ayon sa Audience">#</a></h2>
+<h3 id="para-sa-mga-lider-ng-teknolohiya-ng-bangko">Para sa mga Lider ng Teknolohiya ng Bangko <a class="heading-anchor" href="#para-sa-mga-lider-ng-teknolohiya-ng-bangko" aria-label="Link patungo sa Para sa mga Lider ng Teknolohiya ng Bangko">#</a></h3>
+<p>Ang tanong ay kung kayang tulungan ng proyekto na maging executable architecture ang isang estratehikong presyon. Pinakamalakas ang halaga kapag binibigyan ng repository ang mga koponan ng konkretong bagay na masisiyasat: interface, configuration, tests, hangganan ng seguridad, palagay sa deployment, at failure modes.</p>
+<h3 id="para-sa-mga-koponan-ng-seguridad-at-panganib">Para sa mga Koponan ng Seguridad at Panganib <a class="heading-anchor" href="#para-sa-mga-koponan-ng-seguridad-at-panganib" aria-label="Link patungo sa Para sa mga Koponan ng Seguridad at Panganib">#</a></h3>
+<p>Ang proyekto ay dapat suriin hindi lamang para sa mga tampok kundi para sa ebidensya ng kontrol. Inilalantad ng kapaki-pakinabang na open source na financial infrastructure kung paano dapat gumana ang pagkakakilanlan, mga lihim, validation, audit logs, rate limits, lagda, pinagmulan, at pagbawi.</p>
+<h3 id="para-sa-mga-developer-at-platform-engineer">Para sa mga Developer at Platform Engineer <a class="heading-anchor" href="#para-sa-mga-developer-at-platform-engineer" aria-label="Link patungo sa Para sa mga Developer at Platform Engineer">#</a></h3>
+<p>Ang pinakamahalagang pagsubok ay kung binabawasan ng proyekto ang cognitive load nang hindi itinatago ang mahahalagang mekanika. Ang mahusay na open source ay dapat gawing madaling daan ang ligtas na daan habang pinapayagan pa rin ang mga bihasang engineer na maintindihan at baguhin ang implementasyon.</p>
+<h3 id="para-sa-mga-kontribyutor">Para sa mga Kontribyutor <a class="heading-anchor" href="#para-sa-mga-kontribyutor" aria-label="Link patungo sa Para sa mga Kontribyutor">#</a></h3>
+<p>Ang oportunidad ay palakasin ang proyekto kung saan nangangailangan ng katiyakan ang mga tunay na institusyon: dokumentasyon, halimbawa, conformance tests, paghigpit ng CI, threat models, performance profiles, accessibility checks, at integration guides.</p>
+<h2 id="konklusyon">Konklusyon <a class="heading-anchor" href="#konklusyon" aria-label="Link patungo sa Konklusyon">#</a></h2>
+<p>Ang dahilan kung bakit isinulat ang tungkol sa noyalib ay ginagawa nitong konkreto ang isang mas malawak na problema ng industriya. Sa 2026, hindi nangangailangan ng mga bangko ng mas abstraktong wika ng transpormasyon. Nangangailangan sila ng mga sistemang maaaring siyasatin na nagpapakita kung paano maitatayo, ma-secure, masusubok, at magagawaran ng pamamahala ang modernong infrastructure. Ang open source ang pinaka-mapagkakatiwalaang paraan upang gawing nakikita ang argumentong iyon.</p>
+<h2 id="mga-madalas-itanong">Mga Madalas Itanong <a class="heading-anchor" href="#mga-madalas-itanong" aria-label="Link patungo sa Mga Madalas Itanong">#</a></h2>
+<p><strong>Bakit nararapat sa YAML ang isang nakatuong artikulo?</strong></p>
+<p>Dahil nakaupo ang YAML sa loob ng CI, deployment, patakaran, metadata, at workflow ng configuration ng agent.</p>
+<p><strong>Ano ang pinakamalakas na anggulo ng NoyaLib?</strong></p>
+<p>Ligtas, sumusunod sa spec, at schema-aware na YAML para sa infrastructure na hindi kayang panindigan ang malabong configuration.</p>
+<p><strong>Sino ang audience?</strong></p>
+<p>Mga Rust developer, platform engineer, DevOps team, security engineer, at tool builder.</p>
+<p><strong>Paano kasya ang MCP?</strong></p>
+<p>Ginagawa ng MCP na accessible sa mga agent ang tooling, na nagpapataas sa kahalagahan ng na-validate at istrukturadong operasyon ng configuration.</p>
+<h2 id="mga-sanggunian">Mga Sanggunian <a class="heading-anchor" href="#mga-sanggunian" aria-label="Link patungo sa Mga Sanggunian">#</a></h2>
+<ul>
+<li>GitHub, (2026). <a href="https://github.com/sebastienrousseau/noyalib" title="noyalib repository">noyalib repository ⧉</a>.</li>
+<li>YAML, (2026). <a href="https://yaml.org/spec/" title="YAML specification">YAML specification ⧉</a>.</li>
+<li>JSON Schema, (2026). <a href="https://json-schema.org/" title="JSON Schema specification">JSON Schema specification ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Huling sinuri noong <time datetime="2026-06-18">2026-06-18</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Portrait ni Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/fil/tungkol-sa-akin/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist na sumusulat tungkol sa applied AI, ISO 20022 migration, post-quantum cryptography para sa financial services, at structural transformation ng wholesale payments.</span><span class="author-credentials">Higit sa 20 taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA at Virgin Group. <a href="/fil/tungkol-sa-akin/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Huling sinuri <time datetime="2026-05-29">2026-05-29</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Kaugnay na pagbasa</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026" class="related-media" aria-label="Agentikong Pagbabayad sa Pagbabangko 2026: Pahintulot at Pananagutan" tabindex="-1"><img alt="Agentic payments architecture diagram showing AI agents, consent mandates, tokenised credentials, card networks, banks, merchants, and audit trails" src="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="agentikong-pagbabayad-sa-pagbabangko-2026-pahintulot-at-pananagutan"><a href="https://sebastienrousseau.com/fil/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026">Agentikong Pagbabayad sa Pagbabangko 2026: Pahintulot at Pananagutan</a> <a class="heading-anchor" href="#agentikong-pagbabayad-sa-pagbabangko-2026-pahintulot-at-pananagutan" aria-label="Link patungo sa Agentikong Pagbabayad sa Pagbabangko 2026: Pahintulot at Pananagutan">#</a></h3><p><time datetime="2026-05-23">2026-05-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html" class="related-media" aria-label="RustLogs (RLG): مكتبة تسجيل منظَّمة للغة Rust" tabindex="-1"><img alt="Banner for RustLogs (RLG)" src="https://cloudcdn.pro/api/transform?url=/stocks/images/rustlogs.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="rustlogs-rlg-rust"><a href="https://sebastienrousseau.com/fil/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">RustLogs (RLG): مكتبة تسجيل منظَّمة للغة Rust</a> <a class="heading-anchor" href="#rustlogs-rlg-rust" aria-label="Link patungo sa RustLogs (RLG): مكتبة تسجيل منظَّمة للغة Rust">#</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html" class="related-media" aria-label="Alien Studio: رحلتي من التكنولوجيا إلى الفنّ التصويري" tabindex="-1"><img alt="Sunset's muse, a serene glance; beauty in stillness" src="https://cloudcdn.pro/api/transform?url=/clients/alienstudio/v1/collections/radiance/radiance-08.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="alien-studio"><a href="https://sebastienrousseau.com/fil/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html">Alien Studio: رحلتي من التكنولوجيا إلى الفنّ التصويري</a> <a class="heading-anchor" href="#alien-studio" aria-label="Link patungo sa Alien Studio: رحلتي من التكنولوجيا إلى الفنّ التصويري">#</a></h3><p><time datetime="2024-01-15">2024-01-15</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Mga pinagmulan at sanggunian</h2><ol class="article-sources-list"><li><a href="https://github.com/sebastienrousseau/noyalib" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/sebastienrousseau/noyalib</span></a></li></ol></aside><nav class="post-pagination" aria-label="Pagination ng artikulo"><a class="post-pagination-prev" href="/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">Nakaraan</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/fil/tungkol-sa-akin/index.html">Tungkol</a></li>
+              <li><a href="/fil/makipag-ugnayan/index.html">Makipag-ugnayan</a></li>
+              <li><a href="/fil/ginawa-sa-static-site-generator/index.html">Ginawa sa Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Pagsusulat</h2>
+            <ul>
+              <li><a href="/fil/mga-artikulo/index.html">Mga artikulo</a></li>
+              <li><a href="/fil/mga-publikasyon/index.html">Mga publikasyon</a></li>
+              <li><a href="/fil/mga-tag/index.html">Mga tag</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Trabaho</h2>
+            <ul>
+              <li><a href="/fil/mga-proyekto/index.html">Mga proyekto</a></li>
+              <li><a href="/fil/mga-playlist/index.html">Mga playlist</a></li>
+              <li><a href="/fil/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Makipag-ugnayan</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Pag-sign up sa newsletter">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — mga research note tungkol sa payments, AI at post-quantum crypto. Walang spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="ikaw@bangko.ph" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Mag-subscribe</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Mga link sa social media">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau sa Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau sa LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau sa Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau sa YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/fil/pagiging-accessible/index.html">Pagiging accessible</a> ·
+            <a href="/fil/pagkapribado/index.html">Pagkapribado</a> ·
+            <a href="/fil/mga-tuntunin/index.html">Mga tuntunin</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"fil"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"fil"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1157,"about":{"@type":"Thing","name":"Rust","sameAs":["https://en.wikipedia.org/wiki/Rust_(programming_language)","https://www.wikidata.org/wiki/Q575650"]},"headline":"Bakit Kailangan ng YAML ang Mas Ligtas na Rust Stack para sa AI, MCP, at Financial Infrastructure sa 2026","description":"Ang NoyaLib ay puro Rust na YAML 1.2 ecosystem para sa ligtas na configuration, schema validation, formatting, LSP, MCP, WASM, at workflow ng financial infrastructure.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp","width":"100vw","height":"100vh","caption":"Heometrikong arkitektura sa ilalim ng matinding liwanag — sumasagisag sa papel ng NoyaLib bilang load-bearing YAML layer sa ilalim ng CI, Kubernetes, MCP, at configuration ng mga serbisyong pinansyal"},"url":"https://sebastienrousseau.com/fil/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/","datePublished":"2026-06-18T06:06:06+00:00","dateModified":"2026-06-18","inLanguage":"fil","keywords":"NoyaLib, YAML Rust, YAML 1.2, schema validation, MCP, WASM, LSP, ligtas na configuration, financial infrastructure","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/fil/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"fil"},"citation":[{"@type":"CreativeWork","url":"https://github.com/sebastienrousseau/noyalib"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/fil/"},{"@type":"ListItem","position":3,"name":"Bakit Kailangan ng YAML ang Mas Ligtas na Rust Stack para sa AI, MCP, at Financial Infrastructure sa 2026","item":"https://sebastienrousseau.com/fil/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Maghanap">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Maghanap</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Maghanap">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Maghanap sa dokumentasyon..." autocomplete="off" aria-label="Maghanap"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> isara</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> mag-navigate</span><span><kbd>Enter</kbd> buksan</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Bakit Kailangan ng YAML ang Mas Ligtas na Rust Stack para sa AI, MCP, at Financial Infrastructure sa 2026","url":"https://sebastienrousseau.com/fil/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/","inLanguage":"fil-PH","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"NoyaLib, YAML Rust, YAML 1.2, schema validation, MCP, WASM, LSP, ligtas na configuration, financial infrastructure","programmingLanguage":["Rust","WebAssembly"]}</script></body>
+</html>

@@ -758,6 +758,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>Why YAML Needs a Safer Rust Stack for AI, MCP, and Financial Infrastructure in…</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, schema validation, MCP, WASM, LSP, safe configuration, financial infrastructure</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/contact</loc>
   <news:news>
     <news:publication>
@@ -1442,6 +1454,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/tr/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>AI, MCP ve Finansal Altyapı için YAML'ın 2026'da Neden Daha Güvenli bir Rust…</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, şema doğrulama, MCP, WASM, LSP, güvenli konfigürasyon, finansal altyapı</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/tr/2018-01-01-bitcoin-yilin-degerlendirmesi/index.html</loc>
   <news:news>
     <news:publication>
@@ -2090,6 +2114,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/th/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>ทำไม YAML จึงต้องการสแต็ก Rust ที่ปลอดภัยกว่าสำหรับ AI, MCP…</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, การตรวจสอบสคีมา, MCP, WASM, LSP, การกำหนดค่าที่ปลอดภัย, โครงสร้างพื้นฐานทางการเงิน</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/th/2024-02-26-google-gemma-plian-kanphatthana-ai-opensource/index.html</loc>
   <news:news>
     <news:publication>
@@ -2374,6 +2410,18 @@
     <news:publication_date></news:publication_date>
     <news:title>El reinicio de la criptografía cuántica en 2026: estándares PQC, garantía de…</news:title>
     <news:keywords>criptografía cuántica 2026, criptografía postcuántica, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/es/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>es</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>NoyaLib: un stack Rust más seguro para YAML en IA, MCP y banca 2026</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, validación de esquema, MCP, WASM, LSP, configuración segura, infraestructura financiera</news:keywords>
   </news:news>
 </url>
 
@@ -3018,6 +3066,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Gestion efficace des dates et heures avec DateTime (DTT)</news:title>
     <news:keywords>DateTime, DTT, bibliothèque Rust, parsing, validation, manipulation, formatage, dates, heures</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fr</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>Pourquoi YAML a besoin d'une pile Rust plus sûre pour l'IA, MCP et la finance…</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, validation de schéma, MCP, WASM, LSP, configuration sûre, infrastructure financière</news:keywords>
   </news:news>
 </url>
 <url>
@@ -3678,6 +3738,18 @@
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL…</news:title>
     <news:keywords>BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoin, dana pasar uang yang ditokenisasi, OnChain Shares, Securitize</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/id/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>id</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>Mengapa YAML Membutuhkan Tumpukan Rust yang Lebih Aman untuk AI, MCP, dan…</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, validasi skema, MCP, WASM, LSP, konfigurasi aman, infrastruktur keuangan</news:keywords>
   </news:news>
 </url>
 <url>
@@ -4353,6 +4425,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/ko/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>2026년 AI·MCP·금융 인프라를 위해 YAML에 더 안전한 Rust 스택이 필요한 이유</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, 스키마 검증, MCP, WASM, LSP, 안전한 구성, 금융 인프라</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ko/2018-02-04-saeroun-amhohwapye-wa-misirae-gwasok-gyeoljeyusol/index.html</loc>
   <news:news>
     <news:publication>
@@ -4974,6 +5058,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Die Technologie hinter Blockchain verstehen</news:title>
     <news:keywords>Blockchain, Ethereum, Smart Contract, Kryptowährung, Solidity, Geth, dApps, ERC-20, Tokenisierung, Testnet</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/de/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>de</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>Warum YAML 2026 einen sichereren Rust-Stack für KI, MCP und…</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, Schema-Validierung, MCP, WASM, LSP, sichere Konfiguration, Finanzinfrastruktur</news:keywords>
   </news:news>
 </url>
 <url>
@@ -5661,6 +5757,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/hi/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>hi</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>AI, MCP और वित्तीय बुनियादी ढाँचे के लिए YAML को सुरक्षित Rust स्टैक क्यों चाहिए</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, स्कीमा सत्यापन, MCP, WASM, LSP, सुरक्षित कॉन्फ़िगरेशन, वित्तीय बुनियादी ढाँचा</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/hi/2024-02-13-eu-ai-act-vaishvik-ai-niyaman-ka-bhavishya/index.html</loc>
   <news:news>
     <news:publication>
@@ -6268,6 +6376,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/fil/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fil</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>Bakit Kailangan ng YAML ang Mas Ligtas na Rust Stack para sa AI, MCP, at…</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, schema validation, MCP, WASM, LSP, ligtas na configuration, financial infrastructure</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/fil/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -6486,6 +6606,18 @@
 
 
 
+<url>
+  <loc>https://sebastienrousseau.com/bn/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>bn</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>২০২৬-এ AI, MCP ও আর্থিক পরিকাঠামোর জন্য YAML-এর কেন একটি নিরাপদ Rust স্ট্যাক…</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, স্কিমা যাচাই, MCP, WASM, LSP, নিরাপদ কনফিগারেশন, আর্থিক পরিকাঠামো</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/bn/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
   <news:news>
@@ -7064,6 +7196,18 @@
     <news:publication_date></news:publication_date>
     <news:title>CRYSTALS-Kyber: het beschermingsalgoritme in het kwantumtijdperk</news:title>
     <news:keywords>CRYSTALS-Kyber, post-kwantum, KEM, NIST, FIPS 203, cryptografie, beveiliging</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/nl/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>Waarom YAML een veiligere Rust-stack nodig heeft voor AI, MCP en financiële…</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, schema-validatie, MCP, WASM, LSP, veilige configuratie, financiële infrastructuur</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7696,6 +7840,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/pt-br/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pt-br</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>Por que o YAML precisa de uma stack Rust mais segura para IA, MCP e…</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, validação de esquema, MCP, WASM, LSP, configuração segura, infraestrutura financeira</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/pt-br/2023-10-09-shokunin-o-gerador-de-sites-estaticos-rust-mais-rapido/index.html</loc>
   <news:news>
     <news:publication>
@@ -7962,6 +8118,18 @@
 
 
 <url>
+  <loc>https://sebastienrousseau.com/ar/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ar</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>لماذا يحتاج YAML إلى حزمة Rust أكثر أمانًا للذكاء الاصطناعي وMCP والبنية…</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, التحقق من المخطط, MCP, WASM, LSP, التكوين الآمن, البنية التحتية المالية</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ar/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -8158,6 +8326,18 @@
 
 
 
+<url>
+  <loc>https://sebastienrousseau.com/ha/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ha</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>Me Yasa YAML Ke Buƙatar Tsarin Rust Mai Aminci ga AI, MCP, da Kayan Aikin Kuɗi…</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, tabbatar da schema, MCP, WASM, LSP, configuration mai aminci, kayan aikin kuɗi</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/ha/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
   <news:news>
@@ -8728,6 +8908,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/uk/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>uk</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>Чому YAML потребує безпечнішого стеку Rust для ШІ, MCP і фінансів у 2026</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, валідація схеми, MCP, WASM, LSP, безпечна конфігурація, фінансова інфраструктура</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/uk/2026-05-18-kvantova-kryptohrafiya-standarty-rozvytok-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -9018,6 +9210,18 @@
 
 
 <url>
+  <loc>https://sebastienrousseau.com/yo/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>yo</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>Ìdí Tí YAML Fi Nílò Ẹ̀rọ Rust Aláàbò Sí I fún AI, MCP, àti Ẹ̀rọ Ìnáwó ní 2026</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, ìfọwọ́sí schema, MCP, WASM, LSP, ìtòlẹ́sẹẹsẹ ààbò, ìpìlẹ̀ ìnáwó</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/yo/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -9215,6 +9419,18 @@
 
 
 
+<url>
+  <loc>https://sebastienrousseau.com/ro/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ro</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>YAML are nevoie de o stivă Rust mai sigură pentru AI, MCP și finanțe</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, validare schemă, MCP, WASM, LSP, configurare sigură, infrastructură financiară</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/ro/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
   <news:news>
@@ -9832,6 +10048,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/ru/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>NoyaLib: более безопасный YAML на Rust для ИИ, MCP и финансов в 2026</news:title>
+    <news:keywords>NoyaLib, YAML на Rust, YAML 1.2, валидация схемы, MCP, WASM, LSP, безопасная конфигурация, финансовая инфраструктура</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ru/2018-01-09-ponimanie-tekhnologii-blockchain/index.html</loc>
   <news:news>
     <news:publication>
@@ -10097,6 +10325,18 @@
 
 
 
+<url>
+  <loc>https://sebastienrousseau.com/cs/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>Proč YAML potřebuje bezpečnější Rust stack pro AI, MCP a finanční…</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, validace schématu, MCP, WASM, LSP, bezpečná konfigurace, finanční infrastruktura</news:keywords>
+  </news:news>
+</url>
 
 <url>
   <loc>https://sebastienrousseau.com/cs/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
@@ -10724,6 +10964,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Libmake: un generatore di codice per ridurre i compiti ripetitivi e costruire…</news:title>
     <news:keywords>Libmake, Rust, generatore di codice, scaffolding, automazione, open source</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>Perché YAML ha bisogno di uno stack Rust più sicuro per AI, MCP e finanza nel…</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, validazione dello schema, MCP, WASM, LSP, configurazione sicura, infrastruttura finanziaria</news:keywords>
   </news:news>
 </url>
 <url>
@@ -11375,6 +11627,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/ja/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ja</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>2026年、AI・MCP・金融インフラに必要なより安全なYAML Rustスタック</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, スキーマ検証, MCP, WASM, LSP, 安全な設定, 金融インフラ</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ja/2026-05-12-iso-20022-pacs008-kouzouka-juusho-kigen/index.html</loc>
   <news:news>
     <news:publication>
@@ -11617,6 +11881,18 @@
 
 
 <url>
+  <loc>https://sebastienrousseau.com/he/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>מדוע YAML זקוק לערימת Rust בטוחה יותר ל-AI, MCP ותשתית פיננסית ב-2026</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, אימות סכמה, MCP, WASM, LSP, תצורה בטוחה, תשתית פיננסית</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/he/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -11825,6 +12101,18 @@
 
 
 
+<url>
+  <loc>https://sebastienrousseau.com/sv/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>Varför YAML behöver en säkrare Rust-stack för AI, MCP och finansiell…</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, schemavalidering, MCP, WASM, LSP, säker konfiguration, finansiell infrastruktur</news:keywords>
+  </news:news>
+</url>
 
 
 
@@ -11960,6 +12248,18 @@
     <news:publication_date>2026-05-22T06:06:06+00:00</news:publication_date>
     <news:title>Sự Đổi Mới Acid Jazz tại Anh: Nghệ Sĩ, Concert và Album 2026</news:title>
     <news:keywords>acid jazz Anh 2026, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott&apos;s, Bangs and Talbot, Chris Bangs, Mick Talbot, Smokin Aces</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>Vì sao YAML cần ngăn xếp Rust an toàn hơn cho AI, MCP và hạ tầng tài chính…</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, xác thực schema, MCP, WASM, LSP, cấu hình an toàn, hạ tầng tài chính</news:keywords>
   </news:news>
 </url>
 <url>
@@ -12587,6 +12887,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/pl/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>Dlaczego YAML potrzebuje bezpieczniejszego stosu Rust dla AI, MCP i…</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, walidacja schematu, MCP, WASM, LSP, bezpieczna konfiguracja, infrastruktura finansowa</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/pl/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -13208,6 +13520,18 @@
     <news:publication_date></news:publication_date>
     <news:title>區塊鏈：2018 年最重要的技術</news:title>
     <news:keywords>區塊鏈, 加密貨幣, 分散式賬本, 智慧合約, 去中心化金融, 供應鏈, 數字身份, 共識機制, 銀行業, 金融科技</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>2026:AI、MCP 與金融的更安全YAML Rust 堆疊</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, 結構描述驗證, MCP, WASM, LSP, 安全配置, 金融基礎設施</news:keywords>
   </news:news>
 </url>
 <url>
@@ -13892,6 +14216,18 @@
     <news:publication_date></news:publication_date>
     <news:title>AI 趋势 2024：洞察与对未来的预测</news:title>
     <news:keywords>AI 趋势 2024, 生成式 AI, 多模态模型, 客户服务, 网络安全, 教育, 气候变化, 金融, 零售, 伦理</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-18T06:06:06+00:00</news:publication_date>
+    <news:title>2026年：AI、MCP与金融基础设施为何需要更安全的Rust YAML栈</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, 模式验证, MCP, WASM, LSP, 安全配置, 金融基础设施</news:keywords>
   </news:news>
 </url>
 <url>

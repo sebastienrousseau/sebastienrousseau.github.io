@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/sv/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv-SE</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T19:23:52+00:00</news:publication_date>
+    <news:title>Varför YAML behöver en säkrare Rust-stack för AI, MCP och finansiell infrastruktur 2026</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, schemavalidering, MCP, WASM, LSP, säker konfiguration, finansiell infrastruktur</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

@@ -1,11 +1,11 @@
 {
   "title": "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era",
-  "date": "Mar 25, 2024",
-  "keywords": "Fully Homomorphic Encryption, ব্যাংকিং নিরাপত্তা, quantum computing, আর্থিক ডেটা এনক্রিপশন, FHE কেস স্টাডি, নিয়ন্ত্রক কাঠামো FHE, কম্পিউটেশনাল ওভারহেড FHE, FHE গবেষণা, FHE হার্ডওয়্যার, ডেটা গোপনীয়তা আইন",
-  "description": "ফুলি হোমোমরফিক এনক্রিপশন কীভাবে ব্যাংকিং ও আর্থিক শিল্পে ডেটা নিরাপত্তায় বিপ্লব আনছে এবং কোয়ান্টাম কম্পিউটিং হুমকির বিরুদ্ধে গোপনীয়তা নিশ্চিত করছে তা অন্বেষণ করুন।",
-  "banner_alt": "Fully Homomorphic Encryption-এর জন্য ব্যানার",
   "locale": "bn_BD",
-  "language": "bn-BD",
+  "description": "ফুলি হোমোমরফিক এনক্রিপশন কীভাবে ব্যাংকিং ও আর্থিক শিল্পে ডেটা নিরাপত্তায় বিপ্লব আনছে এবং কোয়ান্টাম কম্পিউটিং হুমকির বিরুদ্ধে গোপনীয়তা নিশ্চিত করছে তা অন্বেষণ করুন।",
+  "date": "Mar 25, 2024",
   "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp",
-  "subtitle": "FHE দিয়ে কোয়ান্টাম কম্পিউটিং যুগে ডেটা নিরাপত্তা শক্তিশালী করুন, AI গোপনীয়তা উন্নত করুন এবং গ্রাহকের আস্থা তৈরি করুন"
+  "keywords": "Fully Homomorphic Encryption, ব্যাংকিং নিরাপত্তা, quantum computing, আর্থিক ডেটা এনক্রিপশন, FHE কেস স্টাডি, নিয়ন্ত্রক কাঠামো FHE, কম্পিউটেশনাল ওভারহেড FHE, FHE গবেষণা, FHE হার্ডওয়্যার, ডেটা গোপনীয়তা আইন",
+  "subtitle": "FHE দিয়ে কোয়ান্টাম কম্পিউটিং যুগে ডেটা নিরাপত্তা শক্তিশালী করুন, AI গোপনীয়তা উন্নত করুন এবং গ্রাহকের আস্থা তৈরি করুন",
+  "banner_alt": "Fully Homomorphic Encryption-এর জন্য ব্যানার",
+  "language": "bn-BD"
 }

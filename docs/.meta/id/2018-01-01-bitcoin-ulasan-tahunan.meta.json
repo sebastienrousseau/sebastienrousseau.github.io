@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Setumpuk koin emas dan perak yang tersusun di atas meja",
-  "title": "[ID DRAFT] Bitcoin: A Year In Review of the First Cryptocurrency",
-  "language": "id-ID",
-  "subtitle": "Bitcoin, cryptocurrency, dan teknologi yang membentuk ulang pasar keuangan global.",
-  "description": "Bitcoin: Sistem Uang Elektronik Peer-to-Peer (P2P ECS) yang berpotensi merevolusi cara orang bertransaksi secara online.",
-  "date": "Jan 01, 2018",
   "locale": "id_ID",
+  "title": "[ID DRAFT] Bitcoin: A Year In Review of the First Cryptocurrency",
+  "description": "Bitcoin: Sistem Uang Elektronik Peer-to-Peer (P2P ECS) yang berpotensi merevolusi cara orang bertransaksi secara online.",
+  "language": "id-ID",
   "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
-  "keywords": "bitcoin, cryptocurrency, blockchain, keuangan terdesentralisasi, mata uang digital, pembayaran peer-to-peer, emas digital, uang terprogram, masa depan uang, revolusi keuangan"
+  "banner_alt": "Setumpuk koin emas dan perak yang tersusun di atas meja",
+  "subtitle": "Bitcoin, cryptocurrency, dan teknologi yang membentuk ulang pasar keuangan global.",
+  "keywords": "bitcoin, cryptocurrency, blockchain, keuangan terdesentralisasi, mata uang digital, pembayaran peer-to-peer, emas digital, uang terprogram, masa depan uang, revolusi keuangan",
+  "date": "Jan 01, 2018"
 }

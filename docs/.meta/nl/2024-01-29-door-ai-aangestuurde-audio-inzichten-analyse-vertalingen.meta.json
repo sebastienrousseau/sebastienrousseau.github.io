@@ -1,11 +1,11 @@
 {
-  "description": "AI-gestuurde audio-analyse opent bruikbare inzichten, samenvattingen en vertalingen uit audiogegevens voor banking en productiviteit.",
-  "banner_alt": "Visualisatie van AI-gegenereerde audio-analyse",
-  "keywords": "AI, audio, spraakherkenning, samenvatting, vertaling, machine learning",
-  "language": "nl-NL",
-  "date": "January 29, 2024",
   "locale": "nl_NL",
-  "subtitle": "Audio met AI omzetten naar bruikbare data, samenvattingen en vertalingen",
+  "description": "AI-gestuurde audio-analyse opent bruikbare inzichten, samenvattingen en vertalingen uit audiogegevens voor banking en productiviteit.",
+  "date": "January 29, 2024",
   "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp",
-  "title": "Door AI aangestuurde audio: inzichten, analyse en vertalingen"
+  "banner_alt": "Visualisatie van AI-gegenereerde audio-analyse",
+  "subtitle": "Audio met AI omzetten naar bruikbare data, samenvattingen en vertalingen",
+  "title": "Door AI aangestuurde audio: inzichten, analyse en vertalingen",
+  "keywords": "AI, audio, spraakherkenning, samenvatting, vertaling, machine learning",
+  "language": "nl-NL"
 }

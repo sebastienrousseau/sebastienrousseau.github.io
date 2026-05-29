@@ -1,6 +1,27 @@
 {
-  "count": 56,
+  "count": 57,
   "posts": [
+    {
+      "slug": "2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026",
+      "url": "https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html",
+      "date": "2026-06-18",
+      "title": "Why YAML Needs a Safer Rust Stack for AI, MCP, and Financial Infrastructure in 2026",
+      "description": "NoyaLib is a pure-Rust YAML 1.2 ecosystem for safe configuration, schema validation, formatting, LSP, MCP, WASM, and financial-infrastructure workflows.",
+      "keywords": [
+        "NoyaLib",
+        "YAML Rust",
+        "YAML 1.2",
+        "schema validation",
+        "MCP",
+        "WASM",
+        "LSP",
+        "safe configuration",
+        "financial infrastructure"
+      ],
+      "banner": "https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp",
+      "topics": [],
+      "language": "en-GB"
+    },
     {
       "slug": "2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026",
       "url": "https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html",

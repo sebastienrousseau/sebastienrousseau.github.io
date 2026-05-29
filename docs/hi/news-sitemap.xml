@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/hi/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>hi-IN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T19:23:52+00:00</news:publication_date>
+    <news:title>AI, MCP और वित्तीय बुनियादी ढाँचे के लिए YAML को सुरक्षित Rust स्टैक क्यों चाहिए</news:title>
+    <news:keywords>NoyaLib, YAML Rust, YAML 1.2, स्कीमा सत्यापन, MCP, WASM, LSP, सुरक्षित कॉन्फ़िगरेशन, वित्तीय बुनियादी ढाँचा</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

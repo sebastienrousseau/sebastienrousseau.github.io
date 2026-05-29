@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ha-NG">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 18 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 18 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>Me Yasa YAML Ke Buƙatar Tsarin Rust Mai Aminci ga AI, MCP, da Kayan Aikin Kuɗi a 2026 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="NoyaLib shi ne tsarin YAML 1.2 na Rust mai tsabta don configuration mai aminci, tabbatar da schema, LSP, MCP, WASM, da kayan aikin kuɗi.">
+<meta name="keywords" content="NoyaLib, YAML Rust, YAML 1.2, tabbatar da schema, MCP, WASM, LSP, configuration mai aminci, kayan aikin kuɗi">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="NoyaLib: Safer YAML for AI, MCP, and Finance">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-7SVrITPNOViFmWvd8ua/qsZ+Jpvu7C9ORTPunUCX2pA=' 'sha256-8wQau2u2+E4BgnR3k1R8L1C0U66q8rfxadgvjIfazMY=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-YgJNReDE8LhcLgqylQpscO0/4F89T+QUY708d5ILlQ8=' 'sha256-hMRyA9Ci4bopfhW5hr3fmhqe2soTDF66m1iPr1Hn+pY=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/ha/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Feed na Atom" href="/ha/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Me Yasa YAML Ke Buƙatar Tsarin Rust Mai Aminci ga AI, MCP, da Kayan Aikin Kuɗi a 2026 — Sebastien Rousseau">
+<meta property="og:description" content="NoyaLib shi ne tsarin YAML 1.2 na Rust mai tsabta don configuration mai aminci, tabbatar da schema, LSP, MCP, WASM, da kayan aikin kuɗi.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/ha/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="ha_NG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Me Yasa YAML Ke Buƙatar Tsarin Rust Mai Aminci ga AI, MCP, da Kayan Aikin Kuɗi a 2026 — Sebastien Rousseau">
+<meta name="twitter:description" content="NoyaLib shi ne tsarin YAML 1.2 na Rust mai tsabta don configuration mai aminci, tabbatar da schema, LSP, MCP, WASM, da kayan aikin kuɗi.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/ha/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Tsallaka zuwa babban abun ciki</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Maɓallin kewayawa" />
+      <div class="wrap">
+        <a class="ap-brand" href="/ha/index.html" aria-label="Sebastien Rousseau gida">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Babban kewayawa">
+          <ul class="ap-menu">
+            <li><a href="/ha/game-da-mu/index.html">About</a></li>
+            <li><a href="/ha/labarai/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/ha/takardun-bincike/index.html">Papers</a></li>
+            <li><a href="/ha/batutuwa/index.html">Batutuwa</a></li>
+            <li><a href="/ha/ayyukan/index.html">Projects</a></li>
+            <li><a href="/ha/jerin-waka/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Kunna jigon duhu" aria-pressed="false" title="Canza jigo">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Bincika (Cmd ko Ctrl + K)" title="Bincika (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Harshe">
+            <button type="button" class="ap-lang-toggle" aria-label="HA, Canza harshe" aria-expanded="false" aria-haspopup="menu" title="Canza harshe">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">HA</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/ha/tuntube-mu/index.html" aria-label="Tuntube mu">Tuntube mu ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Maɓallin kewayawa">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Me Yasa YAML Ke Buƙatar Tsarin Rust Mai Aminci ga AI, MCP, da Kayan Aikin Kuɗi a 2026</h1>
+      <p class="sub">YAML kayan aikin configuration ne; a zamanin wakilan AI da kayan aikin MCP, parsing, tabbatar, horon schema, da aminci sun fi muhimmanci a yanzu.</p>
+    <nav class="article-tags" aria-label="Batutuwa"><a href="/tags/index.html#h3-noyalib" class="article-tag" rel="tag">NoyaLib</a><a href="/tags/index.html#h3-yaml-rust" class="article-tag" rel="tag">YAML Rust</a><a href="/tags/index.html#h3-yaml-1-2" class="article-tag" rel="tag">YAML 1.2</a><a href="/tags/index.html#h3-tabbatar-da-schema" class="article-tag" rel="tag">tabbatar da schema</a><a href="/tags/index.html#h3-mcp" class="article-tag" rel="tag">MCP</a><a href="/tags/index.html#h3-wasm" class="article-tag" rel="tag">WASM</a><a href="/tags/index.html#h3-lsp" class="article-tag" rel="tag">LSP</a><a href="/tags/index.html#h3-configuration-mai-aminci" class="article-tag" rel="tag">configuration mai aminci</a><a href="/tags/index.html#h3-kayan-aikin-kui" class="article-tag" rel="tag">kayan aikin kuɗi</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-18T06:06:06+00:00" class="meta-pub">An buga 18 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Lokacin karatun da aka kiyasta">6 minti karatu</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Abubuwan da ke ciki</h2><ol><li><a href="#me-yasa-wannan-aikin-buaen-tushe-ke-da-muhimmanci-a-2026">Me Yasa Wannan Aikin Buɗaɗɗen Tushe Ke da Muhimmanci a 2026</a></li><li><a href="#ruwan-tabarau-na-gine-gine">Ruwan Tabarau na Gine-gine</a></li><li><a href="#siginonin-bibiya">Siginonin Bibiya</a></li><li><a href="#configuration-code-ne-na-samarwa">Configuration Code ne na Samarwa</a></li><li><a href="#me-yasa-ba-tare-da-asara-ba-ke-da-muhimmanci">Me Yasa Ba Tare da Asara Ba Ke da Muhimmanci</a></li><li><a href="#yaml-a-tsarin-wakili">YAML a Tsarin Wakili</a></li><li><a href="#abin-da-wannan-ke-nufi-bisa-masu-sauraro">Abin da Wannan Ke Nufi Bisa Masu Sauraro</a></li><li><a href="#kammalawa">Kammalawa</a></li><li><a href="#tambayoyin-da-akan-yi-akai-akai">Tambayoyin da Akan Yi Akai-akai</a></li><li><a href="#bayanai">Bayanai</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> NoyaLib shi ne tsarin YAML 1.2 na Rust mai tsabta don configuration mai aminci, tabbatar da schema, LSP, MCP, WASM, da kayan aikin kuɗi.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Me Yasa Wannan Aikin Buɗaɗɗen Tushe Ke da Muhimmanci a 2026.</strong> Ƙimar dabara ta buɗaɗɗen tushe a 2026 ba ta iyakance ga gaskiya, sake amfani, ko kyakkyawan zuciya na masu haɓakawa ba.</li>  <li><strong>Siginonin Bibiya.</strong> Hujja ta farko al&#x27;ada ce.</li>  <li><strong>Configuration Code ne na Samarwa.</strong> Hujja ta farko al&#x27;ada ce.</li>  <li><strong>Me Yasa Ba Tare da Asara Ba Ke da Muhimmanci.</strong> Parsing ba tare da asara ba yana kiyaye ra&#x27;ayoyi, oda, sarari, da tsari.</li></ul></aside><h1>Me Yasa YAML Ke Buƙatar Tsarin Rust Mai Aminci ga AI, MCP, da Kayan Aikin Kuɗi a 2026</h1>
+<!-- lead-start -->
+<aside class="lead" aria-label="Taƙaitaccen labari">
+<p><strong>TL;DR.</strong> YAML cikin shiru yana tafiyar da aikin CI, manifesto na Kubernetes, manufar tsaro, kayan aiki-a-matsayin-code, ma'anonin kayan aikin wakili, kuma ƙara ƙaruwa configuration na sabar MCP. NoyaLib shi ne tsarin YAML 1.2 na Rust mai tsabta wanda ke ɗaukar wannan saman a matsayin kayan aikin masu mahimmanci — sifili unsafe, bin ka'idar spec 406/406, serde mai gudana, CST ba tare da asara ba, tabbatar da JSON Schema, da ɗauri na LSP/MCP/WASM da aka kawo tare maimakon a manne su daga baya.</p>
+<p><strong>Manyan abubuwan ɗauka:</strong></p>
+<ul>
+<li><strong>YAML ya zama kayan aikin masu mahimmanci yanzu.</strong> CI, Kubernetes, manufar tsaro, kayan aikin wakili — kuskure ɗaya na parser ya zama gazawar samarwa.</li>
+<li><strong>Bin ka'idar spec ba &quot;abin so&quot; ba ne.</strong> Gwaje-gwajen tsarin gwamnati 406/406; duk wani abu da bai kai ba layi ne na kurakurai masu hankali na interop.</li>
+<li><strong>Serde mai gudana + CST ba tare da asara ba suna rufe ɓangarorin biyu.</strong> Gudu ga manyan configuration, bishiya ba tare da asara ba don kayan aiki da refactor.</li>
+<li><strong>Tabbatar da schema na cikin tsari ne.</strong> JSON Schema a matsayin ƙofa mai ƙarfi yana hana configuration mara kyau isa ga samarwa.</li>
+<li><strong>LSP + MCP + WASM a tsari ɗaya.</strong> Editor, wakili, da browser duka suna magana da injin ɗaya — babu rashin daidaito.</li>
+</ul>
+<p><strong>Karatun da ya shafi:</strong> <a href="/ha/2026-05-20-cloud-native-banking-financial-institutions-2026/">Cloud-native banking</a> · <a href="/ha/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/">AI operating system for payments</a> · <a href="/ha/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/">DORA + AI Act compliance stack</a></p>
+</aside>
+<!-- lead-end -->
+<p>YAML yana kama da mai sauƙi har sai ya rushe samarwa. Yana ɗauke da aikin CI, manufar kayan aiki, manifesto na Kubernetes, dokokin tsaro, configuration, metadata na takardu, kuma ƙara ƙaruwa ma'anonin kayan aikin da wakilai ke amfani da su. NoyaLib yana da muhimmanci saboda yana ɗaukar YAML a matsayin kayan aikin masu mahimmanci maimakon rubutu na sauƙi.</p>
+<p>Wurin tunani na buɗaɗɗen tushe na wannan labari shi ne <a href="https://github.com/sebastienrousseau/noyalib" title="noyalib">noyalib ⧉</a>. An sanya ma'ajiyar a matsayin: tsarin YAML 1.2 na Rust mai tsabta tare da sifili unsafe, 100% bin ka'idar spec ta gwajin tsarin gwamnati 406/406, serde mai gudana-na-farko, CST ba tare da asara ba, tabbatar da JSON Schema, kayan aikin CLI, LSP, MCP, da ɗauri na WASM.</p>
+<hr />
+<blockquote>
+<p><strong>Taƙaitaccen Hukumar Gudanarwa / Manyan Abubuwan Ɗauka</strong></p>
+<ul>
+<li><strong>YAML ɓangare ne na shimfiɗar sarrafawa.</strong> CI, tura, manufa, samfuri, MCP, da tsarin configuration sukan dogara da shi.</li>
+<li><strong>Aminci yana da muhimmanci.</strong> Aiwatar da Rust mai sifili unsafe tare da bin ka'idar spec labari ne mai ƙarfi ga ƙungiyoyin kayan aiki.</li>
+<li><strong>Parsing ba tare da asara ba yana buɗe kayan aiki mafi kyau.</strong> Formatter, LSP, editor, kayan aikin ƙaura, da refactor ta atomatik suna buƙatar parsing mai kiyaye tsari.</li>
+<li><strong>Tabbatar da schema shi ne shimfiɗar gudanarwa.</strong> Tabbatar da JSON Schema yana mai da configuration daga rubutu zuwa kwangiloli masu aiwatarwa.</li>
+<li><strong>MCP da WASM suna faɗaɗa aikin.</strong> Ana iya sanya NoyaLib don kayan aikin wakili da yanayin browser ko edge.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="me-yasa-wannan-aikin-buaen-tushe-ke-da-muhimmanci-a-2026">Me Yasa Wannan Aikin Buɗaɗɗen Tushe Ke da Muhimmanci a 2026 <a class="heading-anchor" href="#me-yasa-wannan-aikin-buaen-tushe-ke-da-muhimmanci-a-2026" aria-label="Hanyar haɗi zuwa Me Yasa Wannan Aikin Buɗaɗɗen Tushe Ke da Muhimmanci a 2026">#</a></h2>
+<p>Ƙimar dabara ta buɗaɗɗen tushe a 2026 ba ta iyakance ga gaskiya, sake amfani, ko kyakkyawan zuciya na masu haɓakawa ba. Ga bankuna da cibiyoyin kuɗi, kayan aikin buɗaɗɗen tushe ya zama hanya ta bincika tunani, gwada sarrafawa, rage opacity na masu siyarwa, da mai da da'awar gine-gine zuwa code wanda za a iya karantawa, fork, ƙarfafawa, da gudanarwa. Manyan ayyukan amfani ba demo ba ne. Aiwatar da tunani ne wanda ke bayyana yadda tsaro, isa, aiki, bin doka, da kwarewar mai haɓakawa suka dace tare.</p>
+<p>Wannan ita ce ruwan tabarau da ake buƙatar fahimtar noyalib. Ba kawai ma'ajiya ba ce; hujja ce ta zane mai ƙarfi. Tana cewa kayan aikin masu mahimmanci ya kamata su zama masu sauƙin bincike, masu haɗawa, masu takardun, masu gwaji, da masu fahimta ga mutanen da ke dogara da su. A sabis na kuɗi, hakan yana da muhimmanci saboda tsarin ƙara ƙaruwa suna zaune a haɗakar AI mai wakili, biya na ainihin lokaci, cryptography na bayan ƙididdiga, juriya na cloud-native, bayanai masu tsari, da shaida ta hukuma.</p>
+<h2 id="ruwan-tabarau-na-gine-gine">Ruwan Tabarau na Gine-gine <a class="heading-anchor" href="#ruwan-tabarau-na-gine-gine" aria-label="Hanyar haɗi zuwa Ruwan Tabarau na Gine-gine">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Shimfiɗa</th>
+<th>Yanke Shawarar Zane</th>
+<th>Me Yasa Ke da Muhimmanci</th>
+<th>Haɗari Idan Ba A Kula Ba</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Parser</strong></td>
+<td>Parser na Rust mai bin YAML 1.2</td>
+<td>Tushe na configuration mai dogara</td>
+<td>Parsing mai shubuha da kuma drift na samarwa</td>
+</tr>
+<tr>
+<td><strong>Aminci</strong></td>
+<td>Zanen sifili unsafe</td>
+<td>Yana rage damuwa ta amincin ƙwaƙwalwa a kayan aikin kayan aiki</td>
+<td>Raunin parser</td>
+</tr>
+<tr>
+<td><strong>CST</strong></td>
+<td>CST ba tare da asara ba</td>
+<td>Yana ba da damar formatting da refactoring</td>
+<td>Kayan aiki suna lalata ra'ayoyi da tsari</td>
+</tr>
+<tr>
+<td><strong>Tabbatar</strong></td>
+<td>Tallafin JSON Schema</td>
+<td>Yana mai da configuration mai aiwatarwa</td>
+<td>Configuration da ba a tabbatar ba ya isa samarwa</td>
+</tr>
+<tr>
+<td><strong>Kayan aiki</strong></td>
+<td>CLI, LSP, MCP, WASM</td>
+<td>Yana mai da parser ya zama tsari</td>
+<td>Library ya kasance keɓe</td>
+</tr>
+</tbody>
+</table>
+<h2 id="siginonin-bibiya">Siginonin Bibiya <a class="heading-anchor" href="#siginonin-bibiya" aria-label="Hanyar haɗi zuwa Siginonin Bibiya">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Sigina</th>
+<th>Abin da Yake Nufi</th>
+<th>Tunani</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tsarin gwamnati 406/406</strong></td>
+<td>Ma'ajiyar tana sanya bin ka'ida a matsayin da'awar mai aunawa</td>
+<td><a href="https://github.com/sebastienrousseau/noyalib" title="noyalib repository">noyalib ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Sifili unsafe</strong></td>
+<td>Aminci ɓangare ne na asalin aikin</td>
+<td><a href="https://github.com/sebastienrousseau/noyalib" title="noyalib repository">noyalib ⧉</a></td>
+</tr>
+<tr>
+<td><strong>LSP da kayan aikin CLI</strong></td>
+<td>Aikin yana mai da hankali ga aikin mai haɓakawa, ba kawai cinye library ba</td>
+<td><a href="https://github.com/sebastienrousseau/noyalib" title="noyalib repository">noyalib ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Batun MCP</strong></td>
+<td>Kayan aikin YAML na iya zama mai isa ga wakili</td>
+<td><a href="https://github.com/sebastienrousseau/noyalib" title="noyalib repository">noyalib ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Ɗauri na WASM</strong></td>
+<td>Tabbatar da configuration na iya motsawa zuwa browser, edge, da yanayin embedded</td>
+<td><a href="https://github.com/sebastienrousseau/noyalib" title="noyalib repository">noyalib ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="configuration-code-ne-na-samarwa">Configuration Code ne na Samarwa <a class="heading-anchor" href="#configuration-code-ne-na-samarwa" aria-label="Hanyar haɗi zuwa Configuration Code ne na Samarwa">#</a></h2>
+<p>Hujja ta farko al'ada ce. Bai kamata a ɗauki YAML a matsayin rubutu mara haɗari ba. Fayil na configuration da ba a kafa shi da kyau ba, mai shubuha, ko aka tabbatar da shi a hankali zai iya canza kayan aiki, ya rusa CI, ya raunana manufar tsaro, ko ya rikitar da toolchain na AI. Hakan ya sa ingancin parser na YAML ya zama damuwa ta tsarin.</p>
+<h2 id="me-yasa-ba-tare-da-asara-ba-ke-da-muhimmanci">Me Yasa Ba Tare da Asara Ba Ke da Muhimmanci <a class="heading-anchor" href="#me-yasa-ba-tare-da-asara-ba-ke-da-muhimmanci" aria-label="Hanyar haɗi zuwa Me Yasa Ba Tare da Asara Ba Ke da Muhimmanci">#</a></h2>
+<p>Parsing ba tare da asara ba yana kiyaye ra'ayoyi, oda, sarari, da tsari. Hakan yana da muhimmanci ga fayilolin duniya na zahiri saboda mutane suna ƙara bayanai ga configuration. Ƙungiyoyin injiniya ba za su amince da formatter ko kayan aikin ƙaura wanda ke lalata ma'ana a kusa da bayanai ba.</p>
+<h2 id="yaml-a-tsarin-wakili">YAML a Tsarin Wakili <a class="heading-anchor" href="#yaml-a-tsarin-wakili" aria-label="Hanyar haɗi zuwa YAML a Tsarin Wakili">#</a></h2>
+<p>Wakilai ƙara ƙaruwa suna karanta, rubutawa, da gyara configuration. Idan mataimakin AI ya sabunta manifesto na tura, rajistar kayan aikin MCP, gaba na abun ciki, ko fayil na aiki, parser da mai tabbatarwa sun zama ɓangare na iyakar aminci. NoyaLib yana ba ka labari kan wannan iyaka.</p>
+<h2 id="abin-da-wannan-ke-nufi-bisa-masu-sauraro">Abin da Wannan Ke Nufi Bisa Masu Sauraro <a class="heading-anchor" href="#abin-da-wannan-ke-nufi-bisa-masu-sauraro" aria-label="Hanyar haɗi zuwa Abin da Wannan Ke Nufi Bisa Masu Sauraro">#</a></h2>
+<h3 id="ga-shugabannin-fasahar-banki">Ga Shugabannin Fasahar Banki <a class="heading-anchor" href="#ga-shugabannin-fasahar-banki" aria-label="Hanyar haɗi zuwa Ga Shugabannin Fasahar Banki">#</a></h3>
+<p>Tambayar ita ce ko aikin zai iya taimakawa wajen mai da matsi mai dabara zuwa gine-gine mai aiwatarwa. Ƙima ta fi ƙarfi lokacin da ma'ajiyar ta ba ƙungiyoyi wani abu na zahiri da za a bincika: interface, configuration, gwaje-gwaje, iyakokin tsaro, tunanin tura, da yanayin gazawa.</p>
+<h3 id="ga-ungiyoyin-tsaro-da-haari">Ga Ƙungiyoyin Tsaro da Haɗari <a class="heading-anchor" href="#ga-ungiyoyin-tsaro-da-haari" aria-label="Hanyar haɗi zuwa Ga Ƙungiyoyin Tsaro da Haɗari">#</a></h3>
+<p>Ya kamata a kimanta aikin ba kawai don fasali ba amma don shaidar sarrafawa. Kayan aikin kuɗi na buɗaɗɗen tushe mai amfani yana fallasa yadda ainihi, asirai, tabbatarwa, log na bincike, iyakokin gudu, sa hannu, asali, da farfaɗowa ya kamata su yi aiki.</p>
+<h3 id="ga-masu-haakawa-da-injiniyoyin-dandamali">Ga Masu Haɓakawa da Injiniyoyin Dandamali <a class="heading-anchor" href="#ga-masu-haakawa-da-injiniyoyin-dandamali" aria-label="Hanyar haɗi zuwa Ga Masu Haɓakawa da Injiniyoyin Dandamali">#</a></h3>
+<p>Gwajin mafi muhimmanci shi ne ko aikin yana rage nauyin tunani ba tare da ɓoye mahimman na'urori ba. Buɗaɗɗen tushe mai kyau ya kamata ya sa hanya mai aminci ta zama hanya mai sauƙi yayin da har yanzu yana ba injiniyoyi masu kwarewa damar fahimta da gyara aiwatarwa.</p>
+<h3 id="ga-masu-bayar-da-gudummawa">Ga Masu Bayar da Gudummawa <a class="heading-anchor" href="#ga-masu-bayar-da-gudummawa" aria-label="Hanyar haɗi zuwa Ga Masu Bayar da Gudummawa">#</a></h3>
+<p>Damar ita ce a ƙarfafa aikin inda cibiyoyin gaske ke buƙatar tabbaci: takardu, misalai, gwaje-gwajen bin ka'ida, ƙarfafa CI, samfuran barazana, profile na aiki, binciken isa, da jagororin haɗawa.</p>
+<h2 id="kammalawa">Kammalawa <a class="heading-anchor" href="#kammalawa" aria-label="Hanyar haɗi zuwa Kammalawa">#</a></h2>
+<p>Dalilin rubutu kan noyalib shi ne yana mai da matsalar masana'antu mai faɗi zuwa wani abu na zahiri. A 2026, bankuna ba sa buƙatar ƙarin harshen canzawa mai shubuha. Suna buƙatar tsarin masu sauƙin bincike waɗanda ke nuna yadda za a iya gina, tabbatar, gwada, da gudanar da kayan aikin zamani. Buɗaɗɗen tushe shi ne hanya mafi inganci don sanya wannan hujja a fili.</p>
+<h2 id="tambayoyin-da-akan-yi-akai-akai">Tambayoyin da Akan Yi Akai-akai <a class="heading-anchor" href="#tambayoyin-da-akan-yi-akai-akai" aria-label="Hanyar haɗi zuwa Tambayoyin da Akan Yi Akai-akai">#</a></h2>
+<p><strong>Me yasa YAML ya cancanci labari na musamman?</strong></p>
+<p>Saboda YAML yana zaune cikin CI, tura, manufa, metadata, da aikin configuration na wakili.</p>
+<p><strong>Mene ne mafi ƙarfin kusantar NoyaLib?</strong></p>
+<p>YAML mai aminci, mai bin ka'idar spec, mai san schema ga kayan aikin da ba za su iya jurewa configuration mai shubuha ba.</p>
+<p><strong>Wa ne masu sauraro?</strong></p>
+<p>Masu haɓakawa na Rust, injiniyoyin dandamali, ƙungiyoyin DevOps, injiniyoyin tsaro, da masu gina kayan aiki.</p>
+<p><strong>Yaya MCP ke dacewa?</strong></p>
+<p>MCP yana sa kayan aiki ya zama mai isa ga wakilai, wanda ke ƙara muhimmancin ayyukan configuration da aka tabbatar da kuma masu tsari.</p>
+<h2 id="bayanai">Bayanai <a class="heading-anchor" href="#bayanai" aria-label="Hanyar haɗi zuwa Bayanai">#</a></h2>
+<ul>
+<li>GitHub, (2026). <a href="https://github.com/sebastienrousseau/noyalib" title="noyalib repository">noyalib repository ⧉</a>.</li>
+<li>YAML, (2026). <a href="https://yaml.org/spec/" title="YAML specification">YAML specification ⧉</a>.</li>
+<li>JSON Schema, (2026). <a href="https://json-schema.org/" title="JSON Schema specification">JSON Schema specification ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Bita ta ƙarshe <time datetime="2026-06-18">2026-06-18</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/ha/game-da-mu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Manyan masanin fasahar banki; ina rubutu kan AI mai amfani, ƙaura zuwa ISO 20022, kiriftografi bayan kwantum don sabis na kuɗi da sauye-sauyen tsari na biyan kuɗi na manyan.</span><span class="author-credentials">Fiye da shekaru 20 na ƙwarewa a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/ha/game-da-mu/index.html">Cikakken bayanin martaba</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Bita ta ƙarshe <time datetime="2026-05-29">2026-05-29</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Karatun da ke da alaƙa</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/ha/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026" class="related-media" aria-label="Biyan Kuɗi ta Wakili a Banki: Yarda, Alhaki, da Sabon UX na Biyan Kuɗi 2026" tabindex="-1"><img alt="Agentic payments architecture diagram showing AI agents, consent mandates, tokenised credentials, card networks, banks, merchants, and audit trails" src="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="biyan-kui-ta-wakili-a-banki-yarda-alhaki-da-sabon-ux-na-biyan-kui-2026"><a href="https://sebastienrousseau.com/ha/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026">Biyan Kuɗi ta Wakili a Banki: Yarda, Alhaki, da Sabon UX na Biyan Kuɗi 2026</a> <a class="heading-anchor" href="#biyan-kui-ta-wakili-a-banki-yarda-alhaki-da-sabon-ux-na-biyan-kui-2026" aria-label="Hanyar haɗi zuwa Biyan Kuɗi ta Wakili a Banki: Yarda, Alhaki, da Sabon UX na Biyan Kuɗi 2026">#</a></h3><p><time datetime="2026-05-23">2026-05-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ha/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html" class="related-media" aria-label="RustLogs (RLG): Structured Logging Library for Rust" tabindex="-1"><img alt="Banner for RustLogs (RLG)" src="https://cloudcdn.pro/api/transform?url=/stocks/images/rustlogs.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="rustlogs-rlg-structured-logging-library-for-rust"><a href="https://sebastienrousseau.com/ha/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">RustLogs (RLG): Structured Logging Library for Rust</a> <a class="heading-anchor" href="#rustlogs-rlg-structured-logging-library-for-rust" aria-label="Hanyar haɗi zuwa RustLogs (RLG): Structured Logging Library for Rust">#</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ha/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html" class="related-media" aria-label="Alien Studio: My Tech-to Art Journey in Photography" tabindex="-1"><img alt="Sunset's muse, a serene glance; beauty in stillness" src="https://cloudcdn.pro/api/transform?url=/clients/alienstudio/v1/collections/radiance/radiance-08.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="alien-studio-my-tech-to-art-journey-in-photography"><a href="https://sebastienrousseau.com/ha/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html">Alien Studio: My Tech-to Art Journey in Photography</a> <a class="heading-anchor" href="#alien-studio-my-tech-to-art-journey-in-photography" aria-label="Hanyar haɗi zuwa Alien Studio: My Tech-to Art Journey in Photography">#</a></h3><p><time datetime="2024-01-15">2024-01-15</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Tushen bayanai & nassoshi</h2><ol class="article-sources-list"><li><a href="https://github.com/sebastienrousseau/noyalib" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/sebastienrousseau/noyalib</span></a></li></ol></aside><nav class="post-pagination" aria-label="Shafin labarin"><a class="post-pagination-prev" href="/ha/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">Baya</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/ha/game-da-mu/index.html">About</a></li>
+              <li><a href="/ha/tuntube-mu/index.html">Contact</a></li>
+              <li><a href="/ha/an-yi-da-static-site-generator/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Rubuce-rubuce</h2>
+            <ul>
+              <li><a href="/ha/labarai/index.html">Articles</a></li>
+              <li><a href="/ha/takardun-bincike/index.html">Papers</a></li>
+              <li><a href="/ha/tags/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Aiki</h2>
+            <ul>
+              <li><a href="/ha/ayyukan/index.html">Projects</a></li>
+              <li><a href="/ha/jerin-waka/index.html">Playlists</a></li>
+              <li><a href="/ha/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Tuntuɓa</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Yi rajistar wasiƙar labarai">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — bayanan bincike kan biyan kuɗi, AI da kiriftografi bayan kwantum. Babu spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="kai@banki.com.ng" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Yi rajista</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Hanyoyin sadarwa na zamantakewa">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau a kan Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau a kan Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau a kan LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau a kan LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau a kan Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau a kan Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau a kan YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau a kan YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/ha/isar-da-hannu/index.html">Accessibility</a> ·
+            <a href="/ha/sirri/index.html">Privacy</a> ·
+            <a href="/ha/sharudda/index.html">Terms</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ha"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ha"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1211,"about":{"@type":"Thing","name":"Rust","sameAs":["https://en.wikipedia.org/wiki/Rust_(programming_language)","https://www.wikidata.org/wiki/Q575650"]},"headline":"Me Yasa YAML Ke Buƙatar Tsarin Rust Mai Aminci ga AI, MCP, da Kayan Aikin Kuɗi a 2026","description":"NoyaLib shi ne tsarin YAML 1.2 na Rust mai tsabta don configuration mai aminci, tabbatar da schema, LSP, MCP, WASM, da kayan aikin kuɗi.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp","width":"100vw","height":"100vh","caption":"Zanen gine-gine a ƙarƙashin haske mai ban mamaki — alama ce ta matsayin NoyaLib a matsayin shimfiɗar YAML mai ɗaukar nauyi a ƙarƙashin CI, Kubernetes, MCP, da configuration na sabis na kuɗi"},"url":"https://sebastienrousseau.com/ha/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/","datePublished":"2026-06-18T06:06:06+00:00","dateModified":"2026-06-18","inLanguage":"ha","keywords":"NoyaLib, YAML Rust, YAML 1.2, tabbatar da schema, MCP, WASM, LSP, configuration mai aminci, kayan aikin kuɗi","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ha/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ha"},"citation":[{"@type":"CreativeWork","url":"https://github.com/sebastienrousseau/noyalib"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ha/"},{"@type":"ListItem","position":3,"name":"Me Yasa YAML Ke Buƙatar Tsarin Rust Mai Aminci ga AI, MCP, da Kayan Aikin Kuɗi a 2026","item":"https://sebastienrousseau.com/ha/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Bincika">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Bincika</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Bincika">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Bincika cikin takardu..." autocomplete="off" aria-label="Bincika"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> rufe</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> kewayawa</span><span><kbd>Enter</kbd> buɗe</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Me Yasa YAML Ke Buƙatar Tsarin Rust Mai Aminci ga AI, MCP, da Kayan Aikin Kuɗi a 2026","url":"https://sebastienrousseau.com/ha/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/","inLanguage":"ha-NG","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"NoyaLib, YAML Rust, YAML 1.2, tabbatar da schema, MCP, WASM, LSP, configuration mai aminci, kayan aikin kuɗi","programmingLanguage":["Rust","WebAssembly"]}</script></body>
+</html>

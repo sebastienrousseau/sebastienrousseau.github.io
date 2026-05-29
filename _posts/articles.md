@@ -105,21 +105,33 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html" title="DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks">
-<img alt="Compliance stack diagram showing DORA resilience, EU AI Act transparency, data sovereignty, cloud concentration risk, audit logs, model governance, and third-party providers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html" title="Why YAML Needs a Safer Rust Stack for AI, MCP, and Financial Infrastructure in 2026">
+<img alt="Architectural geometry under dramatic light — symbolising NoyaLib's role as the load-bearing YAML layer beneath CI, Kubernetes, MCP, and financial-services configuration" src="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Dora · Eu Ai Act · Data Sovereignty</span>
-<h3><a href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html" title="DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-28">May 28, 2026</time> · Sebastien Rousseau</p>
-<p>DORA, the EU AI Act, GDPR, cloud concentration risk, and data sovereignty converge into one 2026 compliance stack for banks. The strategic question is design discipline — running compliance, AI governance, ICT-resilience evidence, and sovereign-data choices as one architecture, not five parallel programmes.</p>
-<p><a class="pill ghost" href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html" title="DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks">Read the full story</a></p>
+<span class="newsroom-eyebrow">Noyalib · Yaml · Rust</span>
+<h3><a href="/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html" title="Why YAML Needs a Safer Rust Stack for AI, MCP, and Financial Infrastructure in 2026">Why YAML Needs a Safer Rust Stack for AI, MCP, and Financial Infrastructure in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-18">June 18, 2026</time> · Sebastien Rousseau</p>
+<p>NoyaLib is a pure-Rust YAML 1.2 ecosystem — zero unsafe, 406/406 spec compliance, streaming serde, lossless CST, JSON-Schema validation, LSP/MCP/WASM bindings — engineered for the CI, Kubernetes, agent-tool, and financial-infrastructure workloads where YAML stopped being convenience text and became critical.</p>
+<p><a class="pill ghost" href="/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html" title="Why YAML Needs a Safer Rust Stack for AI, MCP, and Financial Infrastructure in 2026">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html" title="DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks">
+<img alt="Compliance stack diagram showing DORA resilience, EU AI Act transparency, data sovereignty, cloud concentration risk, audit logs, model governance, and third-party providers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Dora · Eu Ai Act · Data Sovereignty</span>
+<h3><a href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html" title="DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-28">May 28, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">DORA, the EU AI Act, GDPR, cloud concentration risk, and data sovereignty converge into one 2026 compliance stack for banks. The strategic question is design discipline — running compliance, AI governance, ICT-resilience evidence, and sovereign-data choices as one architecture, not five parallel programmes.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html" title="AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026">

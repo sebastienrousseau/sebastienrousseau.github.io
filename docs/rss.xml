@@ -6,8 +6,484 @@
     <description>AI, banking and payments expert. Senior payments leader. Applied AI, ISO 20022 migration, wholesale payments and post-quantum cryptography.</description>
     <atom:link href="https://sebastienrousseau.com/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Thu, 28 May 2026 06:06:06 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2026 06:06:06 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>Why YAML Needs a Safer Rust Stack for AI, MCP, and Financial Infrastructure in 2026</title>
+      <link>https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026</link>
+      <description>NoyaLib is a pure-Rust YAML 1.2 ecosystem for safe configuration, schema validation, formatting, LSP, MCP, WASM, and financial-infrastructure workflows.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>schema validation</category>
+      <category>WASM</category>
+      <category>safe configuration</category>
+    </item>
+    <item>
+      <title>AI, MCP ve Finansal Altyapı için YAML'ın 2026'da Neden Daha Güvenli bir Rust Yığınına İhtiyacı Var</title>
+      <link>https://sebastienrousseau.com/tr/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib, güvenli konfigürasyon, şema doğrulama, biçimlendirme, LSP, MCP, WASM ve finansal altyapı iş akışları için saf Rust YAML 1.2 ekosistemidir.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>şema doğrulama</category>
+      <category>WASM</category>
+      <category>güvenli konfigürasyon</category>
+    </item>
+    <item>
+      <title>ทำไม YAML จึงต้องการสแต็ก Rust ที่ปลอดภัยกว่าสำหรับ AI, MCP และโครงสร้างพื้นฐานทางการเงินในปี 2569</title>
+      <link>https://sebastienrousseau.com/th/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib คือระบบนิเวศ YAML 1.2 แบบ Rust บริสุทธิ์สำหรับการกำหนดค่าที่ปลอดภัย การตรวจสอบสคีมา การจัดรูปแบบ LSP, MCP, WASM และงานโครงสร้างพื้นฐานทางการเงิน</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>การตรวจสอบสคีมา</category>
+      <category>WASM</category>
+      <category>การกำหนดค่าที่ปลอดภัย</category>
+    </item>
+    <item>
+      <title>NoyaLib: un stack Rust más seguro para YAML en IA, MCP y banca 2026</title>
+      <link>https://sebastienrousseau.com/es/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib es un ecosistema YAML 1.2 en Rust puro para configuración segura, validación de esquema, formato, LSP, MCP, WASM e infraestructura financiera.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>validación de esquema</category>
+      <category>WASM</category>
+      <category>configuración segura</category>
+    </item>
+    <item>
+      <title>Pourquoi YAML a besoin d'une pile Rust plus sûre pour l'IA, MCP et la finance en 2026</title>
+      <link>https://sebastienrousseau.com/fr/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib est un écosystème YAML 1.2 pur Rust pour la configuration sûre, la validation de schéma, le formatage, LSP, MCP, WASM et les flux d&apos;infrastructure financière.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>validation de schéma</category>
+      <category>WASM</category>
+      <category>configuration sûre</category>
+    </item>
+    <item>
+      <title>Mengapa YAML Membutuhkan Tumpukan Rust yang Lebih Aman untuk AI, MCP, dan Infrastruktur Keuangan 2026</title>
+      <link>https://sebastienrousseau.com/id/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib adalah ekosistem YAML 1.2 Rust murni untuk konfigurasi aman, validasi skema, pemformatan, LSP, MCP, WASM, dan alur infrastruktur keuangan.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>validasi skema</category>
+      <category>WASM</category>
+      <category>konfigurasi aman</category>
+    </item>
+    <item>
+      <title>2026년 AI·MCP·금융 인프라를 위해 YAML에 더 안전한 Rust 스택이 필요한 이유</title>
+      <link>https://sebastienrousseau.com/ko/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib은 안전한 구성, 스키마 검증, 포매팅, LSP, MCP, WASM, 금융 인프라 워크플로를 위한 순수 Rust YAML 1.2 생태계입니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>스키마 검증</category>
+      <category>WASM</category>
+      <category>안전한 구성</category>
+    </item>
+    <item>
+      <title>Warum YAML 2026 einen sichereren Rust-Stack für KI, MCP und Finanzinfrastruktur braucht</title>
+      <link>https://sebastienrousseau.com/de/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib ist ein reines Rust-YAML-1.2-Ökosystem für sichere Konfiguration, Schema-Validierung, Formatierung, LSP, MCP, WASM und Finanzinfrastruktur.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>Schema-Validierung</category>
+      <category>WASM</category>
+      <category>sichere Konfiguration</category>
+    </item>
+    <item>
+      <title>AI, MCP और वित्तीय बुनियादी ढाँचे के लिए YAML को सुरक्षित Rust स्टैक क्यों चाहिए</title>
+      <link>https://sebastienrousseau.com/hi/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib एक शुद्ध Rust YAML 1.2 पारिस्थितिकी है — सुरक्षित कॉन्फ़िगरेशन, स्कीमा सत्यापन, स्वरूपण, LSP, MCP, WASM और वित्तीय बुनियादी ढाँचे के लिए।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>स्कीमा सत्यापन</category>
+      <category>WASM</category>
+      <category>सुरक्षित कॉन्फ़िगरेशन</category>
+    </item>
+    <item>
+      <title>Bakit Kailangan ng YAML ang Mas Ligtas na Rust Stack para sa AI, MCP, at Financial Infrastructure sa 2026</title>
+      <link>https://sebastienrousseau.com/fil/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>Ang NoyaLib ay puro Rust na YAML 1.2 ecosystem para sa ligtas na configuration, schema validation, formatting, LSP, MCP, WASM, at workflow ng financial infrastructure.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>schema validation</category>
+      <category>WASM</category>
+      <category>ligtas na configuration</category>
+    </item>
+    <item>
+      <title>২০২৬-এ AI, MCP ও আর্থিক পরিকাঠামোর জন্য YAML-এর কেন একটি নিরাপদ Rust স্ট্যাক প্রয়োজন</title>
+      <link>https://sebastienrousseau.com/bn/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib হল বিশুদ্ধ Rust-এ লেখা YAML 1.2 ইকোসিস্টেম — নিরাপদ কনফিগারেশন পরিকাঠামো, স্কিমা যাচাই, ফরম্যাটিং, LSP, MCP ও WASM সমর্থন সহ।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>স্কিমা যাচাই</category>
+      <category>WASM</category>
+      <category>নিরাপদ কনফিগারেশন</category>
+    </item>
+    <item>
+      <title>Waarom YAML een veiligere Rust-stack nodig heeft voor AI, MCP en financiële infrastructuur in 2026</title>
+      <link>https://sebastienrousseau.com/nl/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib is een pure Rust YAML 1.2-ecosysteem voor veilige configuratie, schema-validatie, formattering, LSP, MCP, WASM en financiële infrastructuur.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>schema-validatie</category>
+      <category>WASM</category>
+      <category>veilige configuratie</category>
+    </item>
+    <item>
+      <title>Por que o YAML precisa de uma stack Rust mais segura para IA, MCP e infraestrutura financeira em 2026</title>
+      <link>https://sebastienrousseau.com/pt-br/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib é um ecossistema YAML 1.2 em Rust puro para configuração segura, validação de esquema, formatação, LSP, MCP, WASM e infraestrutura financeira.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>validação de esquema</category>
+      <category>WASM</category>
+      <category>configuração segura</category>
+    </item>
+    <item>
+      <title>لماذا يحتاج YAML إلى حزمة Rust أكثر أمانًا للذكاء الاصطناعي وMCP والبنية التحتية المالية في 2026</title>
+      <link>https://sebastienrousseau.com/ar/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib منظومة YAML 1.2 بلغة Rust خالص، للتكوين الآمن والتحقق من المخطط والتنسيق وLSP وMCP وWASM وسير عمل البنية التحتية المالية.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>التحقق من المخطط</category>
+      <category>WASM</category>
+      <category>التكوين الآمن</category>
+    </item>
+    <item>
+      <title>Me Yasa YAML Ke Buƙatar Tsarin Rust Mai Aminci ga AI, MCP, da Kayan Aikin Kuɗi a 2026</title>
+      <link>https://sebastienrousseau.com/ha/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib shi ne tsarin YAML 1.2 na Rust mai tsabta don configuration mai aminci, tabbatar da schema, LSP, MCP, WASM, da kayan aikin kuɗi.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>tabbatar da schema</category>
+      <category>WASM</category>
+      <category>configuration mai aminci</category>
+    </item>
+    <item>
+      <title>Чому YAML потребує безпечнішого стеку Rust для ШІ, MCP і фінансів у 2026</title>
+      <link>https://sebastienrousseau.com/uk/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib — це екосистема YAML 1.2 на чистому Rust для безпечної конфігурації, валідації схеми, форматування, LSP, MCP, WASM та фінансової інфраструктури.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>валідація схеми</category>
+      <category>WASM</category>
+      <category>безпечна конфігурація</category>
+    </item>
+    <item>
+      <title>Ìdí Tí YAML Fi Nílò Ẹ̀rọ Rust Aláàbò Sí I fún AI, MCP, àti Ẹ̀rọ Ìnáwó ní 2026</title>
+      <link>https://sebastienrousseau.com/yo/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib jẹ́ ẹ̀rọ YAML 1.2 Rust mímọ́ fún ẹ̀rọ ìsọfúnni aláàbò, ìfọwọsi schema, LSP, MCP, WASM, àti ẹ̀rọ ìnáwó.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>ìfọwọsi schema</category>
+      <category>WASM</category>
+      <category>ẹ̀rọ ìsọfúnni aláàbò</category>
+    </item>
+    <item>
+      <title>YAML are nevoie de o stivă Rust mai sigură pentru AI, MCP și finanțe</title>
+      <link>https://sebastienrousseau.com/ro/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib este un ecosistem YAML 1.2 în Rust pur pentru configurare sigură, validare a schemei, formatare, LSP, MCP, WASM și infrastructură financiară.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>validare schemă</category>
+      <category>WASM</category>
+      <category>configurare sigură</category>
+    </item>
+    <item>
+      <title>NoyaLib: более безопасный YAML на Rust для ИИ, MCP и финансов в 2026</title>
+      <link>https://sebastienrousseau.com/ru/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib — экосистема YAML 1.2 на чистом Rust для безопасной конфигурации, валидации схемы, форматирования, LSP, MCP, WASM и финансовой инфраструктуры.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>валидация схемы</category>
+      <category>WASM</category>
+      <category>безопасная конфигурация</category>
+    </item>
+    <item>
+      <title>Proč YAML potřebuje bezpečnější Rust stack pro AI, MCP a finanční infrastrukturu v roce 2026</title>
+      <link>https://sebastienrousseau.com/cs/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib je čistý Rust ekosystém YAML 1.2 pro bezpečnou konfiguraci, validaci schématu, formátování, LSP, MCP, WASM a workflow finanční infrastruktury.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>validace schématu</category>
+      <category>WASM</category>
+      <category>bezpečná konfigurace</category>
+    </item>
+    <item>
+      <title>Perché YAML ha bisogno di uno stack Rust più sicuro per AI, MCP e finanza nel 2026</title>
+      <link>https://sebastienrousseau.com/it/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib è un ecosistema YAML 1.2 in Rust puro per configurazione sicura, validazione dello schema, formattazione, LSP, MCP, WASM e infrastruttura finanziaria.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>validazione dello schema</category>
+      <category>WASM</category>
+      <category>configurazione sicura</category>
+    </item>
+    <item>
+      <title>2026年、AI・MCP・金融インフラに必要なより安全なYAML Rustスタック</title>
+      <link>https://sebastienrousseau.com/ja/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLibは、安全な設定、スキーマ検証、整形、LSP、MCP、WASM、金融インフラのワークフローに対応する純RustのYAML 1.2エコシステムです。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>スキーマ検証</category>
+      <category>WASM</category>
+      <category>安全な設定</category>
+    </item>
+    <item>
+      <title>מדוע YAML זקוק לערימת Rust בטוחה יותר ל-AI, MCP ותשתית פיננסית ב-2026</title>
+      <link>https://sebastienrousseau.com/he/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib היא אקוסיסטמת YAML 1.2 ב-Rust טהור לתצורה בטוחה, אימות סכמה, פורמטינג, LSP, MCP, WASM וזרימות עבודה של תשתית פיננסית.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>אימות סכמה</category>
+      <category>WASM</category>
+      <category>תצורה בטוחה</category>
+    </item>
+    <item>
+      <title>Varför YAML behöver en säkrare Rust-stack för AI, MCP och finansiell infrastruktur 2026</title>
+      <link>https://sebastienrousseau.com/sv/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib är ett ekosystem i ren Rust för YAML 1.2 — säker konfiguration, schemavalidering, formatering, LSP, MCP, WASM och finansiell infrastruktur.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>schemavalidering</category>
+      <category>WASM</category>
+      <category>säker konfiguration</category>
+    </item>
+    <item>
+      <title>Vì sao YAML cần ngăn xếp Rust an toàn hơn cho AI, MCP và hạ tầng tài chính trong 2026</title>
+      <link>https://sebastienrousseau.com/vi/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib là hệ sinh thái YAML 1.2 Rust thuần cho cấu hình an toàn, xác thực schema, định dạng, LSP, MCP, WASM và quy trình hạ tầng tài chính.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>xác thực schema</category>
+      <category>WASM</category>
+      <category>cấu hình an toàn</category>
+    </item>
+    <item>
+      <title>Dlaczego YAML potrzebuje bezpieczniejszego stosu Rust dla AI, MCP i infrastruktury finansowej w 2026</title>
+      <link>https://sebastienrousseau.com/pl/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib to ekosystem YAML 1.2 w czystym Rust dla bezpiecznej konfiguracji, walidacji schematu, formatowania, LSP, MCP, WASM i infrastruktury finansowej.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>walidacja schematu</category>
+      <category>WASM</category>
+      <category>bezpieczna konfiguracja</category>
+    </item>
+    <item>
+      <title>2026:AI、MCP 與金融的更安全YAML Rust 堆疊</title>
+      <link>https://sebastienrousseau.com/zh-hant/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib 是純Rust YAML 1.2 生態系,涵蓋安全配置、模式驗證、格式化、LSP、MCP、WASM 與金融基礎設施工作流。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>結構描述驗證</category>
+      <category>WASM</category>
+      <category>安全配置</category>
+    </item>
+    <item>
+      <title>2026年：AI、MCP与金融基础设施为何需要更安全的Rust YAML栈</title>
+      <link>https://sebastienrousseau.com/zh-hans/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</link>
+      <description>NoyaLib：纯Rust的YAML 1.2生态，覆盖安全配置、模式验证、格式化、LSP、MCP、WASM与金融基础设施工作流。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>NoyaLib</category>
+      <category>YAML</category>
+      <category>Rust</category>
+      <category>MCP</category>
+      <category>模式验证</category>
+      <category>WASM</category>
+      <category>安全配置</category>
+    </item>
     <item>
       <title>DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</title>
       <link>https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026</link>
@@ -359,476 +835,6 @@
       <category>オペレーショナル・レジリエンス</category>
       <category>クラウド集中リスク</category>
       <category>AI ガバナンス</category>
-    </item>
-    <item>
-      <title>DORA, חוק הבינה המלאכותית וריבונות נתונים: ערימת הציות של 2026 לבנקים</title>
-      <link>https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, חוק הבינה המלאכותית של האיחוד האירופי, GDPR, סיכון ריכוז ענן וריבונות נתונים מתכנסים ב-2026 לערימת ציות אחת לבנקים.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>חוק הבינה המלאכותית של האיחוד האירופי</category>
-      <category>ריבונות נתונים</category>
-      <category>חוסן תפעולי</category>
-      <category>סיכון ריכוז ענן</category>
-      <category>ממשל AI</category>
-    </item>
-    <item>
-      <title>DORA, EU:s AI-förordning och datasuveränitet: bankernas efterlevnadsstack 2026</title>
-      <link>https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU:s AI-förordning, GDPR, koncentrationsrisk i molnet och datasuveränitet konvergerar 2026 till en gemensam efterlevnadsstack för banker.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>datasuveränitet</category>
-      <category>operativ resiliens</category>
-      <category>koncentrationsrisk moln</category>
-      <category>AI-styrning</category>
-    </item>
-    <item>
-      <title>DORA, Đạo luật AI EU và chủ quyền dữ liệu: ngăn xếp tuân thủ 2026 cho ngân hàng</title>
-      <link>https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU AI Act, GDPR, rủi ro tập trung cloud và chủ quyền dữ liệu hội tụ thành một ngăn xếp tuân thủ 2026 cho ngân hàng — kiến trúc, không phải tủ hồ sơ chính sách.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>chủ quyền dữ liệu</category>
-      <category>khả năng phục hồi vận hành</category>
-      <category>rủi ro tập trung cloud</category>
-      <category>quản trị AI</category>
-    </item>
-    <item>
-      <title>DORA, EU AI Act i suwerennosc danych: stos zgodnosci bankow w 2026</title>
-      <link>https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU AI Act, RODO, ryzyko koncentracji chmury i suwerennosc danych laczy sie w jeden stos zgodnosci banku na 2026 rok.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>suwerennosc danych</category>
-      <category>odpornosc operacyjna</category>
-      <category>ryzyko koncentracji chmury</category>
-      <category>nadzor nad AI</category>
-    </item>
-    <item>
-      <title>DORA、EU AI 法與資料主權:銀行 2026 年法遵堆疊</title>
-      <link>https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA、EU AI 法、GDPR、雲端集中風險與資料主權,2026 年正匯流為銀行的單一法遵堆疊,設計紀律成為決勝關鍵。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>資料主權</category>
-      <category>營運韌性</category>
-      <category>雲端集中風險</category>
-      <category>AI 治理</category>
-    </item>
-    <item>
-      <title>DORA、EU AI 法案与数据主权：银行 2026 合规栈</title>
-      <link>https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA、EU AI 法案、GDPR、云集中风险与数据主权在 2026 年汇聚为银行的一套合规栈，决定董事会层级的运营模型设计。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI 法案</category>
-      <category>数据主权</category>
-      <category>运营韧性</category>
-      <category>云集中风险</category>
-      <category>AI 治理</category>
-    </item>
-    <item>
-      <title>AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026</title>
-      <link>https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026</link>
-      <description>AI is becoming the operating system of payments in 2026, moving from analytics into fraud prevention, payment repair, routing, liquidity forecasting, compliance screening, and agentic commerce controls.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI payments</category>
-      <category>fraud prevention</category>
-      <category>routing</category>
-      <category>resilience</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>Ödemelerin İşletim Sistemi Olarak AI: 2026'da Dolandırıcılık, Yönlendirme, Dayanıklılık ve Uyum</title>
-      <link>https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI 2026&apos;da ödemelerin işletim sistemi hâline geliyor; analitikten dolandırıcılık önleme, ödeme onarımı, yönlendirme, likidite tahmini, uyum taraması ve aracılı ticaret kontrollerine geçiyor.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI ödemeler</category>
-      <category>dolandırıcılık önleme</category>
-      <category>yönlendirme</category>
-      <category>dayanıklılık</category>
-      <category>uyum</category>
-      <category>ISO 20022</category>
-      <category>aracılı ticaret</category>
-    </item>
-    <item>
-      <title>AI ในฐานะระบบปฏิบัติการของการชำระเงิน: ฉ้อโกง เส้นทาง ยืดหยุ่น ปฏิบัติตามกฎ 2026</title>
-      <link>https://sebastienrousseau.com/th/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI กำลังกลายเป็นระบบปฏิบัติการของการชำระเงินในปี 2026 ขยายจากการวิเคราะห์ไปสู่การป้องกันการฉ้อโกง การซ่อมแซมการชำระเงิน การกำหนดเส้นทาง การคาดการณ์สภาพคล่อง การคัดกรองการปฏิบัติตามกฎ และการควบคุมพาณิชย์เชิงตัวแทน</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI การชำระเงิน</category>
-      <category>การป้องกันการฉ้อโกง</category>
-      <category>การกำหนดเส้นทาง</category>
-      <category>ความยืดหยุ่น</category>
-      <category>การปฏิบัติตามกฎ</category>
-      <category>ISO 20022</category>
-      <category>พาณิชย์เชิงตัวแทน</category>
-    </item>
-    <item>
-      <title>La IA como sistema operativo de los pagos: fraude, enrutamiento, resiliencia y cumplimiento en 2026</title>
-      <link>https://sebastienrousseau.com/es/2026-05-27-ai-operating-system-pagos-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>La IA se está convirtiendo en el sistema operativo de los pagos en 2026: prevención de fraude, reparación, enrutamiento, previsión de liquidez, cribado de cumplimiento y controles de comercio agéntico.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-05-27-ai-operating-system-pagos-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>IA pagos</category>
-      <category>prevención de fraude</category>
-      <category>enrutamiento</category>
-      <category>resiliencia</category>
-      <category>cumplimiento</category>
-      <category>ISO 20022</category>
-      <category>comercio agéntico</category>
-    </item>
-    <item>
-      <title>L'IA comme système d'exploitation des paiements : fraude, routage, résilience et conformité en 2026</title>
-      <link>https://sebastienrousseau.com/fr/2026-05-27-ai-operating-system-paiements-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>L&apos;IA devient le système d&apos;exploitation des paiements en 2026 : prévention de la fraude, réparation des paiements, routage, prévision de liquidité, filtrage de conformité et garde-fous du commerce agentique.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-27-ai-operating-system-paiements-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>IA paiements</category>
-      <category>prévention fraude</category>
-      <category>routage</category>
-      <category>résilience</category>
-      <category>conformité</category>
-      <category>ISO 20022</category>
-      <category>commerce agentique</category>
-    </item>
-    <item>
-      <title>AI sebagai Sistem Operasi Pembayaran: Penipuan, Routing, Ketahanan, dan Kepatuhan pada 2026</title>
-      <link>https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI menjadi sistem operasi pembayaran pada 2026, bergeser dari analitik ke pencegahan penipuan, perbaikan pembayaran, routing, prakiraan likuiditas, penyaringan kepatuhan, dan kontrol agentic commerce.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Keuangan</category>
-      <category>pembayaran AI</category>
-      <category>pencegahan penipuan</category>
-      <category>routing</category>
-      <category>ketahanan</category>
-      <category>kepatuhan</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>결제의 AI 운영체제: 2026년 사기, 라우팅, 회복력, 컴플라이언스</title>
-      <link>https://sebastienrousseau.com/ko/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>2026년 AI는 결제의 운영체제로 자리잡으며, 분석 대시보드를 넘어 사기 방지, 결제 복구, 라우팅, 유동성 예측, 컴플라이언스 검사, 에이전틱 커머스 통제 영역으로 확장되고 있습니다.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI 결제</category>
-      <category>사기 방지</category>
-      <category>라우팅</category>
-      <category>회복력</category>
-      <category>컴플라이언스</category>
-      <category>ISO 20022</category>
-      <category>에이전틱 커머스</category>
-    </item>
-    <item>
-      <title>KI als Betriebssystem des Zahlungsverkehrs: Betrug, Routing, Resilienz und Compliance 2026</title>
-      <link>https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>KI wird 2026 zum Betriebssystem des Zahlungsverkehrs: vom Analytik-Werkzeug zur Steuerungsschicht für Betrugsabwehr, Zahlungsreparatur, Routing, Liquiditätsprognose, Compliance-Prüfung und agentische Handelskontrollen.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>KI-Zahlungsverkehr</category>
-      <category>Betrugsabwehr</category>
-      <category>Routing</category>
-      <category>Resilienz</category>
-      <category>Compliance</category>
-      <category>ISO 20022</category>
-      <category>agentischer Handel</category>
-    </item>
-    <item>
-      <title>भुगतान का AI ऑपरेटिंग सिस्टम: 2026 में धोखाधड़ी, रूटिंग, लचीलापन और अनुपालन</title>
-      <link>https://sebastienrousseau.com/hi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>2026 में AI भुगतान का ऑपरेटिंग सिस्टम बन रहा है — विश्लेषण से आगे बढ़कर धोखाधड़ी रोकथाम, भुगतान मरम्मत, रूटिंग, तरलता पूर्वानुमान, अनुपालन स्क्रीनिंग और एजेंटिक कॉमर्स नियंत्रण तक।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI भुगतान</category>
-      <category>धोखाधड़ी रोकथाम</category>
-      <category>रूटिंग</category>
-      <category>लचीलापन</category>
-      <category>अनुपालन</category>
-      <category>ISO 20022</category>
-      <category>एजेंटिक कॉमर्स</category>
-    </item>
-    <item>
-      <title>AI Bilang Operating System ng Pagbabayad: Pandaraya, Ruta, Katatagan, at Compliance sa 2026</title>
-      <link>https://sebastienrousseau.com/fil/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>Nagiging operating system ng pagbabayad ang AI sa 2026, lumipat mula analytics tungo sa pag-iwas sa pandaraya, pag-aayos ng bayad, ruta, forecasting ng likido, screening ng compliance, at kontrol ng agentic commerce.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI payments</category>
-      <category>pag-iwas sa pandaraya</category>
-      <category>ruta</category>
-      <category>katatagan</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>পেমেন্টের অপারেটিং সিস্টেম হিসেবে AI: ২০২৬-এ প্রতারণা, রাউটিং, স্থিতিস্থাপকতা ও কমপ্লায়েন্স</title>
-      <link>https://sebastienrousseau.com/bn/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>২০২৬ সালে AI পেমেন্টের অপারেটিং সিস্টেমে পরিণত হচ্ছে — অ্যানালিটিক্স থেকে সরে গিয়ে প্রতারণা প্রতিরোধ, পেমেন্ট মেরামত, রাউটিং, তারল্য পূর্বাভাস, কমপ্লায়েন্স স্ক্রিনিং ও এজেন্টিক কমার্স নিয়ন্ত্রণে।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI পেমেন্ট</category>
-      <category>প্রতারণা প্রতিরোধ</category>
-      <category>রাউটিং</category>
-      <category>স্থিতিস্থাপকতা</category>
-      <category>কমপ্লায়েন্স</category>
-      <category>ISO 20022</category>
-      <category>এজেন্টিক কমার্স</category>
-    </item>
-    <item>
-      <title>AI als besturingssysteem van betalingen: fraude, routering, veerkracht en compliance in 2026</title>
-      <link>https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI wordt in 2026 het besturingssysteem van betalingen: van analytics naar fraudepreventie, betalingsherstel, routering, liquiditeitsprognose, compliance-screening en agentic-commerce-controles.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI betalingen</category>
-      <category>fraudepreventie</category>
-      <category>routering</category>
-      <category>veerkracht</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>IA como Sistema Operacional dos Pagamentos: Fraude, Roteamento, Resiliência e Conformidade em 2026</title>
-      <link>https://sebastienrousseau.com/pt-br/2026-05-27-ai-operating-system-pagamentos-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>Em 2026 a IA assume o papel de sistema operacional dos pagamentos: prevenção de fraude, reparo, roteamento, previsão de liquidez, triagem de conformidade e controles de comércio agêntico.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-05-27-ai-operating-system-pagamentos-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>IA em pagamentos</category>
-      <category>prevenção de fraude</category>
-      <category>roteamento</category>
-      <category>resiliência</category>
-      <category>conformidade</category>
-      <category>ISO 20022</category>
-      <category>comércio agêntico</category>
-    </item>
-    <item>
-      <title>الذكاء الاصطناعي بوصفه نظام تشغيل المدفوعات: الاحتيال والتوجيه والمرونة والامتثال في 2026</title>
-      <link>https://sebastienrousseau.com/ar/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>يُصبح الذكاء الاصطناعي نظام تشغيل المدفوعات في 2026، منتقلاً من التحليلات إلى منع الاحتيال، وإصلاح المدفوعات، والتوجيه، والتنبؤ بالسيولة، وفحص الامتثال، وضوابط التجارة الوكيلة.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>نظام تشغيل الذكاء الاصطناعي للمدفوعات</category>
-      <category>منع الاحتيال</category>
-      <category>التوجيه</category>
-      <category>المرونة</category>
-      <category>الامتثال</category>
-      <category>ISO 20022</category>
-      <category>التجارة الوكيلة</category>
-    </item>
-    <item>
-      <title>AI a Matsayin Tsarin Aiki na Biya: Zamba, Tuƙi, Juriya, da Bin Doka a 2026</title>
-      <link>https://sebastienrousseau.com/ha/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>A 2026, AI yana zama tsarin aiki na biya, yana motsi daga nazari zuwa hana zamba, gyaran biya, tuƙi, hasashen ruwa-ruwa, tantance bin doka, da sarrafa cinikayyar agentic commerce.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI payments</category>
-      <category>fraud prevention</category>
-      <category>routing</category>
-      <category>resilience</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>ШІ як операційна система платежів: шахрайство, маршрутизація, стійкість і відповідність у 2026</title>
-      <link>https://sebastienrousseau.com/uk/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>ШІ стає операційною системою платежів у 2026 році: виходить за межі аналітики у запобігання шахрайству, відновлення платежів, маршрутизацію, прогноз ліквідності та перевірку відповідності.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ШІ у платежах</category>
-      <category>запобігання шахрайству</category>
-      <category>маршрутизація</category>
-      <category>стійкість</category>
-      <category>відповідність</category>
-      <category>ISO 20022</category>
-      <category>агентна комерція</category>
-    </item>
-    <item>
-      <title>AI gẹ́gẹ́ bí Ètò Ìṣiṣẹ́ AI ti Ìsanwó: Jìbìtì, Ìpinnu Ọ̀nà, Ìfaradà, Ìbámu 2026</title>
-      <link>https://sebastienrousseau.com/yo/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI ti ń di ètò ìṣiṣẹ́ AI ti ìsanwó ní 2026, ó ń kọjá láti àyẹ̀wò sí ìdènà jìbìtì, àtúnṣe ìsanwó, ìpinnu ọ̀nà, ìhùmọ̀ owó tó ń sàn, àyẹ̀wò ìbámu, àti ìṣàkóso agentic commerce.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI payments</category>
-      <category>fraud prevention</category>
-      <category>routing</category>
-      <category>resilience</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>AI ca sistem de operare al plăților: fraudă, rutare, reziliență și conformitate în 2026</title>
-      <link>https://sebastienrousseau.com/ro/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI devine sistemul de operare al plăților în 2026: prevenirea fraudei, repararea plăților, rutarea, prognoza lichidității, screening de conformitate și controale pentru comerțul agentic la viteza fluxului.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI payments</category>
-      <category>fraud prevention</category>
-      <category>routing</category>
-      <category>resilience</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>ИИ как операционная система платежей: мошенничество, маршрутизация, устойчивость и комплаенс в 2026</title>
-      <link>https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>В 2026 году ИИ становится операционной системой платежей: от аналитики к предотвращению мошенничества, восстановлению платежей, маршрутизации, прогнозу ликвидности, проверкам комплаенса и контролю агентной коммерции.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ИИ в платежах</category>
-      <category>предотвращение мошенничества</category>
-      <category>маршрутизация</category>
-      <category>устойчивость</category>
-      <category>комплаенс</category>
-      <category>ISO 20022</category>
-      <category>агентная коммерция</category>
-    </item>
-    <item>
-      <title>AI jako operační systém plateb: podvody, směrování, odolnost a compliance v roce 2026</title>
-      <link>https://sebastienrousseau.com/cs/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI se v roce 2026 stává operačním systémem plateb — propojuje prevenci podvodů, opravu plateb, směrování, prognózu likvidity, screening compliance a kontroly agentického obchodu v rychlosti workflow.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI platby</category>
-      <category>prevence podvodů</category>
-      <category>směrování</category>
-      <category>odolnost</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentický obchod</category>
-    </item>
-    <item>
-      <title>L'IA come sistema operativo dei pagamenti: frode, routing, resilienza e conformità nel 2026</title>
-      <link>https://sebastienrousseau.com/it/2026-05-27-ai-operating-system-pagamenti-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>Nel 2026 l&apos;IA diventa il sistema operativo dei pagamenti: prevenzione frodi, riparazione, routing, previsione di liquidità, screening di conformità e controlli per il commercio agentico in tempo reale.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-27-ai-operating-system-pagamenti-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI pagamenti</category>
-      <category>prevenzione frodi</category>
-      <category>routing</category>
-      <category>resilienza</category>
-      <category>conformità</category>
-      <category>ISO 20022</category>
-      <category>commercio agentico</category>
-    </item>
-    <item>
-      <title>決済のオペレーティングシステムとしての AI: 2026 年の不正、ルーティング、レジリエンス、コンプライアンス</title>
-      <link>https://sebastienrousseau.com/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>2026 年、AI は決済のオペレーティングシステムへと進化し、分析を越えて不正防止、決済修復、ルーティング、流動性予測、コンプライアンススクリーニング、エージェント型コマース統制を担います。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI 決済</category>
-      <category>不正防止</category>
-      <category>ルーティング</category>
-      <category>レジリエンス</category>
-      <category>コンプライアンス</category>
-      <category>ISO 20022</category>
-      <category>エージェント型コマース</category>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="yo-NG">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 18 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 18 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>Ìdí Tí YAML Fi Nílò Ẹ̀rọ Rust Aláàbò Sí I fún AI, MCP, àti Ẹ̀rọ Ìnáwó ní 2026 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="NoyaLib jẹ́ ẹ̀rọ YAML 1.2 Rust mímọ́ fún ẹ̀rọ ìsọfúnni aláàbò, ìfọwọsi schema, LSP, MCP, WASM, àti ẹ̀rọ ìnáwó.">
+<meta name="keywords" content="NoyaLib, YAML Rust, YAML 1.2, ìfọwọ́sí schema, MCP, WASM, LSP, ìtòlẹ́sẹẹsẹ ààbò, ìpìlẹ̀ ìnáwó">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="NoyaLib: Safer YAML for AI, MCP, and Finance">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-AMdAyNNr5SB2bflmJgZ79lhfbXXhWvGgtKYSXTmheT4=' 'sha256-HAhWERbrLzOsOWsmkbjLKKPNa6EQPgxXieyz/QewDaQ=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-M/WvLTno3B/PPLB1e07Iz8WXHmXd2wZy2ezaR3mAl9U=' 'sha256-t7+4OQa40rD9wPVGNyi28kBbDLUGaJXcKA1M3sMPxS8=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/yo/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Àyẹ́ Atom" href="/yo/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Ìdí Tí YAML Fi Nílò Ẹ̀rọ Rust Aláàbò Sí I fún AI, MCP, àti Ẹ̀rọ Ìnáwó ní 2026 — Sebastien Rousseau">
+<meta property="og:description" content="NoyaLib jẹ́ ẹ̀rọ YAML 1.2 Rust mímọ́ fún ẹ̀rọ ìsọfúnni aláàbò, ìfọwọsi schema, LSP, MCP, WASM, àti ẹ̀rọ ìnáwó.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/yo/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="yo_NG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ìdí Tí YAML Fi Nílò Ẹ̀rọ Rust Aláàbò Sí I fún AI, MCP, àti Ẹ̀rọ Ìnáwó ní 2026 — Sebastien Rousseau">
+<meta name="twitter:description" content="NoyaLib jẹ́ ẹ̀rọ YAML 1.2 Rust mímọ́ fún ẹ̀rọ ìsọfúnni aláàbò, ìfọwọsi schema, LSP, MCP, WASM, àti ẹ̀rọ ìnáwó.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/yo/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Fò sí àkóónú àkọ́kọ́</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Yí ìwọ̀ndì padà" />
+      <div class="wrap">
+        <a class="ap-brand" href="/yo/index.html" aria-label="Ilé Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Ìwọ̀ndì àkọ́kọ́">
+          <ul class="ap-menu">
+            <li><a href="/yo/nipa-wa/index.html">About</a></li>
+            <li><a href="/yo/awon-akole/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/yo/awon-iwe/index.html">Papers</a></li>
+            <li><a href="/yo/awon-koko/index.html">Àwọn kókó</a></li>
+            <li><a href="/yo/awon-ise/index.html">Projects</a></li>
+            <li><a href="/yo/akojopo-orin/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Tan àkòrí òkùnkùn" aria-pressed="false" title="Yí àkòrí padà">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Wá (Cmd tàbí Ctrl + K)" title="Wá (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Èdè">
+            <button type="button" class="ap-lang-toggle" aria-label="YO, Yí èdè padà" aria-expanded="false" aria-haspopup="menu" title="Yí èdè padà">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">YO</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/yo/kan-si-wa/index.html" aria-label="Kàn sí wa">Kàn sí wa ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Yí ìwọ̀ndì padà">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Ìdí Tí YAML Fi Nílò Ẹ̀rọ Rust Aláàbò Sí I fún AI, MCP, àti Ẹ̀rọ Ìnáwó ní 2026</h1>
+      <p class="sub">YAML jẹ́ ẹ̀rọ ìsọfúnni; ní àkókò àwọn aṣojú AI àti irinṣẹ́ MCP, ìṣàyẹ̀wò, ìfọwọsi, ìbáwí schema, àti ààbò ṣe pàtàkì jù lọ.</p>
+    <nav class="article-tags" aria-label="Àwọn kókó"><a href="/tags/index.html#h3-noyalib" class="article-tag" rel="tag">NoyaLib</a><a href="/tags/index.html#h3-yaml-rust" class="article-tag" rel="tag">YAML Rust</a><a href="/tags/index.html#h3-yaml-1-2" class="article-tag" rel="tag">YAML 1.2</a><a href="/tags/index.html#h3-ifowosi-schema" class="article-tag" rel="tag">ìfọwọ́sí schema</a><a href="/tags/index.html#h3-mcp" class="article-tag" rel="tag">MCP</a><a href="/tags/index.html#h3-wasm" class="article-tag" rel="tag">WASM</a><a href="/tags/index.html#h3-lsp" class="article-tag" rel="tag">LSP</a><a href="/tags/index.html#h3-itoleseese-aabo" class="article-tag" rel="tag">ìtòlẹ́sẹẹsẹ ààbò</a><a href="/tags/index.html#h3-ipile-inawo" class="article-tag" rel="tag">ìpìlẹ̀ ìnáwó</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-18T06:06:06+00:00" class="meta-pub">Tẹ̀ jáde 18 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Àkókò kíkà tó tó">5 ìṣẹ́jú kíkà</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Àkóónú</h2><ol><li><a href="#idi-ti-ise-orisun-sisi-yii-fi-se-pataki-ni-2026">Ìdí Tí Iṣẹ́ Orisun Ṣiṣi Yìí Fi Ṣe Pàtàkì ní 2026</a></li><li><a href="#oju-ikole">Ojú Ìkọ́lé</a></li><li><a href="#awon-ami-lati-topinpin">Àwọn Àmì Láti Tọpinpin</a></li><li><a href="#ero-isofunni-je-koodu-isise">Ẹ̀rọ Ìsọfúnni Jẹ́ Kóòdù Ìṣiṣẹ́</a></li><li><a href="#idi-ti-ko-si-adanu-fi-se-pataki">Ìdí Tí Kò Sí Àdánù Fi Ṣe Pàtàkì</a></li><li><a href="#yaml-ninu-ero-asoju">YAML Nínú Ẹ̀rọ Aṣojú</a></li><li><a href="#kinni-eyi-tumo-si-nipa-iru-olugbo">Kínni Èyí Túmọ̀ sí Nípa Irú Olùgbọ́</a></li><li><a href="#ipari">Ìparí</a></li><li><a href="#awon-ibeere-ti-a-n-beere-leralera">Àwọn Ìbéèrè Tí A Ń Béèrè Léraléra</a></li><li><a href="#awon-itokasi">Àwọn Ìtọ́kasí</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> NoyaLib jẹ́ ẹ̀rọ YAML 1.2 Rust mímọ́ fún ẹ̀rọ ìsọfúnni aláàbò, ìfọwọsi schema, LSP, MCP, WASM, àti ẹ̀rọ ìnáwó.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Ìdí Tí Iṣẹ́ Orisun Ṣiṣi Yìí Fi Ṣe Pàtàkì ní 2026.</strong> Iye ìṣètò orisun ṣiṣi ní 2026 kò sí pẹ̀lú ìṣíkalẹ̀, ìlò atúnyẹwò, tàbí ọ̀rẹ́ àwọn olùṣe-iṣẹ́ nìkan mọ́.</li>  <li><strong>Àwọn Àmì Láti Tọpinpin.</strong> Àríyànjiyàn àkọ́kọ́ jẹ́ ti àṣà.</li>  <li><strong>Ẹ̀rọ Ìsọfúnni Jẹ́ Kóòdù Ìṣiṣẹ́.</strong> Àríyànjiyàn àkọ́kọ́ jẹ́ ti àṣà.</li>  <li><strong>Ìdí Tí Kò Sí Àdánù Fi Ṣe Pàtàkì.</strong> Ìṣàyẹ̀wò tí kò sí àdánù ń tọ́jú àlàyé, ìpètò, àlàfo, àti ìṣètò.</li></ul></aside><h1>Ìdí Tí YAML Fi Nílò Ẹ̀rọ Rust Aláàbò Sí I fún AI, MCP, àti Ẹ̀rọ Ìnáwó ní 2026</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>YAML rí bí ohun tí kò níye títí yóò fi bà ìṣiṣẹ́ jẹ́. Ó gbé iṣẹ́ CI, ìlànà ẹ̀rọ, àwòkọ́ṣe Kubernetes, òfin ààbò, ẹ̀rọ ìsọfúnni, àlàyé àkọsílẹ̀, àti àlàyé irinṣẹ́ tí àwọn aṣojú ń lò ní ìpọ̀sí. NoyaLib ṣe pàtàkì nítorí pé ó tọ́jú YAML gẹ́gẹ́ bí ẹ̀rọ kókó dípò ọ̀rọ̀ rírọrùn.</p>
+<p>Àkàwé orisun ṣiṣi fún àpilẹ̀kọ yìí ni <a href="https://github.com/sebastienrousseau/noyalib" title="noyalib">noyalib ⧉</a>. A gbé ibi ìpamọ́ náà kalẹ̀ gẹ́gẹ́ bí: ẹ̀rọ YAML 1.2 Rust mímọ́ pẹ̀lú odo unsafe, ìbámu spec ọgọ́rùn-ún nínú ọgọ́rùn-ún kọjá ìdánwò 406/406 ti ẹgbẹ́ òfin, serde tó ń ṣàn àkọ́kọ́, CST tí kò sí àdánù, ìfọwọsi JSON Schema, irinṣẹ́ CLI, LSP, MCP, àti WASM.</p>
+<hr />
+<blockquote>
+<p><strong>Àkótán Àlàṣẹ / Àwọn Àyọkà Pàtàkì</strong></p>
+<ul>
+<li><strong>YAML jẹ́ apá kan pẹpẹ ìṣàkóso.</strong> CI, ìfilọ́lẹ̀, ìlànà, àwòkọ́ṣe, MCP, àti ẹ̀rọ ìsọfúnni sábà máa ń gbára lé e.</li>
+<li><strong>Ààbò ṣe pàtàkì.</strong> Ìṣiṣẹ́pò Rust pẹ̀lú odo unsafe àti ìbámu spec jẹ́ ìtàn tó lágbára fún àwọn ẹgbẹ́ ẹ̀rọ.</li>
+<li><strong>Ìṣàyẹ̀wò tí kò sí àdánù ń ṣí irinṣẹ́ tó dára sí i.</strong> Olùwòsìn, LSP, olótò, irinṣẹ́ ìṣíkiri, àti àtúnṣe àdàṣe nílò ìṣàyẹ̀wò tí ó tọ́jú ìṣètò.</li>
+<li><strong>Ìfọwọsi schema jẹ́ ìpele ìṣàkóso.</strong> Ìfọwọsi JSON Schema yí ìsọfúnni padà láti ọ̀rọ̀ sí àdéhùn tí a lè fi mú ṣiṣẹ́.</li>
+<li><strong>MCP àti WASM ń mú iṣẹ́ náà gbòòrò.</strong> A lè gbé NoyaLib kalẹ̀ fún irinṣẹ́ aṣojú àti àyíká aṣàwákiri tàbí etí.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="idi-ti-ise-orisun-sisi-yii-fi-se-pataki-ni-2026">Ìdí Tí Iṣẹ́ Orisun Ṣiṣi Yìí Fi Ṣe Pàtàkì ní 2026 <a class="heading-anchor" href="#idi-ti-ise-orisun-sisi-yii-fi-se-pataki-ni-2026" aria-label="Ìjápọ̀ sí Ìdí Tí Iṣẹ́ Orisun Ṣiṣi Yìí Fi Ṣe Pàtàkì ní 2026">#</a></h2>
+<p>Iye ìṣètò orisun ṣiṣi ní 2026 kò sí pẹ̀lú ìṣíkalẹ̀, ìlò atúnyẹwò, tàbí ọ̀rẹ́ àwọn olùṣe-iṣẹ́ nìkan mọ́. Fún àwọn báńkì àti ilé-iṣẹ́ ìnáwó, ẹ̀rọ orisun ṣiṣi ti di ọ̀nà láti ṣàyẹ̀wò àwọn èrò, dán àwọn ìṣàkóso wò, dín àìfojúrí olùpèsè kù, kí a sì yí àwọn àbá ìkọ́lé padà sí kóòdù tí a lè kà, fọ́ọ̀kì, mú dáadáa, kí a sì ṣiṣẹ́. Iṣẹ́ tí ó wúlò jù lọ kìí ṣe àfihàn. Wọ́n jẹ́ ìṣiṣẹ́pò àkàwé tí ó fi hàn bí ààbò, ìráyé, ìṣiṣẹ́, ìbámu, àti ìrírí olùṣe-iṣẹ́ ṣe ń bá ara wọn mu.</p>
+<p>Èyí ni ojú tí a fi gbọ́dọ̀ wo noyalib. Kì í ṣe ibi ìpamọ́ lásán; ó jẹ́ àríyànjiyàn ìṣètò tó dájú. Ó sọ pé ẹ̀rọ kókó gbọ́dọ̀ jẹ́ ṣíṣe-àyẹ̀wò, ṣíṣe-àkójọ, ṣíṣe-àkọsílẹ̀, ṣíṣe-ìdánwò, àti ṣíṣe-òye láti ọ̀dọ̀ àwọn tí ó gbára lé e. Ní iṣẹ́ ìnáwó, ìyẹn ṣe pàtàkì nítorí pé àwọn ẹ̀rọ ń jókòó ní ìpàdé AI aṣojú, ìsanwó àkókò gangan, ìṣíri post-quantum, ìfaradà cloud-native, dátà tó ní ìṣètò, àti ẹ̀rí àbójútó.</p>
+<h2 id="oju-ikole">Ojú Ìkọ́lé <a class="heading-anchor" href="#oju-ikole" aria-label="Ìjápọ̀ sí Ojú Ìkọ́lé">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Ìpele</th>
+<th>Ìpinnu Ìṣètò</th>
+<th>Ìdí Tí Ó Fi Ṣe Pàtàkì</th>
+<th>Ewu Bí A Kò Bá Ṣàkóso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Olùṣàyẹ̀wò</strong></td>
+<td>Olùṣàyẹ̀wò Rust tó báa YAML 1.2 mu</td>
+<td>Ipilẹ̀ fún ẹ̀rọ ìsọfúnni tó dúró</td>
+<td>Ìṣàyẹ̀wò aláìní àfiyèsí àti ìdàrúdàpọ̀ ìṣiṣẹ́</td>
+</tr>
+<tr>
+<td><strong>Ààbò</strong></td>
+<td>Ìṣètò odo unsafe</td>
+<td>Ó dín ààlà ààbò-iranti kù nínú irinṣẹ́ ẹ̀rọ</td>
+<td>Àbùkù olùṣàyẹ̀wò</td>
+</tr>
+<tr>
+<td><strong>CST</strong></td>
+<td>Igi syntax tí kò sí àdánù</td>
+<td>Ó ń ṣí ìwòsìn àti àtúnṣe</td>
+<td>Irinṣẹ́ ń ba àlàyé àti ìṣètò jẹ́</td>
+</tr>
+<tr>
+<td><strong>Ìfọwọsi</strong></td>
+<td>Àtìlẹ́yìn JSON Schema</td>
+<td>Ó mú ẹ̀rọ ìsọfúnni di ohun tí a lè fi mú ṣiṣẹ́</td>
+<td>Ìsọfúnni aláìfọwọ́sí ń dé ìṣiṣẹ́</td>
+</tr>
+<tr>
+<td><strong>Irinṣẹ́</strong></td>
+<td>CLI, LSP, MCP, WASM</td>
+<td>Ó yí olùṣàyẹ̀wò padà sí ẹ̀rọ kíkún</td>
+<td>Ìwé ìkàwé wà ní ìdánìkanwà</td>
+</tr>
+</tbody>
+</table>
+<h2 id="awon-ami-lati-topinpin">Àwọn Àmì Láti Tọpinpin <a class="heading-anchor" href="#awon-ami-lati-topinpin" aria-label="Ìjápọ̀ sí Àwọn Àmì Láti Tọpinpin">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Àmì</th>
+<th>Ohun Tí Ó Túmọ̀ Sí</th>
+<th>Àkàwé</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ẹgbẹ́ òfin 406/406</strong></td>
+<td>Ibi ìpamọ́ ń gbé ìbámu kalẹ̀ gẹ́gẹ́ bí ohun tó ṣe wíwọ̀n</td>
+<td><a href="https://github.com/sebastienrousseau/noyalib" title="noyalib repository">noyalib ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Odo unsafe</strong></td>
+<td>Ààbò jẹ́ apá kan ìdánimọ̀ iṣẹ́ náà</td>
+<td><a href="https://github.com/sebastienrousseau/noyalib" title="noyalib repository">noyalib ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Irinṣẹ́ LSP àti CLI</strong></td>
+<td>Iṣẹ́ náà ń fojú sún iṣẹ́ olùṣe-iṣẹ́, kìí ṣe ìlò ìwé ìkàwé nìkan</td>
+<td><a href="https://github.com/sebastienrousseau/noyalib" title="noyalib repository">noyalib ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Kókó MCP</strong></td>
+<td>Irinṣẹ́ YAML lè di nǹkan tí aṣojú lè wọlé sí</td>
+<td><a href="https://github.com/sebastienrousseau/noyalib" title="noyalib repository">noyalib ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Àpapọ̀ WASM</strong></td>
+<td>Ìfọwọsi ìsọfúnni lè ṣíkiri sínú aṣàwákiri, etí, àti àyíká tí a fi sínú</td>
+<td><a href="https://github.com/sebastienrousseau/noyalib" title="noyalib repository">noyalib ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ero-isofunni-je-koodu-isise">Ẹ̀rọ Ìsọfúnni Jẹ́ Kóòdù Ìṣiṣẹ́ <a class="heading-anchor" href="#ero-isofunni-je-koodu-isise" aria-label="Ìjápọ̀ sí Ẹ̀rọ Ìsọfúnni Jẹ́ Kóòdù Ìṣiṣẹ́">#</a></h2>
+<p>Àríyànjiyàn àkọ́kọ́ jẹ́ ti àṣà. A kò gbọ́dọ̀ tọ́jú YAML gẹ́gẹ́ bí ọ̀rọ̀ tí kò léwu. Fáìlì ẹ̀rọ ìsọfúnni tí ó burú, tí kò ní àfiyèsí, tàbí tí kò ní ìfọwọsi gidi lè yí ẹ̀rọ padà, ba CI jẹ́, ṣẹ̀ ìlànà ààbò ní àìlera, tàbí ṣe àìtọ́ àpapọ̀ irinṣẹ́ AI. Ìyẹn jẹ́ kí ìdára olùṣàyẹ̀wò YAML di àníyàn ìpele ẹ̀rọ.</p>
+<h2 id="idi-ti-ko-si-adanu-fi-se-pataki">Ìdí Tí Kò Sí Àdánù Fi Ṣe Pàtàkì <a class="heading-anchor" href="#idi-ti-ko-si-adanu-fi-se-pataki" aria-label="Ìjápọ̀ sí Ìdí Tí Kò Sí Àdánù Fi Ṣe Pàtàkì">#</a></h2>
+<p>Ìṣàyẹ̀wò tí kò sí àdánù ń tọ́jú àlàyé, ìpètò, àlàfo, àti ìṣètò. Èyí ṣe pàtàkì fún fáìlì gidi nítorí pé ènìyàn ń kọ àlàyé lórí ẹ̀rọ ìsọfúnni. Olùwòsìn tàbí irinṣẹ́ ìṣíkiri tí ó ba ìtumọ̀ ní àyíká dátà jẹ́ kò ní rí ìgbẹ́kẹ̀lé láti ọ̀dọ̀ àwọn ẹgbẹ́ ẹ̀rọ.</p>
+<h2 id="yaml-ninu-ero-asoju">YAML Nínú Ẹ̀rọ Aṣojú <a class="heading-anchor" href="#yaml-ninu-ero-asoju" aria-label="Ìjápọ̀ sí YAML Nínú Ẹ̀rọ Aṣojú">#</a></h2>
+<p>Àwọn aṣojú ń kà, kọ, kí wọ́n sì yí ẹ̀rọ ìsọfúnni padà ní ìpọ̀sí. Bí oluṣe-iṣẹ́ AI bá ṣe àtúntò àwòkọ́ṣe ìfilọ́lẹ̀, àkójọ irinṣẹ́ MCP, àlàyé ìwé, tàbí fáìlì iṣẹ́, olùṣàyẹ̀wò àti olùfọwọ́sí di apá kan ààlà ààbò. NoyaLib ń fún ọ ní àpilẹ̀kọ nípa ààlà yẹn.</p>
+<h2 id="kinni-eyi-tumo-si-nipa-iru-olugbo">Kínni Èyí Túmọ̀ sí Nípa Irú Olùgbọ́ <a class="heading-anchor" href="#kinni-eyi-tumo-si-nipa-iru-olugbo" aria-label="Ìjápọ̀ sí Kínni Èyí Túmọ̀ sí Nípa Irú Olùgbọ́">#</a></h2>
+<h3 id="fun-awon-oludari-ero-banki">Fún Àwọn Olùdarí Ẹ̀rọ Báńkì <a class="heading-anchor" href="#fun-awon-oludari-ero-banki" aria-label="Ìjápọ̀ sí Fún Àwọn Olùdarí Ẹ̀rọ Báńkì">#</a></h3>
+<p>Ìbéèrè ni bóyá iṣẹ́ náà lè ràn wọ́n lọ́wọ́ láti yí ìnira ìṣètò padà sí ìkọ́lé tí a lè ṣe. Iye náà lágbára jù lọ nígbà tí ibi ìpamọ́ bá fún àwọn ẹgbẹ́ ní ohun tó dájú láti ṣàyẹ̀wò: ojú-ìbáṣepọ̀, ẹ̀rọ ìsọfúnni, ìdánwò, ààlà ààbò, èrò ìfilọ́lẹ̀, àti àwọn ọ̀nà ìkùnà.</p>
+<h3 id="fun-awon-egbe-aabo-ati-ewu">Fún Àwọn Ẹgbẹ́ Ààbò àti Ewu <a class="heading-anchor" href="#fun-awon-egbe-aabo-ati-ewu" aria-label="Ìjápọ̀ sí Fún Àwọn Ẹgbẹ́ Ààbò àti Ewu">#</a></h3>
+<p>A gbọ́dọ̀ ṣàyẹ̀wò iṣẹ́ náà kìí ṣe fún àwọn agbára nìkan ṣùgbọ́n fún ẹ̀rí ìṣàkóso. Ẹ̀rọ ìnáwó orisun ṣiṣi tó wúlò ń fi hàn bí ìdánimọ̀, àṣírí, ìfọwọsi, àkọsílẹ̀ àyẹ̀wò, ààlà ìyára, àmì-ọwọ́, ìpilẹ̀ṣẹ̀, àti ìmúpadàbọ̀sípò ṣe yẹ kí wọ́n máa ṣiṣẹ́.</p>
+<h3 id="fun-awon-oluse-ise-ati-enjinia-pepe">Fún Àwọn Olùṣe-iṣẹ́ àti Ẹnjíníà Pẹpẹ <a class="heading-anchor" href="#fun-awon-oluse-ise-ati-enjinia-pepe" aria-label="Ìjápọ̀ sí Fún Àwọn Olùṣe-iṣẹ́ àti Ẹnjíníà Pẹpẹ">#</a></h3>
+<p>Ìdánwò pàtàkì jù lọ ni bóyá iṣẹ́ náà ń dín ẹrù ìmọ̀ kù láìfi ẹ̀rọ pàtàkì pamọ́. Orisun ṣiṣi tó dára gbọ́dọ̀ jẹ́ kí ọ̀nà aláàbò jẹ́ ọ̀nà rírọrùn nígbà tí ó tún ń jẹ́ kí àwọn ẹnjíníà tó ní ìrírí ní agbára láti lóye àti yí ìṣiṣẹ́pò padà.</p>
+<h3 id="fun-awon-olutileyin">Fún Àwọn Olùtìlẹ́yìn <a class="heading-anchor" href="#fun-awon-olutileyin" aria-label="Ìjápọ̀ sí Fún Àwọn Olùtìlẹ́yìn">#</a></h3>
+<p>Àǹfààní ni láti mú iṣẹ́ náà lágbára níbi tí ilé-iṣẹ́ gidi ti nílò ìdánilójú: àkọsílẹ̀, àpẹẹrẹ, ìdánwò ìbámu, ìmújú CI, àwòkọ́ṣe ewu, àpẹẹrẹ ìṣiṣẹ́, àyẹ̀wò ìráyé, àti ìtọ́sọ́nà ìṣọ̀kan.</p>
+<h2 id="ipari">Ìparí <a class="heading-anchor" href="#ipari" aria-label="Ìjápọ̀ sí Ìparí">#</a></h2>
+<p>Ìdí tí a fi ń kọ nípa noyalib ni pé ó yí ìṣòro ilé-iṣẹ́ gbòòrò padà sí ohun tó dájú. Ní 2026, àwọn báńkì kò nílò èdè ìyípadà àìmọ̀ sí i. Wọ́n nílò ẹ̀rọ tí a lè ṣàyẹ̀wò tí ó fi hàn bí a ṣe lè kọ́, dáàbò bò, dán wò, kí a sì ṣàkóso ẹ̀rọ òde òní. Orisun ṣiṣi ni ọ̀nà tó ní ìgbẹ́kẹ̀lé jù lọ láti mú àríyànjiyàn yẹn hàn.</p>
+<h2 id="awon-ibeere-ti-a-n-beere-leralera">Àwọn Ìbéèrè Tí A Ń Béèrè Léraléra <a class="heading-anchor" href="#awon-ibeere-ti-a-n-beere-leralera" aria-label="Ìjápọ̀ sí Àwọn Ìbéèrè Tí A Ń Béèrè Léraléra">#</a></h2>
+<p><strong>Ìdí tí YAML fi yẹ àpilẹ̀kọ tó yàsọ́tọ̀?</strong></p>
+<p>Nítorí pé YAML wà nínú CI, ìfilọ́lẹ̀, ìlànà, àlàyé, àti iṣẹ́ ẹ̀rọ ìsọfúnni aṣojú.</p>
+<p><strong>Kínni igun NoyaLib tó lágbára jù lọ?</strong></p>
+<p>YAML aláàbò, tó báa spec mu, tó mọ̀ schema fún ẹ̀rọ tí kò lè gba ẹ̀rọ ìsọfúnni aláìní àfiyèsí.</p>
+<p><strong>Ta ni olùgbọ́?</strong></p>
+<p>Àwọn olùṣe-iṣẹ́ Rust, ẹnjíníà pẹpẹ, ẹgbẹ́ DevOps, ẹnjíníà ààbò, àti àwọn olùkọ́ irinṣẹ́.</p>
+<p><strong>Báwo ni MCP ṣe báa mu?</strong></p>
+<p>MCP ń jẹ́ kí irinṣẹ́ wà sí àwọn aṣojú, èyí tí ó ń mú pàtàkì àwọn iṣẹ́ ẹ̀rọ ìsọfúnni tí a fọwọ́sí tí ó sì ní ìṣètò pọ̀ sí i.</p>
+<h2 id="awon-itokasi">Àwọn Ìtọ́kasí <a class="heading-anchor" href="#awon-itokasi" aria-label="Ìjápọ̀ sí Àwọn Ìtọ́kasí">#</a></h2>
+<ul>
+<li>GitHub, (2026). <a href="https://github.com/sebastienrousseau/noyalib" title="noyalib repository">Ibi ìpamọ́ noyalib ⧉</a>.</li>
+<li>YAML, (2026). <a href="https://yaml.org/spec/" title="YAML specification">Spec YAML ⧉</a>.</li>
+<li>JSON Schema, (2026). <a href="https://json-schema.org/" title="JSON Schema specification">Spec JSON Schema ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Àyẹ̀wò tó kẹ́yìn <time datetime="2026-06-18">2026-06-18</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/yo/nipa-wa/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ báńkì àgbà; mò ń kọ nípa AI tó wúlò, ìṣírò ISO 20022, kírípító lẹ́yìn-kuántọ́mù fún iṣẹ́ ìnáwó àti àtúnṣe ètò ìsanwó ńláńlá.</span><span class="author-credentials">Ìrírí ọdún 20+ ní HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/yo/nipa-wa/index.html">Àkọsílẹ̀ kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Àyẹ̀wò àkọ́kọ́ <time datetime="2026-05-29">2026-05-29</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Ìwé tó jọmọ́</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026" class="related-media" aria-label="Ìsanwó Alábòójútó nínú Báńkì: Àṣẹ Ìfọwọ́sí, Ojúṣe, UX Ìsanwó 2026" tabindex="-1"><img alt="Agentic payments architecture diagram showing AI agents, consent mandates, tokenised credentials, card networks, banks, merchants, and audit trails" src="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="isanwo-alaboojuto-ninu-banki-ase-ifowosi-ojuse-ux-isanwo-2026"><a href="https://sebastienrousseau.com/yo/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026">Ìsanwó Alábòójútó nínú Báńkì: Àṣẹ Ìfọwọ́sí, Ojúṣe, UX Ìsanwó 2026</a> <a class="heading-anchor" href="#isanwo-alaboojuto-ninu-banki-ase-ifowosi-ojuse-ux-isanwo-2026" aria-label="Ìjápọ̀ sí Ìsanwó Alábòójútó nínú Báńkì: Àṣẹ Ìfọwọ́sí, Ojúṣe, UX Ìsanwó 2026">#</a></h3><p><time datetime="2026-05-23">2026-05-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html" class="related-media" aria-label="RustLogs (RLG): Structured Logging Library for Rust" tabindex="-1"><img alt="Banner for RustLogs (RLG)" src="https://cloudcdn.pro/api/transform?url=/stocks/images/rustlogs.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="rustlogs-rlg-structured-logging-library-for-rust"><a href="https://sebastienrousseau.com/yo/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">RustLogs (RLG): Structured Logging Library for Rust</a> <a class="heading-anchor" href="#rustlogs-rlg-structured-logging-library-for-rust" aria-label="Ìjápọ̀ sí RustLogs (RLG): Structured Logging Library for Rust">#</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html" class="related-media" aria-label="Alien Studio: My Tech-to Art Journey in Photography" tabindex="-1"><img alt="Sunset's muse, a serene glance; beauty in stillness" src="https://cloudcdn.pro/api/transform?url=/clients/alienstudio/v1/collections/radiance/radiance-08.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="alien-studio-my-tech-to-art-journey-in-photography"><a href="https://sebastienrousseau.com/yo/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html">Alien Studio: My Tech-to Art Journey in Photography</a> <a class="heading-anchor" href="#alien-studio-my-tech-to-art-journey-in-photography" aria-label="Ìjápọ̀ sí Alien Studio: My Tech-to Art Journey in Photography">#</a></h3><p><time datetime="2024-01-15">2024-01-15</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Orisun & àyọ̀kà</h2><ol class="article-sources-list"><li><a href="https://github.com/sebastienrousseau/noyalib" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/sebastienrousseau/noyalib</span></a></li></ol></aside><nav class="post-pagination" aria-label="Ìpín àkọlé"><a class="post-pagination-prev" href="/yo/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">Tẹ́lẹ̀</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/yo/nipa-wa/index.html">About</a></li>
+              <li><a href="/yo/kan-si-wa/index.html">Contact</a></li>
+              <li><a href="/yo/static-site-generator-lo-ti-se/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Àkọsílẹ̀</h2>
+            <ul>
+              <li><a href="/yo/awon-akole/index.html">Articles</a></li>
+              <li><a href="/yo/awon-iwe/index.html">Papers</a></li>
+              <li><a href="/yo/awon-ami/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Iṣẹ́</h2>
+            <ul>
+              <li><a href="/yo/awon-ise/index.html">Projects</a></li>
+              <li><a href="/yo/akojopo-orin/index.html">Playlists</a></li>
+              <li><a href="/yo/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Kàn sí</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Ìforúkọsílẹ̀ ìwé ìròyìn">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — àwọn àkíyèsí ìwádìí lórí ìsanwó, AI àti kírípító lẹ́yìn-kuántọ́mù. Kò sí spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="iwo@banki.com.ng" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Forúkọsílẹ̀</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Àwọn ọ̀nà àjọṣepọ̀">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau lórí Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau lórí LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau lórí Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau lórí YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/yo/ile-wiwole/index.html">Accessibility</a> ·
+            <a href="/yo/aabo-ikoko/index.html">Privacy</a> ·
+            <a href="/yo/awon-ofin/index.html">Terms</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"yo"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"yo"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1196,"about":{"@type":"Thing","name":"Rust","sameAs":["https://en.wikipedia.org/wiki/Rust_(programming_language)","https://www.wikidata.org/wiki/Q575650"]},"headline":"Ìdí Tí YAML Fi Nílò Ẹ̀rọ Rust Aláàbò Sí I fún AI, MCP, àti Ẹ̀rọ Ìnáwó ní 2026","description":"NoyaLib jẹ́ ẹ̀rọ YAML 1.2 Rust mímọ́ fún ẹ̀rọ ìsọfúnni aláàbò, ìfọwọsi schema, LSP, MCP, WASM, àti ẹ̀rọ ìnáwó.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp","width":"100vw","height":"100vh","caption":"Geometirì ìkọ́lé lábẹ́ ìmọ́lẹ̀ aláyọ̀rọ̀ — ó dúró fún ipa NoyaLib gẹ́gẹ́ bí ìpele YAML tí ó gbé ẹrù lábẹ́ CI, Kubernetes, MCP, àti ìtòlẹ́sẹẹsẹ àwọn iṣẹ́ ìnáwó"},"url":"https://sebastienrousseau.com/yo/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/","datePublished":"2026-06-18T06:06:06+00:00","dateModified":"2026-06-18","inLanguage":"yo","keywords":"NoyaLib, YAML Rust, YAML 1.2, ìfọwọ́sí schema, MCP, WASM, LSP, ìtòlẹ́sẹẹsẹ ààbò, ìpìlẹ̀ ìnáwó","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/yo/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"yo"},"citation":[{"@type":"CreativeWork","url":"https://github.com/sebastienrousseau/noyalib"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/yo/"},{"@type":"ListItem","position":3,"name":"Ìdí Tí YAML Fi Nílò Ẹ̀rọ Rust Aláàbò Sí I fún AI, MCP, àti Ẹ̀rọ Ìnáwó ní 2026","item":"https://sebastienrousseau.com/yo/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Wá">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Wá</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Wá">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Wá nínú àwọn ìwé..." autocomplete="off" aria-label="Wá"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> tì</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> ríranlọ́wọ́</span><span><kbd>Enter</kbd> ṣí</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Ìdí Tí YAML Fi Nílò Ẹ̀rọ Rust Aláàbò Sí I fún AI, MCP, àti Ẹ̀rọ Ìnáwó ní 2026","url":"https://sebastienrousseau.com/yo/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/","inLanguage":"yo-NG","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"NoyaLib, YAML Rust, YAML 1.2, ìfọwọ́sí schema, MCP, WASM, LSP, ìtòlẹ́sẹẹsẹ ààbò, ìpìlẹ̀ ìnáwó","programmingLanguage":["Rust","WebAssembly"]}</script></body>
+</html>
