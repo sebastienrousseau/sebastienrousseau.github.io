@@ -1,11 +1,11 @@
 {
-  "subtitle": "Eine quantenresistente Rust-Bibliothek für kryptografisches Hashing und Verifizierung",
+  "language": "de",
   "date": "October 16, 2023",
-  "keywords": "quantenresistente Kryptografie, Hash-Bibliothek, HSH, Rust, Post-Quanten, PQC, KDF, Argon2i, BScrypt, Scrypt, Finanzdienstleistungen, Sicherheit, NIST",
+  "description": "HSH setzt auf quantenresistente kryptografische Primitiven, um Ihre Daten gegen künftige Fortschritte des Quantencomputings abzusichern.",
+  "subtitle": "Eine quantenresistente Rust-Bibliothek für kryptografisches Hashing und Verifizierung",
+  "title": "Daten im Quantenzeitalter schützen: die Hash-Bibliothek (HSH)",
   "banner_alt": "Kreative Illustration zum Thema Quantencomputing",
   "locale": "de_DE",
-  "language": "de",
   "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
-  "description": "HSH setzt auf quantenresistente kryptografische Primitiven, um Ihre Daten gegen künftige Fortschritte des Quantencomputings abzusichern.",
-  "title": "Daten im Quantenzeitalter schützen: die Hash-Bibliothek (HSH)"
+  "keywords": "quantenresistente Kryptografie, Hash-Bibliothek, HSH, Rust, Post-Quanten, PQC, KDF, Argon2i, BScrypt, Scrypt, Finanzdienstleistungen, Sicherheit, NIST"
 }

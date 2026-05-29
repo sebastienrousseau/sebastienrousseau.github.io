@@ -6,8 +6,27 @@
     <description>বাংলা প্রবন্ধ: প্রায়োগিক এআই, ISO 20022 পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের রূপান্তর।</description>
     <atom:link href="https://sebastienrousseau.com/bn/rss.xml" rel="self" type="application/rss+xml"/>
     <language>bn-BD</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 17:40:33 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. সর্বস্বত্ব সংরক্ষিত।</copyright>
+    <item>
+      <title>২০২৬-এ AI-যুগের প্রকাশনার জন্য একটি ডিফল্ট নিরাপদ স্ট্যাটিক সাইট জেনারেটর</title>
+      <link>https://sebastienrousseau.com/bn/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/</link>
+      <description>Rust-ভিত্তিক ডিফল্ট নিরাপদ স্ট্যাটিক সাইট জেনারেটর — AI-যুগের প্রকাশনা পরিকাঠামোয় WCAG যাচাই, CSP/SRI কঠোরকরণ, স্থানীয় LLM পাইপলাইন, WebAssembly, আইল্যান্ডস ও বহু-লোকেল i18n।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/</guid>
+      <pubDate>Fri, 29 May 2026 17:40:33 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>স্ট্যাটিক সাইট জেনারেটর</category>
+      <category>Rust SSG</category>
+      <category>সুরক্ষিত স্ট্যাটিক সাইট জেনারেটর</category>
+      <category>AI প্রকাশনা</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>WCAG</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+      <category>islands architecture</category>
+    </item>
     <item>
       <title>DORA, EU AI আইন ও ডেটা সার্বভৌমত্ব: ব্যাংকের জন্য ২০২৬-এর কমপ্লায়েন্স স্ট্যাক</title>
       <link>https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

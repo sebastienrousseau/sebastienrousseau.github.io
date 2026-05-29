@@ -6,8 +6,540 @@
     <description>AI, banking and payments expert. Senior payments leader. Applied AI, ISO 20022 migration, wholesale payments and post-quantum cryptography.</description>
     <atom:link href="https://sebastienrousseau.com/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Thu, 28 May 2026 06:06:06 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2026 06:06:06 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>A Secure-by-Default Static Site Generator for AI-Era Publishing in 2026</title>
+      <link>https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026</link>
+      <description>A secure-by-default Rust static site generator for AI-era publishing, with WCAG validation, CSP/SRI hardening, local LLM content pipelines, WebAssembly, islands, and large-scale i18n.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>static site generator</category>
+      <category>Rust</category>
+      <category>secure publishing</category>
+      <category>AI publishing</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>AI Çağı Yayıncılığı için Varsayılan Olarak Güvenli Bir SSG (2026)</title>
+      <link>https://sebastienrousseau.com/tr/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>AI çağı yayıncılığı için varsayılan olarak güvenli bir Rust statik site oluşturucu: WCAG doğrulaması, CSP/SRI sertleştirme, yerel LLM içerik ardışık düzenleri, WebAssembly, islands ve büyük ölçekli i18n ile.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>statik site oluşturucu</category>
+      <category>Rust</category>
+      <category>güvenli yayıncılık</category>
+      <category>AI yayıncılığı</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>ตัวสร้างเว็บไซต์แบบสแตติกที่ปลอดภัยโดยค่าเริ่มต้นสำหรับการเผยแพร่ยุค AI ปี 2569</title>
+      <link>https://sebastienrousseau.com/th/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>ตัวสร้างเว็บไซต์แบบสแตติกบน Rust ที่ปลอดภัยโดยค่าเริ่มต้นสำหรับการเผยแพร่ยุค AI พร้อมตรวจสอบ WCAG เสริมความแข็งแกร่ง CSP/SRI ไปป์ไลน์ LLM ภายใน WebAssembly และ i18n ขนาดใหญ่</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>ตัวสร้างเว็บไซต์แบบสแตติก</category>
+      <category>Rust</category>
+      <category>การเผยแพร่ที่ปลอดภัย</category>
+      <category>การเผยแพร่ยุค AI</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>Generador de sitios estáticos seguro por defecto para publicación en la era de la AI en 2026</title>
+      <link>https://sebastienrousseau.com/es/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>Generador de sitios estáticos en Rust, seguro por defecto, para publicación en la era de la AI: validación WCAG, hardening CSP/SRI, pipelines LLM locales, WebAssembly, islas e i18n a gran escala.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>generador de sitios estáticos</category>
+      <category>Rust</category>
+      <category>publicación segura</category>
+      <category>publicación con AI</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>Un générateur de site statique sécurisé par défaut pour l'ère de l'IA en 2026</title>
+      <link>https://sebastienrousseau.com/fr/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>Un générateur de site statique Rust sécurisé par défaut pour la publication à l&apos;ère de l&apos;IA : validation WCAG, durcissement CSP/SRI, pipelines LLM locaux, WebAssembly, îlots et i18n à grande échelle.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>générateur de site statique</category>
+      <category>Rust</category>
+      <category>publication sécurisée</category>
+      <category>publication IA</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>Static Site Generator Aman secara Default untuk Publikasi Era AI 2026</title>
+      <link>https://sebastienrousseau.com/id/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>Static site generator Rust yang aman secara default untuk publikasi era AI — validasi WCAG, pengerasan CSP/SRI, pipeline LLM lokal, WebAssembly, islands, dan i18n skala besar.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Teknologi</category>
+      <category>static site generator</category>
+      <category>Rust</category>
+      <category>publikasi aman</category>
+      <category>publikasi AI</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>2026년 AI 시대 게시를 위한 기본 보안 SSG</title>
+      <link>https://sebastienrousseau.com/ko/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>AI 시대 게시 인프라를 위한 기본 보안 Rust 정적 사이트 생성기. WCAG 검증, CSP/SRI 강화, 로컬 LLM 파이프라인, WebAssembly, 아일랜드, 대규모 i18n을 빌드에 내장합니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>정적 사이트 생성기</category>
+      <category>Rust</category>
+      <category>보안 게시</category>
+      <category>AI 게시</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>Standardmäßig sicherer Static Site Generator für AI-Publishing 2026</title>
+      <link>https://sebastienrousseau.com/de/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>Ein standardmäßig sicherer Static Site Generator in Rust für Publishing im AI-Zeitalter — mit WCAG-Validierung, CSP/SRI-Härtung, lokalen LLM-Pipelines, WebAssembly, Islands und i18n in 28 Sprachen.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Static Site Generator</category>
+      <category>Rust</category>
+      <category>sicheres Publishing</category>
+      <category>AI Publishing</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>2026 में AI युग के प्रकाशन हेतु डिफ़ॉल्ट-सुरक्षित स्टैटिक साइट जेनरेटर</title>
+      <link>https://sebastienrousseau.com/hi/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>AI युग के प्रकाशन के लिए डिफ़ॉल्ट रूप से सुरक्षित Rust स्टैटिक साइट जेनरेटर — WCAG सत्यापन, CSP/SRI हार्डनिंग, लोकल LLM पाइपलाइन, WebAssembly, आइलैंड्स और बड़े पैमाने पर i18n।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>स्टैटिक साइट जेनरेटर</category>
+      <category>Rust</category>
+      <category>सुरक्षित प्रकाशन</category>
+      <category>AI प्रकाशन</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>Isang Secure-by-Default na Static Site Generator para sa AI-Era Publishing sa 2026</title>
+      <link>https://sebastienrousseau.com/fil/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>Isang secure-by-default na Rust static site generator para sa publishing infrastructure sa panahon ng AI, may WCAG validation, CSP/SRI hardening, lokal na LLM pipelines, WebAssembly, islands, at malakihang i18n.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>static site generator</category>
+      <category>Rust</category>
+      <category>ligtas na publishing</category>
+      <category>AI publishing</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>২০২৬-এ AI-যুগের প্রকাশনার জন্য একটি ডিফল্ট নিরাপদ স্ট্যাটিক সাইট জেনারেটর</title>
+      <link>https://sebastienrousseau.com/bn/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>Rust-ভিত্তিক ডিফল্ট নিরাপদ স্ট্যাটিক সাইট জেনারেটর — AI-যুগের প্রকাশনা পরিকাঠামোয় WCAG যাচাই, CSP/SRI কঠোরকরণ, স্থানীয় LLM পাইপলাইন, WebAssembly, আইল্যান্ডস ও বহু-লোকেল i18n।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>স্ট্যাটিক সাইট জেনারেটর</category>
+      <category>Rust</category>
+      <category>সুরক্ষিত প্রকাশনা</category>
+      <category>AI প্রকাশনা</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>Een veilig-by-default static site generator voor publiceren in het AI-tijdperk 2026</title>
+      <link>https://sebastienrousseau.com/nl/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>Een veilig-by-default Rust static site generator voor publiceren in het AI-tijdperk — met WCAG-validatie, CSP/SRI-hardening, lokale LLM-pipelines, WebAssembly, islands en grootschalige i18n.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>static site generator</category>
+      <category>Rust</category>
+      <category>veilig publiceren</category>
+      <category>AI-publicatie</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>Um gerador de sites estáticos seguro por padrão para a publicação na era da IA em 2026</title>
+      <link>https://sebastienrousseau.com/pt-br/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>Um gerador de sites estáticos em Rust seguro por padrão para a publicação na era da IA, com validação WCAG, endurecimento CSP/SRI, pipelines LLM locais, WebAssembly, ilhas e i18n em larga escala.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>gerador de sites estáticos</category>
+      <category>Rust</category>
+      <category>publicação segura</category>
+      <category>publicação com IA</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>مولّد مواقع ثابتة آمن افتراضيًا لنشر عصر الذكاء الاصطناعي في 2026</title>
+      <link>https://sebastienrousseau.com/ar/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>مولّد مواقع ثابتة بلغة Rust آمن افتراضيًا لنشر عصر الذكاء الاصطناعي، مع تحقق WCAG وتحصين CSP/SRI وخطوط LLM المحلية وWebAssembly والجزر وi18n واسعة النطاق.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>مولّد المواقع الثابتة</category>
+      <category>Rust</category>
+      <category>النشر الآمن</category>
+      <category>نشر الذكاء الاصطناعي</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>Mai Samar da Shafukan Static Mai Aminci ta Hanyar Tsoho don Bugawa a Zamanin AI a 2026</title>
+      <link>https://sebastienrousseau.com/ha/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>Mai samar da shafukan static a Rust, mai aminci ta hanyar tsoho don bugawa a zamanin AI: tabbatar da WCAG, ƙarfafa CSP/SRI, bututun LLM na cikin gida, WebAssembly, ginin tsibirai, da i18n a babban sikeli.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>mai samar da shafukan static</category>
+      <category>Rust</category>
+      <category>bugawa mai aminci</category>
+      <category>bugawa ta AI</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>SSG, безпечний за замовчуванням, для публікації епохи ШІ у 2026</title>
+      <link>https://sebastienrousseau.com/uk/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>Генератор статичних сайтів на Rust, безпечний за замовчуванням, для публікації епохи ШІ — перевірка WCAG, посилення CSP/SRI, локальні LLM-конвеєри, WebAssembly, острови та i18n у масштабі.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>генератор статичних сайтів</category>
+      <category>Rust</category>
+      <category>безпечна публікація</category>
+      <category>публікація з ШІ</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>Olùṣẹ̀dá Ojú-Òpó Tó Dúró Ṣinṣin Tó Ní Ààbò fún Ìtẹ̀wé Sànmánì AI ní 2026</title>
+      <link>https://sebastienrousseau.com/yo/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>Olùṣẹ̀dá ojú-òpó tó dúró ṣinṣin tó ní ààbò nípasẹ̀ ìpilẹ̀, fún ìtẹ̀wé sànmánì AI — pẹ̀lú ìfọwọ́sí WCAG, ìmúlágbára CSP/SRI, ìfọ̀rọ̀-ọ̀rọ̀ LLM agbègbè, WebAssembly, erékùṣù, àti i18n ńlá.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>olùṣẹ̀dá ojú-òpó tó dúró ṣinṣin</category>
+      <category>Rust</category>
+      <category>ìtẹ̀wé tó ní ààbò</category>
+      <category>ìtẹ̀wé AI</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>Un generator de site-uri statice sigur implicit pentru publicarea în era AI în 2026</title>
+      <link>https://sebastienrousseau.com/ro/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>Generator de site-uri statice în Rust, sigur implicit, pentru infrastructură de publicare în era AI: validare WCAG, întărire CSP/SRI, pipeline LLM locale, WebAssembly, insule, i18n la scară.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>generator de site-uri statice</category>
+      <category>Rust</category>
+      <category>publicare sigură</category>
+      <category>publicare AI</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>Безопасный по умолчанию генератор статических сайтов для публикации в эпоху ИИ в 2026 году</title>
+      <link>https://sebastienrousseau.com/ru/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>Безопасный по умолчанию генератор статических сайтов на Rust для публикации в эпоху ИИ: валидация WCAG, усиление CSP/SRI, локальные LLM-конвейеры, WebAssembly, островная архитектура, i18n.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>генератор статических сайтов</category>
+      <category>Rust</category>
+      <category>безопасная публикация</category>
+      <category>публикация ИИ</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>Generátor statických webů bezpečný ve výchozím nastavení pro éru AI v roce 2026</title>
+      <link>https://sebastienrousseau.com/cs/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>Generátor statických webů v Rustu, bezpečný ve výchozím nastavení: WCAG validace, CSP/SRI, lokální LLM pipeline, WebAssembly, architektura ostrovů a i18n ve velkém měřítku.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>generátor statických webů</category>
+      <category>Rust</category>
+      <category>bezpečné publikování</category>
+      <category>AI publikování</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>Un generatore di siti statici sicuro per default per l'editoria nell'era dell'AI nel 2026</title>
+      <link>https://sebastienrousseau.com/it/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>Un generatore di siti statici in Rust sicuro per default per l&apos;editoria nell&apos;era dell&apos;AI: validazione WCAG, hardening CSP/SRI, pipeline LLM locali, WebAssembly, isole e i18n su larga scala.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>generatore di siti statici</category>
+      <category>Rust</category>
+      <category>editoria sicura</category>
+      <category>editoria AI</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>AI 時代の公開のためのセキュア SSG 2026</title>
+      <link>https://sebastienrousseau.com/ja/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>WCAG 検証、CSP/SRI ハードニング、ローカル LLM コンテンツパイプライン、WebAssembly、アイランド、大規模 i18n を備えた、AI 時代の公開のためのセキュア・バイ・デフォルトな Rust 製静的サイトジェネレーター。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>静的サイトジェネレーター</category>
+      <category>Rust</category>
+      <category>セキュア公開</category>
+      <category>AI 公開</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>מחולל אתרים סטטי מאובטח כברירת מחדל לפרסום בעידן ה-AI ב-2026</title>
+      <link>https://sebastienrousseau.com/he/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>מחולל אתרים סטטי ב-Rust, מאובטח כברירת מחדל לתשתית פרסום בעידן ה-AI: ולידציית WCAG, חיזוק CSP/SRI, צינורות LLM מקומיים, WebAssembly, ארכיטקטורת איים ו-i18n בקנה מידה רחב.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>מחולל אתרים סטטי</category>
+      <category>Rust</category>
+      <category>פרסום מאובטח</category>
+      <category>פרסום בעידן AI</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>Statisk sajtgenerator säker som standard för publicering i AI-eran 2026</title>
+      <link>https://sebastienrousseau.com/sv/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>Säker som standard: Rust-baserad statisk sajtgenerator för publicering i AI-eran med WCAG-validering, CSP/SRI-härdning, lokala LLM-pipelines, WebAssembly, islands och i18n i skala.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>statisk sajtgenerator</category>
+      <category>Rust</category>
+      <category>säker publicering</category>
+      <category>AI-publicering</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>Bộ tạo trang tĩnh an toàn mặc định cho xuất bản thời đại AI năm 2026</title>
+      <link>https://sebastienrousseau.com/vi/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>Bộ tạo trang tĩnh Rust an toàn mặc định cho xuất bản thời đại AI: kiểm định WCAG, gia cố CSP/SRI, đường ống LLM cục bộ, WebAssembly, islands và i18n quy mô lớn.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>bộ tạo trang tĩnh</category>
+      <category>Rust</category>
+      <category>xuất bản an toàn</category>
+      <category>xuất bản AI</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>Generator stron statycznych bezpieczny domyślnie dla publikacji w erze AI w 2026</title>
+      <link>https://sebastienrousseau.com/pl/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>Generator stron statycznych w Rust, bezpieczny domyślnie, dla publikacji w erze AI: walidacja WCAG, hartowanie CSP/SRI, lokalne potoki LLM, WebAssembly, wyspy i i18n na dużą skalę.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>generator stron statycznych</category>
+      <category>Rust</category>
+      <category>bezpieczne publikacje</category>
+      <category>publikacje AI</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>2026 年 AI 時代發布的預設安全靜態網站產生器</title>
+      <link>https://sebastienrousseau.com/zh-hant/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>以 Rust 打造的預設安全靜態網站產生器,內建 WCAG 驗證、CSP/SRI 加固、本地LLM管線、WebAssembly、島嶼架構與大規模 i18n。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>靜態網站產生器</category>
+      <category>Rust</category>
+      <category>安全發布</category>
+      <category>AI 發布</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
+    <item>
+      <title>面向 AI 时代发布的默认安全静态站点生成器 2026</title>
+      <link>https://sebastienrousseau.com/zh-hans/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</link>
+      <description>面向 AI 时代发布的默认安全 Rust 静态站点生成器：WCAG 校验、CSP/SRI 加固、本地LLM流水线、WebAssembly、岛屿架构与大规模 i18n 一次构建完成。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>静态站点生成器</category>
+      <category>Rust</category>
+      <category>安全发布</category>
+      <category>AI 发布</category>
+      <category>WCAG</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+    </item>
     <item>
       <title>DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</title>
       <link>https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026</link>
@@ -359,476 +891,6 @@
       <category>オペレーショナル・レジリエンス</category>
       <category>クラウド集中リスク</category>
       <category>AI ガバナンス</category>
-    </item>
-    <item>
-      <title>DORA, חוק הבינה המלאכותית וריבונות נתונים: ערימת הציות של 2026 לבנקים</title>
-      <link>https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, חוק הבינה המלאכותית של האיחוד האירופי, GDPR, סיכון ריכוז ענן וריבונות נתונים מתכנסים ב-2026 לערימת ציות אחת לבנקים.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>חוק הבינה המלאכותית של האיחוד האירופי</category>
-      <category>ריבונות נתונים</category>
-      <category>חוסן תפעולי</category>
-      <category>סיכון ריכוז ענן</category>
-      <category>ממשל AI</category>
-    </item>
-    <item>
-      <title>DORA, EU:s AI-förordning och datasuveränitet: bankernas efterlevnadsstack 2026</title>
-      <link>https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU:s AI-förordning, GDPR, koncentrationsrisk i molnet och datasuveränitet konvergerar 2026 till en gemensam efterlevnadsstack för banker.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>datasuveränitet</category>
-      <category>operativ resiliens</category>
-      <category>koncentrationsrisk moln</category>
-      <category>AI-styrning</category>
-    </item>
-    <item>
-      <title>DORA, Đạo luật AI EU và chủ quyền dữ liệu: ngăn xếp tuân thủ 2026 cho ngân hàng</title>
-      <link>https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU AI Act, GDPR, rủi ro tập trung cloud và chủ quyền dữ liệu hội tụ thành một ngăn xếp tuân thủ 2026 cho ngân hàng — kiến trúc, không phải tủ hồ sơ chính sách.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>chủ quyền dữ liệu</category>
-      <category>khả năng phục hồi vận hành</category>
-      <category>rủi ro tập trung cloud</category>
-      <category>quản trị AI</category>
-    </item>
-    <item>
-      <title>DORA, EU AI Act i suwerennosc danych: stos zgodnosci bankow w 2026</title>
-      <link>https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU AI Act, RODO, ryzyko koncentracji chmury i suwerennosc danych laczy sie w jeden stos zgodnosci banku na 2026 rok.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>suwerennosc danych</category>
-      <category>odpornosc operacyjna</category>
-      <category>ryzyko koncentracji chmury</category>
-      <category>nadzor nad AI</category>
-    </item>
-    <item>
-      <title>DORA、EU AI 法與資料主權:銀行 2026 年法遵堆疊</title>
-      <link>https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA、EU AI 法、GDPR、雲端集中風險與資料主權,2026 年正匯流為銀行的單一法遵堆疊,設計紀律成為決勝關鍵。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>資料主權</category>
-      <category>營運韌性</category>
-      <category>雲端集中風險</category>
-      <category>AI 治理</category>
-    </item>
-    <item>
-      <title>DORA、EU AI 法案与数据主权：银行 2026 合规栈</title>
-      <link>https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA、EU AI 法案、GDPR、云集中风险与数据主权在 2026 年汇聚为银行的一套合规栈，决定董事会层级的运营模型设计。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI 法案</category>
-      <category>数据主权</category>
-      <category>运营韧性</category>
-      <category>云集中风险</category>
-      <category>AI 治理</category>
-    </item>
-    <item>
-      <title>AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026</title>
-      <link>https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026</link>
-      <description>AI is becoming the operating system of payments in 2026, moving from analytics into fraud prevention, payment repair, routing, liquidity forecasting, compliance screening, and agentic commerce controls.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI payments</category>
-      <category>fraud prevention</category>
-      <category>routing</category>
-      <category>resilience</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>Ödemelerin İşletim Sistemi Olarak AI: 2026'da Dolandırıcılık, Yönlendirme, Dayanıklılık ve Uyum</title>
-      <link>https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI 2026&apos;da ödemelerin işletim sistemi hâline geliyor; analitikten dolandırıcılık önleme, ödeme onarımı, yönlendirme, likidite tahmini, uyum taraması ve aracılı ticaret kontrollerine geçiyor.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI ödemeler</category>
-      <category>dolandırıcılık önleme</category>
-      <category>yönlendirme</category>
-      <category>dayanıklılık</category>
-      <category>uyum</category>
-      <category>ISO 20022</category>
-      <category>aracılı ticaret</category>
-    </item>
-    <item>
-      <title>AI ในฐานะระบบปฏิบัติการของการชำระเงิน: ฉ้อโกง เส้นทาง ยืดหยุ่น ปฏิบัติตามกฎ 2026</title>
-      <link>https://sebastienrousseau.com/th/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI กำลังกลายเป็นระบบปฏิบัติการของการชำระเงินในปี 2026 ขยายจากการวิเคราะห์ไปสู่การป้องกันการฉ้อโกง การซ่อมแซมการชำระเงิน การกำหนดเส้นทาง การคาดการณ์สภาพคล่อง การคัดกรองการปฏิบัติตามกฎ และการควบคุมพาณิชย์เชิงตัวแทน</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI การชำระเงิน</category>
-      <category>การป้องกันการฉ้อโกง</category>
-      <category>การกำหนดเส้นทาง</category>
-      <category>ความยืดหยุ่น</category>
-      <category>การปฏิบัติตามกฎ</category>
-      <category>ISO 20022</category>
-      <category>พาณิชย์เชิงตัวแทน</category>
-    </item>
-    <item>
-      <title>La IA como sistema operativo de los pagos: fraude, enrutamiento, resiliencia y cumplimiento en 2026</title>
-      <link>https://sebastienrousseau.com/es/2026-05-27-ai-operating-system-pagos-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>La IA se está convirtiendo en el sistema operativo de los pagos en 2026: prevención de fraude, reparación, enrutamiento, previsión de liquidez, cribado de cumplimiento y controles de comercio agéntico.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-05-27-ai-operating-system-pagos-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>IA pagos</category>
-      <category>prevención de fraude</category>
-      <category>enrutamiento</category>
-      <category>resiliencia</category>
-      <category>cumplimiento</category>
-      <category>ISO 20022</category>
-      <category>comercio agéntico</category>
-    </item>
-    <item>
-      <title>L'IA comme système d'exploitation des paiements : fraude, routage, résilience et conformité en 2026</title>
-      <link>https://sebastienrousseau.com/fr/2026-05-27-ai-operating-system-paiements-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>L&apos;IA devient le système d&apos;exploitation des paiements en 2026 : prévention de la fraude, réparation des paiements, routage, prévision de liquidité, filtrage de conformité et garde-fous du commerce agentique.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-27-ai-operating-system-paiements-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>IA paiements</category>
-      <category>prévention fraude</category>
-      <category>routage</category>
-      <category>résilience</category>
-      <category>conformité</category>
-      <category>ISO 20022</category>
-      <category>commerce agentique</category>
-    </item>
-    <item>
-      <title>AI sebagai Sistem Operasi Pembayaran: Penipuan, Routing, Ketahanan, dan Kepatuhan pada 2026</title>
-      <link>https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI menjadi sistem operasi pembayaran pada 2026, bergeser dari analitik ke pencegahan penipuan, perbaikan pembayaran, routing, prakiraan likuiditas, penyaringan kepatuhan, dan kontrol agentic commerce.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Keuangan</category>
-      <category>pembayaran AI</category>
-      <category>pencegahan penipuan</category>
-      <category>routing</category>
-      <category>ketahanan</category>
-      <category>kepatuhan</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>결제의 AI 운영체제: 2026년 사기, 라우팅, 회복력, 컴플라이언스</title>
-      <link>https://sebastienrousseau.com/ko/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>2026년 AI는 결제의 운영체제로 자리잡으며, 분석 대시보드를 넘어 사기 방지, 결제 복구, 라우팅, 유동성 예측, 컴플라이언스 검사, 에이전틱 커머스 통제 영역으로 확장되고 있습니다.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI 결제</category>
-      <category>사기 방지</category>
-      <category>라우팅</category>
-      <category>회복력</category>
-      <category>컴플라이언스</category>
-      <category>ISO 20022</category>
-      <category>에이전틱 커머스</category>
-    </item>
-    <item>
-      <title>KI als Betriebssystem des Zahlungsverkehrs: Betrug, Routing, Resilienz und Compliance 2026</title>
-      <link>https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>KI wird 2026 zum Betriebssystem des Zahlungsverkehrs: vom Analytik-Werkzeug zur Steuerungsschicht für Betrugsabwehr, Zahlungsreparatur, Routing, Liquiditätsprognose, Compliance-Prüfung und agentische Handelskontrollen.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>KI-Zahlungsverkehr</category>
-      <category>Betrugsabwehr</category>
-      <category>Routing</category>
-      <category>Resilienz</category>
-      <category>Compliance</category>
-      <category>ISO 20022</category>
-      <category>agentischer Handel</category>
-    </item>
-    <item>
-      <title>भुगतान का AI ऑपरेटिंग सिस्टम: 2026 में धोखाधड़ी, रूटिंग, लचीलापन और अनुपालन</title>
-      <link>https://sebastienrousseau.com/hi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>2026 में AI भुगतान का ऑपरेटिंग सिस्टम बन रहा है — विश्लेषण से आगे बढ़कर धोखाधड़ी रोकथाम, भुगतान मरम्मत, रूटिंग, तरलता पूर्वानुमान, अनुपालन स्क्रीनिंग और एजेंटिक कॉमर्स नियंत्रण तक।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI भुगतान</category>
-      <category>धोखाधड़ी रोकथाम</category>
-      <category>रूटिंग</category>
-      <category>लचीलापन</category>
-      <category>अनुपालन</category>
-      <category>ISO 20022</category>
-      <category>एजेंटिक कॉमर्स</category>
-    </item>
-    <item>
-      <title>AI Bilang Operating System ng Pagbabayad: Pandaraya, Ruta, Katatagan, at Compliance sa 2026</title>
-      <link>https://sebastienrousseau.com/fil/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>Nagiging operating system ng pagbabayad ang AI sa 2026, lumipat mula analytics tungo sa pag-iwas sa pandaraya, pag-aayos ng bayad, ruta, forecasting ng likido, screening ng compliance, at kontrol ng agentic commerce.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI payments</category>
-      <category>pag-iwas sa pandaraya</category>
-      <category>ruta</category>
-      <category>katatagan</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>পেমেন্টের অপারেটিং সিস্টেম হিসেবে AI: ২০২৬-এ প্রতারণা, রাউটিং, স্থিতিস্থাপকতা ও কমপ্লায়েন্স</title>
-      <link>https://sebastienrousseau.com/bn/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>২০২৬ সালে AI পেমেন্টের অপারেটিং সিস্টেমে পরিণত হচ্ছে — অ্যানালিটিক্স থেকে সরে গিয়ে প্রতারণা প্রতিরোধ, পেমেন্ট মেরামত, রাউটিং, তারল্য পূর্বাভাস, কমপ্লায়েন্স স্ক্রিনিং ও এজেন্টিক কমার্স নিয়ন্ত্রণে।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI পেমেন্ট</category>
-      <category>প্রতারণা প্রতিরোধ</category>
-      <category>রাউটিং</category>
-      <category>স্থিতিস্থাপকতা</category>
-      <category>কমপ্লায়েন্স</category>
-      <category>ISO 20022</category>
-      <category>এজেন্টিক কমার্স</category>
-    </item>
-    <item>
-      <title>AI als besturingssysteem van betalingen: fraude, routering, veerkracht en compliance in 2026</title>
-      <link>https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI wordt in 2026 het besturingssysteem van betalingen: van analytics naar fraudepreventie, betalingsherstel, routering, liquiditeitsprognose, compliance-screening en agentic-commerce-controles.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI betalingen</category>
-      <category>fraudepreventie</category>
-      <category>routering</category>
-      <category>veerkracht</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>IA como Sistema Operacional dos Pagamentos: Fraude, Roteamento, Resiliência e Conformidade em 2026</title>
-      <link>https://sebastienrousseau.com/pt-br/2026-05-27-ai-operating-system-pagamentos-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>Em 2026 a IA assume o papel de sistema operacional dos pagamentos: prevenção de fraude, reparo, roteamento, previsão de liquidez, triagem de conformidade e controles de comércio agêntico.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-05-27-ai-operating-system-pagamentos-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>IA em pagamentos</category>
-      <category>prevenção de fraude</category>
-      <category>roteamento</category>
-      <category>resiliência</category>
-      <category>conformidade</category>
-      <category>ISO 20022</category>
-      <category>comércio agêntico</category>
-    </item>
-    <item>
-      <title>الذكاء الاصطناعي بوصفه نظام تشغيل المدفوعات: الاحتيال والتوجيه والمرونة والامتثال في 2026</title>
-      <link>https://sebastienrousseau.com/ar/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>يُصبح الذكاء الاصطناعي نظام تشغيل المدفوعات في 2026، منتقلاً من التحليلات إلى منع الاحتيال، وإصلاح المدفوعات، والتوجيه، والتنبؤ بالسيولة، وفحص الامتثال، وضوابط التجارة الوكيلة.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>نظام تشغيل الذكاء الاصطناعي للمدفوعات</category>
-      <category>منع الاحتيال</category>
-      <category>التوجيه</category>
-      <category>المرونة</category>
-      <category>الامتثال</category>
-      <category>ISO 20022</category>
-      <category>التجارة الوكيلة</category>
-    </item>
-    <item>
-      <title>AI a Matsayin Tsarin Aiki na Biya: Zamba, Tuƙi, Juriya, da Bin Doka a 2026</title>
-      <link>https://sebastienrousseau.com/ha/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>A 2026, AI yana zama tsarin aiki na biya, yana motsi daga nazari zuwa hana zamba, gyaran biya, tuƙi, hasashen ruwa-ruwa, tantance bin doka, da sarrafa cinikayyar agentic commerce.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI payments</category>
-      <category>fraud prevention</category>
-      <category>routing</category>
-      <category>resilience</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>ШІ як операційна система платежів: шахрайство, маршрутизація, стійкість і відповідність у 2026</title>
-      <link>https://sebastienrousseau.com/uk/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>ШІ стає операційною системою платежів у 2026 році: виходить за межі аналітики у запобігання шахрайству, відновлення платежів, маршрутизацію, прогноз ліквідності та перевірку відповідності.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ШІ у платежах</category>
-      <category>запобігання шахрайству</category>
-      <category>маршрутизація</category>
-      <category>стійкість</category>
-      <category>відповідність</category>
-      <category>ISO 20022</category>
-      <category>агентна комерція</category>
-    </item>
-    <item>
-      <title>AI gẹ́gẹ́ bí Ètò Ìṣiṣẹ́ AI ti Ìsanwó: Jìbìtì, Ìpinnu Ọ̀nà, Ìfaradà, Ìbámu 2026</title>
-      <link>https://sebastienrousseau.com/yo/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI ti ń di ètò ìṣiṣẹ́ AI ti ìsanwó ní 2026, ó ń kọjá láti àyẹ̀wò sí ìdènà jìbìtì, àtúnṣe ìsanwó, ìpinnu ọ̀nà, ìhùmọ̀ owó tó ń sàn, àyẹ̀wò ìbámu, àti ìṣàkóso agentic commerce.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI payments</category>
-      <category>fraud prevention</category>
-      <category>routing</category>
-      <category>resilience</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>AI ca sistem de operare al plăților: fraudă, rutare, reziliență și conformitate în 2026</title>
-      <link>https://sebastienrousseau.com/ro/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI devine sistemul de operare al plăților în 2026: prevenirea fraudei, repararea plăților, rutarea, prognoza lichidității, screening de conformitate și controale pentru comerțul agentic la viteza fluxului.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI payments</category>
-      <category>fraud prevention</category>
-      <category>routing</category>
-      <category>resilience</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentic commerce</category>
-    </item>
-    <item>
-      <title>ИИ как операционная система платежей: мошенничество, маршрутизация, устойчивость и комплаенс в 2026</title>
-      <link>https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>В 2026 году ИИ становится операционной системой платежей: от аналитики к предотвращению мошенничества, восстановлению платежей, маршрутизации, прогнозу ликвидности, проверкам комплаенса и контролю агентной коммерции.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ИИ в платежах</category>
-      <category>предотвращение мошенничества</category>
-      <category>маршрутизация</category>
-      <category>устойчивость</category>
-      <category>комплаенс</category>
-      <category>ISO 20022</category>
-      <category>агентная коммерция</category>
-    </item>
-    <item>
-      <title>AI jako operační systém plateb: podvody, směrování, odolnost a compliance v roce 2026</title>
-      <link>https://sebastienrousseau.com/cs/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>AI se v roce 2026 stává operačním systémem plateb — propojuje prevenci podvodů, opravu plateb, směrování, prognózu likvidity, screening compliance a kontroly agentického obchodu v rychlosti workflow.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI platby</category>
-      <category>prevence podvodů</category>
-      <category>směrování</category>
-      <category>odolnost</category>
-      <category>compliance</category>
-      <category>ISO 20022</category>
-      <category>agentický obchod</category>
-    </item>
-    <item>
-      <title>L'IA come sistema operativo dei pagamenti: frode, routing, resilienza e conformità nel 2026</title>
-      <link>https://sebastienrousseau.com/it/2026-05-27-ai-operating-system-pagamenti-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>Nel 2026 l&apos;IA diventa il sistema operativo dei pagamenti: prevenzione frodi, riparazione, routing, previsione di liquidità, screening di conformità e controlli per il commercio agentico in tempo reale.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-27-ai-operating-system-pagamenti-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI pagamenti</category>
-      <category>prevenzione frodi</category>
-      <category>routing</category>
-      <category>resilienza</category>
-      <category>conformità</category>
-      <category>ISO 20022</category>
-      <category>commercio agentico</category>
-    </item>
-    <item>
-      <title>決済のオペレーティングシステムとしての AI: 2026 年の不正、ルーティング、レジリエンス、コンプライアンス</title>
-      <link>https://sebastienrousseau.com/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</link>
-      <description>2026 年、AI は決済のオペレーティングシステムへと進化し、分析を越えて不正防止、決済修復、ルーティング、流動性予測、コンプライアンススクリーニング、エージェント型コマース統制を担います。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html</guid>
-      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>AI 決済</category>
-      <category>不正防止</category>
-      <category>ルーティング</category>
-      <category>レジリエンス</category>
-      <category>コンプライアンス</category>
-      <category>ISO 20022</category>
-      <category>エージェント型コマース</category>
     </item>
   </channel>
 </rss>

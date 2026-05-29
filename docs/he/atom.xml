@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/he/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/he/"/>
   <id>https://sebastienrousseau.com/he/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T17:40:33+00:00</updated>
+  <entry>
+    <title>מחולל אתרים סטטי מאובטח כברירת מחדל לפרסום בעידן ה-AI ב-2026</title>
+    <link href="https://sebastienrousseau.com/he/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/"/>
+    <id>https://sebastienrousseau.com/he/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/</id>
+    <updated>2026-05-29T17:40:33+00:00</updated>
+    <published>2026-05-29T17:40:33+00:00</published>
+    <summary>מחולל אתרים סטטי ב-Rust, מאובטח כברירת מחדל לתשתית פרסום בעידן ה-AI: ולידציית WCAG, חיזוק CSP/SRI, צינורות LLM מקומיים, WebAssembly, ארכיטקטורת איים ו-i18n בקנה מידה רחב.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, חוק הבינה המלאכותית וריבונות נתונים: ערימת הציות של 2026 לבנקים</title>
     <link href="https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

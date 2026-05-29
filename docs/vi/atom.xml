@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/vi/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/vi/"/>
   <id>https://sebastienrousseau.com/vi/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T17:40:33+00:00</updated>
+  <entry>
+    <title>Bộ tạo trang tĩnh an toàn mặc định cho xuất bản thời đại AI năm 2026</title>
+    <link href="https://sebastienrousseau.com/vi/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/"/>
+    <id>https://sebastienrousseau.com/vi/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/</id>
+    <updated>2026-05-29T17:40:33+00:00</updated>
+    <published>2026-05-29T17:40:33+00:00</published>
+    <summary>Bộ tạo trang tĩnh Rust an toàn mặc định cho xuất bản thời đại AI: kiểm định WCAG, gia cố CSP/SRI, đường ống LLM cục bộ, WebAssembly, islands và i18n quy mô lớn.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, Đạo luật AI EU và chủ quyền dữ liệu: ngăn xếp tuân thủ 2026 cho ngân hàng</title>
     <link href="https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

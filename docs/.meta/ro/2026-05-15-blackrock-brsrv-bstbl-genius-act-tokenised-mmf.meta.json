@@ -1,11 +1,11 @@
 {
-  "locale": "ro_RO",
-  "banner": "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp",
-  "banner_alt": "Diagramă arhitecturală a fondului monetar tokenizat BlackRock — BRSRV OnChain Shares și clasa de acțiuni BSTBL ERC-20 cu fluxurile de rezerve GENIUS Act",
-  "keywords": "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoin, fond monetar tokenizat, OnChain Shares, Securitize",
-  "date": "May 15, 2026",
-  "description": "Stablecoin-urile nu pot plăti dobândă conform GENIUS Act. Pe 8 mai 2026, BlackRock a depus la SEC BRSRV și BSTBL — fonduri monetare reglementate care oferă randament în portofel pe blockchain, nu stablecoins.",
-  "language": "ro-RO",
   "title": "Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded",
-  "subtitle": "Stablecoin-urile nu pot plăti dobândă conform GENIUS Act. Pe 8 mai 2026, BlackRock a depus două produse care, juridic, nu sunt stablecoins — și care pot plăti randament, într-un portofel, pe un blockchain public."
+  "banner_alt": "Diagramă arhitecturală a fondului monetar tokenizat BlackRock — BRSRV OnChain Shares și clasa de acțiuni BSTBL ERC-20 cu fluxurile de rezerve GENIUS Act",
+  "date": "May 15, 2026",
+  "language": "ro-RO",
+  "subtitle": "Stablecoin-urile nu pot plăti dobândă conform GENIUS Act. Pe 8 mai 2026, BlackRock a depus două produse care, juridic, nu sunt stablecoins — și care pot plăti randament, într-un portofel, pe un blockchain public.",
+  "keywords": "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoin, fond monetar tokenizat, OnChain Shares, Securitize",
+  "banner": "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp",
+  "description": "Stablecoin-urile nu pot plăti dobândă conform GENIUS Act. Pe 8 mai 2026, BlackRock a depus la SEC BRSRV și BSTBL — fonduri monetare reglementate care oferă randament în portofel pe blockchain, nu stablecoins.",
+  "locale": "ro_RO"
 }

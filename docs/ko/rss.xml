@@ -6,8 +6,27 @@
     <description>한국어 기사: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 그리고 도매 결제 인프라의 구조적 변혁.</description>
     <atom:link href="https://sebastienrousseau.com/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 17:40:33 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>2026년 AI 시대 게시를 위한 기본 보안 SSG</title>
+      <link>https://sebastienrousseau.com/ko/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/</link>
+      <description>AI 시대 게시 인프라를 위한 기본 보안 Rust 정적 사이트 생성기. WCAG 검증, CSP/SRI 강화, 로컬 LLM 파이프라인, WebAssembly, 아일랜드, 대규모 i18n을 빌드에 내장합니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/</guid>
+      <pubDate>Fri, 29 May 2026 17:40:33 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>정적 사이트 생성기</category>
+      <category>Rust SSG</category>
+      <category>기본 보안 정적 사이트 생성기</category>
+      <category>AI 게시</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>WCAG</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+      <category>아일랜드 아키텍처</category>
+    </item>
     <item>
       <title>DORA, EU AI 법, 데이터 주권: 2026년 은행을 위한 컴플라이언스 스택</title>
       <link>https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

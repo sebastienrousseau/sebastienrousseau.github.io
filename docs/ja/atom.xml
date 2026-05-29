@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/ja/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ja/"/>
   <id>https://sebastienrousseau.com/ja/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T17:40:33+00:00</updated>
+  <entry>
+    <title>AI 時代の公開のためのセキュア SSG 2026</title>
+    <link href="https://sebastienrousseau.com/ja/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/"/>
+    <id>https://sebastienrousseau.com/ja/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/</id>
+    <updated>2026-05-29T17:40:33+00:00</updated>
+    <published>2026-05-29T17:40:33+00:00</published>
+    <summary>WCAG 検証、CSP/SRI ハードニング、ローカル LLM コンテンツパイプライン、WebAssembly、アイランド、大規模 i18n を備えた、AI 時代の公開のためのセキュア・バイ・デフォルトな Rust 製静的サイトジェネレーター。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA、EU AI Act、データ主権:2026 年銀行向けコンプライアンス・スタック</title>
     <link href="https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

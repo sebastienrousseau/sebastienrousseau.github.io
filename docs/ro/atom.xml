@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/ro/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ro/"/>
   <id>https://sebastienrousseau.com/ro/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T17:40:33+00:00</updated>
+  <entry>
+    <title>Un generator de site-uri statice sigur implicit pentru publicarea în era AI în 2026</title>
+    <link href="https://sebastienrousseau.com/ro/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/"/>
+    <id>https://sebastienrousseau.com/ro/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/</id>
+    <updated>2026-05-29T17:40:33+00:00</updated>
+    <published>2026-05-29T17:40:33+00:00</published>
+    <summary>Generator de site-uri statice în Rust, sigur implicit, pentru infrastructură de publicare în era AI: validare WCAG, întărire CSP/SRI, pipeline LLM locale, WebAssembly, insule, i18n la scară.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI Act și suveranitatea datelor: stiva de conformitate bancară 2026</title>
     <link href="https://sebastienrousseau.com/ro/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

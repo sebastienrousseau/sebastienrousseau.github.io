@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Wed, 17 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Wed, 17 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>面向 AI 时代发布的默认安全静态站点生成器 2026 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="面向 AI 时代发布的默认安全 Rust 静态站点生成器：WCAG 校验、CSP/SRI 加固、本地LLM流水线、WebAssembly、岛屿架构与大规模 i18n 一次构建完成。">
+<meta name="keywords" content="静态站点生成器, Rust SSG, 默认安全 SSG, AI 发布, CSP, SRI, WCAG, i18n, WebAssembly, 岛屿架构">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Secure-by-Default Static Site Generator for AI-Era Publishing">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-+Eheq8iEtQ3dbAnnT2EyINjK39IjqAy3dT13FXCGD98=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-YIfCP911LqWdJ0PN+CSMbxNGhjVGcl5pehqIq9+hXGc=' 'sha256-qnnDEBBWEiO60OOejgPDmUhM0isnbVKFLYkD5w0Ptd4=' 'sha256-s3FElW5pn3pPXM90714hxcuAM6TDkS5H+P2dBn7+1IY=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/zh-hans/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom 订阅源" href="/zh-hans/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="面向 AI 时代发布的默认安全静态站点生成器 2026 — Sebastien Rousseau">
+<meta property="og:description" content="面向 AI 时代发布的默认安全 Rust 静态站点生成器：WCAG 校验、CSP/SRI 加固、本地LLM流水线、WebAssembly、岛屿架构与大规模 i18n 一次构建完成。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/zh-hans/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="面向 AI 时代发布的默认安全静态站点生成器 2026 — Sebastien Rousseau">
+<meta name="twitter:description" content="面向 AI 时代发布的默认安全 Rust 静态站点生成器：WCAG 校验、CSP/SRI 加固、本地LLM流水线、WebAssembly、岛屿架构与大规模 i18n 一次构建完成。">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/zh-hans/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">跳至主要内容</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="切换导航" />
+      <div class="wrap">
+        <a class="ap-brand" href="/zh-hans/index.html" aria-label="Sebastien Rousseau 首页">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="主导航">
+          <ul class="ap-menu">
+            <li><a href="/zh-hans/guanyu/index.html">关于</a></li>
+            <li><a href="/zh-hans/wenzhang/index.html" aria-current="page" class="active">文章</a></li>
+            <li><a href="/zh-hans/lunwen/index.html">论文与白皮书</a></li>
+            <li><a href="/zh-hans/zhuti/index.html">主题</a></li>
+            <li><a href="/zh-hans/xiangmu/index.html">项目</a></li>
+            <li><a href="/zh-hans/boqing/index.html">播放列表</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="切换到深色主题" aria-pressed="false" title="切换主题">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="搜索（Cmd 或 Ctrl + K）" title="搜索（⌘K）">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="语言">
+            <button type="button" class="ap-lang-toggle" aria-label="ZH，切换语言" aria-expanded="false" aria-haspopup="menu" title="切换语言">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">ZH</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/zh-hans/lianxi/index.html" aria-label="联系我">联系我 ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="切换导航">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>面向 AI 时代发布的默认安全静态站点生成器 2026</h1>
+      <p class="sub">发布基础设施需要把安全、无障碍、结构化数据、本地化、AI 工作流与规模化能力从一开始就内建进去。</p>
+    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-" class="article-tag" rel="tag">静态站点生成器</a><a href="/tags/index.html#h3-rust-ssg" class="article-tag" rel="tag">Rust SSG</a><a href="/tags/index.html#h3-ssg" class="article-tag" rel="tag">默认安全 SSG</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">AI 发布</a><a href="/tags/index.html#h3-csp" class="article-tag" rel="tag">CSP</a><a href="/tags/index.html#h3-sri" class="article-tag" rel="tag">SRI</a><a href="/tags/index.html#h3-wcag" class="article-tag" rel="tag">WCAG</a><a href="/tags/index.html#h3-i18n" class="article-tag" rel="tag">i18n</a><a href="/tags/index.html#h3-webassembly" class="article-tag" rel="tag">WebAssembly</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">岛屿架构</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-17T06:06:06+00:00" class="meta-pub">Published 17 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">1 min read</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Contents</h2><ol><li><a href="#2026">这一开源项目在 2026 年的意义</a></li><li><a href="#section-2">架构视角</a></li><li><a href="#section-3">应关注的信号</a></li><li><a href="#section-4">静态站点的安全神话</a></li><li><a href="#ai">AI 时代的发布</a></li><li><a href="#rust">为什么 Rust 契合这一问题</a></li><li><a href="#section-7">不同受众的意义</a></li><li><a href="#section-12">结论</a></li><li><a href="#section-13">常见问题</a></li><li><a href="#section-14">参考资料</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 面向 AI 时代发布的默认安全 Rust 静态站点生成器：WCAG 校验、CSP/SRI 加固、本地LLM流水线、WebAssembly、岛屿架构与大规模 i18n 一次构建完成。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>这一开源项目在 2026 年的意义.</strong> 2026 年开源的战略价值，已不仅止于透明、复用或开发者好感。对银行与金融机构而言，开源基础设施成为一种手段：可以检视假设、检验控制、降低厂商不透明度，并把架构主张落成可读、可分叉、可加固、可运营的代码。最有价值的项目并非演示，而是参考实现——它揭示安全、无障碍、性能、合规与开发者体验如何拼接为一体。.</li>  <li><strong>应关注的信号.</strong> 静态站点消除了大量服务端风险，但并未消除安全顾虑。生成的页面仍会加载脚本、字体、图像、分析、样式表、订阅源、元数据与第三方资产。一套安全的生成器应当帮助强制安全默认，而不是让每个站点自行重新发现这些问题。.</li>  <li><strong>静态站点的安全神话.</strong> 静态站点消除了大量服务端风险，但并未消除安全顾虑。生成的页面仍会加载脚本、字体、图像、分析、样式表、订阅源、元数据与第三方资产。一套安全的生成器应当帮助强制安全默认，而不是让每个站点自行重新发现这些问题。.</li>  <li><strong>AI 时代的发布.</strong> AI 通过提升内容速度改变了发布。这反而使元数据质量、审阅工作流、出处、本地化、无障碍与一致性更为重要，而非相反。一套理解本地LLM工作流的静态生成器，能够在不把整条流水线交给外部黑箱的前提下支撑生产力。.</li></ul></aside><h1>面向 AI 时代发布的默认安全静态站点生成器 2026</h1>
+<!-- lead-start -->
+<aside class="lead" aria-label="文章摘要">
+<p>**要点速览。**发布基础设施已成为安全基础设施。这一 Rust 静态站点生成器项目把 CSP、SRI、WCAG 校验、结构化元数据、28 语种 i18n、本地LLM流水线、WebAssembly 岛屿架构与流式编译当作默认行为，而非需要逐个想起来安装的插件。您当前阅读的这个站点正是用它构建的。</p>
+<p><strong>核心要点：</strong></p>
+<ul>
+<li>**静态不等于安全。**CSP、SRI、图像净化、元数据正确性与部署控制仍然重要。</li>
+<li>**无障碍属于构建环节。**WCAG 2.1 AA 校验是构建门，而非事后审计。</li>
+<li>**本地LLM流水线胜过不透明 API。**在工作站上运行的编辑工作流，能把草稿、提示与数据留在控制范围内。</li>
+<li>**i18n 是一等编译目标。**28 个语种与 EN 同一遍生成，hreflang 与 slug-map 完全对齐。</li>
+<li>**流式编译可扩展。**10 万+ 页面在数分钟内完成，输出可复现并可供审计。</li>
+</ul>
+<p><strong>延伸阅读：</strong><a href="/zh-hans/2026-05-20-cloud-native-banking-financial-institutions-2026/">云原生银行</a> · <a href="/zh-hans/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/">面向支付的 AI 操作系统</a> · <a href="/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/">DORA + AI 法案合规栈</a></p>
+</aside>
+<!-- lead-end -->
+<p>发布基础设施已成为安全基础设施。一套现代静态站点生成器要做的不止是把 Markdown 转成 HTML。它必须强制无障碍、保护脚本与样式、生成结构化元数据、支持本地化、安全地集成 AI 内容工作流，并能扩展到数千页面之上。这一 Rust 静态站点生成器项目把这一主张落到具体实现上。</p>
+<p>本文的开源参考点是 <a href="https://github.com/sebastienrousseau/static-site-generator" title="static-site-generator">static-site-generator ⧉</a>。该仓库的定位是：以 Rust 构建的默认安全静态站点生成器，内置 WCAG 2.1 AA 校验、CSP/SRI 加固、本地LLM流水线、WebAssembly 目标、交互式岛屿架构、面向 10 万+ 页的流式编译、28 语种 i18n 以及一行命令部署。</p>
+<hr />
+<blockquote>
+<p><strong>董事会摘要 / 核心要点</strong></p>
+<ul>
+<li>**静态站点并非自动安全。**CSP、SRI、无障碍、元数据、图像处理与部署控制依然重要。</li>
+<li>**AI 时代的发布需要本地控制。**本地LLM流水线可以在不依赖不透明外部工作流的前提下提升生产力。</li>
+<li>**无障碍应当作为构建门。**WCAG 校验属于发布流水线本身，而非事后审计。</li>
+<li>**规模改变架构。**流式编译与 10 万+ 页面支持，使该项目的意义远超个人博客。</li>
+<li>**该项目可支撑自有发布体系。**它把博客格式、多语种输出、元数据与安全姿态，一并对应到开源代码。</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="2026">这一开源项目在 2026 年的意义 <a class="heading-anchor" href="#2026" aria-label="Link to 这一开源项目在 2026 年的意义">#</a></h2>
+<p>2026 年开源的战略价值，已不仅止于透明、复用或开发者好感。对银行与金融机构而言，开源基础设施成为一种手段：可以检视假设、检验控制、降低厂商不透明度，并把架构主张落成可读、可分叉、可加固、可运营的代码。最有价值的项目并非演示，而是参考实现——它揭示安全、无障碍、性能、合规与开发者体验如何拼接为一体。</p>
+<p>应当以此视角理解 static-site-generator。它不是一个仓库，而是一份具体的设计论证：关键基础设施应当可审计、可组合、可记录、可测试，并能被依赖它的人理解。在金融服务中，这一点尤为重要——系统日益处在代理式 AI、实时支付、后量子密码学、云原生韧性、结构化数据与监管证据的交叉点上。</p>
+<h2 id="section-2">架构视角 <a class="heading-anchor" href="#section-2" aria-label="Link to 架构视角">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>层级</th>
+<th>设计决策</th>
+<th>重要性</th>
+<th>处理不当的风险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>编译器</strong></td>
+<td>Rust 静态站点流水线</td>
+<td>为大型站点提供性能与安全</td>
+<td>构建缓慢或脆弱</td>
+</tr>
+<tr>
+<td><strong>安全</strong></td>
+<td>CSP 与 SRI 加固</td>
+<td>保护已发布页面免受资产与脚本风险</td>
+<td>静态站点带上动态攻击面</td>
+</tr>
+<tr>
+<td><strong>无障碍</strong></td>
+<td>WCAG 校验</td>
+<td>把质量变成构建时的硬性要求</td>
+<td>大规模产出难以无障碍</td>
+</tr>
+<tr>
+<td><strong>AI 工作流</strong></td>
+<td>本地LLM流水线</td>
+<td>支撑可控的 AI 辅助发布</td>
+<td>内容生成不透明</td>
+</tr>
+<tr>
+<td><strong>全球发布</strong></td>
+<td>28 语种 i18n 与流式编译</td>
+<td>支撑多语种规模化</td>
+<td>本地化流程碎片化</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-3">应关注的信号 <a class="heading-anchor" href="#section-3" aria-label="Link to 应关注的信号">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>信号</th>
+<th>含义</th>
+<th>参考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>49 个 GitHub 星标</strong></td>
+<td>在所选仓库中具备可观可见度</td>
+<td><a href="https://github.com/sebastienrousseau/static-site-generator" title="static-site-generator repository">static-site-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>WCAG 2.1 AA 校验</strong></td>
+<td>无障碍纳入构建流水线</td>
+<td><a href="https://github.com/sebastienrousseau/static-site-generator" title="static-site-generator repository">static-site-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>CSP/SRI 加固</strong></td>
+<td>安全控制内建于生成产物</td>
+<td><a href="https://github.com/sebastienrousseau/static-site-generator" title="static-site-generator repository">static-site-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>本地LLM流水线</strong></td>
+<td>AI 发布被当作基础设施议题处理</td>
+<td><a href="https://github.com/sebastienrousseau/static-site-generator" title="static-site-generator repository">static-site-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>10 万+ 页流式编译</strong></td>
+<td>架构面向规模化设计</td>
+<td><a href="https://github.com/sebastienrousseau/static-site-generator" title="static-site-generator repository">static-site-generator ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-4">静态站点的安全神话 <a class="heading-anchor" href="#section-4" aria-label="Link to 静态站点的安全神话">#</a></h2>
+<p>静态站点消除了大量服务端风险，但并未消除安全顾虑。生成的页面仍会加载脚本、字体、图像、分析、样式表、订阅源、元数据与第三方资产。一套安全的生成器应当帮助强制安全默认，而不是让每个站点自行重新发现这些问题。</p>
+<h2 id="ai">AI 时代的发布 <a class="heading-anchor" href="#ai" aria-label="Link to AI 时代的发布">#</a></h2>
+<p>AI 通过提升内容速度改变了发布。这反而使元数据质量、审阅工作流、出处、本地化、无障碍与一致性更为重要，而非相反。一套理解本地LLM工作流的静态生成器，能够在不把整条流水线交给外部黑箱的前提下支撑生产力。</p>
+<h2 id="rust">为什么 Rust 契合这一问题 <a class="heading-anchor" href="#rust" aria-label="Link to 为什么 Rust 契合这一问题">#</a></h2>
+<p>对一个需要速度、安全、流式编译、确定性输出与命令行人体工学的生成器而言，Rust 是合适的选择。语言选择也强化了项目的更广含义：发布基础设施应当可靠到足以在机构级规模下运行。</p>
+<h2 id="section-7">不同受众的意义 <a class="heading-anchor" href="#section-7" aria-label="Link to 不同受众的意义">#</a></h2>
+<h3 id="section-8">对银行技术负责人 <a class="heading-anchor" href="#section-8" aria-label="Link to 对银行技术负责人">#</a></h3>
+<p>问题在于：该项目能否把一项战略压力转化为可执行的架构。当仓库给团队提供可检视的具体物——接口、配置、测试、安全边界、部署假设与失败模式——价值最强。</p>
+<h3 id="section-9">对安全与风险团队 <a class="heading-anchor" href="#section-9" aria-label="Link to 对安全与风险团队">#</a></h3>
+<p>评估该项目不应只看功能，还要看控制证据。优秀的开源金融基础设施会展示身份、密钥、校验、审计日志、限频、签名、出处与恢复的预期工作方式。</p>
+<h3 id="section-10">对开发者与平台工程师 <a class="heading-anchor" href="#section-10" aria-label="Link to 对开发者与平台工程师">#</a></h3>
+<p>最重要的检验是：项目是否在不掩盖关键机制的前提下降低认知负担。好的开源应让安全路径成为容易路径，同时仍允许有经验的工程师理解并修改实现。</p>
+<h3 id="section-11">对贡献者 <a class="heading-anchor" href="#section-11" aria-label="Link to 对贡献者">#</a></h3>
+<p>机会在于：在真实机构需要保证的方向上强化该项目——文档、示例、一致性测试、CI 加固、威胁模型、性能画像、无障碍检查与集成指南。</p>
+<h2 id="section-12">结论 <a class="heading-anchor" href="#section-12" aria-label="Link to 结论">#</a></h2>
+<p>之所以值得撰写 static-site-generator，是因为它把更广阔的行业问题落到具体形态。2026 年，银行不需要更多抽象的转型语言，而是需要可检视的系统，展示现代基础设施如何被构建、加固、测试与治理。开源是把这一论证可见化的最可信方式。</p>
+<h2 id="section-13">常见问题 <a class="heading-anchor" href="#section-13" aria-label="Link to 常见问题">#</a></h2>
+<p><strong>为什么要写静态站点生成器？</strong></p>
+<p>因为发布系统如今塑造着安全、无障碍、SEO、国际化与 AI 内容运营。</p>
+<p><strong>这个项目有何不同？</strong></p>
+<p>它将 Rust、安全加固、WCAG 校验、本地LLM工作流、WebAssembly、岛屿架构、规模化与 i18n 合而为一。</p>
+<p><strong>它仅适用于博客吗？</strong></p>
+<p>并非如此。该架构同样适用于文档、研究库、营销站点、产品文档以及多语种发布资产。</p>
+<p><strong>最有力的文章切入点是什么？</strong></p>
+<p>AI 时代的默认安全发布：内容更快只有在流水线保留信任时才有意义。</p>
+<h2 id="section-14">参考资料 <a class="heading-anchor" href="#section-14" aria-label="Link to 参考资料">#</a></h2>
+<ul>
+<li>GitHub, (2026). <a href="https://github.com/sebastienrousseau/static-site-generator" title="static-site-generator repository">static-site-generator repository ⧉</a>.</li>
+<li>W3C, (2026). <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" title="Web Content Accessibility Guidelines">Web Content Accessibility Guidelines ⧉</a>.</li>
+<li>MDN, (2026). <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP" title="Content Security Policy">Content Security Policy ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">最后审阅 <time datetime="2026-06-17">2026-06-17</time>。</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/zh-hans/guanyu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家，撰写关于应用人工智能、ISO 20022 迁移、面向金融服务的后量子密码学，以及批发支付结构性转型的内容。</span><span class="author-credentials">20 多年经验，曾任职于汇丰商业及投资银行、PayPal、巴克莱、Shazam、AKQA、维珍集团。 <a href="/zh-hans/guanyu/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最近审阅 <time datetime="2026-05-29">2026-05-29</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">相关阅读</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2026-05-16-2026-zuijia-yun-jichu-jiagou" class="related-media" aria-label="2026 年最佳云基础设施架构：金融服务的 AI 原生、多云、量子感知蓝图" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-ai"><a href="https://sebastienrousseau.com/zh-hans/2026-05-16-2026-zuijia-yun-jichu-jiagou">2026 年最佳云基础设施架构：金融服务的 AI 原生、多云、量子感知蓝图</a> <a class="heading-anchor" href="#2026-ai" aria-label="Link to 2026 年最佳云基础设施架构：金融服务的 AI 原生、多云、量子感知蓝图">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2024-03-08-rustlogs-rust-ying-yong-de-gaoji-rizhi-ku/index.html" class="related-media" aria-label="RustLogs：面向 Rust 应用的高级日志库" tabindex="-1"><img alt="Banner for RustLogs (RLG)" src="https://cloudcdn.pro/api/transform?url=/stocks/images/rustlogs.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="rustlogs-rust"><a href="https://sebastienrousseau.com/zh-hans/2024-03-08-rustlogs-rust-ying-yong-de-gaoji-rizhi-ku/index.html">RustLogs：面向 Rust 应用的高级日志库</a> <a class="heading-anchor" href="#rustlogs-rust" aria-label="Link to RustLogs：面向 Rust 应用的高级日志库">#</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2024-01-15-alien-studio-yong-ai-sheying-biange-yishu/index.html" class="related-media" aria-label="Alien Studio：用 AI 摄影变革艺术" tabindex="-1"><img alt="Sunset's muse, a serene glance; beauty in stillness" src="https://cloudcdn.pro/api/transform?url=/clients/alienstudio/v1/collections/radiance/radiance-08.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="alien-studio-ai"><a href="https://sebastienrousseau.com/zh-hans/2024-01-15-alien-studio-yong-ai-sheying-biange-yishu/index.html">Alien Studio：用 AI 摄影变革艺术</a> <a class="heading-anchor" href="#alien-studio-ai" aria-label="Link to Alien Studio：用 AI 摄影变革艺术">#</a></h3><p><time datetime="2024-01-15">2024-01-15</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Sources & references</h2><ol class="article-sources-list"><li><a href="https://github.com/sebastienrousseau/static-site-generator" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/sebastienrousseau/static-site-generator</span></a></li><li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" rel="external noopener nofollow"><span class="source-host">www.w3.org</span><span class="source-path">/WAI/standards-guidelines/wcag/</span></a></li></ol></aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/zh-hans/guanyu/index.html">关于</a></li>
+              <li><a href="/zh-hans/lianxi/index.html">联系</a></li>
+              <li><a href="/zh-hans/yong-static-site-generator-zhizuo/index.html">使用 Static Site Generator 构建</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">文章</h2>
+            <ul>
+              <li><a href="/zh-hans/wenzhang/index.html">文章</a></li>
+              <li><a href="/zh-hans/lunwen/index.html">论文与白皮书</a></li>
+              <li><a href="/zh-hans/biaoqian/index.html">标签</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">工作</h2>
+            <ul>
+              <li><a href="/zh-hans/xiangmu/index.html">项目</a></li>
+              <li><a href="/zh-hans/boqing/index.html">播放列表</a></li>
+              <li><a href="/zh-hans/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">联系</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="通讯订阅">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — 关于支付、人工智能与后量子密码学的研究笔记。无垃圾邮件。</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="nin@yinhang.com" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">订阅</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="社交链接">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau 于 Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau 于 LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau 于 Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau 于 YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/zh-hans/wuzhang-ai/index.html">无障碍访问</a> ·
+            <a href="/zh-hans/yinsi/index.html">隐私</a> ·
+            <a href="/zh-hans/tiaokuan/index.html">条款</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"zh-hans"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"zh-hans"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":190,"about":{"@type":"Thing","name":"Rust","sameAs":["https://en.wikipedia.org/wiki/Rust_(programming_language)","https://www.wikidata.org/wiki/Q575650"]},"headline":"面向 AI 时代发布的默认安全静态站点生成器 2026","description":"面向 AI 时代发布的默认安全 Rust 静态站点生成器：WCAG 校验、CSP/SRI 加固、本地LLM流水线、WebAssembly、岛屿架构与大规模 i18n 一次构建完成。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp","width":"100vw","height":"100vh","caption":"开发者屏幕上的逆光代码——象征默认安全的 Rust 静态站点生成器：CSP/SRI 加固、WCAG 校验、28 语种 i18n 与内建于构建过程的本地LLM流水线"},"url":"https://sebastienrousseau.com/zh-hans/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/","datePublished":"2026-06-17T06:06:06+00:00","dateModified":"2026-06-17","inLanguage":"zh-hans","keywords":"静态站点生成器, Rust SSG, 默认安全 SSG, AI 发布, CSP, SRI, WCAG, i18n, WebAssembly, 岛屿架构","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hans/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"zh-hans"},"citation":[{"@type":"CreativeWork","url":"https://github.com/sebastienrousseau/static-site-generator"},{"@type":"CreativeWork","url":"https://www.w3.org/WAI/standards-guidelines/wcag/"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/zh-hans/"},{"@type":"ListItem","position":3,"name":"面向 AI 时代发布的默认安全静态站点生成器 2026","item":"https://sebastienrousseau.com/zh-hans/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="搜索">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>搜索</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="搜索">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="搜索文档…" autocomplete="off" aria-label="搜索"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> 关闭</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 导航</span><span><kbd>Enter</kbd> 打开</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"面向 AI 时代发布的默认安全静态站点生成器 2026","url":"https://sebastienrousseau.com/zh-hans/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/","inLanguage":"zh-Hans","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"静态站点生成器, Rust SSG, 默认安全 SSG, AI 发布, CSP, SRI, WCAG, i18n, WebAssembly, 岛屿架构","programmingLanguage":["Rust","WebAssembly"]}</script></body>
+</html>

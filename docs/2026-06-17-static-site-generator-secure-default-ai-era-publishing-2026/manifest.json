@@ -1,0 +1,19 @@
+{
+  "background_color": "#ffffff",
+  "description": "A secure-by-default Rust static site generator for AI-era publishing, with WCAG validation, CSP/SRI hardening, local LLM",
+  "display": "standalone",
+  "icons": [
+    {
+      "purpose": "any maskable",
+      "sizes": "512x512",
+      "src": "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg",
+      "type": "image/svg+xml"
+    }
+  ],
+  "name": "Sebastien Rousseau",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": "sebastienrou",
+  "start_url": ".",
+  "theme_color": "#ffffff"
+}

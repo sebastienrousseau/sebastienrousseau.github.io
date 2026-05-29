@@ -6,8 +6,27 @@
     <description>日本語の記事:応用AI、ISO 20022 決済、ポスト量子暗号、ホールセール決済の構造変革。</description>
     <atom:link href="https://sebastienrousseau.com/ja/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ja-JP</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 17:40:33 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>AI 時代の公開のためのセキュア SSG 2026</title>
+      <link>https://sebastienrousseau.com/ja/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/</link>
+      <description>WCAG 検証、CSP/SRI ハードニング、ローカル LLM コンテンツパイプライン、WebAssembly、アイランド、大規模 i18n を備えた、AI 時代の公開のためのセキュア・バイ・デフォルトな Rust 製静的サイトジェネレーター。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/</guid>
+      <pubDate>Fri, 29 May 2026 17:40:33 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>静的サイトジェネレーター</category>
+      <category>Rust SSG</category>
+      <category>セキュア SSG</category>
+      <category>AI 公開</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>WCAG</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+      <category>アイランド・アーキテクチャ</category>
+    </item>
     <item>
       <title>DORA、EU AI Act、データ主権:2026 年銀行向けコンプライアンス・スタック</title>
       <link>https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

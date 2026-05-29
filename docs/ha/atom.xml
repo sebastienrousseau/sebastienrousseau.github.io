@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/ha/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ha/"/>
   <id>https://sebastienrousseau.com/ha/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T17:40:33+00:00</updated>
+  <entry>
+    <title>Mai Samar da Shafukan Static Mai Aminci ta Hanyar Tsoho don Bugawa a Zamanin AI a 2026</title>
+    <link href="https://sebastienrousseau.com/ha/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/"/>
+    <id>https://sebastienrousseau.com/ha/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/</id>
+    <updated>2026-05-29T17:40:33+00:00</updated>
+    <published>2026-05-29T17:40:33+00:00</published>
+    <summary>Mai samar da shafukan static a Rust, mai aminci ta hanyar tsoho don bugawa a zamanin AI: tabbatar da WCAG, ƙarfafa CSP/SRI, bututun LLM na cikin gida, WebAssembly, ginin tsibirai, da i18n a babban sikeli.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI Act, da Ikon Mallakar Bayanai: Tarin Bin Doka na 2026 ga Bankuna</title>
     <link href="https://sebastienrousseau.com/ha/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

@@ -614,6 +614,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>A Secure-by-Default Static Site Generator for AI-Era Publishing in 2026</news:title>
+    <news:keywords>static site generator, Rust SSG, secure static site generator, AI publishing, CSP, SRI, WCAG, i18n, WebAssembly, islands architecture</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026</loc>
   <news:news>
     <news:publication>
@@ -1310,6 +1322,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/tr/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>AI Çağı Yayıncılığı için Varsayılan Olarak Güvenli Bir SSG (2026)</news:title>
+    <news:keywords>statik site oluşturucu, Rust SSG, güvenli statik site oluşturucu, AI yayıncılığı, CSP, SRI, WCAG, i18n, WebAssembly, islands mimarisi</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/tr/2018-01-24-erc-20-token-standardi/index.html</loc>
   <news:news>
     <news:publication>
@@ -1958,6 +1982,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/th/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>ตัวสร้างเว็บไซต์แบบสแตติกที่ปลอดภัยโดยค่าเริ่มต้นสำหรับการเผยแพร่ยุค AI ปี 2569</news:title>
+    <news:keywords>ตัวสร้างเว็บไซต์แบบสแตติก, Rust SSG, ตัวสร้างเว็บไซต์แบบสแตติกที่ปลอดภัย, การเผยแพร่ยุค AI, CSP, SRI, WCAG, i18n, WebAssembly, สถาปัตยกรรมเกาะ</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/th/2023-10-16-pongkan-khomun-yuk-quantum-laibrari-hash-hsh/index.html</loc>
   <news:news>
     <news:publication>
@@ -2312,6 +2348,18 @@
   </news:news>
 </url>
 
+<url>
+  <loc>https://sebastienrousseau.com/es/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>es</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>Generador de sitios estáticos seguro por defecto para publicación en la era de…</news:title>
+    <news:keywords>generador de sitios estáticos, SSG en Rust, generador seguro por defecto, publicación con AI, CSP, SRI, WCAG, i18n, WebAssembly, arquitectura de islas</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/es/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</loc>
   <news:news>
@@ -2862,6 +2910,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Àkàndé : assistant vocal propulsé par GPT pour dirigeants</news:title>
     <news:keywords>Àkàndé, assistant vocal, compréhension du langage naturel, résumés PDF, cache efficace, OpenAI GPT, assistance exécutive, assistance personnelle, assistants numériques, innovation technologique</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fr</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>Un générateur de site statique sécurisé par défaut pour l'ère de l'IA en 2026</news:title>
+    <news:keywords>générateur de site statique, Rust SSG, générateur sécurisé par défaut, publication IA, CSP, SRI, WCAG, i18n, WebAssembly, architecture en îlots</news:keywords>
   </news:news>
 </url>
 <url>
@@ -3573,6 +3633,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/id/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>id</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>Static Site Generator Aman secara Default untuk Publikasi Era AI 2026</news:title>
+    <news:keywords>static site generator, SSG Rust, static site generator aman, publikasi AI, CSP, SRI, WCAG, i18n, WebAssembly, arsitektur islands</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/id/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -4233,6 +4305,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/ko/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>2026년 AI 시대 게시를 위한 기본 보안 SSG</news:title>
+    <news:keywords>정적 사이트 생성기, Rust SSG, 기본 보안 정적 사이트 생성기, AI 게시, CSP, SRI, WCAG, i18n, WebAssembly, 아일랜드 아키텍처</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ko/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -4866,6 +4950,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Mathematische und kryptografische Konstanten für die Rust-Sicherheit</news:title>
     <news:keywords>mathematische Konstanten, kryptografische Konstanten, Rust-Sicherheit, sichere Kommunikation, Verschlüsselung, RSA, Elliptische-Kurven-Kryptografie, Common (CMN) Bibliothek, Rust-Anwendungen, mathematische Berechnungen</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/de/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>de</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>Standardmäßig sicherer Static Site Generator für AI-Publishing 2026</news:title>
+    <news:keywords>Static Site Generator, Rust SSG, sicherer Static Site Generator, AI Publishing, CSP, SRI, WCAG, i18n, WebAssembly, Islands-Architektur</news:keywords>
   </news:news>
 </url>
 <url>
@@ -5553,6 +5649,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/hi/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>hi</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>2026 में AI युग के प्रकाशन हेतु डिफ़ॉल्ट-सुरक्षित स्टैटिक साइट जेनरेटर</news:title>
+    <news:keywords>स्टैटिक साइट जेनरेटर, Rust SSG, सुरक्षित स्टैटिक साइट जेनरेटर, AI प्रकाशन, CSP, SRI, WCAG, i18n, WebAssembly, आइलैंड्स आर्किटेक्चर</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/hi/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -6170,6 +6278,18 @@
 </url>
 
 <url>
+  <loc>https://sebastienrousseau.com/fil/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fil</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>Isang Secure-by-Default na Static Site Generator para sa AI-Era Publishing sa…</news:title>
+    <news:keywords>static site generator, Rust SSG, secure static site generator, AI publishing, CSP, SRI, WCAG, i18n, WebAssembly, islands architecture</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/fil/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -6443,6 +6563,18 @@
 </url>
 
 
+<url>
+  <loc>https://sebastienrousseau.com/bn/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>bn</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>২০২৬-এ AI-যুগের প্রকাশনার জন্য একটি ডিফল্ট নিরাপদ স্ট্যাটিক সাইট জেনারেটর</news:title>
+    <news:keywords>স্ট্যাটিক সাইট জেনারেটর, Rust SSG, সুরক্ষিত স্ট্যাটিক সাইট জেনারেটর, AI প্রকাশনা, CSP, SRI, WCAG, i18n, WebAssembly, islands architecture</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/bn/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</loc>
   <news:news>
@@ -6908,6 +7040,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Le Chat van Mistral AI: een nieuw tijdperk in conversatie-AI</news:title>
     <news:keywords>Le Chat, Mistral AI, conversatie-AI, LLM, Europa, open source</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/nl/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>Een veilig-by-default static site generator voor publiceren in het AI-tijdperk…</news:title>
+    <news:keywords>static site generator, Rust SSG, veilige static site generator, AI-publicatie, CSP, SRI, WCAG, i18n, WebAssembly, islands-architectuur</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7576,6 +7720,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/pt-br/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pt-br</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>Um gerador de sites estáticos seguro por padrão para a publicação na era da IA…</news:title>
+    <news:keywords>gerador de sites estáticos, SSG em Rust, gerador seguro por padrão, publicação com IA, CSP, SRI, WCAG, i18n, WebAssembly, arquitetura de ilhas</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/pt-br/2024-02-08-revolucionar-a-publicidade-como-a-ia-molda-o-futuro/index.html</loc>
   <news:news>
     <news:publication>
@@ -7919,6 +8075,18 @@
 
 
 <url>
+  <loc>https://sebastienrousseau.com/ar/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ar</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>مولّد مواقع ثابتة آمن افتراضيًا لنشر عصر الذكاء الاصطناعي في 2026</news:title>
+    <news:keywords>مولّد المواقع الثابتة، Rust SSG، مولّد مواقع ثابتة آمن، نشر الذكاء الاصطناعي، CSP، SRI، WCAG، i18n، WebAssembly، معمارية الجزر</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ar/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -8115,6 +8283,18 @@
 </url>
 
 
+<url>
+  <loc>https://sebastienrousseau.com/ha/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ha</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>Mai Samar da Shafukan Static Mai Aminci ta Hanyar Tsoho don Bugawa a Zamanin…</news:title>
+    <news:keywords>static site generator, Rust SSG, secure static site generator, AI publishing, CSP, SRI, WCAG, i18n, WebAssembly, gine-ginen islands</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/ha/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</loc>
   <news:news>
@@ -8521,6 +8701,18 @@
     <news:publication_date>2026-05-25T06:06:06+00:00</news:publication_date>
     <news:title>Програмована ліквідність 2026: ШІ, токенізовані депозити та оркестрація…</news:title>
     <news:keywords>програмована ліквідність 2026, оркестрація казначейства, ШІ-казначейство, токенізовані депозити, ліквідність у реальному часі, стейблкоїни казначейство, мультиканальні платежі, віртуальні рахунки, транзакційний банкінг, мобільність застави</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/uk/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>uk</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>SSG, безпечний за замовчуванням, для публікації епохи ШІ у 2026</news:title>
+    <news:keywords>генератор статичних сайтів, Rust SSG, безпечний SSG, публікація з ШІ, CSP, SRI, WCAG, i18n, WebAssembly, архітектура островів</news:keywords>
   </news:news>
 </url>
 <url>
@@ -8975,6 +9167,18 @@
 
 
 <url>
+  <loc>https://sebastienrousseau.com/yo/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>yo</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>Olùṣẹ̀dá Ojú-Òpó Tó Dúró Ṣinṣin Tó Ní Ààbò fún Ìtẹ̀wé Sànmánì AI ní 2026</news:title>
+    <news:keywords>olùṣẹ̀dá ojú-òpó tó dúró ṣinṣin, Rust SSG, SSG tó ní ààbò, ìtẹ̀wé AI, CSP, SRI, WCAG, i18n, WebAssembly, ètò àwọn erékùṣù</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/yo/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -9172,6 +9376,18 @@
 </url>
 
 
+<url>
+  <loc>https://sebastienrousseau.com/ro/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ro</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>Un generator de site-uri statice sigur implicit pentru publicarea în era AI în…</news:title>
+    <news:keywords>generator de site-uri statice, Rust SSG, SSG sigur implicit, publicare AI, CSP, SRI, WCAG, i18n, WebAssembly, arhitectură de insule</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/ro/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</loc>
   <news:news>
@@ -9688,6 +9904,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/ru/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>Безопасный по умолчанию генератор статических сайтов для публикации в эпоху ИИ…</news:title>
+    <news:keywords>генератор статических сайтов, Rust SSG, безопасный SSG, публикация ИИ, CSP, SRI, WCAG, i18n, WebAssembly, островная архитектура</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ru/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -10050,6 +10278,18 @@
   </news:news>
 </url>
 
+<url>
+  <loc>https://sebastienrousseau.com/cs/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>Generátor statických webů bezpečný ve výchozím nastavení pro éru AI v roce 2026</news:title>
+    <news:keywords>generátor statických webů, Rust SSG, bezpečný generátor statických webů, AI publikování, CSP, SRI, WCAG, i18n, WebAssembly, architektura ostrovů</news:keywords>
+  </news:news>
+</url>
 
 
 <url>
@@ -10544,6 +10784,18 @@
     <news:publication_date>2026-05-25T06:06:06+00:00</news:publication_date>
     <news:title>Liquidità programmabile 2026: AI, depositi tokenizzati, tesoreria real-time</news:title>
     <news:keywords>liquidità programmabile 2026, orchestrazione di tesoreria, AI tesoreria, depositi tokenizzati, liquidità in tempo reale, stablecoin tesoreria, pagamenti multi-binario, conti virtuali, transaction banking, mobilità del collaterale</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>Un generatore di siti statici sicuro per default per l'editoria nell'era…</news:title>
+    <news:keywords>generatore di siti statici, SSG in Rust, generatore di siti statici sicuro, editoria AI, CSP, SRI, WCAG, i18n, WebAssembly, architettura a isole</news:keywords>
   </news:news>
 </url>
 <url>
@@ -11255,6 +11507,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/ja/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ja</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>AI 時代の公開のためのセキュア SSG 2026</news:title>
+    <news:keywords>静的サイトジェネレーター, Rust SSG, セキュア SSG, AI 公開, CSP, SRI, WCAG, i18n, WebAssembly, アイランド・アーキテクチャ</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ja/2026-05-17-eejentikku-enjiniaringu-ginkou-no-2026-sekkeizu/index.html</loc>
   <news:news>
     <news:publication>
@@ -11574,6 +11838,18 @@
 
 
 <url>
+  <loc>https://sebastienrousseau.com/he/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>מחולל אתרים סטטי מאובטח כברירת מחדל לפרסום בעידן ה-AI ב-2026</news:title>
+    <news:keywords>מחולל אתרים סטטי, SSG ב-Rust, מחולל אתרים סטטי מאובטח, פרסום בעידן AI, CSP, SRI, WCAG, i18n, WebAssembly, ארכיטקטורת איים</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/he/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -11783,6 +12059,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/sv/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>Statisk sajtgenerator säker som standard för publicering i AI-eran 2026</news:title>
+    <news:keywords>statisk sajtgenerator, Rust SSG, säker statisk sajtgenerator, AI-publicering, CSP, SRI, WCAG, i18n, WebAssembly, islands-arkitektur</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/sv/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -11924,6 +12212,18 @@
     <news:publication_date>2026-05-25T06:06:06+00:00</news:publication_date>
     <news:title>Thanh khoản lập trình được 2026: AI, tiền gửi tokenized và điều phối ngân quỹ…</news:title>
     <news:keywords>thanh khoản lập trình được 2026, điều phối ngân quỹ, AI ngân quỹ, tiền gửi tokenized, thanh khoản thời gian thực, stablecoin ngân quỹ, thanh toán đa kênh, tài khoản ảo, ngân hàng giao dịch, di động tài sản thế chấp</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>Bộ tạo trang tĩnh an toàn mặc định cho xuất bản thời đại AI năm 2026</news:title>
+    <news:keywords>bộ tạo trang tĩnh, Rust SSG, static site generator an toàn, xuất bản AI, CSP, SRI, WCAG, i18n, WebAssembly, kiến trúc islands</news:keywords>
   </news:news>
 </url>
 <url>
@@ -12428,6 +12728,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Automatyzacja tworzenia plików płatności zgodnych z ISO 20022 przy użyciu…</news:title>
     <news:keywords>ISO 20022, pain.001, płatności, SEPA, SWIFT, Python, automatyzacja, open source</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>Generator stron statycznych bezpieczny domyślnie dla publikacji w erze AI w 2026</news:title>
+    <news:keywords>generator stron statycznych, Rust SSG, bezpieczny generator stron, publikacje AI, CSP, SRI, WCAG, i18n, WebAssembly, architektura wysp</news:keywords>
   </news:news>
 </url>
 <url>
@@ -13139,6 +13451,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>2026 年 AI 時代發布的預設安全靜態網站產生器</news:title>
+    <news:keywords>靜態網站產生器, Rust SSG, 預設安全靜態網站產生器, AI 發布, CSP, SRI, WCAG, i18n, WebAssembly, 島嶼架構</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/zh-hant/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -13796,6 +14120,18 @@
     <news:publication_date></news:publication_date>
     <news:title>用 DTT 库掌握 Rust 中的日期与时间</news:title>
     <news:keywords>DTT, DateTime, Rust, 日期时间, 时区, 解析, 验证, 格式化, Cargo, 开源</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-17T06:06:06+00:00</news:publication_date>
+    <news:title>面向 AI 时代发布的默认安全静态站点生成器 2026</news:title>
+    <news:keywords>静态站点生成器, Rust SSG, 默认安全 SSG, AI 发布, CSP, SRI, WCAG, i18n, WebAssembly, 岛屿架构</news:keywords>
   </news:news>
 </url>
 <url>

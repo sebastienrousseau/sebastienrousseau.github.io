@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/bn/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/bn/"/>
   <id>https://sebastienrousseau.com/bn/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T17:40:33+00:00</updated>
+  <entry>
+    <title>২০২৬-এ AI-যুগের প্রকাশনার জন্য একটি ডিফল্ট নিরাপদ স্ট্যাটিক সাইট জেনারেটর</title>
+    <link href="https://sebastienrousseau.com/bn/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/"/>
+    <id>https://sebastienrousseau.com/bn/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/</id>
+    <updated>2026-05-29T17:40:33+00:00</updated>
+    <published>2026-05-29T17:40:33+00:00</published>
+    <summary>Rust-ভিত্তিক ডিফল্ট নিরাপদ স্ট্যাটিক সাইট জেনারেটর — AI-যুগের প্রকাশনা পরিকাঠামোয় WCAG যাচাই, CSP/SRI কঠোরকরণ, স্থানীয় LLM পাইপলাইন, WebAssembly, আইল্যান্ডস ও বহু-লোকেল i18n।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI আইন ও ডেটা সার্বভৌমত্ব: ব্যাংকের জন্য ২০২৬-এর কমপ্লায়েন্স স্ট্যাক</title>
     <link href="https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

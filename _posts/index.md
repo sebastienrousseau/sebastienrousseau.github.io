@@ -235,6 +235,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html" title="A Secure-by-Default Static Site Generator for AI-Era Publishing in 2026">
+<img alt="Backlit code on a developer screen — symbolising the secure-by-default Rust static site generator: CSP/SRI hardening, WCAG validation, 28-locale i18n, and local LLM content pipelines built into the build" src="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Static Site Generator · Rust · Secure Publishing</span>
+<h3><a href="/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/index.html">A Secure-by-Default Static Site Generator for AI-Era Publishing in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-17">June 17, 2026</time></p>
+<p class="newsroom-excerpt">A secure-by-default Rust static site generator for AI-era publishing — WCAG 2.1 AA validation, CSP/SRI hardening, local-LLM content pipelines, WebAssembly islands, streaming compilation for 100K+ pages, 28-locale i18n, and one-command deployment as the baseline, not the upgrade.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html" title="DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks">
 <img alt="Compliance stack diagram showing DORA resilience, EU AI Act transparency, data sovereignty, cloud concentration risk, audit logs, model governance, and third-party providers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -291,18 +303,6 @@ site_software: "Static Site Generator, Rust"
 <h3><a href="/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html">Programmable Liquidity in 2026: AI, Tokenised Deposits, and Real-Time Treasury Orchestration</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-25">May 25, 2026</time></p>
 <p class="newsroom-excerpt">Programmable liquidity in 2026 connects AI forecasting, tokenised deposits, real-time rails, virtual accounts, stablecoins, and TMS into one orchestration layer for working capital. The strategic question for banks is design discipline: which data, rails, controls, liabilities, and client workflows belong together — and how to evidence the orchestration to clients and supervisors.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html" title="The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments">
-<img alt="UK payments modernisation diagram showing stablecoins, tokenised deposits, open banking, AI agents, FCA regulation, PSR consolidation, and wholesale digital markets" src="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">UK Payments · Payments Forward Plan · Stablecoins</span>
-<h3><a href="/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html">The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-24">May 24, 2026</time></p>
-<p class="newsroom-excerpt">The UK Payments Forward Plan and April 2026 policy package set out a single framework for traditional payments, stablecoins, tokenised deposits, open banking, and agentic payments. The strategic question for banks is design discipline: which data, rails, controls, liabilities, and client workflows belong together — and how to evidence the orchestration to regulators.</p>
 </div>
 </article>
 

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="yo-NG">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Wed, 17 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Wed, 17 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>Olùṣẹ̀dá Ojú-Òpó Tó Dúró Ṣinṣin Tó Ní Ààbò fún Ìtẹ̀wé Sànmánì AI ní 2026 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Olùṣẹ̀dá ojú-òpó tó dúró ṣinṣin tó ní ààbò nípasẹ̀ ìpilẹ̀, fún ìtẹ̀wé sànmánì AI — pẹ̀lú ìfọwọ́sí WCAG, ìmúlágbára CSP/SRI, ìfọ̀rọ̀-ọ̀rọ̀ LLM agbègbè, WebAssembly, erékùṣù, àti i18n ńlá.">
+<meta name="keywords" content="olùṣẹ̀dá ojú-òpó tó dúró ṣinṣin, Rust SSG, SSG tó ní ààbò, ìtẹ̀wé AI, CSP, SRI, WCAG, i18n, WebAssembly, ètò àwọn erékùṣù">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Secure-by-Default Static Site Generator for AI-Era Publishing">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-AMdAyNNr5SB2bflmJgZ79lhfbXXhWvGgtKYSXTmheT4=' 'sha256-HAhWERbrLzOsOWsmkbjLKKPNa6EQPgxXieyz/QewDaQ=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-bQduvVOPaKx8+TtgxaoE4A+QW7WUmt1ufGvu17UCV94=' 'sha256-npgKEg4BUPa1xhYYZnwO5nKGhQD6a9n/Jsq4ifrl/D0=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/yo/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Àyẹ́ Atom" href="/yo/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Olùṣẹ̀dá Ojú-Òpó Tó Dúró Ṣinṣin Tó Ní Ààbò fún Ìtẹ̀wé Sànmánì AI ní 2026 — Sebastien Rousseau">
+<meta property="og:description" content="Olùṣẹ̀dá ojú-òpó tó dúró ṣinṣin tó ní ààbò nípasẹ̀ ìpilẹ̀, fún ìtẹ̀wé sànmánì AI — pẹ̀lú ìfọwọ́sí WCAG, ìmúlágbára CSP/SRI, ìfọ̀rọ̀-ọ̀rọ̀ LLM agbègbè, WebAssembly, erékùṣù, àti i18n ńlá.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/yo/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="yo_NG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Olùṣẹ̀dá Ojú-Òpó Tó Dúró Ṣinṣin Tó Ní Ààbò fún Ìtẹ̀wé Sànmánì AI ní 2026 — Sebastien Rousseau">
+<meta name="twitter:description" content="Olùṣẹ̀dá ojú-òpó tó dúró ṣinṣin tó ní ààbò nípasẹ̀ ìpilẹ̀, fún ìtẹ̀wé sànmánì AI — pẹ̀lú ìfọwọ́sí WCAG, ìmúlágbára CSP/SRI, ìfọ̀rọ̀-ọ̀rọ̀ LLM agbègbè, WebAssembly, erékùṣù, àti i18n ńlá.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/yo/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Fò sí àkóónú àkọ́kọ́</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Yí ìwọ̀ndì padà" />
+      <div class="wrap">
+        <a class="ap-brand" href="/yo/index.html" aria-label="Ilé Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Ìwọ̀ndì àkọ́kọ́">
+          <ul class="ap-menu">
+            <li><a href="/yo/nipa-wa/index.html">About</a></li>
+            <li><a href="/yo/awon-akole/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/yo/awon-iwe/index.html">Papers</a></li>
+            <li><a href="/yo/awon-koko/index.html">Àwọn kókó</a></li>
+            <li><a href="/yo/awon-ise/index.html">Projects</a></li>
+            <li><a href="/yo/akojopo-orin/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Tan àkòrí òkùnkùn" aria-pressed="false" title="Yí àkòrí padà">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Wá (Cmd tàbí Ctrl + K)" title="Wá (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Èdè">
+            <button type="button" class="ap-lang-toggle" aria-label="YO, Yí èdè padà" aria-expanded="false" aria-haspopup="menu" title="Yí èdè padà">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">YO</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/yo/kan-si-wa/index.html" aria-label="Kàn sí wa">Kàn sí wa ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Yí ìwọ̀ndì padà">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Olùṣẹ̀dá Ojú-Òpó Tó Dúró Ṣinṣin Tó Ní Ààbò fún Ìtẹ̀wé Sànmánì AI ní 2026</h1>
+      <p class="sub">Ẹ̀rọ ìtẹ̀wé nílò ààbò, ìráyé, dátà tó ní ìṣètò, ìtumọ̀ ẹ̀ka-òfin, iṣẹ́ AI, àti ìwọ̀n láti ìbẹ̀rẹ̀.</p>
+    <nav class="article-tags" aria-label="Àwọn kókó"><a href="/tags/index.html#h3-oluseda-oju-opo-to-duro-sinsin" class="article-tag" rel="tag">olùṣẹ̀dá ojú-òpó tó dúró ṣinṣin</a><a href="/tags/index.html#h3-rust-ssg" class="article-tag" rel="tag">Rust SSG</a><a href="/tags/index.html#h3-ssg-to-ni-aabo" class="article-tag" rel="tag">SSG tó ní ààbò</a><a href="/tags/index.html#h3-itewe-ai" class="article-tag" rel="tag">ìtẹ̀wé AI</a><a href="/tags/index.html#h3-csp" class="article-tag" rel="tag">CSP</a><a href="/tags/index.html#h3-sri" class="article-tag" rel="tag">SRI</a><a href="/tags/index.html#h3-wcag" class="article-tag" rel="tag">WCAG</a><a href="/tags/index.html#h3-i18n" class="article-tag" rel="tag">i18n</a><a href="/tags/index.html#h3-webassembly" class="article-tag" rel="tag">WebAssembly</a><a href="/tags/index.html#h3-eto-awon-erekusu" class="article-tag" rel="tag">ètò àwọn erékùṣù</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-17T06:06:06+00:00" class="meta-pub">Tẹ̀ jáde 17 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Àkókò kíkà tó tó">6 ìṣẹ́jú kíkà</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Àkóónú</h2><ol><li><a href="#idi-ti-ise-orisun-sisi-yii-fi-se-pataki-ni-2026">Ìdí Tí Iṣẹ́ Orisun Ṣiṣi Yìí Fi Ṣe Pàtàkì ní 2026</a></li><li><a href="#gilasi-eto">Gílásì Ètò</a></li><li><a href="#awon-ami-lati-topinpin">Àwọn Àmì Láti Tọpinpin</a></li><li><a href="#ofofo-aabo-oju-opo-to-duro-sinsin">Òfófó Ààbò Ojú-Òpó Tó Dúró Ṣinṣin</a></li><li><a href="#itewe-sanmani-ai">Ìtẹ̀wé Sànmánì AI</a></li><li><a href="#idi-ti-rust-fi-bara-mu-oro-naa">Ìdí Tí Rust Fi Bára Mu Ọ̀rọ̀ Náà</a></li><li><a href="#kinni-eyi-tumo-si-nipa-awujo-olugbo">Kínni Èyí Túmọ̀ sí Nípa Àwùjọ Olùgbọ́</a></li><li><a href="#ipari">Ìparí</a></li><li><a href="#awon-ibeere-ti-a-n-beere-leralera">Àwọn Ìbéèrè Tí A Ń Béèrè Léraléra</a></li><li><a href="#awon-itokasi">Àwọn Ìtọ́kasí</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Olùṣẹ̀dá ojú-òpó tó dúró ṣinṣin tó ní ààbò nípasẹ̀ ìpilẹ̀, fún ìtẹ̀wé sànmánì AI — pẹ̀lú ìfọwọ́sí WCAG, ìmúlágbára CSP/SRI, ìfọ̀rọ̀-ọ̀rọ̀ LLM agbègbè, WebAssembly, erékùṣù, àti i18n ńlá.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Ìdí Tí Iṣẹ́ Orisun Ṣiṣi Yìí Fi Ṣe Pàtàkì ní 2026.</strong> Iye ìlànà orisun ṣiṣi ní 2026 kò ní ààlà mọ́ sí ìfọ̀rọ̀-ọ̀rọ̀-mọ́, àtúnlò, tàbí inú-rere onímọ̀ ẹ̀rọ.</li>  <li><strong>Àwọn Àmì Láti Tọpinpin.</strong> Àwọn ojú-òpó tó dúró ṣinṣin ń yọ àwọn ewu tí ó wà lórí olùpèsè kúrò pátápátá, ṣùgbọ́n wọn kì í yọ àwọn ọ̀rọ̀ ààbò kúrò.</li>  <li><strong>Òfófó Ààbò Ojú-Òpó Tó Dúró Ṣinṣin.</strong> Àwọn ojú-òpó tó dúró ṣinṣin ń yọ àwọn ewu tí ó wà lórí olùpèsè kúrò pátápátá, ṣùgbọ́n wọn kì í yọ àwọn ọ̀rọ̀ ààbò kúrò.</li>  <li><strong>Ìtẹ̀wé Sànmánì AI.</strong> AI ń yí ìtẹ̀wé padà nípa ìmúpọ̀sí ìyára àkóónú.</li></ul></aside><h1>Olùṣẹ̀dá Ojú-Òpó Tó Dúró Ṣinṣin Tó Ní Ààbò fún Ìtẹ̀wé Sànmánì AI ní 2026</h1>
+<!-- lead-start -->
+<aside class="lead" aria-label="Àkótán àpilẹ̀kọ">
+<p><strong>TL;DR.</strong> Ẹ̀rọ ìtẹ̀wé ti di ẹ̀rọ ààbò. Iṣẹ́ olùṣẹ̀dá ojú-òpó tó dúró ṣinṣin Rust yìí ń mú CSP, SRI, ìfọwọ́sí WCAG, àkójọpọ̀ ìsọfúnni, i18n èdè 28, àwọn ìfọ̀rọ̀-ọ̀rọ̀ LLM agbègbè, erékùṣù WebAssembly, àti ìkójọpọ̀ àṣàmúlò gẹ́gẹ́ bí ìṣẹ̀ ìpilẹ̀ — kìí ṣe gẹ́gẹ́ bí àfikún tí o gbọ́dọ̀ rántí láti gbé kalẹ̀. Ojú-òpó tí o ń kà yìí ni a fi kọ́ ọ.</p>
+<p><strong>Àwọn àyọkà pàtàkì:</strong></p>
+<ul>
+<li><strong>Dídúró ṣinṣin kò túmọ̀ sí ààbò.</strong> CSP, SRI, ìmúmọ́ àwòrán, òtítọ́ àkójọpọ̀ ìsọfúnni, àti ìṣàkóso ìfilọ́lẹ̀ ṣì ṣe pàtàkì.</li>
+<li><strong>Ìráyé wà nínú ìmọ̀.</strong> Ìfọwọ́sí WCAG 2.1 AA gẹ́gẹ́ bí ẹnu-ọ̀nà ìmọ̀, kìí ṣe àyẹ̀wò lẹ́yìn ìtẹ̀wé.</li>
+<li><strong>Àwọn ìfọ̀rọ̀-ọ̀rọ̀ LLM agbègbè borí àwọn API tí kò ṣe àfojúsùn.</strong> Iṣẹ́ àkànṣe tí ó ń ṣiṣẹ́ lórí ẹ̀rọ òṣiṣẹ́ ń pa àkọ́jádé, ìbéèrè, àti dátà mọ́ nínú ààlà.</li>
+<li><strong>i18n jẹ́ ohun ìkójọpọ̀ ipele àkọ́kọ́.</strong> Èdè 28 tí a ṣẹ̀dá nínú ìgbà kan náà pẹ̀lú EN, pẹ̀lú ìbámu hreflang àti àwòrán slug.</li>
+<li><strong>Ìkójọpọ̀ àṣàmúlò ń gbòòrò.</strong> Àwọn ojú-ìwé 100K+ nínú ìṣẹ́jú díẹ̀, pẹ̀lú àbájáde tó ṣe àtúnse fún àyẹ̀wò.</li>
+</ul>
+<p><strong>Àwọn ìwé tó bára mu:</strong> <a href="/yo/2026-05-20-cloud-native-banking-financial-institutions-2026/">Cloud-native banking</a> · <a href="/yo/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/">AI operating system for payments</a> · <a href="/yo/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/">DORA + AI Act compliance stack</a></p>
+</aside>
+<!-- lead-end -->
+<p>Ẹ̀rọ ìtẹ̀wé ti di ẹ̀rọ ààbò. Olùṣẹ̀dá ojú-òpó tó dúró ṣinṣin òde òní gbọ́dọ̀ ṣe ju yíyí Markdown padà sí HTML lọ. Ó gbọ́dọ̀ fipá mú ìráyé, dáàbò bo àwọn àkànṣe àti àwòṣe, ṣẹ̀dá àkójọpọ̀ ìsọfúnni, ṣe àtìlẹ́yìn fún ìtumọ̀ ẹ̀ka-òfin, so àwọn iṣẹ́ àkóónú AI pọ̀ ní ààbò, àti gbòòrò kọjá ẹgbẹ̀rún àwọn ojú-ìwé. Iṣẹ́ olùṣẹ̀dá ojú-òpó tó dúró ṣinṣin Rust yìí ń mú ọ̀rọ̀ yẹn dá.</p>
+<p>Ipò ìtọ́kasí orisun ṣiṣi fún àpilẹ̀kọ yìí ni <a href="https://github.com/sebastienrousseau/static-site-generator" title="static-site-generator">static-site-generator ⧉</a>. A gbé ibi ìpamọ́ kalẹ̀ gẹ́gẹ́ bí: olùṣẹ̀dá ojú-òpó tó dúró ṣinṣin tó ní ààbò nípasẹ̀ ìpilẹ̀, tí a kọ́ ní Rust, pẹ̀lú ìfọwọ́sí WCAG 2.1 AA, ìmúlágbára CSP/SRI, àwọn ìfọ̀rọ̀-ọ̀rọ̀ LLM agbègbè, ohun afojúsùn WebAssembly, àwọn erékùṣù ìbára-ṣiṣẹ́, ìkójọpọ̀ àṣàmúlò fún àwọn ojú-ìwé 100K+, i18n èdè 28, àti ìfilọ́lẹ̀ àṣẹ-kan.</p>
+<hr />
+<blockquote>
+<p><strong>Àkótán Àlàṣẹ / Àwọn Àyọkà Pàtàkì</strong></p>
+<ul>
+<li><strong>Àwọn ojú-òpó tó dúró ṣinṣin kì í ní ààbò nípasẹ̀ ìṣẹ̀ ara wọn.</strong> CSP, SRI, ìráyé, àkójọpọ̀ ìsọfúnni, ìṣàkóso àwòrán, àti ìṣàkóso ìfilọ́lẹ̀ ṣì ṣe pàtàkì.</li>
+<li><strong>Ìtẹ̀wé sànmánì AI nílò ìṣàkóso agbègbè.</strong> Àwọn ìfọ̀rọ̀-ọ̀rọ̀ LLM agbègbè lè ṣe àtìlẹ́yìn fún iṣẹ́-pípọ̀ nígbà tí wọ́n ń dín ìgbẹ́kẹ̀lé lórí àwọn iṣẹ́ òde tí kò ṣe àfojúsùn kù.</li>
+<li><strong>Ìráyé yẹ kí ó jẹ́ ẹnu-ọ̀nà ìmọ̀.</strong> Ìfọwọ́sí WCAG wà nínú ọ̀nà ìtẹ̀wé, kìí ṣe àyẹ̀wò lẹ́yìn ìtẹ̀wé.</li>
+<li><strong>Ìwọ̀n ń yí ètò padà.</strong> Ìkójọpọ̀ àṣàmúlò àti àtìlẹ́yìn ojú-ìwé 100K+ ń mú iṣẹ́ náà wúlò kọjá àwọn àkọsílẹ̀ ti ara ẹni.</li>
+<li><strong>Iṣẹ́ yìí ń ṣe àtìlẹ́yìn fún ètò ìtẹ̀wé ti ara rẹ.</strong> Ó so àpẹẹrẹ àkọsílẹ̀, àbájáde èdè púpọ̀, àkójọpọ̀ ìsọfúnni, àti ìmúratán ààbò pọ̀ mọ́ kóòdù orisun ṣiṣi.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="idi-ti-ise-orisun-sisi-yii-fi-se-pataki-ni-2026">Ìdí Tí Iṣẹ́ Orisun Ṣiṣi Yìí Fi Ṣe Pàtàkì ní 2026 <a class="heading-anchor" href="#idi-ti-ise-orisun-sisi-yii-fi-se-pataki-ni-2026" aria-label="Ìjápọ̀ sí Ìdí Tí Iṣẹ́ Orisun Ṣiṣi Yìí Fi Ṣe Pàtàkì ní 2026">#</a></h2>
+<p>Iye ìlànà orisun ṣiṣi ní 2026 kò ní ààlà mọ́ sí ìfọ̀rọ̀-ọ̀rọ̀-mọ́, àtúnlò, tàbí inú-rere onímọ̀ ẹ̀rọ. Fún àwọn báńkì àti ilé-iṣẹ́ ìnáwó, ẹ̀rọ orisun ṣiṣi ti di ọ̀nà láti ṣàyẹ̀wò àwọn èrò, dán àwọn ìṣàkóso wò, dín àìrí olùpèsè kù, kí a sì yí àwọn ọ̀rọ̀ ètò padà sí kóòdù tí a lè kà, kí a sì pín, kí a sì mú lágbára, kí a sì ṣiṣẹ́. Àwọn iṣẹ́ tí ó wúlò jù lọ kìí ṣe àwọn àfihàn. Wọ́n jẹ́ àwọn àpẹẹrẹ ìtọ́kasí tí ó ń fi hàn bí ààbò, ìráyé, agbára, ìbámu, àti ìrírí onímọ̀ ẹ̀rọ ṣe wà pọ̀.</p>
+<p>Èyí ni gílásì tí a fi ní láti gbé static-site-generator yẹ̀ wò. Kìí ṣe ibi ìpamọ́ lásán; ó jẹ́ ọ̀rọ̀ ìṣètò tó dá. Ó ń sọ pé ẹ̀rọ pàtàkì gbọ́dọ̀ jẹ́ wíwò, ṣíṣe àkànpọ̀, ṣíṣe àkọsílẹ̀, dídánwò, àti òye fún àwọn tí ó gbẹ́kẹ̀lé e. Nínú iṣẹ́ ìnáwó, èyí ṣe pàtàkì nítorí pé àwọn ètò ń jókòó síi ní ààlà AI olùṣiṣẹ́, ìsanwó àkókò gangan, àbáwọn lẹ́yìn-kuántum, ìfaradà cloud-native, dátà tó ní ìṣètò, àti ẹ̀rí àbójútó.</p>
+<h2 id="gilasi-eto">Gílásì Ètò <a class="heading-anchor" href="#gilasi-eto" aria-label="Ìjápọ̀ sí Gílásì Ètò">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Ipele</th>
+<th>Ìpinnu Ìṣètò</th>
+<th>Ìdí Tí Ó Fi Ṣe Pàtàkì</th>
+<th>Ewu Bí A Kò Bá Ṣàkóso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Olùkójọ</strong></td>
+<td>Ọ̀nà ojú-òpó tó dúró ṣinṣin Rust</td>
+<td>Agbára àti ààbò fún àwọn ojú-òpó ńlá</td>
+<td>Ìmọ̀ tó lọ́ra tàbí aláìlágbára</td>
+</tr>
+<tr>
+<td><strong>Ààbò</strong></td>
+<td>Ìmúlágbára CSP àti SRI</td>
+<td>Ó dáàbò bo àwọn ojú-ìwé tí a tẹ̀ kúrò nínú ewu ohun-ìní àti àkànṣe</td>
+<td>Ojú-òpó tó dúró ṣinṣin pẹ̀lú ojú ìjà tó ń yí padà</td>
+</tr>
+<tr>
+<td><strong>Ìráyé</strong></td>
+<td>Ìfọwọ́sí WCAG</td>
+<td>Ó mú kí dídára di ohun pàtàkì ní àkókò ìmọ̀</td>
+<td>Àbájáde àìráyé ní ìwọ̀n ńlá</td>
+</tr>
+<tr>
+<td><strong>Iṣẹ́ AI</strong></td>
+<td>Ìfọ̀rọ̀-ọ̀rọ̀ LLM agbègbè</td>
+<td>Ó ń ṣe àtìlẹ́yìn fún ìtẹ̀wé tí AI ràn lọ́wọ́ tí a ṣàkóso</td>
+<td>Ìṣẹ̀dá àkóónú tí kò ṣe àfojúsùn</td>
+</tr>
+<tr>
+<td><strong>Ìtẹ̀wé àgbáyé</strong></td>
+<td>i18n èdè 28 àti ìkójọpọ̀ àṣàmúlò</td>
+<td>Ó ń ṣe àtìlẹ́yìn fún ìwọ̀n èdè púpọ̀</td>
+<td>Ọ̀nà ìtumọ̀ ẹ̀ka-òfin tí ó pínyà</td>
+</tr>
+</tbody>
+</table>
+<h2 id="awon-ami-lati-topinpin">Àwọn Àmì Láti Tọpinpin <a class="heading-anchor" href="#awon-ami-lati-topinpin" aria-label="Ìjápọ̀ sí Àwọn Àmì Láti Tọpinpin">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Àmì</th>
+<th>Kínni Ó Túmọ̀ Sí</th>
+<th>Ìtọ́kasí</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ìràwọ̀ GitHub 49</strong></td>
+<td>Iṣẹ́ náà ní ìfòyemọ̀ pàtàkì láàrin àwọn ibi ìpamọ́ tí a yàn</td>
+<td><a href="https://github.com/sebastienrousseau/static-site-generator" title="static-site-generator repository">static-site-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Ìfọwọ́sí WCAG 2.1 AA</strong></td>
+<td>Ìráyé jẹ́ ara ọ̀nà ìmọ̀</td>
+<td><a href="https://github.com/sebastienrousseau/static-site-generator" title="static-site-generator repository">static-site-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Ìmúlágbára CSP/SRI</strong></td>
+<td>A fi àwọn ìṣàkóso ààbò sínú àbájáde tí a ṣẹ̀dá</td>
+<td><a href="https://github.com/sebastienrousseau/static-site-generator" title="static-site-generator repository">static-site-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Ìfọ̀rọ̀-ọ̀rọ̀ LLM agbègbè</strong></td>
+<td>A ń ṣàkóso ìtẹ̀wé AI gẹ́gẹ́ bí ọ̀rọ̀ ẹ̀rọ</td>
+<td><a href="https://github.com/sebastienrousseau/static-site-generator" title="static-site-generator repository">static-site-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Ìkójọpọ̀ àṣàmúlò ojú-ìwé 100K+</strong></td>
+<td>A ṣẹ̀dá ètò fún ìwọ̀n</td>
+<td><a href="https://github.com/sebastienrousseau/static-site-generator" title="static-site-generator repository">static-site-generator ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ofofo-aabo-oju-opo-to-duro-sinsin">Òfófó Ààbò Ojú-Òpó Tó Dúró Ṣinṣin <a class="heading-anchor" href="#ofofo-aabo-oju-opo-to-duro-sinsin" aria-label="Ìjápọ̀ sí Òfófó Ààbò Ojú-Òpó Tó Dúró Ṣinṣin">#</a></h2>
+<p>Àwọn ojú-òpó tó dúró ṣinṣin ń yọ àwọn ewu tí ó wà lórí olùpèsè kúrò pátápátá, ṣùgbọ́n wọn kì í yọ àwọn ọ̀rọ̀ ààbò kúrò. Àwọn ojú-ìwé tí a ṣẹ̀dá ṣì ń kó àwọn àkànṣe, fọ́ńtì, àwòrán, ìṣirò, àwòṣe, ìfijíṣẹ́, àkójọpọ̀ ìsọfúnni, àti àwọn ohun-ìní ẹnìkẹta. Olùṣẹ̀dá tó ní ààbò gbọ́dọ̀ ràn ní fífipá mú àwọn ìṣẹ̀ ìpilẹ̀ ààbò dípò kí ó fi sílẹ̀ fún ojú-òpó kọ̀ọ̀kan láti tún rí wọn.</p>
+<h2 id="itewe-sanmani-ai">Ìtẹ̀wé Sànmánì AI <a class="heading-anchor" href="#itewe-sanmani-ai" aria-label="Ìjápọ̀ sí Ìtẹ̀wé Sànmánì AI">#</a></h2>
+<p>AI ń yí ìtẹ̀wé padà nípa ìmúpọ̀sí ìyára àkóónú. Ìyẹn ń mú dídára àkójọpọ̀ ìsọfúnni, iṣẹ́ àyẹ̀wò, orisun, ìtumọ̀ ẹ̀ka-òfin, ìráyé, àti ìbámu ṣe pàtàkì sí i, kìí ṣe kéré. Olùṣẹ̀dá ojú-òpó tó dúró ṣinṣin tó mọ àwọn iṣẹ́ LLM agbègbè lè ṣe àtìlẹ́yìn fún iṣẹ́-pípọ̀ láìsí gbígbe gbogbo ọ̀nà náà fún àpótí dúdú òde.</p>
+<h2 id="idi-ti-rust-fi-bara-mu-oro-naa">Ìdí Tí Rust Fi Bára Mu Ọ̀rọ̀ Náà <a class="heading-anchor" href="#idi-ti-rust-fi-bara-mu-oro-naa" aria-label="Ìjápọ̀ sí Ìdí Tí Rust Fi Bára Mu Ọ̀rọ̀ Náà">#</a></h2>
+<p>Rust bára mu fún olùṣẹ̀dá tí ó nílò ìyára, ààbò, ìkójọpọ̀ àṣàmúlò, àbájáde tó dájú, àti ìrírí àṣẹ-ìlà. Ìpinnu èdè ń mú ìfiránṣẹ́ gbígbòòrò iṣẹ́ náà lágbára: ẹ̀rọ ìtẹ̀wé gbọ́dọ̀ ní ìgbẹ́kẹ̀lé tó láti ṣiṣẹ́ ní ìwọ̀n ilé-iṣẹ́.</p>
+<h2 id="kinni-eyi-tumo-si-nipa-awujo-olugbo">Kínni Èyí Túmọ̀ sí Nípa Àwùjọ Olùgbọ́ <a class="heading-anchor" href="#kinni-eyi-tumo-si-nipa-awujo-olugbo" aria-label="Ìjápọ̀ sí Kínni Èyí Túmọ̀ sí Nípa Àwùjọ Olùgbọ́">#</a></h2>
+<h3 id="fun-awon-oludari-ero-banki">Fún Àwọn Olùdarí Ẹ̀rọ Báńkì <a class="heading-anchor" href="#fun-awon-oludari-ero-banki" aria-label="Ìjápọ̀ sí Fún Àwọn Olùdarí Ẹ̀rọ Báńkì">#</a></h3>
+<p>Ìbéèrè ni bóyá iṣẹ́ náà lè ràn ní yíyí ìnira ìlànà padà sí ètò tí a lè ṣiṣẹ́. Iye náà lágbára jù nígbà tí ibi ìpamọ́ ń fi ohun tó dá fún àwọn ẹgbẹ́ láti yẹ̀ wò: àjọṣepọ̀, ìṣètò, ìdánwò, ààlà ààbò, èrò ìfilọ́lẹ̀, àti àwọn ọ̀nà ìkùnà.</p>
+<h3 id="fun-awon-egbe-aabo-ati-ewu">Fún Àwọn Ẹgbẹ́ Ààbò àti Ewu <a class="heading-anchor" href="#fun-awon-egbe-aabo-ati-ewu" aria-label="Ìjápọ̀ sí Fún Àwọn Ẹgbẹ́ Ààbò àti Ewu">#</a></h3>
+<p>A gbọ́dọ̀ ṣàyẹ̀wò iṣẹ́ náà kìí ṣe fún àwọn ohun-ọ̀nà nìkan ṣùgbọ́n fún ẹ̀rí ìṣàkóso. Ẹ̀rọ ìnáwó orisun ṣiṣi tó wúlò ń fi bí àdàmọ̀, àṣírí, ìfọwọ́sí, àkọsílẹ̀ àyẹ̀wò, ààlà ìyára, àmì-ìfọwọ́sí, orisun, àti ìmúpadà yẹ kí ó ṣiṣẹ́ hàn.</p>
+<h3 id="fun-awon-onimo-ero-ati-onimo-pepe">Fún Àwọn Onímọ̀ Ẹ̀rọ àti Onímọ̀ Pẹpẹ <a class="heading-anchor" href="#fun-awon-onimo-ero-ati-onimo-pepe" aria-label="Ìjápọ̀ sí Fún Àwọn Onímọ̀ Ẹ̀rọ àti Onímọ̀ Pẹpẹ">#</a></h3>
+<p>Idanwó pàtàkì jù ni bóyá iṣẹ́ náà ń dín àkíyèsí ọkàn kù láìsí fífi àwọn àkànṣe pàtàkì pamọ́. Orisun ṣiṣi tó dára gbọ́dọ̀ mú ọ̀nà tó ní ààbò di ọ̀nà tó rọrùn jùlọ nígbà tí ó ṣì ń jẹ́ kí àwọn onímọ̀ tó ní ìrírí lè lóye kí wọ́n sì ṣàtúnṣe ìṣiṣẹ́.</p>
+<h3 id="fun-awon-oluranse">Fún Àwọn Olùránṣẹ́ <a class="heading-anchor" href="#fun-awon-oluranse" aria-label="Ìjápọ̀ sí Fún Àwọn Olùránṣẹ́">#</a></h3>
+<p>Àǹfààní ni láti mú iṣẹ́ náà lágbára níbi tí ilé-iṣẹ́ gidi nílò ìdánilójú: ìwé àkọsílẹ̀, àpẹẹrẹ, ìdánwò ìbámu, ìmúlágbára CI, àwòrán ewu, àkànṣe agbára, àyẹ̀wò ìráyé, àti àwọn ìtọ́sọ́nà ìsopọ̀.</p>
+<h2 id="ipari">Ìparí <a class="heading-anchor" href="#ipari" aria-label="Ìjápọ̀ sí Ìparí">#</a></h2>
+<p>Ìdí tí a fi ń kọ nípa static-site-generator ni pé ó yí ìṣòro ilé-iṣẹ́ gbígbòòrò padà sí ohun tó dá. Ní 2026, àwọn báńkì kò nílò èdè ìyípadà tó pọ̀ jù. Wọ́n nílò àwọn ètò tí a lè yẹ̀ wò tí ó ń fi bí a ṣe lè kọ́, dáàbò bo, dánwò, àti ṣàkóso ẹ̀rọ òde-òní hàn. Orisun ṣiṣi ni ọ̀nà tí ó ṣe yẹ́yẹ́ jùlọ láti mú ọ̀rọ̀ yẹn fojúrí.</p>
+<h2 id="awon-ibeere-ti-a-n-beere-leralera">Àwọn Ìbéèrè Tí A Ń Béèrè Léraléra <a class="heading-anchor" href="#awon-ibeere-ti-a-n-beere-leralera" aria-label="Ìjápọ̀ sí Àwọn Ìbéèrè Tí A Ń Béèrè Léraléra">#</a></h2>
+<p><strong>Ìdí tí a fi ń kọ nípa olùṣẹ̀dá ojú-òpó tó dúró ṣinṣin?</strong></p>
+<p>Nítorí àwọn ètò ìtẹ̀wé báyìí ń ṣe àpẹẹrẹ ààbò, ìráyé, SEO, ìtumọ̀ ẹ̀ka-òfin, àti iṣẹ́ àkóónú AI.</p>
+<p><strong>Kínni ó mú iṣẹ́ yìí yàtọ̀?</strong></p>
+<p>Ó so Rust, ìmúlágbára ààbò, ìfọwọ́sí WCAG, àwọn iṣẹ́ LLM agbègbè, WebAssembly, erékùṣù, ìwọ̀n, àti i18n pọ̀.</p>
+<p><strong>Ǹjẹ́ èyí jẹ́ fún àwọn àkọsílẹ̀ nìkan?</strong></p>
+<p>Bẹ́ẹ̀ kọ́. Ètò náà bára mu fún ìwé àkọsílẹ̀, ibi ìwádìí, ojú-òpó ìpolówó, ìwé àkọsílẹ̀ ọjà, àti àwọn ilé-iṣẹ́ ìtẹ̀wé èdè púpọ̀.</p>
+<p><strong>Kínni igun àpilẹ̀kọ tó lágbára jù?</strong></p>
+<p>Ìtẹ̀wé tó ní ààbò nípasẹ̀ ìpilẹ̀ ní sànmánì AI: àkóónú tó yára ràn lọ́wọ́ bí ọ̀nà náà bá pa ìgbẹ́kẹ̀lé mọ́.</p>
+<h2 id="awon-itokasi">Àwọn Ìtọ́kasí <a class="heading-anchor" href="#awon-itokasi" aria-label="Ìjápọ̀ sí Àwọn Ìtọ́kasí">#</a></h2>
+<ul>
+<li>GitHub, (2026). <a href="https://github.com/sebastienrousseau/static-site-generator" title="static-site-generator repository">static-site-generator repository ⧉</a>.</li>
+<li>W3C, (2026). <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" title="Web Content Accessibility Guidelines">Web Content Accessibility Guidelines ⧉</a>.</li>
+<li>MDN, (2026). <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP" title="Content Security Policy">Content Security Policy ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Àyẹ̀wò tó kẹ́yìn <time datetime="2026-06-17">2026-06-17</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/yo/nipa-wa/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ báńkì àgbà; mò ń kọ nípa AI tó wúlò, ìṣírò ISO 20022, kírípító lẹ́yìn-kuántọ́mù fún iṣẹ́ ìnáwó àti àtúnṣe ètò ìsanwó ńláńlá.</span><span class="author-credentials">Ìrírí ọdún 20+ ní HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/yo/nipa-wa/index.html">Àkọsílẹ̀ kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Àyẹ̀wò àkọ́kọ́ <time datetime="2026-05-29">2026-05-29</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Ìwé tó jọmọ́</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2026-05-16-best-cloud-infrastructure-architecture-2026" class="related-media" aria-label="Ìkọ́lé Ìpìlẹ̀ Ìkùukùu Tó Dára Jùlọ ní 2026: Ìlànà AI-Native, Multi-Cloud, Olùmọ̀-Quantum fún Àwọn Iṣẹ́-Ìnáwó" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ikole-ipile-ikuukuu-to-dara-julo-ni-2026-ilana-ai-native-multi-cloud-olumo-quant"><a href="https://sebastienrousseau.com/yo/2026-05-16-best-cloud-infrastructure-architecture-2026">Ìkọ́lé Ìpìlẹ̀ Ìkùukùu Tó Dára Jùlọ ní 2026: Ìlànà AI-Native, Multi-Cloud, Olùmọ̀-Quantum fún Àwọn Iṣẹ́-Ìnáwó</a> <a class="heading-anchor" href="#ikole-ipile-ikuukuu-to-dara-julo-ni-2026-ilana-ai-native-multi-cloud-olumo-quant" aria-label="Ìjápọ̀ sí Ìkọ́lé Ìpìlẹ̀ Ìkùukùu Tó Dára Jùlọ ní 2026: Ìlànà AI-Native, Multi-Cloud, Olùmọ̀-Quantum fún Àwọn Iṣẹ́-Ìnáwó">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html" class="related-media" aria-label="RustLogs (RLG): Structured Logging Library for Rust" tabindex="-1"><img alt="Banner for RustLogs (RLG)" src="https://cloudcdn.pro/api/transform?url=/stocks/images/rustlogs.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="rustlogs-rlg-structured-logging-library-for-rust"><a href="https://sebastienrousseau.com/yo/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">RustLogs (RLG): Structured Logging Library for Rust</a> <a class="heading-anchor" href="#rustlogs-rlg-structured-logging-library-for-rust" aria-label="Ìjápọ̀ sí RustLogs (RLG): Structured Logging Library for Rust">#</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html" class="related-media" aria-label="Alien Studio: My Tech-to Art Journey in Photography" tabindex="-1"><img alt="Sunset's muse, a serene glance; beauty in stillness" src="https://cloudcdn.pro/api/transform?url=/clients/alienstudio/v1/collections/radiance/radiance-08.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="alien-studio-my-tech-to-art-journey-in-photography"><a href="https://sebastienrousseau.com/yo/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html">Alien Studio: My Tech-to Art Journey in Photography</a> <a class="heading-anchor" href="#alien-studio-my-tech-to-art-journey-in-photography" aria-label="Ìjápọ̀ sí Alien Studio: My Tech-to Art Journey in Photography">#</a></h3><p><time datetime="2024-01-15">2024-01-15</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Orisun & àyọ̀kà</h2><ol class="article-sources-list"><li><a href="https://github.com/sebastienrousseau/static-site-generator" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/sebastienrousseau/static-site-generator</span></a></li><li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" rel="external noopener nofollow"><span class="source-host">www.w3.org</span><span class="source-path">/WAI/standards-guidelines/wcag/</span></a></li></ol></aside><nav class="post-pagination" aria-label="Ìpín àkọlé"><a class="post-pagination-prev" href="/yo/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">Tẹ́lẹ̀</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/yo/nipa-wa/index.html">About</a></li>
+              <li><a href="/yo/kan-si-wa/index.html">Contact</a></li>
+              <li><a href="/yo/static-site-generator-lo-ti-se/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Àkọsílẹ̀</h2>
+            <ul>
+              <li><a href="/yo/awon-akole/index.html">Articles</a></li>
+              <li><a href="/yo/awon-iwe/index.html">Papers</a></li>
+              <li><a href="/yo/awon-ami/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Iṣẹ́</h2>
+            <ul>
+              <li><a href="/yo/awon-ise/index.html">Projects</a></li>
+              <li><a href="/yo/akojopo-orin/index.html">Playlists</a></li>
+              <li><a href="/yo/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Kàn sí</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Ìforúkọsílẹ̀ ìwé ìròyìn">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — àwọn àkíyèsí ìwádìí lórí ìsanwó, AI àti kírípító lẹ́yìn-kuántọ́mù. Kò sí spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="iwo@banki.com.ng" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Forúkọsílẹ̀</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Àwọn ọ̀nà àjọṣepọ̀">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau lórí Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau lórí LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau lórí Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau lórí YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/yo/ile-wiwole/index.html">Accessibility</a> ·
+            <a href="/yo/aabo-ikoko/index.html">Privacy</a> ·
+            <a href="/yo/awon-ofin/index.html">Terms</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"yo"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"yo"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1267,"about":{"@type":"Thing","name":"Rust","sameAs":["https://en.wikipedia.org/wiki/Rust_(programming_language)","https://www.wikidata.org/wiki/Q575650"]},"headline":"Olùṣẹ̀dá Ojú-Òpó Tó Dúró Ṣinṣin Tó Ní Ààbò fún Ìtẹ̀wé Sànmánì AI ní 2026","description":"Olùṣẹ̀dá ojú-òpó tó dúró ṣinṣin tó ní ààbò nípasẹ̀ ìpilẹ̀, fún ìtẹ̀wé sànmánì AI — pẹ̀lú ìfọwọ́sí WCAG, ìmúlágbára CSP/SRI, ìfọ̀rọ̀-ọ̀rọ̀ LLM agbègbè, WebAssembly, erékùṣù, àti i18n ńlá.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp","width":"100vw","height":"100vh","caption":"Kóòdù tó ní ìmọ́lẹ̀ ẹ̀yìn lórí ojú-ìwòran olùdàgbàsókè — ó ń ṣàpẹẹrẹ olùpilẹ̀ṣẹ̀ ojú-òpó wẹ́ẹ̀bù tó dúró ṣinṣin nínú Rust tó ní ààbò gẹ́gẹ́ bí àpèjúwe: ìmúlélẹ̀ CSP/SRI, ìfọwọ́sí WCAG, i18n fún èdè 28, àti àwọn ọ̀nà àkóónú LLM tó wà ní àdúgbò tí a kọ́ sínú ìkọ́lé náà"},"url":"https://sebastienrousseau.com/yo/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/","datePublished":"2026-06-17T06:06:06+00:00","dateModified":"2026-06-17","inLanguage":"yo","keywords":"olùṣẹ̀dá ojú-òpó tó dúró ṣinṣin, Rust SSG, SSG tó ní ààbò, ìtẹ̀wé AI, CSP, SRI, WCAG, i18n, WebAssembly, ètò àwọn erékùṣù","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/yo/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"yo"},"citation":[{"@type":"CreativeWork","url":"https://github.com/sebastienrousseau/static-site-generator"},{"@type":"CreativeWork","url":"https://www.w3.org/WAI/standards-guidelines/wcag/"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/yo/"},{"@type":"ListItem","position":3,"name":"Olùṣẹ̀dá Ojú-Òpó Tó Dúró Ṣinṣin Tó Ní Ààbò fún Ìtẹ̀wé Sànmánì AI ní 2026","item":"https://sebastienrousseau.com/yo/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Wá">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Wá</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Wá">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Wá nínú àwọn ìwé..." autocomplete="off" aria-label="Wá"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> tì</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> ríranlọ́wọ́</span><span><kbd>Enter</kbd> ṣí</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Olùṣẹ̀dá Ojú-Òpó Tó Dúró Ṣinṣin Tó Ní Ààbò fún Ìtẹ̀wé Sànmánì AI ní 2026","url":"https://sebastienrousseau.com/yo/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/","inLanguage":"yo-NG","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"olùṣẹ̀dá ojú-òpó tó dúró ṣinṣin, Rust SSG, SSG tó ní ààbò, ìtẹ̀wé AI, CSP, SRI, WCAG, i18n, WebAssembly, ètò àwọn erékùṣù","programmingLanguage":["Rust","WebAssembly"]}</script></body>
+</html>

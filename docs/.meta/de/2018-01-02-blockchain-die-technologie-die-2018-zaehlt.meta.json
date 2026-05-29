@@ -1,11 +1,11 @@
 {
-  "subtitle": "Private-Key-Kryptografie und Peer-to-Peer-Netzwerke im Dienst sicherer Transaktionen",
   "description": "Die Geschichte der außergewöhnlichen Reise zur Absicherung digitaler Transaktionen durch Private-Key-Kryptografie und Peer-to-Peer-Netzwerke (P2P).",
   "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
-  "title": "Blockchain: die Technologie, die 2018 zählt",
-  "language": "de",
-  "banner_alt": "Ausgeschalteter Laptop auf einem braunen Holztisch",
-  "locale": "de_DE",
   "date": "January 2, 2018",
-  "keywords": "Blockchain, Kryptowährung, Bitcoin, P2P, Smart Contract, verteiltes Register, Finanzen, Supply Chain, digitale Identität, Tokenisierung"
+  "subtitle": "Private-Key-Kryptografie und Peer-to-Peer-Netzwerke im Dienst sicherer Transaktionen",
+  "title": "Blockchain: die Technologie, die 2018 zählt",
+  "keywords": "Blockchain, Kryptowährung, Bitcoin, P2P, Smart Contract, verteiltes Register, Finanzen, Supply Chain, digitale Identität, Tokenisierung",
+  "locale": "de_DE",
+  "banner_alt": "Ausgeschalteter Laptop auf einem braunen Holztisch",
+  "language": "de"
 }

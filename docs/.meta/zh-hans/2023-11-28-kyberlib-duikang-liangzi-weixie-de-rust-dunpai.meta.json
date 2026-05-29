@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
-  "subtitle": "稳健的量子安全 CRYSTALS-Kyber 算法实现，保护你的数据免受量子威胁与密码分析攻击",
-  "description": "KyberLib 是基于 CRYSTALS-Kyber 的 Rust 抗量子密码库，适用于 no-std 与 WebAssembly 环境。",
-  "keywords": "KyberLib, Rust, CRYSTALS-Kyber, 后量子密码学, 量子安全, 格密码学, no-std, WebAssembly, NIST, 嵌入式系统",
-  "language": "zh-Hans",
   "locale": "zh_CN",
+  "description": "KyberLib 是基于 CRYSTALS-Kyber 的 Rust 抗量子密码库，适用于 no-std 与 WebAssembly 环境。",
+  "language": "zh-Hans",
+  "date": "November 28, 2023",
+  "subtitle": "稳健的量子安全 CRYSTALS-Kyber 算法实现，保护你的数据免受量子威胁与密码分析攻击",
   "title": "KyberLib：抵御量子威胁的 Rust 盾牌",
+  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
   "banner_alt": "KyberLib：在量子时代赋能安全通信",
-  "date": "November 28, 2023"
+  "keywords": "KyberLib, Rust, CRYSTALS-Kyber, 后量子密码学, 量子安全, 格密码学, no-std, WebAssembly, NIST, 嵌入式系统"
 }

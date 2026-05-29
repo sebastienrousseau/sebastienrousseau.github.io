@@ -1,12 +1,12 @@
 {
+  "title": "Express Transaction Credits プラットフォームの開発",
+  "locale": "ja_JP",
+  "date": "February 15, 2018",
+  "banner_alt": "夜の電子回路基板の青いライト",
+  "description": "ブロックチェーンと暗号資産を利用した高速な国際送金プラットフォーム Express Transaction Credits の構築。",
   "last_reviewed": "2026-05-11",
+  "keywords": "国際送金, ブロックチェーン, 暗号資産, トークン, スマートコントラクト, 決済プラットフォーム, フィンテック",
   "language": "ja-JP",
   "banner": "https://cloudcdn.pro/stocks/images/joshua-sortino-LqKhnDzSF-8-unsplash.webp",
-  "description": "ブロックチェーンと暗号資産を利用した高速な国際送金プラットフォーム Express Transaction Credits の構築。",
-  "keywords": "国際送金, ブロックチェーン, 暗号資産, トークン, スマートコントラクト, 決済プラットフォーム, フィンテック",
-  "subtitle": "ブロックチェーンを用いた高速国際送金プラットフォームの設計",
-  "locale": "ja_JP",
-  "banner_alt": "夜の電子回路基板の青いライト",
-  "title": "Express Transaction Credits プラットフォームの開発",
-  "date": "February 15, 2018"
+  "subtitle": "ブロックチェーンを用いた高速国際送金プラットフォームの設計"
 }

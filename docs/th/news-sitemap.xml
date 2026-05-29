@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/th/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th-TH</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T17:40:33+00:00</news:publication_date>
+    <news:title>ตัวสร้างเว็บไซต์แบบสแตติกที่ปลอดภัยโดยค่าเริ่มต้นสำหรับการเผยแพร่ยุค AI ปี 2569</news:title>
+    <news:keywords>ตัวสร้างเว็บไซต์แบบสแตติก, Rust SSG, ตัวสร้างเว็บไซต์แบบสแตติกที่ปลอดภัย, การเผยแพร่ยุค AI, CSP, SRI, WCAG, i18n, WebAssembly, สถาปัตยกรรมเกาะ</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>

@@ -6,8 +6,27 @@
     <description>Artículos en español: IA aplicada, pagos ISO 20022, criptografía postcuántica y transformación de los pagos mayoristas.</description>
     <atom:link href="https://sebastienrousseau.com/es/rss.xml" rel="self" type="application/rss+xml"/>
     <language>es-ES</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 17:40:33 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Todos los derechos reservados.</copyright>
+    <item>
+      <title>Generador de sitios estáticos seguro por defecto para publicación en la era de la AI en 2026</title>
+      <link>https://sebastienrousseau.com/es/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/</link>
+      <description>Generador de sitios estáticos en Rust, seguro por defecto, para publicación en la era de la AI: validación WCAG, hardening CSP/SRI, pipelines LLM locales, WebAssembly, islas e i18n a gran escala.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/</guid>
+      <pubDate>Fri, 29 May 2026 17:40:33 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>generador de sitios estáticos</category>
+      <category>SSG en Rust</category>
+      <category>generador seguro por defecto</category>
+      <category>publicación con AI</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>WCAG</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+      <category>arquitectura de islas</category>
+    </item>
     <item>
       <title>DORA, EU AI Act y soberanía de datos: el stack de cumplimiento bancario 2026</title>
       <link>https://sebastienrousseau.com/es/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

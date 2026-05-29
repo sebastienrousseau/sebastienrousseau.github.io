@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="fil-PH">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Wed, 17 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Wed, 17 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>Isang Secure-by-Default na Static Site Generator para sa AI-Era Publishing sa 2026 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Isang secure-by-default na Rust static site generator para sa publishing infrastructure sa panahon ng AI, may WCAG validation, CSP/SRI hardening, lokal na LLM pipelines, WebAssembly, islands, at malakihang i18n.">
+<meta name="keywords" content="static site generator, Rust SSG, secure static site generator, AI publishing, CSP, SRI, WCAG, i18n, WebAssembly, islands architecture">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Secure-by-Default Static Site Generator for AI-Era Publishing">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-RGXlit3N8CsCaCCYFj88xejOUWx3ViD0sUm0ZGQqv8Y=' 'sha256-TsdOpOiyE/dyr0yr3yy0+LFgLAHqfkqPazvKcQCA/EY=' 'sha256-h57CKimQm0F83nLiYuHcOJBEmLjkv6knY0ss5IVgMXY=' 'sha256-q/kFitUjBAZ40MZPYcyhX/atI0dviYqpBaRCCNbA36o=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/fil/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Feed ng Atom" href="/fil/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Isang Secure-by-Default na Static Site Generator para sa AI-Era Publishing sa 2026 — Sebastien Rousseau">
+<meta property="og:description" content="Isang secure-by-default na Rust static site generator para sa publishing infrastructure sa panahon ng AI, may WCAG validation, CSP/SRI hardening, lokal na LLM pipelines, WebAssembly, islands, at malakihang i18n.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/fil/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="fil_PH">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Isang Secure-by-Default na Static Site Generator para sa AI-Era Publishing sa 2026 — Sebastien Rousseau">
+<meta name="twitter:description" content="Isang secure-by-default na Rust static site generator para sa publishing infrastructure sa panahon ng AI, may WCAG validation, CSP/SRI hardening, lokal na LLM pipelines, WebAssembly, islands, at malakihang i18n.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/fil/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Lumaktaw sa pangunahing nilalaman</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="I-toggle ang nabigasyon" />
+      <div class="wrap">
+        <a class="ap-brand" href="/fil/index.html" aria-label="Home ni Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Pangunahing nabigasyon">
+          <ul class="ap-menu">
+            <li><a href="/fil/tungkol-sa-akin/index.html">Tungkol</a></li>
+            <li><a href="/fil/mga-artikulo/index.html" aria-current="page" class="active">Mga artikulo</a></li>
+            <li><a href="/fil/mga-publikasyon/index.html">Mga publikasyon</a></li>
+            <li><a href="/fil/mga-paksa/index.html">Mga paksa</a></li>
+            <li><a href="/fil/mga-proyekto/index.html">Mga proyekto</a></li>
+            <li><a href="/fil/mga-playlist/index.html">Mga playlist</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Lumipat sa dark mode" aria-pressed="false" title="Ibahin ang tema">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Maghanap (Cmd o Ctrl + K)" title="Maghanap (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Wika">
+            <button type="button" class="ap-lang-toggle" aria-label="FIL, Baguhin ang wika" aria-expanded="false" aria-haspopup="menu" title="Baguhin ang wika">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">FIL</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/fil/makipag-ugnayan/index.html" aria-label="Makipag-ugnayan">Makipag-ugnayan ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="I-toggle ang nabigasyon">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Isang Secure-by-Default na Static Site Generator para sa AI-Era Publishing sa 2026</h1>
+      <p class="sub">Kailangan na ng publishing infrastructure ang seguridad, accessibility, structured metadata, lokalisasyon, AI workflows, at scale mula simula.</p>
+    <nav class="article-tags" aria-label="Mga paksa"><a href="/tags/index.html#h3-static-site-generator" class="article-tag" rel="tag">static site generator</a><a href="/tags/index.html#h3-rust-ssg" class="article-tag" rel="tag">Rust SSG</a><a href="/tags/index.html#h3-secure-static-site-generator" class="article-tag" rel="tag">secure static site generator</a><a href="/tags/index.html#h3-ai-publishing" class="article-tag" rel="tag">AI publishing</a><a href="/tags/index.html#h3-csp" class="article-tag" rel="tag">CSP</a><a href="/tags/index.html#h3-sri" class="article-tag" rel="tag">SRI</a><a href="/tags/index.html#h3-wcag" class="article-tag" rel="tag">WCAG</a><a href="/tags/index.html#h3-i18n" class="article-tag" rel="tag">i18n</a><a href="/tags/index.html#h3-webassembly" class="article-tag" rel="tag">WebAssembly</a><a href="/tags/index.html#h3-islands-architecture" class="article-tag" rel="tag">islands architecture</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-17T06:06:06+00:00" class="meta-pub">Inilathala noong 17 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Tinatayang oras ng pagbasa">5 min basahin</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Mga nilalaman</h2><ol><li><a href="#bakit-mahalaga-ang-open-source-na-proyektong-ito-sa-2026">Bakit Mahalaga ang Open Source na Proyektong Ito sa 2026</a></li><li><a href="#lente-ng-arkitektura">Lente ng Arkitektura</a></li><li><a href="#mga-senyas-na-susubaybayan">Mga Senyas na Susubaybayan</a></li><li><a href="#ang-mito-ng-seguridad-sa-static-site">Ang Mito ng Seguridad sa Static Site</a></li><li><a href="#publishing-sa-panahon-ng-ai">Publishing sa Panahon ng AI</a></li><li><a href="#bakit-bagay-ang-rust-sa-problema">Bakit Bagay ang Rust sa Problema</a></li><li><a href="#anong-ibig-sabihin-nito-sa-bawat-audience">Anong Ibig Sabihin Nito sa Bawat Audience</a></li><li><a href="#konklusyon">Konklusyon</a></li><li><a href="#mga-madalas-itanong">Mga Madalas Itanong</a></li><li><a href="#mga-sanggunian">Mga Sanggunian</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Isang secure-by-default na Rust static site generator para sa publishing infrastructure sa panahon ng AI, may WCAG validation, CSP/SRI hardening, lokal na LLM pipelines, WebAssembly, islands, at malakihang i18n.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Bakit Mahalaga ang Open Source na Proyektong Ito sa 2026.</strong> Hindi na limitado ang estratehikong halaga ng open source sa 2026 sa transparency, paggamit muli, o developer goodwill.</li>  <li><strong>Mga Senyas na Susubaybayan.</strong> Inaalis ng mga static site ang buong klase ng panganib sa server-side, ngunit hindi nila inaalis ang mga isyu sa seguridad.</li>  <li><strong>Ang Mito ng Seguridad sa Static Site.</strong> Inaalis ng mga static site ang buong klase ng panganib sa server-side, ngunit hindi nila inaalis ang mga isyu sa seguridad.</li>  <li><strong>Publishing sa Panahon ng AI.</strong> Binabago ng AI ang publishing sa pamamagitan ng pagpapabilis ng nilalaman.</li></ul></aside><h1>Isang Secure-by-Default na Static Site Generator para sa AI-Era Publishing sa 2026</h1>
+<!-- lead-start -->
+<aside class="lead" aria-label="Buod ng artikulo">
+<p><strong>TL;DR.</strong> Naging security infrastructure na ang publishing infrastructure. Tinatrato ng Rust static site generator project na ito ang CSP, SRI, WCAG validation, structured metadata, i18n sa 28 wika, lokal na LLM pipelines, WebAssembly islands, at streaming compilation bilang default na pag-uugali — hindi bilang mga plugin na kailangan mong tandaan na i-install. Sa pamamagitan nito itinayo ang site na binabasa mo.</p>
+<p><strong>Mga pangunahing tinik:</strong></p>
+<ul>
+<li><strong>Hindi pa ligtas dahil lang static.</strong> Mahalaga pa rin ang CSP, SRI, image sanitisation, kawastuhan ng metadata, at mga kontrol sa deployment.</li>
+<li><strong>Sa loob ng build dapat ang accessibility.</strong> WCAG 2.1 AA validation bilang build gate, hindi bilang audit pagkatapos ng paglathala.</li>
+<li><strong>Mas matibay ang lokal na LLM pipelines kaysa sa malabong APIs.</strong> Pinananatili ng editorial workflows na tumatakbo sa workstation ang mga draft, prompt, at data sa loob ng saklaw.</li>
+<li><strong>First-class compile target ang i18n.</strong> 28 wika na nabubuo sa parehong pass tulad ng EN, may hreflang at parity ng slug-map.</li>
+<li><strong>Scalable ang streaming compilation.</strong> 100K+ pahina sa loob ng ilang minuto, may reproducible output para sa audit.</li>
+</ul>
+<p><strong>Mga kaugnay na babasahin:</strong> <a href="/fil/2026-05-20-cloud-native-banking-financial-institutions-2026/">Cloud-native banking</a> · <a href="/fil/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/">AI operating system for payments</a> · <a href="/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/">DORA + AI Act compliance stack</a></p>
+</aside>
+<!-- lead-end -->
+<p>Naging security infrastructure na ang publishing infrastructure. Higit pa sa pagsasalin ng Markdown sa HTML ang dapat gawin ng isang modernong static site generator. Dapat nitong ipatupad ang accessibility, protektahan ang mga script at style, bumuo ng structured metadata, suportahan ang lokalisasyon, ligtas na isama ang mga workflow ng nilalamang AI, at i-scale sa libu-libong pahina. Kongkretong itinatakda ng Rust static site generator project na ito ang argumentong iyon.</p>
+<p>Ang open source na reference point para sa artikulong ito ay <a href="https://github.com/sebastienrousseau/static-site-generator" title="static-site-generator">static-site-generator ⧉</a>. Ipinapakita ang repository bilang: isang secure-by-default na static site generator na itinayo sa Rust, may WCAG 2.1 AA validation, CSP/SRI hardening, lokal na LLM pipelines, WebAssembly target, interactive islands, streaming compilation para sa 100K+ pahina, i18n sa 28 wika, at one-command deployment.</p>
+<hr />
+<blockquote>
+<p><strong>Buod ng Ehekutibo / Mga Pangunahing Tinik</strong></p>
+<ul>
+<li><strong>Hindi awtomatikong ligtas ang mga static site.</strong> Mahalaga pa rin ang CSP, SRI, accessibility, metadata, paghawak ng imahe, at mga kontrol sa deployment.</li>
+<li><strong>Kailangan ng lokal na kontrol ang publishing sa panahon ng AI.</strong> Masusuportahan ng lokal na LLM pipelines ang produktibidad habang binabawasan ang pagdepende sa malabong panlabas na workflow.</li>
+<li><strong>Dapat build gate ang accessibility.</strong> Kabilang ang WCAG validation sa loob ng publishing pipeline, hindi bilang audit pagkatapos ng paglathala.</li>
+<li><strong>Binabago ng scale ang arkitektura.</strong> Ginagawa ng streaming compilation at 100K+ page support na may saysay ang proyekto sa labas ng mga personal na blog.</li>
+<li><strong>Sinusuportahan ng proyektong ito ang sarili mong publishing system.</strong> Iniuugnay nito ang blog format, multilingual output, metadata, at security posture sa open source na code.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="bakit-mahalaga-ang-open-source-na-proyektong-ito-sa-2026">Bakit Mahalaga ang Open Source na Proyektong Ito sa 2026 <a class="heading-anchor" href="#bakit-mahalaga-ang-open-source-na-proyektong-ito-sa-2026" aria-label="Link patungo sa Bakit Mahalaga ang Open Source na Proyektong Ito sa 2026">#</a></h2>
+<p>Hindi na limitado ang estratehikong halaga ng open source sa 2026 sa transparency, paggamit muli, o developer goodwill. Para sa mga bangko at institusyong pinansyal, naging paraan na ng open source na imprastraktura para suriin ang mga assumption, subukin ang mga kontrol, bawasan ang opacity ng vendor, at gawing code na maaaring basahin, i-fork, patatagin, at patakbuhin ang mga arkitektural na claim. Ang mga pinakamahalagang proyekto ay hindi mga demo. Sila ay mga reference implementation na nagpapakita kung paano nagsasama-sama ang seguridad, accessibility, performance, compliance, at developer experience.</p>
+<p>Ito ang lente kung saan dapat tingnan ang static-site-generator. Hindi ito basta repository; isa itong kongkretong argumento ng disenyo. Sinasabi nito na ang kritikal na imprastraktura ay dapat ma-audit, composable, naidodokumento, nasusubok, at maiintindihan ng mga taong umaasa rito. Sa financial services, mahalaga iyon dahil lalong nakaupo ang mga sistema sa krosing ng agentic AI, real-time payments, post-quantum cryptography, cloud-native resilience, structured data, at ebidensya sa regulasyon.</p>
+<h2 id="lente-ng-arkitektura">Lente ng Arkitektura <a class="heading-anchor" href="#lente-ng-arkitektura" aria-label="Link patungo sa Lente ng Arkitektura">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Desisyon sa Disenyo</th>
+<th>Bakit Mahalaga</th>
+<th>Panganib Kung Hindi Mahusay</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Compiler</strong></td>
+<td>Rust static-site pipeline</td>
+<td>Performance at kaligtasan para sa malalaking site</td>
+<td>Mabagal o marupok na build</td>
+</tr>
+<tr>
+<td><strong>Seguridad</strong></td>
+<td>CSP at SRI hardening</td>
+<td>Pinoprotektahan ang mga nailathalang pahina mula sa panganib sa asset at script</td>
+<td>Static site na may dynamic na attack surface</td>
+</tr>
+<tr>
+<td><strong>Accessibility</strong></td>
+<td>WCAG validation</td>
+<td>Ginagawang kailangan sa build-time ang kalidad</td>
+<td>Hindi accessible na output sa scale</td>
+</tr>
+<tr>
+<td><strong>AI workflow</strong></td>
+<td>Lokal na LLM pipeline</td>
+<td>Sinusuportahan ang kontroladong AI-assisted publishing</td>
+<td>Malabong pagbuo ng nilalaman</td>
+</tr>
+<tr>
+<td><strong>Pandaigdigang publishing</strong></td>
+<td>i18n sa 28 wika at streaming compilation</td>
+<td>Sinusuportahan ang multilingual scale</td>
+<td>Pira-pirasong proseso ng lokalisasyon</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mga-senyas-na-susubaybayan">Mga Senyas na Susubaybayan <a class="heading-anchor" href="#mga-senyas-na-susubaybayan" aria-label="Link patungo sa Mga Senyas na Susubaybayan">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Senyas</th>
+<th>Anong Ibig Sabihin</th>
+<th>Sanggunian</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>49 GitHub stars</strong></td>
+<td>May makabuluhang visibility ang proyekto sa mga napiling repository</td>
+<td><a href="https://github.com/sebastienrousseau/static-site-generator" title="static-site-generator repository">static-site-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>WCAG 2.1 AA validation</strong></td>
+<td>Bahagi ng build pipeline ang accessibility</td>
+<td><a href="https://github.com/sebastienrousseau/static-site-generator" title="static-site-generator repository">static-site-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>CSP/SRI hardening</strong></td>
+<td>Naka-embed sa nabuong output ang mga kontrol sa seguridad</td>
+<td><a href="https://github.com/sebastienrousseau/static-site-generator" title="static-site-generator repository">static-site-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Lokal na LLM pipeline</strong></td>
+<td>Hinahawakan ang AI publishing bilang isyu ng imprastraktura</td>
+<td><a href="https://github.com/sebastienrousseau/static-site-generator" title="static-site-generator repository">static-site-generator ⧉</a></td>
+</tr>
+<tr>
+<td><strong>100K+ page streaming compilation</strong></td>
+<td>Idinisenyo ang arkitektura para sa scale</td>
+<td><a href="https://github.com/sebastienrousseau/static-site-generator" title="static-site-generator repository">static-site-generator ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ang-mito-ng-seguridad-sa-static-site">Ang Mito ng Seguridad sa Static Site <a class="heading-anchor" href="#ang-mito-ng-seguridad-sa-static-site" aria-label="Link patungo sa Ang Mito ng Seguridad sa Static Site">#</a></h2>
+<p>Inaalis ng mga static site ang buong klase ng panganib sa server-side, ngunit hindi nila inaalis ang mga isyu sa seguridad. Naglo-load pa rin ang mga nabuong pahina ng mga script, font, imahe, analytics, stylesheet, feed, metadata, at third-party na asset. Dapat tulungan ng isang ligtas na generator na ipatupad ang ligtas na default sa halip na iwan ang bawat site na muling matuklasan ang mga ito.</p>
+<h2 id="publishing-sa-panahon-ng-ai">Publishing sa Panahon ng AI <a class="heading-anchor" href="#publishing-sa-panahon-ng-ai" aria-label="Link patungo sa Publishing sa Panahon ng AI">#</a></h2>
+<p>Binabago ng AI ang publishing sa pamamagitan ng pagpapabilis ng nilalaman. Mas mahalaga, hindi mas maliit, ang kalidad ng metadata, mga workflow ng pagsusuri, provenance, lokalisasyon, accessibility, at pagkakapareho. Masusuportahan ng isang static generator na umuunawa sa lokal na LLM pipelines ang produktibidad nang hindi ibinibigay ang buong pipeline sa isang panlabas na itim na kahon.</p>
+<h2 id="bakit-bagay-ang-rust-sa-problema">Bakit Bagay ang Rust sa Problema <a class="heading-anchor" href="#bakit-bagay-ang-rust-sa-problema" aria-label="Link patungo sa Bakit Bagay ang Rust sa Problema">#</a></h2>
+<p>Mahusay na pagpipilian ang Rust para sa isang generator na nangangailangan ng bilis, kaligtasan, streaming compilation, deterministic na output, at command-line ergonomics. Pinatatatag ng pagpili ng wika ang mas malawak na mensahe ng proyekto: dapat sapat ang maaasahan ng publishing infrastructure para tumakbo sa institusyonal na scale.</p>
+<h2 id="anong-ibig-sabihin-nito-sa-bawat-audience">Anong Ibig Sabihin Nito sa Bawat Audience <a class="heading-anchor" href="#anong-ibig-sabihin-nito-sa-bawat-audience" aria-label="Link patungo sa Anong Ibig Sabihin Nito sa Bawat Audience">#</a></h2>
+<h3 id="para-sa-mga-lider-ng-teknolohiya-ng-bangko">Para sa mga Lider ng Teknolohiya ng Bangko <a class="heading-anchor" href="#para-sa-mga-lider-ng-teknolohiya-ng-bangko" aria-label="Link patungo sa Para sa mga Lider ng Teknolohiya ng Bangko">#</a></h3>
+<p>Ang tanong ay kung matutulungan ng proyekto na gawing isang executable na arkitektura ang isang estratehikong presyon. Pinakamatindi ang halaga kung binibigyan ng repository ang mga koponan ng kongkretong bagay na masusuri: mga interface, configuration, test, hangganan ng seguridad, mga assumption sa deployment, at mga failure mode.</p>
+<h3 id="para-sa-mga-koponan-ng-seguridad-at-panganib">Para sa mga Koponan ng Seguridad at Panganib <a class="heading-anchor" href="#para-sa-mga-koponan-ng-seguridad-at-panganib" aria-label="Link patungo sa Para sa mga Koponan ng Seguridad at Panganib">#</a></h3>
+<p>Dapat suriin ang proyekto hindi lamang para sa mga feature kundi para sa ebidensya ng kontrol. Ipinapakita ng kapaki-pakinabang na open source na pinansyal na imprastraktura kung paano dapat gumana ang identity, secrets, validation, audit logs, rate limits, signatures, provenance, at recovery.</p>
+<h3 id="para-sa-mga-developer-at-platform-engineer">Para sa mga Developer at Platform Engineer <a class="heading-anchor" href="#para-sa-mga-developer-at-platform-engineer" aria-label="Link patungo sa Para sa mga Developer at Platform Engineer">#</a></h3>
+<p>Ang pinakamahalagang pagsubok ay kung binabawasan ng proyekto ang cognitive load nang hindi itinatago ang mahahalagang mekanismo. Dapat gawing madaling daanan ng mabuting open source ang ligtas na daanan habang pinapayagan pa rin ng mga sanay na engineer na maintindihan at baguhin ang implementasyon.</p>
+<h3 id="para-sa-mga-kontribyutor">Para sa mga Kontribyutor <a class="heading-anchor" href="#para-sa-mga-kontribyutor" aria-label="Link patungo sa Para sa mga Kontribyutor">#</a></h3>
+<p>Ang pagkakataon ay palakasin ang proyekto kung saan kailangan ng mga tunay na institusyon ng katiyakan: dokumentasyon, halimbawa, conformance tests, CI hardening, threat models, performance profiles, accessibility checks, at integration guides.</p>
+<h2 id="konklusyon">Konklusyon <a class="heading-anchor" href="#konklusyon" aria-label="Link patungo sa Konklusyon">#</a></h2>
+<p>Ang dahilan kung bakit sumusulat tungkol sa static-site-generator ay dahil ginagawa nitong kongkreto ang isang mas malawak na problema ng industriya. Sa 2026, hindi nangangailangan ang mga bangko ng higit pang abstract na wika ng pagbabago. Kailangan nila ng mga inspeksyon na sistema na nagpapakita kung paano maaaring itayo, gawing ligtas, subukin, at pamahalaan ang modernong imprastraktura. Ang open source ang pinaka-kapani-paniwalang paraan para gawing nakikita ang argumentong iyon.</p>
+<h2 id="mga-madalas-itanong">Mga Madalas Itanong <a class="heading-anchor" href="#mga-madalas-itanong" aria-label="Link patungo sa Mga Madalas Itanong">#</a></h2>
+<p><strong>Bakit sumulat tungkol sa isang static site generator?</strong></p>
+<p>Dahil hinuhubog na ngayon ng mga publishing system ang seguridad, accessibility, SEO, internasyunalisasyon, at AI content operations.</p>
+<p><strong>Ano ang kaibahan ng proyektong ito?</strong></p>
+<p>Pinagsasama nito ang Rust, security hardening, WCAG validation, lokal na LLM pipelines, WebAssembly, islands, scale, at i18n.</p>
+<p><strong>Para lang ba ito sa mga blog?</strong></p>
+<p>Hindi. May saysay ang arkitektura sa dokumentasyon, research libraries, marketing site, product docs, at multilingual publishing estates.</p>
+<p><strong>Ano ang pinakamatinding anggulo ng artikulo?</strong></p>
+<p>Secure-by-default publishing sa panahon ng AI: makakatulong lamang ang mas mabilis na nilalaman kung pinanatili ng pipeline ang tiwala.</p>
+<h2 id="mga-sanggunian">Mga Sanggunian <a class="heading-anchor" href="#mga-sanggunian" aria-label="Link patungo sa Mga Sanggunian">#</a></h2>
+<ul>
+<li>GitHub, (2026). <a href="https://github.com/sebastienrousseau/static-site-generator" title="static-site-generator repository">static-site-generator repository ⧉</a>.</li>
+<li>W3C, (2026). <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" title="Web Content Accessibility Guidelines">Web Content Accessibility Guidelines ⧉</a>.</li>
+<li>MDN, (2026). <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP" title="Content Security Policy">Content Security Policy ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Huling sinuri noong <time datetime="2026-06-17">2026-06-17</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Portrait ni Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/fil/tungkol-sa-akin/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist na sumusulat tungkol sa applied AI, ISO 20022 migration, post-quantum cryptography para sa financial services, at structural transformation ng wholesale payments.</span><span class="author-credentials">Higit sa 20 taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA at Virgin Group. <a href="/fil/tungkol-sa-akin/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Huling sinuri <time datetime="2026-05-29">2026-05-29</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Kaugnay na pagbasa</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2026-05-16-best-cloud-infrastructure-architecture-2026" class="related-media" aria-label="Ang Pinakamahusay na Arkitektura ng Cloud Infrastructure sa 2026: Isang AI-Native, Multi-Cloud, Quantum-Aware na Blueprint para sa Financial Services" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ang-pinakamahusay-na-arkitektura-ng-cloud-infrastructure-sa-2026-isang-ai-native"><a href="https://sebastienrousseau.com/fil/2026-05-16-best-cloud-infrastructure-architecture-2026">Ang Pinakamahusay na Arkitektura ng Cloud Infrastructure sa 2026: Isang AI-Native, Multi-Cloud, Quantum-Aware na Blueprint para sa Financial Services</a> <a class="heading-anchor" href="#ang-pinakamahusay-na-arkitektura-ng-cloud-infrastructure-sa-2026-isang-ai-native" aria-label="Link patungo sa Ang Pinakamahusay na Arkitektura ng Cloud Infrastructure sa 2026: Isang AI-Native, Multi-Cloud, Quantum-Aware na Blueprint para sa Financial Services">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html" class="related-media" aria-label="RustLogs (RLG): مكتبة تسجيل منظَّمة للغة Rust" tabindex="-1"><img alt="Banner for RustLogs (RLG)" src="https://cloudcdn.pro/api/transform?url=/stocks/images/rustlogs.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="rustlogs-rlg-rust"><a href="https://sebastienrousseau.com/fil/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">RustLogs (RLG): مكتبة تسجيل منظَّمة للغة Rust</a> <a class="heading-anchor" href="#rustlogs-rlg-rust" aria-label="Link patungo sa RustLogs (RLG): مكتبة تسجيل منظَّمة للغة Rust">#</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html" class="related-media" aria-label="Alien Studio: رحلتي من التكنولوجيا إلى الفنّ التصويري" tabindex="-1"><img alt="Sunset's muse, a serene glance; beauty in stillness" src="https://cloudcdn.pro/api/transform?url=/clients/alienstudio/v1/collections/radiance/radiance-08.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="alien-studio"><a href="https://sebastienrousseau.com/fil/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html">Alien Studio: رحلتي من التكنولوجيا إلى الفنّ التصويري</a> <a class="heading-anchor" href="#alien-studio" aria-label="Link patungo sa Alien Studio: رحلتي من التكنولوجيا إلى الفنّ التصويري">#</a></h3><p><time datetime="2024-01-15">2024-01-15</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Mga pinagmulan at sanggunian</h2><ol class="article-sources-list"><li><a href="https://github.com/sebastienrousseau/static-site-generator" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/sebastienrousseau/static-site-generator</span></a></li><li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" rel="external noopener nofollow"><span class="source-host">www.w3.org</span><span class="source-path">/WAI/standards-guidelines/wcag/</span></a></li></ol></aside><nav class="post-pagination" aria-label="Pagination ng artikulo"><a class="post-pagination-prev" href="/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">Nakaraan</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/fil/tungkol-sa-akin/index.html">Tungkol</a></li>
+              <li><a href="/fil/makipag-ugnayan/index.html">Makipag-ugnayan</a></li>
+              <li><a href="/fil/ginawa-sa-static-site-generator/index.html">Ginawa sa Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Pagsusulat</h2>
+            <ul>
+              <li><a href="/fil/mga-artikulo/index.html">Mga artikulo</a></li>
+              <li><a href="/fil/mga-publikasyon/index.html">Mga publikasyon</a></li>
+              <li><a href="/fil/mga-tag/index.html">Mga tag</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Trabaho</h2>
+            <ul>
+              <li><a href="/fil/mga-proyekto/index.html">Mga proyekto</a></li>
+              <li><a href="/fil/mga-playlist/index.html">Mga playlist</a></li>
+              <li><a href="/fil/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Makipag-ugnayan</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Pag-sign up sa newsletter">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — mga research note tungkol sa payments, AI at post-quantum crypto. Walang spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="ikaw@bangko.ph" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Mag-subscribe</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Mga link sa social media">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau sa Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau sa LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau sa Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau sa YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/fil/pagiging-accessible/index.html">Pagiging accessible</a> ·
+            <a href="/fil/pagkapribado/index.html">Pagkapribado</a> ·
+            <a href="/fil/mga-tuntunin/index.html">Mga tuntunin</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"fil"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"fil"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1193,"about":{"@type":"Thing","name":"Rust","sameAs":["https://en.wikipedia.org/wiki/Rust_(programming_language)","https://www.wikidata.org/wiki/Q575650"]},"headline":"Isang Secure-by-Default na Static Site Generator para sa AI-Era Publishing sa 2026","description":"Isang secure-by-default na Rust static site generator para sa publishing infrastructure sa panahon ng AI, may WCAG validation, CSP/SRI hardening, lokal na LLM pipelines, WebAssembly, islands, at malakihang i18n.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp","width":"100vw","height":"100vh","caption":"Backlit code sa screen ng developer — sumasagisag sa secure-by-default Rust static site generator: CSP/SRI hardening, WCAG validation, 28-locale i18n, at lokal na LLM content pipelines na nakabuo na sa build"},"url":"https://sebastienrousseau.com/fil/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/","datePublished":"2026-06-17T06:06:06+00:00","dateModified":"2026-06-17","inLanguage":"fil","keywords":"static site generator, Rust SSG, secure static site generator, AI publishing, CSP, SRI, WCAG, i18n, WebAssembly, islands architecture","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/fil/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"fil"},"citation":[{"@type":"CreativeWork","url":"https://github.com/sebastienrousseau/static-site-generator"},{"@type":"CreativeWork","url":"https://www.w3.org/WAI/standards-guidelines/wcag/"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/fil/"},{"@type":"ListItem","position":3,"name":"Isang Secure-by-Default na Static Site Generator para sa AI-Era Publishing sa 2026","item":"https://sebastienrousseau.com/fil/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Maghanap">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Maghanap</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Maghanap">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Maghanap sa dokumentasyon..." autocomplete="off" aria-label="Maghanap"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> isara</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> mag-navigate</span><span><kbd>Enter</kbd> buksan</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Isang Secure-by-Default na Static Site Generator para sa AI-Era Publishing sa 2026","url":"https://sebastienrousseau.com/fil/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/","inLanguage":"fil-PH","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"static site generator, Rust SSG, secure static site generator, AI publishing, CSP, SRI, WCAG, i18n, WebAssembly, islands architecture","programmingLanguage":["Rust","WebAssembly"]}</script></body>
+</html>

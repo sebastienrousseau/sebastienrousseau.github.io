@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/hi/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/hi/"/>
   <id>https://sebastienrousseau.com/hi/</id>
-  <updated>2026-05-28T06:26:19+00:00</updated>
+  <updated>2026-05-29T17:40:33+00:00</updated>
+  <entry>
+    <title>2026 में AI युग के प्रकाशन हेतु डिफ़ॉल्ट-सुरक्षित स्टैटिक साइट जेनरेटर</title>
+    <link href="https://sebastienrousseau.com/hi/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/"/>
+    <id>https://sebastienrousseau.com/hi/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/</id>
+    <updated>2026-05-29T17:40:33+00:00</updated>
+    <published>2026-05-29T17:40:33+00:00</published>
+    <summary>AI युग के प्रकाशन के लिए डिफ़ॉल्ट रूप से सुरक्षित Rust स्टैटिक साइट जेनरेटर — WCAG सत्यापन, CSP/SRI हार्डनिंग, लोकल LLM पाइपलाइन, WebAssembly, आइलैंड्स और बड़े पैमाने पर i18n।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>DORA, EU AI अधिनियम और डेटा संप्रभुता: बैंकों का 2026 अनुपालन स्टैक</title>
     <link href="https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>

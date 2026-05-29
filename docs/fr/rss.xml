@@ -6,8 +6,27 @@
     <description>Articles en français : IA appliquée, paiements ISO 20022, cryptographie post-quantique et transformation des paiements wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/fr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fr-FR</language>
-    <lastBuildDate>Thu, 28 May 2026 06:26:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 17:40:33 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Tous droits réservés.</copyright>
+    <item>
+      <title>Un générateur de site statique sécurisé par défaut pour l&apos;ère de l&apos;IA en 2026</title>
+      <link>https://sebastienrousseau.com/fr/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/</link>
+      <description>Un générateur de site statique Rust sécurisé par défaut pour la publication à l&apos;ère de l&apos;IA : validation WCAG, durcissement CSP/SRI, pipelines LLM locaux, WebAssembly, îlots et i18n à grande échelle.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/</guid>
+      <pubDate>Fri, 29 May 2026 17:40:33 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/photo-nic-Db66yYtBgEs.webp" type="image/webp" length="0"/>
+      <category>générateur de site statique</category>
+      <category>Rust SSG</category>
+      <category>générateur sécurisé par défaut</category>
+      <category>publication IA</category>
+      <category>CSP</category>
+      <category>SRI</category>
+      <category>WCAG</category>
+      <category>i18n</category>
+      <category>WebAssembly</category>
+      <category>architecture en îlots</category>
+    </item>
     <item>
       <title>DORA, EU AI Act et souveraineté des données : la pile de conformité 2026 pour les banques</title>
       <link>https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>

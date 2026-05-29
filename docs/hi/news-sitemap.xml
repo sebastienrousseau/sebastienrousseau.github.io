@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/hi/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>hi-IN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T17:40:33+00:00</news:publication_date>
+    <news:title>2026 में AI युग के प्रकाशन हेतु डिफ़ॉल्ट-सुरक्षित स्टैटिक साइट जेनरेटर</news:title>
+    <news:keywords>स्टैटिक साइट जेनरेटर, Rust SSG, सुरक्षित स्टैटिक साइट जेनरेटर, AI प्रकाशन, CSP, SRI, WCAG, i18n, WebAssembly, आइलैंड्स आर्किटेक्चर</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
   <news:news>
     <news:publication>
