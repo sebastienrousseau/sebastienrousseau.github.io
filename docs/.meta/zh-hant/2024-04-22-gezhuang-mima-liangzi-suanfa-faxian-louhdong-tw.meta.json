@@ -1,11 +1,11 @@
 {
+  "date": "April 22, 2024",
   "language": "zh-Hant",
+  "banner_alt": "MidJourney 生成影象 - 紅藍色調的數字節點網路",
+  "subtitle": "陳逸雷 LWE 量子演算法的漏洞：對 NIST 後量子密碼學標準化的重新評估",
   "locale": "zh_TW",
   "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
   "keywords": "陳逸雷, LWE, 量子演算法, 格密碼學, NIST, 後量子密碼學, Kyber, Dilithium, BGV, TFHE",
-  "date": "April 22, 2024",
-  "description": "陳逸雷的 LWE 量子演算法被發現存在漏洞，格基密碼學暫時保持安全，但量子抗性研究仍需推進。",
   "title": "格基密碼學的量子演算法中發現漏洞",
-  "subtitle": "陳逸雷 LWE 量子演算法的漏洞：對 NIST 後量子密碼學標準化的重新評估",
-  "banner_alt": "MidJourney 生成影象 - 紅藍色調的數字節點網路"
+  "description": "陳逸雷的 LWE 量子演算法被發現存在漏洞，格基密碼學暫時保持安全，但量子抗性研究仍需推進。"
 }

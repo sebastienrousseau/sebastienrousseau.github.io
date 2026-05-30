@@ -1,11 +1,11 @@
 {
   "language": "it-IT",
-  "keywords": "GENIUS Act, BlackRock, BRSRV, BSTBL, stablecoin, fondo monetario, tokenizzazione, rendimento",
   "title": "Rendimento nascosto: decifrare i depositi BRSRV/BSTBL di BlackRock e il GENIUS Act",
-  "subtitle": "Come le stablecoin regolamentate offrono rendimento attraverso fondi monetari tokenizzati adiacenti",
-  "banner_alt": "Stablecoin e tokenizzazione di fondi monetari",
   "date": "May 15, 2026",
   "locale": "it_IT",
+  "banner_alt": "Stablecoin e tokenizzazione di fondi monetari",
+  "keywords": "GENIUS Act, BlackRock, BRSRV, BSTBL, stablecoin, fondo monetario, tokenizzazione, rendimento",
+  "description": "Le stablecoin non possono pagare rendimento ai sensi del GENIUS Act. I depositi BRSRV e BSTBL di BlackRock mostrano l'aggiramento: un fondo monetario tokenizzato in parallelo a una stablecoin regolamentata per offrire rendimento attraverso un rail adiacente e conforme.",
   "banner": "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp",
-  "description": "Le stablecoin non possono pagare rendimento ai sensi del GENIUS Act. I depositi BRSRV e BSTBL di BlackRock mostrano l'aggiramento: un fondo monetario tokenizzato in parallelo a una stablecoin regolamentata per offrire rendimento attraverso un rail adiacente e conforme."
+  "subtitle": "Come le stablecoin regolamentate offrono rendimento attraverso fondi monetari tokenizzati adiacenti"
 }

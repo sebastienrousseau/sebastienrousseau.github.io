@@ -6,14 +6,14 @@
     <description>Bài viết tiếng Việt: AI ứng dụng, thanh toán ISO 20022, mật mã hậu lượng tử và chuyển đổi thanh toán bán buôn.</description>
     <atom:link href="https://sebastienrousseau.com/vi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>vi-VN</language>
-    <lastBuildDate>Sat, 30 May 2026 10:01:18 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 12:32:04 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Đã đăng ký bản quyền.</copyright>
     <item>
       <title>Thị trường Số Bán buôn tại Anh: Gilt Mã hóa, Quyết toán và Vai trò Điều phối</title>
       <link>https://sebastienrousseau.com/vi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
       <description>Vai trò Điều phối viên Thị trường Số Bán buôn của Anh biến tài chính bán buôn mã hóa thành dự án năng lực cạnh tranh quốc gia, đặt gilt và quyết toán DLT vào tâm điểm.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
-      <pubDate>Sat, 30 May 2026 10:01:18 +0000</pubDate>
+      <pubDate>Sat, 30 May 2026 12:32:04 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>thị trường số bán buôn Anh 2026</category>
@@ -29,7 +29,7 @@
       <link>https://sebastienrousseau.com/vi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
       <description>ISO 20022 sau di trú là cơ hội sản phẩm dữ liệu: địa chỉ có cấu trúc, mã mục đích, chi tiết hóa đơn, tin nhắn điều tra và sự kiện trạng thái thanh toán phong phú trở thành sản phẩm đối soát, gian lận, thanh khoản và tuân thủ.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
-      <pubDate>Sat, 30 May 2026 10:01:18 +0000</pubDate>
+      <pubDate>Sat, 30 May 2026 12:32:04 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>ISO 20022 2026</category>
@@ -86,7 +86,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
       <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
       <category>AI payments 2026</category>
       <category>gian lận thanh toán</category>
       <category>định tuyến thanh toán</category>

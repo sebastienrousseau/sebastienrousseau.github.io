@@ -6,14 +6,14 @@
     <description>Články v češtině: aplikovaná AI, platby ISO 20022, postkvantová kryptografie a transformace velkoobchodních plateb.</description>
     <atom:link href="https://sebastienrousseau.com/cs/rss.xml" rel="self" type="application/rss+xml"/>
     <language>cs-CZ</language>
-    <lastBuildDate>Sat, 30 May 2026 10:01:18 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 12:32:03 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Všechna práva vyhrazena.</copyright>
     <item>
       <title>Velkoobchodní digitální trhy v UK: tokenizované gilty, vypořádání a nová role Champion</title>
       <link>https://sebastienrousseau.com/cs/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
       <description>Britská role Wholesale Digital Markets Champion proměňuje tokenizované velkoobchodní finance v národní projekt konkurenceschopnosti City of London.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
-      <pubDate>Sat, 30 May 2026 10:01:18 +0000</pubDate>
+      <pubDate>Sat, 30 May 2026 12:32:03 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>velkoobchodní digitální trhy UK 2026</category>
@@ -34,7 +34,7 @@
       <link>https://sebastienrousseau.com/cs/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>Digitální aktiva už nejsou inovační sázkou. Jsou otázkou architektury vypořádání, úschovy a rozvahy. Strategickým úkolem bank je návrh infrastruktury za strukturální nejistoty.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Sat, 30 May 2026 10:01:18 +0000</pubDate>
+      <pubDate>Sat, 30 May 2026 12:32:03 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>digitální aktiva 2026</category>
@@ -91,7 +91,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
       <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
       <category>AI platby 2026</category>
       <category>podvody v platbách</category>
       <category>směrování plateb</category>

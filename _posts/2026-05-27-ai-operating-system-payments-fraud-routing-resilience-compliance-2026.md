@@ -6,7 +6,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "AI payments operating system diagram showing fraud scoring, multi-rail routing, liquidity forecasting, ISO 20022 data, compliance screening, and exception repair"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -102,6 +102,7 @@ site_software: "Static Site Generator, Rust"
 ---
 
 # AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026
+
 
 
 

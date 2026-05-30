@@ -1,11 +1,11 @@
 {
-  "description": "Yana ba ku damar ƙirƙirar gidajen yanar gizo na tsaye masu tasiri tare da yiwuwar da ba ta iyaka, girma marar iyaka, da kasancewar yanar gizo ta musamman da kuke sarrafawa.",
+  "title": "Static Site Generator: Fastest Rust-Based SSG",
+  "date": "Oct 09, 2023",
+  "locale": "ha_NG",
+  "keywords": "pain001, iso 20022, automation na biyan kuɗi, rage kashe kuɗi, sarrafa biyan kuɗi, fayilolin biyan kuɗi, fara biyan kuɗi, pain message, pain message standards, pain message validation",
+  "language": "ha-NG",
   "subtitle": "Static Site Generator, mafi sauri Rust-based static site generator don gidajen yanar gizo masu tasiri sosai.",
   "banner_alt": "Kwamfuta mai allon da aka kashe a saman teburin fari tare da gilashi na ruwa a hagu da alkalami, littafin rubutu da tsiro a dama",
-  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
-  "locale": "ha_NG",
-  "date": "Oct 09, 2023",
-  "title": "Static Site Generator: Fastest Rust-Based SSG",
-  "language": "ha-NG",
-  "keywords": "pain001, iso 20022, automation na biyan kuɗi, rage kashe kuɗi, sarrafa biyan kuɗi, fayilolin biyan kuɗi, fara biyan kuɗi, pain message, pain message standards, pain message validation"
+  "description": "Yana ba ku damar ƙirƙirar gidajen yanar gizo na tsaye masu tasiri tare da yiwuwar da ba ta iyaka, girma marar iyaka, da kasancewar yanar gizo ta musamman da kuke sarrafawa.",
+  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
 }

@@ -1,11 +1,11 @@
 {
-  "title": "Generative AI in Advertising: Amazon Rufus & Meta",
-  "description": "Explorați cum AI transformă publicitatea cu perspective despre Rufus de la Amazon și ultimele evoluții Meta. Descoperiți impactul asupra implicării consumatorilor",
-  "language": "ro-RO",
-  "subtitle": "Cum AI Transformă Interacțiunile cu Consumatorii și Dinamica Publicității",
-  "banner_alt": "O femeie robotică cu fluturi și flori",
-  "banner": "https://cloudcdn.pro/stocks/images/advertising-ai.webp",
-  "date": "Feb 08, 2024",
   "keywords": "AI în publicitate, Amazon Rufus, instrumente Meta AI, targetarea consumatorilor, tehnologia publicității, chatboți AI, tendințe marketing digital, analitiCă AI, AI creativ, optimizarea campaniilor publicitare",
-  "locale": "ro_RO"
+  "locale": "ro_RO",
+  "title": "Generative AI in Advertising: Amazon Rufus & Meta",
+  "date": "Feb 08, 2024",
+  "description": "Explorați cum AI transformă publicitatea cu perspective despre Rufus de la Amazon și ultimele evoluții Meta. Descoperiți impactul asupra implicării consumatorilor",
+  "subtitle": "Cum AI Transformă Interacțiunile cu Consumatorii și Dinamica Publicității",
+  "banner": "https://cloudcdn.pro/stocks/images/advertising-ai.webp",
+  "banner_alt": "O femeie robotică cu fluturi și flori",
+  "language": "ro-RO"
 }
