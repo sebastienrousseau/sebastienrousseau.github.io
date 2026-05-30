@@ -1,11 +1,11 @@
 {
-  "date": "Jan 01, 2018",
-  "title": "Bitcoin: A Year In Review of the First Cryptocurrency",
-  "language": "ro-RO",
-  "locale": "ro_RO",
   "subtitle": "Bitcoin, criptomonede și tehnologia care remodelează piețele financiare.",
-  "banner_alt": "O grămadă de monede de aur și argint așezate pe o masă",
+  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
   "description": "Bitcoin: Un sistem electronic de plăți peer-to-peer (P2P ECS) cu potențialul de a revoluționa modul în care oamenii tranzacționează online.",
+  "locale": "ro_RO",
+  "date": "Jan 01, 2018",
   "keywords": "bitcoin, cryptocurrency, blockchain, finanțe descentralizate, monedă digitală, plăți peer-to-peer, aur digital, bani programabili, viitorul banilor, revoluție financiară",
-  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp"
+  "language": "ro-RO",
+  "title": "Bitcoin: A Year In Review of the First Cryptocurrency",
+  "banner_alt": "O grămadă de monede de aur și argint așezate pe o masă"
 }

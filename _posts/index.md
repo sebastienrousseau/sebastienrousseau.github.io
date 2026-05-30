@@ -239,7 +239,7 @@ site_software: "Static Site Generator, Rust"
 <img alt="UK wholesale digital markets diagram showing tokenised gilts, settlement, digital assets, tokenised deposits, regulatory coordination, and capital markets infrastructure" src="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Wholesale Digital Markets · Tokenised Gilts · Chris Woolard</span>
+<span class="newsroom-eyebrow">Digital Securities Sandbox · Tokenised Gilts · Atomic DvP</span>
 <h3><a href="/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html">Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-30">May 30, 2026</time></p>
 <p class="newsroom-excerpt">The UK Wholesale Digital Markets Champion role makes tokenised gilts, DLT-based settlement, and digital wholesale finance a national competitiveness project. The 2026 strategic question for banks is design discipline — which tokenised assets sit on which platform, how settlement risk is evidenced, and how to defend the City's wholesale role against Singapore, Switzerland, and Frankfurt.</p>

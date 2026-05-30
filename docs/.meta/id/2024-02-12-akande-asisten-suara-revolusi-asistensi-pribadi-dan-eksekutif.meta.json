@@ -1,11 +1,11 @@
 {
-  "title": "[ID DRAFT] Àkàndé: GPT-Powered Voice Assistant for Executives",
-  "banner": "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp",
-  "banner_alt": "Perangkat modern berbentuk bulat berwarna putih",
-  "language": "id-ID",
   "subtitle": "Memberdayakan Interaksi Tanpa Hambatan dengan Teknologi AI Mutakhir",
+  "title": "[ID DRAFT] Àkàndé: GPT-Powered Voice Assistant for Executives",
+  "language": "id-ID",
   "description": "Temukan bagaimana Àkàndé memanfaatkan pemahaman bahasa alami OpenAI GPT, ringkasan PDF, dan caching efisien untuk mendefinisikan ulang bantuan personal dan eksekutif.",
   "date": "Feb 12, 2024",
+  "banner_alt": "Perangkat modern berbentuk bulat berwarna putih",
   "keywords": "Àkàndé, Asisten Suara, Pemahaman Bahasa Alami, Ringkasan PDF, Caching Efisien, OpenAI GPT, Bantuan Eksekutif, Bantuan Personal, Asisten Digital, Inovasi Teknologi",
-  "locale": "id_ID"
+  "locale": "id_ID",
+  "banner": "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp"
 }

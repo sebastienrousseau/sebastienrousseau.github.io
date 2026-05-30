@@ -85,122 +85,165 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 ---
 
-# Àwọn Ọjà Oníròyìn Ńlá Dijítà ní UK: Gilts Tókènì, Ìpinnu Owó, àti Ipa Akọni Tuntun
+# Àwọn Ọjà Ti Olówó-Ńlá Dijítà ní UK: Gilts Tí A Ṣe Tókènì, Ìpinnu Ìsanwó, àti Ipa Akọni Tuntun
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Àkótán àpilẹ̀kọ">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> UK ti gbé Akọni Àwọn Ọjà Oníròyìn Ńlá Dijítà kalẹ̀ láti ṣètò àwọn gilts tókènì, ìpinnu owó tó dá lórí DLT, àpótí àdánwò DSS ti BoE, àti àjọṣe ìnáwó oníròyìn ńlá dijítà tó gbòòrò. Àmì 2026 ni pé tokenisation oníròyìn ńlá ti kọjá láti ìjíròrò ìlànà sí agbára ìdíje orílẹ̀-èdè — àti ìbéèrè ìlànà fún àwọn báńkì City ti yí padà láti "ǹjẹ́ a ó ṣe ìdánwò àwọn ohun-ìní tókènì" sí "ìkọ́lé pẹpẹ wo ló ń dáàbò bo ipa oníròyìn ńlá wa lòdì sí Singapore Project Guardian, Swiss SDX, Frankfurt, àti Project Agorá". Àwọn báńkì tó tọ́jú gilts tókènì + repo + ìpinnu owó ohun-ẹ̀ẹ́gbàṣe gẹ́gẹ́ bí ìṣòro ìṣètò kan ń pa ìjókòó oníròyìn ńlá mọ́; àwọn báńkì tó ń ṣe àwọn ìdánwò márùn-ún ní àfìjọ pàdánù ipilẹ̀ dátà náà.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> UK ti yan Akọni Àwọn Ọjà Ti Olówó-Ńlá Dijítà (Wholesale Digital Markets Champion). Iṣẹ́ náà kìí ṣe ti ayẹyẹ. Ó jẹ́ ìpele alákojọpọ̀ tó le koko láàrín HM Treasury, FCA, àti Bank of England (BoE) — ipa tí a ṣe láti fipá mú ìbáraẹnisọ̀rọ̀ ẹ̀ka aládàáni nínú Digital Securities Sandbox (DSS). Gilts tí a ṣe tókènì ń ṣe ìpinnu ìbéèrè yìí ní àkọ́kọ́: HQLA lórí DLT, atomic lòdì sí owó tí a ṣe tókènì, pẹ̀lú repo nínú ọjọ́ gẹ́gẹ́ bí èrè kíákíá.</p>
 <p class="post-lead-heading"><strong>Àwọn àyọkà pàtàkì</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Ipa Akọni ń sọ ọ́ di iṣẹ́ orílẹ̀-èdè.</strong> Ìnáwó oníròyìn ńlá tókènì wà nísinsìnyí nínú ìlànà agbára ìdíje UK, kìí ṣe àwọn ètò àpótí àdánwò FCA / BoE nìkan.</li>
-  <li><strong>Àwọn gilts tókènì ni èèkàn náà.</strong> Gilts gẹ́gẹ́ bí ohun-ẹ̀ẹ́gbàṣe + àpótí àdánwò DSS + ìpinnu owó DLT pa pọ̀ ń dán gbogbo ìkọ́lé oníròyìn ńlá wò — repo, ìpinnu owó ohun-ẹ̀ẹ́gbàṣe, ìsanwó, owó wíwà nínú ọjọ́.</li>
-  <li><strong>Ìpinnu owó ni ọjà gidi.</strong> Ìpinnu átọ́mù / T+0 lòdì sí owó tókènì (owó báńkì àárín tàbí ìfowópamọ́ tókènì) ni iye tí City gbọ́dọ̀ dáàbò bò.</li>
-  <li><strong>Dídára dátà ń pọ̀ sí i.</strong> Àfikún ISO 20022 tó ní ìṣètò + àmì ìdánimọ̀ + àkọsílẹ̀ àyẹ̀wò ni ipilẹ̀ tó ń sọ àwọn ohun-ìní tókènì di ọjà tí a díyelé.</li>
-  <li><strong>Pípín jẹ́ ọ̀tá.</strong> Àwọn ìdánwò ìpín-fún-ohun-ìní / ìpín-fún-pẹpẹ ń kọ́ ewu iṣẹ́ ọdún mẹ́wàá tó ń bọ̀ — ìṣètò pẹpẹ pẹ̀lú ètò ọrọ̀-ajé tó ṣe wíwọ̀n nìkan ló ń dáàbò bo ìjókòó oníròyìn ńlá.</li>
+  <li><strong>Akọni náà jẹ́ alákojọpọ̀, kìí ṣe àpẹẹrẹ.</strong> Iṣẹ́ rẹ̀ ni láti fi HM Treasury, FCA, Bank of England, àti City ti London sí ìbámu lẹ́yìn àwòkọ́ṣe iṣẹ́ ọjà-dijítà kan ṣoṣo — ìtúnṣe RTGS àti DSS lórí àwòrán kan náà.</li>
+  <li><strong>Gilts ń lọ ní àkọ́kọ́ nítorí pé wọ́n jẹ́ ohun-ìní tó nira jù láti ṣe dáradára.</strong> HQLA lórí DLT, tí a pinnu ní atomic lòdì sí owó tí a ṣe tókènì, fi ìkójọ náà hàn lórí ìkójọ ààbò tó jinlẹ̀ jù ní sterling.</li>
+  <li><strong>Repo nínú ọjọ́ ni èrè kíákíá.</strong> Repo atomic T+0 ti gilts tí a ṣe tókènì ń tú olú-owó tí ó wà ní ìdúró báyìí gẹ́gẹ́ bí ààbò omi-ọjọ́-kan-náà sílẹ̀ — àmì ìpilẹ̀ tààrà sí ROE.</li>
+  <li><strong>Ìkọ́lé borí àwọn àdánwò.</strong> RLN, Canton, àwọn DLT aládàáni, RTGS, owó báńkì oníṣòwò tí a ṣe tókènì — àwọn báńkì nílò ìpele ìṣètò tó ń darí kọjá gbogbo wọn, kìí ṣe nẹ́tíwọ̀kì òmíràn tó dúró fúnra rẹ̀.</li>
 </ul>
+<p class="post-lead-related"><strong>Àkàwé Ìtọ́kasí:</strong> <a href="https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026">Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay</a>, <a href="https://sebastienrousseau.com/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026">Programmable Liquidity in 2026: AI, Tokenised Deposits, and Real-Time Treasury Orchestration</a>, <a href="https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026">The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments</a>.</p>
 </aside>
 <!-- lead-end -->
 
-Ipa Akọni Àwọn Ọjà Oníròyìn Ńlá Dijítà UK ń sọ ìnáwó oníròyìn ńlá tókènì di iṣẹ́ agbára ìdíje orílẹ̀-èdè. Àmì 2026 ni pé tokenisation oníròyìn ńlá ti kúrò ní eré ìmúdàgbà sí inú àwòkọ́ṣe iṣẹ́ báńkì, níbi tí ìbéèrè pàtàkì ti jẹ́ ìbáwí àpẹẹrẹ: dátà, àwọn rọ́ọ̀dù, ìṣàkóso, gbèsè, àti àkọsílẹ̀ iṣẹ́ oníbàátì wo ló yẹ kí ó wà pọ̀ ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
+Ìnáwó ti olówó-ńlá tókènì kìí ṣe àdánwò ìrònú mọ́. Ní 2026, ó ti di ìpìlẹ̀ iṣẹ́ fún àwọn ọjà olú sterling. Ìtúnṣe RTGS ti Bank of England, Digital Securities Sandbox (DSS) tí ó jẹ́ ti FCA/BoE papọ̀, àti ìyíàn ti Akọni Àwọn Ọjà Ti Olówó-Ńlá Dijítà ti jókòó lórí àwòrán kan náà báyìí — ìyẹn sì ni kókó. A ṣe àwọn ẹ̀dà náà láti darapọ̀ mọ́ ara wọn ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox"), [GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech tí a ṣe àtìlẹ́yìn fún láti gba ọ̀nà-ẹ̀rọ ìsanwó ọjọ́ iwájú")).
+
+Akọni náà ni ohun ìfilọ tó ń fipá mú wọn láti ṣe bẹ́ẹ̀.
 
 ---
 
 > **Àkótán Àlàṣẹ / Àwọn Àyọkà Pàtàkì**
 >
-> - **Tokenisation Oníròyìn Ńlá ti di ìlànà.** Ọ̀rọ̀ náà so mọ́ àwòkọ́ṣe iṣẹ́, ìfaradà, iye fún oníbàátì, àti ẹ̀rí àbójútó dípò ìfilọ́lẹ̀ ọjà kékeré ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **Ìlànà àpẹẹrẹ ni ìṣèjọpọ̀ ọjà.** Àwọn báńkì nílò ìkọ́lé tó ń so ìlànà, ọjà, dátà, àṣàyàn rọ́ọ̀dù, ìṣàkóso ewu, àti ètò ọrọ̀-ajé tó ṣe wíwọ̀n pọ̀ ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
-> - **Àwòkọ́ṣe ìṣàkóso gbọ́dọ̀ jẹ́ àkókò gangan.** Àwọn ìpinnu àdàmọ̀, owó wíwà, ìbámu, ìpinnu owó, àti ewu iṣẹ́ gbọ́dọ̀ ṣiṣẹ́ ní ìyára iṣẹ́, kìí ṣe lẹ́yìn ìṣẹ̀lẹ̀.
-> - **Dídára dátà di àǹfààní òwò.** Dátà tó ní ìṣètò, àlàyé ìṣòwò, àkọsílẹ̀ àyẹ̀wò, àti àmì ìdánimọ̀ ń di ipilẹ̀ fún ìṣiṣẹ́ àdàṣe àti àwọn ọjà fún oníbàátì.
-> - **Pípín jẹ́ ọ̀tá.** Báńkì tó ń kọ́ àwọn ìdánwò ọ̀tọ̀ọ̀tọ̀ yí ká rọ́ọ̀dù, tókènì, àwòkọ́ṣe, tàbí ìbéèrè ìbámu kọ̀ọ̀kan ń dá ewu iṣẹ́ ọjọ́ iwájú sílẹ̀.
-> - **Àwòkọ́ṣe tó bori ni ìṣètò.** Ilé-iṣẹ́ tó lè ṣe ọ̀nà, ṣàkóso, díyelé, fi ẹ̀rí hàn, kí ó sì ṣàlàyé iṣẹ́ kọ̀ọ̀kan yóò borí èyí tí ó kàn gba irinṣẹ́ mìíràn ([Global Government Finance](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion")).
+> - **Akọni náà jẹ́ ìpele ìṣèjọpọ̀ tí ó ti kù fún City.** Àṣẹ rẹ̀ tàn dé HM Treasury, FCA, Bank of England, àti àwọn tabili oníṣòwò àti rírà ńláńlá — a ṣe é láti fi opin sí ìdúró ọlọ́ràáṣé tí ó dá àwọn ìpilẹ̀ṣẹ̀ ọjà-dijítà tẹ́lẹ̀ dúró ní PoC ([Global Government Finance](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "Akọni àwọn ọjà ti olówó-ńlá dijítà UK")).
+> - **Gilts ń lọ ní àkọ́kọ́ nítorí pé wọ́n jẹ́ ohun-ìní tó nira jù láti ṣe dáradára.** HQLA lórí DLT, tí a pinnu ní atomic lòdì sí owó tí a ṣe tókènì, ń fi ìkójọ kíkún hàn — ìfilọ́lẹ̀, ìṣòwò, repo, ààbò, owó báńkì àárín — lórí ìkójọ sterling tó jinlẹ̀ jù ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox")).
+> - **Repo nínú ọjọ́ ni èrè kíákíá.** Repo atomic T+0 ti gilts tí a ṣe tókènì ń tú olú-owó tí ó wà ní ìdúró báyìí gẹ́gẹ́ bí ààbò omi-ọjọ́-kan-náà sílẹ̀. Ìfipamọ́ náà ń sọ̀kalẹ̀ tààrà sí ROE.
+> - **Ìṣètò ń rọ́pò àwọn nẹ́tíwọ̀kì tí ó dúró fúnra wọn.** Regulated Liability Network (RLN), Canton, àwọn DLT báńkì aládàáni, RTGS, àti owó báńkì oníṣòwò tí a ṣe tókènì — ọ̀kọ̀ọ̀kan ń gbé àwọn ìṣàn iṣẹ́ tí àwọn báńkì ti ń ṣiṣẹ́. Iṣẹ́ náà ni láti darí kọjá wọn, kìí ṣe láti yan ọ̀kan.
+> - **Policy-as-code nikan ni àwòkọ́ṣe ìbámu tó ń tẹ̀le.** Àwọn ìfọfindè, KYC, àwọn ààlà ipò, àwọn ẹnu-ọ̀nà ẹ̀ka-òfin — tí a kọ sínú ìpele ìpinnu ìsanwó, tí a ṣe ní atomic pẹ̀lú ìṣòwò, tí ó ń ṣẹ̀dá àkọsílẹ̀ àyẹ̀wò cryptographic dípò àkọsílẹ̀ kan tí olùṣàkóso ní láti gbà gbọ́ ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Ìtúnṣe lórí àkójọ Ìsanwó – May 2026")).
+> - **Ìkọ́lé ni odi.** Àwọn tó ń borí ń hun ìṣàn iṣẹ́, dátà, ọ̀nà ìsanwó, ìṣàkóso, àti ètò ọrọ̀-ajé ẹ̀ka sínú àwòkọ́ṣe iṣẹ́ kan. Àwọn tó pàdánù ń ṣiṣẹ́ pẹ̀lú àkójọ àwọn àdánwò tí kò darapọ̀ tí wọ́n sì pe é ní ìlànà.
 >
 ---
 
-## Ìdí Tí 2026 Fi Jẹ́ Ọdún Tí Èyí Fi Di Ìlànà
+## Àṣẹ Akọni: Ìṣèjọpọ̀, Kìí Ṣe Ayẹyẹ
 
-Ilé-iṣẹ́ ti kọjá ìpele gbígbà. Kò tó mọ́ láti darapọ̀ mọ́ rọ́ọ̀dù, gbé ìránṣẹ́ lọ, ṣe àfihàn AI, tàbí kéde ìdánwò tokenisation. Ní 2026, ipò ìlànà ń wá láti ṣíṣe ìṣètò àwọn agbára yẹn lòdì sí àkọsílẹ̀ iṣẹ́ gidi, kí a sì fi hàn pé iṣẹ́ náà ní ààbò sí i, yára sí i, ṣe sí kéré, ní ìfaradà, tàbí wúlò sí àwọn oníbàátì.
+Ìtúnṣe ọjà ti olówó-ńlá ní UK ti kùnà fún ìgbà pípẹ́ lórí kókó kan náà — ìṣèjọpọ̀. Treasury ń ṣe ìlànà, BoE ń ṣiṣẹ́ ìpinnu ìsanwó, FCA ní ìwà, City sì ń pèsè ọjà. Olúkúlùkù wọn jẹ́ alámọ̀rírè. Kò sí ọ̀kan nínú wọn, lóun nìkan, tó lè fipá mú ìbáraẹnisọ̀rọ̀ láàrín pẹpẹ tokenisation ti báńkì ìpele kíní àti ẹ̀rọ ìpinnu ìsanwó ti CSD. Ìyẹn ni àlàfo tí a yan Akọni láti dí.
 
-Ìyẹn ni ìdí tí tokenisation oníròyìn ńlá fi ti di ọ̀rọ̀ ìgbimọ̀ olùṣàkóso. Àwọn ìnira kan náà ń wá: dátà ìsanwó tó kún, ìpinnu owó àkókò gangan, owó tókènì, ìpinnu AI, Open Banking, ìfaradà iṣẹ́, ìṣàkójọ cloud, àti ẹ̀rí àbójútó tó lágbára. Bí a bá tọ́jú wọn ní ọ̀tọ̀ọ̀tọ̀, ìnira náà ń dá ìtànkálẹ̀ ètò sílẹ̀. Bí a bá tọ́jú wọn gẹ́gẹ́ bí ìkọ́lé kan, wọ́n ń dá agbára iṣẹ́ sílẹ̀ ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+A kọ́ ipa náà yí DSS ká. Sandbox ni ibi kan ṣoṣo nínú àyíká ìṣàkóso UK tí àwọn ilé-iṣẹ́ ti lè fi àwọn ààbò dijítà gidi sílẹ̀, ṣòwò wọn, kí wọ́n sì pinnu wọn — pẹ̀lú gilts tí a ṣe tókènì — labẹ́ ìyọnda àkànṣe sí CSDR àti àwọn òfin ìpinnu ìsanwó tó wà ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox"), [FCA](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA Digital Securities Sandbox")). Ó wà ní iṣẹ́, kìí ṣe àròsọ. Iṣẹ́ Akọni ni láti rí i dájú pé àwọn ilé-iṣẹ́ inú rẹ̀ ń kọ́ sí ọ̀pá ìwọ̀n kan náà lórí ìdánimọ̀, ìparí ìpinnu ìsanwó, àti àpẹẹrẹ ìránṣẹ́ — kí àwọn pẹpẹ tó jáde wá lè bá ara wọn sọ̀rọ̀ ní ṣíṣe gangan.
 
-## Ipilẹ̀ Ìkọ́lé 2026
+Ìyẹn ni iyàtọ̀ láàrín Sandbox àti àpótí iyanrìn lásán.
 
-### 1. Àkọsílẹ̀ Iṣẹ́ Ní Àkọ́kọ́, Ẹ̀rọ Ní Ẹlẹ́ẹ̀kejì
+## Ìdí Tí A Fi Ṣe Tokenise Gilts?
 
-Báńkì gbọ́dọ̀ bẹ̀rẹ̀ pẹ̀lú ìnira: owó wíwà tí ó dí, ìdádúró ìpinnu owó, owó ìbáramu, ìsanwó tó kùnà, àfihàn àdàmọ̀, àyẹ̀wò aláìlágbára, tàbí ìrírí oníbàátì tó burú. Ẹ̀rọ kò ní àpẹẹrẹ àyàfi ibi tí ó bá yọ ìnira yẹn kúrò ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
+Gilts jẹ́ ipilẹ̀ ètò sterling. Wọ́n jẹ́ ààbò tí BoE ń gbà ní repo, ohun-ìní tí àwọn báńkì ń mú lòdì sí ìbéèrè LCR, ohun-ìní tí àwọn ètò ifẹ̀hìntì ń lò láti bá àwọn gbèsè mu. Wọ́n tún jẹ́, lónìí, tí a ń pinnu pẹ̀lú ìṣàkóso iṣẹ́ tí kò ti yí padà ní ọ̀nà ipilẹ̀ ní ogún ọdún — àwọn CREST batches, àwọn ìpàdé T+1, ìbámu omi ìparí-ọjọ́. Olú-owó tí ó dí nínú ìṣàn iṣẹ́ yẹn kò kéré.
 
-### 2. Dátà Gẹ́gẹ́ Bí Ọkọ̀ Ìṣàkóso
+Fífi gilts sí DLT ń yí ohun mẹ́ta padà lẹ́ẹ̀kan náà.
 
-Dátà tó ní ìṣètò, ìṣàkóso, àti àfẹ́lẹ̀rí ni ìpìlẹ̀. Láìsí dátà tó wúlò, ìṣiṣẹ́ àdàṣe ń di alábùkù àti ìbámu ń di ti ọwọ́. Pẹ̀lú dátà tó wúlò, àwọn báńkì lè ṣẹ̀dá òye ọ̀nà, ìṣàkóso àkókò gangan, àti àlàyé fún oníbàátì ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+**Repo nínú ọjọ́ di atomic.** Repo T+0 ti gilt tí a ṣe tókènì lòdì sí owó tí a ṣe tókènì ń pinnu ní àwọn ìṣẹ́jú àáyá, kìí ṣe àwọn wákàtí. Ààbò omi ti ilé-iṣẹ́ tí ó ń pèsè owó fún àwọn ìnílò owó ọjọ́-kan-náà lónìí lè jẹ́ títú padà sínú ọjà. Fún báńkì ìpele kíní tí ó ń ṣiṣẹ́ ìwé repo ńlá, ìyẹn jẹ́ àmì ìpilẹ̀ ti owó ìpèsè — àti àmì ìpilẹ̀ ti ROE.
 
-### 3. Ìṣètò Lórí Àwọn Rọ́ọ̀dù àti Pẹpẹ
+**Ìṣíkiri ààbò dáwọ́ ìpè tẹlifóònù dúró.** Gilt dijítà lè jẹ́ ìdánilójú tàbí ìpadà-pè kọjá àwọn ẹ̀ka-òfin ní kíákíá láti pàdé ìpè margin. Ẹ̀wọ̀n lọ́ra ti àwọn ìránṣẹ́ ìpamọ́ àárín — fax, SWIFT MT, ìbámu ìparí-ọjọ́ — ń fi ipò sílẹ̀ fún ìṣíkiri àdéhùn alágbára pẹ̀lú ẹ̀rí cryptographic ti ìdánilójú.
 
-Ìkọ́lé gbọ́dọ̀ ṣe àtìlẹ́yìn fún àwọn rọ́ọ̀dù pípọ̀, olùpèsè, ètò ìdánimọ̀, àmì ewu, àti ohun-ìní ìpinnu owó. Ìpinnu ọ̀nà gbọ́dọ̀ jẹ́ ṣíṣe nípa iye owó, ìyára, ìparí, ẹ̀ka-òfin, ìfẹ́ oníbàátì, ìfaradà, àti ọrọ̀ dátà.
+**Ewu olùdánilójú nínú ìpinnu ìsanwó parẹ́.** Ìfijiṣẹ́ àti ìsanwó atomic (DvP) túmọ̀ sí pé ẹsẹ̀ gilt àti ẹsẹ̀ owó ń ṣiṣẹ́ gẹ́gẹ́ bí iṣẹ́ kan tí kò pín. Yálà mejèèjì pinnu tàbí kò sí ọ̀kan. Fèrèsé ìpinnu ìsanwó tí ó fi ẹgbẹ́ kan hàn sí àìṣe-padà ti ẹgbẹ́ òmíràn ní àárín-ìṣòwò lónìí ń dí sí òfo.
 
-### 4. Ìbámu Tí A Fi sínú àti Ẹ̀rí
+Àwọn wọ̀nyí kìí ṣe àwọn àǹfààní ọjọ́ iwájú. Wọ́n ń ṣiṣẹ́ nínú Sandbox báyìí.
 
-Àwòkọ́ṣe ìbámu gbọ́dọ̀ jẹ́ ti àkọsílẹ̀ iṣẹ́. Ìlànà-gẹ́gẹ́-bí-kóòdù, àkọsílẹ̀ àyẹ̀wò àdàṣe, ẹ̀rí ìfaradà iṣẹ́, àkọsílẹ̀ ìfọwọ́sí, àti ìṣàkóso àwòkọ́ṣe ní láti jẹ́ ṣíṣe gẹ́gẹ́ bí ara ìṣiṣẹ́, kìí ṣe èyí tí a tún ṣe fún àwọn olùṣàyẹ̀wò lẹ́yìn náà.
+## Àwòkọ́ṣe Iṣẹ́ DSS
 
-### 5. Ètò Ọrọ̀-ajé Ẹ̀ka àti Iye fún Oníbàátì
+DSS jẹ́ ìjọba tí ó ń ṣiṣẹ́. Láti lò ó gẹ́gẹ́ bí pẹpẹ dípò PoC, àwọn báńkì nílò ìkọ́lé tó dúró papọ̀ labẹ́ àyẹ̀wò ìṣàkóso àti ìfipá owó. Ọ̀wọ̀n marun-un ń ṣe iṣẹ́ tó ń gbé ẹrù.
 
-Gbogbo ìpilẹ̀ṣẹ̀ nílò ẹ̀rí iye òwò. Owó-fún-ìsanwó, owó-fún-ìpinnu, owó-fún-ìwádìí, owó wíwà tí ó bá fi pamọ́, àtúnṣe ọwọ́ tí ó yẹra, àdánù àdàmọ̀ tí ó dín kù, àti gbígbà oníbàátì gbọ́dọ̀ pinnu ìpinnu ìfẹ̀ẹ́gbà.
+### Ìṣàn Iṣẹ́ Ju Ọ̀nà-Ẹ̀rọ Lọ
 
-## Tábìlì Ìkọ́lé Ìlànà
+Bẹ̀rẹ̀ pẹ̀lú ìnira. Omi tí ó dí, àwọn fífọ́ ìpinnu, owó ìbámu, àwọn ìsanwó tó kùnà — àwọn wọ̀nyí ni àwọn ìṣòro tí àwọn oníbàátì ń sanwó láti yọ kúrò. A ṣe ìdáláre ọ̀nà-ẹ̀rọ nìkan níbi tí ó bá yọ wọ́n kúrò. Tokenisation jẹ́ ọ̀nà, kìí ṣe ọjà. Pẹpẹ tó ń pèsè repo nínú ọjọ́ ti gilts tí a ṣe tókènì ní ìṣẹ̀lò. Pẹpẹ tó ń pèsè ẹ̀rọ tokenisation tí ó ń wá ọ̀kan kò ní.
 
-| Ìpele | Ìtọ́sọ́nà 2026 | Àǹfààní Báńkì | Ewu Bí A Kò Bá Ṣàkóso |
+### Dátà Gẹ́gẹ́ Bí Ọkọ̀ Ìṣàkóso
+
+Àwọn ẹrù ISO 20022 tí a so mọ́ àwọn hash ìṣòwò lórí-ẹ̀wọ̀n ń sọ dátà ìpinnu ìsanwó di orísun òtítọ́ kan ṣoṣo. Láìsí ìso náà, ìṣiṣẹ́-àdàṣe àdéhùn alágbára di aláìlágbára, ìbámu sì ń padà sí àwọn spreadsheet. Pẹ̀lú rẹ̀, àwọn báńkì ń rí straight-through processing (STP), àwọn ìṣàkóso àkókò gangan, àti àyẹ̀wò tí àwọn oníbàátì yóò sanwó fún ní ṣíṣe gangan ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Ìtúnṣe lórí àkójọ Ìsanwó – May 2026")).
+
+### Ìṣètò Kọjá Àwọn Ọ̀nà Ìsanwó
+
+Regulated Liability Network, Canton, àwọn DLT báńkì aládàáni, RTGS, owó báńkì oníṣòwò tí a ṣe tókènì — ọ̀kọ̀ọ̀kan ń gbé àwọn ìṣàn iṣẹ́ tí àwọn báńkì ti ń ṣiṣẹ́. Fífipá mú gbogbo ìṣòwò sí nẹ́tíwọ̀kì kan jẹ́ ìjà tó kò tọ́. Ìkọ́lé tó tọ́ ń darí ìṣàn iṣẹ́ kọ̀ọ̀kan sí ọ̀nà ìsanwó tó ń fún ní àkójọpọ̀ tó dára jù ti owó, ìyára, ìparí ìpinnu, ẹ̀ka-òfin, àti ìfaradà. A ṣe ìpinnu yẹn ní àkókò ìṣiṣẹ́, kìí ṣe kíkọ sínú pẹpẹ.
+
+### Ìbámu Policy-as-Code
+
+Ìpinnu atomic kò fi àyè sílẹ̀ fún ìbámu lẹ́yìn-ìṣẹ̀lẹ̀. Ìṣàyẹ̀wò ìfọfindè, ìfọwọ́sí KYC, àwọn ààlà ipò, àwọn ìdíwọ́ ẹ̀ka-òfin — gbogbo rẹ̀ ní láti ṣiṣẹ́ inú ìpele ìpinnu ìsanwó, lẹ́ẹ̀kan náà pẹ̀lú ìṣòwò. Ohun tí ó jáde ni àkọsílẹ̀ àyẹ̀wò cryptographic, kìí ṣe àkọsílẹ̀ database. Àwọn ẹ̀rí ìmọ̀ òfo ti ìdánimọ̀ ń jẹ́ kí èyí ṣiṣẹ́ láìsí jíjò dátà oníbàátì kọjá àwọn ẹgbẹ́. Èyí nikan ni àwòkọ́ṣe ìbámu tó ń wà láàyè labẹ́ iye nínú ọjọ́.
+
+### Ètò Ọrọ̀-ajé Ẹ̀ka Tí Ó Wà Láàyè Ní Ìpàdé Igbimọ̀
+
+Gbogbo ìpilẹ̀ṣẹ̀ nílò àwọn nọ́mbà tó le koko. Àwọn àmì ìpilẹ̀ tí a fipamọ́ sórí owó-ìpèsè ààbò. Ìdín-kù ààbò omi nínú ọjọ́. Iye àwọn ìpinnu tó kùnà. Àwọn FTE ìbámu tí a yọ kúrò. Àkókò ìyípadà láti gba ẹgbẹ́ tuntun. Ohunkohun mìíràn — iye òṣìṣẹ́, ìròyìn àtẹ̀jáde, àwọn ojú-ìwé deck — kìí ṣe ROI. Láìsí àwọn ìwọ̀n wọ̀nyí, ìnáwó "ìmúdàgbà" ń di owó tí ó sọnù tí CFO tó ń bọ̀ yóò pa rẹ́.
+
+## Tábìlì Ìkọ́lé
+
+| Ìpele | Ohun tí DSS ń béèrè ní 2026 | Èrè Ilé-iṣẹ́ | Iye Bí A Bá Ṣe É Ní Àṣìṣe |
 |---|---|---|---|
-| **Ìpele àkọsílẹ̀ iṣẹ́** | Ìnira oníbàátì pinnu ọjà | Ọ̀rọ̀ òwò mímọ́ àti gbígbà | Àwọn ìdánwò tí ẹ̀rọ darí láìsí oníbàátì |
-| **Ìpele dátà** | Dátà ìṣòwò àti ìṣàkóso tó ní ìṣètò | Ìṣiṣẹ́ àdàṣe, àlàyé, àti àyẹ̀wò | Dátà burúkú tí a gbé lọ yára sí i |
-| **Ìpele rọ́ọ̀dù** | Ọ̀nà yí ká káàdì, A2A, RTGS, stablecoin, ìfowópamọ́, API, DLT | Owó, ìyára, àti ìparí tí a tunṣe | Ìtànkálẹ̀ ọ̀nà àti ìṣàkóso àdàkọ |
-| **Ìpele ìṣàkóso** | Ìlànà àkókò gangan, àdàmọ̀, ìfòfindè, ìfaradà, ìdánimọ̀, àti ìfọwọ́sí | Ewu tí a ṣàkóso ní ìyára iṣẹ́ | Ìbámu ọwọ́ lẹ́yìn-ìṣẹ̀lẹ̀ |
-| **Ìpele ọrọ̀-ajé** | Owó ẹ̀ka tó ṣe wíwọ̀n àti iye fún oníbàátì | Ìfẹ̀ẹ́gbà tí ẹ̀rí darí | Ìnáwó ìmúdàgbà láìsí èrè tó dúró |
+| **Ìṣàn iṣẹ́** | Ìnira oníbàátì ń pinnu àpẹẹrẹ ọjà | Ìṣẹ̀lò òwò mímọ́, ìtúsílẹ̀ olú-owó, ìgbàwọlé kíákíá | Àwọn pẹpẹ tokenisation láìsí olùlò — eré ìmúdàgbà lórí deck igbimọ̀ |
+| **Dátà** | Àwọn ẹrù ISO 20022 tí a so mọ́ àwọn hash ìṣòwò lórí-ẹ̀wọ̀n | STP, ẹ̀rí ìpele àyẹ̀wò, àyẹ̀wò tí a sanwó fún | Dátà burúkú ń lọ yára sí i — àwọn fífọ́ ìbámu sí i, kìí ṣe díẹ̀ |
+| **Ọ̀nà ìsanwó** | Ìdarí kọjá RTGS, RLN, Canton, àwọn DLT aládàáni, owó tókènì | Agbára olú-owó, ìparí lórí ìbéèrè, owó-ìpèsè tó dín kù | Ìtànkálẹ̀ ọ̀nà, ìpín omi, àwọn ìṣàkóso tí a ṣe ní ẹ̀ẹ̀mẹ́rùn |
+| **Ìṣàkóso** | Policy-as-code, ìdánimọ̀ ìmọ̀ òfo, ìbámu atomic | Ewu tí a yọ kúrò ní àkókò ìṣòwò — kò sí ìyàlẹ́nu T+2 | Àwọn ìwádìí ọwọ́ lẹ́yìn ọjọ́ — àti àwọn ìtanràn tó ń tẹ̀lé wọn |
+| **Ọrọ̀-ajé** | Ìdín-kù owó-ẹ̀ka tó ṣe wíwọ̀n tí a so mọ́ àwọn èsì oníbàátì | Ìdàgbà tí ẹ̀rí ń darí, ROE tó wà láàyè ní àyẹ̀wò | Ìnáwó ìmúdàgbà tó sọnù, kò sí èrè tó dúró, igbimọ̀ ń pa á rẹ́ |
 
 ## Kínni Èyí Túmọ̀ sí Nípa Irú Báńkì
 
-### Àwọn Báńkì Àgbáyé
+> *"Ìbéèrè tó nípa ni ìbáwí àpẹẹrẹ: dátà, ọ̀nà ìsanwó, ìṣàkóso, gbèsè, àti àwọn ìṣàn iṣẹ́ oníbàátì wo ló yẹ kí ó wà pọ̀."*
 
-Àwọn báńkì àgbáyé gbọ́dọ̀ ṣẹ̀dá ìṣètò ìpele-pẹpẹ kí ọjà kọ̀ọ̀kan, rọ́ọ̀dù, tókènì, àti agbára AI máṣe di àwòkọ́ṣe iṣẹ́ ọ̀tọ̀ọ̀tọ̀.
+### Àwọn Báńkì Ìpele 1
+
+Kọ́ ìpele ìṣètò. Àwọn báńkì Ìpele 1 kò lè gba á pé ohun-ìní tókènì tuntun kọ̀ọ̀kan tàbí nẹ́tíwọ̀kì DLT yóò mú àwòkọ́ṣe iṣẹ́ àkànṣe wá. Ipa náà ni láti jẹ́ àfárá tí a ṣàkóso láàrín omi ti òde-ẹ̀wọ̀n àti omi ti orí-ẹ̀wọ̀n — pípèsè ìṣàkóso òfin, iwé ìwọ̀ntúnwọ̀nsì, àti ìbáṣepọ̀ àbójútó tó ń jẹ́ kí Sandbox ṣiṣẹ́ fún ìyókù ọjà. Dúró sí ẹnu-ọ̀nà, gba owó fún àyè, dáàbò ifilọ́lẹ̀.
 
 ### Àwọn Báńkì Agbègbè
 
-Àwọn báńkì agbègbè gbọ́dọ̀ pa ọkàn pọ̀ sórí àwọn ìṣẹ̀lò tí ìgbẹ́kẹ̀lé, ìmọ̀ ọjà àdúgbò, àti ìṣọ̀kan tó rọrùn jù gbígbòòrò: àfihàn akápò, ìdènà àdàmọ̀, ìsanwó Open Banking, àti iṣẹ́ owó dijítà tí a ṣàkóso.
+Dáwọ́ kíkọ́ àwọn ọ̀nà ìsanwó aládàáni dúró. Àǹfààní náà jẹ́ ìgbẹ́kẹ̀lé àti ìmọ̀ àdúgbò. Fún àwọn akápò ilé-iṣẹ́ ìríran, àwọn ìṣàkóso àdàmọ̀, àti àyè tó ní ìfaradà sí àwọn ìkójọ omi dijítà ìpele kíní tí wọn kò lè kọ́ fúnra wọn. Ìlànà náà jẹ́ ìṣèjọpọ̀, kìí ṣe àbẹ̀wò.
 
-### Àwọn Fintech àti PSP
+### Àwọn Fintech àti Àwọn Olùpèsè Ìgbékalẹ̀ Ọjà
 
-Àwọn Fintech gbọ́dọ̀ dín ìṣòro kù fún àwọn báńkì dípò fífi rọ́ọ̀dù mìíràn kún ún. Àwọn ìfilọ́lẹ̀ tó dára jù yóò mú ìṣètò, ẹ̀rí ìbámu, tàbí òye dátà wá.
+Àwọn fintech tó borí ní 2026 kì yóò jẹ́ àwọn tó ń ṣiṣẹ́ nẹ́tíwọ̀kì òmíràn tó dúró fúnra rẹ̀. Wọn yóò jẹ́ àwọn tó ń pèsè ìpele ìṣèjọpọ̀ — àwọn ẹ̀rọ ìṣètò, àwọn oracle, àwọn ohun èlò ẹ̀rí-ìbámu — tó ń dín ìṣòro kù fún àwọn báńkì. Fi kún àkójọ báńkì, máṣe bá a díje. Ọjà ti sọ̀rọ̀ lórí àwọn nẹ́tíwọ̀kì tó dúró fúnra wọn.
 
 ### Àwọn Akápò Ilé-iṣẹ́
 
-Àwọn akápò gbọ́dọ̀ béèrè ìṣírí tó ṣe wíwọ̀n: àtúnṣe ìsanwó tí ó dín kù, àfihàn owó wíwà tó dára, dátà ìbáramu tó kún, ìpinnu owó yáyára, àti ìṣàkóso tó lágbára lórí ìpinnu àdàṣe.
+Dáwọ́ gbígbà ìròyìn ìparí-ọjọ́ dúró. Béèrè báńkì alágbára: àwọn ìṣíkiri àdàṣe, ìríran omi àkókò gangan, ìfilọ́lẹ̀ ààbò lẹ́ẹ̀kan-náà, dátà ìbámu ìpele ISO 20022. Àwọn pẹpẹ tó ń pèsè wọn wà tẹ́lẹ̀. Agbára yìí ni ìhalẹ̀ láti gbé ìṣàn iṣẹ́ lọ.
 
-## Ìparí
+## Kínni Yóò Ṣẹlẹ̀ Tó Kàn
 
-Àwọn Ọjà Oníròyìn Ńlá Dijítà ní UK jẹ́ ìbéèrè ìkọ́lé ní ìpari. Àwọn ilé-iṣẹ́ tó borí kì yóò jẹ́ àwọn tí ó ní àwọn ìdánwò jù tàbí èdè ìmúdàgbà tó pariwo jù. Wọ́n yóò jẹ́ àwọn ilé-iṣẹ́ tó so àkọsílẹ̀ iṣẹ́ oníbàátì, dídára dátà, ìṣètò rọ́ọ̀dù, ìbámu tí a fi sínú, àti ètò ọrọ̀-ajé ẹ̀ka pọ̀ di àwòkọ́ṣe iṣẹ́ tó mọ́gbọ́n.
+Ipa Akọni jẹ́ iṣẹ́ tí ń fipá mú. DSS jẹ́ ìjọba tó ń ṣiṣẹ́. Àwọn gilts tókènì ń pinnu ní ìdánwò, pẹ̀lú ìṣàdàṣe ní ojú ìwájú. Ẹ̀dà kọ̀ọ̀kan ṣiṣẹ́ lóun nìkan. Ìbéèrè fún 2026 ni àwọn ilé-iṣẹ́ wo ló kó wọn jọ sínú àwòkọ́ṣe iṣẹ́ kan — àti àwọn wo ló lo ọdún mìíràn ní pípe ìkójọ àjogúnbá ní ìpè owó ẹ̀ẹ̀mẹ́ta.
+
+Àwọn báńkì tó borí kì yóò jẹ́ àwọn tó ní àkójọpọ̀ blockchain tó pariwo jù. Wọn yóò jẹ́ àwọn tí ìkọ́lé wọn ti pamọ́ — ìṣàn iṣẹ́, dátà, ọ̀nà ìsanwó, ìṣàkóso, àti ọrọ̀-ajé tí a hun papọ̀ ní mímọ́ tó bẹ́ẹ̀ tí oníbàátì kò sí rí àwọn ìpàdé. Ìyẹn ni ọ̀pá ìwọ̀n tí City ti ń díje lòdì sí báyìí. Singapore, Switzerland, àti Frankfurt ń wo. Wọ́n ti ṣàkíyèsí.
 
 ## Àwọn Ìbéèrè Tí A Ń Béèrè Léraléra
 
-**Ìdí tí ọ̀rọ̀ yìí fi yára ní 2026?**
+**Kínni Digital Securities Sandbox (DSS) àti kí ló dé tó fi nípa?**
 
-Nítorí pé ìgbékalẹ̀, ìlànà, àti àwọn àmì ìbéèrè-oníbàátì ti pa pọ̀. Ohun tí ó jẹ́ àdánwò àṣàyàn ti ń di apá kan àwòkọ́ṣe iṣẹ́ báńkì.
+DSS jẹ́ ìjọba ti FCA/Bank of England papọ̀ tó ń jẹ́ kí àwọn ilé-iṣẹ́ fi àwọn ààbò dijítà gidi sílẹ̀, ṣòwò wọn, kí wọ́n sì pinnu wọn — pẹ̀lú àwọn gilts tókènì — labẹ́ àwọn ìyọnda àkànṣe sí CSDR àti àwọn òfin ìpinnu ìsanwó tó wà. Ó nípa nítorí pé àwọn ilé-iṣẹ́ UK lè ṣiṣẹ́ ìgbékalẹ̀ ọjà ti olówó-ńlá DLT tó ń wà láàyè pẹ̀lú ìbojú ìṣàkóso, kìí ṣe gẹ́gẹ́ bí PoC tí à ń jù sílẹ̀.
 
-**Kínni ewu ìgbé-kalẹ̀ tó tóbi jù?**
+**Ìdí tí gilts tókènì pàápàá, dípò àwọn bondi ilé-iṣẹ́ tàbí àwọn ẹ̀tọ́?**
 
-Ewu tó tóbi jù ni pípín: àwọn ẹgbẹ́ ọ̀tọ̀ọ̀tọ̀ ń kọ́ àwọn ìdánwò ọ̀tọ̀ọ̀tọ̀, ọ̀kọ̀ọ̀kan pẹ̀lú dátà, ìṣàkóso, ìjọba, àti ọrọ̀-ajé ọ̀tọ̀ọ̀tọ̀.
+Gilts ni ohun-ìní tó jinlẹ̀ jù, tí a ṣàkóso jù nínú ètò sterling — ààbò tí BoE ń gbà, ẹ̀hìn LCR, ohun-ìní bíbára-mu-gbèsè fún àwọn ifẹ̀hìntì. Tókènì wọn ń ṣe àyẹ̀wò ìkójọ kíkún lórí ẹgbẹ́ ohun-ìní tó le koko jù. Ohunkohun mìíràn rọrùn ní àfiwé.
 
-**Kínni báńkì gbọ́dọ̀ kọ́ kọ́kọ́?**
+**Kínni iyàtọ̀ láàrín RLN, Canton, àti DLT báńkì aládàáni?**
 
-Báńkì gbọ́dọ̀ bẹ̀rẹ̀ pẹ̀lú àkọsílẹ̀ iṣẹ́ níbi tí iye tó ṣe wíwọ̀n bá wà, gẹ́gẹ́ bí ìpinnu owó yáyára, owó ìbáramu tí ó dín kù, ìwádìí kéréje, ìdènà àdàmọ̀ tó dára, tàbí àfihàn owó wíwà tó dára.
+Regulated Liability Network jẹ́ àwòkọ́ṣe ìwé àkọsílẹ̀ pínpín fún owó báńkì oníṣòwò tí a ṣe tókènì tí àwọn ilé-iṣẹ́ ìṣàkóso pípọ̀ ń pèsè. Canton jẹ́ DLT pẹlu ìyọnda, tí ó ń pa ìkọ̀kọ̀ mọ́, tí a ń lò gbangba ní àwọn ọjà olú. Àwọn DLT báńkì aládàáni jẹ́ àwọn nẹ́tíwọ̀kì ti ilé-iṣẹ́ kan. Ìpele ìṣètò 2026 ń darí kọjá gbogbo mẹtẹ̀ẹ̀ta gẹ́gẹ́ bí ìṣàn iṣẹ́ ti dáhùn.
 
-**Báwo ni ìyege ṣe gbọ́dọ̀ jẹ́ wíwọ̀n?**
+**Báwo ni DvP atomic ṣe ń yọ ewu olùdánilójú kúrò?**
 
-Ìyege gbọ́dọ̀ jẹ́ wíwọ̀n nípa ètò ọrọ̀-ajé ẹ̀ka, ẹ̀rí ìfaradà, dídára dátà, gbígbà oníbàátì, ìdín-kù ewu iṣẹ́, àti ìlọsíwájú owó wíwà tàbí olú-iṣẹ́.
+Fèrèsé ìpinnu ìsanwó tí kò ṣe DvP ní ẹsẹ̀ kan ti ìṣòwò tó ń pinnu ṣaaju ti ẹlòmíràn. DvP atomic ń lo àdéhùn alágbára láti mú àwọn ẹsẹ̀ mejèèjì ṣiṣẹ́ gẹ́gẹ́ bí iṣẹ́ kan tí kò pín — yálà mejèèjì pinnu tàbí kò sí ọ̀kan. Àìṣe-padà ti ẹgbẹ́ kan ní àárín fèrèsé kò lè fi ẹgbẹ́ kan hàn mọ́ nítorí pé fèrèsé náà kò sí.
+
+**Kínni "policy-as-code" túmọ̀ sí ní ṣíṣe?**
+
+Àwọn òfin ìbámu — ìṣàyẹ̀wò ìfọfindè, ìfọwọ́sí KYC, àwọn ààlà ipò, àwọn ìdíwọ́ ẹ̀ka-òfin — tí a kọ tààrà sínú àdéhùn alágbára tàbí ìpele ìpinnu ìsanwó, tí a sì ń ṣe ní àkókò ìṣòwò. Ohun tí ó jáde ni àkọsílẹ̀ àyẹ̀wò cryptographic, kìí ṣe àkọsílẹ̀ database tí olùṣàkóso ní láti gbà gbọ́.
+
+**Báwo ni báńkì gbọ́dọ̀ ṣe ìwọ̀n ROI lórí ìdánwò DSS kan?**
+
+Àwọn àmì ìpilẹ̀ tí a fipamọ́ sórí owó-ìpèsè ààbò. Ìdín-kù ààbò omi nínú ọjọ́. Iye àwọn ìpinnu tó kùnà. Àwọn FTE ìbámu tí a yọ kúrò. Àkókò ìyípadà láti gba ẹgbẹ́ tuntun. Ìyẹn ni àkójọ náà. Iye òṣìṣẹ́, ìròyìn àtẹ̀jáde, àwọn ojú-ìwé deck igbimọ̀ kìí ṣe ROI — wọn kò sì jẹ́ rí.
 
 ## Àwọn Ìtọ́kasí
 
-- GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
-- Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
+- GOV.UK, (2026). [UK fintech tí a ṣe àtìlẹ́yìn fún láti gba ọ̀nà-ẹ̀rọ ìsanwó ọjọ́ iwájú ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech tí a ṣe àtìlẹ́yìn").
+- Bank of England, (2026). [Digital Securities Sandbox ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox").
+- FCA, (2026). [Digital Securities Sandbox ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA Digital Securities Sandbox").
+- Association of Corporate Treasurers, (2026). [Ìtúnṣe lórí àkójọ Ìsanwó – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Ìtúnṣe àkójọ ìsanwó").
+- Global Government Finance, (2026). [Akọni àwọn ọjà ti olówó-ńlá dijítà UK ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "Akọni àwọn ọjà ti olówó-ńlá dijítà UK").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ bánkì àgbà tí ó ń kọ nípa AI tí a lo, ìgbékalẹ̀ ìsanwó, owó tókènì, ISO 20022, ààbò post-quantum, iṣẹ́ ìnáwó cloud-native, àti àwọn ọjà oníbàátì tí a ṣàkóso.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ bánkì àgbà tí ó ń kọ nípa AI tí a lo, ìṣíkiri ISO 20022, cryptography post-quantum fún iṣẹ́ ìnáwó, àti ìyípadà ìgbékalẹ̀ ti àwọn ìsanwó ti olówó-ńlá.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Àyẹ̀wò tó kẹ́yìn <time datetime="2026-05-30">2026-05-30</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Àkàwé Ìtọ́kasí</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026" class="related-media" aria-label="Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay" tabindex="-1"><img alt="Àwòrán ìgbékalẹ̀ ohun-ìní dijítà tó fihan àwọn ohun-ìní gidi tókènì, stablecoins, ìfowópamọ́ tókènì, ìpamọ́, ìpinnu ìsanwó, ìṣíkiri ààbò, àti àwọn ìpele pẹpẹ báńkì" src="https://cloudcdn.pro/stocks/images/corporate-finance.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026">Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay</a></h3><p><time datetime="2026-05-28">2026-05-28</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026" class="related-media" aria-label="Programmable Liquidity in 2026: AI, Tokenised Deposits, and Real-Time Treasury Orchestration" tabindex="-1"><img alt="Àwòrán ìkọ́lé omi alágbára tó fihan àwọn ètò akápò, àsọtẹ́lẹ̀ AI, àwọn ìfowópamọ́ tókènì, àwọn ọ̀nà àkókò gangan, stablecoins, àwọn akápò àdánjú, FX, àti ìṣíkiri ààbò" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026">Programmable Liquidity in 2026: AI, Tokenised Deposits, and Real-Time Treasury Orchestration</a></h3><p><time datetime="2026-05-25">2026-05-25</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026" class="related-media" aria-label="The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments" tabindex="-1"><img alt="Àwòrán ìtúnṣe ìsanwó UK tó fihan stablecoins, àwọn ìfowópamọ́ tókènì, open banking, àwọn aṣojú AI, ìṣàkóso FCA, ìṣèjọpọ̀ PSR, àti àwọn ọjà ti olówó-ńlá dijítà" src="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026">The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments</a></h3><p><time datetime="2026-05-24">2026-05-24</time></p></footer></article>
+</div>
+</aside>
 <!-- enrich-end -->
+

@@ -85,122 +85,165 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 ---
 
-# Hurtowe rynki cyfrowe w UK: tokenizowane gilty, rozliczenie i nowa rola championa
+# Hurtowe rynki cyfrowe w UK: tokenizowane gilty, rozliczenie i nowa rola koordynatora
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Streszczenie artykulu">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Wielka Brytania powolala Wholesale Digital Markets Champion, aby skoordynowac tokenizowane gilty, rozliczenie oparte na DLT, piaskownice DSS Bank of England oraz szersza agende cyfrowych finansow hurtowych. Sygnal 2026 roku jest jasny: hurtowa tokenizacja przeszla z debaty politycznej do narodowej konkurencyjnosci — a strategiczne pytanie dla bankow City of London przesunelo sie z "czy pilotowac tokenizowane aktywa" do "ktora architektura platformy obroni nasza role hurtowa przed Project Guardian w Singapurze, szwajcarska SDX, Frankfurtem i Project Agora". Banki, ktore traktuja tokenizowane gilty, repo i rozliczenie papierow wartosciowych jako jeden problem orkiestracji, zachowuja franchise hurtowy; banki prowadzace piec rownoleglych pilotow traca substrat danych.</p>
+<aside class="post-lead" aria-label="Streszczenie artykułu">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Wielka Brytania powołała koordynatora hurtowych rynków cyfrowych (Wholesale Digital Markets Champion). Funkcja nie jest ceremonialna. To twarda warstwa koordynacji między HM Treasury, FCA i Bank of England — rola zaprojektowana po to, by wymusić interoperacyjność sektora prywatnego wewnątrz Digital Securities Sandbox (DSS). Tokenizowane gilty rozstrzygają tę kwestię jako pierwsze: HQLA na DLT, atomowo wobec tokenizowanej gotówki, z repo intraday jako natychmiastową nagrodą.</p>
 <p class="post-lead-heading"><strong>Kluczowe wnioski</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Rola championa czyni z tego projekt narodowy.</strong> Tokenizowane finanse hurtowe siedza dzis w brytyjskiej strategii konkurencyjnosci, a nie tylko w programach piaskownic FCA / BoE.</li>
-  <li><strong>Tokenizowane gilty sa klinem.</strong> Gilty jako kolateral, piaskownica DSS i rozliczenie DLT razem testuja pelna architekture hurtowa — repo, rozliczenie papierow wartosciowych, platnosc, plynnosc srodsesyjna.</li>
-  <li><strong>Rozliczenie jest prawdziwym produktem.</strong> Rozliczenie atomowe / T+0 przeciwko tokenizowanej gotowce (pieniadz banku centralnego lub tokenizowane depozyty) to wartosc, ktorej City musi bronic.</li>
-  <li><strong>Jakosc danych procentuje.</strong> Strukturalne wzbogacenie ISO 20022, sygnaly tozsamosci i logi audytowe sa substratem, ktory zamienia tokenizowane aktywa w wycenione produkty.</li>
-  <li><strong>Fragmentacja jest wrogiem.</strong> Piloty per-aktywo / per-platforma buduja ryzyko operacyjne na nastepna dekade — tylko orkiestracja platformowa z mierzalna ekonomika broni franchise'u hurtowego.</li>
+  <li><strong>Koordynator to koordynator, nie figurant.</strong> Mandat polega na ustawieniu HM Treasury, FCA, Bank of England i londyńskiego City za jednym modelem operacyjnym rynków cyfrowych — modernizacja RTGS i DSS na tym samym schemacie.</li>
+  <li><strong>Gilty idą pierwsze, bo są najtrudniejszą klasą aktywów.</strong> HQLA na DLT, rozliczane atomowo wobec tokenizowanej gotówki, walidują cały stos na najgłębszej puli zabezpieczeń w funcie szterlingu.</li>
+  <li><strong>Repo intraday to natychmiastowa nagroda.</strong> Atomowe repo T+0 tokenizowanych giltów uwalnia kapitał, który dziś leży bezczynnie jako bufor płynności same-day — punkty bazowe trafiające wprost do ROE.</li>
+  <li><strong>Architektura bije piloty.</strong> RLN, Canton, prywatne DLT, RTGS, tokenizowany pieniądz banku komercyjnego — banki potrzebują warstwy orkiestracji, która rutuje przez nie wszystkie, a nie kolejnej autonomicznej sieci.</li>
 </ul>
+<p class="post-lead-related"><strong>Powiązane lektury:</strong> <a href="https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026">Aktywa cyfrowe w 2026: transformacja infrastruktury, której banki nie mogą odkładać</a>, <a href="https://sebastienrousseau.com/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026">Programowalna płynność w 2026: AI, tokenizowane depozyty i treasury w czasie rzeczywistym</a>, <a href="https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026">UK Payments Forward Plan w 2026: stablecoiny, Open Banking, tokenizowane depozyty i płatności agentowe</a>.</p>
 </aside>
 <!-- lead-end -->
 
-Rola Wholesale Digital Markets Champion zamienia tokenizowane finanse hurtowe w narodowy projekt konkurencyjnosci. Sygnal 2026 roku jest taki, ze hurtowa tokenizacja przeszla z teatru innowacji do modelu operacyjnego banku, gdzie decydujacym pytaniem jest dyscyplina projektowa: ktore dane, szyny, kontrole, zobowiazania i procesy klienckie naleza do siebie ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
+Tokenizowane finanse hurtowe nie są już eksperymentem myślowym. W 2026 stanowią bazowy model operacyjny rynków kapitałowych w funcie szterlingu. Modernizacja RTGS w Bank of England, wspólna piaskownica FCA/BoE Digital Securities Sandbox (DSS) i powołanie koordynatora hurtowych rynków cyfrowych siedzą teraz na jednym schemacie — i to jest sedno. Elementy zostały zaprojektowane tak, by się zazębiały ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox"), [GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "Brytyjski fintech wsparty technologią płatności przyszłości")).
+
+Koordynator jest dźwignią, która ich do tego zmusza.
 
 ---
 
-> **Podsumowanie dla zarzadu / Kluczowe wnioski**
+> **Podsumowanie zarządu / Kluczowe wnioski**
 >
-> - **Hurtowa tokenizacja jest teraz strategiczna.** Temat jest powiazany z modelem operacyjnym, odpornoscia, wartoscia kliencka i dowodami regulacyjnymi, a nie z waskim wprowadzeniem produktu ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **Zasada projektowa to koordynacja rynkowa.** Banki potrzebuja architektury laczacej polityke, produkt, dane, wybor szyny, kontrole ryzyka i mierzalna ekonomike ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
-> - **Model kontrolny musi dzialac w czasie rzeczywistym.** Decyzje dotyczace fraudu, plynnosci, compliance, rozliczenia i ryzyka operacyjnego musza biec w tempie procesu, a nie po fakcie.
-> - **Jakosc danych staje sie przewaga handlowa.** Dane strukturalne, kontekst transakcji, logi audytowe i sygnaly tozsamosci staja sie substratem dla automatyzacji i produktow klienckich.
-> - **Fragmentacja jest wrogiem.** Bank budujacy odizolowane piloty wokol kazdej szyny, tokenu, modelu czy wymogu compliance tworzy przyszle ryzyko operacyjne.
-> - **Zwyciezka formula to orkiestracja.** Instytucja zdolna trasowac, nadzorowac, wyceniac, dokumentowac i wyjasniac kazdy proces przebije te, ktora tylko adoptuje kolejne narzedzie ([Global Government Finance](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion")).
+> - **Koordynator to warstwa koordynacji, której londyńskiemu City brakowało.** Zakres sięga przez HM Treasury, FCA, Bank of England i kluczowe biurka sell-side i buy-side — zbudowany po to, by przełamać uprzejmy impas, który trzymał wcześniejsze inicjatywy rynków cyfrowych na poziomie PoC ([Global Government Finance](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "Koordynator hurtowych rynków cyfrowych UK")).
+> - **Gilty idą pierwsze, bo są najtrudniejszą klasą aktywów.** HQLA na DLT, rozliczane atomowo wobec tokenizowanej gotówki, walidują cały stos — emisję, obrót, repo, zabezpieczenia, pieniądz banku centralnego — na najgłębszej puli funta szterlinga ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox")).
+> - **Repo intraday to natychmiastowa nagroda.** Atomowe repo T+0 tokenizowanych giltów uwalnia kapitał, który dziś leży bezczynnie jako bufor płynności same-day. Oszczędności spływają wprost do ROE.
+> - **Orkiestracja zastępuje autonomiczne sieci.** Regulated Liability Network, Canton, prywatne DLT banków, RTGS i tokenizowany pieniądz banku komercyjnego — każda z tych szyn niesie przepływy pracy, które banki już prowadzą. Zadaniem jest rutować przez nie wszystkie, a nie wybrać jedną.
+> - **Policy-as-code to jedyny model zgodności, który nadąża.** Sankcje, KYC, limity pozycji, bramy jurysdykcyjne — zakodowane w warstwie rozliczeniowej, wykonywane atomowo razem z transakcją, generujące kryptograficzny ślad audytowy zamiast logu, któremu regulator musi zaufać ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Aktualizacja sektora płatności — maj 2026")).
+> - **Architektura jest fosą.** Zwycięzcy splatają przepływ pracy, dane, tor płatniczy, kontrolę i ekonomikę jednostkową w jeden model operacyjny. Przegrani prowadzą portfel rozłącznych pilotaży i nazywają to strategią.
 >
 ---
 
-## Dlaczego 2026 to rok, w ktorym stalo sie to strategiczne
+## Mandat koordynatora: koordynacja, nie ceremonia
 
-Branza wyszla poza faze adopcji. Nie wystarczy juz dolaczyc do szyny, zmigrowac komunikat, uruchomic POC AI ani ogloszic pilot tokenizacji. W 2026 roku przewage strategiczna daje orkiestracja tych zdolnosci wokol prawdziwego procesu i udowodnienie, ze proces jest bezpieczniejszy, szybszy, tanszy, bardziej odporny lub bardziej uzyteczny dla klientow.
+Reforma rynków hurtowych w Wielkiej Brytanii od dawna rozbija się o ten sam punkt — koordynację. Treasury ustala politykę, Bank prowadzi rozliczenie, FCA odpowiada za conduct, a londyńskie City dostarcza produkt. Każdy z nich jest kompetentny. Żaden z nich, sam, nie wymusi interoperacyjności między platformą tokenizacji banku tier-one a silnikiem rozliczeniowym CSD. Tę lukę koordynator został powołany domknąć.
 
-Dlatego hurtowa tokenizacja jest dzis tematem dla zarzadu. Powracaja te same presje: bogatsze dane platnicze, rozliczenie w czasie rzeczywistym, tokenizowany pieniadz, decyzje oparte na AI, Open Banking, odpornosc operacyjna, koncentracja chmurowa i mocniejsze dowody regulacyjne. Traktowane osobno tworza programowy chaos. Traktowane jako jedna architektura — daja dzwignie operacyjna ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Rola jest zbudowana wokół DSS. Piaskownica jest jedynym miejscem w brytyjskim perymetrze regulacyjnym, gdzie firmy mogą emitować, handlować i rozliczać prawdziwe cyfrowe papiery wartościowe — w tym tokenizowane gilty — pod skrojonymi zwolnieniami z CSDR i istniejących reguł rozliczeniowych ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox"), [FCA](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA Digital Securities Sandbox")). Działa, nie jest teoretyczna. Zadaniem koordynatora jest zapewnić, by instytucje wewnątrz budowały według tych samych standardów tożsamości, finalności rozliczenia i formatu wiadomości — tak by platformy, które się wyłonią, faktycznie ze sobą rozmawiały.
 
-## Bazowa architektura 2026
+To różnica między piaskownicą operacyjną a piaskownicą dla dzieci.
 
-### 1. Najpierw proces, potem technologia
+## Po co tokenizować gilty?
 
-Bank powinien zaczac od tarcia: uwiezionej plynnosci, opoznienia rozliczenia, kosztu uzgadniania, nieudanych platnosci, ekspozycji na fraud, slabej audytowalnosci lub kiepskiego doswiadczenia klienta. Technologia jest uzasadniona tylko tam, gdzie usuwa to tarcie ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
+Gilty są fundamentem systemu funta szterlinga. To zabezpieczenie, które Bank przyjmuje w repo, aktywo, które banki trzymają na poczet wymogów LCR, instrument, którym fundusze emerytalne dopasowują pasywa. Są też dziś rozliczane przez infrastrukturę operacyjną, która zasadniczo nie zmieniła się od dwudziestu lat — partie CREST, konwencje T+1, uzgodnienia płynności na koniec dnia. Kapitał uwięziony w tym przepływie pracy nie jest mały.
 
-### 2. Dane jako warstwa kontrolna
+Wprowadzenie giltów na DLT zmienia trzy rzeczy naraz.
 
-Strukturalne, nadzorowane i sledzace dane sa fundamentem. Bez uzytecznych danych automatyzacja staje sie krucha, a compliance ledwie reczne. Z uzytecznymi danymi banki tworza inteligencje routingu, kontrole czasu rzeczywistego i analityke kliencka ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+**Repo intraday staje się atomowe.** Repo T+0 tokenizowanego gilta wobec tokenizowanej gotówki rozlicza się w sekundach, nie w godzinach. Instytucjonalny bufor płynności, który dziś finansuje potrzeby gotówkowe same-day, można uwolnić z powrotem na rynek. Dla banku tier-one prowadzącego dużą książkę repo to punkty bazowe kosztu finansowania — i punkty bazowe ROE.
 
-### 3. Orkiestracja miedzy szynami i platformami
+**Mobilność zabezpieczeń przestaje być rozmową telefoniczną.** Cyfrowy gilt można zastawić lub odwołać między jurysdykcjami natychmiast, by sprostać wezwaniu do uzupełnienia depozytu. Powolny łańcuch pośredniczonych wiadomości depozytariuszy — faks, SWIFT MT, uzgodnienia na koniec dnia — ustępuje miejsca przesunięciu smart kontraktu z kryptograficznym dowodem zastawu.
 
-Architektura musi wspierac wiele szyn, dostawcow, schematow tozsamosci, sygnalow ryzyka i aktywow rozliczeniowych. Decyzja o trasowaniu powinna byc podejmowana wedlug kosztu, predkosci, finalnosci, jurysdykcji, preferencji klienta, odpornosci i bogactwa danych.
+**Ryzyko principal w rozliczeniu znika.** Atomowa dostawa za płatność oznacza, że noga gilta i noga gotówki wykonują się jako jedna niepodzielna operacja. Albo obie się rozliczają, albo żadna. Okno rozliczeniowe, które dziś wystawia jednego kontrahenta na default drugiego w trakcie transakcji, zamyka się do zera.
 
-### 4. Wbudowane compliance i dowody
+To nie są korzyści przyszłe. Działają w piaskownicy już teraz.
 
-Model compliance musi byc natywny dla procesu. Polityka jako kod, automatyczne logi audytowe, dowody odpornosci operacyjnej, rekordy zgody i nadzor nad modelami musza powstawac jako element wykonania, a nie byc odtwarzane pozniej dla audytorow.
+## Model operacyjny DSS
 
-### 5. Ekonomika jednostkowa i wartosc kliencka
+DSS to żywy reżim. Aby używać go jako platformy, a nie PoC, banki potrzebują architektury, która wytrzyma kontrolę regulacyjną i presję komercyjną. Pięć filarów wykonuje pracę nośną.
 
-Kazda inicjatywa potrzebuje dowodow wartosci handlowej. Koszt-na-platnosc, koszt-na-decyzje, koszt-na-sledztwo, zaoszczedzona plynnosc, unikniete reczne naprawy, zmniejszone straty fraudowe i adopcja klientow powinny rozstrzygac decyzje o skalowaniu.
+### Przepływ pracy ponad technologią
 
-## Tabela strategicznej architektury
+Zaczynaj od tarcia. Uwięziona płynność, łamania rozliczeniowe, koszt uzgadniania, nieudane płatności — to są problemy, za usunięcie których klienci płacą. Technologia jest uzasadniona wyłącznie tam, gdzie je usuwa. Tokenizacja jest środkiem, nie produktem. Platforma, która dostarcza repo intraday tokenizowanych giltów, ma przypadek użycia. Platforma, która dostarcza silnik tokenizacji szukający przypadku użycia, nie ma.
 
-| Warstwa | Kierunek 2026 | Szansa bankowa | Ryzyko przy zlym podejsciu |
+### Dane jako warstwa kontrolna
+
+Payloady ISO 20022 powiązane z hashami transakcji on-chain zamieniają dane rozliczeniowe w jedno źródło prawdy. Bez tego powiązania automatyzacja smart kontraktu jest krucha, a uzgadnianie wraca do arkuszy kalkulacyjnych. Z nim banki dostają straight-through processing, kontrole w czasie rzeczywistym i analitykę, za którą klienci faktycznie zapłacą ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Aktualizacja sektora płatności — maj 2026")).
+
+### Orkiestracja na torach płatniczych
+
+Regulated Liability Network, Canton, prywatne DLT banków, RTGS, tokenizowany pieniądz banku komercyjnego — każda z tych szyn niesie przepływy pracy, które banki już prowadzą. Wymuszanie każdej transakcji na jednej sieci to zła walka. Właściwa architektura rutuje każdy przepływ pracy do toru, który daje najlepszą kombinację kosztu, prędkości, finalności rozliczenia, jurysdykcji i odporności. Tę decyzję podejmuje się w runtime, nie kodując jej na sztywno w platformie.
+
+### Zgodność typu policy-as-code
+
+Atomowe rozliczenie nie zostawia miejsca na zgodność po fakcie. Screening sankcji, walidacja KYC, limity pozycji, ograniczenia jurysdykcyjne — wszystko to musi wykonywać się wewnątrz warstwy rozliczeniowej, jednocześnie z transakcją. Wynikiem jest kryptograficzny ślad audytowy, nie log bazodanowy. Dowody tożsamości z wiedzą zerową sprawiają, że to działa bez wycieku danych klienta między kontrahentami. To jedyny model zgodności, który przetrwa wolumen intraday.
+
+### Ekonomika jednostkowa, która przetrwa posiedzenie zarządu
+
+Każda inicjatywa potrzebuje twardych liczb. Punkty bazowe zaoszczędzone na finansowaniu zabezpieczeń. Redukcja bufora płynności intraday. Wskaźniki niepowodzeń rozliczenia. Przesunięte FTE uzgadniania. Czas cyklu onboardingu kontrahenta. Wszystko inne — etaty, prasa, slajdy z prezentacji — to nie ROI. Bez tych metryk budżet „innowacji” staje się kosztem utopionym, który następny CFO odpisuje.
+
+## Macierz architektoniczna
+
+| Warstwa | Czego DSS wymaga w 2026 | Nagroda instytucjonalna | Koszt złego podejścia |
 |---|---|---|---|
-| **Warstwa procesowa** | Punkt bolu klienta definiuje produkt | Jasny biznesplan i adopcja | Piloty napedzane technologia bez uzytkownikow |
-| **Warstwa danych** | Strukturalne, nadzorowane dane transakcyjne i kontrolne | Automatyzacja, analityka, audytowalnosc | Zle dane przesylane szybciej |
-| **Warstwa szyny** | Trasowanie miedzy kartami, A2A, RTGS, stablecoinami, depozytami, API, DLT | Optymalny koszt, predkosc i finalnosc | Rozrost kanalow i zduplikowane kontrole |
-| **Warstwa kontrolna** | Polityka, fraud, sankcje, odpornosc, tozsamosc i zgoda w czasie rzeczywistym | Ryzyko zarzadzane w tempie wykonania | Reczne compliance po fakcie |
-| **Warstwa ekonomiki** | Mierzalny koszt jednostkowy i wartosc kliencka | Skalowanie oparte na dowodach | Wydatki na innowacje bez trwalego zwrotu |
+| **Przepływ pracy** | Tarcie klienta dyktuje projekt produktu | Czysty biznes case, uwolnienie kapitału, natychmiastowa adopcja | Platformy tokenizacji bez użytkowników — teatr innowacji na slajdzie zarządu |
+| **Dane** | Payloady ISO 20022 powiązane z hashami transakcji on-chain | Straight-through processing, dowody klasy audytowej, płatna analityka | Złe dane szybciej przenoszone — więcej łamań uzgodnień, nie mniej |
+| **Tor płatniczy** | Ruting przez RTGS, RLN, Canton, prywatne DLT, tokenizowaną gotówkę | Efektywność kapitałowa, finalność na żądanie, niższy koszt finansowania | Rozrost kanałów, fragmentacja płynności, kontrole zduplikowane pięć razy |
+| **Kontrola** | Policy-as-code, tożsamość z wiedzą zerową, atomowa zgodność | Ryzyko mitygowane w momencie transakcji — bez niespodzianki T+2 | Manualne dochodzenia dni później — i kary, które za nimi idą |
+| **Ekonomika** | Weryfikowalne redukcje kosztu jednostkowego powiązane z wynikami klienta | Skalowanie oparte na dowodach, ROE, które przeżyje audyt | Utopione wydatki na innowacje, brak trwałego zwrotu, zarząd odpisuje |
 
-## Co to oznacza wedlug typu banku
+## Co to znaczy dla poszczególnych typów instytucji
 
-### Banki globalne
+> *„Decydującym pytaniem jest dyscyplina projektowa: które dane, tory, kontrole, odpowiedzialności i procesy klienckie przynależą do siebie.”*
 
-Banki globalne powinny zbudowac orkiestracje na poziomie platformy, aby kazdy rynek, szyna, token i zdolnosc AI nie stawaly sie osobnym modelem operacyjnym.
+### Banki tier-1
+
+Zbudujcie warstwę orkiestracji. Tier-1 nie mogą pozwolić, by każde nowe tokenizowane aktywo czy nowa sieć DLT rodziły dedykowany model operacyjny. Rolą jest być regulowanym mostem między płynnością off-chain a on-chain — dostarczając opakowanie prawne, bilans i relację nadzorczą, które sprawiają, że piaskownica działa dla reszty rynku. Stójcie przy bramie, pobierajcie za dostęp, brońcie franczyzy.
 
 ### Banki regionalne
 
-Banki regionalne powinny skupic sie na zastosowaniach, w ktorych zaufanie, znajomosc rynku lokalnego i prostsza integracja biora gore nad skala: widocznosc skarbcowa, prewencja fraudow, platnosci Open Banking i regulowane uslugi pieniadza cyfrowego.
+Przestańcie budować własne tory. Przewagą jest zaufanie i wiedza lokalna. Oferujcie treasurerom korporacyjnym widoczność, kontrole fraudowe i niezawodny dostęp do pul cyfrowej płynności tier-one, których sami nie zbudują. Strategią jest integracja, nie wynalazek.
 
-### Fintechy i PSP
+### Fintechy i dostawcy infrastruktury rynkowej
 
-Fintechy powinny redukowac zlozonosc dla bankow, a nie dokladac kolejna odizolowana szyne. Najlepsze propozycje przyniosa orkiestracje, dowody compliance lub inteligencje danych.
+Fintechy, które wygrają w 2026, nie będą tymi prowadzącymi kolejną autonomiczną sieć. Będą tymi, które dostarczą warstwę integracji — silniki orkiestracji, oracle, narzędzia dowodzenia zgodności — która redukuje złożoność dla banków. Dokładajcie do stosu banku, nie konkurujcie z nim. Rynek wypowiedział się o autonomicznych sieciach.
 
-### Skarbnicy korporacyjni
+### Treasurerzy korporacyjni
 
-Skarbnicy powinni domagac sie mierzalnych ulepszen: mniejszej liczby napraw platnosci, lepszej widocznosci plynnosci, bogatszych danych uzgodnieniowych, szybszego rozliczenia i mocniejszej kontroli nad zautomatyzowanymi decyzjami.
+Przestańcie akceptować raportowanie na koniec dnia. Żądajcie bankowości programowalnej: automatycznych zamiotów, widoczności płynności w czasie rzeczywistym, natychmiastowego wdrożenia zabezpieczeń, danych uzgadniania klasy ISO 20022. Platformy, które to dostarczają, już istnieją. Dźwignią jest groźba przeniesienia przepływu pracy.
 
-## Wnioski
+## Co dzieje się dalej
 
-Hurtowe rynki cyfrowe w UK to ostatecznie pytanie o architekture. Zwyciezcami beda nie ci, ktorzy maja najwiecej pilotow ani najglosniejszy jezyk innowacji. Beda nimi instytucje laczace procesy klienckie, jakosc danych, orkiestracje szyn, wbudowane compliance i ekonomike jednostkowa w spojny model operacyjny.
+Rola koordynatora jest funkcją wymuszającą. DSS to żywy reżim. Tokenizowane gilty rozliczają się w testach, z produkcją na bliskim horyzoncie. Każdy element działa osobno. Pytanie 2026 brzmi, które instytucje złożą je w jeden model operacyjny — a które spędzą kolejny rok broniąc legacy stack na kwartalnej konferencji wynikowej.
 
-## Czesto zadawane pytania
+Banki, które wygrają, nie będą tymi z najgłośniejszym marketingiem blockchainowym. Będą tymi, których architektura jest niewidoczna — przepływ pracy, dane, tor płatniczy, kontrola i ekonomika splatają się tak czysto, że klient nigdy nie widzi szwów. To jest standard, z którym londyńskie City teraz konkuruje. Singapur, Szwajcaria i Frankfurt patrzą. Zauważyli.
 
-**Dlaczego temat jest pilny w 2026 roku?**
+## Najczęściej zadawane pytania
 
-Bo zbiegly sie odpowiednia infrastruktura, regulacje i sygnaly popytu klienckiego. To, co bylo opcjonalnym eksperymentem, staje sie czescia modelu operacyjnego banku.
+**Czym jest Digital Securities Sandbox (DSS) i dlaczego ma znaczenie?**
 
-**Jakie jest najwieksze ryzyko wdrozenia?**
+DSS to wspólny reżim FCA i Bank of England, który pozwala firmom emitować, handlować i rozliczać prawdziwe cyfrowe papiery wartościowe — z tokenizowanymi giltami włącznie — pod skrojonymi zwolnieniami z CSDR i istniejących reguł rozliczeniowych. Ma znaczenie, bo brytyjskie firmy mogą prowadzić żywą infrastrukturę hurtowego rynku opartą na DLT z osłoną regulacyjną, a nie jako jednorazowe PoC.
 
-Najwiekszym ryzykiem jest fragmentacja: odrebne zespoly buduja odrebne piloty, kazdy z innymi danymi, kontrolami, nadzorem i ekonomika.
+**Dlaczego tokenizowane gilty konkretnie, a nie obligacje korporacyjne czy akcje?**
 
-**Co bank powinien zbudowac jako pierwsze?**
+Gilty są najgłębszym, najbardziej regulowanym aktywem w systemie funta szterlinga — zabezpieczeniem, które Bank przyjmuje, kręgosłupem LCR, instrumentem dopasowania pasywów dla funduszy emerytalnych. Tokenizacja testuje cały stos na najtrudniejszej klasie aktywów. Wszystko inne jest dla porównania łatwiejsze.
 
-Bank powinien zaczac od procesu o mierzalnej wartosci: szybszego rozliczenia, nizszego kosztu uzgadniania, mniejszej liczby sledztw, lepszej prewencji fraudow lub lepszej widocznosci plynnosci.
+**Jaka jest różnica między RLN, Canton i prywatnym DLT banku?**
 
-**Jak mierzyc sukces?**
+Regulated Liability Network to model współdzielonej księgi dla tokenizowanego pieniądza banków komercyjnych emitowanego przez wiele regulowanych instytucji. Canton to DLT z uprawnieniami, chroniący prywatność, szeroko używany na rynkach kapitałowych. Prywatne DLT banków to sieci jednoinstytucjonalne. Warstwa orkiestracji 2026 rutuje przez wszystkie trzy w zależności od przepływu pracy.
 
-Sukces nalezy mierzyc ekonomika jednostkowa, dowodami odpornosci, jakoscia danych, adopcja klientow, redukcja ryzyka operacyjnego oraz poprawa plynnosci lub kapitalu obrotowego.
+**Jak atomowa dostawa za płatność (DvP) eliminuje ryzyko principal?**
+
+Okno rozliczeniowe inne niż DvP ma jedną nogę transakcji rozliczającą się przed drugą. Atomowa DvP używa smart kontraktu, by obie nogi wykonały się jako jedna niepodzielna operacja — albo obie się rozliczają, albo żadna. Default kontrahenta w połowie okna nie może już zostawić jednej strony narażonej, bo okno nie istnieje.
+
+**Co „policy-as-code” oznacza w praktyce?**
+
+Reguły zgodności — screening sankcji, walidacja KYC, limity pozycji, ograniczenia jurysdykcyjne — zakodowane bezpośrednio w smart kontrakcie lub warstwie rozliczeniowej i wykonywane w momencie transakcji. Wynikiem jest kryptograficzny ślad audytowy, nie log bazodanowy, któremu regulator musi zaufać.
+
+**Jak bank powinien mierzyć ROI pilotażu DSS?**
+
+Punkty bazowe zaoszczędzone na finansowaniu zabezpieczeń. Redukcja bufora płynności intraday. Wskaźnik niepowodzeń rozliczenia. Przesunięte FTE uzgadniania. Czas cyklu onboardingu kontrahenta. To jest lista. Etaty, prasa, slajdy z prezentacji zarządu — to nie ROI, nigdy nim nie były.
 
 ## Bibliografia
 
-- GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
-- Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
+- GOV.UK, (2026). [Brytyjski fintech wsparty technologią płatności przyszłości ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "Brytyjski fintech wsparty").
+- Bank of England, (2026). [Digital Securities Sandbox ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox").
+- FCA, (2026). [Digital Securities Sandbox ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA Digital Securities Sandbox").
+- Association of Corporate Treasurers, (2026). [Aktualizacja sektora płatności — maj 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Aktualizacja sektora płatności").
+- Global Government Finance, (2026). [Koordynator hurtowych rynków cyfrowych UK ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "Koordynator hurtowych rynków cyfrowych UK").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="O autorze"><img alt="Portret Sebastiena Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist piszacy o stosowanej AI, infrastrukturze platniczej, pieniadzu tokenizowanym, ISO 20022, bezpieczenstwie post-kwantowym, cloud-native uslugach finansowych i regulowanych rynkach cyfrowych.</span><span class="author-credentials">Ponad 20 lat doswiadczenia w HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Pelny profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="O autorze"><img alt="Portret Sebastiena Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist piszący o stosowanej AI, migracji ISO 20022, kryptografii post-kwantowej dla usług finansowych i strukturalnej transformacji płatności hurtowych.</span><span class="author-credentials">Ponad 20 lat doświadczenia w HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Pełny profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Ostatnia weryfikacja <time datetime="2026-05-30">2026-05-30</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Powiązane lektury</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026" class="related-media" aria-label="Aktywa cyfrowe w 2026: transformacja infrastruktury, której banki nie mogą odkładać" tabindex="-1"><img alt="Diagram infrastruktury aktywów cyfrowych pokazujący tokenizowane aktywa świata realnego, stablecoiny, tokenizowane depozyty, depozyt, rozliczenie, mobilność zabezpieczeń i warstwy platform bankowych" src="https://cloudcdn.pro/stocks/images/corporate-finance.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026">Aktywa cyfrowe w 2026: transformacja infrastruktury, której banki nie mogą odkładać</a></h3><p><time datetime="2026-05-28">2026-05-28</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026" class="related-media" aria-label="Programowalna płynność w 2026: AI, tokenizowane depozyty i treasury w czasie rzeczywistym" tabindex="-1"><img alt="Diagram architektury programowalnej płynności pokazujący systemy treasury, prognozowanie AI, tokenizowane depozyty, tory czasu rzeczywistego, stablecoiny, konta wirtualne, FX i mobilność zabezpieczeń" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026">Programowalna płynność w 2026: AI, tokenizowane depozyty i treasury w czasie rzeczywistym</a></h3><p><time datetime="2026-05-25">2026-05-25</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026" class="related-media" aria-label="UK Payments Forward Plan w 2026: stablecoiny, Open Banking, tokenizowane depozyty i płatności agentowe" tabindex="-1"><img alt="Diagram modernizacji płatności w UK pokazujący stablecoiny, tokenizowane depozyty, open banking, agentów AI, regulacje FCA, konsolidację PSR i hurtowe rynki cyfrowe" src="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026">UK Payments Forward Plan w 2026: stablecoiny, Open Banking, tokenizowane depozyty i płatności agentowe</a></h3><p><time datetime="2026-05-24">2026-05-24</time></p></footer></article>
+</div>
+</aside>
 <!-- enrich-end -->
+

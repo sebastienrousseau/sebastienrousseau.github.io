@@ -6,14 +6,14 @@
     <description>Artiklar på svenska: tillämpad AI, ISO 20022-betalningar, postkvantkryptografi och transformationen av grossistbetalningar.</description>
     <atom:link href="https://sebastienrousseau.com/sv/rss.xml" rel="self" type="application/rss+xml"/>
     <language>sv-SE</language>
-    <lastBuildDate>Sat, 30 May 2026 06:06:10 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 10:01:18 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alla rättigheter förbehållna.</copyright>
     <item>
       <title>Digitala tillgångar 2026: infrastrukturövergången bankerna inte kan skjuta upp</title>
       <link>https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>Digitala tillgångar är inte längre en innovationssatsning. De är en arkitekturfråga för avveckling, förvaring och balansräkning. Bankernas strategiska uppgift är infrastrukturdesign under strukturell osäkerhet.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Sat, 30 May 2026 06:06:10 +0000</pubDate>
+      <pubDate>Sat, 30 May 2026 10:01:18 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>digitala tillgångar 2026</category>
@@ -30,7 +30,7 @@
     <item>
       <title>Digitala grossistmarknader i Storbritannien: tokeniserade gilts och avveckling</title>
       <link>https://sebastienrousseau.com/sv/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
-      <description>Storbritanniens Wholesale Digital Markets Champion gör tokeniserade gilts och DLT-avveckling till ett nationellt konkurrenskraftsprojekt för City of London 2026.</description>
+      <description>Storbritanniens Wholesale Digital Markets Champion gör tokeniserade gilts och DLT-avveckling till ett nationellt konkurrenskraftsprojekt 2026.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
       <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
@@ -38,12 +38,12 @@
       <category>digitala grossistmarknader Storbritannien 2026</category>
       <category>Wholesale Digital Markets Champion</category>
       <category>tokeniserade gilts</category>
-      <category>DLT-avveckling</category>
-      <category>BoE DSS</category>
-      <category>Project Guardian</category>
-      <category>SDX</category>
-      <category>Project Agorá</category>
-      <category>City of London</category>
+      <category>tokeniserad grossistfinansiering</category>
+      <category>DSS</category>
+      <category>intradagsrepo</category>
+      <category>atomär DvP</category>
+      <category>City i London</category>
+      <category>avveckling</category>
     </item>
     <item>
       <title>ISO 20022 efter migreringen: betaldata som bankprodukter 2026</title>
