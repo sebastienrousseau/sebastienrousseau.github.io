@@ -2852,6 +2852,33 @@ def test_dedupe_sitemap_no_op_when_sitemap_absent(tmp_path):
     assert dedupe_sitemap_index_html(tmp_path / "sitemap.xml") == 0
 
 
+def test_dedupe_sitemap_tolerates_malformed_url_block_without_loc(tmp_path):
+    """Defensive: a <url>…</url> block with no <loc> inside (corrupt
+    sitemap fragment) is left in place rather than crashing."""
+    from postbuild_lib.output import dedupe_sitemap_index_html
+    sm = tmp_path / "sitemap.xml"
+    sm.write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        # First block has no <loc> — must not crash the patcher.
+        "<url>\n  <lastmod>2026-05-30</lastmod>\n</url>\n"
+        # Second block is a normal twin pair so the pass has real work to do.
+        + _url_block("https://sebastienrousseau.com/foo/")
+        + "\n"
+        + _url_block("https://sebastienrousseau.com/foo/index.html")
+        + "\n</urlset>\n",
+        encoding="utf-8",
+    )
+    n = dedupe_sitemap_index_html(sm)
+    assert n == 1  # only the index.html twin removed; malformed block untouched
+    out = sm.read_text(encoding="utf-8")
+    # Malformed block survived (still has its lastmod).
+    assert "<url>\n  <lastmod>2026-05-30</lastmod>\n</url>" in out
+    # Twin pair collapsed to the pretty form.
+    assert "<loc>https://sebastienrousseau.com/foo/</loc>" in out
+    assert "index.html" not in out
+
+
 def test_dedupe_sitemap_handles_mixed_at_scale(tmp_path):
     """Realistic-shape sitemap with a mix of twinned dupes and orphans
     converges to all-pretty in one pass."""
