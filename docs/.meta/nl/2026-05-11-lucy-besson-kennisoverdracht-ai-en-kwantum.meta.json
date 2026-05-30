@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Portret van Lucy Besson",
-  "language": "nl-NL",
-  "date": "May 11, 2026",
-  "description": "Een reflectie op kennisoverdracht in AI en post-kwantumcryptografie via het mentor-mentee-traject met Lucy Besson.",
-  "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
   "keywords": "Lucy Besson, kennisoverdracht, AI, kwantum, mentorschap, banking",
   "title": "Lucy Besson — kennisoverdracht in AI en kwantum",
-  "subtitle": "Lessen uit een mentor-mentee-traject over AI en post-kwantumcryptografie",
-  "locale": "nl_NL"
+  "banner_alt": "Portret van Lucy Besson",
+  "date": "May 11, 2026",
+  "description": "Een reflectie op kennisoverdracht in AI en post-kwantumcryptografie via het mentor-mentee-traject met Lucy Besson.",
+  "language": "nl-NL",
+  "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
+  "locale": "nl_NL",
+  "subtitle": "Lessen uit een mentor-mentee-traject over AI en post-kwantumcryptografie"
 }

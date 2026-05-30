@@ -721,6 +721,9 @@ def augment_sitemap_with_rendered_pages(public: Path) -> int:
     sitemap. Without this pass, ``test_sitemap_completeness`` fails on
     every new cluster.
 
+    Emits the canonical pretty URL (``/<slug>/``) — the ``/index.html``
+    form is a search-engine duplicate that hurts crawl budget.
+
     Returns the count of `<url>` entries appended."""
     sitemap = public / "sitemap.xml"
     if not sitemap.is_file():
@@ -731,15 +734,78 @@ def augment_sitemap_with_rendered_pages(public: Path) -> int:
         return 0
     m = re.search(r'<lastmod>(\d{4}-\d{2}-\d{2})</lastmod>', text)
     today = m.group(1) if m else ""
-    # `additions` already ends with `/`, so append index.html with no sep.
+    # `additions` already ends with `/` — the canonical pretty URL.
     block = "".join(
         f"\n<url>\n  <changefreq>weekly</changefreq>\n"
-        f"  <lastmod>{today}</lastmod>\n  <loc>{u}index.html</loc>\n</url>"
+        f"  <lastmod>{today}</lastmod>\n  <loc>{u}</loc>\n</url>"
         for u in additions
     )
     new_text = re.sub(r'</urlset>\s*$', block + "\n</urlset>\n", text, count=1)
     sitemap.write_text(new_text, encoding="utf-8")
     return len(additions)
+
+
+_URL_BLOCK_FOR_DEDUP_RE = re.compile(r'<url>[\s\S]*?</url>', re.MULTILINE)
+
+
+def dedupe_sitemap_index_html(sitemap_path: Path) -> int:
+    """Normalise every ``<loc>`` in the sitemap to the canonical pretty
+    URL form (``/<path>/``), dropping the legacy ``/<path>/index.html``
+    variant.
+
+    Why this exists: the upstream SSG ships every page as
+    ``<loc>...slug/index.html</loc>`` with a generic homepage-stub
+    ``<lastmod>``. Postbuild's ``_splice_fr_urls`` adds the canonical
+    pretty URL (``/<slug>/``) with the article's actual last-reviewed
+    date. The two coexist until this pass cleans them up — Google
+    treats them as separate URLs and the stale lastmod tells the
+    crawler the page hasn't changed since 2024.
+
+    Two cases:
+
+    - **Twin exists** (both ``/<path>/`` and ``/<path>/index.html`` are
+      present): drop the ``/index.html`` block. The pretty form already
+      carries the right ``lastmod`` and ``priority``.
+    - **Orphan** (only ``/<path>/index.html`` is present): rewrite its
+      ``<loc>`` to the pretty form in place. Preserves the block's
+      other metadata (``lastmod``, ``changefreq``, ``priority``).
+
+    Returns the count of ``<url>`` blocks rewritten or removed."""
+    if not sitemap_path.is_file():
+        return 0
+    text = sitemap_path.read_text(encoding="utf-8")
+    pretty_urls: set[str] = set()
+    for m in _LOC_RE.finditer(text):
+        loc = m.group(1).strip()
+        if loc.endswith("/") and not loc.endswith("/index.html"):
+            pretty_urls.add(loc)
+    touched = 0
+
+    def _patch(m: re.Match[str]) -> str:
+        nonlocal touched
+        block = m.group(0)
+        loc_m = _LOC_RE.search(block)
+        if not loc_m:
+            return block
+        loc = loc_m.group(1).strip()
+        if not loc.endswith("/index.html"):
+            return block
+        pretty = loc[: -len("index.html")]
+        if pretty in pretty_urls:
+            # Twin exists — drop the duplicate /index.html block entirely.
+            touched += 1
+            return ""
+        # Orphan — rewrite this block's <loc> to the pretty URL in place.
+        touched += 1
+        pretty_urls.add(pretty)
+        return block.replace(f"<loc>{loc}</loc>", f"<loc>{pretty}</loc>", 1)
+
+    new_text = _URL_BLOCK_FOR_DEDUP_RE.sub(_patch, text)
+    # Collapse the blank lines left behind by dropped blocks.
+    new_text = re.sub(r"\n{3,}", "\n\n", new_text)
+    if touched > 0:
+        sitemap_path.write_text(new_text, encoding="utf-8")
+    return touched
 
 
 _NEWS_TITLE_RE = re.compile(r'(<news:title>)([\s\S]*?)(</news:title>)', re.IGNORECASE)

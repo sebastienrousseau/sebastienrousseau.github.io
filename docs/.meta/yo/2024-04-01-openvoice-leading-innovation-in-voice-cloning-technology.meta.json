@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
-  "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.",
   "keywords": "OpenVoice, Ìmọ̀ Ìdàkọ Ohùn, AI Ọ̀rọ̀ Àgbékalẹ̀, Ìdàkọ Ohùn Open-Source, Ìṣọpọ̀ Ohùn Gba Èdè, Ìdàkọ Ohùn Lẹ́sẹ̀kẹsẹ̀, Ìdarí Ìpapọ̀ Ohùn, Ìmọ̀ Ohùn fún Àánú, Ohùn fún Iléeṣẹ́ Eré Idaraya, AI Ohùn fún Iṣẹ́ Onibára",
-  "subtitle": "Ohun èlò Open-Source Tuntun fún Ìdàkọ Ohùn",
-  "date": "Apr 01, 2024",
-  "title": "OpenVoice: Leading Innovation in Voice Cloning Technology",
-  "language": "yo-NG",
+  "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.",
   "locale": "yo_NG",
-  "banner_alt": "Àmì pẹ̀lú gradient dídán tí ó bo àwọn awòrán tí a tún ṣe"
+  "date": "Apr 01, 2024",
+  "subtitle": "Ohun èlò Open-Source Tuntun fún Ìdàkọ Ohùn",
+  "language": "yo-NG",
+  "banner_alt": "Àmì pẹ̀lú gradient dídán tí ó bo àwọn awòrán tí a tún ṣe",
+  "title": "OpenVoice: Leading Innovation in Voice Cloning Technology",
+  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp"
 }
