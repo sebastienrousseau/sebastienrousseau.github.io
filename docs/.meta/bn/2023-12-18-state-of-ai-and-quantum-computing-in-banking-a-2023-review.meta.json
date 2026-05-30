@@ -1,11 +1,11 @@
 {
-  "locale": "bn_BD",
-  "banner_alt": "ব্যাংকিংয়ে AI ও Quantum Computing-এর অবস্থান: ২০২৩ সালের পর্যালোচনা",
   "language": "bn-BD",
   "description": "২০২৩ সালের প্রযুক্তি পরিদর্শন: AI ও Quantum Computing ব্যাংকিং খাতে বিপ্লব, ওপেন-সোর্স মডেলের উত্থান এবং বিকশিত নিয়মকানুন ও প্রশাসন",
-  "date": "Dec 18, 2023",
-  "title": "State of AI and Quantum Computing in Banking: A 2023 Review",
+  "banner_alt": "ব্যাংকিংয়ে AI ও Quantum Computing-এর অবস্থান: ২০২৩ সালের পর্যালোচনা",
   "keywords": "ব্যাংকিংয়ে AI, Quantum Computing, Financial Technology, ওপেন-সোর্স AI, ঝুঁকি ব্যবস্থাপনা, Quantum Security, AI নিয়ন্ত্রণ, AI নৈতিকতা, AI গভর্ন্যান্স, ব্যাংকিং উদ্ভাবন",
+  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
   "subtitle": "ব্যাংকিংয়ের ভবিষ্যৎ গড়ে তোলা: AI, Quantum Computing, Open Source মডেল এবং নিয়ন্ত্রক পরিবেশ",
-  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
+  "title": "State of AI and Quantum Computing in Banking: A 2023 Review",
+  "locale": "bn_BD",
+  "date": "Dec 18, 2023"
 }

@@ -1,11 +1,11 @@
 {
-  "keywords": "perjalanan teknologi pribadi, penemuan Rust, eksplorasi AI, Quantum Computing, perpaduan seni dan fotografi, Alien Studio, pembuatan seni digital, teknologi dalam seni, fotografi inovatif, penemuan kembali artistik",
   "banner_alt": "Inspirasi senja, tatapan tenang; keindahan dalam keheningan",
-  "locale": "id_ID",
-  "date": "Jan 15, 2024",
-  "title": "[ID DRAFT] Alien Studio: My Tech-to Art Journey in Photography",
-  "description": "Ikuti perjalanan pribadi saya dari Rust, AI, dan Quantum Computing hingga mendefinisikan ulang seni dan fotografi melalui Alien Studio.",
-  "language": "id-ID",
+  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
   "subtitle": "Awal dari Sebuah Odisea Teknologi",
-  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp"
+  "keywords": "perjalanan teknologi pribadi, penemuan Rust, eksplorasi AI, Quantum Computing, perpaduan seni dan fotografi, Alien Studio, pembuatan seni digital, teknologi dalam seni, fotografi inovatif, penemuan kembali artistik",
+  "title": "[ID DRAFT] Alien Studio: My Tech-to Art Journey in Photography",
+  "date": "Jan 15, 2024",
+  "locale": "id_ID",
+  "description": "Ikuti perjalanan pribadi saya dari Rust, AI, dan Quantum Computing hingga mendefinisikan ulang seni dan fotografi melalui Alien Studio.",
+  "language": "id-ID"
 }

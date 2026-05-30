@@ -105,21 +105,33 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html" title="ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026">
-<img alt="ISO 20022 payment data product diagram showing structured addresses, purpose codes, reconciliation, fraud detection, liquidity forecasting, sanctions screening, and analytics products" src="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html" title="Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role">
+<img alt="UK wholesale digital markets diagram showing tokenised gilts, settlement, digital assets, tokenised deposits, regulatory coordination, and capital markets infrastructure" src="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Iso 20022 · Structured Address · Cbpr+</span>
-<h3><a href="/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html" title="ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026">ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-29">May 29, 2026</time> · Sebastien Rousseau</p>
-<p>ISO 20022 after migration is not a project closeout — it's the start of a data-product opportunity. Structured addresses, purpose codes, invoice details, and rich status events become reconciliation, fraud, liquidity, and compliance products. The 2026 question is design discipline: which payment data carries which clie</p>
-<p><a class="pill ghost" href="/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html" title="ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026">Read the full story</a></p>
+<span class="newsroom-eyebrow">Wholesale Digital Markets · Tokenised Gilts · Chris Woolard</span>
+<h3><a href="/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html" title="Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role">Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-30">May 30, 2026</time> · Sebastien Rousseau</p>
+<p>The UK Wholesale Digital Markets Champion role makes tokenised gilts, DLT-based settlement, and digital wholesale finance a national competitiveness project. The 2026 strategic question for banks is design discipline — which tokenised assets sit on which platform, how settlement risk is evidenced, and how to defend the</p>
+<p><a class="pill ghost" href="/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html" title="Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html" title="ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026">
+<img alt="ISO 20022 payment data product diagram showing structured addresses, purpose codes, reconciliation, fraud detection, liquidity forecasting, sanctions screening, and analytics products" src="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Iso 20022 · Structured Address · Cbpr+</span>
+<h3><a href="/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html" title="ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026">ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-29">May 29, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">ISO 20022 after migration is not a project closeout — it's the start of a data-product opportunity. Structured addresses, purpose codes, invoice details, and rich status events become reconciliation, fraud, liquidity, and compliance products. The 2026 question is design discipline: which payment data carries which clie</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html" title="DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks">

@@ -1,11 +1,11 @@
 {
-  "subtitle": "AI agentic ti kọjá lati ìdánwò sí ìṣẹ́ gidi. 70% àwọn banki ń lo rẹ̀; ọ̀kan lára márùún ló ní ìṣàkóso tó pé. Àwọn ọ̀tá ń ṣiṣẹ́ ní iyara ẹ̀rọ, ogún COBOL wà látọjọ batch-processing ti 1960s, àkókò EU AI Act sì wà ní ọ̀sẹ̀ 12.",
-  "title": "Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It",
-  "language": "yo-NG",
-  "date": "May 17, 2026",
-  "keywords": "ẹ̀rọ agentik, ìdàgbàsókè spec-driven, banki, iṣẹ́ owó, ìṣàkóso AI, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001, ìtúnṣe COBOL, mainframe, vibe coding, vibe hacking, àwọn aṣojú aláìlẹ́gbẹ́, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, ìṣàkóso ewu ẹ̀gbẹ́-kẹta, TPRM, ewu olùpèsè, cryptography post-quantum, pẹpẹ ìṣàkóso aṣojú, FCA, SM&CR, ètò ìgbésẹ̀ ọ̀sẹ̀ 12, Sebastien Rousseau",
   "banner_alt": "Àwòrán ìgbékalẹ̀ ẹ̀rọ agentik fún àwọn banki — àwọn aṣojú AI spec-driven, pẹpẹ ìṣàkóso, ipilẹ̀ tó ní ààbò kuántọ́ọ̀mù, àti àwọn ìṣàn ìtúnṣe mainframe àtijọ́",
-  "locale": "yo_NG",
+  "subtitle": "AI agentic ti kọjá lati ìdánwò sí ìṣẹ́ gidi. 70% àwọn banki ń lo rẹ̀; ọ̀kan lára márùún ló ní ìṣàkóso tó pé. Àwọn ọ̀tá ń ṣiṣẹ́ ní iyara ẹ̀rọ, ogún COBOL wà látọjọ batch-processing ti 1960s, àkókò EU AI Act sì wà ní ọ̀sẹ̀ 12.",
+  "keywords": "ẹ̀rọ agentik, ìdàgbàsókè spec-driven, banki, iṣẹ́ owó, ìṣàkóso AI, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001, ìtúnṣe COBOL, mainframe, vibe coding, vibe hacking, àwọn aṣojú aláìlẹ́gbẹ́, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, ìṣàkóso ewu ẹ̀gbẹ́-kẹta, TPRM, ewu olùpèsè, cryptography post-quantum, pẹpẹ ìṣàkóso aṣojú, FCA, SM&CR, ètò ìgbésẹ̀ ọ̀sẹ̀ 12, Sebastien Rousseau",
   "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
+  "date": "May 17, 2026",
+  "locale": "yo_NG",
+  "language": "yo-NG",
+  "title": "Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It",
   "description": "AI agentic ti kọjá sí ìṣẹ́ gidi nínú àwọn banki àgbáyé. 70% ń lo rẹ̀; ọ̀kan lára márùún ní ìṣàkóso tó pé. Àwọn ọ̀tá ń ṣiṣẹ́ ní iyara ẹ̀rọ; EU AI Act sì wà ní ọ̀sẹ̀ 12."
 }

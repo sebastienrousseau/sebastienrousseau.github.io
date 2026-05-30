@@ -6,14 +6,14 @@
     <description>Mga artikulo sa Filipino: applied AI, ISO 20022 payments, post-quantum cryptography at wholesale-payments transformation.</description>
     <atom:link href="https://sebastienrousseau.com/fil/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fil-PH</language>
-    <lastBuildDate>Fri, 29 May 2026 21:41:13 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 06:06:10 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Lahat ng karapatan ay nakalaan.</copyright>
     <item>
       <title>Digital Assets sa 2026: Transisyon ng Imprastraktura na Hindi Dapat Antalahin</title>
       <link>https://sebastienrousseau.com/fil/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>Hindi na inobasyon ang digital assets, kundi tanong ng arkitektura ng settlement, custody, at balance sheet. Disenyo ng imprastraktura sa ilalim ng istrukturang kawalang-katiyakan ang estratehikong gawain ng bangko.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Fri, 29 May 2026 21:41:13 +0000</pubDate>
+      <pubDate>Sat, 30 May 2026 06:06:10 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>digital assets 2026</category>
@@ -27,6 +27,28 @@
       <category>mobility ng kolateral</category>
       <category>programmable money</category>
       <category>estratehiya ng bangko sa digital assets</category>
+    </item>
+    <item>
+      <title>UK Wholesale Digital Markets: Tokenized Gilts, DLT Settlement, Champion</title>
+      <link>https://sebastienrousseau.com/fil/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
+      <description>Ginagawang pambansang proyekto ng kakayahang makipagkumpitensya ng UK Wholesale Digital Markets Champion ang tokenized wholesale finance, gilts, at DLT settlement.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>UK wholesale digital markets 2026</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>tokenized gilts</category>
+      <category>UK gilts</category>
+      <category>DLT settlement</category>
+      <category>BoE DSS</category>
+      <category>Project Guardian</category>
+      <category>SDX</category>
+      <category>Project Agorá</category>
+      <category>Bank of England</category>
+      <category>HM Treasury</category>
+      <category>City of London</category>
+      <category>kakayahang makipagkumpitensya</category>
     </item>
     <item>
       <title>ISO 20022 Pagkatapos ng Migration: Payment Data tungo sa Produkto ng Bangko 2026</title>

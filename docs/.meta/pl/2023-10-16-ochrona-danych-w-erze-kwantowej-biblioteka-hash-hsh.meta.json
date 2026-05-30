@@ -1,11 +1,11 @@
 {
-  "locale": "pl_PL",
-  "description": "HSH to biblioteka Rust implementująca bezpieczne algorytmy hashujące i digest do szyfrowania i weryfikacji haseł, zaprojektowana z postawą odporności na kwanty.",
-  "banner_alt": "Reprezentacja kryptografii kwantowej i algorytmów hashujących",
-  "subtitle": "Bezpieczne algorytmy hashujące dla ery post-PQC",
+  "date": "Oct 16, 2023",
+  "language": "pl-PL",
   "keywords": "HSH, hash, kryptografia, Rust, kwanty, post-kwantowe, bezpieczeństwo, hasła",
   "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
+  "locale": "pl_PL",
+  "banner_alt": "Reprezentacja kryptografii kwantowej i algorytmów hashujących",
   "title": "Ochrona danych w erze kwantowej: biblioteka hash HSH",
-  "language": "pl-PL",
-  "date": "Oct 16, 2023"
+  "description": "HSH to biblioteka Rust implementująca bezpieczne algorytmy hashujące i digest do szyfrowania i weryfikacji haseł, zaprojektowana z postawą odporności na kwanty.",
+  "subtitle": "Bezpieczne algorytmy hashujące dla ery post-PQC"
 }
