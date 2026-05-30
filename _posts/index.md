@@ -284,7 +284,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html" title="AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026">
-<img alt="AI payments operating system diagram showing fraud scoring, multi-rail routing, liquidity forecasting, ISO 20022 data, compliance screening, and exception repair" src="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="AI payments operating system diagram showing fraud scoring, multi-rail routing, liquidity forecasting, ISO 20022 data, compliance screening, and exception repair" src="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI Payments · Fraud Prevention · Routing</span>

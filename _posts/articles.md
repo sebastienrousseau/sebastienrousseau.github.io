@@ -109,7 +109,7 @@ site_software: "Static Site Generator, Rust"
 <img alt="UK wholesale digital markets diagram showing tokenised gilts, settlement, digital assets, tokenised deposits, regulatory coordination, and capital markets infrastructure" src="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Wholesale Digital Markets · Tokenised Gilts · Chris Woolard</span>
+<span class="newsroom-eyebrow">Digital Securities Sandbox · Tokenised Gilts · Atomic Dvp</span>
 <h3><a href="/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html" title="Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role">Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-30">May 30, 2026</time> · Sebastien Rousseau</p>
 <p>The UK Wholesale Digital Markets Champion role makes tokenised gilts, DLT-based settlement, and digital wholesale finance a national competitiveness project. The 2026 strategic question for banks is design discipline — which tokenised assets sit on which platform, how settlement risk is evidenced, and how to defend the</p>
@@ -159,7 +159,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html" title="AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026">
-<img alt="AI payments operating system diagram showing fraud scoring, multi-rail routing, liquidity forecasting, ISO 20022 data, compliance screening, and exception repair" src="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="AI payments operating system diagram showing fraud scoring, multi-rail routing, liquidity forecasting, ISO 20022 data, compliance screening, and exception repair" src="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Ai Payments · Fraud Prevention · Routing</span>

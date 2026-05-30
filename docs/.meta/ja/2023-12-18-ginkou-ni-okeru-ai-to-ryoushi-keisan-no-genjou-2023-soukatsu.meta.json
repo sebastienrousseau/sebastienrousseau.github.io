@@ -1,12 +1,12 @@
 {
-  "banner_alt": "ロンドンの金融街の夜景",
-  "date": "December 18, 2023",
-  "title": "銀行における AI と量子計算の現状:2023 年総括",
-  "language": "ja-JP",
-  "description": "2023 年における AI と量子計算が銀行業務にどう影響しているかの総括。最先端の状況と今後の展望。",
-  "locale": "ja_JP",
+  "banner": "https://cloudcdn.pro/stocks/images/jc-gellidon-cQ3BneKt5g0-unsplash.webp",
   "keywords": "AI, 量子計算, 銀行, フィンテック, リスク管理, アルゴリズム取引, 2023, レビュー",
-  "subtitle": "AI と量子計算が銀行と金融サービスをどのように変革しているか",
+  "language": "ja-JP",
+  "locale": "ja_JP",
   "last_reviewed": "2026-05-11",
-  "banner": "https://cloudcdn.pro/stocks/images/jc-gellidon-cQ3BneKt5g0-unsplash.webp"
+  "subtitle": "AI と量子計算が銀行と金融サービスをどのように変革しているか",
+  "banner_alt": "ロンドンの金融街の夜景",
+  "description": "2023 年における AI と量子計算が銀行業務にどう影響しているかの総括。最先端の状況と今後の展望。",
+  "title": "銀行における AI と量子計算の現状:2023 年総括",
+  "date": "December 18, 2023"
 }

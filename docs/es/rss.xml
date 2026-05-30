@@ -6,14 +6,14 @@
     <description>Artículos en español: IA aplicada, pagos ISO 20022, criptografía postcuántica y transformación de los pagos mayoristas.</description>
     <atom:link href="https://sebastienrousseau.com/es/rss.xml" rel="self" type="application/rss+xml"/>
     <language>es-ES</language>
-    <lastBuildDate>Sat, 30 May 2026 10:01:18 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 12:32:03 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Todos los derechos reservados.</copyright>
     <item>
       <title>Activos digitales en 2026: la transición de infraestructura que la banca no puede aplazar</title>
       <link>https://sebastienrousseau.com/es/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>Los activos digitales ya no son una apuesta de innovación. Son una cuestión de arquitectura de liquidación, custodia y balance. La tarea estratégica del banco es diseñar infraestructura bajo incertidumbre estructural.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Sat, 30 May 2026 10:01:18 +0000</pubDate>
+      <pubDate>Sat, 30 May 2026 12:32:03 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>activos digitales 2026</category>
@@ -89,7 +89,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-05-27-ai-operating-system-pagos-fraud-routing-resilience-compliance-2026/</guid>
       <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
       <category>IA pagos 2026</category>
       <category>fraude en pagos</category>
       <category>enrutamiento de pagos</category>
