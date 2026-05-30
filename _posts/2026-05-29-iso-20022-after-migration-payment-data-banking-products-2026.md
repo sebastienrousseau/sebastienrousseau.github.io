@@ -108,6 +108,8 @@ site_software: "Static Site Generator, Rust"
 
 
 
+
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> ISO 20022 after migration is a data-product opportunity. Structured addresses, purpose codes, invoice details, investigation messages, and richer payment status events can become reconciliation, fraud, liquidity, compliance, and analytics products.</p>

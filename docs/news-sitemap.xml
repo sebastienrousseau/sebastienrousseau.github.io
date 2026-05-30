@@ -586,7 +586,7 @@
     </news:publication>
     <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
     <news:title>Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New…</news:title>
-    <news:keywords>UK wholesale digital markets 2026, Chris Woolard, tokenised gilts, tokenised wholesale finance, digital markets champion, tokenisation UK, settlement</news:keywords>
+    <news:keywords>UK Digital Securities Sandbox, tokenised gilts, intraday repo, atomic DvP, RTGS renewal, RLN, Canton DLT, policy-as-code compliance, wholesale digital markets, HQLA collateral mobility</news:keywords>
   </news:news>
 </url>
 <url>
@@ -1341,8 +1341,8 @@
       <news:language>tr</news:language>
     </news:publication>
     <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
-    <news:title>Birleşik Krallık Toptan Dijital Piyasalar: Tokenleştirilmiş Gilts ve Yeni…</news:title>
-    <news:keywords>Birleşik Krallık toptan dijital piyasalar 2026, Chris Woolard, tokenleştirilmiş gilts, tokenleştirilmiş toptan finans, dijital piyasalar şampiyonu, Birleşik Krallık tokenizasyon, mutabakat, DLT, BoE DSS, Project Guardian</news:keywords>
+    <news:title>Birleşik Krallık'ta Toptan Dijital Piyasalar: Gilt'ler ve Şampiyon Rolü</news:title>
+    <news:keywords>Birleşik Krallık toptan dijital piyasalar 2026, Chris Woolard, tokenleştirilmiş gilt, tokenleştirilmiş toptan finans, dijital piyasalar şampiyonu, DSS, FCA, BoE, RTGS, atomik DvP</news:keywords>
   </news:news>
 </url>
 <url>
@@ -2331,7 +2331,7 @@
       <news:language>es</news:language>
     </news:publication>
     <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
-    <news:title>Mercados digitales mayoristas en RU: gilts tokenizados y liquidación</news:title>
+    <news:title>Mercados digitales mayoristas en RU: gilts tokenizados, liquidación y campeón</news:title>
     <news:keywords>mercados digitales mayoristas Reino Unido 2026, Chris Woolard, gilts tokenizados, finanzas mayoristas tokenizadas, campeón de mercados digitales, tokenización Reino Unido, liquidación</news:keywords>
   </news:news>
 </url>
@@ -3004,8 +3004,8 @@
       <news:language>fr</news:language>
     </news:publication>
     <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
-    <news:title>Marchés de gros numériques UK : gilts tokenisés et règlement</news:title>
-    <news:keywords>marchés numériques de gros UK 2026, Chris Woolard, gilts tokenisés, finance de gros tokenisée, champion des marchés numériques, tokenisation UK, règlement</news:keywords>
+    <news:title>Marchés de gros au UK : gilts tokenisés, DSS et règlement atomique</news:title>
+    <news:keywords>Digital Securities Sandbox 2026, gilts tokenisés, repo intrajournalier, DvP atomique, marchés de gros UK, FCA, Bank of England, RTGS, mobilité du collatéral</news:keywords>
   </news:news>
 </url>
 <url>
@@ -5128,8 +5128,8 @@
       <news:language>de</news:language>
     </news:publication>
     <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
-    <news:title>Wholesale Digital Markets UK: Tokenisierte Gilts, Abwicklung, Champion</news:title>
-    <news:keywords>Wholesale Digital Markets UK 2026, Wholesale Digital Markets Champion, tokenisierte Gilts, DLT-Abwicklung, BoE DSS, Project Guardian, SDX, Project Agorá, City of London, tokenisiertes Geld</news:keywords>
+    <news:title>Wholesale Digital Markets UK: Tokenisierte Gilts und Champion-Rolle</news:title>
+    <news:keywords>Wholesale Digital Markets UK 2026, Chris Woolard, tokenisierte Gilts, tokenisierte Wholesale-Finanzierung, Digital Markets Champion, Tokenisierung UK, Abwicklung</news:keywords>
   </news:news>
 </url>
 <url>
@@ -8403,8 +8403,8 @@
       <news:language>ar</news:language>
     </news:publication>
     <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
-    <news:title>الأسواق الرقمية للجملة في المملكة المتحدة: السندات المرمَّزة والتسوية ودور…</news:title>
-    <news:keywords>الأسواق الرقمية للجملة 2026، سندات حكومية برمَّزة، تسوية DLT، بطل الأسواق الرقمية، Wholesale Digital Markets Champion، UK gilts، BoE DSS، Project Guardian، SDX، Project Agorá، GOV.UK، HM Treasury، Bank of England، City of London</news:keywords>
+    <news:title>الأسواق الرقمية للجملة في المملكة المتحدة: سندات gilt المرمَّزة، التسوية، ودور…</news:title>
+    <news:keywords>الأسواق الرقمية للجملة 2026، سندات gilt المرمَّزة، تسوية DLT، منسق الأسواق الرقمية، Wholesale Digital Markets Champion، BoE DSS، FCA، RTGS، إعادة الشراء خلال اليوم، HQLA، DvP الذري، Canton، RLN، سيتي لندن</news:keywords>
   </news:news>
 </url>
 
@@ -10319,8 +10319,8 @@
       <news:language>ru</news:language>
     </news:publication>
     <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
-    <news:title>Оптовые цифровые рынки Великобритании: токенизированные гилты, расчёт и роль…</news:title>
-    <news:keywords>оптовые цифровые рынки Великобритании 2026, Wholesale Digital Markets Champion, токенизированные гилты, UK gilts, DLT расчёт, BoE DSS, песочница, Project Guardian, SDX, Project Agorá</news:keywords>
+    <news:title>Оптовые цифровые рынки Великобритании: токенизированные гилты, расчёт и новая…</news:title>
+    <news:keywords>оптовые цифровые рынки Великобритании 2026, Chris Woolard, токенизированные гилты, токенизированные оптовые финансы, координатор цифровых рынков, токенизация UK, расчёт</news:keywords>
   </news:news>
 </url>
 <url>
@@ -12625,7 +12625,7 @@
     </news:publication>
     <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
     <news:title>Digitala grossistmarknader i Storbritannien: tokeniserade gilts och avveckling</news:title>
-    <news:keywords>digitala grossistmarknader Storbritannien 2026, Wholesale Digital Markets Champion, tokeniserade gilts, DLT-avveckling, BoE DSS, Project Guardian, SDX, Project Agorá, City of London</news:keywords>
+    <news:keywords>digitala grossistmarknader Storbritannien 2026, Wholesale Digital Markets Champion, tokeniserade gilts, tokeniserad grossistfinansiering, DSS, intradagsrepo, atomär DvP, City i London, avveckling</news:keywords>
   </news:news>
 </url>
 
@@ -12810,8 +12810,8 @@
       <news:language>vi</news:language>
     </news:publication>
     <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
-    <news:title>Thị trường kỹ thuật số bán buôn tại Anh: Gilt tokenized, quyết toán và vai trò…</news:title>
-    <news:keywords>thị trường kỹ thuật số bán buôn Anh 2026, Wholesale Digital Markets Champion, Chris Woolard, trái phiếu gilt tokenized, UK gilts, quyết toán DLT, BoE DSS, Project Guardian, SDX, Project Agorá</news:keywords>
+    <news:title>Thị trường Số Bán buôn tại Anh: Gilt Mã hóa, Quyết toán và Vai trò Điều phối</news:title>
+    <news:keywords>thị trường số bán buôn Anh 2026, Chris Woolard, gilt mã hóa, tài chính bán buôn mã hóa, điều phối viên thị trường số, tokenisation Anh, quyết toán</news:keywords>
   </news:news>
 </url>
 <url>
@@ -14730,8 +14730,8 @@
       <news:language>zh-hans</news:language>
     </news:publication>
     <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
-    <news:title>英国批发数字市场：代币化金边债、清算与新设的推动者角色</news:title>
-    <news:keywords>英国批发数字市场 2026, Wholesale Digital Markets Champion, 代币化金边债, UK gilts, DLT 清算, BoE DSS, Project Guardian, SDX, Project Agorá, 原子清算</news:keywords>
+    <news:title>英国批发数字市场:代币化国债、结算与新设的协调者角色</news:title>
+    <news:keywords>英国批发数字市场 2026, Chris Woolard, 代币化国债, 代币化批发金融, 数字市场协调者, 英国代币化, 结算</news:keywords>
   </news:news>
 </url>
 <url>

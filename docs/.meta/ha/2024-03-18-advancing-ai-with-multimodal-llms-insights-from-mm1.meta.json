@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Tuta don Apple MM1",
   "language": "ha-NG",
-  "locale": "ha_NG",
-  "keywords": "Multimodal LLMs, binciken MM1, ci gaban AI, dabarun pre-training, gane hoto, sarrafa harshe na halitta, aikace-aikacen AI, makomar AI, multimodal learning, binciken AI",
+  "subtitle": "Bayyanar Makomar AI: Yadda Binciken Juyin Juya Halin MM1 na Apple ke Canza Multimodal Learning",
+  "description": "Bincika takarda ta MM1 ta Apple akan Multimodal Large Language Models (MLLMs). Koyi game da gine-ginensu, dabarun pre-training, da yuwuwar AI.",
   "date": "Mar 17, 2024",
   "title": "Advancing AI with Multimodal LLMs: Insights from MM1",
-  "subtitle": "Bayyanar Makomar AI: Yadda Binciken Juyin Juya Halin MM1 na Apple ke Canza Multimodal Learning",
+  "banner_alt": "Tuta don Apple MM1",
   "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
-  "description": "Bincika takarda ta MM1 ta Apple akan Multimodal Large Language Models (MLLMs). Koyi game da gine-ginensu, dabarun pre-training, da yuwuwar AI."
+  "keywords": "Multimodal LLMs, binciken MM1, ci gaban AI, dabarun pre-training, gane hoto, sarrafa harshe na halitta, aikace-aikacen AI, makomar AI, multimodal learning, binciken AI",
+  "locale": "ha_NG"
 }

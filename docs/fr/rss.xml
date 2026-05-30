@@ -6,30 +6,32 @@
     <description>Articles en français : IA appliquée, paiements ISO 20022, cryptographie post-quantique et transformation des paiements wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/fr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fr-FR</language>
-    <lastBuildDate>Sat, 30 May 2026 06:06:10 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 10:01:17 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Tous droits réservés.</copyright>
     <item>
-      <title>Marchés de gros numériques UK : gilts tokenisés et règlement</title>
+      <title>Marchés de gros au UK : gilts tokenisés, DSS et règlement atomique</title>
       <link>https://sebastienrousseau.com/fr/2026-05-30-uk-de-gros-digital-markets-tokenise-gilts-settlement-2026/</link>
-      <description>Le rôle de Champion des marchés numériques de gros au Royaume-Uni fait de la finance de gros tokenisée un projet de compétitivité nationale.</description>
+      <description>Le Digital Securities Sandbox et les gilts tokenisés font du règlement-livraison atomique et du repo intrajournalier le nouveau standard sterling.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-30-uk-de-gros-digital-markets-tokenise-gilts-settlement-2026/</guid>
-      <pubDate>Sat, 30 May 2026 06:06:10 +0000</pubDate>
+      <pubDate>Sat, 30 May 2026 10:01:17 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
-      <category>marchés numériques de gros UK 2026</category>
-      <category>Chris Woolard</category>
+      <category>Digital Securities Sandbox 2026</category>
       <category>gilts tokenisés</category>
-      <category>finance de gros tokenisée</category>
-      <category>champion des marchés numériques</category>
-      <category>tokenisation UK</category>
-      <category>règlement</category>
+      <category>repo intrajournalier</category>
+      <category>DvP atomique</category>
+      <category>marchés de gros UK</category>
+      <category>FCA</category>
+      <category>Bank of England</category>
+      <category>RTGS</category>
+      <category>mobilité du collatéral</category>
     </item>
     <item>
       <title>ISO 20022 après migration : transformer la donnée de paiement en produits bancaires en 2026</title>
       <link>https://sebastienrousseau.com/fr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
       <description>ISO 20022 après migration : un terrain de produits de données. Adresses structurées, codes d&apos;objet, détails de facture, messages d&apos;investigation et statuts enrichis deviennent rapprochement, fraude, liquidité et conformité.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
-      <pubDate>Sat, 30 May 2026 06:06:10 +0000</pubDate>
+      <pubDate>Sat, 30 May 2026 10:01:17 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>ISO 20022 2026</category>

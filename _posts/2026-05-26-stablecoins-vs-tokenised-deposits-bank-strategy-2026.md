@@ -110,6 +110,8 @@ site_software: "Static Site Generator, Rust"
 
 
 
+
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Stablecoins and tokenised deposits are converging around programmable settlement, but their balance-sheet, legal, liquidity, and trust models remain different.</p>

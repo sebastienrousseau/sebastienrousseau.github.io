@@ -12,7 +12,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "May 30, 2026"
-description: "The UK’s Wholesale Digital Markets Champion role turns tokenised wholesale finance into a national competitiveness project."
+description: "The UK has appointed a Wholesale Digital Markets Champion to force interoperability inside the Digital Securities Sandbox (DSS). Tokenised gilts settle this question first — HQLA on DLT, atomic against tokenised cash, with intraday repo as the prize."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -21,7 +21,7 @@ image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
-keywords: "UK wholesale digital markets 2026, Chris Woolard, tokenised gilts, tokenised wholesale finance, digital markets champion, tokenisation UK, settlement"
+keywords: "UK Digital Securities Sandbox, tokenised gilts, intraday repo, atomic DvP, RTGS renewal, RLN, Canton DLT, policy-as-code compliance, wholesale digital markets, HQLA collateral mobility"
 language: "en-GB"
 excerpt: "The UK Wholesale Digital Markets Champion role makes tokenised gilts, DLT-based settlement, and digital wholesale finance a national competitiveness project. The 2026 strategic question for banks is design discipline — which tokenised assets sit on which platform, how settlement risk is evidenced, and how to defend the City's wholesale role against Singapore, Switzerland, and Frankfurt."
 last_reviewed: "2026-05-30"
@@ -39,10 +39,10 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "UK Wholesale Digital Markets 2026: Tokenisation Strategy"
+seo_title: "UK Digital Securities Sandbox 2026: Tokenised Gilts & DSS"
 short_name: "sebastienrousseau"
-subtitle: "Tokenised wholesale markets are moving from experimentation to public-private coordination. The UK has created a champion role because fragmented pilots are not enough."
-tags: "wholesale digital markets, tokenised gilts, Chris Woolard, UK tokenisation, settlement, collateral mobility"
+subtitle: "Tokenised gilts on DLT, atomic against tokenised cash. Intraday repo as the immediate prize. The Champion role exists because polite stand-offs kept the City stuck at PoC."
+tags: "Digital Securities Sandbox, tokenised gilts, atomic DvP, intraday repo, RTGS, RLN, Canton, policy-as-code"
 theme-color: "0, 83, 191"
 title: "Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role"
 url: "https://sebastienrousseau.com/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026"
@@ -53,7 +53,7 @@ atom_link: "https://sebastienrousseau.com/2026-05-30-uk-wholesale-digital-market
 category: "Finance"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "The 2026 UK wholesale digital markets blueprint — Chris Woolard, tokenised gilts, settlement automation, tokenised deposits, collateral mobility, and public-private coordination."
+item_description: "The 2026 UK wholesale digital markets stack — Digital Securities Sandbox, tokenised gilts on DLT, atomic DvP against tokenised cash, intraday repo, policy-as-code compliance, and the Champion's coordination mandate."
 item_guid: "https://sebastienrousseau.com/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/rss.xml"
 item_link: "https://sebastienrousseau.com/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/rss.xml"
 item_pub_date: "Sat, 30 May 2026 06:06:06 +0000"
@@ -82,11 +82,11 @@ msapplication-navbutton-color: "0, 83, 191"
 
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
-twitter_description: "The 2026 UK wholesale digital markets blueprint — Chris Woolard, tokenised gilts, settlement automation, tokenised deposits, collateral mobility, and public-private coordination."
+twitter_description: "The 2026 UK wholesale digital markets stack — Digital Securities Sandbox, tokenised gilts on DLT, atomic DvP against tokenised cash, intraday repo, policy-as-code compliance, and the Champion's coordination mandate."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
-twitter_title: "UK Wholesale Digital Markets 2026: Tokenisation Strategy"
+twitter_title: "UK Digital Securities Sandbox 2026: Tokenised Gilts & DSS"
 twitter_url: "https://sebastienrousseau.com/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -106,116 +106,152 @@ site_software: "Static Site Generator, Rust"
 
 
 
+
+<!-- lead-start: manual -->
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> The UK’s Wholesale Digital Markets Champion role turns tokenised wholesale finance into a national competitiveness project.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> The UK has appointed a Wholesale Digital Markets Champion. The job is not ceremonial. It is the hard-nosed coordination layer between HM Treasury, the FCA, and the Bank of England — the role designed to force private-sector interoperability inside the Digital Securities Sandbox (DSS). Tokenised gilts settle this question first: HQLA on DLT, atomic against tokenised cash, with intraday repo as the immediate prize.</p>
 <p class="post-lead-heading"><strong>Key takeaways</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Why 2026 Is the Year This Became Strategic.</strong> The industry has moved beyond the adoption phase.</li>
-  <li><strong>The 2026 Architecture Baseline.</strong> The bank should start with the friction: trapped liquidity, settlement delay, reconciliation cost, failed payments, fraud exposure, weak auditability, or poor client experience.</li>
-  <li><strong>Strategic Architecture Table.</strong> Global banks should create platform-level orchestration so that each market, rail, token, and AI capability does not become a separate operating model.</li>
-  <li><strong>What This Means by Bank Type.</strong> Global banks should create platform-level orchestration so that each market, rail, token, and AI capability does not become a separate operating model.</li>
+  <li><strong>The Champion is a coordinator, not a figurehead.</strong> The mandate is to align HM Treasury, the FCA, the Bank of England, and the City behind one digital-markets operating model — RTGS renewal and the DSS on the same chart.</li>
+  <li><strong>Gilts go first because they are the hardest asset to get right.</strong> HQLA on DLT, settled atomically against tokenised cash, proves the stack on the deepest collateral pool in sterling.</li>
+  <li><strong>Intraday repo is the immediate prize.</strong> T+0 atomic repo of tokenised gilts releases capital that today sits idle as same-day liquidity buffer — basis points straight to ROE.</li>
+  <li><strong>Architecture beats pilots.</strong> RLN, Canton, private DLTs, RTGS, tokenised commercial bank money — banks need an orchestration layer that routes across all of them, not another standalone network.</li>
 </ul>
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026">Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay</a>, <a href="https://sebastienrousseau.com/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026">Programmable Liquidity in 2026: AI, Tokenised Deposits, and Real-Time Treasury Orchestration</a>, <a href="https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026">The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments</a>.</p>
 </aside>
 <!-- lead-end -->
 
-The UK's Wholesale Digital Markets Champion role turns tokenised wholesale finance into a national competitiveness project. The 2026 signal is that wholesale tokenisation has moved from innovation theatre into the banking operating model, where the decisive question is design discipline: which data, rails, controls, liabilities, and client workflows belong together ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
+Tokenised wholesale finance is no longer a thought experiment. In 2026 it is the operating baseline for sterling capital markets. The Bank of England's RTGS renewal, the joint FCA/BoE Digital Securities Sandbox (DSS), and the appointment of a Wholesale Digital Markets Champion now sit on the same chart — and that is the point. The pieces are designed to interlock ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox"), [GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
+
+The Champion is the lever that forces them to.
 
 ---
 
 > **Executive Summary / Key Takeaways**
 >
-> - **Wholesale Tokenisation is now strategic.** The topic is tied to operating model, resilience, client value, and regulatory evidence rather than a narrow product launch ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **The design principle is market coordination.** Banks need architecture that connects policy, product, data, rail choice, risk controls, and measurable economics ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
-> - **The control model must be real time.** Fraud, liquidity, compliance, settlement, and operational-risk decisions must run at the speed of the workflow, not after the event.
-> - **Data quality becomes commercial advantage.** Structured data, transaction context, audit logs, and identity signals become the substrate for automation and client-facing products.
-> - **Fragmentation is the enemy.** A bank that builds isolated pilots around each rail, token, model, or compliance requirement creates future operating risk.
-> - **The winning model is orchestration.** The institution that can route, govern, price, evidence, and explain each workflow will outperform the one that merely adopts another tool ([Global Government Finance](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion")).
+> - **The Champion is the coordination layer the City has been missing.** The remit reaches across HM Treasury, the FCA, the Bank of England, and the major sell-side and buy-side desks — built to break the polite stand-off that kept earlier digital-markets initiatives stuck at PoC ([Global Government Finance](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion")).
+> - **Gilts go first because they are the hardest asset to get right.** HQLA on DLT, settled atomically against tokenised cash, validates the full stack — issuance, trading, repo, collateral, central-bank money — on the deepest sterling pool ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox")).
+> - **Intraday repo is the immediate prize.** T+0 atomic repo of tokenised gilts releases capital that today sits idle as same-day liquidity buffer. The savings drop straight through to ROE.
+> - **Orchestration replaces standalone networks.** The Regulated Liability Network, Canton, private bank DLTs, RTGS, and tokenised commercial bank money each carry workflows banks already run. The job is to route across them, not pick one.
+> - **Policy-as-code is the only compliance model that keeps up.** Sanctions, KYC, position limits, jurisdictional gates — encoded in the settlement layer, executed atomically with the trade, producing a cryptographic audit trail rather than a log a regulator has to trust ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Architecture is the moat.** The winners weave workflow, data, rail, control, and unit economics into one operating model. The losers run a portfolio of disconnected pilots and call it a strategy.
 >
 ---
 
-## Why 2026 Is the Year This Became Strategic
+## The Champion Mandate: Coordination, Not Ceremony
 
-The industry has moved beyond the adoption phase. It is no longer enough to join a rail, migrate a message, run an AI proof of concept, or announce a tokenisation pilot. In 2026, the strategic edge comes from orchestrating those capabilities against a real workflow, then proving that the workflow is safer, faster, cheaper, more resilient, or more useful to clients.
+Wholesale market reform in the UK has long failed on the same point — coordination. Treasury sets policy, the Bank runs settlement, the FCA owns conduct, and the City delivers product. Each one is competent. None of them, alone, can force interoperability between a tier-one bank's tokenisation platform and a CSD's settlement engine. That is the gap the Champion is appointed to close.
 
-That is why wholesale tokenisation is now a board-level topic. The same pressures keep recurring: richer payment data, real-time settlement, tokenised money, AI decisioning, Open Banking, operational resilience, cloud concentration, and stronger regulatory evidence. Treated separately, those pressures create programme sprawl. Treated as one architecture, they create operating leverage ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+The role is built around the DSS. The Sandbox is the only place in the UK regulatory perimeter where firms can issue, trade, and settle real digital securities — including tokenised gilts — under tailored waivers to CSDR and existing settlement rules ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox"), [FCA](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA Digital Securities Sandbox")). It is live, not theoretical. The Champion's job is to make sure the institutions inside it build to the same standards on identity, settlement finality, and message format — so that the platforms that emerge actually talk to each other.
 
-## The 2026 Architecture Baseline
+That is the difference between a Sandbox and a sandpit.
 
-### 1. Workflow First, Technology Second
+## Why Tokenise Gilts?
 
-The bank should start with the friction: trapped liquidity, settlement delay, reconciliation cost, failed payments, fraud exposure, weak auditability, or poor client experience. The technology is only justified where it removes that friction ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
+Gilts are the foundation of the sterling system. They are the collateral the Bank takes in repo, the asset banks hold against LCR requirements, the instrument pension funds use to match liabilities. They are also, today, settled with operational plumbing that hasn't fundamentally changed in twenty years — CREST batches, T+1 conventions, end-of-day liquidity reconciliation. The capital trapped in that workflow is not small.
 
-### 2. Data as the Control Plane
+Putting gilts on DLT changes three things at once.
 
-Structured, governed, and traceable data is the foundation. Without usable data, automation becomes brittle and compliance becomes manual. With usable data, banks can create routing intelligence, real-time controls, and client-facing analytics ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+**Intraday repo becomes atomic.** A T+0 repo of a tokenised gilt against tokenised cash settles in seconds, not hours. The institutional liquidity buffer that today funds same-day cash needs can be released back into the market. For a tier-one bank running a large repo book, that is basis points of funding cost — and basis points of ROE.
 
-### 3. Orchestration Across Rails and Platforms
+**Collateral mobility stops being a phone call.** A digital gilt can be pledged or recalled across jurisdictions instantly to meet a margin call. The slow chain of intermediated custody messages — fax, SWIFT MT, end-of-day reconciliation — gives way to a smart-contract movement with cryptographic proof of pledge.
 
-The architecture must support multiple rails, providers, identity schemes, risk signals, and settlement assets. The routing decision should be made by cost, speed, finality, jurisdiction, client preference, resilience, and data richness.
+**Principal risk in settlement disappears.** Atomic delivery-versus-payment means the gilt leg and the cash leg execute as one indivisible operation. Either both settle or neither does. The settlement window that today exposes one counterparty to the other's mid-trade default closes to zero.
 
-### 4. Embedded Compliance and Evidence
+These are not future benefits. They are running in the Sandbox now.
 
-The compliance model must be native to the workflow. Policy-as-code, automated audit logs, operational resilience evidence, consent records, and model governance need to be produced as part of execution, not recreated for auditors later.
+## The DSS Operating Model
 
-### 5. Unit Economics and Client Value
+The DSS is a live regime. To use it as a platform rather than a PoC, banks need an architecture that holds together under regulatory scrutiny and commercial pressure. Five pillars do the load-bearing work.
 
-Every initiative needs evidence of commercial value. Cost-per-payment, cost-per-decision, cost-per-investigation, liquidity saved, manual repairs avoided, fraud losses reduced, and client adoption should determine scaling decisions.
+### Workflow Over Technology
 
-## Strategic Architecture Table
+Start with the friction. Trapped liquidity, settlement breaks, reconciliation cost, failed payments — these are the problems clients pay to remove. Technology is justified only where it removes them. Tokenisation is a means, not the product. A platform that ships intraday repo of tokenised gilts has a use case. A platform that ships a tokenisation engine looking for one does not.
 
-| Layer | 2026 Direction | Banking Opportunity | Risk if Mishandled |
+### Data as the Control Plane
+
+[ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) payloads bound to on-chain transaction hashes turn settlement data into a single source of truth. Without that binding, smart-contract automation is brittle and reconciliation reverts to spreadsheets. With it, banks get straight-through processing, real-time controls, and analytics clients will actually pay for ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+
+### Orchestration Across Rails
+
+The Regulated Liability Network, Canton, private bank DLTs, RTGS, tokenised commercial bank money — each one carries workflows banks already run. Forcing every transaction onto one network is the wrong fight. The right architecture routes each workflow to the rail that gives the best combination of cost, speed, settlement finality, jurisdiction, and resilience. That decision is made at runtime, not hard-coded into the platform.
+
+### Policy-as-Code Compliance
+
+Atomic settlement leaves no room for after-the-fact compliance. Sanctions screening, KYC validation, position limits, jurisdictional restrictions — all of it has to execute inside the settlement layer, simultaneously with the trade. The output is a cryptographic audit trail, not a database log. Zero-knowledge identity proofs make this work without leaking client data across counterparties. This is the only compliance model that survives intraday volume.
+
+### Unit Economics That Survive a Board Meeting
+
+Every initiative needs hard numbers. Basis points saved on collateral funding. Intraday liquidity buffer reduction. Settlement-fail rates. Reconciliation FTEs displaced. Cycle time to onboard a counterparty. Anything else — headcount, press coverage, deck slides — is not ROI. Without these metrics, the "innovation" budget becomes a sunk cost the next CFO writes off.
+
+## Architecture Matrix
+
+| Layer | What the DSS Demands in 2026 | The Institutional Prize | The Cost of Getting It Wrong |
 |---|---|---|---|
-| **Workflow layer** | Client pain point defines the product | Clear business case and adoption | Technology-led pilots without users |
-| **Data layer** | Structured, governed transaction and control data | Automation, analytics, and auditability | Bad data moved faster |
-| **Rail layer** | Routing across cards, A2A, RTGS, stablecoins, deposits, APIs, DLT | Optimised cost, speed, and finality | Channel sprawl and duplicated controls |
-| **Control layer** | Real-time policy, fraud, sanctions, resilience, identity, and consent | Risk managed at execution speed | Manual after-the-fact compliance |
-| **Economics layer** | Measured unit cost and client value | Evidence-led scaling | Innovation spend without durable return |
+| **Workflow** | Client friction dictates product design | Clear business case, capital release, immediate adoption | Tokenisation platforms with no users — innovation theatre on a board deck |
+| **Data** | ISO 20022 payloads bound to on-chain transaction hashes | Straight-through processing, audit-grade evidence, paid analytics | Bad data moves faster — more reconciliation breaks, not fewer |
+| **Rail** | Routing across RTGS, RLN, Canton, private DLTs, tokenised cash | Capital efficiency, finality on demand, lower funding cost | Channel sprawl, fragmented liquidity, controls duplicated five times |
+| **Control** | Policy-as-code, zero-knowledge identity, atomic compliance | Risk mitigated at the moment of trade — no T+2 surprise | Manual investigations days later — and the fines that follow them |
+| **Economics** | Verifiable unit-cost reductions tied to client outcomes | Evidence-led scaling, ROE that survives audit | Sunk innovation spend, no durable return, board writes it off |
 
-## What This Means by Bank Type
+## What This Means by Institution Type
 
-### Global Banks
+> *"The decisive question is design discipline: which data, rails, controls, liabilities, and client workflows belong together."*
 
-Global banks should create platform-level orchestration so that each market, rail, token, and AI capability does not become a separate operating model.
+### Tier-1 Banks
+
+Build the orchestration layer. Tier-1s cannot afford for each new tokenised asset or DLT network to spawn a bespoke operating model. The role is to be the regulated bridge between off-chain and on-chain liquidity — providing the legal wrapper, the balance sheet, and the supervisory relationship that makes the Sandbox work for the rest of the market. Stand at the gateway, charge for the access, defend the franchise.
 
 ### Regional Banks
 
-Regional banks should focus on use cases where trust, local market knowledge, and simpler integration beat scale: treasury visibility, fraud prevention, Open Banking payments, and regulated digital money services.
+Stop building proprietary rails. The advantage is trust and local knowledge. Offer corporate treasurers the visibility, fraud controls, and reliable access to tier-one digital liquidity pools they cannot build themselves. The strategy is integration, not invention.
 
-### Fintechs and PSPs
+### Fintechs and Market Infrastructure Providers
 
-Fintechs should reduce complexity for banks rather than adding another isolated rail. The best propositions will bring orchestration, compliance evidence, or data intelligence.
+The fintechs that win in 2026 will not be the ones running yet another standalone network. They will be the ones providing the integration layer — orchestration engines, oracles, compliance-evidence tooling — that reduces complexity for banks. Add to the bank's stack, do not compete with it. The market has spoken on standalone networks.
 
 ### Corporate Treasurers
 
-Treasurers should demand measurable improvements: fewer payment repairs, better liquidity visibility, richer reconciliation data, faster settlement, and stronger control over automated decisions.
+Stop accepting end-of-day reporting. Demand programmable banking: automated sweeps, real-time liquidity visibility, instant collateral deployment, ISO 20022-grade reconciliation data. The platforms that provide these already exist. The leverage is the threat of moving the workflow.
 
-## Conclusion
+## What Happens Next
 
-Wholesale Digital Markets in the UK is ultimately an architecture question. The institutions that win will not be those with the most pilots or the loudest innovation language. They will be the institutions that connect client workflows, data quality, rail orchestration, embedded compliance, and unit economics into a coherent operating model.
+The Champion role is a forcing function. The DSS is a live regime. Tokenised gilts are settling in test, with production on the near horizon. Each piece works alone. The question for 2026 is which institutions assemble them into a single operating model — and which spend another year defending the legacy stack on a quarterly earnings call.
+
+The banks that win will not be the ones with the loudest blockchain marketing. They will be the ones whose architecture is invisible — workflow, data, rail, control, and economics weaving together so cleanly that the client never sees the seams. That is the standard the City is now competing against. Singapore, Switzerland, and Frankfurt are watching. They have noticed.
 
 ## Frequently Asked Questions
 
-**Why is this topic urgent in 2026?**
+**What is the Digital Securities Sandbox (DSS) and why does it matter?**
 
-Because the relevant infrastructure, regulation, and client-demand signals have converged. What was optional experimentation is now becoming part of the bank operating model.
+The DSS is a joint FCA/Bank of England regime that lets firms issue, trade, and settle real digital securities — tokenised gilts included — under tailored waivers to CSDR and existing settlement rules. It matters because UK firms can run live DLT-based wholesale market infrastructure with regulatory air cover, not as throwaway PoCs.
 
-**What is the biggest implementation risk?**
+**Why tokenised gilts specifically, instead of corporate bonds or equities?**
 
-The biggest risk is fragmentation: separate teams build separate pilots, each with different data, controls, governance, and economics.
+Gilts are the deepest, most regulated asset in the sterling system — the collateral the Bank takes, the LCR backbone, the liability-matching instrument for pensions. Tokenising them tests the full stack on the hardest asset class. Anything else is easier by comparison.
 
-**What should a bank build first?**
+**What is the difference between RLN, Canton, and a private bank DLT?**
 
-A bank should start with the workflow where there is measurable value, such as faster settlement, lower reconciliation cost, fewer investigations, improved fraud prevention, or better liquidity visibility.
+The Regulated Liability Network is a shared-ledger model for tokenised commercial bank money issued by multiple regulated institutions. Canton is a permissioned, privacy-preserving DLT widely used in capital markets. Private bank DLTs are single-institution networks. A 2026 orchestration layer routes across all three depending on the workflow.
 
-**How should success be measured?**
+**How does atomic DvP eliminate principal risk?**
 
-Success should be measured by unit economics, resilience evidence, data quality, client adoption, operational-risk reduction, and liquidity or working-capital improvement.
+A non-DvP settlement window has one leg of a trade settling before the other. Atomic DvP uses a smart contract to make both legs execute as one indivisible operation — either both settle or neither does. A counterparty default mid-window can no longer leave one party exposed because the window does not exist.
+
+**What does "policy-as-code" mean in practice?**
+
+Compliance rules — sanctions screening, KYC validation, position limits, jurisdictional restrictions — encoded directly in the smart contract or settlement layer and executed at the moment of trade. The output is a cryptographic audit trail, not a database log the regulator has to trust.
+
+**How should a bank measure ROI on a DSS pilot?**
+
+Basis points saved on collateral funding. Intraday liquidity buffer reduction. Settlement-fail rate. Reconciliation FTEs displaced. Cycle time to onboard a counterparty. That is the list. Headcount, press coverage, board-deck slides are not ROI — never have been.
 
 ## References
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
+- Bank of England, (2026). [Digital Securities Sandbox ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox").
+- FCA, (2026). [Digital Securities Sandbox ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA Digital Securities Sandbox").
 - Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
@@ -225,9 +261,8 @@ Success should be measured by unit economics, resilience evidence, data quality,
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026" class="related-media" aria-label="Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay" tabindex="-1"><img alt="Digital asset infrastructure diagram showing tokenised real-world assets, stablecoins, tokenised deposits, custody, settlement, collateral mobility, and bank platform layers" src="https://cloudcdn.pro/stocks/images/corporate-finance.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026">Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay</a></h3><p><time datetime="2026-05-28">2026-05-28</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026" class="related-media" aria-label="Programmable Liquidity in 2026: AI, Tokenised Deposits, and Real-Time Treasury Orchestration" tabindex="-1"><img alt="Programmable liquidity architecture diagram showing treasury systems, AI forecasting, tokenised deposits, real-time rails, stablecoins, virtual accounts, FX, and collateral mobility" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026">Programmable Liquidity in 2026: AI, Tokenised Deposits, and Real-Time Treasury Orchestration</a></h3><p><time datetime="2026-05-25">2026-05-25</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026" class="related-media" aria-label="The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments" tabindex="-1"><img alt="UK payments modernisation diagram showing stablecoins, tokenised deposits, open banking, AI agents, FCA regulation, PSR consolidation, and wholesale digital markets" src="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026">The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments</a></h3><p><time datetime="2026-05-24">2026-05-24</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026" class="related-media" aria-label="Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money" tabindex="-1"><img alt="Tokenised deposit banking architecture for 2026 showing commercial bank money, digital wallets, stablecoins, CBDCs, tokenised gilts, and Project Agorá settlement paths" src="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026">Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</a></h3><p><time datetime="2026-05-21">2026-05-21</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026" class="related-media" aria-label="Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability" tabindex="-1"><img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</a></h3><p><time datetime="2026-05-19">2026-05-19</time></p></footer></article>
 </div>
 </aside>
 <!-- enrich-end -->

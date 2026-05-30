@@ -1,12 +1,12 @@
 {
-  "last_reviewed": "2026-05-11",
+  "locale": "ja_JP",
   "description": "AI プロンプトエンジニアリングの最新の進歩。Chain-of-thought、ツール使用、エージェントワークフロー。",
-  "banner_alt": "コードエディタを使用する開発者",
-  "subtitle": "効果的なプロンプト技術と新しい AI ワークフロー",
-  "title": "AI プロンプトエンジニアリングの進歩",
+  "keywords": "プロンプトエンジニアリング, AI, LLM, chain-of-thought, RAG, ツール使用, エージェント, ワークフロー",
+  "language": "ja-JP",
   "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp",
   "date": "January 23, 2024",
-  "keywords": "プロンプトエンジニアリング, AI, LLM, chain-of-thought, RAG, ツール使用, エージェント, ワークフロー",
-  "locale": "ja_JP",
-  "language": "ja-JP"
+  "banner_alt": "コードエディタを使用する開発者",
+  "last_reviewed": "2026-05-11",
+  "subtitle": "効果的なプロンプト技術と新しい AI ワークフロー",
+  "title": "AI プロンプトエンジニアリングの進歩"
 }

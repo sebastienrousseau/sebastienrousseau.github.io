@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/vi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>vi-VN</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-30T06:06:10+00:00</news:publication_date>
-    <news:title>ISO 20022 Sau Di Trú: Biến Dữ Liệu Thanh Toán Thành Sản Phẩm Ngân Hàng 2026</news:title>
-    <news:keywords>ISO 20022 2026, địa chỉ có cấu trúc, CBPR+, sản phẩm dữ liệu thanh toán, mã mục đích thanh toán, ngân quỹ doanh nghiệp, đối soát, sàng lọc trừng phạt, phát hiện gian lận, pacs.008, pain.001</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/vi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>vi-VN</news:language>
     </news:publication>
-    <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
-    <news:title>Thị trường kỹ thuật số bán buôn tại Anh: Gilt tokenized, quyết toán và vai trò Champion</news:title>
-    <news:keywords>thị trường kỹ thuật số bán buôn Anh 2026, Wholesale Digital Markets Champion, Chris Woolard, trái phiếu gilt tokenized, UK gilts, quyết toán DLT, BoE DSS, Project Guardian, SDX, Project Agorá, HM Treasury, Bank of England, City of London, tokenisation UK</news:keywords>
+    <news:publication_date>2026-05-30T10:01:18+00:00</news:publication_date>
+    <news:title>Thị trường Số Bán buôn tại Anh: Gilt Mã hóa, Quyết toán và Vai trò Điều phối</news:title>
+    <news:keywords>thị trường số bán buôn Anh 2026, Chris Woolard, gilt mã hóa, tài chính bán buôn mã hóa, điều phối viên thị trường số, tokenisation Anh, quyết toán</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-30T10:01:18+00:00</news:publication_date>
+    <news:title>ISO 20022 Sau Di Trú: Biến Dữ Liệu Thanh Toán Thành Sản Phẩm Ngân Hàng 2026</news:title>
+    <news:keywords>ISO 20022 2026, địa chỉ có cấu trúc, CBPR+, sản phẩm dữ liệu thanh toán, mã mục đích thanh toán, ngân quỹ doanh nghiệp, đối soát, sàng lọc trừng phạt, phát hiện gian lận, pacs.008, pain.001</news:keywords>
   </news:news>
 </url>
 <url>

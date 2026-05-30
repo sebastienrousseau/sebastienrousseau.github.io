@@ -1,11 +1,11 @@
 {
-  "date": "Apr 01, 2024",
+  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
   "title": "OpenVoice: Leading Innovation in Voice Cloning Technology",
-  "banner_alt": "Banner mai launi mai ƙarfi a kan hotuna masu maimaitawa",
-  "language": "ha-NG",
   "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.",
+  "date": "Apr 01, 2024",
+  "language": "ha-NG",
   "subtitle": "Kayan Aikin Open-Source na Zamani don Kwafin Murya",
   "keywords": "OpenVoice, Fasahar Kwafin Murya, AI Magana ta Roba, Open-Source Kwafin Murya, Haɗin Murya Tsakanin Harsuna, Gaggawar Kwafin Murya, Sarrafa Salon Murya, Fasahar Murya ta Accessibility, Muryoyin Masana'antar Nishaɗi, AI Murya ta Sabis na Abokan Ciniki",
-  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
-  "locale": "ha_NG"
+  "locale": "ha_NG",
+  "banner_alt": "Banner mai launi mai ƙarfi a kan hotuna masu maimaitawa"
 }

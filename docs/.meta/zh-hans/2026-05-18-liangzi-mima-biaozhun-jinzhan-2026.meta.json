@@ -1,11 +1,11 @@
 {
+  "description": "2026 年的量子密码不再是关于量子计算机是否迫近的辩论。它是一项跨越后量子密码、密码敏捷性、量子密钥分发保证、协议标准、供应商就绪度和已暴露于「先收割后解密」风险的长寿命金融数据的迁移计划。",
+  "keywords": "量子密码 2026, 后量子密码, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, 混合密钥交换, QKD, ETSI QKD, ISO IEC 23837, 密码敏捷性, harvest now decrypt later, HNDL, 金融服务密码, 银行安全",
   "subtitle": "量子密码已从地平线扫描转入实施纪律：NIST PQC 标准已就绪，英国 NCSC 指引收窄了算法选择，IETF 协议工作仍在成熟，QKD 保证正从实验室信心走向认证语言。",
-  "title": "2026 年量子密码重置：PQC 标准、QKD 保证与银行不能再延期的迁移工作",
-  "locale": "zh_CN",
-  "banner_alt": "2026 年量子安全密码迁移地图，展示 NIST PQC 标准、混合协议工作、QKD 保证、密码敏捷性以及银行数据风险层级",
   "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
   "date": "May 18, 2026",
-  "description": "2026 年的量子密码不再是关于量子计算机是否迫近的辩论。它是一项跨越后量子密码、密码敏捷性、量子密钥分发保证、协议标准、供应商就绪度和已暴露于「先收割后解密」风险的长寿命金融数据的迁移计划。",
+  "title": "2026 年量子密码重置：PQC 标准、QKD 保证与银行不能再延期的迁移工作",
   "language": "zh-Hans",
-  "keywords": "量子密码 2026, 后量子密码, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, 混合密钥交换, QKD, ETSI QKD, ISO IEC 23837, 密码敏捷性, harvest now decrypt later, HNDL, 金融服务密码, 银行安全"
+  "locale": "zh_CN",
+  "banner_alt": "2026 年量子安全密码迁移地图，展示 NIST PQC 标准、混合协议工作、QKD 保证、密码敏捷性以及银行数据风险层级"
 }
