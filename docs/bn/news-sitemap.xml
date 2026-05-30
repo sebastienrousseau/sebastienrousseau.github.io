@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/bn/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>bn-BD</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
+    <news:title>যুক্তরাজ্যের পাইকারি ডিজিটাল বাজার: টোকেনাইজড গিল্টস, নিষ্পত্তি ও নতুন চ্যাম্পিয়ন ভূমিকা</news:title>
+    <news:keywords>যুক্তরাজ্য পাইকারি ডিজিটাল বাজার ২০২৬, Wholesale Digital Markets Champion, UK gilts, টোকেনাইজড গিল্টস, DLT নিষ্পত্তি, BoE DSS, Project Guardian, SDX, Project Agorá, HM Treasury, Bank of England, City of London</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/bn/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
   <news:news>
     <news:publication>

@@ -1,11 +1,11 @@
 {
-  "title": "Los umbrales cuánticos vuelven a moverse",
-  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
   "language": "cs-CZ",
-  "locale": "cs_CZ",
   "banner_alt": "Esquema del umbral de qubits para el algoritmo de Shor. Placa de circuito de computación cuántica con reflejos azules",
-  "date": "April 11, 2026",
-  "keywords": "algoritmo de Shor, qubits, computación cuántica, ECC, RSA-2048, átomos neutros reconfigurables, códigos de corrección de errores, CRYSTALS-Kyber, CRYSTALS-Dilithium, PQC, criptografía postcuántica",
   "subtitle": "Un nuevo artículo sugiere que el algoritmo de Shor podría ejecutarse con solo 10.000 qubits. El umbral de la computación cuántica criptográficamente relevante cae más rápido de lo que la mayoría suponía.",
+  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
+  "date": "April 11, 2026",
+  "locale": "cs_CZ",
+  "title": "Los umbrales cuánticos vuelven a moverse",
+  "keywords": "algoritmo de Shor, qubits, computación cuántica, ECC, RSA-2048, átomos neutros reconfigurables, códigos de corrección de errores, CRYSTALS-Kyber, CRYSTALS-Dilithium, PQC, criptografía postcuántica",
   "description": "Un nuevo artículo sugiere que el algoritmo de Shor podría ejecutarse con solo 10.000 qubits. El umbral de la computación cuántica criptográficamente relevante cae más rápido de lo que la mayoría suponía."
 }

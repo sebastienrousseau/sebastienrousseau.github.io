@@ -1,11 +1,11 @@
 {
-  "keywords": "Fully Homomorphic Encryption, keamanan perbankan, quantum computing, enkripsi data keuangan, studi kasus FHE, kerangka regulasi FHE, overhead komputasi FHE, penelitian FHE, perangkat keras FHE, undang-undang privasi data",
-  "locale": "id_ID",
-  "language": "id-ID",
-  "banner_alt": "Banner untuk Fully Homomorphic Encryption",
-  "date": "Mar 25, 2024",
   "description": "Jelajahi bagaimana Fully Homomorphic Encryption merevolusi keamanan data di Perbankan dan Industri Keuangan, memastikan privasi terhadap ancaman quantum computing.",
-  "subtitle": "Perkuat Keamanan Data, Tingkatkan Privasi AI, dan Bangun Kepercayaan Nasabah di Era Quantum Computing dengan FHE",
+  "title": "[ID DRAFT] Fully Homomorphic Encryption (FHE) in a Banking Quantum Era",
   "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp",
-  "title": "[ID DRAFT] Fully Homomorphic Encryption (FHE) in a Banking Quantum Era"
+  "keywords": "Fully Homomorphic Encryption, keamanan perbankan, quantum computing, enkripsi data keuangan, studi kasus FHE, kerangka regulasi FHE, overhead komputasi FHE, penelitian FHE, perangkat keras FHE, undang-undang privasi data",
+  "banner_alt": "Banner untuk Fully Homomorphic Encryption",
+  "language": "id-ID",
+  "date": "Mar 25, 2024",
+  "locale": "id_ID",
+  "subtitle": "Perkuat Keamanan Data, Tingkatkan Privasi AI, dan Bangun Kepercayaan Nasabah di Era Quantum Computing dengan FHE"
 }

@@ -6,14 +6,14 @@
     <description>한국어 기사: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 그리고 도매 결제 인프라의 구조적 변혁.</description>
     <atom:link href="https://sebastienrousseau.com/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 29 May 2026 21:41:13 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 06:06:10 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
     <item>
       <title>디지털 자산 2026: 인프라 전환의 해</title>
       <link>https://sebastienrousseau.com/ko/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>디지털 자산은 더 이상 혁신 베팅이 아닙니다. 결제, 수탁, 대차대조표 아키텍처의 문제입니다. 은행의 전략적 과제는 구조적 불확실성 속에서의 인프라 설계입니다.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Fri, 29 May 2026 21:41:13 +0000</pubDate>
+      <pubDate>Sat, 30 May 2026 06:06:10 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>디지털 자산 2026</category>
@@ -26,6 +26,27 @@
       <category>담보 이동성</category>
       <category>프로그래밍 가능한 화폐</category>
       <category>은행 디지털 자산 전략</category>
+    </item>
+    <item>
+      <title>영국 도매 디지털 시장 2026: 토큰화 길트, 결제, 챔피언 직책</title>
+      <link>https://sebastienrousseau.com/ko/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
+      <description>영국 도매 디지털 시장 챔피언 직책은 토큰화 길트, DLT 결제, BoE DSS 샌드박스를 국가 경쟁력 의제로 격상시킵니다. 2026년 시티의 설계 규율을 점검합니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>영국 도매 디지털 시장 2026</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>토큰화 길트</category>
+      <category>UK gilts</category>
+      <category>DLT 결제</category>
+      <category>BoE DSS</category>
+      <category>Project Guardian</category>
+      <category>SDX</category>
+      <category>Project Agorá</category>
+      <category>HM Treasury</category>
+      <category>Bank of England</category>
+      <category>City of London</category>
     </item>
     <item>
       <title>ISO 20022 마이그레이션 이후: 2026년 결제 데이터를 은행 제품으로</title>

@@ -6,14 +6,14 @@
     <description>Статьи на русском языке: прикладной ИИ, платежи ISO 20022, постквантовая криптография и трансформация оптовых платежей.</description>
     <atom:link href="https://sebastienrousseau.com/ru/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ru-RU</language>
-    <lastBuildDate>Fri, 29 May 2026 21:41:13 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 06:06:10 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Все права защищены.</copyright>
     <item>
       <title>Цифровые активы в 2026: инфраструктурный переход, который банки не могут откладывать</title>
       <link>https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>Цифровые активы перестали быть ставкой на инновацию. Это вопрос архитектуры расчётов, хранения и баланса. Стратегическая задача банков — проектировать инфраструктуру в условиях структурной неопределённости.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Fri, 29 May 2026 21:41:13 +0000</pubDate>
+      <pubDate>Sat, 30 May 2026 06:06:10 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>цифровые активы 2026</category>
@@ -26,6 +26,26 @@
       <category>мобильность обеспечения</category>
       <category>программируемые деньги</category>
       <category>стратегия банка по цифровым активам</category>
+    </item>
+    <item>
+      <title>Оптовые цифровые рынки Великобритании: токенизированные гилты, расчёт и роль чемпиона</title>
+      <link>https://sebastienrousseau.com/ru/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
+      <description>Роль Wholesale Digital Markets Champion превращает токенизированные оптовые финансы Великобритании в национальный проект конкурентоспособности и дисциплины расчёта.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>оптовые цифровые рынки Великобритании 2026</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>токенизированные гилты</category>
+      <category>UK gilts</category>
+      <category>DLT расчёт</category>
+      <category>BoE DSS</category>
+      <category>песочница</category>
+      <category>Project Guardian</category>
+      <category>SDX</category>
+      <category>Project Agorá</category>
+      <category>City of London</category>
     </item>
     <item>
       <title>ISO 20022 после миграции: платёжные данные как банковские продукты в 2026</title>

@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ja/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ja-JP</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
+    <news:title>英国のホールセール・デジタル市場:トークン化ギルト、決済、新チャンピオン職</news:title>
+    <news:keywords>英国ホールセール・デジタル市場 2026, Wholesale Digital Markets Champion, トークン化ギルト, UK gilts, DLT 決済, BoE DSS サンドボックス, Project Guardian, SDX, Project Agorá, アトミック決済, トークン化現金, シティ</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ja/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
   <news:news>
     <news:publication>

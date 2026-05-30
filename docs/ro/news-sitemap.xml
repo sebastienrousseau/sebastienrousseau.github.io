@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ro/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ro-RO</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-30T06:06:10+00:00</news:publication_date>
+    <news:title>Piețe digitale de gros în UK: gilts tokenizați, decontare și noul rol de champion</news:title>
+    <news:keywords>piețe digitale de gros Regatul Unit 2026, Chris Woolard, gilts tokenizați, finanță de gros tokenizată, Wholesale Digital Markets Champion, tokenizare UK, decontare, DLT, BoE DSS, Project Guardian, SDX, Project Agorá, City of London</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ro/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ro-RO</news:language>
     </news:publication>
-    <news:publication_date>2026-05-29T21:41:13+00:00</news:publication_date>
+    <news:publication_date>2026-05-30T06:06:10+00:00</news:publication_date>
     <news:title>ISO 20022 după migrare: transformarea datelor de plată în produse bancare în 2026</news:title>
     <news:keywords>ISO 20022 2026, adresă structurată, CBPR+, produse de date de plată, coduri de scop, trezorerie corporativă, reconciliere, screening de sancțiuni, detectarea fraudei, pacs.008, pain.001, SWIFT gpi, SEPA Instant, FedNow</news:keywords>
   </news:news>

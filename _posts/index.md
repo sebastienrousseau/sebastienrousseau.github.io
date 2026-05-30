@@ -235,6 +235,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html" title="Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role">
+<img alt="UK wholesale digital markets diagram showing tokenised gilts, settlement, digital assets, tokenised deposits, regulatory coordination, and capital markets infrastructure" src="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Wholesale Digital Markets · Tokenised Gilts · Chris Woolard</span>
+<h3><a href="/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html">Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-30">May 30, 2026</time></p>
+<p class="newsroom-excerpt">The UK Wholesale Digital Markets Champion role makes tokenised gilts, DLT-based settlement, and digital wholesale finance a national competitiveness project. The 2026 strategic question for banks is design discipline — which tokenised assets sit on which platform, how settlement risk is evidenced, and how to defend the City's wholesale role against Singapore, Switzerland, and Frankfurt.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html" title="ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026">
 <img alt="ISO 20022 payment data product diagram showing structured addresses, purpose codes, reconciliation, fraud detection, liquidity forecasting, sanctions screening, and analytics products" src="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -291,18 +303,6 @@ site_software: "Static Site Generator, Rust"
 <h3><a href="/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html">Magnifica Humanitas: An AI-Industry Reading of the First Papal Encyclical on Artificial Intelligence</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-26">May 26, 2026</time></p>
 <p class="newsroom-excerpt">On 25 May 2026, Pope Leo XIV released Magnifica Humanitas — the first papal encyclical on artificial intelligence. Read from inside the technology industry, not as doctrine but as an ethical framework, it echoes every moral anxiety that accompanied the train, the automobile, nuclear power, and the internet, and lands on hope.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html" title="Stablecoins vs Tokenised Deposits in 2026: What Banks Actually Need to Defend">
-<img alt="Comparison diagram showing stablecoins, tokenised deposits, commercial bank money, reserve assets, wallets, settlement, liquidity, and bank balance sheets" src="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Stablecoins · Tokenised Deposits · Bank Strategy</span>
-<h3><a href="/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html">Stablecoins vs Tokenised Deposits in 2026: What Banks Actually Need to Defend</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-26">May 26, 2026</time></p>
-<p class="newsroom-excerpt">Stablecoins and tokenised deposits converge around programmable settlement but diverge on balance-sheet, legal, liquidity, and trust models. The 2026 strategic question for banks is design discipline — which money model carries which client workflow — and how to defend deposit franchise, settlement role, and regulated brand against private-issuer competition.</p>
 </div>
 </article>
 

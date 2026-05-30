@@ -1,11 +1,11 @@
 {
-  "description": "Nou algoritm cuantic polinomial al lui Yilei Chen vizează criptografia pe rețele cu implicații pentru standardele post-cuantice, inclusiv CRYSTALS-Kyber.",
-  "title": "Quantum Algorithm Challenges Lattice-Based Cryptography",
-  "language": "ro-RO",
   "subtitle": "Noul algoritm cuantic de timp polinomial pentru criptografia bazată pe rețele",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
-  "banner_alt": "Banner cu noduri de rețea într-un spațiu digital albastru",
   "date": "Apr 01, 2024",
+  "banner_alt": "Banner cu noduri de rețea într-un spațiu digital albastru",
+  "title": "Quantum Algorithm Challenges Lattice-Based Cryptography",
+  "description": "Nou algoritm cuantic polinomial al lui Yilei Chen vizează criptografia pe rețele cu implicații pentru standardele post-cuantice, inclusiv CRYSTALS-Kyber.",
   "keywords": "calcul cuantic, algoritm cuantic, criptografie pe rețele, LWE, criptare, criptografie post-cuantică, securitate cibernetică, Yilei Chen, cercetare în criptografie, amenințări la securitate",
-  "locale": "ro_RO"
+  "locale": "ro_RO",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
+  "language": "ro-RO"
 }
