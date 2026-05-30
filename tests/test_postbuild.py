@@ -2699,7 +2699,9 @@ def test_augment_sitemap_appends_missing_rendered_page(tmp_path):
     n = augment_sitemap_with_rendered_pages(tmp_path)
     assert n == 1
     out = (tmp_path / "sitemap.xml").read_text(encoding="utf-8")
-    assert "/topics/cloud-native-banking/index.html" in out
+    # Emitted in canonical pretty-URL form, not /index.html.
+    assert "<loc>https://sebastienrousseau.com/topics/cloud-native-banking/</loc>" in out
+    assert "/topics/cloud-native-banking/index.html" not in out
 
 
 def test_augment_sitemap_normalises_so_already_listed_pages_skip(tmp_path):
@@ -2765,7 +2767,115 @@ def test_augment_sitemap_handles_sitemap_without_lastmod(tmp_path):
     n = augment_sitemap_with_rendered_pages(tmp_path)
     assert n == 1
     out = (tmp_path / "sitemap.xml").read_text(encoding="utf-8")
-    assert "topics/foo/index.html" in out
+    # Emitted in canonical pretty-URL form, not /index.html.
+    assert "<loc>https://sebastienrousseau.com/topics/foo/</loc>" in out
+    assert "topics/foo/index.html" not in out
+
+
+# ---------------------------------------------------------------------------
+# dedupe_sitemap_index_html — drop/rewrite stale /<slug>/index.html entries
+
+
+def _sitemap_with_blocks(*blocks: str) -> str:
+    body = "\n".join(blocks)
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f"{body}\n"
+        '</urlset>\n'
+    )
+
+
+def _url_block(loc: str, lastmod: str = "2026-05-30", changefreq: str = "weekly") -> str:
+    return (
+        "<url>\n"
+        f"  <loc>{loc}</loc>\n"
+        f"  <lastmod>{lastmod}</lastmod>\n"
+        f"  <changefreq>{changefreq}</changefreq>\n"
+        "</url>"
+    )
+
+
+def test_dedupe_sitemap_drops_index_html_when_pretty_twin_exists(tmp_path):
+    """Both /<slug>/ and /<slug>/index.html present → drop the
+    index.html block, keep the pretty one (with its real lastmod)."""
+    from postbuild_lib.output import dedupe_sitemap_index_html
+    sm = tmp_path / "sitemap.xml"
+    sm.write_text(_sitemap_with_blocks(
+        _url_block("https://sebastienrousseau.com/foo/", lastmod="2026-05-30"),
+        _url_block("https://sebastienrousseau.com/foo/index.html", lastmod="2024-04-15"),
+    ), encoding="utf-8")
+    n = dedupe_sitemap_index_html(sm)
+    assert n == 1
+    out = sm.read_text(encoding="utf-8")
+    assert "<loc>https://sebastienrousseau.com/foo/</loc>" in out
+    assert "index.html" not in out
+    # The surviving block kept its correct lastmod, not the stale one.
+    assert "<lastmod>2026-05-30</lastmod>" in out
+    assert "<lastmod>2024-04-15</lastmod>" not in out
+
+
+def test_dedupe_sitemap_rewrites_orphan_index_html_to_pretty(tmp_path):
+    """Only /<slug>/index.html present (no pretty twin) → rewrite the
+    <loc> in place to the pretty form, preserve metadata."""
+    from postbuild_lib.output import dedupe_sitemap_index_html
+    sm = tmp_path / "sitemap.xml"
+    sm.write_text(_sitemap_with_blocks(
+        _url_block("https://sebastienrousseau.com/topics/orphan/index.html", lastmod="2026-04-01"),
+    ), encoding="utf-8")
+    n = dedupe_sitemap_index_html(sm)
+    assert n == 1
+    out = sm.read_text(encoding="utf-8")
+    assert "<loc>https://sebastienrousseau.com/topics/orphan/</loc>" in out
+    assert "index.html" not in out
+    # Original lastmod / changefreq preserved on the rewritten block.
+    assert "<lastmod>2026-04-01</lastmod>" in out
+    assert "<changefreq>weekly</changefreq>" in out
+
+
+def test_dedupe_sitemap_leaves_pretty_only_alone(tmp_path):
+    """No /index.html anywhere → function is a no-op (0 returned, file
+    unchanged)."""
+    from postbuild_lib.output import dedupe_sitemap_index_html
+    sm = tmp_path / "sitemap.xml"
+    original = _sitemap_with_blocks(
+        _url_block("https://sebastienrousseau.com/foo/"),
+        _url_block("https://sebastienrousseau.com/bar/"),
+    )
+    sm.write_text(original, encoding="utf-8")
+    assert dedupe_sitemap_index_html(sm) == 0
+    assert sm.read_text(encoding="utf-8") == original
+
+
+def test_dedupe_sitemap_no_op_when_sitemap_absent(tmp_path):
+    from postbuild_lib.output import dedupe_sitemap_index_html
+    assert dedupe_sitemap_index_html(tmp_path / "sitemap.xml") == 0
+
+
+def test_dedupe_sitemap_handles_mixed_at_scale(tmp_path):
+    """Realistic-shape sitemap with a mix of twinned dupes and orphans
+    converges to all-pretty in one pass."""
+    from postbuild_lib.output import dedupe_sitemap_index_html
+    sm = tmp_path / "sitemap.xml"
+    sm.write_text(_sitemap_with_blocks(
+        # Twinned: pretty + index.html for the same slug
+        _url_block("https://sebastienrousseau.com/a/", lastmod="2026-05-30"),
+        _url_block("https://sebastienrousseau.com/a/index.html", lastmod="2024-04-15"),
+        _url_block("https://sebastienrousseau.com/b/", lastmod="2026-05-29"),
+        _url_block("https://sebastienrousseau.com/b/index.html", lastmod="2024-04-15"),
+        # Orphan: only index.html form
+        _url_block("https://sebastienrousseau.com/orphan/index.html", lastmod="2026-05-01"),
+        # Already pretty, no twin
+        _url_block("https://sebastienrousseau.com/clean/", lastmod="2026-05-28"),
+    ), encoding="utf-8")
+    n = dedupe_sitemap_index_html(sm)
+    # 2 twin removals + 1 orphan rewrite = 3 blocks touched
+    assert n == 3
+    out = sm.read_text(encoding="utf-8")
+    assert "index.html" not in out
+    # All four canonical pretty URLs survive.
+    for loc in ("/a/", "/b/", "/orphan/", "/clean/"):
+        assert f"<loc>https://sebastienrousseau.com{loc}</loc>" in out
 
 
 # ---------------------------------------------------------------------------

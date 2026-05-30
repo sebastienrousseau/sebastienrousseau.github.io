@@ -1,11 +1,11 @@
 {
-  "title": "[UK DRAFT] Quantum Algorithm Challenges Lattice-Based Cryptography",
   "date": "Apr 01, 2024",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
-  "description": "Новий поліноміальний квантовий алгоритм Йілей Чена атакує криптографію на основі ґраток з наслідками для постквантових стандартів, зокрема CRYSTALS-Kyber.",
   "banner_alt": "Банер із вузлами мережі в цифровому синьому просторі",
-  "keywords": "квантові обчислення, квантовий алгоритм, криптографія на ґратках, LWE, шифрування, постквантова криптографія, кібербезпека, Yilei Chen, дослідження в криптографії, загрози безпеці",
-  "language": "uk-UA",
   "locale": "uk_UA",
-  "subtitle": "Новий поліноміальний квантовий алгоритм для криптографії на основі ґраток"
+  "language": "uk-UA",
+  "description": "Новий поліноміальний квантовий алгоритм Йілей Чена атакує криптографію на основі ґраток з наслідками для постквантових стандартів, зокрема CRYSTALS-Kyber.",
+  "keywords": "квантові обчислення, квантовий алгоритм, криптографія на ґратках, LWE, шифрування, постквантова криптографія, кібербезпека, Yilei Chen, дослідження в криптографії, загрози безпеці",
+  "subtitle": "Новий поліноміальний квантовий алгоритм для криптографії на основі ґраток",
+  "title": "[UK DRAFT] Quantum Algorithm Challenges Lattice-Based Cryptography",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp"
 }

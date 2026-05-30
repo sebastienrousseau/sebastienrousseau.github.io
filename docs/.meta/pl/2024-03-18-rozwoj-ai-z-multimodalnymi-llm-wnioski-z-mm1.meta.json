@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
-  "language": "pl-PL",
-  "keywords": "MM1, Apple, multimodalny LLM, AI, machine learning, pretreening, badania",
-  "description": "Analiza artykułu MM1 Apple o multimodalnych dużych modelach językowych: architektura, strategie pretreningu i pojawiające się możliwości.",
-  "title": "Rozwój AI z multimodalnymi LLM: wnioski z MM1",
-  "locale": "pl_PL",
-  "subtitle": "Analiza badań Apple nad multimodalnymi modelami językowymi",
   "banner_alt": "Architektura multimodalnego LLM MM1",
-  "date": "Mar 17, 2024"
+  "title": "Rozwój AI z multimodalnymi LLM: wnioski z MM1",
+  "language": "pl-PL",
+  "date": "Mar 17, 2024",
+  "description": "Analiza artykułu MM1 Apple o multimodalnych dużych modelach językowych: architektura, strategie pretreningu i pojawiające się możliwości.",
+  "subtitle": "Analiza badań Apple nad multimodalnymi modelami językowymi",
+  "keywords": "MM1, Apple, multimodalny LLM, AI, machine learning, pretreening, badania",
+  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
+  "locale": "pl_PL"
 }

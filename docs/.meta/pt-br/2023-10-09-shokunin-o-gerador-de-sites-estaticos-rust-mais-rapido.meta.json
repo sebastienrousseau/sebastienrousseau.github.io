@@ -1,11 +1,11 @@
 {
-  "language": "pt-BR",
-  "keywords": "Static Site Generator, generador de sitios estáticos, SSG, Rust, rendimiento, SEO, acessibilidade, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS",
-  "title": "Static Site Generator: o generador de sitios estáticos mais rápido basado em Rust",
-  "date": "October 9, 2023",
   "banner_alt": "Ordenador portátil apagado sobre uma mesa blanca com um vaso de agua a a esquerda e um bolígrafo, um cuaderno e uma planta a a direita",
-  "locale": "pt_BR",
+  "keywords": "Static Site Generator, generador de sitios estáticos, SSG, Rust, rendimiento, SEO, acessibilidade, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS",
+  "date": "October 9, 2023",
+  "title": "Static Site Generator: o generador de sitios estáticos mais rápido basado em Rust",
   "subtitle": "Um SSG ultrarrápido, accesible e optimizado para SEO, escrito em Rust",
+  "language": "pt-BR",
+  "description": "Cree sitios estáticos de alto impacto, escalables até ou infinito e enteramente sob seu control, gracias a Static Site Generator: um SSG ultrarrápido escrito em Rust.",
   "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
-  "description": "Cree sitios estáticos de alto impacto, escalables até ou infinito e enteramente sob seu control, gracias a Static Site Generator: um SSG ultrarrápido escrito em Rust."
+  "locale": "pt_BR"
 }
