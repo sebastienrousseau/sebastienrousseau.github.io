@@ -6,14 +6,14 @@
     <description>Labaran Hausa: AI mai amfani, biyan kuɗi na ISO 20022, kiriftografi bayan kwantum da sauye-sauyen biyan kuɗi na manyan.</description>
     <atom:link href="https://sebastienrousseau.com/ha/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ha-NG</language>
-    <lastBuildDate>Sat, 30 May 2026 14:48:09 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 06:21:45 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. An kiyaye duk hakkokin.</copyright>
     <item>
       <title>Kadarorin Dijital a 2026: Sauyin Ababen More Rayuwa da Bankuna Ba za su Iya Jinkirta ba</title>
       <link>https://sebastienrousseau.com/ha/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>Kadarorin dijital ba sake fasalin sabuntawa ba ne. Sun zama tambaya ta tsarin biyan kuɗi na ƙarshe, kulawa, da ma&apos;aunin daidaitawa. Aikin dabaru ga bankuna shi ne tsara ababen more rayuwa a ƙarƙashin rashin tabbas na tsari.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Sat, 30 May 2026 14:48:09 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 06:21:45 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>kadarorin dijital 2026</category>
@@ -26,6 +26,28 @@
       <category>motsi na kayan tabbatarwa</category>
       <category>kuɗi mai shirye-shirye</category>
       <category>dabarun banki kadarorin dijital</category>
+    </item>
+    <item>
+      <title>Ababen Biyan Kuɗi Bayan-Quantum: Me ya sa Bankuna za su Maye Gurbin Tsoffin Hanyoyi</title>
+      <link>https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>Cryptography bayan-quantum yana haifar wa bankuna tambaya mai wuya: inganta tsoffin hanyoyin biyan kuɗi ko maye gurbin su da ababen kintsattse na crypto kafin tara yanzu-warware daga baya.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ababen biyan kuɗi bayan-quantum 2026</category>
+      <category>post-quantum cryptography</category>
+      <category>PQC banki</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>kintsattse na crypto</category>
+      <category>HNDL</category>
+      <category>harvest-now-decrypt-later</category>
+      <category>HSM</category>
+      <category>SWIFT MT</category>
+      <category>ISO 20022</category>
+      <category>RTGS</category>
     </item>
     <item>
       <title>Kasuwannin Dijital na Yawa a Birtaniya: Gilts Tokenised, Sasantawa, da Sabon Matsayin Zakara</title>

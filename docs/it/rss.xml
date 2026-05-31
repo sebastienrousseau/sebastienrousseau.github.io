@@ -6,14 +6,14 @@
     <description>Articoli in italiano: IA applicata, pagamenti ISO 20022, crittografia post-quantistica e trasformazione dei pagamenti wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/it/rss.xml" rel="self" type="application/rss+xml"/>
     <language>it-IT</language>
-    <lastBuildDate>Sat, 30 May 2026 14:48:09 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 06:21:45 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Tutti i diritti riservati.</copyright>
     <item>
       <title>DORA, EU AI Act e sovranità dei dati: lo stack di conformità 2026 per le banche</title>
       <link>https://sebastienrousseau.com/it/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
       <description>DORA, EU AI Act, GDPR, rischio di concentrazione cloud e sovranità dei dati convergono nello stack di conformità 2026 per le banche europee.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
-      <pubDate>Sat, 30 May 2026 14:48:09 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 06:21:45 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>DORA 2026</category>
@@ -29,7 +29,7 @@
       <link>https://sebastienrousseau.com/it/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>Gli asset digitali non sono più una scommessa di innovazione: sono una questione di architettura di regolamento, custodia e bilancio. Il compito per le banche è progettare infrastrutture sotto incertezza strutturale.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Sat, 30 May 2026 14:48:09 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 06:21:45 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>asset digitali 2026</category>
@@ -48,7 +48,7 @@
       <link>https://sebastienrousseau.com/it/2026-05-23-agentic-pagamenti-banking-consent-liability-new-payment-ux-2026/</link>
       <description>Nel 2026 i pagamenti agentici sono passati dal concetto alla transazione reale. Per le banche la sfida non è più se gli agenti IA possano disporre pagamenti, ma come strutturare consenso, responsabilità, identità, auditabilità, controlli antifrode e interoperabilità dei protocolli.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-23-agentic-pagamenti-banking-consent-liability-new-payment-ux-2026/</guid>
-      <pubDate>Sat, 30 May 2026 14:48:09 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 06:21:45 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>pagamenti agentici 2026</category>
@@ -69,6 +69,27 @@
       <category>passkey</category>
       <category>UX bancaria</category>
       <category>commercio IA</category>
+    </item>
+    <item>
+      <title>Infrastruttura pagamenti post-quantistica: perché le banche sostituiranno i binari legacy invece di fare retrofit</title>
+      <link>https://sebastienrousseau.com/it/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>La crittografia post-quantistica pone alle banche una scelta netta: fare retrofit dei binari di pagamento legacy o sostituirli con infrastruttura cripto-agile.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>pagamenti post-quantistici 2026</category>
+      <category>PQC banking</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>infrastruttura di pagamento</category>
+      <category>agilità crittografica</category>
+      <category>HNDL</category>
+      <category>harvest-now-decrypt-later</category>
+      <category>ISO 20022</category>
+      <category>SWIFT MT</category>
+      <category>RTGS</category>
+      <category>HSM</category>
     </item>
     <item>
       <title>Mercati digitali all&apos;ingrosso nel Regno Unito: gilts tokenizzati, regolamento e il nuovo ruolo di champion</title>

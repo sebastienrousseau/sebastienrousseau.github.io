@@ -6,14 +6,14 @@
     <description>हिन्दी लेख: व्यावहारिक AI, ISO 20022 भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतान का रूपांतरण।</description>
     <atom:link href="https://sebastienrousseau.com/hi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>hi-IN</language>
-    <lastBuildDate>Sat, 30 May 2026 14:48:09 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 06:21:45 +0000</lastBuildDate>
     <copyright>© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।</copyright>
     <item>
       <title>यूके के थोक डिजिटल बाजार: टोकनीकृत गिल्ट्स, निपटान एवं नया चैम्पियन पद</title>
       <link>https://sebastienrousseau.com/hi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
       <description>यूके का Wholesale Digital Markets Champion पद टोकनीकृत थोक वित्त को राष्ट्रीय प्रतिस्पर्धात्मकता परियोजना बनाता है — गिल्ट्स, निपटान, साक्ष्य।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
-      <pubDate>Sat, 30 May 2026 14:48:09 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 06:21:45 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>थोक डिजिटल बाजार 2026</category>
@@ -32,7 +32,7 @@
       <link>https://sebastienrousseau.com/hi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>डिजिटल संपत्तियाँ अब नवाचार दांव नहीं रहीं। यह निपटान, कस्टडी और बैलेंस शीट की संरचनात्मक प्रश्न है। बैंकों का रणनीतिक कार्य संरचनात्मक अनिश्चितता के बीच अवसंरचना डिज़ाइन करना है।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Sat, 30 May 2026 14:48:09 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 06:21:45 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>डिजिटल संपत्तियाँ 2026</category>
@@ -45,6 +45,27 @@
       <category>संपार्श्विक गतिशीलता</category>
       <category>प्रोग्राम-योग्य मुद्रा</category>
       <category>बैंक रणनीति डिजिटल संपत्तियाँ</category>
+    </item>
+    <item>
+      <title>पोस्ट-क्वांटम भुगतान अवसंरचना: बैंक विरासत रेल का पुनर्निर्माण क्यों नहीं, प्रतिस्थापन क्यों करेंगे</title>
+      <link>https://sebastienrousseau.com/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>पोस्ट-क्वांटम क्रिप्टोग्राफी बैंकों के लिए कठिन प्रश्न खड़ा करती है: विरासत भुगतान रेल का पुनर्निर्माण करें या क्रिप्टो-चपल अवसंरचना से प्रतिस्थापन करें।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>पोस्ट-क्वांटम क्रिप्टोग्राफी</category>
+      <category>PQC बैंकिंग</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>भुगतान अवसंरचना</category>
+      <category>क्रिप्टो-चपलता</category>
+      <category>harvest-now-decrypt-later</category>
+      <category>HSM</category>
+      <category>SWIFT MT</category>
+      <category>ISO 20022</category>
+      <category>RTGS</category>
     </item>
     <item>
       <title>ISO 20022 माइग्रेशन के बाद: भुगतान डेटा को 2026 में बैंकिंग उत्पादों में बदलना</title>

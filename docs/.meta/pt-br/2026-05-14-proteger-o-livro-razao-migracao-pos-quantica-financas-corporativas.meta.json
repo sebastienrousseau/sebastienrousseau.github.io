@@ -1,11 +1,11 @@
 {
-  "language": "pt-BR",
-  "title": "Asegurar o libro contable: guía para consejos de administración sobre a migración pós-quântica em banca corporativa",
-  "keywords": "criptografia pós-quântica, ML-KEM, ML-DSA, FIPS 203, FIPS 204, BIS Project Leap, G7 CEG, NCSC, ANSSI, BSI, ASD, CNSA 2.0, agilidade criptográfica, banca corporativa, pagos wholesale",
-  "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp",
-  "description": "El riesgo quântico tem passado de a curiosidad acadêmica ao mandato normativo. Con a folha de ruta do G7 de enero de 2026, calendarios UE, UK e australiano agora aclarados, e BIS Project Leap que demonstrou a viabilidad em um sistema de pago real, a questão para os consejos de administración ya no é a migración, mas sim os prazos.",
-  "subtitle": "El riesgo quântico tem passado de a curiosidad acadêmica a um mandato normativo activo. La folha de ruta do G7, BIS Project Leap e os calendarios UE/UK/Australia plantean ya a questão no do cuándo, mas sim do cómo.",
   "banner_alt": "Puerta de caja fuerte abierta bañada em luz dorada — metáfora visual de a protección criptográfica de os arquivos financeiros",
   "locale": "pt_BR",
-  "date": "May 14, 2026"
+  "subtitle": "El riesgo quântico tem passado de a curiosidad acadêmica a um mandato normativo activo. La folha de ruta do G7, BIS Project Leap e os calendarios UE/UK/Australia plantean ya a questão no do cuándo, mas sim do cómo.",
+  "title": "Asegurar o libro contable: guía para consejos de administración sobre a migración pós-quântica em banca corporativa",
+  "keywords": "criptografia pós-quântica, ML-KEM, ML-DSA, FIPS 203, FIPS 204, BIS Project Leap, G7 CEG, NCSC, ANSSI, BSI, ASD, CNSA 2.0, agilidade criptográfica, banca corporativa, pagos wholesale",
+  "date": "May 14, 2026",
+  "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp",
+  "language": "pt-BR",
+  "description": "El riesgo quântico tem passado de a curiosidad acadêmica ao mandato normativo. Con a folha de ruta do G7 de enero de 2026, calendarios UE, UK e australiano agora aclarados, e BIS Project Leap que demonstrou a viabilidad em um sistema de pago real, a questão para os consejos de administración ya no é a migración, mas sim os prazos."
 }

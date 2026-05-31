@@ -6,14 +6,14 @@
     <description>한국어 기사: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 그리고 도매 결제 인프라의 구조적 변혁.</description>
     <atom:link href="https://sebastienrousseau.com/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>Sat, 30 May 2026 14:48:09 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 06:21:45 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
     <item>
       <title>디지털 자산 2026: 인프라 전환의 해</title>
       <link>https://sebastienrousseau.com/ko/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>디지털 자산은 더 이상 혁신 베팅이 아닙니다. 결제, 수탁, 대차대조표 아키텍처의 문제입니다. 은행의 전략적 과제는 구조적 불확실성 속에서의 인프라 설계입니다.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Sat, 30 May 2026 14:48:09 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 06:21:45 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>디지털 자산 2026</category>
@@ -26,6 +26,29 @@
       <category>담보 이동성</category>
       <category>프로그래밍 가능한 화폐</category>
       <category>은행 디지털 자산 전략</category>
+    </item>
+    <item>
+      <title>양자내성 결제 인프라 — 은행이 레거시 레일을 개조 대신 교체해야 하는 이유</title>
+      <link>https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>양자내성 암호는 은행에 까다로운 질문을 던집니다 — 레거시 결제 레일을 개조할 것인가, 암호 민첩성 인프라로 교체할 것인가가 2026년 이사회 의제입니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>양자내성 암호</category>
+      <category>PQC</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>수확 후 복호</category>
+      <category>HSM</category>
+      <category>SWIFT MT</category>
+      <category>ISO 20022</category>
+      <category>암호 민첩성</category>
+      <category>RTGS</category>
+      <category>결제 인프라 2026</category>
+      <category>양자내성 결제</category>
+      <category>레거시 레일 교체</category>
     </item>
     <item>
       <title>영국 도매 디지털 시장 2026: 토큰화 길트, 결제, 챔피언 직책</title>

@@ -1,12 +1,12 @@
 {
-  "date": "February 8, 2024",
   "language": "ko-KR",
-  "subtitle": "AI 기반 광고의 현황과 윤리",
-  "description": "AI가 광고의 미래를 형성하는 방식과, 업계가 마주한 기회와 윤리적 고려 사항.",
-  "banner_alt": "AI와 광고를 표현한 비주얼",
-  "banner": "https://cloudcdn.pro/stocks/images/joshua-earle-yEfPDcKR1uM-unsplash.webp",
+  "date": "February 8, 2024",
   "last_reviewed": "2026-05-16",
-  "locale": "ko_KR",
+  "description": "AI가 광고의 미래를 형성하는 방식과, 업계가 마주한 기회와 윤리적 고려 사항.",
+  "title": "AI가 미래를 형성하다: 광고의 혁신",
+  "banner_alt": "AI와 광고를 표현한 비주얼",
   "keywords": "AI, 광고, 개인화, 생성 AI, 윤리, 프라이버시, 딥페이크",
-  "title": "AI가 미래를 형성하다: 광고의 혁신"
+  "banner": "https://cloudcdn.pro/stocks/images/joshua-earle-yEfPDcKR1uM-unsplash.webp",
+  "subtitle": "AI 기반 광고의 현황과 윤리",
+  "locale": "ko_KR"
 }

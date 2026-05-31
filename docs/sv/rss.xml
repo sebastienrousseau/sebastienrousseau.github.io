@@ -6,14 +6,14 @@
     <description>Artiklar på svenska: tillämpad AI, ISO 20022-betalningar, postkvantkryptografi och transformationen av grossistbetalningar.</description>
     <atom:link href="https://sebastienrousseau.com/sv/rss.xml" rel="self" type="application/rss+xml"/>
     <language>sv-SE</language>
-    <lastBuildDate>Sat, 30 May 2026 14:48:09 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 06:21:45 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alla rättigheter förbehållna.</copyright>
     <item>
       <title>Digitala tillgångar 2026: infrastrukturövergången bankerna inte kan skjuta upp</title>
       <link>https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>Digitala tillgångar är inte längre en innovationssatsning. De är en arkitekturfråga för avveckling, förvaring och balansräkning. Bankernas strategiska uppgift är infrastrukturdesign under strukturell osäkerhet.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Sat, 30 May 2026 14:48:09 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 06:21:45 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>digitala tillgångar 2026</category>
@@ -26,6 +26,27 @@
       <category>säkerhetsmobilitet</category>
       <category>programmerbara pengar</category>
       <category>bankstrategi digitala tillgångar</category>
+    </item>
+    <item>
+      <title>Post-kvant-betalningsinfrastruktur: varför banker ersätter snarare än uppgraderar</title>
+      <link>https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>Post-kvantkryptografi tvingar fram ett strategiskt val: uppgradera äldre betalningsrails eller ersätta dem med kryptoagil infrastruktur och kvantsäkra revisionskedja.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>post-kvantkryptografi 2026</category>
+      <category>PQC bank</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>betalningsrails</category>
+      <category>kryptoagilitet</category>
+      <category>HNDL</category>
+      <category>skörda nu dekryptera senare</category>
+      <category>ISO 20022</category>
+      <category>HSM</category>
+      <category>SWIFT MT</category>
+      <category>RTGS</category>
     </item>
     <item>
       <title>Digitala grossistmarknader i Storbritannien: tokeniserade gilts och avveckling</title>

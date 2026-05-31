@@ -6,14 +6,14 @@
     <description>Artikelen in het Nederlands: toegepaste AI, ISO 20022-betalingen, post-kwantumcryptografie en transformatie van het wholesale-betalingsverkeer.</description>
     <atom:link href="https://sebastienrousseau.com/nl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>nl-NL</language>
-    <lastBuildDate>Sat, 30 May 2026 14:48:09 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 06:21:45 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle rechten voorbehouden.</copyright>
     <item>
       <title>DORA, EU AI Act en datasoevereiniteit: de compliance-stack 2026 voor banken</title>
       <link>https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
       <description>DORA, EU AI Act, GDPR, concentratierisico cloud en datasoevereiniteit smelten in 2026 samen tot één compliance-stack voor banken in Nederland.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
-      <pubDate>Sat, 30 May 2026 14:48:09 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 06:21:45 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>DORA 2026</category>
@@ -23,6 +23,28 @@
       <category>concentratierisico cloud</category>
       <category>AI-compliance financiële sector</category>
       <category>hoog-risico AI</category>
+    </item>
+    <item>
+      <title>Post-kwantum betalingsinfrastructuur: waarom banken legacy-rails eerder vervangen dan retrofitten</title>
+      <link>https://sebastienrousseau.com/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>Post-kwantumcryptografie stelt banken voor een harde keuze: legacy betalingsrails retrofitten of vervangen door crypto-wendbare infrastructuur. Architectuurdiscipline beslist.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>post-kwantumcryptografie</category>
+      <category>PQC banken</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>betalingsrails</category>
+      <category>crypto-wendbaarheid</category>
+      <category>harvest-now-decrypt-later</category>
+      <category>HSM</category>
+      <category>ISO 20022</category>
+      <category>SWIFT MT</category>
+      <category>RTGS</category>
+      <category>NIST</category>
+      <category>algoritme-rotatie</category>
     </item>
     <item>
       <title>Digitale wholesale-markten in het VK: getokeniseerde gilts, afwikkeling en de nieuwe Champion-rol</title>

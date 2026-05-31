@@ -235,6 +235,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html" title="Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails">
+<img alt="Post-quantum payments infrastructure diagram showing legacy rails, crypto-agility, ML-KEM, ML-DSA, HSMs, certificates, APIs, ISO 20022, and replacement pathways" src="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Post-Quantum Cryptography · Payments Infrastructure · Crypto-Agility</span>
+<h3><a href="/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html">Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-31">May 31, 2026</time></p>
+<p class="newsroom-excerpt">Post-quantum cryptography is the wedge that may force banks to replace rather than retrofit legacy payment rails. The 2026 question is design discipline — does the rail support crypto-agility, can certificates and HSMs be rotated in days not years, and is the audit chain quantum-safe before harvest-now-decrypt-later attacks compromise it.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html" title="Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role">
 <img alt="UK wholesale digital markets diagram showing tokenised gilts, settlement, digital assets, tokenised deposits, regulatory coordination, and capital markets infrastructure" src="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -291,18 +303,6 @@ site_software: "Static Site Generator, Rust"
 <h3><a href="/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html">AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-27">May 27, 2026</time></p>
 <p class="newsroom-excerpt">The 2026 AI operating system for payments wires fraud, routing, resilience, and compliance into a single workflow-speed decisioning layer. The strategic question for banks is design discipline — which AI controls run real time on which workflow — not which point tool to pilot.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html" title="Magnifica Humanitas: An AI-Industry Reading of the First Papal Encyclical on Artificial Intelligence">
-<img alt="Long-exposure photograph of light trails forming a path through darkness toward a luminous horizon, used as the visual key for an AI-ethics reading of the Magnifica Humanitas encyclical" src="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Magnifica Humanitas · Pope Leo XIV · AI Ethics</span>
-<h3><a href="/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html">Magnifica Humanitas: An AI-Industry Reading of the First Papal Encyclical on Artificial Intelligence</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-26">May 26, 2026</time></p>
-<p class="newsroom-excerpt">On 25 May 2026, Pope Leo XIV released Magnifica Humanitas — the first papal encyclical on artificial intelligence. Read from inside the technology industry, not as doctrine but as an ethical framework, it echoes every moral anxiety that accompanied the train, the automobile, nuclear power, and the internet, and lands on hope.</p>
 </div>
 </article>
 

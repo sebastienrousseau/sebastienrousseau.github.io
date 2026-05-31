@@ -8,9 +8,21 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>sv-SE</news:language>
     </news:publication>
-    <news:publication_date>2026-05-30T14:48:09+00:00</news:publication_date>
+    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
     <news:title>Digitala tillgångar 2026: infrastrukturövergången bankerna inte kan skjuta upp</news:title>
     <news:keywords>digitala tillgångar 2026, tokeniserade reala tillgångar, stablecoins bank, tokeniserade insättningar, förvaring digitala tillgångar, DLT bank, avvecklingsinfrastruktur, säkerhetsmobilitet, programmerbara pengar, bankstrategi digitala tillgångar</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv-SE</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T06:06:06+00:00</news:publication_date>
+    <news:title>Post-kvant-betalningsinfrastruktur: varför banker ersätter snarare än uppgraderar</news:title>
+    <news:keywords>post-kvantkryptografi 2026, PQC bank, ML-KEM, ML-DSA, betalningsrails, kryptoagilitet, HNDL, skörda nu dekryptera senare, ISO 20022, HSM, SWIFT MT, RTGS</news:keywords>
   </news:news>
 </url>
 <url>

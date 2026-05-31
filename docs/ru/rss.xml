@@ -6,14 +6,14 @@
     <description>Статьи на русском языке: прикладной ИИ, платежи ISO 20022, постквантовая криптография и трансформация оптовых платежей.</description>
     <atom:link href="https://sebastienrousseau.com/ru/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ru-RU</language>
-    <lastBuildDate>Sat, 30 May 2026 14:48:09 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 06:21:45 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Все права защищены.</copyright>
     <item>
       <title>Цифровые активы в 2026: инфраструктурный переход, который банки не могут откладывать</title>
       <link>https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>Цифровые активы перестали быть ставкой на инновацию. Это вопрос архитектуры расчётов, хранения и баланса. Стратегическая задача банков — проектировать инфраструктуру в условиях структурной неопределённости.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Sat, 30 May 2026 14:48:09 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 06:21:45 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>цифровые активы 2026</category>
@@ -26,6 +26,28 @@
       <category>мобильность обеспечения</category>
       <category>программируемые деньги</category>
       <category>стратегия банка по цифровым активам</category>
+    </item>
+    <item>
+      <title>Постквантовая платёжная инфраструктура: почему банки выбирают замену, а не модернизацию</title>
+      <link>https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>Постквантовая криптография ставит перед банками жёсткий выбор: модернизация унаследованных платёжных каналов или их замена криптоагильной инфраструктурой 2026.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>постквантовая криптография</category>
+      <category>PQC</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>HSM</category>
+      <category>ISO 20022</category>
+      <category>SWIFT MT</category>
+      <category>RTGS</category>
+      <category>криптоагильность</category>
+      <category>собрать сейчас расшифровать позже</category>
+      <category>harvest-now-decrypt-later</category>
+      <category>платёжная инфраструктура 2026</category>
     </item>
     <item>
       <title>Оптовые цифровые рынки Великобритании: токенизированные гилты, расчёт и новая роль координатора</title>

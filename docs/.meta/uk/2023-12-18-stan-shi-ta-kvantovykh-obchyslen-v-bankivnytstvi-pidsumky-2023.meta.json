@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Стан AI та Quantum Computing у банківництві: огляд 2023 року",
-  "description": "Технологічний ландшафт 2023 року: AI та Quantum Computing революціонізують банківництво, зростання open-source моделей та розвиток регулювання й управління",
-  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
-  "language": "uk-UA",
   "locale": "uk_UA",
-  "keywords": "AI у банківництві, Quantum Computing, фінансові технології, open-source AI, управління ризиками, квантова безпека, регулювання AI, етика AI, управління AI, банківські інновації",
-  "date": "Dec 18, 2023",
   "subtitle": "Формування майбутнього банківництва: AI, Quantum Computing, моделі з відкритим кодом та регуляторне середовище",
-  "title": "[UK DRAFT] State of AI and Quantum Computing in Banking: A 2023 Review"
+  "keywords": "AI у банківництві, Quantum Computing, фінансові технології, open-source AI, управління ризиками, квантова безпека, регулювання AI, етика AI, управління AI, банківські інновації",
+  "title": "[UK DRAFT] State of AI and Quantum Computing in Banking: A 2023 Review",
+  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
+  "banner_alt": "Стан AI та Quantum Computing у банківництві: огляд 2023 року",
+  "language": "uk-UA",
+  "date": "Dec 18, 2023",
+  "description": "Технологічний ландшафт 2023 року: AI та Quantum Computing революціонізують банківництво, зростання open-source моделей та розвиток регулювання й управління"
 }

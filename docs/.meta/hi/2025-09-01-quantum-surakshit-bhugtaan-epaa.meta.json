@@ -1,11 +1,11 @@
 {
   "title": "क्वांटम-सुरक्षित भुगतान: EPAA",
-  "language": "hi-IN",
+  "keywords": "EPAA, क्वांटम-सुरक्षित, post-quantum, ISO 20022, भुगतान, क्रिप्टोग्राफी, ML-DSA, Dilithium, NIST, बैंकिंग",
   "description": "EPAA — ISO 20022 भुगतान-संदेशों हेतु एक पोस्ट-क्वांटम प्रामाणीकरण-संरचना — एक खुले-मानक प्रस्ताव।",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
   "subtitle": "ISO 20022 पर एक पोस्ट-क्वांटम भुगतान-प्रामाणीकरण-संरचना",
+  "date": "September 01, 2025",
   "banner_alt": "क्वांटम-सुरक्षित भुगतान की प्रतीकात्मक छवि",
   "locale": "hi_IN",
-  "date": "September 01, 2025",
-  "keywords": "EPAA, क्वांटम-सुरक्षित, post-quantum, ISO 20022, भुगतान, क्रिप्टोग्राफी, ML-DSA, Dilithium, NIST, बैंकिंग",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
+  "language": "hi-IN"
 }

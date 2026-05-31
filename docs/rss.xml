@@ -6,8 +6,501 @@
     <description>AI, banking and payments expert. Senior payments leader. Applied AI, ISO 20022 migration, wholesale payments and post-quantum cryptography.</description>
     <atom:link href="https://sebastienrousseau.com/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Sat, 30 May 2026 06:06:06 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 06:06:06 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails</title>
+      <link>https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026</link>
+      <description>Post-quantum cryptography creates a hard question for banks: retrofit legacy payment rails or replace them with crypto-agile infrastructure.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>post-quantum cryptography</category>
+      <category>payments infrastructure</category>
+      <category>crypto-agility</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>HNDL</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>Post-Kuantum Ödeme Altyapısı: Bankalar Neden Eski Rayları Güçlendirmek Yerine Değiştirebilir</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Post-kuantum kriptografi bankalar için zor bir soru yaratıyor: eski ödeme raylarını güçlendirmek mi yoksa kripto-çevik altyapıyla değiştirmek mi.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Paz, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Teknoloji</category>
+      <category>post-kuantum kriptografi</category>
+      <category>ödeme altyapısı</category>
+      <category>kripto-çeviklik</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>HNDL</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>โครงสร้างพื้นฐานการชำระเงินหลังควอนตัม: เหตุใดธนาคารอาจทดแทนแทนที่จะปรับปรุงช่องทางระบบเก่า</title>
+      <link>https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>การเข้ารหัสหลังควอนตัมตั้งคำถามยากให้ธนาคาร: ปรับปรุงช่องทางการชำระเงินระบบเก่า หรือทดแทนด้วยโครงสร้างที่มีความคล่องตัวด้านการเข้ารหัสก่อนภัยคุกคามปี 2030 มาถึง</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>การเข้ารหัสหลังควอนตัม</category>
+      <category>โครงสร้างพื้นฐานการชำระเงิน</category>
+      <category>ความคล่องตัวด้านการเข้ารหัส</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>HNDL</category>
+      <category>ISO 20022</category>
+      <category>NIST</category>
+      <category>HSM</category>
+      <category>RTGS</category>
+    </item>
+    <item>
+      <title>Infraestructura de pagos poscuántica: por qué la banca reemplazará en lugar de adaptar</title>
+      <link>https://sebastienrousseau.com/es/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>La criptografía poscuántica plantea una pregunta dura a la banca: adaptar los raíles de pago heredados o reemplazarlos por infraestructura cripto-ágil para 2030.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>criptografía poscuántica</category>
+      <category>infraestructura de pagos</category>
+      <category>cripto-agilidad</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>HSM</category>
+      <category>harvest-now-decrypt-later</category>
+      <category>ISO 20022</category>
+      <category>NIST</category>
+    </item>
+    <item>
+      <title>Infrastructure de paiements post-quantique : pourquoi les banques peuvent remplacer plutôt que mettre à niveau les rails existants</title>
+      <link>https://sebastienrousseau.com/fr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>La cryptographie post-quantique pose une question difficile aux banques : mettre à niveau les rails de paiement existants ou les remplacer par une infrastructure crypto-agile.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>cryptographie post-quantique</category>
+      <category>infrastructure de paiement</category>
+      <category>agilité cryptographique</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>HNDL</category>
+      <category>ISO 20022</category>
+      <category>rails de paiement</category>
+    </item>
+    <item>
+      <title>Infrastruktur Pembayaran Pasca-Kuantum: Mengapa Bank Mungkin Mengganti, Bukan Retrofit, Jalur Warisan</title>
+      <link>https://sebastienrousseau.com/id/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Kriptografi pasca-kuantum memunculkan pertanyaan berat bagi bank: retrofit jalur pembayaran warisan atau menggantinya dengan infrastruktur tangkas kriptografi.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>kriptografi pasca-kuantum</category>
+      <category>infrastruktur pembayaran</category>
+      <category>ketangkasan kriptografi</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>HNDL</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>양자내성 결제 인프라 — 은행이 레거시 레일을 개조 대신 교체해야 하는 이유</title>
+      <link>https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>양자내성 암호는 은행에 까다로운 질문을 던집니다 — 레거시 결제 레일을 개조할 것인가, 암호 민첩성 인프라로 교체할 것인가가 2026년 이사회 의제입니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>양자내성 암호</category>
+      <category>결제 인프라</category>
+      <category>암호 민첩성</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>수확 후 복호</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>Post-Quanten-Zahlungsinfrastruktur 2026: Warum Banken Bestands-Rails ersetzen statt nachrüsten</title>
+      <link>https://sebastienrousseau.com/de/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Post-Quanten-Kryptographie stellt Banken vor eine harte Frage: Bestands-Zahlungs-Rails nachrüsten oder durch kryptographie-agile Infrastruktur ersetzen.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technologie</category>
+      <category>Post-Quanten-Kryptographie</category>
+      <category>Zahlungsinfrastruktur</category>
+      <category>Kryptographie-Agilität</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>HNDL</category>
+      <category>ISO 20022</category>
+      <category>SWIFT MT</category>
+    </item>
+    <item>
+      <title>पोस्ट-क्वांटम भुगतान अवसंरचना: बैंक विरासत रेल का पुनर्निर्माण क्यों नहीं, प्रतिस्थापन क्यों करेंगे</title>
+      <link>https://sebastienrousseau.com/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>पोस्ट-क्वांटम क्रिप्टोग्राफी बैंकों के लिए कठिन प्रश्न खड़ा करती है: विरासत भुगतान रेल का पुनर्निर्माण करें या क्रिप्टो-चपल अवसंरचना से प्रतिस्थापन करें।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>पोस्ट-क्वांटम क्रिप्टोग्राफी</category>
+      <category>भुगतान अवसंरचना</category>
+      <category>क्रिप्टो-चपलता</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>HNDL</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>Post-Quantum Payments Infrastructure: Bakit Maaaring Palitan ng mga Bangko ang Legacy Rails sa Halip na I-retrofit</title>
+      <link>https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Naglalatag ang post-quantum cryptography ng matinding tanong sa mga bangko: i-retrofit ang legacy payment rails o palitan ang mga ito ng crypto-agile na imprastraktura.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>post-quantum cryptography</category>
+      <category>payments infrastructure</category>
+      <category>crypto-agility</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>harvest-now-decrypt-later</category>
+      <category>ISO 20022</category>
+      <category>HSM</category>
+      <category>RTGS</category>
+    </item>
+    <item>
+      <title>পোস্ট-কোয়ান্টাম পেমেন্ট পরিকাঠামো: কেন ব্যাংক লিগ্যাসি রেল আপগ্রেড নয়, প্রতিস্থাপন করতে পারে</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি ব্যাংকের সামনে কঠিন প্রশ্ন তুলেছে: লিগ্যাসি পেমেন্ট রেল আপগ্রেড, না ক্রিপ্টো-চটপটে পরিকাঠামো দিয়ে প্রতিস্থাপন করবেন।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি</category>
+      <category>পেমেন্টস অবকাঠামো</category>
+      <category>ক্রিপ্টো-চটপটেতা</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>HNDL</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>Post-kwantum betalingsinfrastructuur: waarom banken legacy-rails eerder vervangen dan retrofitten</title>
+      <link>https://sebastienrousseau.com/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Post-kwantumcryptografie stelt banken voor een harde keuze: legacy betalingsrails retrofitten of vervangen door crypto-wendbare infrastructuur. Architectuurdiscipline beslist.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>post-kwantumcryptografie</category>
+      <category>betalingsinfrastructuur</category>
+      <category>crypto-wendbaarheid</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>harvest-now-decrypt-later</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>Infraestrutura de Pagamentos Pós-Quânticos: Substituir em Vez de Adaptar Trilhos Legados</title>
+      <link>https://sebastienrousseau.com/pt-br/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>A criptografia pós-quântica impõe uma pergunta dura aos bancos: adaptar trilhos de pagamento legados ou substituí-los por infraestrutura cripto-ágil em 2026.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>criptografia pós-quântica</category>
+      <category>infraestrutura de pagamentos</category>
+      <category>cripto-agilidade</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>harvest-now-decrypt-later</category>
+      <category>ISO 20022</category>
+      <category>RTGS</category>
+      <category>SWIFT MT</category>
+      <category>HSM</category>
+    </item>
+    <item>
+      <title>البنية التحتية للمدفوعات ما بعد الكمية: لماذا قد تستبدل البنوك المسارات القديمة بدل تحديثها</title>
+      <link>https://sebastienrousseau.com/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>التشفير ما بعد الكمي يطرح سؤالاً صعباً على البنوك: تحديث مسارات الدفع القديمة أم استبدالها ببنية تحتية ذات مرونة تشفيرية لمواجهة 2026.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>التشفير ما بعد الكمي</category>
+      <category>البنية التحتية للمدفوعات</category>
+      <category>المرونة التشفيرية</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>HNDL</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>Ababen Biyan Kuɗi Bayan-Quantum: Me ya sa Bankuna za su Maye Gurbin Tsoffin Hanyoyi</title>
+      <link>https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Cryptography bayan-quantum yana haifar wa bankuna tambaya mai wuya: inganta tsoffin hanyoyin biyan kuɗi ko maye gurbin su da ababen kintsattse na crypto kafin tara yanzu-warware daga baya.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>post-quantum cryptography</category>
+      <category>ababen biyan kuɗi</category>
+      <category>kintsattse na crypto</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>harvest-now-decrypt-later</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>Постквантова платіжна інфраструктура: чому банки замінять, а не модернізують канали</title>
+      <link>https://sebastienrousseau.com/uk/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Постквантова криптографія ставить перед банками жорстке питання: модернізувати застарілі платіжні канали чи замінити їх криптоагільною інфраструктурою у 2026 році.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Технології</category>
+      <category>постквантова криптографія</category>
+      <category>інфраструктура платежів</category>
+      <category>криптоагільність</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>HNDL</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>Ìgbékalẹ̀ Ìsanwó Post-Quantum: Ìdí Tí Àwọn Báńkì Fi Lè Rọ́pò Dípò Ìmúdára</title>
+      <link>https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Cryptography lẹ́yìn-quantum dá ìbéèrè líle fún àwọn báńkì: ìmúdára àwọn ọ̀nà ìsanwó àtẹ́lé tàbí rírọ́pò wọn pẹ̀lú ìgbékalẹ̀ ìyára nínú crypto.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>post-quantum cryptography</category>
+      <category>ìgbékalẹ̀ ìsanwó</category>
+      <category>crypto-agility</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>HNDL</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>Infrastructură de plăți post-cuantice: de ce băncile vor înlocui, nu moderniza, căile legacy</title>
+      <link>https://sebastienrousseau.com/ro/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Criptografia post-cuantică ridică o întrebare dificilă pentru bănci: modernizare a căilor de plată legacy sau înlocuire cu o infrastructură cripto-agilă.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Tehnologie</category>
+      <category>criptografie post-cuantică</category>
+      <category>infrastructură de plăți</category>
+      <category>agilitate criptografică</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>HNDL</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>Постквантовая платёжная инфраструктура: почему банки выбирают замену, а не модернизацию</title>
+      <link>https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Постквантовая криптография ставит перед банками жёсткий выбор: модернизация унаследованных платёжных каналов или их замена криптоагильной инфраструктурой 2026.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>постквантовая криптография</category>
+      <category>платёжная инфраструктура</category>
+      <category>криптоагильность</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>HNDL</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>Postkvantová platební infrastruktura: proč banky raději nahradí starší rails než je modernizují</title>
+      <link>https://sebastienrousseau.com/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Postkvantová kryptografie staví banky před zásadní otázku: modernizovat starší platební rails, nebo je nahradit kryptograficky agilní infrastrukturou.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>postkvantová kryptografie</category>
+      <category>platební infrastruktura</category>
+      <category>kryptografická agilita</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>HNDL</category>
+      <category>ISO 20022</category>
+      <category>SWIFT MT</category>
+      <category>HSM</category>
+      <category>NIST</category>
+      <category>RTGS</category>
+    </item>
+    <item>
+      <title>Infrastruttura pagamenti post-quantistica: perché le banche sostituiranno i binari legacy invece di fare retrofit</title>
+      <link>https://sebastienrousseau.com/it/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>La crittografia post-quantistica pone alle banche una scelta netta: fare retrofit dei binari di pagamento legacy o sostituirli con infrastruttura cripto-agile.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>crittografia post-quantistica</category>
+      <category>infrastruttura di pagamento</category>
+      <category>agilità crittografica</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>HNDL</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>耐量子決済インフラ ― 銀行がレガシーレールをレトロフィットせず置き換える理由</title>
+      <link>https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>耐量子暗号は銀行に重い問いを突きつける ― レガシー決済レールにレトロフィットするか、暗号アジリティ前提のインフラに置き換えるかである。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>耐量子暗号</category>
+      <category>決済インフラ</category>
+      <category>暗号アジリティ</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>HNDL</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>תשתית תשלומים פוסט-קוונטית: מדוע בנקים יחליפו ולא ישדרגו ערוצי מורשת</title>
+      <link>https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>קריפטוגרפיה פוסט-קוונטית מציבה בפני הדירקטוריון שאלת תשתית: לשדרג ערוצי תשלום מורשת עם ML-KEM/ML-DSA או להחליפם בארכיטקטורה גמישה קריפטוגרפית.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>קריפטוגרפיה פוסט-קוונטית</category>
+      <category>תשתית תשלומים</category>
+      <category>גמישות קריפטוגרפית</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>HNDL</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>Post-kvant-betalningsinfrastruktur: varför banker ersätter snarare än uppgraderar</title>
+      <link>https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Post-kvantkryptografi tvingar fram ett strategiskt val: uppgradera äldre betalningsrails eller ersätta dem med kryptoagil infrastruktur och kvantsäkra revisionskedja.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>post-kvantkryptografi</category>
+      <category>betalningsinfrastruktur</category>
+      <category>kryptoagilitet</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>HNDL</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>Hạ tầng thanh toán hậu lượng tử: Vì sao ngân hàng nên thay thế thay vì nâng cấp kênh kế thừa</title>
+      <link>https://sebastienrousseau.com/vi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Mật mã hậu lượng tử đặt ra câu hỏi khó cho ngân hàng: nâng cấp kênh thanh toán kế thừa hay thay thế bằng hạ tầng linh hoạt mật mã trước khi đối thủ giải mã các bản thu thập 2030.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Công nghệ</category>
+      <category>mật mã hậu lượng tử</category>
+      <category>hạ tầng thanh toán</category>
+      <category>khả năng linh hoạt mật mã</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>HNDL</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>Infrastruktura platnosci post-kwantowych: dlaczego banki zastapia, a nie zmodernizuja, starsze tory</title>
+      <link>https://sebastienrousseau.com/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Kryptografia post-kwantowa stawia banki przed trudnym pytaniem: modernizowac starsze tory platnicze czy zastapic je infrastruktura z kryptograficzna zwinnoscia.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technologia</category>
+      <category>kryptografia post-kwantowa</category>
+      <category>infrastruktura platnicza</category>
+      <category>kryptograficzna zwinnosc</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>HNDL</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>後量子支付基礎建設:為何銀行可能替換而非改造遺留軌道</title>
+      <link>https://sebastienrousseau.com/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>後量子密碼學迫使董事會抉擇:改造遺留支付軌道,或以密碼敏捷基礎建設替換?ML-KEM、ML-DSA、HSM 與現採後解皆是 2026 決策關鍵。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>後量子密碼學</category>
+      <category>支付基礎建設</category>
+      <category>密碼敏捷性</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>現採後解</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>后量子支付基础设施：银行为何可能替换而非改造遗留通道</title>
+      <link>https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>后量子密码迫使银行作出一道硬性选择：改造遗留支付通道，抑或以具备密码敏捷性的基础设施将其替换。2026 年的命题是架构纪律。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>post-quantum cryptography</category>
+      <category>后量子密码</category>
+      <category>支付基础设施</category>
+      <category>密码敏捷性</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>现采后解</category>
+      <category>ISO 20022</category>
+    </item>
     <item>
       <title>Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role</title>
       <link>https://sebastienrousseau.com/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026</link>
@@ -361,483 +854,6 @@
       <category>英国トークン化</category>
       <category>DLT 決済</category>
       <category>担保モビリティ</category>
-    </item>
-    <item>
-      <title>שווקים דיגיטליים סיטונאיים בבריטניה: גילט מתורמזים, סליקה ותפקיד האלוף החדש</title>
-      <link>https://sebastienrousseau.com/he/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>תפקיד אלוף השווקים הדיגיטליים הסיטונאיים בבריטניה הופך מימון סיטונאי מתורמז לפרויקט תחרותיות לאומי המאחד גילט, סליקה וזירות DLT.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>שווקים דיגיטליים סיטונאיים</category>
-      <category>גילט מתורמזים</category>
-      <category>Chris Woolard</category>
-      <category>תרמוז בריטניה</category>
-      <category>סליקה</category>
-      <category>ניידות בטחונות</category>
-    </item>
-    <item>
-      <title>Digitala grossistmarknader i Storbritannien: tokeniserade gilts och avveckling</title>
-      <link>https://sebastienrousseau.com/sv/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>Storbritanniens Wholesale Digital Markets Champion gör tokeniserade gilts och DLT-avveckling till ett nationellt konkurrenskraftsprojekt 2026.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>digitala grossistmarknader</category>
-      <category>tokeniserade gilts</category>
-      <category>Wholesale Digital Markets Champion</category>
-      <category>tokenisering Storbritannien</category>
-      <category>avveckling</category>
-      <category>säkerhetsmobilitet</category>
-    </item>
-    <item>
-      <title>Thị trường Số Bán buôn tại Anh: Gilt Mã hóa, Quyết toán và Vai trò Điều phối</title>
-      <link>https://sebastienrousseau.com/vi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>Vai trò Điều phối viên Thị trường Số Bán buôn của Anh biến tài chính bán buôn mã hóa thành dự án năng lực cạnh tranh quốc gia, đặt gilt và quyết toán DLT vào tâm điểm.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>thị trường số bán buôn</category>
-      <category>gilt mã hóa</category>
-      <category>Chris Woolard</category>
-      <category>tokenisation Anh</category>
-      <category>quyết toán</category>
-      <category>tính di động của tài sản đảm bảo</category>
-    </item>
-    <item>
-      <title>Hurtowe rynki cyfrowe w UK: tokenizowane gilty, rozliczenie i champion</title>
-      <link>https://sebastienrousseau.com/pl/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>Rola Wholesale Digital Markets Champion w Wielkiej Brytanii zamienia tokenizowane finanse hurtowe w narodowy projekt konkurencyjnosci dla Cite of London.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finanse</category>
-      <category>hurtowe rynki cyfrowe</category>
-      <category>tokenizowane gilty</category>
-      <category>Chris Woolard</category>
-      <category>tokenizacja UK</category>
-      <category>rozliczenie</category>
-      <category>mobilnosc kolateralu</category>
-    </item>
-    <item>
-      <title>英國批發數位市場:代幣化金邊債、清算與全新推動者一職</title>
-      <link>https://sebastienrousseau.com/zh-hant/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>英國「批發數位市場推動者」一職將代幣化批發金融升格為國家競爭力工程,設計紀律取代分散試點成為 2026 年董事會議題。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>批發數位市場</category>
-      <category>代幣化金邊債</category>
-      <category>Chris Woolard</category>
-      <category>英國代幣化</category>
-      <category>清算</category>
-      <category>抵押品流動性</category>
-    </item>
-    <item>
-      <title>英国批发数字市场:代币化国债、结算与新设的协调者角色</title>
-      <link>https://sebastienrousseau.com/zh-hans/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>英国批发数字市场协调者(Champion)角色把代币化批发金融升格为国家竞争力工程,重塑伦敦金融城在代币化国债与结算上的运营模型。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>批发数字市场</category>
-      <category>代币化国债</category>
-      <category>Chris Woolard</category>
-      <category>英国代币化</category>
-      <category>结算</category>
-      <category>担保品流动性</category>
-    </item>
-    <item>
-      <title>ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026</title>
-      <link>https://sebastienrousseau.com/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026</link>
-      <description>ISO 20022 after migration is a data-product opportunity. Structured addresses, purpose codes, invoice details, investigation messages, and richer payment status events can become reconciliation, fraud, liquidity, compliance, and analytics products.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026</guid>
-      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ISO 20022</category>
-      <category>structured address</category>
-      <category>CBPR+</category>
-      <category>payment data</category>
-      <category>reconciliation</category>
-      <category>sanctions screening</category>
-      <category>fraud detection</category>
-    </item>
-    <item>
-      <title>ISO 20022 Göçten Sonra: Ödeme Verisini 2026'da Banka Ürünlerine Dönüştürmek</title>
-      <link>https://sebastienrousseau.com/tr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</link>
-      <description>ISO 20022 göçten sonra bir ödeme verisi ürünleri fırsatıdır. Yapılandırılmış adresler, amaç kodları, fatura ayrıntıları, soruşturma mesajları ve zengin ödeme statü olayları 2026 banka platformudur.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</guid>
-      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ISO 20022</category>
-      <category>yapılandırılmış adres</category>
-      <category>CBPR+</category>
-      <category>ödeme verisi</category>
-      <category>mutabakat</category>
-      <category>yaptırım taraması</category>
-      <category>dolandırıcılık tespiti</category>
-      <category>pacs.008</category>
-      <category>pain.001</category>
-    </item>
-    <item>
-      <title>ISO 20022 หลังการย้ายระบบ: เปลี่ยนข้อมูลการชำระเงินเป็นผลิตภัณฑ์ธนาคารในปี 2026</title>
-      <link>https://sebastienrousseau.com/th/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</link>
-      <description>ISO 20022 หลังการย้ายระบบคือโอกาสของผลิตภัณฑ์ข้อมูล ที่อยู่แบบมีโครงสร้าง รหัสวัตถุประสงค์ ข้อมูลการโอน และข้อความตรวจสอบกลายเป็นผลิตภัณฑ์การกระทบยอด การฉ้อโกง สภาพคล่อง และการปฏิบัติตามกฎสำหรับธนาคารในปี 2026</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</guid>
-      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ISO 20022</category>
-      <category>ที่อยู่แบบมีโครงสร้าง</category>
-      <category>CBPR+</category>
-      <category>ข้อมูลการชำระเงิน</category>
-      <category>การกระทบยอด</category>
-      <category>การคัดกรองการคว่ำบาตร</category>
-      <category>การตรวจจับการฉ้อโกง</category>
-    </item>
-    <item>
-      <title>ISO 20022 tras la migración: convertir datos de pagos en productos bancarios en 2026</title>
-      <link>https://sebastienrousseau.com/es/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</link>
-      <description>ISO 20022 tras la migración es una oportunidad de producto de datos: direcciones estructuradas, códigos de propósito, remesa enriquecida y mensajes de investigación se vuelven productos de conciliación, fraude y liquidez.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</guid>
-      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ISO 20022</category>
-      <category>dirección estructurada</category>
-      <category>CBPR+</category>
-      <category>datos de pagos</category>
-      <category>conciliación</category>
-      <category>cribado de sanciones</category>
-      <category>detección de fraude</category>
-    </item>
-    <item>
-      <title>ISO 20022 après migration : transformer la donnée de paiement en produits bancaires en 2026</title>
-      <link>https://sebastienrousseau.com/fr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</link>
-      <description>ISO 20022 après migration : un terrain de produits de données. Adresses structurées, codes d&apos;objet, détails de facture, messages d&apos;investigation et statuts enrichis deviennent rapprochement, fraude, liquidité et conformité.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</guid>
-      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ISO 20022</category>
-      <category>adresse structurée</category>
-      <category>CBPR+</category>
-      <category>données de paiement</category>
-      <category>rapprochement</category>
-      <category>filtrage sanctions</category>
-      <category>détection fraude</category>
-    </item>
-    <item>
-      <title>ISO 20022 Pasca-Migrasi: Mengubah Data Pembayaran Menjadi Produk Bank 2026</title>
-      <link>https://sebastienrousseau.com/id/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</link>
-      <description>ISO 20022 pasca-migrasi adalah peluang produk data. Alamat terstruktur, kode tujuan, detail faktur, dan pesan investigasi menjadi produk rekonsiliasi, penipuan, likuiditas, kepatuhan, dan analitik bank.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</guid>
-      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ISO 20022</category>
-      <category>alamat terstruktur</category>
-      <category>CBPR+</category>
-      <category>data pembayaran</category>
-      <category>rekonsiliasi</category>
-      <category>penyaringan sanksi</category>
-      <category>deteksi penipuan</category>
-    </item>
-    <item>
-      <title>ISO 20022 마이그레이션 이후: 2026년 결제 데이터를 은행 제품으로</title>
-      <link>https://sebastienrousseau.com/ko/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</link>
-      <description>ISO 20022 마이그레이션 이후는 데이터 제품 기회입니다. 구조화 주소, 용도 코드, 송장 정보, 조사 메시지, 풍부한 결제 상태 이벤트가 대사·사기·유동성·컴플라이언스·분석 제품으로 전환됩니다.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</guid>
-      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ISO 20022</category>
-      <category>구조화 주소</category>
-      <category>CBPR+</category>
-      <category>결제 데이터</category>
-      <category>대사</category>
-      <category>제재 스크리닝</category>
-      <category>사기 탐지</category>
-    </item>
-    <item>
-      <title>ISO 20022 nach Migration: Zahlungsdaten als Bankprodukte 2026</title>
-      <link>https://sebastienrousseau.com/de/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</link>
-      <description>ISO 20022 nach der Migration ist eine Chance für Zahlungs-Datenprodukte. Strukturierte Adressen, Verwendungszweck-Codes, Rechnungsdetails, Untersuchungs-Nachrichten und reichere Statusereignisse werden zu Abstimmung, Betrugserkennung, Liquidität und Compliance.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</guid>
-      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finanzen</category>
-      <category>ISO 20022</category>
-      <category>strukturierte Adresse</category>
-      <category>CBPR+</category>
-      <category>Zahlungsdaten</category>
-      <category>Abstimmung</category>
-      <category>Sanktions-Screening</category>
-      <category>Betrugserkennung</category>
-    </item>
-    <item>
-      <title>ISO 20022 माइग्रेशन के बाद: भुगतान डेटा को 2026 में बैंकिंग उत्पादों में बदलना</title>
-      <link>https://sebastienrousseau.com/hi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</link>
-      <description>ISO 20022 माइग्रेशन के बाद डेटा उत्पाद अवसर है। संरचित पते, उद्देश्य कोड, चालान विवरण और समृद्ध स्थिति घटनाएँ मिलान, धोखाधड़ी, तरलता और अनुपालन उत्पाद बनती हैं।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</guid>
-      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ISO 20022</category>
-      <category>संरचित पता</category>
-      <category>CBPR+</category>
-      <category>भुगतान डेटा</category>
-      <category>मिलान</category>
-      <category>प्रतिबंध स्क्रीनिंग</category>
-      <category>धोखाधड़ी पहचान</category>
-    </item>
-    <item>
-      <title>ISO 20022 Pagkatapos ng Migration: Payment Data tungo sa Produkto ng Bangko 2026</title>
-      <link>https://sebastienrousseau.com/fil/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</link>
-      <description>Pagkatapos ng migration, ang ISO 20022 ay isang pagkakataon para sa mga payment data product — structured address, purpose code, impormasyon ng remittance, investigation message, at reconciliation bilang produkto ng bangko.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</guid>
-      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ISO 20022</category>
-      <category>structured address</category>
-      <category>CBPR+</category>
-      <category>datos ng pagbabayad</category>
-      <category>rekonsilyasyon</category>
-      <category>sanctions screening</category>
-      <category>pagtuklas ng pandaraya</category>
-    </item>
-    <item>
-      <title>ISO 20022 মাইগ্রেশনের পরে: পেমেন্ট ডেটাকে ব্যাংকিং পণ্যে রূপান্তর ২০২৬</title>
-      <link>https://sebastienrousseau.com/bn/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</link>
-      <description>ISO 20022 মাইগ্রেশনের পরে আসল পুরস্কার পেমেন্ট ডেটা পণ্য — কাঠামোগত ঠিকানা, উদ্দেশ্য কোড, রেমিট্যান্স তথ্য ও তদন্ত বার্তা থেকে মিলকরণ, জালিয়াতি, তারল্য ও কমপ্লায়েন্স পণ্য গড়ে ওঠে।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</guid>
-      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ISO 20022</category>
-      <category>কাঠামোগত ঠিকানা</category>
-      <category>CBPR+</category>
-      <category>পেমেন্ট ডেটা</category>
-      <category>মিলকরণ</category>
-      <category>নিষেধাজ্ঞা স্ক্রিনিং</category>
-      <category>জালিয়াতি শনাক্তকরণ</category>
-    </item>
-    <item>
-      <title>ISO 20022 na migratie: betaaldata omzetten in bankproducten in 2026</title>
-      <link>https://sebastienrousseau.com/nl/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</link>
-      <description>ISO 20022 na migratie is een productkans op data. Gestructureerde adressen, doel-codes, factuurdetails, onderzoeksberichten en rijkere statusgebeurtenissen worden reconciliatie-, fraude-, liquiditeits- en analyseproducten voor banken.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</guid>
-      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ISO 20022</category>
-      <category>gestructureerd adres</category>
-      <category>CBPR+</category>
-      <category>betaaldata</category>
-      <category>reconciliatie</category>
-      <category>sanctiescreening</category>
-      <category>fraudedetectie</category>
-    </item>
-    <item>
-      <title>ISO 20022 Pós-Migração: Transformando Dados de Pagamento em Produtos Bancários em 2026</title>
-      <link>https://sebastienrousseau.com/pt-br/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</link>
-      <description>ISO 20022 após a migração é uma oportunidade de produto de dados. Endereços estruturados, códigos de finalidade, detalhes de fatura, mensagens de investigação e eventos de status mais ricos viram produtos de conciliação, fraude, liquidez, compliance e analytics.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</guid>
-      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ISO 20022</category>
-      <category>endereço estruturado</category>
-      <category>CBPR+</category>
-      <category>dados de pagamento</category>
-      <category>conciliação</category>
-      <category>triagem de sanções</category>
-      <category>detecção de fraude</category>
-    </item>
-    <item>
-      <title>ISO 20022 بعد الترحيل: تحويل بيانات المدفوعات إلى منتجات مصرفية في 2026</title>
-      <link>https://sebastienrousseau.com/ar/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</link>
-      <description>ISO 20022 بعد الترحيل فرصةُ منتج بيانات: العنوان المنظم ورمز الغرض ومعلومات التحويل ورسائل التحقيق وأحداث حالة المدفوعات الغنية تُصبح منتجات تسوية واحتيال وسيولة وامتثال وتحليلات للمصارف.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</guid>
-      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ISO 20022</category>
-      <category>pacs.008</category>
-      <category>pain.001</category>
-      <category>CBPR+</category>
-      <category>SWIFT gpi</category>
-      <category>SEPA Instant</category>
-      <category>FedNow</category>
-      <category>structured address</category>
-      <category>payment data products</category>
-      <category>reconciliation</category>
-      <category>sanctions screening</category>
-      <category>fraud detection</category>
-    </item>
-    <item>
-      <title>ISO 20022 Bayan Ƙaura: Juyar da Bayanan Biyan Kuɗi zuwa Kayayyakin Banki a 2026</title>
-      <link>https://sebastienrousseau.com/ha/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</link>
-      <description>ISO 20022 bayan ƙaura damar samfurin bayanai ce. Adireshi mai tsari, lambobin manufa, bayanan daftari, saƙonnin bincike, da abubuwan da suka faru na biyan kuɗi za su zama kayayyakin daidaitawa, zamba, kuɗi, da bin doka.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</guid>
-      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ISO 20022</category>
-      <category>adireshi mai tsari</category>
-      <category>CBPR+</category>
-      <category>bayanan biyan kuɗi</category>
-      <category>daidaitawa</category>
-      <category>gwajin takunkumi</category>
-      <category>gano zamba</category>
-    </item>
-    <item>
-      <title>ISO 20022 після міграції: перетворення платіжних даних на банківські продукти у 2026</title>
-      <link>https://sebastienrousseau.com/uk/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</link>
-      <description>ISO 20022 після міграції — це шанс на продукт даних. Структуровані адреси, коди призначення, реквізити рахунків, запити-розслідування та збагачені події статусу стають продуктами звіряння, шахрайства, ліквідності й комплаєнсу.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</guid>
-      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ISO 20022</category>
-      <category>структурована адреса</category>
-      <category>CBPR+</category>
-      <category>платіжні дані</category>
-      <category>звіряння</category>
-      <category>скринінг санкцій</category>
-      <category>виявлення шахрайства</category>
-    </item>
-    <item>
-      <title>ISO 20022 Lẹ́yìn Ìṣíkiri: Yíyí Dátà Ìsanwó Padà Di Ọjà Báńkì ní 2026</title>
-      <link>https://sebastienrousseau.com/yo/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</link>
-      <description>ISO 20022 lẹ́yìn ìṣíkiri jẹ́ àǹfààní ọjà dátà. Àdírẹ́ẹ̀sì tó ní ìṣètò, kóòdù ìdí, àwọn ìránṣẹ́ ìwádìí, àti ìṣẹ̀lẹ̀ ipò ìsanwó tó kún ń di àwọn ọjà ìbáramu, àdàmọ̀, owó wíwà, ìbámu, àti àlàyé fún báńkì.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</guid>
-      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ISO 20022</category>
-      <category>àdírẹ́ẹ̀sì tó ní ìṣètò</category>
-      <category>CBPR+</category>
-      <category>dátà ìsanwó</category>
-      <category>ìbáramu</category>
-      <category>àyẹ̀wò ìfòfindè</category>
-      <category>ìṣàwárí àdàmọ̀</category>
-    </item>
-    <item>
-      <title>ISO 20022 după migrare: transformarea datelor de plată în produse bancare în 2026</title>
-      <link>https://sebastienrousseau.com/ro/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</link>
-      <description>ISO 20022 după migrare devine șansa unui produs de date: adrese structurate, coduri de scop, detalii de factură, mesaje de investigație și evenimente bogate de stare se transformă în produse de reconciliere, fraudă, lichiditate și conformitate.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</guid>
-      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finanțe</category>
-      <category>ISO 20022</category>
-      <category>adresă structurată</category>
-      <category>CBPR+</category>
-      <category>date de plată</category>
-      <category>reconciliere</category>
-      <category>screening de sancțiuni</category>
-      <category>detectarea fraudei</category>
-    </item>
-    <item>
-      <title>ISO 20022 после миграции: платёжные данные как банковские продукты в 2026</title>
-      <link>https://sebastienrousseau.com/ru/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</link>
-      <description>ISO 20022 после миграции — это возможность для продуктов данных. Структурированные адреса, коды назначения, реквизиты счетов, сообщения расследований и статусные события становятся продуктами сверки, фрода, ликвидности и комплаенса.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</guid>
-      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ISO 20022</category>
-      <category>структурированный адрес</category>
-      <category>CBPR+</category>
-      <category>платёжные данные</category>
-      <category>сверка</category>
-      <category>санкционный скрининг</category>
-      <category>обнаружение мошенничества</category>
-    </item>
-    <item>
-      <title>ISO 20022 po migraci: přeměna platebních dat na bankovní produkty v roce 2026</title>
-      <link>https://sebastienrousseau.com/cs/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</link>
-      <description>ISO 20022 po migraci je příležitost datového produktu. Strukturované adresy, kódy účelu, fakturační detaily a vyšetřovací zprávy se mění v produkty odsouhlasení, podvodů, likvidity a compliance.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</guid>
-      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ISO 20022</category>
-      <category>strukturovaná adresa</category>
-      <category>CBPR+</category>
-      <category>platební data</category>
-      <category>odsouhlasení</category>
-      <category>screening sankcí</category>
-      <category>detekce podvodů</category>
-    </item>
-    <item>
-      <title>ISO 20022 dopo la migrazione: trasformare i dati di pagamento in prodotti bancari nel 2026</title>
-      <link>https://sebastienrousseau.com/it/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</link>
-      <description>ISO 20022 dopo la migrazione è un&apos;opportunità di prodotto di dati. Indirizzi strutturati, codici scopo, dettagli di fattura, messaggi di indagine e status di pagamento più ricchi diventano prodotti di riconciliazione, frode, liquidità e conformità.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</guid>
-      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ISO 20022</category>
-      <category>indirizzo strutturato</category>
-      <category>CBPR+</category>
-      <category>dati di pagamento</category>
-      <category>riconciliazione</category>
-      <category>screening sanzioni</category>
-      <category>rilevamento frodi</category>
-    </item>
-    <item>
-      <title>ISO 20022 移行後:決済データを 2026 年の銀行プロダクトに変える</title>
-      <link>https://sebastienrousseau.com/ja/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</link>
-      <description>ISO 20022 移行後は決済データ・プロダクトの好機です。構造化アドレス、目的コード、請求明細、調査メッセージ、リッチな決済ステータスが照合、不正、流動性、コンプライアンス、分析プロダクトに進化します。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html</guid>
-      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ISO 20022</category>
-      <category>構造化アドレス</category>
-      <category>CBPR+</category>
-      <category>決済データ</category>
-      <category>照合</category>
-      <category>制裁スクリーニング</category>
-      <category>不正検知</category>
     </item>
   </channel>
 </rss>

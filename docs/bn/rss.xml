@@ -6,8 +6,30 @@
     <description>বাংলা প্রবন্ধ: প্রায়োগিক এআই, ISO 20022 পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের রূপান্তর।</description>
     <atom:link href="https://sebastienrousseau.com/bn/rss.xml" rel="self" type="application/rss+xml"/>
     <language>bn-BD</language>
-    <lastBuildDate>Sat, 30 May 2026 14:48:09 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 06:21:45 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. সর্বস্বত্ব সংরক্ষিত।</copyright>
+    <item>
+      <title>পোস্ট-কোয়ান্টাম পেমেন্ট পরিকাঠামো: কেন ব্যাংক লিগ্যাসি রেল আপগ্রেড নয়, প্রতিস্থাপন করতে পারে</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি ব্যাংকের সামনে কঠিন প্রশ্ন তুলেছে: লিগ্যাসি পেমেন্ট রেল আপগ্রেড, না ক্রিপ্টো-চটপটে পরিকাঠামো দিয়ে প্রতিস্থাপন করবেন।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>পোস্ট-কোয়ান্টাম পেমেন্ট ২০২৬</category>
+      <category>PQC ব্যাংকিং</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>পেমেন্ট পরিকাঠামো</category>
+      <category>ক্রিপ্টো-চটপটেতা</category>
+      <category>HNDL</category>
+      <category>এখন সংগ্রহ-পরে ডিক্রিপ্ট</category>
+      <category>ISO 20022</category>
+      <category>SWIFT MT</category>
+      <category>RTGS</category>
+      <category>HSM</category>
+    </item>
     <item>
       <title>যুক্তরাজ্যের পাইকারি ডিজিটাল বাজার: টোকেনাইজড গিল্টস, নিষ্পত্তি ও নতুন চ্যাম্পিয়ন ভূমিকা</title>
       <link>https://sebastienrousseau.com/bn/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>

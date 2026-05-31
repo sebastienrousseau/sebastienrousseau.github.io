@@ -4,14 +4,23 @@
   <link href="https://sebastienrousseau.com/zh-hant/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/zh-hant/"/>
   <id>https://sebastienrousseau.com/zh-hant/</id>
-  <updated>2026-05-30T14:48:09+00:00</updated>
+  <updated>2026-05-31T06:21:45+00:00</updated>
   <entry>
     <title>數位資產 2026:銀行不能延後的轉型</title>
     <link href="https://sebastienrousseau.com/zh-hant/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
     <id>https://sebastienrousseau.com/zh-hant/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
-    <updated>2026-05-30T14:48:09+00:00</updated>
-    <published>2026-05-30T14:48:09+00:00</published>
+    <updated>2026-05-31T06:21:45+00:00</updated>
+    <published>2026-05-31T06:21:45+00:00</published>
     <summary>數位資產不再是創新賭注,而是結算、託管與資產負債表的架構命題。銀行的戰略課題,是在結構性不確定下完成基礎建設設計。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>後量子支付基礎建設:為何銀行可能替換而非改造遺留軌道</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
+    <updated>2026-05-31T06:06:06+00:00</updated>
+    <published>2026-05-31T06:06:06+00:00</published>
+    <summary>後量子密碼學迫使董事會抉擇:改造遺留支付軌道,或以密碼敏捷基礎建設替換?ML-KEM、ML-DSA、HSM 與現採後解皆是 2026 決策關鍵。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Diagramă de arhitectură inginerie agentică pentru bănci — agenți AI spec-driven, plan de control al guvernanței, substrat cuantic-sigur și fluxuri de modernizare mainframe legacy",
-  "subtitle": "IA agentică a trecut de la pilot la producție. 70% din bănci o utilizează; unu din cinci are un model matur de guvernanță. Adversarii operează la viteza mașinii, moștenirea COBOL datează din epoca batch a anilor 1960, iar termenul EU AI Act este la 12 săptămâni.",
-  "keywords": "inginerie agentică, dezvoltare spec-driven, bănci, servicii financiare, guvernanță AI, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001, modernizare COBOL, mainframe, vibe coding, vibe hacking, agenți autonomi, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, managementul riscului terților, TPRM, risc furnizori, criptografie post-cuantică, plan de control agenți, FCA, SM&CR, plan de acțiune 12 săptămâni, Sebastien Rousseau",
-  "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
   "title": "Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It",
   "language": "ro-RO",
+  "banner_alt": "Diagramă de arhitectură inginerie agentică pentru bănci — agenți AI spec-driven, plan de control al guvernanței, substrat cuantic-sigur și fluxuri de modernizare mainframe legacy",
   "locale": "ro_RO",
+  "keywords": "inginerie agentică, dezvoltare spec-driven, bănci, servicii financiare, guvernanță AI, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001, modernizare COBOL, mainframe, vibe coding, vibe hacking, agenți autonomi, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, managementul riscului terților, TPRM, risc furnizori, criptografie post-cuantică, plan de control agenți, FCA, SM&CR, plan de acțiune 12 săptămâni, Sebastien Rousseau",
+  "date": "May 17, 2026",
+  "subtitle": "IA agentică a trecut de la pilot la producție. 70% din bănci o utilizează; unu din cinci are un model matur de guvernanță. Adversarii operează la viteza mașinii, moștenirea COBOL datează din epoca batch a anilor 1960, iar termenul EU AI Act este la 12 săptămâni.",
   "description": "IA agentică a trecut la producție în bănci. 70% o utilizează; puțini au guvernanță matură. Adversarii operează autonom; deadline EU AI Act pentru riscuri ridicate este la 12 săptămâni.",
-  "date": "May 17, 2026"
+  "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp"
 }

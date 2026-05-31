@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>yo-NG</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T06:06:06+00:00</news:publication_date>
+    <news:title>Ìgbékalẹ̀ Ìsanwó Post-Quantum: Ìdí Tí Àwọn Báńkì Fi Lè Rọ́pò Dípò Ìmúdára</news:title>
+    <news:keywords>ìgbékalẹ̀ ìsanwó post-quantum 2026, PQC báńkì, ML-KEM, ML-DSA, ìgbékalẹ̀ ìsanwó, crypto-agility, HNDL, harvest-now-decrypt-later, ISO 20022, NIST, HSM, SWIFT MT, RTGS</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/yo/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
   <news:news>
     <news:publication>

@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/pt-br/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pt-BR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
+    <news:title>Infraestrutura de Pagamentos Pós-Quânticos: Substituir em Vez de Adaptar Trilhos Legados</news:title>
+    <news:keywords>pagamentos pós-quânticos 2026, PQC banking, ML-KEM, ML-DSA, infraestrutura de pagamentos, cripto-agilidade, harvest-now-decrypt-later, coletar agora descriptografar depois, ISO 20022, SWIFT MT, RTGS, HSM, NIST</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/pt-br/2026-05-30-uk-atacado-digital-markets-tokenised-gilts-settlement-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>pt-BR</news:language>
     </news:publication>
-    <news:publication_date>2026-05-30T14:48:09+00:00</news:publication_date>
+    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
     <news:title>Mercados de Atacado Digitais no Reino Unido: Gilts Tokenizados, Liquidação e o Novo Campeão</news:title>
     <news:keywords>mercados de atacado digitais Reino Unido 2026, Chris Woolard, gilts tokenizados, atacado tokenizado, campeão dos mercados digitais, tokenização Reino Unido, liquidação</news:keywords>
   </news:news>
@@ -20,7 +32,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>pt-BR</news:language>
     </news:publication>
-    <news:publication_date>2026-05-30T14:48:09+00:00</news:publication_date>
+    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
     <news:title>ISO 20022 Pós-Migração: Transformando Dados de Pagamento em Produtos Bancários em 2026</news:title>
     <news:keywords>ISO 20022 2026, endereço estruturado, CBPR+, produtos de dados de pagamento, códigos de finalidade, tesouraria corporativa, conciliação, triagem de sanções, detecção de fraude</news:keywords>
   </news:news>
