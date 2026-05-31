@@ -1,12 +1,12 @@
 {
-  "keywords": "CRYSTALS-Kyber, 量子耐性, 鍵カプセル化, KEM, NIST PQC, 格子ベース暗号, ML-KEM, FIPS 203",
-  "locale": "ja_JP",
-  "description": "CRYSTALS-Kyber、NIST FIPS 203 標準、量子時代の暗号通信の基盤。",
-  "title": "CRYSTALS-Kyber:量子時代の防衛アルゴリズム",
-  "date": "November 19, 2023",
-  "subtitle": "NIST 選定の量子耐性鍵カプセル化メカニズム",
-  "banner_alt": "暗号鍵を表すマトリックスのコード",
-  "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo-unsplash.webp",
   "language": "ja-JP",
+  "description": "CRYSTALS-Kyber、NIST FIPS 203 標準、量子時代の暗号通信の基盤。",
+  "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo-unsplash.webp",
+  "locale": "ja_JP",
+  "date": "November 19, 2023",
+  "banner_alt": "暗号鍵を表すマトリックスのコード",
+  "title": "CRYSTALS-Kyber:量子時代の防衛アルゴリズム",
+  "keywords": "CRYSTALS-Kyber, 量子耐性, 鍵カプセル化, KEM, NIST PQC, 格子ベース暗号, ML-KEM, FIPS 203",
+  "subtitle": "NIST 選定の量子耐性鍵カプセル化メカニズム",
   "last_reviewed": "2026-05-11"
 }

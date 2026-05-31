@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/ha/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>ha-NG</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
-    <news:title>Kadarorin Dijital a 2026: Sauyin Ababen More Rayuwa da Bankuna Ba za su Iya Jinkirta ba</news:title>
-    <news:keywords>kadarorin dijital 2026, kadarorin gaskiya na tokenised, stablecoins banki, ajiyar tokenised, kulawa kadarorin dijital, DLT banki, ababen more rayuwa na biyan kuɗi na ƙarshe, motsi na kayan tabbatarwa, kuɗi mai shirye-shirye, dabarun banki kadarorin dijital</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ha-NG</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T06:06:06+00:00</news:publication_date>
-    <news:title>Ababen Biyan Kuɗi Bayan-Quantum: Me ya sa Bankuna za su Maye Gurbin Tsoffin Hanyoyi</news:title>
-    <news:keywords>ababen biyan kuɗi bayan-quantum 2026, post-quantum cryptography, PQC banki, ML-KEM, ML-DSA, NIST, kintsattse na crypto, HNDL, harvest-now-decrypt-later, HSM, SWIFT MT, ISO 20022, RTGS</news:keywords>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Kayan Biya Bayan Quantum: Me Ya Sa Bankuna Za Su Iya Maye Gurbin Tsofaffin Hanyoyi Maimakon Daidaitawa</news:title>
+    <news:keywords>cryptography bayan quantum, biyan PQC, saurin crypto, tara-yanzu-warware-baya, HNDL, ƙa&apos;idodin bayan quantum na NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, ƙaurar hanyar biya, ISO 20022 PQC, maye gurbin SWIFT MT, HSM, faɗuwar PKI, juriya na aiki, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ha/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ha-NG</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Kadarorin Dijital a 2026: Sauyin Ababen More Rayuwa da Bankuna Ba za su Iya Jinkirta ba</news:title>
+    <news:keywords>kadarorin dijital 2026, kadarorin gaskiya na tokenised, stablecoins banki, ajiyar tokenised, kulawa kadarorin dijital, DLT banki, ababen more rayuwa na biyan kuɗi na ƙarshe, motsi na kayan tabbatarwa, kuɗi mai shirye-shirye, dabarun banki kadarorin dijital</news:keywords>
   </news:news>
 </url>
 <url>

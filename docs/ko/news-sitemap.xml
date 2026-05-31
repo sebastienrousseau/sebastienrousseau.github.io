@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/ko/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>ko-KR</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
-    <news:title>디지털 자산 2026: 인프라 전환의 해</news:title>
-    <news:keywords>디지털 자산 2026, 토큰화된 실물자산, 스테이블코인 은행, 토큰화 예금, 디지털 자산 수탁, DLT 뱅킹, 결제 인프라, 담보 이동성, 프로그래밍 가능한 화폐, 은행 디지털 자산 전략</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ko-KR</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T06:06:06+00:00</news:publication_date>
-    <news:title>양자내성 결제 인프라 — 은행이 레거시 레일을 개조 대신 교체해야 하는 이유</news:title>
-    <news:keywords>양자내성 암호, PQC, ML-KEM, ML-DSA, NIST, 수확 후 복호, HSM, SWIFT MT, ISO 20022, 암호 민첩성, RTGS, 결제 인프라 2026, 양자내성 결제, 레거시 레일 교체</news:keywords>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>양자내성 결제 인프라: 은행이 레거시 레일을 개조하지 않고 대체할 수밖에 없는 이유</news:title>
+    <news:keywords>양자내성암호, PQC 결제, 암호 민첩성, 지금 수집 나중에 복호화, HNDL, NIST 양자내성 표준, ML-KEM, ML-DSA, FIPS 203, FIPS 204, 결제 레일 마이그레이션, ISO 20022 PQC, SWIFT MT 대체, HSM, PKI 붕괴, 운영 회복력, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>디지털 자산 2026: 인프라 전환의 해</news:title>
+    <news:keywords>디지털 자산 2026, 토큰화된 실물자산, 스테이블코인 은행, 토큰화 예금, 디지털 자산 수탁, DLT 뱅킹, 결제 인프라, 담보 이동성, 프로그래밍 가능한 화폐, 은행 디지털 자산 전략</news:keywords>
   </news:news>
 </url>
 <url>

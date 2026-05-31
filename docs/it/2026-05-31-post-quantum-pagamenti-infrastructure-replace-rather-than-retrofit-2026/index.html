@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Sun, 31 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Sun, 31 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>Infrastruttura pagamenti post-quantistica: perché le banche potrebbero sostituire i rail legacy invece di adattarli — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="La crittografia post-quantistica impone una scelta binaria ai rail di pagamento: adattare RSA/ECC dentro involucri SWIFT MT e ISO 20022 mai dimensionati per ML-KEM e ML-DSA, oppure sostituire con infrastrutture cripto-agili. Decidere prima che HNDL diventi perdita operativa.">
+<meta name="keywords" content="crittografia post-quantistica, pagamenti PQC, cripto-agilità, raccogli-ora-decifra-dopo, HNDL, standard post-quantistici NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, migrazione rail di pagamento, ISO 20022 PQC, sostituzione SWIFT MT, HSM, collasso PKI, resilienza operativa, Quantum Computing Cybersecurity Preparedness Act">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PQC Payments 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-5A3el5KvQyFfSoeWWbQxX5V3ykTBdW8wxQvWrChVYVU=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-O/dhQISsI3xI+9sqZodPK3MEASsTidLmRTCYuPjkv2s=' 'sha256-Ula4nQD7uyyEiiYi+TaMDIS2u/m4xHb9yMEoQisoJD0=' 'sha256-rfk8TQI44yrPTZ1tnSxvv8C/IDkC7+A13YPyrKAULIc=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/it/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Feed Atom" href="/it/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Infrastruttura pagamenti post-quantistica: perché le banche potrebbero sostituire i rail legacy invece di adattarli — Sebastien Rousseau">
+<meta property="og:description" content="La crittografia post-quantistica impone una scelta binaria ai rail di pagamento: adattare RSA/ECC dentro involucri SWIFT MT e ISO 20022 mai dimensionati per ML-KEM e ML-DSA, oppure sostituire con infrastrutture cripto-agili. Decidere prima che HNDL diventi perdita operativa.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Infrastruttura pagamenti post-quantistica: perché le banche potrebbero sostituire i rail legacy invece di adattarli — Sebastien Rousseau">
+<meta name="twitter:description" content="La crittografia post-quantistica impone una scelta binaria ai rail di pagamento: adattare RSA/ECC dentro involucri SWIFT MT e ISO 20022 mai dimensionati per ML-KEM e ML-DSA, oppure sostituire con infrastrutture cripto-agili. Decidere prima che HNDL diventi perdita operativa.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-31-post-quantique-paiements-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-31-post-quantum-zahlungsverkehr-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-31-post-quantum-pagos-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-31-post-quantum-pagamentos-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Vai al contenuto principale</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Attiva/disattiva la navigazione" />
+      <div class="wrap">
+        <a class="ap-brand" href="/it/index.html" aria-label="Home di Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Navigazione principale">
+          <ul class="ap-menu">
+            <li><a href="/it/chi-sono/index.html">Chi sono</a></li>
+            <li><a href="/it/articoli/index.html" aria-current="page" class="active">Articoli</a></li>
+            <li><a href="/it/pubblicazioni/index.html">Pubblicazioni</a></li>
+            <li><a href="/it/argomenti/index.html">Argomenti</a></li>
+            <li><a href="/it/progetti/index.html">Progetti</a></li>
+            <li><a href="/it/playlist/index.html">Playlist</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Attiva il tema scuro" aria-pressed="false" title="Cambia tema">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Cerca (Cmd o Ctrl + K)" title="Cerca (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Lingua">
+            <button type="button" class="ap-lang-toggle" aria-label="IT, Cambia lingua" aria-expanded="false" aria-haspopup="menu" title="Cambia lingua">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">IT</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-05-31-post-quantique-paiements-infrastructure-replace-rather-than-retrofit-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-05-31-post-quantum-zahlungsverkehr-infrastructure-replace-rather-than-retrofit-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-05-31-post-quantum-pagos-infrastructure-replace-rather-than-retrofit-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-05-31-post-quantum-pagamentos-infrastructure-replace-rather-than-retrofit-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/it/contatti/index.html" aria-label="Contattami">Contattami ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Attiva/disattiva la navigazione">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Infrastruttura pagamenti post-quantistica: perché le banche potrebbero sostituire i rail legacy invece di adattarli</h1>
+      <p class="sub">ML-KEM e ML-DSA non entrano in modo pulito nei rail che trasportano SWIFT MT e ISO 20022. La risposta ingegneristica onesta è che l&#x27;adattamento è un piano di migrazione controllato con durata breve, e la sostituzione è l&#x27;unica destinazione stabile.</p>
+    <nav class="article-tags" aria-label="Argomenti"><a href="/tags/index.html#h3-crittografia-post-quantistica" class="article-tag" rel="tag">crittografia post-quantistica</a><a href="/tags/index.html#h3-pagamenti-pqc" class="article-tag" rel="tag">pagamenti PQC</a><a href="/tags/index.html#h3-cripto-agilita" class="article-tag" rel="tag">cripto-agilità</a><a href="/tags/index.html#h3-raccogli-ora-decifra-dopo" class="article-tag" rel="tag">raccogli-ora-decifra-dopo</a><a href="/tags/index.html#h3-hndl" class="article-tag" rel="tag">HNDL</a><a href="/tags/index.html#h3-standard-post-quantistici-nist" class="article-tag" rel="tag">standard post-quantistici NIST</a><a href="/tags/index.html#h3-ml-kem" class="article-tag" rel="tag">ML-KEM</a><a href="/tags/index.html#h3-ml-dsa" class="article-tag" rel="tag">ML-DSA</a><a href="/tags/index.html#h3-fips-203" class="article-tag" rel="tag">FIPS 203</a><a href="/tags/index.html#h3-fips-204" class="article-tag" rel="tag">FIPS 204</a><a href="/tags/index.html#h3-migrazione-rail-di-pagamento" class="article-tag" rel="tag">migrazione rail di pagamento</a><a href="/tags/index.html#h3-iso-20022-pqc" class="article-tag" rel="tag">ISO 20022 PQC</a><a href="/tags/index.html#h3-sostituzione-swift-mt" class="article-tag" rel="tag">sostituzione SWIFT MT</a><a href="/tags/index.html#h3-hsm" class="article-tag" rel="tag">HSM</a><a href="/tags/index.html#h3-collasso-pki" class="article-tag" rel="tag">collasso PKI</a><a href="/tags/index.html#h3-resilienza-operativa" class="article-tag" rel="tag">resilienza operativa</a><a href="/tags/index.html#h3-quantum-computing-cybersecurity-preparedness-act" class="article-tag" rel="tag">Quantum Computing Cybersecurity Preparedness Act</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-31T06:06:06+00:00" class="meta-pub">Pubblicato il 31 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Tempo di lettura stimato">12 min di lettura</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Indice</h2><ol><li><a href="#raccogli-ora-decifra-dopo-il-modello-di-minaccia-che-elimina-l-opzione-di-attend">Raccogli ora, decifra dopo: il modello di minaccia che elimina l'opzione di attendere</a></li><li><a href="#il-problema-dimensionale-e-il-problema-ingegneristico">Il problema dimensionale è il problema ingegneristico</a></li><li><a href="#adattamento-contro-sostituzione-la-decisione-che-definisce-il-programma">Adattamento contro sostituzione: la decisione che definisce il programma</a></li><li><a href="#l-architettura-cripto-agile-layer-per-layer">L'architettura cripto-agile, layer per layer</a></li><li><a href="#cosa-significa-per-tipologia-di-banca">Cosa significa per tipologia di banca</a></li><li><a href="#cosa-accade-dopo">Cosa accade dopo</a></li><li><a href="#domande-frequenti">Domande frequenti</a></li><li><a href="#riferimenti">Riferimenti</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> La crittografia post-quantistica impone una scelta binaria ai rail di pagamento: adattare RSA/ECC dentro involucri SWIFT MT e ISO 20022 mai dimensionati per ML-KEM e ML-DSA, oppure sostituire con infrastrutture cripto-agili. Decidere prima che HNDL diventi perdita operativa.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Raccogli ora, decifra dopo: il modello di minaccia che elimina l&#x27;opzione di attendere.</strong> HNDL inverte la consueta linea temporale crittografica.</li>  <li><strong>Il problema dimensionale è il problema ingegneristico.</strong> La discussione pubblica sulla migrazione PQC tende a concentrarsi sulla scelta dell&#x27;algoritmo.</li>  <li><strong>Adattamento contro sostituzione: la decisione che definisce il programma.</strong> L&#x27;inquadramento onesto è che l&#x27;adattamento è un piano di migrazione controllato con durata breve, e la sostituzione è l&#x27;unica destinazione stabile.</li>  <li><strong>L&#x27;architettura cripto-agile, layer per layer.</strong> I layer infrastrutturali che contano per la migrazione PQC non sono i layer di business &quot;dati, controllo, economia&quot; che si adattano a una narrativa bancaria generica.</li></ul></aside><h1>Infrastruttura pagamenti post-quantistica: perché le banche potrebbero sostituire i rail legacy invece di adattarli</h1>
+<!-- lead-start -->
+<!-- lead-start: manual -->
+
+<!-- lead-end -->
+<p>Le primitive crittografiche che autenticano oggi ogni pagamento wholesale in produzione — RSA, ECDSA, ECDH — hanno una data di scadenza. Il <a href="https://www.congress.gov/bill/117th-congress/house-bill/7535/text" title="H.R. 7535">Quantum Computing Cybersecurity Preparedness Act statunitense ⧉</a> ha iscritto quella scadenza nella legge federale sugli appalti a fine 2022. Il <a href="https://www.bis.org/publ/work1208.htm" title="Project Leap: Quantum-proofing the financial system">BIS Working Paper No. 1208 ⧉</a> ha portato la stessa scadenza nel perimetro di vigilanza delle banche centrali. <a href="https://csrc.nist.gov/pubs/fips/203/final" title="Module-Lattice-Based Key-Encapsulation Mechanism Standard">NIST FIPS 203 ⧉</a> e <a href="https://csrc.nist.gov/pubs/fips/204/final" title="Module-Lattice-Based Digital Signature Standard">FIPS 204 ⧉</a> hanno pubblicato i sostituti nell'agosto 2024.</p>
+<p>L'infrastruttura dei pagamenti non ha ancora assorbito cosa significhi.</p>
+<p>Questo articolo è la tesi ingegneristica a favore della sostituzione rispetto all'adattamento. È scritto per architetti che già conoscono gli algoritmi e devono decidere cosa fare con SWIFT MT, i messaggi ISO 20022 pacs e pain, le interfacce RTGS, i parchi HSM e le gerarchie di certificati sottostanti.</p>
+<hr />
+<blockquote>
+<p><strong>Sintesi esecutiva / Punti chiave</strong></p>
+<ul>
+<li><strong>Raccogli-ora-decifra-dopo (HNDL) è la minaccia operativa.</strong> Gli avversari registrano traffico di pagamento cifrato nel 2026 per decifrarlo non appena esiste un computer quantistico crittanaliticamente rilevante (CRQC). Il traffico catturato include istruzioni di regolamento, dati dei beneficiari e materiale di autenticazione con sensibilità di lunga durata.</li>
+<li><strong>Il NIST ha standardizzato i sostituti.</strong> ML-KEM (FIPS 203) per l'incapsulamento chiavi e ML-DSA (FIPS 204) per le firme digitali sono i default. SLH-DSA (FIPS 205) copre il fallback stateless basato su hash.</li>
+<li><strong>Il delta dimensionale rompe le assunzioni legacy.</strong> Chiavi pubbliche e firme sono 5–20× più grandi degli equivalenti RSA-2048. Questo collide con la MTU sulle reti di pagamento, con le assunzioni di buffer fisso nei gestori di messaggi MT e con il throughput crittografico dei parchi HSM installati.</li>
+<li><strong>L'ibrido (classico + PQC) è il veicolo di migrazione, non la destinazione.</strong> TLS ibrido e X.509 ibrido comprano due o tre anni di interoperabilità mentre i rail di produzione vengono sostituiti. Non risolvono il problema di capacità sottostante.</li>
+<li><strong>La PKI è il muro portante.</strong> Un'autorità di certificazione il cui algoritmo di firma diventa falsificabile invalida ogni certificato sottostante. L'esposizione istituzionale della banca è la catena, non il singolo endpoint.</li>
+<li><strong>La cripto-agilità è la proprietà architetturale da progettare.</strong> Identificatori di algoritmo, formati di chiave, involucri di firma e partizioni HSM devono essere tutti parametrizzabili. Qualunque cosa fissata su RSA in fase di compilazione è debito tecnico che scadrà simultaneamente.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="raccogli-ora-decifra-dopo-il-modello-di-minaccia-che-elimina-l-opzione-di-attend">Raccogli ora, decifra dopo: il modello di minaccia che elimina l'opzione di attendere <a class="heading-anchor" href="#raccogli-ora-decifra-dopo-il-modello-di-minaccia-che-elimina-l-opzione-di-attend" aria-label="Collegamento a Raccogli ora, decifra dopo: il modello di minaccia che elimina l'opzione di attendere">#</a></h2>
+<p>HNDL inverte la consueta linea temporale crittografica. La valutazione del rischio convenzionale chiede quando la minaccia si materializza. HNDL chiede quando i dati catturati oggi diventano utili a un avversario. Per i messaggi di pagamento — identità dei beneficiari, numeri di conto, dati di rimessa strutturati, payload di screening sanzioni, istruzioni di regolamento intra-banca — la finestra di sensibilità è di anni o decenni. Gran parte di quel traffico è registrata da qualche parte in questo momento.</p>
+<p>La <a href="https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF" title="Commercial National Security Algorithm Suite 2.0">timeline NSA CNSA 2.0 ⧉</a> concede ai sistemi di sicurezza nazionale fino al 2035 per completare la transizione. I supervisori finanziari procedono su scadenze più strette: le <a href="https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services" title="PRA SS1/21">aspettative della PRA sulla resilienza operativa ⧉</a> trattano la cripto-agilità come rischio di concentrazione su terze parti. L'aspettativa nel 2026 è che i rail di pagamento rilevanti pubblichino il proprio piano di migrazione PQC nell'autocertificazione di resilienza.</p>
+<p>L'avversario HNDL non ha bisogno di un CRQC oggi. Gli serve:</p>
+<ol>
+<li><strong>Posizione di rete.</strong> Intercettazioni su cavi sottomarini, cattura a livello ISP e middlebox compromessi sono tutti in scope. Il traffico di pagamento wholesale si concentra su un numero ridotto di percorsi di rete.</li>
+<li><strong>Storage.</strong> Un petabyte di dati di pagamento strutturati è un archivio gestibile nel 2026.</li>
+<li><strong>Pazienza.</strong> La cattura non costa nulla per messaggio intercettato. Il rendimento arriva più tardi.</li>
+</ol>
+<p>L'argomento di migrazione non è quindi &quot;i computer quantistici potrebbero arrivare nel 2035&quot;. È &quot;ogni sessione TLS che si chiude stanotte con scambio chiavi RSA-2048 è esposta finché i dati al suo interno restano sensibili&quot;.</p>
+<h2 id="il-problema-dimensionale-e-il-problema-ingegneristico">Il problema dimensionale è il problema ingegneristico <a class="heading-anchor" href="#il-problema-dimensionale-e-il-problema-ingegneristico" aria-label="Collegamento a Il problema dimensionale è il problema ingegneristico">#</a></h2>
+<p>La discussione pubblica sulla migrazione PQC tende a concentrarsi sulla scelta dell'algoritmo. Il problema più difficile è dimensionale.</p>
+<table>
+<thead>
+<tr>
+<th>Primitiva</th>
+<th>Chiave pubblica</th>
+<th>Firma / ciphertext</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RSA-2048</td>
+<td>256 byte</td>
+<td>256 byte (firma)</td>
+</tr>
+<tr>
+<td>ECDSA P-256</td>
+<td>64 byte</td>
+<td>64 byte (firma)</td>
+</tr>
+<tr>
+<td>ML-KEM-768</td>
+<td><strong>1.184 byte</strong></td>
+<td><strong>1.088 byte (ciphertext)</strong></td>
+</tr>
+<tr>
+<td>ML-DSA-65</td>
+<td><strong>1.952 byte</strong></td>
+<td><strong>3.309 byte (firma)</strong></td>
+</tr>
+<tr>
+<td>SLH-DSA-128f</td>
+<td>32 byte</td>
+<td><strong>17.088 byte (firma)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Questi numeri si traducono direttamente in modalità di guasto per cui l'infrastruttura di pagamento legacy non è mai stata progettata:</p>
+<ul>
+<li><strong>Frammentazione dei pacchetti lungo il percorso.</strong> Un ClientHello che porta ML-KEM-768 ibrido più X25519 classico supera la tipica MTU Ethernet di 1.500 byte. I middlebox tra due endpoint di pagamento frammentano, scartano o riscrivono l'handshake. Il guasto emerge come errore TLS intermittente, indistinguibile dal rumore di rete transitorio.</li>
+<li><strong>Assunzioni di buffer nei gestori MT.</strong> Molte integrazioni SWIFT MT trasportano involucri firmati dimensionati per ECDSA. Inserisci una firma ML-DSA nello stesso involucro e il parser tronca o rifiuta.</li>
+<li><strong>Throughput HSM.</strong> La firma ML-DSA su un parco HSM installato è 3–10× più lenta di ECDSA per operazione, su hardware il cui budget di chiavi al secondo è già teso durante le finestre di batch di fine giornata.</li>
+<li><strong>Peso della catena di certificati.</strong> Una gerarchia CA a quattro livelli riemessa con firme ML-DSA cresce da circa 6 KB a circa 60 KB. Ogni handshake TLS verso il rail paga quel costo.</li>
+</ul>
+<p>Il percorso di adattamento consiste nel gestire questi vincoli singolarmente: buffer più grandi qui, HSM più veloci là, tolleranza alla frammentazione nei middlebox. È un ponte difendibile di sei mesi. Non è un'architettura.</p>
+<h2 id="adattamento-contro-sostituzione-la-decisione-che-definisce-il-programma">Adattamento contro sostituzione: la decisione che definisce il programma <a class="heading-anchor" href="#adattamento-contro-sostituzione-la-decisione-che-definisce-il-programma" aria-label="Collegamento a Adattamento contro sostituzione: la decisione che definisce il programma">#</a></h2>
+<p>L'inquadramento onesto è che l'adattamento è un piano di migrazione controllato con durata breve, e la sostituzione è l'unica destinazione stabile. La decisione è quale dei due la banca finanzia per prima, e quanto a lungo la finestra di adattamento resta aperta prima di diventare un patchwork permanente.</p>
+<p>Adattare significa:</p>
+<ul>
+<li>TLS ibrido (ML-KEM + X25519) terminato al confine del rail esistente.</li>
+<li>Certificati a doppia firma (RSA primario, ML-DSA secondario) emessi da una CA subordinata abilitata al PQC.</li>
+<li>Buffer MT più ampi e politica MTU più stretta sulle VPN di pagamento.</li>
+<li>Aggiornamenti firmware HSM dove i fornitori supportano le primitive PQC; sostituzione completa dell'HSM dove non lo fanno.</li>
+</ul>
+<p>Questo lavoro è fattibile. Non risolve il problema di fondo: SWIFT MT e molte implementazioni ISO 20022 codificano l'involucro crittografico dentro un formato di messaggio che fissa l'algoritmo. La prossima transizione di algoritmo — e ci sarà, quando ML-KEM mostrerà debolezza o un nuovo standard lo soppianterà — esegue di nuovo la stessa migrazione sugli stessi rail.</p>
+<p>Sostituire significa accettare che il layer crittografico non è una proprietà del formato di messaggio. È una proprietà di un servizio di involucro separabile che il formato di messaggio invoca. Concretamente:</p>
+<ul>
+<li>Il confine di sicurezza del trasporto si sposta su un service mesh o sidecar che termina il TLS ibrido e presenta il messaggio in chiaro al rail con un'interfaccia stabile.</li>
+<li>Le firme a livello di messaggio vengono prodotte da un servizio di firma dedicato la cui scelta di algoritmo è un parametro di configurazione, non un'assunzione cablata.</li>
+<li>I certificati sono emessi da una CA il cui algoritmo di firma è a sua volta ruotabile.</li>
+<li>Le partizioni HSM sono indirizzate per scopo (trasporto, firma, incapsulamento chiavi) anziché per formato di messaggio.</li>
+</ul>
+<p>Il progetto di sostituzione sopravvive alla prossima modifica di algoritmo senza dover toccare di nuovo il rail.</p>
+<h2 id="l-architettura-cripto-agile-layer-per-layer">L'architettura cripto-agile, layer per layer <a class="heading-anchor" href="#l-architettura-cripto-agile-layer-per-layer" aria-label="Collegamento a L'architettura cripto-agile, layer per layer">#</a></h2>
+<p>I layer infrastrutturali che contano per la migrazione PQC non sono i layer di business &quot;dati, controllo, economia&quot; che si adattano a una narrativa bancaria generica. I layer che contano sono crittografici.</p>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Cosa fa</th>
+<th>La domanda PQC</th>
+<th>Direttiva architetturale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HSM / gestione chiavi</strong></td>
+<td>Genera, conserva e opera sul materiale chiave sotto isolamento hardware</td>
+<td>Il firmware HSM installato supporta ML-KEM, ML-DSA e un'API di incapsulamento chiavi ibrida? Qual è il delta di throughput di firma rispetto a ECDSA sullo stesso hardware?</td>
+<td>Inventariare ogni partizione HSM per algoritmo supportato e capacità al secondo. Dismettere tutto ciò che è fissato a RSA senza un percorso firmware. Allestire partizioni PQC dedicate prima del passaggio in produzione.</td>
+</tr>
+<tr>
+<td><strong>PKI / autorità di certificazione</strong></td>
+<td>Emette, revoca e concatena la fiducia attraverso certificati X.509</td>
+<td>La CA può firmare oggi con ML-DSA? Esiste un processo testato per ruotare la radice e riemettere la catena? I responder CRL e OCSP sono dimensionati per il peso di firma ML-DSA?</td>
+<td>Trattare lo stack CA come muro portante. Allestire ora un subordinato abilitato al PQC. Tempificare la rotazione della radice sulla dipendenza di certificato più longeva, non sulla convenienza.</td>
+</tr>
+<tr>
+<td><strong>Trasporto / rete</strong></td>
+<td>Termina TLS, IPsec e MACsec tra endpoint di pagamento</td>
+<td>Il load balancer, il WAF e il percorso middlebox tollerano handshake ibridi che superano la MTU legacy? I ticket di session-resumption sono dimensionati per chiavi PQC?</td>
+<td>Spostare la terminazione TLS a un confine cripto-agile (sidecar o mesh). Innalzare la politica MTU sulle VPN di pagamento. Testare l'intero percorso con frammentazione indotta deliberatamente.</td>
+</tr>
+<tr>
+<td><strong>Applicazione / payload di messaggio</strong></td>
+<td>Trasporta i messaggi SWIFT MT, ISO 20022 pacs / pain / camt e i relativi involucri crittografici</td>
+<td>Il gestore di messaggi del rail tollera involucri firmati di dimensione ML-DSA? I parser intermedi sono consapevoli dell'algoritmo o troncano in base alla lunghezza?</td>
+<td>Separare involucro e payload. Firmare a un confine di servizio, non dentro il gestore del formato di messaggio. Trattare gli identificatori di algoritmo come dati, non come schema.</td>
+</tr>
+<tr>
+<td><strong>Audit / evidenza</strong></td>
+<td>Produce la catena crittografica di custodia su cui contano supervisori e clienti</td>
+<td>I record firmati storici restano verificabili una volta che l'algoritmo di firma è deprecato? Esiste un piano di firma per archiviazione di lungo termine?</td>
+<td>Contro-firmare gli archivi con una primitiva basata su hash (SLH-DSA) per un'assicurazione che sopravvive alla rottura di un singolo algoritmo. Trattare la catena di audit come artefatto regolato, non come sottoprodotto della build.</td>
+</tr>
+</tbody>
+</table>
+<p>La disciplina è rendere ogni scelta di algoritmo un valore di configurazione a ogni layer. L'istituto che cabla RSA-2048 in uno qualsiasi di quei layer eredita un evento di fine-vita coordinato quando quell'algoritmo cade.</p>
+<h2 id="cosa-significa-per-tipologia-di-banca">Cosa significa per tipologia di banca <a class="heading-anchor" href="#cosa-significa-per-tipologia-di-banca" aria-label="Collegamento a Cosa significa per tipologia di banca">#</a></h2>
+<p>Il profilo di esposizione differisce per istituto. Le direttive differiscono di conseguenza.</p>
+<h3 id="banche-globali">Banche globali <a class="heading-anchor" href="#banche-globali" aria-label="Collegamento a Banche globali">#</a></h3>
+<p>Le banche globali operano i parchi HSM installati più grandi, le catene di certificati più lunghe e i percorsi di rete più complessi fra controparti. Il rischio dominante non è la scelta dell'algoritmo: è il costo di coordinamento del cambio di algoritmi su centinaia di servizi interni e decine di controparti esterne simultaneamente.</p>
+<p>La direttiva è finanziare la CA abilitata al PQC, il confine di trasporto cripto-agile e il servizio di firma parametrizzato sull'algoritmo come lavoro del 2026, prima di adattare un singolo rail. L'adattamento diventa poi una normale modifica di produzione dentro un framework noto. Senza il framework, ogni adattamento di rail rimette in discussione le stesse decisioni architetturali.</p>
+<h3 id="banche-regionali">Banche regionali <a class="heading-anchor" href="#banche-regionali" aria-label="Collegamento a Banche regionali">#</a></h3>
+<p>Le banche regionali hanno meno superficie algoritmica ma proporzionalmente meno personale specialistico. Il rischio dominante è il lock-in del fornitore HSM su algoritmi che il fornitore non si è impegnato a supportare.</p>
+<p>La direttiva è scrivere il supporto PQC — in particolare ML-KEM e ML-DSA, con un percorso di aggiornamento firmware testato — in ogni rinnovo di contratto HSM dal 2026 in poi. Le banche senza quella clausola ereditano una sostituzione hardware forzata secondo i tempi del fornitore, non i propri.</p>
+<h3 id="fintech-e-psp">Fintech e PSP <a class="heading-anchor" href="#fintech-e-psp" aria-label="Collegamento a Fintech e PSP">#</a></h3>
+<p>I prestatori di servizi di pagamento e le fintech si collocano tipicamente fra una banca controparte e un sistema merchant o utente finale. La loro esposizione crittografica è il confine API su entrambi i lati.</p>
+<p>La direttiva è pubblicare un'interfaccia TLS ibrida — classica più ML-KEM — sul lato banca come requisito minimo nelle trattative commerciali del 2026. La fintech che arriva con l'interoperabilità PQC già dimostrata vince i cicli di integrazione contro la fintech che non ha ancora cominciato.</p>
+<h3 id="tesorerie-aziendali">Tesorerie aziendali <a class="heading-anchor" href="#tesorerie-aziendali" aria-label="Collegamento a Tesorerie aziendali">#</a></h3>
+<p>I tesorieri non operano direttamente l'infrastruttura crittografica. La consumano: ogni API bancaria, ogni file transfer sicuro, ogni conferma firmata dipende dalla PKI della banca.</p>
+<p>La direttiva è aggiungere tre domande a ogni RFP bancaria nel 2026: quali algoritmi PQC la banca sta usando oggi nel TLS rivolto al cliente, qual è il piano della banca per le conferme di pagamento firmate ML-DSA e come la banca intende preservare la verificabilità dei record firmati storici una volta deprecato RSA. Le banche che non sanno rispondere segnalano qualcosa sulla loro maturità ingegneristica di fondo.</p>
+<h2 id="cosa-accade-dopo">Cosa accade dopo <a class="heading-anchor" href="#cosa-accade-dopo" aria-label="Collegamento a Cosa accade dopo">#</a></h2>
+<p>La prima ondata di deployment PQC nei pagamenti sarà invisibile agli utenti finali. Il TLS ibrido appare nell'handshake, le catene di certificati crescono, la latenza di firma HSM sale di qualche millisecondo e i rail continuano a operare. È il percorso del successo.</p>
+<p>I guasti visibili saranno guidati dall'adattamento: un rail che non accetta un involucro firmato ML-DSA senza troncamento, una CA il cui punto di distribuzione CRL si strozza sul nuovo peso di firma, un middlebox che frammenta gli handshake ibridi in ClientHello riordinati. Questi guasti arriveranno in produzione nel corso del 2027.</p>
+<p>La decisione architetturale del 2026 è se finanziare l'infrastruttura di sostituzione che rende irrilevante l'adattamento, o finanziare una sequenza di correzioni specifiche per rail che individualmente sembrano più economiche e nell'aggregato producono una migrazione più lunga e più costosa. La banca che sceglie il primo percorso opererà con meno rumore durante la transizione. La banca che sceglie il secondo passerà il resto del decennio a spiegare incident review ai supervisori.</p>
+<p>PQC non è un problema di crittografia travestito da problema infrastrutturale. È un problema infrastrutturale che la crittografia ha solo innescato.</p>
+<h2 id="domande-frequenti">Domande frequenti <a class="heading-anchor" href="#domande-frequenti" aria-label="Collegamento a Domande frequenti">#</a></h2>
+<p><strong>Esiste una scadenza che impone questo lavoro?</strong></p>
+<p>Le scadenze regolamentari rigide sono giurisdizionali. Il <a href="https://www.congress.gov/bill/117th-congress/house-bill/7535/text" title="H.R. 7535">Quantum Computing Cybersecurity Preparedness Act statunitense ⧉</a> vincola i sistemi federali. La <a href="https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF" title="CNSA 2.0">timeline NSA CNSA 2.0 ⧉</a> fissa il 2035 per i sistemi di sicurezza nazionale. La pubblicazione <a href="https://www.bis.org/publ/work1208.htm" title="BIS Working Paper 1208">BIS Project Leap ⧉</a> e il programma di lavoro dell'FSB stanno avvicinando quell'orizzonte per l'infrastruttura di pagamento sistemica. HNDL implica che l'orologio operativo è partito molto prima di quelle date nominali.</p>
+<p><strong>Perché ML-KEM è l'incapsulamento chiavi raccomandato e non qualcosa di più veloce?</strong></p>
+<p>ML-KEM (la versione standardizzata di CRYSTALS-Kyber) presenta la combinazione più solida di ciphertext e chiavi compatti fra i candidati a reticolo, con implementazioni mature e mitigazioni side-channel. Il NIST lo ha pubblicato come <a href="https://csrc.nist.gov/pubs/fips/203/final" title="FIPS 203">FIPS 203 ⧉</a>. Esistono candidati più veloci, ma con dimensioni maggiori o intervalli di confidenza più deboli sui parametri di sicurezza.</p>
+<p><strong>Perché non usare SLH-DSA ovunque al posto di ML-DSA?</strong></p>
+<p>SLH-DSA (la versione standardizzata di SPHINCS+) è basato su hash e dipende quindi solo dalla sicurezza della funzione hash, l'assunzione più conservativa disponibile. Le sue firme sono 5–20× più grandi di quelle di ML-DSA. È accettabile per la contro-firma di archiviazione, ma impraticabile per la firma transazionale dove la dimensione conta per ogni messaggio. Lo schema standard è ML-DSA per la firma di produzione e SLH-DSA per l'assicurazione di archivio.</p>
+<p><strong>Una banca può semplicemente attendere che i rail pubblichino i profili PQC?</strong></p>
+<p>Una banca che attende eredita la finestra di migrazione che il rail pubblica, più stretta del proprio ciclo di cambio interno. Quando SWIFT, l'operatore RTGS locale e i CCP rilevanti avranno ciascuno pubblicato il proprio profilo PQC, la finestra di migrazione sarà di dodici-ventiquattro mesi. Le banche che non hanno pre-costruito la propria capacità CA, di trasporto e HSM non vi arriveranno senza scorciatoie operative.</p>
+<p><strong>Qual è la singola cosa a leva massima da finanziare per prima?</strong></p>
+<p>Un'autorità di certificazione subordinata abilitata al PQC, integrata nella PKI esistente, in grado di emettere certificati a doppio algoritmo (RSA più ML-DSA) senza interrompere la fiducia di produzione. Quello stabilisce la primitiva di rotazione. Tutto il resto — aggiornamenti di trasporto, pianificazione delle partizioni HSM, modifiche all'involucro di messaggio — può essere schedulato attorno.</p>
+<h2 id="riferimenti">Riferimenti <a class="heading-anchor" href="#riferimenti" aria-label="Collegamento a Riferimenti">#</a></h2>
+<ul>
+<li>Congress.gov, (2022). <a href="https://www.congress.gov/bill/117th-congress/house-bill/7535/text" title="Quantum Computing Cybersecurity Preparedness Act">H.R. 7535 — Quantum Computing Cybersecurity Preparedness Act ⧉</a>.</li>
+<li>NIST, (2024). <a href="https://csrc.nist.gov/pubs/fips/203/final" title="FIPS 203">FIPS 203 — Module-Lattice-Based Key-Encapsulation Mechanism Standard ⧉</a>.</li>
+<li>NIST, (2024). <a href="https://csrc.nist.gov/pubs/fips/204/final" title="FIPS 204">FIPS 204 — Module-Lattice-Based Digital Signature Standard ⧉</a>.</li>
+<li>NIST, (2024). <a href="https://csrc.nist.gov/pubs/fips/205/final" title="FIPS 205">FIPS 205 — Stateless Hash-Based Digital Signature Standard ⧉</a>.</li>
+<li>NSA, (2022). <a href="https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF" title="CNSA 2.0">Commercial National Security Algorithm Suite 2.0 ⧉</a>.</li>
+<li>BIS, (2024). <a href="https://www.bis.org/publ/work1208.htm" title="BIS Working Paper 1208">Working Paper No. 1208 — Project Leap: Quantum-proofing the financial system ⧉</a>.</li>
+<li>Bank of England (PRA), (2024). <a href="https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services" title="PRA SS1/21">SS1/21 — Operational resilience: Impact tolerances for important business services ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Ultima revisione <time datetime="2026-05-31">2026-05-31</time>.</p>
+
+<!-- enrich-end -->
+</content>
+</invoke><aside class="author-card" aria-label="Informazioni sull'autore"><img alt="Ritratto di Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/it/chi-sono/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist, scrivo di IA applicata, migrazione a ISO 20022, crittografia post-quantistica per i servizi finanziari e trasformazione strutturale dei pagamenti wholesale.</span><span class="author-credentials">Oltre 20 anni di esperienza presso HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/it/chi-sono/index.html">Profilo completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Ultima revisione <time datetime="2026-05-31">2026-05-31</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Letture correlate</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/it/2026-05-18-crittografia-quantistica-standard-sviluppi-2026" class="related-media" aria-label="Il reset della crittografia quantistica nel 2026: standard PQC, garanzia QKD e il lavoro di migrazione che le banche non possono più rimandare" tabindex="-1"><img alt="Quantum-safe cryptography migration map for 2026 showing NIST PQC standards, hybrid protocol work, QKD assurance, crypto-agility, and bank data-risk tiers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="il-reset-della-crittografia-quantistica-nel-2026-standard-pqc-garanzia-qkd-e-il-"><a href="https://sebastienrousseau.com/it/2026-05-18-crittografia-quantistica-standard-sviluppi-2026">Il reset della crittografia quantistica nel 2026: standard PQC, garanzia QKD e il lavoro di migrazione che le banche non possono più rimandare</a> <a class="heading-anchor" href="#il-reset-della-crittografia-quantistica-nel-2026-standard-pqc-garanzia-qkd-e-il-" aria-label="Collegamento a Il reset della crittografia quantistica nel 2026: standard PQC, garanzia QKD e il lavoro di migrazione che le banche non possono più rimandare">#</a></h3><p><time datetime="2026-05-18">2026-05-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/it/2026-05-14-mettere-in-sicurezza-il-libro-mastro-migrazione-post-quantum-finanza-aziendale" class="related-media" aria-label="Mettere in sicurezza il libro mastro: migrazione post-quantum nella finanza aziendale" tabindex="-1"><img alt="Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA" src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="mettere-in-sicurezza-il-libro-mastro-migrazione-post-quantum-nella-finanza-azien"><a href="https://sebastienrousseau.com/it/2026-05-14-mettere-in-sicurezza-il-libro-mastro-migrazione-post-quantum-finanza-aziendale">Mettere in sicurezza il libro mastro: migrazione post-quantum nella finanza aziendale</a> <a class="heading-anchor" href="#mettere-in-sicurezza-il-libro-mastro-migrazione-post-quantum-nella-finanza-azien" aria-label="Collegamento a Mettere in sicurezza il libro mastro: migrazione post-quantum nella finanza aziendale">#</a></h3><p><time datetime="2026-05-14">2026-05-14</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/it/2026-05-16-miglior-architettura-cloud-per-banche-2026" class="related-media" aria-label="La migliore architettura di infrastruttura cloud nel 2026: un blueprint AI-native, multi-cloud e consapevole del quantum per i servizi finanziari" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="la-migliore-architettura-di-infrastruttura-cloud-nel-2026-un-blueprint-ai-native"><a href="https://sebastienrousseau.com/it/2026-05-16-miglior-architettura-cloud-per-banche-2026">La migliore architettura di infrastruttura cloud nel 2026: un blueprint AI-native, multi-cloud e consapevole del quantum per i servizi finanziari</a> <a class="heading-anchor" href="#la-migliore-architettura-di-infrastruttura-cloud-nel-2026-un-blueprint-ai-native" aria-label="Collegamento a La migliore architettura di infrastruttura cloud nel 2026: un blueprint AI-native, multi-cloud e consapevole del quantum per i servizi finanziari">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Fonti e riferimenti</h2><ol class="article-sources-list"><li><a href="https://www.bis.org/publ/work1208.htm" rel="external noopener nofollow"><span class="source-host">www.bis.org</span><span class="source-path">/publ/work1208.htm</span></a></li><li><a href="https://csrc.nist.gov/pubs/fips/203/final" rel="external noopener nofollow"><span class="source-host">csrc.nist.gov</span><span class="source-path">/pubs/fips/203/final</span></a></li><li><a href="https://csrc.nist.gov/pubs/fips/204/final" rel="external noopener nofollow"><span class="source-host">csrc.nist.gov</span><span class="source-path">/pubs/fips/204/final</span></a></li><li><a href="https://csrc.nist.gov/pubs/fips/205/final" rel="external noopener nofollow"><span class="source-host">csrc.nist.gov</span><span class="source-path">/pubs/fips/205/final</span></a></li></ol></aside><nav class="post-pagination" aria-label="Paginazione degli articoli"><a class="post-pagination-prev" href="/it/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"><span class="post-pagination-label">Precedente</span><span class="post-pagination-title">Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/it/chi-sono/index.html">Chi sono</a></li>
+              <li><a href="/it/contatti/index.html">Contatti</a></li>
+              <li><a href="/it/fatto-con-generatore-di-siti-statici/index.html">Fatto con Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Pubblicazioni</h2>
+            <ul>
+              <li><a href="/it/articoli/index.html">Articoli</a></li>
+              <li><a href="/it/pubblicazioni/index.html">Pubblicazioni</a></li>
+              <li><a href="/it/etichette/index.html">Etichette</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Attività</h2>
+            <ul>
+              <li><a href="/it/progetti/index.html">Progetti</a></li>
+              <li><a href="/it/playlist/index.html">Playlist</a></li>
+              <li><a href="/it/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Contatti</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Iscrizione alla newsletter">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — note di ricerca su pagamenti, IA e crittografia post-quantistica. Niente spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="tu@banca.it" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Iscriviti</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Link social">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau su Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau su Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau su LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau su LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau su Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau su Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau su YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau su YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/it/accessibilita/index.html">Accessibilità</a> ·
+            <a href="/it/privacy/index.html">Privacy</a> ·
+            <a href="/it/termini/index.html">Termini</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"it"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"it"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":2694,"about":{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]},"mentions":[{"@type":"Thing","name":"Quantum computing","sameAs":["https://en.wikipedia.org/wiki/Quantum_computing","https://www.wikidata.org/wiki/Q484641"]}],"headline":"Infrastruttura pagamenti post-quantistica: perché le banche potrebbero sostituire i rail legacy invece di adattarli","description":"La crittografia post-quantistica impone una scelta binaria ai rail di pagamento: adattare RSA/ECC dentro involucri SWIFT MT e ISO 20022 mai dimensionati per ML-KEM e ML-DSA, oppure sostituire con infrastrutture cripto-agili. Decidere prima che HNDL diventi perdita operativa.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp","width":"100vw","height":"100vh","caption":"Materiale crittografico che fluttua in acque blu profonde, a simbolizzare la cattura raccogli-ora-decifra-dopo dei messaggi di pagamento i cui involucri RSA ed ECC non sopravviveranno a un computer quantistico crittanaliticamente rilevante"},"url":"https://sebastienrousseau.com/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/","datePublished":"2026-05-31T06:06:06+00:00","dateModified":"2026-05-31","inLanguage":"it","keywords":"crittografia post-quantistica, pagamenti PQC, cripto-agilità, raccogli-ora-decifra-dopo, HNDL, standard post-quantistici NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, migrazione rail di pagamento, ISO 20022 PQC, sostituzione SWIFT MT, HSM, collasso PKI, resilienza operativa, Quantum Computing Cybersecurity Preparedness Act","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"it"},"citation":[{"@type":"CreativeWork","url":"https://www.bis.org/publ/work1208.htm"},{"@type":"CreativeWork","url":"https://csrc.nist.gov/pubs/fips/203/final"},{"@type":"CreativeWork","url":"https://csrc.nist.gov/pubs/fips/204/final"},{"@type":"CreativeWork","url":"https://csrc.nist.gov/pubs/fips/205/final"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/it/"},{"@type":"ListItem","position":3,"name":"Infrastruttura pagamenti post-quantistica: perché le banche potrebbero sostituire i rail legacy invece di adattarli","item":"https://sebastienrousseau.com/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Cerca">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Cerca</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Cerca">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Cerca nella documentazione..." autocomplete="off" aria-label="Cerca"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> chiudi</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> naviga</span><span><kbd>Invio</kbd> apri</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Infrastruttura pagamenti post-quantistica: perché le banche potrebbero sostituire i rail legacy invece di adattarli","url":"https://sebastienrousseau.com/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/","inLanguage":"it-IT","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"crittografia post-quantistica, pagamenti PQC, cripto-agilità, raccogli-ora-decifra-dopo, HNDL, standard post-quantistici NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, migrazione rail di pagamento, ISO 20022 PQC, sostituzione SWIFT MT, HSM, collasso PKI, resilienza operativa, Quantum Computing Cybersecurity Preparedness Act","dependencies":["ISO 20022","Post-Quantum Cryptography","NIST","NIST FIPS 203"]}</script></body>
+</html>

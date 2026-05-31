@@ -6,14 +6,40 @@
     <description>Mga artikulo sa Filipino: applied AI, ISO 20022 payments, post-quantum cryptography at wholesale-payments transformation.</description>
     <atom:link href="https://sebastienrousseau.com/fil/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fil-PH</language>
-    <lastBuildDate>Sun, 31 May 2026 06:21:45 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 10:06:33 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Lahat ng karapatan ay nakalaan.</copyright>
+    <item>
+      <title>Post-Quantum Payments Infrastructure: Bakit Maaaring Palitan ng mga Bangko ang Legacy Rails sa Halip na I-adapt</title>
+      <link>https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>Pinipili ng post-quantum cryptography ang payment rails: adaptasyon ng RSA/ECC sa SWIFT MT at ISO 20022 envelopes na hindi sukat sa ML-KEM at ML-DSA, o pagpapalit sa crypto-agile infrastructure. Magdesisyon bago maging operational loss ang HNDL.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Sun, 31 May 2026 10:06:33 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>post-quantum cryptography</category>
+      <category>PQC payments</category>
+      <category>crypto-agility</category>
+      <category>mag-imbak-ngayon-i-decrypt-mamaya</category>
+      <category>HNDL</category>
+      <category>NIST post-quantum standards</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>paglipat ng payment rail</category>
+      <category>ISO 20022 PQC</category>
+      <category>pagpapalit ng SWIFT MT</category>
+      <category>HSM</category>
+      <category>pagbagsak ng PKI</category>
+      <category>operational resilience</category>
+      <category>Quantum Computing Cybersecurity Preparedness Act</category>
+    </item>
     <item>
       <title>Digital Assets sa 2026: Transisyon ng Imprastraktura na Hindi Dapat Antalahin</title>
       <link>https://sebastienrousseau.com/fil/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>Hindi na inobasyon ang digital assets, kundi tanong ng arkitektura ng settlement, custody, at balance sheet. Disenyo ng imprastraktura sa ilalim ng istrukturang kawalang-katiyakan ang estratehikong gawain ng bangko.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Sun, 31 May 2026 06:21:45 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 10:06:33 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>digital assets 2026</category>
@@ -27,28 +53,6 @@
       <category>mobility ng kolateral</category>
       <category>programmable money</category>
       <category>estratehiya ng bangko sa digital assets</category>
-    </item>
-    <item>
-      <title>Post-Quantum Payments Infrastructure: Bakit Maaaring Palitan ng mga Bangko ang Legacy Rails sa Halip na I-retrofit</title>
-      <link>https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
-      <description>Naglalatag ang post-quantum cryptography ng matinding tanong sa mga bangko: i-retrofit ang legacy payment rails o palitan ang mga ito ng crypto-agile na imprastraktura.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
-      <category>post-quantum cryptography</category>
-      <category>PQC banking</category>
-      <category>ML-KEM</category>
-      <category>ML-DSA</category>
-      <category>NIST</category>
-      <category>harvest-now-decrypt-later</category>
-      <category>HSM</category>
-      <category>SWIFT MT</category>
-      <category>ISO 20022</category>
-      <category>crypto-agility</category>
-      <category>RTGS</category>
-      <category>payment rails</category>
-      <category>post-quantum payments 2026</category>
     </item>
     <item>
       <title>UK Wholesale Digital Markets: Tokenized Gilts, DLT Settlement, Champion</title>

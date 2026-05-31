@@ -4,14 +4,14 @@
   <link href="https://sebastienrousseau.com/ja/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ja/"/>
   <id>https://sebastienrousseau.com/ja/</id>
-  <updated>2026-05-31T06:21:45+00:00</updated>
+  <updated>2026-05-31T10:06:33+00:00</updated>
   <entry>
-    <title>耐量子決済インフラ ― 銀行がレガシーレールをレトロフィットせず置き換える理由</title>
+    <title>耐量子決済基盤:銀行が既存レールを後付け対応ではなく置換すべき理由</title>
     <link href="https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
     <id>https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-05-31T06:06:06+00:00</updated>
-    <published>2026-05-31T06:06:06+00:00</published>
-    <summary>耐量子暗号は銀行に重い問いを突きつける ― レガシー決済レールにレトロフィットするか、暗号アジリティ前提のインフラに置き換えるかである。</summary>
+    <updated>2026-05-31T10:06:33+00:00</updated>
+    <published>2026-05-31T10:06:33+00:00</published>
+    <summary>耐量子暗号は決済レールに二者択一を迫ります。ML-KEM/ML-DSA 向けに設計されていない SWIFT MT・ISO 20022 封筒に RSA/ECC を後付けするか、暗号アジリティを備えた基盤へ置換するか。HNDL が実害となる前に判断が必要です。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

@@ -8,9 +8,9 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>vi-VN</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
-    <news:title>Hạ tầng thanh toán hậu lượng tử: Vì sao ngân hàng nên thay thế thay vì nâng cấp kênh kế thừa</news:title>
-    <news:keywords>post-quantum cryptography, PQC, ML-KEM, ML-DSA, NIST, harvest-now-decrypt-later, HSM, SWIFT MT, ISO 20022, crypto-agility, RTGS, mật mã hậu lượng tử, kênh thanh toán, hạ tầng thanh toán</news:keywords>
+    <news:publication_date>2026-05-31T10:06:34+00:00</news:publication_date>
+    <news:title>Hạ tầng Thanh toán Hậu Lượng tử: Vì sao Ngân hàng nên Thay thế chứ không Điều chỉnh Đường ray Cũ</news:title>
+    <news:keywords>mật mã hậu lượng tử, PQC thanh toán, linh hoạt mật mã, thu thập-bây-giờ-giải-mã-sau, HNDL, chuẩn hậu lượng tử NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, di trú đường ray thanh toán, ISO 20022 PQC, thay thế SWIFT MT, HSM, sụp đổ PKI, khả năng phục hồi vận hành, Đạo luật Chuẩn bị An ninh Mạng Điện toán Lượng tử</news:keywords>
   </news:news>
 </url>
 <url>
@@ -20,7 +20,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>vi-VN</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
+    <news:publication_date>2026-05-31T10:06:34+00:00</news:publication_date>
     <news:title>Thị trường Số Bán buôn tại Anh: Gilt Mã hóa, Quyết toán và Vai trò Điều phối</news:title>
     <news:keywords>thị trường số bán buôn Anh 2026, Chris Woolard, gilt mã hóa, tài chính bán buôn mã hóa, điều phối viên thị trường số, tokenisation Anh, quyết toán</news:keywords>
   </news:news>
@@ -32,7 +32,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>vi-VN</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
+    <news:publication_date>2026-05-31T10:06:34+00:00</news:publication_date>
     <news:title>ISO 20022 Sau Di Trú: Biến Dữ Liệu Thanh Toán Thành Sản Phẩm Ngân Hàng 2026</news:title>
     <news:keywords>ISO 20022 2026, địa chỉ có cấu trúc, CBPR+, sản phẩm dữ liệu thanh toán, mã mục đích thanh toán, ngân quỹ doanh nghiệp, đối soát, sàng lọc trừng phạt, phát hiện gian lận, pacs.008, pain.001</news:keywords>
   </news:news>

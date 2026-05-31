@@ -8,9 +8,9 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>th-TH</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T06:06:06+00:00</news:publication_date>
-    <news:title>โครงสร้างพื้นฐานการชำระเงินหลังควอนตัม: เหตุใดธนาคารอาจทดแทนแทนที่จะปรับปรุงช่องทางระบบเก่า</news:title>
-    <news:keywords>โครงสร้างพื้นฐานชำระเงินหลังควอนตัม 2026, post-quantum cryptography, PQC ธนาคาร, ML-KEM, ML-DSA, NIST, ความคล่องตัวด้านการเข้ารหัส, harvest-now-decrypt-later, HSM, SWIFT MT, ISO 20022, RTGS, การทดแทนช่องทางการชำระเงิน</news:keywords>
+    <news:publication_date>2026-05-31T10:06:34+00:00</news:publication_date>
+    <news:title>โครงสร้างพื้นฐาน PQC การชำระเงิน: เหตุใดธนาคารจึงควรแทนที่ราง ดั้งเดิม ไม่ใช่ปรับเปลี่ยน</news:title>
+    <news:keywords>การเข้ารหัสยุคหลังควอนตัม, PQC การชำระเงิน, ความคล่องตัวด้านการเข้ารหัส, เก็บเกี่ยวตอนนี้-ถอดรหัสภายหลัง, HNDL, มาตรฐาน NIST หลังควอนตัม, ML-KEM, ML-DSA, FIPS 203, FIPS 204, การย้ายราง การชำระเงิน, ISO 20022 PQC, การแทนที่ SWIFT MT, HSM, การล่มสลายของ PKI, ความยืดหยุ่นในการดำเนินงาน</news:keywords>
   </news:news>
 </url>
 <url>

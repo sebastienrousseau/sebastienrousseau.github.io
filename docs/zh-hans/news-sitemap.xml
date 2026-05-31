@@ -8,9 +8,9 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>zh-Hans</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T06:06:06+00:00</news:publication_date>
-    <news:title>后量子支付基础设施：银行为何可能替换而非改造遗留通道</news:title>
-    <news:keywords>后量子支付 2026, post-quantum cryptography, PQC, ML-KEM, ML-DSA, NIST, 支付基础设施, 密码敏捷性, crypto-agility, 现采后解, harvest-now-decrypt-later, HSM, SWIFT MT, ISO 20022, RTGS</news:keywords>
+    <news:publication_date>2026-05-31T10:06:34+00:00</news:publication_date>
+    <news:title>后量子支付基础设施:为何银行可能替换而非改造传统通道</news:title>
+    <news:keywords>后量子密码学, PQC 支付, 密码敏捷性, 现收割后解密, HNDL, NIST 后量子标准, ML-KEM, ML-DSA, FIPS 203, FIPS 204, 支付通道迁移, ISO 20022 PQC, SWIFT MT 替换, HSM, PKI 崩塌, 运营韧性, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
   </news:news>
 </url>
 <url>

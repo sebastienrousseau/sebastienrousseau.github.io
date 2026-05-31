@@ -1,15 +1,15 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Diagram ng post-quantum payments infrastructure na nagpapakita ng legacy rails, crypto-agility, ML-KEM, ML-DSA, HSMs, sertipiko, API, ISO 20022, at mga replacement pathway"
-banner_height: "571"
-banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80"
+banner_alt: "Cryptographic key material na lumulutang sa malalim na asul na tubig — sumisimbolo sa mag-imbak-ngayon-i-decrypt-mamaya na pagkuha ng mga mensahe ng pagbabayad na ang RSA at ECC envelope ay hindi makakaligtas sa isang cryptanalytically relevant quantum computer"
+banner_height: "1597"
+banner_width: "2584"
+banner: "https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
-date: "May 31, 2026"
-description: "Naglalatag ang post-quantum cryptography ng matinding tanong sa mga bangko: i-retrofit ang legacy payment rails o palitan ang mga ito ng crypto-agile na imprastraktura."
+date: "Mayo 31, 2026"
+description: "Pinipili ng post-quantum cryptography ang payment rails: adaptasyon ng RSA/ECC sa SWIFT MT at ISO 20022 envelopes na hindi sukat sa ML-KEM at ML-DSA, o pagpapalit sa crypto-agile infrastructure. Magdesisyon bago maging operational loss ang HNDL."
 format-detection: "telephone=no"
 hreflang: "fil"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -18,9 +18,9 @@ image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
-keywords: "post-quantum cryptography, PQC banking, ML-KEM, ML-DSA, NIST, harvest-now-decrypt-later, HSM, SWIFT MT, ISO 20022, crypto-agility, RTGS, payment rails, post-quantum payments 2026"
+keywords: "post-quantum cryptography, PQC payments, crypto-agility, mag-imbak-ngayon-i-decrypt-mamaya, HNDL, NIST post-quantum standards, ML-KEM, ML-DSA, FIPS 203, FIPS 204, paglipat ng payment rail, ISO 20022 PQC, pagpapalit ng SWIFT MT, HSM, pagbagsak ng PKI, operational resilience, Quantum Computing Cybersecurity Preparedness Act"
 language: "fil"
-excerpt: "Ang post-quantum cryptography ang wedge na maaaring magpilit sa mga bangko na palitan sa halip na i-retrofit ang legacy payment rails. Ang tanong para sa 2026 ay disiplina sa disenyo — kaya bang suportahan ng rail ang crypto-agility, mai-rotate ba ang sertipiko at HSM sa araw hindi taon, at quantum-safe ba ang audit chain bago kompromisuhin ng harvest-now-decrypt-later na pag-atake."
+excerpt: "Ginagawa ng mag-imbak-ngayon-i-decrypt-mamaya ang TLS-protected na mensahe ng pagbabayad ngayon bilang bukas na exposure mamaya. Ang ML-KEM at ML-DSA ay sampung beses na mas malaki kaysa sa RSA at ECC keys na sinukat para sa legacy rails — nagdudulot ang adaptasyon ng fragmentation, latency, at HSM exhaustion. Ang desisyong arkitektural sa 2026 ay kung ipa-patch o papalitan bago maubos ang oras ng regulasyon."
 last_reviewed: "2026-05-31"
 layout: "report"
 locale: "fil_PH"
@@ -36,23 +36,23 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "Post-Quantum Payments Infrastructure 2026"
+seo_title: "PQC Payments Infrastructure: Palitan, Huwag I-adapt"
 short_name: "sebastienrousseau"
-subtitle: "Para sa payments infrastructure, maaaring maging dahilan ang post-quantum migration para palitan ang marupok na legacy rails sa halip na isa pang patch na ipinilit dito."
-tags: "post-quantum cryptography, payments infrastructure, crypto-agility, ML-KEM, ML-DSA, harvest-now-decrypt-later, ISO 20022, HSM, RTGS"
+subtitle: "Hindi kasya ang ML-KEM at ML-DSA sa mga rail na nagdadala ng SWIFT MT at ISO 20022. Ang tapat na sagot ng inhinyero ay ang adaptasyon ay kontroladong migration plan na may maikling buhay, at ang pagpapalit lamang ang matatag na destinasyon."
+tags: "post-quantum cryptography, PQC, crypto-agility, HNDL, ML-KEM, ML-DSA, NIST, imprastraktura ng pagbabayad, ISO 20022, SWIFT, HSM, PKI, katatagang operasyonal"
 theme-color: "0, 83, 191"
-title: "Post-Quantum Payments Infrastructure: Bakit Maaaring Palitan ng mga Bangko ang Legacy Rails sa Halip na I-retrofit"
+title: "Post-Quantum Payments Infrastructure: Bakit Maaaring Palitan ng mga Bangko ang Legacy Rails sa Halip na I-adapt"
 url: "https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/rss.xml"
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "Ang 2026 post-quantum payments blueprint — crypto-agility, pagpapalit ng legacy rail, mga limitasyon ng HSM, timing ng ISO 20022, at quantum-safe na arkitektura ng pagbabayad."
+item_description: "Hindi kasya ang ML-KEM at ML-DSA sa SWIFT MT at ISO 20022 envelopes na ginawa para sa RSA-2048. Pinapaikli ng mag-imbak-ngayon-i-decrypt-mamaya ang timeline. Ang sagot ng arkitektura ay pagpapalit sa crypto-agile rails, hindi adaptasyon."
 item_guid: "https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/rss.xml"
 item_link: "https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/rss.xml"
 item_pub_date: "Sun, 31 May 2026 06:06:06 +0000"
-item_title: "Post-Quantum Payments Infrastructure: Bakit Maaaring Palitan ng mga Bangko ang Legacy Rails sa Halip na I-retrofit"
+item_title: "Post-Quantum Payments Infrastructure: Bakit Maaaring Palitan ng mga Bangko ang Legacy Rails sa Halip na I-adapt"
 last_build_date: "Sun, 31 May 2026 06:06:06 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 pub_date: "Sun, 31 May 2026 06:06:06 +0000"
@@ -64,143 +64,216 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "PQC Payments"
+apple-mobile-web-app-title: "PQC Bayad 2026"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
-twitter_description: "Ang 2026 post-quantum payments blueprint — crypto-agility, pagpapalit ng legacy rail, mga limitasyon ng HSM, timing ng ISO 20022, at quantum-safe na arkitektura ng pagbabayad."
+twitter_description: "Hindi kasya ang ML-KEM at ML-DSA sa legacy SWIFT MT at ISO 20022 rails. Pinapasara ng HNDL ang oportunidad. Palitan, huwag i-adapt."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
-twitter_title: "Post-Quantum Payments Infrastructure 2026"
+twitter_title: "PQC Payments Infrastructure 2026: Palitan, Huwag I-adapt"
 twitter_url: "https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
-thanks: "Thanks for reading!"
+thanks: "Salamat sa pagbabasa!"
 site_last_updated: "2026-05-31"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 ---
 
-# Post-Quantum Payments Infrastructure: Bakit Maaaring Palitan ng mga Bangko ang Legacy Rails sa Halip na I-retrofit
+# Post-Quantum Payments Infrastructure: Bakit Maaaring Palitan ng mga Bangko ang Legacy Rails sa Halip na I-adapt
 
 <!-- lead-start -->
+<!-- lead-start: manual -->
 <aside class="post-lead" aria-label="Buod ng artikulo">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Pinipilit ng post-quantum cryptography ang isang estratehikong tanong na matagal nang ipinagpapaliban ng mga bangko: i-retrofit ang legacy payment rails sa pamamagitan ng pagdaragdag ng mga PQC na algorithm (ML-KEM, ML-DSA), o palitan ang mga rail na iyon ng crypto-agile na imprastraktura na binuo upang ang susunod na rotasyon ng algorithm ay tumagal ng araw hindi taon. Ang sagot para sa karamihan ng Tier-1 na mga bangko sa 2026 ay hybrid: i-retrofit kung makatuwiran, palitan kung ang legacy na substrate ay lumalaban sa crypto-agility. Ang harvest-now-decrypt-later na banta ang nagpapakahulugan na ang desisyon ay hindi na "kailan" — kundi "aling workload ang una, aling arkitektura ang makakaligtas sa susunod na pagbabago ng algorithm, at aling audit chain ang quantum-safe bago ma-decrypt ng mga adbersaryo sa 2030 ang mga nakuha nilang data ngayon."</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Ang mga cryptographic envelope na nagdadala ng SWIFT MT at ISO 20022 payments ay sinukat para sa RSA-2048 at ECC. Ang mga post-quantum algorithm na pinagtibay ng NIST — ML-KEM (FIPS 203) at ML-DSA (FIPS 204) — ay nag-iisyu ng mga public key at lagda na umaabot sa dalawampung beses na mas malaki. Ang adaptasyon ng mga payload na iyon sa legacy rails ay nagdudulot ng packet fragmentation, HSM exhaustion, at latency tails na hindi kayang sagutin ng operasyon. Tinatanggal ng mag-imbak-ngayon-i-decrypt-mamaya ang pagpipiliang maghintay. Ang naipagtatanggol na desisyong arkitektural sa 2026 ay pagpapalit sa crypto-agile rails, hindi pag-patch.</p>
 <p class="post-lead-heading"><strong>Mga pangunahing punto</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Buwis ang retrofit, hindi estratehiya.</strong> Ang pagdikit ng PQC sa mga legacy na COBOL/HSM/SWIFT MT stack ay gumagana nang isang beses; ang paggawa nito muli para sa susunod na rotasyon ng algorithm ay hindi maisasakatuparan sa operasyon.</li>
-  <li><strong>Ang crypto-agility ang tunay na produkto.</strong> Ang tanong sa arkitektura ay "kaya ba nating i-rotate ang mga algorithm sa loob ng araw?", hindi "na-install ba natin ang ML-KEM?" — ang mga bangkong naghahanda ng crypto-agility ay magtatagumpay sa susunod na rotasyon; ang mga bangkong hindi nito gagawin ay magbabayad ng gastos sa paglipat nang dalawang beses.</li>
-  <li><strong>Ang harvest-now-decrypt-later ang relo.</strong> Ang cross-border na mensahe ng pagbabayad na nakuha ngayon at na-decrypt sa 2030 ay magbubunyag ng datos ng kliyente, impormasyon sa routing, at mga senyales ng AML — kailangang quantum-safe ang audit chain bago iyon maging problema sa 2030.</li>
-  <li><strong>Ang HSM at sertipiko ang bottleneck.</strong> Ang suporta ng vendor HSM sa PQC, ang mga pipeline ng pag-isyu ng sertipiko, at ang mga tooling sa key rotation ay kailangang umagapay sa napiling algorithm.</li>
-  <li><strong>Kalaban ang fragmentation.</strong> Ang per-rail / per-region / per-vendor na mga pilot ng PQC ay lumilikha ng panganib sa operasyon sa susunod na dekada — nananalo ang isang naka-orchestrate na migration na may masusukat na ebidensya.</li>
+  <li><strong>Ang HNDL ay pagkalugi sa 2026, hindi panganib sa 2035.</strong> Ang naka-encrypt na payment traffic na nakuha ngayon ay madi-decrypt sa araw na dumating ang isang cryptanalytically relevant quantum computer — at tumatakbo na ang orasan ng regulasyon.</li>
+  <li><strong>Sinisira ng problema sa laki ang legacy rails.</strong> Ang mga ML-KEM-768 public key ay 1,184 bytes; ang mga ML-DSA-65 signature ay 3,309 bytes. Hindi sinukat ang SWIFT MT at maraming ISO 20022 implementation para doon.</li>
+  <li><strong>Ang buhay ng adaptasyon ay buwan, hindi taon.</strong> Ang pag-aalis ng RSA sa mga rail na umaandar ay nagbibigay ng oras para sa programang pagpapalit — hindi ito ang pagpapalit mismo.</li>
+  <li><strong>Ang crypto-agility lamang ang matibay na disenyo.</strong> Ang pagpili ng algorithm ay dapat configuration parameter, hindi pundasyong palagay.</li>
+  <li><strong>Ang pagbagsak ng PKI ang sistematikong kabiguan.</strong> Kapag nasira ang signing algorithm ng isang CA, ang bawat certificate sa ilalim nito ay tumitigil bilang ebidensya — iyon ang exposure ng institusyon na dapat pamahalaan.</li>
 </ul>
+<p class="post-lead-related"><strong>Karagdagang babasahin:</strong> <a href="/2026-05-18-quantum-cryptography-standards-developments-2026/">The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer</a>, <a href="/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</a>, <a href="/2026-05-16-best-cloud-infrastructure-architecture-2026/">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a>.</p>
 </aside>
 <!-- lead-end -->
 
-Naglalatag ang post-quantum cryptography ng matinding tanong sa mga bangko: i-retrofit ang legacy payment rails o palitan ang mga ito ng crypto-agile na imprastraktura. Ang senyales para sa 2026 ay lumipat na ang quantum-safe na rails mula sa innovation theatre patungo sa operating model ng pagbabangko, kung saan ang mapagpasiyang tanong ay disiplina sa disenyo: aling datos, rails, kontrol, pananagutan, at workflow ng kliyente ang dapat magsama-sama ([The Finanser](https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury "Programmable liquidity")).
+Ang mga cryptographic primitive na nag-authenticate sa bawat wholesale payment sa produksiyon ngayon — RSA, ECDSA, ECDH — ay may petsa ng pagtatapos. Inilagay ng US [Quantum Computing Cybersecurity Preparedness Act ⧉](https://www.congress.gov/bill/117th-congress/house-bill/7535/text "H.R. 7535") ang petsang iyon sa federal procurement law sa pagtatapos ng 2022. Inilagay ng [BIS Working Paper No. 1208 ⧉](https://www.bis.org/publ/work1208.htm "Project Leap: Quantum-proofing the financial system") ang parehong pagtatapos sa supervisory frame para sa mga central bank. Inilathala ng [NIST FIPS 203 ⧉](https://csrc.nist.gov/pubs/fips/203/final "Module-Lattice-Based Key-Encapsulation Mechanism Standard") at [FIPS 204 ⧉](https://csrc.nist.gov/pubs/fips/204/final "Module-Lattice-Based Digital Signature Standard") ang mga kapalit noong Agosto 2024.
+
+Hindi pa naunawaan ng payment infrastructure ang kahulugan nito.
+
+Ang artikulong ito ay ang inhinyerong argumento para sa pagpapalit sa halip na adaptasyon. Sinulat ito para sa mga arkitekto na nauunawaan na ang mga algorithm at kailangang magpasya kung ano ang gagawin sa SWIFT MT, ISO 20022 pacs at pain messages, mga RTGS interface, mga HSM estate, at ang certificate hierarchy sa ilalim ng lahat ng ito.
 
 ---
 
-> **Executive Summary / Mga Pangunahing Punto**
+> **Buod para sa Executive / Pangunahing Punto**
 >
-> - **Estratehiko na ngayon ang Quantum-Safe na Rails.** Nakaugnay ang paksa sa operating model, resilience, halaga sa kliyente, at regulatory na ebidensya sa halip na isang makitid na paglulunsad ng produkto ([The Finanser](https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury "Programmable liquidity")).
-> - **Crypto-agility ang prinsipyo ng disenyo.** Kailangan ng mga bangko ang arkitektura na nag-uugnay ng patakaran, produkto, datos, pagpili ng rail, mga risk control, at masusukat na ekonomiya ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **Real-time ang dapat maging modelo ng kontrol.** Ang mga desisyon sa fraud, liquidity, compliance, settlement, at operational risk ay dapat tumakbo sa bilis ng workflow, hindi pagkatapos ng pangyayari.
-> - **Komersyal na bentahe ang kalidad ng datos.** Ang istrukturadong datos, konteksto ng transaksyon, audit log, at mga senyales ng pagkakakilanlan ang nagiging substrate ng automation at mga produktong nakaharap sa kliyente.
-> - **Kalaban ang fragmentation.** Ang bangkong nagtatayo ng mga nakahiwalay na pilot sa bawat rail, token, modelo, o regulatoryong pangangailangan ay lumilikha ng panganib sa operasyon sa hinaharap.
-> - **Orchestration ang panalong modelo.** Ang institusyong kayang mag-route, mamahala, magpresyo, magbigay ng ebidensya, at magpaliwanag sa bawat workflow ay hihigit sa institusyong basta't gumagamit lamang ng panibagong tool ([Kyriba](https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/ "ISO 20022 migration")).
+> - **Ang mag-imbak-ngayon-i-decrypt-mamaya (HNDL) ang operational threat.** Nire-record ng mga kalaban ang naka-encrypt na payment traffic sa 2026 upang i-decrypt ito sa sandaling umiral ang isang cryptanalytically relevant quantum computer (CRQC). Kasama sa nakuhang traffic ang mga settlement instruction, datos ng benepisyaryo, at authentication material na may matagal na pagiging sensitibo.
+> - **Pinagtibay na ng NIST ang mga kapalit.** Ang ML-KEM (FIPS 203) para sa key encapsulation at ML-DSA (FIPS 204) para sa digital signatures ang mga default. Sinasaklaw ng SLH-DSA (FIPS 205) ang stateless hash-based na fallback.
+> - **Sinisira ng pagkakaiba sa laki ang legacy assumptions.** Ang mga public key at signature ay 5–20× na mas malaki kaysa sa katumbas na RSA-2048. Tumatama ito sa MTU sa mga payment network, sa fixed-buffer assumptions sa MT message handler, at sa cryptographic throughput ng mga naka-install na HSM fleet.
+> - **Ang hybrid (klasiko + PQC) ay sasakyan ng paglipat, hindi destinasyon.** Ang hybrid TLS at hybrid X.509 ay nagbibigay ng dalawa hanggang tatlong taon ng interoperability habang pinapalitan ang mga production rail. Hindi nila nilulutas ang nakabaong problema sa kapasidad.
+> - **Ang PKI ang pundasyong pader.** Ang isang certificate authority na ang signature algorithm ay nagiging maaaring pekein ay nagpapawalang-bisa sa bawat certificate sa ilalim nito. Ang institusyonal na exposure ng bangko ay ang chain, hindi ang anumang isang endpoint.
+> - **Ang crypto-agility ang pag-aari ng arkitektura na dapat idisenyo.** Ang mga algorithm identifier, key format, signature envelope, at HSM partition ay dapat lahat parameterisable. Anumang naka-pin sa RSA sa compile time ay technical debt na sabay-sabay na maninigil.
 >
 ---
 
-## Bakit Naging Estratehiko ang 2026
+## Mag-imbak Ngayon, I-decrypt Mamaya: Ang Threat Model na Tinatanggal ang Pagpipiliang Maghintay
 
-Lumampas na ang industriya sa yugto ng adopsyon. Hindi na sapat ang sumali sa isang rail, mag-migrate ng mensahe, magpatakbo ng proof of concept ng AI, o magpahayag ng tokenisation pilot. Sa 2026, ang estratehikong bentahe ay nagmumula sa pag-orchestrate ng mga kakayahang iyon laban sa isang tunay na workflow, at pagkatapos ay patunayan na ang workflow ay mas ligtas, mas mabilis, mas mura, mas matatag, o mas kapaki-pakinabang sa mga kliyente.
+Binabaliktad ng HNDL ang karaniwang cryptographic timeline. Ang konbensiyonal na pagtatasa ng panganib ay nagtatanong kung kailan magaganap ang banta. Tinatanong ng HNDL kung kailan magiging gamit ang datos na nakuha ngayon sa kalaban. Para sa mga mensahe ng pagbabayad — pagkakakilanlan ng benepisyaryo, account number, structured remittance data, sanction-screening payload, intra-bank settlement instructions — ang yugto ng pagiging sensitibo ay taon hanggang dekada. Ang karamihan ng traffic na iyon ay nai-record sa isang lugar ngayon mismo.
 
-Iyon ang dahilan kung bakit ang quantum-safe na rails ay isang paksa na ngayon sa antas ng board of directors. Paulit-ulit na lumilitaw ang parehong mga presyon: mas mayamang datos ng pagbabayad, real-time na settlement, tokenisadong pera, AI decisioning, Open Banking, operational resilience, konsentrasyon sa cloud, at mas matibay na regulatory evidence. Kapag ginagamot nang hiwalay, ang mga presyong iyon ay lumilikha ng programme sprawl. Kapag ginagamot bilang isang arkitektura, lumilikha ito ng operating leverage ([The Finanser](https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury "Programmable liquidity"), [J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
+Binibigyan ng [NSA's CNSA 2.0 timeline ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "Commercial National Security Algorithm Suite 2.0") ang mga national-security system hanggang 2035 upang kumpletuhin ang paglipat. Mas mabilis ang takbo ng mga financial supervisor — itinuturing ng [PRA's expectations on operational resilience ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21") ang cryptographic agility bilang third-party concentration risk. Ang inaasahan sa 2026 ay ilalathala ng mga materyal na payment rail ang kanilang PQC migration plan sa kanilang resilience self-attestation.
 
-## Ang Baseline ng Arkitektura para sa 2026
+Hindi kailangan ng HNDL adversary ng CRQC ngayon. Kailangan ng kalaban ang:
 
-### 1. Workflow Muna, Teknolohiya Pangalawa
+1. **Posisyon sa network.** Submarine-cable tap, ISP-level capture, at mga compromised middlebox ay lahat saklaw. Ang wholesale payment traffic ay nakakonsentra sa kakaunting network path.
+2. **Imbakan.** Isang petabyte ng structured payment data ay napapamahalaang archive sa 2026.
+3. **Pasensya.** Walang gastos ang pagkuha kada hinaharang na mensahe. Darating ang ani mamaya.
 
-Dapat magsimula ang bangko sa friction: nakukulong na liquidity, pagkaantala ng settlement, gastos sa reconciliation, mga nabigong pagbabayad, pagkakalantad sa fraud, mahinang auditability, o mahinang karanasan ng kliyente. Makatwiran lamang ang teknolohiya kung saan nito inaalis ang friction na iyon ([The Finanser](https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury "Programmable liquidity")).
+Ang argumento para sa paglipat samakatuwid ay hindi "maaaring dumating ang quantum computer sa 2035." Ito ay "anumang TLS session na natatapos ngayong gabi gamit ang RSA-2048 key exchange ay exposed habang nananatiling sensitibo ang datos sa loob nito."
 
-### 2. Datos Bilang Control Plane
+## Ang Problema sa Laki ay ang Problema ng Inhinyeriya
 
-Ang istrukturado, pinamamahalaan, at matatraceng datos ang pundasyon. Kung walang nagagamit na datos, nagiging marupok ang automation at nagiging manu-manong proseso ang compliance. Kung may magagamit na datos, makakagawa ang mga bangko ng routing intelligence, mga real-time na kontrol, at analytics na nakaharap sa kliyente ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
+Ang pampublikong talakayan tungkol sa PQC migration ay nakatutok sa pagpili ng algorithm. Ang mas mahirap na problema ay dimensyonal.
 
-### 3. Orchestration sa mga Rail at Platform
+| Primitive | Public key | Signature / ciphertext |
+|---|---|---|
+| RSA-2048 | 256 bytes | 256 bytes (signature) |
+| ECDSA P-256 | 64 bytes | 64 bytes (signature) |
+| ML-KEM-768 | **1,184 bytes** | **1,088 bytes (ciphertext)** |
+| ML-DSA-65 | **1,952 bytes** | **3,309 bytes (signature)** |
+| SLH-DSA-128f | 32 bytes | **17,088 bytes (signature)** |
 
-Dapat suportahan ng arkitektura ang maramihang rails, provider, identity scheme, risk signal, at settlement asset. Dapat gawin ang desisyon sa routing batay sa gastos, bilis, finality, hurisdiksyon, kagustuhan ng kliyente, resilience, at yaman ng datos.
+Ang mga numerong iyon ay tuwirang tumutugma sa mga failure mode na hindi kailanman dinisenyo para sa legacy payment infrastructure:
 
-### 4. Naka-embed na Compliance at Ebidensya
+- **Packet fragmentation sa landas.** Ang isang ClientHello na nagdadala ng hybrid ML-KEM-768 kasama ang klasikong X25519 ay lumalampas sa karaniwang 1,500-byte Ethernet MTU. Pinaghahati-hati, ibinababa, o muling sinusulat ng mga middlebox sa pagitan ng dalawang payment endpoint ang handshake. Lumalabas ang kabiguan bilang paulit-ulit na TLS error na parang panandaliang network noise.
+- **Mga palagay sa buffer sa MT handler.** Maraming SWIFT MT integration ang nagdadala ng signed envelope na sinukat para sa ECDSA. Ilagay ang isang ML-DSA signature sa parehong envelope at ang parser ay magpuputol o magtatanggi.
+- **HSM throughput.** Ang ML-DSA signing sa isang naka-install na HSM fleet ay 3–10× na mas mabagal kaysa ECDSA kada operasyon, sa hardware na ang key-per-second budget ay umiinit na sa mga end-of-day batch window.
+- **Bigat ng certificate chain.** Ang isang four-level CA hierarchy na muling inilathala gamit ang ML-DSA signatures ay lumalaki mula humigit-kumulang 6 KB tungo sa humigit-kumulang 60 KB. Binabayaran iyon ng bawat TLS handshake sa rail.
 
-Ang modelo ng compliance ay dapat likas sa workflow. Ang policy-as-code, awtomatikong audit log, ebidensya ng operational resilience, mga rekord ng pahintulot, at model governance ay dapat malikha bilang bahagi ng pagpapatupad, hindi muling likhain para sa mga auditor sa kalaunan.
+Ang landas ng adaptasyon ay tugunan ang mga limitasyong ito nang isa-isa — mas malalaking buffer dito, mas mabibilis na HSM doon, fragmentation tolerance sa mga middlebox. Iyon ay naipagtatanggol na anim na buwang tulay. Hindi ito arkitektura.
 
-### 5. Yunit ng Ekonomiya at Halaga sa Kliyente
+## Adaptasyon Versus Pagpapalit: Ang Desisyon na Nagtatakda ng Programa
 
-Ang bawat inisyatiba ay nangangailangan ng ebidensya ng komersyal na halaga. Ang cost-per-payment, cost-per-decision, cost-per-investigation, naimpok na liquidity, naiwasang manu-manong pagsasaayos, nabawasang fraud loss, at adopsyon ng kliyente ang dapat magpasiya sa mga desisyon ng scaling.
+Ang tapat na pagbalangkas ay ang adaptasyon ay kontroladong migration plan na may maikling buhay, at ang pagpapalit lamang ang matatag na destinasyon. Ang desisyon ay kung alin ang pondohan muna ng bangko, at gaano katagal mananatiling bukas ang window ng adaptasyon bago ito maging permanenteng pansamantalang lutas.
 
-## Talaan ng Estratehikong Arkitektura
+Ang adaptasyon ay nangangahulugan ng:
 
-| Layer | Direksyon sa 2026 | Pagkakataon sa Pagbabangko | Panganib kung Mali ang Pangangasiwa |
+- Hybrid TLS (ML-KEM + X25519) na tinatapos sa umiiral na hangganan ng rail.
+- Dual-signed na sertipiko (RSA primary, ML-DSA secondary) na ibinigay mula sa isang PQC-capable na subordinate CA.
+- Mas malalaking MT buffer at mas mahigpit na MTU policy sa mga payment VPN.
+- HSM firmware update kung saan sinusuportahan ng vendor ang PQC primitives; buong pagpapalit ng HSM kung saan hindi.
+
+Maaaring gawin ang trabahong iyon. Hindi nito inaayos ang nakabaong problema, na ang SWIFT MT at maraming ISO 20022 implementation ay nag-encode ng cryptographic envelope sa loob ng isang format ng mensahe na nagpipirme sa algorithm. Ang susunod na paglipat ng algorithm — at magkakaroon nito, kapag eventually nagpakita ng kahinaan ang ML-KEM o pinapalitan ito ng bagong pamantayan — ay nagpapatakbo ng parehong migration muli sa parehong rail.
+
+Ang pagpapalit ay nangangahulugan ng pagtanggap na ang cryptographic layer ay hindi katangian ng format ng mensahe. Ito ay katangian ng isang nakahiwalay na envelope service na tinatawag ng format ng mensahe. Konkreto:
+
+- Lumilipat ang transport security boundary sa isang service mesh o sidecar na nagtatapos ng hybrid TLS at nag-iharap ng cleartext na mensahe sa rail na may matatag na interface.
+- Ang mga message-level na lagda ay ginagawa ng nakatuong signing service na ang pagpili ng algorithm ay configuration parameter, hindi hard-coded na palagay.
+- Ang mga sertipiko ay ibinibigay mula sa isang CA na ang signing algorithm mismo ay maaaring paikutin.
+- Ang mga HSM partition ay tinutugunan ayon sa layunin (transport, signing, key encapsulation) sa halip na ayon sa format ng mensahe.
+
+Ang disenyong pagpapalit ay nananatili sa susunod na pagbabago ng algorithm nang hindi muling hinahawakan ang rail.
+
+## Ang Crypto-Agile na Arkitektura, Layer kada Layer
+
+Ang mga infrastructure layer na mahalaga para sa PQC migration ay hindi ang mga business layer ng "datos, kontrol, ekonomiya" na akma sa generic na banking narrative. Ang mga layer na mahalaga ay cryptographic.
+
+| Layer | Ang ginagawa nito | Ang tanong ng PQC | Direktiba ng arkitektura |
 |---|---|---|---|
-| **Workflow layer** | Ang sakit ng kliyente ang nagtatakda ng produkto | Malinaw na business case at adopsyon | Mga pilot na hinihimok ng teknolohiya na walang gumagamit |
-| **Data layer** | Istrukturado at pinamamahalaang datos ng transaksyon at kontrol | Automation, analytics, at auditability | Mas mabilis na lumalakad ang masamang datos |
-| **Rail layer** | Routing sa kabuuan ng cards, A2A, RTGS, stablecoin, deposito, API, DLT | Na-optimisang gastos, bilis, at finality | Channel sprawl at duplicate na kontrol |
-| **Control layer** | Real-time na patakaran, fraud, sanksyon, resilience, identity, at pahintulot | Pamamahala ng panganib sa bilis ng pagpapatupad | Manu-manong compliance pagkatapos ng pangyayari |
-| **Economics layer** | Nasukat na yunit ng gastos at halaga sa kliyente | Scaling na batay sa ebidensya | Gastos sa inobasyon na walang matagalang return |
+| **HSM / key-management** | Bumubuo, nag-iimbak, at gumagamit ng key material sa ilalim ng hardware isolation | Sinusuportahan ba ng naka-install na HSM firmware ang ML-KEM, ML-DSA, at isang hybrid key-encapsulation API? Ano ang pagkakaiba ng signing throughput kumpara sa ECDSA sa parehong hardware? | I-inventory ang bawat HSM partition ayon sa suporta sa algorithm at per-second capacity. I-decommission ang anumang naka-pin sa RSA na walang firmware path. Magtayo ng mga nakatuong PQC partition bago ang production cutover. |
+| **PKI / certificate authority** | Nagbibigay, nagbabawi, at nag-chain ng tiwala sa pamamagitan ng X.509 certificate | Kaya bang mag-sign ng CA gamit ang ML-DSA ngayon? Mayroon bang nasubok na proseso para sa pag-ikot ng root at muling pagbibigay ng chain? Sinukat ba ang CRL at OCSP responders para sa bigat ng ML-DSA signature? | Ituring ang CA stack bilang pundasyong pader. Magtatag ng PQC-capable na subordinate ngayon. I-time ang root rotation para sa pinakamatagal na buhay na certificate dependency, hindi para sa kombenyensya. |
+| **Transport / network** | Tinatapos ang TLS, IPsec, at MACsec sa pagitan ng mga payment endpoint | Tinatanggap ba ng load balancer, WAF, at landas ng middlebox ang hybrid handshake na lumalampas sa legacy MTU? Sinukat ba ang session-resumption tickets para sa PQC keys? | Ilipat ang TLS termination sa isang crypto-agile na hangganan (sidecar o mesh). Itaas ang MTU policy sa mga payment VPN. Subukan ang buong landas na sinasadyang nagpapasimula ng fragmentation. |
+| **Application / message payload** | Nagdadala ng SWIFT MT, ISO 20022 pacs / pain / camt messages at ang kanilang cryptographic envelope | Tinatanggap ba ng message handler ng rail ang mga signed envelope na may sukat na ML-DSA? Algorithm-aware ba ang mga intermediate parser o pinuputol ng haba? | Ihiwalay ang envelope mula sa payload. Mag-sign sa isang service boundary, hindi sa loob ng message-format handler. Ituring ang mga algorithm identifier bilang datos, hindi bilang schema. |
+| **Audit / ebidensya** | Bumubuo ng cryptographic chain of trust na pinagkakatiwalaan ng mga superbisor at kliyente | Naberipika pa ba ang mga makasaysayang signed record kapag deprecated na ang signing algorithm? May long-term archival signature plan ba? | Counter-sign ang mga archive gamit ang hash-based primitive (SLH-DSA) para sa katiyakan na nananatili sa anumang isang pagbagsak ng algorithm. Ituring ang audit chain bilang regulated artefact, hindi bilang build by-product. |
 
-## Ang Ibig Sabihin Nito ayon sa Uri ng Bangko
+Ang disiplina ay gawing configuration value ang bawat pagpili ng algorithm sa bawat layer. Ang institusyong nag-hard-code ng RSA-2048 sa alinman sa mga layer na iyon ay nagmamana ng nag-uugnay na end-of-life event kapag bumagsak ang algorithm na iyon.
+
+## Ang Kahulugan Nito Ayon sa Uri ng Bangko
+
+Iba ang exposure profile ayon sa institusyon. Iba rin ang mga direktiba.
 
 ### Mga Global na Bangko
 
-Dapat lumikha ang mga global na bangko ng platform-level na orchestration upang ang bawat merkado, rail, token, at kakayahan ng AI ay hindi maging hiwalay na operating model.
+Pinapatakbo ng mga global na bangko ang pinakamalaking naka-install na HSM fleet, ang pinakamahabang certificate chain, at ang pinakamasalimuot na network path sa pagitan ng mga counterparty. Ang nangungunang panganib ay hindi pagpili ng algorithm — ito ang gastos ng koordinasyon ng pagpapalit ng algorithm sa daan-daang internal na serbisyo at dose-dosenang panlabas na counterparty nang sabay-sabay.
+
+Ang direktiba ay pondohan ang PQC-capable na CA, ang crypto-agile transport boundary, at ang signing service na parameterised-algorithm bilang 2026 na trabaho, bago i-adapt ang anumang isang rail. Ang adaptasyon pagkatapos ay nagiging rutinaryong production change sa loob ng kilalang balangkas. Kung walang balangkas, ang bawat rail retrofit ay muling-tinatalakay ang parehong mga desisyong arkitektural.
 
 ### Mga Regional na Bangko
 
-Dapat tumuon ang mga regional na bangko sa mga use case kung saan ang tiwala, lokal na kaalaman sa merkado, at mas simpleng integrasyon ay higit kaysa sa scale: visibility sa treasury, pag-iwas sa fraud, mga bayad sa Open Banking, at mga regulado na digital money service.
+May mas kaunting algorithmic surface area ang mga regional na bangko ngunit may proporsyonal na mas kaunting espesyalistang tauhan. Ang nangungunang panganib ay HSM vendor lock-in sa mga algorithm na hindi pa nai-commit ng vendor na suportahan.
+
+Ang direktiba ay isulat ang suporta sa PQC — partikular ang ML-KEM at ML-DSA, na may nasubok na firmware upgrade path — sa bawat HSM contract renewal mula 2026 pasulong. Ang mga bangkong walang sugnay na iyon ay nagmamana ng pinilit na pagpapalit ng hardware sa iskedyul ng vendor, hindi sa kanila.
 
 ### Mga Fintech at PSP
 
-Dapat bawasan ng mga fintech ang pagiging kumplikado para sa mga bangko sa halip na magdagdag pa ng isang nakahiwalay na rail. Ang pinakamahusay na alok ay magdadala ng orchestration, compliance evidence, o data intelligence.
+Ang mga payment service provider at fintech ay karaniwang nasa pagitan ng bangko bilang counterparty at sistema ng mangangalakal o end-user. Ang kanilang cryptographic exposure ay ang API boundary sa magkabilang panig.
+
+Ang direktiba ay maglathala ng hybrid TLS interface — klasiko at ML-KEM — sa panig na nakaharap sa bangko bilang pangunahing pamantayan sa mga komersyal na pag-uusap sa 2026. Ang fintech na dumarating na may PQC interoperability na naipakita na ay nananalo ng integration cycle laban sa fintech na hindi pa nagsisimula.
 
 ### Mga Corporate Treasurer
 
-Dapat hingin ng mga treasurer ang mga masusukat na pagpapabuti: mas kaunting pagsasaayos ng bayad, mas mabuting visibility sa liquidity, mas mayamang datos ng reconciliation, mas mabilis na settlement, at mas matibay na kontrol sa mga awtomatikong desisyon.
+Hindi tuwirang pinapatakbo ng mga treasurer ang cryptographic infrastructure. Ginagamit nila ito — ang bawat bank API, bawat secure file transfer, bawat signed confirmation ay nakadepende sa PKI ng bangko.
 
-## Konklusyon
+Ang direktiba ay magdagdag ng tatlong tanong sa bawat bank RFP sa 2026: aling mga PQC algorithm ang ginagamit ng bangko ngayon sa customer-facing na TLS, ano ang plano ng bangko para sa mga ML-DSA-signed na payment confirmation, at paano balak ng bangko na panatilihin ang verifiability ng mga makasaysayang signed record kapag na-deprecate na ang RSA. Ang mga bangko na hindi makasagot sa mga tanong na iyon ay nagpapakita ng isang bagay tungkol sa kanilang nakabaong inhinyerong kahandaan.
 
-Ang Post-Quantum Payments Infrastructure ay sa huli isang tanong sa arkitektura. Ang mga institusyong magtatagumpay ay hindi ang may pinakamaraming pilot o pinakamalakas na lenggwahe ng inobasyon. Ang mga ito ay ang mga institusyong nag-uugnay ng workflow ng kliyente, kalidad ng datos, orchestration ng rail, naka-embed na compliance, at yunit ng ekonomiya sa isang magkakaugnay na operating model.
+## Ang Susunod na Mangyayari
+
+Ang unang alon ng PQC deployment sa mga pagbabayad ay hindi makikita ng mga end user. Lalabas ang hybrid TLS sa handshake, lalaki ang certificate chain, dahan-dahang tataas ang HSM signing latency ng ilang millisecond, at patuloy na umaandar ang mga rail. Iyon ang landas ng tagumpay.
+
+Ang mga nakikitang kabiguan ay dadalhin ng adaptasyon: isang rail na hindi makakatanggap ng ML-DSA-signed na envelope nang walang pagputol, isang CA na ang CRL distribution point ay hindi kayanin ang bagong bigat ng lagda, isang middlebox na nagpapaghati-hati ng hybrid handshake sa muling-inayos na ClientHello. Ang mga kabiguang iyon ay darating sa produksiyon hanggang 2027.
+
+Ang desisyong arkitektural sa 2026 ay kung pondohan ang infrastructure ng pagpapalit na gumagawa ng walang katuturan ang adaptasyon, o pondohan ang serye ng mga rail-specific na pag-aayos na ang bawat isa ay mukhang mas mura ngunit pinagsama-sama ay mas mahaba at mas mahal na migration. Ang bangkong pipili ng unang landas ay magpapatakbo ng mas tahimik na operasyon sa buong paglipat. Ang bangkong pipili ng pangalawa ay gugugol ng natitirang bahagi ng dekada sa pagpapaliwanag ng incident review sa mga superbisor.
+
+Ang PQC ay hindi problema sa cryptography na nagbabalat-kayo bilang problema sa infrastructure. Ito ay problema sa infrastructure na nagkataong sinimulan ng cryptography.
 
 ## Mga Madalas na Tanong
 
-**Bakit kagyat ang paksang ito sa 2026?**
+**May deadline ba na nagpipilit sa trabahong ito?**
 
-Dahil nag-converge na ang mga may kaugnayang imprastraktura, regulasyon, at mga senyales ng pangangailangan ng kliyente. Ang dating opsyonal na eksperimento ay nagiging bahagi na ng operating model ng bangko.
+Ang matitigas na deadline ng regulasyon ay nakadepende sa jurisdiction. Ang US [Quantum Computing Cybersecurity Preparedness Act ⧉](https://www.congress.gov/bill/117th-congress/house-bill/7535/text "H.R. 7535") ay nagbibigkis sa mga federal system. Ang [NSA CNSA 2.0 timeline ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "CNSA 2.0") ay nagtatarget ng 2035 para sa mga national-security system. Ang paglalathala ng [BIS Project Leap ⧉](https://www.bis.org/publ/work1208.htm "BIS Working Paper 1208") at ang work programme ng FSB ay umaagaw ng horizon na iyon para sa systemic payment infrastructure. Ang HNDL ay nangangahulugan na nagsimula nang tumakbo ang operational clock bago pa man ang anumang nominal na petsa.
 
-**Ano ang pinakamalaking panganib sa pagpapatupad?**
+**Bakit ML-KEM ang inirerekumendang key encapsulation sa halip na isang mas mabilis?**
 
-Ang pinakamalaking panganib ay ang fragmentation: hiwalay na mga koponan ang nagtatayo ng hiwalay na pilot, bawat isa ay may iba't ibang datos, kontrol, pamamahala, at ekonomiya.
+Ang ML-KEM (ang pinagtibay na bersyon ng CRYSTALS-Kyber) ay may pinakamatibay na kombinasyon ng maliit na ciphertext at key size sa mga kandidatong lattice, na may matured na implementasyon at side-channel hardening. Inilathala ito ng NIST bilang [FIPS 203 ⧉](https://csrc.nist.gov/pubs/fips/203/final "FIPS 203"). May mga mas mabilis na kandidato ngunit nagdadala sila ng mas malaking sukat o mas mahihinang confidence interval sa mga security parameter.
 
-**Ano ang dapat unang itayo ng bangko?**
+**Bakit hindi gamitin ang SLH-DSA sa lahat ng lugar sa halip na ML-DSA?**
 
-Dapat magsimula ang bangko sa workflow kung saan may masusukat na halaga, tulad ng mas mabilis na settlement, mas mababang gastos sa reconciliation, mas kaunting imbestigasyon, mas mahusay na pag-iwas sa fraud, o mas mabuting visibility sa liquidity.
+Ang SLH-DSA (ang pinagtibay na bersyon ng SPHINCS+) ay hash-based at samakatuwid ay umaasa lamang sa seguridad ng hash function, na siyang pinaka-konserbatibong palagay na available. Ang mga lagda nito ay 5–20× na mas malaki kaysa sa ML-DSA. Tinatanggap iyon para sa archival counter-signing, ngunit hindi maaaring gamitin para sa transactional signing kung saan mahalaga ang sukat kada mensahe. Ang karaniwang pattern ay ML-DSA para sa production signing at SLH-DSA para sa archival assurance.
 
-**Paano dapat sukatin ang tagumpay?**
+**Maaari bang maghintay lamang ang bangko hanggang sa maglathala ang mga rail ng PQC profile?**
 
-Dapat sukatin ang tagumpay sa pamamagitan ng yunit ng ekonomiya, ebidensya ng resilience, kalidad ng datos, adopsyon ng kliyente, pagbawas ng operational risk, at pagpapabuti ng liquidity o working capital.
+Ang bangkong naghihintay ay nagmamana ng migration window na inilathala ng rail, na mas maikli kaysa sa sariling internal change cycle ng bangko. Sa panahong maglathala ang SWIFT, ang lokal na RTGS operator, at ang mga kaugnay na CCP ng kanilang PQC profile, ang migration window ay magiging labindalawa hanggang dalawampu't apat na buwan. Ang mga bangkong hindi naka-pre-build ng kanilang CA, transport, at HSM capability ay hindi ito mararating nang walang operational shortcut.
+
+**Ano ang nag-iisang pinakamabigat na bagay na pondohan muna?**
+
+Isang PQC-capable na subordinate certificate authority, na isinama sa umiiral na PKI, na maaaring magbigay ng dual-algorithm na sertipiko (RSA at ML-DSA) nang hindi nagagambala ang production trust. Itinatatag nito ang rotation primitive. Ang lahat ng iba pa — transport upgrade, HSM partition planning, mga pagbabago sa message envelope — ay maaaring iiskedyul sa paligid nito.
 
 ## Mga Sanggunian
 
-- The Finanser, (2026). [Programmable liquidity: five foundations reshaping modern treasury ⧉](https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury "Programmable liquidity").
-- J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Kyriba, (2026). [ISO 20022 migration ⧉](https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/ "ISO 20022 migration").
+- Congress.gov, (2022). [H.R. 7535 — Quantum Computing Cybersecurity Preparedness Act ⧉](https://www.congress.gov/bill/117th-congress/house-bill/7535/text "Quantum Computing Cybersecurity Preparedness Act").
+- NIST, (2024). [FIPS 203 — Module-Lattice-Based Key-Encapsulation Mechanism Standard ⧉](https://csrc.nist.gov/pubs/fips/203/final "FIPS 203").
+- NIST, (2024). [FIPS 204 — Module-Lattice-Based Digital Signature Standard ⧉](https://csrc.nist.gov/pubs/fips/204/final "FIPS 204").
+- NIST, (2024). [FIPS 205 — Stateless Hash-Based Digital Signature Standard ⧉](https://csrc.nist.gov/pubs/fips/205/final "FIPS 205").
+- NSA, (2022). [Commercial National Security Algorithm Suite 2.0 ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "CNSA 2.0").
+- BIS, (2024). [Working Paper No. 1208 — Project Leap: Quantum-proofing the financial system ⧉](https://www.bis.org/publ/work1208.htm "BIS Working Paper 1208").
+- Bank of England (PRA), (2024). [SS1/21 — Operational resilience: Impact tolerances for important business services ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Larawan ni Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior na teknologist sa pagbabangko na sumusulat tungkol sa applied AI, imprastraktura ng pagbabayad, tokenisadong pera, ISO 20022, post-quantum security, cloud-native na serbisyong pinansyal, at regulado digital markets.</span><span class="author-credentials">Mahigit 20 taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Huling sinuri <time datetime="2026-05-31">2026-05-31</time>.</p>
+<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Larawan ni Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior na teknologist sa pagbabangko na sumusulat tungkol sa applied AI, ISO 20022 migration, post-quantum cryptography para sa serbisyong pinansyal, at ang istrukturang pagbabago ng wholesale payments.</span><span class="author-credentials">Mahigit 20 taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Huling pagsusuri <time datetime="2026-05-31">2026-05-31</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Karagdagang babasahin</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026" class="related-media" aria-label="The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer" tabindex="-1"><img alt="Quantum-safe cryptography migration map for 2026 showing NIST PQC standards, hybrid protocol work, QKD assurance, crypto-agility, and bank data-risk tiers" src="https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026">The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer</a></h3><p><time datetime="2026-05-18">2026-05-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance" class="related-media" aria-label="Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance" tabindex="-1"><img alt="Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA" src="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</a></h3><p><time datetime="2026-05-14">2026-05-14</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026" class="related-media" aria-label="The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design" src="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a></h3><p><time datetime="2026-05-14">2026-05-14</time></p></footer></article>
+</div>
+</aside>
 <!-- enrich-end -->
+</content>
+</invoke>

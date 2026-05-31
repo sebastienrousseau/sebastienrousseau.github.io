@@ -1,6 +1,6 @@
 {
   "background_color": "#ffffff",
-  "description": "Post-quantum cryptography creates a hard question for banks: retrofit legacy payment rails or replace them with crypto-a",
+  "description": "Post-quantum cryptography forces a binary choice on payment rails: retrofit RSA/ECC inside SWIFT MT and ISO 20022 envelo",
   "display": "standalone",
   "icons": [
     {

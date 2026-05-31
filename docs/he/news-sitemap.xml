@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/he/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>he-IL</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
-    <news:title>נכסים דיגיטליים 2026: מעבר תשתית שהבנקים לא יכולים לדחות</news:title>
-    <news:keywords>נכסים דיגיטליים 2026, נכסים מן העולם הממשי שעברו טוקניזציה, סטייבלקוינים בנקאות, פיקדונות מתוקנים, משמורת נכסים דיגיטליים, DLT בנקאות, תשתית סליקה, ניידות בטחונות, כסף ניתן לתכנות, אסטרטגיית בנקים בנכסים דיגיטליים</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>he-IL</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T06:06:06+00:00</news:publication_date>
-    <news:title>תשתית תשלומים פוסט-קוונטית: מדוע בנקים יחליפו ולא ישדרגו ערוצי מורשת</news:title>
-    <news:keywords>תשתית תשלומים פוסט-קוונטית 2026, קריפטוגרפיה פוסט-קוונטית, PQC בנקאות, ML-KEM, ML-DSA, NIST, גמישות קריפטוגרפית, HSM, אסוף עכשיו פענח אחר כך, harvest-now-decrypt-later, SWIFT MT, ISO 20022, RTGS, סבב אלגוריתמים, שרשרת ביקורת, החלפת ערוצי תשלום</news:keywords>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>תשתית תשלומים פוסט-קוונטית: מדוע בנקים יחליפו ולא יתאימו ערוצים מורשתיים</news:title>
+    <news:keywords>קריפטוגרפיה פוסט-קוונטית, תשלומי PQC, גמישות קריפטוגרפית, איסוף-עכשיו-פענוח-מאוחר-יותר, HNDL, תקני NIST פוסט-קוונטיים, ML-KEM, ML-DSA, FIPS 203, FIPS 204, הגירת ערוצי תשלומים, ISO 20022 PQC, החלפת SWIFT MT, HSM, קריסת PKI, חוסן תפעולי, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>נכסים דיגיטליים 2026: מעבר תשתית שהבנקים לא יכולים לדחות</news:title>
+    <news:keywords>נכסים דיגיטליים 2026, נכסים מן העולם הממשי שעברו טוקניזציה, סטייבלקוינים בנקאות, פיקדונות מתוקנים, משמורת נכסים דיגיטליים, DLT בנקאות, תשתית סליקה, ניידות בטחונות, כסף ניתן לתכנות, אסטרטגיית בנקים בנכסים דיגיטליים</news:keywords>
   </news:news>
 </url>
 <url>

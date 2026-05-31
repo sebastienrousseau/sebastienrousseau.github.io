@@ -6,14 +6,40 @@
     <description>Artículos en español: IA aplicada, pagos ISO 20022, criptografía postcuántica y transformación de los pagos mayoristas.</description>
     <atom:link href="https://sebastienrousseau.com/es/rss.xml" rel="self" type="application/rss+xml"/>
     <language>es-ES</language>
-    <lastBuildDate>Sun, 31 May 2026 06:21:45 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 10:06:33 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Todos los derechos reservados.</copyright>
+    <item>
+      <title>Infraestructura de pagos poscuántica: por qué los bancos reemplazarán los carriles heredados en lugar de adaptarlos</title>
+      <link>https://sebastienrousseau.com/es/2026-05-31-post-quantum-pagos-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>La criptografía poscuántica impone una decisión binaria a los carriles de pago: adaptar RSA/ECC dentro de envoltorios SWIFT MT e ISO 20022 que nunca se dimensionaron para ML-KEM y ML-DSA, o reemplazarlos con infraestructura cripto-ágil. Hay que decidir antes de que HNDL sea pérdida operativa.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-05-31-post-quantum-pagos-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Sun, 31 May 2026 10:06:33 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>criptografía poscuántica</category>
+      <category>pagos PQC</category>
+      <category>cripto-agilidad</category>
+      <category>recolectar ahora descifrar después</category>
+      <category>HNDL</category>
+      <category>estándares poscuánticos NIST</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>migración de carriles de pago</category>
+      <category>ISO 20022 PQC</category>
+      <category>reemplazo SWIFT MT</category>
+      <category>HSM</category>
+      <category>colapso PKI</category>
+      <category>resiliencia operativa</category>
+      <category>Quantum Computing Cybersecurity Preparedness Act</category>
+    </item>
     <item>
       <title>Activos digitales en 2026: la transición de infraestructura que la banca no puede aplazar</title>
       <link>https://sebastienrousseau.com/es/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>Los activos digitales ya no son una apuesta de innovación. Son una cuestión de arquitectura de liquidación, custodia y balance. La tarea estratégica del banco es diseñar infraestructura bajo incertidumbre estructural.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Sun, 31 May 2026 06:21:45 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 10:06:33 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>activos digitales 2026</category>
@@ -26,28 +52,6 @@
       <category>movilidad del colateral</category>
       <category>dinero programable</category>
       <category>estrategia bancaria activos digitales</category>
-    </item>
-    <item>
-      <title>Infraestructura de pagos poscuántica: por qué la banca reemplazará en lugar de adaptar</title>
-      <link>https://sebastienrousseau.com/es/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
-      <description>La criptografía poscuántica plantea una pregunta dura a la banca: adaptar los raíles de pago heredados o reemplazarlos por infraestructura cripto-ágil para 2030.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
-      <category>post-quantum cryptography 2026</category>
-      <category>PQC banca</category>
-      <category>ML-KEM</category>
-      <category>ML-DSA</category>
-      <category>NIST</category>
-      <category>infraestructura de pagos poscuántica</category>
-      <category>crypto-agility</category>
-      <category>HSM</category>
-      <category>harvest-now-decrypt-later</category>
-      <category>SWIFT MT</category>
-      <category>ISO 20022</category>
-      <category>RTGS</category>
-      <category>raíles de pago</category>
     </item>
     <item>
       <title>Mercados digitales mayoristas en RU: gilts tokenizados, liquidación y campeón</title>
