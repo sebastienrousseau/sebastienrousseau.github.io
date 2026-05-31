@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ja-JP</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T06:06:06+00:00</news:publication_date>
+    <news:title>耐量子決済インフラ ― 銀行がレガシーレールをレトロフィットせず置き換える理由</news:title>
+    <news:keywords>耐量子暗号, PQC, ML-KEM, ML-DSA, 決済インフラ, 暗号アジリティ, ハーベスト・ナウ・デクリプト・レーター, HSM, ISO 20022, SWIFT MT, RTGS, 決済レール, NIST, 2026</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ja/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
   <news:news>
     <news:publication>

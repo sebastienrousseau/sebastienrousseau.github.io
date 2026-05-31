@@ -4,13 +4,22 @@
   <link href="https://sebastienrousseau.com/cs/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/cs/"/>
   <id>https://sebastienrousseau.com/cs/</id>
-  <updated>2026-05-30T14:48:09+00:00</updated>
+  <updated>2026-05-31T06:21:45+00:00</updated>
+  <entry>
+    <title>Postkvantová platební infrastruktura: proč banky raději nahradí starší rails než je modernizují</title>
+    <link href="https://sebastienrousseau.com/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
+    <id>https://sebastienrousseau.com/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
+    <updated>2026-05-31T06:21:45+00:00</updated>
+    <published>2026-05-31T06:21:45+00:00</published>
+    <summary>Postkvantová kryptografie staví banky před zásadní otázku: modernizovat starší platební rails, nebo je nahradit kryptograficky agilní infrastrukturou.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Velkoobchodní digitální trhy v UK: tokenizované gilty, vypořádání a nová role Champion</title>
     <link href="https://sebastienrousseau.com/cs/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"/>
     <id>https://sebastienrousseau.com/cs/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</id>
-    <updated>2026-05-30T14:48:09+00:00</updated>
-    <published>2026-05-30T14:48:09+00:00</published>
+    <updated>2026-05-31T06:21:45+00:00</updated>
+    <published>2026-05-31T06:21:45+00:00</published>
     <summary>Britská role Wholesale Digital Markets Champion proměňuje tokenizované velkoobchodní finance v národní projekt konkurenceschopnosti City of London.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -18,8 +27,8 @@
     <title>Digitální aktiva 2026: infrastrukturní přechod, který banky nemohou odkládat</title>
     <link href="https://sebastienrousseau.com/cs/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
     <id>https://sebastienrousseau.com/cs/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
-    <updated>2026-05-30T14:48:09+00:00</updated>
-    <published>2026-05-30T14:48:09+00:00</published>
+    <updated>2026-05-31T06:21:45+00:00</updated>
+    <published>2026-05-31T06:21:45+00:00</published>
     <summary>Digitální aktiva už nejsou inovační sázkou. Jsou otázkou architektury vypořádání, úschovy a rozvahy. Strategickým úkolem bank je návrh infrastruktury za strukturální nejistoty.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>

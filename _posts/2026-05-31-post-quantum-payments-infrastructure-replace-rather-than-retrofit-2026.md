@@ -105,6 +105,8 @@ site_software: "Static Site Generator, Rust"
 
 
 
+
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Post-quantum cryptography creates a hard question for banks: retrofit legacy payment rails or replace them with crypto-agile infrastructure.</p>

@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ar-SA</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
+    <news:title>البنية التحتية للمدفوعات ما بعد الكمية: لماذا قد تستبدل البنوك المسارات القديمة بدل تحديثها</news:title>
+    <news:keywords>التشفير ما بعد الكمي, post-quantum cryptography, PQC, ML-KEM, ML-DSA, NIST, harvest-now-decrypt-later, الحصاد الآن وفك التشفير لاحقاً, HSM, SWIFT MT, ISO 20022, crypto-agility, المرونة التشفيرية, RTGS, مسارات الدفع, البنوك 2026</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ar/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ar-SA</news:language>
     </news:publication>
-    <news:publication_date>2026-05-30T14:48:09+00:00</news:publication_date>
+    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
     <news:title>الأصول الرقمية في 2026: تحوّل البنية التحتية الذي لا يمكن للمصارف تأجيله</news:title>
     <news:keywords>الأصول الرقمية 2026، الأصول الحقيقية المرمَّزة، العملات المستقرة في المصارف، الودائع المرمَّزة، حفظ الأصول الرقمية، DLT في المصارف، البنية التحتية للتسوية، قابلية تحرّك الضمانات، النقود القابلة للبرمجة، استراتيجية المصارف للأصول الرقمية</news:keywords>
   </news:news>
@@ -20,7 +32,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ar-SA</news:language>
     </news:publication>
-    <news:publication_date>2026-05-30T14:48:09+00:00</news:publication_date>
+    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
     <news:title>Magnifica Humanitas: قراءة هندسية لأول رسالة بابوية عن الذكاء الاصطناعي</news:title>
     <news:keywords>Magnifica Humanitas, البابا ليو الرابع عشر, رسالة بابوية حول الذكاء الاصطناعي, أخلاقيات الذكاء الاصطناعي, أخلاقيات الحوسبة الكمومية, Rerum Novarum, برج بابل, التكنولوجيا ليست محايدة, ما بعد الإنسانية, التحول الإنساني, الكرامة الإنسانية, النموذج التكنولوجي, القطار السيارة النووي الإنترنت, تاريخ الذعر الأخلاقي من التكنولوجيا, نقل المعرفة Lucy, أمل الذكاء الاصطناعي, EU AI Act, DORA, Anthropic, Sebastien Rousseau</news:keywords>
   </news:news>

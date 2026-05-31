@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>bn-BD</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T06:06:06+00:00</news:publication_date>
+    <news:title>পোস্ট-কোয়ান্টাম পেমেন্ট পরিকাঠামো: কেন ব্যাংক লিগ্যাসি রেল আপগ্রেড নয়, প্রতিস্থাপন করতে পারে</news:title>
+    <news:keywords>পোস্ট-কোয়ান্টাম পেমেন্ট ২০২৬, PQC ব্যাংকিং, ML-KEM, ML-DSA, NIST, পেমেন্ট পরিকাঠামো, ক্রিপ্টো-চটপটেতা, HNDL, এখন সংগ্রহ-পরে ডিক্রিপ্ট, ISO 20022, SWIFT MT, RTGS, HSM</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/bn/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
   <news:news>
     <news:publication>

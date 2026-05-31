@@ -4,14 +4,23 @@
   <link href="https://sebastienrousseau.com/he/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/he/"/>
   <id>https://sebastienrousseau.com/he/</id>
-  <updated>2026-05-30T14:48:09+00:00</updated>
+  <updated>2026-05-31T06:21:45+00:00</updated>
   <entry>
     <title>נכסים דיגיטליים 2026: מעבר תשתית שהבנקים לא יכולים לדחות</title>
     <link href="https://sebastienrousseau.com/he/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
     <id>https://sebastienrousseau.com/he/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
-    <updated>2026-05-30T14:48:09+00:00</updated>
-    <published>2026-05-30T14:48:09+00:00</published>
+    <updated>2026-05-31T06:21:45+00:00</updated>
+    <published>2026-05-31T06:21:45+00:00</published>
     <summary>נכסים דיגיטליים אינם עוד הימור על חדשנות. הם שאלת ארכיטקטורה של סליקה, משמורת ומאזן. המשימה האסטרטגית של הבנקים היא תכנון תשתית באי-ודאות מבנית.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>תשתית תשלומים פוסט-קוונטית: מדוע בנקים יחליפו ולא ישדרגו ערוצי מורשת</title>
+    <link href="https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
+    <id>https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
+    <updated>2026-05-31T06:06:06+00:00</updated>
+    <published>2026-05-31T06:06:06+00:00</published>
+    <summary>קריפטוגרפיה פוסט-קוונטית מציבה בפני הדירקטוריון שאלת תשתית: לשדרג ערוצי תשלום מורשת עם ML-KEM/ML-DSA או להחליפם בארכיטקטורה גמישה קריפטוגרפית.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

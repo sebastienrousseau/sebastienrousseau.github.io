@@ -1,11 +1,11 @@
 {
+  "locale": "nl_NL",
   "description": "Een jaaroverzicht 2023 van AI-toepassingen en kwantumontwikkelingen die de financiële sector hervormen.",
   "title": "Stand van AI en kwantumcomputing in banking: terugblik 2023",
-  "language": "nl-NL",
-  "banner_alt": "Visualisatie van AI en kwantumtechnologieën die samenkomen in banking",
   "date": "Dec 18, 2023",
-  "keywords": "AI, kwantumcomputing, banking, 2023, terugblik, financiële dienstverlening, fintech",
-  "locale": "nl_NL",
+  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
+  "banner_alt": "Visualisatie van AI en kwantumtechnologieën die samenkomen in banking",
   "subtitle": "Een jaaroverzicht van AI-toepassingen en kwantumontwikkelingen in financiële dienstverlening",
-  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
+  "keywords": "AI, kwantumcomputing, banking, 2023, terugblik, financiële dienstverlening, fintech",
+  "language": "nl-NL"
 }

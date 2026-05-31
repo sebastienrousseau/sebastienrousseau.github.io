@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T06:06:06+00:00</news:publication_date>
+    <news:title>后量子支付基础设施：银行为何可能替换而非改造遗留通道</news:title>
+    <news:keywords>后量子支付 2026, post-quantum cryptography, PQC, ML-KEM, ML-DSA, NIST, 支付基础设施, 密码敏捷性, crypto-agility, 现采后解, harvest-now-decrypt-later, HSM, SWIFT MT, ISO 20022, RTGS</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/zh-hans/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
   <news:news>
     <news:publication>

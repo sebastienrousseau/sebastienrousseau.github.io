@@ -8,9 +8,21 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>es-ES</news:language>
     </news:publication>
-    <news:publication_date>2026-05-30T14:48:09+00:00</news:publication_date>
+    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
     <news:title>Activos digitales en 2026: la transición de infraestructura que la banca no puede aplazar</news:title>
     <news:keywords>activos digitales 2026, activos reales tokenizados, stablecoins banca, depósitos tokenizados, custodia de activos digitales, DLT banca, infraestructura de liquidación, movilidad del colateral, dinero programable, estrategia bancaria activos digitales</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/es/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>es-ES</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T06:06:06+00:00</news:publication_date>
+    <news:title>Infraestructura de pagos poscuántica: por qué la banca reemplazará en lugar de adaptar</news:title>
+    <news:keywords>post-quantum cryptography 2026, PQC banca, ML-KEM, ML-DSA, NIST, infraestructura de pagos poscuántica, crypto-agility, HSM, harvest-now-decrypt-later, SWIFT MT, ISO 20022, RTGS, raíles de pago</news:keywords>
   </news:news>
 </url>
 <url>

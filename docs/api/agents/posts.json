@@ -1,6 +1,27 @@
 {
-  "count": 59,
+  "count": 60,
   "posts": [
+    {
+      "slug": "2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026",
+      "url": "https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html",
+      "date": "2026-05-31",
+      "title": "Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails",
+      "description": "Post-quantum cryptography creates a hard question for banks: retrofit legacy payment rails or replace them with crypto-agile infrastructure.",
+      "keywords": [
+        "post quantum payments 2026",
+        "PQC banking",
+        "ML-KEM",
+        "ML-DSA",
+        "payment infrastructure",
+        "crypto-agility",
+        "HNDL",
+        "harvest now decrypt later",
+        "ISO 20022"
+      ],
+      "banner": "https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80",
+      "topics": [],
+      "language": "en-GB"
+    },
     {
       "slug": "2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026",
       "url": "https://sebastienrousseau.com/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html",

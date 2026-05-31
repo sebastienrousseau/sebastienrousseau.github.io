@@ -8,9 +8,21 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>uk-UA</news:language>
     </news:publication>
-    <news:publication_date>2026-05-30T14:48:09+00:00</news:publication_date>
+    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
     <news:title>Цифрові активи у 2026: інфраструктурний перехід для банків</news:title>
     <news:keywords>цифрові активи 2026, токенізовані реальні активи, стейблкоїни банкінг, токенізовані депозити, зберігання цифрових активів, DLT у банкінгу, інфраструктура розрахунку, мобільність забезпечення, програмовані гроші, банківська стратегія цифрових активів</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/uk/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>uk-UA</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T06:06:06+00:00</news:publication_date>
+    <news:title>Постквантова платіжна інфраструктура: чому банки замінять, а не модернізують канали</news:title>
+    <news:keywords>постквантова криптографія, PQC, ML-KEM, ML-DSA, NIST, інфраструктура платежів, криптоагільність, HSM, harvest-now-decrypt-later, SWIFT MT, ISO 20022, RTGS, банкінг 2026</news:keywords>
   </news:news>
 </url>
 <url>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Sun, 31 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Sun, 31 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>양자내성 결제 인프라 — 은행이 레거시 레일을 개조 대신 교체해야 하는 이유 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="양자내성 암호는 은행에 까다로운 질문을 던집니다 — 레거시 결제 레일을 개조할 것인가, 암호 민첩성 인프라로 교체할 것인가가 2026년 이사회 의제입니다.">
+<meta name="keywords" content="양자내성 암호, PQC, ML-KEM, ML-DSA, NIST, 수확 후 복호, HSM, SWIFT MT, ISO 20022, 암호 민첩성, RTGS, 결제 인프라 2026, 양자내성 결제, 레거시 레일 교체">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PQC Payments">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IHOnaGIrPXUoCZn6WP7zRwxdhbsJTB+8nVRDrxrjp2E=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-Qr9FYFOAo3IID7XhG+qgqG5gZQVcBhuLnCEioSAdWrU=' 'sha256-aAR/alubqwuG1+UbvKNFLiB6Ecrw3PGzkKoIj8kYGkU=' 'sha256-pQc+1ABvafDwEG0DghbswfZinUW27mM/tLMjeqBnxIU=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/ko/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom 피드" href="/ko/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="양자내성 결제 인프라 — 은행이 레거시 레일을 개조 대신 교체해야 하는 이유 — Sebastien Rousseau">
+<meta property="og:description" content="양자내성 암호는 은행에 까다로운 질문을 던집니다 — 레거시 결제 레일을 개조할 것인가, 암호 민첩성 인프라로 교체할 것인가가 2026년 이사회 의제입니다.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="양자내성 결제 인프라 — 은행이 레거시 레일을 개조 대신 교체해야 하는 이유 — Sebastien Rousseau">
+<meta name="twitter:description" content="양자내성 암호는 은행에 까다로운 질문을 던집니다 — 레거시 결제 레일을 개조할 것인가, 암호 민첩성 인프라로 교체할 것인가가 2026년 이사회 의제입니다.">
+<meta name="twitter:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80">
+<link rel="canonical" href="https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">본문으로 건너뛰기</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="내비게이션 전환" />
+      <div class="wrap">
+        <a class="ap-brand" href="/ko/index.html" aria-label="Sebastien Rousseau 홈">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="주요 내비게이션">
+          <ul class="ap-menu">
+            <li><a href="/ko/sogae/index.html">소개</a></li>
+            <li><a href="/ko/gisa/index.html" aria-current="page" class="active">기사</a></li>
+            <li><a href="/ko/nonmun/index.html">논문</a></li>
+            <li><a href="/ko/jujae/index.html">주제</a></li>
+            <li><a href="/ko/peurojekteu/index.html">프로젝트</a></li>
+            <li><a href="/ko/pleilliseuteu/index.html">플레이리스트</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="다크 테마로 전환" aria-pressed="false" title="테마 전환">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="검색 (Cmd 또는 Ctrl + K)" title="검색 (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="언어">
+            <button type="button" class="ap-lang-toggle" aria-label="KO, 언어 변경" aria-expanded="false" aria-haspopup="menu" title="언어 변경">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">KO</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/ko/munui/index.html" aria-label="문의하기">문의하기 ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="내비게이션 전환">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>양자내성 결제 인프라 — 은행이 레거시 레일을 개조 대신 교체해야 하는 이유</h1>
+      <p class="sub">결제 인프라에서 양자내성 마이그레이션은 취약한 레거시 레일에 패치를 또 한 번 강요하기보다 교체할 명분이 될 수 있습니다.</p>
+    <nav class="article-tags" aria-label="주제"><a href="/tags/index.html#h3-" class="article-tag" rel="tag">양자내성 암호</a><a href="/tags/index.html#h3-pqc" class="article-tag" rel="tag">PQC</a><a href="/tags/index.html#h3-ml-kem" class="article-tag" rel="tag">ML-KEM</a><a href="/tags/index.html#h3-ml-dsa" class="article-tag" rel="tag">ML-DSA</a><a href="/tags/index.html#h3-nist" class="article-tag" rel="tag">NIST</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">수확 후 복호</a><a href="/tags/index.html#h3-hsm" class="article-tag" rel="tag">HSM</a><a href="/tags/index.html#h3-swift-mt" class="article-tag" rel="tag">SWIFT MT</a><a href="/tags/index.html#h3-iso-20022" class="article-tag" rel="tag">ISO 20022</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">암호 민첩성</a><a href="/tags/index.html#h3-rtgs" class="article-tag" rel="tag">RTGS</a><a href="/tags/index.html#h3-2026" class="article-tag" rel="tag">결제 인프라 2026</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">양자내성 결제</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">레거시 레일 교체</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-31T06:06:06+00:00" class="meta-pub">발행일 31 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="예상 소요 시간">4 분 소요</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>목차</h2><ol><li><a href="#2026">2026년이 전략적 분수령이 된 이유</a></li><li><a href="#2026-2">2026년 아키텍처 기준선</a></li><li><a href="#section-8">전략 아키텍처 표</a></li><li><a href="#section-9">은행 유형별 시사점</a></li><li><a href="#section-14">결론</a></li><li><a href="#section-15">자주 묻는 질문</a></li><li><a href="#section-16">참고 자료</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 양자내성 암호는 은행에 까다로운 질문을 던집니다 — 레거시 결제 레일을 개조할 것인가, 암호 민첩성 인프라로 교체할 것인가가 2026년 이사회 의제입니다.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>2026년이 전략적 분수령이 된 이유.</strong> 업계는 도입 단계를 넘어섰습니다.</li>  <li><strong>2026년 아키텍처 기준선.</strong> 은행은 마찰에서 출발해야 합니다 — 갇힌 유동성, 정산 지연, 정합성 비용, 결제 실패, 사기 노출, 약한 감사성, 부실한 고객 경험.</li>  <li><strong>전략 아키텍처 표.</strong> 글로벌 은행은 각 시장, 레일, 토큰, AI 역량이 별도의 운영 모델이 되지 않도록 플랫폼 차원의 오케스트레이션을 구축해야 합니다.</li>  <li><strong>은행 유형별 시사점.</strong> 글로벌 은행은 각 시장, 레일, 토큰, AI 역량이 별도의 운영 모델이 되지 않도록 플랫폼 차원의 오케스트레이션을 구축해야 합니다.</li></ul></aside><h1>양자내성 결제 인프라 — 은행이 레거시 레일을 개조 대신 교체해야 하는 이유</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>양자내성 암호는 은행에 까다로운 질문을 던집니다 — 레거시 결제 레일을 개조할 것인가, 암호 민첩성 인프라로 교체할 것인가. 2026년의 신호는 양자내성 레일이 혁신 연출에서 뱅킹 운영 모델로 이동했다는 것이며, 결정적인 질문은 설계 규율입니다 — 어떤 데이터, 레일, 통제, 책임, 고객 워크플로가 함께 묶여야 하는가 (<a href="https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury" title="Programmable liquidity">The Finanser</a>).</p>
+<hr />
+<blockquote>
+<p><strong>이사회 요약 / 핵심 시사점</strong></p>
+<ul>
+<li><strong>양자내성 레일은 이제 전략입니다.</strong> 이 주제는 좁은 제품 출시가 아니라 운영 모델, 회복탄력성, 고객 가치, 규제 증거에 결부되어 있습니다 (<a href="https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury" title="Programmable liquidity">The Finanser</a>).</li>
+<li><strong>설계 원칙은 암호 민첩성입니다.</strong> 은행은 정책, 제품, 데이터, 레일 선택, 리스크 통제, 측정 가능한 경제성을 연결하는 아키텍처가 필요합니다 (<a href="https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026" title="Payments Outlook: Five Trends Powering Payments in 2026">J.P. Morgan</a>).</li>
+<li><strong>통제 모델은 실시간이어야 합니다.</strong> 사기, 유동성, 컴플라이언스, 정산, 운영 리스크 결정은 사후가 아니라 워크플로 속도로 작동해야 합니다.</li>
+<li><strong>데이터 품질이 상업적 우위가 됩니다.</strong> 구조화된 데이터, 거래 컨텍스트, 감사 로그, 신원 신호는 자동화와 고객 대면 제품의 기반이 됩니다.</li>
+<li><strong>파편화가 적입니다.</strong> 레일·토큰·모델·컴플라이언스 요구사항마다 분리된 파일럿을 만드는 은행은 미래 운영 리스크를 자초합니다.</li>
+<li><strong>승리 모델은 오케스트레이션입니다.</strong> 각 워크플로를 라우팅·거버넌스·가격 책정·증거 제시·설명할 수 있는 기관이, 또 다른 도구를 단지 도입하는 기관을 능가합니다 (<a href="https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/" title="ISO 20022 migration">Kyriba</a>).</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="2026">2026년이 전략적 분수령이 된 이유 <a class="heading-anchor" href="#2026" aria-label="링크 2026년이 전략적 분수령이 된 이유">#</a></h2>
+<p>업계는 도입 단계를 넘어섰습니다. 더 이상 레일에 합류하고, 메시지를 마이그레이션하고, AI 개념증명을 돌리고, 토큰화 파일럿을 발표하는 것만으로는 충분하지 않습니다. 2026년에는 그러한 역량을 실제 워크플로에 맞춰 오케스트레이션하고, 그 워크플로가 더 안전하고, 더 빠르고, 더 저렴하고, 더 회복탄력적이며, 고객에게 더 유용함을 입증하는 데서 전략적 우위가 나옵니다.</p>
+<p>이것이 양자내성 레일이 이사회 의제가 된 이유입니다. 같은 압력이 반복적으로 나타납니다 — 더 풍부한 결제 데이터, 실시간 정산, 토큰화 화폐, AI 의사결정, 오픈 뱅킹, 운영 회복탄력성, 클라우드 집중, 더 강화된 규제 증거. 분리해 다루면 프로그램 난립이 만들어집니다. 하나의 아키텍처로 다루면 운영 레버리지가 만들어집니다 (<a href="https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury" title="Programmable liquidity">The Finanser</a>, <a href="https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026" title="Payments Outlook: Five Trends Powering Payments in 2026">J.P. Morgan</a>).</p>
+<h2 id="2026-2">2026년 아키텍처 기준선 <a class="heading-anchor" href="#2026-2" aria-label="링크 2026년 아키텍처 기준선">#</a></h2>
+<h3 id="1">1. 워크플로 우선, 기술은 나중 <a class="heading-anchor" href="#1" aria-label="링크 1. 워크플로 우선, 기술은 나중">#</a></h3>
+<p>은행은 마찰에서 출발해야 합니다 — 갇힌 유동성, 정산 지연, 정합성 비용, 결제 실패, 사기 노출, 약한 감사성, 부실한 고객 경험. 기술은 그 마찰을 제거하는 곳에서만 정당화됩니다 (<a href="https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury" title="Programmable liquidity">The Finanser</a>).</p>
+<h3 id="2">2. 통제 평면으로서의 데이터 <a class="heading-anchor" href="#2" aria-label="링크 2. 통제 평면으로서의 데이터">#</a></h3>
+<p>구조화·거버넌스·추적 가능한 데이터가 토대입니다. 사용 가능한 데이터 없이는 자동화가 부서지기 쉽고 컴플라이언스가 수동이 됩니다. 사용 가능한 데이터가 있으면 라우팅 인텔리전스, 실시간 통제, 고객 대면 분석을 만들 수 있습니다 (<a href="https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026" title="Payments Outlook: Five Trends Powering Payments in 2026">J.P. Morgan</a>).</p>
+<h3 id="3">3. 레일과 플랫폼을 가로지르는 오케스트레이션 <a class="heading-anchor" href="#3" aria-label="링크 3. 레일과 플랫폼을 가로지르는 오케스트레이션">#</a></h3>
+<p>아키텍처는 다수의 레일, 제공자, 신원 체계, 리스크 신호, 정산 자산을 지원해야 합니다. 라우팅 결정은 비용, 속도, 결제 종결성, 관할권, 고객 선호, 회복탄력성, 데이터 풍부도에 따라 이뤄져야 합니다.</p>
+<h3 id="4">4. 내장된 컴플라이언스와 증거 <a class="heading-anchor" href="#4" aria-label="링크 4. 내장된 컴플라이언스와 증거">#</a></h3>
+<p>컴플라이언스 모델은 워크플로에 내재적이어야 합니다. Policy-as-code, 자동화된 감사 로그, 운영 회복탄력성 증거, 동의 기록, 모델 거버넌스는 실행의 일부로 산출되어야 하며, 감사관을 위해 사후에 재구성되어서는 안 됩니다.</p>
+<h3 id="5">5. 단위 경제성과 고객 가치 <a class="heading-anchor" href="#5" aria-label="링크 5. 단위 경제성과 고객 가치">#</a></h3>
+<p>모든 이니셔티브는 상업적 가치 증거가 필요합니다. 결제당 비용, 의사결정당 비용, 조사당 비용, 절감된 유동성, 회피된 수동 보정, 감소한 사기 손실, 고객 채택이 확장 결정을 좌우해야 합니다.</p>
+<h2 id="section-8">전략 아키텍처 표 <a class="heading-anchor" href="#section-8" aria-label="링크 전략 아키텍처 표">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>레이어</th>
+<th>2026년 방향</th>
+<th>뱅킹 기회</th>
+<th>잘못 다룬 경우의 리스크</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>워크플로 레이어</strong></td>
+<td>고객 페인 포인트가 제품을 정의</td>
+<td>명확한 사업 사례와 채택</td>
+<td>사용자 없는 기술 주도 파일럿</td>
+</tr>
+<tr>
+<td><strong>데이터 레이어</strong></td>
+<td>구조화·거버넌스 거래 및 통제 데이터</td>
+<td>자동화, 분석, 감사성</td>
+<td>더 빠르게 옮겨지는 부실 데이터</td>
+</tr>
+<tr>
+<td><strong>레일 레이어</strong></td>
+<td>카드, A2A, RTGS, 스테이블코인, 예금, API, DLT 전반의 라우팅</td>
+<td>최적화된 비용·속도·결제 종결성</td>
+<td>채널 난립과 통제 중복</td>
+</tr>
+<tr>
+<td><strong>통제 레이어</strong></td>
+<td>실시간 정책, 사기, 제재, 회복탄력성, 신원, 동의</td>
+<td>실행 속도로 관리되는 리스크</td>
+<td>수동 사후 컴플라이언스</td>
+</tr>
+<tr>
+<td><strong>경제성 레이어</strong></td>
+<td>측정된 단위 비용과 고객 가치</td>
+<td>증거 기반 확장</td>
+<td>지속가능한 수익 없는 혁신 지출</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-9">은행 유형별 시사점 <a class="heading-anchor" href="#section-9" aria-label="링크 은행 유형별 시사점">#</a></h2>
+<h3 id="section-10">글로벌 은행 <a class="heading-anchor" href="#section-10" aria-label="링크 글로벌 은행">#</a></h3>
+<p>글로벌 은행은 각 시장, 레일, 토큰, AI 역량이 별도의 운영 모델이 되지 않도록 플랫폼 차원의 오케스트레이션을 구축해야 합니다.</p>
+<h3 id="section-11">지역 은행 <a class="heading-anchor" href="#section-11" aria-label="링크 지역 은행">#</a></h3>
+<p>지역 은행은 신뢰, 현지 시장 지식, 단순한 통합이 규모를 이기는 사용 사례에 집중해야 합니다 — 트레저리 가시성, 사기 예방, 오픈 뱅킹 결제, 규제 디지털 화폐 서비스.</p>
+<h3 id="psp">핀테크와 PSP <a class="heading-anchor" href="#psp" aria-label="링크 핀테크와 PSP">#</a></h3>
+<p>핀테크는 또 다른 고립된 레일을 더하기보다 은행의 복잡성을 줄여야 합니다. 가장 좋은 제안은 오케스트레이션, 컴플라이언스 증거, 데이터 인텔리전스를 가져옵니다.</p>
+<h3 id="section-13">기업 트레저러 <a class="heading-anchor" href="#section-13" aria-label="링크 기업 트레저러">#</a></h3>
+<p>트레저러는 측정 가능한 개선을 요구해야 합니다 — 결제 보정 감소, 더 나은 유동성 가시성, 더 풍부한 정합성 데이터, 더 빠른 정산, 자동화된 의사결정에 대한 더 강력한 통제.</p>
+<h2 id="section-14">결론 <a class="heading-anchor" href="#section-14" aria-label="링크 결론">#</a></h2>
+<p>양자내성 결제 인프라는 결국 아키텍처 문제입니다. 승리하는 기관은 파일럿이 가장 많거나 혁신 언어가 가장 큰 곳이 아닙니다. 고객 워크플로, 데이터 품질, 레일 오케스트레이션, 내장된 컴플라이언스, 단위 경제성을 하나의 일관된 운영 모델로 연결하는 기관입니다.</p>
+<h2 id="section-15">자주 묻는 질문 <a class="heading-anchor" href="#section-15" aria-label="링크 자주 묻는 질문">#</a></h2>
+<p><strong>2026년에 이 주제가 시급한 이유는 무엇입니까?</strong></p>
+<p>관련 인프라, 규제, 고객 수요 신호가 수렴했기 때문입니다. 선택적 실험이었던 것이 이제 은행 운영 모델의 일부가 되고 있습니다.</p>
+<p><strong>가장 큰 구현 리스크는 무엇입니까?</strong></p>
+<p>가장 큰 리스크는 파편화입니다 — 분리된 팀이 각기 다른 데이터, 통제, 거버넌스, 경제성을 가진 파일럿을 따로 구축하는 것입니다.</p>
+<p><strong>은행은 무엇부터 구축해야 합니까?</strong></p>
+<p>은행은 측정 가능한 가치가 있는 워크플로에서 출발해야 합니다 — 더 빠른 정산, 정합성 비용 절감, 조사 감소, 사기 예방 강화, 유동성 가시성 향상.</p>
+<p><strong>성공은 어떻게 측정해야 합니까?</strong></p>
+<p>단위 경제성, 회복탄력성 증거, 데이터 품질, 고객 채택, 운영 리스크 감소, 유동성·운전자본 개선으로 측정해야 합니다.</p>
+<h2 id="section-16">참고 자료 <a class="heading-anchor" href="#section-16" aria-label="링크 참고 자료">#</a></h2>
+<ul>
+<li>The Finanser, (2026). <a href="https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury" title="Programmable liquidity">Programmable liquidity: five foundations reshaping modern treasury ⧉</a>.</li>
+<li>J.P. Morgan, (2026). <a href="https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026" title="Payments Outlook">Payments Outlook: Five Trends Powering Payments in 2026 ⧉</a>.</li>
+<li>Kyriba, (2026). <a href="https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/" title="ISO 20022 migration">ISO 20022 migration ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">최종 검토 <time datetime="2026-05-31">2026-05-31</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="저자 소개"><img alt="Sebastien Rousseau의 초상화" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/ko/sogae/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, ISO 20022 이행, 금융 서비스를 위한 포스트 양자 암호, 도매 결제의 구조적 변혁에 관해 집필하는 시니어 뱅킹 테크놀로지스트입니다.</span><span class="author-credentials">HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group에서 20년 이상의 경험을 보유하였습니다. <a href="/ko/sogae/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">최종 검토 <time datetime="2026-05-31">2026-05-31</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">관련 읽을거리</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/ko/2026-05-18-yangja-amho-pyojun-baljeon-2026" class="related-media" aria-label="2026년 양자 암호 리셋: PQC 표준, QKD 보증, 그리고 은행이 미룰 수 없는 마이그레이션 작업" tabindex="-1"><img alt="Quantum-safe cryptography migration map for 2026 showing NIST PQC standards, hybrid protocol work, QKD assurance, crypto-agility, and bank data-risk tiers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-pqc-qkd"><a href="https://sebastienrousseau.com/ko/2026-05-18-yangja-amho-pyojun-baljeon-2026">2026년 양자 암호 리셋: PQC 표준, QKD 보증, 그리고 은행이 미룰 수 없는 마이그레이션 작업</a> <a class="heading-anchor" href="#2026-pqc-qkd" aria-label="링크 2026년 양자 암호 리셋: PQC 표준, QKD 보증, 그리고 은행이 미룰 수 없는 마이그레이션 작업">#</a></h3><p><time datetime="2026-05-18">2026-05-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ko/2026-05-14-jangbu-boho-beobinyung-pos-yangja-imun" class="related-media" aria-label="원장을 지키기: 기업 재무를 위한 포스트 양자 이행" tabindex="-1"><img alt="Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA" src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-18"><a href="https://sebastienrousseau.com/ko/2026-05-14-jangbu-boho-beobinyung-pos-yangja-imun">원장을 지키기: 기업 재무를 위한 포스트 양자 이행</a> <a class="heading-anchor" href="#section-18" aria-label="링크 원장을 지키기: 기업 재무를 위한 포스트 양자 이행">#</a></h3><p><time datetime="2026-05-14">2026-05-14</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ko/2026-05-16-2026-choeseon-keulaeudeu-infra-akitekcheo" class="related-media" aria-label="2026년 최선의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티클라우드, 양자 인식 청사진" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-ai"><a href="https://sebastienrousseau.com/ko/2026-05-16-2026-choeseon-keulaeudeu-infra-akitekcheo">2026년 최선의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티클라우드, 양자 인식 청사진</a> <a class="heading-anchor" href="#2026-ai" aria-label="링크 2026년 최선의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티클라우드, 양자 인식 청사진">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">출처 및 참고문헌</h2><ol class="article-sources-list"><li><a href="https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026" rel="external noopener nofollow"><span class="source-host">www.jpmorgan.com</span><span class="source-path">/insights/payments/trends-innovation/payments-outlook-trends-2026</span></a></li></ol></aside><nav class="post-pagination" aria-label="기사 페이지 이동"><a class="post-pagination-prev" href="/ko/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"><span class="post-pagination-label">이전</span><span class="post-pagination-title">Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/ko/sogae/index.html">소개</a></li>
+              <li><a href="/ko/munui/index.html">문의하기</a></li>
+              <li><a href="/ko/jeongjeok-saiteu-saengseonggi-ro-jejak/index.html">Static Site Generator로 제작</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">기사</h2>
+            <ul>
+              <li><a href="/ko/gisa/index.html">기사</a></li>
+              <li><a href="/ko/nonmun/index.html">논문</a></li>
+              <li><a href="/ko/taegeu/index.html">태그</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">업무</h2>
+            <ul>
+              <li><a href="/ko/peurojekteu/index.html">프로젝트</a></li>
+              <li><a href="/ko/pleilliseuteu/index.html">플레이리스트</a></li>
+              <li><a href="/ko/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">연락처</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="뉴스레터 구독">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — 결제, AI, 포스트 양자 암호에 관한 연구 노트. 스팸은 발송하지 않습니다.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="yongnim@eunhaeng.com" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">구독하기</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="소셜 링크">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau의 Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau의 LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau의 Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau의 YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/ko/jeobgeunseong/index.html">접근성</a> ·
+            <a href="/ko/gaeinjeongbo/index.html">개인정보처리방침</a> ·
+            <a href="/ko/yakgwan/index.html">이용약관</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ko"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ko"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":809,"about":{"@type":"Thing","name":"NIST PQC","sameAs":"https://csrc.nist.gov/projects/post-quantum-cryptography"},"mentions":[{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]}],"headline":"양자내성 결제 인프라 — 은행이 레거시 레일을 개조 대신 교체해야 하는 이유","description":"양자내성 암호는 은행에 까다로운 질문을 던집니다 — 레거시 결제 레일을 개조할 것인가, 암호 민첩성 인프라로 교체할 것인가가 2026년 이사회 의제입니다.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80","width":"100vw","height":"100vh","caption":"레거시 레일, 암호 민첩성, ML-KEM, ML-DSA, HSM, 인증서, API, ISO 20022, 교체 경로를 보여주는 양자내성 결제 인프라 다이어그램"},"url":"https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/","datePublished":"2026-05-31T06:06:06+00:00","dateModified":"2026-05-31","inLanguage":"ko","keywords":"양자내성 암호, PQC, ML-KEM, ML-DSA, NIST, 수확 후 복호, HSM, SWIFT MT, ISO 20022, 암호 민첩성, RTGS, 결제 인프라 2026, 양자내성 결제, 레거시 레일 교체","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ko"},"citation":[{"@type":"CreativeWork","url":"https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ko/"},{"@type":"ListItem","position":3,"name":"양자내성 결제 인프라 — 은행이 레거시 레일을 개조 대신 교체해야 하는 이유","item":"https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="검색">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>검색</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="검색">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="문서 검색..." autocomplete="off" aria-label="검색"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> 닫기</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 이동</span><span><kbd>Enter</kbd> 열기</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"양자내성 결제 인프라","url":"https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/","inLanguage":"ko-KR","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"양자내성 암호, PQC, ML-KEM, ML-DSA, NIST, 수확 후 복호, HSM, SWIFT MT, ISO 20022, 암호 민첩성, RTGS, 결제 인프라 2026, 양자내성 결제, 레거시 레일 교체","dependencies":["ISO 20022","Post-Quantum Cryptography","NIST"]}</script></body>
+</html>
