@@ -6,25 +6,98 @@
     <description>Mga artikulo sa Filipino: applied AI, ISO 20022 payments, post-quantum cryptography at wholesale-payments transformation.</description>
     <atom:link href="https://sebastienrousseau.com/fil/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fil-PH</language>
-    <lastBuildDate>Thu, 28 May 2026 08:31:07 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 10:06:33 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Lahat ng karapatan ay nakalaan.</copyright>
     <item>
-      <title>Ang Multi-Rail Bank sa 2026: Cards, A2A, Stablecoins, RTP, FedNow, at Open Banking sa Isang Estratehiya</title>
-      <link>https://sebastienrousseau.com/fil/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
-      <description>Hindi pumipili ng iisang kinabukasan ng pagbabayad ang multi-rail bank sa 2026. Inoorkestra nito ang cards, account-to-account (A2A) payments, RTP, FedNow, stablecoins, Open Banking, wallets, at ISO 20022 data batay sa gastos, bilis, panganib, finality, at konteksto ng kliyente.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Thu, 28 May 2026 08:31:07 +0000</pubDate>
+      <title>Post-Quantum Payments Infrastructure: Bakit Maaaring Palitan ng mga Bangko ang Legacy Rails sa Halip na I-adapt</title>
+      <link>https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>Pinipili ng post-quantum cryptography ang payment rails: adaptasyon ng RSA/ECC sa SWIFT MT at ISO 20022 envelopes na hindi sukat sa ML-KEM at ML-DSA, o pagpapalit sa crypto-agile infrastructure. Magdesisyon bago maging operational loss ang HNDL.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Sun, 31 May 2026 10:06:33 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>multi-rail bank 2026</category>
-      <category>A2A payments</category>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>post-quantum cryptography</category>
+      <category>PQC payments</category>
+      <category>crypto-agility</category>
+      <category>mag-imbak-ngayon-i-decrypt-mamaya</category>
+      <category>HNDL</category>
+      <category>NIST post-quantum standards</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>paglipat ng payment rail</category>
+      <category>ISO 20022 PQC</category>
+      <category>pagpapalit ng SWIFT MT</category>
+      <category>HSM</category>
+      <category>pagbagsak ng PKI</category>
+      <category>operational resilience</category>
+      <category>Quantum Computing Cybersecurity Preparedness Act</category>
+    </item>
+    <item>
+      <title>Digital Assets sa 2026: Transisyon ng Imprastraktura na Hindi Dapat Antalahin</title>
+      <link>https://sebastienrousseau.com/fil/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>Hindi na inobasyon ang digital assets, kundi tanong ng arkitektura ng settlement, custody, at balance sheet. Disenyo ng imprastraktura sa ilalim ng istrukturang kawalang-katiyakan ang estratehikong gawain ng bangko.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Sun, 31 May 2026 10:06:33 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>digital assets 2026</category>
+      <category>tokenized real-world assets</category>
+      <category>RWA</category>
+      <category>stablecoins banking</category>
+      <category>tokenized deposits</category>
+      <category>digital asset custody</category>
+      <category>DLT banking</category>
+      <category>imprastraktura ng settlement</category>
+      <category>mobility ng kolateral</category>
+      <category>programmable money</category>
+      <category>estratehiya ng bangko sa digital assets</category>
+    </item>
+    <item>
+      <title>UK Wholesale Digital Markets: Tokenized Gilts, DLT Settlement, Champion</title>
+      <link>https://sebastienrousseau.com/fil/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
+      <description>Ginagawang pambansang proyekto ng kakayahang makipagkumpitensya ng UK Wholesale Digital Markets Champion ang tokenized wholesale finance, gilts, at DLT settlement.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>UK wholesale digital markets 2026</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>tokenized gilts</category>
+      <category>UK gilts</category>
+      <category>DLT settlement</category>
+      <category>BoE DSS</category>
+      <category>Project Guardian</category>
+      <category>SDX</category>
+      <category>Project Agorá</category>
+      <category>Bank of England</category>
+      <category>HM Treasury</category>
+      <category>City of London</category>
+      <category>kakayahang makipagkumpitensya</category>
+    </item>
+    <item>
+      <title>ISO 20022 Pagkatapos ng Migration: Payment Data tungo sa Produkto ng Bangko 2026</title>
+      <link>https://sebastienrousseau.com/fil/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>Pagkatapos ng migration, ang ISO 20022 ay isang pagkakataon para sa mga payment data product — structured address, purpose code, impormasyon ng remittance, investigation message, at reconciliation bilang produkto ng bangko.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>structured address</category>
+      <category>CBPR+</category>
+      <category>mga payment data product</category>
+      <category>purpose code</category>
+      <category>corporate treasury</category>
+      <category>reconciliation</category>
+      <category>sanctions screening</category>
+      <category>fraud detection</category>
+      <category>pacs.008</category>
+      <category>pain.001</category>
+      <category>SWIFT gpi</category>
+      <category>SEPA Instant</category>
       <category>FedNow</category>
-      <category>RTP network</category>
-      <category>stablecoins</category>
-      <category>Open Banking</category>
-      <category>cards</category>
-      <category>orkestrasyon ng pagbabayad</category>
-      <category>ISO 20022</category>
     </item>
     <item>
       <title>DORA, EU AI Act, at Soberanya ng Data: Compliance Stack ng Bangko 2026</title>
@@ -49,7 +122,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
       <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
       <category>AI payments 2026</category>
       <category>pandaraya sa bayad</category>
       <category>ruta ng bayad</category>

@@ -1,11 +1,11 @@
 {
+  "locale": "id_ID",
+  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
+  "subtitle": "Membentuk Masa Depan Perbankan: AI, Quantum Computing, Model Open Source, dan Lanskap Regulasi",
+  "banner_alt": "Kondisi AI dan Quantum Computing dalam Perbankan: Tinjauan 2023",
+  "title": "[ID DRAFT] State of AI and Quantum Computing in Banking: A 2023 Review",
+  "description": "Menelusuri Lanskap Teknologi 2023: AI & Quantum Computing Merevolusi Perbankan, Bangkitnya Model Open-Source, serta Regulasi & Tata Kelola yang Berkembang",
   "date": "Dec 18, 2023",
   "keywords": "AI dalam perbankan, Quantum Computing, Financial Technology, AI open-source, manajemen risiko, Quantum Security, regulasi AI, etika AI, tata kelola AI, inovasi perbankan",
-  "title": "[ID DRAFT] State of AI and Quantum Computing in Banking: A 2023 Review",
-  "locale": "id_ID",
-  "language": "id-ID",
-  "subtitle": "Membentuk Masa Depan Perbankan: AI, Quantum Computing, Model Open Source, dan Lanskap Regulasi",
-  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
-  "banner_alt": "Kondisi AI dan Quantum Computing dalam Perbankan: Tinjauan 2023",
-  "description": "Menelusuri Lanskap Teknologi 2023: AI & Quantum Computing Merevolusi Perbankan, Bangkitnya Model Open-Source, serta Regulasi & Tata Kelola yang Berkembang"
+  "language": "id-ID"
 }

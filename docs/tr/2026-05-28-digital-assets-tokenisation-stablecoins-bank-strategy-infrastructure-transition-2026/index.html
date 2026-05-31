@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 28 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 28 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>Dijital Varlıklar 2026: Bankaların Erteleyemeyeceği Altyapı Geçişi — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Dijital varlıklar artık inovasyon bahsi değildir. Bankalar için takas, saklama ve bilanço mimarisi sorusudur; stratejik görev yapısal belirsizlik altında altyapı tasarımıdır.">
+<meta name="keywords" content="dijital varlıklar 2026, tokenize gerçek dünya varlıkları, stablecoinler bankacılık, tokenize mevduatlar, dijital varlık saklama, DLT bankacılık, takas altyapısı, teminat hareketliliği, programlanabilir para, dijital varlık banka stratejisi">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Digital Assets 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-GYCIZ1rjrX8nXCuUilXAaXuQssL70DVIaBnCxqLpGyE=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-QFSWzGghYLWWu6P7qPeSpxkAO748D5ZzoPGkSUy57tA=' 'sha256-aVX0fDfaQ1SHXhUOfypkXhrDlLmCGLjLzZyp6e3vT7E=' 'sha256-awQkJjxz2b9elmqTXCKnkI5dFThkRTcdRAtxxBOM1yY=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/tr/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom Akışı" href="/tr/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Dijital Varlıklar 2026: Bankaların Erteleyemeyeceği Altyapı Geçişi — Sebastien Rousseau">
+<meta property="og:description" content="Dijital varlıklar artık inovasyon bahsi değildir. Bankalar için takas, saklama ve bilanço mimarisi sorusudur; stratejik görev yapısal belirsizlik altında altyapı tasarımıdır.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/tr/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/corporate-finance.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dijital Varlıklar 2026: Bankaların Erteleyemeyeceği Altyapı Geçişi — Sebastien Rousseau">
+<meta name="twitter:description" content="Dijital varlıklar artık inovasyon bahsi değildir. Bankalar için takas, saklama ve bilanço mimarisi sorusudur; stratejik görev yapısal belirsizlik altında altyapı tasarımıdır.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/corporate-finance.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/tr/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Ana içeriğe geç</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Gezinmeyi aç/kapat" />
+      <div class="wrap">
+        <a class="ap-brand" href="/tr/index.html" aria-label="Sebastien Rousseau ana sayfası">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Ana gezinme">
+          <ul class="ap-menu">
+            <li><a href="/tr/hakkimda/index.html">Hakkımda</a></li>
+            <li><a href="/tr/makaleler/index.html" aria-current="page" class="active">Makaleler</a></li>
+            <li><a href="/tr/yayinlar/index.html">Yayınlar</a></li>
+            <li><a href="/tr/konular/index.html">Konular</a></li>
+            <li><a href="/tr/projeler/index.html">Projeler</a></li>
+            <li><a href="/tr/calma-listeleri/index.html">Çalma listeleri</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Koyu temaya geç" aria-pressed="false" title="Tema değiştir">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Ara (Cmd veya Ctrl + K)" title="Ara (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Dil">
+            <button type="button" class="ap-lang-toggle" aria-label="TR, Dili değiştir" aria-expanded="false" aria-haspopup="menu" title="Dili değiştir">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">TR</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/tr/iletisim/index.html" aria-label="İletişime geç">İletişime geç ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Gezinmeyi aç/kapat">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Dijital Varlıklar 2026: Bankaların Erteleyemeyeceği Altyapı Geçişi</h1>
+      <p class="sub">Stablecoinler, tokenize mevduatlar ve gerçek dünya varlıklarının tokenizasyonu tek bir takas altyapısı sorusunda birleşiyor. Orkestrasyon, kontrol ve çok raylı bir arada yaşam için tasarlayan banka, sermaye piyasalarının önümüzdeki on yılını şekillendirecektir.</p>
+    <nav class="article-tags" aria-label="Konular"><a href="/tags/index.html#h3-dijital-varlklar-2026" class="article-tag" rel="tag">dijital varlıklar 2026</a><a href="/tags/index.html#h3-tokenize-gercek-dunya-varlklar" class="article-tag" rel="tag">tokenize gerçek dünya varlıkları</a><a href="/tags/index.html#h3-stablecoinler-bankaclk" class="article-tag" rel="tag">stablecoinler bankacılık</a><a href="/tags/index.html#h3-tokenize-mevduatlar" class="article-tag" rel="tag">tokenize mevduatlar</a><a href="/tags/index.html#h3-dijital-varlk-saklama" class="article-tag" rel="tag">dijital varlık saklama</a><a href="/tags/index.html#h3-dlt-bankaclk" class="article-tag" rel="tag">DLT bankacılık</a><a href="/tags/index.html#h3-takas-altyaps" class="article-tag" rel="tag">takas altyapısı</a><a href="/tags/index.html#h3-teminat-hareketliligi" class="article-tag" rel="tag">teminat hareketliliği</a><a href="/tags/index.html#h3-programlanabilir-para" class="article-tag" rel="tag">programlanabilir para</a><a href="/tags/index.html#h3-dijital-varlk-banka-stratejisi" class="article-tag" rel="tag">dijital varlık banka stratejisi</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-28T06:06:06+00:00" class="meta-pub">Yayımlandı 28 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Tahmini okuma süresi">16 dk okuma</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>İçindekiler</h2><ol><li><a href="#2026-dijital-varlklarn-bir-mimari-soru-haline-geldigi-yl-neden-oldu">2026 Dijital Varlıkların Bir Mimari Soru Haline Geldiği Yıl Neden Oldu</a></li><li><a href="#uc-varlk-snf-farkl-ekonomi-farkl-mimari">Üç Varlık Sınıfı: Farklı Ekonomi, Farklı Mimari</a></li><li><a href="#bankalara-etki-risk-altndaki-gelir-adreslenebilir-gelir">Bankalara Etki: Risk Altındaki Gelir, Adreslenebilir Gelir</a></li><li><a href="#onemli-olan-mimari-ilkeler">Önemli Olan Mimari İlkeler</a></li><li><a href="#risk-kontrolu-aml-saklama-ve-akll-sozlesmeler-neden-buyume-kstlamalardr">Risk Kontrolü: AML, Saklama ve Akıllı Sözleşmeler Neden Büyüme Kısıtlamalarıdır</a></li><li><a href="#duzenleme-yaknsayan-niyet-ayrsan-mimari">Düzenleme: Yakınsayan Niyet, Ayrışan Mimari</a></li><li><a href="#banka-turune-gore-bunun-anlam">Banka Türüne Göre Bunun Anlamı</a></li><li><a href="#bes-pratik-adm">Beş Pratik Adım</a></li><li><a href="#sonuc">Sonuç</a></li><li><a href="#skca-sorulan-sorular">Sıkça Sorulan Sorular</a></li><li><a href="#kaynakca">Kaynakça</a></li><li><a href="#yazar-hakknda">Yazar Hakkında</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Dijital varlıklar artık inovasyon bahsi değildir. Bankalar için takas, saklama ve bilanço mimarisi sorusudur; stratejik görev yapısal belirsizlik altında altyapı tasarımıdır.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>2026 Dijital Varlıkların Bir Mimari Soru Haline Geldiği Yıl Neden Oldu.</strong> Dijital varlık konuşması değişti.</li>  <li><strong>Üç Varlık Sınıfı: Farklı Ekonomi, Farklı Mimari.</strong> BCG, dijital varlıkları dışarıdan benzer görünen ancak temelde farklı ekonomi ve stratejik etkiler taşıyan üç kategoriye ayırır.</li>  <li><strong>Bankalara Etki: Risk Altındaki Gelir, Adreslenebilir Gelir.</strong> BCG, dijital varlıkların evrimi için özel sektör liderliğinde hızlı genişlemeden düzenleyici kısıtlama ve savunma amaçlı sıfırlamaya kadar uzanan dört senaryo modellemektedir.</li>  <li><strong>Önemli Olan Mimari İlkeler.</strong> BCG&#x27;nin CTO görüşü, dijital varlık teknolojisi stratejisi için yedi ilke tanımlar.</li></ul></aside><h1>Dijital Varlıklar 2026: Bankaların Erteleyemeyeceği Altyapı Geçişi</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>Dijital varlıklar artık inovasyon bahsi değildir. Takas, saklama ve bilanço mimarisi sorusudur. Bankalar için stratejik görev, yapısal belirsizlik altında altyapı tasarımıdır.</p>
+<hr />
+<blockquote>
+<p><strong>Yönetici Özeti / Temel Çıkarımlar</strong></p>
+<ul>
+<li><strong>Dijital varlıklar bir altyapı geçişidir, inovasyon teması değildir.</strong> Kripto ~3 trilyon dolarlık bir varlık sınıfı, stablecoinler ~300 milyar dolara ulaştı ve tokenize gerçek dünya varlıkları 2025'te yaklaşık %300 büyüdü. Mayıs 2026'da yayımlanan BCG amiral raporu, bunu her banka yönetim kurulu için stratejik, yönetişim ve bilanço sorusu olarak çerçeveler — bir fintech merakı değil (<a href="https://www.bcg.com" title="BCG">BCG, Dijital Varlıkların Geleceği, Mayıs 2026</a>).</li>
+<li><strong>En büyük yapısal risk tek bir ürün değildir.</strong> Müşteri arayüzünün, bilanço ilgisinin ve kritik takas altyapısının kontrolünün banka dışı platformlara kaybedilmesidir. BCG'nin hızlı dijital genişleme senaryosunda bankalar, dijital varlıksız bir tabana karşı 2035'e kadar ~%10 daha küçük bilançolar, ~%14 daha düşük gelirler ve ~%30 daha düşük kârla karşılaşabilir.</li>
+<li><strong>En büyük yapısal fırsat da aynı derecede açıktır.</strong> Alım-satım iş kolları ~%4'e kadar RoE artışı görebilir, varlık yöneticileri %15–30 gelir büyümesi sağlayabilir, bireysel ve kurumsal bankacılık her biri yıllık yüzlerce milyon ek gelir yakalayabilir — eğer bankalar cüzdanları, saklamayı, tokenize fonları ve programlanabilir hazine hizmetlerini şimdi işletim modellerine tasarlarsa.</li>
+<li><strong>Kazanan model orkestrasyondur.</strong> Stablecoinler, tokenize mevduatlar, CBDC'ler ve eski raylar arasında banka kalitesi saklama, gömülü uyum ve çoklu zincir mimarisi ile yönlendirebilen kurum, bir sonraki takas yığınını şekillendirecektir. Bekleyen kurum başkasınınkine bağlanacaktır (<a href="https://sebastienrousseau.com/tr/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026" title="Stablecoins vs Tokenised Deposits in 2026">Sebastien Rousseau, Stablecoinler ve Tokenize Mevduatlar</a>).</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="2026-dijital-varlklarn-bir-mimari-soru-haline-geldigi-yl-neden-oldu">2026 Dijital Varlıkların Bir Mimari Soru Haline Geldiği Yıl Neden Oldu <a class="heading-anchor" href="#2026-dijital-varlklarn-bir-mimari-soru-haline-geldigi-yl-neden-oldu" aria-label="Bağlantı 2026 Dijital Varlıkların Bir Mimari Soru Haline Geldiği Yıl Neden Oldu">#</a></h2>
+<p>Dijital varlık konuşması değişti. Artık blokzincir teknolojisinin finansal hizmetlerde bir rolü olup olmadığı tartışılmıyor. Soru, değer zincirinin neresinde — takas, saklama, ihraç, teminat yönetimi, ödemeler, hazine, dağıtım — bir bankanın altyapıya sahip olması gerektiği, nerede ortaklık kurabileceği ve gecikmenin geri döndürülemez bağımlılık yarattığı yerdir.</p>
+<p>Konuşmanın neden değiştiğini üç veri noktası açıklar. Kripto, yaklaşık 3 trilyon dolarlık bir piyasa değerine sahip bir varlık sınıfı olarak kalmaktadır ve yıllık gelir havuzu ~90 milyar dolar olarak tahmin edilmektedir — kurumsal müşteri tabanı olan herhangi bir kurum için marj zengini ve ticari açıdan anlamlı. Stablecoinler, küresel M2 para arzının yaklaşık %0,5'ine karşılık gelen ~300 milyar dolarlık bir dolaşıma ulaştı; büyük yargı bölgeleri tam düzenleyici netliğe ulaştığında güçlü bir büyüme bekleniyor. Tokenize gerçek dünya varlıkları (RWA) ise 2025 yıl sonunda kamu zincirlerinde yaklaşık 30 milyar dolar ile hâlâ küçük olsa da yıllık yaklaşık %300 oranında büyümüştür ve önümüzdeki on yılda bankacılık için en derin yapısal ilgiye sahip kategoridir. Mayıs 2026 ortasına kadar, zincir üstü RWA değeri RWA.xyz verilerine göre 31,4 milyar dolara ulaşmıştır; bu büyüme neredeyse tamamen zincir üstü getiri, tokenize US Treasury ürünleri ve para piyasası fonları için kurumsal talep tarafından yönlendirilmiştir.</p>
+<p>BCG'nin Mayıs 2026 amiral raporu <em>Dijital Varlıkların Geleceği</em>, bunu telekomünikasyon sektörünün devre anahtarlamalı sesten paket anahtarlamalı IP ağlarına geçişine benzer stratejik bir altyapı geçişi olarak çerçeveler — yirmi yıla yayılan çift raylı bir göç. Rapor, bankaların eski ve tokenize altyapıyı yıllarca paralel olarak işleteceğini ve stratejik hedefin kazanan rayı tahmin etmek değil, hangi rayın ölçeklendiğinden bağımsız olarak sistemik açıdan ilgili kalmak olduğunu savunmaktadır.</p>
+<p>Bu makale, BCG çerçevesini pratik bankacılık teknolojisi mimarisi merceğinden — stratejinin ya operasyonel hale geldiği ya da bir sunum dosyası olarak kaldığı katmandan — inceler. <a href="https://sebastienrousseau.com/tr/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026" title="Stablecoins vs Tokenised Deposits in 2026">Stablecoinler ve tokenize mevduatlar</a>, <a href="https://sebastienrousseau.com/tr/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026" title="Programmable Liquidity in 2026">programlanabilir likidite</a>, <a href="https://sebastienrousseau.com/tr/2026-05-21-tokenised-deposits-banking-services-status-2026" title="Tokenised Deposits in 2026">tokenize mevduat hizmetleri</a> ve <a href="https://sebastienrousseau.com/tr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" title="DORA, the EU AI Act, and Data Sovereignty">DORA, AI Yasası ve veri egemenliği uyum yığını</a> üzerine önceki analizlerden yararlanarak, BCG vizyonunu bankaların gerçekten inşa etmesi, yönetmesi ve kanıtlaması gerekene bağlar.</p>
+<h2 id="uc-varlk-snf-farkl-ekonomi-farkl-mimari">Üç Varlık Sınıfı: Farklı Ekonomi, Farklı Mimari <a class="heading-anchor" href="#uc-varlk-snf-farkl-ekonomi-farkl-mimari" aria-label="Bağlantı Üç Varlık Sınıfı: Farklı Ekonomi, Farklı Mimari">#</a></h2>
+<p>BCG, dijital varlıkları dışarıdan benzer görünen ancak temelde farklı ekonomi ve stratejik etkiler taşıyan üç kategoriye ayırır.</p>
+<h3 id="dijital-para-stablecoinler-tokenize-mevduatlar-cbdc-ler">Dijital Para: Stablecoinler, Tokenize Mevduatlar, CBDC'ler <a class="heading-anchor" href="#dijital-para-stablecoinler-tokenize-mevduatlar-cbdc-ler" aria-label="Bağlantı Dijital Para: Stablecoinler, Tokenize Mevduatlar, CBDC'ler">#</a></h3>
+<p>Dijital para — özel olarak ihraç edilen stablecoinler, banka tarafından ihraç edilen tokenize mevduatlar ve merkez bankası dijital paraları — finansal sistemin çekirdeğine en yakın olanıdır. Mimari soru, hangi dijital para biçiminin hangi takas kullanım durumuna hizmet ettiği ve bir bankanın programlanabilir takasın faydalarını yakalarken mevduat franchise'ını nasıl koruduğudur.</p>
+<p>Stablecoinler bugün baskın biçimdir. ~300 milyar dolarlık dolaşımın yaklaşık %65'i kripto alım-satımı ve DeFi faaliyetlerine bağlıdır, yaklaşık %25'i değer saklama talebine hizmet eder (özellikle gelişmekte olan piyasalarda dolar açığı) ve yalnızca yaklaşık %10'u reel ekonomi ödemelerine bağlıdır — ancak bu segment hızla büyümektedir. BCG analizi, mal ve hizmetler için gerçek ikili stablecoin ödemelerinin 2025'te 350–550 milyar dolara ulaştığını tahmin etmektedir; B2B en büyük segmenttir ve yaklaşık %40'lık bir paya sahiptir.</p>
+<p>Mevduat kaçışı tartışması gerçektir ancak sınırlıdır. BCG, temel bir para rejimi değişikliği olmadıkça — stablecoinlerin yasal ödeme aracı haline gelmesi, faiz ödemesi ve sigortalanması — küresel M2 para arzının yaklaşık %15'inin (2025 seviyelerinde yaklaşık 9 trilyon dolar) stablecoin benimsemesi için doğal bir üst sınır oluşturduğunu savunmaktadır; bu sınır getiri dinamikleri, kredi sistemi geri beslemesi ve kurumsal yapı tarafından sınırlandırılır.</p>
+<p>Stablecoinler ile tokenize mevduatlar arasındaki rekabet dinamiklerinin — karşı taraf riski, birlikte çalışabilirlik parçalanması ve BIS birleşik defter çerçevesi dahil — daha derin bir analizi için, daha önceki <a href="https://sebastienrousseau.com/tr/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026" title="Stablecoins vs Tokenised Deposits in 2026">stablecoinler ve tokenize mevduatlar</a> yazıma bakın. BCG raporu bu analizi destekler: tokenize mevduatlar, dahili takas ve toptan ödeme kullanım durumlarına sahip büyük işlem bankaları için en faydalı olanıdır; stablecoinler ise tarafların verimli ödeme rayları üzerinden bağlı olmadığı veya zaten kamu zincirlerinde etkileşimde bulunduğu her yerde kazanır.</p>
+<p>Mimari sonuç, bankaların tek bir kazanan için değil, bir arada yaşam için tasarım yapması gerektiğidir. Yönlendirme kararı — hangi dijital para biçiminin hangi işlemi takas ettiği — maliyet, hız, kesinlik, yargı bölgesi, müşteri tercihi ve dayanıklılık tarafından alınmalıdır. Bu tam olarak <a href="https://sebastienrousseau.com/tr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" title="DORA, the EU AI Act, and Data Sovereignty">DORA uyum yığınında</a> tanımlanan orkestrasyon modelidir.</p>
+<h3 id="dijital-gercek-dunya-varlklar-sermaye-piyasalar-donusumu">Dijital Gerçek Dünya Varlıkları: Sermaye Piyasaları Dönüşümü <a class="heading-anchor" href="#dijital-gercek-dunya-varlklar-sermaye-piyasalar-donusumu" aria-label="Bağlantı Dijital Gerçek Dünya Varlıkları: Sermaye Piyasaları Dönüşümü">#</a></h3>
+<p>Tokenize RWA'lar — yasal olarak uygulanabilir taleplerle zincir üstü token olarak temsil edilen tahviller, fonlar, hisse senetleri, emtialar, alternatifler — bankacılık için en derin yapısal ilginin bulunduğu yerdir. BCG raporu, ilerici senaryolarda küresel yatırılabilir varlıkların yaklaşık %16'sının 2035'e kadar tokenize edilebileceğini öngörmektedir; benimsemede para piyasası araçları (%25–40 penetrasyon), menkul kıymetleştirilmiş borç (%20–30) ve alternatifler (%25–35) öne çıkmaktadır. Devlet tahvilleri (%3–5) ve borsada işlem gören hisse senetleri (%3–7) yönetişim, piyasa yapısı ve borsa hâkimiyeti kısıtlamaları nedeniyle geride kalmaktadır.</p>
+<p>Ekonomik durum takas ve işlem sonrasında en açıktır. Günlük 100 milyar dolarlık repo hacmine sahip küresel bir banka için BCG, azaltılmış atıl teminat ve hızlandırılmış takas döngüleri yoluyla yıllık 150–300 milyon dolar tasarruf tahmin etmektedir. Broadridge'in DLR platformu Ocak 2026'da 365 milyar dolarlık ortalama günlük hacim ve yıllık %508 büyüme bildirdi — ölçekte üretim kalitesinde kurumsal benimseme. JPMorgan'ın Tokenize Teminat Ağı ve BlackRock'un BUIDL fonu, ilk hareket edenlerin deney yapmadığını; operasyonel altyapı inşa ettiğini göstermektedir.</p>
+<p><a href="https://sebastienrousseau.com/tr/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026" title="Programmable Liquidity in 2026">Programlanabilir likiditeye</a> bağlantı doğrudandır. Tokenize takas olmadan tokenize varlıklar, nakit arayüzünde sürtünmeleri bırakır; tokenize varlıklar olmadan tokenize nakit ise yavaş, toplu tabanlı işlem sonrası süreçlere bağlı daha hızlı bir borudur. Birleşik öneri, atomik teslimat-karşılığı-ödeme ve gerçek zamanlıya yakın kesinliktir. BCG bir ETF analojisi kurar: yenilik varlık değil, işletim modeliydi — gün içi likidite, ayni oluşturma ve geri alma, vergi verimliliği ve borsa tabanlı işlem yapılabilirlik — ve erken benimseyenler (State Street, iShares, Vanguard) kendini güçlendiren avantajlar sayesinde küresel ETF varlıklarının %75–80'ini elde etti.</p>
+<p>GENIUS Yasası kapsamında tokenize para piyasası fonlarının stablecoin getiri kısıtlamalarını nasıl aştığını gösteren BlackRock BRSRV ve BSTBL başvurularının ayrıntılı bir incelemesi için, <a href="https://sebastienrousseau.com/tr/2026-05-15-gizli-getiri-blackrock-brsrv-bstbl-genius-act-cozumlemesi" title="Stablecoin Yield by Another Name">BlackRock'un stablecoin'e bitişik getiri stratejisi</a> üzerine önceki yazıma bakın.</p>
+<h3 id="kripto-gelirin-bugun-oldugu-yer">Kripto: Gelirin Bugün Olduğu Yer <a class="heading-anchor" href="#kripto-gelirin-bugun-oldugu-yer" aria-label="Bağlantı Kripto: Gelirin Bugün Olduğu Yer">#</a></h3>
+<p>Kripto, ticari olarak en olgun segmenttir — yaklaşık 3 trilyon dolarlık varlık ve tahmini ~90 milyar dolarlık yıllık gelir havuzu; bu, 300 trilyon dolarlık yatırılabilir varlık üzerinde geleneksel banka ve piyasa altyapısı alım-satım gelirlerinin ~400 milyar doları ile karşılaştırılmaktadır. Piyasa kapitalizasyonuna göre gelir verimi, alım-satım hızı, oynaklık, kaldıraç ve 7/24 küresel piyasa yapısı tarafından yönlendirilen %2–4 ile yapısal olarak yüksektir.</p>
+<p>Düzenlenmiş finansal kurumlar için adreslenebilir havuz — alım-satım, türevler, saklama ve birincil hizmetler, staking — küresel olarak yaklaşık 55 milyar dolardır. Bankaların kurumsal müşteri ilişkilerinde, düzenleyici güvenilirlikte, risk yönetiminde ve teminat optimizasyonunda yapısal avantajları vardır. Stratejik soru, katılımın savunma amaçlı (müşteri ilişkilerini ve cüzdan payını korumak) mı yoksa ofansif (artımlı büyüme aramak) mı olduğu ve hangi katılım modelinin — acenta, birincil, dağıtım veya tam yığın — bankanın risk iştahı ve teslimat kapasitesiyle uyuştuğudur.</p>
+<h2 id="bankalara-etki-risk-altndaki-gelir-adreslenebilir-gelir">Bankalara Etki: Risk Altındaki Gelir, Adreslenebilir Gelir <a class="heading-anchor" href="#bankalara-etki-risk-altndaki-gelir-adreslenebilir-gelir" aria-label="Bağlantı Bankalara Etki: Risk Altındaki Gelir, Adreslenebilir Gelir">#</a></h2>
+<p>BCG, dijital varlıkların evrimi için özel sektör liderliğinde hızlı genişlemeden düzenleyici kısıtlama ve savunma amaçlı sıfırlamaya kadar uzanan dört senaryo modellemektedir. En agresif senaryoda bankalar, dijital varlıksız bir tabana karşı 2035'e kadar yaklaşık %10 daha küçük bilançolar, %14 daha düşük gelirler, banka dışı finansal kurumlara kaybedilen %9 pazar payı, 8 yüzde puan daha yüksek maliyet/gelir oranı ve %30 daha düşük kârla karşılaşabilir.</p>
+<p>Bu baskıları üç yapısal güç yönlendirir: tokenizasyon değeri aracılara daha az ihtiyaç duyan ihraççılara ve tüketicilere kaydırır; tokenizasyon, bankalardan banka dışı finansal kurumlara değer göçünün uzun vadeli eğilimini hızlandırır; ve eski ile tokenize rayların paralel işletimi geçici maliyet tekrarı yaratır.</p>
+<p>Ancak rapor, fırsatlar konusunda da aynı derecede nettir. Büyük bir banka sahibi varlık yöneticisi olan ortalama bir G-SIB için, aşağıdan yukarıya bir analiz, bu rüzgârlara rağmen çok büyük bir yukarı yönlü potansiyel tanımlar.</p>
+<table>
+<thead>
+<tr>
+<th>İş Kolu</th>
+<th>Birincil Fırsat</th>
+<th>Gösterge Yukarı Yönlü Potansiyel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bireysel bankacılık</strong></td>
+<td>Banka dışı cüzdanlardaki müşteri varlıklarını banka cüzdanları, saklama, tavsiye ve kredi yoluyla geri kazanma</td>
+<td>Banka dışı dijital varlıklar büyüdükçe yıllık ~340M–600M $ gelir</td>
+</tr>
+<tr>
+<td><strong>Kurumsal bankacılık</strong></td>
+<td>Programlanabilir hazine, stablecoin destekli sınır ötesi ödemeler, kripto yerli firmalar için bankacılık hizmetleri</td>
+<td>Yıllık ~200M–600M $ gelir</td>
+</tr>
+<tr>
+<td><strong>Varlık yönetimi</strong></td>
+<td>Tokenize fonlar, alternatiflerin fraksiyonlaştırılması, iyileştirilmiş dağıtım verimliliği</td>
+<td>%15–30 gelir artışı, 2T $ varlık yöneticisi için ~1,2B–2,5B $</td>
+</tr>
+<tr>
+<td><strong>Sermaye piyasaları</strong></td>
+<td>Tokenize ihraç, teminat hareketliliği, repo, dijital saklama, daha hızlı takas</td>
+<td>~%4'e kadar RoE artışı, ortalama bir G-SIB için ~1B $'dan fazla kâr</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026" title="AI as the Operating System of Payments">Ödemeler için AI işletim sistemine</a> bağlantı burada önemlidir. Ödemeleri birden çok ray arasında yönlendiren aynı karar altyapısı — maliyet, hız, kesinlik ve uyum bazında puanlama — tokenize takasın, stablecoin giriş ve çıkışının ve teminat hareketliliğinin orkestrasyonuna uygulanır. Bu karar katmanını hem geleneksel hem de tokenize raylar arasında bir kez inşa eden kurumlar, paralel kontrol yığınları inşa edenlere göre yapısal bir maliyet avantajına sahip olacaktır.</p>
+<h2 id="onemli-olan-mimari-ilkeler">Önemli Olan Mimari İlkeler <a class="heading-anchor" href="#onemli-olan-mimari-ilkeler" aria-label="Bağlantı Önemli Olan Mimari İlkeler">#</a></h2>
+<p>BCG'nin CTO görüşü, dijital varlık teknolojisi stratejisi için yedi ilke tanımlar. Bunları <a href="https://sebastienrousseau.com/tr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" title="DORA, the EU AI Act, and Data Sovereignty">DORA uyum yığınındaki</a> ve <a href="https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026" title="Cloud Native Banking in 2026">bulut yerel bankacılıktaki</a> mimari taban çizgileriyle birlikte okuduğunuzda, tutarlı bir desen ortaya çıkar.</p>
+<h3 id="dlt-yi-urun-olarak-degil-altyap-olarak-ele-aln">DLT'yi Ürün Olarak Değil, Altyapı Olarak Ele Alın <a class="heading-anchor" href="#dlt-yi-urun-olarak-degil-altyap-olarak-ele-aln" aria-label="Bağlantı DLT'yi Ürün Olarak Değil, Altyapı Olarak Ele Alın">#</a></h3>
+<p>En yaygın başarısızlık modu, her biri farklı bir zincir, saklama modeli ve satıcı yığını seçen izole iş birimi pilotlarıdır. Sonuç, tekrarlanan cüzdanlar, tutarsız güvenlik modelleri ve kırılgan entegrasyonlardır. BCG, grup CTO/COO düzeyinde merkezi platform sahipliği önermektedir; iş birimleri ortak bir kontrol çerçevesi üzerinde önceliklendirilmiş kullanım durumlarına sahip olur. Bu, <a href="https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026" title="Cloud Native Banking in 2026">bulut yerel bankacılıkta</a> tanımlanan platform mühendisliği disiplinine doğrudan eşlenir — Kubernetes artı VM birlikteliği, DORA test edilmiş dayanıklılık, egemen bulut ve kritik hizmetlerin sağlayıcı kesintisinden sağ çıktığının kanıtı.</p>
+<h3 id="bastan-itibaren-coklu-zincir-tasarlayn">Baştan İtibaren Çoklu Zincir Tasarlayın <a class="heading-anchor" href="#bastan-itibaren-coklu-zincir-tasarlayn" aria-label="Bağlantı Baştan İtibaren Çoklu Zincir Tasarlayın">#</a></h3>
+<p>Kamu ve özel raylar bir arada bulunacaktır. Bireysel blokzincirler, farklı kullanıcı tabanları, uygulamalar ve likidite havuzları ile kendi ekosistemlerini inşa etmektedir. Tek bir zincire kilitlenmek stratejik bağımlılık yaratır. Mimari zincirden bağımsız olmalı, soyutlama ve birlikte çalışabilirlik dahili olarak inşa edilmelidir; böylece sistem yeniden tasarlanmadan yeni zincirler eklenebilir. Deutsche Börse'nin D7 platformu ve BIS Project Agorá bu seç-ve-karıştır yaklaşımının pratikteki örnekleridir.</p>
+<h3 id="duzenleyici-geri-cevrilebilirlik-icin-insa-edin">Düzenleyici Geri Çevrilebilirlik İçin İnşa Edin <a class="heading-anchor" href="#duzenleyici-geri-cevrilebilirlik-icin-insa-edin" aria-label="Bağlantı Düzenleyici Geri Çevrilebilirlik İçin İnşa Edin">#</a></h3>
+<p>Kurallar gelişecektir. Yapılandırılabilir kontroller, denetlenebilirlik, temiz göç yolları ve güvenli yükseltme mekanizmaları isteğe bağlı değildir. Bu ilke, DORA uyum mimarisinin merkezinde yer alır: zincir üstü ve zincir dışı sistemler arasında, piyasa oynaklığı sırasında ve üçüncü taraflarla koordineli olarak stres altında kontrolü kanıtlama yeteneği. <a href="https://sebastienrousseau.com/tr/2026-05-17-ajan-tabanli-muhendislik-bankalar-icin-2026-plani" title="Agentic Engineering for Banks">Ajansal mühendislik planı</a> bunu genişletir: dijital varlık iş akışları içinde çalışan AI ajanları, diğer herhangi bir otomatik bankacılık süreciyle aynı spesifikasyon odaklı yönetişime, onay yetkilerine ve denetim izlerine ihtiyaç duyar.</p>
+<h3 id="kontrol-duzlemini-banka-icinde-tutun">Kontrol Düzlemini Banka İçinde Tutun <a class="heading-anchor" href="#kontrol-duzlemini-banka-icinde-tutun" aria-label="Bağlantı Kontrol Düzlemini Banka İçinde Tutun">#</a></h3>
+<p>Politika, anahtar yönetimi, sözleşme yönetişimi, limitler, kanıtlar ve olay müdahalesi bankanın içinde kalmalıdır. Ağ etkilerinin veya uzman yeteneklerin önemli olduğu yerlerde üretim motorları, ağ bağlantısı ve standartlaştırılmış araçlar için ortak olun. Hız, lisanslar, yetenek veya dağıtım sıfırdan inşa etmekten daha değerli olduğunda — ancak yalnızca bankanın kontrol modeline entegrasyon gerçekçi ise — seçici olarak satın alın.</p>
+<p>Bu, ödeme orkestrasyonuna, bulut altyapısına ve AI model yönetişimine uygulanan aynı inşa-ortaklık-satın alma disiplinidir. İlke tutarlıdır: farklılaştıran şeye sahip olun, standartlaştıran şey için ortak olun, hızlandıran şey için satın alın.</p>
+<h2 id="risk-kontrolu-aml-saklama-ve-akll-sozlesmeler-neden-buyume-kstlamalardr">Risk Kontrolü: AML, Saklama ve Akıllı Sözleşmeler Neden Büyüme Kısıtlamalarıdır <a class="heading-anchor" href="#risk-kontrolu-aml-saklama-ve-akll-sozlesmeler-neden-buyume-kstlamalardr" aria-label="Bağlantı Risk Kontrolü: AML, Saklama ve Akıllı Sözleşmeler Neden Büyüme Kısıtlamalarıdır">#</a></h2>
+<p>BCG'nin CRO görüşü, dijital varlık strateji tartışmalarında genellikle hafife alınan kritik bir noktayı vurgular: geliri ölçeklendirme yeteneği, yalnızca talep veya sermaye tarafından değil, kontrol çerçevesinin tasarımı tarafından kısıtlanmaktadır. Geleneksel bankacılıkta kontroller ürünün etrafında yer alır. Programlanabilir piyasalarda kontroller ürünün içinde yer alır.</p>
+<h3 id="finansal-suc-musteri-odakldan-aks-odaklya-kayyor">Finansal Suç Müşteri Odaklıdan Akış Odaklıya Kayıyor <a class="heading-anchor" href="#finansal-suc-musteri-odakldan-aks-odaklya-kayyor" aria-label="Bağlantı Finansal Suç Müşteri Odaklıdan Akış Odaklıya Kayıyor">#</a></h3>
+<p>Stablecoinler artık küresel olarak yasadışı zincir üstü işlem hacminin yaklaşık %84'ünü oluşturmaktadır. Kripto ile ilgili dolandırıcılık, bildirilen olayların yalnızca %10'unu temsil eder ancak toplam kayıpların yaklaşık %50'sini oluşturur. AML ve yaptırım riski, yalnızca doğrudan müşteri ilişkileri yoluyla değil, işlem akışları ve ekosistem bağlantısı yoluyla ortaya çıkar. Cüzdan davranışı, işlem bağlamı, kümeleme desenleri ve ağ ilişkileri, müşteri profilleriyle birlikte birincil risk sinyalleri haline gelir.</p>
+<p>Bu, <a href="https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026" title="AI as the Operating System of Payments">AI ödemeler işletim sisteminde</a> tanımlanan aynı kaymadır: dolandırıcılık puanlama, yaptırım taraması ve uyum kontrolleri, periyodik toplu izlemeden sürekli, gerçek zamanlı, akış tabanlı müdahaleye geçer. Dijital varlık bağlamı, takas neredeyse anlık ve geri döndürülemez olduğu için bu gereksinimi büyütür.</p>
+<h3 id="saklama-birinci-dereceden-bir-kontrol-riskidir">Saklama Birinci Dereceden Bir Kontrol Riskidir <a class="heading-anchor" href="#saklama-birinci-dereceden-bir-kontrol-riskidir" aria-label="Bağlantı Saklama Birinci Dereceden Bir Kontrol Riskidir">#</a></h3>
+<p>Dijital varlık piyasalarında, özel anahtarların kontrolü, anında yasal ve operasyonel sonuçlarla birlikte varlıkların kontrolünü belirler. Yasal saklama, teknik kontrol ve talimat yetkisi yanlış hizalanmış olabilir — bir kurum yasal saklayıcı olabilirken teknik kontrol bir teknoloji sağlayıcısında veya protokolde olabilir. 2025'in ilk yarısında, 119 kripto saldırısında 3 milyar dolardan fazla çalınmıştır; kayıpların yarısından fazlasını merkezi borsalar oluşturmuştur. Birçok olay, blokzincir protokol arızalarından çok anahtar yönetimi ve saklama kontrollerinde tavizlere bağlıdır.</p>
+<p>BCG, saklamanın sistemik açıdan önemli ödeme veya takas altyapısıyla aynı düzeyde incelemeye tabi tutulması gerektiğini savunmaktadır. <a href="https://sebastienrousseau.com/tr/2026-05-14-defteri-guvene-almak-post-kuantum-gecis-kurumsal-finans" title="Securing the Ledger">Post-kuantum geçişi</a> zamansal bir boyut ekler: bugün dijital varlık saklamasını koruyan kriptografik anahtar malzemesinin, çoğu kurumun planladığından daha hızlı küçülen bir zaman dilimi içinde post-kuantum algoritmalara taşınması gerekecektir. G7, göç yol haritasını Ocak 2026'da yayımladı ve BIS Project Leap, canlı ödeme sistemlerinde uygulanabilirliği göstermiştir.</p>
+<h3 id="akll-sozlesmeler-yuksek-riskli-modeller-gibi-yonetilmelidir">Akıllı Sözleşmeler Yüksek Riskli Modeller Gibi Yönetilmelidir <a class="heading-anchor" href="#akll-sozlesmeler-yuksek-riskli-modeller-gibi-yonetilmelidir" aria-label="Bağlantı Akıllı Sözleşmeler Yüksek Riskli Modeller Gibi Yönetilmelidir">#</a></h3>
+<p>Akıllı sözleşmeler, sonuçları otomatik olarak ve ölçekte belirleyen varsayımları, eşikleri ve davranışları kodlar. Kodlama hataları, parametre yanlış kalibrasyonu veya sözleşmeler arasındaki beklenmeyen etkileşimler, geleneksel olarak insan incelemesi tarafından sağlanan tamponlar olmadan model riskine benzer sistematik etkiler üretir. 2025'te kötü niyetli onay istismarları yaklaşık 1,5 milyar dolarlık kayıplara neden oldu. BCG, dağıtım öncesi doğrulama, sürekli izleme, kontrollü değişiklik yönetimi ve teknik olarak uygulanabilir yükseltme ve müdahale yetkisini önerir — daha geniş risk çerçevesine entegre edilir.</p>
+<h2 id="duzenleme-yaknsayan-niyet-ayrsan-mimari">Düzenleme: Yakınsayan Niyet, Ayrışan Mimari <a class="heading-anchor" href="#duzenleme-yaknsayan-niyet-ayrsan-mimari" aria-label="Bağlantı Düzenleme: Yakınsayan Niyet, Ayrışan Mimari">#</a></h2>
+<p>BCG dört düzenleyici arketip tanımlar — piyasa odaklı (ABD, Kanada, Brezilya), özel rejim (AB, İngiltere, Japonya), rekabetçi merkez (Singapur, İsviçre, Hong Kong, BAE) ve egemenlik kontrollü (Çin Anakara). Politika niyeti, finansal istikrar, piyasa bütünlüğü, AML kontrolleri ve operasyonel dayanıklılık etrafında geniş ölçüde uyumludur, ancak uygulanabilir kurallara dönüşüm hâlâ eşit değildir.</p>
+<p>AB'nin MiCA çerçevesi en açıklayıcı olanıdır; e-para token ihraççıları için yetkilendirme, tamamen ayrılmış rezerv desteği, başabaşta uygulanabilir geri alım ve EMT ihraççılarının faiz ödemesine ilişkin yasak gerektirir. ABD tartışması, GENIUS çerçevesi ihraççı kategorilerini ve rezerv standartlarını tanımlarken, getiri mekanizmaları ve daha geniş piyasa yapısı üzerine müzakereler devam ederken yasama tasarımından uygulamaya kaymıştır.</p>
+<p>İki konu özellikle tartışmalı olmaya devam etmektedir: stablecoinlerin getiri ödeyip ödeyemeyeceği ve stres altında kabul edilebilir destek varlıklarının ve likidite yönetiminin ne olduğu. Bu tartışmalar, mevduat ikamesi, kaçış dinamikleri ve ihraççı iş modellerinin sürdürülebilirliği hakkındaki daha derin sorulara vekildir.</p>
+<p>Bankalar için pratik sonuç, tek bir küresel son durum yerine kalıcı çoklu rejim gerçekliği için tasarım yapmaktır. <a href="https://sebastienrousseau.com/tr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" title="DORA, the EU AI Act, and Data Sovereignty">DORA uyum yığını</a> ve <a href="https://sebastienrousseau.com/tr/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026" title="UK Payments Forward Plan">İngiltere Ödemeler İleriye Dönük Planı</a> analizi de bunu destekler: parametreli kontrollere sahip modüler işletim modelleri, böylece kurallar geliştikçe banka çevreleyebilir, yeniden yönlendirebilir veya piyasalardan çıkabilir.</p>
+<h2 id="banka-turune-gore-bunun-anlam">Banka Türüne Göre Bunun Anlamı <a class="heading-anchor" href="#banka-turune-gore-bunun-anlam" aria-label="Bağlantı Banka Türüne Göre Bunun Anlamı">#</a></h2>
+<h3 id="kuresel-bankalar">Küresel Bankalar <a class="heading-anchor" href="#kuresel-bankalar" aria-label="Bağlantı Küresel Bankalar">#</a></h3>
+<p>Küresel bankalar, her piyasa, ray, token ve saklama modelinin ayrı bir işletim modeli haline gelmemesi için platform düzeyinde orkestrasyon oluşturmalıdır. BCG, merkezi DLT mimari sahipliği, çoklu zincir tasarımı ve ortak bir kontrol çerçevesi önermektedir. İlk hareket avantajı, ölçeğin kendini güçlendiren ağ etkileri yarattığı takas altyapısı, teminat hareketliliği ve tokenize fon dağıtımında en güçlüdür. Sıralama şu olmalıdır: önce defterden bağımsız platform ve kontroller, ardından yüksek değerli kullanım durumları (repo, teminat, tokenize fonlar), ardından defter maruziyetinin kademeli olarak genişletilmesi.</p>
+<h3 id="bolgesel-bankalar">Bölgesel Bankalar <a class="heading-anchor" href="#bolgesel-bankalar" aria-label="Bağlantı Bölgesel Bankalar">#</a></h3>
+<p>Bölgesel bankalar, birlikte çalışabilirlik standartları veya paylaşılan bir takas mekânı olmaksızın faydaların sınırlı olabileceği yeni DLT altyapısı inşa etme konusunda bir uygun maliyet sorusuyla karşı karşıyadır. BCG, küresel olarak en büyükler arasında olmayan bankalar için, birlikte çalışabilirlik olmadan tokenize bir mevduatın stratejik bir varlıktan çok bir özellik olma olasılığının yüksek olduğunu savunmaktadır. Daha iyi strateji bir birlikte çalışabilirlik yol haritasıdır: sektör konsorsiyumlarına katılmak, müşteri cüzdanını güven çapası olarak önceliklendirmek ve yerel piyasa bilgisi ile düzenlenmiş saklamanın ölçeği yendiği kullanım durumlarına odaklanmak — hazine görünürlüğü, dolandırıcılık önleme, Açık Bankacılık ödemeleri ve stablecoin giriş-çıkışları.</p>
+<h3 id="fintech-ler-ve-psp-ler">Fintech'ler ve PSP'ler <a class="heading-anchor" href="#fintech-ler-ve-psp-ler" aria-label="Bağlantı Fintech'ler ve PSP'ler">#</a></h3>
+<p>Piyasa artık hem teknoloji hem de işletim hizmeti düzeyinde üretim kalitesinde yapı taşları sunmaktadır. En iyi öneriler, bankalar için karmaşıklığı azaltarak — başka bir izole ray eklemek yerine — orkestrasyon, uyum kanıtı veya veri zekâsı getirecektir. Bu, <a href="https://sebastienrousseau.com/tr/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026" title="Agentic Payments in Banking">ajansal ödemeler</a> analizinde tanımlanan aynı ilkedir: ödeme yürütmeyle birlikte onay altyapısı, sorumluluk sınırları ve denetime hazır kanıt sağlayan fintech, yalnızca daha hızlı bir boru sağlayandan daha iyi performans gösterecektir.</p>
+<h3 id="varlk-yoneticileri">Varlık Yöneticileri <a class="heading-anchor" href="#varlk-yoneticileri" aria-label="Bağlantı Varlık Yöneticileri">#</a></h3>
+<p>Tokenizasyon, savunma amaçlı değil, yapısal bir büyüme hikâyesidir. Birincil kaldıraçlar, şu anda ücret oluşturmayan varlıkların yönetilen yapılara artırılmış olarak yakalanması, fraksiyonlaştırma ve ölçeklenebilir dağıtım yoluyla daha yüksek ücretli alternatiflere doğru ürün karması kayması ve programlanabilir fon yaşam döngüsü yönetimi yoluyla hizmet yığınının genişletilmesidir. BCG, ETF analojisini açıkça çizer: yerleşikler başlangıçta ETF'leri ekonomik olarak gereksiz göründükleri için hafife aldı, ancak yenilik işletim modeliydi. Aynı dinamik tokenize fonlar için de geçerlidir.</p>
+<h2 id="bes-pratik-adm">Beş Pratik Adım <a class="heading-anchor" href="#bes-pratik-adm" aria-label="Bağlantı Beş Pratik Adım">#</a></h2>
+<p>BCG, on adımlık bir rehberle sonlandırır. Önümüzdeki on iki ay için beş acil önceliğe indirgenmiştir:</p>
+<p><strong>Ekonomiyi nicelendirin.</strong> 90 gün içinde iş kolu bazında modelleyin: risk altındaki gelir havuzları, adreslenebilir gelir havuzları, mevduat ve likidite hassasiyeti ve çift rayların beklenen maliyeti. Nicelendirilmiş maruziyet olmadan dijital varlıklar soyut kalır.</p>
+<p><strong>Hırsı ve yönetişimi kilitleyin.</strong> İlgili her iş kolu için bir hırs arketipi seçin — savunmacı entegratör, ölçeklenmiş katılımcı veya altyapı şekillendirici. Hesap verebilir bir yönetici sponsor atayın. Senaryo göstergelerine bağlı yönetim kurulu düzeyinde bir inceleme ritmi oluşturun.</p>
+<p><strong>Müşteri arayüzünü şimdi güvence altına alın.</strong> Güvenli cüzdan ve saklama yeteneklerini ve müşteriye yönelik giriş-çıkış, tavsiye ve raporlama orkestrasyonunu önceliklendirin. Cüzdan, hangi temel para aracının kazandığından bağımsız olarak müşteri ilişkisini korur.</p>
+<p><strong>2–3 yüksek değerli kullanım durumunu sanayileştirin.</strong> Tipik adaylar: sınır ötesi hazine ve programlanabilir likidite, tokenize fonlar ve alternatifler, repo ve teminat hareketliliği ve mevcut müşteriler için seçici kripto hizmetleri. Soruna arayan tokenizasyondan kaçının.</p>
+<p><strong>Banka kalitesi kontrol düzlemini inşa edin.</strong> Ortak DLT platformunu, anahtar yönetimini, sözleşme yönetişimini, AML araçlarını, raporlamayı, ortak çerçevesini ve çıkış yollarını kurun. İlk üretim kullanım durumu, daha sonraki ölçeklendirmenin bağımlı olacağı aynı kontroller üzerinde çalışmalıdır.</p>
+<h2 id="sonuc">Sonuç <a class="heading-anchor" href="#sonuc" aria-label="Bağlantı Sonuç">#</a></h2>
+<p>2026'da dijital varlıklar bir inovasyon sorusu değildir. Takas, saklama, uyum ve bilanço mimarisi sorusudur. BCG raporu, bunu telekom sektörünün çift raylı göçüne benzer yapısal bir geçiş olarak çerçeveler; burada stratejik hedef kazanan rayı tahmin etmek değil, birden çok makul gelecek arasında ilgili kalmaktır.</p>
+<p>Bir sonraki takas yığınını şekillendirecek kurumlar, şimdi orkestrasyon için tasarlayanlardır: çoklu raylı, çoklu zincirli, çoklu paralı, ürünün etrafına katmanlı değil, ürünün içine gömülü banka kalitesi kontrollerle. Bekleyen kurumlar, kendilerini başkaları tarafından tasarlanmış altyapıya, başkalarının belirlediği şartlarla bağlanırken bulacaklardır.</p>
+<p>Mimari ilkeler, bu seride ele alınan her konuda tutarlıdır — ödemeler, hazine, uyum, bulut, AI ve şimdi dijital varlıklar. Önce iş akışı, kontrol düzlemi olarak veri, raylar ve platformlar arasında orkestrasyon, gömülü uyum ve kanıt ve ölçeklendirmeyi haklı çıkaran birim ekonomisi. Teknoloji etiketleri değişir; tasarım disiplini değişmez.</p>
+<h2 id="skca-sorulan-sorular">Sıkça Sorulan Sorular <a class="heading-anchor" href="#skca-sorulan-sorular" aria-label="Bağlantı Sıkça Sorulan Sorular">#</a></h2>
+<p><strong>Bu konu 2026'da neden acildir?</strong></p>
+<p>Çünkü düzenleyici netliğin (MiCA, GENIUS Yasası, İngiltere çerçeveleri), üretim kalitesinde kurumsal platformların (Broadridge DLR, Kinexys, BlackRock BUIDL) ve ölçülebilir stablecoin ödeme hacimlerinin yakınsaması, dijital varlıkları deneyden operasyonel altyapıya taşıdı. Çift raylı maliyet saati artık işliyor.</p>
+<p><strong>En büyük uygulama riski nedir?</strong></p>
+<p>En büyük risk mimari parçalanmadır: her biri farklı zincirler, saklama modelleri, satıcı yığınları ve kontrol çerçeveleriyle ayrı DLT pilotları inşa eden ayrı iş birimleri. Bu, tekrarlanan maliyet, tutarsız güvenlik ve ölçeğe giden bir yol olmaması yaratır.</p>
+<p><strong>Bir banka önce ne inşa etmelidir?</strong></p>
+<p>Güvenli bir müşteri cüzdanı ve defterden bağımsız bir kontrol düzlemi — anahtar yönetimi, politika uygulaması, izleme, denetim kanıtı ve entegrasyon desenleri. Bunlar, hangi zincirlerin, tokenların veya para araçlarının ölçeklendiğinden bağımsız olarak opsiyonalite yaratır.</p>
+<p><strong>Bu, mevcut uyum yükümlülüklerine nasıl bağlanır?</strong></p>
+<p>Dijital varlık kontrolleri, paralel bir program olarak değil, DORA operasyonel dayanıklılığı, EU AI Yasası şeffaflığı ve veri egemenliğini destekleyen aynı mimarinin bir uzantısı olarak tasarlanmalıdır. Aynı kanıt üretim disiplini, aynı denetime hazırlık standardı, aynı yönetişim modeli.</p>
+<p><strong>Başarı nasıl ölçülmelidir?</strong></p>
+<p>Adreslenebilir havuzlardan yakalanan gelir, çift raylı işletim maliyeti, kontrol çerçevesi hazırlığı (belgelenen değil, test edilen), müşteri cüzdanı benimsemesi ve tokenize teminat ve takastan kaynaklanan bilanço verimliliği kazanımları ile.</p>
+<h2 id="kaynakca">Kaynakça <a class="heading-anchor" href="#kaynakca" aria-label="Bağlantı Kaynakça">#</a></h2>
+<ul>
+<li>BCG, (2026). <a href="https://www.bcg.com" title="BCG">Dijital Varlıkların Geleceği — BCG Amiral Raporu, Mayıs 2026 ⧉</a>.</li>
+<li>RWA.xyz, (2026). <a href="https://rwa.xyz" title="RWA.xyz">RWA Piyasa Verileri ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/tr/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026" title="Stablecoins vs Tokenised Deposits">Stablecoinler ve Tokenize Mevduatlar 2026 ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/tr/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026" title="Programmable Liquidity">Programlanabilir Likidite 2026 ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/tr/2026-05-21-tokenised-deposits-banking-services-status-2026" title="Tokenised Deposits">Tokenize Mevduatlar 2026 ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/tr/2026-05-15-gizli-getiri-blackrock-brsrv-bstbl-genius-act-cozumlemesi" title="BlackRock Stablecoin Yield">BlackRock BRSRV ve BSTBL Başvuruları Çözümlendi ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/tr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" title="DORA Compliance Stack">DORA, EU AI Yasası ve Veri Egemenliği ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026" title="AI Payments">Ödemelerin İşletim Sistemi Olarak AI ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026" title="Cloud Native Banking">Bulut Yerel Bankacılık 2026 ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/tr/2026-05-14-defteri-guvene-almak-post-kuantum-gecis-kurumsal-finans" title="Post-Quantum Migration">Defteri Güvenceye Almak: Post-Kuantum Geçişi ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/tr/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026" title="Agentic Payments">Bankacılıkta Ajansal Ödemeler ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/tr/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026" title="UK Payments Forward Plan">İngiltere Ödemeler İleriye Dönük Planı ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/tr/2026-05-17-ajan-tabanli-muhendislik-bankalar-icin-2026-plani" title="Agentic Engineering">Bankalar için Ajansal Mühendislik ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+<h2 id="yazar-hakknda">Yazar Hakkında <a class="heading-anchor" href="#yazar-hakknda" aria-label="Bağlantı Yazar Hakkında">#</a></h2>
+
+<p class="post-reviewed">Son inceleme <time datetime="2026-05-28">28 Mayıs 2026</time>.</p>
+
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Yazar hakkında"><img alt="Sebastien Rousseau portresi" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/tr/hakkimda/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Kıdemli bankacılık teknoloğu olarak uygulamalı yapay zeka, ISO 20022 geçişi, finansal hizmetler için post-kuantum kriptografi ve toptan ödemelerin yapısal dönüşümü üzerine yazıyorum.</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA ve Virgin Group bünyesinde 20 yılı aşkın deneyim. <a href="/tr/hakkimda/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Son inceleme <time datetime="2026-05-31">2026-05-31</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">İlgili okumalar</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/tr/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026" class="related-media" aria-label="Stablecoinler ve Tokenleştirilmiş Mevduatlar 2026: Bankaların Gerçekten Savunması Gereken" tabindex="-1"><img alt="Comparison diagram showing stablecoins, tokenised deposits, commercial bank money, reserve assets, wallets, settlement, liquidity, and bank balance sheets" src="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="stablecoinler-ve-tokenlestirilmis-mevduatlar-2026-bankalarn-gercekten-savunmas-g"><a href="https://sebastienrousseau.com/tr/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026">Stablecoinler ve Tokenleştirilmiş Mevduatlar 2026: Bankaların Gerçekten Savunması Gereken</a> <a class="heading-anchor" href="#stablecoinler-ve-tokenlestirilmis-mevduatlar-2026-bankalarn-gercekten-savunmas-g" aria-label="Bağlantı Stablecoinler ve Tokenleştirilmiş Mevduatlar 2026: Bankaların Gerçekten Savunması Gereken">#</a></h3><p><time datetime="2026-05-26">2026-05-26</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/tr/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026" class="related-media" aria-label="Programlanabilir Likidite 2026: AI, Tokenleştirilmiş Mevduatlar ve Gerçek Zamanlı Hazine" tabindex="-1"><img alt="Programmable liquidity architecture diagram showing treasury systems, AI forecasting, tokenised deposits, real-time rails, stablecoins, virtual accounts, FX, and collateral mobility" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="programlanabilir-likidite-2026-ai-tokenlestirilmis-mevduatlar-ve-gercek-zamanl-h"><a href="https://sebastienrousseau.com/tr/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026">Programlanabilir Likidite 2026: AI, Tokenleştirilmiş Mevduatlar ve Gerçek Zamanlı Hazine</a> <a class="heading-anchor" href="#programlanabilir-likidite-2026-ai-tokenlestirilmis-mevduatlar-ve-gercek-zamanl-h" aria-label="Bağlantı Programlanabilir Likidite 2026: AI, Tokenleştirilmiş Mevduatlar ve Gerçek Zamanlı Hazine">#</a></h3><p><time datetime="2026-05-25">2026-05-25</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/tr/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026" class="related-media" aria-label="UK Payments Forward Plan 2026: Stablecoinler, Açık Bankacılık, Tokenleştirilmiş Mevduatlar ve Ajansal Ödemeler" tabindex="-1"><img alt="UK payments modernisation diagram showing stablecoins, tokenised deposits, open banking, AI agents, FCA regulation, PSR consolidation, and wholesale digital markets" src="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="uk-payments-forward-plan-2026-stablecoinler-ack-bankaclk-tokenlestirilmis-mevdua"><a href="https://sebastienrousseau.com/tr/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026">UK Payments Forward Plan 2026: Stablecoinler, Açık Bankacılık, Tokenleştirilmiş Mevduatlar ve Ajansal Ödemeler</a> <a class="heading-anchor" href="#uk-payments-forward-plan-2026-stablecoinler-ack-bankaclk-tokenlestirilmis-mevdua" aria-label="Bağlantı UK Payments Forward Plan 2026: Stablecoinler, Açık Bankacılık, Tokenleştirilmiş Mevduatlar ve Ajansal Ödemeler">#</a></h3><p><time datetime="2026-05-24">2026-05-24</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="Makale sayfalama"><a class="post-pagination-prev" href="/tr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">Önceki</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><a class="post-pagination-next" href="/tr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"><span class="post-pagination-label">Sonraki</span><span class="post-pagination-title">ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/tr/hakkimda/index.html">Hakkımda</a></li>
+              <li><a href="/tr/iletisim/index.html">İletişim</a></li>
+              <li><a href="/tr/static-site-generator-ile-yapildi/index.html">Static Site Generator ile yapıldı</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Yayınlar</h2>
+            <ul>
+              <li><a href="/tr/makaleler/index.html">Makaleler</a></li>
+              <li><a href="/tr/yayinlar/index.html">Yayınlar</a></li>
+              <li><a href="/tr/etiketler/index.html">Etiketler</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Çalışmalar</h2>
+            <ul>
+              <li><a href="/tr/projeler/index.html">Projeler</a></li>
+              <li><a href="/tr/calma-listeleri/index.html">Çalma listeleri</a></li>
+              <li><a href="/tr/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">İletişim</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Bültene abone ol">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — ödemeler, yapay zeka ve post-kuantum kriptografi üzerine araştırma notları. Spam yok.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="siz@banka.com.tr" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Abone ol</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Sosyal bağlantılar">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/tr/erisilebilirlik/index.html">Erişilebilirlik</a> ·
+            <a href="/tr/gizlilik/index.html">Gizlilik</a> ·
+            <a href="/tr/sartlar/index.html">Şartlar</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"tr"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"tr"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":3484,"headline":"Dijital Varlıklar 2026: Bankaların Erteleyemeyeceği Altyapı Geçişi","description":"Dijital varlıklar artık inovasyon bahsi değildir. Bankalar için takas, saklama ve bilanço mimarisi sorusudur; stratejik görev yapısal belirsizlik altında altyapı tasarımıdır.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/corporate-finance.webp","width":"100vw","height":"100vh","caption":"Tokenize gerçek dünya varlıkları, stablecoinler, tokenize mevduatlar, saklama, takas, teminat hareketliliği ve banka platformu katmanlarını gösteren dijital varlık altyapı diyagramı"},"url":"https://sebastienrousseau.com/tr/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/","datePublished":"2026-05-28T06:06:06+00:00","dateModified":"2026-05-28","inLanguage":"tr","keywords":"dijital varlıklar 2026, tokenize gerçek dünya varlıkları, stablecoinler bankacılık, tokenize mevduatlar, dijital varlık saklama, DLT bankacılık, takas altyapısı, teminat hareketliliği, programlanabilir para, dijital varlık banka stratejisi","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/tr/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"tr"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/tr/"},{"@type":"ListItem","position":3,"name":"Dijital Varlıklar 2026: Bankaların Erteleyemeyeceği Altyapı Geçişi","item":"https://sebastienrousseau.com/tr/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Ara">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Ara</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Ara">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Belgelerde ara..." autocomplete="off" aria-label="Ara"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> kapat</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> gezin</span><span><kbd>Enter</kbd> aç</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Dijital Varlıklar 2026: Bankaların Erteleyemeyeceği Altyapı Geçişi","url":"https://sebastienrousseau.com/tr/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/","inLanguage":"tr-TR","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"dijital varlıklar 2026, tokenize gerçek dünya varlıkları, stablecoinler bankacılık, tokenize mevduatlar, dijital varlık saklama, DLT bankacılık, takas altyapısı, teminat hareketliliği, programlanabilir para, dijital varlık banka stratejisi","dependencies":["Stablecoin"]}</script></body>
+</html>

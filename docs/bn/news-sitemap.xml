@@ -2,15 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/bn/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <loc>https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>bn-BD</news:language>
     </news:publication>
-    <news:publication_date>2026-06-01T06:06:06+00:00</news:publication_date>
-    <news:title>2026-এর মাল্টি-রেল ব্যাংক: এক কৌশলে কার্ড, A2A, স্টেবলকয়েন, RTP, FedNow ও Open Banking</news:title>
-    <news:keywords>মাল্টি-রেল ব্যাংক 2026, A2A পেমেন্ট, FedNow, RTP নেটওয়ার্ক, স্টেবলকয়েন, Open Banking, কার্ড, পেমেন্ট অর্কেস্ট্রেশন, ISO 20022</news:keywords>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>পোস্ট-কোয়ান্টাম পেমেন্ট পরিকাঠামো: কেন ব্যাংক লিগ্যাসি রেল অভিযোজন না করে প্রতিস্থাপন করতে পারে</news:title>
+    <news:keywords>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, PQC পেমেন্ট, ক্রিপ্টো-চটপটে, এখন-সংগ্রহ-পরে-ডিক্রিপ্ট, HNDL, NIST পোস্ট-কোয়ান্টাম মান, ML-KEM, ML-DSA, FIPS 203, FIPS 204, পেমেন্ট রেল মাইগ্রেশন, ISO 20022 PQC, SWIFT MT প্রতিস্থাপন, HSM, PKI ভাঙন, অপারেশনাল স্থিতিস্থাপকতা, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/bn/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>bn-BD</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
+    <news:title>যুক্তরাজ্যের পাইকারি ডিজিটাল বাজার: টোকেনাইজড গিল্টস, নিষ্পত্তি ও নতুন চ্যাম্পিয়ন ভূমিকা</news:title>
+    <news:keywords>যুক্তরাজ্য পাইকারি ডিজিটাল বাজার ২০২৬, Wholesale Digital Markets Champion, UK gilts, টোকেনাইজড গিল্টস, DLT নিষ্পত্তি, BoE DSS, Project Guardian, SDX, Project Agorá, HM Treasury, Bank of England, City of London</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/bn/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>bn-BD</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T06:06:06+00:00</news:publication_date>
+    <news:title>ISO 20022 মাইগ্রেশনের পরে: পেমেন্ট ডেটাকে ব্যাংকিং পণ্যে রূপান্তর ২০২৬</news:title>
+    <news:keywords>ISO 20022 2026, কাঠামোগত ঠিকানা, CBPR+, পেমেন্ট ডেটা পণ্য, উদ্দেশ্য কোড, কর্পোরেট ট্রেজারি, মিলকরণ, নিষেধাজ্ঞা স্ক্রিনিং, জালিয়াতি শনাক্তকরণ, pacs.008, pain.001, SWIFT gpi, SEPA Instant, FedNow</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/bn/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>bn-BD</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T06:06:06+00:00</news:publication_date>
+    <news:title>ডিজিটাল সম্পদ ২০২৬: ব্যাংকের জন্য অপরিহার্য পরিকাঠামো রূপান্তর</news:title>
+    <news:keywords>ডিজিটাল সম্পদ ২০২৬, টোকেনাইজড রিয়েল-ওয়ার্ল্ড অ্যাসেট, স্টেবলকয়েন ব্যাংকিং, টোকেনাইজড আমানত, ডিজিটাল সম্পদ কাস্টডি, DLT ব্যাংকিং, সেটেলমেন্ট পরিকাঠামো, কোল্যাটারাল মোবিলিটি, প্রোগ্রামযোগ্য মুদ্রা, ব্যাংক কৌশল ডিজিটাল সম্পদ</news:keywords>
   </news:news>
 </url>
 <url>

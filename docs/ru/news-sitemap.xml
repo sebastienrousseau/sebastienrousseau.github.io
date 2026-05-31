@@ -2,15 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/ru/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <loc>https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ru-RU</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T08:31:08+00:00</news:publication_date>
-    <news:title>Мультирейловый банк в 2026: карты, A2A, стейблкоины, RTP, FedNow и Open Banking</news:title>
-    <news:keywords>мультирейловый банк 2026, платежи A2A, FedNow, сеть RTP, стейблкоины, Open Banking, карты, оркестрация платежей, ISO 20022</news:keywords>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Постквантовая платёжная инфраструктура: почему банки заменят, а не доработают устаревшие рельсы</news:title>
+    <news:keywords>постквантовая криптография, PQC платежи, криптоагильность, собирай-сейчас-расшифровывай-позже, HNDL, постквантовые стандарты NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, миграция платёжных рельсов, ISO 20022 PQC, замена SWIFT MT, HSM, обрушение PKI, операционная устойчивость, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Цифровые активы в 2026: инфраструктурный переход, который банки не могут откладывать</news:title>
+    <news:keywords>цифровые активы 2026, токенизированные реальные активы, стейблкоины банки, токенизированные депозиты, кастоди цифровых активов, DLT в банках, инфраструктура расчётов, мобильность обеспечения, программируемые деньги, стратегия банка по цифровым активам</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
+    <news:title>Оптовые цифровые рынки Великобритании: токенизированные гилты, расчёт и новая роль координатора</news:title>
+    <news:keywords>оптовые цифровые рынки Великобритании 2026, Chris Woolard, токенизированные гилты, токенизированные оптовые финансы, координатор цифровых рынков, токенизация UK, расчёт</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T06:06:06+00:00</news:publication_date>
+    <news:title>ISO 20022 после миграции: платёжные данные как банковские продукты в 2026</news:title>
+    <news:keywords>ISO 20022 2026, структурированный адрес, CBPR+, продукты платёжных данных, коды назначения, корпоративное казначейство, сверка, санкционный скрининг, обнаружение мошенничества, pacs.008, pain.001, SWIFT gpi, SEPA Instant, FedNow</news:keywords>
   </news:news>
 </url>
 <url>

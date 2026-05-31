@@ -6,25 +6,94 @@
     <description>Labaran Hausa: AI mai amfani, biyan kuɗi na ISO 20022, kiriftografi bayan kwantum da sauye-sauyen biyan kuɗi na manyan.</description>
     <atom:link href="https://sebastienrousseau.com/ha/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ha-NG</language>
-    <lastBuildDate>Thu, 28 May 2026 08:31:07 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 10:06:33 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. An kiyaye duk hakkokin.</copyright>
     <item>
-      <title>Bankin Multi-Rail a 2026: Katuna, A2A, Stablecoins, RTP, FedNow, da Open Banking a Dabara Guda</title>
-      <link>https://sebastienrousseau.com/ha/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
-      <description>Bankin multi-rail na 2026 ba ya zaɓar nan gaba ɗaya na biyan kuɗi. Yana daidaita katuna, biyan akwati-zuwa-akwati (A2A), RTP, FedNow, stablecoins, Open Banking, walat, da bayanan ISO 20022 bisa kuɗi, sauri, haɗari, ƙarewa, da yanayin abokin ciniki.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Thu, 28 May 2026 08:31:07 +0000</pubDate>
+      <title>Kayan Biya Bayan Quantum: Me Ya Sa Bankuna Za Su Iya Maye Gurbin Tsofaffin Hanyoyi Maimakon Daidaitawa</title>
+      <link>https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>Cryptography bayan quantum tana tilasta zaɓi biyu kan hanyoyin biya: daidaita RSA/ECC cikin SWIFT MT da ISO 20022 da ba a tsara wa ML-KEM da ML-DSA ba, ko maye gurbi da kayan saurin crypto. Masu zane su yanke kafin HNDL ya zama asarar aiki.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Sun, 31 May 2026 10:06:33 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>bankin multi-rail 2026</category>
-      <category>biyan A2A</category>
-      <category>FedNow</category>
-      <category>hanyar RTP</category>
-      <category>stablecoins</category>
-      <category>Open Banking</category>
-      <category>katuna</category>
-      <category>daidaita biyan kuɗi</category>
-      <category>ISO 20022</category>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>cryptography bayan quantum</category>
+      <category>biyan PQC</category>
+      <category>saurin crypto</category>
+      <category>tara-yanzu-warware-baya</category>
+      <category>HNDL</category>
+      <category>ƙa&apos;idodin bayan quantum na NIST</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>ƙaurar hanyar biya</category>
+      <category>ISO 20022 PQC</category>
+      <category>maye gurbin SWIFT MT</category>
+      <category>HSM</category>
+      <category>faɗuwar PKI</category>
+      <category>juriya na aiki</category>
+      <category>Quantum Computing Cybersecurity Preparedness Act</category>
+    </item>
+    <item>
+      <title>Kadarorin Dijital a 2026: Sauyin Ababen More Rayuwa da Bankuna Ba za su Iya Jinkirta ba</title>
+      <link>https://sebastienrousseau.com/ha/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>Kadarorin dijital ba sake fasalin sabuntawa ba ne. Sun zama tambaya ta tsarin biyan kuɗi na ƙarshe, kulawa, da ma&apos;aunin daidaitawa. Aikin dabaru ga bankuna shi ne tsara ababen more rayuwa a ƙarƙashin rashin tabbas na tsari.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Sun, 31 May 2026 10:06:33 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>kadarorin dijital 2026</category>
+      <category>kadarorin gaskiya na tokenised</category>
+      <category>stablecoins banki</category>
+      <category>ajiyar tokenised</category>
+      <category>kulawa kadarorin dijital</category>
+      <category>DLT banki</category>
+      <category>ababen more rayuwa na biyan kuɗi na ƙarshe</category>
+      <category>motsi na kayan tabbatarwa</category>
+      <category>kuɗi mai shirye-shirye</category>
+      <category>dabarun banki kadarorin dijital</category>
+    </item>
+    <item>
+      <title>Kasuwannin Dijital na Yawa a Birtaniya: Gilts Tokenised, Sasantawa, da Sabon Matsayin Zakara</title>
+      <link>https://sebastienrousseau.com/ha/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
+      <description>Matsayin Zakara na Kasuwannin Dijital na Yawa na Birtaniya yana mai da kuɗin gilts tokenised zuwa aikin ƙarfin gasa na ƙasa baki ɗaya na 2026.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>Kasuwannin dijital na yawa Birtaniya 2026</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>Chris Woolard</category>
+      <category>gilts tokenised</category>
+      <category>UK gilts</category>
+      <category>DLT settlement</category>
+      <category>BoE DSS</category>
+      <category>Project Guardian</category>
+      <category>SDX</category>
+      <category>Project Agorá</category>
+      <category>GOV.UK</category>
+      <category>HM Treasury</category>
+      <category>Bank of England</category>
+      <category>City of London</category>
+      <category>sasantawa</category>
+    </item>
+    <item>
+      <title>ISO 20022 Bayan Ƙaura: Juyar da Bayanan Biyan Kuɗi zuwa Kayayyakin Banki a 2026</title>
+      <link>https://sebastienrousseau.com/ha/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 bayan ƙaura damar samfurin bayanai ce. Adireshi mai tsari, lambobin manufa, bayanan daftari, saƙonnin bincike, da abubuwan da suka faru na biyan kuɗi za su zama kayayyakin daidaitawa, zamba, kuɗi, da bin doka.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>adireshi mai tsari</category>
+      <category>CBPR+</category>
+      <category>kayayyakin bayanan biyan kuɗi</category>
+      <category>lambobin manufa</category>
+      <category>baitulmali na kamfani</category>
+      <category>daidaitawa</category>
+      <category>gwajin takunkumi</category>
+      <category>gano zamba</category>
     </item>
     <item>
       <title>DORA, EU AI Act, da Ikon Mallakar Bayanai: Tarin Bin Doka na 2026 ga Bankuna</title>
@@ -49,7 +118,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
       <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
       <category>AI payments 2026</category>
       <category>payment fraud</category>
       <category>payment routing</category>

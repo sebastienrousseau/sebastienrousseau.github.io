@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/it/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <loc>https://sebastienrousseau.com/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>it-IT</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T08:31:08+00:00</news:publication_date>
-    <news:title>La banca multirail nel 2026: carte, A2A, stablecoin, RTP, FedNow e Open Banking in un&apos;unica strategia</news:title>
-    <news:keywords>banca multirail 2026, pagamenti A2A, FedNow, rete RTP, stablecoin, Open Banking, carte, orchestrazione dei pagamenti, ISO 20022</news:keywords>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Infrastruttura pagamenti post-quantistica: perché le banche potrebbero sostituire i rail legacy invece di adattarli</news:title>
+    <news:keywords>crittografia post-quantistica, pagamenti PQC, cripto-agilità, raccogli-ora-decifra-dopo, HNDL, standard post-quantistici NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, migrazione rail di pagamento, ISO 20022 PQC, sostituzione SWIFT MT, HSM, collasso PKI, resilienza operativa, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
   </news:news>
 </url>
 <url>
@@ -20,9 +20,21 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>it-IT</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T08:31:08+00:00</news:publication_date>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
     <news:title>DORA, EU AI Act e sovranità dei dati: lo stack di conformità 2026 per le banche</news:title>
     <news:keywords>DORA 2026, EU AI Act 2026, sovranità dei dati banche, resilienza operativa, rischio di concentrazione cloud, conformità AI servizi finanziari, AI ad alto rischio</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it-IT</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Asset digitali nel 2026: la transizione infrastrutturale che le banche non possono rinviare</news:title>
+    <news:keywords>asset digitali 2026, asset reali tokenizzati, stablecoins banche, depositi tokenizzati, custodia asset digitali, DLT banche, infrastruttura di regolamento, mobilità del collaterale, moneta programmabile, strategia bancaria asset digitali</news:keywords>
   </news:news>
 </url>
 <url>
@@ -32,9 +44,33 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>it-IT</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T08:31:08+00:00</news:publication_date>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
     <news:title>Pagamenti agentici nel banking: consenso, responsabilità e nuova UX 2026</news:title>
     <news:keywords>pagamenti agentici 2026, pagamenti agenti IA, Mastercard Agent Pay, pagamento IA Rabobank, AP2, A2A, x402, MCP, machine payments protocol, consenso ai pagamenti, Regulation E, EFTA, responsabilità nei pagamenti, intento verificabile, tokenizzazione, passkey, UX bancaria, commercio IA</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it-IT</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
+    <news:title>Mercati digitali all&apos;ingrosso nel Regno Unito: gilts tokenizzati, regolamento e il nuovo ruolo di champion</news:title>
+    <news:keywords>mercati digitali all&apos;ingrosso UK 2026, Wholesale Digital Markets Champion, gilts tokenizzati, regolamento DLT, BoE DSS, Project Guardian, SDX, Project Agorá, tokenizzazione UK, City of London</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it-IT</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T06:06:06+00:00</news:publication_date>
+    <news:title>ISO 20022 dopo la migrazione: trasformare i dati di pagamento in prodotti bancari nel 2026</news:title>
+    <news:keywords>ISO 20022 2026, indirizzo strutturato, CBPR+, prodotti di dati di pagamento, codici scopo, tesoreria aziendale, riconciliazione, screening sanzioni, rilevamento frodi</news:keywords>
   </news:news>
 </url>
 <url>

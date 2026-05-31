@@ -6,25 +6,88 @@
     <description>Artiklar på svenska: tillämpad AI, ISO 20022-betalningar, postkvantkryptografi och transformationen av grossistbetalningar.</description>
     <atom:link href="https://sebastienrousseau.com/sv/rss.xml" rel="self" type="application/rss+xml"/>
     <language>sv-SE</language>
-    <lastBuildDate>Thu, 28 May 2026 08:31:08 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 10:06:33 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alla rättigheter förbehållna.</copyright>
     <item>
-      <title>Multi-rail-banken 2026: kort, A2A, stablecoins, RTP, FedNow och Open Banking i en strategi</title>
-      <link>https://sebastienrousseau.com/sv/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
-      <description>Multi-rail-banken 2026 orkestrerar kort, A2A, RTP, FedNow, stablecoins, Open Banking, plånböcker och ISO 20022-data per transaktion efter kostnad, hastighet, risk och finalitet.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Thu, 28 May 2026 08:31:08 +0000</pubDate>
+      <title>Postkvantinfrastruktur för betalningar: varför banker kan välja ersättning framför anpassning av äldre räls</title>
+      <link>https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>Postkvantkryptografi tvingar fram ett binärt val för betalningsräls: anpassa RSA/ECC inom SWIFT MT- och ISO 20022-kuvert som aldrig dimensionerats för ML-KEM och ML-DSA, eller ersätt med kryptoagil infrastruktur. Arkitekter måste välja innan HNDL blir operativ förlust.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Sun, 31 May 2026 10:06:33 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>multi-rail-bank 2026</category>
-      <category>A2A-betalningar</category>
-      <category>FedNow</category>
-      <category>RTP-nätverk</category>
-      <category>stablecoins</category>
-      <category>Open Banking</category>
-      <category>kort</category>
-      <category>betalningsorkestrering</category>
-      <category>ISO 20022</category>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>postkvantkryptografi</category>
+      <category>PQC-betalningar</category>
+      <category>kryptoagilitet</category>
+      <category>samla-nu-dekryptera-senare</category>
+      <category>HNDL</category>
+      <category>NIST postkvantstandarder</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>migration av betalningsräls</category>
+      <category>ISO 20022 PQC</category>
+      <category>ersättning av SWIFT MT</category>
+      <category>HSM</category>
+      <category>PKI-kollaps</category>
+      <category>operativ motståndskraft</category>
+      <category>Quantum Computing Cybersecurity Preparedness Act</category>
+    </item>
+    <item>
+      <title>Digitala tillgångar 2026: infrastrukturövergången bankerna inte kan skjuta upp</title>
+      <link>https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>Digitala tillgångar är inte längre en innovationssatsning. De är en arkitekturfråga för avveckling, förvaring och balansräkning. Bankernas strategiska uppgift är infrastrukturdesign under strukturell osäkerhet.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Sun, 31 May 2026 10:06:33 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>digitala tillgångar 2026</category>
+      <category>tokeniserade reala tillgångar</category>
+      <category>stablecoins bank</category>
+      <category>tokeniserade insättningar</category>
+      <category>förvaring digitala tillgångar</category>
+      <category>DLT bank</category>
+      <category>avvecklingsinfrastruktur</category>
+      <category>säkerhetsmobilitet</category>
+      <category>programmerbara pengar</category>
+      <category>bankstrategi digitala tillgångar</category>
+    </item>
+    <item>
+      <title>Digitala grossistmarknader i Storbritannien: tokeniserade gilts och avveckling</title>
+      <link>https://sebastienrousseau.com/sv/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
+      <description>Storbritanniens Wholesale Digital Markets Champion gör tokeniserade gilts och DLT-avveckling till ett nationellt konkurrenskraftsprojekt 2026.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>digitala grossistmarknader Storbritannien 2026</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>tokeniserade gilts</category>
+      <category>tokeniserad grossistfinansiering</category>
+      <category>DSS</category>
+      <category>intradagsrepo</category>
+      <category>atomär DvP</category>
+      <category>City i London</category>
+      <category>avveckling</category>
+    </item>
+    <item>
+      <title>ISO 20022 efter migreringen: betaldata som bankprodukter 2026</title>
+      <link>https://sebastienrousseau.com/sv/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 efter migreringen är en möjlighet för betaldata-produkter. Strukturerade adresser, ändamålskoder, fakturadetaljer, utredningsmeddelanden och rikare statushändelser kan bli produkter för avstämning, bedrägeri, likviditet, regelefterlevnad och analys.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>strukturerad adress</category>
+      <category>CBPR+</category>
+      <category>betaldata-produkter</category>
+      <category>ändamålskoder</category>
+      <category>företagskassör</category>
+      <category>avstämning</category>
+      <category>sanktionsscreening</category>
+      <category>bedrägeridetektering</category>
     </item>
     <item>
       <title>DORA, EU:s AI-förordning och datasuveränitet: bankernas efterlevnadsstack 2026</title>
@@ -49,7 +112,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
       <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
       <category>AI-betalningar 2026</category>
       <category>betalningsbedrägeri</category>
       <category>betalningsroutning</category>

@@ -6,25 +6,89 @@
     <description>हिन्दी लेख: व्यावहारिक AI, ISO 20022 भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतान का रूपांतरण।</description>
     <atom:link href="https://sebastienrousseau.com/hi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>hi-IN</language>
-    <lastBuildDate>Thu, 28 May 2026 08:31:08 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 10:06:33 +0000</lastBuildDate>
     <copyright>© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।</copyright>
     <item>
-      <title>2026 का मल्टी-रेल बैंक: कार्ड, A2A, स्टेबलकॉइन, RTP, FedNow और Open Banking एक रणनीति में</title>
-      <link>https://sebastienrousseau.com/hi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
-      <description>2026 का मल्टी-रेल बैंक एक ही भुगतान भविष्य नहीं चुनता; वह कार्ड, A2A, RTP, FedNow, स्टेबलकॉइन, Open Banking, वॉलेट और ISO 20022 डेटा को लागत, गति, जोखिम, अंतिमता और ग्राहक संदर्भ के अनुसार ऑर्केस्ट्रेट करता है।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <title>पोस्ट-क्वांटम भुगतान बुनियादी ढाँचा: बैंक विरासत रेलों का अनुकूलन क्यों नहीं, प्रतिस्थापन क्यों कर सकते हैं</title>
+      <link>https://sebastienrousseau.com/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>पोस्ट-क्वांटम क्रिप्टोग्राफी भुगतान रेलों पर बाइनरी विकल्प थोपती है: SWIFT MT और ISO 20022 आवरणों में RSA/ECC का अनुकूलन, या क्रिप्टो-चपल बुनियादी ढाँचे से प्रतिस्थापन। आर्किटेक्ट्स को HNDL नुकसान बनने से पहले तय करना होगा।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Sun, 31 May 2026 10:06:33 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>मल्टी-रेल बैंक 2026</category>
-      <category>A2A भुगतान</category>
-      <category>FedNow</category>
-      <category>RTP नेटवर्क</category>
-      <category>स्टेबलकॉइन</category>
-      <category>Open Banking</category>
-      <category>कार्ड</category>
-      <category>भुगतान ऑर्केस्ट्रेशन</category>
-      <category>ISO 20022</category>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>पोस्ट-क्वांटम क्रिप्टोग्राफी</category>
+      <category>PQC भुगतान</category>
+      <category>क्रिप्टो-चपलता</category>
+      <category>अभी-संग्रह-बाद-में-डिक्रिप्ट</category>
+      <category>HNDL</category>
+      <category>NIST पोस्ट-क्वांटम मानक</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>भुगतान रेल माइग्रेशन</category>
+      <category>ISO 20022 PQC</category>
+      <category>SWIFT MT प्रतिस्थापन</category>
+      <category>HSM</category>
+      <category>PKI पतन</category>
+      <category>परिचालन लचीलापन</category>
+      <category>Quantum Computing Cybersecurity Preparedness Act</category>
+    </item>
+    <item>
+      <title>यूके के थोक डिजिटल बाजार: टोकनीकृत गिल्ट्स, निपटान एवं नया चैम्पियन पद</title>
+      <link>https://sebastienrousseau.com/hi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
+      <description>यूके का Wholesale Digital Markets Champion पद टोकनीकृत थोक वित्त को राष्ट्रीय प्रतिस्पर्धात्मकता परियोजना बनाता है — गिल्ट्स, निपटान, साक्ष्य।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
+      <pubDate>Sun, 31 May 2026 10:06:33 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>थोक डिजिटल बाजार 2026</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>UK gilts</category>
+      <category>टोकनीकृत गिल्ट्स</category>
+      <category>DLT निपटान</category>
+      <category>BoE DSS</category>
+      <category>Project Guardian</category>
+      <category>SDX</category>
+      <category>Project Agorá</category>
+      <category>City of London</category>
+    </item>
+    <item>
+      <title>डिजिटल संपत्तियाँ 2026: बैंक जिसे टाल नहीं सकते वह अवसंरचना संक्रमण</title>
+      <link>https://sebastienrousseau.com/hi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>डिजिटल संपत्तियाँ अब नवाचार दांव नहीं रहीं। यह निपटान, कस्टडी और बैलेंस शीट की संरचनात्मक प्रश्न है। बैंकों का रणनीतिक कार्य संरचनात्मक अनिश्चितता के बीच अवसंरचना डिज़ाइन करना है।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Sun, 31 May 2026 10:06:33 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>डिजिटल संपत्तियाँ 2026</category>
+      <category>टोकनाइज़्ड रियल-वर्ल्ड एसेट्स</category>
+      <category>स्टेबलकॉइन्स बैंकिंग</category>
+      <category>टोकनाइज़्ड जमा</category>
+      <category>डिजिटल संपत्ति कस्टडी</category>
+      <category>DLT बैंकिंग</category>
+      <category>निपटान अवसंरचना</category>
+      <category>संपार्श्विक गतिशीलता</category>
+      <category>प्रोग्राम-योग्य मुद्रा</category>
+      <category>बैंक रणनीति डिजिटल संपत्तियाँ</category>
+    </item>
+    <item>
+      <title>ISO 20022 माइग्रेशन के बाद: भुगतान डेटा को 2026 में बैंकिंग उत्पादों में बदलना</title>
+      <link>https://sebastienrousseau.com/hi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 माइग्रेशन के बाद डेटा उत्पाद अवसर है। संरचित पते, उद्देश्य कोड, चालान विवरण और समृद्ध स्थिति घटनाएँ मिलान, धोखाधड़ी, तरलता और अनुपालन उत्पाद बनती हैं।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>संरचित पता</category>
+      <category>CBPR+</category>
+      <category>भुगतान डेटा उत्पाद</category>
+      <category>उद्देश्य कोड</category>
+      <category>कॉर्पोरेट ट्रेज़री</category>
+      <category>मिलान</category>
+      <category>प्रतिबंध स्क्रीनिंग</category>
+      <category>धोखाधड़ी पहचान</category>
     </item>
     <item>
       <title>DORA, EU AI अधिनियम और डेटा संप्रभुता: बैंकों का 2026 अनुपालन स्टैक</title>
@@ -49,7 +113,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
       <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
       <category>AI भुगतान 2026</category>
       <category>भुगतान धोखाधड़ी</category>
       <category>भुगतान रूटिंग</category>

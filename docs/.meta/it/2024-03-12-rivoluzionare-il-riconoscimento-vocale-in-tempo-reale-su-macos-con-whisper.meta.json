@@ -1,11 +1,11 @@
 {
+  "date": "March 12, 2024",
+  "description": "Un sistema di trascrizione vocale in tempo reale che sfrutta OpenAI Whisper e l'accelerazione GPU Metal Performance Shaders su macOS per ottenere latenze sub-secondo a 8-12× il tempo reale su M1 Max.",
   "title": "Rivoluzionare il riconoscimento vocale in tempo reale su macOS con OpenAI Whisper",
   "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
-  "date": "March 12, 2024",
-  "keywords": "Whisper, OpenAI, macOS, MPS, Metal, riconoscimento vocale, tempo reale, M1, accelerazione GPU",
-  "locale": "it_IT",
   "banner_alt": "Riconoscimento vocale in tempo reale con Whisper su macOS",
-  "subtitle": "Latenza sub-secondo a 8-12× il tempo reale su M1 Max grazie a Metal Performance Shaders",
   "language": "it-IT",
-  "description": "Un sistema di trascrizione vocale in tempo reale che sfrutta OpenAI Whisper e l'accelerazione GPU Metal Performance Shaders su macOS per ottenere latenze sub-secondo a 8-12× il tempo reale su M1 Max."
+  "locale": "it_IT",
+  "keywords": "Whisper, OpenAI, macOS, MPS, Metal, riconoscimento vocale, tempo reale, M1, accelerazione GPU",
+  "subtitle": "Latenza sub-secondo a 8-12× il tempo reale su M1 Max grazie a Metal Performance Shaders"
 }

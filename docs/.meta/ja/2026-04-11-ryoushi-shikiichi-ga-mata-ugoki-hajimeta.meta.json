@@ -1,12 +1,12 @@
 {
+  "subtitle": "Shor のアルゴリズムは 10,000 量子ビットで実行できる可能性 —— 暗号的に有意な量子計算の閾値は、ほとんどの予想より速く低下しています",
   "last_reviewed": "2026-05-11",
   "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
-  "keywords": "Shor のアルゴリズム, 量子ビット, 量子計算, ECC, RSA-2048, 再構成可能中性原子, エラー訂正コード, CRYSTALS-Kyber, CRYSTALS-Dilithium, PQC, ポスト量子暗号",
-  "description": "新しい論文は、Shor のアルゴリズムが 10,000 量子ビット程度で動作する可能性を示唆しています。暗号的に有意な量子計算の閾値は急速に低下しています。",
-  "banner_alt": "Shor のアルゴリズムの量子ビット閾値の図式。青い反射のある量子計算回路基板",
-  "subtitle": "Shor のアルゴリズムは 10,000 量子ビットで実行できる可能性 —— 暗号的に有意な量子計算の閾値は、ほとんどの予想より速く低下しています",
   "locale": "ja_JP",
+  "keywords": "Shor のアルゴリズム, 量子ビット, 量子計算, ECC, RSA-2048, 再構成可能中性原子, エラー訂正コード, CRYSTALS-Kyber, CRYSTALS-Dilithium, PQC, ポスト量子暗号",
+  "date": "April 11, 2026",
+  "banner_alt": "Shor のアルゴリズムの量子ビット閾値の図式。青い反射のある量子計算回路基板",
   "language": "ja-JP",
-  "title": "量子閾値が再び動き始めた",
-  "date": "April 11, 2026"
+  "description": "新しい論文は、Shor のアルゴリズムが 10,000 量子ビット程度で動作する可能性を示唆しています。暗号的に有意な量子計算の閾値は急速に低下しています。",
+  "title": "量子閾値が再び動き始めた"
 }

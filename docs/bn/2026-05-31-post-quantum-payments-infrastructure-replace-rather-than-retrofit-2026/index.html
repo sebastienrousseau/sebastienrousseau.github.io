@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="bn-BD">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Sun, 31 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Sun, 31 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>পোস্ট-কোয়ান্টাম পেমেন্ট পরিকাঠামো: কেন ব্যাংক লিগ্যাসি রেল অভিযোজন না করে প্রতিস্থাপন করতে পারে — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি পেমেন্ট রেলে দুটি পথ রাখে: SWIFT MT ও ISO 20022 এনভেলপে RSA/ECC অভিযোজন, অথবা ক্রিপ্টো-চটপটে পরিকাঠামোয় প্রতিস্থাপন। HNDL অপারেশনাল ক্ষতি হওয়ার আগেই স্থপতিদের সিদ্ধান্ত নিতে হবে।">
+<meta name="keywords" content="পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, PQC পেমেন্ট, ক্রিপ্টো-চটপটে, এখন-সংগ্রহ-পরে-ডিক্রিপ্ট, HNDL, NIST পোস্ট-কোয়ান্টাম মান, ML-KEM, ML-DSA, FIPS 203, FIPS 204, পেমেন্ট রেল মাইগ্রেশন, ISO 20022 PQC, SWIFT MT প্রতিস্থাপন, HSM, PKI ভাঙন, অপারেশনাল স্থিতিস্থাপকতা, Quantum Computing Cybersecurity Preparedness Act">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PQC Payments 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-+L3xjIiPONs1J4FbBRuykdhK/aZz8iFhVxL6iw3u/74=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-BzXjrb7CfGFAbRAUNJ3tjHmC8Z7asJrZwt9p8hNtslg=' 'sha256-GwfUjccuaVsLsK2SUpMpfJ17nzqfBph/zT3mPtGlkIA=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-d1HzCPRPSZMdSWX8y39pUZ7dNehPRqABMASedtw4Xno=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/bn/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom ফিড" href="/bn/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="পোস্ট-কোয়ান্টাম পেমেন্ট পরিকাঠামো: কেন ব্যাংক লিগ্যাসি রেল অভিযোজন না করে প্রতিস্থাপন করতে পারে — Sebastien Rousseau">
+<meta property="og:description" content="পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি পেমেন্ট রেলে দুটি পথ রাখে: SWIFT MT ও ISO 20022 এনভেলপে RSA/ECC অভিযোজন, অথবা ক্রিপ্টো-চটপটে পরিকাঠামোয় প্রতিস্থাপন। HNDL অপারেশনাল ক্ষতি হওয়ার আগেই স্থপতিদের সিদ্ধান্ত নিতে হবে।">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="bn_BD">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="পোস্ট-কোয়ান্টাম পেমেন্ট পরিকাঠামো: কেন ব্যাংক লিগ্যাসি রেল অভিযোজন না করে প্রতিস্থাপন করতে পারে — Sebastien Rousseau">
+<meta name="twitter:description" content="পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি পেমেন্ট রেলে দুটি পথ রাখে: SWIFT MT ও ISO 20022 এনভেলপে RSA/ECC অভিযোজন, অথবা ক্রিপ্টো-চটপটে পরিকাঠামোয় প্রতিস্থাপন। HNDL অপারেশনাল ক্ষতি হওয়ার আগেই স্থপতিদের সিদ্ধান্ত নিতে হবে।">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-31-post-quantique-paiements-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-31-post-quantum-zahlungsverkehr-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-31-post-quantum-pagos-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-31-post-quantum-pagamentos-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">মূল কনটেন্টে যান</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="নেভিগেশন টগল করুন" />
+      <div class="wrap">
+        <a class="ap-brand" href="/bn/index.html" aria-label="Sebastien Rousseau হোম">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="প্রধান নেভিগেশন">
+          <ul class="ap-menu">
+            <li><a href="/bn/amader-shomporke/index.html">About</a></li>
+            <li><a href="/bn/prabondho/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/bn/prokashana/index.html">Papers</a></li>
+            <li><a href="/bn/bishay/index.html">বিষয়</a></li>
+            <li><a href="/bn/prokolpo/index.html">Projects</a></li>
+            <li><a href="/bn/playlist/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="ডার্ক থিম চালু করুন" aria-pressed="false" title="থিম পরিবর্তন করুন">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="অনুসন্ধান (Cmd বা Ctrl + K)" title="অনুসন্ধান (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="ভাষা">
+            <button type="button" class="ap-lang-toggle" aria-label="BN, ভাষা পরিবর্তন" aria-expanded="false" aria-haspopup="menu" title="ভাষা পরিবর্তন">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">BN</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-05-31-post-quantique-paiements-infrastructure-replace-rather-than-retrofit-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-05-31-post-quantum-zahlungsverkehr-infrastructure-replace-rather-than-retrofit-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-05-31-post-quantum-pagos-infrastructure-replace-rather-than-retrofit-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-05-31-post-quantum-pagamentos-infrastructure-replace-rather-than-retrofit-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/bn/jogajog/index.html" aria-label="যোগাযোগ">যোগাযোগ ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="নেভিগেশন টগল করুন">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>পোস্ট-কোয়ান্টাম পেমেন্ট পরিকাঠামো: কেন ব্যাংক লিগ্যাসি রেল অভিযোজন না করে প্রতিস্থাপন করতে পারে</h1>
+      <p class="sub">ML-KEM ও ML-DSA সেই রেলে পরিষ্কারভাবে বসে না যা SWIFT MT ও ISO 20022 বহন করে। সৎ প্রকৌশল উত্তর হলো অভিযোজন একটি স্বল্প-মেয়াদি নিয়ন্ত্রিত মাইগ্রেশন পরিকল্পনা, আর প্রতিস্থাপনই একমাত্র স্থিতিশীল গন্তব্য।</p>
+    <nav class="article-tags" aria-label="বিষয়"><a href="/tags/index.html#h3-" class="article-tag" rel="tag">পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি</a><a href="/tags/index.html#h3-pqc" class="article-tag" rel="tag">PQC পেমেন্ট</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">ক্রিপ্টো-চটপটে</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">এখন-সংগ্রহ-পরে-ডিক্রিপ্ট</a><a href="/tags/index.html#h3-hndl" class="article-tag" rel="tag">HNDL</a><a href="/tags/index.html#h3-nist" class="article-tag" rel="tag">NIST পোস্ট-কোয়ান্টাম মান</a><a href="/tags/index.html#h3-ml-kem" class="article-tag" rel="tag">ML-KEM</a><a href="/tags/index.html#h3-ml-dsa" class="article-tag" rel="tag">ML-DSA</a><a href="/tags/index.html#h3-fips-203" class="article-tag" rel="tag">FIPS 203</a><a href="/tags/index.html#h3-fips-204" class="article-tag" rel="tag">FIPS 204</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">পেমেন্ট রেল মাইগ্রেশন</a><a href="/tags/index.html#h3-iso-20022-pqc" class="article-tag" rel="tag">ISO 20022 PQC</a><a href="/tags/index.html#h3-swift-mt" class="article-tag" rel="tag">SWIFT MT প্রতিস্থাপন</a><a href="/tags/index.html#h3-hsm" class="article-tag" rel="tag">HSM</a><a href="/tags/index.html#h3-pki" class="article-tag" rel="tag">PKI ভাঙন</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">অপারেশনাল স্থিতিস্থাপকতা</a><a href="/tags/index.html#h3-quantum-computing-cybersecurity-preparedness-act" class="article-tag" rel="tag">Quantum Computing Cybersecurity Preparedness Act</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-31T06:06:06+00:00" class="meta-pub">প্রকাশিত 31 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="আনুমানিক পঠন সময়">10 মিনিট পঠন</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>বিষয়বস্তু</h2><ol><li><a href="#section-1">এখন সংগ্রহ, পরে ডিক্রিপ্ট: যে হুমকি মডেল অপেক্ষার বিকল্প তুলে নেয়</a></li><li><a href="#section-2">আকার সমস্যাই প্রকৌশল সমস্যা</a></li><li><a href="#section-3">অভিযোজন বনাম প্রতিস্থাপন: যে সিদ্ধান্ত কর্মসূচি নির্ধারণ করে</a></li><li><a href="#section-4">ক্রিপ্টো-চটপটে স্থাপত্য, স্তরে স্তরে</a></li><li><a href="#section-5">এর অর্থ ব্যাংক ধরন অনুসারে</a></li><li><a href="#section-10">এরপর কী ঘটবে</a></li><li><a href="#section-11">প্রায়শ জিজ্ঞাসিত প্রশ্ন</a></li><li><a href="#section-12">তথ্যসূত্র</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি পেমেন্ট রেলে দুটি পথ রাখে: SWIFT MT ও ISO 20022 এনভেলপে RSA/ECC অভিযোজন, অথবা ক্রিপ্টো-চটপটে পরিকাঠামোয় প্রতিস্থাপন। HNDL অপারেশনাল ক্ষতি হওয়ার আগেই স্থপতিদের সিদ্ধান্ত নিতে হবে।</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>এখন সংগ্রহ, পরে ডিক্রিপ্ট: যে হুমকি মডেল অপেক্ষার বিকল্প তুলে নেয়.</strong> HNDL স্বাভাবিক ক্রিপ্টোগ্রাফিক সময়রেখাকে উল্টে দেয়। প্রচলিত ঝুঁকি মূল্যায়ন প্রশ্ন করে হুমকি কখন বাস্তবায়িত হবে। HNDL প্রশ্ন করে আজ ধরা পড়া তথ্য প্রতিপক্ষের কাছে কখন কাজের হয়ে উঠবে। পেমেন্ট বার্তার ক্ষেত্রে —…</li>  <li><strong>আকার সমস্যাই প্রকৌশল সমস্যা.</strong> PQC মাইগ্রেশন নিয়ে সর্বজনীন আলোচনা সাধারণত অ্যালগরিদম নির্বাচনের দিকে ঝোঁকে। কঠিন সমস্যা মাত্রিক।.</li>  <li><strong>অভিযোজন বনাম প্রতিস্থাপন: যে সিদ্ধান্ত কর্মসূচি নির্ধারণ করে.</strong> সৎ চিত্র হলো অভিযোজন একটি স্বল্প-মেয়াদি নিয়ন্ত্রিত মাইগ্রেশন পরিকল্পনা, আর প্রতিস্থাপনই একমাত্র স্থিতিশীল গন্তব্য। সিদ্ধান্ত হলো ব্যাংক কোনটিতে আগে অর্থায়ন করে, এবং স্থায়ী জোড়াতালিতে পরিণত হওয়ার আগে অভিযোজনের…</li>  <li><strong>ক্রিপ্টো-চটপটে স্থাপত্য, স্তরে স্তরে.</strong> PQC মাইগ্রেশনে গুরুত্বপূর্ণ পরিকাঠামো স্তর &quot;তথ্য, নিয়ন্ত্রণ, অর্থনীতি&quot; নামক সাধারণ ব্যাংকিং স্তর নয়। গুরুত্বপূর্ণ স্তরগুলি ক্রিপ্টোগ্রাফিক।.</li></ul></aside><h1>পোস্ট-কোয়ান্টাম পেমেন্ট পরিকাঠামো: কেন ব্যাংক লিগ্যাসি রেল অভিযোজন না করে প্রতিস্থাপন করতে পারে</h1>
+<!-- lead-start -->
+<!-- lead-start: manual -->
+
+<!-- lead-end -->
+<p>আজ উৎপাদনে প্রতিটি পাইকারি পেমেন্ট প্রমাণীকরণকারী ক্রিপ্টোগ্রাফিক প্রিমিটিভ — RSA, ECDSA, ECDH — একটি মেয়াদ-শেষের তারিখ বহন করে। মার্কিন <a href="https://www.congress.gov/bill/117th-congress/house-bill/7535/text" title="H.R. 7535">Quantum Computing Cybersecurity Preparedness Act ⧉</a> ২০২২ সালের শেষে সেই মেয়াদকে ফেডারেল ক্রয় আইনে লিখে দিয়েছে। <a href="https://www.bis.org/publ/work1208.htm" title="Project Leap: Quantum-proofing the financial system">BIS Working Paper No. 1208 ⧉</a> কেন্দ্রীয় ব্যাংকের তত্ত্বাবধান কাঠামোয় একই মেয়াদ স্থাপন করেছে। <a href="https://csrc.nist.gov/pubs/fips/203/final" title="Module-Lattice-Based Key-Encapsulation Mechanism Standard">NIST FIPS 203 ⧉</a> ও <a href="https://csrc.nist.gov/pubs/fips/204/final" title="Module-Lattice-Based Digital Signature Standard">FIPS 204 ⧉</a> ২০২৪ সালের অগস্টে প্রতিস্থাপনগুলি প্রকাশ করেছে।</p>
+<p>পেমেন্ট পরিকাঠামো এর অর্থ এখনো শোষণ করেনি।</p>
+<p>এই নিবন্ধ অভিযোজনের পরিবর্তে প্রতিস্থাপনের প্রকৌশল যুক্তি। এটি সেই স্থপতিদের জন্য, যাঁরা অ্যালগরিদম ইতিমধ্যেই বোঝেন এবং SWIFT MT, ISO 20022 pacs ও pain বার্তা, RTGS ইন্টারফেস, HSM এস্টেট ও তার নিচের শংসাপত্র শ্রেণিবিন্যাস নিয়ে সিদ্ধান্ত নিতে চান।</p>
+<hr />
+<blockquote>
+<p><strong>নির্বাহী সারসংক্ষেপ / মূল বিষয়</strong></p>
+<ul>
+<li><strong>এখন-সংগ্রহ-পরে-ডিক্রিপ্ট (HNDL) হলো অপারেশনাল হুমকি।</strong> প্রতিপক্ষ ২০২৬-এ এনক্রিপ্ট করা পেমেন্ট ট্র্যাফিক রেকর্ড করছে, যাতে ক্রিপ্টোএনালিটিক্যালি প্রাসঙ্গিক কোয়ান্টাম কম্পিউটার (CRQC) আসার পর ডিক্রিপ্ট করা যায়। ধরা পড়া ট্র্যাফিকে রয়েছে নিষ্পত্তি নির্দেশ, সুবিধাভোগী তথ্য ও দীর্ঘমেয়াদি সংবেদনশীল প্রমাণীকরণ উপাদান।</li>
+<li><strong>NIST প্রতিস্থাপন মানক করেছে।</strong> কী এনক্যাপসুলেশনের জন্য ML-KEM (FIPS 203) ও ডিজিটাল স্বাক্ষরের জন্য ML-DSA (FIPS 204) ডিফল্ট। SLH-DSA (FIPS 205) স্টেটলেস হ্যাশ-ভিত্তিক ফলব্যাক হিসেবে রয়েছে।</li>
+<li><strong>আকার-পার্থক্য লিগ্যাসি অনুমান ভাঙে।</strong> পাবলিক কী ও স্বাক্ষর RSA-2048 সমতুল্যের চেয়ে ৫–২০× বড়। সেটি পেমেন্ট নেটওয়ার্কে MTU, MT বার্তা হ্যান্ডলারে স্থির-বাফার অনুমান ও স্থাপিত HSM বহরের ক্রিপ্টোগ্রাফিক থ্রুপুটের সঙ্গে সংঘর্ষে পড়ে।</li>
+<li><strong>হাইব্রিড (ক্ল্যাসিকাল + PQC) মাইগ্রেশন বাহন, গন্তব্য নয়।</strong> হাইব্রিড TLS ও হাইব্রিড X.509 প্রোডাকশন রেল প্রতিস্থাপনের সময় দুই থেকে তিন বছর আন্তঃকার্যকারিতা কেনে। মূল ধারণক্ষমতা সমস্যা সমাধান করে না।</li>
+<li><strong>PKI হলো লোড-বহনকারী দেয়াল।</strong> যে শংসাপত্র কর্তৃপক্ষের স্বাক্ষর অ্যালগরিদম জালিযোগ্য হয়ে যায়, তার নিচের প্রতিটি শংসাপত্র অবৈধ হয়। ব্যাংকের প্রাতিষ্ঠানিক এক্সপোজার একক এন্ডপয়েন্ট নয়, বিশ্বাসের চেইন।</li>
+<li><strong>ক্রিপ্টো-চটপটে সেই স্থাপত্য ধর্ম যার জন্য নকশা করতে হয়।</strong> অ্যালগরিদম শনাক্তকারী, কী ফরম্যাট, স্বাক্ষর এনভেলপ ও HSM পার্টিশন — সব প্যারামিটারযোগ্য হতে হবে। কম্পাইল-সময়ে RSA-র সঙ্গে স্থির করা সব কিছু এমন প্রযুক্তিগত ঋণ, যা একসঙ্গে দাবি হয়ে আসবে।</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="section-1">এখন সংগ্রহ, পরে ডিক্রিপ্ট: যে হুমকি মডেল অপেক্ষার বিকল্প তুলে নেয় <a class="heading-anchor" href="#section-1" aria-label="লিঙ্ক এখন সংগ্রহ, পরে ডিক্রিপ্ট: যে হুমকি মডেল অপেক্ষার বিকল্প তুলে নেয়">#</a></h2>
+<p>HNDL স্বাভাবিক ক্রিপ্টোগ্রাফিক সময়রেখাকে উল্টে দেয়। প্রচলিত ঝুঁকি মূল্যায়ন প্রশ্ন করে হুমকি কখন বাস্তবায়িত হবে। HNDL প্রশ্ন করে আজ ধরা পড়া তথ্য প্রতিপক্ষের কাছে কখন কাজের হয়ে উঠবে। পেমেন্ট বার্তার ক্ষেত্রে — সুবিধাভোগী পরিচয়, অ্যাকাউন্ট নম্বর, কাঠামোগত রেমিট্যান্স তথ্য, নিষেধাজ্ঞা স্ক্রিনিং পেলোড, অন্তঃব্যাংক নিষ্পত্তি নির্দেশ — সংবেদনশীলতার জানালা বছর থেকে দশকের। সেই ট্র্যাফিকের অধিকাংশই এখনই কোথাও না কোথাও রেকর্ড হচ্ছে।</p>
+<p><a href="https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF" title="Commercial National Security Algorithm Suite 2.0">NSA-র CNSA 2.0 সময়রেখা ⧉</a> জাতীয়-নিরাপত্তা ব্যবস্থাকে ২০৩৫ পর্যন্ত সময় দেয়। আর্থিক তত্ত্বাবধায়করা দ্রুত সময়সূচিতে চলছেন — <a href="https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services" title="PRA SS1/21">PRA-র অপারেশনাল স্থিতিস্থাপকতার প্রত্যাশা ⧉</a> ক্রিপ্টোগ্রাফিক চটপটিতাকে তৃতীয়-পক্ষ ঘনত্ব ঝুঁকি হিসেবে গণ্য করে। ২০২৬-এ প্রত্যাশা হলো গুরুত্বপূর্ণ পেমেন্ট রেল তাদের স্থিতিস্থাপকতা স্ব-প্রমাণনে PQC মাইগ্রেশন পরিকল্পনা প্রকাশ করবে।</p>
+<p>HNDL প্রতিপক্ষের আজ CRQC লাগে না। যা লাগে:</p>
+<ol>
+<li><strong>নেটওয়ার্ক অবস্থান।</strong> সাবমেরিন-কেবল ট্যাপ, ISP-স্তরের ক্যাপচার ও আপোসকৃত মিডলবক্স — সবই পরিধির মধ্যে। পাইকারি পেমেন্ট ট্র্যাফিক অল্পসংখ্যক নেটওয়ার্ক পথের মাধ্যমে ঘনীভূত হয়।</li>
+<li><strong>স্টোরেজ।</strong> ২০২৬-এ এক পেটাবাইট কাঠামোগত পেমেন্ট তথ্য একটি পরিচালনযোগ্য আর্কাইভ।</li>
+<li><strong>ধৈর্য।</strong> প্রতি বার্তা ক্যাপচার করতে কোনো খরচ নেই। ফলন পরে আসে।</li>
+</ol>
+<p>মাইগ্রেশন যুক্তি তাই &quot;কোয়ান্টাম কম্পিউটার ২০৩৫-এ আসতে পারে&quot; নয়। যুক্তিটি হলো &quot;আজ রাতে RSA-2048 কী এক্সচেঞ্জ দিয়ে সম্পন্ন হওয়া যেকোনো TLS সেশন ততদিন উন্মুক্ত, যতদিন তার ভেতরের তথ্য সংবেদনশীল থাকে।&quot;</p>
+<h2 id="section-2">আকার সমস্যাই প্রকৌশল সমস্যা <a class="heading-anchor" href="#section-2" aria-label="লিঙ্ক আকার সমস্যাই প্রকৌশল সমস্যা">#</a></h2>
+<p>PQC মাইগ্রেশন নিয়ে সর্বজনীন আলোচনা সাধারণত অ্যালগরিদম নির্বাচনের দিকে ঝোঁকে। কঠিন সমস্যা মাত্রিক।</p>
+<table>
+<thead>
+<tr>
+<th>প্রিমিটিভ</th>
+<th>পাবলিক কী</th>
+<th>স্বাক্ষর / সাইফারটেক্সট</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RSA-2048</td>
+<td>২৫৬ বাইট</td>
+<td>২৫৬ বাইট (স্বাক্ষর)</td>
+</tr>
+<tr>
+<td>ECDSA P-256</td>
+<td>৬৪ বাইট</td>
+<td>৬৪ বাইট (স্বাক্ষর)</td>
+</tr>
+<tr>
+<td>ML-KEM-768</td>
+<td><strong>১,১৮৪ বাইট</strong></td>
+<td><strong>১,০৮৮ বাইট (সাইফারটেক্সট)</strong></td>
+</tr>
+<tr>
+<td>ML-DSA-65</td>
+<td><strong>১,৯৫২ বাইট</strong></td>
+<td><strong>৩,৩০৯ বাইট (স্বাক্ষর)</strong></td>
+</tr>
+<tr>
+<td>SLH-DSA-128f</td>
+<td>৩২ বাইট</td>
+<td><strong>১৭,০৮৮ বাইট (স্বাক্ষর)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>এই সংখ্যাগুলি সরাসরি সেই ব্যর্থতা-রূপগুলির সঙ্গে মিলে যায়, যেগুলির জন্য লিগ্যাসি পেমেন্ট পরিকাঠামো কখনো নকশা করা হয়নি:</p>
+<ul>
+<li><strong>পথে প্যাকেট খণ্ডিতকরণ।</strong> হাইব্রিড ML-KEM-768 ও ক্ল্যাসিকাল X25519 বহনকারী ClientHello সাধারণ ১,৫০০-বাইট ইথারনেট MTU অতিক্রম করে। দুই পেমেন্ট এন্ডপয়েন্টের মধ্যবর্তী মিডলবক্স খণ্ডিত করে, ফেলে দেয় অথবা হ্যান্ডশেক পুনর্লিখন করে। ব্যর্থতা ক্ষণস্থায়ী নেটওয়ার্ক গোলমালের মতো দেখায় বিরতিহীন TLS ত্রুটি হিসেবে।</li>
+<li><strong>MT হ্যান্ডলারে বাফার অনুমান।</strong> বহু SWIFT MT ইন্টিগ্রেশন ECDSA-র জন্য আকারিত স্বাক্ষরিত এনভেলপ বহন করে। একই এনভেলপে ML-DSA স্বাক্ষর ঢোকালে পার্সার হয় ছেঁটে ফেলে, না হয় প্রত্যাখ্যান করে।</li>
+<li><strong>HSM থ্রুপুট।</strong> স্থাপিত HSM বহরে ML-DSA স্বাক্ষরন প্রতি অপারেশনে ECDSA-র চেয়ে ৩–১০× ধীর, এমন হার্ডওয়্যারে যার প্রতি-সেকেন্ড কী বাজেট ইতিমধ্যেই দিনশেষ ব্যাচ জানালায় উত্তপ্ত।</li>
+<li><strong>শংসাপত্র চেইন ওজন।</strong> ML-DSA স্বাক্ষর দিয়ে পুনঃইস্যু করা চার-স্তরের CA শ্রেণিবিন্যাস প্রায় ৬ KB থেকে প্রায় ৬০ KB-তে বাড়ে। রেলে প্রতিটি TLS হ্যান্ডশেক সেই দাম দেয়।</li>
+</ul>
+<p>অভিযোজন পথ হলো এই সীমাবদ্ধতাগুলি আলাদা আলাদা সামলানো — এক জায়গায় বড় বাফার, আরেক জায়গায় দ্রুততর HSM, মিডলবক্সে খণ্ডিতকরণ সহনশীলতা। এটি ছয় মাসের যৌক্তিক সেতু। স্থাপত্য নয়।</p>
+<h2 id="section-3">অভিযোজন বনাম প্রতিস্থাপন: যে সিদ্ধান্ত কর্মসূচি নির্ধারণ করে <a class="heading-anchor" href="#section-3" aria-label="লিঙ্ক অভিযোজন বনাম প্রতিস্থাপন: যে সিদ্ধান্ত কর্মসূচি নির্ধারণ করে">#</a></h2>
+<p>সৎ চিত্র হলো অভিযোজন একটি স্বল্প-মেয়াদি নিয়ন্ত্রিত মাইগ্রেশন পরিকল্পনা, আর প্রতিস্থাপনই একমাত্র স্থিতিশীল গন্তব্য। সিদ্ধান্ত হলো ব্যাংক কোনটিতে আগে অর্থায়ন করে, এবং স্থায়ী জোড়াতালিতে পরিণত হওয়ার আগে অভিযোজনের জানালা কত দিন খোলা থাকে।</p>
+<p>অভিযোজন মানে:</p>
+<ul>
+<li>বিদ্যমান রেল সীমানায় সমাপ্ত হাইব্রিড TLS (ML-KEM + X25519)।</li>
+<li>PQC-সক্ষম অধস্তন CA থেকে ইস্যু করা দ্বৈত-স্বাক্ষরিত শংসাপত্র (প্রাথমিক RSA, দ্বিতীয় ML-DSA)।</li>
+<li>পেমেন্ট VPN-এ বড় MT বাফার ও কঠোর MTU নীতি।</li>
+<li>বিক্রেতা যেখানে PQC প্রিমিটিভ সমর্থন করে সেখানে HSM ফার্মওয়্যার আপডেট; যেখানে করে না সেখানে পূর্ণ HSM প্রতিস্থাপন।</li>
+</ul>
+<p>এই কাজ করা যায়। মূল সমস্যা এতে সমাধান হয় না — SWIFT MT ও বহু ISO 20022 বাস্তবায়ন ক্রিপ্টোগ্রাফিক এনভেলপকে এমন বার্তা ফরম্যাটের ভেতর এনকোড করে যা অ্যালগরিদমকে স্থির করে রাখে। পরবর্তী অ্যালগরিদম পরিবর্তন — যা ঘটবেই, যখন ML-KEM কোনো দুর্বলতা দেখাবে বা নতুন মান এসে স্থলাভিষিক্ত হবে — একই রেলে একই মাইগ্রেশন আবার চালায়।</p>
+<p>প্রতিস্থাপন মানে স্বীকার করা যে ক্রিপ্টোগ্রাফিক স্তর বার্তা ফরম্যাটের ধর্ম নয়। এটি একটি পৃথকযোগ্য এনভেলপ পরিষেবার ধর্ম, যাকে বার্তা ফরম্যাট ডাকে। বাস্তবে:</p>
+<ul>
+<li>ট্রান্সপোর্ট নিরাপত্তা সীমা একটি সার্ভিস মেশ বা সাইডকারে সরে যায়, যা হাইব্রিড TLS সমাপ্ত করে এবং স্থিতিশীল ইন্টারফেস দিয়ে রেলে ক্লিয়ারটেক্সট বার্তা উপস্থাপন করে।</li>
+<li>বার্তা-স্তরের স্বাক্ষর একটি ডেডিকেটেড স্বাক্ষর পরিষেবা তৈরি করে, যার অ্যালগরিদম পছন্দ কনফিগারেশন প্যারামিটার, হার্ড-কোডেড অনুমান নয়।</li>
+<li>শংসাপত্র এমন CA থেকে ইস্যু হয়, যার স্বাক্ষর অ্যালগরিদম নিজেই ঘোরানোযোগ্য।</li>
+<li>HSM পার্টিশন বার্তা ফরম্যাট অনুসারে নয়, উদ্দেশ্য অনুসারে চিহ্নিত (ট্রান্সপোর্ট, স্বাক্ষর, কী এনক্যাপসুলেশন)।</li>
+</ul>
+<p>প্রতিস্থাপন নকশা রেল না ছুঁয়ে পরবর্তী অ্যালগরিদম পরিবর্তন সামলায়।</p>
+<h2 id="section-4">ক্রিপ্টো-চটপটে স্থাপত্য, স্তরে স্তরে <a class="heading-anchor" href="#section-4" aria-label="লিঙ্ক ক্রিপ্টো-চটপটে স্থাপত্য, স্তরে স্তরে">#</a></h2>
+<p>PQC মাইগ্রেশনে গুরুত্বপূর্ণ পরিকাঠামো স্তর &quot;তথ্য, নিয়ন্ত্রণ, অর্থনীতি&quot; নামক সাধারণ ব্যাংকিং স্তর নয়। গুরুত্বপূর্ণ স্তরগুলি ক্রিপ্টোগ্রাফিক।</p>
+<table>
+<thead>
+<tr>
+<th>স্তর</th>
+<th>কী করে</th>
+<th>PQC প্রশ্ন</th>
+<th>স্থাপত্য নির্দেশ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HSM / কী-ব্যবস্থাপনা</strong></td>
+<td>হার্ডওয়্যার বিচ্ছিন্নতার অধীনে কী উপাদান তৈরি, সংরক্ষণ ও পরিচালনা করে</td>
+<td>স্থাপিত HSM ফার্মওয়্যার কি ML-KEM, ML-DSA ও হাইব্রিড কী-এনক্যাপসুলেশন API সমর্থন করে? একই হার্ডওয়্যারে ECDSA-র তুলনায় স্বাক্ষর থ্রুপুট পার্থক্য কত?</td>
+<td>প্রতিটি HSM পার্টিশন অ্যালগরিদম সমর্থন ও প্রতি-সেকেন্ড সক্ষমতা অনুসারে তালিকাভুক্ত করুন। ফার্মওয়্যার পথ ছাড়া RSA-তে স্থির যা কিছু আছে তা অবসান করুন। প্রোডাকশন কাটওভারের আগে ডেডিকেটেড PQC পার্টিশন দাঁড় করান।</td>
+</tr>
+<tr>
+<td><strong>PKI / শংসাপত্র কর্তৃপক্ষ</strong></td>
+<td>X.509 শংসাপত্রের মাধ্যমে বিশ্বাস ইস্যু, প্রত্যাহার ও চেইন করে</td>
+<td>CA কি আজ ML-DSA দিয়ে স্বাক্ষর করতে পারে? রুট ঘোরানো ও চেইন পুনঃইস্যুর পরীক্ষিত প্রক্রিয়া আছে কি? CRL ও OCSP রেসপন্ডার কি ML-DSA স্বাক্ষর ওজনের জন্য আকারিত?</td>
+<td>CA স্ট্যাককে লোড-বহনকারী দেয়াল হিসেবে গণ্য করুন। এখনই একটি PQC-সক্ষম অধস্তন প্রতিষ্ঠিত করুন। রুট ঘোরানোর সময় দীর্ঘতম-জীবী শংসাপত্র নির্ভরতা অনুসারে স্থির করুন, সুবিধার জন্য নয়।</td>
+</tr>
+<tr>
+<td><strong>ট্রান্সপোর্ট / নেটওয়ার্ক</strong></td>
+<td>পেমেন্ট এন্ডপয়েন্টের মধ্যে TLS, IPsec ও MACsec সমাপ্ত করে</td>
+<td>লোড ব্যালেন্সার, WAF ও মিডলবক্স পথ কি লিগ্যাসি MTU অতিক্রমকারী হাইব্রিড হ্যান্ডশেক সহ্য করে? সেশন-পুনরায়-সূচনা টিকেট কি PQC কী-র জন্য আকারিত?</td>
+<td>TLS সমাপ্তি ক্রিপ্টো-চটপটে সীমানায় (সাইডকার বা মেশ) সরান। পেমেন্ট VPN-এ MTU নীতি বাড়ান। ইচ্ছাকৃত খণ্ডিতকরণ আরোপ করে পূর্ণ পথ পরীক্ষা করুন।</td>
+</tr>
+<tr>
+<td><strong>অ্যাপ্লিকেশন / বার্তা পেলোড</strong></td>
+<td>SWIFT MT, ISO 20022 pacs / pain / camt বার্তা ও তাদের ক্রিপ্টোগ্রাফিক এনভেলপ বহন করে</td>
+<td>রেলের বার্তা হ্যান্ডলার কি ML-DSA-আকারের স্বাক্ষরিত এনভেলপ সহ্য করে? মধ্যবর্তী পার্সার কি অ্যালগরিদম-সচেতন, না দৈর্ঘ্যে ছেঁটে দেয়?</td>
+<td>এনভেলপকে পেলোড থেকে আলাদা করুন। বার্তা-ফরম্যাট হ্যান্ডলারের ভেতরে নয়, পরিষেবা সীমানায় স্বাক্ষর করুন। অ্যালগরিদম শনাক্তকারীকে স্কিমা নয়, তথ্য হিসেবে গণ্য করুন।</td>
+</tr>
+<tr>
+<td><strong>অডিট / প্রমাণ</strong></td>
+<td>তত্ত্বাবধায়ক ও গ্রাহকের নির্ভরশীল ক্রিপ্টোগ্রাফিক হেফাজত শৃঙ্খল তৈরি করে</td>
+<td>স্বাক্ষর অ্যালগরিদম অবসানের পর ঐতিহাসিক স্বাক্ষরিত রেকর্ড কি যাচাইযোগ্য থাকবে? দীর্ঘমেয়াদি আর্কাইভাল স্বাক্ষর পরিকল্পনা আছে কি?</td>
+<td>যেকোনো একক অ্যালগরিদম ভাঙন সামলাতে পারে এমন নিশ্চয়তার জন্য হ্যাশ-ভিত্তিক প্রিমিটিভ (SLH-DSA) দিয়ে আর্কাইভ পাল্টা-স্বাক্ষর করুন। অডিট চেইনকে বিল্ড-উপজাত নয়, নিয়ন্ত্রিত আর্টিফ্যাক্ট হিসেবে গণ্য করুন।</td>
+</tr>
+</tbody>
+</table>
+<p>শৃঙ্খলা হলো প্রতিটি স্তরে প্রতিটি অ্যালগরিদম পছন্দকে কনফিগারেশন মান বানানো। কোনো স্তরে RSA-2048 হার্ড-কোড করলে প্রতিষ্ঠান এমন সমন্বিত জীবন-শেষ ঘটনা উত্তরাধিকার পায়, যেদিন সেই অ্যালগরিদম পড়বে।</p>
+<h2 id="section-5">এর অর্থ ব্যাংক ধরন অনুসারে <a class="heading-anchor" href="#section-5" aria-label="লিঙ্ক এর অর্থ ব্যাংক ধরন অনুসারে">#</a></h2>
+<p>এক্সপোজার প্রোফাইল প্রতিষ্ঠান অনুসারে আলাদা। নির্দেশও সেই অনুসারে আলাদা।</p>
+<h3 id="section-6">গ্লোবাল ব্যাংক <a class="heading-anchor" href="#section-6" aria-label="লিঙ্ক গ্লোবাল ব্যাংক">#</a></h3>
+<p>গ্লোবাল ব্যাংক বৃহত্তম স্থাপিত HSM বহর, দীর্ঘতম শংসাপত্র চেইন ও প্রতিপক্ষের মধ্যে সবচেয়ে জটিল নেটওয়ার্ক পথ পরিচালনা করে। প্রধান ঝুঁকি অ্যালগরিদম নির্বাচন নয় — শত শত অভ্যন্তরীণ পরিষেবা ও কয়েক ডজন বাহ্যিক প্রতিপক্ষের মধ্যে একসঙ্গে অ্যালগরিদম পরিবর্তনের সমন্বয় খরচ।</p>
+<p>নির্দেশ: কোনো একটি রেল অভিযোজনের আগে ২০২৬-এর কাজ হিসেবে PQC-সক্ষম CA, ক্রিপ্টো-চটপটে ট্রান্সপোর্ট সীমা ও অ্যালগরিদম-প্যারামিটারযোগ্য স্বাক্ষর পরিষেবায় অর্থায়ন করুন। তখন অভিযোজন একটি জ্ঞাত কাঠামোর ভেতরে রুটিন প্রোডাকশন পরিবর্তনে পরিণত হয়। কাঠামো ছাড়া প্রতিটি রেল অভিযোজন একই স্থাপত্য সিদ্ধান্ত নতুন করে শুরু করে।</p>
+<h3 id="section-7">আঞ্চলিক ব্যাংক <a class="heading-anchor" href="#section-7" aria-label="লিঙ্ক আঞ্চলিক ব্যাংক">#</a></h3>
+<p>আঞ্চলিক ব্যাংকের অ্যালগরিদমিক পৃষ্ঠ ছোট, কিন্তু বিশেষজ্ঞ কর্মী আনুপাতিকভাবে কম। প্রধান ঝুঁকি হলো বিক্রেতা সমর্থনে অঙ্গীকার করেনি এমন অ্যালগরিদমে HSM বিক্রেতা লক-ইন।</p>
+<p>নির্দেশ: ২০২৬ থেকে প্রতিটি HSM চুক্তি নবায়নে PQC সমর্থন — নির্দিষ্টভাবে ML-KEM ও ML-DSA, পরীক্ষিত ফার্মওয়্যার আপগ্রেড পথ সহ — লিখুন। এই ধারা ছাড়া ব্যাংকগুলি নিজের সময়সূচি নয়, বিক্রেতার সময়সূচিতে জোরপূর্বক হার্ডওয়্যার প্রতিস্থাপন উত্তরাধিকার পায়।</p>
+<h3 id="psp">ফিনটেক ও PSP <a class="heading-anchor" href="#psp" aria-label="লিঙ্ক ফিনটেক ও PSP">#</a></h3>
+<p>পেমেন্ট পরিষেবা প্রদানকারী ও ফিনটেক সাধারণত ব্যাংক প্রতিপক্ষ এবং বণিক বা শেষ-ব্যবহারকারী সিস্টেমের মাঝে থাকে। তাদের ক্রিপ্টোগ্রাফিক এক্সপোজার দুই পাশের API সীমা।</p>
+<p>নির্দেশ: ২০২৬-এর বাণিজ্যিক আলোচনার ন্যূনতম শর্ত হিসেবে ব্যাংক-মুখী দিকে হাইব্রিড TLS ইন্টারফেস — ক্ল্যাসিকাল ও ML-KEM — প্রকাশ করুন। যে ফিনটেক ইতিমধ্যেই PQC আন্তঃকার্যকারিতা প্রদর্শন করে এসেছে, সে ইন্টিগ্রেশন চক্রে এগিয়ে থাকা ফিনটেকের সঙ্গে জিতবে যে এখনো শুরু করেনি।</p>
+<h3 id="section-9">কর্পোরেট ট্রেজারার <a class="heading-anchor" href="#section-9" aria-label="লিঙ্ক কর্পোরেট ট্রেজারার">#</a></h3>
+<p>ট্রেজারার সরাসরি ক্রিপ্টোগ্রাফিক পরিকাঠামো পরিচালনা করেন না। তবে ভোগ করেন — প্রতিটি ব্যাংক API, প্রতিটি নিরাপদ ফাইল স্থানান্তর, প্রতিটি স্বাক্ষরিত নিশ্চয়তা ব্যাংকের PKI-র উপর নির্ভর করে।</p>
+<p>নির্দেশ: ২০২৬-এ প্রতিটি ব্যাংক RFP-তে তিনটি প্রশ্ন যোগ করুন: ব্যাংক আজ গ্রাহক-মুখী TLS-এ কোন PQC অ্যালগরিদম ব্যবহার করছে, ML-DSA-স্বাক্ষরিত পেমেন্ট নিশ্চয়তার পরিকল্পনা কী, এবং RSA অবসানের পর ঐতিহাসিক স্বাক্ষরিত রেকর্ডের যাচাইযোগ্যতা ব্যাংক কীভাবে সংরক্ষণ করবে। যে ব্যাংকগুলি এই প্রশ্নের উত্তর দিতে পারে না, তারা তাদের অন্তর্নিহিত প্রকৌশল প্রস্তুতি সম্পর্কে সংকেত দিচ্ছে।</p>
+<h2 id="section-10">এরপর কী ঘটবে <a class="heading-anchor" href="#section-10" aria-label="লিঙ্ক এরপর কী ঘটবে">#</a></h2>
+<p>পেমেন্টে PQC স্থাপনার প্রথম তরঙ্গ শেষ-ব্যবহারকারীর কাছে অদৃশ্য থাকবে। হাইব্রিড TLS হ্যান্ডশেকে দেখা দেয়, শংসাপত্র চেইন বাড়ে, HSM স্বাক্ষর লেটেন্সি কয়েক মিলিসেকেন্ডে বেড়ে চলে এবং রেল কাজ করতে থাকে। এটাই সাফল্যের পথ।</p>
+<p>দৃশ্যমান ব্যর্থতা অভিযোজন-চালিত হবে: এমন একটি রেল যা ML-DSA-স্বাক্ষরিত এনভেলপ ছাড়াই গ্রহণ করতে পারে না; এমন একটি CA যার CRL বিতরণ পয়েন্ট নতুন স্বাক্ষর ওজনে আটকে যায়; এমন একটি মিডলবক্স যা হাইব্রিড হ্যান্ডশেককে পুনঃক্রমিত ClientHello-তে খণ্ডিত করে। এই ব্যর্থতাগুলি ২০২৭ জুড়ে প্রোডাকশনে নামবে।</p>
+<p>২০২৬-এর স্থাপত্য সিদ্ধান্ত হলো এমন প্রতিস্থাপন পরিকাঠামোয় অর্থায়ন করা যা অভিযোজনকে অপ্রাসঙ্গিক করে, নাকি রেল-নির্দিষ্ট সংশোধনের ধারায় অর্থায়ন করা যা পৃথকভাবে সস্তা মনে হয় কিন্তু মোটে দীর্ঘতর ও ব্যয়বহুল মাইগ্রেশনে যোগ হয়। যে ব্যাংক প্রথম পথ বেছে নেয়, সে রূপান্তরের সময় শান্ত অপারেশন চালাবে। যে দ্বিতীয় পথ বেছে নেয়, সে দশকের বাকি সময় তত্ত্বাবধায়কদের ঘটনা পর্যালোচনা ব্যাখ্যা করে কাটাবে।</p>
+<p>PQC পরিকাঠামো সমস্যা সাজানো ক্রিপ্টোগ্রাফি সমস্যা নয়। এটি একটি পরিকাঠামো সমস্যা, যা ক্রিপ্টোগ্রাফি শুরু করেছে।</p>
+<h2 id="section-11">প্রায়শ জিজ্ঞাসিত প্রশ্ন <a class="heading-anchor" href="#section-11" aria-label="লিঙ্ক প্রায়শ জিজ্ঞাসিত প্রশ্ন">#</a></h2>
+<p><strong>এই কাজে কি কোনো সময়সীমা বাধ্যতামূলক?</strong></p>
+<p>কঠোর নিয়ন্ত্রক সময়সীমা এখতিয়ার অনুসারে আলাদা। মার্কিন <a href="https://www.congress.gov/bill/117th-congress/house-bill/7535/text" title="H.R. 7535">Quantum Computing Cybersecurity Preparedness Act ⧉</a> ফেডারেল সিস্টেমকে আবদ্ধ করে। <a href="https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF" title="CNSA 2.0">NSA CNSA 2.0 সময়রেখা ⧉</a> জাতীয়-নিরাপত্তা সিস্টেমের জন্য ২০৩৫-কে লক্ষ্য করে। <a href="https://www.bis.org/publ/work1208.htm" title="BIS Working Paper 1208">BIS Project Leap ⧉</a> প্রকাশনা এবং FSB-র কর্ম কর্মসূচি সিস্টেমিক পেমেন্ট পরিকাঠামোর জন্য সেই দিগন্তকে এগিয়ে আনছে। HNDL মানে অপারেশনাল ঘড়ি এই নামমাত্র তারিখগুলির আগেই চালু হয়েছে।</p>
+<p><strong>ML-KEM কেন প্রস্তাবিত কী এনক্যাপসুলেশন, কোনো দ্রুততর কিছু নয়?</strong></p>
+<p>ML-KEM (CRYSTALS-Kyber-এর মানকীকৃত সংস্করণ) ছিল ল্যাটিস প্রার্থীদের মধ্যে ছোট সাইফারটেক্সট ও কী সাইজের সবচেয়ে শক্তিশালী সমন্বয়, পরিণত বাস্তবায়ন ও সাইড-চ্যানেল হার্ডেনিং সহ। NIST এটি <a href="https://csrc.nist.gov/pubs/fips/203/final" title="FIPS 203">FIPS 203 ⧉</a> হিসেবে প্রকাশ করেছে। দ্রুততর প্রার্থী রয়েছে, কিন্তু সেগুলি বড় আকার বা নিরাপত্তা প্যারামিটারে দুর্বল আস্থার ব্যবধান বহন করে।</p>
+<p><strong>ML-DSA-র বদলে সব জায়গায় SLH-DSA নয় কেন?</strong></p>
+<p>SLH-DSA (SPHINCS+-এর মানকীকৃত সংস্করণ) হ্যাশ-ভিত্তিক, তাই কেবল হ্যাশ-ফাংশন নিরাপত্তার উপর নির্ভর করে — যা প্রাপ্যতমদের মধ্যে সবচেয়ে রক্ষণশীল অনুমান। এর স্বাক্ষর ML-DSA-র তুলনায় ৫–২০× বড়। এটি আর্কাইভাল পাল্টা-স্বাক্ষরের জন্য গ্রহণযোগ্য, কিন্তু লেনদেনভিত্তিক স্বাক্ষরের জন্য অকার্যকর যেখানে প্রতি বার্তায় আকার গুরুত্বপূর্ণ। মানক প্যাটার্ন হলো প্রোডাকশন স্বাক্ষরের জন্য ML-DSA এবং আর্কাইভাল নিশ্চয়তার জন্য SLH-DSA।</p>
+<p><strong>ব্যাংক কি রেল PQC প্রোফাইল প্রকাশের জন্য অপেক্ষা করতে পারে?</strong></p>
+<p>যে ব্যাংক অপেক্ষা করে, সে রেল-প্রকাশিত মাইগ্রেশন জানালা উত্তরাধিকার পায়, যা ব্যাংকের নিজস্ব অভ্যন্তরীণ পরিবর্তন চক্রের চেয়ে ছোট। SWIFT, স্থানীয় RTGS অপারেটর ও প্রাসঙ্গিক CCP-রা যখন প্রত্যেকে তাদের PQC প্রোফাইল প্রকাশ করবে, তখন মাইগ্রেশন জানালা হবে বারো থেকে চব্বিশ মাস। যে ব্যাংকগুলি CA, ট্রান্সপোর্ট ও HSM সক্ষমতা আগে গড়েনি, তারা অপারেশনাল শর্টকাট ছাড়া তা পূরণ করবে না।</p>
+<p><strong>সবচেয়ে বেশি লিভারেজ-সম্পন্ন একটি জিনিস কোনটিতে আগে অর্থায়ন করা উচিত?</strong></p>
+<p>একটি PQC-সক্ষম অধস্তন শংসাপত্র কর্তৃপক্ষ, যা বিদ্যমান PKI-তে সংহত এবং প্রোডাকশন বিশ্বাস ব্যাহত না করে দ্বৈত-অ্যালগরিদম শংসাপত্র (RSA ও ML-DSA) ইস্যু করতে পারে। সেটি ঘূর্ণন প্রিমিটিভ প্রতিষ্ঠা করে। বাকি সব — ট্রান্সপোর্ট আপগ্রেড, HSM পার্টিশন পরিকল্পনা, বার্তা-এনভেলপ পরিবর্তন — তার চারপাশে সময়সূচি করা যায়।</p>
+<h2 id="section-12">তথ্যসূত্র <a class="heading-anchor" href="#section-12" aria-label="লিঙ্ক তথ্যসূত্র">#</a></h2>
+<ul>
+<li>Congress.gov, (2022). <a href="https://www.congress.gov/bill/117th-congress/house-bill/7535/text" title="Quantum Computing Cybersecurity Preparedness Act">H.R. 7535 — Quantum Computing Cybersecurity Preparedness Act ⧉</a>।</li>
+<li>NIST, (2024). <a href="https://csrc.nist.gov/pubs/fips/203/final" title="FIPS 203">FIPS 203 — Module-Lattice-Based Key-Encapsulation Mechanism Standard ⧉</a>।</li>
+<li>NIST, (2024). <a href="https://csrc.nist.gov/pubs/fips/204/final" title="FIPS 204">FIPS 204 — Module-Lattice-Based Digital Signature Standard ⧉</a>।</li>
+<li>NIST, (2024). <a href="https://csrc.nist.gov/pubs/fips/205/final" title="FIPS 205">FIPS 205 — Stateless Hash-Based Digital Signature Standard ⧉</a>।</li>
+<li>NSA, (2022). <a href="https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF" title="CNSA 2.0">Commercial National Security Algorithm Suite 2.0 ⧉</a>।</li>
+<li>BIS, (2024). <a href="https://www.bis.org/publ/work1208.htm" title="BIS Working Paper 1208">Working Paper No. 1208 — Project Leap: Quantum-proofing the financial system ⧉</a>।</li>
+<li>Bank of England (PRA), (2024). <a href="https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services" title="PRA SS1/21">SS1/21 — Operational resilience: Impact tolerances for important business services ⧉</a>।</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-05-31">2026-05-31</time>।</p>
+
+<!-- enrich-end -->
+</content>
+</invoke>
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="Sebastien Rousseau-এর ছবি" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/bn/amader-shomporke/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">সিনিয়র ব্যাঙ্কিং প্রযুক্তিবিদ; আমি প্রায়োগিক এআই, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লিখি।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০ বছরেরও বেশি অভিজ্ঞতা। <a href="/bn/amader-shomporke/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-05-31">2026-05-31</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">সম্পর্কিত পঠন</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/bn/2026-05-18-quantum-cryptography-standards-developments-2026" class="related-media" aria-label="২০২৬-এ কোয়ান্টাম ক্রিপ্টোগ্রাফি রিসেট: PQC মান, QKD নিশ্চয়তা, এবং যে মাইগ্রেশন কাজ ব্যাঙ্কগুলি স্থগিত করতে পারে না" tabindex="-1"><img alt="Quantum-safe cryptography migration map for 2026 showing NIST PQC standards, hybrid protocol work, QKD assurance, crypto-agility, and bank data-risk tiers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="pqc-qkd"><a href="https://sebastienrousseau.com/bn/2026-05-18-quantum-cryptography-standards-developments-2026">২০২৬-এ কোয়ান্টাম ক্রিপ্টোগ্রাফি রিসেট: PQC মান, QKD নিশ্চয়তা, এবং যে মাইগ্রেশন কাজ ব্যাঙ্কগুলি স্থগিত করতে পারে না</a> <a class="heading-anchor" href="#pqc-qkd" aria-label="লিঙ্ক ২০২৬-এ কোয়ান্টাম ক্রিপ্টোগ্রাফি রিসেট: PQC মান, QKD নিশ্চয়তা, এবং যে মাইগ্রেশন কাজ ব্যাঙ্কগুলি স্থগিত করতে পারে না">#</a></h3><p><time datetime="2026-05-18">2026-05-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/bn/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance" class="related-media" aria-label="Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance" tabindex="-1"><img alt="Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA" src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="securing-the-ledger-a-board-level-guide-to-post-quantum-migration-for-corporate-"><a href="https://sebastienrousseau.com/bn/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</a> <a class="heading-anchor" href="#securing-the-ledger-a-board-level-guide-to-post-quantum-migration-for-corporate-" aria-label="লিঙ্ক Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance">#</a></h3><p><time datetime="2026-05-14">2026-05-14</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/bn/2026-05-16-best-cloud-infrastructure-architecture-2026" class="related-media" aria-label="২০২৬ সালে সেরা ক্লাউড অবকাঠামো আর্কিটেকচার: আর্থিক পরিষেবাগুলির জন্য একটি AI-নেটিভ, মাল্টি-ক্লাউড, কোয়ান্টাম-সচেতন ব্লুপ্রিন্ট" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai"><a href="https://sebastienrousseau.com/bn/2026-05-16-best-cloud-infrastructure-architecture-2026">২০২৬ সালে সেরা ক্লাউড অবকাঠামো আর্কিটেকচার: আর্থিক পরিষেবাগুলির জন্য একটি AI-নেটিভ, মাল্টি-ক্লাউড, কোয়ান্টাম-সচেতন ব্লুপ্রিন্ট</a> <a class="heading-anchor" href="#ai" aria-label="লিঙ্ক ২০২৬ সালে সেরা ক্লাউড অবকাঠামো আর্কিটেকচার: আর্থিক পরিষেবাগুলির জন্য একটি AI-নেটিভ, মাল্টি-ক্লাউড, কোয়ান্টাম-সচেতন ব্লুপ্রিন্ট">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">সূত্র ও তথ্যসূত্র</h2><ol class="article-sources-list"><li><a href="https://www.bis.org/publ/work1208.htm" rel="external noopener nofollow"><span class="source-host">www.bis.org</span><span class="source-path">/publ/work1208.htm</span></a></li><li><a href="https://csrc.nist.gov/pubs/fips/203/final" rel="external noopener nofollow"><span class="source-host">csrc.nist.gov</span><span class="source-path">/pubs/fips/203/final</span></a></li><li><a href="https://csrc.nist.gov/pubs/fips/204/final" rel="external noopener nofollow"><span class="source-host">csrc.nist.gov</span><span class="source-path">/pubs/fips/204/final</span></a></li><li><a href="https://csrc.nist.gov/pubs/fips/205/final" rel="external noopener nofollow"><span class="source-host">csrc.nist.gov</span><span class="source-path">/pubs/fips/205/final</span></a></li></ol></aside><nav class="post-pagination" aria-label="নিবন্ধ পেজিনেশন"><a class="post-pagination-prev" href="/bn/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"><span class="post-pagination-label">পূর্ববর্তী</span><span class="post-pagination-title">Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/bn/amader-shomporke/index.html">About</a></li>
+              <li><a href="/bn/jogajog/index.html">Contact</a></li>
+              <li><a href="/bn/static-site-generator-die-toiri/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">লেখা</h2>
+            <ul>
+              <li><a href="/bn/prabondho/index.html">Articles</a></li>
+              <li><a href="/bn/prokashana/index.html">Papers</a></li>
+              <li><a href="/bn/tag/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">কাজ</h2>
+            <ul>
+              <li><a href="/bn/prokolpo/index.html">Projects</a></li>
+              <li><a href="/bn/playlist/index.html">Playlists</a></li>
+              <li><a href="/bn/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">যোগাযোগ</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="নিউজলেটার সাবস্ক্রিপশন">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — পেমেন্ট, এআই এবং পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি বিষয়ক গবেষণা নোট। কোনও স্প্যাম নয়।</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="apni@bank.bd" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">সাবস্ক্রাইব করুন</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="সামাজিক লিঙ্ক">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau-এ Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau-এ LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau-এ Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau-এ YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/bn/prabeshjogyota/index.html">Accessibility</a> ·
+            <a href="/bn/goponiyota/index.html">Privacy</a> ·
+            <a href="/bn/shorto/index.html">Terms</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"bn"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"bn"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":2156,"about":{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]},"mentions":[{"@type":"Thing","name":"Quantum computing","sameAs":["https://en.wikipedia.org/wiki/Quantum_computing","https://www.wikidata.org/wiki/Q484641"]}],"headline":"পোস্ট-কোয়ান্টাম পেমেন্ট পরিকাঠামো: কেন ব্যাংক লিগ্যাসি রেল অভিযোজন না করে প্রতিস্থাপন করতে পারে","description":"পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি পেমেন্ট রেলে দুটি পথ রাখে: SWIFT MT ও ISO 20022 এনভেলপে RSA/ECC অভিযোজন, অথবা ক্রিপ্টো-চটপটে পরিকাঠামোয় প্রতিস্থাপন। HNDL অপারেশনাল ক্ষতি হওয়ার আগেই স্থপতিদের সিদ্ধান্ত নিতে হবে।","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp","width":"100vw","height":"100vh","caption":"গভীর নীল জলে ভাসমান ক্রিপ্টোগ্রাফিক কী উপাদান — এখন-সংগ্রহ-পরে-ডিক্রিপ্ট পদ্ধতিতে পেমেন্ট বার্তা ধরে রাখার প্রতীক, যেগুলির RSA ও ECC এনভেলপ ক্রিপ্টোএনালিটিক্যালি প্রাসঙ্গিক কোয়ান্টাম কম্পিউটার থেকে টিকবে না"},"url":"https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/","datePublished":"2026-05-31T06:06:06+00:00","dateModified":"2026-05-31","inLanguage":"bn","keywords":"পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, PQC পেমেন্ট, ক্রিপ্টো-চটপটে, এখন-সংগ্রহ-পরে-ডিক্রিপ্ট, HNDL, NIST পোস্ট-কোয়ান্টাম মান, ML-KEM, ML-DSA, FIPS 203, FIPS 204, পেমেন্ট রেল মাইগ্রেশন, ISO 20022 PQC, SWIFT MT প্রতিস্থাপন, HSM, PKI ভাঙন, অপারেশনাল স্থিতিস্থাপকতা, Quantum Computing Cybersecurity Preparedness Act","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"bn"},"citation":[{"@type":"CreativeWork","url":"https://www.bis.org/publ/work1208.htm"},{"@type":"CreativeWork","url":"https://csrc.nist.gov/pubs/fips/203/final"},{"@type":"CreativeWork","url":"https://csrc.nist.gov/pubs/fips/204/final"},{"@type":"CreativeWork","url":"https://csrc.nist.gov/pubs/fips/205/final"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/bn/"},{"@type":"ListItem","position":3,"name":"পোস্ট-কোয়ান্টাম পেমেন্ট পরিকাঠামো: কেন ব্যাংক লিগ্যাসি রেল অভিযোজন না করে প্রতিস্থাপন করতে পারে","item":"https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="অনুসন্ধান">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>অনুসন্ধান</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="অনুসন্ধান">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="ডকুমেন্টে অনুসন্ধান করুন..." autocomplete="off" aria-label="অনুসন্ধান"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> বন্ধ করুন</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> নেভিগেট করুন</span><span><kbd>Enter</kbd> খুলুন</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"পোস্ট-কোয়ান্টাম পেমেন্ট পরিকাঠামো: কেন ব্যাংক লিগ্যাসি রেল অভিযোজন না করে প্রতিস্থাপন করতে পারে","url":"https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/","inLanguage":"bn-BD","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, PQC পেমেন্ট, ক্রিপ্টো-চটপটে, এখন-সংগ্রহ-পরে-ডিক্রিপ্ট, HNDL, NIST পোস্ট-কোয়ান্টাম মান, ML-KEM, ML-DSA, FIPS 203, FIPS 204, পেমেন্ট রেল মাইগ্রেশন, ISO 20022 PQC, SWIFT MT প্রতিস্থাপন, HSM, PKI ভাঙন, অপারেশনাল স্থিতিস্থাপকতা, Quantum Computing Cybersecurity Preparedness Act","dependencies":["ISO 20022","Post-Quantum Cryptography","NIST","NIST FIPS 203"]}</script></body>
+</html>

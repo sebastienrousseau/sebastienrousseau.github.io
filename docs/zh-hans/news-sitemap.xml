@@ -2,15 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/zh-hans/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>zh-Hans</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T08:31:08+00:00</news:publication_date>
-    <news:title>多轨银行 2026：卡、A2A、稳定币、RTP、FedNow 与 Open Banking 的一体战略</news:title>
-    <news:keywords>多轨银行 2026, A2A 支付, FedNow, RTP 网络, 稳定币, Open Banking, 卡组织, 支付编排, ISO 20022</news:keywords>
+    <news:publication_date>2026-05-31T10:06:34+00:00</news:publication_date>
+    <news:title>后量子支付基础设施:为何银行可能替换而非改造传统通道</news:title>
+    <news:keywords>后量子密码学, PQC 支付, 密码敏捷性, 现收割后解密, HNDL, NIST 后量子标准, ML-KEM, ML-DSA, FIPS 203, FIPS 204, 支付通道迁移, ISO 20022 PQC, SWIFT MT 替换, HSM, PKI 崩塌, 运营韧性, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
+    <news:title>英国批发数字市场:代币化国债、结算与新设的协调者角色</news:title>
+    <news:keywords>英国批发数字市场 2026, Chris Woolard, 代币化国债, 代币化批发金融, 数字市场协调者, 英国代币化, 结算</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T06:06:06+00:00</news:publication_date>
+    <news:title>ISO 20022 迁移之后：把支付数据做成 2026 银行产品</news:title>
+    <news:keywords>ISO 20022 2026, 结构化地址, CBPR+, 支付数据产品, 用途代码, 企业财资, 对账, 制裁筛查, 欺诈检测</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T06:06:06+00:00</news:publication_date>
+    <news:title>数字资产 2026：基础设施转型不可缓</news:title>
+    <news:keywords>数字资产 2026, 代币化现实资产, 稳定币银行, 代币化存款, 数字资产托管, DLT 银行, 结算基础设施, 抵押品流动性, 可编程货币, 银行数字资产战略</news:keywords>
   </news:news>
 </url>
 <url>

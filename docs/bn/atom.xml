@@ -4,14 +4,41 @@
   <link href="https://sebastienrousseau.com/bn/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/bn/"/>
   <id>https://sebastienrousseau.com/bn/</id>
-  <updated>2026-05-28T08:31:07+00:00</updated>
+  <updated>2026-05-31T10:06:33+00:00</updated>
   <entry>
-    <title>2026-এর মাল্টি-রেল ব্যাংক: এক কৌশলে কার্ড, A2A, স্টেবলকয়েন, RTP, FedNow ও Open Banking</title>
-    <link href="https://sebastienrousseau.com/bn/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
-    <id>https://sebastienrousseau.com/bn/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
-    <updated>2026-06-01T06:06:06+00:00</updated>
-    <published>2026-06-01T06:06:06+00:00</published>
-    <summary>2026-এর মাল্টি-রেল ব্যাংক একটিই পেমেন্ট ভবিষ্যৎ বেছে নেয় না। ব্যয়, গতি, ঝুঁকি, চূড়ান্ততা ও গ্রাহক প্রসঙ্গ অনুযায়ী কার্ড, অ্যাকাউন্ট-থেকে-অ্যাকাউন্ট পেমেন্ট, RTP, FedNow, স্টেবলকয়েন, Open Banking, ওয়ালেট ও ISO 20022 ডেটা অর্কেস্ট্রেট করে।</summary>
+    <title>পোস্ট-কোয়ান্টাম পেমেন্ট পরিকাঠামো: কেন ব্যাংক লিগ্যাসি রেল অভিযোজন না করে প্রতিস্থাপন করতে পারে</title>
+    <link href="https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
+    <id>https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
+    <updated>2026-05-31T10:06:33+00:00</updated>
+    <published>2026-05-31T10:06:33+00:00</published>
+    <summary>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি পেমেন্ট রেলে দুটি পথ রাখে: SWIFT MT ও ISO 20022 এনভেলপে RSA/ECC অভিযোজন, অথবা ক্রিপ্টো-চটপটে পরিকাঠামোয় প্রতিস্থাপন। HNDL অপারেশনাল ক্ষতি হওয়ার আগেই স্থপতিদের সিদ্ধান্ত নিতে হবে।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>যুক্তরাজ্যের পাইকারি ডিজিটাল বাজার: টোকেনাইজড গিল্টস, নিষ্পত্তি ও নতুন চ্যাম্পিয়ন ভূমিকা</title>
+    <link href="https://sebastienrousseau.com/bn/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"/>
+    <id>https://sebastienrousseau.com/bn/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</id>
+    <updated>2026-05-30T06:06:06+00:00</updated>
+    <published>2026-05-30T06:06:06+00:00</published>
+    <summary>যুক্তরাজ্যের Wholesale Digital Markets Champion ভূমিকা টোকেনাইজড পাইকারি অর্থব্যবস্থাকে জাতীয় প্রতিযোগিতার প্রকল্পে রূপান্তরিত করেছে।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ISO 20022 মাইগ্রেশনের পরে: পেমেন্ট ডেটাকে ব্যাংকিং পণ্যে রূপান্তর ২০২৬</title>
+    <link href="https://sebastienrousseau.com/bn/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"/>
+    <id>https://sebastienrousseau.com/bn/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</id>
+    <updated>2026-05-29T06:06:06+00:00</updated>
+    <published>2026-05-29T06:06:06+00:00</published>
+    <summary>ISO 20022 মাইগ্রেশনের পরে আসল পুরস্কার পেমেন্ট ডেটা পণ্য — কাঠামোগত ঠিকানা, উদ্দেশ্য কোড, রেমিট্যান্স তথ্য ও তদন্ত বার্তা থেকে মিলকরণ, জালিয়াতি, তারল্য ও কমপ্লায়েন্স পণ্য গড়ে ওঠে।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ডিজিটাল সম্পদ ২০২৬: ব্যাংকের জন্য অপরিহার্য পরিকাঠামো রূপান্তর</title>
+    <link href="https://sebastienrousseau.com/bn/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
+    <id>https://sebastienrousseau.com/bn/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>ডিজিটাল সম্পদ আর উদ্ভাবন বাজি নয়। এটি সেটেলমেন্ট, কাস্টডি ও ব্যালেন্স শিট স্থাপত্যের প্রশ্ন। ব্যাংকের কৌশলগত কাজ কাঠামোগত অনিশ্চয়তায় পরিকাঠামো ডিজাইন।</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

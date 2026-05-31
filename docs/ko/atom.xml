@@ -4,14 +4,41 @@
   <link href="https://sebastienrousseau.com/ko/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ko/"/>
   <id>https://sebastienrousseau.com/ko/</id>
-  <updated>2026-05-28T08:31:08+00:00</updated>
+  <updated>2026-05-31T10:06:33+00:00</updated>
   <entry>
-    <title>2026년 멀티레일 은행 전략</title>
-    <link href="https://sebastienrousseau.com/ko/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
-    <id>https://sebastienrousseau.com/ko/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
-    <updated>2026-05-28T08:31:08+00:00</updated>
-    <published>2026-05-28T08:31:08+00:00</published>
-    <summary>2026년 멀티레일 은행은 단일한 결제 미래를 선택하지 않습니다. 카드, 계좌 간 (A2A), RTP, FedNow, 스테이블코인, Open Banking, 월렛, ISO 20022 데이터를 비용·속도·리스크·완결성·고객 맥락에 따라 오케스트레이션합니다.</summary>
+    <title>양자내성 결제 인프라: 은행이 레거시 레일을 개조하지 않고 대체할 수밖에 없는 이유</title>
+    <link href="https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
+    <updated>2026-05-31T10:06:33+00:00</updated>
+    <published>2026-05-31T10:06:33+00:00</published>
+    <summary>양자내성암호는 결제 레일에 이분법적 선택을 강요합니다. ML-KEM·ML-DSA용으로 설계되지 않은 SWIFT MT·ISO 20022 봉투에 RSA/ECC를 개조하거나, 암호 민첩성 인프라로 대체해야 합니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>디지털 자산 2026: 인프라 전환의 해</title>
+    <link href="https://sebastienrousseau.com/ko/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
+    <updated>2026-05-31T10:06:33+00:00</updated>
+    <published>2026-05-31T10:06:33+00:00</published>
+    <summary>디지털 자산은 더 이상 혁신 베팅이 아닙니다. 결제, 수탁, 대차대조표 아키텍처의 문제입니다. 은행의 전략적 과제는 구조적 불확실성 속에서의 인프라 설계입니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>영국 도매 디지털 시장 2026: 토큰화 길트, 결제, 챔피언 직책</title>
+    <link href="https://sebastienrousseau.com/ko/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</id>
+    <updated>2026-05-30T06:06:06+00:00</updated>
+    <published>2026-05-30T06:06:06+00:00</published>
+    <summary>영국 도매 디지털 시장 챔피언 직책은 토큰화 길트, DLT 결제, BoE DSS 샌드박스를 국가 경쟁력 의제로 격상시킵니다. 2026년 시티의 설계 규율을 점검합니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ISO 20022 마이그레이션 이후: 2026년 결제 데이터를 은행 제품으로</title>
+    <link href="https://sebastienrousseau.com/ko/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</id>
+    <updated>2026-05-29T06:06:06+00:00</updated>
+    <published>2026-05-29T06:06:06+00:00</published>
+    <summary>ISO 20022 마이그레이션 이후는 데이터 제품 기회입니다. 구조화 주소, 용도 코드, 송장 정보, 조사 메시지, 풍부한 결제 상태 이벤트가 대사·사기·유동성·컴플라이언스·분석 제품으로 전환됩니다.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

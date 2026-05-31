@@ -6,863 +6,1005 @@
     <description>AI, banking and payments expert. Senior payments leader. Applied AI, ISO 20022 migration, wholesale payments and post-quantum cryptography.</description>
     <atom:link href="https://sebastienrousseau.com/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Jun 2026 06:06:06 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 06:06:06 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
     <item>
-      <title>The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy</title>
-      <link>https://sebastienrousseau.com/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026</link>
-      <description>The multi-rail bank in 2026 does not pick one payments future. It orchestrates cards, account-to-account payments, RTP, FedNow, stablecoins, Open Banking, wallets, and ISO 20022 data according to cost, speed, risk, finality, and customer context.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <title>Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails</title>
+      <link>https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026</link>
+      <description>Post-quantum cryptography forces a binary choice on payment rails: retrofit RSA/ECC inside SWIFT MT and ISO 20022 envelopes that were never sized for ML-KEM and ML-DSA, or replace with crypto-agile infrastructure. Architects must decide before HNDL becomes operational loss.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>multi-rail bank</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>stablecoins</category>
-      <category>Open Banking</category>
-      <category>cards</category>
-      <category>payment orchestration</category>
-    </item>
-    <item>
-      <title>2026'da Çoklu Raylı Banka: Kartlar, A2A, Stablecoin, RTP, FedNow ve Open Banking Tek Stratejide</title>
-      <link>https://sebastienrousseau.com/tr/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>2026 çoklu raylı bankası tek bir ödeme geleceği seçmez. Kartları, hesaptan hesaba ödemeleri, RTP, FedNow, stablecoinleri, Open Banking, cüzdanları ve ISO 20022 verisini maliyet, hız, risk, kesinleşme ve müşteri bağlamına göre orkestre eder.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>çoklu raylı banka</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>stablecoin</category>
-      <category>Open Banking</category>
-      <category>kartlar</category>
-      <category>ödeme orkestrasyonu</category>
-    </item>
-    <item>
-      <title>ธนาคารหลายรางในปี 2026: บัตร A2A สเตเบิลคอยน์ RTP FedNow และ Open Banking ในกลยุทธ์เดียว</title>
-      <link>https://sebastienrousseau.com/th/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>ธนาคารหลายรางในปี 2026 ไม่เลือกอนาคตการชำระเงินเพียงหนึ่งเดียว แต่ประสานบัตร การชำระเงินบัญชีถึงบัญชี RTP FedNow สเตเบิลคอยน์ Open Banking กระเป๋าเงิน และข้อมูล ISO 20022 ตามต้นทุน ความเร็ว ความเสี่ยง การสิ้นสุด และบริบทลูกค้า</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>ธนาคารหลายราง</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>สเตเบิลคอยน์</category>
-      <category>Open Banking</category>
-      <category>บัตร</category>
-      <category>การประสานการชำระเงิน</category>
-    </item>
-    <item>
-      <title>El banco multirraíl en 2026: cards, A2A, stablecoins, RTP, FedNow y Open Banking en una sola estrategia</title>
-      <link>https://sebastienrousseau.com/es/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>El banco multirraíl de 2026 no elige un único futuro de pagos: orquesta cards, A2A, RTP, FedNow, stablecoins, Open Banking, carteras e ISO 20022 por coste, velocidad y finalidad.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>banco multirraíl</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>stablecoins</category>
-      <category>Open Banking</category>
-      <category>cards</category>
-      <category>orquestación de pagos</category>
-    </item>
-    <item>
-      <title>La banque multi-rails en 2026 : cartes, A2A, stablecoins, RTP, FedNow et Open Banking</title>
-      <link>https://sebastienrousseau.com/fr/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>La banque multi-rails en 2026 n&apos;élit pas un futur des paiements : elle orchestre cartes, A2A, RTP, FedNow, stablecoins, Open Banking, portefeuilles et ISO 20022 par coût, rapidité et risque.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>banque multi-rails</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>stablecoins</category>
-      <category>Open Banking</category>
-      <category>cartes</category>
-      <category>orchestration des paiements</category>
-    </item>
-    <item>
-      <title>Bank Multi-Rel pada 2026: Kartu, A2A, Stablecoin, RTP, FedNow, dan Open Banking dalam Satu Strategi</title>
-      <link>https://sebastienrousseau.com/id/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>Bank multi-rel pada 2026 tidak memilih satu masa depan pembayaran. Ia mengorkestrasi kartu, pembayaran akun-ke-akun (A2A), RTP, FedNow, stablecoin, Open Banking, dompet, dan data ISO 20022 menurut biaya, kecepatan, risiko, finalitas, dan konteks pelanggan.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>bank multi-rel</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>stablecoin</category>
-      <category>Open Banking</category>
-      <category>kartu</category>
-      <category>orkestrasi pembayaran</category>
-    </item>
-    <item>
-      <title>2026년 멀티레일 은행 전략</title>
-      <link>https://sebastienrousseau.com/ko/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>2026년 멀티레일 은행은 단일한 결제 미래를 선택하지 않습니다. 카드, 계좌 간 (A2A), RTP, FedNow, 스테이블코인, Open Banking, 월렛, ISO 20022 데이터를 비용·속도·리스크·완결성·고객 맥락에 따라 오케스트레이션합니다.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>멀티레일 은행</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>스테이블코인</category>
-      <category>오픈뱅킹</category>
-      <category>카드</category>
-      <category>결제 오케스트레이션</category>
-    </item>
-    <item>
-      <title>Die Multi-Rail-Bank 2026: Karten, A2A, Stablecoins, RTP, FedNow und Open Banking in einer Strategie</title>
-      <link>https://sebastienrousseau.com/de/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>Die Multi-Rail-Bank 2026 wählt keine einzelne Zahlungszukunft. Sie orchestriert Karten, A2A, RTP, FedNow, Stablecoins, Open Banking, Wallets und ISO-20022-Daten nach Kosten, Geschwindigkeit, Risiko, Finalität und Kundenkontext.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>Multi-Rail-Bank</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>Stablecoins</category>
-      <category>Open Banking</category>
-      <category>Karten</category>
-      <category>Zahlungsorchestrierung</category>
-    </item>
-    <item>
-      <title>2026 का मल्टी-रेल बैंक: कार्ड, A2A, स्टेबलकॉइन, RTP, FedNow और Open Banking एक रणनीति में</title>
-      <link>https://sebastienrousseau.com/hi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>2026 का मल्टी-रेल बैंक एक ही भुगतान भविष्य नहीं चुनता; वह कार्ड, A2A, RTP, FedNow, स्टेबलकॉइन, Open Banking, वॉलेट और ISO 20022 डेटा को लागत, गति, जोखिम, अंतिमता और ग्राहक संदर्भ के अनुसार ऑर्केस्ट्रेट करता है।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>मल्टी-रेल बैंक</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>स्टेबलकॉइन</category>
-      <category>Open Banking</category>
-      <category>कार्ड</category>
-      <category>भुगतान ऑर्केस्ट्रेशन</category>
-    </item>
-    <item>
-      <title>Ang Multi-Rail Bank sa 2026: Cards, A2A, Stablecoins, RTP, FedNow, at Open Banking sa Isang Estratehiya</title>
-      <link>https://sebastienrousseau.com/fil/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>Hindi pumipili ng iisang kinabukasan ng pagbabayad ang multi-rail bank sa 2026. Inoorkestra nito ang cards, account-to-account (A2A) payments, RTP, FedNow, stablecoins, Open Banking, wallets, at ISO 20022 data batay sa gastos, bilis, panganib, finality, at konteksto ng kliyente.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>multi-rail bank</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>stablecoins</category>
-      <category>Open Banking</category>
-      <category>cards</category>
-      <category>orkestrasyon ng pagbabayad</category>
-    </item>
-    <item>
-      <title>2026-এর মাল্টি-রেল ব্যাংক: এক কৌশলে কার্ড, A2A, স্টেবলকয়েন, RTP, FedNow ও Open Banking</title>
-      <link>https://sebastienrousseau.com/bn/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>2026-এর মাল্টি-রেল ব্যাংক একটিই পেমেন্ট ভবিষ্যৎ বেছে নেয় না। ব্যয়, গতি, ঝুঁকি, চূড়ান্ততা ও গ্রাহক প্রসঙ্গ অনুযায়ী কার্ড, অ্যাকাউন্ট-থেকে-অ্যাকাউন্ট পেমেন্ট, RTP, FedNow, স্টেবলকয়েন, Open Banking, ওয়ালেট ও ISO 20022 ডেটা অর্কেস্ট্রেট করে।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>মাল্টি-রেল ব্যাংক</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>স্টেবলকয়েন</category>
-      <category>Open Banking</category>
-      <category>কার্ড</category>
-      <category>পেমেন্ট অর্কেস্ট্রেশন</category>
-    </item>
-    <item>
-      <title>De multi-rail bank in 2026: kaarten, A2A, stablecoins, RTP, FedNow en Open Banking in één strategie</title>
-      <link>https://sebastienrousseau.com/nl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>De multi-rail bank kiest in 2026 geen enkele betaaltoekomst. Zij orkestreert kaarten, van rekening tot rekening (A2A), RTP, FedNow, stablecoins, Open Banking, wallets en ISO 20022-data op kosten, snelheid, risico, finaliteit en klantcontext.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>multi-rail bank</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>stablecoins</category>
-      <category>Open Banking</category>
-      <category>kaarten</category>
-      <category>betalingsorkestratie</category>
-    </item>
-    <item>
-      <title>O banco multi-rail em 2026: cartões, A2A, stablecoins, RTP, FedNow e Open Banking em uma estratégia</title>
-      <link>https://sebastienrousseau.com/pt-br/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>O banco multi-rail em 2026 não escolhe um futuro único de pagamentos. Orquestra cartões, A2A, RTP, FedNow, stablecoins, Open Banking, carteiras e dados ISO 20022 por custo, velocidade, risco e finalidade.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>banco multi-rail</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>stablecoins</category>
-      <category>Open Banking</category>
-      <category>cartões</category>
-      <category>orquestração de pagamentos</category>
-    </item>
-    <item>
-      <title>المصرف متعدد المسارات في 2026: البطاقات وA2A والعملات المستقرَّة وRTP وFedNow وOpen Banking في استراتيجية واحدة</title>
-      <link>https://sebastienrousseau.com/ar/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>المصرف متعدد المسارات في 2026 لا يختار مستقبلاً واحداً للمدفوعات. يُنسِّق البطاقات وA2A وRTP وFedNow والعملات المستقرَّة وOpen Banking وبيانات ISO 20022 بحسب التكلفة والسرعة.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>المصرف متعدد المسارات</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>العملات المستقرَّة</category>
-      <category>Open Banking</category>
-      <category>البطاقات</category>
-      <category>تنسيق المدفوعات</category>
-    </item>
-    <item>
-      <title>Bankin Multi-Rail a 2026: Katuna, A2A, Stablecoins, RTP, FedNow, da Open Banking a Dabara Guda</title>
-      <link>https://sebastienrousseau.com/ha/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>Bankin multi-rail na 2026 ba ya zaɓar nan gaba ɗaya na biyan kuɗi. Yana daidaita katuna, biyan akwati-zuwa-akwati (A2A), RTP, FedNow, stablecoins, Open Banking, walat, da bayanan ISO 20022 bisa kuɗi, sauri, haɗari, ƙarewa, da yanayin abokin ciniki.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>bankin multi-rail</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>stablecoins</category>
-      <category>Open Banking</category>
-      <category>katuna</category>
-      <category>daidaita biyan kuɗi</category>
-    </item>
-    <item>
-      <title>Багаторейковий банк 2026: картки, A2A, стейблкоїни, RTP, FedNow і Open Banking</title>
-      <link>https://sebastienrousseau.com/uk/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>Багаторейковий банк 2026 року не обирає одне платіжне майбутнє: він оркеструє картки, A2A, RTP, FedNow, стейблкоїни, Open Banking, гаманці та дані ISO 20022 за вартістю, швидкістю, ризиком, остаточністю й контекстом.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>багаторейковий банк</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>стейблкоїни</category>
-      <category>Open Banking</category>
-      <category>картки</category>
-      <category>оркестрація платежів</category>
-    </item>
-    <item>
-      <title>Báńkì Multi-Rail ní 2026: Káàdì, A2A, Stablecoin, RTP, FedNow, àti Open Banking nínú Ìlànà Kan</title>
-      <link>https://sebastienrousseau.com/yo/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>Báńkì multi-rail ní 2026 kì í yan ọjọ́ iwájú ìsanwó kan ṣoṣo. Ó ń ṣètò káàdì, ìsanwó àkáǹtì-sí-àkáǹtì (A2A), RTP, FedNow, stablecoin, Open Banking, walẹ́tì, àti dátà ISO 20022 ní ìbámu pẹ̀lú owó, ìyára, ewu, ìparí, àti àyíká oníbàátì.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>báńkì multi-rail</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>stablecoin</category>
-      <category>Open Banking</category>
-      <category>káàdì</category>
-      <category>ìṣètò ìsanwó</category>
-    </item>
-    <item>
-      <title>Banca multișină în 2026: carduri, A2A, stablecoins, RTP, FedNow și Open Banking într-o singură strategie</title>
-      <link>https://sebastienrousseau.com/ro/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>Banca multișină din 2026 nu alege un singur viitor al plăților. Orchestrează carduri, plăți cont-la-cont (A2A), RTP, FedNow, stablecoins, Open Banking, portofele și date ISO 20022 după cost, viteză, risc, finalitate și context client.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>banca multișină</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>stablecoins</category>
-      <category>Open Banking</category>
-      <category>carduri</category>
-      <category>orchestrarea plăților</category>
-    </item>
-    <item>
-      <title>Мультирейловый банк в 2026: карты, A2A, стейблкоины, RTP, FedNow и Open Banking</title>
-      <link>https://sebastienrousseau.com/ru/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>Мультирейловый банк в 2026 году не выбирает одно платёжное будущее. Он оркестрирует карты, счёт-в-счёт (A2A), RTP, FedNow, стейблкоины, Open Banking, кошельки и данные ISO 20022 по стоимости, скорости, риску, окончательности и контексту клиента.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>мультирейловый банк</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>стейблкоины</category>
-      <category>Open Banking</category>
-      <category>карты</category>
-      <category>оркестрация платежей</category>
-    </item>
-    <item>
-      <title>Vícekolejová banka v roce 2026: karty, A2A, stablecoiny, RTP, FedNow a Open Banking v jedné strategii</title>
-      <link>https://sebastienrousseau.com/cs/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>Vícekolejová banka v roce 2026 si nevolí jedinou platební budoucnost. Orchestruje karty, A2A platby, RTP, FedNow, stablecoiny, Open Banking, peněženky a data ISO 20022 podle nákladů, rychlosti, rizika, finality a kontextu klienta.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>vícekolejová banka</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>stablecoiny</category>
-      <category>Open Banking</category>
-      <category>karty</category>
-      <category>orchestrace plateb</category>
-    </item>
-    <item>
-      <title>La banca multirail nel 2026: carte, A2A, stablecoin, RTP, FedNow e Open Banking in un'unica strategia</title>
-      <link>https://sebastienrousseau.com/it/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>La banca multirail nel 2026 non sceglie un unico futuro dei pagamenti: orchestra carte, pagamenti da conto a conto (A2A), RTP, FedNow, stablecoin, Open Banking, portafogli e dati ISO 20022 per costo, velocità, rischio, finalità e contesto cliente.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>banca multirail</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>stablecoin</category>
-      <category>Open Banking</category>
-      <category>carte</category>
-      <category>orchestrazione dei pagamenti</category>
-    </item>
-    <item>
-      <title>2026 年のマルチレール銀行:単一戦略におけるカード、A2A、RTP、FedNow、OB</title>
-      <link>https://sebastienrousseau.com/ja/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>2026 年のマルチレール銀行は、単一の決済の未来を選びません。カード、口座間 (A2A) 決済、RTP、FedNow、ステーブルコイン、オープンバンキング、ウォレット、ISO 20022 データを、コスト、速度、リスク、ファイナリティ、顧客文脈に応じてオーケストレーションします。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>マルチレール銀行</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>ステーブルコイン</category>
-      <category>オープンバンキング</category>
-      <category>カード</category>
-      <category>決済オーケストレーション</category>
-    </item>
-    <item>
-      <title>הבנק הרב-מסילתי ב-2026: כרטיסים, A2A, סטייבלקוינים, RTP, FedNow ו-Open Banking באסטרטגיה אחת</title>
-      <link>https://sebastienrousseau.com/he/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>הבנק הרב-מסילתי ב-2026 אינו בוחר עתיד תשלומים אחד. הוא מתזמר כרטיסים, A2A, RTP, FedNow, סטייבלקוינים, Open Banking, ארנקים ונתוני ISO 20022 לפי עלות, מהירות, סיכון, סופיות והקשר לקוח.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>בנק רב-מסילתי</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>סטייבלקוינים</category>
-      <category>Open Banking</category>
-      <category>כרטיסים</category>
-      <category>תזמור תשלומים</category>
-    </item>
-    <item>
-      <title>Multi-rail-banken 2026: kort, A2A, stablecoins, RTP, FedNow och Open Banking i en strategi</title>
-      <link>https://sebastienrousseau.com/sv/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>Multi-rail-banken 2026 orkestrerar kort, A2A, RTP, FedNow, stablecoins, Open Banking, plånböcker och ISO 20022-data per transaktion efter kostnad, hastighet, risk och finalitet.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>multi-rail-bank</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>stablecoins</category>
-      <category>Open Banking</category>
-      <category>kort</category>
-      <category>betalningsorkestrering</category>
-    </item>
-    <item>
-      <title>Ngân hàng đa kênh 2026: thẻ, A2A, stablecoin, RTP, FedNow và Open Banking trong một chiến lược</title>
-      <link>https://sebastienrousseau.com/vi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>Ngân hàng đa kênh 2026 không chọn một tương lai thanh toán duy nhất. Họ điều phối thẻ, A2A, RTP, FedNow, stablecoin, Open Banking, ví và dữ liệu ISO 20022 theo chi phí, tốc độ, rủi ro và bối cảnh.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>ngân hàng đa kênh</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>stablecoin</category>
-      <category>Open Banking</category>
-      <category>thẻ</category>
-      <category>điều phối thanh toán</category>
-    </item>
-    <item>
-      <title>Wieloszynowy bank w 2026: karty, A2A, stablecoiny, RTP, FedNow i Open Banking w jednej strategii</title>
-      <link>https://sebastienrousseau.com/pl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>Wieloszynowy bank w 2026 nie wybiera jednej przyszlosci platnosci. Orkiestruje karty, platnosci konto do konta (A2A), RTP, FedNow, stablecoiny, Open Banking, portfele i dane ISO 20022 wedlug kosztu, predkosci, ryzyka, finalnosci i kontekstu klienta.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>wieloszynowy bank</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>stablecoiny</category>
-      <category>Open Banking</category>
-      <category>karty</category>
-      <category>orkiestracja platnosci</category>
-    </item>
-    <item>
-      <title>2026 多軌銀行:卡、A2A、穩定幣、RTP、FedNow 與 Open Banking 整合策略</title>
-      <link>https://sebastienrousseau.com/zh-hant/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>2026 年的多軌銀行不會押注單一支付未來,而是依成本、速度、風險、終結性與客戶情境,編排卡、帳戶對帳戶 (A2A) 支付、RTP、FedNow、穩定幣、Open Banking、錢包與 ISO 20022 資料。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>多軌銀行</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>穩定幣</category>
-      <category>Open Banking</category>
-      <category>卡</category>
-      <category>支付編排</category>
-    </item>
-    <item>
-      <title>多轨银行 2026：卡、A2A、稳定币、RTP、FedNow 与 Open Banking 的一体战略</title>
-      <link>https://sebastienrousseau.com/zh-hans/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>2026 年的多轨银行不押注单一支付未来，而是按成本、速度、风险、终结性与客户情境，编排卡、A2A、RTP、FedNow、稳定币、Open Banking、钱包与 ISO 20022 数据。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>多轨银行</category>
-      <category>A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>稳定币</category>
-      <category>Open Banking</category>
-      <category>卡组织</category>
-      <category>支付编排</category>
-    </item>
-    <item>
-      <title>DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</title>
-      <link>https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026</link>
-      <description>DORA, the EU AI Act, GDPR, cloud concentration risk, and data sovereignty are converging into one 2026 compliance stack for banks.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>data sovereignty</category>
+      <category>post-quantum cryptography</category>
+      <category>PQC</category>
+      <category>crypto-agility</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>payment infrastructure</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
       <category>operational resilience</category>
-      <category>cloud concentration risk</category>
-      <category>AI governance</category>
     </item>
     <item>
-      <title>DORA, EU AI Yasası ve Veri Egemenliği: Bankalar için 2026 Uyum Yığını</title>
-      <link>https://sebastienrousseau.com/tr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU AI Yasası, GDPR, bulut yoğunlaşma riski ve veri egemenliği 2026&apos;da bankalar için tek bir uyum yığınında birleşiyor — yığın artık mimari bir disiplindir.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <title>Kuantum Sonrası Ödeme Altyapısı: Bankalar Neden Eski Rayları Uyarlamak Yerine Değiştirebilir</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Kuantum sonrası kriptografi ödeme raylarına ikili bir seçim dayatır: ML-KEM ve ML-DSA için hiç boyutlanmamış SWIFT MT ve ISO 20022 zarflarında RSA/ECC&apos;yi uyarlamak ya da kripto-çevik altyapıyla değiştirmek. Mimarlar HNDL operasyonel kayba dönüşmeden karar vermeli.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Yasası</category>
-      <category>veri egemenliği</category>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>Teknoloji</category>
+      <category>kuantum sonrası kriptografi</category>
+      <category>PQC</category>
+      <category>kripto-çeviklik</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>ödeme altyapısı</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
       <category>operasyonel dayanıklılık</category>
-      <category>bulut yoğunlaşma riski</category>
-      <category>AI yönetişimi</category>
     </item>
     <item>
-      <title>DORA กฎหมาย AI ของ EU และอธิปไตยข้อมูล: สแต็คการปฏิบัติตามกฎปี 2026 ของธนาคาร</title>
-      <link>https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA กฎหมาย AI ของ EU GDPR ความเสี่ยงการกระจุกตัวของคลาวด์ และอธิปไตยข้อมูลกำลังหลอมรวมเป็นสแต็คการปฏิบัติตามกฎเดียวสำหรับธนาคารในปี 2026 คำถามเชิงกลยุทธ์คือวินัยในการออกแบบสถาปัตยกรรม</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <title>โครงสร้างพื้นฐาน PQC การชำระเงิน: เหตุใดธนาคารจึงควรแทนที่ราง ดั้งเดิม ไม่ใช่ปรับเปลี่ยน</title>
+      <link>https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>การเข้ารหัสยุคหลังควอนตัมบีบให้ราง การชำระเงินเลือกแบบทวิภาค: ปรับเปลี่ยน RSA/ECC ภายในซอง SWIFT MT และ ISO 20022 ที่ไม่เคยถูกออกแบบสำหรับ ML-KEM และ ML-DSA หรือแทนที่ด้วยโครงสร้างพื้นฐานที่คล่องตัวด้านการเข้ารหัส</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>Technology</category>
-      <category>DORA</category>
-      <category>กฎหมาย AI ของ EU</category>
-      <category>อธิปไตยข้อมูล</category>
-      <category>ความยืดหยุ่นการปฏิบัติงาน</category>
-      <category>ความเสี่ยงการกระจุกตัวของคลาวด์</category>
-      <category>การกำกับดูแล AI</category>
+      <category>การเข้ารหัสยุคหลังควอนตัม</category>
+      <category>PQC</category>
+      <category>ความคล่องตัวด้านการเข้ารหัส</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>โครงสร้างพื้นฐานการชำระเงิน</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
+      <category>ความยืดหยุ่นในการดำเนินงาน</category>
     </item>
     <item>
-      <title>DORA, EU AI Act y soberanía de datos: el stack de cumplimiento bancario 2026</title>
-      <link>https://sebastienrousseau.com/es/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU AI Act, GDPR, riesgo de concentración cloud y soberanía de datos convergen en 2026 en un único stack de cumplimiento para la banca europea.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <title>Infraestructura de pagos poscuántica: por qué los bancos reemplazarán los carriles heredados en lugar de adaptarlos</title>
+      <link>https://sebastienrousseau.com/es/2026-05-31-post-quantum-pagos-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>La criptografía poscuántica impone una decisión binaria a los carriles de pago: adaptar RSA/ECC dentro de envoltorios SWIFT MT e ISO 20022 que nunca se dimensionaron para ML-KEM y ML-DSA, o reemplazarlos con infraestructura cripto-ágil. Hay que decidir antes de que HNDL sea pérdida operativa.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-05-31-post-quantum-pagos-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>soberanía de datos</category>
+      <category>criptografía poscuántica</category>
+      <category>PQC</category>
+      <category>cripto-agilidad</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>infraestructura de pagos</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
       <category>resiliencia operativa</category>
-      <category>riesgo de concentración cloud</category>
-      <category>gobernanza de IA</category>
     </item>
     <item>
-      <title>DORA, EU AI Act et souveraineté des données : la pile de conformité 2026 pour les banques</title>
-      <link>https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, l&apos;EU AI Act, le RGPD, le risque de concentration cloud et la souveraineté des données convergent en 2026 vers une pile de conformité unique pour les banques.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <title>Infrastructure de paiement post-quantique : pourquoi les banques remplaceront plutôt que d'adapter les rails hérités</title>
+      <link>https://sebastienrousseau.com/fr/2026-05-31-post-quantique-paiements-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>La cryptographie post-quantique impose un choix binaire aux rails de paiement : adapter RSA/ECC dans des enveloppes SWIFT MT et ISO 20022 jamais dimensionnées pour ML-KEM et ML-DSA, ou remplacer par une infrastructure crypto-agile. Les architectes doivent trancher avant que HNDL ne devienne perte opérationnelle.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-31-post-quantique-paiements-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>souveraineté des données</category>
+      <category>cryptographie post-quantique</category>
+      <category>PQC</category>
+      <category>agilité cryptographique</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>infrastructure de paiement</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
       <category>résilience opérationnelle</category>
-      <category>risque de concentration cloud</category>
-      <category>gouvernance IA</category>
     </item>
     <item>
-      <title>DORA, EU AI Act, dan Kedaulatan Data: Tumpukan Kepatuhan 2026 bagi Bank</title>
-      <link>https://sebastienrousseau.com/id/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU AI Act, GDPR, risiko konsentrasi cloud, dan kedaulatan data berkonvergensi menjadi satu tumpukan kepatuhan 2026 bagi bank — orkestrasi bukti tunggal.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <title>Infrastruktur Pembayaran Pasca-Kuantum: Mengapa Bank Mungkin Mengganti Alih-alih Menyesuaikan Rel Warisan</title>
+      <link>https://sebastienrousseau.com/id/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Kriptografi pasca-kuantum memaksa pilihan biner pada rel pembayaran: sesuaikan RSA/ECC di dalam amplop SWIFT MT dan ISO 20022 yang tidak pernah diukur untuk ML-KEM dan ML-DSA, atau ganti dengan infrastruktur kripto-agil. Arsitek harus memutuskan sebelum HNDL menjadi kerugian operasional.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Kepatuhan</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>kedaulatan data</category>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>kriptografi pasca-kuantum</category>
+      <category>PQC</category>
+      <category>kripto-agilitas</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>infrastruktur pembayaran</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
       <category>ketahanan operasional</category>
-      <category>risiko konsentrasi cloud</category>
-      <category>tata kelola AI</category>
     </item>
     <item>
-      <title>DORA, EU AI 법, 데이터 주권: 2026년 은행을 위한 컴플라이언스 스택</title>
-      <link>https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU AI 법, GDPR, 클라우드 집중 위험, 데이터 주권이 2026년 은행을 위한 하나의 컴플라이언스 스택으로 수렴합니다. 다섯 개의 병행 프로그램이 아닌 하나의 아키텍처 규율이 승부를 가릅니다.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <title>양자내성 결제 인프라: 은행이 레거시 레일을 개조하지 않고 대체할 수밖에 없는 이유</title>
+      <link>https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>양자내성암호는 결제 레일에 이분법적 선택을 강요합니다. ML-KEM·ML-DSA용으로 설계되지 않은 SWIFT MT·ISO 20022 봉투에 RSA/ECC를 개조하거나, 암호 민첩성 인프라로 대체해야 합니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI 법</category>
-      <category>데이터 주권</category>
+      <category>양자내성암호</category>
+      <category>PQC</category>
+      <category>암호 민첩성</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>결제 인프라</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
       <category>운영 회복력</category>
-      <category>클라우드 집중 위험</category>
-      <category>AI 거버넌스</category>
     </item>
     <item>
-      <title>DORA, EU-KI-Verordnung und Datensouveränität: Der Compliance-Stack 2026 für Banken</title>
-      <link>https://sebastienrousseau.com/de/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, die EU-KI-Verordnung, DSGVO, Cloud-Konzentrationsrisiko und Datensouveränität verschmelzen 2026 zu einem Compliance-Stack für Banken.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <title>Post-Quanten-Zahlungsinfrastruktur: Warum Banken bestehende Rails ersetzen statt nachrüsten</title>
+      <link>https://sebastienrousseau.com/de/2026-05-31-post-quantum-zahlungsverkehr-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Post-Quanten-Kryptografie zwingt Zahlungsrails zu einer binären Entscheidung: RSA/ECC in SWIFT MT- und ISO-20022-Hüllen nachrüsten, die nie für ML-KEM und ML-DSA dimensioniert wurden, oder durch krypto-agile Infrastruktur ersetzen. Architekten müssen entscheiden, bevor HNDL zum operativen Verlust wird.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-31-post-quantum-zahlungsverkehr-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>Technology</category>
-      <category>DORA</category>
-      <category>EU-KI-Verordnung</category>
-      <category>Datensouveränität</category>
-      <category>operationelle Resilienz</category>
-      <category>Cloud-Konzentrationsrisiko</category>
-      <category>KI-Governance</category>
+      <category>Post-Quanten-Kryptografie</category>
+      <category>PQC</category>
+      <category>Krypto-Agilität</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>Zahlungsinfrastruktur</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
+      <category>operative Resilienz</category>
     </item>
     <item>
-      <title>DORA, EU AI अधिनियम और डेटा संप्रभुता: बैंकों का 2026 अनुपालन स्टैक</title>
-      <link>https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU AI अधिनियम, GDPR, क्लाउड संकेंद्रण जोखिम और डेटा संप्रभुता बैंकों के लिए 2026 के एकल अनुपालन स्टैक में मिल रहे हैं।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <title>पोस्ट-क्वांटम भुगतान बुनियादी ढाँचा: बैंक विरासत रेलों का अनुकूलन क्यों नहीं, प्रतिस्थापन क्यों कर सकते हैं</title>
+      <link>https://sebastienrousseau.com/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>पोस्ट-क्वांटम क्रिप्टोग्राफी भुगतान रेलों पर बाइनरी विकल्प थोपती है: SWIFT MT और ISO 20022 आवरणों में RSA/ECC का अनुकूलन, या क्रिप्टो-चपल बुनियादी ढाँचे से प्रतिस्थापन। आर्किटेक्ट्स को HNDL नुकसान बनने से पहले तय करना होगा।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>डेटा संप्रभुता</category>
+      <category>पोस्ट-क्वांटम क्रिप्टोग्राफी</category>
+      <category>PQC</category>
+      <category>क्रिप्टो-चपलता</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>भुगतान बुनियादी ढाँचा</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
       <category>परिचालन लचीलापन</category>
-      <category>क्लाउड संकेंद्रण जोखिम</category>
-      <category>AI गवर्नेंस</category>
     </item>
     <item>
-      <title>DORA, EU AI Act, at Soberanya ng Data: Compliance Stack ng Bangko 2026</title>
-      <link>https://sebastienrousseau.com/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>Ang DORA, EU AI Act, GDPR, panganib ng konsentrasyon sa cloud, at soberanya ng data ay nagtatagpo sa iisang compliance stack para sa mga bangko sa 2026.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <title>Post-Quantum Payments Infrastructure: Bakit Maaaring Palitan ng mga Bangko ang Legacy Rails sa Halip na I-adapt</title>
+      <link>https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Pinipili ng post-quantum cryptography ang payment rails: adaptasyon ng RSA/ECC sa SWIFT MT at ISO 20022 envelopes na hindi sukat sa ML-KEM at ML-DSA, o pagpapalit sa crypto-agile infrastructure. Magdesisyon bago maging operational loss ang HNDL.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>soberanya ng data</category>
-      <category>katatagan ng operasyon</category>
-      <category>panganib ng konsentrasyon sa cloud</category>
-      <category>AI governance</category>
+      <category>post-quantum cryptography</category>
+      <category>PQC</category>
+      <category>crypto-agility</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>imprastraktura ng pagbabayad</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
+      <category>katatagang operasyonal</category>
     </item>
     <item>
-      <title>DORA, EU AI আইন ও ডেটা সার্বভৌমত্ব: ব্যাংকের জন্য ২০২৬-এর কমপ্লায়েন্স স্ট্যাক</title>
-      <link>https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU AI আইন, GDPR, ক্লাউড ঘনত্ব ঝুঁকি ও ডেটা সার্বভৌমত্ব ২০২৬-এ ব্যাংকগুলির জন্য একক কমপ্লায়েন্স স্ট্যাকে একীভূত হচ্ছে।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <title>পোস্ট-কোয়ান্টাম পেমেন্ট পরিকাঠামো: কেন ব্যাংক লিগ্যাসি রেল অভিযোজন না করে প্রতিস্থাপন করতে পারে</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি পেমেন্ট রেলে দুটি পথ রাখে: SWIFT MT ও ISO 20022 এনভেলপে RSA/ECC অভিযোজন, অথবা ক্রিপ্টো-চটপটে পরিকাঠামোয় প্রতিস্থাপন। HNDL অপারেশনাল ক্ষতি হওয়ার আগেই স্থপতিদের সিদ্ধান্ত নিতে হবে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>ডেটা সার্বভৌমত্ব</category>
-      <category>পরিচালনগত স্থিতিস্থাপকতা</category>
-      <category>ক্লাউড কেন্দ্রীভবন ঝুঁকি</category>
-      <category>AI শাসন</category>
+      <category>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি</category>
+      <category>PQC</category>
+      <category>ক্রিপ্টো-চটপটে</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>পেমেন্ট পরিকাঠামো</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
+      <category>অপারেশনাল স্থিতিস্থাপকতা</category>
     </item>
     <item>
-      <title>DORA, EU AI Act en datasoevereiniteit: de compliance-stack 2026 voor banken</title>
-      <link>https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU AI Act, GDPR, concentratierisico cloud en datasoevereiniteit smelten in 2026 samen tot één compliance-stack voor banken in Nederland.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <title>Post-quantum betaalinfrastructuur: waarom banken bestaande rails eerder vervangen dan aanpassen</title>
+      <link>https://sebastienrousseau.com/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Post-quantum-cryptografie dwingt betaalrails tot een binaire keuze: RSA/ECC aanpassen binnen SWIFT MT- en ISO 20022-enveloppen die nooit op ML-KEM en ML-DSA zijn afgestemd, of vervangen door crypto-flexibele infrastructuur. Architecten moeten beslissen voordat HNDL verlies wordt.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>datasoevereiniteit</category>
+      <category>post-quantum-cryptografie</category>
+      <category>PQC</category>
+      <category>crypto-flexibiliteit</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>betalingsinfrastructuur</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
       <category>operationele veerkracht</category>
-      <category>concentratierisico cloud</category>
-      <category>AI-governance</category>
     </item>
     <item>
-      <title>DORA, EU AI Act e soberania de dados: a stack de conformidade bancária 2026</title>
-      <link>https://sebastienrousseau.com/pt-br/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU AI Act, GDPR, risco de concentração em nuvem e soberania de dados convergem em uma stack de conformidade única para bancos em 2026.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <title>Infraestrutura de pagamentos pós-quântica: por que bancos podem substituir em vez de adaptar trilhos legados</title>
+      <link>https://sebastienrousseau.com/pt-br/2026-05-31-post-quantum-pagamentos-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>ML-KEM e ML-DSA não cabem nos envelopes SWIFT MT e ISO 20022 dimensionados para RSA-2048. HNDL fecha a janela. Em 2026, substituir os trilhos vence adaptar.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-05-31-post-quantum-pagamentos-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>soberania de dados</category>
+      <category>criptografia pós-quântica</category>
+      <category>PQC</category>
+      <category>cripto-agilidade</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>infraestrutura de pagamentos</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
       <category>resiliência operacional</category>
-      <category>risco de concentração em nuvem</category>
-      <category>governança de IA</category>
     </item>
     <item>
-      <title>DORA وقانون الذكاء الاصطناعي وسيادة البيانات: حزمة امتثال 2026 للمصارف</title>
-      <link>https://sebastienrousseau.com/ar/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>تتقارب DORA وقانون الذكاء الاصطناعي الأوروبي وGDPR ومخاطر التركيز السحابي وسيادة البيانات في حزمة امتثال موحدة للمصارف عام 2026 ضمن هندسة تشغيلية واحدة.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <title>بنية المدفوعات ما بعد الكمية: لماذا قد تستبدل المصارف قنواتها القديمة بدل تحديثها</title>
+      <link>https://sebastienrousseau.com/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>التشفير ما بعد الكمي يفرض خيارًا ثنائيًا على قنوات المدفوعات: تعديل RSA/ECC داخل مظاريف SWIFT MT وISO 20022 التي لم تُصمَّم أصلًا لاستيعاب ML-KEM وML-DSA، أو الاستبدال ببنية تحتية ذات مرونة تشفيرية. على المعماريين الحسم قبل أن يتحوَّل HNDL إلى خسارة تشغيلية.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>السيادة على البيانات</category>
-      <category>المرونة التشغيلية</category>
-      <category>مخاطر تركز السحابة</category>
-      <category>حوكمة الذكاء الاصطناعي</category>
+      <category>التشفير ما بعد الكمي</category>
+      <category>PQC</category>
+      <category>المرونة التشفيرية</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>بنية المدفوعات التحتية</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
+      <category>الصمود التشغيلي</category>
     </item>
     <item>
-      <title>DORA, EU AI Act, da Ikon Mallakar Bayanai: Tarin Bin Doka na 2026 ga Bankuna</title>
-      <link>https://sebastienrousseau.com/ha/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU AI Act, GDPR, haɗarin tarawar cloud, da ikon mallakar bayanai sun haɗu zuwa tarin bin doka guda na bankuna a 2026.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <title>Kayan Biya Bayan Quantum: Me Ya Sa Bankuna Za Su Iya Maye Gurbin Tsofaffin Hanyoyi Maimakon Daidaitawa</title>
+      <link>https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Cryptography bayan quantum tana tilasta zaɓi biyu kan hanyoyin biya: daidaita RSA/ECC cikin SWIFT MT da ISO 20022 da ba a tsara wa ML-KEM da ML-DSA ba, ko maye gurbi da kayan saurin crypto. Masu zane su yanke kafin HNDL ya zama asarar aiki.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>ikon mallakar bayanai</category>
+      <category>cryptography bayan quantum</category>
+      <category>PQC</category>
+      <category>saurin crypto</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>kayan biya</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
       <category>juriya na aiki</category>
-      <category>haɗarin tarawar cloud</category>
-      <category>gudanar da AI</category>
     </item>
     <item>
-      <title>DORA, EU AI Act і суверенітет даних: стек банківського комплаєнсу 2026</title>
-      <link>https://sebastienrousseau.com/uk/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU AI Act, GDPR, концентраційний ризик хмари та суверенітет даних збираються в єдиний стек банківського комплаєнсу 2026 року.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <title>Постквантова платіжна інфраструктура: чому банки замінюють застарілі рейки, а не доробляють їх</title>
+      <link>https://sebastienrousseau.com/uk/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Постквантова криптографія ставить платіжні рейки перед бінарним вибором: доробляти RSA/ECC у SWIFT MT та ISO 20022, не розрахованих на ML-KEM і ML-DSA, або замінювати на криптоагільну інфраструктуру. Рішення архітекторів — до того, як HNDL стане операційним збитком.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>суверенітет даних</category>
+      <category>постквантова криптографія</category>
+      <category>PQC</category>
+      <category>криптоагільність</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>платіжна інфраструктура</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
       <category>операційна стійкість</category>
-      <category>концентраційний ризик хмари</category>
-      <category>управління ШІ</category>
     </item>
     <item>
-      <title>DORA, EU AI Act, àti Ọba Lori Dátà: Akopọ Ìbámu 2026 fún Báńkì</title>
-      <link>https://sebastienrousseau.com/yo/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU AI Act, GDPR, ewu ìṣàkójọ cloud, àti ọba lori dátà ń pa pọ̀ di akopọ ìbámu kan ṣoṣo fún àwọn báńkì ní 2026 — ìbéèrè ìlànà ni.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <title>Ìgbékalẹ̀ Ìsanwó Lẹyin-Quantum: Ìdí Tí Báńkì Fi Lè Fìrọ́pò Dípò Ìbámu Ọ̀nà Àkànṣe</title>
+      <link>https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Cryptography lẹyin-quantum fi àyàn méjì lélẹ̀ fún ọ̀nà ìsanwó: ìbámu RSA/ECC nínú ìdìpọ̀ SWIFT MT àti ISO 20022 tí kò bá ML-KEM àti ML-DSA mu, tàbí ìfìrọ́pò pẹ̀lú ìgbékalẹ̀ ìyára crypto. Àwọn ayàwòrán gbọ́dọ̀ pinnu kí HNDL tó di àdánù iṣẹ́.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>ọba lori dátà</category>
-      <category>ìfaradà iṣẹ́</category>
-      <category>ewu ìṣàkójọ cloud</category>
-      <category>ìṣàkóso AI</category>
+      <category>cryptography lẹyin-quantum</category>
+      <category>PQC</category>
+      <category>ìyára crypto</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>ìgbékalẹ̀ ìsanwó</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
+      <category>ìduróṣinṣin iṣẹ</category>
     </item>
     <item>
-      <title>DORA, EU AI Act și suveranitatea datelor: stiva de conformitate bancară 2026</title>
-      <link>https://sebastienrousseau.com/ro/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU AI Act, GDPR, riscul de concentrare cloud și suveranitatea datelor converg într-o singură stivă de conformitate bancară pentru 2026.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <title>Infrastructură de plăți post-cuantică: de ce băncile pot înlocui mai degrabă decât adapta căile moștenite</title>
+      <link>https://sebastienrousseau.com/ro/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Criptografia post-cuantică impune o alegere binară pentru căile de plată: adaptarea RSA/ECC în anvelopele SWIFT MT și ISO 20022 nedimensionate pentru ML-KEM și ML-DSA, sau înlocuirea cu infrastructură cripto-agilă. Arhitecții trebuie să decidă înainte ca HNDL să producă pierdere operațională.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>suveranitatea datelor</category>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>Tehnologie</category>
+      <category>criptografie post-cuantică</category>
+      <category>PQC</category>
+      <category>cripto-agilitate</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>infrastructură de plăți</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
       <category>reziliență operațională</category>
-      <category>risc de concentrare cloud</category>
-      <category>guvernanța AI</category>
     </item>
     <item>
-      <title>DORA, Закон ЕС об ИИ и суверенитет данных: стек комплаенса банков 2026 года</title>
-      <link>https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU AI Act, GDPR, риск концентрации в облаке и суверенитет данных сходятся в единый стек комплаенса банков 2026 года — архитектурный выбор.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <title>Постквантовая платёжная инфраструктура: почему банки заменят, а не доработают устаревшие рельсы</title>
+      <link>https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Постквантовая криптография ставит платёжные рельсы перед бинарным выбором: доработка RSA/ECC в конвертах SWIFT MT и ISO 20022, не рассчитанных на ML-KEM и ML-DSA, либо замена на криптоагильную инфраструктуру. Архитекторы должны решить до того, как HNDL станет операционной потерей.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>суверенитет данных</category>
+      <category>постквантовая криптография</category>
+      <category>PQC</category>
+      <category>криптоагильность</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>платёжная инфраструктура</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
       <category>операционная устойчивость</category>
-      <category>риск концентрации в облаке</category>
-      <category>управление ИИ</category>
     </item>
     <item>
-      <title>DORA, EU AI Act a suverenita dat: Compliance stack pro banky v roce 2026</title>
-      <link>https://sebastienrousseau.com/cs/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU AI Act, GDPR, koncentrační riziko v cloudu a suverenita dat se v roce 2026 sbíhají do jediného compliance stacku pro banky.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <title>Postkvantová infrastruktura plateb: proč banky nahradí, místo aby upravovaly starší kolejnice</title>
+      <link>https://sebastienrousseau.com/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Postkvantová kryptografie staví platební kolejnice před binární volbu: upravit RSA/ECC v obálkách SWIFT MT a ISO 20022, které nebyly dimenzovány pro ML-KEM a ML-DSA, nebo nahradit krypto-agilní infrastrukturou, než HNDL přejde v provozní ztrátu.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>suverenita dat</category>
+      <category>postkvantová kryptografie</category>
+      <category>PQC</category>
+      <category>krypto-agilita</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>platební infrastruktura</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
       <category>provozní odolnost</category>
-      <category>koncentrační riziko v cloudu</category>
-      <category>governance AI</category>
     </item>
     <item>
-      <title>DORA, EU AI Act e sovranità dei dati: lo stack di conformità 2026 per le banche</title>
-      <link>https://sebastienrousseau.com/it/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA, EU AI Act, GDPR, rischio di concentrazione cloud e sovranità dei dati convergono nello stack di conformità 2026 per le banche europee.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <title>Infrastruttura pagamenti post-quantistica: perché le banche potrebbero sostituire i rail legacy invece di adattarli</title>
+      <link>https://sebastienrousseau.com/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>La crittografia post-quantistica impone una scelta binaria ai rail di pagamento: adattare RSA/ECC dentro involucri SWIFT MT e ISO 20022 mai dimensionati per ML-KEM e ML-DSA, oppure sostituire con infrastrutture cripto-agili. Decidere prima che HNDL diventi perdita operativa.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>sovranità dei dati</category>
+      <category>crittografia post-quantistica</category>
+      <category>PQC</category>
+      <category>cripto-agilità</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>infrastruttura di pagamento</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
       <category>resilienza operativa</category>
-      <category>rischio di concentrazione cloud</category>
-      <category>governance AI</category>
     </item>
     <item>
-      <title>DORA、EU AI Act、データ主権:2026 年銀行向けコンプライアンス・スタック</title>
-      <link>https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</link>
-      <description>DORA、EU AI Act、GDPR、クラウド集中リスク、データ主権は、2026 年に銀行向けの単一のコンプライアンス・スタックへと収斂しつつあります。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html</guid>
-      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <title>耐量子決済基盤:銀行が既存レールを後付け対応ではなく置換すべき理由</title>
+      <link>https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>耐量子暗号は決済レールに二者択一を迫ります。ML-KEM/ML-DSA 向けに設計されていない SWIFT MT・ISO 20022 封筒に RSA/ECC を後付けするか、暗号アジリティを備えた基盤へ置換するか。HNDL が実害となる前に判断が必要です。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>Technology</category>
-      <category>DORA</category>
-      <category>EU AI Act</category>
-      <category>データ主権</category>
-      <category>オペレーショナル・レジリエンス</category>
-      <category>クラウド集中リスク</category>
-      <category>AI ガバナンス</category>
+      <category>耐量子計算機暗号</category>
+      <category>PQC</category>
+      <category>暗号アジリティ</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>決済インフラ</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
+      <category>運用レジリエンス</category>
+    </item>
+    <item>
+      <title>תשתית תשלומים פוסט-קוונטית: מדוע בנקים יחליפו ולא יתאימו ערוצים מורשתיים</title>
+      <link>https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>קריפטוגרפיה פוסט-קוונטית כופה החלטה בינארית על ערוצי תשלומים: התאמת RSA/ECC בתוך מעטפות SWIFT MT ו-ISO 20022 שמעולם לא נמדדו ל-ML-KEM ו-ML-DSA, או החלפה בתשתית גמישה קריפטוגרפית. ארכיטקטים חייבים להחליט לפני ש-HNDL הופך להפסד תפעולי.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>קריפטוגרפיה פוסט-קוונטית</category>
+      <category>PQC</category>
+      <category>גמישות קריפטוגרפית</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>תשתית תשלומים</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
+      <category>חוסן תפעולי</category>
+    </item>
+    <item>
+      <title>Postkvantinfrastruktur för betalningar: varför banker kan välja ersättning framför anpassning av äldre räls</title>
+      <link>https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Postkvantkryptografi tvingar fram ett binärt val för betalningsräls: anpassa RSA/ECC inom SWIFT MT- och ISO 20022-kuvert som aldrig dimensionerats för ML-KEM och ML-DSA, eller ersätt med kryptoagil infrastruktur. Arkitekter måste välja innan HNDL blir operativ förlust.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>postkvantkryptografi</category>
+      <category>PQC</category>
+      <category>kryptoagilitet</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>betalningsinfrastruktur</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
+      <category>operativ motståndskraft</category>
+    </item>
+    <item>
+      <title>Hạ tầng Thanh toán Hậu Lượng tử: Vì sao Ngân hàng nên Thay thế chứ không Điều chỉnh Đường ray Cũ</title>
+      <link>https://sebastienrousseau.com/vi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Mật mã hậu lượng tử buộc đường ray thanh toán chọn nhị phân: điều chỉnh RSA/ECC trong phong bì SWIFT MT và ISO 20022 vốn chưa từng định cỡ cho ML-KEM và ML-DSA, hay thay thế bằng hạ tầng linh hoạt mật mã. Kiến trúc sư phải quyết định trước khi HNDL biến thành tổn thất vận hành.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>Công nghệ</category>
+      <category>mật mã hậu lượng tử</category>
+      <category>PQC</category>
+      <category>linh hoạt mật mã</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>hạ tầng thanh toán</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
+      <category>khả năng phục hồi vận hành</category>
+    </item>
+    <item>
+      <title>Infrastruktura płatności postkwantowych: dlaczego banki mogą zastąpić, a nie adaptować starsze szyny</title>
+      <link>https://sebastienrousseau.com/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>Kryptografia postkwantowa wymusza na szynach płatniczych wybór binarny: adaptacja RSA/ECC w kopertach SWIFT MT i ISO 20022 nieprzystosowanych do ML-KEM i ML-DSA, czy zastąpienie infrastrukturą krypto-agilną. Architekci muszą zdecydować, zanim HNDL stanie się stratą operacyjną.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>kryptografia postkwantowa</category>
+      <category>PQC</category>
+      <category>krypto-agilność</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>infrastruktura płatnicza</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
+      <category>odporność operacyjna</category>
+    </item>
+    <item>
+      <title>後量子支付基礎建設:銀行為何可能替換而非改造傳統管道</title>
+      <link>https://sebastienrousseau.com/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>後量子密碼學迫使支付管道做出二選一決定:在 SWIFT MT 與 ISO 20022 信封中改造 RSA/ECC,或以密碼敏捷基礎建設替換。架構師必須在 HNDL 變成實際損失之前做出決定。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>後量子密碼學</category>
+      <category>PQC</category>
+      <category>密碼敏捷性</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>支付基礎建設</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
+      <category>營運韌性</category>
+    </item>
+    <item>
+      <title>后量子支付基础设施:为何银行可能替换而非改造传统通道</title>
+      <link>https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
+      <description>后量子密码学迫使支付通道作出二选一:在从未为 ML-KEM 与 ML-DSA 适配的 SWIFT MT 与 ISO 20022 信封内改造 RSA/ECC,或以密码敏捷的基础设施替换。架构师必须在 HNDL 转为运营损失前决断。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
+      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>后量子密码学</category>
+      <category>PQC</category>
+      <category>密码敏捷性</category>
+      <category>HNDL</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>NIST</category>
+      <category>支付基础设施</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>HSM</category>
+      <category>PKI</category>
+      <category>运营韧性</category>
+    </item>
+    <item>
+      <title>Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role</title>
+      <link>https://sebastienrousseau.com/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026</link>
+      <description>The UK has appointed a Wholesale Digital Markets Champion to force interoperability inside the Digital Securities Sandbox (DSS). Tokenised gilts settle this question first — HQLA on DLT, atomic against tokenised cash, with intraday repo as the prize.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>Digital Securities Sandbox</category>
+      <category>tokenised gilts</category>
+      <category>atomic DvP</category>
+      <category>intraday repo</category>
+      <category>RTGS</category>
+      <category>RLN</category>
+      <category>Canton</category>
+      <category>policy-as-code</category>
+    </item>
+    <item>
+      <title>Birleşik Krallık'ta Toptan Dijital Piyasalar: Gilt'ler ve Şampiyon Rolü</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
+      <description>Birleşik Krallık&apos;ın Toptan Dijital Piyasalar Şampiyonu rolü; tokenleştirilmiş gilt&apos;leri, DLT mutabakatını ve City&apos;yi ulusal rekabet gücü projesine bağlıyor.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>toptan dijital piyasalar</category>
+      <category>tokenleştirilmiş gilt</category>
+      <category>Chris Woolard</category>
+      <category>Birleşik Krallık tokenleştirme</category>
+      <category>mutabakat</category>
+      <category>teminat hareketliliği</category>
+    </item>
+    <item>
+      <title>ตลาดดิจิทัลค้าส่งสหราชอาณาจักร: กิลต์แบบโทเคน การชำระบัญชี และบทบาทผู้นำใหม่</title>
+      <link>https://sebastienrousseau.com/th/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
+      <description>บทบาท Wholesale Digital Markets Champion ของสหราชอาณาจักรยกระดับการเงินค้าส่งแบบโทเคนขึ้นเป็นวาระขีดความสามารถในการแข่งขันระดับชาติของ City</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>ตลาดดิจิทัลค้าส่ง</category>
+      <category>กิลต์แบบโทเคน</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>โทเคนไนเซชันสหราชอาณาจักร</category>
+      <category>การชำระบัญชี</category>
+      <category>การเคลื่อนย้ายหลักประกัน</category>
+    </item>
+    <item>
+      <title>Mercados digitales mayoristas en RU: gilts tokenizados, liquidación y campeón</title>
+      <link>https://sebastienrousseau.com/es/2026-05-30-uk-mayorista-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
+      <description>El rol de Campeón de Mercados Digitales Mayoristas del RU convierte las finanzas mayoristas tokenizadas en proyecto país.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-05-30-uk-mayorista-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>mercados digitales mayoristas</category>
+      <category>gilts tokenizados</category>
+      <category>Chris Woolard</category>
+      <category>tokenización Reino Unido</category>
+      <category>liquidación</category>
+      <category>movilidad del colateral</category>
+    </item>
+    <item>
+      <title>Marchés de gros au UK : gilts tokenisés, DSS et règlement atomique</title>
+      <link>https://sebastienrousseau.com/fr/2026-05-30-uk-de-gros-digital-markets-tokenise-gilts-settlement-2026/index.html</link>
+      <description>Le Digital Securities Sandbox et les gilts tokenisés font du règlement-livraison atomique et du repo intrajournalier le nouveau standard sterling.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-30-uk-de-gros-digital-markets-tokenise-gilts-settlement-2026/index.html</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>Digital Securities Sandbox</category>
+      <category>gilts tokenisés</category>
+      <category>repo intrajournalier</category>
+      <category>DvP atomique</category>
+      <category>FCA</category>
+      <category>Bank of England</category>
+      <category>mobilité du collatéral</category>
+    </item>
+    <item>
+      <title>Pasar Digital Grosir di Inggris: Gilts Tertokenisasi, Penyelesaian, dan Peran Champion Baru</title>
+      <link>https://sebastienrousseau.com/id/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
+      <description>Peran Wholesale Digital Markets Champion Inggris menjadikan keuangan grosir tertokenisasi sebagai proyek daya saing nasional bagi City of London di 2026.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Keuangan</category>
+      <category>pasar digital grosir</category>
+      <category>gilts tertokenisasi</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>tokenisasi Inggris</category>
+      <category>penyelesaian</category>
+      <category>mobilitas agunan</category>
+    </item>
+    <item>
+      <title>영국 도매 디지털 시장 2026: 토큰화 길트, 결제, 챔피언 직책</title>
+      <link>https://sebastienrousseau.com/ko/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
+      <description>영국 도매 디지털 시장 챔피언 직책은 토큰화 길트, DLT 결제, BoE DSS 샌드박스를 국가 경쟁력 의제로 격상시킵니다. 2026년 시티의 설계 규율을 점검합니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>도매 디지털 시장</category>
+      <category>토큰화 길트</category>
+      <category>Chris Woolard</category>
+      <category>UK tokenisation</category>
+      <category>결제</category>
+      <category>담보 이동성</category>
+    </item>
+    <item>
+      <title>Wholesale Digital Markets UK: Tokenisierte Gilts und Champion-Rolle</title>
+      <link>https://sebastienrousseau.com/de/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
+      <description>Die britische Champion-Rolle für Wholesale Digital Markets macht tokenisierte Wholesale-Finanzierung zum nationalen Wettbewerbsprojekt — Gilts zuerst.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finanzen</category>
+      <category>Wholesale Digital Markets</category>
+      <category>tokenisierte Gilts</category>
+      <category>Chris Woolard</category>
+      <category>UK Tokenisierung</category>
+      <category>Abwicklung</category>
+      <category>Sicherheitenmobilität</category>
+    </item>
+    <item>
+      <title>यूके के थोक डिजिटल बाजार: टोकनीकृत गिल्ट्स, निपटान एवं नया चैम्पियन पद</title>
+      <link>https://sebastienrousseau.com/hi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
+      <description>यूके का Wholesale Digital Markets Champion पद टोकनीकृत थोक वित्त को राष्ट्रीय प्रतिस्पर्धात्मकता परियोजना बनाता है — गिल्ट्स, निपटान, साक्ष्य।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>वित्त</category>
+      <category>थोक डिजिटल बाजार</category>
+      <category>टोकनीकृत गिल्ट्स</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>UK टोकनीकरण</category>
+      <category>निपटान</category>
+      <category>संपार्श्विक गतिशीलता</category>
+    </item>
+    <item>
+      <title>UK Wholesale Digital Markets: Tokenized Gilts, DLT Settlement, Champion</title>
+      <link>https://sebastienrousseau.com/fil/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
+      <description>Ginagawang pambansang proyekto ng kakayahang makipagkumpitensya ng UK Wholesale Digital Markets Champion ang tokenized wholesale finance, gilts, at DLT settlement.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>wholesale digital markets</category>
+      <category>tokenized gilts</category>
+      <category>UK gilts</category>
+      <category>DLT settlement</category>
+      <category>BoE DSS</category>
+      <category>City of London</category>
+      <category>Project Guardian</category>
+      <category>SDX</category>
+    </item>
+    <item>
+      <title>যুক্তরাজ্যের পাইকারি ডিজিটাল বাজার: টোকেনাইজড গিল্টস, নিষ্পত্তি ও নতুন চ্যাম্পিয়ন ভূমিকা</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
+      <description>যুক্তরাজ্যের Wholesale Digital Markets Champion ভূমিকা টোকেনাইজড পাইকারি অর্থব্যবস্থাকে জাতীয় প্রতিযোগিতার প্রকল্পে রূপান্তরিত করেছে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>হোলসেল ডিজিটাল মার্কেট</category>
+      <category>টোকেনাইজড গিল্টস</category>
+      <category>Chris Woolard</category>
+      <category>UK টোকেনাইজেশন</category>
+      <category>সেটলমেন্ট</category>
+      <category>কোল্যাটারাল মোবিলিটি</category>
+    </item>
+    <item>
+      <title>Digitale wholesale-markten in het VK: getokeniseerde gilts, afwikkeling en de nieuwe Champion-rol</title>
+      <link>https://sebastienrousseau.com/nl/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
+      <description>De rol van Wholesale Digital Markets Champion in het VK maakt van getokeniseerde wholesale-finance een nationaal concurrentievermogen-project voor de City of London.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>digitale wholesale-markten</category>
+      <category>getokeniseerde gilts</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>UK-tokenisatie</category>
+      <category>atomaire afwikkeling</category>
+      <category>mobiliteit van onderpand</category>
+    </item>
+    <item>
+      <title>Mercados de Atacado Digitais no Reino Unido: Gilts Tokenizados, Liquidação e o Novo Campeão</title>
+      <link>https://sebastienrousseau.com/pt-br/2026-05-30-uk-atacado-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
+      <description>O papel de Campeão dos Mercados de Atacado Digitais do Reino Unido transforma o atacado tokenizado em projeto nacional de competitividade para 2026.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-05-30-uk-atacado-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>mercados de atacado digitais</category>
+      <category>gilts tokenizados</category>
+      <category>Chris Woolard</category>
+      <category>tokenização UK</category>
+      <category>liquidação</category>
+      <category>mobilidade de colateral</category>
+    </item>
+    <item>
+      <title>الأسواق الرقمية للجملة في المملكة المتحدة: سندات gilt المرمَّزة، التسوية، ودور المنسق الجديد</title>
+      <link>https://sebastienrousseau.com/ar/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
+      <description>دور منسق الأسواق الرقمية للجملة في المملكة المتحدة يحوِّل تمويل الجملة المرمَّز إلى مشروع تنافسية وطني يربط سندات gilt والتسوية وDSS.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>الأسواق الرقمية للجملة، سندات gilt المرمَّزة، Chris Woolard، ترميز المملكة المتحدة، التسوية، قابلية نقل الضمانات</category>
+    </item>
+    <item>
+      <title>Kasuwannin Dijital na Yawa a Birtaniya: Gilts Tokenised, Sasantawa, da Sabon Matsayin Zakara</title>
+      <link>https://sebastienrousseau.com/ha/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
+      <description>Matsayin Zakara na Kasuwannin Dijital na Yawa na Birtaniya yana mai da kuɗin gilts tokenised zuwa aikin ƙarfin gasa na ƙasa baki ɗaya na 2026.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>kasuwannin dijital na yawa</category>
+      <category>gilts tokenised</category>
+      <category>Chris Woolard</category>
+      <category>tokenisation Birtaniya</category>
+      <category>sasantawa</category>
+      <category>motsi na garantii</category>
+    </item>
+    <item>
+      <title>Оптові цифрові ринки у Великій Британії: токенізовані гілти, розрахунок та нова роль чемпіона</title>
+      <link>https://sebastienrousseau.com/uk/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
+      <description>Роль Чемпіона оптових цифрових ринків Великої Британії перетворює токенізовані оптові фінанси на національний проєкт конкурентоспроможності Сіті у 2026 році.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>оптові цифрові ринки</category>
+      <category>токенізовані гілти</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>токенізація Великої Британії</category>
+      <category>розрахунок</category>
+      <category>мобільність застави</category>
+    </item>
+    <item>
+      <title>Àwọn Ọjà Oníròyìn Ńlá Dijítà ní UK: Gilts Tókènì, Ìpinnu Owó, àti Ipa Akọni Tuntun</title>
+      <link>https://sebastienrousseau.com/yo/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
+      <description>Ipa Akọni Àwọn Ọjà Oníròyìn Ńlá Dijítà UK ń sọ ìnáwó oníròyìn ńlá tókènì di iṣẹ́ agbára ìdíje orílẹ̀-èdè ní 2026.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>àwọn ọjà oníròyìn ńlá</category>
+      <category>gilts tókènì</category>
+      <category>Chris Woolard</category>
+      <category>tokenisation UK</category>
+      <category>ìpinnu owó</category>
+      <category>ìṣíkiri ohun-ẹ̀ẹ́gbàṣe</category>
+    </item>
+    <item>
+      <title>Piețe digitale de gros în UK: gilts tokenizați, decontare și noul rol de champion</title>
+      <link>https://sebastienrousseau.com/ro/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
+      <description>Rolul Wholesale Digital Markets Champion al Regatului Unit transformă finanța de gros tokenizată într-un proiect național de competitivitate condus din City.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finanțe</category>
+      <category>piețe digitale de gros</category>
+      <category>gilts tokenizați</category>
+      <category>Chris Woolard</category>
+      <category>tokenizare UK</category>
+      <category>decontare</category>
+      <category>mobilitatea garanțiilor</category>
+      <category>DLT</category>
+      <category>BoE DSS</category>
+    </item>
+    <item>
+      <title>Оптовые цифровые рынки Великобритании: токенизированные гилты, расчёт и новая роль координатора</title>
+      <link>https://sebastienrousseau.com/ru/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
+      <description>Роль координатора оптовых цифровых рынков Великобритании превращает токенизированные оптовые финансы в национальный проект конкурентоспособности.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>оптовые цифровые рынки</category>
+      <category>токенизированные гилты</category>
+      <category>Chris Woolard</category>
+      <category>токенизация UK</category>
+      <category>расчёт</category>
+      <category>мобильность обеспечения</category>
+    </item>
+    <item>
+      <title>Velkoobchodní digitální trhy v UK: tokenizované gilty, vypořádání a nová role Champion</title>
+      <link>https://sebastienrousseau.com/cs/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
+      <description>Britská role Wholesale Digital Markets Champion proměňuje tokenizované velkoobchodní finance v národní projekt konkurenceschopnosti City of London.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>velkoobchodní digitální trhy</category>
+      <category>tokenizované gilty</category>
+      <category>Chris Woolard</category>
+      <category>tokenizace UK</category>
+      <category>vypořádání</category>
+      <category>mobilita kolaterálu</category>
+    </item>
+    <item>
+      <title>Mercati digitali all'ingrosso nel Regno Unito: gilts tokenizzati, regolamento e il nuovo ruolo di champion</title>
+      <link>https://sebastienrousseau.com/it/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
+      <description>Il ruolo di Wholesale Digital Markets Champion trasforma la finanza all&apos;ingrosso tokenizzata in un progetto di competitività nazionale del Regno Unito per il 2026.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>mercati digitali all&apos;ingrosso</category>
+      <category>gilts tokenizzati</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>tokenizzazione UK</category>
+      <category>regolamento</category>
+      <category>mobilità del collaterale</category>
+    </item>
+    <item>
+      <title>英国のホールセール・デジタル市場:トークン化ギルト、決済、新チャンピオン職</title>
+      <link>https://sebastienrousseau.com/ja/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
+      <description>英国の Wholesale Digital Markets Champion 制度は、トークン化ホールセール金融を国家競争力プロジェクトへと押し上げる。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
+      <category>Finance</category>
+      <category>ホールセール・デジタル市場</category>
+      <category>トークン化ギルト</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>英国トークン化</category>
+      <category>DLT 決済</category>
+      <category>担保モビリティ</category>
     </item>
   </channel>
 </rss>

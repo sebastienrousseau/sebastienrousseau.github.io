@@ -4,22 +4,22 @@
   <link href="https://sebastienrousseau.com/tr/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/tr/"/>
   <id>https://sebastienrousseau.com/tr/</id>
-  <updated>2026-05-28T08:31:08+00:00</updated>
+  <updated>2026-05-31T10:06:34+00:00</updated>
   <entry>
-    <title>2026&apos;da Çoklu Raylı Banka: Kartlar, A2A, Stablecoin, RTP, FedNow ve Open Banking Tek Stratejide</title>
-    <link href="https://sebastienrousseau.com/tr/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
-    <id>https://sebastienrousseau.com/tr/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
-    <updated>2026-05-28T08:31:08+00:00</updated>
-    <published>2026-05-28T08:31:08+00:00</published>
-    <summary>2026 çoklu raylı bankası tek bir ödeme geleceği seçmez. Kartları, hesaptan hesaba ödemeleri, RTP, FedNow, stablecoinleri, Open Banking, cüzdanları ve ISO 20022 verisini maliyet, hız, risk, kesinleşme ve müşteri bağlamına göre orkestre eder.</summary>
+    <title>Kuantum Sonrası Ödeme Altyapısı: Bankalar Neden Eski Rayları Uyarlamak Yerine Değiştirebilir</title>
+    <link href="https://sebastienrousseau.com/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
+    <id>https://sebastienrousseau.com/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
+    <updated>2026-05-31T10:06:34+00:00</updated>
+    <published>2026-05-31T10:06:34+00:00</published>
+    <summary>Kuantum sonrası kriptografi ödeme raylarına ikili bir seçim dayatır: ML-KEM ve ML-DSA için hiç boyutlanmamış SWIFT MT ve ISO 20022 zarflarında RSA/ECC&apos;yi uyarlamak ya da kripto-çevik altyapıyla değiştirmek. Mimarlar HNDL operasyonel kayba dönüşmeden karar vermeli.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
     <title>Ödemelerin İşletim Sistemi Olarak AI: 2026&apos;da Dolandırıcılık, Yönlendirme, Dayanıklılık ve Uyum</title>
     <link href="https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/"/>
     <id>https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</id>
-    <updated>2026-05-28T08:31:08+00:00</updated>
-    <published>2026-05-28T08:31:08+00:00</published>
+    <updated>2026-05-31T10:06:34+00:00</updated>
+    <published>2026-05-31T10:06:34+00:00</published>
     <summary>AI 2026&apos;da ödemelerin işletim sistemi hâline geliyor; analitikten dolandırıcılık önleme, ödeme onarımı, yönlendirme, likidite tahmini, uyum taraması ve aracılı ticaret kontrollerine geçiyor.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -27,8 +27,8 @@
     <title>Stablecoinler ve Tokenleştirilmiş Mevduatlar 2026: Bankaların Gerçekten Savunması Gereken</title>
     <link href="https://sebastienrousseau.com/tr/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/"/>
     <id>https://sebastienrousseau.com/tr/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</id>
-    <updated>2026-05-28T08:31:08+00:00</updated>
-    <published>2026-05-28T08:31:08+00:00</published>
+    <updated>2026-05-31T10:06:34+00:00</updated>
+    <published>2026-05-31T10:06:34+00:00</published>
     <summary>Stablecoinler ve tokenleştirilmiş mevduatlar programlanabilir mutabakat etrafında yakınsıyor; ancak bilanço, hukuki, likidite ve güven modelleri farklı kalıyor.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -36,8 +36,8 @@
     <title>UK Payments Forward Plan 2026: Stablecoinler, Açık Bankacılık, Tokenleştirilmiş Mevduatlar ve Ajansal Ödemeler</title>
     <link href="https://sebastienrousseau.com/tr/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/"/>
     <id>https://sebastienrousseau.com/tr/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</id>
-    <updated>2026-05-28T08:31:08+00:00</updated>
-    <published>2026-05-28T08:31:08+00:00</published>
+    <updated>2026-05-31T10:06:34+00:00</updated>
+    <published>2026-05-31T10:06:34+00:00</published>
     <summary>UK Payments Forward Plan ve Nisan 2026 politika paketi; geleneksel ödemeler, stablecoinler, tokenleştirilmiş mevduatlar, açık bankacılık ve yapay zeka ajanı ödemeleri için tek tutarlı bir çerçeveye işaret ediyor.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -45,9 +45,36 @@
     <title>Bankacılıkta Ajansal Ödemeler: Onay, Sorumluluk ve 2026 Ödeme UX&apos;i</title>
     <link href="https://sebastienrousseau.com/tr/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/"/>
     <id>https://sebastienrousseau.com/tr/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</id>
-    <updated>2026-05-28T08:31:08+00:00</updated>
-    <published>2026-05-28T08:31:08+00:00</published>
+    <updated>2026-05-31T10:06:34+00:00</updated>
+    <published>2026-05-31T10:06:34+00:00</published>
     <summary>2026&apos;da ajansal ödemeler kavramdan canlı işleme geçti. Bankacılık sorusu artık yapay zeka ajanlarının ödeme başlatıp başlatamayacağı değil; onay, sorumluluk, kimlik, denetlenebilirlik, dolandırıcılık kontrolleri ve protokol birlikte çalışabilirliğinin nasıl kurulacağıdır.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Birleşik Krallık&apos;ta Toptan Dijital Piyasalar: Gilt&apos;ler ve Şampiyon Rolü</title>
+    <link href="https://sebastienrousseau.com/tr/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"/>
+    <id>https://sebastienrousseau.com/tr/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</id>
+    <updated>2026-05-30T06:06:06+00:00</updated>
+    <published>2026-05-30T06:06:06+00:00</published>
+    <summary>Birleşik Krallık&apos;ın Toptan Dijital Piyasalar Şampiyonu rolü; tokenleştirilmiş gilt&apos;leri, DLT mutabakatını ve City&apos;yi ulusal rekabet gücü projesine bağlıyor.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ISO 20022 Göçten Sonra: Ödeme Verisini 2026&apos;da Banka Ürünlerine Dönüştürmek</title>
+    <link href="https://sebastienrousseau.com/tr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"/>
+    <id>https://sebastienrousseau.com/tr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</id>
+    <updated>2026-05-29T06:06:06+00:00</updated>
+    <published>2026-05-29T06:06:06+00:00</published>
+    <summary>ISO 20022 göçten sonra bir ödeme verisi ürünleri fırsatıdır. Yapılandırılmış adresler, amaç kodları, fatura ayrıntıları, soruşturma mesajları ve zengin ödeme statü olayları 2026 banka platformudur.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Dijital Varlıklar 2026: Bankaların Erteleyemeyeceği Altyapı Geçişi</title>
+    <link href="https://sebastienrousseau.com/tr/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
+    <id>https://sebastienrousseau.com/tr/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>Dijital varlıklar artık inovasyon bahsi değildir. Bankalar için takas, saklama ve bilanço mimarisi sorusudur; stratejik görev yapısal belirsizlik altında altyapı tasarımıdır.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

@@ -224,6 +224,15 @@ def build_pa11yci_config(urls: list[str], hide_elements: str) -> dict[str, Any]:
         "defaults": {
             "standard": "WCAG2AAA",
             "timeout": 20000,
+            # Wait for the page to settle before pa11y starts evaluating.
+            # Without this, late-firing navigation triggers (related-posts
+            # prefetch, lazy-loaded enrich block, hreflang script) can race
+            # the Puppeteer evaluate call and produce
+            # "Execution context was destroyed, most likely because of a
+            # navigation." See 2026-05-31 build-audit run 26711760568 for
+            # the symptom — a single /he/2024-04-01-openvoice/ page failed
+            # while the other 2,296 URLs passed.
+            "wait": 500,
             "chromeLaunchConfig": {
                 "args": ["--no-sandbox", "--disable-setuid-sandbox"],
             },

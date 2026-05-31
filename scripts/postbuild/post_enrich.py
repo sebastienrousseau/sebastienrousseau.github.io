@@ -57,6 +57,9 @@ LEAD_BLOCK_RE = re.compile(
     rf"{re.escape(LEAD_START)}[\s\S]*?{re.escape(LEAD_END)}\s*",
     re.MULTILINE,
 )
+# `<!-- lead-start: manual -->` opts a hand-curated lead aside out of
+# regeneration. The auto-injector neither strips nor replaces it.
+LEAD_MANUAL_MARKER = "<!-- lead-start: manual -->"
 ENRICH_BLOCK_RE = re.compile(
     r"\n\n<!-- enrich-start -->[\s\S]*?<!-- enrich-end -->\s*",
 )
@@ -355,6 +358,8 @@ def _insert_lead(body_text: str, tldr: str, related: list[dict[str, object]]) ->
     """Stage 3: insert the top-of-body lead block. Returns (new_body,
     inserted_flag). Idempotent — skip if a hand-curated lead opens
     the body already."""
+    if LEAD_MANUAL_MARKER in body_text[:2000]:
+        return body_text, False
     body_text = remove_existing_lead(body_text)
     if body_starts_with_lead(body_text):
         return body_text, False

@@ -2,15 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/yo/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <loc>https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>yo-NG</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T08:31:08+00:00</news:publication_date>
-    <news:title>Báńkì Multi-Rail ní 2026: Káàdì, A2A, Stablecoin, RTP, FedNow, àti Open Banking nínú Ìlànà Kan</news:title>
-    <news:keywords>báńkì multi-rail 2026, ìsanwó A2A, FedNow, RTP, stablecoin, Open Banking, káàdì, ìṣètò ìsanwó, ISO 20022</news:keywords>
+    <news:publication_date>2026-05-31T10:06:34+00:00</news:publication_date>
+    <news:title>Ìgbékalẹ̀ Ìsanwó Lẹyin-Quantum: Ìdí Tí Báńkì Fi Lè Fìrọ́pò Dípò Ìbámu Ọ̀nà Àkànṣe</news:title>
+    <news:keywords>cryptography lẹyin-quantum, ìsanwó PQC, ìyára crypto, kórè-báyìí-fọkàn-báyẹn, HNDL, ìlànà PQC NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, ìṣíkiri ọ̀nà ìsanwó, ISO 20022 PQC, ìfìrọ́pò SWIFT MT, HSM, ìṣubú PKI, ìduróṣinṣin iṣẹ, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/yo/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>yo-NG</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
+    <news:title>Àwọn Ọjà Oníròyìn Ńlá Dijítà ní UK: Gilts Tókènì, Ìpinnu Owó, àti Ipa Akọni Tuntun</news:title>
+    <news:keywords>àwọn ọjà oníròyìn ńlá UK 2026, Wholesale Digital Markets Champion, gilts tókènì, BoE DSS, Project Guardian, SDX, Project Agorá, ìpinnu owó DLT, City of London</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/yo/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>yo-NG</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T06:06:06+00:00</news:publication_date>
+    <news:title>ISO 20022 Lẹ́yìn Ìṣíkiri: Yíyí Dátà Ìsanwó Padà Di Ọjà Báńkì ní 2026</news:title>
+    <news:keywords>ISO 20022 2026, àdírẹ́ẹ̀sì tó ní ìṣètò, CBPR+, àwọn ọjà dátà ìsanwó, kóòdù ìdí ìsanwó, akápò ilé-iṣẹ́, ìbáramu, àyẹ̀wò ìfòfindè, ìṣàwárí àdàmọ̀</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/yo/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>yo-NG</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T06:06:06+00:00</news:publication_date>
+    <news:title>Àwọn Dúkìá Dijítà 2026: Ìyípadà Ìkọ́lé Tí Bánkì Kò Lè Sún Sẹ́yìn</news:title>
+    <news:keywords>àwọn dúkìá dijítà 2026, RWA tí a ti tokeníní, stablecoins bánkì, ìfowópamọ́ tí a ti tokeníní, ìṣọ́ dúkìá dijítà, DLT bánkì, ìkọ́lé ìsanwó ìparí, ìṣipopadà collateral, owó alágbára-ètò, ìlànà bánkì àwọn dúkìá dijítà</news:keywords>
   </news:news>
 </url>
 <url>

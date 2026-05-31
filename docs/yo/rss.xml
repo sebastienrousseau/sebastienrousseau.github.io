@@ -6,25 +6,88 @@
     <description>Awọn akọle Yorùbá: AI tó wúlò, ìsanwó ISO 20022, kírípítógíráfì lẹ́yìn-kuántọ́mù, àti àtúnṣe ètò ìsanwó ńláńlá.</description>
     <atom:link href="https://sebastienrousseau.com/yo/rss.xml" rel="self" type="application/rss+xml"/>
     <language>yo-NG</language>
-    <lastBuildDate>Thu, 28 May 2026 08:31:08 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 10:06:34 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Gbogbo ẹtọ ti wa ni ipamọ.</copyright>
     <item>
-      <title>Báńkì Multi-Rail ní 2026: Káàdì, A2A, Stablecoin, RTP, FedNow, àti Open Banking nínú Ìlànà Kan</title>
-      <link>https://sebastienrousseau.com/yo/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
-      <description>Báńkì multi-rail ní 2026 kì í yan ọjọ́ iwájú ìsanwó kan ṣoṣo. Ó ń ṣètò káàdì, ìsanwó àkáǹtì-sí-àkáǹtì (A2A), RTP, FedNow, stablecoin, Open Banking, walẹ́tì, àti dátà ISO 20022 ní ìbámu pẹ̀lú owó, ìyára, ewu, ìparí, àti àyíká oníbàátì.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Thu, 28 May 2026 08:31:08 +0000</pubDate>
+      <title>Ìgbékalẹ̀ Ìsanwó Lẹyin-Quantum: Ìdí Tí Báńkì Fi Lè Fìrọ́pò Dípò Ìbámu Ọ̀nà Àkànṣe</title>
+      <link>https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>Cryptography lẹyin-quantum fi àyàn méjì lélẹ̀ fún ọ̀nà ìsanwó: ìbámu RSA/ECC nínú ìdìpọ̀ SWIFT MT àti ISO 20022 tí kò bá ML-KEM àti ML-DSA mu, tàbí ìfìrọ́pò pẹ̀lú ìgbékalẹ̀ ìyára crypto. Àwọn ayàwòrán gbọ́dọ̀ pinnu kí HNDL tó di àdánù iṣẹ́.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Sun, 31 May 2026 10:06:34 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>báńkì multi-rail 2026</category>
-      <category>ìsanwó A2A</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>stablecoin</category>
-      <category>Open Banking</category>
-      <category>káàdì</category>
-      <category>ìṣètò ìsanwó</category>
-      <category>ISO 20022</category>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>cryptography lẹyin-quantum</category>
+      <category>ìsanwó PQC</category>
+      <category>ìyára crypto</category>
+      <category>kórè-báyìí-fọkàn-báyẹn</category>
+      <category>HNDL</category>
+      <category>ìlànà PQC NIST</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>ìṣíkiri ọ̀nà ìsanwó</category>
+      <category>ISO 20022 PQC</category>
+      <category>ìfìrọ́pò SWIFT MT</category>
+      <category>HSM</category>
+      <category>ìṣubú PKI</category>
+      <category>ìduróṣinṣin iṣẹ</category>
+      <category>Quantum Computing Cybersecurity Preparedness Act</category>
+    </item>
+    <item>
+      <title>Àwọn Ọjà Oníròyìn Ńlá Dijítà ní UK: Gilts Tókènì, Ìpinnu Owó, àti Ipa Akọni Tuntun</title>
+      <link>https://sebastienrousseau.com/yo/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
+      <description>Ipa Akọni Àwọn Ọjà Oníròyìn Ńlá Dijítà UK ń sọ ìnáwó oníròyìn ńlá tókènì di iṣẹ́ agbára ìdíje orílẹ̀-èdè ní 2026.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>àwọn ọjà oníròyìn ńlá UK 2026</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>gilts tókènì</category>
+      <category>BoE DSS</category>
+      <category>Project Guardian</category>
+      <category>SDX</category>
+      <category>Project Agorá</category>
+      <category>ìpinnu owó DLT</category>
+      <category>City of London</category>
+    </item>
+    <item>
+      <title>ISO 20022 Lẹ́yìn Ìṣíkiri: Yíyí Dátà Ìsanwó Padà Di Ọjà Báńkì ní 2026</title>
+      <link>https://sebastienrousseau.com/yo/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 lẹ́yìn ìṣíkiri jẹ́ àǹfààní ọjà dátà. Àdírẹ́ẹ̀sì tó ní ìṣètò, kóòdù ìdí, àwọn ìránṣẹ́ ìwádìí, àti ìṣẹ̀lẹ̀ ipò ìsanwó tó kún ń di àwọn ọjà ìbáramu, àdàmọ̀, owó wíwà, ìbámu, àti àlàyé fún báńkì.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>àdírẹ́ẹ̀sì tó ní ìṣètò</category>
+      <category>CBPR+</category>
+      <category>àwọn ọjà dátà ìsanwó</category>
+      <category>kóòdù ìdí ìsanwó</category>
+      <category>akápò ilé-iṣẹ́</category>
+      <category>ìbáramu</category>
+      <category>àyẹ̀wò ìfòfindè</category>
+      <category>ìṣàwárí àdàmọ̀</category>
+    </item>
+    <item>
+      <title>Àwọn Dúkìá Dijítà 2026: Ìyípadà Ìkọ́lé Tí Bánkì Kò Lè Sún Sẹ́yìn</title>
+      <link>https://sebastienrousseau.com/yo/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>Àwọn dúkìá dijítà ti di ìbéèrè ìkọ́lé ìsanwó ìparí, ìṣọ́, àti ìwé ìwọ̀ntúnwọ̀nsì — kìí ṣe ìmúdàgbà mọ́. Iṣẹ́ ìlànà fún àwọn bánkì ní 2026 ni ètò ìpilẹ̀ṣẹ̀ lábẹ́ àìdánilójú.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>àwọn dúkìá dijítà 2026</category>
+      <category>RWA tí a ti tokeníní</category>
+      <category>stablecoins bánkì</category>
+      <category>ìfowópamọ́ tí a ti tokeníní</category>
+      <category>ìṣọ́ dúkìá dijítà</category>
+      <category>DLT bánkì</category>
+      <category>ìkọ́lé ìsanwó ìparí</category>
+      <category>ìṣipopadà collateral</category>
+      <category>owó alágbára-ètò</category>
+      <category>ìlànà bánkì àwọn dúkìá dijítà</category>
     </item>
     <item>
       <title>DORA, EU AI Act, àti Ọba Lori Dátà: Akopọ Ìbámu 2026 fún Báńkì</title>
@@ -49,7 +112,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
       <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
       <category>AI payments 2026</category>
       <category>jìbìtì ìsanwó</category>
       <category>ìpinnu ọ̀nà ìsanwó</category>

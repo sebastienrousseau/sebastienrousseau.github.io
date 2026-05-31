@@ -4,14 +4,41 @@
   <link href="https://sebastienrousseau.com/vi/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/vi/"/>
   <id>https://sebastienrousseau.com/vi/</id>
-  <updated>2026-05-28T08:31:08+00:00</updated>
+  <updated>2026-05-31T10:06:34+00:00</updated>
   <entry>
-    <title>Ngân hàng đa kênh 2026: thẻ, A2A, stablecoin, RTP, FedNow và Open Banking trong một chiến lược</title>
-    <link href="https://sebastienrousseau.com/vi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
-    <id>https://sebastienrousseau.com/vi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
-    <updated>2026-06-01T06:06:06+00:00</updated>
-    <published>2026-06-01T06:06:06+00:00</published>
-    <summary>Ngân hàng đa kênh 2026 không chọn một tương lai thanh toán duy nhất. Họ điều phối thẻ, A2A, RTP, FedNow, stablecoin, Open Banking, ví và dữ liệu ISO 20022 theo chi phí, tốc độ, rủi ro và bối cảnh.</summary>
+    <title>Hạ tầng Thanh toán Hậu Lượng tử: Vì sao Ngân hàng nên Thay thế chứ không Điều chỉnh Đường ray Cũ</title>
+    <link href="https://sebastienrousseau.com/vi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
+    <id>https://sebastienrousseau.com/vi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
+    <updated>2026-05-31T10:06:34+00:00</updated>
+    <published>2026-05-31T10:06:34+00:00</published>
+    <summary>Mật mã hậu lượng tử buộc đường ray thanh toán chọn nhị phân: điều chỉnh RSA/ECC trong phong bì SWIFT MT và ISO 20022 vốn chưa từng định cỡ cho ML-KEM và ML-DSA, hay thay thế bằng hạ tầng linh hoạt mật mã. Kiến trúc sư phải quyết định trước khi HNDL biến thành tổn thất vận hành.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Thị trường Số Bán buôn tại Anh: Gilt Mã hóa, Quyết toán và Vai trò Điều phối</title>
+    <link href="https://sebastienrousseau.com/vi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"/>
+    <id>https://sebastienrousseau.com/vi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</id>
+    <updated>2026-05-31T10:06:34+00:00</updated>
+    <published>2026-05-31T10:06:34+00:00</published>
+    <summary>Vai trò Điều phối viên Thị trường Số Bán buôn của Anh biến tài chính bán buôn mã hóa thành dự án năng lực cạnh tranh quốc gia, đặt gilt và quyết toán DLT vào tâm điểm.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ISO 20022 Sau Di Trú: Biến Dữ Liệu Thanh Toán Thành Sản Phẩm Ngân Hàng 2026</title>
+    <link href="https://sebastienrousseau.com/vi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"/>
+    <id>https://sebastienrousseau.com/vi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</id>
+    <updated>2026-05-31T10:06:34+00:00</updated>
+    <published>2026-05-31T10:06:34+00:00</published>
+    <summary>ISO 20022 sau di trú là cơ hội sản phẩm dữ liệu: địa chỉ có cấu trúc, mã mục đích, chi tiết hóa đơn, tin nhắn điều tra và sự kiện trạng thái thanh toán phong phú trở thành sản phẩm đối soát, gian lận, thanh khoản và tuân thủ.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Tài sản kỹ thuật số 2026: Chuyển dịch hạ tầng ngân hàng không thể trì hoãn</title>
+    <link href="https://sebastienrousseau.com/vi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
+    <id>https://sebastienrousseau.com/vi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>Tài sản kỹ thuật số không còn là một cược đổi mới. Đây là câu hỏi về kiến trúc quyết toán, lưu ký và bảng cân đối kế toán. Nhiệm vụ chiến lược của ngân hàng là thiết kế hạ tầng trong điều kiện bất định cấu trúc.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

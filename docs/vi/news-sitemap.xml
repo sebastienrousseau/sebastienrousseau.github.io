@@ -2,15 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/vi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <loc>https://sebastienrousseau.com/vi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>vi-VN</news:language>
     </news:publication>
-    <news:publication_date>2026-06-01T06:06:06+00:00</news:publication_date>
-    <news:title>Ngân hàng đa kênh 2026: thẻ, A2A, stablecoin, RTP, FedNow và Open Banking trong một chiến lược</news:title>
-    <news:keywords>ngân hàng đa kênh 2026, thanh toán A2A, FedNow, mạng RTP, stablecoin, Open Banking, thẻ, điều phối thanh toán, ISO 20022</news:keywords>
+    <news:publication_date>2026-05-31T10:06:34+00:00</news:publication_date>
+    <news:title>Hạ tầng Thanh toán Hậu Lượng tử: Vì sao Ngân hàng nên Thay thế chứ không Điều chỉnh Đường ray Cũ</news:title>
+    <news:keywords>mật mã hậu lượng tử, PQC thanh toán, linh hoạt mật mã, thu thập-bây-giờ-giải-mã-sau, HNDL, chuẩn hậu lượng tử NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, di trú đường ray thanh toán, ISO 20022 PQC, thay thế SWIFT MT, HSM, sụp đổ PKI, khả năng phục hồi vận hành, Đạo luật Chuẩn bị An ninh Mạng Điện toán Lượng tử</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T10:06:34+00:00</news:publication_date>
+    <news:title>Thị trường Số Bán buôn tại Anh: Gilt Mã hóa, Quyết toán và Vai trò Điều phối</news:title>
+    <news:keywords>thị trường số bán buôn Anh 2026, Chris Woolard, gilt mã hóa, tài chính bán buôn mã hóa, điều phối viên thị trường số, tokenisation Anh, quyết toán</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T10:06:34+00:00</news:publication_date>
+    <news:title>ISO 20022 Sau Di Trú: Biến Dữ Liệu Thanh Toán Thành Sản Phẩm Ngân Hàng 2026</news:title>
+    <news:keywords>ISO 20022 2026, địa chỉ có cấu trúc, CBPR+, sản phẩm dữ liệu thanh toán, mã mục đích thanh toán, ngân quỹ doanh nghiệp, đối soát, sàng lọc trừng phạt, phát hiện gian lận, pacs.008, pain.001</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T06:06:06+00:00</news:publication_date>
+    <news:title>Tài sản kỹ thuật số 2026: Chuyển dịch hạ tầng ngân hàng không thể trì hoãn</news:title>
+    <news:keywords>tài sản kỹ thuật số 2026, RWA token hoá, stablecoin ngân hàng, tiền gửi token hoá, lưu ký tài sản kỹ thuật số, DLT ngân hàng, hạ tầng quyết toán, tính di động tài sản đảm bảo, tiền có thể lập trình, chiến lược ngân hàng tài sản kỹ thuật số</news:keywords>
   </news:news>
 </url>
 <url>

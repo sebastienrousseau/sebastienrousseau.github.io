@@ -814,6 +814,7 @@ from postbuild_lib.output import (  # noqa: F401 — re-exports
     build_lastmod_index,
     build_llms_full_txt,
     build_llms_txt,
+    dedupe_sitemap_index_html,
     dedupe_xml_feeds,
     escape_xml_ampersands,
     fix_xml_feed_urls,
@@ -1227,6 +1228,11 @@ def _finalize_build() -> tuple[int, bool, bool, bool, int, int, int, int]:
     # from the SSG-generated sitemap. Counted into sitemap_patched so
     # the existing report shape is unchanged.
     sitemap_patched += augment_sitemap_with_rendered_pages(PUBLIC)
+    # Drop the stale `<loc>...slug/index.html</loc>` entries that ssg
+    # emits with a homepage-stub lastmod. The canonical pretty URL
+    # (`<loc>...slug/</loc>`) is added by `_splice_fr_urls` with the
+    # article's actual last_reviewed date. Counted into sitemap_patched.
+    sitemap_patched += dedupe_sitemap_index_html(PUBLIC / "sitemap.xml")
     robots_written = write_robots(PUBLIC)
     llms_written = write_llms_txt(PUBLIC)
     llms_full_written = write_llms_full_txt(PUBLIC)

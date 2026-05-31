@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/nl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <loc>https://sebastienrousseau.com/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>nl-NL</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T08:31:08+00:00</news:publication_date>
-    <news:title>De multi-rail bank in 2026: kaarten, A2A, stablecoins, RTP, FedNow en Open Banking in één strategie</news:title>
-    <news:keywords>multi-rail bank 2026, A2A-betalingen, FedNow, RTP-netwerk, stablecoins, Open Banking, kaarten, betalingsorkestratie, ISO 20022</news:keywords>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Post-quantum betaalinfrastructuur: waarom banken bestaande rails eerder vervangen dan aanpassen</news:title>
+    <news:keywords>post-quantum-cryptografie, PQC betalingen, crypto-flexibiliteit, oogst-nu-ontsleutel-later, HNDL, NIST post-quantum-standaarden, ML-KEM, ML-DSA, FIPS 203, FIPS 204, migratie betaalrails, ISO 20022 PQC, SWIFT MT-vervanging, HSM, PKI-instorting, operationele veerkracht, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
   </news:news>
 </url>
 <url>
@@ -20,9 +20,45 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>nl-NL</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T08:31:08+00:00</news:publication_date>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
     <news:title>DORA, EU AI Act en datasoevereiniteit: de compliance-stack 2026 voor banken</news:title>
     <news:keywords>DORA 2026, EU AI Act 2026, datasoevereiniteit banken, operationele veerkracht, concentratierisico cloud, AI-compliance financiële sector, hoog-risico AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/nl/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl-NL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
+    <news:title>Digitale wholesale-markten in het VK: getokeniseerde gilts, afwikkeling en de nieuwe Champion-rol</news:title>
+    <news:keywords>digitale wholesale-markten VK 2026, Wholesale Digital Markets Champion, getokeniseerde gilts, UK gilts, DLT-afwikkeling, BoE DSS sandbox, Project Guardian, SDX, Project Agorá, atomaire afwikkeling, City of London</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/nl/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl-NL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T06:06:06+00:00</news:publication_date>
+    <news:title>ISO 20022 na migratie: betaaldata omzetten in bankproducten in 2026</news:title>
+    <news:keywords>ISO 20022 2026, gestructureerd adres, CBPR+, betaaldata-producten, doel-codes betalingen, corporate treasury, reconciliatie, sanctiescreening, fraudedetectie, pacs.008, pain.001, SWIFT gpi, SEPA Instant, FedNow</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/nl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl-NL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T06:06:06+00:00</news:publication_date>
+    <news:title>Digitale activa in 2026: de infrastructuurtransitie die banken niet kunnen uitstellen</news:title>
+    <news:keywords>digitale activa 2026, getokeniseerde reële activa, stablecoins banken, getokeniseerde deposito&apos;s, bewaring digitale activa, DLT banken, afwikkelingsinfrastructuur, onderpandmobiliteit, programmeerbaar geld, bankstrategie digitale activa</news:keywords>
   </news:news>
 </url>
 <url>

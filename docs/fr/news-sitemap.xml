@@ -2,15 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/fr/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <loc>https://sebastienrousseau.com/fr/2026-05-31-post-quantique-paiements-infrastructure-replace-rather-than-retrofit-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>fr-FR</news:language>
     </news:publication>
-    <news:publication_date>2026-06-01T06:06:06+00:00</news:publication_date>
-    <news:title>La banque multi-rails en 2026 : cartes, A2A, stablecoins, RTP, FedNow et Open Banking</news:title>
-    <news:keywords>banque multi-rails 2026, paiements A2A, FedNow, RTP, stablecoins, Open Banking, cartes, orchestration des paiements, ISO 20022</news:keywords>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Infrastructure de paiement post-quantique : pourquoi les banques remplaceront plutôt que d&apos;adapter les rails hérités</news:title>
+    <news:keywords>cryptographie post-quantique, paiements PQC, agilité cryptographique, récolter-maintenant-déchiffrer-plus-tard, HNDL, normes post-quantiques NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, migration des rails de paiement, ISO 20022 PQC, remplacement SWIFT MT, HSM, effondrement PKI, résilience opérationnelle, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2026-05-30-uk-de-gros-digital-markets-tokenise-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fr-FR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Marchés de gros au UK : gilts tokenisés, DSS et règlement atomique</news:title>
+    <news:keywords>Digital Securities Sandbox 2026, gilts tokenisés, repo intrajournalier, DvP atomique, marchés de gros UK, FCA, Bank of England, RTGS, mobilité du collatéral</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fr-FR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>ISO 20022 après migration : transformer la donnée de paiement en produits bancaires en 2026</news:title>
+    <news:keywords>ISO 20022 2026, adresse structurée, CBPR+, produits de données de paiement, codes d&apos;objet, trésorerie d&apos;entreprise, rapprochement, filtrage sanctions, détection fraude</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fr-FR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T06:06:06+00:00</news:publication_date>
+    <news:title>Actifs numériques 2026 : la transition d&apos;infrastructure que les banques ne peuvent différer</news:title>
+    <news:keywords>actifs numériques 2026, actifs réels tokenisés, stablecoins banque, dépôts tokenisés, conservation actifs numériques, DLT banque, infrastructure de règlement, mobilité du collatéral, monnaie programmable, stratégie bancaire actifs numériques</news:keywords>
   </news:news>
 </url>
 <url>

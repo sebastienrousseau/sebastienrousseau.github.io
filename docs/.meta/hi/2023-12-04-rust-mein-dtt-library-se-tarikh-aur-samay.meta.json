@@ -1,11 +1,11 @@
 {
-  "date": "December 04, 2023",
-  "keywords": "Rust, dtt, तारीख़, समय, समय-क्षेत्र, RFC 3339, ISO 8601, स्वरूपण, क्रोनो, क्रेट",
+  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
   "description": "Rust हेतु dtt लाइब्रेरी: तारीख़, समय और समय-क्षेत्रों के सुरक्षित और एर्गोनॉमिक हस्तांतरण के लिए।",
-  "title": "Rust में dtt लाइब्रेरी से तारीख़ और समय पर नियंत्रण",
   "language": "hi-IN",
-  "subtitle": "समय-क्षेत्र, स्वरूपण और अंकगणित के लिए एक एर्गोनॉमिक API",
+  "keywords": "Rust, dtt, तारीख़, समय, समय-क्षेत्र, RFC 3339, ISO 8601, स्वरूपण, क्रोनो, क्रेट",
+  "date": "December 04, 2023",
   "locale": "hi_IN",
-  "banner_alt": "एक डिजिटल घड़ी और कैलेंडर की कलात्मक छवि",
-  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg"
+  "subtitle": "समय-क्षेत्र, स्वरूपण और अंकगणित के लिए एक एर्गोनॉमिक API",
+  "title": "Rust में dtt लाइब्रेरी से तारीख़ और समय पर नियंत्रण",
+  "banner_alt": "एक डिजिटल घड़ी और कैलेंडर की कलात्मक छवि"
 }

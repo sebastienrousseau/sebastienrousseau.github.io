@@ -2,15 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/pl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <loc>https://sebastienrousseau.com/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>pl-PL</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T08:31:08+00:00</news:publication_date>
-    <news:title>Wieloszynowy bank w 2026: karty, A2A, stablecoiny, RTP, FedNow i Open Banking w jednej strategii</news:title>
-    <news:keywords>wieloszynowy bank 2026, platnosci A2A, FedNow, siec RTP, stablecoiny, Open Banking, karty, orkiestracja platnosci, ISO 20022</news:keywords>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Infrastruktura płatności postkwantowych: dlaczego banki mogą zastąpić, a nie adaptować starsze szyny</news:title>
+    <news:keywords>kryptografia postkwantowa, PQC płatności, krypto-agilność, zbieraj teraz odszyfruj później, HNDL, standardy postkwantowe NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, migracja szyn płatniczych, ISO 20022 PQC, zastąpienie SWIFT MT, HSM, załamanie PKI, odporność operacyjna, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Hurtowe rynki cyfrowe w UK: tokenizowane gilty, rozliczenie i champion</news:title>
+    <news:keywords>hurtowe rynki cyfrowe UK 2026, Wholesale Digital Markets Champion, Chris Woolard, tokenizowane gilty, BoE DSS, Project Guardian, SDX, Project Agora, tokenizacja, rozliczenie DLT</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Aktywa cyfrowe w 2026: infrastrukturalne przejscie, ktorego banki nie odlozą</news:title>
+    <news:keywords>aktywa cyfrowe 2026, stokenizowane aktywa rzeczywiste, stablecoiny bankowosc, stokenizowane depozyty, przechowywanie aktywow cyfrowych, DLT bankowosc, infrastruktura rozliczeniowa, mobilnosc zabezpieczen, pieniadz programowalny, strategia banku aktywa cyfrowe</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T06:06:06+00:00</news:publication_date>
+    <news:title>ISO 20022 po migracji: dane płatnicze jako produkty bankowe w 2026</news:title>
+    <news:keywords>ISO 20022 2026, adres strukturalny, CBPR+, produkty danych płatniczych, kody celu płatności, treasury korporacyjne, uzgadnianie, sankcyjne screening, wykrywanie fraudów</news:keywords>
   </news:news>
 </url>
 <url>

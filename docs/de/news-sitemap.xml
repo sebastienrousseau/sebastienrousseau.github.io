@@ -2,15 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/de/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <loc>https://sebastienrousseau.com/de/2026-05-31-post-quantum-zahlungsverkehr-infrastructure-replace-rather-than-retrofit-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>de-DE</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T08:31:07+00:00</news:publication_date>
-    <news:title>Die Multi-Rail-Bank 2026: Karten, A2A, Stablecoins, RTP, FedNow und Open Banking in einer Strategie</news:title>
-    <news:keywords>Multi-Rail-Bank 2026, A2A-Zahlungen, FedNow, RTP, Stablecoins, Open Banking, Karten, Zahlungsorchestrierung, ISO 20022</news:keywords>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Post-Quanten-Zahlungsinfrastruktur: Warum Banken bestehende Rails ersetzen statt nachrüsten</news:title>
+    <news:keywords>Post-Quanten-Kryptografie, PQC Zahlungsverkehr, Krypto-Agilität, Ernten-jetzt-Entschlüsseln-später, HNDL, NIST Post-Quanten-Standards, ML-KEM, ML-DSA, FIPS 203, FIPS 204, Zahlungsrail-Migration, ISO 20022 PQC, SWIFT MT Ersatz, HSM, PKI-Kollaps, operative Resilienz, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/de/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>de-DE</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Wholesale Digital Markets UK: Tokenisierte Gilts und Champion-Rolle</news:title>
+    <news:keywords>Wholesale Digital Markets UK 2026, Chris Woolard, tokenisierte Gilts, tokenisierte Wholesale-Finanzierung, Digital Markets Champion, Tokenisierung UK, Abwicklung</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/de/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>de-DE</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>ISO 20022 nach Migration: Zahlungsdaten als Bankprodukte 2026</news:title>
+    <news:keywords>ISO 20022 2026, strukturierte Adresse, CBPR+, Zahlungs-Datenprodukte, Verwendungszweck-Codes, Corporate Treasury, Abstimmung, Sanktions-Screening, Betrugserkennung</news:keywords>
   </news:news>
 </url>
 <url>
@@ -20,9 +44,21 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>de-DE</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T08:31:07+00:00</news:publication_date>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
     <news:title>DORA, EU-KI-Verordnung und Datensouveränität: Der Compliance-Stack 2026 für Banken</news:title>
     <news:keywords>DORA 2026, EU-KI-Verordnung 2026, Datensouveränität Banken, operationelle Resilienz, Cloud-Konzentrationsrisiko, KI-Compliance Finanzdienstleistungen, Hochrisiko-KI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/de/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>de-DE</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Digitale Vermögenswerte 2026: Die Infrastruktur-Transition für Banken</news:title>
+    <news:keywords>digitale Vermögenswerte 2026, tokenisierte Realwerte, Stablecoins Banken, tokenisierte Einlagen, Verwahrung digitaler Vermögenswerte, DLT Banking, Abwicklungsinfrastruktur, Sicherheiten-Mobilität, programmierbares Geld, Bankstrategie digitale Vermögenswerte</news:keywords>
   </news:news>
 </url>
 <url>
@@ -32,7 +68,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>de-DE</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T08:31:07+00:00</news:publication_date>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
     <news:title>KI als Betriebssystem des Zahlungsverkehrs: Betrug, Routing, Resilienz und Compliance 2026</news:title>
     <news:keywords>KI-Zahlungsverkehr 2026, Zahlungsbetrug, Payment Routing, Echtzeit-Betrugsabwehr, ISO 20022 KI, Resilienz im Zahlungsverkehr, Transaktionsanalyse, Liquiditätsprognose</news:keywords>
   </news:news>

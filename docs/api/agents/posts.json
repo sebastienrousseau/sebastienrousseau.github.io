@@ -1,25 +1,104 @@
 {
-  "count": 57,
+  "count": 60,
   "posts": [
     {
-      "slug": "2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026",
-      "url": "https://sebastienrousseau.com/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html",
-      "date": "2026-06-01",
-      "title": "The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy",
-      "description": "The multi-rail bank in 2026 does not pick one payments future. It orchestrates cards, account-to-account payments, RTP, FedNow, stablecoins, Open Banking, wallets, and ISO 20022 data according to cost, speed, risk, finality, and customer context.",
+      "slug": "2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026",
+      "url": "https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html",
+      "date": "2026-05-31",
+      "title": "Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails",
+      "description": "Post-quantum cryptography forces a binary choice on payment rails: retrofit RSA/ECC inside SWIFT MT and ISO 20022 envelopes that were never sized for ML-KEM and ML-DSA, or replace with crypto-agile infrastructure. Architects must decide before HNDL becomes operational loss.",
       "keywords": [
-        "multi rail bank 2026",
-        "A2A payments",
-        "FedNow",
-        "RTP network",
-        "stablecoins",
-        "open banking",
-        "cards",
-        "payment orchestration",
-        "ISO 20022"
+        "post-quantum cryptography",
+        "PQC payments",
+        "crypto-agility",
+        "Harvest Now Decrypt Later",
+        "HNDL",
+        "NIST post-quantum standards",
+        "ML-KEM",
+        "ML-DSA",
+        "FIPS 203",
+        "FIPS 204",
+        "payment rail migration",
+        "ISO 20022 PQC",
+        "SWIFT MT replacement",
+        "HSM",
+        "PKI collapse",
+        "operational resilience",
+        "Quantum Computing Cybersecurity Preparedness Act"
       ],
-      "banner": "https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp",
+      "banner": "https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp",
       "topics": [],
+      "language": "en-GB"
+    },
+    {
+      "slug": "2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026",
+      "url": "https://sebastienrousseau.com/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html",
+      "date": "2026-05-30",
+      "title": "Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role",
+      "description": "The UK has appointed a Wholesale Digital Markets Champion to force interoperability inside the Digital Securities Sandbox (DSS). Tokenised gilts settle this question first — HQLA on DLT, atomic against tokenised cash, with intraday repo as the prize.",
+      "keywords": [
+        "UK Digital Securities Sandbox",
+        "tokenised gilts",
+        "intraday repo",
+        "atomic DvP",
+        "RTGS renewal",
+        "RLN",
+        "Canton DLT",
+        "policy-as-code compliance",
+        "wholesale digital markets",
+        "HQLA collateral mobility"
+      ],
+      "banner": "https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80",
+      "topics": [
+        "iso-20022-payments"
+      ],
+      "language": "en-GB"
+    },
+    {
+      "slug": "2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026",
+      "url": "https://sebastienrousseau.com/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html",
+      "date": "2026-05-29",
+      "title": "ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026",
+      "description": "ISO 20022 after migration is a data-product opportunity. Structured addresses, purpose codes, invoice details, investigation messages, and richer payment status events can become reconciliation, fraud, liquidity, compliance, and analytics products.",
+      "keywords": [
+        "ISO 20022 2026",
+        "structured address",
+        "CBPR+",
+        "payment data products",
+        "payment purpose codes",
+        "corporate treasury",
+        "reconciliation",
+        "sanctions screening",
+        "fraud detection"
+      ],
+      "banner": "https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80",
+      "topics": [
+        "iso-20022-payments"
+      ],
+      "language": "en-GB"
+    },
+    {
+      "slug": "2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026",
+      "url": "https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/index.html",
+      "date": "2026-05-28",
+      "title": "Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay",
+      "description": "Digital assets are no longer an innovation bet. They are a settlement, custody, and balance-sheet architecture question. The strategic task for banks is infrastructure design under structural uncertainty.",
+      "keywords": [
+        "digital assets 2026",
+        "tokenised real-world assets",
+        "stablecoins banking",
+        "tokenised deposits",
+        "digital asset custody",
+        "DLT banking",
+        "settlement infrastructure",
+        "collateral mobility",
+        "programmable money",
+        "bank strategy digital assets"
+      ],
+      "banner": "https://cloudcdn.pro/stocks/images/corporate-finance.webp",
+      "topics": [
+        "blockchain-digital-assets"
+      ],
       "language": "en-GB"
     },
     {
@@ -57,7 +136,7 @@
         "transaction analysis",
         "cash flow forecasting"
       ],
-      "banner": "https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80",
+      "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
       "topics": [],
       "language": "en-GB"
     },

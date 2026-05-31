@@ -2,15 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/fil/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <loc>https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>fil-PH</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T08:31:07+00:00</news:publication_date>
-    <news:title>Ang Multi-Rail Bank sa 2026: Cards, A2A, Stablecoins, RTP, FedNow, at Open Banking sa Isang Estratehiya</news:title>
-    <news:keywords>multi-rail bank 2026, A2A payments, FedNow, RTP network, stablecoins, Open Banking, cards, orkestrasyon ng pagbabayad, ISO 20022</news:keywords>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Post-Quantum Payments Infrastructure: Bakit Maaaring Palitan ng mga Bangko ang Legacy Rails sa Halip na I-adapt</news:title>
+    <news:keywords>post-quantum cryptography, PQC payments, crypto-agility, mag-imbak-ngayon-i-decrypt-mamaya, HNDL, NIST post-quantum standards, ML-KEM, ML-DSA, FIPS 203, FIPS 204, paglipat ng payment rail, ISO 20022 PQC, pagpapalit ng SWIFT MT, HSM, pagbagsak ng PKI, operational resilience, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fil/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fil-PH</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Digital Assets sa 2026: Transisyon ng Imprastraktura na Hindi Dapat Antalahin</news:title>
+    <news:keywords>digital assets 2026, tokenized real-world assets, RWA, stablecoins banking, tokenized deposits, digital asset custody, DLT banking, imprastraktura ng settlement, mobility ng kolateral, programmable money, estratehiya ng bangko sa digital assets</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fil/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fil-PH</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
+    <news:title>UK Wholesale Digital Markets: Tokenized Gilts, DLT Settlement, Champion</news:title>
+    <news:keywords>UK wholesale digital markets 2026, Wholesale Digital Markets Champion, tokenized gilts, UK gilts, DLT settlement, BoE DSS, Project Guardian, SDX, Project Agorá, Bank of England, HM Treasury, City of London, kakayahang makipagkumpitensya</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fil/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fil-PH</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T06:06:06+00:00</news:publication_date>
+    <news:title>ISO 20022 Pagkatapos ng Migration: Payment Data tungo sa Produkto ng Bangko 2026</news:title>
+    <news:keywords>ISO 20022 2026, structured address, CBPR+, mga payment data product, purpose code, corporate treasury, reconciliation, sanctions screening, fraud detection, pacs.008, pain.001, SWIFT gpi, SEPA Instant, FedNow</news:keywords>
   </news:news>
 </url>
 <url>
