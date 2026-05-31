@@ -8,13 +8,10 @@ edge cases the workflow depends on.
 
 from __future__ import annotations
 
+import importlib.util
 import json
 from pathlib import Path
 from unittest.mock import patch
-
-import pytest
-
-import importlib.util
 
 _HERE = Path(__file__).resolve().parent
 _SCRIPT = _HERE.parent / "scripts" / "seo_and_audit" / "pa11y_retry_flakes.py"

@@ -47,38 +47,14 @@ def main(argv: list[str]) -> int:
         print("usage: pa11y_retry_flakes.py <pa11y.json>", file=sys.stderr)
         return 2
 
-    report_path = Path(argv[1])
-    if not report_path.exists():
-        print(f"missing pa11y-ci JSON report at {report_path}", file=sys.stderr)
+    report = _load_report(Path(argv[1]))
+    if report is None:
         return 2
 
-    try:
-        report = json.loads(report_path.read_text(encoding="utf-8"))
-    except json.JSONDecodeError as exc:
-        print(f"pa11y-ci JSON not parseable: {exc}", file=sys.stderr)
-        return 2
-
-    # pa11y-ci v3 JSON shape: {"total": n, "passes": n, "errors": n,
-    # "results": {url: [issue, ...], ...}}.
-    results: dict[str, list[dict]] = report.get("results", {})
-
-    flaky: list[str] = []
-    real_failures: list[tuple[str, list[str]]] = []
-
-    for url, issues in results.items():
-        if not issues:
-            continue
-        if all(_is_flake(i) for i in issues):
-            flaky.append(url)
-        else:
-            real_failures.append((url, [_describe(i) for i in issues]))
+    flaky, real_failures = _partition_failures(report.get("results", {}))
 
     if real_failures:
-        print("pa11y: real WCAG failures detected, not retrying:")
-        for url, descs in real_failures:
-            print(f"  {url}")
-            for d in descs:
-                print(f"    - {d}")
+        _print_real_failures(real_failures)
         return 1
 
     if not flaky:
@@ -98,8 +74,48 @@ def main(argv: list[str]) -> int:
             f"pa11y: all {len(flaky)} flaky URL(s) passed on retry — "
             "treating overall run as passing.",
         )
-        return 0
     return rc
+
+
+def _load_report(path: Path) -> dict | None:
+    if not path.exists():
+        print(f"missing pa11y-ci JSON report at {path}", file=sys.stderr)
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        print(f"pa11y-ci JSON not parseable: {exc}", file=sys.stderr)
+        return None
+
+
+def _partition_failures(
+    results: dict[str, list[dict]],
+) -> tuple[list[str], list[tuple[str, list[str]]]]:
+    """Split URL → issues into (flaky_urls, real_failures).
+
+    pa11y-ci v3 JSON shape: ``{"results": {url: [issue, ...], ...}}``.
+    A URL is flaky iff every issue against it matches FLAKE_NEEDLES.
+    """
+    flaky: list[str] = []
+    real_failures: list[tuple[str, list[str]]] = []
+    for url, issues in results.items():
+        if not issues:
+            continue
+        if all(_is_flake(i) for i in issues):
+            flaky.append(url)
+        else:
+            real_failures.append((url, [_describe(i) for i in issues]))
+    return flaky, real_failures
+
+
+def _print_real_failures(
+    real_failures: list[tuple[str, list[str]]],
+) -> None:
+    print("pa11y: real WCAG failures detected, not retrying:")
+    for url, descs in real_failures:
+        print(f"  {url}")
+        for d in descs:
+            print(f"    - {d}")
 
 
 def _is_flake(issue: dict) -> bool:
