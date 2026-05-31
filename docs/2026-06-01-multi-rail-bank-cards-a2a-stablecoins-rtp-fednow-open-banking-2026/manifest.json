@@ -1,6 +1,6 @@
 {
   "background_color": "#ffffff",
-  "description": "The multi-rail bank in 2026 does not pick one payments future. It orchestrates cards, account-to-account payments, RTP, ",
+  "description": "FedNow demands pre-funded 24/7 liquidity. ACH is cheap but T+1. USDC clears atomically but needs wallet infrastructure. ",
   "display": "standalone",
   "icons": [
     {

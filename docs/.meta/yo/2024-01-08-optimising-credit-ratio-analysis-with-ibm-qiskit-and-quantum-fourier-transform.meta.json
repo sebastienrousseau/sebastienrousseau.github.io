@@ -1,11 +1,11 @@
 {
-  "locale": "yo_NG",
-  "keywords": "ìṣírò kuantọ́ọ̀mù, ìṣúnmọ̀ owó, ìtúpalẹ̀ ìdásí ìgbàwọ̀, Qiskit, Quantum Fourier Transform, IBM, ìkẹ́kọ̀ọ́ ẹ̀rọ, ọgbọ́n àtọwọ́dọ́wọ́, ìdínwọ̀ ewu ìṣúnmọ̀ owó, ipele ìsanwó",
-  "description": "Ṣàwárí bí IBM Qiskit àti Quantum Fourier Transform ṣe ń yí ìtúpalẹ̀ ìdásí ìgbàwọ̀ padà nínú ìṣúnmọ̀ owó, pẹ̀lú ìpéye àti ìyára tí kò tíì rí rí.",
-  "subtitle": "Ìmúdára Ìtúpalẹ̀ Ìdásí Ìgbàwọ̀ pẹ̀lú IBM Qiskit àti Quantum Fourier Transform",
-  "date": "Jan 08, 2024",
-  "title": "Qiskit & Quantum Fourier Transform for Credit Ratio Analysis",
   "banner_alt": "Yàrá Kọ̀mpútà Kuantọ́ọ̀mù",
+  "title": "Qiskit & Quantum Fourier Transform for Credit Ratio Analysis",
+  "keywords": "ìṣírò kuantọ́ọ̀mù, ìṣúnmọ̀ owó, ìtúpalẹ̀ ìdásí ìgbàwọ̀, Qiskit, Quantum Fourier Transform, IBM, ìkẹ́kọ̀ọ́ ẹ̀rọ, ọgbọ́n àtọwọ́dọ́wọ́, ìdínwọ̀ ewu ìṣúnmọ̀ owó, ipele ìsanwó",
   "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
-  "language": "yo-NG"
+  "subtitle": "Ìmúdára Ìtúpalẹ̀ Ìdásí Ìgbàwọ̀ pẹ̀lú IBM Qiskit àti Quantum Fourier Transform",
+  "description": "Ṣàwárí bí IBM Qiskit àti Quantum Fourier Transform ṣe ń yí ìtúpalẹ̀ ìdásí ìgbàwọ̀ padà nínú ìṣúnmọ̀ owó, pẹ̀lú ìpéye àti ìyára tí kò tíì rí rí.",
+  "locale": "yo_NG",
+  "language": "yo-NG",
+  "date": "Jan 08, 2024"
 }

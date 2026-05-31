@@ -1,6 +1,31 @@
 {
-  "count": 60,
+  "count": 61,
   "posts": [
+    {
+      "slug": "2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026",
+      "url": "https://sebastienrousseau.com/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html",
+      "date": "2026-06-01",
+      "title": "The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy",
+      "description": "FedNow demands pre-funded 24/7 liquidity. ACH is cheap but T+1. USDC clears atomically but needs wallet infrastructure. The 2026 multi-rail bank routes each payment by cost, finality, and liquidity cost — driven by an orchestration engine that reads ISO 20022 pacs.008 and decides.",
+      "keywords": [
+        "payment orchestration layer",
+        "FedNow vs RTP",
+        "FedNow vs ACH",
+        "stablecoin settlement",
+        "USDC atomic settlement",
+        "ISO 20022 pacs.008",
+        "account-to-account A2A",
+        "Open Banking APIs",
+        "pre-funded liquidity",
+        "24/7 liquidity trap",
+        "multi-rail bank 2026",
+        "payment routing engine",
+        "ERP reconciliation"
+      ],
+      "banner": "https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp",
+      "topics": [],
+      "language": "en-GB"
+    },
     {
       "slug": "2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026",
       "url": "https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html",

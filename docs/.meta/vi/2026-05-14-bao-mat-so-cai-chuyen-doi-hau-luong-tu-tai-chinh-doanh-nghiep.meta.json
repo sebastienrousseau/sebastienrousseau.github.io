@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Sổ cái doanh nghiệp với các khoá mật mã hậu lượng tử",
-  "locale": "vi_VN",
   "banner": "https://cloudcdn.pro/stocks/images/treasury-pqc-banner.webp",
-  "date": "May 14, 2026",
+  "banner_alt": "Sổ cái doanh nghiệp với các khoá mật mã hậu lượng tử",
+  "language": "vi-VN",
+  "description": "Cách các nhóm treasury doanh nghiệp chuyển sang mật mã hậu lượng tử: kiểm kê, ưu tiên, thí điểm và triển khai sản xuất.",
+  "locale": "vi_VN",
   "subtitle": "Lộ trình thực tế cho các nhóm treasury doanh nghiệp",
   "title": "Bảo mật sổ cái: chuyển đổi hậu lượng tử trong tài chính doanh nghiệp",
-  "language": "vi-VN",
-  "keywords": "PQC, hậu lượng tử, treasury, tài chính doanh nghiệp, sổ cái, chuyển đổi, kiểm kê, NIST, Kyber",
-  "description": "Cách các nhóm treasury doanh nghiệp chuyển sang mật mã hậu lượng tử: kiểm kê, ưu tiên, thí điểm và triển khai sản xuất."
+  "date": "May 14, 2026",
+  "keywords": "PQC, hậu lượng tử, treasury, tài chính doanh nghiệp, sổ cái, chuyển đổi, kiểm kê, NIST, Kyber"
 }

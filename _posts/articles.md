@@ -105,21 +105,33 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html" title="Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails">
-<img alt="Cryptographic key material drifting into deep blue water — symbolising harvest-now-decrypt-later capture of payment messages whose RSA and ECC envelopes will not survive a cryptanalytically relevant quantum computer" src="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html" title="The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy">
+<img alt="Long-exposure photograph of intersecting light trails at a major rail interchange at night — visual key for the multi-rail bank piece: cards, A2A, RTP, FedNow, ACH, stablecoins, Open Banking APIs, ISO 20022, and the orchestration engine that routes between them" src="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Post-Quantum Cryptography · Pqc · Crypto-Agility</span>
-<h3><a href="/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html" title="Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails">Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-31">May 31, 2026</time> · Sebastien Rousseau</p>
-<p>Harvest-now-decrypt-later turns today's TLS-protected payment messages into tomorrow's decrypted exposure. ML-KEM and ML-DSA are an order of magnitude larger than the RSA and ECC keys legacy rails were sized for — retrofit triggers fragmentation, latency, and HSM exhaustion. The 2026 architectural decision is whether t</p>
-<p><a class="pill ghost" href="/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html" title="Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails">Read the full story</a></p>
+<span class="newsroom-eyebrow">Payment Orchestration · Fednow · Rtp</span>
+<h3><a href="/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html" title="The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy">The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-01">June 1, 2026</time> · Sebastien Rousseau</p>
+<p>FedNow demands pre-funded 24/7 liquidity. ACH is cheap but T+1. USDC clears atomically but needs wallet infrastructure. The 2026 multi-rail bank routes each payment by cost, finality, and liquidity cost — driven by an orchestration engine that reads ISO 20022 pacs.008 and decides.</p>
+<p><a class="pill ghost" href="/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html" title="The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html" title="Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails">
+<img alt="Cryptographic key material drifting into deep blue water — symbolising harvest-now-decrypt-later capture of payment messages whose RSA and ECC envelopes will not survive a cryptanalytically relevant quantum computer" src="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Post-Quantum Cryptography · Pqc · Crypto-Agility</span>
+<h3><a href="/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html" title="Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails">Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-31">May 31, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Harvest-now-decrypt-later turns today's TLS-protected payment messages into tomorrow's decrypted exposure. ML-KEM and ML-DSA are an order of magnitude larger than the RSA and ECC keys legacy rails were sized for — retrofit triggers fragmentation, latency, and HSM exhaustion. The 2026 architectural decision is whether t</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html" title="Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role">

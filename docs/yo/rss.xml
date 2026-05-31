@@ -6,14 +6,36 @@
     <description>Awọn akọle Yorùbá: AI tó wúlò, ìsanwó ISO 20022, kírípítógíráfì lẹ́yìn-kuántọ́mù, àti àtúnṣe ètò ìsanwó ńláńlá.</description>
     <atom:link href="https://sebastienrousseau.com/yo/rss.xml" rel="self" type="application/rss+xml"/>
     <language>yo-NG</language>
-    <lastBuildDate>Sun, 31 May 2026 10:06:34 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 19:21:18 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Gbogbo ẹtọ ti wa ni ipamọ.</copyright>
+    <item>
+      <title>Báńkì Ọ̀nà-Púpọ̀ ní 2026: Káàdì, A2A, Stablecoins, RTP, FedNow, àti Open Banking nínú Ìlànà Kan</title>
+      <link>https://sebastienrousseau.com/yo/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
+      <description>FedNow béèrè owó tó wà ní àkọ́sẹ̀ 24/7. ACH wúwo díẹ̀ ṣùgbọ́n T+1 ni. USDC parí pẹ̀lú ìpinnu àtómù ṣùgbọ́n ó nílò ìgbékalẹ̀ àpamọ́wọ́. Báńkì ọ̀nà-púpọ̀ 2026 ń fà gbogbo ìsanwó lórí iye, ìparí, àti iye owó tó wà ní àkọ́sẹ̀.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
+      <pubDate>Sun, 31 May 2026 19:21:18 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>ìpele àkójọpọ̀ ìsanwó</category>
+      <category>FedNow vs RTP</category>
+      <category>FedNow vs ACH</category>
+      <category>ìpinnu stablecoin</category>
+      <category>ìpinnu àtómù USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>account-to-account A2A</category>
+      <category>Open Banking APIs</category>
+      <category>owó tó wà ní àkọ́sẹ̀</category>
+      <category>ìdẹkùn owó 24/7</category>
+      <category>báńkì ọ̀nà-púpọ̀ 2026</category>
+      <category>ẹ̀rọ àfàyà ìsanwó</category>
+      <category>ìdúró ERP</category>
+    </item>
     <item>
       <title>Ìgbékalẹ̀ Ìsanwó Lẹyin-Quantum: Ìdí Tí Báńkì Fi Lè Fìrọ́pò Dípò Ìbámu Ọ̀nà Àkànṣe</title>
       <link>https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>Cryptography lẹyin-quantum fi àyàn méjì lélẹ̀ fún ọ̀nà ìsanwó: ìbámu RSA/ECC nínú ìdìpọ̀ SWIFT MT àti ISO 20022 tí kò bá ML-KEM àti ML-DSA mu, tàbí ìfìrọ́pò pẹ̀lú ìgbékalẹ̀ ìyára crypto. Àwọn ayàwòrán gbọ́dọ̀ pinnu kí HNDL tó di àdánù iṣẹ́.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Sun, 31 May 2026 10:06:34 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 19:21:18 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>cryptography lẹyin-quantum</category>

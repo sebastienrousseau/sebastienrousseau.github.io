@@ -1,11 +1,11 @@
 {
-  "date": "Feb 13, 2024",
-  "description": "Jak Akt AI UE wpłynie na globalną regulację sztucznej inteligencji, definiując ryzyka i obowiązki.",
-  "keywords": "EU AI Act, regulacja AI, sztuczna inteligencja, prawo, UE, compliance, etyka AI",
-  "language": "pl-PL",
-  "banner_alt": "Flaga UE z symbolami AI i regulacji",
   "banner": "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp",
+  "title": "Akt AI UE: kształtowanie przyszłości globalnej regulacji AI",
+  "language": "pl-PL",
+  "date": "Feb 13, 2024",
   "subtitle": "Pierwsza kompleksowa ustawa o sztucznej inteligencji w UE",
-  "locale": "pl_PL",
-  "title": "Akt AI UE: kształtowanie przyszłości globalnej regulacji AI"
+  "description": "Jak Akt AI UE wpłynie na globalną regulację sztucznej inteligencji, definiując ryzyka i obowiązki.",
+  "banner_alt": "Flaga UE z symbolami AI i regulacji",
+  "keywords": "EU AI Act, regulacja AI, sztuczna inteligencja, prawo, UE, compliance, etyka AI",
+  "locale": "pl_PL"
 }

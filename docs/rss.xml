@@ -6,8 +6,586 @@
     <description>AI, banking and payments expert. Senior payments leader. Applied AI, ISO 20022 migration, wholesale payments and post-quantum cryptography.</description>
     <atom:link href="https://sebastienrousseau.com/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Sun, 31 May 2026 06:06:06 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2026 06:06:06 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy</title>
+      <link>https://sebastienrousseau.com/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026</link>
+      <description>FedNow demands pre-funded 24/7 liquidity. ACH is cheap but T+1. USDC clears atomically but needs wallet infrastructure. The 2026 multi-rail bank routes each payment by cost, finality, and liquidity cost — driven by an orchestration engine that reads ISO 20022 pacs.008 and decides.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>payment orchestration</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>stablecoin settlement</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>A2A payments</category>
+      <category>Open Banking APIs</category>
+      <category>pre-funded liquidity</category>
+      <category>multi-rail bank</category>
+    </item>
+    <item>
+      <title>2026'da Çok Raylı Banka: Kartlar, A2A, Stablecoin'ler, RTP, FedNow ve Open Banking Tek Stratejide</title>
+      <link>https://sebastienrousseau.com/tr/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow 7/24 ön finansmanlı likidite ister. ACH ucuz ama T+1&apos;dir. USDC atomik mutabaka ulaşır ama cüzdan altyapısı gerektirir. 2026 çok raylı bankası her ödemeyi maliyet ve kesinliğe göre yönlendirir.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>ödeme orkestrasyonu</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>stablecoin mutabakatı</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>A2A ödemeleri</category>
+      <category>Open Banking API&apos;leri</category>
+      <category>ön finansmanlı likidite</category>
+      <category>çok raylı banka</category>
+    </item>
+    <item>
+      <title>ธนาคารหลายรางในปี 2026: บัตร A2A สเตเบิลคอยน์ RTP FedNow และ Open Banking ในกลยุทธ์เดียว</title>
+      <link>https://sebastienrousseau.com/th/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow ต้องการสภาพคล่องที่จัดสรรล่วงหน้าแบบ 24/7 ACH ราคาถูกแต่ T+1 USDC ชำระแบบอะตอมแต่ต้องมีกระเป๋าเงิน ธนาคารหลายรางปี 2026 กำหนดเส้นทางทุกรายการตามต้นทุน ความเด็ดขาด และต้นทุนสภาพคล่อง โดยเอนจินที่อ่าน ISO 20022 pacs.008</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>payment orchestration</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>stablecoin settlement</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>A2A payments</category>
+      <category>Open Banking APIs</category>
+      <category>สภาพคล่อง pre-funded</category>
+      <category>multi-rail bank</category>
+    </item>
+    <item>
+      <title>El banco multi-carril en 2026: tarjetas, A2A, stablecoins, RTP, FedNow y Open Banking en una sola estrategia</title>
+      <link>https://sebastienrousseau.com/es/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow exige liquidez prefinanciada 24/7. ACH es barato pero T+1. USDC liquida de forma atómica pero requiere infraestructura de wallet. El banco multi-carril de 2026 enruta cada pago por coste, finalidad y coste de liquidez mediante un motor de orquestación que lee pacs.008.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>orquestación de pagos</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>liquidación con stablecoin</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>pagos A2A</category>
+      <category>APIs de Open Banking</category>
+      <category>liquidez prefinanciada</category>
+      <category>banco multi-carril</category>
+    </item>
+    <item>
+      <title>La banque multi-rail en 2026 : cartes, A2A, stablecoins, RTP, FedNow et Open Banking dans une seule stratégie</title>
+      <link>https://sebastienrousseau.com/fr/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow exige une liquidité préfinancée 24/7. ACH coûte peu mais règle T+1. USDC règle en atomique. La banque multi-rail 2026 arbitre par coût et finalité.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>orchestration des paiements</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>règlement stablecoin</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>paiements A2A</category>
+      <category>API Open Banking</category>
+      <category>liquidité préfinancée</category>
+      <category>banque multi-rail</category>
+    </item>
+    <item>
+      <title>Bank Multi-Rel pada 2026: Kartu, A2A, Stablecoin, RTP, FedNow, dan Open Banking dalam Satu Strategi</title>
+      <link>https://sebastienrousseau.com/id/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow menuntut likuiditas pra-pendanaan 24/7. ACH murah tetapi T+1. USDC menyelesaikan secara atomik tetapi butuh infrastruktur dompet. Bank multi-rel 2026 merutekan tiap pembayaran berdasar biaya, finalitas, dan biaya likuiditas — digerakkan mesin orkestrasi yang membaca pacs.008.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>orkestrasi pembayaran</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>penyelesaian stablecoin</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>pembayaran A2A</category>
+      <category>API Open Banking</category>
+      <category>likuiditas pra-pendanaan</category>
+      <category>bank multi-rel</category>
+    </item>
+    <item>
+      <title>2026년 멀티레일 뱅크: 카드·A2A·스테이블코인·RTP·FedNow·Open Banking을 하나의 전략으로</title>
+      <link>https://sebastienrousseau.com/ko/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow는 24/7 사전 자금공급 유동성을 요구합니다. ACH는 저렴하지만 T+1입니다. USDC는 원자적으로 정산되지만 지갑 인프라가 필요합니다. 2026년 멀티레일 뱅크는 비용·결제 종결성·유동성 비용 기준으로 라우팅합니다.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>결제 오케스트레이션</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>스테이블코인 결제</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>A2A 결제</category>
+      <category>Open Banking API</category>
+      <category>사전 자금공급 유동성</category>
+      <category>멀티레일 뱅크</category>
+    </item>
+    <item>
+      <title>Die Multi-Rail-Bank 2026: Karten, A2A, Stablecoins, RTP, FedNow und Open Banking in einer Strategie</title>
+      <link>https://sebastienrousseau.com/de/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow verlangt vorfinanzierte 24/7-Liquidität. ACH ist günstig, aber T+1. USDC wickelt atomar ab, braucht aber Wallets. Die Multi-Rail-Bank routet 2026 nach Kosten, Finalität und Liquiditätskosten.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>Payment-Orchestrierung</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>Stablecoin-Settlement</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>A2A-Zahlungen</category>
+      <category>Open-Banking-APIs</category>
+      <category>vorfinanzierte Liquidität</category>
+      <category>Multi-Rail-Bank</category>
+    </item>
+    <item>
+      <title>2026 का मल्टी-रेल बैंक: कार्ड, A2A, स्टेबलकॉइन, RTP, FedNow और ओपन बैंकिंग, एक ही रणनीति में</title>
+      <link>https://sebastienrousseau.com/hi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow को 24/7 पूर्व-वित्तपोषित तरलता चाहिए। ACH सस्ता है पर T+1। USDC परमाणु निपटान देता है पर वॉलेट बुनियादी ढाँचा माँगता है। 2026 का मल्टी-रेल बैंक हर भुगतान को लागत, अंतिमता और तरलता-लागत पर रूट करता है।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>भुगतान ऑर्केस्ट्रेशन</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>स्टेबलकॉइन निपटान</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>A2A भुगतान</category>
+      <category>ओपन बैंकिंग API</category>
+      <category>पूर्व-वित्तपोषित तरलता</category>
+      <category>मल्टी-रेल बैंक</category>
+    </item>
+    <item>
+      <title>Ang Multi-Rail Bank sa 2026: Cards, A2A, Stablecoins, RTP, FedNow, at Open Banking sa Isang Estratehiya</title>
+      <link>https://sebastienrousseau.com/fil/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>Hinihingi ng FedNow ang pre-funded 24/7 liquidity. Mura ang ACH ngunit T+1. Atomic ang USDC ngunit kailangan ng wallet infrastructure. Ruruta ng 2026 multi-rail bank ang bawat bayad ayon sa gastos, finality, at liquidity cost — sa orchestration engine na bumabasa ng ISO 20022 pacs.008.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>payment orchestration</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>stablecoin settlement</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>A2A payments</category>
+      <category>Open Banking APIs</category>
+      <category>pre-funded liquidity</category>
+      <category>multi-rail bank</category>
+    </item>
+    <item>
+      <title>২০২৬-এ মাল্টি-রেল ব্যাংক: কার্ড, A2A, স্টেবলকয়েন, RTP, FedNow ও Open Banking — এক কৌশলে</title>
+      <link>https://sebastienrousseau.com/bn/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow-এর জন্য ২৪/৭ প্রাক-অর্থায়িত তারল্য বাধ্যতামূলক। ACH সস্তা, কিন্তু T+1। USDC পারমাণবিকভাবে নিষ্পত্তি হয়, তবে ওয়ালেট পরিকাঠামো লাগে। ২০২৬-এর মাল্টি-রেল ব্যাংক প্রতিটি পেমেন্ট খরচ, চূড়ান্ততা ও তারল্য খরচ অনুযায়ী রাউট করে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>পেমেন্ট অর্কেস্ট্রেশন</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>স্টেবলকয়েন নিষ্পত্তি</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>A2A পেমেন্ট</category>
+      <category>Open Banking API</category>
+      <category>প্রাক-অর্থায়িত তারল্য</category>
+      <category>মাল্টি-রেল ব্যাংক</category>
+    </item>
+    <item>
+      <title>De multi-rail bank in 2026: kaarten, A2A, stablecoins, RTP, FedNow en Open Banking in één strategie</title>
+      <link>https://sebastienrousseau.com/nl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow vereist voorgefinancierde liquiditeit 24/7. ACH is goedkoop maar T+1. USDC wikkelt atomair af maar vergt wallet-infrastructuur. De multi-rail bank van 2026 routeert per kosten, finaliteit en liquiditeitskost via een orkestratie-engine die ISO 20022 pacs.008 leest.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>betalingsorkestratie</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>stablecoin-afwikkeling</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>A2A-betalingen</category>
+      <category>Open Banking API&apos;s</category>
+      <category>voorgefinancierde liquiditeit</category>
+      <category>multi-rail bank</category>
+    </item>
+    <item>
+      <title>O Banco Multi-Trilho em 2026: Cartões, A2A, Stablecoins, RTP, FedNow e Open Banking em uma única estratégia</title>
+      <link>https://sebastienrousseau.com/pt-br/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow exige liquidez pré-financiada 24/7. ACH é barato, mas T+1. USDC liquida atomicamente, mas precisa de carteira. O banco multi-trilho de 2026 roteia cada pagamento por custo, finalidade e custo de liquidez — guiado por motor de orquestração que lê ISO 20022 pacs.008.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>orquestração de pagamentos</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>liquidação em stablecoin</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>pagamentos A2A</category>
+      <category>APIs de Open Banking</category>
+      <category>liquidez pré-financiada</category>
+      <category>banco multi-trilho</category>
+    </item>
+    <item>
+      <title>المصرف متعدد القنوات في 2026: البطاقات وA2A والعملات المستقرة وRTP وFedNow وOpen Banking في استراتيجية واحدة</title>
+      <link>https://sebastienrousseau.com/ar/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow يستلزم سيولة مموَّلة مسبقًا على مدار الساعة. ACH رخيص لكنه T+1. USDC يُسوَّى ذريًّا لكنه يحتاج بنية محافظ. المصرف متعدد القنوات في 2026 يوجِّه كل دفعة وفق التكلفة والنهائية وكلفة السيولة، بقيادة محرك تنسيق يقرأ ISO 20022 pacs.008 ويقرِّر.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>تنسيق المدفوعات، FedNow، RTP، ACH، تسوية العملات المستقرة، USDC، ISO 20022 pacs.008، مدفوعات A2A، واجهات Open Banking، السيولة المموَّلة مسبقًا، المصرف متعدد القنوات</category>
+    </item>
+    <item>
+      <title>Bankin Hanyoyi Da Yawa a 2026: Katuna, A2A, Stablecoins, RTP, FedNow, da Open Banking Cikin Dabara Daya</title>
+      <link>https://sebastienrousseau.com/ha/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>Bankin hanyoyi da yawa na 2026 yana tafiyar da biya bisa farashi, ƙarshe, da farashin kuɗi — injin tsara ne ke karanta ISO 20022 pacs.008 ya yanke shawara.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>tsarin biya</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>daidaitawa ta stablecoin</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>biyan A2A</category>
+      <category>Open Banking APIs</category>
+      <category>kuɗin da aka tara a baya</category>
+      <category>bankin hanyoyi da yawa</category>
+    </item>
+    <item>
+      <title>Мультирейковий банк у 2026 році: картки, A2A, стейблкоїни, RTP, FedNow та Open Banking в одній стратегії</title>
+      <link>https://sebastienrousseau.com/uk/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow вимагає передфінансованої ліквідності 24/7. ACH дешевий, але T+1. USDC розраховується атомарно, але потребує гаманцевої інфраструктури. Мультирейковий банк 2026 року маршрутизує платіж за вартістю, остаточністю та ціною ліквідності.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>оркестрація платежів</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>розрахунок стейблкоїнами</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>платежі A2A</category>
+      <category>API Open Banking</category>
+      <category>передфінансована ліквідність</category>
+      <category>мультирейковий банк</category>
+    </item>
+    <item>
+      <title>Báńkì Ọ̀nà-Púpọ̀ ní 2026: Káàdì, A2A, Stablecoins, RTP, FedNow, àti Open Banking nínú Ìlànà Kan</title>
+      <link>https://sebastienrousseau.com/yo/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow béèrè owó tó wà ní àkọ́sẹ̀ 24/7. ACH wúwo díẹ̀ ṣùgbọ́n T+1 ni. USDC parí pẹ̀lú ìpinnu àtómù ṣùgbọ́n ó nílò ìgbékalẹ̀ àpamọ́wọ́. Báńkì ọ̀nà-púpọ̀ 2026 ń fà gbogbo ìsanwó lórí iye, ìparí, àti iye owó tó wà ní àkọ́sẹ̀.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>àkójọpọ̀ ìsanwó</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>ìpinnu stablecoin</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>ìsanwó A2A</category>
+      <category>Open Banking APIs</category>
+      <category>owó tó wà ní àkọ́sẹ̀</category>
+      <category>báńkì ọ̀nà-púpọ̀</category>
+    </item>
+    <item>
+      <title>Banca multi-cale în 2026: carduri, A2A, stablecoins, RTP, FedNow și Open Banking într-o singură strategie</title>
+      <link>https://sebastienrousseau.com/ro/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow cere lichiditate prefinanțată 24/7. ACH este ieftin, dar T+1. USDC se decontează atomic, dar are nevoie de portofele. Banca multi-cale din 2026 rutează fiecare plată după cost, finalitate și cost de lichiditate, condusă de un motor de orchestrare care citește ISO 20022 pacs.008.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>orchestrare a plăților</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>decontare în stablecoin</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>plăți A2A</category>
+      <category>API-uri Open Banking</category>
+      <category>lichiditate prefinanțată</category>
+      <category>bancă multi-cale</category>
+    </item>
+    <item>
+      <title>Мульти-рельсовый банк в 2026 году: карты, A2A, стейблкоины, RTP, FedNow и открытый банкинг в единой стратегии</title>
+      <link>https://sebastienrousseau.com/ru/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow требует предварительно профондированной ликвидности 24/7. ACH дешёв, но T+1. USDC рассчитывается атомарно, но требует кошельковой инфраструктуры. Мульти-рельсовый банк 2026 года маршрутизирует каждый платёж по стоимости, окончательности и цене ликвидности.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>оркестрация платежей</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>расчёты в стейблкоинах</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>A2A платежи</category>
+      <category>API открытого банкинга</category>
+      <category>предварительно профондированная ликвидность</category>
+      <category>мульти-рельсовый банк</category>
+    </item>
+    <item>
+      <title>Multi-kolejnicová banka v roce 2026: karty, A2A, stablecoiny, RTP, FedNow a otevřené bankovnictví v jedné strategii</title>
+      <link>https://sebastienrousseau.com/cs/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow vyžaduje předfinancovanou likviditu 24/7. ACH je levné, ale T+1. USDC se vypořádá atomicky, ale potřebuje wallet infrastrukturu. Multi-kolejnicová banka roku 2026 směruje každou platbu podle nákladů, finality a ceny likvidity.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>orchestrace plateb</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>vypořádání stablecoinů</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>A2A platby</category>
+      <category>API otevřeného bankovnictví</category>
+      <category>předfinancovaná likvidita</category>
+      <category>multi-kolejnicová banka</category>
+    </item>
+    <item>
+      <title>La banca multi-rail nel 2026: carte, A2A, stablecoin, RTP, FedNow e Open Banking in un'unica strategia</title>
+      <link>https://sebastienrousseau.com/it/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow esige liquidità pre-finanziata 24/7. ACH è economico ma T+1. USDC regola atomicamente ma serve infrastruttura wallet. La banca multi-rail 2026 instrada ogni pagamento per costo, finalità e costo di liquidità — guidata da un motore di orchestrazione che legge ISO 20022 pacs.008.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finanza</category>
+      <category>orchestrazione pagamenti</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>regolamento stablecoin</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>pagamenti A2A</category>
+      <category>API Open Banking</category>
+      <category>liquidità pre-finanziata</category>
+      <category>banca multi-rail</category>
+    </item>
+    <item>
+      <title>2026 年のマルチレール銀行:カード、A2A、ステーブルコイン、RTP、FedNow、Open Banking を一つの戦略に</title>
+      <link>https://sebastienrousseau.com/ja/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow は 24/7 の事前資金供給型流動性を要求します。ACH は安価ですが T+1 です。USDC はアトミックに決済しますがウォレット基盤を必要とします。2026 年のマルチレール銀行は、ISO 20022 pacs.008 を読み取るオーケストレーション・エンジンが、コスト・ファイナリティ・流動性コストに基づいて各決済の経路を決定します。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>決済オーケストレーション</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>ステーブルコイン決済</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>A2A 決済</category>
+      <category>Open Banking API</category>
+      <category>事前資金供給型流動性</category>
+      <category>マルチレール銀行</category>
+    </item>
+    <item>
+      <title>הבנק הרב-ערוצי ב-2026: כרטיסים, A2A, מטבעות יציבים, RTP, FedNow ו-Open Banking באסטרטגיה אחת</title>
+      <link>https://sebastienrousseau.com/he/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow דורש נזילות ממומנת מראש 24/7. ACH זול אך T+1. USDC נסלק אטומית אך מצריך תשתית ארנקים. הבנק הרב-ערוצי של 2026 מנתב כל תשלום לפי עלות, סופיות ועלות נזילות — באמצעות מנוע אורקסטרציה הקורא ISO 20022 pacs.008 ומחליט.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>אורקסטרציית תשלומים</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>סליקת מטבעות יציבים</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>תשלומי A2A</category>
+      <category>ממשקי Open Banking</category>
+      <category>נזילות ממומנת מראש</category>
+      <category>בנק רב-ערוצי</category>
+    </item>
+    <item>
+      <title>Multi-rälsbanken 2026: Kort, A2A, stablecoins, RTP, FedNow och Open Banking i en strategi</title>
+      <link>https://sebastienrousseau.com/sv/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow kräver förfinansierad likviditet dygnet runt. ACH är billigt men T+1. USDC avvecklas atomärt men kräver wallet-infrastruktur. Multi-rälsbanken 2026 routar varje betalning efter kostnad, finalitet och likviditetskostnad — driven av en orkestreringsmotor som läser ISO 20022 pacs.008.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finans</category>
+      <category>betalningsorkestrering</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>stablecoin-avveckling</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>A2A-betalningar</category>
+      <category>Open Banking API:er</category>
+      <category>förfinansierad likviditet</category>
+      <category>multi-rälsbank</category>
+    </item>
+    <item>
+      <title>Ngân hàng đa đường ray năm 2026: Thẻ, A2A, Stablecoin, RTP, FedNow và Open Banking trong một chiến lược</title>
+      <link>https://sebastienrousseau.com/vi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow đòi hỏi thanh khoản nạp trước 24/7. ACH rẻ nhưng T+1. USDC quyết toán nguyên tử nhưng cần hạ tầng ví. Ngân hàng đa đường ray 2026 định tuyến theo chi phí, tính chung quyết và chi phí thanh khoản — qua động cơ điều phối đọc ISO 20022 pacs.008.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>điều phối thanh toán</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>quyết toán stablecoin</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>thanh toán A2A</category>
+      <category>API Open Banking</category>
+      <category>thanh khoản nạp trước</category>
+      <category>ngân hàng đa đường ray</category>
+    </item>
+    <item>
+      <title>Bank wieloszynowy w 2026: karty, A2A, stablecoiny, RTP, FedNow i Open Banking w jednej strategii</title>
+      <link>https://sebastienrousseau.com/pl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow wymaga płynności prefinansowanej w trybie 24/7. ACH jest tani, ale T+1. USDC rozlicza się atomowo, lecz potrzebuje infrastruktury portfeli. Bank wieloszynowy 2026 routuje każdą płatność według kosztu, finalności i kosztu płynności — kierowany silnikiem orkiestracji czytającym ISO 20022 pacs.008.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>orkiestracja płatności</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>rozliczenie stablecoinowe</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>płatności A2A</category>
+      <category>API Open Banking</category>
+      <category>płynność prefinansowana</category>
+      <category>bank wieloszynowy</category>
+    </item>
+    <item>
+      <title>2026 年的多管道銀行:在單一策略中整合卡片、A2A、穩定幣、RTP、FedNow 與 Open Banking</title>
+      <link>https://sebastienrousseau.com/zh-hant/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow 要求 24/7 預籌流動性。ACH 便宜但是 T+1。USDC 原子結算卻需錢包基礎設施。2026 年多管道銀行依成本、終局性、流動性成本逐筆路由,核心是讀取 ISO 20022 pacs.008 的編排引擎。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>支付編排</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>穩定幣結算</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>A2A 支付</category>
+      <category>Open Banking API</category>
+      <category>預籌流動性</category>
+      <category>多管道銀行</category>
+    </item>
+    <item>
+      <title>2026 年的多通道银行:卡、A2A、稳定币、RTP、FedNow 与 Open Banking 合于一套战略</title>
+      <link>https://sebastienrousseau.com/zh-hans/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
+      <description>FedNow 要求 7×24 小时预筹流动性。ACH 廉价但是 T+1。USDC 原子结算却需要钱包基础设施。2026 年的多通道银行按成本、终局性与流动性成本逐笔路由,由读取 ISO 20022 pacs.008 的编排引擎作出决策。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
+      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>Finance</category>
+      <category>支付编排</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>ACH</category>
+      <category>稳定币结算</category>
+      <category>USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>A2A 支付</category>
+      <category>Open Banking API</category>
+      <category>预筹流动性</category>
+      <category>多通道银行</category>
+    </item>
     <item>
       <title>Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails</title>
       <link>https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026</link>
@@ -513,498 +1091,6 @@
       <category>HSM</category>
       <category>PKI</category>
       <category>運用レジリエンス</category>
-    </item>
-    <item>
-      <title>תשתית תשלומים פוסט-קוונטית: מדוע בנקים יחליפו ולא יתאימו ערוצים מורשתיים</title>
-      <link>https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
-      <description>קריפטוגרפיה פוסט-קוונטית כופה החלטה בינארית על ערוצי תשלומים: התאמת RSA/ECC בתוך מעטפות SWIFT MT ו-ISO 20022 שמעולם לא נמדדו ל-ML-KEM ו-ML-DSA, או החלפה בתשתית גמישה קריפטוגרפית. ארכיטקטים חייבים להחליט לפני ש-HNDL הופך להפסד תפעולי.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
-      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
-      <category>Technology</category>
-      <category>קריפטוגרפיה פוסט-קוונטית</category>
-      <category>PQC</category>
-      <category>גמישות קריפטוגרפית</category>
-      <category>HNDL</category>
-      <category>ML-KEM</category>
-      <category>ML-DSA</category>
-      <category>NIST</category>
-      <category>תשתית תשלומים</category>
-      <category>ISO 20022</category>
-      <category>SWIFT</category>
-      <category>HSM</category>
-      <category>PKI</category>
-      <category>חוסן תפעולי</category>
-    </item>
-    <item>
-      <title>Postkvantinfrastruktur för betalningar: varför banker kan välja ersättning framför anpassning av äldre räls</title>
-      <link>https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
-      <description>Postkvantkryptografi tvingar fram ett binärt val för betalningsräls: anpassa RSA/ECC inom SWIFT MT- och ISO 20022-kuvert som aldrig dimensionerats för ML-KEM och ML-DSA, eller ersätt med kryptoagil infrastruktur. Arkitekter måste välja innan HNDL blir operativ förlust.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
-      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
-      <category>Technology</category>
-      <category>postkvantkryptografi</category>
-      <category>PQC</category>
-      <category>kryptoagilitet</category>
-      <category>HNDL</category>
-      <category>ML-KEM</category>
-      <category>ML-DSA</category>
-      <category>NIST</category>
-      <category>betalningsinfrastruktur</category>
-      <category>ISO 20022</category>
-      <category>SWIFT</category>
-      <category>HSM</category>
-      <category>PKI</category>
-      <category>operativ motståndskraft</category>
-    </item>
-    <item>
-      <title>Hạ tầng Thanh toán Hậu Lượng tử: Vì sao Ngân hàng nên Thay thế chứ không Điều chỉnh Đường ray Cũ</title>
-      <link>https://sebastienrousseau.com/vi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
-      <description>Mật mã hậu lượng tử buộc đường ray thanh toán chọn nhị phân: điều chỉnh RSA/ECC trong phong bì SWIFT MT và ISO 20022 vốn chưa từng định cỡ cho ML-KEM và ML-DSA, hay thay thế bằng hạ tầng linh hoạt mật mã. Kiến trúc sư phải quyết định trước khi HNDL biến thành tổn thất vận hành.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
-      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
-      <category>Công nghệ</category>
-      <category>mật mã hậu lượng tử</category>
-      <category>PQC</category>
-      <category>linh hoạt mật mã</category>
-      <category>HNDL</category>
-      <category>ML-KEM</category>
-      <category>ML-DSA</category>
-      <category>NIST</category>
-      <category>hạ tầng thanh toán</category>
-      <category>ISO 20022</category>
-      <category>SWIFT</category>
-      <category>HSM</category>
-      <category>PKI</category>
-      <category>khả năng phục hồi vận hành</category>
-    </item>
-    <item>
-      <title>Infrastruktura płatności postkwantowych: dlaczego banki mogą zastąpić, a nie adaptować starsze szyny</title>
-      <link>https://sebastienrousseau.com/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
-      <description>Kryptografia postkwantowa wymusza na szynach płatniczych wybór binarny: adaptacja RSA/ECC w kopertach SWIFT MT i ISO 20022 nieprzystosowanych do ML-KEM i ML-DSA, czy zastąpienie infrastrukturą krypto-agilną. Architekci muszą zdecydować, zanim HNDL stanie się stratą operacyjną.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
-      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
-      <category>Technology</category>
-      <category>kryptografia postkwantowa</category>
-      <category>PQC</category>
-      <category>krypto-agilność</category>
-      <category>HNDL</category>
-      <category>ML-KEM</category>
-      <category>ML-DSA</category>
-      <category>NIST</category>
-      <category>infrastruktura płatnicza</category>
-      <category>ISO 20022</category>
-      <category>SWIFT</category>
-      <category>HSM</category>
-      <category>PKI</category>
-      <category>odporność operacyjna</category>
-    </item>
-    <item>
-      <title>後量子支付基礎建設:銀行為何可能替換而非改造傳統管道</title>
-      <link>https://sebastienrousseau.com/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
-      <description>後量子密碼學迫使支付管道做出二選一決定:在 SWIFT MT 與 ISO 20022 信封中改造 RSA/ECC,或以密碼敏捷基礎建設替換。架構師必須在 HNDL 變成實際損失之前做出決定。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
-      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
-      <category>Technology</category>
-      <category>後量子密碼學</category>
-      <category>PQC</category>
-      <category>密碼敏捷性</category>
-      <category>HNDL</category>
-      <category>ML-KEM</category>
-      <category>ML-DSA</category>
-      <category>NIST</category>
-      <category>支付基礎建設</category>
-      <category>ISO 20022</category>
-      <category>SWIFT</category>
-      <category>HSM</category>
-      <category>PKI</category>
-      <category>營運韌性</category>
-    </item>
-    <item>
-      <title>后量子支付基础设施:为何银行可能替换而非改造传统通道</title>
-      <link>https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</link>
-      <description>后量子密码学迫使支付通道作出二选一:在从未为 ML-KEM 与 ML-DSA 适配的 SWIFT MT 与 ISO 20022 信封内改造 RSA/ECC,或以密码敏捷的基础设施替换。架构师必须在 HNDL 转为运营损失前决断。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</guid>
-      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
-      <category>Technology</category>
-      <category>后量子密码学</category>
-      <category>PQC</category>
-      <category>密码敏捷性</category>
-      <category>HNDL</category>
-      <category>ML-KEM</category>
-      <category>ML-DSA</category>
-      <category>NIST</category>
-      <category>支付基础设施</category>
-      <category>ISO 20022</category>
-      <category>SWIFT</category>
-      <category>HSM</category>
-      <category>PKI</category>
-      <category>运营韧性</category>
-    </item>
-    <item>
-      <title>Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role</title>
-      <link>https://sebastienrousseau.com/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026</link>
-      <description>The UK has appointed a Wholesale Digital Markets Champion to force interoperability inside the Digital Securities Sandbox (DSS). Tokenised gilts settle this question first — HQLA on DLT, atomic against tokenised cash, with intraday repo as the prize.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>Digital Securities Sandbox</category>
-      <category>tokenised gilts</category>
-      <category>atomic DvP</category>
-      <category>intraday repo</category>
-      <category>RTGS</category>
-      <category>RLN</category>
-      <category>Canton</category>
-      <category>policy-as-code</category>
-    </item>
-    <item>
-      <title>Birleşik Krallık'ta Toptan Dijital Piyasalar: Gilt'ler ve Şampiyon Rolü</title>
-      <link>https://sebastienrousseau.com/tr/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>Birleşik Krallık&apos;ın Toptan Dijital Piyasalar Şampiyonu rolü; tokenleştirilmiş gilt&apos;leri, DLT mutabakatını ve City&apos;yi ulusal rekabet gücü projesine bağlıyor.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>toptan dijital piyasalar</category>
-      <category>tokenleştirilmiş gilt</category>
-      <category>Chris Woolard</category>
-      <category>Birleşik Krallık tokenleştirme</category>
-      <category>mutabakat</category>
-      <category>teminat hareketliliği</category>
-    </item>
-    <item>
-      <title>ตลาดดิจิทัลค้าส่งสหราชอาณาจักร: กิลต์แบบโทเคน การชำระบัญชี และบทบาทผู้นำใหม่</title>
-      <link>https://sebastienrousseau.com/th/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>บทบาท Wholesale Digital Markets Champion ของสหราชอาณาจักรยกระดับการเงินค้าส่งแบบโทเคนขึ้นเป็นวาระขีดความสามารถในการแข่งขันระดับชาติของ City</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ตลาดดิจิทัลค้าส่ง</category>
-      <category>กิลต์แบบโทเคน</category>
-      <category>Wholesale Digital Markets Champion</category>
-      <category>โทเคนไนเซชันสหราชอาณาจักร</category>
-      <category>การชำระบัญชี</category>
-      <category>การเคลื่อนย้ายหลักประกัน</category>
-    </item>
-    <item>
-      <title>Mercados digitales mayoristas en RU: gilts tokenizados, liquidación y campeón</title>
-      <link>https://sebastienrousseau.com/es/2026-05-30-uk-mayorista-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>El rol de Campeón de Mercados Digitales Mayoristas del RU convierte las finanzas mayoristas tokenizadas en proyecto país.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/es/2026-05-30-uk-mayorista-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>mercados digitales mayoristas</category>
-      <category>gilts tokenizados</category>
-      <category>Chris Woolard</category>
-      <category>tokenización Reino Unido</category>
-      <category>liquidación</category>
-      <category>movilidad del colateral</category>
-    </item>
-    <item>
-      <title>Marchés de gros au UK : gilts tokenisés, DSS et règlement atomique</title>
-      <link>https://sebastienrousseau.com/fr/2026-05-30-uk-de-gros-digital-markets-tokenise-gilts-settlement-2026/index.html</link>
-      <description>Le Digital Securities Sandbox et les gilts tokenisés font du règlement-livraison atomique et du repo intrajournalier le nouveau standard sterling.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-30-uk-de-gros-digital-markets-tokenise-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>Digital Securities Sandbox</category>
-      <category>gilts tokenisés</category>
-      <category>repo intrajournalier</category>
-      <category>DvP atomique</category>
-      <category>FCA</category>
-      <category>Bank of England</category>
-      <category>mobilité du collatéral</category>
-    </item>
-    <item>
-      <title>Pasar Digital Grosir di Inggris: Gilts Tertokenisasi, Penyelesaian, dan Peran Champion Baru</title>
-      <link>https://sebastienrousseau.com/id/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>Peran Wholesale Digital Markets Champion Inggris menjadikan keuangan grosir tertokenisasi sebagai proyek daya saing nasional bagi City of London di 2026.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Keuangan</category>
-      <category>pasar digital grosir</category>
-      <category>gilts tertokenisasi</category>
-      <category>Wholesale Digital Markets Champion</category>
-      <category>tokenisasi Inggris</category>
-      <category>penyelesaian</category>
-      <category>mobilitas agunan</category>
-    </item>
-    <item>
-      <title>영국 도매 디지털 시장 2026: 토큰화 길트, 결제, 챔피언 직책</title>
-      <link>https://sebastienrousseau.com/ko/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>영국 도매 디지털 시장 챔피언 직책은 토큰화 길트, DLT 결제, BoE DSS 샌드박스를 국가 경쟁력 의제로 격상시킵니다. 2026년 시티의 설계 규율을 점검합니다.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>도매 디지털 시장</category>
-      <category>토큰화 길트</category>
-      <category>Chris Woolard</category>
-      <category>UK tokenisation</category>
-      <category>결제</category>
-      <category>담보 이동성</category>
-    </item>
-    <item>
-      <title>Wholesale Digital Markets UK: Tokenisierte Gilts und Champion-Rolle</title>
-      <link>https://sebastienrousseau.com/de/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>Die britische Champion-Rolle für Wholesale Digital Markets macht tokenisierte Wholesale-Finanzierung zum nationalen Wettbewerbsprojekt — Gilts zuerst.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finanzen</category>
-      <category>Wholesale Digital Markets</category>
-      <category>tokenisierte Gilts</category>
-      <category>Chris Woolard</category>
-      <category>UK Tokenisierung</category>
-      <category>Abwicklung</category>
-      <category>Sicherheitenmobilität</category>
-    </item>
-    <item>
-      <title>यूके के थोक डिजिटल बाजार: टोकनीकृत गिल्ट्स, निपटान एवं नया चैम्पियन पद</title>
-      <link>https://sebastienrousseau.com/hi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>यूके का Wholesale Digital Markets Champion पद टोकनीकृत थोक वित्त को राष्ट्रीय प्रतिस्पर्धात्मकता परियोजना बनाता है — गिल्ट्स, निपटान, साक्ष्य।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>वित्त</category>
-      <category>थोक डिजिटल बाजार</category>
-      <category>टोकनीकृत गिल्ट्स</category>
-      <category>Wholesale Digital Markets Champion</category>
-      <category>UK टोकनीकरण</category>
-      <category>निपटान</category>
-      <category>संपार्श्विक गतिशीलता</category>
-    </item>
-    <item>
-      <title>UK Wholesale Digital Markets: Tokenized Gilts, DLT Settlement, Champion</title>
-      <link>https://sebastienrousseau.com/fil/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>Ginagawang pambansang proyekto ng kakayahang makipagkumpitensya ng UK Wholesale Digital Markets Champion ang tokenized wholesale finance, gilts, at DLT settlement.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>wholesale digital markets</category>
-      <category>tokenized gilts</category>
-      <category>UK gilts</category>
-      <category>DLT settlement</category>
-      <category>BoE DSS</category>
-      <category>City of London</category>
-      <category>Project Guardian</category>
-      <category>SDX</category>
-    </item>
-    <item>
-      <title>যুক্তরাজ্যের পাইকারি ডিজিটাল বাজার: টোকেনাইজড গিল্টস, নিষ্পত্তি ও নতুন চ্যাম্পিয়ন ভূমিকা</title>
-      <link>https://sebastienrousseau.com/bn/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>যুক্তরাজ্যের Wholesale Digital Markets Champion ভূমিকা টোকেনাইজড পাইকারি অর্থব্যবস্থাকে জাতীয় প্রতিযোগিতার প্রকল্পে রূপান্তরিত করেছে।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>হোলসেল ডিজিটাল মার্কেট</category>
-      <category>টোকেনাইজড গিল্টস</category>
-      <category>Chris Woolard</category>
-      <category>UK টোকেনাইজেশন</category>
-      <category>সেটলমেন্ট</category>
-      <category>কোল্যাটারাল মোবিলিটি</category>
-    </item>
-    <item>
-      <title>Digitale wholesale-markten in het VK: getokeniseerde gilts, afwikkeling en de nieuwe Champion-rol</title>
-      <link>https://sebastienrousseau.com/nl/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>De rol van Wholesale Digital Markets Champion in het VK maakt van getokeniseerde wholesale-finance een nationaal concurrentievermogen-project voor de City of London.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>digitale wholesale-markten</category>
-      <category>getokeniseerde gilts</category>
-      <category>Wholesale Digital Markets Champion</category>
-      <category>UK-tokenisatie</category>
-      <category>atomaire afwikkeling</category>
-      <category>mobiliteit van onderpand</category>
-    </item>
-    <item>
-      <title>Mercados de Atacado Digitais no Reino Unido: Gilts Tokenizados, Liquidação e o Novo Campeão</title>
-      <link>https://sebastienrousseau.com/pt-br/2026-05-30-uk-atacado-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>O papel de Campeão dos Mercados de Atacado Digitais do Reino Unido transforma o atacado tokenizado em projeto nacional de competitividade para 2026.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-05-30-uk-atacado-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>mercados de atacado digitais</category>
-      <category>gilts tokenizados</category>
-      <category>Chris Woolard</category>
-      <category>tokenização UK</category>
-      <category>liquidação</category>
-      <category>mobilidade de colateral</category>
-    </item>
-    <item>
-      <title>الأسواق الرقمية للجملة في المملكة المتحدة: سندات gilt المرمَّزة، التسوية، ودور المنسق الجديد</title>
-      <link>https://sebastienrousseau.com/ar/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>دور منسق الأسواق الرقمية للجملة في المملكة المتحدة يحوِّل تمويل الجملة المرمَّز إلى مشروع تنافسية وطني يربط سندات gilt والتسوية وDSS.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>الأسواق الرقمية للجملة، سندات gilt المرمَّزة، Chris Woolard، ترميز المملكة المتحدة، التسوية، قابلية نقل الضمانات</category>
-    </item>
-    <item>
-      <title>Kasuwannin Dijital na Yawa a Birtaniya: Gilts Tokenised, Sasantawa, da Sabon Matsayin Zakara</title>
-      <link>https://sebastienrousseau.com/ha/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>Matsayin Zakara na Kasuwannin Dijital na Yawa na Birtaniya yana mai da kuɗin gilts tokenised zuwa aikin ƙarfin gasa na ƙasa baki ɗaya na 2026.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>kasuwannin dijital na yawa</category>
-      <category>gilts tokenised</category>
-      <category>Chris Woolard</category>
-      <category>tokenisation Birtaniya</category>
-      <category>sasantawa</category>
-      <category>motsi na garantii</category>
-    </item>
-    <item>
-      <title>Оптові цифрові ринки у Великій Британії: токенізовані гілти, розрахунок та нова роль чемпіона</title>
-      <link>https://sebastienrousseau.com/uk/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>Роль Чемпіона оптових цифрових ринків Великої Британії перетворює токенізовані оптові фінанси на національний проєкт конкурентоспроможності Сіті у 2026 році.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>оптові цифрові ринки</category>
-      <category>токенізовані гілти</category>
-      <category>Wholesale Digital Markets Champion</category>
-      <category>токенізація Великої Британії</category>
-      <category>розрахунок</category>
-      <category>мобільність застави</category>
-    </item>
-    <item>
-      <title>Àwọn Ọjà Oníròyìn Ńlá Dijítà ní UK: Gilts Tókènì, Ìpinnu Owó, àti Ipa Akọni Tuntun</title>
-      <link>https://sebastienrousseau.com/yo/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>Ipa Akọni Àwọn Ọjà Oníròyìn Ńlá Dijítà UK ń sọ ìnáwó oníròyìn ńlá tókènì di iṣẹ́ agbára ìdíje orílẹ̀-èdè ní 2026.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>àwọn ọjà oníròyìn ńlá</category>
-      <category>gilts tókènì</category>
-      <category>Chris Woolard</category>
-      <category>tokenisation UK</category>
-      <category>ìpinnu owó</category>
-      <category>ìṣíkiri ohun-ẹ̀ẹ́gbàṣe</category>
-    </item>
-    <item>
-      <title>Piețe digitale de gros în UK: gilts tokenizați, decontare și noul rol de champion</title>
-      <link>https://sebastienrousseau.com/ro/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>Rolul Wholesale Digital Markets Champion al Regatului Unit transformă finanța de gros tokenizată într-un proiect național de competitivitate condus din City.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finanțe</category>
-      <category>piețe digitale de gros</category>
-      <category>gilts tokenizați</category>
-      <category>Chris Woolard</category>
-      <category>tokenizare UK</category>
-      <category>decontare</category>
-      <category>mobilitatea garanțiilor</category>
-      <category>DLT</category>
-      <category>BoE DSS</category>
-    </item>
-    <item>
-      <title>Оптовые цифровые рынки Великобритании: токенизированные гилты, расчёт и новая роль координатора</title>
-      <link>https://sebastienrousseau.com/ru/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>Роль координатора оптовых цифровых рынков Великобритании превращает токенизированные оптовые финансы в национальный проект конкурентоспособности.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>оптовые цифровые рынки</category>
-      <category>токенизированные гилты</category>
-      <category>Chris Woolard</category>
-      <category>токенизация UK</category>
-      <category>расчёт</category>
-      <category>мобильность обеспечения</category>
-    </item>
-    <item>
-      <title>Velkoobchodní digitální trhy v UK: tokenizované gilty, vypořádání a nová role Champion</title>
-      <link>https://sebastienrousseau.com/cs/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>Britská role Wholesale Digital Markets Champion proměňuje tokenizované velkoobchodní finance v národní projekt konkurenceschopnosti City of London.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>velkoobchodní digitální trhy</category>
-      <category>tokenizované gilty</category>
-      <category>Chris Woolard</category>
-      <category>tokenizace UK</category>
-      <category>vypořádání</category>
-      <category>mobilita kolaterálu</category>
-    </item>
-    <item>
-      <title>Mercati digitali all'ingrosso nel Regno Unito: gilts tokenizzati, regolamento e il nuovo ruolo di champion</title>
-      <link>https://sebastienrousseau.com/it/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>Il ruolo di Wholesale Digital Markets Champion trasforma la finanza all&apos;ingrosso tokenizzata in un progetto di competitività nazionale del Regno Unito per il 2026.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>mercati digitali all&apos;ingrosso</category>
-      <category>gilts tokenizzati</category>
-      <category>Wholesale Digital Markets Champion</category>
-      <category>tokenizzazione UK</category>
-      <category>regolamento</category>
-      <category>mobilità del collaterale</category>
-    </item>
-    <item>
-      <title>英国のホールセール・デジタル市場:トークン化ギルト、決済、新チャンピオン職</title>
-      <link>https://sebastienrousseau.com/ja/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</link>
-      <description>英国の Wholesale Digital Markets Champion 制度は、トークン化ホールセール金融を国家競争力プロジェクトへと押し上げる。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html</guid>
-      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&amp;w=1200&amp;format=webp&amp;q=80" type="image/jpeg" length="0"/>
-      <category>Finance</category>
-      <category>ホールセール・デジタル市場</category>
-      <category>トークン化ギルト</category>
-      <category>Wholesale Digital Markets Champion</category>
-      <category>英国トークン化</category>
-      <category>DLT 決済</category>
-      <category>担保モビリティ</category>
     </item>
   </channel>
 </rss>
