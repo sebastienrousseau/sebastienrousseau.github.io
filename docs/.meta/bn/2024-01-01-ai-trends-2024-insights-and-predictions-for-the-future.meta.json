@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Drone View of London",
+  "subtitle": "প্রযুক্তি, সমাজ ও নৈতিক বিবর্তনের একটি গুরুত্বপূর্ণ বছর",
   "title": "AI Trends 2024: Insights and Predictions for the Future",
-  "locale": "bn_BD",
-  "subtitle": "A Pivotal Year for Tech, Society, and Ethical Evolution",
   "banner": "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp",
+  "banner_alt": "লন্ডনের ড্রোন থেকে দৃশ্য",
+  "locale": "bn_BD",
+  "description": "২০২৪-এর AI প্রবণতা: অর্থায়নে generative AI, মাল্টিমোডাল মডেল, অন-ডিভাইস LLM এবং ব্যাংকিং ও পণ্য প্রকৌশলকে নতুনভাবে রূপ দেবে এমন পরিবর্তনসমূহ।",
   "language": "bn-BD",
-  "keywords": "AI trends 2024, generative AI, AI in education, AI cybersecurity, AI finance, AI content creation, AI space exploration, ethical AI, AI in retail, AI analytics",
-  "description": "AI trends for 2024: generative AI in finance, multimodal models, on-device LLMs and the shifts that will reshape banking and product engineering.",
-  "date": "Jan 08, 2024"
+  "date": "Jan 08, 2024",
+  "keywords": "AI trends 2024, generative AI, শিক্ষায় AI, AI সাইবারনিরাপত্তা, অর্থায়নে AI, AI কন্টেন্ট ক্রিয়েশন, মহাকাশ অনুসন্ধানে AI, নৈতিক AI, খুচরায় AI, AI অ্যানালিটিক্স"
 }

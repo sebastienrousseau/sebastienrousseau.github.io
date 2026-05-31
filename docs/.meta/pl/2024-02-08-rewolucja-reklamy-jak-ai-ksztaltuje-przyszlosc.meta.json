@@ -1,11 +1,11 @@
 {
-  "date": "Feb 08, 2024",
-  "language": "pl-PL",
-  "banner_alt": "Wizualizacja targetowanej reklamy AI",
   "keywords": "AI, reklama, marketing, personalizacja, generatywna AI, GPT, automatyzacja",
-  "subtitle": "Personalizacja, targetowanie i automatyzacja oparta na AI",
+  "title": "Rewolucja reklamy: jak AI kształtuje przyszłość",
   "description": "Jak sztuczna inteligencja zmienia branżę reklamową: personalizacja, generowanie kreacji i optymalizacja kampanii.",
   "locale": "pl_PL",
-  "title": "Rewolucja reklamy: jak AI kształtuje przyszłość",
-  "banner": "https://cloudcdn.pro/stocks/images/advertising-ai.webp"
+  "language": "pl-PL",
+  "date": "Feb 08, 2024",
+  "banner": "https://cloudcdn.pro/stocks/images/advertising-ai.webp",
+  "subtitle": "Personalizacja, targetowanie i automatyzacja oparta na AI",
+  "banner_alt": "Wizualizacja targetowanej reklamy AI"
 }

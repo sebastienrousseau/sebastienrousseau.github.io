@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Puerta de caja fuerte abierta bañada en luz dorada — metáfora visual de la protección criptográfica de los archivos financieros",
   "subtitle": "El riesgo cuántico ha pasado de la curiosidad académica a un mandato normativo activo. La hoja de ruta del G7, BIS Project Leap y los calendarios UE/UK/Australia plantean ya la cuestión no del cuándo, sino del cómo.",
+  "language": "es-ES",
+  "description": "El riesgo cuántico ha pasado de la curiosidad académica al mandato normativo. Con la hoja de ruta del G7 de enero de 2026, calendarios UE, UK y australiano ahora aclarados, y BIS Project Leap que ha demostrado la viabilidad en un sistema de pago real, la cuestión para los consejos de administración ya no es la migración, sino los plazos.",
+  "banner_alt": "Puerta de caja fuerte abierta bañada en luz dorada — metáfora visual de la protección criptográfica de los archivos financieros",
   "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp",
   "title": "Asegurar el libro contable: guía para consejos de administración sobre la migración postcuántica en banca corporativa",
-  "date": "May 14, 2026",
   "keywords": "criptografía postcuántica, ML-KEM, ML-DSA, FIPS 203, FIPS 204, BIS Project Leap, G7 CEG, NCSC, ANSSI, BSI, ASD, CNSA 2.0, agilidad criptográfica, banca corporativa, pagos wholesale",
-  "locale": "es_ES",
-  "description": "El riesgo cuántico ha pasado de la curiosidad académica al mandato normativo. Con la hoja de ruta del G7 de enero de 2026, calendarios UE, UK y australiano ahora aclarados, y BIS Project Leap que ha demostrado la viabilidad en un sistema de pago real, la cuestión para los consejos de administración ya no es la migración, sino los plazos.",
-  "language": "es-ES"
+  "date": "May 14, 2026",
+  "locale": "es_ES"
 }

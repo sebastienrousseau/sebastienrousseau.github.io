@@ -73,6 +73,8 @@ TOPICS: dict[str, dict[str, object]] = {
             "it all. Tools, playbooks, and the regulatory clock."
         ),
         "slugs": [
+            "2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026",
+            "2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026",
             "2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026",
             "2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026",
             "2026-05-19-global-wholesale-payments-economics-2026",
@@ -152,6 +154,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "regulatory frame around digital-asset-backed payment rails."
         ),
         "slugs": [
+            "2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026",
             "2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf",
             "2018-02-15-the-making-of-the-express-transaction-credits-platform",
             "2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution",

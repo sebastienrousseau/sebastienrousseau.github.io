@@ -54,21 +54,36 @@ This script fails non-zero on any of: incomplete frontmatter (missing title/subt
 
 If it fails, **fix the EN draft and re-run** before proceeding. Stub generation against a broken draft wastes 27 translation slots.
 
-### 4. Banner image (only if check_voice flagged banner)
+### 4. Banner image (if check_voice flagged banner, OR the draft's banner is a poor semantic fit)
 
-If the gate flagged the `banner:` URL as unreachable, pick a fresh one from the curated CDN library:
+The legacy `pick_banner.py` scored by filename-token overlap with hand-passed hints. That capped quality at "good enough" and tended to repeat generic stock images on substantive technical pieces. Pick the banner **semantically yourself** — you have the full article in context, the model is already paid for, and image fit drives reader trust more than any other single asset choice.
+
+**When this step runs:** always re-evaluate. If the draft already has a fitting, unique, reachable banner, leave it. If the banner is missing, unreachable, generic stock (e.g. `corporate-finance.webp` / `ai-robot.webp` on a non-AI-specific piece), or has already been used by an adjacent recent article, swap it.
 
 ```bash
-python3 scripts/editorial/pick_banner.py --hint <topic-keywords>
+# Available inventory (filename is the only metadata the CDN exposes)
+ls /Users/seb/Code/Public/CDN/cloudcdn.pro/stocks/images/ | sort
+
+# Banners already taken — exclude these for uniqueness
+grep -h '^banner:' _posts/*.md | sed -E 's|.*/||; s|\.webp.*||' | sort -u
 ```
 
-Topic keywords are comma-separated. Recognised hints: `cloud`, `kubernetes`, `quantum`, `payments`, `ai`, `rust`, `blockchain`, `iso`, `agentic`, `governance`, `office`. The script:
-- reads the CDN inventory at `/Users/seb/Code/Public/CDN/cloudcdn.pro/stocks/images/` (local) — set `CDN_INVENTORY` to override in cloud
-- excludes anything already used as a `banner:` in any `_posts/*.md`
-- biases toward filenames that match your hint keywords
-- emits the canonical transform URL: `https://cloudcdn.pro/api/transform?url=/stocks/images/<name>.webp&w=1200&format=webp&q=80`
+Read the article's frontmatter — `title`, `subtitle`, `description`, `keywords`, `tags` — and pick the inventory image whose visible subject best matches the article's semantic content. Prefer:
+- **Photographer-attributed shots** (e.g. `luke-ellis-craven-yCsk1q2Eq0o.webp`, `marek-piwnicki-U6WvLJU0l6o.webp`, `riccardo-oliva-C5DLhUkEWfM.webp`) for thought-leadership pieces — editorial-looking, not stock.
+- **Topic-specific imagery** (e.g. `circuit_board_cityscape.webp` for AI-as-infrastructure, `pixabay-210547.webp` for balance-sheet / stablecoins, `rustlogs.webp` for Rust libraries, `getty-images-LaU3HadwEeE-unsplash.webp` for quantum-cryptography).
+- **Anything that visually answers "what is this article about" in one frame.**
+- **Avoid generic-stock filenames** (`corporate-finance.webp`, `ai-robot.webp`) for substantive technical pieces — they signal AI-written content even when the writing is strong.
 
-Update the `banner:` line in `_posts/<slug>.md` with the returned URL. Re-run `check_voice` to confirm it's now reachable.
+**URL form depends on filename shape** — the CDN transform endpoint only handles hyphenated filenames:
+- Hyphenated filename (e.g. `luke-ellis-craven-yCsk1q2Eq0o.webp`) → use transform for responsive sizing:
+  `https://cloudcdn.pro/api/transform?url=/stocks/images/<name>.webp&w=1200&format=webp&q=80`
+- Underscored filename (e.g. `circuit_board_cityscape.webp`) → transform endpoint returns 404. Use direct URL:
+  `https://cloudcdn.pro/stocks/images/<name>.webp`
+- Sanity check with `curl -sI` before committing if you're not sure — `HTTP/2 200` and `content-type: image/webp` are the green signals.
+
+Update the `banner:` line in `_posts/<slug>.md` with your chosen URL. Also update `banner_alt:` to a short concrete description of what's actually in the chosen image (this is what locale sub-agents will translate from, and what screen readers will surface). Re-run `check_voice` to confirm the URL is reachable.
+
+> **Fallback (cloud mode only):** if you need deterministic output and don't have full article context, `python3 scripts/editorial/pick_banner.py --hint <kw>` is still available. Local-mode runs should prefer semantic selection.
 
 ### 5. Scaffold the 27 locale stubs
 
@@ -109,6 +124,16 @@ When the parallel batch completes, verify completeness:
 ```bash
 python3 scripts/editorial/translate_post.py <slug> --list-stubs       # should report 'all 27 locales translated'
 ```
+
+### 6b. Backfill any remaining English frontmatter
+
+Sub-agents translate `title`, `subtitle`, `description`, `keywords`, `twitter_title`, `twitter_description`, and `excerpt`. This step covers the fields they do not touch: `seo_title`, `banner_alt`, `tags`, `item_description`, `item_title`, `twitter_title` (where missed), and `apple-mobile-web-app-title`.
+
+```bash
+python3 scripts/editorial/translate_frontmatter.py --slug <slug>
+```
+
+The script is idempotent — it only writes a field when the locale value is still byte-for-byte identical to the English source, so it never overwrites a good sub-agent translation. Run it unconditionally; a clean article produces zero writes in under a second.
 
 ### 7. Homepage card rotation
 
@@ -193,7 +218,7 @@ gh pr create --title "feat(content): ${today} — ${title}" --body "$(cat <<EOF
 
 ### 2. Banner
 - URL: \`${banner_url}\`
-<!-- If pick_banner.py ran, add: "Picked via \`pick_banner.py --hint <kw>\` because the original banner was unreachable." -->
+<!-- If you swapped the banner, add one sentence on why (e.g. "Original was \`corporate-finance.webp\` — generic stock that read as AI-written. Swapped for \`circuit_board_cityscape.webp\` which thematically matches the AI-payments-infrastructure framing."). Skip this if the draft's banner shipped as-is. -->
 
 ### 3. Translations (27 locales)
 - Dispatched in parallel batches of 7 sub-agents
@@ -278,7 +303,7 @@ Tell Sebastien:
 - Slug + title + commit SHA
 - 28/28 locale count
 - Any voice-gate defects you fixed before scaffolding
-- The banner image used (URL or filename + hint that drove the pick)
+- The banner image used (URL or filename + one-line rationale if you swapped it)
 - Final CI status: which checks are green, which (if any) you had to push fixes for, which (if any) still need his eyes
 - Anything that needed a fix not in this checklist
 - Reminder: merge from GitHub when ready — all required checks should be green

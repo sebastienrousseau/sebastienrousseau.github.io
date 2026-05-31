@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/sitemap.xml

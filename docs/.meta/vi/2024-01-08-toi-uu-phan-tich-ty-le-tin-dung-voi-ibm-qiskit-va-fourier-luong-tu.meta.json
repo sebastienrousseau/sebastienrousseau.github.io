@@ -1,11 +1,11 @@
 {
-  "title": "Tối ưu phân tích tỉ lệ tín dụng với IBM Qiskit và biến đổi Fourier lượng tử",
-  "subtitle": "Một thuật toán lượng tử cho rủi ro tín dụng nhanh hơn",
-  "locale": "vi_VN",
+  "banner": "https://cloudcdn.pro/stocks/images/qiskit-banner.webp",
   "keywords": "IBM Qiskit, QFT, biến đổi Fourier lượng tử, tỉ lệ tín dụng, rủi ro, tài chính, lượng tử",
   "language": "vi-VN",
+  "locale": "vi_VN",
+  "description": "Cách IBM Qiskit và biến đổi Fourier lượng tử định hình lại phân tích tỉ lệ tín dụng trong tài chính, mang lại độ chính xác và tốc độ chưa từng có.",
   "date": "January 8, 2024",
   "banner_alt": "Sơ đồ mạch lượng tử với cửa Fourier",
-  "banner": "https://cloudcdn.pro/stocks/images/qiskit-banner.webp",
-  "description": "Cách IBM Qiskit và biến đổi Fourier lượng tử định hình lại phân tích tỉ lệ tín dụng trong tài chính, mang lại độ chính xác và tốc độ chưa từng có."
+  "title": "Tối ưu phân tích tỉ lệ tín dụng với IBM Qiskit và biến đổi Fourier lượng tử",
+  "subtitle": "Một thuật toán lượng tử cho rủi ro tín dụng nhanh hơn"
 }

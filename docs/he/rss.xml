@@ -6,8 +6,182 @@
     <description>מאמרים בעברית: AI יישומי, תשלומי ISO 20022, קריפטוגרפיה פוסט-קוונטית, וטרנספורמציה של תשלומי סיטונאות.</description>
     <atom:link href="https://sebastienrousseau.com/he/rss.xml" rel="self" type="application/rss+xml"/>
     <language>he-IL</language>
-    <lastBuildDate>Fri, 22 May 2026 21:38:56 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 14:48:09 +0000</lastBuildDate>
     <copyright>© זכויות יוצרים 2007 - 2026 - Sebastien Rousseau. כל הזכויות שמורות.</copyright>
+    <item>
+      <title>נכסים דיגיטליים 2026: מעבר תשתית שהבנקים לא יכולים לדחות</title>
+      <link>https://sebastienrousseau.com/he/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>נכסים דיגיטליים אינם עוד הימור על חדשנות. הם שאלת ארכיטקטורה של סליקה, משמורת ומאזן. המשימה האסטרטגית של הבנקים היא תכנון תשתית באי-ודאות מבנית.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Sat, 30 May 2026 14:48:09 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>נכסים דיגיטליים 2026</category>
+      <category>נכסים מן העולם הממשי שעברו טוקניזציה</category>
+      <category>סטייבלקוינים בנקאות</category>
+      <category>פיקדונות מתוקנים</category>
+      <category>משמורת נכסים דיגיטליים</category>
+      <category>DLT בנקאות</category>
+      <category>תשתית סליקה</category>
+      <category>ניידות בטחונות</category>
+      <category>כסף ניתן לתכנות</category>
+      <category>אסטרטגיית בנקים בנכסים דיגיטליים</category>
+    </item>
+    <item>
+      <title>שווקים דיגיטליים סיטונאיים בבריטניה: גילט מתורמזים, סליקה ותפקיד האלוף החדש</title>
+      <link>https://sebastienrousseau.com/he/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
+      <description>תפקיד אלוף השווקים הדיגיטליים הסיטונאיים בבריטניה הופך מימון סיטונאי מתורמז לפרויקט תחרותיות לאומי המאחד גילט, סליקה וזירות DLT.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>שווקים דיגיטליים סיטונאיים בריטניה 2026</category>
+      <category>Chris Woolard</category>
+      <category>גילט מתורמזים</category>
+      <category>מימון סיטונאי מתורמז</category>
+      <category>אלוף שווקים דיגיטליים</category>
+      <category>תרמוז בריטניה</category>
+      <category>סליקה</category>
+      <category>DLT</category>
+      <category>BoE DSS</category>
+      <category>Project Guardian</category>
+      <category>SDX</category>
+      <category>Project Agorá</category>
+    </item>
+    <item>
+      <title>ISO 20022 לאחר ההגירה: הפיכת נתוני תשלום למוצרי בנקאות ב-2026</title>
+      <link>https://sebastienrousseau.com/he/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 לאחר ההגירה הוא הזדמנות מוצר נתונים: כתובות מובנות, קודי מטרה, פרטי חשבונית, הודעות חקירה ואירועי סטטוס הופכים למוצרי התאמה, הונאה, נזידוש, ציות ואנליטיקה לבנקים.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>pacs.008</category>
+      <category>pain.001</category>
+      <category>CBPR+</category>
+      <category>SWIFT gpi</category>
+      <category>כתובת מובנית</category>
+      <category>קוד מטרה</category>
+      <category>מוצרי נתוני תשלום</category>
+      <category>אוצרות תאגידי</category>
+      <category>התאמה</category>
+      <category>סינון סנקציות</category>
+      <category>זיהוי הונאה</category>
+    </item>
+    <item>
+      <title>DORA, חוק הבינה המלאכותית וריבונות נתונים: ערימת הציות של 2026 לבנקים</title>
+      <link>https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
+      <description>DORA, חוק הבינה המלאכותית של האיחוד האירופי, GDPR, סיכון ריכוז ענן וריבונות נתונים מתכנסים ב-2026 לערימת ציות אחת לבנקים.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>DORA 2026</category>
+      <category>חוק הבינה המלאכותית של האיחוד האירופי 2026</category>
+      <category>ריבונות נתונים לבנקים</category>
+      <category>חוסן תפעולי</category>
+      <category>סיכון ריכוז ענן</category>
+      <category>ציות AI בשירותים פיננסיים</category>
+      <category>AI בסיכון גבוה</category>
+      <category>חוסן ICT</category>
+      <category>סיכון צד שלישי</category>
+      <category>GDPR</category>
+      <category>ESMA</category>
+      <category>ENISA</category>
+      <category>NIS2</category>
+    </item>
+    <item>
+      <title>AI כמערכת ההפעלה של התשלומים: הונאה, ניתוב, חוסן וציות ב-2026</title>
+      <link>https://sebastienrousseau.com/he/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</link>
+      <description>בינה מלאכותית הופכת ב-2026 למערכת ההפעלה של התשלומים — מנתחת הונאה, מתקנת תשלומים, מנתבת מסילות, צופה נזילות, מסננת סנקציות ו-AML ומבקרת מסחר אוטונומי במהירות התהליך.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
+      <category>מערכת הפעלה לבינה מלאכותית בתשלומים 2026</category>
+      <category>הונאה בתשלומים</category>
+      <category>ניתוב תשלומים</category>
+      <category>מניעת הונאה בזמן אמת</category>
+      <category>ISO 20022</category>
+      <category>חוסן תשלומים</category>
+      <category>ניתוח עסקאות</category>
+      <category>תחזית תזרים מזומנים</category>
+      <category>FedNow</category>
+      <category>RTP</category>
+      <category>AML</category>
+      <category>סנקציות</category>
+      <category>מסחר אוטונומי</category>
+    </item>
+    <item>
+      <title>Magnifica Humanitas: קריאה הנדסית באנציקליקה על AI</title>
+      <link>https://sebastienrousseau.com/he/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</link>
+      <description>ב-25 במאי 2026 פרסם האפיפיור לאו ה-14 את Magnifica Humanitas, האנציקליקה האפיפיורית הראשונה המוקדשת לבינה מלאכותית — קריאה הנדסית מעידן ה-AI והקוונטים.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
+      <category>Magnifica Humanitas</category>
+      <category>Pope Leo XIV</category>
+      <category>AI encyclical</category>
+      <category>אתיקה של בינה מלאכותית</category>
+      <category>אתיקה של מחשוב קוונטי</category>
+      <category>Rerum Novarum</category>
+      <category>מגדל בבל</category>
+      <category>הטכנולוגיה לעולם אינה ניטרלית</category>
+      <category>טרנס-הומניזם</category>
+      <category>פוסט-הומניזם</category>
+      <category>כבוד האדם</category>
+      <category>פרדיגמה טכנולוגית</category>
+      <category>רכבת מכונית גרעין אינטרנט</category>
+      <category>היסטוריה של פאניקה מוסרית סביב הטכנולוגיה</category>
+      <category>העברת ידע של Lucy</category>
+      <category>תקווה של AI</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+      <category>Anthropic</category>
+      <category>Sebastien Rousseau</category>
+    </item>
+    <item>
+      <title>סטייבלקוינים מול פיקדונות מתורמזים ב-2026: על מה הבנקים חייבים להגן</title>
+      <link>https://sebastienrousseau.com/he/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</link>
+      <description>סטייבלקוינים ופיקדונות מתורמזים מתכנסים סביב סליקה הניתנת לתכנות ב-2026, אך מודלי המאזן, המשפט, הנזילות והאמון שלהם נותרים שונים — והבנקים חייבים להגן על זכיינות הפיקדונות.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>סטייבלקוינים 2026</category>
+      <category>פיקדונות מתורמזים</category>
+      <category>פיקדונות בנק</category>
+      <category>GENIUS Act</category>
+      <category>JPM Coin</category>
+      <category>טוקני פיקדון</category>
+      <category>רזרבות סטייבלקוין</category>
+      <category>מימון בנק</category>
+      <category>כסף דיגיטלי</category>
+      <category>MiCA</category>
+      <category>FedNow</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>נזילות הניתנת לתכנות ב-2026: AI, פיקדונות מתורמזים וגזברות בזמן אמת</title>
+      <link>https://sebastienrousseau.com/he/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</link>
+      <description>נזילות הניתנת לתכנות ב-2026 מחברת חיזוי AI, פיקדונות מתורמזים, ערוצי תשלום בזמן אמת, חשבונות וירטואליים, סטייבלקוינס ומערכות TMS לשכבת תזמור אחת להון חוזר תאגידי.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</guid>
+      <pubDate>Mon, 25 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>נזילות הניתנת לתכנות 2026</category>
+      <category>תזמור גזברות</category>
+      <category>AI בגזברות</category>
+      <category>פיקדונות מתורמזים</category>
+      <category>נזילות בזמן אמת</category>
+      <category>סטייבלקוינס גזברות</category>
+      <category>תשלומים רב-ערוציים</category>
+      <category>חשבונות וירטואליים</category>
+      <category>בנקאות עסקאות</category>
+      <category>ניידות בטחונות</category>
+    </item>
     <item>
       <title>UK Payments Forward Plan 2026: סטייבלקוינים, בנקאות פתוחה ותשלומים אגנטיים</title>
       <link>https://sebastienrousseau.com/he/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>
@@ -81,9 +255,9 @@
       <category>קונצרטי ג&apos;אז בלונדון</category>
     </item>
     <item>
-      <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+      <title>פיקדונות מתויגים ב-2026: שירותי בנקאות, תחרות סטייבלקוינים והסטטוס של כספי בנקים מסחריים בני-תכנות</title>
       <link>https://sebastienrousseau.com/he/2026-05-21-tokenised-deposits-banking-services-status-2026/</link>
-      <description>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</description>
+      <description>שירותי tokenised deposits ב-2026 עוברים ממחקר לפיילוטים בנקאיים ולהצעות ראשוניות ללקוחות. המצב עדיין לפני קנה מידה, אך הכיוון ברור: כסף בנקאי מסחרי מותאם לסליקה תכנותית, ארנקים דיגיטליים, יכולת פעולה הדדית עם stablecoins ושווקי הון tokenised.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-21-tokenised-deposits-banking-services-status-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
@@ -94,38 +268,38 @@
       <category>Great British Tokenised Deposits</category>
       <category>Lloyds digital assets</category>
       <category>stablecoins</category>
-      <category>commercial bank money</category>
+      <category>כסף בנקאי מסחרי</category>
       <category>BIS stablecoins</category>
       <category>Project Agora</category>
       <category>unified ledger</category>
       <category>Deutsche Bank digital money</category>
       <category>CBDC</category>
       <category>tokenised money</category>
-      <category>digital wallets</category>
+      <category>ארנקים דיגיטליים</category>
       <category>tokenised gilts</category>
     </item>
     <item>
-      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <title>בנקאות cloud native ב-2026: Kubernetes, DORA, ריבונות וסוף הפיצול בין VM לקונטיינר</title>
       <link>https://sebastienrousseau.com/he/2026-05-20-cloud-native-banking-financial-institutions-2026/</link>
-      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <description>בנקאות ענן-נייטיב ב-2026 עוסקת בהנדסת פלטפורמות מבוססת Kubernetes, חוסן תפעולי תואם DORA, התכנסות VM ומכולות, ריבונות ענן, מיקום עומסי AI, ניידות נתונים והוכחה שיישומים פיננסיים קריטיים יכולים לשרוד שיבוש ספקים.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-20-cloud-native-banking-financial-institutions-2026/</guid>
       <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
-      <category>cloud native banking 2026</category>
-      <category>Kubernetes banks</category>
-      <category>financial institutions cloud</category>
+      <category>בנקאות ענן-נייטיב 2026</category>
+      <category>Kubernetes בנקים</category>
+      <category>ענן מוסדות פיננסיים</category>
       <category>DORA 2026</category>
-      <category>cloud resilience</category>
+      <category>חוסן ענן</category>
       <category>Red Hat OpenShift</category>
       <category>Portworx</category>
-      <category>VM container coexistence</category>
-      <category>bank cloud sovereignty</category>
-      <category>financial services cloud dependency</category>
-      <category>operational resilience</category>
-      <category>disaster recovery</category>
-      <category>cloud exit strategy</category>
-      <category>AI banking workloads</category>
+      <category>דו-קיום VM ומכולות</category>
+      <category>ריבונות ענן בנקים</category>
+      <category>תלות שירותים פיננסיים בענן</category>
+      <category>חוסן תפעולי</category>
+      <category>התאוששות מאסון</category>
+      <category>אסטרטגיית יציאה מענן</category>
+      <category>עומסי AI בבנקאות</category>
     </item>
     <item>
       <title>תשלומי הסיטונאות הגלובליים ב-2026: ISO 20022, חידוש ה-RTGS וכלכלת יכולת הפעולה ההדדית</title>
@@ -564,23 +738,25 @@
       <category>أخلاقيات الذكاء الاصطناعي</category>
     </item>
     <item>
-      <title>Àkàndé: مساعد صوتي مدعوم بـ GPT للتنفيذيين</title>
+      <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
       <link>https://sebastienrousseau.com/he/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/</link>
-      <description>كيف يستفيد Àkàndé من فهم اللغة الطبيعية في OpenAI GPT، وتلخيصات PDF، والتخزين المؤقت الفعّال لإعادة تعريف المساعدة الشخصية والتنفيذية.</description>
+      <description>Àkàndé הוא עוזר קולי פתוח לשימוש ב-Python המשלב זיהוי דיבור OpenAI Whisper, השלמות צ&apos;אט GPT-4 ומטמון תגובות SQLite מקומי לתהליך עבודה מונחה-קול — ויוצר סיכומי PDF מהיסטוריית שיחות תוך שמירת כל הנתונים מקומית.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/he/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/</guid>
       <pubDate>Mon, 12 Feb 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" type="image/webp" length="0"/>
       <category>Àkàndé</category>
-      <category>مساعد صوتي</category>
-      <category>فهم اللغة الطبيعية</category>
-      <category>تلخيصات PDF</category>
-      <category>تخزين مؤقت فعّال</category>
-      <category>OpenAI GPT</category>
-      <category>مساعدة تنفيذية</category>
-      <category>مساعدة شخصية</category>
-      <category>مساعدون رقميون</category>
-      <category>ابتكار تكنولوجي</category>
+      <category>OpenAI GPT-4</category>
+      <category>Whisper STT</category>
+      <category>SQLite caching</category>
+      <category>fpdf2</category>
+      <category>Python voice assistant</category>
+      <category>chat completions API</category>
+      <category>PDF summary generation</category>
+      <category>SHA-256 cache</category>
+      <category>text-to-speech</category>
+      <category>executive assistant AI</category>
+      <category>open-source</category>
     </item>
     <item>
       <title>الذكاء الاصطناعي التوليدي في الإعلان: Amazon Rufus وMeta</title>
@@ -602,33 +778,46 @@
       <category>تحسين الحملات</category>
     </item>
     <item>
-      <title>تحليل الكلام والترجمة والرؤى المدعومة بالذكاء الاصطناعي</title>
+      <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
       <link>https://sebastienrousseau.com/he/2024-01-29-ai-powered-audio-insights-analysis-translations/</link>
-      <description>كيف يُحوِّل Audio Analyser، المدعوم بـ Azure AI، تحويل speech-to-text وتحليل النصوص والترجمات إلى رؤى قابلة للتنفيذ.</description>
+      <description>Audio Analyser משתמש במודלים נוירוניים של speech-to-text של Azure Cognitive Services, ב-Text Analytics NLP וב-CherryPy כדי להמיר הקלטות שמע לתמלולים הניתנים לחיפוש עם ציוני סנטימנט, חילוץ מילות מפתח ותרגומים רב-לשוניים.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/he/2024-01-29-ai-powered-audio-insights-analysis-translations/</guid>
       <pubDate>Mon, 29 Jan 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" type="image/webp" length="0"/>
-      <category>audio analyser</category>
-      <category>azure ai</category>
+      <category>Azure Cognitive Services</category>
       <category>speech-to-text</category>
-      <category>تحليل البيانات الصوتية</category>
-      <category>تحليل النصوص</category>
-      <category>ترجمات الذكاء الاصطناعي</category>
-      <category>رؤى صوتية</category>
-      <category>التفريغ الآلي</category>
-      <category>معالجة البيانات الصوتية</category>
-      <category>تعلم الآلة</category>
+      <category>מודל אקוסטי נוירוני</category>
+      <category>Azure Text Analytics</category>
+      <category>עיבוד שפה טבעית</category>
+      <category>ניתוח סנטימנט</category>
+      <category>CherryPy</category>
+      <category>batch transcription API</category>
+      <category>ASR רב-לשוני</category>
+      <category>Azure Translator</category>
+      <category>תמלול שמע</category>
+      <category>עיבוד שמע ב-Python</category>
     </item>
     <item>
-      <title>هندسة الموجِّهات في الذكاء الاصطناعي 2024: تقنيات فعّالة</title>
+      <title>AI Prompt Engineering 2024: Techniques That Work</title>
       <link>https://sebastienrousseau.com/he/2024-01-23-advancements-in-ai-prompt-engineering/</link>
-      <description>استكشف تقدّمات 2024 في هندسة الموجِّهات (AI Prompt Engineering) — اتّجاهات وتقنيات مبتكرة تُحدث ثورة في قطاعَي التكنولوجيا والتمويل.</description>
+      <description>הנדסת פרומפטים שולטת בהתנהגות LLM בזמן הסקה. המאמר מכסה פרומפטינג zero-shot ו-few-shot, הנמקת chain-of-thought, דגימת self-consistency, ארכיטקטורת ReAct, סיכוני prompt injection עקיפים, ותבניות RAG משירותים פיננסיים.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/he/2024-01-23-advancements-in-ai-prompt-engineering/</guid>
       <pubDate>Tue, 23 Jan 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" type="image/webp" length="0"/>
-      <category>AI Prompt Engineering، التعليمات المخصّصة، الذكاء الاصطناعي متعدّد الشخصيات، chain of thought، الحوسبة الكمومية، الذكاء الاصطناعي الأخلاقي، adaptive prompting، zero shot، few shot، اتّجاهات تكنولوجيا الذكاء الاصطناعي</category>
+      <category>chain-of-thought prompting</category>
+      <category>few-shot learning</category>
+      <category>zero-shot prompting</category>
+      <category>in-context learning</category>
+      <category>prompt injection</category>
+      <category>ReAct</category>
+      <category>self-consistency</category>
+      <category>retrieval-augmented generation</category>
+      <category>BloombergGPT</category>
+      <category>system prompt</category>
+      <category>prompt security</category>
+      <category>LLM agent</category>
     </item>
     <item>
       <title>Alien Studio: رحلتي من التكنولوجيا إلى الفنّ التصويري</title>
@@ -721,14 +910,23 @@
       <category>الحوسبة الكمية، التشفير المقاوم للكم، CRYSTALS-Kyber، التشفير، الأمن، المصرفية، المالية، الحماية، حماية البيانات، الاستدامة</category>
     </item>
     <item>
-      <title>الذكاء الاصطناعي التوليدي في 2023: كيف يعمل، وأين يَحلّ</title>
+      <title>Generative AI in 2023: How It Works, Where It Lands</title>
       <link>https://sebastienrousseau.com/he/2023-11-12-exploring-generative-ai/</link>
-      <description>استكشفوا الذكاء الاصطناعي التوليدي في 2023: كيف يعمل، وأين يَحلّ أوّلاً في الخدمات المالية، والأسئلة الأخلاقية والمعمارية الجديرة بالطرح.</description>
+      <description>כיצד עובדים מודלי transformer, אילו מודלים ב-2023 קבעו את הבנצ&apos;מרק, היכן generative AI נוחת ראשון בשירותים פיננסיים, ואילו שאלות ממשל נדרשות לפני פריסה.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/he/2023-11-12-exploring-generative-ai/</guid>
       <pubDate>Sun, 12 Nov 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
-      <category>الذكاء الاصطناعي التوليدي، التقنية، المستقبل، الأثر، الأخلاقيات، التآزر، الابتكار، الإبداع، التحوّل، التطوّر</category>
+      <category>generative AI</category>
+      <category>large language model</category>
+      <category>transformer architecture</category>
+      <category>GPT-4</category>
+      <category>AI בשירותים פיננסיים</category>
+      <category>hallucination</category>
+      <category>retrieval-augmented generation</category>
+      <category>AI governance</category>
+      <category>foundation model</category>
+      <category>fine-tuning</category>
     </item>
     <item>
       <title>ثوابت رياضية وتشفيرية لأمن Rust</title>
@@ -741,14 +939,23 @@
       <category>الثوابت الرياضية، الثوابت التشفيرية، أمن Rust، الاتصالات الآمنة، التشفير، RSA، تشفير المنحنى الإهليلجي، مكتبة Common (CMN)، تطبيقات Rust، الحسابات الرياضية</category>
     </item>
     <item>
-      <title>تبسيط تطوير مكتبات Rust عبر توليد الشفرة</title>
+      <title>LibMake: Rust Library Scaffold Generator</title>
       <link>https://sebastienrousseau.com/he/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/</link>
-      <description>عزِّزوا تطوير مكتبات Rust مع LibMake: أداة لتوليد الشفرة تفرض أفضل الممارسات وتُنتج الشفرة الأولية، فتُوفّر للمطوّرين الوقت والجهد.</description>
+      <description>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/he/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/</guid>
       <pubDate>Thu, 26 Oct 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
-      <category>Rust، المكتبة، التطوير، الشفرة، المولِّد، البويلربليت، أفضل الممارسات، الجودة، الموثوقية</category>
+      <category>LibMake</category>
+      <category>Rust code generator</category>
+      <category>cargo scaffold</category>
+      <category>Rust library template</category>
+      <category>Tera templating</category>
+      <category>GitHub Actions Rust</category>
+      <category>cargo-audit</category>
+      <category>Rust API Guidelines</category>
+      <category>boilerplate generator</category>
+      <category>Rust CI workflow</category>
     </item>
     <item>
       <title>حماية البيانات في عصر الكم: مكتبة الهاش (HSH)</title>
@@ -784,61 +991,65 @@
       <category>RSS</category>
     </item>
     <item>
-      <title>أتمتة إنشاء ملفّات الدفع المتوافقة مع ISO 20022 باستخدام Pain001</title>
+      <title>Automating ISO 20022 Payment Files Creation with pain001</title>
       <link>https://sebastienrousseau.com/he/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/</link>
-      <description>أتمتة إنشاء ملفّات الدفع pain.001 المتوافقة مع ISO 20022 انطلاقاً من CSV أو SQLite عبر Pain001، مكتبة Python مفتوحة المصدر.</description>
+      <description>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/he/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/</guid>
       <pubDate>Fri, 29 Sep 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" type="image/webp" length="0"/>
+      <category>pain001</category>
       <category>ISO 20022</category>
-      <category>pain.001</category>
-      <category>Pain001</category>
-      <category>Python</category>
-      <category>المدفوعات</category>
-      <category>الأتمتة</category>
+      <category>pain.001.001.09</category>
+      <category>CustomerCreditTransferInitiation</category>
+      <category>SEPA Credit Transfer</category>
       <category>CBPR+</category>
-      <category>HVPS+</category>
-      <category>SEPA</category>
-      <category>الامتثال</category>
-      <category>التحويلات</category>
+      <category>payment automation</category>
+      <category>XML generation</category>
+      <category>XSD validation</category>
+      <category>GrpHdr</category>
+      <category>PmtInf</category>
+      <category>CdtTrfTxInf</category>
+      <category>CtrlSum</category>
+      <category>SWIFT</category>
     </item>
     <item>
-      <title>صناعة منصّة Express Transaction Credits</title>
+      <title>The making of the Express Transaction Credits Platform</title>
       <link>https://sebastienrousseau.com/he/2018-02-15-the-making-of-the-express-transaction-credits-platform/</link>
-      <description>تطوير إطارٍ شامل للجيل المقبل من التوكنات المتوافقة مع Ethereum Request for Comment عبر معيار ERC-223.</description>
+      <description>צלילה טכנית עמוקה לתוך בניית פלטפורמת EXTC על Ethereum ERC-223 ב-2018: ארכיטקטורת טוקן, תשלומים מרובי-חתימה, העברות נעולות בזמן והלוואות מיידיות מגובות בביטחונות.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/he/2018-02-15-the-making-of-the-express-transaction-credits-platform/</guid>
       <pubDate>Thu, 15 Feb 2018 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
-      <category>Ethereum</category>
+      <category>פלטפורמת EXTC</category>
       <category>ERC-223</category>
-      <category>ERC-20</category>
-      <category>EXTC</category>
-      <category>Express Transaction Credits</category>
-      <category>blockchain</category>
-      <category>المدفوعات</category>
-      <category>التوكنات</category>
-      <category>القروض</category>
-      <category>التمويل اللامركزي</category>
+      <category>חוזים חכמים Ethereum</category>
+      <category>ארכיטקטורת טוקן</category>
+      <category>multi-signature</category>
+      <category>time-locked transfer</category>
+      <category>תשלומי blockchain</category>
+      <category>collateral-backed loans</category>
+      <category>מימון מבוזר</category>
+      <category>2018 crypto</category>
     </item>
     <item>
-      <title>كشف عملة مشفّرة جديدة وحلّ مدفوعات أسرع</title>
+      <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
       <link>https://sebastienrousseau.com/he/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/</link>
-      <description>فصل بالغ الأهمية في تطوّر المشهد المالي العالمي، يصوغه الابتكار التقني والتحوّلات الجيوسياسية والتمويل المستدام.</description>
+      <description>בתחילת 2018, פלטפורמת EXTC חקרה תשלומים חוצי-גבולות מהירים יותר באמצעות חוזים חכמים ERC-223 של Ethereum — תוכנית מוקדמת למה שהפיננסים המבוזרים יבנו מאוחר יותר.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/he/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/</guid>
       <pubDate>Sun, 04 Feb 2018 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" type="image/webp" length="0"/>
-      <category>EXTC Network</category>
-      <category>العملة المشفّرة</category>
-      <category>المدفوعات الأسرع</category>
-      <category>Ethereum</category>
-      <category>EIP20</category>
-      <category>smart contracts</category>
-      <category>blockchain</category>
-      <category>المدفوعات العابرة للحدود</category>
-      <category>الشمول المالي</category>
+      <category>EXTC</category>
+      <category>ERC-223</category>
+      <category>חוזים חכמים של Ethereum</category>
+      <category>תשלומים מהירים</category>
+      <category>cryptocurrency</category>
+      <category>blockchain payments</category>
+      <category>payment token</category>
+      <category>decentralised finance</category>
+      <category>ERC-20</category>
+      <category>תשלומים חוצי-גבולות</category>
     </item>
     <item>
       <title>معيار التوكن ERC-20</title>
@@ -860,23 +1071,25 @@
       <category>المعيار</category>
     </item>
     <item>
-      <title>فهم التقنية الكامنة وراء البلوكشين</title>
+      <title>Understanding the Technology behind Blockchain</title>
       <link>https://sebastienrousseau.com/he/2018-01-09-understanding-the-technology-behind-blockchain/</link>
-      <description>بناء عملة مشفّرة على بلوكشين Ethereum: دليل شامل لتطوير البلوكشين والترميز وتنفيذ العملات المشفّرة.</description>
+      <description>מבוא טכני לאופן פעולת הבלוקצ&apos;יין: שרשרות hash קריפטוגרפיות, עצי Merkle, קונסנזוס מבוזר, ומדוע שכבת ה-programmable של Ethereum הפכה פנקס תשלומים לפלטפורמה לחוזים חכמים ונכסים טוקניזציה.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/he/2018-01-09-understanding-the-technology-behind-blockchain/</guid>
       <pubDate>Tue, 09 Jan 2018 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" type="image/webp" length="0"/>
-      <category>blockchain</category>
+      <category>טכנולוגיית blockchain</category>
+      <category>cryptographic hash</category>
+      <category>עץ Merkle</category>
+      <category>distributed consensus</category>
+      <category>proof of work</category>
       <category>Ethereum</category>
-      <category>smart contract</category>
-      <category>العملة المشفّرة</category>
+      <category>חוזים חכמים</category>
+      <category>EVM</category>
       <category>Solidity</category>
-      <category>Geth</category>
-      <category>dApps</category>
       <category>ERC-20</category>
-      <category>الترميز</category>
-      <category>testnet</category>
+      <category>distributed ledger</category>
+      <category>decentralised finance</category>
     </item>
     <item>
       <title>البلوكشين: التقنية التي تهمّ في 2018</title>

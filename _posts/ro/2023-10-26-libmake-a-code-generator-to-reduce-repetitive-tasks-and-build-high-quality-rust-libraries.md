@@ -1,120 +1,269 @@
 ---
-title: "Streamlining Rust Library Development with Code Generation"
-subtitle: "LibMake: a Rust code generator that enforces best practices from day one."
-description: "Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort."
-date: "Oct 26, 2023"
-language: "ro-RO"
-locale: "ro_RO"
-banner: "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp"
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Giant white pillars"
-keywords: "Rust, library, development, code, generator, boilerplate, best, practices, quality, reliable"
----
-
-![Giant white pillars](https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp).class="img-fluid clearfix"
-
----
-
-> **TL;DR.** Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort.
->
-> **Concluzii cheie**
->
-> - DRAFT translation: this article is a Română stub generated from the English source. Body text is intentionally left in English until a native reviewer signs off.
-> - Source title: *Streamlining Rust Library Development with Code Generation*.
-> - Source subtitle: *LibMake: a Rust code generator that enforces best practices from day one.*.
-> - Editorial note: replace this block with hand-translated copy before flipping `active=True` for ro in `scripts/_lang_registry.py`.
-
+banner_height: "100vh"
+banner_width: "100vw"
+banner: "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp"
+cdn: "https://cloudcdn.pro/clients"
+changefreq: "weekly"
+charset: "UTF-8"
+cname: "sebastienrousseau.com"
+copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
+date: "Oct 26, 2023"
+description: "LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file."
+format-detection: "telephone=no"
+hreflang: "ro"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/ro/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries"
+image_alt: "Black and White Portrait of Sebastien Rousseau"
+image_height: "162"
+image_width: "162"
+image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+keywords: "LibMake, Rust code generator, cargo scaffold, Rust library template, Tera templating, GitHub Actions Rust, cargo-audit, Rust API Guidelines, boilerplate generator, Rust CI workflow"
+language: "ro"
+layout: "report"
+locale: "ro_RO"
+logo_alt: "Logo for Sebastien Rousseau"
+logo_height: "44"
+logo_width: "44"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+menu: "active"
+measurementID: "G-169G4ET5HQ"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/ro/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries"
+rating: "general"
+referrer: "no-referrer"
+revisit-after: "7 days"
+robots: "index, follow"
+short_name: "sebastienrousseau"
+subtitle: "Scaffold a production-ready Rust library with CI, tests, and docs in under 60 seconds"
+tags: "LibMake, RustCodeGenerator, CargoScaffold, RustLibraryTemplate, TeraTemplating, GitHubActionsRust, CargoAudit, RustAPIGuidelines, BoilerplateGenerator, RustCI"
+theme-color: "0, 67, 165"
+title: "LibMake: Rust Library Scaffold Generator"
+url: "https://sebastienrousseau.com/ro/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+news_genres: "Blog"
+news_keywords: "LibMake, Rust code generator, cargo scaffold, Rust library template, Tera templating, GitHub Actions Rust, cargo-audit, Rust API Guidelines"
+news_language: "en"
+news_image_loc: "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp"
+news_loc: "https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html"
+news_publication_date: "Thu, 26 Oct 2023 11:21:00 +0000"
+news_publication_name: "sebastienrousseau.com"
+news_title: "LibMake: Rust Library Scaffold Generator"
+atom_link: "https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/rss.xml"
+category: "Open Source"
+docs: "https://validator.w3.org/feed/docs/rss2.html"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
+item_description: "LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file."
+item_guid: "https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/rss.xml"
+item_link: "https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/rss.xml"
+item_pub_date: "Thu, 26 Oct 2023 11:21:00 +0000"
+item_title: "LibMake: Rust Library Scaffold Generator"
+last_build_date: "Thu, 26 Oct 2023 11:21:00 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+pub_date: "Thu, 26 Oct 2023 11:21:00 +0000"
+ttl: "60"
+type: "website"
+webmaster: "contact@sebastienrousseau.com"
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "LibMake"
+apple-touch-fullscreen: "yes"
+msapplication-navbutton-color: "0, 67, 165"
+twitter_card: "summary"
+twitter_creator: "@wwdseb"
+twitter_description: "LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file."
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image_alt: "Logo of Sebastien Rousseau"
+twitter_site: "@wwdseb"
+twitter_title: "LibMake: Rust Library Scaffold Generator"
+twitter_url: "https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html"
+author_website: "https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html"
+author_twitter: "@wwdseb"
+author_location: "London, UK"
+thanks: "Thanks for reading!"
+site_last_updated: "2023-10-26"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_software: "Static Site Generator, Rust"
+excerpt: "LibMake is an open-source Rust CLI tool that generates a complete library scaffold from a single command or a TOML/YAML config file — producing Cargo.toml, a doc-commented src/lib.rs, integration test and benchmark harnesses, and a GitHub Actions CI workflow covering stable/beta/nightly Rust, clippy, rustfmt, and cargo-audit."
+last_reviewed: "2026-05-24"
 ---
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort.</p>
-<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<p class="post-lead-tldr"><strong>Pe scurt.</strong> <a href="https://github.com/sebastienrousseau/libmake">LibMake</a> este un instrument CLI Rust cu sursă deschisă (<code>cargo install libmake</code>) care generează o structură completă de bibliotecă din indicatoare CLI sau un fișier de configurare versionate (TOML, YAML, JSON sau CSV), producând o structură de proiect completă cu Cargo.toml, src/lib.rs, tests/, benches/ și un flux de lucru GitHub Actions CI într-o singură invocare.</p>
+<p class="post-lead-heading"><strong>Concluzii cheie</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Idea.</strong> LibMake ⧉ is a code generator tool designed to quickly help creating high-quality Rust libraries by generating a set of pre-filled and pre-defined templated files.</li>
-  <li><strong>Impact.</strong> LibMake reduces the time and effort required to develop Rust libraries by automating code generation and other tasks.</li>
-  <li><strong>Incentives.</strong> LibMake can help developers enforce best practises by providing a set of pre-defined templates that follow these practises.</li>
-  <li><strong>Challenges of Rust Library Development.</strong> Developing Rust libraries can be a challenging task, especially for beginners.</li>
+  <li><strong>Structură completă, nu doar un Cargo.toml.</strong> LibMake generează src/lib.rs cu comentarii de documentare a modulelor pre-completate și <code>#![doc = include_str!("../README.md")]</code>, un fișier de teste de integrare, un harness de benchmark Criterion, CONTRIBUTING.md și fișiere de licență dublă MIT/Apache-2.0 — tot ce este necesar pentru a trece <code>cargo test</code> și <code>cargo bench</code> imediat după generare.</li>
+  <li><strong>Modul fișier de configurare permite șabloane la nivel de echipă.</strong> Adăugarea unui <code>libmake.toml</code> la un depozit face generarea structurii reproductibilă: fiecare dezvoltator rulează <code>libmake --config libmake.toml</code> și obține o structură identică, impunând convenții fără o listă de verificare mentală comună.</li>
+  <li><strong>Fluxul de lucru GitHub Actions acoperă întreaga matrice Rust CI.</strong> Fluxul de lucru generat include lucrări separate pentru testarea pe toolchains stable, beta și nightly, verificarea clippy cu <code>-D warnings</code>, verificarea formatului rustfmt și cargo-audit pentru scanarea vulnerabilităților dependențelor.</li>
+  <li><strong>Șabloanele Tera pot fi suprascrise de utilizator.</strong> LibMake folosește intern motorul de șabloane Tera; directoarele de șabloane personalizate pot fi furnizate prin indicatorul <code>--template</code>, astfel încât echipele cu layout-uri de directoare nestandard sau cerințe suplimentare de fișiere nu sunt blocate la ieșirea implicită.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">RustLogs (RLG): Structured Logging Library for Rust</a>, <a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html">The making of the Express Transaction Credits Platform</a>, <a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html">Alien Studio: My Tech-to Art Journey in Photography</a>.</p>
+<p class="post-lead-related"><strong>Lecturi conexe:</strong> <a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/">RustLogs (RLG): Structured Logging Library for Rust</a>, <a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/">The Making of the Express Transaction Credits Platform</a>, <a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/">Alien Studio: My Tech-to-Art Journey in Photography</a>.</p>
 </aside>
 <!-- lead-end -->
 
-![Giant white pillars](https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp).class=\"img-fluid clearfix\"
+> **Rezumat executiv / Concluzii cheie**
+>
+> - **[LibMake ⧉][00]** este un instrument CLI Rust cu sursă deschisă instalat prin `cargo install libmake` care generează o structură completă de bibliotecă din indicatoare CLI sau un fișier de configurare (TOML, YAML, JSON sau CSV), cu ieșire acoperind Cargo.toml, sursă, teste, benchmark-uri, documentație și CI într-o singură invocare.
+> - **Proiectul generat urmează convențiile Rust API Guidelines**: comentarii de documentare la nivel de modul și element în src/lib.rs, `#![deny(missing_docs)]` în rădăcina crate-ului și un README legat la documentația crate-ului prin `#![doc = include_str!("../README.md")]`.
+> - **Modul fișier de configurare** (`--config libmake.toml`) permite echipelor să adauge un singur fișier care specifică complet șablonul lor de bibliotecă — autor, licență, categorii, ediție Rust, MSRV, URL depozit — făcând generarea structurii repetabilă și vizibilă în diff-urile Git.
+> - **Fluxul de lucru GitHub Actions** generat de LibMake testează pe toolchains Rust stable, beta și nightly, impune `clippy -D warnings`, verifică `rustfmt` și rulează `cargo-audit` pentru CVE-uri cunoscute în arborele de dependențe.
+> - **Șabloanele Tera** alimentează generarea codului: LibMake vine cu un set implicit de șabloane, dar acceptă un director de șabloane personalizat prin `--template`, astfel încât layout-urile de proiect nestandard și fișierele generate suplimentare sunt suportate fără a fork-ui instrumentul.
 
-## Insight
+[**LibMake ⧉**][00] este un instrument CLI și bibliotecă Rust cu sursă deschisă care generează o structură completă de proiect de bibliotecă dintr-o singură invocare. Vizează golul dintre `cargo new --lib` (care creează doar un Cargo.toml minim și src/lib.rs) și o configurare de bibliotecă pregătită pentru producție (care necesită adăugarea manuală a comentariilor de documentare, CI, harnessuri de testare, structura de benchmark, CONTRIBUTING.md și fișiere de licență).
 
-### Challenges of Rust Library Development
+Acest articol descrie ce generează LibMake, cum funcționează modurile fișier de configurare și CLI, structura CI generată și sistemul de șabloane.
 
-Developing Rust libraries can be a challenging task, especially for beginners. One of the biggest challenges is setting up an efficient project structure and writing all of the necessary boilerplate code. This can be time-consuming and repetitive, and it can take away from the more creative and strategic aspects of library development.
+## Instalare și utilizare de bază
 
-### Benefits of Using a Code Generator
+LibMake este publicat pe [crates.io](https://crates.io/crates/libmake) și instalat prin Cargo:
 
-Using a code generator can streamline the process of Rust library development by automating boilerplate code generation and other repetitive tasks. This can save developers a significant amount of time and effort, and it can free them up to focus on the more important aspects of library development, such as design, implementation, and testing.
+```bash
+cargo install libmake
+```
 
-## Idea
-
-### LibMake: A Code Generator for Rust Libraries
-
-[LibMake ⧉][00] is a code generator tool designed to quickly help creating high-quality Rust libraries by generating a set of pre-filled and pre-defined templated files. This opinionated boilerplate scaffolding tool aims to greatly reduces development time and minimises repetitive tasks, allowing you to focus on your business logic while enforcing standards, best practices, consistency, and providing style guides for your library.
-
-LibMake is flexible and extensible, so it can be used to create libraries of any size or complexity. It also supports a variety of configuration options, so developers can customise it to their specific needs.
-
-### Example of Using LibMake
-
-To use LibMake, developers simply need to run the following command:
+Invocarea minimă CLI generează o bibliotecă numită în directorul curent:
 
 ```bash
 libmake \
-    --author "John Smith" \
-    --build "build.rs" \
-    --categories "['category 1', 'category 2', 'category 3']" \
-    --description "A Rust library for doing cool things" \
-    --documentation "https://docs.rs/my_library" \
-    --edition "2021" \
-    --email "john.smith@example.com" \
-    --homepage "https://my_library.rs" \
-    --keywords "['rust', 'library', 'cool']" \
-    --license "MIT" \
-    --name "my_library" \
-    --output "my_library" \
-    --readme "README.md" \
-    --repository "https://github.com/example/my_library" \
-    --rustversion "1.69.0" \
-    --version "0.1.0" \
-    --website "https://example.com/john-smith"
+  --author "Jane Smith" \
+  --email "jane@example.com" \
+  --name "my_library" \
+  --description "A Rust library for doing useful things" \
+  --version "0.1.0" \
+  --licence "MIT OR Apache-2.0" \
+  --repository "https://github.com/example/my_library" \
+  --rustversion "1.70.0" \
+  --edition "2021" \
+  --output "my_library"
 ```
 
-This will create a new directory for the library, and LibMake will generate the necessary boilerplate code and documentation structure. Developers can then add their own code to the library and start developing.
+Indicatoarele opționale suplimentare includ `--categories`, `--keywords`, `--homepage`, `--documentation`, `--readme` și `--build`.
 
-## Impact
+## Modul fișier de configurare
 
-### Reduced Development Time and Effort
+Pentru utilizarea în echipă, toate indicatoarele CLI pot fi exprimate într-un fișier de configurare TOML:
 
-LibMake reduces the time and effort required to develop Rust libraries by automating code generation and other tasks. This saves developers time and effort. They can focus on the important parts, like design, implementation, and testing.
+```toml
+# libmake.toml
+author      = "Jane Smith"
+email       = "jane@example.com"
+name        = "my_library"
+description = "A Rust library for doing useful things"
+version     = "0.1.0"
+licence     = "MIT OR Apache-2.0"
+repository  = "https://github.com/example/my_library"
+rustversion = "1.70.0"
+edition     = "2021"
+output      = "my_library"
+categories  = ["algorithms", "data-structures"]
+keywords    = ["rust", "library"]
+```
 
-### Improved Library Quality and Reliability
+Invocat ca:
 
-LibMake can also help developers improve the quality and reliability of their libraries by providing a set of pre-defined templates that follow best practises. This can help to reduce the number of bugs and errors in libraries, and it can make them more robust and reliable.
+```bash
+libmake --config libmake.toml
+```
 
-## Incentives
+LibMake acceptă, de asemenea, formatele de configurare JSON, YAML și CSV prin indicatoarele `--config-json`, `--config-yaml` și, respectiv, `--config-csv`. Adăugarea `libmake.toml` la rădăcina depozitului oferă fiecărui contribuitor o bază de structură reproductibilă, iar modificările la configurația șablonului sunt vizibile în diff-urile Git.
 
-### Enforce Best practises and Generate Initial Code
+## Structura proiectului generat
 
-LibMake can help developers enforce best practises by providing a set of pre-defined templates that follow these practises. It can also generate initial code for common library functionality, which can save developers a significant amount of time.
+O invocare LibMake creează următorul layout:
 
-LibMake offers the following features and benefits:
+```
+my_library/
+├── .github/
+│   └── workflows/
+│       └── release.yml     # full CI matrix
+├── benches/
+│   └── lib_benchmarks.rs   # Criterion benchmark stub
+├── src/
+│   └── lib.rs              # doc-commented, deny(missing_docs)
+├── tests/
+│   └── lib_tests.rs        # integration test stub
+├── CONTRIBUTING.md
+├── Cargo.toml              # complete metadata
+├── LICENSE-APACHE
+├── LICENSE-MIT
+└── README.md
+```
 
-- Create your Rust library with ease using the command line interface or by providing a configuration file in CSV, JSON, TOML, or YAML format.
-- Rapidly generate new library projects with a pre-defined structure and boilerplate code that you can customize with your own template.
-- Generate a library pre-defined GitHub Actions workflow to help you automate your library development and testing.
-- Automatically generate basic functions, methods, and macros to get you started with your Rust library.
-- Enforce best practices and standards with starter documentation, test suites, and benchmark suites that are designed to help you get up and running quickly.
+`src/lib.rs` generat include un comentariu de documentare la nivel de crate, `#![deny(missing_docs)]`, `#![doc = include_str!("../README.md")]` pentru a include README în rustdoc și un tip public stub cu un comentariu de documentare asociat. Aceste alegeri urmează cerința Rust API Guidelines ca toate elementele publice să aibă documentație.
 
-With LibMake, you can easily generate a new Rust library code base structure with all the necessary files, layouts, build configurations, code, tests, benchmarks, documentation, and much more in a matter of seconds.
+`benches/lib_benchmarks.rs` generat folosește [Criterion.rs](https://github.com/bheisler/criterion.rs) și necesită adăugarea `criterion` ca dev-dependență, pe care LibMake o introduce automat în `Cargo.toml`.
 
-### Try LibMake Today
+## Fluxul de lucru GitHub Actions CI
 
-If you are a developer, I encourage you to try [LibMake ⧉][00] to see how it can help you streamline your library development process. LibMake is a free and an open-source tool, and it is available for download from the [GitHub repository ⧉][00].
+`.github/workflows/release.yml` generat rulează cinci lucrări la fiecare push și pull request:
 
-[00]: https://github.com/sebastienrousseau/libmake "LibMake: A code generator to reduce repetitive tasks and build high-quality Rust libraries"
+| Lucrare | Toolchain | Ce verifică |
+|---|---|---|
+| `test` | stable, beta, nightly (matrice) | `cargo test --all-features` |
+| `clippy` | stable | `cargo clippy -- -D warnings` |
+| `fmt` | stable | `cargo fmt --check` |
+| `audit` | stable | `cargo audit` (cargo-audit instalat în lucrare) |
+| `doc` | stable | `cargo doc --no-deps` (eșuează la docuri lipsă) |
 
+Lucrarea nightly are `continue-on-error: true`, astfel încât o regresie nightly nu blochează îmbinările, în timp ce eșecul rămâne vizibil în rularea fluxului de lucru.
+
+## Șablonare cu Tera
+
+LibMake folosește motorul de șabloane [Tera](https://keats.github.io/tera/) — o sintaxă asemănătoare Jinja2 pentru Rust — pentru a randa toate fișierele generate. Fiecare șablon primește structura completă de configurare ca context:
+
+```
+{{ name }}            → my_library
+{{ author }}          → Jane Smith
+{{ edition }}         → 2021
+{{ description }}     → A Rust library for doing useful things
+```
+
+Directoarele de șabloane personalizate sunt suportate prin indicatorul `--template`:
+
+```bash
+libmake --config libmake.toml --template ./my_templates/
+```
+
+Directorul personalizat trebuie să oglindească structura implicită a șabloanelor (aceleași nume de fișiere). Orice fișier prezent în directorul personalizat suprascrie șablonul încorporat corespunzător; fișierele absente din directorul personalizat revin la versiunea încorporată. Aceasta permite suprascrieri parțiale — de exemplu, înlocuirea doar a șablonului fluxului de lucru CI, păstrând șabloanele implicite src/lib.rs și Cargo.toml.
+
+## Întrebări frecvente
+
+**Cum diferă LibMake de `cargo new --lib`?**
+`cargo new --lib` creează un proiect minimal cu doar `Cargo.toml` și `src/lib.rs` (conținând un singur bloc `#[cfg(test)]`). LibMake generează structura completă — teste de integrare, benchmark-uri, CI, CONTRIBUTING.md, fișiere de licență dublă și un src/lib.rs documentat corespunzător — configurat cu metadatele reale ale proiectului în loc de spații rezervate.
+
+**Poate fi utilizat LibMake cu un spațiu de lucru Cargo existent?**
+LibMake generează un director de crate independent. Pentru a adăuga crate-ul generat la un spațiu de lucru existent, adăugați calea de ieșire la matricea `members` din `Cargo.toml` rădăcină. LibMake nu modifică fișierele de spațiu de lucru existente.
+
+**Pot actualiza șabloanele structurii după generarea inițială?**
+LibMake generează fișiere o singură dată; nu urmărește sau actualizează proiectele generate anterior. Pentru a adopta șabloane actualizate, abordarea recomandată este să re-rulați LibMake într-un director temporar și să comparați rezultatul cu crate-ul existent, aplicând selectiv modificările dorite.
+
+**Ce ediții Rust și valori MSRV suportă LibMake?**
+LibMake acceptă orice șir pentru `--edition` și `--rustversion` și scrie valorile direct în `Cargo.toml`. Nu validează dacă ediția sau MSRV specificat este o versiune Rust reală, astfel că apelatorii sunt responsabili pentru furnizarea valorilor corecte.
+
+## Referințe
+
+1. Rousseau, S. *LibMake — A code generator to reduce repetitive tasks and build high-quality Rust libraries*. GitHub, 2023. https://github.com/sebastienrousseau/libmake
+2. The Rust Programming Language. *Rust API Guidelines*. GitHub, 2023. https://rust-lang.github.io/api-guidelines/
+3. The Cargo Book. *Package Layout*. The Rust Programming Language, 2023. https://doc.rust-lang.org/cargo/guide/project-layout.html
+4. Keats, V. et al. *Tera — A template engine inspired by Jinja2 and Django templates*. GitHub, 2023. https://keats.github.io/tera/
+
+[00]: https://github.com/sebastienrousseau/libmake "LibMake — Rust library scaffold generator"
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-24">2026-05-24</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/" class="related-media" aria-label="RustLogs (RLG): Structured Logging Library for Rust" tabindex="-1"><img alt="Banner for RustLogs (RLG)" src="https://cloudcdn.pro/stocks/images/rustlogs.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/">RustLogs (RLG): Structured Logging Library for Rust</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/" class="related-media" aria-label="The Making of the Express Transaction Credits Platform" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/">The Making of the Express Transaction Credits Platform</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/" class="related-media" aria-label="Alien Studio: My Tech-to-Art Journey in Photography" tabindex="-1"><img alt="Sunset's muse, a serene glance; beauty in stillness" src="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/">Alien Studio: My Tech-to-Art Journey in Photography</a></h3><p><time datetime="2024-01-15">2024-01-15</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

@@ -1,13 +1,13 @@
 ---
 title: "[UK DRAFT] Le Chat by Mistral AI: Multilingual Conversational AI"
-subtitle: "Redefining User Interaction Across Languages"
-description: "Meet Mistral AI's new multilingual Assistant. An advanced AI that can understand and respond in multiple languages, all in one conversation and in real-time."
+subtitle: "Переосмислення взаємодії з користувачами різними мовами"
+description: "Познайомтеся з новим багатомовним Асистентом Mistral AI. Розвинений ШІ, що розуміє та відповідає кількома мовами в одній розмові та в режимі реального часу."
 date: "Mar 04, 2024"
 language: "uk-UA"
 locale: "uk_UA"
 banner: "https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp"
-banner_alt: "Colourful, abstract digital art of a cat"
-keywords: "Le Chat AI, Mistral AI chatbot, Le Chat virtual assistant, Mistral AI language understanding, Le Chat AI customer service, Mistral AI enterprise solutions, Le Chat AI customisation, Mistral AI multilingual support, Le Chat AI-powered communication, Mistral AI AI-driven business solutions"
+banner_alt: "Барвисте абстрактне цифрове мистецтво у вигляді кота"
+keywords: "Le Chat AI, чат-бот Mistral AI, віртуальний асистент Le Chat, розуміння мов Mistral AI, обслуговування клієнтів Le Chat AI, корпоративні рішення Mistral AI, налаштування Le Chat AI, багатомовна підтримка Mistral AI, комунікація Le Chat AI, бізнес-рішення Mistral AI"
 ---
 
 ![Colourful, abstract digital art of a cat](https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp).class=\"img-fluid clearfix\"

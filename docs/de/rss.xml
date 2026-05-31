@@ -6,10 +6,162 @@
     <description>Artikel auf Deutsch: angewandte KI, ISO-20022-Zahlungen, Post-Quanten-Kryptografie und Transformation des Wholesale-Zahlungsverkehrs.</description>
     <atom:link href="https://sebastienrousseau.com/de/rss.xml" rel="self" type="application/rss+xml"/>
     <language>de-DE</language>
-    <lastBuildDate>Fri, 22 May 2026 21:38:56 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 14:48:09 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle Rechte vorbehalten.</copyright>
     <item>
-      <title>UK Payments Forward Plan 2026: Stablecoins, Open Banking, tokenisierte Einlagen</title>
+      <title>Wholesale Digital Markets UK: Tokenisierte Gilts und Champion-Rolle</title>
+      <link>https://sebastienrousseau.com/de/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
+      <description>Die britische Champion-Rolle für Wholesale Digital Markets macht tokenisierte Wholesale-Finanzierung zum nationalen Wettbewerbsprojekt — Gilts zuerst.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
+      <pubDate>Sat, 30 May 2026 14:48:09 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>Wholesale Digital Markets UK 2026</category>
+      <category>Chris Woolard</category>
+      <category>tokenisierte Gilts</category>
+      <category>tokenisierte Wholesale-Finanzierung</category>
+      <category>Digital Markets Champion</category>
+      <category>Tokenisierung UK</category>
+      <category>Abwicklung</category>
+    </item>
+    <item>
+      <title>ISO 20022 nach Migration: Zahlungsdaten als Bankprodukte 2026</title>
+      <link>https://sebastienrousseau.com/de/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 nach der Migration ist eine Chance für Zahlungs-Datenprodukte. Strukturierte Adressen, Verwendungszweck-Codes, Rechnungsdetails, Untersuchungs-Nachrichten und reichere Statusereignisse werden zu Abstimmung, Betrugserkennung, Liquidität und Compliance.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Sat, 30 May 2026 14:48:09 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>strukturierte Adresse</category>
+      <category>CBPR+</category>
+      <category>Zahlungs-Datenprodukte</category>
+      <category>Verwendungszweck-Codes</category>
+      <category>Corporate Treasury</category>
+      <category>Abstimmung</category>
+      <category>Sanktions-Screening</category>
+      <category>Betrugserkennung</category>
+    </item>
+    <item>
+      <title>DORA, EU-KI-Verordnung und Datensouveränität: Der Compliance-Stack 2026 für Banken</title>
+      <link>https://sebastienrousseau.com/de/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
+      <description>DORA, die EU-KI-Verordnung, DSGVO, Cloud-Konzentrationsrisiko und Datensouveränität verschmelzen 2026 zu einem Compliance-Stack für Banken.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
+      <pubDate>Sat, 30 May 2026 14:48:09 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>DORA 2026</category>
+      <category>EU-KI-Verordnung 2026</category>
+      <category>Datensouveränität Banken</category>
+      <category>operationelle Resilienz</category>
+      <category>Cloud-Konzentrationsrisiko</category>
+      <category>KI-Compliance Finanzdienstleistungen</category>
+      <category>Hochrisiko-KI</category>
+    </item>
+    <item>
+      <title>Digitale Vermögenswerte 2026: Die Infrastruktur-Transition für Banken</title>
+      <link>https://sebastienrousseau.com/de/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>Digitale Vermögenswerte sind keine Innovationswette mehr. Sie sind eine Architekturfrage zu Abwicklung, Verwahrung und Bilanz. Die Aufgabe der Banken: Infrastrukturdesign unter struktureller Unsicherheit.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Sat, 30 May 2026 14:48:09 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>digitale Vermögenswerte 2026</category>
+      <category>tokenisierte Realwerte</category>
+      <category>Stablecoins Banken</category>
+      <category>tokenisierte Einlagen</category>
+      <category>Verwahrung digitaler Vermögenswerte</category>
+      <category>DLT Banking</category>
+      <category>Abwicklungsinfrastruktur</category>
+      <category>Sicherheiten-Mobilität</category>
+      <category>programmierbares Geld</category>
+      <category>Bankstrategie digitale Vermögenswerte</category>
+    </item>
+    <item>
+      <title>KI als Betriebssystem des Zahlungsverkehrs: Betrug, Routing, Resilienz und Compliance 2026</title>
+      <link>https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/</link>
+      <description>KI wird 2026 zum Betriebssystem des Zahlungsverkehrs: vom Analytik-Werkzeug zur Steuerungsschicht für Betrugsabwehr, Zahlungsreparatur, Routing, Liquiditätsprognose, Compliance-Prüfung und agentische Handelskontrollen.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/</guid>
+      <pubDate>Sat, 30 May 2026 14:48:09 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
+      <category>KI-Zahlungsverkehr 2026</category>
+      <category>Zahlungsbetrug</category>
+      <category>Payment Routing</category>
+      <category>Echtzeit-Betrugsabwehr</category>
+      <category>ISO 20022 KI</category>
+      <category>Resilienz im Zahlungsverkehr</category>
+      <category>Transaktionsanalyse</category>
+      <category>Liquiditätsprognose</category>
+    </item>
+    <item>
+      <title>Magnifica Humanitas: Die erste päpstliche KI-Enzyklika gelesen</title>
+      <link>https://sebastienrousseau.com/de/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</link>
+      <description>Papst Leo XIV. Magnifica Humanitas (25. Mai 2026), die erste KI-Enzyklika, aus Sicht der Technologiebranche als Ethikrahmen für KI und Quanten gelesen.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
+      <category>Magnifica Humanitas</category>
+      <category>Pope Leo XIV</category>
+      <category>KI-Enzyklika</category>
+      <category>Ethik der künstlichen Intelligenz</category>
+      <category>Ethik des Quantencomputings</category>
+      <category>Rerum Novarum</category>
+      <category>Turm zu Babel</category>
+      <category>Technologie ist nie neutral</category>
+      <category>Transhumanismus</category>
+      <category>Posthumanismus</category>
+      <category>Menschenwürde</category>
+      <category>technologisches Paradigma</category>
+      <category>Eisenbahn Automobil Atomkraft Internet</category>
+      <category>moralische Panik in der Technikgeschichte</category>
+      <category>Lucy Wissenstransfer</category>
+      <category>Hoffnung durch KI</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+      <category>Anthropic</category>
+      <category>Sebastien Rousseau</category>
+    </item>
+    <item>
+      <title>Stablecoins vs. tokenisierte Einlagen 2026: Was Banken wirklich verteidigen müssen</title>
+      <link>https://sebastienrousseau.com/de/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</link>
+      <description>Stablecoins und tokenisierte Einlagen konvergieren bei programmierbarer Abwicklung, doch Bilanz, Rechtsanspruch, Liquidität und Vertrauensmodell bleiben unterschiedlich.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>Stablecoins 2026</category>
+      <category>tokenisierte Einlagen</category>
+      <category>Bankeinlagen</category>
+      <category>GENIUS Act</category>
+      <category>JPM Coin</category>
+      <category>Deposit Tokens</category>
+      <category>Stablecoin-Reserven</category>
+      <category>Bankrefinanzierung</category>
+      <category>digitales Geld</category>
+    </item>
+    <item>
+      <title>Programmierbare Liquidität 2026: KI, tokenisierte Einlagen, Echtzeit-Treasury</title>
+      <link>https://sebastienrousseau.com/de/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</link>
+      <description>Programmierbare Liquidität 2026 verbindet KI-Prognose, tokenisierte Einlagen, Echtzeit-Zahlungs-Rails, virtuelle Konten, Stablecoins und Treasury Management Systems zu einer Orchestrierungsschicht für Betriebskapital.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</guid>
+      <pubDate>Mon, 25 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>programmierbare Liquidität 2026</category>
+      <category>Treasury-Orchestrierung</category>
+      <category>KI-Treasury</category>
+      <category>tokenisierte Einlagen</category>
+      <category>Echtzeit-Liquidität</category>
+      <category>Stablecoins Treasury</category>
+      <category>Multi-Rail-Zahlungsverkehr</category>
+      <category>virtuelle Konten</category>
+      <category>Transaction Banking</category>
+      <category>Sicherheitenmobilität</category>
+    </item>
+    <item>
+      <title>UK Payments Forward Plan 2026: Stablecoins, Open Banking, tokenisierte Einlagen und agentenbasierte Zahlungen</title>
       <link>https://sebastienrousseau.com/de/2026-05-24-uk-zahlungsverkehr-forward-plan-stablecoins-open-banking-tokenised-zahlungsverkehr-2026/</link>
       <description>Der UK Payments Forward Plan und das Policy-Paket vom April 2026 schaffen einen kohärenten Rahmen für Zahlungsverkehr, Stablecoins, tokenisierte Einlagen, Open Banking und agentenbasierte Zahlungen.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-24-uk-zahlungsverkehr-forward-plan-stablecoins-open-banking-tokenised-zahlungsverkehr-2026/</guid>
@@ -81,51 +233,51 @@
       <category>Londoner Jazzkonzerte</category>
     </item>
     <item>
-      <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+      <title>Tokenisierte Einlagen 2026: Bankdienstleistungen, Stablecoin-Wettbewerb und der Status programmierbaren Geschäftsbankgelds</title>
       <link>https://sebastienrousseau.com/de/2026-05-21-tokenised-deposits-banking-services-status-2026/</link>
-      <description>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</description>
+      <description>Tokenisierte Einlagen 2026 treten in Bankpiloten ein. Geschäftsbankengeld passt sich an für programmierbares Settlement, digitale Wallets und tokenisierte Kapitalmärkte.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-21-tokenised-deposits-banking-services-status-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" type="image/webp" length="0"/>
-      <category>tokenised deposits 2026</category>
+      <category>tokenisierte Einlagen 2026</category>
       <category>tokenized deposits banking</category>
       <category>deposit tokens</category>
       <category>Great British Tokenised Deposits</category>
       <category>Lloyds digital assets</category>
-      <category>stablecoins</category>
-      <category>commercial bank money</category>
+      <category>Stablecoins</category>
+      <category>Geschäftsbankengeld</category>
       <category>BIS stablecoins</category>
       <category>Project Agora</category>
       <category>unified ledger</category>
       <category>Deutsche Bank digital money</category>
       <category>CBDC</category>
-      <category>tokenised money</category>
-      <category>digital wallets</category>
-      <category>tokenised gilts</category>
+      <category>tokenisiertes Geld</category>
+      <category>digitale Wallets</category>
+      <category>tokenisierte Gilts</category>
     </item>
     <item>
-      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <title>Cloud-natives Banking 2026: Kubernetes, DORA, Souveränität und das Ende der Trennung zwischen VM und Container</title>
       <link>https://sebastienrousseau.com/de/2026-05-20-cloud-native-banking-financial-institutions-2026/</link>
-      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <description>Cloud-native Banking 2026: Kubernetes, DORA-Resilienz, VM/Container-Konvergenz, Cloud-Souveränität und KI-Workloads für kritische Finanzdienstleistungen.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-20-cloud-native-banking-financial-institutions-2026/</guid>
       <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
-      <category>cloud native banking 2026</category>
-      <category>Kubernetes banks</category>
-      <category>financial institutions cloud</category>
+      <category>cloud-native Banking 2026</category>
+      <category>Kubernetes Banken</category>
+      <category>Finanzinstitute Cloud</category>
       <category>DORA 2026</category>
-      <category>cloud resilience</category>
+      <category>Cloud-Resilienz</category>
       <category>Red Hat OpenShift</category>
       <category>Portworx</category>
-      <category>VM container coexistence</category>
-      <category>bank cloud sovereignty</category>
-      <category>financial services cloud dependency</category>
-      <category>operational resilience</category>
-      <category>disaster recovery</category>
-      <category>cloud exit strategy</category>
-      <category>AI banking workloads</category>
+      <category>VM Container Koexistenz</category>
+      <category>Bank Cloud-Souveränität</category>
+      <category>Finanzdienstleistungen Cloud-Abhängigkeit</category>
+      <category>operative Resilienz</category>
+      <category>Notfallwiederherstellung</category>
+      <category>Cloud-Exit-Strategie</category>
+      <category>KI-Banking-Workloads</category>
     </item>
     <item>
       <title>Globaler Wholesale-Zahlungsverkehr im Jahr 2026: ISO 20022, RTGS-Erneuerung und die Ökonomie der Interoperabilität</title>

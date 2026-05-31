@@ -6,8 +6,176 @@
     <description>বাংলা প্রবন্ধ: প্রায়োগিক এআই, ISO 20022 পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের রূপান্তর।</description>
     <atom:link href="https://sebastienrousseau.com/bn/rss.xml" rel="self" type="application/rss+xml"/>
     <language>bn-BD</language>
-    <lastBuildDate>Fri, 22 May 2026 21:38:56 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 14:48:09 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. সর্বস্বত্ব সংরক্ষিত।</copyright>
+    <item>
+      <title>যুক্তরাজ্যের পাইকারি ডিজিটাল বাজার: টোকেনাইজড গিল্টস, নিষ্পত্তি ও নতুন চ্যাম্পিয়ন ভূমিকা</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
+      <description>যুক্তরাজ্যের Wholesale Digital Markets Champion ভূমিকা টোকেনাইজড পাইকারি অর্থব্যবস্থাকে জাতীয় প্রতিযোগিতার প্রকল্পে রূপান্তরিত করেছে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>যুক্তরাজ্য পাইকারি ডিজিটাল বাজার ২০২৬</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>UK gilts</category>
+      <category>টোকেনাইজড গিল্টস</category>
+      <category>DLT নিষ্পত্তি</category>
+      <category>BoE DSS</category>
+      <category>Project Guardian</category>
+      <category>SDX</category>
+      <category>Project Agorá</category>
+      <category>HM Treasury</category>
+      <category>Bank of England</category>
+      <category>City of London</category>
+    </item>
+    <item>
+      <title>ISO 20022 মাইগ্রেশনের পরে: পেমেন্ট ডেটাকে ব্যাংকিং পণ্যে রূপান্তর ২০২৬</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 মাইগ্রেশনের পরে আসল পুরস্কার পেমেন্ট ডেটা পণ্য — কাঠামোগত ঠিকানা, উদ্দেশ্য কোড, রেমিট্যান্স তথ্য ও তদন্ত বার্তা থেকে মিলকরণ, জালিয়াতি, তারল্য ও কমপ্লায়েন্স পণ্য গড়ে ওঠে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>কাঠামোগত ঠিকানা</category>
+      <category>CBPR+</category>
+      <category>পেমেন্ট ডেটা পণ্য</category>
+      <category>উদ্দেশ্য কোড</category>
+      <category>কর্পোরেট ট্রেজারি</category>
+      <category>মিলকরণ</category>
+      <category>নিষেধাজ্ঞা স্ক্রিনিং</category>
+      <category>জালিয়াতি শনাক্তকরণ</category>
+      <category>pacs.008</category>
+      <category>pain.001</category>
+      <category>SWIFT gpi</category>
+      <category>SEPA Instant</category>
+      <category>FedNow</category>
+    </item>
+    <item>
+      <title>ডিজিটাল সম্পদ ২০২৬: ব্যাংকের জন্য অপরিহার্য পরিকাঠামো রূপান্তর</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>ডিজিটাল সম্পদ আর উদ্ভাবন বাজি নয়। এটি সেটেলমেন্ট, কাস্টডি ও ব্যালেন্স শিট স্থাপত্যের প্রশ্ন। ব্যাংকের কৌশলগত কাজ কাঠামোগত অনিশ্চয়তায় পরিকাঠামো ডিজাইন।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>ডিজিটাল সম্পদ ২০২৬</category>
+      <category>টোকেনাইজড রিয়েল-ওয়ার্ল্ড অ্যাসেট</category>
+      <category>স্টেবলকয়েন ব্যাংকিং</category>
+      <category>টোকেনাইজড আমানত</category>
+      <category>ডিজিটাল সম্পদ কাস্টডি</category>
+      <category>DLT ব্যাংকিং</category>
+      <category>সেটেলমেন্ট পরিকাঠামো</category>
+      <category>কোল্যাটারাল মোবিলিটি</category>
+      <category>প্রোগ্রামযোগ্য মুদ্রা</category>
+      <category>ব্যাংক কৌশল ডিজিটাল সম্পদ</category>
+    </item>
+    <item>
+      <title>DORA, EU AI আইন ও ডেটা সার্বভৌমত্ব: ব্যাংকের জন্য ২০২৬-এর কমপ্লায়েন্স স্ট্যাক</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
+      <description>DORA, EU AI আইন, GDPR, ক্লাউড ঘনত্ব ঝুঁকি ও ডেটা সার্বভৌমত্ব ২০২৬-এ ব্যাংকগুলির জন্য একক কমপ্লায়েন্স স্ট্যাকে একীভূত হচ্ছে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>DORA ২০২৬</category>
+      <category>EU AI আইন ২০২৬</category>
+      <category>ব্যাংকের ডেটা সার্বভৌমত্ব</category>
+      <category>পরিচালনাগত স্থিতিস্থাপকতা</category>
+      <category>ক্লাউড ঘনত্ব ঝুঁকি</category>
+      <category>আর্থিক পরিষেবা AI কমপ্লায়েন্স</category>
+      <category>উচ্চ-ঝুঁকি AI</category>
+    </item>
+    <item>
+      <title>পেমেন্টের অপারেটিং সিস্টেম হিসেবে AI: ২০২৬-এ প্রতারণা, রাউটিং, স্থিতিস্থাপকতা ও কমপ্লায়েন্স</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</link>
+      <description>২০২৬ সালে AI পেমেন্টের অপারেটিং সিস্টেমে পরিণত হচ্ছে — অ্যানালিটিক্স থেকে সরে গিয়ে প্রতারণা প্রতিরোধ, পেমেন্ট মেরামত, রাউটিং, তারল্য পূর্বাভাস, কমপ্লায়েন্স স্ক্রিনিং ও এজেন্টিক কমার্স নিয়ন্ত্রণে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
+      <category>২০২৬ AI পেমেন্ট</category>
+      <category>পেমেন্ট প্রতারণা</category>
+      <category>পেমেন্ট রাউটিং</category>
+      <category>রিয়েল-টাইম প্রতারণা প্রতিরোধ</category>
+      <category>ISO 20022 AI</category>
+      <category>পেমেন্ট স্থিতিস্থাপকতা</category>
+      <category>লেনদেন বিশ্লেষণ</category>
+      <category>নগদ প্রবাহ পূর্বাভাস</category>
+    </item>
+    <item>
+      <title>Magnifica Humanitas: AI বিশ্বপত্রের প্রযুক্তি-শিল্প পাঠ</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</link>
+      <description>পোপ লিও চতুর্দশের Magnifica Humanitas — AI নিয়ে প্রথম পোপীয় বিশ্বপত্র; প্রযুক্তি শিল্পের ভিতর থেকে নৈতিক কাঠামো হিসেবে পড়লে এটি আশায় গিয়ে দাঁড়ায়।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
+      <category>Magnifica Humanitas</category>
+      <category>Pope Leo XIV</category>
+      <category>AI বিশ্বপত্র</category>
+      <category>কৃত্রিম বুদ্ধিমত্তা নৈতিকতা</category>
+      <category>কোয়ান্টাম কম্পিউটিং নৈতিকতা</category>
+      <category>Rerum Novarum</category>
+      <category>বাবেলের মিনার</category>
+      <category>প্রযুক্তি নিরপেক্ষ নয়</category>
+      <category>ট্রান্সহিউম্যানিজম</category>
+      <category>পোস্টহিউম্যানিজম</category>
+      <category>মানব মর্যাদা</category>
+      <category>প্রযুক্তিগত প্যারাডাইম</category>
+      <category>ট্রেন গাড়ি পারমাণবিক ইন্টারনেট</category>
+      <category>প্রযুক্তি ইতিহাসে নৈতিক উদ্বেগ</category>
+      <category>Lucy জ্ঞান স্থানান্তর</category>
+      <category>AI আশা</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+      <category>Anthropic</category>
+      <category>Sebastien Rousseau</category>
+    </item>
+    <item>
+      <title>স্টেবলকয়েন বনাম টোকেনাইজড আমানত ২০২৬: ব্যাংককে আসলে কী রক্ষা করতে হবে</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</link>
+      <description>স্টেবলকয়েন ও টোকেনাইজড আমানত প্রোগ্রামেবল নিষ্পত্তিতে মিলছে, তবে ব্যালেন্স শিট, আইনি, তারল্য ও আস্থার মডেল ভিন্ন থাকছে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>স্টেবলকয়েন ২০২৬</category>
+      <category>টোকেনাইজড আমানত</category>
+      <category>ব্যাংক আমানত</category>
+      <category>GENIUS Act</category>
+      <category>JPM Coin</category>
+      <category>ডিপোজিট টোকেন</category>
+      <category>স্টেবলকয়েন রিজার্ভ</category>
+      <category>ব্যাংক ফান্ডিং</category>
+      <category>ডিজিটাল অর্থ</category>
+    </item>
+    <item>
+      <title>প্রোগ্রামেবল তারল্য ২০২৬: এআই, টোকেনাইজড আমানত ও রিয়েল-টাইম কোষাগার</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</link>
+      <description>২০২৬-এ প্রোগ্রামেবল তারল্য এআই পূর্বাভাস, টোকেনাইজড আমানত, রিয়েল-টাইম রেল, ভার্চুয়াল হিসাব, স্টেবলকয়েন ও TMS-কে কর্মী মূলধনের একক অর্কেস্ট্রেশন স্তরে যুক্ত করছে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</guid>
+      <pubDate>Mon, 25 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>প্রোগ্রামেবল তারল্য ২০২৬</category>
+      <category>কোষাগার অর্কেস্ট্রেশন</category>
+      <category>এআই কোষাগার</category>
+      <category>টোকেনাইজড আমানত</category>
+      <category>রিয়েল-টাইম তারল্য</category>
+      <category>স্টেবলকয়েন কোষাগার</category>
+      <category>মাল্টি-রেল পেমেন্ট</category>
+      <category>ভার্চুয়াল হিসাব</category>
+      <category>লেনদেন ব্যাংকিং</category>
+      <category>জামানত গতিশীলতা</category>
+      <category>ISO 20022</category>
+      <category>Standard Chartered</category>
+      <category>J.P. Morgan</category>
+      <category>Oliver Wyman</category>
+      <category>AI agent</category>
+      <category>TMS</category>
+    </item>
     <item>
       <title>UK Payments Forward Plan ২০২৬: স্টেবলকয়েন, ওপেন ব্যাংকিং, টোকেনাইজড আমানত ও এজেন্টিক পেমেন্ট</title>
       <link>https://sebastienrousseau.com/bn/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>
@@ -81,51 +249,51 @@
       <category>লন্ডন জ্যাজ কনসার্ট</category>
     </item>
     <item>
-      <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+      <title>২০২৬-এ টোকেনাইজড আমানত: ব্যাংকিং পরিষেবা, স্টেবলকয়েন প্রতিযোগিতা এবং প্রোগ্রামেবল বাণিজ্যিক ব্যাংকের অর্থের অবস্থা</title>
       <link>https://sebastienrousseau.com/bn/2026-05-21-tokenised-deposits-banking-services-status-2026/</link>
-      <description>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</description>
+      <description>২০২৬ সালে টোকেনাইজড ডিপোজিট সেবাগুলি গবেষণা থেকে ব্যাংক পাইলট এবং প্রাথমিক ক্লায়েন্ট প্রস্তাবে রূপান্তরিত হচ্ছে। অবস্থা এখনও প্রি-স্কেল, তবে দিকনির্দেশনা স্পষ্ট: বাণিজ্যিক ব্যাংক অর্থ প্রোগ্রামযোগ্য নিষ্পত্তি, ডিজিটাল ওয়ালেট, স্টেবলকয়েন ইন্টারঅপারেবিলিটি এবং টোকেনাইজড মূলধন বাজারের জন্য অভিযোজিত হচ্ছে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-21-tokenised-deposits-banking-services-status-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" type="image/webp" length="0"/>
-      <category>tokenised deposits 2026</category>
+      <category>টোকেনাইজড ডিপোজিট ২০২৬</category>
       <category>tokenized deposits banking</category>
       <category>deposit tokens</category>
       <category>Great British Tokenised Deposits</category>
       <category>Lloyds digital assets</category>
       <category>stablecoins</category>
-      <category>commercial bank money</category>
+      <category>বাণিজ্যিক ব্যাংক অর্থ</category>
       <category>BIS stablecoins</category>
       <category>Project Agora</category>
       <category>unified ledger</category>
       <category>Deutsche Bank digital money</category>
       <category>CBDC</category>
-      <category>tokenised money</category>
-      <category>digital wallets</category>
+      <category>টোকেনাইজড অর্থ</category>
+      <category>ডিজিটাল ওয়ালেট</category>
       <category>tokenised gilts</category>
     </item>
     <item>
-      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <title>২০২৬-এ ক্লাউড-নেটিভ ব্যাংকিং: Kubernetes, DORA, সার্বভৌমত্ব এবং VM বনাম কন্টেইনার বিভাজনের অবসান</title>
       <link>https://sebastienrousseau.com/bn/2026-05-20-cloud-native-banking-financial-institutions-2026/</link>
-      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <description>২০২৬ সালে ক্লাউড নেটিভ ব্যাংকিং Kubernetes-ভিত্তিক প্ল্যাটফর্ম ইঞ্জিনিয়ারিং, DORA-প্রস্তুত অপারেশনাল রেজিলিয়েন্স, VM ও কন্টেইনার একত্রীকরণ, ক্লাউড সার্বভৌমত্ব, AI ওয়ার্কলোড এবং ডেটা পোর্টেবিলিটি নিয়ে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-20-cloud-native-banking-financial-institutions-2026/</guid>
       <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
-      <category>cloud native banking 2026</category>
-      <category>Kubernetes banks</category>
-      <category>financial institutions cloud</category>
+      <category>ক্লাউড নেটিভ ব্যাংকিং ২০২৬</category>
+      <category>Kubernetes ব্যাংক</category>
+      <category>আর্থিক প্রতিষ্ঠান ক্লাউড</category>
       <category>DORA 2026</category>
-      <category>cloud resilience</category>
+      <category>ক্লাউড রেজিলিয়েন্স</category>
       <category>Red Hat OpenShift</category>
       <category>Portworx</category>
-      <category>VM container coexistence</category>
-      <category>bank cloud sovereignty</category>
-      <category>financial services cloud dependency</category>
-      <category>operational resilience</category>
-      <category>disaster recovery</category>
-      <category>cloud exit strategy</category>
-      <category>AI banking workloads</category>
+      <category>VM কন্টেইনার সহাবস্থান</category>
+      <category>ব্যাংক ক্লাউড সার্বভৌমত্ব</category>
+      <category>আর্থিক সেবা ক্লাউড নির্ভরতা</category>
+      <category>অপারেশনাল রেজিলিয়েন্স</category>
+      <category>দুর্যোগ পুনরুদ্ধার</category>
+      <category>ক্লাউড এক্সিট স্ট্র্যাটেজি</category>
+      <category>AI ব্যাংকিং ওয়ার্কলোড</category>
     </item>
     <item>
       <title>২০২৬-এ বৈশ্বিক পাইকারি পেমেন্ট: ISO 20022, RTGS পুনর্নবায়ন এবং আন্তঃকার্যকারিতার অর্থনীতি</title>
@@ -186,15 +354,15 @@
     <item>
       <title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
       <link>https://sebastienrousseau.com/bn/2026-05-17-agentic-engineering-banks-blueprint-2026/</link>
-      <description>Agentic AI has crossed from pilot into production across global banking. 70% of institutions are using it to some degree; only one in five has a mature governance model. Meanwhile, autonomous adversaries are operating at machine speed, the legacy COBOL estate the new systems must interoperate with was written for the batch-processing assumptions of the 1960s, and the EU AI Act&apos;s August 2026 high-risk deadline is twelve weeks away. This is the engineering and governance position a bank needs to hold.</description>
+      <description>এজেন্টিক AI বৈশ্বিক ব্যাংকিংয়ে পাইলট থেকে উৎপাদনে পৌঁছেছে। ৭০% প্রতিষ্ঠান এটি ব্যবহার করছে; মাত্র এক-পঞ্চমাংশে পরিপক্ব গভর্ন্যান্স মডেল আছে। COBOL লিগ্যাসি এস্টেট এবং EU AI Act-এর আগস্ট ২০২৬ সময়সীমা ব্যাংকের জন্য মূল চ্যালেঞ্জ।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-17-agentic-engineering-banks-blueprint-2026/</guid>
       <pubDate>Sun, 17 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
-      <category>agentic engineering</category>
+      <category>এজেন্টিক ইঞ্জিনিয়ারিং</category>
       <category>spec-driven development</category>
-      <category>banks</category>
-      <category>financial services</category>
+      <category>ব্যাংক</category>
+      <category>আর্থিক সেবা</category>
       <category>AI governance</category>
       <category>EU AI Act</category>
       <category>DORA</category>
@@ -214,14 +382,14 @@
       <category>HITL</category>
       <category>human on the loop</category>
       <category>HOTL</category>
-      <category>third-party risk management</category>
+      <category>তৃতীয়-পক্ষ ঝুঁকি ব্যবস্থাপনা</category>
       <category>TPRM</category>
       <category>vendor risk</category>
       <category>post-quantum cryptography</category>
       <category>agent control plane</category>
       <category>FCA</category>
       <category>SM&amp;CR</category>
-      <category>12-week action plan</category>
+      <category>১২-সপ্তাহের অ্যাকশন প্ল্যান</category>
       <category>Sebastien Rousseau</category>
     </item>
     <item>
@@ -327,7 +495,7 @@
     <item>
       <title>Stablecoin Yield by Another Name: BlackRock&apos;s BRSRV and BSTBL Filings Decoded</title>
       <link>https://sebastienrousseau.com/bn/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/</link>
-      <description>Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two SEC registrations for products that solve this constraint by being regulated as money market funds rather than stablecoins — while behaving, in the wallet, like yield-bearing dollars. A close reading of BRSRV, BSTBL, and the OCC rulemaking they respond to.</description>
+      <description>GENIUS আইনে স্টেবলকয়েন সুদ দিতে পারে না। ৮ মে ২০২৬-এ BlackRock দুটি SEC নিবন্ধন দাখিল করেছে যা মানি মার্কেট ফান্ড হিসেবে নিয়ন্ত্রিত, স্টেবলকয়েন নয়। BRSRV, BSTBL ও OCC নিয়মের বিশ্লেষণ।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/</guid>
       <pubDate>Fri, 15 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
@@ -338,23 +506,23 @@
       <category>BUIDL</category>
       <category>GENIUS Act</category>
       <category>OCC</category>
-      <category>stablecoin</category>
-      <category>tokenised money market fund</category>
+      <category>স্টেবলকয়েন</category>
+      <category>টোকেনাইজড মানি মার্কেট ফান্ড</category>
       <category>OnChain Shares</category>
       <category>Securitize</category>
     </item>
     <item>
       <title>Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</title>
       <link>https://sebastienrousseau.com/bn/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/</link>
-      <description>Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026, the EU, UK, and ASD timelines clarified, and the BIS Project Leap proving feasibility at the central-bank level, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today&apos;s data expires.</description>
+      <description>কোয়ান্টাম ঝুঁকি গবেষণার কৌতূহল থেকে সক্রিয় নিয়ন্ত্রক বাধ্যতায় পরিণত হয়েছে। G7 রোডম্যাপ, BIS Project Leap এবং EU, UK ও ASD সময়রেখার পরিপ্রেক্ষিতে বোর্ডের প্রশ্ন এখন মাইগ্রেশন সম্পন্ন করা যাবে কিনা।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/</guid>
       <pubDate>Thu, 14 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" type="image/webp" length="0"/>
-      <category>post-quantum cryptography</category>
-      <category>PQC migration</category>
-      <category>corporate banking</category>
-      <category>financial services</category>
+      <category>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি</category>
+      <category>PQC মাইগ্রেশন</category>
+      <category>কর্পোরেট ব্যাংকিং</category>
+      <category>আর্থিক সেবা</category>
       <category>G7 CEG roadmap</category>
       <category>BIS Project Leap</category>
       <category>ML-KEM</category>
@@ -365,7 +533,7 @@
     <item>
       <title>The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View</title>
       <link>https://sebastienrousseau.com/bn/2026-05-12-iso-20022-pacs008-structured-address-deadline/</link>
-      <description>From November 2026, SWIFT CBPR+ requires structured postal addresses in cross-border payment messages. Unstructured address lines (AdrLine alone) will no longer be accepted for key party fields in pacs.008. At minimum, TwnNm and Ctry are required, with StrtNm and BldgNb or PstBx recommended. With six months to go, 65% of payment messages still contain unstructured addresses and 44% of banks remain behind schedule.</description>
+      <description>নভেম্বর ২০২৬ থেকে SWIFT CBPR+ ক্রস-বর্ডার পেমেন্ট বার্তায় কাঠামোগত পোস্টাল ঠিকানা বাধ্যতামূলক করছে। pacs.008-এ অকাঠামোগত AdrLine আর গৃহীত হবে না; TwnNm ও Ctry ন্যূনতম প্রয়োজন। এখনও ৬৫% বার্তা অ-সম্মত এবং ৪৪% ব্যাংক নির্ধারিত সময়ের পিছিয়ে আছে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-12-iso-20022-pacs008-structured-address-deadline/</guid>
       <pubDate>Tue, 12 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
@@ -373,9 +541,9 @@
       <category>ISO 20022</category>
       <category>pacs.008</category>
       <category>SWIFT CBPR+</category>
-      <category>structured address</category>
-      <category>November 2026</category>
-      <category>postal address</category>
+      <category>কাঠামোগত ঠিকানা</category>
+      <category>নভেম্বর ২০২৬</category>
+      <category>পোস্টাল ঠিকানা</category>
       <category>TwnNm</category>
       <category>Ctry</category>
       <category>StrtNm</category>
@@ -384,78 +552,78 @@
     <item>
       <title>Lucy&apos;s Flash Drive Revisited: AI, Quantum &amp; Knowledge</title>
       <link>https://sebastienrousseau.com/bn/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/</link>
-      <description>Twelve years on, Besson&apos;s Lucy reads like a thought experiment about knowledge migrating from flesh to machine — quietly validated by LLMs and qubits.</description>
+      <description>বারো বছর পরে, বেসোঁর Lucy মাংস থেকে যন্ত্রে জ্ঞান স্থানান্তরের একটি চিন্তা-পরীক্ষার মতো পড়ায় — LLM এবং কিউবিট দ্বারা নিঃশব্দে বৈধতা পাচ্ছে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/</guid>
       <pubDate>Mon, 11 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" type="image/webp" length="0"/>
       <category>Lucy 2014 film</category>
       <category>Luc Besson</category>
-      <category>knowledge transfer</category>
+      <category>জ্ঞান স্থানান্তর</category>
       <category>large language models</category>
       <category>neutral atom qubits</category>
       <category>whole-brain emulation</category>
       <category>substrate independence</category>
-      <category>AI philosophy</category>
+      <category>AI দর্শন</category>
       <category>quantum computing</category>
-      <category>knowledge persistence</category>
+      <category>জ্ঞান সংরক্ষণ</category>
     </item>
     <item>
       <title>Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</title>
       <link>https://sebastienrousseau.com/bn/2026-04-11-quantum-thresholds-are-moving-again/</link>
-      <description>Shor&apos;s algorithm may now run on as few as 10,000 qubits. RSA, ECC and the timeline for post-quantum migration are all moving up. Here&apos;s why.</description>
+      <description>Shor&apos;s algorithm এখন মাত্র ১০,০০০ কিউবিটে চলতে পারে। RSA, ECC এবং পোস্ট-কোয়ান্টাম মাইগ্রেশনের সময়সীমা সবই এগিয়ে আসছে। কারণটি জানুন।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-04-11-quantum-thresholds-are-moving-again/</guid>
       <pubDate>Sat, 11 Apr 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" type="image/webp" length="0"/>
-      <category>quantum computing</category>
+      <category>কোয়ান্টাম কম্পিউটিং</category>
       <category>Shor&apos;s algorithm</category>
       <category>10000 qubits</category>
-      <category>post-quantum cryptography</category>
+      <category>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি</category>
       <category>RSA-2048</category>
       <category>elliptic curve cryptography</category>
       <category>neutral atom qubits</category>
-      <category>quantum error correction</category>
-      <category>cryptographic agility</category>
-      <category>quantum threat timeline</category>
+      <category>কোয়ান্টাম এরর কারেকশন</category>
+      <category>ক্রিপ্টোগ্রাফিক অ্যাজিলিটি</category>
+      <category>কোয়ান্টাম থ্রেট টাইমলাইন</category>
     </item>
     <item>
       <title>Quantum-Safe Payments: Why the Industry Must Act Now</title>
       <link>https://sebastienrousseau.com/bn/2025-09-01-quantum-safe-payments-epaa/</link>
-      <description>Quantum computing threatens payment system cryptography. The EPAA white paper outlines the structural risk and the urgent case for PQC migration.</description>
+      <description>কোয়ান্টাম কম্পিউটিং পেমেন্ট সিস্টেমের ক্রিপ্টোগ্রাফিকে হুমকির মুখে ফেলছে। EPAA শ্বেতপত্র কাঠামোগত ঝুঁকি এবং PQC মাইগ্রেশনের জরুরি প্রয়োজনীয়তা বিশদভাবে তুলে ধরেছে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2025-09-01-quantum-safe-payments-epaa/</guid>
       <pubDate>Mon, 01 Sep 2025 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/digital-nodes.webp" type="image/webp" length="0"/>
-      <category>quantum-safe payments</category>
-      <category>post-quantum cryptography</category>
+      <category>কোয়ান্টাম-নিরাপদ পেমেন্ট</category>
+      <category>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি</category>
       <category>SEPA</category>
       <category>SWIFT gpi</category>
       <category>ISO 20022</category>
-      <category>financial services security</category>
+      <category>আর্থিক সেবা নিরাপত্তা</category>
       <category>EPAA</category>
       <category>harvest-now decrypt-later</category>
-      <category>cryptographic agility</category>
+      <category>ক্রিপ্টোগ্রাফিক অ্যাজিলিটি</category>
       <category>Sebastien Rousseau</category>
     </item>
     <item>
       <title>Quantum Lattice Crypto: Bug in Chen&apos;s LWE Attack</title>
       <link>https://sebastienrousseau.com/bn/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/</link>
-      <description>A bug in Yilei Chen&apos;s quantum LWE algorithm temporarily reprieves lattice-based cryptography. What it means for CRYSTALS-Kyber, Dilithium and the PQC roadmap.</description>
+      <description>ইলেই চেনের কোয়ান্টাম LWE অ্যালগরিদমে একটি বাগ ল্যাটিস-ভিত্তিক ক্রিপ্টোগ্রাফিকে সাময়িকভাবে রক্ষা করেছে। CRYSTALS-Kyber, Dilithium এবং PQC রোডম্যাপের জন্য এর অর্থ কী।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/</guid>
       <pubDate>Mon, 22 Apr 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/digital-nodes.webp" type="image/webp" length="0"/>
-      <category>post-quantum cryptography</category>
+      <category>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি</category>
       <category>NIST</category>
-      <category>PQC standardisation</category>
+      <category>PQC মানকীকরণ</category>
       <category>Yilei Chen</category>
-      <category>quantum algorithm</category>
-      <category>lattice-based cryptography</category>
-      <category>LWE problem</category>
+      <category>কোয়ান্টাম অ্যালগরিদম</category>
+      <category>ল্যাটিস-ভিত্তিক ক্রিপ্টোগ্রাফি</category>
+      <category>LWE সমস্যা</category>
       <category>CRYSTALS-KYBER</category>
       <category>CRYSTALS-Dilithium</category>
-      <category>quantum-resistant cryptography</category>
+      <category>কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফি</category>
     </item>
     <item>
       <title>OpenVoice: Leading Innovation in Voice Cloning Technology</title>
@@ -466,589 +634,599 @@
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/open-voice.webp" type="image/webp" length="0"/>
       <category>OpenVoice</category>
-      <category>Voice Cloning Technology</category>
-      <category>AI Synthetic Speech</category>
-      <category>Open-Source Voice Cloning</category>
-      <category>Cross-Lingual Voice Synthesis</category>
-      <category>Instant Voice Cloning</category>
-      <category>Voice Style Control</category>
-      <category>Accessibility Voice Tech</category>
-      <category>Entertainment Industry Voices</category>
-      <category>Customer Service Voice AI</category>
+      <category>ভয়েস ক্লোনিং প্রযুক্তি</category>
+      <category>AI সিন্থেটিক স্পিচ</category>
+      <category>ওপেন-সোর্স ভয়েস ক্লোনিং</category>
+      <category>ক্রস-লিঙ্গুয়াল ভয়েস সিন্থেসিস</category>
+      <category>ইনস্ট্যান্ট ভয়েস ক্লোনিং</category>
+      <category>ভয়েস স্টাইল কন্ট্রোল</category>
+      <category>অ্যাক্সেসিবিলিটি ভয়েস টেক</category>
+      <category>বিনোদন শিল্পের ভয়েস</category>
+      <category>কাস্টমার সার্ভিস ভয়েস AI</category>
     </item>
     <item>
       <title>Quantum Algorithm Challenges Lattice-Based Cryptography</title>
       <link>https://sebastienrousseau.com/bn/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/</link>
-      <description>A new polynomial-time quantum algorithm by Yilei Chen targets lattice-based cryptography. Implications for post-quantum standards including CRYSTALS-Kyber.</description>
+      <description>Yilei Chen-এর একটি নতুন পলিনোমিয়াল-টাইম কোয়ান্টাম অ্যালগরিদম ল্যাটিস-ভিত্তিক ক্রিপ্টোগ্রাফিকে লক্ষ্য করে। CRYSTALS-Kyber সহ পোস্ট-কোয়ান্টাম মানদণ্ডের উপর এর প্রভাব।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/</guid>
       <pubDate>Mon, 01 Apr 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/digital-constellation.webp" type="image/webp" length="0"/>
-      <category>quantum computing</category>
-      <category>quantum algorithm</category>
+      <category>কোয়ান্টাম কম্পিউটিং</category>
+      <category>কোয়ান্টাম অ্যালগরিদম</category>
       <category>lattice cryptography</category>
       <category>LWE</category>
-      <category>encryption</category>
+      <category>এনক্রিপশন</category>
       <category>post-quantum cryptography</category>
-      <category>cybersecurity</category>
+      <category>সাইবার নিরাপত্তা</category>
       <category>Yilei Chen</category>
-      <category>cryptography research</category>
-      <category>security threats</category>
+      <category>ক্রিপ্টোগ্রাফি গবেষণা</category>
+      <category>নিরাপত্তা হুমকি</category>
     </item>
     <item>
       <title>Fully Homomorphic Encryption (FHE) in a Banking Quantum Era</title>
       <link>https://sebastienrousseau.com/bn/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/</link>
-      <description>Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats.</description>
+      <description>ফুলি হোমোমরফিক এনক্রিপশন কীভাবে ব্যাংকিং ও আর্থিক শিল্পে ডেটা নিরাপত্তায় বিপ্লব আনছে এবং কোয়ান্টাম কম্পিউটিং হুমকির বিরুদ্ধে গোপনীয়তা নিশ্চিত করছে তা অন্বেষণ করুন।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/</guid>
       <pubDate>Mon, 25 Mar 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp" type="image/webp" length="0"/>
       <category>Fully Homomorphic Encryption</category>
-      <category>banking security</category>
+      <category>ব্যাংকিং নিরাপত্তা</category>
       <category>quantum computing</category>
-      <category>financial data encryption</category>
-      <category>FHE case studies</category>
-      <category>regulatory frameworks FHE</category>
-      <category>computational overhead FHE</category>
-      <category>FHE research</category>
-      <category>FHE hardware</category>
-      <category>data privacy laws</category>
+      <category>আর্থিক ডেটা এনক্রিপশন</category>
+      <category>FHE কেস স্টাডি</category>
+      <category>নিয়ন্ত্রক কাঠামো FHE</category>
+      <category>কম্পিউটেশনাল ওভারহেড FHE</category>
+      <category>FHE গবেষণা</category>
+      <category>FHE হার্ডওয়্যার</category>
+      <category>ডেটা গোপনীয়তা আইন</category>
     </item>
     <item>
       <title>Advancing AI with Multimodal LLMs: Insights from MM1</title>
       <link>https://sebastienrousseau.com/bn/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/</link>
-      <description>Explore Apple&apos;s MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials.</description>
+      <description>Apple-এর MM1 পেপার থেকে Multimodal Large Language Models (MLLMs) সম্পর্কে জানুন। তাদের আর্কিটেকচার, প্রি-ট্রেনিং পদ্ধতি এবং AI-এর সম্ভাবনা আবিষ্কার করুন।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/</guid>
       <pubDate>Sun, 17 Mar 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/mm1-visual.webp" type="image/webp" length="0"/>
       <category>Multimodal LLMs</category>
-      <category>MM1 study</category>
-      <category>AI advancements</category>
-      <category>pre-training strategies</category>
-      <category>image recognition</category>
-      <category>natural language processing</category>
-      <category>AI applications</category>
-      <category>future of AI</category>
-      <category>multimodal learning</category>
-      <category>AI research</category>
+      <category>MM1 গবেষণা</category>
+      <category>AI অগ্রগতি</category>
+      <category>প্রি-ট্রেনিং কৌশল</category>
+      <category>চিত্র শনাক্তকরণ</category>
+      <category>প্রাকৃতিক ভাষা প্রক্রিয়াকরণ</category>
+      <category>AI প্রয়োগ</category>
+      <category>AI-এর ভবিষ্যৎ</category>
+      <category>মাল্টিমোডাল লার্নিং</category>
+      <category>AI গবেষণা</category>
     </item>
     <item>
       <title>Fast Real-Time Speech Recognition on macOS: OpenAI Whisper</title>
       <link>https://sebastienrousseau.com/bn/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/</link>
-      <description>Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy.</description>
+      <description>জানুন কীভাবে OpenAI Whisper এবং Metal Performance Shaders macOS-এ রিয়েল-টাইম স্পিচ রিকগনিশন রূপান্তরিত করছে, অতুলনীয় গতি ও নির্ভুলতা প্রদান করে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/</guid>
       <pubDate>Tue, 12 Mar 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/research-paper.webp" type="image/webp" length="0"/>
       <category>OpenAI Whisper</category>
       <category>Metal Performance Shaders</category>
-      <category>macOS speech recognition</category>
-      <category>real-time transcription</category>
-      <category>voice activity detection</category>
-      <category>GPU acceleration</category>
-      <category>Python integration</category>
-      <category>speech-to-text macOS</category>
-      <category>energy-efficient speech detection</category>
+      <category>macOS স্পিচ রিকগনিশন</category>
+      <category>রিয়েল-টাইম ট্রান্সক্রিপশন</category>
+      <category>ভয়েস অ্যাক্টিভিটি ডিটেকশন</category>
+      <category>GPU অ্যাক্সেলারেশন</category>
+      <category>Python ইন্টিগ্রেশন</category>
+      <category>স্পিচ-টু-টেক্সট macOS</category>
+      <category>শক্তি-সাশ্রয়ী স্পিচ ডিটেকশন</category>
       <category>Apple silicon</category>
     </item>
     <item>
       <title>RustLogs (RLG): Structured Logging Library for Rust</title>
       <link>https://sebastienrousseau.com/bn/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/</link>
-      <description>Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. </description>
+      <description>RustLogs (RLG) আবিষ্কার করুন — Rust-এর জন্য নমনীয় লগিং লাইব্রেরি, যা স্ট্রাকচার্ড লগ ফরম্যাট, অ্যাসিঙ্ক্রোনাস লগিং এবং ব্যাপক কাস্টমাইজেশন বিকল্প সরবরাহ করে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/</guid>
       <pubDate>Fri, 08 Mar 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/rustlogs.webp" type="image/webp" length="0"/>
-      <category>Rust logging library</category>
-      <category>asynchronous Rust logging</category>
-      <category>structured log formats</category>
-      <category>Rust application debugging</category>
-      <category>customisable logging Rust</category>
-      <category>Rust development tools</category>
-      <category>RustLogs RLG features</category>
-      <category>efficient Rust logging</category>
-      <category>RustLogs integration</category>
-      <category>RustLogs documentation</category>
+      <category>Rust লগিং লাইব্রেরি</category>
+      <category>অ্যাসিঙ্ক্রোনাস Rust লগিং</category>
+      <category>স্ট্রাকচার্ড লগ ফরম্যাট</category>
+      <category>Rust অ্যাপ্লিকেশন ডিবাগিং</category>
+      <category>কাস্টমাইজযোগ্য Rust লগিং</category>
+      <category>Rust ডেভেলপমেন্ট টুলস</category>
+      <category>RustLogs RLG ফিচার</category>
+      <category>দক্ষ Rust লগিং</category>
+      <category>RustLogs ইন্টিগ্রেশন</category>
+      <category>RustLogs ডকুমেন্টেশন</category>
     </item>
     <item>
       <title>Le Chat by Mistral AI: Multilingual Conversational AI</title>
       <link>https://sebastienrousseau.com/bn/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/</link>
-      <description>Meet Mistral AI&apos;s new multilingual Assistant. An advanced AI that can understand and respond in multiple languages, all in one conversation and in real-time.</description>
+      <description>Mistral AI-এর নতুন বহুভাষিক সহকারীর সাথে পরিচিত হন। একটি উন্নত AI যা একটি কথোপকথনে একাধিক ভাষায় বুঝতে ও সাড়া দিতে পারে, রিয়েল-টাইমে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/</guid>
       <pubDate>Mon, 04 Mar 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp" type="image/webp" length="0"/>
       <category>Le Chat AI</category>
-      <category>Mistral AI chatbot</category>
-      <category>Le Chat virtual assistant</category>
-      <category>Mistral AI language understanding</category>
-      <category>Le Chat AI customer service</category>
-      <category>Mistral AI enterprise solutions</category>
-      <category>Le Chat AI customisation</category>
-      <category>Mistral AI multilingual support</category>
-      <category>Le Chat AI-powered communication</category>
-      <category>Mistral AI AI-driven business solutions</category>
+      <category>Mistral AI চ্যাটবট</category>
+      <category>Le Chat ভার্চুয়াল সহকারী</category>
+      <category>Mistral AI ভাষা বোধগম্যতা</category>
+      <category>Le Chat AI গ্রাহক সেবা</category>
+      <category>Mistral AI এন্টারপ্রাইজ সমাধান</category>
+      <category>Le Chat AI কাস্টমাইজেশন</category>
+      <category>Mistral AI বহুভাষিক সহায়তা</category>
+      <category>Le Chat AI-চালিত যোগাযোগ</category>
+      <category>Mistral AI AI-চালিত ব্যবসায়িক সমাধান</category>
     </item>
     <item>
       <title>Google Gemma AI: Transforming Open-Source AI Development</title>
       <link>https://sebastienrousseau.com/bn/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/</link>
-      <description>Explore Google&apos;s Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use.</description>
+      <description>গুগলের Gemma AI মডেল আবিষ্কার করুন: একটি ওপেন-সোর্স প্রকল্প যা ব্যক্তিগত ও এন্টারপ্রাইজ উভয় ব্যবহারের জন্য নৈতিক AI সমাধান প্রদান করে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/</guid>
       <pubDate>Mon, 26 Feb 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/ai-ship.webp" type="image/webp" length="0"/>
       <category>Google Gemma AI</category>
-      <category>open-source AI model</category>
-      <category>Gemma technical architecture</category>
+      <category>ওপেন-সোর্স AI মডেল</category>
+      <category>Gemma প্রযুক্তি আর্কিটেকচার</category>
       <category>Gemma 2B 7B</category>
-      <category>ethical AI</category>
-      <category>AI integration macOS</category>
-      <category>AI enterprise solutions</category>
-      <category>conversational AI</category>
-      <category>data analysis AI</category>
-      <category>AI for edge devices</category>
+      <category>নৈতিক AI</category>
+      <category>macOS AI ইন্টিগ্রেশন</category>
+      <category>AI এন্টারপ্রাইজ সমাধান</category>
+      <category>কথোপকথনমূলক AI</category>
+      <category>ডেটা বিশ্লেষণ AI</category>
+      <category>এজ ডিভাইসের জন্য AI</category>
     </item>
     <item>
       <title>Unlocking Gemini 1.5: Google&apos;s AI Revolution Explained</title>
       <link>https://sebastienrousseau.com/bn/2024-02-19-unlocking-gemini-google-ai-revolution-explained/</link>
-      <description>Gemini 1.5 from Google scales context windows past 1M tokens. What that unlocks for retrieval-augmented finance and the trade-offs worth knowing.</description>
+      <description>Google-এর Gemini 1.5 কনটেক্সট উইন্ডো ১ মিলিয়ন টোকেনের বেশি স্কেল করে। রিট্রিভাল-অগমেন্টেড ফিনান্সে এটি কী সম্ভাবনা উন্মোচন করে এবং জানার মতো ট্রেড-অফগুলি কী।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2024-02-19-unlocking-gemini-google-ai-revolution-explained/</guid>
       <pubDate>Mon, 19 Feb 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp" type="image/webp" length="0"/>
       <category>Gemini 1.5</category>
       <category>Google AI</category>
-      <category>Mixture-of-Experts architecture</category>
-      <category>computational efficiency</category>
-      <category>context window expansion</category>
-      <category>AI innovation</category>
-      <category>data analysis transformation</category>
-      <category>in-context learning</category>
-      <category>AI use cases</category>
-      <category>technology revolution</category>
+      <category>Mixture-of-Experts আর্কিটেকচার</category>
+      <category>কম্পিউটেশনাল দক্ষতা</category>
+      <category>কনটেক্সট উইন্ডো সম্প্রসারণ</category>
+      <category>AI উদ্ভাবন</category>
+      <category>ডেটা বিশ্লেষণ রূপান্তর</category>
+      <category>ইন-কনটেক্সট লার্নিং</category>
+      <category>AI ব্যবহারের ক্ষেত্র</category>
+      <category>প্রযুক্তি বিপ্লব</category>
     </item>
     <item>
       <title>EU&apos;s AI Act: Pioneering Ethical AI Regulation Worldwide</title>
       <link>https://sebastienrousseau.com/bn/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/</link>
-      <description>The EU AI Act sets the first comprehensive framework for ethical, risk-tiered AI regulation worldwide. What changes for banks, vendors and high-risk systems.</description>
+      <description>EU AI Act বিশ্বব্যাপী নৈতিক, ঝুঁকি-স্তরীয় AI নিয়ন্ত্রণের প্রথম ব্যাপক কাঠামো নির্ধারণ করে। ব্যাংক, বিক্রেতা এবং উচ্চ-ঝুঁকির সিস্টেমের জন্য কী পরিবর্তন আসছে তা জানুন।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/</guid>
       <pubDate>Tue, 13 Feb 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" type="image/webp" length="0"/>
       <category>EU AI Act</category>
-      <category>Artificial Intelligence regulation</category>
-      <category>Ethical AI framework</category>
-      <category>AI risk management</category>
-      <category>AI innovation</category>
-      <category>AI transparency</category>
-      <category>AI consumer rights</category>
-      <category>AI governance</category>
-      <category>AI standards</category>
-      <category>AI ethics</category>
+      <category>কৃত্রিম বুদ্ধিমত্তা নিয়ন্ত্রণ</category>
+      <category>নৈতিক AI কাঠামো</category>
+      <category>AI ঝুঁকি ব্যবস্থাপনা</category>
+      <category>AI উদ্ভাবন</category>
+      <category>AI স্বচ্ছতা</category>
+      <category>AI ভোক্তা অধিকার</category>
+      <category>AI পরিচালন</category>
+      <category>AI মানদণ্ড</category>
+      <category>AI নীতিশাস্ত্র</category>
     </item>
     <item>
       <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
       <link>https://sebastienrousseau.com/bn/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/</link>
-      <description>Discover how Àkàndé leverages OpenAI GPT&apos;s natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance.</description>
+      <description>Àkàndé একটি ওপেন-সোর্স Python ভয়েস অ্যাসিস্ট্যান্ট যা OpenAI Whisper স্পিচ রিকগনিশন, GPT-4 চ্যাট কমপ্লিশন এবং স্থানীয় SQLite ক্যাশ একত্রিত করে PDF সারসংক্ষেপ তৈরি করে ও সব ডেটা স্থানীয়ভাবে সংরক্ষণ করে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/</guid>
       <pubDate>Mon, 12 Feb 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" type="image/webp" length="0"/>
       <category>Àkàndé</category>
-      <category>Voice Assistant</category>
-      <category>Natural Language Understanding</category>
-      <category>PDF Summaries</category>
-      <category>Efficient Caching</category>
-      <category>OpenAI GPT</category>
-      <category>Executive Assistance</category>
-      <category>Personal Assistance</category>
-      <category>Digital Assistants</category>
-      <category>Technology Innovation</category>
+      <category>OpenAI GPT-4</category>
+      <category>Whisper STT</category>
+      <category>SQLite ক্যাশিং</category>
+      <category>fpdf2</category>
+      <category>Python ভয়েস অ্যাসিস্ট্যান্ট</category>
+      <category>chat completions API</category>
+      <category>PDF সারসংক্ষেপ তৈরি</category>
+      <category>SHA-256 ক্যাশ</category>
+      <category>টেক্সট-টু-স্পিচ</category>
+      <category>এক্সিকিউটিভ AI অ্যাসিস্ট্যান্ট</category>
+      <category>ওপেন-সোর্স</category>
     </item>
     <item>
       <title>Generative AI in Advertising: Amazon Rufus &amp; Meta</title>
       <link>https://sebastienrousseau.com/bn/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/</link>
-      <description>Explore how AI transforms advertising with insights on Amazon&apos;s Rufus and Meta&apos;s latest developments. Discover the impact on consumer engagement</description>
+      <description>AI কীভাবে বিজ্ঞাপনকে রূপান্তরিত করছে তা Amazon-এর Rufus ও Meta-র সর্বশেষ উন্নয়নের অন্তর্দৃষ্টি সহ অন্বেষণ করুন। ভোক্তা সম্পৃক্ততার উপর প্রভাব আবিষ্কার করুন।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/</guid>
       <pubDate>Thu, 08 Feb 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/advertising-ai.webp" type="image/webp" length="0"/>
-      <category>AI in advertising</category>
+      <category>বিজ্ঞাপনে AI</category>
       <category>Amazon Rufus</category>
-      <category>Meta AI tools</category>
-      <category>consumer targeting</category>
-      <category>advertising technology</category>
-      <category>AI chatbots</category>
-      <category>digital marketing trends</category>
-      <category>AI analytics</category>
-      <category>creative AI</category>
-      <category>ad campaign optimization</category>
+      <category>Meta AI টুলস</category>
+      <category>ভোক্তা টার্গেটিং</category>
+      <category>বিজ্ঞাপন প্রযুক্তি</category>
+      <category>AI চ্যাটবট</category>
+      <category>ডিজিটাল মার্কেটিং ট্রেন্ড</category>
+      <category>AI বিশ্লেষণ</category>
+      <category>ক্রিয়েটিভ AI</category>
+      <category>বিজ্ঞাপন প্রচারাভিযান অপ্টিমাইজেশন</category>
     </item>
     <item>
-      <title>AI-Powered Speech Analysis, Translation, &amp; Insight Tool</title>
+      <title>Audio Analyser: Azure Speech, NLP, and Translation Pipeline</title>
       <link>https://sebastienrousseau.com/bn/2024-01-29-ai-powered-audio-insights-analysis-translations/</link>
-      <description>Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conversion, text analysis, and translations for actionable insights.</description>
+      <description>Audio Analyser, Azure Cognitive Services-এর speech-to-text নিউরাল মডেল, Text Analytics NLP এবং CherryPy ব্যবহার করে অডিও রেকর্ডিংকে অনুসন্ধানযোগ্য ট্রান্সক্রিপ্টে রূপান্তরিত করে, যাতে সেন্টিমেন্ট স্কোর, কীওয়ার্ড নিষ্কাশন এবং বহুভাষিক অনুবাদ অন্তর্ভুক্ত থাকে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2024-01-29-ai-powered-audio-insights-analysis-translations/</guid>
       <pubDate>Mon, 29 Jan 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" type="image/webp" length="0"/>
-      <category>audio analyser</category>
-      <category>azure ai</category>
+      <category>Azure Cognitive Services</category>
       <category>speech-to-text</category>
-      <category>audio data analysis</category>
-      <category>text analysis</category>
-      <category>ai translations</category>
-      <category>audio insights</category>
-      <category>automated transcription</category>
-      <category>audio data processing</category>
-      <category>machine learning</category>
+      <category>নিউরাল অ্যাকুস্টিক মডেল</category>
+      <category>Azure Text Analytics</category>
+      <category>প্রাকৃতিক ভাষা প্রক্রিয়াকরণ</category>
+      <category>সেন্টিমেন্ট বিশ্লেষণ</category>
+      <category>CherryPy</category>
+      <category>ব্যাচ ট্রান্সক্রিপশন API</category>
+      <category>বহুভাষিক ASR</category>
+      <category>Azure Translator</category>
+      <category>অডিও ট্রান্সক্রিপশন</category>
+      <category>Python অডিও প্রক্রিয়াকরণ</category>
     </item>
     <item>
       <title>AI Prompt Engineering 2024: Techniques That Work</title>
       <link>https://sebastienrousseau.com/bn/2024-01-23-advancements-in-ai-prompt-engineering/</link>
-      <description>Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors.</description>
+      <description>প্রম্পট ইঞ্জিনিয়ারিং ইনফারেন্সের সময় LLM-এর আচরণ নিয়ন্ত্রণ করে। এই নিবন্ধে zero-shot ও few-shot প্রম্পটিং, চেইন-অব-থট যুক্তি, সেলফ-কনসিস্টেন্সি স্যাম্পলিং, ReAct আর্কিটেকচার, পরোক্ষ প্রম্পট ইনজেকশন ঝুঁকি এবং আর্থিক পরিষেবায় প্রয়োগের ধরন আলোচনা করা হয়েছে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2024-01-23-advancements-in-ai-prompt-engineering/</guid>
       <pubDate>Tue, 23 Jan 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" type="image/webp" length="0"/>
-      <category>AI Prompt Engineering</category>
-      <category>Custom Instructions</category>
-      <category>Multi-Persona AI</category>
-      <category>Chain of Thought</category>
-      <category>Quantum Computing</category>
-      <category>Ethical AI</category>
-      <category>Adaptive Prompting</category>
-      <category>Zero Shot Prompting</category>
-      <category>Few Shot Prompting</category>
-      <category>AI Technology Trends</category>
+      <category>চেইন-অব-থট প্রম্পটিং</category>
+      <category>ফিউ-শট লার্নিং</category>
+      <category>জিরো-শট প্রম্পটিং</category>
+      <category>ইন-কনটেক্সট লার্নিং</category>
+      <category>প্রম্পট ইনজেকশন</category>
+      <category>ReAct</category>
+      <category>সেলফ-কনসিস্টেন্সি</category>
+      <category>রিট্রিভাল-অগমেন্টেড জেনারেশন</category>
+      <category>BloombergGPT</category>
+      <category>সিস্টেম প্রম্পট</category>
+      <category>প্রম্পট সিকিউরিটি</category>
+      <category>LLM এজেন্ট</category>
     </item>
     <item>
       <title>Alien Studio: My Tech-to Art Journey in Photography</title>
       <link>https://sebastienrousseau.com/bn/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/</link>
-      <description>Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio.</description>
+      <description>Alien Studio-র মাধ্যমে Rust, AI এবং Quantum Computing থেকে শিল্প ও ফটোগ্রাফিকে নতুনভাবে সংজ্ঞায়িত করার আমার ব্যক্তিগত যাত্রায় যোগ দিন।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/</guid>
       <pubDate>Mon, 15 Jan 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" type="image/webp" length="0"/>
-      <category>personal tech journey</category>
-      <category>Rust discovery</category>
-      <category>AI exploration</category>
+      <category>ব্যক্তিগত প্রযুক্তি যাত্রা</category>
+      <category>Rust আবিষ্কার</category>
+      <category>AI অন্বেষণ</category>
       <category>Quantum Computing</category>
-      <category>art and photography fusion</category>
+      <category>শিল্প ও ফটোগ্রাফির সংমিশ্রণ</category>
       <category>Alien Studio</category>
-      <category>digital art creation</category>
-      <category>technology in art</category>
-      <category>innovative photography</category>
-      <category>artistic rediscovery</category>
+      <category>ডিজিটাল আর্ট তৈরি</category>
+      <category>শিল্পে প্রযুক্তি</category>
+      <category>উদ্ভাবনী ফটোগ্রাফি</category>
+      <category>শৈল্পিক পুনরাবিষ্কার</category>
     </item>
     <item>
       <title>AI Trends 2024: Insights and Predictions for the Future</title>
       <link>https://sebastienrousseau.com/bn/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/</link>
-      <description>AI trends for 2024: generative AI in finance, multimodal models, on-device LLMs and the shifts that will reshape banking and product engineering.</description>
+      <description>২০২৪-এর AI প্রবণতা: অর্থায়নে generative AI, মাল্টিমোডাল মডেল, অন-ডিভাইস LLM এবং ব্যাংকিং ও পণ্য প্রকৌশলকে নতুনভাবে রূপ দেবে এমন পরিবর্তনসমূহ।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/</guid>
       <pubDate>Mon, 08 Jan 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" type="image/webp" length="0"/>
       <category>AI trends 2024</category>
       <category>generative AI</category>
-      <category>AI in education</category>
-      <category>AI cybersecurity</category>
-      <category>AI finance</category>
-      <category>AI content creation</category>
-      <category>AI space exploration</category>
-      <category>ethical AI</category>
-      <category>AI in retail</category>
-      <category>AI analytics</category>
+      <category>শিক্ষায় AI</category>
+      <category>AI সাইবারনিরাপত্তা</category>
+      <category>অর্থায়নে AI</category>
+      <category>AI কন্টেন্ট ক্রিয়েশন</category>
+      <category>মহাকাশ অনুসন্ধানে AI</category>
+      <category>নৈতিক AI</category>
+      <category>খুচরায় AI</category>
+      <category>AI অ্যানালিটিক্স</category>
     </item>
     <item>
       <title>Qiskit &amp; Quantum Fourier Transform for Credit Ratio Analysis</title>
       <link>https://sebastienrousseau.com/bn/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/</link>
-      <description>Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed.</description>
+      <description>আর্থিক খাতে ক্রেডিট রেশিও বিশ্লেষণে IBM Qiskit এবং Quantum Fourier Transform কীভাবে বিপ্লব আনছে তা অন্বেষণ করুন, যা অভূতপূর্ব নির্ভুলতা ও গতি প্রদান করে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/</guid>
       <pubDate>Mon, 08 Jan 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp" type="image/webp" length="0"/>
-      <category>quantum computing</category>
-      <category>finance</category>
-      <category>credit ratio analysis</category>
+      <category>কোয়ান্টাম কম্পিউটিং</category>
+      <category>অর্থায়ন</category>
+      <category>ক্রেডিট রেশিও বিশ্লেষণ</category>
       <category>Qiskit</category>
       <category>Quantum Fourier Transform</category>
       <category>IBM</category>
-      <category>machine learning</category>
-      <category>artificial intelligence</category>
-      <category>financial risk assessment</category>
-      <category>creditworthiness</category>
+      <category>মেশিন লার্নিং</category>
+      <category>কৃত্রিম বুদ্ধিমত্তা</category>
+      <category>আর্থিক ঝুঁকি মূল্যায়ন</category>
+      <category>ঋণযোগ্যতা</category>
     </item>
     <item>
       <title>Revolutionising Finance with AI-Enhanced Quantum Algorithms</title>
       <link>https://sebastienrousseau.com/bn/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/</link>
-      <description>Explore the transformative role of AI in quantum algorithms for finance, with a focus on their mathematical intricacies and banking applications.</description>
+      <description>অর্থায়নে কোয়ান্টাম অ্যালগরিদমে AI-এর রূপান্তরকারী ভূমিকা অন্বেষণ করুন, তাদের গাণিতিক জটিলতা এবং ব্যাংকিং প্রয়োগের উপর মনোযোগ দিয়ে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/</guid>
       <pubDate>Mon, 25 Dec 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
       <category>Quantum Computing</category>
       <category>AI Algorithms</category>
-      <category>Financial Mathematics</category>
+      <category>আর্থিক গণিত</category>
       <category>Banking Technology</category>
-      <category>Risk Management</category>
+      <category>ঝুঁকি ব্যবস্থাপনা</category>
       <category>Algorithm Design</category>
-      <category>Data Analysis</category>
-      <category>Investment Strategies</category>
+      <category>ডেটা বিশ্লেষণ</category>
+      <category>বিনিয়োগ কৌশল</category>
       <category>Quantum Finance</category>
       <category>Machine Learning</category>
     </item>
     <item>
       <title>State of AI and Quantum Computing in Banking: A 2023 Review</title>
       <link>https://sebastienrousseau.com/bn/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/</link>
-      <description>Exploring 2023&apos;s Technological Landscape: AI &amp; Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations &amp; Governance</description>
+      <description>২০২৩ সালের প্রযুক্তি পরিদর্শন: AI ও Quantum Computing ব্যাংকিং খাতে বিপ্লব, ওপেন-সোর্স মডেলের উত্থান এবং বিকশিত নিয়মকানুন ও প্রশাসন</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/</guid>
       <pubDate>Mon, 18 Dec 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
-      <category>AI in banking</category>
+      <category>ব্যাংকিংয়ে AI</category>
       <category>Quantum Computing</category>
       <category>Financial Technology</category>
-      <category>Open-source AI</category>
-      <category>Risk Management</category>
+      <category>ওপেন-সোর্স AI</category>
+      <category>ঝুঁকি ব্যবস্থাপনা</category>
       <category>Quantum Security</category>
-      <category>AI Regulation</category>
-      <category>AI Ethics</category>
-      <category>AI Governance</category>
-      <category>Banking Innovation</category>
+      <category>AI নিয়ন্ত্রণ</category>
+      <category>AI নৈতিকতা</category>
+      <category>AI গভর্ন্যান্স</category>
+      <category>ব্যাংকিং উদ্ভাবন</category>
     </item>
     <item>
       <title>Quantum Key Distribution Revolutionising Security in Banking</title>
       <link>https://sebastienrousseau.com/bn/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/</link>
-      <description>As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security.</description>
+      <description>কোয়ান্টাম কম্পিউটার প্রচলিত এনক্রিপশন পদ্ধতিকে হুমকির মুখে ফেলায়, Quantum Key Distribution (QKD) অতুলনীয় নিরাপত্তা প্রদান করে একটি যুগান্তকারী সমাধান হিসেবে আবির্ভূত হচ্ছে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/</guid>
       <pubDate>Mon, 11 Dec 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" type="image/webp" length="0"/>
       <category>Quantum Key Distribution (QKD)</category>
-      <category>Quantum Security</category>
-      <category>Banking</category>
-      <category>Financial Industry</category>
-      <category>Digital Finance</category>
-      <category>Cybersecurity</category>
+      <category>কোয়ান্টাম নিরাপত্তা</category>
+      <category>ব্যাংকিং</category>
+      <category>আর্থিক শিল্প</category>
+      <category>ডিজিটাল ফিনান্স</category>
+      <category>সাইবার নিরাপত্তা</category>
       <category>Quantum Computing</category>
       <category>HSBC</category>
       <category>Quantum Protection Trial</category>
-      <category>Financial Transactions</category>
+      <category>আর্থিক লেনদেন</category>
     </item>
     <item>
       <title>Efficient Date and Time Management with DateTime (DTT)</title>
       <link>https://sebastienrousseau.com/bn/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/</link>
-      <description>DateTime (DTT) is a Rust library for parsing, validating, manipulating and formatting dates and times — high precision, broad functionality.</description>
+      <description>DateTime (DTT) হলো তারিখ ও সময় পার্স, যাচাই, ম্যানিপুলেট এবং ফরম্যাট করার জন্য একটি Rust লাইব্রেরি — উচ্চ নির্ভুলতা ও বিস্তৃত কার্যকারিতা সহ।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/</guid>
       <pubDate>Mon, 04 Dec 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg" type="image/webp" length="0"/>
       <category>DateTime</category>
       <category>DTT</category>
-      <category>Rust library</category>
-      <category>parsing</category>
-      <category>validating</category>
-      <category>manipulating</category>
-      <category>formatting</category>
-      <category>dates</category>
-      <category>times</category>
+      <category>Rust লাইব্রেরি</category>
+      <category>পার্সিং</category>
+      <category>যাচাইকরণ</category>
+      <category>ম্যানিপুলেশন</category>
+      <category>ফরম্যাটিং</category>
+      <category>তারিখ</category>
+      <category>সময়</category>
     </item>
     <item>
       <title>KyberLib: Rust CRYSTALS-Kyber for Post-Quantum</title>
       <link>https://sebastienrousseau.com/bn/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/</link>
-      <description>A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algorithm, to Protect Your Data from Quantum Threats and Cryptanalytic Attacks.</description>
+      <description>CRYSTALS-Kyber অ্যালগরিদমের একটি শক্তিশালী এবং কোয়ান্টাম-নিরাপদ ক্রিপ্টোগ্রাফি বাস্তবায়ন, আপনার ডেটাকে কোয়ান্টাম হুমকি এবং ক্রিপ্টোঅ্যানালিটিক আক্রমণ থেকে সুরক্ষিত রাখতে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/</guid>
       <pubDate>Tue, 28 Nov 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" type="image/webp" length="0"/>
       <category>KyberLib</category>
       <category>Rust CRYSTALS-Kyber</category>
-      <category>post-quantum cryptography</category>
-      <category>lattice-based cryptography</category>
-      <category>quantum-resistant key exchange</category>
+      <category>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি</category>
+      <category>ল্যাটিস-ভিত্তিক ক্রিপ্টোগ্রাফি</category>
+      <category>কোয়ান্টাম-প্রতিরোধী কী এক্সচেঞ্জ</category>
       <category>NIST FIPS 203</category>
       <category>Sebastien Rousseau</category>
       <category>KEM</category>
-      <category>payment authentication</category>
-      <category>PQC library</category>
+      <category>পেমেন্ট অথেনটিকেশন</category>
+      <category>PQC লাইব্রেরি</category>
     </item>
     <item>
       <title>CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</title>
       <link>https://sebastienrousseau.com/bn/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/</link>
-      <description>Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.</description>
+      <description>আবিষ্কার করুন কীভাবে CRYSTALS-Kyber, একটি কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফি অ্যালগরিদম, ক্রিপ্টোগ্রাফির বিশ্বে বিপ্লব এনেছে এবং আমাদের কোয়ান্টাম যুগের জন্য প্রস্তুত করছে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/</guid>
       <pubDate>Sun, 19 Nov 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" type="image/webp" length="0"/>
-      <category>quantum computing</category>
-      <category>quantum-resistant cryptography</category>
+      <category>কোয়ান্টাম কম্পিউটিং</category>
+      <category>কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফি</category>
       <category>CRYSTALS-Kyber</category>
-      <category>cryptography</category>
-      <category>security</category>
-      <category>banking</category>
-      <category>financial</category>
-      <category>encryption</category>
-      <category>data protection</category>
-      <category>future-proof</category>
+      <category>ক্রিপ্টোগ্রাফি</category>
+      <category>নিরাপত্তা</category>
+      <category>ব্যাংকিং</category>
+      <category>আর্থিক</category>
+      <category>এনক্রিপশন</category>
+      <category>ডেটা সুরক্ষা</category>
+      <category>ভবিষ্যৎ-নিশ্চিত</category>
     </item>
     <item>
       <title>Generative AI in 2023: How It Works, Where It Lands</title>
       <link>https://sebastienrousseau.com/bn/2023-11-12-exploring-generative-ai/</link>
-      <description>Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.</description>
+      <description>ট্রান্সফর্মার মডেল কীভাবে কাজ করে, ২০২৩ সালের কোন মডেলগুলো মানদণ্ড স্থাপন করেছে, আর্থিক পরিষেবায় জেনারেটিভ AI কোথায় প্রথমে আসছে এবং স্থাপনার আগে কী গভর্ন্যান্স প্রশ্নের উত্তর প্রয়োজন।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2023-11-12-exploring-generative-ai/</guid>
       <pubDate>Sun, 12 Nov 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
-      <category>Generative AI</category>
-      <category>technology</category>
-      <category>future</category>
-      <category>impact</category>
-      <category>ethics</category>
-      <category>synergies</category>
-      <category>innovation</category>
-      <category>creativity</category>
-      <category>transformation</category>
-      <category>evolution</category>
+      <category>জেনারেটিভ AI</category>
+      <category>বড় ভাষার মডেল</category>
+      <category>ট্রান্সফর্মার আর্কিটেকচার</category>
+      <category>GPT-4</category>
+      <category>আর্থিক পরিষেবায় AI</category>
+      <category>হ্যালুসিনেশন</category>
+      <category>রিট্রিভাল-অগমেন্টেড জেনারেশন</category>
+      <category>AI গভর্ন্যান্স</category>
+      <category>ফাউন্ডেশন মডেল</category>
+      <category>ফাইন-টিউনিং</category>
     </item>
     <item>
       <title>Mathematical and Cryptographic Constants for Rust Security</title>
       <link>https://sebastienrousseau.com/bn/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/</link>
-      <description>Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code security.</description>
+      <description>সুনিপুণভাবে যাচাইকৃত গাণিতিক ও ক্রিপ্টোগ্রাফিক কনস্ট্যান্ট দিয়ে কোড অখণ্ডতা সুরক্ষিত করুন, মেমরি ও কনকারেন্সি নিরাপত্তা শক্তিশালী করে উন্নত কোড সুরক্ষা নিশ্চিত করুন।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/</guid>
       <pubDate>Sun, 05 Nov 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp" type="image/webp" length="0"/>
-      <category>mathematical constants</category>
-      <category>cryptographic constants</category>
+      <category>গাণিতিক কনস্ট্যান্ট</category>
+      <category>ক্রিপ্টোগ্রাফিক কনস্ট্যান্ট</category>
       <category>Rust security</category>
-      <category>secure communication</category>
-      <category>encryption</category>
+      <category>নিরাপদ যোগাযোগ</category>
+      <category>এনক্রিপশন</category>
       <category>RSA</category>
       <category>elliptic curve cryptography</category>
       <category>Common (CMN) library</category>
-      <category>Rust applications</category>
-      <category>mathematical computations</category>
+      <category>Rust অ্যাপ্লিকেশন</category>
+      <category>গাণিতিক গণনা</category>
     </item>
     <item>
-      <title>Streamlining Rust Library Development with Code Generation</title>
+      <title>LibMake: Rust Library Scaffold Generator</title>
       <link>https://sebastienrousseau.com/bn/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/</link>
-      <description>Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort.</description>
+      <description>LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/</guid>
       <pubDate>Thu, 26 Oct 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
-      <category>Rust</category>
-      <category>library</category>
-      <category>development</category>
-      <category>code</category>
-      <category>generator</category>
-      <category>boilerplate</category>
-      <category>best</category>
-      <category>practices</category>
-      <category>quality</category>
-      <category>reliable</category>
+      <category>LibMake</category>
+      <category>Rust code generator</category>
+      <category>cargo scaffold</category>
+      <category>Rust library template</category>
+      <category>Tera templating</category>
+      <category>GitHub Actions Rust</category>
+      <category>cargo-audit</category>
+      <category>Rust API Guidelines</category>
+      <category>boilerplate generator</category>
+      <category>Rust CI workflow</category>
     </item>
     <item>
       <title>Protecting Data in the Quantum Age: The Hash Library (HSH)</title>
       <link>https://sebastienrousseau.com/bn/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/</link>
-      <description>HSH uses quantum-resistant cryptographic primitives to protect your data, ensuring its security even in the face of future quantum computing advances.</description>
+      <description>HSH কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফিক প্রিমিটিভ ব্যবহার করে আপনার ডেটা সুরক্ষিত রাখে, ভবিষ্যতের কোয়ান্টাম কম্পিউটিং অগ্রগতির মুখেও এর নিরাপত্তা নিশ্চিত করে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/</guid>
       <pubDate>Mon, 16 Oct 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp" type="image/webp" length="0"/>
-      <category>quantum-resistant cryptography</category>
-      <category>post-quantum cryptography</category>
-      <category>hash library</category>
+      <category>কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফি</category>
+      <category>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি</category>
+      <category>হ্যাশ লাইব্রেরি</category>
       <category>HSH</category>
-      <category>password hashing</category>
-      <category>key derivation</category>
+      <category>পাসওয়ার্ড হ্যাশিং</category>
+      <category>কী ডেরিভেশন</category>
       <category>Argon2i</category>
       <category>Bcrypt</category>
       <category>Scrypt</category>
-      <category>quantum computing</category>
+      <category>কোয়ান্টাম কম্পিউটিং</category>
     </item>
     <item>
       <title>Static Site Generator: Fastest Rust-Based SSG</title>
       <link>https://sebastienrousseau.com/bn/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/</link>
-      <description>Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control.</description>
+      <description>অসীম সম্ভাবনা, সীমাহীন স্কেলেবিলিটি এবং আপনার নিজের নিয়ন্ত্রণে একটি অনন্য ওয়েব উপস্থিতি সহ উচ্চ-প্রভাবশালী স্ট্যাটিক ওয়েবসাইট তৈরি করতে আপনাকে সক্ষম করছে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/</guid>
       <pubDate>Mon, 09 Oct 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" type="image/webp" length="0"/>
       <category>pain001</category>
       <category>iso 20022</category>
-      <category>payment automation</category>
-      <category>cost reduction</category>
-      <category>payment processing</category>
-      <category>payment files</category>
-      <category>payment initiation</category>
+      <category>পেমেন্ট অটোমেশন</category>
+      <category>খরচ হ্রাস</category>
+      <category>পেমেন্ট প্রসেসিং</category>
+      <category>পেমেন্ট ফাইল</category>
+      <category>পেমেন্ট ইনিশিয়েশন</category>
       <category>pain message</category>
       <category>pain message standards</category>
       <category>pain message validation</category>
     </item>
     <item>
-      <title>Automating ISO 20022 Payment Files Creation with Pain001</title>
+      <title>Automating ISO 20022 Payment Files Creation with pain001</title>
       <link>https://sebastienrousseau.com/bn/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/</link>
-      <description>Automate the creation of ISO 20022 pain.001 payment files from CSV or SQLite. pain001 is the open-source Python library that streamlines compliance.</description>
+      <description>pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/</guid>
       <pubDate>Fri, 29 Sep 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" type="image/webp" length="0"/>
       <category>pain001</category>
-      <category>iso 20022</category>
+      <category>ISO 20022</category>
+      <category>pain.001.001.09</category>
+      <category>CustomerCreditTransferInitiation</category>
+      <category>SEPA Credit Transfer</category>
+      <category>CBPR+</category>
       <category>payment automation</category>
-      <category>cost reduction</category>
-      <category>payment processing</category>
-      <category>payment files</category>
-      <category>payment initiation</category>
-      <category>pain message</category>
-      <category>pain message standards</category>
-      <category>pain message validation</category>
+      <category>XML generation</category>
+      <category>XSD validation</category>
+      <category>GrpHdr</category>
+      <category>PmtInf</category>
+      <category>CdtTrfTxInf</category>
+      <category>CtrlSum</category>
+      <category>SWIFT</category>
     </item>
     <item>
       <title>The making of the Express Transaction Credits Platform</title>
       <link>https://sebastienrousseau.com/bn/2018-02-15-the-making-of-the-express-transaction-credits-platform/</link>
-      <description>Developing a comprehensive framework for the next generation of Ethereum Request for Comment compliant tokens using the ERC-223 standard.</description>
+      <description>২০১৮ সালে Ethereum ERC-223-এ EXTC প্ল্যাটফর্ম নির্মাণের একটি গভীর প্রযুক্তিগত বিশ্লেষণ: টোকেন আর্কিটেকচার, মাল্টি-সিগ বিতরণ, টাইম-লকড ট্রান্সফার এবং জামানত-সমর্থিত তাৎক্ষণিক ঋণ।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2018-02-15-the-making-of-the-express-transaction-credits-platform/</guid>
       <pubDate>Thu, 15 Feb 2018 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
-      <category>mathematical constants</category>
-      <category>cryptographic constants</category>
-      <category>rust</category>
-      <category>cmn library</category>
-      <category>secure</category>
-      <category>reliable</category>
-      <category>accurate</category>
-      <category>portability</category>
-      <category>performance</category>
-      <category>documentation</category>
+      <category>EXTC প্ল্যাটফর্ম</category>
+      <category>ERC-223</category>
+      <category>Ethereum স্মার্ট কনট্র্যাক্ট</category>
+      <category>টোকেন আর্কিটেকচার</category>
+      <category>মাল্টি-সিগনেচার</category>
+      <category>টাইম-লকড ট্রান্সফার</category>
+      <category>blockchain পেমেন্ট</category>
+      <category>জামানত-সমর্থিত ঋণ</category>
+      <category>বিকেন্দ্রীভূত অর্থায়ন</category>
+      <category>২০১৮ ক্রিপ্টো</category>
     </item>
     <item>
       <title>Unveiling a new Cryptocurrency and Faster Payment Solution</title>
       <link>https://sebastienrousseau.com/bn/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/</link>
-      <description>A significant chapter in the evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and sustainable finance.</description>
+      <description>২০১৮ সালের শুরুতে EXTC প্ল্যাটফর্ম Ethereum ERC-223 স্মার্ট কন্ট্র্যাক্টের মাধ্যমে দ্রুত ক্রস-বর্ডার পেমেন্ট অন্বেষণ করেছিল — বিকেন্দ্রীভূত অর্থায়ন পরবর্তীতে যা নির্মাণ করেছে তার একটি প্রাথমিক নকশা।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/</guid>
       <pubDate>Sun, 04 Feb 2018 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" type="image/webp" length="0"/>
-      <category>pain001</category>
-      <category>iso 20022</category>
-      <category>payment automation</category>
-      <category>cost reduction</category>
-      <category>payment processing</category>
-      <category>payment files</category>
-      <category>payment initiation</category>
-      <category>pain message</category>
-      <category>pain message standards</category>
-      <category>pain message validation</category>
+      <category>EXTC</category>
+      <category>ERC-223</category>
+      <category>Ethereum স্মার্ট কন্ট্র্যাক্ট</category>
+      <category>দ্রুত পেমেন্ট</category>
+      <category>ক্রিপ্টোকারেন্সি</category>
+      <category>blockchain পেমেন্ট</category>
+      <category>পেমেন্ট টোকেন</category>
+      <category>বিকেন্দ্রীভূত অর্থায়ন</category>
+      <category>ERC-20</category>
+      <category>ক্রস-বর্ডার পেমেন্ট</category>
     </item>
     <item>
       <title>ERC-20: The Ethereum Token Interface That Changed the World</title>
       <link>https://sebastienrousseau.com/bn/2018-01-24-the-erc-20-token-standard/</link>
-      <description>ERC-20: The Ethereum Token ERC-20 is the most common type of token used on the Ethereum blockchain and is often referred to as a smart contract digital contract</description>
+      <description>ERC-20 হল Ethereum ব্লকচেইনে সর্বাধিক ব্যবহৃত টোকেন মান, যা স্মার্ট কন্ট্রাক্ট ডিজিটাল চুক্তি হিসেবে পরিচিত এবং ডিজিটাল সম্পদ লেনদেনকে সহজ করে তোলে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2018-01-24-the-erc-20-token-standard/</guid>
       <pubDate>Wed, 24 Jan 2018 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
@@ -1056,47 +1234,49 @@
       <category>ethereum</category>
       <category>erc20</category>
       <category>eip</category>
-      <category>tokens</category>
-      <category>contracts</category>
+      <category>টোকেন</category>
+      <category>কন্ট্রাক্ট</category>
       <category>blockchain</category>
-      <category>cryptocurrencies</category>
+      <category>ক্রিপ্টোকারেন্সি</category>
       <category>smart-token</category>
       <category>solidity</category>
     </item>
     <item>
       <title>Understanding the Technology behind Blockchain</title>
       <link>https://sebastienrousseau.com/bn/2018-01-09-understanding-the-technology-behind-blockchain/</link>
-      <description>Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation</description>
+      <description>blockchain কীভাবে কাজ করে তার একটি প্রযুক্তিগত পরিচিতি: ক্রিপ্টোগ্রাফিক হ্যাশ চেইন, Merkle ট্রি, বিতরণকৃত ঐকমত্য, এবং কীভাবে Ethereum-এর প্রোগ্রামযোগ্য স্তর একটি পেমেন্ট লেজারকে smart contracts ও টোকেনাইজড সম্পদের প্ল্যাটফর্মে রূপান্তরিত করেছে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2018-01-09-understanding-the-technology-behind-blockchain/</guid>
       <pubDate>Tue, 09 Jan 2018 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" type="image/webp" length="0"/>
-      <category>pain001</category>
-      <category>iso 20022</category>
-      <category>payment automation</category>
-      <category>cost reduction</category>
-      <category>payment processing</category>
-      <category>payment files</category>
-      <category>payment initiation</category>
-      <category>pain message</category>
-      <category>pain message standards</category>
-      <category>pain message validation</category>
+      <category>blockchain প্রযুক্তি</category>
+      <category>ক্রিপ্টোগ্রাফিক হ্যাশ</category>
+      <category>Merkle ট্রি</category>
+      <category>বিতরণকৃত ঐকমত্য</category>
+      <category>proof of work</category>
+      <category>Ethereum</category>
+      <category>smart contracts</category>
+      <category>EVM</category>
+      <category>Solidity</category>
+      <category>ERC-20</category>
+      <category>বিতরণকৃত লেজার</category>
+      <category>বিকেন্দ্রীভূত অর্থায়ন</category>
     </item>
     <item>
       <title>Blockchain explained, the technology that matters the most</title>
       <link>https://sebastienrousseau.com/bn/2018-01-02-blockchain-the-technology-that-matters-in-2018/</link>
-      <description>A story of the extraordinary journey of securing digital transactions through Private-key Cryptography and Peer-to-peer (P2P) networks.</description>
+      <description>ব্যক্তিগত-কী ক্রিপ্টোগ্রাফি এবং পিয়ার-টু-পিয়ার (P2P) নেটওয়ার্কের মাধ্যমে ডিজিটাল লেনদেন সুরক্ষিত করার অসাধারণ যাত্রার একটি গল্প।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2018-01-02-blockchain-the-technology-that-matters-in-2018/</guid>
       <pubDate>Tue, 02 Jan 2018 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp" type="image/webp" length="0"/>
       <category>pain001</category>
       <category>iso 20022</category>
-      <category>payment automation</category>
-      <category>cost reduction</category>
-      <category>payment processing</category>
-      <category>payment files</category>
-      <category>payment initiation</category>
+      <category>পেমেন্ট অটোমেশন</category>
+      <category>খরচ হ্রাস</category>
+      <category>পেমেন্ট প্রসেসিং</category>
+      <category>পেমেন্ট ফাইল</category>
+      <category>পেমেন্ট ইনিশিয়েশন</category>
       <category>pain message</category>
       <category>pain message standards</category>
       <category>pain message validation</category>
@@ -1104,7 +1284,7 @@
     <item>
       <title>Bitcoin: A Year In Review of the First Cryptocurrency</title>
       <link>https://sebastienrousseau.com/bn/2018-01-01-bitcoin-the-year-in-review/</link>
-      <description>Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online.</description>
+      <description>Bitcoin: একটি পিয়ার-টু-পিয়ার ইলেকট্রনিক ক্যাশ সিস্টেম (P2P ECS) যা মানুষের অনলাইন লেনদেনের পদ্ধতিকে বৈপ্লবিকভাবে পরিবর্তন করার সম্ভাবনা রাখে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2018-01-01-bitcoin-the-year-in-review/</guid>
       <pubDate>Mon, 01 Jan 2018 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
@@ -1112,13 +1292,13 @@
       <category>bitcoin</category>
       <category>cryptocurrency</category>
       <category>blockchain</category>
-      <category>decentralized finance</category>
-      <category>digital currency</category>
-      <category>peer-to-peer payments</category>
-      <category>digital gold</category>
-      <category>programmable money</category>
-      <category>future of money</category>
-      <category>financial revolution</category>
+      <category>বিকেন্দ্রীভূত অর্থায়ন</category>
+      <category>ডিজিটাল মুদ্রা</category>
+      <category>পিয়ার-টু-পিয়ার পেমেন্ট</category>
+      <category>ডিজিটাল গোল্ড</category>
+      <category>প্রোগ্রামযোগ্য অর্থ</category>
+      <category>অর্থের ভবিষ্যৎ</category>
+      <category>আর্থিক বিপ্লব</category>
     </item>
   </channel>
 </rss>

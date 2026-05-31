@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
-  "locale": "nl_NL",
-  "subtitle": "Het algoritme van Shor zou al met 10.000 qubits kunnen draaien — en wat dat betekent",
-  "language": "nl-NL",
-  "description": "Een nieuw paper suggereert dat het algoritme van Shor al met slechts 10.000 qubits zou kunnen draaien. De drempel voor cryptografisch relevante kwantumcomputing daalt snel.",
-  "date": "April 11, 2026",
   "title": "Kwantumdrempels verschuiven opnieuw",
   "banner_alt": "Visualisatie van de evolutie van kwantumdrempels",
-  "keywords": "Shor algoritme, kwantumcomputing, post-kwantumcryptografie, beveiliging, qubits"
+  "description": "Een nieuw paper suggereert dat het algoritme van Shor al met slechts 10.000 qubits zou kunnen draaien. De drempel voor cryptografisch relevante kwantumcomputing daalt snel.",
+  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
+  "language": "nl-NL",
+  "subtitle": "Het algoritme van Shor zou al met 10.000 qubits kunnen draaien — en wat dat betekent",
+  "keywords": "Shor algoritme, kwantumcomputing, post-kwantumcryptografie, beveiliging, qubits",
+  "date": "April 11, 2026",
+  "locale": "nl_NL"
 }

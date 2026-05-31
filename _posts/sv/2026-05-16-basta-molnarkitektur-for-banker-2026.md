@@ -49,7 +49,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/sv/2026-05-16-basta-molnarkitektur-for-banker-2026/rss.xml"
-category: "Technology"
+category: "Finance"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "2026 års ritning för molnarkitektur — sex grundpelare, agentisk enhetsekonomi, multi-agent HPC-realiteter, det kontinuerliga treasury-imperativet, MCP-säkerhetskrisen, kryptografisk agentidentitet, algoritmisk kontaminering och CloudCDN som en öppen referensimplementering för edge-agent-krisen."

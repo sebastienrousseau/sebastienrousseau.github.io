@@ -1,11 +1,11 @@
 {
-  "description": "A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algorithm, to Protect Your Data from Quantum Threats and Cryptanalytic Attacks.",
-  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
-  "banner_alt": "Empowering Secure Communications in the Quantum Era with KyberLib",
-  "locale": "id_ID",
-  "subtitle": "KyberLib, a robust Rust implementation of CRYSTALS-Kyber for the quantum era.",
-  "title": "[ID DRAFT] KyberLib: Rust CRYSTALS-Kyber for Post-Quantum",
+  "description": "Implementasi kriptografi CRYSTALS-Kyber yang andal dan tahan-kuantum, untuk melindungi data Anda dari ancaman komputasi kuantum dan serangan kriptanalitik.",
   "language": "id-ID",
+  "subtitle": "KyberLib, implementasi Rust yang tangguh dari CRYSTALS-Kyber untuk era kuantum.",
+  "banner_alt": "Memperkuat Komunikasi Aman di Era Kuantum dengan KyberLib",
+  "title": "[ID DRAFT] KyberLib: Rust CRYSTALS-Kyber for Post-Quantum",
+  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
   "date": "Nov 28, 2023",
-  "keywords": "KyberLib, Rust CRYSTALS-Kyber, post-quantum cryptography, lattice-based cryptography, quantum-resistant key exchange, NIST FIPS 203, Sebastien Rousseau, KEM, payment authentication, PQC library"
+  "keywords": "KyberLib, Rust CRYSTALS-Kyber, kriptografi pasca-kuantum, kriptografi berbasis kisi, pertukaran kunci tahan-kuantum, NIST FIPS 203, Sebastien Rousseau, KEM, autentikasi pembayaran, PQC library",
+  "locale": "id_ID"
 }

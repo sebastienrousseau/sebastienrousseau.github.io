@@ -49,7 +49,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/zh-hant/2026-05-16-2026-zuijia-yun-jichu-jiagou-tw/rss.xml"
-category: "Technology"
+category: "Finance"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "2026 年雲端架構藍圖 — 六大基礎支柱、代理式單位經濟、多代理 HPC 現況、持續性財務管理的迫切性、MCP 資安危機、密碼學代理身分、演算法傳染,以及作為邊緣代理危機開源參考實作的 CloudCDN。"

@@ -1,11 +1,11 @@
 {
-  "locale": "tr_TR",
-  "banner_alt": "Kafes tabanlı kriptografinin görselleştirmesi",
+  "title": "Kuantum algoritması kafes tabanlı kriptografiye meydan okuyor",
   "date": "April 15, 2024",
-  "description": "Yilei Chen tarafından öne sürülen yeni bir kuantum algoritması, Learning with Errors problemini hedefliyor — kafes tabanlı kriptografi için meydan okuma.",
+  "subtitle": "Yeni bir kuantum algoritması LWE problemini hedefliyor",
   "language": "tr-TR",
   "keywords": "kuantum, kafes tabanlı, kriptografi, LWE, post-kuantum, Yilei Chen, araştırma",
+  "locale": "tr_TR",
   "banner": "https://cloudcdn.pro/stocks/images/digitale-constellation.webp",
-  "subtitle": "Yeni bir kuantum algoritması LWE problemini hedefliyor",
-  "title": "Kuantum algoritması kafes tabanlı kriptografiye meydan okuyor"
+  "banner_alt": "Kafes tabanlı kriptografinin görselleştirmesi",
+  "description": "Yilei Chen tarafından öne sürülen yeni bir kuantum algoritması, Learning with Errors problemini hedefliyor — kafes tabanlı kriptografi için meydan okuma."
 }

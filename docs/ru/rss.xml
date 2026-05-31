@@ -6,8 +6,167 @@
     <description>Статьи на русском языке: прикладной ИИ, платежи ISO 20022, постквантовая криптография и трансформация оптовых платежей.</description>
     <atom:link href="https://sebastienrousseau.com/ru/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ru-RU</language>
-    <lastBuildDate>Fri, 22 May 2026 21:38:56 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 14:48:09 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Все права защищены.</copyright>
+    <item>
+      <title>Цифровые активы в 2026: инфраструктурный переход, который банки не могут откладывать</title>
+      <link>https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>Цифровые активы перестали быть ставкой на инновацию. Это вопрос архитектуры расчётов, хранения и баланса. Стратегическая задача банков — проектировать инфраструктуру в условиях структурной неопределённости.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Sat, 30 May 2026 14:48:09 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>цифровые активы 2026</category>
+      <category>токенизированные реальные активы</category>
+      <category>стейблкоины банки</category>
+      <category>токенизированные депозиты</category>
+      <category>кастоди цифровых активов</category>
+      <category>DLT в банках</category>
+      <category>инфраструктура расчётов</category>
+      <category>мобильность обеспечения</category>
+      <category>программируемые деньги</category>
+      <category>стратегия банка по цифровым активам</category>
+    </item>
+    <item>
+      <title>Оптовые цифровые рынки Великобритании: токенизированные гилты, расчёт и новая роль координатора</title>
+      <link>https://sebastienrousseau.com/ru/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
+      <description>Роль координатора оптовых цифровых рынков Великобритании превращает токенизированные оптовые финансы в национальный проект конкурентоспособности.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>оптовые цифровые рынки Великобритании 2026</category>
+      <category>Chris Woolard</category>
+      <category>токенизированные гилты</category>
+      <category>токенизированные оптовые финансы</category>
+      <category>координатор цифровых рынков</category>
+      <category>токенизация UK</category>
+      <category>расчёт</category>
+    </item>
+    <item>
+      <title>ISO 20022 после миграции: платёжные данные как банковские продукты в 2026</title>
+      <link>https://sebastienrousseau.com/ru/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 после миграции — это возможность для продуктов данных. Структурированные адреса, коды назначения, реквизиты счетов, сообщения расследований и статусные события становятся продуктами сверки, фрода, ликвидности и комплаенса.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>структурированный адрес</category>
+      <category>CBPR+</category>
+      <category>продукты платёжных данных</category>
+      <category>коды назначения</category>
+      <category>корпоративное казначейство</category>
+      <category>сверка</category>
+      <category>санкционный скрининг</category>
+      <category>обнаружение мошенничества</category>
+      <category>pacs.008</category>
+      <category>pain.001</category>
+      <category>SWIFT gpi</category>
+      <category>SEPA Instant</category>
+      <category>FedNow</category>
+    </item>
+    <item>
+      <title>DORA, Закон ЕС об ИИ и суверенитет данных: стек комплаенса банков 2026 года</title>
+      <link>https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
+      <description>DORA, EU AI Act, GDPR, риск концентрации в облаке и суверенитет данных сходятся в единый стек комплаенса банков 2026 года — архитектурный выбор.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>DORA 2026</category>
+      <category>EU AI Act 2026</category>
+      <category>суверенитет данных банки</category>
+      <category>операционная устойчивость</category>
+      <category>риск концентрации в облаке</category>
+      <category>комплаенс ИИ в финансах</category>
+      <category>ИИ высокого риска</category>
+    </item>
+    <item>
+      <title>ИИ как операционная система платежей: мошенничество, маршрутизация, устойчивость и комплаенс в 2026</title>
+      <link>https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</link>
+      <description>В 2026 году ИИ становится операционной системой платежей: от аналитики к предотвращению мошенничества, восстановлению платежей, маршрутизации, прогнозу ликвидности, проверкам комплаенса и контролю агентной коммерции.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
+      <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
+      <category>ИИ в платежах 2026</category>
+      <category>мошенничество в платежах</category>
+      <category>маршрутизация платежей</category>
+      <category>предотвращение мошенничества в реальном времени</category>
+      <category>ISO 20022 и ИИ</category>
+      <category>устойчивость платежей</category>
+      <category>анализ транзакций</category>
+      <category>прогноз денежных потоков</category>
+    </item>
+    <item>
+      <title>Magnifica Humanitas: прочтение первой папской энциклики об ИИ</title>
+      <link>https://sebastienrousseau.com/ru/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</link>
+      <description>25 мая 2026 Папа Лев XIV выпустил Magnifica Humanitas — первую папскую энциклику об ИИ. Инженерное прочтение: концентрация власти, постквантовая эпоха, надежда.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
+      <category>Magnifica Humanitas</category>
+      <category>Папа Лев XIV</category>
+      <category>энциклика об ИИ</category>
+      <category>этика искусственного интеллекта</category>
+      <category>этика квантовых вычислений</category>
+      <category>Rerum Novarum</category>
+      <category>Вавилонская башня</category>
+      <category>технология никогда не нейтральна</category>
+      <category>трансгуманизм</category>
+      <category>постгуманизм</category>
+      <category>человеческое достоинство</category>
+      <category>технологическая парадигма</category>
+      <category>поезд автомобиль ядерная энергия интернет</category>
+      <category>моральная паника история технологий</category>
+      <category>Lucy передача знаний</category>
+      <category>надежда ИИ</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+      <category>Anthropic</category>
+      <category>Sebastien Rousseau</category>
+    </item>
+    <item>
+      <title>Стейблкоины и токенизированные депозиты 2026: что банкам реально защищать</title>
+      <link>https://sebastienrousseau.com/ru/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</link>
+      <description>Стейблкоины и токенизированные депозиты сходятся вокруг программируемого расчёта, но их модели баланса, юридических требований, ликвидности и доверия остаются разными.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</guid>
+      <pubDate>Tue, 26 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>стейблкоины 2026</category>
+      <category>токенизированные депозиты</category>
+      <category>банковские депозиты</category>
+      <category>GENIUS Act</category>
+      <category>MiCA</category>
+      <category>депозитные токены</category>
+      <category>резервы стейблкоинов</category>
+      <category>фондирование банков</category>
+      <category>цифровые деньги</category>
+      <category>программируемый расчёт</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>Программируемая ликвидность 2026: ИИ, токенизированные депозиты, казначейство</title>
+      <link>https://sebastienrousseau.com/ru/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</link>
+      <description>Программируемая ликвидность 2026 объединяет ИИ-прогноз, токенизированные депозиты, каналы в реальном времени, виртуальные счета, стейблкоины и TMS в единый слой оркестрации оборотного капитала.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</guid>
+      <pubDate>Mon, 25 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>программируемая ликвидность 2026</category>
+      <category>оркестрация казначейства</category>
+      <category>ИИ в казначействе</category>
+      <category>токенизированные депозиты</category>
+      <category>ликвидность в реальном времени</category>
+      <category>стейблкоины</category>
+      <category>мультиканальные платежи</category>
+      <category>виртуальные счета</category>
+      <category>транзакционный банкинг</category>
+      <category>мобильность обеспечения</category>
+    </item>
     <item>
       <title>UK Payments Forward Plan 2026: стейблкоины, открытый банкинг, токенизированные депозиты</title>
       <link>https://sebastienrousseau.com/ru/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>
@@ -84,51 +243,51 @@
       <category>джазовые концерты в Лондоне</category>
     </item>
     <item>
-      <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+      <title>Токенизированные депозиты в 2026 году: банковские услуги, конкуренция со стейблкоинами и состояние программируемых денег коммерческих банков</title>
       <link>https://sebastienrousseau.com/ru/2026-05-21-tokenised-deposits-banking-services-status-2026/</link>
-      <description>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</description>
+      <description>В 2026 году токенизированные депозиты переходят от исследований к пилотам банков. Коммерческие банковские деньги адаптируются для программируемых расчётов, цифровых кошельков, совместимости со стейблкоинами и токенизированных рынков капитала.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-21-tokenised-deposits-banking-services-status-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" type="image/webp" length="0"/>
-      <category>tokenised deposits 2026</category>
+      <category>токенизированные депозиты 2026</category>
       <category>tokenized deposits banking</category>
       <category>deposit tokens</category>
       <category>Great British Tokenised Deposits</category>
       <category>Lloyds digital assets</category>
       <category>stablecoins</category>
-      <category>commercial bank money</category>
+      <category>коммерческие банковские деньги</category>
       <category>BIS stablecoins</category>
       <category>Project Agora</category>
       <category>unified ledger</category>
       <category>Deutsche Bank digital money</category>
       <category>CBDC</category>
-      <category>tokenised money</category>
-      <category>digital wallets</category>
+      <category>токенизированные деньги</category>
+      <category>цифровые кошельки</category>
       <category>tokenised gilts</category>
     </item>
     <item>
-      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <title>Облачно-нативный банкинг в 2026 году: Kubernetes, DORA, суверенитет и конец водораздела между VM и контейнерами</title>
       <link>https://sebastienrousseau.com/ru/2026-05-20-cloud-native-banking-financial-institutions-2026/</link>
-      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <description>Облачно-нативный банкинг в 2026 году охватывает платформенную инженерию на Kubernetes, операционную устойчивость DORA, конвергенцию VM и контейнеров, облачный суверенитет и переносимость данных.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-20-cloud-native-banking-financial-institutions-2026/</guid>
       <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
-      <category>cloud native banking 2026</category>
-      <category>Kubernetes banks</category>
-      <category>financial institutions cloud</category>
+      <category>облачно-нативный банкинг 2026</category>
+      <category>Kubernetes банки</category>
+      <category>финансовые институты облако</category>
       <category>DORA 2026</category>
-      <category>cloud resilience</category>
+      <category>облачная устойчивость</category>
       <category>Red Hat OpenShift</category>
       <category>Portworx</category>
-      <category>VM container coexistence</category>
-      <category>bank cloud sovereignty</category>
-      <category>financial services cloud dependency</category>
-      <category>operational resilience</category>
-      <category>disaster recovery</category>
-      <category>cloud exit strategy</category>
-      <category>AI banking workloads</category>
+      <category>сосуществование VM контейнер</category>
+      <category>облачный суверенитет банков</category>
+      <category>зависимость финансовых услуг от облака</category>
+      <category>операционная устойчивость</category>
+      <category>аварийное восстановление</category>
+      <category>стратегия выхода из облака</category>
+      <category>рабочие нагрузки AI в банкинге</category>
     </item>
     <item>
       <title>Оптовые платежи в мире в 2026 году: ISO 20022, обновление RTGS и экономика интероперабельности</title>

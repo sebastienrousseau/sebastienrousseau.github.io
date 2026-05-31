@@ -1,13 +1,13 @@
 ---
 title: "[ID DRAFT] Blockchain explained, the technology that matters the most"
-subtitle: "Blockchain, distributed ledgers, and the technology that matters in 2018."
-description: "A story of the extraordinary journey of securing digital transactions through Private-key Cryptography and Peer-to-peer (P2P) networks."
+subtitle: "Blockchain, buku besar terdistribusi, dan teknologi yang paling penting di tahun 2018."
+description: "Kisah perjalanan luar biasa dalam mengamankan transaksi digital melalui Private-key Cryptography dan jaringan Peer-to-peer (P2P)."
 date: "Jan 02, 2018"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp"
-banner_alt: "Turned off laptop computer on top of brown wooden table"
-keywords: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
+banner_alt: "Laptop yang dimatikan di atas meja kayu berwarna cokelat"
+keywords: "pain001, iso 20022, otomasi pembayaran, pengurangan biaya, pemrosesan pembayaran, file pembayaran, inisiasi pembayaran, pain message, pain message standards, pain message validation"
 ---
 
 ![Turned off laptop computer on top of brown wooden table](https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"img-fluid clearfix\"

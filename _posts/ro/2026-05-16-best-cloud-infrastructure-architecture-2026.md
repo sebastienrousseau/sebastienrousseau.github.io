@@ -49,7 +49,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - Front matter pentru fluxul RSS (YAML).
 atom_link: "https://sebastienrousseau.com/ro/2026-05-16-best-cloud-infrastructure-architecture-2026/rss.xml"
-category: "Tehnologie"
+category: "Finance"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Planul arhitecturii cloud pentru 2026 — șase piloni fundamentali, economia unitară agentică, realitățile HPC multi-agent, imperativul trezoreriei continue, criza de securitate MCP, identitatea criptografică a agenților, contagiunea algoritmică și CloudCDN ca implementare de referință open-source pentru criza edge-agent."

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Fri, 29 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Fri, 29 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>ISO 20022 移行後:決済データを 2026 年の銀行プロダクトに変える — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="ISO 20022 移行後は決済データ・プロダクトの好機です。構造化アドレス、目的コード、請求明細、調査メッセージ、リッチな決済ステータスが照合、不正、流動性、コンプライアンス、分析プロダクトに進化します。">
+<meta name="keywords" content="ISO 20022 2026, 構造化アドレス, CBPR+, 決済データ・プロダクト, 目的コード, コーポレート・トレジャリー, 照合, 制裁スクリーニング, 不正検知, pacs.008, pain.001, SWIFT gpi">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ISO 20022 Data">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-1QTzhu0IQem7QmMGRdEN85+efczXJINRLwRiCRLZ7Us=' 'sha256-4atB82U+4p7K+IGFbHWwJSo4fNUyeCdRmkBPKcMbb1k=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-HO8txFtbBJHVXSo1kdvHZNnSw5YrZWJQiDoZvxARZOw=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-N86zX+QLaWlBhr1rEzcoMA3EBubVtl8+fSVgwqiYBaw=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/ja/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom フィード" href="/ja/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="ISO 20022 移行後:決済データを 2026 年の銀行プロダクトに変える — Sebastien Rousseau">
+<meta property="og:description" content="ISO 20022 移行後は決済データ・プロダクトの好機です。構造化アドレス、目的コード、請求明細、調査メッセージ、リッチな決済ステータスが照合、不正、流動性、コンプライアンス、分析プロダクトに進化します。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/ja/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ISO 20022 移行後:決済データを 2026 年の銀行プロダクトに変える — Sebastien Rousseau">
+<meta name="twitter:description" content="ISO 20022 移行後は決済データ・プロダクトの好機です。構造化アドレス、目的コード、請求明細、調査メッセージ、リッチな決済ステータスが照合、不正、流動性、コンプライアンス、分析プロダクトに進化します。">
+<meta name="twitter:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80">
+<link rel="canonical" href="https://sebastienrousseau.com/ja/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">メインコンテンツへスキップ</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="ナビゲーションを切り替える" />
+      <div class="wrap">
+        <a class="ap-brand" href="/ja/index.html" aria-label="Sebastien Rousseau ホーム">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="メインナビゲーション">
+          <ul class="ap-menu">
+            <li><a href="/ja/nitsuite/index.html">私について</a></li>
+            <li><a href="/ja/kiji/index.html" aria-current="page" class="active">記事</a></li>
+            <li><a href="/ja/ronbun/index.html">論文</a></li>
+            <li><a href="/ja/toppikku/index.html">トピック</a></li>
+            <li><a href="/ja/purojekuto/index.html">プロジェクト</a></li>
+            <li><a href="/ja/pureirisuto/index.html">プレイリスト</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="ダークテーマに切り替える" aria-pressed="false" title="テーマを切り替える">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="検索 (Cmd または Ctrl + K)" title="検索 (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="言語">
+            <button type="button" class="ap-lang-toggle" aria-label="JA、言語を変更" aria-expanded="false" aria-haspopup="menu" title="言語を変更">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">JA</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/ja/otoiawase/index.html" aria-label="お問い合わせ">お問い合わせ ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="ナビゲーションを切り替える">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>ISO 20022 移行後:決済データを 2026 年の銀行プロダクトに変える</h1>
+      <p class="sub">ISO 20022 の真の果実はメッセージ準拠ではありません。構造化された決済データを、顧客が対価を払い、運用チームが自動化できる銀行プロダクトに変えることです。</p>
+    <nav class="article-tags" aria-label="トピック"><a href="/tags/index.html#h3-iso-20022-2026" class="article-tag" rel="tag">ISO 20022 2026</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">構造化アドレス</a><a href="/tags/index.html#h3-cbpr" class="article-tag" rel="tag">CBPR+</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">決済データ・プロダクト</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">目的コード</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">コーポレート・トレジャリー</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">照合</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">制裁スクリーニング</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">不正検知</a><a href="/tags/index.html#h3-pacs-008" class="article-tag" rel="tag">pacs.008</a><a href="/tags/index.html#h3-pain-001" class="article-tag" rel="tag">pain.001</a><a href="/tags/index.html#h3-swift-gpi" class="article-tag" rel="tag">SWIFT gpi</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-29T06:06:06+00:00" class="meta-pub">公開日 29 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="想定読了時間">1 分で読了</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>目次</h2><ol><li><a href="#2026">2026 年が戦略転換点である理由</a></li><li><a href="#2026-2">2026 年アーキテクチャ・ベースライン</a></li><li><a href="#section-8">戦略アーキテクチャ表</a></li><li><a href="#section-9">銀行類型別の意味</a></li><li><a href="#section-14">結論</a></li><li><a href="#section-15">よくある質問</a></li><li><a href="#section-16">参考文献</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> ISO 20022 移行後は決済データ・プロダクトの好機です。構造化アドレス、目的コード、請求明細、調査メッセージ、リッチな決済ステータスが照合、不正、流動性、コンプライアンス、分析プロダクトに進化します。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>2026 年が戦略転換点である理由.</strong> 業界は採用期を抜けました。レールに参加する、メッセージを移行する、AI の PoC を実施する、トークン化のパイロットを発表するだけではもはや十分ではありません。2026 年に戦略的優位を生むのは、これらの能力を実際のワークフローに対してオーケストレーションし、そのワークフローがより安全、より速い、より安価、よりレジリエント、または顧客にとってより有用であることを実証することです。.</li>  <li><strong>2026 年アーキテクチャ・ベースライン.</strong> 銀行はまず摩擦から着手すべきです — 滞留する流動性、決済遅延、照合コスト、決済失敗、不正エクスポージャー、弱い監査可能性、貧弱な顧客体験。技術は、その摩擦を取り除く場合にのみ正当化されます(Kyriba)。.</li>  <li><strong>戦略アーキテクチャ表.</strong> グローバル銀行は、各市場、レール、トークン、AI 能力が別個のオペレーティング・モデルにならないよう、プラットフォーム水準のオーケストレーションを構築すべきです。.</li>  <li><strong>銀行類型別の意味.</strong> グローバル銀行は、各市場、レール、トークン、AI 能力が別個のオペレーティング・モデルにならないよう、プラットフォーム水準のオーケストレーションを構築すべきです。.</li></ul></aside><h1>ISO 20022 移行後:決済データを 2026 年の銀行プロダクトに変える</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>ISO 20022 移行後は決済データ・プロダクトの好機です。構造化アドレス、目的コード、請求明細、調査メッセージ、より豊かな決済ステータス・イベントは、照合、不正、流動性、コンプライアンス、分析の各プロダクトに進化します。2026 年のシグナルは、決済データ・プロダクトがイノベーションの演出から銀行のオペレーティング・モデルへと移行したことです。そこでの決定的な問いは設計の規律 — どのデータ、レール、統制、責任、顧客ワークフローを束ねるかです(<a href="https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/" title="ISO 20022 migration">Kyriba</a>)。</p>
+<hr />
+<blockquote>
+<p><strong>エグゼクティブ・サマリー / 主な要点</strong></p>
+<ul>
+<li>**決済データ・プロダクトは戦略テーマである。**本テーマは個別のプロダクト・ローンチではなく、オペレーティング・モデル、レジリエンス、顧客価値、規制エビデンスに直結します(<a href="https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/" title="ISO 20022 migration">Kyriba</a>)。</li>
+<li>**設計原理はデータ成熟度である。**銀行には、ポリシー、プロダクト、データ、レール選択、リスク統制、測定可能な経済性を接続するアーキテクチャが必要です(<a href="https://www.montran.com/resources/44-of-banks-will-miss-the-next-iso-20022-deadline-and-compliance-isnt-the-real-risk/" title="44% of Banks Will Miss the Next ISO 20022 Deadline">Montran</a>)。</li>
+<li>**統制モデルはリアルタイムであるべき。**不正、流動性、コンプライアンス、決済、オペレーショナル・リスクの判断は、事後ではなくワークフローの速度で実行されなければなりません。</li>
+<li>**データ品質が商業的優位になる。**構造化データ、取引コンテキスト、監査ログ、本人確認シグナルは、自動化と顧客向けプロダクトの基盤になります。</li>
+<li>**断片化が敵である。**レール、トークン、モデル、コンプライアンス要件ごとに孤立したパイロットを建てる銀行は、将来のオペレーショナル・リスクを生み出します。</li>
+<li>**勝者のモデルはオーケストレーションである。**各ワークフローをルーティング、ガバナンス、価格付け、エビデンス化、説明できる機関が、単に別のツールを採用する機関を上回ります(<a href="https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026" title="Payments Outlook: Five Trends Powering Payments in 2026">J.P. Morgan</a>)。</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="2026">2026 年が戦略転換点である理由 <a class="heading-anchor" href="#2026" aria-label="リンク先 2026 年が戦略転換点である理由">#</a></h2>
+<p>業界は採用期を抜けました。レールに参加する、メッセージを移行する、AI の PoC を実施する、トークン化のパイロットを発表するだけではもはや十分ではありません。2026 年に戦略的優位を生むのは、これらの能力を実際のワークフローに対してオーケストレーションし、そのワークフローがより安全、より速い、より安価、よりレジリエント、または顧客にとってより有用であることを実証することです。</p>
+<p>決済データ・プロダクトが取締役会の議題になった理由はそこにあります。同じ圧力が繰り返し現れます — よりリッチな決済データ、リアルタイム決済、トークン化マネー、AI による意思決定、オープン・バンキング、オペレーショナル・レジリエンス、クラウド集中、強化された規制エビデンス。個別に扱えばプログラム膨張を生み、ひとつのアーキテクチャとして扱えばオペレーティング・レバレッジを生みます(<a href="https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/" title="ISO 20022 migration">Kyriba</a>、<a href="https://www.montran.com/resources/44-of-banks-will-miss-the-next-iso-20022-deadline-and-compliance-isnt-the-real-risk/" title="44% of Banks Will Miss the Next ISO 20022 Deadline">Montran</a>)。</p>
+<h2 id="2026-2">2026 年アーキテクチャ・ベースライン <a class="heading-anchor" href="#2026-2" aria-label="リンク先 2026 年アーキテクチャ・ベースライン">#</a></h2>
+<h3 id="1">1. ワークフロー優先、技術は後 <a class="heading-anchor" href="#1" aria-label="リンク先 1. ワークフロー優先、技術は後">#</a></h3>
+<p>銀行はまず摩擦から着手すべきです — 滞留する流動性、決済遅延、照合コスト、決済失敗、不正エクスポージャー、弱い監査可能性、貧弱な顧客体験。技術は、その摩擦を取り除く場合にのみ正当化されます(<a href="https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/" title="ISO 20022 migration">Kyriba</a>)。</p>
+<h3 id="2">2. データを統制プレーンに <a class="heading-anchor" href="#2" aria-label="リンク先 2. データを統制プレーンに">#</a></h3>
+<p>構造化され、ガバナンスされ、トレース可能なデータが基盤です。使えるデータがなければ自動化は脆く、コンプライアンスは手作業のままです。使えるデータがあれば、銀行はルーティング・インテリジェンス、リアルタイム統制、顧客向け分析を生み出せます(<a href="https://www.montran.com/resources/44-of-banks-will-miss-the-next-iso-20022-deadline-and-compliance-isnt-the-real-risk/" title="44% of Banks Will Miss the Next ISO 20022 Deadline">Montran</a>)。</p>
+<h3 id="3">3. レールとプラットフォームを横断するオーケストレーション <a class="heading-anchor" href="#3" aria-label="リンク先 3. レールとプラットフォームを横断するオーケストレーション">#</a></h3>
+<p>アーキテクチャは、複数のレール、プロバイダ、本人確認方式、リスク・シグナル、決済資産を支える必要があります。ルーティング判断は、コスト、速度、ファイナリティ、管轄、顧客選好、レジリエンス、データの豊富さに基づいて下されるべきです。</p>
+<h3 id="4">4. 埋め込みコンプライアンスとエビデンス <a class="heading-anchor" href="#4" aria-label="リンク先 4. 埋め込みコンプライアンスとエビデンス">#</a></h3>
+<p>コンプライアンス・モデルはワークフローにネイティブでなければなりません。ポリシー・アズ・コード、自動化された監査ログ、オペレーショナル・レジリエンスのエビデンス、同意記録、モデル・ガバナンスは、後から監査人向けに再現するのではなく、実行の一部として生成される必要があります。</p>
+<h3 id="5">5. ユニット・エコノミクスと顧客価値 <a class="heading-anchor" href="#5" aria-label="リンク先 5. ユニット・エコノミクスと顧客価値">#</a></h3>
+<p>すべての施策には商業的価値のエビデンスが必要です。決済あたりコスト、意思決定あたりコスト、調査あたりコスト、節約された流動性、回避された手作業の修復、削減された不正損失、顧客採用が、拡張判断を決めるべきです。</p>
+<h2 id="section-8">戦略アーキテクチャ表 <a class="heading-anchor" href="#section-8" aria-label="リンク先 戦略アーキテクチャ表">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>層</th>
+<th>2026 年の方向性</th>
+<th>銀行の好機</th>
+<th>失敗時のリスク</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ワークフロー層</strong></td>
+<td>顧客の痛点がプロダクトを定義</td>
+<td>明確な事業性と採用</td>
+<td>利用者不在の技術主導パイロット</td>
+</tr>
+<tr>
+<td><strong>データ層</strong></td>
+<td>構造化・ガバナンスされた取引・統制データ</td>
+<td>自動化、分析、監査可能性</td>
+<td>不良データの高速移送</td>
+</tr>
+<tr>
+<td><strong>レール層</strong></td>
+<td>カード、A2A、RTGS、ステーブルコイン、預金、API、DLT 横断のルーティング</td>
+<td>コスト、速度、ファイナリティの最適化</td>
+<td>チャネル膨張と統制重複</td>
+</tr>
+<tr>
+<td><strong>統制層</strong></td>
+<td>リアルタイムのポリシー、不正、制裁、レジリエンス、本人確認、同意</td>
+<td>実行速度でのリスク管理</td>
+<td>事後の手作業コンプライアンス</td>
+</tr>
+<tr>
+<td><strong>経済性層</strong></td>
+<td>測定されたユニット・コストと顧客価値</td>
+<td>エビデンス主導の拡張</td>
+<td>持続的リターンなきイノベーション支出</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-9">銀行類型別の意味 <a class="heading-anchor" href="#section-9" aria-label="リンク先 銀行類型別の意味">#</a></h2>
+<h3 id="section-10">グローバル銀行 <a class="heading-anchor" href="#section-10" aria-label="リンク先 グローバル銀行">#</a></h3>
+<p>グローバル銀行は、各市場、レール、トークン、AI 能力が別個のオペレーティング・モデルにならないよう、プラットフォーム水準のオーケストレーションを構築すべきです。</p>
+<h3 id="section-11">地域銀行 <a class="heading-anchor" href="#section-11" aria-label="リンク先 地域銀行">#</a></h3>
+<p>地域銀行は、信頼、地元市場の知見、よりシンプルな統合が規模に勝るユースケース — トレジャリー可視化、不正防止、オープン・バンキング決済、規制対象デジタル・マネー・サービス — に集中すべきです。</p>
+<h3 id="psp">フィンテックと PSP <a class="heading-anchor" href="#psp" aria-label="リンク先 フィンテックと PSP">#</a></h3>
+<p>フィンテックは、もうひとつの孤立したレールを足すのではなく、銀行の複雑性を減らすべきです。最良の提案は、オーケストレーション、コンプライアンス・エビデンス、データ・インテリジェンスをもたらします。</p>
+<h3 id="section-13">コーポレート・トレジャラー <a class="heading-anchor" href="#section-13" aria-label="リンク先 コーポレート・トレジャラー">#</a></h3>
+<p>トレジャラーは測定可能な改善を要求すべきです — 決済修復の減少、流動性可視性の向上、よりリッチな照合データ、より速い決済、自動化された意思決定に対するより強い統制。</p>
+<h2 id="section-14">結論 <a class="heading-anchor" href="#section-14" aria-label="リンク先 結論">#</a></h2>
+<p>ISO 20022 移行後とは、突き詰めればアーキテクチャの問いです。勝利する機関は、最も多くのパイロットを抱える機関でも、最も大声でイノベーションを語る機関でもありません。顧客ワークフロー、データ品質、レール・オーケストレーション、埋め込みコンプライアンス、ユニット・エコノミクスを、首尾一貫したオペレーティング・モデルに接続できる機関です。</p>
+<h2 id="section-15">よくある質問 <a class="heading-anchor" href="#section-15" aria-label="リンク先 よくある質問">#</a></h2>
+<p><strong>なぜこのテーマは 2026 年に緊急なのか?</strong></p>
+<p>関連するインフラ、規制、顧客需要のシグナルが収斂したためです。かつては任意の実験であったものが、いまや銀行のオペレーティング・モデルの一部になりつつあります。</p>
+<p><strong>最大の実装リスクは何か?</strong></p>
+<p>最大のリスクは断片化です — 別々のチームが、異なるデータ、統制、ガバナンス、経済性をもつ別々のパイロットを構築することです。</p>
+<p><strong>銀行は最初に何を構築すべきか?</strong></p>
+<p>銀行は、測定可能な価値があるワークフローから着手すべきです。たとえば、より速い決済、より低い照合コスト、より少ない調査メッセージ、改善された不正防止、より良い流動性可視性などです。</p>
+<p><strong>成功はどのように測定されるべきか?</strong></p>
+<p>成功は、ユニット・エコノミクス、レジリエンスのエビデンス、データ品質、顧客採用、オペレーショナル・リスクの削減、流動性または運転資本の改善によって測定されるべきです。</p>
+<h2 id="section-16">参考文献 <a class="heading-anchor" href="#section-16" aria-label="リンク先 参考文献">#</a></h2>
+<ul>
+<li>Kyriba, (2026). <a href="https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/" title="ISO 20022 migration">ISO 20022 migration ⧉</a>.</li>
+<li>Montran, (2026). <a href="https://www.montran.com/resources/44-of-banks-will-miss-the-next-iso-20022-deadline-and-compliance-isnt-the-real-risk/" title="ISO 20022 deadline">44% of Banks Will Miss the Next ISO 20022 Deadline ⧉</a>.</li>
+<li>J.P. Morgan, (2026). <a href="https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026" title="Payments Outlook">Payments Outlook: Five Trends Powering Payments in 2026 ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">最終確認 <time datetime="2026-05-29">2026-05-29</time>。</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="著者について"><img alt="Sebastien Rousseau の肖像" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/ja/nitsuite/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">シニア・バンキング・テクノロジスト。応用AI、ISO 20022 への移行、金融サービス向けポスト量子暗号、ホールセール決済の構造変革について執筆しています。</span><span class="author-credentials">HSBC コマーシャル・アンド・インベストメント・バンク、PayPal、Barclays、Shazam、AKQA、Virgin Group にて 20 年以上の経験。 <a href="/ja/nitsuite/index.html">プロフィール全文</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最終確認日 <time datetime="2026-05-30">2026-05-30</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">関連記事</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/ja/2026-05-12-iso-20022-pacs008-kouzouka-juusho-kigen" class="related-media" aria-label="2026 年 11 月の pacs.008 構造化アドレス期限" tabindex="-1"><img alt="ISO 20022 pacs.008 structured address diagram — cross-border payment message fields with TwnNm and Ctry highlighted" src="https://cloudcdn.pro/api/transform?url=/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-11-pacs-008"><a href="https://sebastienrousseau.com/ja/2026-05-12-iso-20022-pacs008-kouzouka-juusho-kigen">2026 年 11 月の pacs.008 構造化アドレス期限</a> <a class="heading-anchor" href="#2026-11-pacs-008" aria-label="リンク先 2026 年 11 月の pacs.008 構造化アドレス期限">#</a></h3><p><time datetime="2026-05-12">2026-05-12</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ja/2026-05-19-global-wholesale-payments-economics-2026" class="related-media" aria-label="2026年のグローバル・ホールセール決済：ISO 20022、RTGS刷新、そして相互運用性の経済学" tabindex="-1"><img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/api/transform?url=/stocks/images/meiying-ng-OrwkD-iWgqg.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-iso-20022rtgs"><a href="https://sebastienrousseau.com/ja/2026-05-19-global-wholesale-payments-economics-2026">2026年のグローバル・ホールセール決済：ISO 20022、RTGS刷新、そして相互運用性の経済学</a> <a class="heading-anchor" href="#2026-iso-20022rtgs" aria-label="リンク先 2026年のグローバル・ホールセール決済：ISO 20022、RTGS刷新、そして相互運用性の経済学">#</a></h3><p><time datetime="2026-05-19">2026-05-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026" class="related-media" aria-label="決済のオペレーティングシステムとしての AI: 2026 年の不正、ルーティング、レジリエンス、コンプライアンス" tabindex="-1"><img alt="AI payments operating system diagram showing fraud scoring, multi-rail routing, liquidity forecasting, ISO 20022 data, compliance screening, and exception repair" src="https://cloudcdn.pro/api/transform?url=/stocks/images/circuit_board_cityscape.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-2026"><a href="https://sebastienrousseau.com/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026">決済のオペレーティングシステムとしての AI: 2026 年の不正、ルーティング、レジリエンス、コンプライアンス</a> <a class="heading-anchor" href="#ai-2026" aria-label="リンク先 決済のオペレーティングシステムとしての AI: 2026 年の不正、ルーティング、レジリエンス、コンプライアンス">#</a></h3><p><time datetime="2026-05-27">2026-05-27</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">出典・参考文献</h2><ol class="article-sources-list"><li><a href="https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026" rel="external noopener nofollow"><span class="source-host">www.jpmorgan.com</span><span class="source-path">/insights/payments/trends-innovation/payments-outlook-trends-2026</span></a></li></ol></aside><nav class="post-pagination" aria-label="記事ページネーション"><a class="post-pagination-prev" href="/ja/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"><span class="post-pagination-label">前へ</span><span class="post-pagination-title">Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay</span></a><a class="post-pagination-next" href="/ja/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"><span class="post-pagination-label">次へ</span><span class="post-pagination-title">Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/ja/nitsuite/index.html">私について</a></li>
+              <li><a href="/ja/otoiawase/index.html">お問い合わせ</a></li>
+              <li><a href="/ja/sutaitikku-saito-jenereta-de-sakusei/index.html">Static Site Generator で作成</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">記事</h2>
+            <ul>
+              <li><a href="/ja/kiji/index.html">記事</a></li>
+              <li><a href="/ja/ronbun/index.html">論文</a></li>
+              <li><a href="/ja/tagu/index.html">タグ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">活動</h2>
+            <ul>
+              <li><a href="/ja/purojekuto/index.html">プロジェクト</a></li>
+              <li><a href="/ja/pureirisuto/index.html">プレイリスト</a></li>
+              <li><a href="/ja/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">連絡先</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="ニュースレター登録">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — 決済、AI、ポスト量子暗号に関するリサーチノート。スパムは送りません。</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="anata@ginkou.com" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">登録する</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="ソーシャルリンク">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau の Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau の Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau の LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau の LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau の Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau の Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau の YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau の YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/ja/akusesibiriti/index.html">アクセシビリティ</a> ·
+            <a href="/ja/puraibashi/index.html">プライバシー</a> ·
+            <a href="/ja/riyou-kiyaku/index.html">利用規約</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ja"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ja"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":169,"about":{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]},"mentions":[{"@type":"Thing","name":"SWIFT gpi","sameAs":"https://www.swift.com/our-solutions/swift-gpi"}],"headline":"ISO 20022 移行後:決済データを 2026 年の銀行プロダクトに変える","description":"ISO 20022 移行後は決済データ・プロダクトの好機です。構造化アドレス、目的コード、請求明細、調査メッセージ、リッチな決済ステータスが照合、不正、流動性、コンプライアンス、分析プロダクトに進化します。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80","width":"100vw","height":"100vh","caption":"構造化アドレス、目的コード、照合、不正検知、流動性予測、制裁スクリーニング、分析プロダクトを示す ISO 20022 決済データ・プロダクト図"},"url":"https://sebastienrousseau.com/ja/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/","datePublished":"2026-05-29T06:06:06+00:00","dateModified":"2026-05-29","inLanguage":"ja","keywords":"ISO 20022 2026, 構造化アドレス, CBPR+, 決済データ・プロダクト, 目的コード, コーポレート・トレジャリー, 照合, 制裁スクリーニング, 不正検知, pacs.008, pain.001, SWIFT gpi","articleSection":"Finance","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ja/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ja"},"citation":[{"@type":"CreativeWork","url":"https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ja/"},{"@type":"ListItem","position":3,"name":"ISO 20022 移行後:決済データを 2026 年の銀行プロダクトに変える","item":"https://sebastienrousseau.com/ja/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="検索">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>検索</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="検索">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="ドキュメントを検索..." autocomplete="off" aria-label="検索"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> 閉じる</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 移動</span><span><kbd>Enter</kbd> 開く</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"ISO 20022 移行後:決済データを 2026 年の銀行プロダクトに変える","url":"https://sebastienrousseau.com/ja/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/","inLanguage":"ja-JP","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"ISO 20022 2026, 構造化アドレス, CBPR+, 決済データ・プロダクト, 目的コード, コーポレート・トレジャリー, 照合, 制裁スクリーニング, 不正検知, pacs.008, pain.001, SWIFT gpi","dependencies":["ISO 20022","ISO 20022 pain.001","ISO 20022 pacs.008","SWIFT gpi"]}</script></body>
+</html>

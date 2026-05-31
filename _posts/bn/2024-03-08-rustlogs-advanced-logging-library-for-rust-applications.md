@@ -1,13 +1,13 @@
 ---
 title: "RustLogs (RLG): Structured Logging Library for Rust"
-subtitle: "Streamline Your Rust Logging Workflow"
-description: "Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. "
+subtitle: "আপনার Rust লগিং ওয়ার্কফ্লো সহজতর করুন"
+description: "RustLogs (RLG) আবিষ্কার করুন — Rust-এর জন্য নমনীয় লগিং লাইব্রেরি, যা স্ট্রাকচার্ড লগ ফরম্যাট, অ্যাসিঙ্ক্রোনাস লগিং এবং ব্যাপক কাস্টমাইজেশন বিকল্প সরবরাহ করে।"
 date: "Mar 08, 2024"
 language: "bn-BD"
 locale: "bn_BD"
 banner: "https://cloudcdn.pro/stocks/images/rustlogs.webp"
-banner_alt: "Banner for RustLogs (RLG)"
-keywords: "Rust logging library, asynchronous Rust logging, structured log formats, Rust application debugging, customisable logging Rust, Rust development tools, RustLogs RLG features, efficient Rust logging, RustLogs integration, RustLogs documentation"
+banner_alt: "RustLogs (RLG)-এর জন্য ব্যানার"
+keywords: "Rust লগিং লাইব্রেরি, অ্যাসিঙ্ক্রোনাস Rust লগিং, স্ট্রাকচার্ড লগ ফরম্যাট, Rust অ্যাপ্লিকেশন ডিবাগিং, কাস্টমাইজযোগ্য Rust লগিং, Rust ডেভেলপমেন্ট টুলস, RustLogs RLG ফিচার, দক্ষ Rust লগিং, RustLogs ইন্টিগ্রেশন, RustLogs ডকুমেন্টেশন"
 ---
 
 ![Banner for RustLogs (RLG)](https://cloudcdn.pro/stocks/images/rustlogs.webp).class="img-fluid clearfix"

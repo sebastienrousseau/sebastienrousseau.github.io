@@ -1,13 +1,13 @@
 ---
 title: "Alien Studio: My Tech-to Art Journey in Photography"
-subtitle: "The Beginnings of a Technological Odyssey"
-description: "Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio."
+subtitle: "Farkon Tafiya Mai Zurfi ta Fasaha ta Zamani"
+description: "Ku tare da ni a tafiyata ta sirri daga Rust, AI, da Quantum Computing zuwa sake fasalin fasaha da daukar hoto ta Alien Studio."
 date: "Jan 15, 2024"
 language: "ha-NG"
 locale: "ha_NG"
 banner: "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp"
-banner_alt: "Sunset's muse, a serene glance; beauty in stillness"
-keywords: "personal tech journey, Rust discovery, AI exploration, Quantum Computing, art and photography fusion, Alien Studio, digital art creation, technology in art, innovative photography, artistic rediscovery"
+banner_alt: "Wahayin faɗuwar rana, kallon nutsuwa; kyau a cikin shiru"
+keywords: "tafiyar fasaha ta sirri, binciken Rust, binciken AI, Quantum Computing, haɗin fasaha da daukar hoto, Alien Studio, ƙirƙirar fasahar dijital, fasaha a cikin zane-zane, daukar hoto mai ƙirƙira, sake binciken fasaha"
 ---
 
 ![Sunset's muse, a serene glance; beauty in stillness](https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp).class="img-fluid clearfix"

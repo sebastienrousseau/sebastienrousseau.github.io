@@ -1,13 +1,13 @@
 ---
 title: "[ID DRAFT] EU's AI Act: Pioneering Ethical AI Regulation Worldwide"
-subtitle: "Navigating the Future of AI with the EU's Groundbreaking Legal Framework"
-description: "The EU AI Act sets the first comprehensive framework for ethical, risk-tiered AI regulation worldwide. What changes for banks, vendors and high-risk systems."
+subtitle: "Menavigasi Masa Depan AI dengan Kerangka Hukum Revolusioner dari EU"
+description: "EU AI Act menetapkan kerangka komprehensif pertama untuk regulasi AI yang etis dan berlapis risiko di seluruh dunia. Apa yang berubah bagi bank, vendor, dan sistem berisiko tinggi."
 date: "Feb 13, 2024"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp"
-banner_alt: "A person sitting on black bench reading newspaper"
-keywords: "EU AI Act, Artificial Intelligence regulation, Ethical AI framework, AI risk management, AI innovation, AI transparency, AI consumer rights, AI governance, AI standards, AI ethics"
+banner_alt: "Seseorang duduk di bangku hitam membaca koran"
+keywords: "EU AI Act, regulasi Artificial Intelligence, kerangka AI etis, manajemen risiko AI, inovasi AI, transparansi AI, hak konsumen AI, tata kelola AI, standar AI, etika AI"
 ---
 
 ![A person sitting on black bench reading newspaper](https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp).class=\"img-fluid clearfix\"

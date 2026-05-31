@@ -1,13 +1,13 @@
 ---
 title: "Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance"
-subtitle: "Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026 and the BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate — it is whether the migration can be completed before the shelf-life of today's data expires."
-description: "Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026, the EU, UK, and ASD timelines clarified, and the BIS Project Leap proving feasibility at the central-bank level, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today's data expires."
+subtitle: "Ewu kúántọ̀mù ti gbéra láti ìdánilẹ́kọ̀ọ́ sí àṣẹ ìlànà tó ṣiṣẹ́. Ìlànà G7 2026 àti BIS Project Leap nínú àwọn ètò ìsanwó fi hàn pé ìbéèrè fún àwọn ìgbìmọ̀ kò sí mọ́ bóyá kí wọn ṣí kiri, bí kò ṣe bóyá wọn lè parí ṣáájú tí àwọn dátà òde òní bà jẹ́."
+description: "Ewu kúántọ̀mù ti di àṣẹ ìlànà tó ṣiṣẹ́. Ìlànà G7 2026 àti BIS Project Leap fi hàn pé ìbéèrè kò sí mọ́ bóyá kí a ṣí kiri si PQC, bí kò ṣe bóyá a lè parí ṣáájú tí dátà òde òní wó lulẹ̀."
 date: "May 14, 2026"
 language: "yo-NG"
 locale: "yo_NG"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
-banner_alt: "Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA"
-keywords: "post-quantum cryptography, PQC migration, corporate banking, financial services, G7 CEG roadmap, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204"
+banner_alt: "Àwòrán ìlànà ṣíkiri sí ìsọfúnni lẹ́yìn-kúántọ̀mù — àkóso ilé-ifowopamọ́ tó ń yí padà láti RSA sí ML-KEM àti ML-DSA"
+keywords: "ìsọfúnni lẹ́yìn-kúántọ̀mù, ṣíkiri PQC, corporate banking, iṣẹ́ owó, ìlànà G7 CEG, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204"
 ---
 
 ![Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA](https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp).class="img-fluid clearfix"

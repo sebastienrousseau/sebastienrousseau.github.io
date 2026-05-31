@@ -49,7 +49,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/bn/2026-05-16-best-cloud-infrastructure-architecture-2026/rss.xml"
-category: "Technology"
+category: "Finance"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "২০২৬ সালের ক্লাউড আর্কিটেকচার ব্লুপ্রিন্ট — ছয়টি মৌলিক স্তম্ভ, এজেন্টিক ইউনিট অর্থনীতি, মাল্টি-এজেন্ট HPC বাস্তবতা, ক্রমাগত-ট্রেজারি অপরিহার্যতা, MCP নিরাপত্তা সংকট, ক্রিপ্টোগ্রাফিক এজেন্ট পরিচয়, অ্যালগরিদমিক সংক্রমণ, এবং এজ-এজেন্ট সংকটের জন্য একটি ওপেন-সোর্স রেফারেন্স বাস্তবায়ন হিসাবে CloudCDN।"
@@ -70,7 +70,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Cloud Architecture 2026"
+apple-mobile-web-app-title: "ক্লাউড আর্কিটেকচার ২০২৬"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).

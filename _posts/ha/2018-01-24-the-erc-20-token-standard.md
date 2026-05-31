@@ -1,13 +1,13 @@
 ---
 title: "ERC-20: The Ethereum Token Interface That Changed the World"
-subtitle: "ERC-20 tokens, Ethereum smart contracts and the standardisation of digital assets."
-description: "ERC-20: The Ethereum Token ERC-20 is the most common type of token used on the Ethereum blockchain and is often referred to as a smart contract digital contract"
+subtitle: "Alamomin ERC-20, kwangilar smart na Ethereum da daidaitaccen kadarorin dijital."
+description: "ERC-20 shine mafi yawan nau'in token da ake amfani da shi a blockchain na Ethereum, wanda kuma ana kiransa kwangilar dijital ta smart contract."
 date: "Jan 24, 2018"
 language: "ha-NG"
 locale: "ha_NG"
 banner: "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
-banner_alt: "Turned off laptop computer on top of brown wooden table"
-keywords: "ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, solidity"
+banner_alt: "Kwamfutar laptop da aka kashe da aka ajiye a saman teburin itace mai launin ruwan kasa"
+keywords: "ethereum, erc20, eip, tokens, kwantoci, blockchain, kuɗaɗen dijital, smart-token, solidity"
 ---
 
 ![Turned off laptop computer on top of brown wooden table](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class="img-fluid clearfix"

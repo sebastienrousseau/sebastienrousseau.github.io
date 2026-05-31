@@ -49,7 +49,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/id/2026-05-16-arsitektur-infrastruktur-cloud-terbaik-untuk-bank-2026/rss.xml"
-category: "Teknologi"
+category: "Finance"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Cetak biru arsitektur cloud 2026 — enam pilar fondasi, ekonomi unit agentic, realitas HPC multi-agen, imperatif continuous-treasury, krisis keamanan MCP, identitas agen kriptografis, algorithmic contagion, serta CloudCDN sebagai implementasi referensi sumber terbuka untuk krisis edge-agent."

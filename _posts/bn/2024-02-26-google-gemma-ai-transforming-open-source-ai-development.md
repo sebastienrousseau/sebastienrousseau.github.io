@@ -1,13 +1,13 @@
 ---
 title: "Google Gemma AI: Transforming Open-Source AI Development"
-subtitle: "An Inside Look at Capabilities, Open Source Contributions, and What's Ahead"
-description: "Explore Google's Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use."
+subtitle: "সক্ষমতা, ওপেন সোর্স অবদান এবং ভবিষ্যৎ পরিকল্পনার অন্তরঙ্গ পর্যালোচনা"
+description: "গুগলের Gemma AI মডেল আবিষ্কার করুন: একটি ওপেন-সোর্স প্রকল্প যা ব্যক্তিগত ও এন্টারপ্রাইজ উভয় ব্যবহারের জন্য নৈতিক AI সমাধান প্রদান করে।"
 date: "Feb 26, 2024"
 language: "bn-BD"
 locale: "bn_BD"
 banner: "https://cloudcdn.pro/stocks/images/ai-ship.webp"
-banner_alt: "Futuristic blue spaceship with neon lights"
-keywords: "Google Gemma AI, open-source AI model, Gemma technical architecture, Gemma 2B 7B, ethical AI, AI integration macOS, AI enterprise solutions, conversational AI, data analysis AI, AI for edge devices"
+banner_alt: "নিয়ন আলো সহ ভবিষ্যত্মুখী নীল মহাকাশযান"
+keywords: "Google Gemma AI, ওপেন-সোর্স AI মডেল, Gemma প্রযুক্তি আর্কিটেকচার, Gemma 2B 7B, নৈতিক AI, macOS AI ইন্টিগ্রেশন, AI এন্টারপ্রাইজ সমাধান, কথোপকথনমূলক AI, ডেটা বিশ্লেষণ AI, এজ ডিভাইসের জন্য AI"
 ---
 
 ![Futuristic blue spaceship with neon lights](https://cloudcdn.pro/stocks/images/ai-ship.webp).class="img-fluid clearfix"

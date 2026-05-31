@@ -1,13 +1,13 @@
 ---
 title: "[UK DRAFT] AI-Powered Speech Analysis, Translation, & Insight Tool"
-subtitle: "Revolutionising audio data processing with Azure AI Platform"
-description: "Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conversion, text analysis, and translations for actionable insights."
+subtitle: "Революція в обробці аудіоданих за допомогою Azure AI Platform"
+description: "Дізнайтеся, як Audio Analyser на базі Azure AI перетворює розпізнавання мовлення, аналіз тексту та переклади на практичні аналітичні дані."
 date: "Jan 29, 2024"
 language: "uk-UA"
 locale: "uk_UA"
 banner: "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp"
-banner_alt: "A minimalist, modern corporate office"
-keywords: "audio analyser, azure ai, speech-to-text, audio data analysis, text analysis, ai translations, audio insights, automated transcription, audio data processing, machine learning"
+banner_alt: "Мінімалістичний сучасний корпоративний офіс"
+keywords: "аудіо аналізатор, azure ai, speech-to-text, аналіз аудіоданих, аналіз тексту, переклади ai, аудіо insights, автоматична транскрипція, обробка аудіоданих, machine learning"
 ---
 
 ![A minimalist, modern corporate office](https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp).class=\"img-fluid clearfix\"

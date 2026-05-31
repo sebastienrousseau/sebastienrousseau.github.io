@@ -105,21 +105,117 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html" title="The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments">
-<img alt="UK payments modernisation diagram showing stablecoins, tokenised deposits, open banking, AI agents, FCA regulation, PSR consolidation, and wholesale digital markets" src="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html" title="Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role">
+<img alt="UK wholesale digital markets diagram showing tokenised gilts, settlement, digital assets, tokenised deposits, regulatory coordination, and capital markets infrastructure" src="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Uk Payments · Payments Forward Plan · Stablecoins</span>
-<h3><a href="/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html" title="The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments">The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-24">May 24, 2026</time> · Sebastien Rousseau</p>
-<p>The UK Payments Forward Plan and April 2026 policy package set out a single framework for traditional payments, stablecoins, tokenised deposits, open banking, and agentic payments. The strategic question for banks is design discipline: which data, rails, controls, liabilities, and client workflows belong together — and</p>
-<p><a class="pill ghost" href="/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html" title="The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments">Read the full story</a></p>
+<span class="newsroom-eyebrow">Digital Securities Sandbox · Tokenised Gilts · Atomic Dvp</span>
+<h3><a href="/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html" title="Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role">Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-30">May 30, 2026</time> · Sebastien Rousseau</p>
+<p>The UK Wholesale Digital Markets Champion role makes tokenised gilts, DLT-based settlement, and digital wholesale finance a national competitiveness project. The 2026 strategic question for banks is design discipline — which tokenised assets sit on which platform, how settlement risk is evidenced, and how to defend the</p>
+<p><a class="pill ghost" href="/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html" title="Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html" title="ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026">
+<img alt="ISO 20022 payment data product diagram showing structured addresses, purpose codes, reconciliation, fraud detection, liquidity forecasting, sanctions screening, and analytics products" src="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Iso 20022 · Structured Address · Cbpr+</span>
+<h3><a href="/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html" title="ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026">ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-29">May 29, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">ISO 20022 after migration is not a project closeout — it's the start of a data-product opportunity. Structured addresses, purpose codes, invoice details, and rich status events become reconciliation, fraud, liquidity, and compliance products. The 2026 question is design discipline: which payment data carries which clie</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html" title="DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks">
+<img alt="Compliance stack diagram showing DORA resilience, EU AI Act transparency, data sovereignty, cloud concentration risk, audit logs, model governance, and third-party providers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Dora · Eu Ai Act · Data Sovereignty</span>
+<h3><a href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html" title="DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-28">May 28, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">DORA, the EU AI Act, GDPR, cloud concentration risk, and data sovereignty converge into one 2026 compliance stack for banks. The strategic question is design discipline — running compliance, AI governance, ICT-resilience evidence, and sovereign-data choices as one architecture, not five parallel programmes.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/index.html" title="Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay">
+<img alt="Digital asset infrastructure diagram showing tokenised real-world assets, stablecoins, tokenised deposits, custody, settlement, collateral mobility, and bank platform layers" src="https://cloudcdn.pro/stocks/images/corporate-finance.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Digital Assets · Tokenisation · Stablecoins</span>
+<h3><a href="/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/index.html" title="Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay">Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-28">May 28, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Digital assets are no longer an innovation bet. They are a settlement, custody, and balance-sheet architecture question. Crypto is a ~$3 trillion asset class, stablecoins have reached ~$300 billion, and tokenised real-world assets grew ~300% in 2025. The strategic task for banks in 2026 is not whether to engage but how</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html" title="AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026">
+<img alt="AI payments operating system diagram showing fraud scoring, multi-rail routing, liquidity forecasting, ISO 20022 data, compliance screening, and exception repair" src="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Ai Payments · Fraud Prevention · Routing</span>
+<h3><a href="/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html" title="AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026">AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-27">May 27, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">The 2026 AI operating system for payments wires fraud, routing, resilience, and compliance into a single workflow-speed decisioning layer. The strategic question for banks is design discipline — which AI controls run real time on which workflow — not which point tool to pilot.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html" title="Stablecoins vs Tokenised Deposits in 2026: What Banks Actually Need to Defend">
+<img alt="Comparison diagram showing stablecoins, tokenised deposits, commercial bank money, reserve assets, wallets, settlement, liquidity, and bank balance sheets" src="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Stablecoins · Tokenised Deposits · Bank Strategy</span>
+<h3><a href="/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html" title="Stablecoins vs Tokenised Deposits in 2026: What Banks Actually Need to Defend">Stablecoins vs Tokenised Deposits in 2026: What Banks Actually Need to Defend</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-26">May 26, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Stablecoins and tokenised deposits converge around programmable settlement but diverge on balance-sheet, legal, liquidity, and trust models. The 2026 strategic question for banks is design discipline — which money model carries which client workflow — and how to defend deposit franchise, settlement role, and regulated </p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html" title="Magnifica Humanitas: An AI-Industry Reading of the First Papal Encyclical on Artificial Intelligence">
+<img alt="Long-exposure photograph of light trails forming a path through darkness toward a luminous horizon, used as the visual key for an AI-ethics reading of the Magnifica Humanitas encyclical" src="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Magnifica Humanitas · Pope Leo Xiv · Ai Ethics</span>
+<h3><a href="/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html" title="Magnifica Humanitas: An AI-Industry Reading of the First Papal Encyclical on Artificial Intelligence">Magnifica Humanitas: An AI-Industry Reading of the First Papal Encyclical on Artificial Intelligence</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-26">May 26, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">On 25 May 2026, Pope Leo XIV released Magnifica Humanitas — the first papal encyclical on artificial intelligence. Read from inside the technology industry, not as doctrine but as an ethical framework, it echoes every moral anxiety that accompanied the train, the automobile, nuclear power, and the internet, and lands o</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html" title="Programmable Liquidity in 2026: AI, Tokenised Deposits, and Real-Time Treasury Orchestration">
+<img alt="Programmable liquidity architecture diagram showing treasury systems, AI forecasting, tokenised deposits, real-time rails, stablecoins, virtual accounts, FX, and collateral mobility" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Programmable Liquidity · Ai Treasury · Tokenised Deposits</span>
+<h3><a href="/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html" title="Programmable Liquidity in 2026: AI, Tokenised Deposits, and Real-Time Treasury Orchestration">Programmable Liquidity in 2026: AI, Tokenised Deposits, and Real-Time Treasury Orchestration</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-25">May 25, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Programmable liquidity in 2026 connects AI forecasting, tokenised deposits, real-time rails, virtual accounts, stablecoins, and TMS into one orchestration layer for working capital. The strategic question for banks is design discipline: which data, rails, controls, liabilities, and client workflows belong together — an</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html" title="The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments">
+<img alt="UK payments modernisation diagram showing stablecoins, tokenised deposits, open banking, AI agents, FCA regulation, PSR consolidation, and wholesale digital markets" src="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Uk Payments · Payments Forward Plan · Stablecoins</span>
+<h3><a href="/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html" title="The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments">The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-24">May 24, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">The UK Payments Forward Plan and April 2026 policy package set out a single framework for traditional payments, stablecoins, tokenised deposits, open banking, and agentic payments. The strategic question for banks is design discipline: which data, rails, controls, liabilities, and client workflows belong together — and</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html" title="Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026">

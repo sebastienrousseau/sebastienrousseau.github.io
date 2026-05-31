@@ -1,13 +1,13 @@
 ---
 title: "Protecting Data in the Quantum Age: The Hash Library (HSH)"
-subtitle: "HSH: a quantum-resistant hash library for the post-quantum era of authentication."
-description: "HSH uses quantum-resistant cryptographic primitives to protect your data, ensuring its security even in the face of future quantum computing advances."
+subtitle: "HSH: ikawe hash ti o tako quantum fun akoko post-quantum ti ijẹrisi idanimọ."
+description: "HSH nlo awọn ipilẹ cryptographic ti o tako quantum lati daabobo data rẹ, ni idaniloju aabo rẹ paapaa ni oju awọn ilọsiwaju iṣiro quantum ti ọjọ iwaju."
 date: "Oct 16, 2023"
 language: "yo-NG"
 locale: "yo_NG"
 banner: "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp"
-banner_alt: "A creative illustration on Quantum computing theme"
-keywords: "quantum-resistant cryptography, post-quantum cryptography, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, quantum computing"
+banner_alt: "Àwòrán ìmọ̀ẹ̀dá lórí àkóónú iṣiro quantum"
+keywords: "cryptography ti o tako quantum, post-quantum cryptography, ikawe hash, HSH, hashing ọrọ aṣínà, iyọrisi bọtini, Argon2i, Bcrypt, Scrypt, iṣiro quantum"
 ---
 
 ![A creative illustration on Quantum computing theme](https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp).class="img-fluid clearfix"

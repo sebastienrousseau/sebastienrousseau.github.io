@@ -1,13 +1,13 @@
 ---
 title: "[UK DRAFT] Àkàndé: GPT-Powered Voice Assistant for Executives"
-subtitle: "Empowering Seamless Interactions with Cutting-Edge AI Technology"
-description: "Discover how Àkàndé leverages OpenAI GPT's natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance."
+subtitle: "Забезпечення безперебійної взаємодії за допомогою передових технологій штучного інтелекту"
+description: "Дізнайтесь, як Àkàndé використовує розуміння природної мови OpenAI GPT, резюме PDF та ефективне кешування, щоб переосмислити особисту й виконавчу допомогу."
 date: "Feb 12, 2024"
 language: "uk-UA"
 locale: "uk_UA"
 banner: "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp"
-banner_alt: "A white, spherical modern device"
-keywords: "Àkàndé, Voice Assistant, Natural Language Understanding, PDF Summaries, Efficient Caching, OpenAI GPT, Executive Assistance, Personal Assistance, Digital Assistants, Technology Innovation"
+banner_alt: "Сучасний сферичний пристрій білого кольору"
+keywords: "Àkàndé, Голосовий асистент, Розуміння природної мови, Резюме PDF, Ефективне кешування, OpenAI GPT, Виконавча допомога, Особиста допомога, Цифрові асистенти, Технологічні інновації"
 ---
 
 ![A white, spherical modern device](https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp).class=\"img-fluid clearfix\"

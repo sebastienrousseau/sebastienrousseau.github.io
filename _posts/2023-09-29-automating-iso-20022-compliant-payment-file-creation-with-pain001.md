@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Sep 29, 2023"
-description: "Automate the creation of ISO 20022 pain.001 payment files from CSV or SQLite. pain001 is the open-source Python library that streamlines compliance."
+description: "pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -22,7 +22,7 @@ image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
-keywords: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
+keywords: "pain001, ISO 20022, pain.001.001.09, CustomerCreditTransferInitiation, SEPA Credit Transfer, CBPR+, payment automation, XML generation, XSD validation, GrpHdr, PmtInf, CdtTrfTxInf, CtrlSum, SWIFT"
 language: "en-GB"
 layout: "report"
 locale: "en_GB"
@@ -39,23 +39,33 @@ referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "ISO 20022 payment automation and wholesale-payments engineering with pain001."
-tags: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
+subtitle: "Generating ISO 20022 pain.001.001.09 XML from CSV or SQLite with automatic XSD validation"
+tags: "pain001, ISO20022, pain001001009, CustomerCreditTransferInitiation, SEPACreditTransfer, CBPR, PaymentAutomation, XMLGeneration, XSDValidation, SWIFT"
 theme-color: "0, 67, 165"
-title: "Automating ISO 20022 Payment Files Creation with Pain001"
+title: "Automating ISO 20022 Payment Files Creation with pain001"
 url: "https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
+# News - The News SiteMap front matter (YAML).
+news_genres: "Blog"
+news_keywords: "pain001, ISO 20022, pain.001.001.09, CustomerCreditTransferInitiation, SEPA Credit Transfer, CBPR+, payment automation, XSD validation, CtrlSum, SWIFT"
+news_language: "en"
+news_image_loc: "https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp"
+news_loc: "https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"
+news_publication_date: "Fri, 29 Sep 2023 08:57:00 +0000"
+news_publication_name: "sebastienrousseau.com"
+news_title: "Automating ISO 20022 Payment Files Creation with pain001"
+
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/rss.xml"
-category: "Technology"
+category: "Payments"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "Streamlining the creation and compliance of ISO20022 Payment Messages for cross-border payments and reporting."
+item_description: "pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats."
 item_guid: "https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/rss.xml"
 item_link: "https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/rss.xml"
 item_pub_date: "Fri, 29 Sep 2023 08:57:00 +0000"
-item_title: "Automating ISO 20022 Payment Files Creation with Pain001"
+item_title: "Automating ISO 20022 Payment Files Creation with pain001"
 last_build_date: "Fri, 29 Sep 2023 08:57:00 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 pub_date: "Fri, 29 Sep 2023 08:57:00 +0000"
@@ -69,7 +79,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Sebastien Rousseau"
+apple-mobile-web-app-title: "pain001"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
@@ -80,15 +90,15 @@ msapplication-navbutton-color: "0, 67, 165"
 
 twitter_card: "summary"
 twitter_creator: "@wwdseb"
-twitter_description: "Streamlining the creation and compliance of ISO20022 Payment Messages for cross-border payments and reporting."
+twitter_description: "pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
-twitter_title: "Automating ISO 20022 Payment Files Creation with Pain001"
-twitter_url: "https://sebastienrousseau.com"
+twitter_title: "Automating ISO 20022 Payment Files Creation with pain001"
+twitter_url: "https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"
 
 # Humans.txt - The Humans.txt front matter (YAML).
-author_website: "https://sebastienrousseau.com"
+author_website: "https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
@@ -97,142 +107,201 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
-excerpt: "transactions and enhancing payment systems worldwide. It provides a common"
-last_reviewed: "2026-05-11"
+excerpt: "pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 (CustomerCreditTransferInitiation) XML from CSV or SQLite input, validates output against the XSD schema, and computes CtrlSum and NbOfTxs automatically — supporting both SEPA SCT and CBPR+ cross-border message formats."
+last_reviewed: "2026-05-24"
 ---
 
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Automate the creation of ISO 20022 pain.001 payment files from CSV or SQLite. pain001 is the open-source Python library that streamlines compliance.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</p>
 <p class="post-lead-heading"><strong>Key takeaways</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Idea.</strong> Recognising the complexity of ISO 20022, I developed and launched Pain001 ⧉, an open-source toolset for creating, translating, and validating payment initiation and advice messages.</li>
-  <li><strong>Impact.</strong> Pain001 is committed to simplifying and streamlining the process of generating payment messages, enabling easy adoption of ISO 20022 and facilitating seamless integration with existing systems to achieve ISO 20022…</li>
-  <li><strong>Incentives.</strong> Experience a transformative shift in your payment automation process with Pain001.</li>
-  <li><strong>The payments industry is evolving, and ISO 20022 is leading the way.</strong> ISO 20022 ⧉ is a groundbreaking standard that is simplifying transactions and enhancing payment systems worldwide.</li>
+  <li><strong>ISO 20022 pain.001 Message Structure.</strong> The ISO 20022 pain.001.001.09 (CustomerCreditTransferInitiation) message has three levels:.</li>
+  <li><strong>Generating XML from CSV.</strong> A minimal pain001 invocation:.</li>
+  <li><strong>Generated XML Structure.</strong> A correctly rendered pain.001.001.09 document for the CSV row above:.</li>
+  <li><strong>XSD Validation Pipeline.</strong> After rendering, pain001 validates the output against the ISO 20022 pain.001.001.09 XSD schema.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html">Static Site Generator: Fastest Rust-Based SSG</a>, <a href="https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html">Unveiling a new Cryptocurrency and Faster Payment Solution</a>, <a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html">Understanding the Technology behind Blockchain</a>.</p>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</a>, <a href="https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline">The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View</a>, <a href="https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa">Quantum-Safe Payments: Why the Industry Must Act Now</a>.</p>
 </aside>
 <!-- lead-end -->
 
-![A very tall building that has a lot of holes in it](https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp).class=\"img-fluid clearfix\"
+> **Executive Summary / Key Takeaways**
+>
+> - **ISO 20022 pain.001** (CustomerCreditTransferInitiation) is the structured XML message format used to initiate credit transfers under SEPA (EPC SCT rulebook) and CBPR+ (SWIFT's cross-border messaging standard, mandatory for correspondent banks from November 2025).
+> - **[pain001 ⧉][00]** reads payment data from CSV or SQLite, maps rows to the pain.001.001.09 message hierarchy (GrpHdr → PmtInf → CdtTrfTxInf), and renders a conformant XML file via a templated generator — three lines of Python from data to validated XML.
+> - **XSD validation** runs on every generated file before output is written; the library raises a descriptive exception identifying the failing element, cardinality, or type mismatch, so errors are caught at generation time rather than at bank submission.
+> - **CtrlSum and NbOfTxs** are computed from the transaction set, not entered manually — eliminating the single most common payment file rejection cause at SEPA and CBPR+ processing gateways.
+> - Both **SEPA Credit Transfer** (EUR, within the SEPA zone) and **CBPR+** (cross-border, multi-currency) message variants are supported through the `message_type` parameter, with field-level validation differences handled internally.
 
-## Insight
+[**pain001 ⧉**][00] is an open-source Python library for generating ISO 20022 payment initiation files. It reads payment data from a structured input (CSV or SQLite), validates the data, renders a conformant pain.001.001.09 XML document, and validates the output against the ISO 20022 XSD schema — all in a single function call.
 
-### The payments industry is evolving, and ISO 20022 is leading the way
+This article describes the ISO 20022 pain.001 message structure, how pain001 maps input data to message elements, the validation pipeline, and the SEPA versus CBPR+ configuration options.
 
-[**ISO 20022 ⧉**][01] is a groundbreaking standard that is simplifying
-transactions and enhancing payment systems worldwide. It provides a common
-language for exchanging payment data, making payments more efficient and secure.
+## ISO 20022 pain.001 Message Structure
 
-Banks, corporations, and financial institutions around the globe have adopted
-ISO 20022, leveraging its power to automate and standardize payment transactions.
-This is facilitating a smooth and efficient global financial ecosystem.
+The ISO 20022 pain.001.001.09 (CustomerCreditTransferInitiation) message has three levels:
 
-## Idea
+**GrpHdr** (Group Header) — one per file:
 
-### Pain001 is a Python library that simplifies the creation of ISO 20022-compliant payment messages
+| Element | Description | Example |
+|---|---|---|
+| `MsgId` | Unique message identifier | `ACME20240115-001` |
+| `CreDtTm` | Creation date and time | `2024-01-15T09:00:00` |
+| `NbOfTxs` | Total number of transactions | `3` |
+| `CtrlSum` | Sum of all instructed amounts | `15000.00` |
+| `InitgPty/Nm` | Initiating party name | `Acme Corp` |
 
-Recognising the complexity of ISO 20022, I developed and launched
-[**Pain001 ⧉**][00], an open-source toolset for creating, translating, and
-validating payment initiation and advice messages. It follows the High Value
-Payments Plus (HVPS+) and Cross-Border Payments and Reporting Plus (CBPR+)
-standards.
+**PmtInf** (Payment Information) — one or more per file, groups transactions by debtor account and payment date:
 
-Pain001 allows for direct creation of messages from CSV or SQLite databases,
-which reduces processing costs, increases efficiency, and enhances accuracy.
+| Element | Description |
+|---|---|
+| `PmtInfId` | Payment information identifier |
+| `PmtMtd` | Payment method — always `TRF` for credit transfer |
+| `ReqdExctnDt/Dt` | Requested execution date |
+| `Dbtr/Nm` | Debtor (sender) name |
+| `DbtrAcct/Id/IBAN` | Debtor IBAN |
+| `DbtrAgt/FinInstnId/BICFI` | Debtor bank BIC |
 
-## Impact
+**CdtTrfTxInf** (Credit Transfer Transaction Information) — one or more per PmtInf block:
 
-### Leverage the Power of ISO 20022 with Pain001
+| Element | Description |
+|---|---|
+| `PmtId/EndToEndId` | End-to-end reference (preserved through the chain) |
+| `Amt/InstdAmt` | Instructed amount with currency attribute |
+| `CdtrAgt/FinInstnId/BICFI` | Creditor bank BIC |
+| `Cdtr/Nm` | Creditor (receiver) name |
+| `CdtrAcct/Id/IBAN` | Creditor IBAN |
+| `RmtInf/Ustrd` | Unstructured remittance information (invoice reference etc.) |
 
-**Pain001** is committed to simplifying and streamlining the process of
-generating payment messages, enabling easy adoption of ISO 20022 and
-facilitating seamless integration with existing systems to achieve ISO 20022
-compliance.
+## Generating XML from CSV
 
-Pain001 can significantly mitigate processing costs and complexities by
-eliminating the need for manual data entry and file generation. It can also help
-to reduce the risk of errors, which can further reduce costs.
+A minimal pain001 invocation:
 
-For organisations looking to simplify and automate their payment processing,
-**Pain001** serves as a practical and highly effective solution.
+```python
+from pain001 import create_xml_v9
 
-## Incentives
+create_xml_v9(
+    data_file="payments.csv",
+    data_file_type="csv",
+    xml_file_path="output/pain001.xml"
+)
+```
 
-### Shaping the Future of Payments Automation with Pain001
+The CSV file maps column names to message fields. A minimal example:
 
-Experience a transformative shift in your payment automation process with
-Pain001. This highly innovative tool significantly reduces processing costs,
-minimises errors, and simplifies transactions. The automation of payment file
-creation and validation is just the beginning of the possibilities that Pain001
-offers.
+```csv
+id,date,nb_of_txs,ctrl_sum,initiating_party_name,debtor_name,debtor_account_IBAN,debtor_agent_BIC,creditor_name,creditor_account_IBAN,creditor_agent_BIC,instd_amt,instd_amt_ccy,end_to_end_id,remittance_info
+1,2024-01-15,1,1000.00,Acme Corp,Acme Corp,GB29NWBK60161331926819,NWBKGB2L,Supplier Ltd,DE89370400440532013000,COBADEFFXXX,1000.00,EUR,ACME20240115001,INV-2024-0042
+```
 
-Here's why you should consider **Pain001** for your payment automation needs:
+The library reads `ctrl_sum` and `nb_of_txs` from the CSV row for single-row files. For multi-row files (multiple transactions in one batch), pain001 computes these values from the transaction set rather than trusting the input values, which prevents mismatches.
 
-- **Easy to use:** Pain001 is a user-friendly library, designed for both
-  developers and non-developers. Its easy-to-use interface requires minimal
-  coding knowledge, providing a seamless experience.
-- **Open-Source Accessibility**: Open to everyone, Pain001 is an open-source
-  library. Its free accessibility empowers businesses of all sizes to leverage
-  its benefits.
-- **Robust Security**: Pain001 is committed to protecting data confidentiality
-  and offers a secure solution by not storing any sensitive data.
-- **Customizability**: Pain001 offers developers the ability to customize the
-  output, adapting it to specific business requirements and preferences, adding
-  a personal touch to your automation process.
-- **Scalable solution**: The Pain001 library can handle varying volumes of
-  payment files, making it suitable for businesses of different sizes and
-  transaction volumes.
-- **Time-Efficiency**: Say goodbye to manual data entry. Pain001 automates file
-  creation, saving valuable time and boosting overall productivity.
-- **Seamless Integration**: Being a Python package, Pain001 effortlessly
-  integrates into any Python-based applications and existing workflows, making
-  the transition smoother.
-- **Cross-border compatibility**: Pain001 is designed for versatility, offering
-  support for both SEPA and non-SEPA credit transfers, making it perfect for
-  businesses operating across different countries and regions.
-- **Accuracy and Efficiency** By providing precise data, Pain001 minimizes
-  errors in payment file creation and processing. This efficiency enhancement
-  transforms your payment automation process.
-- **Compliance with ISO 20022 Standards** Pain001 guarantees the highest
-  quality by validating all payment files to meet ISO 20022 standards. Its
-  standardized payment file format simplifies ISO 20022-compliant payment
-  initiation message creation.
-- **Cost Reduction** Pain001 cuts down costs by eliminating manual data entry
-  and file generation, reducing payment processing time, and minimizing errors.
+The SQLite interface uses the same column-name convention. Pass `data_file_type="sqlite"` and the `data_file` path to a SQLite database file; pain001 reads the `payment` table by default.
 
-[Embrace the future of payment automation ⧉][02] with Pain001, a tool that
-reshapes the way you manage payments.
+## Generated XML Structure
 
-*This article also available on [Medium ⧉][03]*
+A correctly rendered pain.001.001.09 document for the CSV row above:
 
-![divider](https://cloudcdn.pro/clients/common/images/elements/divider.svg).class=\"m-10 w-100\"
+```xml
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09">
+  <CstmrCdtTrfInitn>
+    <GrpHdr>
+      <MsgId>ACME20240115-001</MsgId>
+      <CreDtTm>2024-01-15T09:00:00</CreDtTm>
+      <NbOfTxs>1</NbOfTxs>
+      <CtrlSum>1000.00</CtrlSum>
+      <InitgPty><Nm>Acme Corp</Nm></InitgPty>
+    </GrpHdr>
+    <PmtInf>
+      <PmtInfId>ACME20240115-PMT-001</PmtInfId>
+      <PmtMtd>TRF</PmtMtd>
+      <ReqdExctnDt><Dt>2024-01-16</Dt></ReqdExctnDt>
+      <Dbtr><Nm>Acme Corp</Nm></Dbtr>
+      <DbtrAcct><Id><IBAN>GB29NWBK60161331926819</IBAN></Id></DbtrAcct>
+      <DbtrAgt><FinInstnId><BICFI>NWBKGB2L</BICFI></FinInstnId></DbtrAgt>
+      <CdtTrfTxInf>
+        <PmtId><EndToEndId>ACME20240115001</EndToEndId></PmtId>
+        <Amt><InstdAmt Ccy="EUR">1000.00</InstdAmt></Amt>
+        <CdtrAgt><FinInstnId><BICFI>COBADEFFXXX</BICFI></FinInstnId></CdtrAgt>
+        <Cdtr><Nm>Supplier Ltd</Nm></Cdtr>
+        <CdtrAcct><Id><IBAN>DE89370400440532013000</IBAN></Id></CdtrAcct>
+        <RmtInf><Ustrd>INV-2024-0042</Ustrd></RmtInf>
+      </CdtTrfTxInf>
+    </PmtInf>
+  </CstmrCdtTrfInitn>
+</Document>
+```
 
-**That concludes our time together. Thank you for your time!**
+## XSD Validation Pipeline
 
-If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉][11] or via the [Contact page][10]. Thank you again for your time and I look forward to hearing from you.
+After rendering, pain001 validates the output against the ISO 20022 pain.001.001.09 XSD schema. Validation checks:
 
-[**❬ Back to Articles**][09]
+- **Mandatory element presence**: GrpHdr/MsgId, GrpHdr/CreDtTm, GrpHdr/NbOfTxs, GrpHdr/CtrlSum are all required; missing any raises a validation error.
+- **Type constraints**: IBAN format, BIC format (8 or 11 characters), amount precision (maximum 18 digits, 5 decimal places).
+- **Cardinality**: at least one `CdtTrfTxInf` per `PmtInf`; at least one `PmtInf` per document.
+- **Enumeration values**: `PmtMtd` must be `TRF` for credit transfers; `Ccy` must be a valid ISO 4217 currency code.
 
-[00]: https://pain001.com/ "Pain001: Automate ISO 20022-Compliant Payment File Creation"
-[01]: https://www.iso20022.org/ "ISO 20022: A single standardisation approach (methodology, process, repository) to be used by all financial standards initiatives"
-[02]: https://pain001.com/index.html "Embrace the future of payment automation with Pain001"
-[03]: https://medium.com/@wwdseb/automating-iso-20022-compliant-payment-file-creation-with-pain001-5e32f789155a "Embrace the future of payment automation with Pain001"
-[09]: /articles/index.html "Back to Articles"
-[10]: /contact/index.html "Contact Sebastien Rousseau"
-[11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
+When validation fails, pain001 raises a `ValidationError` with the lxml error message identifying the failing XPath expression, element name, and constraint. This surfaces misconfigurations at generation time rather than at bank submission, where rejection codes are typically less descriptive.
+
+## SEPA vs CBPR+ Configuration
+
+SEPA Credit Transfer (ISO 20022 pain.001.001.09 under the EPC SCT rulebook) and CBPR+ (SWIFT's Cross-Border Payments and Reporting Plus standard) use the same message schema but differ in mandatory field sets and value constraints:
+
+| Aspect | SEPA SCT | CBPR+ |
+|---|---|---|
+| Currency | EUR only | Multi-currency |
+| IBAN mandatory | Yes | Yes (creditor) |
+| BIC mandatory | No (SEPA zone routing) | Yes |
+| Charge bearer (`ChrgBr`) | `SLEV` | `DEBT`, `CRED`, or `SHAR` |
+| Scope | SEPA zone (36 countries) | Global correspondent banking |
+
+Configure the message type via the `payment_initiation_message_type` parameter:
+
+```python
+create_xml_v9(
+    data_file="payments.csv",
+    data_file_type="csv",
+    xml_file_path="output/pain001.xml",
+    payment_initiation_message_type="pain.001.001.09"  # default; also accepts "pain.001.001.03" for legacy SEPA
+)
+```
+
+CBPR+ compliance became mandatory for SWIFT correspondent banking in November 2023 for inbound messages and November 2025 for outbound. Generating CBPR+-conformant pain.001 files requires that the BIC field is populated and that the `ChrgBr` element is present.
+
+## Frequently Asked Questions
+
+**What is the difference between pain.001 and pain.008?**
+pain.001 (CustomerCreditTransferInitiation) initiates a credit transfer — the sender's bank debits the sender's account and credits the receiver. pain.008 (CustomerDirectDebitInitiation) initiates a direct debit — the creditor's bank collects funds from the debtor. pain001 the library generates pain.001 files only.
+
+**Which ISO 20022 version does pain001 target?**
+The primary target is pain.001.001.09, the version required for CBPR+ and mandated by the EPC for new SEPA implementations. The library also supports pain.001.001.03 (the legacy SEPA version) via the `payment_initiation_message_type` parameter for organisations still using older bank interfaces.
+
+**Can pain001 handle multiple debtor accounts in a single file?**
+Yes. Multiple `PmtInf` blocks with different debtor IBANs can be produced by grouping CSV rows with different debtor account values. pain001 creates one `PmtInf` block per unique (debtor IBAN, execution date) combination, with all matching transactions nested as `CdtTrfTxInf` children.
+
+**What happens when XSD validation fails?**
+pain001 raises a `pain001.exceptions.ValidationError` with the lxml validation message. The XML file is not written to disk when validation fails, so only valid files reach the output path. Common failure causes are: IBAN in wrong format, BIC not 8 or 11 characters, currency code not in ISO 4217, or missing mandatory elements when a required CSV column is absent.
+
+## References
+
+1. European Payments Council. *SEPA Credit Transfer Scheme Customer-to-Bank Implementation Guidelines (v1.1)*. EPC, 2023. https://www.europeanpaymentscouncil.eu/document-library/implementation-guidelines/sepa-credit-transfer-scheme-customer-bank
+2. SWIFT. *CBPR+ Usage Guidelines — Customer Credit Transfer Initiation (pain.001)*. SWIFT Standards, 2023. https://www.swift.com/standards/iso-20022/cbpr-plus-usage-guidelines
+3. ISO. *ISO 20022 — Financial services — Universal financial industry message scheme*. ISO.org, 2023. https://www.iso20022.org/
+4. Rousseau, S. *pain001 — ISO 20022 payment file generator*. GitHub, 2023. https://github.com/sebastienrousseau/pain001
+
+[00]: https://pain001.com/ "pain001: Automate ISO 20022-Compliant Payment File Creation"
+[01]: https://www.iso20022.org/ "ISO 20022: Universal financial industry message scheme"
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-22">2026-05-22</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-30">2026-05-30</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" class="related-media" aria-label="Static Site Generator: Fastest Rust-Based SSG" tabindex="-1"><img alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right" src="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html">Static Site Generator: Fastest Rust-Based SSG</a></h3><p><time datetime="2023-10-09">2023-10-09</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html" class="related-media" aria-label="Unveiling a new Cryptocurrency and Faster Payment Solution" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html">Unveiling a new Cryptocurrency and Faster Payment Solution</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html" class="related-media" aria-label="Understanding the Technology behind Blockchain" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html">Understanding the Technology behind Blockchain</a></h3><p><time datetime="2018-01-09">2018-01-09</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026" class="related-media" aria-label="Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability" tabindex="-1"><img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</a></h3><p><time datetime="2026-05-19">2026-05-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline" class="related-media" aria-label="The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View" tabindex="-1"><img alt="ISO 20022 pacs.008 structured address diagram — cross-border payment message fields with TwnNm and Ctry highlighted" src="https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline">The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View</a></h3><p><time datetime="2026-05-12">2026-05-12</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa" class="related-media" aria-label="Quantum-Safe Payments: Why the Industry Must Act Now" tabindex="-1"><img alt="Quantum computing circuit board in blue light" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa">Quantum-Safe Payments: Why the Industry Must Act Now</a></h3><p><time datetime="2025-09-01">2025-09-01</time></p></footer></article>
 </div>
 </aside>
 <!-- enrich-end -->

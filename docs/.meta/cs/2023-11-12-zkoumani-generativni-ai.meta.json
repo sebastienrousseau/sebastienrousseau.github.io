@@ -1,11 +1,11 @@
 {
-  "language": "cs-CZ",
-  "description": "Explore la IA generativa en 2023: cómo funciona, dónde se implanta primero en los servicios financieros, y las cuestiones éticas y arquitectónicas a plantearse.",
-  "title": "IA generativa en 2023: cómo funciona, dónde aterriza",
   "banner_alt": "Concepto de IA, renderizado 3D, imagen conceptual",
-  "keywords": "IA generativa, tecnología, futuro, impacto, ética, sinergias, innovación, creatividad, transformación, evolución",
   "date": "November 12, 2023",
-  "locale": "cs_CZ",
+  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
+  "description": "Explore la IA generativa en 2023: cómo funciona, dónde se implanta primero en los servicios financieros, y las cuestiones éticas y arquitectónicas a plantearse.",
+  "keywords": "IA generativa, tecnología, futuro, impacto, ética, sinergias, innovación, creatividad, transformación, evolución",
+  "title": "IA generativa en 2023: cómo funciona, dónde aterriza",
+  "language": "cs-CZ",
   "subtitle": "Inteligencia artificial aplicada a la banca y los servicios financieros",
-  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
+  "locale": "cs_CZ"
 }

@@ -1,13 +1,13 @@
 ---
 title: "Quantum Algorithm Challenges Lattice-Based Cryptography"
-subtitle: "The Next polynomial-time quantum algorithm for lattice-based cryptography"
-description: "A new polynomial-time quantum algorithm by Yilei Chen targets lattice-based cryptography. Implications for post-quantum standards including CRYSTALS-Kyber."
+subtitle: "Noul algoritm cuantic de timp polinomial pentru criptografia bazată pe rețele"
+description: "Nou algoritm cuantic polinomial al lui Yilei Chen vizează criptografia pe rețele cu implicații pentru standardele post-cuantice, inclusiv CRYSTALS-Kyber."
 date: "Apr 01, 2024"
 language: "ro-RO"
 locale: "ro_RO"
 banner: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"
-banner_alt: "Banner of Network nodes in a digital blue space"
-keywords: "quantum computing, quantum algorithm, lattice cryptography, LWE, encryption, post-quantum cryptography, cybersecurity, Yilei Chen, cryptography research, security threats"
+banner_alt: "Banner cu noduri de rețea într-un spațiu digital albastru"
+keywords: "calcul cuantic, algoritm cuantic, criptografie pe rețele, LWE, criptare, criptografie post-cuantică, securitate cibernetică, Yilei Chen, cercetare în criptografie, amenințări la securitate"
 ---
 
 ![Banner of Network nodes in a digital blue space](https://cloudcdn.pro/stocks/images/digital-constellation.webp).class="img-fluid clearfix"

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Wed, 27 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Wed, 27 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>AI als besturingssysteem van betalingen: fraude, routering, veerkracht en compliance in 2026 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="AI wordt in 2026 het besturingssysteem van betalingen: van analytics naar fraudepreventie, betalingsherstel, routering, liquiditeitsprognose, compliance-screening en agentic-commerce-controles.">
+<meta name="keywords" content="AI-besturingssysteem betalingen 2026, betalingsfraude, routering, realtime fraudepreventie, ISO 20022 AI, veerkracht betalingen, transactieanalyse, liquiditeitsprognose, FedNow, RTP, agentic commerce">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="AI Payments 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-GJhhEfFAYun/YJKU0vQt8OpjxIKaPTuC73l4jMzB6GM=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-j9FqZZRMDaJJDW8OTf+Jep6fyCWAnXFiV7zSSVivK4k=' 'sha256-naWYAlZHTG7N/EJthh1LoM6rVa+zHstHsjr0r9l4zkY=' 'sha256-xG4+9nVawuGJhchXcJdytqTO/TSfie1Ot7N8BzwbByE=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/nl/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom-feed" href="/nl/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="AI als besturingssysteem van betalingen: fraude, routering, veerkracht en compliance in 2026 — Sebastien Rousseau">
+<meta property="og:description" content="AI wordt in 2026 het besturingssysteem van betalingen: van analytics naar fraudepreventie, betalingsherstel, routering, liquiditeitsprognose, compliance-screening en agentic-commerce-controles.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="nl_NL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI als besturingssysteem van betalingen: fraude, routering, veerkracht en compliance in 2026 — Sebastien Rousseau">
+<meta name="twitter:description" content="AI wordt in 2026 het besturingssysteem van betalingen: van analytics naar fraudepreventie, betalingsherstel, routering, liquiditeitsprognose, compliance-screening en agentic-commerce-controles.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-27-ai-operating-system-paiements-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-27-ai-operating-system-pagos-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-27-ai-operating-system-pagamenti-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-27-ai-operating-system-pagamentos-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Naar hoofdinhoud gaan</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Navigatie omschakelen" />
+      <div class="wrap">
+        <a class="ap-brand" href="/nl/index.html" aria-label="Startpagina van Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Hoofdnavigatie">
+          <ul class="ap-menu">
+            <li><a href="/nl/over/index.html">Over mij</a></li>
+            <li><a href="/nl/artikelen/index.html" aria-current="page" class="active">Artikelen</a></li>
+            <li><a href="/nl/publicaties/index.html">Publicaties</a></li>
+            <li><a href="/nl/onderwerpen/index.html">Onderwerpen</a></li>
+            <li><a href="/nl/projecten/index.html">Projecten</a></li>
+            <li><a href="/nl/afspeellijsten/index.html">Afspeellijsten</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Donker thema inschakelen" aria-pressed="false" title="Thema wisselen">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Zoeken (Cmd of Ctrl + K)" title="Zoeken (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Taal">
+            <button type="button" class="ap-lang-toggle" aria-label="NL, Taal wijzigen" aria-expanded="false" aria-haspopup="menu" title="Taal wijzigen">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">NL</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-05-27-ai-operating-system-paiements-fraud-routing-resilience-compliance-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-05-27-ai-operating-system-zahlungsverkehr-fraud-routing-resilience-compliance-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-05-27-ai-operating-system-pagos-fraud-routing-resilience-compliance-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-05-27-ai-operating-system-pagamenti-fraud-routing-resilience-compliance-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-05-27-ai-operating-system-pagamentos-fraud-routing-resilience-compliance-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/nl/contact/index.html" aria-label="Neem contact op">Neem contact op ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Navigatie omschakelen">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>AI als besturingssysteem van betalingen: fraude, routering, veerkracht en compliance in 2026</h1>
+      <p class="sub">AI in betalingen is geen model meer náást de rail. Het wordt de beslislaag die routeert, herstelt, screent, voorspelt, detecteert en geldverkeer uitlegt.</p>
+    <nav class="article-tags" aria-label="Onderwerpen"><a href="/tags/index.html#h3-ai-besturingssysteem-betalingen-2026" class="article-tag" rel="tag">AI-besturingssysteem betalingen 2026</a><a href="/tags/index.html#h3-betalingsfraude" class="article-tag" rel="tag">betalingsfraude</a><a href="/tags/index.html#h3-routering" class="article-tag" rel="tag">routering</a><a href="/tags/index.html#h3-realtime-fraudepreventie" class="article-tag" rel="tag">realtime fraudepreventie</a><a href="/tags/index.html#h3-iso-20022-ai" class="article-tag" rel="tag">ISO 20022 AI</a><a href="/tags/index.html#h3-veerkracht-betalingen" class="article-tag" rel="tag">veerkracht betalingen</a><a href="/tags/index.html#h3-transactieanalyse" class="article-tag" rel="tag">transactieanalyse</a><a href="/tags/index.html#h3-liquiditeitsprognose" class="article-tag" rel="tag">liquiditeitsprognose</a><a href="/tags/index.html#h3-fednow" class="article-tag" rel="tag">FedNow</a><a href="/tags/index.html#h3-rtp" class="article-tag" rel="tag">RTP</a><a href="/tags/index.html#h3-agentic-commerce" class="article-tag" rel="tag">agentic commerce</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-27T06:06:06+00:00" class="meta-pub">Gepubliceerd op 27 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Geschatte leestijd">4 min. leestijd</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Inhoud</h2><ol><li><a href="#waarom-2026-het-jaar-is-waarin-dit-strategisch-werd">Waarom 2026 het jaar is waarin dit strategisch werd</a></li><li><a href="#de-architectuurbasis-voor-2026">De architectuurbasis voor 2026</a></li><li><a href="#tabel-van-strategische-architectuur">Tabel van strategische architectuur</a></li><li><a href="#wat-dit-betekent-per-banktype">Wat dit betekent per banktype</a></li><li><a href="#conclusie">Conclusie</a></li><li><a href="#veelgestelde-vragen">Veelgestelde vragen</a></li><li><a href="#referenties">Referenties</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> AI wordt in 2026 het besturingssysteem van betalingen: van analytics naar fraudepreventie, betalingsherstel, routering, liquiditeitsprognose, compliance-screening en agentic-commerce-controles.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Waarom 2026 het jaar is waarin dit strategisch werd.</strong> De sector heeft de adoptiefase achter zich.</li>  <li><strong>De architectuurbasis voor 2026.</strong> De bank moet beginnen bij de frictie: vastliggende liquiditeit, afwikkelingsvertraging, reconciliatiekosten, mislukte betalingen, fraude-exposure, zwakke auditeerbaarheid of slechte klantbeleving.</li>  <li><strong>Tabel van strategische architectuur.</strong> Mondiale banken moeten platformbrede orkestratie creëren zodat elke markt, rail, token en AI-capaciteit niet uitmondt in een apart operatiemodel.</li>  <li><strong>Wat dit betekent per banktype.</strong> Mondiale banken moeten platformbrede orkestratie creëren zodat elke markt, rail, token en AI-capaciteit niet uitmondt in een apart operatiemodel.</li></ul></aside><h1>AI als besturingssysteem van betalingen: fraude, routering, veerkracht en compliance in 2026</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>AI wordt in 2026 het besturingssysteem van betalingen, met een verschuiving van analytics naar fraudepreventie, betalingsherstel, routering, liquiditeitsprognose, compliance-screening en agentic-commerce-controles. Het signaal van 2026 is dat payments intelligence is verschoven van innovatietheater naar het bankoperatiemodel, waar de beslissende vraag ontwerpdiscipline is: welke data, rails, controles, aansprakelijkheden en klantworkflows horen bij elkaar (<a href="https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026" title="Payments Outlook: Five Trends Powering Payments in 2026">J.P. Morgan</a>).</p>
+<hr />
+<blockquote>
+<p><strong>Bestuurssamenvatting / Kernpunten</strong></p>
+<ul>
+<li><strong>Payments Intelligence is nu strategisch.</strong> Het onderwerp is gekoppeld aan operatiemodel, veerkracht, klantwaarde en toezichtbewijs, niet aan een smalle productlancering (<a href="https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026" title="Payments Outlook: Five Trends Powering Payments in 2026">J.P. Morgan</a>).</li>
+<li><strong>Het ontwerpprincipe is realtime controle.</strong> Banken hebben architectuur nodig die beleid, product, data, railkeuze, risicocontroles en meetbare economie verbindt (<a href="https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026" title="Update on the Payments landscape – May 2026">Association of Corporate Treasurers</a>).</li>
+<li><strong>Het controlemodel moet realtime zijn.</strong> Beslissingen rond fraude, liquiditeit, compliance, afwikkeling en operationeel risico moeten draaien op de snelheid van de workflow, niet ná het feit.</li>
+<li><strong>Datakwaliteit wordt commercieel voordeel.</strong> Gestructureerde data, transactiecontext, auditlogs en identiteitssignalen worden het substraat voor automatisering en klantgerichte producten.</li>
+<li><strong>Fragmentatie is de vijand.</strong> Een bank die geïsoleerde pilots bouwt rond elke rail, token, model of compliance-eis creëert toekomstig operationeel risico.</li>
+<li><strong>Het winnende model is orkestratie.</strong> De instelling die elke workflow kan routeren, beheren, prijzen, bewijzen en uitleggen presteert beter dan die welke slechts weer een tool adopteert (<a href="https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/" title="Six forces shaping Treasury in 2026">Standard Chartered</a>).</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="waarom-2026-het-jaar-is-waarin-dit-strategisch-werd">Waarom 2026 het jaar is waarin dit strategisch werd <a class="heading-anchor" href="#waarom-2026-het-jaar-is-waarin-dit-strategisch-werd" aria-label="Link naar Waarom 2026 het jaar is waarin dit strategisch werd">#</a></h2>
+<p>De sector heeft de adoptiefase achter zich. Het volstaat niet meer om aan te sluiten op een rail, een bericht te migreren, een AI-proof-of-concept te draaien of een tokenisatiepilot aan te kondigen. In 2026 ligt de strategische voorsprong in het orkestreren van die capaciteiten tegen een echte workflow en vervolgens bewijzen dat die workflow veiliger, sneller, goedkoper, veerkrachtiger of nuttiger voor klanten is.</p>
+<p>Daarom is payments intelligence nu een onderwerp voor de Raad van Bestuur. Dezelfde drukfactoren keren steeds terug: rijkere betaaldata, realtime afwikkeling, getokeniseerd geld, AI-besluitvorming, Open Banking, operationele veerkracht, cloudconcentratie en sterker toezichtbewijs. Apart behandeld leveren die drukfactoren programmawildgroei op. Als één architectuur behandeld leveren ze operationele hefboom op (<a href="https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026" title="Payments Outlook: Five Trends Powering Payments in 2026">J.P. Morgan</a>, <a href="https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026" title="Update on the Payments landscape – May 2026">Association of Corporate Treasurers</a>).</p>
+<h2 id="de-architectuurbasis-voor-2026">De architectuurbasis voor 2026 <a class="heading-anchor" href="#de-architectuurbasis-voor-2026" aria-label="Link naar De architectuurbasis voor 2026">#</a></h2>
+<h3 id="1-workflow-eerst-technologie-daarna">1. Workflow eerst, technologie daarna <a class="heading-anchor" href="#1-workflow-eerst-technologie-daarna" aria-label="Link naar 1. Workflow eerst, technologie daarna">#</a></h3>
+<p>De bank moet beginnen bij de frictie: vastliggende liquiditeit, afwikkelingsvertraging, reconciliatiekosten, mislukte betalingen, fraude-exposure, zwakke auditeerbaarheid of slechte klantbeleving. Technologie is alleen gerechtvaardigd waar zij die frictie wegneemt (<a href="https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026" title="Payments Outlook: Five Trends Powering Payments in 2026">J.P. Morgan</a>).</p>
+<h3 id="2-data-als-controlelaag">2. Data als controlelaag <a class="heading-anchor" href="#2-data-als-controlelaag" aria-label="Link naar 2. Data als controlelaag">#</a></h3>
+<p>Gestructureerde, beheerste en traceerbare data vormen het fundament. Zonder bruikbare data wordt automatisering broos en compliance handmatig. Met bruikbare data kunnen banken routeringsintelligentie, realtime controles en klantgerichte analytics bouwen (<a href="https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026" title="Update on the Payments landscape – May 2026">Association of Corporate Treasurers</a>).</p>
+<h3 id="3-orkestratie-over-rails-en-platformen">3. Orkestratie over rails en platformen <a class="heading-anchor" href="#3-orkestratie-over-rails-en-platformen" aria-label="Link naar 3. Orkestratie over rails en platformen">#</a></h3>
+<p>De architectuur moet meerdere rails, aanbieders, identiteitsregelingen, risicosignalen en afwikkelingsactiva ondersteunen. De routeringsbeslissing moet worden gestuurd door kosten, snelheid, finaliteit, jurisdictie, klantvoorkeur, veerkracht en datarijkdom.</p>
+<h3 id="4-ingebedde-compliance-en-bewijs">4. Ingebedde compliance en bewijs <a class="heading-anchor" href="#4-ingebedde-compliance-en-bewijs" aria-label="Link naar 4. Ingebedde compliance en bewijs">#</a></h3>
+<p>Het compliance-model moet native zijn aan de workflow. Policy-as-code, geautomatiseerde auditlogs, bewijs van operationele veerkracht, toestemmingsregistraties en modelgovernance moeten worden geproduceerd als onderdeel van de uitvoering, niet achteraf voor de auditor herbouwd.</p>
+<h3 id="5-eenheidseconomie-en-klantwaarde">5. Eenheidseconomie en klantwaarde <a class="heading-anchor" href="#5-eenheidseconomie-en-klantwaarde" aria-label="Link naar 5. Eenheidseconomie en klantwaarde">#</a></h3>
+<p>Elk initiatief vraagt om bewijs van commerciële waarde. Kosten per betaling, kosten per beslissing, kosten per onderzoek, bespaarde liquiditeit, vermeden handmatig betalingsherstel, verlaagde fraudeverliezen en klantadoptie horen schaalbeslissingen te bepalen.</p>
+<h2 id="tabel-van-strategische-architectuur">Tabel van strategische architectuur <a class="heading-anchor" href="#tabel-van-strategische-architectuur" aria-label="Link naar Tabel van strategische architectuur">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Laag</th>
+<th>Richting 2026</th>
+<th>Bankkans</th>
+<th>Risico bij verkeerd uitvoeren</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Workflow-laag</strong></td>
+<td>Klantpijn bepaalt het product</td>
+<td>Heldere businesscase en adoptie</td>
+<td>Technologie-gedreven pilots zonder gebruikers</td>
+</tr>
+<tr>
+<td><strong>Data-laag</strong></td>
+<td>Gestructureerde, beheerde transactie- en controledata</td>
+<td>Automatisering, analytics en auditeerbaarheid</td>
+<td>Slechte data sneller verplaatst</td>
+</tr>
+<tr>
+<td><strong>Rail-laag</strong></td>
+<td>Routering over kaarten, A2A, RTGS, stablecoins, deposito's, API's, DLT</td>
+<td>Geoptimaliseerde kosten, snelheid en finaliteit</td>
+<td>Kanaalwildgroei en gedupliceerde controles</td>
+</tr>
+<tr>
+<td><strong>Controlelaag</strong></td>
+<td>Realtime beleid, fraude, sancties, veerkracht, identiteit en toestemming</td>
+<td>Risico beheerd op uitvoeringssnelheid</td>
+<td>Handmatige compliance achteraf</td>
+</tr>
+<tr>
+<td><strong>Economie-laag</strong></td>
+<td>Gemeten eenheidskosten en klantwaarde</td>
+<td>Bewijs-gestuurd opschalen</td>
+<td>Innovatie-uitgaven zonder duurzame return</td>
+</tr>
+</tbody>
+</table>
+<h2 id="wat-dit-betekent-per-banktype">Wat dit betekent per banktype <a class="heading-anchor" href="#wat-dit-betekent-per-banktype" aria-label="Link naar Wat dit betekent per banktype">#</a></h2>
+<h3 id="mondiale-banken">Mondiale banken <a class="heading-anchor" href="#mondiale-banken" aria-label="Link naar Mondiale banken">#</a></h3>
+<p>Mondiale banken moeten platformbrede orkestratie creëren zodat elke markt, rail, token en AI-capaciteit niet uitmondt in een apart operatiemodel.</p>
+<h3 id="regionale-banken">Regionale banken <a class="heading-anchor" href="#regionale-banken" aria-label="Link naar Regionale banken">#</a></h3>
+<p>Regionale banken moeten zich richten op use cases waarin vertrouwen, lokale marktkennis en eenvoudigere integratie zwaarder wegen dan schaal: treasury-zichtbaarheid, fraudepreventie, Open Banking-betalingen en gereguleerde digitale-gelddiensten.</p>
+<h3 id="fintechs-en-psp-s">Fintechs en PSP's <a class="heading-anchor" href="#fintechs-en-psp-s" aria-label="Link naar Fintechs en PSP's">#</a></h3>
+<p>Fintechs moeten complexiteit voor banken verminderen in plaats van weer een geïsoleerde rail toevoegen. De beste proposities brengen orkestratie, compliance-bewijs of data-intelligentie.</p>
+<h3 id="corporate-treasurers">Corporate treasurers <a class="heading-anchor" href="#corporate-treasurers" aria-label="Link naar Corporate treasurers">#</a></h3>
+<p>Treasurers moeten meetbare verbeteringen eisen: minder betalingsherstel, betere liquiditeitszichtbaarheid, rijkere reconciliatiedata, snellere afwikkeling en sterkere controle over geautomatiseerde beslissingen.</p>
+<h2 id="conclusie">Conclusie <a class="heading-anchor" href="#conclusie" aria-label="Link naar Conclusie">#</a></h2>
+<p>AI als besturingssysteem van betalingen is uiteindelijk een architectuurvraag. De instellingen die winnen, zijn niet die met de meeste pilots of het luidste innovatiejargon. Het zijn de instellingen die klantworkflows, datakwaliteit, rail-orkestratie, ingebedde compliance en eenheidseconomie samenbrengen in een coherent operatiemodel.</p>
+<h2 id="veelgestelde-vragen">Veelgestelde vragen <a class="heading-anchor" href="#veelgestelde-vragen" aria-label="Link naar Veelgestelde vragen">#</a></h2>
+<p><strong>Waarom is dit onderwerp urgent in 2026?</strong></p>
+<p>Omdat de relevante infrastructuur, regelgeving en klantvraagsignalen convergeren. Wat optionele experimentatie was, wordt nu onderdeel van het bankoperatiemodel.</p>
+<p><strong>Wat is het grootste implementatierisico?</strong></p>
+<p>Het grootste risico is fragmentatie: afzonderlijke teams bouwen afzonderlijke pilots, elk met andere data, controles, governance en economie.</p>
+<p><strong>Wat moet een bank als eerste bouwen?</strong></p>
+<p>Een bank moet starten met de workflow waar meetbare waarde ligt, zoals snellere afwikkeling, lagere reconciliatiekosten, minder onderzoeken, verbeterde fraudepreventie of betere liquiditeitszichtbaarheid.</p>
+<p><strong>Hoe moet succes worden gemeten?</strong></p>
+<p>Succes moet worden gemeten aan eenheidseconomie, veerkrachtbewijs, datakwaliteit, klantadoptie, vermindering van operationeel risico en verbetering van liquiditeit of werkkapitaal.</p>
+<h2 id="referenties">Referenties <a class="heading-anchor" href="#referenties" aria-label="Link naar Referenties">#</a></h2>
+<ul>
+<li>J.P. Morgan, (2026). <a href="https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026" title="Payments Outlook">Payments Outlook: Five Trends Powering Payments in 2026 ⧉</a>.</li>
+<li>Association of Corporate Treasurers, (2026). <a href="https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026" title="Payments landscape update">Update on the Payments landscape – May 2026 ⧉</a>.</li>
+<li>Standard Chartered, (2026). <a href="https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/" title="Six forces shaping Treasury in 2026">Six forces shaping Treasury in 2026 ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Laatst beoordeeld <time datetime="2026-05-27">2026-05-27</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Over de auteur"><img alt="Portret van Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/nl/over/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior technoloog in banking; schrijft over toegepaste AI, ISO 20022-migratie, post-kwantumcryptografie voor financiële dienstverlening en de structurele transformatie van het wholesale-betalingsverkeer.</span><span class="author-credentials">20+ jaar ervaring bij HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/nl/over/index.html">Volledig profiel</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Laatst herzien <time datetime="2026-05-30">2026-05-30</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Verwante artikelen</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/nl/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026" class="related-media" aria-label="ISO 20022 na migratie: betaaldata omzetten in bankproducten in 2026" tabindex="-1"><img alt="ISO 20022 payment data product diagram showing structured addresses, purpose codes, reconciliation, fraud detection, liquidity forecasting, sanctions screening, and analytics products" src="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="iso-20022-na-migratie-betaaldata-omzetten-in-bankproducten-in-2026"><a href="https://sebastienrousseau.com/nl/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026">ISO 20022 na migratie: betaaldata omzetten in bankproducten in 2026</a> <a class="heading-anchor" href="#iso-20022-na-migratie-betaaldata-omzetten-in-bankproducten-in-2026" aria-label="Link naar ISO 20022 na migratie: betaaldata omzetten in bankproducten in 2026">#</a></h3><p><time datetime="2026-05-29">2026-05-29</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/nl/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026" class="related-media" aria-label="Agentische betalingen in banking: toestemming en aansprakelijkheid 2026" tabindex="-1"><img alt="Agentic payments architecture diagram showing AI agents, consent mandates, tokenised credentials, card networks, banks, merchants, and audit trails" src="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="agentische-betalingen-in-banking-toestemming-en-aansprakelijkheid-2026"><a href="https://sebastienrousseau.com/nl/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026">Agentische betalingen in banking: toestemming en aansprakelijkheid 2026</a> <a class="heading-anchor" href="#agentische-betalingen-in-banking-toestemming-en-aansprakelijkheid-2026" aria-label="Link naar Agentische betalingen in banking: toestemming en aansprakelijkheid 2026">#</a></h3><p><time datetime="2026-05-23">2026-05-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/nl/2026-05-19-global-wholesale-payments-economics-2026" class="related-media" aria-label="Mondiaal wholesalebetalingsverkeer in 2026: ISO 20022, vernieuwing van RTGS en de economie van interoperabiliteit" tabindex="-1"><img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/api/transform?url=/stocks/images/meiying-ng-OrwkD-iWgqg.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="mondiaal-wholesalebetalingsverkeer-in-2026-iso-20022-vernieuwing-van-rtgs-en-de-"><a href="https://sebastienrousseau.com/nl/2026-05-19-global-wholesale-payments-economics-2026">Mondiaal wholesalebetalingsverkeer in 2026: ISO 20022, vernieuwing van RTGS en de economie van interoperabiliteit</a> <a class="heading-anchor" href="#mondiaal-wholesalebetalingsverkeer-in-2026-iso-20022-vernieuwing-van-rtgs-en-de-" aria-label="Link naar Mondiaal wholesalebetalingsverkeer in 2026: ISO 20022, vernieuwing van RTGS en de economie van interoperabiliteit">#</a></h3><p><time datetime="2026-05-19">2026-05-19</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Bronnen en referenties</h2><ol class="article-sources-list"><li><a href="https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026" rel="external noopener nofollow"><span class="source-host">www.jpmorgan.com</span><span class="source-path">/insights/payments/trends-innovation/payments-outlook-trends-2026</span></a></li></ol></aside><nav class="post-pagination" aria-label="Artikelnavigatie"><a class="post-pagination-prev" href="/nl/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/"><span class="post-pagination-label">Vorige</span><span class="post-pagination-title">Magnifica Humanitas: An AI-Industry Reading of the First Papal Encyclical on Artificial Intelligence</span></a><a class="post-pagination-next" href="/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">Volgende</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/nl/over/index.html">Over mij</a></li>
+              <li><a href="/nl/contact/index.html">Contact</a></li>
+              <li><a href="/nl/gemaakt-met-statische-sitegenerator/index.html">Gemaakt met Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Publicaties</h2>
+            <ul>
+              <li><a href="/nl/artikelen/index.html">Artikelen</a></li>
+              <li><a href="/nl/publicaties/index.html">Publicaties</a></li>
+              <li><a href="/nl/labels/index.html">Labels</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Werk</h2>
+            <ul>
+              <li><a href="/nl/projecten/index.html">Projecten</a></li>
+              <li><a href="/nl/afspeellijsten/index.html">Afspeellijsten</a></li>
+              <li><a href="/nl/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Netwerk</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Aanmelding nieuwsbrief">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — onderzoeksnotities over betalingen, AI en post-kwantumcryptografie. Geen spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="jij@bank.nl" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Abonneren</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Sociale netwerken">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau op Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau op LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau op Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau op YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/nl/toegankelijkheid/index.html">Toegankelijkheid</a> ·
+            <a href="/nl/privacy/index.html">Privacy</a> ·
+            <a href="/nl/voorwaarden/index.html">Voorwaarden</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"nl"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"nl"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":906,"about":{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]},"headline":"AI als besturingssysteem van betalingen: fraude, routering, veerkracht en compliance in 2026","description":"AI wordt in 2026 het besturingssysteem van betalingen: van analytics naar fraudepreventie, betalingsherstel, routering, liquiditeitsprognose, compliance-screening en agentic-commerce-controles.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp","width":"100vw","height":"100vh","caption":"Diagram van een AI-besturingssysteem voor betalingen met fraudescoring, multi-rail routering, liquiditeitsprognose, ISO 20022-data, compliance-screening en uitzonderingsherstel"},"url":"https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/","datePublished":"2026-05-27T06:06:06+00:00","dateModified":"2026-05-27","inLanguage":"nl","keywords":"AI-besturingssysteem betalingen 2026, betalingsfraude, routering, realtime fraudepreventie, ISO 20022 AI, veerkracht betalingen, transactieanalyse, liquiditeitsprognose, FedNow, RTP, agentic commerce","articleSection":"Finance","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"nl"},"citation":[{"@type":"CreativeWork","url":"https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/nl/"},{"@type":"ListItem","position":3,"name":"AI als besturingssysteem van betalingen: fraude, routering, veerkracht en compliance in 2026","item":"https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Zoeken">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Zoeken</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Zoeken">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Documentatie doorzoeken..." autocomplete="off" aria-label="Zoeken"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> sluiten</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigeren</span><span><kbd>Enter</kbd> openen</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"AI als besturingssysteem van betalingen: fraude, routering, veerkracht en compliance in 2026","url":"https://sebastienrousseau.com/nl/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/","inLanguage":"nl-NL","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"AI-besturingssysteem betalingen 2026, betalingsfraude, routering, realtime fraudepreventie, ISO 20022 AI, veerkracht betalingen, transactieanalyse, liquiditeitsprognose, FedNow, RTP, agentic commerce","dependencies":["ISO 20022"]}</script></body>
+</html>

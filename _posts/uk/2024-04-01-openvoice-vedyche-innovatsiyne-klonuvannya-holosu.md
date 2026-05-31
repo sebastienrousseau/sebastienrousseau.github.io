@@ -1,13 +1,13 @@
 ---
 title: "[UK DRAFT] OpenVoice: Leading Innovation in Voice Cloning Technology"
-subtitle: "The Next-Gen Open-Source Voice Cloning Tool"
+subtitle: "Інструмент нового покоління для клонування голосу з відкритим кодом"
 description: "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing."
 date: "Apr 01, 2024"
 language: "uk-UA"
 locale: "uk_UA"
 banner: "https://cloudcdn.pro/stocks/images/open-voice.webp"
-banner_alt: "Banner of Vibrant gradient overlay on repeated profiles"
-keywords: "OpenVoice, Voice Cloning Technology, AI Synthetic Speech, Open-Source Voice Cloning, Cross-Lingual Voice Synthesis, Instant Voice Cloning, Voice Style Control, Accessibility Voice Tech, Entertainment Industry Voices, Customer Service Voice AI"
+banner_alt: "Банер з яскравим градієнтним накладенням на повторювані профілі"
+keywords: "OpenVoice, Технологія клонування голосу, AI синтетичне мовлення, Клонування голосу з відкритим кодом, Міжмовний синтез голосу, Миттєве клонування голосу, Управління стилем голосу, Голосові технології для доступності, Голоси для індустрії розваг, AI голосовий асистент для обслуговування клієнтів"
 ---
 
 ![Banner of Vibrant gradient overlay on repeated profiles](https://cloudcdn.pro/stocks/images/open-voice.webp).class=\"img-fluid clearfix\"

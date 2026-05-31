@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 28 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 28 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>Цифровые активы в 2026: инфраструктурный переход, который банки не могут откладывать — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Цифровые активы перестали быть ставкой на инновацию. Это вопрос архитектуры расчётов, хранения и баланса. Стратегическая задача банков — проектировать инфраструктуру в условиях структурной неопределённости.">
+<meta name="keywords" content="цифровые активы 2026, токенизированные реальные активы, стейблкоины банки, токенизированные депозиты, кастоди цифровых активов, DLT в банках, инфраструктура расчётов, мобильность обеспечения, программируемые деньги, стратегия банка по цифровым активам">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Digital Assets 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-JC7xSBuQTyrwzzprXJ7mDCGOoGqbBaaUTChvxN5QYGY=' 'sha256-uIdeCDRxlf2d4e+tnHnvC41BWMq0fXEvI87peHTP4vk=' 'sha256-vPjz3BlqTOvlgQhebiYyzpJaB1u00kc3aNE5TLyhjYU=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/ru/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Лента Atom" href="/ru/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Цифровые активы в 2026: инфраструктурный переход, который банки не могут откладывать — Sebastien Rousseau">
+<meta property="og:description" content="Цифровые активы перестали быть ставкой на инновацию. Это вопрос архитектуры расчётов, хранения и баланса. Стратегическая задача банков — проектировать инфраструктуру в условиях структурной неопределённости.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/corporate-finance.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Цифровые активы в 2026: инфраструктурный переход, который банки не могут откладывать — Sebastien Rousseau">
+<meta name="twitter:description" content="Цифровые активы перестали быть ставкой на инновацию. Это вопрос архитектуры расчётов, хранения и баланса. Стратегическая задача банков — проектировать инфраструктуру в условиях структурной неопределённости.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/corporate-finance.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Перейти к основному содержанию</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Переключить навигацию" />
+      <div class="wrap">
+        <a class="ap-brand" href="/ru/index.html" aria-label="Главная страница Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Основная навигация">
+          <ul class="ap-menu">
+            <li><a href="/ru/o-mne/index.html">Обо мне</a></li>
+            <li><a href="/ru/stati/index.html" aria-current="page" class="active">Статьи</a></li>
+            <li><a href="/ru/publikatsii/index.html">Публикации</a></li>
+            <li><a href="/ru/temy/index.html">Темы</a></li>
+            <li><a href="/ru/proekty/index.html">Проекты</a></li>
+            <li><a href="/ru/pleilisty/index.html">Плейлисты</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Включить тёмную тему" aria-pressed="false" title="Сменить тему">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Поиск (Cmd или Ctrl + K)" title="Поиск (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Язык">
+            <button type="button" class="ap-lang-toggle" aria-label="RU, Сменить язык" aria-expanded="false" aria-haspopup="menu" title="Сменить язык">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">RU</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/ru/kontakty/index.html" aria-label="Связаться со мной">Связаться со мной ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Переключить навигацию">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Цифровые активы в 2026: инфраструктурный переход, который банки не могут откладывать</h1>
+      <p class="sub">Стейблкоины, токенизированные депозиты и токенизация реальных активов сходятся в один вопрос — инфраструктуры расчётов. Банк, спроектировавший оркестрацию, контроль и сосуществование нескольких рельсов, определит следующее десятилетие рынков капитала.</p>
+    <nav class="article-tags" aria-label="Темы"><a href="/tags/index.html#h3-2026" class="article-tag" rel="tag">цифровые активы 2026</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">токенизированные реальные активы</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">стейблкоины банки</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">токенизированные депозиты</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">кастоди цифровых активов</a><a href="/tags/index.html#h3-dlt" class="article-tag" rel="tag">DLT в банках</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">инфраструктура расчётов</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">мобильность обеспечения</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">программируемые деньги</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">стратегия банка по цифровым активам</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-28T06:06:06+00:00" class="meta-pub">Опубликовано 28 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Примерное время чтения">16 мин. чтения</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Содержание</h2><ol><li><a href="#2026">Почему 2026 — год, когда цифровые активы стали вопросом архитектуры</a></li><li><a href="#section-2">Три класса активов: разная экономика, разная архитектура</a></li><li><a href="#section-6">Влияние на банки: выручка под угрозой, выручка адресуемая</a></li><li><a href="#section-7">Архитектурные принципы, которые имеют значение</a></li><li><a href="#section-12">Контроль рисков: почему ПОД, хранение и смарт-контракты ограничивают рост</a></li><li><a href="#section-16">Регулирование: сходящиеся намерения, расходящаяся архитектура</a></li><li><a href="#section-17">Что это означает по типам банков</a></li><li><a href="#section-22">Пять практических шагов</a></li><li><a href="#section-23">Заключение</a></li><li><a href="#section-24">Часто задаваемые вопросы</a></li><li><a href="#section-25">Ссылки</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Цифровые активы перестали быть ставкой на инновацию. Это вопрос архитектуры расчётов, хранения и баланса. Стратегическая задача банков — проектировать инфраструктуру в условиях структурной неопределённости.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Почему 2026 — год, когда цифровые активы стали вопросом архитектуры.</strong> Разговор о цифровых активах изменился.</li>  <li><strong>Три класса активов: разная экономика, разная архитектура.</strong> BCG разделяет цифровые активы на три категории, которые внешне похожи, но несут принципиально разную экономику и стратегические импликации.</li>  <li><strong>Влияние на банки: выручка под угрозой, выручка адресуемая.</strong> BCG моделирует четыре сценария эволюции цифровых активов — от частной быстрой экспансии до регуляторного ограничения и оборонительного сброса.</li>  <li><strong>Архитектурные принципы, которые имеют значение.</strong> Взгляд CTO BCG выделяет семь принципов технологической стратегии для цифровых активов.</li></ul></aside><h1>Цифровые активы в 2026: инфраструктурный переход, который банки не могут откладывать</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>Цифровые активы перестали быть ставкой на инновацию. Это вопрос архитектуры расчётов, хранения и баланса. Стратегическая задача банков — проектировать инфраструктуру в условиях структурной неопределённости.</p>
+<hr />
+<blockquote>
+<p><strong>Резюме для руководства / Ключевые выводы</strong></p>
+<ul>
+<li><strong>Цифровые активы — это инфраструктурный переход, а не инновационная тема.</strong> Криптовалюты — класс активов на ~3 трлн долларов, стейблкоины достигли ~300 млрд долларов, а токенизированные реальные активы выросли примерно на 300% в 2025 году. Майский флагманский отчёт BCG за 2026 год формулирует это как стратегический вопрос управления и баланса для совета директоров любого банка, а не как любопытство для финтех-сцены (<a href="https://www.bcg.com" title="BCG, «Будущее цифровых активов», май 2026">BCG, The Future of Digital Assets, May 2026</a>).</li>
+<li><strong>Главный структурный риск — это не отдельный продукт.</strong> Это потеря клиентского интерфейса, значимости баланса и контроля над критической инфраструктурой расчётов в пользу небанковских платформ. В сценарии быстрой цифровой экспансии BCG к 2035 году балансы банков могут сократиться на ~10%, выручка — на ~14%, а прибыль — на ~30% по сравнению с базовой линией без цифровых активов.</li>
+<li><strong>Главная структурная возможность не менее очевидна.</strong> Торговые подразделения могут получить прирост RoE до ~4%, управляющие активами — рост выручки на 15–30%, а розничные и корпоративные банки — сотни миллионов дополнительной годовой выручки каждый, если банки уже сейчас встраивают кошельки, кастоди, токенизированные фонды и сервисы программируемого казначейства в свои операционные модели.</li>
+<li><strong>Побеждает модель оркестрации.</strong> Институт, способный маршрутизировать платежи по стейблкоинам, токенизированным депозитам, CBDC и легаси-рельсам с хранением банковского уровня, встроенным комплаенсом и мульти-чейн архитектурой, определит следующий расчётный стек. Те, кто медлит, будут подключаться к чужой инфраструктуре (<a href="https://sebastienrousseau.com/ru/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026" title="Стейблкоины против токенизированных депозитов в 2026">Sebastien Rousseau, Stablecoins vs Tokenised Deposits</a>).</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="2026">Почему 2026 — год, когда цифровые активы стали вопросом архитектуры <a class="heading-anchor" href="#2026" aria-label="Ссылка на Почему 2026 — год, когда цифровые активы стали вопросом архитектуры">#</a></h2>
+<p>Разговор о цифровых активах изменился. Дискуссия больше не идёт о том, есть ли у блокчейна место в финансовых сервисах. Вопрос в том, где в цепочке создания стоимости — расчёты, хранение, эмиссия, управление обеспечением, платежи, казначейство, дистрибуция — банку нужно владеть инфраструктурой, где он может опираться на партнёров и где промедление создаёт необратимую зависимость.</p>
+<p>Изменение объясняют три точки данных. Криптовалюты остаются классом активов с рыночной капитализацией около 3 трлн долларов и оценённым годовым пулом выручки порядка ~90 млрд долларов — высокомаржинальным и коммерчески значимым для любого института с институциональной клиентской базой. Стейблкоины достигли ~300 млрд долларов в обращении — около 0,5% мировой денежной массы M2 — с устойчивым ростом по мере достижения полной регуляторной ясности в ключевых юрисдикциях. А токенизированные реальные активы (RWA), хотя в конце 2025 года их объём в публичных сетях составлял около 30 млрд долларов, выросли примерно на 300% год к году и представляют категорию с самой глубокой структурной значимостью для банковской отрасли на ближайшее десятилетие. По данным RWA.xyz, к середине мая 2026 года стоимость on-chain RWA достигла 31,4 млрд долларов, и почти весь рост обусловлен институциональным спросом на on-chain доходность, токенизированные продукты на основе Treasury и фонды денежного рынка.</p>
+<p>Майский флагманский отчёт BCG за 2026 год <em>The Future of Digital Assets</em> описывает это как стратегический инфраструктурный переход, сопоставимый с переходом телекоммуникаций от коммутации каналов к пакетным IP-сетям, — миграцию двойных рельсов, занявшую два десятилетия. Отчёт утверждает, что банки будут эксплуатировать легаси- и токенизированную инфраструктуру параллельно годами, и что стратегическая цель состоит не в предсказании рельса-победителя, а в сохранении системной значимости независимо от того, какой рельс масштабируется.</p>
+<p>В этой статье рассматривается рамка BCG через призму практической архитектуры банковских технологий — слоя, где стратегия либо становится операционной, либо остаётся презентацией. Анализ опирается на предыдущие материалы о <a href="https://sebastienrousseau.com/ru/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026" title="Стейблкоины против токенизированных депозитов в 2026">стейблкоинах против токенизированных депозитов</a>, <a href="https://sebastienrousseau.com/ru/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026" title="Программируемая ликвидность в 2026">программируемой ликвидности</a>, <a href="https://sebastienrousseau.com/ru/2026-05-21-tokenised-deposits-banking-services-status-2026" title="Токенизированные депозиты в 2026">сервисах токенизированных депозитов</a> и <a href="https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" title="DORA, AI Act ЕС и суверенитет данных">комплаенс-стеке DORA, AI Act и суверенитета данных</a>, чтобы связать видение BCG с тем, что банкам реально нужно строить, контролировать и подтверждать доказательствами.</p>
+<h2 id="section-2">Три класса активов: разная экономика, разная архитектура <a class="heading-anchor" href="#section-2" aria-label="Ссылка на Три класса активов: разная экономика, разная архитектура">#</a></h2>
+<p>BCG разделяет цифровые активы на три категории, которые внешне похожи, но несут принципиально разную экономику и стратегические импликации.</p>
+<h3 id="cbdc">Цифровые деньги: стейблкоины, токенизированные депозиты, CBDC <a class="heading-anchor" href="#cbdc" aria-label="Ссылка на Цифровые деньги: стейблкоины, токенизированные депозиты, CBDC">#</a></h3>
+<p>Цифровые деньги — частные стейблкоины, банковские токенизированные депозиты и цифровые валюты центральных банков — расположены ближе всего к ядру финансовой системы. Архитектурный вопрос в том, какая форма цифровых денег обслуживает какой расчётный сценарий и как банк защищает свою депозитную базу, одновременно используя преимущества программируемых расчётов.</p>
+<p>Стейблкоины сегодня — доминирующая форма. Примерно 65% из ~300 млрд долларов в обращении связаны с криптоторговлей и DeFi, около 25% обслуживают спрос на средство сбережения (преимущественно долларовая экспозиция на развивающихся рынках), и только около 10% — реальные платежи в экономике, но именно этот сегмент растёт быстрее всего. По оценке BCG, реальные двусторонние стейблкоин-платежи за товары и услуги достигли 350–550 млрд долларов в 2025 году, и B2B — крупнейший сегмент с долей около 40%.</p>
+<p>Дискуссия о бегстве депозитов реальна, но ограничена. BCG утверждает: в отсутствие фундаментальной смены денежно-кредитного режима — когда стейблкоины становятся законным платёжным средством, выплачивают проценты и страхуются — около 15% мировой денежной массы M2 (около 9 трлн долларов на уровне 2025 года) представляют естественный верхний предел адопции стейблкоинов, ограниченный динамикой доходности, обратной связью кредитной системы и институциональной структурой.</p>
+<p>Для более глубокого анализа конкурентной динамики стейблкоинов и токенизированных депозитов — включая контрагентский риск, фрагментацию интероперабельности и рамку единого реестра BIS — см. мою более раннюю статью о <a href="https://sebastienrousseau.com/ru/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026" title="Стейблкоины против токенизированных депозитов в 2026">стейблкоинах против токенизированных депозитов</a>. Отчёт BCG усиливает этот анализ: токенизированные депозиты наиболее полезны крупнотранзакционным банкам с внутренними расчётами и оптовыми платёжными сценариями, тогда как стейблкоины побеждают там, где стороны не связаны эффективными платёжными рельсами или уже взаимодействуют в публичных сетях.</p>
+<p>Архитектурное следствие в том, что банкам нужно проектировать сосуществование, а не выбор единственного победителя. Решение о маршрутизации — какая форма цифровых денег обслуживает какую транзакцию — должно приниматься по стоимости, скорости, финальности, юрисдикции, предпочтению клиента и устойчивости. Именно эта модель оркестрации описана в <a href="https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" title="DORA, AI Act ЕС и суверенитет данных">комплаенс-стеке DORA</a>.</p>
+<h3 id="section-4">Токенизированные реальные активы: трансформация рынков капитала <a class="heading-anchor" href="#section-4" aria-label="Ссылка на Токенизированные реальные активы: трансформация рынков капитала">#</a></h3>
+<p>Токенизированные RWA — облигации, фонды, акции, товары, альтернативные активы, представленные как on-chain токены с юридически защищёнными правами требования, — там сосредоточена самая глубокая структурная значимость для банковской отрасли. Отчёт BCG прогнозирует: в прогрессивных сценариях около 16% мировых инвестируемых активов могут быть токенизированы к 2035 году, при этом адопцию возглавят инструменты денежного рынка (проникновение 25–40%), секьюритизированный долг (20–30%) и альтернативные активы (25–35%). Государственные облигации (3–5%) и листинговые акции (3–7%) отстают из-за ограничений управления, структуры рынка и доминирования бирж.</p>
+<p>Экономический кейс наиболее очевиден в расчётах и пост-трейде. По оценке BCG, для глобального банка с ежедневным объёмом репо в 100 млрд долларов годовая экономия составит 150–300 млн долларов за счёт снижения простаивающего обеспечения и ускорения циклов расчётов. Платформа DLR компании Broadridge сообщила о январских 2026 года среднедневных объёмах в 365 млрд долларов и росте 508% год к году — это институциональная адопция производственного уровня в масштабе. Tokenised Collateral Network от J.P. Morgan и фонд BUIDL от BlackRock показывают, что первопроходцы уже не экспериментируют, а строят операционную инфраструктуру.</p>
+<p>Связь с <a href="https://sebastienrousseau.com/ru/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026" title="Программируемая ликвидность в 2026">программируемой ликвидностью</a> прямая. Токенизированные активы без токенизированных расчётов оставляют трения на денежном интерфейсе, тогда как токенизированные деньги без токенизированных активов — это более быстрая труба, подключённая к медленным пакетным процессам пост-трейда. Объединённое предложение — атомарная поставка против платежа и финальность, близкая к реальному времени. BCG проводит аналогию с ETF: инновацией был не сам актив, а операционная модель — внутридневная ликвидность, создание и погашение в натуре, налоговая эффективность и торгуемость на биржах, — а ранние участники (State Street, iShares, Vanguard) захватили 75–80% мировых активов ETF за счёт самоусиливающихся преимуществ.</p>
+<p>Для подробного разбора заявок BlackRock BRSRV и BSTBL, показывающих, как токенизированные фонды денежного рынка обходят ограничения по доходности стейблкоинов в рамках GENIUS Act, см. мою более раннюю статью о <a href="https://sebastienrousseau.com/ru/2026-05-15-skrytaya-dokhodnost-blackrock-brsrv-bstbl-genius-act" title="Стейблкоин-доходность под другим именем">стратегии BlackRock «стейблкоин-смежная доходность»</a>.</p>
+<h3 id="section-5">Криптовалюты: где выручка сегодня <a class="heading-anchor" href="#section-5" aria-label="Ссылка на Криптовалюты: где выручка сегодня">#</a></h3>
+<p>Криптовалюты — наиболее коммерчески зрелый сегмент: активы примерно на 3 трлн долларов и оценённый годовой пул выручки около ~90 млрд долларов против ~400 млрд долларов выручки от торговли в традиционной банковской и рыночной инфраструктуре на 300 трлн долларов инвестируемых активов. Выход выручки относительно рыночной капитализации структурно высок — 2–4%, что обусловлено скоростью торговли, волатильностью, плечом и круглосуточной глобальной структурой рынка.</p>
+<p>Адресуемый пул для регулируемых финансовых институтов — торговля, деривативы, кастоди и прайм-сервисы, стейкинг — глобально составляет около 55 млрд долларов. У банков есть структурные преимущества в институциональных клиентских отношениях, регуляторной репутации, риск-менеджменте и оптимизации обеспечения. Стратегический вопрос в том, является ли участие оборонительным (удержание клиентских отношений и доли кошелька) или наступательным (поиск дополнительного роста) и какая модель участия — агентская, прайм, дистрибуция или полный стек — соответствует риск-аппетиту и операционным возможностям банка.</p>
+<h2 id="section-6">Влияние на банки: выручка под угрозой, выручка адресуемая <a class="heading-anchor" href="#section-6" aria-label="Ссылка на Влияние на банки: выручка под угрозой, выручка адресуемая">#</a></h2>
+<p>BCG моделирует четыре сценария эволюции цифровых активов — от частной быстрой экспансии до регуляторного ограничения и оборонительного сброса. В самом агрессивном сценарии банки к 2035 году могут столкнуться с балансами, меньшими примерно на 10%, выручкой ниже на 14%, потерей 9% рыночной доли в пользу небанковских финансовых институтов, ростом отношения затрат к доходам на 8 процентных пунктов и прибылью ниже на 30% по сравнению с базовой линией без цифровых активов.</p>
+<p>Три структурные силы создают это давление: токенизация переносит ценность к эмитентам и потребителям, снижая потребность в посредниках; токенизация ускоряет вековой тренд миграции ценности от банков к небанковским финансовым институтам; параллельная работа легаси- и токенизированных рельсов временно дублирует затраты.</p>
+<p>Но отчёт столь же ясно говорит о возможностях. Восходящий анализ для среднего G-SIB с крупным банковским управляющим активами выявляет очень значительный потенциал роста, несмотря на эти встречные ветры.</p>
+<table>
+<thead>
+<tr>
+<th>Бизнес-линия</th>
+<th>Основная возможность</th>
+<th>Иллюстративный потенциал</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Розничный банкинг</strong></td>
+<td>Возврат клиентских активов из небанковских кошельков через банковские кошельки, кастоди, советы и кредитование</td>
+<td>~340–600 млн долларов годовой выручки по мере роста небанковских цифровых активов</td>
+</tr>
+<tr>
+<td><strong>Корпоративный банкинг</strong></td>
+<td>Программируемое казначейство, трансграничные платежи на стейблкоинах, банковские сервисы для крипто-нативных компаний</td>
+<td>~200–600 млн долларов годовой выручки</td>
+</tr>
+<tr>
+<td><strong>Управление активами</strong></td>
+<td>Токенизированные фонды, фракционирование альтернативных активов, повышение эффективности дистрибуции</td>
+<td>Прирост выручки 15–30%, ~1,2–2,5 млрд долларов для управляющего активами с 2 трлн долларов под управлением</td>
+</tr>
+<tr>
+<td><strong>Рынки капитала</strong></td>
+<td>Токенизированная эмиссия, мобильность обеспечения, репо, цифровое хранение, ускоренные расчёты</td>
+<td>Прирост RoE до ~4%, прирост прибыли ~1 млрд долларов и более для среднего G-SIB</td>
+</tr>
+</tbody>
+</table>
+<p>Связь с <a href="https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026" title="ИИ как операционная система платежей">ИИ как операционной системой платежей</a> здесь важна. Та же инфраструктура принятия решений, которая маршрутизирует платежи по множеству рельсов — оценивая по стоимости, скорости, финальности и комплаенсу — применима к оркестрации токенизированных расчётов, on- и off-рэмпов стейблкоинов и мобильности обеспечения. Институты, которые построят этот слой принятия решений один раз — для традиционных и токенизированных рельсов одновременно, — получат структурное ценовое преимущество над теми, кто строит параллельные стеки контролей.</p>
+<h2 id="section-7">Архитектурные принципы, которые имеют значение <a class="heading-anchor" href="#section-7" aria-label="Ссылка на Архитектурные принципы, которые имеют значение">#</a></h2>
+<p>Взгляд CTO BCG выделяет семь принципов технологической стратегии для цифровых активов. Прочитанные вместе с архитектурными базами в <a href="https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" title="DORA, AI Act ЕС и суверенитет данных">комплаенс-стеке DORA</a> и <a href="https://sebastienrousseau.com/ru/2026-05-20-cloud-native-banking-financial-institutions-2026" title="Облачно-нативный банкинг в 2026">облачно-нативном банкинге</a>, они образуют устойчивый паттерн.</p>
+<h3 id="dlt">Относитесь к DLT как к инфраструктуре, а не как к продукту <a class="heading-anchor" href="#dlt" aria-label="Ссылка на Относитесь к DLT как к инфраструктуре, а не как к продукту">#</a></h3>
+<p>Самый частый сценарий провала — изолированные пилоты бизнес-подразделений, каждое из которых выбирает свою сеть, модель кастоди и вендорский стек. Результат — дублирование кошельков, несогласованные модели безопасности и хрупкие интеграции. BCG рекомендует централизованное владение платформой на уровне группового CTO/COO, при том что бизнес-подразделения отвечают за приоритетные сценарии поверх общей рамки контролей. Это напрямую отображается на дисциплину платформенной инженерии, описанную в <a href="https://sebastienrousseau.com/ru/2026-05-20-cloud-native-banking-financial-institutions-2026" title="Облачно-нативный банкинг в 2026">облачно-нативном банкинге</a>, — сосуществование Kubernetes и виртуальных машин, протестированная по DORA устойчивость, суверенное облако и доказательство того, что критические сервисы переживают сбой провайдера.</p>
+<h3 id="section-9">Проектируйте мульти-чейн с самого начала <a class="heading-anchor" href="#section-9" aria-label="Ссылка на Проектируйте мульти-чейн с самого начала">#</a></h3>
+<p>Публичные и частные рельсы будут сосуществовать. Отдельные блокчейны строят собственные экосистемы с уникальными базами пользователей, приложениями и пулами ликвидности. Привязка к одной сети создаёт стратегическую зависимость. Архитектура должна быть chain-agnostic, с встроенной абстракцией и интероперабельностью, чтобы новые сети можно было добавлять без перепроектирования системы. Платформа D7 от Deutsche Börse и BIS Project Agorá — примеры этого подхода «выбирай и смешивай» в действии.</p>
+<h3 id="section-10">Стройте с расчётом на регуляторную обратимость <a class="heading-anchor" href="#section-10" aria-label="Ссылка на Стройте с расчётом на регуляторную обратимость">#</a></h3>
+<p>Правила будут меняться. Конфигурируемые контроли, аудируемость, чистые пути миграции и безопасные механизмы обновления — не опция. Этот принцип центральный для архитектуры комплаенса DORA: способность подтверждать контроль под нагрузкой, поверх on-chain и off-chain систем, во время рыночной волатильности и при координации со сторонними поставщиками. <a href="https://sebastienrousseau.com/ru/2026-05-17-agentnaya-inzheneriya-plan-dlya-bankov-2026" title="Агентная инженерия для банков">Чертёж агентной инженерии</a> развивает это: ИИ-агенты, работающие внутри рабочих процессов с цифровыми активами, требуют того же спецификационно-управляемого governance, мандатов на согласие и аудиторских журналов, что и любой другой автоматизированный банковский процесс.</p>
+<h3 id="section-11">Держите плоскость контроля внутри банка <a class="heading-anchor" href="#section-11" aria-label="Ссылка на Держите плоскость контроля внутри банка">#</a></h3>
+<p>Политика, управление ключами, governance смарт-контрактов, лимиты, доказательства и реагирование на инциденты должны оставаться внутри банка. Партнёрство — для производственных движков, сетевой связности и стандартизированного инструментария там, где имеют значение сетевые эффекты или специализированные компетенции. Покупка — выборочно, когда скорость, лицензии, таланты или дистрибуция ценнее, чем разработка с нуля, но только если интеграция в модель контроля банка реалистична.</p>
+<p>Это та же дисциплина «строить — партнёриться — покупать», что применяется к оркестрации платежей, облачной инфраструктуре и governance ИИ-моделей. Принцип постоянен: владеть тем, что дифференцирует; партнёриться по тому, что стандартизируется; покупать то, что ускоряет.</p>
+<h2 id="section-12">Контроль рисков: почему ПОД, хранение и смарт-контракты ограничивают рост <a class="heading-anchor" href="#section-12" aria-label="Ссылка на Контроль рисков: почему ПОД, хранение и смарт-контракты ограничивают рост">#</a></h2>
+<p>Взгляд CRO BCG делает критически важное замечание, которое часто недооценивается в стратегических дискуссиях по цифровым активам: способность масштабировать выручку ограничена дизайном рамки контролей, а не только спросом или капиталом. В традиционном банкинге контроли сидят вокруг продукта. В программируемых рынках контроли сидят внутри продукта.</p>
+<h3 id="section-13">Финансовая преступность смещается от клиенто-ориентированного к потоко-ориентированному фокусу <a class="heading-anchor" href="#section-13" aria-label="Ссылка на Финансовая преступность смещается от клиенто-ориентированного к потоко-ориентированному фокусу">#</a></h3>
+<p>Стейблкоины сегодня обеспечивают примерно 84% незаконного on-chain транзакционного объёма в мире. На мошенничество, связанное с криптовалютами, приходится около 10% зарегистрированных инцидентов, но примерно 50% общих потерь. Риски ПОД и санкций возникают через потоки транзакций и связность экосистемы, а не только через прямые клиентские отношения. Поведение кошельков, контекст транзакций, кластерные паттерны и сетевые отношения становятся первичными риск-сигналами наряду с профилями клиентов.</p>
+<p>Это тот же сдвиг, что описан в <a href="https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026" title="ИИ как операционная система платежей">ИИ как операционной системе платежей</a>: скоринг мошенничества, санкционные проверки и комплаенс-контроли переходят от периодического пакетного мониторинга к непрерывному вмешательству в реальном времени на основе потоков. Контекст цифровых активов усиливает это требование, поскольку расчёт практически мгновенный и необратимый.</p>
+<h3 id="section-14">Хранение — это контрольный риск первого порядка <a class="heading-anchor" href="#section-14" aria-label="Ссылка на Хранение — это контрольный риск первого порядка">#</a></h3>
+<p>На рынках цифровых активов контроль над приватными ключами определяет контроль над активами, что несёт немедленные юридические и операционные последствия. Юридическое хранение, технический контроль и право давать инструкции могут быть рассогласованы — институт может быть юридическим кастодианом, тогда как технический контроль находится у технологического провайдера или протокола. В первой половине 2025 года более 3 млрд долларов было украдено в ходе 119 криптохаков, причём на централизованные биржи пришлось более половины потерь. Многие инциденты касались компрометации управления ключами и контролей кастоди, а не сбоев блокчейн-протоколов.</p>
+<p>BCG утверждает, что хранение должно быть поднято до того же уровня внимания, что и системно значимая инфраструктура платежей и расчётов. <a href="https://sebastienrousseau.com/ru/2026-05-14-zashchita-knigi-uchyota-postkvantovaya-migratsiya-korporativnykh-finansov" title="Защита реестра: постквантовая миграция">Постквантовая миграция</a> добавляет временное измерение: криптографический ключевой материал, защищающий хранение цифровых активов сегодня, должен быть мигрирован на постквантовые алгоритмы в сроки, которые сокращаются быстрее, чем большинство институтов планировали. G7 опубликовала свою дорожную карту миграции в январе 2026 года, и BIS Project Leap продемонстрировал реализуемость в действующих платёжных системах.</p>
+<h3 id="section-15">Смарт-контрактами нужно управлять как моделями высокого риска <a class="heading-anchor" href="#section-15" aria-label="Ссылка на Смарт-контрактами нужно управлять как моделями высокого риска">#</a></h3>
+<p>Смарт-контракты кодируют допущения, пороги и поведение, которые автоматически и в масштабе определяют результаты. Ошибки кода, неправильная калибровка параметров или непредвиденные взаимодействия между контрактами производят системные эффекты, сопоставимые с модельным риском, но без буферов, традиционно создаваемых ручной проверкой. В 2025 году эксплуатация злонамеренных approvals привела к потерям примерно на 1,5 млрд долларов. BCG рекомендует валидацию до развёртывания, непрерывный мониторинг, контролируемое change management и технически принудительное право эскалации и вмешательства, интегрированные в более широкую риск-рамку.</p>
+<h2 id="section-16">Регулирование: сходящиеся намерения, расходящаяся архитектура <a class="heading-anchor" href="#section-16" aria-label="Ссылка на Регулирование: сходящиеся намерения, расходящаяся архитектура">#</a></h2>
+<p>BCG выделяет четыре регуляторных архетипа — рыночно-ориентированный (США, Канада, Бразилия), специальный режим (ЕС, Великобритания, Япония), конкурентный хаб (Сингапур, Швейцария, Гонконг, ОАЭ) и суверенно-контролируемый (континентальный Китай). Намерения политики в целом согласованы вокруг финансовой стабильности, целостности рынка, контролей ПОД и операционной устойчивости, но перевод в принудительные правила остаётся неравномерным.</p>
+<p>Рамка MiCA в ЕС наиболее предписывающая: требует авторизации эмитентов токенов электронных денег, полностью сегрегированного резервного обеспечения, принудительного погашения по номиналу и запрета на выплату процентов эмитентами EMT. В США дискуссия сместилась от законодательного дизайна к имплементации: рамка GENIUS определяет категории эмитентов и стандарты резервов, а переговоры продолжаются о механизмах доходности и более широкой структуре рынка.</p>
+<p>Два вопроса остаются особенно дискуссионными: могут ли стейблкоины выплачивать доходность и что является приемлемыми активами обеспечения и управлением ликвидностью под нагрузкой. Эти дебаты — прокси для более глубоких вопросов о замещении депозитов, динамике набегов и устойчивости бизнес-моделей эмитентов.</p>
+<p>Для банков практическое следствие — проектировать с расчётом на стойко мультирежимную реальность, а не на единое глобальное конечное состояние. <a href="https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" title="DORA, AI Act ЕС и суверенитет данных">Комплаенс-стек DORA</a> и анализ <a href="https://sebastienrousseau.com/ru/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026" title="Forward-план UK Payments">UK Payments Forward Plan</a> усиливают это: модульные операционные модели с параметризованными контролями, чтобы банк мог изолировать, перенаправлять или выходить из рынков по мере эволюции правил.</p>
+<h2 id="section-17">Что это означает по типам банков <a class="heading-anchor" href="#section-17" aria-label="Ссылка на Что это означает по типам банков">#</a></h2>
+<h3 id="section-18">Глобальные банки <a class="heading-anchor" href="#section-18" aria-label="Ссылка на Глобальные банки">#</a></h3>
+<p>Глобальные банки должны создавать платформенную оркестрацию, чтобы каждый рынок, рельс, токен и модель хранения не становились отдельной операционной моделью. BCG рекомендует централизованное владение архитектурой DLT, мульти-чейн проектирование и общую рамку контролей. Преимущество первого хода сильнее всего в инфраструктуре расчётов, мобильности обеспечения и дистрибуции токенизированных фондов, где масштаб создаёт самоусиливающиеся сетевые эффекты. Последовательность должна быть такой: сначала реестро-агностичная платформа и контроли, затем сценарии высокой ценности (репо, обеспечение, токенизированные фонды), затем постепенное расширение экспозиции по реестрам.</p>
+<h3 id="section-19">Региональные банки <a class="heading-anchor" href="#section-19" aria-label="Ссылка на Региональные банки">#</a></h3>
+<p>Региональные банки сталкиваются с вопросом доступности затрат на построение новой DLT-инфраструктуры, когда выгоды могут быть ограничены при отсутствии стандартов интероперабельности или общей расчётной площадки. BCG утверждает: для банков, не входящих в число крупнейших глобально, токенизированный депозит без интероперабельности — скорее функция, чем стратегический актив. Лучшая стратегия — дорожная карта интероперабельности: участие в отраслевых консорциумах, приоритет клиентского кошелька как якоря доверия и фокус на сценариях, где знание локального рынка и регулируемое хранение бьют масштаб, — видимость казначейства, предотвращение мошенничества, платежи Open Banking и on-/off-рэмпы стейблкоинов.</p>
+<h3 id="psp">Финтехи и PSP <a class="heading-anchor" href="#psp" aria-label="Ссылка на Финтехи и PSP">#</a></h3>
+<p>Рынок теперь предлагает строительные блоки производственного уровня как на технологическом, так и на операционно-сервисном уровне. Лучшие предложения принесут оркестрацию, комплаенс-доказательства или интеллект данных — снижая сложность для банков, а не добавляя ещё один изолированный рельс. Это тот же принцип, что выделен в анализе <a href="https://sebastienrousseau.com/ru/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026" title="Агентные платежи в банкинге">агентных платежей</a>: финтех, предоставляющий инфраструктуру согласия, границы ответственности и готовые к аудиту доказательства наряду с исполнением платежа, превзойдёт того, кто просто предоставляет более быструю трубу.</p>
+<h3 id="section-21">Управляющие активами <a class="heading-anchor" href="#section-21" aria-label="Ссылка на Управляющие активами">#</a></h3>
+<p>Токенизация — это история структурного роста, а не оборонительная история. Основные рычаги: увеличение захвата активов, ныне не приносящих комиссию, в управляемые структуры; сдвиги в продуктовом миксе в сторону более высокомаржинальных альтернативных активов через фракционирование и масштабируемую дистрибуцию; и расширение сервисного стека через программируемое управление жизненным циклом фонда. BCG проводит аналогию с ETF явно: инкумбенты сначала недооценили ETF, потому что те казались экономически избыточными, но инновацией была операционная модель. Та же динамика применима к токенизированным фондам.</p>
+<h2 id="section-22">Пять практических шагов <a class="heading-anchor" href="#section-22" aria-label="Ссылка на Пять практических шагов">#</a></h2>
+<p>BCG завершает отчёт десятишаговым руководством. В сжатии до пяти ближайших приоритетов на следующие двенадцать месяцев:</p>
+<p><strong>Квантифицируйте экономику.</strong> В течение 90 дней смоделируйте по бизнес-линиям: пулы выручки под угрозой, адресуемые пулы выручки, чувствительность депозитов и ликвидности, ожидаемую стоимость двойных рельсов. Без квантифицированной экспозиции цифровые активы остаются абстракцией.</p>
+<p><strong>Зафиксируйте амбицию и governance.</strong> Выберите архетип амбиции для каждой релевантной бизнес-линии — оборонительный интегратор, масштабный участник или формирующий инфраструктуру. Назначьте одного подотчётного исполнительного спонсора. Установите ритм пересмотра на уровне совета директоров, привязанный к сценарным индикаторам.</p>
+<p><strong>Закрепите клиентский интерфейс сейчас.</strong> Приоритизируйте безопасные возможности кошелька и хранения, плюс клиентскую оркестрацию on- и off-рэмпов, советов и отчётности. Кошелёк защищает клиентские отношения независимо от того, какой инструмент денег в итоге побеждает.</p>
+<p><strong>Индустриализируйте 2–3 сценария высокой ценности.</strong> Типичные кандидаты: трансграничное казначейство и программируемая ликвидность, токенизированные фонды и альтернативные активы, репо и мобильность обеспечения, а также избирательные крипто-сервисы для существующих клиентов. Избегайте токенизации в поисках задачи.</p>
+<p><strong>Постройте плоскость контроля банковского уровня.</strong> Поднимите общую DLT-платформу, управление ключами, governance смарт-контрактов, инструменты ПОД, отчётность, партнёрскую рамку и пути выхода. Первый продакшн-кейс должен работать на тех же контролях, от которых будет зависеть последующее масштабирование.</p>
+<h2 id="section-23">Заключение <a class="heading-anchor" href="#section-23" aria-label="Ссылка на Заключение">#</a></h2>
+<p>Цифровые активы в 2026 году — это не вопрос инновации. Это вопрос архитектуры расчётов, хранения, комплаенса и баланса. Отчёт BCG формулирует это как структурный переход, сопоставимый с миграцией двойных рельсов в телеком-индустрии, где стратегическая цель состоит не в предсказании рельса-победителя, а в сохранении значимости в множестве правдоподобных будущих сценариев.</p>
+<p>Институты, которые сформируют следующий расчётный стек, — это те, кто проектирует под оркестрацию сейчас: мульти-рельс, мульти-чейн, мульти-валютный подход, с контролями банковского уровня, встроенными в продукт, а не наслоёнными вокруг него. Те, кто медлит, окажутся подключёнными к инфраструктуре, спроектированной другими, на условиях, заданных другими.</p>
+<p>Архитектурные принципы постоянны по всем темам, охваченным в этой серии, — платежи, казначейство, комплаенс, облако, ИИ и теперь цифровые активы. Рабочий процесс прежде всего, данные как плоскость контроля, оркестрация по рельсам и платформам, встроенный комплаенс и доказательства, юнит-экономика, оправдывающая масштабирование. Технологические ярлыки меняются; дисциплина проектирования — нет.</p>
+<h2 id="section-24">Часто задаваемые вопросы <a class="heading-anchor" href="#section-24" aria-label="Ссылка на Часто задаваемые вопросы">#</a></h2>
+<p><strong>Почему тема актуальна в 2026 году?</strong></p>
+<p>Потому что сошлись регуляторная ясность (MiCA, GENIUS Act, рамки Великобритании), производственные институциональные платформы (Broadridge DLR, Kinexys, BlackRock BUIDL) и измеримые объёмы стейблкоин-платежей. Это перевело цифровые активы из стадии экспериментов в операционную инфраструктуру. Часы стоимости двойных рельсов уже тикают.</p>
+<p><strong>Какой самый большой риск внедрения?</strong></p>
+<p>Самый большой риск — архитектурная фрагментация: отдельные бизнес-подразделения строят отдельные DLT-пилоты, каждый со своими сетями, моделями хранения, вендорскими стеками и рамками контролей. Это создаёт дублирование затрат, несогласованную безопасность и отсутствие пути к масштабу.</p>
+<p><strong>Что банку следует строить в первую очередь?</strong></p>
+<p>Безопасный клиентский кошелёк и реестро-агностичную плоскость контроля — управление ключами, принудительное применение политик, мониторинг, аудиторские доказательства и интеграционные паттерны. Это создаёт опциональность независимо от того, какие сети, токены или денежные инструменты масштабируются.</p>
+<p><strong>Как это связано с действующими комплаенс-обязательствами?</strong></p>
+<p>Контроли по цифровым активам должны проектироваться как расширение той же архитектуры, что поддерживает операционную устойчивость DORA, прозрачность AI Act ЕС и суверенитет данных, — а не как параллельная программа. Та же дисциплина производства доказательств, тот же стандарт готовности к аудиту, та же модель управления.</p>
+<p><strong>Как измерять успех?</strong></p>
+<p>По выручке, захваченной из адресуемых пулов; стоимости работы двойных рельсов; готовности рамки контролей (проверенной, а не задокументированной); адопции клиентских кошельков; и приросте эффективности баланса за счёт токенизированного обеспечения и расчётов.</p>
+<h2 id="section-25">Ссылки <a class="heading-anchor" href="#section-25" aria-label="Ссылка на Ссылки">#</a></h2>
+<ul>
+<li>BCG, (2026). <a href="https://www.bcg.com" title="BCG, «Будущее цифровых активов», май 2026">The Future of Digital Assets — флагманский отчёт BCG, май 2026 ⧉</a>.</li>
+<li>RWA.xyz, (2026). <a href="https://rwa.xyz" title="RWA.xyz">Данные рынка RWA ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/ru/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026" title="Стейблкоины против токенизированных депозитов">Стейблкоины против токенизированных депозитов в 2026 ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/ru/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026" title="Программируемая ликвидность">Программируемая ликвидность в 2026 ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/ru/2026-05-21-tokenised-deposits-banking-services-status-2026" title="Токенизированные депозиты">Токенизированные депозиты в 2026 ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/ru/2026-05-15-skrytaya-dokhodnost-blackrock-brsrv-bstbl-genius-act" title="Стейблкоин-доходность BlackRock">Разбор заявок BlackRock BRSRV и BSTBL ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" title="Комплаенс-стек DORA">DORA, AI Act ЕС и суверенитет данных ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026" title="ИИ в платежах">ИИ как операционная система платежей ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/ru/2026-05-20-cloud-native-banking-financial-institutions-2026" title="Облачно-нативный банкинг">Облачно-нативный банкинг в 2026 ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/ru/2026-05-14-zashchita-knigi-uchyota-postkvantovaya-migratsiya-korporativnykh-finansov" title="Постквантовая миграция">Защита реестра: постквантовая миграция ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/ru/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026" title="Агентные платежи">Агентные платежи в банкинге ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/ru/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026" title="Forward-план UK Payments">Forward-план UK Payments ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/ru/2026-05-17-agentnaya-inzheneriya-plan-dlya-bankov-2026" title="Агентная инженерия">Агентная инженерия для банков ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Последняя проверка <time datetime="2026-05-28">2026-05-28</time>.</p>
+
+<!-- enrich-end -->
+</content>
+</invoke><aside class="author-card" aria-label="Об авторе"><img alt="Портрет Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/ru/o-mne/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Старший банковский технолог, пишу о прикладном ИИ, миграции на ISO 20022, постквантовой криптографии для финансовых услуг и структурной трансформации оптовых платежей.</span><span class="author-credentials">Более 20 лет опыта в HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/ru/o-mne/index.html">Полный профиль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Последняя проверка <time datetime="2026-05-30">2026-05-30</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Связанные материалы</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/ru/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026" class="related-media" aria-label="Стейблкоины и токенизированные депозиты 2026: что банкам реально защищать" tabindex="-1"><img alt="Comparison diagram showing stablecoins, tokenised deposits, commercial bank money, reserve assets, wallets, settlement, liquidity, and bank balance sheets" src="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-2"><a href="https://sebastienrousseau.com/ru/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026">Стейблкоины и токенизированные депозиты 2026: что банкам реально защищать</a> <a class="heading-anchor" href="#2026-2" aria-label="Ссылка на Стейблкоины и токенизированные депозиты 2026: что банкам реально защищать">#</a></h3><p><time datetime="2026-05-26">2026-05-26</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ru/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026" class="related-media" aria-label="Программируемая ликвидность 2026: ИИ, токенизированные депозиты, казначейство" tabindex="-1"><img alt="Programmable liquidity architecture diagram showing treasury systems, AI forecasting, tokenised deposits, real-time rails, stablecoins, virtual accounts, FX, and collateral mobility" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-3"><a href="https://sebastienrousseau.com/ru/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026">Программируемая ликвидность 2026: ИИ, токенизированные депозиты, казначейство</a> <a class="heading-anchor" href="#2026-3" aria-label="Ссылка на Программируемая ликвидность 2026: ИИ, токенизированные депозиты, казначейство">#</a></h3><p><time datetime="2026-05-25">2026-05-25</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ru/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026" class="related-media" aria-label="UK Payments Forward Plan 2026: стейблкоины, открытый банкинг, токенизированные депозиты" tabindex="-1"><img alt="UK payments modernisation diagram showing stablecoins, tokenised deposits, open banking, AI agents, FCA regulation, PSR consolidation, and wholesale digital markets" src="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="uk-payments-forward-plan-2026"><a href="https://sebastienrousseau.com/ru/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026">UK Payments Forward Plan 2026: стейблкоины, открытый банкинг, токенизированные депозиты</a> <a class="heading-anchor" href="#uk-payments-forward-plan-2026" aria-label="Ссылка на UK Payments Forward Plan 2026: стейблкоины, открытый банкинг, токенизированные депозиты">#</a></h3><p><time datetime="2026-05-24">2026-05-24</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="Постраничная навигация по статьям"><a class="post-pagination-prev" href="/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">Предыдущая</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><a class="post-pagination-next" href="/ru/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"><span class="post-pagination-label">Следующая</span><span class="post-pagination-title">ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/ru/o-mne/index.html">Обо мне</a></li>
+              <li><a href="/ru/kontakty/index.html">Контакты</a></li>
+              <li><a href="/ru/sdelano-so-staticheskim-generatorom/index.html">Сделано со Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Публикации</h2>
+            <ul>
+              <li><a href="/ru/stati/index.html">Статьи</a></li>
+              <li><a href="/ru/publikatsii/index.html">Публикации</a></li>
+              <li><a href="/ru/tegi/index.html">Теги</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Деятельность</h2>
+            <ul>
+              <li><a href="/ru/proekty/index.html">Проекты</a></li>
+              <li><a href="/ru/pleilisty/index.html">Плейлисты</a></li>
+              <li><a href="/ru/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Контакты</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Подписка на рассылку">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — аналитические заметки о платежах, ИИ и постквантовой криптографии. Без спама.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="vy@bank.ru" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Подписаться</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Социальные сети">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau в Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau в Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau в LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau в LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau в Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau в Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau в YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau в YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/ru/dostupnost/index.html">Доступность</a> ·
+            <a href="/ru/konfidentsialnost/index.html">Конфиденциальность</a> ·
+            <a href="/ru/usloviya/index.html">Условия</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ru"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ru"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":3602,"headline":"Цифровые активы в 2026: инфраструктурный переход, который банки не могут откладывать","description":"Цифровые активы перестали быть ставкой на инновацию. Это вопрос архитектуры расчётов, хранения и баланса. Стратегическая задача банков — проектировать инфраструктуру в условиях структурной неопределённости.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/corporate-finance.webp","width":"100vw","height":"100vh","caption":"Схема инфраструктуры цифровых активов: токенизированные реальные активы, стейблкоины, токенизированные депозиты, хранение, расчёты, мобильность обеспечения и платформенные слои банка"},"url":"https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/","datePublished":"2026-05-28T06:06:06+00:00","dateModified":"2026-05-28","inLanguage":"ru","keywords":"цифровые активы 2026, токенизированные реальные активы, стейблкоины банки, токенизированные депозиты, кастоди цифровых активов, DLT в банках, инфраструктура расчётов, мобильность обеспечения, программируемые деньги, стратегия банка по цифровым активам","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ru"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ru/"},{"@type":"ListItem","position":3,"name":"Цифровые активы в 2026: инфраструктурный переход, который банки не могут откладывать","item":"https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Поиск">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Поиск</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Поиск">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Поиск по документации..." autocomplete="off" aria-label="Поиск"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> закрыть</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> перемещение</span><span><kbd>Enter</kbd> открыть</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

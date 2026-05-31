@@ -1,13 +1,13 @@
 ---
 title: "Static Site Generator: Fastest Rust-Based SSG"
-subtitle: "Static Site Generator, the fastest Rust-based static site generator for high-impact websites."
-description: "Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control."
+subtitle: "Static Site Generator, cel mai rapid generator de site-uri statice bazat pe Rust pentru site-uri web cu impact ridicat."
+description: "Vă oferim posibilitatea de a crea site-uri web statice cu impact ridicat, cu posibilități infinite, scalabilitate nelimitată și o prezență web cu adevărat unică pe care o controlați."
 date: "Oct 09, 2023"
 language: "ro-RO"
 locale: "ro_RO"
 banner: "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
-banner_alt: "Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right"
-keywords: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
+banner_alt: "Laptop oprit pe o masă albă cu un pahar cu apă în stânga și un pix, un carnet și o plantă în dreapta"
+keywords: "pain001, iso 20022, automatizarea plăților, reducerea costurilor, procesarea plăților, fișiere de plată, inițierea plăților, pain message, pain message standards, pain message validation"
 ---
 
 ![Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right](https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp).class="img-fluid clearfix"

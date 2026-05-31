@@ -1,11 +1,11 @@
 {
-  "locale": "yo_NG",
-  "subtitle": "The Beginnings of a Technological Odyssey",
-  "title": "Alien Studio: My Tech-to Art Journey in Photography",
-  "keywords": "personal tech journey, Rust discovery, AI exploration, Quantum Computing, art and photography fusion, Alien Studio, digital art creation, technology in art, innovative photography, artistic rediscovery",
-  "banner_alt": "Sunset's muse, a serene glance; beauty in stillness",
+  "language": "yo-NG",
+  "subtitle": "Ibẹrẹ Irin-ajo Imọ-ẹrọ",
   "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
+  "title": "Alien Studio: My Tech-to Art Journey in Photography",
+  "banner_alt": "Atilẹyin oorun, oju aifọkanbalẹ; ẹwa ninu idakẹjẹ",
+  "keywords": "irin-ajo imọ-ẹrọ ti ara ẹni, wiwa Rust, iwadii AI, Quantum Computing, idapọ aworan ati fọtoyiya, Alien Studio, ẹda aworan oni-nọmba, imọ-ẹrọ ninu aworan, fọtoyiya tuntun, atunṣawari iṣẹ-ọnà",
   "date": "Jan 15, 2024",
-  "description": "Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio.",
-  "language": "yo-NG"
+  "description": "Darapọ mọ mi lori irin-ajo ti ara ẹni lati Rust, AI, ati Quantum Computing si atunṣafihan aworan ati fọtoyiya nipasẹ Alien Studio.",
+  "locale": "yo_NG"
 }

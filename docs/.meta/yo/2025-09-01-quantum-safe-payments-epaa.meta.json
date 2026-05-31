@@ -1,11 +1,11 @@
 {
-  "date": "Sep 01, 2025",
-  "locale": "yo_NG",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
-  "banner_alt": "Quantum computing circuit board in blue light",
-  "keywords": "quantum-safe payments, post-quantum cryptography, SEPA, SWIFT gpi, ISO 20022, financial services security, EPAA, harvest-now decrypt-later, cryptographic agility, Sebastien Rousseau",
-  "subtitle": "Quantum-safe readiness is a current infrastructure decision. Not a future one.",
   "language": "yo-NG",
-  "description": "Quantum computing threatens payment system cryptography. The EPAA white paper outlines the structural risk and the urgent case for PQC migration.",
-  "title": "Quantum-Safe Payments: Why the Industry Must Act Now"
+  "keywords": "ìsanwó quantum-safe, cryptography post-quantum, SEPA, SWIFT gpi, ISO 20022, ààbò àwọn iṣẹ́ ìnáwó, EPAA, harvest-now decrypt-later, agility cryptographic, Sebastien Rousseau",
+  "title": "Quantum-Safe Payments: Why the Industry Must Act Now",
+  "description": "Ìṣirò kuatomu ń halẹ̀ mọ́ cryptography ti àwọn ètò ìsanwó. Ìwé funfun EPAA ṣàlàyé ewu ìgbékalẹ̀ àti ìjẹ̀pàtàkì ìjíkọ PQC.",
+  "date": "Sep 01, 2025",
+  "subtitle": "Ìmúrasílẹ̀ fún ààbò kuatomu jẹ́ ìpinnu amayederun lọwọlọwọ. Kì í ṣe ti ọjọ iwaju.",
+  "locale": "yo_NG",
+  "banner_alt": "Bọ́ọ̀dù ìyíká ìṣirò kuatomu nínú ìmọ́lẹ̀ búlúù",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
 }

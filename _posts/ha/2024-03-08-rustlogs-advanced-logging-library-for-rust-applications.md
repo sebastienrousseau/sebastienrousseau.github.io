@@ -1,13 +1,13 @@
 ---
 title: "RustLogs (RLG): Structured Logging Library for Rust"
-subtitle: "Streamline Your Rust Logging Workflow"
-description: "Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. "
+subtitle: "Sauƙaƙe Tsarin Aiki na Rust Logging"
+description: "Gano RustLogs (RLG), ɗakin karatu mai sassauci na logging don Rust tare da tsarin log da aka tsara, logging na asynchronous, da zaɓuɓɓuka masu yawa na keɓantawa."
 date: "Mar 08, 2024"
 language: "ha-NG"
 locale: "ha_NG"
 banner: "https://cloudcdn.pro/stocks/images/rustlogs.webp"
-banner_alt: "Banner for RustLogs (RLG)"
-keywords: "Rust logging library, asynchronous Rust logging, structured log formats, Rust application debugging, customisable logging Rust, Rust development tools, RustLogs RLG features, efficient Rust logging, RustLogs integration, RustLogs documentation"
+banner_alt: "Banner don RustLogs (RLG)"
+keywords: "ɗakin karatu na Rust logging, asynchronous Rust logging, tsarin log da aka tsara, gyaran kuskure na Rust application, logging na Rust mai keɓantawa, kayan aikin Rust development, fasalulluka na RustLogs RLG, logging na Rust mai inganci, haɗin RustLogs, takardun RustLogs"
 ---
 
 ![Banner for RustLogs (RLG)](https://cloudcdn.pro/stocks/images/rustlogs.webp).class="img-fluid clearfix"

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Fri, 29 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Fri, 29 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>ISO 20022 после миграции: платёжные данные как банковские продукты в 2026 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="ISO 20022 после миграции — это возможность для продуктов данных. Структурированные адреса, коды назначения, реквизиты счетов, сообщения расследований и статусные события становятся продуктами сверки, фрода, ликвидности и комплаенса.">
+<meta name="keywords" content="ISO 20022 2026, структурированный адрес, CBPR+, продукты платёжных данных, коды назначения, корпоративное казначейство, сверка, санкционный скрининг, обнаружение мошенничества, pacs.008, pain.001, SWIFT gpi, SEPA Instant, FedNow">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ISO 20022 Data">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-NYSgVTwMSSkmkGpGj/4KCCADxZqW7PXKfUC5i4UuxsA=' 'sha256-r0kxAHD1CIetS3xprbgoMhxmZ7tCR82AUlabMt5D2HM=' 'sha256-uIdeCDRxlf2d4e+tnHnvC41BWMq0fXEvI87peHTP4vk=' 'sha256-vPjz3BlqTOvlgQhebiYyzpJaB1u00kc3aNE5TLyhjYU=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/ru/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Лента Atom" href="/ru/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="ISO 20022 после миграции: платёжные данные как банковские продукты в 2026 — Sebastien Rousseau">
+<meta property="og:description" content="ISO 20022 после миграции — это возможность для продуктов данных. Структурированные адреса, коды назначения, реквизиты счетов, сообщения расследований и статусные события становятся продуктами сверки, фрода, ликвидности и комплаенса.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/ru/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ISO 20022 после миграции: платёжные данные как банковские продукты в 2026 — Sebastien Rousseau">
+<meta name="twitter:description" content="ISO 20022 после миграции — это возможность для продуктов данных. Структурированные адреса, коды назначения, реквизиты счетов, сообщения расследований и статусные события становятся продуктами сверки, фрода, ликвидности и комплаенса.">
+<meta name="twitter:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80">
+<link rel="canonical" href="https://sebastienrousseau.com/ru/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Перейти к основному содержанию</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Переключить навигацию" />
+      <div class="wrap">
+        <a class="ap-brand" href="/ru/index.html" aria-label="Главная страница Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Основная навигация">
+          <ul class="ap-menu">
+            <li><a href="/ru/o-mne/index.html">Обо мне</a></li>
+            <li><a href="/ru/stati/index.html" aria-current="page" class="active">Статьи</a></li>
+            <li><a href="/ru/publikatsii/index.html">Публикации</a></li>
+            <li><a href="/ru/temy/index.html">Темы</a></li>
+            <li><a href="/ru/proekty/index.html">Проекты</a></li>
+            <li><a href="/ru/pleilisty/index.html">Плейлисты</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Включить тёмную тему" aria-pressed="false" title="Сменить тему">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Поиск (Cmd или Ctrl + K)" title="Поиск (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Язык">
+            <button type="button" class="ap-lang-toggle" aria-label="RU, Сменить язык" aria-expanded="false" aria-haspopup="menu" title="Сменить язык">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">RU</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/ru/kontakty/index.html" aria-label="Связаться со мной">Связаться со мной ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Переключить навигацию">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>ISO 20022 после миграции: платёжные данные как банковские продукты в 2026</h1>
+      <p class="sub">Главный приз ISO 20022 — не соответствие формату сообщений, а превращение структурированных платёжных данных в банковские продукты, за которые клиенты готовы платить, а операции — автоматизировать.</p>
+    <nav class="article-tags" aria-label="Темы"><a href="/tags/index.html#h3-iso-20022-2026" class="article-tag" rel="tag">ISO 20022 2026</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">структурированный адрес</a><a href="/tags/index.html#h3-cbpr" class="article-tag" rel="tag">CBPR+</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">продукты платёжных данных</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">коды назначения</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">корпоративное казначейство</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">сверка</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">санкционный скрининг</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">обнаружение мошенничества</a><a href="/tags/index.html#h3-pacs-008" class="article-tag" rel="tag">pacs.008</a><a href="/tags/index.html#h3-pain-001" class="article-tag" rel="tag">pain.001</a><a href="/tags/index.html#h3-swift-gpi" class="article-tag" rel="tag">SWIFT gpi</a><a href="/tags/index.html#h3-sepa-instant" class="article-tag" rel="tag">SEPA Instant</a><a href="/tags/index.html#h3-fednow" class="article-tag" rel="tag">FedNow</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-29T06:06:06+00:00" class="meta-pub">Опубликовано 29 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Примерное время чтения">4 мин. чтения</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Содержание</h2><ol><li><a href="#2026">Почему 2026 — год, когда тема стала стратегической</a></li><li><a href="#2026-2">Архитектурный базис 2026</a></li><li><a href="#section-8">Таблица стратегической архитектуры</a></li><li><a href="#section-9">Что это означает по типу банка</a></li><li><a href="#section-14">Заключение</a></li><li><a href="#section-15">Часто задаваемые вопросы</a></li><li><a href="#section-16">Источники</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> ISO 20022 после миграции — это возможность для продуктов данных. Структурированные адреса, коды назначения, реквизиты счетов, сообщения расследований и статусные события становятся продуктами сверки, фрода, ликвидности и комплаенса.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Почему 2026 — год, когда тема стала стратегической.</strong> Отрасль вышла за рамки фазы внедрения.</li>  <li><strong>Архитектурный базис 2026.</strong> Банк должен начинать с трения: запертая ликвидность, задержка расчётов, стоимость сверки, неуспешные платежи, фрод-экспозиция, слабая аудируемость или плохой клиентский опыт.</li>  <li><strong>Таблица стратегической архитектуры.</strong> Глобальные банки должны выстроить платформенную оркестрацию, чтобы каждый рынок, схема, токен и AI-способность не превращались в отдельную операционную модель.</li>  <li><strong>Что это означает по типу банка.</strong> Глобальные банки должны выстроить платформенную оркестрацию, чтобы каждый рынок, схема, токен и AI-способность не превращались в отдельную операционную модель.</li></ul></aside><h1>ISO 20022 после миграции: платёжные данные как банковские продукты в 2026</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>ISO 20022 после миграции — это продуктовая возможность на данных. Структурированные адреса, коды назначения, реквизиты счетов, сообщения расследований и более насыщенные статусные события платежа способны стать продуктами сверки, фрода, ликвидности, комплаенса и аналитики. Сигнал 2026 года — продукты платёжных данных перешли из инновационного театра в операционную модель банка, где решающий вопрос — дисциплина проектирования: какие данные, схемы, контроли, обязательства и клиентские процессы должны быть собраны вместе (<a href="https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/" title="ISO 20022 migration">Kyriba</a>).</p>
+<hr />
+<blockquote>
+<p><strong>Резюме для правления / ключевые выводы</strong></p>
+<ul>
+<li><strong>Продукты платёжных данных стали стратегической темой.</strong> Тема привязана к операционной модели, устойчивости, клиентской ценности и регуляторным доказательствам, а не к узкому продуктовому запуску (<a href="https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/" title="ISO 20022 migration">Kyriba</a>).</li>
+<li><strong>Принцип проектирования — зрелость данных.</strong> Банкам нужна архитектура, связывающая политику, продукт, данные, выбор схемы, риск-контроли и измеримую экономику (<a href="https://www.montran.com/resources/44-of-banks-will-miss-the-next-iso-20022-deadline-and-compliance-isnt-the-real-risk/" title="44% of Banks Will Miss the Next ISO 20022 Deadline">Montran</a>).</li>
+<li><strong>Модель контролей обязана быть в реальном времени.</strong> Решения по фроду, ликвидности, комплаенсу, расчётам и операционному риску должны приниматься на скорости процесса, а не постфактум.</li>
+<li><strong>Качество данных становится коммерческим преимуществом.</strong> Структурированные данные, контекст транзакции, журналы аудита и сигналы идентичности образуют основу для автоматизации и клиентских продуктов.</li>
+<li><strong>Фрагментация — враг.</strong> Банк, который строит изолированные пилоты под каждую схему, токен, модель или регуляторное требование, создаёт будущий операционный риск.</li>
+<li><strong>Выигрышная модель — оркестрация.</strong> Институт, способный маршрутизировать, управлять, тарифицировать, доказывать и объяснять каждый процесс, обыгрывает того, кто просто внедряет ещё один инструмент (<a href="https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026" title="Payments Outlook: Five Trends Powering Payments in 2026">J.P. Morgan</a>).</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="2026">Почему 2026 — год, когда тема стала стратегической <a class="heading-anchor" href="#2026" aria-label="Ссылка на Почему 2026 — год, когда тема стала стратегической">#</a></h2>
+<p>Отрасль вышла за рамки фазы внедрения. Уже недостаточно подключиться к платёжной схеме, мигрировать сообщение, провести AI-пилот или объявить о токенизационном эксперименте. В 2026 году стратегическое преимущество даёт оркестрация этих способностей вокруг реального клиентского процесса с доказательством того, что процесс стал безопаснее, быстрее, дешевле, устойчивее или полезнее клиенту.</p>
+<p>Поэтому продукты платёжных данных — теперь тема уровня правления. Давление повторяется одно и то же: более насыщенные платёжные данные, расчёты в реальном времени, токенизированные деньги, AI-принятие решений, Open Banking, операционная устойчивость, облачная концентрация и усиленные регуляторные доказательства. Поодиночке эти факторы порождают разрастание программ. Собранные в одну архитектуру — они дают операционный рычаг (<a href="https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/" title="ISO 20022 migration">Kyriba</a>, <a href="https://www.montran.com/resources/44-of-banks-will-miss-the-next-iso-20022-deadline-and-compliance-isnt-the-real-risk/" title="44% of Banks Will Miss the Next ISO 20022 Deadline">Montran</a>).</p>
+<h2 id="2026-2">Архитектурный базис 2026 <a class="heading-anchor" href="#2026-2" aria-label="Ссылка на Архитектурный базис 2026">#</a></h2>
+<h3 id="1">1. Сначала процесс, затем технология <a class="heading-anchor" href="#1" aria-label="Ссылка на 1. Сначала процесс, затем технология">#</a></h3>
+<p>Банк должен начинать с трения: запертая ликвидность, задержка расчётов, стоимость сверки, неуспешные платежи, фрод-экспозиция, слабая аудируемость или плохой клиентский опыт. Технология оправдана только там, где она устраняет это трение (<a href="https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/" title="ISO 20022 migration">Kyriba</a>).</p>
+<h3 id="2">2. Данные как плоскость управления <a class="heading-anchor" href="#2" aria-label="Ссылка на 2. Данные как плоскость управления">#</a></h3>
+<p>Структурированные, управляемые и трассируемые данные — фундамент. Без пригодных данных автоматизация становится хрупкой, а комплаенс — ручным. С пригодными данными банки строят интеллектуальную маршрутизацию, контроли реального времени и клиентскую аналитику (<a href="https://www.montran.com/resources/44-of-banks-will-miss-the-next-iso-20022-deadline-and-compliance-isnt-the-real-risk/" title="44% of Banks Will Miss the Next ISO 20022 Deadline">Montran</a>).</p>
+<h3 id="3">3. Оркестрация по схемам и платформам <a class="heading-anchor" href="#3" aria-label="Ссылка на 3. Оркестрация по схемам и платформам">#</a></h3>
+<p>Архитектура обязана поддерживать множество схем, провайдеров, идентификационных систем, риск-сигналов и расчётных активов. Решение о маршруте должно опираться на стоимость, скорость, окончательность расчёта, юрисдикцию, предпочтение клиента, устойчивость и насыщенность данных.</p>
+<h3 id="4">4. Встроенные комплаенс и доказательства <a class="heading-anchor" href="#4" aria-label="Ссылка на 4. Встроенные комплаенс и доказательства">#</a></h3>
+<p>Модель комплаенса обязана быть нативной для процесса. Политика как код, автоматические журналы аудита, доказательства операционной устойчивости, записи согласия и управление моделями должны производиться в момент исполнения, а не пересобираться задним числом для аудитора.</p>
+<h3 id="5">5. Юнит-экономика и клиентская ценность <a class="heading-anchor" href="#5" aria-label="Ссылка на 5. Юнит-экономика и клиентская ценность">#</a></h3>
+<p>Каждая инициатива требует доказательств коммерческой ценности. Стоимость одного платежа, одного решения, одного расследования, сэкономленная ликвидность, сокращение ручных ремонтов, снижение фрод-потерь и принятие клиентами должны определять решения о масштабировании.</p>
+<h2 id="section-8">Таблица стратегической архитектуры <a class="heading-anchor" href="#section-8" aria-label="Ссылка на Таблица стратегической архитектуры">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Слой</th>
+<th>Направление 2026</th>
+<th>Банковская возможность</th>
+<th>Риск при неверном обращении</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Процессный слой</strong></td>
+<td>Точка боли клиента определяет продукт</td>
+<td>Чёткое бизнес-обоснование и принятие</td>
+<td>Технологические пилоты без пользователей</td>
+</tr>
+<tr>
+<td><strong>Слой данных</strong></td>
+<td>Структурированные, управляемые данные транзакций и контролей</td>
+<td>Автоматизация, аналитика, аудируемость</td>
+<td>Плохие данные перемещаются быстрее</td>
+</tr>
+<tr>
+<td><strong>Слой схем</strong></td>
+<td>Маршрутизация между картами, A2A, RTGS, стейблкоинами, депозитами, API, DLT</td>
+<td>Оптимизированная стоимость, скорость и окончательность</td>
+<td>Разрастание каналов и дублирование контролей</td>
+</tr>
+<tr>
+<td><strong>Слой контролей</strong></td>
+<td>Политика, фрод, санкции, устойчивость, идентичность и согласие в реальном времени</td>
+<td>Риск, управляемый на скорости исполнения</td>
+<td>Ручной комплаенс постфактум</td>
+</tr>
+<tr>
+<td><strong>Слой экономики</strong></td>
+<td>Измеренная юнит-стоимость и клиентская ценность</td>
+<td>Масштабирование на основе доказательств</td>
+<td>Инвестиции в инновации без устойчивой отдачи</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-9">Что это означает по типу банка <a class="heading-anchor" href="#section-9" aria-label="Ссылка на Что это означает по типу банка">#</a></h2>
+<h3 id="section-10">Глобальные банки <a class="heading-anchor" href="#section-10" aria-label="Ссылка на Глобальные банки">#</a></h3>
+<p>Глобальные банки должны выстроить платформенную оркестрацию, чтобы каждый рынок, схема, токен и AI-способность не превращались в отдельную операционную модель.</p>
+<h3 id="section-11">Региональные банки <a class="heading-anchor" href="#section-11" aria-label="Ссылка на Региональные банки">#</a></h3>
+<p>Региональным банкам стоит сосредоточиться на сценариях, где доверие, локальная экспертиза и более простая интеграция бьют масштаб: казначейская видимость, профилактика фрода, платежи Open Banking и регулируемые сервисы цифровых денег.</p>
+<h3 id="psp">Финтехи и PSP <a class="heading-anchor" href="#psp" aria-label="Ссылка на Финтехи и PSP">#</a></h3>
+<p>Финтехам следует снижать сложность для банков, а не добавлять ещё одну изолированную схему. Лучшие предложения принесут оркестрацию, доказательства комплаенса или интеллект данных.</p>
+<h3 id="section-13">Корпоративные казначеи <a class="heading-anchor" href="#section-13" aria-label="Ссылка на Корпоративные казначеи">#</a></h3>
+<p>Казначеи должны требовать измеримых улучшений: меньше ремонтов платежей, лучшая видимость ликвидности, более насыщенные данные сверки, ускоренные расчёты и более сильный контроль над автоматизированными решениями.</p>
+<h2 id="section-14">Заключение <a class="heading-anchor" href="#section-14" aria-label="Ссылка на Заключение">#</a></h2>
+<p>ISO 20022 после миграции — в конечном счёте архитектурный вопрос. Победят не те институты, у кого больше пилотов или громче инновационная риторика. Победят те, кто связывает клиентские процессы, качество данных, оркестрацию схем, встроенный комплаенс и юнит-экономику в единую операционную модель.</p>
+<h2 id="section-15">Часто задаваемые вопросы <a class="heading-anchor" href="#section-15" aria-label="Ссылка на Часто задаваемые вопросы">#</a></h2>
+<p><strong>Почему тема актуальна в 2026 году?</strong></p>
+<p>Потому что инфраструктура, регулирование и сигналы клиентского спроса сошлись. То, что было опциональным экспериментом, становится частью операционной модели банка.</p>
+<p><strong>Каков главный риск внедрения?</strong></p>
+<p>Главный риск — фрагментация: отдельные команды строят отдельные пилоты с разными данными, контролями, управлением и экономикой.</p>
+<p><strong>Что банку строить в первую очередь?</strong></p>
+<p>Банк должен начинать с того процесса, где есть измеримая ценность: ускоренный расчёт, снижение стоимости сверки, меньше расследований, улучшение профилактики фрода или лучшая видимость ликвидности.</p>
+<p><strong>Как измерять успех?</strong></p>
+<p>Успех измеряется юнит-экономикой, доказательствами устойчивости, качеством данных, принятием клиентами, снижением операционного риска и улучшением ликвидности или оборотного капитала.</p>
+<h2 id="section-16">Источники <a class="heading-anchor" href="#section-16" aria-label="Ссылка на Источники">#</a></h2>
+<ul>
+<li>Kyriba, (2026). <a href="https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/" title="ISO 20022 migration">ISO 20022 migration ⧉</a>.</li>
+<li>Montran, (2026). <a href="https://www.montran.com/resources/44-of-banks-will-miss-the-next-iso-20022-deadline-and-compliance-isnt-the-real-risk/" title="ISO 20022 deadline">44% of Banks Will Miss the Next ISO 20022 Deadline ⧉</a>.</li>
+<li>J.P. Morgan, (2026). <a href="https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026" title="Payments Outlook">Payments Outlook: Five Trends Powering Payments in 2026 ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Последняя проверка <time datetime="2026-05-29">2026-05-29</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Об авторе"><img alt="Портрет Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/ru/o-mne/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Старший банковский технолог, пишу о прикладном ИИ, миграции на ISO 20022, постквантовой криптографии для финансовых услуг и структурной трансформации оптовых платежей.</span><span class="author-credentials">Более 20 лет опыта в HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/ru/o-mne/index.html">Полный профиль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Последняя проверка <time datetime="2026-05-30">2026-05-30</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Связанные материалы</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/ru/2026-05-12-iso-20022-pacs008-strukturirovannyi-adres-srok" class="related-media" aria-label="ISO 20022 pacs.008: срок по структурированным адресам приближается" tabindex="-1"><img alt="ISO 20022 pacs.008 structured address diagram — cross-border payment message fields with TwnNm and Ctry highlighted" src="https://cloudcdn.pro/api/transform?url=/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="iso-20022-pacs-008"><a href="https://sebastienrousseau.com/ru/2026-05-12-iso-20022-pacs008-strukturirovannyi-adres-srok">ISO 20022 pacs.008: срок по структурированным адресам приближается</a> <a class="heading-anchor" href="#iso-20022-pacs-008" aria-label="Ссылка на ISO 20022 pacs.008: срок по структурированным адресам приближается">#</a></h3><p><time datetime="2026-05-12">2026-05-12</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ru/2026-05-19-global-wholesale-payments-economics-2026" class="related-media" aria-label="Оптовые платежи в мире в 2026 году: ISO 20022, обновление RTGS и экономика интероперабельности" tabindex="-1"><img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/api/transform?url=/stocks/images/meiying-ng-OrwkD-iWgqg.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-iso-20022-rtgs"><a href="https://sebastienrousseau.com/ru/2026-05-19-global-wholesale-payments-economics-2026">Оптовые платежи в мире в 2026 году: ISO 20022, обновление RTGS и экономика интероперабельности</a> <a class="heading-anchor" href="#2026-iso-20022-rtgs" aria-label="Ссылка на Оптовые платежи в мире в 2026 году: ISO 20022, обновление RTGS и экономика интероперабельности">#</a></h3><p><time datetime="2026-05-19">2026-05-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026" class="related-media" aria-label="ИИ как операционная система платежей: мошенничество, маршрутизация, устойчивость и комплаенс в 2026" tabindex="-1"><img alt="AI payments operating system diagram showing fraud scoring, multi-rail routing, liquidity forecasting, ISO 20022 data, compliance screening, and exception repair" src="https://cloudcdn.pro/api/transform?url=/stocks/images/circuit_board_cityscape.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-3"><a href="https://sebastienrousseau.com/ru/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026">ИИ как операционная система платежей: мошенничество, маршрутизация, устойчивость и комплаенс в 2026</a> <a class="heading-anchor" href="#2026-3" aria-label="Ссылка на ИИ как операционная система платежей: мошенничество, маршрутизация, устойчивость и комплаенс в 2026">#</a></h3><p><time datetime="2026-05-27">2026-05-27</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Источники и ссылки</h2><ol class="article-sources-list"><li><a href="https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026" rel="external noopener nofollow"><span class="source-host">www.jpmorgan.com</span><span class="source-path">/insights/payments/trends-innovation/payments-outlook-trends-2026</span></a></li></ol></aside><nav class="post-pagination" aria-label="Постраничная навигация по статьям"><a class="post-pagination-prev" href="/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"><span class="post-pagination-label">Предыдущая</span><span class="post-pagination-title">Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay</span></a><a class="post-pagination-next" href="/ru/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"><span class="post-pagination-label">Следующая</span><span class="post-pagination-title">Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/ru/o-mne/index.html">Обо мне</a></li>
+              <li><a href="/ru/kontakty/index.html">Контакты</a></li>
+              <li><a href="/ru/sdelano-so-staticheskim-generatorom/index.html">Сделано со Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Публикации</h2>
+            <ul>
+              <li><a href="/ru/stati/index.html">Статьи</a></li>
+              <li><a href="/ru/publikatsii/index.html">Публикации</a></li>
+              <li><a href="/ru/tegi/index.html">Теги</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Деятельность</h2>
+            <ul>
+              <li><a href="/ru/proekty/index.html">Проекты</a></li>
+              <li><a href="/ru/pleilisty/index.html">Плейлисты</a></li>
+              <li><a href="/ru/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Контакты</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Подписка на рассылку">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — аналитические заметки о платежах, ИИ и постквантовой криптографии. Без спама.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="vy@bank.ru" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Подписаться</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Социальные сети">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau в Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau в Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau в LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau в LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau в Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau в Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau в YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau в YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/ru/dostupnost/index.html">Доступность</a> ·
+            <a href="/ru/konfidentsialnost/index.html">Конфиденциальность</a> ·
+            <a href="/ru/usloviya/index.html">Условия</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ru"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ru"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":911,"about":{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]},"mentions":[{"@type":"Thing","name":"SWIFT gpi","sameAs":"https://www.swift.com/our-solutions/swift-gpi"},{"@type":"Thing","name":"SEPA","sameAs":["https://en.wikipedia.org/wiki/Single_Euro_Payments_Area","https://www.wikidata.org/wiki/Q286094"]}],"headline":"ISO 20022 после миграции: платёжные данные как банковские продукты в 2026","description":"ISO 20022 после миграции — это возможность для продуктов данных. Структурированные адреса, коды назначения, реквизиты счетов, сообщения расследований и статусные события становятся продуктами сверки, фрода, ликвидности и комплаенса.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80","width":"100vw","height":"100vh","caption":"Схема продуктов платёжных данных ISO 20022: структурированные адреса, коды назначения, сверка, обнаружение мошенничества, прогнозирование ликвидности, санкционный скрининг и аналитические продукты"},"url":"https://sebastienrousseau.com/ru/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/","datePublished":"2026-05-29T06:06:06+00:00","dateModified":"2026-05-29","inLanguage":"ru","keywords":"ISO 20022 2026, структурированный адрес, CBPR+, продукты платёжных данных, коды назначения, корпоративное казначейство, сверка, санкционный скрининг, обнаружение мошенничества, pacs.008, pain.001, SWIFT gpi, SEPA Instant, FedNow","articleSection":"Finance","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ru/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ru"},"citation":[{"@type":"CreativeWork","url":"https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ru/"},{"@type":"ListItem","position":3,"name":"ISO 20022 после миграции: платёжные данные как банковские продукты в 2026","item":"https://sebastienrousseau.com/ru/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Поиск">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Поиск</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Поиск">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Поиск по документации..." autocomplete="off" aria-label="Поиск"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> закрыть</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> перемещение</span><span><kbd>Enter</kbd> открыть</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"ISO 20022 после миграции: платёжные данные как банковские продукты в 2026","url":"https://sebastienrousseau.com/ru/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/","inLanguage":"ru-RU","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"ISO 20022 2026, структурированный адрес, CBPR+, продукты платёжных данных, коды назначения, корпоративное казначейство, сверка, санкционный скрининг, обнаружение мошенничества, pacs.008, pain.001, SWIFT gpi, SEPA Instant, FedNow","dependencies":["ISO 20022","ISO 20022 pain.001","ISO 20022 pacs.008","SWIFT gpi","SEPA Instant Payments"]}</script></body>
+</html>

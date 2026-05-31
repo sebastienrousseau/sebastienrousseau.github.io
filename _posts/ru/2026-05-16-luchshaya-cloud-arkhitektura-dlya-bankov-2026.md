@@ -49,7 +49,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/rss.xml"
-category: "Технологии"
+category: "Finance"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Чертёж облачной архитектуры 2026 года — шесть основополагающих столпов, agentic unit economics, реалии многоагентного HPC, императив continuous treasury, кризис MCP security, криптографическая идентичность агентов, algorithmic contagion и CloudCDN как открытая референсная реализация для edge-агентского кризиса."

@@ -8,14 +8,14 @@
     <title>Àkàndé: GPT-Powered Voice Assistant for Executives — Sebastien Rousseau</title>
 
     <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
-<meta name="description" content="Discover how Àkàndé leverages OpenAI GPT&#x27;s natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance.">
-<meta name="keywords" content="Àkàndé, Voice Assistant, Natural Language Understanding, PDF Summaries, Efficient Caching, OpenAI GPT, Executive Assistance, Personal Assistance, Digital Assistants, Technology Innovation">
+<meta name="description" content="Àkàndé este un asistent vocal Python open-source care îmbină recunoașterea vocală OpenAI Whisper, chat completions GPT-4 și un cache SQLite local într-un flux vocal — generând rezumate PDF din istoricul conversațiilor și păstrând toate datele stocate local.">
+<meta name="keywords" content="Àkàndé, OpenAI GPT-4, Whisper STT, SQLite caching, fpdf2, asistent vocal Python, chat completions API, generare rezumate PDF, cache SHA-256, text-to-speech, asistent AI pentru executivi, open-source">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
     <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+<meta name="apple-mobile-web-app-title" content="Àkàndé">
 
     <!-- Strict security headers. The headers below that can be set via
          <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
@@ -40,7 +40,7 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-AAqu7Vo5o9MvXfyB6qenAhBQ2xobPumZCx6DUKqGoJU=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-SELbBLj2w32J7b+cZGR6xsX3zBSR/RtQ+lo7ltrrGJA=' 'sha256-o23oPNOG1O2tZ8GaG7Qj5t36PQ/SvMrKl0fX0lCAGmw=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-2KKvVdXnpZcXAPBHClIUUtNwYbD6x35sEcQONmMFoZ0=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-AAqu7Vo5o9MvXfyB6qenAhBQ2xobPumZCx6DUKqGoJU=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-l8fjf6bA67X/6YrVkA7QveXRbkJ5SIZNvUrvlEvLZTg=' 'sha256-roFGBuuiMB7rCpr+8dDwFkKdL4grBX91hQ47Q5x47sQ=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
@@ -67,7 +67,7 @@
          Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
          observed (real-network) LCP is 165 ms. This hint pulls the
          synthetic LCP in line with the observed value. -->
-    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant.webp&w=1600&format=webp&q=85" fetchpriority="high">
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
     <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
     <meta name="color-scheme" content="light dark" />
@@ -76,9 +76,10 @@
     <link rel="stylesheet" href="/_csp/6346d01ad7de2d6f.css" integrity="sha256-cmdn5aVLYjokOMehbFCVM2OVn90qAJQVGHgU/SsPTT0= sha256-LfI/OOvfKQbXmGjqT/lqFAdGuOgerwiywMKCZBxL014=" crossorigin="anonymous">
     <link rel="alternate" type="application/atom+xml" title="Flux Atom" href="/ro/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="stylesheet" href="/highlight.a92b9694.css">
 <meta property="og:title" content="Àkàndé: GPT-Powered Voice Assistant for Executives — Sebastien Rousseau">
-<meta property="og:description" content="Discover how Àkàndé leverages OpenAI GPT&#x27;s natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance.">
-<meta property="og:type" content="article">
+<meta property="og:description" content="Àkàndé este un asistent vocal Python open-source care îmbină recunoașterea vocală OpenAI Whisper, chat completions GPT-4 și un cache SQLite local într-un flux vocal — generând rezumate PDF din istoricul conversațiilor și păstrând toate datele stocate local.">
+<meta property="og:type" content="website">
 <meta property="og:url" content="https://sebastienrousseau.com/ro/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/">
 <meta property="og:image" content="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp">
 <meta property="og:image:width" content="100vw">
@@ -86,7 +87,7 @@
 <meta property="og:locale" content="ro_RO">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Àkàndé: GPT-Powered Voice Assistant for Executives — Sebastien Rousseau">
-<meta name="twitter:description" content="Discover how Àkàndé leverages OpenAI GPT&#x27;s natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance.">
+<meta name="twitter:description" content="Àkàndé este un asistent vocal Python open-source care îmbină recunoașterea vocală OpenAI Whisper, chat completions GPT-4 și un cache SQLite local într-un flux vocal — generând rezumate PDF din istoricul conversațiilor și păstrând toate datele stocate local.">
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp">
 <link rel="canonical" href="https://sebastienrousseau.com/ro/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
@@ -128,34 +129,34 @@
             </button>
             <div class="ap-lang-menu" role="menu" hidden>
               <div class="ap-lang-menu-grid">
-                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
-                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
-                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
-                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
-                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
-                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
-                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
-                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
-                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
-                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
-                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
-                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
-                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
-                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
-                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
-                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
-                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
-                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
-                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
-                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
-                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
-                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
-                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
-                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
-                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
-                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
-                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
-                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+                <a class="ap-lang-item" href="/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2024-02-12-akande-assistant-vocal-revolution-assistance-personnelle-et-executive/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2024-02-12-akande-hlasovy-asistent-revoluce-asistence/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2024-02-12-akande-sprachassistent-revolution-persoenlicher-und-fuehrungsassistenz/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2024-02-12-akande-asistente-de-voz-revolucion-asistencia-personal-y-ejecutiva/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2024-02-12-akande-voice-assistant-vyaktigat-aur-karyakari-sahaayata/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2024-02-12-akande-asisten-suara-revolusi-asistensi-pribadi-dan-eksekutif/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2024-02-12-akande-assistente-vocale-rivoluzione-dellassistenza-personale-ed-esecutiva/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2024-02-12-akande-onsei-ashisutanto-kojin-to-yakuin-shien-no-kakushin/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2024-02-12-akande-eumseong-bijoja-gaein-imwon-bijo-hyeokmyeong/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2024-02-12-akande-spraakassistent-revolutie-persoonlijke-en-executive-assistentie/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2024-02-12-akande-asystent-glosowy-rewolucja-asystentury-osobistej-i-wykonawczej/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2024-02-12-akande-assistente-de-voz-revolucao-da-assistencia-pessoal-e-executiva/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2024-02-12-akande-golosovoi-pomoshchnik-revolyutsiya-personalnoi-i-rukovoditelnoi-podderzhki/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2024-02-12-akande-rostassistent-personlig-och-chefsassistans/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2024-02-12-akande-phu-chuai-siang-patiwat-kan-chuai-luea/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2024-02-12-akande-ses-asistani-kisisel-ve-yonetici-asistanlik-devrimi/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2024-02-12-akande-holosovyy-asystent-osobyste-ta-vykonavche-asystyrovannia/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2024-02-12-akande-tro-ly-giong-noi-cach-mang-ho-tro-ca-nhan-va-dieu-hanh/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2024-02-12-akande-yuyin-zhushou-biange-geren-yu-gaoguan-fuwu/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2024-02-12-akande-yuyin-zhushou-biange-geren-yu-gaoguan-fuwu-tw/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
               </div>
             </div>
           </div>
@@ -167,74 +168,160 @@
 
         <section class="ap-hero">
       <h1>Àkàndé: GPT-Powered Voice Assistant for Executives</h1>
-      <p class="sub">Empowering Seamless Interactions with Cutting-Edge AI Technology</p>
-    <nav class="article-tags" aria-label="Subiecte"><a href="/tags/index.html#h3-akande" class="article-tag" rel="tag">Àkàndé</a><a href="/tags/index.html#h3-voice-assistant" class="article-tag" rel="tag">Voice Assistant</a><a href="/tags/index.html#h3-natural-language-understanding" class="article-tag" rel="tag">Natural Language Understanding</a><a href="/tags/index.html#h3-pdf-summaries" class="article-tag" rel="tag">PDF Summaries</a><a href="/tags/index.html#h3-efficient-caching" class="article-tag" rel="tag">Efficient Caching</a><a href="/tags/index.html#h3-openai-gpt" class="article-tag" rel="tag">OpenAI GPT</a><a href="/tags/index.html#h3-executive-assistance" class="article-tag" rel="tag">Executive Assistance</a><a href="/tags/index.html#h3-personal-assistance" class="article-tag" rel="tag">Personal Assistance</a><a href="/tags/index.html#h3-digital-assistants" class="article-tag" rel="tag">Digital Assistants</a><a href="/tags/index.html#h3-technology-innovation" class="article-tag" rel="tag">Technology Innovation</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-02-12T11:12:12+00:00" class="meta-pub">Publicat 12 Feb 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Actualizat 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Timp estimat de citire">6 min de citit</span></div></section>
+      <p class="sub">Arhitectura unui asistent vocal Python open-source: Whisper, GPT-4, cache SQLite și fpdf2</p>
+    <nav class="article-tags" aria-label="Subiecte"><a href="/tags/index.html#h3-akande" class="article-tag" rel="tag">Àkàndé</a><a href="/tags/index.html#h3-openai-gpt-4" class="article-tag" rel="tag">OpenAI GPT-4</a><a href="/tags/index.html#h3-whisper-stt" class="article-tag" rel="tag">Whisper STT</a><a href="/tags/index.html#h3-sqlite-caching" class="article-tag" rel="tag">SQLite caching</a><a href="/tags/index.html#h3-fpdf2" class="article-tag" rel="tag">fpdf2</a><a href="/tags/index.html#h3-asistent-vocal-python" class="article-tag" rel="tag">asistent vocal Python</a><a href="/tags/index.html#h3-chat-completions-api" class="article-tag" rel="tag">chat completions API</a><a href="/tags/index.html#h3-generare-rezumate-pdf" class="article-tag" rel="tag">generare rezumate PDF</a><a href="/tags/index.html#h3-cache-sha-256" class="article-tag" rel="tag">cache SHA-256</a><a href="/tags/index.html#h3-text-to-speech" class="article-tag" rel="tag">text-to-speech</a><a href="/tags/index.html#h3-asistent-ai-pentru-executivi" class="article-tag" rel="tag">asistent AI pentru executivi</a><a href="/tags/index.html#h3-open-source" class="article-tag" rel="tag">open-source</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-02-12T11:12:12+00:00" class="meta-pub">Publicat 12 Feb 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">Actualizat 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Timp estimat de citire">6 min de citit</span></div></section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Cuprins</h2><ol><li><a href="#akande-voice-assistant-a-game-changer-in-personal-and-executive-assistance">Àkàndé Voice Assistant, A game-changer in personal and executive assistance</a></li><li><a href="#akande-the-pinnacle-of-voice-assistant-innovation">Àkàndé: The Pinnacle of Voice Assistant Innovation</a></li><li><a href="#the-evolution-of-voice-assistants">The Evolution of Voice Assistants</a></li><li><a href="#the-gpt-advantage-in-natural-language-understanding">The GPT Advantage in Natural Language Understanding</a></li><li><a href="#enhancing-user-experience-pdf-summaries-and-efficient-caching">Enhancing User Experience: PDF Summaries and Efficient Caching</a></li><li><a href="#akande-s-distinctive-edge">Àkàndé's Distinctive Edge</a></li><li><a href="#broadening-horizons-versatile-applications">Broadening Horizons: Versatile Applications</a></li><li><a href="#technical-insights-and-privacy-considerations">Technical Insights and Privacy Considerations</a></li><li><a href="#akande-a-vision-of-the-future">Àkàndé: A Vision of the Future</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Discover how Àkàndé leverages OpenAI GPT&#x27;s natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Àkàndé Voice Assistant, A game-changer in personal and executive assistance.</strong> [Àkàndé Voice Assistant ⧉][00] represents a groundbreaking integration of OpenAI&#x27;s GPT models with Python&#x27;s versatility, offering unprecedented natural language understanding, efficient data caching, and the unique…</li>  <li><strong>Àkàndé: The Pinnacle of Voice Assistant Innovation.</strong> In the ever-evolving landscape of technology, voice assistants have emerged from the fringes of novelty to become central figures in our daily digital interactions.</li>  <li><strong>The Evolution of Voice Assistants.</strong> Voice assistants have become ubiquitous in our lives, facilitating a myriad of tasks with simple voice commands.</li>  <li><strong>The GPT Advantage in Natural Language Understanding.</strong> At the heart of Àkàndé&#x27;s revolutionary capabilities is its use of OpenAI&#x27;s GPT models, which stand at the forefront of natural language processing technology.</li></ul></aside><p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant.webp&w=1600&format=webp&q=85" alt="A white, spherical modern device"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
-<hr />
-<blockquote>
-<p><strong>TL;DR.</strong> Discover how Àkàndé leverages OpenAI GPT's natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance.</p>
-<p><strong>Concluzii cheie</strong></p>
-<ul>
-<li>DRAFT translation: this article is a Română stub generated from the English source. Body text is intentionally left in English until a native reviewer signs off.</li>
-<li>Source title: <em>Àkàndé: GPT-Powered Voice Assistant for Executives</em>.</li>
-<li>Source subtitle: <em>Empowering Seamless Interactions with Cutting-Edge AI Technology</em>.</li>
-<li>Editorial note: replace this block with hand-translated copy before flipping <code>active=True</code> for ro in <code>scripts/_lang_registry.py</code>.</li>
-</ul>
-</blockquote>
-<hr />
-<!-- lead-start -->
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Cuprins</h2><ol><li><a href="#prezentare-generala-a-pipeline-ului">Prezentare generală a pipeline-ului</a></li><li><a href="#integrarea-cu-openai-chat-completions-si-whisper">Integrarea cu OpenAI: Chat Completions și Whisper</a></li><li><a href="#cache-ul-de-raspunsuri-sqlite">Cache-ul de răspunsuri SQLite</a></li><li><a href="#generarea-rezumatului-pdf">Generarea rezumatului PDF</a></li><li><a href="#modelul-de-confidentialitate">Modelul de confidențialitate</a></li><li><a href="#intrebari-frecvente">Întrebări frecvente</a></li><li><a href="#referinte">Referințe</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Àkàndé este un asistent vocal Python open-source care îmbină recunoașterea vocală OpenAI Whisper, chat completions GPT-4 și un cache SQLite local într-un flux vocal — generând rezumate PDF din istoricul conversațiilor și păstrând toate datele stocate local.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Prezentare generală a pipeline-ului.</strong> O singură interacțiune Àkàndé urmează această secvență:.</li>  <li><strong>Integrarea cu OpenAI: Chat Completions și Whisper.</strong> Àkàndé folosește Python SDK openai atât pentru recunoașterea vorbirii, cât și pentru generarea textului.</li>  <li><strong>Cache-ul de răspunsuri SQLite.</strong> Schema cache-ului este minimală:.</li>  <li><strong>Generarea rezumatului PDF.</strong> Exportul PDF folosește fpdf2, o bibliotecă Python PDF menținută fără dependențe binare:.</li></ul></aside><!-- lead-start -->
 
 <!-- lead-end -->
-<h2 id="akande-voice-assistant-a-game-changer-in-personal-and-executive-assistance">Àkàndé Voice Assistant, A game-changer in personal and executive assistance <a class="heading-anchor" href="#akande-voice-assistant-a-game-changer-in-personal-and-executive-assistance" aria-label="Link către Àkàndé Voice Assistant, A game-changer in personal and executive assistance">#</a></h2>
-<p><a href="https://akande.co" title="Àkàndé Voice Assistant"><strong>Àkàndé Voice Assistant ⧉</strong></a> represents a groundbreaking integration of OpenAI's GPT models with Python's versatility, offering unprecedented natural language understanding, efficient data caching, and the unique capability to generate PDF summaries. This innovative voice assistant caters to both personal and executive needs, providing a seamless, voice-driven user experience that enhances productivity and information management. Àkàndé's sophisticated features, including its advanced caching mechanism and commitment to privacy, position it as an indispensable tool for professionals and students alike, promising a future where digital assistance is more intuitive, responsive, and tailored to individual requirements.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
-<p><img src="https://cloudcdn.pro/clients/akande/v1/logos/akande.svg" alt="A red and green stylised helmet"  width="1200" height="675" decoding="async" loading="lazy">.class=&quot;fade-in w-50 p-3 float-end&quot;</p>
-<h2 id="akande-the-pinnacle-of-voice-assistant-innovation">Àkàndé: The Pinnacle of Voice Assistant Innovation <a class="heading-anchor" href="#akande-the-pinnacle-of-voice-assistant-innovation" aria-label="Link către Àkàndé: The Pinnacle of Voice Assistant Innovation">#</a></h2>
-<p>In the ever-evolving landscape of technology, voice assistants have emerged from the fringes of novelty to become central figures in our daily digital interactions. Amidst this transformative wave, Àkàndé stands out as a paragon of innovation, seamlessly blending OpenAI's cutting-edge GPT technology with the robustness of Python to redefine what we can expect from digital assistants. Àkàndé is not just a voice assistant; it's a comprehensive solution designed to enhance both personal and executive workflows through superior natural language understanding (NLU), efficient information retrieval, and the generation of insightful PDF summaries. This article explores Àkàndé's unique features, its technological underpinnings, and the myriad ways it is set to revolutionise the landscape of personal and executive assistance.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
-<h2 id="the-evolution-of-voice-assistants">The Evolution of Voice Assistants <a class="heading-anchor" href="#the-evolution-of-voice-assistants" aria-label="Link către The Evolution of Voice Assistants">#</a></h2>
-<h3 id="the-rise-of-ai-powered-assistants">The Rise of AI-Powered Assistants <a class="heading-anchor" href="#the-rise-of-ai-powered-assistants" aria-label="Link către The Rise of AI-Powered Assistants">#</a></h3>
-<p>Voice assistants have become ubiquitous in our lives, facilitating a myriad of tasks with simple voice commands. However, the journey from basic command-response systems to sophisticated assistants like Àkàndé has been marked by significant advancements in AI and machine learning technologies. Àkàndé represents the senith of this evolution, offering a voice assistant that not only understands and responds to commands but does so with an unprecedented level of nuance and context-awareness.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
-<h2 id="the-gpt-advantage-in-natural-language-understanding">The GPT Advantage in Natural Language Understanding <a class="heading-anchor" href="#the-gpt-advantage-in-natural-language-understanding" aria-label="Link către The GPT Advantage in Natural Language Understanding">#</a></h2>
-<p>At the heart of Àkàndé's revolutionary capabilities is its use of OpenAI's GPT models, which stand at the forefront of natural language processing technology. These models enable Àkàndé to understand and process complex queries with a degree of accuracy and human-likeness previously unattainable. This proficiency in natural language understanding allows Àkàndé to serve as an effective and reliable assistant in both personal and professional settings, understanding nuances and intent behind user queries.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
-<h2 id="enhancing-user-experience-pdf-summaries-and-efficient-caching">Enhancing User Experience: PDF Summaries and Efficient Caching <a class="heading-anchor" href="#enhancing-user-experience-pdf-summaries-and-efficient-caching" aria-label="Link către Enhancing User Experience: PDF Summaries and Efficient Caching">#</a></h2>
-<h3 id="pdf-summaries-for-improved-information-retention">PDF Summaries for Improved Information Retention <a class="heading-anchor" href="#pdf-summaries-for-improved-information-retention" aria-label="Link către PDF Summaries for Improved Information Retention">#</a></h3>
-<p>One of Àkàndé's standout features is its ability to generate PDF summaries from voice interactions, providing users with concise, tangible records of important information. This feature is invaluable for professionals who need to digest and recall critical points from meetings or research.</p>
-<h3 id="optimized-caching-for-enhanced-responsiveness">Optimized Caching for Enhanced Responsiveness <a class="heading-anchor" href="#optimized-caching-for-enhanced-responsiveness" aria-label="Link către Optimized Caching for Enhanced Responsiveness">#</a></h3>
-<p>Additionally, Àkàndé's sophisticated SQLite-based caching mechanism ensures that responses are not only accurate but delivered with remarkable speed, significantly enhancing the user experience by reducing wait times and improving information retrieval efficiency.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
-<h2 id="akande-s-distinctive-edge">Àkàndé's Distinctive Edge <a class="heading-anchor" href="#akande-s-distinctive-edge" aria-label="Link către Àkàndé's Distinctive Edge">#</a></h2>
-<p>What truly sets Àkàndé apart is its holistic approach to the user experience. By integrating advanced speech recognition and text-to-speech technologies, Àkàndé offers a seamless, intuitive interface that accommodates a wide range of tasks. From setting reminders and scheduling meetings to summarising key points of a document, Àkàndé handles tasks with ease, making it an indispensable tool for busy professionals and students alike.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
-<h2 id="broadening-horizons-versatile-applications">Broadening Horizons: Versatile Applications <a class="heading-anchor" href="#broadening-horizons-versatile-applications" aria-label="Link către Broadening Horizons: Versatile Applications">#</a></h2>
-<p>Àkàndé's versatility extends beyond personal productivity and into the realm of executive assistance, where its features can be leveraged to manage schedules, summarise meetings, and even prepare executive briefings.</p>
-<p>For students, Àkàndé serves as a powerful research tool, capable of summarising academic papers and content into easily digestible PDFs. Its caching system and summarisation capabilities also make it an essential tool for executives who require quick access to summarised data and historical interactions, enabling informed decision-making and efficient information management.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
-<h2 id="technical-insights-and-privacy-considerations">Technical Insights and Privacy Considerations <a class="heading-anchor" href="#technical-insights-and-privacy-considerations" aria-label="Link către Technical Insights and Privacy Considerations">#</a></h2>
-<p>Delving into the technical architecture, Àkàndé's SQLite-based caching mechanism exemplifies a commitment to efficient data retrieval and reliability. This system ensures that users receive swift responses to queries, enhancing the overall experience by minimising latency. Furthermore, Àkàndé's approach to PDF summary generation utilises advanced algorithms to distil conversations and content into essential, easily accessible information. This not only aids in better information management but also in ensuring that critical insights are not lost in the volume of digital interactions.</p>
-<h3 id="robust-security-and-privacy-standards">Robust Security and Privacy Standards <a class="heading-anchor" href="#robust-security-and-privacy-standards" aria-label="Link către Robust Security and Privacy Standards">#</a></h3>
-<p>A cornerstone of Àkàndé's design philosophy is its unwavering commitment to privacy and security. Recognising the sensitivity of the information it handles, especially in executive contexts, Àkàndé employs robust encryption techniques and stringent access controls to protect user data. This aligns Àkàndé with global privacy standards, ensuring that users can trust their digital assistant with sensitive tasks and information.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
-<h2 id="akande-a-vision-of-the-future">Àkàndé: A Vision of the Future <a class="heading-anchor" href="#akande-a-vision-of-the-future" aria-label="Link către Àkàndé: A Vision of the Future">#</a></h2>
-<h3 id="enabling-personal-productivity">Enabling Personal Productivity <a class="heading-anchor" href="#enabling-personal-productivity" aria-label="Link către Enabling Personal Productivity">#</a></h3>
-<p>Àkàndé is not merely a voice assistant; it is a vision of the future where digital assistants play a central role in enhancing our productivity and decision-making processes. Through its innovative use of GPT models, unique features like PDF summary generation, and a commitment to efficiency and privacy, Àkàndé sets new benchmarks for what digital assistants can achieve. Its development is driven by user feedback and a clear roadmap, promising continuous improvement and adaptation to the evolving needs of its users.</p>
-<h3 id="empowering-academic-pursuits">Empowering Academic Pursuits <a class="heading-anchor" href="#empowering-academic-pursuits" aria-label="Link către Empowering Academic Pursuits">#</a></h3>
-<p>The potential applications of Àkàndé are vast and varied. In the corporate world, it can transform how executives interact with data, making it easier to capture and recall important discussions or decisions. In academia, it can streamline research and study processes, making learning more efficient. For personal use, Àkàndé can simplify daily routines, from managing schedules to capturing and organising personal thoughts and reminders.</p>
-<h3 id="streamlining-business-workflows">Streamlining Business Workflows <a class="heading-anchor" href="#streamlining-business-workflows" aria-label="Link către Streamlining Business Workflows">#</a></h3>
-<p>The implications of Àkàndé's technology extend beyond individual productivity. As businesses and educational institutions look for ways to improve efficiency and information management, Àkàndé offers a scalable solution that can be integrated into existing systems and workflows. Its ability to provide quick access to summarised information, coupled with its intuitive user interface, makes it an attractive option for organisations seeking to leverage the latest in AI technology.</p>
-<p>Àkàndé represents the pinnacle of voice assistant innovation, offering a blend of sophisticated natural language understanding, efficient data management, and user-centric features. Its integration of OpenAI's GPT models with Python's robustness creates a powerful tool that transcends traditional digital assistant capabilities. As we look towards a future increasingly dominated by digital interactions, Àkàndé stands as a beacon of innovation, promising a new era of personal and executive assistance that is more intuitive, responsive, and tailored to our needs. With Àkàndé, the future of digital assistance is not just a concept; it is a reality that is here to enhance our digital lives in myriad ways.</p>
-<aside class="author-card" aria-label="Despre autor"><img alt="Portretul lui Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/ro/despre/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tehnolog bancar senior; scriu despre IA aplicată, migrarea la ISO 20022, criptografie post-cuantică pentru serviciile financiare și transformarea structurală a plăților wholesale.</span><span class="author-credentials">Peste 20 de ani de experiență în HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/ro/despre/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Ultima revizuire <time datetime="2026-05-22">2026-05-22</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
-<h2 id="related-heading" class="related-heading">Lecturi conexe</h2>
-<div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/ro/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html" class="related-media" aria-label="Fast Real-Time Speech Recognition on macOS: OpenAI Whisper" tabindex="-1"><img alt="Banner for Real-time automatic speech recognition (ASR)" src="https://cloudcdn.pro/api/transform?url=/stocks/images/research-paper.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="fast-real-time-speech-recognition-on-macos-openai-whisper"><a href="https://sebastienrousseau.com/ro/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html">Fast Real-Time Speech Recognition on macOS: OpenAI Whisper</a> <a class="heading-anchor" href="#fast-real-time-speech-recognition-on-macos-openai-whisper" aria-label="Link către Fast Real-Time Speech Recognition on macOS: OpenAI Whisper">#</a></h3><p><time datetime="2024-03-12">2024-03-12</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/ro/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" class="related-media" aria-label="Quantum Key Distribution Revolutionising Security in Banking" tabindex="-1"><img alt="HSBC From the Docks" src="https://cloudcdn.pro/api/transform?url=/stocks/images/hsbc-from-the-docks.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="quantum-key-distribution-revolutionising-security-in-banking"><a href="https://sebastienrousseau.com/ro/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a> <a class="heading-anchor" href="#quantum-key-distribution-revolutionising-security-in-banking" aria-label="Link către Quantum Key Distribution Revolutionising Security in Banking">#</a></h3><p><time datetime="2023-12-11">2023-12-11</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/ro/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html" class="related-media" aria-label="Quantum Algorithm Challenges Lattice-Based Cryptography" tabindex="-1"><img alt="Banner of Network nodes in a digital blue space" src="https://cloudcdn.pro/api/transform?url=/stocks/images/digital-constellation.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="quantum-algorithm-challenges-lattice-based-cryptography"><a href="https://sebastienrousseau.com/ro/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html">Quantum Algorithm Challenges Lattice-Based Cryptography</a> <a class="heading-anchor" href="#quantum-algorithm-challenges-lattice-based-cryptography" aria-label="Link către Quantum Algorithm Challenges Lattice-Based Cryptography">#</a></h3><p><time datetime="2024-04-15">2024-04-15</time></p></footer></article>
-</div>
-</aside><nav class="post-pagination" aria-label="Paginare articol"><a class="post-pagination-prev" href="/ro/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/"><span class="post-pagination-label">Anterior</span><span class="post-pagination-title">Generative AI in Advertising: Amazon Rufus & Meta</span></a><a class="post-pagination-next" href="/ro/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/"><span class="post-pagination-label">Următor</span><span class="post-pagination-title">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</span></a></nav></div>
+<blockquote>
+<p><strong>Rezumat executiv / Concluzii cheie</strong></p>
+<ul>
+<li><strong><a href="https://akande.co" title="Àkàndé Voice Assistant">Àkàndé ⧉</a></strong> este un asistent vocal Python cu sursă deschisă care înlănțuie OpenAI Whisper pentru conversia vorbirii în text, GPT-4 chat completions, un cache de răspunsuri SQLite local și exportul PDF fpdf2 într-un singur flux de lucru bazat pe voce, fără stocare în cloud și fără ponderi locale ale modelului AI.</li>
+<li><strong>Cache-ul SQLite</strong> stochează hashuri SHA-256 ale șirurilor de interogare normalizate asociate cu textul brut al răspunsurilor API; accesările cache-ului costă zero tokeni și revin în mai puțin de 10 ms, făcând interogările repetate (cum ar fi revizuirea unei decizii de mai devreme din ședință) practic gratuite.</li>
+<li><strong>Conversația multi-tur</strong> este menținută prin construirea listei <code>messages</code> în memorie și transmiterea ei la fiecare apel Chat Completions API — modelul primește istoricul complet al sesiunii pentru a se putea referi la schimburile anterioare, cu costul utilizării incrementale a tokenilor pe tur.</li>
+<li><strong>Generarea rezumatului PDF</strong> serializează lista <code>messages</code> a sesiunii într-un document fpdf2 formatat: tururile utilizatorului și ale asistentului sunt etichetate, marcajele de timp sunt inserate, iar paginarea automată gestionează sesiuni de orice lungime; fișierul este scris în sistemul de fișiere local, nu încărcat.</li>
+<li><strong>Limita de confidențialitate:</strong> doar interogarea live (și istoricul sesiunii până la limita ferestrei de context) părăsește dispozitivul — nicio înregistrare audio, niciun transcript și niciun răspuns din cache nu sunt trimise către niciun serviciu la distanță altul decât API-ul OpenAI.</li>
+</ul>
+</blockquote>
+<p><a href="https://akande.co" title="Àkàndé Voice Assistant"><strong>Àkàndé ⧉</strong></a> este un asistent vocal Python cu sursă deschisă, construit în jurul a trei componente compozabile: OpenAI Whisper pentru recunoașterea vorbirii, API-ul GPT-4 Chat Completions pentru înțelegerea și generarea limbajului, și o bază de date SQLite locală pentru memorarea în cache a răspunsurilor și persistența sesiunii. Rezultatul este un flux de lucru bazat pe voce care poate fi rulat pe un laptop fără ponderi locale ale modelului, infrastructură de stocare offline sau un stack de containere.</p>
+<p>Acest articol descrie arhitectura tehnică a fiecărei componente, deciziile de proiectare privind memorarea în cache și contextul multi-tur, precum și pipeline-ul de export PDF.</p>
+<h2 id="prezentare-generala-a-pipeline-ului">Prezentare generală a pipeline-ului <a class="heading-anchor" href="#prezentare-generala-a-pipeline-ului" aria-label="Link către Prezentare generală a pipeline-ului">#</a></h2>
+<p>O singură interacțiune Àkàndé urmează această secvență:</p>
+<ol>
+<li><strong>Capturarea audio</strong> — utilizatorul vorbește; aplicația înregistrează audio într-un fișier WAV temporar folosind <code>sounddevice</code> sau o bibliotecă audio compatibilă.</li>
+<li><strong>Conversia vorbirii în text</strong> — fișierul WAV este trimis la <code>openai.audio.transcriptions.create()</code> (Whisper API); transcriptul este returnat ca un șir simplu.</li>
+<li><strong>Căutarea în cache</strong> — transcriptul este normalizat (litere mici, spații comprimate) și hașat cu SHA-256; hashul este căutat în tabelul local SQLite <code>response_cache</code>.</li>
+<li><strong>Apel API sau accesare cache</strong> — la un miss, transcriptul este adăugat la lista <code>messages</code> a sesiunii și trimis la <code>openai.chat.completions.create()</code>; textul răspunsului este stocat în cache.</li>
+<li><strong>Conversia textului în vorbire</strong> — textul răspunsului este convertit în audio folosind endpoint-ul <code>openai.audio.speech.create()</code> (TTS) sau o bibliotecă TTS locală, și redat.</li>
+<li><strong>Exportul PDF</strong> (la cerere) — lista completă <code>messages</code> este serializată într-un document fpdf2 formatat și scrisă pe disc.</li>
+</ol>
+<h2 id="integrarea-cu-openai-chat-completions-si-whisper">Integrarea cu OpenAI: Chat Completions și Whisper <a class="heading-anchor" href="#integrarea-cu-openai-chat-completions-si-whisper" aria-label="Link către Integrarea cu OpenAI: Chat Completions și Whisper">#</a></h2>
+<p>Àkàndé folosește Python SDK <code>openai</code> atât pentru recunoașterea vorbirii, cât și pentru generarea textului. Apelul de transcriere Whisper:</p>
+<pre><code class="language-python">with open(audio_file_path, &quot;rb&quot;) as f:
+    transcript = openai.audio.transcriptions.create(
+        model=&quot;whisper-1&quot;,
+        file=f,
+        language=None  # auto-detect
+    )
+user_text = transcript.text
+</code></pre>
+<p>Apelul Chat Completions menține o listă <code>messages</code> cu domeniu de sesiune:</p>
+<pre><code class="language-python">messages.append({&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: user_text})
+
+response = openai.chat.completions.create(
+    model=&quot;gpt-4-turbo-preview&quot;,
+    messages=messages,
+    temperature=0.2,
+    max_tokens=1024
+)
+
+assistant_text = response.choices[0].message.content
+messages.append({&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: assistant_text})
+</code></pre>
+<p>Promptul de sistem este adăugat o singură dată la începutul sesiunii și controlează persona Àkàndé, formatul de ieșire și orice constrângeri specifice domeniului:</p>
+<pre><code class="language-python">messages = [
+    {
+        &quot;role&quot;: &quot;system&quot;,
+        &quot;content&quot;: (
+            &quot;You are Àkàndé, a concise executive assistant. &quot;
+            &quot;Respond in plain prose. Do not use markdown. &quot;
+            &quot;If asked to summarise, produce three bullet points maximum.&quot;
+        )
+    }
+]
+</code></pre>
+<p>Setarea <code>temperature=0.2</code> sacrifică variația creativă în favoarea determinismului — important pentru interogări factuale, cum ar fi reamintirea unei decizii de mai devreme în sesiune.</p>
+<h2 id="cache-ul-de-raspunsuri-sqlite">Cache-ul de răspunsuri SQLite <a class="heading-anchor" href="#cache-ul-de-raspunsuri-sqlite" aria-label="Link către Cache-ul de răspunsuri SQLite">#</a></h2>
+<p>Schema cache-ului este minimală:</p>
+<pre><code class="language-sql">CREATE TABLE IF NOT EXISTS response_cache (
+    query_hash  TEXT PRIMARY KEY,
+    response    TEXT NOT NULL,
+    created_at  INTEGER NOT NULL  -- Unix timestamp
+);
+</code></pre>
+<p>Calea de căutare și scriere:</p>
+<pre><code class="language-python">import hashlib, sqlite3, time
+
+def _normalise(text: str) -&gt; str:
+    return &quot; &quot;.join(text.lower().split())
+
+def cache_get(conn: sqlite3.Connection, query: str) -&gt; str | None:
+    h = hashlib.sha256(_normalise(query).encode()).hexdigest()
+    row = conn.execute(
+        &quot;SELECT response FROM response_cache WHERE query_hash = ?&quot;, (h,)
+    ).fetchone()
+    return row[0] if row else None
+
+def cache_set(conn: sqlite3.Connection, query: str, response: str) -&gt; None:
+    h = hashlib.sha256(_normalise(query).encode()).hexdigest()
+    conn.execute(
+        &quot;INSERT OR REPLACE INTO response_cache VALUES (?, ?, ?)&quot;,
+        (h, response, int(time.time()))
+    )
+    conn.commit()
+</code></pre>
+<p><code>INSERT OR REPLACE</code> asigură că un răspuns memorat în cache este actualizat dacă aceeași interogare este trimisă după o actualizare a modelului. O interogare de evacuare bazată pe TTL (<code>DELETE WHERE created_at &lt; ?</code>) poate fi programată la pornire pentru a limita dimensiunea cache-ului.</p>
+<p>Performanța accesării cache-ului: o căutare SQLite pe un SSD local revine în mai puțin de 1 ms pentru tabele cu până la ~100.000 de rânduri. Latența tur-retur pentru un apel live GPT-4 API este de obicei 600–900 ms pentru răspunsuri scurte. Pentru un briefing zilnic cu câteva interogări repetate, cache-ul elimină majoritatea apelurilor API după prima sesiune.</p>
+<h2 id="generarea-rezumatului-pdf">Generarea rezumatului PDF <a class="heading-anchor" href="#generarea-rezumatului-pdf" aria-label="Link către Generarea rezumatului PDF">#</a></h2>
+<p>Exportul PDF folosește <a href="https://py-pdf.github.io/fpdf2/">fpdf2</a>, o bibliotecă Python PDF menținută fără dependențe binare:</p>
+<pre><code class="language-python">from fpdf import FPDF
+from datetime import datetime
+
+def export_session_pdf(messages: list[dict], output_path: str) -&gt; None:
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font(&quot;Helvetica&quot;, size=11)
+    pdf.set_margins(20, 20, 20)
+
+    pdf.set_font(&quot;Helvetica&quot;, &quot;B&quot;, 14)
+    pdf.cell(0, 10, f&quot;Àkàndé Session — {datetime.now():%Y-%m-%d %H:%M}&quot;, ln=True)
+    pdf.ln(4)
+
+    for msg in messages:
+        if msg[&quot;role&quot;] == &quot;system&quot;:
+            continue
+        label = &quot;You&quot; if msg[&quot;role&quot;] == &quot;user&quot; else &quot;Àkàndé&quot;
+        pdf.set_font(&quot;Helvetica&quot;, &quot;B&quot;, 10)
+        pdf.cell(0, 6, label, ln=True)
+        pdf.set_font(&quot;Helvetica&quot;, size=10)
+        pdf.multi_cell(0, 5, msg[&quot;content&quot;])
+        pdf.ln(3)
+
+    pdf.output(output_path)
+</code></pre>
+<p><code>multi_cell()</code> gestionează împărțirea pe rânduri și întreruperile automate de pagină, astfel că sesiunile de orice lungime produc un document bine formatat fără logică manuală de paginare. Ieșirea este un fișier compatibil cu PDF/A fără fonturi încorporate în afara metricelor standard Helvetica.</p>
+<h2 id="modelul-de-confidentialitate">Modelul de confidențialitate <a class="heading-anchor" href="#modelul-de-confidentialitate" aria-label="Link către Modelul de confidențialitate">#</a></h2>
+<p>Limita de confidențialitate în Àkàndé este definită de trei fapte:</p>
+<ol>
+<li>Audioul este trimis la Whisper API prin HTTPS și nu este reținut de OpenAI după apelul API (conform politicii de utilizare a datelor API OpenAI din februarie 2024).</li>
+<li>Apelurile Chat Completions API transmit lista <code>messages</code> a sesiunii — care poate conține istoricul complet al conversației pentru sesiunile multi-tur.</li>
+<li>Baza de date SQLite și fișierele PDF trăiesc în întregime în sistemul de fișiere local; nu apare nicio sincronizare în fundal cu niciun serviciu cloud.</li>
+</ol>
+<p>Pentru cazurile de utilizare executivă implicând subiecte sensibile — discuții M&amp;A, probleme de personal, strategie de reglementare — istoricul sesiunii transmis la API ar trebui revizuit față de politica de utilizare AI a organizației înainte de implementare. Limita <code>max_tokens</code> din promptul de sistem poate fi folosită pentru a preveni transmiterea inadvertentă a contextului care depășește domeniul de divulgare intenționat.</p>
+<h2 id="intrebari-frecvente">Întrebări frecvente <a class="heading-anchor" href="#intrebari-frecvente" aria-label="Link către Întrebări frecvente">#</a></h2>
+<p><strong>Păstrează Àkàndé istoricul conversațiilor după terminarea sesiunii?</strong>
+Lista <code>messages</code> din memorie este eliminată când procesul se încheie. Istoricul conversațiilor este reținut doar dacă utilizatorul declanșează un export PDF sau dacă este adăugat un strat de persistență personalizat. Cache-ul SQLite stochează hashurile interogărilor și textul răspunsurilor, nu contextul complet al conversației.</p>
+<p><strong>Cum gestionează cache-ul interogările similare, dar nu identice?</strong>
+Cache-ul folosește hashing cu potrivire exactă pe șirul de interogare normalizat. Două interogări care diferă cu un singur cuvânt vor produce hashuri diferite și vor rezulta în apeluri API separate. Memorarea semantică în cache (folosind similitudinea vectorilor de embedding pentru a potrivi interogări aproape duplicate) ar necesita un pas suplimentar de căutare vectorială și nu face parte din implementarea de bază.</p>
+<p><strong>Ce model GPT folosește Àkàndé în mod implicit?</strong>
+Implicit este <code>gpt-4-turbo-preview</code> din februarie 2024. Numele modelului este un parametru de configurare, deci orice model de completare chat OpenAI poate fi substituit. Trecerea la <code>gpt-3.5-turbo</code> reduce costul API cu aproximativ 20× pe token, dar reduce calitatea raționamentului pentru interogări complexe cu mai mulți pași.</p>
+<p><strong>Poate fi personalizat formatul de export PDF?</strong>
+Da. Funcția de export fpdf2 acceptă lista <code>messages</code> ca singura intrare necesară, astfel că fontul, marginile, dimensiunea paginii, conținutul antetului și etichetarea pot fi toate modificate prin editarea funcției de export. fpdf2 suportă, de asemenea, adăugarea de imagini, tabele și fonturi Unicode, permițând aspecte de document mai bogate pentru organizațiile cu cerințe specifice de branding.</p>
+<h2 id="referinte">Referințe <a class="heading-anchor" href="#referinte" aria-label="Link către Referințe">#</a></h2>
+<ol>
+<li>OpenAI. <em>Audio Transcriptions — Whisper API</em>. OpenAI Platform Documentation, 2024. https://platform.openai.com/docs/api-reference/audio/createTranscription</li>
+<li>OpenAI. <em>Chat Completions API</em>. OpenAI Platform Documentation, 2024. https://platform.openai.com/docs/api-reference/chat/create</li>
+<li>Voss, J. et al. <em>fpdf2: Modern PDF generation for Python</em>. GitHub, 2024. https://github.com/py-pdf/fpdf2</li>
+<li>SQLite Consortium. <em>SQLite Documentation</em>. sqlite.org, 2024. https://www.sqlite.org/docs.html</li>
+</ol>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Ultima revizuire <time datetime="2026-05-24">2026-05-24</time>.</p>
+
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Despre autor"><img alt="Portretul lui Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/ro/despre/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tehnolog bancar senior; scriu despre IA aplicată, migrarea la ISO 20022, criptografie post-cuantică pentru serviciile financiare și transformarea structurală a plăților wholesale.</span><span class="author-credentials">Peste 20 de ani de experiență în HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/ro/despre/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Ultima revizuire <time datetime="2026-05-30">2026-05-30</time>.</p><nav class="post-pagination" aria-label="Paginare articol"><a class="post-pagination-prev" href="/ro/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/"><span class="post-pagination-label">Anterior</span><span class="post-pagination-title">Generative AI in Advertising: Amazon Rufus & Meta</span></a><a class="post-pagination-next" href="/ro/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/"><span class="post-pagination-label">Următor</span><span class="post-pagination-title">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</span></a></nav></div>
     </main>
 
 <!-- gen-layouts:footer-start -->
@@ -306,7 +393,7 @@
     <!-- Schema.org structured data -->
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ro"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ro"}]}</script>
 
-        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1218,"headline":"Àkàndé: GPT-Powered Voice Assistant for Executives","description":"Discover how Àkàndé leverages OpenAI GPT's natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp","width":"100vw","height":"100vh","caption":"A white, spherical modern device"},"url":"https://sebastienrousseau.com/ro/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/","datePublished":"2024-02-12T11:12:12+00:00","dateModified":"2026-05-11","inLanguage":"ro","keywords":"Àkàndé, Voice Assistant, Natural Language Understanding, PDF Summaries, Efficient Caching, OpenAI GPT, Executive Assistance, Personal Assistance, Digital Assistants, Technology Innovation","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ro/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ro"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ro/"},{"@type":"ListItem","position":3,"name":"Àkàndé: GPT-Powered Voice Assistant for Executives","item":"https://sebastienrousseau.com/ro/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/"}]}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1393,"about":{"@type":"Thing","name":"Python","sameAs":["https://en.wikipedia.org/wiki/Python_(programming_language)","https://www.wikidata.org/wiki/Q28865"]},"headline":"Àkàndé: GPT-Powered Voice Assistant for Executives","description":"Àkàndé este un asistent vocal Python open-source care îmbină recunoașterea vocală OpenAI Whisper, chat completions GPT-4 și un cache SQLite local într-un flux vocal — generând rezumate PDF din istoricul conversațiilor și păstrând toate datele stocate local.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp","width":"100vw","height":"100vh","caption":"Un dispozitiv modern sferic de culoare albă"},"url":"https://sebastienrousseau.com/ro/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/","datePublished":"2024-02-12T11:12:12+00:00","dateModified":"2026-05-24","inLanguage":"ro","keywords":"Àkàndé, OpenAI GPT-4, Whisper STT, SQLite caching, fpdf2, asistent vocal Python, chat completions API, generare rezumate PDF, cache SHA-256, text-to-speech, asistent AI pentru executivi, open-source","articleSection":"AI","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ro/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ro"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ro/"},{"@type":"ListItem","position":3,"name":"Àkàndé: GPT-Powered Voice Assistant for Executives","item":"https://sebastienrousseau.com/ro/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/"}]}]}</script>
 <script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
   
 <!-- SSG Search Widget -->
@@ -332,5 +419,5 @@
 </div>
 <script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
 </div>
-</body>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Àkàndé: GPT-Powered Voice Assistant for Executives","url":"https://sebastienrousseau.com/ro/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/","inLanguage":"ro-RO","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"Àkàndé, OpenAI GPT-4, Whisper STT, SQLite caching, fpdf2, asistent vocal Python, chat completions API, generare rezumate PDF, cache SHA-256, text-to-speech, asistent AI pentru executivi, open-source","programmingLanguage":"Python"}</script></body>
 </html>

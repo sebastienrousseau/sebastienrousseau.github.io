@@ -4,7 +4,79 @@
   <link href="https://sebastienrousseau.com/zh-hans/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/zh-hans/"/>
   <id>https://sebastienrousseau.com/zh-hans/</id>
-  <updated>2026-05-22T21:38:56+00:00</updated>
+  <updated>2026-05-30T14:48:09+00:00</updated>
+  <entry>
+    <title>英国批发数字市场:代币化国债、结算与新设的协调者角色</title>
+    <link href="https://sebastienrousseau.com/zh-hans/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hans/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</id>
+    <updated>2026-05-30T06:06:06+00:00</updated>
+    <published>2026-05-30T06:06:06+00:00</published>
+    <summary>英国批发数字市场协调者(Champion)角色把代币化批发金融升格为国家竞争力工程,重塑伦敦金融城在代币化国债与结算上的运营模型。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ISO 20022 迁移之后：把支付数据做成 2026 银行产品</title>
+    <link href="https://sebastienrousseau.com/zh-hans/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hans/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</id>
+    <updated>2026-05-29T06:06:06+00:00</updated>
+    <published>2026-05-29T06:06:06+00:00</published>
+    <summary>ISO 20022 迁移之后是一次数据产品机会。结构化地址、用途代码、汇款信息、调查报文与更丰富的支付状态事件，可以转化为对账、欺诈、流动性、合规与分析产品。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>数字资产 2026：基础设施转型不可缓</title>
+    <link href="https://sebastienrousseau.com/zh-hans/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hans/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>数字资产已不再是创新押注，而是关于结算、托管与资产负债表的架构问题；银行的战略任务是在结构性不确定中设计基础设施。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>DORA、EU AI 法案与数据主权：银行 2026 合规栈</title>
+    <link href="https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>DORA、EU AI 法案、GDPR、云集中风险与数据主权在 2026 年汇聚为银行的一套合规栈，决定董事会层级的运营模型设计。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 支付人工智能操作系统：欺诈、路由、韧性与合规</title>
+    <link href="https://sebastienrousseau.com/zh-hans/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hans/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</id>
+    <updated>2026-05-27T06:06:06+00:00</updated>
+    <published>2026-05-27T06:06:06+00:00</published>
+    <summary>2026 年人工智能正成为支付的操作系统，从分析仪表盘走向欺诈防范、支付修复、路由、流动性预测、合规筛查与代理式商业控制的实时决策层。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Magnifica Humanitas：AI行业视角解读教宗通谕</title>
+    <link href="https://sebastienrousseau.com/zh-hans/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/"/>
+    <id>https://sebastienrousseau.com/zh-hans/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>2026年5月25日，教宗良十四世发布《Magnifica Humanitas》，这是首份专门讨论人工智能的教宗通谕。从科技行业内部客观阅读，它不是教义，而是迄今为AI与量子时代提出的最具一贯性的伦理框架之一，呼应了火车、汽车、核能与互联网当年所引发的道德焦虑。本文剖析其对行业、对人类的意义，以及为何诚实的阅读最终落在希望之上。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 稳定币与代币化存款：银行真正需要守住什么</title>
+    <link href="https://sebastienrousseau.com/zh-hans/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hans/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</id>
+    <updated>2026-05-26T06:06:06+00:00</updated>
+    <published>2026-05-26T06:06:06+00:00</published>
+    <summary>稳定币与代币化存款正围绕可编程清算趋同，但其资产负债表、法律、流动性与信任模型仍各不相同；银行须分清边界。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 可编程流动性：AI、代币化存款与实时资金管理编排</title>
+    <link href="https://sebastienrousseau.com/zh-hans/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hans/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/</id>
+    <updated>2026-05-25T06:06:06+00:00</updated>
+    <published>2026-05-25T06:06:06+00:00</published>
+    <summary>2026 年的可编程流动性把 AI 预测、代币化存款、实时支付通道、虚拟账户、稳定币与资金管理系统整合为统一编排层，重塑营运资金治理与银行运营模式。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>2026 年 UK Payments Forward Plan：稳定币、开放银行、代币化存款与智能体支付</title>
     <link href="https://sebastienrousseau.com/zh-hans/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/"/>
@@ -33,21 +105,21 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+    <title>2026年的代币化存款：银行服务、稳定币竞争与可编程商业银行货币的现状</title>
     <link href="https://sebastienrousseau.com/zh-hans/2026-05-21-tokenised-deposits-banking-services-status-2026/"/>
     <id>https://sebastienrousseau.com/zh-hans/2026-05-21-tokenised-deposits-banking-services-status-2026/</id>
     <updated>2026-05-21T06:06:06+00:00</updated>
     <published>2026-05-21T06:06:06+00:00</published>
-    <summary>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</summary>
+    <summary>2026年，代币化存款服务正从研究阶段进入银行试点和早期客户方案。规模仍处于早期，但方向明确：商业银行货币正适应可编程结算、数字钱包、稳定币互操作性和代币化资本市场。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+    <title>2026 年的云原生银行：Kubernetes、DORA、主权与 VM 和容器分界线的终结</title>
     <link href="https://sebastienrousseau.com/zh-hans/2026-05-20-cloud-native-banking-financial-institutions-2026/"/>
     <id>https://sebastienrousseau.com/zh-hans/2026-05-20-cloud-native-banking-financial-institutions-2026/</id>
     <updated>2026-05-20T06:06:06+00:00</updated>
     <published>2026-05-20T06:06:06+00:00</published>
-    <summary>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</summary>
+    <summary>2026年云原生银行聚焦于基于Kubernetes的平台工程、符合DORA要求的运营韧性、虚拟机与容器融合、云主权、AI工作负载部署、数据可移植性，并证明关键金融服务能够抵御供应商中断。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

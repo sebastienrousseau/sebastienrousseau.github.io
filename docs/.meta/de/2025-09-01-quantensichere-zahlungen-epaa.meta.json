@@ -1,11 +1,11 @@
 {
-  "description": "Quantencomputing bedroht die Kryptografie der Zahlungssysteme. Das EPAA-Whitepaper beschreibt das strukturelle Risiko und begründet die dringende Notwendigkeit einer PQC-Migration.",
-  "subtitle": "Post-Quanten-Kryptografie ist eine gegenwärtige Infrastrukturentscheidung, keine zukünftige. Das EPAA-Whitepaper legt das strukturelle Risiko und den dringenden Migrationsbedarf dar.",
-  "banner_alt": "Quantencomputing-Leiterplatte in blauem Licht",
-  "title": "Quantensichere Zahlungen: Warum die Branche jetzt handeln muss",
-  "date": "September 01, 2025",
   "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
   "keywords": "quantensichere Zahlungen, Post-Quanten-Kryptografie, SEPA, SWIFT gpi, ISO 20022, Sicherheit im Finanzdienstleistungssektor, EPAA, Harvest-Now Decrypt-Later, kryptografische Agilität, Sebastien Rousseau",
+  "description": "Quantencomputing bedroht die Kryptografie der Zahlungssysteme. Das EPAA-Whitepaper beschreibt das strukturelle Risiko und begründet die dringende Notwendigkeit einer PQC-Migration.",
   "language": "de",
-  "locale": "de_DE"
+  "banner_alt": "Quantencomputing-Leiterplatte in blauem Licht",
+  "date": "September 01, 2025",
+  "locale": "de_DE",
+  "title": "Quantensichere Zahlungen: Warum die Branche jetzt handeln muss",
+  "subtitle": "Post-Quanten-Kryptografie ist eine gegenwärtige Infrastrukturentscheidung, keine zukünftige. Das EPAA-Whitepaper legt das strukturelle Risiko und den dringenden Migrationsbedarf dar."
 }

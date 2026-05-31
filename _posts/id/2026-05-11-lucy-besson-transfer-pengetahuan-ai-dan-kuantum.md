@@ -1,13 +1,13 @@
 ---
 title: "[ID DRAFT] Lucy's Flash Drive Revisited: AI, Quantum & Knowledge"
-subtitle: "Twelve years after Luc Besson's Lucy, the film's central metaphor of knowledge migrating from flesh to machine is being unexpectedly validated by LLMs, neutral atom qubits, and whole-brain emulation."
-description: "Twelve years on, Besson's Lucy reads like a thought experiment about knowledge migrating from flesh to machine — quietly validated by LLMs and qubits."
+subtitle: "Dua belas tahun setelah Lucy karya Luc Besson, metafora sentral tentang pengetahuan yang berpindah dari daging ke mesin kini divalidasi secara tak terduga oleh LLM, neutral atom qubit, dan whole-brain emulation."
+description: "Dua belas tahun berlalu, Lucy karya Besson terasa seperti eksperimen pikiran tentang pengetahuan yang berpindah dari daging ke mesin — diam-diam divalidasi oleh LLM dan qubit."
 date: "May 11, 2026"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp"
-banner_alt: "Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles"
-keywords: "Lucy 2014 film, Luc Besson, knowledge transfer, large language models, neutral atom qubits, whole-brain emulation, substrate independence, AI philosophy, quantum computing, knowledge persistence"
+banner_alt: "Visualisasi abstrak jaringan saraf dan larik atom kuantum. Sebuah komputer hitam terbentuk dari partikel-partikel yang tersusun ulang"
+keywords: "film Lucy 2014, Luc Besson, transfer pengetahuan, large language models, neutral atom qubits, whole-brain emulation, substrate independence, filosofi AI, quantum computing, persistensi pengetahuan"
 ---
 
 ![Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles](https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp).class=\"img-fluid clearfix\"

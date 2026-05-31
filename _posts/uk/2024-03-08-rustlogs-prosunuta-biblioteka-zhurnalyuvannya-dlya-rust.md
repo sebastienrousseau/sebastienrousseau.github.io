@@ -1,13 +1,13 @@
 ---
 title: "[UK DRAFT] RustLogs (RLG): Structured Logging Library for Rust"
-subtitle: "Streamline Your Rust Logging Workflow"
-description: "Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. "
+subtitle: "Оптимізуйте робочий процес логування у Rust"
+description: "Відкрийте для себе RustLogs (RLG) — гнучку бібліотеку логування для Rust зі структурованими форматами журналів, асинхронним логуванням та широкими можливостями налаштування."
 date: "Mar 08, 2024"
 language: "uk-UA"
 locale: "uk_UA"
 banner: "https://cloudcdn.pro/stocks/images/rustlogs.webp"
-banner_alt: "Banner for RustLogs (RLG)"
-keywords: "Rust logging library, asynchronous Rust logging, structured log formats, Rust application debugging, customisable logging Rust, Rust development tools, RustLogs RLG features, efficient Rust logging, RustLogs integration, RustLogs documentation"
+banner_alt: "Банер для RustLogs (RLG)"
+keywords: "бібліотека логування Rust, асинхронне логування Rust, структуровані формати журналів, налагодження застосунків Rust, налаштовуване логування Rust, інструменти розробки Rust, функції RustLogs RLG, ефективне логування Rust, інтеграція RustLogs, документація RustLogs"
 ---
 
 ![Banner for RustLogs (RLG)](https://cloudcdn.pro/stocks/images/rustlogs.webp).class=\"img-fluid clearfix\"

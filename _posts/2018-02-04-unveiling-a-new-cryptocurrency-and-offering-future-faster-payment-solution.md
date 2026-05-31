@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Feb 04, 2018"
-description: "A significant chapter in the evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and sustainable finance."
+description: "In early 2018, the EXTC platform explored faster cross-border payments via Ethereum ERC-223 smart contracts — an early blueprint for what decentralised finance would later build."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -22,7 +22,7 @@ image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
-keywords: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
+keywords: "EXTC, ERC-223, Ethereum smart contracts, faster payments, cryptocurrency, blockchain payments, payment token, decentralised finance, ERC-20, cross-border payments"
 language: "en-GB"
 layout: "report"
 locale: "en_GB"
@@ -39,8 +39,8 @@ referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "A new cryptocurrency and faster-payments solution for the next-generation of finance."
-tags: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
+subtitle: "An early-2018 experiment in Ethereum ERC-223 smart contracts and programmable payment tokens."
+tags: "EXTC, ERC-223, Ethereum, smart contracts, cryptocurrency, blockchain payments, faster payments, decentralised finance, payment token, cross-border payments"
 theme-color: "0, 67, 165"
 title: "Unveiling a new Cryptocurrency and Faster Payment Solution"
 url: "https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html"
@@ -48,10 +48,10 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/rss.xml"
-category: "Technology"
+category: "Blockchain"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "A significant chapter in the evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and sustainable finance."
+item_description: "In early 2018, the EXTC platform explored faster cross-border payments via Ethereum ERC-223 smart contracts — an early blueprint for what DeFi would later build."
 item_guid: "https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/rss.xml"
 item_link: "https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/rss.xml"
 item_pub_date: "Sun, 04 Feb 2018 06:06:06 +0000"
@@ -80,7 +80,7 @@ msapplication-navbutton-color: "0, 67, 165"
 
 twitter_card: "summary"
 twitter_creator: "@wwdseb"
-twitter_description: "A significant chapter in the evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and sustainable finance."
+twitter_description: "In early 2018, the EXTC platform explored faster cross-border payments via Ethereum ERC-223 smart contracts — an early blueprint for decentralised finance."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
@@ -97,85 +97,127 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
-excerpt: "In today’s fast-paced landscape, where time is of the essence, the demand for swiffer payment solutions has never been more pronounced. The Express Transaction Credits Platform (EXTC) Network…"
+excerpt: "The Express Transaction Credits (EXTC) platform was an early-2018 experiment in programmable payments on Ethereum, using ERC-223 smart contracts to enable instant cross-border transfers and atomic payment flows — ideas that decentralised finance later scaled."
 last_reviewed: "2026-05-11"
 ---
 
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> A significant chapter in the evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and sustainable finance.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> In early 2018, the EXTC platform explored faster cross-border payments via Ethereum ERC-223 smart contracts — an early blueprint for what decentralised finance would later build.</p>
 <p class="post-lead-heading"><strong>Key takeaways</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Idea.</strong> At the heart of the EXTC Network’s transformative power lies its novel concept - to create a standard for faster payment solutions that cater to the evolving demands of the modern financial landscape.</li>
-  <li><strong>Impact.</strong> The impact of the EXTC Network’s vision transcends the boundaries of the financial sector.</li>
-  <li><strong>Incentives.</strong> The EXTC Network acknowledges that widespread adoption requires a recognisable and attainable set of incremental benefits.</li>
-  <li><strong>A Growing Need for Faster Payments.</strong> In today’s fast-paced landscape, where time is of the essence, the demand for swiffer payment solutions has never been more pronounced.</li>
+  <li><strong>The Problem: Cross-Border Payments in 2018.</strong> International payments in early 2018 were slow, expensive, and opaque by design.</li>
+  <li><strong>The Technical Foundation: ERC-20 and Its Flaw.</strong> The ERC-20 standard, formalised in Ethereum Improvement Proposal 20, defined the canonical interface for fungible tokens: balanceOf, transfer, transferFrom, approve, and allowance.</li>
+  <li><strong>The EXTC Token Design.</strong> The Express Transaction Credits token was designed around five core attributes:.</li>
+  <li><strong>Payment Primitives the Platform Targeted.</strong> EXTC’s architecture was designed to replace four specific payment workflows that legacy systems handled inefficiently:.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html">Static Site Generator: Fastest Rust-Based SSG</a>, <a href="https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html">Automating ISO 20022 Payment Files Creation with Pain001</a>, <a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html">Understanding the Technology behind Blockchain</a>.</p>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html">The making of the Express Transaction Credits Platform</a>, <a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html">Understanding the Technology behind Blockchain</a>, <a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</a>.</p>
 </aside>
 <!-- lead-end -->
 
 ![A very tall building that has a lot of holes in it](https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp).class=\"img-fluid clearfix\"
 
-## Insight
+> **Executive Summary / Key Takeaways**
+>
+> - **The core hypothesis.** Ethereum smart contracts could replace the correspondent-banking relay race for cross-border payments, settling in seconds rather than days and eliminating the 3–7% fee layer ([World Bank, 2018](https://www.worldbank.org/en/topic/migrationremittancesdiasporaissues/brief/migration-remittances-data "World Bank Remittance Prices")).
+> - **ERC-223’s specific contribution.** The standard fixed the silent-token-loss flaw in ERC-20 by requiring smart contracts to expose a `tokenFallback` function, making failed transfers revert rather than burn tokens irreversibly ([Ethereum EIPs](https://eips.ethereum.org/EIPS/eip-20 "EIP-20: Token Standard")).
+> - **EXTC’s payment primitives.** The token design supported single atomic transfers, time-triggered standing orders, multi-signature corporate disbursements, and instant collateral-backed micro-loans — all without a clearing institution.
+> - **What the experiment revealed.** The technical design was coherent, but Ethereum mainnet in 2018 processed roughly 15 transactions per second. Payment volume at scale required Layer-2 solutions that were not yet production-ready.
+> - **Legacy.** The architectural ideas in EXTC — programmable money, atomic settlement, compliance-embedded token logic — reappeared in later DeFi protocols, CBDC designs, and tokenised deposit frameworks.
 
-### A Growing Need for Faster Payments
+---
 
-In today’s fast-paced landscape, where time is of the essence, the demand for swiffer payment solutions has never been more pronounced. The Express Transaction Credits Platform (EXTC) Network recognizes this need as a driving force behind its development.
+## The Problem: Cross-Border Payments in 2018
 
-With the exponential rise of e-commerce, global trade, and cross-border transactions, traditional banking systems often stumble when it comes to expeditious fund transfers. This insight underscores the importance of a financial ecosystem that can deliver rapid and seamless transactions, transcending geographical boundaries.
+International payments in early 2018 were slow, expensive, and opaque by design. A retail transfer from the United Kingdom to Southeast Asia typically involved two to four correspondent banks, each charging a fee and adding a day to the settlement chain. The World Bank’s Remittance Prices Worldwide database recorded a global average cost of 6.9% for a USD 200 remittance in Q1 2018.
 
-The cryptocurrency realm has already showcased the potential to revolutionise transaction speeds, but the EXTC Network takes it a step further. It envisions a comprehensive suite of financial services that leverage distributed ledgers and self-executing smart contracts. These technologies not only ensure faster payments but also enhance security and transparency, a crucial factor in building trust within the ecosystem. By tapping into the pulse of this growing need for speed and efficiency, EXTC Network positions itself at the forefront of the race to reshape global payment norms.
+Cryptocurrency had already demonstrated that peer-to-peer digital cash was technically feasible. Bitcoin settled transactions globally in roughly ten minutes, and Ethereum’s programmable layer added smart contracts — self-executing code that could encode payment rules directly into the transfer itself. The gap between what was technically possible on-chain and what legacy correspondent banking delivered was the design space EXTC entered.
 
-## Idea
+## The Technical Foundation: ERC-20 and Its Flaw
 
-### EXTC Network's Vision
+The ERC-20 standard, formalised in Ethereum Improvement Proposal 20, defined the canonical interface for fungible tokens: `balanceOf`, `transfer`, `transferFrom`, `approve`, and `allowance`. By early 2018, ERC-20 was the dominant token standard, with hundreds of tokens deployed on mainnet.
 
-At the heart of the EXTC Network’s transformative power lies its novel concept - to create a standard for faster payment solutions that cater to the evolving demands of the modern financial landscape. The network introduces the EXTC token (Express Transaction Credits), a digital asset designed to facilitate instant loans, lightning-fast payments, and deposits between participants. Unlike traditional payment methods that often entail delays, intermediaries, and higher costs, EXTC tokens offer a streamlined alternative.
+However, ERC-20 had a structural problem. When tokens were sent directly to a smart contract address using the standard `transfer` function, the contract had no way to detect the incoming transfer or act on it. Tokens sent this way were permanently trapped. The Ethereum community estimated that millions of dollars in ERC-20 tokens had been lost this way by mid-2018.
 
-The vision of the EXTC Network extends beyond the realm of cryptocurrency enthusiasts. It envisions a platform that accommodates users of all financial standings. Whether an individual, a small business owner, or a major corporation, the network promises a well-suited platform for executing transactions with utmost efficiency. This inclusivity is a cornerstone of the EXTC Network’s philosophy, as it strives to bridge the gap between legacy financial systems and the innovations of the digital era.
+ERC-223, proposed by Dexaran on the Ethereum GitHub issue tracker, addressed this by adding a `tokenFallback(address _from, uint _value, bytes _data)` function requirement on receiving contracts. If the receiving contract did not implement `tokenFallback`, the transfer reverted and the tokens were returned to the sender. This made ERC-223 transfers atomic: either the contract accepted the tokens and executed its logic, or the transaction failed cleanly.
 
+## The EXTC Token Design
 
-## Impact
+The Express Transaction Credits token was designed around five core attributes:
 
-### Redefining Payment Paradigms
+- **Name, symbol, and decimals.** Standard ERC-223 identity fields, with 18 decimal places for sub-cent precision.
+- **Total supply.** Fixed at mint time, making EXTC a deflationary asset as lost or unclaimed tokens could not be reissued.
+- **Balance and transfer.** Standard read and write functions, extended with ERC-223’s `tokenFallback` requirement.
+- **Multi-signature support.** Corporate disbursements required co-signing from multiple authorised addresses before execution, providing audit trails without a centralised clearing house.
+- **Time-locked transfers.** A standing-order primitive allowed EXTC to schedule future payments — a capability traditional bank transfers required external instruction to achieve.
 
-The impact of the EXTC Network’s vision transcends the boundaries of the financial sector. As the network introduces a suite of financial services, including instant loans and real-time standing orders, it sets in motion a paradigm shift in how transactions are perceived and executed. The ability to conduct single atomic payments, time-based payments, and corporate mass payments on a blockchain or distributed ledger ensures that users experience unparalleled convenience and security.
+## Payment Primitives the Platform Targeted
 
-Furthermore, the EXTC Network’s emphasis on compliance and regulation adds an additional layer of credibility to its offerings. In a landscape where trust is paramount, the network’s commitment to adhering to regulatory practices and ensuring the legitimacy of each peer-to-peer node fosters an environment of trustworthiness and reliability. This is a crucial factor in driving mainstream adoption of cryptocurrency-based payment solutions.
+EXTC’s architecture was designed to replace four specific payment workflows that legacy systems handled inefficiently:
 
-## Incentives
+**Single atomic payments** — a one-time transfer that settled in a single Ethereum transaction, typically within 15–30 seconds on the 2018 mainnet.
 
-### Paving the Path Forward
+**Time-based standing orders** — recurring transfers encoded as time-locked smart contract calls, eliminating the need for a bank to receive and re-execute periodic instructions.
 
-The EXTC Network acknowledges that widespread adoption requires a recognisable and attainable set of incremental benefits. As such, the network’s architecture is designed to accommodate traditional fiat currencies, cryptocurrencies, and compliant tokens. This forward-thinking approach not only simplifies the transition for users accustomed to conventional financial systems but also opens doors for collaboration with established financial institutions.
+**Corporate mass disbursements** — batch payments to multiple recipients in one transaction, with each individual transfer requiring multi-signature authorisation, reducing cost and counterparty risk.
 
-By building on the Ethereum blockchain and adhering to EIP20 standards, the EXTC token guarantees stability and security. This assurance serves as a powerful incentive for both individual users and businesses to embrace the new payment paradigm offered by the EXTC Network. As the network fosters a financial ecosystem that prioritises speed, security, and accessibility, it entices stakeholders to participate and contribute to the burgeoning landscape of faster payment solutions.
+**Collateral-backed instant loans** — borrowers locked EXTC tokens as collateral in a smart contract; the contract released loan proceeds automatically upon receipt, without a credit committee or underwriting delay.
 
-In conclusion, the EXTC Network’s unveiling marks A significant chapter in the ongoing evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and sustainable finance.. With a visionary approach to faster payment solutions, underpinned by the potential of cryptocurrencies and distributed ledgers, the network aims to redefine how transactions are conducted across the world. Its impact resonates not only within the realm of digital assets but also in reshaping traditional financial systems, ultimately propelling us towards a future where speed, security, and inclusivity define the way we exchange value.
+## What the Experiment Revealed
 
-![divider](https://cloudcdn.pro/clients/common/images/elements/divider.svg).class=\"m-10 w-100\"
+The EXTC design was technically coherent. The ERC-223 foundation resolved the most significant safety flaw of the dominant token standard, and the payment primitives mapped directly to real workflows that correspondent banking handled inefficiently.
 
-**That concludes our time together. Thank you for your time!**
+The practical constraint was Ethereum’s throughput. In Q1 2018, mainnet averaged 15 transactions per second with a gas limit of approximately 8 million per block. A payment network processing even a small fraction of global remittance volume — the World Bank estimated 270 million migrants sending money home in 2017 — would have saturated mainnet within minutes.
 
-If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉][11] or via the [Contact page][10]. Thank you again for your time and I look forward to hearing from you.
+Layer-2 scaling solutions, particularly state channels and the early versions of what became rollup technology, were under active research in 2018 but were not production-ready. The Lightning Network had just launched on Bitcoin mainnet in January 2018 with significant caveats. The technical preconditions for a blockchain-based payment network to operate at correspondent-bank scale did not yet exist.
 
-[**❬ Back to Articles**][09]
+## The Ideas That Survived
 
-[09]: /articles/index.html "Back to Articles"
-[10]: /contact/index.html "Contact Sebastien Rousseau"
-[11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
+Several architectural concepts from EXTC and contemporaneous payment token projects were validated by subsequent development:
+
+**Programmable money** — encoding payment rules directly in the transfer logic — became a central feature of DeFi lending protocols such as Compound and Aave, launched in 2018 and 2020 respectively.
+
+**Atomic settlement without clearing houses** — the property that a transfer either succeeds completely or reverts — is now a design requirement in tokenised deposit frameworks and wholesale CBDC architectures explored by central banks including the Bank of England and the European Central Bank.
+
+**Compliance-embedded tokens** — transfer restrictions and reporting obligations encoded in the token contract itself — appear in regulated token standards such as ERC-1400 (security tokens) and in the compliance layer designs for Project Agorá and similar multi-central-bank tokenisation experiments.
+
+The EXTC experiment did not reach production scale, but the questions it asked — about programmable settlement, atomic transfers, and self-enforcing payment rules — were the right questions for 2018. The infrastructure required to answer them took five more years to mature.
+
+## Frequently Asked Questions
+
+**What was ERC-223 and why did EXTC use it instead of ERC-20?**
+
+ERC-20 tokens sent directly to smart contract addresses were silently lost because contracts had no way to detect the incoming transfer. ERC-223 fixed this by requiring recipient contracts to implement a `tokenFallback` function; if the function was absent, the transfer reverted rather than burning the tokens. EXTC adopted ERC-223 to make all on-chain transfers atomic and safe.
+
+**Why did early payment token projects not scale to replace correspondent banking?**
+
+Ethereum mainnet in 2018 processed roughly 15 transactions per second. Global remittance volumes alone — not counting trade finance or corporate payments — would require tens of thousands of transactions per second. The Layer-2 scaling infrastructure needed to reach that throughput was not production-ready until 2021–2023.
+
+**What happened to the ideas behind EXTC?**
+
+The core concepts — programmable payment rules, atomic settlement, compliance-embedded token logic — were adopted by DeFi protocols, regulated security token standards (ERC-1400), and central bank digital currency research. Tokenised deposit frameworks now being piloted by commercial banks trace directly to the design questions that early payment token experiments like EXTC first asked.
+
+**How does the 2018 EXTC design compare to 2026 tokenised deposit proposals?**
+
+The settlement model is similar — tokens representing monetary claims, transferred atomically on a distributed ledger. The key differences are: (1) 2026 tokenised deposits are commercial bank liabilities rather than bearer tokens; (2) they operate on permissioned or hybrid ledgers with regulatory oversight rather than public mainnet; (3) compliance and identity verification are enforced at the protocol layer rather than left to participants.
+
+## References
+
+- Ethereum Foundation, (2018). [EIP-20: Token Standard ⧉](https://eips.ethereum.org/EIPS/eip-20 "EIP-20 Token Standard").
+- Dexaran, Ethereum GitHub, (2017). [ERC-223 Token Standard Proposal ⧉](https://github.com/ethereum/EIPs/issues/223 "ERC-223 discussion").
+- World Bank, (2018). [Remittance Prices Worldwide — Q1 2018 ⧉](https://www.worldbank.org/en/topic/migrationremittancesdiasporaissues/brief/migration-remittances-data "World Bank Remittance Prices").
+- Buterin, V., (2014). [Ethereum: A Next-Generation Smart Contract and Decentralised Application Platform ⧉](https://ethereum.org/whitepaper "Ethereum Whitepaper").
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-22">2026-05-22</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-30">2026-05-30</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" class="related-media" aria-label="Static Site Generator: Fastest Rust-Based SSG" tabindex="-1"><img alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right" src="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html">Static Site Generator: Fastest Rust-Based SSG</a></h3><p><time datetime="2023-10-09">2023-10-09</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html" class="related-media" aria-label="Automating ISO 20022 Payment Files Creation with Pain001" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html">Automating ISO 20022 Payment Files Creation with Pain001</a></h3><p><time datetime="2023-09-29">2023-09-29</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html" class="related-media" aria-label="Understanding the Technology behind Blockchain" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html">Understanding the Technology behind Blockchain</a></h3><p><time datetime="2018-01-09">2018-01-09</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html" class="related-media" aria-label="The making of the Express Transaction Credits Platform" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html">The making of the Express Transaction Credits Platform</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html" class="related-media" aria-label="Understanding the Technology behind Blockchain" tabindex="-1"><img alt="Abstract digital ledger blocks connected by light trails on dark background" src="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html">Understanding the Technology behind Blockchain</a></h3><p><time datetime="2018-01-09">2018-01-09</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026" class="related-media" aria-label="Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability" tabindex="-1"><img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</a></h3><p><time datetime="2026-05-19">2026-05-19</time></p></footer></article>
 </div>
 </aside>
 <!-- enrich-end -->

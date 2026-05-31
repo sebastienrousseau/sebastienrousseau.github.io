@@ -45,34 +45,90 @@ I18N = ROOT / "_data" / "i18n"
 _DATED_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})-(.+)$")
 
 
-def _index_en_slugs_by_date() -> dict[str, str]:
-    """Return ``{YYYY-MM-DD: en-slug}`` for every top-level dated EN post."""
-    out: dict[str, str] = {}
+def _index_en_slugs_by_date() -> dict[str, list[str]]:
+    """Return ``{YYYY-MM-DD: [en-slug, ...]}`` for every top-level dated
+    EN post. A date may host multiple EN articles (e.g. a Saturday
+    publishing two pieces) — earlier versions of this script kept only
+    one stem per date, which silently dropped one EN article from every
+    locale's slug map. The list form preserves all of them."""
+    out: dict[str, list[str]] = {}
     if not POSTS.is_dir():
         return out
     for md in POSTS.glob("*.md"):
         m = _DATED_RE.match(md.stem)
         if m:
-            out[m.group(1)] = md.stem
+            out.setdefault(m.group(1), []).append(md.stem)
+    for date in out:
+        out[date].sort()
     return out
 
 
-def _articles_map_for_language(lang_dir: Path, en_by_date: dict[str, str]) -> dict[str, str]:
+def _articles_map_for_language(
+    lang_dir: Path,
+    en_by_date: dict[str, list[str]],
+    previous: dict[str, str] | None = None,
+) -> dict[str, str]:
     """Build ``{en-slug: locale-slug}`` for one locale by scanning its
-    ``_posts/<lang>/*.md`` files and matching each on its date prefix."""
+    ``_posts/<lang>/*.md`` files and pairing each EN article with the
+    best-matching locale file on the same date.
+
+    Per-date pairing rules, applied in order:
+
+      1. **Sticky preference** — the slug already in the existing
+         ``slugs.json`` wins if its source file still exists. Once a
+         translator chose a slug, a later stub dropped in for the same
+         date can't silently steal the mapping.
+      2. **Exact stem match** — if a locale stem matches the EN stem
+         exactly (the locale uses the EN-named filename, common in
+         languages that haven't translated the URL yet), pair them.
+      3. **Sorted residual pairing** — after sticky + exact have
+         claimed their pairs, the remaining EN slugs and remaining
+         locale stems for the same date are paired up in sorted order.
+         This is deterministic but order-coupled; if a date has, say,
+         two EN articles "magnifica" and "stablecoins" and two locale
+         files "magnifica-quantique" and "stablecoins-vs-tokenise",
+         sorted-order pairing produces the right answer because the
+         locale slugs preserve the lexicographic order of the EN
+         slugs. When that assumption breaks the publisher should set
+         the locale filename to the EN stem (triggering rule 2) or
+         commit the desired mapping to ``slugs.json`` once (triggering
+         rule 1 on every later regen)."""
     out: dict[str, str] = {}
+    previous = previous or {}
     if not lang_dir.is_dir():
         return out
+    locale_by_date: dict[str, list[str]] = {}
     for md in lang_dir.glob("*.md"):
         m = _DATED_RE.match(md.stem)
         if not m:
             continue
         date = m.group(1)
         if date not in en_by_date:
-            # Locale file with no matching EN post — skip rather than
-            # ship a half-broken slug map.
             continue
-        out[en_by_date[date]] = md.stem
+        locale_by_date.setdefault(date, []).append(md.stem)
+
+    for date, en_slugs in en_by_date.items():
+        locale_stems = list(locale_by_date.get(date, []))
+        if not locale_stems:
+            continue
+        en_remaining = list(en_slugs)
+        # Pass 1: sticky preference
+        for en_slug in list(en_remaining):
+            prior = previous.get(en_slug)
+            if prior and prior in locale_stems:
+                out[en_slug] = prior
+                locale_stems.remove(prior)
+                en_remaining.remove(en_slug)
+        # Pass 2: exact stem match (EN-named locale files)
+        for en_slug in list(en_remaining):
+            if en_slug in locale_stems:
+                out[en_slug] = en_slug
+                locale_stems.remove(en_slug)
+                en_remaining.remove(en_slug)
+        # Pass 3: sorted residual pairing
+        en_remaining.sort()
+        locale_stems.sort()
+        out.update(zip(en_remaining, locale_stems, strict=False))
     return out
 
 
@@ -87,7 +143,7 @@ def regen_one(lang: str, *, en_by_date: dict[str, str]) -> tuple[int, int]:
         return (0, 0)
     existing = json.loads(slugs_path.read_text(encoding="utf-8"))
     previous = existing.get("articles", {}) or {}
-    articles = _articles_map_for_language(lang_dir, en_by_date)
+    articles = _articles_map_for_language(lang_dir, en_by_date, previous=previous)
     # Stable, deterministic ordering: oldest-first by EN slug (which
     # already starts with the date), matching what translate_post.py
     # produces.

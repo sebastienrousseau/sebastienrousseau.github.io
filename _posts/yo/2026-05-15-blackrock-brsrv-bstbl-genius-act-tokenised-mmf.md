@@ -1,13 +1,13 @@
 ---
 title: "Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded"
-subtitle: "Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two products that are not, legally, stablecoins — and that can pay yield, in a wallet, on a public blockchain."
-description: "Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two SEC registrations for products that solve this constraint by being regulated as money market funds rather than stablecoins — while behaving, in the wallet, like yield-bearing dollars. A close reading of BRSRV, BSTBL, and the OCC rulemaking they respond to."
+subtitle: "Àwọn stablecoin kò lè san owo èrè lábẹ́ GENIUS Act. Ní 8 May 2026, BlackRock fi àwọn ọja méjì sílẹ̀ tí kò jẹ́ stablecoins nípasẹ̀ òfin — tí wọn lè san owo èrè nínú wàlẹ́ẹ̀tì lórí blockchain gbangba."
+description: "Àwọn stablecoin kò lè san owo èrè lábẹ́ GENIUS Act. Ní 8 May 2026, BlackRock fi àwọn ìforúkọsílẹ̀ SEC BRSRV àti BSTBL sílẹ̀ — àwọn ìdọgba owó tokenised tí ń san owo èrè nínú wàlẹ́ẹ̀tì, kì í ṣe stablecoins."
 date: "May 15, 2026"
 language: "yo-NG"
 locale: "yo_NG"
 banner: "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp"
-banner_alt: "BlackRock tokenised money market fund architecture diagram — BRSRV OnChain Shares and BSTBL ERC-20 share class with GENIUS Act reserve flows"
-keywords: "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoin, tokenised money market fund, OnChain Shares, Securitize"
+banner_alt: "Àwòrán ètò ìdọgba owó tokenised BlackRock — BRSRV OnChain Shares àti ẹ̀ka ìpín BSTBL ERC-20 pẹ̀lú àwọn ìṣàn ìpamọ́ GENIUS Act"
+keywords: "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoin, ìdọgba owó tokenised, OnChain Shares, Securitize"
 ---
 
 ![BlackRock tokenised money market fund architecture diagram — BRSRV OnChain Shares and BSTBL ERC-20 share class with GENIUS Act reserve flows](https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp).class="img-fluid clearfix"

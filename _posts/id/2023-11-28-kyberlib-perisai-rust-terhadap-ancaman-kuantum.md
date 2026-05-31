@@ -1,13 +1,13 @@
 ---
 title: "[ID DRAFT] KyberLib: Rust CRYSTALS-Kyber for Post-Quantum"
-subtitle: "KyberLib, a robust Rust implementation of CRYSTALS-Kyber for the quantum era."
-description: "A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algorithm, to Protect Your Data from Quantum Threats and Cryptanalytic Attacks."
+subtitle: "KyberLib, implementasi Rust yang tangguh dari CRYSTALS-Kyber untuk era kuantum."
+description: "Implementasi kriptografi CRYSTALS-Kyber yang andal dan tahan-kuantum, untuk melindungi data Anda dari ancaman komputasi kuantum dan serangan kriptanalitik."
 date: "Nov 28, 2023"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
-banner_alt: "Empowering Secure Communications in the Quantum Era with KyberLib"
-keywords: "KyberLib, Rust CRYSTALS-Kyber, post-quantum cryptography, lattice-based cryptography, quantum-resistant key exchange, NIST FIPS 203, Sebastien Rousseau, KEM, payment authentication, PQC library"
+banner_alt: "Memperkuat Komunikasi Aman di Era Kuantum dengan KyberLib"
+keywords: "KyberLib, Rust CRYSTALS-Kyber, kriptografi pasca-kuantum, kriptografi berbasis kisi, pertukaran kunci tahan-kuantum, NIST FIPS 203, Sebastien Rousseau, KEM, autentikasi pembayaran, PQC library"
 ---
 
 ![Empowering Secure Communications in the Quantum Era with KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class=\"img-fluid clearfix\"

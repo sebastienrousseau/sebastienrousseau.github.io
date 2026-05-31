@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 28 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 28 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>DORA, EU AI Act și suveranitatea datelor: stiva de conformitate bancară 2026 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="DORA, EU AI Act, GDPR, riscul de concentrare cloud și suveranitatea datelor converg într-o singură stivă de conformitate bancară pentru 2026.">
+<meta name="keywords" content="DORA 2026, EU AI Act 2026, suveranitatea datelor bănci, reziliență operațională, risc de concentrare cloud, conformitate AI servicii financiare, AI cu risc ridicat">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="DORA AI Act">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-AAqu7Vo5o9MvXfyB6qenAhBQ2xobPumZCx6DUKqGoJU=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-jsT7uddGCLWQxTcnL2KraP4mntfnwe/PlECaSWKNLb0=' 'sha256-nVNCXADQGekQ4z4BBTiL2SlfT1qThkhN2te7YlKswZA=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/ro/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Flux Atom" href="/ro/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="DORA, EU AI Act și suveranitatea datelor: stiva de conformitate bancară 2026 — Sebastien Rousseau">
+<meta property="og:description" content="DORA, EU AI Act, GDPR, riscul de concentrare cloud și suveranitatea datelor converg într-o singură stivă de conformitate bancară pentru 2026.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/ro/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="ro_RO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DORA, EU AI Act și suveranitatea datelor: stiva de conformitate bancară 2026 — Sebastien Rousseau">
+<meta name="twitter:description" content="DORA, EU AI Act, GDPR, riscul de concentrare cloud și suveranitatea datelor converg într-o singură stivă de conformitate bancară pentru 2026.">
+<meta name="twitter:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80">
+<link rel="canonical" href="https://sebastienrousseau.com/ro/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Salt la conținutul principal</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Comută navigarea" />
+      <div class="wrap">
+        <a class="ap-brand" href="/ro/index.html" aria-label="Pagina principală Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Navigare principală">
+          <ul class="ap-menu">
+            <li><a href="/ro/despre/index.html">About</a></li>
+            <li><a href="/ro/articole/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/ro/publicatii/index.html">Papers</a></li>
+            <li><a href="/ro/subiecte/index.html">Subiecte</a></li>
+            <li><a href="/ro/proiecte/index.html">Projects</a></li>
+            <li><a href="/ro/liste-de-redare/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Activează tema întunecată" aria-pressed="false" title="Schimbă tema">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Caută (Cmd sau Ctrl + K)" title="Caută (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Limbă">
+            <button type="button" class="ap-lang-toggle" aria-label="RO, Schimbă limba" aria-expanded="false" aria-haspopup="menu" title="Schimbă limba">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">RO</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/ro/contact/index.html" aria-label="Contact">Contact ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Comută navigarea">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>DORA, EU AI Act și suveranitatea datelor: stiva de conformitate bancară 2026</h1>
+      <p class="sub">Stiva de conformitate 2026 nu este un dosar de politici. Este o arhitectură de date, cloud, AI și reziliență operațională care poate dovedi controlul sub presiune.</p>
+    <nav class="article-tags" aria-label="Subiecte"><a href="/tags/index.html#h3-dora-2026" class="article-tag" rel="tag">DORA 2026</a><a href="/tags/index.html#h3-eu-ai-act-2026" class="article-tag" rel="tag">EU AI Act 2026</a><a href="/tags/index.html#h3-suveranitatea-datelor-banci" class="article-tag" rel="tag">suveranitatea datelor bănci</a><a href="/tags/index.html#h3-rezilienta-operationala" class="article-tag" rel="tag">reziliență operațională</a><a href="/tags/index.html#h3-risc-de-concentrare-cloud" class="article-tag" rel="tag">risc de concentrare cloud</a><a href="/tags/index.html#h3-conformitate-ai-servicii-financiare" class="article-tag" rel="tag">conformitate AI servicii financiare</a><a href="/tags/index.html#h3-ai-cu-risc-ridicat" class="article-tag" rel="tag">AI cu risc ridicat</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-28T06:06:06+00:00" class="meta-pub">Publicat 28 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Timp estimat de citire">5 min de citit</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Cuprins</h2><ol><li><a href="#de-ce-2026-este-anul-in-care-acest-subiect-a-devenit-strategic">De ce 2026 este anul în care acest subiect a devenit strategic</a></li><li><a href="#baza-arhitecturala-a-anului-2026">Baza arhitecturală a anului 2026</a></li><li><a href="#tabel-arhitectural-strategic">Tabel arhitectural strategic</a></li><li><a href="#ce-inseamna-acest-lucru-pe-tipuri-de-banci">Ce înseamnă acest lucru pe tipuri de bănci</a></li><li><a href="#concluzie">Concluzie</a></li><li><a href="#intrebari-frecvente">Întrebări frecvente</a></li><li><a href="#referinte">Referințe</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> DORA, EU AI Act, GDPR, riscul de concentrare cloud și suveranitatea datelor converg într-o singură stivă de conformitate bancară pentru 2026.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>De ce 2026 este anul în care acest subiect a devenit strategic.</strong> Industria a trecut de faza de adoptare.</li>  <li><strong>Baza arhitecturală a anului 2026.</strong> Banca ar trebui să pornească de la fricțiune: lichiditate blocată, întârziere la decontare, costul reconcilierii, plăți eșuate, expunere la fraudă, auditabilitate slabă sau experiență deficitară a clientului.</li>  <li><strong>Tabel arhitectural strategic.</strong> Băncile globale ar trebui să creeze orchestrare la nivel de platformă, astfel încât fiecare piață, șină de plată, token și capabilitate AI să nu devină un model operațional separat.</li>  <li><strong>Ce înseamnă acest lucru pe tipuri de bănci.</strong> Băncile globale ar trebui să creeze orchestrare la nivel de platformă, astfel încât fiecare piață, șină de plată, token și capabilitate AI să nu devină un model operațional separat.</li></ul></aside><h1>DORA, EU AI Act și suveranitatea datelor: stiva de conformitate bancară 2026</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>DORA, EU AI Act, GDPR, riscul de concentrare cloud și suveranitatea datelor converg într-o singură stivă de conformitate bancară pentru 2026. Semnalul anului 2026 este că arhitectura de conformitate a trecut de la teatrul inovării în modelul operațional bancar, unde întrebarea decisivă este disciplina de proiectare: ce date, șine de plată, controale, răspunderi și fluxuri de lucru ale clienților trebuie să stea împreună (<a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" title="AI Act">European Commission</a>).</p>
+<hr />
+<blockquote>
+<p><strong>Rezumat executiv / Concluzii principale</strong></p>
+<ul>
+<li><strong>Arhitectura de conformitate este acum strategică.</strong> Subiectul este legat de modelul operațional, reziliență, valoarea clientului și dovezile de reglementare, mai degrabă decât de lansarea unui produs restrâns (<a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" title="AI Act">European Commission</a>).</li>
+<li><strong>Principiul de proiectare este dovada controlului.</strong> Băncile au nevoie de o arhitectură care să conecteze politica, produsul, datele, alegerea șinei de plată, controalele de risc și economia măsurabilă (<a href="https://iomete.com/resources/blog/data-sovereignty-compliance-2026-dora-ai-act" title="Data Sovereignty Compliance in 2026">IOMETE</a>).</li>
+<li><strong>Modelul de control trebuie să fie în timp real.</strong> Deciziile privind frauda, lichiditatea, conformitatea, decontarea și riscul operațional trebuie să ruleze la viteza fluxului de lucru, nu după eveniment.</li>
+<li><strong>Calitatea datelor devine avantaj comercial.</strong> Datele structurate, contextul tranzacțiilor, jurnalele de audit și semnalele de identitate devin substratul pentru automatizare și produse orientate către clienți.</li>
+<li><strong>Fragmentarea este inamicul.</strong> O bancă ce construiește piloturi izolate în jurul fiecărei șine de plată, token, model sau cerințe de conformitate creează risc operațional viitor.</li>
+<li><strong>Modelul câștigător este orchestrarea.</strong> Instituția care poate ruta, guverna, tarifa, dovedi și explica fiecare flux de lucru va depăși performanța celei care doar adoptă încă un instrument (<a href="https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology" title="UK fintech backed to embrace future payments technology">GOV.UK</a>).</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="de-ce-2026-este-anul-in-care-acest-subiect-a-devenit-strategic">De ce 2026 este anul în care acest subiect a devenit strategic <a class="heading-anchor" href="#de-ce-2026-este-anul-in-care-acest-subiect-a-devenit-strategic" aria-label="Link către De ce 2026 este anul în care acest subiect a devenit strategic">#</a></h2>
+<p>Industria a trecut de faza de adoptare. Nu mai este suficient să te alături unei șine de plată, să migrezi un mesaj, să rulezi o dovadă de concept AI sau să anunți un pilot de tokenizare. În 2026, avantajul strategic vine din orchestrarea acestor capabilități față de un flux de lucru real, demonstrând apoi că fluxul de lucru este mai sigur, mai rapid, mai ieftin, mai rezilient sau mai util clienților.</p>
+<p>De aceea, arhitectura de conformitate este acum un subiect la nivel de consiliu de administrație. Aceleași presiuni revin constant: date de plată mai bogate, decontare în timp real, bani tokenizați, decizii AI, Open Banking, reziliență operațională, concentrare cloud și dovezi de reglementare mai puternice. Tratate separat, aceste presiuni creează proliferare de programe. Tratate ca o arhitectură unitară, generează pârghie operațională (<a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" title="AI Act">European Commission</a>, <a href="https://iomete.com/resources/blog/data-sovereignty-compliance-2026-dora-ai-act" title="Data Sovereignty Compliance in 2026">IOMETE</a>).</p>
+<h2 id="baza-arhitecturala-a-anului-2026">Baza arhitecturală a anului 2026 <a class="heading-anchor" href="#baza-arhitecturala-a-anului-2026" aria-label="Link către Baza arhitecturală a anului 2026">#</a></h2>
+<h3 id="1-mai-intai-fluxul-de-lucru-apoi-tehnologia">1. Mai întâi fluxul de lucru, apoi tehnologia <a class="heading-anchor" href="#1-mai-intai-fluxul-de-lucru-apoi-tehnologia" aria-label="Link către 1. Mai întâi fluxul de lucru, apoi tehnologia">#</a></h3>
+<p>Banca ar trebui să pornească de la fricțiune: lichiditate blocată, întârziere la decontare, costul reconcilierii, plăți eșuate, expunere la fraudă, auditabilitate slabă sau experiență deficitară a clientului. Tehnologia se justifică doar acolo unde elimină acea fricțiune (<a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" title="AI Act">European Commission</a>).</p>
+<h3 id="2-datele-ca-plan-de-control">2. Datele ca plan de control <a class="heading-anchor" href="#2-datele-ca-plan-de-control" aria-label="Link către 2. Datele ca plan de control">#</a></h3>
+<p>Datele structurate, guvernate și trasabile reprezintă fundamentul. Fără date utilizabile, automatizarea devine fragilă, iar conformitatea devine manuală. Cu date utilizabile, băncile pot crea inteligență de rutare, controale în timp real și analize orientate către clienți (<a href="https://iomete.com/resources/blog/data-sovereignty-compliance-2026-dora-ai-act" title="Data Sovereignty Compliance in 2026">IOMETE</a>).</p>
+<h3 id="3-orchestrare-intre-sine-de-plata-si-platforme">3. Orchestrare între șine de plată și platforme <a class="heading-anchor" href="#3-orchestrare-intre-sine-de-plata-si-platforme" aria-label="Link către 3. Orchestrare între șine de plată și platforme">#</a></h3>
+<p>Arhitectura trebuie să susțină mai multe șine, furnizori, scheme de identitate, semnale de risc și active de decontare. Decizia de rutare ar trebui luată în funcție de cost, viteză, finalitate, jurisdicție, preferința clientului, reziliență și bogăția datelor.</p>
+<h3 id="4-conformitate-incorporata-si-dovezi">4. Conformitate încorporată și dovezi <a class="heading-anchor" href="#4-conformitate-incorporata-si-dovezi" aria-label="Link către 4. Conformitate încorporată și dovezi">#</a></h3>
+<p>Modelul de conformitate trebuie să fie nativ fluxului de lucru. Politica drept cod, jurnalele de audit automatizate, dovezile de reziliență operațională, evidențele de consimțământ și guvernanța modelelor trebuie produse ca parte a execuției, nu recreate ulterior pentru auditori.</p>
+<h3 id="5-economia-unitara-si-valoarea-clientului">5. Economia unitară și valoarea clientului <a class="heading-anchor" href="#5-economia-unitara-si-valoarea-clientului" aria-label="Link către 5. Economia unitară și valoarea clientului">#</a></h3>
+<p>Fiecare inițiativă are nevoie de dovezi ale valorii comerciale. Costul pe plată, costul pe decizie, costul pe investigație, lichiditatea economisită, reparațiile manuale evitate, pierderile din fraudă reduse și adoptarea de către clienți ar trebui să determine deciziile de scalare.</p>
+<h2 id="tabel-arhitectural-strategic">Tabel arhitectural strategic <a class="heading-anchor" href="#tabel-arhitectural-strategic" aria-label="Link către Tabel arhitectural strategic">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Strat</th>
+<th>Direcția 2026</th>
+<th>Oportunitatea bancară</th>
+<th>Riscul în caz de gestionare greșită</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Stratul fluxului de lucru</strong></td>
+<td>Punctul de durere al clientului definește produsul</td>
+<td>Caz de afacere clar și adoptare</td>
+<td>Piloturi conduse de tehnologie, fără utilizatori</td>
+</tr>
+<tr>
+<td><strong>Stratul de date</strong></td>
+<td>Date de tranzacții și control structurate, guvernate</td>
+<td>Automatizare, analiză și auditabilitate</td>
+<td>Date proaste mutate mai repede</td>
+</tr>
+<tr>
+<td><strong>Stratul șinelor de plată</strong></td>
+<td>Rutare pe carduri, A2A, RTGS, stablecoins, depozite, API-uri, DLT</td>
+<td>Cost, viteză și finalitate optimizate</td>
+<td>Proliferare de canale și controale duplicate</td>
+</tr>
+<tr>
+<td><strong>Stratul de control</strong></td>
+<td>Politică, fraudă, sancțiuni, reziliență, identitate și consimțământ în timp real</td>
+<td>Risc gestionat la viteza execuției</td>
+<td>Conformitate manuală, post factum</td>
+</tr>
+<tr>
+<td><strong>Stratul economic</strong></td>
+<td>Cost unitar și valoare a clientului măsurate</td>
+<td>Scalare bazată pe dovezi</td>
+<td>Cheltuieli de inovație fără randament durabil</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ce-inseamna-acest-lucru-pe-tipuri-de-banci">Ce înseamnă acest lucru pe tipuri de bănci <a class="heading-anchor" href="#ce-inseamna-acest-lucru-pe-tipuri-de-banci" aria-label="Link către Ce înseamnă acest lucru pe tipuri de bănci">#</a></h2>
+<h3 id="banci-globale">Bănci globale <a class="heading-anchor" href="#banci-globale" aria-label="Link către Bănci globale">#</a></h3>
+<p>Băncile globale ar trebui să creeze orchestrare la nivel de platformă, astfel încât fiecare piață, șină de plată, token și capabilitate AI să nu devină un model operațional separat.</p>
+<h3 id="banci-regionale">Bănci regionale <a class="heading-anchor" href="#banci-regionale" aria-label="Link către Bănci regionale">#</a></h3>
+<p>Băncile regionale ar trebui să se concentreze pe cazurile de utilizare în care încrederea, cunoașterea pieței locale și integrarea mai simplă bat scara: vizibilitate de trezorerie, prevenirea fraudei, plăți Open Banking și servicii de bani digitali reglementați.</p>
+<h3 id="fintech-uri-si-psp-uri">Fintech-uri și PSP-uri <a class="heading-anchor" href="#fintech-uri-si-psp-uri" aria-label="Link către Fintech-uri și PSP-uri">#</a></h3>
+<p>Fintech-urile ar trebui să reducă complexitatea pentru bănci, în loc să adauge încă o șină de plată izolată. Cele mai bune propuneri vor aduce orchestrare, dovezi de conformitate sau inteligență a datelor.</p>
+<h3 id="trezorieri-corporativi">Trezorieri corporativi <a class="heading-anchor" href="#trezorieri-corporativi" aria-label="Link către Trezorieri corporativi">#</a></h3>
+<p>Trezorierii ar trebui să ceară îmbunătățiri măsurabile: mai puține reparații de plăți, o mai bună vizibilitate a lichidității, date de reconciliere mai bogate, decontare mai rapidă și un control mai puternic asupra deciziilor automatizate.</p>
+<h2 id="concluzie">Concluzie <a class="heading-anchor" href="#concluzie" aria-label="Link către Concluzie">#</a></h2>
+<p>DORA, EU AI Act și suveranitatea datelor reprezintă, în ultimă instanță, o problemă de arhitectură. Instituțiile care vor câștiga nu vor fi cele cu cele mai multe piloturi sau cu cel mai zgomotos limbaj al inovării. Vor fi instituțiile care conectează fluxurile de lucru ale clienților, calitatea datelor, orchestrarea șinelor de plată, conformitatea încorporată și economia unitară într-un model operațional coerent.</p>
+<h2 id="intrebari-frecvente">Întrebări frecvente <a class="heading-anchor" href="#intrebari-frecvente" aria-label="Link către Întrebări frecvente">#</a></h2>
+<p><strong>De ce este acest subiect urgent în 2026?</strong></p>
+<p>Pentru că semnalele relevante privind infrastructura, reglementarea și cererea clienților au convergat. Ceea ce era experimentare opțională devine acum parte din modelul operațional bancar.</p>
+<p><strong>Care este cel mai mare risc de implementare?</strong></p>
+<p>Cel mai mare risc este fragmentarea: echipe separate construiesc piloturi separate, fiecare cu date, controale, guvernanță și economie diferite.</p>
+<p><strong>Ce ar trebui să construiască o bancă mai întâi?</strong></p>
+<p>O bancă ar trebui să înceapă cu fluxul de lucru unde există valoare măsurabilă, precum decontarea mai rapidă, costul de reconciliere mai mic, mai puține investigații, prevenirea îmbunătățită a fraudei sau o mai bună vizibilitate a lichidității.</p>
+<p><strong>Cum ar trebui măsurat succesul?</strong></p>
+<p>Succesul ar trebui măsurat prin economia unitară, dovezile de reziliență, calitatea datelor, adoptarea de către clienți, reducerea riscului operațional și îmbunătățirea lichidității sau a capitalului de lucru.</p>
+<h2 id="referinte">Referințe <a class="heading-anchor" href="#referinte" aria-label="Link către Referințe">#</a></h2>
+<ul>
+<li>European Commission, (2026). <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" title="AI Act">AI Act ⧉</a>.</li>
+<li>IOMETE, (2026). <a href="https://iomete.com/resources/blog/data-sovereignty-compliance-2026-dora-ai-act" title="Data sovereignty compliance">Data Sovereignty Compliance in 2026 ⧉</a>.</li>
+<li>GOV.UK, (2026). <a href="https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology" title="UK fintech backed">UK fintech backed to embrace future payments technology ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Ultima revizuire <time datetime="2026-05-28">2026-05-28</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Despre autor"><img alt="Portretul lui Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/ro/despre/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tehnolog bancar senior; scriu despre IA aplicată, migrarea la ISO 20022, criptografie post-cuantică pentru serviciile financiare și transformarea structurală a plăților wholesale.</span><span class="author-credentials">Peste 20 de ani de experiență în HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/ro/despre/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Ultima revizuire <time datetime="2026-05-30">2026-05-30</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Lecturi conexe</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/ro/2026-05-17-agentic-engineering-banks-blueprint-2026" class="related-media" aria-label="Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It" tabindex="-1"><img alt="Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows" src="https://cloudcdn.pro/api/transform?url=/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="agentic-engineering-for-banks-a-2026-blueprint-for-the-c-suite-and-the-engineers"><a href="https://sebastienrousseau.com/ro/2026-05-17-agentic-engineering-banks-blueprint-2026">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</a> <a class="heading-anchor" href="#agentic-engineering-for-banks-a-2026-blueprint-for-the-c-suite-and-the-engineers" aria-label="Link către Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It">#</a></h3><p><time datetime="2026-05-17">2026-05-17</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ro/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope" class="related-media" aria-label="Magnifica Humanitas: enciclica papală despre IA, citită inginerește" tabindex="-1"><img alt="Long-exposure photograph of light trails forming a path through darkness toward a luminous horizon, used as the visual key for an AI-ethics reading of the Magnifica Humanitas encyclical" src="https://cloudcdn.pro/api/transform?url=/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="magnifica-humanitas-enciclica-papala-despre-ia-citita-inginereste"><a href="https://sebastienrousseau.com/ro/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope">Magnifica Humanitas: enciclica papală despre IA, citită inginerește</a> <a class="heading-anchor" href="#magnifica-humanitas-enciclica-papala-despre-ia-citita-inginereste" aria-label="Link către Magnifica Humanitas: enciclica papală despre IA, citită inginerește">#</a></h3><p><time datetime="2026-05-26">2026-05-26</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ro/2026-05-20-cloud-native-banking-financial-institutions-2026" class="related-media" aria-label="Banking cloud-native în 2026: Kubernetes, DORA, suveranitate și sfârșitul separării între VM și container" tabindex="-1"><img alt="Cloud-native banking architecture for 2026 showing Kubernetes, VM coexistence, DORA resilience, sovereign cloud, observability, and bank platform engineering" src="https://cloudcdn.pro/api/transform?url=/stocks/images/freeman-zhou-oV9hp8wXkPE.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="banking-cloud-native-in-2026-kubernetes-dora-suveranitate-si-sfarsitul-separarii"><a href="https://sebastienrousseau.com/ro/2026-05-20-cloud-native-banking-financial-institutions-2026">Banking cloud-native în 2026: Kubernetes, DORA, suveranitate și sfârșitul separării între VM și container</a> <a class="heading-anchor" href="#banking-cloud-native-in-2026-kubernetes-dora-suveranitate-si-sfarsitul-separarii" aria-label="Link către Banking cloud-native în 2026: Kubernetes, DORA, suveranitate și sfârșitul separării între VM și container">#</a></h3><p><time datetime="2026-05-20">2026-05-20</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="Paginare articol"><a class="post-pagination-prev" href="/ro/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/"><span class="post-pagination-label">Anterior</span><span class="post-pagination-title">AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026</span></a><a class="post-pagination-next" href="/ro/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"><span class="post-pagination-label">Următor</span><span class="post-pagination-title">Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/ro/despre/index.html">About</a></li>
+              <li><a href="/ro/contact/index.html">Contact</a></li>
+              <li><a href="/ro/facut-cu-static-site-generator/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Publicații</h2>
+            <ul>
+              <li><a href="/ro/articole/index.html">Articles</a></li>
+              <li><a href="/ro/publicatii/index.html">Papers</a></li>
+              <li><a href="/ro/etichete/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Activitate</h2>
+            <ul>
+              <li><a href="/ro/proiecte/index.html">Projects</a></li>
+              <li><a href="/ro/liste-de-redare/index.html">Playlists</a></li>
+              <li><a href="/ro/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Contact</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Abonare la newsletter">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — note de cercetare despre plăți, IA și criptografia post-cuantică. Fără spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="tu@banca.ro" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Abonează-te</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Linkuri sociale">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau pe Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau pe Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau pe LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau pe LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau pe Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau pe Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau pe YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau pe YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/ro/accesibilitate/index.html">Accessibility</a> ·
+            <a href="/ro/confidentialitate/index.html">Privacy</a> ·
+            <a href="/ro/termeni/index.html">Terms</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ro"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ro"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1142,"headline":"DORA, EU AI Act și suveranitatea datelor: stiva de conformitate bancară 2026","description":"DORA, EU AI Act, GDPR, riscul de concentrare cloud și suveranitatea datelor converg într-o singură stivă de conformitate bancară pentru 2026.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80","width":"100vw","height":"100vh","caption":"Diagramă a stivei de conformitate care arată reziliența DORA, transparența EU AI Act, suveranitatea datelor, riscul de concentrare cloud, jurnalele de audit, guvernanța modelelor și furnizorii terți"},"url":"https://sebastienrousseau.com/ro/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/","datePublished":"2026-05-28T06:06:06+00:00","dateModified":"2026-05-28","inLanguage":"ro","keywords":"DORA 2026, EU AI Act 2026, suveranitatea datelor bănci, reziliență operațională, risc de concentrare cloud, conformitate AI servicii financiare, AI cu risc ridicat","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ro/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ro"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ro/"},{"@type":"ListItem","position":3,"name":"DORA, EU AI Act și suveranitatea datelor: stiva de conformitate bancară 2026","item":"https://sebastienrousseau.com/ro/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Caută">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Caută</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Caută">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Caută în documentație..." autocomplete="off" aria-label="Caută"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> închide</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navighează</span><span><kbd>Enter</kbd> deschide</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

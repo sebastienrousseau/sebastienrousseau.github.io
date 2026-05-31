@@ -1,11 +1,11 @@
 {
-  "description": "Jak powstała platforma Express Transaction Credits: decyzje architektoniczne, kompromisy i wnioski.",
-  "banner_alt": "Diagram architektury platformy płatniczej",
-  "title": "Powstanie platformy Express Transaction Credits",
+  "keywords": "platforma płatnicza, ETC, transakcje, blockchain, fintech, architektura",
+  "date": "Feb 15, 2018",
+  "subtitle": "Architektura platformy płatniczej zbudowanej dla skali",
   "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
+  "title": "Powstanie platformy Express Transaction Credits",
   "locale": "pl_PL",
   "language": "pl-PL",
-  "keywords": "platforma płatnicza, ETC, transakcje, blockchain, fintech, architektura",
-  "subtitle": "Architektura platformy płatniczej zbudowanej dla skali",
-  "date": "Feb 15, 2018"
+  "description": "Jak powstała platforma Express Transaction Credits: decyzje architektoniczne, kompromisy i wnioski.",
+  "banner_alt": "Diagram architektury platformy płatniczej"
 }

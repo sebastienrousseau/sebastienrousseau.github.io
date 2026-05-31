@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sebastienrousseau.com/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/sitemap.xml

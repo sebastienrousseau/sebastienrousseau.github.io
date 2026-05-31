@@ -1,13 +1,13 @@
 ---
 title: "[ID DRAFT] Advancing AI with Multimodal LLMs: Insights from MM1"
-subtitle: "Unveiling the Future of AI: How Apple's Groundbreaking MM1 Study Revolutionises Multimodal Learning"
-description: "Explore Apple's MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials."
+subtitle: "Mengungkap Masa Depan AI: Bagaimana Studi MM1 Apple yang Revolusioner Mengubah Multimodal Learning"
+description: "Jelajahi makalah MM1 Apple tentang Multimodal Large Language Models (MLLMs). Pelajari arsitektur, strategi pre-training, dan potensi AI mereka."
 date: "Mar 17, 2024"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/stocks/images/mm1-visual.webp"
-banner_alt: "Banner for the Apple MM1"
-keywords: "Multimodal LLMs, MM1 study, AI advancements, pre-training strategies, image recognition, natural language processing, AI applications, future of AI, multimodal learning, AI research"
+banner_alt: "Banner untuk Apple MM1"
+keywords: "Multimodal LLMs, studi MM1, kemajuan AI, strategi pre-training, pengenalan gambar, pemrosesan bahasa alami, aplikasi AI, masa depan AI, multimodal learning, penelitian AI"
 ---
 
 ![Banner for the Apple MM1](https://cloudcdn.pro/stocks/images/mm1-visual.webp).class=\"img-fluid clearfix\"

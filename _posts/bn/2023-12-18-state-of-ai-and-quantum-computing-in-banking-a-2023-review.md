@@ -1,13 +1,13 @@
 ---
 title: "State of AI and Quantum Computing in Banking: A 2023 Review"
-subtitle: "Shaping the Future of Banking: AI, Quantum Computing, Open Source Models, and Regulatory Landscape"
-description: "Exploring 2023's Technological Landscape: AI & Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations & Governance"
+subtitle: "ব্যাংকিংয়ের ভবিষ্যৎ গড়ে তোলা: AI, Quantum Computing, Open Source মডেল এবং নিয়ন্ত্রক পরিবেশ"
+description: "২০২৩ সালের প্রযুক্তি পরিদর্শন: AI ও Quantum Computing ব্যাংকিং খাতে বিপ্লব, ওপেন-সোর্স মডেলের উত্থান এবং বিকশিত নিয়মকানুন ও প্রশাসন"
 date: "Dec 18, 2023"
 language: "bn-BD"
 locale: "bn_BD"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
-banner_alt: "State of AI and Quantum Computing in Banking: A 2023 Review"
-keywords: "AI in banking, Quantum Computing, Financial Technology, Open-source AI, Risk Management, Quantum Security, AI Regulation, AI Ethics, AI Governance, Banking Innovation"
+banner_alt: "ব্যাংকিংয়ে AI ও Quantum Computing-এর অবস্থান: ২০২৩ সালের পর্যালোচনা"
+keywords: "ব্যাংকিংয়ে AI, Quantum Computing, Financial Technology, ওপেন-সোর্স AI, ঝুঁকি ব্যবস্থাপনা, Quantum Security, AI নিয়ন্ত্রণ, AI নৈতিকতা, AI গভর্ন্যান্স, ব্যাংকিং উদ্ভাবন"
 ---
 
 ![State of AI and Quantum Computing in Banking: A 2023 Review](https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp).class="img-fluid clearfix"
