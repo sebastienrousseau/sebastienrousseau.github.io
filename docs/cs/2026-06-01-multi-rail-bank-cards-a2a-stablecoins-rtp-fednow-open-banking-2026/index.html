@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Mon, 01 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Mon, 01 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>Multi-kolejnicová banka v roce 2026: karty, A2A, stablecoiny, RTP, FedNow a otevřené bankovnictví v jedné strategii — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="FedNow vyžaduje předfinancovanou likviditu 24/7. ACH je levné, ale T+1. USDC se vypořádá atomicky, ale potřebuje wallet infrastrukturu. Multi-kolejnicová banka roku 2026 směruje každou platbu podle nákladů, finality a ceny likvidity.">
+<meta name="keywords" content="vrstva orchestrace plateb, FedNow vs RTP, FedNow vs ACH, vypořádání stablecoinů, atomické vypořádání USDC, ISO 20022 pacs.008, account-to-account A2A, API otevřeného bankovnictví, předfinancovaná likvidita, past likvidity 24/7, multi-kolejnicová banka 2026, směrovací engine plateb, odsouhlasení ERP">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Multi-Rail Bank 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-85Xk5V7ZwemgDzCV5JHfWVVMYyHsrUcndYwDtKGFi7Q=' 'sha256-FnhyvOVQ+FD7RzUVT9J8CqC7lctgrjTaWaMP+j6o+Bc=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-QTW0yc36cWtZ+w7AZAOCQGl2JvDDbl6sBjXHqxPCnZo=' 'sha256-oqKju2Kuj58hgHWGZXUBySNyjXzF8ix208+Oi8ANLis=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/cs/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="/cs/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Multi-kolejnicová banka v roce 2026: karty, A2A, stablecoiny, RTP, FedNow a otevřené bankovnictví v jedné strategii — Sebastien Rousseau">
+<meta property="og:description" content="FedNow vyžaduje předfinancovanou likviditu 24/7. ACH je levné, ale T+1. USDC se vypořádá atomicky, ale potřebuje wallet infrastrukturu. Multi-kolejnicová banka roku 2026 směruje každou platbu podle nákladů, finality a ceny likvidity.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sebastienrousseau.com/cs/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="cs_CZ">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Multi-kolejnicová banka v roce 2026: karty, A2A, stablecoiny, RTP, FedNow a otevřené bankovnictví v jedné strategii — Sebastien Rousseau">
+<meta name="twitter:description" content="FedNow vyžaduje předfinancovanou likviditu 24/7. ACH je levné, ale T+1. USDC se vypořádá atomicky, ale potřebuje wallet infrastrukturu. Multi-kolejnicová banka roku 2026 směruje každou platbu podle nákladů, finality a ceny likvidity.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/cs/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Přeskočit na hlavní obsah</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Přepnout navigaci" />
+      <div class="wrap">
+        <a class="ap-brand" href="/cs/index.html" aria-label="Domovská stránka Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Hlavní navigace">
+          <ul class="ap-menu">
+            <li><a href="/cs/o-mne/index.html">O mně</a></li>
+            <li><a href="/cs/clanky/index.html" aria-current="page" class="active">Články</a></li>
+            <li><a href="/cs/publikace/index.html">Publikace</a></li>
+            <li><a href="/cs/temata/index.html">Témata</a></li>
+            <li><a href="/cs/projekty/index.html">Projekty</a></li>
+            <li><a href="/cs/playlisty/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Přepnout na tmavý motiv" aria-pressed="false" title="Přepnout motiv">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Hledat (Cmd nebo Ctrl + K)" title="Hledat (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Jazyk">
+            <button type="button" class="ap-lang-toggle" aria-label="CS, změnit jazyk" aria-expanded="false" aria-haspopup="menu" title="Změnit jazyk">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">CS</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/cs/kontakt/index.html" aria-label="Kontaktovat">Kontaktovat ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Přepnout navigaci">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Multi-kolejnicová banka v roce 2026: karty, A2A, stablecoiny, RTP, FedNow a otevřené bankovnictví v jedné strategii</h1>
+      <p class="sub">Multi-kolejnicová strategie je směrovací engine, kniha likvidity a překladač ISO 20022 nad legacy jádrem. Architekti, kteří ji pojmou jako produktový start, zaplatí tři kolejnice a žádnou neprovozují dobře.</p>
+    <nav class="article-tags" aria-label="Témata"><a href="/tags/index.html#h3-vrstva-orchestrace-plateb" class="article-tag" rel="tag">vrstva orchestrace plateb</a><a href="/tags/index.html#h3-fednow-vs-rtp" class="article-tag" rel="tag">FedNow vs RTP</a><a href="/tags/index.html#h3-fednow-vs-ach" class="article-tag" rel="tag">FedNow vs ACH</a><a href="/tags/index.html#h3-vyporadani-stablecoinu" class="article-tag" rel="tag">vypořádání stablecoinů</a><a href="/tags/index.html#h3-atomicke-vyporadani-usdc" class="article-tag" rel="tag">atomické vypořádání USDC</a><a href="/tags/index.html#h3-iso-20022-pacs-008" class="article-tag" rel="tag">ISO 20022 pacs.008</a><a href="/tags/index.html#h3-account-to-account-a2a" class="article-tag" rel="tag">account-to-account A2A</a><a href="/tags/index.html#h3-api-otevreneho-bankovnictvi" class="article-tag" rel="tag">API otevřeného bankovnictví</a><a href="/tags/index.html#h3-predfinancovana-likvidita" class="article-tag" rel="tag">předfinancovaná likvidita</a><a href="/tags/index.html#h3-past-likvidity-24-7" class="article-tag" rel="tag">past likvidity 24/7</a><a href="/tags/index.html#h3-multi-kolejnicova-banka-2026" class="article-tag" rel="tag">multi-kolejnicová banka 2026</a><a href="/tags/index.html#h3-smerovaci-engine-plateb" class="article-tag" rel="tag">směrovací engine plateb</a><a href="/tags/index.html#h3-odsouhlaseni-erp" class="article-tag" rel="tag">odsouhlasení ERP</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-01T06:06:06+00:00" class="meta-pub">Publikováno 1 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Odhadovaná doba čtení">13 min čtení</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Obsah</h2><ol><li><a href="#jak-orchestracni-engine-skutecne-smeruje-b2b-platbu-ve-vysi-500-usd">Jak orchestrační engine skutečně směruje B2B platbu ve výši 500 USD</a></li><li><a href="#past-predfinancovane-likvidity-24-7">Past předfinancované likvidity 24/7</a></li><li><a href="#most-iso-20022-pacs-008">Most ISO 20022 pacs.008</a></li><li><a href="#multi-kolejnicova-architektura-podle-technicke-vrstvy">Multi-kolejnicová architektura podle technické vrstvy</a></li><li><a href="#co-to-znamena-podle-typu-banky">Co to znamená podle typu banky</a></li><li><a href="#co-bude-dal">Co bude dál</a></li><li><a href="#casto-kladene-otazky">Často kladené otázky</a></li><li><a href="#reference">Reference</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> FedNow vyžaduje předfinancovanou likviditu 24/7. ACH je levné, ale T+1. USDC se vypořádá atomicky, ale potřebuje wallet infrastrukturu. Multi-kolejnicová banka roku 2026 směruje každou platbu podle nákladů, finality a ceny likvidity.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Jak orchestrační engine skutečně směruje B2B platbu ve výši 500 USD.</strong> Středně velká korporace se sídlem v USA spouští ze svého ERP platbu dodavateli ve výši 500 USD.</li>  <li><strong>Past předfinancované likvidity 24/7.</strong> Každá okamžitá kolejnice v provozu dnes funguje na předfinancovaném modelu.</li>  <li><strong>Most ISO 20022 pacs.008.</strong> Jádrové bankovní systémy stavěné v 80.</li>  <li><strong>Multi-kolejnicová architektura podle technické vrstvy.</strong> Architektura níže nahrazuje obecný rámec „workflow, data, řízení&quot; vhodný pro prezentaci představenstvu.</li></ul></aside><h1>Multi-kolejnicová banka v roce 2026: karty, A2A, stablecoiny, RTP, FedNow a otevřené bankovnictví v jedné strategii</h1>
+<!-- lead-start -->
+<!-- lead-start: manual -->
+
+<!-- lead-end -->
+<p>Velkoobchodní platby v USA dnes běží současně přes pět živých kolejnic. Karty jezdí po stejných interchange tratích Visa a Mastercard od 70. let. ACH stále převáží většinu mezd a B2B za zlomek nákladů s vypořádáním T+1. <a href="https://www.theclearinghouse.org/payment-systems/rtp" title="TCH RTP">Síť RTP ⧉</a> funguje okamžitě od roku 2017, 24/7, a probíhá přes společný účet The Clearing House u Fedu. <a href="https://www.frbservices.org/financial-services/fednow" title="FedNow Service">FedNow ⧉</a> spustil provoz v červenci 2023 s paralelní architekturou a oddělenou likviditní zásobou. USDC a tokenizované bankovní depozity se vypořádávají atomicky na Ethereu, Solaně a permissioned řetězcích provozovaných bankami.</p>
+<p>Žádná z těchto kolejnic ostatní nenahrazuje. Banka, která si vybere jednu a postaví na ní strategii, se zmýlí během dvou produktových cyklů. Banka, která provozuje všechny bez orchestrační vrstvy, zjistí kolem třetího roku, že postavila pět integračních projektů a žádný z nich neprovozuje efektivně.</p>
+<p>Tento článek je o tom, jak orchestrace skutečně funguje.</p>
+<hr />
+<blockquote>
+<p><strong>Manažerské shrnutí / klíčové poznatky</strong></p>
+<ul>
+<li><strong>Orchestrační engine je produkt.</strong> Logika směrování, která pro každou transakci vybírá FedNow před RTP před ACH před USDC — podle nákladů, finality, schopností protistrany a dostupnosti předfinancované likvidity — je to, co definuje multi-kolejnicovou banku. Vše ostatní je implementační detail.</li>
+<li><strong>Likvidita je provozní náklad, který nikdo nezmiňuje.</strong> FedNow i RTP vyžadují předfinancované zůstatky 24/7/365 na společných účtech u centrální banky. Naivní multi-kolejnicové nasazení tuto kapitálovou past zdvojnásobí. Orchestrátor s povědomím o nettingu ji srazí zpět k jednomu poolu.</li>
+<li><strong>ISO 20022 pacs.008 je jediný životaschopný most.</strong> Jádrové bankovní systémy vydávají MT103 nebo proprietární pole. A2A API a koncové body otevřeného bankovnictví konzumují strukturovaná data pacs.008. Překladová vrstva v orchestrátoru je to, co provede BIC dlužníkova a věřitelova agenta, strukturované platební informace a účelové kódy bez ztrátového mapování.</li>
+<li><strong>Atomické vypořádání na stablecoinových kolejnicích přetváří korespondenční bankovnictví.</strong> Převod USDC mezi dvěma peněženkami se vypořádá v sekundách bez odsouhlasení Nostro/Vostro. To je strukturální hrozba výnosové linii korespondenčního bankovnictví, ne fintechová funkcionalita.</li>
+<li><strong>API otevřeného bankovnictví jsou spotřebitelským zrcadlem A2A.</strong> Stejný orchestrační engine, který rozhoduje FedNow vs ACH u B2B platby, rozhoduje PIS (služba iniciace platby) vs uložená karta u spotřebitelské pokladny — na základě stejných směrovacích faktů.</li>
+<li><strong>Banka, která vlastní logiku směrování, vlastní marži.</strong> Pokud je směrovací engine pronajatý od dodavatele, dodavatel určuje sazbu poplatku z každé transakce, kterou banka zaúčtuje.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="jak-orchestracni-engine-skutecne-smeruje-b2b-platbu-ve-vysi-500-usd">Jak orchestrační engine skutečně směruje B2B platbu ve výši 500 USD <a class="heading-anchor" href="#jak-orchestracni-engine-skutecne-smeruje-b2b-platbu-ve-vysi-500-usd" aria-label="Odkaz na Jak orchestrační engine skutečně směruje B2B platbu ve výši 500 USD">#</a></h2>
+<p>Středně velká korporace se sídlem v USA spouští ze svého ERP platbu dodavateli ve výši 500 USD. Platba dorazí do orchestračního enginu banky jako zpráva ISO 20022 pacs.008 se strukturovanými platebními informacemi, údaji o účtu dodavatele, zúčtovacím oknem „dnes, pokud je to možné&quot; a uvedenou tolerancí „příští pracovní den je přijatelný&quot;.</p>
+<p>Engine přečte ze zprávy a aktuálního stavu banky čtyři fakta:</p>
+<ol>
+<li><strong>Schopnosti kolejnic protistrany.</strong> Banka dodavatele je účastníkem TCH RTP. Je rovněž dosažitelná přes FedNow. Přijímá ACH kredity. Nemá u banky vedený USDC wallet.</li>
+<li><strong>Náklady na kolejnici.</strong> FedNow účtuje paušální odesílatelský poplatek 0,045 USD. RTP účtuje 0,045 USD plus interní cenu likvidity banky na jejím zůstatku společného účtu u TCH. ACH stojí 0,0029 USD za kredit, vypořádání T+1. USDC: gas plus interní cena držení stablecoinového inventáře, zde irelevantní, protože příjemce nemá wallet.</li>
+<li><strong>Dostupnost předfinancované likvidity.</strong> Je 23:00 východního času. Společný účet banky pro FedNow u Fedu drží 42 milionů USD. Společný účet u TCH drží 61 milionů USD. Oba jsou nad jakýmkoli reálným prahem pro jednu platbu. Marginální náklad použití kterékoli kolejnice v tuto chvíli je ušlý overnight výnos z použitých 500 USD — měřeno ve zlomcích centu.</li>
+<li><strong>Hodnota zúčtovacího okna pro plátce.</strong> Pacs.008 uvedlo „příští pracovní den je přijatelný&quot;. To je směrovací signál, který nakloní rozhodnutí.</li>
+</ol>
+<p>Orchestrátor směruje na ACH. Tolerance plátce k T+1 znamená, že neexistuje komerční důvod utratit dalších 4,2 centu (poplatek FedNow minus poplatek ACH) za finalitu, kterou plátce výslovně označil za volitelnou. Instrukce pacs.008 se přepíše jako záznam CCD ve formátu NACHA, strukturované platební informace se zachovají jako addenda záznam a transakce se zařadí do fronty na další ACH okno.</p>
+<p>Pokud stejná platba dorazí v 9:00 východního času s označením „vypořádat dnes&quot; v bloku zúčtovacího okna pacs.008, směrování se nakloní k FedNow. Pokud dorazí označená „atomické dolarové vypořádání, wallet přiložen&quot;, směrování se nakloní k USDC. Engine nemá názor na to, která kolejnice je „moderní&quot;. Má názor na to, která kolejnice minimalizuje celkové náklady — poplatek plus oportunitní náklad likvidity — při finalitě, kterou plátce požadoval.</p>
+<p>Tato rozhodovací logika je orchestračním enginem. Jeho výstavba je produktem.</p>
+<h2 id="past-predfinancovane-likvidity-24-7">Past předfinancované likvidity 24/7 <a class="heading-anchor" href="#past-predfinancovane-likvidity-24-7" aria-label="Odkaz na Past předfinancované likvidity 24/7">#</a></h2>
+<p>Každá okamžitá kolejnice v provozu dnes funguje na předfinancovaném modelu. Fed neposkytuje účastníkům FedNow vnitrodenní úvěr. The Clearing House jej neposkytuje účastníkům RTP. Vypořádání na obou kolejnicích probíhá proti předfinancovanému zůstatku na společném účtu, který účastnická banka parkuje u příslušného provozovatele — u Fedu pro FedNow, u TCH pro RTP — a doplňuje 24/7/365.</p>
+<p>Provozní důsledek je tvrdý. Banka provozující FedNow s denním špičkovým objemem okamžitých plateb 100 milionů USD drží desítky milionů v nevyužitém zůstatku jen na pokrytí vnitrodenních špiček. Paralelní provoz RTP přidává druhý nevyužitý pool. Tyto dva pooly se nemohou vzájemně započítávat, protože sedí u různých provozovatelů. Každý pool vydělává příslušnou sazbu úroku z rezerv (FedNow) nebo nulu (provozní účet TCH) a vzdává se výnosu, který by banka mohla na stejném zůstatku získat v repu, fondech peněžního trhu nebo krátkodobých státních dluhopisech.</p>
+<p>To je nevyslovený provozní náklad multi-kolejnicových okamžitých plateb. Banka, která financuje dvě okamžité kolejnice bez orchestrační strategie, parkuje dvojnásobný nevyužitý zůstatek za dvojnásobný ušlý výnos.</p>
+<p>Orchestrátor minimalizuje past třemi způsoby:</p>
+<ul>
+<li><strong>Koncentrované směrování.</strong> Marginální objem okamžité kolejnice směrujte na ten společný účet, který je aktuálně lépe financovaný. Druhý doplňujte líně. Výsledkem je jeden pool jedoucí naplno a jeden jedoucí naprázdno, místo dvou poolů jedoucích z poloviny.</li>
+<li><strong>Diskriminace zúčtovacího okna.</strong> Vše, co pacs.008 označí jako „příští pracovní den přijatelný&quot;, opouští okamžité kolejnice úplně a zúčtuje se přes ACH. To odstraňuje dlouhý ocas časově nekritického provozu z požadavku na předfinancovaný zůstatek.</li>
+<li><strong>Treasury sweepy navázané na předpovídaný objem.</strong> Předpovídaná poptávka po okamžitých platbách na následujících 6, 12 a 24 hodin řídí velikost předfinancovaného zůstatku. Vše nad tuto předpověď jde do overnight repa.</li>
+</ul>
+<p>Bez orchestrátoru banka financuje špičku špiček. S orchestrátorem financuje předpovídanou poptávku plus rezervu. Rozdíl na byznysu okamžitých plateb s objemem 5 miliard USD denně jsou desítky milionů v nevyužitém zůstatku a sedm- až osmimístné částky v ušlých overnight výnosech.</p>
+<h2 id="most-iso-20022-pacs-008">Most ISO 20022 pacs.008 <a class="heading-anchor" href="#most-iso-20022-pacs-008" aria-label="Odkaz na Most ISO 20022 pacs.008">#</a></h2>
+<p>Jádrové bankovní systémy stavěné v 80. a 90. letech vydávají pole MT103 nebo proprietární interní formáty. A2A API (PIS otevřeného bankovnictví, koncové body FedLine pro FedNow, zprávy RTP přes TCH) konzumují ISO 20022 pacs.008. Překladová vrstva v orchestrátoru je to, co provede strukturovaný payload bez ztráty polí, na nichž A2A spotřebitelé závisí.</p>
+<p>Zpráva pacs.008 nese — minimálně:</p>
+<ul>
+<li><strong>Identifikaci dlužníka a věřitele</strong> se strukturovaným jménem, adresou (BIC + LEI tam, kde je k dispozici) a čísly účtů ve formátu IBAN nebo BBAN.</li>
+<li><strong>Identifikaci dlužníkova a věřitelova agenta</strong> (BIC každé účastnické banky) plus zúčtovací řetězec.</li>
+<li><strong>Strukturované platební informace</strong> — typovaná pole pro čísla faktur, kódy důvodu platby (ISO 20022 ExternalPurposeCode) a volnotextovou zálohu.</li>
+<li><strong>Bloky regulatorního reportingu</strong> pro jurisdikce, které vyžadují strukturované AML důvodové kódy inline.</li>
+<li><strong>Pole zúčtovací priority a instrukce-pro-věřitelova-agenta</strong>, která pravidla A2A schémat čtou přímo.</li>
+</ul>
+<p>Naivní překlad z plochého payloadu MT103 do pacs.008 většinu těchto strukturovaných polí zahodí nebo zmrzačí. Volnotextové platební informace skončí ve špatném bloku. Účelové kódy se rekonstruují z dílčích shod a dorazí jako <code>OTHR</code> (univerzální záchyt). Regulatorní reporting se zahodí úplně, protože zdrojový MT103 neměl žádný strukturovaný slot. Přijímající banka — a ERP přijímajícího treasurera — dostane potvrzení platby bez strojově čitelných metadat. Odsouhlasení se vrací k manuální kontrole.</p>
+<p>Překladová vrstva orchestrátoru musí dělat tři věci, které hotové konvertory MT-do-MX nedělají:</p>
+<ul>
+<li><strong>Obohacovat, ne překládat.</strong> Doplňte strukturovaná pole, která zdrojovému MT103 chyběla, čtením z masteru zákazníků banky, fakturačního systému nebo integrace ERP. Pacs.008, které opouští orchestrátor, nese více strukturovaných dat než MT103, které do něj vstoupilo.</li>
+<li><strong>Zachovat idempotenci.</strong> Stejný zdrojový MT103, znovu přeložený, produkuje bit-identický pacs.008. Tím se znovuodeslání stávají bezpečnými na A2A kolejnicích, které očekávají exactly-once sémantiku.</li>
+<li><strong>Validovat proti profilu přijímajícího schématu.</strong> Profil pacs.008 pro FedNow se v detailech liší od RTP, od SCT Inst a od každé implementace otevřeného bankovnictví. Orchestrátor validuje proti cílovému profilu před odesláním, ne až poté, co kolejnice odmítne.</li>
+</ul>
+<p>Banky, které tuto vrstvu přeskočí, končí s překladovými pipeline specifickými pro kolejnici, duplikovanými napříč třemi či čtyřmi integracemi. Banky, které ji postaví jednou, pořádně, směrují jakoukoli platbu na jakoukoli kolejnici bez přepisování logiky zpráv.</p>
+<h2 id="multi-kolejnicova-architektura-podle-technicke-vrstvy">Multi-kolejnicová architektura podle technické vrstvy <a class="heading-anchor" href="#multi-kolejnicova-architektura-podle-technicke-vrstvy" aria-label="Odkaz na Multi-kolejnicová architektura podle technické vrstvy">#</a></h2>
+<p>Architektura níže nahrazuje obecný rámec „workflow, data, řízení&quot; vhodný pro prezentaci představenstvu. Vrstvy, které skutečně nesou zátěž, jsou tyto.</p>
+<table>
+<thead>
+<tr>
+<th>Vrstva</th>
+<th>Co dělá v provozu</th>
+<th>Selhání při nesprávném zacházení</th>
+<th>Architektonický pokyn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>API brána a orchestrační engine</strong></td>
+<td>Přijímá platební záměr z ERP, mobilních aplikací a jádrových systémů. Čte schopnosti protistrany, aktuální stav likvidity, účast ve schématech a preference plátce. Rozhoduje, kterou kolejnici použít.</td>
+<td>Banka si pronajímá směrovací engine od platebního dodavatele. Dodavatel určuje sazbu poplatku z každé transakce. Marže banky mizí v cenotvorbě dodavatele.</td>
+<td>Vlastněte směrovací engine. Postavte jej jako interní službu s ovladači specifickými pro každou kolejnici za stabilním interním rozhraním. SDK dodavatelů se stanou implementacemi ovladačů, ne enginem samotným.</td>
+</tr>
+<tr>
+<td><strong>Vrstva likvidity a účetní knihy</strong></td>
+<td>Spravuje předfinancované zůstatky na společných účtech u Fedu (FedNow), TCH (RTP), zúčtovacích bank kartových schémat (Visa, Mastercard) a on-chain peněženkách (inventář USDC, pozice tokenizovaných depozit). Sweepuje nevyužité zůstatky do overnight repa.</td>
+<td>Banka parkuje nevyužité zůstatky u každého provozovatele kolejnice současně. Ušlé výnosy z byznysu okamžitých plateb s objemem 5 mld. USD denně dosahují sedm- až osmimístných částek ročně.</td>
+<td>Předpovídejte poptávku po okamžitých platbách po hodinách. Financujte společné účty na předpověď plus rezervu. Vše ostatní sweepujte. Funkce treasury vlastní denní politiku doplňování, ne tým produktu kolejnice.</td>
+</tr>
+<tr>
+<td><strong>Vrstva zpráv a překladu ISO</strong></td>
+<td>Překládá mezi interním platebním formátem banky, MT103 (kde se ještě používá), pacs.008 / pain.001 / camt.053 (ISO 20022), NACHA CCD/PPD (ACH), ISO 8583 kartových schémat a on-chain transakčními primitivy. Při překladu obohacuje. Validuje proti profilu cílového schématu.</td>
+<td>Ztrátový překlad zahazuje strukturované platební informace a účelové kódy. Příjemci nemohou odsouhlasit programově. Backlog ručního vyšetřování roste.</td>
+<td>Postavte jediný překladač s povědomím o obohacování a validací proti profilu cílového schématu. Konvertory MT-do-MX jsou vstupem, ne odpovědí. Testujte proti referenčním profilům každého schématu v CI.</td>
+</tr>
+<tr>
+<td><strong>Registr protistran a schopností</strong></td>
+<td>Ví, na kterých kolejnicích je každá protistrana dosažitelná, jaké profily schémat akceptuje, jaké má limity na transakci, jaké jurisdikce ukládají jaké reportování.</td>
+<td>Orchestrátor směruje na kolejnici, kterou příjemce nemůže přijmout. Platba selže nebo se vypořádá pomalu s manuálním zásahem.</td>
+<td>Udržujte registr jako prvotřídní datový produkt. Aktualizujte jej denně proti adresářům schémat, seznamům účastníků centrálních bank a feedům schopností agregátorů otevřeného bankovnictví. Registr je to, co činí směrovací rozhodnutí auditovatelným.</td>
+</tr>
+<tr>
+<td><strong>Podvody, sankce a autorizace</strong></td>
+<td>Provádí screening v reálném čase u každého platebního záměru proti sankčním seznamům, podvodným modelům, autorizačním pravidlům a záznamům souhlasu. Vrací povolit/zablokovat/eskalovat v milisekundách.</td>
+<td>Screening běží po odeslání na kolejnici. Sankcionované platby opouštějí banku a jsou odvolávány. Každé odvolání je incident, který musí být nahlášen regulátorovi.</td>
+<td>Provádějte screening na vstupním bodu orchestrace, před výběrem kolejnice. Stejný výsledek screeningu musí být platný pro každou kolejnici, kterou orchestrátor může zvolit.</td>
+</tr>
+<tr>
+<td><strong>Odsouhlasení vypořádání a reporting</strong></td>
+<td>Páruje každou odchozí platbu s potvrzeními vypořádání, statusovými updaty (pacs.002) a příchozími výpisy camt.053. Detekuje rozdíly během hodin, ne dnů.</td>
+<td>Odsouhlasení běží T+2 v tabulkovém procesoru. Rozdíly ve vypořádání se hromadí. Zákaznické spory eskalují.</td>
+<td>Odsouhlasujte per-kolejnici s jednotným datovým modelem. Stejná logika detekce rozdílů běží proti FedNow, RTP, ACH return file, zúčtovacímu souboru kartového schématu a potvrzení on-chain transakce.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="co-to-znamena-podle-typu-banky">Co to znamená podle typu banky <a class="heading-anchor" href="#co-to-znamena-podle-typu-banky" aria-label="Odkaz na Co to znamená podle typu banky">#</a></h2>
+<h3 id="globalni-banky">Globální banky <a class="heading-anchor" href="#globalni-banky" aria-label="Odkaz na Globální banky">#</a></h3>
+<p>Globální banky již provozují nejvíce fragmentované portfolio kolejnic. Každý region financoval své vlastní integrace ve svém produktovém P&amp;L. Výsledkem jsou tři až čtyři paralelní multi-kolejnicová nasazení, každé s vlastní tenkou směrovací vrstvou, každé vyjednávající odděleně se stejnými dodavateli.</p>
+<p>Pokyn: financujte jedinou agnostickou orchestrační vrstvu nad legacy jádry, účtovanou platformovému inženýrství, ne jakékoli produktové skupině. Orchestrátor vlastní směrovací rozhodnutí globálně; regionální produktové skupiny jej konzumují jako službu. SDK dodavatelů, které každý region přivedl, se stanou ovladači specifickými pro kolejnici za interním rozhraním orchestrátoru, ne paralelními směrovacími enginy soutěžícími o stejnou platbu.</p>
+<p>Ekonomický argument dopadá na finančního ředitele. Jediný globální orchestrátor zachytí každé směrovací rozhodnutí, každý bod marže a každý kus strukturovaných platebních dat, která banka generuje. Tři regionální orchestrátory nezachytí žádnou z těchto věcí na úrovni skupiny.</p>
+<h3 id="regionalni-banky">Regionální banky <a class="heading-anchor" href="#regionalni-banky" aria-label="Odkaz na Regionální banky">#</a></h3>
+<p>Regionální banky čelí jinému problému. Mají méně kolejnic k integraci, ale proporčně méně kapitálu k zaparkování na předfinancovaných společných účtech. Regionální banka s denním objemem okamžitých plateb 500 milionů USD parkuje konzervativně 30–50 milionů USD u Fedu pro FedNow plus dalších 20–30 milionů USD u TCH pro RTP — významný podíl její diskreční rozvahy sedící při nulovém nebo téměř nulovém výnosu.</p>
+<p>Pokyn: postavte orchestrátor s povědomím o likviditě před přidáním druhé okamžité kolejnice. Regionál, který se připojí k FedNow a RTP současně bez nettingové strategie, zdvojnásobí past předfinancovaného zůstatku bez odpovídajícího navýšení objemu. Správná sekvence je nejprve FedNow, instrumentovat profil poptávky, financovat společný účet na pozorovanou špičku a teprve poté přidat RTP, až bude orchestrátor schopen směrovat marginální platbu na ten pool, který je lépe financovaný.</p>
+<p>Kapitálová otázka dominuje. Treasureři regionálních bank by měli kvantifikovat ušlé výnosy z předfinancovaných zůstatků jako řádek v byznys case multi-kolejnicového projektu, ne je absorbovat jako nevyřčený náklad inovace.</p>
+<h3 id="fintechy-a-psp">Fintechy a PSP <a class="heading-anchor" href="#fintechy-a-psp" aria-label="Odkaz na Fintechy a PSP">#</a></h3>
+<p>Fintechy a poskytovatelé platebních služeb sedí mezi korporátem nebo obchodníkem a bankovní kolejnicí. Konkurenční otázka pro ně zní, zda přidávají abstrakci, kterou banka nemůže postavit sama.</p>
+<p>Pokyn: dodávejte orchestraci jako službu středně velkým bankám, které nemohou financovat vlastní. Prodávejte směrovací engine, prognózování likvidity a překlad ISO 20022 jako spravovanou platformu. Fintechy, které se pokusí konkurovat globálním bankám v logice směrování, prohrají na marginální ekonomice orchestračního enginu. Fintechy, které prodají stejnou logiku bankám příliš malým na to, aby ji postavily samy, ovládnou regionální segment.</p>
+<h3 id="korporatni-treasureri">Korporátní treasureři <a class="heading-anchor" href="#korporatni-treasureri" aria-label="Odkaz na Korporátní treasureři">#</a></h3>
+<p>Treasureři konzumují výstupy kolejnic přes integrace svých ERP. Otázka pro rok 2026 zní, zda jsou strukturovaná data, která jejich banka vydává, dostatečně bohatá na automatizaci odsouhlasení bez manuální kontroly.</p>
+<p>Pokyn: vyžadujte data platebních informací bohatá na pacs.008 v každém příchozím potvrzení platby. Konkrétně vyžadujte strukturované odkazy na faktury v <code>RmtInf/Strd/RfrdDocInf</code>, vyžadujte účelové kódy ze seznamu ISO 20022 ExternalPurposeCode místo univerzálního <code>OTHR</code> a vyžadujte statusové updaty (pacs.002) na stejném API endpointu jako potvrzení. Banky, které tato data nemohou poskytnout, signalizují, že jejich překladová vrstva stále provádí ztrátovou konverzi MT-do-MX. To je správná RFP otázka pro výběrový cyklus bank v roce 2026.</p>
+<p>Argument o odsouhlasení dopadá na vlastní stůl treasurera. Automatizované párování faktur proti strukturovaným platebním informacím pacs.008 snižuje frontu výjimek týmu závazků o 60–80 %. To je trvalý produktivní přínos, který může treasurer požadovat a měřit.</p>
+<h2 id="co-bude-dal">Co bude dál <a class="heading-anchor" href="#co-bude-dal" aria-label="Odkaz na Co bude dál">#</a></h2>
+<p>Viditelné milníky roku 2026 jsou na úrovni schémat: křížení objemů kolejnic FedNow a RTP, pokrytí PIS otevřeného bankovnictví přesahující 60 % britských spotřebitelských pokladen, první banka se sídlem v USA provozující stablecoin emitovaný bankou v produkci pro přeshraniční B2B. To jsou fakta pro tiskové zprávy.</p>
+<p>Neviditelnou prací roku 2026 je orchestrátor. Banky, které jej v roce 2026 financují, budou bankami směrujícími 80 % B2B plateb v USA do roku 2028. Banky, které financují další integraci kolejnice bez orchestrátoru, utratí stejné dolary a skončí tam, kde začaly — provozováním tří či čtyř produktů kolejnic paralelně bez zachycení marže.</p>
+<p>Multi-kolejnicová banka v roce 2026 není banka, která provozuje více kolejnic. Je to banka, která postavila směrovací engine, knihu likvidity a překladač pacs.008, na nichž kolejnice sedí.</p>
+<h2 id="casto-kladene-otazky">Často kladené otázky <a class="heading-anchor" href="#casto-kladene-otazky" aria-label="Odkaz na Často kladené otázky">#</a></h2>
+<p><strong>Vyhraje FedNow, nebo RTP?</strong></p>
+<p>Ani jeden. Obě kolejnice poběží paralelně v dohledném horizontu. Seznamy účastníků se výrazně, ale ne úplně překrývají — existují banky na FedNow, které nejsou na RTP, a naopak. Dokud nebude překryv účastníků téměř úplný, orchestrátor směruje na tu kolejnici, která zasáhne protistranu.</p>
+<p><strong>Měla by středně velká banka postavit vlastní orchestrační engine, nebo ho koupit?</strong></p>
+<p>Postavte logiku směrování interně, pokud denní objem plateb přesahuje zhruba 1 miliardu USD. Pod touto hranicí se inženýrské náklady na výstavbu neamortizují proti zachycené marži. Kupte od fintechu, který prodává orchestraci jako spravovanou službu, a tvrdě vyjednávejte o sazbě poplatku na transakci.</p>
+<p><strong>Co atomické vypořádání ve skutečnosti znamená pro korespondenční bankovnictví?</strong></p>
+<p>Převod USDC mezi dvěma custody peněženkami se vypořádá on-chain za 15–30 sekund bez prostředníka Nostro/Vostro. Stejný pohyb dolaru přes tradiční korespondenční bankovnictví se dotýká tří až pěti účtů, každý s vlastním načasováním vypořádání, a odsouhlasuje se hodiny až dny. Pro koridor, kde obě protistrany mají wallet infrastrukturu, je on-chain cesta strukturálně levnější a rychlejší. Výnosy z korespondenčního bankovnictví na těchto koridorech budou stlačeny.</p>
+<p><strong>Co je správný startovní bod pro překladovou vrstvu ISO 20022?</strong></p>
+<p>Začněte s pacs.008 odchozí, pain.001 příchozí (iniciace platby zákazníkem) a pacs.002 statusovým reportingem. Tyto tři zprávy pokrývají 80 % toku velkoobchodních plateb. Jako druhou vlnu přidejte odsouhlasení camt.053 a vratky pacs.004. Nezačínejte knihovnou zpráv — začněte profilem schématu, který každá přijímající kolejnice vyžaduje, a postupujte zpětně.</p>
+<p><strong>Kolik předfinancovaného zůstatku FedNow ve skutečnosti vyžaduje?</strong></p>
+<p>Záleží na objemu účastníka. Banka s hodinovou špičkou odlivu okamžitých plateb 50 milionů USD potřebuje zhruba takový řádový zůstatek na svém společném účtu pro FedNow u Fedu, dimenzovaný na nadcházející hodinu. S automatizovaným sweepem navázaným na předpovídanou poptávku může ustálený zůstatek běžet blíže mediánu než špičce — ale špička musí být pokrytelná v řádu několika minut.</p>
+<h2 id="reference">Reference <a class="heading-anchor" href="#reference" aria-label="Odkaz na Reference">#</a></h2>
+<ul>
+<li>The Clearing House, (2026). <a href="https://www.theclearinghouse.org/payment-systems/rtp" title="TCH RTP">Síť RTP ⧉</a>.</li>
+<li>Federal Reserve Financial Services, (2026). <a href="https://www.frbservices.org/financial-services/fednow" title="FedNow Service">Služba FedNow ⧉</a>.</li>
+<li>ISO 20022, (2024). <a href="https://www.iso20022.org/catalogue-messages/iso-20022-messages-archive" title="ISO 20022 message catalogue">pacs.008.001.10 — definice zprávy FIToFI Customer Credit Transfer ⧉</a>.</li>
+<li>NACHA, (2026). <a href="https://www.nacha.org/rules" title="NACHA Operating Rules">Provozní pravidla a směrnice ACH ⧉</a>.</li>
+<li>BIS Committee on Payments and Market Infrastructures, (2025). <a href="https://www.bis.org/cpmi/publ/d228.htm" title="CPMI fast payments report">Rychlé platby a budoucnost finančního systému ⧉</a>.</li>
+<li>Open Banking Limited, (2026). <a href="https://www.openbanking.org.uk/vrp/" title="Open Banking VRP">Specifikace Variable Recurring Payments ⧉</a>.</li>
+<li>Circle Internet Financial, (2026). <a href="https://www.circle.com/transparency" title="Circle transparency">Treasury a rezervy USDC ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Naposledy ověřeno <time datetime="2026-06-01">2026-06-01</time>.</p>
+
+<!-- enrich-end -->
+</content>
+<aside class="author-card" aria-label="O autorovi"><img alt="Portrét Sebastiena Rousseaua" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/cs/o-mne/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior bankovní technolog, píši o aplikované AI, migraci na ISO 20022, postkvantové kryptografii pro finanční služby a strukturální transformaci velkoobchodních plateb.</span><span class="author-credentials">Více než 20 let zkušeností v HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/cs/o-mne/index.html">Celý profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Naposledy revidováno <time datetime="2026-05-31">2026-05-31</time>.</p><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Zdroje a odkazy</h2><ol class="article-sources-list"><li><a href="https://www.iso20022.org/catalogue-messages/iso-20022-messages-archive" rel="external noopener nofollow"><span class="source-host">www.iso20022.org</span><span class="source-path">/catalogue-messages/iso-20022-messages-archive</span></a></li><li><a href="https://www.bis.org/cpmi/publ/d228.htm" rel="external noopener nofollow"><span class="source-host">www.bis.org</span><span class="source-path">/cpmi/publ/d228.htm</span></a></li></ol></aside><nav class="post-pagination" aria-label="Stránkování článků"><a class="post-pagination-prev" href="/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"><span class="post-pagination-label">Předchozí</span><span class="post-pagination-title">Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/cs/o-mne/index.html">O mně</a></li>
+              <li><a href="/cs/kontakt/index.html">Kontakt</a></li>
+              <li><a href="/cs/vytvoreno-statickym-generatorem/index.html">Vytvořeno se Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Publikace</h2>
+            <ul>
+              <li><a href="/cs/clanky/index.html">Články</a></li>
+              <li><a href="/cs/publikace/index.html">Publikace</a></li>
+              <li><a href="/cs/stitky/index.html">Štítky</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Práce</h2>
+            <ul>
+              <li><a href="/cs/projekty/index.html">Projekty</a></li>
+              <li><a href="/cs/playlisty/index.html">Playlists</a></li>
+              <li><a href="/cs/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Kontakt</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Přihlášení k odběru newsletteru">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — výzkumné poznámky o platbách, AI a postkvantové kryptografii. Žádný spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="vy@banka.cz" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Přihlásit se k odběru</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Sociální odkazy">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau na Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau na LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau na Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau na YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/cs/pristupnost/index.html">Přístupnost</a> ·
+            <a href="/cs/soukromi/index.html">Soukromí</a> ·
+            <a href="/cs/podminky/index.html">Podmínky</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"cs"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"cs"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":2894,"about":{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]},"headline":"Multi-kolejnicová banka v roce 2026: karty, A2A, stablecoiny, RTP, FedNow a otevřené bankovnictví v jedné strategii","description":"FedNow vyžaduje předfinancovanou likviditu 24/7. ACH je levné, ale T+1. USDC se vypořádá atomicky, ale potřebuje wallet infrastrukturu. Multi-kolejnicová banka roku 2026 směruje každou platbu podle nákladů, finality a ceny likvidity.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp","width":"100vw","height":"100vh","caption":"Snímek s dlouhou expozicí zachycující protínající se světelné stopy na velkém železničním uzlu v noci — vizuální klíč k článku o multi-kolejnicové bance: karty, A2A, RTP, FedNow, ACH, stablecoiny, API otevřeného bankovnictví, ISO 20022 a orchestrační engine, který mezi nimi směruje"},"url":"https://sebastienrousseau.com/cs/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/","datePublished":"2026-06-01T06:06:06+00:00","dateModified":"2026-06-01","inLanguage":"cs","keywords":"vrstva orchestrace plateb, FedNow vs RTP, FedNow vs ACH, vypořádání stablecoinů, atomické vypořádání USDC, ISO 20022 pacs.008, account-to-account A2A, API otevřeného bankovnictví, předfinancovaná likvidita, past likvidity 24/7, multi-kolejnicová banka 2026, směrovací engine plateb, odsouhlasení ERP","articleSection":"Finance","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/cs/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"cs"},"citation":[{"@type":"CreativeWork","url":"https://www.iso20022.org/catalogue-messages/iso-20022-messages-archive"},{"@type":"CreativeWork","url":"https://www.bis.org/cpmi/publ/d228.htm"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/cs/"},{"@type":"ListItem","position":3,"name":"Multi-kolejnicová banka v roce 2026: karty, A2A, stablecoiny, RTP, FedNow a otevřené bankovnictví v jedné strategii","item":"https://sebastienrousseau.com/cs/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Hledat">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Hledat</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Hledat">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Hledat v dokumentaci..." autocomplete="off" aria-label="Hledat"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> zavřít</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigovat</span><span><kbd>Enter</kbd> otevřít</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Multi-kolejnicová banka v roce 2026: karty, A2A, stablecoiny, RTP, FedNow a otevřené bankovnictví v jedné strategii","url":"https://sebastienrousseau.com/cs/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/","inLanguage":"cs-CZ","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"vrstva orchestrace plateb, FedNow vs RTP, FedNow vs ACH, vypořádání stablecoinů, atomické vypořádání USDC, ISO 20022 pacs.008, account-to-account A2A, API otevřeného bankovnictví, předfinancovaná likvidita, past likvidity 24/7, multi-kolejnicová banka 2026, směrovací engine plateb, odsouhlasení ERP","dependencies":["ISO 20022","ISO 20022 pacs.008","Stablecoin"]}</script></body>
+</html>

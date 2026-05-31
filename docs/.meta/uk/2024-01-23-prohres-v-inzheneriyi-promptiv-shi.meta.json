@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Чоловік аналізує дані на екранах",
-  "title": "[UK DRAFT] AI Prompt Engineering 2024: Techniques That Work",
-  "date": "Jan 23, 2024",
-  "keywords": "AI Prompt Engineering, Персоналізовані Інструкції, Multi-Persona AI, Chain of Thought, Quantum Computing, Етичний AI, Adaptive Prompting, Zero Shot Prompting, Few Shot Prompting, Тенденції Технологій AI",
-  "locale": "uk_UA",
-  "description": "Досліджуйте досягнення 2024 року в AI Prompt Engineering, відкриваючи інноваційні тенденції та техніки, що революціонізують технологічний і фінансовий сектори.",
   "banner": "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp",
+  "title": "[UK DRAFT] AI Prompt Engineering 2024: Techniques That Work",
+  "keywords": "AI Prompt Engineering, Персоналізовані Інструкції, Multi-Persona AI, Chain of Thought, Quantum Computing, Етичний AI, Adaptive Prompting, Zero Shot Prompting, Few Shot Prompting, Тенденції Технологій AI",
   "subtitle": "Переосмислення взаємодії людини з комп'ютером завдяки значним досягненням у персоналізованих інструкціях",
-  "language": "uk-UA"
+  "banner_alt": "Чоловік аналізує дані на екранах",
+  "locale": "uk_UA",
+  "language": "uk-UA",
+  "description": "Досліджуйте досягнення 2024 року в AI Prompt Engineering, відкриваючи інноваційні тенденції та техніки, що революціонізують технологічний і фінансовий сектори.",
+  "date": "Jan 23, 2024"
 }

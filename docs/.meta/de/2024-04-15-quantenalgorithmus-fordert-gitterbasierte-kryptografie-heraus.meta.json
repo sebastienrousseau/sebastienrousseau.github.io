@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Banner mit Netzwerkknoten in einem digitalen blauen Raum",
-  "language": "de",
-  "keywords": "Quantencomputing, Quantenalgorithmus, gitterbasierte Kryptographie, LWE, Verschlüsselung, Post-Quanten-Kryptographie, Cybersicherheit, Yilei Chen, kryptographische Forschung, Sicherheitsbedrohungen",
   "locale": "de_DE",
+  "subtitle": "Der nächste Quantenalgorithmus mit polynomieller Laufzeit gegen die gitterbasierte Kryptographie",
+  "keywords": "Quantencomputing, Quantenalgorithmus, gitterbasierte Kryptographie, LWE, Verschlüsselung, Post-Quanten-Kryptographie, Cybersicherheit, Yilei Chen, kryptographische Forschung, Sicherheitsbedrohungen",
   "title": "Ein Quantenalgorithmus fordert die gitterbasierte Kryptographie heraus",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
-  "date": "April 15, 2024",
   "description": "Ein neuer Quantenalgorithmus mit polynomieller Laufzeit von Yilei Chen zielt auf die gitterbasierte Kryptographie. Implikationen für Post-Quanten-Standards einschließlich CRYSTALS-Kyber.",
-  "subtitle": "Der nächste Quantenalgorithmus mit polynomieller Laufzeit gegen die gitterbasierte Kryptographie"
+  "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
+  "language": "de",
+  "date": "April 15, 2024",
+  "banner_alt": "Banner mit Netzwerkknoten in einem digitalen blauen Raum"
 }

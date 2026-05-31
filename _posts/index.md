@@ -235,6 +235,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html" title="The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy">
+<img alt="Long-exposure photograph of intersecting light trails at a major rail interchange at night — visual key for the multi-rail bank piece: cards, A2A, RTP, FedNow, ACH, stablecoins, Open Banking APIs, ISO 20022, and the orchestration engine that routes between them" src="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Payment Orchestration · FedNow · RTP</span>
+<h3><a href="/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html">The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-01">June 1, 2026</time></p>
+<p class="newsroom-excerpt">FedNow demands pre-funded 24/7 liquidity. ACH is cheap but T+1. USDC clears atomically but needs wallet infrastructure. The 2026 multi-rail bank routes each payment by cost, finality, and liquidity cost — driven by an orchestration engine that reads ISO 20022 pacs.008 and decides.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html" title="Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails">
 <img alt="Cryptographic key material drifting into deep blue water — symbolising harvest-now-decrypt-later capture of payment messages whose RSA and ECC envelopes will not survive a cryptanalytically relevant quantum computer" src="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -291,18 +303,6 @@ site_software: "Static Site Generator, Rust"
 <h3><a href="/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/index.html">Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-28">May 28, 2026</time></p>
 <p class="newsroom-excerpt">Digital assets are no longer an innovation bet. They are a settlement, custody, and balance-sheet architecture question. Crypto is a ~$3 trillion asset class, stablecoins have reached ~$300 billion, and tokenised real-world assets grew ~300% in 2025. The strategic task for banks in 2026 is not whether to engage but how to design infrastructure, controls, and governance for a world where money, assets, and settlement become programmable.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html" title="AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026">
-<img alt="AI payments operating system diagram showing fraud scoring, multi-rail routing, liquidity forecasting, ISO 20022 data, compliance screening, and exception repair" src="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">AI Payments · Fraud Prevention · Routing</span>
-<h3><a href="/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html">AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-27">May 27, 2026</time></p>
-<p class="newsroom-excerpt">The 2026 AI operating system for payments wires fraud, routing, resilience, and compliance into a single workflow-speed decisioning layer. The strategic question for banks is design discipline — which AI controls run real time on which workflow — not which point tool to pilot.</p>
 </div>
 </article>
 

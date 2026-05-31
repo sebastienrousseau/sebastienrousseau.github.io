@@ -6,14 +6,36 @@
     <description>Türkçe makaleler: uygulamalı yapay zeka, ISO 20022 ödemeleri, post-kuantum kriptografi ve toptan ödemelerin dönüşümü.</description>
     <atom:link href="https://sebastienrousseau.com/tr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>tr-TR</language>
-    <lastBuildDate>Sun, 31 May 2026 10:06:34 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 19:21:18 +0000</lastBuildDate>
     <copyright>© Telif Hakkı 2007 - 2026 - Sebastien Rousseau. Tüm hakları saklıdır.</copyright>
+    <item>
+      <title>2026&apos;da Çok Raylı Banka: Kartlar, A2A, Stablecoin&apos;ler, RTP, FedNow ve Open Banking Tek Stratejide</title>
+      <link>https://sebastienrousseau.com/tr/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
+      <description>FedNow 7/24 ön finansmanlı likidite ister. ACH ucuz ama T+1&apos;dir. USDC atomik mutabaka ulaşır ama cüzdan altyapısı gerektirir. 2026 çok raylı bankası her ödemeyi maliyet ve kesinliğe göre yönlendirir.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
+      <pubDate>Sun, 31 May 2026 19:21:18 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>ödeme orkestrasyon katmanı</category>
+      <category>FedNow vs RTP</category>
+      <category>FedNow vs ACH</category>
+      <category>stablecoin mutabakatı</category>
+      <category>USDC atomik mutabakat</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>hesaptan hesaba A2A</category>
+      <category>Open Banking API&apos;leri</category>
+      <category>ön finansmanlı likidite</category>
+      <category>7/24 likidite tuzağı</category>
+      <category>çok raylı banka 2026</category>
+      <category>ödeme yönlendirme motoru</category>
+      <category>ERP mutabakatı</category>
+    </item>
     <item>
       <title>Kuantum Sonrası Ödeme Altyapısı: Bankalar Neden Eski Rayları Uyarlamak Yerine Değiştirebilir</title>
       <link>https://sebastienrousseau.com/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>Kuantum sonrası kriptografi ödeme raylarına ikili bir seçim dayatır: ML-KEM ve ML-DSA için hiç boyutlanmamış SWIFT MT ve ISO 20022 zarflarında RSA/ECC&apos;yi uyarlamak ya da kripto-çevik altyapıyla değiştirmek. Mimarlar HNDL operasyonel kayba dönüşmeden karar vermeli.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Sun, 31 May 2026 10:06:34 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 19:21:18 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>kuantum sonrası kriptografi</category>
@@ -39,7 +61,7 @@
       <link>https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</link>
       <description>AI 2026&apos;da ödemelerin işletim sistemi hâline geliyor; analitikten dolandırıcılık önleme, ödeme onarımı, yönlendirme, likidite tahmini, uyum taraması ve aracılı ticaret kontrollerine geçiyor.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
-      <pubDate>Sun, 31 May 2026 10:06:34 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 19:21:18 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
       <category>AI ödemeler 2026</category>
@@ -56,7 +78,7 @@
       <link>https://sebastienrousseau.com/tr/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</link>
       <description>Stablecoinler ve tokenleştirilmiş mevduatlar programlanabilir mutabakat etrafında yakınsıyor; ancak bilanço, hukuki, likidite ve güven modelleri farklı kalıyor.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</guid>
-      <pubDate>Sun, 31 May 2026 10:06:34 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 19:21:18 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>stablecoinler 2026</category>
@@ -74,7 +96,7 @@
       <link>https://sebastienrousseau.com/tr/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>
       <description>UK Payments Forward Plan ve Nisan 2026 politika paketi; geleneksel ödemeler, stablecoinler, tokenleştirilmiş mevduatlar, açık bankacılık ve yapay zeka ajanı ödemeleri için tek tutarlı bir çerçeveye işaret ediyor.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</guid>
-      <pubDate>Sun, 31 May 2026 10:06:34 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 19:21:18 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>UK Payments Forward Plan 2026</category>
@@ -92,7 +114,7 @@
       <link>https://sebastienrousseau.com/tr/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>
       <description>2026&apos;da ajansal ödemeler kavramdan canlı işleme geçti. Bankacılık sorusu artık yapay zeka ajanlarının ödeme başlatıp başlatamayacağı değil; onay, sorumluluk, kimlik, denetlenebilirlik, dolandırıcılık kontrolleri ve protokol birlikte çalışabilirliğinin nasıl kurulacağıdır.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</guid>
-      <pubDate>Sun, 31 May 2026 10:06:34 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 19:21:18 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>ajansal ödemeler 2026</category>

@@ -115,6 +115,7 @@ site_software: "Static Site Generator, Rust"
 
 
 
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> DORA, the EU AI Act, GDPR, cloud concentration risk, and data sovereignty are converging into one 2026 compliance stack for banks.</p>

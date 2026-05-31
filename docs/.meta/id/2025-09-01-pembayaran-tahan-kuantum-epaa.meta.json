@@ -1,11 +1,11 @@
 {
-  "locale": "id_ID",
-  "title": "[ID DRAFT] Quantum-Safe Payments: Why the Industry Must Act Now",
   "keywords": "pembayaran quantum-safe, kriptografi pasca-kuantum, SEPA, SWIFT gpi, ISO 20022, keamanan layanan keuangan, EPAA, harvest-now decrypt-later, kelincahan kriptografi, Sebastien Rousseau",
+  "subtitle": "Kesiapan quantum-safe adalah keputusan infrastruktur saat ini. Bukan masa depan.",
+  "locale": "id_ID",
+  "banner_alt": "Papan sirkuit komputasi kuantum dalam cahaya biru",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "title": "[ID DRAFT] Quantum-Safe Payments: Why the Industry Must Act Now",
   "date": "Sep 01, 2025",
   "description": "Komputasi kuantum mengancam kriptografi sistem pembayaran. Buku putih EPAA menguraikan risiko struktural dan urgensi migrasi ke PQC.",
-  "banner_alt": "Papan sirkuit komputasi kuantum dalam cahaya biru",
-  "language": "id-ID",
-  "subtitle": "Kesiapan quantum-safe adalah keputusan infrastruktur saat ini. Bukan masa depan.",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
+  "language": "id-ID"
 }

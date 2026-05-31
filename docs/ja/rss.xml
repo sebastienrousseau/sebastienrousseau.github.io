@@ -6,14 +6,36 @@
     <description>日本語の記事:応用AI、ISO 20022 決済、ポスト量子暗号、ホールセール決済の構造変革。</description>
     <atom:link href="https://sebastienrousseau.com/ja/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ja-JP</language>
-    <lastBuildDate>Sun, 31 May 2026 10:06:33 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 19:21:17 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>2026 年のマルチレール銀行:カード、A2A、ステーブルコイン、RTP、FedNow、Open Banking を一つの戦略に</title>
+      <link>https://sebastienrousseau.com/ja/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
+      <description>FedNow は 24/7 の事前資金供給型流動性を要求します。ACH は安価ですが T+1 です。USDC はアトミックに決済しますがウォレット基盤を必要とします。2026 年のマルチレール銀行は、ISO 20022 pacs.008 を読み取るオーケストレーション・エンジンが、コスト・ファイナリティ・流動性コストに基づいて各決済の経路を決定します。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
+      <pubDate>Sun, 31 May 2026 19:21:17 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>決済オーケストレーション層</category>
+      <category>FedNow と RTP</category>
+      <category>FedNow と ACH</category>
+      <category>ステーブルコイン決済</category>
+      <category>USDC アトミック決済</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>A2A 口座間送金</category>
+      <category>Open Banking API</category>
+      <category>事前資金供給型流動性</category>
+      <category>24/7 流動性トラップ</category>
+      <category>マルチレール銀行 2026</category>
+      <category>決済ルーティング・エンジン</category>
+      <category>ERP 消込</category>
+    </item>
     <item>
       <title>耐量子決済基盤:銀行が既存レールを後付け対応ではなく置換すべき理由</title>
       <link>https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>耐量子暗号は決済レールに二者択一を迫ります。ML-KEM/ML-DSA 向けに設計されていない SWIFT MT・ISO 20022 封筒に RSA/ECC を後付けするか、暗号アジリティを備えた基盤へ置換するか。HNDL が実害となる前に判断が必要です。</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Sun, 31 May 2026 10:06:33 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 19:21:17 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>耐量子計算機暗号</category>
