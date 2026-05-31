@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/fr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <loc>https://sebastienrousseau.com/fr/2026-05-31-post-quantique-paiements-infrastructure-replace-rather-than-retrofit-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>fr-FR</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
-    <news:title>Infrastructure de paiements post-quantique : pourquoi les banques peuvent remplacer plutôt que mettre à niveau les rails existants</news:title>
-    <news:keywords>paiements post-quantiques 2026, post-quantum cryptography, PQC banque, ML-KEM, ML-DSA, NIST, infrastructure de paiement, agilité cryptographique, HNDL, harvest-now-decrypt-later, HSM, SWIFT MT, ISO 20022, RTGS, rails de paiement</news:keywords>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Infrastructure de paiement post-quantique : pourquoi les banques remplaceront plutôt que d&apos;adapter les rails hérités</news:title>
+    <news:keywords>cryptographie post-quantique, paiements PQC, agilité cryptographique, récolter-maintenant-déchiffrer-plus-tard, HNDL, normes post-quantiques NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, migration des rails de paiement, ISO 20022 PQC, remplacement SWIFT MT, HSM, effondrement PKI, résilience opérationnelle, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
   </news:news>
 </url>
 <url>
@@ -20,7 +20,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>fr-FR</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
     <news:title>Marchés de gros au UK : gilts tokenisés, DSS et règlement atomique</news:title>
     <news:keywords>Digital Securities Sandbox 2026, gilts tokenisés, repo intrajournalier, DvP atomique, marchés de gros UK, FCA, Bank of England, RTGS, mobilité du collatéral</news:keywords>
   </news:news>
@@ -32,7 +32,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>fr-FR</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
     <news:title>ISO 20022 après migration : transformer la donnée de paiement en produits bancaires en 2026</news:title>
     <news:keywords>ISO 20022 2026, adresse structurée, CBPR+, produits de données de paiement, codes d&apos;objet, trésorerie d&apos;entreprise, rapprochement, filtrage sanctions, détection fraude</news:keywords>
   </news:news>

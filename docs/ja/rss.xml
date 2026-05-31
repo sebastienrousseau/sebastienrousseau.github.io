@@ -6,30 +6,33 @@
     <description>日本語の記事:応用AI、ISO 20022 決済、ポスト量子暗号、ホールセール決済の構造変革。</description>
     <atom:link href="https://sebastienrousseau.com/ja/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ja-JP</language>
-    <lastBuildDate>Sun, 31 May 2026 06:21:45 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 10:06:33 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
     <item>
-      <title>耐量子決済インフラ ― 銀行がレガシーレールをレトロフィットせず置き換える理由</title>
+      <title>耐量子決済基盤:銀行が既存レールを後付け対応ではなく置換すべき理由</title>
       <link>https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
-      <description>耐量子暗号は銀行に重い問いを突きつける ― レガシー決済レールにレトロフィットするか、暗号アジリティ前提のインフラに置き換えるかである。</description>
+      <description>耐量子暗号は決済レールに二者択一を迫ります。ML-KEM/ML-DSA 向けに設計されていない SWIFT MT・ISO 20022 封筒に RSA/ECC を後付けするか、暗号アジリティを備えた基盤へ置換するか。HNDL が実害となる前に判断が必要です。</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 10:06:33 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
-      <category>耐量子暗号</category>
-      <category>PQC</category>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>耐量子計算機暗号</category>
+      <category>PQC決済</category>
+      <category>暗号アジリティ</category>
+      <category>Harvest Now Decrypt Later</category>
+      <category>HNDL</category>
+      <category>NIST耐量子標準</category>
       <category>ML-KEM</category>
       <category>ML-DSA</category>
-      <category>決済インフラ</category>
-      <category>暗号アジリティ</category>
-      <category>ハーベスト・ナウ・デクリプト・レーター</category>
+      <category>FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>決済レール移行</category>
+      <category>ISO 20022 PQC</category>
+      <category>SWIFT MT置換</category>
       <category>HSM</category>
-      <category>ISO 20022</category>
-      <category>SWIFT MT</category>
-      <category>RTGS</category>
-      <category>決済レール</category>
-      <category>NIST</category>
-      <category>2026</category>
+      <category>PKI崩壊</category>
+      <category>運用レジリエンス</category>
+      <category>Quantum Computing Cybersecurity Preparedness Act</category>
     </item>
     <item>
       <title>英国のホールセール・デジタル市場:トークン化ギルト、決済、新チャンピオン職</title>

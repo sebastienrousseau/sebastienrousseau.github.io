@@ -1,11 +1,11 @@
 {
-  "subtitle": "Rust में Argon2i, bcrypt और scrypt हैशिंग — एक एकीकृत API",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
+  "locale": "hi_IN",
+  "banner_alt": "क्रिप्टोग्राफिक हैश की अमूर्त डिजिटल छवि",
   "date": "October 16, 2023",
   "title": "क्वांटम-युग में डेटा-सुरक्षा: hash-लाइब्रेरी hsh",
-  "locale": "hi_IN",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
   "keywords": "hsh, hash, Argon2i, bcrypt, scrypt, Rust, क्रिप्टोग्राफी, पासवर्ड, सुरक्षा, क्वांटम",
   "description": "hsh एक Rust हैश-लाइब्रेरी है जो Argon2i, bcrypt और scrypt को एक एकीकृत और सुरक्षित API के अंतर्गत समाहित करती है।",
-  "banner_alt": "क्रिप्टोग्राफिक हैश की अमूर्त डिजिटल छवि",
-  "language": "hi-IN"
+  "language": "hi-IN",
+  "subtitle": "Rust में Argon2i, bcrypt और scrypt हैशिंग — एक एकीकृत API"
 }

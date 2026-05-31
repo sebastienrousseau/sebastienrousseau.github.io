@@ -3,16 +3,16 @@
 # Front Matter (YAML)
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Post-quantum payments infrastructure diagram showing legacy rails, crypto-agility, ML-KEM, ML-DSA, HSMs, certificates, APIs, ISO 20022, and replacement pathways"
-banner_height: "571"
-banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80"
+banner_alt: "Cryptographic key material drifting into deep blue water — symbolising harvest-now-decrypt-later capture of payment messages whose RSA and ECC envelopes will not survive a cryptanalytically relevant quantum computer"
+banner_height: "1597"
+banner_width: "2584"
+banner: "https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "May 31, 2026"
-description: "Post-quantum cryptography creates a hard question for banks: retrofit legacy payment rails or replace them with crypto-agile infrastructure."
+description: "Post-quantum cryptography forces a binary choice on payment rails: retrofit RSA/ECC inside SWIFT MT and ISO 20022 envelopes that were never sized for ML-KEM and ML-DSA, or replace with crypto-agile infrastructure. Architects must decide before HNDL becomes operational loss."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -21,9 +21,9 @@ image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
-keywords: "post quantum payments 2026, PQC banking, ML-KEM, ML-DSA, payment infrastructure, crypto-agility, HNDL, harvest now decrypt later, ISO 20022"
+keywords: "post-quantum cryptography, PQC payments, crypto-agility, Harvest Now Decrypt Later, HNDL, NIST post-quantum standards, ML-KEM, ML-DSA, FIPS 203, FIPS 204, payment rail migration, ISO 20022 PQC, SWIFT MT replacement, HSM, PKI collapse, operational resilience, Quantum Computing Cybersecurity Preparedness Act"
 language: "en-GB"
-excerpt: "Post-quantum cryptography is the wedge that may force banks to replace rather than retrofit legacy payment rails. The 2026 question is design discipline — does the rail support crypto-agility, can certificates and HSMs be rotated in days not years, and is the audit chain quantum-safe before harvest-now-decrypt-later attacks compromise it."
+excerpt: "Harvest-now-decrypt-later turns today's TLS-protected payment messages into tomorrow's decrypted exposure. ML-KEM and ML-DSA are an order of magnitude larger than the RSA and ECC keys legacy rails were sized for — retrofit triggers fragmentation, latency, and HSM exhaustion. The 2026 architectural decision is whether to patch or replace before the regulatory clock runs out."
 last_reviewed: "2026-05-31"
 layout: "report"
 locale: "en_GB"
@@ -39,10 +39,10 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "Post-Quantum Payments Infrastructure 2026"
+seo_title: "Post-Quantum Payments Infrastructure: Replace, Don't Retrofit"
 short_name: "sebastienrousseau"
-subtitle: "For payments infrastructure, post-quantum migration may become the reason to replace brittle legacy rails rather than another patch forced into them."
-tags: "post-quantum cryptography, payments infrastructure, crypto-agility, ML-KEM, ML-DSA, HNDL, ISO 20022"
+subtitle: "ML-KEM and ML-DSA do not fit cleanly inside the rails that carry SWIFT MT and ISO 20022. The honest engineering answer is that retrofit is a controlled migration plan with a short shelf life, and replacement is the only stable destination."
+tags: "post-quantum cryptography, PQC, crypto-agility, HNDL, ML-KEM, ML-DSA, NIST, payment infrastructure, ISO 20022, SWIFT, HSM, PKI, operational resilience"
 theme-color: "0, 83, 191"
 title: "Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails"
 url: "https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026"
@@ -53,7 +53,7 @@ atom_link: "https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infra
 category: "Technology"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "The 2026 post-quantum payments blueprint — crypto-agility, legacy rail replacement, HSM constraints, ISO 20022 timing, and quantum-safe payment architecture."
+item_description: "ML-KEM and ML-DSA do not fit cleanly inside SWIFT MT and ISO 20022 envelopes built for RSA-2048. Harvest-now-decrypt-later compounds the timeline. The architectural answer is replacement on crypto-agile rails, not retrofit."
 item_guid: "https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/rss.xml"
 item_link: "https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/rss.xml"
 item_pub_date: "Sun, 31 May 2026 06:06:06 +0000"
@@ -71,7 +71,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "PQC Payments"
+apple-mobile-web-app-title: "PQC Payments 2026"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
@@ -82,11 +82,11 @@ msapplication-navbutton-color: "0, 83, 191"
 
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
-twitter_description: "The 2026 post-quantum payments blueprint — crypto-agility, legacy rail replacement, HSM constraints, ISO 20022 timing, and quantum-safe payment architecture."
+twitter_description: "ML-KEM and ML-DSA do not fit cleanly inside legacy SWIFT MT and ISO 20022 rails. HNDL closes the window. Replace, don't retrofit."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
-twitter_title: "Post-Quantum Payments Infrastructure 2026"
+twitter_title: "PQC Payments Infrastructure 2026: Replace, Don't Retrofit"
 twitter_url: "https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -103,122 +103,182 @@ site_software: "Static Site Generator, Rust"
 
 # Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails
 
-
-
-
-
 <!-- lead-start -->
+<!-- lead-start: manual -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Post-quantum cryptography creates a hard question for banks: retrofit legacy payment rails or replace them with crypto-agile infrastructure.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> The cryptographic envelopes that carry SWIFT MT and ISO 20022 payments were sized for RSA-2048 and ECC. NIST's standardised post-quantum algorithms — ML-KEM (FIPS 203) and ML-DSA (FIPS 204) — produce public keys and signatures up to twenty times larger. Retrofitting those payloads into legacy rails causes packet fragmentation, HSM exhaustion, and latency tails that operations teams cannot absorb. Harvest-now-decrypt-later removes the option to wait. The defensible architectural choice in 2026 is replacement on crypto-agile rails, not patching.</p>
 <p class="post-lead-heading"><strong>Key takeaways</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Why 2026 Is the Year This Became Strategic.</strong> The industry has moved beyond the adoption phase.</li>
-  <li><strong>The 2026 Architecture Baseline.</strong> The bank should start with the friction: trapped liquidity, settlement delay, reconciliation cost, failed payments, fraud exposure, weak auditability, or poor client experience.</li>
-  <li><strong>Strategic Architecture Table.</strong> Global banks should create platform-level orchestration so that each market, rail, token, and AI capability does not become a separate operating model.</li>
-  <li><strong>What This Means by Bank Type.</strong> Global banks should create platform-level orchestration so that each market, rail, token, and AI capability does not become a separate operating model.</li>
+  <li><strong>HNDL is a 2026 loss, not a 2035 risk.</strong> Encrypted payment traffic captured today decrypts the day a cryptanalytically relevant quantum computer arrives — and the regulatory clock is already running.</li>
+  <li><strong>The size problem breaks legacy rails.</strong> ML-KEM-768 public keys are 1,184 bytes; ML-DSA-65 signatures are 3,309 bytes. SWIFT MT and many ISO 20022 implementations were never sized for that.</li>
+  <li><strong>Retrofit has a shelf life of months, not years.</strong> Patching RSA out of in-flight rails buys time for a replacement programme — it is not the replacement.</li>
+  <li><strong>Crypto-agility is the only durable design property.</strong> Algorithm choice must be a configuration parameter, not a load-bearing assumption.</li>
+  <li><strong>PKI collapse is the systemic failure mode.</strong> When a CA's signing algorithm is broken, every certificate beneath it stops being evidence — that is the institutional exposure to manage.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026">The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer</a>, <a href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</a>, <a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a>.</p>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="/2026-05-18-quantum-cryptography-standards-developments-2026/">The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer</a>, <a href="/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</a>, <a href="/2026-05-16-best-cloud-infrastructure-architecture-2026/">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a>.</p>
 </aside>
 <!-- lead-end -->
 
-Post-quantum cryptography creates a hard question for banks: retrofit legacy payment rails or replace them with crypto-agile infrastructure. The 2026 signal is that quantum-safe rails has moved from innovation theatre into the banking operating model, where the decisive question is design discipline: which data, rails, controls, liabilities, and client workflows belong together ([The Finanser](https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury "Programmable liquidity")).
+The cryptographic primitives that authenticate every wholesale payment in production today — RSA, ECDSA, ECDH — have an expiry date. The US [Quantum Computing Cybersecurity Preparedness Act ⧉](https://www.congress.gov/bill/117th-congress/house-bill/7535/text "H.R. 7535") wrote that expiry date into federal procurement law in late 2022. The [BIS Working Paper No. 1208 ⧉](https://www.bis.org/publ/work1208.htm "Project Leap: Quantum-proofing the financial system") put the same expiry into the supervisory frame for central banks. [NIST FIPS 203 ⧉](https://csrc.nist.gov/pubs/fips/203/final "Module-Lattice-Based Key-Encapsulation Mechanism Standard") and [FIPS 204 ⧉](https://csrc.nist.gov/pubs/fips/204/final "Module-Lattice-Based Digital Signature Standard") published the replacements in August 2024.
+
+Payment infrastructure has not yet absorbed what that means.
+
+This article is the engineering case for replacement over retrofit. It is written for architects who already understand the algorithms and need to decide what to do with SWIFT MT, ISO 20022 pacs and pain messages, RTGS interfaces, HSM estates, and the certificate hierarchies underneath all of it.
 
 ---
 
 > **Executive Summary / Key Takeaways**
 >
-> - **Quantum-Safe Rails is now strategic.** The topic is tied to operating model, resilience, client value, and regulatory evidence rather than a narrow product launch ([The Finanser](https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury "Programmable liquidity")).
-> - **The design principle is crypto-agility.** Banks need architecture that connects policy, product, data, rail choice, risk controls, and measurable economics ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **The control model must be real time.** Fraud, liquidity, compliance, settlement, and operational-risk decisions must run at the speed of the workflow, not after the event.
-> - **Data quality becomes commercial advantage.** Structured data, transaction context, audit logs, and identity signals become the substrate for automation and client-facing products.
-> - **Fragmentation is the enemy.** A bank that builds isolated pilots around each rail, token, model, or compliance requirement creates future operating risk.
-> - **The winning model is orchestration.** The institution that can route, govern, price, evidence, and explain each workflow will outperform the one that merely adopts another tool ([Kyriba](https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/ "ISO 20022 migration")).
+> - **Harvest-now-decrypt-later (HNDL) is the operational threat.** Adversaries record encrypted payment traffic in 2026 to decrypt it once a cryptanalytically relevant quantum computer (CRQC) exists. The captured traffic includes settlement instructions, beneficiary data, and authentication material with long-lived sensitivity.
+> - **NIST has standardised the replacements.** ML-KEM (FIPS 203) for key encapsulation and ML-DSA (FIPS 204) for digital signatures are the defaults. SLH-DSA (FIPS 205) covers the stateless hash-based fallback.
+> - **The size delta breaks legacy assumptions.** Public keys and signatures are 5–20× larger than RSA-2048 equivalents. That collides with MTU on payment networks, fixed-buffer assumptions in MT message handlers, and the cryptographic throughput of installed HSM fleets.
+> - **Hybrid (classical + PQC) is the migration vehicle, not the destination.** Hybrid TLS and hybrid X.509 buy two to three years of interoperability while production rails are replaced. They do not solve the underlying capacity problem.
+> - **PKI is the load-bearing wall.** A certificate authority whose signature algorithm becomes forgeable invalidates every certificate beneath it. The bank's institutional exposure is the chain, not any single endpoint.
+> - **Crypto-agility is the architectural property to engineer for.** Algorithm identifiers, key formats, signature envelopes, and HSM partitions must all be parameterisable. Anything pinned to RSA at compile time is technical debt that will fall due simultaneously.
 >
 ---
 
-## Why 2026 Is the Year This Became Strategic
+## Harvest Now, Decrypt Later: The Threat Model That Removes the Option to Wait
 
-The industry has moved beyond the adoption phase. It is no longer enough to join a rail, migrate a message, run an AI proof of concept, or announce a tokenisation pilot. In 2026, the strategic edge comes from orchestrating those capabilities against a real workflow, then proving that the workflow is safer, faster, cheaper, more resilient, or more useful to clients.
+HNDL inverts the usual cryptographic timeline. Conventional risk assessment asks when the threat materialises. HNDL asks when the data captured today becomes useful to an adversary. For payment messages — beneficiary identities, account numbers, structured remittance data, sanction-screening payloads, intra-bank settlement instructions — the window of sensitivity is years to decades. Most of that traffic is recorded somewhere right now.
 
-That is why quantum-safe rails is now a board-level topic. The same pressures keep recurring: richer payment data, real-time settlement, tokenised money, AI decisioning, Open Banking, operational resilience, cloud concentration, and stronger regulatory evidence. Treated separately, those pressures create programme sprawl. Treated as one architecture, they create operating leverage ([The Finanser](https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury "Programmable liquidity"), [J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
+The [NSA's CNSA 2.0 timeline ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "Commercial National Security Algorithm Suite 2.0") gives national-security systems until 2035 to complete the transition. Financial supervisors are moving on faster schedules — the [PRA's expectations on operational resilience ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21") treat cryptographic agility as a third-party concentration risk. The expectation in 2026 is that material payment rails publish their PQC migration plan in their resilience self-attestation.
 
-## The 2026 Architecture Baseline
+The HNDL adversary does not need a CRQC today. The adversary needs:
 
-### 1. Workflow First, Technology Second
+1. **Network position.** Submarine-cable taps, ISP-level capture, and compromised middleboxes are all in scope. Wholesale payment traffic concentrates through a small number of network paths.
+2. **Storage.** A petabyte of structured payment data is a manageable archive in 2026.
+3. **Patience.** The capture costs nothing per intercepted message. The yield arrives later.
 
-The bank should start with the friction: trapped liquidity, settlement delay, reconciliation cost, failed payments, fraud exposure, weak auditability, or poor client experience. The technology is only justified where it removes that friction ([The Finanser](https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury "Programmable liquidity")).
+The migration argument is therefore not "quantum computers may arrive in 2035." It is "any TLS session that completes tonight with RSA-2048 key exchange is exposed for as long as the data inside it remains sensitive."
 
-### 2. Data as the Control Plane
+## The Size Problem Is the Engineering Problem
 
-Structured, governed, and traceable data is the foundation. Without usable data, automation becomes brittle and compliance becomes manual. With usable data, banks can create routing intelligence, real-time controls, and client-facing analytics ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
+Public discussion of PQC migration tends to focus on algorithm selection. The harder problem is dimensional.
 
-### 3. Orchestration Across Rails and Platforms
+| Primitive | Public key | Signature / ciphertext |
+|---|---|---|
+| RSA-2048 | 256 bytes | 256 bytes (signature) |
+| ECDSA P-256 | 64 bytes | 64 bytes (signature) |
+| ML-KEM-768 | **1,184 bytes** | **1,088 bytes (ciphertext)** |
+| ML-DSA-65 | **1,952 bytes** | **3,309 bytes (signature)** |
+| SLH-DSA-128f | 32 bytes | **17,088 bytes (signature)** |
 
-The architecture must support multiple rails, providers, identity schemes, risk signals, and settlement assets. The routing decision should be made by cost, speed, finality, jurisdiction, client preference, resilience, and data richness.
+Those numbers map directly onto failure modes that legacy payment infrastructure was never designed for:
 
-### 4. Embedded Compliance and Evidence
+- **Packet fragmentation on the path.** A ClientHello carrying hybrid ML-KEM-768 plus classical X25519 exceeds the typical 1,500-byte Ethernet MTU. Middleboxes between two payment endpoints fragment, drop, or rewrite the handshake. The failure surfaces as intermittent TLS errors that look like transient network noise.
+- **Buffer assumptions in MT handlers.** Many SWIFT MT integrations carry signed envelopes sized for ECDSA. Drop an ML-DSA signature into the same envelope and the parser either truncates or rejects.
+- **HSM throughput.** ML-DSA signing on an installed HSM fleet is 3–10× slower than ECDSA per operation, on hardware whose key-per-second budget already runs hot during end-of-day batch windows.
+- **Certificate chain weight.** A four-level CA hierarchy reissued with ML-DSA signatures grows from roughly 6 KB to roughly 60 KB. Every TLS handshake to the rail pays that.
 
-The compliance model must be native to the workflow. Policy-as-code, automated audit logs, operational resilience evidence, consent records, and model governance need to be produced as part of execution, not recreated for auditors later.
+The retrofit path is to triage these constraints individually — bigger buffers here, faster HSMs there, fragmentation tolerance in the middleboxes. That is a defensible six-month bridge. It is not an architecture.
 
-### 5. Unit Economics and Client Value
+## Retrofit Versus Replace: The Decision That Defines the Programme
 
-Every initiative needs evidence of commercial value. Cost-per-payment, cost-per-decision, cost-per-investigation, liquidity saved, manual repairs avoided, fraud losses reduced, and client adoption should determine scaling decisions.
+The honest framing is that retrofit is a controlled migration plan with a short shelf life, and replacement is the only stable destination. The decision is which one the bank funds first, and how long the retrofit window stays open before it becomes a permanent kludge.
 
-## Strategic Architecture Table
+Retrofit means:
 
-| Layer | 2026 Direction | Banking Opportunity | Risk if Mishandled |
+- Hybrid TLS (ML-KEM + X25519) terminated at the existing rail boundary.
+- Dual-signed certificates (RSA primary, ML-DSA secondary) issued from a PQC-capable subordinate CA.
+- Larger MT buffers and tighter MTU policy on payment VPNs.
+- HSM firmware updates where vendors support PQC primitives; full HSM replacement where they do not.
+
+That work can be done. It does not fix the underlying problem, which is that SWIFT MT and many ISO 20022 implementations encode the cryptographic envelope inside a message format that pins the algorithm. The next algorithm transition — and there will be one, when ML-KEM eventually shows weakness or a new standard supersedes it — runs the same migration again on the same rails.
+
+Replacement means accepting that the cryptographic layer is not a property of the message format. It is a property of a separable envelope service that the message format calls into. Concretely:
+
+- The transport security boundary moves to a service mesh or sidecar that terminates hybrid TLS and presents the cleartext message to the rail with a stable interface.
+- Message-level signatures are produced by a dedicated signing service whose algorithm choice is a configuration parameter, not a hard-coded assumption.
+- Certificates are issued from a CA whose signing algorithm is itself rotatable.
+- HSM partitions are addressed by purpose (transport, signing, key encapsulation) rather than by message format.
+
+The replacement design survives the next algorithm change without re-touching the rail.
+
+## The Crypto-Agile Architecture, Layer by Layer
+
+The infrastructure layers that matter for PQC migration are not the business layers of "data, control, economics" that suit a generic banking narrative. The layers that matter are cryptographic.
+
+| Layer | What it does | The PQC question | Architectural directive |
 |---|---|---|---|
-| **Workflow layer** | Client pain point defines the product | Clear business case and adoption | Technology-led pilots without users |
-| **Data layer** | Structured, governed transaction and control data | Automation, analytics, and auditability | Bad data moved faster |
-| **Rail layer** | Routing across cards, A2A, RTGS, stablecoins, deposits, APIs, DLT | Optimised cost, speed, and finality | Channel sprawl and duplicated controls |
-| **Control layer** | Real-time policy, fraud, sanctions, resilience, identity, and consent | Risk managed at execution speed | Manual after-the-fact compliance |
-| **Economics layer** | Measured unit cost and client value | Evidence-led scaling | Innovation spend without durable return |
+| **HSM / key-management** | Generates, stores, and operates on key material under hardware isolation | Does the installed HSM firmware support ML-KEM, ML-DSA, and a hybrid key-encapsulation API? What is the signing throughput delta versus ECDSA on the same hardware? | Inventory every HSM partition by algorithm support and per-second capacity. Decommission anything that pins to RSA without a firmware path. Stand up dedicated PQC partitions before production cutover. |
+| **PKI / certificate authority** | Issues, revokes, and chains trust through X.509 certificates | Can the CA sign with ML-DSA today? Is there a tested process for rotating the root and re-issuing the chain? Are CRL and OCSP responders sized for ML-DSA signature weight? | Treat the CA stack as the load-bearing wall. Establish a PQC-capable subordinate now. Time the root rotation for the longest-lived certificate dependency, not for convenience. |
+| **Transport / network** | Terminates TLS, IPsec, and MACsec between payment endpoints | Does the load balancer, WAF, and middlebox path tolerate hybrid handshakes that exceed legacy MTU? Are session-resumption tickets sized for PQC keys? | Move TLS termination to a crypto-agile boundary (sidecar or mesh). Raise MTU policy on payment VPNs. Test the full path with fragmentation deliberately induced. |
+| **Application / message payload** | Carries SWIFT MT, ISO 20022 pacs / pain / camt messages and their cryptographic envelopes | Does the rail's message handler tolerate ML-DSA-sized signed envelopes? Are intermediate parsers algorithm-aware or do they truncate on length? | Separate envelope from payload. Sign at a service boundary, not inside the message-format handler. Treat algorithm identifiers as data, not as schema. |
+| **Audit / evidence** | Produces the cryptographic chain of custody supervisors and clients rely on | Are historical signed records still verifiable once the signing algorithm is deprecated? Is there a long-term archival signature plan? | Counter-sign archives with a hash-based primitive (SLH-DSA) for assurance that survives any single algorithm break. Treat the audit chain as a regulated artefact, not as a build by-product. |
+
+The discipline is to make every algorithm choice a configuration value at every layer. The institution that hard-codes RSA-2048 at any of those layers inherits a coordinated end-of-life event when that algorithm falls.
 
 ## What This Means by Bank Type
 
+The exposure profile differs by institution. The directives differ accordingly.
+
 ### Global Banks
 
-Global banks should create platform-level orchestration so that each market, rail, token, and AI capability does not become a separate operating model.
+Global banks operate the largest installed HSM fleets, the longest certificate chains, and the most complex network paths between counterparties. The dominant risk is not algorithm selection — it is the coordination cost of changing algorithms across hundreds of internal services and dozens of external counterparties simultaneously.
+
+The directive is to fund the PQC-capable CA, the crypto-agile transport boundary, and the algorithm-parameterised signing service as 2026 work, before any single rail is retrofitted. The retrofit then becomes a routine production change inside a known framework. Without the framework, every rail retrofit re-litigates the same architectural decisions.
 
 ### Regional Banks
 
-Regional banks should focus on use cases where trust, local market knowledge, and simpler integration beat scale: treasury visibility, fraud prevention, Open Banking payments, and regulated digital money services.
+Regional banks have less algorithmic surface area but proportionally fewer specialist staff. The dominant risk is HSM vendor lock-in to algorithms the vendor has not committed to support.
+
+The directive is to write PQC support — specifically ML-KEM and ML-DSA, with a tested firmware upgrade path — into every HSM contract renewal from 2026 onward. Banks without that clause inherit a forced hardware replacement on the vendor's timetable, not their own.
 
 ### Fintechs and PSPs
 
-Fintechs should reduce complexity for banks rather than adding another isolated rail. The best propositions will bring orchestration, compliance evidence, or data intelligence.
+Payment service providers and fintechs typically sit between a bank counterparty and a merchant or end-user system. Their cryptographic exposure is the API boundary on both sides.
+
+The directive is to publish a hybrid TLS interface — classical plus ML-KEM — on the bank-facing side as table stakes in 2026 commercial conversations. The fintech that arrives with PQC interoperability already demonstrated wins integration cycles against the fintech that has not yet started.
 
 ### Corporate Treasurers
 
-Treasurers should demand measurable improvements: fewer payment repairs, better liquidity visibility, richer reconciliation data, faster settlement, and stronger control over automated decisions.
+Treasurers do not operate cryptographic infrastructure directly. They do consume it — every bank API, every secure file transfer, every signed confirmation depends on the bank's PKI.
 
-## Conclusion
+The directive is to add three questions to every bank RFP in 2026: which PQC algorithms is the bank using today in customer-facing TLS, what is the bank's plan for ML-DSA-signed payment confirmations, and how does the bank intend to preserve verifiability of historical signed records once RSA is deprecated. Banks that cannot answer those questions are signalling something about their underlying engineering readiness.
 
-Post-Quantum Payments Infrastructure is ultimately an architecture question. The institutions that win will not be those with the most pilots or the loudest innovation language. They will be the institutions that connect client workflows, data quality, rail orchestration, embedded compliance, and unit economics into a coherent operating model.
+## What Happens Next
+
+The first wave of PQC deployment in payments will be invisible to end users. Hybrid TLS appears in the handshake, certificate chains grow, HSM signing latency creeps up by a few milliseconds, and the rails continue to operate. That is the success path.
+
+The visible failures will be retrofit-driven: a rail that cannot accept an ML-DSA-signed envelope without truncation, a CA whose CRL distribution point chokes on the new signature weight, a middlebox that fragments hybrid handshakes into reordered ClientHellos. Those failures will land in production through 2027.
+
+The architectural decision in 2026 is whether to fund the replacement infrastructure that makes the retrofit irrelevant, or to fund a sequence of rail-specific fixes that each look cheaper individually and aggregate into a longer, more expensive migration. The bank that picks the first path will run quieter operations through the transition. The bank that picks the second will spend the rest of the decade explaining incident reviews to supervisors.
+
+PQC is not a cryptography problem dressed as an infrastructure problem. It is an infrastructure problem that cryptography happens to have started.
 
 ## Frequently Asked Questions
 
-**Why is this topic urgent in 2026?**
+**Is there a deadline that forces this work?**
 
-Because the relevant infrastructure, regulation, and client-demand signals have converged. What was optional experimentation is now becoming part of the bank operating model.
+The hard regulatory deadlines are jurisdictional. The US [Quantum Computing Cybersecurity Preparedness Act ⧉](https://www.congress.gov/bill/117th-congress/house-bill/7535/text "H.R. 7535") binds federal systems. The [NSA CNSA 2.0 timeline ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "CNSA 2.0") targets 2035 for national-security systems. The [BIS Project Leap ⧉](https://www.bis.org/publ/work1208.htm "BIS Working Paper 1208") publication and the FSB's work programme are pulling that horizon forward for systemic payment infrastructure. HNDL means the operational clock started running well before any of those nominal dates.
 
-**What is the biggest implementation risk?**
+**Why is ML-KEM the recommended key encapsulation rather than something faster?**
 
-The biggest risk is fragmentation: separate teams build separate pilots, each with different data, controls, governance, and economics.
+ML-KEM (the standardised version of CRYSTALS-Kyber) had the strongest combination of small ciphertext and key sizes among the lattice candidates, with mature implementations and side-channel hardening. NIST published it as [FIPS 203 ⧉](https://csrc.nist.gov/pubs/fips/203/final "FIPS 203"). Faster candidates exist but carry larger size or weaker confidence intervals on security parameters.
 
-**What should a bank build first?**
+**Why not use SLH-DSA everywhere instead of ML-DSA?**
 
-A bank should start with the workflow where there is measurable value, such as faster settlement, lower reconciliation cost, fewer investigations, improved fraud prevention, or better liquidity visibility.
+SLH-DSA (the standardised version of SPHINCS+) is hash-based and therefore relies only on hash-function security, which is the most conservative assumption available. Its signatures are 5–20× larger than ML-DSA's. That is acceptable for archival counter-signing, but unworkable for transactional signing where size matters per message. The standard pattern is ML-DSA for production signing and SLH-DSA for archival assurance.
 
-**How should success be measured?**
+**Can a bank just wait until the rails publish PQC profiles?**
 
-Success should be measured by unit economics, resilience evidence, data quality, client adoption, operational-risk reduction, and liquidity or working-capital improvement.
+A bank that waits inherits the migration window the rail publishes, which is shorter than the bank's own internal change cycle. By the time SWIFT, the local RTGS operator, and the relevant CCPs each publish their PQC profile, the migration window will be twelve to twenty-four months. Banks that have not pre-built their CA, transport, and HSM capability will not meet it without operational shortcuts.
+
+**What is the single highest-leverage thing to fund first?**
+
+A PQC-capable subordinate certificate authority, integrated into the existing PKI, that can issue dual-algorithm certificates (RSA plus ML-DSA) without disrupting production trust. That establishes the rotation primitive. Everything else — transport upgrades, HSM partition planning, message-envelope changes — can be scheduled around it.
 
 ## References
 
-- The Finanser, (2026). [Programmable liquidity: five foundations reshaping modern treasury ⧉](https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury "Programmable liquidity").
-- J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Kyriba, (2026). [ISO 20022 migration ⧉](https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/ "ISO 20022 migration").
+- Congress.gov, (2022). [H.R. 7535 — Quantum Computing Cybersecurity Preparedness Act ⧉](https://www.congress.gov/bill/117th-congress/house-bill/7535/text "Quantum Computing Cybersecurity Preparedness Act").
+- NIST, (2024). [FIPS 203 — Module-Lattice-Based Key-Encapsulation Mechanism Standard ⧉](https://csrc.nist.gov/pubs/fips/203/final "FIPS 203").
+- NIST, (2024). [FIPS 204 — Module-Lattice-Based Digital Signature Standard ⧉](https://csrc.nist.gov/pubs/fips/204/final "FIPS 204").
+- NIST, (2024). [FIPS 205 — Stateless Hash-Based Digital Signature Standard ⧉](https://csrc.nist.gov/pubs/fips/205/final "FIPS 205").
+- NSA, (2022). [Commercial National Security Algorithm Suite 2.0 ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "CNSA 2.0").
+- BIS, (2024). [Working Paper No. 1208 — Project Leap: Quantum-proofing the financial system ⧉](https://www.bis.org/publ/work1208.htm "BIS Working Paper 1208").
+- Bank of England (PRA), (2024). [SS1/21 — Operational resilience: Impact tolerances for important business services ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21").</content>
+</invoke>
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>

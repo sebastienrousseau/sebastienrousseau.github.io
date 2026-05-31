@@ -1,30 +1,30 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "后量子支付基础设施示意图：遗留通道、密码敏捷性、ML-KEM、ML-DSA、HSM、证书、API、ISO 20022 与替换路径"
-banner_height: "571"
-banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80"
+banner_alt: "密钥材料漂入深蓝海水——象征针对支付报文的现收割后解密(HNDL)截获;其 RSA 与 ECC 信封将无法在具备密码分析能力的量子计算机面前存活"
+banner_height: "1597"
+banner_width: "2584"
+banner: "https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
-date: "May 31, 2026"
-description: "后量子密码迫使银行作出一道硬性选择：改造遗留支付通道，抑或以具备密码敏捷性的基础设施将其替换。2026 年的命题是架构纪律。"
+date: "2026年5月31日"
+description: "后量子密码学迫使支付通道作出二选一:在从未为 ML-KEM 与 ML-DSA 适配的 SWIFT MT 与 ISO 20022 信封内改造 RSA/ECC,或以密码敏捷的基础设施替换。架构师必须在 HNDL 转为运营损失前决断。"
 format-detection: "telephone=no"
 hreflang: "zh-hans"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026"
-image_alt: "Sebastien Rousseau 黑白肖像"
+image_alt: "Sebastien Rousseau 的黑白肖像"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
-keywords: "后量子支付 2026, post-quantum cryptography, PQC, ML-KEM, ML-DSA, NIST, 支付基础设施, 密码敏捷性, crypto-agility, 现采后解, harvest-now-decrypt-later, HSM, SWIFT MT, ISO 20022, RTGS"
+keywords: "后量子密码学, PQC 支付, 密码敏捷性, 现收割后解密, HNDL, NIST 后量子标准, ML-KEM, ML-DSA, FIPS 203, FIPS 204, 支付通道迁移, ISO 20022 PQC, SWIFT MT 替换, HSM, PKI 崩塌, 运营韧性, Quantum Computing Cybersecurity Preparedness Act"
 language: "zh-hans"
-excerpt: "后量子密码是一道楔子，可能迫使银行替换而非改造遗留支付通道。2026 年的命题是设计纪律——通道是否支持密码敏捷性，证书与 HSM 能否以天而非年的周期轮换，审计链能否在现采后解攻击破解之前完成量子安全升级。"
+excerpt: "现收割后解密把今天受 TLS 保护的支付报文,变成明天被解密后的暴露。ML-KEM 与 ML-DSA 比传统通道当年适配的 RSA 与 ECC 密钥大一个数量级——改造会触发分片、延迟与 HSM 耗尽。2026 年的架构决定,是在监管时钟走完之前打补丁,还是替换。"
 last_reviewed: "2026-05-31"
 layout: "report"
 locale: "zh_CN"
-logo_alt: "Sebastien Rousseau 标志"
+logo_alt: "Sebastien Rousseau 的标志"
 logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -36,23 +36,23 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "后量子支付基础设施 2026：替换而非改造"
+seo_title: "后量子支付基础设施:替换而非改造"
 short_name: "sebastienrousseau"
-subtitle: "对支付基础设施而言，后量子迁移可能成为替换脆弱遗留通道的理由，而非再一次被迫塞进通道的补丁。"
-tags: "post-quantum cryptography, 后量子密码, 支付基础设施, 密码敏捷性, ML-KEM, ML-DSA, 现采后解, ISO 20022"
+subtitle: "ML-KEM 与 ML-DSA 无法干净地装进承载 SWIFT MT 与 ISO 20022 的通道。诚实的工程答案是:改造是一份有效期很短的受控迁移计划,替换才是唯一稳定的归宿。"
+tags: "后量子密码学, PQC, 密码敏捷性, HNDL, ML-KEM, ML-DSA, NIST, 支付基础设施, ISO 20022, SWIFT, HSM, PKI, 运营韧性"
 theme-color: "0, 83, 191"
-title: "后量子支付基础设施：银行为何可能替换而非改造遗留通道"
+title: "后量子支付基础设施:为何银行可能替换而非改造传统通道"
 url: "https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/rss.xml"
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "2026 年后量子支付蓝图——密码敏捷性、遗留通道替换、HSM 约束、ISO 20022 时机与量子安全支付架构。"
+item_description: "ML-KEM 与 ML-DSA 无法干净地装进为 RSA-2048 而建的 SWIFT MT 与 ISO 20022 信封。HNDL 进一步压缩时间表。架构答案是在密码敏捷的通道上替换,而非改造。"
 item_guid: "https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/rss.xml"
 item_link: "https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/rss.xml"
 item_pub_date: "Sun, 31 May 2026 06:06:06 +0000"
-item_title: "后量子支付基础设施：银行为何可能替换而非改造遗留通道"
+item_title: "后量子支付基础设施:为何银行可能替换而非改造传统通道"
 last_build_date: "Sun, 31 May 2026 06:06:06 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 pub_date: "Sun, 31 May 2026 06:06:06 +0000"
@@ -64,143 +64,216 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "后量子支付"
+apple-mobile-web-app-title: "PQC 支付 2026"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
-twitter_description: "2026 年后量子支付蓝图——密码敏捷性、遗留通道替换、HSM 约束、ISO 20022 时机与量子安全支付架构。"
+twitter_description: "ML-KEM 与 ML-DSA 无法干净地装进传统 SWIFT MT 与 ISO 20022 通道。HNDL 关上时间窗。替换,而非改造。"
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-twitter_image_alt: "Sebastien Rousseau 标志"
+twitter_image_alt: "Sebastien Rousseau 的标志"
 twitter_site: "@wwdseb"
-twitter_title: "后量子支付基础设施 2026：替换而非改造"
+twitter_title: "2026 年 PQC 支付基础设施:替换而非改造"
 twitter_url: "https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
-thanks: "Thanks for reading!"
+thanks: "感谢阅读!"
 site_last_updated: "2026-05-31"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 ---
 
-# 后量子支付基础设施：银行为何可能替换而非改造遗留通道
+# 后量子支付基础设施:为何银行可能替换而非改造传统通道
 
 <!-- lead-start -->
+<!-- lead-start: manual -->
 <aside class="post-lead" aria-label="文章摘要">
-<p class="post-lead-tldr"><strong>摘要。</strong>后量子密码（post-quantum cryptography）正把银行长期搁置的战略命题推上桌面：是把 PQC 算法（ML-KEM、ML-DSA）外挂到遗留支付通道上做改造，还是用具备密码敏捷性的基础设施将其替换，使下一次算法轮换以天而非年完成。2026 年多数一级银行的答案是混合方案——在合理处改造，在遗留底座对抗密码敏捷性之处替换。现采后解（harvest-now-decrypt-later）威胁意味着抉择不再是"何时"，而是"先处置哪些工作负载、哪种架构能挺过下一次算法变更、哪条审计链能在对手于 2030 年解密今日截获之前完成量子安全升级"。</p>
+<p class="post-lead-tldr"><strong>要点速览。</strong>承载 SWIFT MT 与 ISO 20022 支付的密码学信封,当年是按 RSA-2048 与 ECC 的尺寸设计的。NIST 标准化的后量子算法——ML-KEM(FIPS 203)与 ML-DSA(FIPS 204)——所产生的公钥与签名,体积可达原来的二十倍。把这些载荷塞回传统通道,会引发数据包分片、HSM 耗尽,以及运营团队无法吸收的延迟尾部。现收割后解密(HNDL)取消了等待的选项。2026 年站得住脚的架构选择,是在密码敏捷的通道上替换,而不是打补丁。</p>
 <p class="post-lead-heading"><strong>核心要点</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>改造是税赋，不是战略。</strong>把 PQC 外挂到遗留 COBOL / HSM / SWIFT MT 栈上只能奏效一次；下一次算法轮换再做一遍，在运营上不可行。</li>
-  <li><strong>密码敏捷性才是真正的产品。</strong>架构命题是"算法能否以天为单位完成轮换"，而非"是否装上 ML-KEM"——把密码敏捷性嵌入底座的银行能挺过下一次轮换；未嵌入者将把迁移成本付两次。</li>
-  <li><strong>现采后解是计时器。</strong>今日截获、2030 年解密的跨境支付报文将泄露客户数据、路由信息与反洗钱信号——审计链必须在此事件演变为 2030 年的难题之前完成量子安全升级。</li>
-  <li><strong>HSM 与证书是瓶颈。</strong>厂商 HSM 的 PQC 支持、证书签发流水线与密钥轮换工具，都必须与算法选择同步。</li>
-  <li><strong>碎片化是大敌。</strong>按通道 / 按地区 / 按厂商分别立项的 PQC 试点，构筑未来十年的运营风险——一次具备可度量证据的统一编排迁移才能胜出。</li>
+  <li><strong>HNDL 是 2026 年的损失,不是 2035 年的风险。</strong>今天被截获的加密支付流量,会在具备密码分析能力的量子计算机(CRQC)抵达当天被解密——监管时钟早已开始走动。</li>
+  <li><strong>体积问题打断传统通道。</strong>ML-KEM-768 公钥 1,184 字节;ML-DSA-65 签名 3,309 字节。SWIFT MT 与许多 ISO 20022 实现,从来不是按这个尺寸设计的。</li>
+  <li><strong>改造的有效期以月计,而不是以年计。</strong>把 RSA 从在产通道里替掉,是为替换计划争取时间——它本身不是替换。</li>
+  <li><strong>密码敏捷性是唯一持久的设计属性。</strong>算法选择必须是配置参数,而不是承重假设。</li>
+  <li><strong>PKI 崩塌是系统性失效模式。</strong>当证书颁发机构的签名算法被攻破,其下所有证书都不再构成证据——这就是要管理的机构层敞口。</li>
 </ul>
+<p class="post-lead-related"><strong>延伸阅读:</strong> <a href="/2026-05-18-quantum-cryptography-standards-developments-2026/">2026 年量子密码学重置:PQC 标准、QKD 保障,以及银行无法再延迟的迁移工作</a>、<a href="/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/">保障账簿:企业金融后量子迁移的董事会级指南</a>、<a href="/2026-05-16-best-cloud-infrastructure-architecture-2026/">2026 年最佳云基础设施架构:面向金融服务的 AI 原生、多云、量子感知方案</a>。</p>
 </aside>
 <!-- lead-end -->
 
-后量子密码迫使银行作出一道硬性选择：改造遗留支付通道，抑或以具备密码敏捷性的基础设施将其替换。2026 年的信号是：量子安全通道已从创新表演迁入银行运营模型，决定性的命题是设计纪律——哪些数据、通道、控制、负债与客户工作流彼此归属（[The Finanser](https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury "Programmable liquidity")）。
+今天在生产中对每一笔批发支付进行认证的密码学原语——RSA、ECDSA、ECDH——都有到期日。美国 [Quantum Computing Cybersecurity Preparedness Act ⧉](https://www.congress.gov/bill/117th-congress/house-bill/7535/text "H.R. 7535") 在 2022 年底把这个到期日写进了联邦采购法。[BIS 工作论文 No. 1208 ⧉](https://www.bis.org/publ/work1208.htm "Project Leap: Quantum-proofing the financial system") 把同一个到期日放进了央行的监管视野。[NIST FIPS 203 ⧉](https://csrc.nist.gov/pubs/fips/203/final "Module-Lattice-Based Key-Encapsulation Mechanism Standard") 与 [FIPS 204 ⧉](https://csrc.nist.gov/pubs/fips/204/final "Module-Lattice-Based Digital Signature Standard") 已在 2024 年 8 月发布了替代算法。
+
+支付基础设施还没消化这意味着什么。
+
+本文是替换而非改造的工程论证。受众是已经理解算法本身、需要决定如何处置 SWIFT MT、ISO 20022 pacs 与 pain 报文、RTGS 接口、HSM 资产,以及其下证书层级的架构师。
 
 ---
 
 > **执行摘要 / 核心要点**
 >
-> - **量子安全通道已成战略议题。**该议题与运营模型、韧性、客户价值与监管证据相绑定，而非单一产品发布（[The Finanser](https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury "Programmable liquidity")）。
-> - **设计原则是密码敏捷性（crypto-agility）。**银行需要的架构，需打通政策、产品、数据、通道选择、风险控制与可度量经济性（[J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")）。
-> - **控制模型须实时运行。**反欺诈、流动性、合规、清算与运营风险决策，必须以工作流速度运行，而非事后补救。
-> - **数据质量转化为商业优势。**结构化数据、交易上下文、审计日志与身份信号，构成自动化与面向客户产品的基底。
-> - **碎片化是大敌。**围绕每条通道、代币、模型或合规要求各自搭建孤立试点的银行，制造未来的运营风险。
-> - **胜出模型是编排。**能够路由、治理、定价、留存证据并解释每一道工作流的机构，将胜过仅采用又一工具的同业（[Kyriba](https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/ "ISO 20022 migration")）。
+> - **现收割后解密(HNDL)是运营层面的威胁。**对手在 2026 年录制加密的支付流量,以待具备密码分析能力的量子计算机(CRQC)出现后解密。被截获的流量包含结算指令、收款人数据,以及长期敏感的认证材料。
+> - **NIST 已经标准化了替代算法。**ML-KEM(FIPS 203)用于密钥封装,ML-DSA(FIPS 204)用于数字签名,二者是默认选项。SLH-DSA(FIPS 205)覆盖无状态、基于哈希的备份。
+> - **体积差异打破传统假设。**公钥与签名比 RSA-2048 对应物大 5–20 倍。这与支付网络的 MTU、MT 报文处理器中的定长缓冲假设,以及已部署 HSM 队列的密码学吞吐量发生冲突。
+> - **混合(传统 + PQC)是迁移载具,不是目的地。**混合 TLS 与混合 X.509 在生产通道被替换期间,买下两到三年的互操作时间。它们不解决底层的容量问题。
+> - **PKI 是承重墙。**当证书颁发机构的签名算法可被伪造,其下每一张证书都失效。银行的机构层敞口在信任链,而不在任何单个端点。
+> - **密码敏捷性是要工程化的架构属性。**算法标识、密钥格式、签名信封与 HSM 分区必须全部可参数化。在编译期被钉死到 RSA 的任何东西都是技术债,而且会同时到期。
 >
 ---
 
-## 为什么 2026 是这个议题转向战略的年份
+## 现收割后解密:取消等待选项的威胁模型
 
-行业已越过采纳阶段。加入一条通道、迁移一份报文、做一次 AI 概念验证或发布一项代币化试点，已不再足够。2026 年的战略优势，来自针对真实工作流编排上述能力，并证明该工作流更安全、更快、更经济、更具韧性，或对客户更有用。
+HNDL 颠倒了通常的密码学时间线。常规风险评估问的是威胁何时落地。HNDL 问的是今天截获的数据何时对对手有用。对支付报文而言——收款人身份、账号、结构化汇款数据、制裁筛查载荷、行内结算指令——敏感窗口以年到几十年计。这类流量大多此刻已经在某个地方被录下。
 
-正因如此，量子安全通道已成董事会议题。同样的压力反复出现：富化的支付数据、实时清算、代币化货币、AI 决策、Open Banking、运营韧性、云集中度与更强的监管证据。分而治之，这些压力造就项目蔓延；合为一体架构治理，则形成运营杠杆（[The Finanser](https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury "Programmable liquidity")，[J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")）。
+[NSA 的 CNSA 2.0 时间表 ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "Commercial National Security Algorithm Suite 2.0") 给国家安全系统的过渡截止设在 2035 年。金融监管者走得更快——[PRA 关于运营韧性的预期 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21") 已把密码敏捷性视为第三方集中度风险。2026 年的预期是,重要支付通道在韧性自评中公布其 PQC 迁移计划。
 
-## 2026 年架构基线
+HNDL 对手今天并不需要 CRQC。对手需要的是:
 
-### 1. 先工作流，后技术
+1. **网络位置。**海底光缆窃听、ISP 层抓取、被入侵的中间盒,都在范围内。批发支付流量集中在为数不多的几条网络路径上。
+2. **存储。**到 2026 年,一拍字节的结构化支付数据已是可管理的归档量。
+3. **耐心。**每条截获报文的捕获成本接近零。收益稍后到达。
 
-银行应从摩擦点切入：被困流动性、清算延迟、对账成本、失败支付、欺诈敞口、可审计性薄弱或客户体验欠佳。技术只有在能消除这些摩擦时才被证成（[The Finanser](https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury "Programmable liquidity")）。
+因此迁移论证不是"量子计算机可能在 2035 年到来",而是"今晚每一条用 RSA-2048 完成密钥交换的 TLS 会话,只要其中的数据仍然敏感,就一直处于暴露状态"。
 
-### 2. 数据作为控制面
+## 体积问题就是工程问题
 
-结构化、受治理且可追溯的数据是基石。没有可用数据，自动化变得脆弱，合规沦为人工。具备可用数据后，银行方能构建路由智能、实时控制与面向客户的分析。([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"))
+公众讨论 PQC 迁移,通常聚焦在算法选择上。更难的问题在维度。
 
-### 3. 跨通道与跨平台编排
+| 原语 | 公钥 | 签名 / 密文 |
+|---|---|---|
+| RSA-2048 | 256 字节 | 256 字节(签名) |
+| ECDSA P-256 | 64 字节 | 64 字节(签名) |
+| ML-KEM-768 | **1,184 字节** | **1,088 字节(密文)** |
+| ML-DSA-65 | **1,952 字节** | **3,309 字节(签名)** |
+| SLH-DSA-128f | 32 字节 | **17,088 字节(签名)** |
 
-架构必须支持多条通道、提供方、身份方案、风险信号与清算资产。路由决策应由成本、速度、终局性、司法辖区、客户偏好、韧性与数据丰度共同决定。
+这些数字直接映射到传统支付基础设施从未为之设计的失效模式:
 
-### 4. 嵌入式合规与证据
+- **路径上的数据包分片。**承载混合 ML-KEM-768 与传统 X25519 的 ClientHello 超过典型的 1,500 字节以太网 MTU。两个支付端点之间的中间盒会对握手进行分片、丢包或重写。失效表现为间歇性 TLS 错误,看上去像瞬态网络噪声。
+- **MT 处理器中的缓冲假设。**许多 SWIFT MT 集成承载的是为 ECDSA 适配尺寸的签名信封。把 ML-DSA 签名放入同一信封,解析器要么截断,要么拒绝。
+- **HSM吞吐量。**已部署 HSM 队列上 ML-DSA 单次签名比 ECDSA 慢 3–10 倍,而这些硬件的密钥/秒预算在日终批处理窗口已经吃紧。
+- **证书链体积。**四级 CA 层级以 ML-DSA 签名重发后,体积从约 6 KB 涨到约 60 KB。到通道的每一次 TLS 握手都要付这笔代价。
 
-合规模型必须原生嵌入工作流。策略即代码、自动化审计日志、运营韧性证据、同意记录与模型治理，需作为执行的一部分产出，而非事后为审计人员重建。
+改造路径是分别处置这些约束——这边加大缓冲,那边换更快的 HSM,中间盒上加分片容忍。这是一座站得住脚的六个月桥梁,但不是一种架构。
 
-### 5. 单位经济性与客户价值
+## 改造对替换:定义整个项目的决定
 
-每项举措都需要商业价值证据。单笔支付成本、单次决策成本、单次调查成本、节省的流动性、避免的人工修复、降低的欺诈损失与客户采纳率，应共同决定规模化决策。
+诚实的表述是:改造是一份有效期很短的受控迁移计划,替换才是唯一稳定的归宿。要决定的是银行先出哪一笔预算,以及改造窗口在变成永久性凑合之前还能开多久。
 
-## 战略架构表
+改造意味着:
 
-| 层级 | 2026 方向 | 银行机会 | 处置不当之风险 |
+- 在现有通道边界终结的混合 TLS(ML-KEM + X25519)。
+- 由具备 PQC 能力的次级证书颁发机构签发双签证书(RSA 为主、ML-DSA 为辅)。
+- 更大的 MT 缓冲,以及在支付 VPN 上更严的 MTU 策略。
+- 在厂商支持 PQC 原语处升级 HSM 固件;不支持处则整体更换 HSM。
+
+这些工作可以做。它不解决底层问题:SWIFT MT 与许多 ISO 20022 实现把密码学信封编码进了一种把算法钉死的报文格式。下一次算法过渡——而且一定会有,无论是 ML-KEM 最终显示出弱点,还是新标准取代它——同一次迁移会在同一条通道上再跑一遍。
+
+替换意味着接受这样一个事实:密码学层不是报文格式的属性。它是报文格式调用的一个可分离信封服务的属性。具体而言:
+
+- 传输安全边界移到一个服务网格或边车,后者终结混合 TLS,并以稳定接口把明文报文交给通道。
+- 报文级签名由一个专用签名服务产生,其算法选择是配置参数,而不是写死的假设。
+- 证书由其签名算法本身可轮换的 CA 颁发。
+- HSM 分区按用途寻址(传输、签名、密钥封装),而不是按报文格式。
+
+替换设计能在下一次算法变更时,无需重新触碰通道。
+
+## 密码敏捷架构,逐层拆解
+
+PQC 迁移真正要紧的基础设施层次,不是"数据、控制、经济"这种适合一般银行叙事的业务层次。要紧的层次是密码学的。
+
+| 层 | 它做什么 | PQC 的问题 | 架构指令 |
 |---|---|---|---|
-| **工作流层** | 客户痛点定义产品 | 清晰的商业论证与采纳 | 技术驱动、无用户的试点 |
-| **数据层** | 结构化、受治理的交易与控制数据 | 自动化、分析与可审计性 | 加速搬运的不良数据 |
-| **通道层** | 在卡组织、A2A、RTGS、稳定币、存款、API、DLT 之间路由 | 优化成本、速度与终局性 | 渠道蔓延与重复控制 |
-| **控制层** | 实时策略、欺诈、制裁、韧性、身份与同意 | 以执行速度管理的风险 | 事后人工合规 |
-| **经济性层** | 可度量的单位成本与客户价值 | 证据导向的规模化 | 缺乏持久回报的创新投入 |
+| **HSM / 密钥管理** | 在硬件隔离下生成、存储和运算密钥材料 | 已部署的 HSM 固件是否支持 ML-KEM、ML-DSA,以及混合密钥封装 API?在同一硬件上,签名吞吐相对 ECDSA 的差距是多少? | 按算法支持和每秒能力盘点每一个 HSM 分区。把没有固件路径、钉死 RSA 的设备下线。在生产切换前建立专门的 PQC 分区。 |
+| **PKI / 证书颁发机构** | 通过 X.509 证书签发、撤销并串接信任链 | CA 今天能否用 ML-DSA 签名?根轮换与链路重发是否有经过测试的流程?CRL 与 OCSP 响应器是否按 ML-DSA 签名体积适配过? | 把 CA 栈视为承重墙。现在就建立具备 PQC 能力的次级 CA。根轮换的时点按最长寿命的证书依赖来定,而不是按便利性。 |
+| **传输 / 网络** | 终结支付端点之间的 TLS、IPsec 与 MACsec | 负载均衡器、WAF 与中间盒路径能否容忍超过传统 MTU 的混合握手?会话恢复票据是否按 PQC 密钥适配过? | 把 TLS 终结移到一条密码敏捷的边界(边车或网格)。提高支付 VPN 的 MTU 策略。在故意诱发分片的条件下完整测试整条路径。 |
+| **应用 / 报文载荷** | 承载 SWIFT MT、ISO 20022 pacs / pain / camt 报文及其密码学信封 | 通道的报文处理器能否容忍 ML-DSA 体积的签名信封?中间解析器是算法感知的,还是按长度截断? | 把信封和载荷分离。在服务边界签名,而不是在报文格式处理器内部签名。把算法标识当作数据,而不是当作 schema。 |
+| **审计 / 证据** | 产出监管者与客户依赖的密码学保管链 | 一旦签名算法被弃用,历史签名记录是否仍然可验证?是否有长期的存档签名计划? | 用基于哈希的原语(SLH-DSA)对存档做存档反签名,以获得能在任何单一算法被攻破后仍然成立的保证。把审计链当作受监管资产,而不是构建副产物。 |
 
-## 各类银行的含义
+纪律是:在每一层把每一个算法选择都做成配置值。任何一层把 RSA-2048 写死的机构,当那个算法倒下时,都会继承一次协调的生命周期终止事件。
 
-### 全球银行
+## 这对不同类型银行的含义
 
-全球银行应建立平台级编排，避免每一个市场、通道、代币与 AI 能力各自演化为独立运营模型。
+敞口画像因机构而异,指令也随之不同。
 
-### 区域银行
+### 全球性银行
 
-区域银行应聚焦于以信任、本地市场知识与更简整合击败规模的用例：财资可视性、欺诈防范、Open Banking 支付与受监管的数字货币服务。
+全球性银行运营着最大的已部署 HSM 队列、最长的证书链,以及对手方之间最复杂的网络路径。主导风险不是算法选择——而是在数百个内部服务和数十个外部对手方之间同时切换算法的协调成本。
 
-### 金融科技公司与 PSP
+指令是:把具备 PQC 能力的 CA、密码敏捷的传输边界,以及算法参数化的签名服务,作为 2026 年的工作来投入,先于任何单一通道的改造完成。改造此后就变成一个已知框架内的常规生产变更。没有这个框架,每一次通道改造都会重新打开同一套架构争论。
 
-金融科技公司应为银行降低复杂度，而非再添一条孤立通道。最佳主张将提供编排、合规证据或数据情报。
+### 区域性银行
 
-### 企业财资负责人
+区域性银行的算法面更小,但专业人手按比例也更少。主导风险是 HSM 厂商把银行锁定在自己尚未承诺支持的算法上。
 
-财资负责人应要求可度量的改进：更少的支付修复、更佳的流动性可视性、更富化的对账数据、更快的清算，以及对自动化决策的更强控制。
+指令是:从 2026 年起,把 PQC 支持——具体说是 ML-KEM 与 ML-DSA,以及经过测试的固件升级路径——写进每一份 HSM 合同续约。没有这一条款的银行,会按厂商的时间表(而不是自己的时间表)被迫硬件更换。
 
-## 结论
+### 金融科技与 PSP
 
-后量子支付基础设施归根到底是一道架构命题。胜出的机构不会是试点最多或创新口号最响者，而是把客户工作流、数据质量、通道编排、嵌入式合规与单位经济性整合为连贯运营模型的机构。
+支付服务商与金融科技通常坐在银行对手方与商户或终端用户系统之间。其密码学敞口在两侧的 API 边界。
+
+指令是:把混合 TLS 接口——传统加 ML-KEM——发布在面向银行那一侧,作为 2026 年商务对话的入场券。带着已经演示过 PQC 互操作性的金融科技,会在集成周期中赢过尚未起步者。
+
+### 企业财资主管
+
+财资主管不直接运营密码学基础设施。他们消费它——每一个银行 API、每一次安全文件传输、每一份签名确认,都依赖银行的 PKI。
+
+指令是:在 2026 年的每一份银行 RFP 里加三个问题:银行今天在面客 TLS 上用的是哪些 PQC 算法、对 ML-DSA 签名的支付确认有何计划、在 RSA 被弃用之后如何保住历史签名记录的可验证性。无法回答这些问题的银行,正在透露其底层工程准备度的信号。
+
+## 接下来会发生什么
+
+支付场景中 PQC 部署的第一波,终端用户看不见。握手里出现混合 TLS,证书链变长,HSM 签名延迟上抬几毫秒,通道继续运作。这是成功路径。
+
+可见的失效将来自改造:无法接收 ML-DSA 签名信封而出现截断的通道、CRL 分发点被新签名体积噎住的 CA、把混合握手分片为乱序 ClientHello 的中间盒。这些失效会贯穿整个 2027 年在生产里落地。
+
+2026 年的架构决定是:要投入让改造变得无关紧要的替换基础设施,还是投入一连串看起来各自更便宜、合起来却更长、更贵的通道级修补。选第一条路的银行,在过渡期里运营更安静。选第二条路的银行,会用这十年余下的时间向监管者解释事件复盘。
+
+PQC 不是一个伪装成基础设施问题的密码学问题。它是一个由密码学触发的基础设施问题。
 
 ## 常见问题
 
-**为何此议题在 2026 年具备紧迫性？**
+**有没有强制这项工作的截止日期?**
 
-因为相关基础设施、监管与客户需求信号已经汇合。曾属可选的实验，正成为银行运营模型的组成部分。
+硬性监管截止日期按辖区而定。美国的 [Quantum Computing Cybersecurity Preparedness Act ⧉](https://www.congress.gov/bill/117th-congress/house-bill/7535/text "H.R. 7535") 约束联邦系统。[NSA CNSA 2.0 时间表 ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "CNSA 2.0") 把国家安全系统的目标设在 2035 年。[BIS Project Leap ⧉](https://www.bis.org/publ/work1208.htm "BIS Working Paper 1208") 的发表以及 FSB 的工作议程,正在为系统性支付基础设施把这个时间线往前拉。HNDL 意味着运营时钟早在任何名义日期之前就已经走起。
 
-**最大的实施风险是什么？**
+**为什么推荐 ML-KEM 作为密钥封装,而不是更快的方案?**
 
-最大的风险是碎片化：不同团队各自搭建试点，数据、控制、治理与经济性互不一致。
+ML-KEM(CRYSTALS-Kyber 的标准化版本)在格基候选中,密文与密钥体积小、实现成熟度高、侧信道防护到位的组合最强。NIST 已将其作为 [FIPS 203 ⧉](https://csrc.nist.gov/pubs/fips/203/final "FIPS 203") 发布。更快的候选确实存在,但要么体积更大,要么安全参数的置信区间更弱。
 
-**银行应先构建什么？**
+**为什么不到处用 SLH-DSA 替代 ML-DSA?**
 
-银行应从可度量价值的工作流切入，例如更快的清算、更低的对账成本、更少的调查、改进的欺诈防范或更佳的流动性可视性。
+SLH-DSA(SPHINCS+ 的标准化版本)是基于哈希的,因此只依赖哈希函数的安全性,这是可得的最保守假设。其签名比 ML-DSA 大 5–20 倍。这对存档反签名可以接受,但对每条报文都计较体积的交易签名不可行。标准模式是:生产签名用 ML-DSA,存档保证用 SLH-DSA。
 
-**应如何衡量成功？**
+**银行可不可以等到通道发布 PQC 规约?**
 
-成功应以单位经济性、韧性证据、数据质量、客户采纳率、运营风险下降，以及流动性或营运资本改善来衡量。
+等待的银行会继承通道发布的迁移窗口,而它比银行自己的内部变更周期更短。等到 SWIFT、本地 RTGS 运营方,以及相关 CCP 各自发布 PQC 规约时,迁移窗口会是 12 到 24 个月。没有预先建好 CA、传输与 HSM 能力的银行,只能靠运营层面的捷径勉强赶上。
+
+**最该先投入的、杠杆最高的一件事是什么?**
+
+一座具备 PQC 能力、纳入现有 PKI、能够在不打断生产信任的前提下签发双算法证书(RSA 加 ML-DSA)的次级证书颁发机构。它确立了轮换原语。其他工作——传输升级、HSM 分区规划、报文信封变更——都可以围绕它排程。
 
 ## 参考资料
 
-- The Finanser, (2026). [Programmable liquidity: five foundations reshaping modern treasury ⧉](https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury "Programmable liquidity").
-- J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Kyriba, (2026). [ISO 20022 migration ⧉](https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/ "ISO 20022 migration").
+- Congress.gov,(2022)。[H.R. 7535 — Quantum Computing Cybersecurity Preparedness Act ⧉](https://www.congress.gov/bill/117th-congress/house-bill/7535/text "Quantum Computing Cybersecurity Preparedness Act")。
+- NIST,(2024)。[FIPS 203 — Module-Lattice-Based Key-Encapsulation Mechanism Standard ⧉](https://csrc.nist.gov/pubs/fips/203/final "FIPS 203")。
+- NIST,(2024)。[FIPS 204 — Module-Lattice-Based Digital Signature Standard ⧉](https://csrc.nist.gov/pubs/fips/204/final "FIPS 204")。
+- NIST,(2024)。[FIPS 205 — Stateless Hash-Based Digital Signature Standard ⧉](https://csrc.nist.gov/pubs/fips/205/final "FIPS 205")。
+- NSA,(2022)。[Commercial National Security Algorithm Suite 2.0 ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "CNSA 2.0")。
+- BIS,(2024)。[Working Paper No. 1208 — Project Leap: Quantum-proofing the financial system ⧉](https://www.bis.org/publ/work1208.htm "BIS Working Paper 1208")。
+- Bank of England(PRA),(2024)。[SS1/21 — Operational resilience: Impact tolerances for important business services ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21")。
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家，撰写关于应用型人工智能、支付基础设施、令牌化货币、ISO 20022、后量子安全、云原生金融服务与受监管数字市场的文章。</span><span class="author-credentials">在 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin 集团积累二十余年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家,撰写关于应用型人工智能、ISO 20022 迁移、金融服务后量子密码学,以及批发支付结构性转型的文章。</span><span class="author-credentials">在 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin 集团积累二十余年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最近审阅 <time datetime="2026-05-31">2026-05-31</time>。</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">延伸阅读</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026" class="related-media" aria-label="2026 年量子密码学重置:PQC 标准、QKD 保障,以及银行无法再延迟的迁移工作" tabindex="-1"><img alt="2026 年量子安全密码学迁移图:展示 NIST PQC 标准、混合协议工作、QKD 保障、密码敏捷性,以及银行数据风险分层" src="https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026">2026 年量子密码学重置:PQC 标准、QKD 保障,以及银行无法再延迟的迁移工作</a></h3><p><time datetime="2026-05-18">2026-05-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance" class="related-media" aria-label="保障账簿:企业金融后量子迁移的董事会级指南" tabindex="-1"><img alt="后量子密码学迁移路线图示意图——企业银行基础设施从 RSA 过渡到 ML-KEM 与 ML-DSA" src="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance">保障账簿:企业金融后量子迁移的董事会级指南</a></h3><p><time datetime="2026-05-14">2026-05-14</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026" class="related-media" aria-label="2026 年最佳云基础设施架构:面向金融服务的 AI 原生、多云、量子感知方案" tabindex="-1"><img alt="2026 年六支柱云架构示意图——AI 原生、多云、无服务器、边缘、DevSecOps,以及可持续设计" src="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026">2026 年最佳云基础设施架构:面向金融服务的 AI 原生、多云、量子感知方案</a></h3><p><time datetime="2026-05-14">2026-05-14</time></p></footer></article>
+</div>
+</aside>
 <!-- enrich-end -->
+</content>
+</invoke>

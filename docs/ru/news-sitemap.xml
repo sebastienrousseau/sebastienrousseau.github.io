@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>ru-RU</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
-    <news:title>Цифровые активы в 2026: инфраструктурный переход, который банки не могут откладывать</news:title>
-    <news:keywords>цифровые активы 2026, токенизированные реальные активы, стейблкоины банки, токенизированные депозиты, кастоди цифровых активов, DLT в банках, инфраструктура расчётов, мобильность обеспечения, программируемые деньги, стратегия банка по цифровым активам</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ru-RU</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T06:06:06+00:00</news:publication_date>
-    <news:title>Постквантовая платёжная инфраструктура: почему банки выбирают замену, а не модернизацию</news:title>
-    <news:keywords>постквантовая криптография, PQC, ML-KEM, ML-DSA, NIST, HSM, ISO 20022, SWIFT MT, RTGS, криптоагильность, собрать сейчас расшифровать позже, harvest-now-decrypt-later, платёжная инфраструктура 2026</news:keywords>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Постквантовая платёжная инфраструктура: почему банки заменят, а не доработают устаревшие рельсы</news:title>
+    <news:keywords>постквантовая криптография, PQC платежи, криптоагильность, собирай-сейчас-расшифровывай-позже, HNDL, постквантовые стандарты NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, миграция платёжных рельсов, ISO 20022 PQC, замена SWIFT MT, HSM, обрушение PKI, операционная устойчивость, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Цифровые активы в 2026: инфраструктурный переход, который банки не могут откладывать</news:title>
+    <news:keywords>цифровые активы 2026, токенизированные реальные активы, стейблкоины банки, токенизированные депозиты, кастоди цифровых активов, DLT в банках, инфраструктура расчётов, мобильность обеспечения, программируемые деньги, стратегия банка по цифровым активам</news:keywords>
   </news:news>
 </url>
 <url>

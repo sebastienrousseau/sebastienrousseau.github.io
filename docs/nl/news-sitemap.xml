@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>nl-NL</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
-    <news:title>DORA, EU AI Act en datasoevereiniteit: de compliance-stack 2026 voor banken</news:title>
-    <news:keywords>DORA 2026, EU AI Act 2026, datasoevereiniteit banken, operationele veerkracht, concentratierisico cloud, AI-compliance financiële sector, hoog-risico AI</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>nl-NL</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T06:06:06+00:00</news:publication_date>
-    <news:title>Post-kwantum betalingsinfrastructuur: waarom banken legacy-rails eerder vervangen dan retrofitten</news:title>
-    <news:keywords>post-kwantumcryptografie, PQC banken, ML-KEM, ML-DSA, betalingsrails, crypto-wendbaarheid, harvest-now-decrypt-later, HSM, ISO 20022, SWIFT MT, RTGS, NIST, algoritme-rotatie</news:keywords>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Post-quantum betaalinfrastructuur: waarom banken bestaande rails eerder vervangen dan aanpassen</news:title>
+    <news:keywords>post-quantum-cryptografie, PQC betalingen, crypto-flexibiliteit, oogst-nu-ontsleutel-later, HNDL, NIST post-quantum-standaarden, ML-KEM, ML-DSA, FIPS 203, FIPS 204, migratie betaalrails, ISO 20022 PQC, SWIFT MT-vervanging, HSM, PKI-instorting, operationele veerkracht, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl-NL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>DORA, EU AI Act en datasoevereiniteit: de compliance-stack 2026 voor banken</news:title>
+    <news:keywords>DORA 2026, EU AI Act 2026, datasoevereiniteit banken, operationele veerkracht, concentratierisico cloud, AI-compliance financiële sector, hoog-risico AI</news:keywords>
   </news:news>
 </url>
 <url>

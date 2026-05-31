@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>sv-SE</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
-    <news:title>Digitala tillgångar 2026: infrastrukturövergången bankerna inte kan skjuta upp</news:title>
-    <news:keywords>digitala tillgångar 2026, tokeniserade reala tillgångar, stablecoins bank, tokeniserade insättningar, förvaring digitala tillgångar, DLT bank, avvecklingsinfrastruktur, säkerhetsmobilitet, programmerbara pengar, bankstrategi digitala tillgångar</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>sv-SE</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T06:06:06+00:00</news:publication_date>
-    <news:title>Post-kvant-betalningsinfrastruktur: varför banker ersätter snarare än uppgraderar</news:title>
-    <news:keywords>post-kvantkryptografi 2026, PQC bank, ML-KEM, ML-DSA, betalningsrails, kryptoagilitet, HNDL, skörda nu dekryptera senare, ISO 20022, HSM, SWIFT MT, RTGS</news:keywords>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Postkvantinfrastruktur för betalningar: varför banker kan välja ersättning framför anpassning av äldre räls</news:title>
+    <news:keywords>postkvantkryptografi, PQC-betalningar, kryptoagilitet, samla-nu-dekryptera-senare, HNDL, NIST postkvantstandarder, ML-KEM, ML-DSA, FIPS 203, FIPS 204, migration av betalningsräls, ISO 20022 PQC, ersättning av SWIFT MT, HSM, PKI-kollaps, operativ motståndskraft, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv-SE</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Digitala tillgångar 2026: infrastrukturövergången bankerna inte kan skjuta upp</news:title>
+    <news:keywords>digitala tillgångar 2026, tokeniserade reala tillgångar, stablecoins bank, tokeniserade insättningar, förvaring digitala tillgångar, DLT bank, avvecklingsinfrastruktur, säkerhetsmobilitet, programmerbara pengar, bankstrategi digitala tillgångar</news:keywords>
   </news:news>
 </url>
 <url>

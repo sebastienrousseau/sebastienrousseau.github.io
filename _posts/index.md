@@ -236,13 +236,13 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html" title="Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails">
-<img alt="Post-quantum payments infrastructure diagram showing legacy rails, crypto-agility, ML-KEM, ML-DSA, HSMs, certificates, APIs, ISO 20022, and replacement pathways" src="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Cryptographic key material drifting into deep blue water — symbolising harvest-now-decrypt-later capture of payment messages whose RSA and ECC envelopes will not survive a cryptanalytically relevant quantum computer" src="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Post-Quantum Cryptography · Payments Infrastructure · Crypto-Agility</span>
+<span class="newsroom-eyebrow">Post-Quantum Cryptography · PQC · Crypto-Agility</span>
 <h3><a href="/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html">Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-31">May 31, 2026</time></p>
-<p class="newsroom-excerpt">Post-quantum cryptography is the wedge that may force banks to replace rather than retrofit legacy payment rails. The 2026 question is design discipline — does the rail support crypto-agility, can certificates and HSMs be rotated in days not years, and is the audit chain quantum-safe before harvest-now-decrypt-later attacks compromise it.</p>
+<p class="newsroom-excerpt">Harvest-now-decrypt-later turns today's TLS-protected payment messages into tomorrow's decrypted exposure. ML-KEM and ML-DSA are an order of magnitude larger than the RSA and ECC keys legacy rails were sized for — retrofit triggers fragmentation, latency, and HSM exhaustion. The 2026 architectural decision is whether to patch or replace before the regulatory clock runs out.</p>
 </div>
 </article>
 

@@ -1,11 +1,11 @@
 {
-  "keywords": "KyberLib, CRYSTALS-Kyber, post-kuantum, Rust, kriptografi, KEM, FIPS 203, açık kaynak",
-  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
-  "locale": "tr_TR",
+  "subtitle": "CRYSTALS-Kyber'ın güvenli ve performanslı Rust uygulaması",
+  "date": "November 28, 2023",
   "banner_alt": "Bir kalkanın soyut görselleştirmesi",
-  "description": "KyberLib, kuantum sonrası anahtar kapsülleme için CRYSTALS-Kyber'ın sağlam bir Rust uygulamasıdır.",
+  "locale": "tr_TR",
+  "keywords": "KyberLib, CRYSTALS-Kyber, post-kuantum, Rust, kriptografi, KEM, FIPS 203, açık kaynak",
   "language": "tr-TR",
   "title": "KyberLib: kuantum tehditlerine karşı Rust destekli kalkan",
-  "date": "November 28, 2023",
-  "subtitle": "CRYSTALS-Kyber'ın güvenli ve performanslı Rust uygulaması"
+  "description": "KyberLib, kuantum sonrası anahtar kapsülleme için CRYSTALS-Kyber'ın sağlam bir Rust uygulamasıdır.",
+  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
 }

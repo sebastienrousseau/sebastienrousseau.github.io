@@ -8,9 +8,9 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>cs-CZ</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
-    <news:title>Postkvantová platební infrastruktura: proč banky raději nahradí starší rails než je modernizují</news:title>
-    <news:keywords>postkvantová kryptografie, PQC bankovnictví, ML-KEM, ML-DSA, platební infrastruktura, kryptografická agilita, HNDL, harvest-now-decrypt-later, ISO 20022, SWIFT MT, HSM, NIST, RTGS</news:keywords>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
+    <news:title>Postkvantová infrastruktura plateb: proč banky nahradí, místo aby upravovaly starší kolejnice</news:title>
+    <news:keywords>postkvantová kryptografie, PQC platby, krypto-agilita, sklízej nyní dešifruj později, HNDL, NIST postkvantové standardy, ML-KEM, ML-DSA, FIPS 203, FIPS 204, migrace platebních kolejnic, ISO 20022 PQC, náhrada SWIFT MT, HSM, kolaps PKI, provozní odolnost, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
   </news:news>
 </url>
 <url>
@@ -20,7 +20,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>cs-CZ</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
     <news:title>Velkoobchodní digitální trhy v UK: tokenizované gilty, vypořádání a nová role Champion</news:title>
     <news:keywords>velkoobchodní digitální trhy UK 2026, Chris Woolard, tokenizované gilty, tokenizované velkoobchodní finance, Wholesale Digital Markets Champion, tokenizace UK, vypořádání, BoE DSS, Project Guardian, SDX, Project Agorá, atomické vypořádání</news:keywords>
   </news:news>
@@ -32,7 +32,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>cs-CZ</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T06:21:45+00:00</news:publication_date>
+    <news:publication_date>2026-05-31T10:06:33+00:00</news:publication_date>
     <news:title>Digitální aktiva 2026: infrastrukturní přechod, který banky nemohou odkládat</news:title>
     <news:keywords>digitální aktiva 2026, tokenizovaná reálná aktiva, stablecoiny banky, tokenizované vklady, úschova digitálních aktiv, DLT bankovnictví, infrastruktura vypořádání, mobilita kolaterálu, programovatelné peníze, strategie bank digitální aktiva</news:keywords>
   </news:news>

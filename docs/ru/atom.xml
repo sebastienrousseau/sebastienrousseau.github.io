@@ -4,23 +4,23 @@
   <link href="https://sebastienrousseau.com/ru/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ru/"/>
   <id>https://sebastienrousseau.com/ru/</id>
-  <updated>2026-05-31T06:21:45+00:00</updated>
+  <updated>2026-05-31T10:06:33+00:00</updated>
+  <entry>
+    <title>Постквантовая платёжная инфраструктура: почему банки заменят, а не доработают устаревшие рельсы</title>
+    <link href="https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
+    <id>https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
+    <updated>2026-05-31T10:06:33+00:00</updated>
+    <published>2026-05-31T10:06:33+00:00</published>
+    <summary>Постквантовая криптография ставит платёжные рельсы перед бинарным выбором: доработка RSA/ECC в конвертах SWIFT MT и ISO 20022, не рассчитанных на ML-KEM и ML-DSA, либо замена на криптоагильную инфраструктуру. Архитекторы должны решить до того, как HNDL станет операционной потерей.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Цифровые активы в 2026: инфраструктурный переход, который банки не могут откладывать</title>
     <link href="https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
     <id>https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
-    <updated>2026-05-31T06:21:45+00:00</updated>
-    <published>2026-05-31T06:21:45+00:00</published>
+    <updated>2026-05-31T10:06:33+00:00</updated>
+    <published>2026-05-31T10:06:33+00:00</published>
     <summary>Цифровые активы перестали быть ставкой на инновацию. Это вопрос архитектуры расчётов, хранения и баланса. Стратегическая задача банков — проектировать инфраструктуру в условиях структурной неопределённости.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Постквантовая платёжная инфраструктура: почему банки выбирают замену, а не модернизацию</title>
-    <link href="https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
-    <id>https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-05-31T06:06:06+00:00</updated>
-    <published>2026-05-31T06:06:06+00:00</published>
-    <summary>Постквантовая криптография ставит перед банками жёсткий выбор: модернизация унаследованных платёжных каналов или их замена криптоагильной инфраструктурой 2026.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

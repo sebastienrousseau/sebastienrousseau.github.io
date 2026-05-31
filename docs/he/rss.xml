@@ -6,14 +6,40 @@
     <description>מאמרים בעברית: AI יישומי, תשלומי ISO 20022, קריפטוגרפיה פוסט-קוונטית, וטרנספורמציה של תשלומי סיטונאות.</description>
     <atom:link href="https://sebastienrousseau.com/he/rss.xml" rel="self" type="application/rss+xml"/>
     <language>he-IL</language>
-    <lastBuildDate>Sun, 31 May 2026 06:21:45 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 10:06:33 +0000</lastBuildDate>
     <copyright>© זכויות יוצרים 2007 - 2026 - Sebastien Rousseau. כל הזכויות שמורות.</copyright>
+    <item>
+      <title>תשתית תשלומים פוסט-קוונטית: מדוע בנקים יחליפו ולא יתאימו ערוצים מורשתיים</title>
+      <link>https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>קריפטוגרפיה פוסט-קוונטית כופה החלטה בינארית על ערוצי תשלומים: התאמת RSA/ECC בתוך מעטפות SWIFT MT ו-ISO 20022 שמעולם לא נמדדו ל-ML-KEM ו-ML-DSA, או החלפה בתשתית גמישה קריפטוגרפית. ארכיטקטים חייבים להחליט לפני ש-HNDL הופך להפסד תפעולי.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Sun, 31 May 2026 10:06:33 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>קריפטוגרפיה פוסט-קוונטית</category>
+      <category>תשלומי PQC</category>
+      <category>גמישות קריפטוגרפית</category>
+      <category>איסוף-עכשיו-פענוח-מאוחר-יותר</category>
+      <category>HNDL</category>
+      <category>תקני NIST פוסט-קוונטיים</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>הגירת ערוצי תשלומים</category>
+      <category>ISO 20022 PQC</category>
+      <category>החלפת SWIFT MT</category>
+      <category>HSM</category>
+      <category>קריסת PKI</category>
+      <category>חוסן תפעולי</category>
+      <category>Quantum Computing Cybersecurity Preparedness Act</category>
+    </item>
     <item>
       <title>נכסים דיגיטליים 2026: מעבר תשתית שהבנקים לא יכולים לדחות</title>
       <link>https://sebastienrousseau.com/he/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>נכסים דיגיטליים אינם עוד הימור על חדשנות. הם שאלת ארכיטקטורה של סליקה, משמורת ומאזן. המשימה האסטרטגית של הבנקים היא תכנון תשתית באי-ודאות מבנית.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Sun, 31 May 2026 06:21:45 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 10:06:33 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>נכסים דיגיטליים 2026</category>
@@ -26,31 +52,6 @@
       <category>ניידות בטחונות</category>
       <category>כסף ניתן לתכנות</category>
       <category>אסטרטגיית בנקים בנכסים דיגיטליים</category>
-    </item>
-    <item>
-      <title>תשתית תשלומים פוסט-קוונטית: מדוע בנקים יחליפו ולא ישדרגו ערוצי מורשת</title>
-      <link>https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
-      <description>קריפטוגרפיה פוסט-קוונטית מציבה בפני הדירקטוריון שאלת תשתית: לשדרג ערוצי תשלום מורשת עם ML-KEM/ML-DSA או להחליפם בארכיטקטורה גמישה קריפטוגרפית.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
-      <category>תשתית תשלומים פוסט-קוונטית 2026</category>
-      <category>קריפטוגרפיה פוסט-קוונטית</category>
-      <category>PQC בנקאות</category>
-      <category>ML-KEM</category>
-      <category>ML-DSA</category>
-      <category>NIST</category>
-      <category>גמישות קריפטוגרפית</category>
-      <category>HSM</category>
-      <category>אסוף עכשיו פענח אחר כך</category>
-      <category>harvest-now-decrypt-later</category>
-      <category>SWIFT MT</category>
-      <category>ISO 20022</category>
-      <category>RTGS</category>
-      <category>סבב אלגוריתמים</category>
-      <category>שרשרת ביקורת</category>
-      <category>החלפת ערוצי תשלום</category>
     </item>
     <item>
       <title>שווקים דיגיטליים סיטונאיים בבריטניה: גילט מתורמזים, סליקה ותפקיד האלוף החדש</title>

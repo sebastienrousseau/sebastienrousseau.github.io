@@ -4,14 +4,14 @@
   <link href="https://sebastienrousseau.com/bn/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/bn/"/>
   <id>https://sebastienrousseau.com/bn/</id>
-  <updated>2026-05-31T06:21:45+00:00</updated>
+  <updated>2026-05-31T10:06:33+00:00</updated>
   <entry>
-    <title>পোস্ট-কোয়ান্টাম পেমেন্ট পরিকাঠামো: কেন ব্যাংক লিগ্যাসি রেল আপগ্রেড নয়, প্রতিস্থাপন করতে পারে</title>
+    <title>পোস্ট-কোয়ান্টাম পেমেন্ট পরিকাঠামো: কেন ব্যাংক লিগ্যাসি রেল অভিযোজন না করে প্রতিস্থাপন করতে পারে</title>
     <link href="https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
     <id>https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-05-31T06:06:06+00:00</updated>
-    <published>2026-05-31T06:06:06+00:00</published>
-    <summary>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি ব্যাংকের সামনে কঠিন প্রশ্ন তুলেছে: লিগ্যাসি পেমেন্ট রেল আপগ্রেড, না ক্রিপ্টো-চটপটে পরিকাঠামো দিয়ে প্রতিস্থাপন করবেন।</summary>
+    <updated>2026-05-31T10:06:33+00:00</updated>
+    <published>2026-05-31T10:06:33+00:00</published>
+    <summary>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি পেমেন্ট রেলে দুটি পথ রাখে: SWIFT MT ও ISO 20022 এনভেলপে RSA/ECC অভিযোজন, অথবা ক্রিপ্টো-চটপটে পরিকাঠামোয় প্রতিস্থাপন। HNDL অপারেশনাল ক্ষতি হওয়ার আগেই স্থপতিদের সিদ্ধান্ত নিতে হবে।</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

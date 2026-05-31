@@ -1,11 +1,11 @@
 {
-  "language": "id-ID",
-  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
-  "description": "Temukan RustLogs (RLG), pustaka logging fleksibel untuk Rust dengan format log terstruktur, logging asinkron, dan berbagai opsi kustomisasi yang lengkap.",
-  "locale": "id_ID",
-  "keywords": "pustaka logging Rust, logging Rust asinkron, format log terstruktur, debugging aplikasi Rust, logging Rust yang dapat dikustomisasi, alat pengembangan Rust, fitur RustLogs RLG, logging Rust efisien, integrasi RustLogs, dokumentasi RustLogs",
   "subtitle": "Sederhanakan Alur Kerja Logging Rust Anda",
+  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
+  "keywords": "pustaka logging Rust, logging Rust asinkron, format log terstruktur, debugging aplikasi Rust, logging Rust yang dapat dikustomisasi, alat pengembangan Rust, fitur RustLogs RLG, logging Rust efisien, integrasi RustLogs, dokumentasi RustLogs",
   "date": "Mar 08, 2024",
+  "description": "Temukan RustLogs (RLG), pustaka logging fleksibel untuk Rust dengan format log terstruktur, logging asinkron, dan berbagai opsi kustomisasi yang lengkap.",
   "title": "[ID DRAFT] RustLogs (RLG): Structured Logging Library for Rust",
-  "banner_alt": "Banner untuk RustLogs (RLG)"
+  "banner_alt": "Banner untuk RustLogs (RLG)",
+  "language": "id-ID",
+  "locale": "id_ID"
 }

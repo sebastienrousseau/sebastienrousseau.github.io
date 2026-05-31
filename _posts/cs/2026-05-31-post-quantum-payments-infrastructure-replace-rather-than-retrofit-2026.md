@@ -1,15 +1,15 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Diagram postkvantové platební infrastruktury zobrazující starší rails, kryptografickou agilitu, ML-KEM, ML-DSA, HSM, certifikáty, API, ISO 20022 a cesty k nahrazení"
-banner_height: "571"
-banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80"
+banner_alt: "Kryptografický klíčový materiál unášený do tmavě modré vody — symbol zachycení platebních zpráv ve stylu sklízej-nyní-dešifruj-později, jejichž obálky RSA a ECC nepřežijí kryptanalyticky relevantní kvantový počítač"
+banner_height: "1597"
+banner_width: "2584"
+banner: "https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
-copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. Všechna práva vyhrazena."
+copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "31. května 2026"
-description: "Postkvantová kryptografie staví banky před zásadní otázku: modernizovat starší platební rails, nebo je nahradit kryptograficky agilní infrastrukturou."
+description: "Postkvantová kryptografie staví platební kolejnice před binární volbu: upravit RSA/ECC v obálkách SWIFT MT a ISO 20022, které nebyly dimenzovány pro ML-KEM a ML-DSA, nebo nahradit krypto-agilní infrastrukturou, než HNDL přejde v provozní ztrátu."
 format-detection: "telephone=no"
 hreflang: "cs"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -18,13 +18,13 @@ image_alt: "Černobílý portrét Sebastiena Rousseaua"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
-keywords: "postkvantová kryptografie, PQC bankovnictví, ML-KEM, ML-DSA, platební infrastruktura, kryptografická agilita, HNDL, harvest-now-decrypt-later, ISO 20022, SWIFT MT, HSM, NIST, RTGS"
+keywords: "postkvantová kryptografie, PQC platby, krypto-agilita, sklízej nyní dešifruj později, HNDL, NIST postkvantové standardy, ML-KEM, ML-DSA, FIPS 203, FIPS 204, migrace platebních kolejnic, ISO 20022 PQC, náhrada SWIFT MT, HSM, kolaps PKI, provozní odolnost, Quantum Computing Cybersecurity Preparedness Act"
 language: "cs"
-excerpt: "Postkvantová kryptografie je klínem, který může donutit banky nahradit starší platební rails namísto jejich modernizace. Otázkou roku 2026 je projektová disciplína — podporují rails kryptografickou agilitu, lze certifikáty a HSM rotovat ve dnech namísto let, a je auditní řetězec kvantově odolný dříve, než jej kompromitují útoky harvest-now-decrypt-later."
+excerpt: "Sklízej-nyní-dešifruj-později mění dnešní platební zprávy chráněné TLS v zítřejší dešifrovanou expozici. ML-KEM a ML-DSA jsou o řád větší než klíče RSA a ECC, pro něž byly starší kolejnice dimenzovány — úprava vyvolává fragmentaci, latenci a vyčerpání HSM. Architektonická volba roku 2026 zní, zda záplatovat, nebo nahradit, než vyprší regulační lhůta."
 last_reviewed: "2026-05-31"
 layout: "report"
 locale: "cs_CZ"
-logo_alt: "Logo Sebastiena Rousseaua"
+logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -36,23 +36,23 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "Postkvantová platební infrastruktura 2026"
+seo_title: "Postkvantová infrastruktura plateb: nahradit, neupravovat"
 short_name: "sebastienrousseau"
-subtitle: "Pro platební infrastrukturu se postkvantová migrace může stát důvodem k nahrazení křehkých starších rails namísto další záplaty, která je do nich vtěsnána."
-tags: "postkvantová kryptografie, platební infrastruktura, kryptografická agilita, ML-KEM, ML-DSA, HNDL, ISO 20022, SWIFT MT, HSM, NIST, RTGS"
+subtitle: "ML-KEM a ML-DSA se nehodí čistě do kolejnic přenášejících SWIFT MT a ISO 20022. Poctivá inženýrská odpověď zní, že úprava je řízený migrační plán s krátkou trvanlivostí a nahrazení je jediný stabilní cíl."
+tags: "postkvantová kryptografie, PQC, krypto-agilita, HNDL, ML-KEM, ML-DSA, NIST, platební infrastruktura, ISO 20022, SWIFT, HSM, PKI, provozní odolnost"
 theme-color: "0, 83, 191"
-title: "Postkvantová platební infrastruktura: proč banky raději nahradí starší rails než je modernizují"
+title: "Postkvantová infrastruktura plateb: proč banky nahradí, místo aby upravovaly starší kolejnice"
 url: "https://sebastienrousseau.com/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/rss.xml"
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "Postkvantový plán platebního systému pro rok 2026 — kryptografická agilita, nahrazení starších rails, omezení HSM, načasování ISO 20022 a kvantově odolná platební architektura."
+item_description: "ML-KEM a ML-DSA se nevejdou do obálek SWIFT MT a ISO 20022 dimenzovaných pro RSA-2048. HNDL zkracuje harmonogram. Architektonickou odpovědí je nahrazení krypto-agilními kolejnicemi, nikoli úprava."
 item_guid: "https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/rss.xml"
 item_link: "https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/rss.xml"
 item_pub_date: "Sun, 31 May 2026 06:06:06 +0000"
-item_title: "Postkvantová platební infrastruktura: proč banky raději nahradí starší rails než je modernizují"
+item_title: "Postkvantová infrastruktura plateb: proč banky nahradí, místo aby upravovaly starší kolejnice"
 last_build_date: "Sun, 31 May 2026 06:06:06 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 pub_date: "Sun, 31 May 2026 06:06:06 +0000"
@@ -64,143 +64,215 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "PQC platby"
+apple-mobile-web-app-title: "PQC platby 2026"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
-twitter_description: "Postkvantový plán platebního systému pro rok 2026 — kryptografická agilita, nahrazení starších rails, omezení HSM, načasování ISO 20022 a kvantově odolná platební architektura."
+twitter_description: "ML-KEM a ML-DSA se nevejdou do starších kolejnic SWIFT MT a ISO 20022. HNDL zavírá okno. Nahradit, neupravovat."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-twitter_image_alt: "Logo Sebastiena Rousseaua"
+twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
-twitter_title: "Postkvantová platební infrastruktura 2026"
+twitter_title: "PQC infrastruktura plateb 2026: nahradit, neupravovat"
 twitter_url: "https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
-author_location: "Londýn, Velká Británie"
-thanks: "Děkujeme za přečtení!"
+author_location: "London, UK"
+thanks: "Thanks for reading!"
 site_last_updated: "2026-05-31"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 ---
 
-# Postkvantová platební infrastruktura: proč banky raději nahradí starší rails než je modernizují
+# Postkvantová infrastruktura plateb: proč banky nahradí, místo aby upravovaly starší kolejnice
 
 <!-- lead-start -->
+<!-- lead-start: manual -->
 <aside class="post-lead" aria-label="Shrnutí článku">
-<p class="post-lead-tldr"><strong>Shrnutí.</strong> Postkvantová kryptografie nutí banky odpovědět na strategickou otázku, kterou dlouhodobě odkládají: modernizovat starší platební rails přilepením PQC algoritmů (ML-KEM, ML-DSA), nebo tyto rails nahradit kryptograficky agilní infrastrukturou navrženou tak, aby další rotace algoritmů trvala dny, nikoli roky. Odpovědí roku 2026 je pro většinu bank úrovně Tier-1 hybrid: modernizovat tam, kde to dává smysl, a nahradit tam, kde starší substrát brání kryptografické agilitě. Hrozba harvest-now-decrypt-later znamená, že rozhodnutí již není „kdy" — ale „které pracovní zátěže nejprve, která architektura přežije příští změnu algoritmu a který auditní řetězec bude kvantově odolný dříve, než protivníci v roce 2030 dešifrují dnešní zachycená data."</p>
-<p class="post-lead-heading"><strong>Klíčové poznatky</strong></p>
+<p class="post-lead-tldr"><strong>Stručně.</strong> Kryptografické obálky, které přenášejí platby SWIFT MT a ISO 20022, byly dimenzovány pro RSA-2048 a ECC. Standardizované postkvantové algoritmy NIST — ML-KEM (FIPS 203) a ML-DSA (FIPS 204) — produkují veřejné klíče a podpisy až dvacetkrát větší. Vkládání takových obsahů do starších kolejnic vyvolává fragmentaci paketů, vyčerpání HSM a chvosty latence, které provozní týmy neabsorbují. Sklízej-nyní-dešifruj-později odstraňuje možnost vyčkávat. Obhajitelnou architektonickou volbou v roce 2026 je nahrazení krypto-agilními kolejnicemi, nikoli záplatování.</p>
+<p class="post-lead-heading"><strong>Klíčové body</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Modernizace je daň, nikoli strategie.</strong> Přilepení PQC na starší zásobníky COBOL/HSM/SWIFT MT funguje jednou; opakovat tento postup pro další rotaci algoritmů je provozně neproveditelné.</li>
-  <li><strong>Kryptografická agilita je skutečným produktem.</strong> Architektonická otázka zní „dokážeme rotovat algoritmy ve dnech?", nikoli „instalovali jsme ML-KEM?" — banky, které kryptografickou agilitu zapracují do návrhu, zvládnou další rotaci; ty, které tak neučiní, zaplatí migrační náklady dvakrát.</li>
-  <li><strong>Harvest-now-decrypt-later odměřuje čas.</strong> Přeshraniční platební zprávy zachycené dnes a dešifrované v roce 2030 odhalí zákaznická data, směrovací informace, AML signály — auditní řetězec musí být kvantově odolný dříve, než se z toho stane problém roku 2030.</li>
-  <li><strong>HSM a certifikáty jsou úzkým hrdlem.</strong> Podpora PQC ze strany dodavatelů HSM, kanály vydávání certifikátů a nástroje pro rotaci klíčů musí držet krok se zvoleným algoritmem.</li>
-  <li><strong>Fragmentace je nepřítel.</strong> Pilotní projekty PQC podle jednotlivých rails, regionů či dodavatelů vytvářejí provozní riziko na další dekádu — vítězí jediná orchestrovaná migrace s měřitelnými důkazy.</li>
+  <li><strong>HNDL je ztráta roku 2026, ne riziko roku 2035.</strong> Šifrovaný platební provoz zachycený dnes se dešifruje v okamžiku, kdy přijde kryptanalyticky relevantní kvantový počítač — a regulační hodiny už tikají.</li>
+  <li><strong>Problém velikosti láme starší kolejnice.</strong> Veřejné klíče ML-KEM-768 mají 1 184 bajtů; podpisy ML-DSA-65 mají 3 309 bajtů. SWIFT MT a řada implementací ISO 20022 na to nikdy nebyly dimenzovány.</li>
+  <li><strong>Úprava má trvanlivost v měsících, ne letech.</strong> Vypnutí RSA z běžících kolejnic kupuje čas na program nahrazení — samo nahrazením není.</li>
+  <li><strong>Krypto-agilita je jedinou trvanlivou návrhovou vlastností.</strong> Volba algoritmu musí být konfiguračním parametrem, nikoli nosným předpokladem.</li>
+  <li><strong>Kolaps PKI je systémový režim selhání.</strong> Jakmile je podpisový algoritmus certifikační autority prolomen, každý certifikát pod ní přestává být důkazem — to je institucionální expozice, kterou je třeba řídit.</li>
 </ul>
+<p class="post-lead-related"><strong>Související čtení:</strong> <a href="/2026-05-18-quantum-cryptography-standards-developments-2026/">Kvantový kryptografický reset v roce 2026: standardy PQC, záruky QKD a migrační práce, kterou banky nemohou odložit</a>, <a href="/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/">Zabezpečení účetní knihy: průvodce postkvantovou migrací podnikových financí na úrovni představenstva</a>, <a href="/2026-05-16-best-cloud-infrastructure-architecture-2026/">Nejlepší cloudová architektura pro rok 2026: AI-nativní, vícecloudový a kvantově uvědomělý plán pro finanční služby</a>.</p>
 </aside>
 <!-- lead-end -->
 
-Postkvantová kryptografie staví banky před zásadní otázku: modernizovat starší platební rails, nebo je nahradit kryptograficky agilní infrastrukturou. Signál roku 2026 ukazuje, že kvantově odolné rails se posunuly z inovačního divadla do bankovního provozního modelu, kde rozhodující otázkou je projektová disciplína: která data, rails, kontroly, závazky a klientské workflow patří k sobě ([The Finanser](https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury "Programovatelná likvidita")).
+Kryptografické primitivy, které dnes v produkci autentizují každou velkoobchodní platbu — RSA, ECDSA, ECDH — mají datum expirace. Americký [Quantum Computing Cybersecurity Preparedness Act ⧉](https://www.congress.gov/bill/117th-congress/house-bill/7535/text "H.R. 7535") zapsal toto datum do federálního zákona o veřejných zakázkách na konci roku 2022. [Pracovní dokument BIS č. 1208 ⧉](https://www.bis.org/publ/work1208.htm "Project Leap: Quantum-proofing the financial system") zařadil stejné datum do dohledového rámce centrálních bank. [NIST FIPS 203 ⧉](https://csrc.nist.gov/pubs/fips/203/final "Module-Lattice-Based Key-Encapsulation Mechanism Standard") a [FIPS 204 ⧉](https://csrc.nist.gov/pubs/fips/204/final "Module-Lattice-Based Digital Signature Standard") publikovaly náhrady v srpnu 2024.
+
+Platební infrastruktura ještě nevstřebala, co to znamená.
+
+Tento článek je inženýrský argument pro nahrazení namísto úpravy. Je psán pro architekty, kteří už rozumějí algoritmům a musí rozhodnout, co dělat se SWIFT MT, zprávami pacs a pain v ISO 20022, rozhraními RTGS, parky HSM a certifikačními hierarchiemi pod tím vším.
 
 ---
 
-> **Manažerské shrnutí / Klíčové poznatky**
+> **Manažerské shrnutí / Klíčové body**
 >
-> - **Kvantově odolné rails jsou nyní strategickým tématem.** Téma je provázáno s provozním modelem, odolností, hodnotou pro klienta a regulatorními důkazy, nikoli s úzce pojatým spuštěním produktu ([The Finanser](https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury "Programovatelná likvidita")).
-> - **Návrhovým principem je kryptografická agilita.** Banky potřebují architekturu, která propojuje politiku, produkt, data, volbu rails, řízení rizik a měřitelnou ekonomiku ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: pět trendů pohánějících platby v roce 2026")).
-> - **Kontrolní model musí běžet v reálném čase.** Rozhodnutí o podvodech, likviditě, compliance, vypořádání a provozním riziku musí běžet rychlostí workflow, nikoli až po události.
-> - **Kvalita dat se stává obchodní výhodou.** Strukturovaná data, kontext transakcí, auditní logy a signály identity se stávají substrátem pro automatizaci i produkty směřující ke klientům.
-> - **Fragmentace je nepřítel.** Banka, která staví izolované piloty kolem každého rails, tokenu, modelu či compliance požadavku, vytváří budoucí provozní riziko.
-> - **Vítězným modelem je orchestrace.** Instituce, která dokáže workflow směrovat, řídit, oceňovat, doložit důkazy a vysvětlit, předčí tu, která jen přijímá další nástroj ([Kyriba](https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/ "Migrace ISO 20022")).
+> - **Sklízej-nyní-dešifruj-později (HNDL) je provozní hrozba.** Protivníci v roce 2026 zaznamenávají šifrovaný platební provoz, aby jej dešifrovali, jakmile bude existovat kryptanalyticky relevantní kvantový počítač (CRQC). Zachycený provoz obsahuje pokyny k zúčtování, údaje o příjemcích a autentizační materiál s dlouhou dobou citlivosti.
+> - **NIST standardizoval náhrady.** ML-KEM (FIPS 203) pro zapouzdření klíčů a ML-DSA (FIPS 204) pro digitální podpisy jsou výchozí volby. SLH-DSA (FIPS 205) pokrývá bezstavovou hashovou rezervu.
+> - **Rozdíl ve velikosti boří starší předpoklady.** Veřejné klíče a podpisy jsou 5–20× větší než ekvivalenty RSA-2048. To koliduje s MTU na platebních sítích, s předpoklady pevných bufferů v obslužných modulech zpráv MT a s kryptografickou propustností nainstalovaných flotil HSM.
+> - **Hybridní (klasické + PQC) je migrační prostředek, nikoli cíl.** Hybridní TLS a hybridní X.509 kupují dva až tři roky interoperability, zatímco produkční kolejnice se nahrazují. Neřeší podkladový problém kapacity.
+> - **PKI je nosná zeď.** Certifikační autorita, jejíž podpisový algoritmus se stane padělatelným, znehodnotí každý certifikát pod sebou. Institucionální expozicí banky je řetězec důvěry, nikoli jednotlivý koncový bod.
+> - **Krypto-agilita je architektonickou vlastností, na kterou je třeba navrhovat.** Identifikátory algoritmů, formáty klíčů, podpisové obálky a oddíly HSM musí být parametrizovatelné. Cokoli připnuté na RSA při kompilaci je technický dluh, který doroste splatnosti současně se všemi ostatními.
 >
 ---
 
-## Proč se rok 2026 stal strategickým mezníkem
+## Sklízej nyní, dešifruj později: model hrozby, který odstraňuje možnost vyčkávat
 
-Odvětví se posunulo za fázi adopce. Už nestačí připojit se k rails, migrovat zprávu, spustit AI proof of concept nebo oznámit tokenizační pilot. V roce 2026 vychází strategická výhoda z orchestrace těchto schopností nad reálným workflow a z prokazování, že je workflow bezpečnější, rychlejší, levnější, odolnější či pro klienta užitečnější.
+HNDL obrací obvyklou kryptografickou časovou osu. Konvenční hodnocení rizik se ptá, kdy se hrozba materializuje. HNDL se ptá, kdy se data zachycená dnes stanou užitečnými pro protivníka. U platebních zpráv — identity příjemců, čísla účtů, strukturované údaje o platbě, sankčně-screeningové obsahy, vnitrobankovní pokyny k zúčtování — je okno citlivosti v letech až desetiletích. Většina tohoto provozu je právě teď někde zaznamenávána.
 
-Proto jsou kvantově odolné rails dnes tématem pro představenstvo. Stejné tlaky se vracejí: bohatší platební data, vypořádání v reálném čase, tokenizované peníze, rozhodování s pomocí AI, Open Banking, provozní odolnost, koncentrace v cloudu a silnější regulatorní důkazy. Pokud se s nimi pracuje odděleně, vytvářejí programovou roztříštěnost. Pokud jsou pojaty jako jedna architektura, vytvářejí provozní páku ([The Finanser](https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury "Programovatelná likvidita"), [J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: pět trendů pohánějících platby v roce 2026")).
+[Časový plán NSA CNSA 2.0 ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "Commercial National Security Algorithm Suite 2.0") dává systémům národní bezpečnosti čas do roku 2035 na dokončení přechodu. Finanční dohledové orgány postupují rychleji — [očekávání PRA k provozní odolnosti ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21") nahlížejí na krypto-agilitu jako na koncentrační riziko třetí strany. Očekává se, že v roce 2026 zveřejní každá významná platební kolejnice svůj plán PQC migrace v rámci výkazu o odolnosti.
 
-## Architektonická základna pro rok 2026
+Protivník HNDL nepotřebuje CRQC dnes. Potřebuje:
 
-### 1. Workflow první, technologie druhá
+1. **Síťovou pozici.** Odposlechy podmořských kabelů, zachytávání na úrovni ISP a kompromitované middleboxy spadají do rozsahu. Velkoobchodní platební provoz se koncentruje do malého počtu síťových cest.
+2. **Úložiště.** Petabajt strukturovaných platebních dat je v roce 2026 zvládnutelný archiv.
+3. **Trpělivost.** Zachycení nestojí nic na jednu zachycenou zprávu. Výnos přichází později.
 
-Banka by měla začít u tření: uvázlá likvidita, zpoždění vypořádání, náklady na rekonciliaci, neúspěšné platby, expozice vůči podvodům, slabá auditovatelnost nebo špatná klientská zkušenost. Technologie je oprávněná pouze tam, kde toto tření odstraňuje ([The Finanser](https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury "Programovatelná likvidita")).
+Migrační argument tedy nezní „kvantové počítače mohou dorazit v roce 2035“. Zní „jakákoli relace TLS, která dnes večer skončí s výměnou klíčů RSA-2048, je vystavena tak dlouho, dokud zůstávají data v ní citlivá“.
 
-### 2. Data jako kontrolní rovina
+## Problém velikosti je inženýrský problém
 
-Strukturovaná, řízená a sledovatelná data jsou základem. Bez použitelných dat se automatizace stává křehkou a compliance manuální. S použitelnými daty mohou banky vytvářet směrovací inteligenci, kontroly v reálném čase a analytiku směřující ke klientům ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: pět trendů pohánějících platby v roce 2026")).
+Veřejná diskuse o PQC migraci se obvykle soustředí na výběr algoritmu. Obtížnější problém je dimenzionální.
 
-### 3. Orchestrace napříč rails a platformami
+| Primitivum | Veřejný klíč | Podpis / šifrovaný text |
+|---|---|---|
+| RSA-2048 | 256 bajtů | 256 bajtů (podpis) |
+| ECDSA P-256 | 64 bajtů | 64 bajtů (podpis) |
+| ML-KEM-768 | **1 184 bajtů** | **1 088 bajtů (šifrovaný text)** |
+| ML-DSA-65 | **1 952 bajtů** | **3 309 bajtů (podpis)** |
+| SLH-DSA-128f | 32 bajtů | **17 088 bajtů (podpis)** |
 
-Architektura musí podporovat více rails, poskytovatelů, schémat identity, rizikových signálů a vypořádacích aktiv. Rozhodnutí o směrování by mělo zohledňovat náklady, rychlost, finalitu, jurisdikci, preference klienta, odolnost a bohatost dat.
+Tato čísla se mapují přímo na režimy selhání, na něž starší platební infrastruktura nikdy nebyla navržena:
 
-### 4. Vestavěná compliance a důkazy
+- **Fragmentace paketů na cestě.** ClientHello nesoucí hybridní ML-KEM-768 spolu s klasickým X25519 překračuje typickou ethernetovou MTU 1 500 bajtů. Middleboxy mezi dvěma platebními koncovými body handshake fragmentují, zahazují nebo přepisují. Selhání se projevuje jako přerušované chyby TLS, které vypadají jako přechodný síťový šum.
+- **Předpoklady bufferů v handlerech MT.** Mnohé integrace SWIFT MT nesou podepsané obálky dimenzované pro ECDSA. Vložte do téže obálky podpis ML-DSA a parser buď ořeže, nebo odmítne.
+- **Propustnost HSM.** Podepisování ML-DSA na nainstalované flotile HSM je 3–10× pomalejší než ECDSA na operaci, na hardwaru, jehož rozpočet klíčů za sekundu už v oknech závěrečného denního zpracování běží na hranici.
+- **Hmotnost řetězce certifikátů.** Čtyřúrovňová hierarchie CA znovu vydaná s podpisy ML-DSA naroste z přibližně 6 KB na přibližně 60 KB. Za to platí každý handshake TLS na kolejnici.
 
-Compliance model musí být nativní pro workflow. Politika jako kód, automatizované auditní logy, důkazy o provozní odolnosti, záznamy o souhlasech a governance modelů musí vznikat jako součást provádění, nikoli být znovu sestavovány pro auditory dodatečně.
+Cesta úpravy spočívá v individuálním třídění těchto omezení — větší buffery zde, rychlejší HSM tam, tolerance fragmentace v middleboxech. To je obhajitelný šestiměsíční most. Není to architektura.
 
-### 5. Jednotková ekonomika a hodnota pro klienta
+## Úprava versus nahrazení: rozhodnutí, které definuje program
 
-Každá iniciativa potřebuje důkaz obchodní hodnoty. Náklady na platbu, na rozhodnutí, na vyšetřování, ušetřená likvidita, vyhnuté ruční opravy, snížené ztráty z podvodů a adopce klientů by měly určovat rozhodnutí o škálování.
+Poctivý rámec zní, že úprava je řízený migrační plán s krátkou trvanlivostí a nahrazení je jediný stabilní cíl. Rozhodnutí spočívá v tom, který z nich banka financuje jako první a jak dlouho zůstane okno úpravy otevřené, než se z něj stane trvalá záplata.
 
-## Tabulka strategické architektury
+Úprava znamená:
 
-| Vrstva | Směr pro rok 2026 | Bankovní příležitost | Riziko při špatném řízení |
+- Hybridní TLS (ML-KEM + X25519) ukončené na hranici stávající kolejnice.
+- Duálně podepsané certifikáty (RSA primárně, ML-DSA sekundárně) vydané z podřízené CA schopné PQC.
+- Větší buffery MT a přísnější politiku MTU na platebních VPN.
+- Aktualizace firmwaru HSM tam, kde dodavatelé podporují PQC primitiva; plnou náhradu HSM tam, kde ne.
+
+Tu práci lze odvést. Neřeší podkladový problém, jímž je to, že SWIFT MT a řada implementací ISO 20022 kódují kryptografickou obálku uvnitř formátu zprávy, který připíná algoritmus. Další algoritmická tranzice — a ta nastane, až ML-KEM časem ukáže slabinu nebo jej nahradí nový standard — proběhne na stejných kolejnicích stejnou migrací znovu.
+
+Nahrazení znamená přijmout, že kryptografická vrstva není vlastností formátu zprávy. Je vlastností oddělitelné služby obálky, kterou formát zprávy volá. Konkrétně:
+
+- Hranice bezpečnosti přenosu se přesouvá do service mesh nebo sidecaru, který ukončuje hybridní TLS a předává kolejnici otevřenou zprávu se stabilním rozhraním.
+- Podpisy na úrovni zprávy produkuje vyhrazená podpisová služba, jejíž volba algoritmu je konfiguračním parametrem, nikoli pevně zapsaným předpokladem.
+- Certifikáty se vydávají z CA, jejíž podpisový algoritmus je sám rotovatelný.
+- Oddíly HSM se adresují podle účelu (přenos, podpis, zapouzdření klíčů), nikoli podle formátu zprávy.
+
+Návrh nahrazení přežije příští změnu algoritmu bez zásahu do kolejnice.
+
+## Krypto-agilní architektura, vrstva po vrstvě
+
+Infrastrukturní vrstvy, na nichž záleží pro PQC migraci, nejsou byznysové vrstvy „data, řízení, ekonomika“, které vyhovují obecnému bankovnímu příběhu. Vrstvy, na nichž záleží, jsou kryptografické.
+
+| Vrstva | Co dělá | Otázka pro PQC | Architektonická direktiva |
 |---|---|---|---|
-| **Vrstva workflow** | Bolavé místo klienta definuje produkt | Jasný obchodní případ a adopce | Piloty vedené technologií bez uživatelů |
-| **Datová vrstva** | Strukturovaná, řízená transakční a kontrolní data | Automatizace, analytika a auditovatelnost | Špatná data rychleji přesunutá |
-| **Vrstva rails** | Směrování napříč kartami, A2A, RTGS, stablecoiny, vklady, API, DLT | Optimalizované náklady, rychlost a finalita | Kanálová roztříštěnost a duplicitní kontroly |
-| **Kontrolní vrstva** | Politika, podvody, sankce, odolnost, identita a souhlasy v reálném čase | Riziko řízené rychlostí provádění | Manuální compliance po události |
-| **Ekonomická vrstva** | Měřené jednotkové náklady a hodnota pro klienta | Škálování řízené důkazy | Inovační výdaje bez trvalého výnosu |
+| **HSM / správa klíčů** | Generuje, ukládá a operuje s klíčovým materiálem pod hardwarovou izolací | Podporuje nainstalovaný firmware HSM ML-KEM, ML-DSA a hybridní API pro zapouzdření klíčů? Jaký je rozdíl v propustnosti podepisování oproti ECDSA na stejném hardwaru? | Inventarizujte každý oddíl HSM podle podpory algoritmů a kapacity za sekundu. Vyřaďte cokoli, co připíná na RSA bez cesty k firmwaru. Postavte vyhrazené PQC oddíly před produkčním přepnutím. |
+| **PKI / certifikační autorita** | Vydává, revokuje a řetězí důvěru prostřednictvím certifikátů X.509 | Dokáže CA dnes podepisovat s ML-DSA? Existuje otestovaný proces rotace kořene a opětovného vydání řetězce? Jsou respondery CRL a OCSP dimenzovány pro hmotnost podpisu ML-DSA? | Zacházejte se zásobou CA jako s nosnou zdí. Postavte podřízenou CA schopnou PQC nyní. Načasujte rotaci kořene podle nejdéle žijící závislosti certifikátu, nikoli podle pohodlí. |
+| **Přenos / síť** | Ukončuje TLS, IPsec a MACsec mezi platebními koncovými body | Tolerují load balancer, WAF a cesta middleboxů hybridní handshakes překračující starší MTU? Jsou tikety obnovení relace dimenzovány na PQC klíče? | Přesuňte ukončování TLS na krypto-agilní hranici (sidecar nebo mesh). Zvyšte politiku MTU na platebních VPN. Otestujte celou cestu s úmyslně vyvolanou fragmentací. |
+| **Aplikace / obsah zprávy** | Nese zprávy SWIFT MT, ISO 20022 pacs / pain / camt a jejich kryptografické obálky | Toleruje handler zpráv kolejnice podepsané obálky velikosti ML-DSA? Jsou meziparsery vědomé algoritmu, nebo ořezávají podle délky? | Oddělte obálku od obsahu. Podepisujte na hranici služby, ne uvnitř handleru formátu zprávy. Zacházejte s identifikátory algoritmů jako s daty, ne jako se schématem. |
+| **Audit / důkazy** | Produkuje kryptografický řetězec důvěry, na který spoléhají dohledové orgány a klienti | Lze historické podepsané záznamy ověřit i po deprekaci podpisového algoritmu? Existuje plán pro dlouhodobý archivní podpis? | Protipodepisujte archivy hashovou primitivou (SLH-DSA) pro záruku, která přežije prolomení libovolného jednotlivého algoritmu. Zacházejte s auditním řetězcem jako s regulovaným artefaktem, nikoli s vedlejším produktem buildu. |
+
+Disciplínou je učinit z každé volby algoritmu konfigurační hodnotu na každé vrstvě. Instituce, která pevně zakóduje RSA-2048 v kterékoli z těchto vrstev, zdědí koordinovanou událost konce života ve chvíli, kdy onen algoritmus padne.
 
 ## Co to znamená podle typu banky
 
+Expoziční profil se liší podle instituce. Direktivy se liší odpovídajícím způsobem.
+
 ### Globální banky
 
-Globální banky by měly vytvořit orchestraci na úrovni platformy, aby se každý trh, rails, token a AI schopnost nestal samostatným provozním modelem.
+Globální banky provozují největší nainstalované flotily HSM, nejdelší řetězce certifikátů a nejsložitější síťové cesty mezi protistranami. Dominantním rizikem není výběr algoritmu — je to koordinační náklad změny algoritmů napříč stovkami interních služeb a desítkami externích protistran současně.
+
+Direktivou je financovat CA schopnou PQC, krypto-agilní přenosovou hranici a algoritmově parametrizovanou podpisovou službu jako práci roku 2026, dříve než se upraví jakákoli jednotlivá kolejnice. Úprava se pak stává rutinní produkční změnou v rámci známého rámce. Bez rámce každá úprava kolejnice znovu otevírá stejná architektonická rozhodnutí.
 
 ### Regionální banky
 
-Regionální banky by se měly soustředit na případy použití, kde důvěra, znalost lokálního trhu a jednodušší integrace předčí měřítko: viditelnost treasury, prevence podvodů, platby v rámci Open Bankingu a regulované digitální peněžní služby.
+Regionální banky mají menší algoritmickou plochu, ale poměrně méně specializovaného personálu. Dominantním rizikem je závislost na dodavateli HSM u algoritmů, jejichž podporu dodavatel nedeklaroval.
 
-### Fintech a PSP
+Direktivou je zapsat podporu PQC — konkrétně ML-KEM a ML-DSA s otestovanou cestou aktualizace firmwaru — do každého obnovení smlouvy o HSM od roku 2026. Banky bez této doložky zdědí vynucenou výměnu hardwaru podle harmonogramu dodavatele, nikoli vlastního.
 
-Fintech by měl snižovat složitost pro banky, nikoli přidávat další izolovaný rails. Nejlepší nabídky přinesou orchestraci, důkazy compliance nebo datovou inteligenci.
+### Fintechy a PSP
 
-### Firemní treasury
+Poskytovatelé platebních služeb a fintechy obvykle sedí mezi protistranou-bankou a obchodníkem nebo systémem koncového uživatele. Jejich kryptografickou expozicí je API hranice na obou stranách.
 
-Treasury by mělo požadovat měřitelná zlepšení: méně oprav plateb, lepší viditelnost likvidity, bohatší rekonciliační data, rychlejší vypořádání a silnější kontrolu nad automatizovanými rozhodnutími.
+Direktivou je publikovat hybridní TLS rozhraní — klasické plus ML-KEM — na straně k bance jako základní podmínku obchodních jednání v roce 2026. Fintech, který přichází s již demonstrovanou PQC interoperabilitou, vyhrává integrační cykly proti fintechu, který ještě nezačal.
 
-## Závěr
+### Podnikoví treasurerové
 
-Postkvantová platební infrastruktura je v konečném důsledku otázkou architektury. Vítězné instituce nebudou ty s nejvíce piloty ani s nejhlasitějším inovačním slovníkem. Budou to instituce, které propojí klientská workflow, kvalitu dat, orchestraci rails, vestavěnou compliance a jednotkovou ekonomiku do koherentního provozního modelu.
+Treasurerové neprovozují kryptografickou infrastrukturu přímo. Spotřebovávají ji — každé bankovní API, každý zabezpečený přenos souboru, každé podepsané potvrzení závisí na PKI banky.
 
-## Často kladené otázky
+Direktivou je přidat do každého bankovního RFP v roce 2026 tři otázky: které PQC algoritmy banka dnes používá v zákaznicky orientovaném TLS, jaký je plán banky pro ML-DSA-podepsaná platební potvrzení a jak banka zamýšlí zachovat ověřitelnost historických podepsaných záznamů po deprekaci RSA. Banky, které tyto otázky neumějí zodpovědět, signalizují něco o své podkladové inženýrské připravenosti.
 
-**Proč je toto téma naléhavé v roce 2026?**
+## Co bude dál
 
-Protože se sblížily relevantní signály infrastruktury, regulace i poptávky klientů. Co bylo volitelným experimentováním, se nyní stává součástí bankovního provozního modelu.
+První vlna nasazení PQC v platbách bude pro koncové uživatele neviditelná. V handshake se objeví hybridní TLS, řetězce certifikátů narostou, latence podepisování HSM se zvýší o pár milisekund a kolejnice pojedou dál. To je úspěšná cesta.
 
-**Jaké je největší implementační riziko?**
+Viditelná selhání budou vyvolaná úpravou: kolejnice, která bez ořezu neakceptuje podepsanou obálku ML-DSA; CA, jejíž distribuční bod CRL se zalkne novou hmotností podpisu; middlebox, který fragmentuje hybridní handshakes do přeřazených ClientHello. Tato selhání budou dopadat do produkce v průběhu roku 2027.
 
-Největším rizikem je fragmentace: samostatné týmy staví samostatné piloty s odlišnými daty, kontrolami, governance a ekonomikou.
+Architektonické rozhodnutí roku 2026 zní, zda financovat infrastrukturu nahrazení, která činí úpravu irelevantní, nebo financovat sled oprav specifických pro jednotlivé kolejnice, které individuálně vypadají levněji a v součtu se sčítají v delší a dražší migraci. Banka, která zvolí první cestu, povede přes přechod tišší provoz. Banka, která zvolí druhou, stráví zbytek dekády vysvětlováním incidentních přehledů dohledovým orgánům.
 
-**Co by banka měla postavit jako první?**
+PQC není kryptografický problém převlečený za infrastrukturní. Je to infrastrukturní problém, který kryptografie shodou okolností spustila.
 
-Banka by měla začít u workflow, kde existuje měřitelná hodnota, například rychlejší vypořádání, nižší náklady na rekonciliaci, méně vyšetřování, lepší prevence podvodů nebo lepší viditelnost likvidity.
+## Časté otázky
 
-**Jak měřit úspěch?**
+**Existuje termín, který tuto práci vynucuje?**
 
-Úspěch by se měl měřit jednotkovou ekonomikou, důkazy o odolnosti, kvalitou dat, adopcí klientů, snížením provozního rizika a zlepšením likvidity či pracovního kapitálu.
+Tvrdé regulatorní termíny jsou jurisdikční. Americký [Quantum Computing Cybersecurity Preparedness Act ⧉](https://www.congress.gov/bill/117th-congress/house-bill/7535/text "H.R. 7535") váže federální systémy. [Časový plán NSA CNSA 2.0 ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "CNSA 2.0") cílí na rok 2035 u systémů národní bezpečnosti. Publikace [BIS Project Leap ⧉](https://www.bis.org/publ/work1208.htm "BIS Working Paper 1208") a pracovní program FSB přitahují tento horizont blíž u systémové platební infrastruktury. HNDL znamená, že provozní hodiny začaly tikat dávno před kterýmkoli z těchto nominálních dat.
+
+**Proč je ML-KEM doporučeným zapouzdřením klíčů, nikoli něco rychlejšího?**
+
+ML-KEM (standardizovaná verze CRYSTALS-Kyber) měl mezi mřížkovými kandidáty nejlepší kombinaci malého šifrovaného textu a velikostí klíčů, se zralými implementacemi a postranními protiopatřeními. NIST jej publikoval jako [FIPS 203 ⧉](https://csrc.nist.gov/pubs/fips/203/final "FIPS 203"). Rychlejší kandidáti existují, ale nesou větší velikost nebo slabší intervaly spolehlivosti u bezpečnostních parametrů.
+
+**Proč nepoužít SLH-DSA všude místo ML-DSA?**
+
+SLH-DSA (standardizovaná verze SPHINCS+) je hashová a opírá se tudíž pouze o bezpečnost hashové funkce, což je nejkonzervativnější dostupný předpoklad. Její podpisy jsou 5–20× větší než podpisy ML-DSA. To je přijatelné pro archivní protipodpis, ale neúnosné pro transakční podpis, kde velikost na zprávu rozhoduje. Standardním vzorem je ML-DSA pro produkční podpis a SLH-DSA pro archivní záruku.
+
+**Může banka prostě počkat, až kolejnice publikují PQC profily?**
+
+Banka, která čeká, zdědí migrační okno, jež kolejnice publikuje, a to je kratší než vlastní interní cyklus změn banky. Než SWIFT, místní operátor RTGS a relevantní CCP každý publikuje svůj PQC profil, bude migrační okno dvanáct až dvacet čtyři měsíců. Banky, které si CA, přenos a kapacitu HSM nepřipraví předem, je nezvládnou bez provozních zkratek.
+
+**Co je jediná věc s nejvyšší pákou, kterou financovat jako první?**
+
+Podřízená certifikační autorita schopná PQC, integrovaná do stávající PKI, která dokáže vydávat duálně algoritmické certifikáty (RSA plus ML-DSA), aniž by narušila produkční důvěru. To zakládá primitivu rotace. Vše ostatní — modernizace přenosu, plánování oddílů HSM, změny obálky zprávy — lze rozvrhnout kolem toho.
 
 ## Reference
 
-- The Finanser, (2026). [Programmable liquidity: five foundations reshaping modern treasury ⧉](https://thefinanser.com/2026/03/programmable-liquidity-five-foundations-reshaping-modern-treasury "Programovatelná likvidita").
-- J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Kyriba, (2026). [ISO 20022 migration ⧉](https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/ "Migrace ISO 20022").
+- Congress.gov, (2022). [H.R. 7535 — Quantum Computing Cybersecurity Preparedness Act ⧉](https://www.congress.gov/bill/117th-congress/house-bill/7535/text "Quantum Computing Cybersecurity Preparedness Act").
+- NIST, (2024). [FIPS 203 — Module-Lattice-Based Key-Encapsulation Mechanism Standard ⧉](https://csrc.nist.gov/pubs/fips/203/final "FIPS 203").
+- NIST, (2024). [FIPS 204 — Module-Lattice-Based Digital Signature Standard ⧉](https://csrc.nist.gov/pubs/fips/204/final "FIPS 204").
+- NIST, (2024). [FIPS 205 — Stateless Hash-Based Digital Signature Standard ⧉](https://csrc.nist.gov/pubs/fips/205/final "FIPS 205").
+- NSA, (2022). [Commercial National Security Algorithm Suite 2.0 ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "CNSA 2.0").
+- BIS, (2024). [Working Paper No. 1208 — Project Leap: Quantum-proofing the financial system ⧉](https://www.bis.org/publ/work1208.htm "BIS Working Paper 1208").
+- Bank of England (PRA), (2024). [SS1/21 — Operational resilience: Impact tolerances for important business services ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="O autorovi"><img alt="Portrét Sebastiena Rousseaua" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Seniorní bankovní technolog, který se věnuje aplikované AI, platební infrastruktuře, tokenizovaným penězům, ISO 20022, postkvantové bezpečnosti, cloud-native finančním službám a regulovaným digitálním trhům.</span><span class="author-credentials">Více než 20 let zkušeností napříč HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA a Virgin Group. <a href="/about/index.html">Úplný profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Naposledy zkontrolováno <time datetime="2026-05-31">2026-05-31</time>.</p>
+<aside class="author-card" aria-label="O autorovi"><img alt="Portrét Sebastiena Rousseaua" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Seniorní bankovní technolog, který píše o aplikované AI, migraci ISO 20022, postkvantové kryptografii pro finanční služby a strukturální transformaci velkoobchodních plateb.</span><span class="author-credentials">Více než 20 let zkušeností napříč HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA a Virgin Group. <a href="/about/index.html">Úplný profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Naposledy ověřeno <time datetime="2026-05-31">2026-05-31</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Související čtení</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026" class="related-media" aria-label="Kvantový kryptografický reset v roce 2026: standardy PQC, záruky QKD a migrační práce, kterou banky nemohou odložit" tabindex="-1"><img alt="Mapa migrace na kvantově odolnou kryptografii pro rok 2026 se standardy NIST PQC, prací na hybridních protokolech, zárukami QKD, krypto-agilitou a úrovněmi datového rizika bank" src="https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026">Kvantový kryptografický reset v roce 2026: standardy PQC, záruky QKD a migrační práce, kterou banky nemohou odložit</a></h3><p><time datetime="2026-05-18">2026-05-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance" class="related-media" aria-label="Zabezpečení účetní knihy: průvodce postkvantovou migrací podnikových financí na úrovni představenstva" tabindex="-1"><img alt="Diagram cestovní mapy postkvantové migrace — infrastruktura podnikového bankovnictví přechází z RSA na ML-KEM a ML-DSA" src="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance">Zabezpečení účetní knihy: průvodce postkvantovou migrací podnikových financí na úrovni představenstva</a></h3><p><time datetime="2026-05-14">2026-05-14</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026" class="related-media" aria-label="Nejlepší cloudová architektura pro rok 2026: AI-nativní, vícecloudový a kvantově uvědomělý plán pro finanční služby" tabindex="-1"><img alt="Diagram cloudové architektury se šesti pilíři pro rok 2026 — AI-nativní, vícecloud, serverless, edge, DevSecOps a udržitelný design" src="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026">Nejlepší cloudová architektura pro rok 2026: AI-nativní, vícecloudový a kvantově uvědomělý plán pro finanční služby</a></h3><p><time datetime="2026-05-14">2026-05-14</time></p></footer></article>
+</div>
+</aside>
 <!-- enrich-end -->
+</content>

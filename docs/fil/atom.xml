@@ -4,23 +4,23 @@
   <link href="https://sebastienrousseau.com/fil/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/fil/"/>
   <id>https://sebastienrousseau.com/fil/</id>
-  <updated>2026-05-31T06:21:45+00:00</updated>
+  <updated>2026-05-31T10:06:33+00:00</updated>
+  <entry>
+    <title>Post-Quantum Payments Infrastructure: Bakit Maaaring Palitan ng mga Bangko ang Legacy Rails sa Halip na I-adapt</title>
+    <link href="https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
+    <id>https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
+    <updated>2026-05-31T10:06:33+00:00</updated>
+    <published>2026-05-31T10:06:33+00:00</published>
+    <summary>Pinipili ng post-quantum cryptography ang payment rails: adaptasyon ng RSA/ECC sa SWIFT MT at ISO 20022 envelopes na hindi sukat sa ML-KEM at ML-DSA, o pagpapalit sa crypto-agile infrastructure. Magdesisyon bago maging operational loss ang HNDL.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Digital Assets sa 2026: Transisyon ng Imprastraktura na Hindi Dapat Antalahin</title>
     <link href="https://sebastienrousseau.com/fil/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
     <id>https://sebastienrousseau.com/fil/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
-    <updated>2026-05-31T06:21:45+00:00</updated>
-    <published>2026-05-31T06:21:45+00:00</published>
+    <updated>2026-05-31T10:06:33+00:00</updated>
+    <published>2026-05-31T10:06:33+00:00</published>
     <summary>Hindi na inobasyon ang digital assets, kundi tanong ng arkitektura ng settlement, custody, at balance sheet. Disenyo ng imprastraktura sa ilalim ng istrukturang kawalang-katiyakan ang estratehikong gawain ng bangko.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Post-Quantum Payments Infrastructure: Bakit Maaaring Palitan ng mga Bangko ang Legacy Rails sa Halip na I-retrofit</title>
-    <link href="https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
-    <id>https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-05-31T06:06:06+00:00</updated>
-    <published>2026-05-31T06:06:06+00:00</published>
-    <summary>Naglalatag ang post-quantum cryptography ng matinding tanong sa mga bangko: i-retrofit ang legacy payment rails o palitan ang mga ito ng crypto-agile na imprastraktura.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

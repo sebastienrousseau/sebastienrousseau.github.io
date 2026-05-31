@@ -11,250 +11,250 @@
     <id>https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>Post-quantum cryptography creates a hard question for banks: retrofit legacy payment rails or replace them with crypto-agile infrastructure.</summary>
+    <summary>Post-quantum cryptography forces a binary choice on payment rails: retrofit RSA/ECC inside SWIFT MT and ISO 20022 envelopes that were never sized for ML-KEM and ML-DSA, or replace with crypto-agile infrastructure. Architects must decide before HNDL becomes operational loss.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Post-Kuantum Ödeme Altyapısı: Bankalar Neden Eski Rayları Güçlendirmek Yerine Değiştirebilir</title>
+    <title>Kuantum Sonrası Ödeme Altyapısı: Bankalar Neden Eski Rayları Uyarlamak Yerine Değiştirebilir</title>
     <link href="https://sebastienrousseau.com/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
     <id>https://sebastienrousseau.com/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>Post-kuantum kriptografi bankalar için zor bir soru yaratıyor: eski ödeme raylarını güçlendirmek mi yoksa kripto-çevik altyapıyla değiştirmek mi.</summary>
+    <summary>Kuantum sonrası kriptografi ödeme raylarına ikili bir seçim dayatır: ML-KEM ve ML-DSA için hiç boyutlanmamış SWIFT MT ve ISO 20022 zarflarında RSA/ECC&apos;yi uyarlamak ya da kripto-çevik altyapıyla değiştirmek. Mimarlar HNDL operasyonel kayba dönüşmeden karar vermeli.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>โครงสร้างพื้นฐานการชำระเงินหลังควอนตัม: เหตุใดธนาคารอาจทดแทนแทนที่จะปรับปรุงช่องทางระบบเก่า</title>
+    <title>โครงสร้างพื้นฐาน PQC การชำระเงิน: เหตุใดธนาคารจึงควรแทนที่ราง ดั้งเดิม ไม่ใช่ปรับเปลี่ยน</title>
     <link href="https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
     <id>https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>การเข้ารหัสหลังควอนตัมตั้งคำถามยากให้ธนาคาร: ปรับปรุงช่องทางการชำระเงินระบบเก่า หรือทดแทนด้วยโครงสร้างที่มีความคล่องตัวด้านการเข้ารหัสก่อนภัยคุกคามปี 2030 มาถึง</summary>
+    <summary>การเข้ารหัสยุคหลังควอนตัมบีบให้ราง การชำระเงินเลือกแบบทวิภาค: ปรับเปลี่ยน RSA/ECC ภายในซอง SWIFT MT และ ISO 20022 ที่ไม่เคยถูกออกแบบสำหรับ ML-KEM และ ML-DSA หรือแทนที่ด้วยโครงสร้างพื้นฐานที่คล่องตัวด้านการเข้ารหัส</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Infraestructura de pagos poscuántica: por qué la banca reemplazará en lugar de adaptar</title>
-    <link href="https://sebastienrousseau.com/es/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
-    <id>https://sebastienrousseau.com/es/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
+    <title>Infraestructura de pagos poscuántica: por qué los bancos reemplazarán los carriles heredados en lugar de adaptarlos</title>
+    <link href="https://sebastienrousseau.com/es/2026-05-31-post-quantum-pagos-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
+    <id>https://sebastienrousseau.com/es/2026-05-31-post-quantum-pagos-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>La criptografía poscuántica plantea una pregunta dura a la banca: adaptar los raíles de pago heredados o reemplazarlos por infraestructura cripto-ágil para 2030.</summary>
+    <summary>La criptografía poscuántica impone una decisión binaria a los carriles de pago: adaptar RSA/ECC dentro de envoltorios SWIFT MT e ISO 20022 que nunca se dimensionaron para ML-KEM y ML-DSA, o reemplazarlos con infraestructura cripto-ágil. Hay que decidir antes de que HNDL sea pérdida operativa.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Infrastructure de paiements post-quantique : pourquoi les banques peuvent remplacer plutôt que mettre à niveau les rails existants</title>
-    <link href="https://sebastienrousseau.com/fr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
-    <id>https://sebastienrousseau.com/fr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
+    <title>Infrastructure de paiement post-quantique : pourquoi les banques remplaceront plutôt que d&apos;adapter les rails hérités</title>
+    <link href="https://sebastienrousseau.com/fr/2026-05-31-post-quantique-paiements-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
+    <id>https://sebastienrousseau.com/fr/2026-05-31-post-quantique-paiements-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>La cryptographie post-quantique pose une question difficile aux banques : mettre à niveau les rails de paiement existants ou les remplacer par une infrastructure crypto-agile.</summary>
+    <summary>La cryptographie post-quantique impose un choix binaire aux rails de paiement : adapter RSA/ECC dans des enveloppes SWIFT MT et ISO 20022 jamais dimensionnées pour ML-KEM et ML-DSA, ou remplacer par une infrastructure crypto-agile. Les architectes doivent trancher avant que HNDL ne devienne perte opérationnelle.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Infrastruktur Pembayaran Pasca-Kuantum: Mengapa Bank Mungkin Mengganti, Bukan Retrofit, Jalur Warisan</title>
+    <title>Infrastruktur Pembayaran Pasca-Kuantum: Mengapa Bank Mungkin Mengganti Alih-alih Menyesuaikan Rel Warisan</title>
     <link href="https://sebastienrousseau.com/id/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
     <id>https://sebastienrousseau.com/id/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>Kriptografi pasca-kuantum memunculkan pertanyaan berat bagi bank: retrofit jalur pembayaran warisan atau menggantinya dengan infrastruktur tangkas kriptografi.</summary>
+    <summary>Kriptografi pasca-kuantum memaksa pilihan biner pada rel pembayaran: sesuaikan RSA/ECC di dalam amplop SWIFT MT dan ISO 20022 yang tidak pernah diukur untuk ML-KEM dan ML-DSA, atau ganti dengan infrastruktur kripto-agil. Arsitek harus memutuskan sebelum HNDL menjadi kerugian operasional.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>양자내성 결제 인프라 — 은행이 레거시 레일을 개조 대신 교체해야 하는 이유</title>
+    <title>양자내성 결제 인프라: 은행이 레거시 레일을 개조하지 않고 대체할 수밖에 없는 이유</title>
     <link href="https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
     <id>https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>양자내성 암호는 은행에 까다로운 질문을 던집니다 — 레거시 결제 레일을 개조할 것인가, 암호 민첩성 인프라로 교체할 것인가가 2026년 이사회 의제입니다.</summary>
+    <summary>양자내성암호는 결제 레일에 이분법적 선택을 강요합니다. ML-KEM·ML-DSA용으로 설계되지 않은 SWIFT MT·ISO 20022 봉투에 RSA/ECC를 개조하거나, 암호 민첩성 인프라로 대체해야 합니다.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Post-Quanten-Zahlungsinfrastruktur 2026: Warum Banken Bestands-Rails ersetzen statt nachrüsten</title>
-    <link href="https://sebastienrousseau.com/de/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
-    <id>https://sebastienrousseau.com/de/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
+    <title>Post-Quanten-Zahlungsinfrastruktur: Warum Banken bestehende Rails ersetzen statt nachrüsten</title>
+    <link href="https://sebastienrousseau.com/de/2026-05-31-post-quantum-zahlungsverkehr-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
+    <id>https://sebastienrousseau.com/de/2026-05-31-post-quantum-zahlungsverkehr-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>Post-Quanten-Kryptographie stellt Banken vor eine harte Frage: Bestands-Zahlungs-Rails nachrüsten oder durch kryptographie-agile Infrastruktur ersetzen.</summary>
+    <summary>Post-Quanten-Kryptografie zwingt Zahlungsrails zu einer binären Entscheidung: RSA/ECC in SWIFT MT- und ISO-20022-Hüllen nachrüsten, die nie für ML-KEM und ML-DSA dimensioniert wurden, oder durch krypto-agile Infrastruktur ersetzen. Architekten müssen entscheiden, bevor HNDL zum operativen Verlust wird.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>पोस्ट-क्वांटम भुगतान अवसंरचना: बैंक विरासत रेल का पुनर्निर्माण क्यों नहीं, प्रतिस्थापन क्यों करेंगे</title>
+    <title>पोस्ट-क्वांटम भुगतान बुनियादी ढाँचा: बैंक विरासत रेलों का अनुकूलन क्यों नहीं, प्रतिस्थापन क्यों कर सकते हैं</title>
     <link href="https://sebastienrousseau.com/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
     <id>https://sebastienrousseau.com/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>पोस्ट-क्वांटम क्रिप्टोग्राफी बैंकों के लिए कठिन प्रश्न खड़ा करती है: विरासत भुगतान रेल का पुनर्निर्माण करें या क्रिप्टो-चपल अवसंरचना से प्रतिस्थापन करें।</summary>
+    <summary>पोस्ट-क्वांटम क्रिप्टोग्राफी भुगतान रेलों पर बाइनरी विकल्प थोपती है: SWIFT MT और ISO 20022 आवरणों में RSA/ECC का अनुकूलन, या क्रिप्टो-चपल बुनियादी ढाँचे से प्रतिस्थापन। आर्किटेक्ट्स को HNDL नुकसान बनने से पहले तय करना होगा।</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Post-Quantum Payments Infrastructure: Bakit Maaaring Palitan ng mga Bangko ang Legacy Rails sa Halip na I-retrofit</title>
+    <title>Post-Quantum Payments Infrastructure: Bakit Maaaring Palitan ng mga Bangko ang Legacy Rails sa Halip na I-adapt</title>
     <link href="https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
     <id>https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>Naglalatag ang post-quantum cryptography ng matinding tanong sa mga bangko: i-retrofit ang legacy payment rails o palitan ang mga ito ng crypto-agile na imprastraktura.</summary>
+    <summary>Pinipili ng post-quantum cryptography ang payment rails: adaptasyon ng RSA/ECC sa SWIFT MT at ISO 20022 envelopes na hindi sukat sa ML-KEM at ML-DSA, o pagpapalit sa crypto-agile infrastructure. Magdesisyon bago maging operational loss ang HNDL.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>পোস্ট-কোয়ান্টাম পেমেন্ট পরিকাঠামো: কেন ব্যাংক লিগ্যাসি রেল আপগ্রেড নয়, প্রতিস্থাপন করতে পারে</title>
+    <title>পোস্ট-কোয়ান্টাম পেমেন্ট পরিকাঠামো: কেন ব্যাংক লিগ্যাসি রেল অভিযোজন না করে প্রতিস্থাপন করতে পারে</title>
     <link href="https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
     <id>https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি ব্যাংকের সামনে কঠিন প্রশ্ন তুলেছে: লিগ্যাসি পেমেন্ট রেল আপগ্রেড, না ক্রিপ্টো-চটপটে পরিকাঠামো দিয়ে প্রতিস্থাপন করবেন।</summary>
+    <summary>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি পেমেন্ট রেলে দুটি পথ রাখে: SWIFT MT ও ISO 20022 এনভেলপে RSA/ECC অভিযোজন, অথবা ক্রিপ্টো-চটপটে পরিকাঠামোয় প্রতিস্থাপন। HNDL অপারেশনাল ক্ষতি হওয়ার আগেই স্থপতিদের সিদ্ধান্ত নিতে হবে।</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Post-kwantum betalingsinfrastructuur: waarom banken legacy-rails eerder vervangen dan retrofitten</title>
+    <title>Post-quantum betaalinfrastructuur: waarom banken bestaande rails eerder vervangen dan aanpassen</title>
     <link href="https://sebastienrousseau.com/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
     <id>https://sebastienrousseau.com/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>Post-kwantumcryptografie stelt banken voor een harde keuze: legacy betalingsrails retrofitten of vervangen door crypto-wendbare infrastructuur. Architectuurdiscipline beslist.</summary>
+    <summary>Post-quantum-cryptografie dwingt betaalrails tot een binaire keuze: RSA/ECC aanpassen binnen SWIFT MT- en ISO 20022-enveloppen die nooit op ML-KEM en ML-DSA zijn afgestemd, of vervangen door crypto-flexibele infrastructuur. Architecten moeten beslissen voordat HNDL verlies wordt.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Infraestrutura de Pagamentos Pós-Quânticos: Substituir em Vez de Adaptar Trilhos Legados</title>
-    <link href="https://sebastienrousseau.com/pt-br/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
-    <id>https://sebastienrousseau.com/pt-br/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
+    <title>Infraestrutura de pagamentos pós-quântica: por que bancos podem substituir em vez de adaptar trilhos legados</title>
+    <link href="https://sebastienrousseau.com/pt-br/2026-05-31-post-quantum-pagamentos-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
+    <id>https://sebastienrousseau.com/pt-br/2026-05-31-post-quantum-pagamentos-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>A criptografia pós-quântica impõe uma pergunta dura aos bancos: adaptar trilhos de pagamento legados ou substituí-los por infraestrutura cripto-ágil em 2026.</summary>
+    <summary>ML-KEM e ML-DSA não cabem nos envelopes SWIFT MT e ISO 20022 dimensionados para RSA-2048. HNDL fecha a janela. Em 2026, substituir os trilhos vence adaptar.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>البنية التحتية للمدفوعات ما بعد الكمية: لماذا قد تستبدل البنوك المسارات القديمة بدل تحديثها</title>
+    <title>بنية المدفوعات ما بعد الكمية: لماذا قد تستبدل المصارف قنواتها القديمة بدل تحديثها</title>
     <link href="https://sebastienrousseau.com/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
     <id>https://sebastienrousseau.com/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>التشفير ما بعد الكمي يطرح سؤالاً صعباً على البنوك: تحديث مسارات الدفع القديمة أم استبدالها ببنية تحتية ذات مرونة تشفيرية لمواجهة 2026.</summary>
+    <summary>التشفير ما بعد الكمي يفرض خيارًا ثنائيًا على قنوات المدفوعات: تعديل RSA/ECC داخل مظاريف SWIFT MT وISO 20022 التي لم تُصمَّم أصلًا لاستيعاب ML-KEM وML-DSA، أو الاستبدال ببنية تحتية ذات مرونة تشفيرية. على المعماريين الحسم قبل أن يتحوَّل HNDL إلى خسارة تشغيلية.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Ababen Biyan Kuɗi Bayan-Quantum: Me ya sa Bankuna za su Maye Gurbin Tsoffin Hanyoyi</title>
+    <title>Kayan Biya Bayan Quantum: Me Ya Sa Bankuna Za Su Iya Maye Gurbin Tsofaffin Hanyoyi Maimakon Daidaitawa</title>
     <link href="https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
     <id>https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>Cryptography bayan-quantum yana haifar wa bankuna tambaya mai wuya: inganta tsoffin hanyoyin biyan kuɗi ko maye gurbin su da ababen kintsattse na crypto kafin tara yanzu-warware daga baya.</summary>
+    <summary>Cryptography bayan quantum tana tilasta zaɓi biyu kan hanyoyin biya: daidaita RSA/ECC cikin SWIFT MT da ISO 20022 da ba a tsara wa ML-KEM da ML-DSA ba, ko maye gurbi da kayan saurin crypto. Masu zane su yanke kafin HNDL ya zama asarar aiki.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Постквантова платіжна інфраструктура: чому банки замінять, а не модернізують канали</title>
+    <title>Постквантова платіжна інфраструктура: чому банки замінюють застарілі рейки, а не доробляють їх</title>
     <link href="https://sebastienrousseau.com/uk/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
     <id>https://sebastienrousseau.com/uk/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>Постквантова криптографія ставить перед банками жорстке питання: модернізувати застарілі платіжні канали чи замінити їх криптоагільною інфраструктурою у 2026 році.</summary>
+    <summary>Постквантова криптографія ставить платіжні рейки перед бінарним вибором: доробляти RSA/ECC у SWIFT MT та ISO 20022, не розрахованих на ML-KEM і ML-DSA, або замінювати на криптоагільну інфраструктуру. Рішення архітекторів — до того, як HNDL стане операційним збитком.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Ìgbékalẹ̀ Ìsanwó Post-Quantum: Ìdí Tí Àwọn Báńkì Fi Lè Rọ́pò Dípò Ìmúdára</title>
+    <title>Ìgbékalẹ̀ Ìsanwó Lẹyin-Quantum: Ìdí Tí Báńkì Fi Lè Fìrọ́pò Dípò Ìbámu Ọ̀nà Àkànṣe</title>
     <link href="https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
     <id>https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>Cryptography lẹ́yìn-quantum dá ìbéèrè líle fún àwọn báńkì: ìmúdára àwọn ọ̀nà ìsanwó àtẹ́lé tàbí rírọ́pò wọn pẹ̀lú ìgbékalẹ̀ ìyára nínú crypto.</summary>
+    <summary>Cryptography lẹyin-quantum fi àyàn méjì lélẹ̀ fún ọ̀nà ìsanwó: ìbámu RSA/ECC nínú ìdìpọ̀ SWIFT MT àti ISO 20022 tí kò bá ML-KEM àti ML-DSA mu, tàbí ìfìrọ́pò pẹ̀lú ìgbékalẹ̀ ìyára crypto. Àwọn ayàwòrán gbọ́dọ̀ pinnu kí HNDL tó di àdánù iṣẹ́.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Infrastructură de plăți post-cuantice: de ce băncile vor înlocui, nu moderniza, căile legacy</title>
+    <title>Infrastructură de plăți post-cuantică: de ce băncile pot înlocui mai degrabă decât adapta căile moștenite</title>
     <link href="https://sebastienrousseau.com/ro/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
     <id>https://sebastienrousseau.com/ro/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>Criptografia post-cuantică ridică o întrebare dificilă pentru bănci: modernizare a căilor de plată legacy sau înlocuire cu o infrastructură cripto-agilă.</summary>
+    <summary>Criptografia post-cuantică impune o alegere binară pentru căile de plată: adaptarea RSA/ECC în anvelopele SWIFT MT și ISO 20022 nedimensionate pentru ML-KEM și ML-DSA, sau înlocuirea cu infrastructură cripto-agilă. Arhitecții trebuie să decidă înainte ca HNDL să producă pierdere operațională.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Постквантовая платёжная инфраструктура: почему банки выбирают замену, а не модернизацию</title>
+    <title>Постквантовая платёжная инфраструктура: почему банки заменят, а не доработают устаревшие рельсы</title>
     <link href="https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
     <id>https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>Постквантовая криптография ставит перед банками жёсткий выбор: модернизация унаследованных платёжных каналов или их замена криптоагильной инфраструктурой 2026.</summary>
+    <summary>Постквантовая криптография ставит платёжные рельсы перед бинарным выбором: доработка RSA/ECC в конвертах SWIFT MT и ISO 20022, не рассчитанных на ML-KEM и ML-DSA, либо замена на криптоагильную инфраструктуру. Архитекторы должны решить до того, как HNDL станет операционной потерей.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Postkvantová platební infrastruktura: proč banky raději nahradí starší rails než je modernizují</title>
+    <title>Postkvantová infrastruktura plateb: proč banky nahradí, místo aby upravovaly starší kolejnice</title>
     <link href="https://sebastienrousseau.com/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
     <id>https://sebastienrousseau.com/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>Postkvantová kryptografie staví banky před zásadní otázku: modernizovat starší platební rails, nebo je nahradit kryptograficky agilní infrastrukturou.</summary>
+    <summary>Postkvantová kryptografie staví platební kolejnice před binární volbu: upravit RSA/ECC v obálkách SWIFT MT a ISO 20022, které nebyly dimenzovány pro ML-KEM a ML-DSA, nebo nahradit krypto-agilní infrastrukturou, než HNDL přejde v provozní ztrátu.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Infrastruttura pagamenti post-quantistica: perché le banche sostituiranno i binari legacy invece di fare retrofit</title>
-    <link href="https://sebastienrousseau.com/it/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
-    <id>https://sebastienrousseau.com/it/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
+    <title>Infrastruttura pagamenti post-quantistica: perché le banche potrebbero sostituire i rail legacy invece di adattarli</title>
+    <link href="https://sebastienrousseau.com/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
+    <id>https://sebastienrousseau.com/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>La crittografia post-quantistica pone alle banche una scelta netta: fare retrofit dei binari di pagamento legacy o sostituirli con infrastruttura cripto-agile.</summary>
+    <summary>La crittografia post-quantistica impone una scelta binaria ai rail di pagamento: adattare RSA/ECC dentro involucri SWIFT MT e ISO 20022 mai dimensionati per ML-KEM e ML-DSA, oppure sostituire con infrastrutture cripto-agili. Decidere prima che HNDL diventi perdita operativa.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>耐量子決済インフラ ― 銀行がレガシーレールをレトロフィットせず置き換える理由</title>
+    <title>耐量子決済基盤:銀行が既存レールを後付け対応ではなく置換すべき理由</title>
     <link href="https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
     <id>https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>耐量子暗号は銀行に重い問いを突きつける ― レガシー決済レールにレトロフィットするか、暗号アジリティ前提のインフラに置き換えるかである。</summary>
+    <summary>耐量子暗号は決済レールに二者択一を迫ります。ML-KEM/ML-DSA 向けに設計されていない SWIFT MT・ISO 20022 封筒に RSA/ECC を後付けするか、暗号アジリティを備えた基盤へ置換するか。HNDL が実害となる前に判断が必要です。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>תשתית תשלומים פוסט-קוונטית: מדוע בנקים יחליפו ולא ישדרגו ערוצי מורשת</title>
+    <title>תשתית תשלומים פוסט-קוונטית: מדוע בנקים יחליפו ולא יתאימו ערוצים מורשתיים</title>
     <link href="https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
     <id>https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>קריפטוגרפיה פוסט-קוונטית מציבה בפני הדירקטוריון שאלת תשתית: לשדרג ערוצי תשלום מורשת עם ML-KEM/ML-DSA או להחליפם בארכיטקטורה גמישה קריפטוגרפית.</summary>
+    <summary>קריפטוגרפיה פוסט-קוונטית כופה החלטה בינארית על ערוצי תשלומים: התאמת RSA/ECC בתוך מעטפות SWIFT MT ו-ISO 20022 שמעולם לא נמדדו ל-ML-KEM ו-ML-DSA, או החלפה בתשתית גמישה קריפטוגרפית. ארכיטקטים חייבים להחליט לפני ש-HNDL הופך להפסד תפעולי.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Post-kvant-betalningsinfrastruktur: varför banker ersätter snarare än uppgraderar</title>
+    <title>Postkvantinfrastruktur för betalningar: varför banker kan välja ersättning framför anpassning av äldre räls</title>
     <link href="https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
     <id>https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>Post-kvantkryptografi tvingar fram ett strategiskt val: uppgradera äldre betalningsrails eller ersätta dem med kryptoagil infrastruktur och kvantsäkra revisionskedja.</summary>
+    <summary>Postkvantkryptografi tvingar fram ett binärt val för betalningsräls: anpassa RSA/ECC inom SWIFT MT- och ISO 20022-kuvert som aldrig dimensionerats för ML-KEM och ML-DSA, eller ersätt med kryptoagil infrastruktur. Arkitekter måste välja innan HNDL blir operativ förlust.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Hạ tầng thanh toán hậu lượng tử: Vì sao ngân hàng nên thay thế thay vì nâng cấp kênh kế thừa</title>
+    <title>Hạ tầng Thanh toán Hậu Lượng tử: Vì sao Ngân hàng nên Thay thế chứ không Điều chỉnh Đường ray Cũ</title>
     <link href="https://sebastienrousseau.com/vi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
     <id>https://sebastienrousseau.com/vi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>Mật mã hậu lượng tử đặt ra câu hỏi khó cho ngân hàng: nâng cấp kênh thanh toán kế thừa hay thay thế bằng hạ tầng linh hoạt mật mã trước khi đối thủ giải mã các bản thu thập 2030.</summary>
+    <summary>Mật mã hậu lượng tử buộc đường ray thanh toán chọn nhị phân: điều chỉnh RSA/ECC trong phong bì SWIFT MT và ISO 20022 vốn chưa từng định cỡ cho ML-KEM và ML-DSA, hay thay thế bằng hạ tầng linh hoạt mật mã. Kiến trúc sư phải quyết định trước khi HNDL biến thành tổn thất vận hành.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Infrastruktura platnosci post-kwantowych: dlaczego banki zastapia, a nie zmodernizuja, starsze tory</title>
+    <title>Infrastruktura płatności postkwantowych: dlaczego banki mogą zastąpić, a nie adaptować starsze szyny</title>
     <link href="https://sebastienrousseau.com/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
     <id>https://sebastienrousseau.com/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>Kryptografia post-kwantowa stawia banki przed trudnym pytaniem: modernizowac starsze tory platnicze czy zastapic je infrastruktura z kryptograficzna zwinnoscia.</summary>
+    <summary>Kryptografia postkwantowa wymusza na szynach płatniczych wybór binarny: adaptacja RSA/ECC w kopertach SWIFT MT i ISO 20022 nieprzystosowanych do ML-KEM i ML-DSA, czy zastąpienie infrastrukturą krypto-agilną. Architekci muszą zdecydować, zanim HNDL stanie się stratą operacyjną.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>後量子支付基礎建設:為何銀行可能替換而非改造遺留軌道</title>
+    <title>後量子支付基礎建設:銀行為何可能替換而非改造傳統管道</title>
     <link href="https://sebastienrousseau.com/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
     <id>https://sebastienrousseau.com/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>後量子密碼學迫使董事會抉擇:改造遺留支付軌道,或以密碼敏捷基礎建設替換?ML-KEM、ML-DSA、HSM 與現採後解皆是 2026 決策關鍵。</summary>
+    <summary>後量子密碼學迫使支付管道做出二選一決定:在 SWIFT MT 與 ISO 20022 信封中改造 RSA/ECC,或以密碼敏捷基礎建設替換。架構師必須在 HNDL 變成實際損失之前做出決定。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>后量子支付基础设施：银行为何可能替换而非改造遗留通道</title>
+    <title>后量子支付基础设施:为何银行可能替换而非改造传统通道</title>
     <link href="https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html"/>
     <id>https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html</id>
     <updated>2026-05-31T06:06:06+00:00</updated>
     <published>2026-05-31T06:06:06+00:00</published>
-    <summary>后量子密码迫使银行作出一道硬性选择：改造遗留支付通道，抑或以具备密码敏捷性的基础设施将其替换。2026 年的命题是架构纪律。</summary>
+    <summary>后量子密码学迫使支付通道作出二选一:在从未为 ML-KEM 与 ML-DSA 适配的 SWIFT MT 与 ISO 20022 信封内改造 RSA/ECC,或以密码敏捷的基础设施替换。架构师必须在 HNDL 转为运营损失前决断。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

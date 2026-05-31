@@ -4,14 +4,14 @@
   <link href="https://sebastienrousseau.com/th/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/th/"/>
   <id>https://sebastienrousseau.com/th/</id>
-  <updated>2026-05-31T06:21:45+00:00</updated>
+  <updated>2026-05-31T10:06:34+00:00</updated>
   <entry>
-    <title>โครงสร้างพื้นฐานการชำระเงินหลังควอนตัม: เหตุใดธนาคารอาจทดแทนแทนที่จะปรับปรุงช่องทางระบบเก่า</title>
+    <title>โครงสร้างพื้นฐาน PQC การชำระเงิน: เหตุใดธนาคารจึงควรแทนที่ราง ดั้งเดิม ไม่ใช่ปรับเปลี่ยน</title>
     <link href="https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
     <id>https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-05-31T06:06:06+00:00</updated>
-    <published>2026-05-31T06:06:06+00:00</published>
-    <summary>การเข้ารหัสหลังควอนตัมตั้งคำถามยากให้ธนาคาร: ปรับปรุงช่องทางการชำระเงินระบบเก่า หรือทดแทนด้วยโครงสร้างที่มีความคล่องตัวด้านการเข้ารหัสก่อนภัยคุกคามปี 2030 มาถึง</summary>
+    <updated>2026-05-31T10:06:34+00:00</updated>
+    <published>2026-05-31T10:06:34+00:00</published>
+    <summary>การเข้ารหัสยุคหลังควอนตัมบีบให้ราง การชำระเงินเลือกแบบทวิภาค: ปรับเปลี่ยน RSA/ECC ภายในซอง SWIFT MT และ ISO 20022 ที่ไม่เคยถูกออกแบบสำหรับ ML-KEM และ ML-DSA หรือแทนที่ด้วยโครงสร้างพื้นฐานที่คล่องตัวด้านการเข้ารหัส</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

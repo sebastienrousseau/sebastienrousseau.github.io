@@ -4,14 +4,14 @@
   <link href="https://sebastienrousseau.com/zh-hans/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/zh-hans/"/>
   <id>https://sebastienrousseau.com/zh-hans/</id>
-  <updated>2026-05-31T06:21:45+00:00</updated>
+  <updated>2026-05-31T10:06:34+00:00</updated>
   <entry>
-    <title>后量子支付基础设施：银行为何可能替换而非改造遗留通道</title>
+    <title>后量子支付基础设施:为何银行可能替换而非改造传统通道</title>
     <link href="https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
     <id>https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-05-31T06:06:06+00:00</updated>
-    <published>2026-05-31T06:06:06+00:00</published>
-    <summary>后量子密码迫使银行作出一道硬性选择：改造遗留支付通道，抑或以具备密码敏捷性的基础设施将其替换。2026 年的命题是架构纪律。</summary>
+    <updated>2026-05-31T10:06:34+00:00</updated>
+    <published>2026-05-31T10:06:34+00:00</published>
+    <summary>后量子密码学迫使支付通道作出二选一:在从未为 ML-KEM 与 ML-DSA 适配的 SWIFT MT 与 ISO 20022 信封内改造 RSA/ECC,或以密码敏捷的基础设施替换。架构师必须在 HNDL 转为运营损失前决断。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

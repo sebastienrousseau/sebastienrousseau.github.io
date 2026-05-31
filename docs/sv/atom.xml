@@ -4,23 +4,23 @@
   <link href="https://sebastienrousseau.com/sv/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/sv/"/>
   <id>https://sebastienrousseau.com/sv/</id>
-  <updated>2026-05-31T06:21:45+00:00</updated>
+  <updated>2026-05-31T10:06:33+00:00</updated>
+  <entry>
+    <title>Postkvantinfrastruktur för betalningar: varför banker kan välja ersättning framför anpassning av äldre räls</title>
+    <link href="https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
+    <id>https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
+    <updated>2026-05-31T10:06:33+00:00</updated>
+    <published>2026-05-31T10:06:33+00:00</published>
+    <summary>Postkvantkryptografi tvingar fram ett binärt val för betalningsräls: anpassa RSA/ECC inom SWIFT MT- och ISO 20022-kuvert som aldrig dimensionerats för ML-KEM och ML-DSA, eller ersätt med kryptoagil infrastruktur. Arkitekter måste välja innan HNDL blir operativ förlust.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Digitala tillgångar 2026: infrastrukturövergången bankerna inte kan skjuta upp</title>
     <link href="https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
     <id>https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
-    <updated>2026-05-31T06:21:45+00:00</updated>
-    <published>2026-05-31T06:21:45+00:00</published>
+    <updated>2026-05-31T10:06:33+00:00</updated>
+    <published>2026-05-31T10:06:33+00:00</published>
     <summary>Digitala tillgångar är inte längre en innovationssatsning. De är en arkitekturfråga för avveckling, förvaring och balansräkning. Bankernas strategiska uppgift är infrastrukturdesign under strukturell osäkerhet.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Post-kvant-betalningsinfrastruktur: varför banker ersätter snarare än uppgraderar</title>
-    <link href="https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
-    <id>https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-05-31T06:06:06+00:00</updated>
-    <published>2026-05-31T06:06:06+00:00</published>
-    <summary>Post-kvantkryptografi tvingar fram ett strategiskt val: uppgradera äldre betalningsrails eller ersätta dem med kryptoagil infrastruktur och kvantsäkra revisionskedja.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

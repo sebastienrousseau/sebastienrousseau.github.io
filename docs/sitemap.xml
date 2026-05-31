@@ -45,19 +45,19 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
-  <loc>https://sebastienrousseau.com/es/2026-05-31-post-quantum-pagos-infrastructure-replace-rather-than-retrofit-2026/</loc>
-</url>
-
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-04-15</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2026-05-31-post-quantique-paiements-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <loc>https://sebastienrousseau.com/es/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
 </url>
 
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/fr/sujets/cloud-native-banking/</loc>
+</url>
+
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/fr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
 </url>
 
 <url>
@@ -87,7 +87,7 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
-  <loc>https://sebastienrousseau.com/de/2026-05-31-post-quantum-zahlungsverkehr-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <loc>https://sebastienrousseau.com/de/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
 </url>
 
 <url>
@@ -117,7 +117,7 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
-  <loc>https://sebastienrousseau.com/pt-br/2026-05-31-post-quantum-pagamentos-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <loc>https://sebastienrousseau.com/pt-br/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
 </url>
 
 <url>
@@ -171,7 +171,7 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
-  <loc>https://sebastienrousseau.com/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <loc>https://sebastienrousseau.com/it/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
 </url>
 
 <url>
@@ -1153,7 +1153,7 @@
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/fr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <loc>https://sebastienrousseau.com/fr/2026-05-31-post-quantique-paiements-infrastructure-replace-rather-than-retrofit-2026/</loc>
   <lastmod>2026-05-31</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
@@ -3033,7 +3033,7 @@
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/de/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <loc>https://sebastienrousseau.com/de/2026-05-31-post-quantum-zahlungsverkehr-infrastructure-replace-rather-than-retrofit-2026/</loc>
   <lastmod>2026-05-31</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
@@ -3503,7 +3503,7 @@
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/es/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <loc>https://sebastienrousseau.com/es/2026-05-31-post-quantum-pagos-infrastructure-replace-rather-than-retrofit-2026/</loc>
   <lastmod>2026-05-31</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
@@ -6323,7 +6323,7 @@
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/it/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <loc>https://sebastienrousseau.com/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/</loc>
   <lastmod>2026-05-31</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
@@ -8673,7 +8673,7 @@
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/pt-br/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <loc>https://sebastienrousseau.com/pt-br/2026-05-31-post-quantum-pagamentos-infrastructure-replace-rather-than-retrofit-2026/</loc>
   <lastmod>2026-05-31</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>

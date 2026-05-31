@@ -6,32 +6,40 @@
     <description>Artykuły po polsku: stosowana sztuczna inteligencja, płatności ISO 20022, kryptografia postkwantowa oraz transformacja płatności hurtowych.</description>
     <atom:link href="https://sebastienrousseau.com/pl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>pl-PL</language>
-    <lastBuildDate>Sun, 31 May 2026 06:21:45 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 10:06:33 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Wszelkie prawa zastrzeżone.</copyright>
     <item>
-      <title>Infrastruktura platnosci post-kwantowych: dlaczego banki zastapia, a nie zmodernizuja, starsze tory</title>
+      <title>Infrastruktura płatności postkwantowych: dlaczego banki mogą zastąpić, a nie adaptować starsze szyny</title>
       <link>https://sebastienrousseau.com/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
-      <description>Kryptografia post-kwantowa stawia banki przed trudnym pytaniem: modernizowac starsze tory platnicze czy zastapic je infrastruktura z kryptograficzna zwinnoscia.</description>
+      <description>Kryptografia postkwantowa wymusza na szynach płatniczych wybór binarny: adaptacja RSA/ECC w kopertach SWIFT MT i ISO 20022 nieprzystosowanych do ML-KEM i ML-DSA, czy zastąpienie infrastrukturą krypto-agilną. Architekci muszą zdecydować, zanim HNDL stanie się stratą operacyjną.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Sun, 31 May 2026 06:21:45 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 10:06:33 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
-      <category>platnosci post-kwantowe 2026</category>
-      <category>PQC w bankowosci</category>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>kryptografia postkwantowa</category>
+      <category>PQC płatności</category>
+      <category>krypto-agilność</category>
+      <category>zbieraj teraz odszyfruj później</category>
+      <category>HNDL</category>
+      <category>standardy postkwantowe NIST</category>
       <category>ML-KEM</category>
       <category>ML-DSA</category>
-      <category>infrastruktura platnicza</category>
-      <category>kryptograficzna zwinnosc</category>
-      <category>HNDL</category>
-      <category>harvest-now-decrypt-later</category>
-      <category>ISO 20022</category>
+      <category>FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>migracja szyn płatniczych</category>
+      <category>ISO 20022 PQC</category>
+      <category>zastąpienie SWIFT MT</category>
+      <category>HSM</category>
+      <category>załamanie PKI</category>
+      <category>odporność operacyjna</category>
+      <category>Quantum Computing Cybersecurity Preparedness Act</category>
     </item>
     <item>
       <title>Hurtowe rynki cyfrowe w UK: tokenizowane gilty, rozliczenie i champion</title>
       <link>https://sebastienrousseau.com/pl/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
       <description>Rola Wholesale Digital Markets Champion w Wielkiej Brytanii zamienia tokenizowane finanse hurtowe w narodowy projekt konkurencyjnosci dla Cite of London.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
-      <pubDate>Sun, 31 May 2026 06:21:45 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 10:06:33 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>hurtowe rynki cyfrowe UK 2026</category>
@@ -50,7 +58,7 @@
       <link>https://sebastienrousseau.com/pl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>Aktywa cyfrowe nie sa juz zakladem innowacyjnym. To pytanie o architekture rozliczenia, przechowywania i bilansu. Zadanie strategiczne bankow to projekt infrastruktury w warunkach strukturalnej niepewnosci.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Sun, 31 May 2026 06:21:45 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 10:06:33 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>aktywa cyfrowe 2026</category>

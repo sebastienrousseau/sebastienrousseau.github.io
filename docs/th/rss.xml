@@ -6,29 +6,32 @@
     <description>บทความภาษาไทย: AI ประยุกต์, การชำระเงิน ISO 20022, การเข้ารหัสหลังควอนตัม และการปฏิรูปการชำระเงินขายส่ง</description>
     <atom:link href="https://sebastienrousseau.com/th/rss.xml" rel="self" type="application/rss+xml"/>
     <language>th-TH</language>
-    <lastBuildDate>Sun, 31 May 2026 06:21:45 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 10:06:34 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์</copyright>
     <item>
-      <title>โครงสร้างพื้นฐานการชำระเงินหลังควอนตัม: เหตุใดธนาคารอาจทดแทนแทนที่จะปรับปรุงช่องทางระบบเก่า</title>
+      <title>โครงสร้างพื้นฐาน PQC การชำระเงิน: เหตุใดธนาคารจึงควรแทนที่ราง ดั้งเดิม ไม่ใช่ปรับเปลี่ยน</title>
       <link>https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
-      <description>การเข้ารหัสหลังควอนตัมตั้งคำถามยากให้ธนาคาร: ปรับปรุงช่องทางการชำระเงินระบบเก่า หรือทดแทนด้วยโครงสร้างที่มีความคล่องตัวด้านการเข้ารหัสก่อนภัยคุกคามปี 2030 มาถึง</description>
+      <description>การเข้ารหัสยุคหลังควอนตัมบีบให้ราง การชำระเงินเลือกแบบทวิภาค: ปรับเปลี่ยน RSA/ECC ภายในซอง SWIFT MT และ ISO 20022 ที่ไม่เคยถูกออกแบบสำหรับ ML-KEM และ ML-DSA หรือแทนที่ด้วยโครงสร้างพื้นฐานที่คล่องตัวด้านการเข้ารหัส</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Sun, 31 May 2026 06:06:06 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 10:06:34 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
-      <category>โครงสร้างพื้นฐานชำระเงินหลังควอนตัม 2026</category>
-      <category>post-quantum cryptography</category>
-      <category>PQC ธนาคาร</category>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>การเข้ารหัสยุคหลังควอนตัม</category>
+      <category>PQC การชำระเงิน</category>
+      <category>ความคล่องตัวด้านการเข้ารหัส</category>
+      <category>เก็บเกี่ยวตอนนี้-ถอดรหัสภายหลัง</category>
+      <category>HNDL</category>
+      <category>มาตรฐาน NIST หลังควอนตัม</category>
       <category>ML-KEM</category>
       <category>ML-DSA</category>
-      <category>NIST</category>
-      <category>ความคล่องตัวด้านการเข้ารหัส</category>
-      <category>harvest-now-decrypt-later</category>
+      <category>FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>การย้ายราง การชำระเงิน</category>
+      <category>ISO 20022 PQC</category>
+      <category>การแทนที่ SWIFT MT</category>
       <category>HSM</category>
-      <category>SWIFT MT</category>
-      <category>ISO 20022</category>
-      <category>RTGS</category>
-      <category>การทดแทนช่องทางการชำระเงิน</category>
+      <category>การล่มสลายของ PKI</category>
+      <category>ความยืดหยุ่นในการดำเนินงาน</category>
     </item>
     <item>
       <title>ตลาดดิจิทัลค้าส่งสหราชอาณาจักร: กิลต์แบบโทเคน การชำระบัญชี และบทบาทผู้นำใหม่</title>
