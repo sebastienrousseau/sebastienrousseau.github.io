@@ -177,7 +177,19 @@ jobs:
             echo "pa11y-cache: full cache hit, skipping pa11y-ci run"
             exit 0
           fi
-          pa11y-ci -c .pa11yci || (echo "pa11y violations above"; exit 1)
+          # Capture pa11y-ci JSON. On overall failure, retry ONLY the
+          # URLs that hit the Puppeteer "Execution context was destroyed"
+          # navigation race (a known intermittent flake, not a WCAG
+          # violation). If every failed URL passes on retry, treat the
+          # overall run as passing. Real WCAG failures still bubble up.
+          set +e
+          pa11y-ci -c .pa11yci --reporter json > pa11y.json
+          rc=$?
+          set -e
+          if [ "$rc" -eq 0 ]; then
+            exit 0
+          fi
+          python3 scripts/seo_and_audit/pa11y_retry_flakes.py pa11y.json
 
       - name: Post — update cache for next run
         if: success()
