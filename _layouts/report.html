@@ -232,6 +232,14 @@
       /* ---------- Article furniture: tag badges, meta bar, ToC, anchor
          links, author bio. Injected by scripts/postbuild.py on every
          BlogPosting page after the H1 hero. ---------- */
+      .article-langswitch{max-width:var(--max-wide);margin:0 auto 18px;padding:14px var(--pad-x);font-size:13px;color:var(--ink-mute, #6e6e73);text-align:center;border-top:1px solid var(--cl-grey-200, #e3e6ed);border-bottom:1px solid var(--cl-grey-200, #e3e6ed);display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;justify-content:center}
+      .article-langswitch-lead{font-weight:500;color:var(--ink, #111)}
+      .article-langswitch-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:center}
+      .article-langswitch-list li{display:inline}
+      .article-langswitch-list a{color:var(--accent, #0056b3);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+      .article-langswitch-list a:hover{text-decoration-thickness:2px}
+      .article-langswitch-list a[dir="rtl"]{unicode-bidi:isolate}
+      @media (prefers-color-scheme:dark){.article-langswitch{border-top-color:rgba(255,255,255,.08);border-bottom-color:rgba(255,255,255,.08)}}
       .article-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;max-width:var(--max-wide);margin:8px auto 18px;padding:0 var(--pad-x)}
       .article-tag{display:inline-flex;align-items:center;padding:5px 12px;background:var(--cl-grey-100, #f1f3f7);color:var(--ink, #111);border-radius:980px;font-size:12.5px;font-weight:500;letter-spacing:.01em;text-decoration:none;transition:background .15s ease, transform .15s ease}
       .article-tag:hover{background:var(--cl-grey-200, #e3e6ed);transform:translateY(-1px)}
