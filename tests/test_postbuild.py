@@ -3332,3 +3332,164 @@ def test_fix_social_image_refuses_to_propagate_divider():
     # Should NOT propagate a divider value into og:image.
     out = pb.fix_social_image(html)
     assert out == html
+
+
+# ---------------------------------------------------------------------------
+# Per-article inline language switcher (inject_lang_switcher)
+# ---------------------------------------------------------------------------
+
+_LANGSWITCH_BLOGPOST_HTML = (
+    '<html lang="en-GB"><body>'
+    '<section class="ap-hero"><h1>Quantum-Safe Payments</h1></section>'
+    '<main><div class="wrap-article">'
+    '<script type="application/ld+json">'
+    '{"@type":"BlogPosting","headline":"x","datePublished":"2026-05-19"}'
+    '</script>'
+    '</div></main></body></html>'
+)
+
+
+def test_inject_lang_switcher_emits_rail_when_alternates_exist():
+    import postbuild_lib.article_furniture as af
+    real_alternates = af._alternates_for_en_slug
+    real_resolve = af._resolve_en_slug
+
+    def fake_alternates(en_slug, t):
+        return [
+            ("en", "https://sebastienrousseau.com/an-article/"),
+            ("fr", "https://sebastienrousseau.com/fr/un-article-quantique/"),
+            ("es", "https://sebastienrousseau.com/es/articulo-cuantico/"),
+            ("ja", "https://sebastienrousseau.com/ja/ryoshi-anzen-shiharai/"),
+        ]
+    af._alternates_for_en_slug = fake_alternates
+    af._resolve_en_slug = lambda slug, lang: "an-article"
+    try:
+        out = af.inject_lang_switcher(
+            _LANGSWITCH_BLOGPOST_HTML, "an-article", "en",
+            {"fr": {"un-article-quantique"}, "es": {"articulo-cuantico"},
+             "ja": {"ryoshi-anzen-shiharai"}},
+        )
+    finally:
+        af._alternates_for_en_slug = real_alternates
+        af._resolve_en_slug = real_resolve
+
+    assert 'class="article-langswitch"' in out
+    # Lead-in is the EN string.
+    assert "This post is also available in" in out
+    # Native-script labels rendered, in the curated priority order.
+    fr_pos = out.find("Français")
+    es_pos = out.find("Español")
+    ja_pos = out.find("日本語")
+    assert -1 < fr_pos < es_pos < ja_pos
+    # Each link carries hreflang.
+    assert 'hreflang="fr-FR"' in out
+    assert 'hreflang="ja-JP"' in out
+    # The current page's locale (EN) is excluded from the rail.
+    assert ">English<" not in out
+
+
+def test_inject_lang_switcher_localises_lead_per_locale():
+    import postbuild_lib.article_furniture as af
+    real_alternates = af._alternates_for_en_slug
+    real_resolve = af._resolve_en_slug
+
+    af._alternates_for_en_slug = lambda en_slug, t: [
+        ("en", "https://sebastienrousseau.com/an-article/"),
+        ("fr", "https://sebastienrousseau.com/fr/un-article/"),
+    ]
+    af._resolve_en_slug = lambda slug, lang: "an-article"
+    try:
+        out = af.inject_lang_switcher(
+            _LANGSWITCH_BLOGPOST_HTML, "un-article", "fr",
+            {"fr": {"un-article"}},
+        )
+    finally:
+        af._alternates_for_en_slug = real_alternates
+        af._resolve_en_slug = real_resolve
+
+    # FR page should surface the FR lead-in, not the EN one.
+    assert "Cet article est aussi disponible en" in out
+    # And should advertise EN, not FR (FR is the current page).
+    assert "English" in out
+    assert ">Français<" not in out
+
+
+def test_inject_lang_switcher_emits_rtl_for_arabic():
+    import postbuild_lib.article_furniture as af
+    real_alternates = af._alternates_for_en_slug
+    real_resolve = af._resolve_en_slug
+
+    af._alternates_for_en_slug = lambda en_slug, t: [
+        ("en", "https://sebastienrousseau.com/x/"),
+        ("ar", "https://sebastienrousseau.com/ar/x-ar/"),
+    ]
+    af._resolve_en_slug = lambda slug, lang: "x"
+    try:
+        out = af.inject_lang_switcher(
+            _LANGSWITCH_BLOGPOST_HTML, "x", "en", {"ar": {"x-ar"}},
+        )
+    finally:
+        af._alternates_for_en_slug = real_alternates
+        af._resolve_en_slug = real_resolve
+
+    # Arabic link must carry dir="rtl" so screen readers + browsers
+    # render the script in the correct base direction.
+    assert 'dir="rtl"' in out
+
+
+def test_inject_lang_switcher_skips_non_blogposting():
+    import postbuild_lib.article_furniture as af
+    html = '<html><body><section class="ap-hero"><h1>About</h1></section><main></main></body></html>'
+    out = af.inject_lang_switcher(html, "about", "en", {"fr": {"a-propos"}})
+    assert out == html
+
+
+def test_inject_lang_switcher_skips_when_no_alternates():
+    import postbuild_lib.article_furniture as af
+    real = af._alternates_for_en_slug
+    real_resolve = af._resolve_en_slug
+    af._alternates_for_en_slug = lambda *a, **k: [
+        ("en", "https://sebastienrousseau.com/orphan/"),
+    ]
+    af._resolve_en_slug = lambda slug, lang: "orphan"
+    try:
+        out = af.inject_lang_switcher(
+            _LANGSWITCH_BLOGPOST_HTML, "orphan", "en", {},
+        )
+    finally:
+        af._alternates_for_en_slug = real
+        af._resolve_en_slug = real_resolve
+    assert 'class="article-langswitch"' not in out
+
+
+def test_inject_lang_switcher_skips_when_slug_unresolved():
+    import postbuild_lib.article_furniture as af
+    real_resolve = af._resolve_en_slug
+    af._resolve_en_slug = lambda slug, lang: None
+    try:
+        out = af.inject_lang_switcher(
+            _LANGSWITCH_BLOGPOST_HTML, "mystery", "tr", {},
+        )
+    finally:
+        af._resolve_en_slug = real_resolve
+    assert out == _LANGSWITCH_BLOGPOST_HTML
+
+
+def test_inject_lang_switcher_is_idempotent():
+    import postbuild_lib.article_furniture as af
+    real = af._alternates_for_en_slug
+    real_resolve = af._resolve_en_slug
+    af._alternates_for_en_slug = lambda *a, **k: [
+        ("en", "https://sebastienrousseau.com/x/"),
+        ("fr", "https://sebastienrousseau.com/fr/x-fr/"),
+    ]
+    af._resolve_en_slug = lambda slug, lang: "x"
+    try:
+        once = af.inject_lang_switcher(
+            _LANGSWITCH_BLOGPOST_HTML, "x", "en", {"fr": {"x-fr"}},
+        )
+        twice = af.inject_lang_switcher(once, "x", "en", {"fr": {"x-fr"}})
+    finally:
+        af._alternates_for_en_slug = real
+        af._resolve_en_slug = real_resolve
+    assert once == twice

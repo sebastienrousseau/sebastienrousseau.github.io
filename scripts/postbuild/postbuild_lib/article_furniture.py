@@ -986,6 +986,141 @@ def _alternates_for_en_slug(
     return alts
 
 
+# Per-locale lead-in for the inline language switcher rail. (visible-lead,
+# aria-label). Visible-lead reads naturally before a comma-separated list of
+# native-script language names; aria-label is the accessible name for the
+# <aside> wrapper. Translations match the editorial register used elsewhere
+# on the site — sub-agents that touch this file should not paraphrase.
+_LANG_SWITCH_STRINGS: dict[str, tuple[str, str]] = {
+    "en":      ("This post is also available in",            "Available languages"),
+    "fr":      ("Cet article est aussi disponible en",       "Langues disponibles"),
+    "es":      ("Este artículo también está disponible en",  "Idiomas disponibles"),
+    "de":      ("Dieser Artikel ist auch verfügbar auf",     "Verfügbare Sprachen"),
+    "it":      ("Questo articolo è disponibile anche in",    "Lingue disponibili"),
+    "pt-br":   ("Este artigo também está disponível em",     "Idiomas disponíveis"),
+    "nl":      ("Dit artikel is ook beschikbaar in",         "Beschikbare talen"),
+    "ja":      ("この記事は次の言語でもご覧いただけます",          "対応言語"),
+    "zh-hans": ("本文亦提供以下语言版本",                          "可用语言"),
+    "zh-hant": ("本文亦提供以下語言版本",                          "可用語言"),
+    "ko":      ("이 글은 다음 언어로도 제공됩니다",                  "지원 언어"),
+    "ar":      ("هذه المقالة متوفرة أيضًا باللغات",                "اللغات المتوفرة"),
+    "ru":      ("Эта статья также доступна на",              "Доступные языки"),
+    "pl":      ("Ten artykuł jest również dostępny w",       "Dostępne języki"),
+    "cs":      ("Tento článek je k dispozici také v",        "Dostupné jazyky"),
+    "uk":      ("Ця стаття також доступна",                  "Доступні мови"),
+    "ro":      ("Acest articol este disponibil și în",       "Limbi disponibile"),
+    "tr":      ("Bu makale şu dillerde de mevcuttur",        "Mevcut diller"),
+    "he":      ("מאמר זה זמין גם בשפות",                       "שפות זמינות"),
+    "hi":      ("यह लेख इन भाषाओं में भी उपलब्ध है",                 "उपलब्ध भाषाएँ"),
+    "bn":      ("এই নিবন্ধটি এই ভাষাগুলিতেও উপলব্ধ",                "উপলব্ধ ভাষাসমূহ"),
+    "id":      ("Artikel ini juga tersedia dalam",           "Bahasa yang tersedia"),
+    "vi":      ("Bài viết này cũng có sẵn bằng",             "Ngôn ngữ có sẵn"),
+    "th":      ("บทความนี้มีให้ในภาษาต่อไปนี้ด้วย",                  "ภาษาที่ใช้ได้"),
+    "fil":     ("Available rin ang artikulong ito sa",       "Mga available na wika"),
+    "ha":      ("Wannan labarin yana samuwa kuma a cikin",   "Harsunan da ake samu"),
+    "yo":      ("Àpilẹ̀kọ yìí tún wà ní",                       "Àwọn èdè tó wà"),
+    "sv":      ("Den här artikeln finns även på",            "Tillgängliga språk"),
+}
+
+# Curated rendering order — high-distribution markets first, then alphabetical
+# by code for the long tail. Matches the publish-today dispatch order so the
+# language rail visually mirrors the translation pipeline's priority.
+_LANG_SWITCH_ORDER: tuple[str, ...] = (
+    "fr", "es", "de", "it", "pt-br", "nl",
+    "ja", "zh-hans", "zh-hant", "ko",
+    "ar", "ru", "pl", "cs", "uk", "ro", "tr", "he",
+    "hi", "bn", "id", "vi", "th", "fil", "ha", "yo", "sv",
+    "en",
+)
+
+# Match the closing </section> of the article hero followed by the opening
+# <main>. Insertion target is exactly between them so the rail sits as a
+# distinct band above the body — not competing with tag badges + meta bar
+# inside the hero, not buried below the lead aside.
+_LANG_SWITCH_INSERT_RE = re.compile(
+    r'(</section>)(\s*<main\b)',
+    re.IGNORECASE,
+)
+
+
+def _render_lang_switch_item(
+    code: str, href: str,
+) -> str:
+    """One <li><a> for the lang rail. Sets lang + hreflang + dir=rtl when
+    appropriate so screen readers pronounce the native label correctly."""
+    lang_obj = _lr.get(code)
+    rtl_attr = ' dir="rtl"' if lang_obj.rtl else ''
+    return (
+        f'<li><a href="{href}" lang="{lang_obj.bcp47}" hreflang="{lang_obj.bcp47}"'
+        f' rel="alternate"{rtl_attr}>{lang_obj.long_label}</a></li>'
+    )
+
+
+def _lang_switch_others(
+    en_slug: str, lang: str,
+    translated_per_lang: dict[str, set[str]],
+) -> list[tuple[str, str]]:
+    """Return ``[(code, relative_href), …]`` for every locale this article
+    is available in, excluding the current page's lang, in the
+    :data:`_LANG_SWITCH_ORDER` priority order."""
+    alts = _alternates_for_en_slug(en_slug, translated_per_lang)
+    by_code = {
+        code: url.replace("https://sebastienrousseau.com", "", 1)
+        for code, url in alts
+    }
+    return [
+        (code, by_code[code])
+        for code in _LANG_SWITCH_ORDER
+        if code in by_code and code != lang
+    ]
+
+
+def inject_lang_switcher(
+    html: str,
+    slug: str,
+    lang: str,
+    translated_per_lang: dict[str, set[str]],
+) -> str:
+    """Insert an inline per-article language switcher between the hero
+    and the article body.
+
+    Surfaces the 28-locale advantage to readers as content, not chrome.
+    Different from the site-wide ``.ap-lang-item`` dropdown — that's nav
+    furniture; this is editorial. Both can coexist on the same page.
+
+    Idempotent. Skips:
+      - pages without the BlogPosting JSON-LD anchor (listing / static)
+      - pages already carrying a ``.article-langswitch`` block
+      - articles available in fewer than two locales (no rail needed)
+    """
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="article-langswitch"' in html:
+        return html
+    en_slug = _resolve_en_slug(slug, lang)
+    if en_slug is None:
+        return html
+    others = _lang_switch_others(en_slug, lang, translated_per_lang)
+    if not others:
+        return html
+
+    lead_text, aria_label = _LANG_SWITCH_STRINGS.get(
+        lang, _LANG_SWITCH_STRINGS["en"],
+    )
+    items = "".join(_render_lang_switch_item(c, h) for c, h in others)
+    aside = (
+        f'<aside class="article-langswitch" aria-label="{aria_label}">'
+        f'<span class="article-langswitch-lead">{lead_text}</span> '
+        f'<ul class="article-langswitch-list">{items}</ul>'
+        f'</aside>'
+    )
+
+    new_html, n = _LANG_SWITCH_INSERT_RE.subn(
+        lambda m: f'{m.group(1)}{aside}{m.group(2)}', html, count=1,
+    )
+    return new_html if n else html
+
+
 def inject_hreflang(
     html: str,
     slug: str,

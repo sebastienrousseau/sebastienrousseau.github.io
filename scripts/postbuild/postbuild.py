@@ -790,6 +790,7 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     inject_article_furniture,
     inject_citations,
     inject_hreflang,
+    inject_lang_switcher,
     inject_mermaid,
     inject_nav_active,
     inject_prev_next_nav,
@@ -863,6 +864,7 @@ class _PostbuildCounters:
         "hreflang_patched",
         "img_dims_patched",
         "itemlist_patched",
+        "langswitch_patched",
         "lcp_preloaded",
         "link_hoisted",
         "localhost_patched",
@@ -1180,6 +1182,22 @@ def _process_page(page: Path, ctx: _PostbuildContext) -> None:
     original = page.read_text(encoding="utf-8", errors="ignore")
     patched_about = _apply_seo_passes(original, page, ctx.counters)
     patched_src = _apply_article_passes(patched_about, page, ctx.counters)
+    # Per-article inline language switcher — runs after article furniture
+    # because it inserts between the hero <section> and <main>, which
+    # furniture has already populated. Needs ctx for translated_per_lang.
+    slug = page.parent.name
+    parent_dir = page.parent.parent.name
+    page_lang_for_ls = (
+        parent_dir
+        if parent_dir in ctx.translated_per_lang
+        else "en"
+    )
+    new_src = inject_lang_switcher(
+        patched_src, slug, page_lang_for_ls, ctx.translated_per_lang,
+    )
+    if new_src != patched_src:
+        ctx.counters.langswitch_patched += 1
+        patched_src = new_src
     patched_nav = _apply_nav_passes(patched_src, page, ctx)
     prev_hl = patched_nav
     patched_hl = _apply_hreflang_pass(patched_nav, page, ctx)
@@ -1286,6 +1304,7 @@ def main() -> None:
         f"{c.wc_patched} got wordCount, "
         f"{c.about_patched} got about/mentions entities, "
         f"{c.furniture_patched} got tag badges + meta bar, "
+        f"{c.langswitch_patched} got inline language rail, "
         f"{c.anchor_patched} got anchor links + ToC, "
         f"{c.citation_patched} got citation graphs, "
         f"{c.sources_patched} got visible sources list, "
