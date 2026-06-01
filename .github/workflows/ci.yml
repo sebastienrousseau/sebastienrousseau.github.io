@@ -213,7 +213,10 @@ jobs:
           node-version: "20"
 
       - name: Install Lighthouse CI
-        run: npm install -g @lhci/cli@^0.13
+        # 0.14.x bundles Lighthouse 12.x, which is the first version with a
+        # stable `interaction-to-next-paint` audit. Required to match the
+        # lighthouserc.json INP assertion.
+        run: npm install -g @lhci/cli@0.14.x
 
       - name: Run Lighthouse CI
         run: lhci autorun
