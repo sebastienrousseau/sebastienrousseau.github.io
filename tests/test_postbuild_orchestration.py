@@ -632,8 +632,9 @@ _DATED_TECH_TRIGGER_HTML = (
 
 
 def test_apply_seo_passes_fires_techarticle_on_dated_article(fake_public: Path):
-    """inject_tech_article only fires for dated /YYYY-MM-DD-*/ pages
-    whose keywords name a programming language. Drives L705."""
+    """inject_tech_article fires for every dated /YYYY-MM-DD-*/ page.
+    Type is TechArticle by default, ScholarlyArticle when the rendered
+    body cites enough authority-domain sources. Drives L705."""
     page = fake_public / "2026-05-19-trigger" / "index.html"
     page.parent.mkdir()
     page.write_text(_DATED_TECH_TRIGGER_HTML, encoding="utf-8")

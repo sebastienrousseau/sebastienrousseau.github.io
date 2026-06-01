@@ -105,9 +105,10 @@ def build_index() -> dict[str, object]:
             "wikidata": None,
         },
         "endpoints": {
-            "posts":   {"url": f"{BASE}/api/agents/posts.json",   "description": "All dated posts with metadata"},
-            "topics":  {"url": f"{BASE}/api/agents/topics.json",  "description": "Curated topic clusters + slug lists"},
-            "person":  {"url": f"{BASE}/api/agents/person.json",  "description": "Author profile (Person schema)"},
+            "posts":        {"url": f"{BASE}/api/agents/posts.json",        "description": "All dated posts with metadata"},
+            "topics":       {"url": f"{BASE}/api/agents/topics.json",       "description": "Curated topic clusters + slug lists"},
+            "person":       {"url": f"{BASE}/api/agents/person.json",       "description": "Author profile (Person schema with ORCID + hasCredential + knowsAbout)"},
+            "organization": {"url": f"{BASE}/api/agents/organization.json", "description": "Publisher organisation (Organization + Brand schema)"},
         },
         "see_also": {
             "llms_txt":     f"{BASE}/llms.txt",
@@ -140,7 +141,14 @@ def build_topics_payload() -> dict[str, object]:
     }
 
 
+ORCID_ID = "0009-0005-1434-284X"
+
+
 def build_person() -> dict[str, object]:
+    """Person graph carrying ORCID identifier, hasCredential chain, and
+    knowsAbout as DefinedTerm objects with sameAs links to Wikipedia /
+    standards-body authoritative URLs. Matches the @graph block emitted
+    in _layouts/*.html — keep both in sync."""
     return {
         "@context": "https://schema.org",
         "@type": "Person",
@@ -148,18 +156,32 @@ def build_person() -> dict[str, object]:
         "name": "Sebastien Rousseau",
         "givenName": "Sebastien",
         "familyName": "Rousseau",
-        "url": BASE,
+        "url": BASE + "/",
+        "image": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
         "jobTitle": "Senior Product Manager",
-        "worksFor": {"@type": "Organization", "name": "HSBC Commercial & Investment Bank", "url": "https://www.hsbc.com/"},
-        "knowsAbout": [
-            "Post-quantum cryptography",
-            "ISO 20022",
-            "Wholesale payments",
-            "Applied artificial intelligence in banking",
-            "Generative AI for financial services",
-            "CRYSTALS-Kyber",
-            "SEPA Instant Payments",
-            "SWIFT gpi",
+        "description": (
+            "AI, banking and financial services expert. Senior payments leader "
+            "with 20+ years across Tier-1 banks. Applied AI, wholesale payments, "
+            "ISO 20022 migration, and post-quantum cryptography for financial services."
+        ),
+        "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "ORCID",
+            "value": ORCID_ID,
+            "url": f"https://orcid.org/{ORCID_ID}",
+        },
+        "worksFor": {
+            "@type": "Organization",
+            "@id": "https://www.hsbc.com/#organization",
+            "name": "HSBC Commercial & Investment Bank",
+            "url": "https://www.hsbc.com/",
+        },
+        "alumniOf": [
+            {"@type": "Organization", "name": "PayPal", "url": "https://www.paypal.com/"},
+            {"@type": "Organization", "name": "Barclays", "url": "https://www.barclays.com/"},
+            {"@type": "Organization", "name": "Shazam Entertainment", "url": "https://www.shazam.com/"},
+            {"@type": "Organization", "name": "AKQA", "url": "https://www.akqa.com/"},
+            {"@type": "Organization", "name": "Virgin Group", "url": "https://www.virgin.com/"},
         ],
         "memberOf": {
             "@type": "ProgramMembership",
@@ -170,12 +192,80 @@ def build_person() -> dict[str, object]:
                 "url": "https://emergingpaymentsasia.org/",
             },
         },
+        "hasCredential": [
+            {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "professional experience",
+                "name": "20+ years across Tier-1 banks and global payments infrastructure",
+                "recognizedBy": {"@type": "Organization", "name": "HSBC Commercial & Investment Bank", "url": "https://www.hsbc.com/"},
+            },
+            {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "domain expertise",
+                "name": "ISO 20022 migration and wholesale payments architecture",
+                "recognizedBy": {"@type": "Organization", "name": "SWIFT", "url": "https://www.swift.com/"},
+            },
+            {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "domain expertise",
+                "name": "Post-Quantum Cryptography for financial services",
+                "recognizedBy": {"@type": "Organization", "name": "NIST Post-Quantum Cryptography Project", "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"},
+            },
+        ],
+        "knowsAbout": [
+            {"@type": "DefinedTerm", "name": "Post-Quantum Cryptography", "sameAs": "https://en.wikipedia.org/wiki/Post-quantum_cryptography"},
+            {"@type": "DefinedTerm", "name": "ML-KEM (FIPS 203)", "sameAs": "https://csrc.nist.gov/pubs/fips/203/final"},
+            {"@type": "DefinedTerm", "name": "ML-DSA (FIPS 204)", "sameAs": "https://csrc.nist.gov/pubs/fips/204/final"},
+            {"@type": "DefinedTerm", "name": "ISO 20022", "sameAs": "https://en.wikipedia.org/wiki/ISO_20022"},
+            {"@type": "DefinedTerm", "name": "SWIFT gpi", "sameAs": "https://www.swift.com/our-solutions/swift-gpi"},
+            {"@type": "DefinedTerm", "name": "SEPA Instant Payments", "sameAs": "https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/index.en.html"},
+            {"@type": "DefinedTerm", "name": "FedNow Service", "sameAs": "https://www.federalreserve.gov/paymentsystems/fednow_about.htm"},
+            {"@type": "DefinedTerm", "name": "Real-Time Payments (RTP)", "sameAs": "https://www.theclearinghouse.org/payment-systems/rtp"},
+            {"@type": "DefinedTerm", "name": "Cross-border payments", "sameAs": "https://en.wikipedia.org/wiki/Cross-border_payments"},
+            {"@type": "DefinedTerm", "name": "Wholesale banking", "sameAs": "https://en.wikipedia.org/wiki/Wholesale_banking"},
+            {"@type": "DefinedTerm", "name": "Applied artificial intelligence in banking", "sameAs": "https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence"},
+            {"@type": "DefinedTerm", "name": "Generative artificial intelligence", "sameAs": "https://en.wikipedia.org/wiki/Generative_artificial_intelligence"},
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "London",
+            "addressCountry": "United Kingdom",
+        },
         "sameAs": [
+            f"https://orcid.org/{ORCID_ID}",
             "https://twitter.com/wwdseb",
             "https://www.linkedin.com/in/sebastienrousseau/",
             "https://medium.com/@BankingOnQuantum",
             "https://www.youtube.com/@BankingOnQuantum",
             "https://github.com/sebastienrousseau",
+        ],
+    }
+
+
+def build_organization() -> dict[str, object]:
+    """Site Organization graph node. Separate file so AI crawlers walking
+    /api/agents/ can discover the publisher entity without parsing HTML."""
+    return {
+        "@context": "https://schema.org",
+        "@type": ["Organization", "Brand"],
+        "@id": f"{BASE}/#organization",
+        "name": "Sebastien Rousseau",
+        "alternateName": "Banking on Quantum",
+        "url": BASE + "/",
+        "logo": {
+            "@type": "ImageObject",
+            "@id": f"{BASE}/#logo",
+            "url": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
+            "width": "512",
+            "height": "512",
+            "caption": "Sebastien Rousseau",
+        },
+        "founder": {"@id": f"{BASE}/#person"},
+        "sameAs": [
+            "https://github.com/sebastienrousseau",
+            "https://twitter.com/wwdseb",
+            "https://www.linkedin.com/in/sebastienrousseau/",
+            "https://medium.com/@BankingOnQuantum",
         ],
     }
 
@@ -192,7 +282,11 @@ def main() -> None:
     write_json(OUT / "posts.json", {"count": len(posts), "posts": posts})
     write_json(OUT / "topics.json", build_topics_payload())
     write_json(OUT / "person.json", build_person())
-    print(f"build_agent_api: wrote {len(posts)} posts + {len(TOPICS)} topics + person + index")
+    write_json(OUT / "organization.json", build_organization())
+    print(
+        f"build_agent_api: wrote {len(posts)} posts + {len(TOPICS)} topics "
+        "+ person + organization + index",
+    )
 
 
 if __name__ == "__main__":

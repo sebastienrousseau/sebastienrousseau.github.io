@@ -12,14 +12,21 @@ import re
 from postbuild_lib import schemas as sc
 
 
-def _extract_tech_article(html: str) -> dict:
-    """Pull the TechArticle JSON-LD body out of a rendered HTML page."""
+def _extract_article_block(html: str, type_name: str = "TechArticle") -> dict:
+    """Pull a TechArticle or ScholarlyArticle JSON-LD body out of HTML."""
     pattern = re.compile(
-        r'<script[^>]*>(\{"@context":"https://schema.org","@type":"TechArticle"[^<]+)</script>'
+        r'<script[^>]*>(\{"@context":"https://schema.org","@type":"'
+        + type_name
+        + r'"[^<]+)</script>'
     )
     m = pattern.search(html)
-    assert m is not None, "TechArticle block not found"
+    assert m is not None, f"{type_name} block not found"
     return json.loads(m.group(1))
+
+
+def _extract_tech_article(html: str) -> dict:
+    """Pull the TechArticle JSON-LD body out of a rendered HTML page."""
+    return _extract_article_block(html, "TechArticle")
 
 
 # ---------------------------------------------------------------------------
@@ -134,18 +141,42 @@ def test_inject_tech_article_emits_block_for_rust_post():
     assert "Post-Quantum Cryptography" in data["dependencies"]
     assert data["headline"].startswith("Quantum-Safe Payments")
     assert data["inLanguage"] == "en-GB"
+    assert data["author"] == {"@id": "https://sebastienrousseau.com/#person"}
+    assert data["publisher"] == {
+        "@id": "https://sebastienrousseau.com/#organization"
+    }
 
 
-def test_inject_tech_article_skips_non_technical_post():
+def test_inject_tech_article_emits_block_for_non_technical_post():
+    """Non-technical dated posts now still earn a TechArticle block —
+    the Article-subtype signal is what AI Overview ranks on, not the
+    dependencies list. The block just omits programmingLanguage /
+    dependencies when the keyword set doesn't name them."""
     page = sc.PUBLIC / "2025-09-01-foo" / "index.html"
     html = _article_html("interview, biography, leadership")
-    assert sc.inject_tech_article(page, html) == html
+    out = sc.inject_tech_article(page, html)
+    data = _extract_tech_article(out)
+    assert "programmingLanguage" not in data
+    assert "dependencies" not in data
+    assert data["headline"].startswith("Quantum-Safe Payments")
 
 
-def test_inject_tech_article_skips_when_keywords_missing():
+def test_inject_tech_article_emits_block_when_keywords_missing():
+    """Dated post without <meta name=keywords> still earns a TechArticle
+    block — the title + canonical anchor is enough."""
     page = sc.PUBLIC / "2025-09-01-foo" / "index.html"
-    html = '<html lang="en"><head><title>Foo — Sebastien Rousseau</title></head><body></body></html>'
-    assert sc.inject_tech_article(page, html) == html
+    html = (
+        '<html lang="en"><head>'
+        '<title>Foo — Sebastien Rousseau</title>'
+        '<link rel="canonical" href="https://example.com/x/">'
+        "</head><body></body></html>"
+    )
+    out = sc.inject_tech_article(page, html)
+    data = _extract_tech_article(out)
+    assert "programmingLanguage" not in data
+    assert "dependencies" not in data
+    assert "keywords" not in data
+    assert data["headline"] == "Foo"
 
 
 def test_inject_tech_article_skips_when_title_missing():
@@ -191,6 +222,78 @@ def test_inject_tech_article_emits_languages_list_when_multiple_match():
     out = sc.inject_tech_article(page, html)
     data = _extract_tech_article(out)
     assert set(data["programmingLanguage"]) == {"Rust", "Python"}
+
+
+# ---------------------------------------------------------------------------
+# ScholarlyArticle upgrade — fires when citation-authority count
+# crosses sc.SCHOLARLY_CITATION_THRESHOLD.
+# ---------------------------------------------------------------------------
+
+def _article_html_with_main_links(
+    keywords: str, links: list[str],
+) -> str:
+    """Build an article page with `<main><div class="wrap-...">` so
+    article_furniture._extract_citations can walk the body."""
+    body_links = "".join(f'<a href="{u}">cite</a>' for u in links)
+    return (
+        '<html lang="en-GB"><head>'
+        '<title>Quantum-Safe Payments — Sebastien Rousseau</title>'
+        '<link rel="canonical" href="https://sebastienrousseau.com/2025-09-01-foo/">'
+        f'<meta name="keywords" content="{keywords}">'
+        '</head><body><main><div class="wrap-article">'
+        + body_links +
+        '</div></main></body></html>'
+    )
+
+
+def test_inject_tech_article_upgrades_to_scholarly_when_six_citations():
+    page = sc.PUBLIC / "2025-09-01-foo" / "index.html"
+    # Six distinct authority-domain links — meets the threshold.
+    html = _article_html_with_main_links("rust, payments", [
+        "https://www.nist.gov/post-quantum",
+        "https://csrc.nist.gov/projects/post-quantum-cryptography",
+        "https://www.iso.org/standard/12345",
+        "https://www.bis.org/publ/work1208.htm",
+        "https://www.ietf.org/rfc/rfc9540",
+        "https://www.swift.com/our-solutions/swift-gpi",
+    ])
+    out = sc.inject_tech_article(page, html)
+    data = _extract_article_block(out, "ScholarlyArticle")
+    assert data["@type"] == "ScholarlyArticle"
+    assert isinstance(data["citation"], list)
+    assert len(data["citation"]) == 6
+    # ScholarlyArticle drops the TechArticle-specific developer hints.
+    assert "proficiencyLevel" not in data
+    assert "programmingLanguage" not in data
+
+
+def test_inject_tech_article_stays_tech_when_below_threshold():
+    page = sc.PUBLIC / "2025-09-01-foo" / "index.html"
+    # Five authority-domain links — below threshold (6).
+    html = _article_html_with_main_links("rust, payments", [
+        "https://www.nist.gov/x",
+        "https://www.iso.org/y",
+        "https://www.bis.org/z",
+        "https://www.swift.com/q",
+        "https://www.ietf.org/r",
+    ])
+    out = sc.inject_tech_article(page, html)
+    data = _extract_tech_article(out)
+    assert data["@type"] == "TechArticle"
+    # Non-authority outbound links don't count toward the threshold.
+    assert "citation" not in data
+
+
+def test_inject_tech_article_idempotent_when_scholarly_present():
+    page = sc.PUBLIC / "2025-09-01-foo" / "index.html"
+    html = _article_html_with_main_links("rust, payments", [
+        "https://www.nist.gov/a", "https://csrc.nist.gov/b",
+        "https://www.iso.org/c",  "https://www.bis.org/d",
+        "https://www.ietf.org/e", "https://www.swift.com/f",
+    ])
+    once = sc.inject_tech_article(page, html)
+    twice = sc.inject_tech_article(page, once)
+    assert once == twice
 
 
 # ---------------------------------------------------------------------------
