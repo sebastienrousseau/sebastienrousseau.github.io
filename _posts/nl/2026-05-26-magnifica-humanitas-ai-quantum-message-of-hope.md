@@ -69,7 +69,7 @@ msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "Een nuchtere, industriële lezing van Magnifica Humanitas van Paus Leo XIV — de eerste pauselijke encycliek over AI — afgezet tegen de precedenten van trein, auto, kernenergie en internet, en eindigend op de hoop."
-twitter_image: "https://cloudcdn.pro/sebastienrousseau/v1/logos/sebastienrousseau.png"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Magnifica Humanitas: een lezing van de pauselijke AI-encycliek"
@@ -81,7 +81,7 @@ thanks: "Thanks for reading!"
 site_last_updated: "2026-05-26"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
+site_software: "Static Site Generator, Rust"
 ---
 
 # Magnifica Humanitas: een industrielezing van de eerste pauselijke encycliek over kunstmatige intelligentie

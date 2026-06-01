@@ -69,7 +69,7 @@ msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "Obiektywna, branżowa lektura encykliki Magnifica Humanitas Papieża Leona XIV — pierwszej encykliki o AI — na tle precedensów pociągu, automobilu, energii jądrowej i internetu. Kończy się nadzieją."
-twitter_image: "https://cloudcdn.pro/sebastienrousseau/v1/logos/sebastienrousseau.png"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Magnifica Humanitas: branżowa lektura encykliki papieskiej o AI"
@@ -81,7 +81,7 @@ thanks: "Thanks for reading!"
 site_last_updated: "2026-05-26"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
+site_software: "Static Site Generator, Rust"
 ---
 
 # Magnifica Humanitas: branżowa lektura pierwszej encykliki papieskiej o sztucznej inteligencji
