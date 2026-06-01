@@ -144,6 +144,29 @@ def _page_lang(html: str) -> str:
 SCHOLARLY_CITATION_THRESHOLD = 6
 
 
+def _tech_payload(
+    languages: list[str], dependencies: list[str],
+) -> dict[str, object]:
+    """TechArticle-specific developer hints."""
+    payload: dict[str, object] = {"proficiencyLevel": "Expert"}
+    if languages:
+        payload["programmingLanguage"] = (
+            languages if len(languages) > 1 else languages[0]
+        )
+    if dependencies:
+        payload["dependencies"] = dependencies
+    return payload
+
+
+def _detect_kw_signals(html: str) -> tuple[list[str], list[str], list[str]]:
+    """Return (keywords, languages, dependencies) for the page."""
+    keywords = _parse_keywords(html)
+    if not keywords:
+        return [], [], []
+    kw_lower = ", ".join(keywords).lower()
+    return keywords, _detect_languages(kw_lower), _detect_dependencies(kw_lower)
+
+
 def _tech_article_graph(
     html: str, page: Path,
 ) -> dict[str, object] | None:
@@ -167,25 +190,19 @@ def _tech_article_graph(
     if not title_m or not canon_m:
         return None
 
-    keywords = _parse_keywords(html)
-    kw_lower = ", ".join(keywords).lower() if keywords else ""
-    languages = _detect_languages(kw_lower) if kw_lower else []
-    dependencies = _detect_dependencies(kw_lower) if kw_lower else []
-
     # Late import to avoid a circular at module load — article_furniture
     # already imports from postbuild_lib.seo, so going the other way
     # via top-level import would close the loop.
     from postbuild_lib.article_furniture import _extract_citations
     citations = _extract_citations(html)
     is_scholarly = len(citations) >= SCHOLARLY_CITATION_THRESHOLD
+    keywords, languages, dependencies = _detect_kw_signals(html)
 
     headline = _html.unescape(title_m.group(1)).split(" — ")[0].strip()
     url = _html.unescape(canon_m.group(1))
-    article_type = "ScholarlyArticle" if is_scholarly else "TechArticle"
-
     graph: dict[str, object] = {
         "@context": "https://schema.org",
-        "@type": article_type,
+        "@type": "ScholarlyArticle" if is_scholarly else "TechArticle",
         "headline": headline,
         "url": url,
         "inLanguage": _page_lang(html),
@@ -197,17 +214,9 @@ def _tech_article_graph(
     if keywords:
         graph["keywords"] = ", ".join(keywords)
     if is_scholarly:
-        # ScholarlyArticle convention: citation array is load-bearing.
         graph["citation"] = citations
     else:
-        # TechArticle convention: developer-relevance hints.
-        graph["proficiencyLevel"] = "Expert"
-        if languages:
-            graph["programmingLanguage"] = (
-                languages if len(languages) > 1 else languages[0]
-            )
-        if dependencies:
-            graph["dependencies"] = dependencies
+        graph.update(_tech_payload(languages, dependencies))
     return graph
 
 
