@@ -1,14 +1,25 @@
-"""Additional Schema.org JSON-LD passes — TechArticle + SoftwareSourceCode.
+"""Additional Schema.org JSON-LD passes — TechArticle / ScholarlyArticle
++ SoftwareSourceCode.
 
 The site already emits BlogPosting for every dated article and an ItemList
 for /articles/, /papers/, /projects/. This module layers two more types:
 
-* :func:`inject_tech_article` — adds a ``TechArticle`` block alongside
-  BlogPosting for posts whose keyword set names a programming language
-  or one of the site's technical domains (PQC, ISO 20022, AI, Rust).
-  TechArticle is a richer Article subtype: search engines + AI agents
-  use ``dependencies`` + ``programmingLanguage`` to surface the post
-  as a code-relevant result.
+* :func:`inject_tech_article` — adds a richer Article subtype block on
+  every dated post. The type is chosen at runtime:
+
+  - **ScholarlyArticle** when the article cites at least
+    :data:`SCHOLARLY_CITATION_THRESHOLD` distinct primary-source
+    authorities (NIST, ISO, BIS, IETF, …). Carries the citation array
+    natively so AI engines walking the JSON-LD see a peer-reviewable
+    document graph.
+  - **TechArticle** otherwise. Carries ``programmingLanguage`` and
+    ``dependencies`` when the keyword set names them.
+
+  Both inherit from ``Article`` and AI Overview / Google Search pick
+  the more specific subtype when present. The existing BlogPosting
+  block remains untouched so the postbuild gates (``article_furniture``,
+  ``seo``, ``build_translations``) keep matching their substrings.
+
 * :func:`inject_software_source_code` — for /projects/index.html only,
   replaces the plain ListItem entries (already injected by
   postbuild.inject_itemlist) with ``SoftwareSourceCode``-typed items
@@ -125,51 +136,102 @@ def _page_lang(html: str) -> str:
     return (m.group(1) if m else "en-GB")
 
 
+# A page with at least this many distinct primary-source citations
+# (NIST / ISO / BIS / IETF / …) earns the ScholarlyArticle subtype.
+# Below the threshold we still emit TechArticle. Six is the heuristic
+# used by the BIS Working Paper style sheet — fewer than six and the
+# piece reads as commentary; six or more and it reads as research.
+SCHOLARLY_CITATION_THRESHOLD = 6
+
+
+def _tech_payload(
+    languages: list[str], dependencies: list[str],
+) -> dict[str, object]:
+    """TechArticle-specific developer hints."""
+    payload: dict[str, object] = {"proficiencyLevel": "Expert"}
+    if languages:
+        payload["programmingLanguage"] = (
+            languages if len(languages) > 1 else languages[0]
+        )
+    if dependencies:
+        payload["dependencies"] = dependencies
+    return payload
+
+
+def _detect_kw_signals(html: str) -> tuple[list[str], list[str], list[str]]:
+    """Return (keywords, languages, dependencies) for the page."""
+    keywords = _parse_keywords(html)
+    if not keywords:
+        return [], [], []
+    kw_lower = ", ".join(keywords).lower()
+    return keywords, _detect_languages(kw_lower), _detect_dependencies(kw_lower)
+
+
 def _tech_article_graph(
     html: str, page: Path,
 ) -> dict[str, object] | None:
-    """Build the TechArticle JSON-LD payload, or return None if the
-    post isn't technical enough to warrant the upgrade."""
-    keywords = _parse_keywords(html)
-    if not keywords:
-        return None
-    kw_lower = ", ".join(keywords).lower()
-    languages = _detect_languages(kw_lower)
-    dependencies = _detect_dependencies(kw_lower)
-    # We only emit TechArticle when there's something tech-y to carry.
-    if not languages and not dependencies:
-        return None
+    """Build the richer Article-subtype JSON-LD payload for a dated post.
+
+    Returns ``None`` only when the page is missing the structural anchors
+    we need (title, canonical URL). For every other dated post the
+    function returns:
+
+    * ``ScholarlyArticle`` when the rendered body cites
+      ``SCHOLARLY_CITATION_THRESHOLD`` or more distinct authority-domain
+      URLs (the same set ``inject_citations`` writes into BlogPosting).
+      The citation array is duplicated into the new block so AI engines
+      and academic-graph crawlers walking just the ScholarlyArticle node
+      still see the full provenance chain.
+    * ``TechArticle`` otherwise — with ``programmingLanguage`` and
+      ``dependencies`` populated when the keyword set names them.
+    """
     title_m = _title_re.search(html)
     canon_m = _canonical_re.search(html)
     if not title_m or not canon_m:
         return None
+
+    # Late import to avoid a circular at module load — article_furniture
+    # already imports from postbuild_lib.seo, so going the other way
+    # via top-level import would close the loop.
+    from postbuild_lib.article_furniture import _extract_citations
+    citations = _extract_citations(html)
+    is_scholarly = len(citations) >= SCHOLARLY_CITATION_THRESHOLD
+    keywords, languages, dependencies = _detect_kw_signals(html)
+
     headline = _html.unescape(title_m.group(1)).split(" — ")[0].strip()
     url = _html.unescape(canon_m.group(1))
     graph: dict[str, object] = {
         "@context": "https://schema.org",
-        "@type": "TechArticle",
+        "@type": "ScholarlyArticle" if is_scholarly else "TechArticle",
         "headline": headline,
         "url": url,
         "inLanguage": _page_lang(html),
         "isAccessibleForFree": True,
-        "proficiencyLevel": "Expert",
-        "keywords": ", ".join(keywords),
+        "author": {"@id": "https://sebastienrousseau.com/#person"},
+        "publisher": {"@id": "https://sebastienrousseau.com/#organization"},
+        "mainEntityOfPage": {"@type": "WebPage", "@id": url},
     }
-    if languages:
-        graph["programmingLanguage"] = languages if len(languages) > 1 else languages[0]
-    if dependencies:
-        graph["dependencies"] = dependencies
+    if keywords:
+        graph["keywords"] = ", ".join(keywords)
+    if is_scholarly:
+        graph["citation"] = citations
+    else:
+        graph.update(_tech_payload(languages, dependencies))
     return graph
 
 
 def inject_tech_article(page: Path, html: str) -> str:
-    """Add a TechArticle JSON-LD block to dated post pages. Skip pages
-    that already carry one (idempotent), pages that aren't dated posts,
-    and pages whose keywords don't name a programming language or one
-    of the site's technical domains."""
+    """Add a TechArticle (or ScholarlyArticle, when citation-heavy)
+    JSON-LD block to every dated post page. Idempotent — skipped if a
+    TechArticle or ScholarlyArticle block already exists on the page,
+    or if the page isn't a dated post."""
     if not _is_dated_article(page):
         return html
-    if '"@type":"TechArticle"' in html or '"@type": "TechArticle"' in html:
+    if (
+        '"@type":"TechArticle"' in html or '"@type": "TechArticle"' in html
+        or '"@type":"ScholarlyArticle"' in html
+        or '"@type": "ScholarlyArticle"' in html
+    ):
         return html
     graph = _tech_article_graph(html, page)
     if graph is None:
