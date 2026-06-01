@@ -69,7 +69,7 @@ msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "Objektivní čtení encykliky Magnifica Humanitas papeže Lva XIV. — první papežské encykliky o UI — z pohledu průmyslu, na pozadí vlaku, automobilu, jaderné energie a internetu, s vyústěním v naději."
-twitter_image: "https://cloudcdn.pro/sebastienrousseau/v1/logos/sebastienrousseau.png"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Magnifica Humanitas: čtení papežské encykliky z pohledu UI"
@@ -81,7 +81,7 @@ thanks: "Thanks for reading!"
 site_last_updated: "2026-05-26"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
+site_software: "Static Site Generator, Rust"
 ---
 
 # Magnifica Humanitas: čtení první papežské encykliky o umělé inteligenci z pohledu průmyslu

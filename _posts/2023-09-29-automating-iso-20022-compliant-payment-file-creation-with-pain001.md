@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Sep 29, 2023"
-description: "pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats."
+description: "Automate the creation of ISO 20022 pain.001 payment files from CSV or SQLite. pain001 is the open-source Python library that streamlines compliance."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -39,7 +39,7 @@ referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "Generating ISO 20022 pain.001.001.09 XML from CSV or SQLite with automatic XSD validation"
+subtitle: "ISO 20022 payment automation and wholesale-payments engineering with pain001."
 tags: "pain001, ISO20022, pain001001009, CustomerCreditTransferInitiation, SEPACreditTransfer, CBPR, PaymentAutomation, XMLGeneration, XSDValidation, SWIFT"
 theme-color: "0, 67, 165"
 title: "Automating ISO 20022 Payment Files Creation with pain001"
@@ -114,7 +114,7 @@ last_reviewed: "2026-05-24"
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Automate the creation of ISO 20022 pain.001 payment files from CSV or SQLite. pain001 is the open-source Python library that streamlines compliance.</p>
 <p class="post-lead-heading"><strong>Key takeaways</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>ISO 20022 pain.001 Message Structure.</strong> The ISO 20022 pain.001.001.09 (CustomerCreditTransferInitiation) message has three levels:.</li>
@@ -295,7 +295,7 @@ pain001 raises a `pain001.exceptions.ValidationError` with the lxml validation m
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-31">2026-05-31</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-06-01">2026-06-01</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

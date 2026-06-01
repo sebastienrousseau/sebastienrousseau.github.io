@@ -26,19 +26,27 @@ def _all_active_non_en_langs() -> list[str]:
 
 
 # ---------------------------------------------------------------------------
-# 6a. robots.txt — explicit AI crawler rules
+# 6a. robots.txt — explicit per-category crawler stance
 # ---------------------------------------------------------------------------
 #
-# Default robots.txt that SSG emits is just "User-agent: *" + Sitemap. The
-# spec for major AI crawlers is to keep separate User-agent blocks rather
-# than rely on the wildcard, so each ML team can be addressed independently
-# in future without rewriting the whole file. We allow all AI crawlers
-# because the goal is broad LLM citation; flip any line to `Disallow: /`
-# to opt out of that specific bot.
-ROBOTS_BODY = """User-agent: *
+# Default robots.txt that SSG emits is just "User-agent: *" + Sitemap. We
+# replace it with an explicit per-bot taxonomy so each crawler family
+# (search / social preview / AI retrieval / AI training / SEO audit) can
+# be addressed and reasoned about independently — and so the stance is
+# legible to humans, not just bots.
+#
+# Current stance: ALLOW everywhere. Goal is broad LLM citation under the
+# CC BY-4.0 license posted at /about/#bot-policy. Flip any block to
+# `Disallow: /` to opt out per-bot — the categorisation makes the
+# trade-off visible at the point of decision.
+ROBOTS_BODY = """# Crawler policy for sebastienrousseau.com
+# Human-readable version: https://sebastienrousseau.com/about/#bot-policy
+# License of crawled content: CC BY-4.0 — attribution required.
+
+User-agent: *
 Allow: /
 
-# Web search + general-purpose crawlers
+# -- Web search engines -----------------------------------------------------
 User-agent: Googlebot
 Allow: /
 
@@ -60,12 +68,7 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-User-agent: AhrefsBot
-Allow: /
-
-User-agent: SemrushBot
-Allow: /
-
+# -- Social / link-preview --------------------------------------------------
 User-agent: facebookexternalhit
 Allow: /
 
@@ -75,18 +78,29 @@ Allow: /
 User-agent: LinkedInBot
 Allow: /
 
-# AI / LLM crawlers — broad citation rather than blanket block. Flip any
-# block to `Disallow: /` to opt out per-bot.
-User-agent: GPTBot
+# -- SEO audit / link-graph crawlers ---------------------------------------
+User-agent: AhrefsBot
 Allow: /
 
+User-agent: SemrushBot
+Allow: /
+
+# -- AI retrieval (cite-on-query) ------------------------------------------
+# These crawlers fetch on user-query and surface citations. Highest-signal
+# bots for the site's distribution strategy.
 User-agent: ChatGPT-User
 Allow: /
 
 User-agent: OAI-SearchBot
 Allow: /
 
-User-agent: Google-Extended
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-Web
 Allow: /
 
 User-agent: PerplexityBot
@@ -95,13 +109,26 @@ Allow: /
 User-agent: Perplexity-User
 Allow: /
 
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# -- AI training crawlers ---------------------------------------------------
+# Broad-ingest model-training bots. Allowed under CC BY-4.0; attribution
+# requested per /about/#bot-policy. Flip any line to `Disallow: /` to
+# opt out of that specific corpus.
+User-agent: GPTBot
+Allow: /
+
 User-agent: ClaudeBot
 Allow: /
 
-User-agent: Claude-Web
+User-agent: anthropic-ai
 Allow: /
 
-User-agent: anthropic-ai
+User-agent: Google-Extended
 Allow: /
 
 User-agent: Amazonbot
@@ -119,12 +146,6 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-User-agent: ImagesiftBot
-Allow: /
-
-User-agent: Diffbot
-Allow: /
-
 User-agent: meta-externalagent
 Allow: /
 
@@ -134,18 +155,29 @@ Allow: /
 User-agent: facebook-externalhit-llama
 Allow: /
 
-User-agent: MistralAI-User
+# -- Specialised indexers ---------------------------------------------------
+User-agent: ImagesiftBot
 Allow: /
 
-User-agent: YouBot
+User-agent: Diffbot
 Allow: /
 
+# -- Sitemaps ---------------------------------------------------------------
 Sitemap: https://sebastienrousseau.com/sitemap.xml
 Sitemap: https://sebastienrousseau.com/news-sitemap.xml
 Sitemap: https://sebastienrousseau.com/fr/news-sitemap.xml
 
-# llms.txt: https://sebastienrousseau.com/llms.txt
-# llms-full: https://sebastienrousseau.com/llms-full.txt
+# -- Machine-readable surfaces ---------------------------------------------
+# llms.txt        — navigation index for LLM ingestion (llmstxt.org)
+# llms-ctx.txt    — compact agent-context format (URLs + one-line context)
+# llms-full.txt   — full article corpus, navigation-stripped
+# api/agents/     — JSON API: posts, topics, person, organization
+# Bot policy      — https://sebastienrousseau.com/about/#bot-policy
+
+# llms.txt:       https://sebastienrousseau.com/llms.txt
+# llms-ctx.txt:   https://sebastienrousseau.com/llms-ctx.txt
+# llms-full.txt:  https://sebastienrousseau.com/llms-full.txt
+# Agent API:      https://sebastienrousseau.com/api/agents/index.json
 """
 
 
@@ -232,6 +264,79 @@ def build_llms_txt() -> str:
 def write_llms_txt(public: Path) -> bool:
     target = public / "llms.txt"
     new = build_llms_txt()
+    cur = target.read_text(encoding="utf-8") if target.is_file() else ""
+    if cur == new:
+        return False
+    target.write_text(new, encoding="utf-8")
+    return True
+
+
+def build_llms_ctx_txt() -> str:
+    """Render llms-ctx.txt — the compact "agent context" companion to
+    llms.txt designed to drop directly into an LLM context window.
+
+    Per the llmstxt.org convention, llms-ctx.txt strips marketing prose
+    and groups the site's machine-readable surfaces into terse
+    URL + one-line description pairs. The audience is a tool-using
+    agent that wants to know "where do I look?" — not a human reader.
+
+    Structure: site identity → primary content URLs → feeds / JSON
+    endpoints → author profile → bot policy. Every line is either a
+    URL or a one-line description tied to a URL.
+    """
+    base = "https://sebastienrousseau.com"
+    out: list[str] = []
+    out.append("# Sebastien Rousseau — agent context")
+    out.append("")
+    out.append(
+        "Compact reference for LLM/agent ingestion. URLs + one-line "
+        "descriptions; no marketing prose. Crawl policy: "
+        "CC BY-4.0, attribution requested. See /about/#bot-policy."
+    )
+    out.append("")
+    out.append("## Content")
+    out.append(f"- {base}/                — Home: latest research and projects.")
+    out.append(f"- {base}/about/          — Biography, credentials (ORCID 0009-0005-1434-284X).")
+    out.append(f"- {base}/articles/       — Research notes: PQC, ISO 20022, payments, applied AI.")
+    out.append(f"- {base}/papers/         — White papers, peer-reviewed analysis, regulatory submissions.")
+    out.append(f"- {base}/projects/       — Open-source Python and Rust libraries.")
+    out.append(f"- {base}/topics/         — Topic hubs: post-quantum, ISO 20022, applied AI, Rust, blockchain.")
+    out.append(f"- {base}/contact/        — Professional contact form.")
+    out.append("")
+    out.append("## Feeds")
+    out.append(f"- {base}/llms.txt        — Site directory (llmstxt.org navigation format).")
+    out.append(f"- {base}/llms-full.txt   — Full article corpus, navigation-stripped.")
+    out.append(f"- {base}/sitemap.xml     — All URLs, with hreflang per locale.")
+    out.append(f"- {base}/news-sitemap.xml — Last 48 h news entries.")
+    out.append(f"- {base}/rss.xml         — RSS feed.")
+    out.append(f"- {base}/atom.xml        — Atom feed.")
+    out.append(f"- {base}/feed.json       — JSON Feed 1.1.")
+    out.append("")
+    out.append("## JSON API")
+    out.append(f"- {base}/api/agents/index.json        — Endpoint index + crawl policy.")
+    out.append(f"- {base}/api/agents/posts.json        — Every dated post with metadata.")
+    out.append(f"- {base}/api/agents/topics.json       — Curated topic clusters.")
+    out.append(f"- {base}/api/agents/person.json       — Author (Person + ORCID + hasCredential).")
+    out.append(f"- {base}/api/agents/organization.json — Publisher (Organization + Brand).")
+    out.append("")
+    out.append("## Author")
+    out.append("- Sebastien Rousseau, London, UK.")
+    out.append("- Senior payments leader, 20+ years at Tier-1 banks (HSBC, PayPal, Barclays).")
+    out.append("- ORCID: https://orcid.org/0009-0005-1434-284X")
+    out.append("- GitHub: https://github.com/sebastienrousseau")
+    out.append("- LinkedIn: https://www.linkedin.com/in/sebastienrousseau/")
+    out.append("")
+    out.append("## Bot policy")
+    out.append("- Allow: all categories (web search, social, AI retrieval, AI training, indexers).")
+    out.append("- License: CC BY-4.0 — attribution required.")
+    out.append(f"- Full text: {base}/about/#bot-policy")
+    out.append("")
+    return "\n".join(out)
+
+
+def write_llms_ctx_txt(public: Path) -> bool:
+    target = public / "llms-ctx.txt"
+    new = build_llms_ctx_txt()
     cur = target.read_text(encoding="utf-8") if target.is_file() else ""
     if cur == new:
         return False

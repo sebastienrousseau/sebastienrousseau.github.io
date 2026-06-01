@@ -69,7 +69,7 @@ msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "教皇レオ14世の『Magnifica Humanitas』(初のAI回勅)を、汽車・自動車・原子力・インターネットという先行事例と並べて、テクノロジー業界の視点から客観的に読み解き、希望へと着地する論考。"
-twitter_image: "https://cloudcdn.pro/sebastienrousseau/v1/logos/sebastienrousseau.png"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Magnifica Humanitas:教皇回勅をAI業界の視点から読み解く"
@@ -81,7 +81,7 @@ thanks: "Thanks for reading!"
 site_last_updated: "2026-05-26"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
+site_software: "Static Site Generator, Rust"
 ---
 
 # Magnifica Humanitas:AI業界の視点から読む初のAI回勅

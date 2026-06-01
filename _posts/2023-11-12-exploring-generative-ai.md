@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Nov 12, 2023"
-description: "How transformer models work, which 2023 models set the benchmark, where generative AI lands first in financial services, and what governance questions practitioners need answered before deploying."
+description: "Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -39,7 +39,7 @@ referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "Transformer mechanics, 2023 model benchmarks, financial services use cases, and the governance questions that cannot be deferred."
+subtitle: "Applied artificial intelligence in banking and financial services."
 tags: "generative AI, large language model, GPT-4, transformer, financial services, hallucination, RAG, AI governance, foundation model, fine-tuning"
 theme-color: "0, 67, 165"
 title: "Generative AI in 2023: How It Works, Where It Lands"
@@ -104,7 +104,7 @@ last_reviewed: "2026-05-24"
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> How transformer models work, which 2023 models set the benchmark, where generative AI lands first in financial services, and what governance questions practitioners need answered before deploying.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.</p>
 <p class="post-lead-heading"><strong>Key takeaways</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>How the Transformer Architecture Works.</strong> Every significant language model deployed in 2023 — GPT-4, Claude 2, Llama 2, Mistral, Falcon — is built on the transformer architecture introduced in the 2017 paper "Attention Is All You Need." Understanding the…</li>
@@ -221,7 +221,7 @@ Fine-tuning modifies the model's weights by continuing training on domain-specif
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-31">2026-05-31</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-06-01">2026-06-01</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">
