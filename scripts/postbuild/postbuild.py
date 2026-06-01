@@ -812,6 +812,7 @@ from postbuild_lib.github_stats import (
 from postbuild_lib.output import (  # noqa: F401 — re-exports
     augment_sitemap_with_rendered_pages,
     build_lastmod_index,
+    build_llms_ctx_txt,
     build_llms_full_txt,
     build_llms_txt,
     dedupe_sitemap_index_html,
@@ -822,6 +823,7 @@ from postbuild_lib.output import (  # noqa: F401 — re-exports
     refresh_sitemap_lastmod,
     shrink_news_sitemap,
     write_json_feed,
+    write_llms_ctx_txt,
     write_llms_full_txt,
     write_llms_txt,
     write_robots,
@@ -1235,6 +1237,7 @@ def _finalize_build() -> tuple[int, bool, bool, bool, int, int, int, int]:
     sitemap_patched += dedupe_sitemap_index_html(PUBLIC / "sitemap.xml")
     robots_written = write_robots(PUBLIC)
     llms_written = write_llms_txt(PUBLIC)
+    llms_ctx_written = write_llms_ctx_txt(PUBLIC)
     llms_full_written = write_llms_full_txt(PUBLIC)
     write_json_feed(PUBLIC)
     feed_urls_patched = fix_xml_feed_urls(PUBLIC)
@@ -1242,7 +1245,8 @@ def _finalize_build() -> tuple[int, bool, bool, bool, int, int, int, int]:
     feeds_deduped = dedupe_xml_feeds(PUBLIC)
     news_shrunk = shrink_news_sitemap(PUBLIC)
     return (
-        sitemap_patched, robots_written, llms_written, llms_full_written,
+        sitemap_patched, robots_written, llms_written, llms_ctx_written,
+        llms_full_written,
         feed_urls_patched, xml_patched, feeds_deduped, news_shrunk,
     )
 
@@ -1258,7 +1262,8 @@ def main() -> None:
         _process_page(page, ctx)
 
     (
-        sitemap_patched, robots_written, llms_written, llms_full_written,
+        sitemap_patched, robots_written, llms_written, llms_ctx_written,
+        llms_full_written,
         feed_urls_patched, xml_patched, feeds_deduped, news_shrunk,
     ) = _finalize_build()
 
@@ -1302,6 +1307,7 @@ def main() -> None:
         f"{news_shrunk} news-sitemap shrunk, "
         f"robots.txt {'updated' if robots_written else 'unchanged'}, "
         f"llms.txt {'updated' if llms_written else 'unchanged'}, "
+        f"llms-ctx.txt {'updated' if llms_ctx_written else 'unchanged'}, "
         f"llms-full.txt {'updated' if llms_full_written else 'unchanged'}"
     )
 

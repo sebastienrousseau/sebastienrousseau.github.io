@@ -207,6 +207,68 @@ def test_write_robots_emits_sitemap_lines(tmp_path):
     assert "Sitemap: https://sebastienrousseau.com/sitemap.xml" in text
 
 
+def test_write_robots_carries_per_category_taxonomy(tmp_path):
+    """Robots.txt taxonomy must explicitly enumerate the 2026 bot
+    categories so each can be flipped to Disallow independently."""
+    from postbuild_lib.output import write_robots
+    write_robots(tmp_path)
+    text = (tmp_path / "robots.txt").read_text(encoding="utf-8")
+    # The five required category headers.
+    for header in (
+        "Web search engines",
+        "Social / link-preview",
+        "SEO audit",
+        "AI retrieval",
+        "AI training",
+    ):
+        assert header in text, f"missing category header: {header}"
+    # The canonical 2026 retrieval bots must each have a block.
+    for ua in (
+        "ChatGPT-User", "OAI-SearchBot",
+        "Claude-User", "Claude-SearchBot",
+        "PerplexityBot",
+    ):
+        assert f"User-agent: {ua}" in text
+    # And the training-tier crawlers.
+    for ua in ("GPTBot", "ClaudeBot", "Google-Extended", "Bytespider"):
+        assert f"User-agent: {ua}" in text
+    # Bot policy anchor must be advertised.
+    assert "/about/#bot-policy" in text
+    # llms-ctx.txt must be advertised alongside llms.txt + llms-full.txt.
+    assert "/llms-ctx.txt" in text
+
+
+def test_build_llms_ctx_txt_is_compact_and_machine_readable():
+    """llms-ctx.txt must lead with the H1, name the agent-context
+    purpose, list URLs in sectioned blocks, and stay under the
+    ~2k-line llmstxt.org compact-format ceiling."""
+    from postbuild_lib.output import build_llms_ctx_txt
+    text = build_llms_ctx_txt()
+    assert text.startswith("# Sebastien Rousseau — agent context")
+    for section in ("## Content", "## Feeds", "## JSON API", "## Author", "## Bot policy"):
+        assert section in text
+    # Compact form: < 80 lines.
+    assert len(text.splitlines()) < 80
+    # Must advertise the ORCID + agent endpoints + bot policy anchor.
+    assert "0009-0005-1434-284X" in text
+    assert "/api/agents/index.json" in text
+    assert "/about/#bot-policy" in text
+
+
+def test_write_llms_ctx_txt_skips_when_unchanged(tmp_path):
+    from postbuild_lib.output import build_llms_ctx_txt, write_llms_ctx_txt
+    (tmp_path / "llms-ctx.txt").write_text(
+        build_llms_ctx_txt(), encoding="utf-8",
+    )
+    assert write_llms_ctx_txt(tmp_path) is False
+
+
+def test_write_llms_ctx_txt_writes_when_changed(tmp_path):
+    from postbuild_lib.output import write_llms_ctx_txt
+    assert write_llms_ctx_txt(tmp_path) is True
+    assert (tmp_path / "llms-ctx.txt").is_file()
+
+
 def test_write_robots_idempotent(tmp_path):
     """Second write with no content change returns False."""
     from postbuild_lib.output import write_robots
