@@ -123,7 +123,7 @@ The cryptographic primitives that authenticate every wholesale payment in produc
 
 Payment infrastructure has not yet absorbed what that means.
 
-This article is the engineering case for replacement over retrofit. It is written for architects who already understand the algorithms and need to decide what to do with SWIFT MT, ISO 20022 pacs and pain messages, RTGS interfaces, HSM estates, and the certificate hierarchies underneath all of it.
+This article is the engineering case for replacement over retrofit. It is written for architects who already understand the algorithms and need to decide what to do with SWIFT MT, [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) pacs and pain messages, RTGS interfaces, HSM estates, and the certificate hierarchies underneath all of it.
 
 ---
 
@@ -255,7 +255,7 @@ The hard regulatory deadlines are jurisdictional. The US [Quantum Computing Cybe
 
 **Why is ML-KEM the recommended key encapsulation rather than something faster?**
 
-ML-KEM (the standardised version of CRYSTALS-Kyber) had the strongest combination of small ciphertext and key sizes among the lattice candidates, with mature implementations and side-channel hardening. NIST published it as [FIPS 203 ⧉](https://csrc.nist.gov/pubs/fips/203/final "FIPS 203"). Faster candidates exist but carry larger size or weaker confidence intervals on security parameters.
+ML-KEM (the standardised version of [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)) had the strongest combination of small ciphertext and key sizes among the lattice candidates, with mature implementations and side-channel hardening. NIST published it as [FIPS 203 ⧉](https://csrc.nist.gov/pubs/fips/203/final "FIPS 203"). Faster candidates exist but carry larger size or weaker confidence intervals on security parameters.
 
 **Why not use SLH-DSA everywhere instead of ML-DSA?**
 
@@ -282,7 +282,7 @@ A PQC-capable subordinate certificate authority, integrated into the existing PK
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-31">2026-05-31</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-06-01">2026-06-01</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

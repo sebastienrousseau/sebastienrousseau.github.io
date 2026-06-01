@@ -39,7 +39,7 @@ referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "Scaffold a production-ready Rust library with CI, tests, and docs in under 60 seconds"
+subtitle: "LibMake: a Rust code generator that enforces best practices from day one."
 tags: "LibMake, RustCodeGenerator, CargoScaffold, RustLibraryTemplate, TeraTemplating, GitHubActionsRust, CargoAudit, RustAPIGuidelines, BoilerplateGenerator, RustCI"
 theme-color: "0, 67, 165"
 title: "LibMake: Rust Library Scaffold Generator"
@@ -156,6 +156,9 @@ For team use, all CLI flags can be expressed in a TOML config file:
 
 ```toml
 # libmake.toml
+
+
+
 
 
 
@@ -287,5 +290,5 @@ LibMake accepts any string for `--edition` and `--rustversion` and writes the va
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-31">2026-05-31</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-06-01">2026-06-01</time>.</p>
 <!-- enrich-end -->
