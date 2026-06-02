@@ -3,10 +3,10 @@
 # Front Matter (YAML)
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "An editorial aerial composition by Meiying Ng suggesting interlocking systems — the visual register chosen for a board-level dashboard view of the 2026 Banking Infrastructure Index"
+banner_alt: "An editorial aerial composition by Miguel Sousa suggesting interlocking systems — the visual register chosen for a board-level dashboard view of the 2026 Banking Infrastructure Index"
 banner_height: "800"
 banner_width: "1200"
-banner: "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp"
+banner: "https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -102,6 +102,8 @@ site_software: "Static Site Generator, Rust"
 ---
 
 # The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments
+
+
 
 
 <!-- lead-start -->
@@ -247,7 +249,7 @@ Annually for strategic comparison, with quarterly internal refreshes for the met
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">
 <article class="related-card"><a href="https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026" class="related-media" aria-label="Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide" tabindex="-1"><img alt="Cloud-native banking architecture for 2026 showing Kubernetes, VM coexistence, DORA resilience, sovereign cloud, observability, and bank platform engineering" src="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026">Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</a></h3><p><time datetime="2026-05-20">2026-05-20</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026" class="related-media" aria-label="Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability" tabindex="-1"><img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</a></h3><p><time datetime="2026-05-19">2026-05-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026" class="related-media" aria-label="Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability" tabindex="-1"><img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</a></h3><p><time datetime="2026-05-19">2026-05-19</time></p></footer></article>
 <article class="related-card"><a href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026" class="related-media" aria-label="Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails" tabindex="-1"><img alt="Cryptographic key material drifting into deep blue water — symbolising harvest-now-decrypt-later capture of payment messages whose RSA and ECC envelopes will not survive a cryptanalytically relevant quantum computer" src="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026">Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails</a></h3><p><time datetime="2026-05-31">2026-05-31</time></p></footer></article>
 </div>
 </aside>

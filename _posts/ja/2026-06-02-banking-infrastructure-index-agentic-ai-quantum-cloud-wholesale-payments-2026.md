@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Meiying Ng による空撮構図 — 相互に噛み合うシステム群を示唆する写真。2026 年銀行インフラ指数(Banking Infrastructure Index)を取締役会向けダッシュボードとして眺める視覚的レジスターとして選定"
+banner_alt: "Miguel Sousa による空撮構図 — 相互に噛み合うシステム群を示唆する写真。2026 年銀行インフラ指数(Banking Infrastructure Index)を取締役会向けダッシュボードとして眺める視覚的レジスターとして選定"
 banner_height: "800"
 banner_width: "1200"
-banner: "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp"
+banner: "https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"

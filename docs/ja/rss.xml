@@ -6,16 +6,16 @@
     <description>日本語の記事:応用AI、ISO 20022 決済、ポスト量子暗号、ホールセール決済の構造変革。</description>
     <atom:link href="https://sebastienrousseau.com/ja/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ja-JP</language>
-    <lastBuildDate>Tue, 02 Jun 2026 13:38:17 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 16:06:04 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
     <item>
       <title>2026 年銀行インフラ指数:エージェント型 AI、量子安全セキュリティ、クラウドネイティブ・レジリエンス、ホールセール決済の準備度計測</title>
       <link>https://sebastienrousseau.com/ja/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</link>
       <description>Stanford AI Index に着想を得た 2026 年の銀行インフラ指数。エージェント型 AI、量子安全セキュリティ、クラウドネイティブ・レジリエンス、グローバルホールセール決済の準備度を一つの運営モデルで計測します。</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</guid>
-      <pubDate>Tue, 02 Jun 2026 13:38:17 +0000</pubDate>
+      <pubDate>Tue, 02 Jun 2026 16:06:04 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" type="image/webp" length="0"/>
       <category>銀行インフラ指数 2026</category>
       <category>エージェント型 AI 銀行</category>
       <category>量子安全銀行</category>
@@ -31,7 +31,7 @@
       <link>https://sebastienrousseau.com/ja/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow は 24/7 の事前資金供給型流動性を要求します。ACH は安価ですが T+1 です。USDC はアトミックに決済しますがウォレット基盤を必要とします。2026 年のマルチレール銀行は、ISO 20022 pacs.008 を読み取るオーケストレーション・エンジンが、コスト・ファイナリティ・流動性コストに基づいて各決済の経路を決定します。</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Tue, 02 Jun 2026 13:38:17 +0000</pubDate>
+      <pubDate>Tue, 02 Jun 2026 16:06:04 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>決済オーケストレーション層</category>
@@ -53,7 +53,7 @@
       <link>https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>耐量子暗号は決済レールに二者択一を迫ります。ML-KEM/ML-DSA 向けに設計されていない SWIFT MT・ISO 20022 封筒に RSA/ECC を後付けするか、暗号アジリティを備えた基盤へ置換するか。HNDL が実害となる前に判断が必要です。</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Tue, 02 Jun 2026 13:38:17 +0000</pubDate>
+      <pubDate>Tue, 02 Jun 2026 16:06:04 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>耐量子計算機暗号</category>
@@ -368,7 +368,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-19-global-wholesale-payments-economics-2026/</guid>
       <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" type="image/webp" length="0"/>
       <category>ホールセール決済 2026</category>
       <category>グローバル決済経済学</category>
       <category>ISO 20022</category>

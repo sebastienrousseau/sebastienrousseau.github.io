@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Bố cục biên tập nhìn từ trên cao của Meiying Ng gợi ý các hệ thống lồng vào nhau — phong cách hình ảnh được chọn cho góc nhìn bảng điều khiển cấp hội đồng về Chỉ số Hạ tầng Ngân hàng 2026"
+banner_alt: "Bố cục biên tập nhìn từ trên cao của Miguel Sousa gợi ý các hệ thống lồng vào nhau — phong cách hình ảnh được chọn cho góc nhìn bảng điều khiển cấp hội đồng về Chỉ số Hạ tầng Ngân hàng 2026"
 banner_height: "800"
 banner_width: "1200"
-banner: "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp"
+banner: "https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"

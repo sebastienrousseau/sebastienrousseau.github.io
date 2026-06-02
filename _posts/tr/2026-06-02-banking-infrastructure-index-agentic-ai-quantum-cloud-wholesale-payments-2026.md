@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Meiying Ng tarafından birbirine kenetlenmiş sistemleri çağrıştıran editöryal bir hava kompozisyonu — 2026 Bankacılık Altyapı Endeksi'nin yönetim kurulu düzeyindeki gösterge paneli görünümü için seçilen görsel kayıt"
+banner_alt: "Miguel Sousa tarafından birbirine kenetlenmiş sistemleri çağrıştıran editöryal bir hava kompozisyonu — 2026 Bankacılık Altyapı Endeksi'nin yönetim kurulu düzeyindeki gösterge paneli görünümü için seçilen görsel kayıt"
 banner_height: "800"
 banner_width: "1200"
-banner: "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp"
+banner: "https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"

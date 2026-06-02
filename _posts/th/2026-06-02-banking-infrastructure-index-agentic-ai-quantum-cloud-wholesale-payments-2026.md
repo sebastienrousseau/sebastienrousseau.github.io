@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "องค์ประกอบทางบรรณาธิการจากมุมสูงโดย Meiying Ng ที่สื่อถึงระบบเชื่อมโยงประสานกัน — รีจิสเตอร์ภาพที่เลือกใช้สำหรับมุมมองแดชบอร์ดระดับคณะกรรมการของดัชนีโครงสร้างพื้นฐานการธนาคารปี 2026"
+banner_alt: "องค์ประกอบทางบรรณาธิการจากมุมสูงโดย Miguel Sousa ที่สื่อถึงระบบเชื่อมโยงประสานกัน — รีจิสเตอร์ภาพที่เลือกใช้สำหรับมุมมองแดชบอร์ดระดับคณะกรรมการของดัชนีโครงสร้างพื้นฐานการธนาคารปี 2026"
 banner_height: "800"
 banner_width: "1200"
-banner: "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp"
+banner: "https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"

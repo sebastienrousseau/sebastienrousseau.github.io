@@ -1,11 +1,11 @@
 {
-  "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.",
+  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
   "date": "Apr 01, 2024",
-  "language": "id-ID",
-  "subtitle": "Alat Kloning Suara Open-Source Generasi Berikutnya",
+  "title": "[ID DRAFT] OpenVoice: Leading Innovation in Voice Cloning Technology",
   "locale": "id_ID",
   "banner_alt": "Spanduk dengan hamparan gradien cerah pada profil yang berulang",
-  "title": "[ID DRAFT] OpenVoice: Leading Innovation in Voice Cloning Technology",
-  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
-  "keywords": "OpenVoice, Teknologi Kloning Suara, Ucapan Sintetis AI, Kloning Suara Open-Source, Sintesis Suara Lintas Bahasa, Kloning Suara Instan, Kontrol Gaya Suara, Teknologi Suara Aksesibilitas, Suara Industri Hiburan, AI Suara Layanan Pelanggan"
+  "language": "id-ID",
+  "keywords": "OpenVoice, Teknologi Kloning Suara, Ucapan Sintetis AI, Kloning Suara Open-Source, Sintesis Suara Lintas Bahasa, Kloning Suara Instan, Kontrol Gaya Suara, Teknologi Suara Aksesibilitas, Suara Industri Hiburan, AI Suara Layanan Pelanggan",
+  "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.",
+  "subtitle": "Alat Kloning Suara Open-Source Generasi Berikutnya"
 }

@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Una composizione aerea editoriale di Meiying Ng che evoca sistemi interconnessi — il registro visivo scelto per una vista dashboard a livello di consiglio del Banking Infrastructure Index 2026"
+banner_alt: "Una composizione aerea editoriale di Miguel Sousa che evoca sistemi interconnessi — il registro visivo scelto per una vista dashboard a livello di consiglio del Banking Infrastructure Index 2026"
 banner_height: "800"
 banner_width: "1200"
-banner: "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp"
+banner: "https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"

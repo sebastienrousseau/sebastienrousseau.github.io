@@ -1,11 +1,11 @@
 {
+  "description": "Gano yadda CRYSTALS-Kyber, algorithm na cryptography mai tsayayya da quantum, ke canza duniyar cryptography tana shirya mu don zamanin quantum.",
   "title": "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age",
   "language": "ha-NG",
-  "keywords": "quantum computing, cryptography mai juriya da quantum, CRYSTALS-Kyber, cryptography, tsaro, banki, kuɗaɗe, encryption, kariyar bayanai, tabbataccen makoma",
-  "banner_alt": "Kwamfutar quantum ta zamani mai kyau",
-  "locale": "ha_NG",
-  "description": "Gano yadda CRYSTALS-Kyber, algorithm na cryptography mai tsayayya da quantum, ke canza duniyar cryptography tana shirya mu don zamanin quantum.",
-  "subtitle": "CRYSTALS-Kyber, ma'aunin NIST FIPS 203 don keɓance makulli bayan-quantum.",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
   "date": "Nov 19, 2023",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp"
+  "subtitle": "CRYSTALS-Kyber, ma'aunin NIST FIPS 203 don keɓance makulli bayan-quantum.",
+  "locale": "ha_NG",
+  "banner_alt": "Kwamfutar quantum ta zamani mai kyau",
+  "keywords": "quantum computing, cryptography mai juriya da quantum, CRYSTALS-Kyber, cryptography, tsaro, banki, kuɗaɗe, encryption, kariyar bayanai, tabbataccen makoma"
 }

@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Meiying Ng 拍摄的编辑级航拍构图,层叠交错的系统图像——为 2026 年银行基础设施指数选取的董事会级仪表盘视觉语言"
+banner_alt: "Miguel Sousa 拍摄的编辑级航拍构图,层叠交错的系统图像——为 2026 年银行基础设施指数选取的董事会级仪表盘视觉语言"
 banner_height: "800"
 banner_width: "1200"
-banner: "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp"
+banner: "https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"

@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Een redactionele luchtcompositie van Meiying Ng die in elkaar grijpende systemen suggereert — het visuele register dat is gekozen voor een bestuursdashboard van de Banking Infrastructure Index 2026"
+banner_alt: "Een redactionele luchtcompositie van Miguel Sousa die in elkaar grijpende systemen suggereert — het visuele register dat is gekozen voor een bestuursdashboard van de Banking Infrastructure Index 2026"
 banner_height: "800"
 banner_width: "1200"
-banner: "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp"
+banner: "https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
