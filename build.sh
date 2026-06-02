@@ -58,6 +58,16 @@ if [[ -d fonts ]]; then
   cp -R fonts/. public/fonts/
 fi
 
+# Mirror _labs/ (pure-JS interactive demos — no WASM, no toolchain) into
+# public/labs/. Each subdir of _labs/ ships as a standalone page under
+# /labs/<name>/ with its own strict per-page CSP and noindex meta. WASM-
+# built labs (next block) go into the same public/labs/ namespace via the
+# wasm-pack loop, so the two patterns coexist cleanly.
+if [[ -d _labs ]]; then
+  mkdir -p public/labs
+  cp -R _labs/. public/labs/
+fi
+
 # Build + stage WASM lab demos. Each subdirectory of _wasm-demos/ is a
 # self-contained Rust→WASM crate plus a `web/` folder with the standalone
 # HTML/JS/CSS shell. The compiled wasm-pack artefacts + the web shell are
