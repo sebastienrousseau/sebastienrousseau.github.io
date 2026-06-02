@@ -33,6 +33,7 @@ new blocks.
 """
 from __future__ import annotations
 
+import datetime as _dt
 import html as _html
 import json as _json
 import re
@@ -143,6 +144,60 @@ def _page_lang(html: str) -> str:
 # piece reads as commentary; six or more and it reads as research.
 SCHOLARLY_CITATION_THRESHOLD = 6
 
+# Google News Top Stories carousel admits articles published within
+# the last 48 hours. Above this cutoff a NewsArticle block has no
+# practical effect — the article is still discoverable via TechArticle
+# / ScholarlyArticle / BlogPosting, but the carousel slot has passed.
+NEWS_FRESHNESS_HOURS = 48
+
+
+_blogposting_dates_re = re.compile(
+    r'"datePublished":"([^"]+)"[^"]*"dateModified":"([^"]+)"',
+)
+_blogposting_image_re = re.compile(
+    r'"@type":"BlogPosting"[\s\S]*?'
+    r'"image":\{[^{}]*?"url":"([^"]+)"',
+)
+_blogposting_section_re = re.compile(
+    r'"@type":"BlogPosting"[\s\S]*?"articleSection":"([^"]+)"',
+)
+
+
+def _parse_iso_date(s: str) -> _dt.datetime | None:
+    """Liberal ISO 8601 parser. Accepts ``YYYY-MM-DD``, full timestamps
+    with ``+HH:MM`` offsets, and the ``Z`` shorthand. Returns a
+    timezone-aware datetime or None."""
+    s = s.strip().replace("Z", "+00:00")
+    for fmt in (
+        "%Y-%m-%dT%H:%M:%S%z",
+        "%Y-%m-%dT%H:%M:%S.%f%z",
+        "%Y-%m-%dT%H:%M%z",
+        "%Y-%m-%d",
+    ):
+        try:
+            dt = _dt.datetime.strptime(s, fmt)
+        except ValueError:
+            continue
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=_dt.UTC)
+        return dt
+    return None
+
+
+def _is_fresh_for_news(
+    date_pub: str, now: _dt.datetime,
+) -> bool:
+    """True iff ``date_pub`` is within :data:`NEWS_FRESHNESS_HOURS` of ``now``.
+
+    Posts older than the window stay indexed via TechArticle /
+    ScholarlyArticle / BlogPosting; we just stop emitting the NewsArticle
+    carousel signal because Google News won't slot it anyway."""
+    parsed = _parse_iso_date(date_pub)
+    if parsed is None:
+        return False
+    delta = now - parsed
+    return _dt.timedelta(0) <= delta <= _dt.timedelta(hours=NEWS_FRESHNESS_HOURS)
+
 
 def _tech_payload(
     languages: list[str], dependencies: list[str],
@@ -234,6 +289,96 @@ def inject_tech_article(page: Path, html: str) -> str:
     ):
         return html
     graph = _tech_article_graph(html, page)
+    if graph is None:
+        return html
+    payload = _json.dumps(graph, separators=(",", ":"), ensure_ascii=False)
+    block = f'<script type="application/ld+json">{payload}</script>'
+    return re.sub(r"(?i)</body>", block + "</body>", html, count=1)
+
+
+# ---------------------------------------------------------------------------
+# NewsArticle — Google News Top Stories carousel signal for fresh posts.
+# ---------------------------------------------------------------------------
+
+
+def _news_article_graph(
+    html: str, page: Path, now: _dt.datetime,
+) -> dict[str, object] | None:
+    """Build the NewsArticle JSON-LD payload, or return None when the
+    page isn't a fresh dated post.
+
+    Reads the canonical URL, headline, datePublished + dateModified,
+    keywords, articleSection, and banner image URL from the existing
+    BlogPosting graph the SSG already emits, then re-shapes them into
+    a Google-News-spec-compliant NewsArticle node with author /
+    publisher refs pointing at the identity graph #person and
+    #organization @ids.
+    """
+    canon_m = _canonical_re.search(html)
+    title_m = _title_re.search(html)
+    dates_m = _blogposting_dates_re.search(html)
+    if not canon_m or not title_m or not dates_m:
+        return None
+    date_pub, date_mod = dates_m.group(1), dates_m.group(2)
+    if not _is_fresh_for_news(date_pub, now):
+        return None
+
+    headline = _html.unescape(title_m.group(1)).split(" — ")[0].strip()
+    url = _html.unescape(canon_m.group(1))
+    graph: dict[str, object] = {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": headline,
+        "url": url,
+        "datePublished": date_pub,
+        "dateModified": date_mod,
+        "inLanguage": _page_lang(html),
+        "isAccessibleForFree": True,
+        "author": [{"@id": "https://sebastienrousseau.com/#person"}],
+        "publisher": {"@id": "https://sebastienrousseau.com/#organization"},
+        "mainEntityOfPage": {"@type": "WebPage", "@id": url},
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [
+                ".post-lead", ".post-lead-tldr", ".post-lead-takeaways",
+            ],
+        },
+    }
+    image_m = _blogposting_image_re.search(html)
+    if image_m:
+        graph["image"] = [_html.unescape(image_m.group(1))]
+    section_m = _blogposting_section_re.search(html)
+    if section_m:
+        graph["articleSection"] = _html.unescape(section_m.group(1))
+    keywords, *_ = _detect_kw_signals(html)
+    if keywords:
+        graph["keywords"] = ", ".join(keywords)
+    return graph
+
+
+def inject_news_article(
+    page: Path, html: str, now: _dt.datetime | None = None,
+) -> str:
+    """Add a NewsArticle JSON-LD block to dated post pages published
+    within the Google News Top Stories carousel window.
+
+    Skipped when:
+      - the page isn't a dated post,
+      - the article is older than :data:`NEWS_FRESHNESS_HOURS`,
+      - a NewsArticle block already exists on the page (idempotent),
+      - the page lacks a canonical URL, title, or BlogPosting graph
+        (no source to project from).
+
+    ``now`` defaults to the wall-clock time; tests pass a fixed value
+    so the freshness check is deterministic.
+    """
+    if not _is_dated_article(page):
+        return html
+    if '"@type":"NewsArticle"' in html or '"@type": "NewsArticle"' in html:
+        return html
+    if now is None:
+        now = _dt.datetime.now(_dt.UTC)
+    graph = _news_article_graph(html, page, now)
     if graph is None:
         return html
     payload = _json.dumps(graph, separators=(",", ":"), ensure_ascii=False)

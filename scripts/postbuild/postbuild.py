@@ -830,6 +830,7 @@ from postbuild_lib.output import (  # noqa: F401 — re-exports
     write_robots,
 )
 from postbuild_lib.schemas import (
+    inject_news_article,
     inject_software_source_code,
     inject_tech_article,
 )
@@ -872,6 +873,7 @@ class _PostbuildCounters:
         "localhost_patched",
         "mermaid_patched",
         "nav_patched",
+        "newsarticle_patched",
         "og_patched",
         "redundant_titles_stripped",
         "social_patched",
@@ -1028,10 +1030,25 @@ def _apply_seo_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
     out = inject_about(out)
     if out != prev:
         ctr.about_patched += 1
-    prev = out
-    out = inject_tech_article(page, out)
+    return _apply_schema_subtype_passes(out, page, ctr)
+
+
+def _apply_schema_subtype_passes(
+    html: str, page: Path, ctr: _PostbuildCounters,
+) -> str:
+    """Article-subtype JSON-LD passes: TechArticle / ScholarlyArticle
+    (auto-dispatched by inject_tech_article), NewsArticle for posts
+    inside the 48-hour Google News carousel window, and
+    SoftwareSourceCode on the projects index. Each is idempotent;
+    the per-pass counter is bumped on the first run that mutates HTML."""
+    prev = html
+    out = inject_tech_article(page, html)
     if out != prev:
         ctr.techarticle_patched += 1
+    prev = out
+    out = inject_news_article(page, out)
+    if out != prev:
+        ctr.newsarticle_patched += 1
     prev = out
     out = inject_software_source_code(page, out)
     if out != prev:
@@ -1301,6 +1318,7 @@ def main() -> None:
         f"{c.sri_patched} got real SRI, "
         f"{c.itemlist_patched} got ItemList JSON-LD, "
         f"{c.techarticle_patched} got TechArticle, "
+        f"{c.newsarticle_patched} got NewsArticle, "
         f"{c.softwaresourcecode_patched} got SoftwareSourceCode, "
         f"{c.social_patched} got og:image fixed, "
         f"{c.og_patched} got og:url/locale/site_name, "
