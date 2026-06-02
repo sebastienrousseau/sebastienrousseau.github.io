@@ -58,9 +58,6 @@
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
     <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
     <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=JetBrains+Mono:wght@400..700&family=Newsreader:opsz,wght@6..72,400..700&display=swap" />
     <!-- Preload the LCP hero portrait so it doesn't compete with the
          render-blocking JS bundle on throttled mobile connections.
          Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
@@ -97,13 +94,14 @@
         --max-wide:1440px;
         --radius:18px;
         color-scheme: light dark;
-        /* Named typography — Inter (body sans), Newsreader (variable
-           serif headlines), JetBrains Mono (code). Three OFL variable
-           fonts loaded once from fonts.gstatic.com with display:swap so
-           text renders in the fallback stack while the WOFF2 lands. */
-        --type-display: "Newsreader", Georgia, Cambria, "Times New Roman", Times, serif;
-        --type-body: "Inter", "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        --type-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+        /* Named typography abstraction — every font-family in the
+           stylesheet reads from these three vars. Values are system
+           fonts only for now; a follow-up PR will swap in self-hosted
+           WOFF2 (Inter / Newsreader / JetBrains Mono) with size-adjust
+           fallback metrics so CLS stays under 0.1 during font swap. */
+        --type-display: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        --type-body: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        --type-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
       }
       /* View Transitions API (Chromium 126+) — native cross-fade on
          cross-document navigation. Honours prefers-reduced-motion via
