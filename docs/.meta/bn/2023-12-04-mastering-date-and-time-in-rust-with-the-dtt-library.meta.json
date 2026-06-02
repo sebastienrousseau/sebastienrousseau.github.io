@@ -1,11 +1,11 @@
 {
-  "language": "bn-BD",
-  "banner_alt": "DateTime (DTT), তারিখ ও সময় অপারেশনের জন্য আপনার অপরিহার্য টুলকিট।",
-  "locale": "bn_BD",
-  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
   "description": "DateTime (DTT) হলো তারিখ ও সময় পার্স, যাচাই, ম্যানিপুলেট এবং ফরম্যাট করার জন্য একটি Rust লাইব্রেরি — উচ্চ নির্ভুলতা ও বিস্তৃত কার্যকারিতা সহ।",
+  "language": "bn-BD",
   "title": "Efficient Date and Time Management with DateTime (DTT)",
-  "keywords": "DateTime, DTT, Rust লাইব্রেরি, পার্সিং, যাচাইকরণ, ম্যানিপুলেশন, ফরম্যাটিং, তারিখ, সময়",
+  "banner_alt": "DateTime (DTT), তারিখ ও সময় অপারেশনের জন্য আপনার অপরিহার্য টুলকিট।",
+  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
   "date": "Dec 04, 2023",
-  "subtitle": "DTT, তারিখ ও সময় অপারেশনের জন্য উচ্চ-নির্ভুলতার Rust লাইব্রেরি।"
+  "locale": "bn_BD",
+  "subtitle": "DTT, তারিখ ও সময় অপারেশনের জন্য উচ্চ-নির্ভুলতার Rust লাইব্রেরি।",
+  "keywords": "DateTime, DTT, Rust লাইব্রেরি, পার্সিং, যাচাইকরণ, ম্যানিপুলেশন, ফরম্যাটিং, তারিখ, সময়"
 }

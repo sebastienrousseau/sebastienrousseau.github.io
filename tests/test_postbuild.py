@@ -1118,6 +1118,114 @@ def test_inject_anchor_omits_toc_when_fewer_than_5_h2():
     assert 'class="article-toc"' not in out
 
 
+def test_inject_anchor_is_idempotent():
+    """Running the pass twice must produce identical HTML — no compounding
+    anchor links, no stacked TOCs. The bug this guards: a stale public/
+    tree carrying last build's HTML would otherwise pick up "#" as part
+    of each heading's text and stack one extra TOC every run."""
+    from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+    body = "".join(f"<h2>Section {i}</h2>" for i in range(1, 6))
+    html = (
+        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+        f'<main><div class="wrap">{body}</div></main>'
+    )
+    once = inject_anchor_links_and_toc(html)
+    twice = inject_anchor_links_and_toc(once)
+    assert once == twice
+    # Anchor count stays at 5 (one per H2), TOC count stays at 1.
+    assert twice.count('class="heading-anchor"') == 5
+    assert twice.count('class="article-toc"') == 1
+
+
+def test_inject_anchor_skips_when_existing_toc_present():
+    """If a TOC marker is already on the page, do nothing."""
+    from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+    html = (
+        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+        '<main><div class="wrap">'
+        '<aside class="article-toc"><h2>Contents</h2></aside>'
+        '<h2>Section</h2>'
+        '</div></main>'
+    )
+    assert inject_anchor_links_and_toc(html) == html
+
+
+def test_inject_anchor_skips_when_existing_heading_anchors_present():
+    """If headings already carry .heading-anchor links, do nothing."""
+    from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+    html = (
+        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+        '<main><div class="wrap">'
+        '<h2 id="x">Section <a class="heading-anchor" href="#x">#</a></h2>'
+        '</div></main>'
+    )
+    assert inject_anchor_links_and_toc(html) == html
+
+
+def test_strip_duplicate_body_h1_removes_match():
+    """Layout hero H1 + body H1 with identical text — body H1 dropped."""
+    from postbuild_lib.article_furniture import strip_duplicate_body_h1
+    html = (
+        '<section class="ap-hero"><h1>The Article</h1></section>'
+        '<main><div class="wrap-article">'
+        '<h1>The Article</h1>'
+        '<p>body</p>'
+        '</div></main>'
+    )
+    out = strip_duplicate_body_h1(html)
+    assert out.count('<h1>') == 1
+    assert '<h1>The Article</h1>' in out  # the hero H1 stays
+    # Body now starts with the paragraph.
+    assert '</h1>\n<p>body</p>' not in out
+
+
+def test_strip_duplicate_body_h1_keeps_distinct_h1():
+    """If the body H1 differs from the hero H1, leave both in place
+    (something unusual is going on; don't silently delete content)."""
+    from postbuild_lib.article_furniture import strip_duplicate_body_h1
+    html = (
+        '<section class="ap-hero"><h1>Hero Title</h1></section>'
+        '<main><div class="wrap-article">'
+        '<h1>A different body title</h1>'
+        '<p>body</p>'
+        '</div></main>'
+    )
+    out = strip_duplicate_body_h1(html)
+    assert out == html
+
+
+def test_strip_duplicate_body_h1_no_op_without_hero():
+    """Without an ap-hero H1 (static pages, listing pages) the function
+    is a no-op."""
+    from postbuild_lib.article_furniture import strip_duplicate_body_h1
+    html = '<main><div class="wrap"><h1>Standalone</h1></div></main>'
+    assert strip_duplicate_body_h1(html) == html
+
+
+def test_strip_duplicate_body_h1_handles_entities():
+    """HTML-entity-encoded titles should still match after unescape."""
+    from postbuild_lib.article_furniture import strip_duplicate_body_h1
+    html = (
+        '<section class="ap-hero"><h1>Cards &amp; A2A</h1></section>'
+        '<main><div class="wrap-article">'
+        '<h1>Cards &amp; A2A</h1>'
+        '<p>body</p>'
+        '</div></main>'
+    )
+    out = strip_duplicate_body_h1(html)
+    assert out.count('<h1>') == 1
+
+
+def test_strip_duplicate_body_h1_skips_when_no_body_h1():
+    """No H1 inside main → no-op."""
+    from postbuild_lib.article_furniture import strip_duplicate_body_h1
+    html = (
+        '<section class="ap-hero"><h1>Title</h1></section>'
+        '<main><div class="wrap-article"><p>body only</p></div></main>'
+    )
+    assert strip_duplicate_body_h1(html) == html
+
+
 def test_inject_anchor_no_op_without_blogposting():
     from postbuild_lib.article_furniture import inject_anchor_links_and_toc
     html = '<main><div class="wrap"><h2>X</h2></div></main>'

@@ -4,13 +4,13 @@
   <link href="https://sebastienrousseau.com/ru/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ru/"/>
   <id>https://sebastienrousseau.com/ru/</id>
-  <updated>2026-06-02T10:29:52+00:00</updated>
+  <updated>2026-06-02T13:38:17+00:00</updated>
   <entry>
     <title>Мульти-рельсовый банк в 2026 году: карты, A2A, стейблкоины, RTP, FedNow и открытый банкинг в единой стратегии</title>
     <link href="https://sebastienrousseau.com/ru/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
     <id>https://sebastienrousseau.com/ru/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
-    <updated>2026-06-02T10:29:52+00:00</updated>
-    <published>2026-06-02T10:29:52+00:00</published>
+    <updated>2026-06-02T13:38:17+00:00</updated>
+    <published>2026-06-02T13:38:17+00:00</published>
     <summary>FedNow требует предварительно профондированной ликвидности 24/7. ACH дешёв, но T+1. USDC рассчитывается атомарно, но требует кошельковой инфраструктуры. Мульти-рельсовый банк 2026 года маршрутизирует каждый платёж по стоимости, окончательности и цене ликвидности.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -18,8 +18,8 @@
     <title>Постквантовая платёжная инфраструктура: почему банки заменят, а не доработают устаревшие рельсы</title>
     <link href="https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
     <id>https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-06-02T10:29:52+00:00</updated>
-    <published>2026-06-02T10:29:52+00:00</published>
+    <updated>2026-06-02T13:38:17+00:00</updated>
+    <published>2026-06-02T13:38:17+00:00</published>
     <summary>Постквантовая криптография ставит платёжные рельсы перед бинарным выбором: доработка RSA/ECC в конвертах SWIFT MT и ISO 20022, не рассчитанных на ML-KEM и ML-DSA, либо замена на криптоагильную инфраструктуру. Архитекторы должны решить до того, как HNDL станет операционной потерей.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -27,8 +27,8 @@
     <title>Цифровые активы в 2026: инфраструктурный переход, который банки не могут откладывать</title>
     <link href="https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
     <id>https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
-    <updated>2026-06-02T10:29:52+00:00</updated>
-    <published>2026-06-02T10:29:52+00:00</published>
+    <updated>2026-06-02T13:38:17+00:00</updated>
+    <published>2026-06-02T13:38:17+00:00</published>
     <summary>Цифровые активы перестали быть ставкой на инновацию. Это вопрос архитектуры расчётов, хранения и баланса. Стратегическая задача банков — проектировать инфраструктуру в условиях структурной неопределённости.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>

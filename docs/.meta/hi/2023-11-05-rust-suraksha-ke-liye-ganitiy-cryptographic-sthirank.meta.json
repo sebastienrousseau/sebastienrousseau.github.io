@@ -1,11 +1,11 @@
 {
   "locale": "hi_IN",
-  "date": "November 05, 2023",
-  "keywords": "Rust, स्थिरांक, क्रिप्टोग्राफी, गणित, सुरक्षा, टाइप-सुरक्षा, Cargo, NIST, π, e",
-  "title": "Rust सुरक्षा हेतु गणितीय और क्रिप्टोग्राफिक स्थिरांक",
-  "language": "hi-IN",
-  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
   "banner_alt": "गणितीय सूत्रों से सजी एक अमूर्त छवि",
+  "title": "Rust सुरक्षा हेतु गणितीय और क्रिप्टोग्राफिक स्थिरांक",
+  "keywords": "Rust, स्थिरांक, क्रिप्टोग्राफी, गणित, सुरक्षा, टाइप-सुरक्षा, Cargo, NIST, π, e",
+  "description": "Rust हेतु एक क्रेट जो क्रिप्टोग्राफी और गणित के लिए सुरक्षित, संगत और परीक्षित स्थिरांकों का संग्रह प्रदान करती है।",
+  "date": "November 05, 2023",
   "subtitle": "क्रिप्टो-मानक-स्थिरांकों का एक संगत और टाइप-सुरक्षित संग्रह",
-  "description": "Rust हेतु एक क्रेट जो क्रिप्टोग्राफी और गणित के लिए सुरक्षित, संगत और परीक्षित स्थिरांकों का संग्रह प्रदान करती है।"
+  "language": "hi-IN",
+  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp"
 }

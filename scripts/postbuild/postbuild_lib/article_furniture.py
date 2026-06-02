@@ -321,16 +321,38 @@ def inject_article_furniture(html: str) -> str:
     return _HERO_RE.sub(rf'\1{fragment}\2', html, count=1)
 
 
+# A previously-injected anchor link inside a heading. Matched once and
+# stripped during text extraction so a re-run never picks up the "#" or
+# its surrounding markup as part of the heading title.
+_HEADING_ANCHOR_RE = re.compile(
+    r'\s*<a\s+class="heading-anchor"[\s\S]*?</a>',
+    re.IGNORECASE,
+)
+
+
 def inject_anchor_links_and_toc(html: str) -> str:
     """Add id="…" + a click-to-copy anchor link icon to every H2/H3 inside
     <main>. If the post has ≥5 H2 headings, build a table-of-contents card
-    and insert it at the top of <main>."""
+    and insert it at the top of <main>.
+
+    Idempotent: if a previous run already injected a ``.article-toc`` or
+    any ``.heading-anchor`` link inside <main>, the function no-ops.
+    Without this guard, re-running the pass (e.g. when a stale ``public/``
+    tree carries last build's HTML) compounds anchors on each H2 and
+    stacks N copies of the TOC — and because each rerun strips tags
+    rather than the prior anchor's "#" text content, the TOC labels
+    accumulate trailing " # # # #" tokens that contaminate every entry.
+    """
     if '"@type":"BlogPosting"' not in html:
         return html
     m = _MAIN_RE.search(html)
     if not m:
         return html
     pre, body, post = m.group(1), m.group(2), m.group(3)
+    # Idempotency guard — either marker means a previous run already
+    # owned this <main>. Skipping returns the HTML untouched.
+    if 'class="article-toc"' in body or 'class="heading-anchor"' in body:
+        return html
     h2_titles: list[tuple[str, str]] = []
     labels = _labels(html)
     # Track slugs already emitted on this page; append -2, -3… on
@@ -353,14 +375,20 @@ def inject_anchor_links_and_toc(html: str) -> str:
         heading_idx += 1
         level = hm.group(1).lower()
         inner = hm.group(2)
-        text = re.sub(r'<[^>]+>', '', inner).strip()
+        # Drop any prior anchor-link markup from the inner content
+        # before computing the heading text. The top-level idempotency
+        # guard makes this defensive rather than hot-path — kept so
+        # narrow regression cases (e.g. tests that hand-craft a partial
+        # state) still degrade safely.
+        clean_inner = _HEADING_ANCHOR_RE.sub('', inner)
+        text = re.sub(r'<[^>]+>', '', clean_inner).strip()
         if not text:
             return hm.group(0)
         slug = _unique(slugify(text), heading_idx)
         if level == "h2":
             h2_titles.append((slug, text))
         return (
-            f'<{level} id="{slug}">{inner} '
+            f'<{level} id="{slug}">{clean_inner} '
             f'<a class="heading-anchor" href="#{slug}" aria-label="{labels["Link to"]} {text}">#</a>'
             f'</{level}>'
         )
@@ -377,6 +405,50 @@ def inject_anchor_links_and_toc(html: str) -> str:
             f'<ol>{items}</ol></aside>'
         )
     return html[: m.start()] + pre + toc_html + new_body + post + html[m.end():]
+
+
+_BODY_H1_RE = re.compile(
+    r'(<main\b[^>]*>\s*<div class="wrap[^"]*">[\s\S]*?'
+    r'(?:</aside>\s*)*)<h1>([^<]+)</h1>\s*',
+    re.IGNORECASE,
+)
+
+
+def strip_duplicate_body_h1(html: str) -> str:
+    """Remove the first H1 inside <main> when it duplicates the hero H1
+    that the layout template emits in ``<section class="ap-hero">``.
+
+    Every dated article runs the markdown body through Static Site
+    Generator with the H1 markdown ``# {{title}}`` at the top. The
+    layout *also* emits ``<h1>{{title}}</h1>`` in the hero band. The
+    rendered output therefore carries two H1s with identical text —
+    WCAG 1.3.1 / 2.4.6 violation, plus a noisy duplicate above the
+    article body.
+
+    The fix is render-only: ``check_voice`` still requires exactly one
+    H1 in the markdown source (so editors keep the canonical title at
+    the top of the file), but the postbuild pass deletes the
+    duplicate before the page is served.
+    """
+    hero_m = _H1_RE.search(html)
+    if hero_m is None:
+        return html
+    hero_text = _html_unescape(hero_m.group(1)).strip()
+    new_html, n = _BODY_H1_RE.subn(
+        lambda m: m.group(1)
+        if _html_unescape(m.group(2)).strip() == hero_text
+        else m.group(0),
+        html,
+        count=1,
+    )
+    return new_html if n else html
+
+
+def _html_unescape(s: str) -> str:
+    """Local indirection so the strip-duplicate-H1 helper can mock if
+    needed without polluting the module-level ``html`` alias."""
+    import html as _h
+    return _h.unescape(s)
 
 
 _NON_BODY_ASIDE_RE = re.compile(

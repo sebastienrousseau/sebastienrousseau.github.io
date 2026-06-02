@@ -1,11 +1,11 @@
 {
-  "keywords": "DateTime, DTT, bibliotecă Rust, parsare, validare, manipulare, formatare, date, ore",
-  "locale": "ro_RO",
-  "banner_alt": "DateTime (DTT), Trusa Dumneavoastră Esențială pentru Operații cu Date și Ore.",
   "date": "Dec 04, 2023",
-  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
-  "language": "ro-RO",
+  "locale": "ro_RO",
+  "description": "DateTime (DTT) este o bibliotecă Rust pentru parsarea, validarea, manipularea și formatarea datelor și orelor — precizie ridicată, funcționalitate extinsă.",
+  "keywords": "DateTime, DTT, bibliotecă Rust, parsare, validare, manipulare, formatare, date, ore",
   "title": "Efficient Date and Time Management with DateTime (DTT)",
+  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
   "subtitle": "DTT, biblioteca Rust de înaltă precizie pentru operații cu date și ore.",
-  "description": "DateTime (DTT) este o bibliotecă Rust pentru parsarea, validarea, manipularea și formatarea datelor și orelor — precizie ridicată, funcționalitate extinsă."
+  "language": "ro-RO",
+  "banner_alt": "DateTime (DTT), Trusa Dumneavoastră Esențială pentru Operații cu Date și Ore."
 }

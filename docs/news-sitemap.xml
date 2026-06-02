@@ -830,6 +830,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/editorial</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-02T05:00:00+00:00</news:publication_date>
+    <news:title>Editorial standards: sebastienrousseau.com</news:title>
+    <news:keywords>editorial standards, corrections policy, AI disclosure, conflict of interest, sourcing, fact checking, journalism standards, IFCN, Google News, accountability</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/contact</loc>
   <news:news>
     <news:publication>
