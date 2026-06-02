@@ -3519,6 +3519,143 @@ _LANGSWITCH_BLOGPOST_HTML = (
 )
 
 
+def _make_blogposting_with_og(
+    *, og_image: str = "https://cloudcdn.pro/api/transform?url=/stocks/images/sample.webp&w=1425&format=webp&q=80",
+    og_image_alt: str | None = "An editorial banner photograph",
+    h1: str = "Banking Infrastructure Index 2026",
+    extra: str = "",
+) -> str:
+    """Helper: build a minimal page that ``inject_hero_banner`` accepts."""
+    alt_meta = (
+        f'<meta name="twitter:image:alt" content="{og_image_alt}" />' if og_image_alt else ""
+    )
+    return (
+        '<html lang="en-GB"><head>'
+        f'<meta property="og:image" content="{og_image}" />'
+        f'{alt_meta}'
+        '</head><body>'
+        '<script type="application/ld+json">'
+        '{"@type":"BlogPosting","headline":"X"}'
+        '</script>'
+        f'<section class="ap-hero"><h1>{h1}</h1></section>'
+        f'{extra}'
+        '<main><div class="wrap"><p>body</p></div></main>'
+        '</body></html>'
+    )
+
+
+def test_inject_hero_banner_happy_path():
+    """A BlogPosting with og:image + alt gets a <figure class=article-banner>
+    inserted immediately after the closing </section> of ap-hero."""
+    from postbuild_lib.article_furniture import inject_hero_banner
+    html = _make_blogposting_with_og()
+    out = inject_hero_banner(html)
+    assert 'class="article-banner"' in out
+    assert 'fetchpriority="high"' in out
+    assert 'decoding="async"' in out
+    # Width normalised to canonical 1200 in the inserted figure even though
+    # the og:image source URL said w=1425. The original meta tag is untouched —
+    # only the new <figure>'s src is rewritten.
+    figure = out.split('class="article-banner"', 1)[1].split("</figure>", 1)[0]
+    assert "w=1200" in figure
+    assert "w=1425" not in figure
+    # Alt taken from twitter:image:alt meta.
+    assert 'alt="An editorial banner photograph"' in out
+    # Aspect-ratio reservation via explicit width/height attrs.
+    assert 'width="1200"' in out
+    assert 'height="675"' in out
+
+
+def test_inject_hero_banner_falls_back_to_h1_when_alt_missing():
+    """No twitter:image:alt meta → use 'Banner for: <H1 title>'."""
+    from postbuild_lib.article_furniture import inject_hero_banner
+    html = _make_blogposting_with_og(og_image_alt=None, h1="ISO 20022 After Migration")
+    out = inject_hero_banner(html)
+    assert 'alt="Banner for: ISO 20022 After Migration"' in out
+
+
+def test_inject_hero_banner_idempotent_when_banner_already_present():
+    """A page that already carries ``class="article-banner"`` is left alone."""
+    from postbuild_lib.article_furniture import inject_hero_banner
+    html = _make_blogposting_with_og(
+        extra='<figure class="article-banner"><img src="x.webp" /></figure>',
+    )
+    out = inject_hero_banner(html)
+    assert out == html
+
+
+def test_inject_hero_banner_no_op_without_blogposting_jsonld():
+    """Non-BlogPosting pages (listings, static pages) are skipped."""
+    from postbuild_lib.article_furniture import inject_hero_banner
+    html = (
+        '<html><head><meta property="og:image" content="x.webp" /></head>'
+        '<body><section class="ap-hero"><h1>Listings</h1></section>'
+        '<main><div class="wrap"></div></main></body></html>'
+    )
+    out = inject_hero_banner(html)
+    assert out == html
+    assert 'class="article-banner"' not in out
+
+
+def test_inject_hero_banner_no_op_when_og_image_missing():
+    """BlogPosting page without an og:image meta is left alone."""
+    from postbuild_lib.article_furniture import inject_hero_banner
+    html = (
+        '<html><body>'
+        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+        '<section class="ap-hero"><h1>X</h1></section>'
+        '<main><div class="wrap"></div></main></body></html>'
+    )
+    out = inject_hero_banner(html)
+    assert out == html
+
+
+def test_inject_hero_banner_non_cdn_url_passes_through_unchanged():
+    """Banner URLs not on cloudcdn.pro/api/transform are not rewritten —
+    the width-normalisation only applies to the CDN transform endpoint."""
+    from postbuild_lib.article_furniture import inject_hero_banner
+    raw_url = "https://example.com/static/banner.webp"
+    html = _make_blogposting_with_og(og_image=raw_url)
+    out = inject_hero_banner(html)
+    assert raw_url in out
+    # No w= injection on a non-transform URL.
+    assert "w=1200" not in out
+
+
+def test_inject_hero_banner_uses_og_alt_when_twitter_alt_absent():
+    """If twitter:image:alt is missing but og:image:alt is present, prefer
+    twitter (the helper's default) — and when neither, fall back to H1."""
+    from postbuild_lib.article_furniture import inject_hero_banner
+    html = (
+        '<html><head>'
+        '<meta property="og:image" content="https://example.com/x.webp" />'
+        '<meta property="og:image:alt" content="The OG alt" />'
+        '</head><body>'
+        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+        '<section class="ap-hero"><h1>Article H1</h1></section>'
+        '<main><div class="wrap"></div></main></body></html>'
+    )
+    out = inject_hero_banner(html)
+    assert 'alt="The OG alt"' in out
+
+
+def test_inject_hero_banner_returns_unchanged_when_anchor_missing():
+    """og:image present + BlogPosting marker present, but no </section>
+    followed by a sibling element to anchor against → no insertion."""
+    from postbuild_lib.article_furniture import inject_hero_banner
+    html = (
+        '<html><head>'
+        '<meta property="og:image" content="https://example.com/x.webp" />'
+        '</head><body>'
+        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+        # NB: no <section class="ap-hero">…</section> at all — the
+        # _HERO_BANNER_INSERT_RE anchor can't match.
+        '</body></html>'
+    )
+    out = inject_hero_banner(html)
+    assert out == html
+
+
 def test_inject_lang_switcher_emits_rail_when_alternates_exist():
     import postbuild_lib.article_furniture as af
     real_alternates = af._alternates_for_en_slug
