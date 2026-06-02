@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "상호 연결된 시스템을 암시하는 Alessio Soggetti의 에디토리얼 항공 구성 — 2026 뱅킹 인프라 인덱스의 이사회 대시보드 뷰를 위해 선택된 시각적 표현"
+banner_alt: "상호 연결된 시스템을 암시하는 Meiying Ng의 에디토리얼 항공 구성 — 2026 뱅킹 인프라 인덱스의 이사회 대시보드 뷰를 위해 선택된 시각적 표현"
 banner_height: "800"
 banner_width: "1200"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-PdGBci-4jR8.webp"
+banner: "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"

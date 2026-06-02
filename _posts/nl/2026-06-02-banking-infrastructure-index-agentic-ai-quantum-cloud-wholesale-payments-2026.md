@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Een redactionele luchtcompositie van Alessio Soggetti die in elkaar grijpende systemen suggereert — het visuele register dat is gekozen voor een bestuursdashboard van de Banking Infrastructure Index 2026"
+banner_alt: "Een redactionele luchtcompositie van Meiying Ng die in elkaar grijpende systemen suggereert — het visuele register dat is gekozen voor een bestuursdashboard van de Banking Infrastructure Index 2026"
 banner_height: "800"
 banner_width: "1200"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-PdGBci-4jR8.webp"
+banner: "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"

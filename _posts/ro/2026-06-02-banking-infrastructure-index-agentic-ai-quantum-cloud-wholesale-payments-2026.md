@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Compoziție aeriană editorială realizată de Alessio Soggetti sugerând sisteme interconectate — registrul vizual ales pentru o perspectivă de tip tablou de bord, la nivel de consiliu, asupra Indicelui Infrastructurii Bancare 2026"
+banner_alt: "Compoziție aeriană editorială realizată de Meiying Ng sugerând sisteme interconectate — registrul vizual ales pentru o perspectivă de tip tablou de bord, la nivel de consiliu, asupra Indicelui Infrastructurii Bancare 2026"
 banner_height: "800"
 banner_width: "1200"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-PdGBci-4jR8.webp"
+banner: "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"

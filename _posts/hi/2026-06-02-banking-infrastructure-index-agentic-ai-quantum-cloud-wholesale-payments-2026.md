@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Alessio Soggetti की एक संपादकीय हवाई रचना जो आपस में जुड़ी प्रणालियों का संकेत देती है — 2026 बैंकिंग बुनियादी ढाँचा सूचकांक के बोर्ड-स्तरीय डैशबोर्ड दृश्य के लिए चुना गया दृश्य रजिस्टर"
+banner_alt: "Meiying Ng की एक संपादकीय हवाई रचना जो आपस में जुड़ी प्रणालियों का संकेत देती है — 2026 बैंकिंग बुनियादी ढाँचा सूचकांक के बोर्ड-स्तरीय डैशबोर्ड दृश्य के लिए चुना गया दृश्य रजिस्टर"
 banner_height: "800"
 banner_width: "1200"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-PdGBci-4jR8.webp"
+banner: "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"

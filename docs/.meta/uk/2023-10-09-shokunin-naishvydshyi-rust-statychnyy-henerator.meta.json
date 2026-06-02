@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
+  "subtitle": "Static Site Generator — найшвидший генератор статичних сайтів на основі Rust для ефективних веб-сайтів.",
+  "description": "Надаємо вам можливість створювати ефективні статичні веб-сайти з безмежними можливостями, необмеженою масштабованістю та справді унікальною веб-присутністю під вашим повним контролем.",
   "keywords": "pain001, iso 20022, автоматизація платежів, зниження витрат, обробка платежів, платіжні файли, ініціювання платежів, pain message, pain message standards, pain message validation",
+  "title": "[UK DRAFT] Static Site Generator: Fastest Rust-Based SSG",
+  "language": "uk-UA",
+  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
   "date": "Oct 09, 2023",
   "banner_alt": "Вимкнений ноутбук на білому столі зі склянкою води зліва та ручкою, блокнотом і рослиною справа",
-  "description": "Надаємо вам можливість створювати ефективні статичні веб-сайти з безмежними можливостями, необмеженою масштабованістю та справді унікальною веб-присутністю під вашим повним контролем.",
-  "locale": "uk_UA",
-  "subtitle": "Static Site Generator — найшвидший генератор статичних сайтів на основі Rust для ефективних веб-сайтів.",
-  "title": "[UK DRAFT] Static Site Generator: Fastest Rust-Based SSG",
-  "language": "uk-UA"
+  "locale": "uk_UA"
 }

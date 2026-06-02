@@ -1,11 +1,11 @@
 {
-  "language": "nl-NL",
-  "subtitle": "Een open framework voor instant voice-cloning met meertalige ondersteuning",
-  "banner_alt": "Banner van OpenVoice: voice-cloning-framework",
-  "title": "OpenVoice: toonaangevende innovatie in voice-cloning",
   "description": "OpenVoice is een open framework voor instant voice-cloning met meertalige ondersteuning, ontworpen voor onderzoek en productie.",
+  "subtitle": "Een open framework voor instant voice-cloning met meertalige ondersteuning",
   "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
+  "locale": "nl_NL",
   "keywords": "OpenVoice, voice-cloning, AI, spraak, open source, meertalig",
   "date": "April 01, 2024",
-  "locale": "nl_NL"
+  "banner_alt": "Banner van OpenVoice: voice-cloning-framework",
+  "title": "OpenVoice: toonaangevende innovatie in voice-cloning",
+  "language": "nl-NL"
 }

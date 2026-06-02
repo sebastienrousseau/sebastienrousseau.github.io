@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Composition aérienne éditoriale d'Alessio Soggetti évoquant des systèmes interconnectés — le registre visuel choisi pour une vue tableau de bord destinée au conseil de l'Index 2026 des infrastructures bancaires"
+banner_alt: "Composition aérienne éditoriale d'Meiying Ng évoquant des systèmes interconnectés — le registre visuel choisi pour une vue tableau de bord destinée au conseil de l'Index 2026 des infrastructures bancaires"
 banner_height: "800"
 banner_width: "1200"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-PdGBci-4jR8.webp"
+banner: "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"

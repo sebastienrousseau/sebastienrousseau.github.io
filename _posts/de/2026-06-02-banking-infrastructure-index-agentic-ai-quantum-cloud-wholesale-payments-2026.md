@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Eine redaktionelle Luftaufnahme von Alessio Soggetti, die ineinandergreifende Systeme andeutet — das Bildregister einer Vorstands-Dashboard-Ansicht für den Banking Infrastructure Index 2026"
+banner_alt: "Eine redaktionelle Luftaufnahme von Meiying Ng, die ineinandergreifende Systeme andeutet — das Bildregister einer Vorstands-Dashboard-Ansicht für den Banking Infrastructure Index 2026"
 banner_height: "800"
 banner_width: "1200"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-PdGBci-4jR8.webp"
+banner: "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"

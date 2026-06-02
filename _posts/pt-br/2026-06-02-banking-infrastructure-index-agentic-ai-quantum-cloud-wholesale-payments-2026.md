@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Uma composição editorial aérea de Alessio Soggetti sugerindo sistemas entrelaçados — o registro visual escolhido para uma visão de painel do conselho do Índice de Infraestrutura Bancária 2026"
+banner_alt: "Uma composição editorial aérea de Meiying Ng sugerindo sistemas entrelaçados — o registro visual escolhido para uma visão de painel do conselho do Índice de Infraestrutura Bancária 2026"
 banner_height: "800"
 banner_width: "1200"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-PdGBci-4jR8.webp"
+banner: "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"

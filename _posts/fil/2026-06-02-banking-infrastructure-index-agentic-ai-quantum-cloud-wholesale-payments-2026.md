@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Isang editorial aerial composition ni Alessio Soggetti na nagpapahiwatig ng magkakaugnay na sistema — ang visual register na napili para sa board-level dashboard view ng 2026 Banking Infrastructure Index"
+banner_alt: "Isang editorial aerial composition ni Meiying Ng na nagpapahiwatig ng magkakaugnay na sistema — ang visual register na napili para sa board-level dashboard view ng 2026 Banking Infrastructure Index"
 banner_height: "800"
 banner_width: "1200"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-PdGBci-4jR8.webp"
+banner: "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"

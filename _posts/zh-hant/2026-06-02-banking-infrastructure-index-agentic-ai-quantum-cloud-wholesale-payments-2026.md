@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Alessio Soggetti 操刀的編輯級空拍構圖,以交疊系統暗示 2026 銀行基礎建設指數的董事會儀表板視角"
+banner_alt: "Meiying Ng 操刀的編輯級空拍構圖,以交疊系統暗示 2026 銀行基礎建設指數的董事會儀表板視角"
 banner_height: "800"
 banner_width: "1200"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-PdGBci-4jR8.webp"
+banner: "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"

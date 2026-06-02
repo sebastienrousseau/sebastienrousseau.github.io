@@ -236,7 +236,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/index.html" title="The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments">
-<img alt="An editorial aerial composition by Alessio Soggetti suggesting interlocking systems — the visual register chosen for a board-level dashboard view of the 2026 Banking Infrastructure Index" src="https://cloudcdn.pro/stocks/images/alessio-soggetti-PdGBci-4jR8.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="An editorial aerial composition by Meiying Ng suggesting interlocking systems — the visual register chosen for a board-level dashboard view of the 2026 Banking Infrastructure Index" src="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Banking Infrastructure · Agentic AI · Quantum Cryptography</span>
