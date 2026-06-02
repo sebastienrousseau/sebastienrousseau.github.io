@@ -159,9 +159,20 @@ export function isPageNavigation(pathname) {
   return true;
 }
 
+// ActivityPub routes (webfinger / actor / inbox / outbox) live in a
+// sibling module; lang-router checks them first so the Fediverse
+// endpoints take precedence over locale routing and CSP rewriting.
+import { tryActivityPub } from './activitypub.js';
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
+    // ActivityPub handler — fields the four Fediverse endpoints before
+    // the locale + CSP path runs. Returns null when the request isn't
+    // an AP route, in which case we fall through to the existing flow.
+    const apResponse = await tryActivityPub(request);
+    if (apResponse) return apResponse;
+
     // Only act on GET / HEAD page navigation; everything else still gets
     // security headers via the pass-through wrapper.
     if (request.method !== 'GET' && request.method !== 'HEAD') {

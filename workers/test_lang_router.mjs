@@ -474,3 +474,18 @@ test('handler: formspree.io is allowlisted by every response CSP', async () => {
     );
   }
 });
+
+// ---------------------------------------------------------------------------
+// ActivityPub delegation — exercised via /actor (the AP route that needs
+// no origin fetch, so the lang-router test stays origin-free). The
+// activitypub.js module owns its own coverage; this only verifies the
+// router's truthy fast-path branch.
+// ---------------------------------------------------------------------------
+
+test('handler: /actor delegates to ActivityPub handler, skips locale + CSP path', async () => {
+  resetLog();
+  const res = await callHandler(makeRequest('https://sebastienrousseau.com/actor'));
+  assert.equal(res.status, 200);
+  assert.match(res.headers.get('content-type'), /activity\+json/);
+  assert.equal(passThroughLog.length, 0, 'AP routes must not pass through to origin');
+});
