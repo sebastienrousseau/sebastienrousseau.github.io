@@ -134,6 +134,16 @@ if command -v node >/dev/null 2>&1; then
     --test-coverage-functions=100 \
     --test-coverage-include='workers/lang-router.js' \
     workers/test_lang_router.mjs
+  # ActivityPub sibling — same 100% line/branch/function coverage gate,
+  # tested in isolation so the webfinger / actor / inbox / outbox decision
+  # tree stays exhaustively covered as it grows past starter scope.
+  node --test \
+    --experimental-test-coverage \
+    --test-coverage-lines=100 \
+    --test-coverage-branches=100 \
+    --test-coverage-functions=100 \
+    --test-coverage-include='workers/activitypub.js' \
+    workers/test_activitypub.mjs
 fi
 
 # GitHub Pages serves from main/docs, so mirror the postbuild output into
