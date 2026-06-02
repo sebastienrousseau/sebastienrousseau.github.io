@@ -4,7 +4,7 @@
 # exists so ruff + pytest + uv pick up the same configuration in CI and
 # locally, not for distribution metadata.
 name = "sebastienrousseau-com-build"
-version = "0.0.0"
+version = "1.2.0"
 description = "Build + validate pipeline for sebastienrousseau.com"
 requires-python = ">=3.11"
 

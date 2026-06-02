@@ -18,12 +18,14 @@
 </p>
 
 <p align="center">
+ <a href="#quick-start"><img src="https://img.shields.io/badge/version-1.2.0-blue?style=flat-square" alt="v1.2.0" /></a>
  <a href="#quick-start"><img src="https://img.shields.io/badge/languages-28-blue?style=flat-square" alt="28 languages" /></a>
  <a href="#capabilities-shipped"><img src="https://img.shields.io/badge/pages-1850-blue?style=flat-square" alt="1850 pages" /></a>
  <a href="#security-posture"><img src="https://img.shields.io/badge/CSP-strict-success?style=flat-square" alt="Strict CSP" /></a>
  <a href="#security-posture"><img src="https://img.shields.io/badge/TLS-X25519MLKEM768-success?style=flat-square" alt="PQC TLS" /></a>
  <a href="#ci-gates"><img src="https://img.shields.io/badge/WCAG-2.2%20AAA-success?style=flat-square" alt="WCAG 2.2 AAA" /></a>
  <a href="#ci-gates"><img src="https://img.shields.io/badge/coverage-100%25-success?style=flat-square" alt="100% test coverage" /></a>
+ <a href="#ci-gates"><img src="https://img.shields.io/badge/INP-%3C200ms-success?style=flat-square" alt="INP <200ms gate" /></a>
 </p>
 
 ---
@@ -40,7 +42,7 @@
 - [Pipeline overview](#pipeline-overview) — Mermaid flowchart of every stage
 - [Build stages](#build-stages) — what each script does, in order
 - [Inputs](#inputs) and [Outputs](#outputs)
-- [Postbuild passes](#postbuild-passes) — the 18 transforms in `postbuild.py`
+- [Postbuild passes](#postbuild-passes) — the 22 transforms in `postbuild.py`
 
 **Internationalisation**
 
@@ -120,7 +122,7 @@ sebastienrousseau.github.io/
 │ ├── postbuild.py # Single-page orchestrator (~700 lines)
 │ ├── postbuild_lib/ # 6 modules — schemas, seo, output, …
 │ └── test_*.py # 13 in-repo CI gates
-├── tests/ # 359 pytest unit tests, 100% coverage on postbuild_lib
+├── tests/ # 388 pytest unit tests, 100% coverage on postbuild_lib
 ├── workers/ # Cloudflare Worker — locale routing + edge security headers
 │ ├── lang-router.js # the Worker (cookie + ?lang only; no A-L sniff)
 │ └── test_lang_router.mjs # 43 tests, 100% line/branch/func coverage
@@ -250,7 +252,7 @@ public/.well-known/ # ai-plugin.json, openapi.json, openpgpkey/
 
 ## Postbuild passes
 
-`scripts/postbuild.py` is a single-page orchestrator that applies 18 independent transforms per HTML page. The orchestration sequence is order-sensitive (e.g. `inject_word_count` must run before `inject_article_furniture` which renders the word count into the meta bar):
+`scripts/postbuild.py` is a single-page orchestrator that applies 22 independent transforms per HTML page. The orchestration sequence is order-sensitive (e.g. `inject_word_count` must run before `inject_article_furniture` which renders the word count into the meta bar):
 
 ```mermaid
 %%{init: {'theme':'neutral'} }%%
@@ -261,24 +263,28 @@ flowchart TB
         A1["scrub localhost"] --> A2["fingerprint assets"]
         A2 --> A3["fix SRI"]
         A3 --> A4["inject ItemList"]
-        A4 --> A5["TechArticle"]
-        A5 --> A6["SoftwareSourceCode"]
-        A6 --> A7["fix og:image"]
-        A7 --> A8["complete OG"]
-        A8 --> A9["stamp img w/h"]
-        A9 --> A10["HowTo schema"]
-        A10 --> A11["wordCount"]
-        A11 --> A12["about / mentions"]
+        A4 --> A5["TechArticle / ScholarlyArticle"]
+        A5 --> A6["NewsArticle (last 48h)"]
+        A6 --> A7["SoftwareSourceCode"]
+        A7 --> A8["fix og:image"]
+        A8 --> A9["complete OG"]
+        A9 --> A10["stamp img w/h"]
+        A10 --> A11["HowTo schema"]
+        A11 --> A12["wordCount"]
+        A12 --> A13["about / mentions"]
     end
     subgraph S2["2 · Article furniture"]
         direction TB
         B1["article furniture"] --> B2["sigstore attestation"]
-        B2 --> B3["nav highlight"]
-        B3 --> B4["prev / next"]
-        B4 --> B5["hreflang"]
-        B5 --> B6["speculation rules"]
-        B6 --> B7["GitHub stats"]
-        B7 --> B8["hoist body link tags"]
+        B2 --> B3["anchor links + ToC (idempotent)"]
+        B3 --> B4["strip duplicate body H1"]
+        B4 --> B5["per-article language switcher"]
+        B5 --> B6["nav highlight"]
+        B6 --> B7["prev / next"]
+        B7 --> B8["hreflang"]
+        B8 --> B9["speculation rules"]
+        B9 --> B10["GitHub stats"]
+        B10 --> B11["hoist body link tags"]
     end
     subgraph S3["3 · CSP finalisation"]
         direction TB
@@ -544,7 +550,10 @@ What's in production today (≠ what's on the roadmap):
 | **AI / agent surface** | `/api/agents/{posts,topics,person,index}.json` + `.well-known/ai-plugin.json` + `.well-known/openapi.json` (OpenAPI 3.1). |
 | **Performance** | Speculation Rules API (hover-prerender), 11750+ images with explicit width/height, hero `fetchpriority=high`, system fonts only, ~5 KB JS. Lighthouse 100/100/100/100 across all categories on article pages. |
 | **Accessibility** | WCAG 2.2 AAA — 0 pa11y violations across 1850 pages, all interactive targets ≥24×24 (WCAG 2.5.5), focus-visible rings, `prefers-reduced-motion` honored, full keyboard nav. |
-| **SEO / GEO** | `Person` / `Article` / `BlogPosting` / `TechArticle` / `SoftwareSourceCode` / `FAQPage` / `HowTo` / `BreadcrumbList` / `ItemList` / `ProfilePage` JSON-LD. Complete OG/Twitter metadata, hreflang reciprocity, BCP-47 regional tags. |
+| **SEO / GEO** | `Person` (with ORCID + `hasCredential` + `knowsAbout` as `DefinedTerm`) / `Organization` (with editorial / corrections / ethics / diversity policy refs) / `BlogPosting` / `TechArticle` / `ScholarlyArticle` (auto-upgrade ≥6 standards-body citations) / `NewsArticle` (last 48 h Google News window) / `SoftwareSourceCode` / `EditorialPolicy` / `CorrectionsPolicy` / `FAQPage` / `HowTo` / `BreadcrumbList` / `ItemList` / `ProfilePage` JSON-LD. Complete OG/Twitter metadata, hreflang reciprocity, BCP-47 regional tags. |
+| **Editorial governance** | Published [`/editorial/`](https://sebastienrousseau.com/editorial/) — sourcing (5-tier primary-source hierarchy), 48-hour corrections clause (IFCN-aligned), AI assistance disclosure, conflict-of-interest disclosure (HSBC employment), CC BY-4.0 republication terms. The Google News reviewer signal most analyst tech blogs are missing. |
+| **Typography** | Three CSS custom properties — `--type-display` / `--type-body` / `--type-mono` — defined in every layout's `:root`. System-font stacks today; the abstraction layer is in place for self-hosted variable font swap-in (one diff per layout). |
+| **Per-article language switcher** | Inline rail rendered as a band between the article hero and `<main>` showing the 28-locale parity to readers as content, not chrome. Native-script labels (`Français · 日本語 · العربية · 简体中文 · …`), localised lead-in per page locale, `dir="rtl"` on Arabic + Hebrew links, full `lang` + `hreflang` + `rel="alternate"`. |
 | **Build provenance** | CycloneDX SBOM published at `/sbom.cdx.json`, real SRI on every asset, signed commits, 14 CI gates on every push. |
 | **Edge routing** | Cloudflare Worker honours `pref-lang` cookie + `?lang=` deep-links for locale routing (opt-in only — no Accept-Language sniffing) and owns the strict-CSP / security-header layer on every response. Sub-50ms, no origin fetch beyond pass-through. |
 | **WASM labs** | Rust crates compiled to WebAssembly via `wasm-pack`, served under `/labs/<crate>/` under a tight CSP (`script-src 'self' 'wasm-unsafe-eval'`). First demo: SHA-256 / BLAKE3 / Argon2id computed client-side from a 94 KB bundle. |
@@ -557,16 +566,24 @@ Every page emits structured data. The site uses these `@type`s:
 
 | Type | Where | Count (typical clean build) |
 |---|---|---|
-| `Person` | Every page (Sebastien Rousseau) | 1850 |
+| `Person` | Every page — Sebastien Rousseau with ORCID (`0009-0005-1434-284X`), `hasCredential` chain, `knowsAbout` as `DefinedTerm` array linking to Wikipedia / NIST / SWIFT / ECB | 1850 |
+| `Organization` | Every page — `@id` `#organization` + `editorialPolicy` / `correctionsPolicy` / `ethicsPolicy` / `diversityPolicy` pointing at `/editorial/` | 1850 |
+| `WebSite` | Every page — `publisher` → `#organization`, `author` → `#person` | 1850 |
 | `BlogPosting` | Dated articles | 1232 |
-| `TechArticle` | Dated articles whose keywords name a programming language or technical domain | 613 |
+| `TechArticle` | Dated articles (default Article subtype) | ~1200 |
+| `ScholarlyArticle` | Dated articles with ≥6 standards-body citations (NIST/ISO/BIS/IETF/…) | ~80 |
+| `NewsArticle` | Dated articles within 48h of `datePublished` (Google News carousel) | rolling ~2 |
+| `EditorialPolicy` | `/editorial/` `@id` `#policy` — sourcing, AI disclosure, COI | 1 |
+| `CorrectionsPolicy` | `/editorial/#corrections` — 48h IFCN-aligned clause | 1 |
+| `DefinedTerm` | `Person.knowsAbout` array — 12 domain terms with `sameAs` to authoritative URLs | 22200 |
+| `EducationalOccupationalCredential` | `Person.hasCredential` — 3 entries (HSBC / SWIFT / NIST PQC) | 5550 |
+| `PropertyValue` | `Person.identifier` (ORCID) | 1850 |
 | `SoftwareSourceCode` | `/projects/` cards (26 items, in an ItemList wrapper) | 26 |
 | `HowTo` | Step-by-step articles (pain001, pacs.008, …) | 16 |
 | `ItemList` | `/articles/`, `/papers/`, `/projects/` listings | 3 |
 | `BreadcrumbList` | Every page | 1850 |
 | `FAQPage` | `/papers/`, `/projects/` | 2 |
 | `ProfilePage` | `/about/` | 1 |
-| `Organization` | `/about/` employer chain (HSBC, PayPal, Barclays, …) | 1850 |
 | `ProgramMembership` | `/about/` EPAA Working Group | 1850 |
 
 Every inline JSON-LD block is allowlisted in the page's CSP by its SHA-256 hash. The CI gate [`test_csp_strict.py`](scripts/test_csp_strict.py) fails the build if any JSON-LD block on any page lacks its hash in the policy. The schema validator at [`scripts/validate_jsonld.py`](scripts/validate_jsonld.py) fails on required-property gaps (e.g. `ListItem` missing `name`).
@@ -580,16 +597,19 @@ Three layers of discovery for AI crawlers and agentic clients:
 | File | Format | Purpose |
 |---|---|---|
 | `/llms.txt` | Plain text directory | Per-llmstxt.org spec — one-line summary per article. |
+| `/llms-ctx.txt` | Plain text agent-context | Compact companion to `llms.txt` — URL + one-line description pairs, < 80 lines, fits the smallest reasonable LLM context budget. |
 | `/llms-full.txt` | Plain text corpus | Full article bodies (Markdown) for fine-tuning / RAG. |
 | `/api/agents/posts.json` | Application JSON | Every dated post with title, URL, date, topics, keywords, description, wordCount. |
 | `/api/agents/topics.json` | Application JSON | Curated topic clusters + slug lists. |
-| `/api/agents/person.json` | Schema.org JSON | Author profile (Person + Organization). |
+| `/api/agents/person.json` | Schema.org JSON | Author profile (`Person` + ORCID + `hasCredential` + 12-entry `DefinedTerm` `knowsAbout`). |
+| `/api/agents/organization.json` | Schema.org JSON | Publisher (`Organization` + `Brand` + `editorialPolicy` / `correctionsPolicy` refs). |
 | `/api/agents/index.json` | Application JSON | Discovery document — entry point + cross-links to RSS / Atom / sitemap / ai-plugin. |
 | `/.well-known/ai-plugin.json` | ChatGPT-plugin manifest | Plugin-style discovery for AI agent toolchains. |
 | `/.well-known/openapi.json` | OpenAPI 3.1 | Schema for the `/api/agents/*` endpoints. |
 | `/feed.json` per lang | JSON Feed 1.1 | Modern JSON-Feed alternative to RSS. |
+| `/editorial/` | HTML + `EditorialPolicy` + `CorrectionsPolicy` JSON-LD | Human + machine-readable editorial standards. Linked from every page via `Organization.editorialPolicy`. |
 
-The `robots.txt` advertises permissive access for all major AI bots (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, OAI-SearchBot, etc.) and the discovery files above.
+The `robots.txt` now groups bots under five explicit category headers (Web search · Social · SEO audit · AI retrieval · AI training · Specialised indexers). The human-readable bot policy lives at [`/about/#bot-policy`](https://sebastienrousseau.com/about/#bot-policy) — it enumerates each category, states the CC BY-4.0 licence, and tells crawler operators how to request a per-bot rule change.
 
 ---
 
@@ -707,7 +727,7 @@ flowchart TB
 | Workflow | Triggers | Gates |
 |---|---|---|
 | [`ci.yml`](.github/workflows/ci.yml) (build-audit) | every push + PR | ruff, radon, pytest+coverage 100%, build, JSON-LD validate, pa11y AAA over 1850 pages, nested Lighthouse CI. |
-| [`lighthouse.yml`](.github/workflows/lighthouse.yml) | every push + weekly cron | Full Lighthouse CI on 7 representative URLs × 3 runs. Thresholds: performance ≥0.90 warn, a11y/best-practices/SEO ≥0.95 error. |
+| [`lighthouse.yml`](.github/workflows/lighthouse.yml) | every push + weekly cron | Full Lighthouse CI on 10 representative URLs × 3 runs. Thresholds: performance ≥0.90 warn, a11y ≥0.98 error, best-practices ≥0.95 error, SEO ≥0.95 error. **Core Web Vitals audit-level gates**: TBT ≤200 ms (INP lab proxy), LCP ≤2500 ms, CLS ≤0.1 (all error); FCP ≤1800 ms (warn). |
 | [`pages-deploy.yml`](.github/workflows/pages-deploy.yml) | push to `main` | Build + `upload-pages-artifact` + `deploy-pages`. |
 | [`schema-diff.yml`](.github/workflows/schema-diff.yml) | every PR | Builds base + HEAD, diffs JSON-LD, posts a PR comment. Read-only. |
 | [`refresh-gh-stats.yml`](.github/workflows/refresh-gh-stats.yml) | nightly cron + manual | Refreshes `_data/gh-stats.json` from the GitHub API. Opens a PR on change. |
@@ -753,6 +773,7 @@ For a general-purpose Rust SSG with theming, see [Static Site Generator](https:/
 
 | Document | Covers |
 |---|---|
+| [`CHANGELOG.md`](CHANGELOG.md) | **Versioned release history** — every schema, build pipeline, security, and crawler-surface change since `v1.0.0`. Loosely Keep-a-Changelog formatted. |
 | [`DEPLOY.md`](DEPLOY.md) | Cloudflare configuration: PQC TLS toggle, Transform Rules for HSTS / COOP / CORP / X-Frame-Options, HSTS preload submission, verification commands, Worker deployment. |
 | [`doc/PUBLISHING.md`](doc/PUBLISHING.md) | **Definitive publishing runbook** — daily flow, frontmatter contract, editorial decisions, translation rules, what's auto-refreshed vs hand-maintained, every CI failure mode + fix, adding a new permanent section, forking the pipeline. |
 | [`doc/daily-publishing.md`](doc/daily-publishing.md) | Short-form sibling of `PUBLISHING.md` — TL;DR + when-to-push timing table. |
