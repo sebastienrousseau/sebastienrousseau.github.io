@@ -58,6 +58,9 @@
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
     <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
     <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=JetBrains+Mono:wght@400..700&family=Newsreader:opsz,wght@6..72,400..700&display=swap" />
     <!-- Preload the LCP hero portrait so it doesn't compete with the
          render-blocking JS bundle on throttled mobile connections.
          Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
@@ -94,6 +97,13 @@
         --max-wide:1440px;
         --radius:18px;
         color-scheme: light dark;
+        /* Named typography — Inter (body sans), Newsreader (variable
+           serif headlines), JetBrains Mono (code). Three OFL variable
+           fonts loaded once from fonts.gstatic.com with display:swap so
+           text renders in the fallback stack while the WOFF2 lands. */
+        --type-display: "Newsreader", Georgia, Cambria, "Times New Roman", Times, serif;
+        --type-body: "Inter", "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        --type-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
       }
       /* View Transitions API (Chromium 126+) — native cross-fade on
          cross-document navigation. Honours prefers-reduced-motion via
@@ -129,7 +139,7 @@
       html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
       body{
         margin:0;background:var(--bg);color:var(--ink);
-        font-family:"SF Pro Text","SF Pro Display",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family:var(--type-body);
         font-size:17px;line-height:1.47059;letter-spacing:-.022em;
         -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
       }
@@ -147,7 +157,7 @@
          opt out via their own class-bearing selectors. */
       main.content :is(p,li,blockquote,dd,dt,td,th) a:not([class]){text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
 
-      h1,h2,h3,h4,h5,h6{font-family:"SF Pro Display",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:600;letter-spacing:-.015em;margin:0;color:inherit;text-wrap:balance}
+      h1,h2,h3,h4,h5,h6{font-family:var(--type-display);font-weight:600;letter-spacing:-.015em;margin:0;color:inherit;text-wrap:balance}
       p,li{text-wrap:pretty}
       @media print{nav,header,footer,.ap-search,.ap-lang,.skip,.gh-stats-row,.setup-finale,.share-block,.related-section,.speculation-rules{display:none!important}main{max-width:none!important;padding:0!important}body{background:#fff!important;color:#000!important;font-size:11pt;line-height:1.45}a{color:#000;text-decoration:underline}a[href^="http"]:after{content:" (" attr(href) ")";font-size:9pt;color:#444}img{max-width:100%!important;page-break-inside:avoid}h1,h2,h3{page-break-after:avoid}pre,blockquote{page-break-inside:avoid;border-left:2px solid #000/* rtl-safe-ignore — print stylesheet */}}
 
@@ -181,7 +191,7 @@
       .ap-search{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 10px;background:transparent;border:1px solid transparent;border-radius:22px;color:var(--ink);cursor:pointer;transition:background .15s,border-color .15s}
       .ap-search:hover{background:color-mix(in srgb,var(--ink) 7%,transparent)}
       .ap-search svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-      .ap-search-kbd{display:inline-flex;align-items:center;padding:2px 6px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;color:var(--ink-mute, #6e6e73);background:color-mix(in srgb,var(--ink) 6%,transparent);border:1px solid color-mix(in srgb,var(--ink) 10%,transparent);border-radius:6px;line-height:1}
+      .ap-search-kbd{display:inline-flex;align-items:center;padding:2px 6px;font-family:var(--type-mono);font-size:11.5px;color:var(--ink-mute, #6e6e73);background:color-mix(in srgb,var(--ink) 6%,transparent);border:1px solid color-mix(in srgb,var(--ink) 10%,transparent);border-radius:6px;line-height:1}
       @media (max-width:1100px){.ap-search-kbd{display:none}.ap-search{width:44px;padding:0;border-radius:50%}}
 
       /* Language selector — globe + lang code, opens a flag grid below
@@ -276,7 +286,7 @@
       .article-sources-list a{display:inline-flex;flex-wrap:wrap;gap:6px;text-decoration:none;color:var(--ink, #111)}
       .article-sources-list a:hover .source-host{text-decoration:underline}
       .source-host{font-weight:500;color:var(--accent, #0056b3)}
-      .source-path{color:var(--ink-mute, #6e6e73);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;overflow-wrap:anywhere}
+      .source-path{color:var(--ink-mute, #6e6e73);font-family:var(--type-mono);font-size:12.5px;overflow-wrap:anywhere}
       .post-pagination{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:760px;margin:32px auto 8px;padding:0 var(--pad-x)}
       .post-pagination a{display:flex;flex-direction:column;gap:4px;padding:16px 20px;background:var(--card, #fafafc);border:1px solid var(--cl-grey-200, #e3e6ed);border-radius:14px;text-decoration:none;color:var(--ink, #111);transition:background .15s ease,transform .15s ease}
       .post-pagination a:hover{background:var(--cl-grey-100, #f1f3f7);transform:translateY(-1px)}
@@ -368,7 +378,7 @@
       main.content p{font-size:18px;line-height:1.6;margin:0 0 1em;color:var(--ink-soft)}
       main.content a{color:var(--link-color)}
       main.content :is(p,figure) > img{border-radius:14px;margin:32px auto}
-      pre.mermaid{max-width:760px;margin:32px auto;padding:24px;background:var(--card, #fafafc);border:1px solid var(--cl-grey-200, #e3e6ed);border-radius:14px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;line-height:1.5;color:var(--ink-mute, #6e6e73);overflow-x:auto;text-align:center}
+      pre.mermaid{max-width:760px;margin:32px auto;padding:24px;background:var(--card, #fafafc);border:1px solid var(--cl-grey-200, #e3e6ed);border-radius:14px;font-family:var(--type-mono);font-size:13px;line-height:1.5;color:var(--ink-mute, #6e6e73);overflow-x:auto;text-align:center}
       pre.mermaid svg{max-width:100%;height:auto;margin:0 auto;display:block}
       main.content figure{margin:32px 0}
       main.content blockquote{border-inline-start:4px solid var(--accent);margin:32px 0;padding-block:8px;padding-inline-start:20px;color:var(--ink-mute);font-style:italic}
@@ -468,7 +478,7 @@
 
       /* 404 page */
       .error-page{max-width:680px;margin:0 auto;text-align:center;padding:40px 0}
-      .error-eyebrow{font-size:96px;font-weight:700;letter-spacing:-.03em;color:var(--accent);line-height:1;margin:0 0 16px;font-family:"SF Pro Display",-apple-system,sans-serif}
+      .error-eyebrow{font-size:96px;font-weight:700;letter-spacing:-.03em;color:var(--accent);line-height:1;margin:0 0 16px;font-family:var(--type-display)}
       .error-title{font-size:clamp(28px,3.6vw,40px);font-weight:600;letter-spacing:-.015em;margin:0 0 12px;color:var(--ink)}
       .error-sub{font-size:18px;line-height:1.45;color:var(--ink-mute);margin:0 0 32px}
       .error-cta{display:inline-flex;flex-wrap:wrap;gap:14px;justify-content:center}
@@ -688,7 +698,7 @@
       .feat-quote-section{background:linear-gradient(135deg,#0a1b3d 0%,#13284e 50%,#082450 100%);color:#f5f5f7;position:relative;overflow:hidden}
       .feat-quote-section::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 20%,rgba(90,200,250,.15) 0%,transparent 45%),radial-gradient(circle at 80% 80%,rgba(120,90,255,.18) 0%,transparent 50%);z-index:0;pointer-events:none}
       .feat-quote-section .wrap{position:relative;z-index:1}
-      .feat-quote{font-family:"SF Pro Display",-apple-system,sans-serif;font-size:clamp(28px,3.6vw,44px);line-height:1.18;font-weight:500;letter-spacing:-.015em;color:inherit;max-width:1100px;margin:0 auto;text-align:start}
+      .feat-quote{font-family:var(--type-display);font-size:clamp(28px,3.6vw,44px);line-height:1.18;font-weight:500;letter-spacing:-.015em;color:inherit;max-width:1100px;margin:0 auto;text-align:start}
       .feat-quote-section .feat-quote{text-align:center}
       .feat-quote p{margin:0}
       /* Opaque background so HTMLCS can compute contrast (a translucent bg
@@ -705,7 +715,7 @@
       .feat-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:48px;text-align:start}
       @media (max-width:833px){.feat-stats{grid-template-columns:1fr;gap:32px}}
       .feat-stat{display:block;padding:36px 32px;background:var(--card);border-radius:22px;box-shadow:var(--shadow);text-align:start}
-      .feat-stat strong{display:block;font-size:clamp(56px,7vw,88px);font-weight:600;letter-spacing:-.03em;line-height:.95;margin:0 0 14px;color:var(--ink);font-family:"SF Pro Display",-apple-system,sans-serif}
+      .feat-stat strong{display:block;font-size:clamp(56px,7vw,88px);font-weight:600;letter-spacing:-.03em;line-height:.95;margin:0 0 14px;color:var(--ink);font-family:var(--type-display)}
       .feat.dark .feat-stat strong{color:#fff}
       .feat-stat span{font-size:15px;line-height:1.45;color:var(--ink-mute);display:block}
       .feat.dark .feat-stat span{color:#a1a1a6}
