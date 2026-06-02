@@ -321,6 +321,96 @@ def inject_article_furniture(html: str) -> str:
     return _HERO_RE.sub(rf'\1{fragment}\2', html, count=1)
 
 
+_OG_IMAGE_RE = re.compile(
+    r'<meta\s+property="og:image"\s+content="([^"]+)"', re.IGNORECASE,
+)
+_OG_IMAGE_ALT_RE = re.compile(
+    r'<meta\s+(?:property|name)="og:image:alt"\s+content="([^"]+)"',
+    re.IGNORECASE,
+)
+_BANNER_ALT_FRONTMATTER_RE = re.compile(
+    r'<meta\s+name="twitter:image:alt"\s+content="([^"]+)"', re.IGNORECASE,
+)
+# Cap the inserted banner at 1200×675 (16:9). Source images come from the CDN
+# transform endpoint with `w=` set by the frontmatter, but we override to a
+# canonical 1200 wide so every article's LCP hero is dimensionally identical
+# and the CSS aspect-ratio reservation is exact.
+_BANNER_WIDTH = 1200
+_BANNER_HEIGHT = 675
+
+
+def _normalise_banner_url(url: str) -> str:
+    """Force the CDN-transform width to the canonical hero size.
+
+    The frontmatter may carry the banner at any width (some older articles
+    set ``w=1425`` to match the og:image dimensions). For the in-article
+    hero we want a single deterministic size so the aspect-ratio
+    reservation in CSS is exact and LCP is comparable across articles.
+    """
+    if "cloudcdn.pro/api/transform" not in url:
+        return url
+    return re.sub(r"([?&])w=\d+", rf"\1w={_BANNER_WIDTH}", url, count=1)
+
+
+def inject_hero_banner(html: str) -> str:
+    """Insert a hero ``<figure class="article-banner">`` right after the
+    H1/byline ``<section class="ap-hero">`` on every BlogPosting page.
+
+    Source: ``<meta property="og:image">`` (set by the SSG from the
+    article's frontmatter ``banner:`` field).
+    Alt:    ``<meta name="twitter:image:alt">`` (set by the SSG from
+            ``banner_alt:``), falling back to the article's H1 title.
+
+    Idempotent. Skips:
+      - non-BlogPosting pages (listings / static pages)
+      - pages whose author already placed an inline article-body image
+        immediately after the H1 (the legacy hand-curated pattern used
+        by 2026-06-02; we leave those alone so the rewrite doesn't
+        clobber an editor's chosen positioning).
+    """
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="article-banner"' in html:
+        return html
+    og = _OG_IMAGE_RE.search(html)
+    if not og:
+        return html
+    banner_url = _normalise_banner_url(og.group(1))
+
+    alt_m = _BANNER_ALT_FRONTMATTER_RE.search(html) or _OG_IMAGE_ALT_RE.search(html)
+    if alt_m:
+        alt_text = alt_m.group(1)
+    else:
+        # Fallback: derive from the H1 — better than nothing, screen-reader-safe.
+        h1 = _H1_RE.search(html)
+        alt_text = f"Banner for: {h1.group(1).strip()}" if h1 else ""
+
+    figure = (
+        f'<figure class="article-banner">'
+        f'<img src="{banner_url}" alt="{alt_text}" '
+        f'width="{_BANNER_WIDTH}" height="{_BANNER_HEIGHT}" '
+        f'fetchpriority="high" decoding="async" />'
+        f'</figure>'
+    )
+    # Insert immediately after the closing </section> of the ap-hero block.
+    # Same anchor _LANG_SWITCH_INSERT_RE uses, but we run BEFORE the lang
+    # switcher so its insertion sees the banner already in place and slots
+    # the langswitch aside after the banner.
+    new_html, n = _HERO_BANNER_INSERT_RE.subn(
+        lambda m: f'{m.group(1)}{figure}{m.group(2)}', html, count=1,
+    )
+    return new_html if n else html
+
+
+# Insertion anchor: the close of <section class="ap-hero"> immediately
+# followed by the next sibling. Matches the same shape as the lang-switch
+# anchor (which runs later in the pipeline).
+_HERO_BANNER_INSERT_RE = re.compile(
+    r'(</section>)(\s*<(?!figure class="article-banner")[a-z])',
+    re.IGNORECASE,
+)
+
+
 # A previously-injected anchor link inside a heading. Matched once and
 # stripped during text extraction so a re-run never picks up the "#" or
 # its surrounding markup as part of the heading title.

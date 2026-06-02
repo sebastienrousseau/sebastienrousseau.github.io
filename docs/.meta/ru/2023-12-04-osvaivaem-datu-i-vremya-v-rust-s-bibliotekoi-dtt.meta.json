@@ -1,11 +1,11 @@
 {
-  "title": "Осваиваем дату и время в Rust с библиотекой dtt",
-  "date": "December 4, 2023",
-  "banner_alt": "dtt — баннер библиотеки даты и времени",
+  "banner": "https://cloudcdn.pro/stocks/images/dtt-banner.webp",
+  "language": "ru-RU",
   "locale": "ru_RU",
+  "banner_alt": "dtt — баннер библиотеки даты и времени",
+  "keywords": "dtt, дата, время, Rust, временные зоны, ISO 8601, финансовые вычисления, отчётность, открытый код",
+  "title": "Осваиваем дату и время в Rust с библиотекой dtt",
   "description": "dtt — это библиотека Rust для надёжной работы с датой и временем, ориентированная на сценарии финансовых вычислений и регуляторной отчётности.",
   "subtitle": "Безопасная работа с временными зонами и финансовыми датами",
-  "keywords": "dtt, дата, время, Rust, временные зоны, ISO 8601, финансовые вычисления, отчётность, открытый код",
-  "language": "ru-RU",
-  "banner": "https://cloudcdn.pro/stocks/images/dtt-banner.webp"
+  "date": "December 4, 2023"
 }

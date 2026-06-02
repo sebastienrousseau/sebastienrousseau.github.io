@@ -1,11 +1,11 @@
 {
   "locale": "bn_BD",
-  "description": "অসীম সম্ভাবনা, সীমাহীন স্কেলেবিলিটি এবং আপনার নিজের নিয়ন্ত্রণে একটি অনন্য ওয়েব উপস্থিতি সহ উচ্চ-প্রভাবশালী স্ট্যাটিক ওয়েবসাইট তৈরি করতে আপনাকে সক্ষম করছে।",
-  "banner_alt": "একটি সাদা টেবিলের উপর বন্ধ ল্যাপটপ কম্পিউটার, বাম দিকে এক গ্লাস জল এবং ডান দিকে একটি কলম, নোটপ্যাড ও গাছ",
-  "subtitle": "Static Site Generator — উচ্চ-প্রভাবশালী ওয়েবসাইটের জন্য সবচেয়ে দ্রুত Rust-ভিত্তিক স্ট্যাটিক সাইট জেনারেটর।",
-  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
+  "keywords": "pain001, iso 20022, পেমেন্ট অটোমেশন, খরচ হ্রাস, পেমেন্ট প্রসেসিং, পেমেন্ট ফাইল, পেমেন্ট ইনিশিয়েশন, pain message, pain message standards, pain message validation",
   "title": "Static Site Generator: Fastest Rust-Based SSG",
+  "subtitle": "Static Site Generator — উচ্চ-প্রভাবশালী ওয়েবসাইটের জন্য সবচেয়ে দ্রুত Rust-ভিত্তিক স্ট্যাটিক সাইট জেনারেটর।",
+  "banner_alt": "একটি সাদা টেবিলের উপর বন্ধ ল্যাপটপ কম্পিউটার, বাম দিকে এক গ্লাস জল এবং ডান দিকে একটি কলম, নোটপ্যাড ও গাছ",
   "date": "Oct 09, 2023",
-  "language": "bn-BD",
-  "keywords": "pain001, iso 20022, পেমেন্ট অটোমেশন, খরচ হ্রাস, পেমেন্ট প্রসেসিং, পেমেন্ট ফাইল, পেমেন্ট ইনিশিয়েশন, pain message, pain message standards, pain message validation"
+  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
+  "description": "অসীম সম্ভাবনা, সীমাহীন স্কেলেবিলিটি এবং আপনার নিজের নিয়ন্ত্রণে একটি অনন্য ওয়েব উপস্থিতি সহ উচ্চ-প্রভাবশালী স্ট্যাটিক ওয়েবসাইট তৈরি করতে আপনাকে সক্ষম করছে।",
+  "language": "bn-BD"
 }

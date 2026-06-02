@@ -284,11 +284,42 @@
       .post-pagination-label{font-size:12.5px;font-weight:500;letter-spacing:.03em;text-transform:uppercase;color:var(--ink-mute, #6e6e73)}
       .post-pagination-title{font-size:15px;font-weight:500;line-height:1.35}
       .post-pagination-stub{display:block}
+      /* ---------- Article hero banner (figure inserted by postbuild from
+         frontmatter `banner:`). LCP-relevant: must be the first image
+         after the H1. fetchpriority="high" set inline by the postbuild
+         injector. Sizing matches the 1200×675 (16:9) source the CDN
+         delivers; aspect-ratio reserved up-front to keep CLS at zero
+         even before the image loads. ---------- */
+      .article-banner{margin:0 auto 32px;max-width:var(--max-wide, 1100px);padding:0 var(--pad-x)}
+      .article-banner img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:var(--radius, 14px);box-shadow:0 24px 60px -28px rgba(0,0,0,.22);background:var(--cl-grey-100, #f1f3f7)}
+      .article-banner figcaption{display:block;font-size:12.5px;color:var(--ink-mute, #6e6e73);margin-top:8px;text-align:center;line-height:1.4}
+      .article-banner figcaption a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+
+      /* ---------- In-article language switcher. Renders as a single
+         baseline-aligned row that wraps to additional rows only when
+         the locale chips don't fit. Each chip is a low-affordance
+         underline link with a hairline middle-dot separator from the
+         previous chip — the Mozilla / NY Times pattern, scaled to 27
+         locales. ---------- */
+      .article-langswitch{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 4px;max-width:var(--max-wide, 1100px);margin:0 auto 32px;padding:14px var(--pad-x);font-size:14px;color:var(--ink-mute, #6e6e73);line-height:1.55}
+      .article-langswitch-lead{font-weight:500;color:var(--ink, #111);margin-inline-end:4px}
+      .article-langswitch-lead::after{content:":"}
+      .article-langswitch-list{display:contents;list-style:none;margin:0;padding:0}
+      .article-langswitch-list li{display:inline-flex;align-items:baseline}
+      .article-langswitch-list li + li::before{content:"\00B7";color:var(--ink-faint, #b0b0b8);margin:0 8px 0 4px;font-weight:700}
+      .article-langswitch-list a{color:var(--link-color, #0056b3);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s ease,color .15s ease}
+      .article-langswitch-list a:hover{border-bottom-color:currentColor}
+      .article-langswitch-list a[hreflang]:lang(ar),
+      .article-langswitch-list a[hreflang]:lang(he){direction:rtl}
+
       @media (max-width:640px){
         .article-toc{margin-inline:var(--pad-x)}
         .author-card{margin-inline:var(--pad-x);flex-direction:column;align-items:center;text-align:center}
         .post-pagination{grid-template-columns:1fr;gap:10px}
         .post-pagination-next{text-align:start}
+        .article-langswitch{padding:12px var(--pad-x);font-size:13.5px}
+        .article-banner{padding:0}
+        .article-banner img{border-radius:0}
       }
 
       /* ---------- Pill button (Apple-style) ---------- */

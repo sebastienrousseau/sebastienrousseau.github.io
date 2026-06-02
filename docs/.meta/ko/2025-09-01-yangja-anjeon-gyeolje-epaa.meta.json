@@ -1,12 +1,12 @@
 {
   "locale": "ko_KR",
-  "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo-unsplash.webp",
+  "language": "ko-KR",
+  "keywords": "양자 안전 결제, EPAA, 포스트 양자 암호, 결제 인프라, 도매 결제, 실시간 결제",
+  "title": "양자 안전 결제: EPAA 백서",
   "banner_alt": "양자 계산과 결제 인프라",
   "description": "Emerging Payments Association Asia를 위한 산업 백서. 양자 컴퓨팅이 결제 인프라에 가하는 구조적 위협.",
   "date": "September 1, 2025",
-  "keywords": "양자 안전 결제, EPAA, 포스트 양자 암호, 결제 인프라, 도매 결제, 실시간 결제",
   "last_reviewed": "2026-05-16",
-  "language": "ko-KR",
-  "title": "양자 안전 결제: EPAA 백서",
+  "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo-unsplash.webp",
   "subtitle": "결제 산업이 지금 행동하여야 하는 이유"
 }
