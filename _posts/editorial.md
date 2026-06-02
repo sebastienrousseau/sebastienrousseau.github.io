@@ -13,14 +13,14 @@ charset: "UTF-8"
 cname: ""
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Jun 02, 2026"
-description: "Editorial standards for sebastienrousseau.com — sourcing, corrections policy, AI-assistance disclosure, conflict-of-interest disclosure, and accountability. Operative on every article."
+description: "Editorial standards for sebastienrousseau.com: sourcing, corrections policy, AI-assistance disclosure, conflict-of-interest disclosure, and accountability. Operative on every article."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.com/editorial"
-image_alt: ""
-image_height: ""
-image_width: ""
+image_alt: "Logo of Sebastien Rousseau"
+image_height: "162"
+image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 keywords: "editorial standards, corrections policy, AI disclosure, conflict of interest, sourcing, fact checking, journalism standards, IFCN, Google News, accountability"
 last_reviewed: "2026-06-02"
@@ -43,44 +43,56 @@ short_name: "sebastienrousseau"
 subtitle: "Sourcing, corrections, AI disclosure, conflicts. Operative on every article on sebastienrousseau.com."
 tags: "editorial standards, corrections policy, AI disclosure, conflict of interest, sourcing, fact checking, journalism standards"
 theme-color: "0, 67, 165"
-title: "Editorial standards · sebastienrousseau.com"
+title: "Editorial standards: sebastienrousseau.com"
 url: "https://sebastienrousseau.com/editorial"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
-# Twitter / X card
+# RSS - The RSS feed front matter (YAML).
+atom_link: "https://sebastienrousseau.com/editorial/rss.xml"
+category: "Editorial"
+docs: https://validator.w3.org/feed/docs/rss2.html
+generator: "Static Site Generator (SSG) (version 0.0.26)"
+item_description: "Sourcing, corrections, AI disclosure, conflicts. Operative on every article on sebastienrousseau.com."
+item_guid: "https://sebastienrousseau.com/editorial/rss.xml"
+item_link: "https://sebastienrousseau.com/editorial/rss.xml"
+item_pub_date: "Tue, 02 Jun 2026 05:00:00 +0000"
+item_title: "Editorial standards"
+last_build_date: "Tue, 02 Jun 2026 05:00:00 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+pub_date: "Tue, 02 Jun 2026 05:00:00 +0000"
+ttl: "60"
+type: "website"
+webmaster: "contact@sebastienrousseau.com"
+
+# Apple - The Apple front matter (YAML).
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "Editorial standards"
+apple-touch-fullscreen: "yes"
+
+# MS Application - The MS Application front matter (YAML).
+
+msapplication-navbutton-color: "0, 67, 165"
+
+# Twitter Card - The Twitter Card front matter (YAML).
 
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "Sourcing, corrections, AI disclosure, conflicts. Operative on every article on sebastienrousseau.com."
 twitter_image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
-twitter_title: "Editorial standards · sebastienrousseau.com"
+twitter_title: "Editorial standards"
 twitter_url: "https://sebastienrousseau.com/editorial"
 
-# Open Graph
-
-og_description: "Sourcing, corrections, AI disclosure, conflicts. Operative on every article on sebastienrousseau.com."
-og_image_alt: ""
-og_image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
-og_locale: "en_GB"
-og_site_name: "Sebastien Rousseau"
-og_title: "Editorial standards · sebastienrousseau.com"
-og_type: "website"
-og_url: "https://sebastienrousseau.com/editorial"
-
-# Item
-
-item_description: "Sourcing, corrections, AI disclosure, conflicts. Operative on every article on sebastienrousseau.com."
-item_guid: "https://sebastienrousseau.com/editorial"
-item_link: "https://sebastienrousseau.com/editorial"
-item_pub_date: "Tue, 02 Jun 2026 05:00:00 +0000"
-item_title: "Editorial standards · sebastienrousseau.com"
-
-# SEO
-
-excerpt: "Sourcing, corrections, AI disclosure, conflicts. Operative on every article on sebastienrousseau.com."
-seo_title: "Editorial standards · sebastienrousseau.com"
-apple-mobile-web-app-title: "Editorial standards"
+# Humans.txt - The Humans.txt front matter (YAML).
+author_website: "https://sebastienrousseau.com/about"
+author_twitter: "@wwdseb"
+author_location: "London, UK"
+thanks: "Thanks for reading!"
 
 ---
 
