@@ -1,11 +1,11 @@
 {
-  "title": "量子密钥分发：银行安全的变革",
-  "language": "zh-Hans",
-  "banner_alt": "HSBC：从西印度码头海滨眺望",
-  "subtitle": "量子计算机威胁传统加密方法，量子密钥分发（QKD）成为颠覆者，提供无与伦比的安全",
   "locale": "zh_CN",
-  "keywords": "量子密钥分发, QKD, 量子纠缠, 量子计算, HSBC, BT, 东芝, AWS, 银行业网络安全, 后量子密码学",
+  "description": "量子密钥分发（QKD）通过量子力学原理提供银行业不可破解的密钥交换安全保障。",
+  "language": "zh-Hans",
+  "subtitle": "量子计算机威胁传统加密方法，量子密钥分发（QKD）成为颠覆者，提供无与伦比的安全",
   "date": "December 11, 2023",
+  "banner_alt": "HSBC：从西印度码头海滨眺望",
+  "title": "量子密钥分发：银行安全的变革",
   "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
-  "description": "量子密钥分发（QKD）通过量子力学原理提供银行业不可破解的密钥交换安全保障。"
+  "keywords": "量子密钥分发, QKD, 量子纠缠, 量子计算, HSBC, BT, 东芝, AWS, 银行业网络安全, 后量子密码学"
 }

@@ -40,7 +40,7 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-PrbanNuJVk4cYL6R67rO9FUDPuOA0nNgyskI1z/e9nI=' 'sha256-Riwx6QRE5YEX9/nm6D1bZ9+IQBTyXj3bq95RLU4xZ5w=' 'sha256-lIJtorbitNEUaW2Id3V85/0WTiZ78jzzWN4T828qLF8=' 'sha256-z/kXXZjDenAQjl5Z0YySxQcO4ecFP3JCL9vexY2OvaE=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-Riwx6QRE5YEX9/nm6D1bZ9+IQBTyXj3bq95RLU4xZ5w=' 'sha256-lIJtorbitNEUaW2Id3V85/0WTiZ78jzzWN4T828qLF8=' 'sha256-wx07AI921oRBEFlFDMDOFkFN+u1Jqa/ErqJPjW0s8FQ=' 'sha256-z/kXXZjDenAQjl5Z0YySxQcO4ecFP3JCL9vexY2OvaE=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
@@ -62,6 +62,8 @@
     <link rel="alternate" type="application/rss+xml" href="/pt-br/rss.xml" />
     <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
     <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
     <!-- Preload the LCP hero portrait so it doesn't compete with the
          render-blocking JS bundle on throttled mobile connections.
          Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
@@ -73,7 +75,7 @@
     <meta name="color-scheme" content="light dark" />
     <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
 
-    <link rel="stylesheet" href="/_csp/84cbc7730c8abd97.css" integrity="sha256-zac8L+qyYaK5uFNBwz3CkbmfrEdXteG5gnxdGmPjec4= sha256-bIHUBhSU+m2EEcn0DO5Qh+DpuG28kGiuJvrkMMAgz1Q=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/_csp/258cdeb325ecb699.css" integrity="sha256-VFd85jTluP8WFpM4R8bpmvBY6ml6+UBBylJYUIKa3I8= sha256-UtlX+Anlf361uyqKdPOy2LFTfu7OD5aeEIh8RSDicF0=" crossorigin="anonymous">
     <link rel="alternate" type="application/atom+xml" title="Feed Atom" href="/pt-br/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta property="og:title" content="IA generativa em 2023: cómo funciona, onde aterriza — Sebastien Rousseau">

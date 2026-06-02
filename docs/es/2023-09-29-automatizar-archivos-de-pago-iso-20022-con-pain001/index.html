@@ -40,7 +40,7 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-RIbhR7Ce4qLHK6RK2iqOrZN/yCbCVQ1vw8PlhcJMAFk=' 'sha256-o0r/Wvwcdcr8yyWm6lz693Xc0mcEgnnAQX8Xka4r+7U=' 'sha256-qSHY44JvWy1LIXpbXF6N/2wzXyoDMHng/4lvmuVBDZk=' 'sha256-x2CX/Yv7Y/sugyJNThOLMYnDjqagmDX6Sz4v1hQiAFc=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-RIbhR7Ce4qLHK6RK2iqOrZN/yCbCVQ1vw8PlhcJMAFk=' 'sha256-qSHY44JvWy1LIXpbXF6N/2wzXyoDMHng/4lvmuVBDZk=' 'sha256-x2CX/Yv7Y/sugyJNThOLMYnDjqagmDX6Sz4v1hQiAFc=' 'sha256-zfyIgwP3E2Twdv7Ve+JjrHaQMjsqukaUtzp2F8N4F60=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
@@ -62,6 +62,8 @@
     <link rel="alternate" type="application/rss+xml" href="/es/rss.xml" />
     <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
     <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
     <!-- Preload the LCP hero portrait so it doesn't compete with the
          render-blocking JS bundle on throttled mobile connections.
          Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
@@ -73,7 +75,7 @@
     <meta name="color-scheme" content="light dark" />
     <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
 
-    <link rel="stylesheet" href="/_csp/84cbc7730c8abd97.css" integrity="sha256-zac8L+qyYaK5uFNBwz3CkbmfrEdXteG5gnxdGmPjec4= sha256-bIHUBhSU+m2EEcn0DO5Qh+DpuG28kGiuJvrkMMAgz1Q=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/_csp/258cdeb325ecb699.css" integrity="sha256-VFd85jTluP8WFpM4R8bpmvBY6ml6+UBBylJYUIKa3I8= sha256-UtlX+Anlf361uyqKdPOy2LFTfu7OD5aeEIh8RSDicF0=" crossorigin="anonymous">
     <link rel="alternate" type="application/atom+xml" title="Feed Atom" href="/es/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="stylesheet" href="/highlight.a92b9694.css">
