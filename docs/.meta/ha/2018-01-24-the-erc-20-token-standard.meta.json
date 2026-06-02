@@ -1,11 +1,11 @@
 {
-  "keywords": "ethereum, erc20, eip, tokens, kwantoci, blockchain, kuɗaɗen dijital, smart-token, solidity",
-  "subtitle": "Alamomin ERC-20, kwangilar smart na Ethereum da daidaitaccen kadarorin dijital.",
-  "date": "Jan 24, 2018",
   "title": "ERC-20: The Ethereum Token Interface That Changed the World",
   "banner_alt": "Kwamfutar laptop da aka kashe da aka ajiye a saman teburin itace mai launin ruwan kasa",
-  "locale": "ha_NG",
-  "description": "ERC-20 shine mafi yawan nau'in token da ake amfani da shi a blockchain na Ethereum, wanda kuma ana kiransa kwangilar dijital ta smart contract.",
   "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
-  "language": "ha-NG"
+  "locale": "ha_NG",
+  "date": "Jan 24, 2018",
+  "keywords": "ethereum, erc20, eip, tokens, kwantoci, blockchain, kuɗaɗen dijital, smart-token, solidity",
+  "language": "ha-NG",
+  "subtitle": "Alamomin ERC-20, kwangilar smart na Ethereum da daidaitaccen kadarorin dijital.",
+  "description": "ERC-20 shine mafi yawan nau'in token da ake amfani da shi a blockchain na Ethereum, wanda kuma ana kiransa kwangilar dijital ta smart contract."
 }

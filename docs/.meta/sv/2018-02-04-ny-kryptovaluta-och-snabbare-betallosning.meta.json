@@ -1,11 +1,11 @@
 {
+  "language": "sv-SE",
   "banner_alt": "Ordenador portátil apagado sobre una mesa de madera marrón",
   "locale": "sv_SE",
-  "date": "February 4, 2018",
+  "banner": "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp",
   "description": "Un capítulo significativo en la evolución del panorama financiero mundial, configurado por la innovación tecnológica, los cambios geopolíticos y las finanzas sostenibles.",
-  "subtitle": "EXTC Network: una visión para pagos instantáneos sobre blockchain",
-  "title": "Presentación de una nueva criptomoneda y una solución de pago más rápida",
-  "language": "sv-SE",
   "keywords": "EXTC Network, criptomoneda, pagos más rápidos, Ethereum, EIP20, smart contracts, blockchain, pagos transfronterizos, inclusión financiera",
-  "banner": "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp"
+  "subtitle": "EXTC Network: una visión para pagos instantáneos sobre blockchain",
+  "date": "February 4, 2018",
+  "title": "Presentación de una nueva criptomoneda y una solución de pago más rápida"
 }

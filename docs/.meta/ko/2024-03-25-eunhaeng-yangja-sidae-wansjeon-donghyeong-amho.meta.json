@@ -1,12 +1,12 @@
 {
+  "date": "March 25, 2024",
   "language": "ko-KR",
   "description": "완전 동형 암호가 은행·금융 서비스의 데이터 보안을 어떻게 혁신하며, 양자 시대의 위협으로부터 프라이버시를 보호하는지에 관하여.",
-  "last_reviewed": "2026-05-16",
+  "locale": "ko_KR",
   "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-iar-afB0QQw-unsplash.webp",
+  "subtitle": "FHE가 양자 시대의 데이터 보안을 혁신하다",
+  "banner_alt": "암호화된 데이터와 양자 컴퓨터",
   "keywords": "완전 동형 암호, FHE, 양자 안전, 은행, 프라이버시, 클라우드 컴퓨팅, ML-FHE",
   "title": "은행 양자 시대의 완전 동형 암호",
-  "date": "March 25, 2024",
-  "banner_alt": "암호화된 데이터와 양자 컴퓨터",
-  "subtitle": "FHE가 양자 시대의 데이터 보안을 혁신하다",
-  "locale": "ko_KR"
+  "last_reviewed": "2026-05-16"
 }

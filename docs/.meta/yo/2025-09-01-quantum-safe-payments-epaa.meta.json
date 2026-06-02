@@ -1,11 +1,11 @@
 {
-  "keywords": "ìsanwó quantum-safe, cryptography post-quantum, SEPA, SWIFT gpi, ISO 20022, ààbò àwọn iṣẹ́ ìnáwó, EPAA, harvest-now decrypt-later, agility cryptographic, Sebastien Rousseau",
-  "date": "Sep 01, 2025",
   "locale": "yo_NG",
-  "language": "yo-NG",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
-  "description": "Ìṣirò kuatomu ń halẹ̀ mọ́ cryptography ti àwọn ètò ìsanwó. Ìwé funfun EPAA ṣàlàyé ewu ìgbékalẹ̀ àti ìjẹ̀pàtàkì ìjíkọ PQC.",
   "banner_alt": "Bọ́ọ̀dù ìyíká ìṣirò kuatomu nínú ìmọ́lẹ̀ búlúù",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "subtitle": "Ìmúrasílẹ̀ fún ààbò kuatomu jẹ́ ìpinnu amayederun lọwọlọwọ. Kì í ṣe ti ọjọ iwaju.",
+  "description": "Ìṣirò kuatomu ń halẹ̀ mọ́ cryptography ti àwọn ètò ìsanwó. Ìwé funfun EPAA ṣàlàyé ewu ìgbékalẹ̀ àti ìjẹ̀pàtàkì ìjíkọ PQC.",
   "title": "Quantum-Safe Payments: Why the Industry Must Act Now",
-  "subtitle": "Ìmúrasílẹ̀ fún ààbò kuatomu jẹ́ ìpinnu amayederun lọwọlọwọ. Kì í ṣe ti ọjọ iwaju."
+  "language": "yo-NG",
+  "date": "Sep 01, 2025",
+  "keywords": "ìsanwó quantum-safe, cryptography post-quantum, SEPA, SWIFT gpi, ISO 20022, ààbò àwọn iṣẹ́ ìnáwó, EPAA, harvest-now decrypt-later, agility cryptographic, Sebastien Rousseau"
 }
