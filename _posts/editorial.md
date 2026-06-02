@@ -181,10 +181,10 @@ This site uses AI tools — primarily Anthropic's Claude (Claude Code, Claude AP
 **Where AI is not used:**
 
 - **Claim verification.** Every claim, citation, and number is read against its primary source by the author before publication.
-- **Source citation generation.** All references are sourced manually from the primary documents listed in the [Sourcing](#sourcing) section.
+- **Source citation generation.** All references are sourced manually from the primary documents listed in the *Sourcing* section above.
 - **Author voice.** The English source draft is written by the author; AI is used for editing, not generation of substantive prose.
 
-**Translation review.** Native-locale translations are spot-checked against the English source for fidelity. Translation errors that change a claim are subject to the [Corrections policy](#corrections-policy).
+**Translation review.** Native-locale translations are spot-checked against the English source for fidelity. Translation errors that change a claim are subject to the *Corrections policy* above.
 
 This disclosure is reviewed quarterly. The current version is dated `2026-06-02`.
 
