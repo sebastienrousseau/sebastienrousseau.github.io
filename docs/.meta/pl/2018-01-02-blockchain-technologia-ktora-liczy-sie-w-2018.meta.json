@@ -1,11 +1,11 @@
 {
-  "title": "Blockchain: technologia, która liczy się w 2018",
-  "banner_alt": "Wizualizacja sieci blockchain z połączonymi węzłami",
-  "language": "pl-PL",
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
-  "locale": "pl_PL",
   "description": "Blockchain to zdecentralizowana, niezmienna księga, która zmienia sposób, w jaki branże przechowują i weryfikują dane.",
+  "banner_alt": "Wizualizacja sieci blockchain z połączonymi węzłami",
   "keywords": "blockchain, technologia rozproszonej księgi, decentralizacja, kryptografia, smart kontrakty, fintech",
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
   "date": "Jan 02, 2018",
-  "subtitle": "Zdecentralizowana księga, która przekształca finanse i wiele więcej"
+  "subtitle": "Zdecentralizowana księga, która przekształca finanse i wiele więcej",
+  "language": "pl-PL",
+  "locale": "pl_PL",
+  "title": "Blockchain: technologia, która liczy się w 2018"
 }

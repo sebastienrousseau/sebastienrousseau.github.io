@@ -1,11 +1,11 @@
 {
   "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
+  "keywords": "区块链, 以太坊, 智能合约, Solidity, 加密货币, 代币化, ERC-20, dApps, Geth, 测试网",
+  "date": "January 9, 2018",
+  "title": "理解区块链背后的技术",
+  "subtitle": "在以太坊上构建加密货币：区块链开发、代币化与加密货币实现的全面指南",
+  "language": "zh-Hans",
   "banner_alt": "一座具有许多孔洞的高塔建筑",
   "locale": "zh_CN",
-  "title": "理解区块链背后的技术",
-  "language": "zh-Hans",
-  "keywords": "区块链, 以太坊, 智能合约, Solidity, 加密货币, 代币化, ERC-20, dApps, Geth, 测试网",
-  "description": "区块链技术已经开启了一个去中心化的新时代。本文以以太坊为平台，带你逐步构建自己的加密货币。",
-  "date": "January 9, 2018",
-  "subtitle": "在以太坊上构建加密货币：区块链开发、代币化与加密货币实现的全面指南"
+  "description": "区块链技术已经开启了一个去中心化的新时代。本文以以太坊为平台，带你逐步构建自己的加密货币。"
 }

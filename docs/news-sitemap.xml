@@ -26,6 +26,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/glossary</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-02T05:00:00+00:00</news:publication_date>
+    <news:title>Glossary: sebastienrousseau.com</news:title>
+    <news:keywords>glossary, ML-KEM, ML-DSA, ISO 20022, DORA, FedNow, CBDC, tokenised deposits, RTGS, SWIFT gpi</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026</loc>
   <news:news>
     <news:publication>

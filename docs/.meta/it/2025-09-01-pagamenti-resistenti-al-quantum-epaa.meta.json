@@ -1,11 +1,11 @@
 {
+  "locale": "it_IT",
   "subtitle": "Libro bianco di settore per la Emerging Payments Association Asia",
-  "banner": "https://cloudcdn.pro/stocks/images/digitale-nodes.webp",
-  "language": "it-IT",
-  "title": "Pagamenti resistenti al quantum (EPAA)",
   "banner_alt": "Pagamenti resistenti al quantum, libro bianco EPAA",
   "keywords": "quantum-safe payments, EPAA, libro bianco, PQC, pagamenti wholesale, regolamentazione, infrastruttura",
+  "language": "it-IT",
+  "title": "Pagamenti resistenti al quantum (EPAA)",
   "description": "Il calcolo quantistico minaccia le fondamenta crittografiche dei servizi finanziari. Questo libro bianco EPAA illustra la minaccia strutturale che il calcolo quantistico pone all'infrastruttura dei pagamenti e le ragioni per un'azione coordinata.",
-  "date": "September 01, 2025",
-  "locale": "it_IT"
+  "banner": "https://cloudcdn.pro/stocks/images/digitale-nodes.webp",
+  "date": "September 01, 2025"
 }
