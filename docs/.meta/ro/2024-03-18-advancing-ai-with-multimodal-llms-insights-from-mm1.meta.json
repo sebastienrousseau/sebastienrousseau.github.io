@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
-  "banner_alt": "Banner pentru Apple MM1",
-  "subtitle": "Dezvăluind Viitorul AI: Cum Studiul Revoluționar MM1 al Apple Transformă Învățarea Multimodală",
-  "locale": "ro_RO",
   "language": "ro-RO",
-  "description": "Explorați lucrarea MM1 a Apple despre Modelele Lingvistice Mari Multimodale (MLLM). Descoperiți arhitectura, strategiile de pre-antrenare și potențialul AI.",
+  "banner_alt": "Banner pentru Apple MM1",
   "keywords": "LLM-uri multimodale, studiu MM1, progrese AI, strategii de pre-antrenare, recunoaștere imagini, procesarea limbajului natural, aplicații AI, viitorul AI, învățare multimodală, cercetare AI",
+  "date": "Mar 17, 2024",
+  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
+  "description": "Explorați lucrarea MM1 a Apple despre Modelele Lingvistice Mari Multimodale (MLLM). Descoperiți arhitectura, strategiile de pre-antrenare și potențialul AI.",
+  "locale": "ro_RO",
   "title": "Advancing AI with Multimodal LLMs: Insights from MM1",
-  "date": "Mar 17, 2024"
+  "subtitle": "Dezvăluind Viitorul AI: Cum Studiul Revoluționar MM1 al Apple Transformă Învățarea Multimodală"
 }

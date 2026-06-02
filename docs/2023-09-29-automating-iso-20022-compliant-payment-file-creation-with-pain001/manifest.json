@@ -1,6 +1,6 @@
 {
   "background_color": "#ffffff",
-  "description": "pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite d",
+  "description": "Automate the creation of ISO 20022 pain.001 payment files from CSV or SQLite. pain001 is the open-source Python library ",
   "display": "standalone",
   "icons": [
     {

@@ -8,7 +8,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>nl-NL</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T19:21:17+00:00</news:publication_date>
+    <news:publication_date>2026-06-02T10:29:52+00:00</news:publication_date>
     <news:title>De multi-rail bank in 2026: kaarten, A2A, stablecoins, RTP, FedNow en Open Banking in één strategie</news:title>
     <news:keywords>betalingsorkestratielaag, FedNow vs RTP, FedNow vs ACH, stablecoin-afwikkeling, USDC atomaire afwikkeling, ISO 20022 pacs.008, account-to-account A2A, Open Banking API&apos;s, voorgefinancierde liquiditeit, 24/7 liquiditeitsval, multi-rail bank 2026, betalings-routerings-engine, ERP-reconciliatie</news:keywords>
   </news:news>
@@ -20,7 +20,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>nl-NL</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T19:21:17+00:00</news:publication_date>
+    <news:publication_date>2026-06-02T10:29:52+00:00</news:publication_date>
     <news:title>Post-quantum betaalinfrastructuur: waarom banken bestaande rails eerder vervangen dan aanpassen</news:title>
     <news:keywords>post-quantum-cryptografie, PQC betalingen, crypto-flexibiliteit, oogst-nu-ontsleutel-later, HNDL, NIST post-quantum-standaarden, ML-KEM, ML-DSA, FIPS 203, FIPS 204, migratie betaalrails, ISO 20022 PQC, SWIFT MT-vervanging, HSM, PKI-instorting, operationele veerkracht, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
   </news:news>
@@ -32,9 +32,21 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>nl-NL</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T19:21:17+00:00</news:publication_date>
+    <news:publication_date>2026-06-02T10:29:52+00:00</news:publication_date>
     <news:title>DORA, EU AI Act en datasoevereiniteit: de compliance-stack 2026 voor banken</news:title>
     <news:keywords>DORA 2026, EU AI Act 2026, datasoevereiniteit banken, operationele veerkracht, concentratierisico cloud, AI-compliance financiële sector, hoog-risico AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/nl/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl-NL</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-02T06:06:06+00:00</news:publication_date>
+    <news:title>De Banking Infrastructure Index 2026: gereedheid meten voor agentic AI, kwantumveilige beveiliging, cloud-native veerkracht en wholesale-betalingen</news:title>
+    <news:keywords>banking infrastructure index 2026, agentic AI bankieren, kwantumveilig bankieren, cloud-native bankieren, wholesale-betalingen, ISO 20022, DORA, Project Agora, getokeniseerde deposito&apos;s</news:keywords>
   </news:news>
 </url>
 <url>

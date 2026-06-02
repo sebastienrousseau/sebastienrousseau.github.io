@@ -1,6 +1,27 @@
 {
-  "count": 61,
+  "count": 62,
   "posts": [
+    {
+      "slug": "2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026",
+      "url": "https://sebastienrousseau.com/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/index.html",
+      "date": "2026-06-02",
+      "title": "The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments",
+      "description": "A Stanford AI Index-inspired banking infrastructure index for 2026, measuring readiness across agentic AI, quantum-safe security, cloud native resilience, and global wholesale payments.",
+      "keywords": [
+        "banking infrastructure index 2026",
+        "agentic AI banking",
+        "quantum safe banking",
+        "cloud native banking",
+        "wholesale payments",
+        "ISO 20022",
+        "DORA",
+        "Project Agora",
+        "tokenised deposits"
+      ],
+      "banner": "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp",
+      "topics": [],
+      "language": "en-GB"
+    },
     {
       "slug": "2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026",
       "url": "https://sebastienrousseau.com/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html",
@@ -1329,7 +1350,7 @@
       "url": "https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html",
       "date": "2023-11-12",
       "title": "Generative AI in 2023: How It Works, Where It Lands",
-      "description": "How transformer models work, which 2023 models set the benchmark, where generative AI lands first in financial services, and what governance questions practitioners need answered before deploying.",
+      "description": "Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.",
       "keywords": [
         "generative AI",
         "large language model",
@@ -1450,7 +1471,7 @@
       "url": "https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html",
       "date": "2023-09-29",
       "title": "Automating ISO 20022 Payment Files Creation with pain001",
-      "description": "pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.",
+      "description": "Automate the creation of ISO 20022 pain.001 payment files from CSV or SQLite. pain001 is the open-source Python library that streamlines compliance.",
       "keywords": [
         "pain001",
         "ISO 20022",

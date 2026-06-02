@@ -235,6 +235,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/index.html" title="The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments">
+<img alt="An editorial aerial composition by Meiying Ng suggesting interlocking systems — the visual register chosen for a board-level dashboard view of the 2026 Banking Infrastructure Index" src="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Banking Infrastructure · Agentic AI · Quantum Cryptography</span>
+<h3><a href="/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/index.html">The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-02">June 2, 2026</time></p>
+<p class="newsroom-excerpt">Banking infrastructure in 2026 has reached the point where it needs an index, not another trend list. A Stanford AI Index-inspired framework for measuring bank readiness across agentic AI, quantum-safe security, cloud-native resilience, and wholesale payments — measured as one operating model.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html" title="The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy">
 <img alt="Long-exposure photograph of intersecting light trails at a major rail interchange at night — visual key for the multi-rail bank piece: cards, A2A, RTP, FedNow, ACH, stablecoins, Open Banking APIs, ISO 20022, and the orchestration engine that routes between them" src="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -291,18 +303,6 @@ site_software: "Static Site Generator, Rust"
 <h3><a href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-28">May 28, 2026</time></p>
 <p class="newsroom-excerpt">DORA, the EU AI Act, GDPR, cloud concentration risk, and data sovereignty converge into one 2026 compliance stack for banks. The strategic question is design discipline — running compliance, AI governance, ICT-resilience evidence, and sovereign-data choices as one architecture, not five parallel programmes.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/index.html" title="Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay">
-<img alt="Digital asset infrastructure diagram showing tokenised real-world assets, stablecoins, tokenised deposits, custody, settlement, collateral mobility, and bank platform layers" src="https://cloudcdn.pro/stocks/images/corporate-finance.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Digital Assets · Tokenisation · Stablecoins</span>
-<h3><a href="/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/index.html">Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-28">May 28, 2026</time></p>
-<p class="newsroom-excerpt">Digital assets are no longer an innovation bet. They are a settlement, custody, and balance-sheet architecture question. Crypto is a ~$3 trillion asset class, stablecoins have reached ~$300 billion, and tokenised real-world assets grew ~300% in 2025. The strategic task for banks in 2026 is not whether to engage but how to design infrastructure, controls, and governance for a world where money, assets, and settlement become programmable.</p>
 </div>
 </article>
 

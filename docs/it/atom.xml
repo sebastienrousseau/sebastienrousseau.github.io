@@ -4,13 +4,13 @@
   <link href="https://sebastienrousseau.com/it/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/it/"/>
   <id>https://sebastienrousseau.com/it/</id>
-  <updated>2026-05-31T19:21:17+00:00</updated>
+  <updated>2026-06-02T10:29:52+00:00</updated>
   <entry>
     <title>La banca multi-rail nel 2026: carte, A2A, stablecoin, RTP, FedNow e Open Banking in un&apos;unica strategia</title>
     <link href="https://sebastienrousseau.com/it/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
     <id>https://sebastienrousseau.com/it/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
-    <updated>2026-05-31T19:21:17+00:00</updated>
-    <published>2026-05-31T19:21:17+00:00</published>
+    <updated>2026-06-02T10:29:52+00:00</updated>
+    <published>2026-06-02T10:29:52+00:00</published>
     <summary>FedNow esige liquidità pre-finanziata 24/7. ACH è economico ma T+1. USDC regola atomicamente ma serve infrastruttura wallet. La banca multi-rail 2026 instrada ogni pagamento per costo, finalità e costo di liquidità — guidata da un motore di orchestrazione che legge ISO 20022 pacs.008.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -18,8 +18,8 @@
     <title>Infrastruttura pagamenti post-quantistica: perché le banche potrebbero sostituire i rail legacy invece di adattarli</title>
     <link href="https://sebastienrousseau.com/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/"/>
     <id>https://sebastienrousseau.com/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-05-31T19:21:17+00:00</updated>
-    <published>2026-05-31T19:21:17+00:00</published>
+    <updated>2026-06-02T10:29:52+00:00</updated>
+    <published>2026-06-02T10:29:52+00:00</published>
     <summary>La crittografia post-quantistica impone una scelta binaria ai rail di pagamento: adattare RSA/ECC dentro involucri SWIFT MT e ISO 20022 mai dimensionati per ML-KEM e ML-DSA, oppure sostituire con infrastrutture cripto-agili. Decidere prima che HNDL diventi perdita operativa.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -27,8 +27,8 @@
     <title>DORA, EU AI Act e sovranità dei dati: lo stack di conformità 2026 per le banche</title>
     <link href="https://sebastienrousseau.com/it/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>
     <id>https://sebastienrousseau.com/it/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</id>
-    <updated>2026-05-31T19:21:17+00:00</updated>
-    <published>2026-05-31T19:21:17+00:00</published>
+    <updated>2026-06-02T10:29:52+00:00</updated>
+    <published>2026-06-02T10:29:52+00:00</published>
     <summary>DORA, EU AI Act, GDPR, rischio di concentrazione cloud e sovranità dei dati convergono nello stack di conformità 2026 per le banche europee.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -36,8 +36,8 @@
     <title>Asset digitali nel 2026: la transizione infrastrutturale che le banche non possono rinviare</title>
     <link href="https://sebastienrousseau.com/it/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
     <id>https://sebastienrousseau.com/it/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
-    <updated>2026-05-31T19:21:17+00:00</updated>
-    <published>2026-05-31T19:21:17+00:00</published>
+    <updated>2026-06-02T10:29:52+00:00</updated>
+    <published>2026-06-02T10:29:52+00:00</published>
     <summary>Gli asset digitali non sono più una scommessa di innovazione: sono una questione di architettura di regolamento, custodia e bilancio. Il compito per le banche è progettare infrastrutture sotto incertezza strutturale.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -45,9 +45,18 @@
     <title>Pagamenti agentici nel banking: consenso, responsabilità e nuova UX 2026</title>
     <link href="https://sebastienrousseau.com/it/2026-05-23-agentic-pagamenti-banking-consent-liability-new-payment-ux-2026/"/>
     <id>https://sebastienrousseau.com/it/2026-05-23-agentic-pagamenti-banking-consent-liability-new-payment-ux-2026/</id>
-    <updated>2026-05-31T19:21:17+00:00</updated>
-    <published>2026-05-31T19:21:17+00:00</published>
+    <updated>2026-06-02T10:29:52+00:00</updated>
+    <published>2026-06-02T10:29:52+00:00</published>
     <summary>Nel 2026 i pagamenti agentici sono passati dal concetto alla transazione reale. Per le banche la sfida non è più se gli agenti IA possano disporre pagamenti, ma come strutturare consenso, responsabilità, identità, auditabilità, controlli antifrode e interoperabilità dei protocolli.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Banking Infrastructure Index 2026: AI agentica, quantum-safe, cloud, pagamenti</title>
+    <link href="https://sebastienrousseau.com/it/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/"/>
+    <id>https://sebastienrousseau.com/it/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</id>
+    <updated>2026-06-02T06:06:06+00:00</updated>
+    <published>2026-06-02T06:06:06+00:00</published>
+    <summary>Un indice di infrastruttura bancaria ispirato allo Stanford AI Index per il 2026: prontezza su agentic AI, quantum-safe, resilienza cloud-nativa e pagamenti wholesale.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

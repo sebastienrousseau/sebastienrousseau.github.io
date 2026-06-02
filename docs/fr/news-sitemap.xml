@@ -8,7 +8,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>fr-FR</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T19:21:17+00:00</news:publication_date>
+    <news:publication_date>2026-06-02T10:29:52+00:00</news:publication_date>
     <news:title>La banque multi-rail en 2026 : cartes, A2A, stablecoins, RTP, FedNow et Open Banking dans une seule stratégie</news:title>
     <news:keywords>couche d&apos;orchestration des paiements, FedNow vs RTP, FedNow vs ACH, règlement stablecoin, règlement atomique USDC, ISO 20022 pacs.008, A2A compte à compte, API Open Banking, liquidité préfinancée, piège de liquidité 24/7, banque multi-rail 2026, moteur de routage des paiements, rapprochement ERP</news:keywords>
   </news:news>
@@ -20,7 +20,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>fr-FR</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T19:21:17+00:00</news:publication_date>
+    <news:publication_date>2026-06-02T10:29:52+00:00</news:publication_date>
     <news:title>Infrastructure de paiement post-quantique : pourquoi les banques remplaceront plutôt que d&apos;adapter les rails hérités</news:title>
     <news:keywords>cryptographie post-quantique, paiements PQC, agilité cryptographique, récolter-maintenant-déchiffrer-plus-tard, HNDL, normes post-quantiques NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, migration des rails de paiement, ISO 20022 PQC, remplacement SWIFT MT, HSM, effondrement PKI, résilience opérationnelle, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
   </news:news>
@@ -32,7 +32,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>fr-FR</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T19:21:17+00:00</news:publication_date>
+    <news:publication_date>2026-06-02T10:29:52+00:00</news:publication_date>
     <news:title>Marchés de gros au UK : gilts tokenisés, DSS et règlement atomique</news:title>
     <news:keywords>Digital Securities Sandbox 2026, gilts tokenisés, repo intrajournalier, DvP atomique, marchés de gros UK, FCA, Bank of England, RTGS, mobilité du collatéral</news:keywords>
   </news:news>
@@ -44,9 +44,21 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>fr-FR</news:language>
     </news:publication>
-    <news:publication_date>2026-05-31T19:21:17+00:00</news:publication_date>
+    <news:publication_date>2026-06-02T10:29:52+00:00</news:publication_date>
     <news:title>ISO 20022 après migration : transformer la donnée de paiement en produits bancaires en 2026</news:title>
     <news:keywords>ISO 20022 2026, adresse structurée, CBPR+, produits de données de paiement, codes d&apos;objet, trésorerie d&apos;entreprise, rapprochement, filtrage sanctions, détection fraude</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fr-FR</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-02T06:06:06+00:00</news:publication_date>
+    <news:title>Index 2026 des infrastructures bancaires : mesurer la maturité IA agentique, post-quantique, cloud natif et paiements de gros</news:title>
+    <news:keywords>index infrastructures bancaires 2026, IA agentique banque, banque post-quantique, banque cloud natif, paiements de gros, ISO 20022, DORA, Project Agorá, dépôts tokenisés, ML-KEM, RTGS</news:keywords>
   </news:news>
 </url>
 <url>

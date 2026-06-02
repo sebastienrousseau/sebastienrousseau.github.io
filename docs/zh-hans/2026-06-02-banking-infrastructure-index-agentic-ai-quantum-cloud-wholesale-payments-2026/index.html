@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Tue, 02 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Tue, 02 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>2026 年银行基础设施指数:衡量自主式 AI、量子安全、云原生韧性与批发支付的就绪度 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="受斯坦福 AI Index 启发的 2026 年银行基础设施指数,衡量自主式 AI、量子安全、云原生韧性与全球批发支付四大领域的就绪度。">
+<meta name="keywords" content="banking infrastructure index 2026, 银行基础设施指数, agentic AI banking, 自主式 AI 银行, quantum safe banking, 量子安全, cloud native banking, 云原生银行, wholesale payments, 批发支付, ISO 20022, DORA, Project Agora, tokenised deposits, 代币化存款">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="The Banking Infrastructure Index 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-M2xr2/ioJx4qP5kU4o6TaJYSK8SkdnwCKHCaE3XUqak=' 'sha256-YUBJPSCx/urI8Ab6CpOG0olSK5uLFkFOOit1vSZ7wtw=' 'sha256-azyCGqS1Bpg2L0p9jv/DgrMSRlZa9UX+6c2VHVuhu+Y=' 'sha256-muPj642BmcQX4c5UAHzXYZqWFwquPixs/PFd/YDfM/o=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/zh-hans/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/miguel-sousa-ejIF-pJhYkM.webp&w=1600&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/4be4d65eac4522a5.css" integrity="sha256-WE2+tIEuco3mGJvxfP44XCvRmruVPra4ldLVnIJ9iEI= sha256-f+fo34TwGhwhfLmHEO5DaM/RJ+CB36UUxprIrS9cTD4=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom 订阅源" href="/zh-hans/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="2026 年银行基础设施指数:衡量自主式 AI、量子安全、云原生韧性与批发支付的就绪度 — Sebastien Rousseau">
+<meta property="og:description" content="受斯坦福 AI Index 启发的 2026 年银行基础设施指数,衡量自主式 AI、量子安全、云原生韧性与全球批发支付四大领域的就绪度。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/zh-hans/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2026 年银行基础设施指数:衡量自主式 AI、量子安全、云原生韧性与批发支付的就绪度 — Sebastien Rousseau">
+<meta name="twitter:description" content="受斯坦福 AI Index 启发的 2026 年银行基础设施指数,衡量自主式 AI、量子安全、云原生韧性与全球批发支付四大领域的就绪度。">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/zh-hans/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">跳至主要内容</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="切换导航" />
+      <div class="wrap">
+        <a class="ap-brand" href="/zh-hans/index.html" aria-label="Sebastien Rousseau 首页">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="主导航">
+          <ul class="ap-menu">
+            <li><a href="/zh-hans/guanyu/index.html">关于</a></li>
+            <li><a href="/zh-hans/wenzhang/index.html" aria-current="page" class="active">文章</a></li>
+            <li><a href="/zh-hans/lunwen/index.html">论文与白皮书</a></li>
+            <li><a href="/zh-hans/zhuti/index.html">主题</a></li>
+            <li><a href="/zh-hans/xiangmu/index.html">项目</a></li>
+            <li><a href="/zh-hans/boqing/index.html">播放列表</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="切换到深色主题" aria-pressed="false" title="切换主题">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="搜索（Cmd 或 Ctrl + K）" title="搜索（⌘K）">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="语言">
+            <button type="button" class="ap-lang-toggle" aria-label="ZH，切换语言" aria-expanded="false" aria-haspopup="menu" title="切换语言">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">ZH</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/zh-hans/lianxi/index.html" aria-label="联系我">联系我 ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="切换导航">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>2026 年银行基础设施指数:衡量自主式 AI、量子安全、云原生韧性与批发支付的就绪度</h1>
+      <p class="sub">银行需要一份年度基础设施就绪度指数:把自主性、量子安全、云韧性、支付现代化与可量化的经济性,纳入同一套运营模型。</p>
+    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-banking-infrastructure-index-2026" class="article-tag" rel="tag">banking infrastructure index 2026</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">银行基础设施指数</a><a href="/tags/index.html#h3-agentic-ai-banking" class="article-tag" rel="tag">agentic AI banking</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">自主式 AI 银行</a><a href="/tags/index.html#h3-quantum-safe-banking" class="article-tag" rel="tag">quantum safe banking</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">量子安全</a><a href="/tags/index.html#h3-cloud-native-banking" class="article-tag" rel="tag">cloud native banking</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">云原生银行</a><a href="/tags/index.html#h3-wholesale-payments" class="article-tag" rel="tag">wholesale payments</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">批发支付</a><a href="/tags/index.html#h3-iso-20022" class="article-tag" rel="tag">ISO 20022</a><a href="/tags/index.html#h3-dora" class="article-tag" rel="tag">DORA</a><a href="/tags/index.html#h3-project-agora" class="article-tag" rel="tag">Project Agora</a><a href="/tags/index.html#h3-tokenised-deposits" class="article-tag" rel="tag">tokenised deposits</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">代币化存款</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-02T06:06:06+00:00" class="meta-pub">Published 2 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">1 min read</span></div></section><aside class="article-langswitch" aria-label="可用语言"><span class="article-langswitch-lead">本文亦提供以下语言版本</span> <ul class="article-langswitch-list"><li><a href="/fr/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="fr-FR" hreflang="fr-FR" rel="alternate">Français</a></li><li><a href="/es/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="es-ES" hreflang="es-ES" rel="alternate">Español</a></li><li><a href="/de/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="de-DE" hreflang="de-DE" rel="alternate">Deutsch</a></li><li><a href="/it/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="it-IT" hreflang="it-IT" rel="alternate">Italiano</a></li><li><a href="/pt-br/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="pt-BR" hreflang="pt-BR" rel="alternate">Português</a></li><li><a href="/nl/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="nl-NL" hreflang="nl-NL" rel="alternate">Nederlands</a></li><li><a href="/ja/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="ja-JP" hreflang="ja-JP" rel="alternate">日本語</a></li><li><a href="/zh-hant/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="zh-Hant" hreflang="zh-Hant" rel="alternate">繁體中文</a></li><li><a href="/ko/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="ko-KR" hreflang="ko-KR" rel="alternate">한국어</a></li><li><a href="/ar/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="ar-SA" hreflang="ar-SA" rel="alternate" dir="rtl">العربية</a></li><li><a href="/ru/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="ru-RU" hreflang="ru-RU" rel="alternate">Русский</a></li><li><a href="/pl/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="pl-PL" hreflang="pl-PL" rel="alternate">Polski</a></li><li><a href="/cs/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="cs-CZ" hreflang="cs-CZ" rel="alternate">Čeština</a></li><li><a href="/uk/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="uk-UA" hreflang="uk-UA" rel="alternate">Українська</a></li><li><a href="/ro/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="ro-RO" hreflang="ro-RO" rel="alternate">Română</a></li><li><a href="/tr/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="tr-TR" hreflang="tr-TR" rel="alternate">Türkçe</a></li><li><a href="/he/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="he-IL" hreflang="he-IL" rel="alternate" dir="rtl">עברית</a></li><li><a href="/hi/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="hi-IN" hreflang="hi-IN" rel="alternate">हिन्दी</a></li><li><a href="/bn/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="bn-BD" hreflang="bn-BD" rel="alternate">বাংলা</a></li><li><a href="/id/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="id-ID" hreflang="id-ID" rel="alternate">Indonesia</a></li><li><a href="/vi/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="vi-VN" hreflang="vi-VN" rel="alternate">Tiếng Việt</a></li><li><a href="/th/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="th-TH" hreflang="th-TH" rel="alternate">ไทย</a></li><li><a href="/fil/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="fil-PH" hreflang="fil-PH" rel="alternate">Filipino</a></li><li><a href="/ha/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="ha-NG" hreflang="ha-NG" rel="alternate">Hausa</a></li><li><a href="/yo/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="yo-NG" hreflang="yo-NG" rel="alternate">Yorùbá</a></li><li><a href="/sv/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="sv-SE" hreflang="sv-SE" rel="alternate">Svenska</a></li><li><a href="/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/" lang="en-GB" hreflang="en-GB" rel="alternate">English</a></li></ul></aside>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Contents</h2><ol><li><a href="#2026">为什么 2026 年是这份指数登场的时点</a></li><li><a href="#2026-2">2026 年指数架构</a></li><li><a href="#section-3">当下值得追踪的信号</a></li><li><a href="#section-4">四领域就绪度模型</a></li><li><a href="#vs">能力 vs. 可靠性</a></li><li><a href="#section-7">董事会记分卡</a></li><li><a href="#section-8">按银行类型解读</a></li><li><a href="#section-13">结语</a></li><li><a href="#section-14">常见问题</a></li><li><a href="#section-15">参考资料</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 受斯坦福 AI Index 启发的 2026 年银行基础设施指数,衡量自主式 AI、量子安全、云原生韧性与全球批发支付四大领域的就绪度。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>为什么 2026 年是这份指数登场的时点.</strong> 斯坦福 AI Index 之所以有用,是因为它把一个高速演进的技术领域当成可以度量的对象:研究产出、技术性能、负责任部署、经济性、行业采用、政策与公众情绪,被纳入同一个框架(Stanford HAI ⧉)。银行与金融机构现在需要对基础设施采用同样的纪律。自主式 AI、量子安全、云原生韧性与批发支付,已经不再是各自独立的创新跑道;它们正在收敛为同一套运营模型。.</li>  <li><strong>当下值得追踪的信号.</strong> 指数应在四个领域上为银行打分。自主式 AI 衡量自主系统能否在边界内安全地执行工作流。量子安全衡量密码学依赖是否清楚可知、可被替换、并与 NIST 标准对齐。云原生韧性衡量云平台是否可移植、可观测、经过测试且符合 DORA 的治理。批发支付衡量 ISO 20022 数据、实时轨道、代币化存款与结算资产,是否被当作同一套可编程的价值架构来处理。.</li>  <li><strong>四领域就绪度模型.</strong> 指数应在四个领域上为银行打分。自主式 AI 衡量自主系统能否在边界内安全地执行工作流。量子安全衡量密码学依赖是否清楚可知、可被替换、并与 NIST 标准对齐。云原生韧性衡量云平台是否可移植、可观测、经过测试且符合 DORA 的治理。批发支付衡量 ISO 20022 数据、实时轨道、代币化存款与结算资产,是否被当作同一套可编程的价值架构来处理。.</li>  <li><strong>能力 vs. 可靠性.</strong> AI Index 给出的关键启示是:能力与可靠性并非同一件事。AI 系统可以在基准任务上表现极佳,却仍会在简单的运营任务上失败。同样的区分适用于银行基础设施:一笔支付可能是即时的,但不可解释;一个模型可能是强大的,但不可审计;一座云平台可能是可扩展的,但不可替换;一套密码库可能是现代的,但不具密码敏捷性。.</li></ul></aside><h1>2026 年银行基础设施指数:衡量自主式 AI、量子安全、云原生韧性与批发支付的就绪度</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>2026 年的银行基础设施已经到了需要一份指数、而不是又一份趋势清单的阶段。最关键的四个领域是自主式 AI、量子安全密码学、云原生韧性与全球批发支付。它们共同决定了一家银行能否安全地自动化、能否守住长生命周期的数据、能否在运营中断下保持韧性,以及能否在新旧轨道之间以可信治理移动价值。</p>
+<hr />
+<blockquote>
+<p><strong>执行摘要 / 核心要点</strong></p>
+<ul>
+<li><strong>指数化的视角本身就重要。</strong> 斯坦福 HAI 通过研究、性能、责任、经济、政策与舆情来追踪 AI;银行也需要同样可量度的方式来看待基础设施,而非彼此孤立的转型项目。</li>
+<li><strong>自主式 AI 已经走进银行现实。</strong> 剑桥 CCAF 的数据显示,金融服务业受访者中已有 52% 在积极采用自主式 AI,其中 23% 处于规模化或转型阶段。</li>
+<li><strong>量子安全已不再停留在理论。</strong> NIST 正式发布了 FIPS 203、FIPS 204 与 FIPS 205,为银行的密钥封装与数字签名给出了有据可依的标准。</li>
+<li><strong>云原生已成为韧性义务。</strong> ECB 2026–28 年监管优先事项明确聚焦运营韧性、ICT 第三方风险、云服务商中断准备,以及威胁情报驱动的渗透测试。</li>
+<li><strong>批发支付正在变得可编程。</strong> BIS Project Agorá 正在统一账本上测试代币化的商业银行存款与代币化的央行准备金,用于跨境支付。</li>
+<li><strong>赢得未来的银行,会把整个体系当成一个体系来度量。</strong> 风险不在单一领域的失败,而在自主性、密码学、云依赖与结算架构之间未被治理的相互作用。</li>
+</ul>
+</blockquote>
+<hr />
+<p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/miguel-sousa-ejIF-pJhYkM.webp&w=1600&format=webp&q=85" alt="2026 年银行基础设施指数的董事会级仪表盘:在同一套运营模型之下,并排度量自主式 AI、后量子密码学、云原生韧性与批发支付四个就绪度领域"  width="1200" height="675" decoding="async" fetchpriority="high"></p>
+<h2 id="2026">为什么 2026 年是这份指数登场的时点 <a class="heading-anchor" href="#2026" aria-label="Link to 为什么 2026 年是这份指数登场的时点">#</a></h2>
+<p>斯坦福 AI Index 之所以有用,是因为它把一个高速演进的技术领域当成可以度量的对象:研究产出、技术性能、负责任部署、经济性、行业采用、政策与公众情绪,被纳入同一个框架(<a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" title="2026 年 AI Index 报告">Stanford HAI ⧉</a>)。银行与金融机构现在需要对基础设施采用同样的纪律。自主式 AI、量子安全、云原生韧性与批发支付,已经不再是各自独立的创新跑道;它们正在收敛为同一套运营模型。</p>
+<p>对一家银行而言,务实的问题不是每个领域是否重要,而是这家机构能否同时衡量四个领域的就绪度。一家银行可以部署自主式 AI,但若密码学尚未具备迁移能力,整体仍然脆弱;可以现代化云平台,但若支付数据仍是非结构化,业务仍可能失败;可以推进代币化试点,但若结算、流动性、身份与审计层不是一并设计的,系统性风险只会被放大。</p>
+<h2 id="2026-2">2026 年指数架构 <a class="heading-anchor" href="#2026-2" aria-label="Link to 2026 年指数架构">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>指数层</th>
+<th>2026 年方向</th>
+<th>就绪度指标</th>
+<th>处置不当的风险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>自主式 AI</strong></td>
+<td>从副驾驶走向受边界约束的自主工作流</td>
+<td>任务成功率、人工接管、可审计性、单次决策价值</td>
+<td>无边界自主、虚构动作、问责薄弱</td>
+</tr>
+<tr>
+<td><strong>量子安全</strong></td>
+<td>从密码资产盘点走向混合 PQC 迁移</td>
+<td>ML-KEM、ML-DSA、SLH-DSA 覆盖度与就绪度</td>
+<td>现采后解(harvest-now-decrypt-later)敞口</td>
+</tr>
+<tr>
+<td><strong>云原生韧性</strong></td>
+<td>从云采用走向可演示的退出与故障切换证据</td>
+<td>DORA 登记册、退出测试、集中度控制</td>
+<td>关键功能宕机而无可信恢复路径</td>
+</tr>
+<tr>
+<td><strong>批发支付</strong></td>
+<td>从报文迁移走向可编程结算</td>
+<td>ISO 20022 质量、代币化结算、流动性影响</td>
+<td>更快但更碎、且数据更差的支付</td>
+</tr>
+<tr>
+<td><strong>经济性</strong></td>
+<td>从创新预算走向单位经济性</td>
+<td>每次决策、支付、修复、调查与结算的成本</td>
+<td>在没有可衡量价值的前提下扩张技术</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-3">当下值得追踪的信号 <a class="heading-anchor" href="#section-3" aria-label="Link to 当下值得追踪的信号">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>信号</th>
+<th>对银行意味着什么</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OSWorld 成功率达 66.3%</strong>(衡量 AI 智能体执行真实计算机任务的基准)</td>
+<td>智能体开始具备运营可用性,但可靠性仍不足以脱离控制</td>
+<td><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance" title="技术性能章节">Stanford HAI ⧉</a></td>
+</tr>
+<tr>
+<td><strong>金融服务业 52% 采用自主式 AI</strong></td>
+<td>自主式 AI 在该行业已脱离实验阶段</td>
+<td><a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="2026 全球金融服务 AI 报告">Cambridge CCAF ⧉</a></td>
+</tr>
+<tr>
+<td><strong>FIPS 203、204、205 正式定稿</strong></td>
+<td>银行已获得具体的 PQC 标准,可据此落入迁移计划</td>
+<td><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="首批三项已定稿的后量子加密标准">NIST ⧉</a></td>
+</tr>
+<tr>
+<td><strong>2026 年 11 月移除非结构化地址</strong></td>
+<td>支付数据质量成为迫近的运营截止线</td>
+<td><a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" title="ISO 20022 2026 年 11 月结构化地址里程碑">SWIFT ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Project Agorá 进入原型阶段</strong></td>
+<td>代币化存款与批发央行货币正在成为基础设施设计议题</td>
+<td><a href="https://www.bis.org/about/bisih/topics/fmis/agora.htm" title="Project Agorá">BIS ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-4">四领域就绪度模型 <a class="heading-anchor" href="#section-4" aria-label="Link to 四领域就绪度模型">#</a></h2>
+<p>指数应在四个领域上为银行打分。自主式 AI 衡量自主系统能否在边界内安全地执行工作流。量子安全衡量密码学依赖是否清楚可知、可被替换、并与 NIST 标准对齐。云原生韧性衡量云平台是否可移植、可观测、经过测试且符合 DORA 的治理。批发支付衡量 ISO 20022 数据、实时轨道、代币化存款与结算资产,是否被当作同一套可编程的价值架构来处理。</p>
+<h3 id="section-5">云原生韧性 <a class="heading-anchor" href="#section-5" aria-label="Link to 云原生韧性">#</a></h3>
+<p>云原生韧性这个领域,把抽象的 DORA 义务转化为运营证据:在不同服务商之间的可移植性、面向每一项关键功能的可观测性、能够证明银行确实可以迁出的退出测试制品,以及在单一服务商宕机时不致波及支付、财资或客户渠道的集中度控制。</p>
+<p>[Insert Interactive Component: Cloud Native Resilience Simulator - Demonstrating cascading failures and circuit breaker mechanisms]</p>
+<blockquote>
+<p><strong>关键洞见:</strong> 韧性不再只是避免停机;而是要向监管者(在 DORA 之下)证明,失效可被遏制、恢复可被预期。</p>
+</blockquote>
+<h2 id="vs">能力 vs. 可靠性 <a class="heading-anchor" href="#vs" aria-label="Link to 能力 vs. 可靠性">#</a></h2>
+<p>AI Index 给出的关键启示是:能力与可靠性并非同一件事。AI 系统可以在基准任务上表现极佳,却仍会在简单的运营任务上失败。同样的区分适用于银行基础设施:一笔支付可能是即时的,但不可解释;一个模型可能是强大的,但不可审计;一座云平台可能是可扩展的,但不可替换;一套密码库可能是现代的,但不具密码敏捷性。</p>
+<h2 id="section-7">董事会记分卡 <a class="heading-anchor" href="#section-7" aria-label="Link to 董事会记分卡">#</a></h2>
+<p>一份有用的董事会记分卡应当追踪五项具体指标,把科技战略从一份倡议清单转化为一项运营能力:</p>
+<ol>
+<li><strong>自主工作流覆盖率:</strong> 一线运营流程中,由受边界约束的 AI 智能体在无需人工介入下完成执行的比例。</li>
+<li><strong>量子脆弱资产敞口:</strong> 仍在运行 NIST 之前(非 FIPS 203/204/205)算法的关键密码密钥总数。</li>
+<li><strong>关键功能云集中度:</strong> 监管认定的&quot;关键功能&quot;中,由单一外部云服务商(CSP)承载的比例。</li>
+<li><strong>结构化支付数据就绪度:</strong> 对外发起的批发支付中,在清算之前成功通过严格 ISO 20022 模式校验的比例。</li>
+<li><strong>可衡量的经济价值:</strong> 把算力、合规与异常处理纳入考量后,每笔交易的单位成本。</li>
+</ol>
+<p>这些数字不是技术冷知识。它们告诉董事:科技战略是否已经成为一项运营能力,还是仍停留在一组互不相干的倡议之上。</p>
+<h2 id="section-8">按银行类型解读 <a class="heading-anchor" href="#section-8" aria-label="Link to 按银行类型解读">#</a></h2>
+<h3 id="section-9">全球系统重要性银行 <a class="heading-anchor" href="#section-9" aria-label="Link to 全球系统重要性银行">#</a></h3>
+<p>全球性银行应把这份指数当成企业架构记分卡来使用。优先事项不是再来一次概念验证,而是要拿出证据:自主工作流、密码学迁移、云依赖与支付现代化,可以被作为同一套风险与价值体系来治理。</p>
+<h3 id="section-10">交易银行与公司银行 <a class="heading-anchor" href="#section-10" aria-label="Link to 交易银行与公司银行">#</a></h3>
+<p>交易银行应聚焦于批发支付、结构化数据、流动性、代币化存款与自主式财资服务。对客户最具价值的命题,不是单纯地加快资金流动;而是更少调查、更佳营运资本可见度之下,可解释、可审计、可编程的资金流动。</p>
+<h3 id="section-11">区域性银行 <a class="heading-anchor" href="#section-11" aria-label="Link to 区域性银行">#</a></h3>
+<p>区域性银行应借助这份指数来避免项目蔓延。它们不需要在每一条前沿都领跑,但需要在 AI 治理、后量子盘点、云退出证据与支付数据就绪度上,持有可信的立场。</p>
+<h3 id="psp">金融科技、PSP 与基础设施服务商 <a class="heading-anchor" href="#psp" aria-label="Link to 金融科技、PSP 与基础设施服务商">#</a></h3>
+<p>金融科技与基础设施服务商应把产品路线图,对齐到可衡量的银行就绪度上。最好的命题会降低集成风险、加强证据,并让复杂的基础设施更易于银行治理。</p>
+<h2 id="section-13">结语 <a class="heading-anchor" href="#section-13" aria-label="Link to 结语">#</a></h2>
+<p>指数式报告的价值在于:把碎片化的技术议程,转化为一套可衡量的运营模型。2026 年,金融基础设施领域的赢家不会是试点最多的机构;而会是能够同时证明在自主性、安全、韧性、结算、经济性与治理上均已就绪的机构。</p>
+<h2 id="section-14">常见问题 <a class="heading-anchor" href="#section-14" aria-label="Link to 常见问题">#</a></h2>
+<p><strong>为什么要做一份银行基础设施指数?</strong></p>
+<p>因为银行在 2026 年面临的主要技术压力正在收敛。指数让我们得以跨越通常分头治理的领域,做就绪度的横向比较。</p>
+<p><strong>这是不是只为大型银行而设?</strong></p>
+<p>不是。大型银行需要这份指数来进行系统级治理;区域性银行则需要它来为稀缺投入排序,避免项目碎片化。</p>
+<p><strong>应当先衡量什么?</strong></p>
+<p>从关键工作流入手:企业支付、财资、欺诈、合规、数字渠道、密码学依赖,以及云上承载的关键功能。</p>
+<p><strong>这份指数应多久更新一次?</strong></p>
+<p>战略对比按年度;对变化较快的指标——尤其是 AI 部署、云集中度与支付数据就绪度——按季度做内部刷新。</p>
+<h2 id="section-15">参考资料 <a class="heading-anchor" href="#section-15" aria-label="Link to 参考资料">#</a></h2>
+<ul>
+<li>Stanford HAI,(2026)。<a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" title="2026 年 AI Index 报告">2026 年 AI Index 报告 ⧉</a>。</li>
+<li>Stanford HAI,(2026)。<a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance" title="技术性能章节">技术性能章节 ⧉</a>。</li>
+<li>剑桥另类金融中心(CCAF),(2026)。<a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="2026 全球金融服务 AI 报告">2026 全球金融服务 AI 报告 ⧉</a>。</li>
+<li>NIST,(2026)。<a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="首批三项已定稿的后量子加密标准">首批三项已定稿的后量子加密标准 ⧉</a>。</li>
+<li>SWIFT,(2026)。<a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" title="ISO 20022 2026 年 11 月结构化地址里程碑">ISO 20022 2026 年 11 月结构化地址里程碑 ⧉</a>。</li>
+<li>BIS 创新中心,(2026)。<a href="https://www.bis.org/about/bisih/topics/fmis/agora.htm" title="Project Agorá">Project Agorá ⧉</a>。</li>
+<li>ECB 银行业监管,(2026)。<a href="https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html" title="2026–28 监管优先事项">2026–28 监管优先事项 ⧉</a>。</li>
+<li>欧洲银行业管理局,(2026)。<a href="https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act" title="数字运营韧性法案">数字运营韧性法案(DORA) ⧉</a>。</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">最近审阅 <time datetime="2026-06-02">2026-06-02</time>。</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/zh-hans/guanyu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家，撰写关于应用人工智能、ISO 20022 迁移、面向金融服务的后量子密码学，以及批发支付结构性转型的内容。</span><span class="author-credentials">20 多年经验，曾任职于汇丰商业及投资银行、PayPal、巴克莱、Shazam、AKQA、维珍集团。 <a href="/zh-hans/guanyu/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最近审阅 <time datetime="2026-06-02">2026-06-02</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">相关阅读</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2026-05-20-cloud-native-banking-financial-institutions-2026" class="related-media" aria-label="2026 年的云原生银行：Kubernetes、DORA、主权与 VM 和容器分界线的终结" tabindex="-1"><img alt="Cloud-native banking architecture for 2026 showing Kubernetes, VM coexistence, DORA resilience, sovereign cloud, observability, and bank platform engineering" src="https://cloudcdn.pro/api/transform?url=/stocks/images/freeman-zhou-oV9hp8wXkPE.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-kubernetesdora-vm"><a href="https://sebastienrousseau.com/zh-hans/2026-05-20-cloud-native-banking-financial-institutions-2026">2026 年的云原生银行：Kubernetes、DORA、主权与 VM 和容器分界线的终结</a> <a class="heading-anchor" href="#2026-kubernetesdora-vm" aria-label="Link to 2026 年的云原生银行：Kubernetes、DORA、主权与 VM 和容器分界线的终结">#</a></h3><p><time datetime="2026-05-20">2026-05-20</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2026-05-19-global-wholesale-payments-economics-2026" class="related-media" aria-label="2026年全球批发支付：ISO 20022、RTGS更新与互操作性的经济学" tabindex="-1"><img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/api/transform?url=/stocks/images/meiying-ng-OrwkD-iWgqg.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-iso-20022rtgs"><a href="https://sebastienrousseau.com/zh-hans/2026-05-19-global-wholesale-payments-economics-2026">2026年全球批发支付：ISO 20022、RTGS更新与互操作性的经济学</a> <a class="heading-anchor" href="#2026-iso-20022rtgs" aria-label="Link to 2026年全球批发支付：ISO 20022、RTGS更新与互操作性的经济学">#</a></h3><p><time datetime="2026-05-19">2026-05-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026" class="related-media" aria-label="后量子支付基础设施:为何银行可能替换而非改造传统通道" tabindex="-1"><img alt="Cryptographic key material drifting into deep blue water — symbolising harvest-now-decrypt-later capture of payment messages whose RSA and ECC envelopes will not survive a cryptanalytically relevant quantum computer" src="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-18"><a href="https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026">后量子支付基础设施:为何银行可能替换而非改造传统通道</a> <a class="heading-anchor" href="#section-18" aria-label="Link to 后量子支付基础设施:为何银行可能替换而非改造传统通道">#</a></h3><p><time datetime="2026-05-31">2026-05-31</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Sources & references</h2><ol class="article-sources-list"><li><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" rel="external noopener nofollow"><span class="source-host">www.nist.gov</span><span class="source-path">/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryp…</span></a></li><li><a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" rel="external noopener nofollow"><span class="source-host">www.swift.com</span><span class="source-path">/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be…</span></a></li><li><a href="https://www.bis.org/about/bisih/topics/fmis/agora.htm" rel="external noopener nofollow"><span class="source-host">www.bis.org</span><span class="source-path">/about/bisih/topics/fmis/agora.htm</span></a></li></ol></aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/zh-hans/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/zh-hans/guanyu/index.html">关于</a></li>
+              <li><a href="/zh-hans/lianxi/index.html">联系</a></li>
+              <li><a href="/zh-hans/yong-static-site-generator-zhizuo/index.html">使用 Static Site Generator 构建</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">文章</h2>
+            <ul>
+              <li><a href="/zh-hans/wenzhang/index.html">文章</a></li>
+              <li><a href="/zh-hans/lunwen/index.html">论文与白皮书</a></li>
+              <li><a href="/zh-hans/biaoqian/index.html">标签</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">工作</h2>
+            <ul>
+              <li><a href="/zh-hans/xiangmu/index.html">项目</a></li>
+              <li><a href="/zh-hans/boqing/index.html">播放列表</a></li>
+              <li><a href="/zh-hans/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">联系</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="通讯订阅">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — 关于支付、人工智能与后量子密码学的研究笔记。无垃圾邮件。</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="nin@yinhang.com" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">订阅</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="社交链接">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau 于 Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau 于 LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau 于 Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau 于 YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/zh-hans/wuzhang-ai/index.html">无障碍访问</a> ·
+            <a href="/zh-hans/yinsi/index.html">隐私</a> ·
+            <a href="/zh-hans/tiaokuan/index.html">条款</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0009-0005-1434-284X","url":"https://orcid.org/0009-0005-1434-284X"},"worksFor":{"@type":"Organization","@id":"https://www.hsbc.com/#organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal","url":"https://www.paypal.com/"},{"@type":"Organization","name":"Barclays","url":"https://www.barclays.com/"},{"@type":"Organization","name":"Shazam Entertainment","url":"https://www.shazam.com/"},{"@type":"Organization","name":"AKQA","url":"https://www.akqa.com/"},{"@type":"Organization","name":"Virgin Group","url":"https://www.virgin.com/"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"professional experience","name":"20+ years across Tier-1 banks and global payments infrastructure","recognizedBy":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"ISO 20022 migration and wholesale payments architecture","recognizedBy":{"@type":"Organization","name":"SWIFT","url":"https://www.swift.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"Post-Quantum Cryptography for financial services","recognizedBy":{"@type":"Organization","name":"NIST Post-Quantum Cryptography Project","url":"https://csrc.nist.gov/projects/post-quantum-cryptography"}}],"knowsAbout":[{"@type":"DefinedTerm","name":"Post-Quantum Cryptography","sameAs":"https://en.wikipedia.org/wiki/Post-quantum_cryptography"},{"@type":"DefinedTerm","name":"ML-KEM (FIPS 203)","sameAs":"https://csrc.nist.gov/pubs/fips/203/final"},{"@type":"DefinedTerm","name":"ML-DSA (FIPS 204)","sameAs":"https://csrc.nist.gov/pubs/fips/204/final"},{"@type":"DefinedTerm","name":"ISO 20022","sameAs":"https://en.wikipedia.org/wiki/ISO_20022"},{"@type":"DefinedTerm","name":"SWIFT gpi","sameAs":"https://www.swift.com/our-solutions/swift-gpi"},{"@type":"DefinedTerm","name":"SEPA Instant Payments","sameAs":"https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/index.en.html"},{"@type":"DefinedTerm","name":"FedNow Service","sameAs":"https://www.federalreserve.gov/paymentsystems/fednow_about.htm"},{"@type":"DefinedTerm","name":"Real-Time Payments (RTP)","sameAs":"https://www.theclearinghouse.org/payment-systems/rtp"},{"@type":"DefinedTerm","name":"Cross-border payments","sameAs":"https://en.wikipedia.org/wiki/Cross-border_payments"},{"@type":"DefinedTerm","name":"Wholesale banking","sameAs":"https://en.wikipedia.org/wiki/Wholesale_banking"},{"@type":"DefinedTerm","name":"Applied artificial intelligence in banking","sameAs":"https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence"},{"@type":"DefinedTerm","name":"Generative artificial intelligence","sameAs":"https://en.wikipedia.org/wiki/Generative_artificial_intelligence"}],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://orcid.org/0009-0005-1434-284X","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":["Organization","Brand"],"@id":"https://sebastienrousseau.com/#organization","name":"Sebastien Rousseau","alternateName":"Banking on Quantum","url":"https://sebastienrousseau.com/","logo":{"@type":"ImageObject","@id":"https://sebastienrousseau.com/#logo","url":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","width":"512","height":"512","caption":"Sebastien Rousseau"},"founder":{"@id":"https://sebastienrousseau.com/#person"},"sameAs":["https://github.com/sebastienrousseau","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#organization"},"author":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"zh-hans"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"zh-hans"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":287,"about":{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]},"headline":"2026 年银行基础设施指数:衡量自主式 AI、量子安全、云原生韧性与批发支付的就绪度","description":"受斯坦福 AI Index 启发的 2026 年银行基础设施指数,衡量自主式 AI、量子安全、云原生韧性与全球批发支付四大领域的就绪度。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp","width":"100vw","height":"100vh","caption":"Meiying Ng 拍摄的编辑级航拍构图,层叠交错的系统图像——为 2026 年银行基础设施指数选取的董事会级仪表盘视觉语言"},"url":"https://sebastienrousseau.com/zh-hans/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/","datePublished":"2026-06-02T06:06:06+00:00","dateModified":"2026-06-02","inLanguage":"zh-hans","keywords":"banking infrastructure index 2026, 银行基础设施指数, agentic AI banking, 自主式 AI 银行, quantum safe banking, 量子安全, cloud native banking, 云原生银行, wholesale payments, 批发支付, ISO 20022, DORA, Project Agora, tokenised deposits, 代币化存款","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hans/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"zh-hans"},"citation":[{"@type":"CreativeWork","url":"https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards"},{"@type":"CreativeWork","url":"https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed"},{"@type":"CreativeWork","url":"https://www.bis.org/about/bisih/topics/fmis/agora.htm"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/zh-hans/"},{"@type":"ListItem","position":3,"name":"2026 年银行基础设施指数:衡量自主式 AI、量子安全、云原生韧性与批发支付的就绪度","item":"https://sebastienrousseau.com/zh-hans/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="搜索">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>搜索</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="搜索">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="搜索文档…" autocomplete="off" aria-label="搜索"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> 关闭</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 导航</span><span><kbd>Enter</kbd> 打开</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"2026 年银行基础设施指数:衡量自主式 AI、量子安全、云原生韧性与批发支付的就绪度","url":"https://sebastienrousseau.com/zh-hans/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/","inLanguage":"zh-Hans","isAccessibleForFree":true,"author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hans/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/"},"keywords":"banking infrastructure index 2026, 银行基础设施指数, agentic AI banking, 自主式 AI 银行, quantum safe banking, 量子安全, cloud native banking, 云原生银行, wholesale payments, 批发支付, ISO 20022, DORA, Project Agora, tokenised deposits, 代币化存款","proficiencyLevel":"Expert","dependencies":["ISO 20022"]}</script></body>
+</html>

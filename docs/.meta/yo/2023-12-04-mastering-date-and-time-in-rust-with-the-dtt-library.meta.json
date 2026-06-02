@@ -1,11 +1,11 @@
 {
-  "subtitle": "DTT, ìwé-iṣẹ́ Rust tó ga fún ìṣiṣẹ́ ọjọ́ àti àkókò.",
-  "locale": "yo_NG",
-  "keywords": "DateTime, DTT, ìwé-iṣẹ́ Rust, ìtúpalẹ̀, ìfọwọ́sí, ìṣàkóso, ìpèsè, ọjọ́, àkókò",
   "description": "DateTime (DTT) jẹ́ ìwé-iṣẹ́ Rust fún ìtúpalẹ̀, ìfọwọ́sí, ìṣàkóso àti ìpèsè ọjọ́ àti àkókò — pínpín gíga, iṣẹ́ líle.",
-  "title": "Efficient Date and Time Management with DateTime (DTT)",
-  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
-  "language": "yo-NG",
   "banner_alt": "DateTime (DTT), Ohun-èlò Pàtàkì Rẹ fún Ìṣiṣẹ́ Ọjọ́ àti Àkókò.",
-  "date": "Dec 04, 2023"
+  "locale": "yo_NG",
+  "title": "Efficient Date and Time Management with DateTime (DTT)",
+  "keywords": "DateTime, DTT, ìwé-iṣẹ́ Rust, ìtúpalẹ̀, ìfọwọ́sí, ìṣàkóso, ìpèsè, ọjọ́, àkókò",
+  "language": "yo-NG",
+  "date": "Dec 04, 2023",
+  "subtitle": "DTT, ìwé-iṣẹ́ Rust tó ga fún ìṣiṣẹ́ ọjọ́ àti àkókò.",
+  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg"
 }

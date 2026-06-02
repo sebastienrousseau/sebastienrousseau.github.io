@@ -4,13 +4,13 @@
   <link href="https://sebastienrousseau.com/id/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/id/"/>
   <id>https://sebastienrousseau.com/id/</id>
-  <updated>2026-05-31T19:21:17+00:00</updated>
+  <updated>2026-06-02T10:29:52+00:00</updated>
   <entry>
     <title>Bank Multi-Rel pada 2026: Kartu, A2A, Stablecoin, RTP, FedNow, dan Open Banking dalam Satu Strategi</title>
     <link href="https://sebastienrousseau.com/id/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
     <id>https://sebastienrousseau.com/id/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
-    <updated>2026-05-31T19:21:17+00:00</updated>
-    <published>2026-05-31T19:21:17+00:00</published>
+    <updated>2026-06-02T10:29:52+00:00</updated>
+    <published>2026-06-02T10:29:52+00:00</published>
     <summary>FedNow menuntut likuiditas pra-pendanaan 24/7. ACH murah tetapi T+1. USDC menyelesaikan secara atomik tetapi butuh infrastruktur dompet. Bank multi-rel 2026 merutekan tiap pembayaran berdasar biaya, finalitas, dan biaya likuiditas — digerakkan mesin orkestrasi yang membaca pacs.008.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -18,8 +18,8 @@
     <title>Infrastruktur Pembayaran Pasca-Kuantum: Mengapa Bank Mungkin Mengganti Alih-alih Menyesuaikan Rel Warisan</title>
     <link href="https://sebastienrousseau.com/id/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
     <id>https://sebastienrousseau.com/id/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-05-31T19:21:17+00:00</updated>
-    <published>2026-05-31T19:21:17+00:00</published>
+    <updated>2026-06-02T10:29:52+00:00</updated>
+    <published>2026-06-02T10:29:52+00:00</published>
     <summary>Kriptografi pasca-kuantum memaksa pilihan biner pada rel pembayaran: sesuaikan RSA/ECC di dalam amplop SWIFT MT dan ISO 20022 yang tidak pernah diukur untuk ML-KEM dan ML-DSA, atau ganti dengan infrastruktur kripto-agil. Arsitek harus memutuskan sebelum HNDL menjadi kerugian operasional.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -27,8 +27,8 @@
     <title>Pasar Digital Grosir di Inggris: Gilts Tertokenisasi, Penyelesaian, dan Peran Champion Baru</title>
     <link href="https://sebastienrousseau.com/id/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"/>
     <id>https://sebastienrousseau.com/id/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</id>
-    <updated>2026-05-31T19:21:17+00:00</updated>
-    <published>2026-05-31T19:21:17+00:00</published>
+    <updated>2026-06-02T10:29:52+00:00</updated>
+    <published>2026-06-02T10:29:52+00:00</published>
     <summary>Peran Wholesale Digital Markets Champion Inggris menjadikan keuangan grosir tertokenisasi sebagai proyek daya saing nasional bagi City of London di 2026.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -36,8 +36,8 @@
     <title>DORA, EU AI Act, dan Kedaulatan Data: Tumpukan Kepatuhan 2026 bagi Bank</title>
     <link href="https://sebastienrousseau.com/id/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"/>
     <id>https://sebastienrousseau.com/id/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</id>
-    <updated>2026-05-31T19:21:17+00:00</updated>
-    <published>2026-05-31T19:21:17+00:00</published>
+    <updated>2026-06-02T10:29:52+00:00</updated>
+    <published>2026-06-02T10:29:52+00:00</published>
     <summary>DORA, EU AI Act, GDPR, risiko konsentrasi cloud, dan kedaulatan data berkonvergensi menjadi satu tumpukan kepatuhan 2026 bagi bank — orkestrasi bukti tunggal.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -45,8 +45,8 @@
     <title>Aset Digital pada 2026: Transisi Infrastruktur yang Tak Bisa Ditunda Bank</title>
     <link href="https://sebastienrousseau.com/id/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
     <id>https://sebastienrousseau.com/id/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
-    <updated>2026-05-31T19:21:17+00:00</updated>
-    <published>2026-05-31T19:21:17+00:00</published>
+    <updated>2026-06-02T10:29:52+00:00</updated>
+    <published>2026-06-02T10:29:52+00:00</published>
     <summary>Aset digital bukan lagi taruhan inovasi. Ini adalah pertanyaan arsitektur penyelesaian, kustodi, dan neraca. Tugas strategis bank adalah desain infrastruktur di tengah ketidakpastian struktural.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -54,8 +54,8 @@
     <title>AI sebagai Sistem Operasi Pembayaran: Penipuan, Routing, Ketahanan, dan Kepatuhan pada 2026</title>
     <link href="https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/"/>
     <id>https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</id>
-    <updated>2026-05-31T19:21:17+00:00</updated>
-    <published>2026-05-31T19:21:17+00:00</published>
+    <updated>2026-06-02T10:29:52+00:00</updated>
+    <published>2026-06-02T10:29:52+00:00</published>
     <summary>AI menjadi sistem operasi pembayaran pada 2026, bergeser dari analitik ke pencegahan penipuan, perbaikan pembayaran, routing, prakiraan likuiditas, penyaringan kepatuhan, dan kontrol agentic commerce.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -63,9 +63,18 @@
     <title>Pembayaran Agentik di Perbankan: Persetujuan, Tanggung Jawab, UX 2026</title>
     <link href="https://sebastienrousseau.com/id/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/"/>
     <id>https://sebastienrousseau.com/id/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</id>
-    <updated>2026-05-31T19:21:17+00:00</updated>
-    <published>2026-05-31T19:21:17+00:00</published>
+    <updated>2026-06-02T10:29:52+00:00</updated>
+    <published>2026-06-02T10:29:52+00:00</published>
     <summary>Pembayaran agentik pada 2026 telah berpindah dari konsep ke transaksi langsung. Tantangan perbankan bukan lagi apakah AI agent dapat memulai pembayaran, melainkan bagaimana persetujuan, tanggung jawab, identitas, auditabilitas, kendali fraud, dan interoperabilitas protokol harus dirancang.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Banking Infrastructure Index 2026: Mengukur Kesiapan Agentic AI, Keamanan Kuantum, Ketahanan Cloud Native, dan Pembayaran Grosir</title>
+    <link href="https://sebastienrousseau.com/id/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/"/>
+    <id>https://sebastienrousseau.com/id/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</id>
+    <updated>2026-06-02T06:06:06+00:00</updated>
+    <published>2026-06-02T06:06:06+00:00</published>
+    <summary>Banking infrastructure index 2026 bergaya Stanford AI Index: mengukur kesiapan bank pada agentic AI, kuantum, ketahanan cloud-native, dan pembayaran grosir.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

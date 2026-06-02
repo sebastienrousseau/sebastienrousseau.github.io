@@ -1,12 +1,12 @@
 {
-  "banner_alt": "양자 컴퓨터 회로",
   "subtitle": "격자 기반 암호를 한시적으로 안전하게 하며, 지속적 연구의 필요성을 부각",
-  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
   "title": "격자 기반 암호용 양자 알고리즘에서 버그 발견",
-  "language": "ko-KR",
-  "last_reviewed": "2026-05-16",
-  "date": "April 22, 2024",
-  "description": "LWE를 해결하는 Yilei Chen의 양자 알고리즘에서 버그가 발견되어 격자 기반 암호가 한시적으로 안전해졌으며, 지속적 연구의 필요성이 부각되었습니다.",
   "locale": "ko_KR",
-  "keywords": "양자 알고리즘, 버그, LWE, 격자 기반 암호, Yilei Chen, 포스트 양자 암호"
+  "keywords": "양자 알고리즘, 버그, LWE, 격자 기반 암호, Yilei Chen, 포스트 양자 암호",
+  "language": "ko-KR",
+  "banner_alt": "양자 컴퓨터 회로",
+  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
+  "description": "LWE를 해결하는 Yilei Chen의 양자 알고리즘에서 버그가 발견되어 격자 기반 암호가 한시적으로 안전해졌으며, 지속적 연구의 필요성이 부각되었습니다.",
+  "last_reviewed": "2026-05-16",
+  "date": "April 22, 2024"
 }

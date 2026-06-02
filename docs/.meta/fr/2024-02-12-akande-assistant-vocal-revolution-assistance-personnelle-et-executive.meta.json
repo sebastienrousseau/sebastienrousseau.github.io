@@ -1,11 +1,11 @@
 {
-  "subtitle": "Permettre des interactions fluides avec une technologie IA de pointe",
-  "language": "fr",
   "banner": "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp",
-  "banner_alt": "Un appareil sphérique blanc, moderne",
-  "date": "February 12, 2024",
-  "description": "Comment Àkàndé tire parti de la compréhension du langage naturel d'OpenAI GPT, des résumés PDF et d'un cache efficace pour redéfinir l'assistance personnelle et exécutive.",
-  "title": "Àkàndé : assistant vocal propulsé par GPT pour dirigeants",
+  "keywords": "Àkàndé, assistant vocal, compréhension du langage naturel, résumés PDF, cache efficace, OpenAI GPT, assistance exécutive, assistance personnelle, assistants numériques, innovation technologique",
   "locale": "fr_FR",
-  "keywords": "Àkàndé, assistant vocal, compréhension du langage naturel, résumés PDF, cache efficace, OpenAI GPT, assistance exécutive, assistance personnelle, assistants numériques, innovation technologique"
+  "date": "February 12, 2024",
+  "language": "fr",
+  "subtitle": "Permettre des interactions fluides avec une technologie IA de pointe",
+  "banner_alt": "Un appareil sphérique blanc, moderne",
+  "title": "Àkàndé : assistant vocal propulsé par GPT pour dirigeants",
+  "description": "Comment Àkàndé tire parti de la compréhension du langage naturel d'OpenAI GPT, des résumés PDF et d'un cache efficace pour redéfinir l'assistance personnelle et exécutive."
 }
