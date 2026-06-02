@@ -789,6 +789,7 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     inject_anchor_links_and_toc,
     inject_article_furniture,
     inject_citations,
+    inject_hero_banner,
     inject_hreflang,
     inject_lang_switcher,
     inject_mermaid,
@@ -1064,6 +1065,10 @@ def _apply_article_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str
     out = inject_article_furniture(html)
     if out != prev:
         ctr.furniture_patched += 1
+    # Hero banner (figure pulled from the article's og:image). Runs after
+    # furniture so its anchor regex sees the post-furniture document, and
+    # before the lang switcher so the switcher slots in after the banner.
+    out = inject_hero_banner(out)
     out = inject_sigstore_attestation(out, page.parent.name)
     prev = out
     out = inject_anchor_links_and_toc(out)

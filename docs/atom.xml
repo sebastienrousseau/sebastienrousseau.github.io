@@ -258,6 +258,15 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>Glossary: sebastienrousseau.com</title>
+    <link href="https://sebastienrousseau.com/glossary"/>
+    <id>https://sebastienrousseau.com/glossary</id>
+    <updated>2026-06-02T05:00:00+00:00</updated>
+    <published>2026-06-02T05:00:00+00:00</published>
+    <summary>Standards-anchored glossary for sebastienrousseau.com. Every term carries a sameAs link to the canonical standards-body or central-bank source (NIST, ISO, BIS, ECB, Federal Reserve, EUR-Lex).</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>Editorial standards: sebastienrousseau.com</title>
     <link href="https://sebastienrousseau.com/editorial"/>
     <id>https://sebastienrousseau.com/editorial</id>
@@ -444,15 +453,6 @@
     <updated>2026-06-01T06:06:06+00:00</updated>
     <published>2026-06-01T06:06:06+00:00</published>
     <summary>FedNow vyžaduje předfinancovanou likviditu 24/7. ACH je levné, ale T+1. USDC se vypořádá atomicky, ale potřebuje wallet infrastrukturu. Multi-kolejnicová banka roku 2026 směruje každou platbu podle nákladů, finality a ceny likvidity.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>La banca multi-rail nel 2026: carte, A2A, stablecoin, RTP, FedNow e Open Banking in un&apos;unica strategia</title>
-    <link href="https://sebastienrousseau.com/it/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html"/>
-    <id>https://sebastienrousseau.com/it/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</id>
-    <updated>2026-06-01T06:06:06+00:00</updated>
-    <published>2026-06-01T06:06:06+00:00</published>
-    <summary>FedNow esige liquidità pre-finanziata 24/7. ACH è economico ma T+1. USDC regola atomicamente ma serve infrastruttura wallet. La banca multi-rail 2026 instrada ogni pagamento per costo, finalità e costo di liquidità — guidata da un motore di orchestrazione che legge ISO 20022 pacs.008.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
 </feed>

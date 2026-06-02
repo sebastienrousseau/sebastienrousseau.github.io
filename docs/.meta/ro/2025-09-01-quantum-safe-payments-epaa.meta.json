@@ -1,11 +1,11 @@
 {
   "keywords": "plăți quantum-safe, criptografie post-cuantică, SEPA, SWIFT gpi, ISO 20022, securitatea serviciilor financiare, EPAA, harvest-now decrypt-later, agilitate criptografică, Sebastien Rousseau",
-  "subtitle": "Pregătirea pentru siguranță cuantică este o decizie de infrastructură prezentă. Nu una viitoare.",
+  "language": "ro-RO",
+  "description": "Calculul cuantic amenință criptografia sistemelor de plată. White paper-ul EPAA prezintă riscul structural și necesitatea urgentă de migrare la PQC.",
   "banner_alt": "Placă de circuit pentru calcul cuantic în lumină albastră",
   "locale": "ro_RO",
-  "language": "ro-RO",
+  "date": "Sep 01, 2025",
   "title": "Quantum-Safe Payments: Why the Industry Must Act Now",
-  "description": "Calculul cuantic amenință criptografia sistemelor de plată. White paper-ul EPAA prezintă riscul structural și necesitatea urgentă de migrare la PQC.",
   "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
-  "date": "Sep 01, 2025"
+  "subtitle": "Pregătirea pentru siguranță cuantică este o decizie de infrastructură prezentă. Nu una viitoare."
 }

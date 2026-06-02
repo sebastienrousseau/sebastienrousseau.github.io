@@ -13690,4 +13690,10 @@
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
 </url>
+
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/glossary/</loc>
+</url>
 </urlset>

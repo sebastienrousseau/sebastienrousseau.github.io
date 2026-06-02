@@ -1,11 +1,11 @@
 {
-  "banner_alt": "一座具有許多孔洞的高塔建築",
   "locale": "zh_TW",
-  "language": "zh-Hant",
-  "description": "區塊鏈技術已經開啟了一個去中心化的新時代。本文以以太坊為平臺，帶你逐步構建自己的加密貨幣。",
-  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
-  "subtitle": "在以太坊上構建加密貨幣：區塊鏈開發、代幣化與加密貨幣實現的全面指南",
-  "date": "January 9, 2018",
   "title": "理解區塊鏈背後的技術",
-  "keywords": "區塊鏈, 以太坊, 智慧合約, Solidity, 加密貨幣, 代幣化, ERC-20, dApps, Geth, 測試網"
+  "keywords": "區塊鏈, 以太坊, 智慧合約, Solidity, 加密貨幣, 代幣化, ERC-20, dApps, Geth, 測試網",
+  "description": "區塊鏈技術已經開啟了一個去中心化的新時代。本文以以太坊為平臺，帶你逐步構建自己的加密貨幣。",
+  "subtitle": "在以太坊上構建加密貨幣：區塊鏈開發、代幣化與加密貨幣實現的全面指南",
+  "banner_alt": "一座具有許多孔洞的高塔建築",
+  "language": "zh-Hant",
+  "date": "January 9, 2018",
+  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp"
 }

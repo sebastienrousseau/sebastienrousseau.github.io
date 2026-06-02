@@ -514,6 +514,26 @@
       <category>代币化存款</category>
     </item>
     <item>
+      <title>Glossary: sebastienrousseau.com</title>
+      <link>https://sebastienrousseau.com/glossary</link>
+      <description>Standards-anchored glossary for sebastienrousseau.com. Every term carries a sameAs link to the canonical standards-body or central-bank source (NIST, ISO, BIS, ECB, Federal Reserve, EUR-Lex).</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/glossary</guid>
+      <pubDate>Tue, 02 Jun 2026 05:00:00 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://sebastienrousseau.com/glossary" type="image/jpeg" length="0"/>
+      <category>Reference</category>
+      <category>glossary</category>
+      <category>post-quantum cryptography</category>
+      <category>ISO 20022</category>
+      <category>DORA</category>
+      <category>FedNow</category>
+      <category>CBDC</category>
+      <category>tokenised deposits</category>
+      <category>RTGS</category>
+      <category>SWIFT</category>
+      <category>PSD3</category>
+    </item>
+    <item>
       <title>Editorial standards: sebastienrousseau.com</title>
       <link>https://sebastienrousseau.com/editorial</link>
       <description>Editorial standards for sebastienrousseau.com: sourcing, corrections policy, AI-assistance disclosure, conflict-of-interest disclosure, and accountability. Operative on every article.</description>
@@ -939,27 +959,6 @@
       <category>API otevřeného bankovnictví</category>
       <category>předfinancovaná likvidita</category>
       <category>multi-kolejnicová banka</category>
-    </item>
-    <item>
-      <title>La banca multi-rail nel 2026: carte, A2A, stablecoin, RTP, FedNow e Open Banking in un'unica strategia</title>
-      <link>https://sebastienrousseau.com/it/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</link>
-      <description>FedNow esige liquidità pre-finanziata 24/7. ACH è economico ma T+1. USDC regola atomicamente ma serve infrastruttura wallet. La banca multi-rail 2026 instrada ogni pagamento per costo, finalità e costo di liquidità — guidata da un motore di orchestrazione che legge ISO 20022 pacs.008.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</guid>
-      <pubDate>Mon, 01 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
-      <category>Finanza</category>
-      <category>orchestrazione pagamenti</category>
-      <category>FedNow</category>
-      <category>RTP</category>
-      <category>ACH</category>
-      <category>regolamento stablecoin</category>
-      <category>USDC</category>
-      <category>ISO 20022 pacs.008</category>
-      <category>pagamenti A2A</category>
-      <category>API Open Banking</category>
-      <category>liquidità pre-finanziata</category>
-      <category>banca multi-rail</category>
     </item>
   </channel>
 </rss>
