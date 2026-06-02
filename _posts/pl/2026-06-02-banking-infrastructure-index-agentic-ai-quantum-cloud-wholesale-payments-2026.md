@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Redakcyjna kompozycja z lotu ptaka autorstwa Meiying Ngego sugerująca splatające się systemy — rejestr wizualny dobrany do widoku tablicy zarządczej Indeksu Infrastruktury Bankowej 2026"
+banner_alt: "Redakcyjna kompozycja z lotu ptaka autorstwa Miguel Sousaego sugerująca splatające się systemy — rejestr wizualny dobrany do widoku tablicy zarządczej Indeksu Infrastruktury Bankowej 2026"
 banner_height: "800"
 banner_width: "1200"
-banner: "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp"
+banner: "https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"

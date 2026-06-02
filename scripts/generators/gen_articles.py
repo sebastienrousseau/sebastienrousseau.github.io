@@ -388,8 +388,37 @@ def _discover_missing_articles() -> list[tuple]:
     return discovered
 
 
+def _refresh_banner_from_frontmatter(article: tuple) -> tuple:
+    """Re-read the article's current ``banner:`` + ``banner_alt:`` from
+    ``_posts/<slug>.md`` and patch them into the static ``ARTICLES``
+    tuple. Without this step, the hard-coded image URL drifts whenever
+    a back-catalogue article gets a banner swap — the homepage card
+    (hand-edited in ``_posts/index.md``) and the article-page hero (read
+    from frontmatter) stay in sync, but the /articles/ grid card keeps
+    serving the old URL until someone hand-edits this file.
+
+    The tuple shape is preserved; only fields 4 (banner) and 5 (alt)
+    are overwritten with current frontmatter values. If the post file
+    is missing the tuple is passed through unchanged.
+    """
+    date_iso, date_display, eyebrow, title, banner, banner_alt, excerpt, href = article
+    slug = href.strip("/").removesuffix("/index.html")
+    md = POSTS / f"{slug}.md"
+    if not md.is_file():
+        return article
+    fm, _ = parse_frontmatter(md.read_text(encoding="utf-8"))
+    new_banner = fm.get("banner", banner) or banner
+    new_alt = fm.get("banner_alt", banner_alt) or banner_alt
+    if new_banner == banner and new_alt == banner_alt:
+        return article
+    return (date_iso, date_display, eyebrow, title, new_banner, new_alt, excerpt, href)
+
+
 def main() -> None:
-    articles = list(ARTICLES)
+    # Re-sync every static ARTICLES entry's banner + alt from current
+    # frontmatter so the /articles/ grid never serves a stale image
+    # when an older article gets a banner swap upstream.
+    articles = [_refresh_banner_from_frontmatter(a) for a in ARTICLES]
     discovered = _discover_missing_articles()
     for auto in reversed(discovered):
         articles.insert(0, auto)

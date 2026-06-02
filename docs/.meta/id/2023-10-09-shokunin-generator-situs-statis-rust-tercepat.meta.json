@@ -1,11 +1,11 @@
 {
   "banner_alt": "Laptop yang dimatikan di atas meja putih dengan segelas air di sebelah kiri dan pulpen, buku catatan, serta tanaman di sebelah kanan",
-  "keywords": "pain001, iso 20022, otomatisasi pembayaran, pengurangan biaya, pemrosesan pembayaran, file pembayaran, inisiasi pembayaran, pain message, pain message standards, pain message validation",
-  "title": "[ID DRAFT] Static Site Generator: Fastest Rust-Based SSG",
-  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
-  "description": "Memberdayakan Anda untuk membuat situs web statis berdampak tinggi dengan kemungkinan tak terbatas, skalabilitas tanpa batas, dan kehadiran web unik yang sepenuhnya Anda kendalikan.",
-  "locale": "id_ID",
-  "subtitle": "Static Site Generator, generator situs statis berbasis Rust tercepat untuk situs web berdampak tinggi.",
   "language": "id-ID",
-  "date": "Oct 09, 2023"
+  "title": "[ID DRAFT] Static Site Generator: Fastest Rust-Based SSG",
+  "keywords": "pain001, iso 20022, otomatisasi pembayaran, pengurangan biaya, pemrosesan pembayaran, file pembayaran, inisiasi pembayaran, pain message, pain message standards, pain message validation",
+  "description": "Memberdayakan Anda untuk membuat situs web statis berdampak tinggi dengan kemungkinan tak terbatas, skalabilitas tanpa batas, dan kehadiran web unik yang sepenuhnya Anda kendalikan.",
+  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
+  "date": "Oct 09, 2023",
+  "subtitle": "Static Site Generator, generator situs statis berbasis Rust tercepat untuk situs web berdampak tinggi.",
+  "locale": "id_ID"
 }

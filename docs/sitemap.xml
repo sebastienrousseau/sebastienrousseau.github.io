@@ -159,6 +159,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/editorial/</loc>
+</url>
+
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/he/nos-im/cloud-native-banking/</loc>
 </url>
 
@@ -13683,11 +13689,5 @@
   <lastmod>2026-06-02</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
-</url>
-
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-04-15</lastmod>
-  <loc>https://sebastienrousseau.com/editorial/</loc>
 </url>
 </urlset>

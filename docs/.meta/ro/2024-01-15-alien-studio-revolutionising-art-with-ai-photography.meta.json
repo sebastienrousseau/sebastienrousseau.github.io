@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Muza apusului, o privire senină; frumusețe în liniște",
-  "description": "Alăturați-vă mie în călătoria personală, de la Rust, AI și Quantum Computing până la redefinirea artei și fotografiei prin intermediul Alien Studio.",
-  "language": "ro-RO",
-  "title": "Alien Studio: My Tech-to Art Journey in Photography",
-  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
-  "locale": "ro_RO",
   "keywords": "călătorie tehnologică personală, descoperirea Rust, explorare AI, Quantum Computing, fuziunea artei și fotografiei, Alien Studio, creație artă digitală, tehnologie în artă, fotografie inovatoare, redescoperire artistică",
+  "banner_alt": "Muza apusului, o privire senină; frumusețe în liniște",
+  "language": "ro-RO",
+  "description": "Alăturați-vă mie în călătoria personală, de la Rust, AI și Quantum Computing până la redefinirea artei și fotografiei prin intermediul Alien Studio.",
+  "locale": "ro_RO",
+  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
   "date": "Jan 15, 2024",
+  "title": "Alien Studio: My Tech-to Art Journey in Photography",
   "subtitle": "Începuturile unei Odisee Tehnologice"
 }

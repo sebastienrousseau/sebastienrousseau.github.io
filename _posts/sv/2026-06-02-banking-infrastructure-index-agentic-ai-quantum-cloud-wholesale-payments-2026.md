@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "En redaktionell flygkomposition av Meiying Ng som antyder sammanlänkade system — det visuella registret valt för en styrelsenivåvy av Banking Infrastructure Index 2026"
+banner_alt: "En redaktionell flygkomposition av Miguel Sousa som antyder sammanlänkade system — det visuella registret valt för en styrelsenivåvy av Banking Infrastructure Index 2026"
 banner_height: "800"
 banner_width: "1200"
-banner: "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp"
+banner: "https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"

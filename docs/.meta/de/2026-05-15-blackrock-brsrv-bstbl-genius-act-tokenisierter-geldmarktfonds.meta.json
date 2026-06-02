@@ -1,11 +1,11 @@
 {
-  "language": "de",
-  "subtitle": "Unter dem GENIUS Act dürfen Stablecoins keine Rendite zahlen. Am 8. Mai 2026 reichte BlackRock zwei Produkte ein, die rechtlich keine Stablecoins sind – und die in einer Wallet auf einer öffentlichen Blockchain Rendite zahlen können.",
-  "title": "Stablecoin-Rendite unter anderem Namen: BlackRocks BRSRV- und BSTBL-Einreichungen entschlüsselt",
-  "date": "May 15, 2026",
-  "description": "Unter dem GENIUS Act dürfen Stablecoins keine Rendite zahlen. Am 8. Mai 2026 hat BlackRock zwei SEC-Registrierungen für Produkte eingereicht, die diese Beschränkung umgehen, indem sie als Geldmarktfonds und nicht als Stablecoins reguliert werden – während sie sich in der Wallet wie renditetragende Dollar verhalten. Eine genaue Lektüre von BRSRV, BSTBL und der OCC-Regelsetzung, auf die sie antworten.",
-  "banner_alt": "Architekturdiagramm zu BlackRocks tokenisiertem Geldmarktfonds – BRSRV OnChain Shares und BSTBL ERC-20-Anteilsklasse mit Reservenflüssen unter dem GENIUS Act",
   "locale": "de_DE",
+  "subtitle": "Unter dem GENIUS Act dürfen Stablecoins keine Rendite zahlen. Am 8. Mai 2026 reichte BlackRock zwei Produkte ein, die rechtlich keine Stablecoins sind – und die in einer Wallet auf einer öffentlichen Blockchain Rendite zahlen können.",
+  "keywords": "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, Stablecoin, tokenisierter Geldmarktfonds, OnChain Shares, Securitize, BNY Mellon, ERC-20, Ethereum",
+  "date": "May 15, 2026",
+  "language": "de",
   "banner": "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp",
-  "keywords": "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, Stablecoin, tokenisierter Geldmarktfonds, OnChain Shares, Securitize, BNY Mellon, ERC-20, Ethereum"
+  "banner_alt": "Architekturdiagramm zu BlackRocks tokenisiertem Geldmarktfonds – BRSRV OnChain Shares und BSTBL ERC-20-Anteilsklasse mit Reservenflüssen unter dem GENIUS Act",
+  "title": "Stablecoin-Rendite unter anderem Namen: BlackRocks BRSRV- und BSTBL-Einreichungen entschlüsselt",
+  "description": "Unter dem GENIUS Act dürfen Stablecoins keine Rendite zahlen. Am 8. Mai 2026 hat BlackRock zwei SEC-Registrierungen für Produkte eingereicht, die diese Beschränkung umgehen, indem sie als Geldmarktfonds und nicht als Stablecoins reguliert werden – während sie sich in der Wallet wie renditetragende Dollar verhalten. Eine genaue Lektüre von BRSRV, BSTBL und der OCC-Regelsetzung, auf die sie antworten."
 }

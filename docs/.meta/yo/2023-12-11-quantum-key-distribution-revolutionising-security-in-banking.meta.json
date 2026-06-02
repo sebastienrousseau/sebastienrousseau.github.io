@@ -1,12 +1,12 @@
 {
-  "keywords": "Ìpínkiri Kọ́kọ́rọ́ Kuántọ̀m (QKD), Ààbò Kuántọ̀m, Banking, Ẹ̀ka Ìṣúná, Ìṣúná Dígítà, Ààbò Ìkànnì, Ìṣiro Kuántọ̀m, HSBC, Quantum Protection Trial, Àwọn Ìdúnàádúrà Ìṣúná",
+  "description": "Bí àwọn kọ̀mpútà kuántọ̀m ṣe ń halẹ̀ mọ́ àwọn ọ̀nà ìfipamọ́ àtọwọdọwọ, Ìpínkiri Kọ́kọ́rọ́ Kuántọ̀m (QKD) jẹ́ ìyípadà àgbàyanu, tí ń pèsè ààbò àìlẹ́gbẹ́.",
+  "locale": "yo_NG",
   "banner_alt": "HSBC Láti Ọ̀dọ̀ Àwọn Dọ́ọ̀kù",
+  "date": "Dec 11, 2023",
+  "keywords": "Ìpínkiri Kọ́kọ́rọ́ Kuántọ̀m (QKD), Ààbò Kuántọ̀m, Banking, Ẹ̀ka Ìṣúná, Ìṣúná Dígítà, Ààbò Ìkànnì, Ìṣiro Kuántọ̀m, HSBC, Quantum Protection Trial, Àwọn Ìdúnàádúrà Ìṣúná",
+  "title": "Quantum Key Distribution Revolutionising Security in Banking",
+  "excerpt": "As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security.",
   "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
   "subtitle": "Ìpínkiri Kọ́kọ́rọ́ Kuántọ̀m (QKD) fún ààbò ìpele ìṣúná nínú ẹ̀ka ìfowópamọ́.",
-  "date": "Dec 11, 2023",
-  "title": "Quantum Key Distribution Revolutionising Security in Banking",
-  "language": "yo-NG",
-  "locale": "yo_NG",
-  "description": "Bí àwọn kọ̀mpútà kuántọ̀m ṣe ń halẹ̀ mọ́ àwọn ọ̀nà ìfipamọ́ àtọwọdọwọ, Ìpínkiri Kọ́kọ́rọ́ Kuántọ̀m (QKD) jẹ́ ìyípadà àgbàyanu, tí ń pèsè ààbò àìlẹ́gbẹ́.",
-  "excerpt": "As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security."
+  "language": "yo-NG"
 }

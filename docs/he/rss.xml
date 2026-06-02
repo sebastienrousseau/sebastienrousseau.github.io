@@ -6,14 +6,14 @@
     <description>מאמרים בעברית: AI יישומי, תשלומי ISO 20022, קריפטוגרפיה פוסט-קוונטית, וטרנספורמציה של תשלומי סיטונאות.</description>
     <atom:link href="https://sebastienrousseau.com/he/rss.xml" rel="self" type="application/rss+xml"/>
     <language>he-IL</language>
-    <lastBuildDate>Tue, 02 Jun 2026 13:38:17 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 16:06:04 +0000</lastBuildDate>
     <copyright>© זכויות יוצרים 2007 - 2026 - Sebastien Rousseau. כל הזכויות שמורות.</copyright>
     <item>
       <title>הבנק הרב-ערוצי ב-2026: כרטיסים, A2A, מטבעות יציבים, RTP, FedNow ו-Open Banking באסטרטגיה אחת</title>
       <link>https://sebastienrousseau.com/he/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow דורש נזילות ממומנת מראש 24/7. ACH זול אך T+1. USDC נסלק אטומית אך מצריך תשתית ארנקים. הבנק הרב-ערוצי של 2026 מנתב כל תשלום לפי עלות, סופיות ועלות נזילות — באמצעות מנוע אורקסטרציה הקורא ISO 20022 pacs.008 ומחליט.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Tue, 02 Jun 2026 13:38:17 +0000</pubDate>
+      <pubDate>Tue, 02 Jun 2026 16:06:04 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>שכבת אורקסטרציה לתשלומים</category>
@@ -35,7 +35,7 @@
       <link>https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>קריפטוגרפיה פוסט-קוונטית כופה החלטה בינארית על ערוצי תשלומים: התאמת RSA/ECC בתוך מעטפות SWIFT MT ו-ISO 20022 שמעולם לא נמדדו ל-ML-KEM ו-ML-DSA, או החלפה בתשתית גמישה קריפטוגרפית. ארכיטקטים חייבים להחליט לפני ש-HNDL הופך להפסד תפעולי.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Tue, 02 Jun 2026 13:38:17 +0000</pubDate>
+      <pubDate>Tue, 02 Jun 2026 16:06:04 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>קריפטוגרפיה פוסט-קוונטית</category>
@@ -61,7 +61,7 @@
       <link>https://sebastienrousseau.com/he/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>נכסים דיגיטליים אינם עוד הימור על חדשנות. הם שאלת ארכיטקטורה של סליקה, משמורת ומאזן. המשימה האסטרטגית של הבנקים היא תכנון תשתית באי-ודאות מבנית.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Tue, 02 Jun 2026 13:38:17 +0000</pubDate>
+      <pubDate>Tue, 02 Jun 2026 16:06:04 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>נכסים דיגיטליים 2026</category>
@@ -82,7 +82,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</guid>
       <pubDate>Tue, 02 Jun 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" type="image/webp" length="0"/>
       <category>מדד תשתיות בנקאות 2026</category>
       <category>בינה אוטונומית בבנקאות</category>
       <category>בנקאות עמידת קוונטים</category>
@@ -374,7 +374,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-19-global-wholesale-payments-economics-2026/</guid>
       <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" type="image/webp" length="0"/>
       <category>תשלומי סיטונאות 2026</category>
       <category>כלכלת תשלומים גלובלית</category>
       <category>ISO 20022</category>
