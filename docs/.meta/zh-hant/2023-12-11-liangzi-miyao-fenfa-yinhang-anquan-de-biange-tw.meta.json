@@ -1,11 +1,11 @@
 {
-  "title": "量子金鑰分發：銀行安全的變革",
-  "keywords": "量子金鑰分發, QKD, 量子糾纏, 量子計算, HSBC, BT, 東芝, AWS, 銀行業網路安全, 後量子密碼學",
-  "description": "量子金鑰分發（QKD）透過量子力學原理提供銀行業不可破解的金鑰交換安全保障。",
-  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
-  "locale": "zh_TW",
-  "language": "zh-Hant",
-  "date": "December 11, 2023",
   "subtitle": "量子計算機威脅傳統加密方法，量子金鑰分發（QKD）成為顛覆者，提供無與倫比的安全",
-  "banner_alt": "HSBC：從西印度碼頭海濱眺望"
+  "locale": "zh_TW",
+  "banner_alt": "HSBC：從西印度碼頭海濱眺望",
+  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
+  "date": "December 11, 2023",
+  "language": "zh-Hant",
+  "title": "量子金鑰分發：銀行安全的變革",
+  "description": "量子金鑰分發（QKD）透過量子力學原理提供銀行業不可破解的金鑰交換安全保障。",
+  "keywords": "量子金鑰分發, QKD, 量子糾纏, 量子計算, HSBC, BT, 東芝, AWS, 銀行業網路安全, 後量子密碼學"
 }

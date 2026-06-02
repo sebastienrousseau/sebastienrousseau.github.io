@@ -258,6 +258,15 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>Editorial standards: sebastienrousseau.com</title>
+    <link href="https://sebastienrousseau.com/editorial"/>
+    <id>https://sebastienrousseau.com/editorial</id>
+    <updated>2026-06-02T05:00:00+00:00</updated>
+    <published>2026-06-02T05:00:00+00:00</published>
+    <summary>Editorial standards for sebastienrousseau.com: sourcing, corrections policy, AI-assistance disclosure, conflict-of-interest disclosure, and accountability. Operative on every article.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy</title>
     <link href="https://sebastienrousseau.com/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026"/>
     <id>https://sebastienrousseau.com/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026</id>
@@ -444,15 +453,6 @@
     <updated>2026-06-01T06:06:06+00:00</updated>
     <published>2026-06-01T06:06:06+00:00</published>
     <summary>FedNow esige liquidità pre-finanziata 24/7. ACH è economico ma T+1. USDC regola atomicamente ma serve infrastruttura wallet. La banca multi-rail 2026 instrada ogni pagamento per costo, finalità e costo di liquidità — guidata da un motore di orchestrazione che legge ISO 20022 pacs.008.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>2026 年のマルチレール銀行:カード、A2A、ステーブルコイン、RTP、FedNow、Open Banking を一つの戦略に</title>
-    <link href="https://sebastienrousseau.com/ja/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html"/>
-    <id>https://sebastienrousseau.com/ja/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html</id>
-    <updated>2026-06-01T06:06:06+00:00</updated>
-    <published>2026-06-01T06:06:06+00:00</published>
-    <summary>FedNow は 24/7 の事前資金供給型流動性を要求します。ACH は安価ですが T+1 です。USDC はアトミックに決済しますがウォレット基盤を必要とします。2026 年のマルチレール銀行は、ISO 20022 pacs.008 を読み取るオーケストレーション・エンジンが、コスト・ファイナリティ・流動性コストに基づいて各決済の経路を決定します。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
 </feed>

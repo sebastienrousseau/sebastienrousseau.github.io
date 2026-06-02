@@ -798,6 +798,7 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     inject_sources_list,
     inject_speculation_rules,
     slugify,
+    strip_duplicate_body_h1,
 )
 
 # Live GitHub repo stats — moved to postbuild_lib.github_stats
@@ -858,6 +859,7 @@ class _PostbuildCounters:
         "about_patched",
         "anchor_patched",
         "asset_fp_patched",
+        "body_h1_stripped",
         "cdn_wrapped",
         "citation_patched",
         "csp_patched",
@@ -1050,6 +1052,10 @@ def _apply_article_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str
     out = inject_anchor_links_and_toc(out)
     if out != prev:
         ctr.anchor_patched += 1
+    prev = out
+    out = strip_duplicate_body_h1(out)
+    if out != prev:
+        ctr.body_h1_stripped += 1
     out = _convert_faq_to_qa(out)
     prev = out
     out = inject_citations(out)
@@ -1311,6 +1317,7 @@ def main() -> None:
         f"{c.furniture_patched} got tag badges + meta bar, "
         f"{c.langswitch_patched} got inline language rail, "
         f"{c.anchor_patched} got anchor links + ToC, "
+        f"{c.body_h1_stripped} got duplicate body H1 stripped, "
         f"{c.citation_patched} got citation graphs, "
         f"{c.sources_patched} got visible sources list, "
         f"{c.mermaid_patched} got mermaid blocks, "
