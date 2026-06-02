@@ -466,7 +466,7 @@ def test_inject_software_source_code_skips_when_no_cards():
 # NewsArticle — Google News Top Stories carousel signal.
 # ---------------------------------------------------------------------------
 
-import datetime as _dt  # noqa: E402
+import datetime as _dt
 
 _FRESH_NOW = _dt.datetime(2026, 6, 2, 12, 0, 0, tzinfo=_dt.UTC)
 _STALE_NOW = _dt.datetime(2026, 6, 5, 12, 0, 0, tzinfo=_dt.UTC)
