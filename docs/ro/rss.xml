@@ -6,14 +6,14 @@
     <description>Articole în limba română: IA aplicată, plăți ISO 20022, criptografie post-cuantică și transformarea plăților wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/ro/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ro-RO</language>
-    <lastBuildDate>Tue, 02 Jun 2026 08:48:27 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 09:01:54 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Toate drepturile rezervate.</copyright>
     <item>
       <title>Banca multi-cale în 2026: carduri, A2A, stablecoins, RTP, FedNow și Open Banking într-o singură strategie</title>
       <link>https://sebastienrousseau.com/ro/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow cere lichiditate prefinanțată 24/7. ACH este ieftin, dar T+1. USDC se decontează atomic, dar are nevoie de portofele. Banca multi-cale din 2026 rutează fiecare plată după cost, finalitate și cost de lichiditate, condusă de un motor de orchestrare care citește ISO 20022 pacs.008.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Tue, 02 Jun 2026 08:48:27 +0000</pubDate>
+      <pubDate>Tue, 02 Jun 2026 09:01:54 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>motor de orchestrare a plăților</category>
@@ -35,7 +35,7 @@
       <link>https://sebastienrousseau.com/ro/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>Criptografia post-cuantică impune o alegere binară pentru căile de plată: adaptarea RSA/ECC în anvelopele SWIFT MT și ISO 20022 nedimensionate pentru ML-KEM și ML-DSA, sau înlocuirea cu infrastructură cripto-agilă. Arhitecții trebuie să decidă înainte ca HNDL să producă pierdere operațională.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Tue, 02 Jun 2026 08:48:27 +0000</pubDate>
+      <pubDate>Tue, 02 Jun 2026 09:01:54 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>criptografie post-cuantică</category>
@@ -61,7 +61,7 @@
       <link>https://sebastienrousseau.com/ro/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
       <description>Rolul Wholesale Digital Markets Champion al Regatului Unit transformă finanța de gros tokenizată într-un proiect național de competitivitate condus din City.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
-      <pubDate>Tue, 02 Jun 2026 08:48:27 +0000</pubDate>
+      <pubDate>Tue, 02 Jun 2026 09:01:54 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>piețe digitale de gros Regatul Unit 2026</category>
@@ -83,7 +83,7 @@
       <link>https://sebastienrousseau.com/ro/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
       <description>ISO 20022 după migrare devine șansa unui produs de date: adrese structurate, coduri de scop, detalii de factură, mesaje de investigație și evenimente bogate de stare se transformă în produse de reconciliere, fraudă, lichiditate și conformitate.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
-      <pubDate>Tue, 02 Jun 2026 08:48:27 +0000</pubDate>
+      <pubDate>Tue, 02 Jun 2026 09:01:54 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>ISO 20022 2026</category>

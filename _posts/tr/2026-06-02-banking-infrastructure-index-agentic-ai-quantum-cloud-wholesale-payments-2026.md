@@ -109,7 +109,7 @@ site_software: "Static Site Generator, Rust"
 >
 ---
 
-![Tek bir işletim modeline karşı yan yana ölçülen dört hazır olma alanını — özerk yapay zeka, post-kuantum kriptografi, bulut-yerel dayanıklılık ve toptan ödemeler — gösteren 2026 Bankacılık Altyapı Endeksi'nin yönetim kurulu düzeyinde bir gösterge paneli](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp)
+![Tek bir işletim modeline karşı yan yana ölçülen dört hazır olma alanını — özerk yapay zeka, post-kuantum kriptografi, bulut-yerel dayanıklılık ve toptan ödemeler — gösteren 2026 Bankacılık Altyapı Endeksi'nin yönetim kurulu düzeyinde bir gösterge paneli](https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp)
 
 ## 2026 Bu Endeksin Önem Kazandığı Yıl Neden
 

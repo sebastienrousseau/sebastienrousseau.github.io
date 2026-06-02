@@ -109,7 +109,7 @@ Tsarin banki a 2026 ya isa wurin da yake buƙatar index, ba wani jerin yanayi ba
 >
 ---
 
-![Dashboard na matakin kwamiti na Index na Tsarin Banki na 2026 da ke nuna fagage huɗu na shiri — AI mai cin gashin kansa, cryptography bayan quantum, juriya na-asalin-girgije, da biyan kuɗi na babba — da aka auna kusa da samfuri ɗaya na aiki](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp)
+![Dashboard na matakin kwamiti na Index na Tsarin Banki na 2026 da ke nuna fagage huɗu na shiri — AI mai cin gashin kansa, cryptography bayan quantum, juriya na-asalin-girgije, da biyan kuɗi na babba — da aka auna kusa da samfuri ɗaya na aiki](https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp)
 
 ## Me ya sa 2026 Ita ce Shekarar da Wannan Index Yake da Muhimmanci
 

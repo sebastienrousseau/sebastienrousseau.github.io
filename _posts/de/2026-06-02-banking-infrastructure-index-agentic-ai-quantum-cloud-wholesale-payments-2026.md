@@ -109,7 +109,7 @@ Bankinfrastruktur ist 2026 an dem Punkt angekommen, an dem sie einen Index brauc
 >
 ---
 
-![Ein Vorstands-Dashboard des Banking Infrastructure Index 2026 mit vier Reifedomänen — agentische KI, Post-Quanten-Kryptografie, cloud-native Resilienz und Wholesale-Zahlungsverkehr — nebeneinander gegen ein einziges Betriebsmodell vermessen](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp)
+![Ein Vorstands-Dashboard des Banking Infrastructure Index 2026 mit vier Reifedomänen — agentische KI, Post-Quanten-Kryptografie, cloud-native Resilienz und Wholesale-Zahlungsverkehr — nebeneinander gegen ein einziges Betriebsmodell vermessen](https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp)
 
 ## Warum 2026 das Jahr ist, in dem dieser Index zählt
 

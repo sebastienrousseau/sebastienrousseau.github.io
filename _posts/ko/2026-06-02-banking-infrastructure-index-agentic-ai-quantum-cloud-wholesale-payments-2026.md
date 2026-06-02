@@ -109,7 +109,7 @@ site_software: "Static Site Generator, Rust"
 >
 ---
 
-![에이전트 AI, 포스트 양자 암호, 클라우드 네이티브 회복력, 도매 결제 네 가지 준비도 영역을 단일 운영 모델 대비 나란히 측정하는 2026 뱅킹 인프라 인덱스의 이사회 대시보드](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp)
+![에이전트 AI, 포스트 양자 암호, 클라우드 네이티브 회복력, 도매 결제 네 가지 준비도 영역을 단일 운영 모델 대비 나란히 측정하는 2026 뱅킹 인프라 인덱스의 이사회 대시보드](https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp)
 
 ## 2026년이 이 인덱스가 중요한 해인 이유
 

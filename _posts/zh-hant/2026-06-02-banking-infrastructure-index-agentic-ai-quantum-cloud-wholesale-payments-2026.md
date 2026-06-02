@@ -109,7 +109,7 @@ site_software: "Static Site Generator, Rust"
 >
 ---
 
-![一張董事會層級的儀表板,呈現 2026 銀行基礎建設指數的四大準備度領域——自主式 AI、後量子密碼學、雲原生韌性與大額支付——並以同一套營運模型並列衡量](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp)
+![一張董事會層級的儀表板,呈現 2026 銀行基礎建設指數的四大準備度領域——自主式 AI、後量子密碼學、雲原生韌性與大額支付——並以同一套營運模型並列衡量](https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp)
 
 ## 為何 2026 年是這份指數登場的時機
 

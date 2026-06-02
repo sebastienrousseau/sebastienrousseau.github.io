@@ -109,7 +109,7 @@ Infrastruktur perbankan pada 2026 telah mencapai titik di mana ia membutuhkan in
 >
 ---
 
-![Dasbor tingkat dewan dari Banking Infrastructure Index 2026 yang menampilkan empat domain kesiapan — agentic AI, kriptografi pasca-kuantum, ketahanan cloud-native, dan pembayaran grosir — diukur berdampingan terhadap satu model operasi](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp)
+![Dasbor tingkat dewan dari Banking Infrastructure Index 2026 yang menampilkan empat domain kesiapan — agentic AI, kriptografi pasca-kuantum, ketahanan cloud-native, dan pembayaran grosir — diukur berdampingan terhadap satu model operasi](https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp)
 
 ## Mengapa 2026 Adalah Tahun di Mana Indeks Ini Berarti
 

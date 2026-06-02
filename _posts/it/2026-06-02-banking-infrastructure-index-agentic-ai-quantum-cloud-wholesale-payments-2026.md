@@ -109,7 +109,7 @@ L'infrastruttura bancaria nel 2026 ha raggiunto il punto in cui serve un indice,
 >
 ---
 
-![Una dashboard a livello di consiglio del Banking Infrastructure Index 2026 che mostra quattro domini di prontezza — AI agentica, crittografia post-quantistica, resilienza cloud-nativa e pagamenti wholesale — misurati fianco a fianco rispetto a un unico modello operativo](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp)
+![Una dashboard a livello di consiglio del Banking Infrastructure Index 2026 che mostra quattro domini di prontezza — AI agentica, crittografia post-quantistica, resilienza cloud-nativa e pagamenti wholesale — misurati fianco a fianco rispetto a un unico modello operativo](https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp)
 
 ## Perché il 2026 è l'anno in cui questo indice conta
 

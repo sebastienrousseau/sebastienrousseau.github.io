@@ -109,7 +109,7 @@ Infrastructura bancară din 2026 a ajuns în punctul în care are nevoie de un i
 >
 ---
 
-![Un tablou de bord la nivel de consiliu al Indicelui Infrastructurii Bancare 2026 care arată patru domenii de pregătire — AI agentic, criptografie post-cuantică, reziliență cloud-nativă și plăți de gros — măsurate alăturat în raport cu un singur model de operare](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp)
+![Un tablou de bord la nivel de consiliu al Indicelui Infrastructurii Bancare 2026 care arată patru domenii de pregătire — AI agentic, criptografie post-cuantică, reziliență cloud-nativă și plăți de gros — măsurate alăturat în raport cu un singur model de operare](https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp)
 
 ## De ce 2026 este anul în care acest indice contează
 

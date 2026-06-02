@@ -109,7 +109,7 @@ Hạ tầng ngân hàng năm 2026 đã đến điểm cần một chỉ số, kh
 >
 ---
 
-![Bảng điều khiển cấp hội đồng về Chỉ số Hạ tầng Ngân hàng 2026 thể hiện bốn lĩnh vực sẵn sàng — agentic AI, mật mã hậu lượng tử, khả năng phục hồi cloud-native và thanh toán bán buôn — được đo song song so với một mô hình vận hành duy nhất](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp)
+![Bảng điều khiển cấp hội đồng về Chỉ số Hạ tầng Ngân hàng 2026 thể hiện bốn lĩnh vực sẵn sàng — agentic AI, mật mã hậu lượng tử, khả năng phục hồi cloud-native và thanh toán bán buôn — được đo song song so với một mô hình vận hành duy nhất](https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp)
 
 ## Vì sao 2026 là năm chỉ số này có ý nghĩa
 

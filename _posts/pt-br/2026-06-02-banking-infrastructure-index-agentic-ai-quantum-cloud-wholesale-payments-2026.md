@@ -109,7 +109,7 @@ A infraestrutura bancária em 2026 chegou ao ponto em que precisa de um índice,
 >
 ---
 
-![Um painel do conselho do Índice de Infraestrutura Bancária 2026 mostrando quatro domínios de prontidão — IA agêntica, criptografia pós-quântica, resiliência nativa em nuvem e pagamentos de atacado — medidos lado a lado contra um único modelo operacional](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp)
+![Um painel do conselho do Índice de Infraestrutura Bancária 2026 mostrando quatro domínios de prontidão — IA agêntica, criptografia pós-quântica, resiliência nativa em nuvem e pagamentos de atacado — medidos lado a lado contra um único modelo operacional](https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp)
 
 ## Por que 2026 é o ano em que este índice importa
 

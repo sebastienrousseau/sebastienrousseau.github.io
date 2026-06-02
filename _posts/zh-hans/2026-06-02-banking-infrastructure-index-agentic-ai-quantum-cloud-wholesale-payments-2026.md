@@ -109,7 +109,7 @@ site_software: "Static Site Generator, Rust"
 >
 ---
 
-![2026 年银行基础设施指数的董事会级仪表盘:在同一套运营模型之下,并排度量自主式 AI、后量子密码学、云原生韧性与批发支付四个就绪度领域](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp)
+![2026 年银行基础设施指数的董事会级仪表盘:在同一套运营模型之下,并排度量自主式 AI、后量子密码学、云原生韧性与批发支付四个就绪度领域](https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp)
 
 ## 为什么 2026 年是这份指数登场的时点
 

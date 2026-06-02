@@ -1,11 +1,11 @@
 {
-  "subtitle": "DTT, pustaka Rust presisi tinggi untuk operasi tanggal dan waktu.",
-  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
-  "language": "id-ID",
-  "keywords": "DateTime, DTT, pustaka Rust, penguraian, validasi, manipulasi, pemformatan, tanggal, waktu",
   "date": "Dec 04, 2023",
+  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
   "description": "DateTime (DTT) adalah pustaka Rust untuk mengurai, memvalidasi, memanipulasi, dan memformat tanggal dan waktu — presisi tinggi dengan fungsionalitas yang luas.",
-  "title": "[ID DRAFT] Efficient Date and Time Management with DateTime (DTT)",
   "locale": "id_ID",
-  "banner_alt": "DateTime (DTT), Toolkit Esensial Anda untuk Operasi Tanggal dan Waktu."
+  "banner_alt": "DateTime (DTT), Toolkit Esensial Anda untuk Operasi Tanggal dan Waktu.",
+  "keywords": "DateTime, DTT, pustaka Rust, penguraian, validasi, manipulasi, pemformatan, tanggal, waktu",
+  "title": "[ID DRAFT] Efficient Date and Time Management with DateTime (DTT)",
+  "language": "id-ID",
+  "subtitle": "DTT, pustaka Rust presisi tinggi untuk operasi tanggal dan waktu."
 }

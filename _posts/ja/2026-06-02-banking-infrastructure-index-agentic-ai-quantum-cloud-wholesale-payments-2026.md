@@ -109,7 +109,7 @@ site_software: "Static Site Generator, Rust"
 >
 ---
 
-![2026 年銀行インフラ指数の取締役会レベルダッシュボード。エージェント型 AI、ポスト量子暗号、クラウドネイティブ・レジリエンス、ホールセール決済の 4 つの準備度領域を、一つの運営モデルに照らして並列に計測する図](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp)
+![2026 年銀行インフラ指数の取締役会レベルダッシュボード。エージェント型 AI、ポスト量子暗号、クラウドネイティブ・レジリエンス、ホールセール決済の 4 つの準備度領域を、一つの運営モデルに照らして並列に計測する図](https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp)
 
 ## なぜ 2026 年がこの指数の重要な年なのか
 

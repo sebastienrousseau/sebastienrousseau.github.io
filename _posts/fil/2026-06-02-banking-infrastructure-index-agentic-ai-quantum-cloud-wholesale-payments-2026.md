@@ -109,7 +109,7 @@ Naabot na ng banking infrastructure sa 2026 ang puntong kailangan na nito ng ind
 >
 ---
 
-![Isang board-level dashboard ng 2026 Banking Infrastructure Index na nagpapakita ng apat na domain ng katatagan — agentic AI, post-quantum cryptography, cloud-native na katatagan, at wholesale payments — sinusukat nang magkatabi laban sa isang operating model](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp)
+![Isang board-level dashboard ng 2026 Banking Infrastructure Index na nagpapakita ng apat na domain ng katatagan — agentic AI, post-quantum cryptography, cloud-native na katatagan, at wholesale payments — sinusukat nang magkatabi laban sa isang operating model](https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp)
 
 ## Bakit ang 2026 ang Taon na Mahalaga ang Index na Ito
 

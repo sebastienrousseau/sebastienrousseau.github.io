@@ -109,7 +109,7 @@ La infraestructura bancaria de 2026 ha llegado al punto en que necesita un índi
 >
 ---
 
-![Cuadro de mando de nivel consejo del Índice de infraestructura bancaria 2026 que muestra los cuatro dominios de madurez —IA agéntica, criptografía poscuántica, resiliencia nativa en la nube y pagos mayoristas— evaluados en paralelo contra un único modelo operativo](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp)
+![Cuadro de mando de nivel consejo del Índice de infraestructura bancaria 2026 que muestra los cuatro dominios de madurez —IA agéntica, criptografía poscuántica, resiliencia nativa en la nube y pagos mayoristas— evaluados en paralelo contra un único modelo operativo](https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp)
 
 ## Por qué 2026 es el año en que este índice importa
 

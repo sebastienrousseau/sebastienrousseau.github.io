@@ -109,7 +109,7 @@ Les infrastructures bancaires de 2026 ont atteint le point où elles exigent un 
 >
 ---
 
-![Tableau de bord de niveau conseil de l'Index 2026 des infrastructures bancaires, présentant côte à côte les quatre domaines de maturité — IA agentique, cryptographie post-quantique, résilience cloud natif et paiements de gros — mesurés face à un modèle opérationnel unique](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp)
+![Tableau de bord de niveau conseil de l'Index 2026 des infrastructures bancaires, présentant côte à côte les quatre domaines de maturité — IA agentique, cryptographie post-quantique, résilience cloud natif et paiements de gros — mesurés face à un modèle opérationnel unique](https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp)
 
 ## Pourquoi 2026 est l'année de cet index
 

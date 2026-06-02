@@ -109,7 +109,7 @@ De bankinfrastructuur heeft in 2026 het punt bereikt waarop een index nodig is, 
 >
 ---
 
-![Een bestuursdashboard van de Banking Infrastructure Index 2026 dat vier gereedheidsdomeinen toont — agentic AI, post-kwantumcryptografie, cloud-native veerkracht en wholesale-betalingen — zij aan zij gemeten tegen één operating model](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp)
+![Een bestuursdashboard van de Banking Infrastructure Index 2026 dat vier gereedheidsdomeinen toont — agentic AI, post-kwantumcryptografie, cloud-native veerkracht en wholesale-betalingen — zij aan zij gemeten tegen één operating model](https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp)
 
 ## Waarom 2026 het jaar is waarin deze index ertoe doet
 

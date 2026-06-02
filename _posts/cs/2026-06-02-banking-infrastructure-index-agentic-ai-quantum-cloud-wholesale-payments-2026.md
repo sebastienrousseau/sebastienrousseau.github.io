@@ -109,7 +109,7 @@ Bankovní infrastruktura v roce 2026 dospěla do bodu, kdy potřebuje index, nik
 >
 ---
 
-![Dashboard Indexu bankovní infrastruktury 2026 pro správní radu zobrazující čtyři domény připravenosti — agentní AI, postkvantovou kryptografii, cloud-native odolnost a velkoobchodní platby — měřené vedle sebe vůči jednomu provoznímu modelu](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp)
+![Dashboard Indexu bankovní infrastruktury 2026 pro správní radu zobrazující čtyři domény připravenosti — agentní AI, postkvantovou kryptografii, cloud-native odolnost a velkoobchodní platby — měřené vedle sebe vůči jednomu provoznímu modelu](https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp)
 
 ## Proč je rok 2026 rokem, kdy tento index nabývá smyslu
 

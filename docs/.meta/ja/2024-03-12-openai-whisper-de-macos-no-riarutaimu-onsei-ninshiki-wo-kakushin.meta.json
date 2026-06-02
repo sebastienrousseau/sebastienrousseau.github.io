@@ -1,12 +1,12 @@
 {
+  "description": "OpenAI Whisper と macOS Metal Performance Shaders GPU アクセラレーションでリアルタイム音声テキスト変換を実現。",
   "date": "March 12, 2024",
-  "language": "ja-JP",
+  "keywords": "OpenAI Whisper, macOS, Metal Performance Shaders, MPS, リアルタイム, 音声認識, Apple Silicon",
   "banner": "https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp",
   "locale": "ja_JP",
+  "title": "OpenAI Whisper で macOS のリアルタイム音声認識を革新",
   "subtitle": "Metal Performance Shaders によるサブ秒のレイテンシ",
   "last_reviewed": "2026-05-11",
-  "description": "OpenAI Whisper と macOS Metal Performance Shaders GPU アクセラレーションでリアルタイム音声テキスト変換を実現。",
-  "title": "OpenAI Whisper で macOS のリアルタイム音声認識を革新",
   "banner_alt": "マイクと音波",
-  "keywords": "OpenAI Whisper, macOS, Metal Performance Shaders, MPS, リアルタイム, 音声認識, Apple Silicon"
+  "language": "ja-JP"
 }

@@ -109,7 +109,7 @@ Bankinfrastrukturen 2026 har nått den punkt där den behöver ett index, inte �
 >
 ---
 
-![En styrelsenivåvy av Bankinfrastrukturindex 2026 som visar fyra beredskapsdomäner — agentisk AI, postkvantkryptografi, molnnativ motståndskraft och wholesale-betalningar — mätta sida vid sida mot en gemensam driftsmodell](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp)
+![En styrelsenivåvy av Bankinfrastrukturindex 2026 som visar fyra beredskapsdomäner — agentisk AI, postkvantkryptografi, molnnativ motståndskraft och wholesale-betalningar — mätta sida vid sida mot en gemensam driftsmodell](https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp)
 
 ## Varför 2026 är året då detta index spelar roll
 

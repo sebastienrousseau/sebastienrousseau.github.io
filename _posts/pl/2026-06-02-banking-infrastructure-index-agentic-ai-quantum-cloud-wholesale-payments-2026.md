@@ -109,7 +109,7 @@ Infrastruktura bankowa w 2026 osiągnęła punkt, w którym potrzebuje indeksu, 
 >
 ---
 
-![Tablica zarządcza Indeksu Infrastruktury Bankowej 2026 przedstawiająca cztery obszary gotowości — agentowe AI, kryptografia postkwantowa, odporność cloud-native i płatności hurtowe — mierzone obok siebie w jednym modelu operacyjnym](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp)
+![Tablica zarządcza Indeksu Infrastruktury Bankowej 2026 przedstawiająca cztery obszary gotowości — agentowe AI, kryptografia postkwantowa, odporność cloud-native i płatności hurtowe — mierzone obok siebie w jednym modelu operacyjnym](https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp)
 
 ## Dlaczego 2026 to rok, w którym ten indeks ma znaczenie
 
