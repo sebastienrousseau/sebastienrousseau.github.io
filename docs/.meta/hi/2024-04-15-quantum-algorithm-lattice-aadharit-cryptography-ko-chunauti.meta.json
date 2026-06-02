@@ -1,11 +1,11 @@
 {
-  "banner_alt": "लैटिस-क्रिप्टोग्राफी की प्रतीकात्मक छवि",
-  "language": "hi-IN",
-  "title": "एक क्वांटम-अल्गोरिदम लैटिस-आधारित क्रिप्टोग्राफी को चुनौती देता है",
-  "keywords": "क्वांटम अल्गोरिदम, लैटिस, क्रिप्टोग्राफी, post-quantum, NIST, CRYSTALS-Kyber, Yilei Chen, LWE, MLWE, सुरक्षा",
-  "description": "Yilei Chen का क्वांटम-अल्गोरिदम लैटिस-आधारित क्रिप्टोग्राफी को कैसे चुनौती देता है — और इसके पोस्ट-क्वांटम मानकों पर निहितार्थ।",
   "date": "April 15, 2024",
   "locale": "hi_IN",
   "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
-  "subtitle": "Yilei Chen का दावा और पोस्ट-क्वांटम मानकों पर प्रभाव"
+  "description": "Yilei Chen का क्वांटम-अल्गोरिदम लैटिस-आधारित क्रिप्टोग्राफी को कैसे चुनौती देता है — और इसके पोस्ट-क्वांटम मानकों पर निहितार्थ।",
+  "title": "एक क्वांटम-अल्गोरिदम लैटिस-आधारित क्रिप्टोग्राफी को चुनौती देता है",
+  "subtitle": "Yilei Chen का दावा और पोस्ट-क्वांटम मानकों पर प्रभाव",
+  "banner_alt": "लैटिस-क्रिप्टोग्राफी की प्रतीकात्मक छवि",
+  "language": "hi-IN",
+  "keywords": "क्वांटम अल्गोरिदम, लैटिस, क्रिप्टोग्राफी, post-quantum, NIST, CRYSTALS-Kyber, Yilei Chen, LWE, MLWE, सुरक्षा"
 }

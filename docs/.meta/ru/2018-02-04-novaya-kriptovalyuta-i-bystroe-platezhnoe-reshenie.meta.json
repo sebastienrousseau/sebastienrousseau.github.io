@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp",
   "description": "Значимая глава в эволюции глобального финансового ландшафта — технологические инновации, геополитические сдвиги и устойчивые финансы.",
-  "locale": "ru_RU",
-  "subtitle": "EXTC Network: видение мгновенных платежей на блокчейне",
-  "title": "Представление новой криптовалюты и более быстрого платёжного решения",
-  "date": "February 4, 2018",
-  "banner_alt": "Выключенный ноутбук на коричневом деревянном столе",
   "keywords": "EXTC Network, криптовалюта, быстрые платежи, Ethereum, EIP20, смарт-контракты, блокчейн, трансграничные платежи, финансовая инклюзия",
-  "language": "ru-RU"
+  "date": "February 4, 2018",
+  "locale": "ru_RU",
+  "language": "ru-RU",
+  "banner_alt": "Выключенный ноутбук на коричневом деревянном столе",
+  "title": "Представление новой криптовалюты и более быстрого платёжного решения",
+  "subtitle": "EXTC Network: видение мгновенных платежей на блокчейне",
+  "banner": "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp"
 }

@@ -1,11 +1,11 @@
 {
-  "subtitle": "探索 AI 在金融量子算法中的变革性作用，聚焦其数学精妙之处与银行应用",
-  "keywords": "量子算法, 量子傅里叶变换, QFT, Grover 算法, 金融 AI, 高盛, BBVA, 桑坦德, TerraQuantum, 风险管理",
-  "title": "用 AI 增强的量子算法变革金融",
-  "language": "zh-Hans",
   "locale": "zh_CN",
+  "language": "zh-Hans",
+  "title": "用 AI 增强的量子算法变革金融",
+  "description": "AI 与量子算法的融合在金融领域释放新效率：QFT、Grover 算法在风险、欺诈检测中的应用。",
   "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
-  "date": "December 25, 2023",
+  "keywords": "量子算法, 量子傅里叶变换, QFT, Grover 算法, 金融 AI, 高盛, BBVA, 桑坦德, TerraQuantum, 风险管理",
   "banner_alt": "用 AI 增强的量子算法变革金融",
-  "description": "AI 与量子算法的融合在金融领域释放新效率：QFT、Grover 算法在风险、欺诈检测中的应用。"
+  "date": "December 25, 2023",
+  "subtitle": "探索 AI 在金融量子算法中的变革性作用，聚焦其数学精妙之处与银行应用"
 }

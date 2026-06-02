@@ -1,11 +1,11 @@
 {
-  "locale": "zh_CN",
-  "language": "zh-Hans",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
   "description": "HSH 是一个用 Rust 开发的轻量级抗量子密码哈希库，用于密码哈希与验证。",
   "banner_alt": "量子计算主题的创意插图",
   "subtitle": "HSH 使用抗量子密码原语保护你的数据，即便面对未来的量子计算进展也能确保安全",
+  "date": "October 16, 2023",
   "title": "量子时代的数据保护：哈希库 HSH",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
   "keywords": "HSH, 哈希库, 后量子密码学, 抗量子密码, Argon2i, BScrypt, Scrypt, Rust, NIST, PQC",
-  "date": "October 16, 2023"
+  "language": "zh-Hans",
+  "locale": "zh_CN"
 }

@@ -1,11 +1,11 @@
 {
   "keywords": "Multimodal LLMs, MM1 গবেষণা, AI অগ্রগতি, প্রি-ট্রেনিং কৌশল, চিত্র শনাক্তকরণ, প্রাকৃতিক ভাষা প্রক্রিয়াকরণ, AI প্রয়োগ, AI-এর ভবিষ্যৎ, মাল্টিমোডাল লার্নিং, AI গবেষণা",
-  "locale": "bn_BD",
-  "subtitle": "AI-এর ভবিষ্যৎ উন্মোচন: Apple-এর যুগান্তকারী MM1 গবেষণা কীভাবে Multimodal Learning-এ বিপ্লব আনছে",
-  "description": "Apple-এর MM1 পেপার থেকে Multimodal Large Language Models (MLLMs) সম্পর্কে জানুন। তাদের আর্কিটেকচার, প্রি-ট্রেনিং পদ্ধতি এবং AI-এর সম্ভাবনা আবিষ্কার করুন।",
-  "language": "bn-BD",
-  "date": "Mar 17, 2024",
   "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
+  "locale": "bn_BD",
+  "date": "Mar 17, 2024",
+  "language": "bn-BD",
+  "banner_alt": "Apple MM1-এর জন্য ব্যানার চিত্র",
   "title": "Advancing AI with Multimodal LLMs: Insights from MM1",
-  "banner_alt": "Apple MM1-এর জন্য ব্যানার চিত্র"
+  "description": "Apple-এর MM1 পেপার থেকে Multimodal Large Language Models (MLLMs) সম্পর্কে জানুন। তাদের আর্কিটেকচার, প্রি-ট্রেনিং পদ্ধতি এবং AI-এর সম্ভাবনা আবিষ্কার করুন।",
+  "subtitle": "AI-এর ভবিষ্যৎ উন্মোচন: Apple-এর যুগান্তকারী MM1 গবেষণা কীভাবে Multimodal Learning-এ বিপ্লব আনছে"
 }

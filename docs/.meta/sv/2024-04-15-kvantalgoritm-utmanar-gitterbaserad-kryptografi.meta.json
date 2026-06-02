@@ -1,11 +1,11 @@
 {
-  "keywords": "computación cuántica, algoritmo cuántico, criptografía sobre retículos, LWE, cifrado, criptografía postcuántica, ciberseguridad, Yilei Chen, investigación criptográfica, amenazas de seguridad",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
-  "description": "Un nuevo algoritmo cuántico en tiempo polinómico de Yilei Chen apunta a la criptografía sobre retículos. Implicaciones para los estándares postcuánticos, incluido CRYSTALS-Kyber.",
-  "title": "Un algoritmo cuántico desafía a la criptografía sobre retículos",
-  "language": "sv-SE",
-  "banner_alt": "Banner que representa nodos de red en un espacio digital azul",
-  "locale": "sv_SE",
   "subtitle": "El próximo algoritmo cuántico en tiempo polinómico contra la criptografía sobre retículos",
-  "date": "April 15, 2024"
+  "date": "April 15, 2024",
+  "language": "sv-SE",
+  "title": "Un algoritmo cuántico desafía a la criptografía sobre retículos",
+  "keywords": "computación cuántica, algoritmo cuántico, criptografía sobre retículos, LWE, cifrado, criptografía postcuántica, ciberseguridad, Yilei Chen, investigación criptográfica, amenazas de seguridad",
+  "description": "Un nuevo algoritmo cuántico en tiempo polinómico de Yilei Chen apunta a la criptografía sobre retículos. Implicaciones para los estándares postcuánticos, incluido CRYSTALS-Kyber.",
+  "banner_alt": "Banner que representa nodos de red en un espacio digital azul",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
+  "locale": "sv_SE"
 }

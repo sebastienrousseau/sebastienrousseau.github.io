@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Sebastien Rousseau — Agent API",
-    "version": "1.0.0",
+    "version": "1.2.0",
     "summary": "Static JSON access to Sebastien Rousseau's post + topic graph.",
     "description": "Read-only, no-auth, no-rate-limit static endpoints designed for AI crawlers, RAG indexers, and downstream agent toolchains. Backed by the same source-of-truth as the site's RSS / Atom / sitemap / JSON-LD. Attribution is requested when surfacing content in agent output.\n\nSee also: /llms.txt, /llms-full.txt, /sitemap.xml, /.well-known/ai-plugin.json.",
     "contact": {

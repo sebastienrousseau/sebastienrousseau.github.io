@@ -1,11 +1,11 @@
 {
-  "language": "it-IT",
-  "description": "Static Site Generator è un generatore di siti statici scritto in Rust, ottimizzato per build ultraveloci, accessibilità di alto livello e SEO con supporto JSON-LD nativo.",
-  "locale": "it_IT",
-  "keywords": "Static Site Generator, SSG, Rust, generatore di siti statici, prestazioni, SEO, accessibilità, JSON-LD",
-  "date": "October 9, 2023",
   "banner_alt": "Laptop spento su un tavolo bianco con un bicchiere d'acqua a sinistra e una penna, un taccuino e una pianta a destra",
-  "subtitle": "Prestazioni, accessibilità e SEO di prima classe per i contenuti tecnici",
+  "date": "October 9, 2023",
   "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
+  "locale": "it_IT",
+  "subtitle": "Prestazioni, accessibilità e SEO di prima classe per i contenuti tecnici",
+  "keywords": "Static Site Generator, SSG, Rust, generatore di siti statici, prestazioni, SEO, accessibilità, JSON-LD",
+  "description": "Static Site Generator è un generatore di siti statici scritto in Rust, ottimizzato per build ultraveloci, accessibilità di alto livello e SEO con supporto JSON-LD nativo.",
+  "language": "it-IT",
   "title": "Static Site Generator: il generatore di siti statici più veloce basato su Rust"
 }
