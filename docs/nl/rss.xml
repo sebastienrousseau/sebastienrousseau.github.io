@@ -6,14 +6,14 @@
     <description>Artikelen in het Nederlands: toegepaste AI, ISO 20022-betalingen, post-kwantumcryptografie en transformatie van het wholesale-betalingsverkeer.</description>
     <atom:link href="https://sebastienrousseau.com/nl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>nl-NL</language>
-    <lastBuildDate>Sun, 31 May 2026 19:21:17 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 08:48:27 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle rechten voorbehouden.</copyright>
     <item>
       <title>De multi-rail bank in 2026: kaarten, A2A, stablecoins, RTP, FedNow en Open Banking in één strategie</title>
       <link>https://sebastienrousseau.com/nl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow vereist voorgefinancierde liquiditeit 24/7. ACH is goedkoop maar T+1. USDC wikkelt atomair af maar vergt wallet-infrastructuur. De multi-rail bank van 2026 routeert per kosten, finaliteit en liquiditeitskost via een orkestratie-engine die ISO 20022 pacs.008 leest.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Sun, 31 May 2026 19:21:17 +0000</pubDate>
+      <pubDate>Tue, 02 Jun 2026 08:48:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>betalingsorkestratielaag</category>
@@ -35,7 +35,7 @@
       <link>https://sebastienrousseau.com/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>Post-quantum-cryptografie dwingt betaalrails tot een binaire keuze: RSA/ECC aanpassen binnen SWIFT MT- en ISO 20022-enveloppen die nooit op ML-KEM en ML-DSA zijn afgestemd, of vervangen door crypto-flexibele infrastructuur. Architecten moeten beslissen voordat HNDL verlies wordt.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Sun, 31 May 2026 19:21:17 +0000</pubDate>
+      <pubDate>Tue, 02 Jun 2026 08:48:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>post-quantum-cryptografie</category>
@@ -61,7 +61,7 @@
       <link>https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
       <description>DORA, EU AI Act, GDPR, concentratierisico cloud en datasoevereiniteit smelten in 2026 samen tot één compliance-stack voor banken in Nederland.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
-      <pubDate>Sun, 31 May 2026 19:21:17 +0000</pubDate>
+      <pubDate>Tue, 02 Jun 2026 08:48:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>DORA 2026</category>
@@ -71,6 +71,24 @@
       <category>concentratierisico cloud</category>
       <category>AI-compliance financiële sector</category>
       <category>hoog-risico AI</category>
+    </item>
+    <item>
+      <title>De Banking Infrastructure Index 2026: gereedheid meten voor agentic AI, kwantumveilige beveiliging, cloud-native veerkracht en wholesale-betalingen</title>
+      <link>https://sebastienrousseau.com/nl/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</link>
+      <description>Een door de Stanford AI Index geïnspireerde infrastructuurindex voor banken in 2026, die de gereedheid meet voor agentic AI, kwantumveilige beveiliging, cloud-native veerkracht en wholesale-betalingen.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</guid>
+      <pubDate>Tue, 02 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alessio-soggetti-PdGBci-4jR8.webp" type="image/webp" length="0"/>
+      <category>banking infrastructure index 2026</category>
+      <category>agentic AI bankieren</category>
+      <category>kwantumveilig bankieren</category>
+      <category>cloud-native bankieren</category>
+      <category>wholesale-betalingen</category>
+      <category>ISO 20022</category>
+      <category>DORA</category>
+      <category>Project Agora</category>
+      <category>getokeniseerde deposito&apos;s</category>
     </item>
     <item>
       <title>Digitale wholesale-markten in het VK: getokeniseerde gilts, afwikkeling en de nieuwe Champion-rol</title>

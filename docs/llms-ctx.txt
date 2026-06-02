@@ -1,0 +1,40 @@
+# Sebastien Rousseau — agent context
+
+Compact reference for LLM/agent ingestion. URLs + one-line descriptions; no marketing prose. Crawl policy: CC BY-4.0, attribution requested. See /about/#bot-policy.
+
+## Content
+- https://sebastienrousseau.com/                — Home: latest research and projects.
+- https://sebastienrousseau.com/about/          — Biography, credentials (ORCID 0009-0005-1434-284X).
+- https://sebastienrousseau.com/articles/       — Research notes: PQC, ISO 20022, payments, applied AI.
+- https://sebastienrousseau.com/papers/         — White papers, peer-reviewed analysis, regulatory submissions.
+- https://sebastienrousseau.com/projects/       — Open-source Python and Rust libraries.
+- https://sebastienrousseau.com/topics/         — Topic hubs: post-quantum, ISO 20022, applied AI, Rust, blockchain.
+- https://sebastienrousseau.com/contact/        — Professional contact form.
+
+## Feeds
+- https://sebastienrousseau.com/llms.txt        — Site directory (llmstxt.org navigation format).
+- https://sebastienrousseau.com/llms-full.txt   — Full article corpus, navigation-stripped.
+- https://sebastienrousseau.com/sitemap.xml     — All URLs, with hreflang per locale.
+- https://sebastienrousseau.com/news-sitemap.xml — Last 48 h news entries.
+- https://sebastienrousseau.com/rss.xml         — RSS feed.
+- https://sebastienrousseau.com/atom.xml        — Atom feed.
+- https://sebastienrousseau.com/feed.json       — JSON Feed 1.1.
+
+## JSON API
+- https://sebastienrousseau.com/api/agents/index.json        — Endpoint index + crawl policy.
+- https://sebastienrousseau.com/api/agents/posts.json        — Every dated post with metadata.
+- https://sebastienrousseau.com/api/agents/topics.json       — Curated topic clusters.
+- https://sebastienrousseau.com/api/agents/person.json       — Author (Person + ORCID + hasCredential).
+- https://sebastienrousseau.com/api/agents/organization.json — Publisher (Organization + Brand).
+
+## Author
+- Sebastien Rousseau, London, UK.
+- Senior payments leader, 20+ years at Tier-1 banks (HSBC, PayPal, Barclays).
+- ORCID: https://orcid.org/0009-0005-1434-284X
+- GitHub: https://github.com/sebastienrousseau
+- LinkedIn: https://www.linkedin.com/in/sebastienrousseau/
+
+## Bot policy
+- Allow: all categories (web search, social, AI retrieval, AI training, indexers).
+- License: CC BY-4.0 — attribution required.
+- Full text: https://sebastienrousseau.com/about/#bot-policy

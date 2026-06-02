@@ -20,7 +20,11 @@
     },
     "person": {
       "url": "https://sebastienrousseau.com/api/agents/person.json",
-      "description": "Author profile (Person schema)"
+      "description": "Author profile (Person schema with ORCID + hasCredential + knowsAbout)"
+    },
+    "organization": {
+      "url": "https://sebastienrousseau.com/api/agents/organization.json",
+      "description": "Publisher organisation (Organization + Brand schema)"
     }
   },
   "see_also": {

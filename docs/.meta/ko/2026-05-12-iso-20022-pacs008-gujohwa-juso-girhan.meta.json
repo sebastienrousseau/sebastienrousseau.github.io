@@ -1,12 +1,12 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp",
   "title": "ISO 20022 pacs.008 구조화 주소: 2026년 11월 마감일",
+  "keywords": "ISO 20022, pacs.008, 구조화 주소, SWIFT CBPR+, 2026년 11월, 결제 이행, 도매 결제",
   "date": "May 12, 2026",
-  "description": "이행이 지연된 은행은 거부 및 운영상의 마찰에 직면하게 됩니다. 본 분석은 마감일과 시정 우선순위를 제시합니다.",
-  "banner_alt": "SWIFT 결제 메시지 구조화",
-  "language": "ko-KR",
   "last_reviewed": "2026-05-16",
   "subtitle": "2026년 11월 22일부터 SWIFT 결제는 구조화 주소를 필수로 합니다",
   "locale": "ko_KR",
-  "keywords": "ISO 20022, pacs.008, 구조화 주소, SWIFT CBPR+, 2026년 11월, 결제 이행, 도매 결제"
+  "banner": "https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp",
+  "language": "ko-KR",
+  "description": "이행이 지연된 은행은 거부 및 운영상의 마찰에 직면하게 됩니다. 본 분석은 마감일과 시정 우선순위를 제시합니다.",
+  "banner_alt": "SWIFT 결제 메시지 구조화"
 }

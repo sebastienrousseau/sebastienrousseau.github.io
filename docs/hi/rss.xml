@@ -6,14 +6,14 @@
     <description>हिन्दी लेख: व्यावहारिक AI, ISO 20022 भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतान का रूपांतरण।</description>
     <atom:link href="https://sebastienrousseau.com/hi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>hi-IN</language>
-    <lastBuildDate>Sun, 31 May 2026 19:21:17 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 08:48:26 +0000</lastBuildDate>
     <copyright>© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।</copyright>
     <item>
       <title>2026 का मल्टी-रेल बैंक: कार्ड, A2A, स्टेबलकॉइन, RTP, FedNow और ओपन बैंकिंग, एक ही रणनीति में</title>
       <link>https://sebastienrousseau.com/hi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow को 24/7 पूर्व-वित्तपोषित तरलता चाहिए। ACH सस्ता है पर T+1। USDC परमाणु निपटान देता है पर वॉलेट बुनियादी ढाँचा माँगता है। 2026 का मल्टी-रेल बैंक हर भुगतान को लागत, अंतिमता और तरलता-लागत पर रूट करता है।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Sun, 31 May 2026 19:21:17 +0000</pubDate>
+      <pubDate>Tue, 02 Jun 2026 08:48:26 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>भुगतान ऑर्केस्ट्रेशन परत</category>
@@ -35,7 +35,7 @@
       <link>https://sebastienrousseau.com/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>पोस्ट-क्वांटम क्रिप्टोग्राफी भुगतान रेलों पर बाइनरी विकल्प थोपती है: SWIFT MT और ISO 20022 आवरणों में RSA/ECC का अनुकूलन, या क्रिप्टो-चपल बुनियादी ढाँचे से प्रतिस्थापन। आर्किटेक्ट्स को HNDL नुकसान बनने से पहले तय करना होगा।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Sun, 31 May 2026 19:21:17 +0000</pubDate>
+      <pubDate>Tue, 02 Jun 2026 08:48:26 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>पोस्ट-क्वांटम क्रिप्टोग्राफी</category>
@@ -61,7 +61,7 @@
       <link>https://sebastienrousseau.com/hi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
       <description>यूके का Wholesale Digital Markets Champion पद टोकनीकृत थोक वित्त को राष्ट्रीय प्रतिस्पर्धात्मकता परियोजना बनाता है — गिल्ट्स, निपटान, साक्ष्य।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
-      <pubDate>Sun, 31 May 2026 19:21:17 +0000</pubDate>
+      <pubDate>Tue, 02 Jun 2026 08:48:26 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>थोक डिजिटल बाजार 2026</category>
@@ -80,7 +80,7 @@
       <link>https://sebastienrousseau.com/hi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>डिजिटल संपत्तियाँ अब नवाचार दांव नहीं रहीं। यह निपटान, कस्टडी और बैलेंस शीट की संरचनात्मक प्रश्न है। बैंकों का रणनीतिक कार्य संरचनात्मक अनिश्चितता के बीच अवसंरचना डिज़ाइन करना है।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Sun, 31 May 2026 19:21:17 +0000</pubDate>
+      <pubDate>Tue, 02 Jun 2026 08:48:26 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>डिजिटल संपत्तियाँ 2026</category>
@@ -93,6 +93,24 @@
       <category>संपार्श्विक गतिशीलता</category>
       <category>प्रोग्राम-योग्य मुद्रा</category>
       <category>बैंक रणनीति डिजिटल संपत्तियाँ</category>
+    </item>
+    <item>
+      <title>2026 बैंकिंग बुनियादी ढाँचा सूचकांक: एजेंटिक AI, क्वांटम-सेफ़ सुरक्षा, क्लाउड-नेटिव लचीलापन और थोक भुगतान</title>
+      <link>https://sebastienrousseau.com/hi/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</link>
+      <description>2026 के लिए Stanford AI Index से प्रेरित बैंकिंग बुनियादी ढाँचा सूचकांक — एजेंटिक AI, क्वांटम-सेफ़ सुरक्षा, क्लाउड-नेटिव लचीलापन और थोक भुगतान में बैंक तत्परता मापता है।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</guid>
+      <pubDate>Tue, 02 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alessio-soggetti-PdGBci-4jR8.webp" type="image/webp" length="0"/>
+      <category>बैंकिंग बुनियादी ढाँचा सूचकांक 2026</category>
+      <category>एजेंटिक AI बैंकिंग</category>
+      <category>क्वांटम-सेफ़ बैंकिंग</category>
+      <category>क्लाउड-नेटिव बैंकिंग</category>
+      <category>थोक भुगतान</category>
+      <category>ISO 20022</category>
+      <category>DORA</category>
+      <category>Project Agora</category>
+      <category>टोकनाइज़्ड डिपॉज़िट</category>
     </item>
     <item>
       <title>ISO 20022 माइग्रेशन के बाद: भुगतान डेटा को 2026 में बैंकिंग उत्पादों में बदलना</title>

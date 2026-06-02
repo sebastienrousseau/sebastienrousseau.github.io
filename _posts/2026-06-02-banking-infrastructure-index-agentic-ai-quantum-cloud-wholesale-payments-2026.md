@@ -3,15 +3,15 @@
 # Front Matter (YAML)
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "The Banking Infrastructure Index 2026 index diagram for banks and financial institutions in 2026"
-banner_height: "571"
-banner_width: "1425"
-banner: "https://cloudcdn.pro/stock/images/banking-infrastructure-index-2026-banner.webp"
+banner_alt: "An editorial aerial composition by Alessio Soggetti suggesting interlocking systems — the visual register chosen for a board-level dashboard view of the 2026 Banking Infrastructure Index"
+banner_height: "800"
+banner_width: "1200"
+banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-PdGBci-4jR8.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
-date: "June 2, 2026"
+date: "Jun 2, 2026"
 description: "A Stanford AI Index-inspired banking infrastructure index for 2026, measuring readiness across agentic AI, quantum-safe security, cloud native resilience, and global wholesale payments."
 format-detection: "telephone=no"
 hreflang: "en"
@@ -93,6 +93,7 @@ author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
+excerpt: "Banking infrastructure in 2026 has reached the point where it needs an index, not another trend list. A Stanford AI Index-inspired framework for measuring bank readiness across agentic AI, quantum-safe security, cloud-native resilience, and wholesale payments — measured as one operating model."
 site_last_updated: "2026-06-02"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
@@ -101,6 +102,21 @@ site_software: "Static Site Generator, Rust"
 ---
 
 # The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments
+
+
+<!-- lead-start -->
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> A Stanford AI Index-inspired banking infrastructure index for 2026, measuring readiness across agentic AI, quantum-safe security, cloud native resilience, and global wholesale payments.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Why 2026 Is the Year This Index Matters.</strong> The Stanford AI Index is useful because it treats a fast-moving technology field as something that can be measured: research output, technical performance, responsible deployment, economics, sector adoption, policy,…</li>
+  <li><strong>Current Signals to Track.</strong> The index should score banks across four domains.</li>
+  <li><strong>The Four-Domain Readiness Model.</strong> The index should score banks across four domains.</li>
+  <li><strong>Capability Versus Reliability.</strong> The key lesson from the AI Index is that capability and reliability are not the same thing.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026">Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</a>, <a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</a>, <a href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026">Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails</a>.</p>
+</aside>
+<!-- lead-end -->
 
 Banking infrastructure in 2026 has reached the point where it needs an index, not another trend list. The four domains that matter most are agentic AI, quantum-safe cryptography, cloud native resilience, and global wholesale payments. Together they define whether a bank can automate safely, secure long-lived data, withstand operational disruption, and move value across old and new rails with credible governance.
 
@@ -117,6 +133,8 @@ Banking infrastructure in 2026 has reached the point where it needs an index, no
 >
 ---
 
+![A board-level dashboard of the 2026 Banking Infrastructure Index showing four readiness domains — agentic AI, post-quantum cryptography, cloud-native resilience, and wholesale payments — measured side by side against a single operating model](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp)
+
 ## Why 2026 Is the Year This Index Matters
 
 The Stanford AI Index is useful because it treats a fast-moving technology field as something that can be measured: research output, technical performance, responsible deployment, economics, sector adoption, policy, and public sentiment are brought into a single frame ([Stanford HAI ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report "The 2026 AI Index Report")). Banks and financial institutions now need the same discipline for infrastructure. Agentic AI, quantum-safe security, cloud native resilience, and wholesale payments are no longer separate innovation tracks; they are converging into one operating model.
@@ -130,14 +148,14 @@ The practical question for a bank is not whether each domain is important. It is
 | **Agentic AI** | From copilots to bounded autonomous workflows | Task success, human override, auditability, value per decision | Unbounded autonomy, hallucinated action, weak accountability |
 | **Quantum-safe security** | From crypto inventory to hybrid PQC migration | Coverage of ML-KEM, ML-DSA, SLH-DSA readiness | Harvest-now-decrypt-later exposure |
 | **Cloud native resilience** | From cloud adoption to demonstrable exit and failover evidence | DORA register, exit tests, concentration controls | Critical-function outage without credible recovery |
-| **Wholesale payments** | From messaging migration to programmable settlement | ISO 20022 quality, tokenised settlement, liquidity impact | Faster fragmented payments with poor data |
+| **Wholesale payments** | From messaging migration to programmable settlement | [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) quality, tokenised settlement, liquidity impact | Faster fragmented payments with poor data |
 | **Economics** | From innovation budgets to unit economics | Cost per decision, payment, repair, investigation, and settlement | Scaling technology without measurable value |
 
 ## Current Signals to Track
 
 | Signal | What It Means for Banks | Source |
 |---|---|---|
-| **OSWorld agent success rose to 66.3%** | Agents are becoming operationally useful but still unreliable enough to require controls | [Stanford HAI ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance "Technical Performance chapter") |
+| **OSWorld success hit 66.3%** (a benchmark for AI agents executing real computer tasks) | Agents are becoming operationally useful but still unreliable enough to require controls | [Stanford HAI ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance "Technical Performance chapter") |
 | **52% agentic AI adoption in financial services** | Agentic AI is no longer experimental in the sector | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 Global AI in Financial Services Report") |
 | **FIPS 203, 204, and 205 are final** | Banks have concrete PQC standards to map into migration plans | [NIST ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "First three finalized post-quantum encryption standards") |
 | **November 2026 removes unstructured addresses** | Payment data quality becomes an immediate operational deadline | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
@@ -147,13 +165,29 @@ The practical question for a bank is not whether each domain is important. It is
 
 The index should score banks across four domains. Agentic AI measures whether autonomous systems can execute bounded workflows safely. Quantum-safe security measures whether cryptographic dependencies are known, replaceable, and aligned to NIST standards. Cloud native resilience measures whether cloud platforms are portable, observable, tested, and governed under DORA. Wholesale payments measures whether ISO 20022 data, real-time rails, tokenised deposits, and settlement assets are treated as one programmable value architecture.
 
+### Cloud Native Resilience
+
+Cloud-native resilience is the domain that converts an abstract DORA obligation into operational evidence: portability between providers, observability across every critical function, exit-test artefacts that prove the bank can actually move, and concentration controls that survive a single-provider outage without cascading into payments, treasury, or customer channels.
+
+[Insert Interactive Component: Cloud Native Resilience Simulator - Demonstrating cascading failures and circuit breaker mechanisms]
+
+> **Key insight:** Resilience is no longer just about avoiding downtime; it is about proving to regulators (under DORA) that failure is contained and recovery is predictable.
+
 ## Capability Versus Reliability
 
 The key lesson from the AI Index is that capability and reliability are not the same thing. AI systems can perform extremely well on benchmarked tasks while still failing on simple operational tasks. The same distinction applies to banking infrastructure: a payment may be instant but not explainable, a model may be powerful but not auditable, a cloud platform may be scalable but not substitutable, and a cryptographic library may be modern but not crypto-agile.
 
 ## The Board-Level Scorecard
 
-A useful board scorecard should have five numbers: autonomous-workflow coverage, quantum-vulnerable asset exposure, critical-function cloud concentration, structured-payment-data readiness, and measurable economic value. Those numbers are not technical trivia. They tell directors whether technology strategy has become an operating capability or remains a portfolio of disconnected initiatives.
+A useful board scorecard should track five specific metrics, shifting technology strategy from a list of initiatives into an operational capability:
+
+1. **Autonomous-Workflow Coverage:** The percentage of tier-1 operational processes executed by bounded AI agents without human intervention.
+2. **Quantum-Vulnerable Asset Exposure:** The total number of critical cryptographic keys running pre-NIST (non-FIPS 203/204/205) algorithms.
+3. **Critical-Function Cloud Concentration:** The percentage of regulatory-defined 'critical functions' hosted by a single external cloud service provider (CSP).
+4. **Structured-Payment-Data Readiness:** The percentage of outbound wholesale payments successfully validated against strict ISO 20022 schemas prior to clearing.
+5. **Measurable Economic Value:** The unit cost per transaction, factoring in compute, compliance, and exception handling.
+
+Those numbers are not technical trivia. They tell directors whether technology strategy has become an operating capability or remains a portfolio of disconnected initiatives.
 
 ## What This Means by Bank Type
 
@@ -207,6 +241,14 @@ Annually for strategic comparison, with quarterly internal refreshes for the met
 - European Banking Authority, (2026). [Digital Operational Resilience Act ⧉](https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act "Digital Operational Resilience Act").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, payments infrastructure, tokenised money, ISO 20022, post-quantum security, cloud-native financial services, and regulated digital markets.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-06-02">2026-06-02</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026" class="related-media" aria-label="Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide" tabindex="-1"><img alt="Cloud-native banking architecture for 2026 showing Kubernetes, VM coexistence, DORA resilience, sovereign cloud, observability, and bank platform engineering" src="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026">Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</a></h3><p><time datetime="2026-05-20">2026-05-20</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026" class="related-media" aria-label="Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability" tabindex="-1"><img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</a></h3><p><time datetime="2026-05-19">2026-05-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026" class="related-media" aria-label="Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails" tabindex="-1"><img alt="Cryptographic key material drifting into deep blue water — symbolising harvest-now-decrypt-later capture of payment messages whose RSA and ECC envelopes will not survive a cryptanalytically relevant quantum computer" src="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026">Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails</a></h3><p><time datetime="2026-05-31">2026-05-31</time></p></footer></article>
+</div>
+</aside>
 <!-- enrich-end -->

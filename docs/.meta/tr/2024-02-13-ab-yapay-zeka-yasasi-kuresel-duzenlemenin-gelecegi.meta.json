@@ -1,11 +1,11 @@
 {
-  "language": "tr-TR",
-  "date": "February 13, 2024",
-  "banner_alt": "Avrupa Birliği yıldızlarının görselleştirmesi",
-  "subtitle": "AI Act'ın küresel yapay zeka yönetişimi üzerindeki etkisi",
-  "description": "AB Yapay Zeka Yasası dünya çapındaki yapay zeka düzenleyici çerçevelerini şekillendiriyor: risk seviyeleri, yükümlülükler ve etkiler.",
-  "locale": "tr_TR",
   "title": "AB Yapay Zeka Yasası: küresel yapay zeka düzenlemesinin geleceği",
-  "keywords": "AB Yapay Zeka Yasası, düzenleme, yapay zeka, AB, uyum, yönetişim",
-  "banner": "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp"
+  "language": "tr-TR",
+  "banner": "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp",
+  "locale": "tr_TR",
+  "description": "AB Yapay Zeka Yasası dünya çapındaki yapay zeka düzenleyici çerçevelerini şekillendiriyor: risk seviyeleri, yükümlülükler ve etkiler.",
+  "subtitle": "AI Act'ın küresel yapay zeka yönetişimi üzerindeki etkisi",
+  "banner_alt": "Avrupa Birliği yıldızlarının görselleştirmesi",
+  "date": "February 13, 2024",
+  "keywords": "AB Yapay Zeka Yasası, düzenleme, yapay zeka, AB, uyum, yönetişim"
 }

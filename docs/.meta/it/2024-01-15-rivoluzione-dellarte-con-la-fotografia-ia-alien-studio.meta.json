@@ -1,11 +1,11 @@
 {
-  "keywords": "Alien Studio, IA generativa, fotografia, arte, Midjourney, DALL-E, Stable Diffusion",
-  "title": "Alien Studio: rivoluzionare l'arte con la fotografia IA",
-  "locale": "it_IT",
+  "date": "January 15, 2024",
   "language": "it-IT",
-  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
   "subtitle": "Quando la generazione di immagini IA diventa uno strumento creativo professionale",
+  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
   "banner_alt": "La musa del tramonto, uno sguardo sereno; bellezza nell'immobilità",
+  "locale": "it_IT",
   "description": "Alien Studio esplora la fotografia generativa con IA come strumento artistico, con esempi di workflow, prompting e estetica.",
-  "date": "January 15, 2024"
+  "title": "Alien Studio: rivoluzionare l'arte con la fotografia IA",
+  "keywords": "Alien Studio, IA generativa, fotografia, arte, Midjourney, DALL-E, Stable Diffusion"
 }

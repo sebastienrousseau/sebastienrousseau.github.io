@@ -1,11 +1,11 @@
 {
-  "date": "Feb 04, 2018",
-  "description": "Prezentacja nowej kryptowaluty i protokołu zaprojektowanego dla szybszych, tańszych płatności globalnych.",
-  "banner": "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp",
-  "locale": "pl_PL",
-  "keywords": "kryptowaluta, szybkie płatności, blockchain, protokół, fintech",
   "banner_alt": "Strumień transakcji cyfrowych przepływający przez sieć",
   "language": "pl-PL",
+  "date": "Feb 04, 2018",
+  "locale": "pl_PL",
+  "keywords": "kryptowaluta, szybkie płatności, blockchain, protokół, fintech",
+  "subtitle": "Wprowadzenie protokołu transakcyjnego nowej generacji",
   "title": "Nowa kryptowaluta i rozwiązanie szybszych płatności przyszłości",
-  "subtitle": "Wprowadzenie protokołu transakcyjnego nowej generacji"
+  "banner": "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp",
+  "description": "Prezentacja nowej kryptowaluty i protokołu zaprojektowanego dla szybszych, tańszych płatności globalnych."
 }

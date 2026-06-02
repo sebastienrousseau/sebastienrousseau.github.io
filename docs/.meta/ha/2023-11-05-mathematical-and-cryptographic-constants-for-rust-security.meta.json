@@ -1,11 +1,11 @@
 {
-  "date": "Nov 05, 2023",
   "title": "Mathematical and Cryptographic Constants for Rust Security",
-  "language": "ha-NG",
-  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
-  "locale": "ha_NG",
   "banner_alt": "Lissafin Mathematics",
+  "date": "Nov 05, 2023",
   "subtitle": "Constants na lissafi da cryptography da aka tabbatar don amincin memory-safe Rust.",
   "keywords": "constants na lissafi, constants na cryptography, Rust security, sadarwa mai aminci, encryption, RSA, elliptic curve cryptography, Common (CMN) library, Rust applications, lissafin lissafi",
-  "description": "Kare ingancin code da constants na lissafi da cryptography da aka tabbatar sosai, ƙarfafa amincin memory da concurrency don ƙara tsaro na code."
+  "description": "Kare ingancin code da constants na lissafi da cryptography da aka tabbatar sosai, ƙarfafa amincin memory da concurrency don ƙara tsaro na code.",
+  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
+  "locale": "ha_NG",
+  "language": "ha-NG"
 }
