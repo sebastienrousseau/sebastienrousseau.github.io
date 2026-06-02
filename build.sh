@@ -50,6 +50,14 @@ if [[ -d .well-known ]]; then
   cp -R .well-known/. public/.well-known/
 fi
 
+# Mirror fonts/ (self-hosted Inter + Newsreader + JetBrains Mono variable
+# WOFF2, latin + latin-ext subsets) into public/fonts/. Same hands-off
+# pattern as .well-known — files are static, served as-is, immutable cache.
+if [[ -d fonts ]]; then
+  mkdir -p public/fonts
+  cp -R fonts/. public/fonts/
+fi
+
 # Build + stage WASM lab demos. Each subdirectory of _wasm-demos/ is a
 # self-contained Rust→WASM crate plus a `web/` folder with the standalone
 # HTML/JS/CSS shell. The compiled wasm-pack artefacts + the web shell are

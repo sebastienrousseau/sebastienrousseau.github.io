@@ -1,11 +1,11 @@
 {
-  "language": "bn-BD",
-  "keywords": "গাণিতিক কনস্ট্যান্ট, ক্রিপ্টোগ্রাফিক কনস্ট্যান্ট, Rust security, নিরাপদ যোগাযোগ, এনক্রিপশন, RSA, elliptic curve cryptography, Common (CMN) library, Rust অ্যাপ্লিকেশন, গাণিতিক গণনা",
-  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
-  "description": "সুনিপুণভাবে যাচাইকৃত গাণিতিক ও ক্রিপ্টোগ্রাফিক কনস্ট্যান্ট দিয়ে কোড অখণ্ডতা সুরক্ষিত করুন, মেমরি ও কনকারেন্সি নিরাপত্তা শক্তিশালী করে উন্নত কোড সুরক্ষা নিশ্চিত করুন।",
   "title": "Mathematical and Cryptographic Constants for Rust Security",
-  "banner_alt": "গণিত গণনা",
   "date": "Nov 05, 2023",
+  "keywords": "গাণিতিক কনস্ট্যান্ট, ক্রিপ্টোগ্রাফিক কনস্ট্যান্ট, Rust security, নিরাপদ যোগাযোগ, এনক্রিপশন, RSA, elliptic curve cryptography, Common (CMN) library, Rust অ্যাপ্লিকেশন, গাণিতিক গণনা",
+  "description": "সুনিপুণভাবে যাচাইকৃত গাণিতিক ও ক্রিপ্টোগ্রাফিক কনস্ট্যান্ট দিয়ে কোড অখণ্ডতা সুরক্ষিত করুন, মেমরি ও কনকারেন্সি নিরাপত্তা শক্তিশালী করে উন্নত কোড সুরক্ষা নিশ্চিত করুন।",
   "locale": "bn_BD",
-  "subtitle": "মেমরি-সেফ Rust নিরাপত্তার জন্য যাচাইকৃত গাণিতিক ও ক্রিপ্টোগ্রাফিক কনস্ট্যান্ট।"
+  "language": "bn-BD",
+  "banner_alt": "গণিত গণনা",
+  "subtitle": "মেমরি-সেফ Rust নিরাপত্তার জন্য যাচাইকৃত গাণিতিক ও ক্রিপ্টোগ্রাফিক কনস্ট্যান্ট।",
+  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp"
 }

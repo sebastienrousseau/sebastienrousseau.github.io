@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
-  "date": "December 25, 2023",
-  "language": "es-ES",
-  "subtitle": "Liberar la potencia cuántica para la innovación financiera: la IA en el corazón de los algoritmos de nueva generación",
-  "keywords": "computación cuántica, algoritmos IA, matemáticas financieras, tecnología bancaria, gestión de riesgos, diseño de algoritmos, análisis de datos, estrategias de inversión, finanzas cuánticas, aprendizaje automático",
-  "banner_alt": "Revolucionar las finanzas con algoritmos cuánticos potenciados por IA",
-  "description": "El rol transformador de la IA en los algoritmos cuánticos para las finanzas, con foco en sus sutilezas matemáticas y sus aplicaciones bancarias.",
   "title": "Revolucionar las finanzas con algoritmos cuánticos potenciados por IA",
-  "locale": "es_ES"
+  "banner_alt": "Revolucionar las finanzas con algoritmos cuánticos potenciados por IA",
+  "date": "December 25, 2023",
+  "keywords": "computación cuántica, algoritmos IA, matemáticas financieras, tecnología bancaria, gestión de riesgos, diseño de algoritmos, análisis de datos, estrategias de inversión, finanzas cuánticas, aprendizaje automático",
+  "subtitle": "Liberar la potencia cuántica para la innovación financiera: la IA en el corazón de los algoritmos de nueva generación",
+  "description": "El rol transformador de la IA en los algoritmos cuánticos para las finanzas, con foco en sus sutilezas matemáticas y sus aplicaciones bancarias.",
+  "language": "es-ES",
+  "locale": "es_ES",
+  "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 }

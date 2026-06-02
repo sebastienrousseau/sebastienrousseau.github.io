@@ -1,11 +1,11 @@
 {
-  "title": "[ID DRAFT] Unlocking Gemini 1.5: Google's AI Revolution Explained",
-  "subtitle": "Pendalaman Komprehensif tentang Terobosan AI Terbaru Google",
-  "language": "id-ID",
   "date": "Feb 19, 2024",
-  "keywords": "Gemini 1.5, Google AI, arsitektur Mixture-of-Experts, efisiensi komputasional, perluasan jendela konteks, inovasi AI, transformasi analisis data, pembelajaran dalam konteks, kasus penggunaan AI, revolusi teknologi",
-  "locale": "id_ID",
-  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
   "description": "Gemini 1.5 dari Google memperluas jendela konteks hingga lebih dari 1 juta token. Apa yang terbuka untuk keuangan berbasis retrieval-augmented dan trade-off yang perlu diketahui.",
-  "banner_alt": "Visualisasi abstrak jaringan AI yang merepresentasikan kemampuan Gemini 1.5"
+  "keywords": "Gemini 1.5, Google AI, arsitektur Mixture-of-Experts, efisiensi komputasional, perluasan jendela konteks, inovasi AI, transformasi analisis data, pembelajaran dalam konteks, kasus penggunaan AI, revolusi teknologi",
+  "subtitle": "Pendalaman Komprehensif tentang Terobosan AI Terbaru Google",
+  "banner_alt": "Visualisasi abstrak jaringan AI yang merepresentasikan kemampuan Gemini 1.5",
+  "title": "[ID DRAFT] Unlocking Gemini 1.5: Google's AI Revolution Explained",
+  "locale": "id_ID",
+  "language": "id-ID",
+  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp"
 }

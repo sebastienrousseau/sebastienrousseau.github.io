@@ -1,11 +1,11 @@
 {
-  "locale": "tr_TR",
   "subtitle": "Anlık ödeme platformu nasıl tasarlandı",
-  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
-  "description": "Express Transaction Credits platformunu inşa etmek: gerçek zamanlı transferler için mimari, ölçeklenebilirlik ve uyum kararları.",
   "title": "Express Transaction Credits platformunun yapımı",
-  "date": "February 15, 2018",
+  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
   "language": "tr-TR",
-  "banner_alt": "Modern bir ödeme platformunun gösterge paneli",
-  "keywords": "anlık ödemeler, ödeme platformu, fintech, mimari, ölçeklenebilirlik, uyum"
+  "keywords": "anlık ödemeler, ödeme platformu, fintech, mimari, ölçeklenebilirlik, uyum",
+  "date": "February 15, 2018",
+  "description": "Express Transaction Credits platformunu inşa etmek: gerçek zamanlı transferler için mimari, ölçeklenebilirlik ve uyum kararları.",
+  "locale": "tr_TR",
+  "banner_alt": "Modern bir ödeme platformunun gösterge paneli"
 }

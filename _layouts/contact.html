@@ -58,6 +58,8 @@
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
     <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
     <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
     <!-- Preload the LCP hero portrait so it doesn't compete with the
          render-blocking JS bundle on throttled mobile connections.
          Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
@@ -99,9 +101,9 @@
            fonts only for now; a follow-up PR will swap in self-hosted
            WOFF2 (Inter / Newsreader / JetBrains Mono) with size-adjust
            fallback metrics so CLS stays under 0.1 during font swap. */
-        --type-display: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        --type-body: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        --type-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+        --type-display: "Newsreader", "Newsreader Fallback", Georgia, Cambria, "Times New Roman", Times, serif;
+        --type-body: "Inter", "Inter Fallback", "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        --type-mono: "JetBrains Mono", "JetBrains Mono Fallback", ui-monospace, SFMono-Regular, Menlo, monospace;
       }
       /* View Transitions API (Chromium 126+) — native cross-fade on
          cross-document navigation. Honours prefers-reduced-motion via

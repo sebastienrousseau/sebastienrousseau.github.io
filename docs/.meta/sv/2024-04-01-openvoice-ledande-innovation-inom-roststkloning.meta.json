@@ -1,11 +1,11 @@
 {
   "subtitle": "La herramienta de código abierto de clonación de voz de nueva generación",
-  "banner_alt": "Banner que representa una superposición de perfiles en degradado vivo",
-  "description": "OpenVoice, del MIT, Tsinghua y MyShell: clonación de voz de calidad de producción con control del tono, el acento y la emoción, y los compromisos a conocer.",
   "keywords": "OpenVoice, clonación de voz, síntesis vocal IA, clonación de voz de código abierto, síntesis vocal multilingüe, clonación de voz instantánea, control de estilo vocal, accesibilidad vocal, voz en el entretenimiento, voz IA para servicio al cliente",
-  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
+  "locale": "sv_SE",
   "language": "sv-SE",
   "title": "OpenVoice: a la vanguardia de la innovación en clonación de voz",
+  "description": "OpenVoice, del MIT, Tsinghua y MyShell: clonación de voz de calidad de producción con control del tono, el acento y la emoción, y los compromisos a conocer.",
+  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
   "date": "April 01, 2024",
-  "locale": "sv_SE"
+  "banner_alt": "Banner que representa una superposición de perfiles en degradado vivo"
 }
