@@ -460,3 +460,180 @@ def test_inject_software_source_code_skips_when_no_cards():
     page = sc.PUBLIC / "projects" / "index.html"
     html = "<html><body><main></main></body></html>"
     assert sc.inject_software_source_code(page, html) == html
+
+
+# ---------------------------------------------------------------------------
+# NewsArticle — Google News Top Stories carousel signal.
+# ---------------------------------------------------------------------------
+
+import datetime as _dt  # noqa: E402
+
+_FRESH_NOW = _dt.datetime(2026, 6, 2, 12, 0, 0, tzinfo=_dt.UTC)
+_STALE_NOW = _dt.datetime(2026, 6, 5, 12, 0, 0, tzinfo=_dt.UTC)
+
+
+def _news_html(
+    pub: str = "2026-06-02T05:00:00+00:00",
+    mod: str = "2026-06-02T08:00:00+00:00",
+    image_url: str = "https://cloudcdn.pro/banner.webp",
+    keywords: str = "banking, payments, PQC",
+    section: str = "Payments",
+    canonical: str = "https://sebastienrousseau.com/2026-06-02-x/",
+    title: str = "The Banking Infrastructure Index — Sebastien Rousseau",
+    lang: str = "en-GB",
+) -> str:
+    """Synthesise a rendered post page with a BlogPosting graph the
+    NewsArticle injector can project from."""
+    img_block = f'"image":{{"@type":"ImageObject","url":"{image_url}"}}' if image_url else ""
+    section_block = f',"articleSection":"{section}"' if section else ""
+    kw_meta = (
+        f'<meta name="keywords" content="{keywords}">' if keywords else ""
+    )
+    return (
+        f'<html lang="{lang}"><head>'
+        f'<title>{title}</title>'
+        f'<link rel="canonical" href="{canonical}">'
+        f'{kw_meta}'
+        f'</head><body>'
+        f'<script type="application/ld+json">'
+        f'{{"@type":"BlogPosting","headline":"x",'
+        f'"datePublished":"{pub}","dateModified":"{mod}",'
+        f'{img_block}{section_block}}}'
+        f'</script>'
+        f'</body></html>'
+    )
+
+
+def test_inject_news_article_emits_block_for_fresh_post():
+    page = sc.PUBLIC / "2026-06-02-x" / "index.html"
+    html = _news_html()
+    out = sc.inject_news_article(page, html, now=_FRESH_NOW)
+    data = _extract_article_block(out, "NewsArticle")
+    assert data["@type"] == "NewsArticle"
+    assert data["datePublished"].startswith("2026-06-02")
+    assert data["dateModified"].startswith("2026-06-02")
+    assert data["author"] == [{"@id": "https://sebastienrousseau.com/#person"}]
+    assert data["publisher"] == {
+        "@id": "https://sebastienrousseau.com/#organization",
+    }
+    assert data["mainEntityOfPage"]["@id"] == data["url"]
+    assert data["image"] == ["https://cloudcdn.pro/banner.webp"]
+    assert data["articleSection"] == "Payments"
+    assert "banking" in data["keywords"]
+    assert data["speakable"]["@type"] == "SpeakableSpecification"
+
+
+def test_inject_news_article_skips_stale_post():
+    """Published > 48h before `now`: no NewsArticle block emitted."""
+    page = sc.PUBLIC / "2026-06-02-x" / "index.html"
+    html = _news_html()
+    out = sc.inject_news_article(page, html, now=_STALE_NOW)
+    assert out == html
+
+
+def test_inject_news_article_skips_non_dated_page():
+    page = sc.PUBLIC / "about" / "index.html"
+    html = _news_html()
+    out = sc.inject_news_article(page, html, now=_FRESH_NOW)
+    assert out == html
+
+
+def test_inject_news_article_skips_without_blogposting_dates():
+    """Without datePublished/dateModified in BlogPosting we can't decide
+    freshness — bail rather than guess."""
+    page = sc.PUBLIC / "2026-06-02-x" / "index.html"
+    html = (
+        '<html lang="en-GB"><head>'
+        '<title>x</title>'
+        '<link rel="canonical" href="https://sebastienrousseau.com/2026-06-02-x/">'
+        '</head><body></body></html>'
+    )
+    out = sc.inject_news_article(page, html, now=_FRESH_NOW)
+    assert out == html
+
+
+def test_inject_news_article_is_idempotent():
+    page = sc.PUBLIC / "2026-06-02-x" / "index.html"
+    html = _news_html()
+    once = sc.inject_news_article(page, html, now=_FRESH_NOW)
+    twice = sc.inject_news_article(once, page, now=_FRESH_NOW) if False else \
+        sc.inject_news_article(page, once, now=_FRESH_NOW)
+    assert once == twice
+
+
+def test_inject_news_article_handles_date_with_z_suffix():
+    page = sc.PUBLIC / "2026-06-02-x" / "index.html"
+    html = _news_html(
+        pub="2026-06-02T05:00:00Z",
+        mod="2026-06-02T08:00:00Z",
+    )
+    out = sc.inject_news_article(page, html, now=_FRESH_NOW)
+    data = _extract_article_block(out, "NewsArticle")
+    assert data["@type"] == "NewsArticle"
+
+
+def test_inject_news_article_omits_image_when_missing():
+    page = sc.PUBLIC / "2026-06-02-x" / "index.html"
+    html = _news_html(image_url="")
+    out = sc.inject_news_article(page, html, now=_FRESH_NOW)
+    data = _extract_article_block(out, "NewsArticle")
+    assert "image" not in data
+
+
+def test_inject_news_article_skips_when_already_present():
+    page = sc.PUBLIC / "2026-06-02-x" / "index.html"
+    base = _news_html()
+    # Pretend the block is already on the page.
+    seeded = base.replace(
+        "</body>",
+        '<script type="application/ld+json">'
+        '{"@type":"NewsArticle","headline":"seeded"}'
+        '</script></body>',
+    )
+    out = sc.inject_news_article(page, seeded, now=_FRESH_NOW)
+    assert out == seeded
+
+
+def test_is_fresh_for_news_at_boundary():
+    """Exactly 48h is still fresh; 48h + 1 second is stale."""
+    now = _dt.datetime(2026, 6, 4, 12, 0, 0, tzinfo=_dt.UTC)
+    on_boundary = "2026-06-02T12:00:00+00:00"
+    over_boundary = "2026-06-02T11:59:59+00:00"
+    assert sc._is_fresh_for_news(on_boundary, now) is True
+    assert sc._is_fresh_for_news(over_boundary, now) is False
+
+
+def test_is_fresh_for_news_rejects_unparseable_date():
+    now = _dt.datetime(2026, 6, 4, 12, 0, 0, tzinfo=_dt.UTC)
+    assert sc._is_fresh_for_news("not-a-date", now) is False
+
+
+def test_parse_iso_date_treats_naive_date_as_utc():
+    """`YYYY-MM-DD` is the only parser branch that produces a naive
+    datetime — the parser stamps UTC so freshness comparisons don't
+    raise."""
+    parsed = sc._parse_iso_date("2026-06-02")
+    assert parsed is not None
+    assert parsed.tzinfo is _dt.UTC
+
+
+def test_inject_news_article_defaults_now_to_wallclock(monkeypatch):
+    """When called without `now`, the injector falls back to the
+    real wall-clock so production calls don't have to thread time
+    through. Patch `datetime.now` so the test stays deterministic."""
+    page = sc.PUBLIC / "2026-06-02-x" / "index.html"
+    html = _news_html(
+        pub="2026-06-02T05:00:00+00:00",
+        mod="2026-06-02T08:00:00+00:00",
+    )
+    pinned = _dt.datetime(2026, 6, 2, 12, 0, 0, tzinfo=_dt.UTC)
+
+    class _FrozenDatetime(_dt.datetime):
+        @classmethod
+        def now(cls, tz=None):
+            return pinned
+
+    monkeypatch.setattr(sc._dt, "datetime", _FrozenDatetime)
+    out = sc.inject_news_article(page, html)
+    data = _extract_article_block(out, "NewsArticle")
+    assert data["@type"] == "NewsArticle"
