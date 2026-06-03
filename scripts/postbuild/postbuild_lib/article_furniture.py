@@ -360,14 +360,13 @@ def _banner_dimensions(html: str) -> tuple[int, int]:
     """
     w_m = _OG_IMAGE_WIDTH_RE.search(html)
     h_m = _OG_IMAGE_HEIGHT_RE.search(html)
+    # The og:image:width/height regexes only match \d+, so the int() cast
+    # cannot fail — validation is the regex shape, not a runtime check.
     if w_m and h_m:
-        try:
-            w = int(w_m.group(1))
-            h = int(h_m.group(1))
-            if w > 0 and h > 0:
-                return w, h
-        except ValueError:
-            pass
+        w = int(w_m.group(1))
+        h = int(h_m.group(1))
+        if w > 0 and h > 0:
+            return w, h
     return _BANNER_FALLBACK_WIDTH, _BANNER_FALLBACK_HEIGHT
 
 

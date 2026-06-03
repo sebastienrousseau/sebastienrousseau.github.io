@@ -3596,17 +3596,26 @@ def test_inject_hero_banner_falls_back_to_canonical_dims_when_og_dims_absent():
     assert 'height="675"' in out
 
 
-def test_inject_hero_banner_falls_back_when_og_dims_malformed():
-    """Non-numeric or zero og:image:width/height → 1200×675 fallback.
-    The branch that catches ValueError + the branch that catches the
-    ``w > 0 and h > 0`` guard both need coverage."""
+def test_inject_hero_banner_falls_back_when_og_dims_are_zero():
+    """og:image:width=0 / og:image:height=0 → fallback. Covers the
+    ``w > 0 and h > 0`` guard's False branch."""
     from postbuild_lib.article_furniture import _banner_dimensions
-    # Zero dim — caught by the > 0 guard.
     html_zero = (
         '<meta property="og:image:width" content="0" />'
         '<meta property="og:image:height" content="0" />'
     )
     assert _banner_dimensions(html_zero) == (1200, 675)
+
+
+def test_inject_hero_banner_falls_back_when_only_one_og_dim_present():
+    """og:image:width present without og:image:height (or vice versa)
+    → fallback. Covers the ``if w_m and h_m:`` guard's False branch
+    when only one side of the pair matches."""
+    from postbuild_lib.article_furniture import _banner_dimensions
+    html_width_only = '<meta property="og:image:width" content="1200" />'
+    assert _banner_dimensions(html_width_only) == (1200, 675)
+    html_height_only = '<meta property="og:image:height" content="675" />'
+    assert _banner_dimensions(html_height_only) == (1200, 675)
 
 
 def test_inject_hero_banner_falls_back_to_h1_when_alt_missing():
