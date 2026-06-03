@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/fil/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fil-PH</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-03T00:39:00+00:00</news:publication_date>
+    <news:title>Ang Agentic AI Index para sa mga Bangko sa 2026: Pagsukat ng Autonomy, Pamamahala, Auditability, at Epekto sa Negosyo</news:title>
+    <news:keywords>agentic AI banking 2026, mga AI agent sa bangko, AI governance sa financial services, autonomous banking workflows, model risk management, AI auditability</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/fil/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>fil-PH</news:language>
     </news:publication>
-    <news:publication_date>2026-06-02T22:32:10+00:00</news:publication_date>
+    <news:publication_date>2026-06-03T00:39:00+00:00</news:publication_date>
     <news:title>Ang 2026 Banking Infrastructure Index: Pagsukat ng Katatagan para sa Agentic AI, Quantum-Safe Security, Cloud-Native na Katatagan, at Wholesale Payments</news:title>
     <news:keywords>banking infrastructure index 2026, agentic AI sa banking, quantum safe banking, cloud native banking, wholesale payments, ISO 20022, DORA, Project Agora, tokenised deposits</news:keywords>
   </news:news>
@@ -20,7 +32,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>fil-PH</news:language>
     </news:publication>
-    <news:publication_date>2026-06-02T22:32:10+00:00</news:publication_date>
+    <news:publication_date>2026-06-03T00:39:00+00:00</news:publication_date>
     <news:title>Ang Multi-Rail Bank sa 2026: Cards, A2A, Stablecoins, RTP, FedNow, at Open Banking sa Isang Estratehiya</news:title>
     <news:keywords>payment orchestration layer, FedNow vs RTP, FedNow vs ACH, stablecoin settlement, USDC atomic settlement, ISO 20022 pacs.008, account-to-account A2A, Open Banking APIs, pre-funded na liquidity, 24/7 liquidity trap, multi-rail bank 2026, payment routing engine, ERP reconciliation</news:keywords>
   </news:news>
@@ -32,7 +44,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>fil-PH</news:language>
     </news:publication>
-    <news:publication_date>2026-06-02T22:32:10+00:00</news:publication_date>
+    <news:publication_date>2026-06-03T00:39:00+00:00</news:publication_date>
     <news:title>Post-Quantum Payments Infrastructure: Bakit Maaaring Palitan ng mga Bangko ang Legacy Rails sa Halip na I-adapt</news:title>
     <news:keywords>post-quantum cryptography, PQC payments, crypto-agility, mag-imbak-ngayon-i-decrypt-mamaya, HNDL, NIST post-quantum standards, ML-KEM, ML-DSA, FIPS 203, FIPS 204, paglipat ng payment rail, ISO 20022 PQC, pagpapalit ng SWIFT MT, HSM, pagbagsak ng PKI, operational resilience, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
   </news:news>
@@ -44,7 +56,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>fil-PH</news:language>
     </news:publication>
-    <news:publication_date>2026-06-02T22:32:10+00:00</news:publication_date>
+    <news:publication_date>2026-06-03T00:39:00+00:00</news:publication_date>
     <news:title>Digital Assets sa 2026: Transisyon ng Imprastraktura na Hindi Dapat Antalahin</news:title>
     <news:keywords>digital assets 2026, tokenized real-world assets, RWA, stablecoins banking, tokenized deposits, digital asset custody, DLT banking, imprastraktura ng settlement, mobility ng kolateral, programmable money, estratehiya ng bangko sa digital assets</news:keywords>
   </news:news>
