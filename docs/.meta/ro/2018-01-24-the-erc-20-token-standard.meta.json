@@ -1,11 +1,11 @@
 {
-  "title": "ERC-20: The Ethereum Token Interface That Changed the World",
+  "locale": "ro_RO",
   "language": "ro-RO",
+  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
+  "title": "ERC-20: The Ethereum Token Interface That Changed the World",
   "keywords": "ethereum, erc20, eip, tokenuri, contracte, blockchain, criptomonede, smart-token, solidity",
   "subtitle": "Tokenuri ERC-20, contracte inteligente Ethereum și standardizarea activelor digitale.",
   "banner_alt": "Laptop închis pe un birou din lemn maro",
   "date": "Jan 24, 2018",
-  "description": "ERC-20 este cel mai utilizat standard de token pe blockchain-ul Ethereum, cunoscut ca un contract digital smart contract care a revoluționat activele digitale.",
-  "locale": "ro_RO",
-  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
+  "description": "ERC-20 este cel mai utilizat standard de token pe blockchain-ul Ethereum, cunoscut ca un contract digital smart contract care a revoluționat activele digitale."
 }

@@ -1,11 +1,11 @@
 {
-  "date": "April 22, 2024",
-  "language": "hi-IN",
-  "locale": "hi_IN",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
-  "banner_alt": "क्रिप्टोग्राफिक त्रुटि की प्रतीकात्मक छवि",
   "keywords": "क्वांटम अल्गोरिदम, लैटिस, क्रिप्टोग्राफी, post-quantum, NIST, Yilei Chen, त्रुटि, बग, सुरक्षा, MLWE",
-  "subtitle": "अद्यतन: मूल दावा निरस्त — लैटिस-मानक सुरक्षित बने रहते हैं",
   "description": "Yilei Chen के क्वांटम-अल्गोरिदम में त्रुटि — लैटिस-आधारित पोस्ट-क्वांटम मानक सुरक्षित बने रहते हैं।",
-  "title": "लैटिस-आधारित क्रिप्टो के क्वांटम-अल्गोरिदम में त्रुटि मिली"
+  "locale": "hi_IN",
+  "language": "hi-IN",
+  "subtitle": "अद्यतन: मूल दावा निरस्त — लैटिस-मानक सुरक्षित बने रहते हैं",
+  "banner_alt": "क्रिप्टोग्राफिक त्रुटि की प्रतीकात्मक छवि",
+  "title": "लैटिस-आधारित क्रिप्टो के क्वांटम-अल्गोरिदम में त्रुटि मिली",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "date": "April 22, 2024"
 }

@@ -1,11 +1,11 @@
 {
-  "keywords": "OpenVoice, Tehnologie de Clonare Vocală, Vorbire Sintetică AI, Clonare Vocală Open-Source, Sinteză Vocală Cross-Lingvistică, Clonare Vocală Instantanee, Control Stil Vocal, Tehnologie Vocală pentru Accesibilitate, Voci pentru Industria Divertismentului, AI Vocal pentru Servicii Clienți",
-  "language": "ro-RO",
-  "banner_alt": "Banner cu gradient vibrant suprapus pe profiluri repetate",
   "locale": "ro_RO",
-  "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.",
+  "language": "ro-RO",
   "subtitle": "Instrumentul Open-Source de Ultimă Generație pentru Clonarea Vocii",
-  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
+  "banner_alt": "Banner cu gradient vibrant suprapus pe profiluri repetate",
   "date": "Apr 01, 2024",
-  "title": "OpenVoice: Leading Innovation in Voice Cloning Technology"
+  "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.",
+  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
+  "title": "OpenVoice: Leading Innovation in Voice Cloning Technology",
+  "keywords": "OpenVoice, Tehnologie de Clonare Vocală, Vorbire Sintetică AI, Clonare Vocală Open-Source, Sinteză Vocală Cross-Lingvistică, Clonare Vocală Instantanee, Control Stil Vocal, Tehnologie Vocală pentru Accesibilitate, Voci pentru Industria Divertismentului, AI Vocal pentru Servicii Clienți"
 }

@@ -1,12 +1,12 @@
 {
-  "date": "November 19, 2023",
   "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo-unsplash.webp",
+  "last_reviewed": "2026-05-16",
+  "language": "ko-KR",
   "keywords": "CRYSTALS-Kyber, 양자 내성, 키 캡슐화, KEM, NIST PQC, 격자 기반 암호, ML-KEM, FIPS 203",
   "banner_alt": "암호 키를 표현하는 매트릭스의 코드",
-  "language": "ko-KR",
-  "title": "CRYSTALS-Kyber: 양자 시대의 방어 알고리즘",
-  "last_reviewed": "2026-05-16",
-  "subtitle": "NIST 선정 양자 내성 키 캡슐화 메커니즘",
   "locale": "ko_KR",
-  "description": "CRYSTALS-Kyber, NIST FIPS 203 표준, 양자 시대 암호 통신의 기반."
+  "subtitle": "NIST 선정 양자 내성 키 캡슐화 메커니즘",
+  "description": "CRYSTALS-Kyber, NIST FIPS 203 표준, 양자 시대 암호 통신의 기반.",
+  "title": "CRYSTALS-Kyber: 양자 시대의 방어 알고리즘",
+  "date": "November 19, 2023"
 }
