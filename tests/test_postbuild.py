@@ -3710,7 +3710,7 @@ def test_strip_legacy_inline_banner_helper_branches():
     </figure> anchor, no <p><img></p> in the body window, or the body
     img doesn't match the banner path. Each False/no-op branch needs
     coverage."""
-    from postbuild_lib.article_furniture import strip_legacy_inline_banner, _banner_path
+    from postbuild_lib.article_furniture import _banner_path, strip_legacy_inline_banner
     # Malformed banner URL.
     assert _banner_path("not-a-url") is None
     assert strip_legacy_inline_banner("<figure></figure><p><img src='x' /></p>", "not-a-url") == \
