@@ -1,11 +1,11 @@
 {
-  "date": "November 19, 2023",
-  "subtitle": "Het door NIST geselecteerde kwantumresistente sleutel-encapsulatiemechanisme",
-  "banner_alt": "Visualisatie van een kwantumresistent sleuteluitwisselingsproces",
-  "description": "CRYSTALS-Kyber is het door NIST geselecteerde kwantumresistente KEM dat de cryptografische basis vormt voor het post-kwantumtijdperk.",
   "keywords": "CRYSTALS-Kyber, post-kwantum, KEM, NIST, FIPS 203, cryptografie, beveiliging",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
+  "banner_alt": "Visualisatie van een kwantumresistent sleuteluitwisselingsproces",
+  "subtitle": "Het door NIST geselecteerde kwantumresistente sleutel-encapsulatiemechanisme",
+  "description": "CRYSTALS-Kyber is het door NIST geselecteerde kwantumresistente KEM dat de cryptografische basis vormt voor het post-kwantumtijdperk.",
+  "date": "November 19, 2023",
   "locale": "nl_NL",
   "title": "CRYSTALS-Kyber: het beschermingsalgoritme in het kwantumtijdperk",
-  "language": "nl-NL"
+  "language": "nl-NL",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp"
 }

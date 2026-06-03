@@ -2,25 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/th/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>th-TH</news:language>
-    </news:publication>
-    <news:publication_date>2026-06-03T06:06:06+00:00</news:publication_date>
-    <news:title>ดัชนี Agentic AI สำหรับธนาคารในปี 2026: การวัดความเป็นอิสระ ธรรมาภิบาล ความสามารถในการตรวจสอบ และผลกระทบทางธุรกิจ</news:title>
-    <news:keywords>agentic AI ธนาคาร 2026, เอเจนต์ AI ในธนาคาร, ธรรมาภิบาล AI บริการการเงิน, เวิร์กโฟลว์ธนาคารอัตโนมัติ, การจัดการความเสี่ยงของโมเดล, ความสามารถในการตรวจสอบ AI</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/th/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>th-TH</news:language>
     </news:publication>
-    <news:publication_date>2026-06-03T00:39:00+00:00</news:publication_date>
+    <news:publication_date>2026-06-03T18:19:33+00:00</news:publication_date>
     <news:title>ธนาคารหลายรางในปี 2026: บัตร A2A สเตเบิลคอยน์ RTP FedNow และ Open Banking ในกลยุทธ์เดียว</news:title>
     <news:keywords>เลเยอร์ orchestration การชำระเงิน, FedNow vs RTP, FedNow vs ACH, การชำระบัญชี stablecoin, การชำระบัญชีแบบ atomic ด้วย USDC, ISO 20022 pacs.008, การโอนระหว่างบัญชี A2A, Open Banking APIs, สภาพคล่อง pre-funded, กับดักสภาพคล่อง 24/7, multi-rail bank 2026, เอนจินกำหนดเส้นทางการชำระเงิน, การกระทบยอด ERP</news:keywords>
   </news:news>
@@ -32,9 +20,21 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>th-TH</news:language>
     </news:publication>
-    <news:publication_date>2026-06-03T00:39:00+00:00</news:publication_date>
+    <news:publication_date>2026-06-03T18:19:33+00:00</news:publication_date>
     <news:title>โครงสร้างพื้นฐาน PQC การชำระเงิน: เหตุใดธนาคารจึงควรแทนที่ราง ดั้งเดิม ไม่ใช่ปรับเปลี่ยน</news:title>
     <news:keywords>การเข้ารหัสยุคหลังควอนตัม, PQC การชำระเงิน, ความคล่องตัวด้านการเข้ารหัส, เก็บเกี่ยวตอนนี้-ถอดรหัสภายหลัง, HNDL, มาตรฐาน NIST หลังควอนตัม, ML-KEM, ML-DSA, FIPS 203, FIPS 204, การย้ายราง การชำระเงิน, ISO 20022 PQC, การแทนที่ SWIFT MT, HSM, การล่มสลายของ PKI, ความยืดหยุ่นในการดำเนินงาน</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/th/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th-TH</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-03T06:06:06+00:00</news:publication_date>
+    <news:title>ดัชนี Agentic AI สำหรับธนาคารในปี 2026: การวัดความเป็นอิสระ ธรรมาภิบาล ความสามารถในการตรวจสอบ และผลกระทบทางธุรกิจ</news:title>
+    <news:keywords>agentic AI ธนาคาร 2026, เอเจนต์ AI ในธนาคาร, ธรรมาภิบาล AI บริการการเงิน, เวิร์กโฟลว์ธนาคารอัตโนมัติ, การจัดการความเสี่ยงของโมเดล, ความสามารถในการตรวจสอบ AI</news:keywords>
   </news:news>
 </url>
 <url>

@@ -2,25 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/id/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>id-ID</news:language>
-    </news:publication>
-    <news:publication_date>2026-06-03T06:06:06+00:00</news:publication_date>
-    <news:title>Indeks AI Agentik untuk Bank di 2026: Mengukur Otonomi, Tata Kelola, Auditabilitas, dan Dampak Bisnis</news:title>
-    <news:keywords>AI agentik perbankan 2026, agen AI bank, tata kelola AI jasa keuangan, alur kerja perbankan otonom, manajemen risiko model, auditabilitas AI</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/id/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>id-ID</news:language>
     </news:publication>
-    <news:publication_date>2026-06-03T00:39:00+00:00</news:publication_date>
+    <news:publication_date>2026-06-03T18:19:33+00:00</news:publication_date>
     <news:title>Bank Multi-Rel pada 2026: Kartu, A2A, Stablecoin, RTP, FedNow, dan Open Banking dalam Satu Strategi</news:title>
     <news:keywords>lapisan orkestrasi pembayaran, FedNow vs RTP, FedNow vs ACH, penyelesaian stablecoin, penyelesaian atomik USDC, ISO 20022 pacs.008, account-to-account A2A, API Open Banking, likuiditas pra-pendanaan, jebakan likuiditas 24/7, bank multi-rel 2026, mesin perutean pembayaran, rekonsiliasi ERP</news:keywords>
   </news:news>
@@ -32,7 +20,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>id-ID</news:language>
     </news:publication>
-    <news:publication_date>2026-06-03T00:39:00+00:00</news:publication_date>
+    <news:publication_date>2026-06-03T18:19:33+00:00</news:publication_date>
     <news:title>Infrastruktur Pembayaran Pasca-Kuantum: Mengapa Bank Mungkin Mengganti Alih-alih Menyesuaikan Rel Warisan</news:title>
     <news:keywords>kriptografi pasca-kuantum, pembayaran PQC, kripto-agilitas, kumpulkan sekarang dekripsi nanti, HNDL, standar pasca-kuantum NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, migrasi rel pembayaran, ISO 20022 PQC, penggantian SWIFT MT, HSM, keruntuhan PKI, ketahanan operasional, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
   </news:news>
@@ -44,7 +32,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>id-ID</news:language>
     </news:publication>
-    <news:publication_date>2026-06-03T00:39:00+00:00</news:publication_date>
+    <news:publication_date>2026-06-03T18:19:33+00:00</news:publication_date>
     <news:title>Pasar Digital Grosir di Inggris: Gilts Tertokenisasi, Penyelesaian, dan Peran Champion Baru</news:title>
     <news:keywords>pasar digital grosir Inggris 2026, Wholesale Digital Markets Champion, UK gilts, gilts tertokenisasi, penyelesaian DLT, BoE DSS, Project Guardian, SDX, Project Agorá, HM Treasury, Bank of England, City of London</news:keywords>
   </news:news>
@@ -56,7 +44,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>id-ID</news:language>
     </news:publication>
-    <news:publication_date>2026-06-03T00:39:00+00:00</news:publication_date>
+    <news:publication_date>2026-06-03T18:19:33+00:00</news:publication_date>
     <news:title>DORA, EU AI Act, dan Kedaulatan Data: Tumpukan Kepatuhan 2026 bagi Bank</news:title>
     <news:keywords>DORA 2026, EU AI Act 2026, kedaulatan data bank, ketahanan operasional, risiko konsentrasi cloud, kepatuhan AI jasa keuangan, AI risiko tinggi, ketahanan TIK, risiko pihak ketiga</news:keywords>
   </news:news>
@@ -68,7 +56,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>id-ID</news:language>
     </news:publication>
-    <news:publication_date>2026-06-03T00:39:00+00:00</news:publication_date>
+    <news:publication_date>2026-06-03T18:19:33+00:00</news:publication_date>
     <news:title>Aset Digital pada 2026: Transisi Infrastruktur yang Tak Bisa Ditunda Bank</news:title>
     <news:keywords>aset digital 2026, aset dunia nyata tertokenisasi, stablecoin perbankan, simpanan tertokenisasi, kustodi aset digital, perbankan DLT, infrastruktur penyelesaian, mobilitas agunan, uang terprogram, strategi bank aset digital</news:keywords>
   </news:news>
@@ -80,7 +68,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>id-ID</news:language>
     </news:publication>
-    <news:publication_date>2026-06-03T00:39:00+00:00</news:publication_date>
+    <news:publication_date>2026-06-03T18:19:33+00:00</news:publication_date>
     <news:title>AI sebagai Sistem Operasi Pembayaran: Penipuan, Routing, Ketahanan, dan Kepatuhan pada 2026</news:title>
     <news:keywords>sistem operasi AI pembayaran 2026, penipuan pembayaran, routing pembayaran, pencegahan penipuan real-time, ISO 20022 AI, ketahanan pembayaran, analisis transaksi, prakiraan arus kas</news:keywords>
   </news:news>
@@ -92,9 +80,21 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>id-ID</news:language>
     </news:publication>
-    <news:publication_date>2026-06-03T00:39:00+00:00</news:publication_date>
+    <news:publication_date>2026-06-03T18:19:33+00:00</news:publication_date>
     <news:title>Pembayaran Agentik di Perbankan: Persetujuan, Tanggung Jawab, UX 2026</news:title>
     <news:keywords>pembayaran agentik 2026, pembayaran AI agent, Mastercard Agent Pay, pembayaran AI Rabobank, AP2, A2A, x402, MCP, machine payments protocol, mandat persetujuan pembayaran, Regulation E, EFTA, tanggung jawab pembayaran, niat yang dapat diverifikasi, tokenisasi, kunci akses, UX perbankan, perdagangan AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/id/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>id-ID</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-03T06:06:06+00:00</news:publication_date>
+    <news:title>Indeks AI Agentik untuk Bank di 2026: Mengukur Otonomi, Tata Kelola, Auditabilitas, dan Dampak Bisnis</news:title>
+    <news:keywords>AI agentik perbankan 2026, agen AI bank, tata kelola AI jasa keuangan, alur kerja perbankan otonom, manajemen risiko model, auditabilitas AI</news:keywords>
   </news:news>
 </url>
 <url>

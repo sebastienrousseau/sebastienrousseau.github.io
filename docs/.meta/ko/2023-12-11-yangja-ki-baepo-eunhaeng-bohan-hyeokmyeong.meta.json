@@ -1,12 +1,12 @@
 {
+  "description": "양자 컴퓨터가 전통 암호를 위협하는 가운데, 양자 키 분배(QKD)가 금융 등급 보안에 대한 구조적 답변으로 부상하고 있습니다.",
   "last_reviewed": "2026-05-16",
+  "banner_alt": "독에서 바라본 HSBC 타워",
   "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
   "date": "December 11, 2023",
-  "subtitle": "QKD가 금융 등급 보안에 대한 구조적 답변으로 부상하다",
+  "locale": "ko_KR",
+  "language": "ko-KR",
   "keywords": "QKD, 양자 키 분배, 양자 암호, BB84, BBM92, 양자 네트워크, 은행 보안, 양자 인터넷",
   "title": "양자 키 분배: 은행 보안의 혁신",
-  "language": "ko-KR",
-  "description": "양자 컴퓨터가 전통 암호를 위협하는 가운데, 양자 키 분배(QKD)가 금융 등급 보안에 대한 구조적 답변으로 부상하고 있습니다.",
-  "locale": "ko_KR",
-  "banner_alt": "독에서 바라본 HSBC 타워"
+  "subtitle": "QKD가 금융 등급 보안에 대한 구조적 답변으로 부상하다"
 }

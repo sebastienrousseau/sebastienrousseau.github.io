@@ -1,11 +1,11 @@
 {
   "subtitle": "新論文顯示 Shor 演算法可在 10,000 量子位元上執行——具密碼學意義的量子計算門檻下降速度比多數人預期的快",
+  "description": "新研究顯示 Shor 演算法可能僅需 10,000 量子位元，密碼學相關量子計算門檻正快速下降。",
   "locale": "zh_TW",
-  "title": "量子閾值再次移動：10,000 量子位元的 Shor 風險",
-  "language": "zh-Hant",
-  "keywords": "Shor 演算法, 量子計算, 後量子密碼學, 中性原子量子位元, ECC, RSA, NIST, CRYSTALS-Kyber, 量子閾值, 錯誤糾正",
   "date": "April 11, 2026",
   "banner_alt": "Shor 演算法量子位元閾值示意圖——藍光圖案的量子計算電路板",
-  "description": "新研究顯示 Shor 演算法可能僅需 10,000 量子位元，密碼學相關量子計算門檻正快速下降。",
-  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp"
+  "title": "量子閾值再次移動：10,000 量子位元的 Shor 風險",
+  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
+  "language": "zh-Hant",
+  "keywords": "Shor 演算法, 量子計算, 後量子密碼學, 中性原子量子位元, ECC, RSA, NIST, CRYSTALS-Kyber, 量子閾值, 錯誤糾正"
 }
