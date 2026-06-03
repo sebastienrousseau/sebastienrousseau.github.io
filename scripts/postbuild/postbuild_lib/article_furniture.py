@@ -331,25 +331,43 @@ _OG_IMAGE_ALT_RE = re.compile(
 _BANNER_ALT_FRONTMATTER_RE = re.compile(
     r'<meta\s+name="twitter:image:alt"\s+content="([^"]+)"', re.IGNORECASE,
 )
-# Cap the inserted banner at 1200×675 (16:9). Source images come from the CDN
-# transform endpoint with `w=` set by the frontmatter, but we override to a
-# canonical 1200 wide so every article's LCP hero is dimensionally identical
-# and the CSS aspect-ratio reservation is exact.
-_BANNER_WIDTH = 1200
-_BANNER_HEIGHT = 675
+_OG_IMAGE_WIDTH_RE = re.compile(
+    r'<meta\s+property="og:image:width"\s+content="(\d+)"', re.IGNORECASE,
+)
+_OG_IMAGE_HEIGHT_RE = re.compile(
+    r'<meta\s+property="og:image:height"\s+content="(\d+)"', re.IGNORECASE,
+)
+# Fallback dimensions when the page has no og:image:width / og:image:height
+# meta tags. Picked at 16:9 because that's the canonical hero aspect for
+# CDN-transform URLs that don't carry a height. Used only as a last resort
+# — every article since 2026-06-02 ships with explicit og:image dimensions.
+_BANNER_FALLBACK_WIDTH = 1200
+_BANNER_FALLBACK_HEIGHT = 675
 
 
-def _normalise_banner_url(url: str) -> str:
-    """Force the CDN-transform width to the canonical hero size.
+def _banner_dimensions(html: str) -> tuple[int, int]:
+    """Read og:image:width / og:image:height from the rendered HTML and
+    return ``(width, height)`` as integers. Falls back to the canonical
+    16:9 hero dims when either tag is absent or malformed.
 
-    The frontmatter may carry the banner at any width (some older articles
-    set ``w=1425`` to match the og:image dimensions). For the in-article
-    hero we want a single deterministic size so the aspect-ratio
-    reservation in CSS is exact and LCP is comparable across articles.
+    This is what fixes the lighthouse CLS regression: an article whose
+    banner has a 2.5:1 natural ratio (e.g. 1425×571) needs a 2.5:1 box
+    reservation. Hardcoding 16:9 attributes meant the browser reserved a
+    16:9 box while CSS set ``aspect-ratio: 16/9``; when the natural image
+    actually arrived, ``object-fit: cover`` cropped the strip but the box
+    surrounding text still shifted by ~0.04 above the 0.1 CLS threshold.
+    Reading the real og:image dimensions makes the reservation exact.
     """
-    if "cloudcdn.pro/api/transform" not in url:
-        return url
-    return re.sub(r"([?&])w=\d+", rf"\1w={_BANNER_WIDTH}", url, count=1)
+    w_m = _OG_IMAGE_WIDTH_RE.search(html)
+    h_m = _OG_IMAGE_HEIGHT_RE.search(html)
+    # The og:image:width/height regexes only match \d+, so the int() cast
+    # cannot fail — validation is the regex shape, not a runtime check.
+    if w_m and h_m:
+        w = int(w_m.group(1))
+        h = int(h_m.group(1))
+        if w > 0 and h > 0:
+            return w, h
+    return _BANNER_FALLBACK_WIDTH, _BANNER_FALLBACK_HEIGHT
 
 
 def _banner_path(banner_url: str) -> str | None:
@@ -430,7 +448,8 @@ def inject_hero_banner(html: str) -> str:
     og = _OG_IMAGE_RE.search(html)
     if not og:
         return html
-    banner_url = _normalise_banner_url(og.group(1))
+    banner_url = og.group(1)
+    banner_width, banner_height = _banner_dimensions(html)
 
     alt_m = _BANNER_ALT_FRONTMATTER_RE.search(html) or _OG_IMAGE_ALT_RE.search(html)
     if alt_m:
@@ -443,7 +462,7 @@ def inject_hero_banner(html: str) -> str:
     figure = (
         f'<figure class="article-banner">'
         f'<img src="{banner_url}" alt="{alt_text}" '
-        f'width="{_BANNER_WIDTH}" height="{_BANNER_HEIGHT}" '
+        f'width="{banner_width}" height="{banner_height}" '
         f'fetchpriority="high" decoding="async" />'
         f'</figure>'
     )

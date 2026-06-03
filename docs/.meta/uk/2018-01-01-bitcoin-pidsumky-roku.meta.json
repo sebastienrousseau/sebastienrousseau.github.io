@@ -1,11 +1,11 @@
 {
-  "subtitle": "Bitcoin, криптовалюта та технологія, що кардинально змінює фінансові ринки.",
   "language": "uk-UA",
-  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
-  "title": "[UK DRAFT] Bitcoin: A Year In Review of the First Cryptocurrency",
   "description": "Bitcoin: однорангова електронна платіжна система (P2P ECS), яка має потенціал революціонізувати спосіб онлайн-транзакцій між людьми.",
-  "keywords": "bitcoin, cryptocurrency, blockchain, децентралізовані фінанси, цифрова валюта, однорангові платежі, цифрове золото, програмовані гроші, майбутнє грошей, фінансова революція",
-  "banner_alt": "Купа золотих і срібних монет, що лежать на столі",
+  "date": "Jan 01, 2018",
+  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
   "locale": "uk_UA",
-  "date": "Jan 01, 2018"
+  "title": "[UK DRAFT] Bitcoin: A Year In Review of the First Cryptocurrency",
+  "banner_alt": "Купа золотих і срібних монет, що лежать на столі",
+  "subtitle": "Bitcoin, криптовалюта та технологія, що кардинально змінює фінансові ринки.",
+  "keywords": "bitcoin, cryptocurrency, blockchain, децентралізовані фінанси, цифрова валюта, однорангові платежі, цифрове золото, програмовані гроші, майбутнє грошей, фінансова революція"
 }

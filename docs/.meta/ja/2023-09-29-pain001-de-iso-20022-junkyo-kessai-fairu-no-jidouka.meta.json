@@ -1,12 +1,12 @@
 {
-  "description": "pain001 は ISO 20022 pain.001 決済ファイル作成を自動化する Python ライブラリで、MT/MX から構造化メッセージへの世界的な移行のために構築されています。",
-  "banner_alt": "ターミナル上の構造化されたデータの行",
-  "language": "ja-JP",
-  "keywords": "ISO 20022, pain.001, ISO 20022 移行, SWIFT, SEPA, 決済自動化, Python, オープンソース, 国際送金",
-  "last_reviewed": "2026-05-11",
-  "subtitle": "CSV または SQLite から準拠した pain.001 メッセージを生成する Python ライブラリ",
   "title": "pain001 による ISO 20022 準拠決済ファイル作成の自動化",
-  "locale": "ja_JP",
+  "last_reviewed": "2026-05-11",
+  "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-iar-afB0QQw-unsplash.webp",
+  "subtitle": "CSV または SQLite から準拠した pain.001 メッセージを生成する Python ライブラリ",
+  "keywords": "ISO 20022, pain.001, ISO 20022 移行, SWIFT, SEPA, 決済自動化, Python, オープンソース, 国際送金",
   "date": "September 29, 2023",
-  "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-iar-afB0QQw-unsplash.webp"
+  "locale": "ja_JP",
+  "banner_alt": "ターミナル上の構造化されたデータの行",
+  "description": "pain001 は ISO 20022 pain.001 決済ファイル作成を自動化する Python ライブラリで、MT/MX から構造化メッセージへの世界的な移行のために構築されています。",
+  "language": "ja-JP"
 }

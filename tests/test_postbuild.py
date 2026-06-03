@@ -3520,19 +3520,36 @@ _LANGSWITCH_BLOGPOST_HTML = (
 
 
 def _make_blogposting_with_og(
-    *, og_image: str = "https://cloudcdn.pro/api/transform?url=/stocks/images/sample.webp&w=1425&format=webp&q=80",
+    *,
+    og_image: str = "https://cloudcdn.pro/api/transform?url=/stocks/images/sample.webp&w=1425&format=webp&q=80",
     og_image_alt: str | None = "An editorial banner photograph",
+    og_image_width: int | None = 1425,
+    og_image_height: int | None = 571,
     h1: str = "Banking Infrastructure Index 2026",
     extra: str = "",
 ) -> str:
-    """Helper: build a minimal page that ``inject_hero_banner`` accepts."""
+    """Helper: build a minimal page that ``inject_hero_banner`` accepts.
+
+    og:image:width / og:image:height are emitted by the SSG on every
+    BlogPosting page from the frontmatter ``banner_width`` / ``banner_height``
+    fields. Tests can override the defaults to exercise the natural-aspect
+    branch and the fallback-to-canonical branch.
+    """
     alt_meta = (
         f'<meta name="twitter:image:alt" content="{og_image_alt}" />' if og_image_alt else ""
+    )
+    width_meta = (
+        f'<meta property="og:image:width" content="{og_image_width}" />'
+        if og_image_width is not None else ""
+    )
+    height_meta = (
+        f'<meta property="og:image:height" content="{og_image_height}" />'
+        if og_image_height is not None else ""
     )
     return (
         '<html lang="en-GB"><head>'
         f'<meta property="og:image" content="{og_image}" />'
-        f'{alt_meta}'
+        f'{width_meta}{height_meta}{alt_meta}'
         '</head><body>'
         '<script type="application/ld+json">'
         '{"@type":"BlogPosting","headline":"X"}'
@@ -3545,25 +3562,60 @@ def _make_blogposting_with_og(
 
 
 def test_inject_hero_banner_happy_path():
-    """A BlogPosting with og:image + alt gets a <figure class=article-banner>
-    inserted immediately after the closing </section> of ap-hero."""
+    """A BlogPosting with og:image + dims + alt gets a <figure
+    class=article-banner> with width/height matching og:image:width/height
+    inserted immediately after the closing </section> of ap-hero. The
+    natural-aspect reservation is what fixes the lighthouse CLS regression
+    on banners that aren't 16:9."""
     from postbuild_lib.article_furniture import inject_hero_banner
-    html = _make_blogposting_with_og()
+    html = _make_blogposting_with_og()  # defaults: 1425×571 = 2.5:1
     out = inject_hero_banner(html)
     assert 'class="article-banner"' in out
     assert 'fetchpriority="high"' in out
     assert 'decoding="async"' in out
-    # Width normalised to canonical 1200 in the inserted figure even though
-    # the og:image source URL said w=1425. The original meta tag is untouched —
-    # only the new <figure>'s src is rewritten.
+    # Banner URL passes through unchanged — postbuild's CDN-transform
+    # wrapper later in the pipeline picks the right width from the
+    # rendered <img width="..."> attribute.
     figure = out.split('class="article-banner"', 1)[1].split("</figure>", 1)[0]
-    assert "w=1200" in figure
-    assert "w=1425" not in figure
+    assert "w=1425" in figure  # original URL preserved
     # Alt taken from twitter:image:alt meta.
     assert 'alt="An editorial banner photograph"' in out
-    # Aspect-ratio reservation via explicit width/height attrs.
+    # Width/height from og:image:width/og:image:height — natural 2.5:1.
+    assert 'width="1425"' in out
+    assert 'height="571"' in out
+
+
+def test_inject_hero_banner_falls_back_to_canonical_dims_when_og_dims_absent():
+    """No og:image:width / og:image:height meta → 1200×675 fallback (16:9).
+    Older articles without explicit dimensions still get a deterministic
+    box reservation."""
+    from postbuild_lib.article_furniture import inject_hero_banner
+    html = _make_blogposting_with_og(og_image_width=None, og_image_height=None)
+    out = inject_hero_banner(html)
     assert 'width="1200"' in out
     assert 'height="675"' in out
+
+
+def test_inject_hero_banner_falls_back_when_og_dims_are_zero():
+    """og:image:width=0 / og:image:height=0 → fallback. Covers the
+    ``w > 0 and h > 0`` guard's False branch."""
+    from postbuild_lib.article_furniture import _banner_dimensions
+    html_zero = (
+        '<meta property="og:image:width" content="0" />'
+        '<meta property="og:image:height" content="0" />'
+    )
+    assert _banner_dimensions(html_zero) == (1200, 675)
+
+
+def test_inject_hero_banner_falls_back_when_only_one_og_dim_present():
+    """og:image:width present without og:image:height (or vice versa)
+    → fallback. Covers the ``if w_m and h_m:`` guard's False branch
+    when only one side of the pair matches."""
+    from postbuild_lib.article_furniture import _banner_dimensions
+    html_width_only = '<meta property="og:image:width" content="1200" />'
+    assert _banner_dimensions(html_width_only) == (1200, 675)
+    html_height_only = '<meta property="og:image:height" content="675" />'
+    assert _banner_dimensions(html_height_only) == (1200, 675)
 
 
 def test_inject_hero_banner_falls_back_to_h1_when_alt_missing():
@@ -3611,15 +3663,14 @@ def test_inject_hero_banner_no_op_when_og_image_missing():
 
 
 def test_inject_hero_banner_non_cdn_url_passes_through_unchanged():
-    """Banner URLs not on cloudcdn.pro/api/transform are not rewritten —
-    the width-normalisation only applies to the CDN transform endpoint."""
+    """Banner URLs that aren't CDN-transform endpoints are still
+    inserted into the figure without modification. Width / height come
+    from the og:image:* meta tags or the canonical fallback."""
     from postbuild_lib.article_furniture import inject_hero_banner
     raw_url = "https://example.com/static/banner.webp"
     html = _make_blogposting_with_og(og_image=raw_url)
     out = inject_hero_banner(html)
     assert raw_url in out
-    # No w= injection on a non-transform URL.
-    assert "w=1200" not in out
 
 
 def test_inject_hero_banner_uses_og_alt_when_twitter_alt_absent():

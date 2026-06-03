@@ -1,11 +1,11 @@
 {
-  "description": "Een diepgaande verkenning van generatieve AI: architecturen, trainingsstrategieën en toepassingen in financiën, kunst en wetenschap.",
-  "banner_alt": "Conceptuele visualisatie van een generatief AI-systeem",
-  "title": "Generatieve AI verkennen",
-  "date": "November 12, 2023",
-  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
   "subtitle": "Het landschap van moderne generatieve modellen, hun mogelijkheden en hun grenzen",
+  "description": "Een diepgaande verkenning van generatieve AI: architecturen, trainingsstrategieën en toepassingen in financiën, kunst en wetenschap.",
   "language": "nl-NL",
+  "date": "November 12, 2023",
+  "banner_alt": "Conceptuele visualisatie van een generatief AI-systeem",
   "keywords": "Generatieve AI, LLM, GAN, diffusiemodellen, GPT, machine learning, AI",
-  "locale": "nl_NL"
+  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
+  "locale": "nl_NL",
+  "title": "Generatieve AI verkennen"
 }
