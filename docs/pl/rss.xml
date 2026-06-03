@@ -6,29 +6,14 @@
     <description>Artykuły po polsku: stosowana sztuczna inteligencja, płatności ISO 20022, kryptografia postkwantowa oraz transformacja płatności hurtowych.</description>
     <atom:link href="https://sebastienrousseau.com/pl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>pl-PL</language>
-    <lastBuildDate>Wed, 03 Jun 2026 00:39:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 18:19:33 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Wszelkie prawa zastrzeżone.</copyright>
-    <item>
-      <title>Indeks Agentowej AI dla Banków w 2026 roku: Pomiar Autonomii, Ładu, Audytowalności i Wpływu Biznesowego</title>
-      <link>https://sebastienrousseau.com/pl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</link>
-      <description>Indeksowy framework do pomiaru gotowości na agentową AI w bankach, obejmujący autonomię, ład korporacyjny, audytowalność, niezawodność, kontrole i wartość biznesową.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</guid>
-      <pubDate>Wed, 03 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
-      <category>agentowa AI bankowość 2026</category>
-      <category>agenci AI banki</category>
-      <category>ład AI usługi finansowe</category>
-      <category>autonomiczne przepływy bankowe</category>
-      <category>zarządzanie ryzykiem modeli</category>
-      <category>audytowalność AI</category>
-    </item>
     <item>
       <title>Bank wieloszynowy w 2026: karty, A2A, stablecoiny, RTP, FedNow i Open Banking w jednej strategii</title>
       <link>https://sebastienrousseau.com/pl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow wymaga płynności prefinansowanej w trybie 24/7. ACH jest tani, ale T+1. USDC rozlicza się atomowo, lecz potrzebuje infrastruktury portfeli. Bank wieloszynowy 2026 routuje każdą płatność według kosztu, finalności i kosztu płynności — kierowany silnikiem orkiestracji czytającym ISO 20022 pacs.008.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Wed, 03 Jun 2026 00:39:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2026 18:19:33 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>warstwa orkiestracji płatności</category>
@@ -50,7 +35,7 @@
       <link>https://sebastienrousseau.com/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>Kryptografia postkwantowa wymusza na szynach płatniczych wybór binarny: adaptacja RSA/ECC w kopertach SWIFT MT i ISO 20022 nieprzystosowanych do ML-KEM i ML-DSA, czy zastąpienie infrastrukturą krypto-agilną. Architekci muszą zdecydować, zanim HNDL stanie się stratą operacyjną.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Wed, 03 Jun 2026 00:39:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2026 18:19:33 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>kryptografia postkwantowa</category>
@@ -76,7 +61,7 @@
       <link>https://sebastienrousseau.com/pl/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
       <description>Rola Wholesale Digital Markets Champion w Wielkiej Brytanii zamienia tokenizowane finanse hurtowe w narodowy projekt konkurencyjnosci dla Cite of London.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
-      <pubDate>Wed, 03 Jun 2026 00:39:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2026 18:19:33 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>hurtowe rynki cyfrowe UK 2026</category>
@@ -95,7 +80,7 @@
       <link>https://sebastienrousseau.com/pl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>Aktywa cyfrowe nie sa juz zakladem innowacyjnym. To pytanie o architekture rozliczenia, przechowywania i bilansu. Zadanie strategiczne bankow to projekt infrastruktury w warunkach strukturalnej niepewnosci.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Wed, 03 Jun 2026 00:39:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2026 18:19:33 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>aktywa cyfrowe 2026</category>
@@ -108,6 +93,21 @@
       <category>mobilnosc zabezpieczen</category>
       <category>pieniadz programowalny</category>
       <category>strategia banku aktywa cyfrowe</category>
+    </item>
+    <item>
+      <title>Indeks Agentowej AI dla Banków w 2026 roku: Pomiar Autonomii, Ładu, Audytowalności i Wpływu Biznesowego</title>
+      <link>https://sebastienrousseau.com/pl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</link>
+      <description>Indeksowy framework do pomiaru gotowości na agentową AI w bankach, obejmujący autonomię, ład korporacyjny, audytowalność, niezawodność, kontrole i wartość biznesową.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</guid>
+      <pubDate>Wed, 03 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>agentowa AI bankowość 2026</category>
+      <category>agenci AI banki</category>
+      <category>ład AI usługi finansowe</category>
+      <category>autonomiczne przepływy bankowe</category>
+      <category>zarządzanie ryzykiem modeli</category>
+      <category>audytowalność AI</category>
     </item>
     <item>
       <title>Indeks Infrastruktury Bankowej 2026: pomiar gotowości na agentowe AI, kryptografię kwantowo-odporną, odporność cloud-native i płatności hurtowe</title>

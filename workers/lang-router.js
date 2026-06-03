@@ -73,7 +73,7 @@ export const CSP_DIRECTIVES = [
   // pages, including 404, ship with hashed meta-CSP).
   "script-src 'self' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com",
   "frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com",
-  "connect-src 'self' https://www.google.com https://open.spotify.com",
+  "connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com",
   "img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co",
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' https://fonts.gstatic.com",

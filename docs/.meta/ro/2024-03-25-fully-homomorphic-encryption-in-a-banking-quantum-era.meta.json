@@ -1,11 +1,11 @@
 {
-  "keywords": "Fully Homomorphic Encryption, securitate bancară, quantum computing, criptare date financiare, studii de caz FHE, cadre de reglementare FHE, suprasarcină computațională FHE, cercetare FHE, hardware FHE, legi confidențialitate date",
   "description": "Explorați cum Fully Homomorphic Encryption revoluționează securitatea datelor în sectorul bancar, protejând confidențialitatea față de amenințările informaticii cuantice.",
-  "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp",
-  "banner_alt": "Banner pentru Fully Homomorphic Encryption",
   "date": "Mar 25, 2024",
-  "language": "ro-RO",
-  "locale": "ro_RO",
   "subtitle": "Consolidați Securitatea Datelor, Îmbunătățiți Confidențialitatea AI și Construiți Încrederea Clienților în Era Quantum Computing cu FHE",
-  "title": "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era"
+  "title": "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era",
+  "keywords": "Fully Homomorphic Encryption, securitate bancară, quantum computing, criptare date financiare, studii de caz FHE, cadre de reglementare FHE, suprasarcină computațională FHE, cercetare FHE, hardware FHE, legi confidențialitate date",
+  "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp",
+  "language": "ro-RO",
+  "banner_alt": "Banner pentru Fully Homomorphic Encryption",
+  "locale": "ro_RO"
 }

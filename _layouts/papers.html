@@ -37,7 +37,7 @@
         upgrade-insecure-requests;
         script-src 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
-        connect-src 'self' https://www.google.com https://open.spotify.com;
+        connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
         style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com;
@@ -293,7 +293,7 @@
          delivers; aspect-ratio reserved up-front to keep CLS at zero
          even before the image loads. ---------- */
       .article-banner{margin:0 auto 32px;max-width:var(--max-wide, 1100px);padding:0 var(--pad-x)}
-      .article-banner img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:var(--radius, 14px);box-shadow:0 24px 60px -28px rgba(0,0,0,.22);background:var(--cl-grey-100, #f1f3f7)}
+      .article-banner img{width:100%;height:auto;object-fit:cover;border-radius:var(--radius, 14px);box-shadow:0 24px 60px -28px rgba(0,0,0,.22);background:var(--cl-grey-100, #f1f3f7)}
       .article-banner figcaption{display:block;font-size:12.5px;color:var(--ink-mute, #6e6e73);margin-top:8px;text-align:center;line-height:1.4}
       .article-banner figcaption a{color:inherit;text-decoration:underline;text-underline-offset:2px}
 

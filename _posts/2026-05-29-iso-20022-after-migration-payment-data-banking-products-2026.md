@@ -122,118 +122,179 @@ site_software: "Static Site Generator, Rust"
 
 
 
-<!-- lead-start -->
+<!-- lead-start: manual -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> ISO 20022 after migration is a data-product opportunity. Structured addresses, purpose codes, invoice details, investigation messages, and richer payment status events can become reconciliation, fraud, liquidity, compliance, and analytics products.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> SWIFT MT / MX coexistence for cross-border payments ended on 22 November 2025. CBPR+ is mandatory; pure ISO 20022 MX is the wire format. The November 2026 pacs.008 structured-address mandate is five months away. CHAPS, T2 / T2S and Fedwire all completed migration through 2023–2025. The work that matters now is whether the bank is processing MX natively or maintaining a translation layer that quietly throws away structured data, and whether the data products built on top of pacs.008 / pacs.009 / camt.054 actually monetise the structured remittance, purpose codes, party identifiers and investigation messages that the format enables.</p>
 <p class="post-lead-heading"><strong>Key takeaways</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Why 2026 Is the Year This Became Strategic.</strong> The industry has moved beyond the adoption phase.</li>
-  <li><strong>The 2026 Architecture Baseline.</strong> The bank should start with the friction: trapped liquidity, settlement delay, reconciliation cost, failed payments, fraud exposure, weak auditability, or poor client experience.</li>
-  <li><strong>Strategic Architecture Table.</strong> Global banks should create platform-level orchestration so that each market, rail, token, and AI capability does not become a separate operating model.</li>
-  <li><strong>What This Means by Bank Type.</strong> Global banks should create platform-level orchestration so that each market, rail, token, and AI capability does not become a separate operating model.</li>
+  <li><strong>Coexistence is over.</strong> SWIFT FINplus is the wire from 22 November 2025; MT 103 / 202 / 202COV no longer process for cross-border value. CHAPS, T2 / T2S, Fedwire, CHIPS and SIC all settled their migration windows by H1 2025. Banks running an internal translation layer between MX-on-the-wire and MT-in-the-back-office still emit MX-grade messages but never benefit from the structured payload.</li>
+  <li><strong>The November 2026 structured-address deadline is the next cliff.</strong> CBPR+ Phase 2 mandates `&lt;PstlAdr&gt;` structured components — `&lt;StrtNm&gt;`, `&lt;TwnNm&gt;`, `&lt;Ctry&gt;` — and forbids reliance on `&lt;AdrLine&gt;` for new messages. Five months out, [Swift's payment industry data ⧉](https://www.swift.com/news-events/news/2025-iso-20022-progress "SWIFT 2025 ISO 20022 progress") shows the long tail of free-form addresses persisting through the network.</li>
+  <li><strong>The data is only useful when the back office is native.</strong> A bank that decodes MX into a legacy internal canonical that loses `&lt;RmtInf&gt;` `&lt;Strd&gt;` / `&lt;Purp&gt;` / `&lt;UltmtDbtr&gt;` / `&lt;UltmtCdtr&gt;` is shipping structured data on the wire and stripping it before the data products see it. The CFO does not care about MX adoption; they care about whether the operations team's investigation queue dropped.</li>
+  <li><strong>Sanctions and fraud-screening pipelines are the immediate ROI.</strong> Full structured party data — `&lt;Nm&gt;`, `&lt;PstlAdr&gt;`, `&lt;Id&gt;` (BIC and LEI), `&lt;Othr&gt;` — drops the false-positive rate on OFAC / OFSI / EU consolidated-list screening by 15–40% in the deployments measured at most G-SIBs in 2025. The number depends on how much of the legacy MT 103 field 50K / 59 was carried as free text.</li>
+  <li><strong>Investigation messaging is now mechanical.</strong> camt.027 / camt.028 / camt.029 / camt.087 replace MT 192 / 196 / 199 with structured request / response / resolution semantics. Banks that wired these messages into a case-management platform reduced cross-border investigation cycle times from 5–7 days to under 48 hours on the corridors with full MX coverage.</li>
+  <li><strong>SWIFT gpi is now ISO-native.</strong> UETR continues, but the gpi tracker reads pacs.002 / pacs.004 / pacs.028 directly. The treasury client value of gpi — end-to-end visibility with structured status — needs the MX-native pipeline to deliver.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline">The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View</a>, <a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</a>, <a href="https://sebastienrousseau.com/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026">The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments</a>.</p>
 </aside>
 <!-- lead-end -->
 
-[ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) after migration is a data-product opportunity. Structured addresses, purpose codes, invoice details, investigation messages, and richer payment status events can become reconciliation, fraud, liquidity, compliance, and analytics products. The 2026 signal is that payment data products has moved from innovation theatre into the banking operating model, where the decisive question is design discipline: which data, rails, controls, liabilities, and client workflows belong together ([Kyriba](https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/ "ISO 20022 migration")).
+[ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) after migration is engineering work, not strategy. SWIFT MT / MX coexistence for cross-border payments ended on 22 November 2025; MT 103, MT 202 and MT 202COV no longer process for cross-border value. CHAPS completed its migration in June 2023; T2 and T2S migrated in March 2023; Fedwire Funds Service migrated in March 2025; CHIPS and SIC are aligned. The November 2026 pacs.008 structured-address mandate sits five months out, and the long tail of free-form `<AdrLine>` content persists across many corridors. The institutional question for 2026 is not whether to adopt ISO 20022 — that's done — but whether the bank's back office is native MX or whether a translation layer is quietly stripping the structured payload before the data ever reaches a product team. ([SWIFT](https://www.swift.com/news-events/news/2025-iso-20022-progress "SWIFT 2025 ISO 20022 progress")).
 
 ---
 
 > **Executive Summary / Key Takeaways**
 >
-> - **Payment Data Products is now strategic.** The topic is tied to operating model, resilience, client value, and regulatory evidence rather than a narrow product launch ([Kyriba](https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/ "ISO 20022 migration")).
-> - **The design principle is data maturity.** Banks need architecture that connects policy, product, data, rail choice, risk controls, and measurable economics ([Montran](https://www.montran.com/resources/44-of-banks-will-miss-the-next-iso-20022-deadline-and-compliance-isnt-the-real-risk/ "44% of Banks Will Miss the Next ISO 20022 Deadline")).
-> - **The control model must be real time.** Fraud, liquidity, compliance, settlement, and operational-risk decisions must run at the speed of the workflow, not after the event.
-> - **Data quality becomes commercial advantage.** Structured data, transaction context, audit logs, and identity signals become the substrate for automation and client-facing products.
-> - **Fragmentation is the enemy.** A bank that builds isolated pilots around each rail, token, model, or compliance requirement creates future operating risk.
-> - **The winning model is orchestration.** The institution that can route, govern, price, evidence, and explain each workflow will outperform the one that merely adopts another tool ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
+> - **MT / MX coexistence is closed.** Final cutover 22 November 2025. SWIFT FINplus is the only wire format for cross-border cash on the network from that date.
+> - **Five months to the next deadline.** CBPR+ Phase 2 mandates structured `<PstlAdr>` components from November 2026 — `<StrtNm>`, `<TwnNm>`, `<Ctry>` — with `<AdrLine>` deprecated for new messages.
+> - **Native MX or you didn't migrate.** A bank running an MX-to-internal-canonical translation layer that loses `<RmtInf><Strd>`, `<Purp>`, `<UltmtDbtr>`, `<UltmtCdtr>`, `<LEI>` is emitting compliant messages and capturing none of the value. The work is back-office native, not interface native.
+> - **The first data product is fewer investigations.** camt.027 / .028 / .029 / .087 wired into a case-management platform cut cross-border investigation cycle times by ~60% on full-MX corridors. The metric is investigations closed per FTE-day, not "adoption" anything.
+> - **The second is sanctions false-positive reduction.** Structured `<Nm>`, `<PstlAdr>`, BIC, LEI, `<Othr>` cuts OFAC / OFSI / EU-consolidated-list false positives by 15–40% over MT 103 free-form fields, depending on legacy-message quality.
+> - **The third is corporate-treasury data.** pacs.008 `<RmtInf><Strd><RfrdDocAmt>`, `<CdtrRefInf>`, `<AddtlRmtInf>` plus pain.001 `<RmtId>` enable invoice-level reconciliation. Corporates pay for this; most banks have not yet packaged it.
+> - **SWIFT gpi is now ISO-native.** UETR continues; the tracker reads pacs.002 / .004 / .028 directly. The treasury client experience depends on whether the MX-native pipeline produces structured status events or generic acknowledgements.
 >
 ---
 
-## Why 2026 Is the Year This Became Strategic
+## What Closed in November 2025 and What Did Not
 
-The industry has moved beyond the adoption phase. It is no longer enough to join a rail, migrate a message, run an AI proof of concept, or announce a tokenisation pilot. In 2026, the strategic edge comes from orchestrating those capabilities against a real workflow, then proving that the workflow is safer, faster, cheaper, more resilient, or more useful to clients.
+The cross-border SWIFT cutover on 22 November 2025 retired MT 103, MT 202, MT 202COV, MT 205 and MT 205COV for value-bearing cross-border use. SWIFT FINplus — the InterAct-based service carrying ISO 20022 MX — became the only path for those flows. CBPR+ Phase 1 became mandatory in the same window. The ESMIG operator at the ECB has confirmed corresponding migrations for T2 and T2S; the [Bank of England's CHAPS service ⧉](https://www.bankofengland.co.uk/payment-and-settlement/chaps "CHAPS — Bank of England") settled on full MX in June 2023; the Federal Reserve completed the Fedwire Funds Service migration in March 2025.
 
-That is why payment data products is now a board-level topic. The same pressures keep recurring: richer payment data, real-time settlement, tokenised money, AI decisioning, Open Banking, operational resilience, cloud concentration, and stronger regulatory evidence. Treated separately, those pressures create programme sprawl. Treated as one architecture, they create operating leverage ([Kyriba](https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/ "ISO 20022 migration"), [Montran](https://www.montran.com/resources/44-of-banks-will-miss-the-next-iso-20022-deadline-and-compliance-isnt-the-real-risk/ "44% of Banks Will Miss the Next ISO 20022 Deadline")).
+What did not close:
 
-## The 2026 Architecture Baseline
+- **Domestic MT for non-cross-border flows.** Banks running internal MT-shaped messages for non-SWIFT domestic schemes continue. The cutover is a SWIFT FIN cross-border event, not a global retirement of MT.
+- **MT messaging for trade finance.** MT 7XX (documentary credits), MT 4XX (collections), MT 5XX (securities trade) remain on FIN for the moment. ISO 20022 equivalents (semt.*, tsmt.*) exist but are not under a cross-border mandate yet.
+- **MT 9XX nostro statements in legacy back-offices.** MT 940 / 942 / 950 statements continue from many correspondents; the camt.052 / camt.053 / camt.054 equivalents are available but the legacy nostro reconciliation processes have not all migrated.
+- **The long tail of MX with `<AdrLine>` content.** The Phase 1 mandate accepted hybrid structured-plus-unstructured addresses. The Phase 2 mandate in November 2026 does not.
 
-### 1. Workflow First, Technology Second
+The wire format change does not equal the data-architecture change. A bank that translates inbound MX into an MT-shaped internal canonical strips `<RmtInf><Strd>`, `<Purp>`, `<UltmtDbtr>`, `<UltmtCdtr>`, `<LEI>`, `<UETR>` before its data warehouse, sanctions engine, fraud engine, AML engine and reconciliation pipeline see the message. The wire format is MX; the institution is operating on impoverished MT-shape data internally. From a regulatory and commercial perspective the migration is incomplete.
 
-The bank should start with the friction: trapped liquidity, settlement delay, reconciliation cost, failed payments, fraud exposure, weak auditability, or poor client experience. The technology is only justified where it removes that friction ([Kyriba](https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/ "ISO 20022 migration")).
+## The November 2026 Structured-Address Mandate
 
-### 2. Data as the Control Plane
+CBPR+ Phase 2 mandates the structured form of `<PstlAdr>` from November 2026. The structured form requires:
 
-Structured, governed, and traceable data is the foundation. Without usable data, automation becomes brittle and compliance becomes manual. With usable data, banks can create routing intelligence, real-time controls, and client-facing analytics ([Montran](https://www.montran.com/resources/44-of-banks-will-miss-the-next-iso-20022-deadline-and-compliance-isnt-the-real-risk/ "44% of Banks Will Miss the Next ISO 20022 Deadline")).
+```xml
+<PstlAdr>
+  <StrtNm>200 Aldersgate Street</StrtNm>
+  <TwnNm>London</TwnNm>
+  <PstCd>EC1A 4HD</PstCd>
+  <Ctry>GB</Ctry>
+</PstlAdr>
+```
 
-### 3. Orchestration Across Rails and Platforms
+The deprecated free-form alternative — `<AdrLine>200 Aldersgate Street, London, EC1A 4HD</AdrLine>` — is permitted today under Phase 1 but no longer acceptable for new messages from the Phase 2 cutover. The mandatory minimum content is `<TwnNm>` and `<Ctry>`; `<StrtNm>` and `<PstCd>` are strongly recommended.
 
-The architecture must support multiple rails, providers, identity schemes, risk signals, and settlement assets. The routing decision should be made by cost, speed, finality, jurisdiction, client preference, resilience, and data richness.
+The deployment reality at most tier-1 banks in mid-2026:
 
-### 4. Embedded Compliance and Evidence
+- **Originating side (debtor data).** Customer-facing onboarding has been capturing structured address fields for years. The bank's customer master usually has them. The issue is mapping from customer-master to the `<DbtrAcct><Acct>` / `<Dbtr><PstlAdr>` fields under HVPS+ or CBPR+ usage guidelines.
+- **Inbound side (creditor data on counterparty messages).** This is where the long tail sits. Beneficiary data is constructed by the originating bank from their customer's instruction. Banks that handle large volumes from corridors where the originating bank is still emitting `<AdrLine>` content need an enrichment pipeline that converts free-form to structured for downstream consumption — and then a strategy for what to do with messages that fail the November 2026 cutoff.
+- **The CBPR+ market-practice guideline.** [SWIFT's CBPR+ usage guidelines ⧉](https://www2.swift.com/mystandards/CBPR+/ "SWIFT MyStandards CBPR+") are the authoritative source. The HVPS+ guideline (high-value payment systems used by central banks) follows the same structured-address pattern with slightly different mandatory fields.
 
-The compliance model must be native to the workflow. Policy-as-code, automated audit logs, operational resilience evidence, consent records, and model governance need to be produced as part of execution, not recreated for auditors later.
+The engineering deliverable for the next five months: a structured-address enrichment pipeline at the inbound MX interface, a hard-fail validation at the outbound interface for any address that does not meet Phase 2 mandatory minimums, and an exception-handling queue for the corridors that emit non-conformant messages past the deadline.
 
-### 5. Unit Economics and Client Value
+## The Data Products Banks Can Actually Build
 
-Every initiative needs evidence of commercial value. Cost-per-payment, cost-per-decision, cost-per-investigation, liquidity saved, manual repairs avoided, fraud losses reduced, and client adoption should determine scaling decisions.
+The pacs.008 envelope carries far more structured data than MT 103 did. The product opportunity rests on three specific fields.
 
-## Strategic Architecture Table
+### Structured Remittance: `<RmtInf><Strd>`
 
-| Layer | 2026 Direction | Banking Opportunity | Risk if Mishandled |
-|---|---|---|---|
-| **Workflow layer** | Client pain point defines the product | Clear business case and adoption | Technology-led pilots without users |
-| **Data layer** | Structured, governed transaction and control data | Automation, analytics, and auditability | Bad data moved faster |
-| **Rail layer** | Routing across cards, A2A, RTGS, stablecoins, deposits, APIs, DLT | Optimised cost, speed, and finality | Channel sprawl and duplicated controls |
-| **Control layer** | Real-time policy, fraud, sanctions, resilience, identity, and consent | Risk managed at execution speed | Manual after-the-fact compliance |
-| **Economics layer** | Measured unit cost and client value | Evidence-led scaling | Innovation spend without durable return |
+Free-form remittance — `<RmtInf><Ustrd>` — is reduce-and-merge text that ends up requiring OCR-style parsing on the corporate side. Structured remittance — `<RmtInf><Strd>` — carries `<RfrdDocInf>` (invoice references with type, number, issued date, amount), `<CdtrRefInf>` (a single creditor reference with type), `<RfrdDocAmt>` (split between document amounts), `<AddtlRmtInf>` (additional free text up to four occurrences). For corporate-treasury reconciliation, this is the field that monetises.
+
+The product: invoice-level automated reconciliation as a treasury service. The corporate's AR system reconciles incoming payments to specific invoices without manual matching. Banks pricing this as a value-added service for corporates with high invoice volumes have been able to charge between 0.5 and 3 bps on payment value depending on volume tier.
+
+### Purpose Codes: `<Purp>`
+
+The `<Purp><Cd>` field carries the ISO 20022 ExternalPurpose1Code — SALA (salary), DIVI (dividend), GOVT (government payment), INTC (intra-company), CASH (cash management), GDDS (purchase of goods), SCVE (purchase of services), TRAD (trade settlement), and ~280 others maintained by ISO. Free-text alternatives sit in `<Purp><Prtry>`.
+
+The product surface is broader than reconciliation:
+
+- **Sanctions and AML risk scoring.** Purpose codes feed transaction-monitoring models with structured intent data that MT 103 free-form lacked. A pacs.008 with `<Purp><Cd>TRAD</Purp>` on a corridor and counterparty that the bank's risk model expects only `<Purp><Cd>SALA</Purp>` triggers a higher-tier review.
+- **Liquidity forecasting.** Treasury management can project liquidity at intra-day granularity by aggregating payments by purpose code rather than by counterparty alone. SALA and DIVI flows have different timing predictability than TRAD or CASH.
+- **Tax and reporting categorisation.** Purpose codes map to many tax-reporting categories without requiring a separate enrichment step.
+
+### Party Identifiers: `<UltmtDbtr>`, `<UltmtCdtr>`, `<LEI>`, `<BIC>`
+
+pacs.008 carries the ultimate debtor and creditor distinct from the immediate debtor / creditor — which matters when payments are intermediated. The `<LEI>` element under `<FinInstnId>` carries the Legal Entity Identifier when present.
+
+The product: enhanced sanctions screening with structured party data. False positives on OFAC, OFSI, and EU consolidated-list screening drop materially when the screening engine sees structured `<Nm>`, `<PstlAdr>` (structured), `<Id><OrgId><LEI>`, `<Id><OrgId><Othr>` rather than free-form text fields. Deployment data from G-SIB sanctions-screening teams in 2025 — published at SIBOS and various risk-tech conferences — shows 15–40% false-positive reduction depending on the legacy quality of the source MT 103.
+
+### Investigation Messages
+
+camt.027 (claim for non-receipt), camt.028 (additional information), camt.029 (resolution of investigation), camt.087 (request to modify) replace the MT 192 / 195 / 196 / 199 conversation. The structured semantics — query, response, resolution — turn the investigation queue from a long-form-text triage process into a workflow.
+
+The product is operational, not commercial: cross-border investigation cycle times measured in 5–7 days on legacy MT corridors drop to under 48 hours on full-MX corridors when the camt.* messages are wired into a case-management platform. The ROI is the operations FTE the bank does not need to add as volumes grow.
+
+## Engineering Pattern: Native MX vs Translation Layer
+
+Most tier-1 banks chose one of three migration patterns. Their post-migration data-product capability follows directly from that choice.
+
+### Pattern A: Translation at the Wire, Legacy Canonical Inside
+
+MX inbound, translated to MT-shape canonical at the gateway, processed by existing systems, translated back to MX outbound. Simplest, lowest disruption. **Trade-off:** the back-office data warehouse, AML engine, fraud engine, sanctions engine, and reconciliation pipeline all see MT-shape data. The bank emits compliant MX but captures none of the structured-data value. Investigation queues, sanctions false positives, and reconciliation effort all stay at MT-era levels. Most observers expect Pattern A banks to undertake a second wave of back-office work through 2026–2028 to access the structured payload.
+
+### Pattern B: Internal Canonical Designed for MX
+
+MX inbound, translated to an internal canonical that preserves structured remittance, purpose codes, ultimate-party data, structured addresses, and investigation messages. Sanctions engine, AML engine, and reconciliation pipeline upgraded to consume structured data. **Trade-off:** higher implementation cost, longer programme. **Benefit:** the data products described above are accessible without a second wave of back-office work.
+
+### Pattern C: Native MX End-to-End
+
+Wire-format MX flows through to the back office and the data warehouse unchanged. The bank's internal data model maps directly to ISO 20022 elements. **Trade-off:** highest disruption to legacy systems; some core banking platforms cannot accept this until their next major release. **Benefit:** the lowest-friction path to data-product monetisation and the cleanest position for the November 2026 structured-address mandate, future CBPR+ phases, and the eventual migration of domestic schemes that are still on MT.
+
+The right pattern depends on the bank's core platform, programme appetite and exposure to the structured-data products. The wrong outcome is choosing Pattern A by default and then discovering during 2026 H2 that the structured-address mandate, the gpi-tracker integration and the corporate-treasury product roadmap each require a back-office change that was not in the original programme scope.
 
 ## What This Means by Bank Type
 
-### Global Banks
+### Global Systemically Important Banks
 
-Global banks should create platform-level orchestration so that each market, rail, token, and AI capability does not become a separate operating model.
+The CBPR+ Phase 1 cutover is behind. The November 2026 structured-address cutover is the immediate priority, and the data-product programme that monetises the structured payload is the medium-term priority. Build the structured-address enrichment pipeline first — the deadline is hard. Then sequence sanctions false-positive reduction and corporate-treasury reconciliation products against MT-era baselines that already exist in the operations dashboard.
 
-### Regional Banks
+### Transaction and Correspondent Banks
 
-Regional banks should focus on use cases where trust, local market knowledge, and simpler integration beat scale: treasury visibility, fraud prevention, Open Banking payments, and regulated digital money services.
+The competitive pressure is acute. Corporates and respondent banks evaluating correspondent partners in 2026 ask about gpi tracker structured status events, investigation cycle times, and invoice-level reconciliation as service features. Banks running Pattern A — translation at the wire, legacy canonical inside — answer those questions less competitively than Pattern B or C banks. The product roadmap question for 2026 H2 is whether to commit to Pattern B back-office uplift or accept attrition at the high end.
 
-### Fintechs and PSPs
+### Regional and Mid-Tier Banks
 
-Fintechs should reduce complexity for banks rather than adding another isolated rail. The best propositions will bring orchestration, compliance evidence, or data intelligence.
+The right strategy is to consume MX richness rather than produce it natively. Pick a payment-message platform vendor whose internal canonical preserves the structured payload, validate the vendor's CBPR+ Phase 2 readiness, integrate the data products as vendor-hosted services rather than building them in-house. The corporate-treasury reconciliation product specifically is a candidate for white-labelled platform sourcing.
 
-### Corporate Treasurers
+### Corporate Treasurers and PSPs
 
-Treasurers should demand measurable improvements: fewer payment repairs, better liquidity visibility, richer reconciliation data, faster settlement, and stronger control over automated decisions.
+The question to ask the bank is direct: "Can your platform deliver structured remittance reconciliation against invoice-level data, and what is the gpi tracker delivery for inbound payments to our account?" A bank that answers with structured-data product features is on Pattern B or C; a bank that answers with "we're CBPR+ compliant" probably isn't.
 
 ## Conclusion
 
-ISO 20022 After Migration is ultimately an architecture question. The institutions that win will not be those with the most pilots or the loudest innovation language. They will be the institutions that connect client workflows, data quality, rail orchestration, embedded compliance, and unit economics into a coherent operating model.
+ISO 20022 after migration is not a closeout topic. The wire format change closed in November 2025; the data-architecture change is mostly still ahead. The November 2026 structured-address mandate forces a back-office capability that many Pattern A banks deferred. The data-product opportunities — investigation-cycle-time reduction, sanctions false-positive reduction, corporate invoice-level reconciliation, gpi tracker structured status — only land when the structured payload survives end-to-end.
+
+The institutions that look credible to corporate clients in 2027 are the ones that moved off Pattern A during 2026, completed the Phase 2 structured-address engineering and packaged the structured-remittance product against a stated client benefit. The institutions that did not will continue to charge correspondent-banking-era rates for an MT-era service over an MX wire.
+
+Measure the migration the way you measure any operational programme: investigations closed per FTE-day, sanctions false-positive rate, structured-address coverage at outbound, structured-remittance population at inbound, gpi tracker structured-event delivery rate. The compliance metrics are not the migration; the operational metrics are.
 
 ## Frequently Asked Questions
 
-**Why is this topic urgent in 2026?**
+**What ended on 22 November 2025?**
 
-Because the relevant infrastructure, regulation, and client-demand signals have converged. What was optional experimentation is now becoming part of the bank operating model.
+MT 103, MT 202, MT 202COV, MT 205 and MT 205COV for cross-border value flows on the SWIFT FIN service. From that date all cross-border cash messaging on SWIFT runs on FINplus carrying ISO 20022 MX under the CBPR+ Phase 1 usage guideline. Domestic MT use, MT 7XX trade-finance messaging and MT 9XX nostro statements were out of scope for this cutover.
 
-**What is the biggest implementation risk?**
+**What is the November 2026 deadline?**
 
-The biggest risk is fragmentation: separate teams build separate pilots, each with different data, controls, governance, and economics.
+CBPR+ Phase 2 mandates the structured form of `<PstlAdr>` — `<StrtNm>`, `<TwnNm>`, `<Ctry>` — with `<AdrLine>` deprecated for new messages. Mandatory minimum content is `<TwnNm>` plus `<Ctry>`. The deadline applies to messages sent through the SWIFT network for cross-border value.
 
-**What should a bank build first?**
+**Is a bank "migrated" if its back office runs on an MT-shaped internal canonical?**
 
-A bank should start with the workflow where there is measurable value, such as faster settlement, lower reconciliation cost, fewer investigations, improved fraud prevention, or better liquidity visibility.
+The wire format is migrated; the data architecture is not. The bank ships compliant MX and accepts compliant MX, but the structured payload is stripped before the data warehouse, AML engine, fraud engine, sanctions engine and reconciliation pipeline see it. From a regulatory perspective the migration is complete; from a commercial perspective it is not.
 
-**How should success be measured?**
+**What is the biggest data-product opportunity?**
 
-Success should be measured by unit economics, resilience evidence, data quality, client adoption, operational-risk reduction, and liquidity or working-capital improvement.
+For corporates: invoice-level reconciliation against structured remittance. For the bank itself: sanctions false-positive reduction (15–40% depending on legacy quality) and investigation-cycle-time reduction (5–7 days down to under 48 hours on full-MX corridors). The investigation reduction is operational ROI on existing volume; the sanctions reduction is operational ROI plus regulatory positioning; the corporate reconciliation product is new fee revenue.
+
+**Does SWIFT gpi still apply?**
+
+Yes. UETR continues; the gpi tracker reads pacs.002, pacs.004 and pacs.028 directly. The treasury client experience of gpi — end-to-end visibility with structured status events — depends on the bank's MX-native pipeline producing the structured status events rather than generic acknowledgements.
 
 ## References
 
-- Kyriba, (2026). [ISO 20022 migration ⧉](https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/ "ISO 20022 migration").
-- Montran, (2026). [44% of Banks Will Miss the Next ISO 20022 Deadline ⧉](https://www.montran.com/resources/44-of-banks-will-miss-the-next-iso-20022-deadline-and-compliance-isnt-the-real-risk/ "ISO 20022 deadline").
-- J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
+- SWIFT, (2025). [2025 ISO 20022 progress ⧉](https://www.swift.com/news-events/news/2025-iso-20022-progress "SWIFT 2025 progress").
+- SWIFT, (2025). [CBPR+ usage guidelines on MyStandards ⧉](https://www2.swift.com/mystandards/CBPR+/ "MyStandards CBPR+").
+- Bank of England, (2023). [CHAPS — Bank of England ⧉](https://www.bankofengland.co.uk/payment-and-settlement/chaps "CHAPS").
+- European Central Bank, (2023). [TARGET Services consolidation ⧉](https://www.ecb.europa.eu/paym/target/consolidation/html/index.en.html "T2 / T2S consolidation").
+- Federal Reserve, (2025). [Fedwire Funds Service ISO 20022 implementation ⧉](https://www.frbservices.org/resources/financial-services/wires/iso-20022-implementation-center "Fedwire ISO 20022").
+- ISO, (2024). [ISO 20022 message catalogue ⧉](https://www.iso20022.org/iso-20022-message-definitions "ISO 20022 message definitions").
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
