@@ -105,21 +105,33 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/index.html" title="The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments">
-<img alt="An editorial aerial composition by Miguel Sousa suggesting interlocking systems — the visual register chosen for a board-level dashboard view of the 2026 Banking Infrastructure Index" src="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/index.html" title="The Agentic AI Index for Banks in 2026: Measuring Autonomy, Governance, Auditability, and Business Impact">
+<img alt="The Agentic AI Index for Banks 2026 index diagram for banks and financial institutions in 2026" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Banking Infrastructure · Agentic Ai · Quantum Cryptography</span>
-<h3><a href="/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/index.html" title="The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments">The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments</a></h3>
-<p class="newsroom-meta"><time datetime="2026-06-02">June 2, 2026</time> · Sebastien Rousseau</p>
-<p>Banking infrastructure in 2026 has reached the point where it needs an index, not another trend list. A Stanford AI Index-inspired framework for measuring bank readiness across agentic AI, quantum-safe security, cloud-native resilience, and wholesale payments — measured as one operating model.</p>
-<p><a class="pill ghost" href="/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/index.html" title="The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments">Read the full story</a></p>
+<span class="newsroom-eyebrow">Agentic Ai · Banking Ai · Ai Governance</span>
+<h3><a href="/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/index.html" title="The Agentic AI Index for Banks in 2026: Measuring Autonomy, Governance, Auditability, and Business Impact">The Agentic AI Index for Banks in 2026: Measuring Autonomy, Governance, Auditability, and Business Impact</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-03">June 3, 2026</time> · Sebastien Rousseau</p>
+<p>An engineering blueprint for agentic AI in tier-1 banks: classify by permissions not intelligence, treat every production agent as an SR 11-7 / SS1/23 model from day one, and build the five-component control plane — OAuth-scoped service accounts, deterministic semantic routing, OPA policy gates, immutable WORM audit lo</p>
+<p><a class="pill ghost" href="/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/index.html" title="The Agentic AI Index for Banks in 2026: Measuring Autonomy, Governance, Auditability, and Business Impact">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/index.html" title="The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments">
+<img alt="An editorial aerial composition by Miguel Sousa suggesting interlocking systems — the visual register chosen for a board-level dashboard view of the 2026 Banking Infrastructure Index" src="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Banking Infrastructure · Agentic Ai · Quantum Cryptography</span>
+<h3><a href="/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/index.html" title="The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments">The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-02">June 2, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Banking infrastructure in 2026 has reached the point where it needs an index, not another trend list. A Stanford AI Index-inspired framework for measuring bank readiness across agentic AI, quantum-safe security, cloud-native resilience, and wholesale payments — measured as one operating model.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html" title="The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy">

@@ -1,11 +1,11 @@
 {
-  "description": "اكتشف كيف يُحوِّل OpenAI Whisper وMetal Performance Shaders التعرّفَ الصوتي في الزمن الفعلي على macOS، مُقدِّمَين سرعةً ودقّةً لا مثيل لهما.",
-  "keywords": "OpenAI Whisper, Metal Performance Shaders, التعرّف الصوتي على macOS, النسخ في الزمن الفعلي, اكتشاف النشاط الصوتي, تسريع GPU, تكامل Python, تحويل الكلام إلى نصّ على macOS, اكتشاف الكلام الموفِّر للطاقة, Apple silicon",
   "title": "التعرّف الصوتي السريع في الزمن الفعلي على macOS باستخدام OpenAI Whisper",
-  "subtitle": "أطلق قدرات تحويل الكلام إلى نصّ بدفع الذكاء الاصطناعي وتسريع وحدة معالجة الرسوميات على جهاز Mac",
-  "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
-  "language": "fil-PH",
   "date": "Mar 12, 2024",
+  "subtitle": "أطلق قدرات تحويل الكلام إلى نصّ بدفع الذكاء الاصطناعي وتسريع وحدة معالجة الرسوميات على جهاز Mac",
+  "banner_alt": "لافتة للتعرّف الآلي على الكلام في الزمن الفعلي (ASR)",
   "locale": "fil_PH",
-  "banner_alt": "لافتة للتعرّف الآلي على الكلام في الزمن الفعلي (ASR)"
+  "language": "fil-PH",
+  "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
+  "description": "اكتشف كيف يُحوِّل OpenAI Whisper وMetal Performance Shaders التعرّفَ الصوتي في الزمن الفعلي على macOS، مُقدِّمَين سرعةً ودقّةً لا مثيل لهما.",
+  "keywords": "OpenAI Whisper, Metal Performance Shaders, التعرّف الصوتي على macOS, النسخ في الزمن الفعلي, اكتشاف النشاط الصوتي, تسريع GPU, تكامل Python, تحويل الكلام إلى نصّ على macOS, اكتشاف الكلام الموفِّر للطاقة, Apple silicon"
 }

@@ -1,11 +1,11 @@
 {
   "keywords": "ìsọfúnni lẹ́yìn-kúántọ̀mù, ṣíkiri PQC, corporate banking, iṣẹ́ owó, ìlànà G7 CEG, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204",
-  "title": "Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance",
-  "banner_alt": "Àwòrán ìlànà ṣíkiri sí ìsọfúnni lẹ́yìn-kúántọ̀mù — àkóso ilé-ifowopamọ́ tó ń yí padà láti RSA sí ML-KEM àti ML-DSA",
-  "locale": "yo_NG",
-  "language": "yo-NG",
-  "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp",
-  "description": "Ewu kúántọ̀mù ti di àṣẹ ìlànà tó ṣiṣẹ́. Ìlànà G7 2026 àti BIS Project Leap fi hàn pé ìbéèrè kò sí mọ́ bóyá kí a ṣí kiri si PQC, bí kò ṣe bóyá a lè parí ṣáájú tí dátà òde òní wó lulẹ̀.",
   "subtitle": "Ewu kúántọ̀mù ti gbéra láti ìdánilẹ́kọ̀ọ́ sí àṣẹ ìlànà tó ṣiṣẹ́. Ìlànà G7 2026 àti BIS Project Leap nínú àwọn ètò ìsanwó fi hàn pé ìbéèrè fún àwọn ìgbìmọ̀ kò sí mọ́ bóyá kí wọn ṣí kiri, bí kò ṣe bóyá wọn lè parí ṣáájú tí àwọn dátà òde òní bà jẹ́.",
-  "date": "May 14, 2026"
+  "description": "Ewu kúántọ̀mù ti di àṣẹ ìlànà tó ṣiṣẹ́. Ìlànà G7 2026 àti BIS Project Leap fi hàn pé ìbéèrè kò sí mọ́ bóyá kí a ṣí kiri si PQC, bí kò ṣe bóyá a lè parí ṣáájú tí dátà òde òní wó lulẹ̀.",
+  "language": "yo-NG",
+  "locale": "yo_NG",
+  "date": "May 14, 2026",
+  "banner_alt": "Àwòrán ìlànà ṣíkiri sí ìsọfúnni lẹ́yìn-kúántọ̀mù — àkóso ilé-ifowopamọ́ tó ń yí padà láti RSA sí ML-KEM àti ML-DSA",
+  "title": "Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance",
+  "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
 }

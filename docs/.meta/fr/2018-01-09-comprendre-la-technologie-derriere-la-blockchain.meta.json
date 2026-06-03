@@ -1,11 +1,11 @@
 {
-  "title": "Comprendre la technologie derrière la blockchain",
-  "date": "January 9, 2018",
-  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
-  "description": "Construire une cryptomonnaie sur la blockchain Ethereum : un guide complet du développement blockchain, de la tokenisation et de l'implémentation.",
-  "banner_alt": "Ordinateur portable éteint sur une table en bois marron",
-  "keywords": "blockchain, Ethereum, smart contract, cryptomonnaie, Solidity, Geth, dApps, ERC-20, tokenisation, testnet",
   "locale": "fr_FR",
-  "language": "fr",
-  "subtitle": "Construire une cryptomonnaie sur Ethereum, étape par étape"
+  "title": "Comprendre la technologie derrière la blockchain",
+  "subtitle": "Construire une cryptomonnaie sur Ethereum, étape par étape",
+  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
+  "date": "January 9, 2018",
+  "keywords": "blockchain, Ethereum, smart contract, cryptomonnaie, Solidity, Geth, dApps, ERC-20, tokenisation, testnet",
+  "banner_alt": "Ordinateur portable éteint sur une table en bois marron",
+  "description": "Construire une cryptomonnaie sur la blockchain Ethereum : un guide complet du développement blockchain, de la tokenisation et de l'implémentation.",
+  "language": "fr"
 }

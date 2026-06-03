@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ko/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-03T06:06:06+00:00</news:publication_date>
+    <news:title>2026년 은행을 위한 에이전틱 AI 인덱스: 자율성, 거버넌스, 감사 가능성, 비즈니스 임팩트 측정하기</news:title>
+    <news:keywords>2026 에이전틱 AI 뱅킹, 은행 AI 에이전트, 금융 서비스 AI 거버넌스, 자율 뱅킹 워크플로, 모델 리스크 관리, AI 감사 가능성, SR 11-7, ISO 20022</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ko/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ko-KR</news:language>
     </news:publication>
-    <news:publication_date>2026-06-02T22:32:10+00:00</news:publication_date>
+    <news:publication_date>2026-06-03T00:39:00+00:00</news:publication_date>
     <news:title>2026년 멀티레일 뱅크: 카드·A2A·스테이블코인·RTP·FedNow·Open Banking을 하나의 전략으로</news:title>
     <news:keywords>결제 오케스트레이션 레이어, FedNow vs RTP, FedNow vs ACH, 스테이블코인 결제, USDC 원자적 결제, ISO 20022 pacs.008, A2A 계좌간 결제, Open Banking API, 사전 자금공급 유동성, 24/7 유동성 함정, 2026 멀티레일 뱅크, 결제 라우팅 엔진, ERP 대사</news:keywords>
   </news:news>
@@ -20,7 +32,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ko-KR</news:language>
     </news:publication>
-    <news:publication_date>2026-06-02T22:32:10+00:00</news:publication_date>
+    <news:publication_date>2026-06-03T00:39:00+00:00</news:publication_date>
     <news:title>양자내성 결제 인프라: 은행이 레거시 레일을 개조하지 않고 대체할 수밖에 없는 이유</news:title>
     <news:keywords>양자내성암호, PQC 결제, 암호 민첩성, 지금 수집 나중에 복호화, HNDL, NIST 양자내성 표준, ML-KEM, ML-DSA, FIPS 203, FIPS 204, 결제 레일 마이그레이션, ISO 20022 PQC, SWIFT MT 대체, HSM, PKI 붕괴, 운영 회복력, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
   </news:news>
@@ -32,7 +44,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ko-KR</news:language>
     </news:publication>
-    <news:publication_date>2026-06-02T22:32:10+00:00</news:publication_date>
+    <news:publication_date>2026-06-03T00:39:00+00:00</news:publication_date>
     <news:title>디지털 자산 2026: 인프라 전환의 해</news:title>
     <news:keywords>디지털 자산 2026, 토큰화된 실물자산, 스테이블코인 은행, 토큰화 예금, 디지털 자산 수탁, DLT 뱅킹, 결제 인프라, 담보 이동성, 프로그래밍 가능한 화폐, 은행 디지털 자산 전략</news:keywords>
   </news:news>

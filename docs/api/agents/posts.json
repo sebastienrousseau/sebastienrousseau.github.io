@@ -1,6 +1,24 @@
 {
-  "count": 62,
+  "count": 63,
   "posts": [
+    {
+      "slug": "2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026",
+      "url": "https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/index.html",
+      "date": "2026-06-03",
+      "title": "The Agentic AI Index for Banks in 2026: Measuring Autonomy, Governance, Auditability, and Business Impact",
+      "description": "An index-style framework for measuring agentic AI readiness in banks, covering autonomy, governance, auditability, reliability, controls, and business value.",
+      "keywords": [
+        "agentic AI banking 2026",
+        "AI agents banks",
+        "AI governance financial services",
+        "autonomous banking workflows",
+        "model risk management",
+        "AI auditability"
+      ],
+      "banner": "https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80",
+      "topics": [],
+      "language": "en-GB"
+    },
     {
       "slug": "2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026",
       "url": "https://sebastienrousseau.com/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/index.html",
