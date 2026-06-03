@@ -1,11 +1,11 @@
 {
-  "language": "hi-IN",
   "title": "AI-संचालित ऑडियो-अंतर्दृष्टि, विश्लेषण और अनुवाद",
-  "keywords": "AI, ऑडियो, Whisper, अनुवाद, भाषण-पहचान, NLP, speaker diarization, multilingual, ASR, transcription",
-  "description": "AI-संचालित ऑडियो-विश्लेषण, बोलने वालों की पहचान, भाषाई पहचान और अनुवाद का परिचय।",
   "date": "January 29, 2024",
-  "banner_alt": "ऑडियो-तरंग-रूप की कलात्मक छवि",
-  "subtitle": "Whisper, बोलने वालों की पहचान और भाषा-पहचान के बीच",
   "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp",
-  "locale": "hi_IN"
+  "keywords": "AI, ऑडियो, Whisper, अनुवाद, भाषण-पहचान, NLP, speaker diarization, multilingual, ASR, transcription",
+  "banner_alt": "ऑडियो-तरंग-रूप की कलात्मक छवि",
+  "language": "hi-IN",
+  "description": "AI-संचालित ऑडियो-विश्लेषण, बोलने वालों की पहचान, भाषाई पहचान और अनुवाद का परिचय।",
+  "locale": "hi_IN",
+  "subtitle": "Whisper, बोलने वालों की पहचान और भाषा-पहचान के बीच"
 }

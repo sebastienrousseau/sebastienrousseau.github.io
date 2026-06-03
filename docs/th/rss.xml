@@ -6,29 +6,14 @@
     <description>บทความภาษาไทย: AI ประยุกต์, การชำระเงิน ISO 20022, การเข้ารหัสหลังควอนตัม และการปฏิรูปการชำระเงินขายส่ง</description>
     <atom:link href="https://sebastienrousseau.com/th/rss.xml" rel="self" type="application/rss+xml"/>
     <language>th-TH</language>
-    <lastBuildDate>Wed, 03 Jun 2026 00:39:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 20:11:58 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์</copyright>
-    <item>
-      <title>ดัชนี Agentic AI สำหรับธนาคารในปี 2026: การวัดความเป็นอิสระ ธรรมาภิบาล ความสามารถในการตรวจสอบ และผลกระทบทางธุรกิจ</title>
-      <link>https://sebastienrousseau.com/th/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</link>
-      <description>กรอบเชิงดัชนีสำหรับวัดความพร้อมของ agentic AI ในธนาคาร ครอบคลุมความเป็นอิสระ ธรรมาภิบาล ความสามารถในการตรวจสอบย้อนหลัง ความน่าเชื่อถือ การควบคุม และคุณค่าทางธุรกิจ</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</guid>
-      <pubDate>Wed, 03 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
-      <category>agentic AI ธนาคาร 2026</category>
-      <category>เอเจนต์ AI ในธนาคาร</category>
-      <category>ธรรมาภิบาล AI บริการการเงิน</category>
-      <category>เวิร์กโฟลว์ธนาคารอัตโนมัติ</category>
-      <category>การจัดการความเสี่ยงของโมเดล</category>
-      <category>ความสามารถในการตรวจสอบ AI</category>
-    </item>
     <item>
       <title>ธนาคารหลายรางในปี 2026: บัตร A2A สเตเบิลคอยน์ RTP FedNow และ Open Banking ในกลยุทธ์เดียว</title>
       <link>https://sebastienrousseau.com/th/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow ต้องการสภาพคล่องที่จัดสรรล่วงหน้าแบบ 24/7 ACH ราคาถูกแต่ T+1 USDC ชำระแบบอะตอมแต่ต้องมีกระเป๋าเงิน ธนาคารหลายรางปี 2026 กำหนดเส้นทางทุกรายการตามต้นทุน ความเด็ดขาด และต้นทุนสภาพคล่อง โดยเอนจินที่อ่าน ISO 20022 pacs.008</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Wed, 03 Jun 2026 00:39:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2026 20:11:58 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>เลเยอร์ orchestration การชำระเงิน</category>
@@ -50,7 +35,7 @@
       <link>https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>การเข้ารหัสยุคหลังควอนตัมบีบให้ราง การชำระเงินเลือกแบบทวิภาค: ปรับเปลี่ยน RSA/ECC ภายในซอง SWIFT MT และ ISO 20022 ที่ไม่เคยถูกออกแบบสำหรับ ML-KEM และ ML-DSA หรือแทนที่ด้วยโครงสร้างพื้นฐานที่คล่องตัวด้านการเข้ารหัส</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Wed, 03 Jun 2026 00:39:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2026 20:11:58 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>การเข้ารหัสยุคหลังควอนตัม</category>
@@ -69,6 +54,21 @@
       <category>HSM</category>
       <category>การล่มสลายของ PKI</category>
       <category>ความยืดหยุ่นในการดำเนินงาน</category>
+    </item>
+    <item>
+      <title>ดัชนี Agentic AI สำหรับธนาคารในปี 2026: การวัดความเป็นอิสระ ธรรมาภิบาล ความสามารถในการตรวจสอบ และผลกระทบทางธุรกิจ</title>
+      <link>https://sebastienrousseau.com/th/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</link>
+      <description>กรอบเชิงดัชนีสำหรับวัดความพร้อมของ agentic AI ในธนาคาร ครอบคลุมความเป็นอิสระ ธรรมาภิบาล ความสามารถในการตรวจสอบย้อนหลัง ความน่าเชื่อถือ การควบคุม และคุณค่าทางธุรกิจ</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</guid>
+      <pubDate>Wed, 03 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>agentic AI ธนาคาร 2026</category>
+      <category>เอเจนต์ AI ในธนาคาร</category>
+      <category>ธรรมาภิบาล AI บริการการเงิน</category>
+      <category>เวิร์กโฟลว์ธนาคารอัตโนมัติ</category>
+      <category>การจัดการความเสี่ยงของโมเดล</category>
+      <category>ความสามารถในการตรวจสอบ AI</category>
     </item>
     <item>
       <title>ดัชนีโครงสร้างพื้นฐานการธนาคารปี 2026: การวัดความพร้อมด้าน Agentic AI ความปลอดภัยควอนตัม คลาวด์-เนทีฟ และการชำระเงินค้าส่ง</title>

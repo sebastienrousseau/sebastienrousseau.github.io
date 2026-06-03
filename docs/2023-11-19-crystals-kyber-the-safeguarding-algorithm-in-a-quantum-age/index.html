@@ -40,9 +40,9 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-2rmQTtAa9ge2YVq1qZPHQ9e7h0qSHE0TWRN5pG5/pks=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-Ft50DzCRhSXGhKZbUVZMiSGa1OreUIxnxHZuhvKQAw4=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-JZyR2CwNSZpwA9RPGMkaAeocYSAO1vaf5aP1GL3CL9k=' 'sha256-uc4GNrWYYv3HbxcEQ2uAxZTskDX1tG1Axvo0pcVZhoM=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-2rmQTtAa9ge2YVq1qZPHQ9e7h0qSHE0TWRN5pG5/pks=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-Ft50DzCRhSXGhKZbUVZMiSGa1OreUIxnxHZuhvKQAw4=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-JZyR2CwNSZpwA9RPGMkaAeocYSAO1vaf5aP1GL3CL9k=' 'sha256-o9gCUZXIHfU9A4QfaR63g/NJ4hLjuHgkkcHz7Q99cw8=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
-        connect-src 'self' https://www.google.com https://open.spotify.com;
+        connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
         style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com;
@@ -186,7 +186,7 @@
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a>, <a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html">Revolutionising Finance with AI-Enhanced Quantum Algorithms</a>, <a href="https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html">Mathematical and Cryptographic Constants for Rust Security</a>.</p>
 </aside>
 <!-- lead-end -->
-<p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/galina-nelyubova-V70-ng4FuiA.webp&w=1600&format=webp&q=85" alt="AI, Artificial Intelligence concept,3d rendering,conceptual image" / class="img-fluid clearfix" width="1200" height="675" decoding="async" fetchpriority="high"></p>
+
 <h2 id="insight">Insight <a class="heading-anchor" href="#insight" aria-label="Link to Insight">#</a></h2>
 <h3 id="navigating-the-quantum-threat-the-genesis-of-crystals-kyber">Navigating the Quantum Threat: The Genesis of CRYSTALS-Kyber <a class="heading-anchor" href="#navigating-the-quantum-threat-the-genesis-of-crystals-kyber" aria-label="Link to Navigating the Quantum Threat: The Genesis of CRYSTALS-Kyber">#</a></h3>
 <p>In my previous article, <a href="/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html" title="Protecting Data in the Quantum Age: The Hash Library (HSH)">Protecting Data in the Quantum Age ⧉</a>, I delved into the impending threat of quantum computing to digital security and looked at how quantum-resistant cryptography (QRC) can address it. I will explore now <code>CRYSTALS-Kyber</code>, a groundbreaking QRC algorithm that is transforming the security landscape.</p>

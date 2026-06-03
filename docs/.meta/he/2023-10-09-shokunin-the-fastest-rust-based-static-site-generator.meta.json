@@ -1,11 +1,11 @@
 {
-  "date": "October 9, 2023",
-  "description": "أنشئ مواقع ساكنة عالية الأثر، قابلة للتوسّع بلا حدود وتحت سيطرتك الكاملة، بفضل Static Site Generator — مولّد SSG فائق السرعة مكتوب بلغة Rust.",
-  "banner_alt": "حاسوب محمول مُطفأ فوق طاولة بيضاء، وإلى اليسار كأس ماء، وإلى اليمين قلم ودفتر ملاحظات ونبتة",
   "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
   "title": "Static Site Generator: أسرع مولّد للمواقع الساكنة قائمٌ على Rust",
-  "locale": "he_IL",
-  "keywords": "Static Site Generator, مولّد المواقع الساكنة, SSG, Rust, الأداء, SEO, الوصول الميسّر, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS",
+  "banner_alt": "حاسوب محمول مُطفأ فوق طاولة بيضاء، وإلى اليسار كأس ماء، وإلى اليمين قلم ودفتر ملاحظات ونبتة",
   "language": "he-IL",
-  "subtitle": "مولّدُ SSG فائق السرعة، يَسِير الوصول ومُحسَّن لمحرّكات البحث، مكتوبٌ بلغة Rust"
+  "subtitle": "مولّدُ SSG فائق السرعة، يَسِير الوصول ومُحسَّن لمحرّكات البحث، مكتوبٌ بلغة Rust",
+  "locale": "he_IL",
+  "description": "أنشئ مواقع ساكنة عالية الأثر، قابلة للتوسّع بلا حدود وتحت سيطرتك الكاملة، بفضل Static Site Generator — مولّد SSG فائق السرعة مكتوب بلغة Rust.",
+  "date": "October 9, 2023",
+  "keywords": "Static Site Generator, مولّد المواقع الساكنة, SSG, Rust, الأداء, SEO, الوصول الميسّر, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS"
 }

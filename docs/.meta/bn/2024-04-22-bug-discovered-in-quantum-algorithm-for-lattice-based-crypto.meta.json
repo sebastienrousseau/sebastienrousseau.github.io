@@ -1,11 +1,11 @@
 {
   "title": "Quantum Lattice Crypto: Bug in Chen's LWE Attack",
-  "banner_alt": "MidJourney ব্যবহার করে তৈরি চিত্র — লাল ও নীল আভায় ডিজিটাল নোডের একটি নেটওয়ার্ক।",
-  "keywords": "পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, NIST, PQC মানকীকরণ, Yilei Chen, কোয়ান্টাম অ্যালগরিদম, ল্যাটিস-ভিত্তিক ক্রিপ্টোগ্রাফি, LWE সমস্যা, CRYSTALS-KYBER, CRYSTALS-Dilithium, কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফি",
   "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
-  "subtitle": "পিয়ার রিভিউ চেনের যুগান্তকারী গবেষণায় ত্রুটি উন্মোচন করেছে",
+  "date": "Apr 22, 2024",
   "description": "ইলেই চেনের কোয়ান্টাম LWE অ্যালগরিদমে একটি বাগ ল্যাটিস-ভিত্তিক ক্রিপ্টোগ্রাফিকে সাময়িকভাবে রক্ষা করেছে। CRYSTALS-Kyber, Dilithium এবং PQC রোডম্যাপের জন্য এর অর্থ কী।",
   "language": "bn-BD",
-  "date": "Apr 22, 2024",
-  "locale": "bn_BD"
+  "keywords": "পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, NIST, PQC মানকীকরণ, Yilei Chen, কোয়ান্টাম অ্যালগরিদম, ল্যাটিস-ভিত্তিক ক্রিপ্টোগ্রাফি, LWE সমস্যা, CRYSTALS-KYBER, CRYSTALS-Dilithium, কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফি",
+  "subtitle": "পিয়ার রিভিউ চেনের যুগান্তকারী গবেষণায় ত্রুটি উন্মোচন করেছে",
+  "locale": "bn_BD",
+  "banner_alt": "MidJourney ব্যবহার করে তৈরি চিত্র — লাল ও নীল আভায় ডিজিটাল নোডের একটি নেটওয়ার্ক।"
 }

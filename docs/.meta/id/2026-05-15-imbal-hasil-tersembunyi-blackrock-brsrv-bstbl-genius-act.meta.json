@@ -1,11 +1,11 @@
 {
-  "subtitle": "Stablecoin tidak dapat membayar imbal hasil berdasarkan GENIUS Act. Pada 8 Mei 2026, BlackRock mengajukan dua produk yang secara hukum bukan stablecoin — dan mampu membayar yield di dompet pada blockchain publik.",
-  "date": "May 15, 2026",
-  "description": "Stablecoin tak bisa membayar yield di bawah GENIUS Act. BlackRock mendaftarkan BRSRV dan BSTBL pada 8 Mei 2026 sebagai money market fund, bukan stablecoin. Telaah mendalam OCC dan regulasinya.",
-  "banner": "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp",
-  "keywords": "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoin, dana pasar uang yang ditokenisasi, OnChain Shares, Securitize",
   "banner_alt": "Diagram arsitektur tokenised money market fund BlackRock — BRSRV OnChain Shares dan kelas saham ERC-20 BSTBL dengan aliran cadangan GENIUS Act",
-  "language": "id-ID",
+  "description": "Stablecoin tak bisa membayar yield di bawah GENIUS Act. BlackRock mendaftarkan BRSRV dan BSTBL pada 8 Mei 2026 sebagai money market fund, bukan stablecoin. Telaah mendalam OCC dan regulasinya.",
   "locale": "id_ID",
-  "title": "[ID DRAFT] Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded"
+  "title": "[ID DRAFT] Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded",
+  "keywords": "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoin, dana pasar uang yang ditokenisasi, OnChain Shares, Securitize",
+  "language": "id-ID",
+  "banner": "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp",
+  "subtitle": "Stablecoin tidak dapat membayar imbal hasil berdasarkan GENIUS Act. Pada 8 Mei 2026, BlackRock mengajukan dua produk yang secara hukum bukan stablecoin — dan mampu membayar yield di dompet pada blockchain publik.",
+  "date": "May 15, 2026"
 }

@@ -2,25 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/sv/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>sv-SE</news:language>
-    </news:publication>
-    <news:publication_date>2026-06-03T06:06:06+00:00</news:publication_date>
-    <news:title>Det agentiska AI-indexet för banker 2026: Att mäta autonomi, styrning, revisionsbarhet och affärspåverkan</news:title>
-    <news:keywords>agentisk AI bank 2026, AI-agenter banker, AI-styrning finansiella tjänster, autonoma bankarbetsflöden, modellrisk, AI-revisionsbarhet, ISO 20022, SR 11-7, DORA, OAuth, OPA</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/sv/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>sv-SE</news:language>
     </news:publication>
-    <news:publication_date>2026-06-03T00:39:00+00:00</news:publication_date>
+    <news:publication_date>2026-06-03T20:11:58+00:00</news:publication_date>
     <news:title>Multi-rälsbanken 2026: Kort, A2A, stablecoins, RTP, FedNow och Open Banking i en strategi</news:title>
     <news:keywords>betalningsorkestrering, FedNow vs RTP, FedNow vs ACH, stablecoin-avveckling, USDC atomär avveckling, ISO 20022 pacs.008, konto-till-konto A2A, Open Banking API:er, förfinansierad likviditet, likviditetsfälla dygnet runt, multi-rälsbank 2026, routningsmotor för betalningar, ERP-avstämning</news:keywords>
   </news:news>
@@ -32,7 +20,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>sv-SE</news:language>
     </news:publication>
-    <news:publication_date>2026-06-03T00:39:00+00:00</news:publication_date>
+    <news:publication_date>2026-06-03T20:11:58+00:00</news:publication_date>
     <news:title>Postkvantinfrastruktur för betalningar: varför banker kan välja ersättning framför anpassning av äldre räls</news:title>
     <news:keywords>postkvantkryptografi, PQC-betalningar, kryptoagilitet, samla-nu-dekryptera-senare, HNDL, NIST postkvantstandarder, ML-KEM, ML-DSA, FIPS 203, FIPS 204, migration av betalningsräls, ISO 20022 PQC, ersättning av SWIFT MT, HSM, PKI-kollaps, operativ motståndskraft, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
   </news:news>
@@ -44,9 +32,21 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>sv-SE</news:language>
     </news:publication>
-    <news:publication_date>2026-06-03T00:39:00+00:00</news:publication_date>
+    <news:publication_date>2026-06-03T20:11:58+00:00</news:publication_date>
     <news:title>Digitala tillgångar 2026: infrastrukturövergången bankerna inte kan skjuta upp</news:title>
     <news:keywords>digitala tillgångar 2026, tokeniserade reala tillgångar, stablecoins bank, tokeniserade insättningar, förvaring digitala tillgångar, DLT bank, avvecklingsinfrastruktur, säkerhetsmobilitet, programmerbara pengar, bankstrategi digitala tillgångar</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/sv/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv-SE</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-03T06:06:06+00:00</news:publication_date>
+    <news:title>Det agentiska AI-indexet för banker 2026: Att mäta autonomi, styrning, revisionsbarhet och affärspåverkan</news:title>
+    <news:keywords>agentisk AI bank 2026, AI-agenter banker, AI-styrning finansiella tjänster, autonoma bankarbetsflöden, modellrisk, AI-revisionsbarhet, ISO 20022, SR 11-7, DORA, OAuth, OPA</news:keywords>
   </news:news>
 </url>
 <url>
