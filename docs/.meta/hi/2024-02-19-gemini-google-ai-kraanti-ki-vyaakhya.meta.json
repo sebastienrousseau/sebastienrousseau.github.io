@@ -1,11 +1,11 @@
 {
   "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
+  "description": "Gemini: Google का मल्टीमॉडल फाउंडेशन-मॉडल — क्षमताएँ, बेंचमार्क और उपयोग-मामले।",
   "date": "February 19, 2024",
-  "title": "Gemini का अनावरण: Google AI क्रांति की व्याख्या",
-  "subtitle": "एक मल्टीमॉडल फाउंडेशन-मॉडल जो Pro, Ultra और Nano में फैला",
-  "keywords": "Gemini, Google, AI, multimodal, फाउंडेशन मॉडल, LLM, बेंचमार्क, Pro, Ultra, Nano",
-  "banner_alt": "Google Gemini लोगो की अमूर्त छवि",
-  "language": "hi-IN",
   "locale": "hi_IN",
-  "description": "Gemini: Google का मल्टीमॉडल फाउंडेशन-मॉडल — क्षमताएँ, बेंचमार्क और उपयोग-मामले।"
+  "banner_alt": "Google Gemini लोगो की अमूर्त छवि",
+  "subtitle": "एक मल्टीमॉडल फाउंडेशन-मॉडल जो Pro, Ultra और Nano में फैला",
+  "language": "hi-IN",
+  "title": "Gemini का अनावरण: Google AI क्रांति की व्याख्या",
+  "keywords": "Gemini, Google, AI, multimodal, फाउंडेशन मॉडल, LLM, बेंचमार्क, Pro, Ultra, Nano"
 }

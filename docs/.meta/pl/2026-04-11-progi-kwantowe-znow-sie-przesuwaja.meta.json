@@ -1,11 +1,11 @@
 {
-  "subtitle": "Nowy artykuł obniża próg algorytmu Shora do 10 000 kubitów",
-  "title": "Progi kwantowe znów się przesuwają",
-  "date": "Apr 11, 2026",
   "locale": "pl_PL",
-  "keywords": "algorytm Shora, kubity, kwantowe komputery, PQC, kryptografia, RSA, ECC",
-  "description": "Nowy artykuł sugeruje, że algorytm Shora mógłby działać przy zaledwie 10 000 kubitach. Próg kryptograficznie istotnych obliczeń kwantowych szybko spada.",
+  "date": "Apr 11, 2026",
+  "subtitle": "Nowy artykuł obniża próg algorytmu Shora do 10 000 kubitów",
   "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
   "banner_alt": "Wykres progu kubitów dla algorytmu Shora",
+  "description": "Nowy artykuł sugeruje, że algorytm Shora mógłby działać przy zaledwie 10 000 kubitach. Próg kryptograficznie istotnych obliczeń kwantowych szybko spada.",
+  "title": "Progi kwantowe znów się przesuwają",
+  "keywords": "algorytm Shora, kubity, kwantowe komputery, PQC, kryptografia, RSA, ECC",
   "language": "pl-PL"
 }

@@ -1,11 +1,11 @@
 {
+  "locale": "hi_IN",
+  "banner_alt": "ऑडियो-तरंग-रूप की कलात्मक छवि",
+  "subtitle": "Whisper, बोलने वालों की पहचान और भाषा-पहचान के बीच",
+  "description": "AI-संचालित ऑडियो-विश्लेषण, बोलने वालों की पहचान, भाषाई पहचान और अनुवाद का परिचय।",
   "title": "AI-संचालित ऑडियो-अंतर्दृष्टि, विश्लेषण और अनुवाद",
   "date": "January 29, 2024",
-  "banner_alt": "ऑडियो-तरंग-रूप की कलात्मक छवि",
-  "locale": "hi_IN",
-  "description": "AI-संचालित ऑडियो-विश्लेषण, बोलने वालों की पहचान, भाषाई पहचान और अनुवाद का परिचय।",
-  "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp",
   "language": "hi-IN",
   "keywords": "AI, ऑडियो, Whisper, अनुवाद, भाषण-पहचान, NLP, speaker diarization, multilingual, ASR, transcription",
-  "subtitle": "Whisper, बोलने वालों की पहचान और भाषा-पहचान के बीच"
+  "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp"
 }
