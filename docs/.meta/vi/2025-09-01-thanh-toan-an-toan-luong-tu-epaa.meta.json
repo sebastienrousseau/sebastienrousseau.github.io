@@ -1,11 +1,11 @@
 {
-  "title": "Thanh toán An toàn Lượng tử: Vì sao ngành thanh toán phải hành động ngay",
-  "locale": "vi_VN",
-  "banner_alt": "Sách trắng Quantum-Safe Payments",
-  "date": "September 1, 2025",
+  "subtitle": "Sách trắng cho Emerging Payments Association Asia",
   "language": "vi-VN",
   "keywords": "EPAA, sách trắng, thanh toán, lượng tử, an toàn lượng tử, PQC, hậu lượng tử, hành động phối hợp",
-  "subtitle": "Sách trắng cho Emerging Payments Association Asia",
-  "description": "Sách trắng EPAA về mối đe doạ cấu trúc mà tính toán lượng tử gây ra cho hạ tầng thanh toán và lý lẽ cho hành động phối hợp ngay bây giờ.",
-  "banner": "https://cloudcdn.pro/stocks/images/epaa-banner.webp"
+  "title": "Thanh toán An toàn Lượng tử: Vì sao ngành thanh toán phải hành động ngay",
+  "date": "September 1, 2025",
+  "locale": "vi_VN",
+  "banner": "https://cloudcdn.pro/stocks/images/epaa-banner.webp",
+  "banner_alt": "Sách trắng Quantum-Safe Payments",
+  "description": "Sách trắng EPAA về mối đe doạ cấu trúc mà tính toán lượng tử gây ra cho hạ tầng thanh toán và lý lẽ cho hành động phối hợp ngay bây giờ."
 }

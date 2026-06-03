@@ -152,27 +152,6 @@ Brands Sebastien has worked with along the way.
 
 ## Bot policy
 
-Crawler stance for `sebastienrousseau.com`. Applies to every locale subtree (`/fr/`, `/es/`, `/de/`, …).
-
-**Allow — every category.** Web search engines (Googlebot, Bingbot, DuckDuckBot, Yandex, Baiduspider, Applebot), social and link-preview crawlers (Twitterbot, facebookexternalhit, LinkedInBot), SEO and audit crawlers (AhrefsBot, SemrushBot), AI retrieval bots that cite on user query (ChatGPT-User, OAI-SearchBot, Claude-User, Claude-SearchBot, Claude-Web, PerplexityBot, Perplexity-User, MistralAI-User, YouBot) and AI training crawlers (GPTBot, ClaudeBot, anthropic-ai, Google-Extended, Amazonbot, Bytespider, cohere-ai, CCBot, meta-externalagent, meta-externalfetcher) — all allowed.
-
-**Licence.** All content under [CC BY-4.0](https://creativecommons.org/licenses/by/4.0/). Attribution required: "Sebastien Rousseau — sebastienrousseau.com". For generative outputs, citing the canonical article URL is sufficient attribution.
-
-**Machine-readable surfaces.**
-
-<dl class="profile-meta">
-<dt>Site directory (llmstxt.org)</dt>
-<dd><a href="/llms.txt">/llms.txt</a></dd>
-<dt>Agent context (compact)</dt>
-<dd><a href="/llms-ctx.txt">/llms-ctx.txt</a></dd>
-<dt>Full article corpus</dt>
-<dd><a href="/llms-full.txt">/llms-full.txt</a></dd>
-<dt>JSON API</dt>
-<dd><a href="/api/agents/index.json">/api/agents/index.json</a> — posts, topics, person, organization</dd>
-<dt>Crawler rules</dt>
-<dd><a href="/robots.txt">/robots.txt</a></dd>
-</dl>
-
-**Opting out.** If you operate a crawler not named in `/robots.txt`, the wildcard `User-agent: *` rule applies (allow). If you want to be explicitly named or excluded, [contact](/contact/) — bot policy changes ship within one build cycle.
+All crawlers welcome — search engines, social link-preview, SEO, AI retrieval and AI training — under [CC BY-4.0](https://creativecommons.org/licenses/by/4.0/). Operational detail (named crawler categories, machine-readable surfaces, opt-out path) lives at [`/editorial/#bot-policy`](/editorial/#bot-policy); machine-actionable rules at [`/robots.txt`](/robots.txt) and [`/llms.txt`](/llms.txt).
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
