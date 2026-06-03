@@ -1,11 +1,11 @@
 {
-  "description": "Descubra o modelo Gemma de Google: um projeto de código aberto que propone soluções de IA ética para uso personal e empresarial.",
-  "locale": "pt_BR",
-  "banner_alt": "Nave futurista azul com neones",
-  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
-  "title": "Google Gemma: transformar o desenvolvimento de a IA de código aberto",
-  "subtitle": "Una mirada desde dentro a as capacidades, as contribuciones de código aberto e lo que viene",
-  "date": "February 26, 2024",
   "keywords": "Google Gemma, modelo de IA de código aberto, arquitectura técnica Gemma, Gemma 2B 7B, IA ética, integração IA macOS, soluções IA para empresa, IA conversacional, análisis de dados IA, IA para dispositivos edge",
-  "language": "pt-BR"
+  "subtitle": "Una mirada desde dentro a as capacidades, as contribuciones de código aberto e lo que viene",
+  "locale": "pt_BR",
+  "date": "February 26, 2024",
+  "language": "pt-BR",
+  "title": "Google Gemma: transformar o desenvolvimento de a IA de código aberto",
+  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
+  "description": "Descubra o modelo Gemma de Google: um projeto de código aberto que propone soluções de IA ética para uso personal e empresarial.",
+  "banner_alt": "Nave futurista azul com neones"
 }

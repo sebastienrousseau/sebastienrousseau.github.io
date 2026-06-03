@@ -260,13 +260,49 @@
 <p><strong>Per-article disclosures.</strong> When an article discusses HSBC's competitors, regulatory positions affecting HSBC, or topics where the author's employment is materially relevant to the analysis, an explicit disclosure appears in the article body — typically immediately after the lead aside.</p>
 <p><strong>Past employers.</strong> The author has also held senior positions at PayPal, Barclays, Shazam Entertainment, AKQA, and Virgin Group. Where commentary touches on any of these companies, the same disclosure principle applies.</p>
 <p><strong>No paid placements.</strong> This site does not accept sponsored content, affiliate links, or commissioned articles. Open-source projects mentioned (<a href="https://pain001.com">pain001</a>, <a href="https://kyberlib.com">KyberLib</a>, <a href="https://news.bankingonquantum.com">Banking On Quantum</a>) are authored or maintained by the same person and are disclosed as such.</p>
+<h2>Bot policy</h2>
+<p>Crawler stance for <code>sebastienrousseau.com</code>. Applies to every locale subtree (<code>/fr/</code>, <code>/es/</code>, <code>/de/</code>, …).</p>
+<p><strong>Allow — every category.</strong> Web search engines (Googlebot, Bingbot, DuckDuckBot, Yandex, Baiduspider, Applebot), social and link-preview crawlers (Twitterbot, facebookexternalhit, LinkedInBot), SEO and audit crawlers (AhrefsBot, SemrushBot), AI retrieval bots that cite on user query (ChatGPT-User, OAI-SearchBot, Claude-User, Claude-SearchBot, Claude-Web, PerplexityBot, Perplexity-User, MistralAI-User, YouBot) and AI training crawlers (GPTBot, ClaudeBot, anthropic-ai, Google-Extended, Amazonbot, Bytespider, cohere-ai, CCBot, meta-externalagent, meta-externalfetcher) — all allowed.</p>
+<p><strong>Licence.</strong> All content under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-4.0</a>. Attribution required: &quot;Sebastien Rousseau — sebastienrousseau.com&quot;. For generative outputs, citing the canonical article URL is sufficient attribution.</p>
+<p><strong>Machine-readable surfaces.</strong></p>
+<div class="table-responsive"><table class="table">
+<thead>
+<tr>
+<th>Surface</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-left">Site directory (llmstxt.org)</td>
+<td class="text-left"><a href="/llms.txt"><code>/llms.txt</code></a></td>
+</tr>
+<tr>
+<td class="text-left">Agent context (compact)</td>
+<td class="text-left"><a href="/llms-ctx.txt"><code>/llms-ctx.txt</code></a></td>
+</tr>
+<tr>
+<td class="text-left">Full article corpus</td>
+<td class="text-left"><a href="/llms-full.txt"><code>/llms-full.txt</code></a></td>
+</tr>
+<tr>
+<td class="text-left">JSON API</td>
+<td class="text-left"><a href="/api/agents/index.json"><code>/api/agents/index.json</code></a> — posts, topics, person, organization</td>
+</tr>
+<tr>
+<td class="text-left">Crawler rules</td>
+<td class="text-left"><a href="/robots.txt"><code>/robots.txt</code></a></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Opting out.</strong> If you operate a crawler not named in <code>/robots.txt</code>, the wildcard <code>User-agent: *</code> rule applies (allow). If you want to be explicitly named or excluded, <a href="/contact/">contact</a> — bot policy changes ship within one build cycle.</p>
 <h2>Republication and licensing</h2>
 <p>All editorial content is published under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY-4.0)</a>.</p>
 <p><strong>Attribution form.</strong> &quot;Sebastien Rousseau — sebastienrousseau.com&quot; plus a link back to the canonical article URL. For generative outputs (LLM responses, AI summaries), citing the canonical article URL is sufficient attribution.</p>
 <p><strong>Republication.</strong> Permitted at no charge under CC BY-4.0. We ask republishers to email <a href="mailto:contact@sebastienrousseau.com">contact@sebastienrousseau.com</a> as a courtesy; a reply is not required to proceed.</p>
 <p><strong>Translations.</strong> The 27 non-English locales are derived works under CC BY-4.0. Re-translating from one locale to another is permitted; we ask that the canonical English URL be cited.</p>
 <h2>Accountability and identity</h2>
-<div class="table-responsive"><table class="table">
+<table>
 <thead>
 <tr>
 <th></th>
@@ -300,7 +336,7 @@
 </tr>
 <tr>
 <td class="text-left"><strong>Bot policy</strong></td>
-<td class="text-left"><a href="/about/#bot-policy"><code>/about/#bot-policy</code></a></td>
+<td class="text-left"><a href="/editorial/#bot-policy"><code>/editorial/#bot-policy</code></a></td>
 </tr>
 <tr>
 <td class="text-left"><strong>Crawler rules</strong></td>
@@ -311,7 +347,7 @@
 <td class="text-left"><a href="/llms.txt"><code>/llms.txt</code></a></td>
 </tr>
 </tbody>
-</table></div>
+</table>
 <h2>Verification</h2>
 <p>Every article on this site is sigstore-signed at build time. The signature bundles live at <code>/sigstore/&lt;slug&gt;.bundle</code> and can be verified independently with <code>cosign verify-blob</code>. The signature attests that the published HTML bytes match what the author signed.</p>
 <p>To verify any article:</p>

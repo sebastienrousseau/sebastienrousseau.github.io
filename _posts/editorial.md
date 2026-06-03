@@ -200,6 +200,26 @@ The author of this site, **Sebastien Rousseau** ([ORCID `0009-0005-1434-284X`](h
 
 **No paid placements.** This site does not accept sponsored content, affiliate links, or commissioned articles. Open-source projects mentioned ([pain001](https://pain001.com), [KyberLib](https://kyberlib.com), [Banking On Quantum](https://news.bankingonquantum.com)) are authored or maintained by the same person and are disclosed as such.
 
+## Bot policy
+
+Crawler stance for `sebastienrousseau.com`. Applies to every locale subtree (`/fr/`, `/es/`, `/de/`, …).
+
+**Allow — every category.** Web search engines (Googlebot, Bingbot, DuckDuckBot, Yandex, Baiduspider, Applebot), social and link-preview crawlers (Twitterbot, facebookexternalhit, LinkedInBot), SEO and audit crawlers (AhrefsBot, SemrushBot), AI retrieval bots that cite on user query (ChatGPT-User, OAI-SearchBot, Claude-User, Claude-SearchBot, Claude-Web, PerplexityBot, Perplexity-User, MistralAI-User, YouBot) and AI training crawlers (GPTBot, ClaudeBot, anthropic-ai, Google-Extended, Amazonbot, Bytespider, cohere-ai, CCBot, meta-externalagent, meta-externalfetcher) — all allowed.
+
+**Licence.** All content under [CC BY-4.0](https://creativecommons.org/licenses/by/4.0/). Attribution required: "Sebastien Rousseau — sebastienrousseau.com". For generative outputs, citing the canonical article URL is sufficient attribution.
+
+**Machine-readable surfaces.**
+
+| Surface | URL |
+|---|---|
+| Site directory (llmstxt.org) | [`/llms.txt`](/llms.txt) |
+| Agent context (compact) | [`/llms-ctx.txt`](/llms-ctx.txt) |
+| Full article corpus | [`/llms-full.txt`](/llms-full.txt) |
+| JSON API | [`/api/agents/index.json`](/api/agents/index.json) — posts, topics, person, organization |
+| Crawler rules | [`/robots.txt`](/robots.txt) |
+
+**Opting out.** If you operate a crawler not named in `/robots.txt`, the wildcard `User-agent: *` rule applies (allow). If you want to be explicitly named or excluded, [contact](/contact/) — bot policy changes ship within one build cycle.
+
 ## Republication and licensing
 
 All editorial content is published under [Creative Commons Attribution 4.0 International (CC BY-4.0)](https://creativecommons.org/licenses/by/4.0/).
@@ -220,7 +240,7 @@ All editorial content is published under [Creative Commons Attribution 4.0 Inter
 | **GitHub** | [github.com/sebastienrousseau](https://github.com/sebastienrousseau) |
 | **LinkedIn** | [linkedin.com/in/sebastienrousseau](https://www.linkedin.com/in/sebastienrousseau/) |
 | **Public profile** | [`/about/`](/about/) |
-| **Bot policy** | [`/about/#bot-policy`](/about/#bot-policy) |
+| **Bot policy** | [`/editorial/#bot-policy`](/editorial/#bot-policy) |
 | **Crawler rules** | [`/robots.txt`](/robots.txt) |
 | **Site directory for LLMs** | [`/llms.txt`](/llms.txt) |
 
