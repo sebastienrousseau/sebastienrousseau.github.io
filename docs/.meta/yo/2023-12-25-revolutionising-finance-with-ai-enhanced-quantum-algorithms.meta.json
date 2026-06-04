@@ -1,11 +1,11 @@
 {
-  "locale": "yo_NG",
-  "description": "Ṣawari ipa iyipada AI ninu awọn algorithm kuantọm fun iṣowo owo, pẹlu idojukọ lori awọn idiju mathimatiki wọn ati awọn ohun elo banki.",
-  "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
-  "title": "Revolutionising Finance with AI-Enhanced Quantum Algorithms",
-  "banner_alt": "Iyipada iṣowo pẹlu awọn algorithm kuantọm ti AI ṣe ilọsiwaju",
   "keywords": "Quantum Computing, Awọn Algorithm AI, Mathimatiki Iṣowo, Imọ-ẹrọ Banki, Iṣakoso Ewu, Apẹrẹ Algorithm, Itupalẹ Data, Awọn Ilana Idoko-owó, Quantum Finance, Machine Learning",
+  "title": "Revolutionising Finance with AI-Enhanced Quantum Algorithms",
+  "locale": "yo_NG",
   "date": "Dec 25, 2023",
   "language": "yo-NG",
-  "subtitle": "Ṣiṣi agbara kuantọm fun imọ-ẹrọ owo: AI ni àárín awọn algorithm iran-tuntun"
+  "subtitle": "Ṣiṣi agbara kuantọm fun imọ-ẹrọ owo: AI ni àárín awọn algorithm iran-tuntun",
+  "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
+  "banner_alt": "Iyipada iṣowo pẹlu awọn algorithm kuantọm ti AI ṣe ilọsiwaju",
+  "description": "Ṣawari ipa iyipada AI ninu awọn algorithm kuantọm fun iṣowo owo, pẹlu idojukọ lori awọn idiju mathimatiki wọn ati awọn ohun elo banki."
 }

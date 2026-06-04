@@ -1,11 +1,11 @@
 {
-  "description": "Kuantum Anahtar Dağıtımı (QKD) bankacılık altyapısı için kuantum dirençli güvenlik temelleri sağlar.",
-  "banner_alt": "Bir kuantum ağının görselleştirmesi",
-  "date": "December 11, 2023",
-  "locale": "tr_TR",
-  "language": "tr-TR",
-  "keywords": "QKD, kuantum anahtar dağıtımı, bankacılık, güvenlik, kriptografi, finans",
-  "subtitle": "QKD'nin finansal güvenliğin temellerini nasıl yeniden tanımladığı",
   "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
+  "keywords": "QKD, kuantum anahtar dağıtımı, bankacılık, güvenlik, kriptografi, finans",
+  "description": "Kuantum Anahtar Dağıtımı (QKD) bankacılık altyapısı için kuantum dirençli güvenlik temelleri sağlar.",
+  "locale": "tr_TR",
+  "date": "December 11, 2023",
+  "language": "tr-TR",
+  "subtitle": "QKD'nin finansal güvenliğin temellerini nasıl yeniden tanımladığı",
+  "banner_alt": "Bir kuantum ağının görselleştirmesi",
   "title": "Kuantum anahtar dağıtımı: bankacılık güvenliğinde devrim"
 }

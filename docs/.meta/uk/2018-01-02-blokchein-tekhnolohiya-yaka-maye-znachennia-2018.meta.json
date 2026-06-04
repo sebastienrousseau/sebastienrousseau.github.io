@@ -1,11 +1,11 @@
 {
   "description": "Історія надзвичайної подорожі із захисту цифрових транзакцій за допомогою криптографії з приватним ключем та мереж Peer-to-peer (P2P).",
-  "banner_alt": "Вимкнений ноутбук на коричневому дерев'яному столі",
   "title": "[UK DRAFT] Blockchain explained, the technology that matters the most",
-  "keywords": "pain001, iso 20022, автоматизація платежів, скорочення витрат, обробка платежів, файли платежів, ініціювання платежів, pain message, pain message standards, pain message validation",
-  "language": "uk-UA",
-  "locale": "uk_UA",
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "date": "Jan 02, 2018",
   "subtitle": "Blockchain, розподілені реєстри та технологія, яка найбільше важить у 2018 році.",
-  "date": "Jan 02, 2018"
+  "language": "uk-UA",
+  "banner_alt": "Вимкнений ноутбук на коричневому дерев'яному столі",
+  "keywords": "pain001, iso 20022, автоматизація платежів, скорочення витрат, обробка платежів, файли платежів, ініціювання платежів, pain message, pain message standards, pain message validation",
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "locale": "uk_UA"
 }

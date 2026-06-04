@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Hoton da aka ƙirƙira ta amfani da MidJourney — cibiyar sadarwar nodes na dijital a launukan ja da shuɗi.",
-  "locale": "ha_NG",
-  "language": "ha-NG",
   "description": "An gano kuskure a cikin algorithm ɗin quantum LWE na Yilei Chen, wanda ya ba da kariya ta wucin gadi ga lattice-based cryptography. Me wannan ke nufi ga CRYSTALS-Kyber, Dilithium da tafarkin PQC.",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
   "title": "Quantum Lattice Crypto: Bug in Chen's LWE Attack",
   "subtitle": "Binciken Takwarorinsa Ya Bayyana Lahani a Cikin Aikin Tarihi na Chen",
+  "date": "Apr 22, 2024",
+  "banner_alt": "Hoton da aka ƙirƙira ta amfani da MidJourney — cibiyar sadarwar nodes na dijital a launukan ja da shuɗi.",
   "keywords": "post-quantum cryptography, NIST, daidaita PQC, Yilei Chen, quantum algorithm, lattice-based cryptography, matsalar LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, quantum-resistant cryptography",
-  "date": "Apr 22, 2024"
+  "language": "ha-NG",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "locale": "ha_NG"
 }

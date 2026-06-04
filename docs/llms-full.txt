@@ -346,6 +346,8 @@ _Jun 2, 2026_  ·  [https://sebastienrousseau.com/2026-06-02-banking-infrastruct
 
 
 
+
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -1397,6 +1399,8 @@ _May 28, 2026_  ·  [https://sebastienrousseau.com/2026-05-28-digital-assets-tok
 
 
 
+
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -1638,6 +1642,8 @@ _May 27, 2026_  ·  [https://sebastienrousseau.com/2026-05-27-ai-operating-syste
 
 
 
+
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -1776,6 +1782,8 @@ _May 26, 2026_  ·  [https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tok
 
 
 
+
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -1886,6 +1894,8 @@ Success should be measured by unit economics, resilience evidence, data quality,
 _May 26, 2026_  ·  [https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/](https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/)
 
 # Magnifica Humanitas: An AI-Industry Reading of the First Papal Encyclical on Artificial Intelligence
+
+
 
 
 
@@ -2092,6 +2102,8 @@ _May 25, 2026_  ·  [https://sebastienrousseau.com/2026-05-25-programmable-liqui
 
 
 
+
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -2230,6 +2242,8 @@ _May 24, 2026_  ·  [https://sebastienrousseau.com/2026-05-24-uk-payments-forwar
 
 
 
+
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -2340,6 +2354,8 @@ Success should be measured by unit economics, resilience evidence, data quality,
 _May 23, 2026_  ·  [https://sebastienrousseau.com/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/](https://sebastienrousseau.com/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/)
 
 # Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026
+
+
 
 
 
@@ -2511,6 +2527,8 @@ _May 22, 2026_  ·  [https://sebastienrousseau.com/2026-05-22-uk-acid-jazz-renew
 
 
 
+
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -2652,6 +2670,8 @@ The connection is groove, not strict genre labelling. Festivals such as Mostly J
 _May 21, 2026_  ·  [https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/](https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/)
 
 # Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money
+
+
 
 
 
@@ -2966,6 +2986,8 @@ _May 20, 2026_  ·  [https://sebastienrousseau.com/2026-05-20-cloud-native-banki
 
 
 
+
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -3105,6 +3127,8 @@ The biggest mistake is adopting containers without platform controls. If Kuberne
 _May 19, 2026_  ·  [https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026/](https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026/)
 
 # Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability
+
+
 
 
 
@@ -3298,6 +3322,8 @@ No. Stablecoins may influence cross-border payment design, but wholesale payment
 _May 18, 2026_  ·  [https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/](https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/)
 
 # The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer
+
+
 
 
 
@@ -3771,6 +3797,8 @@ Three things, sequenced. First, produce the AI Bill of Materials — the complet
 _May 16, 2026_  ·  [https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/)
 
 # The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services
+
+
 
 
 
@@ -8231,6 +8259,8 @@ For team use, all CLI flags can be expressed in a TOML config file:
 
 ```toml
 # libmake.toml
+
+
 
 
 
