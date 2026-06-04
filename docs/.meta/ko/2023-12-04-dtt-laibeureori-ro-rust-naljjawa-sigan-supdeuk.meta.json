@@ -1,12 +1,12 @@
 {
-  "last_reviewed": "2026-05-16",
-  "title": "dtt 라이브러리로 Rust의 날짜와 시간을 숙달하다",
-  "banner_alt": "유리 건물 위의 시계",
-  "language": "ko-KR",
+  "locale": "ko_KR",
+  "date": "December 4, 2023",
   "keywords": "dtt, 날짜, 시간, Rust, 시간대, RFC 3339, ISO 8601, 라이브러리, 파싱, 포맷",
   "description": "dtt는 파싱, 포맷, 시간대 조작을 위한 포괄적 날짜·시간 Rust 라이브러리입니다.",
   "subtitle": "Rust로 작성된 포괄적 날짜·시간 라이브러리",
-  "locale": "ko_KR",
-  "date": "December 4, 2023",
-  "banner": "https://cloudcdn.pro/stocks/images/luca-bravo-VowIH4-VlIw-unsplash.webp"
+  "language": "ko-KR",
+  "last_reviewed": "2026-05-16",
+  "title": "dtt 라이브러리로 Rust의 날짜와 시간을 숙달하다",
+  "banner": "https://cloudcdn.pro/stocks/images/luca-bravo-VowIH4-VlIw-unsplash.webp",
+  "banner_alt": "유리 건물 위의 시계"
 }

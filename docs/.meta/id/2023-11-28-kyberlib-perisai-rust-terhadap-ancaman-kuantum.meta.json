@@ -1,11 +1,11 @@
 {
+  "subtitle": "KyberLib, implementasi Rust yang tangguh dari CRYSTALS-Kyber untuk era kuantum.",
   "description": "Implementasi kriptografi CRYSTALS-Kyber yang andal dan tahan-kuantum, untuk melindungi data Anda dari ancaman komputasi kuantum dan serangan kriptanalitik.",
-  "banner_alt": "Memperkuat Komunikasi Aman di Era Kuantum dengan KyberLib",
-  "keywords": "KyberLib, Rust CRYSTALS-Kyber, kriptografi pasca-kuantum, kriptografi berbasis kisi, pertukaran kunci tahan-kuantum, NIST FIPS 203, Sebastien Rousseau, KEM, autentikasi pembayaran, PQC library",
+  "date": "Nov 28, 2023",
   "language": "id-ID",
+  "keywords": "KyberLib, Rust CRYSTALS-Kyber, kriptografi pasca-kuantum, kriptografi berbasis kisi, pertukaran kunci tahan-kuantum, NIST FIPS 203, Sebastien Rousseau, KEM, autentikasi pembayaran, PQC library",
+  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
   "locale": "id_ID",
   "title": "[ID DRAFT] KyberLib: Rust CRYSTALS-Kyber for Post-Quantum",
-  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
-  "date": "Nov 28, 2023",
-  "subtitle": "KyberLib, implementasi Rust yang tangguh dari CRYSTALS-Kyber untuk era kuantum."
+  "banner_alt": "Memperkuat Komunikasi Aman di Era Kuantum dengan KyberLib"
 }

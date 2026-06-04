@@ -1,11 +1,11 @@
 {
-  "title": "Unlocking Gemini 1.5: Google's AI Revolution Explained",
-  "locale": "ro_RO",
-  "description": "Gemini 1.5 de la Google extinde ferestrele de context la peste 1 milion de tokeni. Ce posibilități oferă pentru finanțele augmentate prin recuperare și ce compromisuri trebuie cunoscute.",
-  "keywords": "Gemini 1.5, Google AI, arhitectură Mixture-of-Experts, eficiență computațională, extinderea ferestrei de context, inovație AI, transformarea analizei datelor, învățare în context, cazuri de utilizare AI, revoluție tehnologică",
-  "date": "Feb 19, 2024",
-  "subtitle": "O analiză aprofundată a celui mai recent progres în domeniul AI al Google",
-  "banner_alt": "Vizualizare abstractă a rețelelor de inteligență artificială, reprezentând capacitățile Gemini 1.5",
   "language": "ro-RO",
-  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp"
+  "banner_alt": "Vizualizare abstractă a rețelelor de inteligență artificială, reprezentând capacitățile Gemini 1.5",
+  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
+  "subtitle": "O analiză aprofundată a celui mai recent progres în domeniul AI al Google",
+  "date": "Feb 19, 2024",
+  "locale": "ro_RO",
+  "title": "Unlocking Gemini 1.5: Google's AI Revolution Explained",
+  "keywords": "Gemini 1.5, Google AI, arhitectură Mixture-of-Experts, eficiență computațională, extinderea ferestrei de context, inovație AI, transformarea analizei datelor, învățare în context, cazuri de utilizare AI, revoluție tehnologică",
+  "description": "Gemini 1.5 de la Google extinde ferestrele de context la peste 1 milion de tokeni. Ce posibilități oferă pentru finanțele augmentate prin recuperare și ce compromisuri trebuie cunoscute."
 }

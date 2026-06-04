@@ -1,11 +1,11 @@
 {
-  "locale": "ro_RO",
-  "date": "Dec 18, 2023",
-  "subtitle": "Modelând viitorul sectorului bancar: AI, Quantum Computing, modele open source și cadrul de reglementare",
-  "description": "Explorând peisajul tehnologic din 2023: AI și Quantum Computing revoluționează sectorul bancar, modele open-source emergente și reglementări în continuă evoluție",
-  "language": "ro-RO",
   "banner_alt": "Starea AI și a Quantum Computing în Banking: O Revizuire din 2023",
-  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
+  "locale": "ro_RO",
+  "keywords": "AI în banking, Quantum Computing, Tehnologie Financiară, AI open-source, Management al Riscului, Securitate Cuantică, Reglementare AI, Etică AI, Guvernanță AI, Inovație Bancară",
+  "language": "ro-RO",
+  "date": "Dec 18, 2023",
   "title": "State of AI and Quantum Computing in Banking: A 2023 Review",
-  "keywords": "AI în banking, Quantum Computing, Tehnologie Financiară, AI open-source, Management al Riscului, Securitate Cuantică, Reglementare AI, Etică AI, Guvernanță AI, Inovație Bancară"
+  "subtitle": "Modelând viitorul sectorului bancar: AI, Quantum Computing, modele open source și cadrul de reglementare",
+  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
+  "description": "Explorând peisajul tehnologic din 2023: AI și Quantum Computing revoluționează sectorul bancar, modele open-source emergente și reglementări în continuă evoluție"
 }

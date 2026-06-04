@@ -1,11 +1,11 @@
 {
-  "title": "[ID DRAFT] Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance",
-  "subtitle": "Risiko kuantum telah beralih dari keingintahuan penelitian menjadi mandat regulasi aktif. Dengan peta jalan G7 yang diterbitkan Januari 2026 dan BIS Project Leap yang membuktikan kelayakan dalam sistem pembayaran langsung, pertanyaan di tingkat dewan bukan lagi apakah harus bermigrasi — melainkan apakah migrasi dapat diselesaikan sebelum masa kriptografis data saat ini habis.",
   "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp",
-  "language": "id-ID",
-  "keywords": "kriptografi pasca-kuantum, migrasi PQC, perbankan korporat, layanan keuangan, G7 CEG roadmap, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204",
   "locale": "id_ID",
-  "description": "Risiko kuantum telah beralih dari keingintahuan penelitian menjadi mandat regulasi aktif. Peta jalan G7 2026, BIS Project Leap, serta timeline EU, UK, dan ASD mengonfirmasi bahwa pertanyaan bagi dewan bukan lagi apakah bermigrasi, melainkan apakah migrasi PQC dapat selesai tepat waktu.",
   "banner_alt": "Diagram peta jalan migrasi kriptografi pasca-kuantum — infrastruktur perbankan korporat bertransisi dari RSA ke ML-KEM dan ML-DSA",
-  "date": "May 14, 2026"
+  "keywords": "kriptografi pasca-kuantum, migrasi PQC, perbankan korporat, layanan keuangan, G7 CEG roadmap, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204",
+  "title": "[ID DRAFT] Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance",
+  "language": "id-ID",
+  "date": "May 14, 2026",
+  "subtitle": "Risiko kuantum telah beralih dari keingintahuan penelitian menjadi mandat regulasi aktif. Dengan peta jalan G7 yang diterbitkan Januari 2026 dan BIS Project Leap yang membuktikan kelayakan dalam sistem pembayaran langsung, pertanyaan di tingkat dewan bukan lagi apakah harus bermigrasi — melainkan apakah migrasi dapat diselesaikan sebelum masa kriptografis data saat ini habis.",
+  "description": "Risiko kuantum telah beralih dari keingintahuan penelitian menjadi mandat regulasi aktif. Peta jalan G7 2026, BIS Project Leap, serta timeline EU, UK, dan ASD mengonfirmasi bahwa pertanyaan bagi dewan bukan lagi apakah bermigrasi, melainkan apakah migrasi PQC dapat selesai tepat waktu."
 }

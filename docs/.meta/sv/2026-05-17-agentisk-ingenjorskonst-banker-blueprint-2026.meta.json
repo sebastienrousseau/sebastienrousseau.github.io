@@ -1,11 +1,11 @@
 {
-  "keywords": "ingeniería agéntica, desarrollo guiado por especificación, bancos, servicios financieros, gobernanza IA, Reglamento europeo de IA, DORA, SR 11-7, NIST AI RMF, ISO 42001, modernización COBOL, mainframe, vibe coding, vibe hacking, agentes autónomos, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, gestión de riesgos de terceros, TPRM, riesgo proveedor, criptografía postcuántica, plano de control de agentes, FCA, SM&CR, plan de acción 12 semanas, Sebastien Rousseau",
-  "language": "sv-SE",
-  "locale": "sv_SE",
-  "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
-  "subtitle": "La IA agéntica ha pasado del piloto a la producción. El 70 % de los bancos ya la utiliza; solo uno de cada cinco dispone de un modelo de gobernanza maduro. Los adversarios operan a velocidad de máquina, el estate heredado fue escrito para las hipótesis batch de los años 1960, y el plazo «alto riesgo» del Reglamento europeo de IA llega en doce semanas.",
-  "banner_alt": "Diagrama de arquitectura para la ingeniería agéntica en la banca: agentes IA pilotados por especificación, plano de control de gobernanza, sustrato resistente a lo cuántico y flujos de modernización de los mainframes heredados",
   "date": "May 17, 2026",
+  "title": "Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los ingenieros que lo construirán",
+  "banner_alt": "Diagrama de arquitectura para la ingeniería agéntica en la banca: agentes IA pilotados por especificación, plano de control de gobernanza, sustrato resistente a lo cuántico y flujos de modernización de los mainframes heredados",
+  "keywords": "ingeniería agéntica, desarrollo guiado por especificación, bancos, servicios financieros, gobernanza IA, Reglamento europeo de IA, DORA, SR 11-7, NIST AI RMF, ISO 42001, modernización COBOL, mainframe, vibe coding, vibe hacking, agentes autónomos, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, gestión de riesgos de terceros, TPRM, riesgo proveedor, criptografía postcuántica, plano de control de agentes, FCA, SM&CR, plan de acción 12 semanas, Sebastien Rousseau",
+  "subtitle": "La IA agéntica ha pasado del piloto a la producción. El 70 % de los bancos ya la utiliza; solo uno de cada cinco dispone de un modelo de gobernanza maduro. Los adversarios operan a velocidad de máquina, el estate heredado fue escrito para las hipótesis batch de los años 1960, y el plazo «alto riesgo» del Reglamento europeo de IA llega en doce semanas.",
   "description": "La IA agéntica ha pasado del piloto a la producción en la banca mundial. El 70 % de las instituciones la utiliza en mayor o menor grado; solo una de cada cinco tiene un modelo de gobernanza maduro. Los adversarios autónomos operan a velocidad de máquina, el estate heredado COBOL con el que los nuevos sistemas deben interoperar fue escrito para las hipótesis batch de los años 1960, y el plazo «alto riesgo» del Reglamento europeo de IA está a doce semanas. He aquí la posición de ingeniería y gobernanza que un banco debe sostener.",
-  "title": "Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los ingenieros que lo construirán"
+  "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
+  "locale": "sv_SE",
+  "language": "sv-SE"
 }
