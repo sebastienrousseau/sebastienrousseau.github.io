@@ -1,11 +1,11 @@
 {
-  "description": "Temukan bagaimana Àkàndé memanfaatkan pemahaman bahasa alami OpenAI GPT, ringkasan PDF, dan caching efisien untuk mendefinisikan ulang bantuan personal dan eksekutif.",
-  "banner": "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp",
-  "language": "id-ID",
-  "subtitle": "Memberdayakan Interaksi Tanpa Hambatan dengan Teknologi AI Mutakhir",
-  "banner_alt": "Perangkat modern berbentuk bulat berwarna putih",
-  "locale": "id_ID",
   "title": "[ID DRAFT] Àkàndé: GPT-Powered Voice Assistant for Executives",
-  "keywords": "Àkàndé, Asisten Suara, Pemahaman Bahasa Alami, Ringkasan PDF, Caching Efisien, OpenAI GPT, Bantuan Eksekutif, Bantuan Personal, Asisten Digital, Inovasi Teknologi",
-  "date": "Feb 12, 2024"
+  "banner_alt": "Perangkat modern berbentuk bulat berwarna putih",
+  "banner": "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp",
+  "description": "Temukan bagaimana Àkàndé memanfaatkan pemahaman bahasa alami OpenAI GPT, ringkasan PDF, dan caching efisien untuk mendefinisikan ulang bantuan personal dan eksekutif.",
+  "language": "id-ID",
+  "date": "Feb 12, 2024",
+  "subtitle": "Memberdayakan Interaksi Tanpa Hambatan dengan Teknologi AI Mutakhir",
+  "locale": "id_ID",
+  "keywords": "Àkàndé, Asisten Suara, Pemahaman Bahasa Alami, Ringkasan PDF, Caching Efisien, OpenAI GPT, Bantuan Eksekutif, Bantuan Personal, Asisten Digital, Inovasi Teknologi"
 }

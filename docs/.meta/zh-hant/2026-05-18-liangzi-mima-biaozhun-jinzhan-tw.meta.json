@@ -1,11 +1,11 @@
 {
+  "banner_alt": "2026 年量子安全密碼遷移地圖，展示 NIST PQC 標準、混合協定工作、QKD 保證、密碼敏捷性與銀行資料風險層級",
+  "locale": "zh_TW",
+  "language": "zh-Hant",
   "description": "2026 年的量子密碼不再是關於量子電腦是否迫近的辯論。它是一項橫跨後量子密碼、密碼敏捷性、量子金鑰分發保證、協定標準、供應商就緒度與已暴露於「先收割後解密」風險的長壽命金融資料的遷移計畫。",
-  "date": "May 18, 2026",
-  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
   "subtitle": "量子密碼已從地平線掃描轉入實施紀律：NIST PQC 標準已就緒，英國 NCSC 指引收窄了演算法選擇，IETF 協定工作仍在成熟，QKD 保證正從實驗室信心走向認證語言。",
   "title": "2026 年量子密碼重置：PQC 標準、QKD 保證與銀行不能再延期的遷移工作",
-  "locale": "zh_TW",
-  "banner_alt": "2026 年量子安全密碼遷移地圖，展示 NIST PQC 標準、混合協定工作、QKD 保證、密碼敏捷性與銀行資料風險層級",
-  "language": "zh-Hant",
+  "date": "May 18, 2026",
+  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
   "keywords": "量子密碼 2026, 後量子密碼, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, 混合金鑰交換, QKD, ETSI QKD, ISO IEC 23837, 密碼敏捷性, harvest now decrypt later, HNDL, 金融服務密碼, 銀行安全"
 }

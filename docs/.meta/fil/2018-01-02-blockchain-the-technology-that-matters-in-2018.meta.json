@@ -1,11 +1,11 @@
 {
-  "banner_alt": "حاسوب محمول مُطفأ فوق طاولة خشبية بُنّية",
-  "date": "January 2, 2018",
   "subtitle": "تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ في خدمة معاملاتٍ آمنة",
-  "language": "fil-PH",
-  "title": "البلوكشين: التقنية التي تهمّ في 2018",
   "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "language": "fil-PH",
+  "locale": "fil_PH",
   "keywords": "blockchain, العملة المشفّرة, Bitcoin, P2P, smart contract, السجل الموزّع, التمويل, سلسلة التوريد, الهويّة الرقمية, الترميز",
+  "title": "البلوكشين: التقنية التي تهمّ في 2018",
   "description": "حكاية الرحلة الاستثنائية لتأمين المعاملات الرقمية عبر تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ (P2P).",
-  "locale": "fil_PH"
+  "date": "January 2, 2018",
+  "banner_alt": "حاسوب محمول مُطفأ فوق طاولة خشبية بُنّية"
 }

@@ -1,11 +1,11 @@
 {
-  "description": "Alien Studio — креативный проект, использующий генеративные модели изображений для создания нового языка ИИ-фотографии.",
-  "banner_alt": "Alien Studio: креативные работы, созданные с ИИ",
-  "date": "January 15, 2024",
   "locale": "ru_RU",
   "keywords": "Alien Studio, ИИ-фотография, генеративные модели, искусство, креативность, Stable Diffusion, Midjourney, prompt-инжиниринг",
-  "title": "Alien Studio: революция искусства с помощью ИИ-фотографии",
-  "subtitle": "Где креативность встречается с генеративными моделями",
   "banner": "https://cloudcdn.pro/stocks/images/alien-studio-banner.webp",
-  "language": "ru-RU"
+  "date": "January 15, 2024",
+  "description": "Alien Studio — креативный проект, использующий генеративные модели изображений для создания нового языка ИИ-фотографии.",
+  "title": "Alien Studio: революция искусства с помощью ИИ-фотографии",
+  "language": "ru-RU",
+  "subtitle": "Где креативность встречается с генеративными моделями",
+  "banner_alt": "Alien Studio: креативные работы, созданные с ИИ"
 }

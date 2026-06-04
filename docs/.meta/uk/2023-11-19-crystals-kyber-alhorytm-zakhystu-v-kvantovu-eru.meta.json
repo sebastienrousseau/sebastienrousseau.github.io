@@ -1,11 +1,11 @@
 {
-  "date": "Nov 19, 2023",
-  "subtitle": "CRYSTALS-Kyber — стандарт NIST FIPS 203 для постквантової інкапсуляції ключів.",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
   "locale": "uk_UA",
-  "language": "uk-UA",
-  "keywords": "квантові обчислення, квантово-стійка криптографія, CRYSTALS-Kyber, криптографія, безпека, банківська справа, фінансовий, шифрування, захист даних, стійкий до майбутнього",
-  "banner_alt": "Сучасний витончений квантовий комп'ютер",
   "description": "Дізнайтеся, як CRYSTALS-Kyber, квантово-стійкий алгоритм криптографії, революціонізує світ криптографії та готує нас до квантової ери.",
-  "title": "[UK DRAFT] CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
+  "date": "Nov 19, 2023",
+  "banner_alt": "Сучасний витончений квантовий комп'ютер",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
+  "keywords": "квантові обчислення, квантово-стійка криптографія, CRYSTALS-Kyber, криптографія, безпека, банківська справа, фінансовий, шифрування, захист даних, стійкий до майбутнього",
+  "title": "[UK DRAFT] CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age",
+  "language": "uk-UA",
+  "subtitle": "CRYSTALS-Kyber — стандарт NIST FIPS 203 для постквантової інкапсуляції ключів."
 }
