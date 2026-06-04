@@ -156,8 +156,6 @@ Eine glaubwürdige Quantum-Readiness-Scorecard erfordert die Verfolgung exakter 
 
 ## Die Migration beginnt mit dem Hauptbuch der Kryptografie
 
-![Fotografie eines Leitstand-Dashboards, das kryptografische Primitive über die TLS-Endpunkte, HSM-Partitionen, Zertifizierungsstellen und langlebigen Datenarchive einer Bank hinweg kartiert — das visuelle Register einer kryptografischen Stückliste.](https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80)
-
 Die Migrationssequenz ist inzwischen gut verstanden. Jedes Gate liefert Evidenz, die das nächste antreibt; ein Gate zu überspringen oder zu komprimieren erzeugt genau jenes Notfall-Replatforming-Risiko, das in der Fehlerspalte der Index-Architektur landet.
 
 ```mermaid

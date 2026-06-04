@@ -156,8 +156,6 @@ Un tableau de bord de préparation quantique crédible exige le suivi de pourcen
 
 ## La migration commence par le registre de cryptographie
 
-![Photographie d'un tableau de bord de salle de pilotage cartographiant les primitives cryptographiques sur les points de terminaison TLS d'une banque, les partitions HSM, les autorités de certification et les archives de données à durée longue — le registre visuel d'une nomenclature cryptographique (CBOM).](https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80)
-
 La séquence de migration est bien comprise à ce stade. Chaque étape produit la preuve qui alimente la suivante ; sauter ou compresser une étape, c'est exactement ce qui génère le risque de replatformation d'urgence inscrit dans la colonne d'échec de l'architecture indicielle.
 
 ```mermaid

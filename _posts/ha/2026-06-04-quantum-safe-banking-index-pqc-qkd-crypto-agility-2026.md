@@ -156,8 +156,6 @@ Scorecard na shirin quantum mai gaskiya yana buƙatar bin kashi daidai, ba kawai
 
 ## Ƙaura na Farawa Daga Littafin Cryptography
 
-![Hoto na dashboard na ɗakin sarrafawa wanda ke tsara primitives na cryptographic a kan endpoints na TLS, HSM partitions, certificate authorities, da ajiyar bayanan dadewa na banki — rajistar gani na Cryptographic Bill of Materials.](https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80)
-
 Tsarin ƙaura an fahimce shi sosai a wannan lokacin. Kowace ƙofa tana samar da shaida da ke tafiyar da na gaba; tsallake ko matsa ƙofa shi ne abin da ke samar da haɗarin sake-platforming na gaggawa wanda ke bayyana a shafin kasawar Tsarin Index.
 
 ```mermaid

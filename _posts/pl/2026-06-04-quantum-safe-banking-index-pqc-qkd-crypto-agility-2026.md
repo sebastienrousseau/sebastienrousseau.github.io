@@ -156,8 +156,6 @@ Wiarygodna karta wyników gotowości kwantowej wymaga śledzenia dokładnych wsk
 
 ## Migracja zaczyna się od księgi kryptografii
 
-![Fotografia kokpitu sali operacyjnej mapującego prymitywy kryptograficzne na endpointach TLS banku, partycjach HSM, urzędach certyfikacji i długoterminowych archiwach danych — wizualny rejestr kryptograficznego Bill of Materials.](https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80)
-
 Sekwencja migracji jest na tym etapie dobrze rozpoznana. Każda bramka produkuje dowody napędzające kolejną; pominięcie lub skompresowanie bramki generuje to ryzyko awaryjnej przebudowy platformy, które pojawia się w kolumnie porażek architektury indeksu.
 
 ```mermaid

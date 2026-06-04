@@ -172,8 +172,6 @@ A credible quantum readiness scorecard requires tracking exact percentages, not 
 
 ## The Migration Starts With the Ledger of Cryptography
 
-![Photograph of a control-room dashboard mapping cryptographic primitives across a bank's TLS endpoints, HSM partitions, certificate authorities, and long-lived data archives — the visual register of a Cryptographic Bill of Materials.](https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80)
-
 The migration sequence is well-understood at this point. Each gate produces evidence that drives the next; skipping or compressing a gate is what generates the emergency re-platforming risk that shows up in the Index Architecture failure column.
 
 ```mermaid

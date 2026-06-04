@@ -156,8 +156,6 @@ Una scorecard di prontezza quantistica credibile richiede di misurare percentual
 
 ## La migrazione parte dal registro della crittografia
 
-![Fotografia di una dashboard di control-room che mappa le primitive crittografiche su endpoint TLS, partizioni HSM, autorità di certificazione e archivi di dati a lunga vita di una banca — il registro visivo di un Cryptographic Bill of Materials.](https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80)
-
 A questo punto la sequenza di migrazione è ben compresa. Ogni varco produce evidenze che alimentano il successivo; saltare o comprimere un varco è ciò che genera il rischio di re-platforming d'emergenza che compare nella colonna dei fallimenti dell'architettura dell'indice.
 
 ```mermaid

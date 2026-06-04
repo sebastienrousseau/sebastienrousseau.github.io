@@ -1,11 +1,11 @@
 {
-  "subtitle": "À mi-novembre 2026, SWIFT CBPR+ rejettera les adresses postales non structurées dans les messages pacs.008 et messages de paiement transfrontaliers associés.",
-  "keywords": "ISO 20022, pacs.008, pacs.009, pacs.004, pacs.003, pain.001, CBPR+, SWIFT, SR2026, adresse structurée, SEPA, EPC, paiements transfrontaliers, criblage de sanctions, pacs008",
-  "banner_alt": "Schéma d'un message de paiement transfrontalier à adresse structurée, avec TwnNm et Ctry surlignés",
-  "locale": "fr_FR",
-  "language": "fr",
-  "description": "À mi-novembre 2026, SWIFT CBPR+ rejettera les adresses postales non structurées dans les messages pacs.008 et messages associés. Avec environ 65 % des messages encore non conformes et 44 % des banques en retard, la fenêtre de remédiation se referme plus vite que la plupart des programmes de préparation ne sont conçus pour le gérer.",
-  "title": "La deadline pacs.008 « adresse structurée » de novembre 2026 : vue à six mois",
+  "banner": "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp",
   "date": "May 12, 2026",
-  "banner": "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
+  "locale": "fr_FR",
+  "banner_alt": "Schéma d'un message de paiement transfrontalier à adresse structurée, avec TwnNm et Ctry surlignés",
+  "keywords": "ISO 20022, pacs.008, pacs.009, pacs.004, pacs.003, pain.001, CBPR+, SWIFT, SR2026, adresse structurée, SEPA, EPC, paiements transfrontaliers, criblage de sanctions, pacs008",
+  "description": "À mi-novembre 2026, SWIFT CBPR+ rejettera les adresses postales non structurées dans les messages pacs.008 et messages associés. Avec environ 65 % des messages encore non conformes et 44 % des banques en retard, la fenêtre de remédiation se referme plus vite que la plupart des programmes de préparation ne sont conçus pour le gérer.",
+  "subtitle": "À mi-novembre 2026, SWIFT CBPR+ rejettera les adresses postales non structurées dans les messages pacs.008 et messages de paiement transfrontaliers associés.",
+  "title": "La deadline pacs.008 « adresse structurée » de novembre 2026 : vue à six mois",
+  "language": "fr"
 }

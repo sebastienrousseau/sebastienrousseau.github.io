@@ -156,8 +156,6 @@ Scorecard ìmúrasílẹ̀ quantum tó dájú nílò títọpa ìpín gangan, k�
 
 ## Ìṣíkiri Bẹ̀rẹ̀ Pẹ̀lú Ìwé Akọsílẹ̀ Cryptography
 
-![Àwòrán dashboard yàrá-ìṣàkóso tó ń ṣe àwòrán àwọn ìpilẹ̀ cryptographic káàkiri àwọn ojú-òde TLS bánkì, ìpín HSM, certificate authority, àti àwọn archive data tó pẹ́ — àkọsílẹ̀ àwòrán ti Cryptographic Bill of Materials.](https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80)
-
 A ti yé ìlò ìṣíkiri ní àkókò yìí. Ẹnu-ọ̀nà kọ̀ọ̀kan ń ṣe ẹ̀rí tó ń darí èyí tí ó kàn; fífò ẹnu-ọ̀nà tàbí dídí kì rẹ̀ ni ó ń ṣe ewu ìtúnṣe-platform pajawiri tó ń farahàn ní iwe ìkùnà Ètò Atọ́ka.
 
 ```mermaid

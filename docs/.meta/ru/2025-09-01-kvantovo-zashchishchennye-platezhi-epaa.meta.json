@@ -1,11 +1,11 @@
 {
-  "title": "Квантово-устойчивые платежи: почему индустрия должна действовать сейчас",
   "banner": "https://cloudcdn.pro/stocks/images/quantum-safe-payments.webp",
-  "locale": "ru_RU",
   "banner_alt": "Квантово-устойчивые платежи: white paper EPAA",
-  "subtitle": "Отраслевой white paper для Emerging Payments Association Asia",
-  "keywords": "квантово-устойчивые платежи, EPAA, PQC миграция, white paper, harvest-now-decrypt-later, оптовые платежи, регуляторы, NIST",
-  "description": "Структурная угроза, которую квантовые вычисления представляют для платёжной инфраструктуры, и обоснование необходимости согласованных действий уже сейчас.",
+  "title": "Квантово-устойчивые платежи: почему индустрия должна действовать сейчас",
   "date": "September 1, 2025",
-  "language": "ru-RU"
+  "keywords": "квантово-устойчивые платежи, EPAA, PQC миграция, white paper, harvest-now-decrypt-later, оптовые платежи, регуляторы, NIST",
+  "language": "ru-RU",
+  "locale": "ru_RU",
+  "description": "Структурная угроза, которую квантовые вычисления представляют для платёжной инфраструктуры, и обоснование необходимости согласованных действий уже сейчас.",
+  "subtitle": "Отраслевой white paper для Emerging Payments Association Asia"
 }

@@ -156,8 +156,6 @@ Věrohodné skóre kvantové připravenosti vyžaduje sledování přesných pro
 
 ## Migrace začíná u rejstříku kryptografie
 
-![Fotografie dashboardu řídicí místnosti mapujícího kryptografická primitiva napříč TLS endpointy banky, oddíly HSM, certifikačními autoritami a archivy dlouhověkých dat — vizuální rejstřík Cryptographic Bill of Materials.](https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80)
-
 Sekvence migrace je v této chvíli dobře pochopena. Každá brána produkuje důkazy, které pohánějí tu následující; přeskočení nebo zkrácení brány je to, co generuje riziko nouzového re-platformingu uvedené ve sloupci selhání architektury indexu.
 
 ```mermaid

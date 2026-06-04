@@ -1,11 +1,11 @@
 {
-  "keywords": "ERC-20, Ethereum, token, fungibile, smart contract, DeFi, stablecoin, ICO",
-  "date": "January 24, 2018",
-  "language": "it-IT",
   "subtitle": "Come uno standard semplice ha sbloccato un'esplosione di token e finanza decentralizzata",
-  "title": "ERC-20: l'interfaccia token di Ethereum che ha cambiato il mondo",
-  "description": "Lo standard ERC-20 ha definito un'interfaccia comune per i token fungibili su Ethereum, abilitando exchange, wallet e protocolli DeFi a operare in modo interoperabile.",
   "banner_alt": "Laptop spento su un tavolo di legno marrone",
+  "date": "January 24, 2018",
+  "title": "ERC-20: l'interfaccia token di Ethereum che ha cambiato il mondo",
   "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
-  "locale": "it_IT"
+  "language": "it-IT",
+  "locale": "it_IT",
+  "keywords": "ERC-20, Ethereum, token, fungibile, smart contract, DeFi, stablecoin, ICO",
+  "description": "Lo standard ERC-20 ha definito un'interfaccia comune per i token fungibili su Ethereum, abilitando exchange, wallet e protocolli DeFi a operare in modo interoperabile."
 }

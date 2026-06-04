@@ -156,8 +156,6 @@ Kuantum-Güvenli Bankacılık İndeksi, kurumunuzun o kesişim gelmeden göçü 
 
 ## Göç, Kriptografi Defteriyle Başlar
 
-![Bir bankanın TLS uç noktaları, HSM bölümleri, sertifika otoriteleri ve uzun ömürlü veri arşivleri boyunca kriptografik ilkelleri haritalayan kontrol odası panosunun fotoğrafı — bir Kriptografik Malzeme Listesinin görsel kaydı.](https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80)
-
 Göç sırası bu noktada iyi anlaşılmıştır. Her kapı bir sonrakini besleyen kanıt üretir; bir kapıyı atlamak veya sıkıştırmak, İndeks Mimarisi başarısızlık sütununda görünen acil yeniden platformlama riskini üreten şeydir.
 
 ```mermaid

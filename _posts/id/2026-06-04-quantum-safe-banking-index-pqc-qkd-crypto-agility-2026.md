@@ -156,8 +156,6 @@ Scorecard kesiapan kuantum yang kredibel mengharuskan pelacakan persentase eksak
 
 ## Migrasi Dimulai dari Buku Besar Kriptografi
 
-![Foto dashboard ruang kendali yang memetakan primitif kriptografi di seluruh endpoint TLS bank, partisi HSM, certificate authority, dan arsip data berumur panjang — register visual sebuah Cryptographic Bill of Materials.](https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80)
-
 Urutan migrasi sudah dipahami dengan baik saat ini. Setiap gate menghasilkan bukti yang menggerakkan gate berikutnya; melewati atau memampatkan gate adalah yang menghasilkan risiko re-platforming darurat yang muncul di kolom kegagalan Arsitektur Indeks.
 
 ```mermaid
