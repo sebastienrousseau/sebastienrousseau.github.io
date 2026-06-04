@@ -1,11 +1,11 @@
 {
-  "subtitle": "ব্লকচেইন, বিতরণকৃত লেজার এবং ২০১৮ সালের সবচেয়ে গুরুত্বপূর্ণ প্রযুক্তি।",
-  "locale": "bn_BD",
-  "banner_alt": "বাদামী কাঠের টেবিলের উপর বন্ধ ল্যাপটপ কম্পিউটার",
-  "description": "ব্যক্তিগত-কী ক্রিপ্টোগ্রাফি এবং পিয়ার-টু-পিয়ার (P2P) নেটওয়ার্কের মাধ্যমে ডিজিটাল লেনদেন সুরক্ষিত করার অসাধারণ যাত্রার একটি গল্প।",
-  "keywords": "pain001, iso 20022, পেমেন্ট অটোমেশন, খরচ হ্রাস, পেমেন্ট প্রসেসিং, পেমেন্ট ফাইল, পেমেন্ট ইনিশিয়েশন, pain message, pain message standards, pain message validation",
-  "date": "Jan 02, 2018",
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
   "title": "Blockchain explained, the technology that matters the most",
-  "language": "bn-BD"
+  "keywords": "pain001, iso 20022, পেমেন্ট অটোমেশন, খরচ হ্রাস, পেমেন্ট প্রসেসিং, পেমেন্ট ফাইল, পেমেন্ট ইনিশিয়েশন, pain message, pain message standards, pain message validation",
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "date": "Jan 02, 2018",
+  "description": "ব্যক্তিগত-কী ক্রিপ্টোগ্রাফি এবং পিয়ার-টু-পিয়ার (P2P) নেটওয়ার্কের মাধ্যমে ডিজিটাল লেনদেন সুরক্ষিত করার অসাধারণ যাত্রার একটি গল্প।",
+  "locale": "bn_BD",
+  "language": "bn-BD",
+  "banner_alt": "বাদামী কাঠের টেবিলের উপর বন্ধ ল্যাপটপ কম্পিউটার",
+  "subtitle": "ব্লকচেইন, বিতরণকৃত লেজার এবং ২০১৮ সালের সবচেয়ে গুরুত্বপূর্ণ প্রযুক্তি।"
 }

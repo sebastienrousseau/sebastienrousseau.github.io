@@ -1,11 +1,11 @@
 {
-  "title": "Kwantumalgoritme daagt rooster-gebaseerde cryptografie uit",
+  "description": "Een nieuw kwantumalgoritme lost een centraal cryptografisch probleem op en dringt aan op versneld onderzoek naar kwantumveilige beveiliging.",
   "language": "nl-NL",
-  "keywords": "Kwantumalgoritme, rooster-gebaseerde cryptografie, post-kwantum, NIST, beveiliging",
-  "locale": "nl_NL",
   "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
   "banner_alt": "Visualisatie van een kwantumalgoritme tegen rooster-gebaseerde cryptografie",
-  "description": "Een nieuw kwantumalgoritme lost een centraal cryptografisch probleem op en dringt aan op versneld onderzoek naar kwantumveilige beveiliging.",
+  "title": "Kwantumalgoritme daagt rooster-gebaseerde cryptografie uit",
+  "date": "April 15, 2024",
   "subtitle": "Een nieuw kwantumalgoritme zet de standaardvoorstellen voor post-kwantumcryptografie onder druk",
-  "date": "April 15, 2024"
+  "keywords": "Kwantumalgoritme, rooster-gebaseerde cryptografie, post-kwantum, NIST, beveiliging",
+  "locale": "nl_NL"
 }

@@ -64,14 +64,15 @@ export const CSP_DIRECTIVES = [
   "object-src 'none'",
   "frame-ancestors 'none'",
   "upgrade-insecure-requests",
-  // Header script-src deliberately omits 'unsafe-inline'. CSP intersection
-  // means the meta-CSP hash list still gates the actual inline JSON-LD
-  // blob on every postbuild-processed page, so this layer doesn't need
-  // to repeat the relaxation. Stripping it closes the response-header
-  // gap that security scanners flag and provides defence in depth on
-  // any page that might bypass postbuild (none today — verified all
-  // pages, including 404, ship with hashed meta-CSP).
-  "script-src 'self' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com",
+  // Header script-src must include 'unsafe-inline' and 'inline-speculation-rules'
+  // because the browser intersects header and meta CSPs — the strictest of the
+  // two applies for any given directive. Stripping 'unsafe-inline' here did
+  // close a security-scanner gap, but it also blocked the per-page inline
+  // theme-bootstrap script, the speculation-rules block, and any mermaid
+  // dynamic-import target. https://cdn.jsdelivr.net is the mermaid@10 CDN
+  // (the postbuild injects a `<div class="mermaid">` and main.js lazy-imports
+  // the ESM bundle on first scroll).
+  "script-src 'self' 'unsafe-inline' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com",
   "frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com",
   "connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com",
   "img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co",

@@ -1,11 +1,11 @@
 {
-  "language": "tr-TR",
+  "title": "Yapay zeka prompt mühendisliğinde ilerlemeler",
   "keywords": "prompt mühendisliği, yapay zeka, LLM, üretken yapay zeka, en iyi uygulamalar",
+  "banner": "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp",
+  "locale": "tr_TR",
+  "date": "January 23, 2024",
   "subtitle": "Büyük dil modelleri için prompt'ları tasarlama ve optimize etme",
   "description": "Prompt mühendisliği: LLM'lerden tutarlı ve eyleme dönüştürülebilir sonuçlar elde etmek için teknikler.",
-  "locale": "tr_TR",
-  "banner_alt": "Bir prompt'un görselleştirmesi",
-  "banner": "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp",
-  "date": "January 23, 2024",
-  "title": "Yapay zeka prompt mühendisliğinde ilerlemeler"
+  "language": "tr-TR",
+  "banner_alt": "Bir prompt'un görselleştirmesi"
 }
