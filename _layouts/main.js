@@ -415,11 +415,20 @@ document.addEventListener("click", function (event) {
     // diagrams stay legible in both light and dark modes without having
     // to swap themes on data-theme change. Diagrams reflow correctly
     // when the user toggles the colour scheme.
+    //
+    // `startOnLoad: false` + explicit `run()` is required because we
+    // dynamic-import mermaid AFTER DOMContentLoaded has already fired
+    // (the parent script tag is `defer`, and the import resolves on a
+    // microtask further down). With `startOnLoad: true` Mermaid would
+    // hook DOMContentLoaded too late and never auto-render — leaving
+    // the raw `flowchart LR` text in the page. Calling run() ourselves
+    // closes that timing gap.
     try {
         var mod = await import(
             "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"
         );
-        mod.default.initialize({ startOnLoad: true, securityLevel: "strict", theme: "neutral" });
+        mod.default.initialize({ startOnLoad: false, securityLevel: "strict", theme: "neutral" });
+        await mod.default.run({ querySelector: "pre.mermaid" });
     } catch (err) {
         console.warn("mermaid load failed", err);
     }

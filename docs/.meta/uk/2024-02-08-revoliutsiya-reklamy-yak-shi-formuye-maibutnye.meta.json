@@ -1,11 +1,11 @@
 {
-  "language": "uk-UA",
-  "banner": "https://cloudcdn.pro/stocks/images/advertising-ai.webp",
   "banner_alt": "Жінка-робот з метеликами та квітами",
-  "date": "Feb 08, 2024",
-  "description": "Дізнайтесь, як AI трансформує рекламу: аналіз Rufus від Amazon та останніх розробок Meta. Відкрийте вплив на залученість споживачів у цифровому маркетингу",
-  "keywords": "AI у рекламі, Amazon Rufus, інструменти Meta AI, таргетування споживачів, рекламні технології, AI чат-боти, тенденції цифрового маркетингу, AI аналітика, творчий AI, оптимізація рекламних кампаній",
   "locale": "uk_UA",
+  "language": "uk-UA",
+  "description": "Дізнайтесь, як AI трансформує рекламу: аналіз Rufus від Amazon та останніх розробок Meta. Відкрийте вплив на залученість споживачів у цифровому маркетингу",
   "title": "[UK DRAFT] Generative AI in Advertising: Amazon Rufus & Meta",
-  "subtitle": "Як AI Трансформує Взаємодію зі Споживачами та Динаміку Реклами"
+  "banner": "https://cloudcdn.pro/stocks/images/advertising-ai.webp",
+  "subtitle": "Як AI Трансформує Взаємодію зі Споживачами та Динаміку Реклами",
+  "date": "Feb 08, 2024",
+  "keywords": "AI у рекламі, Amazon Rufus, інструменти Meta AI, таргетування споживачів, рекламні технології, AI чат-боти, тенденції цифрового маркетингу, AI аналітика, творчий AI, оптимізація рекламних кампаній"
 }

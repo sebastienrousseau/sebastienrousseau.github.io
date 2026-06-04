@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
+  "language": "yo-NG",
+  "date": "Nov 05, 2023",
   "locale": "yo_NG",
   "banner_alt": "Iṣiro Mathimatiki",
-  "title": "Mathematical and Cryptographic Constants for Rust Security",
   "description": "Daabobo iduroṣinṣin koodu pẹlu awọn iye igbagbogbo mathimatiki ati cryptographic ti a ṣayẹwo daradara, fikun aabo iranti ati concurrency fun aabo koodu to dara sii.",
-  "subtitle": "Awọn iye igbagbogbo mathimatiki ati cryptographic ti a ṣayẹwo fun aabo Rust ti o ni aabo iranti.",
-  "language": "yo-NG",
+  "title": "Mathematical and Cryptographic Constants for Rust Security",
+  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
   "keywords": "awọn iye igbagbogbo mathimatiki, awọn iye igbagbogbo cryptographic, Rust security, ibaraẹnisọrọ ailewu, encryption, RSA, elliptic curve cryptography, Common (CMN) library, awọn ohun elo Rust, iṣiro mathimatiki",
-  "date": "Nov 05, 2023"
+  "subtitle": "Awọn iye igbagbogbo mathimatiki ati cryptographic ti a ṣayẹwo fun aabo Rust ti o ni aabo iranti."
 }

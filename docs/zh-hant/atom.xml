@@ -4,13 +4,13 @@
   <link href="https://sebastienrousseau.com/zh-hant/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/zh-hant/"/>
   <id>https://sebastienrousseau.com/zh-hant/</id>
-  <updated>2026-06-04T14:29:02+00:00</updated>
+  <updated>2026-06-04T16:44:39+00:00</updated>
   <entry>
     <title>2026 年的多管道銀行:在單一策略中整合卡片、A2A、穩定幣、RTP、FedNow 與 Open Banking</title>
     <link href="https://sebastienrousseau.com/zh-hant/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
     <id>https://sebastienrousseau.com/zh-hant/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
-    <updated>2026-06-04T14:29:02+00:00</updated>
-    <published>2026-06-04T14:29:02+00:00</published>
+    <updated>2026-06-04T16:44:39+00:00</updated>
+    <published>2026-06-04T16:44:39+00:00</published>
     <summary>FedNow 要求 24/7 預籌流動性。ACH 便宜但是 T+1。USDC 原子結算卻需錢包基礎設施。2026 年多管道銀行依成本、終局性、流動性成本逐筆路由,核心是讀取 ISO 20022 pacs.008 的編排引擎。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -18,8 +18,8 @@
     <title>後量子支付基礎建設:銀行為何可能替換而非改造傳統管道</title>
     <link href="https://sebastienrousseau.com/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
     <id>https://sebastienrousseau.com/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-06-04T14:29:02+00:00</updated>
-    <published>2026-06-04T14:29:02+00:00</published>
+    <updated>2026-06-04T16:44:39+00:00</updated>
+    <published>2026-06-04T16:44:39+00:00</published>
     <summary>後量子密碼學迫使支付管道做出二選一決定:在 SWIFT MT 與 ISO 20022 信封中改造 RSA/ECC,或以密碼敏捷基礎建設替換。架構師必須在 HNDL 變成實際損失之前做出決定。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -27,8 +27,8 @@
     <title>數位資產 2026:銀行不能延後的轉型</title>
     <link href="https://sebastienrousseau.com/zh-hant/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
     <id>https://sebastienrousseau.com/zh-hant/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
-    <updated>2026-06-04T14:29:02+00:00</updated>
-    <published>2026-06-04T14:29:02+00:00</published>
+    <updated>2026-06-04T16:44:39+00:00</updated>
+    <published>2026-06-04T16:44:39+00:00</published>
     <summary>數位資產不再是創新賭注,而是結算、託管與資產負債表的架構命題。銀行的戰略課題,是在結構性不確定下完成基礎建設設計。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>

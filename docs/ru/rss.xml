@@ -6,14 +6,14 @@
     <description>Статьи на русском языке: прикладной ИИ, платежи ISO 20022, постквантовая криптография и трансформация оптовых платежей.</description>
     <atom:link href="https://sebastienrousseau.com/ru/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ru-RU</language>
-    <lastBuildDate>Thu, 04 Jun 2026 14:29:02 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2026 16:44:39 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Все права защищены.</copyright>
     <item>
       <title>Индекс агентного ИИ для банков в 2026 году: измерение автономии, управления, аудируемости и бизнес-эффекта</title>
       <link>https://sebastienrousseau.com/ru/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</link>
       <description>Индексная методика для измерения готовности банков к агентному ИИ: автономия, управление, аудируемость, надёжность, контроли и бизнес-ценность.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</guid>
-      <pubDate>Thu, 04 Jun 2026 14:29:02 +0000</pubDate>
+      <pubDate>Thu, 04 Jun 2026 16:44:39 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>агентный ИИ в банках 2026</category>
@@ -28,7 +28,7 @@
       <link>https://sebastienrousseau.com/ru/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow требует предварительно профондированной ликвидности 24/7. ACH дешёв, но T+1. USDC рассчитывается атомарно, но требует кошельковой инфраструктуры. Мульти-рельсовый банк 2026 года маршрутизирует каждый платёж по стоимости, окончательности и цене ликвидности.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Thu, 04 Jun 2026 14:29:02 +0000</pubDate>
+      <pubDate>Thu, 04 Jun 2026 16:44:39 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>уровень оркестрации платежей</category>
@@ -50,7 +50,7 @@
       <link>https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>Постквантовая криптография ставит платёжные рельсы перед бинарным выбором: доработка RSA/ECC в конвертах SWIFT MT и ISO 20022, не рассчитанных на ML-KEM и ML-DSA, либо замена на криптоагильную инфраструктуру. Архитекторы должны решить до того, как HNDL станет операционной потерей.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Thu, 04 Jun 2026 14:29:02 +0000</pubDate>
+      <pubDate>Thu, 04 Jun 2026 16:44:39 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>постквантовая криптография</category>
@@ -76,7 +76,7 @@
       <link>https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>Цифровые активы перестали быть ставкой на инновацию. Это вопрос архитектуры расчётов, хранения и баланса. Стратегическая задача банков — проектировать инфраструктуру в условиях структурной неопределённости.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Thu, 04 Jun 2026 14:29:02 +0000</pubDate>
+      <pubDate>Thu, 04 Jun 2026 16:44:39 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>цифровые активы 2026</category>

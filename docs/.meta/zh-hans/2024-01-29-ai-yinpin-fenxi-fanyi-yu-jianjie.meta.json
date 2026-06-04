@@ -1,11 +1,11 @@
 {
   "description": "Audio Analyser 借助 Microsoft Azure AI 实现音频转录、情感分析、翻译与可执行洞察，加速决策。",
+  "banner_alt": "极简现代化的企业办公室",
+  "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp",
+  "locale": "zh_CN",
+  "date": "January 29, 2024",
+  "language": "zh-Hans",
   "subtitle": "探索由 Azure AI 驱动的 Audio Analyser 如何变革语音转文本、文本分析与翻译，提取可执行洞察",
   "keywords": "Audio Analyser, Azure AI, 语音转文本, 自然语言处理, 情感分析, 多语言翻译, 客户服务, 市场研究, 医疗, 金融",
-  "locale": "zh_CN",
-  "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp",
-  "language": "zh-Hans",
-  "date": "January 29, 2024",
-  "banner_alt": "极简现代化的企业办公室",
   "title": "AI 驱动的音频分析、翻译与洞察"
 }
