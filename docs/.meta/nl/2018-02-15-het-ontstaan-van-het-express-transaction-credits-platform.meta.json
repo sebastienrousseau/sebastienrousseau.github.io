@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
-  "language": "nl-NL",
-  "locale": "nl_NL",
-  "title": "Het ontstaan van het Express Transaction Credits-platform",
-  "subtitle": "Snelle, schaalbare betalingen voor de digitale economie van morgen",
-  "description": "Hoe het Express Transaction Credits-platform werd ontworpen om snelle, schaalbare betalingen mogelijk te maken voor consumenten en handelaren.",
   "date": "February 15, 2018",
   "banner_alt": "Schematische weergave van het ETC-betaalplatform",
-  "keywords": "Express Transaction Credits, betalingen, fintech, blockchain, schaalbaarheid, settlement"
+  "locale": "nl_NL",
+  "subtitle": "Snelle, schaalbare betalingen voor de digitale economie van morgen",
+  "description": "Hoe het Express Transaction Credits-platform werd ontworpen om snelle, schaalbare betalingen mogelijk te maken voor consumenten en handelaren.",
+  "language": "nl-NL",
+  "keywords": "Express Transaction Credits, betalingen, fintech, blockchain, schaalbaarheid, settlement",
+  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
+  "title": "Het ontstaan van het Express Transaction Credits-platform"
 }

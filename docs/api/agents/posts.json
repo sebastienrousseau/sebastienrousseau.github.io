@@ -1,6 +1,28 @@
 {
-  "count": 63,
+  "count": 64,
   "posts": [
+    {
+      "slug": "2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026",
+      "url": "https://sebastienrousseau.com/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html",
+      "date": "2026-06-04",
+      "title": "The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk",
+      "description": "A banking index for quantum-safe readiness in 2026, covering NIST post-quantum standards, cryptographic inventory, crypto-agility, QKD, and long-lived data exposure.",
+      "keywords": [
+        "quantum safe banking 2026",
+        "post quantum cryptography banks",
+        "NIST FIPS 203",
+        "ML-KEM",
+        "ML-DSA",
+        "SLH-DSA",
+        "crypto agility",
+        "QKD banking"
+      ],
+      "banner": "https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80",
+      "topics": [
+        "post-quantum-cryptography"
+      ],
+      "language": "en-GB"
+    },
     {
       "slug": "2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026",
       "url": "https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/index.html",

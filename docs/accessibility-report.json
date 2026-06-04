@@ -1,6 +1,6 @@
 {
-  "pages_scanned": 82,
-  "total_issues": 81,
+  "pages_scanned": 83,
+  "total_issues": 82,
   "wcag_version": "2.2",
   "pages": [
     {
@@ -625,6 +625,16 @@
     },
     {
       "path": "2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html",
       "issues": [
         {
           "criterion": "ARIA",

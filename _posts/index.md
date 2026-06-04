@@ -235,6 +235,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html" title="The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk">
+<img alt="The Quantum-Safe Banking Index 2026 index diagram for banks and financial institutions in 2026" src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum Cryptography · Post-Quantum Cryptography · PQC</span>
+<h3><a href="/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html">The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-04">June 4, 2026</time></p>
+<p class="newsroom-excerpt">An index framework for measuring quantum-safe banking readiness in 2026: cryptographic bill of materials, hybrid TLS deployment, NIST FIPS 203 / 204 / 205 migration progress, crypto-agility primitives, and harvest-now-decrypt-later exposure across long-lived confidential data. The Board-Level Quantum Scorecard defines four exact percentages — inventory completeness, HNDL exposure, NIST migration progress, crypto-agility readiness — that turn project statuses into supervisory-ready evidence.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/index.html" title="The Agentic AI Index for Banks in 2026: Measuring Autonomy, Governance, Auditability, and Business Impact">
 <img alt="The Agentic AI Index for Banks 2026 index diagram for banks and financial institutions in 2026" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -291,18 +303,6 @@ site_software: "Static Site Generator, Rust"
 <h3><a href="/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html">Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-30">May 30, 2026</time></p>
 <p class="newsroom-excerpt">The UK Wholesale Digital Markets Champion role makes tokenised gilts, DLT-based settlement, and digital wholesale finance a national competitiveness project. The 2026 strategic question for banks is design discipline — which tokenised assets sit on which platform, how settlement risk is evidenced, and how to defend the City's wholesale role against Singapore, Switzerland, and Frankfurt.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html" title="ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026">
-<img alt="ISO 20022 payment data product diagram showing structured addresses, purpose codes, reconciliation, fraud detection, liquidity forecasting, sanctions screening, and analytics products" src="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">ISO 20022 · Structured Address · CBPR+</span>
-<h3><a href="/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html">ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-29">May 29, 2026</time></p>
-<p class="newsroom-excerpt">ISO 20022 after migration is not a project closeout — it's the start of a data-product opportunity. Structured addresses, purpose codes, invoice details, and rich status events become reconciliation, fraud, liquidity, and compliance products. The 2026 question is design discipline: which payment data carries which client workflow, priced for which corporate.</p>
 </div>
 </article>
 
