@@ -2,17 +2,17 @@
 from __future__ import annotations
 
 import sys
+import xml.etree.ElementTree as ET
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
-import xml.etree.ElementTree as ET
-import pytest
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "scripts" / "generators"))
 sys.path.insert(0, str(ROOT / "scripts" / "lib"))
 
-import build_news_sitemap as bns
 import _lang_registry
+import build_news_sitemap as bns
+
 
 def test_xml_escape():
     assert bns.xml_escape("A & B < C > D \" E ' F") == "A &amp; B &lt; C &gt; D &quot; E &apos; F"
@@ -110,7 +110,7 @@ def test_main_generates_correct_sitemap(tmp_path, monkeypatch):
     assert f"https://sebastienrousseau.com/{yesterday_str}-mock-english-post/" in locs
     assert f"https://sebastienrousseau.com/fr/{yesterday_str}-mock-french-post/" in locs
     
-    fr_url = [u for u in urls if f"fr/{yesterday_str}-mock-french-post" in u.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc").text][0]
+    fr_url = next(u for u in urls if f"fr/{yesterday_str}-mock-french-post" in u.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc").text)
     news = fr_url.find("{http://www.google.com/schemas/sitemap-news/0.9}news")
     assert news is not None
     
