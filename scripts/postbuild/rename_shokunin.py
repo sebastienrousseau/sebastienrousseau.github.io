@@ -36,13 +36,13 @@ TARGETS = [
 EXTRA_FILES = [
     "Makefile",
     "build.sh",
-    "scripts/postbuild.py",
-    "scripts/gen_articles.py",
-    "scripts/gen_projects.py",
-    "scripts/gen_papers.py",
-    "scripts/gen_layouts.py",
-    "scripts/fix_seo_meta.py",
-    "scripts/fix_cdn_urls.py",
+    "scripts/postbuild/postbuild.py",
+    "scripts/generators/gen_articles.py",
+    "scripts/generators/gen_projects.py",
+    "scripts/generators/gen_papers.py",
+    "scripts/generators/gen_layouts.py",
+    "scripts/postbuild/fix_seo_meta.py",
+    "scripts/postbuild/fix_cdn_urls.py",
 ]
 EXTENSIONS = {".md", ".html", ".js", ".py", ".sh"}
 

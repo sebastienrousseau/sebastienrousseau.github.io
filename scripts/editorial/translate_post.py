@@ -6,7 +6,7 @@ so no Anthropic API key ever lives in this repo.
 
 Workflow:
 
-  1. ``scripts/publish_daily.sh`` (or ``make publish-today``) runs THIS
+  1. ``scripts/editorial/publish-daily.sh`` (or ``make publish-today``) runs THIS
      script first. For each active non-EN locale it writes:
         - ``_posts/<lang>/<localized-slug>.md`` with localised
           frontmatter and a placeholder body (the EN body with a
@@ -25,9 +25,9 @@ Workflow:
 
 Usage::
 
-    python3 scripts/translate_post.py 2026-05-19-global-wholesale-payments-economics-2026
-    python3 scripts/translate_post.py <slug> --langs fr es de ja   # subset
-    python3 scripts/translate_post.py <slug> --dry-run             # plan only
+    python3 scripts/editorial/translate_post.py 2026-05-19-global-wholesale-payments-economics-2026
+    python3 scripts/editorial/translate_post.py <slug> --langs fr es de ja   # subset
+    python3 scripts/editorial/translate_post.py <slug> --dry-run             # plan only
 
 Idempotent — re-running on an already-translated post leaves real
 translations alone (only files whose body still starts with the
@@ -274,7 +274,7 @@ def main() -> int:
         print(
             "\nNext step: run Claude Code locally and ask it to translate "
             "the stub bodies (it'll find them with "
-            f"`python3 scripts/translate_post.py {args.slug} --list-stubs`)."
+            f"`python3 scripts/editorial/translate_post.py {args.slug} --list-stubs`)."
         )
     return 0
 

@@ -6,14 +6,14 @@
     <description>Artigos em português: IA aplicada, pagamentos ISO 20022, criptografia pós-quântica e transformação dos pagamentos de atacado.</description>
     <atom:link href="https://sebastienrousseau.com/pt-br/rss.xml" rel="self" type="application/rss+xml"/>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 04 Jun 2026 18:08:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2026 21:13:35 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Todos os direitos reservados.</copyright>
     <item>
       <title>O Banco Multi-Trilho em 2026: Cartões, A2A, Stablecoins, RTP, FedNow e Open Banking em uma única estratégia</title>
       <link>https://sebastienrousseau.com/pt-br/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow exige liquidez pré-financiada 24/7. ACH é barato, mas T+1. USDC liquida atomicamente, mas precisa de carteira. O banco multi-trilho de 2026 roteia cada pagamento por custo, finalidade e custo de liquidez — guiado por motor de orquestração que lê ISO 20022 pacs.008.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Thu, 04 Jun 2026 18:08:19 +0000</pubDate>
+      <pubDate>Thu, 04 Jun 2026 21:13:35 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>motor de orquestração de pagamentos</category>
@@ -35,7 +35,7 @@
       <link>https://sebastienrousseau.com/pt-br/2026-05-31-post-quantum-pagamentos-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>ML-KEM e ML-DSA não cabem nos envelopes SWIFT MT e ISO 20022 dimensionados para RSA-2048. HNDL fecha a janela. Em 2026, substituir os trilhos vence adaptar.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-05-31-post-quantum-pagamentos-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Thu, 04 Jun 2026 18:08:19 +0000</pubDate>
+      <pubDate>Thu, 04 Jun 2026 21:13:35 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>criptografia pós-quântica</category>
@@ -61,7 +61,7 @@
       <link>https://sebastienrousseau.com/pt-br/2026-05-30-uk-atacado-digital-markets-tokenised-gilts-settlement-2026/</link>
       <description>O papel de Campeão dos Mercados de Atacado Digitais do Reino Unido transforma o atacado tokenizado em projeto nacional de competitividade para 2026.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-05-30-uk-atacado-digital-markets-tokenised-gilts-settlement-2026/</guid>
-      <pubDate>Thu, 04 Jun 2026 18:08:19 +0000</pubDate>
+      <pubDate>Thu, 04 Jun 2026 21:13:35 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>mercados de atacado digitais Reino Unido 2026</category>
@@ -77,7 +77,7 @@
       <link>https://sebastienrousseau.com/pt-br/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
       <description>ISO 20022 após a migração é uma oportunidade de produto de dados. Endereços estruturados, códigos de finalidade, detalhes de fatura, mensagens de investigação e eventos de status mais ricos viram produtos de conciliação, fraude, liquidez, compliance e analytics.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
-      <pubDate>Thu, 04 Jun 2026 18:08:19 +0000</pubDate>
+      <pubDate>Thu, 04 Jun 2026 21:13:35 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>ISO 20022 2026</category>

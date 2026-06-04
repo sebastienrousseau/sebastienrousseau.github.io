@@ -297,7 +297,7 @@ site_software: "Static Site Generator, Rust"
 <span class="newsroom-eyebrow">Acid Jazz · Uk Jazz · Acid Jazz Records</span>
 <h3><a href="/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html" title="The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture">The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-22">May 22, 2026</time> · Sebastien Rousseau</p>
-<p class="newsroom-excerpt">The UK acid jazz renewal in 2026 spans label releases, live dates by first-wave acts, and festival programming — Acid Jazz Records, Bangs &amp; Talbot, The Brand New Heavies, Galliano, James Taylor Quartet, and Mostly Jazz Funk &amp; Soul Festival are all active at once.</p>
+<p class="newsroom-excerpt">The UK acid jazz renewal in 2026 spans label releases, live dates by first-wave acts, and festival programming — Acid Jazz Records, Bangs & Talbot, The Brand New Heavies, Galliano, James Taylor Quartet, and Mostly Jazz Funk & Soul Festival are all active at once.</p>
 </div>
 </article>
 

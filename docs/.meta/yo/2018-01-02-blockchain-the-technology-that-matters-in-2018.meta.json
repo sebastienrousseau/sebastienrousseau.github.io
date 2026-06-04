@@ -1,11 +1,11 @@
 {
-  "subtitle": "Blockchain, àwọn ìwé àkọsílẹ̀ tí a pínká, àti ìmọ̀ ẹrọ tó ṣe pàtàkì jùlọ ní ọdún 2018.",
-  "description": "Ìtàn ìrìn àjò àgbàyanu ti ìtọ́jú àwọn ìdúnàádúrà ohun àmúlò àgbáyé nípasẹ̀ Private-key Cryptography àti àwọn nẹtiwọọki Peer-to-peer (P2P).",
-  "locale": "yo_NG",
-  "keywords": "pain001, iso 20022, ìmúdàgba ìsanwó, idinku owó, ìṣiṣẹ́ ìsanwó, àwọn fáìlì ìsanwó, ìbẹ̀rẹ̀ ìsanwó, pain message, pain message standards, pain message validation",
-  "date": "Jan 02, 2018",
-  "title": "Blockchain explained, the technology that matters the most",
+  "language": "yo-NG",
   "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "title": "Blockchain explained, the technology that matters the most",
+  "date": "Jan 02, 2018",
+  "locale": "yo_NG",
   "banner_alt": "Kọ̀mpútà tábìlẹ̀tì tí a pa tí ó wà lórí tábìlì igi àwọ̀ brownù",
-  "language": "yo-NG"
+  "keywords": "pain001, iso 20022, ìmúdàgba ìsanwó, idinku owó, ìṣiṣẹ́ ìsanwó, àwọn fáìlì ìsanwó, ìbẹ̀rẹ̀ ìsanwó, pain message, pain message standards, pain message validation",
+  "description": "Ìtàn ìrìn àjò àgbàyanu ti ìtọ́jú àwọn ìdúnàádúrà ohun àmúlò àgbáyé nípasẹ̀ Private-key Cryptography àti àwọn nẹtiwọọki Peer-to-peer (P2P).",
+  "subtitle": "Blockchain, àwọn ìwé àkọsílẹ̀ tí a pínká, àti ìmọ̀ ẹrọ tó ṣe pàtàkì jùlọ ní ọdún 2018."
 }

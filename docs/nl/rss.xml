@@ -6,14 +6,14 @@
     <description>Artikelen in het Nederlands: toegepaste AI, ISO 20022-betalingen, post-kwantumcryptografie en transformatie van het wholesale-betalingsverkeer.</description>
     <atom:link href="https://sebastienrousseau.com/nl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>nl-NL</language>
-    <lastBuildDate>Thu, 04 Jun 2026 18:08:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2026 21:13:35 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle rechten voorbehouden.</copyright>
     <item>
       <title>De Quantum-Safe Banking Index in 2026: post-kwantumcryptografie, QKD, crypto-wendbaarheid en harvest-now-decrypt-later-risico</title>
       <link>https://sebastienrousseau.com/nl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</link>
       <description>Een bankindex voor quantum-safe gereedheid in 2026, met de NIST post-kwantumstandaarden, cryptografische inventaris, crypto-wendbaarheid, QKD en blootstelling van langlevende data.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</guid>
-      <pubDate>Thu, 04 Jun 2026 18:08:19 +0000</pubDate>
+      <pubDate>Thu, 04 Jun 2026 21:13:35 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>quantum-safe banking 2026</category>
@@ -30,7 +30,7 @@
       <link>https://sebastienrousseau.com/nl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow vereist voorgefinancierde liquiditeit 24/7. ACH is goedkoop maar T+1. USDC wikkelt atomair af maar vergt wallet-infrastructuur. De multi-rail bank van 2026 routeert per kosten, finaliteit en liquiditeitskost via een orkestratie-engine die ISO 20022 pacs.008 leest.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Thu, 04 Jun 2026 18:08:19 +0000</pubDate>
+      <pubDate>Thu, 04 Jun 2026 21:13:35 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>betalingsorkestratielaag</category>
@@ -52,7 +52,7 @@
       <link>https://sebastienrousseau.com/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>Post-quantum-cryptografie dwingt betaalrails tot een binaire keuze: RSA/ECC aanpassen binnen SWIFT MT- en ISO 20022-enveloppen die nooit op ML-KEM en ML-DSA zijn afgestemd, of vervangen door crypto-flexibele infrastructuur. Architecten moeten beslissen voordat HNDL verlies wordt.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Thu, 04 Jun 2026 18:08:19 +0000</pubDate>
+      <pubDate>Thu, 04 Jun 2026 21:13:35 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>post-quantum-cryptografie</category>
@@ -78,7 +78,7 @@
       <link>https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
       <description>DORA, EU AI Act, GDPR, concentratierisico cloud en datasoevereiniteit smelten in 2026 samen tot één compliance-stack voor banken in Nederland.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
-      <pubDate>Thu, 04 Jun 2026 18:08:19 +0000</pubDate>
+      <pubDate>Thu, 04 Jun 2026 21:13:35 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>DORA 2026</category>

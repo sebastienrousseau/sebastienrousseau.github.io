@@ -6,14 +6,14 @@
     <description>한국어 기사: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 그리고 도매 결제 인프라의 구조적 변혁.</description>
     <atom:link href="https://sebastienrousseau.com/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>Thu, 04 Jun 2026 18:08:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2026 21:13:35 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
     <item>
       <title>2026년 멀티레일 뱅크: 카드·A2A·스테이블코인·RTP·FedNow·Open Banking을 하나의 전략으로</title>
       <link>https://sebastienrousseau.com/ko/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow는 24/7 사전 자금공급 유동성을 요구합니다. ACH는 저렴하지만 T+1입니다. USDC는 원자적으로 정산되지만 지갑 인프라가 필요합니다. 2026년 멀티레일 뱅크는 비용·결제 종결성·유동성 비용 기준으로 라우팅합니다.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Thu, 04 Jun 2026 18:08:19 +0000</pubDate>
+      <pubDate>Thu, 04 Jun 2026 21:13:35 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>결제 오케스트레이션 레이어</category>
@@ -35,7 +35,7 @@
       <link>https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>양자내성암호는 결제 레일에 이분법적 선택을 강요합니다. ML-KEM·ML-DSA용으로 설계되지 않은 SWIFT MT·ISO 20022 봉투에 RSA/ECC를 개조하거나, 암호 민첩성 인프라로 대체해야 합니다.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Thu, 04 Jun 2026 18:08:19 +0000</pubDate>
+      <pubDate>Thu, 04 Jun 2026 21:13:35 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>양자내성암호</category>
@@ -61,7 +61,7 @@
       <link>https://sebastienrousseau.com/ko/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>디지털 자산은 더 이상 혁신 베팅이 아닙니다. 결제, 수탁, 대차대조표 아키텍처의 문제입니다. 은행의 전략적 과제는 구조적 불확실성 속에서의 인프라 설계입니다.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Thu, 04 Jun 2026 18:08:19 +0000</pubDate>
+      <pubDate>Thu, 04 Jun 2026 21:13:35 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>디지털 자산 2026</category>

@@ -1,11 +1,11 @@
 {
-  "banner_alt": "DateTime (DTT), Kayan Aikin da Ake Bukata don Ayyukan Kwana da Lokaci.",
-  "language": "ha-NG",
-  "locale": "ha_NG",
-  "keywords": "DateTime, DTT, ɗakin karatu na Rust, tattarowa, tabbatarwa, sarrafa, tsarawa, kwanaki, lokaci",
-  "description": "DateTime (DTT) ɗakin karatu ne na Rust don tattaro, tabbatarwa, sarrafa da tsara kwanaki da lokaci — daidaito mai girma, ayyuka masu faɗi.",
   "title": "Efficient Date and Time Management with DateTime (DTT)",
   "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
   "subtitle": "DTT, ɗakin karatu na Rust mai daidaito mai girma don ayyukan kwana da lokaci.",
-  "date": "Dec 04, 2023"
+  "locale": "ha_NG",
+  "description": "DateTime (DTT) ɗakin karatu ne na Rust don tattaro, tabbatarwa, sarrafa da tsara kwanaki da lokaci — daidaito mai girma, ayyuka masu faɗi.",
+  "date": "Dec 04, 2023",
+  "keywords": "DateTime, DTT, ɗakin karatu na Rust, tattarowa, tabbatarwa, sarrafa, tsarawa, kwanaki, lokaci",
+  "language": "ha-NG",
+  "banner_alt": "DateTime (DTT), Kayan Aikin da Ake Bukata don Ayyukan Kwana da Lokaci."
 }

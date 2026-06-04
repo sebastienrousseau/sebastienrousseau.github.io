@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Kọ̀mpútà alàgbèéká tí a ti pa ní orí tábìlì funfun pẹ̀lú gilasi omi ní ọwọ́ òsì àti pẹ̀n, àkọ̀sílẹ̀ àti ọ̀gbìn ní ọwọ́ ọ̀tún",
-  "date": "Oct 09, 2023",
-  "keywords": "pain001, iso 20022, àtọwọdọwọ ìsanwó, ìdínkù ìnáwó, ìṣiṣẹ́ ìsanwó, àwọn fáìlì ìsanwó, ìbẹ̀rẹ̀ ìsanwó, pain message, pain message standards, pain message validation",
   "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
+  "title": "Static Site Generator: Fastest Rust-Based SSG",
   "subtitle": "Static Site Generator, olùṣẹ̀dá ìkànnì ẹlẹ́sẹ̀ tó yára jùlọ tó dá lórí Rust fún àwọn ìkànnì wẹ́bù tí ó ní ipa.",
+  "banner_alt": "Kọ̀mpútà alàgbèéká tí a ti pa ní orí tábìlì funfun pẹ̀lú gilasi omi ní ọwọ́ òsì àti pẹ̀n, àkọ̀sílẹ̀ àti ọ̀gbìn ní ọwọ́ ọ̀tún",
+  "language": "yo-NG",
+  "keywords": "pain001, iso 20022, àtọwọdọwọ ìsanwó, ìdínkù ìnáwó, ìṣiṣẹ́ ìsanwó, àwọn fáìlì ìsanwó, ìbẹ̀rẹ̀ ìsanwó, pain message, pain message standards, pain message validation",
   "description": "Ṣe ìfúnni agbára fún ọ láti ṣẹ̀dá àwọn ìkànnì wẹ́bù ẹlẹ́sẹ̀ tí ó ní ipa pẹ̀lú àwọn àǹfààní àìlópin, ìgbélárugẹ àìlópin, àti ìhàjọbí wẹ́bù àkànṣe tí ìwọ ń darí.",
   "locale": "yo_NG",
-  "title": "Static Site Generator: Fastest Rust-Based SSG",
-  "language": "yo-NG"
+  "date": "Oct 09, 2023"
 }

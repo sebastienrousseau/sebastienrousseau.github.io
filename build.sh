@@ -104,6 +104,7 @@ python3 scripts/generators/build_translations.py
 python3 scripts/generators/build_lang_feeds.py
 python3 scripts/generators/build_agent_api.py
 python3 scripts/generators/build_lead_magnets.py
+python3 scripts/generators/build_news_sitemap.py
 python3 scripts/postbuild/postbuild.py
 # Rewrite the in-page language switcher so each .ap-lang-item link
 # points to the localised URL of THIS page (per the page's own
@@ -126,19 +127,19 @@ fi
 # Allow the signing pass to fail (e.g. wrong COSIGN_PASSWORD on this
 # machine) without breaking the build — the committed bundles still ship.
 python3 scripts/security/sigstore_sign.py || true
-python3 scripts/tests/test_search_indexes.py
-python3 scripts/tests/test_i18n_parity.py
-python3 scripts/tests/test_i18n_strings.py
-python3 scripts/tests/test_i18n_labels.py
-python3 scripts/tests/test_i18n_takeaway_labels.py
-python3 scripts/tests/test_i18n_render_data.py
-python3 scripts/tests/test_i18n_author.py
-python3 scripts/tests/test_hreflang_reciprocity.py
-python3 scripts/tests/test_jsonld_localized.py
-python3 scripts/tests/test_sitemap_completeness.py
-python3 scripts/tests/test_lang_no_leakage.py
-python3 scripts/tests/test_rtl_safe.py --strict
-python3 scripts/tests/test_csp_strict.py
+python3 tests/validation/test_search_indexes.py
+python3 tests/validation/test_i18n_parity.py
+python3 tests/validation/test_i18n_strings.py
+python3 tests/validation/test_i18n_labels.py
+python3 tests/validation/test_i18n_takeaway_labels.py
+python3 tests/validation/test_i18n_render_data.py
+python3 tests/validation/test_i18n_author.py
+python3 tests/validation/test_hreflang_reciprocity.py
+python3 tests/validation/test_jsonld_localized.py
+python3 tests/validation/test_sitemap_completeness.py
+python3 tests/validation/test_lang_no_leakage.py
+python3 tests/validation/test_rtl_safe.py --strict
+python3 tests/validation/test_csp_strict.py
 # Cloudflare Worker (edge Accept-Language router + security headers) —
 # pure-logic tests, no Cloudflare runtime required. 100% line/branch/
 # function coverage is enforced via Node's built-in test coverage so the
