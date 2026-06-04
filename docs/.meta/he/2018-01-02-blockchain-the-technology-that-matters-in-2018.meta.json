@@ -1,11 +1,11 @@
 {
-  "description": "حكاية الرحلة الاستثنائية لتأمين المعاملات الرقمية عبر تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ (P2P).",
-  "language": "he-IL",
-  "title": "البلوكشين: التقنية التي تهمّ في 2018",
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
-  "subtitle": "تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ في خدمة معاملاتٍ آمنة",
   "locale": "he_IL",
+  "description": "حكاية الرحلة الاستثنائية لتأمين المعاملات الرقمية عبر تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ (P2P).",
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "title": "البلوكشين: التقنية التي تهمّ في 2018",
+  "subtitle": "تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ في خدمة معاملاتٍ آمنة",
   "keywords": "blockchain, العملة المشفّرة, Bitcoin, P2P, smart contract, السجل الموزّع, التمويل, سلسلة التوريد, الهويّة الرقمية, الترميز",
   "date": "January 2, 2018",
+  "language": "he-IL",
   "banner_alt": "حاسوب محمول مُطفأ فوق طاولة خشبية بُنّية"
 }

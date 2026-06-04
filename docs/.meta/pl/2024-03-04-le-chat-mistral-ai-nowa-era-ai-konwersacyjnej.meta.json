@@ -1,11 +1,11 @@
 {
-  "locale": "pl_PL",
+  "language": "pl-PL",
   "subtitle": "Asystent konwersacyjny od europejskiego lidera AI",
-  "date": "Mar 04, 2024",
-  "description": "Le Chat od Mistral AI: nowa era AI konwersacyjnej z naciskiem na otwartość, wydajność i europejskie podejście.",
-  "banner_alt": "Logo Le Chat Mistral AI",
-  "title": "Le Chat od Mistral AI: nowa era AI konwersacyjnej",
   "banner": "https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp",
+  "locale": "pl_PL",
+  "description": "Le Chat od Mistral AI: nowa era AI konwersacyjnej z naciskiem na otwartość, wydajność i europejskie podejście.",
+  "title": "Le Chat od Mistral AI: nowa era AI konwersacyjnej",
   "keywords": "Mistral AI, Le Chat, AI konwersacyjna, LLM, europejska AI, open source",
-  "language": "pl-PL"
+  "date": "Mar 04, 2024",
+  "banner_alt": "Logo Le Chat Mistral AI"
 }

@@ -4,13 +4,13 @@
   <link href="https://sebastienrousseau.com/es/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/es/"/>
   <id>https://sebastienrousseau.com/es/</id>
-  <updated>2026-06-04T12:12:47+00:00</updated>
+  <updated>2026-06-04T12:37:50+00:00</updated>
   <entry>
     <title>El banco multi-carril en 2026: tarjetas, A2A, stablecoins, RTP, FedNow y Open Banking en una sola estrategia</title>
     <link href="https://sebastienrousseau.com/es/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
     <id>https://sebastienrousseau.com/es/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
-    <updated>2026-06-04T12:12:47+00:00</updated>
-    <published>2026-06-04T12:12:47+00:00</published>
+    <updated>2026-06-04T12:37:50+00:00</updated>
+    <published>2026-06-04T12:37:50+00:00</published>
     <summary>FedNow exige liquidez prefinanciada 24/7. ACH es barato pero T+1. USDC liquida de forma atómica pero requiere infraestructura de wallet. El banco multi-carril de 2026 enruta cada pago por coste, finalidad y coste de liquidez mediante un motor de orquestación que lee pacs.008.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -18,8 +18,8 @@
     <title>Infraestructura de pagos poscuántica: por qué los bancos reemplazarán los carriles heredados en lugar de adaptarlos</title>
     <link href="https://sebastienrousseau.com/es/2026-05-31-post-quantum-pagos-infrastructure-replace-rather-than-retrofit-2026/"/>
     <id>https://sebastienrousseau.com/es/2026-05-31-post-quantum-pagos-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-06-04T12:12:47+00:00</updated>
-    <published>2026-06-04T12:12:47+00:00</published>
+    <updated>2026-06-04T12:37:50+00:00</updated>
+    <published>2026-06-04T12:37:50+00:00</published>
     <summary>La criptografía poscuántica impone una decisión binaria a los carriles de pago: adaptar RSA/ECC dentro de envoltorios SWIFT MT e ISO 20022 que nunca se dimensionaron para ML-KEM y ML-DSA, o reemplazarlos con infraestructura cripto-ágil. Hay que decidir antes de que HNDL sea pérdida operativa.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -27,8 +27,8 @@
     <title>Activos digitales en 2026: la transición de infraestructura que la banca no puede aplazar</title>
     <link href="https://sebastienrousseau.com/es/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
     <id>https://sebastienrousseau.com/es/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
-    <updated>2026-06-04T12:12:47+00:00</updated>
-    <published>2026-06-04T12:12:47+00:00</published>
+    <updated>2026-06-04T12:37:50+00:00</updated>
+    <published>2026-06-04T12:37:50+00:00</published>
     <summary>Los activos digitales ya no son una apuesta de innovación. Son una cuestión de arquitectura de liquidación, custodia y balance. La tarea estratégica del banco es diseñar infraestructura bajo incertidumbre estructural.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>

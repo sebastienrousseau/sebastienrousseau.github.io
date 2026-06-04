@@ -1,11 +1,11 @@
 {
-  "keywords": "Ethereum, ERC-223, ERC-20, EXTC, Express Transaction Credits, Blockchain, Zahlungen, Tokens, Kredite, dezentrale Finanzen",
-  "banner_alt": "Große weiße Säulen",
-  "subtitle": "Ein umfassendes Framework für die nächste Generation von ERC-223-Tokens",
-  "description": "Ein umfassendes Framework für die nächste Generation Ethereum-Request-for-Comment-konformer Tokens auf Basis des ERC-223-Standards entwickeln.",
-  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
   "locale": "de_DE",
-  "title": "Die Entstehung der Express Transaction Credits Plattform",
+  "keywords": "Ethereum, ERC-223, ERC-20, EXTC, Express Transaction Credits, Blockchain, Zahlungen, Tokens, Kredite, dezentrale Finanzen",
+  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
   "language": "de",
-  "date": "February 15, 2018"
+  "banner_alt": "Große weiße Säulen",
+  "title": "Die Entstehung der Express Transaction Credits Plattform",
+  "date": "February 15, 2018",
+  "description": "Ein umfassendes Framework für die nächste Generation Ethereum-Request-for-Comment-konformer Tokens auf Basis des ERC-223-Standards entwickeln.",
+  "subtitle": "Ein umfassendes Framework für die nächste Generation von ERC-223-Tokens"
 }
