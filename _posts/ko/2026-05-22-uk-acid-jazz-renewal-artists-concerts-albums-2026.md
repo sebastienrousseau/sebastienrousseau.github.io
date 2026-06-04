@@ -93,9 +93,9 @@ site_software: "Static Site Generator, Rust"
 <p class="post-lead-heading"><strong>핵심 요약</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>레이블.</strong> Acid Jazz Records의 2026년 Bandcamp 컴필레이션에는 Matt Berry, Kevin Fingier, The Brand New Heavies, Billy Valentine, Mama Terra가 수록되었다.</li>
-  <li><strong>신보.</strong> Bangs &amp; Talbot의 <em>Smokin' Aces</em>(2026년 1월 23일, Acid Jazz)는 Chris Bangs와 Mick Talbot을 그루브·펑크·소울·글로벌 퓨전 사운드 안에서 재결합시킨다.</li>
+  <li><strong>신보.</strong> Bangs & Talbot의 <em>Smokin' Aces</em>(2026년 1월 23일, Acid Jazz)는 Chris Bangs와 Mick Talbot을 그루브·펑크·소울·글로벌 퓨전 사운드 안에서 재결합시킨다.</li>
   <li><strong>라이브.</strong> The Glasshouse에서의 Brand New Heavies·Galliano 협연과 Ronnie Scott's에서의 James Taylor Quartet 공연은 2026년 라이브 목록에서 가장 선명한 애시드 재즈 신호다.</li>
-  <li><strong>페스티벌.</strong> Mostly Jazz Funk &amp; Soul Festival(2026년 7월 10–12일)은 Soul II Soul, Cymande, Jordan Rakei, Sampa The Great를 레거시 재즈 펑크 아티스트들과 함께 무대에 올린다.</li>
+  <li><strong>페스티벌.</strong> Mostly Jazz Funk & Soul Festival(2026년 7월 10–12일)은 Soul II Soul, Cymande, Jordan Rakei, Sampa The Great를 레거시 재즈 펑크 아티스트들과 함께 무대에 올린다.</li>
 </ul>
 <p class="post-lead-related"><strong>관련 읽을거리:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">토큰화 예금: 2026년 진행 중인 뱅킹 변혁</a>.</p>
 </aside>

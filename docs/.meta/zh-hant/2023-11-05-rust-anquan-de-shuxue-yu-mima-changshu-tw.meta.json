@@ -1,11 +1,11 @@
 {
+  "date": "November 5, 2023",
+  "locale": "zh_TW",
+  "subtitle": "透過嚴謹審查的數學與密碼常數維護程式碼完整性，增強記憶體與併發安全",
   "keywords": "CMN, Common 庫, Rust, 數學常數, 密碼常數, RSA, 橢圓曲線, π, e, 後量子密碼學",
   "title": "Rust 安全所需的數學與密碼常數",
-  "subtitle": "透過嚴謹審查的數學與密碼常數維護程式碼完整性，增強記憶體與併發安全",
-  "language": "zh-Hant",
-  "locale": "zh_TW",
-  "banner_alt": "巨大的白色柱子",
-  "date": "November 5, 2023",
   "description": "Common（CMN）庫為 Rust 開發者提供精確的數學與密碼常數，提升程式碼安全性與可靠性。",
-  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp"
+  "language": "zh-Hant",
+  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
+  "banner_alt": "巨大的白色柱子"
 }

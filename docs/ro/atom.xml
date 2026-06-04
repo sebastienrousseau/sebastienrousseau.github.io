@@ -4,13 +4,13 @@
   <link href="https://sebastienrousseau.com/ro/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ro/"/>
   <id>https://sebastienrousseau.com/ro/</id>
-  <updated>2026-06-04T18:08:19+00:00</updated>
+  <updated>2026-06-04T19:52:23+00:00</updated>
   <entry>
     <title>Indexul Băncii Sigure Cuantic în 2026: criptografie post-cuantică, QKD, agilitate criptografică și riscul harvest-now-decrypt-later</title>
     <link href="https://sebastienrousseau.com/ro/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"/>
     <id>https://sebastienrousseau.com/ro/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</id>
-    <updated>2026-06-04T18:08:19+00:00</updated>
-    <published>2026-06-04T18:08:19+00:00</published>
+    <updated>2026-06-04T19:52:23+00:00</updated>
+    <published>2026-06-04T19:52:23+00:00</published>
     <summary>Un index bancar pentru pregătirea sigură cuantic în 2026, acoperind standardele post-cuantice NIST, inventarul criptografic, agilitatea criptografică, QKD și expunerea datelor de lungă durată.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -18,8 +18,8 @@
     <title>Banca multi-cale în 2026: carduri, A2A, stablecoins, RTP, FedNow și Open Banking într-o singură strategie</title>
     <link href="https://sebastienrousseau.com/ro/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
     <id>https://sebastienrousseau.com/ro/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
-    <updated>2026-06-04T18:08:19+00:00</updated>
-    <published>2026-06-04T18:08:19+00:00</published>
+    <updated>2026-06-04T19:52:23+00:00</updated>
+    <published>2026-06-04T19:52:23+00:00</published>
     <summary>FedNow cere lichiditate prefinanțată 24/7. ACH este ieftin, dar T+1. USDC se decontează atomic, dar are nevoie de portofele. Banca multi-cale din 2026 rutează fiecare plată după cost, finalitate și cost de lichiditate, condusă de un motor de orchestrare care citește ISO 20022 pacs.008.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -27,8 +27,8 @@
     <title>Infrastructură de plăți post-cuantică: de ce băncile pot înlocui mai degrabă decât adapta căile moștenite</title>
     <link href="https://sebastienrousseau.com/ro/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
     <id>https://sebastienrousseau.com/ro/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-06-04T18:08:19+00:00</updated>
-    <published>2026-06-04T18:08:19+00:00</published>
+    <updated>2026-06-04T19:52:23+00:00</updated>
+    <published>2026-06-04T19:52:23+00:00</published>
     <summary>Criptografia post-cuantică impune o alegere binară pentru căile de plată: adaptarea RSA/ECC în anvelopele SWIFT MT și ISO 20022 nedimensionate pentru ML-KEM și ML-DSA, sau înlocuirea cu infrastructură cripto-agilă. Arhitecții trebuie să decidă înainte ca HNDL să producă pierdere operațională.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -36,8 +36,8 @@
     <title>Piețe digitale de gros în UK: gilts tokenizați, decontare și noul rol de champion</title>
     <link href="https://sebastienrousseau.com/ro/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"/>
     <id>https://sebastienrousseau.com/ro/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</id>
-    <updated>2026-06-04T18:08:19+00:00</updated>
-    <published>2026-06-04T18:08:19+00:00</published>
+    <updated>2026-06-04T19:52:23+00:00</updated>
+    <published>2026-06-04T19:52:23+00:00</published>
     <summary>Rolul Wholesale Digital Markets Champion al Regatului Unit transformă finanța de gros tokenizată într-un proiect național de competitivitate condus din City.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -45,8 +45,8 @@
     <title>ISO 20022 după migrare: transformarea datelor de plată în produse bancare în 2026</title>
     <link href="https://sebastienrousseau.com/ro/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"/>
     <id>https://sebastienrousseau.com/ro/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</id>
-    <updated>2026-06-04T18:08:19+00:00</updated>
-    <published>2026-06-04T18:08:19+00:00</published>
+    <updated>2026-06-04T19:52:23+00:00</updated>
+    <published>2026-06-04T19:52:23+00:00</published>
     <summary>ISO 20022 după migrare devine șansa unui produs de date: adrese structurate, coduri de scop, detalii de factură, mesaje de investigație și evenimente bogate de stare se transformă în produse de reconciliere, fraudă, lichiditate și conformitate.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>

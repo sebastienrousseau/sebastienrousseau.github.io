@@ -1,12 +1,12 @@
 {
   "banner": "https://cloudcdn.pro/stocks/images/eric-prouzet-T2rHb45GnRY-unsplash.webp",
-  "locale": "ja_JP",
   "language": "ja-JP",
-  "subtitle": "ヨーロッパ AI チャンピオンの台頭",
-  "description": "Mistral AI の Le Chat、ヨーロッパ AI チャンピオンの台頭、フランスとヨーロッパ AI への影響。",
+  "locale": "ja_JP",
+  "keywords": "Mistral AI, Le Chat, ヨーロッパ AI, LLM, オープンソース, フランス, AI 主権",
   "title": "Mistral AI の Le Chat:対話型 AI の新時代",
-  "banner_alt": "ヨーロッパの議事堂のビュー",
   "date": "March 4, 2024",
-  "last_reviewed": "2026-05-11",
-  "keywords": "Mistral AI, Le Chat, ヨーロッパ AI, LLM, オープンソース, フランス, AI 主権"
+  "description": "Mistral AI の Le Chat、ヨーロッパ AI チャンピオンの台頭、フランスとヨーロッパ AI への影響。",
+  "banner_alt": "ヨーロッパの議事堂のビュー",
+  "subtitle": "ヨーロッパ AI チャンピオンの台頭",
+  "last_reviewed": "2026-05-11"
 }

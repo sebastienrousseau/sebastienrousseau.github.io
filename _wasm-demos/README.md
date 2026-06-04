@@ -54,7 +54,7 @@ upgrade-insecure-requests
 
 `'wasm-unsafe-eval'` is the only loosening — it permits
 `WebAssembly.instantiate()` while keeping arbitrary JS-eval disallowed.
-The strict CSP test (`scripts/test_csp_strict.py`) tokenises the policy
+The strict CSP test (`tests/validation/test_csp_strict.py`) tokenises the policy
 and rejects only `'unsafe-eval'` as an exact token, so `'wasm-unsafe-eval'`
 passes cleanly.
 

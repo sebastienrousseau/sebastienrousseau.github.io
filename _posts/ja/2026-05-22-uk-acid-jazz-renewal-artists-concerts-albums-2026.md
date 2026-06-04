@@ -93,9 +93,9 @@ site_software: "Static Site Generator, Rust"
 <p class="post-lead-heading"><strong>主なポイント</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>レーベル。</strong>Acid Jazz Recordsの2026年Bandcampコンピレーションには、Matt Berry、Kevin Fingier、The Brand New Heavies、Billy Valentine、Mama Terraが収録されている。</li>
-  <li><strong>リリース。</strong>Bangs &amp; Talbotの<em>Smokin' Aces</em>（2026年1月23日、Acid Jazz）はChris BangsとMick Talbotをグルーヴ、ファンク、ソウル、グローバル・フュージョン・サウンドとともに再結集させた作品。</li>
+  <li><strong>リリース。</strong>Bangs & Talbotの<em>Smokin' Aces</em>（2026年1月23日、Acid Jazz）はChris BangsとMick Talbotをグルーヴ、ファンク、ソウル、グローバル・フュージョン・サウンドとともに再結集させた作品。</li>
   <li><strong>ライヴ。</strong>The GlasshouseでのThe Brand New HeaviesとGalliano、ロニー・スコッツでのThe James Taylor Quartetが、2026年のラインナップにおける最も明確なアシッド・ジャズの指標である。</li>
-  <li><strong>フェスティバル。</strong>Mostly Jazz Funk &amp; Soul Festival（2026年7月10〜12日）は、レガシーのジャズ・ファンク・アクトと並んで、Soul II Soul、Cymande、Jordan Rakei、Sampa The Greatをプログラムしている。</li>
+  <li><strong>フェスティバル。</strong>Mostly Jazz Funk & Soul Festival（2026年7月10〜12日）は、レガシーのジャズ・ファンク・アクトと並んで、Soul II Soul、Cymande、Jordan Rakei、Sampa The Greatをプログラムしている。</li>
 </ul>
 <p class="post-lead-related"><strong>関連記事：</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">トークン化預金：2026年に進行する銀行変革</a>。</p>
 </aside>
@@ -231,6 +231,6 @@ The GlasshouseでのThe Brand New HeaviesとGalliano、そしてロニー・ス�
 - Mostly Jazz Funk & Soul Festival, (2026). [Mostly Jazz Funk & Soul Festival 2026 ⧉](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival").
 - Marlbank, (2026). [2026年英国ジャズ・アルバム上半期ベスト ⧉](https://marlbank.net/top-jazz-in-2026/top-uk-jazz-albums-in-2026-so-far/ "Top UK jazz albums in 2026 so far").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="著者について"><img alt="Sebastien Rousseau のポートレート" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、ISO 20022 移行、金融サービス向けポスト量子暗号、ホールセール決済の構造的変革について執筆するシニア銀行テクノロジスト。</span><span class="author-credentials">HSBC コマーシャル&amp;インベストメントバンク、PayPal、Barclays、Shazam、AKQA、Virgin Group を横断する 20 年以上の経験。<a href="/about/index.html">プロフィール全体</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="著者について"><img alt="Sebastien Rousseau のポートレート" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、ISO 20022 移行、金融サービス向けポスト量子暗号、ホールセール決済の構造的変革について執筆するシニア銀行テクノロジスト。</span><span class="author-credentials">HSBC コマーシャル&インベストメントバンク、PayPal、Barclays、Shazam、AKQA、Virgin Group を横断する 20 年以上の経験。<a href="/about/index.html">プロフィール全体</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最終レビュー <time datetime="2026-05-22">2026-05-22</time>。</p>
 <!-- enrich-end -->

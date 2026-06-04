@@ -23,7 +23,7 @@ image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 keywords: "UK acid jazz 2026, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott’s, Bangs and Talbot, Chris Bangs, Mick Talbot, Smokin Aces, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, UK jazz revival, jazz funk, soul jazz, London jazz concerts"
 language: "en-GB"
-excerpt: "The UK acid jazz renewal in 2026 spans label releases, live dates by first-wave acts, and festival programming — Acid Jazz Records, Bangs &amp; Talbot, The Brand New Heavies, Galliano, James Taylor Quartet, and Mostly Jazz Funk &amp; Soul Festival are all active at once."
+excerpt: "The UK acid jazz renewal in 2026 spans label releases, live dates by first-wave acts, and festival programming — Acid Jazz Records, Bangs & Talbot, The Brand New Heavies, Galliano, James Taylor Quartet, and Mostly Jazz Funk & Soul Festival are all active at once."
 last_reviewed: "2026-05-22"
 layout: "report"
 locale: "en_GB"
@@ -127,6 +127,11 @@ site_software: "Static Site Generator, Rust"
 
 
 
+
+
+
+
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> The UK acid jazz renewal in 2026 is visible in Acid Jazz Records releases, Bangs & Talbot, Brand New Heavies with Galliano, James Taylor Quartet at Ronnie Scott’s, Mostly Jazz Funk & Soul Festival, and the broader UK jazz scene’s renewed appetite for groove, soul, funk and dance-floor musicianship.</p>
@@ -151,7 +156,7 @@ The UK acid jazz renewal in 2026 is not a nostalgic museum piece. It is a live e
 > - **The Brand New Heavies and Galliano are back in front of UK audiences.** The Glasshouse lists The Brand New Heavies with special guests Galliano at Sage One on 18 March 2026 ([The Glasshouse](https://theglasshouseicm.org/whats-on/the-brand-new-heavies-2026/ "The Brand New Heavies at The Glasshouse")).
 > - **The James Taylor Quartet remains the Hammond-powered live reference point.** Songkick lists JTQ at Ronnie Scott’s on 30 May 2026 and describes the band as central to funky acid jazz and the resurgence of the Hammond B3 ([Songkick](https://www.songkick.com/concerts/43032586-james-taylor-quartet-at-ronnie-scotts-jazz-club "The James Taylor Quartet at Ronnie Scott's")).
 > - **Festival programming is keeping jazz-funk and soul in the public square.** Mostly Jazz Funk & Soul Festival runs 10–12 July 2026 in Moseley Park with artists including Soul II Soul, Cymande, Jordan Rakei, Jalen Ngonda, Thee Sacred Souls, and Sampa The Great ([Mostly Jazz Funk & Soul Festival](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival 2026")).
-> - **The renewal is not just “acid jazz revivalism.”** It is a broader UK groove continuum linking jazz-funk, soul-jazz, rare groove, club culture, London venues, Birmingham festivals, and the UK jazz albums that continue to refresh the scene.
+> - **The renewal is not just "acid jazz revivalism."** It is a broader UK groove continuum linking jazz-funk, soul-jazz, rare groove, club culture, London venues, Birmingham festivals, and the UK jazz albums that continue to refresh the scene.
 >
 ---
 
@@ -270,7 +275,7 @@ The connection is groove, not strict genre labelling. Festivals such as Mostly J
 - Mostly Jazz Funk & Soul Festival, (2026). [Mostly Jazz Funk & Soul Festival 2026 ⧉](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival").
 - Marlbank, (2026). [Top UK jazz albums in 2026 so far ⧉](https://marlbank.net/top-jazz-in-2026/top-uk-jazz-albums-in-2026-so-far/ "Top UK jazz albums in 2026 so far").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-05-22">2026-05-22</time>.</p>
 <!-- enrich-end -->
 

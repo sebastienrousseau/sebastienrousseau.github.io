@@ -117,12 +117,17 @@ sebastienrousseau.github.io/
 │ ├── gh-stats.json # Nightly GitHub repo stats
 │ ├── i18n/<lang>/ # Per-language UI strings + patch tables (28 dirs)
 │ └── lead-magnets/ # PDF source markdown
-├── scripts/ # 37 Python modules
-│ ├── build_*.py # 6 build pipelines
-│ ├── postbuild.py # Single-page orchestrator (~700 lines)
-│ ├── postbuild_lib/ # 6 modules — schemas, seo, output, …
-│ └── test_*.py # 13 in-repo CI gates
-├── tests/ # 716 test functions / 27,604 parametrized cases, 100% coverage on postbuild_lib
+├── scripts/ # Python build pipeline, by responsibility
+│ ├── editorial/ # publish-daily, translate_post, check_voice, banners
+│ ├── generators/ # gen_articles, build_topics, build_lang_feeds, build_agent_api, …
+│ ├── postbuild/ # postbuild.py + postbuild_lib/, single-page transforms
+│ ├── seo_and_audit/ # link audit, JSON-LD validate, pa11y cache + retry-flakes
+│ ├── security/ # sigstore-sign + sigstore-setup
+│ └── lib/ # shared: _core, _frontmatter, _lang_registry, slug-map
+├── tests/ # 716 test functions / 27,610 parametrized cases
+│ ├── unit/ # pytest suite; coverage gate (postbuild_lib 100%) runs here
+│ └── validation/ # 13 in-repo CI gates against public/ (i18n, hreflang, CSP, RTL, sitemap)
+├── project-docs/ # Architecture, publishing, postbuild, schemas, security, sigstore, i18n, web-perf-seo-spec
 ├── workers/ # Cloudflare Worker — locale routing + edge security headers
 │ ├── lang-router.js # the Worker (cookie + ?lang only; no A-L sniff)
 │ └── test_lang_router.mjs # 43 tests, 100% line/branch/func coverage
@@ -131,7 +136,7 @@ sebastienrousseau.github.io/
 ├── .well-known/ # AI plugin manifest, OpenAPI schema, OpenPGP WKD
 ├── .github/workflows/ # 6 CI workflows
 ├── public/ # Canonical build output — 1850 HTML pages
-└── docs/ # GitHub Pages root (rsync mirror of public/ on every build — NOT documentation; the docs that describe this repo live in /doc/)
+└── docs/ # GitHub Pages root (rsync mirror of public/ on every build — NOT documentation; the docs that describe this repo live in /project-docs/)
 ```
 
 ---
@@ -158,7 +163,7 @@ flowchart TB
  PB["postbuild.py<br/><i>25 passes</i>"]
  end
 
- subgraph GATES["14 CI gates"]
+ subgraph GATES["13 CI gates"]
  G1["pytest + coverage<br/><i>100%</i>"]
  G2["ruff + radon"]
  G3["i18n parity ×7"]
@@ -231,7 +236,7 @@ _layouts/*.html # 11 page layouts
 _data/i18n/<lang>/*.json # 11 JSON files × 28 locales — strings, labels,
  # patches, slugs, author, topics, …
 _data/gh-stats.json # Nightly GitHub repo stats
-scripts/_lang_registry.py # Single source of truth for the 28-language matrix
+scripts/lib/_lang_registry.py # Single source of truth for the 28-language matrix
  # (BCP-47, locale, flag, active flag, RTL bit)
 ```
 
@@ -332,7 +337,7 @@ Each pass is a pure `(html, …) -> html` transformation. Module-level state is 
 | zh-hans | zh-Hans | zh_CN | 简体中文 | LTR |
 | zh-hant | zh-Hant | zh_TW | 繁體中文 | LTR |
 
-All 28 languages emit a complete page tree (44 articles + ~20 static pages each), a search index, RSS / Atom / news-sitemap feeds, and JSON-LD with `inLanguage` set. Hreflang reciprocity is enforced by a CI gate — see [`scripts/test_hreflang_reciprocity.py`](scripts/test_hreflang_reciprocity.py).
+All 28 languages emit a complete page tree (44 articles + ~20 static pages each), a search index, RSS / Atom / news-sitemap feeds, and JSON-LD with `inLanguage` set. Hreflang reciprocity is enforced by a CI gate — see [`tests/validation/test_hreflang_reciprocity.py`](tests/validation/test_hreflang_reciprocity.py).
 
 ---
 
@@ -384,13 +389,13 @@ Seven parity gates enforce that every non-EN language ships the same shape as En
 
 | Gate | What it asserts | File |
 |---|---|---|
-| `test_i18n_parity` | Every active lang renders the same article count | [`scripts/test_i18n_parity.py`](scripts/test_i18n_parity.py) |
-| `test_i18n_strings` | UI strings keyset matches EN reference | [`scripts/test_i18n_strings.py`](scripts/test_i18n_strings.py) |
-| `test_i18n_labels` | Body labels keyset matches EN reference | [`scripts/test_i18n_labels.py`](scripts/test_i18n_labels.py) |
-| `test_i18n_takeaway_labels` | Takeaway labels keyset matches EN reference | [`scripts/test_i18n_takeaway_labels.py`](scripts/test_i18n_takeaway_labels.py) |
-| `test_i18n_render_data` | Patch-table count matches FR canonical | [`scripts/test_i18n_render_data.py`](scripts/test_i18n_render_data.py) |
-| `test_i18n_author` | Author-card metadata keyset matches | [`scripts/test_i18n_author.py`](scripts/test_i18n_author.py) |
-| `test_lang_no_leakage` | No English UI strings leaked into non-EN chrome | [`scripts/test_lang_no_leakage.py`](scripts/test_lang_no_leakage.py) |
+| `test_i18n_parity` | Every active lang renders the same article count | [`tests/validation/test_i18n_parity.py`](tests/validation/test_i18n_parity.py) |
+| `test_i18n_strings` | UI strings keyset matches EN reference | [`tests/validation/test_i18n_strings.py`](tests/validation/test_i18n_strings.py) |
+| `test_i18n_labels` | Body labels keyset matches EN reference | [`tests/validation/test_i18n_labels.py`](tests/validation/test_i18n_labels.py) |
+| `test_i18n_takeaway_labels` | Takeaway labels keyset matches EN reference | [`tests/validation/test_i18n_takeaway_labels.py`](tests/validation/test_i18n_takeaway_labels.py) |
+| `test_i18n_render_data` | Patch-table count matches FR canonical | [`tests/validation/test_i18n_render_data.py`](tests/validation/test_i18n_render_data.py) |
+| `test_i18n_author` | Author-card metadata keyset matches | [`tests/validation/test_i18n_author.py`](tests/validation/test_i18n_author.py) |
+| `test_lang_no_leakage` | No English UI strings leaked into non-EN chrome | [`tests/validation/test_lang_no_leakage.py`](tests/validation/test_lang_no_leakage.py) |
 
 Plus three pan-locale gates:
 
@@ -407,7 +412,7 @@ Plus three pan-locale gates:
 |---|---|
 | **TLS** | Cloudflare edge with the post-quantum hybrid X25519MLKEM768 (NIST FIPS 203), classical X25519 fallback for legacy clients. Negotiated by Chrome 124+, Firefox 132+, Safari 18+. |
 | **HSTS** | `max-age=63072000; includeSubDomains; preload`. Submitted to the Chromium HSTS preload list. |
-| **CSP** | Strict. No `unsafe-inline` for scripts. JSON-LD allowed strictly by per-page SHA-256 hash. `'inline-speculation-rules'` keyword authorises the Speculation Rules API block (which also carries its own hash). `img-src` enumerates 4 origins; no blanket `https:`. CI gate [`test_csp_strict.py`](scripts/test_csp_strict.py) fails the build if any future regression widens the policy. |
+| **CSP** | Strict. No `unsafe-inline` for scripts. JSON-LD allowed strictly by per-page SHA-256 hash. `'inline-speculation-rules'` keyword authorises the Speculation Rules API block (which also carries its own hash). `img-src` enumerates 4 origins; no blanket `https:`. CI gate [`test_csp_strict.py`](tests/validation/test_csp_strict.py) fails the build if any future regression widens the policy. |
 | **Frame protection** | `frame-ancestors 'none'` + `X-Frame-Options: DENY` via Cloudflare Transform Rules. |
 | **MIME** | `X-Content-Type-Options: nosniff`. |
 | **Referrer** | `Referrer-Policy: strict-origin-when-cross-origin`. |
@@ -478,7 +483,7 @@ flowchart LR
  STAGE --> LAB
 ```
 
-**CSP discipline:** `'wasm-unsafe-eval'` is the only loosening — it's a distinct token from `'unsafe-eval'`, so the strict-shape CSP gate ([`scripts/test_csp_strict.py`](scripts/test_csp_strict.py)) passes unchanged. Lab pages are `noindex,nofollow` and excluded from the sitemap-completeness gate.
+**CSP discipline:** `'wasm-unsafe-eval'` is the only loosening — it's a distinct token from `'unsafe-eval'`, so the strict-shape CSP gate ([`tests/validation/test_csp_strict.py`](tests/validation/test_csp_strict.py)) passes unchanged. Lab pages are `noindex,nofollow` and excluded from the sitemap-completeness gate.
 
 **Reusing the pattern:** drop a new crate at `_wasm-demos/<name>/` with the `Cargo.toml`, `src/lib.rs` (wasm-bindgen exports), and a `web/{index.html, demo.js, demo.css}` shell; the next build publishes `/labs/<name>/` automatically. See [`_wasm-demos/README.md`](_wasm-demos/README.md) for the copy-paste recipe.
 
@@ -533,7 +538,7 @@ Specific mitigations:
 - **Harvest-now-decrypt-later quantum risk** — every TLS session uses ML-KEM-768 hybrid key exchange. An adversary recording today's traffic cannot retroactively decrypt it with a future cryptographically relevant quantum computer.
 - **Supply-chain integrity** — every page ships a CycloneDX SBOM, every CSS/JS asset carries a real SHA-256 SRI, and commits are signed. Branch protection requires PRs + green CI before merge.
 - **XSS / injection** — strict CSP (no `unsafe-inline`), per-page JSON-LD sha256 allowlist, `'inline-speculation-rules'` keyword authorises only the Speculation Rules block. `object-src 'none'`, `base-uri 'self'`.
-- **Disclosure channel** — OpenPGP Web Key Directory (WKD) at `.well-known/openpgpkey/` for researcher contact; machine-readable policy at [`.well-known/security.txt`](https://sebastienrousseau.com/.well-known/security.txt) per RFC 9116; full threat model in [`doc/SECURITY.md`](doc/SECURITY.md) (top-level [`SECURITY.md`](SECURITY.md) delegates to it).
+- **Disclosure channel** — OpenPGP Web Key Directory (WKD) at `.well-known/openpgpkey/` for researcher contact; machine-readable policy at [`.well-known/security.txt`](https://sebastienrousseau.com/.well-known/security.txt) per RFC 9116; full threat model in [`project-docs/SECURITY.md`](project-docs/SECURITY.md) (top-level [`SECURITY.md`](SECURITY.md) delegates to it).
 
 ---
 
@@ -586,7 +591,7 @@ Every page emits structured data. The site uses these `@type`s:
 | `ProfilePage` | `/about/` | 1 |
 | `ProgramMembership` | `/about/` EPAA Working Group | 1850 |
 
-Every inline JSON-LD block is allowlisted in the page's CSP by its SHA-256 hash. The CI gate [`test_csp_strict.py`](scripts/test_csp_strict.py) fails the build if any JSON-LD block on any page lacks its hash in the policy. The schema validator at [`scripts/validate_jsonld.py`](scripts/validate_jsonld.py) fails on required-property gaps (e.g. `ListItem` missing `name`).
+Every inline JSON-LD block is allowlisted in the page's CSP by its SHA-256 hash. The CI gate [`test_csp_strict.py`](tests/validation/test_csp_strict.py) fails the build if any JSON-LD block on any page lacks its hash in the policy. The schema validator at [`scripts/validate_jsonld.py`](scripts/validate_jsonld.py) fails on required-property gaps (e.g. `ListItem` missing `name`).
 
 ---
 
@@ -623,7 +628,7 @@ radon cc scripts/postbuild_lib/ -nC # Cyclomatic complexity (A/B only)
 pytest tests/ --cov=scripts/postbuild_lib --cov-fail-under=100
 ./build.sh # full build + 14 CI gates
 python3 scripts/validate_jsonld.py # JSON-LD + XML feed shape
-python3 scripts/test_csp_strict.py # CSP strict-shape
+python3 tests/validation/test_csp_strict.py # CSP strict-shape
 node workers/test_lang_router.mjs # Worker pure-logic tests
 ```
 
@@ -663,32 +668,32 @@ signed commit → push.
 
 Full step-by-step (frontmatter contract, editorial choices, what's
 auto-refreshed, every failure mode) lives in
-[**`doc/PUBLISHING.md`**](doc/PUBLISHING.md). The shorter
-[`doc/daily-publishing.md`](doc/daily-publishing.md) is the elevator
+[**`project-docs/PUBLISHING.md`**](project-docs/PUBLISHING.md). The shorter
+[`project-docs/daily-publishing.md`](project-docs/daily-publishing.md) is the elevator
 pitch.
 
 If you'd rather drive the flow by hand:
 
 ```bash
 mv my-piece.md _drafts/$(date -u +%F)-my-piece.md
-./scripts/publish_daily.sh                 # promote + scaffold 27 stubs + build
+./scripts/editorial/publish-daily.sh       # promote + scaffold 27 stubs + build
 $EDITOR _posts/index.md                    # prepend new newsroom-grid card
-$EDITOR scripts/gen_articles.py            # prepend ARTICLES[0] tuple
-python3 scripts/gen_articles.py
-python3 scripts/translate_post.py <slug> --list-stubs  # in Claude, translate each
+$EDITOR scripts/generators/gen_articles.py # prepend ARTICLES[0] tuple
+python3 scripts/generators/gen_articles.py
+python3 scripts/editorial/translate_post.py <slug> --list-stubs  # in Claude, translate each
 ./build.sh
 git add -A && git commit -S -m "content: …" && git push
 ```
 
 ### Worked example: add a new language
 
-1. Append a `Language(...)` entry to [`scripts/_lang_registry.py`](scripts/_lang_registry.py) with `active=False`.
+1. Append a `Language(...)` entry to [`scripts/lib/_lang_registry.py`](scripts/lib/_lang_registry.py) with `active=False`.
 2. Create `_data/i18n/<lang>/` with 11 JSON files (mirror an existing locale's structure).
 3. Translate `_posts/<lang>/*.md` (44 articles).
 4. Activate (`active=True`), wire the new language entry into all 11 `_layouts/*.html` switcher tables, push.
 5. CI's per-language parity gates enforce that nothing is missing.
 
-See [`doc/I18N.md`](doc/I18N.md) for the full workflow.
+See [`project-docs/I18N.md`](project-docs/I18N.md) for the full workflow.
 
 ---
 
@@ -775,17 +780,17 @@ For a general-purpose Rust SSG with theming, see [Static Site Generator](https:/
 |---|---|
 | [`CHANGELOG.md`](CHANGELOG.md) | **Versioned release history** — every schema, build pipeline, security, and crawler-surface change since `v1.0.0`. Loosely Keep-a-Changelog formatted. |
 | [`DEPLOY.md`](DEPLOY.md) | Cloudflare configuration: PQC TLS toggle, Transform Rules for HSTS / COOP / CORP / X-Frame-Options, HSTS preload submission, verification commands, Worker deployment. |
-| [`doc/PUBLISHING.md`](doc/PUBLISHING.md) | **Definitive publishing runbook** — daily flow, frontmatter contract, editorial decisions, translation rules, what's auto-refreshed vs hand-maintained, every CI failure mode + fix, adding a new permanent section, forking the pipeline. |
-| [`doc/daily-publishing.md`](doc/daily-publishing.md) | Short-form sibling of `PUBLISHING.md` — TL;DR + when-to-push timing table. |
+| [`project-docs/PUBLISHING.md`](project-docs/PUBLISHING.md) | **Definitive publishing runbook** — daily flow, frontmatter contract, editorial decisions, translation rules, what's auto-refreshed vs hand-maintained, every CI failure mode + fix, adding a new permanent section, forking the pipeline. |
+| [`project-docs/daily-publishing.md`](project-docs/daily-publishing.md) | Short-form sibling of `PUBLISHING.md` — TL;DR + when-to-push timing table. |
 | [`.claude/commands/publish-today.md`](.claude/commands/publish-today.md) | The slash command that drives the daily flow from Claude Code, using your local Claude subscription for translation (no API key in repo). |
-| [`doc/ARCHITECTURE.md`](doc/ARCHITECTURE.md) | Full pipeline architecture: every script in `scripts/`, every module in `postbuild_lib/`, every CI gate. With Mermaid diagrams. |
-| [`doc/I18N.md`](doc/I18N.md) | The 28-language translation system: registry, JSON glossaries, chrome patches, RTL handling, adding a new language end-to-end. |
-| [`doc/SECURITY.md`](doc/SECURITY.md) | Threat model, CSP design, SRI policy, PQC TLS, SBOM provenance, OpenPGP WKD. |
-| [`doc/SCHEMAS.md`](doc/SCHEMAS.md) | Every Schema.org `@type` emitted by the site, plus the CSP-hash discipline that allowlists them. |
-| [`doc/POSTBUILD.md`](doc/POSTBUILD.md) | The 18 single-page transforms in `postbuild.py`: order, dependencies, idempotence. |
-| [`doc/CI.md`](doc/CI.md) | All 14 CI gates: what they check, how to run them locally, common failure modes. |
+| [`project-docs/ARCHITECTURE.md`](project-docs/ARCHITECTURE.md) | Full pipeline architecture: every script in `scripts/`, every module in `postbuild_lib/`, every CI gate. With Mermaid diagrams. |
+| [`project-docs/I18N.md`](project-docs/I18N.md) | The 28-language translation system: registry, JSON glossaries, chrome patches, RTL handling, adding a new language end-to-end. |
+| [`project-docs/SECURITY.md`](project-docs/SECURITY.md) | Threat model, CSP design, SRI policy, PQC TLS, SBOM provenance, OpenPGP WKD. |
+| [`project-docs/SCHEMAS.md`](project-docs/SCHEMAS.md) | Every Schema.org `@type` emitted by the site, plus the CSP-hash discipline that allowlists them. |
+| [`project-docs/POSTBUILD.md`](project-docs/POSTBUILD.md) | The 18 single-page transforms in `postbuild.py`: order, dependencies, idempotence. |
+| [`project-docs/CI.md`](project-docs/CI.md) | All 14 CI gates: what they check, how to run them locally, common failure modes. |
 | `_data/gh-stats.json` | Nightly snapshot of GitHub repo stats consumed by `postbuild_lib/github_stats.py`. |
-| `scripts/_lang_registry.py` | Single source of truth for the 28-language matrix. |
+| `scripts/lib/_lang_registry.py` | Single source of truth for the 28-language matrix. |
 | `requirements.txt` | Python runtime dependencies. |
 | `pyproject.toml` | Ruff + pytest configuration, MSRV-equivalent for Python (3.12, pinned via `mise.toml`). |
 

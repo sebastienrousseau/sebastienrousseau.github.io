@@ -1,11 +1,11 @@
 {
-  "title": "Cryptographie sur réseaux : un bug dans l'attaque LWE de Chen",
-  "banner_alt": "Image générée avec MidJourney — un réseau de nœuds numériques aux tons rouges et bleus.",
-  "locale": "fr_FR",
   "subtitle": "La revue par les pairs révèle une faille dans le travail révolutionnaire de Chen",
-  "date": "April 22, 2024",
+  "banner_alt": "Image générée avec MidJourney — un réseau de nœuds numériques aux tons rouges et bleus.",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "locale": "fr_FR",
   "keywords": "cryptographie post-quantique, NIST, standardisation PQC, Yilei Chen, algorithme quantique, cryptographie sur réseaux, problème LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, cryptographie quantique-résistante",
+  "title": "Cryptographie sur réseaux : un bug dans l'attaque LWE de Chen",
   "language": "fr",
   "description": "Un bug dans l'algorithme quantique LWE de Yilei Chen offre un sursis temporaire à la cryptographie sur réseaux. Ce que cela signifie pour CRYSTALS-Kyber, Dilithium et la feuille de route PQC.",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
+  "date": "April 22, 2024"
 }

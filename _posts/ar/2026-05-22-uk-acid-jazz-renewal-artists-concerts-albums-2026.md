@@ -93,9 +93,9 @@ site_software: "Static Site Generator, Rust"
 <p class="post-lead-heading"><strong>أبرز النقاط</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>الإسطبل.</strong> يضمّ تجميع Acid Jazz Records على Bandcamp لعام 2026 كلاً من Matt Berry وKevin Fingier وThe Brand New Heavies وBilly Valentine وMama Terra.</li>
-  <li><strong>الإصدار.</strong> يُعيد ألبوم <em>Smokin' Aces</em> لثنائي Bangs &amp; Talbot (23 يناير 2026، Acid Jazz) لمَّ شمل Chris Bangs وMick Talbot في إيقاعات الفانك والسول والفيوجن العالمي.</li>
+  <li><strong>الإصدار.</strong> يُعيد ألبوم <em>Smokin' Aces</em> لثنائي Bangs & Talbot (23 يناير 2026، Acid Jazz) لمَّ شمل Chris Bangs وMick Talbot في إيقاعات الفانك والسول والفيوجن العالمي.</li>
   <li><strong>الحفلات.</strong> يمثّل The Brand New Heavies مع Galliano في The Glasshouse وThe James Taylor Quartet في Ronnie Scott's أوضح إشارتَين للأسيد جاز في قوائم 2026.</li>
-  <li><strong>المهرجان.</strong> يُبرمج مهرجان Mostly Jazz Funk &amp; Soul Festival (10–12 يوليو 2026) Soul II Soul وCymande وJordan Rakei وSampa The Great إلى جانب أسماء جاز فانك الكلاسيكية.</li>
+  <li><strong>المهرجان.</strong> يُبرمج مهرجان Mostly Jazz Funk & Soul Festival (10–12 يوليو 2026) Soul II Soul وCymande وJordan Rakei وSampa The Great إلى جانب أسماء جاز فانك الكلاسيكية.</li>
 </ul>
 <p class="post-lead-related"><strong>قراءة ذات صلة:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">الودائع الرمزية: التحول المصرفي الجاري عام 2026</a>.</p>
 </aside>

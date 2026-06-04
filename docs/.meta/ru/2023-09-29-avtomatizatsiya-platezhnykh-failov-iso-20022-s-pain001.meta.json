@@ -1,11 +1,11 @@
 {
-  "description": "pain001 — это open-source Python-библиотека для автоматизации генерации платёжных файлов ISO 20022 pain.001 из CSV или SQLite.",
-  "title": "Автоматизация создания платёжных файлов ISO 20022 с pain001",
-  "keywords": "ISO 20022, pain.001, SWIFT, SEPA, Python, автоматизация платежей, валидация XML, структурированные сообщения, миграция MT",
   "date": "September 29, 2023",
-  "subtitle": "Библиотека Python для миграции на структурированные сообщения",
-  "locale": "ru_RU",
-  "language": "ru-RU",
   "banner_alt": "Поток платежей ISO 20022 — миграция MT/MX",
-  "banner": "https://cloudcdn.pro/stocks/images/iso-20022-automation.webp"
+  "description": "pain001 — это open-source Python-библиотека для автоматизации генерации платёжных файлов ISO 20022 pain.001 из CSV или SQLite.",
+  "locale": "ru_RU",
+  "subtitle": "Библиотека Python для миграции на структурированные сообщения",
+  "banner": "https://cloudcdn.pro/stocks/images/iso-20022-automation.webp",
+  "keywords": "ISO 20022, pain.001, SWIFT, SEPA, Python, автоматизация платежей, валидация XML, структурированные сообщения, миграция MT",
+  "title": "Автоматизация создания платёжных файлов ISO 20022 с pain001",
+  "language": "ru-RU"
 }

@@ -20,7 +20,7 @@ image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 keywords: "acid jazz Reino Unido 2026, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott’s, Bangs and Talbot, Chris Bangs, Mick Talbot, Smokin Aces, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, resurgimiento jazz Reino Unido, jazz funk, soul jazz, conciertos jazz Londres"
 language: "es"
-excerpt: "La renovación del acid jazz en el Reino Unido en 2026 abarca lanzamientos discográficos, fechas en directo de artistas de primera generación y programación de festivales: Acid Jazz Records, Bangs &amp; Talbot, The Brand New Heavies, Galliano, James Taylor Quartet y el Mostly Jazz Funk &amp; Soul Festival actúan de forma simultánea."
+excerpt: "La renovación del acid jazz en el Reino Unido en 2026 abarca lanzamientos discográficos, fechas en directo de artistas de primera generación y programación de festivales: Acid Jazz Records, Bangs & Talbot, The Brand New Heavies, Galliano, James Taylor Quartet y el Mostly Jazz Funk & Soul Festival actúan de forma simultánea."
 last_reviewed: "2026-05-22"
 layout: "report"
 locale: "es_ES"
@@ -88,30 +88,30 @@ site_software: "Static Site Generator, Rust"
 # La renovación del acid jazz en el Reino Unido: artistas, conciertos y álbumes en 2026
 
 <!-- lead-start -->
-<aside class=”post-lead” aria-label=”Resumen del artículo”>
-<p class=”post-lead-tldr”><strong>En síntesis.</strong> La renovación del acid jazz en el Reino Unido en 2026 no es nostalgia: es un ecosistema vivo en el que Acid Jazz Records, artistas de primera generación, festivales de jazz funk y músicos más jóvenes orientados al groove actúan de forma simultánea.</p>
-<p class=”post-lead-heading”><strong>Puntos clave</strong></p>
-<ul class=”post-lead-takeaways”>
+<aside class="post-lead" aria-label="Resumen del artículo">
+<p class="post-lead-tldr"><strong>En síntesis.</strong> La renovación del acid jazz en el Reino Unido en 2026 no es nostalgia: es un ecosistema vivo en el que Acid Jazz Records, artistas de primera generación, festivales de jazz funk y músicos más jóvenes orientados al groove actúan de forma simultánea.</p>
+<p class="post-lead-heading"><strong>Puntos clave</strong></p>
+<ul class="post-lead-takeaways">
   <li><strong>Sello.</strong> La recopilación de Acid Jazz Records en Bandcamp para 2026 incluye a Matt Berry, Kevin Fingier, The Brand New Heavies, Billy Valentine y Mama Terra.</li>
-  <li><strong>Lanzamiento.</strong> <em>Smokin’ Aces</em> de Bangs &amp; Talbot (23 de enero de 2026, Acid Jazz) reúne a Chris Bangs y Mick Talbot con sonidos de groove, funk, soul y fusión global.</li>
+  <li><strong>Lanzamiento.</strong> <em>Smokin’ Aces</em> de Bangs & Talbot (23 de enero de 2026, Acid Jazz) reúne a Chris Bangs y Mick Talbot con sonidos de groove, funk, soul y fusión global.</li>
   <li><strong>Directo.</strong> The Brand New Heavies con Galliano en The Glasshouse y The James Taylor Quartet en Ronnie Scott’s son las señales más claras del acid jazz en la programación de 2026.</li>
-  <li><strong>Festival.</strong> El Mostly Jazz Funk &amp; Soul Festival (10–12 de julio de 2026) programa a Soul II Soul, Cymande, Jordan Rakei y Sampa The Great junto a veteranos del jazz funk.</li>
+  <li><strong>Festival.</strong> El Mostly Jazz Funk & Soul Festival (10–12 de julio de 2026) programa a Soul II Soul, Cymande, Jordan Rakei y Sampa The Great junto a veteranos del jazz funk.</li>
 </ul>
-<p class=”post-lead-related”><strong>Lectura relacionada:</strong> <a href=”https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html”>Depósitos tokenizados: la transformación bancaria en curso en 2026</a>.</p>
+<p class="post-lead-related"><strong>Lectura relacionada:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">Depósitos tokenizados: la transformación bancaria en curso en 2026</a>.</p>
 </aside>
 <!-- lead-end -->
 
-La renovación del acid jazz en el Reino Unido en 2026 no es una pieza de museo nostálgica. Es un ecosistema vivo en el que artistas de trayectoria consolidada, sellos independientes, festivales de jazz funk, la cultura del órgano Hammond, cantantes de soul jazz, coleccionistas de vinilo y jóvenes músicos de jazz británicos convergen de nuevo en torno al groove. La recopilación de Acid Jazz Records en Bandcamp para 2026 incluye a Matt Berry, Kevin Fingier, The Brand New Heavies, Billy Valentine y Mama Terra, lo que indica que el sello sigue tendiendo puentes entre la memoria del catálogo y el gusto contemporáneo ([Acid Jazz Records / Bandcamp](https://acidjazz.bandcamp.com/album/totally-wired-a-new-collection-from-acid-jazz “Totally Wired... A New Collection From Acid Jazz”)).
+La renovación del acid jazz en el Reino Unido en 2026 no es una pieza de museo nostálgica. Es un ecosistema vivo en el que artistas de trayectoria consolidada, sellos independientes, festivales de jazz funk, la cultura del órgano Hammond, cantantes de soul jazz, coleccionistas de vinilo y jóvenes músicos de jazz británicos convergen de nuevo en torno al groove. La recopilación de Acid Jazz Records en Bandcamp para 2026 incluye a Matt Berry, Kevin Fingier, The Brand New Heavies, Billy Valentine y Mama Terra, lo que indica que el sello sigue tendiendo puentes entre la memoria del catálogo y el gusto contemporáneo ([Acid Jazz Records / Bandcamp](https://acidjazz.bandcamp.com/album/totally-wired-a-new-collection-from-acid-jazz "Totally Wired... A New Collection From Acid Jazz")).
 
 ---
 
 > **Resumen ejecutivo / Puntos clave**
 >
-> - **Acid Jazz Records sigue siendo un referente cultural activo.** Su recopilación de 2026 incluye a Matt Berry, Kevin Fingier, The Brand New Heavies, Billy Valentine y Mama Terra ([Acid Jazz Records / Bandcamp](https://acidjazz.bandcamp.com/album/totally-wired-a-new-collection-from-acid-jazz “Totally Wired... A New Collection From Acid Jazz”)).
-> - **Bangs & Talbot devuelven el lenguaje original del sello a la cultura discográfica.** Presto Music cataloga *Smokin’ Aces* de Bangs & Talbot como un lanzamiento de Acid Jazz del 23 de enero de 2026, que reúne al pionero del acid jazz Chris Bangs y al teclista Mick Talbot con sonidos de groove, funk, soul y fusión global ([Presto Music](https://www.prestomusic.com/jazz/articles/6907--new-release-roundup-upcoming-jazz-releases-2nd-january-2026 “Próximos lanzamientos de jazz — 2 de enero de 2026”)).
-> - **The Brand New Heavies y Galliano regresan ante el público británico.** The Glasshouse anuncia a The Brand New Heavies con Galliano como artistas invitados en Sage One el 18 de marzo de 2026 ([The Glasshouse](https://theglasshouseicm.org/whats-on/the-brand-new-heavies-2026/ “The Brand New Heavies en The Glasshouse”)).
-> - **The James Taylor Quartet sigue siendo el referente en directo impulsado por el Hammond.** Songkick registra al JTQ en Ronnie Scott’s el 30 de mayo de 2026 y describe a la banda como pieza central del funky acid jazz y del resurgimiento del Hammond B3 ([Songkick](https://www.songkick.com/concerts/43032586-james-taylor-quartet-at-ronnie-scotts-jazz-club “The James Taylor Quartet en Ronnie Scott’s”)).
-> - **La programación de festivales mantiene el jazz funk y el soul en el espacio público.** El Mostly Jazz Funk & Soul Festival se celebra del 10 al 12 de julio de 2026 en Moseley Park con artistas como Soul II Soul, Cymande, Jordan Rakei, Jalen Ngonda, Thee Sacred Souls y Sampa The Great ([Mostly Jazz Funk & Soul Festival](https://mostlyjazz.co.uk “Mostly Jazz Funk & Soul Festival 2026”)).
+> - **Acid Jazz Records sigue siendo un referente cultural activo.** Su recopilación de 2026 incluye a Matt Berry, Kevin Fingier, The Brand New Heavies, Billy Valentine y Mama Terra ([Acid Jazz Records / Bandcamp](https://acidjazz.bandcamp.com/album/totally-wired-a-new-collection-from-acid-jazz "Totally Wired... A New Collection From Acid Jazz")).
+> - **Bangs & Talbot devuelven el lenguaje original del sello a la cultura discográfica.** Presto Music cataloga *Smokin’ Aces* de Bangs & Talbot como un lanzamiento de Acid Jazz del 23 de enero de 2026, que reúne al pionero del acid jazz Chris Bangs y al teclista Mick Talbot con sonidos de groove, funk, soul y fusión global ([Presto Music](https://www.prestomusic.com/jazz/articles/6907--new-release-roundup-upcoming-jazz-releases-2nd-january-2026 "Próximos lanzamientos de jazz — 2 de enero de 2026")).
+> - **The Brand New Heavies y Galliano regresan ante el público británico.** The Glasshouse anuncia a The Brand New Heavies con Galliano como artistas invitados en Sage One el 18 de marzo de 2026 ([The Glasshouse](https://theglasshouseicm.org/whats-on/the-brand-new-heavies-2026/ "The Brand New Heavies en The Glasshouse")).
+> - **The James Taylor Quartet sigue siendo el referente en directo impulsado por el Hammond.** Songkick registra al JTQ en Ronnie Scott’s el 30 de mayo de 2026 y describe a la banda como pieza central del funky acid jazz y del resurgimiento del Hammond B3 ([Songkick](https://www.songkick.com/concerts/43032586-james-taylor-quartet-at-ronnie-scotts-jazz-club "The James Taylor Quartet en Ronnie Scott’s")).
+> - **La programación de festivales mantiene el jazz funk y el soul en el espacio público.** El Mostly Jazz Funk & Soul Festival se celebra del 10 al 12 de julio de 2026 en Moseley Park con artistas como Soul II Soul, Cymande, Jordan Rakei, Jalen Ngonda, Thee Sacred Souls y Sampa The Great ([Mostly Jazz Funk & Soul Festival](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival 2026")).
 > - **La renovación no es simple «revivalismo del acid jazz».** Es un continuum del groove británico que conecta jazz funk, soul jazz, rare groove, cultura de club, salas londinenses, festivales de Birmingham y los álbumes de jazz británico que siguen refrescando la escena.
 >
 ---
@@ -126,25 +126,25 @@ La renovación no es, por tanto, un revival nítido. Es la reactivación de un m
 
 ### 1. La memoria del sello está activa
 
-La recopilación de 2026 de Acid Jazz Records en Bandcamp, *Totally Wired... A New Collection From Acid Jazz*, incluye artistas de todo el espectro contemporáneo del sello: Matt Berry, Kevin Fingier, The Brand New Heavies, Billy Valentine y Mama Terra ([Acid Jazz Records / Bandcamp](https://acidjazz.bandcamp.com/album/totally-wired-a-new-collection-from-acid-jazz “Totally Wired... A New Collection From Acid Jazz”)). El propio título lleva la señal histórica del sello: *Totally Wired* forma parte del vocabulario del acid jazz.
+La recopilación de 2026 de Acid Jazz Records en Bandcamp, *Totally Wired... A New Collection From Acid Jazz*, incluye artistas de todo el espectro contemporáneo del sello: Matt Berry, Kevin Fingier, The Brand New Heavies, Billy Valentine y Mama Terra ([Acid Jazz Records / Bandcamp](https://acidjazz.bandcamp.com/album/totally-wired-a-new-collection-from-acid-jazz "Totally Wired... A New Collection From Acid Jazz")). El propio título lleva la señal histórica del sello: *Totally Wired* forma parte del vocabulario del acid jazz.
 
 El papel del sello no es meramente archivístico. Proporciona continuidad entre la primera generación y el presente, ofreciendo a los nuevos oyentes un mapa hacia el sonido y a los más veteranos la evidencia de que el catálogo sigue respirando.
 
 ### 2. Bangs & Talbot exponen el argumento desde el estudio
 
-Presto Music destaca *Smokin’ Aces* de Bangs & Talbot como un lanzamiento de Acid Jazz del 23 de enero de 2026, describiéndolo como la reunión de Chris Bangs y Mick Talbot con grove, funk, soul y colores de fusión procedentes de Europa, África, Asia y las Américas ([Presto Music](https://www.prestomusic.com/jazz/articles/6907--new-release-roundup-upcoming-jazz-releases-2nd-january-2026 “Próximos lanzamientos de jazz — 2 de enero de 2026”)).
+Presto Music destaca *Smokin’ Aces* de Bangs & Talbot como un lanzamiento de Acid Jazz del 23 de enero de 2026, describiéndolo como la reunión de Chris Bangs y Mick Talbot con grove, funk, soul y colores de fusión procedentes de Europa, África, Asia y las Américas ([Presto Music](https://www.prestomusic.com/jazz/articles/6907--new-release-roundup-upcoming-jazz-releases-2nd-january-2026 "Próximos lanzamientos de jazz — 2 de enero de 2026")).
 
 Esto importa porque la renovación del acid jazz necesita nuevos artefactos de estudio, no solo giras de aniversario. Un lanzamiento como *Smokin’ Aces* demuestra al público que el sonido aún puede componerse, arreglarse, grabarse y editarse hoy.
 
 ### 3. El circuito de directo sostiene el relato
 
-The Glasshouse anuncia a The Brand New Heavies con Galliano en Sage One el 18 de marzo de 2026, con entradas desde 41,40 hasta 49,80 libras ([The Glasshouse](https://theglasshouseicm.org/whats-on/the-brand-new-heavies-2026/ “The Brand New Heavies en The Glasshouse”)). Esa combinación tiene una coherencia cultural precisa: Brand New Heavies llevaron el acid jazz y el funk a un público amplio, mientras que Galliano representó una versión del movimiento más orientada al club, a la palabra hablada y a la escena londinense.
+The Glasshouse anuncia a The Brand New Heavies con Galliano en Sage One el 18 de marzo de 2026, con entradas desde 41,40 hasta 49,80 libras ([The Glasshouse](https://theglasshouseicm.org/whats-on/the-brand-new-heavies-2026/ "The Brand New Heavies en The Glasshouse")). Esa combinación tiene una coherencia cultural precisa: Brand New Heavies llevaron el acid jazz y el funk a un público amplio, mientras que Galliano representó una versión del movimiento más orientada al club, a la palabra hablada y a la escena londinense.
 
-El JTQ en Ronnie Scott’s es el otro polo de la renovación. Songkick registra a The James Taylor Quartet con Yvonne Yanney el 30 de mayo de 2026 y describe al JTQ como el principal responsable del resurgimiento del Hammond B3 en la música popular ([Songkick](https://www.songkick.com/concerts/43032586-james-taylor-quartet-at-ronnie-scotts-jazz-club “The James Taylor Quartet en Ronnie Scott’s”)). La sala importa porque Ronnie Scott’s otorga al lenguaje de pista de baile impulsado por el Hammond un marco canónico de sala de jazz.
+El JTQ en Ronnie Scott’s es el otro polo de la renovación. Songkick registra a The James Taylor Quartet con Yvonne Yanney el 30 de mayo de 2026 y describe al JTQ como el principal responsable del resurgimiento del Hammond B3 en la música popular ([Songkick](https://www.songkick.com/concerts/43032586-james-taylor-quartet-at-ronnie-scotts-jazz-club "The James Taylor Quartet en Ronnie Scott’s")). La sala importa porque Ronnie Scott’s otorga al lenguaje de pista de baile impulsado por el Hammond un marco canónico de sala de jazz.
 
 ### 4. Los festivales amplían el público del groove
 
-El Mostly Jazz Funk & Soul Festival se celebra del 10 al 12 de julio de 2026 en Moseley Park, Birmingham, con un cartel que incluye a Soul II Soul, Cymande, Jordan Rakei, Jalen Ngonda, Thee Sacred Souls, Sampa The Great, Goldie y Fabio & Grooverider con la Outlook Orchestra ([Mostly Jazz Funk & Soul Festival](https://mostlyjazz.co.uk “Mostly Jazz Funk & Soul Festival 2026”)). La programación evidencia cómo el público del acid jazz se solapa con el soul, el funk, el dub, el drum and bass, la cultura de club orquestal y la composición contemporánea británica.
+El Mostly Jazz Funk & Soul Festival se celebra del 10 al 12 de julio de 2026 en Moseley Park, Birmingham, con un cartel que incluye a Soul II Soul, Cymande, Jordan Rakei, Jalen Ngonda, Thee Sacred Souls, Sampa The Great, Goldie y Fabio & Grooverider con la Outlook Orchestra ([Mostly Jazz Funk & Soul Festival](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival 2026")). La programación evidencia cómo el público del acid jazz se solapa con el soul, el funk, el dub, el drum and bass, la cultura de club orquestal y la composición contemporánea británica.
 
 Esta es la versión festivalera del método del acid jazz. Se niega a mantener los géneros en compartimentos estancos.
 
@@ -152,7 +152,7 @@ Esta es la versión festivalera del método del acid jazz. Se niega a mantener l
 
 ### The Brand New Heavies
 
-The Brand New Heavies siguen siendo un referente central porque tradujeron el acid jazz en canciones, voces y puesta en escena para grandes audiencias. Su aparición en 2026 junto a Galliano proporciona a la renovación un puente directo con la primera generación ([The Glasshouse](https://theglasshouseicm.org/whats-on/the-brand-new-heavies-2026/ “The Brand New Heavies en The Glasshouse”)).
+The Brand New Heavies siguen siendo un referente central porque tradujeron el acid jazz en canciones, voces y puesta en escena para grandes audiencias. Su aparición en 2026 junto a Galliano proporciona a la renovación un puente directo con la primera generación ([The Glasshouse](https://theglasshouseicm.org/whats-on/the-brand-new-heavies-2026/ "The Brand New Heavies en The Glasshouse")).
 
 ### Galliano
 
@@ -160,25 +160,25 @@ La presencia de Galliano es relevante porque la banda representa el acid jazz co
 
 ### The James Taylor Quartet
 
-El lenguaje del órgano Hammond del JTQ sigue siendo uno de los sonidos del acid jazz más inmediatamente reconocibles. La fecha de 2026 en Ronnie Scott’s refuerza que la banda es aún una propuesta de directo vigente, no una nota a pie de página histórica ([Songkick](https://www.songkick.com/concerts/43032586-james-taylor-quartet-at-ronnie-scotts-jazz-club “The James Taylor Quartet en Ronnie Scott’s”)).
+El lenguaje del órgano Hammond del JTQ sigue siendo uno de los sonidos del acid jazz más inmediatamente reconocibles. La fecha de 2026 en Ronnie Scott’s refuerza que la banda es aún una propuesta de directo vigente, no una nota a pie de página histórica ([Songkick](https://www.songkick.com/concerts/43032586-james-taylor-quartet-at-ronnie-scotts-jazz-club "The James Taylor Quartet en Ronnie Scott’s")).
 
 ### Bangs & Talbot
 
-Chris Bangs y Mick Talbot llevan un linaje profundo. *Smokin’ Aces* es importante porque enmarca el acid jazz como un lenguaje compositivo y de producción todavía capaz de absorber influencias internacionales ([Presto Music](https://www.prestomusic.com/jazz/articles/6907--new-release-roundup-upcoming-jazz-releases-2nd-january-2026 “Próximos lanzamientos de jazz — 2 de enero de 2026”)).
+Chris Bangs y Mick Talbot llevan un linaje profundo. *Smokin’ Aces* es importante porque enmarca el acid jazz como un lenguaje compositivo y de producción todavía capaz de absorber influencias internacionales ([Presto Music](https://www.prestomusic.com/jazz/articles/6907--new-release-roundup-upcoming-jazz-releases-2nd-january-2026 "Próximos lanzamientos de jazz — 2 de enero de 2026")).
 
 ### Mama Terra y la nueva órbita del sello
 
-La inclusión de Mama Terra en la recopilación de Acid Jazz Records es una señal útil porque orienta a los oyentes hacia una órbita más joven, próxima al jazz-soul, en lugar de una plantilla puramente patrimonial ([Acid Jazz Records / Bandcamp](https://acidjazz.bandcamp.com/album/totally-wired-a-new-collection-from-acid-jazz “Totally Wired... A New Collection From Acid Jazz”)).
+La inclusión de Mama Terra en la recopilación de Acid Jazz Records es una señal útil porque orienta a los oyentes hacia una órbita más joven, próxima al jazz-soul, en lugar de una plantilla puramente patrimonial ([Acid Jazz Records / Bandcamp](https://acidjazz.bandcamp.com/album/totally-wired-a-new-collection-from-acid-jazz "Totally Wired... A New Collection From Acid Jazz")).
 
 ## Guía de escucha y directos en 2026
 
 | Señal | Artista / Evento | Fecha / Estado | Por qué importa |
 |---|---|---|---|
-| **Álbum** | Bangs & Talbot, *Smokin’ Aces* | 23 de enero de 2026 ([Presto Music](https://www.prestomusic.com/jazz/articles/6907--new-release-roundup-upcoming-jazz-releases-2nd-january-2026 “Próximos lanzamientos de jazz”)) | Nuevo lanzamiento de Acid Jazz de figuras de primera generación |
-| **Recopilación** | *Totally Wired... A New Collection From Acid Jazz* | Listado en Bandcamp 2026 ([Acid Jazz Records / Bandcamp](https://acidjazz.bandcamp.com/album/totally-wired-a-new-collection-from-acid-jazz “Totally Wired”)) | Puente entre oyentes antiguos y nuevos, editado por el sello |
-| **Concierto** | The Brand New Heavies con Galliano | 18 de marzo de 2026 ([The Glasshouse](https://theglasshouseicm.org/whats-on/the-brand-new-heavies-2026/ “The Brand New Heavies”)) | Dúo de acid jazz de trayectoria y club-soul británico |
-| **Concierto** | The James Taylor Quartet en Ronnie Scott’s | 30 de mayo de 2026 ([Songkick](https://www.songkick.com/concerts/43032586-james-taylor-quartet-at-ronnie-scotts-jazz-club “JTQ en Ronnie Scott’s”)) | Acid jazz con Hammond B3 en la sala de jazz canónica de Londres |
-| **Festival** | Mostly Jazz Funk & Soul Festival | 10–12 de julio de 2026 ([Mostly Jazz Funk & Soul Festival](https://mostlyjazz.co.uk “Mostly Jazz Funk & Soul Festival”)) | Ecosistema amplio de groove entre jazz, funk, soul y cultura de club |
+| **Álbum** | Bangs & Talbot, *Smokin’ Aces* | 23 de enero de 2026 ([Presto Music](https://www.prestomusic.com/jazz/articles/6907--new-release-roundup-upcoming-jazz-releases-2nd-january-2026 "Próximos lanzamientos de jazz")) | Nuevo lanzamiento de Acid Jazz de figuras de primera generación |
+| **Recopilación** | *Totally Wired... A New Collection From Acid Jazz* | Listado en Bandcamp 2026 ([Acid Jazz Records / Bandcamp](https://acidjazz.bandcamp.com/album/totally-wired-a-new-collection-from-acid-jazz "Totally Wired")) | Puente entre oyentes antiguos y nuevos, editado por el sello |
+| **Concierto** | The Brand New Heavies con Galliano | 18 de marzo de 2026 ([The Glasshouse](https://theglasshouseicm.org/whats-on/the-brand-new-heavies-2026/ "The Brand New Heavies")) | Dúo de acid jazz de trayectoria y club-soul británico |
+| **Concierto** | The James Taylor Quartet en Ronnie Scott’s | 30 de mayo de 2026 ([Songkick](https://www.songkick.com/concerts/43032586-james-taylor-quartet-at-ronnie-scotts-jazz-club "JTQ en Ronnie Scott’s")) | Acid jazz con Hammond B3 en la sala de jazz canónica de Londres |
+| **Festival** | Mostly Jazz Funk & Soul Festival | 10–12 de julio de 2026 ([Mostly Jazz Funk & Soul Festival](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival")) | Ecosistema amplio de groove entre jazz, funk, soul y cultura de club |
 
 ## Qué significa esto según el perfil del oyente
 
@@ -208,29 +208,29 @@ El centro de gravedad es el groove. En 2026, eso parece menos una preferencia re
 
 **¿Está regresando realmente el acid jazz en el Reino Unido?**
 
-Sí, aunque la palabra más precisa es renovación. Las evidencias son la actividad del sello, los lanzamientos de 2026, las fechas en directo de artistas de primera generación, la programación de festivales y el retorno de los públicos más jóvenes del jazz británico a la música orientada al groove ([Acid Jazz Records / Bandcamp](https://acidjazz.bandcamp.com/album/totally-wired-a-new-collection-from-acid-jazz “Totally Wired”), [The Glasshouse](https://theglasshouseicm.org/whats-on/the-brand-new-heavies-2026/ “The Brand New Heavies”)).
+Sí, aunque la palabra más precisa es renovación. Las evidencias son la actividad del sello, los lanzamientos de 2026, las fechas en directo de artistas de primera generación, la programación de festivales y el retorno de los públicos más jóvenes del jazz británico a la música orientada al groove ([Acid Jazz Records / Bandcamp](https://acidjazz.bandcamp.com/album/totally-wired-a-new-collection-from-acid-jazz "Totally Wired"), [The Glasshouse](https://theglasshouseicm.org/whats-on/the-brand-new-heavies-2026/ "The Brand New Heavies")).
 
 **¿Por qué álbum de 2026 debería empezar el oyente?**
 
-*Smokin’ Aces* de Bangs & Talbot es el punto de partida más específico del acid jazz en 2026 porque está publicado en Acid Jazz y reúne a Chris Bangs y Mick Talbot ([Presto Music](https://www.prestomusic.com/jazz/articles/6907--new-release-roundup-upcoming-jazz-releases-2nd-january-2026 “Próximos lanzamientos de jazz”)).
+*Smokin’ Aces* de Bangs & Talbot es el punto de partida más específico del acid jazz en 2026 porque está publicado en Acid Jazz y reúne a Chris Bangs y Mick Talbot ([Presto Music](https://www.prestomusic.com/jazz/articles/6907--new-release-roundup-upcoming-jazz-releases-2nd-january-2026 "Próximos lanzamientos de jazz")).
 
 **¿Qué conciertos son más relevantes?**
 
-The Brand New Heavies con Galliano en The Glasshouse y The James Taylor Quartet en Ronnie Scott’s son las señales de acid jazz más directas en la programación actual ([The Glasshouse](https://theglasshouseicm.org/whats-on/the-brand-new-heavies-2026/ “The Brand New Heavies”), [Songkick](https://www.songkick.com/concerts/43032586-james-taylor-quartet-at-ronnie-scotts-jazz-club “JTQ en Ronnie Scott’s”)).
+The Brand New Heavies con Galliano en The Glasshouse y The James Taylor Quartet en Ronnie Scott’s son las señales de acid jazz más directas en la programación actual ([The Glasshouse](https://theglasshouseicm.org/whats-on/the-brand-new-heavies-2026/ "The Brand New Heavies"), [Songkick](https://www.songkick.com/concerts/43032586-james-taylor-quartet-at-ronnie-scotts-jazz-club "JTQ en Ronnie Scott’s")).
 
 **¿Cómo se conecta la escena del jazz británico en sentido amplio?**
 
-La conexión es el groove, no una etiqueta de género estricta. Festivales como Mostly Jazz Funk & Soul programan jazz, funk, soul, dub y artistas próximos al club en un mismo espacio, lo que reproduce la lógica híbrida original del acid jazz ([Mostly Jazz Funk & Soul Festival](https://mostlyjazz.co.uk “Mostly Jazz Funk & Soul Festival”)).
+La conexión es el groove, no una etiqueta de género estricta. Festivales como Mostly Jazz Funk & Soul programan jazz, funk, soul, dub y artistas próximos al club en un mismo espacio, lo que reproduce la lógica híbrida original del acid jazz ([Mostly Jazz Funk & Soul Festival](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival")).
 
 ## Referencias
 
-- Acid Jazz Records, (2026). [Totally Wired... A New Collection From Acid Jazz ⧉](https://acidjazz.bandcamp.com/album/totally-wired-a-new-collection-from-acid-jazz “Totally Wired”).
-- Presto Music, (2026). [Próximos lanzamientos de jazz — 2 de enero de 2026 ⧉](https://www.prestomusic.com/jazz/articles/6907--new-release-roundup-upcoming-jazz-releases-2nd-january-2026 “Próximos lanzamientos de jazz”).
-- The Glasshouse, (2026). [The Brand New Heavies ⧉](https://theglasshouseicm.org/whats-on/the-brand-new-heavies-2026/ “The Brand New Heavies”).
-- Songkick, (2026). [The James Taylor Quartet en Ronnie Scott’s Jazz Club ⧉](https://www.songkick.com/concerts/43032586-james-taylor-quartet-at-ronnie-scotts-jazz-club “JTQ en Ronnie Scott’s”).
-- Mostly Jazz Funk & Soul Festival, (2026). [Mostly Jazz Funk & Soul Festival 2026 ⧉](https://mostlyjazz.co.uk “Mostly Jazz Funk & Soul Festival”).
-- Marlbank, (2026). [Los mejores álbumes de jazz británico en 2026 hasta ahora ⧉](https://marlbank.net/top-jazz-in-2026/top-uk-jazz-albums-in-2026-so-far/ “Los mejores álbumes de jazz británico en 2026 hasta ahora”).
+- Acid Jazz Records, (2026). [Totally Wired... A New Collection From Acid Jazz ⧉](https://acidjazz.bandcamp.com/album/totally-wired-a-new-collection-from-acid-jazz "Totally Wired").
+- Presto Music, (2026). [Próximos lanzamientos de jazz — 2 de enero de 2026 ⧉](https://www.prestomusic.com/jazz/articles/6907--new-release-roundup-upcoming-jazz-releases-2nd-january-2026 "Próximos lanzamientos de jazz").
+- The Glasshouse, (2026). [The Brand New Heavies ⧉](https://theglasshouseicm.org/whats-on/the-brand-new-heavies-2026/ "The Brand New Heavies").
+- Songkick, (2026). [The James Taylor Quartet en Ronnie Scott’s Jazz Club ⧉](https://www.songkick.com/concerts/43032586-james-taylor-quartet-at-ronnie-scotts-jazz-club "JTQ en Ronnie Scott’s").
+- Mostly Jazz Funk & Soul Festival, (2026). [Mostly Jazz Funk & Soul Festival 2026 ⧉](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival").
+- Marlbank, (2026). [Los mejores álbumes de jazz británico en 2026 hasta ahora ⧉](https://marlbank.net/top-jazz-in-2026/top-uk-jazz-albums-in-2026-so-far/ "Los mejores álbumes de jazz británico en 2026 hasta ahora").
 <!-- enrich-start -->
-<aside class=”author-card” aria-label=”Acerca del autor”><img alt=”Retrato de Sebastien Rousseau” src=”https://cloudcdn.pro/stocks/images/sebastien-rousseau.png width=”64” height=”64” loading=”lazy” decoding=”async” /><span class=”author-card-body”><strong class=”author-card-name”><a href=”/about/index.html”>Sebastien Rousseau</a></strong><span class=”author-card-bio”>Tecnólogo bancario sénior, escribe sobre IA aplicada, migración a ISO 20022, criptografía postcuántica para servicios financieros y la transformación estructural de los pagos wholesale.</span><span class=”author-credentials”>Más de 20 años en HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href=”/about/index.html”>Perfil completo</a> &middot; <a href=”https://www.linkedin.com/in/sebastienrousseau/” rel=”external noopener”>LinkedIn</a> &middot; <a href=”https://github.com/sebastienrousseau” rel=”external noopener”>GitHub</a></span></span></aside>
-<p class=”post-reviewed”>Última revisión <time datetime=”2026-05-22”>2026-05-22</time>.</p>
+<aside class="author-card" aria-label="Acerca del autor"><img alt="Retrato de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tecnólogo bancario sénior, escribe sobre IA aplicada, migración a ISO 20022, criptografía postcuántica para servicios financieros y la transformación estructural de los pagos wholesale.</span><span class="author-credentials">Más de 20 años en HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Perfil completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Última revisión <time datetime="2026-05-22">2026-05-22</time>.</p>
 <!-- enrich-end -->

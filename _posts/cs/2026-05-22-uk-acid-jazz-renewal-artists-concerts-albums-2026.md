@@ -93,9 +93,9 @@ site_software: "Static Site Generator, Rust"
 <p class="post-lead-heading"><strong>Klíčová zjištění</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>Label.</strong> Kompilace Acid Jazz Records na Bandcampu pro rok 2026 zahrnuje Matta Berryho, Kevina Fingiera, The Brand New Heavies, Billyho Valentina a Mamu Terru.</li>
-  <li><strong>Vydání.</strong> <em>Smokin' Aces</em> od Bangs &amp; Talbot (23. ledna 2026, Acid Jazz) znovu spojuje Chrise Bangse a Micka Talbota s groove, funkem, soulem a zvuky globální fúze.</li>
+  <li><strong>Vydání.</strong> <em>Smokin' Aces</em> od Bangs & Talbot (23. ledna 2026, Acid Jazz) znovu spojuje Chrise Bangse a Micka Talbota s groove, funkem, soulem a zvuky globální fúze.</li>
   <li><strong>Živě.</strong> The Brand New Heavies s Gallianem v The Glasshouse a The James Taylor Quartet v Ronnie Scott's jsou nejjasněji čitelné signály acid jazzu v nabídce roku 2026.</li>
-  <li><strong>Festival.</strong> Mostly Jazz Funk &amp; Soul Festival (10.–12. července 2026) uvádí Soul II Soul, Cymande, Jordana Rakeiho a Sampu The Great vedle legendárních jazz-funkových kapel.</li>
+  <li><strong>Festival.</strong> Mostly Jazz Funk & Soul Festival (10.–12. července 2026) uvádí Soul II Soul, Cymande, Jordana Rakeiho a Sampu The Great vedle legendárních jazz-funkových kapel.</li>
 </ul>
 <p class="post-lead-related"><strong>Související čtení:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">Tokenizované vklady: bankovní transformace probíhající v roce 2026</a>.</p>
 </aside>
@@ -112,7 +112,7 @@ Obnova UK acid jazzu v roce 2026 není muzejním exponátem nostalgické záliby
 > - **The Brand New Heavies a Galliano jsou zpět před britským publikem.** The Glasshouse uvádí The Brand New Heavies se speciálními hosty Galliano v Sage One dne 18. března 2026 ([The Glasshouse](https://theglasshouseicm.org/whats-on/the-brand-new-heavies-2026/ "The Brand New Heavies v The Glasshouse")).
 > - **The James Taylor Quartet zůstává živým referenčním bodem s Hammondovými varhanami.** Songkick uvádí JTQ v Ronnie Scott's 30. května 2026 a popisuje kapelu jako ústřední pro funky acid jazz a znovuzrození Hammondu B3 ([Songkick](https://www.songkick.com/concerts/43032586-james-taylor-quartet-at-ronnie-scotts-jazz-club "The James Taylor Quartet v Ronnie Scott's")).
 > - **Festivalové programování udržuje jazz-funk a soul ve veřejném prostoru.** Mostly Jazz Funk & Soul Festival se koná 10.–12. července 2026 v Moseley Parku a jeho lineup zahrnuje Soul II Soul, Cymande, Jordana Rakeiho, Jalena Ngondu, Thee Sacred Souls a Sampu The Great ([Mostly Jazz Funk & Soul Festival](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival 2026")).
-> - **Obnova není pouhým „acid jazz revivalismem."** Jde o širší britské groove-kontinuum propojující jazz-funk, soul jazz, rare groove, klubovou kulturu, londýnské podniky, birminghamské festivaly a britská jazzová alba, která scénu průběžně osvěžují.
+> - **Obnova není pouhým "acid jazz revivalismem."** Jde o širší britské groove-kontinuum propojující jazz-funk, soul jazz, rare groove, klubovou kulturu, londýnské podniky, birminghamské festivaly a britská jazzová alba, která scénu průběžně osvěžují.
 >
 ---
 
@@ -231,6 +231,6 @@ Pojítkem je groove, nikoli striktní žánrové nálepkování. Festivaly jako 
 - Mostly Jazz Funk & Soul Festival, (2026). [Mostly Jazz Funk & Soul Festival 2026 ⧉](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival").
 - Marlbank, (2026). [Top UK jazz albums in 2026 so far ⧉](https://marlbank.net/top-jazz-in-2026/top-uk-jazz-albums-in-2026-so-far/ "Nejlepší britská jazzová alba roku 2026 dosud").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="O autorovi"><img alt="Portrét Sebastiena Rousseaua" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Seniorní bankovní technolog, který se věnuje aplikované AI, migraci na ISO 20022, postkvantové kryptografii pro finanční služby a strukturální transformaci velkoobchodních plateb.</span><span class="author-credentials">Více než 20 let zkušeností napříč HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA a Virgin Group. <a href="/about/index.html">Úplný profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="O autorovi"><img alt="Portrét Sebastiena Rousseaua" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Seniorní bankovní technolog, který se věnuje aplikované AI, migraci na ISO 20022, postkvantové kryptografii pro finanční služby a strukturální transformaci velkoobchodních plateb.</span><span class="author-credentials">Více než 20 let zkušeností napříč HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA a Virgin Group. <a href="/about/index.html">Úplný profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Naposledy revidováno <time datetime="2026-05-22">2026-05-22</time>.</p>
 <!-- enrich-end -->

@@ -1,11 +1,11 @@
 {
-  "description": "Algorithm kuantum akoko polynomial tuntun ti Yilei Chen fojusi cryptography lattice, pẹlu awọn ipa fun awọn iṣedede post-quantum bii CRYSTALS-Kyber.",
-  "keywords": "iširo kuantum, algorithm kuantum, cryptography lattice, LWE, fifi pamọ, cryptography post-quantum, aabo cyber, Yilei Chen, iwadi cryptography, ewu aabo",
   "title": "Quantum Algorithm Challenges Lattice-Based Cryptography",
   "language": "yo-NG",
-  "locale": "yo_NG",
   "subtitle": "Algorithm kuantum akoko polynomial tuntun fun cryptography ti o da lori lattice",
   "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
+  "banner_alt": "Banner ti awọn oju-iṣọn nẹtiwọọki ninu aaye buluu oni-nọmba",
+  "description": "Algorithm kuantum akoko polynomial tuntun ti Yilei Chen fojusi cryptography lattice, pẹlu awọn ipa fun awọn iṣedede post-quantum bii CRYSTALS-Kyber.",
   "date": "Apr 01, 2024",
-  "banner_alt": "Banner ti awọn oju-iṣọn nẹtiwọọki ninu aaye buluu oni-nọmba"
+  "locale": "yo_NG",
+  "keywords": "iširo kuantum, algorithm kuantum, cryptography lattice, LWE, fifi pamọ, cryptography post-quantum, aabo cyber, Yilei Chen, iwadi cryptography, ewu aabo"
 }
