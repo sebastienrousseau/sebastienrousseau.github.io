@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 04 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 04 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>2026 年量子安全银行业指数:后量子密码学、QKD、密码敏捷性与先收集后解密风险 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="面向 2026 年的量子安全银行业就绪度指数,涵盖 NIST 后量子标准、密码学清单、密码敏捷性、QKD,以及长期保留数据的暴露风险。">
+<meta name="keywords" content="量子安全银行 2026, 银行后量子密码学, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, 密码敏捷性, QKD 银行">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="The Quantum-Safe Banking Index 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-4T7GMkGsidLYL+ahmW4GO7H7zvSUxAjYU+k1HMXO+TI=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-89imjDae98zxQEiTskuZkWR1Zr4q4hTuMmiInXuSE7o=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-ImalUwqdC6TiexURl9MIAGKZF7KhL7wu62sJw+Kh52o=' 'sha256-ZVTNuRpGm37mw1NlhCIKMc3wZ949tN2FwpSA7lB8m8E=' 'sha256-i1qOehuLxAun7O8puuf4LYmuC56XEYYBXiOUgbXfGMQ=' 'self' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/zh-hans/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&amp;w=1200&amp;format=webp&amp;q=80" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/c322d81c82669865.css" integrity="sha256-uwHa+oG0ccztOXZJCJ7Cuinpz2vspGlWl0oRANMnlHQ= sha256-L3zxpu6Sq+g+R0oLAM8mE7t9qbBpnkBV03aBLMt3G/c=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom 订阅源" href="/zh-hans/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="stylesheet" href="/highlight.a92b9694.css">
+<meta property="og:title" content="2026 年量子安全银行业指数:后量子密码学、QKD、密码敏捷性与先收集后解密风险 — Sebastien Rousseau">
+<meta property="og:description" content="面向 2026 年的量子安全银行业就绪度指数,涵盖 NIST 后量子标准、密码学清单、密码敏捷性、QKD,以及长期保留数据的暴露风险。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/zh-hans/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2026 年量子安全银行业指数:后量子密码学、QKD、密码敏捷性与先收集后解密风险 — Sebastien Rousseau">
+<meta name="twitter:description" content="面向 2026 年的量子安全银行业就绪度指数,涵盖 NIST 后量子标准、密码学清单、密码敏捷性、QKD,以及长期保留数据的暴露风险。">
+<meta name="twitter:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80">
+<link rel="canonical" href="https://sebastienrousseau.com/zh-hans/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">跳至主要内容</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="切换导航" />
+      <div class="wrap">
+        <a class="ap-brand" href="/zh-hans/index.html" aria-label="Sebastien Rousseau 首页">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="主导航">
+          <ul class="ap-menu">
+            <li><a href="/zh-hans/guanyu/index.html">关于</a></li>
+            <li><a href="/zh-hans/wenzhang/index.html" aria-current="page" class="active">文章</a></li>
+            <li><a href="/zh-hans/lunwen/index.html">论文与白皮书</a></li>
+            <li><a href="/zh-hans/zhuti/index.html">主题</a></li>
+            <li><a href="/zh-hans/xiangmu/index.html">项目</a></li>
+            <li><a href="/zh-hans/boqing/index.html">播放列表</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="切换到深色主题" aria-pressed="false" title="切换主题">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="搜索（Cmd 或 Ctrl + K）" title="搜索（⌘K）">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="语言">
+            <button type="button" class="ap-lang-toggle" aria-label="ZH，切换语言" aria-expanded="false" aria-haspopup="menu" title="切换语言">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">ZH</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/zh-hans/lianxi/index.html" aria-label="联系我">联系我 ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="切换导航">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>2026 年量子安全银行业指数:后量子密码学、QKD、密码敏捷性与先收集后解密风险</h1>
+      <p class="sub">量子风险已经从理论威胁转入迁移项目阶段:银行必须度量密码暴露面、迁移就绪度,以及密码敏捷性。</p>
+    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-2026" class="article-tag" rel="tag">量子安全银行 2026</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">银行后量子密码学</a><a href="/tags/index.html#h3-nist-fips-203" class="article-tag" rel="tag">NIST FIPS 203</a><a href="/tags/index.html#h3-ml-kem" class="article-tag" rel="tag">ML-KEM</a><a href="/tags/index.html#h3-ml-dsa" class="article-tag" rel="tag">ML-DSA</a><a href="/tags/index.html#h3-slh-dsa" class="article-tag" rel="tag">SLH-DSA</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">密码敏捷性</a><a href="/tags/index.html#h3-qkd" class="article-tag" rel="tag">QKD 银行</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-04T06:06:06+00:00" class="meta-pub">Published 4 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">2 min read</span></div></section><figure class="article-banner"><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" alt="Banner for: 2026 年量子安全银行业指数:后量子密码学、QKD、密码敏捷性与先收集后解密风险" width="1200" height="675" fetchpriority="high" decoding="async" /></figure>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Contents</h2><ol><li><a href="#2026">为何 2026 是这份指数登场的年份</a></li><li><a href="#2026-2">2026 年指数架构</a></li><li><a href="#section-4">当前应跟踪的信号</a></li><li><a href="#section-5">迁移从密码学总账开始</a></li><li><a href="#section-6">先混合,始终敏捷</a></li><li><a href="#qkd">QKD 的定位</a></li><li><a href="#section-8">按银行类型解读</a></li><li><a href="#section-13">结论</a></li><li><a href="#section-14">常见问题</a></li><li><a href="#section-15">参考文献</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 面向 2026 年的量子安全银行业就绪度指数,涵盖 NIST 后量子标准、密码学清单、密码敏捷性、QKD,以及长期保留数据的暴露风险。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>为何 2026 是这份指数登场的年份.</strong> 2024–2025 年的三项转变,把量子安全从研究观察点变成了可量化的银行项目。第一,NIST 于 2024 年 8 月 13 日定稿头部后量子标准:FIPS 203(ML-KEM)⧉、FIPS 204(ML-DSA)⧉、FIPS 205(SLH-DSA)⧉。算法选型之争在那一天就结束了;到 2026 年还在跑&quot;哪种方案胜出&quot;的内部工作流的银行,落后了 18 个月。.</li>  <li><strong>2026 年指数架构.</strong> 一份可信的量子就绪度记分卡,必须跟踪精确百分比,而不是只看项目状态:.</li>  <li><strong>当前应跟踪的信号.</strong> 迁移顺序到现在已经很清楚。每道关卡都产出推动下一道关卡的证据;跳过或压缩任何一道关卡,都会触发指数架构故障栏里那种紧急再平台化的风险。.</li>  <li><strong>迁移从密码学总账开始.</strong> 迁移顺序到现在已经很清楚。每道关卡都产出推动下一道关卡的证据;跳过或压缩任何一道关卡,都会触发指数架构故障栏里那种紧急再平台化的风险。.</li></ul></aside><!-- lead-start: manual -->
+
+<!-- lead-end -->
+<p>2026 年的量子安全银行业,关乎落地迁移,而非推演。NIST 已经定稿头三项后量子密码学标准,银行现在必须搞清楚:哪些系统依赖 RSA、ECC、TLS、签名、HSM、证书、支付通道、归档,以及长期保留的机密数据。指数的问题很简单:这家机构能否在威胁转为现实之前完成密码替换?</p>
+<hr />
+<blockquote>
+<p><strong>执行摘要 / 核心要点</strong></p>
+<ul>
+<li>**NIST 标准已经具体落地。**FIPS 203 定义 ML-KEM 用于密钥封装,FIPS 204 定义 ML-DSA 用于签名,FIPS 205 把 SLH-DSA 定为无状态哈希签名标准。</li>
+<li>**清单是第一道成熟度门槛。**找不到的东西,银行就无法迁移:证书、密钥、协议、应用、供应商、HSM、API、归档、嵌入式系统都得纳入图谱。</li>
+<li>**密码敏捷性是持久目标。**目标不是一次性把算法换掉;是在不重新设计整套应用的前提下,能够更换密码原语。</li>
+<li><strong>长期保留数据改变紧迫性。</strong>&quot;先收集后解密&quot;风险意味着今天采集到的数据,只要保值时间足够长,日后就可能被读出来。</li>
+<li>**QKD 是一种专门用途的补充。**量子密钥分发可能适用于价值最高的少数通道,但它不能替代全机构范围的 PQC 迁移。</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="2026">为何 2026 是这份指数登场的年份 <a class="heading-anchor" href="#2026" aria-label="Link to 为何 2026 是这份指数登场的年份">#</a></h2>
+<p>2024–2025 年的三项转变,把量子安全从研究观察点变成了可量化的银行项目。第一,NIST 于 2024 年 8 月 13 日定稿头部后量子标准:<a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf" title="FIPS 203 —— 基于模格的密钥封装机制">FIPS 203(ML-KEM)⧉</a>、<a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf" title="FIPS 204 —— 基于模格的数字签名标准">FIPS 204(ML-DSA)⧉</a>、<a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.205.pdf" title="FIPS 205 —— 无状态哈希数字签名标准">FIPS 205(SLH-DSA)⧉</a>。算法选型之争在那一天就结束了;到 2026 年还在跑&quot;哪种方案胜出&quot;的内部工作流的银行,落后了 18 个月。</p>
+<p>第二,<a href="https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF" title="Commercial National Security Algorithm Suite 2.0">NSA 的 CNSA 2.0 ⧉</a>把美国联邦终态设在 2033 年,期间设置中间截止线:2027 年起针对软件和固件签名,2030 年起针对浏览器和操作系统。任何与美国联邦交易对手存在敞口的银行——FedNow、财政部业务、联邦客户账户——在涉及联邦数据的系统上都已置身这道边界之内。时钟不再抽象。</p>
+<p>第三,<a href="https://csrc.nist.gov/Projects/post-quantum-cryptography" title="NIST 后量子密码学项目">先收集后解密(HNDL)⧉</a>是支撑紧迫性的承重式风险论点。成熟对手已经在主要金融中心截获 TLS 保护下的支付报文、SWIFT 信封、KYC 文档,以及长期保留的归档密文。2026 年被截获的数据,只需要在解密时刻仍属机密敏感即可——对 30 年期按揭、寿险核保、MiFID II / GDPR 交易录音和并购留存档案而言,这个窗口远远超过任何对具备密码相关能力的量子计算机(CRQC)到来时间的可信估算。对手今天不需要一台量子计算机,他们只需要在数据失去价值之前拥有一台。</p>
+<p>量子安全银行业指数度量的就是:你的机构能否在这两条曲线交汇之前,把迁移交付出去。问题已经不是要不要迁,而是能否在站得住脚的时间表内完成。</p>
+<h2 id="2026-2">2026 年指数架构 <a class="heading-anchor" href="#2026-2" aria-label="Link to 2026 年指数架构">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>指数层</th>
+<th>2026 方向</th>
+<th>就绪度指标</th>
+<th>处置不当的风险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>清单</strong></td>
+<td>把密码资产、协议、证书、供应商、数据类别绘成图谱</td>
+<td>已纳入清单的资产比例</td>
+<td>存在未知的量子脆弱依赖</td>
+</tr>
+<tr>
+<td><strong>暴露面</strong></td>
+<td>按机密性生命周期与交易关键性分级</td>
+<td>高风险资产按价值与生命周期分布</td>
+<td>迁移优先级误判</td>
+</tr>
+<tr>
+<td><strong>迁移</strong></td>
+<td>采用契合 NIST 标准的混合与 PQC 就绪模式</td>
+<td>ML-KEM 与 ML-DSA 就绪度</td>
+<td>在最后期限前被迫紧急再平台化</td>
+</tr>
+<tr>
+<td><strong>密码敏捷性</strong></td>
+<td>把应用逻辑与密码原语解耦</td>
+<td>受策略管控的密码覆盖率</td>
+<td>算法在整个估盘内被硬编码</td>
+</tr>
+<tr>
+<td><strong>保障</strong></td>
+<td>测试互操作性、性能、HSM 支持、证书与供应商就绪</td>
+<td>测试通过率与例外积压量</td>
+<td>通道断裂或回退控制薄弱</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-3">董事会级量子记分卡 <a class="heading-anchor" href="#section-3" aria-label="Link to 董事会级量子记分卡">#</a></h3>
+<p>一份可信的量子就绪度记分卡,必须跟踪精确百分比,而不是只看项目状态:</p>
+<ol>
+<li>**清单完整度:**一级关键应用中已完成密码学物料清单(CBOM)全图谱化的比例。</li>
+<li>**HNDL 暴露面:**在未采用混合量子安全密钥封装的网络上传输的长期保留机密数据量(例如个人身份信息、商业机密)。</li>
+<li>**NIST 迁移进度:**已迁移至 FIPS 203(ML-KEM)与 FIPS 204(ML-DSA)标准的非对称加密密钥与数字签名所占比例。</li>
+<li>**密码敏捷性就绪度:**关键系统中,能通过集中策略轮换密码算法、无需重新编译代码的系统所占比例。</li>
+</ol>
+<h2 id="section-4">当前应跟踪的信号 <a class="heading-anchor" href="#section-4" aria-label="Link to 当前应跟踪的信号">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>信号</th>
+<th>对银行意味着什么</th>
+<th>信息源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>FIPS 203 ML-KEM</strong></td>
+<td>NIST 在通用加密密钥建立方面的主标准</td>
+<td><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="首批三项已定稿的后量子加密标准">NIST ⧉</a></td>
+</tr>
+<tr>
+<td><strong>FIPS 204 ML-DSA</strong></td>
+<td>NIST 在数字签名方面的主标准</td>
+<td><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="首批三项已定稿的后量子加密标准">NIST ⧉</a></td>
+</tr>
+<tr>
+<td><strong>FIPS 205 SLH-DSA</strong></td>
+<td>基于哈希的签名替代与备份设计</td>
+<td><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="首批三项已定稿的后量子加密标准">NIST ⧉</a></td>
+</tr>
+<tr>
+<td><strong>鼓励立即开始集成</strong></td>
+<td>NIST 明确告诉管理员现在就开始集成标准,因为全面整合需要时间</td>
+<td><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="首批三项已定稿的后量子加密标准">NIST ⧉</a></td>
+</tr>
+<tr>
+<td><strong>银行量子项目在扩张</strong></td>
+<td>主要银行在准备 PQC 切换的同时,也在探索量子技术</td>
+<td><a href="https://thequantuminsider.com/2026/03/27/15-plus-global-banks-probing-the-wonderful-world-of-quantum-technologies/" title="全球银行探索量子技术概览">Quantum Insider ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-5">迁移从密码学总账开始 <a class="heading-anchor" href="#section-5" aria-label="Link to 迁移从密码学总账开始">#</a></h2>
+<p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&amp;w=1200&amp;format=webp&amp;q=80" alt="一张控制室仪表盘的照片,绘出银行 TLS 端点、HSM 分区、证书颁发机构与长期保留数据归档之间的密码原语关系——密码学物料清单的可视化登记。"  width="1200" height="675" decoding="async" fetchpriority="high"></p>
+<p>迁移顺序到现在已经很清楚。每道关卡都产出推动下一道关卡的证据;跳过或压缩任何一道关卡,都会触发指数架构故障栏里那种紧急再平台化的风险。</p>
+<pre class="mermaid">flowchart LR
+    A[&quot;Discovery&lt;br/&gt;CycloneDX CBOM&lt;br/&gt;scanners + CMDB&quot;] --&gt; B[&quot;Exposure model&lt;br/&gt;lifetime × capture&lt;br/&gt;× CRQC horizon&quot;]
+    B --&gt; C[&quot;Hybrid TLS 1.3&lt;br/&gt;X25519MLKEM768&lt;br/&gt;external endpoints&quot;]
+    C --&gt; D[&quot;HSM PQC firmware&lt;br/&gt;vendor-by-vendor&lt;br/&gt;roadmap rollout&quot;]
+    D --&gt; E[&quot;Crypto-agility&lt;br/&gt;PKCS#11 + policy&lt;br/&gt;registry + kill switch&quot;]
+    E --&gt; F[&quot;Pure PQC&lt;br/&gt;2028+&lt;br/&gt;conformance + audit&quot;]
+
+    style A fill:#eff5ff,stroke:#0056b3,color:#111
+    style B fill:#eff5ff,stroke:#0056b3,color:#111
+    style C fill:#fff4cf,stroke:#5a3e00,color:#111
+    style D fill:#fff4cf,stroke:#5a3e00,color:#111
+    style E fill:#e8f5e9,stroke:#1b5e20,color:#111
+    style F fill:#e8f5e9,stroke:#1b5e20,color:#111
+</pre>
+<p>第一项交付物不是新算法,而是密码学物料清单(CBOM)。银行需要一份活的清单,把业务服务连接到算法、库、证书、密钥长度、HSM、数据生命周期、供应商,以及运营所有者。没有这份总账,量子安全迁移就只能靠猜。</p>
+<p>CBOM 记录集对每一项密码原语都应当抓取:协议或接口(TLS 1.3、IPsec、SSH、自定义支付报文格式)、算法及参数集(RSA-2048、ECDH P-256、ML-KEM-768、ML-DSA-65)、库及其版本(OpenSSL 3.4、BoringSSL commit 哈希、供应商 SDK 构建)、硬件边界(HSM 分区、TPM、安全飞地,或无)、适用情况下的证书身份、应用所有者,以及数据分类生命周期。2025–2026 年陆续进入生产的工具——IBM Quantum Safe Inventory、开源的 <a href="https://cyclonedx.org/capabilities/cbom/" title="CycloneDX 密码学物料清单">CycloneDX CBOM 规范 ⧉</a>、CryptoNext / Sandbox / PQShield 的企业级扫描器——都能接入现有 CMDB 管线。它们没有一个能独立把事做完;即便配齐了厂商工具和专职人手,CBOM 建设周期也要 12–18 个月。</p>
+<p>要跟踪的指标是新鲜度,不是覆盖率。一份过期两个月的 CBOM 比根本没有 CBOM 还糟,因为它会让安全团队对&quot;已经迁了什么&quot;产生虚假的信心。</p>
+<h2 id="section-6">先混合,始终敏捷 <a class="heading-anchor" href="#section-6" aria-label="Link to 先混合,始终敏捷">#</a></h2>
+<p>大多数银行不会一夜之间把所有东西都切换掉。现实路径是混合部署:传统机制与后量子机制并行运行,等供应商、协议、证书与运营工具逐步成熟。长期目标是密码敏捷性——由策略管控的密码选择,可在不重建业务应用的前提下更换。</p>
+<p>[插入交互组件:先收集后解密(HNDL)风险计算器——一个基于滑块的工具,管理者输入数据保质期与预估量子时间线,查看自身暴露窗口。]</p>
+<blockquote>
+<p>**关键洞察:**如果你的数据需要保密 10 年,而具备密码相关能力的量子计算机(CRQC)还有 7 年到来,你的迁移截止日期不是 7 年后——是 3 年前。</p>
+</blockquote>
+<p>落到实操上,这意味着:对外网端点采用 TLS 1.3 + 混合 <code>X25519MLKEM768</code> 密钥共享(Chrome / Firefox / Cloudflare / Akamai 今天都已支持),在 HSM 与 CA 基础设施跟上之前保留传统签名链,并部署一层 PKCS#11 抽象,让策略注册中心可以在不重新编译业务应用的前提下轮换算法。密码敏捷性决定下一次算法切换(只是何时,不是是否)是六周完成的轮换,还是又一个七年的项目。</p>
+<h2 id="qkd">QKD 的定位 <a class="heading-anchor" href="#qkd" aria-label="Link to QKD 的定位">#</a></h2>
+<p>量子密钥分发(QKD)在本指数里的定位是面向高敏通道的可选项,尤其适用于金融市场基础设施、央行连接,以及对极敏感的机构间资金流。它应当被当作 PQC 的补充对待,而不是拖延全企业迁移的借口。</p>
+<h2 id="section-8">按银行类型解读 <a class="heading-anchor" href="#section-8" aria-label="Link to 按银行类型解读">#</a></h2>
+<h3 id="section-9">全球系统重要性银行 <a class="heading-anchor" href="#section-9" aria-label="Link to 全球系统重要性银行">#</a></h3>
+<p>难点在规模:数以万计的 TLS 端点、数以百计的 HSM 分区、数十家内部证书颁发机构、几百套嵌入了密码原语的业务应用,以及银行无法改动的供应商 SDK。该投的不是又一个试点;而是 CBOM 工具链、嵌入每一项新建的 PKCS#11 抽象层、挑选一家牵头供应商主攻 PQC 固件且接受其余厂商多年长尾的 HSM 整合方案,以及在 FIPS 203 / 204 / 205 迁移完成很久之后仍将继续承担密码敏捷性的持久承载面——策略注册中心。</p>
+<h3 id="section-10">交易银行与对公银行 <a class="heading-anchor" href="#section-10" aria-label="Link to 交易银行与对公银行">#</a></h3>
+<p>迁移范围比 G-SIB 层级要窄,但 HNDL 暴露面更尖锐:SWIFT 跨境报文、承载对公交易对手个人身份信息的结构化支付数据、保管贸易融资文档的单据交换平台,以及长期保留的报送归档。优先在每一个面向客户的端点上启用混合 TLS,并对留存归档启用静态 PQC。压住 HSM 供应商问责——对公银行平台团队握有的采购杠杆,通常比批发技术团队大得多。</p>
+<h3 id="section-11">区域性银行 <a class="heading-anchor" href="#section-11" aria-label="Link to 区域性银行">#</a></h3>
+<p>直接采购已经具备密码敏捷性基础设施的供应商技术栈。选一个核心银行平台,其供应商发布 CBOM,并对 ML-KEM / ML-DSA 的支持时间表作出承诺。验证供应商的 HSM 路线图与本行迁移截止日期对得上。从零开始自建密码敏捷性所需的工程人力是跨年度量级;供应商在众多客户身上摊薄了这笔成本,银行直接享有结果。合理的内部范围,是核验工作——确认供应商的承诺能通过本机构的模型风险管理流程。</p>
+<h3 id="psp">金融科技、PSP 与基础设施提供方 <a class="heading-anchor" href="#psp" aria-label="Link to 金融科技、PSP 与基础设施提供方">#</a></h3>
+<p>2026 年向银行销售时,供应商面对的竞争问题已不是&quot;你支不支持 PQC&quot;,而是&quot;你能否拿出一份自家平台的 CycloneDX CBOM、一张 HSM 供应商支持矩阵,以及一份成文的算法轮换 SLA。&quot;答得出&quot;能&quot;的供应商,会在 2026–2027 年的一级采购关卡里被放行;答不出的,会在续约周期里把生意输给能答得出的对手。</p>
+<h2 id="section-13">结论 <a class="heading-anchor" href="#section-13" aria-label="Link to 结论">#</a></h2>
+<p>2026 年的量子安全银行业不是研究观察点;它是一项交付型项目,截止日期由两条曲线的交点决定——机构当下持有数据的机密性生命周期,以及具备密码相关能力的量子计算机到来的时间地平线。到 2030 年仍能让监管机构和交易对手认可的机构,是那些 2024 年就启动 CBOM 建设、2026 年年底前在每一个外部端点完成混合 TLS 部署、并把密码敏捷性从第一天起嵌入到每一项新建中的机构。没做这些的机构,会发现自己的迁移窗口,对于今天正在被对手收集的数据而言,可能早已关上。</p>
+<p>像衡量任何运营项目那样衡量这次迁移:范围明确、排序到位、截止日期承诺、例外登记诚实。你把自己估盘看得越仔细,迁移窗口就显得越小。</p>
+<h2 id="section-14">常见问题 <a class="heading-anchor" href="#section-14" aria-label="Link to 常见问题">#</a></h2>
+<p><strong>银行应该先盘点什么?</strong></p>
+<p>从对外暴露的 TLS、支付通道、客户身份认证、跨行连接、HSM 承载的服务、长期归档,以及处理长期有用机密数据的系统入手。</p>
+<p><strong>PQC 只是一个网络安全议题吗?</strong></p>
+<p>不是。它影响支付、身份、法律证据、交易签名、客户信任、数据留存、供应商管理与运营韧性。</p>
+<p><strong>密码敏捷性是什么意思?</strong></p>
+<p>密码敏捷性指的是通过策略和平台控制更换密码原语的能力,而不是靠硬编码的应用改动。</p>
+<p><strong>银行该不该等更多标准出台?</strong></p>
+<p>不该。NIST 已经鼓励管理员开始集成头几项最终标准,因为完成全面整合需要时间。</p>
+<h2 id="section-15">参考文献 <a class="heading-anchor" href="#section-15" aria-label="Link to 参考文献">#</a></h2>
+<ul>
+<li>NIST,(2026)。<a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="首批三项已定稿的后量子加密标准">首批三项已定稿的后量子加密标准 ⧉</a>。</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">最近审阅 <time datetime="2026-06-04">2026-06-04</time>。</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/zh-hans/guanyu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家，撰写关于应用人工智能、ISO 20022 迁移、面向金融服务的后量子密码学，以及批发支付结构性转型的内容。</span><span class="author-credentials">20 多年经验，曾任职于汇丰商业及投资银行、PayPal、巴克莱、Shazam、AKQA、维珍集团。 <a href="/zh-hans/guanyu/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最近审阅 <time datetime="2026-06-04">2026-06-04</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">相关阅读</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2026-05-18-liangzi-mima-biaozhun-jinzhan-2026" class="related-media" aria-label="2026 年量子密码重置：PQC 标准、QKD 保证与银行不能再延期的迁移工作" tabindex="-1"><img alt="Quantum-safe cryptography migration map for 2026 showing NIST PQC standards, hybrid protocol work, QKD assurance, crypto-agility, and bank data-risk tiers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-pqc-qkd"><a href="https://sebastienrousseau.com/zh-hans/2026-05-18-liangzi-mima-biaozhun-jinzhan-2026">2026 年量子密码重置：PQC 标准、QKD 保证与银行不能再延期的迁移工作</a> <a class="heading-anchor" href="#2026-pqc-qkd" aria-label="Link to 2026 年量子密码重置：PQC 标准、QKD 保证与银行不能再延期的迁移工作">#</a></h3><p><time datetime="2026-05-18">2026-05-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026" class="related-media" aria-label="后量子支付基础设施:为何银行可能替换而非改造传统通道" tabindex="-1"><img alt="Cryptographic key material drifting into deep blue water — symbolising harvest-now-decrypt-later capture of payment messages whose RSA and ECC envelopes will not survive a cryptanalytically relevant quantum computer" src="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-17"><a href="https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026">后量子支付基础设施:为何银行可能替换而非改造传统通道</a> <a class="heading-anchor" href="#section-17" aria-label="Link to 后量子支付基础设施:为何银行可能替换而非改造传统通道">#</a></h3><p><time datetime="2026-05-31">2026-05-31</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2026-05-16-2026-zuijia-yun-jichu-jiagou" class="related-media" aria-label="2026 年最佳云基础设施架构：金融服务的 AI 原生、多云、量子感知蓝图" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-ai"><a href="https://sebastienrousseau.com/zh-hans/2026-05-16-2026-zuijia-yun-jichu-jiagou">2026 年最佳云基础设施架构：金融服务的 AI 原生、多云、量子感知蓝图</a> <a class="heading-anchor" href="#2026-ai" aria-label="Link to 2026 年最佳云基础设施架构：金融服务的 AI 原生、多云、量子感知蓝图">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Sources & references</h2><ol class="article-sources-list"><li><a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf" rel="external noopener nofollow"><span class="source-host">nvlpubs.nist.gov</span><span class="source-path">/nistpubs/FIPS/NIST.FIPS.203.pdf</span></a></li><li><a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf" rel="external noopener nofollow"><span class="source-host">nvlpubs.nist.gov</span><span class="source-path">/nistpubs/FIPS/NIST.FIPS.204.pdf</span></a></li><li><a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.205.pdf" rel="external noopener nofollow"><span class="source-host">nvlpubs.nist.gov</span><span class="source-path">/nistpubs/FIPS/NIST.FIPS.205.pdf</span></a></li><li><a href="https://csrc.nist.gov/Projects/post-quantum-cryptography" rel="external noopener nofollow"><span class="source-host">csrc.nist.gov</span><span class="source-path">/Projects/post-quantum-cryptography</span></a></li><li><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" rel="external noopener nofollow"><span class="source-host">www.nist.gov</span><span class="source-path">/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryp…</span></a></li></ol></aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/zh-hans/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">The Agentic AI Index for Banks in 2026: Measuring Autonomy, Governance, Auditability, and Business Impact</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/zh-hans/guanyu/index.html">关于</a></li>
+              <li><a href="/zh-hans/lianxi/index.html">联系</a></li>
+              <li><a href="/zh-hans/yong-static-site-generator-zhizuo/index.html">使用 Static Site Generator 构建</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">文章</h2>
+            <ul>
+              <li><a href="/zh-hans/wenzhang/index.html">文章</a></li>
+              <li><a href="/zh-hans/lunwen/index.html">论文与白皮书</a></li>
+              <li><a href="/zh-hans/biaoqian/index.html">标签</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">工作</h2>
+            <ul>
+              <li><a href="/zh-hans/xiangmu/index.html">项目</a></li>
+              <li><a href="/zh-hans/boqing/index.html">播放列表</a></li>
+              <li><a href="/zh-hans/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">联系</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="通讯订阅">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — 关于支付、人工智能与后量子密码学的研究笔记。无垃圾邮件。</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="nin@yinhang.com" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">订阅</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="社交链接">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau 于 Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau 于 LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau 于 Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau 于 YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/zh-hans/wuzhang-ai/index.html">无障碍访问</a> ·
+            <a href="/zh-hans/yinsi/index.html">隐私</a> ·
+            <a href="/zh-hans/tiaokuan/index.html">条款</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0009-0005-1434-284X","url":"https://orcid.org/0009-0005-1434-284X"},"worksFor":{"@type":"Organization","@id":"https://www.hsbc.com/#organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal","url":"https://www.paypal.com/"},{"@type":"Organization","name":"Barclays","url":"https://www.barclays.com/"},{"@type":"Organization","name":"Shazam Entertainment","url":"https://www.shazam.com/"},{"@type":"Organization","name":"AKQA","url":"https://www.akqa.com/"},{"@type":"Organization","name":"Virgin Group","url":"https://www.virgin.com/"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"professional experience","name":"20+ years across Tier-1 banks and global payments infrastructure","recognizedBy":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"ISO 20022 migration and wholesale payments architecture","recognizedBy":{"@type":"Organization","name":"SWIFT","url":"https://www.swift.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"Post-Quantum Cryptography for financial services","recognizedBy":{"@type":"Organization","name":"NIST Post-Quantum Cryptography Project","url":"https://csrc.nist.gov/projects/post-quantum-cryptography"}}],"knowsAbout":[{"@type":"DefinedTerm","name":"Post-Quantum Cryptography","sameAs":"https://en.wikipedia.org/wiki/Post-quantum_cryptography"},{"@type":"DefinedTerm","name":"ML-KEM (FIPS 203)","sameAs":"https://csrc.nist.gov/pubs/fips/203/final"},{"@type":"DefinedTerm","name":"ML-DSA (FIPS 204)","sameAs":"https://csrc.nist.gov/pubs/fips/204/final"},{"@type":"DefinedTerm","name":"ISO 20022","sameAs":"https://en.wikipedia.org/wiki/ISO_20022"},{"@type":"DefinedTerm","name":"SWIFT gpi","sameAs":"https://www.swift.com/our-solutions/swift-gpi"},{"@type":"DefinedTerm","name":"SEPA Instant Payments","sameAs":"https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/index.en.html"},{"@type":"DefinedTerm","name":"FedNow Service","sameAs":"https://www.federalreserve.gov/paymentsystems/fednow_about.htm"},{"@type":"DefinedTerm","name":"Real-Time Payments (RTP)","sameAs":"https://www.theclearinghouse.org/payment-systems/rtp"},{"@type":"DefinedTerm","name":"Cross-border payments","sameAs":"https://en.wikipedia.org/wiki/Cross-border_payments"},{"@type":"DefinedTerm","name":"Wholesale banking","sameAs":"https://en.wikipedia.org/wiki/Wholesale_banking"},{"@type":"DefinedTerm","name":"Applied artificial intelligence in banking","sameAs":"https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence"},{"@type":"DefinedTerm","name":"Generative artificial intelligence","sameAs":"https://en.wikipedia.org/wiki/Generative_artificial_intelligence"}],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://orcid.org/0009-0005-1434-284X","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":["Organization","Brand"],"@id":"https://sebastienrousseau.com/#organization","name":"Sebastien Rousseau","alternateName":"Banking on Quantum","url":"https://sebastienrousseau.com/","logo":{"@type":"ImageObject","@id":"https://sebastienrousseau.com/#logo","url":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","width":"512","height":"512","caption":"Sebastien Rousseau"},"founder":{"@id":"https://sebastienrousseau.com/#person"},"editorialPolicy":"https://sebastienrousseau.com/editorial/","correctionsPolicy":"https://sebastienrousseau.com/editorial/#corrections","ethicsPolicy":"https://sebastienrousseau.com/editorial/","diversityPolicy":"https://sebastienrousseau.com/editorial/","sameAs":["https://github.com/sebastienrousseau","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#organization"},"author":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"zh-hans"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"zh-hans"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":388,"headline":"2026 年量子安全银行业指数:后量子密码学、QKD、密码敏捷性与先收集后解密风险","description":"面向 2026 年的量子安全银行业就绪度指数,涵盖 NIST 后量子标准、密码学清单、密码敏捷性、QKD,以及长期保留数据的暴露风险。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80","width":"100vw","height":"100vh","caption":"2026 年量子安全银行业指数图示,面向 2026 年的银行与金融机构"},"url":"https://sebastienrousseau.com/zh-hans/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/","datePublished":"2026-06-04T06:06:06+00:00","dateModified":"2026-06-04","inLanguage":"zh-hans","keywords":"量子安全银行 2026, 银行后量子密码学, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, 密码敏捷性, QKD 银行","articleSection":"Security","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hans/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"zh-hans"},"citation":[{"@type":"CreativeWork","url":"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf"},{"@type":"CreativeWork","url":"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf"},{"@type":"CreativeWork","url":"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.205.pdf"},{"@type":"CreativeWork","url":"https://csrc.nist.gov/Projects/post-quantum-cryptography"},{"@type":"CreativeWork","url":"https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/zh-hans/"},{"@type":"ListItem","position":3,"name":"2026 年量子安全银行业指数:后量子密码学、QKD、密码敏捷性与先收集后解密风险","item":"https://sebastienrousseau.com/zh-hans/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="搜索">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>搜索</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="搜索">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="搜索文档…" autocomplete="off" aria-label="搜索"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> 关闭</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 导航</span><span><kbd>Enter</kbd> 打开</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"2026 年量子安全银行业指数:后量子密码学、QKD、密码敏捷性与先收集后解密风险","url":"https://sebastienrousseau.com/zh-hans/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/","inLanguage":"zh-Hans","isAccessibleForFree":true,"author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hans/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"},"keywords":"量子安全银行 2026, 银行后量子密码学, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, 密码敏捷性, QKD 银行","proficiencyLevel":"Expert","dependencies":["NIST","NIST FIPS 203"]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"2026 年量子安全银行业指数:后量子密码学、QKD、密码敏捷性与先收集后解密风险","url":"https://sebastienrousseau.com/zh-hans/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/","datePublished":"2026-06-04T06:06:06+00:00","dateModified":"2026-06-04","inLanguage":"zh-Hans","isAccessibleForFree":true,"author":[{"@id":"https://sebastienrousseau.com/#person"}],"publisher":{"@id":"https://sebastienrousseau.com/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hans/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways"]},"image":["https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80"],"articleSection":"Security","keywords":"量子安全银行 2026, 银行后量子密码学, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, 密码敏捷性, QKD 银行"}</script></body>
+</html>

@@ -626,6 +626,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD…</news:title>
+    <news:keywords>quantum safe banking 2026, post quantum cryptography banks, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto agility, QKD banking</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/bn/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html</loc>
   <news:news>
     <news:publication>
@@ -1454,6 +1466,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/tr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>2026 Kuantum-Güvenli Bankacılık İndeksi: Kuantum-Sonrası Kriptografi, QKD…</news:title>
+    <news:keywords>2026 kuantum güvenli bankacılık, bankalar için kuantum sonrası kriptografi, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, kripto çeviklik, QKD bankacılık</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/tr/2018-01-09-blockchain-arkasindaki-teknolojiyi-anlamak/index.html</loc>
   <news:news>
     <news:publication>
@@ -2186,6 +2210,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/th/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th-TH</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>ดัชนีธนาคารปลอดภัยจากควอนตัมในปี 2026: การเข้ารหัสหลังควอนตัม QKD…</news:title>
+    <news:keywords>ธนาคารปลอดภัยจากควอนตัม 2026, การเข้ารหัสหลังควอนตัมสำหรับธนาคาร, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, ความคล่องตัวเข้ารหัส, QKD ในธนาคาร</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/th/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -2622,6 +2658,18 @@
 </url>
 
 
+<url>
+  <loc>https://sebastienrousseau.com/es/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>es-ES</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>El Índice de Banca Quantum-Safe en 2026: Criptografía Poscuántica, QKD…</news:title>
+    <news:keywords>banca quantum-safe 2026, criptografía poscuántica bancos, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, criptoagilidad, QKD banca</news:keywords>
+  </news:news>
+</url>
 <url>
   <loc>https://sebastienrousseau.com/es/2026-05-23-agentic-pagos-banking-consent-liability-new-payment-ux-2026/index.html</loc>
   <news:news>
@@ -3222,6 +3270,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Rationaliser le développement de bibliothèques Rust par la génération de code</news:title>
     <news:keywords>Rust, bibliothèque, développement, code, générateur, boilerplate, bonnes pratiques, qualité, fiable</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fr-FR</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>Index 2026 de la banque quantum-safe : cryptographie post-quantique, QKD…</news:title>
+    <news:keywords>banque quantum-safe 2026, cryptographie post-quantique banques, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto-agilité, QKD banque, harvest-now-decrypt-later, CBOM</news:keywords>
   </news:news>
 </url>
 <url>
@@ -4029,6 +4089,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/id/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>id-ID</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>Indeks Perbankan Aman-Kuantum 2026: PQC, QKD, Crypto-Agility, dan Risiko…</news:title>
+    <news:keywords>perbankan aman kuantum 2026, kriptografi pasca-kuantum bank, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto-agility, QKD perbankan</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/id/2024-01-01-tren-ai-2024-wawasan-dan-prediksi/index.html</loc>
   <news:news>
     <news:publication>
@@ -4785,6 +4857,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/ko/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>2026 양자내성 뱅킹 지수: 양자내성 암호, QKD, 암호 민첩성, 수집 후 복호화 위험</news:title>
+    <news:keywords>2026 양자내성 뱅킹, 은행 양자내성 암호, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, 암호 민첩성, QKD 뱅킹</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ko/2024-02-13-eu-ai-beob-segye-ai-gyuje-mirae/index.html</loc>
   <news:news>
     <news:publication>
@@ -5526,6 +5610,18 @@
     <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
     <news:title>Wholesale Digital Markets UK: Tokenisierte Gilts und Champion-Rolle</news:title>
     <news:keywords>Wholesale Digital Markets UK 2026, Chris Woolard, tokenisierte Gilts, tokenisierte Wholesale-Finanzierung, Digital Markets Champion, Tokenisierung UK, Abwicklung</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/de/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>de-DE</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>Der Quantum-Safe-Banking-Index 2026: PQC, QKD, Krypto-Agilität</news:title>
+    <news:keywords>Quantum-Safe-Banking 2026, Post-Quanten-Kryptografie Banken, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, Krypto-Agilität, QKD Banken</news:keywords>
   </news:news>
 </url>
 <url>
@@ -6273,6 +6369,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/hi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>hi-IN</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>2026 में क्वांटम-सेफ बैंकिंग सूचकांक: पोस्ट-क्वांटम क्रिप्टोग्राफी, QKD…</news:title>
+    <news:keywords>क्वांटम-सेफ बैंकिंग 2026, बैंकों के लिए पोस्ट-क्वांटम क्रिप्टोग्राफी, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, क्रिप्टो-एजिलिटी, QKD बैंकिंग</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/hi/2023-11-28-kyberlib-quantum-khatron-se-rust-rakshak/index.html</loc>
   <news:news>
     <news:publication>
@@ -6973,6 +7081,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/fil/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fil-PH</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>Ang Quantum-Safe Banking Index sa 2026: PQC, QKD, Crypto-Agility, at HNDL Risk</news:title>
+    <news:keywords>quantum safe banking 2026, post-quantum cryptography sa bangko, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto-agility, QKD banking</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/fil/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html</loc>
   <news:news>
     <news:publication>
@@ -7350,6 +7470,18 @@
     <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
     <news:title>যুক্তরাজ্যের পাইকারি ডিজিটাল বাজার: টোকেনাইজড গিল্টস, নিষ্পত্তি ও নতুন…</news:title>
     <news:keywords>যুক্তরাজ্য পাইকারি ডিজিটাল বাজার ২০২৬, Wholesale Digital Markets Champion, UK gilts, টোকেনাইজড গিল্টস, DLT নিষ্পত্তি, BoE DSS, Project Guardian, SDX, Project Agorá, HM Treasury</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>bn-BD</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>২০২৬ সালে কোয়ান্টাম-সেফ ব্যাংকিং ইনডেক্স: পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি…</news:title>
+    <news:keywords>কোয়ান্টাম সেফ ব্যাংকিং ২০২৬, ব্যাংকের জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, ক্রিপ্টো এজিলিটি, QKD ব্যাংকিং</news:keywords>
   </news:news>
 </url>
 
@@ -7880,6 +8012,18 @@
     <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
     <news:title>Digitale wholesale-markten in het VK: getokeniseerde gilts, afwikkeling en de…</news:title>
     <news:keywords>digitale wholesale-markten VK 2026, Wholesale Digital Markets Champion, getokeniseerde gilts, UK gilts, DLT-afwikkeling, BoE DSS sandbox, Project Guardian, SDX, Project Agorá, atomaire afwikkeling</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/nl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl-NL</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>De Quantum-Safe Banking Index in 2026: post-kwantumcryptografie, QKD…</news:title>
+    <news:keywords>quantum-safe banking 2026, post-kwantumcryptografie banken, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto-wendbaarheid, QKD bankwezen</news:keywords>
   </news:news>
 </url>
 <url>
@@ -8643,6 +8787,18 @@
 </url>
 
 <url>
+  <loc>https://sebastienrousseau.com/pt-br/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pt-BR</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>O Índice de Banca Quantum-Safe em 2026: Criptografia Pós-Quântica, QKD…</news:title>
+    <news:keywords>banca quantum-safe 2026, criptografia pós-quântica bancos, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto-agility, QKD bancário</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/pt-br/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html</loc>
   <news:news>
     <news:publication>
@@ -9079,6 +9235,18 @@
     <news:keywords>الأسواق الرقمية للجملة 2026، سندات gilt المرمَّزة، تسوية DLT، منسق الأسواق الرقمية، Wholesale Digital Markets Champion، BoE DSS، FCA، RTGS، إعادة الشراء خلال اليوم، HQLA، DvP الذري، Canton، RLN، سيتي لندن</news:keywords>
   </news:news>
 </url>
+<url>
+  <loc>https://sebastienrousseau.com/ar/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ar-SA</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>مؤشر المصرفية الآمنة كموميًا في 2026: تشفير ما بعد الكم، QKD، المرونة…</news:title>
+    <news:keywords>المصرفية الآمنة كموميًا 2026, تشفير ما بعد الكم في البنوك, FIPS 203, ML-KEM, ML-DSA, SLH-DSA, المرونة التشفيرية, QKD مصرفي</news:keywords>
+  </news:news>
+</url>
 
 <url>
   <loc>https://sebastienrousseau.com/ar/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html</loc>
@@ -9358,6 +9526,18 @@
     <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
     <news:title>Kasuwannin Dijital na Yawa a Birtaniya: Gilts Tokenised, Sasantawa, da Sabon…</news:title>
     <news:keywords>Kasuwannin dijital na yawa Birtaniya 2026, Wholesale Digital Markets Champion, Chris Woolard, gilts tokenised, UK gilts, DLT settlement, BoE DSS, Project Guardian, SDX, Project Agorá</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ha/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ha-NG</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>Quantum-Safe Banking Index a 2026: Cryptography na Post-Quantum, QKD…</news:title>
+    <news:keywords>quantum safe banking 2026, post quantum cryptography bankuna, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto agility, QKD banki, harvest-now-decrypt-later</news:keywords>
   </news:news>
 </url>
 
@@ -9841,6 +10021,18 @@
     <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
     <news:title>Оптові цифрові ринки у Великій Британії: токенізовані гілти, розрахунок та…</news:title>
     <news:keywords>оптові цифрові ринки 2026, Wholesale Digital Markets Champion, токенізовані гілти, UK gilts, DLT-розрахунок, BoE DSS, Project Guardian, SDX, Project Agorá, HM Treasury</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/uk/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>uk-UA</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>Індекс квантово-стійкого банкінгу 2026: постквантова криптографія, QKD…</news:title>
+    <news:keywords>квантово-стійкий банкінг 2026, постквантова криптографія банки, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, крипто-гнучкість, QKD банкінг</news:keywords>
   </news:news>
 </url>
 <url>
@@ -10387,6 +10579,18 @@
     <news:keywords>àwọn ọjà oníròyìn ńlá UK 2026, Wholesale Digital Markets Champion, gilts tókènì, BoE DSS, Project Guardian, SDX, Project Agorá, ìpinnu owó DLT, City of London</news:keywords>
   </news:news>
 </url>
+<url>
+  <loc>https://sebastienrousseau.com/yo/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>yo-NG</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>Atọ́ka Bánkì Aláàbò-Quantum ní 2026: Cryptography Lẹ́yìn-Quantum, QKD…</news:title>
+    <news:keywords>bánkì aláàbò quantum 2026, cryptography lẹ́yìn-quantum àwọn bánkì, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto agility, bánkì QKD</news:keywords>
+  </news:news>
+</url>
 
 <url>
   <loc>https://sebastienrousseau.com/yo/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html</loc>
@@ -10667,6 +10871,18 @@
     <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
     <news:title>Piețe digitale de gros în UK: gilts tokenizați, decontare și noul rol de…</news:title>
     <news:keywords>piețe digitale de gros Regatul Unit 2026, Chris Woolard, gilts tokenizați, finanță de gros tokenizată, Wholesale Digital Markets Champion, tokenizare UK, decontare, DLT, BoE DSS, Project Guardian</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ro/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ro-RO</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>Indexul Băncii Sigure Cuantic în 2026: criptografie post-cuantică, QKD…</news:title>
+    <news:keywords>bănci sigure cuantic 2026, criptografie post-cuantică bănci, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, agilitate criptografică, QKD bancar</news:keywords>
   </news:news>
 </url>
 
@@ -11236,6 +11452,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/ru/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>Индекс квантово-устойчивого банкинга в 2026 году: постквантовая криптография…</news:title>
+    <news:keywords>квантово-устойчивый банкинг 2026, постквантовая криптография банки, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, крипто-гибкость, QKD в банках</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ru/2024-01-01-trendy-ii-2024-perspektivy-i-prognozy/index.html</loc>
   <news:news>
     <news:publication>
@@ -11715,6 +11943,18 @@
   </news:news>
 </url>
 
+<url>
+  <loc>https://sebastienrousseau.com/cs/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs-CZ</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>Index kvantově bezpečného bankovnictví v roce 2026: postkvantová kryptografie…</news:title>
+    <news:keywords>kvantově bezpečné bankovnictví 2026, postkvantová kryptografie banky, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, kryptografická agilita, QKD bankovnictví</news:keywords>
+  </news:news>
+</url>
 
 
 <url>
@@ -12284,6 +12524,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Alien Studio: rivoluzionare l'arte con la fotografia IA</news:title>
     <news:keywords>Alien Studio, IA generativa, fotografia, arte, Midjourney, DALL-E, Stable Diffusion</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it-IT</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>L'Indice Quantum-Safe Banking nel 2026: Crittografia Post-Quantistica, QKD…</news:title>
+    <news:keywords>banca quantum-safe 2026, crittografia post-quantistica banche, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto-agility, QKD banche</news:keywords>
   </news:news>
 </url>
 <url>
@@ -13079,6 +13331,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/ja/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ja-JP</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>2026 年の量子セーフ銀行インデックス: ポスト量子暗号、QKD、クリプト・アジリティ、HNDL リスク</news:title>
+    <news:keywords>量子セーフ銀行 2026, ポスト量子暗号 銀行, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, クリプト・アジリティ, QKD 銀行</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ja/2018-02-04-arata-na-ankouka-tsuuka-to-koukousoku-kessai-no-shourai/index.html</loc>
   <news:news>
     <news:publication>
@@ -13490,6 +13754,18 @@
     <news:keywords>שווקים דיגיטליים סיטונאיים בריטניה 2026, Chris Woolard, גילט מתורמזים, מימון סיטונאי מתורמז, אלוף שווקים דיגיטליים, תרמוז בריטניה, סליקה, DLT, BoE DSS, Project Guardian</news:keywords>
   </news:news>
 </url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>מדד הבנקאות הקוונטית-בטוחה ב-2026: קריפטוגרפיה פוסט-קוונטית, QKD, גמישות…</news:title>
+    <news:keywords>בנקאות קוונטית-בטוחה 2026, קריפטוגרפיה פוסט-קוונטית לבנקים, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, גמישות קריפטוגרפית, QKD בבנקאות</news:keywords>
+  </news:news>
+</url>
 
 <url>
   <loc>https://sebastienrousseau.com/he/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html</loc>
@@ -13783,6 +14059,18 @@
 
 
 
+<url>
+  <loc>https://sebastienrousseau.com/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv-SE</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>Quantum-Safe Banking Index 2026: Postkvantkryptografi, QKD, kryptoagilitet och…</news:title>
+    <news:keywords>kvantsäker bank 2026, postkvantkryptografi banker, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, kryptoagilitet, QKD bank</news:keywords>
+  </news:news>
+</url>
 
 
 
@@ -14012,6 +14300,18 @@
     <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
     <news:title>Thị trường Số Bán buôn tại Anh: Gilt Mã hóa, Quyết toán và Vai trò Điều phối</news:title>
     <news:keywords>thị trường số bán buôn Anh 2026, Chris Woolard, gilt mã hóa, tài chính bán buôn mã hóa, điều phối viên thị trường số, tokenisation Anh, quyết toán</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>Chỉ số Ngân hàng An toàn Lượng tử 2026: Mật mã Hậu Lượng tử, QKD, Linh hoạt…</news:title>
+    <news:keywords>ngân hàng an toàn lượng tử 2026, mật mã hậu lượng tử ngân hàng, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, linh hoạt mật mã, QKD ngân hàng</news:keywords>
   </news:news>
 </url>
 <url>
@@ -14576,6 +14876,18 @@
     <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
     <news:title>Hurtowe rynki cyfrowe w UK: tokenizowane gilty, rozliczenie i champion</news:title>
     <news:keywords>hurtowe rynki cyfrowe UK 2026, Wholesale Digital Markets Champion, Chris Woolard, tokenizowane gilty, BoE DSS, Project Guardian, SDX, Project Agora, tokenizacja, rozliczenie DLT</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>Quantum-Safe Banking Index w 2026 r.: kryptografia postkwantowa, QKD…</news:title>
+    <news:keywords>quantum-safe banking 2026, kryptografia postkwantowa banki, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, krypto-zwinność, QKD bankowość</news:keywords>
   </news:news>
 </url>
 <url>
@@ -15344,6 +15656,18 @@
     <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
     <news:title>英國批發數位市場:代幣化金邊債、清算與全新推動者一職</news:title>
     <news:keywords>英國批發數位市場 2026, Wholesale Digital Markets Champion, UK gilts, 代幣化金邊債, tokenised gilts, DLT 清算, BoE DSS, Project Guardian, SDX, Project Agorá</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>2026 年量子安全銀行業指標:後量子密碼、QKD、密碼敏捷性與「先擷取、後解密」風險</news:title>
+    <news:keywords>2026 量子安全銀行業, 銀行後量子密碼, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, 密碼敏捷性, QKD 銀行業, ISO 20022, DORA</news:keywords>
   </news:news>
 </url>
 <url>

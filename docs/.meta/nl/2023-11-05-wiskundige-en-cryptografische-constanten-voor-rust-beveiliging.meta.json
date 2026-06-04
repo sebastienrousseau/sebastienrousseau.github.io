@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
-  "locale": "nl_NL",
   "language": "nl-NL",
+  "title": "Wiskundige en cryptografische constanten voor Rust-beveiliging",
+  "date": "November 05, 2023",
   "keywords": "Rust, cryptografie, wiskundige constanten, beveiliging, open source",
   "description": "Een Rust-bibliotheek die een referentieset levert van wiskundige en cryptografische constanten voor beveiligingsapplicaties.",
-  "title": "Wiskundige en cryptografische constanten voor Rust-beveiliging",
-  "banner_alt": "Wiskundige formules op een schoolbord",
-  "date": "November 05, 2023",
-  "subtitle": "Een referentieset voor cryptografische primitieven en wiskundige zekerheden in Rust"
+  "subtitle": "Een referentieset voor cryptografische primitieven en wiskundige zekerheden in Rust",
+  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
+  "locale": "nl_NL",
+  "banner_alt": "Wiskundige formules op een schoolbord"
 }

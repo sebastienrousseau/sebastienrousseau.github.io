@@ -1,11 +1,11 @@
 {
-  "date": "November 19, 2023",
-  "banner_alt": "Kafes tabanlı kriptografi görselleştirmesi",
-  "description": "CRYSTALS-Kyber, NIST tarafından kuantum sonrası anahtar kapsülleme standardı olarak seçilen kafes tabanlı bir mekanizmadır.",
   "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
-  "locale": "tr_TR",
-  "subtitle": "Kuantuma dayanıklı kriptografi için NIST FIPS 203 standardı",
   "title": "CRYSTALS-Kyber: kuantum çağında koruma algoritması",
-  "keywords": "CRYSTALS-Kyber, post-kuantum, kriptografi, NIST, FIPS 203, KEM, kafes tabanlı",
-  "language": "tr-TR"
+  "banner_alt": "Kafes tabanlı kriptografi görselleştirmesi",
+  "language": "tr-TR",
+  "subtitle": "Kuantuma dayanıklı kriptografi için NIST FIPS 203 standardı",
+  "date": "November 19, 2023",
+  "description": "CRYSTALS-Kyber, NIST tarafından kuantum sonrası anahtar kapsülleme standardı olarak seçilen kafes tabanlı bir mekanizmadır.",
+  "locale": "tr_TR",
+  "keywords": "CRYSTALS-Kyber, post-kuantum, kriptografi, NIST, FIPS 203, KEM, kafes tabanlı"
 }

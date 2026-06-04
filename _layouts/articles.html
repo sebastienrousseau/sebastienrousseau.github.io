@@ -35,7 +35,7 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'self' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
@@ -286,6 +286,20 @@
       .post-pagination-label{font-size:12.5px;font-weight:500;letter-spacing:.03em;text-transform:uppercase;color:var(--ink-mute, #6e6e73)}
       .post-pagination-title{font-size:15px;font-weight:500;line-height:1.35}
       .post-pagination-stub{display:block}
+      /* ---------- Article body tables. Markdown emits <table> directly
+         under <main>. Without explicit rules the browser cramped 4-5 col
+         tables uncomfortably and longer cells wrapped to 1-2 word/line.
+         Wrap in an overflow-x:auto block + sensible min-widths so
+         columns stay readable; on narrow viewports the table side-scrolls
+         rather than crushing. ---------- */
+      main table{display:block;width:100%;max-width:var(--max-wide, 1100px);margin:24px auto;overflow-x:auto;border-collapse:collapse;font-size:14.5px;line-height:1.55;-webkit-overflow-scrolling:touch}
+      main table thead{background:var(--cl-grey-100, #f5f5f7)}
+      main table th,main table td{padding:12px 14px;text-align:start;vertical-align:top;border-bottom:1px solid var(--cl-grey-200, #e3e6ed);min-width:160px}
+      main table th{font-weight:600;color:var(--ink, #111);white-space:nowrap;border-bottom:2px solid var(--cl-grey-200, #d8d8df)}
+      main table td{color:var(--ink-soft, #2a2a2e)}
+      main table tr:last-child td{border-bottom:none}
+      main table code{background:var(--cl-grey-100, #f1f3f7);padding:1px 5px;border-radius:4px;font-size:12.5px}
+      @media (max-width:640px){main table{font-size:13.5px}main table th,main table td{padding:10px 12px;min-width:140px}}
       /* ---------- Article hero banner (figure inserted by postbuild from
          frontmatter `banner:`). LCP-relevant: must be the first image
          after the H1. fetchpriority="high" set inline by the postbuild

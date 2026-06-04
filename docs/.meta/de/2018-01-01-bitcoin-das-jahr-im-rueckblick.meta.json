@@ -1,11 +1,11 @@
 {
-  "subtitle": "Ein Peer-to-Peer-Zahlungssystem, das Geld neu definiert hat",
-  "language": "de",
-  "keywords": "Bitcoin, Kryptowährung, Blockchain, P2P, Double Spending, Mining, Proof-of-Work, ETF, Satoshi Nakamoto, dezentrale Finanzen",
-  "banner_alt": "Ein Stapel Gold- und Silbermünzen auf einem Tisch",
+  "locale": "de_DE",
   "description": "Bitcoin: Ein Peer-to-Peer Electronic Cash System (P2P ECS) mit dem Potenzial, die Art und Weise, wie Menschen online Geschäfte abwickeln, zu revolutionieren.",
-  "title": "Bitcoin: Das Jahr im Rückblick der ersten Kryptowährung",
+  "subtitle": "Ein Peer-to-Peer-Zahlungssystem, das Geld neu definiert hat",
   "date": "January 1, 2018",
+  "banner_alt": "Ein Stapel Gold- und Silbermünzen auf einem Tisch",
+  "language": "de",
   "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
-  "locale": "de_DE"
+  "keywords": "Bitcoin, Kryptowährung, Blockchain, P2P, Double Spending, Mining, Proof-of-Work, ETF, Satoshi Nakamoto, dezentrale Finanzen",
+  "title": "Bitcoin: Das Jahr im Rückblick der ersten Kryptowährung"
 }

@@ -93,31 +93,57 @@ python3 scripts/editorial/translate_post.py <slug>          # writes 27 _posts/<
 
 `translate_post.py` is Python-only — identical in both modes. The stubs inherit the EN frontmatter (translation in step 6 also localises frontmatter title/subtitle/description/keywords for SEO).
 
-### 6. Translate all 27 stubs — with native SEO + native tone
+### 6. Translate all 27 stubs — Executive Pragmatist framework
 
-Dispatch one sub-agent per locale **in parallel batches** (7-at-a-time keeps tool budget reasonable). Each agent edits its locale's stub file via a single `Edit` tool call. Use this template — replace `<LOC>` (locale code), `<LOCALE_NAME>` (human-readable, e.g. "French — France register"), and adjust the per-locale glossary line:
+Dispatch one sub-agent per locale **in parallel batches** (7-at-a-time keeps tool budget reasonable). Each agent edits its locale's stub file via a single `Edit` tool call. The sub-agent prompt is the global Executive Pragmatist framework at `~/.claude/commands/translate.md`, instantiated with the locale code, locale name, and per-locale glossary.
+
+Use this template — replace `<LOC>` (locale code), `<LOCALE_NAME>` (human-readable register), and `<PER_LOCALE_GLOSSARY>` (one-line key term mappings from the framework):
 
 > Translate the body of `_posts/<LOC>/<slug>.md` into native `<LOCALE_NAME>`. Read the EN body from `_posts/<slug>.md` (lines from the H1 onwards, including the `<!-- enrich-start --> ... <!-- enrich-end -->` block at the end).
 >
+> You are operating as three roles in one: **Senior Technical Editor**, **Global Technical SEO Expert**, and **Master Localization Lead**. Apply the standing Executive Pragmatist framework across four pillars.
+>
 > **Drop** the `<!-- translation-stub -->` comment and the "Translation pending" blockquote, replace everything from there through end of file with the translation.
 >
-> **Native tone-of-voice (non-negotiable):** match the executive register a senior banking technologist would use writing for a board / lead-architect audience in `<LOCALE_NAME>`. No hype filler. No "plongeons dans" / "sumérgete" / "tauchen wir ein" / "vamos mergulhar" / equivalent. Cite the same kind of authoritative sources the EN piece does.
+> **Pillar 1 — Style & Tone (Executive Pragmatist).** Fuse the authoritative macro-analytical rhythm of the *Financial Times* with the zero-fluff, practitioner-led pragmatism of a senior banking technologist. Direct & declarative — no passive voice, no hedged statements. Deeply technical but accessible — use `pacs.008`, `OAuth`, `SR 11-7`, `WORM logs`, `OPA`, `FIPS 203`, `ML-KEM`, `CBPR+`, `TIBER-EU` freely, contextualised around business risk and architecture. Anti-hype — eradicate "revolutionary", "game-changer", "supercharge", "delve", "tapestry", "landscape", "testament", "realm", "pivotal", "unleash", "in today's fast-paced", "furthermore", "in conclusion", "beacon", plus target-language equivalents ("plongeons dans" / "sumérgete" / "tauchen wir ein" / "vamos mergulhar" / etc.). Punchy transitions — short hard-hitting sentences between longer analytical paragraphs ("Don't.", "Two things shifted."). Frame technology as an engineering and governance problem.
 >
-> **Native SEO (also non-negotiable):** translate `title`, `subtitle`, `description`, `keywords`, `twitter_title`, `twitter_description`, and `excerpt` in the frontmatter too. Match the EN SEO intent — keep the primary keyword phrases that natively rank in the target market, expand acronyms once on first mention (DORA, ICT, GDPR, NIS2, FMI, PSP) and then keep the canonical English form. `title` ≤ 70 chars after translation; `description` 140–160 chars; `keywords` should remain a comma-separated list translated to native terms while preserving key English search terms (e.g. "Kubernetes", "DORA", "ISO 20022", "ML-KEM", "RTGS").
+> **Pillar 2 — Formatting & Structure (zero breakage tolerance).** Every heading (H1/H2/H3), blockquote, bullet, table row, citation link, code span, and ordered list appears at exactly the same nesting in the same order. Preserve embedded HTML — `<aside class="post-lead">`, `<aside class="author-card">`, `<figure>`, `<img>`, custom widget placeholders like `[Insert Interactive Component: …]` MUST be preserved exactly. Translate the **text inside** the tags (alt text, captions, widget prompt copy, `aria-label`) but do not break the syntax, attribute names, or class names. Preserve the contract markers verbatim: `<!-- lead-start -->`, `<!-- lead-start: manual -->`, `<!-- lead-end -->`, `<!-- enrich-start -->`, `<!-- enrich-end -->`. Preserve code-like terms verbatim: `pacs.008`, `POST /accounts/{id}/freeze`, `amount: 0`, `client_credentials`, `X25519MLKEM768`, `FIPS 203`, `ML-KEM-768`, regulatory citation IDs (`SR 11-7`, `SS1/23`, `2022/2554`), JSON keys, XML element names like `<PstlAdr>` / `<RmtInf><Strd>`.
 >
-> **Markdown structure is load-bearing.** Every heading (H1/H2/H3), blockquote, bullet, table row, citation link, and the `<!-- enrich-start --> ... <!-- enrich-end -->` aside must appear at exactly the same nesting in the same order. Only the prose between markup changes.
+> **Pillar 3 — Global SEO (frontmatter localisation).** Translate `title`, `seo_title`, `twitter_title`, `item_title`, `apple-mobile-web-app-title` idiomatically to target the equivalent high-value search intent in `<LOCALE_NAME>` — keep ≤70 chars after translation. Translate `description`, `excerpt`, `twitter_description`, `item_description` to be compelling and within 140-160 characters. Translate `subtitle` fully. Translate `keywords` and `tags` to native technical terms professionals use in the target market while preserving key English search terms that natively rank (`FIPS 203`, `ML-KEM`, `ISO 20022`, `DORA`, `SR 11-7`, `OAuth`, `Kubernetes`). Update `language` / `locale` / `hreflang` to the target code. Translate `banner_alt`, `image_alt`, `logo_alt`, `twitter_image_alt`, `thanks`. **Do not change** `id`, `permalink`, `url`, `cdn`, `cname`, `author`, `name`, `image`, `icon`, `logo`, `twitter_creator`, `twitter_site`, `measurementID`, `theme-color`, dates (`date`, `pub_date`, `item_pub_date`, `last_build_date`, `last_reviewed`), `atom_link`, `twitter_url`, `item_link`, `item_guid`.
 >
-> **Citation links: `[Visible text](url "title")`.** Translate visible text + `title` attribute. **NEVER** change the URL.
->
-> **Numbers, percentages, dates, statistics are facts.** Translate the surrounding sentence; never paraphrase the number itself.
->
-> **Acronyms** stay canonical English with a parenthetical native expansion on first mention if a standard one exists. Native-language glossary for `<LOCALE_NAME>`: <ONE LINE OF KEY TERM MAPPINGS — e.g. for FR: "cloud-native → cloud natif; container → conteneur; resilience → résilience; sovereignty → souveraineté; outsourcing → externalisation; workload → charge de travail; data residency → résidence des données">.
+> **Pillar 4 — Translation accuracy (non-negotiables).** Do not invent statistics, sources, or claims the EN source does not make. Native register, not literal translation — match the executive tone a senior banking technologist would use writing for a board / lead-architect audience in `<LOCALE_NAME>`. Apply the per-locale banking glossary: `<PER_LOCALE_GLOSSARY>`. Citation links format `[Visible text](url "title")` — translate visible text + `title` attribute, NEVER change the URL. Numbers, percentages, dates, statistics are facts — translate the surrounding sentence; never paraphrase the number itself; apply locale-correct numeric conventions. Acronyms stay canonical English with a parenthetical native expansion on first mention if a standard one exists.
 >
 > **Enrich block at the bottom** (`<!-- enrich-start --> ... <!-- enrich-end -->`): localise to the per-locale canonical pattern. Model on the most recent `_posts/<LOC>/2026-*.md` for the canonical "About the author" structure (aria-label + bio + credentials + "Last reviewed" line).
->
-> Do **not** invent statistics, sources, or claims the EN source doesn't make.
 
 Dispatch in priority order (highest-traffic markets first): **fr es de it pt-br nl ja zh-hans zh-hant ko ar ru pl cs uk ro tr he hi bn id vi th fil ha yo sv** (27 total).
+
+Per-locale glossary values (substituted into `<PER_LOCALE_GLOSSARY>`):
+
+- **fr**: cloud-native → cloud-natif; tool-call → appel d'outil; guardrails → garde-fous; audit log → journal d'audit; kill switch → coupure d'urgence; bounded workflow → flux de travail délimité; service account → compte de service; least-privilege → moindre privilège; policy-as-code → politique en tant que code; resilience → résilience; sovereignty → souveraineté.
+- **es**: agent → agente; tool-call → llamada a herramienta; guardrails → barreras de protección; audit log → registro de auditoría; kill switch → interruptor de emergencia; bounded workflow → flujo de trabajo acotado; cloud-native → nativo en la nube; resilience → resiliencia.
+- **de**: agent → Agent; tool-call → Werkzeugaufruf; guardrails → Schutzmechanismen; audit log → Audit-Protokoll; kill switch → Notabschaltung; cloud-native → Cloud-nativ; resilience → Resilienz; sovereignty → Souveränität; least-privilege → Least-Privilege (kept canonical).
+- **it**: agent → agente; tool-call → chiamata di strumento; guardrails → guardrail; audit log → registro di audit; kill switch → interruttore di emergenza; bounded workflow → flusso di lavoro delimitato; cloud-native → cloud-nativo; resilience → resilienza.
+- **pt-br**: agent → agente; tool-call → chamada de ferramenta; guardrails → guardrails; audit log → log de auditoria; kill switch → interruptor de emergência; bounded workflow → fluxo de trabalho delimitado; cloud-native → cloud-native; outsourcing → terceirização.
+- **nl**: agent → agent; tool-call → tool-aanroep; guardrails → vangrails; audit log → auditlog; kill switch → noodknop; bounded workflow → afgebakende workflow; cloud-native → cloud-native; resilience → veerkracht.
+- **ja**: agent → エージェント; tool-call → ツール呼び出し; guardrails → ガードレール; audit log → 監査ログ; kill switch → キルスイッチ; cloud-native → クラウドネイティブ; least-privilege → 最小権限; policy-as-code → ポリシー・アズ・コード. Use です・ます register throughout.
+- **zh-hans**: agent → 智能体; tool-call → 工具调用; guardrails → 护栏机制; audit log → 审计日志; kill switch → 紧急关停开关; cloud-native → 云原生; least-privilege → 最小权限.
+- **zh-hant** (Taiwan): agent → 智能體; tool-call → 工具呼叫; guardrails → 護欄機制; audit log → 稽核日誌; kill switch → 緊急關閉開關; cloud-native → 雲端原生.
+- **ko**: agent → 에이전트; tool-call → 도구 호출; guardrails → 가드레일; audit log → 감사 로그; kill switch → 킬 스위치; cloud-native → 클라우드 네이티브. Use formal 합니다체 throughout.
+- **ar**: agent → وكيل; tool-call → استدعاء أداة; guardrails → حواجز حماية; audit log → سجل التدقيق; kill switch → مفتاح الإيقاف الطارئ; cloud-native → سحابي الأصل. Western Arabic numerals (66.3% not ٦٦٫٣٪).
+- **ru**: agent → агент; tool-call → вызов инструмента; guardrails → защитные ограничения; audit log → журнал аудита; kill switch → аварийный выключатель; cloud-native → облачный изначально.
+- **pl**: agent → agent; tool-call → wywołanie narzędzia; guardrails → mechanizmy zabezpieczające; audit log → dziennik audytu; kill switch → wyłącznik awaryjny; cloud-native → cloud-native.
+- **cs**: agent → agent; tool-call → volání nástroje; guardrails → ochranné mantinely; audit log → auditní protokol; kill switch → nouzový vypínač.
+- **uk**: agent → агент; tool-call → виклик інструмента; guardrails → запобіжники; audit log → журнал аудиту; kill switch → аварійний вимикач.
+- **ro**: agent → agent; tool-call → apel de instrument; guardrails → bariere de siguranță; audit log → jurnal de audit; kill switch → întrerupător de urgență.
+- **tr**: agent → ajan; tool-call → araç çağrısı; guardrails → güvenlik bariyerleri; audit log → denetim günlüğü; kill switch → acil durdurma düğmesi.
+- **he**: agent → סוכן; tool-call → קריאה לכלי; guardrails → מעקפי בטיחות; audit log → יומן ביקורת; kill switch → מתג חירום. Western digits.
+- **hi**: agent → एजेंट; tool-call → टूल कॉल; guardrails → सुरक्षा बाधाएं; audit log → ऑडिट लॉग; kill switch → आपातकालीन स्विच.
+- **bn**: agent → এজেন্ট; tool-call → টুল কল; guardrails → সুরক্ষা বেড়া; audit log → অডিট লগ; kill switch → জরুরি বন্ধ সুইচ.
+- **id**: agent → agen; tool-call → panggilan alat; guardrails → batas pengaman; audit log → log audit; kill switch → sakelar darurat.
+- **vi**: agent → tác nhân; tool-call → lệnh gọi công cụ; guardrails → rào chắn an toàn; audit log → nhật ký kiểm toán; kill switch → công tắc dừng khẩn cấp.
+- **th**: agent → เอเจนต์; tool-call → การเรียกใช้เครื่องมือ; guardrails → รั้วกันชน; audit log → บันทึกการตรวจสอบ; kill switch → สวิตช์ตัดฉุกเฉิน.
+- **fil / ha / yo**: keep canonical English technical terms (tool-call, guardrails, audit log, kill switch, OAuth, OPA); translate the surrounding prose only.
+- **sv**: agent → agent; tool-call → verktygsanrop; guardrails → skyddsmekanismer; audit log → revisionslogg; kill switch → nödstopp; cloud-native → molnnativ.
 
 When the parallel batch completes, verify completeness:
 

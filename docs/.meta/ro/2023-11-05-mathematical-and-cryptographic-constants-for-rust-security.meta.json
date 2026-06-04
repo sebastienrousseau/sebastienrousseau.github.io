@@ -1,11 +1,11 @@
 {
-  "date": "Nov 05, 2023",
+  "description": "Protejați integritatea codului cu constante matematice și criptografice verificate minuțios, consolidând siguranța memoriei și a concurenței pentru o securitate sporită a codului.",
   "title": "Mathematical and Cryptographic Constants for Rust Security",
   "locale": "ro_RO",
-  "keywords": "constante matematice, constante criptografice, Rust security, comunicare securizată, criptare, RSA, elliptic curve cryptography, Common (CMN) library, aplicații Rust, calcule matematice",
-  "banner_alt": "Calcul matematic",
-  "language": "ro-RO",
   "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
-  "description": "Protejați integritatea codului cu constante matematice și criptografice verificate minuțios, consolidând siguranța memoriei și a concurenței pentru o securitate sporită a codului.",
-  "subtitle": "Constante matematice și criptografice verificate pentru securitate Rust sigură în memorie."
+  "subtitle": "Constante matematice și criptografice verificate pentru securitate Rust sigură în memorie.",
+  "banner_alt": "Calcul matematic",
+  "date": "Nov 05, 2023",
+  "keywords": "constante matematice, constante criptografice, Rust security, comunicare securizată, criptare, RSA, elliptic curve cryptography, Common (CMN) library, aplicații Rust, calcule matematice",
+  "language": "ro-RO"
 }

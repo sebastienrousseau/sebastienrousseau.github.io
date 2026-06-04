@@ -1,11 +1,11 @@
 {
-  "date": "January 23, 2024",
+  "language": "it-IT",
   "locale": "it_IT",
-  "subtitle": "Tecniche, pattern e best practice per portare gli LLM in produzione",
   "keywords": "prompt engineering, LLM, chain-of-thought, RAG, agenti, function calling, IA applicata",
   "banner": "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp",
-  "title": "Progressi nell'ingegneria dei prompt IA",
   "description": "Una rassegna delle tecniche di ingegneria dei prompt: chain-of-thought, few-shot, RAG, agenti, function calling — e il loro impatto sui deployment produttivi.",
   "banner_alt": "Un uomo che analizza dati su schermi",
-  "language": "it-IT"
+  "date": "January 23, 2024",
+  "title": "Progressi nell'ingegneria dei prompt IA",
+  "subtitle": "Tecniche, pattern e best practice per portare gli LLM in produzione"
 }

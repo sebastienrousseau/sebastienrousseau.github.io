@@ -1,6 +1,827 @@
 {
-  "pages_scanned": 82,
-  "total_issues": 0,
+  "pages_scanned": 83,
+  "total_issues": 82,
   "wcag_version": "2.2",
-  "pages": []
+  "pages": [
+    {
+      "path": "2018-01-01-bitcoin-the-year-in-review/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2018-01-09-understanding-the-technology-behind-blockchain/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2018-01-24-the-erc-20-token-standard/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2023-11-12-exploring-generative-ai/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2024-01-23-advancements-in-ai-prompt-engineering/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2024-01-29-ai-powered-audio-insights-analysis-translations/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2025-09-01-quantum-safe-payments-epaa/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-04-11-quantum-thresholds-are-moving-again/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-05-12-iso-20022-pacs008-structured-address-deadline/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-05-16-best-cloud-infrastructure-architecture-2026/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-05-17-agentic-engineering-banks-blueprint-2026/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-05-18-quantum-cryptography-standards-developments-2026/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-05-19-global-wholesale-payments-economics-2026/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-05-20-cloud-native-banking-financial-institutions-2026/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-05-21-tokenised-deposits-banking-services-status-2026/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "404/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "about/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "accessibility/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "articles/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "contact/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "editorial/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "glossary/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "made-with-shokunin/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "made-with-static-site-generator/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "offline/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "papers/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "playlists/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "privacy/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "projects/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "resources-pacs008-checklist/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "tags/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "terms/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    },
+    {
+      "path": "thanks/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has 2 <main> elements (expected 1)"
+        }
+      ]
+    }
+  ]
 }

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="bn-BD">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 04 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 04 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>২০২৬ সালে কোয়ান্টাম-সেফ ব্যাংকিং ইনডেক্স: পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, QKD, ক্রিপ্টো-এজিলিটি এবং হার্ভেস্ট-নাও-ডিক্রিপ্ট-লেটার ঝুঁকি — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="২০২৬ সালে কোয়ান্টাম-সেফ প্রস্তুতির জন্য একটি ব্যাংকিং ইনডেক্স: NIST পোস্ট-কোয়ান্টাম মান, ক্রিপ্টোগ্রাফিক ইনভেন্টরি, ক্রিপ্টো-এজিলিটি, QKD এবং দীর্ঘস্থায়ী ডেটা এক্সপোজার।">
+<meta name="keywords" content="কোয়ান্টাম সেফ ব্যাংকিং ২০২৬, ব্যাংকের জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, ক্রিপ্টো এজিলিটি, QKD ব্যাংকিং">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="The Quantum-Safe Banking Index 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-+Xu2riwVlyt1EOTFk2vPgC0k0jkm96IaVD+sg50RsnI=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-GimYodONq2UqZV26VxxM9vmppgn0lelRulsBa5X7B6s=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-c+iVhLiQmOJh7zjdcVbJ7DDq8N3BElEcfnGERjFl6Ts=' 'sha256-jkhoEwHe4bTJlL0do8ZKCqpN5PGd6Ev+adVQ8SYyxKM=' 'sha256-lXxpAPlGmc5qRH35MVJDWGab6pdKAritJ/edoAci1Nc=' 'self' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/bn/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&amp;w=1200&amp;format=webp&amp;q=80" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/c322d81c82669865.css" integrity="sha256-uwHa+oG0ccztOXZJCJ7Cuinpz2vspGlWl0oRANMnlHQ= sha256-L3zxpu6Sq+g+R0oLAM8mE7t9qbBpnkBV03aBLMt3G/c=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom ফিড" href="/bn/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="stylesheet" href="/highlight.a92b9694.css">
+<meta property="og:title" content="২০২৬ সালে কোয়ান্টাম-সেফ ব্যাংকিং ইনডেক্স: পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, QKD, ক্রিপ্টো-এজিলিটি এবং হার্ভেস্ট-নাও-ডিক্রিপ্ট-লেটার ঝুঁকি — Sebastien Rousseau">
+<meta property="og:description" content="২০২৬ সালে কোয়ান্টাম-সেফ প্রস্তুতির জন্য একটি ব্যাংকিং ইনডেক্স: NIST পোস্ট-কোয়ান্টাম মান, ক্রিপ্টোগ্রাফিক ইনভেন্টরি, ক্রিপ্টো-এজিলিটি, QKD এবং দীর্ঘস্থায়ী ডেটা এক্সপোজার।">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="bn_BD">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="২০২৬ সালে কোয়ান্টাম-সেফ ব্যাংকিং ইনডেক্স: পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, QKD, ক্রিপ্টো-এজিলিটি এবং হার্ভেস্ট-নাও-ডিক্রিপ্ট-লেটার ঝুঁকি — Sebastien Rousseau">
+<meta name="twitter:description" content="২০২৬ সালে কোয়ান্টাম-সেফ প্রস্তুতির জন্য একটি ব্যাংকিং ইনডেক্স: NIST পোস্ট-কোয়ান্টাম মান, ক্রিপ্টোগ্রাফিক ইনভেন্টরি, ক্রিপ্টো-এজিলিটি, QKD এবং দীর্ঘস্থায়ী ডেটা এক্সপোজার।">
+<meta name="twitter:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80">
+<link rel="canonical" href="https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">মূল কনটেন্টে যান</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="নেভিগেশন টগল করুন" />
+      <div class="wrap">
+        <a class="ap-brand" href="/bn/index.html" aria-label="Sebastien Rousseau হোম">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="প্রধান নেভিগেশন">
+          <ul class="ap-menu">
+            <li><a href="/bn/amader-shomporke/index.html">About</a></li>
+            <li><a href="/bn/prabondho/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/bn/prokashana/index.html">Papers</a></li>
+            <li><a href="/bn/bishay/index.html">বিষয়</a></li>
+            <li><a href="/bn/prokolpo/index.html">Projects</a></li>
+            <li><a href="/bn/playlist/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="ডার্ক থিম চালু করুন" aria-pressed="false" title="থিম পরিবর্তন করুন">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="অনুসন্ধান (Cmd বা Ctrl + K)" title="অনুসন্ধান (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="ভাষা">
+            <button type="button" class="ap-lang-toggle" aria-label="BN, ভাষা পরিবর্তন" aria-expanded="false" aria-haspopup="menu" title="ভাষা পরিবর্তন">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">BN</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/bn/jogajog/index.html" aria-label="যোগাযোগ">যোগাযোগ ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="নেভিগেশন টগল করুন">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>২০২৬ সালে কোয়ান্টাম-সেফ ব্যাংকিং ইনডেক্স: পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, QKD, ক্রিপ্টো-এজিলিটি এবং হার্ভেস্ট-নাও-ডিক্রিপ্ট-লেটার ঝুঁকি</h1>
+      <p class="sub">কোয়ান্টাম ঝুঁকি তাত্ত্বিক হুমকি থেকে মাইগ্রেশন প্রোগ্রামে পরিণত হয়েছে: ব্যাংকগুলোকে ক্রিপ্টোগ্রাফিক এক্সপোজার, মাইগ্রেশন প্রস্তুতি ও ক্রিপ্টো-এজিলিটি পরিমাপ করতে হবে।</p>
+    <nav class="article-tags" aria-label="বিষয়"><a href="/tags/index.html#h3-" class="article-tag" rel="tag">কোয়ান্টাম সেফ ব্যাংকিং ২০২৬</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">ব্যাংকের জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি</a><a href="/tags/index.html#h3-nist-fips-203" class="article-tag" rel="tag">NIST FIPS 203</a><a href="/tags/index.html#h3-ml-kem" class="article-tag" rel="tag">ML-KEM</a><a href="/tags/index.html#h3-ml-dsa" class="article-tag" rel="tag">ML-DSA</a><a href="/tags/index.html#h3-slh-dsa" class="article-tag" rel="tag">SLH-DSA</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">ক্রিপ্টো এজিলিটি</a><a href="/tags/index.html#h3-qkd" class="article-tag" rel="tag">QKD ব্যাংকিং</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-04T06:06:06+00:00" class="meta-pub">প্রকাশিত 4 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="আনুমানিক পঠন সময়">8 মিনিট পঠন</span></div></section><figure class="article-banner"><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" alt="Banner for: ২০২৬ সালে কোয়ান্টাম-সেফ ব্যাংকিং ইনডেক্স: পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, QKD, ক্রিপ্টো-এজিলিটি এবং হার্ভেস্ট-নাও-ডিক্রিপ্ট-লেটার ঝুঁকি" width="1200" height="675" fetchpriority="high" decoding="async" /></figure>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>বিষয়বস্তু</h2><ol><li><a href="#section-1">২০২৬ কেন এই ইনডেক্সের বছর</a></li><li><a href="#section-2">২০২৬ ইনডেক্স স্থাপত্য</a></li><li><a href="#section-4">এখন যে সংকেতগুলো ট্র্যাক করতে হবে</a></li><li><a href="#section-5">মাইগ্রেশন শুরু হয় ক্রিপ্টোগ্রাফির খতিয়ান দিয়ে</a></li><li><a href="#section-6">প্রথমে হাইব্রিড, সর্বদা চটপটে</a></li><li><a href="#qkd">QKD-র অবস্থান কোথায়</a></li><li><a href="#section-8">ব্যাংকের ধরন অনুযায়ী এর অর্থ</a></li><li><a href="#section-13">উপসংহার</a></li><li><a href="#section-14">প্রায়শই জিজ্ঞাসিত প্রশ্ন</a></li><li><a href="#section-15">তথ্যসূত্র</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> ২০২৬ সালে কোয়ান্টাম-সেফ প্রস্তুতির জন্য একটি ব্যাংকিং ইনডেক্স: NIST পোস্ট-কোয়ান্টাম মান, ক্রিপ্টোগ্রাফিক ইনভেন্টরি, ক্রিপ্টো-এজিলিটি, QKD এবং দীর্ঘস্থায়ী ডেটা এক্সপোজার।</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>২০২৬ কেন এই ইনডেক্সের বছর.</strong> ২০২৪-২০২৫ সালের তিনটি পরিবর্তন কোয়ান্টাম-সেফকে একটি গবেষণা পর্যবেক্ষণ বিন্দু থেকে পরিমাপযোগ্য ব্যাংক প্রোগ্রামে পরিণত করেছে। প্রথমত, NIST ১৩ আগস্ট ২০২৪-এ প্রাথমিক পোস্ট-কোয়ান্টাম মান চূড়ান্ত করেছে: FIPS 203…</li>  <li><strong>২০২৬ ইনডেক্স স্থাপত্য.</strong> একটি বিশ্বাসযোগ্য কোয়ান্টাম প্রস্তুতি স্কোরকার্ডের জন্য শুধু প্রকল্পের অবস্থা নয়, নির্দিষ্ট শতাংশ ট্র্যাক করা প্রয়োজন:.</li>  <li><strong>এখন যে সংকেতগুলো ট্র্যাক করতে হবে.</strong> এই মুহূর্তে মাইগ্রেশন ক্রম সুপরিচিত। প্রতিটি গেট প্রমাণ তৈরি করে যা পরবর্তীটিকে চালায়; একটি গেট এড়িয়ে যাওয়া বা সংকুচিত করাই ইনডেক্স স্থাপত্যের ব্যর্থতা কলামে দেখানো জরুরি পুনঃপ্ল্যাটফর্মিং ঝুঁকি তৈরি করে।.</li>  <li><strong>মাইগ্রেশন শুরু হয় ক্রিপ্টোগ্রাফির খতিয়ান দিয়ে.</strong> এই মুহূর্তে মাইগ্রেশন ক্রম সুপরিচিত। প্রতিটি গেট প্রমাণ তৈরি করে যা পরবর্তীটিকে চালায়; একটি গেট এড়িয়ে যাওয়া বা সংকুচিত করাই ইনডেক্স স্থাপত্যের ব্যর্থতা কলামে দেখানো জরুরি পুনঃপ্ল্যাটফর্মিং ঝুঁকি তৈরি করে।.</li></ul></aside><!-- lead-start: manual -->
+
+<!-- lead-end -->
+<p>২০২৬ সালে কোয়ান্টাম-সেফ ব্যাংকিং অনুমান নয়, পরিচালনাগত মাইগ্রেশনের বিষয়। NIST প্রথম তিনটি পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি মান চূড়ান্ত করেছে, এবং ব্যাংকগুলোকে এখন বুঝতে হবে কোন কোন সিস্টেম RSA, ECC, TLS, স্বাক্ষর, HSM, সার্টিফিকেট, পেমেন্ট চ্যানেল, আর্কাইভ এবং দীর্ঘস্থায়ী গোপন ডেটার উপর নির্ভরশীল। ইনডেক্স প্রশ্নটি সহজ: হুমকি পরিচালনাগত হয়ে ওঠার আগে কি প্রতিষ্ঠান ক্রিপ্টোগ্রাফি প্রতিস্থাপন করতে পারবে?</p>
+<hr />
+<blockquote>
+<p><strong>নির্বাহী সারসংক্ষেপ / মূল উপলব্ধি</strong></p>
+<ul>
+<li><strong>NIST মান এখন বাস্তব।</strong> FIPS 203 কী এনক্যাপসুলেশনের জন্য ML-KEM, FIPS 204 স্বাক্ষরের জন্য ML-DSA, এবং FIPS 205 একটি স্টেটলেস হ্যাশ-ভিত্তিক স্বাক্ষর মান হিসেবে SLH-DSA সংজ্ঞায়িত করে।</li>
+<li><strong>ইনভেন্টরি প্রথম পরিপক্বতা গেট।</strong> একটি ব্যাংক যা খুঁজে পায় না তা মাইগ্রেট করতে পারে না: সার্টিফিকেট, কী, প্রোটোকল, অ্যাপ্লিকেশন, ভেন্ডর, HSM, API, আর্কাইভ এবং এম্বেডেড সিস্টেম ম্যাপ করতে হবে।</li>
+<li><strong>ক্রিপ্টো-এজিলিটি হলো টেকসই উদ্দেশ্য।</strong> লক্ষ্য একবারের অ্যালগরিদম অদলবদল নয়; পুরো অ্যাপ্লিকেশন পুনঃডিজাইন না করে ক্রিপ্টোগ্রাফিক প্রিমিটিভ পরিবর্তনের সক্ষমতা।</li>
+<li><strong>দীর্ঘস্থায়ী ডেটা জরুরি অবস্থার পরিবর্তন ঘটায়।</strong> হার্ভেস্ট-নাও-ডিক্রিপ্ট-লেটার ঝুঁকির অর্থ হলো আজ ধরা ডেটা পরে পঠনযোগ্য হতে পারে যদি তা যথেষ্ট সময় ধরে মূল্যবান থাকে।</li>
+<li><strong>QKD একটি বিশেষায়িত পরিপূরক।</strong> কোয়ান্টাম কী বিতরণ সর্বোচ্চ-মূল্যের চ্যানেলে প্রাসঙ্গিক হতে পারে, কিন্তু এটি প্রতিষ্ঠান-ব্যাপী PQC মাইগ্রেশনকে প্রতিস্থাপন করে না।</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="section-1">২০২৬ কেন এই ইনডেক্সের বছর <a class="heading-anchor" href="#section-1" aria-label="লিঙ্ক ২০২৬ কেন এই ইনডেক্সের বছর">#</a></h2>
+<p>২০২৪-২০২৫ সালের তিনটি পরিবর্তন কোয়ান্টাম-সেফকে একটি গবেষণা পর্যবেক্ষণ বিন্দু থেকে পরিমাপযোগ্য ব্যাংক প্রোগ্রামে পরিণত করেছে। প্রথমত, NIST ১৩ আগস্ট ২০২৪-এ প্রাথমিক পোস্ট-কোয়ান্টাম মান চূড়ান্ত করেছে: <a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf" title="FIPS 203 — Module-Lattice-Based Key-Encapsulation Mechanism">FIPS 203 (ML-KEM) ⧉</a>, <a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf" title="FIPS 204 — Module-Lattice-Based Digital Signature Standard">FIPS 204 (ML-DSA) ⧉</a>, <a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.205.pdf" title="FIPS 205 — Stateless Hash-Based Digital Signature Standard">FIPS 205 (SLH-DSA) ⧉</a>। সেই তারিখে অ্যালগরিদম-নির্বাচন বিতর্ক বন্ধ হয়েছে; ২০২৬ সালেও যেসব ব্যাংক &quot;কোন স্কিম জেতে&quot; অভ্যন্তরীণ ধারা চালাচ্ছে, তারা ১৮ মাস পিছিয়ে।</p>
+<p>দ্বিতীয়ত, <a href="https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF" title="Commercial National Security Algorithm Suite 2.0">NSA-র CNSA 2.0 ⧉</a> মার্কিন ফেডারেল শেষ-অবস্থা ২০৩৩-এ স্থির করেছে, সফটওয়্যার ও ফার্মওয়্যার স্বাক্ষরের জন্য ২০২৭ থেকে এবং ব্রাউজার ও অপারেটিং সিস্টেমের জন্য ২০৩০ থেকে মধ্যবর্তী কাট-অফসহ। যেকোনো ব্যাংক যার মার্কিন ফেডারেল কাউন্টারপার্টি এক্সপোজার রয়েছে — FedNow, ট্রেজারি অপারেশন, ফেডারেল গ্রাহক অ্যাকাউন্ট — ফেডারেল ডেটা স্পর্শ করা সিস্টেমের জন্য সেই পরিধির ভেতরে অবস্থান করে। ঘড়ি আর বিমূর্ত নয়।</p>
+<p>তৃতীয়ত, <a href="https://csrc.nist.gov/Projects/post-quantum-cryptography" title="NIST Post-Quantum Cryptography programme">হার্ভেস্ট-নাও-ডিক্রিপ্ট-লেটার (HNDL) ⧉</a> জরুরিতার প্রধান ঝুঁকি যুক্তি। পরিশীলিত প্রতিপক্ষরা ইতিমধ্যেই বড় আর্থিক কেন্দ্রগুলোতে TLS-সুরক্ষিত পেমেন্ট বার্তা, SWIFT খাম, KYC নথি এবং দীর্ঘস্থায়ী আর্কাইভ সাইফারটেক্সট ধরছে। ২০২৬ সালে ধরা ডেটাকে কেবল ডিক্রিপশনের মুহূর্তে গোপনীয়তা-সংবেদনশীল থাকলেই হবে — ৩০ বছরের মর্টগেজ, জীবন বীমা আন্ডাররাইটিং, MiFID II / GDPR লেনদেন রেকর্ডিং এবং M&amp;A ধরে রাখার আর্কাইভের জন্য সেই জানালা একটি ক্রিপ্টোগ্রাফিক্যালি রিলেভেন্ট কোয়ান্টাম কম্পিউটার (CRQC)-এর প্রতিটি বিশ্বাসযোগ্য অনুমানের অনেক বাইরে প্রসারিত। প্রতিপক্ষের আজ একটি কোয়ান্টাম কম্পিউটার দরকার নেই। ডেটা গুরুত্বহীন হওয়ার আগে তাদের একটি দরকার।</p>
+<p>কোয়ান্টাম-সেফ ব্যাংকিং ইনডেক্স পরিমাপ করে আপনার প্রতিষ্ঠান সেই ছেদবিন্দু আসার আগে মাইগ্রেশন ডেলিভার করতে পারবে কিনা। কাজটি আর মাইগ্রেট করবেন কিনা সে নিয়ে নয়; বরং মাইগ্রেশনটি একটি প্রতিরক্ষাযোগ্য সময়সূচিতে শেষ হবে কিনা।</p>
+<h2 id="section-2">২০২৬ ইনডেক্স স্থাপত্য <a class="heading-anchor" href="#section-2" aria-label="লিঙ্ক ২০২৬ ইনডেক্স স্থাপত্য">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>ইনডেক্স স্তর</th>
+<th>২০২৬ দিকনির্দেশনা</th>
+<th>প্রস্তুতি মেট্রিক</th>
+<th>অপ্রসঙ্গে পরিচালনার ঝুঁকি</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ইনভেন্টরি</strong></td>
+<td>ক্রিপ্টোগ্রাফিক সম্পদ, প্রোটোকল, সার্টিফিকেট, ভেন্ডর এবং ডেটা শ্রেণী ম্যাপ করুন</td>
+<td>ইনভেন্টরি করা এস্টেটের শতাংশ</td>
+<td>অজানা কোয়ান্টাম-দুর্বল নির্ভরতা</td>
+</tr>
+<tr>
+<td><strong>এক্সপোজার</strong></td>
+<td>গোপনীয়তা আয়ুষ্কাল এবং লেনদেন গুরুত্ব অনুযায়ী সিস্টেম শ্রেণীবদ্ধ করুন</td>
+<td>মূল্য ও আয়ুষ্কাল অনুযায়ী উচ্চ-ঝুঁকির সম্পদ</td>
+<td>ভুল-অগ্রাধিকারপ্রাপ্ত মাইগ্রেশন</td>
+</tr>
+<tr>
+<td><strong>মাইগ্রেশন</strong></td>
+<td>NIST মানের সাথে সারিবদ্ধ হাইব্রিড ও PQC-প্রস্তুত প্যাটার্ন গ্রহণ করুন</td>
+<td>ML-KEM এবং ML-DSA প্রস্তুতি</td>
+<td>সময়সীমার চাপে জরুরি পুনঃপ্ল্যাটফর্মিং</td>
+</tr>
+<tr>
+<td><strong>ক্রিপ্টো-এজিলিটি</strong></td>
+<td>অ্যাপ্লিকেশন যুক্তি ক্রিপ্টোগ্রাফিক প্রিমিটিভ থেকে পৃথক করুন</td>
+<td>নীতি-নিয়ন্ত্রিত ক্রিপ্টো কভারেজ</td>
+<td>এস্টেটজুড়ে হার্ড-কোডেড অ্যালগরিদম</td>
+</tr>
+<tr>
+<td><strong>আশ্বাস</strong></td>
+<td>আন্তঃকার্যক্ষমতা, কর্মক্ষমতা, HSM সমর্থন, সার্টিফিকেট ও ভেন্ডর প্রস্তুতি পরীক্ষা করুন</td>
+<td>পরীক্ষা পাস হার এবং ব্যতিক্রম ব্যাকলগ</td>
+<td>ভঙ্গুর চ্যানেল বা দুর্বল ফলব্যাক নিয়ন্ত্রণ</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-3">বোর্ড-স্তরের কোয়ান্টাম স্কোরকার্ড <a class="heading-anchor" href="#section-3" aria-label="লিঙ্ক বোর্ড-স্তরের কোয়ান্টাম স্কোরকার্ড">#</a></h3>
+<p>একটি বিশ্বাসযোগ্য কোয়ান্টাম প্রস্তুতি স্কোরকার্ডের জন্য শুধু প্রকল্পের অবস্থা নয়, নির্দিষ্ট শতাংশ ট্র্যাক করা প্রয়োজন:</p>
+<ol>
+<li><strong>ইনভেন্টরি পূর্ণতা:</strong> সম্পূর্ণরূপে ম্যাপ করা ক্রিপ্টোগ্রাফিক বিল অফ ম্যাটেরিয়ালস (CBOM) সহ স্তর-১ অ্যাপ্লিকেশনের শতাংশ।</li>
+<li><strong>HNDL এক্সপোজার:</strong> হাইব্রিড কোয়ান্টাম-সেফ কী এনক্যাপসুলেশন ছাড়া নেটওয়ার্কে প্রেরিত দীর্ঘস্থায়ী গোপন ডেটার পরিমাণ (যেমন, PII, বাণিজ্য গোপনীয়তা)।</li>
+<li><strong>NIST মাইগ্রেশন অগ্রগতি:</strong> FIPS 203 (ML-KEM) এবং FIPS 204 (ML-DSA) মানে মাইগ্রেট করা অসমমিতিক এনক্রিপশন কী ও ডিজিটাল স্বাক্ষরের শতাংশ।</li>
+<li><strong>ক্রিপ্টো-এজিলিটি প্রস্তুতি:</strong> কোড পুনঃসংকলন ছাড়াই কেন্দ্রীভূত নীতির মাধ্যমে ক্রিপ্টোগ্রাফিক অ্যালগরিদম ঘোরানো যায় এমন গুরুত্বপূর্ণ সিস্টেমের শতাংশ।</li>
+</ol>
+<h2 id="section-4">এখন যে সংকেতগুলো ট্র্যাক করতে হবে <a class="heading-anchor" href="#section-4" aria-label="লিঙ্ক এখন যে সংকেতগুলো ট্র্যাক করতে হবে">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>সংকেত</th>
+<th>ব্যাংকের জন্য এর অর্থ</th>
+<th>উৎস</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>FIPS 203 ML-KEM</strong></td>
+<td>সাধারণ এনক্রিপশন কী প্রতিষ্ঠার প্রাথমিক NIST মান</td>
+<td><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="First three finalized post-quantum encryption standards">NIST ⧉</a></td>
+</tr>
+<tr>
+<td><strong>FIPS 204 ML-DSA</strong></td>
+<td>ডিজিটাল স্বাক্ষরের প্রাথমিক NIST মান</td>
+<td><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="First three finalized post-quantum encryption standards">NIST ⧉</a></td>
+</tr>
+<tr>
+<td><strong>FIPS 205 SLH-DSA</strong></td>
+<td>হ্যাশ-ভিত্তিক স্বাক্ষর বিকল্প ও ব্যাকআপ ডিজাইন</td>
+<td><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="First three finalized post-quantum encryption standards">NIST ⧉</a></td>
+</tr>
+<tr>
+<td><strong>তাৎক্ষণিক ইন্টিগ্রেশন উৎসাহিত</strong></td>
+<td>NIST স্পষ্টভাবে প্রশাসকদের মান ইন্টিগ্রেট করা শুরু করতে বলে কারণ সম্পূর্ণ ইন্টিগ্রেশনে সময় লাগে</td>
+<td><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="First three finalized post-quantum encryption standards">NIST ⧉</a></td>
+</tr>
+<tr>
+<td><strong>ব্যাংকের কোয়ান্টাম প্রোগ্রাম সম্প্রসারিত হচ্ছে</strong></td>
+<td>বড় ব্যাংকগুলো PQC ট্রানজিশনের প্রস্তুতির পাশাপাশি কোয়ান্টাম প্রযুক্তি অন্বেষণ করছে</td>
+<td><a href="https://thequantuminsider.com/2026/03/27/15-plus-global-banks-probing-the-wonderful-world-of-quantum-technologies/" title="Overview of global banks exploring quantum technologies">Quantum Insider ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-5">মাইগ্রেশন শুরু হয় ক্রিপ্টোগ্রাফির খতিয়ান দিয়ে <a class="heading-anchor" href="#section-5" aria-label="লিঙ্ক মাইগ্রেশন শুরু হয় ক্রিপ্টোগ্রাফির খতিয়ান দিয়ে">#</a></h2>
+<p><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&amp;w=1200&amp;format=webp&amp;q=80" alt="একটি ব্যাংকের TLS এন্ডপয়েন্ট, HSM পার্টিশন, সার্টিফিকেট কর্তৃপক্ষ এবং দীর্ঘস্থায়ী ডেটা আর্কাইভজুড়ে ক্রিপ্টোগ্রাফিক প্রিমিটিভ ম্যাপ করা একটি কন্ট্রোল-রুম ড্যাশবোর্ডের আলোকচিত্র — একটি ক্রিপ্টোগ্রাফিক বিল অফ ম্যাটেরিয়ালসের ভিজ্যুয়াল রেজিস্টার।"  width="1200" height="675" decoding="async" fetchpriority="high"></p>
+<p>এই মুহূর্তে মাইগ্রেশন ক্রম সুপরিচিত। প্রতিটি গেট প্রমাণ তৈরি করে যা পরবর্তীটিকে চালায়; একটি গেট এড়িয়ে যাওয়া বা সংকুচিত করাই ইনডেক্স স্থাপত্যের ব্যর্থতা কলামে দেখানো জরুরি পুনঃপ্ল্যাটফর্মিং ঝুঁকি তৈরি করে।</p>
+<pre class="mermaid">flowchart LR
+    A[&quot;Discovery&lt;br/&gt;CycloneDX CBOM&lt;br/&gt;scanners + CMDB&quot;] --&gt; B[&quot;Exposure model&lt;br/&gt;lifetime × capture&lt;br/&gt;× CRQC horizon&quot;]
+    B --&gt; C[&quot;Hybrid TLS 1.3&lt;br/&gt;X25519MLKEM768&lt;br/&gt;external endpoints&quot;]
+    C --&gt; D[&quot;HSM PQC firmware&lt;br/&gt;vendor-by-vendor&lt;br/&gt;roadmap rollout&quot;]
+    D --&gt; E[&quot;Crypto-agility&lt;br/&gt;PKCS#11 + policy&lt;br/&gt;registry + kill switch&quot;]
+    E --&gt; F[&quot;Pure PQC&lt;br/&gt;2028+&lt;br/&gt;conformance + audit&quot;]
+
+    style A fill:#eff5ff,stroke:#0056b3,color:#111
+    style B fill:#eff5ff,stroke:#0056b3,color:#111
+    style C fill:#fff4cf,stroke:#5a3e00,color:#111
+    style D fill:#fff4cf,stroke:#5a3e00,color:#111
+    style E fill:#e8f5e9,stroke:#1b5e20,color:#111
+    style F fill:#e8f5e9,stroke:#1b5e20,color:#111
+</pre>
+<p>প্রথম ডেলিভারেবল একটি নতুন অ্যালগরিদম নয়; এটি একটি ক্রিপ্টোগ্রাফিক বিল অফ ম্যাটেরিয়ালস (CBOM)। ব্যাংকগুলোর একটি জীবন্ত ইনভেন্টরি প্রয়োজন যা ব্যবসায়িক পরিষেবাকে অ্যালগরিদম, লাইব্রেরি, সার্টিফিকেট, কী দৈর্ঘ্য, HSM, ডেটা আয়ুষ্কাল, ভেন্ডর এবং পরিচালনাগত মালিকদের সাথে সংযুক্ত করে। সেই খতিয়ান ছাড়া, কোয়ান্টাম-সেফ মাইগ্রেশন অনুমানে পরিণত হয়।</p>
+<p>CBOM রেকর্ড সেটে প্রতিটি ক্রিপ্টোগ্রাফিক প্রিমিটিভের জন্য ধরা উচিত: প্রোটোকল বা ইন্টারফেস (TLS 1.3, IPsec, SSH, কাস্টম পেমেন্ট-বার্তা ফরম্যাট), অ্যালগরিদম এবং প্যারামিটার সেট (RSA-2048, ECDH P-256, ML-KEM-768, ML-DSA-65), লাইব্রেরি ও সংস্করণ (OpenSSL 3.4, BoringSSL কমিট হ্যাশ, ভেন্ডর SDK বিল্ড), হার্ডওয়্যার সীমানা (HSM পার্টিশন, TPM, সিকিউর এনক্লেভ, বা কোনোটিই নয়), প্রযোজ্য হলে সার্টিফিকেট পরিচয়, অ্যাপ্লিকেশন মালিক এবং ডেটা-শ্রেণীবিভাগ আয়ুষ্কাল। ২০২৫-২০২৬ সালে প্রোডাকশনে আসা টুল — IBM Quantum Safe Inventory, ওপেন-সোর্স <a href="https://cyclonedx.org/capabilities/cbom/" title="CycloneDX Cryptography Bill of Materials">CycloneDX CBOM স্পেসিফিকেশন ⧉</a>, CryptoNext / Sandbox / PQShield-এর এন্টারপ্রাইজ স্ক্যানার — বিদ্যমান CMDB পাইপলাইনে যুক্ত হয়। একটিও স্বয়ংসম্পূর্ণ নয়; ভেন্ডর টুলিং এবং নিবেদিত হেডকাউন্ট থাকলেও ১২-১৮ মাসের CBOM বিল্ড চক্র প্রত্যাশা করুন।</p>
+<p>ট্র্যাক করার মেট্রিক হলো সতেজতা, কভারেজ নয়। দুই মাস পুরনো একটি CBOM কোনো CBOM না থাকার চেয়ে খারাপ কারণ এটি নিরাপত্তা দলকে কী মাইগ্রেট হয়েছে সে সম্পর্কে মিথ্যা আত্মবিশ্বাস দেয়।</p>
+<h2 id="section-6">প্রথমে হাইব্রিড, সর্বদা চটপটে <a class="heading-anchor" href="#section-6" aria-label="লিঙ্ক প্রথমে হাইব্রিড, সর্বদা চটপটে">#</a></h2>
+<p>বেশিরভাগ ব্যাংক একসাথে সবকিছু পাল্টাবে না। বাস্তবসম্মত প্যাটার্ন হলো হাইব্রিড স্থাপনা, যেখানে ক্ল্যাসিক্যাল এবং পোস্ট-কোয়ান্টাম প্রক্রিয়া একসাথে চলে যখন ভেন্ডর, প্রোটোকল, সার্টিফিকেট এবং পরিচালনাগত টুলিং পরিপক্ক হয়। দীর্ঘমেয়াদী লক্ষ্য হলো ক্রিপ্টো-এজিলিটি: নীতি-নিয়ন্ত্রিত ক্রিপ্টোগ্রাফিক পছন্দ যা ব্যবসায়িক অ্যাপ্লিকেশন পুনঃনির্মাণ ছাড়াই পরিবর্তন করা যায়।</p>
+<p>[ইন্টারেক্টিভ কম্পোনেন্ট যুক্ত করুন: হার্ভেস্ট-নাও-ডিক্রিপ্ট-লেটার (HNDL) ঝুঁকি ক্যালকুলেটর — একটি স্লাইডার-ভিত্তিক টুল যেখানে নির্বাহীরা ডেটার শেলফ-লাইফ বনাম আনুমানিক কোয়ান্টাম সময়রেখা ইনপুট করে তাদের এক্সপোজার জানালা দেখেন।]</p>
+<blockquote>
+<p><strong>মূল অন্তর্দৃষ্টি:</strong> যদি আপনার ডেটা ১০ বছর গোপন থাকা প্রয়োজন এবং একটি ক্রিপ্টোগ্রাফিক্যালি রিলেভেন্ট কোয়ান্টাম কম্পিউটার (CRQC) ৭ বছর দূরে থাকে, আপনার মাইগ্রেশন সময়সীমা ৭ বছর পরে নয় — সেটি ছিল ৩ বছর আগে।</p>
+</blockquote>
+<p>বাস্তবে এর অর্থ বহির্মুখী এন্ডপয়েন্টের জন্য হাইব্রিড <code>X25519MLKEM768</code> কী শেয়ার সহ TLS 1.3 (Chrome / Firefox / Cloudflare / Akamai সবাই আজ এটি সমর্থন করে), HSM ও CA অবকাঠামো ধরা না দেওয়া পর্যন্ত ক্ল্যাসিক্যাল স্বাক্ষর শৃঙ্খল, এবং একটি PKCS#11 অ্যাবস্ট্রাকশন স্তর যা নীতি রেজিস্ট্রিকে ব্যবসায়িক অ্যাপ্লিকেশন পুনঃসংকলন ছাড়াই অ্যালগরিদম ঘোরানোর সুযোগ দেয়। ক্রিপ্টো-এজিলিটিই নির্ধারণ করে পরবর্তী অ্যালগরিদম পরিবর্তন (কখন, কিনা নয়) ছয় সপ্তাহের ঘূর্ণন হবে নাকি আরেকটি সাত-বছরের প্রোগ্রাম।</p>
+<h2 id="qkd">QKD-র অবস্থান কোথায় <a class="heading-anchor" href="#qkd" aria-label="লিঙ্ক QKD-র অবস্থান কোথায়">#</a></h2>
+<p>কোয়ান্টাম কী বিতরণ ইনডেক্সে একটি উচ্চ-সংবেদনশীলতা চ্যানেল বিকল্প হিসেবে অন্তর্ভুক্ত, বিশেষত আর্থিক-বাজার অবকাঠামো, কেন্দ্রীয়-ব্যাংক সংযোগ এবং অত্যন্ত সংবেদনশীল প্রাতিষ্ঠানিক প্রবাহের জন্য। এটিকে PQC-র পরিপূরক হিসেবে বিবেচনা করতে হবে, এন্টারপ্রাইজ মাইগ্রেশন বিলম্বের অজুহাত হিসেবে নয়।</p>
+<h2 id="section-8">ব্যাংকের ধরন অনুযায়ী এর অর্থ <a class="heading-anchor" href="#section-8" aria-label="লিঙ্ক ব্যাংকের ধরন অনুযায়ী এর অর্থ">#</a></h2>
+<h3 id="section-9">বৈশ্বিক সিস্টেমিকভাবে গুরুত্বপূর্ণ ব্যাংক <a class="heading-anchor" href="#section-9" aria-label="লিঙ্ক বৈশ্বিক সিস্টেমিকভাবে গুরুত্বপূর্ণ ব্যাংক">#</a></h3>
+<p>কঠিন সমস্যা হলো মাত্রা: হাজার হাজার TLS এন্ডপয়েন্ট, শত শত HSM পার্টিশন, কয়েক ডজন অভ্যন্তরীণ সার্টিফিকেট কর্তৃপক্ষ, এম্বেডেড ক্রিপ্টোগ্রাফিক প্রিমিটিভ সহ শত শত ব্যবসায়িক অ্যাপ্লিকেশন, এবং ব্যাংক পরিবর্তন করতে পারে না এমন ভেন্ডর SDK। বিনিয়োগ আরেকটি পাইলট নয়; এটি CBOM টুলিং, প্রতিটি নতুন বিল্ডে যুক্ত PKCS#11 অ্যাবস্ট্রাকশন স্তর, HSM একীকরণ পরিকল্পনা যা PQC ফার্মওয়্যারে নেতৃত্ব দিতে একজন ভেন্ডর বাছাই করে এবং অন্যদের জন্য বহু-বছরের লেজ গ্রহণ করে, এবং নীতি রেজিস্ট্রি যা FIPS 203 / 204 / 205 মাইগ্রেশন শেষ হওয়ার অনেক পরেও টেকসই ক্রিপ্টো-এজিলিটি পৃষ্ঠ হয়ে ওঠে।</p>
+<h3 id="section-10">লেনদেন ও কর্পোরেট ব্যাংক <a class="heading-anchor" href="#section-10" aria-label="লিঙ্ক লেনদেন ও কর্পোরেট ব্যাংক">#</a></h3>
+<p>মাইগ্রেশনের পরিসর G-SIB স্তরের চেয়ে সংকীর্ণ কিন্তু HNDL এক্সপোজার তীব্র: SWIFT সীমান্ত-পার বার্তা, কর্পোরেট-কাউন্টারপার্টি PII বহনকারী কাঠামোগত পেমেন্ট ডেটা, বাণিজ্য-অর্থ নথি ধারণকারী নথি-বিনিময় প্ল্যাটফর্ম এবং দীর্ঘ-ধারণ রিপোর্টিং আর্কাইভ। প্রতিটি গ্রাহকমুখী এন্ডপয়েন্টে হাইব্রিড TLS এবং ধারণ আর্কাইভের জন্য বিশ্রামে PQC-কে অগ্রাধিকার দিন। HSM-ভেন্ডর জবাবদিহি ঠেলে দিন — কর্পোরেট-ব্যাংকিং প্ল্যাটফর্ম দলের সরাসরি ক্রয় ক্ষমতা আছে যা পাইকারি প্রযুক্তি দলের প্রায়ই থাকে না।</p>
+<h3 id="section-11">আঞ্চলিক ব্যাংক <a class="heading-anchor" href="#section-11" aria-label="লিঙ্ক আঞ্চলিক ব্যাংক">#</a></h3>
+<p>যে ভেন্ডর স্ট্যাকে ইতিমধ্যেই ক্রিপ্টো-এজিলিটি প্রিমিটিভ রয়েছে সেটি কিনুন। এমন একটি কোর ব্যাংকিং প্ল্যাটফর্ম বাছুন যার ভেন্ডর একটি CBOM প্রকাশ করে এবং ML-KEM / ML-DSA সমর্থনের সময়সূচি প্রতিশ্রুতি দেয়। ভেন্ডরের HSM রোডম্যাপ ব্যাংকের মাইগ্রেশন সময়সীমার সাথে সারিবদ্ধ কিনা যাচাই করুন। শূন্য থেকে ক্রিপ্টো-এজিলিটি তৈরির জন্য প্রয়োজনীয় প্রকৌশল ক্ষমতা বহু-বছরের; ভেন্ডর সেই খরচ অনেক গ্রাহকের মধ্যে দেয় এবং ব্যাংক সুবিধা পায়। বৈধতা কাজ — প্রতিষ্ঠানের MRM প্রক্রিয়ায় ভেন্ডরের দাবি টিকে কিনা যাচাই — হলো বৈধ অভ্যন্তরীণ পরিসর।</p>
+<h3 id="psp">ফিনটেক, PSP এবং অবকাঠামো প্রদানকারী <a class="heading-anchor" href="#psp" aria-label="লিঙ্ক ফিনটেক, PSP এবং অবকাঠামো প্রদানকারী">#</a></h3>
+<p>২০২৬ সালে ব্যাংকে বিক্রি করা ভেন্ডরদের জন্য প্রতিযোগিতামূলক প্রশ্ন &quot;আপনি কি PQC সমর্থন করেন&quot; নয়। এটি &quot;আপনি কি আপনার প্ল্যাটফর্মের জন্য একটি CycloneDX CBOM, একটি HSM-ভেন্ডর সমর্থন ম্যাট্রিক্স এবং একটি লিখিত অ্যালগরিদম-ঘূর্ণন SLA তৈরি করতে পারেন।&quot; যেসব ভেন্ডর হ্যাঁ বলবে তারা ২০২৬-২০২৭-এ স্তর-১ ক্রয় গেট পাস করবে। যারা পারবে না তারা একজন প্রতিযোগীর কাছে নবীকরণ চক্র হারাবে যে পারে।</p>
+<h2 id="section-13">উপসংহার <a class="heading-anchor" href="#section-13" aria-label="লিঙ্ক উপসংহার">#</a></h2>
+<p>২০২৬ সালে কোয়ান্টাম-সেফ ব্যাংকিং একটি গবেষণা পর্যবেক্ষণ বিন্দু নয়; এটি একটি ডেলিভারি প্রোগ্রাম যার সময়সীমা দুটি বক্ররেখার ছেদবিন্দু দ্বারা নির্ধারিত — প্রতিষ্ঠানের আজ ধারণ করা ডেটার গোপনীয়তা আয়ুষ্কাল, এবং একটি ক্রিপ্টোগ্রাফিক্যালি রিলেভেন্ট কোয়ান্টাম কম্পিউটারের আগমন দিগন্ত। ২০৩০ সালে নিয়ন্ত্রক ও কাউন্টারপার্টিদের কাছে যেসব প্রতিষ্ঠান বিশ্বাসযোগ্য দেখাবে তারা ২০২৪-এ CBOM নির্মাণ শুরু করেছে, ২০২৬-এর শেষের আগে প্রতিটি বাহ্যিক এন্ডপয়েন্টে হাইব্রিড TLS স্থাপন করেছে এবং প্রথম দিন থেকে প্রতিটি নতুন বিল্ডে ক্রিপ্টো-এজিলিটি প্রকৌশল করেছে। যারা করেনি তারা আবিষ্কার করবে যে প্রতিপক্ষ আজ যে ডেটা সংগ্রহ করছে তার জন্য তাদের মাইগ্রেশন জানালা ইতিমধ্যেই বন্ধ হয়ে গেছে কিনা।</p>
+<p>মাইগ্রেশনকে সেভাবে পরিমাপ করুন যেভাবে আপনি যেকোনো পরিচালনাগত প্রোগ্রাম পরিমাপ করেন: পরিসর জানা, ক্রম অগ্রাধিকার পেয়েছে, সময়সীমা প্রতিশ্রুত, ব্যতিক্রম রেজিস্টার সৎ। যত গভীরভাবে নিজের এস্টেট দেখবেন, মাইগ্রেশন জানালা তত ছোট মনে হবে।</p>
+<h2 id="section-14">প্রায়শই জিজ্ঞাসিত প্রশ্ন <a class="heading-anchor" href="#section-14" aria-label="লিঙ্ক প্রায়শই জিজ্ঞাসিত প্রশ্ন">#</a></h2>
+<p><strong>একটি ব্যাংক প্রথমে কী ইনভেন্টরি করবে?</strong></p>
+<p>বাহ্যিকভাবে উন্মুক্ত TLS, পেমেন্ট চ্যানেল, গ্রাহক প্রমাণীকরণ, আন্তঃব্যাংক সংযোগ, HSM-সমর্থিত পরিষেবা, দীর্ঘমেয়াদী আর্কাইভ এবং দীর্ঘ ব্যবহারযোগ্য জীবনের গোপন ডেটা পরিচালনাকারী সিস্টেম দিয়ে শুরু করুন।</p>
+<p><strong>PQC কি শুধুমাত্র একটি সাইবার নিরাপত্তা সমস্যা?</strong></p>
+<p>না। এটি পেমেন্ট, পরিচয়, আইনি প্রমাণ, লেনদেন স্বাক্ষর, গ্রাহকের আস্থা, ডেটা ধারণ, ভেন্ডর ব্যবস্থাপনা এবং পরিচালনাগত স্থিতিস্থাপকতাকে প্রভাবিত করে।</p>
+<p><strong>ক্রিপ্টো-এজিলিটি বলতে কী বোঝায়?</strong></p>
+<p>ক্রিপ্টো-এজিলিটি মানে হার্ড-কোডেড অ্যাপ্লিকেশন পরিবর্তনের পরিবর্তে নীতি ও প্ল্যাটফর্ম নিয়ন্ত্রণের মাধ্যমে ক্রিপ্টোগ্রাফিক প্রিমিটিভ পরিবর্তনের সক্ষমতা।</p>
+<p><strong>ব্যাংকগুলোর কি আরও মানের জন্য অপেক্ষা করা উচিত?</strong></p>
+<p>না। NIST প্রশাসকদের প্রথম চূড়ান্ত মান ইন্টিগ্রেট করা শুরু করতে উৎসাহিত করেছে কারণ সম্পূর্ণ ইন্টিগ্রেশনে সময় লাগে।</p>
+<h2 id="section-15">তথ্যসূত্র <a class="heading-anchor" href="#section-15" aria-label="লিঙ্ক তথ্যসূত্র">#</a></h2>
+<ul>
+<li>NIST, (২০২৬)। <a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="First three finalized post-quantum encryption standards">প্রথম তিনটি চূড়ান্ত পোস্ট-কোয়ান্টাম এনক্রিপশন মান ⧉</a>।</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-06-04">২০২৬-০৬-০৪</time>।</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="Sebastien Rousseau-এর ছবি" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/bn/amader-shomporke/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">সিনিয়র ব্যাঙ্কিং প্রযুক্তিবিদ; আমি প্রায়োগিক এআই, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লিখি।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০ বছরেরও বেশি অভিজ্ঞতা। <a href="/bn/amader-shomporke/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-06-04">2026-06-04</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">সম্পর্কিত পঠন</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/bn/2026-05-18-quantum-cryptography-standards-developments-2026" class="related-media" aria-label="২০২৬-এ কোয়ান্টাম ক্রিপ্টোগ্রাফি রিসেট: PQC মান, QKD নিশ্চয়তা, এবং যে মাইগ্রেশন কাজ ব্যাঙ্কগুলি স্থগিত করতে পারে না" tabindex="-1"><img alt="Quantum-safe cryptography migration map for 2026 showing NIST PQC standards, hybrid protocol work, QKD assurance, crypto-agility, and bank data-risk tiers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="pqc-qkd"><a href="https://sebastienrousseau.com/bn/2026-05-18-quantum-cryptography-standards-developments-2026">২০২৬-এ কোয়ান্টাম ক্রিপ্টোগ্রাফি রিসেট: PQC মান, QKD নিশ্চয়তা, এবং যে মাইগ্রেশন কাজ ব্যাঙ্কগুলি স্থগিত করতে পারে না</a> <a class="heading-anchor" href="#pqc-qkd" aria-label="লিঙ্ক ২০২৬-এ কোয়ান্টাম ক্রিপ্টোগ্রাফি রিসেট: PQC মান, QKD নিশ্চয়তা, এবং যে মাইগ্রেশন কাজ ব্যাঙ্কগুলি স্থগিত করতে পারে না">#</a></h3><p><time datetime="2026-05-18">2026-05-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026" class="related-media" aria-label="পোস্ট-কোয়ান্টাম পেমেন্ট পরিকাঠামো: কেন ব্যাংক লিগ্যাসি রেল অভিযোজন না করে প্রতিস্থাপন করতে পারে" tabindex="-1"><img alt="Cryptographic key material drifting into deep blue water — symbolising harvest-now-decrypt-later capture of payment messages whose RSA and ECC envelopes will not survive a cryptanalytically relevant quantum computer" src="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-17"><a href="https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026">পোস্ট-কোয়ান্টাম পেমেন্ট পরিকাঠামো: কেন ব্যাংক লিগ্যাসি রেল অভিযোজন না করে প্রতিস্থাপন করতে পারে</a> <a class="heading-anchor" href="#section-17" aria-label="লিঙ্ক পোস্ট-কোয়ান্টাম পেমেন্ট পরিকাঠামো: কেন ব্যাংক লিগ্যাসি রেল অভিযোজন না করে প্রতিস্থাপন করতে পারে">#</a></h3><p><time datetime="2026-05-31">2026-05-31</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/bn/2026-05-16-best-cloud-infrastructure-architecture-2026" class="related-media" aria-label="২০২৬ সালে সেরা ক্লাউড অবকাঠামো আর্কিটেকচার: আর্থিক পরিষেবাগুলির জন্য একটি AI-নেটিভ, মাল্টি-ক্লাউড, কোয়ান্টাম-সচেতন ব্লুপ্রিন্ট" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai"><a href="https://sebastienrousseau.com/bn/2026-05-16-best-cloud-infrastructure-architecture-2026">২০২৬ সালে সেরা ক্লাউড অবকাঠামো আর্কিটেকচার: আর্থিক পরিষেবাগুলির জন্য একটি AI-নেটিভ, মাল্টি-ক্লাউড, কোয়ান্টাম-সচেতন ব্লুপ্রিন্ট</a> <a class="heading-anchor" href="#ai" aria-label="লিঙ্ক ২০২৬ সালে সেরা ক্লাউড অবকাঠামো আর্কিটেকচার: আর্থিক পরিষেবাগুলির জন্য একটি AI-নেটিভ, মাল্টি-ক্লাউড, কোয়ান্টাম-সচেতন ব্লুপ্রিন্ট">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">সূত্র ও তথ্যসূত্র</h2><ol class="article-sources-list"><li><a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf" rel="external noopener nofollow"><span class="source-host">nvlpubs.nist.gov</span><span class="source-path">/nistpubs/FIPS/NIST.FIPS.203.pdf</span></a></li><li><a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf" rel="external noopener nofollow"><span class="source-host">nvlpubs.nist.gov</span><span class="source-path">/nistpubs/FIPS/NIST.FIPS.204.pdf</span></a></li><li><a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.205.pdf" rel="external noopener nofollow"><span class="source-host">nvlpubs.nist.gov</span><span class="source-path">/nistpubs/FIPS/NIST.FIPS.205.pdf</span></a></li><li><a href="https://csrc.nist.gov/Projects/post-quantum-cryptography" rel="external noopener nofollow"><span class="source-host">csrc.nist.gov</span><span class="source-path">/Projects/post-quantum-cryptography</span></a></li><li><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" rel="external noopener nofollow"><span class="source-host">www.nist.gov</span><span class="source-path">/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryp…</span></a></li></ol></aside><nav class="post-pagination" aria-label="নিবন্ধ পেজিনেশন"><a class="post-pagination-prev" href="/bn/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/"><span class="post-pagination-label">পূর্ববর্তী</span><span class="post-pagination-title">The Agentic AI Index for Banks in 2026: Measuring Autonomy, Governance, Auditability, and Business Impact</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/bn/amader-shomporke/index.html">About</a></li>
+              <li><a href="/bn/jogajog/index.html">Contact</a></li>
+              <li><a href="/bn/static-site-generator-die-toiri/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">লেখা</h2>
+            <ul>
+              <li><a href="/bn/prabondho/index.html">Articles</a></li>
+              <li><a href="/bn/prokashana/index.html">Papers</a></li>
+              <li><a href="/bn/tag/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">কাজ</h2>
+            <ul>
+              <li><a href="/bn/prokolpo/index.html">Projects</a></li>
+              <li><a href="/bn/playlist/index.html">Playlists</a></li>
+              <li><a href="/bn/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">যোগাযোগ</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="নিউজলেটার সাবস্ক্রিপশন">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — পেমেন্ট, এআই এবং পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি বিষয়ক গবেষণা নোট। কোনও স্প্যাম নয়।</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="apni@bank.bd" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">সাবস্ক্রাইব করুন</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="সামাজিক লিঙ্ক">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau-এ Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau-এ LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau-এ Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau-এ YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/bn/prabeshjogyota/index.html">Accessibility</a> ·
+            <a href="/bn/goponiyota/index.html">Privacy</a> ·
+            <a href="/bn/shorto/index.html">Terms</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0009-0005-1434-284X","url":"https://orcid.org/0009-0005-1434-284X"},"worksFor":{"@type":"Organization","@id":"https://www.hsbc.com/#organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal","url":"https://www.paypal.com/"},{"@type":"Organization","name":"Barclays","url":"https://www.barclays.com/"},{"@type":"Organization","name":"Shazam Entertainment","url":"https://www.shazam.com/"},{"@type":"Organization","name":"AKQA","url":"https://www.akqa.com/"},{"@type":"Organization","name":"Virgin Group","url":"https://www.virgin.com/"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"professional experience","name":"20+ years across Tier-1 banks and global payments infrastructure","recognizedBy":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"ISO 20022 migration and wholesale payments architecture","recognizedBy":{"@type":"Organization","name":"SWIFT","url":"https://www.swift.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"Post-Quantum Cryptography for financial services","recognizedBy":{"@type":"Organization","name":"NIST Post-Quantum Cryptography Project","url":"https://csrc.nist.gov/projects/post-quantum-cryptography"}}],"knowsAbout":[{"@type":"DefinedTerm","name":"Post-Quantum Cryptography","sameAs":"https://en.wikipedia.org/wiki/Post-quantum_cryptography"},{"@type":"DefinedTerm","name":"ML-KEM (FIPS 203)","sameAs":"https://csrc.nist.gov/pubs/fips/203/final"},{"@type":"DefinedTerm","name":"ML-DSA (FIPS 204)","sameAs":"https://csrc.nist.gov/pubs/fips/204/final"},{"@type":"DefinedTerm","name":"ISO 20022","sameAs":"https://en.wikipedia.org/wiki/ISO_20022"},{"@type":"DefinedTerm","name":"SWIFT gpi","sameAs":"https://www.swift.com/our-solutions/swift-gpi"},{"@type":"DefinedTerm","name":"SEPA Instant Payments","sameAs":"https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/index.en.html"},{"@type":"DefinedTerm","name":"FedNow Service","sameAs":"https://www.federalreserve.gov/paymentsystems/fednow_about.htm"},{"@type":"DefinedTerm","name":"Real-Time Payments (RTP)","sameAs":"https://www.theclearinghouse.org/payment-systems/rtp"},{"@type":"DefinedTerm","name":"Cross-border payments","sameAs":"https://en.wikipedia.org/wiki/Cross-border_payments"},{"@type":"DefinedTerm","name":"Wholesale banking","sameAs":"https://en.wikipedia.org/wiki/Wholesale_banking"},{"@type":"DefinedTerm","name":"Applied artificial intelligence in banking","sameAs":"https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence"},{"@type":"DefinedTerm","name":"Generative artificial intelligence","sameAs":"https://en.wikipedia.org/wiki/Generative_artificial_intelligence"}],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://orcid.org/0009-0005-1434-284X","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":["Organization","Brand"],"@id":"https://sebastienrousseau.com/#organization","name":"Sebastien Rousseau","alternateName":"Banking on Quantum","url":"https://sebastienrousseau.com/","logo":{"@type":"ImageObject","@id":"https://sebastienrousseau.com/#logo","url":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","width":"512","height":"512","caption":"Sebastien Rousseau"},"founder":{"@id":"https://sebastienrousseau.com/#person"},"editorialPolicy":"https://sebastienrousseau.com/editorial/","correctionsPolicy":"https://sebastienrousseau.com/editorial/#corrections","ethicsPolicy":"https://sebastienrousseau.com/editorial/","diversityPolicy":"https://sebastienrousseau.com/editorial/","sameAs":["https://github.com/sebastienrousseau","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#organization"},"author":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"bn"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"bn"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1732,"headline":"২০২৬ সালে কোয়ান্টাম-সেফ ব্যাংকিং ইনডেক্স: পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, QKD, ক্রিপ্টো-এজিলিটি এবং হার্ভেস্ট-নাও-ডিক্রিপ্ট-লেটার ঝুঁকি","description":"২০২৬ সালে কোয়ান্টাম-সেফ প্রস্তুতির জন্য একটি ব্যাংকিং ইনডেক্স: NIST পোস্ট-কোয়ান্টাম মান, ক্রিপ্টোগ্রাফিক ইনভেন্টরি, ক্রিপ্টো-এজিলিটি, QKD এবং দীর্ঘস্থায়ী ডেটা এক্সপোজার।","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80","width":"100vw","height":"100vh","caption":"২০২৬ সালে ব্যাংক ও আর্থিক প্রতিষ্ঠানের জন্য কোয়ান্টাম-সেফ ব্যাংকিং ইনডেক্স ২০২৬ ডায়াগ্রাম"},"url":"https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/","datePublished":"2026-06-04T06:06:06+00:00","dateModified":"2026-06-04","inLanguage":"bn","keywords":"কোয়ান্টাম সেফ ব্যাংকিং ২০২৬, ব্যাংকের জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, ক্রিপ্টো এজিলিটি, QKD ব্যাংকিং","articleSection":"Security","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"bn"},"citation":[{"@type":"CreativeWork","url":"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf"},{"@type":"CreativeWork","url":"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf"},{"@type":"CreativeWork","url":"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.205.pdf"},{"@type":"CreativeWork","url":"https://csrc.nist.gov/Projects/post-quantum-cryptography"},{"@type":"CreativeWork","url":"https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/bn/"},{"@type":"ListItem","position":3,"name":"২০২৬ সালে কোয়ান্টাম-সেফ ব্যাংকিং ইনডেক্স: পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, QKD, ক্রিপ্টো-এজিলিটি এবং হার্ভেস্ট-নাও-ডিক্রিপ্ট-লেটার ঝুঁকি","item":"https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="অনুসন্ধান">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>অনুসন্ধান</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="অনুসন্ধান">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="ডকুমেন্টে অনুসন্ধান করুন..." autocomplete="off" aria-label="অনুসন্ধান"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> বন্ধ করুন</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> নেভিগেট করুন</span><span><kbd>Enter</kbd> খুলুন</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"২০২৬ সালে কোয়ান্টাম-সেফ ব্যাংকিং ইনডেক্স: পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, QKD, ক্রিপ্টো-এজিলিটি এবং হার্ভেস্ট-নাও-ডিক্রিপ্ট-লেটার ঝুঁকি","url":"https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/","inLanguage":"bn-BD","isAccessibleForFree":true,"author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"},"keywords":"কোয়ান্টাম সেফ ব্যাংকিং ২০২৬, ব্যাংকের জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, ক্রিপ্টো এজিলিটি, QKD ব্যাংকিং","proficiencyLevel":"Expert","dependencies":["NIST","NIST FIPS 203"]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"২০২৬ সালে কোয়ান্টাম-সেফ ব্যাংকিং ইনডেক্স: পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, QKD, ক্রিপ্টো-এজিলিটি এবং হার্ভেস্ট-নাও-ডিক্রিপ্ট-লেটার ঝুঁকি","url":"https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/","datePublished":"2026-06-04T06:06:06+00:00","dateModified":"2026-06-04","inLanguage":"bn-BD","isAccessibleForFree":true,"author":[{"@id":"https://sebastienrousseau.com/#person"}],"publisher":{"@id":"https://sebastienrousseau.com/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways"]},"image":["https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80"],"articleSection":"Security","keywords":"কোয়ান্টাম সেফ ব্যাংকিং ২০২৬, ব্যাংকের জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, ক্রিপ্টো এজিলিটি, QKD ব্যাংকিং"}</script></body>
+</html>

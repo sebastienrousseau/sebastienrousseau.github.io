@@ -1,11 +1,11 @@
 {
-  "title": "Återställningen av kvantkryptografi 2026: PQC-standarder, QKD-säkerhet och migrationsarbetet bankerna inte kan skjuta upp",
-  "keywords": "kvantkryptografi 2026, postkvantkryptografi, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hybrid nyckelutbyte, QKD, ETSI QKD, ISO IEC 23837, kryptoagilitet, harvest now decrypt later, HNDL, kryptografi för finansiella tjänster, banksäkerhet",
-  "banner_alt": "Karta för migration till kvantsäker kryptografi 2026 med NIST PQC-standarder, arbete med hybridprotokoll, QKD-säkerhet, kryptoagilitet och risknivåer för bankdata",
   "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
-  "date": "May 18, 2026",
+  "locale": "sv_SE",
   "description": "Kvantkryptografi 2026 är inte längre en debatt om huruvida kvantdatorer är nära förestående. Det är ett migrationsprogram som spänner över postkvantkryptografi, kryptoagilitet, säkerhet för kvantnyckeldistribution, protokollstandarder, leverantörsberedskap och långlivade finansiella data som redan exponeras för harvest-now-decrypt-later-risken.",
-  "subtitle": "Kvantkryptografi har gått från horisontspaning till implementationsdisciplin: NIST PQC-standarder är klara, brittiska NCSC har snävat in algoritmvalen, IETF:s protokollarbete mognar fortfarande, och QKD-säkerheten rör sig från laboratorieförtroende till certifieringsspråk.",
+  "date": "May 18, 2026",
   "language": "sv-SE",
-  "locale": "sv_SE"
+  "subtitle": "Kvantkryptografi har gått från horisontspaning till implementationsdisciplin: NIST PQC-standarder är klara, brittiska NCSC har snävat in algoritmvalen, IETF:s protokollarbete mognar fortfarande, och QKD-säkerheten rör sig från laboratorieförtroende till certifieringsspråk.",
+  "title": "Återställningen av kvantkryptografi 2026: PQC-standarder, QKD-säkerhet och migrationsarbetet bankerna inte kan skjuta upp",
+  "banner_alt": "Karta för migration till kvantsäker kryptografi 2026 med NIST PQC-standarder, arbete med hybridprotokoll, QKD-säkerhet, kryptoagilitet och risknivåer för bankdata",
+  "keywords": "kvantkryptografi 2026, postkvantkryptografi, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hybrid nyckelutbyte, QKD, ETSI QKD, ISO IEC 23837, kryptoagilitet, harvest now decrypt later, HNDL, kryptografi för finansiella tjänster, banksäkerhet"
 }

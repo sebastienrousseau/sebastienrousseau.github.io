@@ -1,11 +1,11 @@
 {
-  "keywords": "KI-Trends 2024, generative KI, KI in der Bildung, KI-Cybersicherheit, KI im Finanzwesen, KI-Content-Erstellung, KI für den Weltraum, ethische KI, KI im Handel, KI-Analytik",
   "banner_alt": "Drohnenansicht von London",
   "banner": "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp",
+  "locale": "de_DE",
+  "keywords": "KI-Trends 2024, generative KI, KI in der Bildung, KI-Cybersicherheit, KI im Finanzwesen, KI-Content-Erstellung, KI für den Weltraum, ethische KI, KI im Handel, KI-Analytik",
   "description": "KI-Trends für 2024: generative KI im Finanzwesen, multimodale Modelle, On-Device-LLMs und die Verschiebungen, die das Banking und die Produktentwicklung umgestalten werden.",
   "subtitle": "Ein entscheidendes Jahr für Technologie, Gesellschaft und ethische Entwicklung",
+  "date": "Jan 08, 2024",
   "title": "KI-Trends 2024: Einblicke und Vorhersagen für die Zukunft",
-  "language": "de",
-  "locale": "de_DE",
-  "date": "Jan 08, 2024"
+  "language": "de"
 }

@@ -8,7 +8,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ha-NG</news:language>
     </news:publication>
-    <news:publication_date>2026-06-03T21:50:14+00:00</news:publication_date>
+    <news:publication_date>2026-06-04T12:34:12+00:00</news:publication_date>
     <news:title>Bankin Hanyoyi Da Yawa a 2026: Katuna, A2A, Stablecoins, RTP, FedNow, da Open Banking Cikin Dabara Daya</news:title>
     <news:keywords>payment orchestration layer, FedNow vs RTP, FedNow vs ACH, stablecoin settlement, USDC atomic settlement, ISO 20022 pacs.008, account-to-account A2A, Open Banking APIs, pre-funded liquidity, 24/7 liquidity trap, multi-rail bank 2026, payment routing engine, ERP reconciliation</news:keywords>
   </news:news>
@@ -20,7 +20,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ha-NG</news:language>
     </news:publication>
-    <news:publication_date>2026-06-03T21:50:14+00:00</news:publication_date>
+    <news:publication_date>2026-06-04T12:34:12+00:00</news:publication_date>
     <news:title>Kayan Biya Bayan Quantum: Me Ya Sa Bankuna Za Su Iya Maye Gurbin Tsofaffin Hanyoyi Maimakon Daidaitawa</news:title>
     <news:keywords>cryptography bayan quantum, biyan PQC, saurin crypto, tara-yanzu-warware-baya, HNDL, ƙa&apos;idodin bayan quantum na NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, ƙaurar hanyar biya, ISO 20022 PQC, maye gurbin SWIFT MT, HSM, faɗuwar PKI, juriya na aiki, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
   </news:news>
@@ -32,9 +32,21 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ha-NG</news:language>
     </news:publication>
-    <news:publication_date>2026-06-03T21:50:14+00:00</news:publication_date>
+    <news:publication_date>2026-06-04T12:34:12+00:00</news:publication_date>
     <news:title>Kadarorin Dijital a 2026: Sauyin Ababen More Rayuwa da Bankuna Ba za su Iya Jinkirta ba</news:title>
     <news:keywords>kadarorin dijital 2026, kadarorin gaskiya na tokenised, stablecoins banki, ajiyar tokenised, kulawa kadarorin dijital, DLT banki, ababen more rayuwa na biyan kuɗi na ƙarshe, motsi na kayan tabbatarwa, kuɗi mai shirye-shirye, dabarun banki kadarorin dijital</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ha/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ha-NG</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>Quantum-Safe Banking Index a 2026: Cryptography na Post-Quantum, QKD, Crypto-Agility, da Haɗarin Harvest-Now-Decrypt-Later</news:title>
+    <news:keywords>quantum safe banking 2026, post quantum cryptography bankuna, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto agility, QKD banki, harvest-now-decrypt-later</news:keywords>
   </news:news>
 </url>
 <url>

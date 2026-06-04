@@ -132,7 +132,10 @@ def check_filler(body: str) -> list[str]:
 def check_structure(body: str) -> list[str]:
     """Hard structural requirements for a publishable article."""
     defects: list[str] = []
-    if "<!-- lead-start -->" not in body:
+    # Accept either the canonical marker post_enrich emits or the
+    # `: manual` opt-out variant a hand-curated lead uses to instruct
+    # post_enrich to leave it alone.
+    if "<!-- lead-start -->" not in body and "<!-- lead-start: manual -->" not in body:
         defects.append("structure: missing <!-- lead-start --> lead aside")
     if not re.search(r'>\s*\*\*Executive Summary', body):
         defects.append("structure: missing > **Executive Summary blockquote")
