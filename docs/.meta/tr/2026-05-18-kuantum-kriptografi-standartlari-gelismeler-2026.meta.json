@@ -1,11 +1,11 @@
 {
-  "date": "May 18, 2026",
-  "keywords": "kuantum kriptografi 2026, postkuantum kriptografi, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hibrit anahtar değişimi, QKD, ETSI QKD, ISO IEC 23837, kripto çevikliği, harvest now decrypt later, HNDL, finansal hizmetler kriptografisi, banka güvenliği",
-  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
-  "title": "2026'da Kuantum Kriptografi Sıfırlaması: PQC Standartları, QKD Güvencesi ve Bankaların Erteleyemeyeceği Geçiş Çalışması",
   "subtitle": "Kuantum kriptografi ufuk taramasından uygulama disiplinine geçti: NIST PQC standartları hazır, Birleşik Krallık NCSC algoritma seçimlerini daralttı, IETF protokol çalışması hâlâ olgunlaşıyor ve QKD güvencesi laboratuvar güveninden sertifikasyon diline geçiyor.",
-  "banner_alt": "2026 için kuantum güvenli kriptografi geçiş haritası: NIST PQC standartları, hibrit protokol çalışmaları, QKD güvencesi, kripto çevikliği ve banka veri risk kademeleri",
-  "language": "tr-TR",
+  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
   "locale": "tr_TR",
-  "description": "2026'da kuantum kriptografi artık kuantum bilgisayarların yakın olup olmadığı tartışması değil. Postkuantum kriptografi, kripto çevikliği, kuantum anahtar dağıtımı güvencesi, protokol standartları, tedarikçi hazırlığı ve şimdiden harvest-now-decrypt-later riskine maruz kalan uzun ömürlü finansal veriler arasında uzanan bir geçiş programıdır."
+  "keywords": "kuantum kriptografi 2026, postkuantum kriptografi, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hibrit anahtar değişimi, QKD, ETSI QKD, ISO IEC 23837, kripto çevikliği, harvest now decrypt later, HNDL, finansal hizmetler kriptografisi, banka güvenliği",
+  "title": "2026'da Kuantum Kriptografi Sıfırlaması: PQC Standartları, QKD Güvencesi ve Bankaların Erteleyemeyeceği Geçiş Çalışması",
+  "date": "May 18, 2026",
+  "banner_alt": "2026 için kuantum güvenli kriptografi geçiş haritası: NIST PQC standartları, hibrit protokol çalışmaları, QKD güvencesi, kripto çevikliği ve banka veri risk kademeleri",
+  "description": "2026'da kuantum kriptografi artık kuantum bilgisayarların yakın olup olmadığı tartışması değil. Postkuantum kriptografi, kripto çevikliği, kuantum anahtar dağıtımı güvencesi, protokol standartları, tedarikçi hazırlığı ve şimdiden harvest-now-decrypt-later riskine maruz kalan uzun ömürlü finansal veriler arasında uzanan bir geçiş programıdır.",
+  "language": "tr-TR"
 }

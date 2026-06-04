@@ -1,11 +1,11 @@
 {
   "banner": "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp",
-  "banner_alt": "Seorang pria menganalisis data di layar",
-  "description": "Jelajahi kemajuan AI Prompt Engineering tahun 2024, mengungkap tren dan teknik inovatif yang merevolusi sektor teknologi dan keuangan.",
-  "language": "id-ID",
-  "title": "[ID DRAFT] AI Prompt Engineering 2024: Techniques That Work",
   "keywords": "AI Prompt Engineering, Instruksi Khusus, Multi-Persona AI, Chain of Thought, Quantum Computing, AI Etis, Adaptive Prompting, Zero Shot Prompting, Few Shot Prompting, Tren Teknologi AI",
+  "description": "Jelajahi kemajuan AI Prompt Engineering tahun 2024, mengungkap tren dan teknik inovatif yang merevolusi sektor teknologi dan keuangan.",
+  "banner_alt": "Seorang pria menganalisis data di layar",
   "date": "Jan 23, 2024",
-  "subtitle": "Membentuk ulang interaksi manusia-komputer dengan kemajuan signifikan dalam instruksi khusus",
-  "locale": "id_ID"
+  "title": "[ID DRAFT] AI Prompt Engineering 2024: Techniques That Work",
+  "language": "id-ID",
+  "locale": "id_ID",
+  "subtitle": "Membentuk ulang interaksi manusia-komputer dengan kemajuan signifikan dalam instruksi khusus"
 }

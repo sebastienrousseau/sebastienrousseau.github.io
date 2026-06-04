@@ -1,11 +1,11 @@
 {
-  "keywords": "কোয়ান্টাম-নিরাপদ পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, SEPA, SWIFT gpi, ISO 20022, আর্থিক সেবা নিরাপত্তা, EPAA, harvest-now decrypt-later, ক্রিপ্টোগ্রাফিক অ্যাজিলিটি, Sebastien Rousseau",
-  "subtitle": "কোয়ান্টাম-নিরাপদ প্রস্তুতি একটি বর্তমান অবকাঠামো সিদ্ধান্ত। ভবিষ্যতের নয়।",
-  "language": "bn-BD",
   "date": "Sep 01, 2025",
+  "subtitle": "কোয়ান্টাম-নিরাপদ প্রস্তুতি একটি বর্তমান অবকাঠামো সিদ্ধান্ত। ভবিষ্যতের নয়।",
+  "keywords": "কোয়ান্টাম-নিরাপদ পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, SEPA, SWIFT gpi, ISO 20022, আর্থিক সেবা নিরাপত্তা, EPAA, harvest-now decrypt-later, ক্রিপ্টোগ্রাফিক অ্যাজিলিটি, Sebastien Rousseau",
   "banner_alt": "নীল আলোয় কোয়ান্টাম কম্পিউটিং সার্কিট বোর্ড",
-  "description": "কোয়ান্টাম কম্পিউটিং পেমেন্ট সিস্টেমের ক্রিপ্টোগ্রাফিকে হুমকির মুখে ফেলছে। EPAA শ্বেতপত্র কাঠামোগত ঝুঁকি এবং PQC মাইগ্রেশনের জরুরি প্রয়োজনীয়তা বিশদভাবে তুলে ধরেছে।",
   "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "language": "bn-BD",
   "locale": "bn_BD",
-  "title": "Quantum-Safe Payments: Why the Industry Must Act Now"
+  "title": "Quantum-Safe Payments: Why the Industry Must Act Now",
+  "description": "কোয়ান্টাম কম্পিউটিং পেমেন্ট সিস্টেমের ক্রিপ্টোগ্রাফিকে হুমকির মুখে ফেলছে। EPAA শ্বেতপত্র কাঠামোগত ঝুঁকি এবং PQC মাইগ্রেশনের জরুরি প্রয়োজনীয়তা বিশদভাবে তুলে ধরেছে।"
 }

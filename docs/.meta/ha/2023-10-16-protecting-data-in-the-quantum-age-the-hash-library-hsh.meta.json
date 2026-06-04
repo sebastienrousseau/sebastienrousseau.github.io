@@ -1,11 +1,11 @@
 {
-  "language": "ha-NG",
-  "title": "Protecting Data in the Quantum Age: The Hash Library (HSH)",
-  "locale": "ha_NG",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
-  "subtitle": "HSH: ɗakin karatu na hash mai tsayayya da quantum don zamanin post-quantum na tabbatar da asali.",
   "banner_alt": "Zane mai ƙirƙira akan jigon kwamfutar quantum",
   "date": "Oct 16, 2023",
   "keywords": "cryptography mai tsayayya da quantum, post-quantum cryptography, ɗakin karatu na hash, HSH, hashing kalmar sirri, kamus na key, Argon2i, Bcrypt, Scrypt, kwamfutar quantum",
-  "description": "HSH yana amfani da kayan aikin cryptographic masu tsayayya da kwamfutar quantum don kare bayananka, yana tabbatar da tsaronsu har ma a gaban ci gaban quantum na gaba."
+  "language": "ha-NG",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
+  "title": "Protecting Data in the Quantum Age: The Hash Library (HSH)",
+  "description": "HSH yana amfani da kayan aikin cryptographic masu tsayayya da kwamfutar quantum don kare bayananka, yana tabbatar da tsaronsu har ma a gaban ci gaban quantum na gaba.",
+  "subtitle": "HSH: ɗakin karatu na hash mai tsayayya da quantum don zamanin post-quantum na tabbatar da asali.",
+  "locale": "ha_NG"
 }

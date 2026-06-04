@@ -1,11 +1,11 @@
 {
-  "language": "ha-NG",
-  "keywords": "OpenVoice, Fasahar Kwafin Murya, AI Magana ta Roba, Open-Source Kwafin Murya, Haɗin Murya Tsakanin Harsuna, Gaggawar Kwafin Murya, Sarrafa Salon Murya, Fasahar Murya ta Accessibility, Muryoyin Masana'antar Nishaɗi, AI Murya ta Sabis na Abokan Ciniki",
-  "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.",
-  "locale": "ha_NG",
   "banner_alt": "Banner mai launi mai ƙarfi a kan hotuna masu maimaitawa",
+  "locale": "ha_NG",
   "title": "OpenVoice: Leading Innovation in Voice Cloning Technology",
-  "date": "Apr 01, 2024",
+  "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.",
   "subtitle": "Kayan Aikin Open-Source na Zamani don Kwafin Murya",
-  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp"
+  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
+  "language": "ha-NG",
+  "date": "Apr 01, 2024",
+  "keywords": "OpenVoice, Fasahar Kwafin Murya, AI Magana ta Roba, Open-Source Kwafin Murya, Haɗin Murya Tsakanin Harsuna, Gaggawar Kwafin Murya, Sarrafa Salon Murya, Fasahar Murya ta Accessibility, Muryoyin Masana'antar Nishaɗi, AI Murya ta Sabis na Abokan Ciniki"
 }
