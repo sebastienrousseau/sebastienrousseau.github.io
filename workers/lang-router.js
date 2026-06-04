@@ -112,16 +112,48 @@ export const SECURITY_HEADERS = {
  * the redirect path to append `Set-Cookie` without forking the wrapping
  * logic.
  */
-export function withSecurityHeaders(response, extraHeaders) {
+export function withSecurityHeaders(response, request, extraHeaders) {
+  let req = null;
+  let extra = extraHeaders;
+
+  // Gracefully handle legacy two-parameter calls and mock requests
+  if (request instanceof Request) {
+    req = request;
+  } else if (request && typeof request === 'object') {
+    extra = request;
+  }
+
   const headers = new Headers(response.headers);
   for (const name of Object.keys(SECURITY_HEADERS)) {
     headers.set(name, SECURITY_HEADERS[name]);
   }
-  if (extraHeaders) {
-    for (const name of Object.keys(extraHeaders)) {
-      headers.append(name, extraHeaders[name]);
+
+  let cacheControl = 'public, max-age=0, must-revalidate';
+  if (req && req.url) {
+    const url = new URL(req.url);
+    const pathname = url.pathname;
+    if (
+      pathname.startsWith('/fonts/') ||
+      pathname.startsWith('/_csp/') ||
+      /\.[a-f0-9]{4,32}\.(?:js|css)$/i.test(pathname) ||
+      /\.(?:webp|jpg|jpeg|png|gif|svg|ico|mp4|webm|ogg|mp3|wav|flac|aac|wasm|woff2?|eot|ttf|otf|pdf)$/i.test(pathname)
+    ) {
+      cacheControl = 'public, max-age=31536000, immutable';
     }
   }
+
+  if (extra) {
+    for (const name of Object.keys(extra)) {
+      headers.append(name, extra[name]);
+    }
+  }
+
+  // Safe cache control override for any cookies (redirects or standard responses)
+  if (headers.has('Set-Cookie')) {
+    cacheControl = 'no-store, private';
+  }
+  headers.set('Cache-Control', cacheControl);
+
   return new Response(response.body, {
     status: response.status,
     statusText: response.statusText,
@@ -177,27 +209,27 @@ export default {
     // Only act on GET / HEAD page navigation; everything else still gets
     // security headers via the pass-through wrapper.
     if (request.method !== 'GET' && request.method !== 'HEAD') {
-      return withSecurityHeaders(await fetch(request));
+      return withSecurityHeaders(await fetch(request), request);
     }
     if (!isPageNavigation(url.pathname)) {
-      return withSecurityHeaders(await fetch(request));
+      return withSecurityHeaders(await fetch(request), request);
     }
     // Visitor has chosen — respect that choice forever (until cookie expires).
     const cookieHeader = request.headers.get('Cookie');
     const prefLang = getCookie(cookieHeader, COOKIE);
     if (prefLang === 'en') {
-      return withSecurityHeaders(await fetch(request));
+      return withSecurityHeaders(await fetch(request), request);
     }
     if (prefLang && ACTIVE_LANGS.has(prefLang)) {
       const redirected = new URL(url);
       redirected.pathname = `/${prefLang}${url.pathname === '/' ? '/' : url.pathname}`;
-      return withSecurityHeaders(Response.redirect(redirected.toString(), 302));
+      return withSecurityHeaders(Response.redirect(redirected.toString(), 302), request);
     }
     // Honour `?lang=xx` as a one-off override (no cookie set — the user
     // is just deep-linking) — and respect ?lang=en as an opt-out signal.
     const overrideLang = url.searchParams.get('lang');
     if (overrideLang === 'en') {
-      return withSecurityHeaders(await fetch(request));
+      return withSecurityHeaders(await fetch(request), request);
     }
     if (overrideLang && ACTIVE_LANGS.has(overrideLang.toLowerCase())) {
       const redirected = new URL(url);
@@ -206,6 +238,7 @@ export default {
       const cookieValue = `${COOKIE}=${overrideLang.toLowerCase()}; Path=/; Max-Age=${COOKIE_MAX_AGE}; SameSite=Lax; Secure`;
       return withSecurityHeaders(
         Response.redirect(redirected.toString(), 302),
+        request,
         { 'Set-Cookie': cookieValue },
       );
     }
@@ -214,6 +247,6 @@ export default {
     // `pref-lang`) or by deep-linking with `?lang=xx`. Auto-redirect on
     // Accept-Language alone surprises too many bilingual readers who
     // expect the English version by default; keeping discovery opt-in.
-    return withSecurityHeaders(await fetch(request));
+    return withSecurityHeaders(await fetch(request), request);
   },
 };

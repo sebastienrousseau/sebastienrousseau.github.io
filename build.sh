@@ -104,6 +104,7 @@ python3 scripts/generators/build_translations.py
 python3 scripts/generators/build_lang_feeds.py
 python3 scripts/generators/build_agent_api.py
 python3 scripts/generators/build_lead_magnets.py
+python3 scripts/generators/build_news_sitemap.py
 python3 scripts/postbuild/postbuild.py
 # Rewrite the in-page language switcher so each .ap-lang-item link
 # points to the localised URL of THIS page (per the page's own
