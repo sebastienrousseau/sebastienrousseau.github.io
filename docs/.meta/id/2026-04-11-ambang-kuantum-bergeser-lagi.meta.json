@@ -1,11 +1,11 @@
 {
   "banner_alt": "Diagram ambang batas qubit Shor's algorithm. Papan sirkuit komputasi kuantum dengan pola cahaya biru",
-  "date": "Apr 11, 2026",
+  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
   "subtitle": "Sebuah makalah baru menunjukkan Shor's algorithm dapat berjalan hanya dengan 10.000 qubit. Implikasinya bagi kriptografi sulit untuk diabaikan.",
   "language": "id-ID",
-  "description": "Shor's algorithm kini mungkin berjalan hanya dengan 10.000 qubit. RSA, ECC, dan jadwal migrasi post-quantum semuanya semakin dekat. Inilah alasannya.",
-  "locale": "id_ID",
   "title": "[ID DRAFT] Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk",
-  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
-  "keywords": "komputasi kuantum, Shor's algorithm, 10000 qubit, kriptografi post-quantum, RSA-2048, elliptic curve cryptography, neutral atom qubits, koreksi kesalahan kuantum, cryptographic agility, jadwal ancaman kuantum"
+  "date": "Apr 11, 2026",
+  "keywords": "komputasi kuantum, Shor's algorithm, 10000 qubit, kriptografi post-quantum, RSA-2048, elliptic curve cryptography, neutral atom qubits, koreksi kesalahan kuantum, cryptographic agility, jadwal ancaman kuantum",
+  "locale": "id_ID",
+  "description": "Shor's algorithm kini mungkin berjalan hanya dengan 10.000 qubit. RSA, ECC, dan jadwal migrasi post-quantum semuanya semakin dekat. Inilah alasannya."
 }

@@ -370,6 +370,59 @@ def _banner_dimensions(html: str) -> tuple[int, int]:
     return _BANNER_FALLBACK_WIDTH, _BANNER_FALLBACK_HEIGHT
 
 
+def _banner_path(banner_url: str) -> str | None:
+    """Return the on-CDN path component (e.g. ``/stocks/images/foo.webp``)
+    of a banner URL, or ``None`` if the URL has no extractable path."""
+    m = re.match(r'https?://[^/]+(/[^?#]+)', banner_url)
+    return m.group(1) if m else None
+
+
+def strip_legacy_inline_banner(html: str, banner_url: str) -> str:
+    """Remove the legacy ``<p><img></p>`` wrapper that pre-2026 articles
+    used to place the banner inline as the first body element.
+
+    Pre-2026 articles routinely placed the banner as the first paragraph
+    in the markdown source (``![alt](url)`` → ``<p><img></p>``). The
+    article-banner figure injected by ``inject_hero_banner`` now carries
+    that role at the top of every page, so the inline copy is a visible
+    duplicate of the same image.
+
+    Detection: find the first ``<p><img></p>`` after the article-banner
+    figure (skipping ``langswitch`` aside + ``lead-start`` aside in
+    between); if the img's src contains the og:image path as a substring,
+    drop the entire ``<p>…</p>`` wrapper. The wrap_cdn_images postbuild
+    pass may have rewritten the body img to a ``/api/transform?url=…``
+    form, so substring match is used instead of URL equality.
+
+    No-op if the page has no article-banner figure (e.g. listings,
+    static pages) or the first body ``<p><img></p>`` doesn't match the
+    banner.
+    """
+    og_path = _banner_path(banner_url)
+    if og_path is None:
+        return html
+    # Anchor: the close of the auto-injected article-banner figure.
+    anchor = re.search(r'</figure>', html, re.IGNORECASE)
+    if not anchor:
+        return html
+    # Look at the first ~4 KB after </figure> for a `<p><img …></p>`
+    # whose src contains the banner path. The langswitch + lead-start
+    # asides come in between but are easy to skip — they're `<aside>`
+    # tags that the regex skips over.
+    start = anchor.end()
+    window = html[start: start + 4000]
+    m = re.search(
+        r'<p>\s*<img\b[^>]*\bsrc="([^"]+)"[^>]*>\s*</p>',
+        window, re.IGNORECASE,
+    )
+    if not m or og_path not in m.group(1):
+        return html
+    # Drop the matched <p>…</p>.
+    abs_start = start + m.start()
+    abs_end = start + m.end()
+    return html[:abs_start] + html[abs_end:]
+
+
 def inject_hero_banner(html: str) -> str:
     """Insert a hero ``<figure class="article-banner">`` right after the
     H1/byline ``<section class="ap-hero">`` on every BlogPosting page.
@@ -381,10 +434,12 @@ def inject_hero_banner(html: str) -> str:
 
     Idempotent. Skips:
       - non-BlogPosting pages (listings / static pages)
-      - pages whose author already placed an inline article-body image
-        immediately after the H1 (the legacy hand-curated pattern used
-        by 2026-06-02; we leave those alone so the rewrite doesn't
-        clobber an editor's chosen positioning).
+      - pages already carrying ``class="article-banner"`` (re-runs)
+      - legacy articles whose first body image already matches the
+        og:image URL (``_body_starts_with_banner_image``); without this
+        check we'd inject a duplicate, producing the banner-then-banner
+        stack at the top of the article that the 2018 / 2023 series
+        currently shows.
     """
     if '"@type":"BlogPosting"' not in html:
         return html
@@ -418,7 +473,12 @@ def inject_hero_banner(html: str) -> str:
     new_html, n = _HERO_BANNER_INSERT_RE.subn(
         lambda m: f'{m.group(1)}{figure}{m.group(2)}', html, count=1,
     )
-    return new_html if n else html
+    if not n:
+        return html
+    # Legacy authoring pattern: pre-2026 articles placed the banner image
+    # inline as the first body element. The auto-injected figure above
+    # now carries that role, so the inline copy is a visible duplicate.
+    return strip_legacy_inline_banner(new_html, banner_url)
 
 
 # Insertion anchor: the close of <section class="ap-hero"> immediately

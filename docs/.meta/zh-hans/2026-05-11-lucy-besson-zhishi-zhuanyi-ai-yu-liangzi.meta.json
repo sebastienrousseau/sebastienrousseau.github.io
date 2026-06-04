@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
-  "language": "zh-Hans",
-  "title": "重温露西的 U 盘：贝松所看到的知识向机器迁移",
   "locale": "zh_CN",
+  "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
+  "title": "重温露西的 U 盘：贝松所看到的知识向机器迁移",
+  "keywords": "露西, 卢克·贝松, AI, 大型语言模型, 量子计算, 中性原子, 全脑模拟, Neuralink, 知识迁移, 基质独立",
   "banner_alt": "神经网络与量子原子阵列的抽象可视化。由重新排列的粒子形成的黑色计算机",
+  "language": "zh-Hans",
   "subtitle": "AI、量子计算与知识——12 年后重新解读卢克·贝松的《露西》",
-  "description": "12 年后重新解读《露西》——贝松对知识迁移到非生物基质的思考在 AI 与量子时代显得格外贴切。",
   "date": "May 11, 2026",
-  "keywords": "露西, 卢克·贝松, AI, 大型语言模型, 量子计算, 中性原子, 全脑模拟, Neuralink, 知识迁移, 基质独立"
+  "description": "12 年后重新解读《露西》——贝松对知识迁移到非生物基质的思考在 AI 与量子时代显得格外贴切。"
 }

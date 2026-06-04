@@ -4,13 +4,13 @@
   <link href="https://sebastienrousseau.com/ko/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ko/"/>
   <id>https://sebastienrousseau.com/ko/</id>
-  <updated>2026-06-04T11:07:28+00:00</updated>
+  <updated>2026-06-04T12:34:12+00:00</updated>
   <entry>
     <title>2026년 멀티레일 뱅크: 카드·A2A·스테이블코인·RTP·FedNow·Open Banking을 하나의 전략으로</title>
     <link href="https://sebastienrousseau.com/ko/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
     <id>https://sebastienrousseau.com/ko/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
-    <updated>2026-06-04T11:07:28+00:00</updated>
-    <published>2026-06-04T11:07:28+00:00</published>
+    <updated>2026-06-04T12:34:12+00:00</updated>
+    <published>2026-06-04T12:34:12+00:00</published>
     <summary>FedNow는 24/7 사전 자금공급 유동성을 요구합니다. ACH는 저렴하지만 T+1입니다. USDC는 원자적으로 정산되지만 지갑 인프라가 필요합니다. 2026년 멀티레일 뱅크는 비용·결제 종결성·유동성 비용 기준으로 라우팅합니다.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -18,8 +18,8 @@
     <title>양자내성 결제 인프라: 은행이 레거시 레일을 개조하지 않고 대체할 수밖에 없는 이유</title>
     <link href="https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
     <id>https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-06-04T11:07:28+00:00</updated>
-    <published>2026-06-04T11:07:28+00:00</published>
+    <updated>2026-06-04T12:34:12+00:00</updated>
+    <published>2026-06-04T12:34:12+00:00</published>
     <summary>양자내성암호는 결제 레일에 이분법적 선택을 강요합니다. ML-KEM·ML-DSA용으로 설계되지 않은 SWIFT MT·ISO 20022 봉투에 RSA/ECC를 개조하거나, 암호 민첩성 인프라로 대체해야 합니다.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -27,8 +27,8 @@
     <title>디지털 자산 2026: 인프라 전환의 해</title>
     <link href="https://sebastienrousseau.com/ko/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
     <id>https://sebastienrousseau.com/ko/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
-    <updated>2026-06-04T11:07:28+00:00</updated>
-    <published>2026-06-04T11:07:28+00:00</published>
+    <updated>2026-06-04T12:34:12+00:00</updated>
+    <published>2026-06-04T12:34:12+00:00</published>
     <summary>디지털 자산은 더 이상 혁신 베팅이 아닙니다. 결제, 수탁, 대차대조표 아키텍처의 문제입니다. 은행의 전략적 과제는 구조적 불확실성 속에서의 인프라 설계입니다.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
