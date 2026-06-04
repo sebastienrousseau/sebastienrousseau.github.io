@@ -1,11 +1,11 @@
 {
-  "title": "Błąd odkryty w algorytmie kwantowym dla kryptografii kratowej",
-  "language": "pl-PL",
-  "banner_alt": "Schemat błędu w kwantowym algorytmie LWE",
   "locale": "pl_PL",
+  "banner_alt": "Schemat błędu w kwantowym algorytmie LWE",
+  "title": "Błąd odkryty w algorytmie kwantowym dla kryptografii kratowej",
+  "keywords": "kwantowy algorytm, błąd, LWE, kraty, PQC, Yilei Chen, kryptografia postkwantowa",
+  "subtitle": "Tymczasowe odprężenie dla kryptografii postkwantowej",
+  "description": "Wykryto błąd w algorytmie kwantowym Yileia Chena dla rozwiązywania LWE, tymczasowo zabezpieczając kryptografię opartą na kratach.",
   "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
   "date": "Apr 22, 2024",
-  "subtitle": "Tymczasowe odprężenie dla kryptografii postkwantowej",
-  "keywords": "kwantowy algorytm, błąd, LWE, kraty, PQC, Yilei Chen, kryptografia postkwantowa",
-  "description": "Wykryto błąd w algorytmie kwantowym Yileia Chena dla rozwiązywania LWE, tymczasowo zabezpieczając kryptografię opartą na kratach."
+  "language": "pl-PL"
 }

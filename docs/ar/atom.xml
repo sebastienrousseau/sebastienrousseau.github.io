@@ -4,13 +4,13 @@
   <link href="https://sebastienrousseau.com/ar/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ar/"/>
   <id>https://sebastienrousseau.com/ar/</id>
-  <updated>2026-06-04T06:56:11+00:00</updated>
+  <updated>2026-06-04T09:04:55+00:00</updated>
   <entry>
     <title>المصرف متعدد القنوات في 2026: البطاقات وA2A والعملات المستقرة وRTP وFedNow وOpen Banking في استراتيجية واحدة</title>
     <link href="https://sebastienrousseau.com/ar/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
     <id>https://sebastienrousseau.com/ar/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
-    <updated>2026-06-04T06:56:11+00:00</updated>
-    <published>2026-06-04T06:56:11+00:00</published>
+    <updated>2026-06-04T09:04:55+00:00</updated>
+    <published>2026-06-04T09:04:55+00:00</published>
     <summary>FedNow يستلزم سيولة مموَّلة مسبقًا على مدار الساعة. ACH رخيص لكنه T+1. USDC يُسوَّى ذريًّا لكنه يحتاج بنية محافظ. المصرف متعدد القنوات في 2026 يوجِّه كل دفعة وفق التكلفة والنهائية وكلفة السيولة، بقيادة محرك تنسيق يقرأ ISO 20022 pacs.008 ويقرِّر.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -18,8 +18,8 @@
     <title>بنية المدفوعات ما بعد الكمية: لماذا قد تستبدل المصارف قنواتها القديمة بدل تحديثها</title>
     <link href="https://sebastienrousseau.com/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
     <id>https://sebastienrousseau.com/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-06-04T06:56:11+00:00</updated>
-    <published>2026-06-04T06:56:11+00:00</published>
+    <updated>2026-06-04T09:04:55+00:00</updated>
+    <published>2026-06-04T09:04:55+00:00</published>
     <summary>التشفير ما بعد الكمي يفرض خيارًا ثنائيًا على قنوات المدفوعات: تعديل RSA/ECC داخل مظاريف SWIFT MT وISO 20022 التي لم تُصمَّم أصلًا لاستيعاب ML-KEM وML-DSA، أو الاستبدال ببنية تحتية ذات مرونة تشفيرية. على المعماريين الحسم قبل أن يتحوَّل HNDL إلى خسارة تشغيلية.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -27,8 +27,8 @@
     <title>الأصول الرقمية في 2026: تحوّل البنية التحتية الذي لا يمكن للمصارف تأجيله</title>
     <link href="https://sebastienrousseau.com/ar/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
     <id>https://sebastienrousseau.com/ar/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
-    <updated>2026-06-04T06:56:11+00:00</updated>
-    <published>2026-06-04T06:56:11+00:00</published>
+    <updated>2026-06-04T09:04:55+00:00</updated>
+    <published>2026-06-04T09:04:55+00:00</published>
     <summary>لم تَعُد الأصول الرقمية رهاناً على الابتكار، بل سؤالاً عن هندسة التسوية والحفظ والميزانية العمومية. المهمة الاستراتيجية للمصارف هي تصميم البنية التحتية في ظل عدم يقين بنيوي.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -36,9 +36,18 @@
     <title>Magnifica Humanitas: قراءة هندسية لأول رسالة بابوية عن الذكاء الاصطناعي</title>
     <link href="https://sebastienrousseau.com/ar/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/"/>
     <id>https://sebastienrousseau.com/ar/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</id>
-    <updated>2026-06-04T06:56:11+00:00</updated>
-    <published>2026-06-04T06:56:11+00:00</published>
+    <updated>2026-06-04T09:04:55+00:00</updated>
+    <published>2026-06-04T09:04:55+00:00</published>
     <summary>في 25 مايو 2026 أصدر البابا ليون الرابع عشر Magnifica Humanitas، أول رسالة بابوية مخصّصة للذكاء الاصطناعي. قراءتها من داخل قطاع التقنية تكشف إطارًا أخلاقيًا متماسكًا لعصر الذكاء الاصطناعي والكم، وتنتهي إلى الرجاء لا الخوف.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>مؤشر المصرفية الآمنة كموميًا في 2026: تشفير ما بعد الكم، QKD، المرونة التشفيرية، ومخاطر اجمع-الآن-فُكَّ-لاحقًا</title>
+    <link href="https://sebastienrousseau.com/ar/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"/>
+    <id>https://sebastienrousseau.com/ar/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>مؤشر مصرفي لقياس الجاهزية الآمنة كموميًا في 2026، يغطي معايير NIST لما بعد الكم، وجرد التشفير، والمرونة التشفيرية، وQKD، وتعرض البيانات طويلة العمر.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
