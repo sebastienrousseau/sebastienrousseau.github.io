@@ -1,11 +1,11 @@
 {
-  "date": "October 9, 2023",
-  "locale": "zh_CN",
-  "subtitle": "助你创建具有无限可能、无限可扩展性以及独特网络存在的高影响力静态网站",
   "banner_alt": "白色桌子上一台关机的笔记本电脑，左侧放着一杯水，右侧有钢笔、记事本和盆栽",
-  "language": "zh-Hans",
-  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
   "description": "Static Site Generator 是一款基于 Rust 的高性能静态网站生成器，致力于 SEO、可访问性与极速性能。",
+  "subtitle": "助你创建具有无限可能、无限可扩展性以及独特网络存在的高影响力静态网站",
+  "locale": "zh_CN",
+  "title": "Static Site Generator：最快的基于 Rust 的静态网站生成器",
+  "date": "October 9, 2023",
+  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
   "keywords": "Static Site Generator, 静态网站生成器, SSG, Rust, Markdown, SEO, WCAG, ADA, PWA, RSS",
-  "title": "Static Site Generator：最快的基于 Rust 的静态网站生成器"
+  "language": "zh-Hans"
 }

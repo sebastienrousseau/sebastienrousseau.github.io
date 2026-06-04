@@ -1,11 +1,11 @@
 {
   "subtitle": "Otomasi pembayaran ISO 20022 dan rekayasa pembayaran grosir dengan pain001.",
-  "date": "Sep 29, 2023",
-  "keywords": "pain001, iso 20022, otomasi pembayaran, pengurangan biaya, pemrosesan pembayaran, file pembayaran, inisiasi pembayaran, pain message, pain message standards, pain message validation",
   "description": "Otomatiskan pembuatan file pembayaran ISO 20022 pain.001 dari CSV atau SQLite. pain001 adalah pustaka Python sumber terbuka yang menyederhanakan kepatuhan regulasi.",
-  "language": "id-ID",
   "banner": "https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp",
   "title": "[ID DRAFT] Automating ISO 20022 Payment Files Creation with Pain001",
   "banner_alt": "Laptop yang dimatikan di atas meja kayu berwarna cokelat",
-  "locale": "id_ID"
+  "language": "id-ID",
+  "locale": "id_ID",
+  "date": "Sep 29, 2023",
+  "keywords": "pain001, iso 20022, otomasi pembayaran, pengurangan biaya, pemrosesan pembayaran, file pembayaran, inisiasi pembayaran, pain message, pain message standards, pain message validation"
 }

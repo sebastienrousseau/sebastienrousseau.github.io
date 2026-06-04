@@ -1,11 +1,11 @@
 {
-  "description": "Дванадцять років по тому «Lucy» Бессона читається як уявний експеримент про перехід знань від плоті до машини — тихо підтверджений LLM та кубітами.",
   "banner_alt": "Абстрактна візуалізація нейронних мереж та квантових масивів атомів. Чорний комп'ютер, що формується з переставлених частинок",
-  "language": "uk-UA",
-  "title": "[UK DRAFT] Lucy's Flash Drive Revisited: AI, Quantum & Knowledge",
-  "keywords": "фільм Lucy 2014, Luc Besson, передача знань, large language models, neutral atom qubits, whole-brain emulation, незалежність від субстрату, філософія AI, квантові обчислення, збереження знань",
-  "subtitle": "Через дванадцять років після «Lucy» Люка Бессона, центральна метафора фільму про перехід знань від плоті до машини несподівано підтверджується LLM, кубітами на нейтральних атомах та емуляцією цілого мозку.",
-  "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
+  "description": "Дванадцять років по тому «Lucy» Бессона читається як уявний експеримент про перехід знань від плоті до машини — тихо підтверджений LLM та кубітами.",
   "date": "May 11, 2026",
-  "locale": "uk_UA"
+  "subtitle": "Через дванадцять років після «Lucy» Люка Бессона, центральна метафора фільму про перехід знань від плоті до машини несподівано підтверджується LLM, кубітами на нейтральних атомах та емуляцією цілого мозку.",
+  "locale": "uk_UA",
+  "keywords": "фільм Lucy 2014, Luc Besson, передача знань, large language models, neutral atom qubits, whole-brain emulation, незалежність від субстрату, філософія AI, квантові обчислення, збереження знань",
+  "language": "uk-UA",
+  "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
+  "title": "[UK DRAFT] Lucy's Flash Drive Revisited: AI, Quantum & Knowledge"
 }

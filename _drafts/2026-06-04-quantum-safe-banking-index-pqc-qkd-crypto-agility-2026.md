@@ -6,7 +6,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "The Quantum-Safe Banking Index 2026 index diagram for banks and financial institutions in 2026"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stock/images/quantum-safe-banking-index-2026-banner.webp"
+banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -41,6 +41,7 @@ schema: "FAQPage, Article"
 seo_title: "The Quantum-Safe Banking Index 2026"
 short_name: "sebastienrousseau"
 subtitle: "Quantum risk has moved from theoretical threat to migration programme: banks need to measure cryptographic exposure, migration readiness, and crypto-agility."
+excerpt: "An index framework for measuring quantum-safe banking readiness in 2026: cryptographic bill of materials, hybrid TLS deployment, NIST FIPS 203 / 204 / 205 migration progress, crypto-agility primitives, and harvest-now-decrypt-later exposure across long-lived confidential data. The Board-Level Quantum Scorecard defines four exact percentages — inventory completeness, HNDL exposure, NIST migration progress, crypto-agility readiness — that turn project statuses into supervisory-ready evidence."
 tags: "quantum cryptography, post-quantum cryptography, PQC, QKD, crypto-agility, banking security"
 theme-color: "0, 83, 191"
 title: "The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk"
@@ -102,6 +103,20 @@ site_software: "Static Site Generator, Rust"
 
 # The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk
 
+<!-- lead-start: manual -->
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Quantum-safe banking in 2026 is a delivery programme with a deadline set by the intersection of two curves — confidentiality lifetime of the data the institution holds today, and the arrival horizon of a Cryptographically Relevant Quantum Computer (CRQC). NIST FIPS 203 / 204 / 205 are final since August 2024; CNSA 2.0 sets the US federal end-state at 2033; harvest-now-decrypt-later is already happening on long-lived data. The Board-Level Quantum Scorecard tracks four exact percentages: inventory completeness, HNDL exposure, NIST migration progress, crypto-agility readiness.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>The algorithm debate closed on 13 August 2024.</strong> ML-KEM (FIPS 203), ML-DSA (FIPS 204), SLH-DSA (FIPS 205) are the answers. Banks still running internal evaluations to "pick the winner" are 18 months out of date.</li>
+  <li><strong>Harvest-now-decrypt-later already applies.</strong> Anything with a confidentiality lifetime past credible CRQC arrival — 30-year mortgages, life-insurance underwriting, MiFID II / GDPR transaction recordings, M&amp;A retention archives — must move to hybrid quantum-safe key encapsulation now, not when a CRQC is announced.</li>
+  <li><strong>Inventory is the gating maturity.</strong> A Cryptographic Bill of Materials (CBOM) — protocol, library, certificate, HSM partition, vendor dependency, application owner, data-classification lifetime — is the precondition for everything else. Track freshness, not coverage.</li>
+  <li><strong>Hybrid TLS 1.3 is the 2026 deployment.</strong> X25519MLKEM768 hybrid key share is what Chrome / Firefox / Cloudflare / Akamai actually negotiate today. Pure ML-KEM TLS waits for HSM firmware and CA readiness.</li>
+  <li><strong>Crypto-agility is the durable deliverable.</strong> PKCS#11 abstraction, labelled keys, policy registry mapping business service to permitted algorithm set. Without it the next algorithm transition is another multi-year programme.</li>
+</ul>
+</aside>
+<!-- lead-end -->
+
 Quantum-safe banking in 2026 is about operational migration, not speculation. NIST has finalised the first three post-quantum cryptography standards, and banks must now understand which systems depend on RSA, ECC, TLS, signatures, HSMs, certificates, payment channels, archives, and long-lived confidential data. The index question is simple: can the institution replace cryptography before the threat becomes operational?
 
 ---
@@ -118,9 +133,13 @@ Quantum-safe banking in 2026 is about operational migration, not speculation. NI
 
 ## Why 2026 Is the Year This Index Matters
 
-The Stanford AI Index is useful because it treats a fast-moving technology field as something that can be measured: research output, technical performance, responsible deployment, economics, sector adoption, policy, and public sentiment are brought into a single frame ([Stanford HAI ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report "The 2026 AI Index Report")). Banks and financial institutions now need the same discipline for infrastructure. Agentic AI, quantum-safe security, cloud native resilience, and wholesale payments are no longer separate innovation tracks; they are converging into one operating model.
+Three shifts in 2024-2025 made quantum-safe a measurable bank programme rather than a research watchpoint. First, NIST finalised the primary post-quantum standards on 13 August 2024: [FIPS 203 (ML-KEM) ⧉](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf "FIPS 203 — Module-Lattice-Based Key-Encapsulation Mechanism"), [FIPS 204 (ML-DSA) ⧉](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf "FIPS 204 — Module-Lattice-Based Digital Signature Standard"), [FIPS 205 (SLH-DSA) ⧉](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.205.pdf "FIPS 205 — Stateless Hash-Based Digital Signature Standard"). The algorithm-selection debate closed on that date; banks still running internal "which scheme wins" workstreams in 2026 are 18 months out of date.
 
-The practical question for a bank is not whether each domain is important. It is whether the institution can measure readiness across all of them at the same time. A bank can deploy agentic AI and still be fragile if its cryptography is not migration-ready. It can modernise cloud platforms and still fail if payment data remains unstructured. It can run tokenisation pilots and still create systemic risk if the settlement, liquidity, identity, and audit layers are not designed together.
+Second, the [NSA's CNSA 2.0 ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "Commercial National Security Algorithm Suite 2.0") set the US federal end-state at 2033 with intermediate cutoffs starting in 2027 for software and firmware signing, 2030 for browsers and operating systems. Any bank with US federal counterparty exposure — FedNow, Treasury operations, federal customer accounts — sits inside that perimeter for the systems that touch federal data. The clock is no longer abstract.
+
+Third, [Harvest-Now-Decrypt-Later (HNDL) ⧉](https://csrc.nist.gov/Projects/post-quantum-cryptography "NIST Post-Quantum Cryptography programme") is the load-bearing risk argument for urgency. Sophisticated adversaries are already capturing TLS-protected payment messages, SWIFT envelopes, KYC documentation, and long-lived archive ciphertext at major financial centres. The data captured in 2026 only needs to remain confidentiality-sensitive at the moment of decryption — for 30-year mortgages, life-insurance underwriting, MiFID II / GDPR transaction recordings, and M&A retention archives, that window extends well past every credible estimate for a Cryptographically Relevant Quantum Computer (CRQC). The adversary does not need a quantum computer today. They need one before the data stops mattering.
+
+The Quantum-Safe Banking Index measures whether your institution can ship the migration before that intersection arrives. The work is no longer about whether to migrate; it is whether the migration completes on a defensible timeline.
 
 ## The 2026 Index Architecture
 
@@ -131,6 +150,15 @@ The practical question for a bank is not whether each domain is important. It is
 | **Migration** | Adopt hybrid and PQC-ready patterns aligned to NIST standards | ML-KEM and ML-DSA readiness | Emergency re-platforming under deadline |
 | **Crypto-agility** | Separate application logic from cryptographic primitives | Policy-controlled crypto coverage | Hard-coded algorithms across the estate |
 | **Assurance** | Test interoperability, performance, HSM support, certificates, and vendor readiness | Test pass rate and exception backlog | Broken channels or weak fallback controls |
+
+### The Board-Level Quantum Scorecard
+
+A credible quantum readiness scorecard requires tracking exact percentages, not just project statuses:
+
+1. **Inventory Completeness:** The percentage of tier-1 applications with a fully mapped Cryptographic Bill of Materials (CBOM).
+2. **HNDL Exposure:** The volume of long-lived confidential data (e.g., PII, trade secrets) transmitted over networks without hybrid quantum-safe key encapsulation.
+3. **NIST Migration Progress:** The percentage of asymmetric encryption keys and digital signatures migrated to FIPS 203 (ML-KEM) and FIPS 204 (ML-DSA) standards.
+4. **Crypto-Agility Readiness:** The percentage of critical systems where cryptographic algorithms can be rotated via centralized policy without requiring code recompilation.
 
 ## Current Signals to Track
 
@@ -144,11 +172,41 @@ The practical question for a bank is not whether each domain is important. It is
 
 ## The Migration Starts With the Ledger of Cryptography
 
-The first deliverable is not a new algorithm; it is a cryptographic bill of materials. Banks need a living inventory that connects business services to algorithms, libraries, certificates, key lengths, HSMs, data lifetimes, vendors, and operational owners. Without that ledger, quantum-safe migration becomes guesswork.
+![Photograph of a control-room dashboard mapping cryptographic primitives across a bank's TLS endpoints, HSM partitions, certificate authorities, and long-lived data archives — the visual register of a Cryptographic Bill of Materials.](https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80)
+
+The migration sequence is well-understood at this point. Each gate produces evidence that drives the next; skipping or compressing a gate is what generates the emergency re-platforming risk that shows up in the Index Architecture failure column.
+
+```mermaid
+flowchart LR
+    A["Discovery<br/>CycloneDX CBOM<br/>scanners + CMDB"] --> B["Exposure model<br/>lifetime × capture<br/>× CRQC horizon"]
+    B --> C["Hybrid TLS 1.3<br/>X25519MLKEM768<br/>external endpoints"]
+    C --> D["HSM PQC firmware<br/>vendor-by-vendor<br/>roadmap rollout"]
+    D --> E["Crypto-agility<br/>PKCS#11 + policy<br/>registry + kill switch"]
+    E --> F["Pure PQC<br/>2028+<br/>conformance + audit"]
+
+    style A fill:#eff5ff,stroke:#0056b3,color:#111
+    style B fill:#eff5ff,stroke:#0056b3,color:#111
+    style C fill:#fff4cf,stroke:#5a3e00,color:#111
+    style D fill:#fff4cf,stroke:#5a3e00,color:#111
+    style E fill:#e8f5e9,stroke:#1b5e20,color:#111
+    style F fill:#e8f5e9,stroke:#1b5e20,color:#111
+```
+
+The first deliverable is not a new algorithm; it is a cryptographic bill of materials (CBOM). Banks need a living inventory that connects business services to algorithms, libraries, certificates, key lengths, HSMs, data lifetimes, vendors, and operational owners. Without that ledger, quantum-safe migration becomes guesswork.
+
+The CBOM record set should capture, for each cryptographic primitive: the protocol or interface (TLS 1.3, IPsec, SSH, custom payment-message format), the algorithm and parameter set (RSA-2048, ECDH P-256, ML-KEM-768, ML-DSA-65), the library and version (OpenSSL 3.4, BoringSSL commit hash, vendor SDK build), the hardware boundary (HSM partition, TPM, secure enclave, or none), the certificate identity if applicable, the application owner, and the data-classification lifetime. Tools landing in production in 2025-2026 — IBM Quantum Safe Inventory, the open-source [CycloneDX CBOM specification ⧉](https://cyclonedx.org/capabilities/cbom/ "CycloneDX Cryptography Bill of Materials"), enterprise scanners from CryptoNext / Sandbox / PQShield — integrate into existing CMDB pipelines. None of them is complete on its own; expect a 12-18 month CBOM build cycle even with vendor tooling and dedicated headcount.
+
+The metric to track is freshness, not coverage. A CBOM that is two months out of date is worse than no CBOM at all because it gives the security team false confidence about what has been migrated.
 
 ## Hybrid First, Agile Always
 
 Most banks will not switch everything at once. The realistic pattern is hybrid deployment, where classical and post-quantum mechanisms run together while vendors, protocols, certificates, and operational tooling mature. The long-term target is crypto-agility: policy-controlled cryptographic choices that can be changed without rebuilding the business application.
+
+[Insert Interactive Component: Harvest-Now-Decrypt-Later (HNDL) Risk Calculator — A slider-based tool where executives input data shelf-life vs. estimated quantum timeline to see their exposure window.]
+
+> **Key insight:** If your data needs to remain confidential for 10 years, and a Cryptographically Relevant Quantum Computer (CRQC) is 7 years away, your migration deadline isn't in 7 years — it was 3 years ago.
+
+In practice this means TLS 1.3 with the hybrid `X25519MLKEM768` key share for externally-facing endpoints (Chrome / Firefox / Cloudflare / Akamai all support this today), classical signature chains until HSM and CA infrastructure catches up, and a PKCS#11 abstraction layer that lets the policy registry rotate algorithms without recompiling business applications. Crypto-agility is what determines whether the next algorithm transition (when, not if) is a six-week rotation or another seven-year programme.
 
 ## Where QKD Fits
 
@@ -158,23 +216,25 @@ Quantum key distribution belongs in the index as a high-sensitivity channel opti
 
 ### Global Systemically Important Banks
 
-Global banks should treat this index as an enterprise architecture scorecard. The priority is not another proof of concept; it is evidence that autonomous workflows, cryptographic migration, cloud dependency, and payment modernisation can be governed as a single risk and value system.
+The hard problem is scale: tens of thousands of TLS endpoints, hundreds of HSM partitions, dozens of internal certificate authorities, hundreds of business applications with embedded cryptographic primitives, and vendor SDKs the bank cannot modify. The investment is not another pilot; it is the CBOM tooling, the PKCS#11 abstraction layer wired into every new build, the HSM consolidation plan that picks one vendor to lead on PQC firmware and accepts a multi-year tail on the others, and the policy registry that becomes the durable crypto-agility surface long after the FIPS 203 / 204 / 205 migration completes.
 
-### Transaction Banks and Corporate Banks
+### Transaction and Corporate Banks
 
-Transaction banks should focus on wholesale payments, structured data, liquidity, tokenised deposits, and agentic treasury services. The most valuable client proposition is not faster money movement alone; it is explainable, auditable, programmable money movement with fewer investigations and better working-capital visibility.
+The migration scope is narrower than at G-SIB tier but the HNDL exposure is acute: SWIFT cross-border messaging, structured payment data carrying corporate-counterparty PII, document-exchange platforms holding trade-finance documentation, and long-retention reporting archives. Prioritise hybrid TLS on every customer-facing endpoint and PQC at rest for retention archives. Push HSM-vendor accountability — the corporate-banking platform team has direct procurement leverage that the wholesale technology team often lacks.
 
 ### Regional Banks
 
-Regional banks should use the index to avoid programme sprawl. They do not need to lead every frontier, but they do need credible positions on AI governance, post-quantum inventory, cloud exit evidence, and payment data readiness.
+Buy the vendor stack that already has the crypto-agility primitives. Pick a core banking platform whose vendor publishes a CBOM and commits to ML-KEM / ML-DSA support timelines. Validate the vendor's HSM roadmap aligns with the bank's migration deadline. The engineering capacity required to build crypto-agility from scratch is multi-year; the vendor pays that cost across many customers and the bank inherits the benefit. The validation work — checking the vendor's claims survive the institution's MRM process — is the legitimate internal scope.
 
 ### Fintechs, PSPs, and Infrastructure Providers
 
-Fintechs and infrastructure providers should align their product roadmaps to measurable bank readiness. The best propositions will reduce integration risk, strengthen evidence, and make complex infrastructure easier for banks to govern.
+The competitive question for vendors selling into banks in 2026 is not "do you support PQC." It is "can you produce a CycloneDX CBOM for your platform, an HSM-vendor support matrix, and a written algorithm-rotation SLA." Vendors who answer with yes will pass tier-1 procurement gates in 2026-2027. Vendors who cannot will lose the renewal cycle to a competitor that can.
 
 ## Conclusion
 
-The value of an index-style report is that it converts a fragmented technology agenda into a measurable operating model. In 2026, the winners in financial infrastructure will not be the institutions with the most pilots. They will be the institutions that can prove readiness across autonomy, security, resilience, settlement, economics, and governance at the same time.
+Quantum-safe banking in 2026 is not a research watchpoint; it is a delivery programme with a deadline set by the intersection of two curves — confidentiality lifetime of the data the institution holds today, and the arrival horizon of a Cryptographically Relevant Quantum Computer. The institutions that look credible to regulators and counterparties in 2030 are the ones that started CBOM construction in 2024, deployed hybrid TLS on every external endpoint by end-2026, and engineered crypto-agility into every new build from day one. The institutions that did not will discover whether their migration window has already closed for the data their adversary is harvesting today.
+
+Measure the migration the way you measure any operational programme: scope known, sequencing prioritised, deadlines committed, exception registers honest. The harder you look at your own estate, the smaller the migration window feels.
 
 ## Frequently Asked Questions
 

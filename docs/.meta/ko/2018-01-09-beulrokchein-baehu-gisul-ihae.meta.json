@@ -1,12 +1,12 @@
 {
-  "title": "블록체인 배후의 기술 이해하기",
-  "banner_alt": "터미널 화면 위의 코드",
-  "date": "January 9, 2018",
-  "language": "ko-KR",
-  "subtitle": "암호, 합의, 네트워크 계층을 기술적으로 분해하다",
-  "last_reviewed": "2026-05-16",
-  "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp",
   "locale": "ko_KR",
+  "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp",
   "keywords": "블록체인, 암호, 해시, 디지털 서명, 머클 트리, 합의, 작업 증명, P2P 네트워크",
-  "description": "블록체인을 구성하는 암호·네트워크·합의 각 계층을 기술적으로 분해하여 해설합니다."
+  "banner_alt": "터미널 화면 위의 코드",
+  "subtitle": "암호, 합의, 네트워크 계층을 기술적으로 분해하다",
+  "title": "블록체인 배후의 기술 이해하기",
+  "last_reviewed": "2026-05-16",
+  "description": "블록체인을 구성하는 암호·네트워크·합의 각 계층을 기술적으로 분해하여 해설합니다.",
+  "date": "January 9, 2018",
+  "language": "ko-KR"
 }

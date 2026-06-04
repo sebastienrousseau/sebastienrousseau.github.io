@@ -6,14 +6,14 @@
     <description>Mga artikulo sa Filipino: applied AI, ISO 20022 payments, post-quantum cryptography at wholesale-payments transformation.</description>
     <atom:link href="https://sebastienrousseau.com/fil/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fil-PH</language>
-    <lastBuildDate>Wed, 03 Jun 2026 19:08:48 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2026 06:56:11 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Lahat ng karapatan ay nakalaan.</copyright>
     <item>
       <title>Ang Agentic AI Index para sa mga Bangko sa 2026: Pagsukat ng Autonomy, Pamamahala, Auditability, at Epekto sa Negosyo</title>
       <link>https://sebastienrousseau.com/fil/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</link>
       <description>Isang index-style framework para sa pagsukat ng agentic AI readiness sa mga bangko, sumasaklaw sa autonomy, pamamahala, auditability, pagiging maaasahan, mga kontrol, at halaga sa negosyo.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</guid>
-      <pubDate>Wed, 03 Jun 2026 19:08:48 +0000</pubDate>
+      <pubDate>Thu, 04 Jun 2026 06:56:11 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>agentic AI banking 2026</category>
@@ -28,7 +28,7 @@
       <link>https://sebastienrousseau.com/fil/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</link>
       <description>Isang banking infrastructure index para sa 2026 na inspirado ng Stanford AI Index, sumusukat ng katatagan sa agentic AI, quantum-safe security, cloud-native na katatagan, at pandaigdigang wholesale payments.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</guid>
-      <pubDate>Wed, 03 Jun 2026 19:08:48 +0000</pubDate>
+      <pubDate>Thu, 04 Jun 2026 06:56:11 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" type="image/webp" length="0"/>
       <category>banking infrastructure index 2026</category>
@@ -46,7 +46,7 @@
       <link>https://sebastienrousseau.com/fil/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>Hinihingi ng FedNow ang pre-funded 24/7 liquidity. Mura ang ACH ngunit T+1. Atomic ang USDC ngunit kailangan ng wallet infrastructure. Ruruta ng 2026 multi-rail bank ang bawat bayad ayon sa gastos, finality, at liquidity cost — sa orchestration engine na bumabasa ng ISO 20022 pacs.008.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Wed, 03 Jun 2026 19:08:48 +0000</pubDate>
+      <pubDate>Thu, 04 Jun 2026 06:56:11 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>payment orchestration layer</category>
@@ -68,7 +68,7 @@
       <link>https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>Pinipili ng post-quantum cryptography ang payment rails: adaptasyon ng RSA/ECC sa SWIFT MT at ISO 20022 envelopes na hindi sukat sa ML-KEM at ML-DSA, o pagpapalit sa crypto-agile infrastructure. Magdesisyon bago maging operational loss ang HNDL.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Wed, 03 Jun 2026 19:08:48 +0000</pubDate>
+      <pubDate>Thu, 04 Jun 2026 06:56:11 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>post-quantum cryptography</category>
@@ -94,7 +94,7 @@
       <link>https://sebastienrousseau.com/fil/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>Hindi na inobasyon ang digital assets, kundi tanong ng arkitektura ng settlement, custody, at balance sheet. Disenyo ng imprastraktura sa ilalim ng istrukturang kawalang-katiyakan ang estratehikong gawain ng bangko.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Wed, 03 Jun 2026 19:08:48 +0000</pubDate>
+      <pubDate>Thu, 04 Jun 2026 06:56:11 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>digital assets 2026</category>
