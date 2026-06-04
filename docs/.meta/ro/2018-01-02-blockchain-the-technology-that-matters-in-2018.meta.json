@@ -1,11 +1,11 @@
 {
-  "locale": "ro_RO",
-  "date": "Jan 02, 2018",
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
-  "title": "Blockchain explained, the technology that matters the most",
-  "keywords": "pain001, iso 20022, automatizarea plăților, reducerea costurilor, procesarea plăților, fișiere de plată, inițierea plăților, pain message, pain message standards, pain message validation",
-  "banner_alt": "Laptop închis pe un birou din lemn maro",
   "description": "Povestea extraordinarei călătorii de securizare a tranzacțiilor digitale prin criptografia cu cheie privată și rețelele Peer-to-peer (P2P).",
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "keywords": "pain001, iso 20022, automatizarea plăților, reducerea costurilor, procesarea plăților, fișiere de plată, inițierea plăților, pain message, pain message standards, pain message validation",
   "subtitle": "Blockchain, registre distribuite și tehnologia care contează cel mai mult în 2018.",
-  "language": "ro-RO"
+  "title": "Blockchain explained, the technology that matters the most",
+  "banner_alt": "Laptop închis pe un birou din lemn maro",
+  "language": "ro-RO",
+  "locale": "ro_RO",
+  "date": "Jan 02, 2018"
 }

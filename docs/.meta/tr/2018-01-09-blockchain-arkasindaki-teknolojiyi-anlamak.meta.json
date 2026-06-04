@@ -1,11 +1,11 @@
 {
-  "title": "Blockchain'in arkasındaki teknolojiyi anlamak",
-  "date": "January 9, 2018",
-  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
-  "banner_alt": "Soyut bir blockchain ağ görselleştirmesi",
-  "locale": "tr_TR",
+  "description": "Blockchain'in mimarisi: bloklar, hash'ler, konsensüs algoritmaları ve güveni mümkün kılan kriptografi.",
   "language": "tr-TR",
+  "title": "Blockchain'in arkasındaki teknolojiyi anlamak",
+  "banner_alt": "Soyut bir blockchain ağ görselleştirmesi",
   "keywords": "blockchain, kriptografi, hash, konsensüs, proof-of-work, proof-of-stake, dağıtık defter",
   "subtitle": "Dağıtık defter sistemini destekleyen temel mekanizmalar",
-  "description": "Blockchain'in mimarisi: bloklar, hash'ler, konsensüs algoritmaları ve güveni mümkün kılan kriptografi."
+  "date": "January 9, 2018",
+  "locale": "tr_TR",
+  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp"
 }

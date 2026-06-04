@@ -1,11 +1,11 @@
 {
-  "keywords": "AI tạo sinh, GPT, LLM, diffusion, Stable Diffusion, DALL-E, Midjourney, doanh nghiệp, tự động hoá",
-  "language": "vi-VN",
   "date": "November 12, 2023",
-  "title": "Khám phá trí tuệ nhân tạo tạo sinh",
-  "subtitle": "Từ GPT đến diffusion: AI tạo sinh đang định hình lại ngành nào",
-  "banner_alt": "Hình ảnh trừu tượng minh hoạ AI tạo sinh",
   "locale": "vi_VN",
+  "subtitle": "Từ GPT đến diffusion: AI tạo sinh đang định hình lại ngành nào",
+  "title": "Khám phá trí tuệ nhân tạo tạo sinh",
+  "keywords": "AI tạo sinh, GPT, LLM, diffusion, Stable Diffusion, DALL-E, Midjourney, doanh nghiệp, tự động hoá",
+  "banner_alt": "Hình ảnh trừu tượng minh hoạ AI tạo sinh",
   "banner": "https://cloudcdn.pro/stocks/images/genai-banner.webp",
+  "language": "vi-VN",
   "description": "AI tạo sinh giờ đây tạo ra văn bản, hình ảnh, mã và âm thanh ở cấp độ con người. Tổng quan các mô hình, kiến trúc và ứng dụng cho doanh nghiệp."
 }

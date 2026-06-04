@@ -1,11 +1,11 @@
 {
-  "date": "January 23, 2024",
-  "locale": "ru_RU",
   "banner_alt": "Инженерия промптов: визуализация техник работы с LLM",
-  "title": "Достижения в инженерии промптов ИИ",
-  "banner": "https://cloudcdn.pro/stocks/images/prompt-engineering.webp",
-  "subtitle": "Как разговаривать с большими языковыми моделями",
+  "locale": "ru_RU",
   "description": "Современные техники prompt-инжиниринга для LLM: chain-of-thought, few-shot learning, retrieval-augmented generation и структурированные ответы.",
+  "language": "ru-RU",
+  "title": "Достижения в инженерии промптов ИИ",
+  "date": "January 23, 2024",
+  "subtitle": "Как разговаривать с большими языковыми моделями",
   "keywords": "prompt-инжиниринг, LLM, chain-of-thought, few-shot, RAG, retrieval-augmented generation, структурированные ответы, JSON mode",
-  "language": "ru-RU"
+  "banner": "https://cloudcdn.pro/stocks/images/prompt-engineering.webp"
 }

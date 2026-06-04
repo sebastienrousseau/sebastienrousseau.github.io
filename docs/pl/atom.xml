@@ -4,13 +4,13 @@
   <link href="https://sebastienrousseau.com/pl/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/pl/"/>
   <id>https://sebastienrousseau.com/pl/</id>
-  <updated>2026-06-04T14:07:14+00:00</updated>
+  <updated>2026-06-04T14:29:01+00:00</updated>
   <entry>
     <title>Bank wieloszynowy w 2026: karty, A2A, stablecoiny, RTP, FedNow i Open Banking w jednej strategii</title>
     <link href="https://sebastienrousseau.com/pl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
     <id>https://sebastienrousseau.com/pl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
-    <updated>2026-06-04T14:07:14+00:00</updated>
-    <published>2026-06-04T14:07:14+00:00</published>
+    <updated>2026-06-04T14:29:01+00:00</updated>
+    <published>2026-06-04T14:29:01+00:00</published>
     <summary>FedNow wymaga płynności prefinansowanej w trybie 24/7. ACH jest tani, ale T+1. USDC rozlicza się atomowo, lecz potrzebuje infrastruktury portfeli. Bank wieloszynowy 2026 routuje każdą płatność według kosztu, finalności i kosztu płynności — kierowany silnikiem orkiestracji czytającym ISO 20022 pacs.008.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -18,8 +18,8 @@
     <title>Infrastruktura płatności postkwantowych: dlaczego banki mogą zastąpić, a nie adaptować starsze szyny</title>
     <link href="https://sebastienrousseau.com/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
     <id>https://sebastienrousseau.com/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-06-04T14:07:14+00:00</updated>
-    <published>2026-06-04T14:07:14+00:00</published>
+    <updated>2026-06-04T14:29:01+00:00</updated>
+    <published>2026-06-04T14:29:01+00:00</published>
     <summary>Kryptografia postkwantowa wymusza na szynach płatniczych wybór binarny: adaptacja RSA/ECC w kopertach SWIFT MT i ISO 20022 nieprzystosowanych do ML-KEM i ML-DSA, czy zastąpienie infrastrukturą krypto-agilną. Architekci muszą zdecydować, zanim HNDL stanie się stratą operacyjną.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -27,8 +27,8 @@
     <title>Hurtowe rynki cyfrowe w UK: tokenizowane gilty, rozliczenie i champion</title>
     <link href="https://sebastienrousseau.com/pl/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"/>
     <id>https://sebastienrousseau.com/pl/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</id>
-    <updated>2026-06-04T14:07:14+00:00</updated>
-    <published>2026-06-04T14:07:14+00:00</published>
+    <updated>2026-06-04T14:29:01+00:00</updated>
+    <published>2026-06-04T14:29:01+00:00</published>
     <summary>Rola Wholesale Digital Markets Champion w Wielkiej Brytanii zamienia tokenizowane finanse hurtowe w narodowy projekt konkurencyjnosci dla Cite of London.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -36,8 +36,8 @@
     <title>Aktywa cyfrowe w 2026: infrastrukturalne przejscie, ktorego banki nie odlozą</title>
     <link href="https://sebastienrousseau.com/pl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
     <id>https://sebastienrousseau.com/pl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
-    <updated>2026-06-04T14:07:14+00:00</updated>
-    <published>2026-06-04T14:07:14+00:00</published>
+    <updated>2026-06-04T14:29:01+00:00</updated>
+    <published>2026-06-04T14:29:01+00:00</published>
     <summary>Aktywa cyfrowe nie sa juz zakladem innowacyjnym. To pytanie o architekture rozliczenia, przechowywania i bilansu. Zadanie strategiczne bankow to projekt infrastruktury w warunkach strukturalnej niepewnosci.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>

@@ -1,11 +1,11 @@
 {
+  "language": "vi-VN",
+  "keywords": "Le Chat, Mistral AI, châu Âu, LLM, ChatGPT, AI chủ quyền, Pháp, mã nguồn mở",
   "title": "Le Chat của Mistral AI: một kỷ nguyên mới của AI đối thoại",
-  "description": "Le Chat là chatbot từ Mistral AI, công ty AI hàng đầu của Pháp. Cách nó so sánh với ChatGPT và đâu là ý nghĩa của một LLM châu Âu chủ quyền.",
   "locale": "vi_VN",
   "date": "March 4, 2024",
-  "language": "vi-VN",
-  "banner_alt": "Logo Mistral AI",
   "banner": "https://cloudcdn.pro/stocks/images/mistral-banner.webp",
   "subtitle": "Một LLM châu Âu cạnh tranh với ChatGPT",
-  "keywords": "Le Chat, Mistral AI, châu Âu, LLM, ChatGPT, AI chủ quyền, Pháp, mã nguồn mở"
+  "description": "Le Chat là chatbot từ Mistral AI, công ty AI hàng đầu của Pháp. Cách nó so sánh với ChatGPT và đâu là ý nghĩa của một LLM châu Âu chủ quyền.",
+  "banner_alt": "Logo Mistral AI"
 }

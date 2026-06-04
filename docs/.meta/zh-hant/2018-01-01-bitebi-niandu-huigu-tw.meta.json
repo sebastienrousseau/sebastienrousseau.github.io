@@ -1,11 +1,11 @@
 {
   "banner_alt": "一堆金幣和銀幣堆放在桌面上",
-  "locale": "zh_TW",
+  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
   "language": "zh-Hant",
+  "subtitle": "重新定義貨幣的點對點電子支付系統",
   "title": "比特幣：首個加密貨幣的年度回顧",
-  "keywords": "比特幣, 加密貨幣, 區塊鏈, 點對點, 雙重支付, 挖礦, 工作量證明, ETF, 中本聰, 去中心化金融",
   "description": "比特幣：一種點對點電子現金系統（P2P ECS），有望徹底改變人們線上交易的方式。",
   "date": "January 1, 2018",
-  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
-  "subtitle": "重新定義貨幣的點對點電子支付系統"
+  "keywords": "比特幣, 加密貨幣, 區塊鏈, 點對點, 雙重支付, 挖礦, 工作量證明, ETF, 中本聰, 去中心化金融",
+  "locale": "zh_TW"
 }

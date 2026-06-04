@@ -1,11 +1,11 @@
 {
   "language": "fil-PH",
+  "locale": "fil_PH",
+  "date": "Mar 08, 2024",
+  "keywords": "مكتبة تسجيل Rust, تسجيل غير متزامن في Rust, تنسيقات سجلات منظَّمة, تصحيح تطبيقات Rust, تسجيل قابل للتخصيص في Rust, أدوات تطوير Rust, ميزات RustLogs RLG, تسجيل فعّال في Rust, تكامل RustLogs, توثيق RustLogs",
+  "description": "اكتشف RustLogs (RLG)، مكتبة التسجيل المرنة للغة Rust مع تنسيقات سجلات منظَّمة وتسجيل غير متزامن وخيارات تخصيص واسعة.",
+  "subtitle": "تبسيط سير عمل التسجيل في Rust",
   "title": "RustLogs (RLG): مكتبة تسجيل منظَّمة للغة Rust",
   "banner_alt": "لافتة RustLogs (RLG)",
-  "keywords": "مكتبة تسجيل Rust, تسجيل غير متزامن في Rust, تنسيقات سجلات منظَّمة, تصحيح تطبيقات Rust, تسجيل قابل للتخصيص في Rust, أدوات تطوير Rust, ميزات RustLogs RLG, تسجيل فعّال في Rust, تكامل RustLogs, توثيق RustLogs",
-  "date": "Mar 08, 2024",
-  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
-  "subtitle": "تبسيط سير عمل التسجيل في Rust",
-  "locale": "fil_PH",
-  "description": "اكتشف RustLogs (RLG)، مكتبة التسجيل المرنة للغة Rust مع تنسيقات سجلات منظَّمة وتسجيل غير متزامن وخيارات تخصيص واسعة."
+  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp"
 }

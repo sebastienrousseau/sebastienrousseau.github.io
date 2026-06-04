@@ -3781,6 +3781,84 @@ def test_inject_hero_banner_returns_unchanged_when_anchor_missing():
     assert out == html
 
 
+def test_inject_hero_banner_strips_legacy_inline_duplicate():
+    """Legacy authoring pattern: article whose first body element is a
+    ``<p><img></p>`` wrapper carrying the same image as og:image.
+    inject_hero_banner injects the figure at the top AND removes the
+    inline body duplicate, keeping the new design and dropping the old."""
+    from postbuild_lib.article_furniture import inject_hero_banner
+    html = (
+        '<html><head>'
+        '<meta property="og:image" content="https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp" />'
+        '</head><body>'
+        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+        '<section class="ap-hero"><h1>Bitcoin</h1></section>'
+        '<main><div class="wrap">'
+        '<p><img src="https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp" alt="..." /></p>'
+        '<h2>Insight</h2><p>body</p>'
+        '</div></main></body></html>'
+    )
+    out = inject_hero_banner(html)
+    # The auto-injected figure is present.
+    assert 'class="article-banner"' in out
+    # The inline `<p><img></p>` duplicate has been removed.
+    assert '<p><img src="https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp"' not in out
+    # The image still appears via the article-banner figure; check the
+    # path occurs exactly twice (og:image meta + article-banner figure src).
+    assert out.count("traxer-AIKjbZdNOlw") == 2
+
+
+def test_inject_hero_banner_leaves_unrelated_body_images_alone():
+    """A `<p><img></p>` whose src is NOT the banner is left in place.
+    The strip only fires when the body img matches the og:image path."""
+    from postbuild_lib.article_furniture import inject_hero_banner
+    html = (
+        '<html><head>'
+        '<meta property="og:image" content="https://cloudcdn.pro/stocks/images/banner-A.webp" />'
+        '</head><body>'
+        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+        '<section class="ap-hero"><h1>X</h1></section>'
+        '<main><div class="wrap">'
+        '<p><img src="https://cloudcdn.pro/stocks/images/some-diagram.webp" alt="d" /></p>'
+        '</div></main></body></html>'
+    )
+    out = inject_hero_banner(html)
+    assert 'class="article-banner"' in out
+    assert "banner-A.webp" in out
+    # The unrelated body img survives.
+    assert "some-diagram.webp" in out
+
+
+def test_strip_legacy_inline_banner_helper_branches():
+    """_strip_legacy_inline_banner returns the input unchanged on inputs
+    that don't have the structure it needs: a URL without a path, no
+    </figure> anchor, no <p><img></p> in the body window, or the body
+    img doesn't match the banner path. Each False/no-op branch needs
+    coverage."""
+    from postbuild_lib.article_furniture import _banner_path, strip_legacy_inline_banner
+    # Malformed banner URL.
+    assert _banner_path("not-a-url") is None
+    assert strip_legacy_inline_banner("<figure></figure><p><img src='x' /></p>", "not-a-url") == \
+        "<figure></figure><p><img src='x' /></p>"
+    # No </figure> anchor at all.
+    assert strip_legacy_inline_banner(
+        "<p><img src='/stocks/images/foo.webp' /></p>",
+        "https://cloudcdn.pro/stocks/images/foo.webp",
+    ) == "<p><img src='/stocks/images/foo.webp' /></p>"
+    # </figure> present but no <p><img></p> in the window.
+    in_html = "<figure></figure><h2>heading</h2><p>no image here</p>"
+    assert strip_legacy_inline_banner(
+        in_html,
+        "https://cloudcdn.pro/stocks/images/foo.webp",
+    ) == in_html
+    # </figure> present + <p><img></p> present but src doesn't match.
+    in_html = '<figure></figure><p><img src="https://cloudcdn.pro/stocks/images/other.webp" /></p>'
+    assert strip_legacy_inline_banner(
+        in_html,
+        "https://cloudcdn.pro/stocks/images/foo.webp",
+    ) == in_html
+
+
 def test_inject_lang_switcher_emits_rail_when_alternates_exist():
     import postbuild_lib.article_furniture as af
     real_alternates = af._alternates_for_en_slug
