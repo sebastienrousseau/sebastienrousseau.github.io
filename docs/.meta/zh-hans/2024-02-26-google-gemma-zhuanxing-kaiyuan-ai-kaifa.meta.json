@@ -1,11 +1,11 @@
 {
   "keywords": "Google Gemma, 开源 AI, Gemini, Ollama, macOS, 2B, 7B, 大型语言模型, 合伦理 AI, 企业应用",
-  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
-  "description": "Google Gemma 是开源 AI 模型，配合 Ollama 在 macOS 上运行，为开源 AI 开发带来新格局。",
+  "subtitle": "Google 革命性的开源 AI 模型，旨在为 ML 开发提供可及且合伦理的基础",
   "locale": "zh_CN",
+  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
+  "title": "Google Gemma：转型开源 AI 开发",
+  "banner_alt": "带霓虹灯的未来主义蓝色宇宙飞船",
   "date": "February 26, 2024",
   "language": "zh-Hans",
-  "banner_alt": "带霓虹灯的未来主义蓝色宇宙飞船",
-  "subtitle": "Google 革命性的开源 AI 模型，旨在为 ML 开发提供可及且合伦理的基础",
-  "title": "Google Gemma：转型开源 AI 开发"
+  "description": "Google Gemma 是开源 AI 模型，配合 Ollama 在 macOS 上运行，为开源 AI 开发带来新格局。"
 }

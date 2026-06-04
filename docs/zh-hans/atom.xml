@@ -4,13 +4,13 @@
   <link href="https://sebastienrousseau.com/zh-hans/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/zh-hans/"/>
   <id>https://sebastienrousseau.com/zh-hans/</id>
-  <updated>2026-06-04T14:29:02+00:00</updated>
+  <updated>2026-06-04T16:44:39+00:00</updated>
   <entry>
     <title>2026 年的多通道银行:卡、A2A、稳定币、RTP、FedNow 与 Open Banking 合于一套战略</title>
     <link href="https://sebastienrousseau.com/zh-hans/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
     <id>https://sebastienrousseau.com/zh-hans/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
-    <updated>2026-06-04T14:29:02+00:00</updated>
-    <published>2026-06-04T14:29:02+00:00</published>
+    <updated>2026-06-04T16:44:39+00:00</updated>
+    <published>2026-06-04T16:44:39+00:00</published>
     <summary>FedNow 要求 7×24 小时预筹流动性。ACH 廉价但是 T+1。USDC 原子结算却需要钱包基础设施。2026 年的多通道银行按成本、终局性与流动性成本逐笔路由,由读取 ISO 20022 pacs.008 的编排引擎作出决策。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -18,8 +18,8 @@
     <title>后量子支付基础设施:为何银行可能替换而非改造传统通道</title>
     <link href="https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
     <id>https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-06-04T14:29:02+00:00</updated>
-    <published>2026-06-04T14:29:02+00:00</published>
+    <updated>2026-06-04T16:44:39+00:00</updated>
+    <published>2026-06-04T16:44:39+00:00</published>
     <summary>后量子密码学迫使支付通道作出二选一:在从未为 ML-KEM 与 ML-DSA 适配的 SWIFT MT 与 ISO 20022 信封内改造 RSA/ECC,或以密码敏捷的基础设施替换。架构师必须在 HNDL 转为运营损失前决断。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>

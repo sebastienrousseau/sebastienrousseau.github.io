@@ -1,11 +1,11 @@
 {
+  "subtitle": "Apple Silicon üzerinde Whisper ile düşük gecikmeli konuşma tanıma",
   "language": "tr-TR",
-  "title": "macOS'ta OpenAI Whisper ile gerçek zamanlı konuşma tanımada devrim",
-  "description": "macOS'ta gerçek zamanlı konuşma tanıma performansı için OpenAI Whisper ile Metal Performance Shaders'ı birleştirme.",
-  "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
   "banner_alt": "Ekran görüntüsü gerçek zamanlı transkripsiyon",
   "keywords": "Whisper, OpenAI, konuşma tanıma, macOS, Metal Performance Shaders, Apple Silicon",
+  "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
   "date": "March 12, 2024",
+  "title": "macOS'ta OpenAI Whisper ile gerçek zamanlı konuşma tanımada devrim",
   "locale": "tr_TR",
-  "subtitle": "Apple Silicon üzerinde Whisper ile düşük gecikmeli konuşma tanıma"
+  "description": "macOS'ta gerçek zamanlı konuşma tanıma performansı için OpenAI Whisper ile Metal Performance Shaders'ı birleştirme."
 }

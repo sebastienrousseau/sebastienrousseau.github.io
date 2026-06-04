@@ -1,11 +1,11 @@
 {
-  "title": "Standard tokenów ERC-20",
-  "subtitle": "Wspólny interfejs napędzający ekosystem tokenów Ethereum",
-  "date": "Jan 24, 2018",
-  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
-  "banner_alt": "Logo Ethereum z reprezentacjami tokenów",
-  "locale": "pl_PL",
-  "language": "pl-PL",
   "keywords": "ERC-20, Ethereum, tokeny, smart kontrakty, kryptowaluta, ICO, blockchain",
-  "description": "Standard ERC-20 definiuje wspólny zestaw zasad dla tokenów wymienialnych w sieci Ethereum."
+  "language": "pl-PL",
+  "locale": "pl_PL",
+  "description": "Standard ERC-20 definiuje wspólny zestaw zasad dla tokenów wymienialnych w sieci Ethereum.",
+  "date": "Jan 24, 2018",
+  "banner_alt": "Logo Ethereum z reprezentacjami tokenów",
+  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
+  "title": "Standard tokenów ERC-20",
+  "subtitle": "Wspólny interfejs napędzający ekosystem tokenów Ethereum"
 }
