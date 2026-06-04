@@ -4,13 +4,13 @@
   <link href="https://sebastienrousseau.com/th/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/th/"/>
   <id>https://sebastienrousseau.com/th/</id>
-  <updated>2026-06-04T16:44:39+00:00</updated>
+  <updated>2026-06-04T18:08:19+00:00</updated>
   <entry>
     <title>ธนาคารหลายรางในปี 2026: บัตร A2A สเตเบิลคอยน์ RTP FedNow และ Open Banking ในกลยุทธ์เดียว</title>
     <link href="https://sebastienrousseau.com/th/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
     <id>https://sebastienrousseau.com/th/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
-    <updated>2026-06-04T16:44:39+00:00</updated>
-    <published>2026-06-04T16:44:39+00:00</published>
+    <updated>2026-06-04T18:08:19+00:00</updated>
+    <published>2026-06-04T18:08:19+00:00</published>
     <summary>FedNow ต้องการสภาพคล่องที่จัดสรรล่วงหน้าแบบ 24/7 ACH ราคาถูกแต่ T+1 USDC ชำระแบบอะตอมแต่ต้องมีกระเป๋าเงิน ธนาคารหลายรางปี 2026 กำหนดเส้นทางทุกรายการตามต้นทุน ความเด็ดขาด และต้นทุนสภาพคล่อง โดยเอนจินที่อ่าน ISO 20022 pacs.008</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -18,8 +18,8 @@
     <title>โครงสร้างพื้นฐาน PQC การชำระเงิน: เหตุใดธนาคารจึงควรแทนที่ราง ดั้งเดิม ไม่ใช่ปรับเปลี่ยน</title>
     <link href="https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
     <id>https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-06-04T16:44:39+00:00</updated>
-    <published>2026-06-04T16:44:39+00:00</published>
+    <updated>2026-06-04T18:08:19+00:00</updated>
+    <published>2026-06-04T18:08:19+00:00</published>
     <summary>การเข้ารหัสยุคหลังควอนตัมบีบให้ราง การชำระเงินเลือกแบบทวิภาค: ปรับเปลี่ยน RSA/ECC ภายในซอง SWIFT MT และ ISO 20022 ที่ไม่เคยถูกออกแบบสำหรับ ML-KEM และ ML-DSA หรือแทนที่ด้วยโครงสร้างพื้นฐานที่คล่องตัวด้านการเข้ารหัส</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>

@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Diagrama pragului de qubiți pentru algoritmul lui Shor. Placă de circuit pentru calcul cuantic cu modele de lumină albastră",
-  "subtitle": "Un nou studiu sugerează că algoritmul lui Shor ar putea rula pe doar 10.000 de qubiți. Implicațiile pentru criptografie sunt greu de ignorat.",
-  "date": "Apr 11, 2026",
-  "language": "ro-RO",
-  "description": "Algoritmul lui Shor ar putea rula pe doar 10.000 de qubiți. RSA, ECC și termenele pentru migrarea post-cuantică se accelerează rapid. Iată de ce.",
-  "title": "Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk",
   "locale": "ro_RO",
+  "banner_alt": "Diagrama pragului de qubiți pentru algoritmul lui Shor. Placă de circuit pentru calcul cuantic cu modele de lumină albastră",
+  "date": "Apr 11, 2026",
+  "subtitle": "Un nou studiu sugerează că algoritmul lui Shor ar putea rula pe doar 10.000 de qubiți. Implicațiile pentru criptografie sunt greu de ignorat.",
+  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
   "keywords": "calcul cuantic, algoritmul lui Shor, 10000 qubiți, criptografie post-cuantică, RSA-2048, criptografie cu curbe eliptice, qubiți cu atomi neutri, corecție cuantică a erorilor, agilitate criptografică, calendarul amenințărilor cuantice",
-  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp"
+  "language": "ro-RO",
+  "title": "Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk",
+  "description": "Algoritmul lui Shor ar putea rula pe doar 10.000 de qubiți. RSA, ECC și termenele pentru migrarea post-cuantică se accelerează rapid. Iată de ce."
 }

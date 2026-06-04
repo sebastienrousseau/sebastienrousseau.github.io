@@ -1,11 +1,11 @@
 {
   "locale": "nl_NL",
-  "banner_alt": "Banner van Le Chat van Mistral AI",
-  "language": "nl-NL",
   "title": "Le Chat van Mistral AI: een nieuw tijdperk in conversatie-AI",
   "banner": "https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp",
-  "subtitle": "Een Europese uitdager in de wereld van grote taalmodellen",
-  "description": "Le Chat van Mistral AI luidt een nieuw tijdperk in voor conversatie-AI in Europa, met sterke prestaties en transparante modellen.",
   "date": "March 04, 2024",
-  "keywords": "Le Chat, Mistral AI, conversatie-AI, LLM, Europa, open source"
+  "subtitle": "Een Europese uitdager in de wereld van grote taalmodellen",
+  "keywords": "Le Chat, Mistral AI, conversatie-AI, LLM, Europa, open source",
+  "banner_alt": "Banner van Le Chat van Mistral AI",
+  "language": "nl-NL",
+  "description": "Le Chat van Mistral AI luidt een nieuw tijdperk in voor conversatie-AI in Europa, met sterke prestaties en transparante modellen."
 }

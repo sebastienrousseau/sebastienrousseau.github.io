@@ -1,11 +1,11 @@
 {
-  "subtitle": "Token ERC-20, smart contract Ethereum dan standardisasi aset digital.",
-  "locale": "id_ID",
-  "banner_alt": "Laptop yang dimatikan di atas meja kayu berwarna coklat",
-  "language": "id-ID",
-  "description": "ERC-20 adalah jenis token paling umum di blockchain Ethereum, sering disebut kontrak digital smart contract yang merevolusi cara aset digital diperdagangkan.",
+  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
   "keywords": "ethereum, erc20, eip, token, kontrak, blockchain, mata uang kripto, smart-token, solidity",
   "date": "Jan 24, 2018",
+  "subtitle": "Token ERC-20, smart contract Ethereum dan standardisasi aset digital.",
+  "description": "ERC-20 adalah jenis token paling umum di blockchain Ethereum, sering disebut kontrak digital smart contract yang merevolusi cara aset digital diperdagangkan.",
+  "banner_alt": "Laptop yang dimatikan di atas meja kayu berwarna coklat",
+  "locale": "id_ID",
   "title": "[ID DRAFT] ERC-20: The Ethereum Token Interface That Changed the World",
-  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
+  "language": "id-ID"
 }

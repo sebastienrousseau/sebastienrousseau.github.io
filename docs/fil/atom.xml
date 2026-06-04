@@ -4,13 +4,13 @@
   <link href="https://sebastienrousseau.com/fil/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/fil/"/>
   <id>https://sebastienrousseau.com/fil/</id>
-  <updated>2026-06-04T16:44:38+00:00</updated>
+  <updated>2026-06-04T18:08:19+00:00</updated>
   <entry>
     <title>Ang Agentic AI Index para sa mga Bangko sa 2026: Pagsukat ng Autonomy, Pamamahala, Auditability, at Epekto sa Negosyo</title>
     <link href="https://sebastienrousseau.com/fil/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/"/>
     <id>https://sebastienrousseau.com/fil/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</id>
-    <updated>2026-06-04T16:44:38+00:00</updated>
-    <published>2026-06-04T16:44:38+00:00</published>
+    <updated>2026-06-04T18:08:19+00:00</updated>
+    <published>2026-06-04T18:08:19+00:00</published>
     <summary>Isang index-style framework para sa pagsukat ng agentic AI readiness sa mga bangko, sumasaklaw sa autonomy, pamamahala, auditability, pagiging maaasahan, mga kontrol, at halaga sa negosyo.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -18,8 +18,8 @@
     <title>Ang 2026 Banking Infrastructure Index: Pagsukat ng Katatagan para sa Agentic AI, Quantum-Safe Security, Cloud-Native na Katatagan, at Wholesale Payments</title>
     <link href="https://sebastienrousseau.com/fil/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/"/>
     <id>https://sebastienrousseau.com/fil/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</id>
-    <updated>2026-06-04T16:44:38+00:00</updated>
-    <published>2026-06-04T16:44:38+00:00</published>
+    <updated>2026-06-04T18:08:19+00:00</updated>
+    <published>2026-06-04T18:08:19+00:00</published>
     <summary>Isang banking infrastructure index para sa 2026 na inspirado ng Stanford AI Index, sumusukat ng katatagan sa agentic AI, quantum-safe security, cloud-native na katatagan, at pandaigdigang wholesale payments.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -27,8 +27,8 @@
     <title>Ang Multi-Rail Bank sa 2026: Cards, A2A, Stablecoins, RTP, FedNow, at Open Banking sa Isang Estratehiya</title>
     <link href="https://sebastienrousseau.com/fil/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
     <id>https://sebastienrousseau.com/fil/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
-    <updated>2026-06-04T16:44:38+00:00</updated>
-    <published>2026-06-04T16:44:38+00:00</published>
+    <updated>2026-06-04T18:08:19+00:00</updated>
+    <published>2026-06-04T18:08:19+00:00</published>
     <summary>Hinihingi ng FedNow ang pre-funded 24/7 liquidity. Mura ang ACH ngunit T+1. Atomic ang USDC ngunit kailangan ng wallet infrastructure. Ruruta ng 2026 multi-rail bank ang bawat bayad ayon sa gastos, finality, at liquidity cost — sa orchestration engine na bumabasa ng ISO 20022 pacs.008.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -36,8 +36,8 @@
     <title>Post-Quantum Payments Infrastructure: Bakit Maaaring Palitan ng mga Bangko ang Legacy Rails sa Halip na I-adapt</title>
     <link href="https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
     <id>https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-06-04T16:44:38+00:00</updated>
-    <published>2026-06-04T16:44:38+00:00</published>
+    <updated>2026-06-04T18:08:19+00:00</updated>
+    <published>2026-06-04T18:08:19+00:00</published>
     <summary>Pinipili ng post-quantum cryptography ang payment rails: adaptasyon ng RSA/ECC sa SWIFT MT at ISO 20022 envelopes na hindi sukat sa ML-KEM at ML-DSA, o pagpapalit sa crypto-agile infrastructure. Magdesisyon bago maging operational loss ang HNDL.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -45,8 +45,8 @@
     <title>Digital Assets sa 2026: Transisyon ng Imprastraktura na Hindi Dapat Antalahin</title>
     <link href="https://sebastienrousseau.com/fil/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
     <id>https://sebastienrousseau.com/fil/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
-    <updated>2026-06-04T16:44:38+00:00</updated>
-    <published>2026-06-04T16:44:38+00:00</published>
+    <updated>2026-06-04T18:08:19+00:00</updated>
+    <published>2026-06-04T18:08:19+00:00</published>
     <summary>Hindi na inobasyon ang digital assets, kundi tanong ng arkitektura ng settlement, custody, at balance sheet. Disenyo ng imprastraktura sa ilalim ng istrukturang kawalang-katiyakan ang estratehikong gawain ng bangko.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>

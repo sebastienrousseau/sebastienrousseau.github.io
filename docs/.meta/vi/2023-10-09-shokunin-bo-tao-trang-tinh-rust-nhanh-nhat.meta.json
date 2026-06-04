@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Biểu ngữ Static Site Generator",
-  "description": "Static Site Generator là bộ tạo trang tĩnh viết bằng Rust, được tối ưu hoá cho hiệu năng, khả năng tiếp cận và SEO. Builds cực nhanh với hỗ trợ JSON-LD hạng nhất.",
   "locale": "vi_VN",
+  "description": "Static Site Generator là bộ tạo trang tĩnh viết bằng Rust, được tối ưu hoá cho hiệu năng, khả năng tiếp cận và SEO. Builds cực nhanh với hỗ trợ JSON-LD hạng nhất.",
   "subtitle": "Tốc độ, an toàn và đơn giản cho web hiện đại",
-  "language": "vi-VN",
+  "banner": "https://cloudcdn.pro/clients/shokunin/v1/banners/banner-shokunin.svg",
   "date": "October 9, 2023",
   "keywords": "Static Site Generator, SSG, Rust, bộ tạo trang tĩnh, hiệu năng, SEO, JSON-LD, mã nguồn mở",
-  "banner": "https://cloudcdn.pro/clients/shokunin/v1/banners/banner-shokunin.svg",
-  "title": "Static Site Generator: bộ tạo trang tĩnh dựa trên Rust nhanh nhất"
+  "title": "Static Site Generator: bộ tạo trang tĩnh dựa trên Rust nhanh nhất",
+  "banner_alt": "Biểu ngữ Static Site Generator",
+  "language": "vi-VN"
 }
