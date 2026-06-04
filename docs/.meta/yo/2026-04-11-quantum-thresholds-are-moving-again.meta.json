@@ -1,11 +1,11 @@
 {
-  "subtitle": "Ìwádìí tuntun dábàá pé algorithmù Shor lè ṣiṣẹ́ lórí qubit 10,000 péré. Àwọn ìpadà fún cryptography ṣòro láti fojú fò.",
   "banner_alt": "Àwòrán ìlẹ̀sẹ̀ qubit fún algorithmù Shor. Bọ́ọ̀dù circuit ìṣirò quantum pẹ̀lú àwọn àpẹẹrẹ ìmọlẹ̀ búlúù",
-  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
-  "language": "yo-NG",
-  "date": "Apr 11, 2026",
-  "title": "Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk",
+  "subtitle": "Ìwádìí tuntun dábàá pé algorithmù Shor lè ṣiṣẹ́ lórí qubit 10,000 péré. Àwọn ìpadà fún cryptography ṣòro láti fojú fò.",
   "description": "Algorithmù Shor lè ṣiṣẹ́ lórí qubit 10,000 péré. RSA, ECC àti àkókò ìṣípò sí post-quantum cryptography ń yára yí padà. Èyí ni ìdí rẹ̀.",
   "keywords": "ìṣirò quantum, algorithmù Shor, qubit 10000, cryptography post-quantum, RSA-2048, cryptography elliptic curve, qubit atom didoju, àtúnṣe àṣìṣe quantum, ìrọ̀rùn cryptography, àkókò ìhalẹ̀ quantum",
-  "locale": "yo_NG"
+  "date": "Apr 11, 2026",
+  "language": "yo-NG",
+  "locale": "yo_NG",
+  "title": "Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk",
+  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp"
 }

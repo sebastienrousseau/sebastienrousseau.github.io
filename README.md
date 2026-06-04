@@ -42,7 +42,7 @@
 - [Pipeline overview](#pipeline-overview) — Mermaid flowchart of every stage
 - [Build stages](#build-stages) — what each script does, in order
 - [Inputs](#inputs) and [Outputs](#outputs)
-- [Postbuild passes](#postbuild-passes) — the 22 transforms in `postbuild.py`
+- [Postbuild passes](#postbuild-passes) — the 25 transforms in `postbuild.py`
 
 **Internationalisation**
 
@@ -66,7 +66,7 @@
 **Operational**
 
 - [Development](#development) — local QA recipe, `make` targets
-- [CI gates](#ci-gates) — all 14 checks every push must clear
+- [CI gates](#ci-gates) — all 13 checks every push must clear
 - [Deployment](#deployment) — GitHub Pages + Cloudflare
 - [When this repo is not what you want](#when-this-repo-is-not-what-you-want)
 
@@ -98,7 +98,7 @@ A clean build finishes in ~12 seconds on a modern laptop and emits **1850 HTML p
 | Tool | Version | Why |
 |---|---|---|
 | Rust toolchain | stable | `ssg` (Static Site Generator) is a Rust binary; install via `cargo install ssg --locked` |
-| Python | 3.11+ | Postbuild pipeline (`scripts/*.py`) — 37 modules, 100% test coverage |
+| Python | 3.12 | Postbuild pipeline (`scripts/*.py`) — 37 modules, 100% test coverage. Pinned in `mise.toml`. |
 | `markdown-it-py` | latest | FR-canonical translation pipeline parser |
 | Node.js | 20+ | Cloudflare Worker tests (`workers/test_lang_router.mjs`), pa11y CI |
 | `gh` CLI | optional | Repo administration, CI inspection |
@@ -110,8 +110,8 @@ A clean build finishes in ~12 seconds on a modern laptop and emits **1850 HTML p
 ```
 sebastienrousseau.github.io/
 ├── _posts/ # Source content
-│ ├── *.md # 61 English posts (44 dated + 17 static)
-│ └── <lang>/*.md # 1189 translated posts (44 × 27 langs)
+│ ├── *.md # 83 English posts (65 dated + 18 static)
+│ └── <lang>/*.md # 1,728 translated posts (64 × 27 langs)
 ├── _layouts/ # 11 HTML layouts
 ├── _data/
 │ ├── gh-stats.json # Nightly GitHub repo stats
@@ -122,7 +122,7 @@ sebastienrousseau.github.io/
 │ ├── postbuild.py # Single-page orchestrator (~700 lines)
 │ ├── postbuild_lib/ # 6 modules — schemas, seo, output, …
 │ └── test_*.py # 13 in-repo CI gates
-├── tests/ # 388 pytest unit tests, 100% coverage on postbuild_lib
+├── tests/ # 716 test functions / 27,604 parametrized cases, 100% coverage on postbuild_lib
 ├── workers/ # Cloudflare Worker — locale routing + edge security headers
 │ ├── lang-router.js # the Worker (cookie + ?lang only; no A-L sniff)
 │ └── test_lang_router.mjs # 43 tests, 100% line/branch/func coverage
@@ -131,7 +131,7 @@ sebastienrousseau.github.io/
 ├── .well-known/ # AI plugin manifest, OpenAPI schema, OpenPGP WKD
 ├── .github/workflows/ # 6 CI workflows
 ├── public/ # Canonical build output — 1850 HTML pages
-└── docs/ # GitHub Pages root (rsync mirror of public/)
+└── docs/ # GitHub Pages root (rsync mirror of public/ on every build — NOT documentation; the docs that describe this repo live in /doc/)
 ```
 
 ---
@@ -142,8 +142,8 @@ sebastienrousseau.github.io/
 %%{init: {'theme':'neutral'} }%%
 flowchart TB
  subgraph SRC["Source"]
- EN["_posts/*.md<br/><i>61 English</i>"]
- T["_posts/<lang>/*.md<br/><i>1189 translations</i>"]
+ EN["_posts/*.md<br/><i>83 English</i>"]
+ T["_posts/<lang>/*.md<br/><i>1,728 translations</i>"]
  L["_layouts/*.html<br/><i>11 layouts</i>"]
  D["_data/i18n/<lang>/<br/><i>28 locales</i>"]
  end
@@ -155,7 +155,7 @@ flowchart TB
  BF["build_lang_feeds.py"]
  BA["build_agent_api.py"]
  BL["build_lead_magnets.py"]
- PB["postbuild.py<br/><i>18 passes</i>"]
+ PB["postbuild.py<br/><i>25 passes</i>"]
  end
 
  subgraph GATES["14 CI gates"]
@@ -225,8 +225,8 @@ A failure on any gate aborts the build and surfaces in CI as a red X.
 ## Inputs
 
 ```
-_posts/*.md # 61 English source documents (44 dated + 17 static)
-_posts/<lang>/*.md # 1189 translations (27 langs × ~44 posts)
+_posts/*.md # 83 English source documents (65 dated + 18 static)
+_posts/<lang>/*.md # 1,728 translations (27 langs × 64 posts)
 _layouts/*.html # 11 page layouts
 _data/i18n/<lang>/*.json # 11 JSON files × 28 locales — strings, labels,
  # patches, slugs, author, topics, …
@@ -252,7 +252,7 @@ public/.well-known/ # ai-plugin.json, openapi.json, openpgpkey/
 
 ## Postbuild passes
 
-`scripts/postbuild.py` is a single-page orchestrator that applies 22 independent transforms per HTML page. The orchestration sequence is order-sensitive (e.g. `inject_word_count` must run before `inject_article_furniture` which renders the word count into the meta bar):
+`scripts/postbuild.py` is a single-page orchestrator that applies 25 independent transforms per HTML page. The orchestration sequence is order-sensitive (e.g. `inject_word_count` must run before `inject_article_furniture` which renders the word count into the meta bar):
 
 ```mermaid
 %%{init: {'theme':'neutral'} }%%
@@ -533,7 +533,7 @@ Specific mitigations:
 - **Harvest-now-decrypt-later quantum risk** — every TLS session uses ML-KEM-768 hybrid key exchange. An adversary recording today's traffic cannot retroactively decrypt it with a future cryptographically relevant quantum computer.
 - **Supply-chain integrity** — every page ships a CycloneDX SBOM, every CSS/JS asset carries a real SHA-256 SRI, and commits are signed. Branch protection requires PRs + green CI before merge.
 - **XSS / injection** — strict CSP (no `unsafe-inline`), per-page JSON-LD sha256 allowlist, `'inline-speculation-rules'` keyword authorises only the Speculation Rules block. `object-src 'none'`, `base-uri 'self'`.
-- **Disclosure channel** — OpenPGP Web Key Directory (WKD) at `.well-known/openpgpkey/` for researcher contact; full security policy via [`SECURITY.md`](https://github.com/sebastienrousseau/dotfiles/blob/main/.github/SECURITY.md).
+- **Disclosure channel** — OpenPGP Web Key Directory (WKD) at `.well-known/openpgpkey/` for researcher contact; machine-readable policy at [`.well-known/security.txt`](https://sebastienrousseau.com/.well-known/security.txt) per RFC 9116; full threat model in [`doc/SECURITY.md`](doc/SECURITY.md) (top-level [`SECURITY.md`](SECURITY.md) delegates to it).
 
 ---
 
@@ -787,7 +787,7 @@ For a general-purpose Rust SSG with theming, see [Static Site Generator](https:/
 | `_data/gh-stats.json` | Nightly snapshot of GitHub repo stats consumed by `postbuild_lib/github_stats.py`. |
 | `scripts/_lang_registry.py` | Single source of truth for the 28-language matrix. |
 | `requirements.txt` | Python runtime dependencies. |
-| `pyproject.toml` | Ruff + pytest configuration, MSRV-equivalent for Python (3.11+). |
+| `pyproject.toml` | Ruff + pytest configuration, MSRV-equivalent for Python (3.12, pinned via `mise.toml`). |
 
 ---
 

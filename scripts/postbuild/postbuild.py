@@ -825,11 +825,13 @@ from postbuild_lib.output import (  # noqa: F401 — re-exports
     fix_xml_feeds,
     refresh_sitemap_lastmod,
     shrink_news_sitemap,
+    write_humans,
     write_json_feed,
     write_llms_ctx_txt,
     write_llms_full_txt,
     write_llms_txt,
     write_robots,
+    write_security_txt,
 )
 from postbuild_lib.schemas import (
     inject_news_article,
@@ -1282,6 +1284,10 @@ def _finalize_build() -> tuple[int, bool, bool, bool, int, int, int, int]:
     # article's actual last_reviewed date. Counted into sitemap_patched.
     sitemap_patched += dedupe_sitemap_index_html(PUBLIC / "sitemap.xml")
     robots_written = write_robots(PUBLIC)
+    # humans.txt + root security.txt: the SSG emits empty placeholders;
+    # copy through from the repo-root sources so both land non-empty.
+    write_humans(PUBLIC, Path("."))
+    write_security_txt(PUBLIC, Path("."))
     llms_written = write_llms_txt(PUBLIC)
     llms_ctx_written = write_llms_ctx_txt(PUBLIC)
     llms_full_written = write_llms_full_txt(PUBLIC)

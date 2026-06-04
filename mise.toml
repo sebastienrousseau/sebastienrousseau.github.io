@@ -1,0 +1,23 @@
+# mise (https://mise.jdx.dev) — codified toolchain for this repo.
+#
+# Run `mise install` to provision the exact versions used in CI and on
+# Sebastien's Mac. Matches the toolchain at HEAD; bump alongside any
+# matrix change in .github/workflows/ci.yml.
+
+[tools]
+python = "3.12"
+node   = "24"
+rust   = "stable"
+
+# ssg (Shokunin) is installed from crates.io rather than via mise.
+# It tracks the latest published version on crates.io — keep here
+# documented for reproducibility, not for `mise install` to act on.
+#
+#   cargo install ssg --version 0.0.39
+#
+# Pin the version in build.sh / publish-today.md when reproducibility
+# matters more than always-latest.
+
+[env]
+# Tells Python tooling to honour the repo's pyproject.toml settings.
+PYTHONDONTWRITEBYTECODE = "1"

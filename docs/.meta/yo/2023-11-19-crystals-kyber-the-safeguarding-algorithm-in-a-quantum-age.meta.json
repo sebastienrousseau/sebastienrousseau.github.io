@@ -1,11 +1,11 @@
 {
-  "locale": "yo_NG",
-  "banner_alt": "Kọmputa quantum òde-òní tí ó dára",
+  "subtitle": "CRYSTALS-Kyber, ìdéédé NIST FIPS 203 fún encapsulation bọtini lẹ́yìn-quantum.",
   "date": "Nov 19, 2023",
-  "language": "yo-NG",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
   "title": "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age",
   "description": "Ṣawari bí CRYSTALS-Kyber, algorithm cryptography tí ó lè dojú quantum, ṣe ń yí agbaye cryptography padà tí ó sì ń múra wa sílẹ̀ fún àkókò quantum.",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
+  "locale": "yo_NG",
+  "banner_alt": "Kọmputa quantum òde-òní tí ó dára",
   "keywords": "quantum computing, cryptography tí ó lè dojú quantum, CRYSTALS-Kyber, cryptography, aabo, ifowopamọ, inawo, encryption, aabo data, ọjọ-iwájú dúró",
-  "subtitle": "CRYSTALS-Kyber, ìdéédé NIST FIPS 203 fún encapsulation bọtini lẹ́yìn-quantum."
+  "language": "yo-NG"
 }

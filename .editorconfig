@@ -1,0 +1,31 @@
+# EditorConfig — https://editorconfig.org
+# Applies across editors that understand the .editorconfig spec
+# (VS Code, JetBrains, Neovim with editorconfig plugin, Sublime).
+
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+[*.{py,sh,bash,zsh,fish}]
+indent_size = 4
+
+[*.py]
+# Match ruff / black defaults.
+max_line_length = 100
+
+[*.{md,markdown}]
+# Markdown frontmatter + content tolerates trailing space for hard breaks.
+trim_trailing_whitespace = false
+
+[*.{html,htm}]
+# Layouts in _layouts/ are line-sensitive when postbuild patches them.
+indent_size = 2
+
+[Makefile]
+indent_style = tab

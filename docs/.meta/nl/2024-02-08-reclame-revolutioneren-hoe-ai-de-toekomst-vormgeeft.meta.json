@@ -1,11 +1,11 @@
 {
   "banner_alt": "Visualisatie van AI-gestuurde reclamecreatie",
-  "title": "Reclame revolutioneren: hoe AI de toekomst vormgeeft",
+  "description": "Hoe AI de creatie, targeting en meting van reclame hervormt, en welke uitdagingen dit oplevert voor merken en consumenten.",
   "keywords": "AI, reclame, marketing, generatieve AI, personalisatie, targeting",
-  "locale": "nl_NL",
+  "language": "nl-NL",
+  "title": "Reclame revolutioneren: hoe AI de toekomst vormgeeft",
   "date": "February 08, 2024",
   "subtitle": "Hoe AI de creatie, targeting en meting van reclame hervormt",
-  "language": "nl-NL",
   "banner": "https://cloudcdn.pro/stocks/images/advertising-ai.webp",
-  "description": "Hoe AI de creatie, targeting en meting van reclame hervormt, en welke uitdagingen dit oplevert voor merken en consumenten."
+  "locale": "nl_NL"
 }

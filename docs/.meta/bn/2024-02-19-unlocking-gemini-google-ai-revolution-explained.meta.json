@@ -1,11 +1,11 @@
 {
-  "description": "Google-এর Gemini 1.5 কনটেক্সট উইন্ডো ১ মিলিয়ন টোকেনের বেশি স্কেল করে। রিট্রিভাল-অগমেন্টেড ফিনান্সে এটি কী সম্ভাবনা উন্মোচন করে এবং জানার মতো ট্রেড-অফগুলি কী।",
   "keywords": "Gemini 1.5, Google AI, Mixture-of-Experts আর্কিটেকচার, কম্পিউটেশনাল দক্ষতা, কনটেক্সট উইন্ডো সম্প্রসারণ, AI উদ্ভাবন, ডেটা বিশ্লেষণ রূপান্তর, ইন-কনটেক্সট লার্নিং, AI ব্যবহারের ক্ষেত্র, প্রযুক্তি বিপ্লব",
-  "title": "Unlocking Gemini 1.5: Google's AI Revolution Explained",
-  "language": "bn-BD",
-  "banner_alt": "AI নেটওয়ার্কের বিমূর্ত ভিজুয়ালাইজেশন, Gemini 1.5-এর সক্ষমতা উপস্থাপন করছে",
+  "description": "Google-এর Gemini 1.5 কনটেক্সট উইন্ডো ১ মিলিয়ন টোকেনের বেশি স্কেল করে। রিট্রিভাল-অগমেন্টেড ফিনান্সে এটি কী সম্ভাবনা উন্মোচন করে এবং জানার মতো ট্রেড-অফগুলি কী।",
   "locale": "bn_BD",
+  "language": "bn-BD",
   "date": "Feb 19, 2024",
-  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
-  "subtitle": "Google-এর সর্বশেষ AI অগ্রগতির গভীর বিশ্লেষণ"
+  "banner_alt": "AI নেটওয়ার্কের বিমূর্ত ভিজুয়ালাইজেশন, Gemini 1.5-এর সক্ষমতা উপস্থাপন করছে",
+  "subtitle": "Google-এর সর্বশেষ AI অগ্রগতির গভীর বিশ্লেষণ",
+  "title": "Unlocking Gemini 1.5: Google's AI Revolution Explained",
+  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp"
 }
