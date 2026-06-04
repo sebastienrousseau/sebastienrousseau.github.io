@@ -277,6 +277,80 @@ def test_write_robots_idempotent(tmp_path):
 
 
 # ---------------------------------------------------------------------------
+# write_humans + write_security_txt — copy-through emitters that survive
+# Shokunin's empty-placeholder auxiliary files.
+# ---------------------------------------------------------------------------
+
+
+def test_write_humans_copies_source_into_public(tmp_path):
+    """write_humans copies the repo-root humans.txt over an empty SSG placeholder."""
+    from postbuild_lib.output import write_humans
+    source_root = tmp_path / "src"
+    source_root.mkdir()
+    public = tmp_path / "public"
+    public.mkdir()
+    body = "/* TEAM */\n  Author: Sebastien Rousseau\n"
+    (source_root / "humans.txt").write_text(body, encoding="utf-8")
+    # Empty placeholder, as Shokunin would emit.
+    (public / "humans.txt").write_text("", encoding="utf-8")
+
+    assert write_humans(public, source_root) is True
+    assert (public / "humans.txt").read_text(encoding="utf-8") == body
+
+
+def test_write_humans_idempotent(tmp_path):
+    """Second call with identical contents returns False (no-op)."""
+    from postbuild_lib.output import write_humans
+    source_root = tmp_path / "src"
+    source_root.mkdir()
+    public = tmp_path / "public"
+    public.mkdir()
+    (source_root / "humans.txt").write_text("body\n", encoding="utf-8")
+    assert write_humans(public, source_root) is True
+    assert write_humans(public, source_root) is False
+
+
+def test_write_humans_missing_source_is_noop(tmp_path):
+    """If the source file doesn't exist, the emitter is a no-op (False)."""
+    from postbuild_lib.output import write_humans
+    public = tmp_path / "public"
+    public.mkdir()
+    assert write_humans(public, tmp_path / "missing") is False
+
+
+def test_write_security_txt_copies_source_into_public(tmp_path):
+    """write_security_txt mirrors write_humans for the root security.txt."""
+    from postbuild_lib.output import write_security_txt
+    source_root = tmp_path / "src"
+    source_root.mkdir()
+    public = tmp_path / "public"
+    public.mkdir()
+    body = (
+        "Contact: mailto:sebastian.rousseau@gmail.com\n"
+        "Expires: 2027-06-04T00:00:00.000Z\n"
+    )
+    (source_root / "security.txt").write_text(body, encoding="utf-8")
+    (public / "security.txt").write_text("", encoding="utf-8")
+
+    assert write_security_txt(public, source_root) is True
+    assert (public / "security.txt").read_text(encoding="utf-8") == body
+
+
+def test_write_security_txt_idempotent_and_missing(tmp_path):
+    """Second call returns False; missing source returns False."""
+    from postbuild_lib.output import write_security_txt
+    source_root = tmp_path / "src"
+    source_root.mkdir()
+    public = tmp_path / "public"
+    public.mkdir()
+    (source_root / "security.txt").write_text("body\n", encoding="utf-8")
+    assert write_security_txt(public, source_root) is True
+    assert write_security_txt(public, source_root) is False
+    # Distinct call: missing source returns False.
+    assert write_security_txt(public, tmp_path / "missing") is False
+
+
+# ---------------------------------------------------------------------------
 # Stylesheet sanitizer — `_sanitize_link_tag` + `hoist_body_link_stylesheets`
 # ---------------------------------------------------------------------------
 

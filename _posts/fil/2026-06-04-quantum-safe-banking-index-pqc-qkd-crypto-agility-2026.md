@@ -156,8 +156,6 @@ Ang kapani-paniwalang quantum readiness scorecard ay nangangailangan ng pagsubay
 
 ## Nagsisimula ang Migration sa Ledger ng Cryptography
 
-![Larawan ng control-room dashboard na nagmamapa ng cryptographic primitives sa mga TLS endpoint, HSM partition, certificate authority, at long-lived data archive ng isang bangko — ang visual register ng Cryptographic Bill of Materials.](https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80)
-
 Naunawaan na sa puntong ito ang sequence ng migration. Ang bawat gate ay nagbibigay ng ebidensiyang nagtutulak sa susunod; ang paglaktaw o pag-compress ng gate ang gumagawa ng emergency re-platforming risk na lumalabas sa failure column ng Index Architecture.
 
 ```mermaid

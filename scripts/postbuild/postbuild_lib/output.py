@@ -191,6 +191,41 @@ def write_robots(public: Path) -> bool:
 
 
 # ---------------------------------------------------------------------------
+# 6a-ii. humans.txt + security.txt — copy the source files into public/
+# ---------------------------------------------------------------------------
+#
+# Shokunin emits empty placeholder humans.txt + security.txt at the site root
+# regardless of source. The canonical RFC-9116 disclosure file lives at
+# /.well-known/security.txt and the human-readable colophon at /humans.txt
+# — both authored in the repo root. This pass copies them through so they
+# survive the SSG's auxiliary-file emission. Idempotent.
+
+def _copy_through(public: Path, source_root: Path, name: str) -> bool:
+    src = source_root / name
+    dst = public / name
+    if not src.is_file():
+        return False
+    src_body = src.read_text(encoding="utf-8")
+    cur = dst.read_text(encoding="utf-8") if dst.is_file() else ""
+    if cur == src_body:
+        return False
+    dst.write_text(src_body, encoding="utf-8")
+    return True
+
+
+def write_humans(public: Path, source_root: Path) -> bool:
+    """Copy the repo-root humans.txt over the SSG's empty placeholder."""
+    return _copy_through(public, source_root, "humans.txt")
+
+
+def write_security_txt(public: Path, source_root: Path) -> bool:
+    """Copy the repo-root security.txt over the SSG's empty placeholder so the
+    RFC 9116 file is reachable at both `/security.txt` (root) and the canonical
+    `/.well-known/security.txt`. Security scanners check both locations."""
+    return _copy_through(public, source_root, "security.txt")
+
+
+# ---------------------------------------------------------------------------
 # 6b. llms.txt — structured directory for AI crawlers
 # ---------------------------------------------------------------------------
 

@@ -156,8 +156,6 @@ Un tablou credibil de pregătire cuantică necesită urmărirea unor procente ex
 
 ## Migrarea începe cu registrul criptografiei
 
-![Fotografie a unui tablou de control care cartografiază primitivele criptografice prin punctele finale TLS ale unei bănci, partițiile HSM, autoritățile de certificare și arhivele de date de lungă durată — registrul vizual al unei Liste a Materialelor Criptografice.](https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80)
-
 Secvența de migrare este bine înțeleasă în acest stadiu. Fiecare poartă produce dovezi care alimentează următoarea; sărirea sau comprimarea unei porți este ceea ce generează riscul de re-platformare de urgență care apare în coloana de eșec din Arhitectura indexului.
 
 ```mermaid

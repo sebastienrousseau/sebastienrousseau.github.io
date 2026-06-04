@@ -156,8 +156,6 @@ Een geloofwaardige scorecard voor kwantumgereedheid vraagt het volgen van exacte
 
 ## De migratie begint met het cryptografieregister
 
-![Foto van een dashboard in een control room dat cryptografische primitieven in kaart brengt over de TLS-endpoints, HSM-partities, certificaatautoriteiten en archieven van langlevende data van een bank — het visuele register van een Cryptographic Bill of Materials.](https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80)
-
 De migratievolgorde is op dit punt goed begrepen. Elke poort levert bewijs dat de volgende stap stuurt; het overslaan of inkorten van een poort is precies wat het risico op noodgedwongen herplatforming oplevert dat in de faalkolom van de indexarchitectuur opduikt.
 
 ```mermaid

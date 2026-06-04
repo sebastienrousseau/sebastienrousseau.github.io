@@ -156,8 +156,6 @@ site_software: "Static Site Generator, Rust"
 
 ## 遷移從密碼資產的總帳開始
 
-![控制室儀表板照片,映射銀行 TLS 端點、HSM 分區、憑證頒發機構與長壽資料檔案庫上的密碼基元 —— 一份密碼物料清單的視覺化總帳。](https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80)
-
 遷移的順序到這個階段已不難理解。每一道關卡都產出證據去推動下一道;略過或壓縮任一關卡,就會孕育出指標架構失敗欄裡列出的緊急重新平台化風險。
 
 ```mermaid

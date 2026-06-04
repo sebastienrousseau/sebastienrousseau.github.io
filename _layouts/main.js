@@ -411,12 +411,15 @@ document.addEventListener("click", function (event) {
 (async function mermaidInit() {
     "use strict";
     if (!document.querySelector("pre.mermaid")) return;
-    var theme = document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "default";
+    // 'neutral' renders black-on-white with no chromatic accents, so
+    // diagrams stay legible in both light and dark modes without having
+    // to swap themes on data-theme change. Diagrams reflow correctly
+    // when the user toggles the colour scheme.
     try {
         var mod = await import(
             "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"
         );
-        mod.default.initialize({ startOnLoad: true, securityLevel: "strict", theme: theme });
+        mod.default.initialize({ startOnLoad: true, securityLevel: "strict", theme: "neutral" });
     } catch (err) {
         console.warn("mermaid load failed", err);
     }

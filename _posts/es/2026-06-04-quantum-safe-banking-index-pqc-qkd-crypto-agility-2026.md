@@ -156,8 +156,6 @@ Un cuadro de mando creíble de preparación cuántica exige monitorizar porcenta
 
 ## La migración empieza por el libro mayor de la criptografía
 
-![Fotografía del tablero de una sala de control que mapea primitivas criptográficas a lo largo de los endpoints TLS de un banco, particiones HSM, autoridades de certificación y archivos de datos longevos: el registro visual de un Cryptographic Bill of Materials.](https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80)
-
 La secuencia de migración está ya bien comprendida. Cada puerta produce evidencia que impulsa la siguiente; saltarse o comprimir una puerta es lo que genera el riesgo de re-platforming de emergencia que aparece en la columna de fallos de la arquitectura del índice.
 
 ```mermaid

@@ -1,12 +1,12 @@
 {
-  "title": "Gemini 해부: Google AI 혁명을 해설하다",
   "subtitle": "Google의 최첨단 멀티모달 AI 모델 분석",
-  "last_reviewed": "2026-05-16",
+  "keywords": "Gemini, Google AI, 멀티모달, LLM, GPT, AI 모델, Bard, Vertex AI",
   "language": "ko-KR",
+  "banner_alt": "AI의 진화를 표현하는 추상적 비주얼",
   "locale": "ko_KR",
+  "description": "Google의 Gemini AI 모델, 그 능력, 아키텍처, AI 산업에 미치는 영향에 관한 개관.",
   "banner": "https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp",
   "date": "February 19, 2024",
-  "banner_alt": "AI의 진화를 표현하는 추상적 비주얼",
-  "description": "Google의 Gemini AI 모델, 그 능력, 아키텍처, AI 산업에 미치는 영향에 관한 개관.",
-  "keywords": "Gemini, Google AI, 멀티모달, LLM, GPT, AI 모델, Bard, Vertex AI"
+  "title": "Gemini 해부: Google AI 혁명을 해설하다",
+  "last_reviewed": "2026-05-16"
 }

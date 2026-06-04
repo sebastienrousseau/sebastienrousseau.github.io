@@ -1,11 +1,11 @@
 {
-  "date": "May 18, 2026",
-  "locale": "vi_VN",
   "subtitle": "Mật mã lượng tử đã chuyển từ quét chân trời sang kỷ luật triển khai: tiêu chuẩn NIST PQC đã sẵn sàng, hướng dẫn NCSC Anh quốc thu hẹp lựa chọn thuật toán, công tác giao thức của IETF còn đang trưởng thành, và bảo đảm QKD đang chuyển từ niềm tin phòng thí nghiệm sang ngôn ngữ chứng nhận.",
-  "language": "vi-VN",
-  "keywords": "mật mã lượng tử 2026, mật mã hậu lượng tử, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, trao đổi khoá lai, QKD, ETSI QKD, ISO IEC 23837, tính linh hoạt mật mã, harvest now decrypt later, HNDL, mật mã dịch vụ tài chính, bảo mật ngân hàng",
   "description": "Mật mã lượng tử năm 2026 không còn là tranh luận về việc máy tính lượng tử sắp tới hay chưa. Đó là một chương trình di trú trải dài qua mật mã hậu lượng tử, tính linh hoạt mật mã, bảo đảm phân phối khoá lượng tử, tiêu chuẩn giao thức, mức độ sẵn sàng của nhà cung cấp và dữ liệu tài chính dài tuổi đã bị phơi nhiễm với rủi ro “thu hoạch nay, giải mã sau”.",
+  "keywords": "mật mã lượng tử 2026, mật mã hậu lượng tử, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, trao đổi khoá lai, QKD, ETSI QKD, ISO IEC 23837, tính linh hoạt mật mã, harvest now decrypt later, HNDL, mật mã dịch vụ tài chính, bảo mật ngân hàng",
+  "title": "Tái thiết mật mã lượng tử 2026: tiêu chuẩn PQC, bảo đảm QKD và công việc di trú mà ngân hàng không thể trì hoãn",
+  "locale": "vi_VN",
+  "date": "May 18, 2026",
   "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
   "banner_alt": "Bản đồ di trú mật mã an toàn lượng tử cho năm 2026, thể hiện tiêu chuẩn NIST PQC, công việc giao thức lai, bảo đảm QKD, tính linh hoạt mật mã và các tầng rủi ro dữ liệu ngân hàng",
-  "title": "Tái thiết mật mã lượng tử 2026: tiêu chuẩn PQC, bảo đảm QKD và công việc di trú mà ngân hàng không thể trì hoãn"
+  "language": "vi-VN"
 }

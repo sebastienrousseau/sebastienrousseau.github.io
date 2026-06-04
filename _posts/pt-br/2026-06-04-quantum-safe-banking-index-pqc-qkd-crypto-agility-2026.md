@@ -156,8 +156,6 @@ Um scorecard crível de prontidão quântica exige rastrear percentuais exatos, 
 
 ## A Migração Começa pelo Razão da Criptografia
 
-![Fotografia de um dashboard de control room mapeando primitivas criptográficas nos endpoints TLS, partições de HSM, autoridades certificadoras e arquivos de dados de longa duração de um banco — o registro visual de um Cryptographic Bill of Materials.](https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80)
-
 A sequência de migração já é bem compreendida. Cada portão produz a evidência que destrava o próximo; pular ou comprimir um portão é o que gera o risco de re-plataforma emergencial que aparece na coluna de falhas da Arquitetura do Índice.
 
 ```mermaid

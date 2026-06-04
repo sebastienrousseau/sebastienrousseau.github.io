@@ -156,8 +156,6 @@ site_software: "Static Site Generator, Rust"
 
 ## 移行は暗号の台帳から始まる
 
-![銀行の TLS エンドポイント、HSM パーティション、認証局、長期保全データアーカイブを横断して暗号プリミティブを対応づけたコントロールルーム・ダッシュボードの写真。暗号部品表 (CBOM) の視覚的レジスタ。](https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80)
-
 移行の順序は、現時点では十分理解されています。各ゲートは次のゲートを駆動するエビデンスを生み出します。ゲートを飛ばす、あるいは圧縮することが、インデックスアーキテクチャの失敗欄に現れる緊急リプラットフォーミングリスクを生みます。
 
 ```mermaid

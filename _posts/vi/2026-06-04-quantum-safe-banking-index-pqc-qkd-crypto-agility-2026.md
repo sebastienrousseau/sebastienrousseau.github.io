@@ -156,8 +156,6 @@ Một thẻ điểm sẵn sàng lượng tử khả tín đòi hỏi theo dõi c
 
 ## Chuyển đổi Bắt đầu Từ Sổ Cái Mật mã
 
-![Ảnh bảng điều khiển phòng kiểm soát lập bản đồ nguyên thuỷ mật mã trên các điểm cuối TLS, phân vùng HSM, cơ quan chứng thực và kho lưu trữ dữ liệu lâu năm của một ngân hàng — sổ đăng ký trực quan của Hoá đơn Vật liệu Mật mã.](https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80)
-
 Trình tự chuyển đổi đến giờ đã được hiểu rõ. Mỗi cổng tạo ra bằng chứng dẫn dắt cổng kế tiếp; bỏ qua hoặc nén một cổng là cái sinh ra rủi ro tái nền tảng khẩn cấp xuất hiện ở cột thất bại trong Kiến trúc Chỉ số.
 
 ```mermaid

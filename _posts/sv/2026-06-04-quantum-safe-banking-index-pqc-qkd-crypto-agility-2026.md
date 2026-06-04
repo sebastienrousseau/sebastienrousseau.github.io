@@ -156,8 +156,6 @@ Ett trovärdigt kvantberedskapskort kräver att man spårar exakta procenttal, i
 
 ## Migrationen börjar med kryptografins liggare
 
-![Fotografi av en kontrollrumsdashboard som kartlägger kryptografiska primitiver över en banks TLS-ändpunkter, HSM-partitioner, certifikatutfärdare och långlivade dataarkiv — det visuella registret över en kryptografisk materialförteckning.](https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80)
-
 Migrationssekvensen är vid det här laget välförstådd. Varje grind producerar bevis som driver nästa; att hoppa över eller komprimera en grind är vad som genererar den akuta omplattformeringsrisken som dyker upp i indexarkitekturens felkolumn.
 
 ```mermaid

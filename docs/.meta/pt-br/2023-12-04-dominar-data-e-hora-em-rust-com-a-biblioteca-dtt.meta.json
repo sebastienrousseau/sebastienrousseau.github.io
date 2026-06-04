@@ -1,11 +1,11 @@
 {
-  "banner_alt": "DateTime (DTT), seu caja de ferramentas esencial para as operações de fecha e hora.",
-  "title": "Gestión eficiente de fechas e horas com DateTime (DTT)",
-  "description": "DateTime (DTT) é uma biblioteca Rust para parsear, validar, manipular e formatear fechas e horas: alta precisión, amplia funcionalidad.",
-  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
   "language": "pt-BR",
-  "keywords": "DateTime, DTT, biblioteca Rust, parseo, validação, manipulación, formateo, fechas, horas",
-  "date": "December 04, 2023",
+  "description": "DateTime (DTT) é uma biblioteca Rust para parsear, validar, manipular e formatear fechas e horas: alta precisión, amplia funcionalidad.",
   "subtitle": "DTT, a biblioteca Rust de alta precisión para as operações de fecha e hora",
-  "locale": "pt_BR"
+  "banner_alt": "DateTime (DTT), seu caja de ferramentas esencial para as operações de fecha e hora.",
+  "date": "December 04, 2023",
+  "locale": "pt_BR",
+  "keywords": "DateTime, DTT, biblioteca Rust, parseo, validação, manipulación, formateo, fechas, horas",
+  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
+  "title": "Gestión eficiente de fechas e horas com DateTime (DTT)"
 }

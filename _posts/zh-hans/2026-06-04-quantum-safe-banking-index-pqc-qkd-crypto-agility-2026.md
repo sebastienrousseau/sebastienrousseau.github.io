@@ -156,8 +156,6 @@ site_software: "Static Site Generator, Rust"
 
 ## 迁移从密码学总账开始
 
-![一张控制室仪表盘的照片,绘出银行 TLS 端点、HSM 分区、证书颁发机构与长期保留数据归档之间的密码原语关系——密码学物料清单的可视化登记。](https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80)
-
 迁移顺序到现在已经很清楚。每道关卡都产出推动下一道关卡的证据;跳过或压缩任何一道关卡,都会触发指数架构故障栏里那种紧急再平台化的风险。
 
 ```mermaid

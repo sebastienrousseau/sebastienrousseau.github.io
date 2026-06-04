@@ -156,8 +156,6 @@ site_software: "Static Site Generator, Rust"
 
 ## 마이그레이션은 암호 자산 원장에서 시작합니다
 
-![은행의 TLS 엔드포인트, HSM 파티션, 인증기관, 장기 데이터 아카이브 전반의 암호 기본요소를 매핑한 통제실 대시보드 — 암호 자산 명세서의 시각적 등록부 사진.](https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80)
-
 마이그레이션 순서는 이미 잘 알려져 있습니다. 각 관문은 다음 단계를 끌어가는 증거를 만들어내고, 관문을 건너뛰거나 압축하면 지수 아키텍처의 실패 칸에 등장하는 비상 재플랫폼화 위험이 발생합니다.
 
 ```mermaid
