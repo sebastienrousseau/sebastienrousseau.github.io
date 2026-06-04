@@ -1,11 +1,11 @@
 {
-  "keywords": "trasferimento conoscenze, IA, quantistico, formazione, mentorship, banking",
-  "subtitle": "Una conversazione sulla condivisione di competenze attraverso le generazioni",
   "language": "it-IT",
-  "date": "May 11, 2026",
-  "description": "Una conversazione su come trasferire competenze in IA e calcolo quantistico tra generazioni di ricercatori e professionisti, con riflessioni dalla pratica.",
-  "banner_alt": "Lucy Besson, trasferimento di conoscenze",
+  "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
   "title": "Lucy Besson: trasferimento di conoscenze in IA e quantistico",
   "locale": "it_IT",
-  "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp"
+  "subtitle": "Una conversazione sulla condivisione di competenze attraverso le generazioni",
+  "banner_alt": "Lucy Besson, trasferimento di conoscenze",
+  "keywords": "trasferimento conoscenze, IA, quantistico, formazione, mentorship, banking",
+  "description": "Una conversazione su come trasferire competenze in IA e calcolo quantistico tra generazioni di ricercatori e professionisti, con riflessioni dalla pratica.",
+  "date": "May 11, 2026"
 }

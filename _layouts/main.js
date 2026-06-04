@@ -427,7 +427,28 @@ document.addEventListener("click", function (event) {
         var mod = await import(
             "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"
         );
-        mod.default.initialize({ startOnLoad: false, securityLevel: "strict", theme: "neutral" });
+        // securityLevel:"antiscript" lets `<br/>` in node labels render as
+        // line breaks (htmlLabels:true) while still stripping <script>
+        // tags via DOMPurify. "strict" would block htmlLabels entirely and
+        // collapse multi-line labels into one cramped row — the symptom
+        // observed on the quantum-safe article's PQC migration flowchart.
+        // theme:"base" + themeVariables gives us monochrome defaults but
+        // still honours per-node `style A fill:…` overrides in the source.
+        mod.default.initialize({
+            startOnLoad: false,
+            securityLevel: "antiscript",
+            theme: "base",
+            themeVariables: {
+                fontFamily: "var(--type-mono), ui-monospace, monospace",
+                fontSize: "14px",
+                primaryColor: "#ffffff",
+                primaryTextColor: "#111111",
+                primaryBorderColor: "#3a3a3e",
+                lineColor: "#3a3a3e",
+                textColor: "#111111",
+            },
+            flowchart: { htmlLabels: true, useMaxWidth: true, curve: "basis" },
+        });
         await mod.default.run({ querySelector: "pre.mermaid" });
     } catch (err) {
         console.warn("mermaid load failed", err);
