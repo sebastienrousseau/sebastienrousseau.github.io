@@ -1,11 +1,11 @@
 {
-  "locale": "bn_BD",
-  "keywords": "OpenVoice, ভয়েস ক্লোনিং প্রযুক্তি, AI সিন্থেটিক স্পিচ, ওপেন-সোর্স ভয়েস ক্লোনিং, ক্রস-লিঙ্গুয়াল ভয়েস সিন্থেসিস, ইনস্ট্যান্ট ভয়েস ক্লোনিং, ভয়েস স্টাইল কন্ট্রোল, অ্যাক্সেসিবিলিটি ভয়েস টেক, বিনোদন শিল্পের ভয়েস, কাস্টমার সার্ভিস ভয়েস AI",
-  "date": "Apr 01, 2024",
-  "title": "OpenVoice: Leading Innovation in Voice Cloning Technology",
-  "subtitle": "পরবর্তী প্রজন্মের ওপেন-সোর্স ভয়েস ক্লোনিং টুল",
   "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
+  "date": "Apr 01, 2024",
+  "language": "bn-BD",
+  "subtitle": "পরবর্তী প্রজন্মের ওপেন-সোর্স ভয়েস ক্লোনিং টুল",
+  "title": "OpenVoice: Leading Innovation in Voice Cloning Technology",
   "banner_alt": "পুনরাবৃত্ত প্রোফাইলে প্রাণবন্ত গ্রেডিয়েন্ট ওভারলে সহ ব্যানার",
   "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.",
-  "language": "bn-BD"
+  "keywords": "OpenVoice, ভয়েস ক্লোনিং প্রযুক্তি, AI সিন্থেটিক স্পিচ, ওপেন-সোর্স ভয়েস ক্লোনিং, ক্রস-লিঙ্গুয়াল ভয়েস সিন্থেসিস, ইনস্ট্যান্ট ভয়েস ক্লোনিং, ভয়েস স্টাইল কন্ট্রোল, অ্যাক্সেসিবিলিটি ভয়েস টেক, বিনোদন শিল্পের ভয়েস, কাস্টমার সার্ভিস ভয়েস AI",
+  "locale": "bn_BD"
 }

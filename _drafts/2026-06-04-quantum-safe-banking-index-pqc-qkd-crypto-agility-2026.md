@@ -174,6 +174,24 @@ A credible quantum readiness scorecard requires tracking exact percentages, not 
 
 ![Photograph of a control-room dashboard mapping cryptographic primitives across a bank's TLS endpoints, HSM partitions, certificate authorities, and long-lived data archives — the visual register of a Cryptographic Bill of Materials.](https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80)
 
+The migration sequence is well-understood at this point. Each gate produces evidence that drives the next; skipping or compressing a gate is what generates the emergency re-platforming risk that shows up in the Index Architecture failure column.
+
+```mermaid
+flowchart LR
+    A["Discovery<br/>CycloneDX CBOM<br/>scanners + CMDB"] --> B["Exposure model<br/>lifetime × capture<br/>× CRQC horizon"]
+    B --> C["Hybrid TLS 1.3<br/>X25519MLKEM768<br/>external endpoints"]
+    C --> D["HSM PQC firmware<br/>vendor-by-vendor<br/>roadmap rollout"]
+    D --> E["Crypto-agility<br/>PKCS#11 + policy<br/>registry + kill switch"]
+    E --> F["Pure PQC<br/>2028+<br/>conformance + audit"]
+
+    style A fill:#eff5ff,stroke:#0056b3,color:#111
+    style B fill:#eff5ff,stroke:#0056b3,color:#111
+    style C fill:#fff4cf,stroke:#5a3e00,color:#111
+    style D fill:#fff4cf,stroke:#5a3e00,color:#111
+    style E fill:#e8f5e9,stroke:#1b5e20,color:#111
+    style F fill:#e8f5e9,stroke:#1b5e20,color:#111
+```
+
 The first deliverable is not a new algorithm; it is a cryptographic bill of materials (CBOM). Banks need a living inventory that connects business services to algorithms, libraries, certificates, key lengths, HSMs, data lifetimes, vendors, and operational owners. Without that ledger, quantum-safe migration becomes guesswork.
 
 The CBOM record set should capture, for each cryptographic primitive: the protocol or interface (TLS 1.3, IPsec, SSH, custom payment-message format), the algorithm and parameter set (RSA-2048, ECDH P-256, ML-KEM-768, ML-DSA-65), the library and version (OpenSSL 3.4, BoringSSL commit hash, vendor SDK build), the hardware boundary (HSM partition, TPM, secure enclave, or none), the certificate identity if applicable, the application owner, and the data-classification lifetime. Tools landing in production in 2025-2026 — IBM Quantum Safe Inventory, the open-source [CycloneDX CBOM specification ⧉](https://cyclonedx.org/capabilities/cbom/ "CycloneDX Cryptography Bill of Materials"), enterprise scanners from CryptoNext / Sandbox / PQShield — integrate into existing CMDB pipelines. None of them is complete on its own; expect a 12-18 month CBOM build cycle even with vendor tooling and dedicated headcount.

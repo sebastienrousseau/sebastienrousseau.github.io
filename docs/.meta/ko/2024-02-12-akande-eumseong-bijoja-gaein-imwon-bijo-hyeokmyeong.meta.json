@@ -1,12 +1,12 @@
 {
-  "banner_alt": "AI 비서와의 디지털 대화",
-  "title": "Akande 음성 비서: 개인 및 임원 보조의 혁신",
-  "description": "Akande, 자연스러운 대화, PDF 요약, 효율적인 캐싱을 제공하는 고급 음성 비서.",
-  "locale": "ko_KR",
-  "banner": "https://cloudcdn.pro/stocks/images/wesley-tingey-snNHKZ-mGfE-unsplash.webp",
   "keywords": "Akande, 음성 비서, GPT, OpenAI, 임원 지원, PDF, AI",
   "date": "February 12, 2024",
+  "locale": "ko_KR",
   "subtitle": "GPT를 활용한 대화형 음성 비서",
+  "language": "ko-KR",
+  "title": "Akande 음성 비서: 개인 및 임원 보조의 혁신",
+  "banner_alt": "AI 비서와의 디지털 대화",
+  "description": "Akande, 자연스러운 대화, PDF 요약, 효율적인 캐싱을 제공하는 고급 음성 비서.",
   "last_reviewed": "2026-05-16",
-  "language": "ko-KR"
+  "banner": "https://cloudcdn.pro/stocks/images/wesley-tingey-snNHKZ-mGfE-unsplash.webp"
 }

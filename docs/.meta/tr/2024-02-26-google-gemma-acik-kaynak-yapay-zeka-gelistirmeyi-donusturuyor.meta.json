@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
   "description": "Gemma, Gemini ile aynı araştırma ve teknolojiyle inşa edilen Google'ın yeni hafif açık modeller ailesidir.",
   "language": "tr-TR",
   "banner_alt": "Gemma logosu",
-  "title": "Google Gemma: açık kaynak yapay zeka geliştirmeyi dönüştürmek",
-  "date": "February 26, 2024",
   "locale": "tr_TR",
+  "date": "February 26, 2024",
+  "subtitle": "Sorumlu yapay zeka için Google'ın açık modelleri Gemma",
   "keywords": "Gemma, Google, açık kaynak, yapay zeka, LLM, üretken yapay zeka",
-  "subtitle": "Sorumlu yapay zeka için Google'ın açık modelleri Gemma"
+  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
+  "title": "Google Gemma: açık kaynak yapay zeka geliştirmeyi dönüştürmek"
 }
