@@ -10,6 +10,7 @@ import re
 import sys
 from pathlib import Path
 
+
 def count_syllables(word: str) -> int:
     word = word.lower().strip(".,;:?!'\"()[]{}*-_+=")
     if not word or not word.isalpha():

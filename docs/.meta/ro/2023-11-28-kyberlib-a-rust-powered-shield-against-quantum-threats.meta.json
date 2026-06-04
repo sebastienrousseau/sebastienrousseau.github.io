@@ -1,11 +1,11 @@
 {
-  "title": "KyberLib: Rust CRYSTALS-Kyber for Post-Quantum",
-  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
-  "locale": "ro_RO",
-  "keywords": "KyberLib, Rust CRYSTALS-Kyber, criptografie post-cuantică, criptografie bazată pe rețele, schimb de chei rezistent la quantum, NIST FIPS 203, Sebastien Rousseau, KEM, autentificare plăți, PQC library",
   "date": "Nov 28, 2023",
-  "banner_alt": "Consolidarea comunicațiilor securizate în era cuantică cu KyberLib",
-  "language": "ro-RO",
+  "locale": "ro_RO",
   "subtitle": "KyberLib, o implementare Rust robustă a CRYSTALS-Kyber pentru era cuantică.",
-  "description": "O implementare robustă și sigură față de amenințările cuantice a algoritmului CRYSTALS-Kyber, pentru a proteja datele dvs. de atacurile cuantice și criptanalitice."
+  "language": "ro-RO",
+  "banner_alt": "Consolidarea comunicațiilor securizate în era cuantică cu KyberLib",
+  "description": "O implementare robustă și sigură față de amenințările cuantice a algoritmului CRYSTALS-Kyber, pentru a proteja datele dvs. de atacurile cuantice și criptanalitice.",
+  "keywords": "KyberLib, Rust CRYSTALS-Kyber, criptografie post-cuantică, criptografie bazată pe rețele, schimb de chei rezistent la quantum, NIST FIPS 203, Sebastien Rousseau, KEM, autentificare plăți, PQC library",
+  "title": "KyberLib: Rust CRYSTALS-Kyber for Post-Quantum",
+  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
 }

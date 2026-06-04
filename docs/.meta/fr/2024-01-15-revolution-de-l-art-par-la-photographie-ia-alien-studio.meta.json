@@ -1,11 +1,11 @@
 {
-  "description": "Rejoignez-moi sur mon parcours personnel — de Rust, l'IA et le calcul quantique vers la redéfinition de l'art et de la photographie via Alien Studio.",
   "language": "fr",
-  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
   "locale": "fr_FR",
-  "title": "Alien Studio : mon voyage de la tech à l'art photographique",
-  "banner_alt": "Muse du couchant, regard serein ; beauté dans l'immobilité",
-  "subtitle": "Les débuts d'une odyssée technologique",
+  "description": "Rejoignez-moi sur mon parcours personnel — de Rust, l'IA et le calcul quantique vers la redéfinition de l'art et de la photographie via Alien Studio.",
   "date": "January 15, 2024",
-  "keywords": "parcours tech personnel, découverte Rust, exploration IA, calcul quantique, fusion art et photographie, Alien Studio, création d'art numérique, technologie dans l'art, photographie innovante, redécouverte artistique"
+  "keywords": "parcours tech personnel, découverte Rust, exploration IA, calcul quantique, fusion art et photographie, Alien Studio, création d'art numérique, technologie dans l'art, photographie innovante, redécouverte artistique",
+  "banner_alt": "Muse du couchant, regard serein ; beauté dans l'immobilité",
+  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
+  "subtitle": "Les débuts d'une odyssée technologique",
+  "title": "Alien Studio : mon voyage de la tech à l'art photographique"
 }

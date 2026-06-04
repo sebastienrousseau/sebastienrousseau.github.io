@@ -1,11 +1,11 @@
 {
-  "date": "May 15, 2026",
-  "language": "tr-TR",
-  "title": "Gizli getiri: BlackRock'un BRSRV / BSTBL ve GENIUS Act'ı çözmek",
-  "banner_alt": "Tokenize edilmiş bir fonun görselleştirmesi",
-  "keywords": "BlackRock, BRSRV, BSTBL, stablecoin, GENIUS Act, tokenizasyon, para piyasası, regulating",
-  "description": "Stablecoin'ler GENIUS Act kapsamında getiri ödeyemiyor; BlackRock'un BRSRV ve BSTBL başvuruları çıkış yolunu gösteriyor.",
-  "subtitle": "Stablecoin'ler getiri ödeyemediğinde — tokenize edilmiş bir para piyasası fonu çıkış yolu sağlıyor",
   "locale": "tr_TR",
-  "banner": "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp"
+  "keywords": "BlackRock, BRSRV, BSTBL, stablecoin, GENIUS Act, tokenizasyon, para piyasası, regulating",
+  "banner": "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp",
+  "date": "May 15, 2026",
+  "banner_alt": "Tokenize edilmiş bir fonun görselleştirmesi",
+  "description": "Stablecoin'ler GENIUS Act kapsamında getiri ödeyemiyor; BlackRock'un BRSRV ve BSTBL başvuruları çıkış yolunu gösteriyor.",
+  "language": "tr-TR",
+  "subtitle": "Stablecoin'ler getiri ödeyemediğinde — tokenize edilmiş bir para piyasası fonu çıkış yolu sağlıyor",
+  "title": "Gizli getiri: BlackRock'un BRSRV / BSTBL ve GENIUS Act'ı çözmek"
 }

@@ -133,6 +133,7 @@ site_software: "Static Site Generator, Rust"
 
 
 
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Agentic payments in 2026 have moved from concept to live transaction. The banking challenge is no longer whether AI agents can initiate payments, but how consent, liability, identity, auditability, fraud controls, and protocol interoperability should work.</p>

@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Schéma du seuil de qubits pour l'algorithme de Shor. Circuit imprimé de calcul quantique aux reflets bleus",
-  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
   "title": "Les seuils quantiques bougent à nouveau",
-  "date": "April 11, 2026",
-  "description": "Un nouvel article suggère que l'algorithme de Shor pourrait s'exécuter sur seulement 10 000 qubits. Le seuil du calcul quantique cryptographiquement pertinent chute plus vite que la plupart ne le supposaient.",
-  "language": "fr",
-  "locale": "fr_FR",
+  "keywords": "algorithme de Shor, qubits, calcul quantique, ECC, RSA-2048, atomes neutres reconfigurables, codes de correction d'erreurs, CRYSTALS-Kyber, CRYSTALS-Dilithium, PQC, cryptographie post-quantique",
+  "banner_alt": "Schéma du seuil de qubits pour l'algorithme de Shor. Circuit imprimé de calcul quantique aux reflets bleus",
   "subtitle": "Un nouvel article suggère que l'algorithme de Shor pourrait s'exécuter sur seulement 10 000 qubits. Le seuil du calcul quantique cryptographiquement pertinent chute plus vite que la plupart ne le supposaient.",
-  "keywords": "algorithme de Shor, qubits, calcul quantique, ECC, RSA-2048, atomes neutres reconfigurables, codes de correction d'erreurs, CRYSTALS-Kyber, CRYSTALS-Dilithium, PQC, cryptographie post-quantique"
+  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
+  "description": "Un nouvel article suggère que l'algorithme de Shor pourrait s'exécuter sur seulement 10 000 qubits. Le seuil du calcul quantique cryptographiquement pertinent chute plus vite que la plupart ne le supposaient.",
+  "date": "April 11, 2026",
+  "language": "fr",
+  "locale": "fr_FR"
 }

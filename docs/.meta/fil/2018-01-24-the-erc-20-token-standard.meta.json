@@ -1,11 +1,11 @@
 {
-  "language": "fil-PH",
   "description": "ERC-20: أكثر أنواع التوكنات شيوعاً على بلوكشين Ethereum، يُوصف كثيراً بأنّه عقد رقمي ذكي (smart contract).",
-  "banner_alt": "حاسوب محمول مُطفأ فوق طاولة خشبية بُنّية",
-  "keywords": "ERC-20, Ethereum, token, smart contract, DeFi, EIP, blockchain, التشغيل البيني, DApps, المعيار",
   "subtitle": "الواجهة الموحَّدة التي أتاحت لمنظومة Ethereum أن تزدهر",
-  "title": "معيار التوكن ERC-20",
-  "locale": "fil_PH",
+  "language": "fil-PH",
+  "keywords": "ERC-20, Ethereum, token, smart contract, DeFi, EIP, blockchain, التشغيل البيني, DApps, المعيار",
+  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
   "date": "January 24, 2018",
-  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
+  "locale": "fil_PH",
+  "banner_alt": "حاسوب محمول مُطفأ فوق طاولة خشبية بُنّية",
+  "title": "معيار التوكن ERC-20"
 }

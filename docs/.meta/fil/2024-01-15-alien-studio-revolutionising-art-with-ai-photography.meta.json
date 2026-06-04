@@ -1,11 +1,11 @@
 {
-  "date": "Jan 15, 2024",
+  "banner_alt": "ملهمة الغروب، نظرة هادئة؛ جمال في السكون",
   "description": "انضمّ إليّ في رحلتي الشخصية — من Rust والذكاء الاصطناعي والحوسبة الكمومية إلى إعادة تعريف الفنّ والتصوير عبر Alien Studio.",
   "title": "Alien Studio: رحلتي من التكنولوجيا إلى الفنّ التصويري",
-  "language": "fil-PH",
-  "keywords": "رحلة تقنية شخصية، اكتشاف Rust، استكشاف الذكاء الاصطناعي، الحوسبة الكمومية، اندماج الفنّ والتصوير، Alien Studio، إنشاء الفنّ الرقمي، التكنولوجيا في الفنّ، تصوير مبتكر، إعادة اكتشاف فنّي",
-  "banner_alt": "ملهمة الغروب، نظرة هادئة؛ جمال في السكون",
-  "locale": "fil_PH",
   "subtitle": "بدايات ملحمة تكنولوجية",
-  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp"
+  "date": "Jan 15, 2024",
+  "language": "fil-PH",
+  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
+  "locale": "fil_PH",
+  "keywords": "رحلة تقنية شخصية، اكتشاف Rust، استكشاف الذكاء الاصطناعي، الحوسبة الكمومية، اندماج الفنّ والتصوير، Alien Studio، إنشاء الفنّ الرقمي، التكنولوجيا في الفنّ، تصوير مبتكر، إعادة اكتشاف فنّي"
 }

@@ -4,13 +4,13 @@
   <link href="https://sebastienrousseau.com/yo/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/yo/"/>
   <id>https://sebastienrousseau.com/yo/</id>
-  <updated>2026-06-04T23:33:44+00:00</updated>
+  <updated>2026-06-04T23:39:56+00:00</updated>
   <entry>
     <title>Báńkì Ọ̀nà-Púpọ̀ ní 2026: Káàdì, A2A, Stablecoins, RTP, FedNow, àti Open Banking nínú Ìlànà Kan</title>
     <link href="https://sebastienrousseau.com/yo/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
     <id>https://sebastienrousseau.com/yo/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
-    <updated>2026-06-04T23:33:44+00:00</updated>
-    <published>2026-06-04T23:33:44+00:00</published>
+    <updated>2026-06-04T23:39:56+00:00</updated>
+    <published>2026-06-04T23:39:56+00:00</published>
     <summary>FedNow béèrè owó tó wà ní àkọ́sẹ̀ 24/7. ACH wúwo díẹ̀ ṣùgbọ́n T+1 ni. USDC parí pẹ̀lú ìpinnu àtómù ṣùgbọ́n ó nílò ìgbékalẹ̀ àpamọ́wọ́. Báńkì ọ̀nà-púpọ̀ 2026 ń fà gbogbo ìsanwó lórí iye, ìparí, àti iye owó tó wà ní àkọ́sẹ̀.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -18,8 +18,8 @@
     <title>Ìgbékalẹ̀ Ìsanwó Lẹyin-Quantum: Ìdí Tí Báńkì Fi Lè Fìrọ́pò Dípò Ìbámu Ọ̀nà Àkànṣe</title>
     <link href="https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
     <id>https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-06-04T23:33:44+00:00</updated>
-    <published>2026-06-04T23:33:44+00:00</published>
+    <updated>2026-06-04T23:39:56+00:00</updated>
+    <published>2026-06-04T23:39:56+00:00</published>
     <summary>Cryptography lẹyin-quantum fi àyàn méjì lélẹ̀ fún ọ̀nà ìsanwó: ìbámu RSA/ECC nínú ìdìpọ̀ SWIFT MT àti ISO 20022 tí kò bá ML-KEM àti ML-DSA mu, tàbí ìfìrọ́pò pẹ̀lú ìgbékalẹ̀ ìyára crypto. Àwọn ayàwòrán gbọ́dọ̀ pinnu kí HNDL tó di àdánù iṣẹ́.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>

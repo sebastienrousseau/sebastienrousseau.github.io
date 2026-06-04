@@ -1,11 +1,11 @@
 {
-  "title": "Efficient Date and Time Management with DateTime (DTT)",
+  "locale": "yo_NG",
   "description": "DateTime (DTT) jẹ́ ìwé-iṣẹ́ Rust fún ìtúpalẹ̀, ìfọwọ́sí, ìṣàkóso àti ìpèsè ọjọ́ àti àkókò — pínpín gíga, iṣẹ́ líle.",
   "keywords": "DateTime, DTT, ìwé-iṣẹ́ Rust, ìtúpalẹ̀, ìfọwọ́sí, ìṣàkóso, ìpèsè, ọjọ́, àkókò",
-  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
+  "subtitle": "DTT, ìwé-iṣẹ́ Rust tó ga fún ìṣiṣẹ́ ọjọ́ àti àkókò.",
   "date": "Dec 04, 2023",
-  "banner_alt": "DateTime (DTT), Ohun-èlò Pàtàkì Rẹ fún Ìṣiṣẹ́ Ọjọ́ àti Àkókò.",
-  "locale": "yo_NG",
+  "title": "Efficient Date and Time Management with DateTime (DTT)",
   "language": "yo-NG",
-  "subtitle": "DTT, ìwé-iṣẹ́ Rust tó ga fún ìṣiṣẹ́ ọjọ́ àti àkókò."
+  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
+  "banner_alt": "DateTime (DTT), Ohun-èlò Pàtàkì Rẹ fún Ìṣiṣẹ́ Ọjọ́ àti Àkókò."
 }

@@ -1,11 +1,11 @@
 {
-  "locale": "de_DE",
+  "language": "de",
+  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
+  "date": "January 1, 2018",
   "description": "Bitcoin: Ein Peer-to-Peer Electronic Cash System (P2P ECS) mit dem Potenzial, die Art und Weise, wie Menschen online Geschäfte abwickeln, zu revolutionieren.",
   "banner_alt": "Ein Stapel Gold- und Silbermünzen auf einem Tisch",
-  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
-  "language": "de",
-  "subtitle": "Ein Peer-to-Peer-Zahlungssystem, das Geld neu definiert hat",
   "keywords": "Bitcoin, Kryptowährung, Blockchain, P2P, Double Spending, Mining, Proof-of-Work, ETF, Satoshi Nakamoto, dezentrale Finanzen",
-  "date": "January 1, 2018",
-  "title": "Bitcoin: Das Jahr im Rückblick der ersten Kryptowährung"
+  "title": "Bitcoin: Das Jahr im Rückblick der ersten Kryptowährung",
+  "locale": "de_DE",
+  "subtitle": "Ein Peer-to-Peer-Zahlungssystem, das Geld neu definiert hat"
 }
