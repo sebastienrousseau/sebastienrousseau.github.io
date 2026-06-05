@@ -8,7 +8,7 @@ Captured at the end of the phase 0/2/3/4/5/6/7 implementation pass.
 - **Internal links**: 78 / 78 resolve (`scripts/audit_links.py`).
 - **External links** (excluding 5 known bot-blocked hosts: `crates.io`, `midjourney.com`, `spglobal.com`, `bmo.com`, `news.bankingonquantum.com`, plus the `medium.com` / `twitter.com` / `linkedin.com` family): **163 / 163 resolve**.
 
-See `audits/links.txt` for the latest captured run.
+See `project-docs/audits/links.txt` for the latest captured run.
 
 ## What's in place
 

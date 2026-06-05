@@ -140,10 +140,10 @@ ok "$n signed bundle(s) in docs/sigstore/"
 
 say "Ready to commit"
 echo "  Files staged for review:"
-git status --short docs/sigstore/ _data/sigstore/.gitignore _data/sigstore/config.example.json project-docs/SIGSTORE.md 2>/dev/null | sed 's/^/    /'
+git status --short docs/sigstore/ _data/sigstore/.gitignore _data/sigstore/config.example.json project-docs/sigstore.md 2>/dev/null | sed 's/^/    /'
 echo
 echo "  To publish:"
-echo "    git add docs/sigstore/ _data/sigstore/.gitignore _data/sigstore/config.example.json project-docs/SIGSTORE.md"
+echo "    git add docs/sigstore/ _data/sigstore/.gitignore _data/sigstore/config.example.json project-docs/sigstore.md"
 echo "    git commit -m 'chore(sigstore): activate signing — per-article bundles'"
 echo "    git push"
 echo

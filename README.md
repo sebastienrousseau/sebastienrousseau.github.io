@@ -60,7 +60,7 @@ The folder outline separates the source articles, layouts, and python build scri
 - `tests/` holds the test suites
 - `project-docs/` contains the guide files
 - `workers/` houses the router code
-- `_wasm-demos/` holds the Rust demos
+- `labs/` holds the Rust → WebAssembly demos
 - `public/` stores the build output
 - `docs/` stores the GitHub Pages root
 
