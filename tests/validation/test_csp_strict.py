@@ -18,6 +18,7 @@ Properties enforced (across every rendered page):
 
 Run from repo root: ``python3 tests/validation/test_csp_strict.py``.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -56,6 +57,8 @@ def _extract_csp(html: str) -> str | None:
     inner apostrophes aren't mistaken for the closing quote."""
     m = _CSP_META_RE_HTTP_FIRST.search(html) or _CSP_META_RE_CONTENT_FIRST.search(html)
     return m.group(2) if m else None
+
+
 _JSONLD_RE = re.compile(
     r'<script[^>]*type=["\']?application/ld\+json["\']?[^>]*>([\s\S]*?)</script>',
     re.IGNORECASE,

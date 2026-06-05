@@ -16,6 +16,7 @@ Rules (applied in order):
   6. Standalone ``shokunin`` (lower-cased, but ONLY inside human-readable
      prose — never inside URLs, ``href=…``, ``src=…``, JSON values or paths).
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -72,10 +73,7 @@ def file_targets() -> list[Path]:
         base = REPO / d
         if not base.is_dir():
             continue
-        out.extend(
-            p for p in base.rglob("*")
-            if p.is_file() and p.suffix in EXTENSIONS
-        )
+        out.extend(p for p in base.rglob("*") if p.is_file() and p.suffix in EXTENSIONS)
     for rel in EXTRA_FILES:
         p = REPO / rel
         if p.is_file():

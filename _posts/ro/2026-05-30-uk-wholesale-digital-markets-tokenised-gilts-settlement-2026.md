@@ -249,4 +249,3 @@ Puncte de bază economisite la finanțarea colateralului. Reducerea tamponului d
 </div>
 </aside>
 <!-- enrich-end -->
-

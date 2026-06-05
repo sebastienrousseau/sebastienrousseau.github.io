@@ -4,6 +4,7 @@ The coverage gate requires 100% of postbuild_lib/. These tests exercise
 the public functions and enough of the private helpers to exhaust every
 branch (kind dispatch, fallback paths, idempotence, no-op skips).
 """
+
 from __future__ import annotations
 
 import json
@@ -33,12 +34,9 @@ def _extract_tech_article(html: str) -> dict:
 # _parse_keywords
 # ---------------------------------------------------------------------------
 
+
 def test_parse_keywords_extracts_meta_keywords():
-    html = (
-        '<html><head>'
-        '<meta name="keywords" content="Rust, ISO 20022, PQC">'
-        "</head></html>"
-    )
+    html = "<html><head>" '<meta name="keywords" content="Rust, ISO 20022, PQC">' "</head></html>"
     assert sc._parse_keywords(html) == ["Rust", "ISO 20022", "PQC"]
 
 
@@ -48,7 +46,7 @@ def test_parse_keywords_returns_empty_when_no_meta():
 
 def test_parse_keywords_unescapes_html_entities():
     html = (
-        '<html><head>'
+        "<html><head>"
         '<meta name="keywords" content="Rust &amp; Open Source, blockchain">'
         "</head></html>"
     )
@@ -58,6 +56,7 @@ def test_parse_keywords_unescapes_html_entities():
 # ---------------------------------------------------------------------------
 # _detect_languages + _detect_dependencies
 # ---------------------------------------------------------------------------
+
 
 def test_detect_languages_finds_python_and_rust():
     langs = sc._detect_languages("rust, python, async")
@@ -91,6 +90,7 @@ def test_detect_dependencies_dedupes():
 # _is_dated_article + _page_lang
 # ---------------------------------------------------------------------------
 
+
 def test_is_dated_article_accepts_top_level_dated_slug():
     p = sc.PUBLIC / "2025-09-01-foo" / "index.html"
     assert sc._is_dated_article(p) is True
@@ -121,11 +121,15 @@ def test_page_lang_defaults_to_en_gb_when_no_lang_attr():
 # _tech_article_graph + inject_tech_article
 # ---------------------------------------------------------------------------
 
-def _article_html(keywords: str, title: str = "Quantum-Safe Payments — Sebastien Rousseau",
-                  canonical: str = "https://sebastienrousseau.com/2025-09-01-foo/index.html") -> str:
+
+def _article_html(
+    keywords: str,
+    title: str = "Quantum-Safe Payments — Sebastien Rousseau",
+    canonical: str = "https://sebastienrousseau.com/2025-09-01-foo/index.html",
+) -> str:
     return (
         '<html lang="en-GB"><head>'
-        f'<title>{title}</title>'
+        f"<title>{title}</title>"
         f'<link rel="canonical" href="{canonical}">'
         f'<meta name="keywords" content="{keywords}">'
         "</head><body><main>body</main></body></html>"
@@ -142,9 +146,7 @@ def test_inject_tech_article_emits_block_for_rust_post():
     assert data["headline"].startswith("Quantum-Safe Payments")
     assert data["inLanguage"] == "en-GB"
     assert data["author"] == {"@id": "https://sebastienrousseau.com/#person"}
-    assert data["publisher"] == {
-        "@id": "https://sebastienrousseau.com/#organization"
-    }
+    assert data["publisher"] == {"@id": "https://sebastienrousseau.com/#organization"}
 
 
 def test_inject_tech_article_emits_block_for_non_technical_post():
@@ -167,7 +169,7 @@ def test_inject_tech_article_emits_block_when_keywords_missing():
     page = sc.PUBLIC / "2025-09-01-foo" / "index.html"
     html = (
         '<html lang="en"><head>'
-        '<title>Foo — Sebastien Rousseau</title>'
+        "<title>Foo — Sebastien Rousseau</title>"
         '<link rel="canonical" href="https://example.com/x/">'
         "</head><body></body></html>"
     )
@@ -194,7 +196,7 @@ def test_inject_tech_article_skips_when_canonical_missing():
     page = sc.PUBLIC / "2025-09-01-foo" / "index.html"
     html = (
         '<html lang="en"><head>'
-        '<title>Foo — Sebastien Rousseau</title>'
+        "<title>Foo — Sebastien Rousseau</title>"
         '<meta name="keywords" content="rust">'
         "</head><body></body></html>"
     )
@@ -229,34 +231,37 @@ def test_inject_tech_article_emits_languages_list_when_multiple_match():
 # crosses sc.SCHOLARLY_CITATION_THRESHOLD.
 # ---------------------------------------------------------------------------
 
+
 def _article_html_with_main_links(
-    keywords: str, links: list[str],
+    keywords: str,
+    links: list[str],
 ) -> str:
     """Build an article page with `<main><div class="wrap-...">` so
     article_furniture._extract_citations can walk the body."""
     body_links = "".join(f'<a href="{u}">cite</a>' for u in links)
     return (
         '<html lang="en-GB"><head>'
-        '<title>Quantum-Safe Payments — Sebastien Rousseau</title>'
+        "<title>Quantum-Safe Payments — Sebastien Rousseau</title>"
         '<link rel="canonical" href="https://sebastienrousseau.com/2025-09-01-foo/">'
         f'<meta name="keywords" content="{keywords}">'
-        '</head><body><main><div class="wrap-article">'
-        + body_links +
-        '</div></main></body></html>'
+        '</head><body><main><div class="wrap-article">' + body_links + "</div></main></body></html>"
     )
 
 
 def test_inject_tech_article_upgrades_to_scholarly_when_six_citations():
     page = sc.PUBLIC / "2025-09-01-foo" / "index.html"
     # Six distinct authority-domain links — meets the threshold.
-    html = _article_html_with_main_links("rust, payments", [
-        "https://www.nist.gov/post-quantum",
-        "https://csrc.nist.gov/projects/post-quantum-cryptography",
-        "https://www.iso.org/standard/12345",
-        "https://www.bis.org/publ/work1208.htm",
-        "https://www.ietf.org/rfc/rfc9540",
-        "https://www.swift.com/our-solutions/swift-gpi",
-    ])
+    html = _article_html_with_main_links(
+        "rust, payments",
+        [
+            "https://www.nist.gov/post-quantum",
+            "https://csrc.nist.gov/projects/post-quantum-cryptography",
+            "https://www.iso.org/standard/12345",
+            "https://www.bis.org/publ/work1208.htm",
+            "https://www.ietf.org/rfc/rfc9540",
+            "https://www.swift.com/our-solutions/swift-gpi",
+        ],
+    )
     out = sc.inject_tech_article(page, html)
     data = _extract_article_block(out, "ScholarlyArticle")
     assert data["@type"] == "ScholarlyArticle"
@@ -270,13 +275,16 @@ def test_inject_tech_article_upgrades_to_scholarly_when_six_citations():
 def test_inject_tech_article_stays_tech_when_below_threshold():
     page = sc.PUBLIC / "2025-09-01-foo" / "index.html"
     # Five authority-domain links — below threshold (6).
-    html = _article_html_with_main_links("rust, payments", [
-        "https://www.nist.gov/x",
-        "https://www.iso.org/y",
-        "https://www.bis.org/z",
-        "https://www.swift.com/q",
-        "https://www.ietf.org/r",
-    ])
+    html = _article_html_with_main_links(
+        "rust, payments",
+        [
+            "https://www.nist.gov/x",
+            "https://www.iso.org/y",
+            "https://www.bis.org/z",
+            "https://www.swift.com/q",
+            "https://www.ietf.org/r",
+        ],
+    )
     out = sc.inject_tech_article(page, html)
     data = _extract_tech_article(out)
     assert data["@type"] == "TechArticle"
@@ -286,11 +294,17 @@ def test_inject_tech_article_stays_tech_when_below_threshold():
 
 def test_inject_tech_article_idempotent_when_scholarly_present():
     page = sc.PUBLIC / "2025-09-01-foo" / "index.html"
-    html = _article_html_with_main_links("rust, payments", [
-        "https://www.nist.gov/a", "https://csrc.nist.gov/b",
-        "https://www.iso.org/c",  "https://www.bis.org/d",
-        "https://www.ietf.org/e", "https://www.swift.com/f",
-    ])
+    html = _article_html_with_main_links(
+        "rust, payments",
+        [
+            "https://www.nist.gov/a",
+            "https://csrc.nist.gov/b",
+            "https://www.iso.org/c",
+            "https://www.bis.org/d",
+            "https://www.ietf.org/e",
+            "https://www.swift.com/f",
+        ],
+    )
     once = sc.inject_tech_article(page, html)
     twice = sc.inject_tech_article(page, once)
     assert once == twice
@@ -299,6 +313,7 @@ def test_inject_tech_article_idempotent_when_scholarly_present():
 # ---------------------------------------------------------------------------
 # _category_label
 # ---------------------------------------------------------------------------
+
 
 def test_category_label_maps_section_titles():
     assert sc._category_label("PAYMENTS") == "Finance — Payments"
@@ -312,6 +327,7 @@ def test_category_label_maps_section_titles():
 # ---------------------------------------------------------------------------
 # _languages_from_eyebrow
 # ---------------------------------------------------------------------------
+
 
 def test_languages_from_eyebrow_splits_on_middle_dot():
     assert sc._languages_from_eyebrow("Featured · Python · ISO 20022") == ["Python"]
@@ -331,16 +347,19 @@ def test_languages_from_eyebrow_handles_substring_match_but_exact_for_go():
 # _parse_card + _build_software_source_code
 # ---------------------------------------------------------------------------
 
-def _card(title: str = "pain001",
-          href: str = "https://pain001.com",
-          eyebrow: str = "Featured · Python · ISO 20022",
-          excerpt: str = "Automates ISO 20022 pain.001 file creation.") -> str:
+
+def _card(
+    title: str = "pain001",
+    href: str = "https://pain001.com",
+    eyebrow: str = "Featured · Python · ISO 20022",
+    excerpt: str = "Automates ISO 20022 pain.001 file creation.",
+) -> str:
     return (
         '<article class="newsroom-card">'
         f'<span class="newsroom-eyebrow">{eyebrow}</span>'
         f'<h3><a href="{href}">{title}</a></h3>'
         f'<p class="newsroom-excerpt">{excerpt}</p>'
-        '</article>'
+        "</article>"
     )
 
 
@@ -388,12 +407,16 @@ def test_build_software_source_code_relative_href_resolves_to_site():
 
 
 def test_build_software_source_code_returns_none_on_bad_card():
-    assert sc._build_software_source_code('<article class="newsroom-card"></article>', "", 0) is None
+    assert (
+        sc._build_software_source_code('<article class="newsroom-card"></article>', "", 0) is None
+    )
 
 
 def test_build_software_source_code_omits_languages_when_unknown():
     rec = sc._build_software_source_code(
-        _card(eyebrow="Featured · Tooling"), "", 1,
+        _card(eyebrow="Featured · Tooling"),
+        "",
+        1,
     )
     assert rec is not None
     assert "programmingLanguage" not in rec
@@ -401,7 +424,9 @@ def test_build_software_source_code_omits_languages_when_unknown():
 
 def test_build_software_source_code_emits_languages_list_when_multiple():
     rec = sc._build_software_source_code(
-        _card(eyebrow="Rust · Python"), "OPEN-SOURCE RUST", 1,
+        _card(eyebrow="Rust · Python"),
+        "OPEN-SOURCE RUST",
+        1,
     )
     assert rec is not None
     assert set(rec["programmingLanguage"]) == {"Rust", "Python"}
@@ -411,11 +436,13 @@ def test_build_software_source_code_emits_languages_list_when_multiple():
 # build_projects_source_code (section path + flat fallback) + inject_software_source_code
 # ---------------------------------------------------------------------------
 
+
 def test_build_projects_source_code_walks_sections():
     html = (
         "<main>"
         '<h2 id="payments">PAYMENTS</h2>'
-        + _card() + _card(title="pacs008", href="https://pacs008.com/")
+        + _card()
+        + _card(title="pacs008", href="https://pacs008.com/")
         + '<h2 id="quantum">POST-QUANTUM CRYPTOGRAPHY</h2>'
         + _card(title="KyberLib", href="https://kyberlib.com/", eyebrow="Rust · Quantum")
         + "</main>"
@@ -431,12 +458,19 @@ def test_build_projects_source_code_walks_sections():
 
 
 def test_build_projects_source_code_falls_back_to_flat_when_no_sections():
-    html = "<main>" + _card() + _card(title="qrc", href="https://github.com/sebastienrousseau/qrc") + "</main>"
+    html = (
+        "<main>"
+        + _card()
+        + _card(title="qrc", href="https://github.com/sebastienrousseau/qrc")
+        + "</main>"
+    )
     payload = sc.build_projects_source_code(html)
     assert payload is not None
     graph = json.loads(payload)
     assert graph["numberOfItems"] == 2
-    assert all(it["item"]["applicationCategory"] == "Software Library" for it in graph["itemListElement"])
+    assert all(
+        it["item"]["applicationCategory"] == "Software Library" for it in graph["itemListElement"]
+    )
 
 
 def test_build_projects_source_code_returns_none_on_empty_html():
@@ -486,21 +520,19 @@ def _news_html(
     NewsArticle injector can project from."""
     img_block = f'"image":{{"@type":"ImageObject","url":"{image_url}"}}' if image_url else ""
     section_block = f',"articleSection":"{section}"' if section else ""
-    kw_meta = (
-        f'<meta name="keywords" content="{keywords}">' if keywords else ""
-    )
+    kw_meta = f'<meta name="keywords" content="{keywords}">' if keywords else ""
     return (
         f'<html lang="{lang}"><head>'
-        f'<title>{title}</title>'
+        f"<title>{title}</title>"
         f'<link rel="canonical" href="{canonical}">'
-        f'{kw_meta}'
-        f'</head><body>'
+        f"{kw_meta}"
+        f"</head><body>"
         f'<script type="application/ld+json">'
         f'{{"@type":"BlogPosting","headline":"x",'
         f'"datePublished":"{pub}","dateModified":"{mod}",'
-        f'{img_block}{section_block}}}'
-        f'</script>'
-        f'</body></html>'
+        f"{img_block}{section_block}}}"
+        f"</script>"
+        f"</body></html>"
     )
 
 
@@ -544,9 +576,9 @@ def test_inject_news_article_skips_without_blogposting_dates():
     page = sc.PUBLIC / "2026-06-02-x" / "index.html"
     html = (
         '<html lang="en-GB"><head>'
-        '<title>x</title>'
+        "<title>x</title>"
         '<link rel="canonical" href="https://sebastienrousseau.com/2026-06-02-x/">'
-        '</head><body></body></html>'
+        "</head><body></body></html>"
     )
     out = sc.inject_news_article(page, html, now=_FRESH_NOW)
     assert out == html
@@ -556,8 +588,11 @@ def test_inject_news_article_is_idempotent():
     page = sc.PUBLIC / "2026-06-02-x" / "index.html"
     html = _news_html()
     once = sc.inject_news_article(page, html, now=_FRESH_NOW)
-    twice = sc.inject_news_article(once, page, now=_FRESH_NOW) if False else \
-        sc.inject_news_article(page, once, now=_FRESH_NOW)
+    twice = (
+        sc.inject_news_article(once, page, now=_FRESH_NOW)
+        if False
+        else sc.inject_news_article(page, once, now=_FRESH_NOW)
+    )
     assert once == twice
 
 
@@ -588,7 +623,7 @@ def test_inject_news_article_skips_when_already_present():
         "</body>",
         '<script type="application/ld+json">'
         '{"@type":"NewsArticle","headline":"seeded"}'
-        '</script></body>',
+        "</script></body>",
     )
     out = sc.inject_news_article(page, seeded, now=_FRESH_NOW)
     assert out == seeded

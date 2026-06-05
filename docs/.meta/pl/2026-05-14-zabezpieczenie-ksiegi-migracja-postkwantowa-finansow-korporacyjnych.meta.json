@@ -2,10 +2,10 @@
   "locale": "pl_PL",
   "language": "pl-PL",
   "banner_alt": "Schemat migracji postkwantowej w finansach korporacyjnych",
-  "description": "Ryzyko kwantowe przeszło od ciekawostki badawczej do aktywnego mandatu regulacyjnego. Plan migracji postkwantowej dla finansów korporacyjnych.",
-  "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp",
-  "date": "May 14, 2026",
-  "subtitle": "Plan migracji PQC dla skarbców i operacji finansowych",
   "title": "Zabezpieczanie księgi: migracja postkwantowa w finansach korporacyjnych",
-  "keywords": "migracja postkwantowa, PQC, finanse korporacyjne, skarbce, G7, BIS Project Leap, kryptografia"
+  "date": "May 14, 2026",
+  "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp",
+  "keywords": "migracja postkwantowa, PQC, finanse korporacyjne, skarbce, G7, BIS Project Leap, kryptografia",
+  "subtitle": "Plan migracji PQC dla skarbców i operacji finansowych",
+  "description": "Ryzyko kwantowe przeszło od ciekawostki badawczej do aktywnego mandatu regulacyjnego. Plan migracji postkwantowej dla finansów korporacyjnych."
 }

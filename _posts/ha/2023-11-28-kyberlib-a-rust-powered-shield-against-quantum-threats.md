@@ -124,4 +124,3 @@ Additionally, KyberLib's WebAssembly compatibility enhances its utility in web a
 [07]: https://kyberlib.com/ "Privacy and Security in a Quantum World"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-

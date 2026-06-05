@@ -6,6 +6,7 @@ by the integration smoke gates in build.sh; these unit tests cover
 the loader behaviour, error paths, and `LANGUAGES` invariants that
 the smoke gates can't reach.
 """
+
 from __future__ import annotations
 
 import sys
@@ -54,13 +55,22 @@ class TestLanguagesTable:
 
 
 class TestLoaders:
-    @pytest.mark.parametrize("loader", [
-        lr.load_slugs, lr.load_topics, lr.load_static_pages,
-        lr.load_strings, lr.load_labels, lr.load_takeaway_labels,
-        lr.load_home_patches, lr.load_static_bodies,
-        lr.load_static_patches, lr.load_chrome_patches_inline,
-        lr.load_author,
-    ])
+    @pytest.mark.parametrize(
+        "loader",
+        [
+            lr.load_slugs,
+            lr.load_topics,
+            lr.load_static_pages,
+            lr.load_strings,
+            lr.load_labels,
+            lr.load_takeaway_labels,
+            lr.load_home_patches,
+            lr.load_static_bodies,
+            lr.load_static_patches,
+            lr.load_chrome_patches_inline,
+            lr.load_author,
+        ],
+    )
     def test_active_languages_load_clean(self, loader) -> None:
         for code in ("en", "fr", "de"):
             try:
@@ -103,24 +113,30 @@ class TestSlugResolution:
 class TestParityShapes:
     """These complement the CI gates — every parity gate's reference is EN."""
 
-    @pytest.mark.parametrize("loader,active_only", [
-        (lr.load_strings, False),
-        (lr.load_labels, False),
-        (lr.load_takeaway_labels, False),
-        (lr.load_author, False),
-    ])
+    @pytest.mark.parametrize(
+        "loader,active_only",
+        [
+            (lr.load_strings, False),
+            (lr.load_labels, False),
+            (lr.load_takeaway_labels, False),
+            (lr.load_author, False),
+        ],
+    )
     def test_en_keys_subset_of_fr(self, loader, active_only) -> None:
         en = set(loader("en"))
         fr = set(loader("fr"))
         missing = en - fr
         assert not missing, f"FR missing keys vs EN: {sorted(missing)}"
 
-    @pytest.mark.parametrize("loader,active_only", [
-        (lr.load_strings, False),
-        (lr.load_labels, False),
-        (lr.load_takeaway_labels, False),
-        (lr.load_author, False),
-    ])
+    @pytest.mark.parametrize(
+        "loader,active_only",
+        [
+            (lr.load_strings, False),
+            (lr.load_labels, False),
+            (lr.load_takeaway_labels, False),
+            (lr.load_author, False),
+        ],
+    )
     def test_en_keys_subset_of_de(self, loader, active_only) -> None:
         en = set(loader("en"))
         de = set(loader("de"))

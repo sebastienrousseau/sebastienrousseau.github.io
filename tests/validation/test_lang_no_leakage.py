@@ -21,6 +21,7 @@ Run from repo root: ``python3 scripts/test_lang_no_leakage.py``.
 Exits non-zero on any leakage. Wired into ``build.sh`` so the build
 fails if a future translation gap silently slips through.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -41,20 +42,33 @@ PUBLIC = ROOT / "public"
 # We only scan chrome content (outside <main>). The page lang is read
 # from <html lang=…>.
 _HTML_LANG_RE = re.compile(r'<html\b[^>]*\blang=["\']?([a-zA-Z0-9-]+)', re.IGNORECASE)
-_MAIN_RE = re.compile(r'<main\b[\s\S]*?</main>', re.IGNORECASE)
-_SCRIPT_RE = re.compile(r'<script\b[\s\S]*?</script>', re.IGNORECASE)
-_STYLE_RE = re.compile(r'<style\b[\s\S]*?</style>', re.IGNORECASE)
-_COMMENT_RE = re.compile(r'<!--[\s\S]*?-->')
+_MAIN_RE = re.compile(r"<main\b[\s\S]*?</main>", re.IGNORECASE)
+_SCRIPT_RE = re.compile(r"<script\b[\s\S]*?</script>", re.IGNORECASE)
+_STYLE_RE = re.compile(r"<style\b[\s\S]*?</style>", re.IGNORECASE)
+_COMMENT_RE = re.compile(r"<!--[\s\S]*?-->")
 _LINK_LANG_MENU_RE = re.compile(r'<div class=["\']?ap-lang-menu[\s\S]*?</div>', re.IGNORECASE)
 
 # Strings that legitimately appear in EN form in every language's
 # chrome — brand names, technical terms, proper nouns. These are
 # whitelisted so the gate doesn't flag them.
 _GLOBAL_WHITELIST = (
-    "Sebastien Rousseau", "Banking On Quantum",
-    "RSS", "Atom", "Spotify", "GitHub", "LinkedIn", "Twitter",
-    "X", "YouTube", "Medium", "Apple", "Cloudflare",
-    "ISO 20022", "PQC", "AI", "API",
+    "Sebastien Rousseau",
+    "Banking On Quantum",
+    "RSS",
+    "Atom",
+    "Spotify",
+    "GitHub",
+    "LinkedIn",
+    "Twitter",
+    "X",
+    "YouTube",
+    "Medium",
+    "Apple",
+    "Cloudflare",
+    "ISO 20022",
+    "PQC",
+    "AI",
+    "API",
 )
 
 
@@ -68,9 +82,10 @@ _META_DESC_RE = re.compile(
     re.IGNORECASE,
 )
 _META_KEYWORDS_RE = re.compile(
-    r'<meta\s+name=["\']?keywords[^>]*>', re.IGNORECASE,
+    r'<meta\s+name=["\']?keywords[^>]*>',
+    re.IGNORECASE,
 )
-_TITLE_TAG_RE = re.compile(r'<title>[\s\S]*?</title>', re.IGNORECASE)
+_TITLE_TAG_RE = re.compile(r"<title>[\s\S]*?</title>", re.IGNORECASE)
 _OG_TITLE_RE = re.compile(
     r'<meta\s+(?:name|property)=["\']?(?:og:title|twitter:title)[^>]*>',
     re.IGNORECASE,
@@ -154,8 +169,10 @@ def main() -> int:
         all_problems.extend(check_page(page, en_strings))
 
     if all_problems:
-        print(f"lang-leakage: {len(all_problems)} EN-string leak(s) into non-EN chrome:",
-              file=sys.stderr)
+        print(
+            f"lang-leakage: {len(all_problems)} EN-string leak(s) into non-EN chrome:",
+            file=sys.stderr,
+        )
         for line in all_problems[:30]:
             print(f"  - {line}", file=sys.stderr)
         if len(all_problems) > 30:

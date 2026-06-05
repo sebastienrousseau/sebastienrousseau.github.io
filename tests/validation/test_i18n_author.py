@@ -8,6 +8,7 @@ extra / null fails the build.
 
 Run from repo root: ``python3 scripts/test_i18n_author.py``.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -32,15 +33,14 @@ def check_language(code: str, reference_keys: set[str]) -> list[str]:
         return [str(e)]
     keys = set(data)
     problems: list[str] = [
-        f"[{code}] missing key: {key!r}"
-        for key in sorted(reference_keys - keys)
+        f"[{code}] missing key: {key!r}" for key in sorted(reference_keys - keys)
     ]
     problems.extend(
         f"[{code}] extra key (not in EN reference): {key!r}"
         for key in sorted(keys - reference_keys)
     )
     problems.extend(
-        f"[{code}] key {key!r} has null value (use \"\" if intentional)"
+        f'[{code}] key {key!r} has null value (use "" if intentional)'
         for key, value in data.items()
         if value is None
     )
@@ -60,9 +60,9 @@ def main() -> int:
     reference_keys = set(reference)
 
     lang_dirs = sorted(
-        d.name for d in I18N_DIR.iterdir()
-        if d.is_dir() and d.name != "en"
-        and (d / "author.json").is_file()
+        d.name
+        for d in I18N_DIR.iterdir()
+        if d.is_dir() and d.name != "en" and (d / "author.json").is_file()
     )
     if not lang_dirs:
         print("warn: no non-EN author.json files found", file=sys.stderr)

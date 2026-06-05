@@ -140,4 +140,3 @@ I invite you to visit [**Alien Studio ⧉**][00], to see through the photographs
 [07]: https://en.wikipedia.org/wiki/Artificial_intelligence "Artificial intelligence"
 [08]: https://en.wikipedia.org/wiki/Quantum_computing "Quantum computing"
 [09]: https://www.midjourney.com/explore "Midjourney"
-

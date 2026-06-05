@@ -7,6 +7,7 @@ This module owns everything that runs once at the end of postbuild
 ``PUBLIC`` as a parameter so the orchestrator doesn't have to set a
 module-level constant.
 """
+
 from __future__ import annotations
 
 import json
@@ -200,6 +201,7 @@ def write_robots(public: Path) -> bool:
 # — both authored in the repo root. This pass copies them through so they
 # survive the SSG's auxiliary-file emission. Idempotent.
 
+
 def _copy_through(public: Path, source_root: Path, name: str) -> bool:
     src = source_root / name
     dst = public / name
@@ -251,13 +253,27 @@ def build_llms_txt() -> str:
     out.append("## Canonical entry points")
     out.append("")
     out.append(f"- [Home]({base}/) — landing page with the latest research and projects.")
-    out.append(f"- [About]({base}/about/) — full biography, professional history, areas of expertise.")
-    out.append(f"- [Articles]({base}/articles/) — research notes on quantum-safe cryptography, ISO 20022, applied AI, wholesale payments.")
-    out.append(f"- [Papers]({base}/papers/) — industry white papers, peer-reviewed analysis, regulatory submissions.")
-    out.append(f"- [Projects]({base}/projects/) — open-source Python and Rust libraries for payments, post-quantum crypto, AI tooling.")
-    out.append(f"- [Topics]({base}/topics/) — topic hubs: post-quantum, ISO 20022, applied AI, Rust, blockchain.")
-    out.append(f"- [Playlists]({base}/playlists/) — curated music libraries for deep work and engineering flow.")
-    out.append(f"- [Contact]({base}/contact/) — professional contact form for consulting, speaking, advisory engagements.")
+    out.append(
+        f"- [About]({base}/about/) — full biography, professional history, areas of expertise."
+    )
+    out.append(
+        f"- [Articles]({base}/articles/) — research notes on quantum-safe cryptography, ISO 20022, applied AI, wholesale payments."
+    )
+    out.append(
+        f"- [Papers]({base}/papers/) — industry white papers, peer-reviewed analysis, regulatory submissions."
+    )
+    out.append(
+        f"- [Projects]({base}/projects/) — open-source Python and Rust libraries for payments, post-quantum crypto, AI tooling."
+    )
+    out.append(
+        f"- [Topics]({base}/topics/) — topic hubs: post-quantum, ISO 20022, applied AI, Rust, blockchain."
+    )
+    out.append(
+        f"- [Playlists]({base}/playlists/) — curated music libraries for deep work and engineering flow."
+    )
+    out.append(
+        f"- [Contact]({base}/contact/) — professional contact form for consulting, speaking, advisory engagements."
+    )
     out.append("")
     out.append("## Feeds")
     out.append("")
@@ -333,9 +349,13 @@ def build_llms_ctx_txt() -> str:
     out.append(f"- {base}/                — Home: latest research and projects.")
     out.append(f"- {base}/about/          — Biography, credentials (ORCID 0009-0005-1434-284X).")
     out.append(f"- {base}/articles/       — Research notes: PQC, ISO 20022, payments, applied AI.")
-    out.append(f"- {base}/papers/         — White papers, peer-reviewed analysis, regulatory submissions.")
+    out.append(
+        f"- {base}/papers/         — White papers, peer-reviewed analysis, regulatory submissions."
+    )
     out.append(f"- {base}/projects/       — Open-source Python and Rust libraries.")
-    out.append(f"- {base}/topics/         — Topic hubs: post-quantum, ISO 20022, applied AI, Rust, blockchain.")
+    out.append(
+        f"- {base}/topics/         — Topic hubs: post-quantum, ISO 20022, applied AI, Rust, blockchain."
+    )
     out.append(f"- {base}/contact/        — Professional contact form.")
     out.append("")
     out.append("## Feeds")
@@ -534,12 +554,12 @@ def write_llms_full_txt(public: Path) -> bool:
 
 
 _TITLE_INSIDE_RE = re.compile(
-    r'<(?:title|news:title)[^>]*>([\s\S]*?)</(?:title|news:title)>',
+    r"<(?:title|news:title)[^>]*>([\s\S]*?)</(?:title|news:title)>",
     re.IGNORECASE,
 )
-_RSS_ITEM_RE   = re.compile(r'<item>[\s\S]*?</item>', re.IGNORECASE)
-_ATOM_ENTRY_RE = re.compile(r'<entry>[\s\S]*?</entry>', re.IGNORECASE)
-_NEWS_URL_RE   = re.compile(r'<url>[\s\S]*?</url>', re.IGNORECASE)
+_RSS_ITEM_RE = re.compile(r"<item>[\s\S]*?</item>", re.IGNORECASE)
+_ATOM_ENTRY_RE = re.compile(r"<entry>[\s\S]*?</entry>", re.IGNORECASE)
+_NEWS_URL_RE = re.compile(r"<url>[\s\S]*?</url>", re.IGNORECASE)
 
 
 def _build_title_index() -> dict[str, str]:
@@ -592,12 +612,14 @@ def _index_title(idx: dict[str, str], title: str, url: str) -> None:
 
 
 def _decode_entities(s: str) -> str:
-    return (s.replace("&amp;", "&")
-             .replace("&lt;", "<")
-             .replace("&gt;", ">")
-             .replace("&quot;", '"')
-             .replace("&apos;", "'")
-             .strip())
+    return (
+        s.replace("&amp;", "&")
+        .replace("&lt;", "<")
+        .replace("&gt;", ">")
+        .replace("&quot;", '"')
+        .replace("&apos;", "'")
+        .strip()
+    )
 
 
 def _patch_block(block: str, title_index: dict[str, str]) -> str:
@@ -613,19 +635,19 @@ def _patch_block(block: str, title_index: dict[str, str]) -> str:
     # Replace any URL inside this block that either has a localhost host or
     # has /.meta/ anywhere in its path — that's the Shokunin bug signature.
     bad_url = (
-        r'https?://'
-        r'(?:'
+        r"https?://"
+        r"(?:"
         # localhost host (any path)
         r'(?:127\.0\.0\.1|localhost)(?::\d+)?[^<\s"]*'
         # OR any host with a /.meta/ path segment
         r'|[^<\s"]*?/\.meta(?:/[^<\s"]*)?'
-        r')'
+        r")"
     )
 
     def rewrite_url(m: re.Match[str]) -> str:
         return m.group(1) + url + m.group(3)
 
-    block = re.sub(rf'(>\s*)({bad_url})(\s*<)', rewrite_url, block)
+    block = re.sub(rf"(>\s*)({bad_url})(\s*<)", rewrite_url, block)
     block = re.sub(rf'(="\s*)({bad_url})(\s*")', rewrite_url, block)
     return block
 
@@ -654,15 +676,15 @@ def fix_xml_feed_urls(public: Path) -> int:
         # processing the nested _posts/fr/ directory and don't belong in
         # the news-sitemap.
         text = re.sub(
-            r'<url>\s*<loc>[^<]*\/\.meta\/[^<]*</loc>[\s\S]*?</url>\s*',
-            '',
+            r"<url>\s*<loc>[^<]*\/\.meta\/[^<]*</loc>[\s\S]*?</url>\s*",
+            "",
             text,
         )
 
         # Top-of-feed cleanup: any residual localhost reference becomes the
         # production root. Done last so it doesn't shadow per-block matches.
         text = re.sub(
-            r'https?://(?:127\.0\.0\.1|localhost)(?::\d+)?',
+            r"https?://(?:127\.0\.0\.1|localhost)(?::\d+)?",
             "https://sebastienrousseau.com",
             text,
         )
@@ -678,8 +700,8 @@ def fix_xml_feed_urls(public: Path) -> int:
 # ---------------------------------------------------------------------------
 
 
-_VALID_ENTITY_RE = re.compile(r'&(amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);')
-_DOUBLE_ESCAPE_RE = re.compile(r'&amp;(amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);')
+_VALID_ENTITY_RE = re.compile(r"&(amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);")
+_DOUBLE_ESCAPE_RE = re.compile(r"&amp;(amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);")
 
 
 def escape_xml_ampersands(text: str) -> str:
@@ -692,19 +714,19 @@ def escape_xml_ampersands(text: str) -> str:
 
     Walks the string in one pass after the double-escape repair.
     """
-    text = _DOUBLE_ESCAPE_RE.sub(r'&\1;', text)
+    text = _DOUBLE_ESCAPE_RE.sub(r"&\1;", text)
     out: list[str] = []
     i = 0
     n = len(text)
     while i < n:
         ch = text[i]
-        if ch == '&':
+        if ch == "&":
             m = _VALID_ENTITY_RE.match(text, i)
             if m:
                 out.append(m.group(0))
                 i = m.end()
                 continue
-            out.append('&amp;')
+            out.append("&amp;")
             i += 1
         else:
             out.append(ch)
@@ -731,12 +753,12 @@ def fix_xml_feeds(public: Path) -> int:
 # generator can collapse multiple locale files onto the same per-item URL
 # instead of emitting distinct per-locale URLs, producing identical-by-link
 # duplicates that fail xmlls/lib2-news validation downstream.
-_RSS_ITEM_RE = re.compile(r'<item>[\s\S]*?</item>', re.IGNORECASE)
-_ATOM_ENTRY_RE = re.compile(r'<entry>[\s\S]*?</entry>', re.IGNORECASE)
-_SITEMAP_URL_RE = re.compile(r'<url>[\s\S]*?</url>', re.IGNORECASE)
-_LINK_RE = re.compile(r'<link[^>]*>([\s\S]*?)</link>', re.IGNORECASE)
+_RSS_ITEM_RE = re.compile(r"<item>[\s\S]*?</item>", re.IGNORECASE)
+_ATOM_ENTRY_RE = re.compile(r"<entry>[\s\S]*?</entry>", re.IGNORECASE)
+_SITEMAP_URL_RE = re.compile(r"<url>[\s\S]*?</url>", re.IGNORECASE)
+_LINK_RE = re.compile(r"<link[^>]*>([\s\S]*?)</link>", re.IGNORECASE)
 _ATOM_LINK_HREF_RE = re.compile(r'<link[^>]*\bhref="([^"]+)"', re.IGNORECASE)
-_LOC_RE = re.compile(r'<loc>([\s\S]*?)</loc>', re.IGNORECASE)
+_LOC_RE = re.compile(r"<loc>([\s\S]*?)</loc>", re.IGNORECASE)
 
 
 def _dedupe_blocks(text: str, block_re: re.Pattern[str], key_fn) -> tuple[str, int]:
@@ -748,7 +770,7 @@ def _dedupe_blocks(text: str, block_re: re.Pattern[str], key_fn) -> tuple[str, i
     cursor = 0
     dropped = 0
     for m in block_re.finditer(text):
-        out.append(text[cursor:m.start()])
+        out.append(text[cursor : m.start()])
         block = m.group(0)
         key = key_fn(block)
         if key and key in seen:
@@ -787,8 +809,8 @@ def dedupe_xml_feeds(public: Path) -> int:
     the count of files actually rewritten."""
     n = 0
     targets = [
-        (public / "rss.xml",          _RSS_ITEM_RE,    _rss_key),
-        (public / "atom.xml",         _ATOM_ENTRY_RE,  _atom_key),
+        (public / "rss.xml", _RSS_ITEM_RE, _rss_key),
+        (public / "atom.xml", _ATOM_ENTRY_RE, _atom_key),
         (public / "news-sitemap.xml", _SITEMAP_URL_RE, _sitemap_key),
     ]
     for xml, block_re, key_fn in targets:
@@ -806,7 +828,14 @@ _SITE = "https://sebastienrousseau.com"
 
 # Pages excluded from sitemap by convention. Keep in sync with
 # scripts/test_sitemap_completeness.py.
-_SITEMAP_EXCLUDE_TAILS = ("/404/", "/offline/", "/thanks/", "/fr/404/", "/fr/hors-ligne/", "/fr/merci/")
+_SITEMAP_EXCLUDE_TAILS = (
+    "/404/",
+    "/offline/",
+    "/thanks/",
+    "/fr/404/",
+    "/fr/hors-ligne/",
+    "/fr/merci/",
+)
 _SITEMAP_EXCLUDE_PREFIXES = ("/labs/",)
 
 
@@ -821,17 +850,11 @@ def _path_excluded_from_sitemap(path: str) -> bool:
     """Mirror the exclude policy used by test_sitemap_completeness."""
     if any(path.startswith(p) for p in _SITEMAP_EXCLUDE_PREFIXES):
         return True
-    return any(
-        path.startswith(tail) or path == tail.rstrip("/")
-        for tail in _SITEMAP_EXCLUDE_TAILS
-    )
+    return any(path.startswith(tail) or path == tail.rstrip("/") for tail in _SITEMAP_EXCLUDE_TAILS)
 
 
 def _collect_sitemap_urls(text: str) -> set[str]:
-    return {
-        _normalise_url(m.group(1))
-        for m in re.finditer(r'<loc>([^<]+)</loc>', text)
-    }
+    return {_normalise_url(m.group(1)) for m in re.finditer(r"<loc>([^<]+)</loc>", text)}
 
 
 def _missing_rendered_urls(public: Path, existing: set[str]) -> list[str]:
@@ -872,7 +895,7 @@ def augment_sitemap_with_rendered_pages(public: Path) -> int:
     additions = _missing_rendered_urls(public, _collect_sitemap_urls(text))
     if not additions:
         return 0
-    m = re.search(r'<lastmod>(\d{4}-\d{2}-\d{2})</lastmod>', text)
+    m = re.search(r"<lastmod>(\d{4}-\d{2}-\d{2})</lastmod>", text)
     today = m.group(1) if m else ""
     # `additions` already ends with `/` — the canonical pretty URL.
     block = "".join(
@@ -880,12 +903,12 @@ def augment_sitemap_with_rendered_pages(public: Path) -> int:
         f"  <lastmod>{today}</lastmod>\n  <loc>{u}</loc>\n</url>"
         for u in additions
     )
-    new_text = re.sub(r'</urlset>\s*$', block + "\n</urlset>\n", text, count=1)
+    new_text = re.sub(r"</urlset>\s*$", block + "\n</urlset>\n", text, count=1)
     sitemap.write_text(new_text, encoding="utf-8")
     return len(additions)
 
 
-_URL_BLOCK_FOR_DEDUP_RE = re.compile(r'<url>[\s\S]*?</url>', re.MULTILINE)
+_URL_BLOCK_FOR_DEDUP_RE = re.compile(r"<url>[\s\S]*?</url>", re.MULTILINE)
 
 
 def dedupe_sitemap_index_html(sitemap_path: Path) -> int:
@@ -948,8 +971,8 @@ def dedupe_sitemap_index_html(sitemap_path: Path) -> int:
     return touched
 
 
-_NEWS_TITLE_RE = re.compile(r'(<news:title>)([\s\S]*?)(</news:title>)', re.IGNORECASE)
-_NEWS_KEYWORDS_RE = re.compile(r'(<news:keywords>)([\s\S]*?)(</news:keywords>)', re.IGNORECASE)
+_NEWS_TITLE_RE = re.compile(r"(<news:title>)([\s\S]*?)(</news:title>)", re.IGNORECASE)
+_NEWS_KEYWORDS_RE = re.compile(r"(<news:keywords>)([\s\S]*?)(</news:keywords>)", re.IGNORECASE)
 
 
 def _truncate_news_title(title: str, limit: int = 80) -> str:
@@ -1052,7 +1075,9 @@ def refresh_sitemap_lastmod(sitemap_path: Path, index: dict[str, str]) -> int:
             new_block = _LASTMOD_RE.sub(new_lastmod, block, count=1)
         else:
             new_block = block.replace(
-                "</loc>", f"</loc>\n  {new_lastmod}", 1,
+                "</loc>",
+                f"</loc>\n  {new_lastmod}",
+                1,
             )
         if new_block != block:
             n += 1
@@ -1066,14 +1091,27 @@ def refresh_sitemap_lastmod(sitemap_path: Path, index: dict[str, str]) -> int:
 
 _SITEMAP_BASE = "https://sebastienrousseau.com"
 _STATIC_SLUGS = (
-    "about", "articles", "papers", "projects", "topics", "tags",
-    "playlists", "contact", "accessibility", "privacy", "terms",
-    "made-with-shokunin", "made-with-static-site-generator",
+    "about",
+    "articles",
+    "papers",
+    "projects",
+    "topics",
+    "tags",
+    "playlists",
+    "contact",
+    "accessibility",
+    "privacy",
+    "terms",
+    "made-with-shokunin",
+    "made-with-static-site-generator",
     "resources-pacs008-checklist",
 )
 _TOPIC_SLUGS = (
-    "post-quantum-cryptography", "iso-20022-payments",
-    "applied-ai-banking", "rust-open-source", "blockchain-digital-assets",
+    "post-quantum-cryptography",
+    "iso-20022-payments",
+    "applied-ai-banking",
+    "rust-open-source",
+    "blockchain-digital-assets",
 )
 
 
@@ -1100,9 +1138,7 @@ def _en_sitemap_urls(lastmod_index: dict[str, str]) -> list[tuple[str, str, str,
     return out
 
 
-def _lang_sitemap_urls(
-    code: str, lastmod_index: dict[str, str]
-) -> list[tuple[str, str, str, str]]:
+def _lang_sitemap_urls(code: str, lastmod_index: dict[str, str]) -> list[tuple[str, str, str, str]]:
     """Return ``(url, priority, changefreq, lastmod)`` tuples for a single
     non-EN language tree (home + statics + topics + articles)."""
     slugs = _lr.load_slugs(code)
@@ -1125,7 +1161,12 @@ def _lang_sitemap_urls(
         for topic in _TOPIC_SLUGS
     )
     out.extend(
-        (f"{_SITEMAP_BASE}/{code}/{lang_slug}/", "0.7", "monthly", lastmod_index.get(en_art_slug, ""))
+        (
+            f"{_SITEMAP_BASE}/{code}/{lang_slug}/",
+            "0.7",
+            "monthly",
+            lastmod_index.get(en_art_slug, ""),
+        )
         for en_art_slug, lang_slug in articles.items()
     )
     return out

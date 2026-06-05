@@ -108,4 +108,3 @@ By embracing QKD, HSBC has set a new benchmark in financial cybersecurity, pavin
 [01]: https://cloudcdn.pro/stocks/images/quantum-computer-room.webp "Entangled Photons"
 [02]: https://cloudcdn.pro/stocks/diagrams/qkd-qc-market-value.svg "QKD and Quantum Computing Market Value"
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-

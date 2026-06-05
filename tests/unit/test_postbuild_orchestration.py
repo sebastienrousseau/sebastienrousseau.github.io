@@ -11,6 +11,7 @@ Strategy: feed the orchestrators a tiny synthetic ``public/`` tree
 created via ``tmp_path`` + monkeypatch, then assert the on-disk + return
 shape they produce.
 """
+
 from __future__ import annotations
 
 import json
@@ -37,19 +38,19 @@ def _minimal_page_html(lang: str = "en", title: str = "Test", *, with_jsonld: bo
         else ""
     )
     return (
-        f"<!doctype html><html lang=\"{lang}\"><head>"
-        f"<meta charset=\"UTF-8\">"
+        f'<!doctype html><html lang="{lang}"><head>'
+        f'<meta charset="UTF-8">'
         f"<title>{title}</title>"
-        f"<meta name=\"description\" content=\"{title}\">"
-        f"<meta property=\"og:image\" content=\"https://example.com/og.webp\">"
-        f"<link rel=\"canonical\" href=\"https://sebastienrousseau.com/{title}/\">"
-        f"<meta http-equiv=\"Content-Security-Policy\" content=\""
+        f'<meta name="description" content="{title}">'
+        f'<meta property="og:image" content="https://example.com/og.webp">'
+        f'<link rel="canonical" href="https://sebastienrousseau.com/{title}/">'
+        f'<meta http-equiv="Content-Security-Policy" content="'
         f"default-src 'self'; base-uri 'self'; object-src 'none'; "
         f"script-src 'self' 'inline-speculation-rules';"
-        f"\">"
-        f"</head><body><main class=\"content\"><h1>{title}</h1>"
-        f"<p>Body copy with a <a href=\"#anchor\">link</a>.</p>"
-        f"<img src=\"https://cdn.example/{title}.webp\" alt=\"x\">"
+        f'">'
+        f'</head><body><main class="content"><h1>{title}</h1>'
+        f'<p>Body copy with a <a href="#anchor">link</a>.</p>'
+        f'<img src="https://cdn.example/{title}.webp" alt="x">'
         f"</main>{jsonld}</body></html>"
     )
 
@@ -66,6 +67,7 @@ def fake_public(tmp_path: Path, monkeypatch):
     import postbuild_lib.article_furniture as af
     import postbuild_lib.schemas as schemas
     import postbuild_lib.seo as seo
+
     monkeypatch.setattr(af, "PUBLIC", pub)
     monkeypatch.setattr(schemas, "PUBLIC", pub)
     monkeypatch.setattr(seo, "PUBLIC", pub)
@@ -155,18 +157,18 @@ def test_is_topic_page_false_for_regular_article(fake_public: Path):
 
 
 def test_home_hreflang_injects_all_langs():
-    html = '<head><title>x</title></head><body></body>'
+    html = "<head><title>x</title></head><body></body>"
     out = pb._home_hreflang(html)
     assert 'hreflang="en"' in out
     assert 'hreflang="fr"' in out
     assert 'hreflang="x-default"' in out
-    assert out.count('hreflang=') >= 3
+    assert out.count("hreflang=") >= 3
 
 
 def test_topic_hreflang_includes_x_default():
-    html = '<head><title>x</title></head><body></body>'
+    html = "<head><title>x</title></head><body></body>"
     out = pb._topic_hreflang(html, "ai")
-    assert 'topics/ai/' in out
+    assert "topics/ai/" in out
     assert 'hreflang="x-default"' in out
 
 
@@ -176,9 +178,7 @@ def test_topic_hreflang_includes_x_default():
 
 
 def test_scrub_localhost_urls_rewrites_127():
-    out, n = pb.scrub_localhost_urls(
-        '<a href="http://127.0.0.1:8000/foo">x</a>'
-    )
+    out, n = pb.scrub_localhost_urls('<a href="http://127.0.0.1:8000/foo">x</a>')
     assert n == 1
     assert "https://sebastienrousseau.com/foo" in out
 
@@ -201,10 +201,7 @@ def test_scrub_localhost_urls_no_op_when_clean():
 
 
 def test_card_title_url_picks_longest_text_link():
-    body = (
-        '<a class="newsroom-card-media" href="/foo/"></a>'
-        '<a href="/foo/">A Long Headline</a>'
-    )
+    body = '<a class="newsroom-card-media" href="/foo/"></a>' '<a href="/foo/">A Long Headline</a>'
     pair = pb._card_title_url(body)
     assert pair == ("A Long Headline", pb.SITE + "/foo/")
 
@@ -272,8 +269,10 @@ def test_stamp_asset_fingerprints_rewrites_bare_main_js(monkeypatch):
     monkeypatch.setattr(pb, "_FP_PATTERN", pb._build_fp_pattern())
     # Re-import pattern with the new map.
     import re
+
     monkeypatch.setattr(
-        pb, "_FP_PATTERN",
+        pb,
+        "_FP_PATTERN",
         re.compile(
             r'(<(?:script|link)\b[^>]*\b(?:src|href)=["\']?)(/main\.js)(["\']?[^>]*>)',
             re.IGNORECASE,
@@ -316,8 +315,11 @@ def test_fix_sri_skips_tag_with_no_matchable_close(monkeypatch):
     monkeypatch.setattr(pb, "asset_hashes", {"foo.css": "abcd"})
     # Patch the close-tag regex to one that won't match.
     import re
+
     monkeypatch.setattr(
-        pb, "_TAG_CLOSE_RE", re.compile(r"<<NEVER_MATCH>>"),
+        pb,
+        "_TAG_CLOSE_RE",
+        re.compile(r"<<NEVER_MATCH>>"),
     )
     html = '<link href="/_csp/foo.css" integrity="sha256-old">'
     # Pass should leave the tag untouched.
@@ -358,8 +360,8 @@ def test_apply_seo_passes_no_op_inputs(fake_public: Path):
         '<!doctype html><html lang="en"><head><title>x</title>'
         '<meta name="description" content="x">'
         '<meta http-equiv="Content-Security-Policy" '
-        'content="default-src \'self\'; base-uri \'self\'; '
-        'object-src \'none\'; script-src \'self\';">'
+        "content=\"default-src 'self'; base-uri 'self'; "
+        "object-src 'none'; script-src 'self';\">"
         "</head><body><p>no main</p></body></html>",
         encoding="utf-8",
     )
@@ -372,11 +374,14 @@ def test_apply_article_passes_no_op_inputs(fake_public: Path):
     page = fake_public / "post" / "index.html"
     page.parent.mkdir()
     page.write_text(
-        "<html><body><p>plain</p></body></html>", encoding="utf-8",
+        "<html><body><p>plain</p></body></html>",
+        encoding="utf-8",
     )
     ctr = pb._PostbuildCounters()
     out = pb._apply_article_passes(
-        page.read_text(encoding="utf-8"), page, ctr,
+        page.read_text(encoding="utf-8"),
+        page,
+        ctr,
     )
     assert out is not None
 
@@ -387,7 +392,8 @@ def test_apply_nav_passes_no_op_inputs(fake_public: Path):
     page = fake_public / "unknown-slug" / "index.html"
     page.parent.mkdir()
     page.write_text(
-        "<html><body><p>plain</p></body></html>", encoding="utf-8",
+        "<html><body><p>plain</p></body></html>",
+        encoding="utf-8",
     )
     ctx = pb._PostbuildContext([page])
     src = page.read_text(encoding="utf-8")
@@ -402,13 +408,13 @@ def test_apply_hreflang_pass_for_regular_article(fake_public: Path):
     page = fake_public / "some-article" / "index.html"
     page.parent.mkdir()
     page.write_text(
-        '<html><head><title>x</title></head><body></body></html>',
+        "<html><head><title>x</title></head><body></body></html>",
         encoding="utf-8",
     )
     ctx = pb._PostbuildContext([page])
     out = pb._apply_hreflang_pass(page.read_text(encoding="utf-8"), page, ctx)
     assert out  # may or may not inject hreflang depending on translation
-                # registry — the important thing is the branch ran.
+    # registry — the important thing is the branch ran.
 
 
 # ---------------------------------------------------------------------------
@@ -422,7 +428,7 @@ def test_apply_hreflang_pass_for_regular_article(fake_public: Path):
 
 _TRIGGER_HTML = (
     '<!doctype html><html lang="en"><head>'
-    '<title>Trigger article</title>'
+    "<title>Trigger article</title>"
     '<meta name="description" content="x">'
     # og:image is a placeholder (the summary card form) — fix_social_image
     # rewrites it to summary_large_image.
@@ -435,23 +441,23 @@ _TRIGGER_HTML = (
     "default-src 'self'; base-uri 'self'; object-src 'none'; "
     "script-src 'self';"
     '">'
-    '</head><body>'
+    "</head><body>"
     '<main class="content">'
-    '<h1>Trigger</h1>'
+    "<h1>Trigger</h1>"
     # A HowTo class on a div triggers inject_howto.
     '<div class="howto"><h2>Step 1</h2><p>Do thing.</p></div>'
     # Article body so word-count + about + tag passes fire.
-    '<p>Article body that has more than five words to trigger word count.</p>'
+    "<p>Article body that has more than five words to trigger word count.</p>"
     # Citations + sources markers.
     '<aside class="article-citations"></aside>'
     # Article-furniture trigger: a <header><h1>Trigger</h1></header> stub.
-    '<header><h1>Trigger</h1></header>'
+    "<header><h1>Trigger</h1></header>"
     # Mermaid block.
     '<pre class="mermaid">graph TD; A-->B;</pre>'
     # An <a> tag to trigger anchor-links if h2 exists.
     '<h2 id="section">Section</h2>'
     # Sigstore badge trigger: page has class=article + slug.
-    '</main></body></html>'
+    "</main></body></html>"
 )
 
 
@@ -463,7 +469,8 @@ def test_apply_seo_passes_increments_counters_for_full_trigger(fake_public: Path
     page.write_text(_TRIGGER_HTML, encoding="utf-8")
     # Stamp a fake asset hash so fix_sri actually changes the HTML.
     monkeypatch.setitem(
-        pb.asset_hashes, "triggercss.css",
+        pb.asset_hashes,
+        "triggercss.css",
         "FAKEHASH/ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+abc=",
     )
     ctr = pb._PostbuildCounters()
@@ -514,8 +521,12 @@ def test_apply_seo_passes_against_a_real_listing_page(monkeypatch):
     src = page.read_text(encoding="utf-8")
     # Force a stale SRI on a known asset so fix_sri ticks its counter.
     import re
+
     src2 = re.sub(
-        r'integrity="sha256-[^"]+"', 'integrity="sha256-STALE"', src, count=1,
+        r'integrity="sha256-[^"]+"',
+        'integrity="sha256-STALE"',
+        src,
+        count=1,
     )
     ctr = pb._PostbuildCounters()
     pb._apply_seo_passes(src2, page, ctr)
@@ -526,7 +537,8 @@ def test_apply_seo_passes_against_a_real_listing_page(monkeypatch):
 
 
 def test_apply_nav_passes_increments_when_nav_index_has_match(
-    fake_public: Path, monkeypatch,
+    fake_public: Path,
+    monkeypatch,
 ):
     """If nav_index returns prev/next for a slug, _apply_nav_passes
     rewrites the HTML and bumps nav_patched (L755)."""
@@ -534,7 +546,8 @@ def test_apply_nav_passes_increments_when_nav_index_has_match(
     page.parent.mkdir()
     # Page must end with </main> so inject_prev_next_nav has an anchor.
     page.write_text(
-        "<html><body><main>x</main></body></html>", encoding="utf-8",
+        "<html><body><main>x</main></body></html>",
+        encoding="utf-8",
     )
     ctx = pb._PostbuildContext([page])
     # Inject a synthetic nav entry for the slug.
@@ -545,7 +558,9 @@ def test_apply_nav_passes_increments_when_nav_index_has_match(
         }
     }
     out = pb._apply_nav_passes(
-        page.read_text(encoding="utf-8"), page, ctx,
+        page.read_text(encoding="utf-8"),
+        page,
+        ctx,
     )
     # If injection happened, the counter goes up. We just need the
     # branch evaluated either way.
@@ -583,12 +598,12 @@ _SOCIAL_TRIGGER_HTML = (
     '<meta http-equiv="Content-Security-Policy" content="'
     "default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self';"
     '"></head><body><main class="content"><h1>Headline</h1>'
-    '<p>Body text with more than five words for word-count to fire.</p>'
+    "<p>Body text with more than five words for word-count to fire.</p>"
     '<script type="application/ld+json">'
     '{"@context":"https://schema.org","@type":"BlogPosting",'
     '"headline":"x","image":{"url":"https://cdn.example/banner.webp",'
     '"width":1200,"height":675}}'
-    '</script></main></body></html>'
+    "</script></main></body></html>"
 )
 
 
@@ -607,7 +622,7 @@ def test_apply_seo_passes_fires_social_and_og_counters(fake_public: Path):
 
 _DATED_TECH_TRIGGER_HTML = (
     '<!doctype html><html lang="en-GB"><head>'
-    '<title>Quantum Migration Guide</title>'
+    "<title>Quantum Migration Guide</title>"
     '<meta name="description" content="x">'
     # <meta name=keywords> is what inject_tech_article reads.
     '<meta name="keywords" content="post-quantum cryptography, CRYSTALS-Kyber, Python, Rust">'
@@ -617,8 +632,8 @@ _DATED_TECH_TRIGGER_HTML = (
     "default-src 'self'; base-uri 'self'; object-src 'none'; "
     "script-src 'self';"
     '"></head><body><main class="content">'
-    '<h1>Quantum Migration Guide</h1>'
-    '<p>Body copy with more than five words for the word-count pass.</p>'
+    "<h1>Quantum Migration Guide</h1>"
+    "<p>Body copy with more than five words for the word-count pass.</p>"
     '<script type="application/ld+json">'
     '{"@context":"https://schema.org","@type":"BlogPosting",'
     '"headline":"Quantum Migration Guide",'
@@ -626,8 +641,8 @@ _DATED_TECH_TRIGGER_HTML = (
     # The JSON-LD-level "keywords" field is what inject_about reads.
     '"keywords":"post-quantum cryptography, CRYSTALS-Kyber, Python, Rust",'
     '"image":{"url":"https://cdn.example/banner.webp","width":1200,"height":675}}'
-    '</script>'
-    '</main></body></html>'
+    "</script>"
+    "</main></body></html>"
 )
 
 
@@ -673,8 +688,8 @@ def test_apply_seo_passes_fires_softwaresourcecode_on_projects(fake_public: Path
         '<span class="newsroom-eyebrow">Python · Payments</span>'
         '<h3><a href="https://pain001.com">pain001</a></h3>'
         '<p class="newsroom-excerpt">A Python library.</p>'
-        '</article>'
-        '</main></body></html>'
+        "</article>"
+        "</main></body></html>"
     )
     page.write_text(src, encoding="utf-8")
     ctr = pb._PostbuildCounters()
@@ -687,6 +702,7 @@ def test_apply_seo_passes_fires_howto_for_known_howto_slug(fake_public: Path):
     ``postbuild_lib.seo.HOWTO_SCHEMAS`` and the HTML doesn't already
     have a HowTo JSON-LD. Drives L693."""
     import postbuild_lib.seo as seo
+
     if not seo.HOWTO_SCHEMAS:
         pytest.skip("no HowTo schemas registered")
     slug = next(iter(seo.HOWTO_SCHEMAS))
@@ -711,18 +727,18 @@ def test_apply_seo_passes_fires_howto_for_known_howto_slug(fake_public: Path):
 # Article-furniture branches: drive a page with all the markers each
 # transform looks for.
 _ARTICLE_TRIGGER_HTML = (
-    '<html><body>'
-    '<header><h1>Article title</h1></header>'
+    "<html><body>"
+    "<header><h1>Article title</h1></header>"
     '<main class="content">'
-    '<h1>Article title</h1>'
+    "<h1>Article title</h1>"
     '<h2 id="part-one">Part one</h2>'
-    '<p>Body text.</p>'
+    "<p>Body text.</p>"
     '<h2 id="part-two">Part two</h2>'
-    '<p>More body text.</p>'
+    "<p>More body text.</p>"
     '<pre class="mermaid">graph TD; A-->B;</pre>'
     '<aside class="article-citations">[1] cite</aside>'
     '<ul class="article-sources"><li><a href="/x">Source</a></li></ul>'
-    '</main></body></html>'
+    "</main></body></html>"
 )
 
 
@@ -743,7 +759,7 @@ def test_apply_nav_passes_branch_when_nav_present(fake_public: Path, monkeypatch
     page = fake_public / "real-slug" / "index.html"
     page.parent.mkdir()
     page.write_text(
-        '<html><body><main><h1>x</h1></main></body></html>',
+        "<html><body><main><h1>x</h1></main></body></html>",
         encoding="utf-8",
     )
     ctx = pb._PostbuildContext([page])
@@ -785,6 +801,7 @@ def test_apply_article_passes_against_stripped_real_article():
     src = page.read_text(encoding="utf-8")
     # Strip postbuild markers that gate idempotency in the article passes.
     import re
+
     src2 = re.sub(r'<div class="article-tags">[\s\S]*?</div>', "", src)
     src2 = re.sub(r' id="[^"]+"', "", src2, count=10)
     src2 = re.sub(r'<aside class="article-citations">[\s\S]*?</aside>', "", src2)
@@ -820,6 +837,7 @@ def test_apply_nav_passes_bumps_counter_with_real_nav_index():
     src = page.read_text(encoding="utf-8")
     # Remove any pre-existing nav-active class so inject_nav_active fires.
     import re
+
     src2 = re.sub(r' class="nav-active"', "", src)
     out = pb._apply_nav_passes(src2, page, ctx)
     assert out is not None
@@ -839,7 +857,7 @@ def test_apply_article_passes_fires_furniture_counter(fake_public: Path):
         '{"@type":"BlogPosting","keywords":"AI, Python",'
         '"datePublished":"2026-05-19T00:00:00Z","dateModified":"2026-05-19T00:00:00Z",'
         '"wordCount":500}'
-        '</script>'
+        "</script>"
         '<section class="ap-hero"><h1>Title</h1></section>'
         '<main class="content"></main>'
     )
@@ -857,9 +875,9 @@ def test_apply_article_passes_fires_anchor_counter(fake_public: Path):
     src = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<main class="content"><div class="wrap">'
-        '<h2>Section one</h2><p>x</p>'
-        '<h2>Section two</h2><p>y</p>'
-        '</div></main>'
+        "<h2>Section one</h2><p>x</p>"
+        "<h2>Section two</h2><p>y</p>"
+        "</div></main>"
     )
     page = fake_public / "p" / "index.html"
     page.parent.mkdir()
@@ -876,10 +894,10 @@ def test_apply_article_passes_fires_citation_counter(fake_public: Path):
     src = (
         '<script type="application/ld+json">'
         '{"@type":"BlogPosting","speakable":{"@type":"SpeakableSpecification"}}'
-        '</script>'
+        "</script>"
         '<main class="content"><div class="wrap">'
         '<p>See the <a href="https://www.iso20022.org/">ISO 20022</a> spec.</p>'
-        '</div></main>'
+        "</div></main>"
     )
     page = fake_public / "p" / "index.html"
     page.parent.mkdir()
@@ -899,7 +917,7 @@ def test_apply_article_passes_fires_mermaid_counter(fake_public: Path):
         '">'
         '<main class="content">'
         '<pre><code class="language-mermaid">graph TD; A-&gt;B;</code></pre>'
-        '</main>'
+        "</main>"
     )
     page = fake_public / "p" / "index.html"
     page.parent.mkdir()
@@ -915,10 +933,10 @@ def test_apply_article_passes_fires_sources_counter(fake_public: Path):
     src = (
         '<script type="application/ld+json">'
         '{"@type":"BlogPosting","speakable":{"@type":"SpeakableSpecification"}}'
-        '</script>'
+        "</script>"
         '<main class="content"><div class="wrap">'
         '<p>See the <a href="https://www.iso20022.org/standards/">spec</a>.</p>'
-        '</div></main>'
+        "</div></main>"
     )
     page = fake_public / "p" / "index.html"
     page.parent.mkdir()
@@ -935,10 +953,10 @@ def test_apply_nav_passes_bumps_counter_when_nav_active_match(fake_public: Path)
     page = fake_public / "about" / "index.html"
     page.parent.mkdir()
     src = (
-        '<html><body>'
+        "<html><body>"
         '<header><nav><a href="/about/index.html">About</a></nav></header>'
-        '<main><h1>About</h1></main>'
-        '</body></html>'
+        "<main><h1>About</h1></main>"
+        "</body></html>"
     )
     page.write_text(src, encoding="utf-8")
     ctx = pb._PostbuildContext([page])
@@ -970,7 +988,9 @@ def test_apply_article_passes_runs_end_to_end(fake_public: Path):
     page.write_text(_minimal_page_html(with_jsonld=True), encoding="utf-8")
     ctr = pb._PostbuildCounters()
     out = pb._apply_article_passes(
-        page.read_text(encoding="utf-8"), page, ctr,
+        page.read_text(encoding="utf-8"),
+        page,
+        ctr,
     )
     assert out
     assert "</body>" in out
@@ -1026,8 +1046,8 @@ def test_main_runs_against_synthetic_tree(fake_public: Path, capsys):
     # Sitemap is a finaliser dependency — supply a minimal one.
     (fake_public / "sitemap.xml").write_text(
         '<?xml version="1.0"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
-        '<url><loc>https://sebastienrousseau.com/</loc></url>'
-        '</urlset>',
+        "<url><loc>https://sebastienrousseau.com/</loc></url>"
+        "</urlset>",
         encoding="utf-8",
     )
     pb.main()

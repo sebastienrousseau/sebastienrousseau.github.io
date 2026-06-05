@@ -23,6 +23,7 @@ Invariants checked:
   * Every page references the same fingerprinted ``/main.<hash>.js``
     asset that exists on disk (no orphan SRI digests).
 """
+
 from __future__ import annotations
 
 import json
@@ -49,9 +50,7 @@ SKIP_IF_NO_BUILD = pytest.mark.skipif(
 # module-level constant for the parametrize() decorator.
 # ---------------------------------------------------------------------------
 
-_PAGES: list[Path] = (
-    sorted(PUBLIC.rglob("index.html")) if PUBLIC.is_dir() else []
-)
+_PAGES: list[Path] = sorted(PUBLIC.rglob("index.html")) if PUBLIC.is_dir() else []
 # Skip the labs/* WASM demo pages — they're standalone HTML shells with
 # different head shape (no JSON-LD, no canonical).
 _PAGES = [p for p in _PAGES if "/labs/" not in p.as_posix()]
@@ -73,16 +72,18 @@ PAGE_IDS = [_rel(p) for p in _PAGES]
 @pytest.mark.parametrize("page", _PAGES, ids=PAGE_IDS)
 def test_page_has_html_lang(page: Path):
     html = page.read_text(encoding="utf-8", errors="ignore")
-    assert re.search(r'<html\b[^>]*\blang=', html, re.IGNORECASE), \
-        f"{_rel(page)}: <html> missing lang attribute"
+    assert re.search(
+        r"<html\b[^>]*\blang=", html, re.IGNORECASE
+    ), f"{_rel(page)}: <html> missing lang attribute"
 
 
 @SKIP_IF_NO_BUILD
 @pytest.mark.parametrize("page", _PAGES, ids=PAGE_IDS)
 def test_page_has_title(page: Path):
     html = page.read_text(encoding="utf-8", errors="ignore")
-    assert re.search(r'<title>[^<]+</title>', html, re.IGNORECASE), \
-        f"{_rel(page)}: <title> missing or empty"
+    assert re.search(
+        r"<title>[^<]+</title>", html, re.IGNORECASE
+    ), f"{_rel(page)}: <title> missing or empty"
 
 
 @SKIP_IF_NO_BUILD
@@ -90,7 +91,9 @@ def test_page_has_title(page: Path):
 def test_page_has_meta_description(page: Path):
     html = page.read_text(encoding="utf-8", errors="ignore")
     assert re.search(
-        r'<meta\b[^>]*\bname=["\']?description["\']?', html, re.IGNORECASE,
+        r'<meta\b[^>]*\bname=["\']?description["\']?',
+        html,
+        re.IGNORECASE,
     ), f"{_rel(page)}: <meta name=description> missing"
 
 
@@ -99,7 +102,9 @@ def test_page_has_meta_description(page: Path):
 def test_page_has_csp_meta(page: Path):
     html = page.read_text(encoding="utf-8", errors="ignore")
     assert re.search(
-        r'<meta\b[^>]*Content-Security-Policy', html, re.IGNORECASE,
+        r"<meta\b[^>]*Content-Security-Policy",
+        html,
+        re.IGNORECASE,
     ), f"{_rel(page)}: CSP meta tag missing"
 
 
@@ -108,7 +113,9 @@ def test_page_has_csp_meta(page: Path):
 def test_page_has_canonical(page: Path):
     html = page.read_text(encoding="utf-8", errors="ignore")
     assert re.search(
-        r'<link\b[^>]*\brel=["\']?canonical', html, re.IGNORECASE,
+        r'<link\b[^>]*\brel=["\']?canonical',
+        html,
+        re.IGNORECASE,
     ), f"{_rel(page)}: <link rel=canonical> missing"
 
 
@@ -117,7 +124,9 @@ def test_page_has_canonical(page: Path):
 def test_page_has_og_image(page: Path):
     html = page.read_text(encoding="utf-8", errors="ignore")
     assert re.search(
-        r'<meta\b[^>]*\bproperty=["\']?og:image', html, re.IGNORECASE,
+        r'<meta\b[^>]*\bproperty=["\']?og:image',
+        html,
+        re.IGNORECASE,
     ), f"{_rel(page)}: og:image meta missing"
 
 
@@ -129,8 +138,9 @@ def test_page_has_main_js_reference(page: Path):
     # pages plus the site sections include it.
     if not re.search(r"<main\b", html, re.IGNORECASE):
         pytest.skip("page has no <main> — main.js bundle not expected")
-    assert re.search(r'src=["\']?/main\.[a-f0-9]+\.js', html, re.IGNORECASE), \
-        f"{_rel(page)}: fingerprinted /main.<hash>.js reference missing"
+    assert re.search(
+        r'src=["\']?/main\.[a-f0-9]+\.js', html, re.IGNORECASE
+    ), f"{_rel(page)}: fingerprinted /main.<hash>.js reference missing"
 
 
 @SKIP_IF_NO_BUILD
@@ -139,7 +149,7 @@ def test_page_has_no_localhost_url(page: Path):
     html = page.read_text(encoding="utf-8", errors="ignore")
     # The CSP `inline-speculation-rules` description / JSON-LD comments
     # never reference localhost, so any hit is a real leak.
-    leak = re.search(r'https?://(?:127\.0\.0\.1|localhost)\b', html, re.IGNORECASE)
+    leak = re.search(r"https?://(?:127\.0\.0\.1|localhost)\b", html, re.IGNORECASE)
     assert not leak, f"{_rel(page)}: leaks localhost URL — {leak.group(0) if leak else ''}"
 
 
@@ -147,8 +157,9 @@ def test_page_has_no_localhost_url(page: Path):
 @pytest.mark.parametrize("page", _PAGES, ids=PAGE_IDS)
 def test_page_no_double_encoded_ampersand(page: Path):
     html = page.read_text(encoding="utf-8", errors="ignore")
-    assert "&amp;amp;" not in html, \
-        f"{_rel(page)}: &amp;amp; survived (XML/HTML escape pass missed it)"
+    assert (
+        "&amp;amp;" not in html
+    ), f"{_rel(page)}: &amp;amp; survived (XML/HTML escape pass missed it)"
 
 
 _HTML_COMMENT_RE = re.compile(r"<!--[\s\S]*?-->")
@@ -163,8 +174,7 @@ def test_page_inline_jsonld_is_valid_json(page: Path):
     # the regex would otherwise mis-classify as a JSON-LD script body.
     scannable = _HTML_COMMENT_RE.sub("", html)
     for m in re.finditer(
-        r'<script\b[^>]*\btype=["\']?application/ld\+json["\']?[^>]*>'
-        r'([\s\S]*?)</script>',
+        r'<script\b[^>]*\btype=["\']?application/ld\+json["\']?[^>]*>' r"([\s\S]*?)</script>",
         scannable,
         re.IGNORECASE,
     ):
@@ -174,10 +184,7 @@ def test_page_inline_jsonld_is_valid_json(page: Path):
         try:
             json.loads(body)
         except json.JSONDecodeError as exc:
-            pytest.fail(
-                f"{_rel(page)}: inline JSON-LD invalid — {exc}: "
-                f"{body[:100]}..."
-            )
+            pytest.fail(f"{_rel(page)}: inline JSON-LD invalid — {exc}: " f"{body[:100]}...")
 
 
 # ---------------------------------------------------------------------------
@@ -194,10 +201,7 @@ _HREF_SRC_RE = re.compile(
 
 
 def _extract_urls(html: str) -> list[str]:
-    urls = [
-        (m.group(2) or m.group(3) or "")
-        for m in _HREF_SRC_RE.finditer(html)
-    ]
+    urls = [(m.group(2) or m.group(3) or "") for m in _HREF_SRC_RE.finditer(html)]
     return [u for u in urls if u]
 
 
@@ -213,11 +217,7 @@ def _resolve_internal(page: Path, url: str) -> Path:
     # Strip fragment + query.
     url = url.split("#", 1)[0].split("?", 1)[0]
     url = unquote(url)
-    target = (
-        PUBLIC / url.lstrip("/")
-        if url.startswith("/")
-        else (page.parent / url).resolve()
-    )
+    target = PUBLIC / url.lstrip("/") if url.startswith("/") else (page.parent / url).resolve()
     # /foo/  → /foo/index.html. Bare /file goes through as-is.
     if target.is_dir() or url.endswith("/"):
         target = target / "index.html"
@@ -247,10 +247,20 @@ def test_page_internal_links_resolve(page: Path):
                 if str(target).startswith(str(PUBLIC))
                 else target.as_posix()
             )
-            if rel in {
-                "feed.json", "rss.xml", "atom.xml", "sitemap.xml",
-                "robots.txt", "manifest.json", "llms.txt", "llms-full.txt",
-            } and (PUBLIC / rel).is_file():
+            if (
+                rel
+                in {
+                    "feed.json",
+                    "rss.xml",
+                    "atom.xml",
+                    "sitemap.xml",
+                    "robots.txt",
+                    "manifest.json",
+                    "llms.txt",
+                    "llms-full.txt",
+                }
+                and (PUBLIC / rel).is_file()
+            ):
                 continue
             misses.append(f"{raw} -> {rel}")
     assert not misses, (
@@ -334,7 +344,7 @@ def test_all_referenced_fingerprinted_main_js_exist():
     refs: set[str] = set()
     for page in _PAGES:
         html = page.read_text(encoding="utf-8", errors="ignore")
-        for m in re.finditer(r'/main\.[a-f0-9]+\.js', html, re.IGNORECASE):
+        for m in re.finditer(r"/main\.[a-f0-9]+\.js", html, re.IGNORECASE):
             refs.add(m.group(0).lstrip("/"))
     assert refs, "no /main.<hash>.js references found"
     missing = [r for r in refs if not (PUBLIC / r).is_file()]
@@ -353,16 +363,16 @@ def test_integrity_attributes_are_base64_shape():
     for page in _PAGES[:200]:  # representative slice — checking all 1878 is overkill
         html = page.read_text(encoding="utf-8", errors="ignore")
         for m in re.finditer(
-            r'integrity=(["\'])([^"\']+)\1', html, re.IGNORECASE,
+            r'integrity=(["\'])([^"\']+)\1',
+            html,
+            re.IGNORECASE,
         ):
             value = m.group(2)
             for tok in _TOKEN_RE.finditer(value):
                 digest = tok.group(1)
                 if len(digest) != 44 or not digest.endswith("="):
                     bad.append(f"{_rel(page)}: {digest!r}")
-    assert not bad, (
-        "non-base64 SRI digest token(s):\n  " + "\n  ".join(bad[:10])
-    )
+    assert not bad, "non-base64 SRI digest token(s):\n  " + "\n  ".join(bad[:10])
 
 
 # ---------------------------------------------------------------------------
@@ -374,11 +384,12 @@ def test_integrity_attributes_are_base64_shape():
 def test_csp_strict_passes():
     result = subprocess.run(
         [sys.executable, "tests/validation/test_csp_strict.py"],
-        capture_output=True, text=True, cwd=ROOT, check=False,
+        capture_output=True,
+        text=True,
+        cwd=ROOT,
+        check=False,
     )
-    assert result.returncode == 0, (
-        f"test_csp_strict.py failed:\n{result.stderr}\n{result.stdout}"
-    )
+    assert result.returncode == 0, f"test_csp_strict.py failed:\n{result.stderr}\n{result.stdout}"
 
 
 # ---------------------------------------------------------------------------
@@ -399,9 +410,7 @@ def test_main_js_is_minified():
     assert "/**" not in src, "/** comment survived in main.js — minify regressed"
     # The minified body is one or a few lines; if it's still >50 lines,
     # something is wrong.
-    assert src.count("\n") < 50, (
-        f"main.js has {src.count(chr(10))} newlines — looks unminified"
-    )
+    assert src.count("\n") < 50, f"main.js has {src.count(chr(10))} newlines — looks unminified"
 
 
 @SKIP_IF_NO_BUILD
@@ -419,9 +428,7 @@ def test_csp_css_bundle_has_no_leading_comment_block():
     unminified-css. Make sure rcssmin stripped it."""
     for p in (PUBLIC / "_csp").glob("*.css"):
         head = p.read_bytes()[:120].decode("utf-8", errors="ignore")
-        assert "/*" not in head, (
-            f"{p.name}: leading /* ... */ comment survived"
-        )
+        assert "/*" not in head, f"{p.name}: leading /* ... */ comment survived"
 
 
 # ---------------------------------------------------------------------------
@@ -447,7 +454,7 @@ def test_no_page_references_theme_init_externally():
 # ---------------------------------------------------------------------------
 
 
-_LINK_RE = re.compile(r'<link\b[^>]+>', re.IGNORECASE)
+_LINK_RE = re.compile(r"<link\b[^>]+>", re.IGNORECASE)
 _REL_PRELOAD_RE = re.compile(r'\brel=["\']?preload\b', re.IGNORECASE)
 _AS_IMAGE_RE = re.compile(r'\bas=["\']?image\b', re.IGNORECASE)
 
@@ -468,7 +475,7 @@ def test_pages_with_eager_image_have_preload():
     for page in _PAGES:
         html = page.read_text(encoding="utf-8", errors="ignore")
         # Find first <img>: if it's lazy or absent, page doesn't need a preload.
-        m = re.search(r'<img\b[^>]+>', html, re.IGNORECASE)
+        m = re.search(r"<img\b[^>]+>", html, re.IGNORECASE)
         if not m:
             continue
         first = m.group(0)
@@ -479,6 +486,5 @@ def test_pages_with_eager_image_have_preload():
     # Allow up to ~10 edge cases (404, tiny redirect pages). The total
     # pages is ~1878 so an exact-zero gate is too brittle.
     assert len(misses) < 20, (
-        f"{len(misses)} eager-image page(s) without LCP preload:\n  "
-        + "\n  ".join(misses[:10])
+        f"{len(misses)} eager-image page(s) without LCP preload:\n  " + "\n  ".join(misses[:10])
     )

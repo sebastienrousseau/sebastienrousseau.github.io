@@ -121,4 +121,3 @@ To learn more about the groundbreaking MM1 study and explore the fascinating wor
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 [architecture]: https://cloudcdn.pro/stocks/diagrams/mm1_model_architecture.svg "MM1 Model Architecture"
-

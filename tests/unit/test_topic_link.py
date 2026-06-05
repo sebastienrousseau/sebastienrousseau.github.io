@@ -1,4 +1,5 @@
 """Tests for scripts/topic_link.py — the internal topic-cluster linker."""
+
 from __future__ import annotations
 
 import topic_link as tl

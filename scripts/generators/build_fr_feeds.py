@@ -9,6 +9,7 @@ feeds for every active non-EN language declared in
 language's ``_data/i18n/<lang>/strings.json`` under the
 ``feeds.channel*`` keys.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)

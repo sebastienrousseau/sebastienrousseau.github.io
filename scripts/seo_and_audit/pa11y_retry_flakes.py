@@ -35,9 +35,7 @@ import sys
 import tempfile
 from pathlib import Path
 
-FLAKE_NEEDLES = (
-    "Execution context was destroyed",
-)
+FLAKE_NEEDLES = ("Execution context was destroyed",)
 
 RETRY_WAIT_MS = 1500
 
@@ -149,7 +147,10 @@ def _retry_urls(urls: list[str]) -> int:
     }
 
     with tempfile.NamedTemporaryFile(
-        "w", suffix=".json", delete=False, encoding="utf-8",
+        "w",
+        suffix=".json",
+        delete=False,
+        encoding="utf-8",
     ) as tmp:
         json.dump(config, tmp)
         tmp_path = tmp.name

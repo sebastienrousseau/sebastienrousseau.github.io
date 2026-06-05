@@ -6,6 +6,7 @@ SRI patching, and the inline-script CSP hash collection.
 Each test exercises one function in isolation. The integration smoke
 test in tests/test_build_output.py drives the full build pipeline.
 """
+
 from __future__ import annotations
 
 import base64
@@ -192,15 +193,15 @@ def test_fix_sri_stamps_real_digest_on_csp_link(monkeypatch):
     # Integrity now carries one or more space-separated sha256-<b64>
     # tokens (per ``_candidate_digests``). Assert the primary token
     # is present anywhere inside the integrity value.
-    assert f'sha256-{digest}' in out
+    assert f"sha256-{digest}" in out
     assert 'sha256-abcd1234"' not in out
 
 
 def test_fix_sri_stamps_digest_on_top_level_fingerprinted_js(monkeypatch):
     digest = _stub_asset("main.e1c270a6.js", b'"use strict";', monkeypatch)
-    html = '<script defer src=/main.e1c270a6.js></script>'
+    html = "<script defer src=/main.e1c270a6.js></script>"
     out = pb.fix_sri(html)
-    assert f'sha256-{digest}' in out
+    assert f"sha256-{digest}" in out
     assert 'crossorigin="anonymous"' in out
 
 
@@ -243,7 +244,7 @@ def test_fix_sri_does_not_corrupt_unquoted_attribute_tail(monkeypatch):
     two chars of the source URL after the new attribute, producing tags
     like ``... crossorigin=\"anonymous\"s>``."""
     digest = _stub_asset("main.e1c270a6.js", b"x", monkeypatch)
-    html = '<script defer src=/main.e1c270a6.js></script>'
+    html = "<script defer src=/main.e1c270a6.js></script>"
     out = pb.fix_sri(html)
     # Must end cleanly at `>`, not `"s>` or `"js>`.
     assert out.startswith("<script")
@@ -251,7 +252,7 @@ def test_fix_sri_does_not_corrupt_unquoted_attribute_tail(monkeypatch):
     assert tag_end.rstrip().endswith(">")
     assert 'crossorigin="anonymous"s>' not in out
     assert 'crossorigin="anonymous"js>' not in out
-    assert f'sha256-{digest}' in out
+    assert f"sha256-{digest}" in out
 
 
 def test_fix_sri_handles_self_closing_link(monkeypatch):
@@ -280,14 +281,14 @@ def test_inline_theme_init_replaces_external_script_with_inline_body():
 
 
 def test_inline_theme_init_idempotent_no_external_tag():
-    html = '<head></head>'
+    html = "<head></head>"
     out, n = pb.inline_theme_init(html)
     assert n == 0
     assert out == html
 
 
 def test_inline_theme_init_handles_unquoted_src():
-    html = '<head><script src=/theme-init.js></script></head>'
+    html = "<head><script src=/theme-init.js></script></head>"
     out, n = pb.inline_theme_init(html)
     assert n == 1
     assert "data-theme" in out
@@ -308,15 +309,14 @@ def test_inline_theme_init_no_op_when_minified_body_empty(monkeypatch):
 
 def test_inject_lcp_preload_injects_for_first_eager_image():
     html = (
-        '<head><title>x</title></head>'
+        "<head><title>x</title></head>"
         '<body><img src="https://cdn.example/lcp.webp" fetchpriority="high"></body>'
     )
     out, n = pb.inject_lcp_preload(html)
     assert n == 1
     assert (
         '<link rel="preload" as="image" '
-        'href="https://cdn.example/lcp.webp" fetchpriority="high">'
-        in out
+        'href="https://cdn.example/lcp.webp" fetchpriority="high">' in out
     )
 
 
@@ -352,8 +352,7 @@ def test_inject_lcp_preload_skips_first_image_when_lazy():
     """If the first <img> is loading=lazy, it isn't an LCP candidate —
     skip rather than preload an off-screen asset."""
     html = (
-        '<head><title>x</title></head>'
-        '<body><img loading="lazy" src="/below-fold.webp"></body>'
+        "<head><title>x</title></head>" '<body><img loading="lazy" src="/below-fold.webp"></body>'
     )
     out, n = pb.inject_lcp_preload(html)
     assert n == 0
@@ -361,16 +360,13 @@ def test_inject_lcp_preload_skips_first_image_when_lazy():
 
 
 def test_inject_lcp_preload_skips_data_uri():
-    html = (
-        '<head><title>x</title></head>'
-        '<body><img src="data:image/png;base64,AAAA"></body>'
-    )
+    html = "<head><title>x</title></head>" '<body><img src="data:image/png;base64,AAAA"></body>'
     _, n = pb.inject_lcp_preload(html)
     assert n == 0
 
 
 def test_inject_lcp_preload_skips_pages_with_no_img():
-    html = '<head><title>x</title></head><body><p>no images</p></body>'
+    html = "<head><title>x</title></head><body><p>no images</p></body>"
     out, n = pb.inject_lcp_preload(html)
     assert n == 0
     assert out == html
@@ -390,7 +386,7 @@ def test_inject_jsonld_hashes_adds_token_for_inline_jsonld():
     hash_ = _b64(body)
     html = (
         '<meta http-equiv="Content-Security-Policy" '
-        'content="default-src \'self\'; script-src \'self\';">'
+        "content=\"default-src 'self'; script-src 'self';\">"
         f'<script type="application/ld+json">{body}</script>'
     )
     out = pb.inject_jsonld_hashes(html)
@@ -402,7 +398,7 @@ def test_inject_jsonld_hashes_covers_speculation_rules():
     hash_ = _b64(body)
     html = (
         '<meta http-equiv="Content-Security-Policy" '
-        'content="default-src \'self\'; script-src \'self\';">'
+        "content=\"default-src 'self'; script-src 'self';\">"
         f'<script type="speculationrules">{body}</script>'
     )
     out = pb.inject_jsonld_hashes(html)
@@ -416,8 +412,8 @@ def test_inject_jsonld_hashes_covers_bare_inline_scripts():
     hash_ = _b64(body)
     html = (
         '<meta http-equiv="Content-Security-Policy" '
-        'content="default-src \'self\'; script-src \'self\';">'
-        f'<script>{body}</script>'
+        "content=\"default-src 'self'; script-src 'self';\">"
+        f"<script>{body}</script>"
     )
     out = pb.inject_jsonld_hashes(html)
     assert f"'sha256-{hash_}'" in out
@@ -427,7 +423,7 @@ def test_inject_jsonld_hashes_strips_unsafe_inline():
     body = '{"a":1}'
     html = (
         '<meta http-equiv="Content-Security-Policy" '
-        'content="script-src \'self\' \'unsafe-inline\';">'
+        "content=\"script-src 'self' 'unsafe-inline';\">"
         f'<script type="application/ld+json">{body}</script>'
     )
     out = pb.inject_jsonld_hashes(html)
@@ -444,7 +440,7 @@ def test_inject_jsonld_hashes_dedups_identical_bodies():
     hash_ = _b64(body)
     html = (
         '<meta http-equiv="Content-Security-Policy" '
-        'content="script-src \'self\';">'
+        "content=\"script-src 'self';\">"
         f'<script type="application/ld+json">{body}</script>'
         f'<script type="application/ld+json">{body}</script>'
     )
@@ -538,7 +534,9 @@ def test_wrap_cdn_images_uses_higher_quality_for_lcp_hero():
 
 
 def test_wrap_cdn_images_skips_svg_sources():
-    html = '<img src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/hsbc.svg" width="120">'
+    html = (
+        '<img src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/hsbc.svg" width="120">'
+    )
     out, n = pb.wrap_cdn_images_in_transform(html)
     assert n == 0
     assert "/api/transform" not in out
@@ -546,10 +544,7 @@ def test_wrap_cdn_images_skips_svg_sources():
 
 
 def test_wrap_cdn_images_skips_already_wrapped_urls():
-    html = (
-        '<img src="https://cloudcdn.pro/api/transform?url=/x.webp&w=400" '
-        'width="200">'
-    )
+    html = '<img src="https://cloudcdn.pro/api/transform?url=/x.webp&w=400" ' 'width="200">'
     out, n = pb.wrap_cdn_images_in_transform(html)
     assert n == 0
     assert out == html
@@ -595,7 +590,7 @@ def test_wrap_cdn_images_floors_width_at_200():
 def test_wrap_cdn_images_handles_unquoted_attrs():
     """SSG's minifier emits unquoted attribute values for short tokens —
     the regex must handle src=/foo without quotes."""
-    html = '<img src=https://cloudcdn.pro/stocks/images/foo.webp width=600>'
+    html = "<img src=https://cloudcdn.pro/stocks/images/foo.webp width=600>"
     out, n = pb.wrap_cdn_images_in_transform(html)
     assert n == 1
     assert "/api/transform" in out
@@ -653,8 +648,8 @@ def test_wrap_cdn_images_also_rewrites_preload_link_href():
 def test_wrap_cdn_preload_handles_reverse_attribute_order():
     """SSG's minifier may emit ``as=image`` before ``rel=preload``."""
     html = (
-        '<link as=image fetchpriority=high '
-        'href=https://cloudcdn.pro/stocks/images/hero.png rel=preload>'
+        "<link as=image fetchpriority=high "
+        "href=https://cloudcdn.pro/stocks/images/hero.png rel=preload>"
     )
     out, n = pb.wrap_cdn_images_in_transform(html)
     assert n == 1
@@ -689,6 +684,7 @@ def test_wrap_cdn_preload_returns_unchanged_when_href_sub_fails(monkeypatch):
     """Defensive: if the inner href-rewriter's ``subn`` reports zero
     substitutions even though the outer match succeeded, the original
     <link> tag is returned untouched (postbuild.py:505)."""
+
     class _FakeRE:
         def __init__(self, inner):
             self._inner = inner
@@ -713,6 +709,7 @@ def test_wrap_cdn_preload_returns_unchanged_when_href_sub_fails(monkeypatch):
 def test_align_existing_preload_returns_unchanged_when_subn_fails(monkeypatch):
     """Same defensive bail-out path in _align_existing_preload
     (postbuild.py:313)."""
+
     class _FakeRE:
         def __init__(self, inner):
             self._inner = inner
@@ -724,10 +721,7 @@ def test_align_existing_preload_returns_unchanged_when_subn_fails(monkeypatch):
             return attrs, 0
 
     monkeypatch.setattr(pb, "_LINK_HREF_ANY_RE", _FakeRE(pb._LINK_HREF_ANY_RE))
-    html = (
-        '<link rel="preload" as="image" '
-        'href="https://cdn.example/old.webp">'
-    )
+    html = '<link rel="preload" as="image" ' 'href="https://cdn.example/old.webp">'
     out, n = pb._align_existing_preload(html, "https://cdn.example/new.webp")
     assert n == 0
     assert out == html
@@ -737,9 +731,11 @@ def test_link_attr_href_returns_none_when_match_groups_empty(monkeypatch):
     """``_link_attr_href`` bails to None when both capture groups are
     empty — a regex theoretically can match the attr name but produce
     no value."""
+
     class _FakeMatch:
         def group(self, n):
             return None  # both capture groups None
+
     class _FakeRE:
         def search(self, s):
             return _FakeMatch()
@@ -772,9 +768,11 @@ def test_img_attr_width_returns_none_on_unparseable(monkeypatch):
     """The regex only matches digits, so a TypeError/ValueError on
     int() conversion is defensive. Hit the except branch by feeding
     the helper a contrived regex match via a monkeypatch."""
+
     class FakeMatch:
         def group(self, n):
             return "abc" if n == 1 else None  # not a digit
+
     fake_re = type("FakeRE", (), {"search": lambda self, s: FakeMatch()})()
     monkeypatch.setattr(pb, "_IMG_WIDTH_ANY_RE", fake_re)
     assert pb._img_attr_width('width="abc"') is None
@@ -783,6 +781,7 @@ def test_img_attr_width_returns_none_on_unparseable(monkeypatch):
 def test_wrap_cdn_images_returns_unchanged_when_src_sub_fails(monkeypatch):
     """If _IMG_SRC_ANY_RE.subn returns 0 substitutions (defensive
     bail-out at L363), the original match is returned untouched."""
+
     # Patch the SRC regex to never substitute even though attribute
     # matching succeeded. This simulates a corrupted attr string the
     # outer regex matched but the inner sub couldn't replace.

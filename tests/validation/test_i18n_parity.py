@@ -24,6 +24,7 @@ Run from repo root: ``python3 scripts/test_i18n_parity.py``. Exits
 non-zero on any defect. Wired into ``build.sh`` so the build fails
 if a translation goes missing.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -42,25 +43,34 @@ ROOT = Path(__file__).resolve().parents[2]
 POSTS = ROOT / "_posts"
 
 # Slug shape: ASCII-only, lowercase, hyphen-joined.
-_SLUG_OK_RE = re.compile(r'^[a-z0-9]+(?:-[a-z0-9]+)*$')
+_SLUG_OK_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 _MAX_SLUG_LEN = 100
 
 # Static-page slugs every active language must cover. Mirrors the
 # baseline FR set in scripts/build_translations.py:STATIC_SLUG_FR.
 REQUIRED_STATIC_SLUGS = (
-    "about", "papers", "projects", "topics", "tags",
-    "contact", "accessibility", "privacy", "terms",
-    "playlists", "made-with-static-site-generator",
-    "made-with-shokunin", "404", "offline", "thanks", "articles",
+    "about",
+    "papers",
+    "projects",
+    "topics",
+    "tags",
+    "contact",
+    "accessibility",
+    "privacy",
+    "terms",
+    "playlists",
+    "made-with-static-site-generator",
+    "made-with-shokunin",
+    "404",
+    "offline",
+    "thanks",
+    "articles",
 )
 
 
 def _en_article_slugs() -> set[str]:
     """Every dated EN article that has a frontmatter date."""
-    return {
-        p.stem for p in POSTS.glob("*.md")
-        if re.match(r'^\d{4}-\d{2}-\d{2}-', p.name)
-    }
+    return {p.stem for p in POSTS.glob("*.md") if re.match(r"^\d{4}-\d{2}-\d{2}-", p.name)}
 
 
 def check_language(lang: _lang_registry.Language) -> list[str]:
@@ -78,15 +88,13 @@ def check_language(lang: _lang_registry.Language) -> list[str]:
     en_articles = _en_article_slugs()
     missing_articles = en_articles - set(article_map)
     problems.extend(
-        f"[{lang.code}] missing article translation: {slug}"
-        for slug in sorted(missing_articles)
+        f"[{lang.code}] missing article translation: {slug}" for slug in sorted(missing_articles)
     )
 
     # 3. Every required static-page slug has a counterpart
     missing_static = set(REQUIRED_STATIC_SLUGS) - set(static_map)
     problems.extend(
-        f"[{lang.code}] missing static-page slug: {slug}"
-        for slug in sorted(missing_static)
+        f"[{lang.code}] missing static-page slug: {slug}" for slug in sorted(missing_static)
     )
 
     # Combined slug list for shape + collision checks
@@ -119,19 +127,14 @@ def check_language(lang: _lang_registry.Language) -> list[str]:
         if not _SLUG_OK_RE.match(slug):
             problems.append(f"[{lang.code}] malformed slug: {slug!r}")
         if len(slug) > _MAX_SLUG_LEN:
-            problems.append(
-                f"[{lang.code}] slug exceeds {_MAX_SLUG_LEN} chars: {slug!r}"
-            )
+            problems.append(f"[{lang.code}] slug exceeds {_MAX_SLUG_LEN} chars: {slug!r}")
 
     return problems
 
 
 def main() -> int:
     all_problems: list[str] = []
-    languages = [
-        lang for lang in _lang_registry.active()
-        if lang.code != "en"
-    ]
+    languages = [lang for lang in _lang_registry.active() if lang.code != "en"]
     if not languages:
         print("warn: no active non-EN languages — nothing to check", file=sys.stderr)
         return 0

@@ -96,4 +96,3 @@ As NIST continues its PQC standardisation process, the cryptographic community m
 [05]: https://pq-crystals.org/dilithium/ "Dilithium"
 [06]: https://www.inferati.com/blog/fhe-schemes-bgv "BGV"
 [07]: https://tfhe.github.io/tfhe/ "TFHE"
-

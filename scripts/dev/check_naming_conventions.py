@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Enforces repository naming conventions on all git-tracked source files."""
+
 import subprocess
 import sys
 from pathlib import Path
@@ -21,6 +22,7 @@ ALLOWED_ROOT_UPPERCASE = {
     "Makefile",
 }
 
+
 def validate_directory_part(part: str, file_path: str) -> bool:
     """Validates that a directory name complies with lowercase conventions."""
     # Hidden/dot config directories are exempted from naming checks as they
@@ -35,9 +37,12 @@ def validate_directory_part(part: str, file_path: str) -> bool:
 
     # Must be lowercase and kebab-case/snake_case
     if not clean_part.islower() or any(char.isupper() for char in clean_part):
-        print(f"Directory naming violation: '{part}' in '{file_path}' contains uppercase characters or is not lowercase.")
+        print(
+            f"Directory naming violation: '{part}' in '{file_path}' contains uppercase characters or is not lowercase."
+        )
         return False
     return True
+
 
 def validate_python_name(name: str, file_path: str) -> bool:
     """Checks if a python file name is strict snake_case."""
@@ -49,6 +54,7 @@ def validate_python_name(name: str, file_path: str) -> bool:
         return False
     return True
 
+
 def validate_shell_name(name: str, file_path: str) -> bool:
     """Checks if a shell script file name is strict kebab-case."""
     clean_name = name[:-3]
@@ -57,13 +63,15 @@ def validate_shell_name(name: str, file_path: str) -> bool:
         return False
     return True
 
+
 def validate_js_name(name: str, ext: str, file_path: str) -> bool:
     """Checks if a javascript file name is lowercase."""
-    clean_name = name[:name.find(ext)]
+    clean_name = name[: name.find(ext)]
     if any(char.isupper() for char in clean_name):
         print(f"JavaScript file naming violation: '{file_path}' must be lowercase.")
         return False
     return True
+
 
 def validate_markdown_name(name: str, path: Path, file_path: str) -> bool:
     """Checks if a markdown file name is lowercase (except for README and MANIFEST)."""
@@ -78,6 +86,7 @@ def validate_markdown_name(name: str, path: Path, file_path: str) -> bool:
             print(f"Markdown file naming violation: '{file_path}' must be lowercase.")
             return False
     return True
+
 
 def validate_file_name(path: Path, file_path: str) -> bool:
     """Validates that a file name complies with extension-specific casing rules."""
@@ -99,6 +108,7 @@ def validate_file_name(path: Path, file_path: str) -> bool:
 
     return True
 
+
 def check_naming_conventions() -> bool:
     """Gathers all tracked files and runs validation checks on directories and names."""
     try:
@@ -112,7 +122,7 @@ def check_naming_conventions() -> bool:
 
     for file_path in files:
         path = Path(file_path)
-        
+
         # Skip checking compiled deployment output directory
         if path.parts and path.parts[0] == "docs":
             continue
@@ -127,6 +137,7 @@ def check_naming_conventions() -> bool:
             failed = True
 
     return not failed
+
 
 if __name__ == "__main__":
     success = check_naming_conventions()

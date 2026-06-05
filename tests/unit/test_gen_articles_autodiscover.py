@@ -9,6 +9,7 @@ returned the single latest post, which silently dropped intermediate
 articles when more than one daily article published between two manual
 ARTICLES[] refreshes.
 """
+
 from __future__ import annotations
 
 import sys
@@ -80,7 +81,8 @@ def test_discover_returns_tuple_when_newer_post_exists(monkeypatch, tmp_path):
     posts = tmp_path / "_posts"
     posts.mkdir()
     (posts / "2099-12-31-tomorrows-article.md").write_text(
-        _SAMPLE_FM, encoding="utf-8",
+        _SAMPLE_FM,
+        encoding="utf-8",
     )
     monkeypatch.setattr(gen_articles, "POSTS", posts)
     discovered = gen_articles._discover_missing_articles()
@@ -98,7 +100,7 @@ def test_discover_returns_tuple_when_newer_post_exists(monkeypatch, tmp_path):
 def test_discover_returns_empty_when_post_lacks_title(monkeypatch, tmp_path):
     posts = tmp_path / "_posts"
     posts.mkdir()
-    bad = "---\nbanner: \"x\"\n---\nno-title\n"
+    bad = '---\nbanner: "x"\n---\nno-title\n'
     (posts / "2099-12-31-x.md").write_text(bad, encoding="utf-8")
     monkeypatch.setattr(gen_articles, "POSTS", posts)
     assert gen_articles._discover_missing_articles() == []

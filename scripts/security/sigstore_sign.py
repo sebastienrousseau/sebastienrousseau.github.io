@@ -32,6 +32,7 @@ build stays green; just no signatures are emitted.
 
 See ``DEPLOY.md`` for the runbook.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -81,9 +82,12 @@ def _sign_one(html_path: Path, out_dir: Path, cfg: dict) -> bool:
         return False
     bundle_path = out_dir / f"{html_path.parent.name}.bundle"
     cmd = [
-        "cosign", "sign-blob",
-        "--key", key_path,
-        "--bundle", str(bundle_path),
+        "cosign",
+        "sign-blob",
+        "--key",
+        key_path,
+        "--bundle",
+        str(bundle_path),
         "--yes",
         str(html_path),
     ]
@@ -93,15 +97,21 @@ def _sign_one(html_path: Path, out_dir: Path, cfg: dict) -> bool:
         env["COSIGN_PASSWORD"] = env[pw_env]
     try:
         result = subprocess.run(
-            cmd, check=False, capture_output=True, text=True, env=env, timeout=30,
+            cmd,
+            check=False,
+            capture_output=True,
+            text=True,
+            env=env,
+            timeout=30,
         )
     except (OSError, subprocess.TimeoutExpired) as e:
-        print(f"sigstore: cosign failed for {html_path.parent.name}: {e}",
-              file=sys.stderr)
+        print(f"sigstore: cosign failed for {html_path.parent.name}: {e}", file=sys.stderr)
         return False
     if result.returncode != 0:
-        print(f"sigstore: cosign error for {html_path.parent.name}: "
-              f"{result.stderr.strip()}", file=sys.stderr)
+        print(
+            f"sigstore: cosign error for {html_path.parent.name}: " f"{result.stderr.strip()}",
+            file=sys.stderr,
+        )
         return False
     return True
 
@@ -109,8 +119,10 @@ def _sign_one(html_path: Path, out_dir: Path, cfg: dict) -> bool:
 def main() -> int:
     cfg = _load_config()
     if cfg is None:
-        print("sigstore: no _data/sigstore/config.json — signing skipped "
-              "(see scripts/sigstore_sign.py docstring for activation)")
+        print(
+            "sigstore: no _data/sigstore/config.json — signing skipped "
+            "(see scripts/sigstore_sign.py docstring for activation)"
+        )
         return 0
     if not _cosign_available():
         print("sigstore: cosign binary not on PATH — signing skipped", file=sys.stderr)

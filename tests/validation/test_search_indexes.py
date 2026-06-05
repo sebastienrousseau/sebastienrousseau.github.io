@@ -10,6 +10,7 @@ Run from repo root: ``python3 scripts/test_search_indexes.py``.
 Exits non-zero on any defect; CI/Makefile should treat that as a
 build failure.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)

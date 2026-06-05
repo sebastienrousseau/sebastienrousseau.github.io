@@ -6,6 +6,7 @@ Covers all four code paths through main():
   - tooling present + no _data/lead-magnets/ → no-op
   - tooling present + sources → renders each, or surfaces pandoc errors
 """
+
 from __future__ import annotations
 
 import subprocess
@@ -32,6 +33,7 @@ def test_have_tooling_missing_pandoc(monkeypatch):
 def test_have_tooling_missing_latex(monkeypatch):
     def which(name):
         return "/usr/bin/pandoc" if name == "pandoc" else None
+
     monkeypatch.setattr(blm.shutil, "which", which)
     ok, msg = blm.have_tooling()
     assert ok is False
@@ -40,7 +42,8 @@ def test_have_tooling_missing_latex(monkeypatch):
 
 def test_have_tooling_all_present_xelatex(monkeypatch):
     monkeypatch.setattr(
-        blm.shutil, "which",
+        blm.shutil,
+        "which",
         lambda n: f"/usr/bin/{n}" if n in ("pandoc", "xelatex") else None,
     )
     ok, msg = blm.have_tooling()
@@ -50,7 +53,8 @@ def test_have_tooling_all_present_xelatex(monkeypatch):
 
 def test_have_tooling_falls_back_to_pdflatex(monkeypatch):
     monkeypatch.setattr(
-        blm.shutil, "which",
+        blm.shutil,
+        "which",
         lambda n: f"/usr/bin/{n}" if n in ("pandoc", "pdflatex") else None,
     )
     ok, _ = blm.have_tooling()
@@ -92,7 +96,8 @@ def test_render_invokes_pandoc_with_xelatex(tmp_path, monkeypatch):
 
     captured = {}
     monkeypatch.setattr(
-        blm.shutil, "which",
+        blm.shutil,
+        "which",
         lambda n: f"/usr/bin/{n}" if n == "xelatex" else None,
     )
 
@@ -113,7 +118,9 @@ def test_render_falls_back_to_pdflatex_when_no_xelatex(tmp_path, monkeypatch):
     monkeypatch.setattr(blm.shutil, "which", lambda _: None)
     captured = {}
     monkeypatch.setattr(
-        blm.subprocess, "run", lambda cmd, **kw: captured.update({"cmd": cmd}),
+        blm.subprocess,
+        "run",
+        lambda cmd, **kw: captured.update({"cmd": cmd}),
     )
     blm.render(src, pdf)
     assert "pdflatex" in captured["cmd"]
@@ -184,6 +191,7 @@ def test_main_returns_one_on_pandoc_failure(tmp_path, monkeypatch, capsys):
 
     def boom(md, pdf):
         raise subprocess.CalledProcessError(1, ["pandoc"])
+
     monkeypatch.setattr(blm, "render", boom)
     rc = blm.main()
     assert rc == 1

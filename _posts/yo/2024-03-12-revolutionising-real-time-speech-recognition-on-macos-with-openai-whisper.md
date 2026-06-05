@@ -86,4 +86,3 @@ To learn more about the integration of OpenAI Whisper and Metal Performance Shad
 [01]: https://developer.apple.com/documentation/metalperformanceshaders "Metal Performance Shaders - Apple Developer Documentation"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-

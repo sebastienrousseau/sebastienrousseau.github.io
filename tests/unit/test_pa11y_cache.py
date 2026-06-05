@@ -1,4 +1,5 @@
 """Unit tests for the pa11y hash cache."""
+
 from __future__ import annotations
 
 import json
@@ -51,7 +52,8 @@ def test_compute_config_hash_ignores_urls() -> None:
     list changes — otherwise the fingerprint would invalidate the cache
     on every run."""
     c1 = pc.build_pa11yci_config(
-        urls=["http://x.example/"], hide_elements="iframe[src*='x']",
+        urls=["http://x.example/"],
+        hide_elements="iframe[src*='x']",
     )
     c2 = pc.build_pa11yci_config(
         urls=["http://y.example/", "http://z.example/"],
@@ -110,7 +112,9 @@ def test_save_then_load_roundtrips(tmp_path: Path) -> None:
 # ---------------------------------------------------------------------------
 
 
-def _fp(pa11y: str = "3.1.0", chromium: str = "130.0", cfg: str = "abc", std: str = "WCAG2AAA") -> dict:
+def _fp(
+    pa11y: str = "3.1.0", chromium: str = "130.0", cfg: str = "abc", std: str = "WCAG2AAA"
+) -> dict:
     return {
         "pa11y_version": pa11y,
         "chromium_version": chromium,
@@ -124,7 +128,9 @@ def test_fingerprint_matches_full_equality() -> None:
     assert pc.fingerprint_matches(cache, _fp())
 
 
-@pytest.mark.parametrize("key", ["pa11y_version", "chromium_version", "config_hash", "wcag_standard"])
+@pytest.mark.parametrize(
+    "key", ["pa11y_version", "chromium_version", "config_hash", "wcag_standard"]
+)
 def test_fingerprint_mismatch_on_any_key(key: str) -> None:
     cache = {"fingerprint": _fp()}
     diff = _fp()
@@ -149,7 +155,7 @@ def test_page_is_spotify_iframe_true() -> None:
 
 
 def test_page_is_spotify_iframe_false_no_iframe() -> None:
-    html = '<html><body>open.spotify.com mentioned in prose</body></html>'
+    html = "<html><body>open.spotify.com mentioned in prose</body></html>"
     assert not pc.page_is_spotify_iframe(html)
 
 
@@ -170,7 +176,9 @@ def test_page_is_spotify_iframe_scdn_variant() -> None:
 
 def test_partition_empty_cache_sweeps_everything(public_dir: Path) -> None:
     to_sweep, cache_hits, skipped = pc.partition_pages(
-        public_dir, cache={"fingerprint": {}, "pages": {}}, current_fingerprint=_fp(),
+        public_dir,
+        cache={"fingerprint": {}, "pages": {}},
+        current_fingerprint=_fp(),
     )
     assert len(to_sweep) == 3
     assert cache_hits == []
@@ -236,7 +244,9 @@ def test_partition_skips_spotify_iframe_pages(public_dir: Path) -> None:
         encoding="utf-8",
     )
     to_sweep, cache_hits, skipped = pc.partition_pages(
-        public_dir, cache={"fingerprint": {}, "pages": {}}, current_fingerprint=_fp(),
+        public_dir,
+        cache={"fingerprint": {}, "pages": {}},
+        current_fingerprint=_fp(),
     )
     assert "page-b/index.html" in skipped
     swept_rels = [p.relative_to(public_dir).as_posix() for p, _ in to_sweep]
@@ -251,7 +261,9 @@ def test_partition_skips_spotify_iframe_pages(public_dir: Path) -> None:
 
 
 def test_e2e_first_run_sweeps_all_then_caches_all(
-    public_dir: Path, tmp_path: Path, monkeypatch: pytest.MonkeyPatch,
+    public_dir: Path,
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     """Simulate the first CI run: cache is empty, all three pages get
     swept, the post-pass marks all three as passing. The next run
@@ -265,32 +277,49 @@ def test_e2e_first_run_sweeps_all_then_caches_all(
 
     # PRE
     import argparse
-    rc = pc.cmd_pre(argparse.Namespace(
-        public_dir=str(public_dir), cache=str(cache_path),
-        pa11yci_out=str(pa11yci), manifest_out=str(manifest),
-        base_url="http://127.0.0.1:8000",
-        pa11y_version="", chromium_version="", hide_elements="",
-    ))
+
+    rc = pc.cmd_pre(
+        argparse.Namespace(
+            public_dir=str(public_dir),
+            cache=str(cache_path),
+            pa11yci_out=str(pa11yci),
+            manifest_out=str(manifest),
+            base_url="http://127.0.0.1:8000",
+            pa11y_version="",
+            chromium_version="",
+            hide_elements="",
+        )
+    )
     assert rc == 0
     assert pa11yci.is_file()
     cfg = json.loads(pa11yci.read_text())
     assert len(cfg["urls"]) == 3  # all pages need sweeping on first run
 
     # POST (simulate pa11y returning success)
-    rc = pc.cmd_post(argparse.Namespace(
-        public_dir=str(public_dir), cache=str(cache_path), manifest=str(manifest),
-    ))
+    rc = pc.cmd_post(
+        argparse.Namespace(
+            public_dir=str(public_dir),
+            cache=str(cache_path),
+            manifest=str(manifest),
+        )
+    )
     assert rc == 0
     cache = pc.load_cache(cache_path)
     assert len(cache["pages"]) == 3
 
     # PRE again — every page is now cache-hit
-    rc = pc.cmd_pre(argparse.Namespace(
-        public_dir=str(public_dir), cache=str(cache_path),
-        pa11yci_out=str(pa11yci), manifest_out=str(manifest),
-        base_url="http://127.0.0.1:8000",
-        pa11y_version="", chromium_version="", hide_elements="",
-    ))
+    rc = pc.cmd_pre(
+        argparse.Namespace(
+            public_dir=str(public_dir),
+            cache=str(cache_path),
+            pa11yci_out=str(pa11yci),
+            manifest_out=str(manifest),
+            base_url="http://127.0.0.1:8000",
+            pa11y_version="",
+            chromium_version="",
+            hide_elements="",
+        )
+    )
     assert rc == 0
     cfg = json.loads(pa11yci.read_text())
     assert cfg["urls"] == []  # nothing to sweep
@@ -301,7 +330,9 @@ def test_e2e_first_run_sweeps_all_then_caches_all(
 
 
 def test_e2e_post_drops_stale_pages(
-    public_dir: Path, tmp_path: Path, monkeypatch: pytest.MonkeyPatch,
+    public_dir: Path,
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     """A page that disappears from public/ should be evicted from the
     cache on the next post-pass — otherwise stale entries accumulate."""
@@ -325,22 +356,35 @@ def test_e2e_post_drops_stale_pages(
     pa11yci = tmp_path / ".pa11yci"
     manifest = tmp_path / ".pa11y-cache-manifest.json"
     import argparse
-    pc.cmd_pre(argparse.Namespace(
-        public_dir=str(public_dir), cache=str(cache_path),
-        pa11yci_out=str(pa11yci), manifest_out=str(manifest),
-        base_url="http://127.0.0.1:8000",
-        pa11y_version="", chromium_version="", hide_elements="",
-    ))
-    pc.cmd_post(argparse.Namespace(
-        public_dir=str(public_dir), cache=str(cache_path), manifest=str(manifest),
-    ))
+
+    pc.cmd_pre(
+        argparse.Namespace(
+            public_dir=str(public_dir),
+            cache=str(cache_path),
+            pa11yci_out=str(pa11yci),
+            manifest_out=str(manifest),
+            base_url="http://127.0.0.1:8000",
+            pa11y_version="",
+            chromium_version="",
+            hide_elements="",
+        )
+    )
+    pc.cmd_post(
+        argparse.Namespace(
+            public_dir=str(public_dir),
+            cache=str(cache_path),
+            manifest=str(manifest),
+        )
+    )
 
     cache_after = pc.load_cache(cache_path)
     assert "deleted/index.html" not in cache_after["pages"]
 
 
 def test_e2e_fingerprint_change_resets_cache(
-    public_dir: Path, tmp_path: Path, monkeypatch: pytest.MonkeyPatch,
+    public_dir: Path,
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     """When pre detects a fingerprint mismatch, post should write the
     new fingerprint and drop every old entry, only keeping the freshly-
@@ -362,20 +406,31 @@ def test_e2e_fingerprint_change_resets_cache(
     pa11yci = tmp_path / ".pa11yci"
     manifest = tmp_path / ".pa11y-cache-manifest.json"
     import argparse
-    pc.cmd_pre(argparse.Namespace(
-        public_dir=str(public_dir), cache=str(cache_path),
-        pa11yci_out=str(pa11yci), manifest_out=str(manifest),
-        base_url="http://127.0.0.1:8000",
-        pa11y_version="", chromium_version="", hide_elements="",
-    ))
+
+    pc.cmd_pre(
+        argparse.Namespace(
+            public_dir=str(public_dir),
+            cache=str(cache_path),
+            pa11yci_out=str(pa11yci),
+            manifest_out=str(manifest),
+            base_url="http://127.0.0.1:8000",
+            pa11y_version="",
+            chromium_version="",
+            hide_elements="",
+        )
+    )
     # Pre should have written a manifest with 3 to-sweep, 0 cache hits.
     m = json.loads(manifest.read_text())
     assert len(m["to_sweep_hashes"]) == 3
     assert m["cache_hit_hashes"] == {}
 
-    pc.cmd_post(argparse.Namespace(
-        public_dir=str(public_dir), cache=str(cache_path), manifest=str(manifest),
-    ))
+    pc.cmd_post(
+        argparse.Namespace(
+            public_dir=str(public_dir),
+            cache=str(cache_path),
+            manifest=str(manifest),
+        )
+    )
     cache_after = pc.load_cache(cache_path)
     assert cache_after["fingerprint"]["chromium_version"] == "130.0.0.0"
     assert len(cache_after["pages"]) == 3
@@ -388,9 +443,12 @@ def test_cmd_post_handles_missing_manifest(tmp_path: Path) -> None:
     """Defensive: if the manifest got lost (e.g. pa11y exited mid-run),
     post should not crash — it should report and exit non-zero."""
     import argparse
-    rc = pc.cmd_post(argparse.Namespace(
-        public_dir="public",
-        cache=str(tmp_path / "cache.json"),
-        manifest=str(tmp_path / "missing.json"),
-    ))
+
+    rc = pc.cmd_post(
+        argparse.Namespace(
+            public_dir="public",
+            cache=str(tmp_path / "cache.json"),
+            manifest=str(tmp_path / "missing.json"),
+        )
+    )
     assert rc == 1

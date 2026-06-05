@@ -3,6 +3,7 @@
 We exercise the specific regression classes the validator was built to
 catch, so any future change that loosens the gate breaks a test.
 """
+
 from __future__ import annotations
 
 import validate_jsonld as v
@@ -97,8 +98,11 @@ def test_jsonld_comments_with_script_tag_not_matched(tmp_path):
     # contains the string "<script type="application/ld+json">". The
     # validator must strip comments before scanning, otherwise it
     # double-counts the documentation as a real block.
-    html = """<!-- example: <script type="application/ld+json"> -->
-""" + GOOD_HTML
+    html = (
+        """<!-- example: <script type="application/ld+json"> -->
+"""
+        + GOOD_HTML
+    )
     p = write(tmp_path, "doc.html", html)
     errors, _ = v.validate_page(p)
     assert errors == []
@@ -203,7 +207,9 @@ def test_feed_sitemap_relative_url_fails(tmp_path):
 
 
 def test_feed_sitemap_invalid_changefreq_warns(tmp_path):
-    bad = SITEMAP_GOOD.replace("<changefreq>weekly</changefreq>", "<changefreq>sometimes</changefreq>")
+    bad = SITEMAP_GOOD.replace(
+        "<changefreq>weekly</changefreq>", "<changefreq>sometimes</changefreq>"
+    )
     p = write(tmp_path, "sitemap.xml", bad)
     _, warnings = v.validate_feed(p)
     assert any("changefreq" in w and "spec" in w for w in warnings)

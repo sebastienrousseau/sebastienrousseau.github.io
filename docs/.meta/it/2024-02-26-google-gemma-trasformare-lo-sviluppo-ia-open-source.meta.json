@@ -1,11 +1,11 @@
 {
-  "locale": "it_IT",
-  "banner_alt": "Google Gemma",
-  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
-  "keywords": "Gemma, Google, IA open source, LLM, pesi aperti, fine-tuning",
-  "language": "it-IT",
-  "subtitle": "Una famiglia di modelli aperti di Google per la ricerca e il deployment",
-  "title": "Google Gemma: trasformare lo sviluppo IA open source",
+  "date": "February 26, 2024",
   "description": "Gemma è la famiglia di modelli IA open source di Google, derivata dalla ricerca su Gemini. Una panoramica delle capacità, dei pesi disponibili e dei casi d'uso target.",
-  "date": "February 26, 2024"
+  "language": "it-IT",
+  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
+  "title": "Google Gemma: trasformare lo sviluppo IA open source",
+  "banner_alt": "Google Gemma",
+  "locale": "it_IT",
+  "subtitle": "Una famiglia di modelli aperti di Google per la ricerca e il deployment",
+  "keywords": "Gemma, Google, IA open source, LLM, pesi aperti, fine-tuning"
 }

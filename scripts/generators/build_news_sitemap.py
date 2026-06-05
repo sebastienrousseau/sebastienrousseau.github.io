@@ -6,6 +6,7 @@ This script scans all active language posts under ``_posts/`` (including English
 in the root directory), filters for publication dates within the last 48 hours,
 and writes a compliant XML document using the Google News namespace.
 """
+
 from __future__ import annotations
 
 import sys as _sys
@@ -36,12 +37,7 @@ _WINDOW_FUTURE_S = -7200  # 2h of forward timezone skew
 
 def xml_escape(s: str) -> str:
     s = _AMP_RE.sub("&amp;", s)
-    return (
-        s.replace("<", "&lt;")
-        .replace(">", "&gt;")
-        .replace('"', "&quot;")
-        .replace("'", "&apos;")
-    )
+    return s.replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;").replace("'", "&apos;")
 
 
 def iso8601(d: datetime) -> str:
@@ -60,9 +56,9 @@ def _resolve_pub_name(lang_code: str) -> str:
     return _DEFAULT_PUB_NAME
 
 
-def _slug_for_locale(stem: str, lang_code: str,
-                     en_to_lang: dict[str, str],
-                     lang_to_en: dict[str, str]) -> str | None:
+def _slug_for_locale(
+    stem: str, lang_code: str, en_to_lang: dict[str, str], lang_to_en: dict[str, str]
+) -> str | None:
     """Return the URL slug for this post under this locale, or None if
     the locale's slug-map disowns it."""
     if lang_code == "en":
@@ -105,8 +101,7 @@ def _iter_locale_entries(lang_code: str, now: datetime) -> Iterator[dict]:
         if not fm.get("title"):
             continue
 
-        d = datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)),
-                     6, 6, 6, tzinfo=UTC)
+        d = datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)), 6, 6, 6, tzinfo=UTC)
         delta = (now - d).total_seconds()
         if not (_WINDOW_FUTURE_S <= delta <= _WINDOW_PAST_S):
             continue

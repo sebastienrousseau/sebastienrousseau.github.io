@@ -29,7 +29,7 @@ We inline the minimal top styles in the page head to speed up initial painting.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- 1. Inline Critical CSS -->
   <style>
     body{margin:0;font-family:'Inter',system-ui,-apple-system,sans-serif;color:#111;background-color:#fff}
@@ -54,7 +54,7 @@ We defer all key script loads to keep the browser main thread quick during load.
 ```html
   <!-- Modern JS deferred (non-blocking) -->
   <script type="module" src="/assets/js/main.js" defer></script>
-  
+
   <!-- Dynamic Import inside main.js (Code-Splitting) -->
   <script type="module">
     // Load heavy interactive libraries only when needed
@@ -81,21 +81,21 @@ We prevent layout shifts by declaring explicit sizes and aspect ratios on all re
 <!-- Responsive Picture Element with Next-Gen Formats and Layout-shift prevention -->
 <picture class="article-hero-picture">
   <!-- AVIF for modern browsers (smallest bytes) -->
-  <source srcset="/images/hero-400.avif 400w, /images/hero-800.avif 800w, /images/hero-1200.avif 1200w" 
-          sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px" 
+  <source srcset="/images/hero-400.avif 400w, /images/hero-800.avif 800w, /images/hero-1200.avif 1200w"
+          sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px"
           type="image/avif">
   <!-- WebP Fallback -->
-  <source srcset="/images/hero-400.webp 400w, /images/hero-800.webp 800w, /images/hero-1200.webp 1200w" 
-          sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px" 
+  <source srcset="/images/hero-400.webp 400w, /images/hero-800.webp 800w, /images/hero-1200.webp 1200w"
+          sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px"
           type="image/webp">
   <!-- Standard Img Fallback with layout dimensions -->
-  <img src="/images/hero-800.jpg" 
-       alt="Illustration representing post-quantum cryptographic key distributions" 
-       width="800" 
-       height="450" 
-       loading="eager" 
+  <img src="/images/hero-800.jpg"
+       alt="Illustration representing post-quantum cryptographic key distributions"
+       width="800"
+       height="450"
+       loading="eager"
        fetchpriority="high"
-       decoding="async" 
+       decoding="async"
        class="img-responsive">
 </picture>
 ```
@@ -184,7 +184,7 @@ async function processHugeDataSet(items) {
   for (const item of items) {
     doHeavyMath(item);
     count++;
-    
+
     if (count % 50 === 0) {
       await yieldToMain();
     }
@@ -350,7 +350,7 @@ The edge router parses locale headers and routes users to their own language ver
 // Edge Language Router redirect logic
 export async function routeLanguage(request) {
   const url = new URL(request.url);
-  
+
   // Skip route if cookie is set or path is asset
   if (url.pathname.includes(".") || request.headers.get("Cookie")?.includes("lang=")) {
     return fetch(request);

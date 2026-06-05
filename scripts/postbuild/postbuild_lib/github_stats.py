@@ -14,6 +14,7 @@ Lookup heuristics (in order):
 Badge labels + relative-time strings are localised per page via
 ``_HTML_LANG_DETECT_RE``.
 """
+
 from __future__ import annotations
 
 import json
@@ -27,7 +28,7 @@ _HTML_LANG_DETECT_RE = re.compile(r'<html\b[^>]*\blang="([^"]+)"', re.IGNORECASE
 
 _GH_CARD_RE = re.compile(
     r'(<article class=(?:"(?:newsroom-card|proj-card)[^"]*"|(?:newsroom-card|proj-card))[^>]*>)'
-    r'([\s\S]+?)(</article>)',
+    r"([\s\S]+?)(</article>)",
 )
 _GH_REPO_HREF_RE = re.compile(
     r'href=["\']?https?://github\.com/(sebastienrousseau/[a-zA-Z0-9._-]+)/?["\']?',
@@ -38,15 +39,54 @@ _RELTIME: dict[str, dict[str, str]] = {
     # Format strings keyed by lang. ``%d`` is the count; ``%s`` for the
     # "an" plural in FR is appended manually because Python's f-strings
     # don't allow conditional plurals inline.
-    "en": {"s": "{n}s ago", "m": "{n}m ago", "h": "{n}h ago", "d": "{n}d ago", "w": "{n}w ago", "mo": "{n}mo ago", "y": "{n}y ago"},
-    "fr": {"s": "il y a {n} s", "m": "il y a {n} min", "h": "il y a {n} h", "d": "il y a {n} j", "w": "il y a {n} sem.", "mo": "il y a {n} mois", "y": "il y a {n} an"},
-    "de": {"s": "vor {n} s", "m": "vor {n} min", "h": "vor {n} Std.", "d": "vor {n} T.", "w": "vor {n} Wo.", "mo": "vor {n} Mon.", "y": "vor {n} J."},
+    "en": {
+        "s": "{n}s ago",
+        "m": "{n}m ago",
+        "h": "{n}h ago",
+        "d": "{n}d ago",
+        "w": "{n}w ago",
+        "mo": "{n}mo ago",
+        "y": "{n}y ago",
+    },
+    "fr": {
+        "s": "il y a {n} s",
+        "m": "il y a {n} min",
+        "h": "il y a {n} h",
+        "d": "il y a {n} j",
+        "w": "il y a {n} sem.",
+        "mo": "il y a {n} mois",
+        "y": "il y a {n} an",
+    },
+    "de": {
+        "s": "vor {n} s",
+        "m": "vor {n} min",
+        "h": "vor {n} Std.",
+        "d": "vor {n} T.",
+        "w": "vor {n} Wo.",
+        "mo": "vor {n} Mon.",
+        "y": "vor {n} J.",
+    },
 }
 
 _GH_BADGE_STRINGS: dict[str, dict[str, str]] = {
-    "en": {"last": "last commit", "stars": "stars", "forks": "forks", "repoStats": "Repository stats"},
-    "fr": {"last": "dernier commit", "stars": "étoiles", "forks": "forks", "repoStats": "Statistiques du dépôt"},
-    "de": {"last": "letzter Commit", "stars": "Sterne", "forks": "Forks", "repoStats": "Repository-Statistiken"},
+    "en": {
+        "last": "last commit",
+        "stars": "stars",
+        "forks": "forks",
+        "repoStats": "Repository stats",
+    },
+    "fr": {
+        "last": "dernier commit",
+        "stars": "étoiles",
+        "forks": "forks",
+        "repoStats": "Statistiques du dépôt",
+    },
+    "de": {
+        "last": "letzter Commit",
+        "stars": "Sterne",
+        "forks": "Forks",
+        "repoStats": "Repository-Statistiken",
+    },
 }
 
 
@@ -165,9 +205,9 @@ def _render_gh_badges(info: dict, lang: str = "en") -> str:
 def _normalise_url(u: str) -> str:
     """Normalise a URL for equality: drop scheme, www., trailing slash, lower-case."""
     u = u.strip().lower()
-    u = re.sub(r'^https?://', '', u)
-    u = re.sub(r'^www\.', '', u)
-    return u.rstrip('/')
+    u = re.sub(r"^https?://", "", u)
+    u = re.sub(r"^www\.", "", u)
+    return u.rstrip("/")
 
 
 def _lookup_by_slug_href(inner: str, stats_index: dict[str, dict]) -> dict | None:
@@ -200,7 +240,7 @@ def _lookup_by_homepage(inner: str, stats_index: dict[str, dict]) -> dict | None
 
 def _lookup_by_h3_title(inner: str, stats_index: dict[str, dict]) -> dict | None:
     """Third resolution path: the card's <h3><a> text matches a repo name."""
-    h3 = re.search(r'<h3[^>]*>\s*<a[^>]*>([^<]+)</a>', inner)
+    h3 = re.search(r"<h3[^>]*>\s*<a[^>]*>([^<]+)</a>", inner)
     if not h3:
         return None
     title = h3.group(1).strip().lower()
@@ -229,7 +269,7 @@ def inject_github_stats(html: str, stats_index: dict[str, dict]) -> str:
     """Inject star / fork / last-commit badges into every newsroom-card
     on the page whose first GitHub anchor or project homepage URL
     matches a tracked repo."""
-    if not stats_index or 'newsroom-card' not in html:
+    if not stats_index or "newsroom-card" not in html:
         return html
     page_lang = _detect_page_lang(html)
 
@@ -244,8 +284,8 @@ def inject_github_stats(html: str, stats_index: dict[str, dict]) -> str:
         if not badges:
             return m.group(0)
         inner_new = re.sub(
-            r'(</div>\s*)$',
-            badges + r'\1',
+            r"(</div>\s*)$",
+            badges + r"\1",
             inner,
             count=1,
         )

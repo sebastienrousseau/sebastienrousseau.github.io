@@ -1,11 +1,11 @@
 {
-  "description": "Агентичний ШІ перейшов від пілоту до виробництва у банках. 70% його використовують; лише один із п'яти має зрілу модель управління. Дедлайн EU AI Act — за 12 тижнів.",
-  "title": "[UK DRAFT] Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It",
-  "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
-  "banner_alt": "Діаграма архітектури агентичної інженерії для банків — spec-driven агенти ШІ, площина управління, квантово-безпечний субстрат та потоки модернізації застарілого mainframe",
-  "date": "May 17, 2026",
-  "subtitle": "Агентичний ШІ перейшов від пілоту до виробництва. 70% банків використовують його; лише один із п'яти має зрілу модель управління. Противники діють зі швидкістю машин, спадщина COBOL залишається з епохи пакетної обробки 1960-х, а дедлайн EU AI Act — за 12 тижнів.",
-  "language": "uk-UA",
   "keywords": "агентична інженерія, spec-driven розробка, банки, фінансові послуги, управління ШІ, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001, модернізація COBOL, mainframe, vibe coding, vibe hacking, автономні агенти, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, управління ризиками третіх сторін, TPRM, ризик постачальників, постквантова криптографія, площина управління агентами, FCA, SM&CR, план дій на 12 тижнів, Sebastien Rousseau",
-  "locale": "uk_UA"
+  "date": "May 17, 2026",
+  "title": "[UK DRAFT] Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It",
+  "description": "Агентичний ШІ перейшов від пілоту до виробництва у банках. 70% його використовують; лише один із п'яти має зрілу модель управління. Дедлайн EU AI Act — за 12 тижнів.",
+  "banner_alt": "Діаграма архітектури агентичної інженерії для банків — spec-driven агенти ШІ, площина управління, квантово-безпечний субстрат та потоки модернізації застарілого mainframe",
+  "language": "uk-UA",
+  "locale": "uk_UA",
+  "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
+  "subtitle": "Агентичний ШІ перейшов від пілоту до виробництва. 70% банків використовують його; лише один із п'яти має зрілу модель управління. Противники діють зі швидкістю машин, спадщина COBOL залишається з епохи пакетної обробки 1960-х, а дедлайн EU AI Act — за 12 тижнів."
 }

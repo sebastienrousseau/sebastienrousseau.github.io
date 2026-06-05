@@ -16,6 +16,7 @@ Three classes of edit, all keyed by relative file path:
 The script reads each file, rewrites only the affected lines, and writes back.
 Idempotent: running twice produces no further changes.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -159,50 +160,29 @@ DESCS: dict[str, str] = {
 BOILER = "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
 SUBTITLES: dict[str, str] = {
     # 2018 — blockchain & cryptocurrency
-    "_posts/2018-01-01-bitcoin-the-year-in-review.md":
-        "Bitcoin, cryptocurrency, and the technology reshaping financial markets.",
-    "_posts/2018-01-02-blockchain-the-technology-that-matters-in-2018.md":
-        "Blockchain, distributed ledgers, and the technology that matters in 2018.",
-    "_posts/2018-01-09-understanding-the-technology-behind-blockchain.md":
-        "A practical walk-through of the cryptography and consensus behind blockchain.",
-    "_posts/2018-01-24-the-erc-20-token-standard.md":
-        "ERC-20 tokens, Ethereum smart contracts and the standardisation of digital assets.",
-    "_posts/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution.md":
-        "A new cryptocurrency and faster-payments solution for the next-generation of finance.",
-    "_posts/2018-02-15-the-making-of-the-express-transaction-credits-platform.md":
-        "Designing the Express Transaction Credits platform with ERC-223 smart contracts.",
+    "_posts/2018-01-01-bitcoin-the-year-in-review.md": "Bitcoin, cryptocurrency, and the technology reshaping financial markets.",
+    "_posts/2018-01-02-blockchain-the-technology-that-matters-in-2018.md": "Blockchain, distributed ledgers, and the technology that matters in 2018.",
+    "_posts/2018-01-09-understanding-the-technology-behind-blockchain.md": "A practical walk-through of the cryptography and consensus behind blockchain.",
+    "_posts/2018-01-24-the-erc-20-token-standard.md": "ERC-20 tokens, Ethereum smart contracts and the standardisation of digital assets.",
+    "_posts/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution.md": "A new cryptocurrency and faster-payments solution for the next-generation of finance.",
+    "_posts/2018-02-15-the-making-of-the-express-transaction-credits-platform.md": "Designing the Express Transaction Credits platform with ERC-223 smart contracts.",
     # 2023 — Rust open-source libraries
-    "_posts/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001.md":
-        "ISO 20022 payment automation and wholesale-payments engineering with pain001.",
-    "_posts/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator.md":
-        "Static Site Generator, the fastest Rust-based static site generator for high-impact websites.",
-    "_posts/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh.md":
-        "HSH: a quantum-resistant hash library for the post-quantum era of authentication.",
-    "_posts/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries.md":
-        "LibMake: a Rust code generator that enforces best practices from day one.",
-    "_posts/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security.md":
-        "Vetted mathematical and cryptographic constants for memory-safe Rust security.",
-    "_posts/2023-11-12-exploring-generative-ai.md":
-        "Applied artificial intelligence in banking and financial services.",
-    "_posts/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age.md":
-        "CRYSTALS-Kyber, the NIST FIPS 203 standard for post-quantum key encapsulation.",
-    "_posts/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats.md":
-        "KyberLib, a robust Rust implementation of CRYSTALS-Kyber for the quantum era.",
-    "_posts/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library.md":
-        "DTT, the high-precision Rust library for date and time operations.",
-    "_posts/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking.md":
-        "Quantum Key Distribution (QKD) for financial-grade security in banking.",
+    "_posts/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001.md": "ISO 20022 payment automation and wholesale-payments engineering with pain001.",
+    "_posts/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator.md": "Static Site Generator, the fastest Rust-based static site generator for high-impact websites.",
+    "_posts/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh.md": "HSH: a quantum-resistant hash library for the post-quantum era of authentication.",
+    "_posts/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries.md": "LibMake: a Rust code generator that enforces best practices from day one.",
+    "_posts/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security.md": "Vetted mathematical and cryptographic constants for memory-safe Rust security.",
+    "_posts/2023-11-12-exploring-generative-ai.md": "Applied artificial intelligence in banking and financial services.",
+    "_posts/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age.md": "CRYSTALS-Kyber, the NIST FIPS 203 standard for post-quantum key encapsulation.",
+    "_posts/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats.md": "KyberLib, a robust Rust implementation of CRYSTALS-Kyber for the quantum era.",
+    "_posts/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library.md": "DTT, the high-precision Rust library for date and time operations.",
+    "_posts/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking.md": "Quantum Key Distribution (QKD) for financial-grade security in banking.",
     # Listing pages with the generic boilerplate
-    "_posts/articles.md":
-        "Articles on AI, post-quantum cryptography, ISO 20022 and the future of payments.",
-    "_posts/projects.md":
-        "Open-source projects in Python, Rust and JavaScript for the future of finance.",
-    "_posts/tags.md":
-        "Browse the site by topic: AI, payments, post-quantum cryptography, open source.",
-    "_posts/papers.md":
-        "Industry white papers and applied research for senior payments and security leaders.",
-    "_posts/playlists.md":
-        "Curated Spotify playlists for deep work, creativity and the engineering mind.",
+    "_posts/articles.md": "Articles on AI, post-quantum cryptography, ISO 20022 and the future of payments.",
+    "_posts/projects.md": "Open-source projects in Python, Rust and JavaScript for the future of finance.",
+    "_posts/tags.md": "Browse the site by topic: AI, payments, post-quantum cryptography, open source.",
+    "_posts/papers.md": "Industry white papers and applied research for senior payments and security leaders.",
+    "_posts/playlists.md": "Curated Spotify playlists for deep work, creativity and the engineering mind.",
 }
 
 

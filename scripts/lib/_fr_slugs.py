@@ -9,6 +9,7 @@ Kept here so existing imports (``build_translations``, ``build_fr_feeds``,
 ``postbuild``) keep working unchanged while the i18n refactor lands
 in stages.
 """
+
 from __future__ import annotations
 
 import _lang_registry  # type: ignore[import-not-found]  # script-mode sibling import

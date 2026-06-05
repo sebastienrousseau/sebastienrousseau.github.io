@@ -246,4 +246,3 @@ Puntos básicos ahorrados en financiación del colateral. Reducción del colchó
 </div>
 </aside>
 <!-- enrich-end -->
-

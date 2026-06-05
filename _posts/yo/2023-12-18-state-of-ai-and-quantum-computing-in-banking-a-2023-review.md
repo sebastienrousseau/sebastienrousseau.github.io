@@ -196,4 +196,3 @@ Thank you again for your time and I look forward to hearing from you!
 [28]: https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp "AI Regulations"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-

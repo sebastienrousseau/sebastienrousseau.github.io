@@ -119,4 +119,3 @@ Additionally, striking the right partnerships will be pivotal - whether with ad 
 
 [00]: https://www.aboutamazon.com/news/retail/amazon-rufus "Amazon Rufus - AI experience comes to the Amazon Shopping app"
 [01]: https://www.facebook.com/business/news/generative-ai-features-for-ads-coming-to-all-advertisers "Generative AI features for ads coming to all advertisers"
-

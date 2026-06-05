@@ -16,6 +16,7 @@ equal, so the gate doesn't false-fail on canonical-form variation.
 Run from repo root: ``python3 scripts/test_sitemap_completeness.py``.
 Exits non-zero on any rendered page that is missing.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -33,20 +34,22 @@ SITE = "https://sebastienrousseau.com"
 
 # Paths excluded from sitemap by convention.
 _EXCLUDE_TAILS = (
-    "/404/", "/offline/", "/thanks/",
+    "/404/",
+    "/offline/",
+    "/thanks/",
     # FR localised
-    "/fr/404/", "/fr/hors-ligne/", "/fr/merci/",
+    "/fr/404/",
+    "/fr/hors-ligne/",
+    "/fr/merci/",
 )
 
 # Prefixes excluded from sitemap by convention. WASM lab demos are
 # `<meta name="robots" content="noindex,nofollow">` by design — they're
 # experimental playgrounds linked from articles, not canonical content
 # that should rank in search.
-_EXCLUDE_PREFIXES = (
-    "/labs/",
-)
+_EXCLUDE_PREFIXES = ("/labs/",)
 
-_LOC_RE = re.compile(r'<loc>([^<]+)</loc>')
+_LOC_RE = re.compile(r"<loc>([^<]+)</loc>")
 
 
 def _norm(url: str) -> str:
@@ -81,7 +84,7 @@ def collect_rendered_pages() -> set[str]:
             canonical = SITE + "/" + rel.removesuffix("index.html")
         if any(canonical.endswith(tail) for tail in _EXCLUDE_TAILS):
             continue
-        path = canonical[len(SITE):]
+        path = canonical[len(SITE) :]
         if any(path.startswith(prefix) for prefix in _EXCLUDE_PREFIXES):
             continue
         urls.add(_norm(canonical))
@@ -97,8 +100,10 @@ def main() -> int:
 
     missing = rendered - sitemap
     if missing:
-        print("sitemap completeness defects (pages rendered but absent from any sitemap):",
-              file=sys.stderr)
+        print(
+            "sitemap completeness defects (pages rendered but absent from any sitemap):",
+            file=sys.stderr,
+        )
         for url in sorted(missing)[:30]:
             print(f"  - {url}", file=sys.stderr)
         if len(missing) > 30:

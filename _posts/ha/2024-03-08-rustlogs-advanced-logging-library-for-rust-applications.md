@@ -14,7 +14,7 @@ keywords: "ɗakin karatu na Rust logging, asynchronous Rust logging, tsarin log 
 
 ---
 
-> **TL;DR.** Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. 
+> **TL;DR.** Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options.
 >
 > **Mahimman Bayanai**
 >
@@ -252,4 +252,3 @@ As the Rust community continues to grow and evolve, RustLogs aims to become a vi
 [00]: https://rustlogs.com/ "An Advanced Logging Library for Rust Applications"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-

@@ -1,11 +1,11 @@
 {
-  "title": "Google Gemma：轉型開源 AI 開發",
-  "date": "February 26, 2024",
-  "locale": "zh_TW",
-  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
   "subtitle": "Google 革命性的開源 AI 模型，旨在為 ML 開發提供可及且合倫理的基礎",
-  "banner_alt": "帶霓虹燈的未來主義藍色宇宙飛船",
-  "description": "Google Gemma 是開源 AI 模型，配合 Ollama 在 macOS 上執行，為開源 AI 開發帶來新格局。",
   "language": "zh-Hant",
-  "keywords": "Google Gemma, 開源 AI, Gemini, Ollama, macOS, 2B, 7B, 大型語言模型, 合倫理 AI, 企業應用"
+  "date": "February 26, 2024",
+  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
+  "keywords": "Google Gemma, 開源 AI, Gemini, Ollama, macOS, 2B, 7B, 大型語言模型, 合倫理 AI, 企業應用",
+  "description": "Google Gemma 是開源 AI 模型，配合 Ollama 在 macOS 上執行，為開源 AI 開發帶來新格局。",
+  "banner_alt": "帶霓虹燈的未來主義藍色宇宙飛船",
+  "locale": "zh_TW",
+  "title": "Google Gemma：轉型開源 AI 開發"
 }

@@ -12,7 +12,7 @@ keywords: "бібліотека логування Rust, асинхронне л
 
 ![Banner for RustLogs (RLG)](https://cloudcdn.pro/stocks/images/rustlogs.webp).class=\"img-fluid clearfix\"
 
-> **TL;DR.** Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. 
+> **TL;DR.** Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options.
 >
 > **Ключові висновки**
 >

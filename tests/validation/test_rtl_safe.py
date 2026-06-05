@@ -19,6 +19,7 @@ gate without forcing a layout-wide refactor in one PR.
 Run from repo root: ``python3 scripts/test_rtl_safe.py``.
 Exits non-zero if any new (un-annotated) physical property is found.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -56,11 +57,11 @@ _PHYSICAL_PROPS: dict[str, str] = {
 
 # `text-align: left` / `text-align: right` — flag separately because
 # the syntax varies (start/end vs left/right).
-_TEXT_ALIGN_RE = re.compile(r'\btext-align:\s*(left|right)\b', re.IGNORECASE)
+_TEXT_ALIGN_RE = re.compile(r"\btext-align:\s*(left|right)\b", re.IGNORECASE)
 
 # Build one big regex with named groups for the property scan.
 _PROP_RE = re.compile(
-    r'\b(?P<prop>' + "|".join(re.escape(p) for p in _PHYSICAL_PROPS) + r'):\s*[^;}]+',
+    r"\b(?P<prop>" + "|".join(re.escape(p) for p in _PHYSICAL_PROPS) + r"):\s*[^;}]+",
     re.IGNORECASE,
 )
 
@@ -73,7 +74,7 @@ _IGNORE_TAG = "rtl-safe-ignore"
 def _strip_html_comments(text: str) -> str:
     """Remove <!-- … --> blocks so they can't shelter physical props
     from the scan — comments are not enforced by the browser."""
-    return re.sub(r'<!--[\s\S]*?-->', '', text)
+    return re.sub(r"<!--[\s\S]*?-->", "", text)
 
 
 def scan_file(path: Path) -> list[str]:

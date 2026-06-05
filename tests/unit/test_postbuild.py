@@ -4,6 +4,7 @@ Each test exercises one of the postbuild transforms in isolation. We use
 the in-process functions; we don't drive build.sh end-to-end because
 postbuild has 10+ stages and the full smoke test belongs in CI.
 """
+
 from __future__ import annotations
 
 import postbuild as pb
@@ -47,16 +48,16 @@ def test_escape_xml_numeric_entities_preserved():
 def test_patch_block_rewrites_localhost_url_using_title():
     """RSS <item> with localhost URL gets rewritten to canonical URL."""
     from postbuild_lib import output as out
+
     block = (
         "<item>"
         "<title>The Best Cloud Infrastructure Architecture in 2026</title>"
         "<link>http://127.0.0.1:8000/.meta/</link>"
-        "<guid isPermaLink=\"true\">http://127.0.0.1:8000/.meta/</guid>"
+        '<guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>'
         "</item>"
     )
     idx = {
-        "The Best Cloud Infrastructure Architecture in 2026":
-            "https://sebastienrousseau.com/best-cloud-2026",
+        "The Best Cloud Infrastructure Architecture in 2026": "https://sebastienrousseau.com/best-cloud-2026",
     }
     rewritten = out._patch_block(block, idx)
     assert "https://sebastienrousseau.com/best-cloud-2026" in rewritten
@@ -68,10 +69,8 @@ def test_patch_block_no_op_when_title_not_in_index():
     """If we can't resolve the title, leave the block untouched —
     don't fall back to the home URL."""
     from postbuild_lib import output as out
-    block = (
-        "<item><title>Unknown post</title>"
-        "<link>http://127.0.0.1:8000/.meta/</link></item>"
-    )
+
+    block = "<item><title>Unknown post</title>" "<link>http://127.0.0.1:8000/.meta/</link></item>"
     rewritten = out._patch_block(block, {})
     assert rewritten == block
 
@@ -80,9 +79,9 @@ def test_patch_block_decodes_xml_entities_in_title_lookup():
     """Feed emits ``&amp;`` in titles; the index should resolve via
     either escaped or unescaped form."""
     from postbuild_lib import output as out
+
     block = (
-        "<item><title>AI &amp; Quantum</title>"
-        "<link>http://localhost:8000/.meta/</link></item>"
+        "<item><title>AI &amp; Quantum</title>" "<link>http://localhost:8000/.meta/</link></item>"
     )
     idx = {"AI & Quantum": "https://sebastienrousseau.com/ai-quantum"}
     rewritten = out._patch_block(block, idx)
@@ -92,10 +91,8 @@ def test_patch_block_decodes_xml_entities_in_title_lookup():
 def test_patch_block_rewrites_meta_path_on_any_host():
     """``host/.meta/`` is rewritten even when the host isn't localhost."""
     from postbuild_lib import output as out
-    block = (
-        "<item><title>X</title>"
-        "<link>https://example.com/.meta/</link></item>"
-    )
+
+    block = "<item><title>X</title>" "<link>https://example.com/.meta/</link></item>"
     idx = {"X": "https://sebastienrousseau.com/x"}
     rewritten = out._patch_block(block, idx)
     assert "https://sebastienrousseau.com/x" in rewritten
@@ -111,8 +108,8 @@ def test_inject_word_count_adds_field_to_blogposting():
     html = (
         '<script type="application/ld+json">'
         '{"@type":"BlogPosting","headline":"X"}'
-        '</script>'
-        '<main>One two three four five six.</main>'
+        "</script>"
+        "<main>One two three four five six.</main>"
     )
     out = pb.inject_word_count(html)
     assert '"wordCount":6' in out
@@ -126,7 +123,7 @@ def test_inject_word_count_skips_when_no_main():
 def test_inject_word_count_skips_when_main_is_empty():
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting","headline":"X"}</script>'
-        '<main></main>'
+        "<main></main>"
     )
     out = pb.inject_word_count(html)
     assert '"wordCount"' not in out
@@ -134,10 +131,7 @@ def test_inject_word_count_skips_when_main_is_empty():
 
 def test_compute_word_count_strips_aside_blocks():
     """Asides (lead, related-cards) are not counted toward the article body."""
-    html = (
-        '<main><aside>ignore this aside content</aside>'
-        '<p>real body words here</p></main>'
-    )
+    html = "<main><aside>ignore this aside content</aside>" "<p>real body words here</p></main>"
     n = pb.compute_word_count(html)
     assert n == 4  # "real body words here"
 
@@ -148,7 +142,7 @@ def test_fix_social_image_promotes_summary_to_large():
     html = (
         '<script type="application/ld+json">'
         '{"@type":"BlogPosting","image":{"url":"https://x/banner.webp","width":1200,"height":628}}'
-        '</script>'
+        "</script>"
         '<meta property="og:image" content="">'
         '<meta name="twitter:image" content="">'
         '<meta name="twitter:card" content="summary">'
@@ -162,7 +156,7 @@ def test_fix_social_image_no_op_when_banner_is_placeholder():
     html = (
         '<script type="application/ld+json">'
         '{"@type":"BlogPosting","image":{"url":"divider.webp"}}'
-        '</script>'
+        "</script>"
         '<meta name="twitter:card" content="summary">'
     )
     out = pb.fix_social_image(html)
@@ -177,6 +171,7 @@ def test_fix_social_image_no_op_when_banner_is_placeholder():
 def test_build_llms_txt_includes_canonical_sections():
     """llms.txt must contain H1, summary, and the seven canonical entries."""
     from postbuild_lib.output import build_llms_txt
+
     text = build_llms_txt()
     assert text.startswith("# Sebastien Rousseau")
     for section in ("Canonical entry points", "Feeds", "Areas of expertise", "Contact"):
@@ -188,6 +183,7 @@ def test_build_llms_txt_includes_canonical_sections():
 def test_write_llms_txt_skips_when_unchanged(tmp_path):
     """No-op when the target already has the current content."""
     from postbuild_lib.output import build_llms_txt, write_llms_txt
+
     (tmp_path / "llms.txt").write_text(build_llms_txt(), encoding="utf-8")
     assert write_llms_txt(tmp_path) is False
 
@@ -195,12 +191,14 @@ def test_write_llms_txt_skips_when_unchanged(tmp_path):
 def test_write_llms_txt_writes_when_changed(tmp_path):
     """Writes when the target is missing or stale."""
     from postbuild_lib.output import write_llms_txt
+
     assert write_llms_txt(tmp_path) is True
     assert (tmp_path / "llms.txt").is_file()
 
 
 def test_write_robots_emits_sitemap_lines(tmp_path):
     from postbuild_lib.output import write_robots
+
     write_robots(tmp_path)
     text = (tmp_path / "robots.txt").read_text(encoding="utf-8")
     assert "User-agent:" in text
@@ -211,6 +209,7 @@ def test_write_robots_carries_per_category_taxonomy(tmp_path):
     """Robots.txt taxonomy must explicitly enumerate the 2026 bot
     categories so each can be flipped to Disallow independently."""
     from postbuild_lib.output import write_robots
+
     write_robots(tmp_path)
     text = (tmp_path / "robots.txt").read_text(encoding="utf-8")
     # The five required category headers.
@@ -224,8 +223,10 @@ def test_write_robots_carries_per_category_taxonomy(tmp_path):
         assert header in text, f"missing category header: {header}"
     # The canonical 2026 retrieval bots must each have a block.
     for ua in (
-        "ChatGPT-User", "OAI-SearchBot",
-        "Claude-User", "Claude-SearchBot",
+        "ChatGPT-User",
+        "OAI-SearchBot",
+        "Claude-User",
+        "Claude-SearchBot",
         "PerplexityBot",
     ):
         assert f"User-agent: {ua}" in text
@@ -243,6 +244,7 @@ def test_build_llms_ctx_txt_is_compact_and_machine_readable():
     purpose, list URLs in sectioned blocks, and stay under the
     ~2k-line llmstxt.org compact-format ceiling."""
     from postbuild_lib.output import build_llms_ctx_txt
+
     text = build_llms_ctx_txt()
     assert text.startswith("# Sebastien Rousseau — agent context")
     for section in ("## Content", "## Feeds", "## JSON API", "## Author", "## Bot policy"):
@@ -257,14 +259,17 @@ def test_build_llms_ctx_txt_is_compact_and_machine_readable():
 
 def test_write_llms_ctx_txt_skips_when_unchanged(tmp_path):
     from postbuild_lib.output import build_llms_ctx_txt, write_llms_ctx_txt
+
     (tmp_path / "llms-ctx.txt").write_text(
-        build_llms_ctx_txt(), encoding="utf-8",
+        build_llms_ctx_txt(),
+        encoding="utf-8",
     )
     assert write_llms_ctx_txt(tmp_path) is False
 
 
 def test_write_llms_ctx_txt_writes_when_changed(tmp_path):
     from postbuild_lib.output import write_llms_ctx_txt
+
     assert write_llms_ctx_txt(tmp_path) is True
     assert (tmp_path / "llms-ctx.txt").is_file()
 
@@ -272,6 +277,7 @@ def test_write_llms_ctx_txt_writes_when_changed(tmp_path):
 def test_write_robots_idempotent(tmp_path):
     """Second write with no content change returns False."""
     from postbuild_lib.output import write_robots
+
     assert write_robots(tmp_path) is True
     assert write_robots(tmp_path) is False
 
@@ -285,6 +291,7 @@ def test_write_robots_idempotent(tmp_path):
 def test_write_humans_copies_source_into_public(tmp_path):
     """write_humans copies the repo-root humans.txt over an empty SSG placeholder."""
     from postbuild_lib.output import write_humans
+
     source_root = tmp_path / "src"
     source_root.mkdir()
     public = tmp_path / "public"
@@ -301,6 +308,7 @@ def test_write_humans_copies_source_into_public(tmp_path):
 def test_write_humans_idempotent(tmp_path):
     """Second call with identical contents returns False (no-op)."""
     from postbuild_lib.output import write_humans
+
     source_root = tmp_path / "src"
     source_root.mkdir()
     public = tmp_path / "public"
@@ -313,6 +321,7 @@ def test_write_humans_idempotent(tmp_path):
 def test_write_humans_missing_source_is_noop(tmp_path):
     """If the source file doesn't exist, the emitter is a no-op (False)."""
     from postbuild_lib.output import write_humans
+
     public = tmp_path / "public"
     public.mkdir()
     assert write_humans(public, tmp_path / "missing") is False
@@ -321,14 +330,12 @@ def test_write_humans_missing_source_is_noop(tmp_path):
 def test_write_security_txt_copies_source_into_public(tmp_path):
     """write_security_txt mirrors write_humans for the root security.txt."""
     from postbuild_lib.output import write_security_txt
+
     source_root = tmp_path / "src"
     source_root.mkdir()
     public = tmp_path / "public"
     public.mkdir()
-    body = (
-        "Contact: mailto:sebastian.rousseau@gmail.com\n"
-        "Expires: 2027-06-04T00:00:00.000Z\n"
-    )
+    body = "Contact: mailto:sebastian.rousseau@gmail.com\n" "Expires: 2027-06-04T00:00:00.000Z\n"
     (source_root / "security.txt").write_text(body, encoding="utf-8")
     (public / "security.txt").write_text("", encoding="utf-8")
 
@@ -339,6 +346,7 @@ def test_write_security_txt_copies_source_into_public(tmp_path):
 def test_write_security_txt_idempotent_and_missing(tmp_path):
     """Second call returns False; missing source returns False."""
     from postbuild_lib.output import write_security_txt
+
     source_root = tmp_path / "src"
     source_root.mkdir()
     public = tmp_path / "public"
@@ -357,6 +365,7 @@ def test_write_security_txt_idempotent_and_missing(tmp_path):
 
 def test_sanitize_link_tag_collapses_duplicate_crossorigin():
     from postbuild_lib.article_furniture import _sanitize_link_tag
+
     tag = '<link rel="stylesheet" href="/x.css" crossorigin="anonymous" crossorigin="anonymous">'
     out = _sanitize_link_tag(tag)
     assert out.count('crossorigin="anonymous"') == 1
@@ -364,6 +373,7 @@ def test_sanitize_link_tag_collapses_duplicate_crossorigin():
 
 def test_sanitize_link_tag_strips_trailing_double_quote():
     from postbuild_lib.article_furniture import _sanitize_link_tag
+
     tag = '<link rel="stylesheet" href="/x.css" crossorigin="anonymous"">'
     out = _sanitize_link_tag(tag)
     # Two adjacent quotes before `>` are collapsed to one
@@ -372,6 +382,7 @@ def test_sanitize_link_tag_strips_trailing_double_quote():
 
 def test_hoist_body_link_stylesheets_moves_to_head():
     from postbuild_lib.article_furniture import hoist_body_link_stylesheets
+
     html = (
         '<head><meta charset="utf-8"></head>'
         '<body><main><link rel="stylesheet" href="/widget.css"></main></body>'
@@ -387,9 +398,8 @@ def test_hoist_body_link_stylesheets_moves_to_head():
 
 def test_hoist_body_link_stylesheets_no_op_when_already_in_head():
     from postbuild_lib.article_furniture import hoist_body_link_stylesheets
-    html = (
-        '<head><link rel="stylesheet" href="/x.css"></head><body><main></main></body>'
-    )
+
+    html = '<head><link rel="stylesheet" href="/x.css"></head><body><main></main></body>'
     _, n = hoist_body_link_stylesheets(html)
     assert n == 0
 
@@ -401,27 +411,32 @@ def test_hoist_body_link_stylesheets_no_op_when_already_in_head():
 
 def test_slugify_basic_ascii():
     from postbuild_lib.article_furniture import slugify
+
     assert slugify("Hello, World!") == "hello-world"
 
 
 def test_slugify_strips_html_tags():
     from postbuild_lib.article_furniture import slugify
+
     assert slugify("<strong>Heading</strong> Text") == "heading-text"
 
 
 def test_slugify_folds_accents():
     from postbuild_lib.article_furniture import slugify
+
     assert slugify("Références") == "references"
 
 
 def test_slugify_arabic_strips_to_empty():
     """Pure-Arabic input slugifies to '' — caller must handle fallback."""
     from postbuild_lib.article_furniture import slugify
+
     assert slugify("النص العربي") == ""
 
 
 def test_slugify_truncates_long_input():
     from postbuild_lib.article_furniture import slugify
+
     s = "a" * 200
     assert len(slugify(s)) <= 80
 
@@ -433,12 +448,14 @@ def test_slugify_truncates_long_input():
 
 def test_truncate_news_title_under_limit_passes_through():
     from postbuild_lib import output as out
+
     title = "Short title"
     assert out._truncate_news_title(title) == title
 
 
 def test_truncate_news_title_clips_at_word_boundary():
     from postbuild_lib import output as out
+
     title = "A very long title that absolutely exceeds the eighty character recommendation set by Google News"
     result = out._truncate_news_title(title)
     assert len(result) <= 80
@@ -450,17 +467,20 @@ def test_truncate_news_title_clips_at_word_boundary():
 
 def test_truncate_news_title_custom_limit():
     from postbuild_lib import output as out
+
     assert len(out._truncate_news_title("one two three four five", limit=10)) <= 10
 
 
 def test_limit_news_keywords_under_limit_passes_through():
     from postbuild_lib import output as out
+
     kws = "a, b, c"
     assert out._limit_news_keywords(kws) == kws
 
 
 def test_limit_news_keywords_trims_to_first_n():
     from postbuild_lib import output as out
+
     kws = ", ".join(f"k{i}" for i in range(15))
     result = out._limit_news_keywords(kws)
     items = [k.strip() for k in result.split(",")]
@@ -475,6 +495,7 @@ def test_limit_news_keywords_trims_to_first_n():
 
 def test_gh_format_count_under_1000():
     from postbuild_lib import github_stats as gh
+
     assert gh._format_count(0) == "0"
     assert gh._format_count(42) == "42"
     assert gh._format_count(999) == "999"
@@ -482,6 +503,7 @@ def test_gh_format_count_under_1000():
 
 def test_gh_format_count_thousands():
     from postbuild_lib import github_stats as gh
+
     assert gh._format_count(1000) == "1k"
     assert gh._format_count(1234) == "1.2k"
     assert gh._format_count(12345) == "12.3k"
@@ -489,17 +511,20 @@ def test_gh_format_count_thousands():
 
 def test_gh_format_count_millions():
     from postbuild_lib import github_stats as gh
+
     assert gh._format_count(1000000) == "1M"
     assert gh._format_count(1234567) == "1.2M"
 
 
 def test_gh_relative_time_empty_input():
     from postbuild_lib import github_stats as gh
+
     assert gh._relative_time("") == ""
 
 
 def test_gh_relative_time_invalid_input():
     from postbuild_lib import github_stats as gh
+
     assert gh._relative_time("not-an-iso-timestamp") == ""
 
 
@@ -508,6 +533,7 @@ def test_gh_relative_time_returns_french_label_when_fr():
     from datetime import UTC, datetime, timedelta
 
     from postbuild_lib import github_stats as gh
+
     one_hour_ago = (datetime.now(tz=UTC) - timedelta(hours=2)).isoformat()
     out = gh._relative_time(one_hour_ago, fr=True)
     # French uses "h" or "heures" depending on the format string; just
@@ -522,6 +548,7 @@ def test_gh_stats_index_missing_file_returns_empty():
     from unittest.mock import patch
 
     from postbuild_lib import github_stats as gh
+
     with patch.object(gh, "_GH_STATS_PATH", _P("/nonexistent/path/gh-stats.json")):
         assert gh.gh_stats_index() == {}
 
@@ -533,6 +560,7 @@ def test_gh_stats_index_missing_file_returns_empty():
 
 def test_parse_frontmatter_basic(tmp_path):
     from postbuild_lib import output as out
+
     p = tmp_path / "post.md"
     p.write_text('---\ntitle: "Hello"\nurl: "https://example.com"\n---\n\nBody', encoding="utf-8")
     fm = out._parse_frontmatter(p)
@@ -543,10 +571,9 @@ def test_parse_frontmatter_stops_at_second_delimiter(tmp_path):
     """Once we've seen the second ``---`` we ignore everything below
     even if it looks frontmatter-ish."""
     from postbuild_lib import output as out
+
     p = tmp_path / "post.md"
-    p.write_text(
-        '---\ntitle: "A"\n---\nbody\ntitle: "B" (in body)\n---\nmore\n', encoding="utf-8"
-    )
+    p.write_text('---\ntitle: "A"\n---\nbody\ntitle: "B" (in body)\n---\nmore\n', encoding="utf-8")
     fm = out._parse_frontmatter(p)
     assert fm == {"title": "A"}
 
@@ -555,6 +582,7 @@ def test_parse_frontmatter_ignores_unquoted_values(tmp_path):
     """Parser only takes quoted string values — bare YAML scalars
     (numbers, booleans, lists) are skipped."""
     from postbuild_lib import output as out
+
     p = tmp_path / "post.md"
     p.write_text('---\ntitle: "Hi"\nweight: 42\nactive: true\n---\n', encoding="utf-8")
     fm = out._parse_frontmatter(p)
@@ -564,6 +592,7 @@ def test_parse_frontmatter_ignores_unquoted_values(tmp_path):
 def test_parse_frontmatter_no_frontmatter(tmp_path):
     """A file with no ``---`` block returns an empty dict."""
     from postbuild_lib import output as out
+
     p = tmp_path / "post.md"
     p.write_text("# Heading\n\nJust a body\n", encoding="utf-8")
     fm = out._parse_frontmatter(p)
@@ -581,15 +610,17 @@ def test_parse_frontmatter_no_frontmatter(tmp_path):
 def test_inject_anchor_dedupes_colliding_slugs():
     """Two H2s that slugify to the same value get -2 suffix on the second."""
     from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<main><div class="wrap">'
-        '<h2>تأثير FHE على القطاع المصرفي</h2>'
-        '<h2>مستقبل FHE في القطاع المصرفي</h2>'
-        '</div></main>'
+        "<h2>تأثير FHE على القطاع المصرفي</h2>"
+        "<h2>مستقبل FHE في القطاع المصرفي</h2>"
+        "</div></main>"
     )
     out = inject_anchor_links_and_toc(html)
     import re as _re
+
     ids = _re.findall(r'<h2 id="([^"]+)"', out)
     assert len(ids) == 2
     assert ids[0] != ids[1]
@@ -601,18 +632,20 @@ def test_inject_anchor_empty_slug_gets_section_fallback():
     """A heading that slugifies to '' (pure Arabic, no Latin) gets
     a 'section-N' fallback so the id attribute is non-empty + unique."""
     from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<main><div class="wrap">'
-        '<h2>كل النص عربي</h2><h2>عربي آخر</h2>'
-        '</div></main>'
+        "<h2>كل النص عربي</h2><h2>عربي آخر</h2>"
+        "</div></main>"
     )
     out = inject_anchor_links_and_toc(html)
     import re as _re
+
     ids = _re.findall(r'<h2 id="([^"]+)"', out)
     assert len(ids) == 2
     assert all(i for i in ids)  # non-empty
-    assert ids[0] != ids[1]     # unique
+    assert ids[0] != ids[1]  # unique
 
 
 # ---------------------------------------------------------------------------
@@ -622,26 +655,30 @@ def test_inject_anchor_empty_slug_gets_section_fallback():
 
 def test_render_tag_badges_empty_returns_empty_string():
     from postbuild_lib.article_furniture import LABELS_EN, _render_tag_badges
+
     assert _render_tag_badges([], LABELS_EN) == ""
 
 
 def test_render_tag_badges_en_uses_tags_prefix():
     from postbuild_lib.article_furniture import LABELS_EN, _render_tag_badges
+
     out = _render_tag_badges(["quantum", "ISO 20022"], LABELS_EN, lang="en")
-    assert '/tags/index.html#h3-quantum' in out
-    assert '/tags/index.html#h3-iso-20022' in out
+    assert "/tags/index.html#h3-quantum" in out
+    assert "/tags/index.html#h3-iso-20022" in out
     assert 'rel="tag"' in out
     assert 'aria-label="Topics"' in out
 
 
 def test_render_tag_badges_fr_uses_etiquettes_prefix():
     from postbuild_lib.article_furniture import LABELS_FR, _render_tag_badges
+
     out = _render_tag_badges(["quantique"], LABELS_FR, lang="fr")
-    assert '/fr/etiquettes/index.html#h3-quantique' in out
+    assert "/fr/etiquettes/index.html#h3-quantique" in out
 
 
 def test_render_meta_bar_includes_author_and_dates():
     from postbuild_lib.article_furniture import LABELS_EN, _render_meta_bar
+
     out = _render_meta_bar(
         date_pub="2026-05-12T08:00:00+01:00",
         date_mod="2026-05-15T08:00:00+01:00",
@@ -652,12 +689,13 @@ def test_render_meta_bar_includes_author_and_dates():
     assert 'class="article-author"' in out
     assert 'class="meta-pub"' in out
     assert 'class="meta-rev"' in out  # mod > pub → revised stamp present
-    assert '2 min read' in out  # 440 words / 220 wpm → 2 min
+    assert "2 min read" in out  # 440 words / 220 wpm → 2 min
 
 
 def test_render_meta_bar_suppresses_updated_when_same_day():
     """If date_mod is the same day as date_pub, the 'Updated' stamp is suppressed."""
     from postbuild_lib.article_furniture import LABELS_EN, _render_meta_bar
+
     out = _render_meta_bar(
         date_pub="2026-05-12T08:00:00+01:00",
         date_mod="2026-05-12T18:00:00+01:00",
@@ -670,6 +708,7 @@ def test_render_meta_bar_suppresses_updated_when_same_day():
 
 def test_render_meta_bar_french_uses_localised_author_url():
     from postbuild_lib.article_furniture import LABELS_FR, _render_meta_bar
+
     out = _render_meta_bar(
         date_pub="2026-05-12T08:00:00+01:00",
         date_mod="",
@@ -678,7 +717,7 @@ def test_render_meta_bar_french_uses_localised_author_url():
         lang="fr",
     )
     assert 'href="/fr/a-propos/index.html"' in out
-    assert 'min de lecture' in out
+    assert "min de lecture" in out
 
 
 # ---------------------------------------------------------------------------
@@ -688,17 +727,16 @@ def test_render_meta_bar_french_uses_localised_author_url():
 
 def test_inject_sigstore_no_op_without_blogposting():
     from postbuild_lib.article_furniture import inject_sigstore_attestation
-    html = '<p>plain page, no BlogPosting graph</p>'
+
+    html = "<p>plain page, no BlogPosting graph</p>"
     assert inject_sigstore_attestation(html, "post-slug") == html
 
 
 def test_inject_sigstore_no_op_when_bundle_missing(tmp_path, monkeypatch):
     """Without a sigstore bundle on disk, the injector is a no-op."""
     from postbuild_lib import article_furniture as af
-    html = (
-        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
-        '<main></main>'
-    )
+
+    html = '<script type="application/ld+json">{"@type":"BlogPosting"}</script>' "<main></main>"
     monkeypatch.chdir(tmp_path)  # no _data/sigstore/* tree → no bundle
     assert af.inject_sigstore_attestation(html, "post-slug") == html
 
@@ -709,18 +747,18 @@ def test_inject_sigstore_emits_badge_when_bundle_exists(tmp_path, monkeypatch):
     from unittest.mock import patch
 
     from postbuild_lib import article_furniture as af
+
     public = tmp_path / "public"
     (public / "sigstore").mkdir(parents=True)
     (public / "sigstore" / "post-slug.bundle").write_text("{}", encoding="utf-8")
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
-        '<main><p>body</p></main>'
+        "<main><p>body</p></main>"
     )
-    with patch.object(af, "_SIGSTORE_CONFIG_PRESENT", True), \
-         patch.object(af, "PUBLIC", public):
+    with patch.object(af, "_SIGSTORE_CONFIG_PRESENT", True), patch.object(af, "PUBLIC", public):
         out = af.inject_sigstore_attestation(html, "post-slug")
     assert 'class="article-sigstore"' in out
-    assert 'Sigstore signature' in out
+    assert "Sigstore signature" in out
     assert 'href="/sigstore/post-slug.bundle"' in out
 
 
@@ -729,6 +767,7 @@ def test_inject_sigstore_idempotent():
     from unittest.mock import patch
 
     from postbuild_lib import article_furniture as af
+
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<main><aside class="article-sigstore">badge</aside></main>'
@@ -746,12 +785,14 @@ def test_inject_sigstore_idempotent():
 
 def test_labels_for_lang_returns_english_for_en():
     from postbuild_lib.article_furniture import LABELS_EN, _labels_for_lang
+
     assert _labels_for_lang("en") == LABELS_EN
 
 
 def test_labels_for_lang_handles_unknown_lang_gracefully():
     """An unknown lang falls back to LABELS_EN (no exception)."""
     from postbuild_lib.article_furniture import LABELS_EN, _labels_for_lang
+
     out = _labels_for_lang("zz")
     # Output is a *copy* with EN as base; if the lang has no labels file,
     # the result is exactly LABELS_EN.
@@ -765,15 +806,16 @@ def test_labels_for_lang_handles_unknown_lang_gracefully():
 
 def test_convert_faq_to_qa_rewrites_strong_q_a_pattern():
     from postbuild_lib.article_furniture import _convert_faq_to_qa
+
     html = (
         '<main><div class="wrap">'
         '<h2 id="frequently-asked-questions">FAQ</h2>'
-        '<p><strong>Q1: Is this hot?</strong></p>'
-        '<p>Yes, very.</p>'
-        '<p><strong>Q2: Anything else?</strong></p>'
-        '<p>Maybe later.</p>'
+        "<p><strong>Q1: Is this hot?</strong></p>"
+        "<p>Yes, very.</p>"
+        "<p><strong>Q2: Anything else?</strong></p>"
+        "<p>Maybe later.</p>"
         '<h2 id="next">Next section</h2>'
-        '</div></main>'
+        "</div></main>"
     )
     out = _convert_faq_to_qa(html)
     assert '<details class="qa-item" open>' in out
@@ -784,6 +826,7 @@ def test_convert_faq_to_qa_rewrites_strong_q_a_pattern():
 
 def test_convert_faq_to_qa_no_op_without_faq_h2():
     from postbuild_lib.article_furniture import _convert_faq_to_qa
+
     html = '<main><div class="wrap"><h2 id="intro">Hello</h2><p>Body.</p></div></main>'
     assert _convert_faq_to_qa(html) == html
 
@@ -796,6 +839,7 @@ def test_convert_faq_to_qa_no_op_without_faq_h2():
 def test_extract_citations_picks_authoritative_outbound_only():
     """Only links to ``CITATION_AUTHORITIES`` hosts make it into the citation graph."""
     from postbuild_lib.article_furniture import _extract_citations
+
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<main><div class="wrap">'
@@ -804,18 +848,19 @@ def test_extract_citations_picks_authoritative_outbound_only():
         '<a href="https://wikipedia.org/wiki/Quantum">External wiki</a>'
         '<a href="https://nist.gov/pubs">NIST</a>'
         '<a href="#anchor">anchor</a>'
-        '</div></main>'
+        "</div></main>"
     )
     cites = _extract_citations(html)
-    urls = [c['url'] for c in cites]
-    assert 'https://wikipedia.org/wiki/Quantum' in urls
-    assert 'https://nist.gov/pubs' in urls
-    assert 'https://example.com/page' not in urls
-    assert not any(u.startswith(('/', '#')) for u in urls)
+    urls = [c["url"] for c in cites]
+    assert "https://wikipedia.org/wiki/Quantum" in urls
+    assert "https://nist.gov/pubs" in urls
+    assert "https://example.com/page" not in urls
+    assert not any(u.startswith(("/", "#")) for u in urls)
 
 
 def test_inject_citations_no_op_without_outbound_links():
     from postbuild_lib.article_furniture import inject_citations
+
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting","speakable":{}}</script>'
         '<main><div class="wrap"><a href="/internal/">x</a></div></main>'
@@ -833,6 +878,7 @@ def test_render_gh_badges_full_payload_emits_four_pills():
     from datetime import UTC, datetime, timedelta
 
     from postbuild_lib.github_stats import _render_gh_badges
+
     info = {
         "stars": 121,
         "forks": 9,
@@ -851,19 +897,22 @@ def test_render_gh_badges_full_payload_emits_four_pills():
 def test_render_gh_badges_drops_license_when_noassertion():
     """NOASSERTION / OTHER / "" license values are filtered out."""
     from postbuild_lib.github_stats import _render_gh_badges
+
     info = {"stars": 1, "forks": 0, "license": "NOASSERTION", "pushed_at": ""}
     out = _render_gh_badges(info, lang="en")
-    assert 'gh-license' not in out
+    assert "gh-license" not in out
 
 
 def test_render_gh_badges_empty_payload_returns_empty_string():
     from postbuild_lib.github_stats import _render_gh_badges
+
     out = _render_gh_badges({"stars": 0, "forks": 0, "license": "", "pushed_at": ""})
     assert out == ""
 
 
 def test_normalise_url_strips_scheme_www_trailing_slash():
     from postbuild_lib.github_stats import _normalise_url
+
     assert _normalise_url("https://www.example.com/") == "example.com"
     assert _normalise_url("HTTP://Example.COM/foo/") == "example.com/foo"
     assert _normalise_url("https://example.com") == "example.com"
@@ -871,6 +920,7 @@ def test_normalise_url_strips_scheme_www_trailing_slash():
 
 def test_lookup_by_slug_href_hits_index():
     from postbuild_lib.github_stats import _lookup_by_slug_href
+
     # The regex captures the full ``sebastienrousseau/<repo>`` group, so the
     # index key has to match that exactly.
     idx = {"sebastienrousseau/foo": {"name": "foo", "stars": 10}}
@@ -880,6 +930,7 @@ def test_lookup_by_slug_href_hits_index():
 
 def test_lookup_by_slug_href_misses_when_repo_not_tracked():
     from postbuild_lib.github_stats import _lookup_by_slug_href
+
     idx = {"sebastienrousseau/bar": {"name": "bar"}}
     inner = '<a href="https://github.com/sebastienrousseau/foo">…</a>'
     assert _lookup_by_slug_href(inner, idx) is None
@@ -888,6 +939,7 @@ def test_lookup_by_slug_href_misses_when_repo_not_tracked():
 def test_lookup_by_homepage_matches_normalised_url():
     """Homepage URL and card href normalise to the same key (scheme + www stripped)."""
     from postbuild_lib.github_stats import _lookup_by_homepage
+
     idx = {"foo": {"name": "foo", "homepage": "https://www.foo-project.io/"}}
     inner = '<a href="https://foo-project.io">read more</a>'
     assert _lookup_by_homepage(inner, idx) == idx["foo"]
@@ -895,19 +947,22 @@ def test_lookup_by_homepage_matches_normalised_url():
 
 def test_lookup_by_h3_title_matches_case_insensitive():
     from postbuild_lib.github_stats import _lookup_by_h3_title
+
     idx = {"foo": {"name": "Foo"}}
-    inner = '<h3><a>foo</a></h3>'
+    inner = "<h3><a>foo</a></h3>"
     assert _lookup_by_h3_title(inner, idx) == idx["foo"]
 
 
 def test_inject_github_stats_no_op_without_cards():
     from postbuild_lib.github_stats import inject_github_stats
-    html = '<p>no newsroom cards here</p>'
+
+    html = "<p>no newsroom cards here</p>"
     assert inject_github_stats(html, {"foo": {"stars": 1}}) == html
 
 
 def test_inject_github_stats_no_op_with_empty_index():
     from postbuild_lib.github_stats import inject_github_stats
+
     html = '<article class="newsroom-card"><a href="https://github.com/sebastienrousseau/foo">x</a></article>'
     assert inject_github_stats(html, {}) == html
 
@@ -915,6 +970,7 @@ def test_inject_github_stats_no_op_with_empty_index():
 def test_inject_github_stats_injects_badges_into_matching_card():
     """A newsroom-card whose GitHub href is tracked gets a badge row appended."""
     from postbuild_lib.github_stats import inject_github_stats
+
     idx = {
         "sebastienrousseau/foo": {
             "name": "foo",
@@ -927,24 +983,25 @@ def test_inject_github_stats_injects_badges_into_matching_card():
     html = (
         '<article class="newsroom-card">'
         '<a href="https://github.com/sebastienrousseau/foo">link</a>'
-        '<div>card body</div>'
-        '</article>'
+        "<div>card body</div>"
+        "</article>"
     )
     out = inject_github_stats(html, idx)
     assert 'class="gh-stats-row"' in out
-    assert '42' in out
-    assert 'MIT' in out
+    assert "42" in out
+    assert "MIT" in out
 
 
 def test_inject_github_stats_idempotent_when_row_already_present():
     """Already-badged cards aren't rewritten."""
     from postbuild_lib.github_stats import inject_github_stats
+
     idx = {"sebastienrousseau/foo": {"stars": 1, "forks": 0, "license": "", "pushed_at": ""}}
     html = (
         '<article class="newsroom-card">'
         '<a href="https://github.com/sebastienrousseau/foo">link</a>'
         '<p class="gh-stats-row">already there</p>'
-        '</article>'
+        "</article>"
     )
     assert inject_github_stats(html, idx) == html
 
@@ -954,6 +1011,7 @@ def test_gh_stats_index_parses_valid_payload(tmp_path, monkeypatch):
     from unittest.mock import patch
 
     from postbuild_lib import github_stats as gh
+
     payload = tmp_path / "gh-stats.json"
     payload.write_text(
         '{"repos": [{"slug": "foo", "name": "foo", "stars": 1}, '
@@ -970,6 +1028,7 @@ def test_gh_stats_index_returns_empty_on_invalid_json(tmp_path):
     from unittest.mock import patch
 
     from postbuild_lib import github_stats as gh
+
     payload = tmp_path / "gh-stats.json"
     payload.write_text("{ not valid json", encoding="utf-8")
     with patch.object(gh, "_GH_STATS_PATH", payload):
@@ -979,12 +1038,14 @@ def test_gh_stats_index_returns_empty_on_invalid_json(tmp_path):
 def test_detect_page_lang_uses_html_lang_attribute():
     """A page with ``<html lang="fr-…">`` resolves to ``fr``."""
     from postbuild_lib.github_stats import _detect_page_lang
+
     html = '<html lang="fr-FR"><head></head></html>'
     assert _detect_page_lang(html) == "fr"
 
 
 def test_detect_page_lang_defaults_to_en_when_no_lang_attr():
     from postbuild_lib.github_stats import _detect_page_lang
+
     assert _detect_page_lang("<html><head></head></html>") == "en"
 
 
@@ -993,6 +1054,7 @@ def test_relative_time_french_plural_years():
     from datetime import UTC, datetime, timedelta
 
     from postbuild_lib.github_stats import _relative_time
+
     two_years_ago = (datetime.now(tz=UTC) - timedelta(days=365 * 3)).isoformat()
     out = _relative_time(two_years_ago, fr=True)
     # French years plural lands a trailing "s"
@@ -1002,6 +1064,7 @@ def test_relative_time_french_plural_years():
 def test_lookup_by_homepage_no_op_when_index_has_no_homepages():
     """If no entry has a ``homepage`` field, the resolver short-circuits to None."""
     from postbuild_lib.github_stats import _lookup_by_homepage
+
     idx = {"foo": {"name": "foo"}}  # no homepage key
     inner = '<a href="https://example.com/anything">x</a>'
     assert _lookup_by_homepage(inner, idx) is None
@@ -1009,6 +1072,7 @@ def test_lookup_by_homepage_no_op_when_index_has_no_homepages():
 
 def test_lookup_by_homepage_skips_non_http_hrefs():
     from postbuild_lib.github_stats import _lookup_by_homepage
+
     idx = {"foo": {"name": "foo", "homepage": "https://foo.io"}}
     inner = '<a href="mailto:x@x.com">x</a><a href="/internal">y</a>'
     assert _lookup_by_homepage(inner, idx) is None
@@ -1016,13 +1080,23 @@ def test_lookup_by_homepage_skips_non_http_hrefs():
 
 def test_lookup_by_h3_title_no_op_when_no_h3():
     from postbuild_lib.github_stats import _lookup_by_h3_title
-    assert _lookup_by_h3_title('<p>no heading</p>', {"foo": {"name": "foo"}}) is None
+
+    assert _lookup_by_h3_title("<p>no heading</p>", {"foo": {"name": "foo"}}) is None
 
 
 def test_inject_github_stats_skips_cards_without_any_resolvable_match():
     """A newsroom-card with no GitHub href / no homepage / no matching H3 stays as-is."""
     from postbuild_lib.github_stats import inject_github_stats
-    idx = {"sebastienrousseau/foo": {"name": "foo", "stars": 1, "forks": 0, "license": "", "pushed_at": ""}}
+
+    idx = {
+        "sebastienrousseau/foo": {
+            "name": "foo",
+            "stars": 1,
+            "forks": 0,
+            "license": "",
+            "pushed_at": "",
+        }
+    }
     html = '<article class="newsroom-card"><p>nothing to match</p></article>'
     assert inject_github_stats(html, idx) == html
 
@@ -1031,11 +1105,20 @@ def test_inject_github_stats_skips_cards_when_badges_render_empty():
     """If the matched repo has no stars/forks/license/pushed_at, ``_render_gh_badges``
     returns empty and the card is left untouched."""
     from postbuild_lib.github_stats import inject_github_stats
-    idx = {"sebastienrousseau/foo": {"name": "foo", "stars": 0, "forks": 0, "license": "", "pushed_at": ""}}
+
+    idx = {
+        "sebastienrousseau/foo": {
+            "name": "foo",
+            "stars": 0,
+            "forks": 0,
+            "license": "",
+            "pushed_at": "",
+        }
+    }
     html = (
         '<article class="newsroom-card">'
         '<a href="https://github.com/sebastienrousseau/foo">x</a>'
-        '</article>'
+        "</article>"
     )
     assert inject_github_stats(html, idx) == html
 
@@ -1043,6 +1126,7 @@ def test_inject_github_stats_skips_cards_when_badges_render_empty():
 def test_gh_lookup_returns_none_with_empty_index():
     """``_gh_lookup`` bails immediately when ``stats_index`` is empty."""
     from postbuild_lib.github_stats import _gh_lookup
+
     assert _gh_lookup('<a href="https://github.com/sebastienrousseau/foo">x</a>', {}) is None
 
 
@@ -1050,9 +1134,14 @@ def test_inject_github_stats_inner_new_fallback_path():
     """If the card body has no trailing ``</div>``, the regex sub returns the
     same string and the code appends badges to the end instead."""
     from postbuild_lib.github_stats import inject_github_stats
+
     idx = {
         "sebastienrousseau/foo": {
-            "name": "foo", "stars": 5, "forks": 1, "license": "MIT", "pushed_at": "",
+            "name": "foo",
+            "stars": 5,
+            "forks": 1,
+            "license": "MIT",
+            "pushed_at": "",
         },
     }
     # The inner here has no </div> — regex sub yields unchanged, so the
@@ -1060,7 +1149,7 @@ def test_inject_github_stats_inner_new_fallback_path():
     html = (
         '<article class="newsroom-card">'
         '<a href="https://github.com/sebastienrousseau/foo">x</a>'
-        '</article>'
+        "</article>"
     )
     out = inject_github_stats(html, idx)
     assert 'class="gh-stats-row"' in out
@@ -1071,6 +1160,7 @@ def test_relative_time_handles_each_bucket():
     from datetime import UTC, datetime, timedelta
 
     from postbuild_lib.github_stats import _relative_time
+
     now = datetime.now(tz=UTC)
     cases = [
         timedelta(seconds=30),
@@ -1096,7 +1186,7 @@ def test_inject_about_no_op_when_no_keyword_matches():
     html = (
         '<script type="application/ld+json">'
         '{"@type":"BlogPosting","headline":"X","keywords":"basketweaving, ceramics"}'
-        '</script>'
+        "</script>"
     )
     assert pb.inject_about(html) == html
 
@@ -1106,7 +1196,7 @@ def test_inject_about_injects_about_field_for_known_entity():
     html = (
         '<script type="application/ld+json">'
         '{"@type":"BlogPosting","keywords":"post-quantum cryptography, banking","headline":"X"}'
-        '</script>'
+        "</script>"
     )
     out = pb.inject_about(html)
     assert '"about":' in out
@@ -1116,7 +1206,8 @@ def test_inject_about_injects_about_field_for_known_entity():
 def test_inject_howto_no_op_when_no_resource_marker():
     """Pages without the ``data-resource-howto`` marker are untouched."""
     from pathlib import Path as _P
-    html = '<p>regular content</p>'
+
+    html = "<p>regular content</p>"
     assert pb.inject_howto(_P("public/index.html"), html) == html
 
 
@@ -1125,6 +1216,7 @@ def test_inject_howto_emits_jsonld_for_known_slug():
     from pathlib import Path as _P
 
     from postbuild_lib.seo import HOWTO_SCHEMAS, inject_howto
+
     slug = next(iter(HOWTO_SCHEMAS))
     page = _P(f"public/{slug}/index.html")
     html = "<html><body>content</body></html>"
@@ -1136,6 +1228,7 @@ def test_inject_howto_idempotent_when_already_present():
     from pathlib import Path as _P
 
     from postbuild_lib.seo import HOWTO_SCHEMAS, inject_howto
+
     slug = next(iter(HOWTO_SCHEMAS))
     html = '<html><body><script>"@type":"HowTo"</script></body></html>'
     assert inject_howto(_P(f"public/{slug}/index.html"), html) == html
@@ -1154,13 +1247,14 @@ def test_fix_social_image_no_op_when_no_blogposting_image_field():
 
 def test_inject_anchor_links_emits_anchor_per_heading():
     from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<main><div class="wrap">'
-        '<h2>Intro</h2><p>body</p>'
-        '<h2>Setup</h2><p>body</p>'
-        '<h3>Subsection</h3>'
-        '</div></main>'
+        "<h2>Intro</h2><p>body</p>"
+        "<h2>Setup</h2><p>body</p>"
+        "<h3>Subsection</h3>"
+        "</div></main>"
     )
     out = inject_anchor_links_and_toc(html)
     assert out.count('class="heading-anchor"') == 3
@@ -1172,6 +1266,7 @@ def test_inject_anchor_links_emits_anchor_per_heading():
 def test_inject_anchor_renders_toc_when_5_or_more_h2():
     """≥ 5 H2s triggers the ToC card."""
     from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+
     body = "".join(f"<h2>Section {i}</h2>" for i in range(1, 6))
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
@@ -1184,6 +1279,7 @@ def test_inject_anchor_renders_toc_when_5_or_more_h2():
 
 def test_inject_anchor_omits_toc_when_fewer_than_5_h2():
     from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<main><div class="wrap"><h2>One</h2><h2>Two</h2></div></main>'
@@ -1198,6 +1294,7 @@ def test_inject_anchor_is_idempotent():
     tree carrying last build's HTML would otherwise pick up "#" as part
     of each heading's text and stack one extra TOC every run."""
     from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+
     body = "".join(f"<h2>Section {i}</h2>" for i in range(1, 6))
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
@@ -1214,12 +1311,13 @@ def test_inject_anchor_is_idempotent():
 def test_inject_anchor_skips_when_existing_toc_present():
     """If a TOC marker is already on the page, do nothing."""
     from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<main><div class="wrap">'
         '<aside class="article-toc"><h2>Contents</h2></aside>'
-        '<h2>Section</h2>'
-        '</div></main>'
+        "<h2>Section</h2>"
+        "</div></main>"
     )
     assert inject_anchor_links_and_toc(html) == html
 
@@ -1227,11 +1325,12 @@ def test_inject_anchor_skips_when_existing_toc_present():
 def test_inject_anchor_skips_when_existing_heading_anchors_present():
     """If headings already carry .heading-anchor links, do nothing."""
     from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<main><div class="wrap">'
         '<h2 id="x">Section <a class="heading-anchor" href="#x">#</a></h2>'
-        '</div></main>'
+        "</div></main>"
     )
     assert inject_anchor_links_and_toc(html) == html
 
@@ -1239,30 +1338,32 @@ def test_inject_anchor_skips_when_existing_heading_anchors_present():
 def test_strip_duplicate_body_h1_removes_match():
     """Layout hero H1 + body H1 with identical text — body H1 dropped."""
     from postbuild_lib.article_furniture import strip_duplicate_body_h1
+
     html = (
         '<section class="ap-hero"><h1>The Article</h1></section>'
         '<main><div class="wrap-article">'
-        '<h1>The Article</h1>'
-        '<p>body</p>'
-        '</div></main>'
+        "<h1>The Article</h1>"
+        "<p>body</p>"
+        "</div></main>"
     )
     out = strip_duplicate_body_h1(html)
-    assert out.count('<h1>') == 1
-    assert '<h1>The Article</h1>' in out  # the hero H1 stays
+    assert out.count("<h1>") == 1
+    assert "<h1>The Article</h1>" in out  # the hero H1 stays
     # Body now starts with the paragraph.
-    assert '</h1>\n<p>body</p>' not in out
+    assert "</h1>\n<p>body</p>" not in out
 
 
 def test_strip_duplicate_body_h1_keeps_distinct_h1():
     """If the body H1 differs from the hero H1, leave both in place
     (something unusual is going on; don't silently delete content)."""
     from postbuild_lib.article_furniture import strip_duplicate_body_h1
+
     html = (
         '<section class="ap-hero"><h1>Hero Title</h1></section>'
         '<main><div class="wrap-article">'
-        '<h1>A different body title</h1>'
-        '<p>body</p>'
-        '</div></main>'
+        "<h1>A different body title</h1>"
+        "<p>body</p>"
+        "</div></main>"
     )
     out = strip_duplicate_body_h1(html)
     assert out == html
@@ -1272,6 +1373,7 @@ def test_strip_duplicate_body_h1_no_op_without_hero():
     """Without an ap-hero H1 (static pages, listing pages) the function
     is a no-op."""
     from postbuild_lib.article_furniture import strip_duplicate_body_h1
+
     html = '<main><div class="wrap"><h1>Standalone</h1></div></main>'
     assert strip_duplicate_body_h1(html) == html
 
@@ -1279,20 +1381,22 @@ def test_strip_duplicate_body_h1_no_op_without_hero():
 def test_strip_duplicate_body_h1_handles_entities():
     """HTML-entity-encoded titles should still match after unescape."""
     from postbuild_lib.article_furniture import strip_duplicate_body_h1
+
     html = (
         '<section class="ap-hero"><h1>Cards &amp; A2A</h1></section>'
         '<main><div class="wrap-article">'
-        '<h1>Cards &amp; A2A</h1>'
-        '<p>body</p>'
-        '</div></main>'
+        "<h1>Cards &amp; A2A</h1>"
+        "<p>body</p>"
+        "</div></main>"
     )
     out = strip_duplicate_body_h1(html)
-    assert out.count('<h1>') == 1
+    assert out.count("<h1>") == 1
 
 
 def test_strip_duplicate_body_h1_skips_when_no_body_h1():
     """No H1 inside main → no-op."""
     from postbuild_lib.article_furniture import strip_duplicate_body_h1
+
     html = (
         '<section class="ap-hero"><h1>Title</h1></section>'
         '<main><div class="wrap-article"><p>body only</p></div></main>'
@@ -1302,6 +1406,7 @@ def test_strip_duplicate_body_h1_skips_when_no_body_h1():
 
 def test_inject_anchor_no_op_without_blogposting():
     from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+
     html = '<main><div class="wrap"><h2>X</h2></div></main>'
     assert inject_anchor_links_and_toc(html) == html
 
@@ -1316,7 +1421,9 @@ def test_build_post_nav_index_chronological_order(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
     pages = []
     for stem, title in [
-        ("2026-05-12-a", "First"), ("2026-05-13-b", "Middle"), ("2026-05-14-c", "Last"),
+        ("2026-05-12-a", "First"),
+        ("2026-05-13-b", "Middle"),
+        ("2026-05-14-c", "Last"),
     ]:
         d = tmp_path / "public" / stem
         d.mkdir(parents=True)
@@ -1327,6 +1434,7 @@ def test_build_post_nav_index_chronological_order(tmp_path, monkeypatch):
         )
         pages.append(d / "index.html")
     from postbuild_lib.article_furniture import build_post_nav_index
+
     idx = build_post_nav_index(pages)
     # Middle post has both prev and next
     assert idx["2026-05-13-b"][0] == ("2026-05-12-a", "First")
@@ -1344,21 +1452,23 @@ def test_build_post_nav_index_chronological_order(tmp_path, monkeypatch):
 
 def test_inject_mermaid_no_op_when_no_mermaid_block():
     from postbuild_lib.article_furniture import inject_mermaid
-    html = '<pre><code>plain code</code></pre>'
+
+    html = "<pre><code>plain code</code></pre>"
     assert inject_mermaid(html) == html
 
 
 def test_inject_mermaid_converts_fenced_block():
     from postbuild_lib.article_furniture import inject_mermaid
+
     html = (
         '<meta http-equiv="Content-Security-Policy" content="script-src \'self\'">'
         '<pre><code class="language-mermaid">graph TD; A--&gt;B</code></pre>'
     )
     out = inject_mermaid(html)
     assert '<pre class="mermaid">' in out
-    assert 'graph TD' in out
+    assert "graph TD" in out
     # CSP widened to allow the Mermaid CDN import
-    assert 'cdn.jsdelivr.net' in out
+    assert "cdn.jsdelivr.net" in out
 
 
 # ---------------------------------------------------------------------------
@@ -1368,20 +1478,22 @@ def test_inject_mermaid_converts_fenced_block():
 
 def test_inject_sources_list_renders_aside_with_authoritative_links():
     from postbuild_lib.article_furniture import inject_sources_list
+
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<main><div class="wrap">'
         '<a href="https://nist.gov/pub1">NIST 1</a>'
         '<a href="https://wikipedia.org/wiki/X">Wiki</a>'
-        '</div></main>'
+        "</div></main>"
     )
     out = inject_sources_list(html)
     assert 'class="article-sources"' in out
-    assert 'nist.gov' in out
+    assert "nist.gov" in out
 
 
 def test_inject_sources_list_no_op_without_outbound_links():
     from postbuild_lib.article_furniture import inject_sources_list
+
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<main><div class="wrap"><p>no links</p></div></main>'
@@ -1396,6 +1508,7 @@ def test_inject_sources_list_no_op_without_outbound_links():
 
 def test_resolve_en_slug_static_pages_use_static_map():
     from postbuild_lib.article_furniture import _resolve_en_slug
+
     # "about" → static EN page. FR slug for "about" is "a-propos".
     # When given the FR slug, _resolve_en_slug returns the EN canonical.
     assert _resolve_en_slug("a-propos", "fr") == "about"
@@ -1403,11 +1516,13 @@ def test_resolve_en_slug_static_pages_use_static_map():
 
 def test_resolve_en_slug_returns_none_for_unknown_slug():
     from postbuild_lib.article_furniture import _resolve_en_slug
+
     assert _resolve_en_slug("totally-unknown-slug", "fr") is None
 
 
 def test_all_active_non_en_langs_includes_fr_de_ar():
     from postbuild_lib.article_furniture import _all_active_non_en_langs
+
     codes = _all_active_non_en_langs()
     assert "fr" in codes
     assert "de" in codes
@@ -1429,6 +1544,7 @@ def _wrap_blogposting(body: str) -> str:
 
 def test_inject_prev_next_nav_renders_both_links():
     from postbuild_lib.article_furniture import inject_prev_next_nav
+
     html = _wrap_blogposting("<p>body</p>")
     nav_index = {
         "2026-05-13-mid": (
@@ -1446,6 +1562,7 @@ def test_inject_prev_next_nav_renders_both_links():
 
 def test_inject_prev_next_nav_emits_stub_for_missing_neighbour():
     from postbuild_lib.article_furniture import inject_prev_next_nav
+
     html = _wrap_blogposting("<p>body</p>")
     nav_index = {"2026-05-13-only": (None, ("2026-05-14-next", "Next"))}
     out = inject_prev_next_nav(html, "2026-05-13-only", nav_index)
@@ -1455,24 +1572,28 @@ def test_inject_prev_next_nav_emits_stub_for_missing_neighbour():
 
 def test_inject_prev_next_nav_no_op_without_blogposting():
     from postbuild_lib.article_furniture import inject_prev_next_nav
+
     html = '<main><div class="wrap"><p>plain page</p></div></main>'
     assert inject_prev_next_nav(html, "foo", {"foo": (None, ("x", "X"))}) == html
 
 
 def test_inject_prev_next_nav_no_op_when_slug_not_in_index():
     from postbuild_lib.article_furniture import inject_prev_next_nav
+
     html = _wrap_blogposting("<p>body</p>")
     assert inject_prev_next_nav(html, "unknown", {}) == html
 
 
 def test_inject_prev_next_nav_idempotent_when_pagination_already_present():
     from postbuild_lib.article_furniture import inject_prev_next_nav
+
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<main><div class="wrap"><nav class="post-pagination"></nav></div></main>'
     )
     out = inject_prev_next_nav(
-        html, "foo",
+        html,
+        "foo",
         {"foo": (("bar", "Bar"), ("baz", "Baz"))},
     )
     assert out == html
@@ -1485,6 +1606,7 @@ def test_inject_prev_next_nav_idempotent_when_pagination_already_present():
 
 def test_alternates_for_en_slug_includes_en_first():
     from postbuild_lib.article_furniture import _alternates_for_en_slug
+
     alts = _alternates_for_en_slug("about", {})  # no translations rendered
     assert alts[0] == ("en", "https://sebastienrousseau.com/about/")
     assert len(alts) == 1  # no FR/DE/AR since translated_per_lang is empty
@@ -1492,6 +1614,7 @@ def test_alternates_for_en_slug_includes_en_first():
 
 def test_alternates_for_en_slug_includes_fr_when_translation_exists():
     from postbuild_lib.article_furniture import _alternates_for_en_slug
+
     # "about" → FR slug "a-propos" (per _data/i18n/fr/slugs.json)
     alts = _alternates_for_en_slug("about", {"fr": {"a-propos"}})
     codes = [c for c, _ in alts]
@@ -1503,40 +1626,40 @@ def test_alternates_for_en_slug_includes_fr_when_translation_exists():
 
 def test_inject_hreflang_emits_alternate_links():
     from postbuild_lib.article_furniture import inject_hreflang
+
     html = '<head><meta charset="utf-8"></head><body></body>'
     out = inject_hreflang(html, "about", "en", {"fr": {"a-propos"}})
     assert 'hreflang="en"' in out
     assert 'hreflang="fr"' in out
     assert 'hreflang="x-default"' in out
-    assert '/fr/a-propos/' in out
+    assert "/fr/a-propos/" in out
 
 
 def test_inject_hreflang_no_op_when_only_en_resolves():
     from postbuild_lib.article_furniture import inject_hreflang
-    html = '<head></head>'
+
+    html = "<head></head>"
     # No translations rendered → only EN alternate → < 2 entries → no-op
     out = inject_hreflang(html, "about", "en", {})
-    assert 'hreflang=' not in out
+    assert "hreflang=" not in out
 
 
 def test_inject_hreflang_no_op_when_slug_unresolvable():
     from postbuild_lib.article_furniture import inject_hreflang
-    html = '<head></head>'
+
+    html = "<head></head>"
     out = inject_hreflang(html, "totally-unknown", "fr", {})
-    assert 'hreflang=' not in out
+    assert "hreflang=" not in out
 
 
 def test_inject_hreflang_strips_existing_alternates_first():
     """A page already carrying ``<link rel="alternate" hreflang=>`` gets
     them stripped before the new set is inserted."""
     from postbuild_lib.article_furniture import inject_hreflang
+
     # The strip regex expects the XHTML self-close style ``/>`` because
     # that's what the postbuild renderer emits.
-    html = (
-        '<head>'
-        '<link rel="alternate" hreflang="en" href="https://old.example/" />'
-        '</head>'
-    )
+    html = "<head>" '<link rel="alternate" hreflang="en" href="https://old.example/" />' "</head>"
     out = inject_hreflang(html, "about", "en", {"fr": {"a-propos"}})
     assert "https://old.example/" not in out
     assert "/fr/a-propos/" in out
@@ -1549,6 +1672,7 @@ def test_inject_hreflang_strips_existing_alternates_first():
 
 def test_slug_maps_returns_four_keys_per_lang():
     from postbuild_lib.article_furniture import _slug_maps
+
     m = _slug_maps("fr")
     assert "articles_en_to_lang" in m
     assert "articles_lang_to_en" in m
@@ -1558,6 +1682,7 @@ def test_slug_maps_returns_four_keys_per_lang():
 
 def test_resolve_en_slug_en_passthrough():
     from postbuild_lib.article_furniture import _resolve_en_slug
+
     # English slug is its own canonical
     assert _resolve_en_slug("about", "en") == "about"
 
@@ -1571,6 +1696,7 @@ def test_build_fr_title_index_walks_fr_articles(tmp_path, monkeypatch):
     """Each rendered FR page contributes one (en_slug → fr title) entry."""
     monkeypatch.chdir(tmp_path)
     from pathlib import Path as _P
+
     # Place a "FR" page under public/fr/<lang-slug>/. The lang-slug here
     # must be one that's actually in _data/i18n/fr/slugs.json articles map;
     # using a slug we know exists in the AR-merge baseline: the cloud article.
@@ -1583,6 +1709,7 @@ def test_build_fr_title_index_walks_fr_articles(tmp_path, monkeypatch):
         encoding="utf-8",
     )
     from postbuild_lib.article_furniture import build_fr_title_index
+
     pages = [_P(str(p / "index.html"))]
     idx = build_fr_title_index(pages)
     # Should map the EN slug for this article to "Mon titre FR".
@@ -1606,6 +1733,7 @@ def test_translated_slugs_per_lang_returns_empty_when_no_public_tree(tmp_path, m
     from unittest.mock import patch
 
     from postbuild_lib import article_furniture as af
+
     with patch.object(af, "PUBLIC", tmp_path / "public"):
         out = af._translated_slugs_per_lang()
     assert out == {}
@@ -1615,6 +1743,7 @@ def test_translated_slugs_legacy_returns_two_empty_sets_without_fr_dir(tmp_path,
     from unittest.mock import patch
 
     from postbuild_lib import article_furniture as af
+
     monkeypatch.chdir(tmp_path)
     (tmp_path / "public").mkdir()
     with patch.object(af, "PUBLIC", tmp_path / "public"):
@@ -1631,12 +1760,14 @@ def test_translated_slugs_legacy_returns_two_empty_sets_without_fr_dir(tmp_path,
 def test_detect_page_lang_uses_html_attr():
     """``<html lang="fr-FR">`` → fr; covers line 149."""
     from postbuild_lib.article_furniture import _detect_page_lang
+
     assert _detect_page_lang('<html lang="fr-FR"></html>') == "fr"
 
 
 def test_render_tag_badges_empty_returns_empty():
     """Already covered — pin the empty-input path explicitly."""
     from postbuild_lib.article_furniture import LABELS_EN, _render_tag_badges
+
     assert _render_tag_badges([], LABELS_EN) == ""
 
 
@@ -1644,12 +1775,14 @@ def test_fmt_date_returns_input_on_unparseable_string():
     """Inputs that match none of the date formats are returned unchanged
     (covers the final ``return iso_or_rfc`` at line 195)."""
     from postbuild_lib.article_furniture import _fmt_date
+
     assert _fmt_date("not a date at all") == "not a date at all"
 
 
 def test_fmt_date_french_renders_localised_month():
     """French formatting emits the French month name."""
     from postbuild_lib.article_furniture import _fmt_date
+
     out = _fmt_date("2026-05-12", french=True)
     assert "mai" in out
     assert "2026" in out
@@ -1660,10 +1793,8 @@ def test_inject_sigstore_no_op_when_config_absent():
     from unittest.mock import patch
 
     from postbuild_lib import article_furniture as af
-    html = (
-        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
-        '<main></main>'
-    )
+
+    html = '<script type="application/ld+json">{"@type":"BlogPosting"}</script>' "<main></main>"
     with patch.object(af, "_SIGSTORE_CONFIG_PRESENT", False):
         assert af.inject_sigstore_attestation(html, "any-slug") == html
 
@@ -1673,6 +1804,7 @@ def test_inject_sigstore_fr_label():
     from unittest.mock import patch
 
     from postbuild_lib import article_furniture as af
+
     public = af.PUBLIC
     bundle_dir = public / "sigstore"
     bundle_dir.mkdir(exist_ok=True, parents=True)
@@ -1682,7 +1814,7 @@ def test_inject_sigstore_fr_label():
         html = (
             '<html lang="fr">'
             '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
-            '<main><p>body</p></main>'
+            "<main><p>body</p></main>"
         )
         with patch.object(af, "_SIGSTORE_CONFIG_PRESENT", True):
             out = af.inject_sigstore_attestation(html, "fr-slug")
@@ -1694,6 +1826,7 @@ def test_inject_sigstore_fr_label():
 def test_inject_article_furniture_happy_path():
     """A BlogPosting with hero + keywords + dates renders badges + meta bar."""
     from postbuild_lib.article_furniture import inject_article_furniture
+
     html = (
         '<html lang="en-GB">'
         '<script type="application/ld+json">'
@@ -1701,7 +1834,7 @@ def test_inject_article_furniture_happy_path():
         '"keywords":"AI, banking",'
         '"datePublished":"2026-05-12T08:00:00+01:00",'
         '"dateModified":"2026-05-15T08:00:00+01:00"}'
-        '</script>'
+        "</script>"
         '<section class="ap-hero"><h1>X</h1></section>'
         '<main><div class="wrap"><p>body</p></div></main>'
     )
@@ -1713,6 +1846,7 @@ def test_inject_article_furniture_happy_path():
 
 def test_inject_article_furniture_no_op_when_already_injected():
     from postbuild_lib.article_furniture import inject_article_furniture
+
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<nav class="article-tags">already there</nav>'
@@ -1724,15 +1858,14 @@ def test_inject_article_furniture_no_fragment_when_no_meta_inputs():
     """Empty keywords + empty dates + empty word_count + no <section class=ap-hero>
     → fragment is empty → ``_HERO_RE.sub`` finds no anchor → ``return html``."""
     from postbuild_lib.article_furniture import inject_article_furniture
+
     # Has BlogPosting but no <section class="ap-hero">, so _HERO_RE doesn't match.
     # And no keywords/dates/wordCount in the JSON-LD so the fragment is empty.
     # _render_meta_bar still emits the author block on its own — so to truly
     # get an empty fragment we have to short-circuit _render_meta_bar by
     # passing the keywords + dates + wc as empty. The simplest path: assert
     # the call is idempotent (it doesn't raise) when meta is all empty.
-    html = (
-        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
-    )
+    html = '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
     # The function runs without raising — that's the line of coverage we want.
     out = inject_article_furniture(html)
     assert out == html or 'class="article-meta"' in out
@@ -1741,6 +1874,7 @@ def test_inject_article_furniture_no_fragment_when_no_meta_inputs():
 def test_inject_anchor_links_handles_heading_with_no_text():
     """An empty <h2> is left untouched (line 359 path)."""
     from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<main><div class="wrap"><h2></h2><h2>Real</h2></div></main>'
@@ -1753,9 +1887,10 @@ def test_inject_anchor_links_handles_heading_with_no_text():
 def test_inject_anchor_links_no_op_when_no_main_div():
     """No matching ``<main><div class="wrap">…`` block → no-op."""
     from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
-        '<main><p>no wrap div</p></main>'
+        "<main><p>no wrap div</p></main>"
     )
     assert inject_anchor_links_and_toc(html) == html
 
@@ -1763,12 +1898,14 @@ def test_inject_anchor_links_no_op_when_no_main_div():
 def test_extract_citations_no_op_without_main():
     """No <main> block → empty list (line 396)."""
     from postbuild_lib.article_furniture import _extract_citations
-    assert _extract_citations('<p>nothing</p>') == []
+
+    assert _extract_citations("<p>nothing</p>") == []
 
 
 def test_extract_citations_skips_duplicates_and_caps_at_12():
     """Duplicate URLs are deduplicated; cap is 12."""
     from postbuild_lib.article_furniture import _extract_citations
+
     # 15 distinct nist.gov links + a duplicate
     bodies = [f'<a href="https://nist.gov/p{i}">x</a>' for i in range(15)]
     bodies.append('<a href="https://nist.gov/p0">dup</a>')  # duplicate
@@ -1785,29 +1922,31 @@ def test_inject_citations_appends_citation_array():
     """A BlogPosting with authoritative outbound links + a ``speakable`` key
     gets a ``citation`` array inserted just before it."""
     from postbuild_lib.article_furniture import inject_citations
+
     html = (
         '<script type="application/ld+json">'
         '{"@type":"BlogPosting","speakable":{}}'
-        '</script>'
+        "</script>"
         '<main><div class="wrap">'
         '<a href="https://nist.gov/page">NIST</a>'
-        '</div></main>'
+        "</div></main>"
     )
     out = inject_citations(html)
     assert '"citation":' in out
-    assert 'nist.gov' in out
+    assert "nist.gov" in out
 
 
 def test_inject_sources_list_inserts_before_pagination():
     """When the page already has a prev/next nav, the sources aside is inserted
     just before it (covers line 784)."""
     from postbuild_lib.article_furniture import inject_sources_list
+
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<main><div class="wrap">'
         '<a href="https://nist.gov/p">N</a>'
         '<nav class="post-pagination">existing nav</nav>'
-        '</div></main>'
+        "</div></main>"
     )
     out = inject_sources_list(html)
     aside_pos = out.find('class="article-sources"')
@@ -1818,12 +1957,13 @@ def test_inject_sources_list_inserts_before_pagination():
 def test_inject_sources_list_idempotent_when_aside_present():
     """If ``class="article-sources"`` already exists, return unchanged (line 757)."""
     from postbuild_lib.article_furniture import inject_sources_list
+
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<main><div class="wrap">'
         '<aside class="article-sources">existing</aside>'
         '<a href="https://nist.gov/p">N</a>'
-        '</div></main>'
+        "</div></main>"
     )
     assert inject_sources_list(html) == html
 
@@ -1832,12 +1972,13 @@ def test_convert_faq_to_qa_handles_no_qa_pairs():
     """A FAQ section whose body has no <p><strong>Q?</strong></p> pattern
     is returned unchanged (line 520)."""
     from postbuild_lib.article_furniture import _convert_faq_to_qa
+
     html = (
         '<main><div class="wrap">'
         '<h2 id="frequently-asked-questions">FAQ</h2>'
-        '<p>Just prose, no Q strong markers.</p>'
+        "<p>Just prose, no Q strong markers.</p>"
         '<h2 id="next">Next</h2>'
-        '</div></main>'
+        "</div></main>"
     )
     out = _convert_faq_to_qa(html)
     assert 'class="qa-item"' not in out
@@ -1846,13 +1987,14 @@ def test_convert_faq_to_qa_handles_no_qa_pairs():
 def test_convert_faq_to_qa_french_uses_localised_headline():
     """A FR FAQ section uses ``Questions ?`` + ``Réponses.``."""
     from postbuild_lib.article_furniture import _convert_faq_to_qa
+
     html = (
         '<html lang="fr">'
         '<main><div class="wrap">'
         '<h2 id="foire-aux-questions">FAQ</h2>'
-        '<p><strong>Q1: Ça va?</strong></p><p>Oui.</p>'
+        "<p><strong>Q1: Ça va?</strong></p><p>Oui.</p>"
         '<h2 id="suivant">Suivant</h2>'
-        '</div></main>'
+        "</div></main>"
     )
     out = _convert_faq_to_qa(html)
     assert "Questions ?" in out
@@ -1863,6 +2005,7 @@ def test_nav_target_for_lang_page_uses_localised_articles_slug():
     """Dated article under ``/fr/`` resolves to the localised articles-hub slug
     (whatever the FR slug map currently says it is)."""
     from postbuild_lib.article_furniture import _nav_target_for_lang_page, _slug_maps
+
     expected_slug = _slug_maps("fr")["statics_en_to_lang"].get("articles", "articles")
     assert _nav_target_for_lang_page("fr", "2026-05-12-x") == f"/fr/{expected_slug}/index.html"
 
@@ -1872,6 +2015,7 @@ def test_inject_nav_active_no_op_when_no_header():
     from pathlib import Path as _P
 
     from postbuild_lib.article_furniture import inject_nav_active
+
     html = '<body><a href="/about/index.html">About</a></body>'
     assert inject_nav_active(html, _P("public/about/index.html")) == html
 
@@ -1880,6 +2024,7 @@ def test_inject_prev_next_nav_french_uses_lang_slug_and_titles():
     """A FR page resolves the EN slug, then re-maps both neighbours to FR slugs
     and overrides titles from ``fr_titles`` (covers lines 651-657)."""
     from postbuild_lib.article_furniture import _slug_maps, inject_prev_next_nav
+
     html = (
         '<html lang="fr-FR">'
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
@@ -1908,6 +2053,7 @@ def test_inject_prev_next_nav_french_uses_lang_slug_and_titles():
 def test_inject_prev_next_nav_falls_back_to_en_url_when_no_lang_translation():
     """Lang variant whose neighbour has no FR translation falls back to ``/en-slug/``."""
     from postbuild_lib.article_furniture import _slug_maps, inject_prev_next_nav
+
     html = (
         '<html lang="fr-FR">'
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
@@ -1930,9 +2076,10 @@ def test_inject_mermaid_strips_inner_span_wrappers():
     the meta-CSP gets ``cdn.jsdelivr.net`` injected. Idempotent when the
     CSP already carries the host (line 735)."""
     from postbuild_lib.article_furniture import inject_mermaid
+
     html = (
         '<meta http-equiv="Content-Security-Policy" '
-        'content="script-src \'self\' https://cdn.jsdelivr.net">'
+        "content=\"script-src 'self' https://cdn.jsdelivr.net\">"
         '<pre><code class="language-mermaid">'
         '<span class="hl">graph TD</span>; A--&gt;B</code></pre>'
     )
@@ -1946,10 +2093,11 @@ def test_inject_mermaid_strips_inner_span_wrappers():
 def test_inject_mermaid_inner_span_stripped_from_code():
     """``<span>`` markup inside the mermaid block is removed."""
     from postbuild_lib.article_furniture import inject_mermaid
+
     html = (
         '<meta http-equiv="Content-Security-Policy" content="script-src \'self\'">'
         '<pre><code class="language-mermaid">'
-        '<span>graph TD</span></code></pre>'
+        "<span>graph TD</span></code></pre>"
     )
     out = inject_mermaid(html)
     assert "<span>" not in out
@@ -1958,10 +2106,13 @@ def test_inject_mermaid_inner_span_stripped_from_code():
 def test_slug_maps_for_known_lang_returns_four_maps():
     """``_slug_maps_for`` returns the four lookup tables for a registered lang."""
     from postbuild_lib.article_furniture import _slug_maps_for
+
     out = _slug_maps_for("fr")
     assert set(out) == {
-        "articles_en_to_lang", "articles_lang_to_en",
-        "statics_en_to_lang", "statics_lang_to_en",
+        "articles_en_to_lang",
+        "articles_lang_to_en",
+        "statics_en_to_lang",
+        "statics_lang_to_en",
     }
     # FR static map should have "about" → "a-propos"
     assert out["statics_en_to_lang"]["about"] == "a-propos"
@@ -1972,6 +2123,7 @@ def test_translated_slugs_per_lang_walks_rendered_pages(tmp_path):
     from unittest.mock import patch
 
     from postbuild_lib import article_furniture as af
+
     public = tmp_path / "public"
     (public / "fr" / "a-propos").mkdir(parents=True)
     (public / "fr" / "a-propos" / "index.html").write_text("x", encoding="utf-8")
@@ -1986,6 +2138,7 @@ def test_translated_slugs_legacy_picks_up_fr_articles(tmp_path):
     from unittest.mock import patch
 
     from postbuild_lib import article_furniture as af
+
     # Pick any en/fr article slug pair that exists in the live FR map.
     fr_articles = af._slug_maps("fr")["articles_en_to_lang"]
     en_slug, fr_slug = next(iter(fr_articles.items()))
@@ -2001,6 +2154,7 @@ def test_translated_slugs_legacy_picks_up_fr_articles(tmp_path):
 def test_resolve_en_slug_static_path():
     """A static EN slug (registered in slugs.json) resolves via the static map."""
     from postbuild_lib.article_furniture import _resolve_en_slug
+
     # "a-propos" is FR for "about" — static page
     assert _resolve_en_slug("a-propos", "fr") == "about"
 
@@ -2008,25 +2162,28 @@ def test_resolve_en_slug_static_path():
 def test_inject_hreflang_with_legacy_fr_with_en_arg():
     """The legacy ``fr_with_en=`` kwarg seeds ``translated_per_lang`` for FR."""
     from postbuild_lib.article_furniture import inject_hreflang
-    html = '<head></head>'
+
+    html = "<head></head>"
     out = inject_hreflang(html, "about", "en", fr_with_en={"a-propos"})
     assert 'hreflang="fr"' in out
-    assert '/fr/a-propos/' in out
+    assert "/fr/a-propos/" in out
 
 
 def test_inject_hreflang_default_translated_per_lang_is_none():
     """No ``translated_per_lang=`` and no ``fr_with_en=`` → starts with empty
     map (covers line 970: ``translated_per_lang = {}``)."""
     from postbuild_lib.article_furniture import inject_hreflang
-    html = '<head></head>'
+
+    html = "<head></head>"
     # No translations → only EN alternate → < 2 alts → no-op
-    assert 'hreflang' not in inject_hreflang(html, "about", "en")
+    assert "hreflang" not in inject_hreflang(html, "about", "en")
 
 
 def test_alternates_for_en_slug_skips_lang_without_translation():
     """A slug present in EN but absent from a particular lang's slug map
     is skipped (covers the ``if not lang_slug: continue`` branch at line 970)."""
     from postbuild_lib.article_furniture import _alternates_for_en_slug
+
     # A slug that exists in *no* registered slug map — both the articles
     # and statics maps return None for it, so each non-EN lang hits the
     # ``continue`` branch.
@@ -2038,7 +2195,8 @@ def test_alternates_for_en_slug_skips_lang_without_translation():
 def test_inject_article_furniture_no_op_without_blogposting_jsonld():
     """A page with no BlogPosting JSON-LD returns unchanged at line 309."""
     from postbuild_lib.article_furniture import inject_article_furniture
-    html = '<p>plain page with no JSON-LD</p>'
+
+    html = "<p>plain page with no JSON-LD</p>"
     assert inject_article_furniture(html) == html
 
 
@@ -2050,12 +2208,15 @@ def test_inject_article_furniture_returns_unchanged_when_fragment_is_empty():
     from unittest.mock import patch
 
     from postbuild_lib import article_furniture as af
+
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<section class="ap-hero"><h1>X</h1></section>'
     )
-    with patch.object(af, "_render_tag_badges", return_value=""), \
-         patch.object(af, "_render_meta_bar", return_value=""):
+    with (
+        patch.object(af, "_render_tag_badges", return_value=""),
+        patch.object(af, "_render_meta_bar", return_value=""),
+    ):
         out = af.inject_article_furniture(html)
     assert out == html
 
@@ -2065,6 +2226,7 @@ def test_build_fr_title_index_skips_pages_outside_fr_tree(tmp_path):
     from pathlib import Path as _P
 
     from postbuild_lib.article_furniture import build_fr_title_index
+
     d = tmp_path / "public" / "2026-05-12-en-post"  # parent.parent = public, not fr
     d.mkdir(parents=True)
     (d / "index.html").write_text("<h1>English</h1>", encoding="utf-8")
@@ -2077,6 +2239,7 @@ def test_nav_active_target_three_part_lang_path_resolves():
     from pathlib import Path as _P
 
     from postbuild_lib.article_furniture import _nav_active_target
+
     target = _nav_active_target(_P("public/fr/a-propos/index.html"))
     assert target == "/fr/a-propos/index.html"
 
@@ -2086,6 +2249,7 @@ def test_inject_sigstore_no_op_when_no_blogposting_jsonld(tmp_path):
     from unittest.mock import patch
 
     from postbuild_lib import article_furniture as af
+
     with patch.object(af, "_SIGSTORE_CONFIG_PRESENT", True):
         assert af.inject_sigstore_attestation("<p>plain</p>", "slug") == "<p>plain</p>"
 
@@ -2095,6 +2259,7 @@ def test_inject_sigstore_idempotent_when_already_injected():
     from unittest.mock import patch
 
     from postbuild_lib import article_furniture as af
+
     public = af.PUBLIC
     bundle = public / "sigstore" / "slug-2.bundle"
     bundle.parent.mkdir(exist_ok=True, parents=True)
@@ -2113,6 +2278,7 @@ def test_inject_sigstore_idempotent_when_already_injected():
 def test_inject_article_furniture_idempotent_when_tags_present():
     """``class="article-tags"`` already in the page → early return (line 309)."""
     from postbuild_lib.article_furniture import inject_article_furniture
+
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<nav class="article-tags">existing</nav>'
@@ -2124,12 +2290,13 @@ def test_inject_article_furniture_idempotent_when_tags_present():
 def test_extract_citations_dedupes_same_url():
     """Duplicate URLs in the body are seen once (covers ``if url in seen: continue``)."""
     from postbuild_lib.article_furniture import _extract_citations
+
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<main><div class="wrap">'
         '<a href="https://nist.gov/p">first</a>'
         '<a href="https://nist.gov/p">duplicate of first</a>'
-        '</div></main>'
+        "</div></main>"
     )
     cites = _extract_citations(html)
     assert len(cites) == 1
@@ -2140,6 +2307,7 @@ def test_build_post_nav_index_skips_non_dated_pages(tmp_path):
     from pathlib import Path as _P
 
     from postbuild_lib.article_furniture import build_post_nav_index
+
     d = tmp_path / "about"
     d.mkdir(parents=True)
     (d / "index.html").write_text(
@@ -2156,6 +2324,7 @@ def test_build_post_nav_index_skips_translated_pages(tmp_path):
     from pathlib import Path as _P
 
     from postbuild_lib.article_furniture import build_post_nav_index
+
     d = tmp_path / "fr" / "2026-05-12-x"
     d.mkdir(parents=True)
     (d / "index.html").write_text(
@@ -2172,6 +2341,7 @@ def test_build_post_nav_index_skips_non_blogposting_pages(tmp_path):
     from pathlib import Path as _P
 
     from postbuild_lib.article_furniture import build_post_nav_index
+
     d = tmp_path / "public" / "2026-05-12-x"
     d.mkdir(parents=True)
     (d / "index.html").write_text(
@@ -2187,6 +2357,7 @@ def test_build_fr_title_index_walks_fr_pages_with_real_slug(tmp_path, monkeypatc
     from pathlib import Path as _P
 
     from postbuild_lib.article_furniture import _slug_maps, build_fr_title_index
+
     fr_articles = _slug_maps("fr")["articles_en_to_lang"]
     en_slug, fr_slug = next(iter(fr_articles.items()))
     p = tmp_path / "public" / "fr" / fr_slug
@@ -2205,6 +2376,7 @@ def test_build_fr_title_index_skips_non_dated_fr_pages(tmp_path):
     from pathlib import Path as _P
 
     from postbuild_lib.article_furniture import build_fr_title_index
+
     p = tmp_path / "public" / "fr" / "a-propos"
     p.mkdir(parents=True)
     (p / "index.html").write_text("<h1>x</h1>", encoding="utf-8")
@@ -2216,6 +2388,7 @@ def test_build_fr_title_index_skips_when_en_slug_unmatched(tmp_path):
     from pathlib import Path as _P
 
     from postbuild_lib.article_furniture import build_fr_title_index
+
     p = tmp_path / "public" / "fr" / "2026-05-12-unmatched-fr-slug"
     p.mkdir(parents=True)
     (p / "index.html").write_text(
@@ -2228,6 +2401,7 @@ def test_build_fr_title_index_skips_when_en_slug_unmatched(tmp_path):
 def test_nav_target_for_lang_page_top_static_path():
     """A non-dated top-level page under ``/<lang>/`` resolves to the bare lang path."""
     from postbuild_lib.article_furniture import _nav_target_for_lang_page
+
     assert _nav_target_for_lang_page("fr", "a-propos") == "/fr/a-propos/index.html"
 
 
@@ -2236,6 +2410,7 @@ def test_nav_active_target_three_part_path_unknown_lang_is_none():
     from pathlib import Path as _P
 
     from postbuild_lib.article_furniture import _nav_active_target
+
     assert _nav_active_target(_P("public/zz/x/index.html")) is None
 
 
@@ -2244,6 +2419,7 @@ def test_inject_nav_active_no_op_when_target_is_none():
     from pathlib import Path as _P
 
     from postbuild_lib.article_furniture import inject_nav_active
+
     # 4-part rel path → _nav_active_target returns None
     html = '<header><a href="/about/">About</a></header>'
     assert inject_nav_active(html, _P("public/a/b/c/index.html")) == html
@@ -2252,6 +2428,7 @@ def test_inject_nav_active_no_op_when_target_is_none():
 def test_inject_prev_next_nav_no_op_when_both_neighbours_none():
     """A slug whose nav-index entry is ``(None, None)`` is left untouched."""
     from postbuild_lib.article_furniture import inject_prev_next_nav
+
     html = _wrap_blogposting("<p>body</p>")
     nav_index = {"2026-05-13-only": (None, None)}
     assert inject_prev_next_nav(html, "2026-05-13-only", nav_index) == html
@@ -2260,6 +2437,7 @@ def test_inject_prev_next_nav_no_op_when_both_neighbours_none():
 def test_inject_citations_no_op_without_blogposting():
     """No BlogPosting JSON-LD → bail at line 677."""
     from postbuild_lib.article_furniture import inject_citations
+
     assert inject_citations("<p>plain</p>") == "<p>plain</p>"
 
 
@@ -2267,19 +2445,22 @@ def test_inject_mermaid_no_op_when_block_unchanged_after_sub():
     """A ``language-mermaid`` reference inside text (no actual <pre><code>) →
     the regex sub returns the input unchanged (line 726)."""
     from postbuild_lib.article_furniture import inject_mermaid
-    html = '<p>I mention language-mermaid as a string but it is not a code block</p>'
+
+    html = "<p>I mention language-mermaid as a string but it is not a code block</p>"
     assert inject_mermaid(html) == html
 
 
 def test_inject_sources_list_no_op_without_blogposting():
     """No BlogPosting → bail at line 755."""
     from postbuild_lib.article_furniture import inject_sources_list
+
     assert inject_sources_list("<p>plain</p>") == "<p>plain</p>"
 
 
 def test_hoist_body_link_stylesheets_no_op_without_head_tag():
     """A page without ``</head>`` → no hoisting possible (line 853)."""
     from postbuild_lib.article_furniture import hoist_body_link_stylesheets
+
     html = '<body><link rel="stylesheet" href="/x.css"></body>'
     out, n = hoist_body_link_stylesheets(html)
     assert n == 0
@@ -2291,13 +2472,14 @@ def test_inject_article_furniture_no_hero_no_rewrite():
     block to anchor against — ``_HERO_RE.sub`` finds nothing → returns html
     unchanged (the post-fragment regex returns the input as-is)."""
     from postbuild_lib.article_furniture import inject_article_furniture
+
     # The meta fragment will be non-empty (author block), but no <section class="ap-hero">
     # The sub returns input unchanged because the anchor regex doesn't match.
     html = (
         '<script type="application/ld+json">'
         '{"@type":"BlogPosting","datePublished":"2026-05-12T08:00:00+01:00",'
         '"dateModified":"2026-05-12T08:00:00+01:00"}'
-        '</script>'
+        "</script>"
     )
     out = inject_article_furniture(html)
     # No anchor match → output equals input
@@ -2311,12 +2493,14 @@ def test_inject_article_furniture_no_hero_no_rewrite():
 
 def test_inject_speculation_rules_no_op_when_already_present():
     from postbuild_lib.article_furniture import inject_speculation_rules
+
     html = '<head><script type="speculationrules">{}</script></head>'
     assert inject_speculation_rules(html) == html
 
 
 def test_inject_speculation_rules_inserts_when_missing():
     from postbuild_lib.article_furniture import inject_speculation_rules
+
     html = '<head><meta charset="utf-8"></head><body></body>'
     out = inject_speculation_rules(html)
     assert '<script type="speculationrules">' in out
@@ -2331,6 +2515,7 @@ def test_nav_active_target_home_en():
     from pathlib import Path as _P
 
     from postbuild_lib.article_furniture import _nav_active_target
+
     assert _nav_active_target(_P("public/index.html")) == "/index.html"
 
 
@@ -2338,6 +2523,7 @@ def test_nav_active_target_top_static_en():
     from pathlib import Path as _P
 
     from postbuild_lib.article_furniture import _nav_active_target
+
     assert _nav_active_target(_P("public/about/index.html")) == "/about/index.html"
 
 
@@ -2345,6 +2531,7 @@ def test_nav_active_target_dated_article_maps_to_articles_hub():
     from pathlib import Path as _P
 
     from postbuild_lib.article_furniture import _nav_active_target
+
     p = _P("public/2026-05-12-some-article/index.html")
     assert _nav_active_target(p) == "/articles/index.html"
 
@@ -2353,6 +2540,7 @@ def test_nav_active_target_returns_none_for_unknown_lang():
     from pathlib import Path as _P
 
     from postbuild_lib.article_furniture import _nav_active_target
+
     # /xx/foo/ — xx is not a registered language
     p = _P("public/xx/foo/index.html")
     assert _nav_active_target(p) is None
@@ -2362,21 +2550,22 @@ def test_inject_nav_active_marks_match_and_clears_others():
     from pathlib import Path as _P
 
     from postbuild_lib.article_furniture import inject_nav_active
+
     html = (
-        '<header>'
+        "<header>"
         '<a href="/about/index.html">About</a>'
         '<a href="/articles/index.html" aria-current="page">Articles</a>'
-        '</header>'
+        "</header>"
     )
     out = inject_nav_active(html, _P("public/about/index.html"))
     assert 'aria-current="page"' in out
     # only the /about/ link should have the marker
     assert out.count('aria-current="page"') == 1
     # The /about/ link gets it, the /articles/ link loses it
-    about_seg = out[out.find('href="/about'): out.find('Articles')]
-    articles_seg = out[out.find('Articles'):]
-    assert 'aria-current' in about_seg
-    assert 'aria-current' not in articles_seg
+    about_seg = out[out.find('href="/about') : out.find("Articles")]
+    articles_seg = out[out.find("Articles") :]
+    assert "aria-current" in about_seg
+    assert "aria-current" not in articles_seg
 
 
 # ---------------------------------------------------------------------------
@@ -2401,7 +2590,7 @@ def test_stamp_image_dimensions_subsequent_images_get_lazy_async():
     out, n = pb.stamp_image_dimensions(html)
     assert n == 2
     first_img = out[: out.find("<img", 5)]
-    second_img = out[out.find("<img", 5):]
+    second_img = out[out.find("<img", 5) :]
     assert 'fetchpriority="high"' in first_img
     assert 'fetchpriority="high"' not in second_img
     assert 'loading="lazy"' in second_img
@@ -2464,6 +2653,7 @@ def test_stamp_image_dimensions_first_image_with_fetchpri_no_loading_unchanged()
 
 def test_lang_to_og_locale_basic_forms():
     from postbuild_lib.seo import _lang_to_og_locale
+
     assert _lang_to_og_locale("en-GB") == "en_GB"
     assert _lang_to_og_locale("fr-FR") == "fr_FR"
     assert _lang_to_og_locale("de") == "de_DE"
@@ -2475,6 +2665,7 @@ def test_inject_og_completeness_adds_url_locale_sitename_image(tmp_path, monkeyp
     from pathlib import Path as _P
 
     from postbuild_lib import seo
+
     public = tmp_path / "public"
     page = public / "about" / "index.html"
     page.parent.mkdir(parents=True)
@@ -2492,6 +2683,7 @@ def test_inject_og_completeness_no_op_when_all_present(tmp_path, monkeypatch):
     from pathlib import Path as _P
 
     from postbuild_lib import seo
+
     public = tmp_path / "public"
     public.mkdir()
     page = public / "index.html"
@@ -2504,7 +2696,7 @@ def test_inject_og_completeness_no_op_when_all_present(tmp_path, monkeypatch):
         '<meta property="og:site_name" content="Sebastien Rousseau">'
         '<meta property="og:image" content="https://x/banner.webp">'
         '<meta name="twitter:image" content="https://x/banner.webp">'
-        '</head></html>'
+        "</head></html>"
     )
     out = seo.inject_og_completeness(_P(str(page)), html)
     assert out == html
@@ -2514,6 +2706,7 @@ def test_inject_og_completeness_home_url_drops_index_html(tmp_path, monkeypatch)
     from pathlib import Path as _P
 
     from postbuild_lib import seo
+
     public = tmp_path / "public"
     public.mkdir()
     page = public / "index.html"
@@ -2544,8 +2737,10 @@ def test_write_json_feed_emits_valid_feed_at_target(tmp_path, monkeypatch):
     public = tmp_path / "public"
     public.mkdir()
     from postbuild_lib.output import write_json_feed
+
     assert write_json_feed(public) is True
     import json as _json
+
     feed = _json.loads((public / "feed.json").read_text())
     assert feed["version"].startswith("https://jsonfeed.org/version/")
     assert feed["language"] == "en-GB"
@@ -2569,8 +2764,10 @@ def test_write_json_feed_skips_posts_without_title_or_bad_date(tmp_path, monkeyp
     public = tmp_path / "public"
     public.mkdir()
     from postbuild_lib.output import write_json_feed
+
     write_json_feed(public)
     import json as _json
+
     feed = _json.loads((public / "feed.json").read_text())
     assert feed["items"] == []
 
@@ -2587,10 +2784,11 @@ def test_build_llms_full_txt_emits_header_and_body_blocks(tmp_path):
     (public / "about" / "index.html").write_text(
         '<!doctype html><html lang="en-GB"><head><title>About</title>'
         '<meta content="bio" name=description></head>'
-        '<body><main><h1>About</h1><p>Bio body content.</p></main></body></html>',
+        "<body><main><h1>About</h1><p>Bio body content.</p></main></body></html>",
         encoding="utf-8",
     )
     from postbuild_lib.output import build_llms_full_txt
+
     out = build_llms_full_txt(public)
     assert out.startswith("# Sebastien Rousseau") or "About" in out
 
@@ -2598,6 +2796,7 @@ def test_build_llms_full_txt_emits_header_and_body_blocks(tmp_path):
 def test_build_llms_full_txt_returns_empty_without_posts_dir(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
     from postbuild_lib.output import build_llms_full_txt
+
     assert build_llms_full_txt(tmp_path / "public") == ""
 
 
@@ -2615,6 +2814,7 @@ def test_build_llms_full_txt_full_pipeline_with_posts(tmp_path, monkeypatch):
         encoding="utf-8",
     )
     from postbuild_lib.output import build_llms_full_txt
+
     out = build_llms_full_txt(tmp_path / "public")
     assert "## Test" in out
     assert "May 12, 2026" in out
@@ -2633,6 +2833,7 @@ def test_write_llms_full_txt_returns_false_without_posts(tmp_path, monkeypatch):
     public = tmp_path / "public"
     public.mkdir()
     from postbuild_lib.output import write_llms_full_txt
+
     assert write_llms_full_txt(public) is False
 
 
@@ -2647,6 +2848,7 @@ def test_write_llms_full_txt_idempotent(tmp_path, monkeypatch):
     public = tmp_path / "public"
     public.mkdir()
     from postbuild_lib.output import write_llms_full_txt
+
     assert write_llms_full_txt(public) is True
     assert write_llms_full_txt(public) is False  # idempotent
 
@@ -2665,6 +2867,7 @@ def test_build_title_index_maps_title_to_url(tmp_path, monkeypatch):
         encoding="utf-8",
     )
     from postbuild_lib.output import _build_title_index
+
     idx = _build_title_index()
     assert idx["AI & Banking"] == "https://sebastienrousseau.com/ai-banking/"
     # Pre-escaped form also indexed
@@ -2681,13 +2884,14 @@ def test_build_title_index_walks_per_language_posts(tmp_path, monkeypatch):
     (posts / "fr" / "2026-05-21-mon-article.md").write_text(
         # Frontmatter `url:` is the EN URL — translator copied it. The
         # synthesised URL should win, derived from the post path.
-        '---\n'
+        "---\n"
         'title: "Mon article test"\n'
         'url: "https://sebastienrousseau.com/2026-05-21-en-article"\n'
-        '---\n',
+        "---\n",
         encoding="utf-8",
     )
     from postbuild_lib.output import _build_title_index
+
     idx = _build_title_index()
     assert idx["Mon article test"] == (
         "https://sebastienrousseau.com/fr/2026-05-21-mon-article/index.html"
@@ -2706,6 +2910,7 @@ def test_build_title_index_skips_per_lang_post_without_title(tmp_path, monkeypat
         encoding="utf-8",
     )
     from postbuild_lib.output import _build_title_index
+
     idx = _build_title_index()
     assert idx == {}
 
@@ -2722,6 +2927,7 @@ def test_build_title_index_handles_apostrophe_in_title(tmp_path, monkeypatch):
         encoding="utf-8",
     )
     from postbuild_lib.output import _build_title_index
+
     idx = _build_title_index()
     # Plain
     assert "Don't Panic & Carry On" in idx
@@ -2738,6 +2944,7 @@ def test_fix_xml_feed_urls_no_op_when_title_index_empty(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
     (tmp_path / "rss.xml").write_text("<rss></rss>", encoding="utf-8")
     from postbuild_lib.output import fix_xml_feed_urls
+
     assert fix_xml_feed_urls(tmp_path) == 0
 
 
@@ -2751,13 +2958,14 @@ def test_fix_xml_feed_urls_rewrites_rss_item_block(tmp_path, monkeypatch):
     )
     rss = tmp_path / "rss.xml"
     rss.write_text(
-        '<rss><channel><item>'
-        '<title>Title X</title>'
-        '<link>http://127.0.0.1:8000/.meta/</link>'
-        '</item></channel></rss>',
+        "<rss><channel><item>"
+        "<title>Title X</title>"
+        "<link>http://127.0.0.1:8000/.meta/</link>"
+        "</item></channel></rss>",
         encoding="utf-8",
     )
     from postbuild_lib.output import fix_xml_feed_urls
+
     assert fix_xml_feed_urls(tmp_path) == 1
     out = rss.read_text(encoding="utf-8")
     assert "127.0.0.1" not in out
@@ -2773,17 +2981,18 @@ def test_fix_xml_feed_urls_handles_atom_and_news_blocks(tmp_path, monkeypatch):
         encoding="utf-8",
     )
     (tmp_path / "atom.xml").write_text(
-        '<feed><entry><title>T</title>'
+        "<feed><entry><title>T</title>"
         '<link href="http://localhost:8000/.meta/"/></entry></feed>',
         encoding="utf-8",
     )
     (tmp_path / "news-sitemap.xml").write_text(
-        '<urlset><url><loc>http://127.0.0.1:8000/.meta/</loc>'
+        "<urlset><url><loc>http://127.0.0.1:8000/.meta/</loc>"
         '<news:news xmlns:news="x"><news:title>T</news:title></news:news>'
-        '</url></urlset>',
+        "</url></urlset>",
         encoding="utf-8",
     )
     from postbuild_lib.output import fix_xml_feed_urls
+
     assert fix_xml_feed_urls(tmp_path) >= 1
 
 
@@ -2792,6 +3001,7 @@ def test_fix_xml_feeds_writes_only_when_changed(tmp_path):
     rss = tmp_path / "rss.xml"
     rss.write_text("<rss><channel><title>A &amp; B</title></channel></rss>", encoding="utf-8")
     from postbuild_lib.output import fix_xml_feeds
+
     # Already-escaped content → no changes
     assert fix_xml_feeds(tmp_path) == 0
 
@@ -2800,6 +3010,7 @@ def test_fix_xml_feeds_rewrites_bare_amp(tmp_path):
     rss = tmp_path / "rss.xml"
     rss.write_text("<rss><channel><title>A & B</title></channel></rss>", encoding="utf-8")
     from postbuild_lib.output import fix_xml_feeds
+
     assert fix_xml_feeds(tmp_path) == 1
     assert "A &amp; B" in rss.read_text(encoding="utf-8")
 
@@ -2812,13 +3023,14 @@ def test_fix_xml_feeds_rewrites_bare_amp(tmp_path):
 
 def test_dedupe_xml_feeds_drops_duplicate_rss_items_by_link(tmp_path):
     from postbuild_lib.output import dedupe_xml_feeds
+
     rss = tmp_path / "rss.xml"
     rss.write_text(
-        '<rss><channel>'
-        '<item><title>A</title><link>https://x/a</link></item>'
-        '<item><title>A2</title><link>https://x/a</link></item>'  # dup link
-        '<item><title>B</title><link>https://x/b</link></item>'
-        '</channel></rss>',
+        "<rss><channel>"
+        "<item><title>A</title><link>https://x/a</link></item>"
+        "<item><title>A2</title><link>https://x/a</link></item>"  # dup link
+        "<item><title>B</title><link>https://x/b</link></item>"
+        "</channel></rss>",
         encoding="utf-8",
     )
     assert dedupe_xml_feeds(tmp_path) == 1
@@ -2831,12 +3043,13 @@ def test_dedupe_xml_feeds_drops_duplicate_rss_items_by_link(tmp_path):
 
 def test_dedupe_xml_feeds_no_op_when_all_links_unique(tmp_path):
     from postbuild_lib.output import dedupe_xml_feeds
+
     rss = tmp_path / "rss.xml"
     rss.write_text(
-        '<rss><channel>'
-        '<item><link>https://x/a</link></item>'
-        '<item><link>https://x/b</link></item>'
-        '</channel></rss>',
+        "<rss><channel>"
+        "<item><link>https://x/a</link></item>"
+        "<item><link>https://x/b</link></item>"
+        "</channel></rss>",
         encoding="utf-8",
     )
     assert dedupe_xml_feeds(tmp_path) == 0
@@ -2844,13 +3057,14 @@ def test_dedupe_xml_feeds_no_op_when_all_links_unique(tmp_path):
 
 def test_dedupe_xml_feeds_handles_atom_entry_dups_by_href(tmp_path):
     from postbuild_lib.output import dedupe_xml_feeds
+
     atom = tmp_path / "atom.xml"
     atom.write_text(
-        '<feed>'
+        "<feed>"
         '<entry><link href="https://x/a"/></entry>'
         '<entry><link href="https://x/a"/></entry>'
         '<entry><link href="https://x/b"/></entry>'
-        '</feed>',
+        "</feed>",
         encoding="utf-8",
     )
     assert dedupe_xml_feeds(tmp_path) == 1
@@ -2861,13 +3075,14 @@ def test_dedupe_xml_feeds_handles_atom_entry_dups_by_href(tmp_path):
 
 def test_dedupe_xml_feeds_handles_sitemap_url_dups_by_loc(tmp_path):
     from postbuild_lib.output import dedupe_xml_feeds
+
     sm = tmp_path / "news-sitemap.xml"
     sm.write_text(
-        '<urlset>'
-        '<url><loc>https://x/a</loc></url>'
-        '<url><loc>https://x/a</loc></url>'
-        '<url><loc>https://x/b</loc></url>'
-        '</urlset>',
+        "<urlset>"
+        "<url><loc>https://x/a</loc></url>"
+        "<url><loc>https://x/a</loc></url>"
+        "<url><loc>https://x/b</loc></url>"
+        "</urlset>",
         encoding="utf-8",
     )
     assert dedupe_xml_feeds(tmp_path) == 1
@@ -2878,6 +3093,7 @@ def test_dedupe_xml_feeds_handles_sitemap_url_dups_by_loc(tmp_path):
 
 def test_dedupe_xml_feeds_returns_zero_when_no_files(tmp_path):
     from postbuild_lib.output import dedupe_xml_feeds
+
     # Empty directory — none of the target files exist
     assert dedupe_xml_feeds(tmp_path) == 0
 
@@ -2885,13 +3101,14 @@ def test_dedupe_xml_feeds_returns_zero_when_no_files(tmp_path):
 def test_dedupe_xml_feeds_preserves_blocks_without_key(tmp_path):
     """If a block has no recognisable URL, keep it (don't drop in error)."""
     from postbuild_lib.output import dedupe_xml_feeds
+
     rss = tmp_path / "rss.xml"
     rss.write_text(
-        '<rss><channel>'
-        '<item><title>orphan</title></item>'   # no <link>
-        '<item><title>orphan</title></item>'   # also no <link> — kept
-        '<item><link>https://x/a</link></item>'
-        '</channel></rss>',
+        "<rss><channel>"
+        "<item><title>orphan</title></item>"  # no <link>
+        "<item><title>orphan</title></item>"  # also no <link> — kept
+        "<item><link>https://x/a</link></item>"
+        "</channel></rss>",
         encoding="utf-8",
     )
     # 0 dedups expected: orphan items have no key so they're each kept
@@ -2903,12 +3120,13 @@ def test_dedupe_xml_feeds_preserves_blocks_without_key(tmp_path):
 def test_dedupe_xml_feeds_atom_entry_without_href_passes_through(tmp_path):
     """An <entry> with no `<link href=>` has no key — kept verbatim."""
     from postbuild_lib.output import dedupe_xml_feeds
+
     atom = tmp_path / "atom.xml"
     atom.write_text(
-        '<feed>'
-        '<entry><id>tag:1</id></entry>'   # no link href
-        '<entry><id>tag:2</id></entry>'   # no link href
-        '</feed>',
+        "<feed>"
+        "<entry><id>tag:1</id></entry>"  # no link href
+        "<entry><id>tag:2</id></entry>"  # no link href
+        "</feed>",
         encoding="utf-8",
     )
     assert dedupe_xml_feeds(tmp_path) == 0
@@ -2923,19 +3141,20 @@ def test_dedupe_xml_feeds_atom_entry_without_href_passes_through(tmp_path):
 def _seed_minimal_sitemap(tmp_path, listed_paths):
     """Write a sitemap.xml with the given paths already listed."""
     urls = "".join(
-        f'<url><lastmod>2026-05-20</lastmod><loc>https://sebastienrousseau.com{p}</loc></url>'
+        f"<url><lastmod>2026-05-20</lastmod><loc>https://sebastienrousseau.com{p}</loc></url>"
         for p in listed_paths
     )
     (tmp_path / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        f'{urls}\n</urlset>\n',
+        f"{urls}\n</urlset>\n",
         encoding="utf-8",
     )
 
 
 def test_augment_sitemap_appends_missing_rendered_page(tmp_path):
     from postbuild_lib.output import augment_sitemap_with_rendered_pages
+
     _seed_minimal_sitemap(tmp_path, ["/"])
     new = tmp_path / "topics" / "cloud-native-banking"
     new.mkdir(parents=True)
@@ -2952,6 +3171,7 @@ def test_augment_sitemap_normalises_so_already_listed_pages_skip(tmp_path):
     """If `/topics/foo/` is already listed (trailing slash form), the
     `/topics/foo/index.html` rendered page is NOT appended."""
     from postbuild_lib.output import augment_sitemap_with_rendered_pages
+
     _seed_minimal_sitemap(tmp_path, ["/topics/foo/"])
     d = tmp_path / "topics" / "foo"
     d.mkdir(parents=True)
@@ -2963,6 +3183,7 @@ def test_augment_sitemap_normalises_when_existing_entry_uses_index_html(tmp_path
     """Existing sitemap entry in `/foo/index.html` form must match a
     rendered `/foo/index.html` page (both normalise to `/foo`)."""
     from postbuild_lib.output import augment_sitemap_with_rendered_pages
+
     _seed_minimal_sitemap(tmp_path, ["/topics/foo/index.html"])
     d = tmp_path / "topics" / "foo"
     d.mkdir(parents=True)
@@ -2972,6 +3193,7 @@ def test_augment_sitemap_normalises_when_existing_entry_uses_index_html(tmp_path
 
 def test_augment_sitemap_excludes_labs_prefix(tmp_path):
     from postbuild_lib.output import augment_sitemap_with_rendered_pages
+
     _seed_minimal_sitemap(tmp_path, ["/"])
     labs = tmp_path / "labs" / "hsh-demo"
     labs.mkdir(parents=True)
@@ -2981,6 +3203,7 @@ def test_augment_sitemap_excludes_labs_prefix(tmp_path):
 
 def test_augment_sitemap_excludes_404_offline_thanks(tmp_path):
     from postbuild_lib.output import augment_sitemap_with_rendered_pages
+
     _seed_minimal_sitemap(tmp_path, ["/"])
     for tail in ("404", "offline", "thanks", "fr/404", "fr/hors-ligne", "fr/merci"):
         d = tmp_path / tail
@@ -2991,6 +3214,7 @@ def test_augment_sitemap_excludes_404_offline_thanks(tmp_path):
 
 def test_augment_sitemap_no_op_when_sitemap_absent(tmp_path):
     from postbuild_lib.output import augment_sitemap_with_rendered_pages
+
     # No sitemap.xml at all → function silently returns 0
     assert augment_sitemap_with_rendered_pages(tmp_path) == 0
 
@@ -2999,10 +3223,11 @@ def test_augment_sitemap_handles_sitemap_without_lastmod(tmp_path):
     """When the seed sitemap has no <lastmod>, the appended block uses
     an empty string for lastmod rather than crashing."""
     from postbuild_lib.output import augment_sitemap_with_rendered_pages
+
     (tmp_path / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        '</urlset>\n',
+        "</urlset>\n",
         encoding="utf-8",
     )
     new = tmp_path / "topics" / "foo"
@@ -3026,7 +3251,7 @@ def _sitemap_with_blocks(*blocks: str) -> str:
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         f"{body}\n"
-        '</urlset>\n'
+        "</urlset>\n"
     )
 
 
@@ -3044,11 +3269,15 @@ def test_dedupe_sitemap_drops_index_html_when_pretty_twin_exists(tmp_path):
     """Both /<slug>/ and /<slug>/index.html present → drop the
     index.html block, keep the pretty one (with its real lastmod)."""
     from postbuild_lib.output import dedupe_sitemap_index_html
+
     sm = tmp_path / "sitemap.xml"
-    sm.write_text(_sitemap_with_blocks(
-        _url_block("https://sebastienrousseau.com/foo/", lastmod="2026-05-30"),
-        _url_block("https://sebastienrousseau.com/foo/index.html", lastmod="2024-04-15"),
-    ), encoding="utf-8")
+    sm.write_text(
+        _sitemap_with_blocks(
+            _url_block("https://sebastienrousseau.com/foo/", lastmod="2026-05-30"),
+            _url_block("https://sebastienrousseau.com/foo/index.html", lastmod="2024-04-15"),
+        ),
+        encoding="utf-8",
+    )
     n = dedupe_sitemap_index_html(sm)
     assert n == 1
     out = sm.read_text(encoding="utf-8")
@@ -3063,10 +3292,16 @@ def test_dedupe_sitemap_rewrites_orphan_index_html_to_pretty(tmp_path):
     """Only /<slug>/index.html present (no pretty twin) → rewrite the
     <loc> in place to the pretty form, preserve metadata."""
     from postbuild_lib.output import dedupe_sitemap_index_html
+
     sm = tmp_path / "sitemap.xml"
-    sm.write_text(_sitemap_with_blocks(
-        _url_block("https://sebastienrousseau.com/topics/orphan/index.html", lastmod="2026-04-01"),
-    ), encoding="utf-8")
+    sm.write_text(
+        _sitemap_with_blocks(
+            _url_block(
+                "https://sebastienrousseau.com/topics/orphan/index.html", lastmod="2026-04-01"
+            ),
+        ),
+        encoding="utf-8",
+    )
     n = dedupe_sitemap_index_html(sm)
     assert n == 1
     out = sm.read_text(encoding="utf-8")
@@ -3081,6 +3316,7 @@ def test_dedupe_sitemap_leaves_pretty_only_alone(tmp_path):
     """No /index.html anywhere → function is a no-op (0 returned, file
     unchanged)."""
     from postbuild_lib.output import dedupe_sitemap_index_html
+
     sm = tmp_path / "sitemap.xml"
     original = _sitemap_with_blocks(
         _url_block("https://sebastienrousseau.com/foo/"),
@@ -3093,6 +3329,7 @@ def test_dedupe_sitemap_leaves_pretty_only_alone(tmp_path):
 
 def test_dedupe_sitemap_no_op_when_sitemap_absent(tmp_path):
     from postbuild_lib.output import dedupe_sitemap_index_html
+
     assert dedupe_sitemap_index_html(tmp_path / "sitemap.xml") == 0
 
 
@@ -3100,6 +3337,7 @@ def test_dedupe_sitemap_tolerates_malformed_url_block_without_loc(tmp_path):
     """Defensive: a <url>…</url> block with no <loc> inside (corrupt
     sitemap fragment) is left in place rather than crashing."""
     from postbuild_lib.output import dedupe_sitemap_index_html
+
     sm = tmp_path / "sitemap.xml"
     sm.write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -3127,18 +3365,22 @@ def test_dedupe_sitemap_handles_mixed_at_scale(tmp_path):
     """Realistic-shape sitemap with a mix of twinned dupes and orphans
     converges to all-pretty in one pass."""
     from postbuild_lib.output import dedupe_sitemap_index_html
+
     sm = tmp_path / "sitemap.xml"
-    sm.write_text(_sitemap_with_blocks(
-        # Twinned: pretty + index.html for the same slug
-        _url_block("https://sebastienrousseau.com/a/", lastmod="2026-05-30"),
-        _url_block("https://sebastienrousseau.com/a/index.html", lastmod="2024-04-15"),
-        _url_block("https://sebastienrousseau.com/b/", lastmod="2026-05-29"),
-        _url_block("https://sebastienrousseau.com/b/index.html", lastmod="2024-04-15"),
-        # Orphan: only index.html form
-        _url_block("https://sebastienrousseau.com/orphan/index.html", lastmod="2026-05-01"),
-        # Already pretty, no twin
-        _url_block("https://sebastienrousseau.com/clean/", lastmod="2026-05-28"),
-    ), encoding="utf-8")
+    sm.write_text(
+        _sitemap_with_blocks(
+            # Twinned: pretty + index.html for the same slug
+            _url_block("https://sebastienrousseau.com/a/", lastmod="2026-05-30"),
+            _url_block("https://sebastienrousseau.com/a/index.html", lastmod="2024-04-15"),
+            _url_block("https://sebastienrousseau.com/b/", lastmod="2026-05-29"),
+            _url_block("https://sebastienrousseau.com/b/index.html", lastmod="2024-04-15"),
+            # Orphan: only index.html form
+            _url_block("https://sebastienrousseau.com/orphan/index.html", lastmod="2026-05-01"),
+            # Already pretty, no twin
+            _url_block("https://sebastienrousseau.com/clean/", lastmod="2026-05-28"),
+        ),
+        encoding="utf-8",
+    )
     n = dedupe_sitemap_index_html(sm)
     # 2 twin removals + 1 orphan rewrite = 3 blocks touched
     assert n == 3
@@ -3163,6 +3405,7 @@ def test_build_lastmod_index_prefers_last_reviewed(tmp_path, monkeypatch):
         encoding="utf-8",
     )
     from postbuild_lib.output import build_lastmod_index
+
     idx = build_lastmod_index()
     assert idx["2026-05-12-x"] == "2026-05-15"
 
@@ -3175,6 +3418,7 @@ def test_build_lastmod_index_falls_back_to_date(tmp_path, monkeypatch):
         '---\ntitle: "X"\ndate: "May 12, 2026"\n---\n', encoding="utf-8"
     )
     from postbuild_lib.output import build_lastmod_index
+
     idx = build_lastmod_index()
     assert idx["2026-05-12-x"] == "2026-05-12"
 
@@ -3182,17 +3426,20 @@ def test_build_lastmod_index_falls_back_to_date(tmp_path, monkeypatch):
 def test_build_lastmod_index_returns_empty_when_no_posts_dir(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
     from postbuild_lib.output import build_lastmod_index
+
     assert build_lastmod_index() == {}
 
 
 def test_refresh_sitemap_lastmod_no_op_when_file_missing(tmp_path):
     from postbuild_lib.output import refresh_sitemap_lastmod
+
     assert refresh_sitemap_lastmod(tmp_path / "missing.xml", {}) == 0
 
 
 def test_patch_block_no_op_when_block_has_no_title():
     """If the block has no ``<title>`` tag the patcher returns it unchanged."""
     from postbuild_lib.output import _patch_block
+
     block = "<item><link>http://x/.meta/</link></item>"  # no <title>
     assert _patch_block(block, {"Anything": "https://x/"}) == block
 
@@ -3209,6 +3456,7 @@ def test_build_lastmod_index_skips_post_with_invalid_date(tmp_path, monkeypatch)
         '---\ntitle: "Bad"\ndate: "not-a-real-date"\n---\n', encoding="utf-8"
     )
     from postbuild_lib.output import build_lastmod_index
+
     idx = build_lastmod_index()
     assert "2026-05-12-good" in idx
     assert "2026-05-13-bad-date" not in idx  # skipped
@@ -3218,23 +3466,25 @@ def test_shrink_news_sitemap_no_op_when_already_shrunk(tmp_path):
     """File whose titles + keywords are already within bounds → no rewrite."""
     nsm = tmp_path / "news-sitemap.xml"
     nsm.write_text(
-        '<urlset><url><news:news>'
-        '<news:title>Short title</news:title>'
-        '<news:keywords>a,b,c</news:keywords>'
-        '</news:news></url></urlset>',
+        "<urlset><url><news:news>"
+        "<news:title>Short title</news:title>"
+        "<news:keywords>a,b,c</news:keywords>"
+        "</news:news></url></urlset>",
         encoding="utf-8",
     )
     from postbuild_lib.output import shrink_news_sitemap
+
     assert shrink_news_sitemap(tmp_path) == 0
 
 
 def test_refresh_sitemap_lastmod_skips_blocks_without_loc(tmp_path):
     sitemap = tmp_path / "sitemap.xml"
     sitemap.write_text(
-        '<urlset><url><lastmod>2026-01-01</lastmod></url></urlset>',
+        "<urlset><url><lastmod>2026-01-01</lastmod></url></urlset>",
         encoding="utf-8",
     )
     from postbuild_lib.output import refresh_sitemap_lastmod
+
     n = refresh_sitemap_lastmod(sitemap, {"2026-05-12-x": "2026-05-15"})
     assert n == 0
 
@@ -3243,10 +3493,11 @@ def test_refresh_sitemap_lastmod_skips_non_dated_loc(tmp_path):
     """An undated URL (e.g. /about/) is left alone by the patch."""
     sitemap = tmp_path / "sitemap.xml"
     sitemap.write_text(
-        '<urlset><url><loc>https://sebastienrousseau.com/about/</loc></url></urlset>',
+        "<urlset><url><loc>https://sebastienrousseau.com/about/</loc></url></urlset>",
         encoding="utf-8",
     )
     from postbuild_lib.output import refresh_sitemap_lastmod
+
     n = refresh_sitemap_lastmod(sitemap, {"2026-05-12-x": "2026-05-15"})
     assert n == 0
 
@@ -3255,11 +3506,12 @@ def test_refresh_sitemap_lastmod_skips_dated_slug_not_in_index(tmp_path):
     """A URL whose slug isn't in the lastmod index stays untouched."""
     sitemap = tmp_path / "sitemap.xml"
     sitemap.write_text(
-        '<urlset><url><loc>https://sebastienrousseau.com/2026-05-12-unknown/</loc>'
-        '<lastmod>2026-01-01</lastmod></url></urlset>',
+        "<urlset><url><loc>https://sebastienrousseau.com/2026-05-12-unknown/</loc>"
+        "<lastmod>2026-01-01</lastmod></url></urlset>",
         encoding="utf-8",
     )
     from postbuild_lib.output import refresh_sitemap_lastmod
+
     n = refresh_sitemap_lastmod(sitemap, {"2026-05-13-other": "2026-05-15"})
     assert n == 0
 
@@ -3271,21 +3523,35 @@ def test_splice_fr_urls_no_op_when_all_candidates_already_present(tmp_path, monk
     # No _posts → only home + static slugs end up as candidates.
     # Pre-populate the sitemap with every static slug + home so nothing is missing.
     statics = (
-        "about", "articles", "papers", "projects", "topics", "tags",
-        "playlists", "contact", "accessibility", "privacy", "terms",
-        "made-with-shokunin", "made-with-static-site-generator",
+        "about",
+        "articles",
+        "papers",
+        "projects",
+        "topics",
+        "tags",
+        "playlists",
+        "contact",
+        "accessibility",
+        "privacy",
+        "terms",
+        "made-with-shokunin",
+        "made-with-static-site-generator",
         "resources-pacs008-checklist",
     )
     locs = ["<url><loc>https://sebastienrousseau.com/</loc></url>"]
     locs.extend(f"<url><loc>https://sebastienrousseau.com/{s}/</loc></url>" for s in statics)
     topics = (
-        "post-quantum-cryptography", "iso-20022-payments",
-        "applied-ai-banking", "rust-open-source", "blockchain-digital-assets",
+        "post-quantum-cryptography",
+        "iso-20022-payments",
+        "applied-ai-banking",
+        "rust-open-source",
+        "blockchain-digital-assets",
     )
     locs.extend(f"<url><loc>https://sebastienrousseau.com/topics/{t}/</loc></url>" for t in topics)
     # Pre-fill the non-EN-lang URLs too so all candidates are present.
     from postbuild_lib.article_furniture import _all_active_non_en_langs
     from postbuild_lib.output import _lang_sitemap_urls, _splice_fr_urls
+
     # Build all candidate URLs explicitly + pre-populate the sitemap.
     for code in _all_active_non_en_langs():
         for url, _, _, _ in _lang_sitemap_urls(code, {}):
@@ -3299,12 +3565,11 @@ def test_refresh_sitemap_lastmod_inserts_when_no_existing_lastmod(tmp_path):
     """A URL with a tracked slug but no existing ``<lastmod>`` gets a fresh one inserted."""
     sitemap = tmp_path / "sitemap.xml"
     sitemap.write_text(
-        '<urlset><url>'
-        '<loc>https://sebastienrousseau.com/2026-05-12-x/</loc>'
-        '</url></urlset>',
+        "<urlset><url>" "<loc>https://sebastienrousseau.com/2026-05-12-x/</loc>" "</url></urlset>",
         encoding="utf-8",
     )
     from postbuild_lib.output import refresh_sitemap_lastmod
+
     n = refresh_sitemap_lastmod(sitemap, {"2026-05-12-x": "2026-05-15"})
     assert n == 1
     assert "<lastmod>2026-05-15</lastmod>" in sitemap.read_text(encoding="utf-8")
@@ -3317,12 +3582,13 @@ def test_refresh_sitemap_lastmod_rewrites_existing_entry(tmp_path, monkeypatch):
     sitemap = tmp_path / "sitemap.xml"
     sitemap.write_text(
         '<?xml version="1.0"?><urlset>'
-        '<url><loc>https://sebastienrousseau.com/2026-05-12-x/</loc>'
-        '<lastmod>2026-01-01</lastmod></url>'
-        '</urlset>',
+        "<url><loc>https://sebastienrousseau.com/2026-05-12-x/</loc>"
+        "<lastmod>2026-01-01</lastmod></url>"
+        "</urlset>",
         encoding="utf-8",
     )
     from postbuild_lib.output import refresh_sitemap_lastmod
+
     n = refresh_sitemap_lastmod(sitemap, {"2026-05-12-x": "2026-05-15"})
     assert n == 1
     out = sitemap.read_text(encoding="utf-8")
@@ -3336,6 +3602,7 @@ def test_refresh_sitemap_lastmod_rewrites_existing_entry(tmp_path, monkeypatch):
 
 def test_shrink_news_sitemap_no_op_when_file_missing(tmp_path):
     from postbuild_lib.output import shrink_news_sitemap
+
     assert shrink_news_sitemap(tmp_path) == 0
 
 
@@ -3343,16 +3610,18 @@ def test_shrink_news_sitemap_rewrites_long_title(tmp_path):
     nsm = tmp_path / "news-sitemap.xml"
     long_title = "A " * 60  # ~120 chars
     nsm.write_text(
-        f'<urlset><url><news:news><news:title>{long_title}</news:title>'
-        '<news:keywords>a,b,c,d,e,f,g,h,i,j,k,l,m</news:keywords>'
-        '</news:news></url></urlset>',
+        f"<urlset><url><news:news><news:title>{long_title}</news:title>"
+        "<news:keywords>a,b,c,d,e,f,g,h,i,j,k,l,m</news:keywords>"
+        "</news:news></url></urlset>",
         encoding="utf-8",
     )
     from postbuild_lib.output import shrink_news_sitemap
+
     assert shrink_news_sitemap(tmp_path) == 1
     out = nsm.read_text(encoding="utf-8")
     # Title clipped to ≤ 80 chars
     import re as _re
+
     m = _re.search(r"<news:title>([\s\S]*?)</news:title>", out)
     assert m is not None
     assert len(m.group(1)) <= 80
@@ -3372,13 +3641,14 @@ def test_stamp_asset_fingerprints_rewrites_main_js():
     from unittest.mock import patch
 
     import postbuild as _pb
+
     fake_map = {"/main.js": "/main.abc123.js"}
     fake_pat = _pb.re.compile(
         r'(<(?:script|link)\b[^>]*\b(?:src|href)=["\']?)(/main\.js)(["\']?[^>]*>)',
         _pb.re.IGNORECASE,
     )
     with patch.object(_pb, "_FP_ASSET_MAP", fake_map), patch.object(_pb, "_FP_PATTERN", fake_pat):
-        out, n = _pb.stamp_asset_fingerprints('<script defer src=/main.js></script>')
+        out, n = _pb.stamp_asset_fingerprints("<script defer src=/main.js></script>")
         assert n == 1
         assert "/main.abc123.js" in out
         assert "src=/main.js" not in out
@@ -3389,6 +3659,7 @@ def test_stamp_asset_fingerprints_rewrites_quoted_form():
     from unittest.mock import patch
 
     import postbuild as _pb
+
     fake_map = {"/main.js": "/main.abc123.js"}
     fake_pat = _pb.re.compile(
         r'(<(?:script|link)\b[^>]*\b(?:src|href)=["\']?)(/main\.js)(["\']?[^>]*>)',
@@ -3405,6 +3676,7 @@ def test_stamp_asset_fingerprints_leaves_inline_js_untouched():
     from unittest.mock import patch
 
     import postbuild as _pb
+
     fake_map = {"/main.js": "/main.abc123.js"}
     fake_pat = _pb.re.compile(
         r'(<(?:script|link)\b[^>]*\b(?:src|href)=["\']?)(/main\.js)(["\']?[^>]*>)',
@@ -3423,10 +3695,11 @@ def test_stamp_asset_fingerprints_no_op_when_pattern_missing():
     from unittest.mock import patch
 
     import postbuild as _pb
+
     with patch.object(_pb, "_FP_PATTERN", None):
-        out, n = _pb.stamp_asset_fingerprints('<script src=/main.js></script>')
+        out, n = _pb.stamp_asset_fingerprints("<script src=/main.js></script>")
         assert n == 0
-        assert out == '<script src=/main.js></script>'
+        assert out == "<script src=/main.js></script>"
 
 
 # ---------------------------------------------------------------------------
@@ -3446,7 +3719,9 @@ def test_scrub_localhost_canonical_to_prod():
 
 
 def test_scrub_localhost_atom_alternate():
-    html = '<link rel="alternate" type="application/atom+xml" href="http://localhost:8000/atom.xml"/>'
+    html = (
+        '<link rel="alternate" type="application/atom+xml" href="http://localhost:8000/atom.xml"/>'
+    )
     out, _ = pb.scrub_localhost_urls(html)
     assert "https://sebastienrousseau.com/atom.xml" in out
 
@@ -3546,13 +3821,13 @@ def test_about_graph_returns_none_when_no_keywords():
 
 
 def test_fix_social_image_rewrites_og_and_twitter():
-    html = '''
+    html = """
 "@type":"BlogPosting","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/banner.webp","width":"1200","height":"630"}
 <meta property="og:image" content="https://cloudcdn.pro/divider.svg">
 <meta property="og:image:width" content="1">
 <meta property="og:image:height" content="1">
 <meta name="twitter:image" content="https://cloudcdn.pro/divider.svg">
-'''
+"""
     out = pb.fix_social_image(html)
     assert 'og:image" content="https://cloudcdn.pro/banner.webp"' in out
     assert 'twitter:image" content="https://cloudcdn.pro/banner.webp"' in out
@@ -3560,19 +3835,19 @@ def test_fix_social_image_rewrites_og_and_twitter():
 
 
 def test_fix_social_image_promotes_twitter_card_summary_to_large():
-    html = '''
+    html = """
 "@type":"BlogPosting","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/banner.webp"}
 <meta name="twitter:card" content="summary">
-'''
+"""
     out = pb.fix_social_image(html)
     assert 'twitter:card" content="summary_large_image"' in out
 
 
 def test_fix_social_image_refuses_to_propagate_divider():
-    html = '''
+    html = """
 "@type":"BlogPosting","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/divider.svg"}
 <meta property="og:image" content="https://cloudcdn.pro/whatever.svg">
-'''
+"""
     # Should NOT propagate a divider value into og:image.
     out = pb.fix_social_image(html)
     assert out == html
@@ -3588,8 +3863,8 @@ _LANGSWITCH_BLOGPOST_HTML = (
     '<main><div class="wrap-article">'
     '<script type="application/ld+json">'
     '{"@type":"BlogPosting","headline":"x","datePublished":"2026-05-19"}'
-    '</script>'
-    '</div></main></body></html>'
+    "</script>"
+    "</div></main></body></html>"
 )
 
 
@@ -3609,29 +3884,29 @@ def _make_blogposting_with_og(
     fields. Tests can override the defaults to exercise the natural-aspect
     branch and the fallback-to-canonical branch.
     """
-    alt_meta = (
-        f'<meta name="twitter:image:alt" content="{og_image_alt}" />' if og_image_alt else ""
-    )
+    alt_meta = f'<meta name="twitter:image:alt" content="{og_image_alt}" />' if og_image_alt else ""
     width_meta = (
         f'<meta property="og:image:width" content="{og_image_width}" />'
-        if og_image_width is not None else ""
+        if og_image_width is not None
+        else ""
     )
     height_meta = (
         f'<meta property="og:image:height" content="{og_image_height}" />'
-        if og_image_height is not None else ""
+        if og_image_height is not None
+        else ""
     )
     return (
         '<html lang="en-GB"><head>'
         f'<meta property="og:image" content="{og_image}" />'
-        f'{width_meta}{height_meta}{alt_meta}'
-        '</head><body>'
+        f"{width_meta}{height_meta}{alt_meta}"
+        "</head><body>"
         '<script type="application/ld+json">'
         '{"@type":"BlogPosting","headline":"X"}'
-        '</script>'
+        "</script>"
         f'<section class="ap-hero"><h1>{h1}</h1></section>'
-        f'{extra}'
+        f"{extra}"
         '<main><div class="wrap"><p>body</p></div></main>'
-        '</body></html>'
+        "</body></html>"
     )
 
 
@@ -3642,6 +3917,7 @@ def test_inject_hero_banner_happy_path():
     natural-aspect reservation is what fixes the lighthouse CLS regression
     on banners that aren't 16:9."""
     from postbuild_lib.article_furniture import inject_hero_banner
+
     html = _make_blogposting_with_og()  # defaults: 1425×571 = 2.5:1
     out = inject_hero_banner(html)
     assert 'class="article-banner"' in out
@@ -3664,6 +3940,7 @@ def test_inject_hero_banner_falls_back_to_canonical_dims_when_og_dims_absent():
     Older articles without explicit dimensions still get a deterministic
     box reservation."""
     from postbuild_lib.article_furniture import inject_hero_banner
+
     html = _make_blogposting_with_og(og_image_width=None, og_image_height=None)
     out = inject_hero_banner(html)
     assert 'width="1200"' in out
@@ -3674,6 +3951,7 @@ def test_inject_hero_banner_falls_back_when_og_dims_are_zero():
     """og:image:width=0 / og:image:height=0 → fallback. Covers the
     ``w > 0 and h > 0`` guard's False branch."""
     from postbuild_lib.article_furniture import _banner_dimensions
+
     html_zero = (
         '<meta property="og:image:width" content="0" />'
         '<meta property="og:image:height" content="0" />'
@@ -3686,6 +3964,7 @@ def test_inject_hero_banner_falls_back_when_only_one_og_dim_present():
     → fallback. Covers the ``if w_m and h_m:`` guard's False branch
     when only one side of the pair matches."""
     from postbuild_lib.article_furniture import _banner_dimensions
+
     html_width_only = '<meta property="og:image:width" content="1200" />'
     assert _banner_dimensions(html_width_only) == (1200, 675)
     html_height_only = '<meta property="og:image:height" content="675" />'
@@ -3695,6 +3974,7 @@ def test_inject_hero_banner_falls_back_when_only_one_og_dim_present():
 def test_inject_hero_banner_falls_back_to_h1_when_alt_missing():
     """No twitter:image:alt meta → use 'Banner for: <H1 title>'."""
     from postbuild_lib.article_furniture import inject_hero_banner
+
     html = _make_blogposting_with_og(og_image_alt=None, h1="ISO 20022 After Migration")
     out = inject_hero_banner(html)
     assert 'alt="Banner for: ISO 20022 After Migration"' in out
@@ -3703,6 +3983,7 @@ def test_inject_hero_banner_falls_back_to_h1_when_alt_missing():
 def test_inject_hero_banner_idempotent_when_banner_already_present():
     """A page that already carries ``class="article-banner"`` is left alone."""
     from postbuild_lib.article_furniture import inject_hero_banner
+
     html = _make_blogposting_with_og(
         extra='<figure class="article-banner"><img src="x.webp" /></figure>',
     )
@@ -3713,6 +3994,7 @@ def test_inject_hero_banner_idempotent_when_banner_already_present():
 def test_inject_hero_banner_no_op_without_blogposting_jsonld():
     """Non-BlogPosting pages (listings, static pages) are skipped."""
     from postbuild_lib.article_furniture import inject_hero_banner
+
     html = (
         '<html><head><meta property="og:image" content="x.webp" /></head>'
         '<body><section class="ap-hero"><h1>Listings</h1></section>'
@@ -3726,8 +4008,9 @@ def test_inject_hero_banner_no_op_without_blogposting_jsonld():
 def test_inject_hero_banner_no_op_when_og_image_missing():
     """BlogPosting page without an og:image meta is left alone."""
     from postbuild_lib.article_furniture import inject_hero_banner
+
     html = (
-        '<html><body>'
+        "<html><body>"
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<section class="ap-hero"><h1>X</h1></section>'
         '<main><div class="wrap"></div></main></body></html>'
@@ -3741,6 +4024,7 @@ def test_inject_hero_banner_non_cdn_url_passes_through_unchanged():
     inserted into the figure without modification. Width / height come
     from the og:image:* meta tags or the canonical fallback."""
     from postbuild_lib.article_furniture import inject_hero_banner
+
     raw_url = "https://example.com/static/banner.webp"
     html = _make_blogposting_with_og(og_image=raw_url)
     out = inject_hero_banner(html)
@@ -3751,11 +4035,12 @@ def test_inject_hero_banner_uses_og_alt_when_twitter_alt_absent():
     """If twitter:image:alt is missing but og:image:alt is present, prefer
     twitter (the helper's default) — and when neither, fall back to H1."""
     from postbuild_lib.article_furniture import inject_hero_banner
+
     html = (
-        '<html><head>'
+        "<html><head>"
         '<meta property="og:image" content="https://example.com/x.webp" />'
         '<meta property="og:image:alt" content="The OG alt" />'
-        '</head><body>'
+        "</head><body>"
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<section class="ap-hero"><h1>Article H1</h1></section>'
         '<main><div class="wrap"></div></main></body></html>'
@@ -3768,14 +4053,15 @@ def test_inject_hero_banner_returns_unchanged_when_anchor_missing():
     """og:image present + BlogPosting marker present, but no </section>
     followed by a sibling element to anchor against → no insertion."""
     from postbuild_lib.article_furniture import inject_hero_banner
+
     html = (
-        '<html><head>'
+        "<html><head>"
         '<meta property="og:image" content="https://example.com/x.webp" />'
-        '</head><body>'
+        "</head><body>"
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         # NB: no <section class="ap-hero">…</section> at all — the
         # _HERO_BANNER_INSERT_RE anchor can't match.
-        '</body></html>'
+        "</body></html>"
     )
     out = inject_hero_banner(html)
     assert out == html
@@ -3787,16 +4073,17 @@ def test_inject_hero_banner_strips_legacy_inline_duplicate():
     inject_hero_banner injects the figure at the top AND removes the
     inline body duplicate, keeping the new design and dropping the old."""
     from postbuild_lib.article_furniture import inject_hero_banner
+
     html = (
-        '<html><head>'
+        "<html><head>"
         '<meta property="og:image" content="https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp" />'
-        '</head><body>'
+        "</head><body>"
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<section class="ap-hero"><h1>Bitcoin</h1></section>'
         '<main><div class="wrap">'
         '<p><img src="https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp" alt="..." /></p>'
-        '<h2>Insight</h2><p>body</p>'
-        '</div></main></body></html>'
+        "<h2>Insight</h2><p>body</p>"
+        "</div></main></body></html>"
     )
     out = inject_hero_banner(html)
     # The auto-injected figure is present.
@@ -3812,15 +4099,16 @@ def test_inject_hero_banner_leaves_unrelated_body_images_alone():
     """A `<p><img></p>` whose src is NOT the banner is left in place.
     The strip only fires when the body img matches the og:image path."""
     from postbuild_lib.article_furniture import inject_hero_banner
+
     html = (
-        '<html><head>'
+        "<html><head>"
         '<meta property="og:image" content="https://cloudcdn.pro/stocks/images/banner-A.webp" />'
-        '</head><body>'
+        "</head><body>"
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<section class="ap-hero"><h1>X</h1></section>'
         '<main><div class="wrap">'
         '<p><img src="https://cloudcdn.pro/stocks/images/some-diagram.webp" alt="d" /></p>'
-        '</div></main></body></html>'
+        "</div></main></body></html>"
     )
     out = inject_hero_banner(html)
     assert 'class="article-banner"' in out
@@ -3836,31 +4124,44 @@ def test_strip_legacy_inline_banner_helper_branches():
     img doesn't match the banner path. Each False/no-op branch needs
     coverage."""
     from postbuild_lib.article_furniture import _banner_path, strip_legacy_inline_banner
+
     # Malformed banner URL.
     assert _banner_path("not-a-url") is None
-    assert strip_legacy_inline_banner("<figure></figure><p><img src='x' /></p>", "not-a-url") == \
-        "<figure></figure><p><img src='x' /></p>"
+    assert (
+        strip_legacy_inline_banner("<figure></figure><p><img src='x' /></p>", "not-a-url")
+        == "<figure></figure><p><img src='x' /></p>"
+    )
     # No </figure> anchor at all.
-    assert strip_legacy_inline_banner(
-        "<p><img src='/stocks/images/foo.webp' /></p>",
-        "https://cloudcdn.pro/stocks/images/foo.webp",
-    ) == "<p><img src='/stocks/images/foo.webp' /></p>"
+    assert (
+        strip_legacy_inline_banner(
+            "<p><img src='/stocks/images/foo.webp' /></p>",
+            "https://cloudcdn.pro/stocks/images/foo.webp",
+        )
+        == "<p><img src='/stocks/images/foo.webp' /></p>"
+    )
     # </figure> present but no <p><img></p> in the window.
     in_html = "<figure></figure><h2>heading</h2><p>no image here</p>"
-    assert strip_legacy_inline_banner(
-        in_html,
-        "https://cloudcdn.pro/stocks/images/foo.webp",
-    ) == in_html
+    assert (
+        strip_legacy_inline_banner(
+            in_html,
+            "https://cloudcdn.pro/stocks/images/foo.webp",
+        )
+        == in_html
+    )
     # </figure> present + <p><img></p> present but src doesn't match.
     in_html = '<figure></figure><p><img src="https://cloudcdn.pro/stocks/images/other.webp" /></p>'
-    assert strip_legacy_inline_banner(
-        in_html,
-        "https://cloudcdn.pro/stocks/images/foo.webp",
-    ) == in_html
+    assert (
+        strip_legacy_inline_banner(
+            in_html,
+            "https://cloudcdn.pro/stocks/images/foo.webp",
+        )
+        == in_html
+    )
 
 
 def test_inject_lang_switcher_emits_rail_when_alternates_exist():
     import postbuild_lib.article_furniture as af
+
     real_alternates = af._alternates_for_en_slug
     real_resolve = af._resolve_en_slug
 
@@ -3871,13 +4172,19 @@ def test_inject_lang_switcher_emits_rail_when_alternates_exist():
             ("es", "https://sebastienrousseau.com/es/articulo-cuantico/"),
             ("ja", "https://sebastienrousseau.com/ja/ryoshi-anzen-shiharai/"),
         ]
+
     af._alternates_for_en_slug = fake_alternates
     af._resolve_en_slug = lambda slug, lang: "an-article"
     try:
         out = af.inject_lang_switcher(
-            _LANGSWITCH_BLOGPOST_HTML, "an-article", "en",
-            {"fr": {"un-article-quantique"}, "es": {"articulo-cuantico"},
-             "ja": {"ryoshi-anzen-shiharai"}},
+            _LANGSWITCH_BLOGPOST_HTML,
+            "an-article",
+            "en",
+            {
+                "fr": {"un-article-quantique"},
+                "es": {"articulo-cuantico"},
+                "ja": {"ryoshi-anzen-shiharai"},
+            },
         )
     finally:
         af._alternates_for_en_slug = real_alternates
@@ -3900,6 +4207,7 @@ def test_inject_lang_switcher_emits_rail_when_alternates_exist():
 
 def test_inject_lang_switcher_localises_lead_per_locale():
     import postbuild_lib.article_furniture as af
+
     real_alternates = af._alternates_for_en_slug
     real_resolve = af._resolve_en_slug
 
@@ -3910,7 +4218,9 @@ def test_inject_lang_switcher_localises_lead_per_locale():
     af._resolve_en_slug = lambda slug, lang: "an-article"
     try:
         out = af.inject_lang_switcher(
-            _LANGSWITCH_BLOGPOST_HTML, "un-article", "fr",
+            _LANGSWITCH_BLOGPOST_HTML,
+            "un-article",
+            "fr",
             {"fr": {"un-article"}},
         )
     finally:
@@ -3926,6 +4236,7 @@ def test_inject_lang_switcher_localises_lead_per_locale():
 
 def test_inject_lang_switcher_emits_rtl_for_arabic():
     import postbuild_lib.article_furniture as af
+
     real_alternates = af._alternates_for_en_slug
     real_resolve = af._resolve_en_slug
 
@@ -3936,7 +4247,10 @@ def test_inject_lang_switcher_emits_rtl_for_arabic():
     af._resolve_en_slug = lambda slug, lang: "x"
     try:
         out = af.inject_lang_switcher(
-            _LANGSWITCH_BLOGPOST_HTML, "x", "en", {"ar": {"x-ar"}},
+            _LANGSWITCH_BLOGPOST_HTML,
+            "x",
+            "en",
+            {"ar": {"x-ar"}},
         )
     finally:
         af._alternates_for_en_slug = real_alternates
@@ -3949,13 +4263,17 @@ def test_inject_lang_switcher_emits_rtl_for_arabic():
 
 def test_inject_lang_switcher_skips_non_blogposting():
     import postbuild_lib.article_furniture as af
-    html = '<html><body><section class="ap-hero"><h1>About</h1></section><main></main></body></html>'
+
+    html = (
+        '<html><body><section class="ap-hero"><h1>About</h1></section><main></main></body></html>'
+    )
     out = af.inject_lang_switcher(html, "about", "en", {"fr": {"a-propos"}})
     assert out == html
 
 
 def test_inject_lang_switcher_skips_when_no_alternates():
     import postbuild_lib.article_furniture as af
+
     real = af._alternates_for_en_slug
     real_resolve = af._resolve_en_slug
     af._alternates_for_en_slug = lambda *a, **k: [
@@ -3964,7 +4282,10 @@ def test_inject_lang_switcher_skips_when_no_alternates():
     af._resolve_en_slug = lambda slug, lang: "orphan"
     try:
         out = af.inject_lang_switcher(
-            _LANGSWITCH_BLOGPOST_HTML, "orphan", "en", {},
+            _LANGSWITCH_BLOGPOST_HTML,
+            "orphan",
+            "en",
+            {},
         )
     finally:
         af._alternates_for_en_slug = real
@@ -3974,11 +4295,15 @@ def test_inject_lang_switcher_skips_when_no_alternates():
 
 def test_inject_lang_switcher_skips_when_slug_unresolved():
     import postbuild_lib.article_furniture as af
+
     real_resolve = af._resolve_en_slug
     af._resolve_en_slug = lambda slug, lang: None
     try:
         out = af.inject_lang_switcher(
-            _LANGSWITCH_BLOGPOST_HTML, "mystery", "tr", {},
+            _LANGSWITCH_BLOGPOST_HTML,
+            "mystery",
+            "tr",
+            {},
         )
     finally:
         af._resolve_en_slug = real_resolve
@@ -3987,6 +4312,7 @@ def test_inject_lang_switcher_skips_when_slug_unresolved():
 
 def test_inject_lang_switcher_is_idempotent():
     import postbuild_lib.article_furniture as af
+
     real = af._alternates_for_en_slug
     real_resolve = af._resolve_en_slug
     af._alternates_for_en_slug = lambda *a, **k: [
@@ -3996,7 +4322,10 @@ def test_inject_lang_switcher_is_idempotent():
     af._resolve_en_slug = lambda slug, lang: "x"
     try:
         once = af.inject_lang_switcher(
-            _LANGSWITCH_BLOGPOST_HTML, "x", "en", {"fr": {"x-fr"}},
+            _LANGSWITCH_BLOGPOST_HTML,
+            "x",
+            "en",
+            {"fr": {"x-fr"}},
         )
         twice = af.inject_lang_switcher(once, "x", "en", {"fr": {"x-fr"}})
     finally:

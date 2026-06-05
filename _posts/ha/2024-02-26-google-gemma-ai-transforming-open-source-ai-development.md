@@ -239,4 +239,3 @@ Gemma's launch is a watershed moment in the field of AI, highlighting a shift to
 [05]: https://ollama.com/download "Ollama Download"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-

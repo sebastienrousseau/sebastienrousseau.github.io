@@ -18,6 +18,7 @@ Outputs:
     - public/topics/{slug}/index.html   one per topic
     - public/topics/index.html          hub listing every topic
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -252,6 +253,7 @@ _merge_frontmatter_assignments_into_topics()
 def _format_date(iso_like: str) -> str:
     """Render a post 'date' frontmatter value as YYYY-MM-DD for <time>."""
     from datetime import datetime as _dt
+
     for fmt in ("%b %d, %Y", "%B %d, %Y", "%Y-%m-%d"):
         try:
             return _dt.strptime(iso_like, fmt).strftime("%Y-%m-%d")
@@ -272,6 +274,7 @@ def render_card(slug: str, fm: dict[str, str]) -> str:
     date_human = ""
     try:
         from datetime import datetime as _dt
+
         date_human = _dt.strptime(date_iso, "%Y-%m-%d").strftime("%b %-d, %Y")
     except ValueError:
         date_human = date_iso
@@ -285,25 +288,27 @@ def render_card(slug: str, fm: dict[str, str]) -> str:
         '<article class="newsroom-card">'
         f'<a class="newsroom-card-media" href="{url}" title="{e_title}">'
         f'<img alt="{e_alt}" src="{banner}" loading="lazy" decoding="async" width="600" height="600" />'
-        '</a>'
+        "</a>"
         '<div class="newsroom-card-body">'
         f'<span class="newsroom-eyebrow">{e_eyebrow}</span>'
         f'<h3><a href="{url}" title="{e_title}">{e_title}</a></h3>'
         f'<p class="newsroom-meta"><time datetime="{date_iso}">{date_human}</time> · Sebastien Rousseau</p>'
         f'<p class="newsroom-excerpt">{e_desc}</p>'
-        '</div>'
-        '</article>'
+        "</div>"
+        "</article>"
     )
 
 
-_TITLE_RE = re.compile(r'<title>([^<]*)</title>', re.IGNORECASE)
+_TITLE_RE = re.compile(r"<title>([^<]*)</title>", re.IGNORECASE)
 _DESC_RE = re.compile(r'<meta\s+name="description"\s+content="([^"]*)"', re.IGNORECASE)
 _OG_TITLE_RE = re.compile(r'(<meta\s+property="og:title"\s+content=")[^"]*(")', re.IGNORECASE)
 _OG_DESC_RE = re.compile(r'(<meta\s+property="og:description"\s+content=")[^"]*(")', re.IGNORECASE)
 _OG_URL_RE = re.compile(r'(<meta\s+property="og:url"\s+content=")[^"]*(")', re.IGNORECASE)
 _CANONICAL_RE = re.compile(r'(<link\s+rel="canonical"\s+href=")[^"]*(")', re.IGNORECASE)
 _NEWSROOM_RE = re.compile(r'<section class="newsroom">[\s\S]*?</section>', re.IGNORECASE)
-_LDJSON_BLOCKS_RE = re.compile(r'<script type="application/ld\+json">[\s\S]*?</script>', re.IGNORECASE)
+_LDJSON_BLOCKS_RE = re.compile(
+    r'<script type="application/ld\+json">[\s\S]*?</script>', re.IGNORECASE
+)
 
 
 def _strip_extra_jsonld(shell: str) -> str:
@@ -315,7 +320,7 @@ def _strip_extra_jsonld(shell: str) -> str:
         return shell
     for b in blocks:
         if '"ItemList"' in b or '"itemListElement"' in b:
-            shell = shell.replace(b, '', 1)
+            shell = shell.replace(b, "", 1)
     return shell
 
 
@@ -325,21 +330,24 @@ def _build_topic_body(title: str, lede: str, cards: list[str], slug: str) -> str
         '<nav aria-label="Breadcrumb" class="topic-breadcrumb">'
         '<a href="/">Home</a> &middot; '
         '<a href="/topics/index.html">Topics</a> &middot; '
-        f'<span>{html.escape(title)}</span>'
-        '</nav>'
+        f"<span>{html.escape(title)}</span>"
+        "</nav>"
         '<header class="newsroom-section-head">'
         f'<p class="newsroom-kicker">TOPIC</p>'
-        f'<h1>{html.escape(title)}</h1>'
+        f"<h1>{html.escape(title)}</h1>"
         f'<p class="topic-lede">{html.escape(lede)}</p>'
-        '</header>'
+        "</header>"
         '<h2 class="visually-hidden">Articles in this topic</h2>'
-        '<div class="newsroom-grid">' + "".join(cards) + '</div>'
-        '</section>'
+        '<div class="newsroom-grid">' + "".join(cards) + "</div>"
+        "</section>"
     )
 
 
-def _build_topic_jsonld(slug: str, title: str, lede: str, slugs: list[str], post_titles: list[str]) -> str:
+def _build_topic_jsonld(
+    slug: str, title: str, lede: str, slugs: list[str], post_titles: list[str]
+) -> str:
     import json as _json
+
     base = "https://sebastienrousseau.com"
     items = [
         {
@@ -372,8 +380,18 @@ def _build_topic_jsonld(slug: str, title: str, lede: str, slugs: list[str], post
                 "@type": "BreadcrumbList",
                 "itemListElement": [
                     {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{base}/"},
-                    {"@type": "ListItem", "position": 2, "name": "Topics", "item": f"{base}/topics/"},
-                    {"@type": "ListItem", "position": 3, "name": title, "item": f"{base}/topics/{slug}/"},
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Topics",
+                        "item": f"{base}/topics/",
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": title,
+                        "item": f"{base}/topics/{slug}/",
+                    },
                 ],
             },
         ],
@@ -381,7 +399,7 @@ def _build_topic_jsonld(slug: str, title: str, lede: str, slugs: list[str], post
     return (
         '<script type="application/ld+json">'
         + _json.dumps(graph, separators=(",", ":"), ensure_ascii=False)
-        + '</script>'
+        + "</script>"
     )
 
 
@@ -426,13 +444,13 @@ def render_topic(slug: str, spec: dict[str, object], shell: str) -> tuple[str, s
         out,
         count=1,
     )
-    out = _OG_TITLE_RE.sub(rf'\1{html.escape(page_title, quote=True)}\2', out, count=1)
-    out = _OG_DESC_RE.sub(rf'\1{html.escape(lede, quote=True)}\2', out, count=1)
-    out = _OG_URL_RE.sub(rf'\1https://sebastienrousseau.com/topics/{slug}/\2', out, count=1)
-    out = _CANONICAL_RE.sub(rf'\1https://sebastienrousseau.com/topics/{slug}/\2', out, count=1)
+    out = _OG_TITLE_RE.sub(rf"\1{html.escape(page_title, quote=True)}\2", out, count=1)
+    out = _OG_DESC_RE.sub(rf"\1{html.escape(lede, quote=True)}\2", out, count=1)
+    out = _OG_URL_RE.sub(rf"\1https://sebastienrousseau.com/topics/{slug}/\2", out, count=1)
+    out = _CANONICAL_RE.sub(rf"\1https://sebastienrousseau.com/topics/{slug}/\2", out, count=1)
 
     # Inject our scoped JSON-LD just before </body>.
-    out = re.sub(r'(</body>)', ldjson + r'\1', out, count=1)
+    out = re.sub(r"(</body>)", ldjson + r"\1", out, count=1)
 
     return f"topics/{slug}/index.html", out
 
@@ -459,15 +477,13 @@ def render_hub(shell: str) -> tuple[str, str]:
                 'style="background:linear-gradient(135deg,var(--cl-grey-100,#f1f3f7),var(--cl-grey-200,#e3e6ed));aspect-ratio:1/1"></a>'
             )
         cards.append(
-            '<article class="newsroom-card">'
-            + media +
-            '<div class="newsroom-card-body">'
+            '<article class="newsroom-card">' + media + '<div class="newsroom-card-body">'
             '<span class="newsroom-eyebrow">PILLAR · TOPIC</span>'
             f'<h3><a href="{url}">{title}</a></h3>'
             f'<p class="newsroom-excerpt">{lede}</p>'
             f'<p class="newsroom-meta">{count} article(s)</p>'
-            '</div>'
-            '</article>'
+            "</div>"
+            "</article>"
         )
     body = (
         '<section class="newsroom">'
@@ -475,23 +491,25 @@ def render_hub(shell: str) -> tuple[str, str]:
         '<a href="/">Home</a> &middot; <span>Topics</span></nav>'
         '<header class="newsroom-section-head">'
         '<p class="newsroom-kicker">PILLARS</p>'
-        '<h1>Topics</h1>'
+        "<h1>Topics</h1>"
         '<p class="topic-lede">Curated topic clusters — pick a thread and follow it through the archive.</p>'
-        '</header>'
+        "</header>"
         '<h2 class="visually-hidden">All topics</h2>'
-        '<div class="newsroom-grid">' + "".join(cards) + '</div>'
-        '</section>'
+        '<div class="newsroom-grid">' + "".join(cards) + "</div>"
+        "</section>"
     )
     out = _strip_extra_jsonld(shell)
     out = _NEWSROOM_RE.sub(body, out, count=1)
     title = "Topics — Sebastien Rousseau"
     desc = "Curated topic clusters covering post-quantum cryptography, ISO 20022, applied AI in banking, Rust open source, and digital assets."
     out = _TITLE_RE.sub(f"<title>{html.escape(title)}</title>", out, count=1)
-    out = _DESC_RE.sub(f'<meta name="description" content="{html.escape(desc, quote=True)}"', out, count=1)
-    out = _OG_TITLE_RE.sub(rf'\1{html.escape(title, quote=True)}\2', out, count=1)
-    out = _OG_DESC_RE.sub(rf'\1{html.escape(desc, quote=True)}\2', out, count=1)
-    out = _OG_URL_RE.sub(r'\1https://sebastienrousseau.com/topics/\2', out, count=1)
-    out = _CANONICAL_RE.sub(r'\1https://sebastienrousseau.com/topics/\2', out, count=1)
+    out = _DESC_RE.sub(
+        f'<meta name="description" content="{html.escape(desc, quote=True)}"', out, count=1
+    )
+    out = _OG_TITLE_RE.sub(rf"\1{html.escape(title, quote=True)}\2", out, count=1)
+    out = _OG_DESC_RE.sub(rf"\1{html.escape(desc, quote=True)}\2", out, count=1)
+    out = _OG_URL_RE.sub(r"\1https://sebastienrousseau.com/topics/\2", out, count=1)
+    out = _CANONICAL_RE.sub(r"\1https://sebastienrousseau.com/topics/\2", out, count=1)
     return "topics/index.html", out
 
 

@@ -108,4 +108,3 @@ Developers requiring mathematical or cryptographic constants in Rust should look
 [00]: https://github.com/sebastienrousseau/cmn "The Common (CMN) library website"
 [01]: https://docs.rs/cmn/latest/cmn/ "The Common (CMN) library documentation"
 [02]: https://github.com/sebastienrousseau/cmn "The Common (CMN) library GitHub repository"
-

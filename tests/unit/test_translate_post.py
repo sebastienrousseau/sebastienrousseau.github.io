@@ -3,6 +3,7 @@ scaffolder used by the daily-publishing flow. Body translation itself
 runs in Claude Code; this script does the deterministic part
 (localised slug, frontmatter rewrite, slug-map update, marker-aware
 idempotence)."""
+
 from __future__ import annotations
 
 import json
@@ -151,7 +152,10 @@ def test_localized_slug_passes_unknown_tokens_through():
 def test_scaffold_one_writes_localised_post_and_updates_slugs(fake_repo):
     _seed_en(fake_repo)
     status = tp.scaffold_one(
-        "2026-05-19-sample", _EN_SAMPLE, "fr", dry_run=False,
+        "2026-05-19-sample",
+        _EN_SAMPLE,
+        "fr",
+        dry_run=False,
     )
     assert "scaffolded" in status
     # File on disk
@@ -172,7 +176,10 @@ def test_scaffold_one_writes_localised_post_and_updates_slugs(fake_repo):
 def test_scaffold_one_dry_run_reports_without_writing(fake_repo):
     _seed_en(fake_repo)
     status = tp.scaffold_one(
-        "2026-05-19-sample", _EN_SAMPLE, "fr", dry_run=True,
+        "2026-05-19-sample",
+        _EN_SAMPLE,
+        "fr",
+        dry_run=True,
     )
     assert "would scaffold" in status
     assert not list((fake_repo / "_posts" / "fr").glob("*.md"))
@@ -192,7 +199,10 @@ def test_scaffold_one_skips_existing_real_translation(fake_repo):
     target_de.parent.mkdir(parents=True, exist_ok=True)
     target_de.write_text(real_body, encoding="utf-8")
     status = tp.scaffold_one(
-        "2026-05-19-sample", _EN_SAMPLE, "de", dry_run=False,
+        "2026-05-19-sample",
+        _EN_SAMPLE,
+        "de",
+        dry_run=False,
     )
     assert "keep" in status
     assert target_de.read_text(encoding="utf-8") == real_body
@@ -209,6 +219,7 @@ def test_scaffold_one_uses_fallback_locale_when_unknown(fake_repo):
     _seed_en(fake_repo)
     # Patch the locale map to drop an entry → exercise the fallback.
     import copy
+
     new_codes = copy.deepcopy(tp._LOCALE_CODES)
     new_codes.pop("fr")
     monkey_codes = new_codes
@@ -216,7 +227,10 @@ def test_scaffold_one_uses_fallback_locale_when_unknown(fake_repo):
     tp._LOCALE_CODES.update(monkey_codes)
     try:
         status = tp.scaffold_one(
-            "2026-05-19-sample", _EN_SAMPLE, "fr", dry_run=False,
+            "2026-05-19-sample",
+            _EN_SAMPLE,
+            "fr",
+            dry_run=False,
         )
         assert "scaffolded" in status
         out = next(iter((fake_repo / "_posts" / "fr").glob("*.md")))
@@ -275,7 +289,8 @@ def test_main_reports_missing_slug(fake_repo, capsys, monkeypatch):
 def test_main_dry_run_lists_targets(fake_repo, capsys, monkeypatch):
     _seed_en(fake_repo)
     monkeypatch.setattr(
-        sys, "argv",
+        sys,
+        "argv",
         ["translate_post.py", "2026-05-19-sample", "--dry-run", "--langs", "fr", "de"],
     )
     rc = tp.main()
@@ -288,7 +303,8 @@ def test_main_dry_run_lists_targets(fake_repo, capsys, monkeypatch):
 def test_main_scaffolds_when_not_dry_run(fake_repo, capsys, monkeypatch):
     _seed_en(fake_repo)
     monkeypatch.setattr(
-        sys, "argv",
+        sys,
+        "argv",
         ["translate_post.py", "2026-05-19-sample", "--langs", "fr"],
     )
     rc = tp.main()
@@ -302,7 +318,8 @@ def test_main_list_stubs_reports_pending(fake_repo, capsys, monkeypatch):
     for lang in ("fr", "de", "es"):
         tp.scaffold_one("2026-05-19-sample", _EN_SAMPLE, lang, dry_run=False)
     monkeypatch.setattr(
-        sys, "argv",
+        sys,
+        "argv",
         ["translate_post.py", "2026-05-19-sample", "--list-stubs"],
     )
     rc = tp.main()
@@ -322,7 +339,8 @@ def test_main_list_stubs_reports_done_when_all_translated(fake_repo, capsys, mon
             encoding="utf-8",
         )
     monkeypatch.setattr(
-        sys, "argv",
+        sys,
+        "argv",
         ["translate_post.py", "2026-05-19-sample", "--list-stubs"],
     )
     rc = tp.main()

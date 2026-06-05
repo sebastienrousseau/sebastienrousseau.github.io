@@ -44,6 +44,7 @@ passing pages, and a ``.pa11yci`` config change (e.g. a different
 
 Pure functions over filesystem paths + JSON dicts; no global state.
 """
+
 from __future__ import annotations
 
 import argparse
@@ -85,7 +86,10 @@ def detect_pa11y_version(pa11y_ci_bin: str = "pa11y-ci") -> str:
     try:
         out = subprocess.run(
             [pa11y_ci_bin, "--version"],
-            check=True, capture_output=True, text=True, timeout=10,
+            check=True,
+            capture_output=True,
+            text=True,
+            timeout=10,
         ).stdout.strip()
         return out or "unknown"
     except (FileNotFoundError, subprocess.SubprocessError):
@@ -113,7 +117,10 @@ def detect_chromium_version() -> str:
         try:
             out = subprocess.run(
                 [bin_path, "--version"],
-                check=True, capture_output=True, text=True, timeout=10,
+                check=True,
+                capture_output=True,
+                text=True,
+                timeout=10,
             ).stdout.strip()
             m = _CHROMIUM_VERSION_RE.search(out)
             if m:
@@ -277,27 +284,23 @@ def cmd_pre(args: argparse.Namespace) -> int:
 
     # Build the real .pa11yci with just the to-sweep URLs.
     base_url = args.base_url.rstrip("/")
-    sweep_urls = [
-        f"{base_url}/{p.relative_to(public_dir).as_posix()}" for p, _ in to_sweep
-    ]
+    sweep_urls = [f"{base_url}/{p.relative_to(public_dir).as_posix()}" for p, _ in to_sweep]
     config = build_pa11yci_config(sweep_urls, hide_elements)
     Path(args.pa11yci_out).write_text(
-        json.dumps(config, indent=2), encoding="utf-8",
+        json.dumps(config, indent=2),
+        encoding="utf-8",
     )
 
     # Manifest the post-pass needs.
     manifest = {
         "fingerprint": current_fp,
-        "to_sweep_hashes": {
-            p.relative_to(public_dir).as_posix(): h for p, h in to_sweep
-        },
-        "cache_hit_hashes": {
-            p.relative_to(public_dir).as_posix(): h for p, h in cache_hits
-        },
+        "to_sweep_hashes": {p.relative_to(public_dir).as_posix(): h for p, h in to_sweep},
+        "cache_hit_hashes": {p.relative_to(public_dir).as_posix(): h for p, h in cache_hits},
         "skipped": skipped,
     }
     Path(args.manifest_out).write_text(
-        json.dumps(manifest, indent=2), encoding="utf-8",
+        json.dumps(manifest, indent=2),
+        encoding="utf-8",
     )
 
     total = len(to_sweep) + len(cache_hits) + len(skipped)
@@ -353,10 +356,7 @@ def cmd_post(args: argparse.Namespace) -> int:
     # Drop entries for files that no longer exist in public/. They'd
     # otherwise accumulate as the site changes.
     public_dir = Path(args.public_dir)
-    live_relpaths = {
-        p.relative_to(public_dir).as_posix()
-        for p in public_dir.rglob("index.html")
-    }
+    live_relpaths = {p.relative_to(public_dir).as_posix() for p in public_dir.rglob("index.html")}
     stale = [rel for rel in pages if rel not in live_relpaths]
     for rel in stale:
         pages.pop(rel, None)

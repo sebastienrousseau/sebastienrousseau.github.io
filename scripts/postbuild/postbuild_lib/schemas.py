@@ -31,6 +31,7 @@ Both functions are pure ``(html) -> html``. Insertion happens before
 ``</body>`` so the existing CSP-hash pass in postbuild captures the
 new blocks.
 """
+
 from __future__ import annotations
 
 import datetime as _dt
@@ -62,22 +63,22 @@ _LANG_TOKENS: dict[str, str] = {
 # Keyword tokens → domain dependency label that goes into
 # TechArticle.dependencies (a free-text list per schema.org).
 _DEP_TOKENS: dict[str, str] = {
-    "iso 20022":          "ISO 20022",
-    "pain.001":           "ISO 20022 pain.001",
-    "pacs.008":           "ISO 20022 pacs.008",
-    "post-quantum":       "Post-Quantum Cryptography",
-    "post quantum":       "Post-Quantum Cryptography",
-    "pqc":                "Post-Quantum Cryptography",
-    "crystals-kyber":     "CRYSTALS-Kyber (NIST FIPS 203)",
-    "kyber":              "CRYSTALS-Kyber",
-    "nist":               "NIST",
-    "fips 203":           "NIST FIPS 203",
-    "swift gpi":          "SWIFT gpi",
-    "sepa":               "SEPA Instant Payments",
-    "blockchain":         "Blockchain",
-    "ethereum":           "Ethereum",
-    "erc-20":             "ERC-20",
-    "stablecoin":         "Stablecoin",
+    "iso 20022": "ISO 20022",
+    "pain.001": "ISO 20022 pain.001",
+    "pacs.008": "ISO 20022 pacs.008",
+    "post-quantum": "Post-Quantum Cryptography",
+    "post quantum": "Post-Quantum Cryptography",
+    "pqc": "Post-Quantum Cryptography",
+    "crystals-kyber": "CRYSTALS-Kyber (NIST FIPS 203)",
+    "kyber": "CRYSTALS-Kyber",
+    "nist": "NIST",
+    "fips 203": "NIST FIPS 203",
+    "swift gpi": "SWIFT gpi",
+    "sepa": "SEPA Instant Payments",
+    "blockchain": "Blockchain",
+    "ethereum": "Ethereum",
+    "erc-20": "ERC-20",
+    "stablecoin": "Stablecoin",
 }
 
 _keywords_meta_re = re.compile(
@@ -134,7 +135,7 @@ def _is_dated_article(page: Path) -> bool:
 
 def _page_lang(html: str) -> str:
     m = _html_lang_re.search(html)
-    return (m.group(1) if m else "en-GB")
+    return m.group(1) if m else "en-GB"
 
 
 # A page with at least this many distinct primary-source citations
@@ -155,8 +156,7 @@ _blogposting_dates_re = re.compile(
     r'"datePublished":"([^"]+)"[^"]*"dateModified":"([^"]+)"',
 )
 _blogposting_image_re = re.compile(
-    r'"@type":"BlogPosting"[\s\S]*?'
-    r'"image":\{[^{}]*?"url":"([^"]+)"',
+    r'"@type":"BlogPosting"[\s\S]*?' r'"image":\{[^{}]*?"url":"([^"]+)"',
 )
 _blogposting_section_re = re.compile(
     r'"@type":"BlogPosting"[\s\S]*?"articleSection":"([^"]+)"',
@@ -185,7 +185,8 @@ def _parse_iso_date(s: str) -> _dt.datetime | None:
 
 
 def _is_fresh_for_news(
-    date_pub: str, now: _dt.datetime,
+    date_pub: str,
+    now: _dt.datetime,
 ) -> bool:
     """True iff ``date_pub`` is within :data:`NEWS_FRESHNESS_HOURS` of ``now``.
 
@@ -200,14 +201,13 @@ def _is_fresh_for_news(
 
 
 def _tech_payload(
-    languages: list[str], dependencies: list[str],
+    languages: list[str],
+    dependencies: list[str],
 ) -> dict[str, object]:
     """TechArticle-specific developer hints."""
     payload: dict[str, object] = {"proficiencyLevel": "Expert"}
     if languages:
-        payload["programmingLanguage"] = (
-            languages if len(languages) > 1 else languages[0]
-        )
+        payload["programmingLanguage"] = languages if len(languages) > 1 else languages[0]
     if dependencies:
         payload["dependencies"] = dependencies
     return payload
@@ -223,7 +223,8 @@ def _detect_kw_signals(html: str) -> tuple[list[str], list[str], list[str]]:
 
 
 def _tech_article_graph(
-    html: str, page: Path,
+    html: str,
+    page: Path,
 ) -> dict[str, object] | None:
     """Build the richer Article-subtype JSON-LD payload for a dated post.
 
@@ -249,6 +250,7 @@ def _tech_article_graph(
     # already imports from postbuild_lib.seo, so going the other way
     # via top-level import would close the loop.
     from postbuild_lib.article_furniture import _extract_citations
+
     citations = _extract_citations(html)
     is_scholarly = len(citations) >= SCHOLARLY_CITATION_THRESHOLD
     keywords, languages, dependencies = _detect_kw_signals(html)
@@ -283,7 +285,8 @@ def inject_tech_article(page: Path, html: str) -> str:
     if not _is_dated_article(page):
         return html
     if (
-        '"@type":"TechArticle"' in html or '"@type": "TechArticle"' in html
+        '"@type":"TechArticle"' in html
+        or '"@type": "TechArticle"' in html
         or '"@type":"ScholarlyArticle"' in html
         or '"@type": "ScholarlyArticle"' in html
     ):
@@ -302,7 +305,9 @@ def inject_tech_article(page: Path, html: str) -> str:
 
 
 def _news_article_graph(
-    html: str, page: Path, now: _dt.datetime,
+    html: str,
+    page: Path,
+    now: _dt.datetime,
 ) -> dict[str, object] | None:
     """Build the NewsArticle JSON-LD payload, or return None when the
     page isn't a fresh dated post.
@@ -340,7 +345,9 @@ def _news_article_graph(
         "speakable": {
             "@type": "SpeakableSpecification",
             "cssSelector": [
-                ".post-lead", ".post-lead-tldr", ".post-lead-takeaways",
+                ".post-lead",
+                ".post-lead-tldr",
+                ".post-lead-takeaways",
             ],
         },
     }
@@ -357,7 +364,9 @@ def _news_article_graph(
 
 
 def inject_news_article(
-    page: Path, html: str, now: _dt.datetime | None = None,
+    page: Path,
+    html: str,
+    now: _dt.datetime | None = None,
 ) -> str:
     """Add a NewsArticle JSON-LD block to dated post pages published
     within the Google News Top Stories carousel window.
@@ -409,8 +418,7 @@ _excerpt_re = re.compile(
 _strip_tags_re = re.compile(r"<[^>]+>")
 _ws_re = re.compile(r"\s+")
 _section_re = re.compile(
-    r'<h2\b[^>]*\bid="([^"]+)"[^>]*>([\s\S]*?)</h2>([\s\S]*?)'
-    r'(?=<h2\b[^>]*\bid=|</main>)',
+    r'<h2\b[^>]*\bid="([^"]+)"[^>]*>([\s\S]*?)</h2>([\s\S]*?)' r"(?=<h2\b[^>]*\bid=|</main>)",
     re.IGNORECASE,
 )
 
@@ -469,7 +477,9 @@ def _parse_card(card_body: str) -> tuple[str, str, str, list[str]] | None:
 
 
 def _build_software_source_code(
-    card_body: str, section_title: str, position: int,
+    card_body: str,
+    section_title: str,
+    position: int,
 ) -> dict[str, object] | None:
     parsed = _parse_card(card_body)
     if parsed is None:
@@ -487,9 +497,7 @@ def _build_software_source_code(
     if description:
         record["description"] = description
     if languages:
-        record["programmingLanguage"] = (
-            languages if len(languages) > 1 else languages[0]
-        )
+        record["programmingLanguage"] = languages if len(languages) > 1 else languages[0]
     if "github.com/sebastienrousseau/" in href:
         record["codeRepository"] = href
     elif href.startswith("https://") and "github" not in href:

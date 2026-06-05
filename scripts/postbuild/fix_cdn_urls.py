@@ -15,6 +15,7 @@ New CDN conventions (see /Users/seb/Code/Public/CDN/cloudcdn.pro):
   - legacy ``kura.pro/<project>/images/<rest>`` ≡ ``clients/<project>/v1/<rest>``
   - logo SVGs replaced WebP/PNG bitmaps where available
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -28,29 +29,85 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
 CDN_ROOT = Path("/Users/seb/Code/Public/CDN/cloudcdn.pro")
-SOURCE_GLOBS = ("_posts/**/*.md", "_layouts/**/*.html", "_layouts/**/*.js",
-                "scripts/**/*.py", "_drafts/**/*.md", "*.md", "*.html")
+SOURCE_GLOBS = (
+    "_posts/**/*.md",
+    "_layouts/**/*.html",
+    "_layouts/**/*.js",
+    "scripts/**/*.py",
+    "_drafts/**/*.md",
+    "*.md",
+    "*.html",
+)
 URL_RE = re.compile(r"https://(?:kura|cloudcdn)\.pro/[^\s\"'<>)\\]+")
 
 # Project codenames that historically used ``/<proj>/images/...`` and now live
 # under ``/clients/<proj>/v1/...`` — verified by listing the CDN tree.
 PROJECT_PREFIXES = {
-    "akande", "alienstudio", "audioanalyser", "audiotextpro", "audiowave",
-    "bankingonai", "bankingonquantum", "bankstatementparser", "beonux",
-    "cloudcdn", "cmn", "cs50x", "dotfiles", "dtt", "frontmatter-gen", "hsh",
-    "html-generator", "http-handle", "kaishi", "kyberlib", "l90s", "langweave",
-    "libmake", "libyml", "llamadev", "maccfg", "mdx-gen", "metadata-gen",
-    "mini-functions", "nalufx", "neferankh", "noyalib", "nucleusflow", "pain001",
-    "password-generator-pro", "pipelines", "pm2md", "publications", "pythondev",
-    "qrc", "rlg", "routefinder", "rssgen", "rustdev", "sebastienrousseau",
-    "serde_yml", "Static Site Generator", "sinewavegenerator", "sitemap-gen", "skeletonic",
+    "akande",
+    "alienstudio",
+    "audioanalyser",
+    "audiotextpro",
+    "audiowave",
+    "bankingonai",
+    "bankingonquantum",
+    "bankstatementparser",
+    "beonux",
+    "cloudcdn",
+    "cmn",
+    "cs50x",
+    "dotfiles",
+    "dtt",
+    "frontmatter-gen",
+    "hsh",
+    "html-generator",
+    "http-handle",
+    "kaishi",
+    "kyberlib",
+    "l90s",
+    "langweave",
+    "libmake",
+    "libyml",
+    "llamadev",
+    "maccfg",
+    "mdx-gen",
+    "metadata-gen",
+    "mini-functions",
+    "nalufx",
+    "neferankh",
+    "noyalib",
+    "nucleusflow",
+    "pain001",
+    "password-generator-pro",
+    "pipelines",
+    "pm2md",
+    "publications",
+    "pythondev",
+    "qrc",
+    "rlg",
+    "routefinder",
+    "rssgen",
+    "rustdev",
+    "sebastienrousseau",
+    "serde_yml",
+    "Static Site Generator",
+    "sinewavegenerator",
+    "sitemap-gen",
+    "skeletonic",
     "vrd",
 }
 
 # Brand logos that used to live at /logos/<brand>.webp now live under
 # clients/sebastienrousseau/v1/logos.
-BRAND_LOGOS = {"akqa", "barclays", "hsbc", "paypal", "shazam", "virgin",
-               "capgemini", "rufusleonard"}
+BRAND_LOGOS = {
+    "akqa",
+    "barclays",
+    "hsbc",
+    "paypal",
+    "shazam",
+    "virgin",
+    "capgemini",
+    "rufusleonard",
+}
 
 EXT_FALLBACKS = (".svg", ".webp", ".png", ".jpg", ".jpeg")
 
@@ -83,13 +140,13 @@ def candidate_paths(url: str) -> list[str]:
 
     # /stock/<x> → /stocks/<x>
     if path.startswith("stock/"):
-        cands.append("stocks/" + path[len("stock/"):])
+        cands.append("stocks/" + path[len("stock/") :])
     # /unsplash/images/banners/<x> → /stocks/images/<x>
     if path.startswith("unsplash/images/banners/"):
-        cands.append("stocks/images/" + path[len("unsplash/images/banners/"):])
+        cands.append("stocks/images/" + path[len("unsplash/images/banners/") :])
     # /unsplash/images/<x> → /stocks/images/<x>
     elif path.startswith("unsplash/images/"):
-        cands.append("stocks/images/" + path[len("unsplash/images/"):])
+        cands.append("stocks/images/" + path[len("unsplash/images/") :])
 
     # /common/images/<x> → /clients/common/images/<x>
     if path.startswith("common/images/"):

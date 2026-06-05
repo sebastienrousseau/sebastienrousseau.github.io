@@ -1,11 +1,11 @@
 {
-  "description": "Gano yadda OpenAI Whisper da Metal Performance Shaders ke canza gane magana a lokaci na gaske a macOS, suna ba da sauri da daidaito marar misali.",
-  "subtitle": "Saki Ikon AI da GPU a Cikin Speech-to-Text a Mac ɗinka",
-  "date": "Mar 12, 2024",
+  "title": "Fast Real-Time Speech Recognition on macOS: OpenAI Whisper",
   "language": "ha-NG",
-  "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
+  "date": "Mar 12, 2024",
   "locale": "ha_NG",
-  "keywords": "OpenAI Whisper, Metal Performance Shaders, gane magana macOS, fassarar lokaci na gaske, gano ayyukan murya, hanzarin GPU, haɗin Python, speech-to-text macOS, gano magana mai adana makamashi, Apple silicon",
   "banner_alt": "Tuta don gane magana ta atomatik na lokaci na gaske (ASR)",
-  "title": "Fast Real-Time Speech Recognition on macOS: OpenAI Whisper"
+  "subtitle": "Saki Ikon AI da GPU a Cikin Speech-to-Text a Mac ɗinka",
+  "keywords": "OpenAI Whisper, Metal Performance Shaders, gane magana macOS, fassarar lokaci na gaske, gano ayyukan murya, hanzarin GPU, haɗin Python, speech-to-text macOS, gano magana mai adana makamashi, Apple silicon",
+  "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
+  "description": "Gano yadda OpenAI Whisper da Metal Performance Shaders ke canza gane magana a lokaci na gaske a macOS, suna ba da sauri da daidaito marar misali."
 }

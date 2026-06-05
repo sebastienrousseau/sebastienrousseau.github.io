@@ -23,6 +23,7 @@ one EN string unmasked on /de/.
 Run from repo root: ``python3 scripts/test_i18n_render_data.py``.
 Exits non-zero on any defect. Wired into ``build.sh``.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -46,9 +47,7 @@ def check_patches(code: str, name: str, loader, fr_count: int) -> list[str]:
     except _lang_registry.LanguageError as e:
         return [str(e)]
     if len(entries) != fr_count:
-        return [
-            f"[{code}/{name}] count mismatch: {len(entries)} vs FR reference {fr_count}"
-        ]
+        return [f"[{code}/{name}] count mismatch: {len(entries)} vs FR reference {fr_count}"]
     return []
 
 
@@ -59,8 +58,7 @@ def check_bodies(code: str, fr_keys: set[str]) -> list[str]:
         return [str(e)]
     keys = set(bodies)
     problems: list[str] = [
-        f"[{code}/static_bodies] missing key: {missing!r}"
-        for missing in sorted(fr_keys - keys)
+        f"[{code}/static_bodies] missing key: {missing!r}" for missing in sorted(fr_keys - keys)
     ]
     problems.extend(
         f"[{code}/static_bodies] extra key (not in FR ref): {extra!r}"
@@ -83,9 +81,9 @@ def main() -> int:
     fr_body_keys = set(fr_bodies)
 
     targets = sorted(
-        d.name for d in I18N_DIR.iterdir()
-        if d.is_dir() and d.name not in ("fr", "en")
-        and (d / "home_patches.json").is_file()
+        d.name
+        for d in I18N_DIR.iterdir()
+        if d.is_dir() and d.name not in ("fr", "en") and (d / "home_patches.json").is_file()
     )
     if not targets:
         print("warn: no non-FR languages with home_patches.json", file=sys.stderr)
@@ -93,9 +91,19 @@ def main() -> int:
 
     all_problems: list[str] = []
     for code in targets:
-        all_problems.extend(check_patches(code, "home_patches", _lang_registry.load_home_patches, len(fr_home)))
-        all_problems.extend(check_patches(code, "static_patches", _lang_registry.load_static_patches, len(fr_static)))
-        all_problems.extend(check_patches(code, "chrome_patches", _lang_registry.load_chrome_patches_inline, len(fr_chrome)))
+        all_problems.extend(
+            check_patches(code, "home_patches", _lang_registry.load_home_patches, len(fr_home))
+        )
+        all_problems.extend(
+            check_patches(
+                code, "static_patches", _lang_registry.load_static_patches, len(fr_static)
+            )
+        )
+        all_problems.extend(
+            check_patches(
+                code, "chrome_patches", _lang_registry.load_chrome_patches_inline, len(fr_chrome)
+            )
+        )
         all_problems.extend(check_bodies(code, fr_body_keys))
 
     if all_problems:

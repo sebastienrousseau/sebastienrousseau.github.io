@@ -23,6 +23,7 @@ Algorithm:
 Stable rendering means the diff on a no-op rebuild is empty. Run as
 part of ``build.sh`` before ``ssg``.
 """
+
 from __future__ import annotations
 
 import html
@@ -40,8 +41,18 @@ _GRID_RE = re.compile(
     re.DOTALL,
 )
 _MONTHS = [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December",
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
 ]
 
 
@@ -69,22 +80,109 @@ def _parse_minimal_frontmatter(text: str) -> dict[str, str]:
         m = re.match(r'^([A-Za-z_][A-Za-z0-9_-]*)\s*:\s*"?(.*?)"?\s*$', line)
         if m:
             key, val = m.group(1), m.group(2)
-            if key in {"title", "banner", "banner_alt", "tags", "excerpt", "subtitle", "description"}:
+            if key in {
+                "title",
+                "banner",
+                "banner_alt",
+                "tags",
+                "excerpt",
+                "subtitle",
+                "description",
+            }:
                 out[key] = val
     return out
 
 
 _ACRONYMS = {
-    "AI", "AML", "API", "BIS", "BoE", "CBDC", "CBPR", "CSP", "CTO", "DLT",
-    "DORA", "DSS", "ECB", "EU", "EUR", "FCA", "FedNow", "FX", "G20", "G7",
-    "GDPR", "GENIUS", "GMT", "GBP", "HMRC", "HMT", "HM", "HSBC", "HSM",
-    "ICT", "IETF", "ISO", "JP", "JPM", "KYC", "LLM", "ML", "MPP", "MT",
-    "MTS", "MX", "NCSC", "NIS2", "NIST", "PIN", "PISP", "PoC", "PQC",
-    "PSP", "PSR", "PSU", "QKD", "RTGS", "RTP", "SaaS", "SEPA", "SFTP",
-    "SLA", "SWIFT", "SDX", "TIC", "TMS", "TLS", "T+0", "T+1", "T+2",
-    "UK", "UN", "US", "USD", "UX", "VC", "WCAG", "XML", "JSON-LD",
-    "PII", "JSON", "YAML", "TOML", "HTML", "CSS", "PWA", "BST", "UTC",
-    "USDC", "USDT", "BRSRV", "BSTBL", "MMF",
+    "AI",
+    "AML",
+    "API",
+    "BIS",
+    "BoE",
+    "CBDC",
+    "CBPR",
+    "CSP",
+    "CTO",
+    "DLT",
+    "DORA",
+    "DSS",
+    "ECB",
+    "EU",
+    "EUR",
+    "FCA",
+    "FedNow",
+    "FX",
+    "G20",
+    "G7",
+    "GDPR",
+    "GENIUS",
+    "GMT",
+    "GBP",
+    "HMRC",
+    "HMT",
+    "HM",
+    "HSBC",
+    "HSM",
+    "ICT",
+    "IETF",
+    "ISO",
+    "JP",
+    "JPM",
+    "KYC",
+    "LLM",
+    "ML",
+    "MPP",
+    "MT",
+    "MTS",
+    "MX",
+    "NCSC",
+    "NIS2",
+    "NIST",
+    "PIN",
+    "PISP",
+    "PoC",
+    "PQC",
+    "PSP",
+    "PSR",
+    "PSU",
+    "QKD",
+    "RTGS",
+    "RTP",
+    "SaaS",
+    "SEPA",
+    "SFTP",
+    "SLA",
+    "SWIFT",
+    "SDX",
+    "TIC",
+    "TMS",
+    "TLS",
+    "T+0",
+    "T+1",
+    "T+2",
+    "UK",
+    "UN",
+    "US",
+    "USD",
+    "UX",
+    "VC",
+    "WCAG",
+    "XML",
+    "JSON-LD",
+    "PII",
+    "JSON",
+    "YAML",
+    "TOML",
+    "HTML",
+    "CSS",
+    "PWA",
+    "BST",
+    "UTC",
+    "USDC",
+    "USDT",
+    "BRSRV",
+    "BSTBL",
+    "MMF",
 }
 
 
@@ -104,10 +202,7 @@ def _eyebrow_from_tags(tags: str) -> str:
     Mirrors gen_articles.py's convention but preserves acronyms (UK, AI,
     UX, BoE, …) instead of butchering them via ``.title()``."""
     parts = [t.strip() for t in tags.split(",") if t.strip()][:3]
-    return " · ".join(
-        " ".join(_smart_title(w) for w in p.split())
-        for p in parts
-    )
+    return " · ".join(" ".join(_smart_title(w) for w in p.split()) for p in parts)
 
 
 def _excerpt_for(fm: dict[str, str]) -> str:
@@ -135,14 +230,14 @@ def _render_card(slug: str, year: int, month: int, day: int, fm: dict[str, str])
         f'<article class="newsroom-card">\n'
         f'<a class="newsroom-card-media" href="{href}" title="{_esc(title)}">\n'
         f'<img alt="{_esc(banner_alt)}" src="{banner}" loading="lazy" decoding="async" width="600" height="600" />\n'
-        f'</a>\n'
+        f"</a>\n"
         f'<div class="newsroom-card-body">\n'
         f'<span class="newsroom-eyebrow">{_esc(eyebrow)}</span>\n'
         f'<h3><a href="{href}">{_esc(title)}</a></h3>\n'
         f'<p class="newsroom-meta"><time datetime="{date_iso}">{_display_date(year, month, day)}</time></p>\n'
         f'<p class="newsroom-excerpt">{_esc(excerpt)}</p>\n'
-        f'</div>\n'
-        f'</article>'
+        f"</div>\n"
+        f"</article>"
     )
 
 

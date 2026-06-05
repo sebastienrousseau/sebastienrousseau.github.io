@@ -1,11 +1,11 @@
 {
   "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
+  "banner_alt": "Творча ілюстрація на тему квантових обчислень",
+  "date": "Oct 16, 2023",
   "language": "uk-UA",
+  "subtitle": "HSH: квантово-стійка хеш-бібліотека для пост-квантової ери автентифікації.",
   "keywords": "квантово-стійка криптографія, пост-квантова криптографія, хеш-бібліотека, HSH, хешування паролів, виведення ключів, Argon2i, Bcrypt, Scrypt, квантові обчислення",
   "locale": "uk_UA",
-  "title": "[UK DRAFT] Protecting Data in the Quantum Age: The Hash Library (HSH)",
-  "banner_alt": "Творча ілюстрація на тему квантових обчислень",
   "description": "HSH використовує квантово-стійкі криптографічні примітиви для захисту ваших даних, гарантуючи їхню безпеку навіть в умовах майбутніх досягнень квантових обчислень.",
-  "subtitle": "HSH: квантово-стійка хеш-бібліотека для пост-квантової ери автентифікації.",
-  "date": "Oct 16, 2023"
+  "title": "[UK DRAFT] Protecting Data in the Quantum Age: The Hash Library (HSH)"
 }

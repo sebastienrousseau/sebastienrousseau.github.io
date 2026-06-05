@@ -11,6 +11,7 @@ mutating side-effects (sigstore_sign on a real key), or known-slow
 behaviour (build_translations on 27 languages) are wrapped with
 ``pytest.skip`` guards so they don't slow the suite unnecessarily.
 """
+
 from __future__ import annotations
 
 import contextlib

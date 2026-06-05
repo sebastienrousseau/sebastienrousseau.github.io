@@ -20,6 +20,7 @@ Plus the lang/slug helpers used by the hreflang pass:
 Pure functions over HTML strings; module-level state is regex
 constants + author identity constants only.
 """
+
 from __future__ import annotations
 
 import re
@@ -45,13 +46,34 @@ PUBLIC = Path("public")
 
 # Domains we accept as primary-source citations for AI grounding.
 CITATION_AUTHORITIES = (
-    "iso20022.org", "swift.com", "iso.org", "ietf.org", "w3.org",
-    "nist.gov", "csrc.nist.gov", "bis.org", "ecb.europa.eu", "imf.org",
-    "wikipedia.org", "wikidata.org",
-    "arxiv.org", "ieee.org", "acm.org", "doi.org",
-    "blackrock.com", "sec.gov", "treasury.gov", "ofac.treasury.gov",
-    "hsbc.com", "jpmorgan.com", "santander.com", "bmo.com",
-    "google.com", "openai.com", "anthropic.com", "deepmind.com",
+    "iso20022.org",
+    "swift.com",
+    "iso.org",
+    "ietf.org",
+    "w3.org",
+    "nist.gov",
+    "csrc.nist.gov",
+    "bis.org",
+    "ecb.europa.eu",
+    "imf.org",
+    "wikipedia.org",
+    "wikidata.org",
+    "arxiv.org",
+    "ieee.org",
+    "acm.org",
+    "doi.org",
+    "blackrock.com",
+    "sec.gov",
+    "treasury.gov",
+    "ofac.treasury.gov",
+    "hsbc.com",
+    "jpmorgan.com",
+    "santander.com",
+    "bmo.com",
+    "google.com",
+    "openai.com",
+    "anthropic.com",
+    "deepmind.com",
     "github.com",
     "emergingpaymentsasia.org",
 )
@@ -75,7 +97,7 @@ _BLOGPOSTING_DATES_RE = re.compile(
 _WORDCOUNT_RE = re.compile(r'"wordCount":(\d+)')
 _HEADING_RE = re.compile(r'<(h[23])(?:\s+id="[^"]*")?>([\s\S]*?)</\1>', re.IGNORECASE)
 _OUTBOUND_LINK_RE = re.compile(r'<a\b[^>]*\bhref="(https?://[^"]+)"', re.IGNORECASE)
-_DATED_SLUG_RE = re.compile(r'^(\d{4}-\d{2}-\d{2})-')
+_DATED_SLUG_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})-")
 _H1_RE = re.compile(r'<section class="ap-hero">\s*<h1>([^<]+)</h1>', re.IGNORECASE)
 _HTML_LANG_DETECT_RE = re.compile(r'<html\b[^>]*\blang="([^"]+)"', re.IGNORECASE)
 
@@ -154,6 +176,7 @@ def _labels(html: str) -> dict[str, str]:
 
 def slugify(s: str) -> str:
     import unicodedata as _ud
+
     s = re.sub(r"<[^>]+>", "", s).strip().lower()
     s = re.sub(r"&[a-z0-9#]+;", " ", s)
     # Fold accented letters to ASCII so "Références" -> "references", not
@@ -166,8 +189,18 @@ def slugify(s: str) -> str:
 
 
 _FR_MONTHS = {
-    1: "janv.", 2: "févr.", 3: "mars", 4: "avr.", 5: "mai", 6: "juin",
-    7: "juil.", 8: "août", 9: "sept.", 10: "oct.", 11: "nov.", 12: "déc.",
+    1: "janv.",
+    2: "févr.",
+    3: "mars",
+    4: "avr.",
+    5: "mai",
+    6: "juin",
+    7: "juil.",
+    8: "août",
+    9: "sept.",
+    10: "oct.",
+    11: "nov.",
+    12: "déc.",
 }
 
 
@@ -177,6 +210,7 @@ def _fmt_date(iso_or_rfc: str, french: bool = False) -> str:
     parse failure."""
     iso_or_rfc = iso_or_rfc.strip()
     from datetime import datetime as _dt
+
     for fmt in (
         "%Y-%m-%dT%H:%M:%S%z",
         "%Y-%m-%dT%H:%M:%S.%f%z",
@@ -206,19 +240,18 @@ def _render_tag_badges(keywords: list[str], labels: dict[str, str], lang: str = 
     return f'<nav class="article-tags" aria-label="{aria}">{badges}</nav>'
 
 
-def _render_meta_bar(date_pub: str, date_mod: str, word_count: int | None, labels: dict[str, str], lang: str = "en") -> str:
+def _render_meta_bar(
+    date_pub: str, date_mod: str, word_count: int | None, labels: dict[str, str], lang: str = "en"
+) -> str:
     parts: list[str] = []
     french = labels is LABELS_FR
     author_url = "/fr/a-propos/index.html" if lang == "fr" else AUTHOR_URL
-    alt_text = (
-        f"Portrait de {AUTHOR_NAME}" if lang == "fr"
-        else f"Portrait of {AUTHOR_NAME}"
-    )
+    alt_text = f"Portrait de {AUTHOR_NAME}" if lang == "fr" else f"Portrait of {AUTHOR_NAME}"
     parts.append(
         f'<a href="{author_url}" class="article-author" rel="author">'
         f'<img alt="{alt_text}" src="{AUTHOR_AVATAR}" '
         f'width="36" height="36" loading="lazy" decoding="async" />'
-        f'<span>{AUTHOR_NAME}</span></a>'
+        f"<span>{AUTHOR_NAME}</span></a>"
     )
     if date_pub:
         parts.append(
@@ -239,7 +272,9 @@ def _render_meta_bar(date_pub: str, date_mod: str, word_count: int | None, label
             f'<span class="meta-read" aria-label="{labels["Estimated read time"]}">'
             f'{read_min} {labels["min read"]}</span>'
         )
-    return '<div class="article-meta">' + ' <span aria-hidden="true">·</span> '.join(parts) + '</div>'
+    return (
+        '<div class="article-meta">' + ' <span aria-hidden="true">·</span> '.join(parts) + "</div>"
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -254,7 +289,7 @@ def _render_meta_bar(date_pub: str, date_mod: str, word_count: int | None, label
 # verify command so any reader can confirm the page bytes match what
 # the author signed.
 
-_SIGSTORE_CONFIG_PRESENT: bool = (Path("_data/sigstore/config.json").is_file())
+_SIGSTORE_CONFIG_PRESENT: bool = Path("_data/sigstore/config.json").is_file()
 
 
 def inject_sigstore_attestation(html: str, slug: str) -> str:
@@ -272,16 +307,17 @@ def inject_sigstore_attestation(html: str, slug: str) -> str:
     is_fr = _is_french(html)
     label = (
         "Signature Sigstore · vérifiable avec cosign"
-        if is_fr else "Sigstore signature · verifiable with cosign"
+        if is_fr
+        else "Sigstore signature · verifiable with cosign"
     )
     badge = (
         f'<aside class="article-sigstore" aria-label="{label}">'
         f'<a href="/sigstore/{slug}.bundle" rel="external" '
         f'type="application/vnd.dev.sigstore.bundle+json">'
-        f'🔏 {label}</a></aside>'
+        f"🔏 {label}</a></aside>"
     )
     # Insert just before the existing article furniture's end-of-main.
-    return re.sub(r'(</main>)', badge + r'\1', html, count=1)
+    return re.sub(r"(</main>)", badge + r"\1", html, count=1)
 
 
 def _extract_article_metadata(html: str) -> tuple[list[str], str, str, int | None]:
@@ -312,30 +348,33 @@ def inject_article_furniture(html: str) -> str:
     keywords, date_pub, date_mod, word_count = _extract_article_metadata(html)
     labels = _labels(html)
     lang = "fr" if _is_french(html) else "en"
-    fragment = (
-        _render_tag_badges(keywords, labels, lang)
-        + _render_meta_bar(date_pub, date_mod, word_count, labels, lang)
+    fragment = _render_tag_badges(keywords, labels, lang) + _render_meta_bar(
+        date_pub, date_mod, word_count, labels, lang
     )
     if not fragment:
         return html
-    return _HERO_RE.sub(rf'\1{fragment}\2', html, count=1)
+    return _HERO_RE.sub(rf"\1{fragment}\2", html, count=1)
 
 
 _OG_IMAGE_RE = re.compile(
-    r'<meta\s+property="og:image"\s+content="([^"]+)"', re.IGNORECASE,
+    r'<meta\s+property="og:image"\s+content="([^"]+)"',
+    re.IGNORECASE,
 )
 _OG_IMAGE_ALT_RE = re.compile(
     r'<meta\s+(?:property|name)="og:image:alt"\s+content="([^"]+)"',
     re.IGNORECASE,
 )
 _BANNER_ALT_FRONTMATTER_RE = re.compile(
-    r'<meta\s+name="twitter:image:alt"\s+content="([^"]+)"', re.IGNORECASE,
+    r'<meta\s+name="twitter:image:alt"\s+content="([^"]+)"',
+    re.IGNORECASE,
 )
 _OG_IMAGE_WIDTH_RE = re.compile(
-    r'<meta\s+property="og:image:width"\s+content="(\d+)"', re.IGNORECASE,
+    r'<meta\s+property="og:image:width"\s+content="(\d+)"',
+    re.IGNORECASE,
 )
 _OG_IMAGE_HEIGHT_RE = re.compile(
-    r'<meta\s+property="og:image:height"\s+content="(\d+)"', re.IGNORECASE,
+    r'<meta\s+property="og:image:height"\s+content="(\d+)"',
+    re.IGNORECASE,
 )
 # Fallback dimensions when the page has no og:image:width / og:image:height
 # meta tags. Picked at 16:9 because that's the canonical hero aspect for
@@ -373,7 +412,7 @@ def _banner_dimensions(html: str) -> tuple[int, int]:
 def _banner_path(banner_url: str) -> str | None:
     """Return the on-CDN path component (e.g. ``/stocks/images/foo.webp``)
     of a banner URL, or ``None`` if the URL has no extractable path."""
-    m = re.match(r'https?://[^/]+(/[^?#]+)', banner_url)
+    m = re.match(r"https?://[^/]+(/[^?#]+)", banner_url)
     return m.group(1) if m else None
 
 
@@ -402,7 +441,7 @@ def strip_legacy_inline_banner(html: str, banner_url: str) -> str:
     if og_path is None:
         return html
     # Anchor: the close of the auto-injected article-banner figure.
-    anchor = re.search(r'</figure>', html, re.IGNORECASE)
+    anchor = re.search(r"</figure>", html, re.IGNORECASE)
     if not anchor:
         return html
     # Look at the first ~4 KB after </figure> for a `<p><img …></p>`
@@ -410,10 +449,11 @@ def strip_legacy_inline_banner(html: str, banner_url: str) -> str:
     # asides come in between but are easy to skip — they're `<aside>`
     # tags that the regex skips over.
     start = anchor.end()
-    window = html[start: start + 4000]
+    window = html[start : start + 4000]
     m = re.search(
         r'<p>\s*<img\b[^>]*\bsrc="([^"]+)"[^>]*>\s*</p>',
-        window, re.IGNORECASE,
+        window,
+        re.IGNORECASE,
     )
     if not m or og_path not in m.group(1):
         return html
@@ -464,14 +504,16 @@ def inject_hero_banner(html: str) -> str:
         f'<img src="{banner_url}" alt="{alt_text}" '
         f'width="{banner_width}" height="{banner_height}" '
         f'fetchpriority="high" decoding="async" />'
-        f'</figure>'
+        f"</figure>"
     )
     # Insert immediately after the closing </section> of the ap-hero block.
     # Same anchor _LANG_SWITCH_INSERT_RE uses, but we run BEFORE the lang
     # switcher so its insertion sees the banner already in place and slots
     # the langswitch aside after the banner.
     new_html, n = _HERO_BANNER_INSERT_RE.subn(
-        lambda m: f'{m.group(1)}{figure}{m.group(2)}', html, count=1,
+        lambda m: f"{m.group(1)}{figure}{m.group(2)}",
+        html,
+        count=1,
     )
     if not n:
         return html
@@ -549,8 +591,8 @@ def inject_anchor_links_and_toc(html: str) -> str:
         # guard makes this defensive rather than hot-path — kept so
         # narrow regression cases (e.g. tests that hand-craft a partial
         # state) still degrade safely.
-        clean_inner = _HEADING_ANCHOR_RE.sub('', inner)
-        text = re.sub(r'<[^>]+>', '', clean_inner).strip()
+        clean_inner = _HEADING_ANCHOR_RE.sub("", inner)
+        text = re.sub(r"<[^>]+>", "", clean_inner).strip()
         if not text:
             return hm.group(0)
         slug = _unique(slugify(text), heading_idx)
@@ -565,20 +607,17 @@ def inject_anchor_links_and_toc(html: str) -> str:
     new_body = _HEADING_RE.sub(patch_heading, body)
     toc_html = ""
     if len(h2_titles) >= 5:
-        items = "".join(
-            f'<li><a href="#{slug}">{text}</a></li>' for slug, text in h2_titles
-        )
+        items = "".join(f'<li><a href="#{slug}">{text}</a></li>' for slug, text in h2_titles)
         toc_html = (
             f'<aside class="article-toc" aria-label="{labels["Table of contents"]}">'
             f'<h2>{labels["Contents"]}</h2>'
             f'<ol>{items}</ol></aside>'
         )
-    return html[: m.start()] + pre + toc_html + new_body + post + html[m.end():]
+    return html[: m.start()] + pre + toc_html + new_body + post + html[m.end() :]
 
 
 _BODY_H1_RE = re.compile(
-    r'(<main\b[^>]*>\s*<div class="wrap[^"]*">[\s\S]*?'
-    r'(?:</aside>\s*)*)<h1>([^<]+)</h1>\s*',
+    r'(<main\b[^>]*>\s*<div class="wrap[^"]*">[\s\S]*?' r"(?:</aside>\s*)*)<h1>([^<]+)</h1>\s*",
     re.IGNORECASE,
 )
 
@@ -604,9 +643,7 @@ def strip_duplicate_body_h1(html: str) -> str:
         return html
     hero_text = _html_unescape(hero_m.group(1)).strip()
     new_html, n = _BODY_H1_RE.subn(
-        lambda m: m.group(1)
-        if _html_unescape(m.group(2)).strip() == hero_text
-        else m.group(0),
+        lambda m: m.group(1) if _html_unescape(m.group(2)).strip() == hero_text else m.group(0),
         html,
         count=1,
     )
@@ -617,6 +654,7 @@ def _html_unescape(s: str) -> str:
     """Local indirection so the strip-duplicate-H1 helper can mock if
     needed without polluting the module-level ``html`` alias."""
     import html as _h
+
     return _h.unescape(s)
 
 
@@ -634,7 +672,7 @@ def _extract_citations(html: str) -> list[dict[str, str]]:
     main_m = _MAIN_RE.search(html)
     if not main_m:
         return []
-    body = _NON_BODY_ASIDE_RE.sub('', main_m.group(2))
+    body = _NON_BODY_ASIDE_RE.sub("", main_m.group(2))
     seen: set[str] = set()
     out: list[dict[str, str]] = []
     for lm in _OUTBOUND_LINK_RE.finditer(body):
@@ -651,7 +689,9 @@ def _extract_citations(html: str) -> list[dict[str, str]]:
     return out
 
 
-def build_post_nav_index(pages: list[Path]) -> dict[str, tuple[tuple[str, str] | None, tuple[str, str] | None]]:
+def build_post_nav_index(
+    pages: list[Path],
+) -> dict[str, tuple[tuple[str, str] | None, tuple[str, str] | None]]:
     """Build a slug -> (prev, next) lookup over every dated post in pages.
 
     A dated post is one whose parent directory name matches ``YYYY-MM-DD-…``.
@@ -708,9 +748,9 @@ def build_fr_title_index(pages: list[Path]) -> dict[str, str]:
 
 _FAQ_H2_RE = re.compile(
     r'<h2 id="(frequently-asked-questions|foire-aux-questions)"[^>]*>'
-    r'([\s\S]+?)</h2>'
-    r'([\s\S]+?)'
-    r'(?=<h2|<aside|</main>|<hr|<footer)',
+    r"([\s\S]+?)</h2>"
+    r"([\s\S]+?)"
+    r"(?=<h2|<aside|</main>|<hr|<footer)",
 )
 
 
@@ -732,14 +772,13 @@ def _convert_faq_to_qa(html: str) -> str:
         # Capture Q + multiple following <p>…</p> until next <p><strong>...?</strong></p>.
         # Build a list of P-segments first, then pair Q with the answer chunk.
         segments: list[str] = [
-            sm.group(1).strip()
-            for sm in re.finditer(r'<p>([\s\S]*?)</p>', body)
+            sm.group(1).strip() for sm in re.finditer(r"<p>([\s\S]*?)</p>", body)
         ]
         i = 0
         while i < len(segments):
             seg = segments[i]
             # Q heuristic: starts with <strong> and ends with ? (or French ?)
-            qm = re.match(r'^<strong>([\s\S]+?)</strong>\s*$', seg)
+            qm = re.match(r"^<strong>([\s\S]+?)</strong>\s*$", seg)
             if qm:
                 question = qm.group(1).strip()
                 # Collect answer paragraphs until next strong-only paragraph
@@ -747,7 +786,7 @@ def _convert_faq_to_qa(html: str) -> str:
                 j = i + 1
                 while j < len(segments):
                     nxt = segments[j]
-                    if re.match(r'^<strong>[\s\S]+?</strong>\s*$', nxt):
+                    if re.match(r"^<strong>[\s\S]+?</strong>\s*$", nxt):
                         break
                     ans_parts.append(nxt)
                     j += 1
@@ -769,7 +808,7 @@ def _convert_faq_to_qa(html: str) -> str:
                 f'<details class="qa-item" open><summary class="qa-q">{q}</summary>'
                 f'<section class="qa-a"><p>{a}</p></section></details>'
             )
-        out_parts.append('</section>')
+        out_parts.append("</section>")
         return "".join(out_parts)
 
     return _FAQ_H2_RE.sub(patch, html)
@@ -828,22 +867,22 @@ def inject_nav_active(html: str, page: Path) -> str:
         return html
 
     # Always clear any pre-existing active markers in the header first.
-    header_m = re.search(r'<header\b[^>]*>([\s\S]*?)</header>', html, re.IGNORECASE)
+    header_m = re.search(r"<header\b[^>]*>([\s\S]*?)</header>", html, re.IGNORECASE)
     if not header_m:
         return html
     header_body = header_m.group(1)
-    header_clean = re.sub(r'\s+aria-current=["\']?[^"\'>]+["\']?', '', header_body)
-    header_clean = re.sub(r'(<a\b[^>]*?)\s+class=["\']?active["\']?', r'\1', header_clean)
+    header_clean = re.sub(r'\s+aria-current=["\']?[^"\'>]+["\']?', "", header_body)
+    header_clean = re.sub(r'(<a\b[^>]*?)\s+class=["\']?active["\']?', r"\1", header_clean)
 
     pat = re.compile(
-        r'(<a\s+(?:[^>]*?)href=["\']?)('
-        + re.escape(target)
-        + r')(["\']?)([^>]*>)',
+        r'(<a\s+(?:[^>]*?)href=["\']?)(' + re.escape(target) + r')(["\']?)([^>]*>)',
         re.IGNORECASE,
     )
 
     def repl(m: re.Match[str]) -> str:
-        return f'{m.group(1)}{m.group(2)}{m.group(3)} aria-current="page" class="active"{m.group(4)}'
+        return (
+            f'{m.group(1)}{m.group(2)}{m.group(3)} aria-current="page" class="active"{m.group(4)}'
+        )
 
     new_body = pat.sub(repl, header_clean, count=1)
     open_tag = header_m.group(0)[: header_m.group(0).index(">") + 1]
@@ -901,7 +940,7 @@ def inject_prev_next_nav(
             f'<a class="post-pagination-{direction}" href="{href}">'
             f'<span class="post-pagination-label">{label}</span>'
             f'<span class="post-pagination-title">{t}</span>'
-            f'</a>'
+            f"</a>"
         )
 
     inner = render(prev_e, "prev", labels["Previous"]) + render(next_e, "next", labels["Next"])
@@ -914,8 +953,8 @@ def inject_prev_next_nav(
     # sigstore has run. Without this, translated pages with sigstore bundles
     # silently lost prev/next nav.
     patched = re.sub(
-        r'(</div>)(\s*(?:<aside\b[^>]*>[\s\S]*?</aside>\s*)*</main>)',
-        nav + r'\1\2',
+        r"(</div>)(\s*(?:<aside\b[^>]*>[\s\S]*?</aside>\s*)*</main>)",
+        nav + r"\1\2",
         html,
         count=1,
     )
@@ -932,11 +971,12 @@ def inject_citations(html: str) -> str:
     if not cites:
         return html
     import json as _json
+
     fragment = ',"citation":' + _json.dumps(cites, separators=(",", ":"))
     # Insert just before the "speakable" key in the BlogPosting object.
     return re.sub(
         r'(,"speakable":)',
-        fragment + r'\1',
+        fragment + r"\1",
         html,
         count=1,
     )
@@ -964,14 +1004,14 @@ def inject_mermaid(html: str) -> str:
     so main.js can lazy-load the Mermaid library and render them. Also
     widens the meta-CSP script-src to allow the cdn.jsdelivr.net import,
     but only on pages that actually contain a Mermaid block."""
-    if 'language-mermaid' not in html:
+    if "language-mermaid" not in html:
         return html
     import html as _h
 
     def replace(m: re.Match[str]) -> str:
         # Strip <span> wrappers a syntax highlighter may have added,
         # then unescape entities — Mermaid wants the raw source.
-        inner = re.sub(r'<[^>]+>', '', m.group(1))
+        inner = re.sub(r"<[^>]+>", "", m.group(1))
         return f'<pre class="mermaid">{_h.escape(_h.unescape(inner))}</pre>'
 
     new_html = _MERMAID_BLOCK_RE.sub(replace, html)
@@ -1022,7 +1062,7 @@ def inject_sources_list(html: str) -> str:
             f'<li><a href="{url}" rel="external noopener nofollow">'
             f'<span class="source-host">{host}</span>'
             f'<span class="source-path">{display}</span>'
-            f'</a></li>'
+            f"</a></li>"
         )
     heading = _labels(html)["Sources & references"]
     fragment = (
@@ -1034,11 +1074,11 @@ def inject_sources_list(html: str) -> str:
     # Insert before the prev/next nav if it's already there, else before
     # the closing </div></main>.
     if 'class="post-pagination"' in html:
-        return re.sub(r'(<nav class="post-pagination")', fragment + r'\1', html, count=1)
-    return re.sub(r'(</div>\s*</main>)', fragment + r'\1', html, count=1)
+        return re.sub(r'(<nav class="post-pagination")', fragment + r"\1", html, count=1)
+    return re.sub(r"(</div>\s*</main>)", fragment + r"\1", html, count=1)
 
 
-_HEAD_END_RE = re.compile(r'</head>', re.IGNORECASE)
+_HEAD_END_RE = re.compile(r"</head>", re.IGNORECASE)
 # Match a <link rel="alternate" hreflang=…> tag with any attribute order
 # and either HTML5 (``>``) or XHTML (``/>``) self-close. The previous form
 # required ``[^/]*/>`` which can never match real URLs (every ``https://``
@@ -1066,10 +1106,10 @@ SPECULATION_RULES_BLOCK = (
     '{"not":{"href_matches":"/sw.js"}},'
     '{"not":{"href_matches":"/contact/*"}},'
     '{"not":{"href_matches":"/fr/contact/*"}}'
-    ']},'
+    "]},"
     '"eagerness":"moderate"'
-    '}]}'
-    '</script>'
+    "}]}"
+    "</script>"
 )
 
 
@@ -1077,7 +1117,7 @@ _BODY_LINK_STYLESHEET_RE = re.compile(
     r'<link\b[^>]*\brel=(?:"stylesheet"|stylesheet)[^>]*>',
     re.IGNORECASE,
 )
-_BODY_END_RE = re.compile(r'</head>', re.IGNORECASE)
+_BODY_END_RE = re.compile(r"</head>", re.IGNORECASE)
 
 
 def _sanitize_link_tag(tag: str) -> str:
@@ -1089,7 +1129,8 @@ def _sanitize_link_tag(tag: str) -> str:
     # Collapse any duplicate `crossorigin="anonymous"` runs into one.
     tag = re.sub(
         r'(crossorigin="anonymous")(\s+crossorigin="anonymous")+',
-        r'\1', tag,
+        r"\1",
+        tag,
     )
     # Remove a trailing `"` immediately before the closing `>`.
     tag = re.sub(r'""(\s*/?>)', r'"\1', tag)
@@ -1118,7 +1159,7 @@ def hoist_body_link_stylesheets(html: str) -> tuple[str, int]:
     new_body = body
     for m in reversed(matches):
         extracted.insert(0, _sanitize_link_tag(m.group(0)))
-        new_body = new_body[:m.start()] + new_body[m.end():]
+        new_body = new_body[: m.start()] + new_body[m.end() :]
     return head + "".join(extracted) + new_body, len(extracted)
 
 
@@ -1126,9 +1167,7 @@ def inject_speculation_rules(html: str) -> str:
     """Inject the Speculation Rules API block before </head>. Idempotent."""
     if 'type="speculationrules"' in html:
         return html
-    return _HEAD_END_RE.sub(SPECULATION_RULES_BLOCK + '</head>', html, count=1)
-
-
+    return _HEAD_END_RE.sub(SPECULATION_RULES_BLOCK + "</head>", html, count=1)
 
 
 # ---------------------------------------------------------------------------
@@ -1198,10 +1237,7 @@ def _resolve_en_slug(slug: str, lang: str) -> str | None:
     if lang == "en":
         return slug
     maps = _slug_maps(lang)
-    return (
-        maps["articles_lang_to_en"].get(slug)
-        or maps["statics_lang_to_en"].get(slug)
-    )
+    return maps["articles_lang_to_en"].get(slug) or maps["statics_lang_to_en"].get(slug)
 
 
 def _alternates_for_en_slug(
@@ -1215,9 +1251,8 @@ def _alternates_for_en_slug(
     ]
     for code in _all_active_non_en_langs():
         maps = _slug_maps(code)
-        lang_slug = (
-            maps["articles_en_to_lang"].get(en_slug)
-            or maps["statics_en_to_lang"].get(en_slug)
+        lang_slug = maps["articles_en_to_lang"].get(en_slug) or maps["statics_en_to_lang"].get(
+            en_slug
         )
         if not lang_slug:
             continue
@@ -1233,44 +1268,67 @@ def _alternates_for_en_slug(
 # <aside> wrapper. Translations match the editorial register used elsewhere
 # on the site — sub-agents that touch this file should not paraphrase.
 _LANG_SWITCH_STRINGS: dict[str, tuple[str, str]] = {
-    "en":      ("This post is also available in",            "Available languages"),
-    "fr":      ("Cet article est aussi disponible en",       "Langues disponibles"),
-    "es":      ("Este artículo también está disponible en",  "Idiomas disponibles"),
-    "de":      ("Dieser Artikel ist auch verfügbar auf",     "Verfügbare Sprachen"),
-    "it":      ("Questo articolo è disponibile anche in",    "Lingue disponibili"),
-    "pt-br":   ("Este artigo também está disponível em",     "Idiomas disponíveis"),
-    "nl":      ("Dit artikel is ook beschikbaar in",         "Beschikbare talen"),
-    "ja":      ("この記事は次の言語でもご覧いただけます",          "対応言語"),
-    "zh-hans": ("本文亦提供以下语言版本",                          "可用语言"),
-    "zh-hant": ("本文亦提供以下語言版本",                          "可用語言"),
-    "ko":      ("이 글은 다음 언어로도 제공됩니다",                  "지원 언어"),
-    "ar":      ("هذه المقالة متوفرة أيضًا باللغات",                "اللغات المتوفرة"),
-    "ru":      ("Эта статья также доступна на",              "Доступные языки"),
-    "pl":      ("Ten artykuł jest również dostępny w",       "Dostępne języki"),
-    "cs":      ("Tento článek je k dispozici také v",        "Dostupné jazyky"),
-    "uk":      ("Ця стаття також доступна",                  "Доступні мови"),
-    "ro":      ("Acest articol este disponibil și în",       "Limbi disponibile"),
-    "tr":      ("Bu makale şu dillerde de mevcuttur",        "Mevcut diller"),
-    "he":      ("מאמר זה זמין גם בשפות",                       "שפות זמינות"),
-    "hi":      ("यह लेख इन भाषाओं में भी उपलब्ध है",                 "उपलब्ध भाषाएँ"),
-    "bn":      ("এই নিবন্ধটি এই ভাষাগুলিতেও উপলব্ধ",                "উপলব্ধ ভাষাসমূহ"),
-    "id":      ("Artikel ini juga tersedia dalam",           "Bahasa yang tersedia"),
-    "vi":      ("Bài viết này cũng có sẵn bằng",             "Ngôn ngữ có sẵn"),
-    "th":      ("บทความนี้มีให้ในภาษาต่อไปนี้ด้วย",                  "ภาษาที่ใช้ได้"),
-    "fil":     ("Available rin ang artikulong ito sa",       "Mga available na wika"),
-    "ha":      ("Wannan labarin yana samuwa kuma a cikin",   "Harsunan da ake samu"),
-    "yo":      ("Àpilẹ̀kọ yìí tún wà ní",                       "Àwọn èdè tó wà"),
-    "sv":      ("Den här artikeln finns även på",            "Tillgängliga språk"),
+    "en": ("This post is also available in", "Available languages"),
+    "fr": ("Cet article est aussi disponible en", "Langues disponibles"),
+    "es": ("Este artículo también está disponible en", "Idiomas disponibles"),
+    "de": ("Dieser Artikel ist auch verfügbar auf", "Verfügbare Sprachen"),
+    "it": ("Questo articolo è disponibile anche in", "Lingue disponibili"),
+    "pt-br": ("Este artigo também está disponível em", "Idiomas disponíveis"),
+    "nl": ("Dit artikel is ook beschikbaar in", "Beschikbare talen"),
+    "ja": ("この記事は次の言語でもご覧いただけます", "対応言語"),
+    "zh-hans": ("本文亦提供以下语言版本", "可用语言"),
+    "zh-hant": ("本文亦提供以下語言版本", "可用語言"),
+    "ko": ("이 글은 다음 언어로도 제공됩니다", "지원 언어"),
+    "ar": ("هذه المقالة متوفرة أيضًا باللغات", "اللغات المتوفرة"),
+    "ru": ("Эта статья также доступна на", "Доступные языки"),
+    "pl": ("Ten artykuł jest również dostępny w", "Dostępne języki"),
+    "cs": ("Tento článek je k dispozici také v", "Dostupné jazyky"),
+    "uk": ("Ця стаття також доступна", "Доступні мови"),
+    "ro": ("Acest articol este disponibil și în", "Limbi disponibile"),
+    "tr": ("Bu makale şu dillerde de mevcuttur", "Mevcut diller"),
+    "he": ("מאמר זה זמין גם בשפות", "שפות זמינות"),
+    "hi": ("यह लेख इन भाषाओं में भी उपलब्ध है", "उपलब्ध भाषाएँ"),
+    "bn": ("এই নিবন্ধটি এই ভাষাগুলিতেও উপলব্ধ", "উপলব্ধ ভাষাসমূহ"),
+    "id": ("Artikel ini juga tersedia dalam", "Bahasa yang tersedia"),
+    "vi": ("Bài viết này cũng có sẵn bằng", "Ngôn ngữ có sẵn"),
+    "th": ("บทความนี้มีให้ในภาษาต่อไปนี้ด้วย", "ภาษาที่ใช้ได้"),
+    "fil": ("Available rin ang artikulong ito sa", "Mga available na wika"),
+    "ha": ("Wannan labarin yana samuwa kuma a cikin", "Harsunan da ake samu"),
+    "yo": ("Àpilẹ̀kọ yìí tún wà ní", "Àwọn èdè tó wà"),
+    "sv": ("Den här artikeln finns även på", "Tillgängliga språk"),
 }
 
 # Curated rendering order — high-distribution markets first, then alphabetical
 # by code for the long tail. Matches the publish-today dispatch order so the
 # language rail visually mirrors the translation pipeline's priority.
 _LANG_SWITCH_ORDER: tuple[str, ...] = (
-    "fr", "es", "de", "it", "pt-br", "nl",
-    "ja", "zh-hans", "zh-hant", "ko",
-    "ar", "ru", "pl", "cs", "uk", "ro", "tr", "he",
-    "hi", "bn", "id", "vi", "th", "fil", "ha", "yo", "sv",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt-br",
+    "nl",
+    "ja",
+    "zh-hans",
+    "zh-hant",
+    "ko",
+    "ar",
+    "ru",
+    "pl",
+    "cs",
+    "uk",
+    "ro",
+    "tr",
+    "he",
+    "hi",
+    "bn",
+    "id",
+    "vi",
+    "th",
+    "fil",
+    "ha",
+    "yo",
+    "sv",
     "en",
 )
 
@@ -1279,18 +1337,19 @@ _LANG_SWITCH_ORDER: tuple[str, ...] = (
 # distinct band above the body — not competing with tag badges + meta bar
 # inside the hero, not buried below the lead aside.
 _LANG_SWITCH_INSERT_RE = re.compile(
-    r'(</section>)(\s*<main\b)',
+    r"(</section>)(\s*<main\b)",
     re.IGNORECASE,
 )
 
 
 def _render_lang_switch_item(
-    code: str, href: str,
+    code: str,
+    href: str,
 ) -> str:
     """One <li><a> for the lang rail. Sets lang + hreflang + dir=rtl when
     appropriate so screen readers pronounce the native label correctly."""
     lang_obj = _lr.get(code)
-    rtl_attr = ' dir="rtl"' if lang_obj.rtl else ''
+    rtl_attr = ' dir="rtl"' if lang_obj.rtl else ""
     return (
         f'<li><a href="{href}" lang="{lang_obj.bcp47}" hreflang="{lang_obj.bcp47}"'
         f' rel="alternate"{rtl_attr}>{lang_obj.long_label}</a></li>'
@@ -1298,21 +1357,17 @@ def _render_lang_switch_item(
 
 
 def _lang_switch_others(
-    en_slug: str, lang: str,
+    en_slug: str,
+    lang: str,
     translated_per_lang: dict[str, set[str]],
 ) -> list[tuple[str, str]]:
     """Return ``[(code, relative_href), …]`` for every locale this article
     is available in, excluding the current page's lang, in the
     :data:`_LANG_SWITCH_ORDER` priority order."""
     alts = _alternates_for_en_slug(en_slug, translated_per_lang)
-    by_code = {
-        code: url.replace("https://sebastienrousseau.com", "", 1)
-        for code, url in alts
-    }
+    by_code = {code: url.replace("https://sebastienrousseau.com", "", 1) for code, url in alts}
     return [
-        (code, by_code[code])
-        for code in _LANG_SWITCH_ORDER
-        if code in by_code and code != lang
+        (code, by_code[code]) for code in _LANG_SWITCH_ORDER if code in by_code and code != lang
     ]
 
 
@@ -1346,18 +1401,21 @@ def inject_lang_switcher(
         return html
 
     lead_text, aria_label = _LANG_SWITCH_STRINGS.get(
-        lang, _LANG_SWITCH_STRINGS["en"],
+        lang,
+        _LANG_SWITCH_STRINGS["en"],
     )
     items = "".join(_render_lang_switch_item(c, h) for c, h in others)
     aside = (
         f'<aside class="article-langswitch" aria-label="{aria_label}">'
         f'<span class="article-langswitch-lead">{lead_text}</span> '
         f'<ul class="article-langswitch-list">{items}</ul>'
-        f'</aside>'
+        f"</aside>"
     )
 
     new_html, n = _LANG_SWITCH_INSERT_RE.subn(
-        lambda m: f'{m.group(1)}{aside}{m.group(2)}', html, count=1,
+        lambda m: f"{m.group(1)}{aside}{m.group(2)}",
+        html,
+        count=1,
     )
     return new_html if n else html
 
@@ -1384,10 +1442,9 @@ def inject_hreflang(
     if len(alts) < 2:
         return html
     en_url = alts[0][1]
-    html = _HREFLANG_RE.sub('', html)
-    links = ''.join(
-        f'<link rel="alternate" hreflang="{code}" href="{url}" />'
-        for code, url in alts
+    html = _HREFLANG_RE.sub("", html)
+    links = "".join(
+        f'<link rel="alternate" hreflang="{code}" href="{url}" />' for code, url in alts
     )
     links += f'<link rel="alternate" hreflang="x-default" href="{en_url}" />'
-    return _HEAD_END_RE.sub(links + '</head>', html, count=1)
+    return _HEAD_END_RE.sub(links + "</head>", html, count=1)

@@ -14,6 +14,7 @@ Usage:
 Exit status:
     0 — always (informational; never fails the build).
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -31,7 +32,7 @@ _JSONLD_RE = re.compile(
     r'<script type="application/ld\+json">\s*([\s\S]*?)\s*</script>',
     re.IGNORECASE,
 )
-_COMMENT_RE = re.compile(r'<!--[\s\S]*?-->')
+_COMMENT_RE = re.compile(r"<!--[\s\S]*?-->")
 
 
 def extract_blocks(path: Path) -> list[object]:
@@ -39,7 +40,7 @@ def extract_blocks(path: Path) -> list[object]:
     skipped (the validator catches those). Each block is a dict or list
     matching the schema graph."""
     html = path.read_text(encoding="utf-8", errors="ignore")
-    html = _COMMENT_RE.sub('', html)
+    html = _COMMENT_RE.sub("", html)
     out: list[object] = []
     for raw in _JSONLD_RE.findall(html):
         try:
@@ -113,9 +114,7 @@ def diff_pages(base: dict[str, list[object]], head: dict[str, list[object]]) -> 
             lines.append(f"- … and {len(changed) - 25} more")
         lines.append("")
 
-    lines.append(
-        f"_Compared {len(base_keys)} base pages against {len(head_keys)} head pages._"
-    )
+    lines.append(f"_Compared {len(base_keys)} base pages against {len(head_keys)} head pages._")
     return "\n".join(lines) + "\n"
 
 

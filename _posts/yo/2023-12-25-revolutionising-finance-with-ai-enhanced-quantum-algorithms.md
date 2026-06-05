@@ -141,4 +141,3 @@ The integration of AI with quantum algorithm design represents a pivotal moment 
 [05]: https://www.terraquantum.swiss/ "TerraQuantum"
 [06]: https://web.archive.org/web/2*/https://zapata.ai/bbva-monte-carlo-simulation-finance-case-study/ "BBVA Monte Carlo Simulation Finance Case Study (Zapata Computing, archived)"
 [07]: https://www.goldmansachs.com/intelligence/pages/gs-research/euv-3.0/report.pdf "Europe Technology Hardware EUV 3.0 High NA a prime Digital Enabler for the next decade with deep competitive moat"
-

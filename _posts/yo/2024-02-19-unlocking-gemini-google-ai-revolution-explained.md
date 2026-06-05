@@ -70,4 +70,3 @@ Gemini 1.5 marks a significant advancement in AI technology. It improves efficie
 
 [00]: https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/ "Google's Gemini 1.5: The Next Generation of AI Models"
 [01]: https://deepmind.google/technologies/gemini/#introduction "Gemini - Google DeepMind"
-

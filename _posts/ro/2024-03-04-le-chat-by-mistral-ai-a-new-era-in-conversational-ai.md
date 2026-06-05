@@ -127,4 +127,3 @@ In conclusion, Le Chat by Mistral AI represents a significant leap forward in th
 [00]: https://chat.mistral.ai/chat "Le Chat Mistral"
 [01]: https://mistral.ai/ "Mistral AI | Frontier AI in your hands"
 [02]: https://chat.openai.com/ "ChatGPT"
-

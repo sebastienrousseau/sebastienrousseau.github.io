@@ -11,6 +11,7 @@ deterministic — re-running on an unchanged source produces byte-
 identical output. Concurrent runs are the only risk; this test
 should not run alongside the daily-publishing pipeline.
 """
+
 from __future__ import annotations
 
 import sys
@@ -38,6 +39,7 @@ def test_build_translations_main_renders_all_active_locales(capsys):
     ``build_translations: N language(s) rendered, M page(s) total``
     on stdout."""
     import build_translations
+
     build_translations.main()
     out = capsys.readouterr().out
     assert "build_translations:" in out
@@ -49,6 +51,7 @@ def test_build_translations_main_renders_all_active_locales(capsys):
     import importlib
 
     import postbuild
+
     importlib.reload(postbuild)
     postbuild.main()
 
@@ -66,7 +69,8 @@ def test_build_translations_main_no_op_when_no_active_languages(monkeypatch, cap
             self.active = active
 
     monkeypatch.setattr(
-        lr, "LANGUAGES",
+        lr,
+        "LANGUAGES",
         [_Stub("en", active=True)],
     )
     build_translations.main()
@@ -100,10 +104,8 @@ def test_render_translation_idempotent_for_an_existing_post():
 def test_parse_frontmatter_basic():
     """Direct unit test for the bottom-of-stack parser."""
     import build_translations as bt
-    src = (
-        '---\ntitle: "X"\ndate: "May 19, 2026"\n---\n\n'
-        '# Hello\n\nBody.\n'
-    )
+
+    src = '---\ntitle: "X"\ndate: "May 19, 2026"\n---\n\n' "# Hello\n\nBody.\n"
     fm, body = bt.parse_frontmatter(src)
     assert fm["title"] == "X"
     assert "# Hello" in body
@@ -113,6 +115,7 @@ def test_parse_frontmatter_basic():
 def test_fr_slug_routes_through_slug_registry():
     """fr_slug() looks up the FR-localised slug; falls back to EN."""
     import build_translations as bt
+
     # 'about' is a static slug with a guaranteed FR mapping
     out = bt.fr_slug("about")
     # Either translated or passed through — both indicate the lookup ran.
@@ -124,6 +127,7 @@ def test_render_static_translation_about_page():
     """Render the /about/ page in FR. Exercises the static-page
     branch of the renderer (separate from articles)."""
     import build_translations as bt
+
     rendered = bt.render_static_translation("about")
     # May return None on the older code paths; tolerant assertion.
     if rendered is not None:
@@ -136,6 +140,7 @@ def test_render_articles_hub_returns_html_or_none():
     listing page. Either produces HTML or returns None — both branches
     are valid depending on the data shape."""
     import build_translations as bt
+
     # Mirror the real shape the function expects (banner_alt is required
     # for the featured-card render path).
     entries = [
@@ -165,5 +170,6 @@ def test_render_home_returns_html_or_none():
     module — exercises FR fork, hero translation, every newsroom-card
     rewrite path."""
     import build_translations as bt
+
     out = bt.render_home()
     assert out is None or isinstance(out, str)

@@ -18,6 +18,7 @@ Also asserts:
 Run from repo root: ``python3 scripts/test_hreflang_reciprocity.py``.
 Exits non-zero on any defect.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -101,15 +102,17 @@ def main() -> int:  # noqa: C901 — reciprocity validator is a sequential ladde
             # "fr/index.html", "about/index.html".
             path = "/" + src.removesuffix("index.html")  # "/", "/fr/", "/about/"
             src_url_candidates = {
-                SITE + path,           # canonical (trailing slash)
+                SITE + path,  # canonical (trailing slash)
                 SITE + path.rstrip("/") if path != "/" else SITE,
-                SITE + "/" + src,      # explicit /index.html
-                path,                  # relative
-                "/" + src,             # relative explicit
+                SITE + "/" + src,  # explicit /index.html
+                path,  # relative
+                "/" + src,  # relative explicit
             }
+
             def _norm(u: str) -> str:
                 u = u.rstrip("/")
                 return u or "/"
+
             target_norm = {_norm(v) for v in target_alts.values()}
             cand_norm = {_norm(v) for v in src_url_candidates}
             if not (target_norm & cand_norm):
@@ -132,7 +135,9 @@ def main() -> int:  # noqa: C901 — reciprocity validator is a sequential ladde
         return 1
 
     paired = sum(1 for a in alts.values() if len(a) >= 2)
-    print(f"ok: hreflang reciprocity passes ({paired} paired pages, {len(alts)} total with alternates)")
+    print(
+        f"ok: hreflang reciprocity passes ({paired} paired pages, {len(alts)} total with alternates)"
+    )
     return 0
 
 

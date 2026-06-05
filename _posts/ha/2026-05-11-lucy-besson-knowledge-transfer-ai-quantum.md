@@ -133,4 +133,3 @@ At human scale, no, and probably not for some time. As of early 2026, the state 
 - Sebastien Rousseau, (2025). [Quantum-Safe Payments: Why the Payments Industry Must Act Now](/2025-09-01-quantum-safe-payments-epaa/index.html "Quantum-Safe Payments: Why the Payments Industry Must Act Now").
 - Wikipedia contributors, (2026). [Lucy (2014 film) ⧉](https://en.wikipedia.org/wiki/Lucy_(2014_film) "Lucy (2014 film) - Wikipedia"). Wikipedia.
 - Wikipedia contributors, (2026). [Mind uploading ⧉](https://en.wikipedia.org/wiki/Mind_uploading "Mind uploading"). Wikipedia.
-

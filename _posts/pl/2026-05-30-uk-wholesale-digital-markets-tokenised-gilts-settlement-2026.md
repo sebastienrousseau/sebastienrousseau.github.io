@@ -246,4 +246,3 @@ Punkty bazowe zaoszczędzone na finansowaniu zabezpieczeń. Redukcja bufora pły
 </div>
 </aside>
 <!-- enrich-end -->
-

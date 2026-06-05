@@ -16,6 +16,7 @@ isn't — that misleads search engines and AI crawlers.
 Run from repo root: ``python3 scripts/test_jsonld_localized.py``.
 Exits non-zero on any base-language mismatch.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)

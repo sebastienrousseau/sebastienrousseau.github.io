@@ -137,4 +137,3 @@ Employing DateTime (DTT) for managing dates and times in your Rust projects offe
 [03]: https://github.com/sebastienrousseau/dtt "DateTime (DTT) GitHub Repository"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-

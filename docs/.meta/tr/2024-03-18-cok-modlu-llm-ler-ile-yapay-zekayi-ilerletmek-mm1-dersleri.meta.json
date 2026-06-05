@@ -1,11 +1,11 @@
 {
-  "locale": "tr_TR",
   "date": "March 18, 2024",
-  "language": "tr-TR",
-  "subtitle": "Çok modlu büyük dil modelleri üzerine Apple'ın MM1 makalesinin analizi",
   "description": "MM1, mimari, ön eğitim stratejileri ve çok modlu LLM'lerin ortaya çıkan yetenekleri üzerine Apple'ın araştırmasıdır.",
-  "title": "Çok modlu LLM'ler ile yapay zekayı ilerletmek: MM1 dersleri",
-  "keywords": "MM1, çok modlu, LLM, Apple, üretken yapay zeka, araştırma",
+  "language": "tr-TR",
   "banner_alt": "MM1 modelinin görselleştirmesi",
-  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp"
+  "locale": "tr_TR",
+  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
+  "title": "Çok modlu LLM'ler ile yapay zekayı ilerletmek: MM1 dersleri",
+  "subtitle": "Çok modlu büyük dil modelleri üzerine Apple'ın MM1 makalesinin analizi",
+  "keywords": "MM1, çok modlu, LLM, Apple, üretken yapay zeka, araştırma"
 }

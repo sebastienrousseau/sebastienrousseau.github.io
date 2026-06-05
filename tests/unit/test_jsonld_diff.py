@@ -5,6 +5,7 @@ The file is a small, pure pipeline:
 
 Covering each pure function plus a fixture-driven main() drives the
 module to ~100% with no real-tree dependency."""
+
 from __future__ import annotations
 
 import sys
@@ -25,10 +26,10 @@ import jsonld_diff as jd
 def test_extract_blocks_returns_parsed_jsonld(tmp_path):
     page = tmp_path / "page.html"
     page.write_text(
-        '<html><head>'
+        "<html><head>"
         '<script type="application/ld+json">{"@type": "Person", "name": "Seb"}</script>'
         '<script type="application/ld+json">{"@graph":[{"@type":"WebSite"}]}</script>'
-        '</head></html>',
+        "</head></html>",
         encoding="utf-8",
     )
     blocks = jd.extract_blocks(page)
@@ -74,11 +75,13 @@ def test_extract_blocks_handles_no_jsonld(tmp_path):
 
 def test_index_walks_html_tree(tmp_path):
     (tmp_path / "a.html").write_text(
-        '<script type="application/ld+json">{"@type":"A"}</script>', encoding="utf-8",
+        '<script type="application/ld+json">{"@type":"A"}</script>',
+        encoding="utf-8",
     )
     (tmp_path / "sub").mkdir()
     (tmp_path / "sub" / "b.html").write_text(
-        '<script type="application/ld+json">{"@type":"B"}</script>', encoding="utf-8",
+        '<script type="application/ld+json">{"@type":"B"}</script>',
+        encoding="utf-8",
     )
     (tmp_path / "skip.txt").write_text("not html", encoding="utf-8")
 
@@ -196,10 +199,12 @@ def test_main_runs_against_two_fixture_trees(tmp_path, monkeypatch, capsys):
     base.mkdir()
     head.mkdir()
     (base / "p.html").write_text(
-        '<script type="application/ld+json">{"@type":"A"}</script>', encoding="utf-8",
+        '<script type="application/ld+json">{"@type":"A"}</script>',
+        encoding="utf-8",
     )
     (head / "p.html").write_text(
-        '<script type="application/ld+json">{"@type":"B"}</script>', encoding="utf-8",
+        '<script type="application/ld+json">{"@type":"B"}</script>',
+        encoding="utf-8",
     )
     monkeypatch.setattr(sys, "argv", ["jsonld_diff", str(base), str(head)])
     rc = jd.main()
@@ -218,7 +223,9 @@ def test_main_missing_base_dir_yields_empty_diff(tmp_path, monkeypatch, capsys):
         encoding="utf-8",
     )
     monkeypatch.setattr(
-        sys, "argv", ["jsonld_diff", str(tmp_path / "missing"), str(head)],
+        sys,
+        "argv",
+        ["jsonld_diff", str(tmp_path / "missing"), str(head)],
     )
     rc = jd.main()
     assert rc == 0

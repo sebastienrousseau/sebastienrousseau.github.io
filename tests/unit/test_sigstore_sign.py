@@ -5,6 +5,7 @@ runs the cosign subprocess for each dated article in the fourth, and
 mirrors the public key when configured. Each branch is verified here
 with monkeypatched filesystem + subprocess.
 """
+
 from __future__ import annotations
 
 import json
@@ -69,7 +70,8 @@ def test_sign_one_returns_false_when_key_path_missing(tmp_path, monkeypatch):
 
 
 def test_sign_one_returns_false_when_key_file_does_not_exist(
-    tmp_path, monkeypatch,
+    tmp_path,
+    monkeypatch,
 ):
     html = tmp_path / "art" / "index.html"
     html.parent.mkdir()
@@ -81,7 +83,8 @@ def test_sign_one_returns_false_when_key_file_does_not_exist(
 
 
 def test_sign_one_invokes_cosign_and_returns_true_on_success(
-    tmp_path, monkeypatch,
+    tmp_path,
+    monkeypatch,
 ):
     html = tmp_path / "art" / "index.html"
     html.parent.mkdir()
@@ -241,7 +244,9 @@ def test_main_skips_dated_dirs_without_index_html(tmp_path, monkeypatch, capsys)
     monkeypatch.setattr(ss, "_cosign_available", lambda: True)
     sign_called = []
     monkeypatch.setattr(
-        ss, "_sign_one", lambda *a, **kw: sign_called.append(a) or True,
+        ss,
+        "_sign_one",
+        lambda *a, **kw: sign_called.append(a) or True,
     )
 
     rc = ss.main()
@@ -254,7 +259,8 @@ def test_main_copies_public_key_when_configured(tmp_path, monkeypatch):
     pub_src = tmp_path / "cosign.pub"
     pub_src.write_text("KEY", encoding="utf-8")
     cfg_path.write_text(
-        json.dumps({"public_key_local": str(pub_src)}), encoding="utf-8",
+        json.dumps({"public_key_local": str(pub_src)}),
+        encoding="utf-8",
     )
     public = tmp_path / "public"
     sigstore = public / "sigstore"

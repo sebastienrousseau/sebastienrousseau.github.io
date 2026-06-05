@@ -4,6 +4,7 @@ The transform() function is the most-touched code-path and the easiest
 to exercise. main() is also covered with a tmp_path tree so the
 file-walk + write branches are hit.
 """
+
 from __future__ import annotations
 
 import sys
@@ -24,16 +25,12 @@ def test_transform_replaces_ssg_form():
 
 
 def test_transform_replaces_long_form():
-    assert (
-        rs.transform("Shokunin Static Site Generator rocks")
-        == "Static Site Generator rocks"
-    )
+    assert rs.transform("Shokunin Static Site Generator rocks") == "Static Site Generator rocks"
 
 
 def test_transform_replaces_made_with():
     assert (
-        rs.transform("Made with Shokunin and love.")
-        == "Made with Static Site Generator and love."
+        rs.transform("Made with Shokunin and love.") == "Made with Static Site Generator and love."
     )
 
 
@@ -49,10 +46,7 @@ def test_transform_replaces_standalone_titlecase():
 
 
 def test_transform_replaces_lowercase_in_prose():
-    assert (
-        rs.transform("we use shokunin for builds.")
-        == "we use Static Site Generator for builds."
-    )
+    assert rs.transform("we use shokunin for builds.") == "we use Static Site Generator for builds."
 
 
 def test_transform_keeps_lowercase_inside_urls():
@@ -69,7 +63,7 @@ def test_transform_keeps_lowercase_inside_urls():
 
 
 def test_transform_keeps_lowercase_inside_paths():
-    inp = "src=\"/shokunin/logo.svg\" alt=\"shokunin\""
+    inp = 'src="/shokunin/logo.svg" alt="shokunin"'
     out = rs.transform(inp)
     assert "/shokunin/logo.svg" in out
     # Inside attribute value next to `\"` — that's not a URL-ish char, so

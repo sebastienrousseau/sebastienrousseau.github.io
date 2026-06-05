@@ -200,4 +200,3 @@ The Quantum Computing era is approaching. Banks must proactively assess their en
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 [fhe]: https://cloudcdn.pro/stocks/diagrams/fhe_algorithm_diagram.webp "FHE Architecture"
-

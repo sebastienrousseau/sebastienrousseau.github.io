@@ -81,4 +81,3 @@ The EU's Artificial Intelligence Act represents a critical step in navigating th
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 [00]: https://www.europarl.europa.eu/news/en/press-room/20240212IPR17618/artificial-intelligence-act-committees-confirm-landmark-agreement "AI Act: committees confirm landmark agreement"
-
