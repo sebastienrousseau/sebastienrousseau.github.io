@@ -1,11 +1,11 @@
 {
-  "locale": "de_DE",
-  "date": "Dec 25, 2023",
-  "language": "de",
-  "subtitle": "Die Kraft des Quantencomputings für Finanzinnovation freisetzen: KI im Zentrum der Algorithmen der nächsten Generation",
+  "keywords": "Quantencomputing, KI-Algorithmen, Finanzmathematik, Bankentechnologie, Risikomanagement, Algorithmenentwurf, Datenanalyse, Anlagestrategien, Quantenfinanzen, maschinelles Lernen",
   "banner_alt": "Das Finanzwesen mit KI-gestützten Quantenalgorithmen revolutionieren",
   "title": "Das Finanzwesen mit KI-gestützten Quantenalgorithmen revolutionieren",
+  "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
+  "date": "Dec 25, 2023",
+  "locale": "de_DE",
+  "subtitle": "Die Kraft des Quantencomputings für Finanzinnovation freisetzen: KI im Zentrum der Algorithmen der nächsten Generation",
   "description": "Die transformative Rolle der KI in Quantenalgorithmen für die Finanzwelt — mit Fokus auf ihren mathematischen Feinheiten und ihren Anwendungen im Banking.",
-  "keywords": "Quantencomputing, KI-Algorithmen, Finanzmathematik, Bankentechnologie, Risikomanagement, Algorithmenentwurf, Datenanalyse, Anlagestrategien, Quantenfinanzen, maschinelles Lernen",
-  "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
+  "language": "de"
 }

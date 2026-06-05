@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
-  "description": "Jelajahi makalah MM1 Apple tentang Multimodal Large Language Models (MLLMs). Pelajari arsitektur, strategi pre-training, dan potensi AI mereka.",
   "title": "[ID DRAFT] Advancing AI with Multimodal LLMs: Insights from MM1",
   "locale": "id_ID",
-  "subtitle": "Mengungkap Masa Depan AI: Bagaimana Studi MM1 Apple yang Revolusioner Mengubah Multimodal Learning",
+  "description": "Jelajahi makalah MM1 Apple tentang Multimodal Large Language Models (MLLMs). Pelajari arsitektur, strategi pre-training, dan potensi AI mereka.",
   "banner_alt": "Banner untuk Apple MM1",
   "keywords": "Multimodal LLMs, studi MM1, kemajuan AI, strategi pre-training, pengenalan gambar, pemrosesan bahasa alami, aplikasi AI, masa depan AI, multimodal learning, penelitian AI",
+  "subtitle": "Mengungkap Masa Depan AI: Bagaimana Studi MM1 Apple yang Revolusioner Mengubah Multimodal Learning",
   "date": "Mar 17, 2024",
-  "language": "id-ID"
+  "language": "id-ID",
+  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp"
 }

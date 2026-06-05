@@ -1,11 +1,11 @@
 {
   "banner_alt": "Kriptografik hatanın soyut görselleştirmesi",
-  "banner": "https://cloudcdn.pro/stocks/images/digitale-nodes.webp",
-  "date": "April 22, 2024",
-  "language": "tr-TR",
   "keywords": "kuantum, kafes tabanlı, kriptografi, LWE, Yilei Chen, hata, post-kuantum",
   "title": "Kafes tabanlı kripto için kuantum algoritmasında hata",
-  "description": "Yilei Chen'in LWE'yi çözmek için kuantum algoritmasında bir hata keşfedildi; bu, kafes tabanlı kriptografiyi geçici olarak yeniden güvenceye alıyor.",
   "subtitle": "Yilei Chen'in algoritmasındaki hata kafes tabanlı kriptografiyi geçici olarak yeniden güvene alıyor",
-  "locale": "tr_TR"
+  "locale": "tr_TR",
+  "language": "tr-TR",
+  "description": "Yilei Chen'in LWE'yi çözmek için kuantum algoritmasında bir hata keşfedildi; bu, kafes tabanlı kriptografiyi geçici olarak yeniden güvenceye alıyor.",
+  "date": "April 22, 2024",
+  "banner": "https://cloudcdn.pro/stocks/images/digitale-nodes.webp"
 }

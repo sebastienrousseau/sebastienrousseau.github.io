@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Àwòrán ìmọ̀ẹ̀dá lórí àkóónú iṣiro quantum",
-  "subtitle": "HSH: ikawe hash ti o tako quantum fun akoko post-quantum ti ijẹrisi idanimọ.",
+  "locale": "yo_NG",
+  "keywords": "cryptography ti o tako quantum, post-quantum cryptography, ikawe hash, HSH, hashing ọrọ aṣínà, iyọrisi bọtini, Argon2i, Bcrypt, Scrypt, iṣiro quantum",
   "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
   "title": "Protecting Data in the Quantum Age: The Hash Library (HSH)",
-  "date": "Oct 16, 2023",
-  "keywords": "cryptography ti o tako quantum, post-quantum cryptography, ikawe hash, HSH, hashing ọrọ aṣínà, iyọrisi bọtini, Argon2i, Bcrypt, Scrypt, iṣiro quantum",
+  "banner_alt": "Àwòrán ìmọ̀ẹ̀dá lórí àkóónú iṣiro quantum",
+  "subtitle": "HSH: ikawe hash ti o tako quantum fun akoko post-quantum ti ijẹrisi idanimọ.",
   "description": "HSH nlo awọn ipilẹ cryptographic ti o tako quantum lati daabobo data rẹ, ni idaniloju aabo rẹ paapaa ni oju awọn ilọsiwaju iṣiro quantum ti ọjọ iwaju.",
-  "locale": "yo_NG",
-  "language": "yo-NG"
+  "language": "yo-NG",
+  "date": "Oct 16, 2023"
 }

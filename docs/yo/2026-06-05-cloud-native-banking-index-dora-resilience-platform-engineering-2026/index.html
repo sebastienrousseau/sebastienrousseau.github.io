@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="yo-NG">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Fri, 05 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Fri, 05 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>Atọ́ka Bánkì Ọlọ́nà-Àwọsánmà ní 2026: DORA, Platform Engineering, Àwọsánmà Alágbára, àti Ìfaradà Iṣẹ́ — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Atọ́ka bánkì ọlọ́nà-àwọsánmà 2026 fún wíwọn ìmúrasílẹ̀ DORA, ìdàgbàsókè platform engineering, ewu ìkójọpọ̀ àwọsánmà, ẹ̀rí ìjáde, àti ìfaradà iṣẹ́.">
+<meta name="keywords" content="bánkì ọlọ́nà-àwọsánmà 2026, àwọn bánkì DORA, ewu ìkójọpọ̀ àwọsánmà, platform engineering bánkì, ewu ICT ẹgbẹ́ kẹta, ètò ìjáde àwọsánmà, àwọsánmà alágbára">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="The Cloud Native Banking Index 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-3piB0ouqFjgatw6eh+yqHIzz1RjmMErldQEtyyfmgFU=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-I1L/GiFe2/7CsDEjSrVdx6BMSR7tF21iz42/ofNEVlQ=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-T9tHa6hWWGkns9nSHjqosCpdDFOFSUG/Tp0D8dp9/co=' 'sha256-iZ1V5RzBLtl7ZyJTu/zDvb7LG8m7m6B8pnVJFceMbkk=' 'self' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/yo/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/a04392eaaf1d1bf3.css" integrity="sha256-SFQ1AngSMlx94d5FmN1lWSKPs5RL6Y8BQf0nIEBLd7g= sha256-6BJkWGvqh3blXQksn+ynhkpoqcrJzzWhSKVuLVBJY4s=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Àyẹ́ Atom" href="/yo/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Atọ́ka Bánkì Ọlọ́nà-Àwọsánmà ní 2026: DORA, Platform Engineering, Àwọsánmà Alágbára, àti Ìfaradà Iṣẹ́ — Sebastien Rousseau">
+<meta property="og:description" content="Atọ́ka bánkì ọlọ́nà-àwọsánmà 2026 fún wíwọn ìmúrasílẹ̀ DORA, ìdàgbàsókè platform engineering, ewu ìkójọpọ̀ àwọsánmà, ẹ̀rí ìjáde, àti ìfaradà iṣẹ́.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/yo/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="yo_NG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Atọ́ka Bánkì Ọlọ́nà-Àwọsánmà ní 2026: DORA, Platform Engineering, Àwọsánmà Alágbára, àti Ìfaradà Iṣẹ́ — Sebastien Rousseau">
+<meta name="twitter:description" content="Atọ́ka bánkì ọlọ́nà-àwọsánmà 2026 fún wíwọn ìmúrasílẹ̀ DORA, ìdàgbàsókè platform engineering, ewu ìkójọpọ̀ àwọsánmà, ẹ̀rí ìjáde, àti ìfaradà iṣẹ́.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/yo/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Fò sí àkóónú àkọ́kọ́</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Yí ìwọ̀ndì padà" />
+      <div class="wrap">
+        <a class="ap-brand" href="/yo/index.html" aria-label="Ilé Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Ìwọ̀ndì àkọ́kọ́">
+          <ul class="ap-menu">
+            <li><a href="/yo/nipa-wa/index.html">About</a></li>
+            <li><a href="/yo/awon-akole/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/yo/awon-iwe/index.html">Papers</a></li>
+            <li><a href="/yo/awon-koko/index.html">Àwọn kókó</a></li>
+            <li><a href="/yo/awon-ise/index.html">Projects</a></li>
+            <li><a href="/yo/akojopo-orin/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Tan àkòrí òkùnkùn" aria-pressed="false" title="Yí àkòrí padà">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Wá (Cmd tàbí Ctrl + K)" title="Wá (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Èdè">
+            <button type="button" class="ap-lang-toggle" aria-label="YO, Yí èdè padà" aria-expanded="false" aria-haspopup="menu" title="Yí èdè padà">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">YO</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/yo/kan-si-wa/index.html" aria-label="Kàn sí wa">Kàn sí wa ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Yí ìwọ̀ndì padà">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Atọ́ka Bánkì Ọlọ́nà-Àwọsánmà ní 2026: DORA, Platform Engineering, Àwọsánmà Alágbára, àti Ìfaradà Iṣẹ́</h1>
+      <p class="sub">Ìfaradà àwọsánmà DORA wà ní ìpele àbójútó. Àwọn ìpinnu platform-engineering tí a ṣe láti 2024-2025 ni ohun tí ìyípo àbójútó 2026 yóò ṣàyẹ̀wò — paved roads Kubernetes, Backstage portal, GitOps, Open Policy Agent ní admission, OpenTelemetry láti ibẹ̀rẹ̀ dé òpin — tí ń ṣe ẹ̀rí àkójọpọ̀ DORA Article 8 gẹ́gẹ́ bí ohun ìfilọ́lẹ̀, kì í ṣe ní àkókò ìdánwò.</p>
+    <nav class="article-tags" aria-label="Àwọn kókó"><a href="/tags/index.html#h3-banki-olona-awosanma-2026" class="article-tag" rel="tag">bánkì ọlọ́nà-àwọsánmà 2026</a><a href="/tags/index.html#h3-awon-banki-dora" class="article-tag" rel="tag">àwọn bánkì DORA</a><a href="/tags/index.html#h3-ewu-ikojopo-awosanma" class="article-tag" rel="tag">ewu ìkójọpọ̀ àwọsánmà</a><a href="/tags/index.html#h3-platform-engineering-banki" class="article-tag" rel="tag">platform engineering bánkì</a><a href="/tags/index.html#h3-ewu-ict-egbe-keta" class="article-tag" rel="tag">ewu ICT ẹgbẹ́ kẹta</a><a href="/tags/index.html#h3-eto-ijade-awosanma" class="article-tag" rel="tag">ètò ìjáde àwọsánmà</a><a href="/tags/index.html#h3-awosanma-alagbara" class="article-tag" rel="tag">àwọsánmà alágbára</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-05T06:06:06+00:00" class="meta-pub">Tẹ̀ jáde 5 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Àkókò kíkà tó tó">16 ìṣẹ́jú kíkà</span></div></section><figure class="article-banner"><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/circuit_board_cityscape.webp&w=1600&format=webp&q=85" alt="Banner for: Atọ́ka Bánkì Ọlọ́nà-Àwọsánmà ní 2026: DORA, Platform Engineering, Àwọsánmà Alágbára, àti Ìfaradà Iṣẹ́" width="1200" height="675" fetchpriority="high" decoding="async" /></figure>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Àkóónú</h2><ol><li><a href="#idi-ti-ifarada-awosanma-dora-fi-wa-ni-ipele-abojuto">Ìdí Tí Ìfaradà Àwọsánmà DORA Fi Wà ní Ìpele Àbójútó</a></li><li><a href="#iseto-atoka-2026">Ìṣètò Atọ́ka 2026</a></li><li><a href="#awon-ami-lowolowo-lati-topa">Àwọn Àmì Lọ́wọ́lọ́wọ́ Láti Tọpa</a></li><li><a href="#platform-engineering-awon-ipile-marun-ti-a-so-oruko-won">Platform Engineering: Àwọn Ìpilẹ̀ Márùn Tí A Sọ Orúkọ Wọn</a></li><li><a href="#awosanma-alagbara-gege-bi-ero-ki-i-se-ami-owo">Àwọsánmà Alágbára Gẹ́gẹ́ Bí Ẹ̀rọ, Kì í Ṣe Àmì Òwò</a></li><li><a href="#isise-ijade-ti-a-se-adanwo">Ìṣiṣẹ́-Ìjáde Tí A Ṣe Àdánwò</a></li><li><a href="#afojusun-rto-rpo-lati-akojo-cif">Àfojúsùn RTO / RPO Láti Àkójọ CIF</a></li><li><a href="#ohun-ti-eyi-tumo-si-nipa-iru-banki">Ohun Tí Èyí Túmọ̀ Sí Nípa Irú Bánkì</a></li><li><a href="#ipari">Ìparí</a></li><li><a href="#awon-ibeere-ti-a-saba-beere">Àwọn Ìbéèrè Tí A Sábà Béèrè</a></li><li><a href="#awon-itokasi">Àwọn Ìtọ́kasí</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Atọ́ka bánkì ọlọ́nà-àwọsánmà 2026 fún wíwọn ìmúrasílẹ̀ DORA, ìdàgbàsókè platform engineering, ewu ìkójọpọ̀ àwọsánmà, ẹ̀rí ìjáde, àti ìfaradà iṣẹ́.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Ìdí Tí Ìfaradà Àwọsánmà DORA Fi Wà ní Ìpele Àbójútó.</strong> Ìdí mẹ́ta tí ọ̀rọ̀ &quot;ìmúrasílẹ̀&quot; fi jẹ́ àṣìṣe ní 2026.</li>  <li><strong>Àwọn Àmì Lọ́wọ́lọ́wọ́ Láti Tọpa.</strong> Ìdàgbàsókè ọlọ́nà-àwọsánmà ní 2026 dín kù sí àwọn ìpilẹ̀ ẹ̀rọ márùn tí ń ṣiṣẹ́ pọ̀ láti ṣe ẹ̀rí àbójútó ní iyara pipeline ìfilọ́lẹ̀.</li>  <li><strong>Platform Engineering: Àwọn Ìpilẹ̀ Márùn Tí A Sọ Orúkọ Wọn.</strong> Ìdàgbàsókè ọlọ́nà-àwọsánmà ní 2026 dín kù sí àwọn ìpilẹ̀ ẹ̀rọ márùn tí ń ṣiṣẹ́ pọ̀ láti ṣe ẹ̀rí àbójútó ní iyara pipeline ìfilọ́lẹ̀.</li>  <li><strong>Àwọsánmà Alágbára Gẹ́gẹ́ Bí Ẹ̀rọ, Kì í Ṣe Àmì Òwò.</strong> Ètò àwọsánmà alágbára ní 2026 gbọdọ̀ dáhùn àwọn ìbéèrè Schrems II + DORA + ìfijáde EBA pàtó mẹ́rin:.</li></ul></aside><!-- lead-start: manual -->
+
+<!-- lead-end -->
+<p>Bánkì ọlọ́nà-àwọsánmà ní 2026 wà ní ìpele àbójútó DORA. <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554" title="DORA — Digital Operational Resilience Act">Regulation (EU) 2022/2554 ⧉</a> ti wà ní agbára láti 17 janvier 2025. Ètò ìfìdíkalẹ̀ olùpèsè-ẹgbẹ́-kẹta pàtàkì (CTPP) lábẹ́ Articles 28-44 ti ń ṣí láti 2025-2026, pẹ̀lú AWS, Microsoft (Azure), Google (GCP), àti Salesforce nínú tàbí lẹ́bàá àlà ìfìdíkalẹ̀. European Supervisory Authorities (EBA, EIOPA, ESMA) tẹ RTS àti ITS ìparí lórí <a href="https://www.eba.europa.eu/sites/default/files/2024-01/0e155f7a-9b09-4dba-89cb-37f7e8e1c540/JC%202023%2086%20-%20Final%20report%20on%20draft%20ITS%20on%20Register%20of%20information%20under%20DORA.pdf" title="ESAs ITS on Register of Information">Register of Information ⧉</a> jáde ní 2024. Ẹgbẹ́ ECB Banking Supervision ní àwọn ètò gbangba lórí ìmúrasílẹ̀ ìparun-àwọsánmà àti penetration testing tí ìhàlẹ̀ ń darí nínú <a href="https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html" title="Supervisory priorities 2026-28">àwọn àyájẹ́yọ àbójútó 2026-28 ⧉</a>. Ìbéèrè ilé-iṣẹ́ kì í ṣe ìbéèrè bóyá láti ṣàjọṣe ètò àwọsánmà pẹ̀lú DORA — tí a ti pinnu — bí kò ṣe bóyá àwọn ìpilẹ̀ platform-engineering ilé-iṣẹ́ ń ṣe ẹ̀rí ní iyara pipeline ìfilọ́lẹ̀ dípò nínú àwọn PDF tí a kó papọ̀ ní ọ̀sẹ̀ kan ṣáájú ìdánwò.</p>
+<hr />
+<blockquote>
+<p><strong>Àkótán Aṣáájú / Àwọn Kókó Pàtàkì</strong></p>
+<ul>
+<li><strong>Ìfaradà àwọsánmà DORA wà ní ìfipá-mú gbígbóná láti 17 janvier 2025.</strong> Articles 6, 8, 18, 26 àti 28-44 gbogbo rẹ̀ wà ní agbára. Àwọn ìwádìí àbójútó láti ìgbì àkọ́kọ́ ìdánwò dé ní Q4 2025. Ọ̀rọ̀ &quot;ìmúrasílẹ̀&quot; ti pẹ́ jù ní ìyípo méjì.</li>
+<li><strong>Ètò ìfìdíkalẹ̀ CTPP ń ṣí.</strong> AWS, Microsoft, Google, Salesforce — nínú tàbí lẹ́bàá. Ìfìdíkalẹ̀ fún ESAs ní ẹ̀tọ́ àbójútó tààrà tó ní àwọn ìbéèrè ìwífúnni, àyẹ̀wò orí-ìpò, àti ìmọ̀ràn àbójútó.</li>
+<li><strong>Platform engineering ni ohun-ìfilọ́lẹ̀.</strong> Paved roads Kubernetes (EKS / AKS / GKE / OpenShift), portal olùdàgbàsókè Backstage, GitOps (ArgoCD tàbí Flux), Open Policy Agent ní admission, OpenTelemetry láti ibẹ̀rẹ̀ dé òpin. Ìpilẹ̀ márùn tí a sọ orúkọ wọn; ohunkóhun tó bá ṣì kù jẹ́ ìwádìí.</li>
+<li><strong>Àwọsánmà alágbára jẹ́ ẹ̀rọ, kì í ṣe àmì òwò.</strong> AWS European Sovereign Cloud, Microsoft EU Data Boundary, Bleu (Capgemini + Orange + Microsoft), Thales / S3NS, Oracle EU Sovereign Cloud — kọ̀ọ̀kan ń bá ipò Schrems II + DORA Article 28 pàtó kan; kò sí ọ̀kan tí ó jẹ́ ìdáhùn tí a ti ṣe tán.</li>
+<li><strong>Ẹ̀rí ìjáde tí a ṣe àdánwò nílò.</strong> Àwọn ìpín 81 àti 113-117 EBA/GL/2019/02. Tabletop ìdámẹ́rin ọdún kò tó; àwọn olùṣàbójútó retí àdánwò ìṣiṣẹ́-ìjáde láti ibẹ̀rẹ̀ dé òpin ní ọdún kọ̀ọ̀kan fún iṣẹ́ pàtàkì tàbí pàtàkì kọ̀ọ̀kan.</li>
+<li><strong>RTO / RPO láti àkójọ CIF.</strong> Tier 1: 2h / 15min. Tier 2: 4h / 1h. Tier 3: 24h / 4h. Tí a yọrí láti inú ìṣàyẹ̀wò ipa-iṣẹ́, kì í ṣe agbára ẹgbẹ́ platform.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="idi-ti-ifarada-awosanma-dora-fi-wa-ni-ipele-abojuto">Ìdí Tí Ìfaradà Àwọsánmà DORA Fi Wà ní Ìpele Àbójútó <a class="heading-anchor" href="#idi-ti-ifarada-awosanma-dora-fi-wa-ni-ipele-abojuto" aria-label="Ìjápọ̀ sí Ìdí Tí Ìfaradà Àwọsánmà DORA Fi Wà ní Ìpele Àbójútó">#</a></h2>
+<p>Ìdí mẹ́ta tí ọ̀rọ̀ &quot;ìmúrasílẹ̀&quot; fi jẹ́ àṣìṣe ní 2026.</p>
+<p><strong>Lákọ̀ọ́kọ́, àkókò.</strong> DORA ni a tẹ jáde ní décembre 2022. Àkókò ohun-èlò oṣù 24 parí ní 17 janvier 2025. RTS àti ITS ìparí ESAs — tó pẹ̀lú ITS lórí Register of Information tí a lo fún ìfìdíkalẹ̀ CTPP — a tẹ jáde ní 2024. Ìgbì àkọ́kọ́ àyẹ̀wò àbójútó ṣiṣẹ́ jálẹ̀ 2025; àwọn ìwádìí lórí ìpé ètò ìṣàkóso ewu ICT Article 6 àti ìbámu àkójọpọ̀ Article 8 dé ní Q4 2025 ní àwọn ilé-iṣẹ́ tier-1 púpọ̀.</p>
+<p><strong>Ìkejì, ètò ìfìdíkalẹ̀ CTPP.</strong> Article 31 ṣètò àwọn ìpinnu fún ìfìdíkalẹ̀ gẹ́gẹ́ bí olùpèsè-ẹgbẹ́-kẹta pàtàkì: ipa ètò bí ó bá kùnà, ìjẹ́pàtàkì àwọn iṣẹ́ tí a pèsè, ìwọ̀n àti ìdíjú àwọn iṣẹ́, ìrọ́pò. ESAs ń tọ́jú àkójọpọ̀ wọ́n sì ń tẹ àwọn ìpinnu ìfìdíkalẹ̀ jáde. AWS, Microsoft (Azure), Google (GCP), àti Salesforce wà nínú tàbí lẹ́bàá àlà ìfìdíkalẹ̀, gẹ́gẹ́ bí ìpín ọjà iṣẹ́-ìnáwó nípa ìpínlẹ̀ kọ̀ọ̀kan. Ìfìdíkalẹ̀ fún olùṣàbójútó aṣáájú (ọ̀kan nínú ESAs, tí a pín fún olùpèsè kọ̀ọ̀kan) ní àṣẹ àbójútó tààrà: àwọn ìbéèrè ìwífúnni lábẹ́ Article 37, àyẹ̀wò orí-ìpò lábẹ́ Article 38, ìmọ̀ràn lábẹ́ Article 35, àti ètò ìfihàn-gbangba lábẹ́ Article 41. Àwọn bánkì tí ó ń ṣiṣẹ́ lórí àwọn CTPP yẹn wà lábẹ́ ìfojúsọ́nà àbójútó dógba lórí bí wọ́n ṣe ṣàkóso ìgbẹ́kẹ̀lé tí a fìdíkalẹ̀ yẹn.</p>
+<p><strong>Ìkẹta, àwọn àyájẹ́yọ àbójútó ECB 2026-28.</strong> Ìwé àyájẹ́yọ ń sọ orúkọ ètò gbangba méjì tí ó kan bánkì ọlọ́nà-àwọsánmà tààrà: ìmúrasílẹ̀ fún ìparun iṣẹ́-àwọsánmà pàtàkì (àwọn àpẹrẹ àbójútó tí a ṣe àfọwọ́yàn ń dán agbára ilé-iṣẹ́ láti gba ìparun tó pẹ́ ti CTPP tí a fìdíkalẹ̀ wò) àti TLPT tí a ṣàjọṣe pẹ̀lú TIBER-EU (gbogbo idárayá TIBER-EU ń wo àwọn iṣẹ́ pàtàkì àti pàtàkì ti ilé-iṣẹ́, èyí tí ó ní àwọn iṣẹ́ tí àwọsánmà-gbogbo-ènìyàn ń gbé báyìí). Ìgbì àyẹ̀wò 2026 yóò ṣe àwọn ìwádìí lórí àwọn méjèèjì.</p>
+<p>Ọ̀rọ̀ fún 2026 kì í ṣe &quot;DORA ń bọ̀&quot;; ó jẹ́ &quot;àwọn ìwádìí àyẹ̀wò DORA ń dé sí àpótí ìfiránṣẹ́ ilé-iṣẹ́ rẹ, àwọn ìpinnu platform-engineering tí o ṣe láti 2024-2025 sì ni ohun tí olùṣàbójútó yóò ṣàyẹ̀wò nínú àwọn ìwádìí yẹn.&quot;</p>
+<h2 id="iseto-atoka-2026">Ìṣètò Atọ́ka 2026 <a class="heading-anchor" href="#iseto-atoka-2026" aria-label="Ìjápọ̀ sí Ìṣètò Atọ́ka 2026">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Ipele Atọ́ka</th>
+<th>Bí &quot;Ìmúrasílẹ̀&quot; Ti Rí</th>
+<th>Àfojúsùn Ìmúrasílẹ̀</th>
+<th>Ọ̀nà Ìkùnà</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ìdàgbàsókè platform</strong></td>
+<td>&gt;80% àwọn workload lórí platform Kubernetes paved-road (EKS / AKS / GKE / OpenShift) pẹ̀lú admission policy-as-code, ìfilọ́lẹ̀ GitOps, àdánwò DR aládàáṣe</td>
+<td>% àwọn CIF lórí platform paved-road; iye ìfilọ́lẹ̀ òjìji; àkókò àárín láti gbé iṣẹ́ tuntun wọ́ platform</td>
+<td>Àwọn platform òjìji pẹ̀lú àwọn ìṣàkóso tí kò bára mu; àwọn CIF tí ń ṣiṣẹ́ lórí ìpilẹ̀ tí kò ní paved tí kò sí lójú ìbámu àkójọpọ̀ Article 8</td>
+</tr>
+<tr>
+<td><strong>Ìpé àkójọpọ̀ Article 8</strong></td>
+<td>Register of Information ń bára mu láìṣe pẹ̀lú lílo API ẹgbẹ́-kẹta platform + bill-of-materials àwọsánmà; ìpín ìjẹ́pàtàkì bára mu pẹ̀lú àkójọ CIF ilé-iṣẹ́</td>
+<td>% àwọn ohun tí ó wà ní àkójọpọ̀ tí ó bára mu pẹ̀lú telemetry platform; iye orphan-entry; àyẹ̀wò ìpé àlà CTPP</td>
+<td>ESAs rí ìgbẹ́kẹ̀lé CTPP tí a fìdíkalẹ̀ tí ilé-iṣẹ́ kò fihàn lábẹ́ Article 8; ìwádìí ẹnìkọ̀ọ̀kan àti àbájáde àlà CTPP</td>
+</tr>
+<tr>
+<td><strong>Ìkójọpọ̀ àwọsánmà</strong></td>
+<td>Àwọn iṣẹ́ pàtàkì tí a yàwòrán sí àwọn olùpèsè àwọsánmà ÀTI àwọn agbègbè abẹ́-àwọsánmà ÀTI àwọn iṣẹ́ ÀTI ìṣàyẹ̀wò ìrọ́pò; ìfihàn àlóólé-CIF tí a wọn</td>
+<td>Àfojúsùn ìkójọpọ̀ fún CIF kọ̀ọ̀kan; ìfihàn àlóólé jákèjádò àwọn CIF tí ń pín agbègbè CTPP kan tí a fìdíkalẹ̀</td>
+<td>Ìparun IAM AWS us-east-1 kan ṣoṣo ń mú CIF mẹ́rin lulẹ̀ tí ilé-iṣẹ́ rò pé wọ́n ní ohun-èlò ọ̀tọ̀ọ̀tọ̀</td>
+</tr>
+<tr>
+<td><strong>Agbára ìjáde tí a ṣe àdánwò</strong></td>
+<td>Àdánwò ìṣiṣẹ́-ìjáde láti ibẹ̀rẹ̀ dé òpin ní ọdún kọ̀ọ̀kan fún CIF kọ̀ọ̀kan tó dá lórí CTPP tí a fìdíkalẹ̀; RTO / RPO tí a kọ ń pé pẹ̀lú àfojúsùn BIA; ọ̀nà ìgbé-data tí a ṣe àdánwò</td>
+<td>Iye àdánwò tí ó borí fún CIF kọ̀ọ̀kan; àkókò àárín ìṣiṣẹ́-ìjáde lórí àfojúsùn RTO; latency ọ̀nà ìgbé-data</td>
+<td>Ètò ìjáde tí ó wà gẹ́gẹ́ bí PDF nìkan; tabletop sọ pé RTO 4h, àdánwò gangan fihàn 48h ní ìdánwò àkọ́kọ́</td>
+</tr>
+<tr>
+<td><strong>Ìríran + ìròyìn ìṣẹ̀lẹ̀</strong></td>
+<td>Àwọn trace OpenTelemetry láti ibẹ̀rẹ̀ dé òpin jákèjádò àwọn iṣẹ́; olùrànlọ́wọ́ ìpín Article 18 wákàtí-4 aládàáṣe tí a so mọ́ platform àkóso-ìṣẹ̀lẹ̀</td>
+<td>% traffic CIF tí àwọn trace OTel bo; àkókò àárín láti àwárí ìṣẹ̀lẹ̀ sí ìpinnu ìpín Article 18</td>
+<td>Ìṣẹ̀lẹ̀ pàtàkì tí a pín lẹ́yìn fèrèsé wákàtí-4 nítorí pé ìpinnu ìjẹ́pàtàkì nílò ìpàdé triage; ìwádìí Article 18</td>
+</tr>
+<tr>
+<td><strong>Ìmúdòkun TLPT</strong></td>
+<td>Ìwọ̀n TLPT tí a yọrí láti àkójọ CIF tí a sì ń mú ṣe-ọ̀tun gbogbo ìgbà; àwọn ìwádìí ń pa dà sí policy-as-code platform; àwọn ìwádìí tí a tipa ń ṣe àpótí ẹ̀rí tí ó ṣetán fún àbójútó</td>
+<td>Iye ìparí ìwádìí TLPT; àkókò ìyípo láti ìwádìí sí ìmúdájú-policy</td>
+<td>TLPT rí àìláàbò tí ẹgbẹ́ platform-engineering ilé-iṣẹ́ kò lè tún ṣe ní ìyípo ìfilọ́lẹ̀ kéré ju méjì</td>
+</tr>
+</tbody>
+</table>
+<h2 id="awon-ami-lowolowo-lati-topa">Àwọn Àmì Lọ́wọ́lọ́wọ́ Láti Tọpa <a class="heading-anchor" href="#awon-ami-lowolowo-lati-topa" aria-label="Ìjápọ̀ sí Àwọn Àmì Lọ́wọ́lọ́wọ́ Láti Tọpa">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Àmì</th>
+<th>Ohun Tí Ó Túmọ̀ Sí Fún Àwọn Bánkì</th>
+<th>Orísun</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DORA ní ìfipá-mú gbígbóná láti 17 Jan 2025</strong></td>
+<td>Àwọn ìwádìí àbójútó ìgbì àkọ́kọ́ dé Q4 2025; ìgbì kejì retí jálẹ̀ 2026 H2</td>
+<td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554" title="DORA">EUR-Lex ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Ìfìdíkalẹ̀ CTPP ń ṣí jálẹ̀ 2025-2026</strong></td>
+<td>AWS, Microsoft, Google, Salesforce nínú tàbí lẹ́bàá àlà; ìfìdíkalẹ̀ fún ESAs ní ẹ̀tọ́ àbójútó tààrà</td>
+<td><a href="https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act" title="EBA — DORA direct supervision and oversight">EBA ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Àwọn àyájẹ́yọ àbójútó ECB 2026-28 ń sọ ìparun àwọsánmà ní gbangba</strong></td>
+<td>Àwọn àpẹrẹ àbójútó tí a ṣe àfọwọ́yàn ń dán agbára láti gba ìparun CTPP tí a fìdíkalẹ̀ tó pẹ́ wò</td>
+<td><a href="https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html" title="Supervisory priorities 2026-28">ECB Banking Supervision ⧉</a></td>
+</tr>
+<tr>
+<td><strong>TIBER-EU tí a ṣàjọṣe pẹ̀lú DORA Article 26</strong></td>
+<td>Ìwọ̀n TLPT bo àwọn iṣẹ́ pàtàkì / pàtàkì tí ó ní àwọn iṣẹ́ tí àwọsánmà ń gbé</td>
+<td><a href="https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html" title="TIBER-EU">ECB TIBER-EU ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Àwọn ìtọ́ni ìfijáde EBA (EBA/GL/2019/02) ń bá DORA Article 28 ṣiṣẹ́</strong></td>
+<td>Wíwà gangan (¶64), ìṣàyẹ̀wò ìrọ́pò (¶81), ètò ìjáde (¶113-117) — àwọn ìpín tí àwọn olùṣàbójútó ń dánwò ní gangan</td>
+<td><a href="https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements" title="EBA Outsourcing Guidelines">EBA ⧉</a></td>
+</tr>
+<tr>
+<td><strong>EU Cloud Services Scheme (EUCS) draft ń tẹ̀síwájú</strong></td>
+<td>Ètò ìjẹ́rìí àwọsánmà alágbára ọjọ́ ọ̀la lábẹ́ EU Cybersecurity Act; draft tí ENISA tẹ jáde</td>
+<td><a href="https://www.enisa.europa.eu/publications/eucs-cloud-service-scheme" title="EUCS — Cybersecurity Scheme for Cloud Services">ENISA EUCS ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="platform-engineering-awon-ipile-marun-ti-a-so-oruko-won">Platform Engineering: Àwọn Ìpilẹ̀ Márùn Tí A Sọ Orúkọ Wọn <a class="heading-anchor" href="#platform-engineering-awon-ipile-marun-ti-a-so-oruko-won" aria-label="Ìjápọ̀ sí Platform Engineering: Àwọn Ìpilẹ̀ Márùn Tí A Sọ Orúkọ Wọn">#</a></h2>
+<p>Ìdàgbàsókè ọlọ́nà-àwọsánmà ní 2026 dín kù sí àwọn ìpilẹ̀ ẹ̀rọ márùn tí ń ṣiṣẹ́ pọ̀ láti ṣe ẹ̀rí àbójútó ní iyara pipeline ìfilọ́lẹ̀. Ọ̀kan tó bá kù jẹ́ ìwádìí tí ó ń dúró láti ṣẹlẹ̀.</p>
+<h3 id="1-paved-roads-ti-o-da-lori-kubernetes">1. Paved Roads Tí Ó Dá Lórí Kubernetes <a class="heading-anchor" href="#1-paved-roads-ti-o-da-lori-kubernetes" aria-label="Ìjápọ̀ sí 1. Paved Roads Tí Ó Dá Lórí Kubernetes">#</a></h3>
+<p>CIF kọ̀ọ̀kan ń ṣiṣẹ́ lórí platform Kubernetes tí a ṣàkóso — EKS, AKS, GKE, tàbí OpenShift lórí CTPP tí a fìdíkalẹ̀, tàbí àṣàyàn tí vendor ń ṣàkóso. Ẹgbẹ́ platform ń ṣiṣẹ́ àpẹrẹ cluster wúrà kan ṣoṣo pẹ̀lú àbámọ tí a ṣàkóso: àwọn node láti inú àwòrán ìpilẹ̀ tí a kọ; ìyà-sọ́tọ̀ namespace-fún-ẹgbẹ́; profile pod-security-standards-restricted; àwọn policy nẹ́tíwọ́kì; ìgbé service-mesh (Istio tàbí Linkerd) fún ìfọwọ́sí àti ìríran àárín-iṣẹ́. Àwọn iṣẹ́ tuntun darapọ̀ mọ́ paved road nípasẹ̀ workflow ìbẹ̀rẹ̀ pẹ̀lú template tí ń ṣe àkójọpọ̀ Article 8 gẹ́gẹ́ bí ohun ìfilọ́lẹ̀.</p>
+<h3 id="2-portal-oludagbasoke-bi-backstage">2. Portal Olùdàgbàsókè Bí Backstage <a class="heading-anchor" href="#2-portal-oludagbasoke-bi-backstage" aria-label="Ìjápọ̀ sí 2. Portal Olùdàgbàsókè Bí Backstage">#</a></h3>
+<p>Portal olùdàgbàsókè aárín — <a href="https://backstage.io/" title="Backstage developer portal">Backstage ⧉</a> koodu-ìṣí ti Spotify ni àpẹrẹ ìtọ́kasí, pẹ̀lú àwọn àṣàyàn ilé-iṣẹ́ tí ó yàtọ̀ — ń pèsè ìpamọ́ ohun tí ń ṣiṣẹ́ ní ibo. Ìwé-àkójọ ń ṣàkójọ iṣẹ́ kọ̀ọ̀kan, oníṣẹ́, ìgbẹ́kẹ̀lé, ìpín ìjẹ́pàtàkì, runbook, ìyípo on-call. Portal ń bá àkójọpọ̀ Article 8 ṣiṣẹ́ pọ̀: ohun tó wà ní ìwé-àkójọ kọ̀ọ̀kan ń yàwòrán sí ohun tó wà ní àkójọpọ̀; ohun tí kò ní ìtọ́kasí àkójọpọ̀ ń ṣe ìkùnà CI; ohun tó wà ní àkójọpọ̀ tí kò sí ní ìwé-àkójọ ń ṣe ìkìlọ̀ tó ń sọ àbójútó ṣáájú.</p>
+<h3 id="3-ifilole-gitops-nipase-argocd-tabi-flux">3. Ìfilọ́lẹ̀ GitOps Nípasẹ̀ ArgoCD tàbí Flux <a class="heading-anchor" href="#3-ifilole-gitops-nipase-argocd-tabi-flux" aria-label="Ìjápọ̀ sí 3. Ìfilọ́lẹ̀ GitOps Nípasẹ̀ ArgoCD tàbí Flux">#</a></h3>
+<p>Ìfilọ́lẹ̀ ìmúṣẹ ń lo olùṣàkóso GitOps — ArgoCD tàbí Flux ni ìmúrasílẹ̀ ìmúṣẹ ní 2026 — tí ń bá ipò ìkéde tí Git ti ṣe àkọsílẹ̀ mu pẹ̀lú cluster tí ń ṣiṣẹ́. <code>kubectl apply</code> ọwọ́ ń ṣe ìparí; ọ̀nà kan ṣoṣo sí ìmúṣẹ ni pull request tí a tipa. Ibi ìpamọ́ Git ni audit log; àwọn olùṣàbójútó tí ń béèrè &quot;fihàn mí ìṣètò iṣẹ́ X ní ọjọ́ Y&quot; gba Git tag, kì í ṣe screenshot.</p>
+<h3 id="4-open-policy-agent-ni-admission">4. Open Policy Agent Ní Admission <a class="heading-anchor" href="#4-open-policy-agent-ni-admission" aria-label="Ìjápọ̀ sí 4. Open Policy Agent Ní Admission">#</a></h3>
+<p>Open Policy Agent (OPA) jókòó nínú ìṣàka admission cluster ó sì ń mú policy platform ṣiṣẹ́: ìbámu profile pod-security, orísun image, ààlà ìpamọ́ ohun-èlò, wíwà policy-nẹ́tíwọ́kì, ìṣàṣẹ̀sí ìpele-ìjẹ́pàtàkì-tó yẹ, ìfìbọ̀ abẹ́-agbègbè lábẹ́ àwọn ìdènà àwọsánmà alágbára. Àwọn policy ní ìpilẹ̀ Git tí a sì ń ṣàkóso ìyípadà lẹ́gbẹ̀ẹ́ ìṣètò iṣẹ́. Àwọn ìfilọ́lẹ̀ tí a kọ̀ ń ṣe àlàyé tí a lè ṣàyẹ̀wò tí ó ń bọ́ àpótí ẹ̀rí àkóso-ìyípadà.</p>
+<h3 id="5-opentelemetry-lati-ibere-de-opin">5. OpenTelemetry Láti Ibẹ̀rẹ̀ Dé Òpin <a class="heading-anchor" href="#5-opentelemetry-lati-ibere-de-opin" aria-label="Ìjápọ̀ sí 5. OpenTelemetry Láti Ibẹ̀rẹ̀ Dé Òpin">#</a></h3>
+<p>Iṣẹ́ kọ̀ọ̀kan ń tu àwọn trace OpenTelemetry, àfojúsùn, àti log jáde. Ẹgbẹ́ platform ń ṣiṣẹ́ pipeline ìríran aárín — ní àbúrú Tempo tàbí Jaeger fún àwọn trace, Prometheus fún àwọn àfojúsùn, Loki tàbí OpenSearch fún àwọn log — tí ń fi ìlera CIF láti ibẹ̀rẹ̀ dé òpin, àwòrán ìgbẹ́kẹ̀lé, àti àwọn àkọ́sílẹ̀ ìpín-ìṣẹ̀lẹ̀ hàn. Fèrèsé ìpín Article 18 wákàtí-4 bẹ̀rẹ̀ pẹ̀lú àwárí; pipeline OTel ń kúrùn ọ̀nà láti àwárí sí ìpín sí ìbéèrè tí a lè wọ́, kì í ṣe ìpàdé triage.</p>
+<h2 id="awosanma-alagbara-gege-bi-ero-ki-i-se-ami-owo">Àwọsánmà Alágbára Gẹ́gẹ́ Bí Ẹ̀rọ, Kì í Ṣe Àmì Òwò <a class="heading-anchor" href="#awosanma-alagbara-gege-bi-ero-ki-i-se-ami-owo" aria-label="Ìjápọ̀ sí Àwọsánmà Alágbára Gẹ́gẹ́ Bí Ẹ̀rọ, Kì í Ṣe Àmì Òwò">#</a></h2>
+<p>Ètò àwọsánmà alágbára ní 2026 gbọdọ̀ dáhùn àwọn ìbéèrè Schrems II + DORA + ìfijáde EBA pàtó mẹ́rin:</p>
+<ol>
+<li><strong>Níbo ni a ti ṣe àkọ́ṣe àti pa data mọ́?</strong> Ipò ìpínlẹ̀-ọmọ EU; abẹ́-agbègbè fún àwọn àlọ́ ìjẹ́pàtàkì-gíga; àwọn ìpinnu ibùgbé data ní àkọsílẹ̀.</li>
+<li><strong>Tani ó ní àyè ofin sí data?</strong> Iṣẹ́ ọmọ-iṣẹ́-ìbílẹ̀-nìkan; àwọn ìbéèrè àyè ìjọba-orílẹ̀-òde tó wà lábẹ́ ètò ilé-ẹjọ́-ìbílẹ̀; ìdáhùn tí a ṣe àdánwò sí àwọn ìbéèrè àyè-lófin.</li>
+<li><strong>Kí ni profile ìrọ́pò?</strong> Ìṣàyẹ̀wò ìrọ́pò EBA/GL/2019/02 ¶81; ìṣiṣẹ́-ìjáde tí a ṣe àdánwò; olùpèsè mìíràn tí a ti dámọ̀ tí a sì ti ṣe àdéhùn (tàbí àkọsílẹ̀ ìdí tí kò fi ṣeéṣe).</li>
+<li><strong>Kí ni àpẹrẹ alágbára ìmọ̀-ẹ̀rọ?</strong> Àwọn kọ́kọ́rọ́ tí onílẹ̀ ń ṣàkóso; ìyà-sọ́tọ̀ cryptographic; àpẹrẹ àkóso alágbára; ìtọpasẹ̀ supply chain tí a lè ṣe àyẹ̀wò.</li>
+</ol>
+<p>Àwọn àṣàyàn vendor 2026 tí ń dáhùn àwọn ìbéèrè wọ̀nyí:</p>
+<ul>
+<li><strong>AWS European Sovereign Cloud</strong> (a kéde 2023, GA retí H2 2026): agbègbè ti ara tí àbújáde AWS olùgbé-EU ń ṣiṣẹ́; iṣẹ́ àti àtìlẹ́yìn olùgbé-EU; àwọn kọ́kọ́rọ́ tí onílẹ̀ ń ṣàkóso nípasẹ̀ àpẹrẹ KMS-XKS. Ìbámu àkóónú àdéhùn DORA Article 28 ń dúró ní 2026.</li>
+<li><strong>Microsoft EU Data Boundary</strong> (GA 2024) + <strong>Bleu</strong> (Capgemini + Orange + Microsoft, France-nìkan): Data Boundary ń pa data onílẹ̀ EU mọ́ ní àwọn agbègbè EU; Bleu ni àwọsánmà alágbára Faransé tí a ṣàjọṣe pẹ̀lú SecNumCloud tí ń ṣiṣẹ́ stack Microsoft Azure lábẹ́ ìṣàkóso iṣẹ́ Faransé.</li>
+<li><strong>Àjọṣepọ̀ alágbára Google Cloud</strong>: Thales / S3NS ní France (dọ́gba Bleu); T-Systems ní Germany.</li>
+<li><strong>Oracle EU Sovereign Cloud</strong> (GA 2023): àpẹrẹ agbègbè-méjì (Frankfurt + Madrid) pẹ̀lú iṣẹ́ olùgbé-EU; ó bá Schrems II mu mú.</li>
+<li><strong>Àwọn olùpèsè tí ó dá lórí Gaia-X</strong> (OVHcloud, Scaleway, Stackit, Aruba Cloud, IONOS): àwọn olùpèsè ti ìbílẹ̀-EU pẹ̀lú àmì Gaia-X; ìwọ̀n àti ètò abídá tí kéré ju àwọn hyperscaler ṣùgbọ́n láìsí ìfihàn Foreign Intelligence Surveillance Act.</li>
+</ul>
+<p>Ìpinnu ètò kì í ṣe méjì-méjì. Àwọn bánkì Tier-1 sábà máa ń ṣiṣẹ́ ìṣètò hyperscaler-pẹ̀lú-Data-Boundary fún ọpọ̀ workload, àṣàyàn àwọsánmà alágbára fún àwọn àlọ́ ìpamọ́-gíga tí a fìdíkalẹ̀ (fún àpẹẹrẹ àwọn ètò àkóso-ọ̀ràn AML / sanctions tí ń ṣàkóso data onílẹ̀ EU), àti ọ̀nà ìrọ́pò-àkànṣe tí a ṣe àdánwò lọ́dọọdún lábẹ́ DORA Article 28.</p>
+<h2 id="isise-ijade-ti-a-se-adanwo">Ìṣiṣẹ́-Ìjáde Tí A Ṣe Àdánwò <a class="heading-anchor" href="#isise-ijade-ti-a-se-adanwo" aria-label="Ìjápọ̀ sí Ìṣiṣẹ́-Ìjáde Tí A Ṣe Àdánwò">#</a></h2>
+<p>Àwọn ìpín 113-117 <a href="https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements" title="EBA Outsourcing Guidelines">EBA/GL/2019/02 ⧉</a> ni àwọn ìpín ètò-ìjáde. Ọ̀rọ̀ náà jẹ́ gbangba lórí ohun tí a nílò: &quot;Àwọn ilé-iṣẹ́ àti àwọn ilé-iṣẹ́ ìsanwó gbọdọ̀ rí i pé wọ́n lè jáde àwọn àdéhùn ìfijáde láìsí ìparun aláìyẹ sí àwọn iṣẹ́ ìṣòwò wọn… A gbọdọ̀ kọ àwọn ètò ìjáde sílẹ̀ kí a sì ṣe àdánwò gẹ́gẹ́ bí apá àwọn àyẹ̀wò àkàle ti àwọn àdéhùn ìfijáde.&quot;</p>
+<p>Ìfojúsọ́nà àbójútó ní 2026 ni àdánwò ìṣiṣẹ́-ìjáde láti ibẹ̀rẹ̀ dé òpin ní ọdún kọ̀ọ̀kan fún CIF kọ̀ọ̀kan tó dá lórí CTPP tí a fìdíkalẹ̀. Idárayá tabletop àti àyẹ̀wò ìwé kò tó. Àdánwò gbọdọ̀ ṣe:</p>
+<ul>
+<li><strong>Wíwọn àkókò-sí-mímú-pa dà</strong>: àkókò gangan tí ó kọjá láti ìkéde ìjáde nípasẹ̀ ìmúpadà workload lórí olùpèsè mìíràn, lórí àfojúsùn RTO tí ó wá látinú BIA.</li>
+<li><strong>Ẹ̀rí ìgbé-data</strong>: ìjáde data tí a ṣe àdánwò láti orísun àkọ́kọ́, tí a fọwọ́sí lórí ọ̀nà ìgbé olùpèsè ààyè, pẹ̀lú ẹ̀rí ìbámu.</li>
+<li><strong>Ìdọ́gba iṣẹ́</strong>: workload tí a ṣe àdánwò tí ń ṣiṣẹ́ lórí olùpèsè mìíràn pẹ̀lú SLO dọ́gba.</li>
+<li><strong>Ẹ̀rí ìnáwó</strong>: ìnáwó ìṣiṣẹ́-ìjáde tí a kọ sílẹ̀ lórí àròyé ìnáwó-ìmúpadà nínú ìpèsè ìṣèlú àkànṣe ilé-iṣẹ́.</li>
+</ul>
+<p>Ìdánwò àkọ́kọ́ ti àdánwò ìjáde láti ibẹ̀rẹ̀ dé òpin fún CIF sábà máa ń fi àlàfo 5-10× hàn láàárín RTO tí a kọ sílẹ̀ àti RTO gangan. Píparí àlàfo yẹn jẹ́ iṣẹ́ ẹ̀rọ tí ó gba oṣù púpọ̀. Àwọn bánkì tí ń ṣàwárí rẹ̀ nígbà àyẹ̀wò àbójútó dípò nígbà ìyípo àdánwò ọdún wọn dojú kọ ìyípo ìwádìí Q3 tí wọ́n lè ti yẹra fún.</p>
+<h2 id="afojusun-rto-rpo-lati-akojo-cif">Àfojúsùn RTO / RPO Láti Àkójọ CIF <a class="heading-anchor" href="#afojusun-rto-rpo-lati-akojo-cif" aria-label="Ìjápọ̀ sí Àfojúsùn RTO / RPO Láti Àkójọ CIF">#</a></h2>
+<p>Iṣẹ́ pàtàkì tàbí pàtàkì kọ̀ọ̀kan ń yàwòrán sí ìpín ipele tí ó wá látinú ìṣàyẹ̀wò ipa-iṣẹ́ ti ilé-iṣẹ́. Ipele ń darí àfojúsùn RTO àti RPO tí ẹgbẹ́ platform engineering ń ṣèlérí láti fi jiṣẹ́.</p>
+<table>
+<thead>
+<tr>
+<th>Ipele</th>
+<th>Àpẹẹrẹ</th>
+<th>RTO</th>
+<th>RPO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tier 1 (mission-critical)</strong></td>
+<td>Ìsopọ̀ RTGS (CHAPS / T2 / Fedwire), ìfọwọ́sí ìsanwó alábọ̀dé, ìfọwọ́sí oníbàárà fún àwọn ọ̀nà oníọ̀ka</td>
+<td>wákàtí 2</td>
+<td>ìṣẹ́jú 15</td>
+</tr>
+<tr>
+<td><strong>Tier 2 (critical)</strong></td>
+<td>Ìbéèrè AML / sanctions, pipeline ìwárí ètàn, ìfọwọ́sí ATM, ìṣàka ìsanwó batch</td>
+<td>wákàtí 4</td>
+<td>wákàtí 1</td>
+</tr>
+<tr>
+<td><strong>Tier 3 (important)</strong></td>
+<td>Ìròyìn àti ìfijíṣẹ́ ìṣàkóso, ibi-ìmọ̀ tí ó dojú kọ oníbàárà, platform ìjọṣepọ̀ inú</td>
+<td>wákàtí 24</td>
+<td>wákàtí 4</td>
+</tr>
+<tr>
+<td><strong>Tier 4 (kò ṣe pàtàkì)</strong></td>
+<td>Ètò HR inú, irinṣẹ́ ìpolówó, ìròyìn tí kò dojú kọ oníbàárà</td>
+<td>wákàtí 72</td>
+<td>wákàtí 24</td>
+</tr>
+</tbody>
+</table>
+<p>Àwọn nọ́mbà wọ̀nyí jẹ́ àpẹẹrẹ — BIA ti ilé-iṣẹ́ ń ṣe tirẹ̀. Ohun tí platform engineering yóò fi jiṣẹ́ ni agbára tí a ti ṣe regression-test láti pé àwọn àfojúsùn tí ó wá látinú BIA, tí a fi hàn nípasẹ̀ àdánwò DR aládàáṣe fún iṣẹ́ kọ̀ọ̀kan tí a sì fọwọ́sí nípasẹ̀ àdánwò ìṣiṣẹ́-ìjáde ọdún fún àwọn CIF tó dá lórí CTPP.</p>
+<h2 id="ohun-ti-eyi-tumo-si-nipa-iru-banki">Ohun Tí Èyí Túmọ̀ Sí Nípa Irú Bánkì <a class="heading-anchor" href="#ohun-ti-eyi-tumo-si-nipa-iru-banki" aria-label="Ìjápọ̀ sí Ohun Tí Èyí Túmọ̀ Sí Nípa Irú Bánkì">#</a></h2>
+<h3 id="awon-banki-pataki-eto-kaakiri-aye">Àwọn Bánkì Pàtàkì-Ètò Káàkiri Ayé <a class="heading-anchor" href="#awon-banki-pataki-eto-kaakiri-aye" aria-label="Ìjápọ̀ sí Àwọn Bánkì Pàtàkì-Ètò Káàkiri Ayé">#</a></h3>
+<p>Iṣòro tó le ni ìwọ̀n káàkiri àwọn ìlà-ìṣòwò: ẹgbẹẹgbẹ̀rún iṣẹ́, ọgọ́rùn-ún CIF, ìfihàn CTPP-tí-a-fìdíkalẹ̀ púpọ̀ jákèjádò àwọn ọjà, ìpínlẹ̀, àti profile ìfaradà. Ìnáwó ni agbára platform-engineering aárín — paved roads Kubernetes, portal Backstage, GitOps, OPA, OTel — tí ń ṣe ìbámu àkójọpọ̀ Article 8, àwòrán ìkójọpọ̀ CTPP, àti agbára ìṣiṣẹ́-ìjáde CIF-fún-CIF láìsí ìkọ̀-fún-ìlà-ìṣòwò àkànṣe.</p>
+<h3 id="awon-banki-kaakiri-ati-aarin-iwon">Àwọn Bánkì Káàkiri àti Aárín-Ìwọ̀n <a class="heading-anchor" href="#awon-banki-kaakiri-ati-aarin-iwon" aria-label="Ìjápọ̀ sí Àwọn Bánkì Káàkiri àti Aárín-Ìwọ̀n">#</a></h3>
+<p>Ìnáwó platform-engineering ní ìdáláre ní ipele yìí ṣùgbọ́n ìwọ̀n náà ní ààlà: yàn CIF méjì tàbí mẹ́ta tó ní ìjẹ́pàtàkì gíga jùlọ, kọ́ àpẹrẹ paved-road yí wọn ká, gba pé ohun-èlò àtijọ́ ń tẹ̀síwájú lórí àwọn ìṣàkóso tí ó wà fún àkókò àárín. Ipò àbójútó ṣe pàtàkì ju ìbo platform — agbára láti fi ẹ̀rí ìpé àkójọpọ̀ DORA Article 8 àti ìjáde tí a ṣe àdánwò hàn fún CIF mẹ́ta tó ga jùlọ bo àwọn ìdàrú àkọ́kọ́ ti olùṣàbójútó.</p>
+<h3 id="awon-banki-agbegbe-ati-kere">Àwọn Bánkì Agbègbè àti Kéré <a class="heading-anchor" href="#awon-banki-agbegbe-ati-kere" aria-label="Ìjápọ̀ sí Àwọn Bánkì Agbègbè àti Kéré">#</a></h3>
+<p>Yíyàn vendor ju ìkọ́ inú. Yàn vendor platform bánkì tí ìṣètò Kubernetes-native rẹ̀ wà ní àkọsílẹ̀, tí ìbámu àkójọpọ̀ Article 8 rẹ̀ wà nínú, tí àwọn àdéhùn àkóónú àdéhùn DORA Article 28 rẹ̀ sì jẹ́ gbangba. Agbára ẹ̀rọ inú yí ìṣètò, ìbojú, àti ìdáhùn ìṣẹ̀lẹ̀ ká — kì í ṣe ìkọ́ platform.</p>
+<h3 id="awon-fintech-psp-ati-olupese-saas-ti-n-sin-banki">Àwọn Fintech, PSP, àti Olùpèsè SaaS Tí Ń Sin Bánkì <a class="heading-anchor" href="#awon-fintech-psp-ati-olupese-saas-ti-n-sin-banki" aria-label="Ìjápọ̀ sí Àwọn Fintech, PSP, àti Olùpèsè SaaS Tí Ń Sin Bánkì">#</a></h3>
+<p>Ìbéèrè ọjà fún àwọn vendor tí ń ta sí àwọn bánkì EU ní 2026 ni bóyá platform ń ṣe àwọn ohun tó wà ní àkójọpọ̀ Article 8 àti àkóónú àdéhùn DORA Article 28 tí iṣẹ́ ìbámu bánkì nílò. Àwọn vendor pẹ̀lú àwọn ohun-jáde tí a ṣètò ń borí àwọn àdéhùn ilé-iṣẹ́; àwọn vendor pẹ̀lú template PDF padanu sí àwọn adíje pẹ̀lú JSON tí a ṣètò.</p>
+<h2 id="ipari">Ìparí <a class="heading-anchor" href="#ipari" aria-label="Ìjápọ̀ sí Ìparí">#</a></h2>
+<p>Ìfaradà àwọsánmà DORA wà ní ìpele àbójútó. Àwọn ìpinnu platform-engineering tí a ṣe láti 2024-2025 ni ohun tí ìyípo àbójútó 2026 yóò ṣàyẹ̀wò. Àwọn ilé-iṣẹ́ tí yóò dabi ẹni tí ó gbàgbọ́ fún ECB àti EBA ní 2026-2028 ni àwọn tí ń ṣiṣẹ́ paved roads Kubernetes pẹ̀lú àwọn portal bí Backstage àti ìfilọ́lẹ̀ GitOps lábẹ́ admission Open Policy Agent pẹ̀lú OpenTelemetry láti ibẹ̀rẹ̀ dé òpin — tí ń ṣe ẹ̀rí àkójọpọ̀ Article 8 gẹ́gẹ́ bí ohun ìfilọ́lẹ̀ àti ẹ̀rí ìṣiṣẹ́-ìjáde tí a ṣe àdánwò gẹ́gẹ́ bí ìyípo ọdún, kì í ṣe ìdáhùn ìbéèrè àbójútó.</p>
+<p>Àwọn ilé-iṣẹ́ tí kò ṣe àwọn ìnáwó wọ̀nyẹn yóò ṣàwárí bóyá ẹgbẹ́ ìbámu ìlà-kejì wọn lè gba ìyípo àkọ́kọ́ ìwádìí àbójútó wọ̀ ṣáájú kí ìyípo kejì tó dé.</p>
+<p>Wọn platform ní ọ̀nà tí o ń wọn ètò iṣẹ́ èyíkéyìí: ìbo paved-road, iye ìbámu àkójọpọ̀, àfojúsùn ìkójọpọ̀ CTPP, àkókò ìjáde tí a ṣe àdánwò lórí àfojúsùn RTO, àkókò àárín ìpín Article 18, iye ìparí TLPT. Ẹ̀rí ní iyara pipeline; àkójọ ìwé nìkan nígbà tí olùṣàbójútó bá béèrè fún ọ̀kan.</p>
+<h2 id="awon-ibeere-ti-a-saba-beere">Àwọn Ìbéèrè Tí A Sábà Béèrè <a class="heading-anchor" href="#awon-ibeere-ti-a-saba-beere" aria-label="Ìjápọ̀ sí Àwọn Ìbéèrè Tí A Sábà Béèrè">#</a></h2>
+<p><strong>Ǹjẹ́ ìfaradà àwọsánmà DORA ṣì wà ní ìpele ìmúrasílẹ̀ ní 2026?</strong></p>
+<p>Bẹ́ẹ̀ kọ́. DORA ti wà ní ìfipá-mú gbígbóná láti 17 janvier 2025. Ètò ìfìdíkalẹ̀ CTPP lábẹ́ Articles 28-44 ń ṣí jálẹ̀ 2025-2026. Àwọn ìwádìí àyẹ̀wò ECB lórí ìṣàkóso ewu ICT Article 6 àti ìpé àkójọpọ̀ Article 8 dé jákèjádò àwọn ilé-iṣẹ́ tier-1 púpọ̀ ní Q4 2025. Ìbéèrè àbójútó 2026 jẹ́ ẹ̀rí àyẹ̀wò pàtó-ilé-iṣẹ́, kì í ṣe ìmúrasílẹ̀ ìṣàkóso.</p>
+<p><strong>Olùpèsè àwọsánmà wo ni a fìdíkalẹ̀ gẹ́gẹ́ bí CTPP?</strong></p>
+<p>ESAs ń tẹ àwọn ìpinnu ìfìdíkalẹ̀ jáde lórí àwọn ojú-òpó wẹ́ẹ̀bù wọn. Àwọn ilé-iṣẹ́ nínú tàbí lẹ́bàá àlà ní 2026 ní AWS, Microsoft (Azure), Google (GCP), Salesforce, àti iye kéré ti àwọn mìíràn gẹ́gẹ́ bí ìpín ọjà iṣẹ́-ìnáwó nípa ìpínlẹ̀ kọ̀ọ̀kan. Àwọn bánkì tí ó ń ṣiṣẹ́ lórí àwọn olùpèsè yẹn dojú kọ ìfojúsọ́nà àbójútó dógba lórí bí wọ́n ṣe ṣàkóso ìgbẹ́kẹ̀lé yẹn.</p>
+<p><strong>Ǹjẹ́ àwọsánmà alágbára ń mú àìní àkóónú àdéhùn DORA Article 28 kúrò?</strong></p>
+<p>Bẹ́ẹ̀ kọ́. Àwọsánmà alágbára ń bá ipò Schrems II + ibùgbé-data; àkóónú àdéhùn DORA Article 28 jẹ́ ojúṣe ọ̀tọ̀ọ̀tọ̀ tí ń lo láìka ibi tí data bá jókòó sí. Àdéhùn olùpèsè-àwọsánmà-alágbára gbọdọ̀ ṣì bo àyè data, ààbò, ibùgbé, ẹ̀tọ́ àyẹ̀wò, àwọn ètò ìjáde, àti ìtẹ̀síwájú gẹ́gẹ́ bí Article 28.</p>
+<p><strong>Kí ni ohun tí ẹ̀rọ yóò fi jiṣẹ́ tí ń fihàn ìfaradà àwọsánmà DORA?</strong></p>
+<p>Àwọn ìpilẹ̀ platform-engineering márùn tí ń ṣiṣẹ́ pọ̀: paved roads Kubernetes (cluster tí a ṣàkóso pẹ̀lú àbámọ tí policy ṣàkóso), portal olùdàgbàsókè bí Backstage (ìwé-àkójọ tí ń bára mu pẹ̀lú àkójọpọ̀ Article 8), ìfilọ́lẹ̀ GitOps (ArgoCD tàbí Flux), Open Policy Agent ní admission, OpenTelemetry láti ibẹ̀rẹ̀ dé òpin. Ẹ̀rí ní iyara pipeline dípò ní àkókò ìdánwò.</p>
+<p><strong>Báwo ni a ṣe nílò láti dán ìṣiṣẹ́-ìjáde wò ní ìgbà mélòó?</strong></p>
+<p>Àdánwò ìṣiṣẹ́-ìjáde láti ibẹ̀rẹ̀ dé òpin lọ́dọọdún fún CIF kọ̀ọ̀kan tó dá lórí CTPP tí a fìdíkalẹ̀. Idárayá tabletop àti àyẹ̀wò ìwé kò tó. Àdánwò gbọdọ̀ ṣe àkókò-sí-mímú-pa dà, ẹ̀rí ìgbé-data, ìdọ́gba iṣẹ́, àti ẹ̀rí ìnáwó — tí a wọn lórí àfojúsùn RTO àti RPO tí ó wá látinú BIA.</p>
+<h2 id="awon-itokasi">Àwọn Ìtọ́kasí <a class="heading-anchor" href="#awon-itokasi" aria-label="Ìjápọ̀ sí Àwọn Ìtọ́kasí">#</a></h2>
+<ul>
+<li>European Union, (2022). <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554" title="DORA">Regulation (EU) 2022/2554 — Digital Operational Resilience Act (DORA) ⧉</a>.</li>
+<li>European Banking Authority, (2019). <a href="https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements" title="EBA Outsourcing Guidelines">EBA/GL/2019/02 — Guidelines on outsourcing arrangements ⧉</a>.</li>
+<li>European Banking Authority, (2026). <a href="https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act" title="EBA — DORA direct supervision and oversight">Digital Operational Resilience Act ⧉</a>.</li>
+<li>European Supervisory Authorities, (2024). <a href="https://www.eba.europa.eu/sites/default/files/2024-01/0e155f7a-9b09-4dba-89cb-37f7e8e1c540/JC%202023%2086%20-%20Final%20report%20on%20draft%20ITS%20on%20Register%20of%20information%20under%20DORA.pdf" title="ESAs ITS">Final Report on the ITS on the Register of Information under DORA ⧉</a>.</li>
+<li>ECB Banking Supervision, (2025). <a href="https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html" title="ECB priorities 2026-28">Supervisory priorities 2026-28 ⧉</a>.</li>
+<li>European Central Bank, (2024). <a href="https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html" title="TIBER-EU">TIBER-EU framework ⧉</a>.</li>
+<li>ENISA, (2024). <a href="https://www.enisa.europa.eu/publications/eucs-cloud-service-scheme" title="EUCS">EU Cybersecurity Scheme for Cloud Services (EUCS) ⧉</a>.</li>
+<li>Spotify, (2020-2024). <a href="https://backstage.io/" title="Backstage">Backstage developer portal ⧉</a>.</li>
+<li>Cloud Native Computing Foundation, (2018). <a href="https://www.openpolicyagent.org/" title="Open Policy Agent">Open Policy Agent (OPA) ⧉</a>.</li>
+<li>Cloud Native Computing Foundation, (2019). <a href="https://opentelemetry.io/" title="OpenTelemetry">OpenTelemetry ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Àyẹ̀wò ìkẹyìn <time datetime="2026-06-05">2026-06-05</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/yo/nipa-wa/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ báńkì àgbà; mò ń kọ nípa AI tó wúlò, ìṣírò ISO 20022, kírípító lẹ́yìn-kuántọ́mù fún iṣẹ́ ìnáwó àti àtúnṣe ètò ìsanwó ńláńlá.</span><span class="author-credentials">Ìrírí ọdún 20+ ní HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/yo/nipa-wa/index.html">Àkọsílẹ̀ kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Àyẹ̀wò àkọ́kọ́ <time datetime="2026-06-05">2026-06-05</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Ìwé tó jọmọ́</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2026-05-20-cloud-native-banking-financial-institutions-2026" class="related-media" aria-label="Cloud Native Banking ní 2026: Kubernetes, DORA, Ipa-ọba, àti Òpin Ìpínyà láàrín VM àti Container" tabindex="-1"><img alt="Cloud-native banking architecture for 2026 showing Kubernetes, VM coexistence, DORA resilience, sovereign cloud, observability, and bank platform engineering" src="https://cloudcdn.pro/api/transform?url=/stocks/images/freeman-zhou-oV9hp8wXkPE.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="cloud-native-banking-ni-2026-kubernetes-dora-ipa-oba-ati-opin-ipinya-laarin-vm-a"><a href="https://sebastienrousseau.com/yo/2026-05-20-cloud-native-banking-financial-institutions-2026">Cloud Native Banking ní 2026: Kubernetes, DORA, Ipa-ọba, àti Òpin Ìpínyà láàrín VM àti Container</a> <a class="heading-anchor" href="#cloud-native-banking-ni-2026-kubernetes-dora-ipa-oba-ati-opin-ipinya-laarin-vm-a" aria-label="Ìjápọ̀ sí Cloud Native Banking ní 2026: Kubernetes, DORA, Ipa-ọba, àti Òpin Ìpínyà láàrín VM àti Container">#</a></h3><p><time datetime="2026-05-20">2026-05-20</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026" class="related-media" aria-label="Atọ́ka Ohun Èlò Báńkì 2026: Wíwọn Ìmúrasílẹ̀ fún AI Aládàádúró, Ààbò Ọba-Aláṣẹ-Quantum, Ìfaradà Orígínal-Àwọsánmà, àti Ìsanwó Olówó-Ńlá" tabindex="-1"><img alt="An editorial aerial composition by Miguel Sousa suggesting interlocking systems — the visual register chosen for a board-level dashboard view of the 2026 Banking Infrastructure Index" src="https://cloudcdn.pro/api/transform?url=/stocks/images/miguel-sousa-ejIF-pJhYkM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="atoka-ohun-elo-banki-2026-wiwon-imurasile-fun-ai-aladaaduro-aabo-oba-alase-quant"><a href="https://sebastienrousseau.com/yo/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026">Atọ́ka Ohun Èlò Báńkì 2026: Wíwọn Ìmúrasílẹ̀ fún AI Aládàádúró, Ààbò Ọba-Aláṣẹ-Quantum, Ìfaradà Orígínal-Àwọsánmà, àti Ìsanwó Olówó-Ńlá</a> <a class="heading-anchor" href="#atoka-ohun-elo-banki-2026-wiwon-imurasile-fun-ai-aladaaduro-aabo-oba-alase-quant" aria-label="Ìjápọ̀ sí Atọ́ka Ohun Èlò Báńkì 2026: Wíwọn Ìmúrasílẹ̀ fún AI Aládàádúró, Ààbò Ọba-Aláṣẹ-Quantum, Ìfaradà Orígínal-Àwọsánmà, àti Ìsanwó Olówó-Ńlá">#</a></h3><p><time datetime="2026-06-02">2026-06-02</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" class="related-media" aria-label="DORA, EU AI Act, àti Ọba Lori Dátà: Akopọ Ìbámu 2026 fún Báńkì" tabindex="-1"><img alt="Compliance stack diagram showing DORA resilience, EU AI Act transparency, data sovereignty, cloud concentration risk, audit logs, model governance, and third-party providers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="dora-eu-ai-act-ati-oba-lori-data-akopo-ibamu-2026-fun-banki"><a href="https://sebastienrousseau.com/yo/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026">DORA, EU AI Act, àti Ọba Lori Dátà: Akopọ Ìbámu 2026 fún Báńkì</a> <a class="heading-anchor" href="#dora-eu-ai-act-ati-oba-lori-data-akopo-ibamu-2026-fun-banki" aria-label="Ìjápọ̀ sí DORA, EU AI Act, àti Ọba Lori Dátà: Akopọ Ìbámu 2026 fún Báńkì">#</a></h3><p><time datetime="2026-05-28">2026-05-28</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Orisun & àyọ̀kà</h2><ol class="article-sources-list"><li><a href="https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html" rel="external noopener nofollow"><span class="source-host">www.ecb.europa.eu</span><span class="source-path">/paym/cyber-resilience/tiber-eu/html/index.en.html</span></a></li></ol></aside><nav class="post-pagination" aria-label="Ìpín àkọlé"><a class="post-pagination-prev" href="/yo/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"><span class="post-pagination-label">Tẹ́lẹ̀</span><span class="post-pagination-title">The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/yo/nipa-wa/index.html">About</a></li>
+              <li><a href="/yo/kan-si-wa/index.html">Contact</a></li>
+              <li><a href="/yo/static-site-generator-lo-ti-se/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Àkọsílẹ̀</h2>
+            <ul>
+              <li><a href="/yo/awon-akole/index.html">Articles</a></li>
+              <li><a href="/yo/awon-iwe/index.html">Papers</a></li>
+              <li><a href="/yo/awon-ami/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Iṣẹ́</h2>
+            <ul>
+              <li><a href="/yo/awon-ise/index.html">Projects</a></li>
+              <li><a href="/yo/akojopo-orin/index.html">Playlists</a></li>
+              <li><a href="/yo/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Kàn sí</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Ìforúkọsílẹ̀ ìwé ìròyìn">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — àwọn àkíyèsí ìwádìí lórí ìsanwó, AI àti kírípító lẹ́yìn-kuántọ́mù. Kò sí spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="iwo@banki.com.ng" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Forúkọsílẹ̀</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Àwọn ọ̀nà àjọṣepọ̀">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau lórí Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau lórí LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau lórí Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau lórí YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/yo/ile-wiwole/index.html">Accessibility</a> ·
+            <a href="/yo/aabo-ikoko/index.html">Privacy</a> ·
+            <a href="/yo/awon-ofin/index.html">Terms</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/project-docs/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0009-0005-1434-284X","url":"https://orcid.org/0009-0005-1434-284X"},"worksFor":{"@type":"Organization","@id":"https://www.hsbc.com/#organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal","url":"https://www.paypal.com/"},{"@type":"Organization","name":"Barclays","url":"https://www.barclays.com/"},{"@type":"Organization","name":"Shazam Entertainment","url":"https://www.shazam.com/"},{"@type":"Organization","name":"AKQA","url":"https://www.akqa.com/"},{"@type":"Organization","name":"Virgin Group","url":"https://www.virgin.com/"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"professional experience","name":"20+ years across Tier-1 banks and global payments infrastructure","recognizedBy":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"ISO 20022 migration and wholesale payments architecture","recognizedBy":{"@type":"Organization","name":"SWIFT","url":"https://www.swift.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"Post-Quantum Cryptography for financial services","recognizedBy":{"@type":"Organization","name":"NIST Post-Quantum Cryptography Project","url":"https://csrc.nist.gov/projects/post-quantum-cryptography"}}],"knowsAbout":[{"@type":"DefinedTerm","name":"Post-Quantum Cryptography","sameAs":"https://en.wikipedia.org/wiki/Post-quantum_cryptography"},{"@type":"DefinedTerm","name":"ML-KEM (FIPS 203)","sameAs":"https://csrc.nist.gov/pubs/fips/203/final"},{"@type":"DefinedTerm","name":"ML-DSA (FIPS 204)","sameAs":"https://csrc.nist.gov/pubs/fips/204/final"},{"@type":"DefinedTerm","name":"ISO 20022","sameAs":"https://en.wikipedia.org/wiki/ISO_20022"},{"@type":"DefinedTerm","name":"SWIFT gpi","sameAs":"https://www.swift.com/our-solutions/swift-gpi"},{"@type":"DefinedTerm","name":"SEPA Instant Payments","sameAs":"https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/index.en.html"},{"@type":"DefinedTerm","name":"FedNow Service","sameAs":"https://www.federalreserve.gov/paymentsystems/fednow_about.htm"},{"@type":"DefinedTerm","name":"Real-Time Payments (RTP)","sameAs":"https://www.theclearinghouse.org/payment-systems/rtp"},{"@type":"DefinedTerm","name":"Cross-border payments","sameAs":"https://en.wikipedia.org/wiki/Cross-border_payments"},{"@type":"DefinedTerm","name":"Wholesale banking","sameAs":"https://en.wikipedia.org/wiki/Wholesale_banking"},{"@type":"DefinedTerm","name":"Applied artificial intelligence in banking","sameAs":"https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence"},{"@type":"DefinedTerm","name":"Generative artificial intelligence","sameAs":"https://en.wikipedia.org/wiki/Generative_artificial_intelligence"}],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://orcid.org/0009-0005-1434-284X","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":["Organization","Brand"],"@id":"https://sebastienrousseau.com/#organization","name":"Sebastien Rousseau","alternateName":"Banking on Quantum","url":"https://sebastienrousseau.com/","logo":{"@type":"ImageObject","@id":"https://sebastienrousseau.com/#logo","url":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","width":"512","height":"512","caption":"Sebastien Rousseau"},"founder":{"@id":"https://sebastienrousseau.com/#person"},"editorialPolicy":"https://sebastienrousseau.com/editorial/","correctionsPolicy":"https://sebastienrousseau.com/editorial/#corrections","ethicsPolicy":"https://sebastienrousseau.com/editorial/","diversityPolicy":"https://sebastienrousseau.com/editorial/","sameAs":["https://github.com/sebastienrousseau","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#organization"},"author":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"yo"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"yo"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":3553,"headline":"Atọ́ka Bánkì Ọlọ́nà-Àwọsánmà ní 2026: DORA, Platform Engineering, Àwọsánmà Alágbára, àti Ìfaradà Iṣẹ́","description":"Atọ́ka bánkì ọlọ́nà-àwọsánmà 2026 fún wíwọn ìmúrasílẹ̀ DORA, ìdàgbàsókè platform engineering, ewu ìkójọpọ̀ àwọsánmà, ẹ̀rí ìjáde, àti ìfaradà iṣẹ́.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp","width":"100vw","height":"100vh","caption":"Àpẹrẹ pátákó circuit tó yí padà di àwòrán ìlú — èyí ni ìmúrasílẹ̀ ìríran tí a yàn fún bánkì ọlọ́nà-àwọsánmà: àwọn ìpilẹ̀ platform-engineering tí a rán mọ́ aṣọ iṣẹ́ bánkì."},"url":"https://sebastienrousseau.com/yo/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/","datePublished":"2026-06-05T06:06:06+00:00","dateModified":"2026-06-05","inLanguage":"yo","keywords":"bánkì ọlọ́nà-àwọsánmà 2026, àwọn bánkì DORA, ewu ìkójọpọ̀ àwọsánmà, platform engineering bánkì, ewu ICT ẹgbẹ́ kẹta, ètò ìjáde àwọsánmà, àwọsánmà alágbára","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/yo/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"yo"},"citation":[{"@type":"CreativeWork","url":"https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/yo/"},{"@type":"ListItem","position":3,"name":"Atọ́ka Bánkì Ọlọ́nà-Àwọsánmà ní 2026: DORA, Platform Engineering, Àwọsánmà Alágbára, àti Ìfaradà Iṣẹ́","item":"https://sebastienrousseau.com/yo/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"}]}]}</script>
+<script src="/main.3235c87d.js" defer integrity="sha256-kjIlUHXBi289933sIaLCsruQAF1O2AJ8iOtt/UaNQ4k= sha256-QrtqMY3gz6qupQj1tQCknUk1gmSnnOkzkIz4tWk4IFg=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Wá">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Wá</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Wá">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Wá nínú àwọn ìwé..." autocomplete="off" aria-label="Wá"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> tì</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> ríranlọ́wọ́</span><span><kbd>Enter</kbd> ṣí</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Atọ́ka Bánkì Ọlọ́nà-Àwọsánmà ní 2026: DORA, Platform Engineering, Àwọsánmà Alágbára, àti Ìfaradà Iṣẹ́","url":"https://sebastienrousseau.com/yo/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/","inLanguage":"yo-NG","isAccessibleForFree":true,"author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/yo/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"},"keywords":"bánkì ọlọ́nà-àwọsánmà 2026, àwọn bánkì DORA, ewu ìkójọpọ̀ àwọsánmà, platform engineering bánkì, ewu ICT ẹgbẹ́ kẹta, ètò ìjáde àwọsánmà, àwọsánmà alágbára","proficiencyLevel":"Expert"}</script></body>
+</html>

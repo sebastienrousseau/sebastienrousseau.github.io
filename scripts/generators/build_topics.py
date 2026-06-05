@@ -97,6 +97,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "ship critical services under supervision."
         ),
         "slugs": [
+            "2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026",
             "2026-05-20-cloud-native-banking-financial-institutions-2026",
             "2026-05-16-best-cloud-infrastructure-architecture-2026",
         ],
