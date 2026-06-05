@@ -118,9 +118,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: _data/pa11y-cache.json
-          key: pa11y-cache-v1-${{ runner.os }}
+          key: pa11y-cache-v1-${{ runner.os }}-${{ github.run_id }}
           restore-keys: |
-            pa11y-cache-v1-
+            pa11y-cache-v1-${{ runner.os }}-
 
       - name: Serve public/
         run: |
