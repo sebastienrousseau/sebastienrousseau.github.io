@@ -1,0 +1,3 @@
+(function(){"use strict";var loaded=false;function loadRecaptcha(){if(loaded)return;loaded=true;var s=document.createElement("script");s.src="https://www.google.com/recaptcha/api.js";s.async=true;s.defer=true;document.head.appendChild(s);}
+var widget=document.querySelector(".g-recaptcha");var form=document.querySelector(".ap-form");if(form){form.addEventListener("focusin",loadRecaptcha,{once:true});form.addEventListener("pointerdown",loadRecaptcha,{once:true});}
+if(widget&&"IntersectionObserver"in window){var io=new IntersectionObserver(function(entries){if(entries.some(function(e){return e.isIntersecting;})){io.disconnect();loadRecaptcha();}},{rootMargin:"400px"});io.observe(widget);}else if(widget){loadRecaptcha();}})();

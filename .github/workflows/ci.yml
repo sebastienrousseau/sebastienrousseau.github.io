@@ -21,9 +21,12 @@ jobs:
       contents: read
       pages: write
       id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    # The `github-pages` environment has "Deployment branches: main only"
+    # protection. Applying it to the whole job blocks every PR run at the
+    # 2-second mark before any step executes. Bind it only when this run
+    # is actually going to deploy (main push) so PRs can still get a real
+    # build / lint / test / Lighthouse / pa11y signal.
+    environment: ${{ github.ref == 'refs/heads/main' && 'github-pages' || '' }}
     steps:
       - uses: actions/checkout@v4
 

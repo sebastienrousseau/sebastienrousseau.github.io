@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
-  "locale": "bn_BD",
-  "language": "bn-BD",
-  "title": "Protecting Data in the Quantum Age: The Hash Library (HSH)",
   "subtitle": "HSH: প্রমাণীকরণের পোস্ট-কোয়ান্টাম যুগের জন্য একটি কোয়ান্টাম-প্রতিরোধী হ্যাশ লাইব্রেরি।",
-  "keywords": "কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফি, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, হ্যাশ লাইব্রেরি, HSH, পাসওয়ার্ড হ্যাশিং, কী ডেরিভেশন, Argon2i, Bcrypt, Scrypt, কোয়ান্টাম কম্পিউটিং",
+  "title": "Protecting Data in the Quantum Age: The Hash Library (HSH)",
   "banner_alt": "কোয়ান্টাম কম্পিউটিং থিমে একটি সৃজনশীল চিত্র",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
+  "description": "HSH কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফিক প্রিমিটিভ ব্যবহার করে আপনার ডেটা সুরক্ষিত রাখে, ভবিষ্যতের কোয়ান্টাম কম্পিউটিং অগ্রগতির মুখেও এর নিরাপত্তা নিশ্চিত করে।",
+  "language": "bn-BD",
   "date": "Oct 16, 2023",
-  "description": "HSH কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফিক প্রিমিটিভ ব্যবহার করে আপনার ডেটা সুরক্ষিত রাখে, ভবিষ্যতের কোয়ান্টাম কম্পিউটিং অগ্রগতির মুখেও এর নিরাপত্তা নিশ্চিত করে।"
+  "locale": "bn_BD",
+  "keywords": "কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফি, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, হ্যাশ লাইব্রেরি, HSH, পাসওয়ার্ড হ্যাশিং, কী ডেরিভেশন, Argon2i, Bcrypt, Scrypt, কোয়ান্টাম কম্পিউটিং"
 }
