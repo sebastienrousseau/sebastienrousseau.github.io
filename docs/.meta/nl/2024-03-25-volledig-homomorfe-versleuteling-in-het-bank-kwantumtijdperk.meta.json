@@ -1,11 +1,11 @@
 {
+  "date": "March 25, 2024",
+  "title": "Volledig homomorfe versleuteling in het bank-kwantumtijdperk",
+  "language": "nl-NL",
   "subtitle": "Hoe FHE de databeveiliging in banken hervormt tegen dreigingen uit het kwantumtijdperk",
   "description": "Hoe volledig homomorfe versleuteling de databeveiliging in banken en financiële dienstverlening revolutioneert in het kwantumtijdperk.",
-  "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp",
-  "date": "March 25, 2024",
-  "language": "nl-NL",
   "locale": "nl_NL",
-  "title": "Volledig homomorfe versleuteling in het bank-kwantumtijdperk",
+  "banner_alt": "Visualisatie van volledig homomorfe versleuteling",
   "keywords": "FHE, homomorfe versleuteling, kwantum, banking, beveiliging, privacy",
-  "banner_alt": "Visualisatie van volledig homomorfe versleuteling"
+  "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp"
 }

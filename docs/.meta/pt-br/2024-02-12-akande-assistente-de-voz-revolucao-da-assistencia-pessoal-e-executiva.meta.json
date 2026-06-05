@@ -1,11 +1,11 @@
 {
-  "description": "Cómo Àkàndé aproveita a comprensión do lenguaje natural de OpenAI GPT, os resúmenes em PDF e uma caché eficiente para redefinir a asistencia personal e ejecutiva.",
-  "locale": "pt_BR",
-  "keywords": "Àkàndé, asistente de voz, comprensión do lenguaje natural, resúmenes em PDF, caché eficiente, OpenAI GPT, asistencia ejecutiva, asistencia personal, asistentes digitais, innovación tecnológica",
-  "title": "Àkàndé: asistente de voz impulsionado por GPT para directivos",
   "subtitle": "Permitir interacciones fluidas com uma tecnologia IA puntera",
-  "banner": "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp",
-  "date": "February 12, 2024",
+  "title": "Àkàndé: asistente de voz impulsionado por GPT para directivos",
+  "description": "Cómo Àkàndé aproveita a comprensión do lenguaje natural de OpenAI GPT, os resúmenes em PDF e uma caché eficiente para redefinir a asistencia personal e ejecutiva.",
+  "keywords": "Àkàndé, asistente de voz, comprensión do lenguaje natural, resúmenes em PDF, caché eficiente, OpenAI GPT, asistencia ejecutiva, asistencia personal, asistentes digitais, innovación tecnológica",
   "banner_alt": "Um dispositivo esférico blanco, moderno",
-  "language": "pt-BR"
+  "language": "pt-BR",
+  "locale": "pt_BR",
+  "date": "February 12, 2024",
+  "banner": "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp"
 }

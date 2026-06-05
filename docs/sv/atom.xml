@@ -4,13 +4,22 @@
   <link href="https://sebastienrousseau.com/sv/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/sv/"/>
   <id>https://sebastienrousseau.com/sv/</id>
-  <updated>2026-06-05T00:58:57+00:00</updated>
+  <updated>2026-06-05T03:06:50+00:00</updated>
+  <entry>
+    <title>Index över molnnativ bankverksamhet 2026: DORA, plattformsteknik, suverän moln och operativ motståndskraft</title>
+    <link href="https://sebastienrousseau.com/sv/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"/>
+    <id>https://sebastienrousseau.com/sv/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</id>
+    <updated>2026-06-05T06:06:06+00:00</updated>
+    <published>2026-06-05T06:06:06+00:00</published>
+    <summary>Ett index över molnnativ bankverksamhet 2026 för att mäta DORA-mognad, plattformstekniknivå, koncentrationsrisk i molnet, exit-bevis och operativ motståndskraft.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Multi-rälsbanken 2026: Kort, A2A, stablecoins, RTP, FedNow och Open Banking i en strategi</title>
     <link href="https://sebastienrousseau.com/sv/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
     <id>https://sebastienrousseau.com/sv/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
-    <updated>2026-06-05T00:58:57+00:00</updated>
-    <published>2026-06-05T00:58:57+00:00</published>
+    <updated>2026-06-05T03:06:50+00:00</updated>
+    <published>2026-06-05T03:06:50+00:00</published>
     <summary>FedNow kräver förfinansierad likviditet dygnet runt. ACH är billigt men T+1. USDC avvecklas atomärt men kräver wallet-infrastruktur. Multi-rälsbanken 2026 routar varje betalning efter kostnad, finalitet och likviditetskostnad — driven av en orkestreringsmotor som läser ISO 20022 pacs.008.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -18,8 +27,8 @@
     <title>Postkvantinfrastruktur för betalningar: varför banker kan välja ersättning framför anpassning av äldre räls</title>
     <link href="https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
     <id>https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-06-05T00:58:57+00:00</updated>
-    <published>2026-06-05T00:58:57+00:00</published>
+    <updated>2026-06-05T03:06:50+00:00</updated>
+    <published>2026-06-05T03:06:50+00:00</published>
     <summary>Postkvantkryptografi tvingar fram ett binärt val för betalningsräls: anpassa RSA/ECC inom SWIFT MT- och ISO 20022-kuvert som aldrig dimensionerats för ML-KEM och ML-DSA, eller ersätt med kryptoagil infrastruktur. Arkitekter måste välja innan HNDL blir operativ förlust.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -27,8 +36,8 @@
     <title>Digitala tillgångar 2026: infrastrukturövergången bankerna inte kan skjuta upp</title>
     <link href="https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
     <id>https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
-    <updated>2026-06-05T00:58:57+00:00</updated>
-    <published>2026-06-05T00:58:57+00:00</published>
+    <updated>2026-06-05T03:06:50+00:00</updated>
+    <published>2026-06-05T03:06:50+00:00</published>
     <summary>Digitala tillgångar är inte längre en innovationssatsning. De är en arkitekturfråga för avveckling, förvaring och balansräkning. Bankernas strategiska uppgift är infrastrukturdesign under strukturell osäkerhet.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>

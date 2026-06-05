@@ -235,6 +235,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/index.html" title="The Cloud Native Banking Index in 2026: DORA, Platform Engineering, Sovereign Cloud, and Operational Resilience">
+<img alt="Circuit-board pattern resolving into a cityscape skyline — the visual register chosen for cloud-native banking: platform-engineering primitives stitched into the bank's operational fabric." src="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Cloud Native Banking · DORA · Platform Engineering</span>
+<h3><a href="/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/index.html">The Cloud Native Banking Index in 2026: DORA, Platform Engineering, Sovereign Cloud, and Operational Resilience</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-05">June 5, 2026</time></p>
+<p class="newsroom-excerpt">An engineering blueprint for cloud-native banking in DORA audit phase. Five platform-engineering primitives — Kubernetes paved roads, Backstage portal, GitOps via ArgoCD, Open Policy Agent admission, OpenTelemetry end-to-end — produce Article 8 register evidence at the speed of the pipeline. Tested exit-execution annually for CTPP-dependent CIFs against BIA-derived RTO targets. Sovereign-cloud options (AWS European Sovereign Cloud, Microsoft EU Data Boundary, Bleu, Thales / S3NS) addressed as engineering decisions, not branding.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html" title="The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk">
 <img alt="The Quantum-Safe Banking Index 2026 index diagram for banks and financial institutions in 2026" src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -291,18 +303,6 @@ site_software: "Static Site Generator, Rust"
 <h3><a href="/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html">Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-31">May 31, 2026</time></p>
 <p class="newsroom-excerpt">Harvest-now-decrypt-later turns today's TLS-protected payment messages into tomorrow's decrypted exposure. ML-KEM and ML-DSA are an order of magnitude larger than the RSA and ECC keys legacy rails were sized for — retrofit triggers fragmentation, latency, and HSM exhaustion. The 2026 architectural decision is whether to patch or replace before the regulatory clock runs out.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html" title="Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role">
-<img alt="UK wholesale digital markets diagram showing tokenised gilts, settlement, digital assets, tokenised deposits, regulatory coordination, and capital markets infrastructure" src="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Digital Securities Sandbox · Tokenised Gilts · Atomic DvP</span>
-<h3><a href="/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html">Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-30">May 30, 2026</time></p>
-<p class="newsroom-excerpt">The UK Wholesale Digital Markets Champion role makes tokenised gilts, DLT-based settlement, and digital wholesale finance a national competitiveness project. The 2026 strategic question for banks is design discipline — which tokenised assets sit on which platform, how settlement risk is evidenced, and how to defend the City's wholesale role against Singapore, Switzerland, and Frankfurt.</p>
 </div>
 </article>
 

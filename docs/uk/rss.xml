@@ -6,14 +6,30 @@
     <description>Статті українською: прикладний ШІ, платежі ISO 20022, постквантова криптографія та трансформація оптових платежів.</description>
     <atom:link href="https://sebastienrousseau.com/uk/rss.xml" rel="self" type="application/rss+xml"/>
     <language>uk-UA</language>
-    <lastBuildDate>Fri, 05 Jun 2026 00:58:57 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2026 03:06:50 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Усі права захищено.</copyright>
+    <item>
+      <title>Індекс хмарно-нативного банкінгу у 2026: DORA, інженерія платформи, суверенна хмара та операційна стійкість</title>
+      <link>https://sebastienrousseau.com/uk/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
+      <description>Індекс хмарно-нативного банкінгу 2026 для вимірювання готовності до DORA, зрілості інженерії платформи, ризику концентрації в хмарі, доказів виходу та операційної стійкості.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
+      <pubDate>Fri, 05 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
+      <category>хмарно-нативний банкінг 2026</category>
+      <category>DORA для банків</category>
+      <category>ризик концентрації в хмарі</category>
+      <category>інженерія платформи в банках</category>
+      <category>ризик ICT третіх сторін</category>
+      <category>стратегія виходу з хмари</category>
+      <category>суверенна хмара</category>
+    </item>
     <item>
       <title>Індекс банківської інфраструктури 2026: готовність до агентного AI, квантово-стійкої безпеки, хмарної стійкості та оптових платежів</title>
       <link>https://sebastienrousseau.com/uk/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</link>
       <description>Індекс банківської інфраструктури 2026 року в стилі Stanford AI Index: вимірювання готовності за агентним AI, квантово-стійкою безпекою, хмарно-нативною стійкістю та оптовими платежами.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</guid>
-      <pubDate>Fri, 05 Jun 2026 00:58:57 +0000</pubDate>
+      <pubDate>Fri, 05 Jun 2026 03:06:50 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" type="image/webp" length="0"/>
       <category>індекс банківської інфраструктури 2026</category>
@@ -31,7 +47,7 @@
       <link>https://sebastienrousseau.com/uk/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow вимагає передфінансованої ліквідності 24/7. ACH дешевий, але T+1. USDC розраховується атомарно, але потребує гаманцевої інфраструктури. Мультирейковий банк 2026 року маршрутизує платіж за вартістю, остаточністю та ціною ліквідності.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Fri, 05 Jun 2026 00:58:57 +0000</pubDate>
+      <pubDate>Fri, 05 Jun 2026 03:06:50 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>шар оркестрації платежів</category>
@@ -53,7 +69,7 @@
       <link>https://sebastienrousseau.com/uk/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>Постквантова криптографія ставить платіжні рейки перед бінарним вибором: доробляти RSA/ECC у SWIFT MT та ISO 20022, не розрахованих на ML-KEM і ML-DSA, або замінювати на криптоагільну інфраструктуру. Рішення архітекторів — до того, як HNDL стане операційним збитком.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Fri, 05 Jun 2026 00:58:57 +0000</pubDate>
+      <pubDate>Fri, 05 Jun 2026 03:06:50 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>постквантова криптографія</category>
@@ -79,7 +95,7 @@
       <link>https://sebastienrousseau.com/uk/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>Цифрові активи у 2026 році — це питання архітектури розрахунку, зберігання та балансу, а не інноваційне парі. Стратегічне завдання банку — проєктування інфраструктури під структурною невизначеністю.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Fri, 05 Jun 2026 00:58:57 +0000</pubDate>
+      <pubDate>Fri, 05 Jun 2026 03:06:50 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>цифрові активи 2026</category>

@@ -4,13 +4,22 @@
   <link href="https://sebastienrousseau.com/bn/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/bn/"/>
   <id>https://sebastienrousseau.com/bn/</id>
-  <updated>2026-06-05T00:58:56+00:00</updated>
+  <updated>2026-06-05T03:06:50+00:00</updated>
+  <entry>
+    <title>২০২৬ সালে ক্লাউড-নেটিভ ব্যাংকিং ইনডেক্স: DORA, প্ল্যাটফর্ম ইঞ্জিনিয়ারিং, সার্বভৌম ক্লাউড এবং পরিচালনাগত স্থিতিস্থাপকতা</title>
+    <link href="https://sebastienrousseau.com/bn/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"/>
+    <id>https://sebastienrousseau.com/bn/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</id>
+    <updated>2026-06-05T03:06:50+00:00</updated>
+    <published>2026-06-05T03:06:50+00:00</published>
+    <summary>২০২৬ সালের একটি ক্লাউড-নেটিভ ব্যাংকিং ইনডেক্স — DORA প্রস্তুতি, প্ল্যাটফর্ম ইঞ্জিনিয়ারিং পরিপক্বতা, ক্লাউড ঘনত্ব ঝুঁকি, এক্সিট প্রমাণ এবং পরিচালনাগত স্থিতিস্থাপকতা পরিমাপের কাঠামো।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>২০২৬ সালে কোয়ান্টাম-সেফ ব্যাংকিং ইনডেক্স: পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, QKD, ক্রিপ্টো-এজিলিটি এবং হার্ভেস্ট-নাও-ডিক্রিপ্ট-লেটার ঝুঁকি</title>
     <link href="https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"/>
     <id>https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</id>
-    <updated>2026-06-05T00:58:56+00:00</updated>
-    <published>2026-06-05T00:58:56+00:00</published>
+    <updated>2026-06-05T03:06:50+00:00</updated>
+    <published>2026-06-05T03:06:50+00:00</published>
     <summary>২০২৬ সালে কোয়ান্টাম-সেফ প্রস্তুতির জন্য একটি ব্যাংকিং ইনডেক্স: NIST পোস্ট-কোয়ান্টাম মান, ক্রিপ্টোগ্রাফিক ইনভেন্টরি, ক্রিপ্টো-এজিলিটি, QKD এবং দীর্ঘস্থায়ী ডেটা এক্সপোজার।</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -18,8 +27,8 @@
     <title>২০২৬-এ মাল্টি-রেল ব্যাংক: কার্ড, A2A, স্টেবলকয়েন, RTP, FedNow ও Open Banking — এক কৌশলে</title>
     <link href="https://sebastienrousseau.com/bn/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
     <id>https://sebastienrousseau.com/bn/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
-    <updated>2026-06-05T00:58:56+00:00</updated>
-    <published>2026-06-05T00:58:56+00:00</published>
+    <updated>2026-06-05T03:06:50+00:00</updated>
+    <published>2026-06-05T03:06:50+00:00</published>
     <summary>FedNow-এর জন্য ২৪/৭ প্রাক-অর্থায়িত তারল্য বাধ্যতামূলক। ACH সস্তা, কিন্তু T+1। USDC পারমাণবিকভাবে নিষ্পত্তি হয়, তবে ওয়ালেট পরিকাঠামো লাগে। ২০২৬-এর মাল্টি-রেল ব্যাংক প্রতিটি পেমেন্ট খরচ, চূড়ান্ততা ও তারল্য খরচ অনুযায়ী রাউট করে।</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -27,8 +36,8 @@
     <title>পোস্ট-কোয়ান্টাম পেমেন্ট পরিকাঠামো: কেন ব্যাংক লিগ্যাসি রেল অভিযোজন না করে প্রতিস্থাপন করতে পারে</title>
     <link href="https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
     <id>https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-06-05T00:58:56+00:00</updated>
-    <published>2026-06-05T00:58:56+00:00</published>
+    <updated>2026-06-05T03:06:50+00:00</updated>
+    <published>2026-06-05T03:06:50+00:00</published>
     <summary>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি পেমেন্ট রেলে দুটি পথ রাখে: SWIFT MT ও ISO 20022 এনভেলপে RSA/ECC অভিযোজন, অথবা ক্রিপ্টো-চটপটে পরিকাঠামোয় প্রতিস্থাপন। HNDL অপারেশনাল ক্ষতি হওয়ার আগেই স্থপতিদের সিদ্ধান্ত নিতে হবে।</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
