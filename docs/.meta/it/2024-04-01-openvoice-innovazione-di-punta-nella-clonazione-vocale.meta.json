@@ -1,11 +1,11 @@
 {
   "keywords": "OpenVoice, clonazione vocale, sintesi vocale, TTS, open source, deepfake",
-  "language": "it-IT",
   "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
-  "title": "OpenVoice: innovazione di punta nella tecnologia di clonazione vocale",
-  "description": "OpenVoice è un toolkit open source per la clonazione e sintesi vocale che permette la replica accurata di voci con pochi secondi di campione audio.",
   "subtitle": "Un toolkit open source per la sintesi vocale personalizzata",
+  "banner_alt": "OpenVoice, clonazione vocale",
+  "language": "it-IT",
   "date": "April 01, 2024",
+  "description": "OpenVoice è un toolkit open source per la clonazione e sintesi vocale che permette la replica accurata di voci con pochi secondi di campione audio.",
   "locale": "it_IT",
-  "banner_alt": "OpenVoice, clonazione vocale"
+  "title": "OpenVoice: innovazione di punta nella tecnologia di clonazione vocale"
 }

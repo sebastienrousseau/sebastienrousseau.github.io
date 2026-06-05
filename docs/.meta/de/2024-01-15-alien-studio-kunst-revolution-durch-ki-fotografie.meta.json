@@ -1,11 +1,11 @@
 {
-  "locale": "de_DE",
-  "subtitle": "Die Anfänge einer technologischen Odyssee",
-  "description": "Begleiten Sie mich auf meinem persönlichen Weg — von Rust, KI und Quantencomputing hin zur Neudefinition von Kunst und Fotografie durch Alien Studio.",
+  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
+  "language": "de",
   "title": "Alien Studio: meine Reise von der Technik zur fotografischen Kunst",
   "keywords": "persönliche Tech-Reise, Entdeckung von Rust, KI-Erkundung, Quantencomputing, Verschmelzung von Kunst und Fotografie, Alien Studio, Erstellung digitaler Kunst, Technologie in der Kunst, innovative Fotografie, künstlerische Wiederentdeckung",
-  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
-  "banner_alt": "Muse des Sonnenuntergangs, ein heiterer Blick; Schönheit in der Stille",
+  "locale": "de_DE",
+  "description": "Begleiten Sie mich auf meinem persönlichen Weg — von Rust, KI und Quantencomputing hin zur Neudefinition von Kunst und Fotografie durch Alien Studio.",
+  "subtitle": "Die Anfänge einer technologischen Odyssee",
   "date": "Jan 15, 2024",
-  "language": "de"
+  "banner_alt": "Muse des Sonnenuntergangs, ein heiterer Blick; Schönheit in der Stille"
 }

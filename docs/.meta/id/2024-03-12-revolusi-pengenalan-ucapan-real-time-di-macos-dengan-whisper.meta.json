@@ -1,11 +1,11 @@
 {
-  "locale": "id_ID",
-  "keywords": "OpenAI Whisper, Metal Performance Shaders, pengenalan ucapan macOS, transkripsi real-time, deteksi aktivitas suara, akselerasi GPU, integrasi Python, speech-to-text macOS, deteksi ucapan hemat energi, Apple silicon",
-  "date": "Mar 12, 2024",
-  "title": "[ID DRAFT] Fast Real-Time Speech Recognition on macOS: OpenAI Whisper",
   "description": "Jelajahi bagaimana OpenAI Whisper dan Metal Performance Shaders mengubah pengenalan ucapan real-time di macOS, menawarkan kecepatan dan akurasi yang tak tertandingi.",
+  "language": "id-ID",
+  "date": "Mar 12, 2024",
+  "keywords": "OpenAI Whisper, Metal Performance Shaders, pengenalan ucapan macOS, transkripsi real-time, deteksi aktivitas suara, akselerasi GPU, integrasi Python, speech-to-text macOS, deteksi ucapan hemat energi, Apple silicon",
   "subtitle": "Manfaatkan Kekuatan Speech-to-Text Bertenaga AI dan Dipercepat GPU di Mac Anda",
-  "banner_alt": "Banner untuk pengenalan ucapan otomatis real-time (ASR)",
   "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
-  "language": "id-ID"
+  "banner_alt": "Banner untuk pengenalan ucapan otomatis real-time (ASR)",
+  "title": "[ID DRAFT] Fast Real-Time Speech Recognition on macOS: OpenAI Whisper",
+  "locale": "id_ID"
 }

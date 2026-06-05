@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
-  "keywords": "Quantencomputing, KI-Algorithmen, Finanzmathematik, Bankentechnologie, Risikomanagement, Algorithmenentwurf, Datenanalyse, Anlagestrategien, Quantenfinanzen, maschinelles Lernen",
   "description": "Die transformative Rolle der KI in Quantenalgorithmen für die Finanzwelt — mit Fokus auf ihren mathematischen Feinheiten und ihren Anwendungen im Banking.",
-  "title": "Das Finanzwesen mit KI-gestützten Quantenalgorithmen revolutionieren",
-  "date": "Dec 25, 2023",
-  "subtitle": "Die Kraft des Quantencomputings für Finanzinnovation freisetzen: KI im Zentrum der Algorithmen der nächsten Generation",
   "banner_alt": "Das Finanzwesen mit KI-gestützten Quantenalgorithmen revolutionieren",
+  "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
+  "subtitle": "Die Kraft des Quantencomputings für Finanzinnovation freisetzen: KI im Zentrum der Algorithmen der nächsten Generation",
+  "title": "Das Finanzwesen mit KI-gestützten Quantenalgorithmen revolutionieren",
+  "language": "de",
+  "date": "Dec 25, 2023",
   "locale": "de_DE",
-  "language": "de"
+  "keywords": "Quantencomputing, KI-Algorithmen, Finanzmathematik, Bankentechnologie, Risikomanagement, Algorithmenentwurf, Datenanalyse, Anlagestrategien, Quantenfinanzen, maschinelles Lernen"
 }

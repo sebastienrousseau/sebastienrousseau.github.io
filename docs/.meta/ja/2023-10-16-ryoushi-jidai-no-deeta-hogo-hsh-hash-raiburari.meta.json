@@ -1,12 +1,12 @@
 {
   "keywords": "ハッシュ, ダイジェスト, パスワード, Rust, hsh, 量子耐性, ポスト量子暗号, セキュリティ",
-  "banner_alt": "暗号化されたバイナリデータ",
+  "subtitle": "ポスト量子時代向けに設計された Rust 製ハッシュ・ダイジェストライブラリ",
   "locale": "ja_JP",
+  "language": "ja-JP",
   "date": "October 16, 2023",
   "last_reviewed": "2026-05-11",
-  "language": "ja-JP",
+  "banner_alt": "暗号化されたバイナリデータ",
   "title": "量子時代のデータ保護:hash ライブラリ hsh",
-  "subtitle": "ポスト量子時代向けに設計された Rust 製ハッシュ・ダイジェストライブラリ",
   "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-iar-afB0QQw-unsplash.webp",
   "description": "hsh は量子耐性の姿勢で設計された Rust ハッシュライブラリで、パスワード暗号化と検証のためのものです。"
 }

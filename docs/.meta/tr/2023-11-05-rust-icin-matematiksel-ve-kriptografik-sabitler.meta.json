@@ -1,11 +1,11 @@
 {
-  "description": "cmn, güvenli Rust uygulamaları için matematiksel ve kriptografik sabitler sunan bir kütüphanedir.",
+  "banner_alt": "Matematiksel sembollerin görselleştirmesi",
   "title": "Rust güvenliği için matematiksel ve kriptografik sabitler",
   "locale": "tr_TR",
-  "language": "tr-TR",
-  "banner_alt": "Matematiksel sembollerin görselleştirmesi",
-  "date": "November 05, 2023",
-  "keywords": "Rust, cmn, kriptografi, matematik, sabitler, güvenlik, açık kaynak",
+  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
   "subtitle": "Güvenli matematiksel ve kriptografik sabitler için bir Rust kütüphanesi",
-  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp"
+  "keywords": "Rust, cmn, kriptografi, matematik, sabitler, güvenlik, açık kaynak",
+  "language": "tr-TR",
+  "description": "cmn, güvenli Rust uygulamaları için matematiksel ve kriptografik sabitler sunan bir kütüphanedir.",
+  "date": "November 05, 2023"
 }

@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (सेबास्तियन रूस
 banner_alt: "सर्किट-बोर्ड पैटर्न जो शहरी क्षितिज में बदल जाता है — क्लाउड-नेटिव बैंकिंग के लिए चुनी गई दृश्य रजिस्टर: प्लेटफ़ॉर्म इंजीनियरिंग प्रिमिटिव्स बैंक के परिचालन ताने-बाने में सिले गए।"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
+banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
