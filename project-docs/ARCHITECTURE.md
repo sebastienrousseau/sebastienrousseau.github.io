@@ -1,10 +1,12 @@
-<!-- SPDX-License-Identifier: Apache-2.0 -->
-
 # Architecture
 
-End-to-end map of the build pipeline. Read this if you want to understand how a Markdown source ends up as a 1850-page CDN-served static site in 28 languages with strict CSP, real SRI, and complete Schema.org structured data.
+> Last Updated: June 4, 2026
+
+This guide shows the build steps of the Shokunin site builder for the Sebastien Rousseau web site.
 
 ## Contents
+
+This list shows the main topics in this guide.
 
 - [Top-level flow](#top-level-flow)
 - [The seven build stages](#the-seven-build-stages)
@@ -17,6 +19,8 @@ End-to-end map of the build pipeline. Read this if you want to understand how a 
 ---
 
 ## Top-level flow
+
+The main flow shows how source files move from the Git repository to the web edge.
 
 ```mermaid
 %%{init: {'theme':'neutral'} }%%
@@ -61,82 +65,52 @@ flowchart TB
  P -->|rsync| DC
  DC -->|git push| CF
  CF --> WORK
-```
+ ```
 
-The build is a strict pipeline — each stage reads from disk, writes to disk, and produces no in-memory state shared with the next. That means you can re-run a single stage to debug it.
+The build is a simple chain where each tool reads files and saves files, which makes it easy to run a single tool by hand to test it.
 
 ---
 
 ## The seven build stages
 
+The build runner uses seven steps to change text drafts into web pages.
+
 ### 1. `ssg` (Static Site Generator)
 
-The Rust binary `ssg` reads `_posts/*.md` + `_layouts/*.html` and emits `public/<slug>/index.html` for every English source. It picks the layout from each post's `layout:` frontmatter (`report` for long-form, `link` for the link-board, etc.).
-
-**Frontmatter convention:** YAML between two `---` markers. Required fields: `title`, `description`, `date`, `layout`, `language`, `keywords`. Optional but heavily used: `banner`, `banner_alt`, `subtitle`, `seo_title`, `last_reviewed`, `tags`, `twitter_*`, `item_*`.
-
-**Asset fingerprinting:** Static Site Generator extracts inline CSS into a single bundle under `/_csp/<hash>.css` and inline JS into `/_csp/<hash>.js`. The references in the rendered HTML carry placeholder `integrity="sha256-<short-hex>"` that `postbuild.py` later replaces with real base64 SHA-256.
+The Rust tool reads markdown posts and layout files to build the English pages, and it picks the layout based on the settings in the frontmatter block.
+The frontmatter uses YAML keys between two lines to define the title, description, and keywords.
+To keep the site secure, the tool puts style and script code into files with unique hashes, which the script later replaces with real hashes.
 
 ### 2. `scripts/generators/build_topics.py`
 
-Five hand-curated topic clusters:
-
-```
-post-quantum-cryptography
-iso-20022-payments
-applied-ai-banking
-rust-open-source
-blockchain-digital-assets
-```
-
-Each is a manually-maintained list of article slugs + a per-language translation of the title + lede. Output: `public/topics/<topic>/index.html` × 5 + a hub at `public/topics/index.html`.
+Five topic groups organize the articles to build a topic page and language lists, and each group uses a list of article paths and translated titles to write the pages.
 
 ### 3. `scripts/generators/build_translations.py`
 
-The translation pipeline. For each active non-EN language in [`scripts/lib/_lang_registry.py`](../scripts/lib/_lang_registry.py):
-
-1. **Read** the EN-rendered shell (from `public/<slug>/index.html`).
-2. **Apply chrome patches** — 71 regex patches per locale (`_data/i18n/<lang>/chrome_patches.json`) localising nav, footer, search bar, CTAs, aria-labels.
-3. **Apply body patches** — ~78 home patches + ~254 static patches transforming card text, eyebrows, descriptions.
-4. **Auto-generate patches from `strings.json`** via `_lang_registry.build_chrome_patches(lang)` — mechanical attribute-and-text swaps inferred from a 52-key UI strings dictionary.
-5. **Patch JSON-LD** — `inLanguage` set to the locale's BCP-47 tag; cross-page references rewritten.
-6. **Rewrite slug links** — `/en-slug/` → `/<lang>/<lang-slug>/` using `_data/i18n/<lang>/slugs.json`.
-7. **Localise dates** — "May 2026" rendered via the locale's month names.
-8. **Set `<html lang>`, `og:locale`, hreflang reciprocity.**
-9. **Write** `public/<lang>/<lang-slug>/index.html`.
-
-The output is a 67-page tree per lang (44 articles + hub + 21 static pages) plus a per-language search-index.
+The translation tool builds localized pages for each active language in the registry, and it reads the English pages to swap the main text, menus, footers, and buttons.
+The script translates UI terms, updates links, and sets response headers. The run writes a multilingual directory tree and search files.
 
 ### 4. `scripts/generators/build_lang_feeds.py`
 
-Per-language RSS, Atom, news-sitemap, and JSON-Feed 1.1 outputs. Same article ordering as the EN feeds. Reads frontmatter from `_posts/<lang>/*.md` directly (single- or double-quoted YAML, both supported).
+This script creates RSS, Atom, news-sitemap, and JSON feeds for each language. It reads frontmatter records directly from the source markdown files to build the feeds.
 
 ### 5. `scripts/generators/build_agent_api.py`
 
-Machine-readable JSON for AI / agentic clients:
-
-```
-/api/agents/index.json — discovery document
-/api/agents/posts.json — every dated post with metadata
-/api/agents/topics.json — curated topic clusters + slug lists
-/api/agents/person.json — author profile (Person + Organization)
-```
-
-Cross-linked from `/.well-known/ai-plugin.json` and described by `/.well-known/openapi.json` (OpenAPI 3.1).
+JSON endpoints expose articles and topics for search tools and AI clients. These feeds are linked from the plugin manifests and described by the OpenAPI schema.
 
 ### 6. `scripts/generators/build_lead_magnets.py`
 
-Renders the markdown source under `_data/lead-magnets/*.md` to PDF (currently 1: `/resources/pacs008-checklist.pdf`).
+This tool compiles source files into PDF resources such as checklists.
 
 ### 7. `scripts/postbuild.py`
 
-The single-page orchestrator. Reads every `public/**/*.html`, applies 18 transforms, writes back. See [POSTBUILD.md](POSTBUILD.md).
+The postbuild script processes every page to apply optimization steps before saving.
 
 ---
 
 ## `scripts/` inventory
 
-37 Python modules total. Grouped by responsibility:
+This list cataloges the Python files that manage translations, feeds, and test gates.
 
 | Group | Modules |
 |---|---|
@@ -151,7 +125,7 @@ The single-page orchestrator. Reads every `public/**/*.html`, applies 18 transfo
 
 ## `postbuild_lib/` modules
 
-`scripts/postbuild.py` delegates almost everything to submodules:
+The library files handle details like metadata tags, statistics, and page markup.
 
 ```mermaid
 %%{init: {'theme':'neutral'} }%%
@@ -162,7 +136,7 @@ flowchart LR
  PB --> OUT[output<br/>llms.txt,<br/>sitemap splice,<br/>XML feed fix]
  PB --> SC[schemas<br/>TechArticle,<br/>SoftwareSourceCode]
  PB --> SEO[seo<br/>og:image, HowTo,<br/>about/mentions,<br/>image w/h]
-```
+ ```
 
 | Module | Stmts | Coverage | Responsibility |
 |---|---:|---:|---|
@@ -172,13 +146,13 @@ flowchart LR
 | `schemas.py` | 168 | 100% | TechArticle JSON-LD on technical posts; SoftwareSourceCode JSON-LD on /projects/. |
 | `seo.py` | 209 | 100% | `og:image` repair, HowTo schema, `about`/`mentions` Wikidata cross-links, image w/h stamping, `og:url`/`og:locale`/`og:site_name` completion, word count injection. |
 
-Plus the bare orchestrator `postbuild.py` (~700 lines) which wires the pieces together.
+The main script uses these modules to enhance the pages.
 
 ---
 
 ## Single-page postbuild orchestration
 
-The order matters. `inject_word_count` must run before `inject_article_furniture` (which renders word count into the meta bar). `inject_about` must run before `inject_jsonld_hashes` (which computes the page's per-block CSP hashes — adding to the JSON-LD after invalidates the hash).
+The page optimization steps run in a set order to keep the security hashes valid.
 
 ```mermaid
 %%{init: {'theme':'neutral'} }%%
@@ -218,27 +192,22 @@ sequenceDiagram
  PB->>GH: inject_github_stats
  PB->>AF: hoist_body_link_stylesheets
  PB->>CSP: inject_jsonld_hashes (final)
- PB->>FS: Write patched HTML
-```
+ FS->>PB: Patched HTML written
+ ```
 
-The final `inject_jsonld_hashes` pass computes SHA-256 of every inline JSON-LD block + the `<script type="speculationrules">` block, strips `'unsafe-inline'` from `script-src`, and adds the per-page hash allowlist. After this pass, ANY further mutation to JSON-LD content invalidates browser enforcement — so it has to run last.
+The final step computes security hashes of the script blocks for the security header, which means any later changes to the page will block the scripts from running.
 
 ---
 
 ## Pure-function discipline
 
-Every transform is a pure `(html, ...) -> html`. Module-level state is regex constants only — no caches, no globals mutated by call order. This is what makes 100% coverage tractable: each function is testable in isolation with a 3-line setup.
-
-Counter-examples (state we *do* hold):
-
-- `_lang_registry.LANGUAGES` — read-only registry of 28 languages, cached at module import.
-- `postbuild_lib/article_furniture._post_nav_index` — single read-only index of post slugs ↔ URLs, built once at the start of postbuild from `_posts/`.
-
-Everywhere else, transforms read HTML and write HTML, nothing more.
+The build tools run as pure functions that do not share state or modify global values, which means each function reads a page and writes the output directly to a file.
 
 ---
 
 ## Edge layer (Cloudflare)
+
+The edge layer uses a Cloudflare Worker to route visitors and set security headers quickly. The platform supports post-quantum certificate options that browsers display.
 
 ```mermaid
 %%{init: {'theme':'neutral'} }%%
@@ -251,54 +220,13 @@ flowchart LR
  end
  CF --> PAGES[GitHub Pages<br/>docs/]
  PAGES --> CACHE
-```
+ ```
 
-Two configurable surfaces:
-
-1. **PQC TLS toggle** — Cloudflare dashboard SSL/TLS → Edge Certificates → enable "Post-quantum hybrid TLS". The negotiated key-exchange shows as `X25519MLKEM768` in the browser's connection-security panel (NIST FIPS 203).
-2. **Worker** — `workers/lang-router.js` is the **single source of truth** for both locale routing and the strict security-header set. It:
-   - Honours the `pref-lang` cookie (set by the in-page locale switcher) and the `?lang=<code>` deep-link override; redirects to `/<lang>/...` with the cookie attached.
-   - Does **not** sniff Accept-Language — too many bilingual readers were getting bounced off the canonical EN site they actually wanted. Locale routing is now opt-in only.
-   - Sets every security header on every response (redirect or pass-through): strict CSP with `form-action 'self' https://formspree.io` + `frame-ancestors 'none'`, 2-year HSTS with preload, `Permissions-Policy` locking down browsing-topics / interest-cohort / camera / mic / geolocation, `Cross-Origin-Opener-Policy: same-origin`, `Referrer-Policy: strict-origin-when-cross-origin`, `X-Content-Type-Options: nosniff`.
-
-The Worker was previously paired with a Cloudflare-dashboard Transform Rule that injected a competing CSP — that rule was retired once the in-repo Worker became authoritative. Pure-logic, no fetches beyond the origin pass-through, no KV. **43 tests, 100% line / branch / function coverage** enforced by `build.sh`.
-
-Everything else is static — `docs/` on GitHub Pages, fronted by Cloudflare's cache.
+The edge router is the single source of truth for language routing and security headers, and it sets headers based on paths and runs tests to ensure the rules remain stable.
 
 ---
 
 ## WASM labs
 
-Each subdirectory of `_wasm-demos/` is a self-contained Rust crate that compiles to WebAssembly via `wasm-pack` and ships an interactive companion page for one of the user-facing libraries. The first crate (`hsh-demo`) exposes SHA-256, BLAKE3 and Argon2id from a 94 KB bundle, computed entirely client-side under a tight CSP — no server round-trip, no third-party JavaScript, no network beyond the same-origin WASM fetch.
-
-```mermaid
-%%{init: {'theme':'neutral'} }%%
-flowchart LR
- subgraph Source["Source"]
- RUST["_wasm-demos/<crate>/<br/>Cargo.toml + src/lib.rs<br/>(wasm-bindgen)"]
- WEB["_wasm-demos/<crate>/web/<br/>index.html + demo.{js,css}"]
- end
-
- subgraph Build["build.sh auto-discovery"]
- WP["wasm-pack build<br/>--target web --release"]
- STAGE["copy pkg/*.wasm + *.js<br/>+ web/* to public/labs/<crate>/"]
- end
-
- subgraph Output["Served by Cloudflare"]
- LAB["/labs/<crate>/<br/>index.html, demo.css,<br/>demo.js, <crate>_bg.wasm"]
- CSP["meta CSP per page:<br/>script-src 'self' 'wasm-unsafe-eval'<br/>style-src 'self'<br/>connect-src 'self'<br/>frame-ancestors 'none'"]
- end
-
- RUST --> WP
- WEB --> STAGE
- WP --> STAGE
- STAGE --> LAB
- LAB --> CSP
-```
-
-**CI integration:** `ci.yml`, `schema-diff.yml` and `pages-deploy.yml` install `wasm-pack` + the `wasm32-unknown-unknown` Rust target. `build.sh` walks `_wasm-demos/*/`, runs `wasm-pack build --target web --release` per crate, then stages the bundle plus the `web/` shell into `public/labs/<crate>/`. The lab page is then a first-class citizen of the postbuild pipeline (gets `og:url`, hreflang neutrality, JSON-LD hash injection if applicable).
-
-**CSP discipline:** `'wasm-unsafe-eval'` is the only loosening — distinct from `'unsafe-eval'`, so the strict-shape CSP gate (`tests/validation/test_csp_strict.py`) passes unchanged. Lab pages are `<meta name="robots" content="noindex,nofollow">` and excluded from the sitemap-completeness gate via the `/labs/` prefix in `_EXCLUDE_PREFIXES`.
-
-**Reusing the pattern:** drop a new crate at `_wasm-demos/<name>/{Cargo.toml, src/lib.rs, web/{index.html, demo.js, demo.css}}` and the next build will publish `/labs/<name>/` automatically. See `_wasm-demos/README.md` for the copy-paste recipe.
-
+We compile Rust projects to WebAssembly to provide interactive tools on the site. Each project lives in its own folder and builds a package for the labs page.
+The build tool copies these files automatically during compilation. The lab pages run with a strict security policy to execute code safely, and you can add a new lab page by adding a project folder to the demos directory.

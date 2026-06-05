@@ -1,11 +1,11 @@
 {
-  "locale": "zh_TW",
+  "language": "zh-Hant",
   "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
-  "subtitle": "以太坊上最常見的代幣型別——通常被稱為智慧合約數字契約",
+  "keywords": "ERC-20, 以太坊, 代幣標準, 智慧合約, DeFi, 去中心化金融, 代幣化, Solidity, dApps, 區塊鏈",
+  "description": "ERC-20 標準為以太坊代幣定義了一套通用規則與功能，是 DeFi 興起和以太坊廣泛採用的關鍵推動力。",
   "banner_alt": "棕色木桌上一臺關機的膝上型電腦",
   "title": "ERC-20 代幣標準",
-  "description": "ERC-20 標準為以太坊代幣定義了一套通用規則與功能，是 DeFi 興起和以太坊廣泛採用的關鍵推動力。",
-  "keywords": "ERC-20, 以太坊, 代幣標準, 智慧合約, DeFi, 去中心化金融, 代幣化, Solidity, dApps, 區塊鏈",
-  "language": "zh-Hant",
-  "date": "January 24, 2018"
+  "date": "January 24, 2018",
+  "subtitle": "以太坊上最常見的代幣型別——通常被稱為智慧合約數字契約",
+  "locale": "zh_TW"
 }

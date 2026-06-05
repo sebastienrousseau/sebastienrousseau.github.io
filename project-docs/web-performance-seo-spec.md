@@ -1,16 +1,27 @@
-# Technical Web Architecture, Core Web Vitals, and SEO Specification
+# Web Design, Core Vitals, and SEO Guide
 
-This specification provides the production-ready code, configurations, and implementation details for achieving 100% scores across Lighthouse, WAVE Accessibility, PageSpeed Insights, and Google News. It is customized for a **Static Site compile pipeline (Vanilla HTML/CSS/JS)** backed by a **Cloudflare Workers** edge delivery layer.
+> Last Updated: June 4, 2026
 
----
+This guide provides the code, settings, and setup details to achieve perfect web speed and search scores.
+We build the Sebastien Rousseau web site using vanilla HTML, CSS, and JS, compiled with the Shokunin static site builder and delivered via Cloudflare Workers.
 
-## 1. Performance & Core Web Vitals (PSI & Lighthouse 100%)
+## Contents
 
-### Critical Rendering Path & Render-Blocking Mitigation
-To achieve a <1.2s First Contentful Paint (FCP) on mobile, all render-blocking JavaScript and CSS must be eliminated.
+This guide covers speed metrics, asset rules, edge cache headers, user click delay, access rules, sitemaps, and language routing.
 
-#### A. Inlining Critical CSS & Async Non-Critical CSS
-Extract the minimal styles required to render the above-the-fold content (usually <14KB gzipped) and inline them in the `<head>`. Load the remaining styles asynchronously.
+## 1: Speed & Core Vitals (PSI & Lighthouse 100%)
+
+We optimize speed metrics by removing render blocks, styling key CSS, and deferring script loads.
+
+### Key Paint Path & Render-blocking Cures
+
+To achieve fast page loads on mobile devices, all render-blocking scripts and styles must be removed.
+
+We structure our head tags to render top page content at once.
+
+#### A: Inlining Key CSS & Async CSS
+
+We inline the minimal top styles in the page head to speed up initial painting.
 
 ```html
 <!DOCTYPE html>
@@ -34,8 +45,11 @@ Extract the minimal styles required to render the above-the-fold content (usuall
 </head>
 ```
 
-#### B. JavaScript Code-Splitting & Deferral
-Only load the JavaScript required for initial interactivity. Use ES modules with the `defer` attribute.
+Non-critical styles load in the background and apply later.
+
+#### B: Code-Splitting & Deferral
+
+We defer all key script loads to keep the browser main thread quick during load.
 
 ```html
   <!-- Modern JS deferred (non-blocking) -->
@@ -51,12 +65,17 @@ Only load the JavaScript required for initial interactivity. Use ES modules with
   </script>
 ```
 
----
+This ensures the page responds immediately to user clicks while heavy tools load.
 
-### Asset Optimization
+### Asset Setup
 
-#### A. Next-Gen Images & Layout Shift (CLS) Prevention
-Enforce WebP/AVIF formats and prevent Cumulative Layout Shift (CLS) by declaring explicit `width`, `height`, and setting `aspect-ratio`.
+Our asset setup strategy compresses images into modern formats and self-hosts key variable font subsets.
+
+This reduces file sizes and prevents layout shifts during load.
+
+#### A: Next-Gen Images & Layout Shift Prevention
+
+We prevent layout shifts by declaring explicit sizes and aspect ratios on all responsive image elements.
 
 ```html
 <!-- Responsive Picture Element with Next-Gen Formats and Layout-shift prevention -->
@@ -80,67 +99,64 @@ Enforce WebP/AVIF formats and prevent Cumulative Layout Shift (CLS) by declaring
        class="img-responsive">
 </picture>
 ```
-*CSS rule mapping layout safety:*
+
+We map these sizes in our CSS style rules to preserve the correct aspect ratio.
+
 ```css
 .img-responsive {
   display: block;
   max-width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9; /* Matches width=800 height=450 */
+  aspect-ratio: 16 / 9;
 }
 ```
 
-#### B. Web Fonts Optimization (FOIT/FOUT Mitigation)
-To prevent Invisible Text (FOIT) or Flash of Unstyled Text (FOUT):
-1. Use WOFF2 variable fonts.
-2. Self-host and preload key font subsets.
-3. Configure `font-display: swap`.
+The browser reserves layout space for the image to prevent content from jumping.
+
+#### B: Web Fonts Setup (FOIT/FOUT Cure)
+
+We avoid invisible text phases during font download by using variable fonts and font swap rules.
 
 ```css
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 100 900;
-  font-display: swap; /* Tells browser to use system font until Inter downloads */
+  font-display: swap;
   src: url('/fonts/inter-variable-latin.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 ```
-*Header preload configuration:*
+
+We preload key font files in the header to ensure they are available at once.
+
 ```html
 <link rel="preload" href="/fonts/inter-variable-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 ```
 
----
+This balances loading speeds with visual stability for our readers.
 
-### Cache-Control & CDN Optimization (Cloudflare Worker Implementation)
-Configure optimal edge headers for assets vs document paths to achieve maximum cache hit ratios and near-zero Time to First Byte (TTFB).
+### Cache-Control & Edge Setup
+
+The edge server uses a Cloudflare Worker to set cache rules and compress assets by default.
 
 ```javascript
-// workers/lang-router.js snippet for Edge Caching & Compression headers
 export async function handleRequest(request) {
   const url = new URL(request.url);
   const response = await fetch(request);
-
-  // Clone headers to allow mutability
   const headers = new Headers(response.headers);
 
-  // Apply strict Security Headers
   headers.set("X-Frame-Options", "DENY");
   headers.set("X-Content-Type-Options", "nosniff");
   headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
   headers.set("Content-Security-Policy", "default-src 'self'; object-src 'none'; base-uri 'self';");
 
-  // Determine Caching profile by content path
   if (url.pathname.startsWith("/assets/") || url.pathname.startsWith("/fonts/") || url.pathname.startsWith("/images/")) {
-    // Static assets: immutable cache for 1 year
     headers.set("Cache-Control", "public, max-age=31536000, immutable");
   } else {
-    // Dynamic/HTML routing: validation required
     headers.set("Cache-Control", "public, max-age=0, must-revalidate");
   }
 
-  // Ensure gzip/brotli is handled natively by CF Edge
   return new Response(response.body, {
     status: response.status,
     statusText: response.statusText,
@@ -149,29 +165,26 @@ export async function handleRequest(request) {
 }
 ```
 
----
+Static assets are saved for one year, while pages are checked on every request.
 
-### Interaction to Next Paint (INP) Optimization
-Long running JS tasks (>50ms) block the main thread, resulting in high input latency (INP). Break up long tasks by yielding execution back to the browser's paint loop.
+### Click to Paint Setup
+
+We improve input delay by breaking up long script tasks and yielding running to the browser paint loop.
 
 ```javascript
-// Scheduler Task Yield Helper
 export function yieldToMain() {
   if (globalThis.scheduler?.yield) {
-    return scheduler.yield(); // Native Chrome standard API
+    return scheduler.yield();
   }
-  return new Promise(resolve => setTimeout(resolve, 0)); // Fallback
+  return new Promise(resolve => setTimeout(resolve, 0));
 }
 
-// Example: Iterating over a massive data array without blocking interaction
 async function processHugeDataSet(items) {
   let count = 0;
   for (const item of items) {
-    // Perform compute
     doHeavyMath(item);
     count++;
     
-    // Yield to browser execution queue every 50 items
     if (count % 50 === 0) {
       await yieldToMain();
     }
@@ -179,12 +192,17 @@ async function processHugeDataSet(items) {
 }
 ```
 
----
+Yielding to the paint loop prevents long scripts from blocking user input.
 
-## 2. WAVE & Accessibility (100% WCAG 2.2 Compliance)
+## 2: WAVE & Access (100% WCAG 2.2 Rules)
 
-### Semantic DOM Layout
-A perfectly semantic document outline is required for WAVE/Lighthouse to pass without markup errors.
+Our access checklist guarantees full WCAG compliance across color levels, labels, and focus states.
+
+We test these features quickly in the build pipeline.
+
+### Structured DOM Layout
+
+We build a clean DOM tree using standard elements to ensure screen readers can parse the page.
 
 ```html
 <!DOCTYPE html>
@@ -193,307 +211,160 @@ A perfectly semantic document outline is required for WAVE/Lighthouse to pass wi
   <title>Post-Quantum Payments Security — Sebastien Rousseau</title>
 </head>
 <body>
-  <!-- Accessible Skip Navigation -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
-
-  <!-- Header Section -->
   <header>
-    <a href="/" aria-label="Sebastien Rousseau Homepage">
-      <span class="logo">SR</span>
-    </a>
-    <!-- Navigation Landmarks -->
-    <nav aria-label="Primary Navigation">
-      <ul class="nav-links">
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="/" aria-current="page">Home</a></li>
         <li><a href="/articles/">Articles</a></li>
-        <li><a href="/papers/">Research Papers</a></li>
-        <li><a href="/about/">About</a></li>
       </ul>
     </nav>
   </header>
-
-  <!-- Main Content Area Landmark -->
   <main id="main-content">
     <article>
-      <!-- One H1 per document -->
-      <h1>Post-Quantum Payments Security: A Migration Blueprint</h1>
-      
-      <div class="article-meta">
-        <p>Published: <time datetime="2026-05-14T06:00:00Z">May 14, 2026</time> by Sebastien Rousseau</p>
-      </div>
-
-      <section aria-labelledby="sec-threats">
-        <!-- Next level heading in hierarchy -->
-        <h2 id="sec-threats">1. Threat Model & Key Exchange Targets</h2>
-        <p>This section outlines the algorithmic targets for post-quantum migrations.</p>
-        
-        <h3 id="sec-kyber">1.1 ML-KEM (Kyber) Deployments</h3>
-        <p>Specific implementations of lattice-based security.</p>
-      </section>
+      <h1>Post-Quantum Payments Security</h1>
+      <p>Content goes here.</p>
     </article>
   </main>
-
-  <!-- Footer Section Landmark -->
   <footer>
-    <p>&copy; 2026 Sebastien Rousseau. All rights reserved.</p>
+    <p>&copy; 2026 Sebastien Rousseau</p>
   </footer>
 </body>
 </html>
 ```
 
----
+This outline provides a logical flow for keyboards and screen readers.
 
-### Focus States & Keyboard Interactions
-Ensure keyboard-only users can navigate all interactive items with visibility and clarity.
+### Contrast & Visible Focus Lines
+
+We guarantee clear viewing by meeting contrast levels and adding visible focus outlines to links.
 
 ```css
-/* Focus Ring Configuration (WCAG 2.2 Strict Contrast) */
-a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-select:focus-visible {
-  outline: 3px solid #0056b3; /* High-contrast blue */
-  outline-offset: 4px;
-  box-shadow: 0 0 0 7px rgba(0, 86, 179, 0.15);
+:focus-visible {
+  outline: 3px solid #005a9c;
+  outline-offset: 2px;
 }
 
-/* Hide native browser focus outline only when focus-visible is supported */
-a:focus, button:focus {
-  outline: none;
+body {
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+
+a {
+  color: #005a9c;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #003a6c;
 }
 ```
 
-```javascript
-// Accessible Mobile Hamburger Menu Toggle logic
-const menuButton = document.querySelector('#menu-toggle');
-const menuDropdown = document.querySelector('#menu-nav');
+This ensures that all page content is readable and links are easy to navigate.
 
-menuButton.addEventListener('click', () => {
-  const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
-  menuButton.setAttribute('aria-expanded', !isExpanded);
-  menuDropdown.classList.toggle('is-open');
-  
-  if (!isExpanded) {
-    menuDropdown.querySelector('a')?.focus(); // Accessibility focus management
-  }
-});
-```
+### Aria Labels & Forms
 
----
-
-### Forms & Contrast (WCAG AAA Compliance)
-Avoid placeholder-only forms. Map controls explicitly to labels using `id` and `for`.
+All interactive forms and inputs use clear label elements to pass access checks.
 
 ```html
-<!-- Flawless accessible form structure -->
-<form action="/api/subscribe" method="POST" class="newsletter-form">
+<form action="https://formspree.io/f/project" method="POST" aria-label="Contact Form">
   <div class="form-group">
-    <label for="newsletter-email" class="form-label">Email Address <span class="required" aria-hidden="true">*</span></label>
-    <input type="email" 
-           id="newsletter-email" 
-           name="email" 
-           required 
-           aria-required="true"
-           placeholder="e.g. researcher@quantum.org" 
-           class="form-input">
-    <div id="email-hint" class="form-hint">We only publish post-quantum cryptographic alerts. No spam.</div>
+    <label for="user-email">Email Address</label>
+    <input type="email" id="user-email" name="email" required aria-describedby="email-helper">
+    <span id="email-helper" class="helper-text">We will never share your email address.</span>
   </div>
-  <button type="submit" aria-describedby="email-hint" class="btn-submit">Subscribe</button>
+  <button type="submit">Submit Form</button>
 </form>
 ```
 
----
+This prevents input confusion and assists helper tools.
 
-## 3. Advanced SEO (100% Score)
+## 3: Google News & Technical SEO
 
-### Meta & Social Share Schema Templates
+Our search optimization steps ensure fast indexing and complete news coverage across all locales.
 
-```html
-<!-- SEO Metadata Template -->
-<title>Post-Quantum Payments Security: A Migration Blueprint</title>
-<meta name="description" content="A comprehensive analysis of supply-chain and transport layer security transitions for payment routing networks migrating to post-quantum signature schemes.">
+We publish feeds and schemas that follow search engine standards.
 
-<!-- Canonical Link Element (Self-referential, lowercase, normalized) -->
-<link rel="canonical" href="https://sebastienrousseau.com/articles/post-quantum-payments-security-migration-blueprint/">
+### Google News XML Sitemap
 
-<!-- Robots meta configuration -->
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-
-<!-- Open Graph Social Protocol -->
-<meta property="og:type" content="article">
-<meta property="og:title" content="Post-Quantum Payments Security: A Migration Blueprint">
-<meta property="og:description" content="A comprehensive analysis of supply-chain and transport layer security transitions for payment routing networks migrating to post-quantum signature schemes.">
-<meta property="og:url" content="https://sebastienrousseau.com/articles/post-quantum-payments-security-migration-blueprint/">
-<meta property="og:site_name" content="Sebastien Rousseau">
-<meta property="og:image" content="https://cloudcdn.pro/stocks/images/pq-payments-security.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="675">
-<meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2026-05-14T06:00:00Z">
-<meta property="article:modified_time" content="2026-05-15T09:30:00Z">
-
-<!-- Twitter Cards Protocol -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Post-Quantum Payments Security: A Migration Blueprint">
-<meta name="twitter:description" content="A comprehensive analysis of supply-chain and transport layer security transitions for payment routing networks migrating to post-quantum signature schemes.">
-<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/pq-payments-security.png">
-```
-
----
-
-### Robots.txt Configuration
-A robust `robots.txt` configuration that exposes the news sitemap, allows crawlers, and blocks temporary build paths.
-
-```ini
-User-agent: *
-Allow: /
-Disallow: /public/
-Disallow: /api/
-Disallow: /tmp/
-Disallow: /*?* # Block dynamic query parameter duplicate crawls
-
-# Sitemaps references
-Sitemap: https://sebastienrousseau.com/sitemap.xml
-Sitemap: https://sebastienrousseau.com/news-sitemap.xml
-```
-
----
-
-## 4. Google News & Editorial Integration
-
-### Consolidated structured-data JSON-LD Schema
-Google News requires a valid JSON-LD graph referencing the publisher organization, breadcrumbs, and the main article metadata.
-
-```html
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://sebastienrousseau.com/#organization",
-      "name": "Sebastien Rousseau Research",
-      "url": "https://sebastienrousseau.com",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://sebastienrousseau.com/assets/images/logo.png",
-        "width": 600,
-        "height": 60
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://sebastienrousseau.com/articles/post-quantum-payments-security-migration-blueprint/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://sebastienrousseau.com"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Articles",
-          "item": "https://sebastienrousseau.com/articles/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Post-Quantum Migration Blueprint"
-        }
-      ]
-    },
-    {
-      "@type": "NewsArticle",
-      "@id": "https://sebastienrousseau.com/articles/post-quantum-payments-security-migration-blueprint/#article",
-      "isPartOf": {
-        "@id": "https://sebastienrousseau.com/articles/post-quantum-payments-security-migration-blueprint/"
-      },
-      "headline": "Post-Quantum Payments Security: A Migration Blueprint",
-      "description": "An in-depth analysis of migrating payment networks to post-quantum signature schemes.",
-      "image": [
-        "https://cloudcdn.pro/stocks/images/pq-payments-security.png"
-      ],
-      "datePublished": "2026-05-14T06:00:00Z",
-      "dateModified": "2026-05-15T09:30:00Z",
-      "author": {
-        "@type": "Person",
-        "name": "Sebastien Rousseau",
-        "sameAs": [
-          "https://www.linkedin.com/in/sebastienrousseau/",
-          "https://github.com/sebastienrousseau"
-        ]
-      },
-      "publisher": {
-        "@id": "https://sebastienrousseau.com/#organization"
-      },
-      "mainEntityOfPage": "https://sebastienrousseau.com/articles/post-quantum-payments-security-migration-blueprint/"
-    }
-  ]
-}
-</script>
-```
-
----
-
-### Google News XML Sitemap (Freshness Compliance)
-Google News requires a separate sitemap containing only articles published within the last **48 hours**. Once an article is older than 2 days, it must be purged from the News sitemap (but preserved in the main `sitemap.xml`).
+We publish a news site map XML containing details for articles released in the last two days.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
-    <loc>https://sebastienrousseau.com/articles/post-quantum-payments-security-migration-blueprint/</loc>
+    <loc>https://sebastienrousseau.com/2026-05-20-quantum-payments-2026/</loc>
     <news:news>
       <news:publication>
-        <news:name>Sebastien Rousseau Research</news:name>
+        <news:name>Sebastien Rousseau Web Platform</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <!-- Date published must be ISO 8601 within last 48h -->
-      <news:publication_date>2026-06-04T08:00:00Z</news:publication_date>
-      <news:title>Post-Quantum Payments Security: A Migration Blueprint</news:title>
+      <news:publication_date>2026-05-20T06:30:00Z</news:publication_date>
+      <news:title>Post-Quantum Payments Security and Financial Technology</news:title>
     </news:news>
   </url>
 </urlset>
 ```
 
----
+This file lists post names, dates, languages, and titles for search tools.
 
-### Google News Editorial Integration Template
-Reviewers for Google News enforce strict transparency guidelines. The HTML layout must offer clear visual signals.
+### Schema.org JSON-LD structured data
+
+We embed structured data block elements to provide rich contextual metadata for search crawlers.
 
 ```html
-<!-- Flawless Editorial HTML Page Content Structure -->
-<article class="h-entry">
-  <header class="article-header">
-    <h1 class="p-name">Post-Quantum Payments Security: A Migration Blueprint</h1>
-    
-    <!-- Visible Editorial Bylines (Mandatory for Google News) -->
-    <div class="editorial-byline">
-      <span class="by">By</span> 
-      <a href="/author/sebastien-rousseau/" rel="author" class="p-author h-card">Sebastien Rousseau</a>
-      <span class="publication-date">
-        Published on <time class="dt-published" datetime="2026-05-14T06:00:00Z">May 14, 2026</time>
-      </span>
-      <span class="modification-date">
-        Updated <time class="dt-updated" datetime="2026-05-15T09:30:00Z">May 15, 2026</time>
-      </span>
-    </div>
-  </header>
-
-  <!-- Clean, un-nested Article Body HTML -->
-  <div class="e-content article-body">
-    <p class="post-lead-tldr"><strong>TL;DR:</strong> Migration analysis for payment networks...</p>
-    
-    <p>The transition to post-quantum signature schemes requires clean, standards-compliant infrastructure changes.</p>
-    
-    <figure>
-      <img src="/images/pq-payments-security-diag.png" alt="Cryptographic migration schematic" width="600" height="300" loading="lazy">
-      <figcaption>Figure 1: Typical timeline transition showing signature exchanges.</figcaption>
-    </figure>
-
-    <p>Financial networks should migrate transportation security profiles as soon as possible.</p>
-  </div>
-</article>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://sebastienrousseau.com/2026-05-20-quantum-payments-2026/#article",
+  "headline": "Post-Quantum Payments Security",
+  "datePublished": "2026-05-20T06:30:00Z",
+  "dateModified": "2026-05-20T06:30:00Z",
+  "author": {
+    "@type": "Person",
+    "name": "Sebastien Rousseau",
+    "url": "https://sebastienrousseau.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sebastien Rousseau Web Platform",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://sebastienrousseau.com/logo.png"
+    }
+  },
+  "description": "An analysis of post-quantum cryptography in retail banking systems."
+}
+</script>
 ```
+
+This allows tools to parse the content author and type details plainly.
+
+### Multi-Language Router (Cloudflare Worker)
+
+The edge router parses locale headers and routes users to their own language versions.
+
+```javascript
+// Edge Language Router redirect logic
+export async function routeLanguage(request) {
+  const url = new URL(request.url);
+  
+  // Skip route if cookie is set or path is asset
+  if (url.pathname.includes(".") || request.headers.get("Cookie")?.includes("lang=")) {
+    return fetch(request);
+  }
+
+  const acceptLang = request.headers.get("Accept-Language") || "";
+  const preferredLang = parseAcceptLanguage(acceptLang); // Returns 'fr', 'es', etc.
+
+  if (preferredLang && preferredLang !== 'en') {
+    return Response.redirect(`https://sebastienrousseau.com/${preferredLang}${url.pathname}`, 302);
+  }
+
+  return fetch(request);
+}
+```
+
+This ensures visitors land on the translated version of the page.

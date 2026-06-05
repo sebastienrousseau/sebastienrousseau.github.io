@@ -6,14 +6,14 @@
     <description>Artiklar på svenska: tillämpad AI, ISO 20022-betalningar, postkvantkryptografi och transformationen av grossistbetalningar.</description>
     <atom:link href="https://sebastienrousseau.com/sv/rss.xml" rel="self" type="application/rss+xml"/>
     <language>sv-SE</language>
-    <lastBuildDate>Thu, 04 Jun 2026 21:13:35 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2026 00:58:57 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alla rättigheter förbehållna.</copyright>
     <item>
       <title>Multi-rälsbanken 2026: Kort, A2A, stablecoins, RTP, FedNow och Open Banking i en strategi</title>
       <link>https://sebastienrousseau.com/sv/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow kräver förfinansierad likviditet dygnet runt. ACH är billigt men T+1. USDC avvecklas atomärt men kräver wallet-infrastruktur. Multi-rälsbanken 2026 routar varje betalning efter kostnad, finalitet och likviditetskostnad — driven av en orkestreringsmotor som läser ISO 20022 pacs.008.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Thu, 04 Jun 2026 21:13:35 +0000</pubDate>
+      <pubDate>Fri, 05 Jun 2026 00:58:57 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>betalningsorkestrering</category>
@@ -35,7 +35,7 @@
       <link>https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>Postkvantkryptografi tvingar fram ett binärt val för betalningsräls: anpassa RSA/ECC inom SWIFT MT- och ISO 20022-kuvert som aldrig dimensionerats för ML-KEM och ML-DSA, eller ersätt med kryptoagil infrastruktur. Arkitekter måste välja innan HNDL blir operativ förlust.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Thu, 04 Jun 2026 21:13:35 +0000</pubDate>
+      <pubDate>Fri, 05 Jun 2026 00:58:57 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>postkvantkryptografi</category>
@@ -61,7 +61,7 @@
       <link>https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>Digitala tillgångar är inte längre en innovationssatsning. De är en arkitekturfråga för avveckling, förvaring och balansräkning. Bankernas strategiska uppgift är infrastrukturdesign under strukturell osäkerhet.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Thu, 04 Jun 2026 21:13:35 +0000</pubDate>
+      <pubDate>Fri, 05 Jun 2026 00:58:57 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>digitala tillgångar 2026</category>

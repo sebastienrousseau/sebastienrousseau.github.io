@@ -1,11 +1,11 @@
 {
-  "keywords": "AI 趋势 2024, 生成式 AI, 多模态模型, 客户服务, 网络安全, 教育, 气候变化, 金融, 零售, 伦理",
-  "locale": "zh_CN",
-  "description": "AI 在 2024 年从概念走向现实，影响商业、社会、教育、金融、气候、空间技术与零售各个层面。",
   "title": "AI 趋势 2024：洞察与对未来的预测",
-  "subtitle": "2024 年的 AI 趋势：金融领域的生成式 AI、多模态模型、设备端 LLM 及将重塑银行业和产品工程的变化",
+  "keywords": "AI 趋势 2024, 生成式 AI, 多模态模型, 客户服务, 网络安全, 教育, 气候变化, 金融, 零售, 伦理",
+  "banner": "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp",
   "date": "January 1, 2024",
   "language": "zh-Hans",
-  "banner": "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp",
-  "banner_alt": "伦敦无人机视角"
+  "banner_alt": "伦敦无人机视角",
+  "description": "AI 在 2024 年从概念走向现实，影响商业、社会、教育、金融、气候、空间技术与零售各个层面。",
+  "subtitle": "2024 年的 AI 趋势：金融领域的生成式 AI、多模态模型、设备端 LLM 及将重塑银行业和产品工程的变化",
+  "locale": "zh_CN"
 }

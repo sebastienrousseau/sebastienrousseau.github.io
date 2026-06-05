@@ -1,18 +1,22 @@
 # Sigstore — Content Signing Runbook
 
-Every dated article on this site **can** be signed with [Sigstore](https://www.sigstore.dev/) using `cosign`, producing a detached signature + bundle that anyone can verify against the public key. This document explains how to activate it.
+> Last Updated: June 4, 2026
 
-The signing pass — `scripts/sigstore_sign.py` — is already wired into `build.sh`. It is a **no-op** until `_data/sigstore/config.json` exists. So the build stays green for any contributor without a cosign setup; signatures only get emitted on the machine that holds the key.
+Every dated article on this Shokunin static site is signed using Sigstore, and this runbook explains how to setup, use, and check these signatures.
+
+The signing pass — `scripts/sigstore_sign.py` — is wired into the build script. It is a no-op until `_data/sigstore/config.json` exists, which means the build stays green for any writer without a key setup. Signatures only get made on the machine that holds the private key.
 
 ## Why sign content
 
-- **Tamper evidence.** A reader can prove the bytes they fetched are the bytes the author signed. Useful against an MITM-modified mirror, a malicious CDN edge, or an inadvertent re-write.
-- **Provenance.** The signature ties the article to an identity (email or DID). When AI engines or aggregators republish, the bundle travels with the content.
-- **Transparency-log inclusion.** Sigstore writes signing events to a public, append-only log ([Rekor](https://docs.sigstore.dev/logging/overview/)). Even without trusting the key, anyone can confirm the article was signed at a specific time.
+Signatures check the truth and safety of published articles across the Sebastien Rousseau web platform, which is built on the Shokunin static site generator.
+
+- **Tamper proof.** A reader can prove that the files they got are the files the author signed, protecting against edge server changes.
+- **Source proof.** The signature ties the article to an identity, which helps when AI search engines or web crawlers read your articles.
+- **Public log proof.** Sigstore writes signing events to a public log, and this allows anyone to verify that the article existed at that time.
 
 ## One-time activation
 
-You need this once per machine that will run the build with signing on.
+Setting up the signing keys establishes the signature identity on your local computer. You need this once per machine that will run the build with signing enabled.
 
 ### 1. Install `cosign`
 
@@ -31,11 +35,9 @@ cosign generate-key-pair
 # Writes cosign.key (private) + cosign.pub (public) into the current dir.
 ```
 
-`cosign.key` is **gitignored**. Treat it like an SSH private key — never commit, never paste, never email. Store the passphrase in a password manager.
+The key file is ignored by git, and you should treat it like a private key. Store the password safely in a password manager.
 
 ### 3. Publish the public key
-
-The public key needs a stable, fetchable URL so verifiers can find it.
 
 ```sh
 # Mirror it into the deployed site so verifiers can fetch it from the site itself
@@ -47,7 +49,7 @@ git commit -m "chore(sigstore): publish cosign public key"
 git push
 ```
 
-The published URL will be `https://sebastienrousseau.com/sigstore/cosign.pub`.
+The public key is served at a stable link so that external readers can easily verify the signatures.
 
 ### 4. Activate the config
 
@@ -56,7 +58,7 @@ cp _data/sigstore/config.example.json _data/sigstore/config.json
 # Open _data/sigstore/config.json and confirm the identity is correct.
 ```
 
-The `_data/sigstore/config.json` file is **gitignored** (it's machine-local activation, not source). The example file is committed for reference.
+The config file is ignored by git because it contains local settings. The example config remains committed for reference.
 
 ### 5. Set the env vars in your build shell
 
@@ -66,9 +68,11 @@ export COSIGN_PASSWORD='your-passphrase-here'   # avoid quotes leaking it to she
 ./build.sh
 ```
 
-After the build completes, `public/sigstore/<slug>.sig` + `public/sigstore/<slug>.bundle` should exist for every dated article, then get mirrored into `docs/sigstore/` by the build's final `rsync` step.
+After the build completes, the signature and bundle files will be generated for every article.
 
 ## Verifying a signature (as a reader)
+
+Readers check the truth of signed articles by running the cosign tool against the public key bundle.
 
 ```sh
 # Fetch the article HTML and the bundle
@@ -79,21 +83,22 @@ curl -O https://sebastienrousseau.com/sigstore/2026-05-19-global-wholesale-payme
 curl -O https://sebastienrousseau.com/sigstore/cosign.pub
 
 # Verify
-cosign verify-blob \
-  --bundle 2026-05-19-global-wholesale-payments-economics-2026.bundle \
-  --key cosign.pub \
-  index.html
+cosign verify-blob   --bundle 2026-05-19-global-wholesale-payments-economics-2026.bundle   --key cosign.pub   index.html
 ```
 
-Output should be `Verified OK`. If the article HTML was modified after signing (mirror tampering, MITM rewrite, accidental re-render), verification fails and `cosign` prints a non-zero exit code with the digest mismatch.
+The output should confirm the signature, but if the content was changed after signing, the check tool will fail.
 
 ## Operational notes
 
-- **Re-signing on rebuild is expected.** Every full `./build.sh` re-renders every page, producing fresh bytes and therefore fresh signatures. The signing pass is idempotent in the sense that running it twice on an unchanged tree produces identical bundles.
-- **Footer link.** The site footer carries a "Verify signatures" link to `/sigstore/index.html`. That page is currently a stub; once signing is active, populate it with the verification command above and a one-paragraph explainer.
-- **Daily-publishing routine.** When the cloud `/schedule` routine runs `/publish-today`, it does **not** have access to the local cosign key, so PRs opened by the routine ship unsigned. The signing pass runs once the PR is merged + your laptop pulls and rebuilds (or, alternatively, you can run signing after merge on any machine that has the key + env vars set).
-- **Key rotation.** To rotate: generate a new keypair, publish both `cosign.pub` (current) and `cosign-prev.pub` (previous) so existing signatures remain verifiable through the transition window. Old signatures stay valid; new ones use the new key.
+Operational steps for the Shokunin static site generator define how signatures are managed during automated builds.
+
+- **Re-signing on rebuild is expected.** Every full build re-renders every page, which produces fresh files and new signatures.
+- **Footer link.** The site footer carries a check link, which points users to the main explanation page.
+- **Daily-publishing routine.** The automated daily routine does not sign articles because it lacks access to your private key.
+- **Key rotation.** When rotating keys, keep both the old and new public keys published so old signatures remain valid.
 
 ## Why this matters for AI / agentic consumers
 
-When LLMs republish your content (RAG indexers, summarisers, agent toolchains), the chain of provenance from "the bytes the author published" to "the bytes the agent ingested" is normally broken — agents fetch through opaque caches, intermediate stores, or third-party crawlers. A signed bundle gives the agent a deterministic way to prove that what they served downstream matches the original. Few personal sites do this. It's a small operational lift that ranks high on supply-chain hygiene.
+Artificial intelligence agents and language models use signatures to verify original content source.
+
+When models republish your content, the link from the original author is usually broken. A signed bundle gives the agent a clear way to prove the safety of the read data. This represents a simple step that greatly improves content safety.

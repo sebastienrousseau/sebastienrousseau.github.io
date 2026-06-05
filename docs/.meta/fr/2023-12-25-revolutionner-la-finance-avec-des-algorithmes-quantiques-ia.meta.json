@@ -1,11 +1,11 @@
 {
-  "language": "fr",
   "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
-  "locale": "fr_FR",
-  "title": "Révolutionner la finance par les algorithmes quantiques augmentés par l'IA",
   "subtitle": "Libérer la puissance quantique pour l'innovation financière : l'IA au cœur des algorithmes de nouvelle génération",
-  "date": "December 25, 2023",
+  "title": "Révolutionner la finance par les algorithmes quantiques augmentés par l'IA",
   "keywords": "calcul quantique, algorithmes IA, mathématiques financières, technologie bancaire, gestion des risques, conception d'algorithmes, analyse de données, stratégies d'investissement, finance quantique, apprentissage automatique",
   "banner_alt": "Révolutionner la finance par les algorithmes quantiques augmentés par l'IA",
-  "description": "Le rôle transformateur de l'IA dans les algorithmes quantiques pour la finance, avec un focus sur leurs subtilités mathématiques et leurs applications bancaires."
+  "date": "December 25, 2023",
+  "description": "Le rôle transformateur de l'IA dans les algorithmes quantiques pour la finance, avec un focus sur leurs subtilités mathématiques et leurs applications bancaires.",
+  "locale": "fr_FR",
+  "language": "fr"
 }

@@ -1,27 +1,23 @@
-<!-- SPDX-License-Identifier: Apache-2.0 -->
-
 # Postbuild
 
-`scripts/postbuild.py` is a single-page orchestrator that applies 18 independent transforms to every rendered HTML page. This document explains each transform, the orchestration order, and why it matters.
+> Last Updated: June 4, 2026
+
+The postbuild script is a single-page orchestrator that applies eighteen independent changes to every rendered page.
+These tasks run inside the Shokunin static site generator after the main HTML compile step finishes.
 
 ## Contents
 
-- [Order of operations](#order-of-operations)
-- [Pass-by-pass reference](#pass-by-pass-reference)
-- [Per-pass counters](#per-pass-counters)
-- [Idempotence guarantees](#idempotence-guarantees)
-- [Common patterns](#common-patterns)
-- [Performance](#performance)
-
----
+This guide covers the order of operations, details for each pass, counters, file safety, development patterns, and build speeds.
 
 ## Order of operations
+
+The order of operations ensures that each page optimization occurs in a sequence that keeps security hashes valid.
 
 ```mermaid
 %%{init: {'theme':'neutral'} }%%
 flowchart TB
  P0[HTML page<br/>from public/]
- 
+
  subgraph SEO["SEO + JSON-LD"]
  S1[scrub_localhost_urls]
  S2[stamp_asset_fingerprints]
@@ -66,235 +62,143 @@ flowchart TB
  F4 --> OUT[Patched HTML<br/>written back]
 ```
 
-Why the order matters:
-
-- `inject_word_count` MUST come before `inject_article_furniture` — the meta bar (`.article-meta`) renders the word count.
-- `inject_about` MUST come before `inject_jsonld_hashes` — adding `about`/`mentions` arrays to BlogPosting changes the JSON-LD body, which changes the sha256 hash.
-- `inject_jsonld_hashes` MUST run LAST — it computes per-page sha256 hashes for every inline JSON-LD block + the speculation-rules block, strips `'unsafe-inline'`, and folds the hashes into `script-src`. Any later mutation invalidates browser enforcement.
-
----
+We must compute the script hashes last because any changes to the page after this step will block the scripts from running.
 
 ## Pass-by-pass reference
 
-### 1. `scrub_localhost_urls`
+The postbuild process runs a series of functions that modify HTML tags, security hashes, and layout elements.
 
-Static Site Generator's dev server bakes `http://localhost:port` into og:url and a few other places when invoked locally. This pass rewrites every occurrence to `https://sebastienrousseau.com`.
+### 1: `scrub_localhost_urls`
 
-Counter: `localhost_patched`.
+This pass rewrites local host URLs to the production web site links on every page.
 
-### 2. `stamp_asset_fingerprints`
+### 2: `stamp_asset_fingerprints`
 
-Static Site Generator emits `/_csp/<short-hex>.{css,js}` filenames for fingerprinted bundles, but page-level references use bare `/main.js`. This pass copies fingerprinted assets to their bare-name aliases so all references resolve.
+This pass copies fingerprinted assets to their bare name files so references resolve correctly.
 
-Counter: `asset_fp_patched`.
+### 3: `fix_sri`
 
-### 3. `fix_sri`
+This pass replaces style integrity hashes with real codes computed from the actual file bytes.
 
-Replaces the placeholder `integrity="sha256-<short-hex>"` that Static Site Generator emits with a real base64 SHA-256 computed from the actual asset bytes. Without this, browsers refuse to load the asset.
+### 5: `inject_itemlist`
 
-Counter: `sri_patched`.
+This pass inserts structured list schemas on section landing pages to help search engine crawlers.
 
-### 4. `inject_itemlist`
+### 5: `inject_tech_article`
 
-`/articles/`, `/papers/`, `/projects/` get an `ItemList` JSON-LD block. Each `<article class="newsroom-card">` becomes a `ListItem` with `position`, `name`, `url`.
+This pass appends technical article schema tags to posts that cover coding or software topics.
 
-Counter: `itemlist_patched`.
+### 6: `inject_software_source_code`
 
-### 5. `inject_tech_article`
+This pass adds software source code schemas to project pages to describe open source libraries.
 
-Dated posts whose keywords name a programming language or technical domain get an additional `TechArticle` block alongside `BlogPosting`. See [`SCHEMAS.md`](SCHEMAS.md#techarticle).
+### 7: `fix_social_image`
 
-Counter: `techarticle_patched`.
+This pass sets social share images using the banner path defined in the page headers.
 
-### 6. `inject_software_source_code`
+### 8: `inject_og_completeness`
 
-`/projects/index.html` gets a `SoftwareSourceCode` ItemList. See [`SCHEMAS.md`](SCHEMAS.md#softwaresourcecode).
+This pass fills in missing open graph tags to ensure page cards render nicely on social feeds.
 
-Counter: `softwaresourcecode_patched`.
+### 9: `stamp_image_dimensions`
 
-### 7. `fix_social_image`
+This pass stamps explicit width and height dimensions on image tags to prevent layout shifts.
 
-Static Site Generator auto-picks the first `<img>` in the body for `og:image`, often a decorative divider. This pass rebuilds `og:image` + `twitter:image` from the article's `BlogPosting.image` (which reads from the post's `banner:` frontmatter).
+### 10: `inject_howto`
 
-Counter: `social_patched`.
+This pass creates step-by-step schema blocks for guides that describe specific setup procedures.
 
-### 8. `inject_og_completeness`
+### 11: `inject_word_count`
 
-Fills in `og:url`, `og:locale`, `og:site_name`, `og:image` when Static Site Generator omits them. Handles locale variants (e.g. `fr_FR`, `zh_CN`) from `<html lang>`.
+This pass counts words in the main article body and stores it in the page schema.
 
-Counter: `og_patched`.
+### 12: `inject_about`
 
-### 9. `stamp_image_dimensions`
+This pass links article entities to Wikidata records to help AI search engines parse the context.
 
-Every `<img>` gets explicit `width`/`height` attributes (CLS budget = 0). The hero image gets `fetchpriority="high"`; below-fold images get `loading="lazy"` + `decoding="async"`. Per-asset manifest pins known dimensions for common SVGs and the author portrait.
+### 13: `inject_article_furniture`
 
-Counter: `img_dims_patched`.
+This pass injects E-E-A-T author cards and reading time badges into the post layouts.
 
-### 10. `inject_howto`
+### 14: `inject_sigstore_attestation`
 
-Step-by-step articles emit `HowTo` JSON-LD. Specs in `seo.py:_HOWTO_SPECS` per slug. Decoupled from heading styling so the article can be refactored without invalidating the schema.
+This pass appends a verification link if the local cryptographic signing config file is present.
 
-Counter: `howto_patched`.
+### 15: `inject_anchor_links_and_toc`
 
-### 11. `inject_word_count`
+This pass adds clickable hash anchors to headings and inserts a table of contents block.
 
-Computes word count from `<main>` body (stripping `<aside>`, `<script>`, `<style>`) and injects it into the BlogPosting JSON-LD `wordCount` field.
+### 16: `inject_citations`
 
-Counter: `wc_patched`.
+This pass builds a schema list of all external sources cited in the article body.
 
-### 12. `inject_about`
+### 17: `inject_sources_list`
 
-Cross-links articles to canonical entities (Wikidata, Wikipedia) so AI engines can ground them in their knowledge graphs. Driven by `ENTITY_AUTHORITY` in `seo.py` — e.g. "post-quantum cryptography" → `https://www.wikidata.org/wiki/Q1364608`.
+This pass renders a visible bibliography list at the bottom of posts with external references.
 
-Counter: `about_patched`.
+### 18: `inject_mermaid`
 
-### 13. `inject_article_furniture`
+This pass loads the diagram library if a post contains raw diagram code blocks.
 
-The "AI citation surface" — tag badges between H1 and body, meta bar (author/date/reading-time), and the author E-E-A-T bio card at end of body. Driven by labels from `_data/i18n/<lang>/labels.json`.
+### 19: `inject_nav_active`
 
-Counter: `furniture_patched`.
+This pass marks the active header nav link to highlight the current section page.
 
-### 14. `inject_sigstore_attestation`
+### 20: `inject_prev_next_nav`
 
-Optional pass that appends a `Last verified: <sigstore-bundle-URL>` line if `_data/sigstore/config.json` exists. Skipped by default.
+This pass adds navigation links to the previous and next articles in date order.
 
-### 15. `inject_anchor_links_and_toc`
+### 21: `inject_hreflang`
 
-Adds `id="…"` + clickable `<a class="heading-anchor">#</a>` to every H2/H3 in `<main>`. If the post has ≥5 H2 headings, builds a table-of-contents card and inserts it at the top of `<main>`.
+This pass injects alternate language tags for every active translation to help search engines.
 
-Counter: `anchor_patched`.
+### 22: `inject_speculation_rules`
 
-### 16. `inject_citations`
+This pass adds rules that tell modern browsers to prerender linked pages in the background.
 
-Builds a citations graph from every external `<a href>` referenced in body prose. Adds them to BlogPosting `citation` (Schema.org `citation` accepts an array of `CreativeWork`).
+### 23: `inject_github_stats`
 
-Counter: `citation_patched`.
+This pass updates repository stars and forks statistics on open source project cards.
 
-### 17. `inject_sources_list`
+### 24: `hoist_body_link_stylesheets`
 
-Renders a visible "Sources" list at the end of `<main>` for articles with ≥3 external references.
+This pass moves body style links to the page head block to meet accessibility standards.
 
-Counter: `sources_patched`.
+### 25: `inject_jsonld_hashes`
 
-### 18. `inject_mermaid`
-
-Lazily upgrades ` ```mermaid ` code fences in article bodies to client-side rendered diagrams via mermaid.js. Loaded only when a mermaid block is present.
-
-Counter: `mermaid_patched`.
-
-### 19. `inject_nav_active`
-
-Marks the nav link for the current section with `aria-current="page"` + `class="active"`.
-
-Counter: `nav_patched`.
-
-### 20. `inject_prev_next_nav`
-
-Adds a `<nav class="post-pagination">` block at the bottom of each dated article with links to the previous + next chronological article.
-
-Counter: `nav_patched` (shared).
-
-### 21. `inject_hreflang`
-
-Emits a complete `<link rel="alternate" hreflang="…" href="…">` block including `x-default` for every translated page. Reciprocity enforced by [`tests/validation/test_hreflang_reciprocity.py`](../tests/validation/test_hreflang_reciprocity.py).
-
-Counter: `hreflang_patched`.
-
-### 22. `inject_speculation_rules`
-
-Adds a `<script type="speculationrules">` block that asks Chromium 126+ to prerender same-origin pages on hover. Excludes `/_csp/*`, `*.xml`/`*.json`/`*.txt`/`*.pdf`, `/manifest.json`, `/sw.js`, contact pages.
-
-### 23. `inject_github_stats`
-
-Injects star/fork/license/last-commit pills onto project cards. Stats refreshed nightly by `refresh-gh-stats.yml` into `_data/gh-stats.json`.
-
-### 24. `hoist_body_link_stylesheets`
-
-Static Site Generator's search-widget injects a `<link rel=stylesheet>` into the `<body>`, which fails pa11y AAA ("link elements must be in `<head>`"). This pass moves it back into `<head>`.
-
-Counter: `link_hoisted`.
-
-### 25. `inject_jsonld_hashes` [!] Must run last
-
-Computes SHA-256 of every inline `<script type="application/ld+json">` block + the `<script type="speculationrules">` block. Strips `'unsafe-inline'` from the page's `script-src` and folds in the per-block hashes as `'sha256-<base64>'` tokens.
-
-Counter: `csp_patched`.
-
----
+This pass computes hashes of inline scripts and updates the content security policy rule.
 
 ## Per-pass counters
 
-`scripts/postbuild.py:_PostbuildCounters` is a `__slots__`-bound counter object threaded through every pass. The orchestrator increments a per-pass counter when a transform changes the HTML; the summary print at the end of postbuild reads them all:
+A counters class tracks how many times each optimization step changes a page during a build run.
 
-```
-postbuild: 1850 HTML pages, 72 got localhost→prod scrubbed, 168 got asset URLs fingerprinted,
-1849 got real SRI, 3 got ItemList JSON-LD, 642 got TechArticle, 1 got SoftwareSourceCode,
-1232 got og:image fixed, 1850 got og:url/locale/site_name, 12070 img(s) stamped w/h,
-16 HowTo schema(s) injected, 1232 got wordCount, 741 got about/mentions entities,
-1232 got tag badges + meta bar, 1232 got anchor links + ToC, 502 got citation graphs,
-502 got visible sources list, 0 got mermaid blocks, 1456 got prev/next nav,
-1848 got hreflang pairs, 1850 got CSP JSON-LD hashes
-```
-
-If a counter's value is unexpected (e.g. 0 hreflang pairs would mean the i18n pipeline is broken), it's a signal worth investigating.
-
----
+The tool outputs these counts at the end of the build to help you check the output.
 
 ## Idempotence guarantees
 
-Re-running `postbuild.py` on already-patched output is a no-op:
+The postbuild script is idempotent, which means running it multiple times on the same files will not change them.
 
-- Every pass checks for the marker it would add. `inject_article_furniture` skips pages that already have `class="article-tags"`. `inject_tech_article` skips pages that already have `"@type":"TechArticle"`. Etc.
-- The CSP-hash pass is naturally idempotent — recomputing sha256 of unchanged JSON-LD gives the same hash.
-
-This matters for incremental development: you can `python3 scripts/postbuild.py` directly without re-running the full build.
-
----
+The functions check for existing tags and only apply changes to pages that have not been optimized.
 
 ## Common patterns
 
-### Adding a new pass
+We use simple developer workflows to add new build runs or test existing functions in isolation.
 
-1. Implement as `inject_<name>(html, …) -> html` in the appropriate `postbuild_lib/` submodule.
-2. Add unit tests in `tests/test_<module>.py` — aim for 100% coverage (CI gate).
-3. Add a counter slot to `_PostbuildCounters.__slots__`.
-4. Call from `_apply_seo_passes` or `_apply_article_passes` at the right place in the order chain.
-5. Add to the summary print in `main()`.
-6. Update this document.
-
-### Debugging a pass
-
-```bash
-python3 -c "
-import sys; sys.path.insert(0,'scripts')
-from postbuild_lib.schemas import inject_tech_article
-from pathlib import Path
-page = Path('public/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html')
-html = page.read_text()
-out = inject_tech_article(page, html)
-# Compare lengths, check for the expected marker, etc.
-print(f'before: {len(html)} after: {len(out)}')
-print('marker present:', '\"@type\":\"TechArticle\"' in out)
-"
-```
-
-Each pass is a pure function — you can test it in isolation without invoking the whole pipeline.
-
----
+- Step 1: Create the function in the postbuild library.
+- Step 2: Add unit tests to check the function behavior.
+- Step 3: Register the function in the main build run order.
+- Step 4: Run the test command to verify that all tests stay green.
 
 ## Performance
 
-A clean build with 1850 pages × 18 postbuild passes runs in **~3 seconds** on a modern laptop. The hot path is pa11y / Lighthouse (each takes 30-45 min in CI for the full 1850-page sweep) — postbuild itself isn't on the critical path.
+The entire postbuild suite optimizes thousands of pages in less than three seconds on a modern computer.
 
-Time budget per pass (rough — measured on M1 MacBook Pro):
+Most of the execution time is spent reading and writing files rather than processing the HTML string.
 
-| Pass | Time per page | Total (1850 pages) |
-|---|---:|---:|
-| `fix_sri` | 80 µs | 150 ms |
-| `inject_word_count` | 200 µs | 370 ms |
-| `inject_article_furniture` | 350 µs | 650 ms |
-| `inject_jsonld_hashes` | 500 µs | 920 ms |
-| Everything else combined | 200 µs | 370 ms |
-| **Total** | **~1.3 ms** | **~2.5s** |
-
-The pipeline is I/O-bound on page read+write, not CPU. Parallelisation is possible but the gains don't justify the complexity at current scale.
+| Pass | Time per page | Total time |
+|---|---|---|
+| `fix_sri` | 80 micro seconds | 150 ms |
+| `inject_word_count` | 200 micro seconds | 370 ms |
+| `inject_article_furniture` | 350 micro seconds | 650 ms |
+| `inject_jsonld_hashes` | 500 micro seconds | 920 ms |
+| Combined passes | 200 micro seconds | 370 ms |

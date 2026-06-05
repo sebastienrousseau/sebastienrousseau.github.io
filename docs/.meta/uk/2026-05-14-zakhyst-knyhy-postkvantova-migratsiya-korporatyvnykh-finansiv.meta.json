@@ -1,11 +1,11 @@
 {
-  "description": "Квантовий ризик став регуляторним мандатом. Дорожня карта G7 2026 та BIS Project Leap підтверджують: питання вже не «чи мігрувати на PQC», а «чи встигнути».",
-  "keywords": "постквантова криптографія, міграція PQC, корпоративний банкінг, фінансові послуги, дорожня карта G7 CEG, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204",
-  "title": "[UK DRAFT] Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance",
-  "date": "May 14, 2026",
-  "language": "uk-UA",
+  "banner_alt": "Схема дорожньої карти міграції на постквантову криптографію — корпоративна банківська інфраструктура переходить від RSA до ML-KEM та ML-DSA",
   "subtitle": "Квантовий ризик перейшов від наукового інтересу до активного регуляторного мандату. Дорожня карта G7 2026 та результати BIS Project Leap у реальних платіжних системах підтверджують: питання для рад директорів — не «чи мігрувати», а чи буде завершена міграція до закінчення криптографічного строку придатності поточних даних.",
   "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp",
+  "language": "uk-UA",
+  "keywords": "постквантова криптографія, міграція PQC, корпоративний банкінг, фінансові послуги, дорожня карта G7 CEG, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204",
+  "date": "May 14, 2026",
+  "title": "[UK DRAFT] Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance",
   "locale": "uk_UA",
-  "banner_alt": "Схема дорожньої карти міграції на постквантову криптографію — корпоративна банківська інфраструктура переходить від RSA до ML-KEM та ML-DSA"
+  "description": "Квантовий ризик став регуляторним мандатом. Дорожня карта G7 2026 та BIS Project Leap підтверджують: питання вже не «чи мігрувати на PQC», а «чи встигнути»."
 }
