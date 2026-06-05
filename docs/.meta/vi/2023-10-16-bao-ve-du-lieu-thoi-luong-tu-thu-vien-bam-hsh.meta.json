@@ -1,11 +1,11 @@
 {
-  "subtitle": "Một thư viện Rust cho mã hoá và xác thực mật khẩu kháng lượng tử",
-  "locale": "vi_VN",
-  "keywords": "hsh, Rust, băm, mật khẩu, mật mã, hậu lượng tử, Argon2, bcrypt, scrypt, an toàn",
+  "description": "hsh — thư viện Rust triển khai các thuật toán băm và digest an toàn, được thiết kế với tư thế kháng lượng tử cho kỷ nguyên xác thực hậu PQC.",
+  "banner_alt": "Hình ảnh trừu tượng của các hàm băm mật mã",
   "date": "October 16, 2023",
   "title": "Bảo vệ dữ liệu thời lượng tử: thư viện băm hsh",
-  "description": "hsh — thư viện Rust triển khai các thuật toán băm và digest an toàn, được thiết kế với tư thế kháng lượng tử cho kỷ nguyên xác thực hậu PQC.",
-  "banner": "https://cloudcdn.pro/stocks/images/hsh-banner.webp",
-  "banner_alt": "Hình ảnh trừu tượng của các hàm băm mật mã",
-  "language": "vi-VN"
+  "keywords": "hsh, Rust, băm, mật khẩu, mật mã, hậu lượng tử, Argon2, bcrypt, scrypt, an toàn",
+  "subtitle": "Một thư viện Rust cho mã hoá và xác thực mật khẩu kháng lượng tử",
+  "language": "vi-VN",
+  "locale": "vi_VN",
+  "banner": "https://cloudcdn.pro/stocks/images/hsh-banner.webp"
 }

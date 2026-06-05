@@ -1,11 +1,11 @@
 {
-  "description": "Bitcoin: Sistem Uang Elektronik Peer-to-Peer (P2P ECS) yang berpotensi merevolusi cara orang bertransaksi secara online.",
-  "language": "id-ID",
-  "date": "Jan 01, 2018",
-  "subtitle": "Bitcoin, cryptocurrency, dan teknologi yang membentuk ulang pasar keuangan global.",
-  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
   "keywords": "bitcoin, cryptocurrency, blockchain, keuangan terdesentralisasi, mata uang digital, pembayaran peer-to-peer, emas digital, uang terprogram, masa depan uang, revolusi keuangan",
-  "banner_alt": "Setumpuk koin emas dan perak yang tersusun di atas meja",
+  "description": "Bitcoin: Sistem Uang Elektronik Peer-to-Peer (P2P ECS) yang berpotensi merevolusi cara orang bertransaksi secara online.",
   "locale": "id_ID",
-  "title": "[ID DRAFT] Bitcoin: A Year In Review of the First Cryptocurrency"
+  "subtitle": "Bitcoin, cryptocurrency, dan teknologi yang membentuk ulang pasar keuangan global.",
+  "language": "id-ID",
+  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
+  "title": "[ID DRAFT] Bitcoin: A Year In Review of the First Cryptocurrency",
+  "date": "Jan 01, 2018",
+  "banner_alt": "Setumpuk koin emas dan perak yang tersusun di atas meja"
 }

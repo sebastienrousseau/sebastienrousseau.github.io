@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/digitale-nodes.webp",
-  "locale": "tr_TR",
+  "banner_alt": "Bir ödeme rayının kuantum görselleştirmesi",
   "title": "Kuantum güvenli ödemeler: ödeme sektörü neden şimdi harekete geçmeli (EPAA)",
+  "locale": "tr_TR",
   "date": "September 01, 2025",
   "language": "tr-TR",
-  "description": "EPAA için beyaz kitap: kuantum bilişimin ödeme altyapısı için oluşturduğu yapısal tehdit ve koordineli eylem gerekçesi.",
-  "banner_alt": "Bir ödeme rayının kuantum görselleştirmesi",
+  "banner": "https://cloudcdn.pro/stocks/images/digitale-nodes.webp",
+  "keywords": "kuantum, ödemeler, EPAA, beyaz kitap, post-kuantum, kriptografi, bankacılık",
   "subtitle": "Emerging Payments Association Asia için sektörel beyaz kitap",
-  "keywords": "kuantum, ödemeler, EPAA, beyaz kitap, post-kuantum, kriptografi, bankacılık"
+  "description": "EPAA için beyaz kitap: kuantum bilişimin ödeme altyapısı için oluşturduğu yapısal tehdit ve koordineli eylem gerekçesi."
 }

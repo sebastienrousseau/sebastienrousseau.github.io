@@ -1,11 +1,11 @@
 {
-  "language": "vi-VN",
-  "banner": "https://cloudcdn.pro/stocks/images/whisper-macos-banner.webp",
-  "title": "Cách mạng hoá nhận dạng giọng nói thời gian thực trên macOS với OpenAI Whisper",
-  "keywords": "Whisper, macOS, Metal, Apple Silicon, nhận dạng giọng nói, thời gian thực, OpenAI, M1, M2",
-  "subtitle": "Tăng tốc bằng Metal Performance Shaders trên Apple Silicon",
   "banner_alt": "Sóng giọng nói với biểu tượng macOS",
-  "description": "Một hệ thống nhận dạng giọng nói thời gian thực trên macOS sử dụng OpenAI Whisper và Metal Performance Shaders để đạt độ trễ dưới một giây.",
+  "subtitle": "Tăng tốc bằng Metal Performance Shaders trên Apple Silicon",
+  "banner": "https://cloudcdn.pro/stocks/images/whisper-macos-banner.webp",
+  "locale": "vi_VN",
+  "title": "Cách mạng hoá nhận dạng giọng nói thời gian thực trên macOS với OpenAI Whisper",
+  "language": "vi-VN",
   "date": "March 12, 2024",
-  "locale": "vi_VN"
+  "keywords": "Whisper, macOS, Metal, Apple Silicon, nhận dạng giọng nói, thời gian thực, OpenAI, M1, M2",
+  "description": "Một hệ thống nhận dạng giọng nói thời gian thực trên macOS sử dụng OpenAI Whisper và Metal Performance Shaders để đạt độ trễ dưới một giây."
 }
