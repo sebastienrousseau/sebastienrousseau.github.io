@@ -52,7 +52,7 @@ flowchart TB
  DC[docs/<br/>GH Pages root]
  CF[Cloudflare CDN<br/>PQC TLS]
  WORK[Worker: lang-router<br/>cookie/?lang routing<br/>+ edge security headers]
- LABS[_wasm-demos → /labs/<crate>/<br/>Rust → WASM, strict CSP]
+ LABS[labs/ → /labs/<crate>/<br/>Rust → WASM, strict CSP]
  end
 
  Source --> SSG

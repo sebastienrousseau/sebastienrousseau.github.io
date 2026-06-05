@@ -1,11 +1,11 @@
 {
-  "date": "Oct 09, 2023",
-  "banner_alt": "Kwamfuta mai allon da aka kashe a saman teburin fari tare da gilashi na ruwa a hagu da alkalami, littafin rubutu da tsiro a dama",
-  "locale": "ha_NG",
-  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
-  "title": "Static Site Generator: Fastest Rust-Based SSG",
   "subtitle": "Static Site Generator, mafi sauri Rust-based static site generator don gidajen yanar gizo masu tasiri sosai.",
-  "description": "Yana ba ku damar ƙirƙirar gidajen yanar gizo na tsaye masu tasiri tare da yiwuwar da ba ta iyaka, girma marar iyaka, da kasancewar yanar gizo ta musamman da kuke sarrafawa.",
   "keywords": "pain001, iso 20022, automation na biyan kuɗi, rage kashe kuɗi, sarrafa biyan kuɗi, fayilolin biyan kuɗi, fara biyan kuɗi, pain message, pain message standards, pain message validation",
-  "language": "ha-NG"
+  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
+  "locale": "ha_NG",
+  "banner_alt": "Kwamfuta mai allon da aka kashe a saman teburin fari tare da gilashi na ruwa a hagu da alkalami, littafin rubutu da tsiro a dama",
+  "title": "Static Site Generator: Fastest Rust-Based SSG",
+  "description": "Yana ba ku damar ƙirƙirar gidajen yanar gizo na tsaye masu tasiri tare da yiwuwar da ba ta iyaka, girma marar iyaka, da kasancewar yanar gizo ta musamman da kuke sarrafawa.",
+  "language": "ha-NG",
+  "date": "Oct 09, 2023"
 }

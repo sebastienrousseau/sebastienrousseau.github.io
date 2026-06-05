@@ -1,5 +1,5 @@
 # RFC 9116 — security disclosure policy for sebastienrousseau.com.
-# Mirrors the policy in /SECURITY.md and project-docs/SECURITY.md. The Expires
+# Mirrors the policy in /SECURITY.md and project-docs/security.md. The Expires
 # date is one year out from the most recent rotation; refresh before
 # it lapses or scanners will flag this file as stale.
 

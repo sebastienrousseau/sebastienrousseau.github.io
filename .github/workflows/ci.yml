@@ -35,7 +35,7 @@ jobs:
           fi
 
       - name: Install wasm-pack + wasm32 target
-        # build.sh compiles every crate under _wasm-demos/ to WebAssembly
+        # build.sh compiles every crate under labs/ to WebAssembly
         # and stages the artefacts under public/labs/<crate>/. wasm-pack
         # ships a prebuilt binary so the install is a couple seconds.
         run: |

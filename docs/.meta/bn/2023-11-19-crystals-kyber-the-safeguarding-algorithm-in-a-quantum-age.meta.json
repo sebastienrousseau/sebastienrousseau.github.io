@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
-  "banner_alt": "একটি আধুনিক ও মসৃণ কোয়ান্টাম কম্পিউটার",
-  "date": "Nov 19, 2023",
-  "title": "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age",
-  "locale": "bn_BD",
-  "keywords": "কোয়ান্টাম কম্পিউটিং, কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফি, CRYSTALS-Kyber, ক্রিপ্টোগ্রাফি, নিরাপত্তা, ব্যাংকিং, আর্থিক, এনক্রিপশন, ডেটা সুরক্ষা, ভবিষ্যৎ-নিশ্চিত",
   "description": "আবিষ্কার করুন কীভাবে CRYSTALS-Kyber, একটি কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফি অ্যালগরিদম, ক্রিপ্টোগ্রাফির বিশ্বে বিপ্লব এনেছে এবং আমাদের কোয়ান্টাম যুগের জন্য প্রস্তুত করছে।",
+  "banner_alt": "একটি আধুনিক ও মসৃণ কোয়ান্টাম কম্পিউটার",
+  "keywords": "কোয়ান্টাম কম্পিউটিং, কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফি, CRYSTALS-Kyber, ক্রিপ্টোগ্রাফি, নিরাপত্তা, ব্যাংকিং, আর্থিক, এনক্রিপশন, ডেটা সুরক্ষা, ভবিষ্যৎ-নিশ্চিত",
+  "subtitle": "CRYSTALS-Kyber, পোস্ট-কোয়ান্টাম কী এনক্যাপসুলেশনের জন্য NIST FIPS 203 মান।",
   "language": "bn-BD",
-  "subtitle": "CRYSTALS-Kyber, পোস্ট-কোয়ান্টাম কী এনক্যাপসুলেশনের জন্য NIST FIPS 203 মান।"
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
+  "date": "Nov 19, 2023",
+  "locale": "bn_BD",
+  "title": "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
 }

@@ -1,12 +1,12 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/shokunin-banner.webp",
+  "banner_alt": "Static Site Generator プロジェクトのバナー",
+  "description": "Static Site Generator は Rust で書かれた静的サイトジェネレータで、超高速ビルド、JSON-LD ネイティブサポート、優れたアクセシビリティを実現します。",
   "title": "Static Site Generator:Rust ベースの最速静的サイトジェネレータ",
+  "last_reviewed": "2026-05-11",
   "subtitle": "パフォーマンスと開発者体験のために構築された静的サイトジェネレータ",
+  "date": "October 9, 2023",
   "keywords": "Static Site Generator, SSG, 静的サイトジェネレータ, Rust, パフォーマンス, SEO, JSON-LD, アクセシビリティ",
   "locale": "ja_JP",
-  "date": "October 9, 2023",
-  "language": "ja-JP",
-  "description": "Static Site Generator は Rust で書かれた静的サイトジェネレータで、超高速ビルド、JSON-LD ネイティブサポート、優れたアクセシビリティを実現します。",
-  "banner_alt": "Static Site Generator プロジェクトのバナー",
-  "last_reviewed": "2026-05-11"
+  "banner": "https://cloudcdn.pro/stocks/images/shokunin-banner.webp",
+  "language": "ja-JP"
 }

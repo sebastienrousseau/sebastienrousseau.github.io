@@ -58,33 +58,34 @@ if [[ -d fonts ]]; then
   cp -R fonts/. public/fonts/
 fi
 
-# Mirror _labs/ (pure-JS interactive demos — no WASM, no toolchain) into
-# public/labs/. Each subdir of _labs/ ships as a standalone page under
-# /labs/<name>/ with its own strict per-page CSP and noindex meta. WASM-
-# built labs (next block) go into the same public/labs/ namespace via the
-# wasm-pack loop, so the two patterns coexist cleanly.
-if [[ -d _labs ]]; then
+# Compile and copy all client-side lab demos under labs/ into public/labs/.
+# If a directory contains Cargo.toml, it is built with wasm-pack and the WASM
+# artifacts (and any web shell content) are staged. Otherwise, it is a pure
+# JavaScript/HTML/CSS demo and copied directly.
+if [[ -d labs ]]; then
   mkdir -p public/labs
-  cp -R _labs/. public/labs/
-fi
-
-# Build + stage WASM lab demos. Each subdirectory of _wasm-demos/ is a
-# self-contained Rust→WASM crate plus a `web/` folder with the standalone
-# HTML/JS/CSS shell. The compiled wasm-pack artefacts + the web shell are
-# copied into public/labs/<crate-name>/ where they're served alongside the
-# rest of the static site. Skipped if wasm-pack isn't on the PATH (e.g.
-# minimal local builds) — CI installs it explicitly.
-if command -v wasm-pack >/dev/null 2>&1 && [[ -d _wasm-demos ]]; then
-  for demo in _wasm-demos/*/; do
-    [[ -f "$demo/Cargo.toml" ]] || continue
+  if [[ -f labs/README.md ]]; then
+    cp labs/README.md public/labs/README.md
+  fi
+  for demo in labs/*/; do
+    [[ -d "$demo" ]] || continue
     name=$(basename "$demo")
-    echo "wasm-pack[$name]: building"
-    (cd "$demo" && wasm-pack build --target web --release 2>&1 | tail -3)
-    mkdir -p "public/labs/$name"
-    cp "$demo/pkg/${name//-/_}.js" "public/labs/$name/"
-    cp "$demo/pkg/${name//-/_}_bg.wasm" "public/labs/$name/"
-    if [[ -d "$demo/web" ]]; then
-      cp -R "$demo/web/." "public/labs/$name/"
+    if [[ -f "$demo/Cargo.toml" ]]; then
+      if command -v wasm-pack >/dev/null 2>&1; then
+        echo "wasm-pack[$name]: building"
+        (cd "$demo" && wasm-pack build --target web --release 2>&1 | tail -3)
+        mkdir -p "public/labs/$name"
+        cp "$demo/pkg/${name//-/_}.js" "public/labs/$name/"
+        cp "$demo/pkg/${name//-/_}_bg.wasm" "public/labs/$name/"
+        if [[ -d "$demo/web" ]]; then
+          cp -R "$demo/web/." "public/labs/$name/"
+        fi
+      else
+        echo "warning: wasm-pack not found, skipping Rust compilation for $name"
+      fi
+    else
+      mkdir -p "public/labs/$name"
+      cp -R "$demo/." "public/labs/$name/"
     fi
   done
 fi

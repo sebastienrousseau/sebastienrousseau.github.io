@@ -1,12 +1,12 @@
 {
-  "keywords": "EU AI 法, AI 規制, ガバナンス, リスク分類, コンプライアンス, GDPR, AI 監督",
+  "locale": "ja_JP",
+  "banner_alt": "ブリュッセル EU 議会",
   "title": "EU AI 規制:世界の AI 規制の未来を形作る",
+  "description": "EU AI 法がどのように世界の AI 規制を形作り、企業の AI 採用に影響を与えるか。",
   "last_reviewed": "2026-05-11",
   "banner": "https://cloudcdn.pro/stocks/images/guillaume-perigois-0NRkVddA1fw-unsplash.webp",
   "subtitle": "EU AI 法とその世界的な影響",
-  "language": "ja-JP",
-  "description": "EU AI 法がどのように世界の AI 規制を形作り、企業の AI 採用に影響を与えるか。",
-  "locale": "ja_JP",
   "date": "February 13, 2024",
-  "banner_alt": "ブリュッセル EU 議会"
+  "keywords": "EU AI 法, AI 規制, ガバナンス, リスク分類, コンプライアンス, GDPR, AI 監督",
+  "language": "ja-JP"
 }

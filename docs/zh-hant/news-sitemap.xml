@@ -2,25 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/zh-hant/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>zh-Hant</news:language>
-    </news:publication>
-    <news:publication_date>2026-06-05T06:06:06+00:00</news:publication_date>
-    <news:title>2026 雲端原生銀行指數:DORA、平台工程、主權雲與營運韌性</news:title>
-    <news:keywords>雲端原生銀行 2026, DORA 銀行, 雲端集中風險, 銀行平台工程, ICT 第三方風險, 雲端退場策略, 主權雲, FIPS 203, ML-KEM, ISO 20022, Kubernetes</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/zh-hant/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>zh-Hant</news:language>
     </news:publication>
-    <news:publication_date>2026-06-05T03:06:50+00:00</news:publication_date>
+    <news:publication_date>2026-06-05T18:09:22+00:00</news:publication_date>
     <news:title>2026 年的多管道銀行:在單一策略中整合卡片、A2A、穩定幣、RTP、FedNow 與 Open Banking</news:title>
     <news:keywords>支付編排層, FedNow vs RTP, FedNow vs ACH, 穩定幣結算, USDC 原子結算, ISO 20022 pacs.008, 帳對帳 A2A, Open Banking API, 預籌流動性, 24/7 流動性陷阱, 多管道銀行 2026, 支付路由引擎, ERP 對帳</news:keywords>
   </news:news>
@@ -32,7 +20,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>zh-Hant</news:language>
     </news:publication>
-    <news:publication_date>2026-06-05T03:06:50+00:00</news:publication_date>
+    <news:publication_date>2026-06-05T18:09:22+00:00</news:publication_date>
     <news:title>後量子支付基礎建設:銀行為何可能替換而非改造傳統管道</news:title>
     <news:keywords>後量子密碼學, PQC 支付, 密碼敏捷性, 現收割後解密, HNDL, NIST 後量子標準, ML-KEM, ML-DSA, FIPS 203, FIPS 204, 支付管道遷移, ISO 20022 PQC, SWIFT MT 替換, HSM, PKI 崩潰, 營運韌性, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
   </news:news>
@@ -44,9 +32,21 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>zh-Hant</news:language>
     </news:publication>
-    <news:publication_date>2026-06-05T03:06:50+00:00</news:publication_date>
+    <news:publication_date>2026-06-05T18:09:22+00:00</news:publication_date>
     <news:title>數位資產 2026:銀行不能延後的轉型</news:title>
     <news:keywords>數位資產 2026, 代幣化現實資產, 穩定幣銀行, 代幣化存款, 數位資產託管, DLT 銀行, 結算基礎建設, 抵押品流動性, 可程式化貨幣, 數位資產銀行戰略</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-05T06:06:06+00:00</news:publication_date>
+    <news:title>2026 雲端原生銀行指數:DORA、平台工程、主權雲與營運韌性</news:title>
+    <news:keywords>雲端原生銀行 2026, DORA 銀行, 雲端集中風險, 銀行平台工程, ICT 第三方風險, 雲端退場策略, 主權雲, FIPS 203, ML-KEM, ISO 20022, Kubernetes</news:keywords>
   </news:news>
 </url>
 <url>

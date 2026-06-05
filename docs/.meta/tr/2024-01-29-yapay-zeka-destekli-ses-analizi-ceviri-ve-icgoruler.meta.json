@@ -1,11 +1,11 @@
 {
-  "locale": "tr_TR",
-  "keywords": "yapay zeka, ses, konuşma tanıma, çeviri, içgörüler, analiz",
+  "description": "Ses verilerini metne dönüştürmek, çevirmek ve eyleme dönüştürülebilir içgörüler çıkarmak için yapay zeka çözümleri.",
   "language": "tr-TR",
-  "date": "January 29, 2024",
-  "subtitle": "Konuşma, ses analizi ve çeviri için yapay zeka uygulamaları",
-  "title": "Yapay zeka ile ses analizi, çeviriler ve içgörüler",
-  "banner_alt": "Bir ses dalgasının görselleştirmesi",
+  "keywords": "yapay zeka, ses, konuşma tanıma, çeviri, içgörüler, analiz",
   "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp",
-  "description": "Ses verilerini metne dönüştürmek, çevirmek ve eyleme dönüştürülebilir içgörüler çıkarmak için yapay zeka çözümleri."
+  "locale": "tr_TR",
+  "subtitle": "Konuşma, ses analizi ve çeviri için yapay zeka uygulamaları",
+  "banner_alt": "Bir ses dalgasının görselleştirmesi",
+  "title": "Yapay zeka ile ses analizi, çeviriler ve içgörüler",
+  "date": "January 29, 2024"
 }

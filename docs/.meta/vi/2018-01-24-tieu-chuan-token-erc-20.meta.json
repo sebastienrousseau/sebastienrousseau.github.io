@@ -1,11 +1,11 @@
 {
-  "keywords": "ERC-20, Ethereum, token, hợp đồng thông minh, DeFi, stablecoin, USDC, token hoá tài sản",
-  "title": "Tiêu chuẩn token ERC-20",
-  "locale": "vi_VN",
-  "language": "vi-VN",
-  "subtitle": "Giao diện token Ethereum đã thay đổi thế giới",
-  "description": "ERC-20 đã chuẩn hoá việc tạo token trên Ethereum, mở khoá hàng nghìn dự án và nền tảng cho stablecoin, DeFi và token hoá tài sản thực.",
-  "banner_alt": "Một chiếc máy tính xách tay tắt nguồn trên bàn gỗ nâu",
   "date": "January 24, 2018",
+  "subtitle": "Giao diện token Ethereum đã thay đổi thế giới",
+  "banner_alt": "Một chiếc máy tính xách tay tắt nguồn trên bàn gỗ nâu",
+  "keywords": "ERC-20, Ethereum, token, hợp đồng thông minh, DeFi, stablecoin, USDC, token hoá tài sản",
+  "language": "vi-VN",
+  "title": "Tiêu chuẩn token ERC-20",
+  "description": "ERC-20 đã chuẩn hoá việc tạo token trên Ethereum, mở khoá hàng nghìn dự án và nền tảng cho stablecoin, DeFi và token hoá tài sản thực.",
+  "locale": "vi_VN",
   "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
 }

@@ -296,14 +296,14 @@ You can customize the HTML layouts and CSS files to match your own brand.
 
 The project-docs folder contains detailed guides on architecture, publishing, and security.
 
-- [Architecture](project-docs/ARCHITECTURE.md)
-- [CI Gates](project-docs/CI.md)
-- [Internationalisation](project-docs/I18N.md)
-- [Postbuild Passes](project-docs/POSTBUILD.md)
-- [Publishing](project-docs/PUBLISHING.md)
-- [Schemas](project-docs/SCHEMAS.md)
-- [Security](project-docs/SECURITY.md)
-- [Sigstore](project-docs/SIGSTORE.md)
+- [Architecture](project-docs/architecture.md)
+- [CI Gates](project-docs/ci.md)
+- [Internationalisation](project-docs/i18n.md)
+- [Postbuild Passes](project-docs/postbuild.md)
+- [Publishing](project-docs/publishing.md)
+- [Schemas](project-docs/schemas.md)
+- [Security](project-docs/security.md)
+- [Sigstore](project-docs/sigstore.md)
 - [Daily Publishing](project-docs/daily-publishing.md)
 - [SEO Spec](project-docs/web-performance-seo-spec.md)
 

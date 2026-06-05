@@ -1,12 +1,12 @@
 {
-  "subtitle": "대규모 언어 모델, 확산 모델, 엔터프라이즈 배포 개관",
-  "date": "November 12, 2023",
-  "keywords": "생성 AI, LLM, 대규모 언어 모델, 확산 모델, GPT, Claude, Gemini, 엔터프라이즈 AI",
-  "banner_alt": "AI와 인간의 상호작용을 표현한 추상적 비주얼",
+  "title": "생성 AI 탐구",
   "last_reviewed": "2026-05-16",
-  "description": "생성 AI가 이미지, 텍스트, 음성, 코드에서 어떻게 작동하는지, 엔터프라이즈 응용을 위한 실무적 고려 사항.",
-  "locale": "ko_KR",
   "banner": "https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp",
-  "language": "ko-KR",
-  "title": "생성 AI 탐구"
+  "locale": "ko_KR",
+  "date": "November 12, 2023",
+  "description": "생성 AI가 이미지, 텍스트, 음성, 코드에서 어떻게 작동하는지, 엔터프라이즈 응용을 위한 실무적 고려 사항.",
+  "subtitle": "대규모 언어 모델, 확산 모델, 엔터프라이즈 배포 개관",
+  "banner_alt": "AI와 인간의 상호작용을 표현한 추상적 비주얼",
+  "keywords": "생성 AI, LLM, 대규모 언어 모델, 확산 모델, GPT, Claude, Gemini, 엔터프라이즈 AI",
+  "language": "ko-KR"
 }

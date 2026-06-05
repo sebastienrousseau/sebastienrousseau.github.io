@@ -6,33 +6,14 @@
     <description>مقالات بالعربية: الذكاء الاصطناعي التطبيقي، مدفوعات ISO 20022، التشفير ما بعد الكمي، وتحوّل المدفوعات بالجملة.</description>
     <atom:link href="https://sebastienrousseau.com/ar/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ar-SA</language>
-    <lastBuildDate>Fri, 05 Jun 2026 03:06:50 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2026 18:09:21 +0000</lastBuildDate>
     <copyright>© حقوق النشر 2007 - 2026 - سيباستيان روسو. جميع الحقوق محفوظة.</copyright>
-    <item>
-      <title>مؤشر الخدمات المصرفية السحابية الأصل في 2026: DORA، وهندسة المنصة، والسحابة السيادية، والمرونة التشغيلية</title>
-      <link>https://sebastienrousseau.com/ar/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
-      <description>مؤشر 2026 للخدمات المصرفية السحابية الأصل: قياس الجاهزية لـ DORA، ونضج هندسة المنصة، وتركّز المخاطر السحابية، وأدلة الخروج، والمرونة التشغيلية للبنوك.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
-      <pubDate>Fri, 05 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
-      <category>الخدمات المصرفية السحابية الأصل 2026</category>
-      <category>DORA</category>
-      <category>البنوك</category>
-      <category>تركّز المخاطر السحابية</category>
-      <category>هندسة المنصة في البنوك</category>
-      <category>مخاطر الأطراف الثالثة لتقنية المعلومات</category>
-      <category>استراتيجية الخروج السحابي</category>
-      <category>السحابة السيادية</category>
-      <category>ISO 20022</category>
-      <category>Kubernetes</category>
-    </item>
     <item>
       <title>المصرف متعدد القنوات في 2026: البطاقات وA2A والعملات المستقرة وRTP وFedNow وOpen Banking في استراتيجية واحدة</title>
       <link>https://sebastienrousseau.com/ar/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow يستلزم سيولة مموَّلة مسبقًا على مدار الساعة. ACH رخيص لكنه T+1. USDC يُسوَّى ذريًّا لكنه يحتاج بنية محافظ. المصرف متعدد القنوات في 2026 يوجِّه كل دفعة وفق التكلفة والنهائية وكلفة السيولة، بقيادة محرك تنسيق يقرأ ISO 20022 pacs.008 ويقرِّر.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Fri, 05 Jun 2026 03:06:50 +0000</pubDate>
+      <pubDate>Fri, 05 Jun 2026 18:09:21 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>طبقة تنسيق المدفوعات، FedNow مقابل RTP، FedNow مقابل ACH، تسوية العملات المستقرة، التسوية الذرية لـUSDC، ISO 20022 pacs.008، حساب إلى حساب A2A، واجهات Open Banking، السيولة المموَّلة مسبقًا، فخ السيولة 24/7، المصرف متعدد القنوات 2026، محرك توجيه المدفوعات، مطابقة ERP</category>
@@ -42,7 +23,7 @@
       <link>https://sebastienrousseau.com/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>التشفير ما بعد الكمي يفرض خيارًا ثنائيًا على قنوات المدفوعات: تعديل RSA/ECC داخل مظاريف SWIFT MT وISO 20022 التي لم تُصمَّم أصلًا لاستيعاب ML-KEM وML-DSA، أو الاستبدال ببنية تحتية ذات مرونة تشفيرية. على المعماريين الحسم قبل أن يتحوَّل HNDL إلى خسارة تشغيلية.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Fri, 05 Jun 2026 03:06:50 +0000</pubDate>
+      <pubDate>Fri, 05 Jun 2026 18:09:21 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>التشفير ما بعد الكمي</category>
@@ -68,7 +49,7 @@
       <link>https://sebastienrousseau.com/ar/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>لم تَعُد الأصول الرقمية رهاناً على الابتكار، بل سؤالاً عن هندسة التسوية والحفظ والميزانية العمومية. المهمة الاستراتيجية للمصارف هي تصميم البنية التحتية في ظل عدم يقين بنيوي.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Fri, 05 Jun 2026 03:06:50 +0000</pubDate>
+      <pubDate>Fri, 05 Jun 2026 18:09:21 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>الأصول الرقمية 2026، الأصول الحقيقية المرمَّزة، العملات المستقرة في المصارف، الودائع المرمَّزة، حفظ الأصول الرقمية، DLT في المصارف، البنية التحتية للتسوية، قابلية تحرّك الضمانات، النقود القابلة للبرمجة، استراتيجية المصارف للأصول الرقمية</category>
@@ -78,7 +59,7 @@
       <link>https://sebastienrousseau.com/ar/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</link>
       <description>في 25 مايو 2026 أصدر البابا ليون الرابع عشر Magnifica Humanitas، أول رسالة بابوية مخصّصة للذكاء الاصطناعي. قراءتها من داخل قطاع التقنية تكشف إطارًا أخلاقيًا متماسكًا لعصر الذكاء الاصطناعي والكم، وتنتهي إلى الرجاء لا الخوف.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/</guid>
-      <pubDate>Fri, 05 Jun 2026 03:06:50 +0000</pubDate>
+      <pubDate>Fri, 05 Jun 2026 18:09:21 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" type="image/webp" length="0"/>
       <category>Magnifica Humanitas</category>
@@ -101,6 +82,25 @@
       <category>DORA</category>
       <category>Anthropic</category>
       <category>Sebastien Rousseau</category>
+    </item>
+    <item>
+      <title>مؤشر الخدمات المصرفية السحابية الأصل في 2026: DORA، وهندسة المنصة، والسحابة السيادية، والمرونة التشغيلية</title>
+      <link>https://sebastienrousseau.com/ar/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
+      <description>مؤشر 2026 للخدمات المصرفية السحابية الأصل: قياس الجاهزية لـ DORA، ونضج هندسة المنصة، وتركّز المخاطر السحابية، وأدلة الخروج، والمرونة التشغيلية للبنوك.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
+      <pubDate>Fri, 05 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
+      <category>الخدمات المصرفية السحابية الأصل 2026</category>
+      <category>DORA</category>
+      <category>البنوك</category>
+      <category>تركّز المخاطر السحابية</category>
+      <category>هندسة المنصة في البنوك</category>
+      <category>مخاطر الأطراف الثالثة لتقنية المعلومات</category>
+      <category>استراتيجية الخروج السحابي</category>
+      <category>السحابة السيادية</category>
+      <category>ISO 20022</category>
+      <category>Kubernetes</category>
     </item>
     <item>
       <title>مؤشر المصرفية الآمنة كموميًا في 2026: تشفير ما بعد الكم، QKD، المرونة التشفيرية، ومخاطر اجمع-الآن-فُكَّ-لاحقًا</title>
