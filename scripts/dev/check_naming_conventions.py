@@ -4,19 +4,28 @@ import subprocess
 import sys
 from pathlib import Path
 
-# Root files allowed to be uppercase (ecosystem standards)
+# Root-level uppercase files that comply with industry standard conventions
+# and platform-specific integrations.
 ALLOWED_ROOT_UPPERCASE = {
+    # Main repository documentation entrypoint, standard across all code hubs
     "README.md",
+    # Auto-detected by GitHub Security Advisories tab and security alerts
     "SECURITY.md",
+    # Canonical license declaration file name
     "LICENSE",
+    # Historical log of repository release notes
     "CHANGELOG.md",
+    # Operational instructions for environment staging and deployments
     "DEPLOY.md",
+    # Default Makefile target entrypoint for GNU Make toolchain orchestration
     "Makefile",
 }
 
 def validate_directory_part(part: str, file_path: str) -> bool:
     """Validates that a directory name complies with lowercase conventions."""
-    # Skip hidden/dot config directories like .github, .well-known
+    # Hidden/dot config directories are exempted from naming checks as they
+    # contain standard config payloads. E.g., .github/ for CI workflows and
+    # .well-known/ for RFC-defined protocols (WKD keys, security contacts).
     if part.startswith("."):
         return True
 
@@ -60,6 +69,9 @@ def validate_markdown_name(name: str, path: Path, file_path: str) -> bool:
     """Checks if a markdown file name is lowercase (except for README and MANIFEST)."""
     if len(path.parent.parts) > 0:
         clean_name = name[:-3]
+        # Allow standard uppercase names within subdirectories:
+        # - README: explain directory structure and domain scope to developers
+        # - MANIFEST: package catalogs, static file listings, or translations maps
         if clean_name in ("README", "MANIFEST"):
             return True
         if any(char.isupper() for char in clean_name):
