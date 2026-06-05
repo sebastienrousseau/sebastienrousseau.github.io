@@ -53,6 +53,7 @@ test:
 # Static analysis (ruff, configured in pyproject.toml).
 lint:
 	@ruff check scripts/ tests/
+	@python3 scripts/dev/check_naming_conventions.py
 
 # Unified coverage report — runs every CLI in scripts/ under
 # coverage.py, then runs the pytest suite under the same data file,
