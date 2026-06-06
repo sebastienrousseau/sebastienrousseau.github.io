@@ -20,7 +20,7 @@ rust   = "stable"
 # It tracks the latest published version on crates.io — keep here
 # documented for reproducibility, not for `mise install` to act on.
 #
-#   cargo install ssg --version 0.0.39
+#   cargo install ssg --version 0.0.40
 #
 # Pin the version in build.sh / publish-today.md when reproducibility
 # matters more than always-latest.
