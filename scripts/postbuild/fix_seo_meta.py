@@ -34,7 +34,7 @@ DRAFTS = REPO / "_drafts"
 
 TITLES: dict[str, str] = {
     "_posts/index.md": "Sebastien Rousseau: AI, Payments & Quantum Cryptography",
-    "_posts/tags.md": "Topics & Tags Index: AI, Payments, Quantum, Rust OSS",
+    "_posts/tags.md": "Tags Index: AI, Payments & Rust OSS - Sebastien Rousseau",
     "_posts/terms.md": "Website Terms & Conditions of Use — Sebastien Rousseau",
     "_posts/privacy.md": "Privacy Statement — How Your Data Is Collected & Used",
     "_posts/made-with-static-site-generator.md": (

@@ -1,5 +1,6 @@
 ---
 title: "Bitcoin: A Year In Review of the First Cryptocurrency"
+tags: "bitcoin, criptomonedă, blockchain, decentralized finance, digital currency, peer-to-peer payments, digital gold, bani programabili, future of money, financial revolution, ISO 20022, criptografie post-cuantică, AI, stablecoinuri, depozite tokenizate, open source"
 subtitle: "Bitcoin, criptomonede și tehnologia care remodelează piețele financiare."
 description: "Bitcoin: Un sistem electronic de plăți peer-to-peer (P2P ECS) cu potențialul de a revoluționa modul în care oamenii tranzacționează online."
 date: "Jan 01, 2018"

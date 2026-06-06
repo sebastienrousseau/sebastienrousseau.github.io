@@ -1,5 +1,6 @@
 ---
 title: "بيتكوين: عام في المراجعة لأوّل عملة مشفّرة"
+tags: "bitcoin, cryptocurrency, blockchain، Ethereum، عقود ذكية، تجزئة تشفيرية، شجرة Merkle، آلية توافق، إثبات العمل، EVM، Solidity، ERC-20، سجل موزع، تمويل لا مركزي, decentralized finance, digital currency, peer-to-peer payments, digital gold, النقود القابلة للبرمجة, future of money, financial revolution, ISO 20022, التشفير ما بعد الكمي, AI, stablecoins, الودائع المرمَّزة, open source"
 subtitle: "نظام دفع إلكتروني نِدّ-لنِدّ أعاد تعريف المال"
 description: "بيتكوين: نظام نقد إلكتروني نِدّ-لنِدّ (P2P ECS) قادر على إحداث ثورة في طريقة تعامل الناس عبر الإنترنت."
 date: "January 1, 2018"

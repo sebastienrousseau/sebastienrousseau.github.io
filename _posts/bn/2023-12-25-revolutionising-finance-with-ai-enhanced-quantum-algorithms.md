@@ -1,5 +1,6 @@
 ---
 title: "Revolutionising Finance with AI-Enhanced Quantum Algorithms"
+tags: "Quantum, AI, Finance, Algorithms, Mathematics, Banking, Technology, Innovation, Data, Efficiency, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, কোয়ান্টাম কম্পিউটিং"
 subtitle: "আর্থিক উদ্ভাবনের জন্য Quantum-এর শক্তি উন্মোচন: পরবর্তী প্রজন্মের Algorithm-এর কেন্দ্রে AI"
 description: "অর্থায়নে কোয়ান্টাম অ্যালগরিদমে AI-এর রূপান্তরকারী ভূমিকা অন্বেষণ করুন, তাদের গাণিতিক জটিলতা এবং ব্যাংকিং প্রয়োগের উপর মনোযোগ দিয়ে।"
 date: "Dec 25, 2023"

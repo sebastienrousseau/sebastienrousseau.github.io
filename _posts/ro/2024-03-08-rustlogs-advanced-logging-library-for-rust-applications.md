@@ -1,5 +1,6 @@
 ---
 title: "RustLogs (RLG): Structured Logging Library for Rust"
+tags: "Rust, Logging, Asynchronous, Structured, Customisable, Debugging, Development, RustLogs, Integration, Documentation, ISO 20022, criptografie post-cuantică, AI, open source"
 subtitle: "Optimizează-ți fluxul de lucru pentru logging în Rust"
 description: "Descoperă RustLogs (RLG), biblioteca flexibilă de logging pentru Rust, cu formate structurate de jurnal, logging asincron și opțiuni extinse de personalizare."
 date: "Mar 08, 2024"

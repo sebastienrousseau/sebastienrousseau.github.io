@@ -1,5 +1,6 @@
 ---
 title: "التشفير الكمومي القائم على الشبكات: خلل في هجوم Chen على LWE"
+tags: "post-quantum cryptography, NIST, quantum algorithms, Lattice-Based Cryptography, LWE Problem, quantum computing, Cryptographic Security, Quantum Resistance, Cryptography Research, ISO 20022, AI"
 subtitle: "مراجعة الأقران تكشف عن خلل في عمل Chen الرائد"
 description: "خلل في الخوارزمية الكمومية لـLWE من Yilei Chen يمنح التشفير القائم على الشبكات مهلةً مؤقّتة. ما يعنيه ذلك لـCRYSTALS-Kyber وDilithium وخارطة طريق PQC."
 date: "Apr 22, 2024"

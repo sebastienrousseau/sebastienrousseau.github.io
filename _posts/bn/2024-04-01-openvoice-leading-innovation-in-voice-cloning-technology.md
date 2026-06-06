@@ -1,5 +1,6 @@
 ---
 title: "OpenVoice: Leading Innovation in Voice Cloning Technology"
+tags: "OpenVoice, Voice Cloning, Synthetic Speech, open source, Cross-Lingual, Instant Cloning, Voice Control, Accessibility, Entertainment, Customer Service, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, AI"
 subtitle: "পরবর্তী প্রজন্মের ওপেন-সোর্স ভয়েস ক্লোনিং টুল"
 description: "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing."
 date: "Apr 01, 2024"

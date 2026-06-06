@@ -1,5 +1,6 @@
 ---
 title: "RustLogs (RLG): Structured Logging Library for Rust"
+tags: "Rust, Logging, Asynchronous, Structured, Customisable, Debugging, Development, RustLogs, Integration, Documentation, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, AI, open source"
 subtitle: "Mú Ìlànà Ìgbàánú Rust Rẹ Dára Sí i"
 description: "Ṣàwárí RustLogs (RLG), ìwé-ìkàwé ìgbàánú onírúurú fún Rust, pẹ̀lú àwọn ìpele ìgbàánú tó ṣètò, ìgbàánú àsínú, àti ọpọlọpọ àwọn àṣàyàn ìdásí."
 date: "Mar 08, 2024"

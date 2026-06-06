@@ -263,7 +263,7 @@ site_software: "Static Site Generator, Rust"
 <img alt="The Quantum-Safe Banking Index 2026 index diagram for banks and financial institutions in 2026" src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Quantum Cryptography · Post-Quantum Cryptography · PQC</span>
+<span class="newsroom-eyebrow">Quantum Cryptography · Post-Quantum Cryptography · QKD</span>
 <h3><a href="/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html">The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk</a></h3>
 <p class="newsroom-meta"><time datetime="2026-06-04">June 4, 2026</time></p>
 <p class="newsroom-excerpt">An index framework for measuring quantum-safe banking readiness in 2026: cryptographic bill of materials, hybrid TLS deployment, NIST FIPS 203 / 204 / 205 migration progress, crypto-agility primitives, and harvest-now-decrypt-later exposure across long-lived confidential data. The Board-Level Quantum Scorecard defines four exact percentages — inventory completeness, HNDL exposure, NIST migration progress, crypto-agility readiness — that turn project statuses into supervisory-ready evidence.</p>
@@ -299,7 +299,7 @@ site_software: "Static Site Generator, Rust"
 <img alt="Long-exposure photograph of intersecting light trails at a major rail interchange at night — visual key for the multi-rail bank piece: cards, A2A, RTP, FedNow, ACH, stablecoins, Open Banking APIs, ISO 20022, and the orchestration engine that routes between them" src="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Payment Orchestration · FedNow · RTP</span>
+<span class="newsroom-eyebrow">Payments · FedNow · RTP</span>
 <h3><a href="/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html">The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy</a></h3>
 <p class="newsroom-meta"><time datetime="2026-06-01">June 1, 2026</time></p>
 <p class="newsroom-excerpt">FedNow demands pre-funded 24/7 liquidity. ACH is cheap but T+1. USDC clears atomically but needs wallet infrastructure. The 2026 multi-rail bank routes each payment by cost, finality, and liquidity cost — driven by an orchestration engine that reads ISO 20022 pacs.008 and decides.</p>

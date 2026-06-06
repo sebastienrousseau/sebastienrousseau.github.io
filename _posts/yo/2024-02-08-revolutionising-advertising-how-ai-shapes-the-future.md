@@ -1,5 +1,6 @@
 ---
 title: "Generative AI in Advertising: Amazon Rufus & Meta"
+tags: "AI, Advertising, Amazon, Meta, Chatbots, Marketing, Technology, Analytics, Digital, Optimization, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum"
 subtitle: "Bii AI Ṣe N Yipada Ajọṣepọ Onibara ati Agbara Ipolowo"
 description: "Ṣawari bii AI ṣe n yipada ipolowo pẹlu awọn imọran nipa Rufus Amazon ati awọn idagbasoke tuntun Meta. Ṣe awari ipa rẹ lori ifarabalẹ awọn onibara"
 date: "Feb 08, 2024"

@@ -1,5 +1,6 @@
 ---
 title: "Generative AI in Advertising: Amazon Rufus & Meta"
+tags: "AI, Advertising, Amazon, Meta, Chatbots, Marketing, Technology, Analytics, Digital, Optimization, ISO 20022, post-quantum cryptography"
 subtitle: "Yadda AI ke Canza Hulɗar Masu Amfani da Ayyukan Tallace-tallace"
 description: "Bincika yadda AI ke canza duniyar talla ta hanyar fahimtar Amazon Rufus da sabbin ci gaban Meta. Gano tasirin kan hulɗar masu amfani da samfuran."
 date: "Feb 08, 2024"

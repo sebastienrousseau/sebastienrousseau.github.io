@@ -1,5 +1,6 @@
 ---
 title: "RustLogs (RLG): Structured Logging Library for Rust"
+tags: "Rust, Logging, Asynchronous, Structured, Customisable, Debugging, Development, RustLogs, Integration, Documentation, ISO 20022, post-quantum cryptography, AI, open source"
 subtitle: "Sauƙaƙe Tsarin Aiki na Rust Logging"
 description: "Gano RustLogs (RLG), ɗakin karatu mai sassauci na logging don Rust tare da tsarin log da aka tsara, logging na asynchronous, da zaɓuɓɓuka masu yawa na keɓantawa."
 date: "Mar 08, 2024"

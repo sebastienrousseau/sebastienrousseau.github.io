@@ -1,5 +1,6 @@
 ---
 title: "Alien Studio: My Tech-to Art Journey in Photography"
+tags: "Technology, Art, Photography, Rust, AI, quantum computing, Personal Journey, Alien Studio, Digital Art, Innovation, ISO 20022, post-quantum cryptography"
 subtitle: "Farkon Tafiya Mai Zurfi ta Fasaha ta Zamani"
 description: "Ku tare da ni a tafiyata ta sirri daga Rust, AI, da Quantum Computing zuwa sake fasalin fasaha da daukar hoto ta Alien Studio."
 date: "Jan 15, 2024"

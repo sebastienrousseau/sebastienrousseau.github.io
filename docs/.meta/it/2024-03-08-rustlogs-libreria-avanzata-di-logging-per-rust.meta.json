@@ -1,11 +1,11 @@
 {
+  "date": "March 08, 2024",
+  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
   "banner_alt": "RustLogs, libreria Rust di logging",
   "title": "RustLogs: libreria avanzata di logging per applicazioni Rust",
-  "keywords": "RustLogs, Rust, logging, osservabilità, structured logging, performance",
-  "language": "it-IT",
   "locale": "it_IT",
   "subtitle": "Logging strutturato, performance e contesto per applicazioni Rust di produzione",
-  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
-  "date": "March 08, 2024",
+  "keywords": "RustLogs, Rust, logging, osservabilità, structured logging, performance",
+  "language": "it-IT",
   "description": "RustLogs è una libreria di logging strutturato per Rust, progettata per applicazioni di produzione che richiedono performance, contesto e integrazione con sistemi di osservabilità."
 }

@@ -1,5 +1,6 @@
 ---
 title: "Alien Studio: My Tech-to Art Journey in Photography"
+tags: "Technology, Art, Photography, Rust, AI, কোয়ান্টাম কম্পিউটিং, Personal Journey, Alien Studio, Digital Art, Innovation, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি"
 subtitle: "একটি প্রযুক্তিগত অডিসির সূচনা"
 description: "Alien Studio-র মাধ্যমে Rust, AI এবং Quantum Computing থেকে শিল্প ও ফটোগ্রাফিকে নতুনভাবে সংজ্ঞায়িত করার আমার ব্যক্তিগত যাত্রায় যোগ দিন।"
 date: "Jan 15, 2024"

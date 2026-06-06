@@ -1,5 +1,6 @@
 ---
 title: "معيار التوكن ERC-20"
+tags: "Ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, Solidity, ISO 20022, post-quantum cryptography, AI, stablecoins"
 subtitle: "الواجهة الموحَّدة التي أتاحت لمنظومة Ethereum أن تزدهر"
 description: "ERC-20: أكثر أنواع التوكنات شيوعاً على بلوكشين Ethereum، يُوصف كثيراً بأنّه عقد رقمي ذكي (smart contract)."
 date: "January 24, 2018"

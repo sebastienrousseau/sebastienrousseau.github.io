@@ -1,5 +1,6 @@
 ---
 title: "Alien Studio: My Tech-to Art Journey in Photography"
+tags: "Technology, Art, Photography, Rust, AI, calcul cuantic, Personal Journey, Alien Studio, Digital Art, Innovation, ISO 20022, criptografie post-cuantică"
 subtitle: "Începuturile unei Odisee Tehnologice"
 description: "Alăturați-vă mie în călătoria personală, de la Rust, AI și Quantum Computing până la redefinirea artei și fotografiei prin intermediul Alien Studio."
 date: "Jan 15, 2024"

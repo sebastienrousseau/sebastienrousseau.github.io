@@ -1,5 +1,6 @@
 ---
 title: "Google Gemma: تحويل تطوير الذكاء الاصطناعي مفتوح المصدر"
+tags: "Gemma, Google, AI, open source, Technical, Enterprise, Integration, macOS, Data, Ethics, ISO 20022, التشفير ما بعد الكمي"
 subtitle: "نظرة من الداخل على القدرات والمساهمات مفتوحة المصدر وما هو قادم"
 description: "اكتشف نموذج Gemma من Google: مشروع مفتوح المصدر يُقدِّم حلول ذكاء اصطناعي أخلاقية للاستخدام الشخصي والمؤسسي."
 date: "Feb 26, 2024"

@@ -1,5 +1,6 @@
 ---
 title: "ERC-20: The Ethereum Token Interface That Changed the World"
+tags: "Ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, Solidity, ISO 20022, criptografie post-cuantică, AI, stablecoinuri"
 subtitle: "Tokenuri ERC-20, contracte inteligente Ethereum și standardizarea activelor digitale."
 description: "ERC-20 este cel mai utilizat standard de token pe blockchain-ul Ethereum, cunoscut ca un contract digital smart contract care a revoluționat activele digitale."
 date: "Jan 24, 2018"

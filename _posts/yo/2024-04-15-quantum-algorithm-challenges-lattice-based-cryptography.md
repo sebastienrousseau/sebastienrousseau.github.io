@@ -1,5 +1,6 @@
 ---
 title: "Quantum Algorithm Challenges Lattice-Based Cryptography"
+tags: "quantum algorithms, cryptography, lattice problems, LWE, ìsirò ìpamọ́ lẹ́yìn quantum, cybersecurity, research, innovation, future-proofing, ISO 20022, quantum computing, AI"
 subtitle: "Algorithm kuantum akoko polynomial tuntun fun cryptography ti o da lori lattice"
 description: "Algorithm kuantum akoko polynomial tuntun ti Yilei Chen fojusi cryptography lattice, pẹlu awọn ipa fun awọn iṣedede post-quantum bii CRYSTALS-Kyber."
 date: "Apr 01, 2024"

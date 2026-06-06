@@ -1,5 +1,6 @@
 ---
 title: "Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk"
+tags: "কোয়ান্টাম কম্পিউটিং, Shor's algorithm, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, RSA, elliptic curve, neutral atoms, error correction, cryptographic agility, quantum threat, payments, ISO 20022, DORA, AI"
 subtitle: "একটি নতুন গবেষণাপত্র পরামর্শ দিচ্ছে যে Shor's algorithm মাত্র ১০,০০০ কিউবিটে চলতে পারে। ক্রিপ্টোগ্রাফির জন্য এর প্রভাব উপেক্ষা করা কঠিন।"
 description: "Shor's algorithm এখন মাত্র ১০,০০০ কিউবিটে চলতে পারে। RSA, ECC এবং পোস্ট-কোয়ান্টাম মাইগ্রেশনের সময়সীমা সবই এগিয়ে আসছে। কারণটি জানুন।"
 date: "Apr 11, 2026"

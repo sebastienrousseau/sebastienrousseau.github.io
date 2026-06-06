@@ -1,5 +1,6 @@
 ---
 title: "Efficient Date and Time Management with DateTime (DTT)"
+tags: "DateTime, DTT, Rust, date library, time library, timezone handling, chrono alternative, ISO 8601, time formatting, Sebastien Rousseau, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, AI, open source"
 subtitle: "DTT, তারিখ ও সময় অপারেশনের জন্য উচ্চ-নির্ভুলতার Rust লাইব্রেরি।"
 description: "DateTime (DTT) হলো তারিখ ও সময় পার্স, যাচাই, ম্যানিপুলেট এবং ফরম্যাট করার জন্য একটি Rust লাইব্রেরি — উচ্চ নির্ভুলতা ও বিস্তৃত কার্যকারিতা সহ।"
 date: "Dec 04, 2023"

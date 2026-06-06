@@ -1,5 +1,6 @@
 ---
 title: "Lucy's Flash Drive Revisited: AI, Quantum & Knowledge"
+tags: "Lucy, Luc Besson, Scarlett Johansson, AI, calcul cuantic, neutral atoms, LLM, transumanism, mind uploading, brain-computer interfaces, posthumanism, film philosophy, ISO 20022, criptografie post-cuantică"
 subtitle: "La doisprezece ani după Lucy al lui Luc Besson, metafora centrală a filmului — cunoașterea migrând din carne în mașină — este validată pe neașteptate de LLM-uri, qubiți cu atomi neutri și emularea întregului creier."
 description: "Doisprezece ani mai târziu, Lucy al lui Besson pare un experiment mental despre cunoașterea migrând din carne în mașină — validat tacit de LLM-uri și qubiți."
 date: "May 11, 2026"

@@ -1,5 +1,6 @@
 ---
 title: "Alien Studio: My Tech-to Art Journey in Photography"
+tags: "Technology, Art, Photography, Rust, AI, quantum computing, Personal Journey, Alien Studio, Digital Art, Innovation, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum"
 subtitle: "Ibẹrẹ Irin-ajo Imọ-ẹrọ"
 description: "Darapọ mọ mi lori irin-ajo ti ara ẹni lati Rust, AI, ati Quantum Computing si atunṣafihan aworan ati fọtoyiya nipasẹ Alien Studio."
 date: "Jan 15, 2024"

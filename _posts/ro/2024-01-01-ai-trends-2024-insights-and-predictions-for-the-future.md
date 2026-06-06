@@ -1,5 +1,6 @@
 ---
 title: "AI Trends 2024: Insights and Predictions for the Future"
+tags: "AI, 2024, Trends, IA generativă, cybersecurity, Education, Retail, Ethics, Analytics, Innovation, ISO 20022, criptografie post-cuantică, calcul cuantic, open source"
 subtitle: "Un An Decisiv pentru Tehnologie, Societate și Evoluție Etică"
 description: "Tendințe AI 2024: AI generativ în finanțe, modele multimodale, LLM-uri pe dispozitiv și schimbările care vor redefini sectorul bancar și ingineria produselor."
 date: "Jan 08, 2024"

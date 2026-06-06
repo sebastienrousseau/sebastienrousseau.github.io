@@ -1,5 +1,6 @@
 ---
 title: "Revolutionising Finance with AI-Enhanced Quantum Algorithms"
+tags: "Quantum, AI, Finance, Algorithms, Mathematics, Banking, Technology, Innovation, Data, Efficiency, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, quantum computing"
 subtitle: "Ṣiṣi agbara kuantọm fun imọ-ẹrọ owo: AI ni àárín awọn algorithm iran-tuntun"
 description: "Ṣawari ipa iyipada AI ninu awọn algorithm kuantọm fun iṣowo owo, pẹlu idojukọ lori awọn idiju mathimatiki wọn ati awọn ohun elo banki."
 date: "Dec 25, 2023"

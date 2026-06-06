@@ -1,5 +1,6 @@
 ---
 title: "Lucy's Flash Drive Revisited: AI, Quantum & Knowledge"
+tags: "Lucy, Luc Besson, Scarlett Johansson, AI, quantum computing, neutral atoms, LLM, transhumanism, mind uploading, brain-computer interfaces, posthumanism, film philosophy, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum"
 subtitle: "Ọdún méjìlá lẹ́yìn Lucy Luc Besson, àfọwọ́kọ àárín fíìmù náà nípa ìmọ̀ tí ń lọ láti ara sí ẹ̀rọ ni a ń jẹ́rìísí ní àìròtẹ́lẹ̀ látọwọ́ LLM, qubits atọ́mù aláìníkárùn, àti ẹ̀dà ọpọlọ pipe."
 description: "Ọdún méjìlá lẹ́yìn, fíìmù Lucy Besson dà bí ìdánwò ọpọlọ nípa ìmọ̀ tí ń yí padà láti ara sí ẹ̀rọ — tí LLM àti qubits ti jẹ́rìísí ní ìdáké."
 date: "May 11, 2026"

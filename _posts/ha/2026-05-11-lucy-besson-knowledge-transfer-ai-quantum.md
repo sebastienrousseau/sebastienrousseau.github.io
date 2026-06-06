@@ -1,5 +1,6 @@
 ---
 title: "Lucy's Flash Drive Revisited: AI, Quantum & Knowledge"
+tags: "Lucy, Luc Besson, Scarlett Johansson, AI, quantum computing, neutral atoms, LLM, transhumanism, mind uploading, brain-computer interfaces, posthumanism, film philosophy, ISO 20022, post-quantum cryptography"
 subtitle: "Shekaru goma sha biyu bayan fim ɗin Lucy na Luc Besson, tsakiyar misalin ƙaurar ilimi daga jiki zuwa na'ura an tabbatar da shi ba tsammani ta LLMs, neutral atom qubits, da whole-brain emulation."
 description: "Shekaru goma sha biyu bayan, fim ɗin Lucy na Besson yana karantawa kamar gwajin tunani game da ilimi da ke ƙaura daga jiki zuwa na'ura — LLMs da qubits sun tabbatar da shi a ɓoye."
 date: "May 11, 2026"

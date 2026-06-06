@@ -1,11 +1,11 @@
 {
-  "locale": "de_DE",
+  "description": "Wie Audio Analyser, angetrieben durch Azure AI, Speech-to-Text-Konvertierung, Textanalyse und Übersetzungen für umsetzbare Insights transformiert.",
+  "banner_alt": "Modernes, minimalistisches Unternehmensbüro",
+  "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp",
   "date": "January 29, 2024",
+  "title": "KI-gestützte Sprachanalyse, Übersetzung und Insights-Tool",
   "subtitle": "Verarbeitung von Audiodaten mit Azure AI Platform revolutionieren",
   "keywords": "Audio Analyser, Azure AI, Speech-to-Text, Audiodatenanalyse, Textanalyse, KI-Übersetzungen, Audio-Insights, automatisierte Transkription, Audiodatenverarbeitung, maschinelles Lernen",
-  "language": "de",
-  "title": "KI-gestützte Sprachanalyse, Übersetzung und Insights-Tool",
-  "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp",
-  "banner_alt": "Modernes, minimalistisches Unternehmensbüro",
-  "description": "Wie Audio Analyser, angetrieben durch Azure AI, Speech-to-Text-Konvertierung, Textanalyse und Übersetzungen für umsetzbare Insights transformiert."
+  "locale": "de_DE",
+  "language": "de"
 }

@@ -1,5 +1,6 @@
 ---
 title: "Le Chat by Mistral AI: Multilingual Conversational AI"
+tags: "Le Chat, Mistral AI, Conversational AI, Multilingual, Customisation, Business AI, Chatbot, AI Models, Enterprise Solutions, Technology, ISO 20022, criptografie post-cuantică, AI"
 subtitle: "Redefinind interacțiunea cu utilizatorul în mai multe limbi"
 description: "Cunoaște noul Asistent multilingv al Mistral AI. O IA avansată care înțelege și răspunde în mai multe limbi, într-o singură conversație și în timp real."
 date: "Mar 04, 2024"

@@ -1,5 +1,6 @@
 ---
 title: "State of AI and Quantum Computing in Banking: A 2023 Review"
+tags: "AI in banking, calcul cuantic, open-source LLMs, AI regulation, guvernanță AI, criptografie post-cuantică, risk management, 2023 review, inovație bancară, servicii financiare, ISO 20022, AI, open source"
 subtitle: "Modelând viitorul sectorului bancar: AI, Quantum Computing, modele open source și cadrul de reglementare"
 description: "Explorând peisajul tehnologic din 2023: AI și Quantum Computing revoluționează sectorul bancar, modele open-source emergente și reglementări în continuă evoluție"
 date: "Dec 18, 2023"

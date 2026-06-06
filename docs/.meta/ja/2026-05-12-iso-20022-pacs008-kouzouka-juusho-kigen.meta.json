@@ -1,12 +1,12 @@
 {
-  "title": "2026 年 11 月の pacs.008 構造化アドレス期限",
+  "last_reviewed": "2026-05-12",
   "language": "ja-JP",
-  "description": "2026 年 11 月から SWIFT CBPR+ は pacs.008 国際送金メッセージで非構造化郵便アドレスを拒否します。残り 6 ヶ月、まだ大規模な是正作業が残っています。",
+  "title": "2026 年 11 月の pacs.008 構造化アドレス期限",
   "banner_alt": "ISO 20022 構造化メッセージのコード",
   "keywords": "ISO 20022, pacs.008, SWIFT, CBPR+, 構造化アドレス, 国際送金, 是正, 規制, 銀行コンプライアンス",
+  "locale": "ja_JP",
   "subtitle": "SWIFT CBPR+ は国際送金メッセージでの非構造化郵便アドレスを拒否します",
   "date": "May 12, 2026",
-  "last_reviewed": "2026-05-12",
-  "locale": "ja_JP",
+  "description": "2026 年 11 月から SWIFT CBPR+ は pacs.008 国際送金メッセージで非構造化郵便アドレスを拒否します。残り 6 ヶ月、まだ大規模な是正作業が残っています。",
   "banner": "https://cloudcdn.pro/stocks/images/luca-bravo-XJXWbfSo2f0-unsplash.webp"
 }

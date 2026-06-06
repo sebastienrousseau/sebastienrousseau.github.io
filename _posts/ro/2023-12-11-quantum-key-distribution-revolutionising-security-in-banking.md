@@ -1,5 +1,6 @@
 ---
 title: "Quantum Key Distribution Revolutionising Security in Banking"
+tags: "quantum, key, distribution, cryptography, cybersecurity, finance, banking, digital, innovation, blockchain, calcul cuantic, hsbc, trading, data, protection, future, ISO 20022, DORA, criptografie post-cuantică, AI"
 excerpt: "As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security."
 subtitle: "Distribuția Cuantică a Cheilor (QKD) pentru securitate de nivel financiar în sectorul bancar."
 description: "Pe măsură ce calculatoarele cuantice amenință metodele tradiționale de criptare, Distribuția Cuantică a Cheilor (QKD) apare ca o soluție revoluționară, oferind securitate fără precedent."

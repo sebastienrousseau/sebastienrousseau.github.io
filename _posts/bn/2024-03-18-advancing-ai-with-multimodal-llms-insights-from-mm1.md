@@ -1,5 +1,6 @@
 ---
 title: "Advancing AI with Multimodal LLMs: Insights from MM1"
+tags: "Multimodal, LLM, AI, MM1, Pre-training, Image Recognition, NLP, Future, Learning, Research, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, কোয়ান্টাম কম্পিউটিং"
 subtitle: "AI-এর ভবিষ্যৎ উন্মোচন: Apple-এর যুগান্তকারী MM1 গবেষণা কীভাবে Multimodal Learning-এ বিপ্লব আনছে"
 description: "Apple-এর MM1 পেপার থেকে Multimodal Large Language Models (MLLMs) সম্পর্কে জানুন। তাদের আর্কিটেকচার, প্রি-ট্রেনিং পদ্ধতি এবং AI-এর সম্ভাবনা আবিষ্কার করুন।"
 date: "Mar 17, 2024"

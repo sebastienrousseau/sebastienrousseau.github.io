@@ -1,5 +1,6 @@
 ---
 title: "Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk"
+tags: "calcul cuantic, Shor's algorithm, criptografie post-cuantică, RSA, elliptic curve, neutral atoms, error correction, cryptographic agility, quantum threat, payments, ISO 20022, DORA, AI"
 subtitle: "Un nou studiu sugerează că algoritmul lui Shor ar putea rula pe doar 10.000 de qubiți. Implicațiile pentru criptografie sunt greu de ignorat."
 description: "Algoritmul lui Shor ar putea rula pe doar 10.000 de qubiți. RSA, ECC și termenele pentru migrarea post-cuantică se accelerează rapid. Iată de ce."
 date: "Apr 11, 2026"

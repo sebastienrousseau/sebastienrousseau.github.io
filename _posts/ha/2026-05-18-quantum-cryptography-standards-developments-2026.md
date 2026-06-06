@@ -1,5 +1,6 @@
 ---
 title: "Sake Saita Sirrin Quantum a 2026: Ƙa'idodin PQC, Tabbatar QKD, da Aikin Ƙaura da Bankuna Ba Za Su Iya Jinkirtawa Ba"
+tags: "quantum cryptography, post-quantum cryptography, NIST, FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC, IETF, TLS, IPsec, QKD, ETSI, crypto-agility, HNDL, cybersecurity, ISO 20022, AI"
 subtitle: "Sirrin quantum ya yi ƙaura daga binciken sararin sama zuwa horon aiwatarwa: ƙa'idodin NIST PQC sun shirya, jagorancin NCSC na Birtaniya ya rage zaɓuɓɓukan algorithm, aikin protocol na IETF har yanzu yana balaga, kuma tabbatar QKD yana motsawa daga amincewar dakin gwaje-gwaje zuwa harshen tabbatarwa."
 description: "Sirrin quantum a 2026 ba muhawara ba ne kan ko kwamfutoci na quantum suna kusa. Shirin ƙaura ne na sirrin post-quantum, sassaucin sirri, tabbatar rabon maɓallin quantum, ƙa'idodin protocol, shirin masu samar da kayayyaki, da bayanan kuɗi masu dadewa waɗanda tuni ke fuskantar haɗarin ‘girbi-yanzu-warkar-da-baya’."
 date: "May 18, 2026"

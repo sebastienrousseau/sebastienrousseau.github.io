@@ -1,5 +1,6 @@
 ---
 title: "The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View"
+tags: "ISO 20022, pacs.008, CBPR+, adresă structurată, SWIFT, plăți transfrontaliere, screening de sancțiuni, FI-to-FI credit transfer, payments, DORA, criptografie post-cuantică, AI, depozite tokenizate, open source"
 subtitle: "Din mijlocul lunii noiembrie 2026, SWIFT CBPR+ va respinge adresele poștale nestructurate din pacs.008 și din mesajele conexe de plată transfrontalieră. Cu circa 65% din mesaje încă neconforme, fereastra de remediere se închide rapid."
 description: "Din nov. 2026, SWIFT CBPR+ impune adrese structurate în pacs.008: TwnNm și Ctry obligatorii, AdrLine singur respins. 65% din mesaje neconforme, 44% bănci în întârziere."
 date: "May 12, 2026"

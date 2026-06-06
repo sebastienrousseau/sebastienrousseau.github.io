@@ -1,11 +1,11 @@
 {
-  "keywords": "mạng tinh thể, LWE, lượng tử, Yilei Chen, PQC, Kyber, mật mã, hậu lượng tử",
-  "locale": "vi_VN",
-  "subtitle": "Bài báo của Yilei Chen làm rung chuyển nền tảng PQC",
-  "date": "April 15, 2024",
   "description": "Một thuật toán lượng tử mới giải quyết vấn đề Lattice-LWE — cơ sở của CRYSTALS-Kyber. Điều này có ý nghĩa gì cho mật mã hậu lượng tử?",
+  "keywords": "mạng tinh thể, LWE, lượng tử, Yilei Chen, PQC, Kyber, mật mã, hậu lượng tử",
   "banner": "https://cloudcdn.pro/stocks/images/lattice-quantum-banner.webp",
   "title": "Thuật toán lượng tử thách thức mật mã dựa trên mạng tinh thể",
   "language": "vi-VN",
-  "banner_alt": "Sơ đồ trừu tượng của mạng tinh thể bị tấn công"
+  "date": "April 15, 2024",
+  "locale": "vi_VN",
+  "banner_alt": "Sơ đồ trừu tượng của mạng tinh thể bị tấn công",
+  "subtitle": "Bài báo của Yilei Chen làm rung chuyển nền tảng PQC"
 }

@@ -1,5 +1,6 @@
 ---
 title: "Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded"
+tags: "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoins, tokenised money market fund, Securitize, BNY Mellon, ERC-20, Ethereum, payments, regulation, ISO 20022, post-quantum cryptography, AI, tokenised deposits, biyan kuɗi na cross-border"
 subtitle: "Dokar GENIUS ba ta barin stablecoins su biya riba. A ranar 8 ga Mayu 2026, BlackRock ta shigar da kayayyaki biyu waɗanda ba stablecoins ba bisa doka — kuma za su iya biya riba a cikin wallet akan blockchain na jama'a."
 description: "Dokar GENIUS ba ta barin stablecoins su biya riba. BlackRock ta shigar da BRSRV da BSTBL a 8 Mayu 2026 a matsayin kuɗin kasuwannin SEC, ba stablecoins ba. Nazarin OCC da sauran dokoki."
 date: "May 15, 2026"

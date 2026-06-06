@@ -1,5 +1,6 @@
 ---
 title: "AI Trends 2024: Insights and Predictions for the Future"
+tags: "AI, 2024, Trends, AI àgbékalẹ̀, cybersecurity, Education, Retail, Ethics, Analytics, Innovation, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, quantum computing, open source"
 subtitle: "Ọdún Pàtàkì fún Ìmọ̀-ẹ̀rọ, Àwùjọ, àti Ìdàgbàsókè Ìwà-rere"
 description: "Awọn aṣa AI fún 2024: AI ìpilẹ̀ṣẹ̀ nínú ìnáwó, àwọn awoṣe multimodal, LLM lórí ẹ̀rọ àti àwọn ìyípadà tí yóò tún ṣe àpẹ̀rẹ̀ ilé-ìfowópamọ́ àti ìmọ̀-ẹ̀rọ ọjà."
 date: "Jan 08, 2024"

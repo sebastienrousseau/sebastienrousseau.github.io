@@ -1,5 +1,6 @@
 ---
 title: "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era"
+tags: "FHE, Banking, quantum computing, Data Security, Encryption, Financial Technology, Regulatory Compliance, Computational Overhead, Research, Data Privacy, ISO 20022, post-quantum cryptography, AI"
 subtitle: "Ƙarfafa Tsaron Bayanai, Inganta Sirrin AI, da Gina Amincin Abokin Ciniki a Zamanin Quantum Computing tare da FHE"
 description: "Bincike yadda Fully Homomorphic Encryption ke juya tsaron bayanai a Banking da Masana'antar Kudi, tare da tabbatar da sirri daga barazanar quantum computing."
 date: "Mar 25, 2024"

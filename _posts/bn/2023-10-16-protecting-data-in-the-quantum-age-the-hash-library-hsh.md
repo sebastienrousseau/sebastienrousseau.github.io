@@ -1,5 +1,6 @@
 ---
 title: "Protecting Data in the Quantum Age: The Hash Library (HSH)"
+tags: "পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, কোয়ান্টাম কম্পিউটিং, ISO 20022, AI, Rust, open source"
 subtitle: "HSH: প্রমাণীকরণের পোস্ট-কোয়ান্টাম যুগের জন্য একটি কোয়ান্টাম-প্রতিরোধী হ্যাশ লাইব্রেরি।"
 description: "HSH কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফিক প্রিমিটিভ ব্যবহার করে আপনার ডেটা সুরক্ষিত রাখে, ভবিষ্যতের কোয়ান্টাম কম্পিউটিং অগ্রগতির মুখেও এর নিরাপত্তা নিশ্চিত করে।"
 date: "Oct 16, 2023"

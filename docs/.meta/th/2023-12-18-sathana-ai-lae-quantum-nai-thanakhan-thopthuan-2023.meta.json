@@ -1,11 +1,11 @@
 {
+  "banner_alt": "Estado de la IA y la computación cuántica en la banca: revisión 2023",
   "title": "Estado de la IA y la computación cuántica en la banca: revisión 2023",
-  "locale": "th_TH",
   "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
-  "keywords": "IA en la banca, computación cuántica, tecnología financiera, IA de código abierto, gestión del riesgo, seguridad cuántica, regulación de la IA, ética de la IA, gobernanza de la IA, innovación bancaria",
-  "subtitle": "Configurar el futuro de la banca: IA, computación cuántica, modelos de código abierto y panorama regulatorio",
-  "date": "December 18, 2023",
   "description": "Explorar el panorama tecnológico 2023: IA y computación cuántica revolucionando la banca, auge de los modelos de código abierto, regulaciones y gobernanza en evolución.",
+  "date": "December 18, 2023",
+  "keywords": "IA en la banca, computación cuántica, tecnología financiera, IA de código abierto, gestión del riesgo, seguridad cuántica, regulación de la IA, ética de la IA, gobernanza de la IA, innovación bancaria",
   "language": "th-TH",
-  "banner_alt": "Estado de la IA y la computación cuántica en la banca: revisión 2023"
+  "locale": "th_TH",
+  "subtitle": "Configurar el futuro de la banca: IA, computación cuántica, modelos de código abierto y panorama regulatorio"
 }

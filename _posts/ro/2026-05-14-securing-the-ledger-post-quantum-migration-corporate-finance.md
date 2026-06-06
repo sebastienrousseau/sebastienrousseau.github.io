@@ -1,5 +1,6 @@
 ---
 title: "Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance"
+tags: "criptografie post-cuantică, corporate banking, G7 CEG, BIS Project Leap, ML-KEM, ML-DSA, NCSC, ASD, CNSA 2.0, harvest now decrypt later, Mosca equation, agilitate criptografică, hybrid cryptography, ISO 20022, DORA, calcul cuantic, AI, Rust, open source, plăți transfrontaliere"
 subtitle: "Riscul cuantic a trecut de la o curiozitate de cercetare la un mandat de reglementare activ. Cu foaia de parcurs G7 din 2026 și BIS Project Leap demonstrând fezabilitatea în sisteme de plată reale, întrebarea pentru consilii de administrație nu mai este dacă să migreze, ci dacă pot finaliza migrarea înainte ca datele actuale să-și piardă valoarea criptografică."
 description: "Riscul cuantic este acum mandat de reglementare. Harta G7 din 2026 și BIS Project Leap confirmă că întrebarea nu mai este dacă să migrați la PQC, ci cât de repede."
 date: "May 14, 2026"

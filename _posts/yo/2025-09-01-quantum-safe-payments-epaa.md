@@ -1,5 +1,6 @@
 ---
 title: "Quantum-Safe Payments: Why the Industry Must Act Now"
+tags: "quantum-safe payments, ìsirò ìpamọ́ lẹ́yìn quantum, payments, EPAA, ISO 20022, SWIFT, SEPA, DORA, quantum computing, AI, ìsanwó kọjá-ààlà"
 subtitle: "Ìmúrasílẹ̀ fún ààbò kuatomu jẹ́ ìpinnu amayederun lọwọlọwọ. Kì í ṣe ti ọjọ iwaju."
 description: "Ìṣirò kuatomu ń halẹ̀ mọ́ cryptography ti àwọn ètò ìsanwó. Ìwé funfun EPAA ṣàlàyé ewu ìgbékalẹ̀ àti ìjẹ̀pàtàkì ìjíkọ PQC."
 date: "Sep 01, 2025"

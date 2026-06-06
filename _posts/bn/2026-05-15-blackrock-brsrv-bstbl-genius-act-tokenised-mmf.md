@@ -1,5 +1,6 @@
 ---
 title: "Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded"
+tags: "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoins, tokenised money market fund, Securitize, BNY Mellon, ERC-20, Ethereum, payments, regulation, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, AI, টোকেনাইজড আমানত, সীমান্ত-পার পেমেন্ট"
 subtitle: "GENIUS আইনের অধীনে স্টেবলকয়েন সুদ দিতে পারে না। ৮ মে ২০২৬-এ BlackRock দুটি পণ্য নিবন্ধন করেছে যা আইনত স্টেবলকয়েন নয়—এবং পাবলিক ব্লকচেইনে ওয়ালেটে সুদ প্রদান করতে পারে।"
 description: "GENIUS আইনে স্টেবলকয়েন সুদ দিতে পারে না। ৮ মে ২০২৬-এ BlackRock দুটি SEC নিবন্ধন দাখিল করেছে যা মানি মার্কেট ফান্ড হিসেবে নিয়ন্ত্রিত, স্টেবলকয়েন নয়। BRSRV, BSTBL ও OCC নিয়মের বিশ্লেষণ।"
 date: "May 15, 2026"

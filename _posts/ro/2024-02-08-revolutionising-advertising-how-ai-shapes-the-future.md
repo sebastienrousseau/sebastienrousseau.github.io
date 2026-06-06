@@ -1,5 +1,6 @@
 ---
 title: "Generative AI in Advertising: Amazon Rufus & Meta"
+tags: "AI, Advertising, Amazon, Meta, Chatbots, Marketing, Technology, Analytics, Digital, Optimization, ISO 20022, criptografie post-cuantică"
 subtitle: "Cum AI Transformă Interacțiunile cu Consumatorii și Dinamica Publicității"
 description: "Explorați cum AI transformă publicitatea cu perspective despre Rufus de la Amazon și ultimele evoluții Meta. Descoperiți impactul asupra implicării consumatorilor"
 date: "Feb 08, 2024"

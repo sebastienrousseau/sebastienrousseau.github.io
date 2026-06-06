@@ -1,5 +1,6 @@
 ---
 title: "Generative AI in Advertising: Amazon Rufus & Meta"
+tags: "AI, Advertising, Amazon, Meta, Chatbots, Marketing, Technology, Analytics, Digital, Optimization, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি"
 subtitle: "AI কীভাবে ভোক্তা মিথস্ক্রিয়া এবং বিজ্ঞাপনের গতিশীলতাকে রূপান্তরিত করছে"
 description: "AI কীভাবে বিজ্ঞাপনকে রূপান্তরিত করছে তা Amazon-এর Rufus ও Meta-র সর্বশেষ উন্নয়নের অন্তর্দৃষ্টি সহ অন্বেষণ করুন। ভোক্তা সম্পৃক্ততার উপর প্রভাব আবিষ্কার করুন।"
 date: "Feb 08, 2024"

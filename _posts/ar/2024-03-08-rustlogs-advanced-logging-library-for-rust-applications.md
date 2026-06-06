@@ -1,5 +1,6 @@
 ---
 title: "RustLogs (RLG): مكتبة تسجيل منظَّمة للغة Rust"
+tags: "Rust, Logging, Asynchronous, Structured, Customisable, Debugging, Development, RustLogs, Integration, Documentation, ISO 20022, التشفير ما بعد الكمي, AI, open source"
 subtitle: "تبسيط سير عمل التسجيل في Rust"
 description: "اكتشف RustLogs (RLG)، مكتبة التسجيل المرنة للغة Rust مع تنسيقات سجلات منظَّمة وتسجيل غير متزامن وخيارات تخصيص واسعة."
 date: "Mar 08, 2024"

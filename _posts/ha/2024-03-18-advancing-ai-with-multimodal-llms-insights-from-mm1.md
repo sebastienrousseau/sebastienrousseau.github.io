@@ -1,5 +1,6 @@
 ---
 title: "Advancing AI with Multimodal LLMs: Insights from MM1"
+tags: "Multimodal, LLM, AI, MM1, Pre-training, Image Recognition, NLP, Future, Learning, Research, ISO 20022, post-quantum cryptography, quantum computing"
 subtitle: "Bayyanar Makomar AI: Yadda Binciken Juyin Juya Halin MM1 na Apple ke Canza Multimodal Learning"
 description: "Bincika takarda ta MM1 ta Apple akan Multimodal Large Language Models (MLLMs). Koyi game da gine-ginensu, dabarun pre-training, da yuwuwar AI."
 date: "Mar 17, 2024"

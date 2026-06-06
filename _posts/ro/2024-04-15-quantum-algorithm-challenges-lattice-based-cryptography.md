@@ -1,5 +1,6 @@
 ---
 title: "Quantum Algorithm Challenges Lattice-Based Cryptography"
+tags: "quantum algorithms, cryptography, lattice problems, LWE, criptografie post-cuantică, cybersecurity, research, innovation, future-proofing, ISO 20022, calcul cuantic, AI"
 subtitle: "Noul algoritm cuantic de timp polinomial pentru criptografia bazată pe rețele"
 description: "Nou algoritm cuantic polinomial al lui Yilei Chen vizează criptografia pe rețele cu implicații pentru standardele post-cuantice, inclusiv CRYSTALS-Kyber."
 date: "Apr 01, 2024"

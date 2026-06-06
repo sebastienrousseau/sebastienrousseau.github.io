@@ -1,5 +1,6 @@
 ---
 title: "Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded"
+tags: "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoinuri, tokenised money market fund, Securitize, BNY Mellon, ERC-20, Ethereum, payments, regulation, ISO 20022, criptografie post-cuantică, AI, depozite tokenizate, plăți transfrontaliere"
 subtitle: "Stablecoin-urile nu pot plăti dobândă conform GENIUS Act. Pe 8 mai 2026, BlackRock a depus două produse care, juridic, nu sunt stablecoins — și care pot plăti randament, într-un portofel, pe un blockchain public."
 description: "Stablecoin-urile nu pot plăti dobândă conform GENIUS Act. Pe 8 mai 2026, BlackRock a depus la SEC BRSRV și BSTBL — fonduri monetare reglementate care oferă randament în portofel pe blockchain, nu stablecoins."
 date: "May 15, 2026"

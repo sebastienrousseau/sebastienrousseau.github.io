@@ -1,5 +1,6 @@
 ---
 title: "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
+tags: "quantum, CRYSTALS-Kyber, encryption, cybersecurity, banking, finance, data, future, ìsirò ìpamọ́ lẹ́yìn quantum, cryptography, ISO 20022, DORA, quantum computing, AI, Rust"
 subtitle: "CRYSTALS-Kyber, ìdéédé NIST FIPS 203 fún encapsulation bọtini lẹ́yìn-quantum."
 description: "Ṣawari bí CRYSTALS-Kyber, algorithm cryptography tí ó lè dojú quantum, ṣe ń yí agbaye cryptography padà tí ó sì ń múra wa sílẹ̀ fún àkókò quantum."
 date: "Nov 19, 2023"

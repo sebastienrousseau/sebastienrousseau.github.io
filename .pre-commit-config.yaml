@@ -29,3 +29,10 @@ repos:
         language: system
         pass_filenames: false
         always_run: true
+
+      - id: automate-tags
+        name: Automate and Optimize Tags
+        entry: python3 scripts/editorial/automate_tags.py
+        language: system
+        pass_filenames: false
+        always_run: true

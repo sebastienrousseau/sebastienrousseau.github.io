@@ -1,5 +1,6 @@
 ---
 title: "RustLogs (RLG): Structured Logging Library for Rust"
+tags: "Rust, Logging, Asynchronous, Structured, Customisable, Debugging, Development, RustLogs, Integration, Documentation, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, AI, open source"
 subtitle: "আপনার Rust লগিং ওয়ার্কফ্লো সহজতর করুন"
 description: "RustLogs (RLG) আবিষ্কার করুন — Rust-এর জন্য নমনীয় লগিং লাইব্রেরি, যা স্ট্রাকচার্ড লগ ফরম্যাট, অ্যাসিঙ্ক্রোনাস লগিং এবং ব্যাপক কাস্টমাইজেশন বিকল্প সরবরাহ করে।"
 date: "Mar 08, 2024"

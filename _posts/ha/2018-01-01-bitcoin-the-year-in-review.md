@@ -1,5 +1,6 @@
 ---
 title: "Bitcoin: A Year In Review of the First Cryptocurrency"
+tags: "bitcoin, cryptocurrency, blockchain, decentralized finance, digital currency, peer-to-peer payments, digital gold, kuɗi mai shirye-shirye, future of money, financial revolution, ISO 20022, post-quantum cryptography, AI, stablecoins, tokenised deposits, open source"
 subtitle: "Bitcoin, cryptocurrency, da fasaha da ke sake fasalin kasuwannin kuɗi."
 description: "Bitcoin: Tsarin Kuɗin Lantarki na Peer-to-Peer (P2P ECS) wanda ke da yuwuwar sauya yadda mutane ke yin ciniki ta yanar gizo."
 date: "Jan 01, 2018"

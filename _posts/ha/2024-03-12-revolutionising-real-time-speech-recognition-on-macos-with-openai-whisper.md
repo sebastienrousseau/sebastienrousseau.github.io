@@ -1,5 +1,6 @@
 ---
 title: "Fast Real-Time Speech Recognition on macOS: OpenAI Whisper"
+tags: "OpenAI, Whisper, Metal, macOS, Speech, Real-Time, Transcription, GPU, Python, Silicon, ISO 20022, post-quantum cryptography, AI, open source"
 subtitle: "Saki Ikon AI da GPU a Cikin Speech-to-Text a Mac ɗinka"
 description: "Gano yadda OpenAI Whisper da Metal Performance Shaders ke canza gane magana a lokaci na gaske a macOS, suna ba da sauri da daidaito marar misali."
 date: "Mar 12, 2024"

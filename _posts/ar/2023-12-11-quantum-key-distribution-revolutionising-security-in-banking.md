@@ -1,5 +1,6 @@
 ---
 title: "توزيع المفاتيح الكمومي يُحدث ثورة في أمن القطاع المصرفي"
+tags: "quantum, key, distribution, cryptography, cybersecurity, finance, banking, digital, innovation, blockchain، Ethereum، عقود ذكية، تجزئة تشفيرية، شجرة Merkle، آلية توافق، إثبات العمل، EVM، Solidity، ERC-20، سجل موزع، تمويل لا مركزي, الحوسبة الكمومية, hsbc, trading, data, protection, future, ISO 20022, DORA, التشفير ما بعد الكمي, AI"
 subtitle: "توزيع المفاتيح الكمومي (QKD) لأمن بدرجة المؤسسات المالية"
 description: "في الوقت الذي تهدّد فيه الحواسيب الكمومية أساليب التشفير التقليدية، يبرز توزيع المفاتيح الكمومي (QKD) باعتباره نقلة نوعية تقدّم أمناً لا مثيل له."
 date: "Dec 11, 2023"

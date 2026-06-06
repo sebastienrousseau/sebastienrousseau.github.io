@@ -1,5 +1,6 @@
 ---
 title: "EU's AI Act: Pioneering Ethical AI Regulation Worldwide"
+tags: "EU, AI, Regulation, Ethics, Innovation, Transparency, Governance, Standards, Consumer Rights, Technology, ISO 20022, post-quantum cryptography"
 subtitle: "Tafiya Zuwa Makomar AI tare da Tsarin Doka Mai Tarihi na EU"
 description: "EU AI Act ta kafa tsarin farko mai cikakken tsari na kula da AI ta hanyar da ta dace da ɗa'a da ƙayyadaddun haɗari a duniya. Abin da ya canza ga bankunan, masu siyarwa da tsarin haɗarin babba."
 date: "Feb 13, 2024"

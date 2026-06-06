@@ -1,5 +1,6 @@
 ---
 title: "Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded"
+tags: "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoins, tokenised money market fund, Securitize, BNY Mellon, ERC-20, Ethereum, payments, regulation, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, AI, tokenised deposits, ìsanwó kọjá-ààlà"
 subtitle: "Àwọn stablecoin kò lè san owo èrè lábẹ́ GENIUS Act. Ní 8 May 2026, BlackRock fi àwọn ọja méjì sílẹ̀ tí kò jẹ́ stablecoins nípasẹ̀ òfin — tí wọn lè san owo èrè nínú wàlẹ́ẹ̀tì lórí blockchain gbangba."
 description: "Àwọn stablecoin kò lè san owo èrè lábẹ́ GENIUS Act. Ní 8 May 2026, BlackRock fi àwọn ìforúkọsílẹ̀ SEC BRSRV àti BSTBL sílẹ̀ — àwọn ìdọgba owó tokenised tí ń san owo èrè nínú wàlẹ́ẹ̀tì, kì í ṣe stablecoins."
 date: "May 15, 2026"

@@ -1,5 +1,6 @@
 ---
 title: "Mathematical and Cryptographic Constants for Rust Security"
+tags: "math, cybersecurity, cryptography, Rust, programming, encryption, communication, constants, constants in Rust, Common library, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, quantum computing, AI, open source"
 subtitle: "Awọn iye igbagbogbo mathimatiki ati cryptographic ti a ṣayẹwo fun aabo Rust ti o ni aabo iranti."
 description: "Daabobo iduroṣinṣin koodu pẹlu awọn iye igbagbogbo mathimatiki ati cryptographic ti a ṣayẹwo daradara, fikun aabo iranti ati concurrency fun aabo koodu to dara sii."
 date: "Nov 05, 2023"

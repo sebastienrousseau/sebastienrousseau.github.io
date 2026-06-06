@@ -1,11 +1,12 @@
 {
+  "keywords": "awọn iye igbagbogbo mathimatiki, awọn iye igbagbogbo cryptographic, Rust security, ibaraẹnisọrọ ailewu, encryption, RSA, elliptic curve cryptography, Common (CMN) library, awọn ohun elo Rust, iṣiro mathimatiki",
+  "banner_alt": "Iṣiro Mathimatiki",
+  "title": "Mathematical and Cryptographic Constants for Rust Security",
+  "subtitle": "Awọn iye igbagbogbo mathimatiki ati cryptographic ti a ṣayẹwo fun aabo Rust ti o ni aabo iranti.",
+  "description": "Daabobo iduroṣinṣin koodu pẹlu awọn iye igbagbogbo mathimatiki ati cryptographic ti a ṣayẹwo daradara, fikun aabo iranti ati concurrency fun aabo koodu to dara sii.",
+  "tags": "math, cybersecurity, cryptography, Rust, programming, encryption, communication, constants, constants in Rust, Common library, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, quantum computing, AI, open source",
   "locale": "yo_NG",
   "date": "Nov 05, 2023",
   "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
-  "description": "Daabobo iduroṣinṣin koodu pẹlu awọn iye igbagbogbo mathimatiki ati cryptographic ti a ṣayẹwo daradara, fikun aabo iranti ati concurrency fun aabo koodu to dara sii.",
-  "keywords": "awọn iye igbagbogbo mathimatiki, awọn iye igbagbogbo cryptographic, Rust security, ibaraẹnisọrọ ailewu, encryption, RSA, elliptic curve cryptography, Common (CMN) library, awọn ohun elo Rust, iṣiro mathimatiki",
-  "language": "yo-NG",
-  "banner_alt": "Iṣiro Mathimatiki",
-  "subtitle": "Awọn iye igbagbogbo mathimatiki ati cryptographic ti a ṣayẹwo fun aabo Rust ti o ni aabo iranti.",
-  "title": "Mathematical and Cryptographic Constants for Rust Security"
+  "language": "yo-NG"
 }

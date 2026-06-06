@@ -1,12 +1,12 @@
 {
-  "language": "ko-KR",
-  "locale": "ko_KR",
-  "subtitle": "양자 암호는 지평 탐색에서 구현 규율로 이동했습니다. NIST PQC 표준은 준비되었고, 영국 NCSC 가이던스가 알고리즘 선택을 좁혔으며, IETF 프로토콜 작업은 여전히 성숙 중이고, QKD 보증은 실험실의 신뢰에서 인증 언어로 이동하고 있습니다.",
+  "keywords": "양자 암호 2026, 포스트 양자 암호, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, 하이브리드 키 교환, QKD, ETSI QKD, ISO IEC 23837, 암호 민첩성, harvest now decrypt later, HNDL, 금융 서비스 암호, 은행 보안",
   "title": "2026년 양자 암호 리셋: PQC 표준, QKD 보증, 그리고 은행이 미룰 수 없는 마이그레이션 작업",
+  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
+  "last_reviewed": "2026-05-18",
   "banner_alt": "2026년 양자 안전 암호 마이그레이션 맵 — NIST PQC 표준, 하이브리드 프로토콜 작업, QKD 보증, 암호 민첩성, 은행 데이터 위험 계층 표시",
   "date": "May 18, 2026",
-  "last_reviewed": "2026-05-18",
-  "keywords": "양자 암호 2026, 포스트 양자 암호, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, 하이브리드 키 교환, QKD, ETSI QKD, ISO IEC 23837, 암호 민첩성, harvest now decrypt later, HNDL, 금융 서비스 암호, 은행 보안",
+  "language": "ko-KR",
+  "locale": "ko_KR",
   "description": "2026년 양자 암호는 더 이상 양자 컴퓨터가 임박했는지에 대한 논쟁이 아닙니다. 포스트 양자 암호, 암호 민첩성, 양자 키 분배 보증, 프로토콜 표준, 공급자 준비, 그리고 이미 「지금 수확하고 나중에 복호화」 위험에 노출된 장수명 금융 데이터를 가로지르는 마이그레이션 프로그램입니다.",
-  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
+  "subtitle": "양자 암호는 지평 탐색에서 구현 규율로 이동했습니다. NIST PQC 표준은 준비되었고, 영국 NCSC 가이던스가 알고리즘 선택을 좁혔으며, IETF 프로토콜 작업은 여전히 성숙 중이고, QKD 보증은 실험실의 신뢰에서 인증 언어로 이동하고 있습니다."
 }

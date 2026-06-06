@@ -1,11 +1,12 @@
 {
-  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
-  "subtitle": "DTT، مكتبة Rust عالية الدقّة لعمليات التاريخ والوقت.",
-  "date": "Dec 04, 2023",
-  "banner_alt": "DateTime (DTT)، عُدّتكم الأساسية لعمليات التاريخ والوقت.",
-  "locale": "he_IL",
-  "language": "he-IL",
-  "keywords": "DateTime، DTT، مكتبة Rust، التحليل، التحقّق، المعالجة، التنسيق، التواريخ، الأوقات",
   "description": "DateTime (DTT) مكتبة Rust لتحليل وتحقّق ومعالجة وتنسيق التواريخ والأوقات — دقّة عالية ووظائف واسعة.",
-  "title": "الإدارة الفعّالة للتاريخ والوقت مع DateTime (DTT)"
+  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
+  "language": "he-IL",
+  "locale": "he_IL",
+  "keywords": "DateTime، DTT، مكتبة Rust، التحليل، التحقّق، المعالجة، التنسيق، التواريخ، الأوقات",
+  "banner_alt": "DateTime (DTT)، عُدّتكم الأساسية لعمليات التاريخ والوقت.",
+  "date": "Dec 04, 2023",
+  "title": "الإدارة الفعّالة للتاريخ والوقت مع DateTime (DTT)",
+  "subtitle": "DTT، مكتبة Rust عالية الدقّة لعمليات التاريخ والوقت.",
+  "tags": "DateTime, DTT, Rust, date library, time library, timezone handling, chrono alternative, ISO 8601, time formatting, Sebastien Rousseau, ISO 20022, קריפטוגרפיה פוסט-קוונטית, AI, open source"
 }

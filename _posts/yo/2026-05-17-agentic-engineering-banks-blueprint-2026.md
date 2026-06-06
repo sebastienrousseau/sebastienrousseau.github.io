@@ -1,5 +1,6 @@
 ---
 title: "Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It"
+tags: "agentic AI, spec-driven development, banks, ìṣàkóso AI, EU AI Act, DORA, COBOL modernisation, HITL, HOTL, TPRM, AIBOM, Claude Code, ìsirò ìpamọ́ lẹ́yìn quantum, ISO 20022, quantum computing, AI, Rust, open source, platform engineering"
 subtitle: "AI agentic ti kọjá lati ìdánwò sí ìṣẹ́ gidi. 70% àwọn banki ń lo rẹ̀; ọ̀kan lára márùún ló ní ìṣàkóso tó pé. Àwọn ọ̀tá ń ṣiṣẹ́ ní iyara ẹ̀rọ, ogún COBOL wà látọjọ batch-processing ti 1960s, àkókò EU AI Act sì wà ní ọ̀sẹ̀ 12."
 description: "AI agentic ti kọjá sí ìṣẹ́ gidi nínú àwọn banki àgbáyé. 70% ń lo rẹ̀; ọ̀kan lára márùún ní ìṣàkóso tó pé. Àwọn ọ̀tá ń ṣiṣẹ́ ní iyara ẹ̀rọ; EU AI Act sì wà ní ọ̀sẹ̀ 12."
 date: "May 17, 2026"

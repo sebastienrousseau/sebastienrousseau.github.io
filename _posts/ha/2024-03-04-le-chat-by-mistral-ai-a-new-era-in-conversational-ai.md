@@ -1,5 +1,6 @@
 ---
 title: "Le Chat by Mistral AI: Multilingual Conversational AI"
+tags: "Le Chat, Mistral AI, Conversational AI, Multilingual, Customisation, Business AI, Chatbot, AI Models, Enterprise Solutions, Technology, ISO 20022, post-quantum cryptography, AI"
 subtitle: "Sake Fasalin Hulɗar Masu Amfani a Duk Harsunan"
 description: "Ku san sabon Mataimaki mai harsuna da yawa na Mistral AI. AI na zamani wanda zai iya fahimta da mayar da martani cikin harsuna da yawa, a tattaunawa ɗaya kuma a lokaci na gaske."
 date: "Mar 04, 2024"

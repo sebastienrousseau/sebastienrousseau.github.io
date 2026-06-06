@@ -6,14 +6,14 @@
     <description>Labaran Hausa: AI mai amfani, biyan kuɗi na ISO 20022, kiriftografi bayan kwantum da sauye-sauyen biyan kuɗi na manyan.</description>
     <atom:link href="https://sebastienrousseau.com/ha/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ha-NG</language>
-    <lastBuildDate>Sat, 06 Jun 2026 07:30:05 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 08:16:43 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. An kiyaye duk hakkokin.</copyright>
     <item>
       <title>Bankin Hanyoyi Da Yawa a 2026: Katuna, A2A, Stablecoins, RTP, FedNow, da Open Banking Cikin Dabara Daya</title>
       <link>https://sebastienrousseau.com/ha/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>Bankin hanyoyi da yawa na 2026 yana tafiyar da biya bisa farashi, ƙarshe, da farashin kuɗi — injin tsara ne ke karanta ISO 20022 pacs.008 ya yanke shawara.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Sat, 06 Jun 2026 07:30:05 +0000</pubDate>
+      <pubDate>Sat, 06 Jun 2026 08:16:43 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>payment orchestration layer</category>
@@ -35,7 +35,7 @@
       <link>https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>Cryptography bayan quantum tana tilasta zaɓi biyu kan hanyoyin biya: daidaita RSA/ECC cikin SWIFT MT da ISO 20022 da ba a tsara wa ML-KEM da ML-DSA ba, ko maye gurbi da kayan saurin crypto. Masu zane su yanke kafin HNDL ya zama asarar aiki.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Sat, 06 Jun 2026 07:30:05 +0000</pubDate>
+      <pubDate>Sat, 06 Jun 2026 08:16:43 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>cryptography bayan quantum</category>
@@ -61,7 +61,7 @@
       <link>https://sebastienrousseau.com/ha/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>Kadarorin dijital ba sake fasalin sabuntawa ba ne. Sun zama tambaya ta tsarin biyan kuɗi na ƙarshe, kulawa, da ma&apos;aunin daidaitawa. Aikin dabaru ga bankuna shi ne tsara ababen more rayuwa a ƙarƙashin rashin tabbas na tsari.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Sat, 06 Jun 2026 07:30:05 +0000</pubDate>
+      <pubDate>Sat, 06 Jun 2026 08:16:43 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>kadarorin dijital 2026</category>

@@ -1,11 +1,11 @@
 {
+  "locale": "zh_CN",
+  "language": "zh-Hans",
+  "date": "January 1, 2018",
   "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
-  "description": "比特币：一种点对点电子现金系统（P2P ECS），有望彻底改变人们在线交易的方式。",
-  "keywords": "比特币, 加密货币, 区块链, 点对点, 双重支付, 挖矿, 工作量证明, ETF, 中本聪, 去中心化金融",
+  "title": "比特币：首个加密货币的年度回顾",
   "subtitle": "重新定义货币的点对点电子支付系统",
   "banner_alt": "一堆金币和银币堆放在桌面上",
-  "locale": "zh_CN",
-  "date": "January 1, 2018",
-  "title": "比特币：首个加密货币的年度回顾",
-  "language": "zh-Hans"
+  "keywords": "比特币, 加密货币, 区块链, 点对点, 双重支付, 挖矿, 工作量证明, ETF, 中本聪, 去中心化金融",
+  "description": "比特币：一种点对点电子现金系统（P2P ECS），有望彻底改变人们在线交易的方式。"
 }

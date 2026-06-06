@@ -1,11 +1,12 @@
 {
   "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
-  "keywords": "رحلة تقنية شخصية، اكتشاف Rust، استكشاف الذكاء الاصطناعي، الحوسبة الكمومية، اندماج الفنّ والتصوير، Alien Studio، إنشاء الفنّ الرقمي، التكنولوجيا في الفنّ، تصوير مبتكر، إعادة اكتشاف فنّي",
-  "banner_alt": "ملهمة الغروب، نظرة هادئة؛ جمال في السكون",
-  "description": "انضمّ إليّ في رحلتي الشخصية — من Rust والذكاء الاصطناعي والحوسبة الكمومية إلى إعادة تعريف الفنّ والتصوير عبر Alien Studio.",
-  "locale": "fil_PH",
   "date": "Jan 15, 2024",
   "title": "Alien Studio: رحلتي من التكنولوجيا إلى الفنّ التصويري",
-  "language": "fil-PH",
-  "subtitle": "بدايات ملحمة تكنولوجية"
+  "locale": "fil_PH",
+  "banner_alt": "ملهمة الغروب، نظرة هادئة؛ جمال في السكون",
+  "keywords": "رحلة تقنية شخصية، اكتشاف Rust، استكشاف الذكاء الاصطناعي، الحوسبة الكمومية، اندماج الفنّ والتصوير، Alien Studio، إنشاء الفنّ الرقمي، التكنولوجيا في الفنّ، تصوير مبتكر، إعادة اكتشاف فنّي",
+  "subtitle": "بدايات ملحمة تكنولوجية",
+  "description": "انضمّ إليّ في رحلتي الشخصية — من Rust والذكاء الاصطناعي والحوسبة الكمومية إلى إعادة تعريف الفنّ والتصوير عبر Alien Studio.",
+  "tags": "Technology, Art, Photography, Rust, AI, quantum computing, Personal Journey, Alien Studio, Digital Art, Innovation, ISO 20022, post-quantum cryptography",
+  "language": "fil-PH"
 }

@@ -1,5 +1,6 @@
 ---
 title: "Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance"
+tags: "ìsirò ìpamọ́ lẹ́yìn quantum, corporate banking, G7 CEG, BIS Project Leap, ML-KEM, ML-DSA, NCSC, ASD, CNSA 2.0, harvest now decrypt later, Mosca equation, ìmọ̀ ìrọ̀lọ́ crypto, hybrid cryptography, ISO 20022, DORA, quantum computing, AI, Rust, open source, ìsanwó kọjá-ààlà"
 subtitle: "Ewu kúántọ̀mù ti gbéra láti ìdánilẹ́kọ̀ọ́ sí àṣẹ ìlànà tó ṣiṣẹ́. Ìlànà G7 2026 àti BIS Project Leap nínú àwọn ètò ìsanwó fi hàn pé ìbéèrè fún àwọn ìgbìmọ̀ kò sí mọ́ bóyá kí wọn ṣí kiri, bí kò ṣe bóyá wọn lè parí ṣáájú tí àwọn dátà òde òní bà jẹ́."
 description: "Ewu kúántọ̀mù ti di àṣẹ ìlànà tó ṣiṣẹ́. Ìlànà G7 2026 àti BIS Project Leap fi hàn pé ìbéèrè kò sí mọ́ bóyá kí a ṣí kiri si PQC, bí kò ṣe bóyá a lè parí ṣáájú tí dátà òde òní wó lulẹ̀."
 date: "May 14, 2026"

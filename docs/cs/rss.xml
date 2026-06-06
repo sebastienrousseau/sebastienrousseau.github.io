@@ -6,14 +6,14 @@
     <description>Články v češtině: aplikovaná AI, platby ISO 20022, postkvantová kryptografie a transformace velkoobchodních plateb.</description>
     <atom:link href="https://sebastienrousseau.com/cs/rss.xml" rel="self" type="application/rss+xml"/>
     <language>cs-CZ</language>
-    <lastBuildDate>Sat, 06 Jun 2026 07:30:05 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 08:16:43 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Všechna práva vyhrazena.</copyright>
     <item>
       <title>Multi-kolejnicová banka v roce 2026: karty, A2A, stablecoiny, RTP, FedNow a otevřené bankovnictví v jedné strategii</title>
       <link>https://sebastienrousseau.com/cs/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow vyžaduje předfinancovanou likviditu 24/7. ACH je levné, ale T+1. USDC se vypořádá atomicky, ale potřebuje wallet infrastrukturu. Multi-kolejnicová banka roku 2026 směruje každou platbu podle nákladů, finality a ceny likvidity.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Sat, 06 Jun 2026 07:30:05 +0000</pubDate>
+      <pubDate>Sat, 06 Jun 2026 08:16:43 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>vrstva orchestrace plateb</category>
@@ -35,7 +35,7 @@
       <link>https://sebastienrousseau.com/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>Postkvantová kryptografie staví platební kolejnice před binární volbu: upravit RSA/ECC v obálkách SWIFT MT a ISO 20022, které nebyly dimenzovány pro ML-KEM a ML-DSA, nebo nahradit krypto-agilní infrastrukturou, než HNDL přejde v provozní ztrátu.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Sat, 06 Jun 2026 07:30:05 +0000</pubDate>
+      <pubDate>Sat, 06 Jun 2026 08:16:43 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>postkvantová kryptografie</category>
@@ -61,7 +61,7 @@
       <link>https://sebastienrousseau.com/cs/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
       <description>Britská role Wholesale Digital Markets Champion proměňuje tokenizované velkoobchodní finance v národní projekt konkurenceschopnosti City of London.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
-      <pubDate>Sat, 06 Jun 2026 07:30:05 +0000</pubDate>
+      <pubDate>Sat, 06 Jun 2026 08:16:43 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>velkoobchodní digitální trhy UK 2026</category>
@@ -82,7 +82,7 @@
       <link>https://sebastienrousseau.com/cs/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>Digitální aktiva už nejsou inovační sázkou. Jsou otázkou architektury vypořádání, úschovy a rozvahy. Strategickým úkolem bank je návrh infrastruktury za strukturální nejistoty.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Sat, 06 Jun 2026 07:30:05 +0000</pubDate>
+      <pubDate>Sat, 06 Jun 2026 08:16:43 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>digitální aktiva 2026</category>

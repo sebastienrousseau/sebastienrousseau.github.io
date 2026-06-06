@@ -1,5 +1,6 @@
 ---
 title: "AI Trends 2024: Insights and Predictions for the Future"
+tags: "AI, 2024, Trends, generative AI, cybersecurity, Education, Retail, Ethics, Analytics, Innovation, ISO 20022, post-quantum cryptography, quantum computing, open source"
 subtitle: "Shekara Mai Muhimmanci ga Fasaha, Al'umma, da Juyin ɗabi'a"
 description: "Abubuwan da suka fi muhimmanci na AI na 2024: generative AI a harkar kuɗi, ƙirar multimodal, LLMs na na'ura, da sauye-sauyen da za su sake fasalin banki da injiniyancin kayayyaki."
 date: "Jan 08, 2024"

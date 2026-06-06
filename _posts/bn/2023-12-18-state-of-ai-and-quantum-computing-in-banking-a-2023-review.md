@@ -1,5 +1,6 @@
 ---
 title: "State of AI and Quantum Computing in Banking: A 2023 Review"
+tags: "AI in banking, কোয়ান্টাম কম্পিউটিং, open-source LLMs, AI regulation, AI গভর্নেন্স, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, risk management, 2023 review, ব্যাংকিং উদ্ভাবন, আর্থিক পরিষেবা, ISO 20022, AI, open source"
 subtitle: "ব্যাংকিংয়ের ভবিষ্যৎ গড়ে তোলা: AI, Quantum Computing, Open Source মডেল এবং নিয়ন্ত্রক পরিবেশ"
 description: "২০২৩ সালের প্রযুক্তি পরিদর্শন: AI ও Quantum Computing ব্যাংকিং খাতে বিপ্লব, ওপেন-সোর্স মডেলের উত্থান এবং বিকশিত নিয়মকানুন ও প্রশাসন"
 date: "Dec 18, 2023"

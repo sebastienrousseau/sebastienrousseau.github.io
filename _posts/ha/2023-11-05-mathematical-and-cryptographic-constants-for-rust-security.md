@@ -1,5 +1,6 @@
 ---
 title: "Mathematical and Cryptographic Constants for Rust Security"
+tags: "math, cybersecurity, cryptography, Rust, programming, encryption, communication, constants, constants in Rust, Common library, ISO 20022, post-quantum cryptography, quantum computing, AI, open source"
 subtitle: "Constants na lissafi da cryptography da aka tabbatar don amincin memory-safe Rust."
 description: "Kare ingancin code da constants na lissafi da cryptography da aka tabbatar sosai, ƙarfafa amincin memory da concurrency don ƙara tsaro na code."
 date: "Nov 05, 2023"

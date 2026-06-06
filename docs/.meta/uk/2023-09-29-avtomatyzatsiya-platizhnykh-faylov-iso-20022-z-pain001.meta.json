@@ -1,11 +1,11 @@
 {
-  "title": "[UK DRAFT] Automating ISO 20022 Payment Files Creation with Pain001",
   "language": "uk-UA",
-  "description": "Автоматизуйте створення платіжних файлів ISO 20022 pain.001 з CSV або SQLite. pain001 — бібліотека Python з відкритим кодом, яка спрощує дотримання вимог.",
-  "date": "Sep 29, 2023",
-  "subtitle": "Автоматизація платежів ISO 20022 та інжиніринг оптових платежів за допомогою pain001.",
-  "banner_alt": "Вимкнений ноутбук на коричневому дерев'яному столі",
   "banner": "https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp",
+  "subtitle": "Автоматизація платежів ISO 20022 та інжиніринг оптових платежів за допомогою pain001.",
   "locale": "uk_UA",
-  "keywords": "pain001, iso 20022, автоматизація платежів, скорочення витрат, обробка платежів, платіжні файли, ініціювання платежів, pain message, pain message standards, pain message validation"
+  "banner_alt": "Вимкнений ноутбук на коричневому дерев'яному столі",
+  "date": "Sep 29, 2023",
+  "title": "[UK DRAFT] Automating ISO 20022 Payment Files Creation with Pain001",
+  "keywords": "pain001, iso 20022, автоматизація платежів, скорочення витрат, обробка платежів, платіжні файли, ініціювання платежів, pain message, pain message standards, pain message validation",
+  "description": "Автоматизуйте створення платіжних файлів ISO 20022 pain.001 з CSV або SQLite. pain001 — бібліотека Python з відкритим кодом, яка спрощує дотримання вимог."
 }

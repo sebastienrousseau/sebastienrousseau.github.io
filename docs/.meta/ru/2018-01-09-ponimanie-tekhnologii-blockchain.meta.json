@@ -1,11 +1,11 @@
 {
   "locale": "ru_RU",
-  "date": "January 9, 2018",
-  "banner": "https://cloudcdn.pro/stocks/images/launchpresso-VVMyDDjzkCM.webp",
   "title": "Понимание технологии, лежащей в основе блокчейна",
+  "date": "January 9, 2018",
   "description": "Глубокое погружение в технические основы блокчейна: хеширование, цифровые подписи, алгоритмы консенсуса и архитектура распределённых реестров.",
   "subtitle": "Криптография, консенсус и распределённое хранение",
+  "keywords": "блокчейн, хеширование, SHA-256, цифровые подписи, консенсус, proof-of-work, proof-of-stake, Merkle-дерево, P2P-сеть",
+  "banner": "https://cloudcdn.pro/stocks/images/launchpresso-VVMyDDjzkCM.webp",
   "banner_alt": "Цепь блоков, соединённых криптографическими хешами",
-  "language": "ru-RU",
-  "keywords": "блокчейн, хеширование, SHA-256, цифровые подписи, консенсус, proof-of-work, proof-of-stake, Merkle-дерево, P2P-сеть"
+  "language": "ru-RU"
 }

@@ -1,5 +1,6 @@
 ---
 title: "ERC-20: The Ethereum Token Interface That Changed the World"
+tags: "Ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, Solidity, ISO 20022, post-quantum cryptography, AI, stablecoins"
 subtitle: "Alamomin ERC-20, kwangilar smart na Ethereum da daidaitaccen kadarorin dijital."
 description: "ERC-20 shine mafi yawan nau'in token da ake amfani da shi a blockchain na Ethereum, wanda kuma ana kiransa kwangilar dijital ta smart contract."
 date: "Jan 24, 2018"

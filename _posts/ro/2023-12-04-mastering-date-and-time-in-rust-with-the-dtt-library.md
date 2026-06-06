@@ -1,5 +1,6 @@
 ---
 title: "Efficient Date and Time Management with DateTime (DTT)"
+tags: "DateTime, DTT, Rust, date library, time library, timezone handling, chrono alternative, ISO 8601, time formatting, Sebastien Rousseau, ISO 20022, criptografie post-cuantică, AI, open source"
 subtitle: "DTT, biblioteca Rust de înaltă precizie pentru operații cu date și ore."
 description: "DateTime (DTT) este o bibliotecă Rust pentru parsarea, validarea, manipularea și formatarea datelor și orelor — precizie ridicată, funcționalitate extinsă."
 date: "Dec 04, 2023"
