@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "2026 大額支付轉型的視覺指標——訊息遷移讓位給可程式化結算,橫跨 ISO 20022、代幣化存款、即時支付軌道與跨境原子性。"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp"
+banner: "https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -131,23 +131,66 @@ site_software: "Static Site Generator, Rust"
 | **流動性** | 優化日間流動性、卡住的現金與結算時段 | 流動性節省與結算失敗下降 | 流動性更快被抽乾 |
 | **合規** | 將 AML、制裁、FATF 與稽核要求嵌入支付資料 | 直通式合規與可解釋性 | 資料更豐富但護欄機制未強化 |
 
-## 當前值得追蹤的訊號
+## 對應全球優先事項的關鍵大額支付訊號
 
-| 訊號 | 對銀行的意義 | 來源 |
+2026 年的訊號集不是研究議程,而是銀行支付長已經被衡量的交付清單。整補工作會出現在三個位置:訊息封包、軌道編排層,以及結算帳本。
+
+| 訊號 | G20 / SWIFT / BIS 對應依據 | 技術平台落地方式 |
 |---|---|---|
-| **65% 的支付訊息仍含非結構化地址** | 整補工作量仍然龐大 | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **非結構化地址在 2026 年 11 月後移除** | 支付資料準備度刻不容緩 | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **Project Agorá 進入原型階段** | 代幣化結算正在央行與商業銀行情境下被測試 | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **FSB 進入實施階段** | 跨境支付改善仍是全球政策優先事項 | [FSB ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Cross-border payments implementation phase") |
-| **德意志銀行的數位貨幣框架** | 穩定幣、代幣化存款與 CBDC,正在變成企業銀行架構的實務議題 | [Deutsche Bank ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") |
+| **65% 的支付訊息仍含非結構化地址** | [SWIFT SR 2026——2026 年 11 月結構化地址里程碑 ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") | 在訊息抵達 SWIFTNet 介接器之前,於支付中介層做結構驗證;於企業通路與代理行入口做自動化地址解析。 |
+| **FSB G20 目標:2027 年前 75% 的跨境支付在 1 小時內完成** | [FSB 跨境支付路線圖——2026 年實施階段 ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | 具備預先約定流動性時段的即時 FX 換匯閘道;將 T+0 確認鉤入客戶入口;軌道路由引擎排除任何無法滿足 1 小時包絡線的走廊。 |
+| **FSB G20 目標:跨境交易平均成本低於 1%,零售低於 3%** | [FSB G20 量化目標 ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | 對每條走廊做成本歸因遙測(FX 價差、代理行費、抬升成本);利潤政策登錄在報價前就揭露不合規定價。 |
+| **BIS Project Agorá 進入原型階段,涵蓋七家央行與 41 家商業銀行** | [BIS Project Agorá ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") | 統一帳本整合規格:代幣化存款帳本節點 + 大額 CBDC 結算平面 + KYC/AML 鉤子;鏈上流動性池依銀行走廊佔比配置規模。 |
+| **德意志銀行「數位貨幣」框架在客戶架構中具體落地** | [Deutsche Bank——數位貨幣:穩定幣、代幣化存款與 CBDC ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") | 不綁定錢包的結算 API,逐筆抽象化穩定幣 / 代幣化存款 / CBDC 的選擇;可程式化條件依銀行的政策登錄(而非客戶端)驗證。 |
 
 ## 支付資料的拐點
 
 ISO 20022 已經從訊息格式專案,演進成資料品質的營運模式。若受款人、付款人、收款人、智能體、城市、國家、用途與當事方資料疲弱,銀行將出現退件、修補、制裁摩擦、客戶不滿與分析能力疲弱。
 
+**SR 2026 把這件事變成硬性契約,不再只是指引。**SWIFT Standards Release 2026(2026 年 11 月)會在網路層強制執行結構化地址規則——`<PstlAdr>` 元素若未攜帶 `<TwnNm>` 與 `<Ctry>` 的訊息,會在 SWIFTNet 驗證堆疊端被收件方退件,而不是被標記為待修補。修補佇列不再是後台成本項,而是一筆客戶可見延遲的結算失敗事件。把 SR 2026 當作「指引收緊」在處理的營運團隊,用的是錯的操作手冊。
+
+### ISO 20022 下的結構化支付資料合規
+
+整補面積很窄、定義明確。下列 XML 元素,就是 2026 年 11 月 SWIFTNet 驗證堆疊真正會退件的位置;其餘都只是下游後果。
+
+| 資料元素 | ISO 20022 XML 標籤 | 2026 年 11 月 SWIFT 要求 | 技術整補策略 |
+|---|---|---|---|
+| **結構化地址** | `<PstlAdr>` 內含 `<TwnNm>` + `<Ctry>` | 強制。非結構化的 `<AdrLine>` 文字會在收件方 SWIFTNet 介接器觸發網路退件。 | 在支付發起當下做自動化地址解析;改寫企業通路表單;於下一筆扣款前對每個交易對手做存量資料清洗。 |
+| **法人識別碼 (LEI)** | `<OrgId>` 之下的 `<Id>` | 高度建議用於非自然人金融交易對手驗證;在多條 CBPR+ 走廊中強制。 | 在企業上線時做 LEI 查詢 + GLEIF 交叉比對;透過參考資料服務自動補全存量交易對手。 |
+| **支付用途代碼** | `<Purp>` 內含 `<Cd>` | 在多條區域即時走廊(CBPR+、SEPA Inst、TIPS)中強制,用於自動化 AML / 制裁篩查。 | 把銀行內部既有交易代碼對應到標準 ISO 20022 ExternalPurposeCode 清單;在企業通路 UI 露出用途選擇;未知代碼預設拒絕。 |
+| **最終當事方** | `<UltmtDbtr>` / `<UltmtCdtr>` | 揭露最終受益人脈絡以滿足 G20 FATF 旅行規則 + 制裁參數;在多種支付類型代碼下強制。 | 從帳本子科目擷取端對端當事方姓名;與 KYC 圖譜對帳;在每一筆確認上露出最終當事方。 |
+| **匯款資訊(結構化)** | `<RmtInf><Strd>` 含 `<RfrdDocInf>` | 在 CBPR+ Phase 2 下,可對帳的發票連結式企業支付為必填。 | 在企業入口報價當下擷取結構化匯款資訊;高金額流量拒絕自由文字回退。 |
+
 ## 代幣化存款與大額 CBDC
 
 代幣化存款保留商業銀行貨幣模型,同時加入可程式化能力。大額央行貨幣則保留結算終局性。有趣的設計模式是兩者的組合:商業銀行貨幣承擔客戶關係與信用中介,央行貨幣承擔最終結算與系統性信心。
+
+Project Agorá 把這個組合具體化。下方架構是 BIS 的參考模式,描繪一筆原子化、付款對付款(PvP)的跨境結算:同時動用一條商業銀行存款帳本與一條大額 CBDC 結算平面,並透過統一帳本協調。
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant CB_A as 商業銀行 A<br/>(付款方)
+    participant UL as 統一帳本<br/>(BIS Agorá 協調平面)
+    participant CBNK as 央行<br/>(大額 CBDC 發行方)
+    participant CB_B as 商業銀行 B<br/>(收款方)
+
+    CB_A->>UL: 提交指令:<br/>扣除代幣化存款 X、<br/>入帳代幣化存款 Y、<br/>條件 = 大額 CBDC 腿
+    UL->>UL: 驗證 ISO 20022 封包、<br/>結構化地址、LEI、<br/>用途代碼、AML/制裁
+    UL->>CBNK: 預留大額 CBDC<br/>(付款方央行準備金)
+    CBNK-->>UL: 預留已確認<br/>(原子鎖定)
+    UL->>CB_A: 鎖定代幣化存款 X<br/>(商業銀行貨幣腿)
+    CB_A-->>UL: 存款鎖定已確認
+    UL->>UL: 兩腿皆已鎖定 →<br/>觸發原子結算
+    UL->>CBNK: 結算大額 CBDC<br/>(付款方準備金 → 收款方準備金)
+    UL->>CB_B: 發行代幣化存款 Y<br/>(商業銀行貨幣腿)
+    CBNK-->>UL: CBDC 結算已終局
+    CB_B-->>UL: 存款已入帳
+    UL->>CB_A: PvP 結算完成<br/>(兩腿同時終局或同時回滾)
+    UL->>CB_B: PvP 結算完成
+```
+
+結算依結構即是原子化:兩腿同時提交,或同時回滾。大額 CBDC 腿的結算最終性,讓商業銀行的代幣化存款轉移在沒有代理行風險的情況下生效。統一帳本是協調平面,而非一個自成體系的支付系統——央行仍然發行結算資產,商業銀行仍然入帳存款負債。
 
 ## 新的大額支付產品
 

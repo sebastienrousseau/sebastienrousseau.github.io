@@ -1,11 +1,11 @@
 {
-  "language": "ro-RO",
-  "keywords": "filmul Lucy 2014, Luc Besson, transfer de cunoștințe, large language models, neutral atom qubits, whole-brain emulation, independență de substrat, filozofia AI, computație cuantică, persistența cunoașterii",
   "subtitle": "La doisprezece ani după Lucy al lui Luc Besson, metafora centrală a filmului — cunoașterea migrând din carne în mașină — este validată pe neașteptate de LLM-uri, qubiți cu atomi neutri și emularea întregului creier.",
-  "banner_alt": "Vizualizare abstractă a rețelelor neuronale și matricelor cuantice de atomi. Un computer negru format din particule rearanjate",
-  "date": "May 11, 2026",
+  "keywords": "filmul Lucy 2014, Luc Besson, transfer de cunoștințe, large language models, neutral atom qubits, whole-brain emulation, independență de substrat, filozofia AI, computație cuantică, persistența cunoașterii",
   "locale": "ro_RO",
-  "title": "Lucy's Flash Drive Revisited: AI, Quantum & Knowledge",
+  "banner_alt": "Vizualizare abstractă a rețelelor neuronale și matricelor cuantice de atomi. Un computer negru format din particule rearanjate",
+  "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
+  "date": "May 11, 2026",
   "description": "Doisprezece ani mai târziu, Lucy al lui Besson pare un experiment mental despre cunoașterea migrând din carne în mașină — validat tacit de LLM-uri și qubiți.",
-  "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp"
+  "title": "Lucy's Flash Drive Revisited: AI, Quantum & Knowledge",
+  "language": "ro-RO"
 }

@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Àkójọ ojú-ìran fún ìyípadà ìsanwó ńlá ní 2026 — ìṣípò ìfọwọ́sí ń fún ààyè ìpinnu ìṣèlú-ètò kọjá ISO 20022, tokenised deposits, ọ̀nà àkókò-gangan, àti àtòpọ̀ kọjá-ààlà."
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp"
+banner: "https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -131,23 +131,66 @@ Stanford AI Index ṣe àǹfààní nítorí pé ó ń tọ́jú pápá ìmọ̀
 | **Owó-rírọ̀** | Mú owó-rírọ̀ inú ọjọ́, owó tí a dèdè, àti fèrèsé ìpinnu dára sí | Owó-rírọ̀ tí a fi pamọ́ àti ìdín ìkùnà-ìpinnu | Owó-rírọ̀ tí ń yára tán |
 | **Ìbámu** | Fi AML, sanctions, FATF, àti àwọn ìbéèrè ìṣàyẹ̀wò sí inú data ìsanwó | Ìbámu straight-through àti ìṣàlàyé | Data tí ó pọ̀ sí láìní ìṣàkóso tó lágbára |
 
-## Àwọn Àmì Lọ́wọ́lọ́wọ́ Láti Tọpa
+## Àwọn Àmì Pàtàkì Ìsanwó Ńlá Tí A So Mọ́ Àwọn Àkànṣe Àgbáyé
 
-| Àmì | Kí Ni Ó Túmọ̀ Sí Fún Bánkì | Orísun |
+Àkójọ àwọn àmì 2026 kì í ṣe ètò ìwádìí. Ó jẹ́ àkójọ-iṣẹ́ ìfijíṣẹ́ tí a ti ń wọn Chief Payments Officer ti bánkì lórí. Iṣẹ́ àtúnṣe náà yóò hàn ní àyè mẹ́ta: àpò ìfọwọ́sí, ìpele ìṣàkóso ọ̀nà, àti ìwé-ìkọsílẹ̀ ìpinnu.
+
+| Àmì | Ìtọ́kasí G20 / SWIFT / BIS | Ìmúṣẹ Pẹpẹ Ìmọ̀-ẹ̀rọ |
 |---|---|---|
-| **65% àwọn ìfọwọ́sí ìsanwó ní àdírẹ́sì tí kò ní ìṣèlú** | Ìpèníjà àtúnṣe ṣì tóbi | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **A ó yọ àwọn àdírẹ́sì tí kò ní ìṣèlú kúrò lẹ́yìn November 2026** | Ìmúrasílẹ̀ data-ìsanwó di kókó | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **Ìpele prototype ti Project Agorá** | A ń ṣàdánwò ìpinnu tokenised nínú ipo bánkì-àárín gbùngbùn àti commercial-bank | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Ìpele ìmúṣẹ FSB** | Ìmúdára ìsanwó kọjá-ààlà ṣì jẹ́ ìpinnu ìlànà àgbáyé | [FSB ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Cross-border payments implementation phase") |
-| **Àpẹẹrẹ owó-oníbíì Deutsche Bank** | Stablecoins, tokenised deposits, àti CBDCs ń di kókó-ọ̀rọ̀ àpẹẹrẹ corporate-bank tó ṣiṣẹ́ | [Deutsche Bank ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") |
+| **65% àwọn ìfọwọ́sí ìsanwó ṣì ní àdírẹ́sì tí kò ní ìṣèlú** | [SWIFT SR 2026 — àkókò àdírẹ́sì-ìṣèlú, Nov 2026 ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") | Ìfọwọ́sí schema nínú middleware ìsanwó kí ìfọwọ́sí tó dé adapter SWIFTNet; àyẹ̀wò àdírẹ́sì aládàáṣe ní ẹnu-ọ̀nà oníkànnà-corporate + bánkì-correspondent. |
+| **Àfojúsùn FSB G20: 75% àwọn ìsanwó kọjá-ààlà yóò parí láàrin wákàtí 1 nígbà 2027** | [Ọ̀nà-iṣẹ́ ìsanwó kọjá-ààlà FSB, ìpele ìmúṣẹ 2026 ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | Ẹnu-ọ̀nà ìyípadà-FX àkókò-gangan pẹ̀lú fèrèsé owó-rírọ̀ tí a ti gbà tẹ́lẹ̀; ìjẹ́rìí T+0 sí inú portal oníbàárà; ẹ̀rọ ìṣàkóso ọ̀nà tí ó yọ ọ̀nà èyíkéyìí tí kò lè pàdé fèrèsé wákàtí 1 kúrò. |
+| **Àfojúsùn FSB G20: ìnáwó ìsanwó kọjá-ààlà àpapọ̀ kò gbọdọ̀ ju 1%, ti retail kò ju 3%** | [Àwọn àfojúsùn iye FSB G20 ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | Telemetry ìpín-ìnáwó lórí ọ̀nà kọ̀ọ̀kan (ààlà FX, owó correspondent, ìnáwó lifting); ìforúkọsílẹ̀ ìlànà ààlà tí ó fi iye tí kò bá òfin mu hàn ṣáájú quote. |
+| **BIS Project Agorá wọ ìpele prototype kọjá bánkì-àárín gbùngbùn meje + bánkì-òwò 41** | [BIS Project Agorá ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") | Ìtumọ̀ ìṣàpapọ̀ ìwé-ìkọsílẹ̀-àpapọ̀: node ìwé-tokenised-deposit + ìpele ìpinnu wholesale-CBDC + ìhàn-jáde KYC/AML; àdágún owó-rírọ̀ on-chain tí ó báa ìpín ọ̀nà bánkì mu. |
+| **Ètò "digital money" ti Deutsche Bank ń di àpẹẹrẹ oníbàárà** | [Deutsche Bank — Digital Money: stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") | API ìpinnu tí kò sọ wallet-pàtó tí ó yọ ìyàn stablecoin / tokenised-deposit / CBDC kọjá fún ìsanwó kọ̀ọ̀kan; àwọn ipò ìṣèlú-ètò tí a wọn lòdì sí ìforúkọsílẹ̀ ìlànà bánkì, kì í ṣe ti oníbàárà. |
 
 ## Ibi-Ìyípadà Data Ìsanwó
 
 ISO 20022 ti ṣípò láti iṣẹ́ àpẹẹrẹ-ìfọwọ́sí sí àpẹẹrẹ-iṣẹ́ ìpé-data. Bí data beneficiary, debtor, creditor, agent, ìlú, orílẹ̀-èdè, ète, àti party bá jẹ́ aláìlera, bánkì yóò ní ìkọsílẹ̀, àtúnṣe, àìrọ̀rùn sanctions, ìbínú oníbàárà, àti analytics aláìlera.
 
+**SR 2026 yí èyí padà sí àdéhùn tó le, kì í ṣe ìmọ̀ràn.** SWIFT Standards Release 2026 (November 2026) yóò fipá mú òfin àdírẹ́sì-ìṣèlú ní ìpele nẹ́twọ́ọ̀kì — àwọn ìfọwọ́sí tí ó jẹ́ pé èròjà `<PstlAdr>` wọn kò ní `<TwnNm>` àti `<Ctry>` yóò di ìkọsílẹ̀ ní ìgbà gbígbà nípasẹ̀ stack ìfọwọ́sí SWIFTNet, kì í ṣe àmì fún àtúnṣe. Ọ̀wọ̀-àtúnṣe yóò dáwọ́ jíjẹ́ ìlà-ìnáwó ẹ̀yìn-iṣẹ́ dúró, ó sì di ìṣẹ̀lẹ̀ ìkùnà-ìpinnu pẹ̀lú ìdádúró tí ó hàn fún oníbàárà. Àwọn ẹgbẹ́ ìṣiṣẹ́ tí wọ́n ti ń tọ́jú SR 2026 gẹ́gẹ́ bí "ìtọ́sọ́nà tó muna sí i" ń ṣiṣẹ́ láti runbook tí kò tọ́.
+
+### Ìbámu Data Ìsanwó Ìṣèlú lábẹ́ ISO 20022
+
+Ojú-iṣẹ́ àtúnṣe náà kéré, ó sì hàn kedere. Àwọn èròjà XML nísàlẹ̀ ni ibi tí stack ìfọwọ́sí SWIFTNet November 2026 yóò ti kọ ìfọwọ́sí sílẹ̀ ní gangan; gbogbo ìyókù jẹ́ àbájáde tó ń tẹ̀le.
+
+| Èròjà Data | Tag XML ISO 20022 | Ìbéèrè SWIFT November 2026 | Ìlànà Àtúnṣe Ìmọ̀-ẹ̀rọ |
+|---|---|---|---|
+| **Àdírẹ́sì Ìṣèlú** | `<PstlAdr>` tí ó ní `<TwnNm>` + `<Ctry>` | Dandan. Ọ̀rọ̀ `<AdrLine>` tí kò ní ìṣèlú yóò mú ìkọsílẹ̀ nẹ́twọ́ọ̀kì wá ní adapter SWIFTNet gbígbà. | Àyẹ̀wò àdírẹ́sì aládàáṣe ní ìbẹ̀rẹ̀ ìsanwó; àtúnkọ fọ́ọ̀mù oníkànnà-corporate; ìfọṣọ ìwé-ẹ̀yìn lórí ìṣèlú-ìbátan kọ̀ọ̀kan ṣáájú debit ti ń bọ̀. |
+| **Legal Entity Identifier (LEI)** | `<Id>` lábẹ́ `<OrgId>` | Ní ìmọ̀ràn gígbóná fún ìjẹ́rìí ìṣèlú-ìbátan ìnáwó tí kì í ṣe ti ènìyàn; dandan ní àwọn ọ̀nà CBPR+ púpọ̀. | Wíwá LEI + àyẹ̀wò GLEIF ní ìforúkọsílẹ̀ corporate; ìfikún aládàáṣe fún ìṣèlú-ìbátan ìwé-ẹ̀yìn nípasẹ̀ àwọn iṣẹ́ data-ìtọ́kasí. |
+| **Koodu Ète Ìsanwó** | `<Purp>` tí ó ní `<Cd>` | Dandan ní àwọn ọ̀nà àkókò-gangan agbègbè púpọ̀ (CBPR+, SEPA Inst, TIPS) fún àyẹ̀wò AML / sanctions aládàáṣe. | Tọpa koodu ìṣiṣẹ́ inu-bánkì àtijọ́ sí àkójọ ìṣe-bóṣewà ISO 20022 ExternalPurposeCode; fi ìyàn ète hàn ní UI oníkànnà-corporate; default-deny lórí àwọn koodu tí kò ní mọ̀. |
+| **Ultimate Parties** | `<UltmtDbtr>` / `<UltmtCdtr>` | Fi ipò olùgbà ìkẹyìn hàn láti pàdé àwọn ìlànà travel-rule + sanctions G20 FATF; dandan fún àwọn koodu irú-ìsanwó púpọ̀. | Yọ orúkọ àwọn ẹgbẹ́ ìpari-sí-ìpari kúrò nínú sub-account ìwé-ìkọsílẹ̀; tún ṣe ìbáwí pẹ̀lú graph KYC; fi ẹgbẹ́ ìkẹyìn hàn lórí ìjẹ́rìí kọ̀ọ̀kan. |
+| **Remittance Information (Ìṣèlú)** | `<RmtInf><Strd>` pẹ̀lú `<RfrdDocInf>` | A nílò rẹ̀ fún ìsanwó corporate tí a so mọ́ ìwé-ìpawọ́pé tí a lè bá báwí lábẹ́ CBPR+ Phase 2. | Gbà remittance ìṣèlú ní àkókò-quote nínú portal corporate; kọ àlá ọ̀rọ̀-òfin sílẹ̀ fún ìṣàn iye-ńlá. |
+
 ## Tokenised Deposits àti Wholesale CBDC
 
 Tokenised deposits ń pa àpẹẹrẹ owó commercial-bank mọ́ nígbà tí wọ́n ń fi ìṣèlú-ètò kún. Owó bánkì-àárín gbùngbùn wholesale ń pa àkókò-ìpari ìpinnu mọ́. Àpẹẹrẹ tí ó wúni jẹ́ àpapọ̀: owó commercial-bank fún ìbátan oníbàárà àti ìbújọ́pò gbèsè, owó bánkì-àárín gbùngbùn fún ìpinnu ìkẹyìn àti ìgbẹ́kẹ̀lé ètò.
+
+Project Agorá fi àpapọ̀ náà ṣe gangan. Àpẹẹrẹ nísàlẹ̀ ni àpẹẹrẹ-ìtọ́kasí BIS fún ìpinnu kọjá-ààlà atomic, payment-versus-payment (PvP) tí ó ń lo ìwé-ìkọsílẹ̀ tokenised-deposit ti commercial-bank àti ìpele ìpinnu wholesale-CBDC, tí a ṣàkóso nípasẹ̀ ìwé-ìkọsílẹ̀-àpapọ̀.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant CB_A as Commercial Bank A<br/>(ẹgbẹ́ olùsanwó)
+    participant UL as Unified Ledger<br/>(ìpele ìṣàkóso BIS Agorá)
+    participant CBNK as Central Bank<br/>(olùpèsè wholesale CBDC)
+    participant CB_B as Commercial Bank B<br/>(ẹgbẹ́ olùgbà)
+
+    CB_A->>UL: Fi ìtọ́ni ránṣẹ́:<br/>debit tokenised deposit X,<br/>credit tokenised deposit Y,<br/>ipò = ẹsẹ̀ wholesale CBDC
+    UL->>UL: Ṣàyẹ̀wò àpò ISO 20022,<br/>àdírẹ́sì ìṣèlú, LEI,<br/>koodu ète, AML/sanctions
+    UL->>CBNK: Fipamọ́ wholesale CBDC<br/>(reserves bánkì-àárín gbùngbùn ẹgbẹ́ olùsanwó)
+    CBNK-->>UL: Ìfipamọ́ ti jẹ́rìí<br/>(ìdè atomic)
+    UL->>CB_A: Fi tokenised deposit X dè<br/>(ẹsẹ̀ owó commercial-bank)
+    CB_A-->>UL: Ìdè deposit jẹ́rìí
+    UL->>UL: Àwọn ẹsẹ̀ méjèèjì dè →<br/>okùnfà ìpinnu atomic
+    UL->>CBNK: Pinnu wholesale CBDC<br/>(reserves olùsanwó → reserves olùgbà)
+    UL->>CB_B: Pèsè tokenised deposit Y<br/>(ẹsẹ̀ owó commercial-bank)
+    CBNK-->>UL: Ìpinnu CBDC ti parí
+    CB_B-->>UL: Deposit ti gbà
+    UL->>CB_A: Ìpinnu PvP ti parí<br/>(àwọn ẹsẹ̀ méjèèjì parí tàbí àwọn ẹsẹ̀ méjèèjì padà sẹ́yìn)
+    UL->>CB_B: Ìpinnu PvP ti parí
+```
+
+Ìpinnu náà jẹ́ atomic nípasẹ̀ ìṣètò: àwọn ẹsẹ̀ méjèèjì parí tàbí àwọn méjèèjì padà sẹ́yìn. Àkókò-ìpari ìpinnu lórí ẹsẹ̀ wholesale-CBDC mú ìṣípò tokenised-deposit commercial-bank ní agbára láìní ewu correspondent. Ìwé-ìkọsílẹ̀-àpapọ̀ ni ìpele ìṣàkóso, kì í ṣe ètò ìsanwó nínú ara rẹ̀ — bánkì-àárín gbùngbùn ṣì ń pèsè àlùmọ́ọ́nì ìpinnu, bánkì commercial sì ń ṣe ìwé gbèsè deposit.
 
 ## Ọjà Ìsanwó Ńlá Tuntun
 

@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "2026'da toptan ödemelerdeki kaymanın görsel kütüğü — mesajlaşma göçü, ISO 20022, tokenleştirilmiş mevduat, gerçek zamanlı raylar ve sınır ötesi atomiklik genelinde programlanabilir mutabakata bırakıyor."
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp"
+banner: "https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -131,23 +131,66 @@ Bir banka için pratik soru, her alanın önemli olup olmadığı değildir. Kur
 | **Likidite** | Gün içi likidite, takılı nakit ve mutabakat pencerelerini optimize et | Tasarruf edilen likidite ve mutabakat-başarısızlığı azaltma | Likidite üzerinde daha hızlı tükenmeler |
 | **Uyum** | AML, yaptırımlar, FATF ve denetim gereksinimlerini ödeme verisine göm | Doğrudan-geçen uyum ve açıklanabilirlik | Daha güçlü kontroller olmadan zenginleştirilmiş veri |
 
-## Takip Edilecek Güncel Sinyaller
+## Küresel Önceliklere Eşlenen Temel Toptan Ödemeler Sinyalleri
 
-| Sinyal | Bankalar İçin Anlamı | Kaynak |
+2026 sinyal seti bir araştırma gündemi değildir. Bankanın Baş Ödemeler Yöneticisinin halihazırda üzerinden ölçüldüğü bir teslimat kontrol listesidir. İyileştirme işi üç yerde ortaya çıkar: mesaj zarfında, ray orkestrasyon katmanında ve mutabakat defterinde.
+
+| Sinyal | G20 / SWIFT / BIS Referansı | Teknik Platform Uygulaması |
 |---|---|---|
-| **Ödeme mesajlarının %65'i yapılandırılmamış adres içeriyor** | Düzeltme zorluğu hâlâ büyük | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **Yapılandırılmamış adresler Kasım 2026'dan sonra kaldırılıyor** | Ödeme-veri hazırlığı aciliyet kazanır | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **Proje Agorá prototip aşaması** | Tokenleştirilmiş mutabakat, merkez bankası ve ticari banka ortamında test ediliyor | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **FSB uygulama aşaması** | Sınır ötesi ödeme iyileştirmesi küresel bir politika önceliği olmayı sürdürüyor | [FSB ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Cross-border payments implementation phase") |
-| **Deutsche Bank dijital para çerçevesi** | Stabilcoinler, tokenleştirilmiş mevduat ve CBDC'ler pratik bir kurumsal-bankacılık mimari konusu haline geliyor | [Deutsche Bank ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") |
+| **Ödeme mesajlarının %65'i hâlâ yapılandırılmamış adres içeriyor** | [SWIFT SR 2026 — yapılandırılmış-adres kilometre taşı, Kas 2026 ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") | Mesaj SWIFTNet adaptörüne ulaşmadan önce ödeme ara yazılımında şema doğrulaması; kurumsal-kanal + muhabir-banka girişinde otomatik adres ayrıştırma. |
+| **FSB G20 hedefi: 2027'ye kadar sınır ötesi ödemelerin %75'i 1 saat içinde tamamlanır** | [FSB sınır ötesi ödemeler yol haritası, 2026 uygulama aşaması ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | Önceden anlaşılmış likidite pencereleriyle gerçek zamanlı FX-çevirme ağ geçitleri; müşteri portalına T+0 onay kancaları; 1 sa zarfını karşılayamayan herhangi bir koridoru hariç tutan ray-yönlendirme motoru. |
+| **FSB G20 hedefi: ortalama sınır ötesi işlem maliyeti %1'in, perakende %3'ün altında** | [FSB G20 niceliksel hedefler ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | Her koridorda maliyet-atfetme telemetrisi (FX yayılımı, muhabir ücreti, kaldırma maliyeti); fiyat öncesi uyumsuz fiyatlandırmayı yüzeye çıkaran marj politika sicili. |
+| **BIS Proje Agorá yedi merkez bankası + 41 ticari banka genelinde prototip aşamasına geçer** | [BIS Proje Agorá ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") | Birleşik-defter entegrasyon spesifikasyonu: tokenleştirilmiş mevduat defter düğümü + toptan-CBDC mutabakat düzlemi + KYC/AML kancaları; bankanın koridor payına göre boyutlandırılmış zincir üstü likidite havuzları. |
+| **Deutsche Bank "dijital para" çerçevesi müşteri mimarisinde kristalleşir** | [Deutsche Bank — Dijital Para: stabilcoinler, tokenleştirilmiş mevduat ve CBDC'ler ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") | Ödeme başına stabilcoin / tokenleştirilmiş mevduat / CBDC seçimini soyutlayan cüzdandan bağımsız mutabakat API'si; programlanabilir koşullar müşterinin değil, bankanın politika siciline göre değerlendirilir. |
 
 ## Ödeme Verisi Dönüm Noktası
 
 ISO 20022, bir mesajlaşma-formatı projesinden bir veri-kalitesi operasyon modeline geçti. Yararlanıcı, borçlu, alacaklı, ajan, şehir, ülke, amaç ve taraf verisi zayıfsa banka retler, onarımlar, yaptırım sürtünmesi, müşteri hayal kırıklığı ve zayıf analitik yaşayacaktır.
 
+**SR 2026 bunu bir tavsiye değil, sert bir sözleşme haline getirir.** SWIFT Standartlar Sürümü 2026 (Kasım 2026), yapılandırılmış-adres kuralını ağ katmanında uygular — `<PstlAdr>` öğesi `<TwnNm>` ve `<Ctry>` taşımayan mesajlar, onarım için işaretlenmek yerine alındığında SWIFTNet doğrulama yığını tarafından reddedilir. Onarım kuyruğu artık bir arka ofis maliyet kalemi olmaktan çıkar ve müşteri tarafında görünür gecikmeyle bir mutabakat-başarısızlığı olayına dönüşür. SR 2026'yı "daha sıkı rehber" olarak ele alan operasyon ekipleri yanlış el kitabıyla çalışıyor.
+
+### ISO 20022 Kapsamında Yapılandırılmış Ödeme Verisi Uyumu
+
+İyileştirme yüzeyi dar ve iyi tanımlanmıştır. Aşağıdaki XML öğeleri, Kasım 2026 SWIFTNet doğrulama yığınının mesajları gerçekten reddettiği yerlerdir; geri kalan her şey aşağı akış sonucudur.
+
+| Veri Öğesi | ISO 20022 XML Etiketi | Kasım 2026 SWIFT Gereksinimi | Teknik İyileştirme Stratejisi |
+|---|---|---|---|
+| **Yapılandırılmış Adres** | `<PstlAdr>` içinde `<TwnNm>` + `<Ctry>` | Zorunlu. Yapılandırılmamış `<AdrLine>` metni, alıcı SWIFTNet adaptöründe ağ reddini tetikler. | Ödeme başlatma sırasında otomatik adres ayrıştırma; kurumsal-kanal form yeniden yazımları; bir sonraki borçlandırmadan önce her karşı tarafta arka kitap temizliği. |
+| **Yasal Kuruluş Tanımlayıcısı (LEI)** | `<OrgId>` altında `<Id>` | Birey olmayan finansal karşı taraf doğrulaması için şiddetle önerilir; birkaç CBPR+ koridorunda zorunlu. | Kurumsal işe alımda LEI araması + GLEIF çapraz kontrolü; referans veri hizmetleri aracılığıyla arka kitap karşı tarafları için otomatik zenginleştirme. |
+| **Ödeme Amacı Kodları** | `<Purp>` içinde `<Cd>` | Otomatik AML / yaptırım taraması için birden fazla bölgesel gerçek zamanlı koridorda (CBPR+, SEPA Inst, TIPS) zorunlu. | Eski banka-iç işlem kodlarını standart ISO 20022 ExternalPurposeCode listesine eşleyin; kurumsal-kanal UI'sinde amaç seçimini açın; bilinmeyen kodlarda varsayılan-reddet. |
+| **Nihai Taraflar** | `<UltmtDbtr>` / `<UltmtCdtr>` | G20 FATF seyahat kuralı + yaptırım parametrelerini karşılamak için nihai yararlanıcı bağlamını açığa çıkarın; birkaç ödeme-türü kodu için zorunlu. | Defter alt-hesaplarından uçtan-uca taraf adlarını çıkarın; KYC grafiğine karşı mutabık kılın; her onayda nihai tarafı yüzeye çıkarın. |
+| **Havale Bilgisi (Yapılandırılmış)** | `<RmtInf><Strd>` ile `<RfrdDocInf>` | CBPR+ Faz 2 kapsamında mutabık kılınabilir fatura-bağlantılı kurumsal ödemeler için gerekli. | Kurumsal portalda teklif zamanında yapılandırılmış havaleyi yakalayın; yüksek değerli akışlar için serbest-metin geri dönüşünü reddedin. |
+
 ## Tokenleştirilmiş Mevduat ve Toptan CBDC
 
 Tokenleştirilmiş mevduat, ticari-banka para modelini korurken programlanabilirlik ekler. Toptan merkez bankası parası, mutabakat kesinliğini korur. İlgi çekici tasarım deseni kombinasyondur: müşteri ilişkileri ve kredi aracılığı için ticari banka parası, nihai mutabakat ve sistemik güven için merkez bankası parası.
+
+Proje Agorá kombinasyonu somutlaştırır. Aşağıdaki mimari, hem bir ticari-banka mevduat defteri hem de toptan-CBDC mutabakat düzlemi kullanarak, birleşik bir defter aracılığıyla koordine edilen atomik bir ödeme-karşılığı-ödeme (PvP) sınır ötesi mutabakat için BIS referans modelidir.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant CB_A as Ticari Banka A<br/>(ödeyen taraf)
+    participant UL as Birleşik Defter<br/>(BIS Agorá koordinasyon düzlemi)
+    participant CBNK as Merkez Bankası<br/>(toptan CBDC ihracı)
+    participant CB_B as Ticari Banka B<br/>(alacaklı taraf)
+
+    CB_A->>UL: Talimat gönder:<br/>tokenleştirilmiş mevduat X borç,<br/>tokenleştirilmiş mevduat Y alacak,<br/>koşul = toptan CBDC bacağı
+    UL->>UL: ISO 20022 zarfını,<br/>yapılandırılmış adres, LEI,<br/>amaç kodu, AML/yaptırımları doğrula
+    UL->>CBNK: Toptan CBDC rezerve et<br/>(ödeyen-taraf merkez bankası rezervleri)
+    CBNK-->>UL: Rezervasyon onaylandı<br/>(atomik kilit)
+    UL->>CB_A: Tokenleştirilmiş mevduat X'i kilitle<br/>(ticari-banka para bacağı)
+    CB_A-->>UL: Mevduat kilidi onaylandı
+    UL->>UL: Her iki bacak kilitlendi →<br/>atomik mutabakat tetikleyicisi
+    UL->>CBNK: Toptan CBDC mutabakatını yap<br/>(ödeyen rezervleri → alacaklı rezervleri)
+    UL->>CB_B: Tokenleştirilmiş mevduat Y ihraç et<br/>(ticari-banka para bacağı)
+    CBNK-->>UL: CBDC mutabakatı kesinleştirildi
+    CB_B-->>UL: Mevduat alacaklandırıldı
+    UL->>CB_A: PvP mutabakatı tamamlandı<br/>(her iki bacak da kesin veya her ikisi de geri alındı)
+    UL->>CB_B: PvP mutabakatı tamamlandı
+```
+
+Mutabakat yapısı gereği atomiktir: her iki bacak da kabul edilir veya her ikisi de geri alınır. Toptan-CBDC bacağındaki mutabakat kesinliği, ticari-banka tokenleştirilmiş mevduat transferini muhabir riski olmadan etkili kılar. Birleşik defter koordinasyon düzlemidir, kendi başına bir ödeme sistemi değil — merkez bankası hâlâ mutabakat varlığını ihraç eder ve ticari banka hâlâ mevduat yükümlülüğünü kayda alır.
 
 ## Yeni Toptan Ödeme Ürünü
 

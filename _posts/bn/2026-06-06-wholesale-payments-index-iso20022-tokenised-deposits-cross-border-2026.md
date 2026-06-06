@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "২০২৬-এ হোলসেল পেমেন্ট পরিবর্তনের একটি দৃশ্যমান নথি — ISO 20022, টোকেনাইজড আমানত, রিয়েল-টাইম রেল ও সীমান্ত-পার অ্যাটমিসিটি জুড়ে মেসেজিং মাইগ্রেশন প্রোগ্রামেবল সেটেলমেন্টের পথ ছেড়ে দিচ্ছে।"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp"
+banner: "https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -131,23 +131,66 @@ Stanford AI Index উপযোগী, কারণ এটি একটি দ্
 | **তরলতা** | ইন্ট্রাডে তরলতা, আটকা পড়া নগদ ও সেটেলমেন্ট উইন্ডো অপ্টিমাইজ | সাশ্রয়িত তরলতা ও সেটেলমেন্ট-ব্যর্থতা হ্রাস | তরলতায় দ্রুততর নিষ্কাশন |
 | **সম্মতি** | AML, নিষেধাজ্ঞা, FATF এবং অডিট প্রয়োজনীয়তা পেমেন্ট ডেটায় অন্তর্ভুক্ত | স্ট্রেইট-থ্রু সম্মতি ও ব্যাখ্যাযোগ্যতা | শক্তিশালী সুরক্ষা বেড়া ছাড়া সমৃদ্ধতর ডেটা |
 
-## ট্র্যাক করার বর্তমান সংকেত
+## বৈশ্বিক অগ্রাধিকারের সঙ্গে সংযুক্ত মূল হোলসেল পেমেন্ট সংকেত
 
-| সংকেত | ব্যাংকের জন্য এর অর্থ | উৎস |
+২০২৬-এর সংকেত-সেট কোনো গবেষণা এজেন্ডা নয়। এটি একটি ডেলিভারি চেকলিস্ট, যার ভিত্তিতে একজন ব্যাংকের চিফ পেমেন্টস অফিসারকে এখনই পরিমাপ করা হচ্ছে। প্রতিকার কাজ তিন জায়গায় ফুটে ওঠে: মেসেজ এনভেলপ, রেল অর্কেস্ট্রেশন স্তর এবং সেটেলমেন্ট লেজার।
+
+| সংকেত | G20 / SWIFT / BIS রেফারেন্স | টেকনিক্যাল প্ল্যাটফর্ম বাস্তবায়ন |
 |---|---|---|
-| **৬৫% পেমেন্ট মেসেজে অস্ট্রাকচার্ড অ্যাড্রেস রয়েছে** | প্রতিকার চ্যালেঞ্জ এখনও বড় | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **নভেম্বর ২০২৬-এর পর অস্ট্রাকচার্ড অ্যাড্রেস প্রত্যাহার** | পেমেন্ট-ডেটা প্রস্তুতি জরুরি হয়ে ওঠে | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **Project Agorá প্রোটোটাইপ পর্যায়** | কেন্দ্রীয়-ব্যাংক ও বাণিজ্যিক-ব্যাংক পরিবেশে টোকেনাইজড সেটেলমেন্ট পরীক্ষা চলছে | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **FSB বাস্তবায়ন পর্যায়** | সীমান্ত-পার পেমেন্ট উন্নয়ন একটি বৈশ্বিক নীতি অগ্রাধিকার থাকছে | [FSB ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Cross-border payments implementation phase") |
-| **Deutsche Bank ডিজিটাল মানি কাঠামো** | স্টেবলকয়েন, টোকেনাইজড আমানত ও CBDC কর্পোরেট-ব্যাংক স্থাপত্যের একটি ব্যবহারিক বিষয় হয়ে উঠছে | [Deutsche Bank ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") |
+| **৬৫% পেমেন্ট মেসেজে এখনও অস্ট্রাকচার্ড অ্যাড্রেস রয়েছে** | [SWIFT SR 2026 — স্ট্রাকচার্ড-অ্যাড্রেস মাইলফলক, নভেম্বর ২০২৬ ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") | SWIFTNet অ্যাডাপ্টারে পৌঁছানোর আগে পেমেন্ট মিডলওয়্যারে স্কিমা ভ্যালিডেশন; কর্পোরেট-চ্যানেল ও করেসপন্ডেন্ট-ব্যাংক এন্ট্রি পয়েন্টে স্বয়ংক্রিয় কাঠামোগত ঠিকানা পার্সিং। |
+| **FSB G20 লক্ষ্য: ২০২৭-এর মধ্যে ৭৫% সীমান্ত-পার পেমেন্ট ১ ঘণ্টার মধ্যে সম্পন্ন** | [FSB সীমান্ত-পার পেমেন্ট রোডম্যাপ, ২০২৬ বাস্তবায়ন পর্যায় ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | পূর্ব-নির্ধারিত তরলতা উইন্ডোসহ রিয়েল-টাইম FX-কনভার্সন গেটওয়ে; গ্রাহক পোর্টালে T+0 কনফার্মেশন হুক; রেল-রাউটিং ইঞ্জিন যা ১ ঘণ্টার এনভেলপ পূরণে অক্ষম যেকোনো করিডোর বাদ দেয়। |
+| **FSB G20 লক্ষ্য: গড় সীমান্ত-পার লেনদেন খরচ ১%-এর নিচে, খুচরা ৩%-এর নিচে** | [FSB G20 পরিমাণগত লক্ষ্যমাত্রা ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | প্রতি করিডোরে খরচ-অ্যাট্রিবিউশন টেলিমেট্রি (FX স্প্রেড, করেসপন্ডেন্ট ফি, লিফটিং কস্ট); মার্জিন পলিসি রেজিস্ট্রি যা কোট দেওয়ার আগে অ-সম্মতিযুক্ত মূল্য সামনে আনে। |
+| **BIS Project Agorá সাতটি কেন্দ্রীয় ব্যাংক + ৪১টি বাণিজ্যিক ব্যাংক জুড়ে প্রোটোটাইপ পর্যায়ে প্রবেশ করে** | [BIS Project Agorá ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") | ইউনিফাইড-লেজার ইন্টিগ্রেশন স্পেসিফিকেশন: টোকেনাইজড-আমানত লেজার নোড + হোলসেল-CBDC সেটেলমেন্ট প্লেন + KYC/AML হুক; ব্যাংকের করিডোর শেয়ারের আকার অনুযায়ী অন-চেইন তরলতা পুল। |
+| **Deutsche Bank "ডিজিটাল মানি" কাঠামো গ্রাহক স্থাপত্যে স্পষ্টরূপ নিচ্ছে** | [Deutsche Bank — Digital Money: stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") | ওয়ালেট-অ্যাগনস্টিক সেটেলমেন্ট API যা প্রতি পেমেন্টে স্টেবলকয়েন / টোকেনাইজড আমানত / CBDC নির্বাচনকে বিমূর্ত করে; গ্রাহকের নয়, ব্যাংকের পলিসি রেজিস্ট্রির বিপরীতে প্রোগ্রামেবল শর্ত মূল্যায়ন। |
 
 ## পেমেন্ট ডেটা ইনফ্লেকশন পয়েন্ট
 
 ISO 20022 একটি মেসেজিং-ফরম্যাট প্রকল্প থেকে একটি ডেটা-গুণমান অপারেটিং মডেলে চলে এসেছে। যদি বেনিফিশিয়ারি, ডেবটর, ক্রেডিটর, এজেন্ট, শহর, দেশ, উদ্দেশ্য এবং পক্ষ ডেটা দুর্বল হয়, ব্যাংক রিজেক্ট, মেরামত, নিষেধাজ্ঞা সংক্রান্ত ঘর্ষণ, গ্রাহক হতাশা এবং দুর্বল বিশ্লেষণের সম্মুখীন হবে।
 
+**SR 2026 এটিকে একটি কঠিন চুক্তিতে পরিণত করে, পরামর্শে নয়।** SWIFT Standards Release 2026 (নভেম্বর ২০২৬) নেটওয়ার্ক স্তরে কাঠামোগত-ঠিকানা নিয়মটি কার্যকর করে — যেসব মেসেজের `<PstlAdr>` উপাদানে `<TwnNm>` ও `<Ctry>` নেই, সেগুলো গ্রহণের মুহূর্তেই SWIFTNet ভ্যালিডেশন স্ট্যাক রিজেক্ট করবে, মেরামতের জন্য চিহ্নিত করবে না। মেরামত কিউ আর কোনো ব্যাক-অফিস খরচ লাইন থাকছে না; এটি গ্রাহক-দৃশ্যমান বিলম্বসহ একটি সেটেলমেন্ট-ব্যর্থতা ইভেন্টে পরিণত হচ্ছে। যেসব অপারেশন দল SR 2026-কে "কড়াকড়ি নির্দেশনা" হিসেবে দেখছে, তারা ভুল রানবুক থেকে কাজ করছে।
+
+### ISO 20022-এর অধীনে কাঠামোগত পেমেন্ট ডেটা সম্মতি
+
+প্রতিকার পরিধি সংকীর্ণ ও সুনির্দিষ্ট। নিচের XML উপাদানগুলোই হলো সেই বিন্দু যেখানে নভেম্বর ২০২৬-এর SWIFTNet ভ্যালিডেশন স্ট্যাক প্রকৃতপক্ষে মেসেজ ব্যর্থ করে; বাকি সবকিছু পরবর্তী পরিণতি।
+
+| ডেটা উপাদান | ISO 20022 XML ট্যাগ | নভেম্বর ২০২৬ SWIFT প্রয়োজনীয়তা | টেকনিক্যাল প্রতিকার কৌশল |
+|---|---|---|---|
+| **কাঠামোগত ঠিকানা** | `<PstlAdr>` containing `<TwnNm>` + `<Ctry>` | বাধ্যতামূলক। অস্ট্রাকচার্ড `<AdrLine>` টেক্সট গ্রহণকারী SWIFTNet অ্যাডাপ্টারে নেটওয়ার্ক রিজেকশন ট্রিগার করে। | পেমেন্ট সূচনায় স্বয়ংক্রিয় ঠিকানা পার্সিং; কর্পোরেট-চ্যানেল ফর্ম পুনর্লিখন; পরবর্তী ডেবিটের আগে প্রতিটি কাউন্টারপার্টিতে ব্যাক-বুক ক্লিনজিং। |
+| **লিগ্যাল এনটিটি আইডেন্টিফায়ার (LEI)** | `<Id>` under `<OrgId>` | অ-ব্যক্তি আর্থিক কাউন্টারপার্টি যাচাইকরণের জন্য অত্যন্ত সুপারিশকৃত; বেশ কয়েকটি CBPR+ করিডোরে বাধ্যতামূলক। | কর্পোরেট অনবোর্ডিং-এ LEI লুকআপ + GLEIF ক্রস-চেক; রেফারেন্স-ডেটা পরিষেবার মাধ্যমে ব্যাক-বুক কাউন্টারপার্টির জন্য স্বয়ংক্রিয় সমৃদ্ধি। |
+| **পেমেন্ট পারপাজ কোড** | `<Purp>` containing `<Cd>` | একাধিক আঞ্চলিক রিয়েল-টাইম করিডোরে (CBPR+, SEPA Inst, TIPS) স্বয়ংক্রিয় AML / নিষেধাজ্ঞা স্ক্রিনিংয়ের জন্য বাধ্যতামূলক। | লিগ্যাসি ব্যাংক-অভ্যন্তরীণ ট্রানজ্যাকশন কোডকে স্ট্যান্ডার্ড ISO 20022 ExternalPurposeCode তালিকায় ম্যাপ করুন; কর্পোরেট-চ্যানেল UI-তে উদ্দেশ্য নির্বাচন প্রকাশ করুন; অজানা কোডের ক্ষেত্রে ডিফল্ট-ডিনাই। |
+| **আল্টিমেট পক্ষ** | `<UltmtDbtr>` / `<UltmtCdtr>` | G20 FATF travel-rule + নিষেধাজ্ঞা প্যারামিটার পূরণে চূড়ান্ত সুবিধাভোগী প্রসঙ্গ প্রকাশ; বেশ কয়েকটি পেমেন্ট-টাইপ কোডের জন্য বাধ্যতামূলক। | লেজার সাব-অ্যাকাউন্ট থেকে এন্ড-টু-এন্ড পক্ষের নাম নিষ্কাশন; KYC গ্রাফের বিপরীতে মিলিয়ে দেখা; প্রতিটি কনফার্মেশনে আল্টিমেট পক্ষ সামনে আনা। |
+| **রেমিট্যান্স তথ্য (কাঠামোগত)** | `<RmtInf><Strd>` with `<RfrdDocInf>` | CBPR+ Phase 2-এর অধীনে রিকনসাইলযোগ্য ইনভয়েস-সংযুক্ত কর্পোরেট পেমেন্টের জন্য প্রয়োজনীয়। | কর্পোরেট পোর্টালে কোট-সময়ে কাঠামোগত রেমিট্যান্স ধারণ করুন; উচ্চমূল্যের প্রবাহের জন্য ফ্রি-টেক্সট ফলব্যাক প্রত্যাখ্যান। |
+
 ## টোকেনাইজড আমানত ও হোলসেল CBDC
 
 টোকেনাইজড আমানত বাণিজ্যিক-ব্যাংক অর্থের মডেল অক্ষুণ্ণ রেখে প্রোগ্রামেবিলিটি যোগ করে। হোলসেল কেন্দ্রীয় ব্যাংক অর্থ সেটেলমেন্ট ফাইনালিটি অক্ষুণ্ণ রাখে। আকর্ষণীয় ডিজাইন প্যাটার্ন হলো সংমিশ্রণ: গ্রাহক সম্পর্ক ও ঋণ মধ্যস্থতার জন্য বাণিজ্যিক ব্যাংক অর্থ, চূড়ান্ত সেটেলমেন্ট ও সিস্টেমিক আস্থার জন্য কেন্দ্রীয় ব্যাংক অর্থ।
+
+Project Agorá এই সংমিশ্রণকে বাস্তব রূপ দেয়। নিচের স্থাপত্যটি হলো BIS-এর রেফারেন্স প্যাটার্ন — একটি অ্যাটমিক, পেমেন্ট-ভার্সাস-পেমেন্ট (PvP) সীমান্ত-পার সেটেলমেন্টের জন্য, যা একটি বাণিজ্যিক-ব্যাংক আমানত লেজার এবং একটি হোলসেল-CBDC সেটেলমেন্ট প্লেন — দুটিকেই একটি ইউনিফাইড লেজারের মাধ্যমে সমন্বয় করে।
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant CB_A as Commercial Bank A<br/>(payer side)
+    participant UL as Unified Ledger<br/>(BIS Agorá coordination plane)
+    participant CBNK as Central Bank<br/>(wholesale CBDC issuer)
+    participant CB_B as Commercial Bank B<br/>(payee side)
+
+    CB_A->>UL: Submit instruction:<br/>debit tokenised deposit X,<br/>credit tokenised deposit Y,<br/>condition = wholesale CBDC leg
+    UL->>UL: Validate ISO 20022 envelope,<br/>structured address, LEI,<br/>purpose code, AML/sanctions
+    UL->>CBNK: Reserve wholesale CBDC<br/>(payer-side central-bank reserves)
+    CBNK-->>UL: Reservation confirmed<br/>(atomic lock)
+    UL->>CB_A: Lock tokenised deposit X<br/>(commercial-bank money leg)
+    CB_A-->>UL: Deposit lock confirmed
+    UL->>UL: Both legs locked →<br/>atomic settlement trigger
+    UL->>CBNK: Settle wholesale CBDC<br/>(payer reserves → payee reserves)
+    UL->>CB_B: Issue tokenised deposit Y<br/>(commercial-bank money leg)
+    CBNK-->>UL: CBDC settlement finalised
+    CB_B-->>UL: Deposit credited
+    UL->>CB_A: PvP settlement complete<br/>(both legs final or both legs roll back)
+    UL->>CB_B: PvP settlement complete
+```
+
+সেটেলমেন্টটি গঠনগতভাবেই অ্যাটমিক: দুটো লেগই কমিট হয় অথবা দুটোই রোলব্যাক করে। হোলসেল-CBDC লেগে সেটেলমেন্ট ফাইনালিটি বাণিজ্যিক-ব্যাংক টোকেনাইজড-আমানত স্থানান্তরকে করেসপন্ডেন্ট ঝুঁকি ছাড়াই কার্যকর করে তোলে। ইউনিফাইড লেজার সমন্বয় প্লেন, নিজে কোনো পেমেন্ট সিস্টেম নয় — কেন্দ্রীয় ব্যাংক এখনও সেটেলমেন্ট সম্পদ ইস্যু করে এবং বাণিজ্যিক ব্যাংক এখনও আমানত দায় বহি-ভুক্ত করে।
 
 ## নতুন হোলসেল পেমেন্ট পণ্য
 

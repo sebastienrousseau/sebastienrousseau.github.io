@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Registre visuel du basculement des paiements de gros en 2026 — la migration des messages cède la place au règlement programmable à travers ISO 20022, dépôts tokenisés, rails temps réel et atomicité transfrontalière."
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp"
+banner: "https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -131,23 +131,66 @@ La question pratique pour une banque n'est pas de savoir si chaque domaine est i
 | **Liquidité** | Optimiser liquidité intraday, cash piégé et fenêtres de règlement | Liquidité économisée et réduction des échecs de règlement | Drains plus rapides sur la liquidité |
 | **Conformité** | Intégrer LCB-FT, sanctions, GAFI et exigences d'audit dans les données de paiement | Conformité STP et explicabilité | Données plus riches sans contrôles plus forts |
 
-## Signaux actuels à suivre
+## Signaux clés des paiements de gros face aux priorités mondiales
 
-| Signal | Ce que cela signifie pour les banques | Source |
+L'ensemble des signaux 2026 n'est pas un agenda de recherche. C'est une liste de livraison sur laquelle le directeur des paiements d'une banque est déjà évalué. Le chantier de remédiation se matérialise à trois endroits : l'enveloppe du message, la couche d'orchestration des rails et le registre de règlement.
+
+| Signal | Référence G20 / SWIFT / BIS | Mise en œuvre sur la plateforme technique |
 |---|---|---|
-| **65 % des messages de paiement contiennent des adresses non structurées** | Le chantier de remédiation reste vaste | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "Jalon ISO 20022 adresses structurées novembre 2026") |
-| **Adresses non structurées retirées après novembre 2026** | La préparation des données de paiement devient urgente | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "Jalon ISO 20022 adresses structurées novembre 2026") |
-| **Phase prototype du Project Agorá** | Le règlement tokenisé est testé dans un cadre banque centrale et banques commerciales | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Phase de mise en œuvre du FSB** | L'amélioration des paiements transfrontaliers reste une priorité politique mondiale | [FSB ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Phase de mise en œuvre des paiements transfrontaliers") |
-| **Cadre monnaie numérique Deutsche Bank** | Stablecoins, dépôts tokenisés et MNBC deviennent un sujet d'architecture concret pour les banques d'entreprise | [Deutsche Bank ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") |
+| **65 % des messages de paiement contiennent encore des adresses non structurées** | [SWIFT SR 2026 — jalon des adresses structurées, novembre 2026 ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "Jalon ISO 20022 adresses structurées novembre 2026") | Validation de schéma dans l'intergiciel de paiement avant que le message n'atteigne l'adaptateur SWIFTNet ; analyse automatisée des adresses à l'entrée des canaux entreprise et des banques correspondantes. |
+| **Cible FSB G20 : 75 % des paiements transfrontaliers exécutés en moins d'une heure d'ici 2027** | [Feuille de route FSB sur les paiements transfrontaliers, phase de mise en œuvre 2026 ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Phase de mise en œuvre des paiements transfrontaliers FSB") | Passerelles de conversion FX en temps réel avec fenêtres de liquidité préagréées ; crochets de confirmation T+0 vers le portail client ; moteur de routage des rails qui exclut tout corridor incapable de tenir l'enveloppe d'une heure. |
+| **Cible FSB G20 : coût moyen des transactions transfrontalières inférieur à 1 %, retail inférieur à 3 %** | [Cibles quantitatives FSB G20 ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Phase de mise en œuvre des paiements transfrontaliers FSB") | Télémétrie d'attribution des coûts sur chaque corridor (écart FX, commission correspondant, coût de levée) ; registre de politique tarifaire qui fait remonter tout tarif non conforme avant l'émission du devis. |
+| **Le Project Agorá du BIS entre en phase prototype avec sept banques centrales et 41 banques commerciales** | [Project Agorá du BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") | Spécification d'intégration au registre unifié : nœud du registre de dépôts tokenisés + plan de règlement en MNBC de gros + crochets KYC/LCB-FT ; pools de liquidité on-chain dimensionnés à la part de corridor de la banque. |
+| **Le cadre « monnaie numérique » de Deutsche Bank se cristallise dans l'architecture client** | [Deutsche Bank — Digital Money: stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") | API de règlement agnostique du portefeuille qui abstrait le choix stablecoin / dépôt tokenisé / MNBC par paiement ; conditions programmables évaluées contre le registre de politique de la banque, pas celui du client. |
 
 ## Le point d'inflexion des données de paiement
 
 ISO 20022 est passé d'un projet de format de messagerie à un modèle opérationnel de qualité des données. Si les données bénéficiaire, débiteur, créancier, agent, ville, pays, motif et partie sont faibles, la banque essuiera rejets, réparations, friction sur les sanctions, frustration client et analytique faible.
 
+**SR 2026 transforme cette exigence en contrat ferme, pas en orientation.** La Standards Release 2026 de SWIFT (novembre 2026) applique la règle de l'adresse structurée au niveau du réseau — les messages dont l'élément `<PstlAdr>` ne porte pas `<TwnNm>` et `<Ctry>` seront rejetés à la réception par la pile de validation SWIFTNet, et non signalés pour réparation. La file de réparation cesse d'être une ligne de coût back-office et devient un événement d'échec de règlement avec délai visible côté client. Les équipes d'exploitation qui ont traité SR 2026 comme « une orientation resserrée » travaillent avec le mauvais manuel.
+
+### Conformité des données de paiement structurées sous ISO 20022
+
+La surface de remédiation est étroite et bien définie. Les éléments XML ci-dessous sont ceux sur lesquels la pile de validation SWIFTNet de novembre 2026 fait réellement échouer les messages ; tout le reste est conséquence en aval.
+
+| Élément de donnée | Balise XML ISO 20022 | Exigence SWIFT de novembre 2026 | Stratégie de remédiation technique |
+|---|---|---|---|
+| **Adresse structurée** | `<PstlAdr>` contenant `<TwnNm>` + `<Ctry>` | Obligatoire. Un texte non structuré `<AdrLine>` déclenche un rejet réseau à l'adaptateur SWIFTNet récepteur. | Analyse automatisée des adresses à l'initiation du paiement ; réécriture des formulaires des canaux entreprise ; nettoyage de back-book sur chaque contrepartie avant le prochain débit. |
+| **Identifiant d'entité juridique (LEI)** | `<Id>` sous `<OrgId>` | Fortement recommandé pour la vérification des contreparties financières non particulières ; obligatoire dans plusieurs corridors CBPR+. | Recherche LEI + recoupement GLEIF lors de l'onboarding entreprise ; enrichissement automatique des contreparties de back-book via des services de données de référence. |
+| **Codes de motif de paiement** | `<Purp>` contenant `<Cd>` | Obligatoire dans plusieurs corridors régionaux temps réel (CBPR+, SEPA Inst, TIPS) pour le filtrage LCB-FT / sanctions automatisé. | Cartographier les codes de transaction internes hérités vers la liste standard ExternalPurposeCode d'ISO 20022 ; exposer la sélection du motif dans l'interface du canal entreprise ; refus par défaut sur les codes inconnus. |
+| **Parties ultimes** | `<UltmtDbtr>` / `<UltmtCdtr>` | Exposer le contexte du bénéficiaire ultime pour satisfaire les paramètres de la travel rule GAFI G20 et des sanctions ; obligatoire pour plusieurs codes de type de paiement. | Extraire les noms de parties bout-en-bout des sous-comptes du grand livre ; rapprocher avec le graphe KYC ; faire remonter la partie ultime sur chaque confirmation. |
+| **Informations de remise (structurées)** | `<RmtInf><Strd>` avec `<RfrdDocInf>` | Requis pour les paiements d'entreprise réconciliables liés à une facture sous CBPR+ Phase 2. | Capturer la remise structurée au moment du devis dans le portail entreprise ; refuser le repli en texte libre pour les flux à fort montant. |
+
 ## Dépôts tokenisés et MNBC de gros
 
 Les dépôts tokenisés préservent le modèle de monnaie de banque commerciale tout en ajoutant la programmabilité. La monnaie de banque centrale de gros préserve le caractère définitif du règlement. Le motif de conception intéressant est la combinaison : monnaie de banque commerciale pour les relations client et l'intermédiation de crédit, monnaie de banque centrale pour le règlement final et la confiance systémique.
+
+Le Project Agorá rend cette combinaison concrète. L'architecture ci-dessous est le modèle de référence du BIS pour un règlement transfrontalier atomique en paiement-contre-paiement (PvP) utilisant à la fois un registre de dépôts de banque commerciale et un plan de règlement en MNBC de gros, coordonnés à travers un registre unifié.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant CB_A as Banque commerciale A<br/>(côté payeur)
+    participant UL as Registre unifié<br/>(plan de coordination BIS Agorá)
+    participant CBNK as Banque centrale<br/>(émetteur de MNBC de gros)
+    participant CB_B as Banque commerciale B<br/>(côté bénéficiaire)
+
+    CB_A->>UL: Soumettre l'instruction :<br/>débiter dépôt tokenisé X,<br/>créditer dépôt tokenisé Y,<br/>condition = jambe en MNBC de gros
+    UL->>UL: Valider l'enveloppe ISO 20022,<br/>adresse structurée, LEI,<br/>code de motif, LCB-FT/sanctions
+    UL->>CBNK: Réserver la MNBC de gros<br/>(réserves de banque centrale côté payeur)
+    CBNK-->>UL: Réservation confirmée<br/>(verrou atomique)
+    UL->>CB_A: Verrouiller le dépôt tokenisé X<br/>(jambe en monnaie de banque commerciale)
+    CB_A-->>UL: Verrou du dépôt confirmé
+    UL->>UL: Deux jambes verrouillées →<br/>déclencheur de règlement atomique
+    UL->>CBNK: Régler la MNBC de gros<br/>(réserves payeur → réserves bénéficiaire)
+    UL->>CB_B: Émettre le dépôt tokenisé Y<br/>(jambe en monnaie de banque commerciale)
+    CBNK-->>UL: Règlement MNBC finalisé
+    CB_B-->>UL: Dépôt crédité
+    UL->>CB_A: Règlement PvP terminé<br/>(les deux jambes définitives ou les deux annulées)
+    UL->>CB_B: Règlement PvP terminé
+```
+
+Le règlement est atomique par construction : les deux jambes valident ou les deux annulent. Le caractère définitif du règlement sur la jambe en MNBC de gros rend le transfert de dépôt tokenisé de banque commerciale effectif sans risque de correspondant. Le registre unifié est le plan de coordination, pas un système de paiement à part entière — la banque centrale émet toujours l'actif de règlement et la banque commerciale enregistre toujours le passif de dépôt.
 
 ## Le nouveau produit de paiement de gros
 

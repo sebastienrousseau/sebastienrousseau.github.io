@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Visuelles Register für den Großbetragszahlungsverkehr-Wandel 2026 — die Messaging-Migration weicht der programmierbaren Abwicklung über ISO 20022, tokenisierte Einlagen, Echtzeit-Rails und grenzüberschreitende Atomarität."
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp"
+banner: "https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -131,23 +131,66 @@ Die praktische Frage für eine Bank ist nicht, ob jede Domäne wichtig ist. Sie 
 | **Liquidität** | Innertagesliquidität, festsitzende Mittel und Abwicklungsfenster optimieren | Eingesparte Liquidität und Reduktion von Abwicklungsausfällen | Schnellere Liquiditätsabflüsse |
 | **Compliance** | AML-, Sanktions-, FATF- und Auditanforderungen in Zahlungsdaten einbetten | Straight-Through-Compliance und Erklärbarkeit | Reichere Daten ohne stärkere Kontrollen |
 
-## Aktuelle Signale, die zu verfolgen sind
+## Zentrale Signale im Großbetragszahlungsverkehr, abgebildet auf globale Prioritäten
 
-| Signal | Was es für Banken bedeutet | Quelle |
+Das Signal-Set 2026 ist keine Forschungsagenda. Es ist eine Lieferliste, an der ein Chief Payments Officer einer Bank bereits gemessen wird. Die Remediation findet an drei Stellen statt: im Nachrichten-Envelope, in der Rail-Orchestrierungsschicht und im Abwicklungsledger.
+
+| Signal | Referenz G20 / SWIFT / BIS | Technische Plattform-Umsetzung |
 |---|---|---|
-| **65 % der Zahlungsnachrichten enthalten unstrukturierte Adressen** | Der Remediationsaufwand bleibt erheblich | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 strukturierter Adress-Meilenstein") |
-| **Unstrukturierte Adressen werden nach November 2026 entfernt** | Die Reife der Zahlungsdaten wird dringlich | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 strukturierter Adress-Meilenstein") |
-| **Project Agorá in der Prototypphase** | Tokenisierte Abwicklung wird in einem Setting aus Zentral- und Geschäftsbanken erprobt | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **FSB-Umsetzungsphase** | Die Verbesserung des grenzüberschreitenden Zahlungsverkehrs bleibt globale politische Priorität | [FSB ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Umsetzungsphase für den grenzüberschreitenden Zahlungsverkehr") |
-| **Rahmen der Deutschen Bank zu digitalem Geld** | Stablecoins, tokenisierte Einlagen und CBDCs werden zu einem praktischen Architekturthema im Corporate Banking | [Deutsche Bank ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") |
+| **65 % der Zahlungsnachrichten enthalten weiterhin unstrukturierte Adressen** | [SWIFT SR 2026 — Meilenstein strukturierte Adressen, Nov. 2026 ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 strukturierter Adress-Meilenstein") | Schemavalidierung in der Zahlungsverkehrs-Middleware, bevor die Nachricht den SWIFTNet-Adapter erreicht; automatisiertes Address-Parsing am Ingress aus Firmenkundenkanälen und Korrespondenzbanken. |
+| **FSB-G20-Ziel: 75 % der grenzüberschreitenden Zahlungen bis 2027 innerhalb von 1 Stunde abgeschlossen** | [FSB-Fahrplan für grenzüberschreitenden Zahlungsverkehr, Umsetzungsphase 2026 ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Umsetzungsphase für den grenzüberschreitenden Zahlungsverkehr") | Echtzeit-FX-Konvertierungs-Gateways mit vorvereinbarten Liquiditätsfenstern; T+0-Bestätigungs-Hooks im Kundenportal; Rail-Routing-Engine, die jeden Korridor ausschließt, der die 1-Stunden-Vorgabe nicht einhalten kann. |
+| **FSB-G20-Ziel: durchschnittliche grenzüberschreitende Transaktionskosten unter 1 %, im Retail unter 3 %** | [FSB G20 quantitative Zielwerte ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Umsetzungsphase für den grenzüberschreitenden Zahlungsverkehr") | Kostenzuordnungs-Telemetrie je Korridor (FX-Spread, Korrespondenzbankgebühr, Lifting-Kosten); Margenpolitik-Register, das nicht-konforme Bepreisung vor dem Quote sichtbar macht. |
+| **BIS Project Agorá tritt in die Prototypphase mit sieben Zentralbanken + 41 Geschäftsbanken ein** | [BIS Project Agorá ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") | Integrationsspezifikation für den einheitlichen Ledger: Ledger-Node für tokenisierte Einlagen + Settlement-Plane für Wholesale-CBDC + KYC-/AML-Hooks; On-Chain-Liquiditätspools, dimensioniert auf den Korridor-Anteil der Bank. |
+| **Rahmen der Deutschen Bank zu „digitalem Geld" verfestigt sich in der Kundenarchitektur** | [Deutsche Bank — Digital Money: stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") | Wallet-agnostische Settlement-API, die die Auswahl zwischen Stablecoin, tokenisierter Einlage und CBDC pro Zahlung abstrahiert; programmierbare Bedingungen, ausgewertet gegen das Policy-Register der Bank, nicht des Kunden. |
 
 ## Der Wendepunkt der Zahlungsdaten
 
 ISO 20022 hat sich von einem Nachrichtenformatprojekt zu einem Datenqualitäts-Betriebsmodell weiterentwickelt. Sind Begünstigten-, Auftraggeber-, Empfänger-, Agent-, Ort-, Land-, Verwendungszweck- und Parteidaten schwach, erlebt die Bank Rejects, Reparaturen, Reibung bei Sanktionsprüfungen, Kundenfrust und schwache Analytik. Der SWIFT-Standard CBPR+ und der Übergang von SWIFT MT zu MX in der pacs.008 sind dabei nicht abstrakte Formate, sondern die operativen Tatsachen, an denen sich das Reparatur- und Untersuchungsaufkommen 2026 bemisst.
 
+**SR 2026 macht daraus einen harten Vertrag, keine Empfehlung.** Der SWIFT Standards Release 2026 (November 2026) erzwingt die Regel zur strukturierten Adresse auf Netzwerkebene — Nachrichten, deren `<PstlAdr>`-Element kein `<TwnNm>` und `<Ctry>` führt, werden vom Validierungs-Stack von SWIFTNet beim Empfang abgelehnt und nicht zur Reparatur markiert. Die Reparatur-Warteschlange ist nicht länger eine Backoffice-Kostenstelle, sondern wird zum Abwicklungsausfall mit kundensichtbarer Verzögerung. Operations-Teams, die SR 2026 als „strengere Leitlinie" behandeln, arbeiten aus dem falschen Runbook.
+
+### Konformität strukturierter Zahlungsdaten nach ISO 20022
+
+Die Remediationsoberfläche ist eng und klar definiert. Die unten genannten XML-Elemente sind die Stellen, an denen der SWIFTNet-Validierungs-Stack im November 2026 Nachrichten tatsächlich ablehnt; alles andere ist nachgelagerte Konsequenz.
+
+| Datenelement | ISO-20022-XML-Tag | SWIFT-Anforderung November 2026 | Technische Remediationsstrategie |
+|---|---|---|---|
+| **Strukturierte Adresse** | `<PstlAdr>` mit `<TwnNm>` + `<Ctry>` | Pflicht. Unstrukturierter `<AdrLine>`-Text löst beim empfangenden SWIFTNet-Adapter eine Netzwerkablehnung aus. | Automatisiertes Address-Parsing bei der Zahlungsinitiierung; Umbau der Eingabemasken in den Firmenkundenkanälen; Backbook-Bereinigung jeder Gegenpartei vor der nächsten Belastung. |
+| **Legal Entity Identifier (LEI)** | `<Id>` unter `<OrgId>` | Stark empfohlen für die Verifikation nicht-individueller Finanzgegenparteien; in mehreren CBPR+-Korridoren Pflicht. | LEI-Lookup + GLEIF-Abgleich beim Firmenkunden-Onboarding; automatische Anreicherung für Backbook-Gegenparteien über Stammdaten-Services. |
+| **Verwendungszweck-Codes** | `<Purp>` mit `<Cd>` | Pflicht in mehreren regionalen Echtzeit-Korridoren (CBPR+, SEPA Inst, TIPS) für automatisiertes AML-/Sanktions-Screening. | Mapping bank-interner Altcodes auf die Standard-Liste ISO 20022 ExternalPurposeCode; Auswahl des Verwendungszwecks in der Firmenkanal-UI sichtbar machen; Default-Deny bei unbekannten Codes. |
+| **Ultimative Parteien** | `<UltmtDbtr>` / `<UltmtCdtr>` | Ultimativen Begünstigtenkontext offenlegen, um die FATF-Travel-Rule- und Sanktionsparameter der G20 zu erfüllen; für mehrere Payment-Type-Codes Pflicht. | End-to-End-Parteinamen aus Ledger-Unterkonten extrahieren; gegen den KYC-Graphen abgleichen; ultimative Partei auf jeder Bestätigung ausweisen. |
+| **Strukturierte Verwendungsinformation** | `<RmtInf><Strd>` mit `<RfrdDocInf>` | Erforderlich für rechenbare, rechnungsverknüpfte Firmenkundenzahlungen nach CBPR+ Phase 2. | Strukturierte Verwendungsinformation zum Quote-Zeitpunkt im Firmenkundenportal erfassen; Freitext-Fallback für hochvolumige Flüsse ablehnen. |
+
 ## Tokenisierte Einlagen und Wholesale-CBDC
 
 Tokenisierte Einlagen bewahren das Modell des Geschäftsbankgeldes, fügen aber Programmierbarkeit hinzu. Wholesale-Zentralbankgeld bewahrt die Abrechnungsendgültigkeit. Das interessante Designmuster ist die Kombination: Geschäftsbankgeld für Kundenbeziehungen und Kreditintermediation, Zentralbankgeld für die endgültige Abwicklung und das systemische Vertrauen.
+
+Project Agorá macht die Kombination konkret. Die Architektur unten ist das BIS-Referenzmuster für eine atomare, grenzüberschreitende Payment-versus-Payment-Abwicklung (PvP) unter Nutzung sowohl eines Geschäftsbank-Einlagenledgers als auch einer Wholesale-CBDC-Settlement-Plane, koordiniert über einen einheitlichen Ledger.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant CB_A as Geschäftsbank A<br/>(Zahlerseite)
+    participant UL as Einheitlicher Ledger<br/>(BIS-Agorá-Koordinationsplane)
+    participant CBNK as Zentralbank<br/>(Wholesale-CBDC-Emittentin)
+    participant CB_B as Geschäftsbank B<br/>(Zahlungsempfängerseite)
+
+    CB_A->>UL: Instruktion einreichen:<br/>tokenisierte Einlage X belasten,<br/>tokenisierte Einlage Y gutschreiben,<br/>Bedingung = Wholesale-CBDC-Leg
+    UL->>UL: ISO-20022-Envelope validieren,<br/>strukturierte Adresse, LEI,<br/>Verwendungszweck, AML/Sanktionen
+    UL->>CBNK: Wholesale-CBDC reservieren<br/>(Zentralbankreserven der Zahlerseite)
+    CBNK-->>UL: Reservierung bestätigt<br/>(atomarer Lock)
+    UL->>CB_A: Tokenisierte Einlage X sperren<br/>(Geschäftsbankgeld-Leg)
+    CB_A-->>UL: Einlagensperre bestätigt
+    UL->>UL: Beide Legs gesperrt →<br/>Auslöser für atomare Abwicklung
+    UL->>CBNK: Wholesale-CBDC abwickeln<br/>(Zahlerreserven → Empfängerreserven)
+    UL->>CB_B: Tokenisierte Einlage Y ausgeben<br/>(Geschäftsbankgeld-Leg)
+    CBNK-->>UL: CBDC-Abwicklung finalisiert
+    CB_B-->>UL: Einlage gutgeschrieben
+    UL->>CB_A: PvP-Abwicklung abgeschlossen<br/>(beide Legs final oder beide rollen zurück)
+    UL->>CB_B: PvP-Abwicklung abgeschlossen
+```
+
+Die Abwicklung ist konstruktionsbedingt atomar: beide Legs committen oder beide rollen zurück. Die Abrechnungsendgültigkeit auf dem Wholesale-CBDC-Leg macht den Transfer der tokenisierten Geschäftsbank-Einlage wirksam, ohne Korrespondenzbank-Risiko. Der einheitliche Ledger ist die Koordinationsplane, kein Zahlungssystem für sich — die Zentralbank emittiert weiterhin das Abrechnungsasset und die Geschäftsbank bucht weiterhin die Einlagenverbindlichkeit.
 
 ## Das neue Großbetrags-Zahlungsprodukt
 

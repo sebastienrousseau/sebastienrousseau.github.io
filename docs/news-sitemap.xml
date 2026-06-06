@@ -2,6 +2,342 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://sebastienrousseau.com/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — English edition</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time…</news:title>
+      <news:keywords>wholesale payments 2026, ISO 20022, tokenised deposits, Project Agora, cross border payments, real time payments, structured address data, payment data quality</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/fr/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Édition française</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>Index 2026 des paiements de gros : ISO 20022, dépôts tokenisés, rails temps…</news:title>
+      <news:keywords>paiements de gros 2026, ISO 20022, dépôts tokenisés, Project Agorá, paiements transfrontaliers, paiements temps réel, adresses structurées, qualité des données de paiement</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/ar/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>سيباستيان روسو — النسخة العربية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>مؤشر المدفوعات بالجملة في 2026: ISO 20022، والودائع المرمَّزة، والمسارات…</news:title>
+      <news:keywords>المدفوعات بالجملة 2026, ISO 20022, الودائع المرمَّزة, Project Agorá, المدفوعات عبر الحدود, المدفوعات الفورية, بيانات العناوين المُهيكَلة, جودة بيانات المدفوعات</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/bn/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — বাংলা সংস্করণ</news:name>
+        <news:language>bn</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>২০২৬-এ হোলসেল পেমেন্ট সূচক: ISO 20022, টোকেনাইজড আমানত, রিয়েল-টাইম রেল ও…</news:title>
+      <news:keywords>হোলসেল পেমেন্ট ২০২৬, ISO 20022, টোকেনাইজড আমানত, Project Agora, সীমান্ত-পার পেমেন্ট, রিয়েল-টাইম পেমেন্ট, স্ট্রাকচার্ড অ্যাড্রেস ডেটা, পেমেন্ট ডেটা গুণমান</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/cs/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — české vydání</news:name>
+        <news:language>cs</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>Index velkoobchodních plateb v roce 2026: ISO 20022, tokenizované vklady…</news:title>
+      <news:keywords>velkoobchodní platby 2026, ISO 20022, tokenizované vklady, Project Agorá, přeshraniční platby, okamžité platby, strukturovaná adresní data, kvalita platebních dat</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/de/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Deutsche Ausgabe</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>Der Großbetragszahlungsverkehr-Index 2026: ISO 20022, tokenisierte Einlagen…</news:title>
+      <news:keywords>Großbetragszahlungsverkehr 2026, ISO 20022, tokenisierte Einlagen, Project Agorá, grenzüberschreitender Zahlungsverkehr, Echtzeitzahlungen, strukturierte Adressdaten, Zahlungsdatenqualität, SWIFT, FedNow</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/es/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Edición en español</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>El Índice de Pagos Mayoristas en 2026: ISO 20022, Depósitos Tokenizados…</news:title>
+      <news:keywords>pagos mayoristas 2026, ISO 20022, depósitos tokenizados, Project Agorá, pagos transfronterizos, pagos en tiempo real, dirección estructurada, calidad de datos de pago</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/fil/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Filipino edition</news:name>
+        <news:language>fil</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>Ang Wholesale Payments Index sa 2026: ISO 20022, Tokenised Deposits, Real-Time…</news:title>
+      <news:keywords>wholesale payments 2026, ISO 20022, tokenised deposits, Project Agora, cross border payments, real time payments, structured address data, kalidad ng payment data</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/ha/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Bugun Hausa</news:name>
+        <news:language>ha</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>Index na Biyan Kuɗi na Wholesale a 2026: ISO 20022, Tokenised Deposits…</news:title>
+      <news:keywords>biyan kuɗi na wholesale 2026, ISO 20022, tokenised deposits, Project Agora, biyan kuɗi na cross-border, biyan kuɗi na ainihin-lokaci, bayanan structured address, ingancin bayanan biyan kuɗi</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/he/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — מהדורה עברית</news:name>
+        <news:language>he</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>מדד תשלומי הסיטונאות ב-2026: ISO 20022, פיקדונות מתואדים, מסילות בזמן-אמת…</news:title>
+      <news:keywords>תשלומי סיטונאות 2026, ISO 20022, פיקדונות מתואדים, Project Agorá, תשלומים חוצי גבולות, תשלומים בזמן אמת, נתוני כתובת מובנים, איכות נתוני תשלום</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/hi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — हिन्दी संस्करण</news:name>
+        <news:language>hi</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>2026 में थोक भुगतान सूचकांक: ISO 20022, टोकनयुक्त जमा, रियल-टाइम रेल्स और सीमा…</news:title>
+      <news:keywords>थोक भुगतान 2026, ISO 20022, टोकनयुक्त जमा, Project Agorá, सीमा पार भुगतान, रियल-टाइम भुगतान, संरचित पता डेटा, भुगतान डेटा गुणवत्ता</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/id/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — edisi Bahasa Indonesia</news:name>
+        <news:language>id</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>Indeks Pembayaran Grosir 2026: ISO 20022, Simpanan Tertokenisasi, Rel…</news:title>
+      <news:keywords>pembayaran grosir 2026, ISO 20022, simpanan tertokenisasi, Project Agora, pembayaran lintas batas, pembayaran real-time, data alamat terstruktur, kualitas data pembayaran</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/it/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Edizione italiana</news:name>
+        <news:language>it</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>L&apos;indice dei pagamenti all&apos;ingrosso nel 2026: ISO 20022, depositi…</news:title>
+      <news:keywords>pagamenti all&apos;ingrosso 2026, ISO 20022, depositi tokenizzati, Project Agorá, pagamenti transfrontalieri, pagamenti real-time, indirizzo strutturato, qualità dei dati di pagamento</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/ja/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — 日本語版</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>2026 年ホールセール決済指数:ISO 20022、トークン化預金、リアルタイムレール、国境を越えた決済</news:title>
+      <news:keywords>ホールセール決済 2026, ISO 20022, トークン化預金, Project Agorá, 国境を越えた決済, リアルタイム決済, 構造化住所データ, 決済データ品質</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/ko/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — 한국어판</news:name>
+        <news:language>ko</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>2026 거액 결제 지수: ISO 20022, 토큰화 예금, 실시간 레일, 국경 간 결제</news:title>
+      <news:keywords>거액 결제 2026, ISO 20022, 토큰화 예금, Project Agorá, 국경 간 결제, 실시간 결제, 구조화 주소 데이터, 결제 데이터 품질</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/nl/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Nederlandse editie</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>De Wholesale Payments Index in 2026: ISO 20022, getokeniseerde…</news:title>
+      <news:keywords>grootschalig betalingsverkeer 2026, ISO 20022, getokeniseerde deposito&apos;s, Project Agorá, grensoverschrijdende betalingen, real-time betalingen, gestructureerd adres, datakwaliteit betalingen</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/pl/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Wydanie polskie</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>Indeks płatności hurtowych w 2026: ISO 20022, depozyty tokenizowane, szyny…</news:title>
+      <news:keywords>płatności hurtowe 2026, ISO 20022, depozyty tokenizowane, Project Agorá, płatności transgraniczne, płatności czasu rzeczywistego, strukturyzowane dane adresowe, jakość danych płatniczych</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/pt-br/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Edição em português</news:name>
+        <news:language>pt-br</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>O Índice de Pagamentos de Atacado em 2026: ISO 20022, Depósitos Tokenizados…</news:title>
+      <news:keywords>pagamentos de atacado 2026, ISO 20022, depósitos tokenizados, Project Agorá, pagamentos transfronteiriços, pagamentos em tempo real, dados de endereço estruturado, qualidade de dados de pagamento</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/ro/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Ediția în limba română</news:name>
+        <news:language>ro</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>Indexul Plăților En Gros în 2026: ISO 20022, depozite tokenizate, rețele în…</news:title>
+      <news:keywords>plăți en gros 2026, ISO 20022, depozite tokenizate, Project Agora, plăți transfrontaliere, plăți în timp real, date structurate de adresă, calitatea datelor de plăți</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/ru/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Русское издание</news:name>
+        <news:language>ru</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>Индекс оптовых платежей в 2026 году: ISO 20022, токенизированные депозиты…</news:title>
+      <news:keywords>оптовые платежи 2026, ISO 20022, токенизированные депозиты, проект Agorá, трансграничные платежи, платежи реального времени, структурированные адресные данные, качество платёжных данных</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/sv/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — svensk utgåva</news:name>
+        <news:language>sv</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>Indexet för grossistbetalningar 2026: ISO 20022, tokeniserade insättningar…</news:title>
+      <news:keywords>grossistbetalningar 2026, ISO 20022, tokeniserade insättningar, Project Agora, gränsöverskridande betalningar, realtidsbetalningar, strukturerade adressdata, datakvalitet i betalningar</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/th/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — ฉบับภาษาไทย</news:name>
+        <news:language>th</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>ดัชนีการชำระเงินขายส่งในปี 2026: ISO 20022 เงินฝากแบบโทเคน รางเรียลไทม์…</news:title>
+      <news:keywords>การชำระเงินขายส่ง 2026, ISO 20022, เงินฝากแบบโทเคน, Project Agorá, การชำระเงินข้ามพรมแดน, การชำระเงินเรียลไทม์, ข้อมูลที่อยู่แบบมีโครงสร้าง, คุณภาพข้อมูลการชำระเงิน</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/tr/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Türkçe baskı</news:name>
+        <news:language>tr</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>2026&apos;da Toptan Ödemeler Endeksi: ISO 20022, Tokenleştirilmiş Mevduat…</news:title>
+      <news:keywords>toptan ödemeler 2026, ISO 20022, tokenleştirilmiş mevduat, Proje Agorá, sınır ötesi ödemeler, gerçek zamanlı ödemeler, yapılandırılmış adres verisi, ödeme veri kalitesi</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/uk/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — українське видання</news:name>
+        <news:language>uk</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>Індекс оптових платежів у 2026: ISO 20022, токенізовані депозити, рейки…</news:title>
+      <news:keywords>оптові платежі 2026, ISO 20022, токенізовані депозити, Project Agorá, транскордонні платежі, платежі реального часу, дані структурованих адрес, якість платіжних даних</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/vi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Ấn bản tiếng Việt</news:name>
+        <news:language>vi</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>Chỉ số Thanh toán Bán buôn 2026: ISO 20022, Tiền gửi Được Mã hóa, Đường ray…</news:title>
+      <news:keywords>thanh toán bán buôn 2026, ISO 20022, tiền gửi được mã hóa, Project Agorá, thanh toán xuyên biên giới, thanh toán thời gian thực, dữ liệu địa chỉ có cấu trúc, chất lượng dữ liệu thanh toán</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/yo/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Ẹ̀dà Yorùbá</news:name>
+        <news:language>yo</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>Àkójọ-Ìwọ̀n Ìsanwó Ńlá ní 2026: ISO 20022, Tokenised Deposits, Ọ̀nà…</news:title>
+      <news:keywords>ìsanwó ńlá 2026, ISO 20022, tokenised deposits, Project Agora, ìsanwó kọjá-ààlà, ìsanwó àkókò-gangan, data àdírẹ́sì ìṣèlú, ìpé data ìsanwó</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/zh-hans/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — 简体中文版</news:name>
+        <news:language>zh-hans</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>2026 大额支付指数:ISO 20022、代币化存款、实时通道与跨境结算</news:title>
+      <news:keywords>2026 大额支付, ISO 20022, 代币化存款, Project Agorá, 跨境支付, 实时支付, 结构化地址数据, 支付数据质量</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/zh-hant/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — 繁體中文版</news:name>
+        <news:language>zh-hant</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+      <news:title>2026 大額支付指標:ISO 20022、代幣化存款、即時軌道與跨境結算</news:title>
+      <news:keywords>2026 大額支付, ISO 20022, 代幣化存款, Project Agorá, 跨境支付, 即時支付, 結構化地址資料, 支付資料品質</news:keywords>
+    </news:news>
+  </url>
+  <url>
     <loc>https://sebastienrousseau.com/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
     <news:news>
       <news:publication>
@@ -335,342 +671,6 @@
       <news:publication_date>2026-06-05T06:06:06+00:00</news:publication_date>
       <news:title>2026 雲端原生銀行指數:DORA、平台工程、主權雲與營運韌性</news:title>
       <news:keywords>雲端原生銀行 2026, DORA 銀行, 雲端集中風險, 銀行平台工程, ICT 第三方風險, 雲端退場策略, 主權雲, FIPS 203, ML-KEM, ISO 20022</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — English edition</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD…</news:title>
-      <news:keywords>quantum safe banking 2026, post quantum cryptography banks, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto agility, QKD banking</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/fr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — Édition française</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>Index 2026 de la banque quantum-safe : cryptographie post-quantique, QKD…</news:title>
-      <news:keywords>banque quantum-safe 2026, cryptographie post-quantique banques, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto-agilité, QKD banque, harvest-now-decrypt-later, CBOM</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/ar/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>سيباستيان روسو — النسخة العربية</news:name>
-        <news:language>ar</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>مؤشر المصرفية الآمنة كموميًا في 2026: تشفير ما بعد الكم، QKD، المرونة…</news:title>
-      <news:keywords>المصرفية الآمنة كموميًا 2026, تشفير ما بعد الكم في البنوك, FIPS 203, ML-KEM, ML-DSA, SLH-DSA, المرونة التشفيرية, QKD مصرفي</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — বাংলা সংস্করণ</news:name>
-        <news:language>bn</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>২০২৬ সালে কোয়ান্টাম-সেফ ব্যাংকিং ইনডেক্স: পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি…</news:title>
-      <news:keywords>কোয়ান্টাম সেফ ব্যাংকিং ২০২৬, ব্যাংকের জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, ক্রিপ্টো এজিলিটি, QKD ব্যাংকিং</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/cs/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — české vydání</news:name>
-        <news:language>cs</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>Index kvantově bezpečného bankovnictví v roce 2026: postkvantová kryptografie…</news:title>
-      <news:keywords>kvantově bezpečné bankovnictví 2026, postkvantová kryptografie banky, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, kryptografická agilita, QKD bankovnictví</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/de/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — Deutsche Ausgabe</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>Der Quantum-Safe-Banking-Index 2026: PQC, QKD, Krypto-Agilität</news:title>
-      <news:keywords>Quantum-Safe-Banking 2026, Post-Quanten-Kryptografie Banken, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, Krypto-Agilität, QKD Banken</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/es/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — Edición en español</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>El Índice de Banca Quantum-Safe en 2026: Criptografía Poscuántica, QKD…</news:title>
-      <news:keywords>banca quantum-safe 2026, criptografía poscuántica bancos, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, criptoagilidad, QKD banca</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/fil/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — Filipino edition</news:name>
-        <news:language>fil</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>Ang Quantum-Safe Banking Index sa 2026: PQC, QKD, Crypto-Agility, at HNDL Risk</news:title>
-      <news:keywords>quantum safe banking 2026, post-quantum cryptography sa bangko, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto-agility, QKD banking</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/ha/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — Bugun Hausa</news:name>
-        <news:language>ha</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>Quantum-Safe Banking Index a 2026: Cryptography na Post-Quantum, QKD…</news:title>
-      <news:keywords>quantum safe banking 2026, post quantum cryptography bankuna, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto agility, QKD banki, harvest-now-decrypt-later</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/he/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — מהדורה עברית</news:name>
-        <news:language>he</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>מדד הבנקאות הקוונטית-בטוחה ב-2026: קריפטוגרפיה פוסט-קוונטית, QKD, גמישות…</news:title>
-      <news:keywords>בנקאות קוונטית-בטוחה 2026, קריפטוגרפיה פוסט-קוונטית לבנקים, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, גמישות קריפטוגרפית, QKD בבנקאות</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/hi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — हिन्दी संस्करण</news:name>
-        <news:language>hi</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>2026 में क्वांटम-सेफ बैंकिंग सूचकांक: पोस्ट-क्वांटम क्रिप्टोग्राफी, QKD…</news:title>
-      <news:keywords>क्वांटम-सेफ बैंकिंग 2026, बैंकों के लिए पोस्ट-क्वांटम क्रिप्टोग्राफी, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, क्रिप्टो-एजिलिटी, QKD बैंकिंग</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/id/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — edisi Bahasa Indonesia</news:name>
-        <news:language>id</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>Indeks Perbankan Aman-Kuantum 2026: PQC, QKD, Crypto-Agility, dan Risiko…</news:title>
-      <news:keywords>perbankan aman kuantum 2026, kriptografi pasca-kuantum bank, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto-agility, QKD perbankan</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/it/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — Edizione italiana</news:name>
-        <news:language>it</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>L&apos;Indice Quantum-Safe Banking nel 2026: Crittografia Post-Quantistica…</news:title>
-      <news:keywords>banca quantum-safe 2026, crittografia post-quantistica banche, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto-agility, QKD banche</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/ja/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — 日本語版</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>2026 年の量子セーフ銀行インデックス: ポスト量子暗号、QKD、クリプト・アジリティ、HNDL リスク</news:title>
-      <news:keywords>量子セーフ銀行 2026, ポスト量子暗号 銀行, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, クリプト・アジリティ, QKD 銀行</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/ko/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — 한국어판</news:name>
-        <news:language>ko</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>2026 양자내성 뱅킹 지수: 양자내성 암호, QKD, 암호 민첩성, 수집 후 복호화 위험</news:title>
-      <news:keywords>2026 양자내성 뱅킹, 은행 양자내성 암호, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, 암호 민첩성, QKD 뱅킹</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/nl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — Nederlandse editie</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>De Quantum-Safe Banking Index in 2026: post-kwantumcryptografie, QKD…</news:title>
-      <news:keywords>quantum-safe banking 2026, post-kwantumcryptografie banken, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto-wendbaarheid, QKD bankwezen</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/pl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — Wydanie polskie</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>Quantum-Safe Banking Index w 2026 r.: kryptografia postkwantowa, QKD…</news:title>
-      <news:keywords>quantum-safe banking 2026, kryptografia postkwantowa banki, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, krypto-zwinność, QKD bankowość</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/pt-br/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — Edição em português</news:name>
-        <news:language>pt-br</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>O Índice de Banca Quantum-Safe em 2026: Criptografia Pós-Quântica, QKD…</news:title>
-      <news:keywords>banca quantum-safe 2026, criptografia pós-quântica bancos, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto-agility, QKD bancário</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/ro/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — Ediția în limba română</news:name>
-        <news:language>ro</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>Indexul Băncii Sigure Cuantic în 2026: criptografie post-cuantică, QKD…</news:title>
-      <news:keywords>bănci sigure cuantic 2026, criptografie post-cuantică bănci, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, agilitate criptografică, QKD bancar</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/ru/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — Русское издание</news:name>
-        <news:language>ru</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>Индекс квантово-устойчивого банкинга в 2026 году: постквантовая криптография…</news:title>
-      <news:keywords>квантово-устойчивый банкинг 2026, постквантовая криптография банки, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, крипто-гибкость, QKD в банках</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — svensk utgåva</news:name>
-        <news:language>sv</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>Quantum-Safe Banking Index 2026: Postkvantkryptografi, QKD, kryptoagilitet och…</news:title>
-      <news:keywords>kvantsäker bank 2026, postkvantkryptografi banker, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, kryptoagilitet, QKD bank</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/th/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — ฉบับภาษาไทย</news:name>
-        <news:language>th</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>ดัชนีธนาคารปลอดภัยจากควอนตัมในปี 2026: การเข้ารหัสหลังควอนตัม QKD…</news:title>
-      <news:keywords>ธนาคารปลอดภัยจากควอนตัม 2026, การเข้ารหัสหลังควอนตัมสำหรับธนาคาร, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, ความคล่องตัวเข้ารหัส, QKD ในธนาคาร</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/tr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — Türkçe baskı</news:name>
-        <news:language>tr</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>2026 Kuantum-Güvenli Bankacılık İndeksi: Kuantum-Sonrası Kriptografi, QKD…</news:title>
-      <news:keywords>2026 kuantum güvenli bankacılık, bankalar için kuantum sonrası kriptografi, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, kripto çeviklik, QKD bankacılık</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/uk/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — українське видання</news:name>
-        <news:language>uk</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>Індекс квантово-стійкого банкінгу 2026: постквантова криптографія, QKD…</news:title>
-      <news:keywords>квантово-стійкий банкінг 2026, постквантова криптографія банки, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, крипто-гнучкість, QKD банкінг</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/vi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — Ấn bản tiếng Việt</news:name>
-        <news:language>vi</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>Chỉ số Ngân hàng An toàn Lượng tử 2026: Mật mã Hậu Lượng tử, QKD, Linh hoạt…</news:title>
-      <news:keywords>ngân hàng an toàn lượng tử 2026, mật mã hậu lượng tử ngân hàng, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, linh hoạt mật mã, QKD ngân hàng</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/yo/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — Ẹ̀dà Yorùbá</news:name>
-        <news:language>yo</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>Atọ́ka Bánkì Aláàbò-Quantum ní 2026: Cryptography Lẹ́yìn-Quantum, QKD…</news:title>
-      <news:keywords>bánkì aláàbò quantum 2026, cryptography lẹ́yìn-quantum àwọn bánkì, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto agility, bánkì QKD</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/zh-hans/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — 简体中文版</news:name>
-        <news:language>zh-hans</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>2026 年量子安全银行业指数:后量子密码学、QKD、密码敏捷性与先收集后解密风险</news:title>
-      <news:keywords>量子安全银行 2026, 银行后量子密码学, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, 密码敏捷性, QKD 银行</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://sebastienrousseau.com/zh-hant/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Sebastien Rousseau — 繁體中文版</news:name>
-        <news:language>zh-hant</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
-      <news:title>2026 年量子安全銀行業指標:後量子密碼、QKD、密碼敏捷性與「先擷取、後解密」風險</news:title>
-      <news:keywords>2026 量子安全銀行業, 銀行後量子密碼, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, 密碼敏捷性, QKD 銀行業, ISO 20022, DORA</news:keywords>
     </news:news>
   </url>
 </urlset>

@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Visuellt register för skiftet i grossistbetalningar 2026 — meddelandemigration som ger vika för programmerbar avveckling över ISO 20022, tokeniserade insättningar, realtidsspår och gränsöverskridande atomicitet."
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp"
+banner: "https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -131,23 +131,66 @@ Den praktiska frågan för en bank är inte om varje domän är viktig. Det är 
 | **Likviditet** | Optimera intradagslikviditet, fastlåst kontanthantering och avvecklingsfönster | Sparad likviditet och minskning av avvecklingsmisslyckanden | Snabbare dränering av likviditet |
 | **Compliance** | Bädda in penningtvätt, sanktioner, FATF och revisionskrav i betalningsdata | Straight-through-compliance och förklarbarhet | Rikare data utan starkare kontroller |
 
-## Aktuella signaler att följa
+## Centrala signaler för grossistbetalningar kopplade till globala prioriteringar
 
-| Signal | Vad det betyder för banker | Källa |
+Signaluppsättningen för 2026 är inte en forskningsagenda. Det är en leveranscheckslista som en banks Chief Payments Officer redan mäts mot. Saneringsarbetet syns på tre ställen: meddelandekuvertet, spårorkestreringslagret och avvecklingsbokföringen.
+
+| Signal | Referens till G20 / SWIFT / BIS | Teknisk plattformsimplementation |
 |---|---|---|
-| **65 % av betalningsmeddelandena innehåller ostrukturerade adresser** | Saneringsutmaningen är fortfarande stor | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **Ostrukturerade adresser tas bort efter november 2026** | Beredskap för betalningsdata blir akut | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **Project Agorá i prototypfas** | Tokeniserad avveckling testas i en miljö med centralbank och affärsbank | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **FSB i genomförandefas** | Förbättring av gränsöverskridande betalningar förblir en global policyprioritet | [FSB ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Cross-border payments implementation phase") |
-| **Deutsche Banks ramverk för digitala pengar** | Stablecoins, tokeniserade insättningar och CBDC:er blir ett praktiskt arkitekturtema för företagsbank | [Deutsche Bank ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") |
+| **65 % av betalningsmeddelandena innehåller fortfarande ostrukturerade adresser** | [SWIFT SR 2026 — milstolpe för strukturerade adresser, nov 2026 ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") | Schemavalidering i betalningsmiddleware innan meddelandet når SWIFTNet-adaptern; automatiserad adresstolkning vid företagskanalens och korrespondentbankens ingång. |
+| **FSB G20-mål: 75 % av gränsöverskridande betalningar slutförda inom 1 timme till 2027** | [FSB:s färdplan för gränsöverskridande betalningar, genomförandefas 2026 ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | Realtidsgateways för FX-konvertering med förhandsavtalade likviditetsfönster; T+0-bekräftelsekrokar in i kundportalen; spårdirigeringsmotor som exkluderar varje korridor som inte klarar 1-timmesfönstret. |
+| **FSB G20-mål: snittkostnad för gränsöverskridande transaktion under 1 %, retail under 3 %** | [FSB:s kvantitativa G20-mål ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | Kostnadsattributionstelemetri på varje korridor (FX-spread, korrespondentavgift, lifting cost); marginalpolicyregister som synliggör icke-konform prissättning före offert. |
+| **BIS Project Agorá går in i prototypfas över sju centralbanker + 41 affärsbanker** | [BIS Project Agorá ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") | Integrationsspecifikation för enhetlig huvudbok: nod för tokeniserad insättningsbokföring + avvecklingsplan för grossist-CBDC + KYC/AML-krokar; on-chain-likviditetspooler dimensionerade efter bankens korridorandel. |
+| **Deutsche Banks ramverk för "digitala pengar" kristalliseras i kundarkitektur** | [Deutsche Bank — Digital Money: stablecoins, tokeniserade insättningar och CBDC:er ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") | Plånboksagnostiskt avvecklings-API som abstraherar val av stablecoin / tokeniserad insättning / CBDC per betalning; programmerbara villkor utvärderas mot bankens policyregister, inte kundens. |
 
 ## Inflexionspunkten för betalningsdata
 
 ISO 20022 har gått från ett meddelandeformatsprojekt till en datakvalitetsdriven driftsmodell. Om data om förmånstagare, gäldenär, borgenär, agent, ort, land, syfte och part är svaga kommer banken att möta avvisningar, reparationer, sanktionsfriktion, kundfrustration och svaga analyser.
 
+**SR 2026 gör detta till ett hårt kontrakt, inte ett rådgivande dokument.** SWIFT Standards Release 2026 (november 2026) tvingar fram regeln om strukturerad adress på nätverkslagret — meddelanden vars `<PstlAdr>`-element inte bär `<TwnNm>` och `<Ctry>` avvisas vid mottagning av SWIFTNet:s valideringsstack, inte flaggas för reparation. Reparationskön upphör att vara en back-office-kostnadspost och blir en avvecklingsmisslyckandehändelse med kundsynlig fördröjning. Driftsteam som har behandlat SR 2026 som "skärpt vägledning" arbetar från fel runbook.
+
+### Efterlevnad av strukturerad betalningsdata enligt ISO 20022
+
+Saneringsytan är smal och väl definierad. XML-elementen nedan är där SWIFTNet:s valideringsstack i november 2026 faktiskt avvisar meddelanden; allt annat är nedströmskonsekvens.
+
+| Dataelement | ISO 20022 XML-tagg | SWIFT-krav november 2026 | Teknisk saneringsstrategi |
+|---|---|---|---|
+| **Strukturerad adress** | `<PstlAdr>` innehållande `<TwnNm>` + `<Ctry>` | Obligatoriskt. Ostrukturerad `<AdrLine>`-text utlöser nätverksavvisning vid mottagande SWIFTNet-adapter. | Automatiserad adresstolkning vid betalningsinitiering; omskrivning av formulär i företagskanalen; saneringen av befintligt bestånd på varje motpart före nästa debet. |
+| **Legal Entity Identifier (LEI)** | `<Id>` under `<OrgId>` | Starkt rekommenderat för verifiering av icke-individuella finansiella motparter; obligatoriskt i flera CBPR+-korridorer. | LEI-uppslagning + GLEIF-korskontroll vid företagsonboarding; automatisk berikning för motparter i befintligt bestånd via referensdatatjänster. |
+| **Koder för betalningssyfte** | `<Purp>` innehållande `<Cd>` | Obligatoriskt i flera regionala realtidskorridorer (CBPR+, SEPA Inst, TIPS) för automatiserad AML-/sanktionsscreening. | Mappa äldre bankinterna transaktionskoder till standardlistan ISO 20022 ExternalPurposeCode; exponera syftesval i företagskanalens gränssnitt; nekande som standard vid okända koder. |
+| **Yttersta parter** | `<UltmtDbtr>` / `<UltmtCdtr>` | Exponera kontext för yttersta förmånstagare för att uppfylla G20:s FATF travel rule + sanktionsparametrar; obligatoriskt för flera betalningstypskoder. | Extrahera namn på parter från ände till ände ur huvudbokens underkonton; stäm av mot KYC-grafen; synliggör yttersta part på varje bekräftelse. |
+| **Strukturerad remitteringsinformation** | `<RmtInf><Strd>` med `<RfrdDocInf>` | Krävs för avstämningsbara fakturalänkade företagsbetalningar under CBPR+ fas 2. | Fånga strukturerad remittering vid offerttillfället i företagsportalen; avvisa fritextreserv för flöden med högt värde. |
+
 ## Tokeniserade insättningar och grossist-CBDC
 
 Tokeniserade insättningar bevarar affärsbankens pengamodell samtidigt som de lägger till programmerbarhet. Grossistcentralbankspengar bevarar avvecklingens finalitet. Det intressanta designmönstret är kombinationen: affärsbankspengar för kundrelationer och kreditförmedling, centralbankspengar för slutlig avveckling och systemförtroende.
+
+Project Agorá gör kombinationen konkret. Arkitekturen nedan är BIS referensmönster för en atomär gränsöverskridande avveckling enligt payment-versus-payment (PvP) som använder både en huvudbok för affärsbanksinsättningar och en avvecklingsplan för grossist-CBDC, samordnad via en enhetlig huvudbok.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant CB_A as Affärsbank A<br/>(betalarsida)
+    participant UL as Enhetlig huvudbok<br/>(BIS Agorá samordningsplan)
+    participant CBNK as Centralbank<br/>(emittent av grossist-CBDC)
+    participant CB_B as Affärsbank B<br/>(mottagarsida)
+
+    CB_A->>UL: Skicka instruktion:<br/>debitera tokeniserad insättning X,<br/>kreditera tokeniserad insättning Y,<br/>villkor = grossist-CBDC-ben
+    UL->>UL: Validera ISO 20022-kuvert,<br/>strukturerad adress, LEI,<br/>syfteskod, AML/sanktioner
+    UL->>CBNK: Reservera grossist-CBDC<br/>(centralbanksreserver på betalarsidan)
+    CBNK-->>UL: Reservation bekräftad<br/>(atomärt lås)
+    UL->>CB_A: Lås tokeniserad insättning X<br/>(affärsbankspengaben)
+    CB_A-->>UL: Insättningslås bekräftat
+    UL->>UL: Båda benen låsta →<br/>utlös atomär avveckling
+    UL->>CBNK: Avveckla grossist-CBDC<br/>(betalarreserver → mottagarreserver)
+    UL->>CB_B: Emittera tokeniserad insättning Y<br/>(affärsbankspengaben)
+    CBNK-->>UL: CBDC-avveckling slutförd
+    CB_B-->>UL: Insättning krediterad
+    UL->>CB_A: PvP-avveckling klar<br/>(båda benen slutgiltiga eller båda rullas tillbaka)
+    UL->>CB_B: PvP-avveckling klar
+```
+
+Avvecklingen är atomär till sin konstruktion: båda benen commit:as eller båda rullas tillbaka. Avvecklingsfinalitet på grossist-CBDC-benet gör överföringen av tokeniserade insättningar mellan affärsbanker effektiv utan korrespondentrisk. Den enhetliga huvudboken är samordningsplanen, inte ett betalsystem i sig — centralbanken emitterar fortfarande avvecklingstillgången och affärsbanken bokför fortfarande insättningsskulden.
 
 ## Den nya grossistbetalningsprodukten
 

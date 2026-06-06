@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Bảng đăng ký trực quan cho dịch chuyển thanh toán bán buôn 2026 — di trú bản tin nhường chỗ cho quyết toán lập trình được qua ISO 20022, tiền gửi được mã hóa, đường ray thời gian thực và tính nguyên tử xuyên biên giới."
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp"
+banner: "https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -131,23 +131,66 @@ Câu hỏi thực tế cho một ngân hàng không phải là từng mảng có
 | **Thanh khoản** | Tối ưu thanh khoản trong ngày, tiền mặt bị kẹt và cửa sổ quyết toán | Thanh khoản tiết kiệm được và giảm thất bại quyết toán | Rút thanh khoản nhanh hơn |
 | **Tuân thủ** | Nhúng yêu cầu AML, trừng phạt, FATF và nhật ký kiểm toán vào dữ liệu thanh toán | Tuân thủ thẳng-qua và khả năng giải thích | Dữ liệu giàu hơn nhưng kiểm soát không mạnh hơn |
 
-## Tín hiệu Hiện tại Cần Theo dõi
+## Tín hiệu Thanh toán Bán buôn Chính Đối chiếu với Ưu tiên Toàn cầu
 
-| Tín hiệu | Ý nghĩa với Ngân hàng | Nguồn |
+Tập tín hiệu năm 2026 không phải là chương trình nghiên cứu. Đó là danh sách kiểm tra phân phối mà Giám đốc Thanh toán của một ngân hàng đã đang bị đo trên đó. Công việc khắc phục xuất hiện ở ba nơi: phong bì bản tin, lớp điều phối đường ray, và sổ cái quyết toán.
+
+| Tín hiệu | Tham chiếu G20 / SWIFT / BIS | Triển khai trên Nền tảng Kỹ thuật |
 |---|---|---|
-| **65% bản tin thanh toán chứa địa chỉ phi cấu trúc** | Khối lượng khắc phục còn lớn | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "Cột mốc địa chỉ có cấu trúc ISO 20022 tháng 11/2026") |
-| **Địa chỉ phi cấu trúc bị loại bỏ sau tháng 11/2026** | Mức sẵn sàng dữ liệu thanh toán trở nên cấp bách | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "Cột mốc địa chỉ có cấu trúc ISO 20022 tháng 11/2026") |
-| **Project Agorá pha nguyên mẫu** | Quyết toán được mã hóa đang được thử nghiệm trong môi trường ngân hàng trung ương và ngân hàng thương mại | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Pha triển khai của FSB** | Cải thiện thanh toán xuyên biên giới vẫn là ưu tiên chính sách toàn cầu | [FSB ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Pha triển khai thanh toán xuyên biên giới") |
-| **Khung tiền số của Deutsche Bank** | Stablecoin, tiền gửi được mã hóa và CBDC trở thành chủ đề kiến trúc ngân hàng doanh nghiệp thực tế | [Deutsche Bank ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Tiền số: stablecoin, tiền gửi được mã hóa và CBDC") |
+| **65% bản tin thanh toán vẫn chứa địa chỉ phi cấu trúc** | [SWIFT SR 2026 — cột mốc địa chỉ có cấu trúc, tháng 11/2026 ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "Cột mốc địa chỉ có cấu trúc ISO 20022 tháng 11/2026") | Xác thực schema trong middleware thanh toán trước khi bản tin chạm bộ chuyển đổi SWIFTNet; phân tích cú pháp địa chỉ tự động ở cổng vào kênh doanh nghiệp + ngân hàng đại lý. |
+| **Mục tiêu G20 của FSB: 75% thanh toán xuyên biên giới hoàn tất trong vòng 1 giờ vào năm 2027** | [Lộ trình thanh toán xuyên biên giới của FSB, pha triển khai 2026 ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Pha triển khai thanh toán xuyên biên giới của FSB") | Cổng chuyển đổi FX thời gian thực với cửa sổ thanh khoản đã thỏa thuận trước; hook xác nhận T+0 vào cổng khách hàng; động cơ định tuyến đường ray loại trừ mọi hành lang không đáp ứng phong bì 1 giờ. |
+| **Mục tiêu G20 của FSB: chi phí giao dịch xuyên biên giới trung bình dưới 1%, bán lẻ dưới 3%** | [Mục tiêu định lượng G20 của FSB ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Pha triển khai thanh toán xuyên biên giới của FSB") | Đo từ xa quy chiếu chi phí trên mọi hành lang (chênh lệch FX, phí đại lý, chi phí nâng); sổ đăng ký chính sách biên lợi nhuận làm nổi giá không tuân thủ trước khi báo giá. |
+| **BIS Project Agorá bước vào pha nguyên mẫu trên bảy ngân hàng trung ương + 41 ngân hàng thương mại** | [BIS Project Agorá ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") | Đặc tả tích hợp sổ cái thống nhất: nút sổ cái tiền gửi được mã hóa + mặt phẳng quyết toán CBDC bán buôn + hook KYC/AML; bể thanh khoản on-chain được điều chỉnh quy mô theo thị phần hành lang của ngân hàng. |
+| **Khung "tiền số" của Deutsche Bank kết tinh trong kiến trúc khách hàng** | [Deutsche Bank — Tiền số: stablecoin, tiền gửi được mã hóa và CBDC ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Tiền số: stablecoin, tiền gửi được mã hóa và CBDC") | API quyết toán không phụ thuộc ví, trừu tượng hóa lựa chọn stablecoin / tiền gửi được mã hóa / CBDC cho mỗi khoản thanh toán; điều kiện lập trình được đánh giá theo sổ đăng ký chính sách của ngân hàng, không phải của khách hàng. |
 
 ## Điểm Uốn của Dữ liệu Thanh toán
 
 ISO 20022 đã chuyển từ một dự án định dạng bản tin sang mô hình vận hành chất lượng dữ liệu. Nếu dữ liệu người thụ hưởng, người ghi nợ, người ghi có, tác nhân, thành phố, quốc gia, mục đích và bên đối tác yếu, ngân hàng sẽ gặp từ chối, sửa lỗi, ma sát trừng phạt, khách hàng bực bội và phân tích kém.
 
+**SR 2026 biến điều này thành một hợp đồng cứng, không phải khuyến nghị.** SWIFT Standards Release 2026 (tháng 11/2026) thực thi quy tắc địa chỉ có cấu trúc ở lớp mạng — các bản tin có phần tử `<PstlAdr>` không mang `<TwnNm>` và `<Ctry>` sẽ bị bộ xác thực SWIFTNet từ chối ngay khi nhận, chứ không phải gắn cờ để sửa. Hàng đợi sửa lỗi thôi không còn là một dòng chi phí hậu phòng mà trở thành một sự kiện thất bại quyết toán với độ trễ hiển hiện với khách hàng. Các đội vận hành đang coi SR 2026 là "hướng dẫn chặt hơn" đang làm việc theo sai sách vận hành.
+
+### Tuân thủ Dữ liệu Thanh toán Có Cấu trúc theo ISO 20022
+
+Bề mặt khắc phục hẹp và được định nghĩa rõ. Các phần tử XML dưới đây là nơi bộ xác thực SWIFTNet tháng 11/2026 thực sự từ chối bản tin; mọi thứ khác là hệ quả dây chuyền.
+
+| Phần tử Dữ liệu | Thẻ XML ISO 20022 | Yêu cầu SWIFT tháng 11/2026 | Chiến lược Khắc phục Kỹ thuật |
+|---|---|---|---|
+| **Địa chỉ Có Cấu trúc** | `<PstlAdr>` chứa `<TwnNm>` + `<Ctry>` | Bắt buộc. Văn bản `<AdrLine>` phi cấu trúc kích hoạt từ chối mạng ở bộ chuyển đổi SWIFTNet nhận. | Phân tích cú pháp địa chỉ tự động khi khởi tạo thanh toán; viết lại biểu mẫu kênh doanh nghiệp; làm sạch sổ cũ cho mọi đối tác trước lần ghi nợ tiếp theo. |
+| **Định danh Pháp nhân (LEI)** | `<Id>` dưới `<OrgId>` | Khuyến nghị mạnh để xác minh đối tác tài chính không phải cá nhân; bắt buộc trong một số hành lang CBPR+. | Tra cứu LEI + đối chiếu chéo GLEIF khi onboarding doanh nghiệp; làm giàu tự động cho đối tác sổ cũ qua dịch vụ dữ liệu tham chiếu. |
+| **Mã Mục đích Thanh toán** | `<Purp>` chứa `<Cd>` | Bắt buộc trong nhiều hành lang thời gian thực khu vực (CBPR+, SEPA Inst, TIPS) để rà quét AML / trừng phạt tự động. | Ánh xạ mã giao dịch nội bộ ngân hàng kế thừa sang danh sách ExternalPurposeCode chuẩn ISO 20022; bộc lộ lựa chọn mục đích trong giao diện kênh doanh nghiệp; mặc định từ chối với mã không xác định. |
+| **Bên Thụ hưởng Cuối cùng** | `<UltmtDbtr>` / `<UltmtCdtr>` | Bộc lộ bối cảnh người thụ hưởng cuối cùng để đáp ứng tham số quy tắc đi lại FATF G20 + trừng phạt; bắt buộc cho một số mã loại thanh toán. | Trích xuất tên bên đầu-cuối từ tài khoản con của sổ cái; đối chiếu với đồ thị KYC; làm nổi bên thụ hưởng cuối cùng trên mọi xác nhận. |
+| **Thông tin Chuyển nhượng (Có Cấu trúc)** | `<RmtInf><Strd>` với `<RfrdDocInf>` | Bắt buộc cho thanh toán doanh nghiệp liên kết hóa đơn có thể đối chiếu theo CBPR+ Pha 2. | Thu thập thông tin chuyển nhượng có cấu trúc tại thời điểm báo giá trong cổng doanh nghiệp; từ chối dự phòng văn bản tự do cho các dòng giá trị cao. |
+
 ## Tiền gửi Được Mã hóa và CBDC Bán buôn
 
 Tiền gửi được mã hóa bảo toàn mô hình tiền ngân hàng thương mại đồng thời bổ sung tính lập trình được. Tiền ngân hàng trung ương bán buôn bảo toàn tính cuối cùng quyết toán. Mẫu thiết kế đáng chú ý là sự kết hợp: tiền ngân hàng thương mại cho quan hệ khách hàng và trung gian tín dụng, tiền ngân hàng trung ương cho quyết toán cuối cùng và niềm tin hệ thống.
+
+Project Agorá biến sự kết hợp này thành cụ thể. Kiến trúc dưới đây là mẫu tham chiếu BIS cho một quyết toán xuyên biên giới nguyên tử, thanh toán-đối-thanh toán (PvP) sử dụng đồng thời sổ cái tiền gửi ngân hàng thương mại và mặt phẳng quyết toán CBDC bán buôn, được phối hợp qua một sổ cái thống nhất.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant CB_A as Ngân hàng Thương mại A<br/>(phía trả)
+    participant UL as Sổ cái Thống nhất<br/>(mặt phẳng phối hợp BIS Agorá)
+    participant CBNK as Ngân hàng Trung ương<br/>(phát hành CBDC bán buôn)
+    participant CB_B as Ngân hàng Thương mại B<br/>(phía nhận)
+
+    CB_A->>UL: Gửi lệnh:<br/>ghi nợ tiền gửi được mã hóa X,<br/>ghi có tiền gửi được mã hóa Y,<br/>điều kiện = nhánh CBDC bán buôn
+    UL->>UL: Xác thực phong bì ISO 20022,<br/>địa chỉ có cấu trúc, LEI,<br/>mã mục đích, AML/trừng phạt
+    UL->>CBNK: Dự trữ CBDC bán buôn<br/>(dự trữ ngân hàng trung ương phía trả)
+    CBNK-->>UL: Xác nhận dự trữ<br/>(khóa nguyên tử)
+    UL->>CB_A: Khóa tiền gửi được mã hóa X<br/>(nhánh tiền ngân hàng thương mại)
+    CB_A-->>UL: Xác nhận khóa tiền gửi
+    UL->>UL: Cả hai nhánh đã khóa →<br/>kích hoạt quyết toán nguyên tử
+    UL->>CBNK: Quyết toán CBDC bán buôn<br/>(dự trữ phía trả → dự trữ phía nhận)
+    UL->>CB_B: Phát hành tiền gửi được mã hóa Y<br/>(nhánh tiền ngân hàng thương mại)
+    CBNK-->>UL: Quyết toán CBDC hoàn tất
+    CB_B-->>UL: Tiền gửi đã được ghi có
+    UL->>CB_A: Quyết toán PvP hoàn tất<br/>(cả hai nhánh cuối cùng hoặc cả hai cùng quay lại)
+    UL->>CB_B: Quyết toán PvP hoàn tất
+```
+
+Quyết toán mang tính nguyên tử theo thiết kế: cả hai nhánh cùng cam kết hoặc cùng quay lại. Tính cuối cùng quyết toán ở nhánh CBDC bán buôn khiến chuyển giao tiền gửi được mã hóa của ngân hàng thương mại có hiệu lực mà không có rủi ro đại lý. Sổ cái thống nhất là mặt phẳng phối hợp, không phải một hệ thống thanh toán riêng — ngân hàng trung ương vẫn phát hành tài sản quyết toán và ngân hàng thương mại vẫn ghi sổ trách nhiệm tiền gửi.
 
 ## Sản phẩm Thanh toán Bán buôn Mới
 

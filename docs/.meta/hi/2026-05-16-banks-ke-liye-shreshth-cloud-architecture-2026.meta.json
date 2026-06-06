@@ -1,11 +1,11 @@
 {
-  "date": "May 16, 2026",
-  "keywords": "क्लाउड वास्तुकला 2026, AI-नेटिव, मल्टीक्लाउड, serverless, edge, WebAssembly, DevSecOps, बैंकिंग, क्रिप्टो चपलता, agentic",
-  "subtitle": "AI-नेटिव, मल्टीक्लाउड और क्वांटम-सचेत — छह स्तंभों का संगम",
-  "description": "वित्तीय-सेवाओं हेतु 2026 की क्लाउड-वास्तुकला का ब्लूप्रिंट — AI-नेटिव, मल्टीक्लाउड, क्वांटम-सचेत।",
   "title": "बैंकों के लिए सर्वोत्तम क्लाउड-अवसंरचना-वास्तुकला (2026)",
-  "language": "hi-IN",
-  "locale": "hi_IN",
+  "subtitle": "AI-नेटिव, मल्टीक्लाउड और क्वांटम-सचेत — छह स्तंभों का संगम",
+  "date": "May 16, 2026",
+  "banner_alt": "छह स्तंभों की क्लाउड-वास्तुकला का आरेख",
   "banner": "https://cloudcdn.pro/stocks/images/precious-madubuike-t65T28d7x_8-unsplash.webp",
-  "banner_alt": "छह स्तंभों की क्लाउड-वास्तुकला का आरेख"
+  "description": "वित्तीय-सेवाओं हेतु 2026 की क्लाउड-वास्तुकला का ब्लूप्रिंट — AI-नेटिव, मल्टीक्लाउड, क्वांटम-सचेत।",
+  "keywords": "क्लाउड वास्तुकला 2026, AI-नेटिव, मल्टीक्लाउड, serverless, edge, WebAssembly, DevSecOps, बैंकिंग, क्रिप्टो चपलता, agentic",
+  "locale": "hi_IN",
+  "language": "hi-IN"
 }

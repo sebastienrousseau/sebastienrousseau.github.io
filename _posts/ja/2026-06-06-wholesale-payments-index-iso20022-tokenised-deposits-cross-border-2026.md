@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "2026 年のホールセール決済シフトを示す可視化レジスター — メッセージング移行からプログラマブル決済へ。ISO 20022、トークン化預金、リアルタイムレール、国境を越えたアトミック性を横断。"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp"
+banner: "https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -131,23 +131,66 @@ Stanford AI Index が有用なのは、急速に進化する技術分野を計�
 | **流動性** | 日中流動性、滞留資金、決済ウィンドウを最適化 | 節減された流動性と決済失敗の削減 | 流動性の流出加速 |
 | **コンプライアンス** | AML、制裁、FATF、監査要件を決済データに組み込み | ストレートスルーのコンプライアンスと説明可能性 | より豊富なデータがあっても統制は強化されない |
 
-## 注視すべき現行シグナル
+## グローバル優先事項に対応づけた主要ホールセール決済シグナル
 
-| シグナル | 銀行にとっての意味 | 出典 |
+2026 年のシグナル群は研究アジェンダではありません。銀行のチーフ・ペイメンツ・オフィサーが既に評価対象とされているデリバリー・チェックリストです。是正作業が現れる場所は 3 つあります:メッセージ・エンベロープ、レール・オーケストレーション層、決済台帳です。
+
+| シグナル | G20 / SWIFT / BIS 出典 | 技術プラットフォーム実装 |
 |---|---|---|
-| **決済メッセージの 65% が非構造化住所を含む** | 是正課題は依然として大きい | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **2026 年 11 月以降は非構造化住所が撤廃される** | 決済データのレディネスが急務になる | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **Project Agorá プロトタイプ段階** | トークン化された決済が中央銀行・商業銀行の設定で検証されている | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **FSB 実装フェーズ** | 国境を越えた決済の改善はグローバル政策の優先事項に留まる | [FSB ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Cross-border payments implementation phase") |
-| **Deutsche Bank のデジタルマネー枠組み** | ステーブルコイン、トークン化預金、CBDC は実務的なコーポレートバンク・アーキテクチャの論点になりつつある | [Deutsche Bank ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") |
+| **決済メッセージの 65% が依然として非構造化住所を含む** | [SWIFT SR 2026 — 構造化住所マイルストーン、2026 年 11 月 ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") | メッセージが SWIFTNet アダプターに到達する前に決済ミドルウェアでスキーマ検証を実施します。コーポレートチャネルおよびコルレス銀行入口で住所の自動解析を行います。 |
+| **FSB G20 目標:2027 年までに国境を越えた決済の 75% を 1 時間以内に完了** | [FSB 国境を越えた決済ロードマップ、2026 年実装フェーズ ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | 事前合意済みの流動性ウィンドウを備えたリアルタイム FX 換算ゲートウェイ、クライアントポータルへ接続する T+0 確認フック、1 時間の封筒を満たせないコリドーを除外するレール・ルーティング・エンジンを実装します。 |
+| **FSB G20 目標:国境を越えた取引の平均コストを 1% 未満、リテールは 3% 未満に** | [FSB G20 定量的目標 ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | すべてのコリドーに対するコスト配賦テレメトリ(FX スプレッド、コルレス手数料、リフティング・コスト)、見積もり前に非準拠の価格設定を可視化するマージン・ポリシー・レジスターを整備します。 |
+| **BIS Project Agorá が 7 中央銀行 + 41 商業銀行のプロトタイプ段階に入る** | [BIS Project Agorá ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") | 統合台帳の連携仕様:トークン化預金台帳ノード + ホールセール CBDC 決済プレーン + KYC/AML フック。銀行のコリドー・シェアに合わせて規模設定したオンチェーン流動性プールを構築します。 |
+| **Deutsche Bank の「デジタルマネー」枠組みがクライアント・アーキテクチャで結晶化** | [Deutsche Bank — Digital Money: stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") | 決済ごとにステーブルコイン / トークン化預金 / CBDC の選択を抽象化するウォレット非依存の決済 API を提供します。プログラマブルな条件は、クライアントではなく銀行のポリシーレジスターに対して評価されます。 |
 
 ## 決済データの変曲点
 
 ISO 20022 はメッセージングフォーマットのプロジェクトからデータ品質の業務モデルへ移りました。受益者、債務者、債権者、エージェント、都市、国、目的、当事者データが脆弱であれば、銀行はリジェクト、修正、制裁関連のフリクション、クライアントの不満、分析の弱さに直面します。
 
+**SR 2026 はこれを助言ではなく厳格な契約に変えます。** SWIFT Standards Release 2026(2026 年 11 月)は構造化住所ルールをネットワーク層で強制します。`<PstlAdr>` 要素に `<TwnNm>` と `<Ctry>` を含まないメッセージは、修正のためにフラグ付与されるのではなく、受信時に SWIFTNet 検証スタックで拒否されます。修正キューはバックオフィスのコストラインではなくなり、クライアントから見える遅延を伴う決済失敗イベントになります。SR 2026 を「より厳しいガイダンス」として扱ってきたオペレーションチームは、誤ったランブックで作業していることになります。
+
+### ISO 20022 における構造化決済データ・コンプライアンス
+
+是正対象範囲は狭く明確に定義されています。以下の XML 要素は、2026 年 11 月の SWIFTNet 検証スタックが実際にメッセージを拒否する箇所です。これ以外はすべて下流の波及効果に過ぎません。
+
+| データ要素 | ISO 20022 XML タグ | 2026 年 11 月 SWIFT 要件 | 技術的是正戦略 |
+|---|---|---|---|
+| **構造化住所** | `<PstlAdr>` に `<TwnNm>` + `<Ctry>` を含むこと | 必須。非構造化の `<AdrLine>` テキストは受信側 SWIFTNet アダプターでネットワーク拒否を発生させます。 | 決済開始時に住所を自動解析します。コーポレートチャネルのフォームを書き換えます。次回引落し前にすべてのカウンターパーティで過去データをクレンジングします。 |
+| **法人識別子(LEI)** | `<OrgId>` 配下の `<Id>` | 法人系金融カウンターパーティ検証に強く推奨。複数の CBPR+ コリドーでは必須。 | コーポレート・オンボーディング時に LEI ルックアップ + GLEIF クロスチェックを実施します。レファレンスデータサービスを通じて過去のカウンターパーティを自動補完します。 |
+| **決済目的コード** | `<Purp>` に `<Cd>` を含むこと | 複数地域のリアルタイム・コリドー(CBPR+、SEPA Inst、TIPS)で自動 AML / 制裁スクリーニングのため必須。 | 銀行内部のレガシー取引コードを標準 ISO 20022 ExternalPurposeCode リストへ対応づけます。コーポレートチャネル UI で目的の選択肢を露出します。未知コードはデフォルト拒否とします。 |
+| **究極当事者** | `<UltmtDbtr>` / `<UltmtCdtr>` | G20 FATF トラベル・ルール + 制裁パラメーターを満たすため究極受益者コンテキストを露出。一部の決済タイプコードでは必須。 | 台帳のサブ口座からエンド・ツー・エンドの当事者名を抽出します。KYC グラフに対して照合します。確認書ごとに究極当事者を表示します。 |
+| **構造化レミッタンス情報** | `<RmtInf><Strd>` に `<RfrdDocInf>` を含むこと | CBPR+ Phase 2 配下で照合可能な請求書連動コーポレート決済に必須。 | コーポレートポータルの見積もり時点で構造化レミッタンスを取得します。高額フローでは自由テキスト・フォールバックを拒否します。 |
+
 ## トークン化預金とホールセール CBDC
 
 トークン化預金は商業銀行マネーのモデルを保持しつつプログラマビリティを付加します。ホールセール中央銀行マネーは決済の最終性を保持します。興味深い設計パターンはその組み合わせです:クライアント関係と信用仲介には商業銀行マネー、最終決済とシステミック信頼には中央銀行マネー、という構成です。
+
+Project Agorá はその組み合わせを具現化します。以下のアーキテクチャは、商業銀行預金台帳とホールセール CBDC 決済プレーンの双方を統合台帳で調整する、アトミックでペイメント対ペイメント(PvP)の国境を越えた決済に関する BIS リファレンス・パターンです。
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant CB_A as 商業銀行 A<br/>(支払側)
+    participant UL as 統合台帳<br/>(BIS Agorá 調整プレーン)
+    participant CBNK as 中央銀行<br/>(ホールセール CBDC 発行体)
+    participant CB_B as 商業銀行 B<br/>(受取側)
+
+    CB_A->>UL: 指示を送信:<br/>トークン化預金 X を引落し、<br/>トークン化預金 Y へ入金、<br/>条件 = ホールセール CBDC レッグ
+    UL->>UL: ISO 20022 エンベロープ、<br/>構造化住所、LEI、<br/>目的コード、AML/制裁を検証
+    UL->>CBNK: ホールセール CBDC を予約<br/>(支払側中央銀行準備金)
+    CBNK-->>UL: 予約確認<br/>(アトミック・ロック)
+    UL->>CB_A: トークン化預金 X をロック<br/>(商業銀行マネー・レッグ)
+    CB_A-->>UL: 預金ロック確認
+    UL->>UL: 両レッグ・ロック →<br/>アトミック決済トリガー
+    UL->>CBNK: ホールセール CBDC を決済<br/>(支払側準備金 → 受取側準備金)
+    UL->>CB_B: トークン化預金 Y を発行<br/>(商業銀行マネー・レッグ)
+    CBNK-->>UL: CBDC 決済が最終化
+    CB_B-->>UL: 預金が入金済み
+    UL->>CB_A: PvP 決済完了<br/>(両レッグが最終、または両レッグが巻き戻し)
+    UL->>CB_B: PvP 決済完了
+```
+
+決済は構造上アトミックです:両レッグがコミットされるか、両レッグがロールバックされます。ホールセール CBDC レッグでの決済の最終性により、商業銀行のトークン化預金移転はコルレス・リスクなしで有効となります。統合台帳は調整プレーンであり、それ自体は決済システムではありません。中央銀行が依然として決済資産を発行し、商業銀行が依然として預金負債を計上します。
 
 ## 新しいホールセール決済プロダクト
 

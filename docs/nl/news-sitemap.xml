@@ -2,25 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/nl/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>nl-NL</news:language>
-    </news:publication>
-    <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
-    <news:title>De Wholesale Payments Index in 2026: ISO 20022, getokeniseerde deposito&apos;s, real-time rails en grensoverschrijdende afwikkeling</news:title>
-    <news:keywords>grootschalig betalingsverkeer 2026, ISO 20022, getokeniseerde deposito&apos;s, Project Agorá, grensoverschrijdende betalingen, real-time betalingen, gestructureerd adres, datakwaliteit betalingen</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/nl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>nl-NL</news:language>
     </news:publication>
-    <news:publication_date>2026-06-06T00:33:34+00:00</news:publication_date>
+    <news:publication_date>2026-06-06T07:30:05+00:00</news:publication_date>
     <news:title>De Cloud-Native Banking-Index in 2026: DORA, Platform Engineering, Soevereine Cloud en Operationele Veerkracht</news:title>
     <news:keywords>cloud-native banking 2026, DORA banken, cloudconcentratierisico, platform engineering banken, ICT-derdenrisico, cloud-exitstrategie, soevereine cloud, FIPS 203, ML-KEM, ISO 20022, Kubernetes</news:keywords>
   </news:news>
@@ -32,7 +20,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>nl-NL</news:language>
     </news:publication>
-    <news:publication_date>2026-06-06T00:33:34+00:00</news:publication_date>
+    <news:publication_date>2026-06-06T07:30:05+00:00</news:publication_date>
     <news:title>De Quantum-Safe Banking Index in 2026: post-kwantumcryptografie, QKD, crypto-wendbaarheid en harvest-now-decrypt-later-risico</news:title>
     <news:keywords>quantum-safe banking 2026, post-kwantumcryptografie banken, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto-wendbaarheid, QKD bankwezen</news:keywords>
   </news:news>
@@ -44,7 +32,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>nl-NL</news:language>
     </news:publication>
-    <news:publication_date>2026-06-06T00:33:34+00:00</news:publication_date>
+    <news:publication_date>2026-06-06T07:30:05+00:00</news:publication_date>
     <news:title>De multi-rail bank in 2026: kaarten, A2A, stablecoins, RTP, FedNow en Open Banking in één strategie</news:title>
     <news:keywords>betalingsorkestratielaag, FedNow vs RTP, FedNow vs ACH, stablecoin-afwikkeling, USDC atomaire afwikkeling, ISO 20022 pacs.008, account-to-account A2A, Open Banking API&apos;s, voorgefinancierde liquiditeit, 24/7 liquiditeitsval, multi-rail bank 2026, betalings-routerings-engine, ERP-reconciliatie</news:keywords>
   </news:news>
@@ -56,7 +44,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>nl-NL</news:language>
     </news:publication>
-    <news:publication_date>2026-06-06T00:33:34+00:00</news:publication_date>
+    <news:publication_date>2026-06-06T07:30:05+00:00</news:publication_date>
     <news:title>Post-quantum betaalinfrastructuur: waarom banken bestaande rails eerder vervangen dan aanpassen</news:title>
     <news:keywords>post-quantum-cryptografie, PQC betalingen, crypto-flexibiliteit, oogst-nu-ontsleutel-later, HNDL, NIST post-quantum-standaarden, ML-KEM, ML-DSA, FIPS 203, FIPS 204, migratie betaalrails, ISO 20022 PQC, SWIFT MT-vervanging, HSM, PKI-instorting, operationele veerkracht, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
   </news:news>
@@ -68,9 +56,21 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>nl-NL</news:language>
     </news:publication>
-    <news:publication_date>2026-06-06T00:33:34+00:00</news:publication_date>
+    <news:publication_date>2026-06-06T07:30:05+00:00</news:publication_date>
     <news:title>DORA, EU AI Act en datasoevereiniteit: de compliance-stack 2026 voor banken</news:title>
     <news:keywords>DORA 2026, EU AI Act 2026, datasoevereiniteit banken, operationele veerkracht, concentratierisico cloud, AI-compliance financiële sector, hoog-risico AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/nl/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl-NL</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+    <news:title>De Wholesale Payments Index in 2026: ISO 20022, getokeniseerde deposito&apos;s, real-time rails en grensoverschrijdende afwikkeling</news:title>
+    <news:keywords>grootschalig betalingsverkeer 2026, ISO 20022, getokeniseerde deposito&apos;s, Project Agorá, grensoverschrijdende betalingen, real-time betalingen, gestructureerd adres, datakwaliteit betalingen</news:keywords>
   </news:news>
 </url>
 <url>

@@ -1,11 +1,11 @@
 {
   "keywords": "Gemini, Google, yapay zeka, çok modlu, LLM, üretken yapay zeka",
   "language": "tr-TR",
-  "subtitle": "Google'ın çok modlu modeli Gemini'a derin bir bakış",
   "date": "February 19, 2024",
-  "banner_alt": "Gemini modelinin görselleştirmesi",
-  "locale": "tr_TR",
   "title": "Gemini'ı açığa çıkarmak: Google'ın yapay zeka devrimi açıklandı",
   "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
-  "description": "Gemini, doğal olarak çok modlu olarak tasarlanmış Google'ın en gelişmiş yapay zeka modelidir. Mimari ve yetenekler."
+  "description": "Gemini, doğal olarak çok modlu olarak tasarlanmış Google'ın en gelişmiş yapay zeka modelidir. Mimari ve yetenekler.",
+  "banner_alt": "Gemini modelinin görselleştirmesi",
+  "locale": "tr_TR",
+  "subtitle": "Google'ın çok modlu modeli Gemini'a derin bir bakış"
 }

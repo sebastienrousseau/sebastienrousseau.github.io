@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Registru vizual pentru schimbarea plăților en gros în 2026 — migrarea mesajelor lasă locul decontării programabile prin ISO 20022, depozite tokenizate, rețele în timp real și atomicitate transfrontalieră."
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp"
+banner: "https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -131,23 +131,66 @@ Stanford AI Index este util pentru că tratează un domeniu tehnologic în mișc
 | **Lichiditate** | Optimizarea lichidității intraday, a banilor blocați și a ferestrelor de decontare | Lichiditate economisită și reducerea eșecurilor de decontare | Scurgeri mai rapide de lichiditate |
 | **Conformitate** | Integrarea cerințelor AML, sancțiuni, FATF și jurnal de audit în datele de plăți | Conformitate straight-through și explicabilitate | Date mai bogate fără controale mai puternice |
 
-## Semnale actuale de urmărit
+## Semnale-cheie ale plăților en gros corelate cu prioritățile globale
 
-| Semnal | Ce înseamnă pentru bănci | Sursă |
+Setul de semnale pentru 2026 nu este o agendă de cercetare. Este o listă de livrabile pe care Chief Payments Officer-ul unei bănci este deja măsurat. Munca de remediere apare în trei locuri: plicul mesajului, stratul de orchestrare a rețelelor și registrul de decontare.
+
+| Semnal | Referință G20 / SWIFT / BIS | Implementare tehnică în platformă |
 |---|---|---|
-| **65% dintre mesajele de plată conțin adrese nestructurate** | Provocarea de remediere rămâne mare | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **Adresele nestructurate sunt eliminate după noiembrie 2026** | Pregătirea datelor de plăți devine urgentă | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **Faza de prototip Project Agorá** | Decontarea tokenizată este testată într-un cadru de bancă centrală și bancă comercială | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Faza de implementare FSB** | Îmbunătățirea plăților transfrontaliere rămâne o prioritate globală de politică | [FSB ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Cross-border payments implementation phase") |
-| **Cadrul Deutsche Bank pentru banii digitali** | Stablecoinii, depozitele tokenizate și CBDC-urile devin un subiect practic de arhitectură pentru băncile corporate | [Deutsche Bank ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") |
+| **65% dintre mesajele de plată conțin încă adrese nestructurate** | [SWIFT SR 2026 — pragul adresei structurate, noiembrie 2026 ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") | Validare de schemă în middleware-ul de plăți înainte ca mesajul să ajungă la adaptorul SWIFTNet; parsare automată a adresei la intrarea din canalul corporate și din banca corespondentă. |
+| **Obiectiv FSB / G20: 75% dintre plățile transfrontaliere finalizate în maximum 1 oră până în 2027** | [Foaia de parcurs FSB pentru plăți transfrontaliere, faza de implementare 2026 ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | Porți de conversie FX în timp real cu ferestre de lichiditate pre-acordate; cârlige de confirmare T+0 în portalul clientului; motor de rutare care exclude orice coridor care nu poate respecta plicul de 1 oră. |
+| **Obiectiv FSB / G20: cost mediu al tranzacției transfrontaliere sub 1%, retail sub 3%** | [Obiective cantitative FSB / G20 ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | Telemetrie de atribuire a costului pe fiecare coridor (spread FX, comision corespondent, cost de lifting); registru de politici de marjă care semnalează preț neconform înainte de cotare. |
+| **BIS Project Agorá intră în faza de prototip pe șapte bănci centrale + 41 de bănci comerciale** | [BIS Project Agorá ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") | Specificație de integrare a registrului unificat: nod de registru pentru depozite tokenizate + plan de decontare CBDC en gros + cârlige KYC/AML; pool-uri de lichiditate on-chain dimensionate la cota de coridor a băncii. |
+| **Cadrul „digital money” al Deutsche Bank se cristalizează în arhitectura de client** | [Deutsche Bank — Digital Money: stablecoinii, depozitele tokenizate și CBDC-urile ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") | API de decontare agnostic față de portofel, care abstractizează selecția stablecoin / depozit tokenizat / CBDC pentru fiecare plată; condiții programabile evaluate față de registrul de politici al băncii, nu al clientului. |
 
 ## Punctul de inflexiune al datelor de plăți
 
 ISO 20022 a trecut de la un proiect de format de mesagerie la un model operațional de calitate a datelor. Dacă datele despre beneficiar, debitor, creditor, agent, localitate, țară, scop și parte sunt slabe, banca va trăi respingeri, reparații, frecare cu sancțiunile, frustrarea clienților și analitică slabă.
 
+**SR 2026 transformă acest lucru într-un contract ferm, nu într-o recomandare.** SWIFT Standards Release 2026 (noiembrie 2026) impune regula adresei structurate la nivel de rețea — mesajele al căror element `<PstlAdr>` nu conține `<TwnNm>` și `<Ctry>` vor fi respinse la recepție de stiva de validare SWIFTNet, nu marcate pentru reparare. Coada de reparații încetează să mai fie o linie de cost back-office și devine un eveniment de eșec al decontării, cu întârziere vizibilă pentru client. Echipele de operațiuni care au tratat SR 2026 ca pe „o îndrumare mai strictă” lucrează după runbook-ul greșit.
+
+### Conformitatea datelor structurate de plăți sub ISO 20022
+
+Suprafața de remediere este îngustă și bine definită. Elementele XML de mai jos sunt locurile în care stiva de validare SWIFTNet din noiembrie 2026 chiar respinge mesajele; restul este consecință din aval.
+
+| Element de date | Tag XML ISO 20022 | Cerința SWIFT din noiembrie 2026 | Strategie tehnică de remediere |
+|---|---|---|---|
+| **Adresă structurată** | `<PstlAdr>` care conține `<TwnNm>` + `<Ctry>` | Obligatorie. Textul nestructurat `<AdrLine>` declanșează respingerea în rețea la adaptorul SWIFTNet receptor. | Parsare automată a adresei la inițierea plății; rescrieri ale formularelor din canalul corporate; curățarea back-book-ului pe fiecare contraparte înainte de următoarea debitare. |
+| **Legal Entity Identifier (LEI)** | `<Id>` sub `<OrgId>` | Puternic recomandat pentru verificarea contrapărților financiare non-individuale; obligatoriu în mai multe coridoare CBPR+. | Căutare LEI + verificare încrucișată GLEIF la onboarding-ul corporate; îmbogățire automată pentru contrapărțile din back-book prin servicii de date de referință. |
+| **Coduri de scop al plății** | `<Purp>` care conține `<Cd>` | Obligatorii în mai multe coridoare regionale în timp real (CBPR+, SEPA Inst, TIPS) pentru screening AML / sancțiuni automatizat. | Maparea codurilor interne moștenite ale băncii la lista standard ExternalPurposeCode ISO 20022; expunerea selecției scopului în UI-ul canalului corporate; refuz implicit la coduri necunoscute. |
+| **Părți ultime** | `<UltmtDbtr>` / `<UltmtCdtr>` | Expune contextul beneficiarului ultim pentru a satisface parametrii G20 FATF travel-rule + sancțiuni; obligatorii pentru mai multe coduri de tip de plată. | Extragerea numelor părților end-to-end din sub-conturile registrului; reconcilierea cu graful KYC; afișarea părții ultime pe fiecare confirmare. |
+| **Informații de remitere (structurate)** | `<RmtInf><Strd>` cu `<RfrdDocInf>` | Necesare pentru plățile corporate reconciliabile legate de factură sub CBPR+ Faza 2. | Capturarea remiterii structurate la momentul cotației în portalul corporate; respingerea fallback-ului text liber pentru fluxurile de valoare mare. |
+
 ## Depozitele tokenizate și CBDC en gros
 
 Depozitele tokenizate păstrează modelul banilor de bancă comercială și adaugă programabilitate. Banii băncii centrale en gros păstrează finalitatea decontării. Tiparul interesant de design este combinația: bani de bancă comercială pentru relații cu clienții și intermediere de credit, bani de bancă centrală pentru decontare finală și încredere sistemică.
+
+Project Agorá face combinația concretă. Arhitectura de mai jos este tiparul de referință BIS pentru o decontare transfrontalieră atomică, payment-versus-payment (PvP), folosind atât un registru de depozite ale băncii comerciale, cât și un plan de decontare CBDC en gros, coordonate printr-un registru unificat.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant CB_A as Banca comercială A<br/>(partea plătitor)
+    participant UL as Registru unificat<br/>(plan de coordonare BIS Agorá)
+    participant CBNK as Banca centrală<br/>(emitent CBDC en gros)
+    participant CB_B as Banca comercială B<br/>(partea beneficiar)
+
+    CB_A->>UL: Trimite instrucțiunea:<br/>debitează depozit tokenizat X,<br/>creditează depozit tokenizat Y,<br/>condiție = leg CBDC en gros
+    UL->>UL: Validează plicul ISO 20022,<br/>adresă structurată, LEI,<br/>cod de scop, AML/sancțiuni
+    UL->>CBNK: Rezervă CBDC en gros<br/>(rezerve ale băncii centrale partea plătitor)
+    CBNK-->>UL: Rezervare confirmată<br/>(blocare atomică)
+    UL->>CB_A: Blochează depozit tokenizat X<br/>(leg bani de bancă comercială)
+    CB_A-->>UL: Blocarea depozitului confirmată
+    UL->>UL: Ambele leg-uri blocate →<br/>declanșator decontare atomică
+    UL->>CBNK: Decontează CBDC en gros<br/>(rezerve plătitor → rezerve beneficiar)
+    UL->>CB_B: Emite depozit tokenizat Y<br/>(leg bani de bancă comercială)
+    CBNK-->>UL: Decontarea CBDC finalizată
+    CB_B-->>UL: Depozit creditat
+    UL->>CB_A: Decontare PvP completă<br/>(ambele leg-uri finale sau ambele revin)
+    UL->>CB_B: Decontare PvP completă
+```
+
+Decontarea este atomică prin construcție: ambele leg-uri fie se confirmă, fie revin împreună. Finalitatea decontării pe leg-ul CBDC en gros face transferul de depozit tokenizat al băncii comerciale eficace fără risc de corespondent. Registrul unificat este planul de coordonare, nu un sistem de plăți în sine — banca centrală tot emite activul de decontare, iar banca comercială tot înregistrează pasivul depozitului.
 
 ## Noul produs de plăți en gros
 

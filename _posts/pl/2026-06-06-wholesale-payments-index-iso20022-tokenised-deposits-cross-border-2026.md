@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Wizualny rejestr przesunięcia w płatnościach hurtowych w 2026 — migracja komunikatów ustępuje miejsca programowalnemu rozrachunkowi w ISO 20022, depozytach tokenizowanych, szynach czasu rzeczywistego oraz transgranicznej atomowości."
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp"
+banner: "https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -131,23 +131,66 @@ Praktyczne pytanie dla banku nie brzmi, czy każda z tych dziedzin jest ważna. 
 | **Płynność** | Optymalizacja płynności śróddziennej, uwięzionej gotówki i okien rozrachunku | Zaoszczędzona płynność i redukcja niepowodzeń rozrachunku | Szybsze drenowanie płynności |
 | **Compliance** | Wbudowanie wymogów AML, sankcji, FATF i audytu w dane płatnicze | Compliance straight-through i wyjaśnialność | Bogatsze dane bez silniejszych kontroli |
 
-## Sygnały bieżące do śledzenia
+## Kluczowe sygnały płatności hurtowych zmapowane na priorytety globalne
 
-| Sygnał | Co oznacza dla banków | Źródło |
+Zestaw sygnałów 2026 nie jest agendą badawczą. Jest listą kontrolną dostarczenia, z której Chief Payments Officer banku jest już rozliczany. Praca remediacyjna pojawia się w trzech miejscach: w kopercie komunikatu, w warstwie orkiestracji szyn i w księdze rozrachunkowej.
+
+| Sygnał | Odniesienie G20 / SWIFT / BIS | Wdrożenie na platformie technicznej |
 |---|---|---|
-| **65% komunikatów płatniczych zawiera niestrukturyzowane adresy** | Skala remediacji nadal jest duża | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **Niestrukturyzowane adresy usunięte po listopadzie 2026** | Gotowość danych płatniczych staje się pilna | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **Faza prototypu Project Agorá** | Tokenizowany rozrachunek jest testowany w środowisku banku centralnego i banków komercyjnych | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Faza wdrażania FSB** | Wzmocnienie płatności transgranicznych pozostaje globalnym priorytetem polityki | [FSB ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Cross-border payments implementation phase") |
-| **Ramy pieniądza cyfrowego Deutsche Bank** | Stablecoiny, depozyty tokenizowane i CBDC stają się praktycznym tematem architektury bankowości korporacyjnej | [Deutsche Bank ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") |
+| **65 % komunikatów płatniczych nadal zawiera adresy niestrukturyzowane** | [SWIFT SR 2026 — kamień milowy adresu ustrukturyzowanego, listopad 2026 ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") | Walidacja schematu w middleware płatności przed dotarciem komunikatu do adaptera SWIFTNet; zautomatyzowane parsowanie adresów na styku kanału korporacyjnego i banku korespondenta. |
+| **Cel G20 FSB: 75 % płatności transgranicznych zrealizowanych w ciągu 1 godziny do 2027** | [Roadmapa FSB płatności transgranicznych, faza wdrażania 2026 ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | Bramki konwersji FX czasu rzeczywistego z uzgodnionymi oknami płynności; haki potwierdzeń T+0 wpięte w portal klienta; silnik routingu szyn wykluczający każdy korytarz, który nie zmieści się w kopercie 1 h. |
+| **Cel G20 FSB: średni koszt transakcji transgranicznej poniżej 1 %, detaliczna poniżej 3 %** | [Cele ilościowe G20 FSB ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | Telemetria atrybucji kosztu na każdym korytarzu (spread FX, opłata korespondenta, koszt lifting); rejestr polityk marży ujawniający niezgodną wycenę przed kwotowaniem. |
+| **BIS Project Agorá wchodzi w fazę prototypu w siedmiu bankach centralnych i 41 bankach komercyjnych** | [BIS Project Agorá ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") | Specyfikacja integracji zunifikowanej księgi: węzeł księgi depozytów tokenizowanych + warstwa rozrachunku hurtowego CBDC + haki KYC/AML; pule płynności on-chain wymiarowane do udziału banku w korytarzu. |
+| **Ramy „digital money” Deutsche Bank krystalizują się w architekturze klienta** | [Deutsche Bank — Digital Money: stablecoiny, depozyty tokenizowane i CBDC ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") | Niezależne od portfela API rozrachunku abstrahujące wybór stablecoina / depozytu tokenizowanego / CBDC dla każdej płatności; warunki programowalne ewaluowane wobec rejestru polityk banku, nie klienta. |
 
 ## Punkt zwrotny w danych płatniczych
 
 ISO 20022 przeszło z projektu formatu komunikatów do modelu operacyjnego jakości danych. Jeśli dane beneficjenta, dłużnika, wierzyciela, agenta, miasta, kraju, celu i strony są słabe, bank doświadczy odrzuceń, napraw, tarcia sankcyjnego, frustracji klienta i słabej analityki.
 
+**SR 2026 czyni z tego twardy kontrakt, a nie zalecenie.** SWIFT Standards Release 2026 (listopad 2026) egzekwuje regułę adresu ustrukturyzowanego na warstwie sieci — komunikaty, których element `<PstlAdr>` nie zawiera `<TwnNm>` oraz `<Ctry>`, zostaną odrzucone w momencie odbioru przez stos walidacyjny SWIFTNet, a nie oznaczone do naprawy. Kolejka napraw przestaje być linią kosztu back-office i staje się zdarzeniem niepowodzenia rozrachunku z widocznym dla klienta opóźnieniem. Zespoły operacyjne traktujące SR 2026 jako „zaostrzone wytyczne” pracują z błędnego runbooka.
+
+### Zgodność strukturyzowanych danych płatniczych w ramach ISO 20022
+
+Powierzchnia remediacji jest wąska i dobrze zdefiniowana. Poniższe elementy XML to miejsca, w których listopadowy stos walidacyjny SWIFTNet 2026 faktycznie odrzuca komunikaty; reszta to konsekwencja po stronie downstream.
+
+| Element danych | Tag XML ISO 20022 | Wymóg SWIFT na listopad 2026 | Strategia remediacji technicznej |
+|---|---|---|---|
+| **Adres ustrukturyzowany** | `<PstlAdr>` zawierający `<TwnNm>` + `<Ctry>` | Obowiązkowy. Niestrukturyzowany tekst `<AdrLine>` wyzwala odrzucenie sieciowe na odbierającym adapterze SWIFTNet. | Zautomatyzowane parsowanie adresów na etapie inicjacji płatności; przeprojektowanie formularzy w kanałach korporacyjnych; oczyszczanie back-booka każdego kontrahenta przed kolejnym obciążeniem. |
+| **Identyfikator podmiotu prawnego (LEI)** | `<Id>` pod `<OrgId>` | Zdecydowanie zalecany do weryfikacji niefizycznych kontrahentów finansowych; obowiązkowy w kilku korytarzach CBPR+. | Wyszukiwanie LEI + weryfikacja krzyżowa GLEIF na etapie onboardingu korporacyjnego; automatyczne wzbogacanie kontrahentów back-booka przez usługi danych referencyjnych. |
+| **Kody celu płatności** | `<Purp>` zawierający `<Cd>` | Obowiązkowy w wielu regionalnych korytarzach czasu rzeczywistego (CBPR+, SEPA Inst, TIPS) dla zautomatyzowanego screeningu AML / sankcji. | Mapowanie wewnętrznych kodów transakcji banku na standardową listę ISO 20022 ExternalPurposeCode; wystawienie wyboru celu w UI kanału korporacyjnego; domyślna odmowa dla nieznanych kodów. |
+| **Strony ostateczne** | `<UltmtDbtr>` / `<UltmtCdtr>` | Ujawnić kontekst beneficjenta ostatecznego, aby spełnić parametry G20 FATF travel-rule + sankcji; obowiązkowe dla kilku kodów typu płatności. | Wyciąganie nazw stron end-to-end z subkont księgi; uzgodnienie z grafem KYC; ujawnianie strony ostatecznej na każdym potwierdzeniu. |
+| **Informacja remitencyjna (strukturyzowana)** | `<RmtInf><Strd>` z `<RfrdDocInf>` | Wymagana dla uzgadnialnych korporacyjnych płatności powiązanych z fakturą w CBPR+ Faza 2. | Przechwytywanie strukturyzowanej remitencji w portalu korporacyjnym na etapie kwotowania; odrzucanie fallbacku w wolnym tekście dla przepływów wysokokwotowych. |
+
 ## Depozyty tokenizowane i hurtowe CBDC
 
 Depozyty tokenizowane zachowują model pieniądza banku komercyjnego, dodając programowalność. Hurtowy pieniądz banku centralnego zachowuje ostateczność rozrachunku. Interesujący wzorzec projektowy to ich kombinacja: pieniądz banku komercyjnego dla relacji z klientami i pośrednictwa kredytowego, pieniądz banku centralnego dla ostatecznego rozrachunku i zaufania systemowego.
+
+Project Agorá nadaje tej kombinacji konkretny kształt. Poniższa architektura to referencyjny wzorzec BIS dla atomowego, transgranicznego rozrachunku payment-versus-payment (PvP) z wykorzystaniem zarówno księgi depozytów banku komercyjnego, jak i warstwy rozrachunku hurtowego CBDC, koordynowanych przez zunifikowaną księgę.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant CB_A as Bank komercyjny A<br/>(strona płatnika)
+    participant UL as Zunifikowana księga<br/>(warstwa koordynacji BIS Agorá)
+    participant CBNK as Bank centralny<br/>(emitent hurtowego CBDC)
+    participant CB_B as Bank komercyjny B<br/>(strona beneficjenta)
+
+    CB_A->>UL: Złóż instrukcję:<br/>obciąż depozyt tokenizowany X,<br/>uznaj depozyt tokenizowany Y,<br/>warunek = noga hurtowego CBDC
+    UL->>UL: Waliduj kopertę ISO 20022,<br/>adres ustrukturyzowany, LEI,<br/>kod celu, AML/sankcje
+    UL->>CBNK: Zarezerwuj hurtowy CBDC<br/>(rezerwy banku centralnego po stronie płatnika)
+    CBNK-->>UL: Rezerwacja potwierdzona<br/>(blokada atomowa)
+    UL->>CB_A: Zablokuj depozyt tokenizowany X<br/>(noga pieniądza banku komercyjnego)
+    CB_A-->>UL: Blokada depozytu potwierdzona
+    UL->>UL: Obie nogi zablokowane →<br/>wyzwalacz rozrachunku atomowego
+    UL->>CBNK: Rozlicz hurtowy CBDC<br/>(rezerwy płatnika → rezerwy beneficjenta)
+    UL->>CB_B: Wyemituj depozyt tokenizowany Y<br/>(noga pieniądza banku komercyjnego)
+    CBNK-->>UL: Rozrachunek CBDC sfinalizowany
+    CB_B-->>UL: Depozyt uznany
+    UL->>CB_A: Rozrachunek PvP kompletny<br/>(obie nogi ostateczne lub obie wycofane)
+    UL->>CB_B: Rozrachunek PvP kompletny
+```
+
+Rozrachunek jest atomowy z definicji konstrukcyjnej: obie nogi commitują się lub obie się wycofują. Ostateczność rozrachunku na nodze hurtowego CBDC sprawia, że transfer depozytu tokenizowanego banku komercyjnego staje się skuteczny bez ryzyka korespondenta. Zunifikowana księga jest warstwą koordynacji, a nie systemem płatności samym w sobie — bank centralny nadal emituje aktywo rozrachunkowe, a bank komercyjny nadal księguje zobowiązanie depozytowe.
 
 ## Nowy produkt płatności hurtowych
 
