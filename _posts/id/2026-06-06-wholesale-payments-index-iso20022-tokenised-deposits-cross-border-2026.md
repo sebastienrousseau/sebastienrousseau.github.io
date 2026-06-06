@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Register visual untuk pergeseran pembayaran grosir pada 2026 — migrasi pesan beralih ke setelmen programmable lintas ISO 20022, simpanan tertokenisasi, rel real-time, dan atomisitas lintas batas."
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp"
+banner: "https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -131,23 +131,66 @@ Pertanyaan praktis untuk bank bukanlah apakah setiap domain penting. Pertanyaann
 | **Likuiditas** | Mengoptimalkan likuiditas intraday, kas terjebak, dan jendela setelmen | Likuiditas terhemat dan pengurangan kegagalan setelmen | Pengurasan likuiditas yang lebih cepat |
 | **Kepatuhan** | Menanamkan AML, sanksi, FATF, dan ketentuan log audit ke dalam data pembayaran | Kepatuhan straight-through dan eksplanasi | Data lebih kaya tanpa batas pengaman lebih kuat |
 
-## Sinyal Saat Ini yang Perlu Dilacak
+## Sinyal Pembayaran Grosir Utama Dipetakan ke Prioritas Global
 
-| Sinyal | Artinya bagi Bank | Sumber |
+Rangkaian sinyal 2026 bukan agenda riset. Ia adalah checklist eksekusi yang Chief Payments Officer sebuah bank sudah diukur atasnya. Pekerjaan remediasi muncul di tiga tempat: amplop pesan, lapisan orkestrasi rel, dan ledger setelmen.
+
+| Sinyal | Referensi G20 / SWIFT / BIS | Implementasi Platform Teknis |
 |---|---|---|
-| **65% pesan pembayaran berisi alamat tak-terstruktur** | Tantangan remediasi masih besar | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "Tonggak alamat terstruktur ISO 20022 November 2026") |
-| **Alamat tak-terstruktur dihapus setelah November 2026** | Kesiapan data pembayaran menjadi mendesak | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "Tonggak alamat terstruktur ISO 20022 November 2026") |
-| **Fase prototipe Project Agorá** | Setelmen tertokenisasi sedang diuji dalam setting bank sentral dan bank komersial | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Fase implementasi FSB** | Penyempurnaan pembayaran lintas batas tetap prioritas kebijakan global | [FSB ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Fase implementasi pembayaran lintas batas") |
-| **Kerangka uang digital Deutsche Bank** | Stablecoin, simpanan tertokenisasi, dan CBDC menjadi topik arsitektur corporate-bank yang praktis | [Deutsche Bank ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Uang Digital: stablecoin, simpanan tertokenisasi, dan CBDC") |
+| **65% pesan pembayaran masih berisi alamat tak-terstruktur** | [Tonggak alamat terstruktur SWIFT SR 2026 — Nov 2026 ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "Tonggak alamat terstruktur ISO 20022 November 2026") | Validasi skema di middleware pembayaran sebelum pesan mencapai adapter SWIFTNet; parsing alamat otomatis pada ingress corporate-channel + bank koresponden. |
+| **Target FSB G20: 75% pembayaran lintas batas selesai dalam 1 jam pada 2027** | [Roadmap pembayaran lintas batas FSB, fase implementasi 2026 ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Fase implementasi pembayaran lintas batas FSB") | Gateway konversi FX real-time dengan jendela likuiditas yang sudah disepakati; hook konfirmasi T+0 ke portal klien; mesin perutean rel yang mengeluarkan koridor mana pun yang tidak dapat memenuhi envelope 1 jam. |
+| **Target FSB G20: rata-rata biaya transaksi lintas batas di bawah 1%, retail di bawah 3%** | [Target kuantitatif FSB G20 ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Fase implementasi pembayaran lintas batas FSB") | Telemetri atribusi biaya pada setiap koridor (spread FX, fee koresponden, biaya lifting); registry kebijakan margin yang menampilkan harga non-patuh sebelum penawaran. |
+| **BIS Project Agorá memasuki fase prototipe lintas tujuh bank sentral + 41 bank komersial** | [BIS Project Agorá ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") | Spesifikasi integrasi ledger terpadu: node ledger simpanan tertokenisasi + bidang setelmen wholesale-CBDC + hook KYC/AML; on-chain liquidity pool yang berukuran sesuai pangsa koridor bank. |
+| **Kerangka "uang digital" Deutsche Bank mengkristal dalam arsitektur klien** | [Deutsche Bank — Uang Digital: stablecoin, simpanan tertokenisasi, dan CBDC ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Uang Digital: stablecoin, simpanan tertokenisasi, dan CBDC") | API setelmen wallet-agnostic yang mengabstraksi pemilihan stablecoin / simpanan tertokenisasi / CBDC per pembayaran; kondisi programmable dievaluasi terhadap policy registry bank, bukan klien. |
 
 ## Titik Belok Data Pembayaran
 
 ISO 20022 telah berpindah dari proyek format pesan menjadi model operasi kualitas-data. Jika data beneficiary, debtor, creditor, agen, kota, negara, tujuan, dan party lemah, bank akan mengalami reject, repair, friksi sanksi, frustrasi klien, dan analitik lemah.
 
+**SR 2026 mengubah ini menjadi kontrak keras, bukan anjuran.** SWIFT Standards Release 2026 (November 2026) menegakkan aturan alamat terstruktur di lapisan jaringan — pesan yang elemen `<PstlAdr>`-nya tidak membawa `<TwnNm>` dan `<Ctry>` akan ditolak saat diterima oleh stack validasi SWIFTNet, bukan ditandai untuk repair. Antrian repair berhenti menjadi pos biaya back-office dan menjadi peristiwa kegagalan setelmen dengan keterlambatan yang terlihat oleh klien. Tim operasi yang memperlakukan SR 2026 sebagai "panduan yang lebih ketat" bekerja dari runbook yang salah.
+
+### Kepatuhan Data Pembayaran Terstruktur di bawah ISO 20022
+
+Permukaan remediasi sempit dan terdefinisi dengan baik. Elemen XML di bawah adalah tempat stack validasi SWIFTNet November 2026 benar-benar menggagalkan pesan; selebihnya adalah konsekuensi hilir.
+
+| Elemen Data | Tag XML ISO 20022 | Persyaratan SWIFT November 2026 | Strategi Remediasi Teknis |
+|---|---|---|---|
+| **Alamat Terstruktur** | `<PstlAdr>` berisi `<TwnNm>` + `<Ctry>` | Wajib. Teks `<AdrLine>` tak-terstruktur memicu penolakan jaringan di adapter SWIFTNet penerima. | Parsing alamat otomatis saat inisiasi pembayaran; penulisan ulang form corporate-channel; pembersihan back-book pada setiap counterparty sebelum debit berikutnya. |
+| **Legal Entity Identifier (LEI)** | `<Id>` di bawah `<OrgId>` | Sangat direkomendasikan untuk verifikasi counterparty keuangan non-individu; wajib di beberapa koridor CBPR+. | Lookup LEI + cross-check GLEIF saat onboarding korporat; pengayaan otomatis untuk counterparty back-book melalui layanan reference data. |
+| **Kode Tujuan Pembayaran** | `<Purp>` berisi `<Cd>` | Wajib di banyak koridor real-time regional (CBPR+, SEPA Inst, TIPS) untuk skrining AML / sanksi otomatis. | Petakan kode transaksi internal bank legacy ke daftar ExternalPurposeCode standar ISO 20022; ekspos pemilihan tujuan di UI corporate-channel; default-deny pada kode tidak dikenal. |
+| **Pihak Terakhir** | `<UltmtDbtr>` / `<UltmtCdtr>` | Mengekspos konteks beneficiary akhir untuk memenuhi parameter travel-rule FATF G20 + sanksi; wajib untuk beberapa kode tipe pembayaran. | Ekstrak nama party end-to-end dari sub-akun ledger; rekonsiliasi terhadap graph KYC; tampilkan pihak terakhir di setiap konfirmasi. |
+| **Informasi Remitansi (Terstruktur)** | `<RmtInf><Strd>` dengan `<RfrdDocInf>` | Diperlukan untuk pembayaran korporat terkait-invoice yang dapat direkonsiliasi di bawah CBPR+ Phase 2. | Tangkap remitansi terstruktur saat quote-time di portal korporat; tolak fallback teks bebas untuk arus bernilai tinggi. |
+
 ## Simpanan Tertokenisasi dan Wholesale CBDC
 
 Simpanan tertokenisasi mempertahankan model uang bank komersial sambil menambahkan programabilitas. Uang bank sentral grosir mempertahankan finalitas setelmen. Pola desain yang menarik adalah kombinasinya: uang bank komersial untuk relasi klien dan intermediasi kredit, uang bank sentral untuk setelmen final dan kepercayaan sistemik.
+
+Project Agorá membuat kombinasinya konkret. Arsitektur di bawah ini adalah pola referensi BIS untuk setelmen lintas batas atomik, payment-versus-payment (PvP), menggunakan ledger simpanan bank komersial maupun bidang setelmen wholesale-CBDC, yang dikoordinasikan melalui ledger terpadu.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant CB_A as Bank Komersial A<br/>(sisi pembayar)
+    participant UL as Ledger Terpadu<br/>(bidang koordinasi BIS Agorá)
+    participant CBNK as Bank Sentral<br/>(penerbit wholesale CBDC)
+    participant CB_B as Bank Komersial B<br/>(sisi penerima)
+
+    CB_A->>UL: Kirim instruksi:<br/>debit simpanan tertokenisasi X,<br/>kredit simpanan tertokenisasi Y,<br/>kondisi = leg wholesale CBDC
+    UL->>UL: Validasi amplop ISO 20022,<br/>alamat terstruktur, LEI,<br/>kode tujuan, AML/sanksi
+    UL->>CBNK: Cadangkan wholesale CBDC<br/>(cadangan bank sentral sisi pembayar)
+    CBNK-->>UL: Reservasi dikonfirmasi<br/>(kunci atomik)
+    UL->>CB_A: Kunci simpanan tertokenisasi X<br/>(leg uang bank komersial)
+    CB_A-->>UL: Kunci simpanan dikonfirmasi
+    UL->>UL: Kedua leg terkunci →<br/>pemicu setelmen atomik
+    UL->>CBNK: Settle wholesale CBDC<br/>(cadangan pembayar → cadangan penerima)
+    UL->>CB_B: Terbitkan simpanan tertokenisasi Y<br/>(leg uang bank komersial)
+    CBNK-->>UL: Setelmen CBDC final
+    CB_B-->>UL: Simpanan dikreditkan
+    UL->>CB_A: Setelmen PvP selesai<br/>(kedua leg final atau kedua leg roll back)
+    UL->>CB_B: Setelmen PvP selesai
+```
+
+Setelmen bersifat atomik secara konstruksi: kedua leg commit atau kedua-duanya roll back. Finalitas setelmen pada leg wholesale-CBDC membuat transfer simpanan-tertokenisasi bank komersial efektif tanpa risiko koresponden. Ledger terpadu adalah bidang koordinasi, bukan sistem pembayaran tersendiri — bank sentral tetap menerbitkan aset setelmen dan bank komersial tetap membukukan liabilitas simpanan.
 
 ## Produk Pembayaran Grosir Baru
 

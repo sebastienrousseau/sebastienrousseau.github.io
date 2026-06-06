@@ -6,31 +6,14 @@
     <description>Artiklar på svenska: tillämpad AI, ISO 20022-betalningar, postkvantkryptografi och transformationen av grossistbetalningar.</description>
     <atom:link href="https://sebastienrousseau.com/sv/rss.xml" rel="self" type="application/rss+xml"/>
     <language>sv-SE</language>
-    <lastBuildDate>Sat, 06 Jun 2026 00:33:34 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 07:30:06 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alla rättigheter förbehållna.</copyright>
-    <item>
-      <title>Indexet för grossistbetalningar 2026: ISO 20022, tokeniserade insättningar, realtidsspår och gränsöverskridande avveckling</title>
-      <link>https://sebastienrousseau.com/sv/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</link>
-      <description>Ett index för 2026 som mäter beredskap för grossistbetalningar: ISO 20022-datakvalitet, tokeniserade insättningar, realtidsspår, gränsöverskridande avveckling och likviditetseffektivitet.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</guid>
-      <pubDate>Sat, 06 Jun 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp" type="image/webp" length="0"/>
-      <category>grossistbetalningar 2026</category>
-      <category>ISO 20022</category>
-      <category>tokeniserade insättningar</category>
-      <category>Project Agora</category>
-      <category>gränsöverskridande betalningar</category>
-      <category>realtidsbetalningar</category>
-      <category>strukturerade adressdata</category>
-      <category>datakvalitet i betalningar</category>
-    </item>
     <item>
       <title>Multi-rälsbanken 2026: Kort, A2A, stablecoins, RTP, FedNow och Open Banking i en strategi</title>
       <link>https://sebastienrousseau.com/sv/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow kräver förfinansierad likviditet dygnet runt. ACH är billigt men T+1. USDC avvecklas atomärt men kräver wallet-infrastruktur. Multi-rälsbanken 2026 routar varje betalning efter kostnad, finalitet och likviditetskostnad — driven av en orkestreringsmotor som läser ISO 20022 pacs.008.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Sat, 06 Jun 2026 00:33:34 +0000</pubDate>
+      <pubDate>Sat, 06 Jun 2026 07:30:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>betalningsorkestrering</category>
@@ -52,7 +35,7 @@
       <link>https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>Postkvantkryptografi tvingar fram ett binärt val för betalningsräls: anpassa RSA/ECC inom SWIFT MT- och ISO 20022-kuvert som aldrig dimensionerats för ML-KEM och ML-DSA, eller ersätt med kryptoagil infrastruktur. Arkitekter måste välja innan HNDL blir operativ förlust.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Sat, 06 Jun 2026 00:33:34 +0000</pubDate>
+      <pubDate>Sat, 06 Jun 2026 07:30:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>postkvantkryptografi</category>
@@ -78,7 +61,7 @@
       <link>https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>Digitala tillgångar är inte längre en innovationssatsning. De är en arkitekturfråga för avveckling, förvaring och balansräkning. Bankernas strategiska uppgift är infrastrukturdesign under strukturell osäkerhet.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Sat, 06 Jun 2026 00:33:34 +0000</pubDate>
+      <pubDate>Sat, 06 Jun 2026 07:30:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>digitala tillgångar 2026</category>
@@ -91,6 +74,23 @@
       <category>säkerhetsmobilitet</category>
       <category>programmerbara pengar</category>
       <category>bankstrategi digitala tillgångar</category>
+    </item>
+    <item>
+      <title>Indexet för grossistbetalningar 2026: ISO 20022, tokeniserade insättningar, realtidsspår och gränsöverskridande avveckling</title>
+      <link>https://sebastienrousseau.com/sv/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</link>
+      <description>Ett index för 2026 som mäter beredskap för grossistbetalningar: ISO 20022-datakvalitet, tokeniserade insättningar, realtidsspår, gränsöverskridande avveckling och likviditetseffektivitet.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</guid>
+      <pubDate>Sat, 06 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp" type="image/webp" length="0"/>
+      <category>grossistbetalningar 2026</category>
+      <category>ISO 20022</category>
+      <category>tokeniserade insättningar</category>
+      <category>Project Agora</category>
+      <category>gränsöverskridande betalningar</category>
+      <category>realtidsbetalningar</category>
+      <category>strukturerade adressdata</category>
+      <category>datakvalitet i betalningar</category>
     </item>
     <item>
       <title>Index över molnnativ bankverksamhet 2026: DORA, plattformsteknik, suverän moln och operativ motståndskraft</title>

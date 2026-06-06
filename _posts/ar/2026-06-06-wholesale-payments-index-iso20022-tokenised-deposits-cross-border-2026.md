@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "سجل بصري لتحوُّل المدفوعات بالجملة في 2026 — ترحيل الرسائل يُفسح المجال لتسوية قابلة للبرمجة عبر ISO 20022 والودائع المرمَّزة والمسارات الفورية والذرية عبر الحدود."
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp"
+banner: "https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -131,23 +131,66 @@ site_software: "Static Site Generator, Rust"
 | **السيولة** | تحسين السيولة خلال اليوم، والنقد المحتجز، ونوافذ التسوية | السيولة الموفَّرة وخفض إخفاق التسوية | استنزاف أسرع للسيولة |
 | **الامتثال** | تضمين متطلبات AML والعقوبات وFATF والتدقيق في بيانات المدفوعات | امتثال متواصل وقابلية تفسير | بيانات أغنى بضوابط أضعف |
 
-## إشارات راهنة تستوجب المتابعة
+## إشارات المدفوعات بالجملة الرئيسية مُربَطة بالأولويات العالمية
 
-| الإشارة | ما تعنيه للمصارف | المصدر |
+مجموعة إشارات 2026 ليست أجندة بحثية. هي قائمة تنفيذ يُقاس عليها بالفعل رئيس قسم المدفوعات لدى المصرف. وأعمال المعالجة تظهر في ثلاثة مواضع: مغلَّف الرسالة، وطبقة تنسيق المسارات، وسجل التسوية.
+
+| الإشارة | المرجع لدى G20 / SWIFT / BIS | التنفيذ على المنصة التقنية |
 |---|---|---|
-| **65% من رسائل المدفوعات تحتوي على عناوين غير مُهيكَلة** | تحدِّي المعالجة لا يزال كبيرًا | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "محطة العناوين المُهيكَلة في ISO 20022 نوفمبر 2026") |
-| **إلغاء العناوين غير المُهيكَلة بعد نوفمبر 2026** | جاهزية بيانات المدفوعات تصبح ملحَّة | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "محطة العناوين المُهيكَلة في ISO 20022 نوفمبر 2026") |
-| **مرحلة النموذج الأولي لـProject Agorá** | التسوية المرمَّزة تُختبر في بيئة مصرف مركزي ومصرف تجاري | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **مرحلة التنفيذ لدى FSB** | تعزيز المدفوعات عبر الحدود يظل أولوية سياسات عالمية | [FSB ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "مرحلة تنفيذ المدفوعات عبر الحدود") |
-| **إطار النقود الرقمية لـDeutsche Bank** | العملات المستقرة والودائع المرمَّزة وعملات البنوك المركزية الرقمية تصبح موضوعًا عمليًا في معمارية المصارف للشركات | [Deutsche Bank ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") |
+| **65% من رسائل المدفوعات لا تزال تحتوي على عناوين غير مُهيكَلة** | [SWIFT SR 2026 — محطة العناوين المُهيكَلة، نوفمبر 2026 ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "محطة العناوين المُهيكَلة في ISO 20022 نوفمبر 2026") | التحقق من المخطط في وسيط المدفوعات قبل وصول الرسالة إلى محوِّل SWIFTNet؛ تحليل آلي للعناوين عند منفذ القناة المؤسسية ومنفذ المصرف المراسل. |
+| **هدف G20 لدى FSB: 75% من المدفوعات عبر الحدود تكتمل خلال ساعة واحدة بحلول 2027** | [خارطة طريق FSB للمدفوعات عبر الحدود، مرحلة التنفيذ 2026 ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "مرحلة تنفيذ المدفوعات عبر الحدود") | بوابات تحويل عملات فورية بنوافذ سيولة متفق عليها مسبقًا؛ خطاطيف تأكيد T+0 داخل بوابة العميل؛ محرِّك توجيه مسارات يستبعد أي ممر لا يستطيع الوفاء بظرف الساعة الواحدة. |
+| **هدف G20 لدى FSB: متوسط كلفة المعاملة عبر الحدود دون 1%، والتجزئة دون 3%** | [أهداف G20 الكمية لدى FSB ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "مرحلة تنفيذ المدفوعات عبر الحدود") | قياس عن بُعد لإسناد التكلفة على كل ممر (هامش الصرف، رسوم المراسلة، كلفة الرفع)؛ سجل سياسة هوامش يكشف التسعير غير المتوافق قبل عرض السعر. |
+| **Project Agorá من BIS يدخل مرحلة النموذج الأولي عبر سبعة مصارف مركزية + 41 مصرفًا تجاريًا** | [Project Agorá من BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") | مواصفة تكامل السجل الموحَّد: عقدة سجل الودائع المرمَّزة + مستوى تسوية CBDC بالجملة + خطاطيف KYC/AML؛ تجمُّعات سيولة على السلسلة بحجم حصة المصرف من الممر. |
+| **إطار "النقود الرقمية" لدى Deutsche Bank يتبلور في معمارية العملاء** | [Deutsche Bank — النقود الرقمية: العملات المستقرة والودائع المرمَّزة وعملات البنوك المركزية الرقمية ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") | واجهة تسوية محايدة تجاه المحفظة تُجرِّد اختيار العملة المستقرة / الوديعة المرمَّزة / CBDC لكل دفعة؛ شروط قابلة للبرمجة تُقيَّم وفق سجل سياسات المصرف، لا سجل العميل. |
 
 ## نقطة الانعطاف في بيانات المدفوعات
 
 انتقل ISO 20022 من مشروع تنسيق رسائل إلى نموذج تشغيل قائم على جودة البيانات. إذا كانت بيانات المستفيد والمَدين والدائن والوكيل والمدينة والدولة والغرض والأطراف ضعيفة، فسيواجه المصرف رفضًا وإصلاحات واحتكاك عقوبات وإحباطًا للعملاء وتحليلات هزيلة.
 
+**SR 2026 يجعل ذلك عقدًا صارمًا، لا توصية إرشادية.** إصدار معايير SWIFT 2026 (نوفمبر 2026) يفرض قاعدة العنوان المهيكل عند طبقة الشبكة — الرسائل التي لا يحمل عنصر `<PstlAdr>` فيها كلًا من `<TwnNm>` و`<Ctry>` تُرفض عند الاستلام بواسطة مكدِّس التحقق في SWIFTNet، ولا تُرفع للإصلاح. طابور الإصلاح يتوقف عن كونه بندًا في كلفة المكتب الخلفي ويصبح حدث إخفاق تسوية بتأخير مرئي للعميل. فِرَق العمليات التي تتعامل مع SR 2026 بوصفه "توجيهًا أكثر تشددًا" تعمل من دليل إجراءات خاطئ.
+
+### الامتثال لبيانات المدفوعات المُهيكَلة بموجب ISO 20022
+
+سطح المعالجة ضيق ومُحدَّد جيدًا. عناصر XML أدناه هي الموضع الذي يُخفق فيه مكدِّس التحقق في SWIFTNet لشهر نوفمبر 2026 الرسائل فعليًا؛ وكل ما عداها تَبَعات لاحقة.
+
+| عنصر البيانات | وسم ISO 20022 XML | متطلب SWIFT لنوفمبر 2026 | استراتيجية المعالجة التقنية |
+|---|---|---|---|
+| **العنوان المهيكل** | `<PstlAdr>` يحتوي على `<TwnNm>` + `<Ctry>` | إلزامي. النص غير المهيكل في `<AdrLine>` يُحفِّز رفض الشبكة عند محوِّل SWIFTNet المستلِم. | تحليل آلي للعناوين عند بدء الدفع؛ إعادة كتابة نماذج القناة المؤسسية؛ تنظيف القاعدة الخلفية لكل طرف مقابل قبل الخصم التالي. |
+| **رمز الكيان القانوني (LEI)** | `<Id>` تحت `<OrgId>` | يُوصى به بشدة للتحقق من الأطراف المقابلة المالية غير الأفراد؛ إلزامي في عدة ممرات CBPR+. | بحث LEI + تحقُّق متبادل مع GLEIF عند إدراج العميل المؤسسي؛ إثراء آلي للأطراف المقابلة في القاعدة الخلفية عبر خدمات البيانات المرجعية. |
+| **رموز غرض الدفع** | `<Purp>` يحتوي على `<Cd>` | إلزامي في عدة ممرات فورية إقليمية (CBPR+، SEPA Inst، TIPS) لفحص AML / العقوبات الآلي. | تحويل رموز معاملات المصرف الداخلية القديمة إلى قائمة ISO 20022 ExternalPurposeCode القياسية؛ كشف اختيار الغرض في واجهة القناة المؤسسية؛ رفض افتراضي للرموز غير المعروفة. |
+| **الأطراف النهائية** | `<UltmtDbtr>` / `<UltmtCdtr>` | كشف سياق المستفيد النهائي للوفاء بمعايير G20 FATF لقاعدة السفر + العقوبات؛ إلزامي لعدة رموز نوع دفع. | استخراج أسماء الأطراف من طرف إلى طرف من الحسابات الفرعية للسجل؛ التوفيق مع رسم بياني KYC؛ كشف الطرف النهائي في كل تأكيد. |
+| **معلومات التحويل (مُهيكَلة)** | `<RmtInf><Strd>` مع `<RfrdDocInf>` | مطلوب للمدفوعات المؤسسية القابلة للمطابقة المرتبطة بالفواتير بموجب CBPR+ المرحلة 2. | التقاط تحويل مُهيكَل عند وقت التسعير في بوابة الشركات؛ رفض الاحتياط بالنص الحر للتدفقات عالية القيمة. |
+
 ## الودائع المرمَّزة والعملة الرقمية للمصرف المركزي بالجملة
 
 تحفظ الودائع المرمَّزة نموذج نقود المصارف التجارية مع إضافة القابلية للبرمجة. ونقود المصرف المركزي بالجملة تحفظ نهائية التسوية. ونمط التصميم اللافت هو الجمع بينهما: نقود المصارف التجارية لعلاقات العملاء ووساطة الائتمان، ونقود المصرف المركزي للتسوية النهائية والثقة النظامية.
+
+Project Agorá يجعل هذا الجمع ملموسًا. المعمارية أدناه هي النمط المرجعي لدى BIS لتسوية ذرية بنظام الدفع مقابل الدفع (PvP) عبر الحدود تستخدم سجل ودائع مصرف تجاري ومستوى تسوية CBDC بالجملة معًا، بتنسيق عبر سجل موحَّد.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant CB_A as المصرف التجاري A<br/>(جانب الدافع)
+    participant UL as السجل الموحَّد<br/>(مستوى تنسيق Agorá لدى BIS)
+    participant CBNK as المصرف المركزي<br/>(مُصدِر CBDC بالجملة)
+    participant CB_B as المصرف التجاري B<br/>(جانب المستفيد)
+
+    CB_A->>UL: تقديم التعليمات:<br/>خصم وديعة مرمَّزة X،<br/>وقيد وديعة مرمَّزة Y،<br/>الشرط = ساق CBDC بالجملة
+    UL->>UL: التحقق من مغلَّف ISO 20022،<br/>والعنوان المهيكل، وLEI،<br/>ورمز الغرض، وAML/العقوبات
+    UL->>CBNK: حجز CBDC بالجملة<br/>(احتياطيات المصرف المركزي لجانب الدافع)
+    CBNK-->>UL: تأكيد الحجز<br/>(قفل ذري)
+    UL->>CB_A: قفل وديعة مرمَّزة X<br/>(ساق نقود المصرف التجاري)
+    CB_A-->>UL: تأكيد قفل الوديعة
+    UL->>UL: قُفلت كلتا الساقين →<br/>تحفيز التسوية الذرية
+    UL->>CBNK: تسوية CBDC بالجملة<br/>(احتياطيات الدافع → احتياطيات المستفيد)
+    UL->>CB_B: إصدار وديعة مرمَّزة Y<br/>(ساق نقود المصرف التجاري)
+    CBNK-->>UL: تسوية CBDC نهائية
+    CB_B-->>UL: قُيِّدت الوديعة
+    UL->>CB_A: تسوية PvP مكتملة<br/>(الساقان نهائيتان أو تتراجعان معًا)
+    UL->>CB_B: تسوية PvP مكتملة
+```
+
+التسوية ذرية بحكم التصميم: إما أن تثبت كلتا الساقين أو تتراجعا معًا. نهائية التسوية على ساق CBDC بالجملة تجعل تحويل الوديعة المرمَّزة للمصرف التجاري ساري المفعول دون مخاطرة المراسلة. السجل الموحَّد هو مستوى التنسيق، وليس نظام دفع قائمًا بذاته — فالمصرف المركزي لا يزال يُصدِر أصل التسوية، والمصرف التجاري لا يزال يُقيِّد التزام الوديعة.
 
 ## منتج المدفوعات بالجملة الجديد
 
@@ -206,9 +249,9 @@ site_software: "Static Site Generator, Rust"
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">قراءات ذات صلة</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026" class="related-media" aria-label="ISO 20022 بعد الترحيل: تحويل بيانات المدفوعات إلى منتجات مصرفية في 2026" tabindex="-1"><img alt="مخطط تحوُّل بيانات ISO 20022 إلى منتجات مصرفية بعد الترحيل في 2026" src="https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026">ISO 20022 بعد الترحيل: تحويل بيانات المدفوعات إلى منتجات مصرفية في 2026</a></h3><p><time datetime="2026-05-29">2026-05-29</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026" class="related-media" aria-label="العملات المستقرة مقابل الودائع المرمَّزة في 2026: ما الذي يجب على البنوك الدفاع عنه فعلاً" tabindex="-1"><img alt="مقارنة بين العملات المستقرة والودائع المرمَّزة لاستراتيجية المصارف في 2026" src="https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026">العملات المستقرة مقابل الودائع المرمَّزة في 2026: ما الذي يجب على البنوك الدفاع عنه فعلاً</a></h3><p><time datetime="2026-05-26">2026-05-26</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026" class="related-media" aria-label="اقتصاديات المدفوعات بالجملة العالمية في 2026" tabindex="-1"><img alt="مخطط اقتصاديات المدفوعات بالجملة العالمية لعام 2026" src="https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026">اقتصاديات المدفوعات بالجملة العالمية في 2026</a></h3><p><time datetime="2026-05-19">2026-05-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026" class="related-media" aria-label="ISO 20022 بعد الترحيل: تحويل بيانات المدفوعات إلى منتجات مصرفية في 2026" tabindex="-1"><img alt="مخطط تحوُّل بيانات ISO 20022 إلى منتجات مصرفية بعد الترحيل في 2026" src="https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026">ISO 20022 بعد الترحيل: تحويل بيانات المدفوعات إلى منتجات مصرفية في 2026</a></h3><p><time datetime="2026-05-29">2026-05-29</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026" class="related-media" aria-label="العملات المستقرة مقابل الودائع المرمَّزة في 2026: ما الذي يجب على البنوك الدفاع عنه فعلاً" tabindex="-1"><img alt="مقارنة بين العملات المستقرة والودائع المرمَّزة لاستراتيجية المصارف في 2026" src="https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026">العملات المستقرة مقابل الودائع المرمَّزة في 2026: ما الذي يجب على البنوك الدفاع عنه فعلاً</a></h3><p><time datetime="2026-05-26">2026-05-26</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026" class="related-media" aria-label="اقتصاديات المدفوعات بالجملة العالمية في 2026" tabindex="-1"><img alt="مخطط اقتصاديات المدفوعات بالجملة العالمية لعام 2026" src="https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026">اقتصاديات المدفوعات بالجملة العالمية في 2026</a></h3><p><time datetime="2026-05-19">2026-05-19</time></p></footer></article>
 </div>
 </aside>
 <!-- enrich-end -->

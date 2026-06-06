@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "ทะเบียนภาพของการเปลี่ยนผ่านการชำระเงินขายส่งในปี 2026 — การย้ายข้อความหลีกทางให้กับการชำระบัญชีแบบโปรแกรมได้ข้าม ISO 20022 เงินฝากแบบโทเคน รางเรียลไทม์ และการชำระบัญชีข้ามพรมแดนแบบ atomic"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp"
+banner: "https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -131,23 +131,66 @@ Stanford AI Index มีประโยชน์เพราะปฏิบั�
 | **สภาพคล่อง** | ปรับสภาพคล่องระหว่างวัน เงินสดที่ติดล็อก และหน้าต่างการชำระบัญชีให้เหมาะ | สภาพคล่องที่ประหยัดและการลดความล้มเหลวในการชำระบัญชี | การระบายสภาพคล่องที่เร็วขึ้น |
 | **การกำกับ** | ฝัง AML, sanctions, FATF และข้อกำหนดบันทึกการตรวจสอบเข้าในข้อมูลการชำระเงิน | การปฏิบัติตามแบบ straight-through และการอธิบายได้ | ข้อมูลที่ละเอียดขึ้นโดยไม่มีการควบคุมที่แข็งแกร่งขึ้น |
 
-## สัญญาณปัจจุบันที่ต้องติดตาม
+## สัญญาณการชำระเงินขายส่งที่จับคู่กับลำดับความสำคัญระดับโลก
 
-| สัญญาณ | ความหมายต่อธนาคาร | แหล่งที่มา |
+ชุดสัญญาณปี 2026 ไม่ใช่วาระการวิจัย แต่เป็นรายการตรวจสอบการส่งมอบที่ Chief Payments Officer ของธนาคารถูกวัดอยู่แล้ว งานแก้ไขปรากฏในสามจุด: ซองข้อความ ชั้นการประสานราง และบัญชีแยกประเภทการชำระบัญชี
+
+| สัญญาณ | อ้างอิง G20 / SWIFT / BIS | การใช้งานบนแพลตฟอร์มทางเทคนิค |
 |---|---|---|
-| **65% ของข้อความการชำระเงินมีที่อยู่ไม่มีโครงสร้าง** | ความท้าทายการแก้ไขยังใหญ่ | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **ที่อยู่ไม่มีโครงสร้างถูกลบหลังพฤศจิกายน 2026** | ความพร้อมข้อมูลการชำระเงินกลายเป็นเรื่องด่วน | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **Project Agorá ระยะต้นแบบ** | การชำระบัญชีแบบโทเคนถูกทดสอบในการตั้งค่าธนาคารกลาง-ธนาคารพาณิชย์ | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **FSB ระยะการดำเนินการ** | การปรับปรุงการชำระเงินข้ามพรมแดนยังคงเป็นความสำคัญเชิงนโยบายระดับโลก | [FSB ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Cross-border payments implementation phase") |
-| **กรอบเงินดิจิทัลของ Deutsche Bank** | Stablecoin เงินฝากแบบโทเคน และ CBDC กำลังกลายเป็นหัวข้อสถาปัตยกรรม corporate-bank เชิงปฏิบัติ | [Deutsche Bank ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") |
+| **65 % ของข้อความการชำระเงินยังมีที่อยู่แบบไม่มีโครงสร้าง** | [SWIFT SR 2026 — หมุดหมายที่อยู่แบบโครงสร้าง พ.ย. 2026 ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") | การตรวจสอบสคีมาใน middleware การชำระเงินก่อนข้อความเข้าสู่ SWIFTNet adapter; การแยกวิเคราะห์ที่อยู่อัตโนมัติที่จุดรับเข้าจากช่องทางองค์กร + ธนาคารตัวกลาง |
+| **เป้าหมาย FSB G20: 75 % ของการชำระเงินข้ามพรมแดนเสร็จภายใน 1 ชั่วโมงภายในปี 2027** | [FSB roadmap การชำระเงินข้ามพรมแดน ระยะการดำเนินการปี 2026 ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | เกตเวย์แปลง FX แบบเรียลไทม์พร้อมหน้าต่างสภาพคล่องที่ตกลงล่วงหน้า; hook ยืนยัน T+0 เข้าสู่พอร์ทัลลูกค้า; เครื่องมือกำหนดเส้นทางรางที่ตัดระเบียงที่ไม่สามารถปฏิบัติตามซอง 1 ชม. ออก |
+| **เป้าหมาย FSB G20: ต้นทุนธุรกรรมข้ามพรมแดนเฉลี่ยต่ำกว่า 1 % สำหรับรายย่อยต่ำกว่า 3 %** | [เป้าหมายเชิงปริมาณ FSB G20 ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | telemetry การประมาณการต้นทุนต่อทุกระเบียง (สเปรด FX ค่าธรรมเนียมตัวกลาง ต้นทุนยก); ทะเบียนนโยบายส่วนต่างที่เปิดเผยการตั้งราคาที่ไม่ปฏิบัติตามก่อนเสนอราคา |
+| **BIS Project Agorá เข้าสู่ระยะต้นแบบข้ามธนาคารกลางเจ็ดแห่ง + ธนาคารพาณิชย์ 41 แห่ง** | [BIS Project Agorá ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") | สเปคบูรณาการบัญชีแยกประเภทรวม: โหนดบัญชีแยกประเภทเงินฝากแบบโทเคน + plane การชำระบัญชี wholesale CBDC + hook KYC/AML; พูล on-chain ที่ขนาดตามส่วนแบ่งระเบียงของธนาคาร |
+| **กรอบ "digital money" ของ Deutsche Bank ตกผลึกในสถาปัตยกรรมลูกค้า** | [Deutsche Bank — Digital Money: stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") | API การชำระบัญชีที่ไม่ผูกกับ wallet ซึ่งจัดการการเลือก stablecoin / เงินฝากแบบโทเคน / CBDC ต่อรายการ; เงื่อนไขโปรแกรมได้ที่ประเมินกับทะเบียนนโยบายของธนาคาร ไม่ใช่ของลูกค้า |
 
 ## จุดเปลี่ยนของข้อมูลการชำระเงิน
 
 ISO 20022 ได้เคลื่อนจากโครงการรูปแบบข้อความสู่โมเดลปฏิบัติการคุณภาพข้อมูล ถ้าข้อมูลผู้รับผลประโยชน์ ผู้ชำระเงิน เจ้าหนี้ เอเจนต์ เมือง ประเทศ วัตถุประสงค์ และข้อมูลคู่กรณีอ่อน ธนาคารจะประสบการปฏิเสธ การแก้ไข แรงเสียดทานด้าน sanctions ความหงุดหงิดของลูกค้า และการวิเคราะห์ที่อ่อน
 
+**SR 2026 ทำให้สิ่งนี้กลายเป็นสัญญาที่บังคับ ไม่ใช่คำแนะนำ** SWIFT Standards Release 2026 (พฤศจิกายน 2026) บังคับใช้กฎที่อยู่แบบโครงสร้างที่ชั้นเครือข่าย — ข้อความที่ element `<PstlAdr>` ไม่บรรจุ `<TwnNm>` และ `<Ctry>` จะถูกปฏิเสธทันทีที่รับโดย validation stack ของ SWIFTNet ไม่ใช่ถูกตั้งธงให้แก้ไข คิวการแก้ไขหยุดเป็นเส้นต้นทุนของ back-office และกลายเป็นเหตุการณ์ความล้มเหลวของการชำระบัญชีพร้อมความล่าช้าที่ลูกค้าเห็น ทีมปฏิบัติการที่ปฏิบัติต่อ SR 2026 ในฐานะ "คำแนะนำที่เข้มขึ้น" กำลังทำงานจาก runbook ที่ผิด
+
+### การปฏิบัติตามข้อมูลการชำระเงินแบบโครงสร้างภายใต้ ISO 20022
+
+พื้นที่การแก้ไขแคบและกำหนดชัดเจน element XML ด้านล่างคือจุดที่ validation stack ของ SWIFTNet เดือนพฤศจิกายน 2026 ปฏิเสธข้อความจริง ทุกอย่างที่เหลือคือผลกระทบปลายน้ำ
+
+| Data Element | ISO 20022 XML Tag | ข้อกำหนด SWIFT พฤศจิกายน 2026 | กลยุทธ์การแก้ไขทางเทคนิค |
+|---|---|---|---|
+| **ที่อยู่แบบโครงสร้าง** | `<PstlAdr>` บรรจุ `<TwnNm>` + `<Ctry>` | บังคับ ข้อความ `<AdrLine>` แบบไม่มีโครงสร้างจะกระตุ้นการปฏิเสธที่เครือข่ายที่ SWIFTNet adapter ฝั่งรับ | การแยกวิเคราะห์ที่อยู่อัตโนมัติที่จุดเริ่มต้นการชำระเงิน; การเขียนฟอร์มช่องทางองค์กรใหม่; การล้างข้อมูลคู่สัญญาทุกรายในสมุดเก่าก่อนการหักบัญชีครั้งถัดไป |
+| **Legal Entity Identifier (LEI)** | `<Id>` ภายใต้ `<OrgId>` | แนะนำอย่างยิ่งสำหรับการตรวจสอบคู่สัญญาทางการเงินที่ไม่ใช่บุคคล; บังคับในระเบียง CBPR+ หลายระเบียง | ค้นหา LEI + cross-check กับ GLEIF ณ การ onboarding องค์กร; การเสริมข้อมูลอัตโนมัติสำหรับคู่สัญญาในสมุดเก่าผ่านบริการข้อมูลอ้างอิง |
+| **รหัสวัตถุประสงค์การชำระเงิน** | `<Purp>` บรรจุ `<Cd>` | บังคับในระเบียงเรียลไทม์ระดับภูมิภาคหลายแห่ง (CBPR+, SEPA Inst, TIPS) สำหรับการคัดกรอง AML / sanctions อัตโนมัติ | จับคู่รหัสธุรกรรมภายในธนาคารแบบเก่ากับรายการ ISO 20022 ExternalPurposeCode มาตรฐาน; เปิดเผยการเลือกวัตถุประสงค์ใน UI ช่องทางองค์กร; default-deny กับรหัสที่ไม่รู้จัก |
+| **คู่สัญญาขั้นสุดท้าย** | `<UltmtDbtr>` / `<UltmtCdtr>` | เปิดเผยบริบทผู้รับผลประโยชน์ขั้นสุดท้ายเพื่อปฏิบัติตามพารามิเตอร์ travel-rule G20 FATF + sanctions; บังคับสำหรับรหัสประเภทการชำระเงินหลายรหัส | ดึงชื่อคู่สัญญาแบบ end-to-end จากบัญชีย่อยของบัญชีแยกประเภท; กระทบยอดกับ KYC graph; เปิดเผยคู่สัญญาขั้นสุดท้ายในการยืนยันทุกครั้ง |
+| **ข้อมูลการโอน (แบบโครงสร้าง)** | `<RmtInf><Strd>` กับ `<RfrdDocInf>` | จำเป็นสำหรับการชำระเงินองค์กรที่เชื่อมโยงใบแจ้งหนี้แบบกระทบยอดได้ภายใต้ CBPR+ ระยะ 2 | จับข้อมูลการโอนแบบโครงสร้าง ณ เวลาเสนอราคาในพอร์ทัลองค์กร; ปฏิเสธ fallback แบบข้อความอิสระสำหรับกระแสมูลค่าสูง |
+
 ## เงินฝากแบบโทเคนและ CBDC ขายส่ง
 
 เงินฝากแบบโทเคนรักษาโมเดลเงินของธนาคารพาณิชย์พร้อมเพิ่มความสามารถโปรแกรมได้ เงินธนาคารกลางขายส่งรักษาความขั้นสุดของการชำระบัญชี รูปแบบการออกแบบที่น่าสนใจคือการรวมกัน: เงินธนาคารพาณิชย์สำหรับความสัมพันธ์ลูกค้าและการเป็นตัวกลางสินเชื่อ เงินธนาคารกลางสำหรับการชำระบัญชีขั้นสุดและความเชื่อมั่นเชิงระบบ
+
+Project Agorá ทำให้การรวมกันเป็นรูปธรรม สถาปัตยกรรมด้านล่างคือรูปแบบอ้างอิงของ BIS สำหรับการชำระบัญชีข้ามพรมแดนแบบ atomic ชำระเงิน-ต่อ-ชำระเงิน (PvP) โดยใช้ทั้งบัญชีแยกประเภทเงินฝากธนาคารพาณิชย์และ plane การชำระบัญชี wholesale CBDC โดยประสานผ่านบัญชีแยกประเภทรวม
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant CB_A as Commercial Bank A<br/>(payer side)
+    participant UL as Unified Ledger<br/>(BIS Agorá coordination plane)
+    participant CBNK as Central Bank<br/>(wholesale CBDC issuer)
+    participant CB_B as Commercial Bank B<br/>(payee side)
+
+    CB_A->>UL: Submit instruction:<br/>debit tokenised deposit X,<br/>credit tokenised deposit Y,<br/>condition = wholesale CBDC leg
+    UL->>UL: Validate ISO 20022 envelope,<br/>structured address, LEI,<br/>purpose code, AML/sanctions
+    UL->>CBNK: Reserve wholesale CBDC<br/>(payer-side central-bank reserves)
+    CBNK-->>UL: Reservation confirmed<br/>(atomic lock)
+    UL->>CB_A: Lock tokenised deposit X<br/>(commercial-bank money leg)
+    CB_A-->>UL: Deposit lock confirmed
+    UL->>UL: Both legs locked →<br/>atomic settlement trigger
+    UL->>CBNK: Settle wholesale CBDC<br/>(payer reserves → payee reserves)
+    UL->>CB_B: Issue tokenised deposit Y<br/>(commercial-bank money leg)
+    CBNK-->>UL: CBDC settlement finalised
+    CB_B-->>UL: Deposit credited
+    UL->>CB_A: PvP settlement complete<br/>(both legs final or both legs roll back)
+    UL->>CB_B: PvP settlement complete
+```
+
+การชำระบัญชีเป็น atomic โดยโครงสร้าง: ทั้งสองขา commit หรือทั้งคู่ roll back ความขั้นสุดของการชำระบัญชีบนขา wholesale CBDC ทำให้การโอนเงินฝากแบบโทเคนของธนาคารพาณิชย์มีผลโดยไม่มีความเสี่ยงตัวกลาง บัญชีแยกประเภทรวมคือ plane การประสาน ไม่ใช่ระบบการชำระเงินในตัวเอง — ธนาคารกลางยังออกสินทรัพย์การชำระบัญชี และธนาคารพาณิชย์ยังบันทึกหนี้สินเงินฝาก
 
 ## ผลิตภัณฑ์การชำระเงินขายส่งใหม่
 

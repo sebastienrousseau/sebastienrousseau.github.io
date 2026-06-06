@@ -1,11 +1,11 @@
 {
-  "subtitle": "AI agentik telah beralih dari percontohan ke produksi. 70% bank menggunakannya; hanya satu dari lima yang memiliki model tata kelola matang. Musuh beroperasi sekecepatan mesin, warisan ditulis untuk asumsi pemrosesan batch 1960-an, dan tenggat risiko tinggi EU AI Act tinggal dua belas minggu lagi.",
-  "description": "AI agentik telah beralih dari percontohan ke produksi di perbankan global. 70% institusi menggunakannya; hanya satu dari lima yang memiliki model tata kelola matang. Musuh otonom beroperasi sekecepatan mesin, warisan COBOL ditulis untuk asumsi pemrosesan batch 1960-an, dan tenggat risiko tinggi EU AI Act Agustus 2026 tinggal dua belas minggu lagi.",
-  "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
   "banner_alt": "Diagram arsitektur rekayasa agentik untuk bank — agen AI berbasis spec-driven, control plane tata kelola, substrat aman-kuantum, dan alur modernisasi mainframe warisan",
-  "date": "May 17, 2026",
-  "title": "[ID DRAFT] Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It",
   "locale": "id_ID",
+  "subtitle": "AI agentik telah beralih dari percontohan ke produksi. 70% bank menggunakannya; hanya satu dari lima yang memiliki model tata kelola matang. Musuh beroperasi sekecepatan mesin, warisan ditulis untuk asumsi pemrosesan batch 1960-an, dan tenggat risiko tinggi EU AI Act tinggal dua belas minggu lagi.",
+  "keywords": "rekayasa agentik, spec-driven development, bank, layanan keuangan, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001, COBOL modernisation, mainframe, vibe coding, vibe hacking, autonomous agents, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, manajemen risiko pihak ketiga, TPRM, vendor risk, post-quantum cryptography, agent control plane, FCA, SM&CR, rencana aksi 12 minggu, Sebastien Rousseau",
+  "title": "[ID DRAFT] Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It",
+  "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
+  "date": "May 17, 2026",
   "language": "id-ID",
-  "keywords": "rekayasa agentik, spec-driven development, bank, layanan keuangan, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001, COBOL modernisation, mainframe, vibe coding, vibe hacking, autonomous agents, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, manajemen risiko pihak ketiga, TPRM, vendor risk, post-quantum cryptography, agent control plane, FCA, SM&CR, rencana aksi 12 minggu, Sebastien Rousseau"
+  "description": "AI agentik telah beralih dari percontohan ke produksi di perbankan global. 70% institusi menggunakannya; hanya satu dari lima yang memiliki model tata kelola matang. Musuh otonom beroperasi sekecepatan mesin, warisan COBOL ditulis untuk asumsi pemrosesan batch 1960-an, dan tenggat risiko tinggi EU AI Act Agustus 2026 tinggal dua belas minggu lagi."
 }

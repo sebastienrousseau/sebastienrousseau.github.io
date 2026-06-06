@@ -1,11 +1,11 @@
 {
+  "banner_alt": "HSBC desde los muelles",
+  "locale": "es_ES",
   "title": "La distribución cuántica de claves revoluciona la seguridad bancaria",
+  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
+  "keywords": "distribución cuántica de claves, QKD, seguridad cuántica, banca, industria financiera, finanzas digitales, ciberseguridad, computación cuántica, HSBC, ensayo de protección cuántica, transacciones financieras",
   "description": "Mientras los ordenadores cuánticos amenazan los métodos de cifrado clásicos, la distribución cuántica de claves (QKD) emerge como un game-changer, ofreciendo una seguridad sin parangón.",
   "date": "December 11, 2023",
   "subtitle": "Distribución cuántica de claves (QKD) para una seguridad de nivel financiero",
-  "keywords": "distribución cuántica de claves, QKD, seguridad cuántica, banca, industria financiera, finanzas digitales, ciberseguridad, computación cuántica, HSBC, ensayo de protección cuántica, transacciones financieras",
-  "banner_alt": "HSBC desde los muelles",
-  "locale": "es_ES",
-  "language": "es-ES",
-  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp"
+  "language": "es-ES"
 }

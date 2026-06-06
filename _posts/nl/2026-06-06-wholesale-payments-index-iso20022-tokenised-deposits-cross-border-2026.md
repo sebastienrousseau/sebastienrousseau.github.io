@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Visueel register voor de verschuiving in grootschalig betalingsverkeer in 2026 — berichtenmigratie maakt plaats voor programmeerbare afwikkeling over ISO 20022, getokeniseerde deposito's, real-time rails en grensoverschrijdende atomiciteit."
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp"
+banner: "https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -131,23 +131,66 @@ De praktische vraag voor een bank is niet of elk domein belangrijk is. De vraag 
 | **Liquiditeit** | Optimaliseer intraday-liquiditeit, vastzittend kasgeld en afwikkelvensters | Bespaarde liquiditeit en daling van afwikkelfalen | Snellere uitstroom van liquiditeit |
 | **Compliance** | Verweef AML, sancties, FATF en audit-eisen in betalingsdata | Straight-through compliance en verklaarbaarheid | Rijkere data zonder sterkere vangrails |
 
-## Actuele signalen om te volgen
+## Belangrijkste signalen in grootschalig betalingsverkeer, afgezet tegen mondiale prioriteiten
 
-| Signaal | Wat het betekent voor banken | Bron |
+De signalenset van 2026 is geen onderzoeksagenda. Het is een opleverlijst waarop de Chief Payments Officer van een bank al wordt afgerekend. Het remediatiewerk landt op drie plekken: de berichtenenvelop, de laag voor railorkestratie en het afwikkelingsgrootboek.
+
+| Signaal | G20- / SWIFT- / BIS-referentie | Technische platformimplementatie |
 |---|---|---|
-| **65% van de betaalberichten bevat ongestructureerde adressen** | De remediatie-opgave is nog groot | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022-mijlpaal november 2026 gestructureerd adres") |
-| **Ongestructureerde adressen verwijderd na november 2026** | Gereedheid van betalingsdata wordt urgent | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022-mijlpaal november 2026 gestructureerd adres") |
-| **Project Agorá in prototypefase** | Getokeniseerde afwikkeling wordt getoetst in een opzet met centrale banken en commerciële banken | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **FSB-implementatiefase** | Verbetering van grensoverschrijdende betalingen blijft een mondiale beleidsprioriteit | [FSB ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Implementatiefase grensoverschrijdende betalingen") |
-| **Kader digitaal geld van Deutsche Bank** | Stablecoins, getokeniseerde deposito's en CBDC's worden een praktisch architectuurthema voor corporate banking | [Deutsche Bank ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digitaal geld: stablecoins, getokeniseerde deposito's en CBDC's") |
+| **65% van de betaalberichten bevat nog ongestructureerde adressen** | [SWIFT SR 2026 — mijlpaal gestructureerd adres, nov. 2026 ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022-mijlpaal november 2026 gestructureerd adres") | Schemavalidatie in de betaal-middleware vóór het bericht de SWIFTNet-adapter raakt; geautomatiseerde adresontleding bij ingress vanuit corporate-kanalen en correspondentbanken. |
+| **FSB G20-doel: 75% van de grensoverschrijdende betalingen binnen 1 uur afgerond in 2027** | [FSB-stappenplan grensoverschrijdende betalingen, implementatiefase 2026 ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Implementatiefase grensoverschrijdende betalingen") | Real-time FX-conversiegateways met vooraf overeengekomen liquiditeitsvensters; T+0-bevestigingshaken in het klantportaal; routing-engine voor rails die elke corridor uitsluit die de 1 uur-envelop niet haalt. |
+| **FSB G20-doel: gemiddelde kosten grensoverschrijdende transactie onder 1%, retail onder 3%** | [Kwantitatieve FSB G20-doelen ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Implementatiefase grensoverschrijdende betalingen") | Telemetrie voor kostenattributie per corridor (FX-spread, correspondent-fee, lifting cost); registry voor margebeleid dat niet-conforme prijsstelling vóór de quote zichtbaar maakt. |
+| **BIS Project Agorá in prototypefase met zeven centrale banken en 41 commerciële banken** | [BIS Project Agorá ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") | Integratiespec voor de unified ledger: node voor het grootboek van getokeniseerde deposito's + afwikkelingsvlak voor wholesale-CBDC + KYC/AML-haken; on-chain liquiditeitspools die zijn gedimensioneerd op het corridoraandeel van de bank. |
+| **Kader "digitaal geld" van Deutsche Bank krijgt vorm in klantarchitectuur** | [Deutsche Bank — Digital Money: stablecoins, getokeniseerde deposito's en CBDC's ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digitaal geld: stablecoins, getokeniseerde deposito's en CBDC's") | Wallet-agnostische afwikkel-API die per betaling de keuze tussen stablecoin, getokeniseerd deposito en CBDC abstraheert; programmeerbare voorwaarden worden getoetst aan het policy register van de bank, niet aan dat van de klant. |
 
 ## Het kantelpunt in betalingsdata
 
 ISO 20022 is verschoven van een berichtenformaatproject naar een operating model voor datakwaliteit. Als de gegevens over begunstigde, debiteur, crediteur, agent, plaats, land, doel en partij zwak zijn, dan krijgt de bank weigeringen, reparaties, sanctiefrictie, klantfrustratie en zwakke analytics.
 
+**SR 2026 maakt hier een hard contract van, geen advies.** SWIFT Standards Release 2026 (november 2026) handhaaft de regel voor gestructureerd adres op netwerkniveau — berichten waarvan het `<PstlAdr>`-element geen `<TwnNm>` en `<Ctry>` bevat, worden bij ontvangst door de SWIFTNet-validatiestack geweigerd, niet gemarkeerd voor reparatie. De reparatiewachtrij is geen back-office-kostenpost meer, maar een afwikkelingsfalen met klantzichtbare vertraging. Operationele teams die SR 2026 als "strakkere richtlijn" behandelen, werken met het verkeerde draaiboek.
+
+### Compliance van gestructureerde betalingsdata onder ISO 20022
+
+Het remediatie-oppervlak is smal en scherp afgebakend. De onderstaande XML-elementen zijn de plekken waar de SWIFTNet-validatiestack van november 2026 berichten daadwerkelijk laat falen; al het overige is een afgeleid gevolg.
+
+| Data-element | ISO 20022 XML-tag | Eis SWIFT november 2026 | Strategie technische remediatie |
+|---|---|---|---|
+| **Gestructureerd adres** | `<PstlAdr>` met `<TwnNm>` + `<Ctry>` | Verplicht. Ongestructureerde `<AdrLine>`-tekst veroorzaakt netwerkweigering bij de ontvangende SWIFTNet-adapter. | Geautomatiseerde adresontleding bij betaalinitiatie; herschrijven van corporate-kanaalformulieren; back-book-opschoning op elke counterparty vóór de volgende debet. |
+| **Legal Entity Identifier (LEI)** | `<Id>` onder `<OrgId>` | Sterk aanbevolen voor verificatie van niet-individuele financiële tegenpartijen; verplicht in meerdere CBPR+-corridors. | LEI-lookup + GLEIF-controle bij corporate onboarding; automatische verrijking voor back-book-counterparties via referentiegegevensdiensten. |
+| **Codes voor betalingsdoel** | `<Purp>` met `<Cd>` | Verplicht in meerdere regionale real-time corridors (CBPR+, SEPA Inst, TIPS) voor geautomatiseerde AML- en sanctiescreening. | Map de oude bank-interne transactiecodes naar de standaard ISO 20022-lijst ExternalPurposeCode; toon de doel-selectie in de UI van het corporate-kanaal; default-deny bij onbekende codes. |
+| **Ultimate parties** | `<UltmtDbtr>` / `<UltmtCdtr>` | Maak de uiteindelijke begunstigde-context zichtbaar voor de G20-FATF travel rule en sanctieparameters; verplicht voor meerdere betaaltypecodes. | Haal end-to-end-partijnamen uit grootboek-subrekeningen; reconcilieer tegen de KYC-graaf; toon de uiteindelijke partij op elke bevestiging. |
+| **Betalingsinformatie (gestructureerd)** | `<RmtInf><Strd>` met `<RfrdDocInf>` | Vereist voor reconcilieerbare, aan facturen gekoppelde corporate betalingen onder CBPR+ fase 2. | Leg gestructureerde remittance vast op het moment van quote in het corporate-portaal; weiger free-text-fallback voor high-value flows. |
+
 ## Getokeniseerde deposito's en wholesale CBDC
 
 Getokeniseerde deposito's behouden het model van commerciëlebankgeld en voegen programmeerbaarheid toe. Wholesale centralebankgeld behoudt de afwikkelingsfinaliteit. Het interessante ontwerppatroon is de combinatie: commerciëlebankgeld voor klantrelaties en kredietintermediatie, centralebankgeld voor eindafwikkeling en systemisch vertrouwen.
+
+Project Agorá maakt de combinatie concreet. De onderstaande architectuur is het BIS-referentiepatroon voor een atomische, payment-versus-payment (PvP) grensoverschrijdende afwikkeling waarbij zowel een grootboek voor commerciëlebankdeposito's als een afwikkelingsvlak voor wholesale-CBDC wordt gebruikt, gecoördineerd via een unified ledger.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant CB_A as Commerciële Bank A<br/>(betalerzijde)
+    participant UL as Unified Ledger<br/>(BIS Agorá-coördinatievlak)
+    participant CBNK as Centrale Bank<br/>(uitgever wholesale-CBDC)
+    participant CB_B as Commerciële Bank B<br/>(begunstigde zijde)
+
+    CB_A->>UL: Stuur instructie:<br/>debiteer getokeniseerd deposito X,<br/>crediteer getokeniseerd deposito Y,<br/>voorwaarde = wholesale-CBDC-been
+    UL->>UL: Valideer ISO 20022-envelop,<br/>gestructureerd adres, LEI,<br/>doelcode, AML/sancties
+    UL->>CBNK: Reserveer wholesale-CBDC<br/>(centralebankreserves betalerzijde)
+    CBNK-->>UL: Reservering bevestigd<br/>(atomische lock)
+    UL->>CB_A: Lock getokeniseerd deposito X<br/>(been commerciëlebankgeld)
+    CB_A-->>UL: Deposito-lock bevestigd
+    UL->>UL: Beide benen gelockt →<br/>atomische afwikkeltrigger
+    UL->>CBNK: Wikkel wholesale-CBDC af<br/>(reserves betaler → reserves begunstigde)
+    UL->>CB_B: Geef getokeniseerd deposito Y uit<br/>(been commerciëlebankgeld)
+    CBNK-->>UL: CBDC-afwikkeling gefinaliseerd
+    CB_B-->>UL: Deposito bijgeschreven
+    UL->>CB_A: PvP-afwikkeling voltooid<br/>(beide benen finaal of beide benen teruggedraaid)
+    UL->>CB_B: PvP-afwikkeling voltooid
+```
+
+De afwikkeling is per constructie atomisch: beide benen committen of beide benen draaien terug. Afwikkelingsfinaliteit op het wholesale-CBDC-been maakt de overdracht van het getokeniseerde commerciëlebankdeposito effectief zonder correspondent-risico. De unified ledger is het coördinatievlak, geen zelfstandig betaalsysteem — de centrale bank blijft het afwikkelingsactief uitgeven en de commerciële bank blijft de depositoverplichting boeken.
 
 ## Het nieuwe wholesale betaalproduct
 

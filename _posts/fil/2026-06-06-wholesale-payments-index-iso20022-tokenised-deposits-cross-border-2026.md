@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Visual na talatuntunan para sa wholesale-payments shift sa 2026 — paglilipat ng messaging na nagbibigay-daan sa programmable settlement sa ISO 20022, tokenised deposits, real-time rails, at cross-border atomicity."
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp"
+banner: "https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -131,23 +131,66 @@ Hindi kung mahalaga ba ang bawat domain ang praktikal na tanong para sa isang ba
 | **Liquidity** | I-optimise ang intraday liquidity, trapped cash, at settlement windows | Naipon na liquidity at pagbawas sa settlement failure | Mas mabilis na pag-ubos ng liquidity |
 | **Compliance** | Ilagay ang AML, sanctions, FATF, at audit requirements sa payment data | Straight-through compliance at explainability | Mas mayamang data nang walang mas matibay na kontrol |
 
-## Mga Kasalukuyang Senyales na Bantayan
+## Mga Pangunahing Senyales ng Wholesale Payments na Itinugma sa Mga Pandaigdigang Prayoridad
 
-| Senyales | Ano ang Kahulugan Nito para sa Mga Bangko | Pinagmulan |
+Hindi research agenda ang 2026 signal set. Isa itong delivery checklist na kasalukuyang sinusukat sa Chief Payments Officer ng isang bangko. Sa tatlong lugar lumilitaw ang remediation work: ang message envelope, ang rail orchestration layer, at ang settlement ledger.
+
+| Senyales | Sanggunian ng G20 / SWIFT / BIS | Teknikal na Pagpapatupad sa Platform |
 |---|---|---|
-| **65% ng mga payment message ay naglalaman ng unstructured addresses** | Malaki pa rin ang hamon ng remediation | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **Tatanggalin ang unstructured addresses pagkatapos ng Nobyembre 2026** | Nagiging madalian ang kahandaan ng payment data | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **Prototype phase ng Project Agorá** | Sinusubukan ang tokenised settlement sa isang central-bank at commercial-bank na setting | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Implementation phase ng FSB** | Nananatiling pandaigdigang prayoridad ng patakaran ang cross-border payment enhancement | [FSB ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Cross-border payments implementation phase") |
-| **Digital money framework ng Deutsche Bank** | Nagiging praktikal na paksa sa corporate-bank architecture ang stablecoins, tokenised deposits, at CBDCs | [Deutsche Bank ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") |
+| **65% ng mga payment message ay naglalaman pa rin ng unstructured addresses** | [SWIFT SR 2026 — structured-address milestone, Nob 2026 ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") | Schema validation sa payment middleware bago tumama ang mensahe sa SWIFTNet adapter; automated address parsing sa corporate-channel + correspondent-bank ingress. |
+| **FSB G20 target: 75% ng cross-border payments matapos sa loob ng 1 oras pagsapit ng 2027** | [FSB cross-border payments roadmap, 2026 implementation phase ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | Real-time FX-conversion gateways na may pre-agreed liquidity windows; T+0 confirmation hooks sa client portal; rail-routing engine na hindi pumipili ng anumang corridor na hindi kayang matupad ang 1-oras na sukatan. |
+| **FSB G20 target: average cross-border transaction cost na mababa sa 1%, retail na mababa sa 3%** | [FSB G20 quantitative targets ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | Cost-attribution telemetry sa bawat corridor (FX spread, correspondent fee, lifting cost); margin policy registry na naglalantad ng non-compliant pricing bago mag-quote. |
+| **Papasok sa prototype phase ang BIS Project Agorá sa pitong central bank + 41 commercial bank** | [BIS Project Agorá ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") | Unified-ledger integration spec: tokenised-deposit ledger node + wholesale-CBDC settlement plane + KYC/AML hooks; on-chain liquidity pools na ayon sa bahagi ng bangko sa corridor. |
+| **Nagiging maliwanag ang "digital money" framework ng Deutsche Bank sa client architecture** | [Deutsche Bank — Digital Money: stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") | Wallet-agnostic settlement API na nag-aabstract ng pagpili ng stablecoin / tokenised-deposit / CBDC bawat bayad; programmable conditions na sinusuri laban sa policy registry ng bangko, hindi ng kliyente. |
 
 ## Ang Inflection Point ng Payment Data
 
 Lumipat na ang ISO 20022 mula sa proyekto ng messaging format patungo sa operating model para sa kalidad ng data. Kung mahina ang data ng beneficiary, debtor, creditor, agent, bayan, bansa, layunin, at party, makakaranas ang bangko ng mga reject, repair, sanctions friction, pagkadismaya ng kliyente, at mahinang analytics.
 
+**Ginagawang matigas na kontrata, hindi advisory, ng SR 2026 ang bagay na ito.** Ipinapatupad ng SWIFT Standards Release 2026 (Nobyembre 2026) ang structured-address na patakaran sa network layer — mga mensahe na ang `<PstlAdr>` element ay hindi nagdadala ng `<TwnNm>` at `<Ctry>` ay tatanggihan sa pagtanggap ng SWIFTNet validation stack, hindi ima-flag para sa pag-aayos. Hindi na isang back-office cost line ang repair queue kundi isang settlement-failure event na may client-visible delay. Nasa maling runbook ang mga operations team na itinuturing ang SR 2026 bilang "mas mahigpit na gabay" lamang.
+
+### Pagsunod sa Structured Payment Data sa ilalim ng ISO 20022
+
+Makitid at malinaw ang remediation surface. Ang mga XML element sa ibaba ay kung saan aktuwal na binibigo ng Nobyembre 2026 SWIFTNet validation stack ang mga mensahe; lahat ng iba pa ay downstream na kahihinatnan.
+
+| Elemento ng Data | ISO 20022 XML Tag | Kahingian ng SWIFT sa Nobyembre 2026 | Teknikal na Remediation Strategy |
+|---|---|---|---|
+| **Structured Address** | `<PstlAdr>` na naglalaman ng `<TwnNm>` + `<Ctry>` | Sapilitan. Ang unstructured `<AdrLine>` text ay nagpapalitaw ng network rejection sa tumatanggap na SWIFTNet adapter. | Automated address parsing sa pagsisimula ng bayad; pagsulat-muli ng corporate-channel form; paglilinis ng back-book sa bawat counterparty bago ang susunod na debit. |
+| **Legal Entity Identifier (LEI)** | `<Id>` sa ilalim ng `<OrgId>` | Mariing inirerekomenda para sa pagberipika ng non-individual na financial counterparty; sapilitan sa ilang CBPR+ corridors. | LEI lookup + GLEIF cross-check sa corporate onboarding; awtomatikong enrichment para sa back-book counterparties sa pamamagitan ng reference-data services. |
+| **Payment Purpose Codes** | `<Purp>` na naglalaman ng `<Cd>` | Sapilitan sa maraming regional real-time corridors (CBPR+, SEPA Inst, TIPS) para sa awtomatikong AML / sanctions screening. | I-map ang legacy bank-internal transaction codes sa standard ISO 20022 ExternalPurposeCode list; ilantad ang pagpili ng layunin sa corporate-channel UI; default-deny sa mga di-kilalang code. |
+| **Ultimate Parties** | `<UltmtDbtr>` / `<UltmtCdtr>` | Ilantad ang konteksto ng ultimate beneficiary upang tumugon sa G20 FATF travel-rule + sanctions parameters; sapilitan sa ilang payment-type codes. | I-extract ang end-to-end party names mula sa ledger sub-accounts; ireconcile laban sa KYC graph; ipakita ang ultimate party sa bawat kumpirmasyon. |
+| **Remittance Information (Structured)** | `<RmtInf><Strd>` na may `<RfrdDocInf>` | Kinakailangan para sa reconcilable invoice-linked corporate payments sa ilalim ng CBPR+ Phase 2. | Kunin ang structured remittance sa oras ng quote sa corporate portal; tanggihan ang free-text fallback para sa mga high-value flow. |
+
 ## Tokenised Deposits at Wholesale CBDC
 
 Iniingatan ng tokenised deposits ang modelo ng commercial-bank money habang nagdaragdag ng programmability. Iniingatan ng wholesale central bank money ang settlement finality. Ang kawili-wiling design pattern ay ang kombinasyon: commercial bank money para sa relasyon ng kliyente at credit intermediation, central bank money para sa final settlement at systemic confidence.
+
+Ginagawang kongkreto ng Project Agorá ang kombinasyong ito. Ang arkitekturang nasa ibaba ang BIS reference pattern para sa isang atomic, payment-versus-payment (PvP) cross-border settlement na gumagamit ng parehong commercial-bank deposit ledger at wholesale-CBDC settlement plane, na pinag-uugnay sa pamamagitan ng isang unified ledger.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant CB_A as Commercial Bank A<br/>(payer side)
+    participant UL as Unified Ledger<br/>(BIS Agorá coordination plane)
+    participant CBNK as Central Bank<br/>(wholesale CBDC issuer)
+    participant CB_B as Commercial Bank B<br/>(payee side)
+
+    CB_A->>UL: Submit instruction:<br/>debit tokenised deposit X,<br/>credit tokenised deposit Y,<br/>condition = wholesale CBDC leg
+    UL->>UL: Validate ISO 20022 envelope,<br/>structured address, LEI,<br/>purpose code, AML/sanctions
+    UL->>CBNK: Reserve wholesale CBDC<br/>(payer-side central-bank reserves)
+    CBNK-->>UL: Reservation confirmed<br/>(atomic lock)
+    UL->>CB_A: Lock tokenised deposit X<br/>(commercial-bank money leg)
+    CB_A-->>UL: Deposit lock confirmed
+    UL->>UL: Both legs locked →<br/>atomic settlement trigger
+    UL->>CBNK: Settle wholesale CBDC<br/>(payer reserves → payee reserves)
+    UL->>CB_B: Issue tokenised deposit Y<br/>(commercial-bank money leg)
+    CBNK-->>UL: CBDC settlement finalised
+    CB_B-->>UL: Deposit credited
+    UL->>CB_A: PvP settlement complete<br/>(both legs final or both legs roll back)
+    UL->>CB_B: PvP settlement complete
+```
+
+Atomic ang settlement sa pamamagitan ng konstruksyon: parehong kumikilos ang dalawang leg o parehong umuurong. Ang settlement finality sa wholesale-CBDC leg ang nagpapaepektibo sa commercial-bank tokenised-deposit transfer nang walang correspondent risk. Ang unified ledger ang coordination plane, hindi isang payment system sa sarili nito — ang central bank pa rin ang nag-iisyu ng settlement asset at ang commercial bank pa rin ang nag-bo-book ng deposit liability.
 
 ## Ang Bagong Wholesale Payment Product
 
@@ -206,8 +249,8 @@ Sukatin ang kahandaan ng structured-data, mga payment reject, repair cost, oras 
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Karagdagang babasahin</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026" class="related-media" aria-label="ISO 20022 After Migration: From Messaging Compliance to Payment-Data Products in 2026" tabindex="-1"><img alt="ISO 20022 post-migration data architecture diagram showing structured payment fields feeding banking products in 2026" src="https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026">ISO 20022 After Migration: From Messaging Compliance to Payment-Data Products in 2026</a></h3><p><time datetime="2026-05-29">2026-05-29</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026" class="related-media" aria-label="UK Wholesale Digital Markets in 2026: Tokenised Gilts, DLT Settlement, and the New Sterling Infrastructure" tabindex="-1"><img alt="UK wholesale digital markets diagram showing tokenised gilts, DLT settlement rails, and sterling infrastructure for 2026" src="https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026">UK Wholesale Digital Markets in 2026: Tokenised Gilts, DLT Settlement, and the New Sterling Infrastructure</a></h3><p><time datetime="2026-05-30">2026-05-30</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026" class="related-media" aria-label="ISO 20022 After Migration: From Messaging Compliance to Payment-Data Products in 2026" tabindex="-1"><img alt="ISO 20022 post-migration data architecture diagram showing structured payment fields feeding banking products in 2026" src="https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026">ISO 20022 After Migration: From Messaging Compliance to Payment-Data Products in 2026</a></h3><p><time datetime="2026-05-29">2026-05-29</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026" class="related-media" aria-label="UK Wholesale Digital Markets in 2026: Tokenised Gilts, DLT Settlement, and the New Sterling Infrastructure" tabindex="-1"><img alt="UK wholesale digital markets diagram showing tokenised gilts, DLT settlement rails, and sterling infrastructure for 2026" src="https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026">UK Wholesale Digital Markets in 2026: Tokenised Gilts, DLT Settlement, and the New Sterling Infrastructure</a></h3><p><time datetime="2026-05-30">2026-05-30</time></p></footer></article>
 <article class="related-card"><a href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026" class="related-media" aria-label="Post-Quantum Payments Infrastructure in 2026: Replace, Don't Retrofit" tabindex="-1"><img alt="Post-quantum payments infrastructure migration diagram showing replacement of legacy cryptography across rails in 2026" src="https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026">Post-Quantum Payments Infrastructure in 2026: Replace, Don't Retrofit</a></h3><p><time datetime="2026-05-31">2026-05-31</time></p></footer></article>
 </div>
 </aside>

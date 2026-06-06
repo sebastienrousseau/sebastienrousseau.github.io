@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Rajistar gani na sauyin biyan kuɗi na wholesale a 2026 — ƙaurawar saƙo tana ba da damar zuwa settlement mai shiryarwa a kan ISO 20022, tokenised deposits, layukan ainihin-lokaci, da atomicity na cross-border."
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp"
+banner: "https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -131,23 +131,66 @@ Tambaya mai amfani ga banki ba ko kowane fage yana da mahimmanci ba. Ita ce ko c
 | **Ruwa** | Inganta ruwan rana, kuɗin da aka kama, da windows na settlement | Ruwa da aka adana da raguwar gazawar settlement | Sauri mai sauri na ruwa |
 | **Bin doka** | Saka AML, sanctions, FATF, da bukatun audit cikin bayanan biyan kuɗi | Bin doka kai-tsaye da bayyana | Bayanai masu yawa ba tare da sarrafawa mai ƙarfi ba |
 
-## Alamomin Yanzu Don Bibiya
+## Mahimman Alamomin Biyan Kuɗi na Wholesale da Aka Tsara zuwa Fifikon Duniya
 
-| Alama | Abin da Yake Nufi ga Bankuna | Tushen |
+Saitin alamomin 2026 ba shirin bincike ba ne. Lissafin isar da kaya ne wanda Chief Payments Officer na banki tuni ake aunashi a kansa. Aikin gyaran yana bayyana a wurare uku: ambulan saƙo, layin jagoranci na layi, da ledger ɗin settlement.
+
+| Alama | Tushen G20 / SWIFT / BIS | Aiwatar da Dandamali na Fasaha |
 |---|---|---|
-| **65% na saƙonnin biyan kuɗi suna ɗauke da unstructured addresses** | Ƙalubalen gyara har yanzu yana da girma | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **An cire unstructured addresses bayan Nuwamba 2026** | Shirin bayanan biyan kuɗi ya zama gaggawa | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **Lokacin prototype na Project Agorá** | Ana gwada settlement na tokenised a mahallin babban banki da bankin kasuwanci | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Lokacin aiwatarwa na FSB** | Inganta biyan kuɗi na cross-border ya ci gaba da kasancewa fifikon manufa ta duniya | [FSB ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Cross-border payments implementation phase") |
-| **Tsarin kuɗin dijital na Deutsche Bank** | Stablecoins, tokenised deposits, da CBDCs suna zama batun gine-gine na bankin kamfani mai amfani | [Deutsche Bank ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") |
+| **65% na saƙonnin biyan kuɗi har yanzu suna ɗauke da unstructured addresses** | [SWIFT SR 2026 — matakin structured-address, Nuwamba 2026 ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") | Tabbatar da schema a payment middleware kafin saƙon ya kai ga adapter na SWIFTNet; warware adireshi ta atomatik a ingress na corporate-channel + correspondent-bank. |
+| **Manufar FSB G20: 75% na biyan kuɗi na cross-border an kammala su a cikin awa 1 nan da 2027** | [Tsarin biyan kuɗi na cross-border na FSB, lokacin aiwatarwa na 2026 ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | Gateways na canza FX a ainihin-lokaci tare da windows na ruwa da aka amince da su; T+0 confirmation hooks zuwa portal ɗin abokin ciniki; injin jagoranci na layi wanda ke cire kowane corridor wanda ba zai iya cika ambulan na awa 1 ba. |
+| **Manufar FSB G20: matsakaicin farashin ma'amalar cross-border ƙasa da 1%, na retail ƙasa da 3%** | [Manufofin masu yawa na FSB G20 ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | Telemetry na danganta farashi a kowane corridor (FX spread, correspondent fee, lifting cost); rajistar manufofin gefen riba wanda ke fitar da farashi mara bin doka kafin quote. |
+| **BIS Project Agorá ya shiga matakin prototype a fadin manyan bankuna bakwai + bankunan kasuwanci 41** | [BIS Project Agorá ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") | Ƙayyadaddun haɗin unified-ledger: node na ledger ɗin tokenised-deposit + plane na settlement na wholesale-CBDC + KYC/AML hooks; on-chain liquidity pools da aka girmama zuwa rabon corridor na banki. |
+| **Tsarin "digital money" na Deutsche Bank ya bayyana a gine-ginen abokin ciniki** | [Deutsche Bank — Digital Money: stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") | API na settlement wanda ba ya damuwa da wallet wanda ke abstract zaɓin stablecoin / tokenised-deposit / CBDC a kowane biyan kuɗi; sharuɗɗa masu shiryarwa ana tantance su a kan rajistar manufofin banki, ba na abokin ciniki ba. |
 
 ## Mahallin Sauyin Bayanan Biyan Kuɗi
 
 ISO 20022 ya motsa daga aikin tsarin saƙo zuwa tsarin aiki na ingancin bayanai. Idan bayanan beneficiary, debtor, creditor, agent, gari, ƙasa, manufa, da party suna da rauni, banki zai fuskanci ƙin, gyara, gogayya na sanctions, takaicin abokin ciniki, da raunin nazari.
 
+**SR 2026 ya mai da wannan kwangila mai tsanani, ba shawara ba.** SWIFT Standards Release 2026 (Nuwamba 2026) yana tilasta ƙa'idar structured-address a network layer — saƙonnin da `<PstlAdr>` element ɗinsu ba ya ɗauke da `<TwnNm>` da `<Ctry>` za a ƙi su a karɓa ta hanyar SWIFTNet validation stack, ba a alamta su don gyara ba. Layin gyara ya daina zama layin farashin back-office kuma ya zama lamarin gazawar settlement tare da jinkiri da abokin ciniki zai gani. Ƙungiyoyin aiki da ke ɗauke SR 2026 a matsayin "shawara mai tsauri" suna aiki daga runbook na kuskure.
+
+### Bin Doka na Bayanan Biyan Kuɗi da Aka Tsara a Ƙarƙashin ISO 20022
+
+Saman aikin gyara yana da iyaka da bayyananne. XML elements da ke ƙasa shine inda Nuwamba 2026 SWIFTNet validation stack ke gaza saƙonnin a zahiri; sauran komai sakamako ne na ƙasa.
+
+| Bayanin Bayanai | Tag ɗin XML na ISO 20022 | Bukatar SWIFT na Nuwamba 2026 | Dabarar Gyaran Fasaha |
+|---|---|---|---|
+| **Structured Address** | `<PstlAdr>` mai ɗauke da `<TwnNm>` + `<Ctry>` | Wajibi. `<AdrLine>` text mara tsari yana haifar da ƙin network a SWIFTNet adapter ɗin mai karɓa. | Warware adireshi ta atomatik a farkon biyan kuɗi; sake rubuta tsarin corporate-channel; tsaftace back-book a kowane counterparty kafin debit na gaba. |
+| **Legal Entity Identifier (LEI)** | `<Id>` a ƙarƙashin `<OrgId>` | An ba da shawara sosai don tabbatar da counterparty na kuɗi mara mutum; wajibi ne a corridors da yawa na CBPR+. | LEI lookup + GLEIF cross-check a corporate onboarding; ƙarawa ta atomatik ga back-book counterparties ta hanyar hidimomin reference-data. |
+| **Payment Purpose Codes** | `<Purp>` mai ɗauke da `<Cd>` | Wajibi a corridors da yawa na yanki na ainihin-lokaci (CBPR+, SEPA Inst, TIPS) don bincike AML / sanctions ta atomatik. | Tsara codes na ma'amala na ciki na banki na gargajiya zuwa jerin ExternalPurposeCode na ISO 20022 na yau da kullum; fallasa zaɓin manufa a UI ɗin corporate-channel; default-deny a kan codes da ba a sani ba. |
+| **Ultimate Parties** | `<UltmtDbtr>` / `<UltmtCdtr>` | Fallasa mahallin ultimate beneficiary don gamsar da G20 FATF travel-rule + sigogin sanctions; wajibi don codes na nau'in biyan kuɗi da yawa. | Fitar da sunaye na ƙarshe-zuwa-ƙarshe na party daga ledger sub-accounts; sasanta tare da KYC graph; fallasa ultimate party a kowane tabbatarwa. |
+| **Remittance Information (Structured)** | `<RmtInf><Strd>` tare da `<RfrdDocInf>` | Ana buƙata don biyan kuɗi na kamfani da aka haɗa da invoice masu iya sasantawa a ƙarƙashin CBPR+ Phase 2. | Kama structured remittance a lokacin quote a portal ɗin corporate; ƙi free-text fallback don manyan kwararar darajar. |
+
 ## Tokenised Deposits da CBDC na Wholesale
 
 Tokenised deposits suna kiyaye samfurin kuɗin bankin kasuwanci yayin da suke ƙara shiryarwa. Kuɗin babban banki na wholesale yana kiyaye finality na settlement. Tsarin ƙira mai ban sha'awa shine haɗin: kuɗin bankin kasuwanci don dangantakar abokin ciniki da intermediation na bashi, kuɗin babban banki don settlement na ƙarshe da kwarin gwiwa na tsari.
+
+Project Agorá yana mai da haɗin ya zama na zahiri. Gine-ginen da ke ƙasa shine tsarin tunani na BIS na atomic, payment-versus-payment (PvP) settlement na cross-border ta amfani da ledger ɗin deposit na bankin kasuwanci da plane na settlement na wholesale-CBDC, an haɗa su ta unified ledger.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant CB_A as Commercial Bank A<br/>(payer side)
+    participant UL as Unified Ledger<br/>(BIS Agorá coordination plane)
+    participant CBNK as Central Bank<br/>(wholesale CBDC issuer)
+    participant CB_B as Commercial Bank B<br/>(payee side)
+
+    CB_A->>UL: Submit instruction:<br/>debit tokenised deposit X,<br/>credit tokenised deposit Y,<br/>condition = wholesale CBDC leg
+    UL->>UL: Validate ISO 20022 envelope,<br/>structured address, LEI,<br/>purpose code, AML/sanctions
+    UL->>CBNK: Reserve wholesale CBDC<br/>(payer-side central-bank reserves)
+    CBNK-->>UL: Reservation confirmed<br/>(atomic lock)
+    UL->>CB_A: Lock tokenised deposit X<br/>(commercial-bank money leg)
+    CB_A-->>UL: Deposit lock confirmed
+    UL->>UL: Both legs locked →<br/>atomic settlement trigger
+    UL->>CBNK: Settle wholesale CBDC<br/>(payer reserves → payee reserves)
+    UL->>CB_B: Issue tokenised deposit Y<br/>(commercial-bank money leg)
+    CBNK-->>UL: CBDC settlement finalised
+    CB_B-->>UL: Deposit credited
+    UL->>CB_A: PvP settlement complete<br/>(both legs final or both legs roll back)
+    UL->>CB_B: PvP settlement complete
+```
+
+Settlement ɗin atomic ne ta gine-gine: ƙafafu biyu suna commit ko duka biyu suna roll back. Finality na settlement a ƙafar wholesale-CBDC yana sa canja wurin tokenised-deposit na bankin kasuwanci ya yi tasiri ba tare da haɗarin correspondent ba. Unified ledger shine plane na haɗin gwiwa, ba tsarin biyan kuɗi a kansa ba — babban banki har yanzu yana fitar da kadarar settlement kuma bankin kasuwanci har yanzu yana yin littafin deposit liability.
 
 ## Sabon Samfurin Biyan Kuɗi na Wholesale
 

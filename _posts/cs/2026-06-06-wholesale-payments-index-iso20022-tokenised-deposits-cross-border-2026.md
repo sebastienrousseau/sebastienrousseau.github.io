@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Vizuální registr posunu velkoobchodních plateb v roce 2026 — migrace zpráv ustupuje programovatelnému zúčtování napříč ISO 20022, tokenizovanými vklady, real-time kolejemi a přeshraniční atomicitou."
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp"
+banner: "https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -131,23 +131,66 @@ Praktickou otázkou pro banku není, zda je každá doména důležitá. Otázko
 | **Likvidita** | Optimalizace intradenní likvidity, uvězněné hotovosti a zúčtovacích oken | Ušetřená likvidita a snížení selhání zúčtování | Rychlejší odčerpání likvidity |
 | **Compliance** | Zabudování AML, sankcí, FATF a auditních požadavků do platebních dat | Straight-through compliance a vysvětlitelnost | Bohatší data bez silnějších kontrol |
 
-## Aktuální signály ke sledování
+## Klíčové signály velkoobchodních plateb mapované na globální priority
 
-| Signál | Co znamená pro banky | Zdroj |
+Sada signálů 2026 není výzkumnou agendou. Je to dodací checklist, na kterém je Chief Payments Officer banky už dnes měřen. Náprava se odehrává na třech místech: v obálce zprávy, ve vrstvě orchestrace kolejí a v zúčtovací knize.
+
+| Signál | Reference G20 / SWIFT / BIS | Implementace na technické platformě |
 |---|---|---|
-| **65 % platebních zpráv obsahuje nestrukturované adresy** | Náprava je stále velkou výzvou | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **Nestrukturované adresy odstraněny po listopadu 2026** | Připravenost platebních dat se stává naléhavou | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
-| **Prototypová fáze Project Agorá** | Tokenizované zúčtování je testováno v prostředí centrální i komerční banky | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Implementační fáze FSB** | Posílení přeshraničních plateb zůstává globální politickou prioritou | [FSB ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Cross-border payments implementation phase") |
-| **Rámec digitálních peněz Deutsche Bank** | Stablecoiny, tokenizované vklady a CBDC se stávají praktickým tématem architektury korporátního bankovnictví | [Deutsche Bank ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") |
+| **65 % platebních zpráv stále obsahuje nestrukturované adresy** | [SWIFT SR 2026 — milník strukturovaných adres, listopad 2026 ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") | Validace schématu v middleware plateb dříve, než zpráva dorazí do adaptéru SWIFTNet; automatizovaný parsing adres na vstupu z korporátního kanálu i korespondentské banky. |
+| **Cíl FSB G20: 75 % přeshraničních plateb dokončeno do 1 hodiny do roku 2027** | [Roadmapa přeshraničních plateb FSB, implementační fáze 2026 ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | Real-time brány pro FX konverzi s předem dohodnutými okny likvidity; háčky pro potvrzení T+0 v klientském portálu; směrovací motor kolejí, který vylučuje koridory neschopné dodržet hodinovou obálku. |
+| **Cíl FSB G20: průměrný náklad přeshraniční transakce pod 1 %, retail pod 3 %** | [Kvantitativní cíle FSB G20 ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | Telemetrie atribuce nákladů na každém koridoru (FX spread, korespondentský poplatek, lifting cost); registr maržových politik, který vynese non-compliant pricing nahoru ještě před kotací. |
+| **BIS Project Agorá vstupuje do prototypové fáze napříč sedmi centrálními bankami + 41 komerčními bankami** | [BIS Project Agorá ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") | Integrační specifikace jednotné knihy: uzel pro knihu tokenizovaných vkladů + zúčtovací rovina velkoobchodní CBDC + KYC/AML háčky; on-chain pooly likvidity dimenzované na podíl banky v koridoru. |
+| **Rámec „digitálních peněz" Deutsche Bank krystalizuje v klientské architektuře** | [Deutsche Bank — Digital Money: stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") | Wallet-agnostické zúčtovací API, které abstrahuje výběr stablecoinu / tokenizovaného vkladu / CBDC pro každou platbu; programovatelné podmínky vyhodnocované proti registru politik banky, nikoli klienta. |
 
 ## Inflexní bod platebních dat
 
 ISO 20022 se posunulo z projektu formátu zpráv do provozního modelu kvality dat. Pokud jsou data o beneficientovi, dlužníkovi, věřiteli, agentovi, městu, zemi, účelu a stranách slabá, banka zažije zamítnutí, repairy, sankční tření, frustraci klientů a slabou analytiku.
 
+**SR 2026 mění tohle v tvrdou smlouvu, ne v doporučení.** SWIFT Standards Release 2026 (listopad 2026) vynucuje pravidlo strukturované adresy na úrovni sítě — zprávy, jejichž element `<PstlAdr>` neobsahuje `<TwnNm>` a `<Ctry>`, budou zamítnuty při příjmu validačním stackem SWIFTNet, nikoli označeny k opravě. Repair queue přestává být back-office nákladovou položkou a stává se událostí selhání zúčtování s prodlevou viditelnou pro klienta. Provozní týmy, které SR 2026 berou jako „přísnější pokyn", pracují podle špatného runbooku.
+
+### Shoda strukturovaných platebních dat v rámci ISO 20022
+
+Plocha pro nápravu je úzká a dobře vymezená. XML elementy níže jsou body, kde listopadový validační stack SWIFTNet 2026 skutečně zprávy odmítá; vše ostatní jsou navazující důsledky.
+
+| Datový element | XML tag ISO 20022 | Požadavek SWIFT pro listopad 2026 | Technická strategie nápravy |
+|---|---|---|---|
+| **Strukturovaná adresa** | `<PstlAdr>` obsahující `<TwnNm>` + `<Ctry>` | Povinné. Nestrukturovaný text v `<AdrLine>` spustí síťové zamítnutí na přijímajícím adaptéru SWIFTNet. | Automatizovaný parsing adres při iniciaci platby; přepis formulářů v korporátním kanálu; čištění back-booku u každé protistrany před dalším debetem. |
+| **Legal Entity Identifier (LEI)** | `<Id>` pod `<OrgId>` | Důrazně doporučeno pro ověření neindividuálních finančních protistran; povinné v několika koridorech CBPR+. | Vyhledávání LEI + křížová kontrola s GLEIF při korporátním onboardingu; automatické obohacení protistran z back-booku přes referenční datové služby. |
+| **Kódy účelu platby** | `<Purp>` obsahující `<Cd>` | Povinné v několika regionálních real-time koridorech (CBPR+, SEPA Inst, TIPS) pro automatický AML / sankční screening. | Mapování interních bankovních transakčních kódů na standardní seznam ISO 20022 ExternalPurposeCode; vystavení výběru účelu v UI korporátního kanálu; default-deny u neznámých kódů. |
+| **Konečné strany** | `<UltmtDbtr>` / `<UltmtCdtr>` | Vystavit kontext konečného beneficienta pro splnění G20 FATF travel-rule + sankčních parametrů; povinné pro několik kódů typu platby. | Extrakce end-to-end názvů stran z pod-účtů hlavní knihy; sesouhlasení vůči KYC grafu; surfacing konečné strany v každém potvrzení. |
+| **Informace o platbě (strukturované)** | `<RmtInf><Strd>` s `<RfrdDocInf>` | Vyžadováno pro sesouhlasitelné korporátní platby vázané na faktury v rámci CBPR+ Fáze 2. | Sběr strukturované remittance v okamžiku kotace v korporátním portálu; odmítnutí volnotextového fallbacku pro vysokohodnotové toky. |
+
 ## Tokenizované vklady a velkoobchodní CBDC
 
 Tokenizované vklady zachovávají model peněz komerční banky a přidávají programovatelnost. Velkoobchodní peníze centrální banky uchovávají finalitu zúčtování. Zajímavým návrhovým vzorem je kombinace: peníze komerční banky pro klientské vztahy a úvěrovou intermediaci, peníze centrální banky pro finální zúčtování a systémovou důvěru.
+
+Project Agorá tuto kombinaci zhmotňuje. Architektura níže je referenční vzor BIS pro atomické přeshraniční zúčtování v režimu platba-proti-platbě (PvP), které využívá současně knihu vkladů komerční banky a zúčtovací rovinu velkoobchodní CBDC, koordinované přes jednotnou knihu.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant CB_A as Komerční banka A<br/>(strana plátce)
+    participant UL as Jednotná kniha<br/>(koordinační rovina BIS Agorá)
+    participant CBNK as Centrální banka<br/>(emitent velkoobchodní CBDC)
+    participant CB_B as Komerční banka B<br/>(strana příjemce)
+
+    CB_A->>UL: Podání instrukce:<br/>debit tokenizovaný vklad X,<br/>kredit tokenizovaný vklad Y,<br/>podmínka = leg velkoobchodní CBDC
+    UL->>UL: Validace obálky ISO 20022,<br/>strukturovaná adresa, LEI,<br/>kód účelu, AML/sankce
+    UL->>CBNK: Rezervace velkoobchodní CBDC<br/>(rezervy centrální banky na straně plátce)
+    CBNK-->>UL: Rezervace potvrzena<br/>(atomický lock)
+    UL->>CB_A: Lock tokenizovaného vkladu X<br/>(leg peněz komerční banky)
+    CB_A-->>UL: Lock vkladu potvrzen
+    UL->>UL: Oba legy uzamčeny →<br/>spuštění atomického zúčtování
+    UL->>CBNK: Zúčtování velkoobchodní CBDC<br/>(rezervy plátce → rezervy příjemce)
+    UL->>CB_B: Emise tokenizovaného vkladu Y<br/>(leg peněz komerční banky)
+    CBNK-->>UL: Zúčtování CBDC finalizováno
+    CB_B-->>UL: Vklad připsán
+    UL->>CB_A: PvP zúčtování dokončeno<br/>(buď oba legy finální, nebo oba roll back)
+    UL->>CB_B: PvP zúčtování dokončeno
+```
+
+Zúčtování je atomické konstrukčně: buď oba legy commitnou, nebo se oba vrátí zpět. Finalita zúčtování na legu velkoobchodní CBDC činí převod tokenizovaného vkladu komerční banky účinným bez korespondentského rizika. Jednotná kniha je koordinační rovinou, nikoli platebním systémem v pravém slova smyslu — zúčtovací aktivum nadále emituje centrální banka a vkladový závazek nadále knihuje komerční banka.
 
 ## Nový velkoobchodní platební produkt
 
