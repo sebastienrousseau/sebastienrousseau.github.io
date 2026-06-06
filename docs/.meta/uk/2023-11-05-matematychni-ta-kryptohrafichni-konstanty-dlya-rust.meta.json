@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Математичні обчислення",
   "description": "Захистіть цілісність коду за допомогою ретельно перевірених математичних і криптографічних констант, зміцнюючи безпеку пам'яті та паралельності для підвищеного захисту коду.",
-  "subtitle": "Перевірені математичні та криптографічні константи для безпечного Rust із захистом пам'яті.",
-  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
-  "title": "[UK DRAFT] Mathematical and Cryptographic Constants for Rust Security",
-  "language": "uk-UA",
-  "locale": "uk_UA",
   "date": "Nov 05, 2023",
-  "keywords": "математичні константи, криптографічні константи, Rust security, безпечний зв'язок, шифрування, RSA, elliptic curve cryptography, Common (CMN) library, Rust-додатки, математичні обчислення"
+  "keywords": "математичні константи, криптографічні константи, Rust security, безпечний зв'язок, шифрування, RSA, elliptic curve cryptography, Common (CMN) library, Rust-додатки, математичні обчислення",
+  "language": "uk-UA",
+  "title": "[UK DRAFT] Mathematical and Cryptographic Constants for Rust Security",
+  "banner_alt": "Математичні обчислення",
+  "locale": "uk_UA",
+  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
+  "subtitle": "Перевірені математичні та криптографічні константи для безпечного Rust із захистом пам'яті."
 }

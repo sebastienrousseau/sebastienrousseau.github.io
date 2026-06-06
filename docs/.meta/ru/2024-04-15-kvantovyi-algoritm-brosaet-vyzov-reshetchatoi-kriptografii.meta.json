@@ -1,11 +1,11 @@
 {
-  "keywords": "квантовый алгоритм, LWE, Learning With Errors, решётчатая криптография, ML-KEM, постквантовая безопасность, исследования",
-  "banner": "https://cloudcdn.pro/stocks/images/quantum-lattice-attack.webp",
+  "locale": "ru_RU",
   "description": "Новый квантовый алгоритм решает ключевую криптографическую задачу, призывая ускорить исследования в области квантово-устойчивой безопасности.",
-  "language": "ru-RU",
-  "title": "Квантовый алгоритм бросает вызов решётчатой криптографии",
-  "banner_alt": "Квантовый алгоритм против решётчатой криптографии",
   "date": "April 15, 2024",
+  "title": "Квантовый алгоритм бросает вызов решётчатой криптографии",
+  "language": "ru-RU",
+  "banner_alt": "Квантовый алгоритм против решётчатой криптографии",
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-lattice-attack.webp",
   "subtitle": "Новая работа поднимает вопросы о LWE",
-  "locale": "ru_RU"
+  "keywords": "квантовый алгоритм, LWE, Learning With Errors, решётчатая криптография, ML-KEM, постквантовая безопасность, исследования"
 }

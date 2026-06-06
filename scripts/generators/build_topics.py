@@ -75,6 +75,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "it all. Tools, playbooks, and the regulatory clock."
         ),
         "slugs": [
+            "2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026",
             "2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026",
             "2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026",
             "2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026",

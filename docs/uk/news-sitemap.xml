@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/uk/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>uk-UA</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+    <news:title>Індекс оптових платежів у 2026: ISO 20022, токенізовані депозити, рейки реального часу й транскордонний розрахунок</news:title>
+    <news:keywords>оптові платежі 2026, ISO 20022, токенізовані депозити, Project Agorá, транскордонні платежі, платежі реального часу, дані структурованих адрес, якість платіжних даних</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/uk/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>uk-UA</news:language>
     </news:publication>
-    <news:publication_date>2026-06-05T22:21:48+00:00</news:publication_date>
+    <news:publication_date>2026-06-06T00:33:34+00:00</news:publication_date>
     <news:title>Індекс банківської інфраструктури 2026: готовність до агентного AI, квантово-стійкої безпеки, хмарної стійкості та оптових платежів</news:title>
     <news:keywords>індекс банківської інфраструктури 2026, агентний AI у банках, квантово-стійкий банкінг, хмарно-нативний банкінг, оптові платежі, ISO 20022, DORA, Project Agora, токенізовані депозити</news:keywords>
   </news:news>
@@ -20,7 +32,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>uk-UA</news:language>
     </news:publication>
-    <news:publication_date>2026-06-05T22:21:48+00:00</news:publication_date>
+    <news:publication_date>2026-06-06T00:33:34+00:00</news:publication_date>
     <news:title>Мультирейковий банк у 2026 році: картки, A2A, стейблкоїни, RTP, FedNow та Open Banking в одній стратегії</news:title>
     <news:keywords>шар оркестрації платежів, FedNow проти RTP, FedNow проти ACH, розрахунок стейблкоїнами, атомарний розрахунок USDC, ISO 20022 pacs.008, account-to-account A2A, API Open Banking, передфінансована ліквідність, пастка ліквідності 24/7, мультирейковий банк 2026, рушій маршрутизації платежів, звірка ERP</news:keywords>
   </news:news>
@@ -32,7 +44,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>uk-UA</news:language>
     </news:publication>
-    <news:publication_date>2026-06-05T22:21:48+00:00</news:publication_date>
+    <news:publication_date>2026-06-06T00:33:34+00:00</news:publication_date>
     <news:title>Постквантова платіжна інфраструктура: чому банки замінюють застарілі рейки, а не доробляють їх</news:title>
     <news:keywords>постквантова криптографія, PQC у платежах, криптоагільність, збирай-зараз-розшифровуй-потім, HNDL, постквантові стандарти NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, міграція платіжних рейок, ISO 20022 PQC, заміна SWIFT MT, HSM, колапс PKI, операційна стійкість, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
   </news:news>
@@ -44,7 +56,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>uk-UA</news:language>
     </news:publication>
-    <news:publication_date>2026-06-05T22:21:48+00:00</news:publication_date>
+    <news:publication_date>2026-06-06T00:33:34+00:00</news:publication_date>
     <news:title>Цифрові активи у 2026: інфраструктурний перехід для банків</news:title>
     <news:keywords>цифрові активи 2026, токенізовані реальні активи, стейблкоїни банкінг, токенізовані депозити, зберігання цифрових активів, DLT у банкінгу, інфраструктура розрахунку, мобільність забезпечення, програмовані гроші, банківська стратегія цифрових активів</news:keywords>
   </news:news>

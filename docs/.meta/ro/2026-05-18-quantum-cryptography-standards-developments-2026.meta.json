@@ -1,16 +1,16 @@
 {
   "locale": "ro_RO",
-  "keywords": "criptografie cuantică 2026, criptografie post-cuantică, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, schimb hibrid de chei, QKD, ETSI QKD, ISO IEC 23837, agilitate criptografică, harvest now decrypt later, HNDL, criptografie pentru servicii financiare, securitate bancară",
-  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
-  "subtitle": "Criptografia cuantică a trecut de la analiza de orizont la disciplina de implementare: standardele NIST PQC sunt gata, ghidul NCSC din Marea Britanie a îngustat opțiunile de algoritmi, lucrările protocolare ale IETF sunt încă în maturare, iar asigurarea QKD trece de la încrederea de laborator la limbajul certificării.",
-  "language": "ro-RO",
-  "banner_alt": "Hartă a migrării către o criptografie rezistentă la cuantic pentru 2026 — standarde NIST PQC, lucrări asupra protocoalelor hibride, asigurare QKD, agilitate criptografică și niveluri de risc al datelor bancare",
-  "tags": "criptografie cuantică, criptografie post-cuantică, PQC, NIST, FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC, IETF, TLS, IPsec, QKD, ETSI, agilitate criptografică, HNDL, securitate bancară",
   "item_description": "Resetarea criptografiei cuantice 2026 — standardele NIST PQC, recomandările de migrare ale NCSC, maturitatea protocolară a IETF, asigurarea QKD, agilitatea criptografică și ce ar trebui să prioritizeze băncile săptămâna aceasta.",
-  "twitter_title": "Criptografia cuantică 2026: standarde PQC și migrarea bancară",
-  "twitter_description": "Resetarea criptografiei cuantice 2026 — standardele NIST PQC, recomandările de migrare ale NCSC, maturitatea protocolară a IETF, asigurarea QKD, agilitatea criptografică și ce ar trebui să prioritizeze băncile săptămâna aceasta.",
-  "title": "Resetarea criptografiei cuantice în 2026: standarde PQC, asigurarea QKD și lucrările de migrare pe care băncile nu le mai pot amâna",
-  "item_title": "Resetarea criptografiei cuantice în 2026: standarde PQC, asigurarea QKD și lucrările de migrare pe care băncile nu le mai pot amâna",
+  "keywords": "criptografie cuantică 2026, criptografie post-cuantică, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, schimb hibrid de chei, QKD, ETSI QKD, ISO IEC 23837, agilitate criptografică, harvest now decrypt later, HNDL, criptografie pentru servicii financiare, securitate bancară",
   "date": "May 18, 2026",
-  "description": "Criptografia cuantică în 2026 nu mai este o dezbatere despre iminența calculatoarelor cuantice. Este un program de migrare care traversează criptografia post-cuantică, agilitatea criptografică, asigurarea distribuției cuantice a cheilor, standardele de protocol, pregătirea furnizorilor și datele financiare cu durată lungă de viață deja expuse riscului «harvest-now-decrypt-later»."
+  "language": "ro-RO",
+  "title": "Resetarea criptografiei cuantice în 2026: standarde PQC, asigurarea QKD și lucrările de migrare pe care băncile nu le mai pot amâna",
+  "twitter_title": "Criptografia cuantică 2026: standarde PQC și migrarea bancară",
+  "subtitle": "Criptografia cuantică a trecut de la analiza de orizont la disciplina de implementare: standardele NIST PQC sunt gata, ghidul NCSC din Marea Britanie a îngustat opțiunile de algoritmi, lucrările protocolare ale IETF sunt încă în maturare, iar asigurarea QKD trece de la încrederea de laborator la limbajul certificării.",
+  "twitter_description": "Resetarea criptografiei cuantice 2026 — standardele NIST PQC, recomandările de migrare ale NCSC, maturitatea protocolară a IETF, asigurarea QKD, agilitatea criptografică și ce ar trebui să prioritizeze băncile săptămâna aceasta.",
+  "banner_alt": "Hartă a migrării către o criptografie rezistentă la cuantic pentru 2026 — standarde NIST PQC, lucrări asupra protocoalelor hibride, asigurare QKD, agilitate criptografică și niveluri de risc al datelor bancare",
+  "description": "Criptografia cuantică în 2026 nu mai este o dezbatere despre iminența calculatoarelor cuantice. Este un program de migrare care traversează criptografia post-cuantică, agilitatea criptografică, asigurarea distribuției cuantice a cheilor, standardele de protocol, pregătirea furnizorilor și datele financiare cu durată lungă de viață deja expuse riscului «harvest-now-decrypt-later».",
+  "tags": "criptografie cuantică, criptografie post-cuantică, PQC, NIST, FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC, IETF, TLS, IPsec, QKD, ETSI, agilitate criptografică, HNDL, securitate bancară",
+  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
+  "item_title": "Resetarea criptografiei cuantice în 2026: standarde PQC, asigurarea QKD și lucrările de migrare pe care băncile nu le mai pot amâna"
 }
