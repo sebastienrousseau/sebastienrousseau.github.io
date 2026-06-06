@@ -1,6 +1,28 @@
 {
-  "count": 65,
+  "count": 66,
   "posts": [
+    {
+      "slug": "2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026",
+      "url": "https://sebastienrousseau.com/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/index.html",
+      "date": "2026-06-06",
+      "title": "The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement",
+      "description": "A 2026 index for wholesale payments readiness, measuring ISO 20022 data quality, tokenised deposits, real-time rails, cross-border settlement, and liquidity efficiency.",
+      "keywords": [
+        "wholesale payments 2026",
+        "ISO 20022",
+        "tokenised deposits",
+        "Project Agora",
+        "cross border payments",
+        "real time payments",
+        "structured address data",
+        "payment data quality"
+      ],
+      "banner": "https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp",
+      "topics": [
+        "iso-20022-payments"
+      ],
+      "language": "en-GB"
+    },
     {
       "slug": "2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026",
       "url": "https://sebastienrousseau.com/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/index.html",

@@ -3,16 +3,17 @@
 # Front Matter (YAML)
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "The Wholesale Payments Index 2026 index diagram for banks and financial institutions in 2026"
+banner_alt: "Visual register for the wholesale-payments shift in 2026 — messaging migration giving way to programmable settlement across ISO 20022, tokenised deposits, real-time rails, and cross-border atomicity."
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stock/images/wholesale-payments-index-2026-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/alessio-soggetti-C4HO6MzEWrU.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "June 6, 2026"
 description: "A 2026 index for wholesale payments readiness, measuring ISO 20022 data quality, tokenised deposits, real-time rails, cross-border settlement, and liquidity efficiency."
+excerpt: "An index framework for measuring wholesale-payments readiness in 2026: ISO 20022 structured-address compliance ahead of SWIFT's November 2026 milestone, tokenised-deposit settlement, BIS Project Agorá cross-border atomicity, real-time rail orchestration, and liquidity efficiency. Four percentages — structured-data completeness, rail-routing optimality, settlement-finality lag, and Agorá-corridor coverage — turn payment-operations posture into supervisory-ready evidence."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -100,9 +101,23 @@ site_software: "Static Site Generator, Rust"
 
 ---
 
+<!-- lead-start: manual -->
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Wholesale payments in 2026 sit at the intersection of two structural shifts: [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) forcing structured payment data into the operating model, and tokenised deposits + BIS Project Agorá moving cross-border settlement toward atomic, programmable, always-on rails. The 2026 question for a bank is no longer "did we migrate the messages" but "are our payment operations measurable, routed, and supervisable" — and the index breaks that into four exact percentages: structured-data completeness, rail-routing optimality, settlement-finality lag, and Agorá-corridor coverage.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>November 2026 is a hard deadline, not guidance.</strong> SWIFT removes unstructured-address support in SR 2026; payments without a town and country in designated fields stop clearing. Repair cost, reject rate, and operations capacity all move from "metric" to "regulator-visible posture".</li>
+  <li><strong>Tokenised deposits beat stablecoins for regulated wholesale.</strong> They preserve the bank-depositor relationship and the central-bank settlement asset while exposing programmability. Stablecoins keep a role at the edge; tokenised deposits anchor the core.</li>
+  <li><strong>BIS Project Agorá is the corridor reference.</strong> If a bank's cross-border product can't run inside an Agorá corridor by 2027, it's competing on a rail the rest of the market is already exiting.</li>
+  <li><strong>Real-time rail orchestration is the operating model.</strong> The 2026 multi-rail decision (FedNow / RTP / TIPS / SEPA Inst / on-chain) is not "which rail" — it's the policy registry, liquidity profile, and routing engine that picks the rail per payment.</li>
+  <li><strong>Measure or be measured.</strong> Four percentages — structured-data completeness, rail-routing optimality, settlement-finality lag, Agorá-corridor coverage — turn payments posture into supervisory-ready evidence ahead of the 2026/27 audit window.</li>
+</ul>
+</aside>
+<!-- lead-end -->
+
 # The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement
 
-Wholesale payments in 2026 are being reshaped by two simultaneous shifts: structured payment data and programmable settlement. SWIFT’s November 2026 structured-address milestone forces data quality into the operating model, while BIS Project Agorá and tokenised deposits are testing whether cross-border settlement can become more atomic, transparent, and always-on.
+Wholesale payments in 2026 are being reshaped by two simultaneous shifts: structured payment data and programmable settlement. SWIFT's November 2026 structured-address milestone forces data quality into the operating model, while BIS Project Agorá and tokenised deposits are testing whether cross-border settlement can become more atomic, transparent, and always-on.
 
 ---
 
@@ -202,6 +217,14 @@ Measure structured-data readiness, payment rejects, repair cost, settlement time
 - Deutsche Bank, (2026). [Digital Money: stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, payments infrastructure, tokenised money, ISO 20022, post-quantum security, cloud-native financial services, and regulated digital markets.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-06-06">2026-06-06</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026" class="related-media" aria-label="The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments" tabindex="-1"><img alt="An editorial aerial composition by Miguel Sousa suggesting interlocking systems — the visual register chosen for a board-level dashboard view of the 2026 Banking Infrastructure Index" src="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026">The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments</a></h3><p><time datetime="2026-06-02">2026-06-02</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026" class="related-media" aria-label="Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability" tabindex="-1"><img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</a></h3><p><time datetime="2026-05-19">2026-05-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026" class="related-media" aria-label="ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026" tabindex="-1"><img alt="ISO 20022 payment data product diagram showing structured addresses, purpose codes, reconciliation, fraud detection, liquidity forecasting, sanctions screening, and analytics products" src="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026">ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026</a></h3><p><time datetime="2026-05-29">2026-05-29</time></p></footer></article>
+</div>
+</aside>
 <!-- enrich-end -->

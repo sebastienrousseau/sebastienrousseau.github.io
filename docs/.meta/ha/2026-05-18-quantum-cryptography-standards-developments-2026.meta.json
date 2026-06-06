@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
-  "title": "Sake Saita Sirrin Quantum a 2026: Ƙa'idodin PQC, Tabbatar QKD, da Aikin Ƙaura da Bankuna Ba Za Su Iya Jinkirtawa Ba",
-  "subtitle": "Sirrin quantum ya yi ƙaura daga binciken sararin sama zuwa horon aiwatarwa: ƙa'idodin NIST PQC sun shirya, jagorancin NCSC na Birtaniya ya rage zaɓuɓɓukan algorithm, aikin protocol na IETF har yanzu yana balaga, kuma tabbatar QKD yana motsawa daga amincewar dakin gwaje-gwaje zuwa harshen tabbatarwa.",
-  "language": "ha-NG",
-  "keywords": "sirrin quantum 2026, sirrin post-quantum, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, musayar maɓalli haɗaka, QKD, ETSI QKD, ISO IEC 23837, sassaucin sirri, harvest now decrypt later, HNDL, sirrin sabis na kuɗi, tsaron banki",
-  "description": "Sirrin quantum a 2026 ba muhawara ba ne kan ko kwamfutoci na quantum suna kusa. Shirin ƙaura ne na sirrin post-quantum, sassaucin sirri, tabbatar rabon maɓallin quantum, ƙa'idodin protocol, shirin masu samar da kayayyaki, da bayanan kuɗi masu dadewa waɗanda tuni ke fuskantar haɗarin ‘girbi-yanzu-warkar-da-baya’.",
-  "locale": "ha_NG",
   "date": "May 18, 2026",
-  "banner_alt": "Taswirar ƙaura na sirrin lafiya na quantum na 2026 yana nuna ƙa'idodin NIST PQC, aikin protocol na haɗaka, tabbatar QKD, sassaucin sirri, da matakan haɗarin bayanan banki"
+  "description": "Sirrin quantum a 2026 ba muhawara ba ne kan ko kwamfutoci na quantum suna kusa. Shirin ƙaura ne na sirrin post-quantum, sassaucin sirri, tabbatar rabon maɓallin quantum, ƙa'idodin protocol, shirin masu samar da kayayyaki, da bayanan kuɗi masu dadewa waɗanda tuni ke fuskantar haɗarin ‘girbi-yanzu-warkar-da-baya’.",
+  "subtitle": "Sirrin quantum ya yi ƙaura daga binciken sararin sama zuwa horon aiwatarwa: ƙa'idodin NIST PQC sun shirya, jagorancin NCSC na Birtaniya ya rage zaɓuɓɓukan algorithm, aikin protocol na IETF har yanzu yana balaga, kuma tabbatar QKD yana motsawa daga amincewar dakin gwaje-gwaje zuwa harshen tabbatarwa.",
+  "keywords": "sirrin quantum 2026, sirrin post-quantum, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, musayar maɓalli haɗaka, QKD, ETSI QKD, ISO IEC 23837, sassaucin sirri, harvest now decrypt later, HNDL, sirrin sabis na kuɗi, tsaron banki",
+  "language": "ha-NG",
+  "banner_alt": "Taswirar ƙaura na sirrin lafiya na quantum na 2026 yana nuna ƙa'idodin NIST PQC, aikin protocol na haɗaka, tabbatar QKD, sassaucin sirri, da matakan haɗarin bayanan banki",
+  "title": "Sake Saita Sirrin Quantum a 2026: Ƙa'idodin PQC, Tabbatar QKD, da Aikin Ƙaura da Bankuna Ba Za Su Iya Jinkirtawa Ba",
+  "locale": "ha_NG",
+  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
 }

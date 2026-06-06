@@ -1,11 +1,11 @@
 {
-  "language": "uk-UA",
-  "description": "Квантові обчислення загрожують криптографії платіжних систем. White paper EPAA окреслює структурний ризик і нагальну потребу в міграції на PQC.",
   "keywords": "квантово-захищені платежі, пост-квантова криптографія, SEPA, SWIFT gpi, ISO 20022, безпека фінансових послуг, EPAA, harvest-now decrypt-later, криптографічна гнучкість, Sebastien Rousseau",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "description": "Квантові обчислення загрожують криптографії платіжних систем. White paper EPAA окреслює структурний ризик і нагальну потребу в міграції на PQC.",
   "banner_alt": "Плата квантового комп'ютера у синьому освітленні",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
   "title": "[UK DRAFT] Quantum-Safe Payments: Why the Industry Must Act Now",
-  "date": "Sep 01, 2025",
   "subtitle": "Готовність до квантової безпеки — це нинішнє інфраструктурне рішення. Не майбутнє.",
+  "language": "uk-UA",
+  "date": "Sep 01, 2025",
   "locale": "uk_UA"
 }

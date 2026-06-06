@@ -1170,49 +1170,6 @@
 {"@context":"https://schema.org","@graph":[{"@type":"ContactPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"isPartOf":{"@id":"https://sebastienrousseau.com/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"{{title}}","item":"{{url}}"}]}]}
     </script>
 <script src="/main.js" defer></script>
-    <script>
-    // Lazy-load Google reCAPTCHA on first form interaction OR when the
-    // widget enters the viewport. The eager <script src=…/api.js> form
-    // pulled the LCP on /contact/ over 2.5s on CI's throttled-4G
-    // Lighthouse run (the reCAPTCHA iframe was being measured as the
-    // LCP element). This defers the ~150 KB cascade until the user is
-    // actually about to use the form.
-    (function () {
-      "use strict";
-      var loaded = false;
-      function loadRecaptcha() {
-        if (loaded) return;
-        loaded = true;
-        var s = document.createElement("script");
-        s.src = "https://www.google.com/recaptcha/api.js";
-        s.async = true;
-        s.defer = true;
-        document.head.appendChild(s);
-      }
-      var widget = document.querySelector(".g-recaptcha");
-      var form = document.querySelector(".ap-form");
-      // Load on first focus / click anywhere in the form.
-      if (form) {
-        form.addEventListener("focusin", loadRecaptcha, { once: true });
-        form.addEventListener("pointerdown", loadRecaptcha, { once: true });
-      }
-      // Or load when the widget itself scrolls into view (with margin
-      // so it has a head start). IntersectionObserver is available in
-      // every browser the CSP would let us reach.
-      if (widget && "IntersectionObserver" in window) {
-        var io = new IntersectionObserver(function (entries) {
-          if (entries.some(function (e) { return e.isIntersecting; })) {
-            io.disconnect();
-            loadRecaptcha();
-          }
-        }, { rootMargin: "400px" });
-        io.observe(widget);
-      } else if (widget) {
-        // Browsers without IntersectionObserver: load straight away
-        // rather than break the form.
-        loadRecaptcha();
-      }
-    })();
-    </script>
+    <script async defer src="https://www.google.com/recaptcha/api.js"></script>
   </body>
 </html>

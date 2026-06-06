@@ -1,11 +1,11 @@
 {
-  "title": "[UK DRAFT] KyberLib: Rust CRYSTALS-Kyber for Post-Quantum",
-  "language": "uk-UA",
-  "banner_alt": "Зміцнення захищеного зв'язку в квантову еру за допомогою KyberLib",
   "subtitle": "KyberLib — надійна реалізація CRYSTALS-Kyber на Rust для квантової ери.",
-  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
-  "date": "Nov 28, 2023",
   "keywords": "KyberLib, Rust CRYSTALS-Kyber, постквантова криптографія, криптографія на основі ґраток, квантово-стійкий обмін ключами, NIST FIPS 203, Sebastien Rousseau, KEM, автентифікація платежів, PQC бібліотека",
   "description": "Надійна та квантово-безпечна реалізація криптографії на основі алгоритму CRYSTALS-Kyber для захисту ваших даних від квантових загроз і криптоаналітичних атак.",
-  "locale": "uk_UA"
+  "date": "Nov 28, 2023",
+  "banner_alt": "Зміцнення захищеного зв'язку в квантову еру за допомогою KyberLib",
+  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
+  "title": "[UK DRAFT] KyberLib: Rust CRYSTALS-Kyber for Post-Quantum",
+  "locale": "uk_UA",
+  "language": "uk-UA"
 }
