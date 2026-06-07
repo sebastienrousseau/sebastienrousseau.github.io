@@ -1,14 +1,14 @@
 {
-  "locale": "ar_SA",
-  "keywords": "خوارزمية Shor، qubits، الحوسبة الكمية، ECC، RSA-2048، الذرّات المحايدة القابلة لإعادة التشكيل، رموز تصحيح الأخطاء، CRYSTALS-Kyber، CRYSTALS-Dilithium، PQC، التشفير ما بعد الكمي",
   "tags": "الحوسبة الكمومية, Shor's algorithm, التشفير ما بعد الكمي, RSA, elliptic curve, neutral atoms, error correction, cryptographic agility, quantum threat, payments, ISO 20022, DORA, AI, المدفوعات عبر الحدود, stablecoins",
-  "language": "ar",
-  "banner_alt": "مخطط عتبة الـ qubit لخوارزمية Shor. لوحة دائرة كهربائية للحوسبة الكمية بأنماط ضوء أزرق",
-  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
-  "reading_time": 10,
-  "subtitle": "تقترح ورقةٌ بحثية جديدة أن خوارزمية Shor يمكن أن تعمل على عشرة آلاف qubit فحسب. وتنخفض عتبة الحوسبة الكمية ذات الصلة بالتشفير أسرع ممّا توقّع أكثر الباحثين.",
-  "title": "العتبات الكمية تتحرّك من جديد",
   "date": "April 11, 2026",
+  "subtitle": "تقترح ورقةٌ بحثية جديدة أن خوارزمية Shor يمكن أن تعمل على عشرة آلاف qubit فحسب. وتنخفض عتبة الحوسبة الكمية ذات الصلة بالتشفير أسرع ممّا توقّع أكثر الباحثين.",
+  "keywords": "خوارزمية Shor، qubits، الحوسبة الكمية، ECC، RSA-2048، الذرّات المحايدة القابلة لإعادة التشكيل، رموز تصحيح الأخطاء، CRYSTALS-Kyber، CRYSTALS-Dilithium، PQC، التشفير ما بعد الكمي",
+  "word_count": 2072,
+  "title": "العتبات الكمية تتحرّك من جديد",
+  "locale": "ar_SA",
+  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
   "description": "تقترح ورقةٌ بحثية جديدة أن خوارزمية Shor يمكن أن تعمل على عشرة آلاف qubit فحسب. وتنخفض عتبة الحوسبة الكمية ذات الصلة بالتشفير أسرع ممّا توقّع أكثر الباحثين.",
-  "word_count": 2072
+  "reading_time": 10,
+  "banner_alt": "مخطط عتبة الـ qubit لخوارزمية Shor. لوحة دائرة كهربائية للحوسبة الكمية بأنماط ضوء أزرق",
+  "language": "ar"
 }

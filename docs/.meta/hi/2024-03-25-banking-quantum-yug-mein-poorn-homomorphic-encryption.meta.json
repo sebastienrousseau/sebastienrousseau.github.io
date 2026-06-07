@@ -1,13 +1,13 @@
 {
-  "banner_alt": "एन्क्रिप्शन की अमूर्त डिजिटल छवि",
-  "reading_time": 12,
-  "date": "March 25, 2024",
-  "title": "बैंकिंग क्वांटम-युग में पूर्ण-होमोमॉर्फ़िक एन्क्रिप्शन",
-  "description": "FHE बैंकिंग-डेटा को क्वांटम-युग में कैसे सुरक्षित कर सकती है — एन्क्रिप्टेड डेटा पर सीधी गणना।",
-  "language": "hi-IN",
+  "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp",
   "word_count": 2572,
-  "subtitle": "एन्क्रिप्टेड डेटा पर सीधे गणना — व्यावहारिक FHE की ओर",
   "locale": "hi_IN",
-  "keywords": "FHE, होमोमॉर्फ़िक एन्क्रिप्शन, बैंकिंग, क्वांटम, post-quantum, क्रिप्टोग्राफी, BFV, CKKS, गोपनीयता, सुरक्षा",
-  "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp"
+  "reading_time": 12,
+  "banner_alt": "एन्क्रिप्शन की अमूर्त डिजिटल छवि",
+  "subtitle": "एन्क्रिप्टेड डेटा पर सीधे गणना — व्यावहारिक FHE की ओर",
+  "date": "March 25, 2024",
+  "language": "hi-IN",
+  "description": "FHE बैंकिंग-डेटा को क्वांटम-युग में कैसे सुरक्षित कर सकती है — एन्क्रिप्टेड डेटा पर सीधी गणना।",
+  "title": "बैंकिंग क्वांटम-युग में पूर्ण-होमोमॉर्फ़िक एन्क्रिप्शन",
+  "keywords": "FHE, होमोमॉर्फ़िक एन्क्रिप्शन, बैंकिंग, क्वांटम, post-quantum, क्रिप्टोग्राफी, BFV, CKKS, गोपनीयता, सुरक्षा"
 }

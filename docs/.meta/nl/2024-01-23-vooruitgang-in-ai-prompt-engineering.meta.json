@@ -1,13 +1,13 @@
 {
-  "language": "nl-NL",
-  "title": "Vooruitgang in AI-prompt-engineering",
-  "reading_time": 10,
   "banner": "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp",
   "banner_alt": "Visualisatie van prompt-engineering voor grote taalmodellen",
+  "reading_time": 10,
+  "description": "Vooruitgang in AI-prompt-engineering — een verkenning van patronen, technieken en best practices voor het sturen van LLM-uitkomsten.",
+  "language": "nl-NL",
   "locale": "nl_NL",
-  "date": "January 23, 2024",
   "word_count": 2126,
-  "subtitle": "Hoe systematisch prompt-ontwerp de uitkomst van grote taalmodellen stuurt",
   "keywords": "Prompt engineering, AI, LLM, GPT, chain-of-thought, few-shot, best practices",
-  "description": "Vooruitgang in AI-prompt-engineering — een verkenning van patronen, technieken en best practices voor het sturen van LLM-uitkomsten."
+  "subtitle": "Hoe systematisch prompt-ontwerp de uitkomst van grote taalmodellen stuurt",
+  "title": "Vooruitgang in AI-prompt-engineering",
+  "date": "January 23, 2024"
 }

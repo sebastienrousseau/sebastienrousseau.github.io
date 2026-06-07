@@ -1,13 +1,13 @@
 {
-  "banner_alt": "Аудио-анализ с ИИ: визуализация процесса",
-  "word_count": 275,
-  "date": "January 29, 2024",
-  "subtitle": "Из аудиоданных — полезные выводы за минуты",
-  "locale": "ru_RU",
   "description": "Современные ИИ-инструменты превращают аудио в текст, переводят на десятки языков и извлекают полезные выводы из записей разговоров.",
-  "keywords": "распознавание речи, Whisper, ASR, перевод аудио, диаризация, аудио-аналитика, банковский call-центр, comlpiance",
-  "language": "ru-RU",
   "title": "Аудио-анализ, переводы и инсайты с помощью ИИ",
+  "locale": "ru_RU",
+  "date": "January 29, 2024",
+  "reading_time": 1,
+  "banner_alt": "Аудио-анализ с ИИ: визуализация процесса",
+  "language": "ru-RU",
+  "subtitle": "Из аудиоданных — полезные выводы за минуты",
+  "word_count": 275,
   "banner": "https://cloudcdn.pro/stocks/images/ai-audio-insights.webp",
-  "reading_time": 1
+  "keywords": "распознавание речи, Whisper, ASR, перевод аудио, диаризация, аудио-аналитика, банковский call-центр, comlpiance"
 }

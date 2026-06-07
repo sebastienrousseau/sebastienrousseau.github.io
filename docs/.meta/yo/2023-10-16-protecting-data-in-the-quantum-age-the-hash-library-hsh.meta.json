@@ -1,14 +1,14 @@
 {
-  "language": "yo-NG",
   "banner_alt": "Àwòrán ìmọ̀ẹ̀dá lórí àkóónú iṣiro quantum",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
-  "keywords": "cryptography ti o tako quantum, post-quantum cryptography, ikawe hash, HSH, hashing ọrọ aṣínà, iyọrisi bọtini, Argon2i, Bcrypt, Scrypt, iṣiro quantum",
-  "tags": "ìsirò ìpamọ́ lẹ́yìn quantum, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, quantum computing, ISO 20022, AI, Rust, open source",
-  "reading_time": 7,
   "date": "Oct 16, 2023",
-  "locale": "yo_NG",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
+  "reading_time": 7,
+  "language": "yo-NG",
+  "tags": "ìsirò ìpamọ́ lẹ́yìn quantum, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, quantum computing, ISO 20022, AI, Rust, open source",
+  "keywords": "cryptography ti o tako quantum, post-quantum cryptography, ikawe hash, HSH, hashing ọrọ aṣínà, iyọrisi bọtini, Argon2i, Bcrypt, Scrypt, iṣiro quantum",
   "subtitle": "HSH: ikawe hash ti o tako quantum fun akoko post-quantum ti ijẹrisi idanimọ.",
-  "description": "HSH nlo awọn ipilẹ cryptographic ti o tako quantum lati daabobo data rẹ, ni idaniloju aabo rẹ paapaa ni oju awọn ilọsiwaju iṣiro quantum ti ọjọ iwaju.",
+  "title": "Protecting Data in the Quantum Age: The Hash Library (HSH)",
+  "locale": "yo_NG",
   "word_count": 1499,
-  "title": "Protecting Data in the Quantum Age: The Hash Library (HSH)"
+  "description": "HSH nlo awọn ipilẹ cryptographic ti o tako quantum lati daabobo data rẹ, ni idaniloju aabo rẹ paapaa ni oju awọn ilọsiwaju iṣiro quantum ti ọjọ iwaju."
 }

@@ -1,14 +1,14 @@
 {
-  "subtitle": "KyberLib, aiwatar da Rust mai ƙarfi na CRYSTALS-Kyber don zamanin quantum.",
-  "word_count": 1118,
-  "keywords": "KyberLib, Rust CRYSTALS-Kyber, cryptography bayan-quantum, lattice-based cryptography, musayar mabuɗi mai juriya ga quantum, NIST FIPS 203, Sebastien Rousseau, KEM, tabbatar da biyan kuɗi, PQC library",
   "reading_time": 5,
-  "banner_alt": "Ƙarfafa Sadarwa Mai Aminci a Zamanin Quantum tare da KyberLib",
-  "tags": "KyberLib, Rust, CRYSTALS-Kyber, post-quantum cryptography, lattice-based cryptography, key encapsulation mechanism, NIST, libsignal, cryptography, ISO 20022, quantum computing, AI",
   "description": "Aiwatar da ɓoyayyar bayanai ta CRYSTALS-Kyber mai ƙarfi da juriya ga quantum, don kare bayananku daga barazanar ƙididdigewa da hare-haren cryptanalytic.",
-  "date": "Nov 28, 2023",
-  "language": "ha-NG",
-  "title": "KyberLib: Rust CRYSTALS-Kyber for Post-Quantum",
+  "subtitle": "KyberLib, aiwatar da Rust mai ƙarfi na CRYSTALS-Kyber don zamanin quantum.",
   "locale": "ha_NG",
-  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
+  "language": "ha-NG",
+  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
+  "keywords": "KyberLib, Rust CRYSTALS-Kyber, cryptography bayan-quantum, lattice-based cryptography, musayar mabuɗi mai juriya ga quantum, NIST FIPS 203, Sebastien Rousseau, KEM, tabbatar da biyan kuɗi, PQC library",
+  "title": "KyberLib: Rust CRYSTALS-Kyber for Post-Quantum",
+  "banner_alt": "Ƙarfafa Sadarwa Mai Aminci a Zamanin Quantum tare da KyberLib",
+  "date": "Nov 28, 2023",
+  "word_count": 1118,
+  "tags": "KyberLib, Rust, CRYSTALS-Kyber, post-quantum cryptography, lattice-based cryptography, key encapsulation mechanism, NIST, libsignal, cryptography, ISO 20022, quantum computing, AI"
 }

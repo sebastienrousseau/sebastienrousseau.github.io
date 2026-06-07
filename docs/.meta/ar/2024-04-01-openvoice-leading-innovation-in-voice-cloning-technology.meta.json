@@ -1,14 +1,14 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
   "subtitle": "أداة الاستنساخ الصوتي مفتوحة المصدر من الجيل التالي",
-  "locale": "ar_SA",
-  "language": "ar",
-  "description": "OpenVoice من MIT وTsinghua وMyShell: استنساخ صوتي بمستوى الإنتاج مع التحكّم في النبرة واللكنة والعاطفة — والمقايضات التي يجدر معرفتها.",
-  "keywords": "OpenVoice, تقنية الاستنساخ الصوتي, الكلام الصناعي بالذكاء الاصطناعي, الاستنساخ الصوتي مفتوح المصدر, التركيب الصوتي عبر اللغات, الاستنساخ الصوتي الفوري, التحكّم في الأسلوب الصوتي, تقنية صوتية للوصول, الأصوات في صناعة الترفيه, الذكاء الاصطناعي الصوتي لخدمة العملاء",
-  "title": "OpenVoice: ريادة الابتكار في تقنية الاستنساخ الصوتي",
   "date": "Apr 01, 2024",
+  "title": "OpenVoice: ريادة الابتكار في تقنية الاستنساخ الصوتي",
+  "keywords": "OpenVoice, تقنية الاستنساخ الصوتي, الكلام الصناعي بالذكاء الاصطناعي, الاستنساخ الصوتي مفتوح المصدر, التركيب الصوتي عبر اللغات, الاستنساخ الصوتي الفوري, التحكّم في الأسلوب الصوتي, تقنية صوتية للوصول, الأصوات في صناعة الترفيه, الذكاء الاصطناعي الصوتي لخدمة العملاء",
+  "tags": "OpenVoice, Voice Cloning, Synthetic Speech, open source, Cross-Lingual, Instant Cloning, Voice Control, Accessibility, Entertainment, Customer Service, ISO 20022, التشفير ما بعد الكمي, AI, DORA, هندسة المنصة, السحابة السيادية, البنوك السحابية الأصيلة، Kubernetes، DORA، المؤسسات المالية، OpenShift، Portworx، سيادة السحابة، المرونة التشغيلية، التعافي من الكوارث، التعايش بين الأجهزة الافتراضية والحاويات، أعباء عمل الذكاء الاصطناعي، مخاطر الطرف الثالث، الاعتماد على السحابة",
   "word_count": 918,
-  "reading_time": 4,
+  "locale": "ar_SA",
+  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
   "banner_alt": "لافتة تُمثّل طبقات من الملامح بتدرّجات لون نابضة",
-  "tags": "OpenVoice, Voice Cloning, Synthetic Speech, open source, Cross-Lingual, Instant Cloning, Voice Control, Accessibility, Entertainment, Customer Service, ISO 20022, التشفير ما بعد الكمي, AI, DORA, هندسة المنصة, السحابة السيادية, البنوك السحابية الأصيلة، Kubernetes، DORA، المؤسسات المالية، OpenShift، Portworx، سيادة السحابة، المرونة التشغيلية، التعافي من الكوارث، التعايش بين الأجهزة الافتراضية والحاويات، أعباء عمل الذكاء الاصطناعي، مخاطر الطرف الثالث، الاعتماد على السحابة"
+  "reading_time": 4,
+  "language": "ar",
+  "description": "OpenVoice من MIT وTsinghua وMyShell: استنساخ صوتي بمستوى الإنتاج مع التحكّم في النبرة واللكنة والعاطفة — والمقايضات التي يجدر معرفتها."
 }

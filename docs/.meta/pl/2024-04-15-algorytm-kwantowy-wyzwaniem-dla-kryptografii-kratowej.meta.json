@@ -1,13 +1,13 @@
 {
-  "banner_alt": "Wizualizacja algorytmu kwantowego dla LWE",
-  "word_count": 181,
   "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
-  "keywords": "kwantowy algorytm, kryptografia kratowa, LWE, PQC, kwantowe ataki, Yilei Chen",
-  "language": "pl-PL",
-  "date": "Apr 01, 2024",
-  "title": "Algorytm kwantowy wyzwaniem dla kryptografii kratowej",
   "reading_time": 1,
-  "locale": "pl_PL",
   "subtitle": "Nowy algorytm kwantowy a kryptografia oparta na kratach",
-  "description": "Nowy algorytm kwantowy rozwiązuje kluczowy problem kryptograficzny, wzywając do przyspieszenia badań nad bezpieczeństwem odpornym na kwanty."
+  "locale": "pl_PL",
+  "description": "Nowy algorytm kwantowy rozwiązuje kluczowy problem kryptograficzny, wzywając do przyspieszenia badań nad bezpieczeństwem odpornym na kwanty.",
+  "keywords": "kwantowy algorytm, kryptografia kratowa, LWE, PQC, kwantowe ataki, Yilei Chen",
+  "banner_alt": "Wizualizacja algorytmu kwantowego dla LWE",
+  "title": "Algorytm kwantowy wyzwaniem dla kryptografii kratowej",
+  "word_count": 181,
+  "language": "pl-PL",
+  "date": "Apr 01, 2024"
 }

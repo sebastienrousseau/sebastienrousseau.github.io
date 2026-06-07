@@ -1,13 +1,13 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp",
+  "language": "hi-IN",
   "keywords": "AI, 2024, रुझान, मल्टीमॉडल, एजेंट, फाउंडेशन मॉडल, GPT, Gemini, EU AI Act, बैंकिंग",
-  "locale": "hi_IN",
   "title": "AI रुझान 2024: अंतर्दृष्टि और भविष्य के अनुमान",
-  "banner_alt": "AI के लिए वर्ष की प्रवाह-रेखा",
+  "reading_time": 19,
   "subtitle": "मल्टीमॉडल फाउंडेशन-मॉडल से लेकर एजेंट-वर्कफ़्लो तक",
   "word_count": 3958,
   "description": "2024 के लिए AI रुझान: मल्टीमॉडल फाउंडेशन-मॉडल, एजेंट-वर्कफ़्लो और नियामक संरचना।",
-  "reading_time": 19,
-  "language": "hi-IN",
-  "date": "January 01, 2024"
+  "date": "January 01, 2024",
+  "banner_alt": "AI के लिए वर्ष की प्रवाह-रेखा",
+  "banner": "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp",
+  "locale": "hi_IN"
 }

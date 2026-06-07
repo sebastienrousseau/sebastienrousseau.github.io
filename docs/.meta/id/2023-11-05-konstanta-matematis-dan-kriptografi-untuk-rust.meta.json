@@ -1,13 +1,13 @@
 {
-  "title": "[ID DRAFT] Mathematical and Cryptographic Constants for Rust Security",
-  "language": "id-ID",
-  "banner_alt": "Komputasi matematika",
-  "keywords": "konstanta matematika, konstanta kriptografi, Rust security, komunikasi aman, enkripsi, RSA, elliptic curve cryptography, Common (CMN) library, aplikasi Rust, komputasi matematika",
+  "reading_time": 1,
   "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
-  "subtitle": "Konstanta matematika dan kriptografi terverifikasi untuk keamanan Rust yang aman memori.",
+  "locale": "id_ID",
   "description": "Lindungi integritas kode dengan konstanta matematika dan kriptografi yang telah diverifikasi secara cermat, memperkuat keamanan memori dan konkurensi demi keamanan kode yang lebih tinggi.",
   "date": "Nov 05, 2023",
+  "language": "id-ID",
+  "keywords": "konstanta matematika, konstanta kriptografi, Rust security, komunikasi aman, enkripsi, RSA, elliptic curve cryptography, Common (CMN) library, aplikasi Rust, komputasi matematika",
+  "banner_alt": "Komputasi matematika",
+  "subtitle": "Konstanta matematika dan kriptografi terverifikasi untuk keamanan Rust yang aman memori.",
   "word_count": 245,
-  "reading_time": 1,
-  "locale": "id_ID"
+  "title": "[ID DRAFT] Mathematical and Cryptographic Constants for Rust Security"
 }

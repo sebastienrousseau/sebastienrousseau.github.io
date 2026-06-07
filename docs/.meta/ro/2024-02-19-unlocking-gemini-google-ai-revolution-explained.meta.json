@@ -1,14 +1,14 @@
 {
-  "locale": "ro_RO",
-  "keywords": "Gemini 1.5, Google AI, arhitectură Mixture-of-Experts, eficiență computațională, extinderea ferestrei de context, inovație AI, transformarea analizei datelor, învățare în context, cazuri de utilizare AI, revoluție tehnologică",
-  "tags": "Gemini 1.5, Google AI, AI Efficiency, AI Quality, Context Window, In-Context Learning, AI Use Cases, AI Revolution, Technology Transformation, Data Analysis, ISO 20022, criptografie post-cuantică, AI, DORA, depozite tokenizate, ingineria platformei, cloud suveran, banking cloud native, plăți transfrontaliere, stablecoinuri",
-  "title": "Unlocking Gemini 1.5: Google's AI Revolution Explained",
-  "language": "ro-RO",
   "banner_alt": "Vizualizare abstractă a rețelelor de inteligență artificială, reprezentând capacitățile Gemini 1.5",
-  "date": "Feb 19, 2024",
-  "word_count": 739,
-  "subtitle": "O analiză aprofundată a celui mai recent progres în domeniul AI al Google",
   "description": "Gemini 1.5 de la Google extinde ferestrele de context la peste 1 milion de tokeni. Ce posibilități oferă pentru finanțele augmentate prin recuperare și ce compromisuri trebuie cunoscute.",
+  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
+  "word_count": 739,
+  "locale": "ro_RO",
+  "tags": "Gemini 1.5, Google AI, AI Efficiency, AI Quality, Context Window, In-Context Learning, AI Use Cases, AI Revolution, Technology Transformation, Data Analysis, ISO 20022, criptografie post-cuantică, AI, DORA, depozite tokenizate, ingineria platformei, cloud suveran, banking cloud native, plăți transfrontaliere, stablecoinuri",
+  "subtitle": "O analiză aprofundată a celui mai recent progres în domeniul AI al Google",
   "reading_time": 3,
-  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp"
+  "language": "ro-RO",
+  "title": "Unlocking Gemini 1.5: Google's AI Revolution Explained",
+  "date": "Feb 19, 2024",
+  "keywords": "Gemini 1.5, Google AI, arhitectură Mixture-of-Experts, eficiență computațională, extinderea ferestrei de context, inovație AI, transformarea analizei datelor, învățare în context, cazuri de utilizare AI, revoluție tehnologică"
 }

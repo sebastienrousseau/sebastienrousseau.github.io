@@ -1,15 +1,15 @@
 {
-  "locale": "ro_RO",
-  "subtitle": "Distribuția Cuantică a Cheilor (QKD) pentru securitate de nivel financiar în sectorul bancar.",
-  "banner_alt": "HSBC de la Docuri",
+  "reading_time": 5,
   "excerpt": "As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security.",
   "title": "Quantum Key Distribution Revolutionising Security in Banking",
-  "tags": "quantum, key, distribution, cryptography, cybersecurity, finance, banking, digital, innovation, blockchain, calcul cuantic, hsbc, trading, data, protection, future, ISO 20022, DORA, criptografie post-cuantică, AI",
+  "locale": "ro_RO",
+  "banner_alt": "HSBC de la Docuri",
+  "date": "Dec 11, 2023",
   "description": "Pe măsură ce calculatoarele cuantice amenință metodele tradiționale de criptare, Distribuția Cuantică a Cheilor (QKD) apare ca o soluție revoluționară, oferind securitate fără precedent.",
+  "tags": "quantum, key, distribution, cryptography, cybersecurity, finance, banking, digital, innovation, blockchain, calcul cuantic, hsbc, trading, data, protection, future, ISO 20022, DORA, criptografie post-cuantică, AI",
+  "subtitle": "Distribuția Cuantică a Cheilor (QKD) pentru securitate de nivel financiar în sectorul bancar.",
+  "language": "ro-RO",
   "keywords": "Distribuție Cuantică a Cheilor (QKD), Securitate Cuantică, Banking, Industrie Financiară, Finanțe Digitale, Securitate Cibernetică, Calculatoare Cuantice, HSBC, Quantum Protection Trial, Tranzacții Financiare",
   "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
-  "language": "ro-RO",
-  "reading_time": 5,
-  "word_count": 1094,
-  "date": "Dec 11, 2023"
+  "word_count": 1094
 }

@@ -1,13 +1,13 @@
 {
-  "reading_time": 5,
   "subtitle": "Cos'è la blockchain, come funziona e perché plasma il futuro della finanza",
-  "language": "it-IT",
-  "title": "Blockchain spiegata: la tecnologia che conta di più",
-  "keywords": "blockchain, libro mastro distribuito, consenso, smart contract, Bitcoin, Ethereum, finanza decentralizzata, DLT",
   "date": "January 2, 2018",
-  "banner_alt": "Laptop spento su un tavolo di legno marrone",
-  "description": "Una panoramica accessibile della tecnologia blockchain: libro mastro distribuito, consenso, smart contract e applicazioni nel settore finanziario.",
+  "keywords": "blockchain, libro mastro distribuito, consenso, smart contract, Bitcoin, Ethereum, finanza decentralizzata, DLT",
+  "title": "Blockchain spiegata: la tecnologia che conta di più",
+  "reading_time": 5,
   "locale": "it_IT",
+  "banner_alt": "Laptop spento su un tavolo di legno marrone",
   "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "language": "it-IT",
+  "description": "Una panoramica accessibile della tecnologia blockchain: libro mastro distribuito, consenso, smart contract e applicazioni nel settore finanziario.",
   "word_count": 1011
 }

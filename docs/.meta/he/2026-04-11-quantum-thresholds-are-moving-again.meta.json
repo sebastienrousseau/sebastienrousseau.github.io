@@ -1,14 +1,14 @@
 {
-  "language": "he-IL",
-  "title": "العتبات الكمية تتحرّك من جديد",
-  "tags": "מחשוב קוונטי, Shor's algorithm, קריפטוגרפיה פוסט-קוונטית, RSA, elliptic curve, neutral atoms, error correction, cryptographic agility, quantum threat, payments, ISO 20022, DORA, AI, תשלומים חוצי גבולות, סטייבלקוינים",
-  "locale": "he_IL",
   "description": "تقترح ورقةٌ بحثية جديدة أن خوارزمية Shor يمكن أن تعمل على عشرة آلاف qubit فحسب. وتنخفض عتبة الحوسبة الكمية ذات الصلة بالتشفير أسرع ممّا توقّع أكثر الباحثين.",
-  "word_count": 2072,
-  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
+  "locale": "he_IL",
   "keywords": "خوارزمية Shor، qubits، الحوسبة الكمية، ECC، RSA-2048، الذرّات المحايدة القابلة لإعادة التشكيل، رموز تصحيح الأخطاء، CRYSTALS-Kyber، CRYSTALS-Dilithium، PQC، التشفير ما بعد الكمي",
   "date": "April 11, 2026",
-  "banner_alt": "مخطط عتبة الـ qubit لخوارزمية Shor. لوحة دائرة كهربائية للحوسبة الكمية بأنماط ضوء أزرق",
+  "tags": "מחשוב קוונטי, Shor's algorithm, קריפטוגרפיה פוסט-קוונטית, RSA, elliptic curve, neutral atoms, error correction, cryptographic agility, quantum threat, payments, ISO 20022, DORA, AI, תשלומים חוצי גבולות, סטייבלקוינים",
+  "title": "العتبات الكمية تتحرّك من جديد",
+  "word_count": 2072,
   "reading_time": 10,
-  "subtitle": "تقترح ورقةٌ بحثية جديدة أن خوارزمية Shor يمكن أن تعمل على عشرة آلاف qubit فحسب. وتنخفض عتبة الحوسبة الكمية ذات الصلة بالتشفير أسرع ممّا توقّع أكثر الباحثين."
+  "banner_alt": "مخطط عتبة الـ qubit لخوارزمية Shor. لوحة دائرة كهربائية للحوسبة الكمية بأنماط ضوء أزرق",
+  "subtitle": "تقترح ورقةٌ بحثية جديدة أن خوارزمية Shor يمكن أن تعمل على عشرة آلاف qubit فحسب. وتنخفض عتبة الحوسبة الكمية ذات الصلة بالتشفير أسرع ممّا توقّع أكثر الباحثين.",
+  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
+  "language": "he-IL"
 }

@@ -1,13 +1,13 @@
 {
-  "subtitle": "Analisi dell'articolo MM1 di Apple sui Multimodal Large Language Models",
-  "banner_alt": "MM1 di Apple",
-  "reading_time": 8,
-  "language": "it-IT",
-  "title": "Far progredire l'IA con LLM multimodali: lezioni da MM1",
-  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
   "description": "Un'analisi dell'articolo MM1 di Apple sui Multimodal Large Language Models — architettura, strategie di pre-training e capacità emergenti.",
   "word_count": 1634,
-  "keywords": "MM1, Apple, multimodale, LLM, pre-training, visione, IA",
+  "language": "it-IT",
+  "title": "Far progredire l'IA con LLM multimodali: lezioni da MM1",
   "locale": "it_IT",
+  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
+  "keywords": "MM1, Apple, multimodale, LLM, pre-training, visione, IA",
+  "banner_alt": "MM1 di Apple",
+  "subtitle": "Analisi dell'articolo MM1 di Apple sui Multimodal Large Language Models",
+  "reading_time": 8,
   "date": "March 18, 2024"
 }

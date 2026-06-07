@@ -1,14 +1,14 @@
 {
-  "tags": "OpenAI, Whisper, Metal, macOS, Speech, Real-Time, Transcription, GPU, Python, Silicon, ISO 20022, post-quantum cryptography, AI, open source, DORA, platform engineering, sovereign cloud, cloud native banking",
-  "language": "fil-PH",
-  "word_count": 828,
-  "reading_time": 4,
-  "banner_alt": "لافتة للتعرّف الآلي على الكلام في الزمن الفعلي (ASR)",
-  "keywords": "OpenAI Whisper, Metal Performance Shaders, التعرّف الصوتي على macOS, النسخ في الزمن الفعلي, اكتشاف النشاط الصوتي, تسريع GPU, تكامل Python, تحويل الكلام إلى نصّ على macOS, اكتشاف الكلام الموفِّر للطاقة, Apple silicon",
-  "description": "اكتشف كيف يُحوِّل OpenAI Whisper وMetal Performance Shaders التعرّفَ الصوتي في الزمن الفعلي على macOS، مُقدِّمَين سرعةً ودقّةً لا مثيل لهما.",
-  "title": "التعرّف الصوتي السريع في الزمن الفعلي على macOS باستخدام OpenAI Whisper",
-  "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
-  "locale": "fil_PH",
   "subtitle": "أطلق قدرات تحويل الكلام إلى نصّ بدفع الذكاء الاصطناعي وتسريع وحدة معالجة الرسوميات على جهاز Mac",
-  "date": "Mar 12, 2024"
+  "locale": "fil_PH",
+  "banner_alt": "لافتة للتعرّف الآلي على الكلام في الزمن الفعلي (ASR)",
+  "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
+  "keywords": "OpenAI Whisper, Metal Performance Shaders, التعرّف الصوتي على macOS, النسخ في الزمن الفعلي, اكتشاف النشاط الصوتي, تسريع GPU, تكامل Python, تحويل الكلام إلى نصّ على macOS, اكتشاف الكلام الموفِّر للطاقة, Apple silicon",
+  "reading_time": 4,
+  "title": "التعرّف الصوتي السريع في الزمن الفعلي على macOS باستخدام OpenAI Whisper",
+  "description": "اكتشف كيف يُحوِّل OpenAI Whisper وMetal Performance Shaders التعرّفَ الصوتي في الزمن الفعلي على macOS، مُقدِّمَين سرعةً ودقّةً لا مثيل لهما.",
+  "tags": "OpenAI, Whisper, Metal, macOS, Speech, Real-Time, Transcription, GPU, Python, Silicon, ISO 20022, post-quantum cryptography, AI, open source, DORA, platform engineering, sovereign cloud, cloud native banking",
+  "date": "Mar 12, 2024",
+  "word_count": 828,
+  "language": "fil-PH"
 }

@@ -1,13 +1,13 @@
 {
-  "banner_alt": "日落的繆斯，靜謐一瞥；美在靜止",
-  "subtitle": "和我一起踏上從 Rust、AI 與量子計算到借 Alien Studio 重新定義藝術與攝影的個人旅程",
-  "reading_time": 1,
-  "date": "January 15, 2024",
-  "keywords": "Alien Studio, AI 攝影, MidJourney, Rust, 人工智慧, 量子計算, 數字藝術, 攝影, 創意, 數字文藝復興",
-  "word_count": 177,
   "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
+  "banner_alt": "日落的繆斯，靜謐一瞥；美在靜止",
+  "locale": "zh_TW",
+  "keywords": "Alien Studio, AI 攝影, MidJourney, Rust, 人工智慧, 量子計算, 數字藝術, 攝影, 創意, 數字文藝復興",
   "description": "從 Rust、AI 與量子計算的探索到 Alien Studio 這一融合技術與藝術的攝影專案。",
   "language": "zh-Hant",
+  "subtitle": "和我一起踏上從 Rust、AI 與量子計算到借 Alien Studio 重新定義藝術與攝影的個人旅程",
+  "date": "January 15, 2024",
   "title": "Alien Studio：用 AI 攝影變革藝術",
-  "locale": "zh_TW"
+  "word_count": 177,
+  "reading_time": 1
 }

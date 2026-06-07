@@ -1,13 +1,13 @@
 {
+  "banner": "https://cloudcdn.pro/stocks/images/dtt-banner.webp",
   "description": "DTT — thư viện Rust cho ngày, giờ, múi giờ, định dạng và parsing. Được thiết kế cho các ứng dụng tài chính và backend nghiêm túc về dữ liệu thời gian.",
+  "language": "vi-VN",
+  "reading_time": 1,
+  "banner_alt": "Đồng hồ và lịch trên nền trừu tượng",
+  "keywords": "DTT, Rust, ngày, giờ, múi giờ, parsing, định dạng, tài chính, ISO 8601, RFC 3339",
+  "title": "Làm chủ ngày và giờ trong Rust với thư viện DTT",
   "date": "December 4, 2023",
   "word_count": 376,
-  "title": "Làm chủ ngày và giờ trong Rust với thư viện DTT",
-  "keywords": "DTT, Rust, ngày, giờ, múi giờ, parsing, định dạng, tài chính, ISO 8601, RFC 3339",
-  "locale": "vi_VN",
   "subtitle": "Một thư viện Rust toàn diện cho xử lý ngày, giờ và múi giờ",
-  "language": "vi-VN",
-  "banner": "https://cloudcdn.pro/stocks/images/dtt-banner.webp",
-  "banner_alt": "Đồng hồ và lịch trên nền trừu tượng",
-  "reading_time": 1
+  "locale": "vi_VN"
 }

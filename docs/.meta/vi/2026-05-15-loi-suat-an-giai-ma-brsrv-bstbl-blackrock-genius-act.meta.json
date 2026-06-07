@@ -1,13 +1,13 @@
 {
-  "title": "Lợi suất ẩn: giải mã các hồ sơ BRSRV và BSTBL của BlackRock theo GENIUS Act",
-  "description": "Stablecoin không thể trả lợi suất theo GENIUS Act. Hồ sơ BRSRV và BSTBL của BlackRock hé lộ giải pháp: một quỹ thị trường tiền tệ token hoá cung cấp lợi suất qua một đường ray tuân thủ kế bên.",
   "language": "vi-VN",
   "date": "May 15, 2026",
-  "keywords": "BlackRock, GENIUS Act, BRSRV, BSTBL, stablecoin, lợi suất, MMF token hoá, BUIDL, USD1, quy định",
-  "banner_alt": "Logo BlackRock với các biểu tượng stablecoin",
-  "locale": "vi_VN",
-  "banner": "https://cloudcdn.pro/stocks/images/blackrock-genius-banner.webp",
   "reading_time": 4,
   "subtitle": "Cách BlackRock tách lợi suất khỏi stablecoin được quản lý",
-  "word_count": 900
+  "banner_alt": "Logo BlackRock với các biểu tượng stablecoin",
+  "title": "Lợi suất ẩn: giải mã các hồ sơ BRSRV và BSTBL của BlackRock theo GENIUS Act",
+  "banner": "https://cloudcdn.pro/stocks/images/blackrock-genius-banner.webp",
+  "keywords": "BlackRock, GENIUS Act, BRSRV, BSTBL, stablecoin, lợi suất, MMF token hoá, BUIDL, USD1, quy định",
+  "word_count": 900,
+  "locale": "vi_VN",
+  "description": "Stablecoin không thể trả lợi suất theo GENIUS Act. Hồ sơ BRSRV và BSTBL của BlackRock hé lộ giải pháp: một quỹ thị trường tiền tệ token hoá cung cấp lợi suất qua một đường ray tuân thủ kế bên."
 }

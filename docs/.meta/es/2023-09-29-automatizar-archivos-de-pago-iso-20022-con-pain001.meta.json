@@ -1,13 +1,13 @@
 {
-  "title": "Automatizar la creación de archivos de pago conformes con ISO 20022 con Pain001",
   "subtitle": "Pain001: la biblioteca Python de código abierto que simplifica el cumplimiento de ISO 20022",
-  "language": "es-ES",
-  "banner_alt": "Un edificio muy alto perforado con numerosas aberturas",
-  "banner": "https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp",
-  "description": "Automatice la creación de archivos de pago pain.001 conformes con ISO 20022 a partir de CSV o SQLite con Pain001, la biblioteca Python de código abierto.",
-  "keywords": "ISO 20022, pain.001, Pain001, Python, pagos, automatización, CBPR+, HVPS+, SEPA, cumplimiento, transferencias",
+  "reading_time": 3,
   "locale": "es_ES",
-  "word_count": 789,
+  "description": "Automatice la creación de archivos de pago pain.001 conformes con ISO 20022 a partir de CSV o SQLite con Pain001, la biblioteca Python de código abierto.",
+  "language": "es-ES",
   "date": "September 29, 2023",
-  "reading_time": 3
+  "banner": "https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp",
+  "title": "Automatizar la creación de archivos de pago conformes con ISO 20022 con Pain001",
+  "banner_alt": "Un edificio muy alto perforado con numerosas aberturas",
+  "keywords": "ISO 20022, pain.001, Pain001, Python, pagos, automatización, CBPR+, HVPS+, SEPA, cumplimiento, transferencias",
+  "word_count": 789
 }

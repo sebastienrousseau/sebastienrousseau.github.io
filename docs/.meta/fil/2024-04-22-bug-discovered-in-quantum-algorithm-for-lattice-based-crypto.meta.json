@@ -1,14 +1,14 @@
 {
-  "locale": "fil_PH",
+  "word_count": 675,
+  "language": "fil-PH",
+  "date": "Apr 22, 2024",
+  "subtitle": "مراجعة الأقران تكشف عن خلل في عمل Chen الرائد",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "keywords": "التشفير ما بعد الكمومي, NIST, توحيد PQC القياسي, Yilei Chen, الخوارزمية الكمومية, التشفير القائم على الشبكات, مسألة LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, التشفير المقاوم للكمومية",
+  "banner_alt": "صورة مُولَّدة باستخدام MidJourney — شبكة من العُقَد الرقمية بألوان حمراء وزرقاء.",
+  "reading_time": 3,
   "description": "خلل في الخوارزمية الكمومية لـLWE من Yilei Chen يمنح التشفير القائم على الشبكات مهلةً مؤقّتة. ما يعنيه ذلك لـCRYSTALS-Kyber وDilithium وخارطة طريق PQC.",
   "title": "التشفير الكمومي القائم على الشبكات: خلل في هجوم Chen على LWE",
-  "date": "Apr 22, 2024",
-  "language": "fil-PH",
-  "banner_alt": "صورة مُولَّدة باستخدام MidJourney — شبكة من العُقَد الرقمية بألوان حمراء وزرقاء.",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
-  "subtitle": "مراجعة الأقران تكشف عن خلل في عمل Chen الرائد",
-  "reading_time": 3,
-  "keywords": "التشفير ما بعد الكمومي, NIST, توحيد PQC القياسي, Yilei Chen, الخوارزمية الكمومية, التشفير القائم على الشبكات, مسألة LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, التشفير المقاوم للكمومية",
   "tags": "post-quantum cryptography, NIST, quantum algorithms, Lattice-Based Cryptography, LWE Problem, quantum computing, Cryptographic Security, Quantum Resistance, Cryptography Research, ISO 20022, AI, Rust",
-  "word_count": 675
+  "locale": "fil_PH"
 }

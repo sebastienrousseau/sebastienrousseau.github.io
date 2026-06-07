@@ -1,13 +1,13 @@
 {
-  "locale": "es_ES",
-  "date": "January 1, 2018",
-  "reading_time": 6,
   "description": "Bitcoin: un sistema de efectivo electrónico entre pares (P2P ECS) capaz de revolucionar la forma en que las personas transaccionan en línea.",
   "subtitle": "Un sistema de pago electrónico entre pares que ha redefinido el dinero",
-  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
-  "banner_alt": "Un montón de monedas de oro y plata sobre una mesa",
-  "word_count": 1337,
   "keywords": "Bitcoin, criptomoneda, blockchain, P2P, doble gasto, minería, proof-of-work, ETF, Satoshi Nakamoto, finanzas descentralizadas",
   "language": "es-ES",
-  "title": "Bitcoin: revisión del año de la primera criptomoneda"
+  "title": "Bitcoin: revisión del año de la primera criptomoneda",
+  "date": "January 1, 2018",
+  "word_count": 1337,
+  "locale": "es_ES",
+  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
+  "banner_alt": "Un montón de monedas de oro y plata sobre una mesa",
+  "reading_time": 6
 }
