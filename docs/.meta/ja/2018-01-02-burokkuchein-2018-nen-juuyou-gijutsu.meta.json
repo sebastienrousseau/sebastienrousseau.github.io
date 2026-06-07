@@ -1,14 +1,14 @@
 {
-  "language": "ja-JP",
-  "keywords": "ブロックチェーン, 分散型台帳, 暗号資産, スマートコントラクト, トークン化, フィンテック, 信頼, 透明性",
-  "title": "ブロックチェーン:2018 年に重要となるテクノロジー",
-  "date": "January 2, 2018",
   "reading_time": 1,
-  "last_reviewed": "2026-05-11",
-  "banner": "https://cloudcdn.pro/stocks/images/clint-adair-BW0vK-FA3eg-unsplash.webp",
-  "locale": "ja_JP",
-  "banner_alt": "夜のネットワーク化された都市のスカイライン",
   "description": "金融サービスを再構築し、新たなビジネスモデルを生み出すブロックチェーン技術の概観。",
-  "subtitle": "デジタル取引における信頼を再形成する分散型台帳",
-  "word_count": 61
+  "banner": "https://cloudcdn.pro/stocks/images/clint-adair-BW0vK-FA3eg-unsplash.webp",
+  "keywords": "ブロックチェーン, 分散型台帳, 暗号資産, スマートコントラクト, トークン化, フィンテック, 信頼, 透明性",
+  "language": "ja-JP",
+  "word_count": 61,
+  "banner_alt": "夜のネットワーク化された都市のスカイライン",
+  "title": "ブロックチェーン:2018 年に重要となるテクノロジー",
+  "locale": "ja_JP",
+  "date": "January 2, 2018",
+  "last_reviewed": "2026-05-11",
+  "subtitle": "デジタル取引における信頼を再形成する分散型台帳"
 }

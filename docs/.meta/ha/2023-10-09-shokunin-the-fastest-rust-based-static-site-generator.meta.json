@@ -1,14 +1,14 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
-  "description": "Yana ba ku damar ƙirƙirar gidajen yanar gizo na tsaye masu tasiri tare da yiwuwar da ba ta iyaka, girma marar iyaka, da kasancewar yanar gizo ta musamman da kuke sarrafawa.",
   "reading_time": 5,
+  "keywords": "pain001, iso 20022, automation na biyan kuɗi, rage kashe kuɗi, sarrafa biyan kuɗi, fayilolin biyan kuɗi, fara biyan kuɗi, pain message, pain message standards, pain message validation",
   "language": "ha-NG",
-  "title": "Static Site Generator: Fastest Rust-Based SSG",
-  "subtitle": "Static Site Generator, mafi sauri Rust-based static site generator don gidajen yanar gizo masu tasiri sosai.",
-  "tags": "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, post-quantum cryptography, AI, tokenised deposits, Rust, cloud native banking, biyan kuɗi na cross-border, stablecoins",
-  "word_count": 1076,
-  "date": "Oct 09, 2023",
-  "locale": "ha_NG",
+  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
   "banner_alt": "Kwamfuta mai allon da aka kashe a saman teburin fari tare da gilashi na ruwa a hagu da alkalami, littafin rubutu da tsiro a dama",
-  "keywords": "pain001, iso 20022, automation na biyan kuɗi, rage kashe kuɗi, sarrafa biyan kuɗi, fayilolin biyan kuɗi, fara biyan kuɗi, pain message, pain message standards, pain message validation"
+  "title": "Static Site Generator: Fastest Rust-Based SSG",
+  "date": "Oct 09, 2023",
+  "tags": "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, post-quantum cryptography, AI, tokenised deposits, Rust, cloud native banking, biyan kuɗi na cross-border, stablecoins",
+  "description": "Yana ba ku damar ƙirƙirar gidajen yanar gizo na tsaye masu tasiri tare da yiwuwar da ba ta iyaka, girma marar iyaka, da kasancewar yanar gizo ta musamman da kuke sarrafawa.",
+  "word_count": 1076,
+  "subtitle": "Static Site Generator, mafi sauri Rust-based static site generator don gidajen yanar gizo masu tasiri sosai.",
+  "locale": "ha_NG"
 }

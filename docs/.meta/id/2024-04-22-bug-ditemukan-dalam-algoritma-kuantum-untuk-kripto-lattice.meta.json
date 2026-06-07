@@ -1,13 +1,13 @@
 {
-  "keywords": "kriptografi pasca-kuantum, NIST, standardisasi PQC, Yilei Chen, algoritma kuantum, kriptografi berbasis kisi, masalah LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, kriptografi tahan kuantum",
-  "subtitle": "Tinjauan Sejawat Mengungkap Cacat dalam Karya Terobosan Chen",
-  "title": "[ID DRAFT] Quantum Lattice Crypto: Bug in Chen's LWE Attack",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "reading_time": 2,
   "language": "id-ID",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "date": "Apr 22, 2024",
+  "word_count": 432,
+  "title": "[ID DRAFT] Quantum Lattice Crypto: Bug in Chen's LWE Attack",
   "description": "Bug dalam algoritma quantum LWE milik Yilei Chen memberikan jeda sementara bagi kriptografi berbasis kisi. Apa artinya bagi CRYSTALS-Kyber, Dilithium, dan peta jalan PQC.",
   "locale": "id_ID",
-  "banner_alt": "Gambar yang dihasilkan menggunakan MidJourney — jaringan simpul digital dalam nuansa merah dan biru.",
-  "reading_time": 2,
-  "date": "Apr 22, 2024",
-  "word_count": 432
+  "subtitle": "Tinjauan Sejawat Mengungkap Cacat dalam Karya Terobosan Chen",
+  "keywords": "kriptografi pasca-kuantum, NIST, standardisasi PQC, Yilei Chen, algoritma kuantum, kriptografi berbasis kisi, masalah LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, kriptografi tahan kuantum",
+  "banner_alt": "Gambar yang dihasilkan menggunakan MidJourney — jaringan simpul digital dalam nuansa merah dan biru."
 }

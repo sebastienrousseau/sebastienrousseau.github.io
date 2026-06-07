@@ -1,13 +1,13 @@
 {
-  "reading_time": 1,
-  "title": "Bitcoin: rok pierwszej kryptowaluty w podsumowaniu",
-  "word_count": 193,
-  "language": "pl-PL",
   "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
   "locale": "pl_PL",
-  "subtitle": "System płatności elektronicznych peer-to-peer, który zmienił definicję pieniądza",
-  "banner_alt": "Stos złotych i srebrnych monet leżących na stole",
-  "date": "Jan 01, 2018",
   "keywords": "Bitcoin, kryptowaluta, blockchain, P2P, podwójne wydatkowanie, kopanie, proof-of-work, ETF, Satoshi Nakamoto, finanse zdecentralizowane",
-  "description": "Bitcoin: system gotówki elektronicznej peer-to-peer (P2P ECS), który ma potencjał, by zrewolucjonizować sposób, w jaki ludzie dokonują transakcji online."
+  "date": "Jan 01, 2018",
+  "title": "Bitcoin: rok pierwszej kryptowaluty w podsumowaniu",
+  "subtitle": "System płatności elektronicznych peer-to-peer, który zmienił definicję pieniądza",
+  "language": "pl-PL",
+  "word_count": 193,
+  "banner_alt": "Stos złotych i srebrnych monet leżących na stole",
+  "description": "Bitcoin: system gotówki elektronicznej peer-to-peer (P2P ECS), który ma potencjał, by zrewolucjonizować sposób, w jaki ludzie dokonują transakcji online.",
+  "reading_time": 1
 }

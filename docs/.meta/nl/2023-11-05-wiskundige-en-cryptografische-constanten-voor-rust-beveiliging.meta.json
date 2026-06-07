@@ -1,13 +1,13 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
-  "banner_alt": "Wiskundige formules op een schoolbord",
-  "subtitle": "Een referentieset voor cryptografische primitieven en wiskundige zekerheden in Rust",
-  "title": "Wiskundige en cryptografische constanten voor Rust-beveiliging",
-  "description": "Een Rust-bibliotheek die een referentieset levert van wiskundige en cryptografische constanten voor beveiligingsapplicaties.",
   "word_count": 584,
-  "reading_time": 2,
+  "subtitle": "Een referentieset voor cryptografische primitieven en wiskundige zekerheden in Rust",
   "language": "nl-NL",
   "keywords": "Rust, cryptografie, wiskundige constanten, beveiliging, open source",
+  "description": "Een Rust-bibliotheek die een referentieset levert van wiskundige en cryptografische constanten voor beveiligingsapplicaties.",
+  "title": "Wiskundige en cryptografische constanten voor Rust-beveiliging",
+  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
+  "locale": "nl_NL",
+  "banner_alt": "Wiskundige formules op een schoolbord",
   "date": "November 05, 2023",
-  "locale": "nl_NL"
+  "reading_time": 2
 }

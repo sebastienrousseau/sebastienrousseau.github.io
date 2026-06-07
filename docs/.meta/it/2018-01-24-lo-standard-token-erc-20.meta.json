@@ -1,13 +1,13 @@
 {
-  "reading_time": 5,
-  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
-  "locale": "it_IT",
-  "word_count": 1095,
   "subtitle": "Come uno standard semplice ha sbloccato un'esplosione di token e finanza decentralizzata",
-  "language": "it-IT",
+  "locale": "it_IT",
+  "reading_time": 5,
   "title": "ERC-20: l'interfaccia token di Ethereum che ha cambiato il mondo",
+  "word_count": 1095,
   "date": "January 24, 2018",
+  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
+  "banner_alt": "Laptop spento su un tavolo di legno marrone",
   "description": "Lo standard ERC-20 ha definito un'interfaccia comune per i token fungibili su Ethereum, abilitando exchange, wallet e protocolli DeFi a operare in modo interoperabile.",
-  "keywords": "ERC-20, Ethereum, token, fungibile, smart contract, DeFi, stablecoin, ICO",
-  "banner_alt": "Laptop spento su un tavolo di legno marrone"
+  "language": "it-IT",
+  "keywords": "ERC-20, Ethereum, token, fungibile, smart contract, DeFi, stablecoin, ICO"
 }

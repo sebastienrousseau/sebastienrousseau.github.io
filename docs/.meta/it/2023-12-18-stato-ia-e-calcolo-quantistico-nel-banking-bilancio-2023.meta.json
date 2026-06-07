@@ -1,13 +1,13 @@
 {
-  "locale": "it_IT",
-  "description": "Un'analisi dello stato dell'IA e del calcolo quantistico nel banking nel 2023: avanzamenti tecnologici, casi d'uso emergenti e roadmap di adozione.",
-  "subtitle": "Una rassegna degli avanzamenti del 2023 in IA applicata e calcolo quantistico nel settore finanziario",
   "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
-  "reading_time": 12,
+  "description": "Un'analisi dello stato dell'IA e del calcolo quantistico nel banking nel 2023: avanzamenti tecnologici, casi d'uso emergenti e roadmap di adozione.",
+  "language": "it-IT",
   "banner_alt": "Stato dell'IA e del calcolo quantistico nel banking: bilancio 2023",
-  "word_count": 2405,
+  "subtitle": "Una rassegna degli avanzamenti del 2023 in IA applicata e calcolo quantistico nel settore finanziario",
+  "date": "December 18, 2023",
   "keywords": "IA, calcolo quantistico, banking, 2023, bilancio, fintech, regolamentazione",
   "title": "Stato dell'IA e del calcolo quantistico nel banking: bilancio 2023",
-  "language": "it-IT",
-  "date": "December 18, 2023"
+  "word_count": 2405,
+  "reading_time": 12,
+  "locale": "it_IT"
 }

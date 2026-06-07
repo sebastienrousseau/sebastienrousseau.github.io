@@ -1,13 +1,13 @@
 {
-  "locale": "es_ES",
-  "subtitle": "Criptografía de clave privada y redes entre pares al servicio de transacciones seguras",
-  "word_count": 904,
-  "reading_time": 4,
-  "title": "Blockchain: la tecnología que importa en 2018",
-  "language": "es-ES",
   "keywords": "blockchain, criptomoneda, Bitcoin, P2P, smart contract, libro mayor distribuido, finanzas, cadena de suministro, identidad digital, tokenización",
   "banner_alt": "Ordenador portátil apagado sobre una mesa de madera marrón",
-  "date": "January 2, 2018",
+  "locale": "es_ES",
+  "subtitle": "Criptografía de clave privada y redes entre pares al servicio de transacciones seguras",
   "description": "La narración del viaje extraordinario para asegurar las transacciones digitales mediante criptografía de clave privada y redes entre pares (P2P).",
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp"
+  "language": "es-ES",
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "title": "Blockchain: la tecnología que importa en 2018",
+  "reading_time": 4,
+  "date": "January 2, 2018",
+  "word_count": 904
 }

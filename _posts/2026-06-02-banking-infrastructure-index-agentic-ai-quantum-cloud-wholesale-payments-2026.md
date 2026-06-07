@@ -125,6 +125,7 @@ site_software: "Static Site Generator, Rust"
 
 
 
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> A Stanford AI Index-inspired banking infrastructure index for 2026, measuring readiness across agentic AI, quantum-safe security, cloud native resilience, and global wholesale payments.</p>

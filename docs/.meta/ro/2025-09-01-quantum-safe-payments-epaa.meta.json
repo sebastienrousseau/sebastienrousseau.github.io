@@ -1,14 +1,14 @@
 {
-  "word_count": 1069,
-  "tags": "quantum-safe payments, criptografie post-cuantică, payments, EPAA, ISO 20022, SWIFT, SEPA, DORA, calcul cuantic, AI, plăți transfrontaliere, stablecoinuri",
-  "keywords": "plăți quantum-safe, criptografie post-cuantică, SEPA, SWIFT gpi, ISO 20022, securitatea serviciilor financiare, EPAA, harvest-now decrypt-later, agilitate criptografică, Sebastien Rousseau",
-  "description": "Calculul cuantic amenință criptografia sistemelor de plată. White paper-ul EPAA prezintă riscul structural și necesitatea urgentă de migrare la PQC.",
-  "reading_time": 5,
-  "date": "Sep 01, 2025",
-  "banner_alt": "Placă de circuit pentru calcul cuantic în lumină albastră",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
-  "language": "ro-RO",
-  "subtitle": "Pregătirea pentru siguranță cuantică este o decizie de infrastructură prezentă. Nu una viitoare.",
   "title": "Quantum-Safe Payments: Why the Industry Must Act Now",
-  "locale": "ro_RO"
+  "date": "Sep 01, 2025",
+  "locale": "ro_RO",
+  "banner_alt": "Placă de circuit pentru calcul cuantic în lumină albastră",
+  "tags": "quantum-safe payments, criptografie post-cuantică, payments, EPAA, ISO 20022, SWIFT, SEPA, DORA, calcul cuantic, AI, plăți transfrontaliere, stablecoinuri",
+  "word_count": 1069,
+  "language": "ro-RO",
+  "description": "Calculul cuantic amenință criptografia sistemelor de plată. White paper-ul EPAA prezintă riscul structural și necesitatea urgentă de migrare la PQC.",
+  "subtitle": "Pregătirea pentru siguranță cuantică este o decizie de infrastructură prezentă. Nu una viitoare.",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "keywords": "plăți quantum-safe, criptografie post-cuantică, SEPA, SWIFT gpi, ISO 20022, securitatea serviciilor financiare, EPAA, harvest-now decrypt-later, agilitate criptografică, Sebastien Rousseau",
+  "reading_time": 5
 }

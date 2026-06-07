@@ -1,13 +1,13 @@
 {
-  "language": "uk-UA",
-  "banner_alt": "Велетенські білі колони",
-  "keywords": "Rust, бібліотека, розробка, код, генератор, boilerplate, найкращі, практики, якість, надійний",
-  "reading_time": 1,
-  "word_count": 205,
   "locale": "uk_UA",
+  "banner_alt": "Велетенські білі колони",
+  "title": "[UK DRAFT] Streamlining Rust Library Development with Code Generation",
+  "language": "uk-UA",
+  "date": "Oct 26, 2023",
+  "reading_time": 1,
   "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
+  "word_count": 205,
   "subtitle": "LibMake: генератор коду Rust, який застосовує найкращі практики з першого дня.",
   "description": "Покращте розробку бібліотек Rust за допомогою LibMake: інструменту генерації коду, який застосовує найкращі практики та створює початковий код, заощаджуючи час і зусилля розробників.",
-  "title": "[UK DRAFT] Streamlining Rust Library Development with Code Generation",
-  "date": "Oct 26, 2023"
+  "keywords": "Rust, бібліотека, розробка, код, генератор, boilerplate, найкращі, практики, якість, надійний"
 }

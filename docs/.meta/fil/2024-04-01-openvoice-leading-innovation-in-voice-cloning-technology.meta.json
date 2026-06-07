@@ -1,14 +1,14 @@
 {
-  "locale": "fil_PH",
   "language": "fil-PH",
+  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
+  "tags": "OpenVoice, Voice Cloning, Synthetic Speech, open source, Cross-Lingual, Instant Cloning, Voice Control, Accessibility, Entertainment, Customer Service, ISO 20022, post-quantum cryptography, AI, DORA, platform engineering, sovereign cloud, cloud native banking",
   "keywords": "OpenVoice, تقنية الاستنساخ الصوتي, الكلام الصناعي بالذكاء الاصطناعي, الاستنساخ الصوتي مفتوح المصدر, التركيب الصوتي عبر اللغات, الاستنساخ الصوتي الفوري, التحكّم في الأسلوب الصوتي, تقنية صوتية للوصول, الأصوات في صناعة الترفيه, الذكاء الاصطناعي الصوتي لخدمة العملاء",
   "subtitle": "أداة الاستنساخ الصوتي مفتوحة المصدر من الجيل التالي",
-  "date": "Apr 01, 2024",
   "reading_time": 4,
   "title": "OpenVoice: ريادة الابتكار في تقنية الاستنساخ الصوتي",
-  "banner_alt": "لافتة تُمثّل طبقات من الملامح بتدرّجات لون نابضة",
   "description": "OpenVoice من MIT وTsinghua وMyShell: استنساخ صوتي بمستوى الإنتاج مع التحكّم في النبرة واللكنة والعاطفة — والمقايضات التي يجدر معرفتها.",
-  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
-  "word_count": 918,
-  "tags": "OpenVoice, Voice Cloning, Synthetic Speech, open source, Cross-Lingual, Instant Cloning, Voice Control, Accessibility, Entertainment, Customer Service, ISO 20022, post-quantum cryptography, AI, DORA, platform engineering, sovereign cloud, cloud native banking"
+  "date": "Apr 01, 2024",
+  "banner_alt": "لافتة تُمثّل طبقات من الملامح بتدرّجات لون نابضة",
+  "locale": "fil_PH",
+  "word_count": 918
 }

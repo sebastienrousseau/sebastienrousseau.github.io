@@ -1,13 +1,13 @@
 {
-  "language": "nl-NL",
+  "word_count": 1268,
+  "locale": "nl_NL",
+  "date": "Jan 08, 2024",
+  "banner_alt": "Visualisatie van een kwantumcircuit voor financiële berekeningen",
   "description": "Hoe IBM Qiskit en de kwantum-Fourier-transformatie de kredietratio-analyse hervormen, met ongekende nauwkeurigheid en snelheid.",
+  "keywords": "IBM Qiskit, kwantum-Fourier-transformatie, kredietratio, financiën, kwantumcomputing",
+  "language": "nl-NL",
+  "subtitle": "Een experiment in kwantumversnelling van financiële risico-analyse",
   "title": "Kredietratio-analyse optimaliseren met IBM Qiskit en kwantum-Fourier-transformatie",
   "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
-  "word_count": 1268,
-  "keywords": "IBM Qiskit, kwantum-Fourier-transformatie, kredietratio, financiën, kwantumcomputing",
-  "banner_alt": "Visualisatie van een kwantumcircuit voor financiële berekeningen",
-  "reading_time": 6,
-  "subtitle": "Een experiment in kwantumversnelling van financiële risico-analyse",
-  "locale": "nl_NL",
-  "date": "Jan 08, 2024"
+  "reading_time": 6
 }

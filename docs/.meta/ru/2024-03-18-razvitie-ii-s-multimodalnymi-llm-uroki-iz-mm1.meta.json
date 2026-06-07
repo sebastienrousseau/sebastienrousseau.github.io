@@ -1,13 +1,13 @@
 {
-  "locale": "ru_RU",
-  "description": "Анализ статьи Apple MM1 о мультимодальных больших языковых моделях — архитектура, стратегии предварительного обучения и новые возможности.",
-  "subtitle": "Архитектура, стратегии предварительного обучения и эмерджентные способности",
-  "banner_alt": "Мультимодальные LLM: MM1 от Apple",
   "language": "ru-RU",
-  "banner": "https://cloudcdn.pro/stocks/images/mm1-multimodal-llm.webp",
-  "word_count": 286,
+  "reading_time": 1,
   "date": "March 18, 2024",
-  "keywords": "MM1, Apple, мультимодальные LLM, vision-language, предобучение, in-context learning, эмерджентные способности, исследовательская статья",
   "title": "Развитие ИИ с мультимодальными LLM: уроки из MM1",
-  "reading_time": 1
+  "description": "Анализ статьи Apple MM1 о мультимодальных больших языковых моделях — архитектура, стратегии предварительного обучения и новые возможности.",
+  "banner_alt": "Мультимодальные LLM: MM1 от Apple",
+  "locale": "ru_RU",
+  "word_count": 286,
+  "keywords": "MM1, Apple, мультимодальные LLM, vision-language, предобучение, in-context learning, эмерджентные способности, исследовательская статья",
+  "subtitle": "Архитектура, стратегии предварительного обучения и эмерджентные способности",
+  "banner": "https://cloudcdn.pro/stocks/images/mm1-multimodal-llm.webp"
 }

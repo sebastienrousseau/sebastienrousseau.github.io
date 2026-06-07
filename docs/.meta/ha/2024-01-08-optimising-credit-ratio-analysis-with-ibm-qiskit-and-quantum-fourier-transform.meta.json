@@ -1,14 +1,14 @@
 {
-  "subtitle": "Inganta Binciken Rabo na Kuɗi ta Amfani da IBM Qiskit da Quantum Fourier Transform",
-  "description": "Bincika yadda IBM Qiskit da Quantum Fourier Transform ke canza binciken rabo na kuɗi a bangaren kudi, suna bayar da inganci da sauri mara misali.",
-  "locale": "ha_NG",
-  "banner_alt": "Ɗakin Kwamfutar Quantum",
-  "keywords": "quantum computing, kudi, binciken rabo na kuɗi, Qiskit, Quantum Fourier Transform, IBM, koyon injin, hankali na wucin gadi, tantance haɗarin kudi, cancanta na bashi",
-  "date": "Jan 08, 2024",
-  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
   "language": "ha-NG",
-  "title": "Qiskit & Quantum Fourier Transform for Credit Ratio Analysis",
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
+  "keywords": "quantum computing, kudi, binciken rabo na kuɗi, Qiskit, Quantum Fourier Transform, IBM, koyon injin, hankali na wucin gadi, tantance haɗarin kudi, cancanta na bashi",
+  "tags": "Qiskit, quantum computing, Credit Analysis, FinTech, QFT, Risk Management, Finance, Data Science, Algorithm, Quantum Technology, ISO 20022, post-quantum cryptography, AI, open source",
+  "subtitle": "Inganta Binciken Rabo na Kuɗi ta Amfani da IBM Qiskit da Quantum Fourier Transform",
   "word_count": 1545,
   "reading_time": 7,
-  "tags": "Qiskit, quantum computing, Credit Analysis, FinTech, QFT, Risk Management, Finance, Data Science, Algorithm, Quantum Technology, ISO 20022, post-quantum cryptography, AI, open source"
+  "banner_alt": "Ɗakin Kwamfutar Quantum",
+  "title": "Qiskit & Quantum Fourier Transform for Credit Ratio Analysis",
+  "locale": "ha_NG",
+  "date": "Jan 08, 2024",
+  "description": "Bincika yadda IBM Qiskit da Quantum Fourier Transform ke canza binciken rabo na kuɗi a bangaren kudi, suna bayar da inganci da sauri mara misali."
 }

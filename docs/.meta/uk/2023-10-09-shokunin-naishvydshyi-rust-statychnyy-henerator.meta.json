@@ -1,13 +1,13 @@
 {
+  "keywords": "pain001, iso 20022, автоматизація платежів, зниження витрат, обробка платежів, платіжні файли, ініціювання платежів, pain message, pain message standards, pain message validation",
   "locale": "uk_UA",
   "title": "[UK DRAFT] Static Site Generator: Fastest Rust-Based SSG",
   "date": "Oct 09, 2023",
   "language": "uk-UA",
-  "keywords": "pain001, iso 20022, автоматизація платежів, зниження витрат, обробка платежів, платіжні файли, ініціювання платежів, pain message, pain message standards, pain message validation",
-  "word_count": 227,
-  "reading_time": 1,
-  "banner_alt": "Вимкнений ноутбук на білому столі зі склянкою води зліва та ручкою, блокнотом і рослиною справа",
-  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
   "subtitle": "Static Site Generator — найшвидший генератор статичних сайтів на основі Rust для ефективних веб-сайтів.",
-  "description": "Надаємо вам можливість створювати ефективні статичні веб-сайти з безмежними можливостями, необмеженою масштабованістю та справді унікальною веб-присутністю під вашим повним контролем."
+  "word_count": 227,
+  "description": "Надаємо вам можливість створювати ефективні статичні веб-сайти з безмежними можливостями, необмеженою масштабованістю та справді унікальною веб-присутністю під вашим повним контролем.",
+  "reading_time": 1,
+  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
+  "banner_alt": "Вимкнений ноутбук на білому столі зі склянкою води зліва та ручкою, блокнотом і рослиною справа"
 }

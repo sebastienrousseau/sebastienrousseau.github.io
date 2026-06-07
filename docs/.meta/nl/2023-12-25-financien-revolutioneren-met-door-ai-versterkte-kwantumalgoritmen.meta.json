@@ -1,13 +1,13 @@
 {
-  "banner_alt": "Visualisatie van AI en kwantumalgoritmen in financiën",
-  "title": "Financiën revolutioneren met door AI versterkte kwantumalgoritmen",
-  "subtitle": "Hoe AI binnen kwantumalgoritmen de financiële sector hervormt",
-  "locale": "nl_NL",
-  "language": "nl-NL",
-  "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
-  "reading_time": 6,
   "date": "Dec 25, 2023",
+  "keywords": "AI, kwantumalgoritmen, financiën, banking, machine learning, optimalisatie",
   "description": "Een verkenning van de transformerende rol van AI binnen kwantumalgoritmen voor financiën, met focus op wiskundige structuur en bankzaken.",
+  "locale": "nl_NL",
+  "title": "Financiën revolutioneren met door AI versterkte kwantumalgoritmen",
+  "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
+  "language": "nl-NL",
   "word_count": 1216,
-  "keywords": "AI, kwantumalgoritmen, financiën, banking, machine learning, optimalisatie"
+  "subtitle": "Hoe AI binnen kwantumalgoritmen de financiële sector hervormt",
+  "reading_time": 6,
+  "banner_alt": "Visualisatie van AI en kwantumalgoritmen in financiën"
 }

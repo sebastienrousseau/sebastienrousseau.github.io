@@ -1,13 +1,13 @@
 {
-  "title": "Revolucionar las finanzas con algoritmos cuánticos potenciados por IA",
-  "language": "es-ES",
-  "reading_time": 7,
-  "locale": "es_ES",
   "keywords": "computación cuántica, algoritmos IA, matemáticas financieras, tecnología bancaria, gestión de riesgos, diseño de algoritmos, análisis de datos, estrategias de inversión, finanzas cuánticas, aprendizaje automático",
-  "word_count": 1519,
-  "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
   "banner_alt": "Revolucionar las finanzas con algoritmos cuánticos potenciados por IA",
   "date": "December 25, 2023",
+  "subtitle": "Liberar la potencia cuántica para la innovación financiera: la IA en el corazón de los algoritmos de nueva generación",
+  "language": "es-ES",
   "description": "El rol transformador de la IA en los algoritmos cuánticos para las finanzas, con foco en sus sutilezas matemáticas y sus aplicaciones bancarias.",
-  "subtitle": "Liberar la potencia cuántica para la innovación financiera: la IA en el corazón de los algoritmos de nueva generación"
+  "locale": "es_ES",
+  "title": "Revolucionar las finanzas con algoritmos cuánticos potenciados por IA",
+  "word_count": 1519,
+  "reading_time": 7,
+  "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 }

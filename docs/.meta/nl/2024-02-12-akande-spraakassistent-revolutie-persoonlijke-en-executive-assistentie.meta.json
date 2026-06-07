@@ -1,13 +1,13 @@
 {
-  "description": "Akande is een geavanceerde spraakassistent die OpenAI GPT gebruikt voor natuurlijke interacties, PDF-samenvattingen en efficiënte caching.",
-  "title": "Akande: een spraakassistent die persoonlijke en executive assistentie revolutioneert",
-  "date": "February 12, 2024",
-  "keywords": "Akande, spraakassistent, GPT, OpenAI, AI, executive assistant",
-  "reading_time": 5,
+  "language": "nl-NL",
   "locale": "nl_NL",
   "banner_alt": "Banner van Akande: AI-spraakassistent",
-  "language": "nl-NL",
+  "description": "Akande is een geavanceerde spraakassistent die OpenAI GPT gebruikt voor natuurlijke interacties, PDF-samenvattingen en efficiënte caching.",
   "banner": "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp",
   "subtitle": "Een geavanceerde spraakassistent die GPT van OpenAI gebruikt voor natuurlijke interacties",
-  "word_count": 1160
+  "reading_time": 5,
+  "word_count": 1160,
+  "keywords": "Akande, spraakassistent, GPT, OpenAI, AI, executive assistant",
+  "date": "February 12, 2024",
+  "title": "Akande: een spraakassistent die persoonlijke en executive assistentie revolutioneert"
 }

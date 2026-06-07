@@ -1,13 +1,13 @@
 {
   "subtitle": "为 Rust 应用提供结构化、异步、灵活的日志解决方案",
-  "locale": "zh_CN",
   "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
-  "language": "zh-Hans",
-  "banner_alt": "RustLogs（RLG）横幅",
   "date": "March 8, 2024",
+  "language": "zh-Hans",
+  "keywords": "RustLogs, RLG, Rust, 日志, 结构化日志, 异步, JSON, CEF, Logstash, 性能",
   "description": "RustLogs（RLG）是一个用于 Rust 应用的高级日志库，支持结构化、异步、灵活的日志记录。",
-  "reading_time": 1,
-  "word_count": 343,
+  "banner_alt": "RustLogs（RLG）横幅",
+  "locale": "zh_CN",
   "title": "RustLogs：面向 Rust 应用的高级日志库",
-  "keywords": "RustLogs, RLG, Rust, 日志, 结构化日志, 异步, JSON, CEF, Logstash, 性能"
+  "word_count": 343,
+  "reading_time": 1
 }

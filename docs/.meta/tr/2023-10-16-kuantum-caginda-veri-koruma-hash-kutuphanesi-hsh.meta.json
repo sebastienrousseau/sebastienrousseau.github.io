@@ -1,13 +1,13 @@
 {
-  "keywords": "Rust, hash, hsh, post-kuantum, kriptografi, parolalar, kimlik doğrulama, açık kaynak",
-  "date": "October 16, 2023",
   "reading_time": 6,
-  "language": "tr-TR",
   "description": "hsh, parolaların kuantum sonrası çağda şifrelenmesi ve doğrulanması için güvenli hash algoritmaları sunan bir Rust kütüphanesidir.",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
-  "locale": "tr_TR",
-  "title": "Kuantum çağında veri koruma: hash kütüphanesi hsh",
-  "word_count": 1376,
+  "keywords": "Rust, hash, hsh, post-kuantum, kriptografi, parolalar, kimlik doğrulama, açık kaynak",
   "banner_alt": "Soyut kriptografik hash görseli",
-  "subtitle": "Kuantum sonrası kimlik doğrulama için Rust hash temel yapı taşları"
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
+  "title": "Kuantum çağında veri koruma: hash kütüphanesi hsh",
+  "language": "tr-TR",
+  "date": "October 16, 2023",
+  "subtitle": "Kuantum sonrası kimlik doğrulama için Rust hash temel yapı taşları",
+  "word_count": 1376,
+  "locale": "tr_TR"
 }

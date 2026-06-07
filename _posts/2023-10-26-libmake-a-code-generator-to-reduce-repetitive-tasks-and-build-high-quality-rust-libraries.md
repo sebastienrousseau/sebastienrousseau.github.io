@@ -163,6 +163,7 @@ For team use, all CLI flags can be expressed in a TOML config file:
 ```toml
 # libmake.toml
 
+
 author      = "Jane Smith"
 email       = "jane@example.com"
 name        = "my_library"
