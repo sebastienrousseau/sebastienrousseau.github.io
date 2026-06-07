@@ -139,7 +139,7 @@ De praktische vraag voor een bank is niet of elk domein belangrijk is. Het is of
 |---|---|---|
 | **52% adoptie van agentische AI in de financiële sector** | Treasury kan agentische workflows nu absorberen via beheerde platforms | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "Global AI in Financial Services Report 2026") |
 | **Conditionele betalingen in Project Agorá** | Tokenisatie kan conditionele en always-on betaalfunctionaliteiten mogelijk maken | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Stablecoin- en DSS-werk van de Bank of England** | Wholesale-settlementactiva worden getest in gecontroleerde Britse marktinfrastructuur | [Bank of England ⧉](https://www.bankofengland.co.uk/speech/2025/january/sasha-mills-speech-at-the-tokenisation-summit "De digitale financiële toekomst van het VK vormgeven") |
+| **Bank of England Digital Securities Sandbox** | DLT-uitgegeven obligaties en aandelen settelen op basis van Levering tegen Betaling (DvP) — het asset-been en het cash-been (wholesale-CBDC of getokeniseerde commerciële-bankdeposito's) settelen in dezelfde atomaire transactie, waardoor het principal-tegenpartijrisico wordt geëlimineerd | [Bank of England ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox") |
 | **SWIFT-deadline voor gestructureerde adressen** | Treasury-data moeten correct aan de bron worden vastgelegd | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022-mijlpaal november 2026 voor gestructureerde adressen") |
 | **Grote FI's hebben moeite met het meten van AI-waarde** | Treasury-automatisering vraagt om harde economische maatstaven | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "Global AI in Financial Services Report 2026") |
 
@@ -147,13 +147,45 @@ De praktische vraag voor een bank is niet of elk domein belangrijk is. Het is of
 
 Een treasury-agent mag niet worden ontworpen als een algemene assistent. Hij heeft een mandaat nodig: rekeningen observeren, uitzonderingen detecteren, fundingtekorten prognosticeren, acties voorbereiden, goedkeuringen aanvragen, uitvoeren binnen limieten en bewijs produceren. Elke stap hoort een ander bevoegdhedenmodel te kennen.
 
+De controlelus loopt Observeren → Detecteren → Prognosticeren → Voorbereiden → Goedkeuring Aanvragen — en stopt. De agent overschrijdt nooit zelfstandig de cryptografische autorisatiegrens. Het diagram hieronder traceert één volledige cyclus: een intraday-liquiditeitstekort van meerdere miljoenen dollars verschijnt in `camt.052`-telemetrie, de agent prognosticeert de eindedagspositie, bereidt een repo of intercompany-sweep voor als een volledig opgemaakte `pain.001`, en geeft die door aan de menselijke treasurer voor multifactor cryptografische ondertekening op een hardware-gebonden sleutel. De agent dient vervolgens de ondertekende payload in; finaliteit landt als een `pain.002`-ACK en de volgende `camt.053` als register.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Banks as Cash-Management-banken
+    participant Agent as Treasury-agent<br/>(begrensd, beleidsgestuurd)
+    participant Forecast as Prognosemotor<br/>(ML + scenariobibliotheek)
+    participant Treasurer as Menselijke treasurer<br/>(MFA / hardware-sleutel)
+    participant Rails as Betaalrails<br/>(RTGS / RTP / DLT)
+
+    Banks->>Agent: camt.052 intraday-saldostroom
+    Agent->>Agent: Observeren — realtime positie verversen
+    Agent->>Agent: Detecteren — entiteit X doorbreekt liquiditeitsondergrens
+    Agent->>Forecast: Verzoek EOD-projectie
+    Forecast-->>Agent: Tekort bevestigd (USD 12.4m)
+    Agent->>Agent: Voorbereiden — pain.001 concipiëren<br/>(repo / sweep) binnen mandaatlimieten
+    Agent->>Treasurer: Beveiligd goedkeuringsverzoek pushen<br/>(voorbereide payload + bewijs)
+    Note over Treasurer: Cryptografische MFA<br/>op hardware-gebonden sleutel
+    Treasurer-->>Agent: Ondertekende autorisatie
+    Agent->>Rails: Ondertekende pain.001 indienen
+    Rails-->>Agent: pain.002 ACK + finaliteit
+    Banks->>Agent: camt.053 eindedagsafschrift
+    Agent->>Agent: Bewijs — actie binden aan camt.053-register
+```
+
+De grens is het punt — elke actie die echt geld verplaatst, zit achter een cryptografische poort die de agent niet zelfstandig kan passeren.
+
 ## Programmeerbare liquiditeit
 
 Programmeerbare liquiditeit is het vermogen om waarde te verplaatsen onder voorwaarden: als een drempel wordt doorbroken, als onderpand in aanmerking komt, als een tegenpartij door screening komt, als settlementfinaliteit beschikbaar is of als een intraday-liquiditeitsbuffer te laag is. Getokeniseerde deposito's en wholesale-settlementplatforms maken deze patronen praktischer.
 
+Programmeerbaar betekent niet buiten de standaard. Het uitvoeringspad is `pain.001` — ISO 20022 Customer Credit Transfer Initiation. De door de agent voorbereide actie is een volledig opgemaakte `pain.001`-payload die naar de bank wordt gerouteerd via hetzelfde kanaal dat een zakelijke ERP zou gebruiken, gevalideerd tegen hetzelfde schema, gescoord door dezelfde fraude- en sanctie-engines en bevestigd op dezelfde `pain.002`-statusberichten. De conditionaliteitslaag (drempel, onderpand-eligibility, beschikbaarheid van finaliteit, buffergrens) zit boven het bericht — die bepaalt *of* een `pain.001` wordt verstuurd, niet *welke vorm* die heeft. Treasury-platforms die maatwerkpayloads bedenken om voorwaarden uit te drukken, vallen uit het bank-consumeerbare pad en belanden weer in bilaterale integratie.
+
 ## De treasury-controlekamer
 
 Het operating model moet eruitzien als een controlekamer: posities, prognoses, betalingsstatussen, limietgebruik, uitzonderingen, goedkeuringen en bewijs in één interface. De index moet treasury-stacks penaliseren die teams dwingen e-mails, spreadsheets, bankportalen en losse dashboards aan elkaar te knopen.
+
+Het dataplane achter die interface is ISO 20022 cash management. Intraday-positie is `camt.052` — Bank-to-Customer Account Report — gestreamd vanuit elke cash-management-bank naar de observatielaag van de agent op de frequentie waarmee de bank publiceert (minuten voor tier-1 GTB-aanbieders, einde-cyclus voor de lange staart). Einde-dag-reconciliatie is `camt.053` — Bank-to-Customer Statement — het auditeerbare register waartegen de prognose van de agent de volgende ochtend wordt gewogen. Treasury-platforms die PDF-afschriften lezen of bankportalen screen-scrapen, halen Niveau 4 van de index niet; de intraday-telemetrie moet binnenkomen als gestructureerde `camt.052` om de prognoselus op tijd te sluiten voor actie.
 
 ## Wat dit betekent per banktype
 

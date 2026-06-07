@@ -141,7 +141,7 @@ Bir banka için pratik soru, her alanın önemli olup olmadığı değildir. Kur
 |---|---|---|
 | **Finansal hizmetlerde %52 ajan tabanlı AI benimsemesi** | Hazine artık ajan tabanlı iş akışlarını yönetilen platformlar aracılığıyla özümseyebilir | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 Finansal Hizmetlerde Küresel AI Raporu") |
 | **Project Agorá koşullu ödemeleri** | Tokenleştirme koşullu ve daima açık ödeme yeteneklerini mümkün kılabilir | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Bank of England stablecoin ve DSS çalışmaları** | Toptan mutabakat varlıkları kontrollü Birleşik Krallık piyasa altyapısı ortamlarında test ediliyor | [Bank of England ⧉](https://www.bankofengland.co.uk/speech/2025/january/sasha-mills-speech-at-the-tokenisation-summit "Birleşik Krallık'ın dijital finansal geleceğini şekillendirmek") |
+| **Bank of England — Digital Securities Sandbox** | DLT ile ihraç edilen tahviller ve hisse senetleri Ödeme karşılığı teslimat (DvP) esasına göre mutabık kalır — varlık bacağı ile nakit bacağı (toptan CBDC veya tokenize ticari banka mevduatı) aynı atomik işlemde mutabık kalır ve anapara karşı taraf riskini ortadan kaldırır | [Bank of England ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox") |
 | **SWIFT yapılandırılmış adres son tarihi** | Hazine verisi kaynakta doğru biçimde yakalanmalıdır | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 Kasım 2026 yapılandırılmış adres dönüm noktası") |
 | **Büyük finansal kuruluşlar AI değerini ölçmekte zorlanıyor** | Hazine otomasyonu sert ekonomik metriklere ihtiyaç duyar | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 Finansal Hizmetlerde Küresel AI Raporu") |
 
@@ -149,13 +149,45 @@ Bir banka için pratik soru, her alanın önemli olup olmadığı değildir. Kur
 
 Bir hazine ajanı genel amaçlı asistan olarak tasarlanmamalıdır. Bir mandaya ihtiyacı vardır: hesapları gözlemlemek, istisnaları tespit etmek, fonlama açıklarını tahmin etmek, eylemleri hazırlamak, onay talep etmek, limitler dahilinde yürütmek ve kanıt üretmek. Her adımın farklı bir yetki modeli olmalıdır.
 
+Kontrol döngüsü Gözlemle → Tespit Et → Tahmin Et → Hazırla → Onay Talep Et sırasıyla çalışır — ve durur. Ajan, kriptografik yetkilendirme sınırını tek başına asla aşmaz. Aşağıdaki şema bir tam döngüyü izler: milyonlarca dolarlık bir gün içi likidite açığı `camt.052` telemetrisinde yüzeye çıkar, ajan gün sonu pozisyonunu tahmin eder, bir repo veya şirket içi sweep işlemini eksiksiz bir `pain.001` olarak hazırlar ve donanım bağlı bir anahtar üzerinde çok faktörlü kriptografik imza için insan hazinedara teslim eder. Ajan daha sonra imzalanmış yükü gönderir; kesinlik bir `pain.002` ACK olarak ve ardından kayıt amaçlı bir sonraki `camt.053` olarak iner.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Banks as Nakit Yönetim Bankaları
+    participant Agent as Hazine Ajanı<br/>(sınırlı, ilke kapılı)
+    participant Forecast as Tahmin Motoru<br/>(ML + senaryo kütüphanesi)
+    participant Treasurer as İnsan Hazinedar<br/>(MFA / donanım anahtarı)
+    participant Rails as Ödeme Rayları<br/>(RTGS / RTP / DLT)
+
+    Banks->>Agent: camt.052 gün içi bakiye akışı
+    Agent->>Agent: Gözlemle — gerçek zamanlı pozisyonu yenile
+    Agent->>Agent: Tespit Et — X kuruluşu likidite tabanını aşıyor
+    Agent->>Forecast: Gün sonu projeksiyonu talep et
+    Forecast-->>Agent: Açık doğrulandı (USD 12.4m)
+    Agent->>Agent: Hazırla — pain.001 taslağı<br/>(repo / sweep) manda limitleri dahilinde
+    Agent->>Treasurer: Güvenli onay talebi gönder<br/>(hazırlanmış yük + kanıt)
+    Note over Treasurer: Donanım bağlı anahtar üzerinde<br/>kriptografik MFA
+    Treasurer-->>Agent: İmzalı yetkilendirme
+    Agent->>Rails: İmzalı pain.001 gönder
+    Rails-->>Agent: pain.002 ACK + kesinlik
+    Banks->>Agent: camt.053 gün sonu ekstresi
+    Agent->>Agent: Kanıt — eylemi camt.053 kaydına bağla
+```
+
+Sınır asıl meseledir — gerçek para hareket ettiren her eylem, ajanın kendi başına geçemeyeceği bir kriptografik kapının arkasında durur.
+
 ## Programlanabilir Likidite
 
 Programlanabilir likidite, koşullar altında değer hareketi yeteneğidir: bir eşik aşılırsa, teminat uygunsa, bir karşı taraf taramayı geçerse, mutabakat kesinliği mevcutsa veya bir gün içi likidite tamponu çok düşükse. Tokenize mevduatlar ve toptan mutabakat platformları bu desenleri daha uygulanabilir kılar.
 
+Programlanabilir, standart dışı anlamına gelmez. Yürütme yolu `pain.001`'dir — ISO 20022 Müşteri Kredi Transferi Başlatma. Ajanın hazırladığı eylem, kurumsal bir ERP'nin kullanacağı aynı kanaldan bankaya yönlendirilen, aynı şemaya karşı doğrulanan, aynı dolandırıcılık ve yaptırım motorlarınca puanlanan ve aynı `pain.002` durum raporlarıyla onaylanan, eksiksiz bir `pain.001` yüküdür. Koşulluluk katmanı (eşik, teminat uygunluğu, kesinlik kullanılabilirliği, tampon tabanı) mesajın üzerinde yaşar — bir `pain.001`'in *gönderilip gönderilmeyeceğine* kapı tutar, *hangi biçimi alacağına* değil. Koşulları ifade etmek için özel yükler icat eden hazine platformları, banka tarafından tüketilebilir yoldan düşecek ve ikili entegrasyona geri dönecektir.
+
 ## Hazine Kontrol Odası
 
 İşletim modeli bir kontrol odası gibi görünmelidir: pozisyonlar, tahminler, ödeme durumları, limit kullanımı, istisnalar, onaylar ve kanıt tek bir arayüzde. Endeks; ekiplerin e-postaları, hesap tablolarını, banka portallarını ve birbirinden kopuk gösterge panellerini bir araya dikmesini gerektiren hazine yığınlarını cezalandırmalıdır.
+
+Bu arayüzün arkasındaki veri düzlemi ISO 20022 nakit yönetimidir. Gün içi pozisyon `camt.052`'dir — Bankadan Müşteriye Hesap Raporu — her nakit yönetim bankasından ajanın gözlem katmanına, bankanın yayımladığı sıklıkta akıtılır (birinci kademe GTB sağlayıcıları için dakikalar, uzun kuyruk için döngü sonu). Gün sonu mutabakatı `camt.053`'tür — Bankadan Müşteriye Ekstre — ajanın tahmininin ertesi sabah karşı denetlendiği denetlenebilir kayıttır. PDF ekstreleri okuyan veya banka portallarını ekran kazıyan hazine platformları endeksin 「Seviye 4」'ünü karşılayamaz; tahmin döngüsünün harekete geçecek zamanda kapanması için gün içi telemetrinin yapılandırılmış `camt.052` olarak gelmesi gerekir.
 
 ## Banka Türüne Göre Bunun Anlamı
 

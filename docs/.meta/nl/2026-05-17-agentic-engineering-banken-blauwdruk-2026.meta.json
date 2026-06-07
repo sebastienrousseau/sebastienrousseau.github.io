@@ -1,13 +1,13 @@
 {
-  "language": "nl-NL",
   "locale": "nl_NL",
   "keywords": "Agentic engineering, AI, banken, 2026, MCP, governance, regulering",
-  "subtitle": "Een blauwdruk voor agentic engineering in gereguleerde banking-omgevingen",
   "date": "May 17, 2026",
-  "description": "Een blauwdruk voor agentic engineering in banken in 2026: governance, krypto-agility, MCP-beveiliging en de operationele realiteit.",
-  "title": "Agentic engineering voor banken: blauwdruk 2026",
-  "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
+  "subtitle": "Een blauwdruk voor agentic engineering in gereguleerde banking-omgevingen",
+  "language": "nl-NL",
   "banner_alt": "Visualisatie van agentic engineering in banking",
+  "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
   "word_count": 7305,
-  "reading_time": 36
+  "reading_time": 36,
+  "title": "Agentic engineering voor banken: blauwdruk 2026",
+  "description": "Een blauwdruk voor agentic engineering in banken in 2026: governance, krypto-agility, MCP-beveiliging en de operationele realiteit."
 }

@@ -1,13 +1,13 @@
 {
   "title": "Rewolucja rozpoznawania mowy w czasie rzeczywistym na macOS z OpenAI Whisper",
-  "description": "System transkrypcji mowy na tekst w czasie rzeczywistym wykorzystujący OpenAI Whisper i akcelerację GPU Metal Performance Shaders na macOS, osiągający opóźnienie poniżej sekundy.",
-  "language": "pl-PL",
-  "keywords": "OpenAI Whisper, macOS, Metal Performance Shaders, rozpoznawanie mowy, Apple Silicon, AI",
-  "reading_time": 1,
-  "date": "Mar 12, 2024",
-  "banner_alt": "Schemat OpenAI Whisper na Apple Silicon",
-  "word_count": 203,
-  "locale": "pl_PL",
   "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
-  "subtitle": "Akceleracja GPU Metal Performance Shaders dla rozpoznawania mowy"
+  "word_count": 203,
+  "subtitle": "Akceleracja GPU Metal Performance Shaders dla rozpoznawania mowy",
+  "description": "System transkrypcji mowy na tekst w czasie rzeczywistym wykorzystujący OpenAI Whisper i akcelerację GPU Metal Performance Shaders na macOS, osiągający opóźnienie poniżej sekundy.",
+  "date": "Mar 12, 2024",
+  "reading_time": 1,
+  "locale": "pl_PL",
+  "keywords": "OpenAI Whisper, macOS, Metal Performance Shaders, rozpoznawanie mowy, Apple Silicon, AI",
+  "language": "pl-PL",
+  "banner_alt": "Schemat OpenAI Whisper na Apple Silicon"
 }

@@ -139,7 +139,7 @@ Stanford AI Index wúlò nítorí pé ó ń tọ́jú ààyè ìmọ̀ ẹ̀rọ
 |---|---|---|
 | **52% gbígba agentic AI nínú iṣẹ́ ìnáwó** | Ìjọba owó lè gba iṣẹ́ agentic nísinsìnyí nípasẹ̀ pèpéle tí a ṣàkóso | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "Ìròyìn AI Àgbáyé nínú Iṣẹ́ Ìnáwó 2026") |
 | **Àwọn ìsanwó pẹ̀lú ìbéèrè ti Project Agorá** | Tokenisation lè jẹ́ kí àwọn agbára ìsanwó pẹ̀lú ìbéèrè àti tí ó wà nígbà gbogbo ṣeéṣe | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Iṣẹ́ stablecoin àti DSS ti Bank of England** | A ń dán àwọn ohun-ìní ìparí ìsanwó wholesale wò nínú àyíká ìpilẹ̀ ọjà UK tí a ṣàkóso | [Bank of England ⧉](https://www.bankofengland.co.uk/speech/2025/january/sasha-mills-speech-at-the-tokenisation-summit "Síṣe ọjọ́ iwájú ìnáwó dijítà UK") |
+| **Bank of England — Digital Securities Sandbox** | Àwọn bondi àti equities tí DLT ti pín máa ń parí lórí ìpìlẹ̀ 「Delivery-versus-Payment (DvP)」 — ẹsẹ̀ ohun-ìní àti ẹsẹ̀ owó (wholesale CBDC tàbí àwọn tokenised commercial-bank deposits) máa ń parí nínú ìṣòwò atomic kan náà, ó ń mú ewu principal counterparty kúrò | [Bank of England ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox") |
 | **Òpin ọjọ́ àdírẹ́sì tí a ṣètò ti SWIFT** | Data ìjọba owó gbọ́dọ̀ jẹ́ gbígbà dáadáa ní orísun | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 òpin ọjọ́ àdírẹ́sì tí a ṣètò Oṣù Kọkànlá 2026") |
 | **Àwọn FI ńlá ní ìṣòro láti wọn iye AI** | Adáṣe ìjọba owó nílò àwọn ìwọ̀n ọrọ̀-ajé tí ó lágbára | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "Ìròyìn AI Àgbáyé nínú Iṣẹ́ Ìnáwó 2026") |
 
@@ -147,13 +147,45 @@ Stanford AI Index wúlò nítorí pé ó ń tọ́jú ààyè ìmọ̀ ẹ̀rọ
 
 Agent ìjọba owó kò gbọ́dọ̀ jẹ́ ṣíṣe gẹ́gẹ́ bí olùrànlọ́wọ́ ìdí-gbogbo. Ó nílò àṣẹ: bojúwò àwọn àkántì, mú àwọn àìbámu jáde, fọkànbalẹ̀ àwọn àlàfo ìpèsè-owó, múrasílẹ̀ àwọn ìṣe, béèrè àwọn ìfàṣẹsí, gbé jáde nínú àwọn ààlà, kí ó sì ṣe ẹ̀rí. Ìgbésẹ̀ kọ̀ọ̀kan gbọ́dọ̀ ní àwòṣe àṣẹ tí ó yàtọ̀.
 
+Control loop náà ń ṣiṣẹ́ Observe → Detect → Forecast → Prepare → Request Approval — ó sì dúró. Agent náà kì í kọjá ààlà cryptographic authorisation fúnra rẹ̀ rárá. Àpèjúwe tó wà nísàlẹ̀ ń tọpa kẹ́ṣẹ̀-kọ̀ọ̀kan kíkún kan: àìtó intraday liquidity tó tó owó mílíọ̀nù-dọ́là máa jáde wá nínú `camt.052` telemetry, agent náà ń fọkànbalẹ̀ ipò òpin-ọjọ́, ó ń múrasílẹ̀ repo tàbí intercompany sweep gẹ́gẹ́ bí `pain.001` tó tilẹ̀ pé, ó sì fi lé olùṣàkóso owó-bánkì ènìyàn lọ́wọ́ fún cryptographic sign-off pẹ̀lú multi-factor lórí kọ́kọ́rọ́ tó wà lórí hardware. Agent náà yóò sì fi payload tí a fọwọ́sí ránṣẹ́; ìparí máa dé gẹ́gẹ́ bí `pain.002` ACK àti `camt.053` ìkọ̀sílẹ̀ tó kàn.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Banks as Àwọn Bánkì Ìṣàkóso-Owó
+    participant Agent as Agent Ìjọba Owó<br/>(tí a fi ààlà sí, policy-gated)
+    participant Forecast as Ẹ̀rọ Ìfọkànbalẹ̀<br/>(ML + ilé-ìwé ìṣẹ̀lẹ̀)
+    participant Treasurer as Olùṣàkóso Ènìyàn<br/>(MFA / kọ́kọ́rọ́ hardware)
+    participant Rails as Àwọn Ọ̀nà Ìsanwó<br/>(RTGS / RTP / DLT)
+
+    Banks->>Agent: camt.052 ìṣàn ìwòntúnwòsì intraday
+    Agent->>Agent: Observe — sọ ipò akóko di tuntun
+    Agent->>Agent: Detect — entity X rékọjá ààlà ìṣàn-owó
+    Agent->>Forecast: Béèrè ìfojúsọ́nà EOD
+    Forecast-->>Agent: A jẹ́rìí àìtó (USD 12.4m)
+    Agent->>Agent: Prepare — kọ pain.001<br/>(repo / sweep) lábẹ́ àwọn ààlà àṣẹ
+    Agent->>Treasurer: Tì ìbéèrè ìfàṣẹsí ààbò<br/>(payload tó tilẹ̀ + ẹ̀rí)
+    Note over Treasurer: Cryptographic MFA<br/>lórí kọ́kọ́rọ́ hardware
+    Treasurer-->>Agent: Ìfọwọ́sí tí a fọwọ́sí
+    Agent->>Rails: Fi pain.001 tí a fọwọ́sí ránṣẹ́
+    Rails-->>Agent: pain.002 ACK + ìparí
+    Banks->>Agent: camt.053 ìròyìn òpin-ọjọ́
+    Agent->>Agent: Evidence — so ìṣe pọ̀ mọ́ ìkọ̀sílẹ̀ camt.053
+```
+
+Ààlà náà ni kókó — gbogbo ìṣe tó ń ṣíkiri owó gangan ń jókòó lẹ́yìn cryptographic gate tí agent kò lè ṣe tẹ́lọ́rùn fúnra rẹ̀.
+
 ## Ìṣàn-owó Tó Lè Ṣètò
 
 Ìṣàn-owó tó lè ṣètò ni agbára láti ṣíkiri iye lábẹ́ àwọn ìbéèrè: bí a bá rékọjá ààlà kan, bí àbáwọlé bá yẹ, bí olùbáṣiṣẹ́ bá kọjá àyẹ̀wò, bí ìparí ìsanwó bá wà, tàbí bí owó tó ń mú lóòjọ́ bá lọ silẹ̀ jù. Ifowopamọ́ tokens àti àwọn pèpéle ìparí wholesale ń sọ àwọn àwòṣe wọ̀nyí di tí ó wúlò sí i.
 
+Programmable kò túmọ̀ sí off-standard. Ọ̀nà ìgbéjáde náà ni `pain.001` — ISO 20022 Customer Credit Transfer Initiation. Ìṣe tí agent ti múrasílẹ̀ jẹ́ `pain.001` payload tó tilẹ̀ pé, tí a rán lọ sí bánkì nínú ikanni kan náà tí corporate ERP yóò lò, tí a fọwọ́sí lódì sí schema kan náà, tí a fún ní àmì láti ọwọ́ àwọn ẹ̀rọ fraud àti sanctions kan náà, tí a sì jẹ́rìí lórí àwọn ìròyìn ipò `pain.002` kan náà. Ipele conditionality (ààlà, eligibility àbáwọlé, wíwà ìparí, ilẹ̀-ìṣẹ̀ buffer) ń gbé sókè lókè ìfiránṣẹ́ — ó ń ṣàkóso *bóyá* ni a fi `pain.001` ránṣẹ́, kì í ṣe *ìrísí* tí ó gbà. Àwọn pèpéle ìjọba owó tó ń dá payload àkànṣe sílẹ̀ láti sọ àwọn ìbéèrè jáde yóò ṣubú kúrò lójú ọ̀nà bank-consumable, kí wọ́n sì padà sí ìparapọ̀ bilateral.
+
 ## Yàrá Ìṣàkóso Ìjọba Owó
 
 Àwòṣe ìṣiṣẹ́ gbọ́dọ̀ rí bíi yàrá ìṣàkóso: àwọn ipò, ìfọkànbalẹ̀, ipò ìsanwó, lílo ààlà, àwọn àìbámu, ìfàṣẹsí, àti ẹ̀rí nínú ojú kan. Ìmọ̀ gbọ́dọ̀ fi ìfìyàjẹ àwọn ìṣètò ìjọba owó tí ó béèrè kí àwọn ẹgbẹ́ ránpọ̀ àwọn imeèlì, àwọn ìwé ìṣirò, àwọn pọ́ọ̀tà bánkì, àti àwọn dáṣíbọ̀ọ̀dù tí ó já papọ̀.
+
+Pẹpẹ data tó wà lẹ́yìn ojú yẹn ni ISO 20022 cash management. Ipò intraday ni `camt.052` — Bank-to-Customer Account Report — tí a ń ṣàn láti gbogbo bánkì ìṣàkóso-owó sí inú ipele ìṣàkíyèsí agent ní ìgbà tí bánkì bá fi jáde (ìṣẹ́jú-àáyá fún àwọn olùpèsè tier-1 GTB, òpin-iyíkà fún àwọn ìṣẹ́kúlé). Ìbámu òpin-ọjọ́ ni `camt.053` — Bank-to-Customer Statement — ìkọ̀sílẹ̀ tí a lè ṣàyẹ̀wò tí a fi ń wọn ìfọkànbalẹ̀ agent ní owurọ̀ tó kàn. Àwọn pèpéle ìjọba owó tó ń ka àwọn ìròyìn PDF tàbí tó ń screen-scrape àwọn pọ́ọ̀tà bánkì kò lè dé 「Level 4」 ìmọ̀ náà; intraday telemetry gbọ́dọ̀ dé gẹ́gẹ́ bí `camt.052` tó tilẹ̀ pé kí ìṣàn ìfọkànbalẹ̀ lè parí ní àkókò láti ṣe ìṣe.
 
 ## Kí Èyí Túmọ̀ Sí Nípa Irú Bánkì
 

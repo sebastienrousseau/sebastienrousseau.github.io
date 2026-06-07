@@ -141,7 +141,7 @@ Praktyczne pytanie dla banku nie brzmi, czy każda dziedzina jest ważna. Brzmi 
 |---|---|---|
 | **52% adopcji agentowej AI w usługach finansowych** | Skarb może już absorbować agentowe przepływy przez nadzorowane platformy | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "Globalny raport AI w usługach finansowych 2026") |
 | **Płatności warunkowe w Project Agorá** | Tokenizacja może umożliwić zdolności płatności warunkowych i zawsze dostępnych | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Prace Bank of England nad stablecoinami i DSS** | Hurtowe aktywa rozrachunkowe są testowane w kontrolowanych warunkach brytyjskiej infrastruktury rynkowej | [Bank of England ⧉](https://www.bankofengland.co.uk/speech/2025/january/sasha-mills-speech-at-the-tokenisation-summit "Kształtowanie cyfrowej przyszłości finansowej Wielkiej Brytanii") |
+| **Bank of England — Digital Securities Sandbox** | Obligacje i akcje emitowane w technologii DLT rozliczane są w trybie 「Dostawa za płatność (DvP)」 — noga aktywowa i noga gotówkowa (hurtowy CBDC lub stokenizowane depozyty banków komercyjnych) rozliczają się w tej samej atomowej transakcji, eliminując ryzyko kontrahenta po stronie kapitału | [Bank of England ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox") |
 | **Termin adresów strukturalnych SWIFT** | Dane skarbowe muszą być prawidłowo wychwytywane u źródła | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "Kamień milowy ISO 20022 — adresy strukturalne, listopad 2026") |
 | **Duże instytucje finansowe mają trudność z pomiarem wartości AI** | Automatyzacja skarbu wymaga twardych miar ekonomicznych | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "Globalny raport AI w usługach finansowych 2026") |
 
@@ -149,13 +149,45 @@ Praktyczne pytanie dla banku nie brzmi, czy każda dziedzina jest ważna. Brzmi 
 
 Agent skarbowy nie powinien być projektowany jako asystent ogólnego przeznaczenia. Potrzebuje mandatu: obserwować rachunki, wykrywać wyjątki, prognozować luki finansowania, przygotowywać działania, prosić o zatwierdzenia, wykonywać w ramach limitów i wytwarzać dowody. Każdy krok powinien mieć inny model uprawnień.
 
+Pętla kontrolna przebiega według sekwencji Obserwuj → Wykryj → Prognozuj → Przygotuj → Poproś o zatwierdzenie — i się zatrzymuje. Agent nigdy nie przekracza kryptograficznej granicy autoryzacji samodzielnie. Poniższy diagram śledzi jeden pełny cykl: wielomilionowy śróddzienny niedobór płynności ujawnia się w telemetrii `camt.052`, agent prognozuje pozycję na koniec dnia, przygotowuje repo lub przelew intercompany jako w pełni uformowany `pain.001` i przekazuje go skarbnikowi do kryptograficznego podpisu wieloskładnikowego na kluczu związanym ze sprzętem. Agent następnie przesyła podpisany ładunek; finalizacja ląduje jako potwierdzenie `pain.002`, a kolejne `camt.053` stanowi zapis księgowy.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Banks as Banki cash-management
+    participant Agent as Agent skarbowy<br/>(ograniczony, gated przez politykę)
+    participant Forecast as Silnik prognoz<br/>(ML + biblioteka scenariuszy)
+    participant Treasurer as Skarbnik (człowiek)<br/>(MFA / klucz sprzętowy)
+    participant Rails as Szyny płatnicze<br/>(RTGS / RTP / DLT)
+
+    Banks->>Agent: camt.052 strumień sald śróddziennych
+    Agent->>Agent: Obserwuj — odśwież pozycję w czasie rzeczywistym
+    Agent->>Agent: Wykryj — podmiot X narusza próg płynności
+    Agent->>Forecast: Poproś o prognozę na koniec dnia
+    Forecast-->>Agent: Niedobór potwierdzony (USD 12.4m)
+    Agent->>Agent: Przygotuj — wstępny pain.001<br/>(repo / sweep) w ramach limitów mandatu
+    Agent->>Treasurer: Wyślij bezpieczne żądanie zatwierdzenia<br/>(przygotowany ładunek + dowody)
+    Note over Treasurer: Kryptograficzne MFA<br/>na kluczu związanym ze sprzętem
+    Treasurer-->>Agent: Podpisana autoryzacja
+    Agent->>Rails: Prześlij podpisany pain.001
+    Rails-->>Agent: potwierdzenie pain.002 + finalizacja
+    Banks->>Agent: camt.053 wyciąg na koniec dnia
+    Agent->>Agent: Dowód — powiąż akcję z zapisem camt.053
+```
+
+Sednem jest właśnie ta granica — każda akcja przesuwająca realne pieniądze znajduje się za kryptograficzną bramką, której agent nie jest w stanie samodzielnie pokonać.
+
 ## Programowalna płynność
 
 Programowalna płynność to zdolność przesuwania wartości pod warunkami: jeśli próg został przekroczony, jeśli zabezpieczenie jest kwalifikowalne, jeśli kontrahent przeszedł kontrolę, jeśli dostępna jest ostateczność rozrachunku lub jeśli bufor płynności śróddziennej jest zbyt niski. Stokenizowane depozyty i hurtowe platformy rozrachunkowe czynią te wzorce bardziej praktycznymi.
 
+Programowalna nie oznacza poza standardem. Ścieżką wykonania jest `pain.001` — ISO 20022 Customer Credit Transfer Initiation. Przygotowana akcja agenta to w pełni uformowany ładunek `pain.001` kierowany do banku tym samym kanałem, którym posłużyłby się korporacyjny ERP, walidowany względem tej samej schemy, oceniany przez te same silniki fraudowe i sankcyjne oraz potwierdzany w tych samych raportach statusowych `pain.002`. Warstwa warunkowości (próg, kwalifikowalność zabezpieczenia, dostępność finalizacji, dolny próg bufora) działa ponad komunikatem — decyduje *czy* `pain.001` zostanie wysłany, a nie *jaką ma formę*. Platformy skarbowe, które wymyślają autorskie ładunki na wyrażenie warunków, wypadną ze ścieżki konsumowanej przez banki i wrócą do integracji bilateralnych.
+
 ## Sala kontroli skarbu
 
 Model operacyjny powinien wyglądać jak sala kontroli: pozycje, prognozy, stany płatności, wykorzystanie limitów, wyjątki, zatwierdzenia i dowody w jednym interfejsie. Indeks powinien karać stosy skarbowe wymagające od zespołów łączenia maili, arkuszy, portali bankowych i odłączonych pulpitów.
+
+Warstwą danych za tym interfejsem jest cash management ISO 20022. Pozycja śróddzienna to `camt.052` — Bank-to-Customer Account Report — strumieniowany z każdego banku cash-management do warstwy obserwacyjnej agenta z częstotliwością publikowaną przez bank (minuty dla dostawców GTB tier-1, koniec cyklu dla długiego ogona). Uzgodnienie na koniec dnia to `camt.053` — Bank-to-Customer Statement — audytowalny zapis, względem którego prognoza agenta jest oceniana następnego ranka. Platformy skarbowe, które odczytują wyciągi z PDF-ów lub przeszukują portale bankowe, nie spełnią 「Poziomu 4」 indeksu; telemetria śróddzienna musi docierać jako strukturalny `camt.052`, by pętla prognozy mogła zamknąć się w czasie pozwalającym działać.
 
 ## Co to oznacza dla poszczególnych typów banków
 
