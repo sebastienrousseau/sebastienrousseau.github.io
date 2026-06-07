@@ -1,14 +1,14 @@
 {
+  "keywords": "bibliotecă de logging Rust, logging asincron Rust, formate structurate de jurnal, depanare aplicații Rust, logging personalizabil Rust, instrumente de dezvoltare Rust, funcționalități RustLogs RLG, logging eficient Rust, integrare RustLogs, documentație RustLogs",
+  "title": "RustLogs (RLG): Structured Logging Library for Rust",
+  "banner_alt": "Banner pentru RustLogs (RLG)",
+  "subtitle": "Optimizează-ți fluxul de lucru pentru logging în Rust",
   "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
+  "tags": "Rust, Logging, Asynchronous, Structured, Customisable, Debugging, Development, RustLogs, Integration, Documentation, ISO 20022, criptografie post-cuantică, AI, open source",
+  "locale": "ro_RO",
+  "description": "Descoperă RustLogs (RLG), biblioteca flexibilă de logging pentru Rust, cu formate structurate de jurnal, logging asincron și opțiuni extinse de personalizare.",
   "language": "ro-RO",
   "date": "Mar 08, 2024",
-  "keywords": "bibliotecă de logging Rust, logging asincron Rust, formate structurate de jurnal, depanare aplicații Rust, logging personalizabil Rust, instrumente de dezvoltare Rust, funcționalități RustLogs RLG, logging eficient Rust, integrare RustLogs, documentație RustLogs",
-  "locale": "ro_RO",
-  "title": "RustLogs (RLG): Structured Logging Library for Rust",
-  "description": "Descoperă RustLogs (RLG), biblioteca flexibilă de logging pentru Rust, cu formate structurate de jurnal, logging asincron și opțiuni extinse de personalizare.",
-  "tags": "Rust, Logging, Asynchronous, Structured, Customisable, Debugging, Development, RustLogs, Integration, Documentation, ISO 20022, criptografie post-cuantică, AI, open source",
-  "banner_alt": "Banner pentru RustLogs (RLG)",
   "word_count": 2040,
-  "subtitle": "Optimizează-ți fluxul de lucru pentru logging în Rust",
   "reading_time": 10
 }

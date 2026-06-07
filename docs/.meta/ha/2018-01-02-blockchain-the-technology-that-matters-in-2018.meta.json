@@ -1,14 +1,14 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
   "locale": "ha_NG",
-  "banner_alt": "Kwamfutar tafi-da-gidanka da aka kashe a saman teburin itace mai launin ruwan kasa",
-  "keywords": "pain001, iso 20022, atomatik biyan kuɗi, rage farashi, sarrafa biyan kuɗi, fayilolin biyan kuɗi, fara biyan kuɗi, pain message, pain message standards, pain message validation",
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
   "language": "ha-NG",
-  "reading_time": 5,
-  "date": "Jan 02, 2018",
   "description": "Labarin tafiya mai ban al'ajabi na kare ma'amalar dijital ta hanyar Private-key Cryptography da hanyoyin sadarwar Peer-to-peer (P2P).",
-  "subtitle": "Blockchain, rarraba ledgers, da fasahar da ta fi muhimmanci a shekarar 2018.",
+  "title": "Blockchain explained, the technology that matters the most",
+  "date": "Jan 02, 2018",
+  "banner_alt": "Kwamfutar tafi-da-gidanka da aka kashe a saman teburin itace mai launin ruwan kasa",
   "word_count": 1018,
-  "tags": "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, post-quantum cryptography, AI, tokenised deposits, Rust, cloud native banking, biyan kuɗi na cross-border",
-  "title": "Blockchain explained, the technology that matters the most"
+  "reading_time": 5,
+  "tags": "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, post-quantum cryptography, AI, tokenised deposits, Rust, cloud native banking, biyan kuɗi na cross-border, stablecoins",
+  "subtitle": "Blockchain, rarraba ledgers, da fasahar da ta fi muhimmanci a shekarar 2018.",
+  "keywords": "pain001, iso 20022, atomatik biyan kuɗi, rage farashi, sarrafa biyan kuɗi, fayilolin biyan kuɗi, fara biyan kuɗi, pain message, pain message standards, pain message validation"
 }

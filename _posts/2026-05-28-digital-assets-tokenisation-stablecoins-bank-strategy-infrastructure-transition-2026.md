@@ -138,6 +138,8 @@ site_software: "Static Site Generator, Rust"
 
 
 
+
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Digital assets are no longer an innovation bet. They are a settlement, custody, and balance-sheet architecture question. The strategic task for banks is infrastructure design under structural uncertainty.</p>

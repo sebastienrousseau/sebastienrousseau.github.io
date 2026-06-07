@@ -1,13 +1,13 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
-  "title": "Distribuzione quantistica delle chiavi: rivoluzionare la sicurezza nel banking",
-  "description": "Man mano che i computer quantistici minacciano la cifratura tradizionale, la distribuzione quantistica delle chiavi (QKD) emerge come risposta strutturale per la sicurezza di grado finanziario.",
   "locale": "it_IT",
-  "subtitle": "QKD come risposta strutturale alle minacce dei computer quantistici",
-  "word_count": 1016,
+  "title": "Distribuzione quantistica delle chiavi: rivoluzionare la sicurezza nel banking",
   "banner_alt": "HSBC vista dai Docks",
-  "language": "it-IT",
-  "date": "December 11, 2023",
   "keywords": "QKD, distribuzione quantistica chiavi, sicurezza bancaria, crittografia quantistica, BB84, BBM92",
-  "reading_time": 5
+  "date": "December 11, 2023",
+  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
+  "word_count": 1016,
+  "reading_time": 5,
+  "subtitle": "QKD come risposta strutturale alle minacce dei computer quantistici",
+  "description": "Man mano che i computer quantistici minacciano la cifratura tradizionale, la distribuzione quantistica delle chiavi (QKD) emerge come risposta strutturale per la sicurezza di grado finanziario.",
+  "language": "it-IT"
 }

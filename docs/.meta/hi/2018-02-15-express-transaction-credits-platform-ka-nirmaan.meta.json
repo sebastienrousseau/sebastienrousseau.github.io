@@ -1,13 +1,13 @@
 {
   "word_count": 817,
-  "description": "Express Transaction Credits प्लेटफ़ॉर्म का निर्माण — डिज़ाइन से लेकर उत्पादन तक की तकनीकी यात्रा।",
-  "date": "February 15, 2018",
-  "locale": "hi_IN",
-  "keywords": "Express Transaction Credits, ETC, blockchain, टोकन, smart contract, Solidity, EVM, मंच-इंजीनियरिंग, क्रिप्टोग्राफी, भुगतान",
   "reading_time": 4,
-  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
-  "banner_alt": "हरे रंग के कोड-स्ट्रीम के सामने एक डेवलपर",
-  "subtitle": "तीव्र-भुगतान-प्रोटोकॉल को रेखाचित्र से उत्पादन तक ले जाना",
   "language": "hi-IN",
-  "title": "Express Transaction Credits प्लेटफ़ॉर्म का निर्माण"
+  "locale": "hi_IN",
+  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
+  "title": "Express Transaction Credits प्लेटफ़ॉर्म का निर्माण",
+  "subtitle": "तीव्र-भुगतान-प्रोटोकॉल को रेखाचित्र से उत्पादन तक ले जाना",
+  "keywords": "Express Transaction Credits, ETC, blockchain, टोकन, smart contract, Solidity, EVM, मंच-इंजीनियरिंग, क्रिप्टोग्राफी, भुगतान",
+  "banner_alt": "हरे रंग के कोड-स्ट्रीम के सामने एक डेवलपर",
+  "description": "Express Transaction Credits प्लेटफ़ॉर्म का निर्माण — डिज़ाइन से लेकर उत्पादन तक की तकनीकी यात्रा।",
+  "date": "February 15, 2018"
 }

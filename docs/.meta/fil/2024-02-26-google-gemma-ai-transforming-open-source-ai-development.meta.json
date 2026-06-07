@@ -1,14 +1,14 @@
 {
-  "date": "Feb 26, 2024",
-  "reading_time": 7,
-  "description": "اكتشف نموذج Gemma من Google: مشروع مفتوح المصدر يُقدِّم حلول ذكاء اصطناعي أخلاقية للاستخدام الشخصي والمؤسسي.",
-  "tags": "Gemma, Google, AI, open source, Technical, Enterprise, Integration, macOS, Data, Ethics, ISO 20022, post-quantum cryptography, Rust",
-  "language": "fil-PH",
-  "locale": "fil_PH",
-  "banner_alt": "سفينة فضائية مستقبلية زرقاء بأضواء نيون",
   "subtitle": "نظرة من الداخل على القدرات والمساهمات مفتوحة المصدر وما هو قادم",
-  "title": "Google Gemma: تحويل تطوير الذكاء الاصطناعي مفتوح المصدر",
+  "tags": "Gemma, Google, AI, open source, Technical, Enterprise, Integration, macOS, Data, Ethics, ISO 20022, post-quantum cryptography, Rust",
+  "reading_time": 7,
   "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
+  "title": "Google Gemma: تحويل تطوير الذكاء الاصطناعي مفتوح المصدر",
+  "date": "Feb 26, 2024",
   "keywords": "Google Gemma, نموذج ذكاء اصطناعي مفتوح المصدر, البنية التقنية لـ Gemma, Gemma 2B 7B, ذكاء اصطناعي أخلاقي, دمج الذكاء الاصطناعي مع macOS, حلول الذكاء الاصطناعي للمؤسسات, الذكاء الاصطناعي الحواري, تحليل البيانات بالذكاء الاصطناعي, الذكاء الاصطناعي للأجهزة الطرفية",
-  "word_count": 1422
+  "word_count": 1422,
+  "banner_alt": "سفينة فضائية مستقبلية زرقاء بأضواء نيون",
+  "description": "اكتشف نموذج Gemma من Google: مشروع مفتوح المصدر يُقدِّم حلول ذكاء اصطناعي أخلاقية للاستخدام الشخصي والمؤسسي.",
+  "locale": "fil_PH",
+  "language": "fil-PH"
 }

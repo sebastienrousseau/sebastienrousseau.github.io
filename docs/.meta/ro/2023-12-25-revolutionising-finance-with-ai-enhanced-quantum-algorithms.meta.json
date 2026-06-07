@@ -1,14 +1,14 @@
 {
-  "subtitle": "Dezlănțuind puterea cuantică pentru inovația financiară: AI în inima algoritmilor de generație următoare",
-  "title": "Revolutionising Finance with AI-Enhanced Quantum Algorithms",
-  "date": "Dec 25, 2023",
-  "reading_time": 7,
-  "word_count": 1516,
-  "language": "ro-RO",
-  "keywords": "Quantum Computing, Algoritmi AI, Matematică Financiară, Tehnologie Bancară, Managementul Riscurilor, Proiectarea Algoritmilor, Analiza Datelor, Strategii de Investiții, Quantum Finance, Machine Learning",
   "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
-  "description": "Explorați rolul transformator al AI în algoritmii cuantici pentru finanțe, cu accent pe complexitățile lor matematice și aplicațiile bancare.",
-  "banner_alt": "Revoluționarea finanțelor cu algoritmi cuantici îmbunătățiți de AI",
   "tags": "Quantum, AI, Finance, Algorithms, Mathematics, Banking, Technology, Innovation, Data, Efficiency, ISO 20022, criptografie post-cuantică, calcul cuantic",
-  "locale": "ro_RO"
+  "keywords": "Quantum Computing, Algoritmi AI, Matematică Financiară, Tehnologie Bancară, Managementul Riscurilor, Proiectarea Algoritmilor, Analiza Datelor, Strategii de Investiții, Quantum Finance, Machine Learning",
+  "reading_time": 7,
+  "locale": "ro_RO",
+  "subtitle": "Dezlănțuind puterea cuantică pentru inovația financiară: AI în inima algoritmilor de generație următoare",
+  "word_count": 1516,
+  "date": "Dec 25, 2023",
+  "language": "ro-RO",
+  "title": "Revolutionising Finance with AI-Enhanced Quantum Algorithms",
+  "banner_alt": "Revoluționarea finanțelor cu algoritmi cuantici îmbunătățiți de AI",
+  "description": "Explorați rolul transformator al AI în algoritmii cuantici pentru finanțe, cu accent pe complexitățile lor matematice și aplicațiile bancare."
 }

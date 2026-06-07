@@ -1,13 +1,13 @@
 {
-  "title": "क्वांटम-सीमाएँ फिर से बदल रही हैं",
-  "word_count": 2703,
-  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
-  "description": "नवीनतम संख्या और बेहतर अनुमान दर्शाते हैं कि क्वांटम-सीमाएँ फिर से बदल रही हैं — और बैंकों को क्या करना चाहिए।",
-  "locale": "hi_IN",
   "date": "April 11, 2026",
+  "title": "क्वांटम-सीमाएँ फिर से बदल रही हैं",
+  "subtitle": "नई-संख्या-तथ्य, बेहतर अनुमान, और बैंकों के लिए इसका क्या अर्थ है",
+  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
+  "word_count": 2703,
+  "description": "नवीनतम संख्या और बेहतर अनुमान दर्शाते हैं कि क्वांटम-सीमाएँ फिर से बदल रही हैं — और बैंकों को क्या करना चाहिए।",
   "keywords": "क्वांटम, थ्रेसहोल्ड, post-quantum, NIST, क्रिप्टोग्राफी, RSA, HNDL, harvest now, माइग्रेशन, बैंकिंग",
   "banner_alt": "क्वांटम-सीमाओं पर रुझान-रेखा-चार्ट",
   "language": "hi-IN",
   "reading_time": 13,
-  "subtitle": "नई-संख्या-तथ्य, बेहतर अनुमान, और बैंकों के लिए इसका क्या अर्थ है"
+  "locale": "hi_IN"
 }

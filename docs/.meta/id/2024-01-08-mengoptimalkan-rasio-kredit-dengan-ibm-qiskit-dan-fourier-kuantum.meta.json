@@ -1,13 +1,13 @@
 {
-  "title": "[ID DRAFT] Qiskit & Quantum Fourier Transform for Credit Ratio Analysis",
-  "date": "Jan 08, 2024",
-  "keywords": "komputasi kuantum, keuangan, analisis rasio kredit, Qiskit, Quantum Fourier Transform, IBM, pembelajaran mesin, kecerdasan buatan, penilaian risiko keuangan, kelayakan kredit",
   "subtitle": "Mengoptimalkan Analisis Rasio Kredit dengan IBM Qiskit dan Quantum Fourier Transform",
-  "word_count": 293,
-  "description": "Jelajahi bagaimana IBM Qiskit dan Quantum Fourier Transform merevolusi analisis rasio kredit dalam keuangan, menawarkan akurasi dan kecepatan yang belum pernah ada sebelumnya.",
   "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
+  "reading_time": 1,
+  "title": "[ID DRAFT] Qiskit & Quantum Fourier Transform for Credit Ratio Analysis",
+  "description": "Jelajahi bagaimana IBM Qiskit dan Quantum Fourier Transform merevolusi analisis rasio kredit dalam keuangan, menawarkan akurasi dan kecepatan yang belum pernah ada sebelumnya.",
+  "date": "Jan 08, 2024",
   "language": "id-ID",
   "locale": "id_ID",
+  "keywords": "komputasi kuantum, keuangan, analisis rasio kredit, Qiskit, Quantum Fourier Transform, IBM, pembelajaran mesin, kecerdasan buatan, penilaian risiko keuangan, kelayakan kredit",
   "banner_alt": "Ruang Komputer Kuantum",
-  "reading_time": 1
+  "word_count": 293
 }

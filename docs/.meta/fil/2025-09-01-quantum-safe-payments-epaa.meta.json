@@ -1,14 +1,14 @@
 {
-  "description": "تُهدّد الحوسبة الكمية تشفير أنظمة المدفوعات. تكشف الورقة البيضاء لـ EPAA عن المخاطر الهيكلية والحاجة الملحّة للهجرة إلى التشفير ما بعد الكمي.",
-  "language": "fil-PH",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
-  "date": "September 01, 2025",
   "subtitle": "الجاهزية المقاومة للحوسبة الكمية قرارٌ يخصّ البنية التحتية الراهنة، لا المستقبلية. تعرض الورقة البيضاء لـ EPAA المخاطر الهيكلية والحاجة الملحّة للهجرة.",
-  "tags": "quantum-safe payments, post-quantum cryptography, payments, EPAA, ISO 20022, SWIFT, SEPA, DORA, quantum computing, AI, cross-border payments",
-  "keywords": "المدفوعات المقاومة للحوسبة الكمية، التشفير ما بعد الكمي، SEPA، SWIFT gpi، ISO 20022، أمن الخدمات المالية، EPAA، harvest-now decrypt-later، المرونة التشفيرية، Sebastien Rousseau",
   "word_count": 824,
-  "reading_time": 4,
-  "title": "المدفوعات المقاومة للحوسبة الكمية: لماذا يجب على الصناعة التحرّك الآن",
   "banner_alt": "لوحة دائرة كهربائية للحوسبة الكمية بإضاءة زرقاء",
-  "locale": "fil_PH"
+  "locale": "fil_PH",
+  "date": "September 01, 2025",
+  "keywords": "المدفوعات المقاومة للحوسبة الكمية، التشفير ما بعد الكمي، SEPA، SWIFT gpi، ISO 20022، أمن الخدمات المالية، EPAA، harvest-now decrypt-later، المرونة التشفيرية، Sebastien Rousseau",
+  "title": "المدفوعات المقاومة للحوسبة الكمية: لماذا يجب على الصناعة التحرّك الآن",
+  "reading_time": 4,
+  "description": "تُهدّد الحوسبة الكمية تشفير أنظمة المدفوعات. تكشف الورقة البيضاء لـ EPAA عن المخاطر الهيكلية والحاجة الملحّة للهجرة إلى التشفير ما بعد الكمي.",
+  "tags": "quantum-safe payments, post-quantum cryptography, payments, EPAA, ISO 20022, SWIFT, SEPA, DORA, quantum computing, AI, cross-border payments, stablecoins",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "language": "fil-PH"
 }

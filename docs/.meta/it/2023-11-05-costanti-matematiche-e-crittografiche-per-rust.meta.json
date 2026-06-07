@@ -1,13 +1,13 @@
 {
-  "description": "Una libreria Rust che fornisce costanti matematiche e crittografiche di alta precisione per algoritmi di sicurezza, calcolo scientifico e applicazioni finanziarie.",
-  "locale": "it_IT",
-  "subtitle": "Una libreria Rust di costanti precise per matematica, crittografia e calcolo scientifico",
-  "date": "November 05, 2023",
-  "title": "Costanti matematiche e crittografiche per la sicurezza Rust",
-  "reading_time": 3,
-  "banner_alt": "Calcolo matematico",
-  "keywords": "Rust, matematica, crittografia, costanti, precisione, calcolo scientifico",
   "word_count": 748,
+  "date": "November 05, 2023",
+  "banner_alt": "Calcolo matematico",
+  "reading_time": 3,
+  "keywords": "Rust, matematica, crittografia, costanti, precisione, calcolo scientifico",
+  "description": "Una libreria Rust che fornisce costanti matematiche e crittografiche di alta precisione per algoritmi di sicurezza, calcolo scientifico e applicazioni finanziarie.",
+  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
   "language": "it-IT",
-  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp"
+  "title": "Costanti matematiche e crittografiche per la sicurezza Rust",
+  "subtitle": "Una libreria Rust di costanti precise per matematica, crittografia e calcolo scientifico",
+  "locale": "it_IT"
 }

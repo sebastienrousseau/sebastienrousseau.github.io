@@ -112,6 +112,20 @@ last_reviewed: "2026-05-24"
 ---
 
 
+<!-- lead-start -->
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Installation and Basic Usage.</strong> LibMake is published on crates.io and installed via Cargo:.</li>
+  <li><strong>Config-File Mode.</strong> For team use, all CLI flags can be expressed in a TOML config file:.</li>
+  <li><strong>Generated Project Structure.</strong> A LibMake invocation creates the following layout:.</li>
+  <li><strong>GitHub Actions CI Workflow.</strong> The generated .github/workflows/release.yml runs five jobs on every push and pull request:.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</a>, <a href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</a>, <a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">RustLogs (RLG): Structured Logging Library for Rust</a>.</p>
+</aside>
+<!-- lead-end -->
+
 [**LibMake ⧉**][00] is an open-source Rust CLI and library that generates a complete library project scaffold from a single invocation. It targets the gap between `cargo new --lib` (which creates only a minimal Cargo.toml and src/lib.rs) and a production-ready library setup (which requires manually adding doc comments, CI, test harnesses, benchmark structure, CONTRIBUTING.md, and licence files).
 
 This article describes what LibMake generates, how the config-file and CLI modes work, the generated CI structure, and the templating system.
@@ -148,21 +162,6 @@ For team use, all CLI flags can be expressed in a TOML config file:
 
 ```toml
 # libmake.toml
-
-
-<!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file.</p>
-<p class="post-lead-heading"><strong>Key takeaways</strong></p>
-<ul class="post-lead-takeaways">
-  <li><strong>Installation and Basic Usage.</strong> LibMake is published on crates.io and installed via Cargo:.</li>
-  <li><strong>Config-File Mode.</strong> For team use, all CLI flags can be expressed in a TOML config file:.</li>
-  <li><strong>Generated Project Structure.</strong> A LibMake invocation creates the following layout:.</li>
-  <li><strong>GitHub Actions CI Workflow.</strong> The generated .github/workflows/release.yml runs five jobs on every push and pull request:.</li>
-</ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</a>, <a href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</a>, <a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">RustLogs (RLG): Structured Logging Library for Rust</a>.</p>
-</aside>
-<!-- lead-end -->
 
 author      = "Jane Smith"
 email       = "jane@example.com"

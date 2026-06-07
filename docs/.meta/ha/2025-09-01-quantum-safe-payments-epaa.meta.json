@@ -1,14 +1,14 @@
 {
-  "language": "ha-NG",
-  "date": "Sep 01, 2025",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
   "banner_alt": "Kwamfutar quantum da kewaye a cikin haske mai shuɗi",
-  "tags": "quantum-safe payments, post-quantum cryptography, payments, EPAA, ISO 20022, SWIFT, SEPA, DORA, quantum computing, AI, biyan kuɗi na cross-border",
-  "title": "Quantum-Safe Payments: Why the Industry Must Act Now",
+  "language": "ha-NG",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "subtitle": "Shirye-shiryen quantum-safe yanke shawara ce ta yanzu game da kayayyakin more rayuwa. Ba ta gaba ba.",
+  "tags": "quantum-safe payments, post-quantum cryptography, payments, EPAA, ISO 20022, SWIFT, SEPA, DORA, quantum computing, AI, biyan kuɗi na cross-border, stablecoins",
   "description": "Kwamfutar quantum na barazana ga cryptography na tsarin biyan kuɗi. Takarda ta EPAA ta bayyana haɗarin tsarin da gaggawar hijira zuwa PQC.",
+  "title": "Quantum-Safe Payments: Why the Industry Must Act Now",
+  "date": "Sep 01, 2025",
   "locale": "ha_NG",
-  "keywords": "biyan kuɗi masu aminci na quantum, cryptography bayan-quantum, SEPA, SWIFT gpi, ISO 20022, tsaro na ayyukan kuɗi, EPAA, harvest-now decrypt-later, sauƙin cryptographic, Sebastien Rousseau",
   "word_count": 1069,
   "reading_time": 5,
-  "subtitle": "Shirye-shiryen quantum-safe yanke shawara ce ta yanzu game da kayayyakin more rayuwa. Ba ta gaba ba."
+  "keywords": "biyan kuɗi masu aminci na quantum, cryptography bayan-quantum, SEPA, SWIFT gpi, ISO 20022, tsaro na ayyukan kuɗi, EPAA, harvest-now decrypt-later, sauƙin cryptographic, Sebastien Rousseau"
 }

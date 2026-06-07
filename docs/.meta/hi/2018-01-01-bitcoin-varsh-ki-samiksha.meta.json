@@ -1,13 +1,13 @@
 {
   "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
   "keywords": "Bitcoin, क्रिप्टोकरेंसी, blockchain, P2P, दोहरा-व्यय, माइनिंग, proof-of-work, ETF, Satoshi Nakamoto, विकेंद्रीकृत वित्त",
-  "banner_alt": "एक मेज़ पर सोने और चाँदी के सिक्कों का ढेर",
   "reading_time": 7,
-  "description": "Bitcoin: एक पीयर-टू-पीयर इलेक्ट्रॉनिक नक़द-प्रणाली (P2P ECS) जो ऑनलाइन लेनदेन के तरीक़े में क्रांति ला सकती है।",
-  "title": "Bitcoin: पहली क्रिप्टोकरेंसी के वर्ष की समीक्षा",
-  "word_count": 1432,
   "locale": "hi_IN",
+  "description": "Bitcoin: एक पीयर-टू-पीयर इलेक्ट्रॉनिक नक़द-प्रणाली (P2P ECS) जो ऑनलाइन लेनदेन के तरीक़े में क्रांति ला सकती है।",
+  "subtitle": "एक पीयर-टू-पीयर इलेक्ट्रॉनिक भुगतान-प्रणाली जिसने पैसे को पुनर्परिभाषित किया",
+  "banner_alt": "एक मेज़ पर सोने और चाँदी के सिक्कों का ढेर",
+  "word_count": 1432,
+  "title": "Bitcoin: पहली क्रिप्टोकरेंसी के वर्ष की समीक्षा",
   "date": "January 1, 2018",
-  "language": "hi-IN",
-  "subtitle": "एक पीयर-टू-पीयर इलेक्ट्रॉनिक भुगतान-प्रणाली जिसने पैसे को पुनर्परिभाषित किया"
+  "language": "hi-IN"
 }

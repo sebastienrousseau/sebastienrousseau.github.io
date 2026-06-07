@@ -1,14 +1,14 @@
 {
-  "banner_alt": "Banner don RustLogs (RLG)",
+  "title": "RustLogs (RLG): Structured Logging Library for Rust",
   "subtitle": "Sauƙaƙe Tsarin Aiki na Rust Logging",
-  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
-  "keywords": "ɗakin karatu na Rust logging, asynchronous Rust logging, tsarin log da aka tsara, gyaran kuskure na Rust application, logging na Rust mai keɓantawa, kayan aikin Rust development, fasalulluka na RustLogs RLG, logging na Rust mai inganci, haɗin RustLogs, takardun RustLogs",
+  "reading_time": 10,
+  "date": "Mar 08, 2024",
   "word_count": 2040,
   "description": "Gano RustLogs (RLG), ɗakin karatu mai sassauci na logging don Rust tare da tsarin log da aka tsara, logging na asynchronous, da zaɓuɓɓuka masu yawa na keɓantawa.",
-  "title": "RustLogs (RLG): Structured Logging Library for Rust",
+  "banner_alt": "Banner don RustLogs (RLG)",
+  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
   "locale": "ha_NG",
+  "keywords": "ɗakin karatu na Rust logging, asynchronous Rust logging, tsarin log da aka tsara, gyaran kuskure na Rust application, logging na Rust mai keɓantawa, kayan aikin Rust development, fasalulluka na RustLogs RLG, logging na Rust mai inganci, haɗin RustLogs, takardun RustLogs",
   "language": "ha-NG",
-  "tags": "Rust, Logging, Asynchronous, Structured, Customisable, Debugging, Development, RustLogs, Integration, Documentation, ISO 20022, post-quantum cryptography, AI, open source",
-  "reading_time": 10,
-  "date": "Mar 08, 2024"
+  "tags": "Rust, Logging, Asynchronous, Structured, Customisable, Debugging, Development, RustLogs, Integration, Documentation, ISO 20022, post-quantum cryptography, AI, open source"
 }

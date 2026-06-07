@@ -879,6 +879,7 @@ class _PostbuildCounters:
         "img_dims_patched",
         "itemlist_patched",
         "langswitch_patched",
+        "lastmod_meta_patched",
         "lcp_preloaded",
         "link_hoisted",
         "localhost_patched",
@@ -904,7 +905,14 @@ class _PostbuildCounters:
 class _PostbuildContext:
     """Pre-pass artefacts read once and shared across pages."""
 
-    __slots__ = ("counters", "fr_titles", "gh_stats", "nav_index", "translated_per_lang")
+    __slots__ = (
+        "counters",
+        "fr_titles",
+        "gh_stats",
+        "last_reviewed_index",
+        "nav_index",
+        "translated_per_lang",
+    )
 
     def __init__(self, pages: list[Path]) -> None:
         self.nav_index = build_post_nav_index(pages)
@@ -915,6 +923,7 @@ class _PostbuildContext:
         self.translated_per_lang = _translated_slugs_per_lang()
         self.gh_stats = _gh_stats_index()
         self.counters = _PostbuildCounters()
+        self.last_reviewed_index = build_comprehensive_lastmod_index()
 
 
 _LOCALHOST_HOST_RE = re.compile(
@@ -1205,6 +1214,71 @@ def _apply_hreflang_pass(html: str, page: Path, ctx: _PostbuildContext) -> str:
     return inject_hreflang(html, rel_slug, page_lang, ctx.translated_per_lang)
 
 
+_LAST_MODIFIED_META_RE = re.compile(
+    r'(<meta\s+itemprop="dateModified"\s+content=")([^"]*)("\s+id="last-modified"\s*/?>)',
+    re.IGNORECASE,
+)
+
+
+def build_comprehensive_lastmod_index() -> dict[str, str]:
+    """Walk _posts/ to parse last_reviewed for all pages (falling back to
+    last_build_date or date, normalized to YYYY-MM-DD format)."""
+    from datetime import datetime
+    from _frontmatter import read_fm
+
+    out: dict[str, str] = {}
+    posts_dir = Path("_posts")
+    if not posts_dir.is_dir():
+        return out
+    for md in posts_dir.glob("*.md"):
+        fm = read_fm(md)
+        last = fm.get("last_reviewed") or fm.get("last_build_date") or fm.get("date") or ""
+        if last:
+            if re.match(r"^\d{4}-\d{2}-\d{2}$", last):
+                out[md.stem] = last
+            else:
+                parsed = None
+                for fmt in ("%b %d, %Y", "%B %d, %Y", "%a, %d %b %Y %H:%M:%S %z"):
+                    try:
+                        parsed = datetime.strptime(last.strip(), fmt).strftime("%Y-%m-%d")
+                        break
+                    except ValueError:
+                        continue
+                if parsed:
+                    out[md.stem] = parsed
+                else:
+                    out[md.stem] = last
+    return out
+
+
+def update_last_modified_date(html: str, page: Path, ctx: _PostbuildContext) -> str:
+    """Update `<meta itemprop="dateModified" content="..." id="last-modified" />`
+    to the dynamic `last_reviewed` date from the source page's frontmatter."""
+    from datetime import date
+
+    rel_parts = page.relative_to(PUBLIC).parts
+    if len(rel_parts) > 1 and rel_parts[0] in ctx.translated_per_lang:
+        lang = rel_parts[0]
+        slug = rel_parts[1]
+    else:
+        lang = "en"
+        slug = rel_parts[0] if len(rel_parts) > 0 else ""
+
+    en_slug = _resolve_en_slug(slug, lang) or slug
+    if en_slug.endswith(".html"):
+        en_slug = en_slug[:-5]
+
+    new_date = ctx.last_reviewed_index.get(en_slug, "")
+    if not new_date:
+        new_date = date.today().isoformat()
+
+    return _LAST_MODIFIED_META_RE.sub(
+        rf'\g<1>{new_date}\g<3>',
+        html,
+        count=1,
+    )
+
+
 def _process_page(page: Path, ctx: _PostbuildContext) -> None:
     """Run every per-page transform pass on ``page``."""
     original = page.read_text(encoding="utf-8", errors="ignore")
@@ -1253,6 +1327,11 @@ def _process_page(page: Path, ctx: _PostbuildContext) -> None:
     # links added late also get cleaned.
     patched_hl, n_rt = strip_redundant_link_titles(patched_hl)
     ctx.counters.redundant_titles_stripped += n_rt
+    # Update last-modified meta tag to use last_reviewed
+    prev_meta = patched_hl
+    patched_hl = update_last_modified_date(patched_hl, page, ctx)
+    if patched_hl != prev_meta:
+        ctx.counters.lastmod_meta_patched += 1
     patched2 = inject_jsonld_hashes(patched_hl)
     if patched2 != prev_hl:
         ctx.counters.csp_patched += 1
@@ -1337,6 +1416,7 @@ def main() -> None:
         f"{c.theme_inlined} got theme-init inlined, "
         f"{c.cdn_wrapped} img(s) wrapped in CDN transform, "
         f"{c.redundant_titles_stripped} redundant link title(s) stripped, "
+        f"{c.lastmod_meta_patched} last-modified meta tag(s) updated, "
         f"{c.lcp_preloaded} got LCP image preloaded, "
         f"{c.asset_fp_patched} got asset URLs fingerprinted, "
         f"{c.sri_patched} got real SRI, "

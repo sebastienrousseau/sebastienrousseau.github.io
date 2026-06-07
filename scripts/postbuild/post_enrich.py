@@ -208,9 +208,19 @@ def body_starts_with_lead(body: str) -> bool:
 
 def first_h1(body: str) -> tuple[str, int] | None:
     """Return (heading_text, index_after_h1) for the body's first H1,
-    or None if absent."""
-    for m in re.finditer(r"^# (.+)$", body, re.MULTILINE):
-        return m.group(1).strip(), m.end()
+    or None if absent. Correctly ignores headings inside code blocks."""
+    lines = body.splitlines()
+    in_code_block = False
+    current_index = 0
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith("```"):
+            in_code_block = not in_code_block
+        elif not in_code_block and line.startswith("# "):
+            heading = line[2:].strip()
+            idx = current_index + len(line)
+            return heading, idx
+        current_index += len(line) + 1
     return None
 
 

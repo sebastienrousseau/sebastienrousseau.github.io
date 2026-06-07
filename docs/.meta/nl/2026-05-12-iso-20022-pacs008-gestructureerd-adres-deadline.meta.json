@@ -1,13 +1,13 @@
 {
-  "subtitle": "Vanaf november 2026 weigert SWIFT CBPR+ ongestructureerde postadressen",
-  "reading_time": 18,
-  "date": "May 12, 2026",
-  "word_count": 3684,
-  "description": "Vanaf november 2026 weigert SWIFT CBPR+ ongestructureerde postadressen in grensoverschrijdende betaalberichten. Wat dit betekent voor banken.",
-  "keywords": "ISO 20022, pacs.008, SWIFT, CBPR+, gestructureerd adres, grensoverschrijdend",
   "title": "ISO 20022 pacs.008: de deadline voor gestructureerde adressen",
-  "locale": "nl_NL",
+  "subtitle": "Vanaf november 2026 weigert SWIFT CBPR+ ongestructureerde postadressen",
+  "date": "May 12, 2026",
+  "language": "nl-NL",
+  "description": "Vanaf november 2026 weigert SWIFT CBPR+ ongestructureerde postadressen in grensoverschrijdende betaalberichten. Wat dit betekent voor banken.",
   "banner": "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp",
-  "banner_alt": "Visualisatie van een gestructureerd pacs.008-betaalbericht",
-  "language": "nl-NL"
+  "keywords": "ISO 20022, pacs.008, SWIFT, CBPR+, gestructureerd adres, grensoverschrijdend",
+  "reading_time": 18,
+  "word_count": 3684,
+  "locale": "nl_NL",
+  "banner_alt": "Visualisatie van een gestructureerd pacs.008-betaalbericht"
 }

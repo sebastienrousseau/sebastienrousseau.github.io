@@ -1,13 +1,13 @@
 {
-  "title": "La creación de la plataforma Express Transaction Credits",
-  "banner_alt": "Grandes columnas blancas",
   "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
-  "reading_time": 3,
-  "keywords": "Ethereum, ERC-223, ERC-20, EXTC, Express Transaction Credits, blockchain, pagos, tokens, préstamos, finanzas descentralizadas",
-  "language": "th-TH",
-  "word_count": 733,
   "locale": "th_TH",
-  "description": "Desarrollar un marco completo para la próxima generación de tokens conformes a Ethereum Request for Comment mediante el estándar ERC-223.",
+  "reading_time": 3,
   "subtitle": "Un marco completo para la próxima generación de tokens ERC-223",
+  "description": "Desarrollar un marco completo para la próxima generación de tokens conformes a Ethereum Request for Comment mediante el estándar ERC-223.",
+  "language": "th-TH",
+  "keywords": "Ethereum, ERC-223, ERC-20, EXTC, Express Transaction Credits, blockchain, pagos, tokens, préstamos, finanzas descentralizadas",
+  "banner_alt": "Grandes columnas blancas",
+  "title": "La creación de la plataforma Express Transaction Credits",
+  "word_count": 733,
   "date": "February 15, 2018"
 }

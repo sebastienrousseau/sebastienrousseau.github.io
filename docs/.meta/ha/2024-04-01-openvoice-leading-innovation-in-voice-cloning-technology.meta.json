@@ -1,14 +1,14 @@
 {
+  "locale": "ha_NG",
+  "reading_time": 6,
+  "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.",
   "date": "Apr 01, 2024",
-  "tags": "OpenVoice, Voice Cloning, Synthetic Speech, open source, Cross-Lingual, Instant Cloning, Voice Control, Accessibility, Entertainment, Customer Service, ISO 20022, post-quantum cryptography, AI, DORA, platform engineering, sovereign cloud, cloud native banking",
   "language": "ha-NG",
   "banner_alt": "Banner mai launi mai ƙarfi a kan hotuna masu maimaitawa",
-  "title": "OpenVoice: Leading Innovation in Voice Cloning Technology",
-  "word_count": 1282,
-  "keywords": "OpenVoice, Fasahar Kwafin Murya, AI Magana ta Roba, Open-Source Kwafin Murya, Haɗin Murya Tsakanin Harsuna, Gaggawar Kwafin Murya, Sarrafa Salon Murya, Fasahar Murya ta Accessibility, Muryoyin Masana'antar Nishaɗi, AI Murya ta Sabis na Abokan Ciniki",
-  "reading_time": 6,
-  "subtitle": "Kayan Aikin Open-Source na Zamani don Kwafin Murya",
-  "locale": "ha_NG",
   "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
-  "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing."
+  "tags": "OpenVoice, Voice Cloning, Synthetic Speech, open source, Cross-Lingual, Instant Cloning, Voice Control, Accessibility, Entertainment, Customer Service, ISO 20022, post-quantum cryptography, AI, DORA, platform engineering, sovereign cloud, cloud native banking",
+  "title": "OpenVoice: Leading Innovation in Voice Cloning Technology",
+  "keywords": "OpenVoice, Fasahar Kwafin Murya, AI Magana ta Roba, Open-Source Kwafin Murya, Haɗin Murya Tsakanin Harsuna, Gaggawar Kwafin Murya, Sarrafa Salon Murya, Fasahar Murya ta Accessibility, Muryoyin Masana'antar Nishaɗi, AI Murya ta Sabis na Abokan Ciniki",
+  "subtitle": "Kayan Aikin Open-Source na Zamani don Kwafin Murya",
+  "word_count": 1282
 }
