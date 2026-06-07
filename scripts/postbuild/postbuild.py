@@ -1224,6 +1224,7 @@ def build_comprehensive_lastmod_index() -> dict[str, str]:
     """Walk _posts/ to parse last_reviewed for all pages (falling back to
     last_build_date or date, normalized to YYYY-MM-DD format)."""
     from datetime import datetime
+
     from _frontmatter import read_fm
 
     out: dict[str, str] = {}
