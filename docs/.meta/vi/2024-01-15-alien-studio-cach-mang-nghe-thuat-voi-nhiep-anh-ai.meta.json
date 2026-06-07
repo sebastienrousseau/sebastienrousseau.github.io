@@ -1,13 +1,13 @@
 {
+  "description": "Alien Studio khám phá nhiếp ảnh AI — cách các mô hình diffusion biến đổi sáng tạo nghệ thuật, từ ý tưởng đến hình ảnh hoàn thiện.",
   "locale": "vi_VN",
+  "word_count": 546,
   "banner": "https://cloudcdn.pro/stocks/images/alien-studio-banner.webp",
   "keywords": "AI, nhiếp ảnh, diffusion, Stable Diffusion, Midjourney, DALL-E, nghệ thuật, sáng tạo",
-  "title": "Alien Studio: cách mạng nghệ thuật với nhiếp ảnh AI",
-  "description": "Alien Studio khám phá nhiếp ảnh AI — cách các mô hình diffusion biến đổi sáng tạo nghệ thuật, từ ý tưởng đến hình ảnh hoàn thiện.",
-  "banner_alt": "Một bức ảnh siêu thực được tạo bằng AI",
   "reading_time": 2,
-  "word_count": 546,
-  "date": "January 15, 2024",
+  "title": "Alien Studio: cách mạng nghệ thuật với nhiếp ảnh AI",
+  "banner_alt": "Một bức ảnh siêu thực được tạo bằng AI",
   "subtitle": "Khi diffusion biến trí tưởng tượng thành hình ảnh",
+  "date": "January 15, 2024",
   "language": "vi-VN"
 }

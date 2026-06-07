@@ -1,14 +1,14 @@
 {
-  "subtitle": "মেমরি-সেফ Rust নিরাপত্তার জন্য যাচাইকৃত গাণিতিক ও ক্রিপ্টোগ্রাফিক কনস্ট্যান্ট।",
-  "language": "bn-BD",
-  "date": "Nov 05, 2023",
-  "tags": "math, cybersecurity, cryptography, Rust, programming, encryption, communication, constants, constants in Rust, Common library, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, কোয়ান্টাম কম্পিউটিং, AI, open source",
-  "reading_time": 4,
-  "keywords": "গাণিতিক কনস্ট্যান্ট, ক্রিপ্টোগ্রাফিক কনস্ট্যান্ট, Rust security, নিরাপদ যোগাযোগ, এনক্রিপশন, RSA, elliptic curve cryptography, Common (CMN) library, Rust অ্যাপ্লিকেশন, গাণিতিক গণনা",
-  "title": "Mathematical and Cryptographic Constants for Rust Security",
   "locale": "bn_BD",
+  "subtitle": "মেমরি-সেফ Rust নিরাপত্তার জন্য যাচাইকৃত গাণিতিক ও ক্রিপ্টোগ্রাফিক কনস্ট্যান্ট।",
+  "keywords": "গাণিতিক কনস্ট্যান্ট, ক্রিপ্টোগ্রাফিক কনস্ট্যান্ট, Rust security, নিরাপদ যোগাযোগ, এনক্রিপশন, RSA, elliptic curve cryptography, Common (CMN) library, Rust অ্যাপ্লিকেশন, গাণিতিক গণনা",
+  "language": "bn-BD",
   "banner_alt": "গণিত গণনা",
-  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
   "word_count": 877,
-  "description": "সুনিপুণভাবে যাচাইকৃত গাণিতিক ও ক্রিপ্টোগ্রাফিক কনস্ট্যান্ট দিয়ে কোড অখণ্ডতা সুরক্ষিত করুন, মেমরি ও কনকারেন্সি নিরাপত্তা শক্তিশালী করে উন্নত কোড সুরক্ষা নিশ্চিত করুন।"
+  "reading_time": 4,
+  "description": "সুনিপুণভাবে যাচাইকৃত গাণিতিক ও ক্রিপ্টোগ্রাফিক কনস্ট্যান্ট দিয়ে কোড অখণ্ডতা সুরক্ষিত করুন, মেমরি ও কনকারেন্সি নিরাপত্তা শক্তিশালী করে উন্নত কোড সুরক্ষা নিশ্চিত করুন।",
+  "tags": "math, cybersecurity, cryptography, Rust, programming, encryption, communication, constants, constants in Rust, Common library, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, কোয়ান্টাম কম্পিউটিং, AI, open source",
+  "date": "Nov 05, 2023",
+  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
+  "title": "Mathematical and Cryptographic Constants for Rust Security"
 }

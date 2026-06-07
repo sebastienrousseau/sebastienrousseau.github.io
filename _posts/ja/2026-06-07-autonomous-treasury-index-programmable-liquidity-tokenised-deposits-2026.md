@@ -139,7 +139,7 @@ Stanford AI Index が有用であるのは、急速に進化するテクノロ�
 |---|---|---|
 | **金融サービスにおける 52% のエージェント型 AI 導入** | トレジャリーはガバナンスされたプラットフォーム経由でエージェント型ワークフローを取り込めるようになりました | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 年金融サービスにおけるグローバル AI レポート") |
 | **Project Agorá の条件付き決済** | トークン化は条件付きかつ常時稼働の決済機能を可能にする可能性があります | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Bank of England のステーブルコインおよび DSS 関連の取り組み** | ホールセール決済資産は英国の市場インフラ環境において管理下で検証されています | [Bank of England ⧉](https://www.bankofengland.co.uk/speech/2025/january/sasha-mills-speech-at-the-tokenisation-summit "英国のデジタル金融の未来を形づくる") |
+| **Bank of England Digital Securities Sandbox** | DLT で発行された債券および株式は、DvP(証券・資金同時受渡)基準で決済されます — 資産レッグと資金レッグ(ホールセール CBDC またはトークン化された商業銀行預金)が同一のアトミック・トランザクション内で決済されるため、元本カウンターパーティ・リスクが排除されます | [Bank of England ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox") |
 | **SWIFT の構造化住所の期限** | トレジャリーデータはソースの段階で正しく取得される必要があります | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 2026 年 11 月の構造化住所マイルストーン") |
 | **大手金融機関は AI 価値の測定に苦戦** | トレジャリーの自動化には堅固な経済指標が必要です | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 年金融サービスにおけるグローバル AI レポート") |
 
@@ -147,13 +147,45 @@ Stanford AI Index が有用であるのは、急速に進化するテクノロ�
 
 トレジャリー・エージェントは汎用アシスタントとして設計されるべきではありません。マンデートが必要です。すなわち、口座を観察し、例外を検出し、資金不足を予測し、アクションを準備し、承認を申請し、リミット内で実行し、エビデンスを生成する、という一連の役割です。各ステップには異なる権限モデルが適用されるべきです。
 
+制御ループは、Observe(観察)→ Detect(検出)→ Forecast(予測)→ Prepare(準備)→ Request Approval(承認申請)の順で実行され、そこで止まります。エージェントが単独で暗号学的な認可境界を越えることはありません。以下の図は、1 サイクル全体の流れを示しています。数百万ドル規模の日中流動性不足が `camt.052` テレメトリ上で顕在化し、エージェントが当日終了時点のポジションを予測し、レポまたは社内スイープを完全な形の `pain.001` として準備し、ハードウェアバインドされた鍵による多要素暗号署名のために人間のトレジャラーへ引き渡します。エージェントはその後、署名済みペイロードを送信します。ファイナリティは `pain.002` の ACK として確定し、続いて記録としての `camt.053` が到着します。
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Banks as キャッシュマネジメント銀行
+    participant Agent as トレジャリー・エージェント<br/>(制限付き・ポリシーゲート)
+    participant Forecast as 予測エンジン<br/>(ML + シナリオ・ライブラリ)
+    participant Treasurer as 人間のトレジャラー<br/>(MFA / ハードウェア鍵)
+    participant Rails as 決済レール<br/>(RTGS / RTP / DLT)
+
+    Banks->>Agent: camt.052 日中残高ストリーム
+    Agent->>Agent: Observe — リアルタイム・ポジションを更新
+    Agent->>Agent: Detect — エンティティ X が流動性フロアを抵触
+    Agent->>Forecast: 当日終了時点の予測を要求
+    Forecast-->>Agent: 資金不足を確認 (USD 12.4m)
+    Agent->>Agent: Prepare — pain.001 を起草<br/>(レポ / スイープ)マンデート・リミット内
+    Agent->>Treasurer: セキュアな承認要求を送信<br/>(準備済みペイロード + エビデンス)
+    Note over Treasurer: ハードウェアバインドされた鍵による<br/>暗号 MFA
+    Treasurer-->>Agent: 署名済み認可
+    Agent->>Rails: 署名済み pain.001 を送信
+    Rails-->>Agent: pain.002 ACK + ファイナリティ
+    Banks->>Agent: camt.053 当日終了ステートメント
+    Agent->>Agent: エビデンス — アクションを camt.053 レコードに紐付け
+```
+
+境界線こそが要点です — 実際の資金を動かすすべてのアクションは、エージェント単独では満たすことのできない暗号学的ゲートの背後に置かれます。
+
 ## プログラマブル流動性
 
 プログラマブル流動性とは、条件下で価値を移動させる能力です。たとえば、しきい値が抵触した場合、担保が適格である場合、カウンターパーティがスクリーニングを通過した場合、決済ファイナリティが得られている場合、または日中流動性バッファが過小である場合などです。トークン化預金とホールセール決済プラットフォームにより、こうしたパターンの実装がより現実的になります。
 
+プログラマブルであることは、標準を外れることを意味しません。実行経路は `pain.001` — ISO 20022 の Customer Credit Transfer Initiation — です。エージェントが準備したアクションは、完全な形の `pain.001` ペイロードであり、企業 ERP が利用するのと同じチャネルを通じて銀行へルーティングされ、同じスキーマに対してバリデーションされ、同じ不正検知および制裁スクリーニングのエンジンによりスコアリングされ、同じ `pain.002` ステータス・レポート上で承認されます。条件付与のレイヤー(しきい値、担保適格性、ファイナリティの可用性、バッファ・フロア)はメッセージの上位に位置します — それは `pain.001` を「送信するか否か」をゲートするものであり、メッセージの「形そのもの」を決定するものではありません。条件を表現するために独自ペイロードを発明するトレジャリー・プラットフォームは、銀行が消費可能な経路から外れ、バイラテラル統合の領域へと押し戻されることになります。
+
 ## トレジャリー・コントロールルーム
 
 オペレーティングモデルはコントロールルームのような構成であるべきです。すなわち、ポジション、予測、決済ステータス、リミット使用率、例外、承認、エビデンスを単一のインターフェースに集約する形です。指数においては、メール、スプレッドシート、銀行ポータル、断絶したダッシュボードをチームが手作業で繋ぎ合わせる必要があるトレジャリー・スタックは減点されるべきです。
+
+そのインターフェースの背後にあるデータ・プレーンは、ISO 20022 のキャッシュマネジメントです。日中ポジションは `camt.052` — Bank-to-Customer Account Report — であり、銀行が公表する頻度(ティア 1 の GTB プロバイダーであれば分単位、ロングテール側ではサイクル終了時)で、すべてのキャッシュマネジメント銀行からエージェントの観察レイヤーへとストリームされます。当日終了の照合は `camt.053` — Bank-to-Customer Statement — であり、翌朝、エージェントの予測がそれを基準として評価される監査可能な記録となります。PDF ステートメントを読み込む、または銀行ポータルをスクリーン・スクレイピングするトレジャリー・プラットフォームは、本指数のレベル4を満たすことはできません。予測ループが実行可能なタイミングで閉じるためには、日中テレメトリが構造化された `camt.052` として到着する必要があります。
 
 ## 銀行タイプ別の意味
 

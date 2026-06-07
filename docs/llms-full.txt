@@ -52,7 +52,7 @@ The practical question for a bank is not whether each domain is important. It is
 |---|---|---|
 | **52% agentic AI adoption in financial services** | Treasury can now absorb agentic workflows through governed platforms | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 Global AI in Financial Services Report") |
 | **Project Agorá conditional payments** | Tokenisation may enable conditional and always-on payment capabilities | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Bank of England stablecoin and DSS work** | Wholesale settlement assets are being tested in controlled UK market infrastructure settings | [Bank of England ⧉](https://www.bankofengland.co.uk/speech/2025/january/sasha-mills-speech-at-the-tokenisation-summit "Shaping the UK's digital financial future") |
+| **Bank of England Digital Securities Sandbox** | DLT-issued bonds and equities settle on a Delivery-versus-Payment (DvP) basis — the asset leg and the cash leg (wholesale CBDC or tokenised commercial-bank deposits) settle in the same atomic transaction, removing principal counterparty risk | [Bank of England ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox") |
 | **SWIFT structured address deadline** | Treasury data must be captured correctly at source | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
 | **Large FIs struggle to measure AI value** | Treasury automation needs hard economic metrics | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 Global AI in Financial Services Report") |
 
@@ -60,13 +60,45 @@ The practical question for a bank is not whether each domain is important. It is
 
 A treasury agent should not be designed as a general-purpose assistant. It needs a mandate: observe accounts, detect exceptions, forecast funding gaps, prepare actions, request approvals, execute within limits, and produce evidence. Each step should have a different authority model.
 
+The control loop runs Observe → Detect → Forecast → Prepare → Request Approval — and stops. The agent never crosses the cryptographic authorisation boundary on its own. The diagram below traces one full cycle: a multi-million-dollar intraday liquidity shortfall surfaces in `camt.052` telemetry, the agent forecasts the end-of-day position, prepares a repo or intercompany sweep as a fully-formed `pain.001`, and hands it to the human treasurer for multi-factor cryptographic sign-off on a hardware-bound key. The agent then submits the signed payload; finality lands as a `pain.002` ACK and the next `camt.053` of record.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Banks as Cash-Management Banks
+    participant Agent as Treasury Agent<br/>(bounded, policy-gated)
+    participant Forecast as Forecast Engine<br/>(ML + scenario lib)
+    participant Treasurer as Human Treasurer<br/>(MFA / hardware key)
+    participant Rails as Payment Rails<br/>(RTGS / RTP / DLT)
+
+    Banks->>Agent: camt.052 intraday balance stream
+    Agent->>Agent: Observe — refresh real-time position
+    Agent->>Agent: Detect — entity X breaches liquidity floor
+    Agent->>Forecast: Request EOD projection
+    Forecast-->>Agent: Shortfall confirmed (USD 12.4m)
+    Agent->>Agent: Prepare — draft pain.001<br/>(repo / sweep) under mandate limits
+    Agent->>Treasurer: Push secure approval request<br/>(prepared payload + evidence)
+    Note over Treasurer: Cryptographic MFA<br/>on hardware-bound key
+    Treasurer-->>Agent: Signed authorisation
+    Agent->>Rails: Submit signed pain.001
+    Rails-->>Agent: pain.002 ACK + finality
+    Banks->>Agent: camt.053 end-of-day statement
+    Agent->>Agent: Evidence — bind action to camt.053 record
+```
+
+The boundary is the point — every action that moves real money sits behind a cryptographic gate the agent cannot satisfy on its own.
+
 ## Programmable Liquidity
 
 Programmable liquidity is the ability to move value under conditions: if a threshold is breached, if collateral is eligible, if a counterparty passes screening, if settlement finality is available, or if an intraday liquidity buffer is too low. Tokenised deposits and wholesale settlement platforms make these patterns more practical.
 
+Programmable does not mean off-standard. The execution path is `pain.001` — ISO 20022 Customer Credit Transfer Initiation. The agent's prepared action is a fully-formed `pain.001` payload routed to the bank in the same channel a corporate ERP would use, validated against the same schema, scored by the same fraud and sanctions engines, and acknowledged on the same `pain.002` status reports. The conditionality layer (threshold, collateral eligibility, finality availability, buffer floor) lives above the message — it gates *whether* a `pain.001` is sent, not *what shape* it takes. Treasury platforms that invent bespoke payloads to express conditions will fall out of the bank-consumable path and back into bilateral integration.
+
 ## The Treasury Control Room
 
 The operating model should look like a control room: positions, forecasts, payment states, limit usage, exceptions, approvals, and evidence in one interface. The index should penalise treasury stacks that require teams to stitch together emails, spreadsheets, bank portals, and disconnected dashboards.
+
+The data plane behind that interface is ISO 20022 cash management. Intraday position is `camt.052` — Bank-to-Customer Account Report — streamed from every cash-management bank into the agent's observation layer at the frequency the bank publishes (minutes for tier-1 GTB providers, end-of-cycle for the long tail). End-of-day reconciliation is `camt.053` — Bank-to-Customer Statement — the auditable record the agent's forecast is graded against the next morning. Treasury platforms that read PDF statements or screen-scrape bank portals cannot meet Level 4 of the index; the intraday telemetry has to arrive as structured `camt.052` for the forecast loop to close in time to act.
 
 ## What This Means by Bank Type
 

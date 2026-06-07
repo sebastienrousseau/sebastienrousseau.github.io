@@ -141,7 +141,7 @@ Praktickou otázkou pro banku není, zda je každá doména důležitá. Otázko
 |---|---|---|
 | **52% adopce agentní AI ve finančních službách** | Treasury nyní dokáže absorbovat agentní workflowy přes řízené platformy | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "Globální zpráva o AI ve finančních službách 2026") |
 | **Podmíněné platby v rámci Project Agorá** | Tokenizace může umožnit podmíněné a nepřetržitě dostupné platební funkce | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Práce Bank of England na stablecoinech a DSS** | Wholesale vypořádací aktiva se testují v řízeném prostředí britské tržní infrastruktury | [Bank of England ⧉](https://www.bankofengland.co.uk/speech/2025/january/sasha-mills-speech-at-the-tokenisation-summit "Utváření digitální finanční budoucnosti Spojeného království") |
+| **Bank of England — Digital Securities Sandbox** | Dluhopisy a akcie vydané na DLT se vypořádávají na bázi 「Dodání proti platbě (DvP)」 — aktivní noha a hotovostní noha (wholesale CBDC nebo tokenizované vklady komerční banky) se vypořádávají ve stejné atomické transakci, čímž odstraňují principal counterparty riziko | [Bank of England ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox") |
 | **Termín pro strukturované adresy SWIFT** | Treasury data musí být správně zachycena u zdroje | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "Milník ISO 20022 — strukturované adresy v listopadu 2026") |
 | **Velké finanční instituce obtížně měří hodnotu AI** | Treasury automatizace potřebuje tvrdé ekonomické metriky | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "Globální zpráva o AI ve finančních službách 2026") |
 
@@ -149,13 +149,45 @@ Praktickou otázkou pro banku není, zda je každá doména důležitá. Otázko
 
 Treasury agent by neměl být navržen jako univerzální asistent. Potřebuje mandát: sledovat účty, detekovat výjimky, predikovat mezery ve financování, připravovat akce, žádat o schválení, vykonávat v rámci limitů a produkovat důkazy. Každý krok by měl mít odlišný model autority.
 
+Řídicí smyčka probíhá Pozorovat → Detekovat → Predikovat → Připravit → Požádat o schválení — a zastaví se. Agent nikdy nepřekročí kryptografickou autorizační hranici sám. Níže uvedený diagram trasuje jeden plný cyklus: vícemilionový vnitrodenní výpadek likvidity se objeví v telemetrii `camt.052`, agent předpoví pozici na konci dne, připraví repo nebo intercompany sweep jako plně sestavený `pain.001` a předá jej lidskému treasurerovi k vícefaktorovému kryptografickému podpisu na klíči vázaném na hardware. Agent poté odešle podepsaný payload; finalita dorazí jako `pain.002` ACK a další oficiální `camt.053`.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Banks as Banky cash managementu
+    participant Agent as Treasury agent<br/>(ohraničený, řízený politikou)
+    participant Forecast as Predikční engine<br/>(ML + knihovna scénářů)
+    participant Treasurer as Lidský treasurer<br/>(MFA / hardwarový klíč)
+    participant Rails as Platební raily<br/>(RTGS / RTP / DLT)
+
+    Banks->>Agent: camt.052 stream vnitrodenních zůstatků
+    Agent->>Agent: Pozorovat — obnovit pozici v reálném čase
+    Agent->>Agent: Detekovat — entita X překračuje likviditní práh
+    Agent->>Forecast: Požádat o predikci EOD
+    Forecast-->>Agent: Výpadek potvrzen (USD 12.4m)
+    Agent->>Agent: Připravit — návrh pain.001<br/>(repo / sweep) v rámci mandátních limitů
+    Agent->>Treasurer: Odeslat zabezpečenou žádost o schválení<br/>(připravený payload + důkazy)
+    Note over Treasurer: Kryptografické MFA<br/>na klíči vázaném na hardware
+    Treasurer-->>Agent: Podepsaná autorizace
+    Agent->>Rails: Odeslat podepsaný pain.001
+    Rails-->>Agent: pain.002 ACK + finalita
+    Banks->>Agent: camt.053 výpis na konci dne
+    Agent->>Agent: Důkaz — navázat akci na záznam camt.053
+```
+
+Smyslem je právě tato hranice — každá akce, která pohybuje skutečnými penězi, sedí za kryptografickou bránou, kterou agent sám nedokáže projít.
+
 ## Programovatelná likvidita
 
 Programovatelná likvidita je schopnost přesouvat hodnotu pod podmínkami: pokud je překročen práh, pokud je kolaterál způsobilý, pokud protistrana projde screeningem, pokud je k dispozici finalita vypořádání nebo pokud je vnitrodenní likviditní polštář příliš nízký. Tokenizované vklady a wholesale vypořádací platformy činí tyto vzory praktičtějšími.
 
+Programovatelná neznamená mimo standard. Cesta exekuce je `pain.001` — ISO 20022 Customer Credit Transfer Initiation. Připravená akce agenta je plně sestavený payload `pain.001` směrovaný do banky stejným kanálem, jaký by použil korporátní ERP, validovaný proti stejnému schématu, skórovaný stejnými fraud a sankčními enginy a potvrzený stejnými statusovými reporty `pain.002`. Vrstva podmíněnosti (práh, způsobilost kolaterálu, dostupnost finality, dolní mez polštáře) leží nad zprávou — řídí, *zda* je `pain.001` odeslán, nikoli *jakou má podobu*. Treasury platformy, které vymýšlejí vlastní payloady k vyjádření podmínek, vypadnou z bankovně konzumovatelné cesty zpět do bilaterální integrace.
+
 ## Treasury control room
 
 Provozní model by měl vypadat jako řídicí středisko: pozice, predikce, stavy plateb, využití limitů, výjimky, schvalování a důkazy v jednom rozhraní. Index by měl penalizovat treasury stacky, které týmy nutí sešívat e-maily, tabulky, bankovní portály a nepropojené dashboardy.
+
+Datová rovina za tímto rozhraním je ISO 20022 cash management. Vnitrodenní pozice je `camt.052` — Bank-to-Customer Account Report — streamovaná z každé banky cash managementu do pozorovací vrstvy agenta v takové frekvenci, v jaké banka publikuje (minuty u poskytovatelů GTB první ligy, konec cyklu u dlouhého chvostu). Reconciliace na konci dne je `camt.053` — Bank-to-Customer Statement — auditovatelný záznam, vůči kterému je predikce agenta následující ráno hodnocena. Treasury platformy, které čtou PDF výpisy nebo screen-scrapují bankovní portály, nemohou splnit 「Úroveň 4」 indexu; vnitrodenní telemetrie musí dorazit jako strukturovaný `camt.052`, aby se predikční smyčka uzavřela včas k akci.
 
 ## Co to znamená podle typu banky
 

@@ -139,7 +139,7 @@ Stanford AI Index 之所以有价值，是因为它把一个快速演进的技�
 |---|---|---|
 | **金融服务业 52% 的智能体 AI 采纳率** | 司库已可通过受治理平台承接智能体工作流 | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 全球金融服务业 AI 报告") |
 | **Project Agorá 条件支付** | 代币化可启用条件型与永续支付能力 | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá 项目") |
-| **英国央行稳定币与 DSS 工作** | 批发清算资产正在受控的英国市场基础设施环境下被测试 | [Bank of England ⧉](https://www.bankofengland.co.uk/speech/2025/january/sasha-mills-speech-at-the-tokenisation-summit "塑造英国的数字金融未来") |
+| **英格兰银行数字证券沙盒（Digital Securities Sandbox）** | 基于 DLT 发行的债券与股票按券款对付（DvP）方式清算——资产腿与资金腿（批发 CBDC 或代币化商业银行存款）在同一笔原子交易中完成清算，消除本金对手方风险 | [英格兰银行 ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox") |
 | **SWIFT 结构化地址截止节点** | 司库数据必须在源端就被准确捕获 | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 2026 年 11 月结构化地址里程碑") |
 | **大型金融机构难以衡量 AI 价值** | 司库自动化需要硬性的经济指标 | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 全球金融服务业 AI 报告") |
 
@@ -147,13 +147,45 @@ Stanford AI Index 之所以有价值，是因为它把一个快速演进的技�
 
 司库智能体不应被设计成通用型助手。它需要一份授权指令：观察账户、识别异常、预测资金缺口、准备动作、申请审批、在限额内执行并产出凭证。每一步都应对应不同的权限模型。
 
+控制回路按观察 → 检测 → 预测 → 准备 → 申请审批的顺序运行——并停在此处。智能体绝不自行越过密码学授权边界。下图描绘了一个完整周期：一笔数百万美元级的日内流动性缺口在 `camt.052` 遥测中浮现，智能体预测当日终了头寸，准备一笔形态完整的 `pain.001`（回购或集团内归集），并交由人工司库在硬件绑定密钥上完成多因素密码学签名。智能体随后提交已签名报文；终局性以 `pain.002` 确认到达，并落入下一份 `camt.053` 记录。
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Banks as 现金管理银行
+    participant Agent as 司库智能体<br/>（受限、按策略门禁）
+    participant Forecast as 预测引擎<br/>（ML + 情景库）
+    participant Treasurer as 人工司库<br/>（MFA / 硬件密钥）
+    participant Rails as 支付轨道<br/>（RTGS / RTP / DLT）
+
+    Banks->>Agent: camt.052 日内余额流
+    Agent->>Agent: 观察——刷新实时头寸
+    Agent->>Agent: 检测——主体 X 突破流动性下限
+    Agent->>Forecast: 申请日终预测
+    Forecast-->>Agent: 缺口确认（USD 12.4m）
+    Agent->>Agent: 准备——在授权指令限额内起草 pain.001<br/>（回购 / 归集）
+    Agent->>Treasurer: 推送安全审批请求<br/>（已准备报文 + 凭证）
+    Note over Treasurer: 在硬件绑定密钥上<br/>完成密码学 MFA
+    Treasurer-->>Agent: 已签名授权
+    Agent->>Rails: 提交已签名 pain.001
+    Rails-->>Agent: pain.002 确认 + 终局性
+    Banks->>Agent: camt.053 日终对账单
+    Agent->>Agent: 凭证——将动作绑定至 camt.053 记录
+```
+
+边界本身就是要点——每一项调拨真实资金的动作，都坐落在智能体无法独自满足的密码学门禁之后。
+
 ## 可编程流动性
 
 可编程流动性是按条件调拨资金的能力：当阈值被突破、当抵押品合格、当对手方通过筛查、当清算具备终局性、或当日内流动性缓冲过低时。代币化存款与批发清算平台让这些模式更具可行性。
 
+可编程并不等于偏离标准。执行路径仍是 `pain.001`——ISO 20022 客户付款发起报文。智能体准备好的动作是一笔形态完整的 `pain.001` 报文，通过企业 ERP 同样使用的通道路由至银行，按同一套模式校验，由同一套反欺诈与制裁引擎评分，并通过同一份 `pain.002` 状态报文获得确认。条件性层（阈值、抵押品合格性、终局性可用性、缓冲下限）位于报文之上——它门禁的是*是否*发送一笔 `pain.001`，而不是其*报文形态*。那些自创非标准报文来表达条件的司库平台，将脱离银行可消费路径，回退至双边集成模式。
+
 ## 司库控制室
 
 运营模式应当像一间控制室：头寸、预测、支付状态、限额使用、异常、审批与凭证集中于同一界面。指数应对那些需要团队把邮件、电子表格、银行门户与彼此割裂的看板拼凑起来的司库技术栈予以扣分。
+
+支撑该界面的数据平面是 ISO 20022 现金管理。日内头寸为 `camt.052`——银行对客户账户报告——由每一家现金管理银行按其发布频率（一线 GTB 服务商以分钟计，长尾机构以批次结束计）流式注入智能体的观察层。日终对账为 `camt.053`——银行对客户对账单——是次日清晨用以评分智能体预测的可审计记录。那些读取 PDF 对账单或屏幕抓取银行门户的司库平台无法达到本指数的「4 级」；日内遥测必须以结构化 `camt.052` 形式到达，预测回路才能及时闭合以付诸行动。
 
 ## 不同银行类型的含义
 

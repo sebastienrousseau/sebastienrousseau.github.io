@@ -1,13 +1,13 @@
 {
-  "reading_time": 1,
-  "language": "id-ID",
-  "description": "EU AI Act menetapkan kerangka komprehensif pertama untuk regulasi AI yang etis dan berlapis risiko di seluruh dunia. Apa yang berubah bagi bank, vendor, dan sistem berisiko tinggi.",
-  "word_count": 250,
-  "subtitle": "Menavigasi Masa Depan AI dengan Kerangka Hukum Revolusioner dari EU",
-  "banner_alt": "Seseorang duduk di bangku hitam membaca koran",
-  "date": "Feb 13, 2024",
-  "locale": "id_ID",
-  "keywords": "EU AI Act, regulasi Artificial Intelligence, kerangka AI etis, manajemen risiko AI, inovasi AI, transparansi AI, hak konsumen AI, tata kelola AI, standar AI, etika AI",
   "title": "[ID DRAFT] EU's AI Act: Pioneering Ethical AI Regulation Worldwide",
-  "banner": "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp"
+  "banner": "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp",
+  "date": "Feb 13, 2024",
+  "keywords": "EU AI Act, regulasi Artificial Intelligence, kerangka AI etis, manajemen risiko AI, inovasi AI, transparansi AI, hak konsumen AI, tata kelola AI, standar AI, etika AI",
+  "banner_alt": "Seseorang duduk di bangku hitam membaca koran",
+  "locale": "id_ID",
+  "word_count": 250,
+  "reading_time": 1,
+  "description": "EU AI Act menetapkan kerangka komprehensif pertama untuk regulasi AI yang etis dan berlapis risiko di seluruh dunia. Apa yang berubah bagi bank, vendor, dan sistem berisiko tinggi.",
+  "subtitle": "Menavigasi Masa Depan AI dengan Kerangka Hukum Revolusioner dari EU",
+  "language": "id-ID"
 }

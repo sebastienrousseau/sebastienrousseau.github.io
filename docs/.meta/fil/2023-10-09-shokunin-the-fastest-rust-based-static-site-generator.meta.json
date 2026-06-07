@@ -1,14 +1,14 @@
 {
-  "keywords": "Static Site Generator, مولّد المواقع الساكنة, SSG, Rust, الأداء, SEO, الوصول الميسّر, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS",
-  "title": "Static Site Generator: أسرع مولّد للمواقع الساكنة قائمٌ على Rust",
-  "tags": "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, post-quantum cryptography, AI, tokenised deposits, Rust, cloud native banking, cross-border payments",
-  "reading_time": 3,
-  "subtitle": "مولّدُ SSG فائق السرعة، يَسِير الوصول ومُحسَّن لمحرّكات البحث، مكتوبٌ بلغة Rust",
-  "language": "fil-PH",
   "date": "October 9, 2023",
+  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
   "locale": "fil_PH",
+  "title": "Static Site Generator: أسرع مولّد للمواقع الساكنة قائمٌ على Rust",
+  "language": "fil-PH",
+  "tags": "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, post-quantum cryptography, AI, tokenised deposits, Rust, cloud native banking, cross-border payments, stablecoins",
+  "reading_time": 3,
   "description": "أنشئ مواقع ساكنة عالية الأثر، قابلة للتوسّع بلا حدود وتحت سيطرتك الكاملة، بفضل Static Site Generator — مولّد SSG فائق السرعة مكتوب بلغة Rust.",
-  "word_count": 611,
   "banner_alt": "حاسوب محمول مُطفأ فوق طاولة بيضاء، وإلى اليسار كأس ماء، وإلى اليمين قلم ودفتر ملاحظات ونبتة",
-  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
+  "keywords": "Static Site Generator, مولّد المواقع الساكنة, SSG, Rust, الأداء, SEO, الوصول الميسّر, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS",
+  "word_count": 611,
+  "subtitle": "مولّدُ SSG فائق السرعة، يَسِير الوصول ومُحسَّن لمحرّكات البحث، مكتوبٌ بلغة Rust"
 }

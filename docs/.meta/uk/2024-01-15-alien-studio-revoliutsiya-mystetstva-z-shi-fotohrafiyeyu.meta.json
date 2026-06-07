@@ -1,13 +1,13 @@
 {
-  "keywords": "особиста технологічна подорож, відкриття Rust, дослідження AI, Quantum Computing, поєднання мистецтва та фотографії, Alien Studio, створення цифрового мистецтва, технології в мистецтві, інноваційна фотографія, художнє перевідкриття",
-  "subtitle": "Початок Технологічної Одіссеї",
-  "reading_time": 2,
-  "date": "Jan 15, 2024",
-  "description": "Приєднуйтеся до мене у моїй особистій подорожі від Rust, AI та Quantum Computing до переосмислення мистецтва та фотографії через Alien Studio.",
-  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
   "word_count": 414,
-  "banner_alt": "Муза заходу сонця, безтурботний погляд; краса в спокої",
+  "keywords": "особиста технологічна подорож, відкриття Rust, дослідження AI, Quantum Computing, поєднання мистецтва та фотографії, Alien Studio, створення цифрового мистецтва, технології в мистецтві, інноваційна фотографія, художнє перевідкриття",
   "title": "[UK DRAFT] Alien Studio: My Tech-to Art Journey in Photography",
+  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
+  "subtitle": "Початок Технологічної Одіссеї",
+  "banner_alt": "Муза заходу сонця, безтурботний погляд; краса в спокої",
+  "reading_time": 2,
+  "locale": "uk_UA",
+  "description": "Приєднуйтеся до мене у моїй особистій подорожі від Rust, AI та Quantum Computing до переосмислення мистецтва та фотографії через Alien Studio.",
   "language": "uk-UA",
-  "locale": "uk_UA"
+  "date": "Jan 15, 2024"
 }

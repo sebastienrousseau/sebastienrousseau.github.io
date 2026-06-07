@@ -1,13 +1,13 @@
 {
-  "language": "id-ID",
   "word_count": 299,
-  "keywords": "kriptografi tahan kuantum, kriptografi pasca-kuantum, pustaka hash, HSH, hashing kata sandi, derivasi kunci, Argon2i, Bcrypt, Scrypt, komputasi kuantum",
-  "date": "Oct 16, 2023",
-  "reading_time": 1,
+  "language": "id-ID",
   "subtitle": "HSH: pustaka hash tahan-kuantum untuk era pasca-kuantum dalam autentikasi.",
-  "banner_alt": "Ilustrasi kreatif bertema komputasi kuantum",
-  "locale": "id_ID",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
   "description": "HSH menggunakan primitif kriptografi tahan-kuantum untuk melindungi data Anda, memastikan keamanannya bahkan menghadapi kemajuan komputasi kuantum di masa depan.",
-  "title": "[ID DRAFT] Protecting Data in the Quantum Age: The Hash Library (HSH)"
+  "title": "[ID DRAFT] Protecting Data in the Quantum Age: The Hash Library (HSH)",
+  "reading_time": 1,
+  "locale": "id_ID",
+  "date": "Oct 16, 2023",
+  "keywords": "kriptografi tahan kuantum, kriptografi pasca-kuantum, pustaka hash, HSH, hashing kata sandi, derivasi kunci, Argon2i, Bcrypt, Scrypt, komputasi kuantum",
+  "banner_alt": "Ilustrasi kreatif bertema komputasi kuantum",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp"
 }

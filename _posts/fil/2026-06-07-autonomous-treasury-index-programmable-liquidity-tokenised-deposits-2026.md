@@ -138,7 +138,7 @@ Ang praktikal na tanong para sa bangko ay hindi kung mahalaga ang bawat domain. 
 |---|---|---|
 | **52% adoption ng agentic AI sa financial services** | Kayang absorbin na ngayon ng treasury ang agentic workflows sa pamamagitan ng governed platforms | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 Global AI in Financial Services Report") |
 | **Conditional payments ng Project Agorá** | Maaaring magbukas ang tokenization ng conditional at always-on payment capabilities | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Trabaho ng Bank of England sa stablecoin at DSS** | Sinusubukan ang wholesale settlement assets sa controlled UK market infrastructure settings | [Bank of England ⧉](https://www.bankofengland.co.uk/speech/2025/january/sasha-mills-speech-at-the-tokenisation-summit "Paghuhubog sa digital financial future ng UK") |
+| **Bank of England — Digital Securities Sandbox** | Ang DLT-issued bonds at equities ay nagse-settle sa Delivery-versus-Payment (DvP) basis — magkasabay na nagse-settle ang asset leg at ang cash leg (wholesale CBDC o tokenized commercial-bank deposits) sa parehong atomic transaction, kaya naaalis ang principal counterparty risk | [Bank of England ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox") |
 | **Deadline ng SWIFT para sa structured address** | Dapat tama ang pagkuha ng treasury data sa pinagmulan | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
 | **Mahirap pa rin sukatin ng malalaking FI ang halaga ng AI** | Kailangan ng treasury automation ng matatag na panukat sa ekonomiya | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 Global AI in Financial Services Report") |
 
@@ -146,13 +146,45 @@ Ang praktikal na tanong para sa bangko ay hindi kung mahalaga ang bawat domain. 
 
 Hindi dapat dinisenyo ang treasury agent bilang general-purpose assistant. Kailangan nito ng mandato: obserbahan ang mga account, tukuyin ang mga eksepsyon, mag-forecast ng funding gaps, maghanda ng mga aksyon, humingi ng pag-apruba, magsagawa sa loob ng mga limitasyon, at gumawa ng ebidensya. Dapat magkaroon ng iba't ibang modelo ng awtoridad ang bawat hakbang.
 
+Ang control loop ay tumatakbo bilang Observe → Detect → Forecast → Prepare → Request Approval — at huminto roon. Hindi tumatawid ang agent sa cryptographic authorisation boundary nang mag-isa. Sinusundan ng diagram sa ibaba ang isang buong cycle: lumilitaw sa `camt.052` telemetry ang isang multi-million-dollar intraday liquidity shortfall, fino-forecast ng agent ang end-of-day position, naghahanda ito ng repo o intercompany sweep bilang ganap na bumuong `pain.001`, at ibinibigay sa human treasurer para sa multi-factor cryptographic sign-off sa isang hardware-bound key. Pagkatapos, ipinapadala ng agent ang signed payload; ang finality ay dumarating bilang `pain.002` ACK at ang susunod na `camt.053` of record.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Banks as Cash-Management Banks
+    participant Agent as Treasury Agent<br/>(bounded, policy-gated)
+    participant Forecast as Forecast Engine<br/>(ML + scenario lib)
+    participant Treasurer as Human Treasurer<br/>(MFA / hardware key)
+    participant Rails as Payment Rails<br/>(RTGS / RTP / DLT)
+
+    Banks->>Agent: camt.052 intraday balance stream
+    Agent->>Agent: Observe — i-refresh ang real-time position
+    Agent->>Agent: Detect — nilabag ng entity X ang liquidity floor
+    Agent->>Forecast: Humiling ng EOD projection
+    Forecast-->>Agent: Nakumpirma ang shortfall (USD 12.4m)
+    Agent->>Agent: Prepare — mag-draft ng pain.001<br/>(repo / sweep) sa loob ng mandate limits
+    Agent->>Treasurer: Ipadala ang secure approval request<br/>(handa nang payload + ebidensya)
+    Note over Treasurer: Cryptographic MFA<br/>sa hardware-bound key
+    Treasurer-->>Agent: Signed authorisation
+    Agent->>Rails: Ipasa ang signed pain.001
+    Rails-->>Agent: pain.002 ACK + finality
+    Banks->>Agent: camt.053 end-of-day statement
+    Agent->>Agent: Evidence — i-bind ang aksyon sa camt.053 record
+```
+
+Ang boundary mismo ang punto — ang bawat aksyon na naglilipat ng tunay na pera ay nasa likod ng cryptographic gate na hindi kayang lampasan ng agent nang mag-isa.
+
 ## Programmable Liquidity
 
 Ang programmable liquidity ang kakayahang maglipat ng halaga sa ilalim ng mga kondisyon: kung nalabag ang threshold, kung eligible ang collateral, kung nakapasa sa screening ang counterparty, kung available ang settlement finality, o kung masyadong mababa ang intraday liquidity buffer. Mas praktikal na ginagawa ng tokenized deposits at wholesale settlement platforms ang mga pattern na ito.
 
+Hindi ibig sabihin ng "programmable" ay off-standard. Ang execution path ay `pain.001` — ISO 20022 Customer Credit Transfer Initiation. Ang inihandang aksyon ng agent ay isang ganap na bumuong `pain.001` payload na iruruta sa bangko gamit ang parehong channel na ginagamit ng corporate ERP, vinalidate laban sa parehong schema, sino-score ng parehong fraud at sanctions engines, at kinikilala sa parehong `pain.002` status reports. Ang conditionality layer (threshold, collateral eligibility, finality availability, buffer floor) ay nakaupo sa ibabaw ng mensahe — kino-control nito *kung* magpapadala ng `pain.001`, hindi *kung anong hugis* nito. Ang treasury platforms na nag-iimbento ng bespoke payloads para magpahayag ng conditions ay mahuhulog palabas sa bank-consumable path at babalik sa bilateral integration.
+
 ## Ang Treasury Control Room
 
 Dapat magmukhang control room ang operating model: posisyon, cash forecast, estado ng pagbabayad, paggamit ng limitasyon, eksepsyon, pag-apruba, at ebidensya sa iisang interface. Dapat parusahan ng indeks ang treasury stacks na nangangailangang pagdugtungin ng mga team ang emails, spreadsheets, bank portals, at hindi magkakaugnay na dashboards.
+
+Ang data plane sa likod ng interface na iyon ay ISO 20022 cash management. Ang intraday position ay `camt.052` — Bank-to-Customer Account Report — na ini-stream mula sa bawat cash-management bank papasok sa observation layer ng agent sa frequency na pinapalabas ng bangko (minuto para sa tier-1 GTB providers, end-of-cycle para sa long tail). Ang end-of-day reconciliation ay `camt.053` — Bank-to-Customer Statement — ang auditable record kung saan ginra-grade ang forecast ng agent kinaumagahan. Ang treasury platforms na nagbabasa ng PDF statements o nag-screen-scrape sa bank portals ay hindi makakaabot sa 「Level 4」 ng indeks; kailangang dumating ang intraday telemetry bilang structured `camt.052` para magsara sa tamang oras ang forecast loop upang makakilos.
 
 ## Ano Ang Kahulugan Nito Ayon Sa Uri Ng Bangko
 
