@@ -1220,11 +1220,23 @@ _LAST_MODIFIED_META_RE = re.compile(
 )
 
 
+def _parse_lastmod_date(last: str) -> str:
+    """Helper to parse raw lastmod strings into YYYY-MM-DD format."""
+    from datetime import datetime
+
+    if re.match(r"^\d{4}-\d{2}-\d{2}$", last):
+        return last
+    for fmt in ("%b %d, %Y", "%B %d, %Y", "%a, %d %b %Y %H:%M:%S %z"):
+        try:
+            return datetime.strptime(last.strip(), fmt).strftime("%Y-%m-%d")
+        except ValueError:
+            continue
+    return last
+
+
 def build_comprehensive_lastmod_index() -> dict[str, str]:
     """Walk _posts/ to parse last_reviewed for all pages (falling back to
     last_build_date or date, normalized to YYYY-MM-DD format)."""
-    from datetime import datetime
-
     from _frontmatter import read_fm
 
     out: dict[str, str] = {}
@@ -1235,20 +1247,7 @@ def build_comprehensive_lastmod_index() -> dict[str, str]:
         fm = read_fm(md)
         last = fm.get("last_reviewed") or fm.get("last_build_date") or fm.get("date") or ""
         if last:
-            if re.match(r"^\d{4}-\d{2}-\d{2}$", last):
-                out[md.stem] = last
-            else:
-                parsed = None
-                for fmt in ("%b %d, %Y", "%B %d, %Y", "%a, %d %b %Y %H:%M:%S %z"):
-                    try:
-                        parsed = datetime.strptime(last.strip(), fmt).strftime("%Y-%m-%d")
-                        break
-                    except ValueError:
-                        continue
-                if parsed:
-                    out[md.stem] = parsed
-                else:
-                    out[md.stem] = last
+            out[md.stem] = _parse_lastmod_date(last)
     return out
 
 
