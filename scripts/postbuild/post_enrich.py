@@ -493,8 +493,14 @@ def main() -> None:
     last_reviewed, (2) topic-cluster related lookup, (3) top-of-body
     lead block, (4) bottom enrichment block.
     """
+    import argparse
+    parser = argparse.ArgumentParser(description="Enrich dated blog posts.")
+    parser.add_argument("--dir", default="_posts", help="Directory containing posts")
+    args = parser.parse_args()
+
+    posts_dir = Path(args.dir)
     posts: list[dict[str, object]] = []
-    for md in sorted(POSTS.glob("*.md")):
+    for md in sorted(posts_dir.glob("*.md")):
         post = _load_post(md)
         if post is not None:
             posts.append(post)
@@ -518,3 +524,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

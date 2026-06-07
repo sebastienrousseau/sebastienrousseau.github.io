@@ -1,13 +1,13 @@
 {
-  "language": "nl-NL",
   "keywords": "Alien Studio, AI-fotografie, generatieve AI, kunst, beeldgeneratie",
-  "title": "Alien Studio: de kunst revolutioneren met AI-fotografie",
-  "reading_time": 4,
-  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
+  "language": "nl-NL",
   "description": "Alien Studio laat zien hoe generatieve AI fotografie hervormt en nieuwe vormen van visuele expressie ontsluit.",
-  "date": "Jan 15, 2024",
+  "subtitle": "Hoe generatieve AI de praktijk van fotografie en visuele kunst hervormt",
   "banner_alt": "Visualisatie van AI-gegenereerde kunstfotografie",
-  "locale": "nl_NL",
   "word_count": 889,
-  "subtitle": "Hoe generatieve AI de praktijk van fotografie en visuele kunst hervormt"
+  "reading_time": 4,
+  "date": "Jan 15, 2024",
+  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
+  "locale": "nl_NL",
+  "title": "Alien Studio: de kunst revolutioneren met AI-fotografie"
 }

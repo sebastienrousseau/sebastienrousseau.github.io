@@ -1,15 +1,15 @@
 {
-  "locale": "yo_NG",
-  "keywords": "Ìpínkiri Kọ́kọ́rọ́ Kuántọ̀m (QKD), Ààbò Kuántọ̀m, Banking, Ẹ̀ka Ìṣúná, Ìṣúná Dígítà, Ààbò Ìkànnì, Ìṣiro Kuántọ̀m, HSBC, Quantum Protection Trial, Àwọn Ìdúnàádúrà Ìṣúná",
-  "language": "yo-NG",
-  "title": "Quantum Key Distribution Revolutionising Security in Banking",
-  "word_count": 1095,
-  "date": "Dec 11, 2023",
-  "subtitle": "Ìpínkiri Kọ́kọ́rọ́ Kuántọ̀m (QKD) fún ààbò ìpele ìṣúná nínú ẹ̀ka ìfowópamọ́.",
-  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
-  "reading_time": 5,
-  "description": "Bí àwọn kọ̀mpútà kuántọ̀m ṣe ń halẹ̀ mọ́ àwọn ọ̀nà ìfipamọ́ àtọwọdọwọ, Ìpínkiri Kọ́kọ́rọ́ Kuántọ̀m (QKD) jẹ́ ìyípadà àgbàyanu, tí ń pèsè ààbò àìlẹ́gbẹ́.",
   "banner_alt": "HSBC Láti Ọ̀dọ̀ Àwọn Dọ́ọ̀kù",
+  "language": "yo-NG",
+  "reading_time": 5,
+  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
+  "title": "Quantum Key Distribution Revolutionising Security in Banking",
+  "tags": "quantum, key, distribution, cryptography, cybersecurity, finance, banking, digital, innovation, blockchain, quantum computing, hsbc, trading, data, protection, future, ISO 20022, DORA, ìsirò ìpamọ́ lẹ́yìn quantum, AI",
+  "description": "Bí àwọn kọ̀mpútà kuántọ̀m ṣe ń halẹ̀ mọ́ àwọn ọ̀nà ìfipamọ́ àtọwọdọwọ, Ìpínkiri Kọ́kọ́rọ́ Kuántọ̀m (QKD) jẹ́ ìyípadà àgbàyanu, tí ń pèsè ààbò àìlẹ́gbẹ́.",
   "excerpt": "As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security.",
-  "tags": "quantum, key, distribution, cryptography, cybersecurity, finance, banking, digital, innovation, blockchain, quantum computing, hsbc, trading, data, protection, future, ISO 20022, DORA, ìsirò ìpamọ́ lẹ́yìn quantum, AI"
+  "keywords": "Ìpínkiri Kọ́kọ́rọ́ Kuántọ̀m (QKD), Ààbò Kuántọ̀m, Banking, Ẹ̀ka Ìṣúná, Ìṣúná Dígítà, Ààbò Ìkànnì, Ìṣiro Kuántọ̀m, HSBC, Quantum Protection Trial, Àwọn Ìdúnàádúrà Ìṣúná",
+  "subtitle": "Ìpínkiri Kọ́kọ́rọ́ Kuántọ̀m (QKD) fún ààbò ìpele ìṣúná nínú ẹ̀ka ìfowópamọ́.",
+  "date": "Dec 11, 2023",
+  "word_count": 1095,
+  "locale": "yo_NG"
 }

@@ -1,14 +1,14 @@
 {
+  "subtitle": "ثوابت رياضية وتشفيرية مُتحقَّق منها لأمن Rust ذي السلامة الذاكرية",
+  "title": "ثوابت رياضية وتشفيرية لأمن Rust",
+  "language": "he-IL",
+  "reading_time": 2,
+  "banner_alt": "حسابات رياضية",
+  "tags": "math, cybersecurity, cryptography, Rust, programming, encryption, communication, constants, constants in Rust, Common library, ISO 20022, קריפטוגרפיה פוסט-קוונטית, מחשוב קוונטי, AI, open source",
+  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
   "keywords": "الثوابت الرياضية، الثوابت التشفيرية، أمن Rust، الاتصالات الآمنة، التشفير، RSA، تشفير المنحنى الإهليلجي، مكتبة Common (CMN)، تطبيقات Rust، الحسابات الرياضية",
   "word_count": 529,
-  "language": "he-IL",
-  "date": "Nov 05, 2023",
-  "banner_alt": "حسابات رياضية",
-  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
   "description": "احموا تكامل الشفرة بثوابت رياضية وتشفيرية مُدقَّقة بعناية، تُعزّز سلامة الذاكرة والتزامن من أجل أمن شفرة أعلى.",
-  "reading_time": 2,
-  "tags": "math, cybersecurity, cryptography, Rust, programming, encryption, communication, constants, constants in Rust, Common library, ISO 20022, קריפטוגרפיה פוסט-קוונטית, מחשוב קוונטי, AI, open source",
   "locale": "he_IL",
-  "subtitle": "ثوابت رياضية وتشفيرية مُتحقَّق منها لأمن Rust ذي السلامة الذاكرية",
-  "title": "ثوابت رياضية وتشفيرية لأمن Rust"
+  "date": "Nov 05, 2023"
 }

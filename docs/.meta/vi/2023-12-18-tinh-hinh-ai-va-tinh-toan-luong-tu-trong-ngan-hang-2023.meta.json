@@ -1,13 +1,13 @@
 {
-  "banner_alt": "Sơ đồ trừu tượng kết hợp AI và tính toán lượng tử",
-  "description": "Đánh giá tình hình AI và tính toán lượng tử trong ngân hàng năm 2023 — các triển khai, đầu tư, thách thức và triển vọng cho 2024.",
-  "locale": "vi_VN",
-  "language": "vi-VN",
-  "reading_time": 3,
-  "subtitle": "Hai làn sóng công nghệ định hình lại dịch vụ tài chính",
-  "keywords": "AI, tính toán lượng tử, ngân hàng, 2023, đánh giá, LLM, GPT, NIST, PQC, dịch vụ tài chính",
-  "word_count": 696,
   "date": "December 18, 2023",
   "title": "Tình hình AI và tính toán lượng tử trong ngân hàng: một bài đánh giá 2023",
-  "banner": "https://cloudcdn.pro/stocks/images/ai-quantum-banner.webp"
+  "keywords": "AI, tính toán lượng tử, ngân hàng, 2023, đánh giá, LLM, GPT, NIST, PQC, dịch vụ tài chính",
+  "word_count": 696,
+  "locale": "vi_VN",
+  "banner": "https://cloudcdn.pro/stocks/images/ai-quantum-banner.webp",
+  "language": "vi-VN",
+  "reading_time": 3,
+  "banner_alt": "Sơ đồ trừu tượng kết hợp AI và tính toán lượng tử",
+  "subtitle": "Hai làn sóng công nghệ định hình lại dịch vụ tài chính",
+  "description": "Đánh giá tình hình AI và tính toán lượng tử trong ngân hàng năm 2023 — các triển khai, đầu tư, thách thức và triển vọng cho 2024."
 }

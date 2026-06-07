@@ -1,14 +1,14 @@
 {
+  "locale": "ar_SA",
   "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
-  "keywords": "KyberLib، Rust CRYSTALS-Kyber، التشفير ما بعد الكمي، التشفير القائم على الشبكيات، تبادل المفاتيح المقاوم للكم، NIST FIPS 203، Sebastien Rousseau، KEM، مصادقة المدفوعات، مكتبة PQC",
-  "language": "ar",
-  "reading_time": 3,
-  "word_count": 756,
   "subtitle": "KyberLib، تطبيق Rust متين لـ CRYSTALS-Kyber للعصر الكمي.",
   "description": "تطبيق تشفيري متين وآمن كمياً لخوارزمية CRYSTALS-Kyber، لحماية بياناتكم من التهديدات الكمية وهجمات تحليل الشفرات.",
   "date": "Nov 28, 2023",
-  "title": "KyberLib: CRYSTALS-Kyber بلغة Rust لما بعد الكم",
+  "language": "ar",
+  "keywords": "KyberLib، Rust CRYSTALS-Kyber، التشفير ما بعد الكمي، التشفير القائم على الشبكيات، تبادل المفاتيح المقاوم للكم، NIST FIPS 203، Sebastien Rousseau، KEM، مصادقة المدفوعات، مكتبة PQC",
   "tags": "KyberLib, Rust, CRYSTALS-Kyber, التشفير ما بعد الكمي, lattice-based cryptography, key encapsulation mechanism, NIST, libsignal, cryptography, ISO 20022, الحوسبة الكمومية, AI",
-  "locale": "ar_SA",
-  "banner_alt": "تعزيز الاتصالات الآمنة في العصر الكمي مع KyberLib"
+  "banner_alt": "تعزيز الاتصالات الآمنة في العصر الكمي مع KyberLib",
+  "word_count": 756,
+  "title": "KyberLib: CRYSTALS-Kyber بلغة Rust لما بعد الكم",
+  "reading_time": 3
 }

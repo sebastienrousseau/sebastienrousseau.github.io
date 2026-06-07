@@ -1,13 +1,13 @@
 {
-  "date": "March 8, 2024",
-  "banner_alt": "Sơ đồ trừu tượng của một hệ thống ghi nhật ký",
-  "subtitle": "Ghi nhật ký có cấu trúc, hiệu năng cao cho các hệ thống tài chính",
   "banner": "https://cloudcdn.pro/stocks/images/rustlogs-banner.webp",
+  "language": "vi-VN",
+  "reading_time": 2,
+  "date": "March 8, 2024",
   "keywords": "RustLogs, Rust, ghi nhật ký, có cấu trúc, JSON, hiệu năng, doanh nghiệp, quan sát",
   "description": "RustLogs — thư viện ghi nhật ký Rust cho ứng dụng cấp doanh nghiệp với ghi nhật ký có cấu trúc, đa kênh và an toàn về thread.",
+  "title": "RustLogs: thư viện ghi nhật ký nâng cao cho ứng dụng Rust",
+  "banner_alt": "Sơ đồ trừu tượng của một hệ thống ghi nhật ký",
   "locale": "vi_VN",
   "word_count": 485,
-  "title": "RustLogs: thư viện ghi nhật ký nâng cao cho ứng dụng Rust",
-  "language": "vi-VN",
-  "reading_time": 2
+  "subtitle": "Ghi nhật ký có cấu trúc, hiệu năng cao cho các hệ thống tài chính"
 }

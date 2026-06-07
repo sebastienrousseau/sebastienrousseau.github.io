@@ -1,13 +1,13 @@
 {
-  "reading_time": 1,
   "title": "Агентная инженерия: план для банков 2026",
-  "banner": "https://cloudcdn.pro/stocks/images/agentic-engineering-banks.webp",
-  "locale": "ru_RU",
-  "language": "ru-RU",
   "keywords": "агентная инженерия, LLM-агенты, agentic commerce, банковские агенты, MCP, autonomous finance, identity, унит-экономика агентов",
-  "word_count": 384,
-  "date": "May 17, 2026",
   "subtitle": "От LLM-чатов к автономным финансовым агентам",
   "banner_alt": "Агентная инженерия: план для банков на 2026 год",
-  "description": "Агентная инженерия — переход от LLM-чатов к автономным агентам с делегированным финансовым полномочием. План для банков, готовящихся к эпохе agentic commerce."
+  "locale": "ru_RU",
+  "description": "Агентная инженерия — переход от LLM-чатов к автономным агентам с делегированным финансовым полномочием. План для банков, готовящихся к эпохе agentic commerce.",
+  "date": "May 17, 2026",
+  "language": "ru-RU",
+  "banner": "https://cloudcdn.pro/stocks/images/agentic-engineering-banks.webp",
+  "reading_time": 1,
+  "word_count": 384
 }

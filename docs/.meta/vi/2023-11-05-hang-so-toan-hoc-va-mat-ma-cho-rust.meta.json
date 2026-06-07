@@ -1,13 +1,13 @@
 {
   "banner": "https://cloudcdn.pro/stocks/images/cmn-banner.webp",
-  "reading_time": 1,
-  "word_count": 343,
+  "title": "Hằng số toán học và mật mã cho bảo mật Rust",
   "locale": "vi_VN",
   "language": "vi-VN",
-  "subtitle": "Một thư viện Rust cho các hằng số có độ chính xác cao",
-  "banner_alt": "Hình ảnh trừu tượng của các hằng số toán học",
   "description": "cmn — thư viện Rust cung cấp các hằng số toán học và mật mã với độ chính xác cao cho các ứng dụng tài chính và bảo mật.",
-  "keywords": "Rust, hằng số toán học, mật mã, cmn, độ chính xác cao, tài chính, bảo mật",
+  "subtitle": "Một thư viện Rust cho các hằng số có độ chính xác cao",
+  "word_count": 343,
+  "banner_alt": "Hình ảnh trừu tượng của các hằng số toán học",
   "date": "November 5, 2023",
-  "title": "Hằng số toán học và mật mã cho bảo mật Rust"
+  "reading_time": 1,
+  "keywords": "Rust, hằng số toán học, mật mã, cmn, độ chính xác cao, tài chính, bảo mật"
 }

@@ -1,13 +1,13 @@
 {
-  "keywords": "blockchain, technologia rozproszonej księgi, decentralizacja, kryptografia, smart kontrakty, fintech",
-  "banner_alt": "Wizualizacja sieci blockchain z połączonymi węzłami",
-  "title": "Blockchain: technologia, która liczy się w 2018",
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
-  "reading_time": 1,
-  "word_count": 179,
-  "language": "pl-PL",
-  "locale": "pl_PL",
   "description": "Blockchain to zdecentralizowana, niezmienna księga, która zmienia sposób, w jaki branże przechowują i weryfikują dane.",
+  "date": "Jan 02, 2018",
+  "reading_time": 1,
   "subtitle": "Zdecentralizowana księga, która przekształca finanse i wiele więcej",
-  "date": "Jan 02, 2018"
+  "locale": "pl_PL",
+  "title": "Blockchain: technologia, która liczy się w 2018",
+  "word_count": 179,
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "banner_alt": "Wizualizacja sieci blockchain z połączonymi węzłami",
+  "keywords": "blockchain, technologia rozproszonej księgi, decentralizacja, kryptografia, smart kontrakty, fintech",
+  "language": "pl-PL"
 }

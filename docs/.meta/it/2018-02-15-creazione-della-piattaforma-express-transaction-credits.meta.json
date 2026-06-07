@@ -1,13 +1,13 @@
 {
-  "date": "February 15, 2018",
-  "description": "Note di progettazione su una piattaforma di crediti di transazione: scelte architetturali, flussi end-to-end, integrazione con i sistemi bancari esistenti.",
-  "locale": "it_IT",
-  "language": "it-IT",
-  "title": "La creazione della piattaforma Express Transaction Credits",
+  "reading_time": 4,
+  "keywords": "Express Transaction Credits, piattaforma, fintech, pagamenti, integrazione, architettura",
   "banner_alt": "Pilastri bianchi giganti",
   "subtitle": "Architettura, design e visione per un'infrastruttura di crediti di transazione",
+  "date": "February 15, 2018",
+  "title": "La creazione della piattaforma Express Transaction Credits",
   "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
-  "keywords": "Express Transaction Credits, piattaforma, fintech, pagamenti, integrazione, architettura",
-  "word_count": 805,
-  "reading_time": 4
+  "locale": "it_IT",
+  "language": "it-IT",
+  "description": "Note di progettazione su una piattaforma di crediti di transazione: scelte architetturali, flussi end-to-end, integrazione con i sistemi bancari esistenti.",
+  "word_count": 805
 }

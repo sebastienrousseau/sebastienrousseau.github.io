@@ -1,14 +1,14 @@
 {
   "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
-  "language": "ro-RO",
-  "subtitle": "Instrumentul Open-Source de Ultimă Generație pentru Clonarea Vocii",
-  "locale": "ro_RO",
+  "banner_alt": "Banner cu gradient vibrant suprapus pe profiluri repetate",
   "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.",
-  "word_count": 1282,
-  "title": "OpenVoice: Leading Innovation in Voice Cloning Technology",
-  "tags": "OpenVoice, Voice Cloning, Synthetic Speech, open source, Cross-Lingual, Instant Cloning, Voice Control, Accessibility, Entertainment, Customer Service, ISO 20022, criptografie post-cuantică, AI, DORA, ingineria platformei, cloud suveran, banking cloud native",
+  "locale": "ro_RO",
   "date": "Apr 01, 2024",
   "keywords": "OpenVoice, Tehnologie de Clonare Vocală, Vorbire Sintetică AI, Clonare Vocală Open-Source, Sinteză Vocală Cross-Lingvistică, Clonare Vocală Instantanee, Control Stil Vocal, Tehnologie Vocală pentru Accesibilitate, Voci pentru Industria Divertismentului, AI Vocal pentru Servicii Clienți",
-  "banner_alt": "Banner cu gradient vibrant suprapus pe profiluri repetate",
-  "reading_time": 6
+  "title": "OpenVoice: Leading Innovation in Voice Cloning Technology",
+  "word_count": 1282,
+  "reading_time": 6,
+  "subtitle": "Instrumentul Open-Source de Ultimă Generație pentru Clonarea Vocii",
+  "language": "ro-RO",
+  "tags": "OpenVoice, Voice Cloning, Synthetic Speech, open source, Cross-Lingual, Instant Cloning, Voice Control, Accessibility, Entertainment, Customer Service, ISO 20022, criptografie post-cuantică, AI, DORA, ingineria platformei, cloud suveran, banking cloud native"
 }

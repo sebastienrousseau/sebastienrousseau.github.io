@@ -1,13 +1,13 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/dtt-banner.webp",
-  "word_count": 245,
-  "language": "ru-RU",
-  "description": "dtt — это библиотека Rust для надёжной работы с датой и временем, ориентированная на сценарии финансовых вычислений и регуляторной отчётности.",
-  "locale": "ru_RU",
   "date": "December 4, 2023",
-  "banner_alt": "dtt — баннер библиотеки даты и времени",
-  "keywords": "dtt, дата, время, Rust, временные зоны, ISO 8601, финансовые вычисления, отчётность, открытый код",
   "subtitle": "Безопасная работа с временными зонами и финансовыми датами",
   "title": "Осваиваем дату и время в Rust с библиотекой dtt",
-  "reading_time": 1
+  "locale": "ru_RU",
+  "language": "ru-RU",
+  "reading_time": 1,
+  "keywords": "dtt, дата, время, Rust, временные зоны, ISO 8601, финансовые вычисления, отчётность, открытый код",
+  "banner": "https://cloudcdn.pro/stocks/images/dtt-banner.webp",
+  "description": "dtt — это библиотека Rust для надёжной работы с датой и временем, ориентированная на сценарии финансовых вычислений и регуляторной отчётности.",
+  "banner_alt": "dtt — баннер библиотеки даты и времени",
+  "word_count": 245
 }

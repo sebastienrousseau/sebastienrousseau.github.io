@@ -1,14 +1,14 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
-  "date": "April 22, 2024",
-  "reading_time": 1,
-  "last_reviewed": "2026-05-11",
-  "keywords": "量子アルゴリズム, バグ, LWE, 格子ベース暗号, Yilei Chen, ポスト量子暗号",
-  "title": "格子暗号の量子アルゴリズムにバグ発見",
-  "banner_alt": "量子コンピュータの回路",
-  "locale": "ja_JP",
-  "language": "ja-JP",
-  "subtitle": "格子ベース暗号を一時的に安全にし、継続的な研究の必要性を浮き彫りに",
   "description": "LWE を解く Yilei Chen の量子アルゴリズムにバグが発見され、格子ベース暗号が一時的に安全になり、継続的な研究の必要性を浮き彫りに。",
-  "word_count": 53
+  "language": "ja-JP",
+  "locale": "ja_JP",
+  "keywords": "量子アルゴリズム, バグ, LWE, 格子ベース暗号, Yilei Chen, ポスト量子暗号",
+  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
+  "last_reviewed": "2026-05-11",
+  "word_count": 53,
+  "title": "格子暗号の量子アルゴリズムにバグ発見",
+  "reading_time": 1,
+  "date": "April 22, 2024",
+  "banner_alt": "量子コンピュータの回路",
+  "subtitle": "格子ベース暗号を一時的に安全にし、継続的な研究の必要性を浮き彫りに"
 }

@@ -1,14 +1,14 @@
 {
-  "banner_alt": "Àmì pẹ̀lú gradient dídán tí ó bo àwọn awòrán tí a tún ṣe",
-  "locale": "yo_NG",
-  "reading_time": 6,
-  "tags": "OpenVoice, Voice Cloning, Synthetic Speech, open source, Cross-Lingual, Instant Cloning, Voice Control, Accessibility, Entertainment, Customer Service, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, AI, DORA, platform engineering, sovereign cloud, cloud native banking",
-  "subtitle": "Ohun èlò Open-Source Tuntun fún Ìdàkọ Ohùn",
-  "language": "yo-NG",
-  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
-  "title": "OpenVoice: Leading Innovation in Voice Cloning Technology",
-  "word_count": 1283,
-  "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.",
   "keywords": "OpenVoice, Ìmọ̀ Ìdàkọ Ohùn, AI Ọ̀rọ̀ Àgbékalẹ̀, Ìdàkọ Ohùn Open-Source, Ìṣọpọ̀ Ohùn Gba Èdè, Ìdàkọ Ohùn Lẹ́sẹ̀kẹsẹ̀, Ìdarí Ìpapọ̀ Ohùn, Ìmọ̀ Ohùn fún Àánú, Ohùn fún Iléeṣẹ́ Eré Idaraya, AI Ohùn fún Iṣẹ́ Onibára",
-  "date": "Apr 01, 2024"
+  "language": "yo-NG",
+  "date": "Apr 01, 2024",
+  "locale": "yo_NG",
+  "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.",
+  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
+  "word_count": 1283,
+  "reading_time": 6,
+  "title": "OpenVoice: Leading Innovation in Voice Cloning Technology",
+  "banner_alt": "Àmì pẹ̀lú gradient dídán tí ó bo àwọn awòrán tí a tún ṣe",
+  "subtitle": "Ohun èlò Open-Source Tuntun fún Ìdàkọ Ohùn",
+  "tags": "OpenVoice, Voice Cloning, Synthetic Speech, open source, Cross-Lingual, Instant Cloning, Voice Control, Accessibility, Entertainment, Customer Service, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, AI, DORA, platform engineering, sovereign cloud, cloud native banking"
 }

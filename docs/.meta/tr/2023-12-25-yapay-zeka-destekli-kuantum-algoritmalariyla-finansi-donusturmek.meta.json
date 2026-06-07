@@ -1,13 +1,13 @@
 {
-  "reading_time": 7,
+  "banner_alt": "Yapay zeka ve kuantum arasındaki yakınsamanın görselleştirmesi",
+  "word_count": 1570,
   "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
-  "language": "tr-TR",
+  "reading_time": 7,
+  "locale": "tr_TR",
   "description": "Yapay zeka tarafından geliştirilen kuantum algoritmaları, finansal hizmetlerde yeni optimizasyon ve modelleme yetenekleri sunar.",
-  "keywords": "kuantum, yapay zeka, finans, algoritmalar, optimizasyon, bankacılık",
+  "language": "tr-TR",
   "date": "December 25, 2023",
   "title": "Yapay zeka destekli kuantum algoritmalarıyla finansı dönüştürmek",
-  "locale": "tr_TR",
-  "banner_alt": "Yapay zeka ve kuantum arasındaki yakınsamanın görselleştirmesi",
-  "subtitle": "Finansal hizmetler için yapay zeka ile kuantumun yakınsaması",
-  "word_count": 1570
+  "keywords": "kuantum, yapay zeka, finans, algoritmalar, optimizasyon, bankacılık",
+  "subtitle": "Finansal hizmetler için yapay zeka ile kuantumun yakınsaması"
 }

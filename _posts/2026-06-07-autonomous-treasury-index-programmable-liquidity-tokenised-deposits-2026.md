@@ -110,6 +110,7 @@ site_software: "Static Site Generator, Rust"
 
 
 
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> A 2026 index for autonomous treasury readiness, covering agentic treasury workflows, programmable liquidity, tokenised deposits, real-time payments, and automated cash control.</p>

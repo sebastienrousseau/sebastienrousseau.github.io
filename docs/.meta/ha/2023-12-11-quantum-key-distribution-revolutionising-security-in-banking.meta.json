@@ -1,15 +1,15 @@
 {
-  "tags": "quantum, key, distribution, cryptography, cybersecurity, finance, banking, digital, innovation, blockchain, quantum computing, hsbc, trading, data, protection, future, ISO 20022, DORA, post-quantum cryptography, AI",
+  "language": "ha-NG",
   "date": "Dec 11, 2023",
-  "description": "Yayin da kwamfutocin quantum ke barazana ga hanyoyin ɓoyewa na gargajiya, Quantum Key Distribution (QKD) ta fito a matsayin canjin wasa, tana ba da tsaro marar misali.",
-  "subtitle": "Quantum Key Distribution (QKD) don tsaro na matakin kuɗi a cikin banki.",
-  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
-  "banner_alt": "HSBC Daga Tashar Jiragen Ruwa",
-  "reading_time": 5,
   "word_count": 1094,
-  "excerpt": "As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security.",
   "title": "Quantum Key Distribution Revolutionising Security in Banking",
-  "locale": "ha_NG",
+  "banner_alt": "HSBC Daga Tashar Jiragen Ruwa",
   "keywords": "Quantum Key Distribution (QKD), Tsaron Quantum, Banki, Masana'antar Kuɗi, Kuɗi na Dijital, Tsaron Yanar Gizo, Quantum Computing, HSBC, Quantum Protection Trial, Ma'amalolin Kuɗi",
-  "language": "ha-NG"
+  "locale": "ha_NG",
+  "excerpt": "As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security.",
+  "subtitle": "Quantum Key Distribution (QKD) don tsaro na matakin kuɗi a cikin banki.",
+  "reading_time": 5,
+  "tags": "quantum, key, distribution, cryptography, cybersecurity, finance, banking, digital, innovation, blockchain, quantum computing, hsbc, trading, data, protection, future, ISO 20022, DORA, post-quantum cryptography, AI",
+  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
+  "description": "Yayin da kwamfutocin quantum ke barazana ga hanyoyin ɓoyewa na gargajiya, Quantum Key Distribution (QKD) ta fito a matsayin canjin wasa, tana ba da tsaro marar misali."
 }

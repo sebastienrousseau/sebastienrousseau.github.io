@@ -1,13 +1,13 @@
 {
   "date": "April 01, 2024",
-  "subtitle": "Das Open-Source-Tool für Stimmklonung der nächsten Generation",
+  "description": "OpenVoice vom MIT, Tsinghua und MyShell: Voice Cloning in Produktionsqualität mit Steuerung von Ton, Akzent und Emotion — und die zu beachtenden Kompromisse.",
+  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
+  "locale": "de_DE",
+  "language": "de",
   "reading_time": 4,
+  "subtitle": "Das Open-Source-Tool für Stimmklonung der nächsten Generation",
+  "word_count": 998,
   "title": "OpenVoice: Führende Innovation im Voice Cloning",
   "banner_alt": "Banner mit lebendiger Verlaufsüberlagerung auf wiederholten Profilen",
-  "word_count": 998,
-  "language": "de",
-  "description": "OpenVoice vom MIT, Tsinghua und MyShell: Voice Cloning in Produktionsqualität mit Steuerung von Ton, Akzent und Emotion — und die zu beachtenden Kompromisse.",
-  "locale": "de_DE",
-  "keywords": "OpenVoice, Voice Cloning, KI-Sprachsynthese, Open-Source-Voice-Cloning, sprachübergreifende Stimmsynthese, sofortiges Voice Cloning, Stimm-Stilkontrolle, Barrierefreiheit Sprachtechnologie, Stimmen in der Unterhaltungsindustrie, KI-Stimmen im Kundenservice",
-  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp"
+  "keywords": "OpenVoice, Voice Cloning, KI-Sprachsynthese, Open-Source-Voice-Cloning, sprachübergreifende Stimmsynthese, sofortiges Voice Cloning, Stimm-Stilkontrolle, Barrierefreiheit Sprachtechnologie, Stimmen in der Unterhaltungsindustrie, KI-Stimmen im Kundenservice"
 }

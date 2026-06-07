@@ -1,14 +1,14 @@
 {
-  "word_count": 1040,
   "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
-  "date": "Dec 04, 2023",
   "tags": "DateTime, DTT, Rust, date library, time library, timezone handling, chrono alternative, ISO 8601, time formatting, Sebastien Rousseau, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, AI, open source",
-  "keywords": "DateTime, DTT, ìwé-iṣẹ́ Rust, ìtúpalẹ̀, ìfọwọ́sí, ìṣàkóso, ìpèsè, ọjọ́, àkókò",
-  "language": "yo-NG",
-  "subtitle": "DTT, ìwé-iṣẹ́ Rust tó ga fún ìṣiṣẹ́ ọjọ́ àti àkókò.",
-  "description": "DateTime (DTT) jẹ́ ìwé-iṣẹ́ Rust fún ìtúpalẹ̀, ìfọwọ́sí, ìṣàkóso àti ìpèsè ọjọ́ àti àkókò — pínpín gíga, iṣẹ́ líle.",
-  "banner_alt": "DateTime (DTT), Ohun-èlò Pàtàkì Rẹ fún Ìṣiṣẹ́ Ọjọ́ àti Àkókò.",
   "locale": "yo_NG",
+  "banner_alt": "DateTime (DTT), Ohun-èlò Pàtàkì Rẹ fún Ìṣiṣẹ́ Ọjọ́ àti Àkókò.",
+  "title": "Efficient Date and Time Management with DateTime (DTT)",
+  "date": "Dec 04, 2023",
+  "description": "DateTime (DTT) jẹ́ ìwé-iṣẹ́ Rust fún ìtúpalẹ̀, ìfọwọ́sí, ìṣàkóso àti ìpèsè ọjọ́ àti àkókò — pínpín gíga, iṣẹ́ líle.",
+  "subtitle": "DTT, ìwé-iṣẹ́ Rust tó ga fún ìṣiṣẹ́ ọjọ́ àti àkókò.",
+  "word_count": 1040,
   "reading_time": 5,
-  "title": "Efficient Date and Time Management with DateTime (DTT)"
+  "keywords": "DateTime, DTT, ìwé-iṣẹ́ Rust, ìtúpalẹ̀, ìfọwọ́sí, ìṣàkóso, ìpèsè, ọjọ́, àkókò",
+  "language": "yo-NG"
 }
